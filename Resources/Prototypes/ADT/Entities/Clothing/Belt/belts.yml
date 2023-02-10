@@ -28,7 +28,7 @@
 #ERT
 #RPSSL
 - type: entity
-  id: ADTClothingBeltMilitaryWebbingRPSSL
+  id: ADTClothingBeltMilitaryWebbingSL
   parent: ClothingBeltMilitaryWebbing
   name: ERT security belt
   description: Part of ERT security's gear
@@ -43,7 +43,7 @@
 
 #RPSL
 - type: entity
-  id: ADTClothingBeltMilitaryWebbingRPSL
+  id: ADTClothingBeltMilitaryWebbingL
   parent: ClothingBeltMilitaryWebbing
   name: ERT Leader belt
   description: Part of ERT leader's gear
@@ -60,7 +60,7 @@
 
 #RPSML
 - type: entity
-  id: ADTClothingBeltMilitaryWebbingRPSML
+  id: ADTClothingBeltMilitaryWebbingML
   parent: ClothingBeltMilitaryWebbing
   name: ERT medical belt
   description: Part of ERT medical's gear
