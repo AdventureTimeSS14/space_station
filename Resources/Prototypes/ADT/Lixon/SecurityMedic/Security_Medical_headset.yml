@@ -1,0 +1,13 @@
+- type: entity
+  parent: ClothingHeadset
+  id: ADTClothingHeadsetSecurityMedical
+  name: Security Medical headset
+  description: The man who will save you in the cell.
+  components:
+    - type: Headset
+      channels:
+        - Common
+        - Medical
+        - Security
+    - type: Sprite
+      sprite: ADT/Clothing/Ears/Headsets/securitymedical.rsi

@@ -5,11 +5,31 @@
     back: ClothingBackpackERTMedicalFilled
     shoes: ClothingShoesBootsMagAdv
     mask: ClothingMaskGasAtmosian
-    outerClothing: ClothingOuterArmorHeavyGreen
+    outerClothing: ADTClothingOuterArmorHeavyGreen
     eyes: ClothingEyesGlassesSecurity
-    head: ClothingHeadHelmetBombSuit
+    head: lothingHeadHelmetHeavyGreen
     id: CentcomPDA
     gloves: ClothingHandsGlovesCombat
     ears: ClothingHeadsetCentCom
     belt: ClothingBeltMilitaryWebbingMed
     pocket1: WeaponMinigun
+
+- type: entity
+  parent: ClothingHeadEVAHelmetBase
+  id: ADTClothingHeadHelmetHeavyGreen
+  name: green heavy armor helmet
+  description: A heavily armored helmet with a green coating that protects against excessive damage.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Helmets/helmetheavygreen.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Helmets/helmetheavygreen.rsi
+  - type: IngestionBlocker
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.2
+        Slash: 0.2
+        Piercing: 0.2
+        Heat: 0.5
+        Radiation: 0
