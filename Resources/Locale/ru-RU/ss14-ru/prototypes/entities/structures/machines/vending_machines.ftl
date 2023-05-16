@@ -141,3 +141,5 @@ ent-VendingMachineTankDispenserEngineering = раздатчик газовых �
 ent-VendingMachinePillowVendingMachine = Автомат с подушками
     .desc = Раздатчик разных подушек Автомат с подушками.
     .suffix = { "" }
+ent-VendingMachineChemicals = ХимкоМат
+    .desc = Вероятно, не кофемашина.
