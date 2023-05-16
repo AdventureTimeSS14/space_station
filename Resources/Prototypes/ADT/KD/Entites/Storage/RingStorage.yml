@@ -24,10 +24,9 @@
       amount: 1
     - id: ClothingHandsRingTurk
       amount: 1
-  - type: Appearance
-    visuals:
-    - type: BagOpenCloseVisualizer
-      openIcon: box-open
+  # - type: Appearance
+  #   visuals:
+  #   - type: BagOpenCloseVisualizer
+  #     openIcon: box-open
   - type: StaticPrice
     price: 500
-  
