@@ -133,6 +133,7 @@
     layers:
     - state: shell
       sprite: Mobs/Silicon/drone.rsi
+      map: ["base"]
   - type: MovementIgnoreGravity
   - type: IntrinsicRadioTransmitter
     channels:
@@ -152,13 +153,12 @@
         layer:
         - SmallMobLayer
   - type: Appearance
+  - type: GenericVisualizer
     visuals:
-      - type: GenericEnumVisualizer
-        key: enum.DroneVisuals.Status
-        layer: 0
-        states:
-          enum.DroneStatus.Off: shell
-          enum.DroneStatus.On: drone
+      enum.DroneVisuals.Status:
+        base:
+          Off: { state: shell }
+          On: { state: drone }
   - type: ReplacementAccent
     accent: silicon
   - type: Repairable
