@@ -90,14 +90,14 @@
         Base: service_drone_alt
       Dead:
         Base: dead_drone_alt
-  - type: Appearance
-    visuals:
-      - type: GenericEnumVisualizer
-        key: enum.DroneVisuals.Status
-        layer: 0
-        states:
-          enum.DroneStatus.Off: dead_drone_alt
-          enum.DroneStatus.On: service_drone_alt
+  # - type: Appearance
+  #   visuals:
+  #     - type: GenericEnumVisualizer
+  #       key: enum.DroneVisuals.Status
+  #       layer: 0
+  #       states:
+  #         enum.DroneStatus.Off: dead_drone_alt
+  #         enum.DroneStatus.On: service_drone_alt
   #- type: ReplacementAccent
   #  accent: silicon
   - type: Repairable
