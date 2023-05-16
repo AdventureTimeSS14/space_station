@@ -1,5 +1,5 @@
 - type: entity
-  parent: BoxCardboard
+  parent: [ BoxCardboard, BaseBagOpenClose ]
   id: RingBox
   name: ring box
   description: very good.
@@ -8,6 +8,10 @@
     netsync: false
     sprite: ADT/KD/RingBox.rsi
     state: box
+    layers:
+    - state: box
+    - state: box-open
+      map: ["openLayer"]
   - type: Storage
     capacity: 4
   - type: Item
@@ -24,9 +28,5 @@
       amount: 1
     - id: ClothingHandsRingTurk
       amount: 1
-  # - type: Appearance
-  #   visuals:
-  #   - type: BagOpenCloseVisualizer
-  #     openIcon: box-open
   - type: StaticPrice
     price: 500
