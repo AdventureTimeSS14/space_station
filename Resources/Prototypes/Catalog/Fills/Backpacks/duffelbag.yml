@@ -21,7 +21,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: WeaponShotgunEnforcer
+      - id: WeaponShotgunDoubleBarreled
       - id: BoxShotgunIncendiary
         amount: 2
       - id: GrenadeFlashBang
