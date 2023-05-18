@@ -81,8 +81,7 @@
     Steel: 15000
     Plastic: 15000
     Plasma: 20000
-    Gold: 5000
-    Silver: 5000
+    Gold: 15000
 
 - type: latheRecipe
   id: ClothingBackpackSatchelHolding
