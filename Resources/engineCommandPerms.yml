@@ -124,6 +124,14 @@
 - Flags: QUERY
   Commands:
   - forall
+  - uploadfile
+  - loadprototype
+  - uploadfolder
+
+
+- Flags: ADMINCHAT
+  Commands:
+  - asay
 
 - Flags: ADMINCHAT
   Commands:
