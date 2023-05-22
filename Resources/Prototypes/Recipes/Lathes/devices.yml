@@ -78,9 +78,10 @@
   result: ClothingBackpackHolding
   completetime: 5
   materials:
-    Steel: 1500
-    Plastic: 750
-    Plasma: 1000
+    Steel: 15000
+    Plastic: 15000
+    Plasma: 20000
+    Gold: 15000
 
 - type: latheRecipe
   id: ClothingBackpackSatchelHolding
