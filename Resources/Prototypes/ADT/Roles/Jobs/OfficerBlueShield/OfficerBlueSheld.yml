@@ -38,7 +38,8 @@
     outerClothing: ClothingOuterVestWeb
     belt: ClothingBeltMilitaryWebbingMedFilled
     gloves: ClothingHandsGlovesCombat
-    id: ADTBlueShieldOfficerPDA
+    id: ADTBlueShieldOfficerPDA    
+    neck: ClothingNeckCloakNanotrasen
 
 - type: entity
   id: SpawnADTBlueShieldOfficer
