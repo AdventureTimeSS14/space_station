@@ -70,25 +70,21 @@
       Plasma: 100
   - type: Stack
     stackType: Plasma
-    baseLayer: base
-    layerStates:
-    - plasma
-    - plasma_2
-    - plasma_3
+# Corvax-Resprite-Start
+#    baseLayer: base
+#    layerStates:
+#    - plasma
+#    - plasma_2
+#    - plasma_3
   - type: Sprite
-    state: plasma # Corvax-Resprite
-    layers:
-    - state: plasma
-      map: ["base"]
+    state: plasma
+#    layers:
+#    - state: plasma_3
+#      map: ["base"]
+# Corvax-Resprite-End
   - type: Item
     heldPrefix: plasma
-#  - type: Appearance
-#    visuals:
-#    - type: StackVisualizer
-#      stackLayers:
-#      - plasma
-#      - plasma_2
-#      - plasma_3
+  - type: Appearance
   - type: Extractable
     grindableSolutionName: plasma
   - type: SolutionContainerManager
