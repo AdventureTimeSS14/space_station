@@ -21,9 +21,9 @@
   components:
   - type: StorageFill
     contents:
-      - id: WeaponShotgunDoubleBarreled
+      - id: WeaponShotgunEnforcer
       - id: BoxShotgunIncendiary
-        amount: 2
+        amount: 3
       - id: GrenadeFlashBang
         amount: 2
       - id: PillRomerol
