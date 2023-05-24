@@ -25,9 +25,11 @@
       - id: BoxShotgunIncendiary
         amount: 3
       - id: GrenadeFlashBang
-        amount: 2
+      - id: GrenadeFlashBang
       - id: PillRomerol
         amount: 5
+  - type: Storage
+    capacity: 160
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateMedicalBundle
