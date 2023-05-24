@@ -1,0 +1,10 @@
+# author: Your_Name_Here
+#   changes:
+#   - {message: Ваше обновление, type: Add, Remove, Tweak, Fix}
+  # id: Догадаетесь же, да ?
+  # time: '2023-05-24T23:59:41.0000000+00:00'
+Entries:
+- author: Friskis
+  changes:
+  - {message: Исплавлена сумка РХБЗЗ.Обновлены правила на актуальные, type: Fix}
+  id: 1
