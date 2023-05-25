@@ -59,7 +59,6 @@ namespace Content.Client.Preferences.UI
         private LineEdit _ageEdit => CAgeEdit;
         private LineEdit _nameEdit => CNameEdit;
         private LineEdit _flavorTextEdit = null!;
-
         private OptionButton _erpStatus = null!; //#Sirena-ERPStatus
         private Button _nameRandomButton => CNameRandomize;
         private Button _randomizeEverythingButton => CRandomizeEverything;
@@ -567,14 +566,19 @@ namespace Content.Client.Preferences.UI
                 _tabContainer.SetTabTitle(_tabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-flavortext-tab"));
                 _flavorTextEdit = flavorText.CFlavorTextInput;
 
+
                 flavorText.OnFlavorTextChanged += OnFlavorTextChange;
 
                 // Sirena-ERPStatus-Start
                 _erpStatus = flavorText.CERPStatusOption;
 
                 if (!_configurationManager.GetCVar(ACCVars.IsERP))
+                {
                     _erpStatus.Visible = false;
-                
+                    flavorText.NoERPLabelInfo();
+                }
+
+
 
                 // We set id for situation, if we wanna resort option list
                 _erpStatus.AddItem(Loc.GetString("humanoid-erp-status-no"), (int) EnumERPStatus.NO);
