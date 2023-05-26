@@ -58,6 +58,19 @@
   - VaccinatorMachineCircuitboard
   - DiagnoserMachineCircuitboard
 
+- type: technology
+  id: HUD
+  name: research-technology-hud
+  icon:
+    sprite: Clothing/Eyes/Hud/sec.rsi
+    state: icon
+  discipline: Biochemical
+  tier: 1
+  cost: 2500
+  recipeUnlocks:
+  - ClothingEyesHudMedical
+  - ClothingEyesHudSecurity
+
 # Tier 2
 
 - type: technology

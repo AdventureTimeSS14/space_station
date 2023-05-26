@@ -21,6 +21,7 @@ research-technology-surgical-tools = Хирургические инструме
 research-technology-biochemical-stasis = Биохимический стазис
 research-technology-virology = Вирусология
 research-technology-cryogenics = Криогеника
+research-technology-hud = Визоры
 research-technology-chemical-dispensary = Химический раздатчик
 research-technology-crew-monitoring = Мониторинг экипажа
 research-technology-cloning = Клонирование

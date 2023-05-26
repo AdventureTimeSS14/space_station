@@ -451,6 +451,10 @@
       - MagazineBoxLightRifleRubber
       - MagazinePistolHighCapacity
       - MagazinePistolCaselessRifle
+      - MagazineRifle
+      - MagazinePistolSubMachineGun
+    dynamicRecipes:
+      - ClothingEyesHudSecurity
   - type: MaterialStorage
     whitelist:
       tags:
@@ -503,6 +507,7 @@
       - MedkitCombat
     dynamicRecipes:
       - HandheldCrewMonitor
+      - ClothingEyesHudMedical
       - ClothingHandsGlovesNitrile
       - CryostasisBeaker
       - LargeBeaker
