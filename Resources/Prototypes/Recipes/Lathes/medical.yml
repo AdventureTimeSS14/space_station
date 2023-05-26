@@ -109,9 +109,8 @@
   completetime: 2
   materials:
     Steel: 1000
-    Silver: 800
     Plastic: 1000
-    Gold: 100
+    Gold: 500
 
 - type: latheRecipe
   id: Medkit

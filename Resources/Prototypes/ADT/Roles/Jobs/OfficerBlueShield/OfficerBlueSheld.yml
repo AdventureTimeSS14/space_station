@@ -7,7 +7,7 @@
       department: Command
       time: 72000
   startingGear: ADTBlueShieldOfficerGear
-  icon: "blueshield"
+  icon: "ADTBlueShieldOfficer"
   supervisors: job-supervisors-captain
   canBeAntag: false
   access:
@@ -38,7 +38,7 @@
     outerClothing: ClothingOuterVestWeb
     belt: ClothingBeltMilitaryWebbingMedFilled
     gloves: ClothingHandsGlovesCombat
-    id: ADTBlueShieldOfficerPDA    
+    id: ADTBlueShieldOfficerPDA
     neck: ClothingNeckCloakNanotrasen
 
 - type: entity
