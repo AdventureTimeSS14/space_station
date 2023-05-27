@@ -45,10 +45,29 @@
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
-   
+
 #- type: ClothingGrantComponent # Sirena-Edit's-Start
   #  component:
   #  - type: ShowJobInfo # Sirena-Edit's-End
   # - type: ClothingGrantComponent # Sirena-Edit's-Start
   #  component:
   #  - type: ShowJobInfo # Sirena-Edit's-End
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ADTClothingEyesHudCaptain
+  name: captain hud
+  description: A heads-up display that scans the humanoids in view and provides accurate data about their ID status and security records.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Eyes/HUD/captain.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Eyes/HUD/captain.rsi
+  - type: ClothingGrantComponent # Sirena-Edit's-Start
+    component:
+    - type: ShowJobInfo
+    - type: ShowHealthBars
+      damageContainer: Biological # Sirena-Edit's-End
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5

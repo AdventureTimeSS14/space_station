@@ -97,6 +97,7 @@
       - id: ClothingHeadCaptainCap
       - id: ClothingOuterCoatCaptain
       # Corvax-Resprite-End
+      - id: ADTClothingEyesHudCaptain #ADT mods
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
