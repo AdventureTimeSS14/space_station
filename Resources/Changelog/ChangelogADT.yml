@@ -32,5 +32,7 @@ Entries:
   - {message: Мелкие переводы, type: Fix}
   - {message: Визор капитана, type: Add}
   - {message: Небольшой респрайт визора СБ, type: Fix}
+  - {message: Исправлен мини баг в PDA, type: Fix}
+  - {message: Очки заменены на визоры у ОБР, type: Add}
   id: 3
   time: '2023-05-28T05:08:04.0000000+00:00'
