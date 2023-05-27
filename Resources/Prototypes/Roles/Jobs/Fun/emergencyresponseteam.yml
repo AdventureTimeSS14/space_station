@@ -14,7 +14,6 @@
 
 - type: job
   id: ERTLeader3
-  noSpawn: true
   name: Central Commander
   description: job-description-ertleader
   playTimeTracker: JobERTLeader
