@@ -2,7 +2,7 @@
   id: Barratry
   mapName: 'Barratry'
   mapPath: /Maps/barratry.yml
-  minPlayers: 35
+  minPlayers: 25
   maxPlayers: 70
   stations:
     Barratry:
