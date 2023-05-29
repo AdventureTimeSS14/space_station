@@ -169,7 +169,7 @@
     state: base
   discipline: Experimental
   tier: 3
-  cost: 10000
+  cost: 60000
   recipeUnlocks:
     - WeaponForceGun
     - WeaponTetherGun

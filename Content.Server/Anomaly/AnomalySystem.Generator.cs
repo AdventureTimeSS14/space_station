@@ -158,6 +158,7 @@ public sealed partial class AnomalySystem
 
         var message = Loc.GetString("anomaly-generator-announcement");
         _radio.SendRadioMessage(uid, message, _prototype.Index<RadioChannelPrototype>(component.ScienceChannel), uid);
+        _radio.SendRadioMessage(uid, message, _prototype.Index<RadioChannelPrototype>(component.CommonChannel), uid); ///ADT mods
     }
 
     private void UpdateGenerator()

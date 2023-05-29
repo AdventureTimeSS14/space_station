@@ -32,7 +32,7 @@
   - type: Faction
     factions:
     - NanoTrasen
-  - type: RandomHumanoidAppearance    
+  - type: RandomHumanoidAppearance
 
 #Syndie
 - type: entity
