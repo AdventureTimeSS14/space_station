@@ -288,6 +288,9 @@
   id: FootstepSound
 
 - type: Tag
+  id: ForceableFollow
+
+- type: Tag
   id: ForceFixRotations # fixrotations command WILL target this
 
 - type: Tag
@@ -666,6 +669,9 @@
 
 - type: Tag
   id: StringInstrument
+
+- type: Tag
+  id: StationMapElectronics
 
 - type: Tag
   id: SupremeCommanderSabre

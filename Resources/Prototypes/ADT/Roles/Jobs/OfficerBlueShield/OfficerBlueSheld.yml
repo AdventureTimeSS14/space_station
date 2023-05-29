@@ -3,9 +3,12 @@
   name: job-name-ADTBlueShieldOfficer
   playTimeTracker: JobADTBlueShieldOfficer
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Command
-      time: 72000
+    - !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 54000
+    - !type:RoleTimeRequirement
+      role: JobParamedic
+      time: 25200
   startingGear: ADTBlueShieldOfficerGear
   icon: "ADTBlueShieldOfficer"
   supervisors: job-supervisors-captain
