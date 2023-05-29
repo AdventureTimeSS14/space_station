@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
+using Content.Client.Corvax.Sponsors;
 using Content.Shared.CCVar;
 using Content.Shared.Players;
 using Content.Shared.Players.PlayTimeTracking;
@@ -20,6 +21,7 @@ public sealed class JobRequirementsManager
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypes = default!;
+    [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
 
     private readonly Dictionary<string, TimeSpan> _roles = new();
     private readonly List<string> _roleBans = new();
@@ -98,6 +100,13 @@ public sealed class JobRequirementsManager
 
         if (player == null)
             return true;
+
+        var info = _sponsorsManager.TryGetInfo(out var sponsorInfo);
+        if (info && sponsorInfo != null)
+        {
+            if (sponsorInfo.AllowJob)
+                return true;
+        }
 
         var reasonBuilder = new StringBuilder();
 
