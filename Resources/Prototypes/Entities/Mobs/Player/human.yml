@@ -32,7 +32,7 @@
   - type: Faction
     factions:
     - NanoTrasen
-  - type: RandomHumanoidAppearance    
+  - type: RandomHumanoidAppearance
 
 #Syndie
 - type: entity
@@ -58,6 +58,8 @@
   components:
     - type: NukeOperative
     - type: RandomHumanoidAppearance
+    - type: Stamina
+      excess: 400
 
 - type: entity
   noSpawn: true
@@ -78,3 +80,5 @@
     - type: Faction
       factions:
       - Syndicate
+    - type: Stamina
+      excess: 400
