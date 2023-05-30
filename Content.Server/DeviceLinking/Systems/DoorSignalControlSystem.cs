@@ -67,12 +67,12 @@ namespace Content.Server.DeviceLinking.Systems
             {
                 if (state == SignalState.High)
                 {
-                    if(TryComp<AirlockComponent>(uid, out var airlockComponent))
+                    if (TryComp<AirlockComponent>(uid, out var airlockComponent))
                         _airlockSystem.SetBoltsWithAudio(uid, airlockComponent, true);
                 }
                 else
                 {
-                    if(TryComp<AirlockComponent>(uid, out var airlockComponent))
+                    if (TryComp<AirlockComponent>(uid, out var airlockComponent))
                         _airlockSystem.SetBoltsWithAudio(uid, airlockComponent, false);
                 }
             }
@@ -90,10 +90,7 @@ namespace Content.Server.DeviceLinking.Systems
                 data[DeviceNetworkConstants.LogicState] = SignalState.Low;
                 _signalSystem.InvokePort(uid, door.OutOpen, data);
             }
-            else if (args.State == DoorState.Open
-                  || args.State == DoorState.Opening
-                  || args.State == DoorState.Closing
-                  || args.State == DoorState.Emagging)
+            else if (args.State == DoorState.Open || args.State == DoorState.Emagging)
             {
                 data[DeviceNetworkConstants.LogicState] = SignalState.High;
                 _signalSystem.InvokePort(uid, door.OutOpen, data);
