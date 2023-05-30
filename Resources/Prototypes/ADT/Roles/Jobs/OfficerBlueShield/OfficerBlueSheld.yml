@@ -1,0 +1,86 @@
+- type: job
+  id: ADTBlueShieldOfficer
+  name: job-name-ADTBlueShieldOfficer
+  playTimeTracker: JobADTBlueShieldOfficer
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 54000
+    - !type:RoleTimeRequirement
+      role: JobParamedic
+      time: 25200
+  startingGear: ADTBlueShieldOfficerGear
+  icon: "ADTBlueShieldOfficer"
+  supervisors: job-supervisors-captain
+  canBeAntag: false
+  access:
+    - Command
+    - Brig
+    - Security
+    - Armory
+    - Maintenance
+    - Service
+    - External
+    - Research
+    - Medical
+    - Engineering
+    - Cargo
+
+- type: playTimeTracker
+  id: JobADTBlueShieldOfficer
+
+- type: startingGear
+  id: ADTBlueShieldOfficerGear
+  equipment:
+    head: ClothingHeadHatBeretWarden
+    eyes: ClothingEyesGlassesSecurity
+    ears: ClothingHeadsetAltCommand
+    jumpsuit: ClothingUniformJumpsuitNanotrasen
+    back: ClothingBackpackADTBlueShieldOfficerFilled
+    shoes: ClothingShoesBootsCombatFilled
+    outerClothing: ClothingOuterVestWeb
+    belt: ClothingBeltMilitaryWebbingMedFilled
+    gloves: ClothingHandsGlovesCombat
+    id: ADTBlueShieldOfficerPDA
+    neck: ClothingNeckCloakNanotrasen
+
+- type: entity
+  id: SpawnADTBlueShieldOfficer
+  parent: SpawnPointJobBase
+  name: ADTBlueShieldOfficer
+  components:
+    - type: SpawnPoint
+      job_id: ADTBlueShieldOfficer
+    - type: Sprite
+      layers:
+        - state: green
+        - state: hop
+
+- type: entity
+  parent: BasePDA
+  id: ADTBlueShieldOfficerPDA
+  name: BlueShield PDA
+  description: Это пахнет защитой.
+  components:
+    - type: PDA
+      id: ADTBlueShieldOfficerIDCard
+      state: pda-ert
+    - type: PDABorderColor
+      borderColor: "#A32D26"
+      accentVColor: "#447987"
+    - type: Icon
+      state: pda-ert
+    - type: HealthAnalyzer
+      scanDelay: 1.2
+
+- type: entity
+  parent: IDCardStandard
+  id: ADTBlueShieldOfficerIDCard
+  name: Blue Shield Officer ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: default
+        - state: ert_security
+    - type: PresetIdCard
+      job: ADTBlueShieldOfficer

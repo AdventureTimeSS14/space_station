@@ -12,6 +12,19 @@
   accessGroups:
   - AllAccess
 
+- type: job
+  id: ERTLeader3
+  name: Central Commander
+  description: job-description-ertleader
+  playTimeTracker: JobERTLeader
+  setPreference: false
+  startingGear: ERTLeaderGearEVA
+  icon: "Nanotrasen"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+
 - type: startingGear
   id: ERTLeaderGear
   equipment:
@@ -19,7 +32,7 @@
     back: ClothingBackpackERTLeaderFilled
     shoes: ClothingShoesBootsJack
     head: ClothingHeadHelmetHelmet
-    eyes: ClothingEyesGlassesSecurity
+    eyes: ClothingEyesHudSecurity
     gloves: ClothingHandsGlovesColorBlack
     outerClothing: ClothingOuterVestKevlar
     id: ERTLeaderPDA
@@ -34,7 +47,7 @@
     back: ClothingBackpackERTLeaderFilled
     shoes: ClothingShoesBootsMag
     mask: ClothingMaskBreath
-    eyes: ClothingEyesGlassesSecurity
+    eyes: ClothingEyesHudSecurity
     gloves: ClothingHandsGlovesColorBlack
     outerClothing: ClothingOuterHardsuitERTLeader
     suitstorage: OxygenTankFilled
@@ -109,7 +122,7 @@
     back: ClothingBackpackERTSecurityFilled
     shoes: ClothingShoesBootsJack
     head: ClothingHeadHelmetHelmet
-    eyes: ClothingEyesGlassesSecurity
+    eyes: ClothingEyesHudSecurity
     gloves: ClothingHandsGlovesColorBlack
     outerClothing: ClothingOuterVestKevlar
     id: ERTLeaderPDA
@@ -124,7 +137,7 @@
     back: ClothingBackpackERTSecurityFilled
     shoes: ClothingShoesBootsMag
     mask: ClothingMaskBreath
-    eyes: ClothingEyesGlassesSecurity
+    eyes: ClothingEyesHudSecurity
     gloves: ClothingHandsGlovesColorBlack
     outerClothing: ClothingOuterHardsuitERTSecurity
     suitstorage: OxygenTankFilled

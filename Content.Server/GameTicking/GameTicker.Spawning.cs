@@ -53,7 +53,9 @@ namespace Content.Server.GameTicking
 
                 foreach (var (player, _) in profiles)
                 {
-                    if (playerNetIds.Contains(player)) continue;
+                    if (playerNetIds.Contains(player))
+                        continue;
+
                     toRemove.Add(player);
                 }
 
@@ -63,12 +65,14 @@ namespace Content.Server.GameTicking
                 }
             }
 
-            var assignedJobs = _stationJobs.AssignJobs(profiles, _stationSystem.Stations.ToList());
+            var spawnableStations = EntityQuery<StationJobsComponent, StationSpawningComponent>().Select(x => x.Item1.Owner).ToList();
 
-            _stationJobs.AssignOverflowJobs(ref assignedJobs, playerNetIds, profiles, _stationSystem.Stations.ToList());
+            var assignedJobs = _stationJobs.AssignJobs(profiles, spawnableStations);
+
+            _stationJobs.AssignOverflowJobs(ref assignedJobs, playerNetIds, profiles, spawnableStations);
 
             // Calculate extended access for stations.
-            var stationJobCounts = _stationSystem.Stations.ToDictionary(e => e, _ => 0);
+            var stationJobCounts = spawnableStations.ToDictionary(e => e, _ => 0);
             foreach (var (netUser, (job, station)) in assignedJobs)
             {
                 if (job == null)
@@ -120,7 +124,7 @@ namespace Content.Server.GameTicking
 
             if (station == EntityUid.Invalid)
             {
-                var stations = _stationSystem.Stations.ToList();
+                var stations = EntityQuery<StationJobsComponent, StationSpawningComponent>().Select(x => x.Item1.Owner).ToList();
                 _robustRandom.Shuffle(stations);
                 if (stations.Count == 0)
                     station = EntityUid.Invalid;
@@ -337,11 +341,11 @@ namespace Content.Server.GameTicking
                 var spawn = _robustRandom.Pick(_possiblePositions);
                 var toMap = spawn.ToMap(EntityManager);
 
-                if (_mapManager.TryFindGridAt(toMap, out var foundGrid))
+                if (_mapManager.TryFindGridAt(toMap, out var gridUid, out _))
                 {
-                    var gridXform = Transform(foundGrid.Owner);
+                    var gridXform = Transform(gridUid);
 
-                    return new EntityCoordinates(foundGrid.Owner,
+                    return new EntityCoordinates(gridUid,
                         gridXform.InvWorldMatrix.Transform(toMap.Position));
                 }
 

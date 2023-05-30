@@ -1,4 +1,4 @@
-ent-ADTClothingHeadHatBlackOrientalEars = Чёнрные ушки ориентала
+ent-ADTClothingHeadHatBlackOrientalEars = Чёрные ушки ориентала
     .desc = Ня.
     .suffix = { "" }
 ent-ADTClothingHeadHatOktyabrinaOrientalEars = Подарок для Октябрины

@@ -14,23 +14,26 @@ public sealed class RabbitMQManager
 {
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly IEntityManager _entityManager = default!;
-    private ConnectionFactory factory = default!;
+
+    private RabbitMqConfiguration? _configuration;
+
 
     public void Initialize()
     {
         string url = _cfg.GetCVar(ACCVars.RabbitMQConnectionString);
         if (!string.IsNullOrEmpty(url))
         {
-            factory = new ConnectionFactory() { DispatchConsumersAsync = true, Uri = new Uri(url) };
-            var connection = factory.CreateConnection();
-            var channel = connection.CreateModel();
+            _configuration = new RabbitMqConfiguration();
 
-            channel.ExchangeDeclare(exchange: "SS14", type: ExchangeType.Fanout, durable: false, autoDelete: false,
+            using var connection = _configuration.CreateConnectionFactory(url).CreateConnection();
+            using var channel = connection.CreateModel();
+
+            channel.ExchangeDeclare(exchange: _configuration.GetExchangeName(), type: ExchangeType.Fanout, durable: false, autoDelete: false,
                 arguments: null);
 
             var queueId = Guid.NewGuid().ToString();
             channel.QueueDeclare(queue: queueId, durable: false, exclusive: true, autoDelete: true, arguments: null);
-            channel.QueueBind(queue: queueId, exchange: "SS14", routingKey: "all", arguments: null);
+            channel.QueueBind(queue: queueId, exchange: _configuration.GetExchangeName(), routingKey: "all", arguments: null);
 
             var consumer = new AsyncEventingBasicConsumer(channel);
             consumer.Received += ReceivedMessage;
@@ -62,9 +65,9 @@ public sealed class RabbitMQManager
     {
         string url = _cfg.GetCVar(ACCVars.RabbitMQConnectionString);
 
-        if (factory != null && !string.IsNullOrEmpty(url))
+        if (_configuration != null && !string.IsNullOrEmpty(url))
         {
-            using (var connection = factory.CreateConnection())
+            using (var connection = _configuration.CreateConnectionFactory(url).CreateConnection())
             using (var channel = connection.CreateModel())
             {
                 var body = Encoding.UTF8.GetBytes(message);

@@ -13,6 +13,8 @@ uplink-edagger-name = Энергокинжал
 uplink-edagger-desc = Небольшой энергитический кинжал, удобно замаскированный под ручку.
 uplink-fire-axe-flaming-name = { ent-FireAxeFlaming }
 uplink-fire-axe-flaming-desc = Классическое оружие, оснащенное передовой атмос-технологией, позволяющей ему поджигать цели.
+uplink-gloves-north-star-name = Перчатки Северной Звезды
+uplink-gloves-north-star-desc = Эти перчатки позволят вам бить с удивительной скоростью и точностью.
 # Explosives
 uplink-explosive-grenade-name = { ent-ExGrenade }
 uplink-explosive-grenade-desc = { ent-ExGrenade.desc }
@@ -184,3 +186,7 @@ uplink-operative-skirt-name = { ent-ClothingUniformJumpskirtOperative }
 uplink-operative-skirt-desc = Юбка-комбинезон из отборной ткани, выдаваемая нашим ядерным оперативницам, гарантирует, что вы будете выделяться, и не имеет никаких других преимуществ, кроме крутого внешнего вида.
 uplink-balloon-name = { ent-BalloonSyn }
 uplink-balloon-desc = { ent-BalloonSyn.desc }
+uplink-scarf-syndie-red-name = striped syndicate red scarf
+uplink-scarf-syndie-red-desc = A stylish striped syndicate red scarf. The perfect winter accessory for those with a keen fashion sense, and those who are in the mood to steal something.
+uplink-scarf-syndie-green-name = striped syndicate green scarf
+uplink-scarf-syndie-green-desc = A stylish striped syndicate green scarf. The perfect winter accessory for those with a keen fashion sense, and those who are in the mood to steal something.

@@ -75,6 +75,16 @@
   categories:
   - UplinkWeapons
 
+- type: listing
+  id: UplinkGlovesNorthStar
+  name: uplink-gloves-north-star-name
+  description: uplink-gloves-north-star-desc
+  productEntity: ClothingHandsGlovesNorthStar
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkWeapons
+
 # Explosives
 
 - type: listing
@@ -438,16 +448,16 @@
   - UplinkBundles
 
 
-# - type: listing
-#   id: UplinkGrenadeLauncherBundle
-#   name: uplink-grenade-launcher-bundle-name
-#   description: uplink-grenade-launcher-bundle-desc
-#   icon: { sprite: /Textures/Objects/Weapons/Guns/Launchers/china_lake.rsi, state: icon }
-#   productEntity: ClothingBackpackDuffelSyndicateFilledGrenadeLauncher
-#   cost:
-#     Telecrystal: 30
-#   categories:
-#   - UplinkBundles
+- type: listing
+  id: UplinkGrenadeLauncherBundle
+  name: uplink-grenade-launcher-bundle-name
+  description: uplink-grenade-launcher-bundle-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Launchers/china_lake.rsi, state: icon }
+  productEntity: ClothingBackpackDuffelSyndicateFilledGrenadeLauncher
+  cost:
+    Telecrystal: 35
+  categories:
+  - UplinkBundles
 
 - type: listing
   id: UplinkL6SawBundle
@@ -885,7 +895,7 @@
   description: uplink-experimental-stimpack-desc
   productEntity: StimpackExperimental
   cost:
-    Telecrystal: 15
+    Telecrystal: 8
   categories:
   - UplinkMisc
   conditions:
@@ -1011,3 +1021,23 @@
     Telecrystal: 20
   categories:
   - UplinkPointless
+
+- type: listing
+  id: UplinkScarfSyndieRed
+  name: uplink-scarf-syndie-red-name
+  description: uplink-scarf-syndie-red-desc
+  productEntity: ClothingNeckScarfStripedSyndieRed
+  cost:
+    Telecrystal: 1
+  categories:
+  - UplinkPointless
+
+- type: listing
+  id: UplinkScarfSyndieGreen
+  name: uplink-scarf-syndie-green-name
+  description: uplink-scarf-syndie-green-desc
+  productEntity: ClothingNeckScarfStripedSyndieGreen
+  cost:
+    Telecrystal: 1
+  categories:
+    - UplinkPointless
