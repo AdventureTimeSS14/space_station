@@ -1,5 +1,5 @@
 - type: dataset
-  id: CargoShuttleNames
+  id: ShuttleNames
   values:
   - Большой Денежный Шаттл
   - Замена Двигателя
@@ -8,3 +8,4 @@
   - Шаттл МакШаттлфейс
   - ШаттлШаттл
   - Урист МакШаттл
+
