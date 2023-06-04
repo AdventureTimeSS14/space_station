@@ -58,6 +58,9 @@
     head: ClothingHeadHatHopcap
     id: HoPPDA
     ears: ClothingHeadsetAltCommand
+    underwearb: ClothingUnderwearBottomBoxersHOP # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraHOP # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesHOP # Sirena-Underwear
   innerclothingskirt: ClothingUniformJumpskirtHoP
   satchel: ClothingBackpackSatchelHOPFilled
   duffelbag: ClothingBackpackDuffelHOPFilled

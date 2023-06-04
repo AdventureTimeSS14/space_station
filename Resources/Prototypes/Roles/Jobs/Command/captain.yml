@@ -37,6 +37,9 @@
     outerClothing: ClothingOuterArmorCaptainCarapace
     id: CaptainPDA
     ears: ClothingHeadsetAltCommand
+    underwearb: ClothingUnderwearBottomBoxersCap # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraCap # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesCap # Sirena-Underwear
   innerclothingskirt: ClothingUniformJumpskirtCaptain
   satchel: ClothingBackpackSatchelCaptainFilled
   duffelbag: ClothingBackpackDuffelCaptainFilled

@@ -30,6 +30,9 @@
     outerClothing: ClothingOuterCoatRnd
     id: RnDPDA
     ears: ClothingHeadsetRD
+    underwearb: ClothingUnderwearBottomBoxersRD # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraRD # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesRD # Sirena-Underwear
   innerclothingskirt: ClothingUniformJumpskirtResearchDirector
   satchel: ClothingBackpackSatchelResearchDirectorFilled
   duffelbag: ClothingBackpackDuffelResearchDirectorFilled
