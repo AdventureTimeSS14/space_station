@@ -69,3 +69,7 @@
 - type: lobbyBackground
   id: Jojo
   background: /Textures/LobbyScreens/Jojo.jpg
+
+- type: lobbyBackground
+  id: UnderTheTree
+  background: /Textures/LobbyScreens/UnderTheTree.png
