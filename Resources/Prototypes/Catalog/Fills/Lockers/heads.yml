@@ -26,6 +26,11 @@
       - id: RubberStampQm
       - id: ClothingHeadsetAltCargo
       - id: BoxEncryptionKeyCargo
+      # Sirena-Underwear-Start
+      - id: ClothingUnderwearBottomBoxersQM
+      - id: ClothingUnderwearBottomPantiesQM
+      - id: ClothingUnderwearTopBraQM
+      # Sirena-Underwear-End
 
 - type: entity
   id: LockerCaptainFilledHardsuit
@@ -60,6 +65,14 @@
       - id: WeaponAntiqueLaser
       - id: JetpackCaptainFilled
       - id: MedalCase
+      - id: ClothingHeadCaptainHat
+      - id: ClothingHeadCaptainCap
+      - id: ClothingOuterCoatCaptain
+      # Sirena-Underwear-Start
+      - id: ClothingUnderwearBottomBoxersCap
+      - id: ClothingUnderwearBottomPantiesCap
+      - id: ClothingUnderwearTopBraCap
+      # Sirena-Underwear-End
 
 - type: entity
   id: LockerCaptainFilled
@@ -130,6 +143,11 @@
       - id: ClothingBackpackIan
         prob: 0.5
       - id: ClothingOuterCoatHOP # Corvax-Resprite
+      # Sirena-Underwear-Start
+      - id: ClothingUnderwearBottomBoxersHOP
+      - id: ClothingUnderwearBottomPantiesHOP
+      - id: ClothingUnderwearTopBraHOP
+      # Sirena-Underwear-End
 
 - type: entity
   id: LockerChiefEngineerFilledHardsuit
@@ -155,6 +173,11 @@
       - id: JetpackVoidFilled
       - id: ClothingHeadsetAltEngineering
       - id: BoxEncryptionKeyEngineering
+      # Sirena-Underwear-Start
+      - id: ClothingUnderwearBottomBoxersCE
+      - id: ClothingUnderwearBottomPantiesCE
+      - id: ClothingUnderwearTopBraCE
+      # Sirena-Underwear-End
 
 - type: entity
   id: LockerChiefEngineerFilled
@@ -174,6 +197,11 @@
       - id: RubberStampCE
       - id: ClothingHeadsetAltEngineering
       - id: BoxEncryptionKeyEngineering
+      # Sirena-Underwear-Start
+      - id: ClothingUnderwearBottomBoxersCE
+      - id: ClothingUnderwearBottomPantiesCE
+      - id: ClothingUnderwearTopBraCE
+      # Sirena-Underwear-End
 
 - type: entity
   id: LockerChiefMedicalOfficerFilledHardsuit
@@ -203,6 +231,11 @@
       - id: MaterialBiomass
         amount: 3
       - id: BoxEncryptionKeyMedical
+      # Sirena-Underwear-Start
+      - id: ClothingUnderwearBottomBoxersCMO
+      - id: ClothingUnderwearBottomPantiesCMO
+      - id: ClothingUnderwearTopBraCMO
+      # Sirena-Underwear-End
 
 - type: entity
   id: LockerChiefMedicalOfficerFilled
@@ -234,6 +267,11 @@
         amount: 3
       - id: NitrousOxideTankFilled
       - id: BoxEncryptionKeyMedical
+      # Sirena-Underwear-Start
+      - id: ClothingUnderwearBottomBoxersCMO
+      - id: ClothingUnderwearBottomPantiesCMO
+      - id: ClothingUnderwearTopBraCMO
+      # Sirena-Underwear-End
 
 - type: entity
   id: LockerResearchDirectorFilledHardsuit
@@ -257,6 +295,12 @@
       - id: ClothingHeadsetAltScience
       - id: BoxEncryptionKeyScience
       - id: BoxEncryptionKeyRobo
+      # Sirena-Underwear-Start
+      - id: ClothingUnderwearBottomBoxersRD
+      - id: ClothingUnderwearBottomPantiesRD
+      - id: ClothingUnderwearTopBraRD
+      - id: AnomalyPinpointer
+      # Sirena-Underwear-End
 
 - type: entity
   id: LockerResearchDirectorFilled
@@ -279,6 +323,12 @@
       - id: ClothingHeadsetAltScience
       - id: BoxEncryptionKeyScience
       - id: BoxEncryptionKeyRobo
+      # Sirena-Underwear-Start
+      - id: ClothingUnderwearBottomBoxersRD
+      - id: ClothingUnderwearBottomPantiesRD
+      - id: ClothingUnderwearTopBraRD
+      - id: AnomalyPinpointer
+      # Sirena-Underwear-End
 
 - type: entity
   id: LockerHeadOfSecurityFilledHardsuit
@@ -327,6 +377,12 @@
       - id: JetpackSecurityFilled
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
+      # Sirena-Underwear-Start
+      - id: ClothingUnderwearBottomBoxersHOS
+      - id: ClothingUnderwearBottomPantiesHOS
+      - id: ClothingUnderwearTopBraHOS
+      # Sirena-Underwear-End
+
 
 - type: entity
   id: LockerHeadOfSecurityFilled
@@ -372,3 +428,9 @@
       - id: SecurityTechFabCircuitboard
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
+      # Sirena-Underwear-Start
+      - id: ClothingUnderwearBottomBoxersHOS
+      - id: ClothingUnderwearBottomPantiesHOS
+      - id: ClothingUnderwearTopBraHOS
+      # Sirena-Underwear-End
+
