@@ -299,7 +299,6 @@
       - id: ClothingUnderwearBottomBoxersRD
       - id: ClothingUnderwearBottomPantiesRD
       - id: ClothingUnderwearTopBraRD
-      - id: AnomalyPinpointer
       # Sirena-Underwear-End
 
 - type: entity
@@ -327,7 +326,6 @@
       - id: ClothingUnderwearBottomBoxersRD
       - id: ClothingUnderwearBottomPantiesRD
       - id: ClothingUnderwearTopBraRD
-      - id: AnomalyPinpointer
       # Sirena-Underwear-End
 
 - type: entity
