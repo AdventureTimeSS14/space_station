@@ -1,0 +1,70 @@
+- type: entity
+  abstract: true
+  parent: Clothing
+  id: ClothingUnderwearSocksBase
+  name: based socks
+  description: "You should not see this. If you see it, let Neko Dar#8948 know."
+  components:
+  - type: Sprite
+    state: icon
+  - type: Item
+    size: 5
+  - type: Clothing
+    slots: [socks]
+  - type: Tag
+    tags:
+      - socks
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ClothingUnderwearSocksHigh
+  name: high socks
+  description: Nanotrasen high socks for station employees. Painted white.
+  components:
+  - type: Sprite
+    sprite: Sirena/Clothing/Underwear/Socks/socksknee.rsi
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ClothingUnderSocksBee # HACK
+  name: bee socks
+  description: Make them loins buzz!
+  components:
+  - type: Sprite
+    sprite: Clothing/Under/Socks/bee.rsi
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ClothingUnderSocksCoder # HACK
+  name: coder socks
+  description: It's time to code sisters!!11!
+  components:
+  - type: Sprite
+    sprite: Clothing/Under/Socks/coder.rsi
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ClothingUnderwearSocksNormal
+  name: socks
+  description: Standard Nanotrasen socks for station employees. Dyed white.
+  components:
+  - type: Sprite
+    sprite: Sirena/Clothing/Underwear/Socks/socksnorm.rsi
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ClothingUnderwearSocksShort
+  name: short socks
+  description: Nanotrasen short socks for station employees. Dyed white.
+  components:
+  - type: Sprite
+    sprite: Sirena/Clothing/Underwear/Socks/socksshort.rsi
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ClothingUnderwearSocksThigh
+  name: stockings
+  description: Standard Nanotrasen stockings for station employees. Dyed white.
+  components:
+  - type: Sprite
+    sprite: Sirena/Clothing/Underwear/Socks/socksthigh.rsi

@@ -63,6 +63,15 @@
         },
         {
             "name": "uniform"
-        }
+        },
+		{
+			"name": "underweart"
+		},
+		{
+			"name": "underwearb"
+		},
+		{
+			"name": "socks"
+		}
     ]
 }
