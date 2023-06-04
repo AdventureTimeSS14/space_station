@@ -21,6 +21,9 @@
     pocket1: d10Dice
     belt: BooksBag
     pocket2: HandLabeler # for making named bestsellers
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   inhand:
     right hand: BriefcaseBrownFilled
   innerclothingskirt: ClothingUniformJumpskirtLibrarian # Corvax-Resprite

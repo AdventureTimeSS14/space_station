@@ -24,6 +24,9 @@
     shoes: ClothingShoesColorWhite
     id: ResearchAssistantPDA
     ears: ClothingHeadsetScience
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerclothingskirt: ClothingUniformJumpskirtColorWhite
   satchel: ClothingBackpackSatchelScienceFilled
   duffelbag: ClothingBackpackDuffelScienceFilled

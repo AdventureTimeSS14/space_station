@@ -25,6 +25,9 @@
     id: MedicalInternPDA
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalFilled
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerclothingskirt: ClothingUniformJumpskirtColorWhite
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled

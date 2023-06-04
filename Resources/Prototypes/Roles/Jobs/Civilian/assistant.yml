@@ -17,6 +17,9 @@
     shoes: ClothingShoesColorBlack
     id: PassengerPDA
     ears: ClothingHeadsetGrey
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerclothingskirt: ClothingUniformJumpskirtColorGrey
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled

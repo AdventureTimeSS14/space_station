@@ -32,6 +32,9 @@
     id: WardenPDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltSecurityFilled
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraSportsAlternative # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerclothingskirt: ClothingUniformJumpskirtWarden
   satchel: ClothingBackpackSatchelSecurityFilled
   duffelbag: ClothingBackpackDuffelSecurityFilled
