@@ -88,7 +88,7 @@ public sealed class RoleBanCommand : IConsoleCommand
             return;
         }
 
-        _bans.CreateJobBan(shell, located, job, reason, minutes);
+        await _bans.CreateJobBan(shell, located, job, reason, minutes);
         _bans.SendRoleBans(located);
 
         DateTimeOffset? expires = null;
