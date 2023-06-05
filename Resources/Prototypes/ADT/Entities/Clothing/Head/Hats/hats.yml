@@ -1,0 +1,14 @@
+#chu-see
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsTrueDetectiveHat
+  name: True detective hat
+  description: This hat is worthy of a real detactive
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/true_detective_hat.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/true_detective_hat.rsi
