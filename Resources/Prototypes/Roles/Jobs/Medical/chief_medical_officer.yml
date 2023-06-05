@@ -35,6 +35,9 @@
     id: CMOPDA
     ears: ClothingHeadsetCMO
     belt: ClothingBeltMedicalFilled
+    underwearb: ClothingUnderwearBottomBoxersCMO # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraCMO # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesCMO # Sirena-Underwear
   innerclothingskirt: ClothingUniformJumpskirtCMO
   satchel: ClothingBackpackSatchelCMOFilled
   duffelbag: ClothingBackpackDuffelCMOFilled

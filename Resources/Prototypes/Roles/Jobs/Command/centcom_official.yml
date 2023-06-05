@@ -22,5 +22,8 @@
     outerClothing: ClothingOuterVestKevlar
     id: CentcomPDA
     ears: ClothingHeadsetAltCommand
-    pocket1: Paper
-    pocket2: Pen
+    pocket1: PaperOffice
+    pocket2: PenCentcom
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear

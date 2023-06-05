@@ -1,6 +1,7 @@
 using Content.Shared.Preferences;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
+using Content.Shared.Humanoid; // Sirena-Underwear
 
 namespace Content.Shared.Roles
 {
@@ -29,6 +30,14 @@ namespace Content.Shared.Roles
         [DataField("inhand")]
         private Dictionary<string, string> _inHand = new(0);
 
+        // Sirena-Underwear-Start
+        [DataField("underweart")]
+        private string _underweart = string.Empty;
+
+        [DataField("underwearb")]
+        private string _underwearb = string.Empty;
+        // Sirena-Underwear-End
+
         [ViewVariables]
         [IdDataField]
         public string ID { get; } = string.Empty;
@@ -43,6 +52,12 @@ namespace Content.Shared.Roles
                     return _satchel;
                 if (slot == "back" && profile.Backpack == BackpackPreference.Duffelbag && !string.IsNullOrEmpty(_duffelbag))
                     return _duffelbag;
+                // Sirena-Underwear-Start
+                if (slot == "underweart" && profile.Sex == Sex.Female && !string.IsNullOrEmpty(_underweart))
+                    return _underweart;
+                if (slot == "underwearb" && profile.Sex == Sex.Female && !string.IsNullOrEmpty(_underwearb))
+                    return _underwearb;
+                // Sirena-Underwear-End
             }
 
             return _equipment.TryGetValue(slot, out var equipment) ? equipment : string.Empty;
