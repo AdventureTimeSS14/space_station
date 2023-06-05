@@ -98,6 +98,17 @@ namespace Content.Server.Database
             return bans;
         }
 
+        public override async Task<int> GetLastServerBanId()
+        {
+            await using var db = await GetDbImpl();
+
+            var lastBan = db.PgDbContext.Ban
+                .OrderByDescending(p => p.Id)
+                .FirstOrDefault();
+
+            return lastBan != null ? lastBan.Id : 0;
+        }
+
         private static IQueryable<ServerBan> MakeBanLookupQuery(
             IPAddress? address,
             NetUserId? userId,
@@ -271,6 +282,17 @@ namespace Content.Server.Database
                 .OrderByDescending(b => b.BanTime);
 
             return await QueryRoleBans(query);
+        }
+
+        public override async Task<int> GetLastServerRoleBanId()
+        {
+            await using var db = await GetDbImpl();
+
+            var lastRoleBan = db.PgDbContext.RoleBan
+                .OrderByDescending(p => p.Id)
+                .FirstOrDefault();
+
+            return lastRoleBan != null ? lastRoleBan.Id : 0;
         }
 
         private static async Task<List<ServerRoleBanDef>> QueryRoleBans(IQueryable<ServerRoleBan> query)

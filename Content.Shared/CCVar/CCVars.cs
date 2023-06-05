@@ -291,6 +291,9 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<string> DiscordAHelpWebhook =
             CVarDef.Create("discord.ahelp_webhook", string.Empty, CVar.SERVERONLY);
+        
+        public static readonly CVarDef<string> DiscordBansWebhook =
+            CVarDef.Create("discord.bans_webhook", string.Empty, CVar.SERVERONLY);
 
         /// <summary>
         /// The server icon to use in the Discord ahelp embed footer.
@@ -305,6 +308,13 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<string> DiscordAHelpAvatar =
             CVarDef.Create("discord.ahelp_avatar", string.Empty, CVar.SERVERONLY);
 
+        /*
+         * Sheets
+         */
+
+        // public static readonly CVarDef<string> SheetsSpreadsheetId =
+        //     CVarDef.Create("sheets.spreadsheet_id", string.Empty, CVar.SERVERONLY);
+            
         /*
          * Suspicion
          */
