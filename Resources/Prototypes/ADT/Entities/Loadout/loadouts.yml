@@ -2,16 +2,16 @@
   id: TrueDetectiveCoat
   entity: ADTClothingOuterCoatTrueDetectivesCoat
   sponsorOnly: false  
-  whitelistJobs: [JobDetective]
+  whitelistJobs: [Detective]
 
 - type: loadout
   id: TrueDetectiveJumpskirt
   entity: ADTClothingUniformTrueDetectiveJumpskirt
   sponsorOnly: false
-  whitelistJobs: [JobDetective]
+  whitelistJobs: [Detective]
 
 - type: loadout
   id: TrueDetectiveHat
   entity: ADTClothingHeadHatsTrueDetectiveHat
   sponsorOnly: false
-  whitelistJobs: [JobDetective]
+  whitelistJobs: [Detective]
