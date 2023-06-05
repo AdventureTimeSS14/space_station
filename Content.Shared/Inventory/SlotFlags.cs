@@ -26,5 +26,9 @@ public enum SlotFlags
     LEGS = 1 << 13,
     FEET = 1 << 14,
     SUITSTORAGE = 1 << 15,
+    UNDERWEART = 1 << 10, // Sirena add
+    UNDERWEARB = 1 << 10, // Sirena add
+    SOCKS = 1 << 10,      // Sirena add
+    MODULE = 1 << 10,     // Sirena add
     All = ~NONE,
 }

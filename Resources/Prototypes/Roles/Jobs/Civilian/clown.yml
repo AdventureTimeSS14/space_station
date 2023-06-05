@@ -33,5 +33,8 @@
     pocket2: ClownRecorder
     id: ClownPDA
     ears: ClothingHeadsetService
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   satchel: ClothingBackpackSatchelClownFilled
   duffelbag: ClothingBackpackDuffelClownFilled

@@ -23,5 +23,8 @@
     shoes: ClothingShoesBootsLaceup
     id: MusicianPDA
     ears: ClothingHeadsetService
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   satchel: ClothingBackpackSatchelMusicianFilled
   duffelbag: ClothingBackpackDuffelMusicianFilled
