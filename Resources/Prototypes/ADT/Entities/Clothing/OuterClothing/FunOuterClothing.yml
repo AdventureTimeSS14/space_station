@@ -8,3 +8,14 @@
     sprite: ADT/Clothing/OuterClothing/Suits/racoon.rsi
   - type: Clothing
     sprite: ADT/Clothing/OuterClothing/Suits/racoon.rsi
+
+- type: entity
+  parent: ClothingOuterBase
+  id: ADTClothingOuterSuitFox
+  name: fox suit
+  description: Snort snort snort!
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Suits/fox.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Suits/fox.rsi
