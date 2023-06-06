@@ -182,6 +182,8 @@
     tags:
       - ShoesRequiredStepTriggerImmune
       - CannotSuicide
+  - type: StaticPrice
+    price: 250
 
 - type: entity
   name: onestar mecha

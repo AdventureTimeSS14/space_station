@@ -68,6 +68,8 @@
       state: adv_capacitor
     - type: MachinePart
       rating: 2
+    - type: StaticPrice
+      price: 230
 
 - type: entity
   id: NanoManipulatorStockPart
@@ -80,6 +82,8 @@
       state: nano_mani
     - type: MachinePart
       rating: 2
+    - type: StaticPrice
+      price: 230
 
 - type: entity
   id: AdvancedMatterBinStockPart
@@ -92,6 +96,8 @@
       state: advanced_matter_bin
     - type: MachinePart
       rating: 2
+    - type: StaticPrice
+      price: 230
 
 # Rating 3
 
