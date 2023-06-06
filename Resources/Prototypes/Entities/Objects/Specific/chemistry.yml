@@ -129,7 +129,7 @@
     maxFillLevels: 6
     fillBaseName: beakerlarge
   - type: StaticPrice
-    price: 40
+    price: 30
 
 - type: entity
   name: cryostasis beaker
@@ -181,6 +181,8 @@
       beaker:
         maxVol: 300
         canMix: true
+  - type: StaticPrice
+    price: 80
 
 - type: entity
   name: dropper

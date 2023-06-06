@@ -363,7 +363,7 @@
       Steel: 600
       Plastic: 100
   - type: StaticPrice
-    price: 100
+    price: 180
 
 - type: entity
   id: RCDEmpty
@@ -402,7 +402,7 @@
       Steel: 100
       Plastic: 100
   - type: StaticPrice
-    price: 60
+    price: 100
 
 - type: entity
   name: omnitool
