@@ -165,4 +165,4 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
   - type: StaticPrice
-      price: 230
+    price: 230
