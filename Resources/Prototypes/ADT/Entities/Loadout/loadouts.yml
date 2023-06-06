@@ -1,17 +1,27 @@
+#Chu-See
+
 - type: loadout
   id: TrueDetectiveCoat
   entity: ADTClothingOuterCoatTrueDetectivesCoat
-  sponsorOnly: false  
+  sponsorOnly: true
   whitelistJobs: [Detective]
 
 - type: loadout
   id: TrueDetectiveJumpskirt
   entity: ADTClothingUniformTrueDetectiveJumpskirt
-  sponsorOnly: false
+  sponsorOnly: true
   whitelistJobs: [Detective]
 
 - type: loadout
   id: TrueDetectiveHat
   entity: ADTClothingHeadHatsTrueDetectiveHat
-  sponsorOnly: false
+  sponsorOnly: true
   whitelistJobs: [Detective]
+
+
+#Nova
+
+- type: loadout
+  id: NovaGloves
+  entity: ADTClothingHandsNovaGloves
+  sponsorOnly: true
