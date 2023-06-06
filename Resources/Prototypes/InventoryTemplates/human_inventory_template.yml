@@ -13,7 +13,7 @@
       slotFlags: SOCKS
       stripTime: 6
       uiWindowPos: 4,1
-      strippingWindowPos: 3,3
+      strippingWindowPos: 2,4
       displayName: Socks
       whitelist:
         tags:
@@ -23,7 +23,7 @@
       slotFlags: UNDERWEARB
       stripTime: 6
       uiWindowPos: 4,2
-      strippingWindowPos: 3,2
+      strippingWindowPos: 0,4
       displayName: Panties
       whitelist:
         tags:
@@ -33,7 +33,7 @@
       slotFlags: UNDERWEART
       stripTime: 6
       uiWindowPos: 4,3
-      strippingWindowPos: 3,1
+      strippingWindowPos: 1,4
       displayName: Bra
       whitelist:
         tags:
@@ -97,7 +97,7 @@
       slotGroup: MainHotbar
       stripTime: 3
       uiWindowPos: 0,3
-      strippingWindowPos: 0,4
+      strippingWindowPos: 0,5
       dependsOn: jumpsuit
       displayName: Pocket 1
       stripHidden: true
@@ -107,7 +107,7 @@
       slotGroup: MainHotbar
       stripTime: 3
       uiWindowPos: 2,3
-      strippingWindowPos: 1,4
+      strippingWindowPos: 1,5
       dependsOn: jumpsuit
       displayName: Pocket 2
       stripHidden: true
@@ -116,7 +116,7 @@
       slotFlags:   SUITSTORAGE
       stripTime: 3
       uiWindowPos: 2,0
-      strippingWindowPos: 2,5
+      strippingWindowPos: 2,6
       dependsOn: outerClothing
       displayName: Suit Storage
     - name: id
@@ -125,7 +125,7 @@
       slotGroup: SecondHotbar
       stripTime: 6
       uiWindowPos: 2,1
-      strippingWindowPos: 2,4
+      strippingWindowPos: 2,5
       dependsOn: jumpsuit
       displayName: ID
     - name: belt
@@ -134,7 +134,7 @@
       slotGroup: SecondHotbar
       stripTime: 6
       uiWindowPos: 3,1
-      strippingWindowPos: 1,5
+      strippingWindowPos: 1,6
       displayName: Belt
     - name: back
       slotTexture: back
@@ -142,5 +142,5 @@
       slotGroup: SecondHotbar
       stripTime: 6
       uiWindowPos: 3,0
-      strippingWindowPos: 0,5
+      strippingWindowPos: 0,6
       displayName: Back
