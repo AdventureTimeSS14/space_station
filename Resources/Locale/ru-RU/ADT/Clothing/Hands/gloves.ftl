@@ -1,2 +1,2 @@
-ent-ADTClothingHandsNovaGloves = Прозрачные белые перчатки Новы
-    .desc = Отлично подходят для работы с документами
+ent-ADTClothingHandsNovaGloves = Перчатки Новы
+    .desc = Это перчатки Новы. Как она их получила? Секрет.
