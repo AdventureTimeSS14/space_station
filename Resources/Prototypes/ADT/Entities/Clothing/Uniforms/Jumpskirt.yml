@@ -142,3 +142,18 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/druid_dress.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/druid_dress.rsi
+
+#chu-see
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformTrueDetectiveJumpskirt
+  name: True detective jumpskirt
+  description: Great clothes for investigation
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/true_detective_jumpskirt.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/true_detective_jumpskirt.rsi
+
+
+

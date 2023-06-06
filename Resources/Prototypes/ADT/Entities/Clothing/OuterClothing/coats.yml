@@ -1,0 +1,21 @@
+#chu-see
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ADTClothingOuterCoatTrueDetectivesCoat
+  name: True detective coat
+  description: This leather coat is worn by someone who has seen some crap
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Coats/true_detective_coat.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Coats/true_detective_coat.rsi
+  - type: StorageFill
+    contents:
+    - id: SmokingPipeFilledTobacco
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.6
+        Heat: 0.9
