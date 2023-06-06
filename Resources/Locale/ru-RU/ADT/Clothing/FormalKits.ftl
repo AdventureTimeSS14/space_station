@@ -6,3 +6,9 @@ ent-ADTClothingHeadHatsTrueDetectiveHat = Шляпа прирождённого 
 
 ent-ADTClothingUniformTrueDetectiveJumpskirt = Униформа прирождённого детектива
     .desc = Стильная детективная униформа.
+
+ent-ADTClothingHeadHatsGreatDruidWreath = Большой венок друида
+    .desc = Большой и красивый цевточный венок
+
+ent-ADTClothingUniformDruidLeaderDress = Платье предводительницы друидов
+    .desc = Традиционная одежда предводительницы друидов

@@ -134,14 +134,14 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: ADTClothingUniformDruidDress
-  name: Druid Dress Suit
-  description: The mood color is orange. For the fans of oranges and a good tan.
+  id: ADTClothingUniformDruidLeaderDress
+  name: Druid Leader Dress Suit
+  description: Traditional dres of the druid leader
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/druid_dress.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/druid_leader_dress.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/druid_dress.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/druid_leader_dress.rsi
 
 #chu-see
 - type: entity

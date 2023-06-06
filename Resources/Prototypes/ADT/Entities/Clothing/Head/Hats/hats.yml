@@ -12,3 +12,18 @@
     sprite: ADT/Clothing/Head/Hats/true_detective_hat.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/true_detective_hat.rsi
+
+#Luna
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsGreatDruidWreath
+  name: Great Druid Wreath
+  description: This hat is worthy of a real detactive
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/great_druid_wreath.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/great_druid_wreath.rsi
