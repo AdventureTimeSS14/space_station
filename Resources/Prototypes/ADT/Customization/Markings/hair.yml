@@ -1,4 +1,4 @@
-﻿- type: marking
+- type: marking
   id: ADTAllbasarab
   bodyPart: Hair
   markingCategory: Hair
@@ -79,12 +79,12 @@
       state: ayanami
 
 - type: marking
-  id: ADTAllBubleGum
+  id: ADTAllBubbleGum
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: ADT/Customization/Markings/hair.rsi
-      state: buble_gum
+      state: bubble_gum
 
 - type: marking
   id: ADTAllMavis
@@ -101,3 +101,51 @@
   sprites:
     - sprite: ADT/Customization/Markings/hair.rsi
       state: cloud
+
+- type: marking
+  id: ADTAllMorningHairstyle
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: ADT/Customization/Markings/hair.rsi
+      state: morning_hairstyle
+
+- type: marking
+  id: ADTAllMorningHairstyle2
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: ADT/Customization/Markings/hair.rsi
+      state: morning_hairstyle_2
+
+- type: marking
+  id: ADTAllPonytail
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: ADT/Customization/Markings/hair.rsi
+      state: ponytail
+
+- type: marking
+  id: ADTAllPrinceCharming
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: ADT/Customization/Markings/hair.rsi
+      state: prince_charming
+
+- type: marking
+  id: ADTAllShavedFemale
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: ADT/Customization/Markings/hair.rsi
+      state: shaved_female
+
+- type: marking
+  id: ADTAllShavedFemaleUnisex
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: ADT/Customization/Markings/hair.rsi
+      state: shaved_unisex
