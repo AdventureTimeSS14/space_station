@@ -147,8 +147,63 @@
     accent: genericAggressive
 
 - type: entity
+  parent: SimpleMobBase
+  id: ADTBaseMobNarsiBigDemon
+  name: narsi demon
+  description: narsi demon
+  abstract: true
+  components:
+  - type: HTN
+    rootTask: SimpleHostileCompound
+  - type: Faction
+    factions:
+    - SimpleHostile
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - Flesh
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: ADT/Mobs/Aliens/nar_si_big_demons.rsi
+  - type: MovementAlwaysTouching
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 1
+    baseSprintSpeed: 1.5
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      75: Dead
+  - type: Stamina
+    excess: 50
+  - type: Appearance
+  - type: Butcherable
+    spawned:
+    - id: FoodMeat
+      amount: 1
+  - type: Bloodstream
+    bloodMaxVolume: 100
+  - type: CombatMode
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 3
+  - type: ReplacementAccent
+    accent: genericAggressive
+
+- type: entity
   parent: ADTBaseMobNarsiDemon
   id: ADTBlodyEyesDemon
+  name: Bloody eye demon
+  description: Dark matter whose eyes randomly pop out of the body. They all seem to be following you...
   components:
   - type: Sprite
     layers:
@@ -180,6 +235,8 @@
 - type: entity
   parent: ADTBaseMobNarsiDemon
   id: ADTBunchDemonicEyesDemon
+  name: Pile of demonic eyes
+  description: A multi eyepiece that follows your every move... Doesn't look friendly.
   components:
   - type: Sprite
     layers:
@@ -211,6 +268,8 @@
 - type: entity
   parent: ADTBaseMobNarsiDemon
   id: ADTDemonicEyeDemon
+  name: demonic eye
+  description: A clot of darkness and blood, longing for your death.
   components:
   - type: Sprite
     layers:
@@ -238,6 +297,105 @@
       types:
         Slash: 5
 
+- type: entity
+  parent: ADTBaseMobNarsiBigDemon
+  id: ADTBloodyMouthDemon
+  name: Bloody mouth
+  description: The personification of the gluttony of the dark god....
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: demonic_mouth
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: demonic_mouth
+      Critical:
+        Base: demonic_mouth_dead
+      Dead:
+        Base: demonic_mouth_dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      450: Dead
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 25
+        
+- type: entity
+  parent: ADTBaseMobNarsiBigDemon
+  id: ADTDarkRattlesnakeDemon
+  name: Dark rattlesnake
+  description: A hissing abyss that awaits the awakening of its master....
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: dark_rattlesnake
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: dark_rattlesnake
+      Critical:
+        Base: dark_rattlesnake_dead
+      Dead:
+        Base: dark_rattlesnake_dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 1.5
+    baseSprintSpeed: 2.5
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      350: Dead
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 15
+        Poison: 5
+        
+- type: entity
+  parent: ADTBaseMobNarsiBigDemon
+  id: ADTBloodyArmySoldierDemon
+  name: Soldier of the bloody army
+  description: Loyal servant of the Nar'Si. Will fight to destroy the world until he himself is destroyed.
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: bloody_army_soldier
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: bloody_army_soldier
+      Critical:
+        Base: bloody_army_soldier_dead
+      Dead:
+        Base: bloody_army_soldier_dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      750: Dead
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 35
 #Spawn Demons End
 
 - type: entity
