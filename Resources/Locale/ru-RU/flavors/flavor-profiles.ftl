@@ -148,6 +148,8 @@ flavor-complex-chaos = как хаос
 flavor-complex-squirming = как шевеление
 flavor-complex-electrons = как электроны
 flavor-complex-parents = как чьи-то родители
+flavor-complex-plastic = like plastic
+flavor-complex-glue = like glue
 
 ## Generic alcohol/soda taste. This should be replaced with an actual flavor profile.
 

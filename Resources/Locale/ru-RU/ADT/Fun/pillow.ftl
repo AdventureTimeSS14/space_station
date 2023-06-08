@@ -1,159 +1,120 @@
 ent-ADTCalliePillow = Келли
     .desc = "Малышка Келли!"
     .suffix = { "" }
-
 ent-ADTAuroraPillow = Аврора
     .desc = "Маленькая симпатичная подушечка "Аврора" UwU"
     .suffix = { "" }
-
 ent-ADTCamillePillow = Камилла
     .desc = "Симпатичная подушечка "Камилла""
     .suffix = { "" }
-
 ent-ADTCascaPillow = Каска
     .desc = "Симпатичная подушечка "Каска""
     .suffix = { "" }
-
 ent-ADTChaikaPillow = Чайка
     .desc = "Симпатичная подушечка "Чайка""
     .suffix = { "" }
-
 ent-ADTElisabethPillow = Элизабет
     .desc = "Симпатичная подушечка "Элизабет""
     .suffix = { "" }
-
-ent-ADTFoxy_granpaPillow = Дедушка Фокси 
+ent-ADTFoxy_granpaPillow = Дедушка Фокси
     .desc = "Симпатичная подушечка "Дедушка Фокси" о7"
     .suffix = { "" }
-
-ent-ADTHarukoPillow = Харуко 
+ent-ADTHarukoPillow = Харуко
     .desc = "Симпатичная подушечка "Харуко" OwU"
     .suffix = { "" }
-
-ent-ADTHoloPillow = Холо 
+ent-ADTHoloPillow = Холо
     .desc = "Симпатичная подушечка "Холо" >w<"
     .suffix = { "" }
-
-ent-ADTIanPillow = Иан 
+ent-ADTIanPillow = Иан
     .desc = "Симпатичная подушечка "Иан" Гуф"
     .suffix = { "" }
-
-ent-ADTImeraPillow = Имера 
+ent-ADTImeraPillow = Имера
     .desc = "Симпатичная подушечка "Имера""
     .suffix = { "" }
-
-ent-ADTJolynePillow = Джолин 
+ent-ADTJolynePillow = Джолин
     .desc = "Милая подушечка "Джолин""
     .suffix = { "" }
-
-ent-ADTKurisuPillow = Курису 
+ent-ADTKurisuPillow = Курису
     .desc = "Милая подушечка "Курису" >w<"
     .suffix = { "" }
-
-ent-ADTMariePillow = Мария 
+ent-ADTMariePillow = Мария
     .desc = "Милая подушечка "Мария" Ня!"
     .suffix = { "" }
-
-ent-ADTYokoPillow = Йоко 
+ent-ADTYokoPillow = Йоко
     .desc = "Милая подушечка "Йоко" O_O"
     .suffix = { "" }
-
-ent-ADTMugiPillow = Муги 
+ent-ADTMugiPillow = Муги
     .desc = "Милая подушечка "добрая Муги""
     .suffix = { "" }
-
-ent-ADTNagaPillow = Нага 
+ent-ADTNagaPillow = Нага
     .desc = "Милая подушечка "Нага""
     .suffix = { "" }
-
-ent-ADTNukiePillow = Синдикат 
+ent-ADTNukiePillow = Синдикат
     .desc = "Злая подушечка "Синдикат" Я.О."
     .suffix = { "" }
-
-ent-ADTPatchouliPillow = Пачули 
+ent-ADTPatchouliPillow = Пачули
     .desc = "Милая подушечка "Пачули" \0/"
     .suffix = { "" }
-
-ent-ADTPlutiaPillow = Плутия 
+ent-ADTPlutiaPillow = Плутия
     .desc = "Покрашенная подушечка "Плутия""
     .suffix = { "" }
-
-ent-ADTRedPillow = Красный унатх 
+ent-ADTRedPillow = Красный унатх
     .desc = "Милый подушечка "Красный унатх""
     .suffix = { "" }
-
-ent-ADTReiPillow = Рей Аянами 
+ent-ADTReiPillow = Рей Аянами
     .desc = "Милая подушечка "Рей Аянами""
     .suffix = { "" }
-
-ent-ADTReisenPillow = Милашка Райзен 
+ent-ADTReisenPillow = Милашка Райзен
     .desc = "Милая подушечка "Райзен""
     .suffix = { "" }
-
-ent-ADTRockerPillow = Музыкант Рокер 
+ent-ADTRockerPillow = Музыкант Рокер
     .desc = "Музыкант подушечка "Рокер""
     .suffix = { "" }
-
-ent-ADTSisaPillow = Унатх Сиса 
+ent-ADTSisaPillow = Унатх Сиса
     .desc = "Милая подушечка "Леди Сиса""
     .suffix = { "" }
-
-ent-ADTSlarshaPillow = Унатх Сларша 
+ent-ADTSlarshaPillow = Унатх Сларша
     .desc = "Милая Подушечка "Девочка Сларша""
     .suffix = { "" }
-
-ent-ADTSquidPillow = Спруд 
+ent-ADTSquidPillow = Спруд
     .desc = "Милая подушечка "Девочка Спруд""
     .suffix = { "" }
-
-ent-ADTSquigglyPillow = Джин 
+ent-ADTSquigglyPillow = Джин
     .desc = "Подушечка "Призрак Джин""
     .suffix = { "" }
-
-ent-ADTSue_bowchiefPillow = Сью вождь 
+ent-ADTSue_bowchiefPillow = Сью вождь
     .desc = "Милая подушечка "Девочка Сью""
     .suffix = { "" }
-
-ent-ADTTomokoPillow = Томоко 
+ent-ADTTomokoPillow = Томоко
     .desc = "Милая  подушечка "девочка Томоко" QwU"
     .suffix = { "" }
-
-ent-ADTTorielPillow = Ториэль 
+ent-ADTTorielPillow = Ториэль
     .desc = "Милая подушечка "Ториэль""
     .suffix = { "" }
-
-ent-ADTUmaruPillow = Умару 
+ent-ADTUmaruPillow = Умару
     .desc = "Милая подушечка "Девочка аниме Умару""
     .suffix = { "" }
-
-ent-ADTYaranaikaPillow = Чистобот 
+ent-ADTYaranaikaPillow = Чистобот
     .desc = "Подушечка "Чистобот"
     .suffix = { "" }
-
-ent-ADTKirravaPillow = Киирава 
+ent-ADTKirravaPillow = Киирава
     .desc = "Милая подушечка "Киирава""
     .suffix = { "" }
-
-ent-ADTYrogPillow = Урог 
+ent-ADTYrogPillow = Урог
     .desc = "Подушечка "клевый парень Урог""
     .suffix = { "" }
-
-ent-ADTKysPillow = Кусь 
-    .desc =  Подушечка "РНД моя жизнь" Кусь"
+ent-ADTKysPillow = Кусь
+    .desc = Подушечка "РНД моя жизнь" Кусь"
     .suffix = { "" }
-
-ent-ADTNa_leuPillow = На Леи 
+ent-ADTNa_leuPillow = На Леи
     .desc = "Подушечка "Если кто то нарушит КЗ то убьет На Леи!""
     .suffix = { "" }
-
-ent-ADTYunaPillow = Юна 
+ent-ADTYunaPillow = Юна
     .desc = "Милая подушечка "кошечка Юна! UwU""
     .suffix = { "" }
-
-ent-ADTNarsiePillow = Нар'Си 
+ent-ADTNarsiePillow = Нар'Си
     .desc = "Подушечка культиста Нар'Си!"
     .suffix = { "" }
-
 ent-ADTJunalPillow = Джунал
     .desc = Милая подушечка "Джунал! UwU""
     .suffix = { "" }

@@ -1,6 +1,6 @@
 ent-ADTClothingOuterSuitRacoon = Костюм енота
     .desc = Это же Мортиша!
-ent-ADTClothingHeadHatRacoon = Шапка от костюма енота 
+ent-ADTClothingHeadHatRacoon = Шапка от костюма енота
     .desc = Это пренадлежит Мортише?
 ent-ADTClothingOuterSuitFox = Костюм лисы
     .desc = Алиса???
