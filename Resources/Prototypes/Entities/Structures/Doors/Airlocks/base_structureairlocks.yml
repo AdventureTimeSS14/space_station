@@ -66,6 +66,7 @@
     fuel: 3
     time: 3
   - type: Airlock
+  - type: DoorBolt
     openUnlitVisible: true # Corvax-Resprite-Airlocks
   - type: Appearance
   - type: WiresVisuals
