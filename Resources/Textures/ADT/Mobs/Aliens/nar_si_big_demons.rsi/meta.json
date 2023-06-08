@@ -3,30 +3,30 @@
     "license": "CC-BY-SA-3.0",
     "copyright": "Created by discord:LunaLita#0840",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 64,
+        "y": 64
     },
     "states": [
         {
-            "name": "blody_eyes",
+            "name": "bloody_army_soldier",
             "directions": 4
         },
         {
-            "name": "blody_eyes_dead"
+            "name": "bloody_army_soldier_dead"
         },
         {
-            "name": "bunch_demonic_eyes",
+            "name": "demonic_mouth",
             "directions": 4
         },
         {
-            "name": "bunch_demonic_eyes_dead"
+            "name": "demonic_mouth_dead"
         },
         {
-            "name": "demonic_eye",
+            "name": "dark_rattlesnake",
             "directions": 4
         },
         {
-            "name": "demonic_eye_dead"
+            "name": "dark_rattlesnake_dead"
         }
     ]
 }

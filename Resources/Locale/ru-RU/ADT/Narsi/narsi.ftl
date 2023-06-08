@@ -5,3 +5,22 @@ action-speech-spell-summon-demons = AIE KHUSE EU
 ent-ADTNarSi = Механический Нар'Си
     .desc = "что это?"
     .suffix = { "" }
+
+
+ent-ADTBlodyEyesDemon = Демон кровавых глаз
+    .desc = Тёмная материя у которой хаотично вылезают глаза из тела. Кажется они все следят за вами...
+
+ent-ADTBunchDemonicEyesDemon = Куча демонических глаз
+    .desc = Мультиоккуляр, следящий за каждым вашим движением... Выглядит не дружелюбно.
+    
+ent-ADTDemonicEyeDemon = Демонический глаз
+    .desc = Сгусток тьмы и крови, жаждущий вашей смерти.
+    
+ent-ADTBloodyMouthDemon = Кровавая пасть
+    .desc = Олицетворение чревоугодие тёмного бога....
+    
+ent-ADTDarkRattlesnakeDemon = тёмный гремучник
+    .desc = Шипящая бездна, что ждёт пробуждения своего хозяина....
+    
+ent-ADTBlodyEyesDemon = 
+    .desc = 
