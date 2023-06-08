@@ -500,7 +500,7 @@
     staticRecipes:
       - Brutepack
       - Ointment
-      - HandLabeler
+      #- HandLabeler - YAML пишет нет такого прототипа
       - Defibrillator
       - HandheldHealthAnalyzer
       - ClothingHandsGlovesLatex
