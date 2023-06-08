@@ -245,6 +245,7 @@
   components:
   - type: Item
     sprite: Objects/Tanks/Jetpacks/void.rsi
+    size: 20
   - type: Sprite
     sprite: Objects/Tanks/Jetpacks/void.rsi
   - type: Clothing

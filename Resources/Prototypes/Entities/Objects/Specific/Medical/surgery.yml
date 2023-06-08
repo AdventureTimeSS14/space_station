@@ -8,7 +8,7 @@
   - type: Sprite
     netsync: false
   - type: StaticPrice
-    price: 60
+    price: 30
 
 # Cautery
 
@@ -26,7 +26,7 @@
   - type: ItemCooldown
   - type: MeleeWeapon
     damage:
-       types:
+      types:
         Heat: 5
     soundHit:
       path: /Audio/Effects/lightburn.ogg

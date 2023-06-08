@@ -12,3 +12,32 @@
     sprite: ADT/Clothing/Head/Hats/true_detective_hat.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/true_detective_hat.rsi
+
+#Luna
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsGreatDruidWreath
+  name: Great Druid Wreath
+  description: So heavy, but it's worth it to proudly wear it.
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/great_druid_wreath.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/great_druid_wreath.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsBatHat
+  name: Bat hat
+  description: The same as Fin, only it's Remilia.
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/bat_hat.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/bat_hat.rsi

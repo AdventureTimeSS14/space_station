@@ -12,7 +12,7 @@
             "directions": 4
         },
         {
-            "name": "buble_gum",
+            "name": "bubble_gum",
             "directions": 4
         },
         {
@@ -61,6 +61,30 @@
         },
         {
             "name": "gorshock",
+            "directions": 4
+        },
+        {
+            "name": "morning_hairstyle",
+            "directions": 4
+        },
+        {
+            "name": "morning_hairstyle_2",
+            "directions": 4
+        },
+        {
+            "name": "ponytail",
+            "directions": 4
+        },
+        {
+            "name": "prince_charming",
+            "directions": 4
+        },
+        {
+            "name": "shaved_female",
+            "directions": 4
+        },
+        {
+            "name": "shaved_unisex",
             "directions": 4
         }
     ]

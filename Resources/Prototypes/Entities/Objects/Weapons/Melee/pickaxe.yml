@@ -48,3 +48,5 @@
       types:
         Piercing: 10
         Blunt: 4
+  - type: StaticPrice
+    price: 90

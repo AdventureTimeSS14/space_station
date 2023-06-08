@@ -133,7 +133,7 @@ public sealed class RoleBanManager
     }
 
     #region Job Bans
-    public async void CreateJobBan(IConsoleShell shell, LocatedPlayerData located, string job, string reason, uint minutes)
+    public async Task CreateJobBan(IConsoleShell shell, LocatedPlayerData located, string job, string reason, uint minutes)
     {
         if (!_prototypeManager.TryIndex(job, out JobPrototype? _))
         {
@@ -142,7 +142,7 @@ public sealed class RoleBanManager
         }
 
         job = string.Concat(JobPrefix, job);
-        CreateRoleBan(shell, located, job, reason, minutes);
+        await CreateRoleBan(shell, located, job, reason, minutes);
     }
 
     public HashSet<string>? GetJobBans(NetUserId playerUserId)
@@ -157,7 +157,7 @@ public sealed class RoleBanManager
     #endregion
 
     #region Commands
-    private async void CreateRoleBan(IConsoleShell shell, LocatedPlayerData located, string role, string reason, uint minutes)
+    private async Task CreateRoleBan(IConsoleShell shell, LocatedPlayerData located, string role, string reason, uint minutes)
     {
         var targetUid = located.UserId;
         var targetHWid = located.LastHWId;

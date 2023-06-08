@@ -1,6 +1,10 @@
-ent-ADTClothingOuterSuitRacoon = Костюм Енота
-    .desc = Фырк фырк фырк!
-    .suffix = { "" }
-ent-ADTClothingHeadHatRacoon = Голова Енота
-    .desc = ДА это же самый натуральный енот 
-    .suffix = { "" }
+ent-ADTClothingOuterSuitRacoon = Костюм енота
+    .desc = Это же Мортиша!
+ent-ADTClothingHeadHatRacoon = Шапка от костюма енота 
+    .desc = Это пренадлежит Мортише?
+ent-ADTClothingOuterSuitFox = Костюм лисы
+    .desc = Алиса???
+ent-ADTClothingHeadHatFox = Шапка от костюма лисы
+    .desc = Алиса!!!
+ent-ADTClothingHeadHatsBatHat = Шапка летучей мыши
+    .desc = такая же как у Фина, только это Ремилия.
