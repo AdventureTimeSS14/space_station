@@ -1,1 +1,1 @@
-﻿species-name-moth = Ниан
+species-name-moth = Ниан

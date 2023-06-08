@@ -1,4 +1,4 @@
-﻿marking-MothAntennasDefault = Antennas (Default)
+marking-MothAntennasDefault = Antennas (Default)
 marking-MothWingsDefault = Wings (Default)
 marking-MothWingsLook1 = Wings (Pointy)
 marking-MothWingsLook2 = Wings (Swirly)

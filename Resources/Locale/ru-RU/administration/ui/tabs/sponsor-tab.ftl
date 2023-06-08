@@ -1,4 +1,4 @@
-﻿sponsor-tab-add = Добавить
+sponsor-tab-add = Добавить
 sponsor-tab-count = Спонсоров
 sponsor-tab-tier = Уровень
 sponsor-tab-ooc = ООС

@@ -1,2 +1,2 @@
-ent-BlueShieldBox = BlueShieldBox
-    .desc = BlueShieldBox
+ent-BlueShieldBox = BlueBox
+    .desc = Маленькая коробочка с использованием блюспейс технологии. При открытии выдает скафандр. Одноразовая.
