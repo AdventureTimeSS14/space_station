@@ -222,3 +222,13 @@
     - щёлкнул пальцами
     - щёлкнула пальцами
     # Corvax-Localization-End
+
+#Фикс еррора если появится оригинальное это удалить
+- type: emote
+  id: Salute
+  category: Vocal
+  chatMessages: [squishing]
+  chatTriggers:
+    - Salute
+    - Salute.
+    - Salute!
