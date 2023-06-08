@@ -1,5 +1,6 @@
 using Content.Server.Mind.Components;
 using Content.Server.Objectives.Interfaces;
+using Content.Server.Roles;
 using Content.Server.Shuttles.Components;
 using Content.Server.Traitor;
 using Content.Shared.Cuffs.Components;
