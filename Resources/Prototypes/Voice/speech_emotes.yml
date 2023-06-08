@@ -107,6 +107,97 @@
     - вздохнул.
     - вздохнула.
     # Corvax-Localization-End
+    
+
+- type: emote
+  id: Whistle
+  category: Vocal
+  chatMessages: [whistle]
+  chatTriggers:
+    - whistle
+    - whistle.
+    - whistle!
+    - whistles
+    - whistles.
+    - whistles!
+    - whistleblowing
+    - whistleblowing.
+    - whistleblowing!
+
+- type: emote
+  id: Crying
+  category: Vocal
+  chatMessages: [crying]
+  chatTriggers:
+    - cry
+    - cry.
+    - cry!
+    - crying
+    - crying.
+    - crying!
+    - cries
+    - cries.
+    - cries!
+
+- type: emote
+  id: Squish
+  category: Vocal
+  chatMessages: [squishing]
+  chatTriggers:
+    - squish
+    - squish.
+    - squish!
+    - squishing
+    - squishing.
+    - squishing!
+    - squishes
+    - squishes.
+    - squishes!
+
+- type: emote
+  id: Whistle
+  category: Vocal
+  chatMessages: [whistle]
+  chatTriggers:
+    - whistle
+    - whistle.
+    - whistle!
+    - whistles
+    - whistles.
+    - whistles!
+    - whistleblowing
+    - whistleblowing.
+    - whistleblowing!
+
+- type: emote
+  id: Crying
+  category: Vocal
+  chatMessages: [crying]
+  chatTriggers:
+    - cry
+    - cry.
+    - cry!
+    - crying
+    - crying.
+    - crying!
+    - cries
+    - cries.
+    - cries!
+
+- type: emote
+  id: Squish
+  category: Vocal
+  chatMessages: [squishing]
+  chatTriggers:
+    - squish
+    - squish.
+    - squish!
+    - squishing
+    - squishing.
+    - squishing!
+    - squishes
+    - squishes.
+    - squishes!
 
 # hand emotes
 - type: emote

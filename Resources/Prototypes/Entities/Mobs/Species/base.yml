@@ -111,9 +111,9 @@
         # sprite refactor when
         state: l_leg
       - shader: StencilMask
-        map: [ "enum.HumanoidVisualLayers.StencilMask" ]
+        map: ["enum.HumanoidVisualLayers.StencilMask"]
         sprite: Mobs/Customization/masking_helpers.rsi
-        state: female_full
+        state: unisex_full
         visible: false
       - map: [ "underwearb" ] #Sirena
       - map: [ "underweart" ] #Sirena
@@ -339,9 +339,9 @@
           sprite: Mobs/Species/Human/parts.rsi
           state: l_leg
         - shader: StencilMask
-          map: [ "enum.HumanoidVisualLayers.StencilMask" ]
+          map: ["enum.HumanoidVisualLayers.StencilMask"]
           sprite: Mobs/Customization/masking_helpers.rsi
-          state: female_full
+          state: unisex_full
           visible: false
         - map: [ "underwearb" ] #Sirena
         - map: [ "underweart" ] #Sirena
