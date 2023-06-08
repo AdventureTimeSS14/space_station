@@ -1,5 +1,5 @@
 action-name-spell-summon-demons = Призыв демонов
-action-description-spell-summon-demons = Это заклинание приывает демонов, защищающих вас
+action-description-spell-summon-demons = Это заклинание призывает демонов, защищающих вас
 action-speech-spell-summon-demons = AIE KHUSE EU
 
 ent-ADTNarSi = Механический Нар'Си
@@ -22,5 +22,5 @@ ent-ADTBloodyMouthDemon = Кровавая пасть
 ent-ADTDarkRattlesnakeDemon = тёмный гремучник
     .desc = Шипящая бездна, что ждёт пробуждения своего хозяина....
     
-ent-ADTBlodyEyesDemon = 
-    .desc = 
+ent-ADTBloodyArmySoldierDemon = Солдат кровавой армии
+    .desc = Верный слуга Нар'Си. Будет сражаться за уничтожение мира, пока сам не будет уничтожен.
