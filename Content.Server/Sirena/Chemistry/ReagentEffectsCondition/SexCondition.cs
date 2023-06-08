@@ -1,6 +1,7 @@
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Humanoid;
 using Content.Shared.IdentityManagement;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server.Sirena.Chemistry.ReagentEffectsCondition;
 
@@ -19,5 +20,10 @@ public sealed class SexCondition : ReagentEffectCondition
             return ShouldHave;
         else
             return !ShouldHave;
+    }
+
+    public override string GuidebookExplanation(IPrototypeManager prototype)
+    {
+        return "Какое-то описание посмотрим в игре -- SexCondition";
     }
 }

@@ -6,6 +6,7 @@ using Content.Shared.Humanoid;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Sirena;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server.Sirena.Chemistry.ReagentEffectsCondition;
 
@@ -31,5 +32,10 @@ public sealed class ERPStatusCondition : ReagentEffectCondition
         else
             return !ShouldHave;
 
+    }
+
+    public override string GuidebookExplanation(IPrototypeManager prototype)
+    {
+        return "Какое-то описание посмотрим в игре -- ERPStatusCondition";
     }
 }
