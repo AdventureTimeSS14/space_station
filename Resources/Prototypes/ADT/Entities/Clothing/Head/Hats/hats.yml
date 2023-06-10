@@ -41,17 +41,3 @@
     sprite: ADT/Clothing/Head/Hats/bat_hat.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/bat_hat.rsi
-
-- type: entity
-  parent: ClothingHeadBase
-  id: ADTClothingHeadHatsDungeonMasterHat
-  name: Dungeon Master Hat
-  description: Dungeon Master Hat.
-  components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
-  - type: Sprite
-    sprite: ADT/Clothing/Head/Hats/dungeon_master.rsi
-  - type: Clothing
-    sprite: ADT/Clothing/Head/Hats/dungeon_master.rsi

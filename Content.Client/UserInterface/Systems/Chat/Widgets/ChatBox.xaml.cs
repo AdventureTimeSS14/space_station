@@ -171,9 +171,6 @@ public partial class ChatBox : UIWidget
 
     private void OnTextChanged(LineEditEventArgs args)
     {
-        args.Control.CursorPosition = 0;
-        args.Control.SelectionStart = args.Text.Length;
-        
         // Update channel select button to correct channel if we have a prefix.
         _controller.UpdateSelectedChannel(this);
 
