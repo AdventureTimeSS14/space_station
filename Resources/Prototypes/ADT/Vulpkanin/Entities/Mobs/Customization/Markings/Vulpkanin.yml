@@ -88,14 +88,14 @@
     - sprite: Mobs/Customization/vulpkanin_tail.rsi
       state: tail2
 
-- type: marking
-  id: ADTVulpkanintail3
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [VulpkaninSpecies]
-  sprites:
-    - sprite: Mobs/Customization/vulpkanin_tail.rsi
-      state: tail3
+#- type: marking
+#  id: ADTVulpkanintail3
+#  bodyPart: Tail
+#  markingCategory: Tail
+#  speciesRestriction: [VulpkaninSpecies]
+#  sprites:
+#    - sprite: Mobs/Customization/vulpkanin_tail.rsi
+#      state: tail3
 
 - type: marking
   id: ADTVulpkaninear
