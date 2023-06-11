@@ -63,3 +63,14 @@
     sprite: ADT/Clothing/OuterClothing/Coats/suitcyber.rsi
   - type: Clothing
     sprite: ADT/Clothing/OuterClothing/Coats/suitcyber.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformDungeonMasterSuit
+  name: Dungeon Master Suit
+  description: Dungeon Master Suit.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/dungeon_master_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/dungeon_master_suit.rsi
