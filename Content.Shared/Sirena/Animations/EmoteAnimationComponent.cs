@@ -18,6 +18,7 @@ public class EmoteJumpActionEvent : InstantActionEvent { };
 public class EmoteTurnActionEvent : InstantActionEvent { };
 
 public class EmoteStopTailActionEvent : InstantActionEvent { };
+public class EmoteStartTailActionEvent : InstantActionEvent { };
 
 [RegisterComponent]
 [NetworkedComponent]
@@ -30,6 +31,7 @@ public class EmoteAnimationComponent : Component
     public InstantAction? JumpAction;
     public InstantAction? TurnAction;
     public InstantAction? StopTailAction;
+    public InstantAction? StartTailAction;
 
     [Serializable, NetSerializable]
     public class EmoteAnimationComponentState : ComponentState

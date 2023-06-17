@@ -30,6 +30,14 @@
   icon: Interface/Actions/blight.png
   event: !type:EmoteStopTailActionEvent
 
+  # start-tail animation
+- type: instantAction
+  id: EmoteStartTail
+  name: emote-start-tail-action-name
+  description: emote-start-tail-action-description
+  icon: Interface/Actions/blight.png
+  event: !type:EmoteStartTailActionEvent
+
 
 # Using EmoteAnimation from IC action chat
 - type: emote
@@ -76,4 +84,13 @@
     - останавливает хвост
     - qwe
     #- устроила сальто
+    #- устроил сальто
+- type: emote
+  id: EmoteStartTail
+  category: Animations
+  chatMessages: [двигает хвостом]
+  chatTriggers:
+    - двигает хвостом
+    - хвост двигается
+    - ewq
     #- устроил сальто

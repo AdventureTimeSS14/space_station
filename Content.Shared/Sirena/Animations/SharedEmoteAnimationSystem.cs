@@ -10,6 +10,7 @@ public class SharedEmoteAnimationSystem : EntitySystem
     public const string EmoteJumpActionPrototype = "EmoteJump";
     public const string EmoteTurnActionPrototype = "EmoteTurn";
     public const string EmoteStopTailActionPrototype = "EmoteStopTail";
+    public const string EmoteStartTailActionPrototype = "EmoteStartTail";
 
     [Dependency] public readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] public readonly IPrototypeManager _proto = default!;

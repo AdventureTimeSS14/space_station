@@ -24,12 +24,19 @@ public class EmoteAnimationSystem : SharedEmoteAnimationSystem
         SubscribeLocalEvent<EmoteAnimationComponent, EmoteJumpActionEvent>(OnEmoteJump);
         SubscribeLocalEvent<EmoteAnimationComponent, EmoteTurnActionEvent>(OnEmoteTurn);
         SubscribeLocalEvent<EmoteAnimationComponent, EmoteStopTailActionEvent>(OnEmoteStopTail);
+        SubscribeLocalEvent<EmoteAnimationComponent, EmoteStartTailActionEvent>(OnEmoteStartTail);
     }
 
     private void OnEmoteStopTail(EntityUid uid, EmoteAnimationComponent component, EmoteStopTailActionEvent args)
     {
-        bool a = TryDirty(uid);
-        Debug.Print($"tryDirty = {a}");
+        //bool a = TryDirty(uid);
+        //Debug.Print($"tryDirty = {a}");
+    }
+
+    private void OnEmoteStartTail(EntityUid uid, EmoteAnimationComponent component, EmoteStartTailActionEvent args)
+    {
+        //bool a = TryDirty(uid);
+        //Debug.Print($"tryDirty = {a}");
     }
 
     private void OnGetState(EntityUid uid, EmoteAnimationComponent component, ref ComponentGetState args)
@@ -43,10 +50,12 @@ public class EmoteAnimationSystem : SharedEmoteAnimationSystem
         var actionJump = new InstantAction(_proto.Index<InstantActionPrototype>(EmoteJumpActionPrototype));
         var actionTurn = new InstantAction(_proto.Index<InstantActionPrototype>(EmoteTurnActionPrototype));
         var actionStopTail = new InstantAction(_proto.Index<InstantActionPrototype>(EmoteStopTailActionPrototype));
+        var actionStartTail = new InstantAction(_proto.Index<InstantActionPrototype>(EmoteStartTailActionPrototype));
         component.FlipAction = actionFlip;
         component.JumpAction = actionJump;
         component.TurnAction = actionTurn;
         component.StopTailAction = actionStopTail;
+        component.StartTailAction = actionStartTail;
         //_action.AddAction(uid, actionFlip, null);
         //_action.AddAction(uid, actionJump, null);
         //_action.AddAction(uid, actionTurn, null);
@@ -63,6 +72,8 @@ public class EmoteAnimationSystem : SharedEmoteAnimationSystem
             _action.RemoveAction(uid, component.TurnAction);
         if (component.StopTailAction != null)
             _action.RemoveAction(uid, component.StopTailAction);
+        if (component.StartTailAction != null)
+            _action.RemoveAction(uid, component.StartTailAction);
         // shity-dirty-fucking code. There is need to refactor in future, if you wanna add more animations - Doc
     }
 

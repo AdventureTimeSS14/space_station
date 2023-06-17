@@ -41,6 +41,9 @@ public class EmoteAnimationSystem : SharedEmoteAnimationSystem
             case EmoteStopTailActionPrototype:
                 PlayEmoteStopTail(uid);
                 break;
+            case EmoteStartTailActionPrototype:
+                PlayEmoteStartTail(uid);
+                break;
             default:
                 break;
         }
@@ -160,7 +163,7 @@ public class EmoteAnimationSystem : SharedEmoteAnimationSystem
         if (!TryComp<SpriteComponent>(uid, out var sprite))
         { return; }
 
-        sprite.NetSyncEnabled = true;
+        //sprite.NetSyncEnabled = true;
         foreach (var item in sprite.AllLayers)
         {
             if (item.RsiState.Name != null)
@@ -171,10 +174,35 @@ public class EmoteAnimationSystem : SharedEmoteAnimationSystem
                 }
         }
 
-        foreach (var component in _entityManager.GetComponents(uid))
+        //foreach (var component in _entityManager.GetComponents(uid))
+        //{
+        //    _entityManager.Dirty((Robust.Shared.GameObjects.Component)component);
+        //}
+    }
+    public void PlayEmoteStartTail(EntityUid uid)
+    {
+        var animationKey = "emoteAnimationKeyId";
+
+        if (AnimationSystem.HasRunningAnimation(uid, animationKey))
+            return;
+        if (!TryComp<SpriteComponent>(uid, out var sprite))
+        { return; }
+
+        //sprite.NetSyncEnabled = true;
+        foreach (var item in sprite.AllLayers)
         {
-            _entityManager.Dirty((Robust.Shared.GameObjects.Component)component);
+            if (item.RsiState.Name != null)
+                if (item.RsiState.Name.ToLower().Contains("tail"))
+                {
+                    item.AnimationTime = 0;
+                    item.AutoAnimated = true;
+                }
         }
+
+        //foreach (var component in _entityManager.GetComponents(uid))
+        //{
+        //    _entityManager.Dirty((Robust.Shared.GameObjects.Component) component);
+        //}
     }
 
 }
