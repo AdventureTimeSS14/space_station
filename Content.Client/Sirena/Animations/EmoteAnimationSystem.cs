@@ -150,6 +150,7 @@ public class EmoteAnimationSystem : SharedEmoteAnimationSystem
         AnimationSystem.Play(uid, animation, animationKey);
     }
 
+    //Останавливает хвост. Сущность должна иметь имя слоя, содержащее "tail" для остановки анимации.
     public void PlayEmoteStopTail(EntityUid uid)
     {
         var animationKey = "emoteAnimationKeyId";
@@ -158,12 +159,15 @@ public class EmoteAnimationSystem : SharedEmoteAnimationSystem
             return;
         if (!TryComp<SpriteComponent>(uid, out var sprite))
         { return; }
+
+        sprite.NetSyncEnabled = true;
         foreach (var item in sprite.AllLayers)
         {
             if (item.RsiState.Name != null)
                 if (item.RsiState.Name.ToLower().Contains("tail"))
                 {
                     item.AutoAnimated = false;
+                    item.AnimationTime = 0;
                 }
         }
 
