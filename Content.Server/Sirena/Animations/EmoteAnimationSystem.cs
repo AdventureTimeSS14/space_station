@@ -6,6 +6,7 @@ using static Content.Shared.Sirena.Animations.EmoteAnimationComponent;
 using Content.Server.Chat.Systems;
 using Content.Shared.Chat.Prototypes;
 using Robust.Shared.GameObjects;
+using System.Diagnostics;
 
 namespace Content.Server.Sirena.Animations;
 
@@ -22,13 +23,13 @@ public class EmoteAnimationSystem : SharedEmoteAnimationSystem
         SubscribeLocalEvent<EmoteAnimationComponent, EmoteFlipActionEvent>(OnEmoteFlip);
         SubscribeLocalEvent<EmoteAnimationComponent, EmoteJumpActionEvent>(OnEmoteJump);
         SubscribeLocalEvent<EmoteAnimationComponent, EmoteTurnActionEvent>(OnEmoteTurn);
-        SubscribeLocalEvent<SyncSpriteComponent, EmoteStopTailActionEvent>(OnEmoteStopTail);
+        SubscribeLocalEvent<EmoteAnimationComponent, EmoteStopTailActionEvent>(OnEmoteStopTail);
     }
 
-    private void OnEmoteStopTail(EntityUid uid, SyncSpriteComponent component, EmoteStopTailActionEvent args)
+    private void OnEmoteStopTail(EntityUid uid, EmoteAnimationComponent component, EmoteStopTailActionEvent args)
     {
-        //PlayEmoteAnimation(uid, component, EmoteStopTailActionPrototype);
-        //component.
+        bool a = TryDirty(uid);
+        Debug.Print($"tryDirty = {a}");
     }
 
     private void OnGetState(EntityUid uid, EmoteAnimationComponent component, ref ComponentGetState args)
