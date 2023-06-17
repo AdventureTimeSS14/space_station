@@ -14,8 +14,7 @@ namespace Content.Client.Sirena.Animations;
 public class EmoteAnimationSystem : SharedEmoteAnimationSystem
 {
     [Dependency] private readonly AnimationPlayerSystem AnimationSystem = default!;
-    [Dependency] private readonly SpriteSystem _spriteSystem = default!;
-    //[Dependency] private readonly ComponentCollection _componentCollection = default!;
+    [Dependency] private readonly EntityManager _entityManager = default!;
     public override void Initialize()
     {
         SubscribeLocalEvent<EmoteAnimationComponent, ComponentHandleState>(OnHandleState);
@@ -167,12 +166,13 @@ public class EmoteAnimationSystem : SharedEmoteAnimationSystem
                     item.AutoAnimated = false;
                 }
         }
-        //Dirty(uid);
-        foreach (var component in EntityManager.GetComponents(uid))
+
+        foreach (var component in _entityManager.GetComponents(uid))
         {
-            EntityManager.Dirty((Robust.Shared.GameObjects.Component)component);
+            _entityManager.Dirty((Robust.Shared.GameObjects.Component)component);
         }
-        //EntityManager.DirtyEntity(uid);
     }
 
 }
+
+// попробовать NetworkEvent
