@@ -1,0 +1,95 @@
+# flip animation
+- type: instantAction
+  id: EmoteFlip
+  name: emote-flip-action-name
+  description: emote-flip-action-description
+  icon: Interface/Actions/blight.png
+  event: !type:EmoteFlipActionEvent
+
+# jump animation
+- type: instantAction
+  id: EmoteJump
+  name: emote-jump-action-name
+  description: emote-jump-action-description
+  icon: Interface/Actions/blight.png
+  event: !type:EmoteJumpActionEvent
+
+  # turn around in 4 directions animation
+- type: instantAction
+  id: EmoteTurn
+  name: emote-turn-action-name
+  description: emote-turn-action-description
+  icon: Interface/Actions/blight.png
+  event: !type:EmoteTurnActionEvent
+
+  # stop-tail animation
+- type: instantAction
+  id: EmoteStopTail
+  name: emote-stop-tail-action-name
+  description: emote-stop-tail-action-description
+  icon: Interface/Actions/blight.png
+  event: !type:EmoteStopTailActionEvent
+
+  # start-tail animation
+- type: instantAction
+  id: EmoteStartTail
+  name: emote-start-tail-action-name
+  description: emote-start-tail-action-description
+  icon: Interface/Actions/blight.png
+  event: !type:EmoteStartTailActionEvent
+
+
+# Using EmoteAnimation from IC action chat
+- type: emote
+  id: EmoteFlip
+  category: Animations
+  chatMessages: [делает сальто]
+  chatTriggers:
+    - сделал сальто
+    - сделала сальто
+    - делает сальто
+    - устроила сальто
+    - устроил сальто
+
+- type: emote
+  id: EmoteJump
+  category: Animations
+  chatMessages: [прыгает]
+  chatTriggers:
+    - прыгает
+    - прыгнула
+    - прыгнул
+    - подпрыгнул
+    - подпрыгнула
+    - подскакивает
+
+- type: emote
+  id: EmoteTurn
+  category: Animations
+  chatMessages: [кружится]
+  chatTriggers:
+    - кружится
+    - оборачивается
+    - танцует
+    - покружилась
+    - покружился
+
+# Using EmoteAnimation from IC action chat
+- type: emote
+  id: EmoteStopTail
+  category: Animations
+  chatMessages: [хвост замирает]
+  chatTriggers:
+    - хвост замирает
+    - прекратил вилять хвостом
+    - прекратила вилять хвостом
+    - прекратило вилять хвостом
+    - прекратили вилять хвостом
+
+- type: emote
+  id: EmoteStartTail
+  category: Animations
+  chatMessages: [двигает хвостом]
+  chatTriggers:
+    - виляет хвостом
+    - хвост двигается
