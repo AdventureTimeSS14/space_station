@@ -57,7 +57,7 @@
       - Piercing
       - Heat
       - Shock
-  - type: Bloodstream 
+  - type: Bloodstream
     bloodlossDamage:
       types:
         Bloodloss:
@@ -294,6 +294,7 @@
       Female: FemaleHuman
       Unsexed: MaleHuman
   - type: Emoting
+  - type: EmoteAnimation
   - type: BodyEmotes
     soundsId: GeneralBodyEmotes
   - type: Grammar
