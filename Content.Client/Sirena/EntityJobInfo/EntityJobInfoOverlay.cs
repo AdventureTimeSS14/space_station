@@ -100,9 +100,9 @@ public sealed class EntityJobInfoOverlay : Overlay
         if (_inventorySystem.TryGetSlotEntity(uid, "id", out var idUid))
         {
             // PDA
-            if (_entManager.TryGetComponent(idUid, out PDAComponent? pda) && pda.ContainedID is not null)
+            if (_entManager.TryGetComponent(idUid, out PdaComponent? pda) && pda.ContainedId is not null)
             {
-                if (TryMatchJobTitleToIcon(pda.ContainedID.JobTitle, out string? icon))
+                if (TryMatchJobTitleToIcon(pda.ContainedId.JobTitle, out string? icon))
                     return icon;
             }
             // ID Card

@@ -3,7 +3,7 @@
   abstract: true
   id: PlayerSiliconBase #for player controlled silicons
   components:
-  - type: Mind
+  - type: MindContainer
   - type: InputMover
   - type: MobMover
   - type: Reactive

@@ -6,30 +6,33 @@
     "x": 32,
     "y": 32
   },
-  "states": [
-    {
-      "name": "base"
-    },
-    {
-      "name": "capbase"
-    },
-    {
-      "name": "mag-1"
-    },
-    {
-      "name": "cap"
-    },
-    {
-      "name": "hv"
-    },
-    {
-      "name": "incendiary"
-    },
-    {
-      "name": "practice"
-    },
-    {
-      "name": "rubber"
-    }
-  ]
+    "states": [
+        {
+            "name": "base"
+        },
+        {
+            "name": "capbase"
+        },
+        {
+            "name": "hvt"
+        },
+        {
+            "name": "mag-1"
+        },
+        {
+            "name": "cap"
+        },
+        {
+            "name": "hv"
+        },
+        {
+            "name": "incendiary"
+        },
+        {
+            "name": "practice"
+        },
+        {
+            "name": "rubber"
+        }
+    ]
 }

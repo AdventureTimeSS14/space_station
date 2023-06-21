@@ -1,4 +1,4 @@
-﻿- type: job
+- type: job
   id: Virusolog
   name: job-name-virusolog
   description: job-description-virusolog
@@ -39,7 +39,7 @@
   name: Virusolog PDA
   description: Shiny and sterile. Has a built-in health analyzer.
   components:
-    - type: PDA
+    - type: Pda
       id: VirusologIDCard
       state: pda-medical
     - type: Icon

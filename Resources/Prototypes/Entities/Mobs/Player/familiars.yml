@@ -27,7 +27,6 @@
     - Chapel
   - type: Item
     size: 5
-  - type: Mind
   - type: MindContainer
     showExamineInfo: true
   - type: Faction
