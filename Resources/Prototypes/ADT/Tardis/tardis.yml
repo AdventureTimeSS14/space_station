@@ -4,11 +4,11 @@
   name: Tardis
   components:
     - type: Appearance
-      visuals:
-        - type: StorageVisualizer
-          state: tardis
-          state_open: tardis_open
-          state_closed: tardis_door
+      #visuals: // https://github.com/xtray85/space-station-14/actions/runs/5333627632/jobs/9664343159 Error: /Prototypes/ADT/Tardis/tardis.yml(7,7)  Field "visuals" not found in "Robust.Shared.GameObjects.AppearanceComponent".
+      #  - type: StorageVisualizer
+      #    state: tardis
+      #    state_open: tardis_open
+      #    state_closed: tardis_door
     - type: AccessReader
       access: [["Captain"]]
 
