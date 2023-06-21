@@ -110,8 +110,6 @@ entities:
       type: DecalGrid
     - type: OccluderTree
     - type: Shuttle
-    - nextUpdate: 141.4743149
-      type: GridPathfinding
     - type: GasTileOverlay
     - nextUpdate: 0
       type: SpreaderGrid

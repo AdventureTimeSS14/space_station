@@ -45,7 +45,7 @@
 #  name: Paramedic PDA
 #  description: Shiny and sterile. Has a built-in health analyzer.
 #  components:
-#    - type: PDA
+#    - type: Pda
 #      id: ParamedicIDCard
 #      state: pda-medical
 #    - type: Icon
