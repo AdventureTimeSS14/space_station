@@ -45,10 +45,10 @@
   - type: Appearance
     #rotate: true // Error: /Prototypes/ADT/Drones/nar_si.yml(46,5)  Field "rotate" not found in "Robust.Shared.GameObjects.AppearanceComponent". Error: /Prototypes/ADT/Drones/nar_si.yml(47,5)  Field "states" not found in "Robust.Shared.GameObjects.AppearanceComponent".
     #states:
-      Alive:
-        Base: mech_narsi
-      Dead:
-        Base: died_mech_narsi
+    #  Alive:
+    #    Base: mech_narsi
+    #  Dead:
+    #    Base: died_mech_narsi
   - type: CombatMode
   - type: Armor
     modifiers:
