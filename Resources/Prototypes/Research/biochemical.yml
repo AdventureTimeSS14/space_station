@@ -69,7 +69,8 @@
   cost: 2500
   recipeUnlocks:
   - ClothingEyesHudMedical
-  - ClothingEyesHudSecurity
+  #- ClothingEyesHudSecurity Error: /Prototypes/Research/biochemical.yml(72,5)  PrototypeID ClothingEyesHudSecurity for type Content.Shared.Research.Prototypes.LatheRecipePrototype at Line: 72, Col: 5 not found
+  # https://github.com/xtray85/space-station-14/actions/runs/5333627632/jobs/9664343159
 
 # Tier 2
 

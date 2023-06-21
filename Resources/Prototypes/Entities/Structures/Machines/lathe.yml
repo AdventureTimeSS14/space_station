@@ -431,11 +431,16 @@
       - MagazineBoxMagnumRubber
       - MagazineBoxRifleRubber
       - MagazineBoxLightRifleRubber
-      - MagazinePistolHighCapacity
-      - MagazinePistolCaselessRifle
-      - MagazineRifle
-      - MagazinePistolSubMachineGun
-      - ClothingEyesHudSecurity
+      #- MagazinePistolHighCapacity // https://github.com/xtray85/space-station-14/actions/runs/5333627632/jobs/9664343159
+#Error: /Prototypes/Entities/Structures/Machines/lathe.yml(434,9)  PrototypeID MagazinePistolHighCapacity for type Content.Shared.Research.Prototypes.LatheRecipePrototype at Line: 434, Col: 9 not found
+#Error: /Prototypes/Entities/Structures/Machines/lathe.yml(435,9)  PrototypeID MagazinePistolCaselessRifle for type Content.Shared.Research.Prototypes.LatheRecipePrototype at Line: 435, Col: 9 not found
+#Error: /Prototypes/Entities/Structures/Machines/lathe.yml(436,9)  PrototypeID MagazineRifle for type Content.Shared.Research.Prototypes.LatheRecipePrototype at Line: 436, Col: 9 not found
+#Error: /Prototypes/Entities/Structures/Machines/lathe.yml(437,9)  PrototypeID MagazinePistolSubMachineGun for type Content.Shared.Research.Prototypes.LatheRecipePrototype at Line: 437, Col: 9 not found
+#Error: /Prototypes/Entities/Structures/Machines/lathe.yml(438,9)  PrototypeID ClothingEyesHudSecurity for type Content.Shared.Research.Prototypes.LatheRecipePrototype at Line: 438, Col: 9 not found
+      #- MagazinePistolCaselessRifle
+      #- MagazineRifle
+      #- MagazinePistolSubMachineGun
+      #- ClothingEyesHudSecurity
       - CartridgePistolHighVelocity
       - CartridgeMagnumHighVelocity
       - CartridgeLightRifleHighVelocity
