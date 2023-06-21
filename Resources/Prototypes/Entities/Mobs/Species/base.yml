@@ -93,7 +93,6 @@
     sprite: Mobs/Species/Human/parts.rsi
     state: full
   - type: Sprite
-    netsync: false
     noRot: true
     drawdepth: Mobs
     layers:
@@ -307,6 +306,7 @@
     price: 1500 # Kidnapping a living person and selling them for cred is a good move.
     deathPenalty: 0.01 # However they really ought to be living and intact, otherwise they're worth 100x less.
   - type: TTS # Corvax-TTS
+  - type: ContentEye
 
 - type: entity
   save: false
@@ -323,7 +323,6 @@
       sprite: Mobs/Species/Human/parts.rsi
       state: full
     - type: Sprite
-      netsync: false
       drawdepth: Mobs
       noRot: true
       # TODO BODY Turn these into individual body parts?

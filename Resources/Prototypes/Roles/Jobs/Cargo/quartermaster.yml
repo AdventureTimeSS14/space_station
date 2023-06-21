@@ -5,13 +5,14 @@
   playTimeTracker: JobQuartermaster
   requirements:
     - !type:RoleTimeRequirement
+      role: JobCargoTechnician
+      time: 21600 #6 hrs
+    - !type:RoleTimeRequirement
       role: JobSalvageSpecialist
-      time: 36000 # Corvax-RoleTime
+      time: 21600 #6 hrs
     - !type:DepartmentTimeRequirement
       department: Cargo
-      time: 54000 # Corvax-RoleTime
-#    - !type:OverallPlaytimeRequirement
-#      time: 108000
+      time: 108000 # 30 hrs
   weight: 10
   startingGear: QuartermasterGear
   icon: "QuarterMaster"
