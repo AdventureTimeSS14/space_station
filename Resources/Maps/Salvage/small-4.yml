@@ -85,43 +85,31 @@ entities:
     - pos: -0.5,-0.5
       parent: 37
       type: Transform
-    - fixtures: {}
-      type: Fixtures
   - uid: 18
     components:
     - pos: -0.5,0.5
       parent: 37
       type: Transform
-    - fixtures: {}
-      type: Fixtures
   - uid: 19
     components:
     - pos: 0.5,0.5
       parent: 37
       type: Transform
-    - fixtures: {}
-      type: Fixtures
   - uid: 20
     components:
     - pos: 1.5,0.5
       parent: 37
       type: Transform
-    - fixtures: {}
-      type: Fixtures
   - uid: 48
     components:
     - pos: -0.5,-2.5
       parent: 37
       type: Transform
-    - fixtures: {}
-      type: Fixtures
   - uid: 51
     components:
     - pos: -0.5,-1.5
       parent: 37
       type: Transform
-    - fixtures: {}
-      type: Fixtures
   - uid: 54
     components:
     - pos: -0.5,-3.5
@@ -129,8 +117,6 @@ entities:
       type: Transform
     - enabled: True
       type: AmbientSound
-    - fixtures: {}
-      type: Fixtures
   - uid: 56
     components:
     - pos: 2.5,0.5
@@ -138,8 +124,6 @@ entities:
       type: Transform
     - enabled: True
       type: AmbientSound
-    - fixtures: {}
-      type: Fixtures
 - proto: ClothingHeadHatTophat
   entities:
   - uid: 41
@@ -486,12 +470,15 @@ entities:
     - pos: -0.5,-3.5
       parent: 37
       type: Transform
-- proto: WeaponShotgunSawn
+- proto: WeaponShotgunDoubleBarreledRubber
   entities:
   - uid: 50
     components:
-    - rot: -1.5707963267948966 rad
-      pos: -1.1875,-1.421875
+    - pos: -1.2840745,-1.890625
       parent: 37
       type: Transform
+    - nextFire: 46.8663079
+      type: Gun
+    - nextSound: 47.0663079
+      type: EmitSoundOnCollide
 ...

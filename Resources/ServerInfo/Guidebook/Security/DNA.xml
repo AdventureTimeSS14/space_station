@@ -1,5 +1,5 @@
 ﻿<Document>
-  # DNA
+  # DNA and Fingerprints
 
   ## How to get someone’s DNA?
 
@@ -8,10 +8,21 @@
     <GuideEntityEmbed Entity="ForensicScanner"/>
   </Box>
   Так что будьте осторожны, прежде чем с кем-то ссориться.
+  
+  Тот же сканер может также получить информацию об отпечатках пальцев о том, кто прикасался практически к любому объекту. Если возможный преступник пользовался перчатками, то ваш сканер распечатает, какие волокна остались на месте преступления.
 
   ## I got DNA. How do I recognize whose it is?
 
-  Вы можете распечатать криминалистическую информацию о отсканированном объекте, чтобы никогда его не пропустить. Теперь, имея бумагу, содержащую ДНК, вы можете просто найти [color=#a4885c]Station Records Computer[/color] и начать искать человека (или существо), чей ДНК совпадает.
+  Вы можете распечатать криминалистическую информацию о отсканированном объекте, чтобы никогда его не пропустить. Теперь, имея бумагу, содержащую ДНК, вы можете просто найти [color=#a4885c]Station Records Computer[/color] и начать искать человека (или существо), чей ДНК совпадает. 
+  Также возможно взять у кого-то отпечатки пальцев на месте происшествия, если вы заставите их снять перчатки и приложить к пальцам криминалистическую подушечку. Не нужно бежать обратно к [color=#a4885c]компьютеру Station Records[/color] и проверять, не сделал ли это дворецкий!
+  
+  <GuideEntityEmbed Entity="ForensicPad"/>
+  
+  ## Fibers
+  Whenenever people wearing gloves touch anything on the station, they are bound to leave behind some fibers. This complicates things, but nothing is unsolvable for a real detective.
+  
+  There are up to [color=red]16[/color] different types of fibers possible. Can that stop you from solving the case?
+  
   <Box>
     <GuideEntityEmbed Entity="ComputerStationRecords"/>
   </Box>

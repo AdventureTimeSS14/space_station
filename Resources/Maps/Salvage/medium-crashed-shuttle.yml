@@ -271,8 +271,8 @@ entities:
     - type: Shuttle
     - type: RadiationGridResistance
     - type: GasTileOverlay
-    - nextUpdate: 0
-      type: SpreaderGrid
+    - type: SpreaderGrid
+    - type: GridPathfinding
 - proto: AirlockGlassShuttle
   entities:
   - uid: 93
@@ -842,6 +842,13 @@ entities:
     - pos: -0.5,1.5
       parent: 166
       type: Transform
+- proto: CultAltarSpawner
+  entities:
+  - uid: 92
+    components:
+    - pos: -2.5,5.5
+      parent: 166
+      type: Transform
 - proto: FloodlightBroken
   entities:
   - uid: 164
@@ -1263,13 +1270,6 @@ entities:
     components:
     - rot: 3.141592653589793 rad
       pos: -2.5,-7.5
-      parent: 166
-      type: Transform
-- proto: WindoorCommandLocked
-  entities:
-  - uid: 92
-    components:
-    - pos: -0.5,-0.5
       parent: 166
       type: Transform
 - proto: WindowReinforcedDirectional
