@@ -218,7 +218,7 @@ entities:
             0: 35055
           -2,-3:
             0: 65271
-            1: 256
+            2: 256
           -2,-2:
             0: 65535
           -1,-3:
@@ -248,7 +248,7 @@ entities:
             1: 2048
           1,-2:
             0: 29491
-            2: 36044
+            3: 36044
           1,-1:
             0: 19596
           1,-4:
@@ -258,10 +258,10 @@ entities:
           2,-3:
             0: 65535
           2,-2:
-            2: 4915
+            3: 4915
             0: 58436
-            3: 136
-            4: 2048
+            4: 136
+            5: 2048
           2,-1:
             0: 3
           3,-4:
@@ -269,7 +269,7 @@ entities:
           3,-3:
             0: 30583
           3,-2:
-            3: 17
+            4: 17
             0: 4898
           0,2:
             0: 143
@@ -312,6 +312,21 @@ entities:
           moles:
           - 21.213781
           - 79.80423
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.14996
+          moles:
+          - 19.51668
+          - 73.41989
           - 0
           - 0
           - 0
@@ -373,8 +388,8 @@ entities:
     - type: Shuttle
     - type: RadiationGridResistance
     - type: GasTileOverlay
-    - nextUpdate: 0
-      type: SpreaderGrid
+    - type: SpreaderGrid
+    - type: GridPathfinding
 - proto: AirlockCommandLocked
   entities:
   - uid: 85
@@ -1028,13 +1043,6 @@ entities:
   - uid: 350
     components:
     - pos: -9.5,1.5
-      parent: 407
-      type: Transform
-- proto: AtmosDeviceFanTiny
-  entities:
-  - uid: 363
-    components:
-    - pos: 4.5,-7.5
       parent: 407
       type: Transform
 - proto: AtmosFixInstantPlasmaFireMarker
@@ -2042,53 +2050,20 @@ entities:
     - pos: 7.5,4.5
       parent: 407
       type: Transform
-- proto: ClothingEyesGlassesSunglasses
-  entities:
-  - uid: 337
-    components:
-    - flags: InContainer
-      type: MetaData
-    - parent: 336
-      type: Transform
-    - canCollide: False
-      type: Physics
-    - type: InsideEntityStorage
-- proto: ClothingHeadHelmetEVA
+- proto: ClothingHeadHelmetAncient
   entities:
   - uid: 212
     components:
-    - pos: 6.5055065,-5.470614
+    - pos: -7.681996,-9.518968
       parent: 407
       type: Transform
-- proto: ClothingNeckCloakNanotrasen
-  entities:
-  - uid: 338
-    components:
-    - flags: InContainer
-      type: MetaData
-    - parent: 336
-      type: Transform
-    - canCollide: False
-      type: Physics
-    - type: InsideEntityStorage
-- proto: ClothingOuterHardsuitEVA
+- proto: ClothingOuterHardsuitAncientEVA
   entities:
   - uid: 211
     components:
-    - pos: 6.531904,-6.446867
+    - pos: -7.353871,-9.425218
       parent: 407
       type: Transform
-- proto: ClothingShoesLeather
-  entities:
-  - uid: 339
-    components:
-    - flags: InContainer
-      type: MetaData
-    - parent: 336
-      type: Transform
-    - canCollide: False
-      type: Physics
-    - type: InsideEntityStorage
 - proto: ClothingUniformJumpsuitEngineeringHazard
   entities:
   - uid: 356
@@ -2427,6 +2402,11 @@ entities:
     - pos: 4.5,8.5
       parent: 407
       type: Transform
+  - uid: 192
+    components:
+    - pos: -7.5,-9.5
+      parent: 407
+      type: Transform
   - uid: 193
     components:
     - pos: 8.5,8.5
@@ -2679,11 +2659,6 @@ entities:
   - uid: 190
     components:
     - pos: 10.5,-9.5
-      parent: 407
-      type: Transform
-  - uid: 192
-    components:
-    - pos: 12.5,-9.5
       parent: 407
       type: Transform
   - uid: 194

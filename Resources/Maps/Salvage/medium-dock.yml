@@ -162,8 +162,8 @@ entities:
     - type: Shuttle
     - type: RadiationGridResistance
     - type: GasTileOverlay
-    - nextUpdate: 0
-      type: SpreaderGrid
+    - type: SpreaderGrid
+    - type: GridPathfinding
 - proto: AirlockShuttle
   entities:
   - uid: 23
@@ -611,6 +611,11 @@ entities:
     - pos: 1.5,1.5
       parent: 50
       type: Transform
+  - uid: 120
+    components:
+    - pos: 0.5,1.5
+      parent: 50
+      type: Transform
 - proto: LockerChemistryFilled
   entities:
   - uid: 77
@@ -623,13 +628,6 @@ entities:
   - uid: 117
     components:
     - pos: -0.5,-2.5
-      parent: 50
-      type: Transform
-- proto: QuadraticCapacitorStockPart
-  entities:
-  - uid: 114
-    components:
-    - pos: -5.6509933,-2.338189
       parent: 50
       type: Transform
 - proto: Rack
@@ -680,6 +678,11 @@ entities:
     components:
     - rot: 1.5707963267948966 rad
       pos: 3.5,-0.5
+      parent: 50
+      type: Transform
+  - uid: 118
+    components:
+    - pos: -0.5,-0.5
       parent: 50
       type: Transform
 - proto: RailingCorner
@@ -735,6 +738,13 @@ entities:
   - uid: 73
     components:
     - pos: -0.5,1.5
+      parent: 50
+      type: Transform
+- proto: SalvagePartsT3Spawner
+  entities:
+  - uid: 114
+    components:
+    - pos: -5.5,-2.5
       parent: 50
       type: Transform
 - proto: Shovel
@@ -902,13 +912,6 @@ entities:
   - uid: 47
     components:
     - pos: 3.5,-1.5
-      parent: 50
-      type: Transform
-- proto: WindowDirectional
-  entities:
-  - uid: 118
-    components:
-    - pos: -0.5,-0.5
       parent: 50
       type: Transform
 ...

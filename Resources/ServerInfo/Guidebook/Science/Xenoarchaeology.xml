@@ -4,7 +4,7 @@
 
 ## Artifacts
 <Box>
-<GuideEntityEmbed Entity="SimpleXenoArtifact" Caption=""/>
+<GuideEntityEmbed Entity="ComplexXenoArtifact" Caption=""/>
 <GuideEntityEmbed Entity="SimpleXenoArtifactItem" Caption=""/>
 </Box>
 Артефакты состоят из случайно сгенерированной графовой структуры. Они состоят из узлов, соединенных друг с другом ребрами, обход которых является главной целью ученых, работающих над ними.
