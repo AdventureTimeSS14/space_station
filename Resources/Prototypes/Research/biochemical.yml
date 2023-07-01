@@ -1,4 +1,4 @@
-﻿# Tier 1
+# Tier 1
 
 - type: technology
   id: Chemistry
@@ -58,19 +58,19 @@
   - VaccinatorMachineCircuitboard
   - DiagnoserMachineCircuitboard
 
-- type: technology
-  id: HUD
-  name: research-technology-hud
-  icon:
-    sprite: Clothing/Eyes/Hud/sec.rsi
-    state: icon
-  discipline: Biochemical
-  tier: 1
-  cost: 2500
-  recipeUnlocks:
-  - ClothingEyesHudMedical
-  #- ClothingEyesHudSecurity Error: /Prototypes/Research/biochemical.yml(72,5)  PrototypeID ClothingEyesHudSecurity for type Content.Shared.Research.Prototypes.LatheRecipePrototype at Line: 72, Col: 5 not found
-  # https://github.com/xtray85/space-station-14/actions/runs/5333627632/jobs/9664343159
+#- type: technology
+#  id: HUD
+#  name: research-technology-hud
+#  icon:
+#    sprite: Clothing/Eyes/Hud/sec.rsi
+#    state: icon
+#  discipline: Biochemical
+#  tier: 1
+#  cost: 2500
+#  recipeUnlocks:
+#  - ClothingEyesHudMedical
+#  #- ClothingEyesHudSecurity Error: /Prototypes/Research/biochemical.yml(72,5)  PrototypeID ClothingEyesHudSecurity for type Content.Shared.Research.Prototypes.LatheRecipePrototype at Line: 72, Col: 5 not found
+#  # https://github.com/xtray85/space-station-14/actions/runs/5333627632/jobs/9664343159
 
 # Tier 2
 
@@ -129,17 +129,17 @@
   - SyringeBluespace
 
 # look into revisiting this later once medical isn't a hellhole
-#- type: technology
-#  id: Cloning
-#  name: research-technology-cloning
-#  icon:
-#    sprite: Structures/Machines/cloning.rsi
-#    state: pod_0
-#  discipline: Biochemical
-#  tier: 3
-#  cost: 15000
-#  recipeUnlocks:
-#  - CloningPodMachineCircuitboard
-#  - MedicalScannerMachineCircuitboard
-#  - CloningConsoleComputerCircuitboard
-#  - BiomassReclaimerMachineCircuitboard
+- type: technology
+  id: Cloning
+  name: research-technology-cloning
+  icon:
+    sprite: Structures/Machines/cloning.rsi
+    state: pod_0
+  discipline: Biochemical
+  tier: 3
+  cost: 15000
+  recipeUnlocks:
+  - CloningPodMachineCircuitboard
+  - MedicalScannerMachineCircuitboard
+  - CloningConsoleComputerCircuitboard
+  - BiomassReclaimerMachineCircuitboard

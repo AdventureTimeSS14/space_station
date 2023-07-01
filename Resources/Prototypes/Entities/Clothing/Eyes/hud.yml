@@ -55,14 +55,14 @@
 
 - type: entity
   parent: ClothingEyesBase
-  id: ADTClothingEyesHudCaptain
-  name: captain hud
+  id: ADTClothingEyesHudAdvanced
+  name: Advanced hud
   description: A heads-up display that scans the humanoids in view and provides accurate data about their ID status and security records.
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Eyes/HUD/captain.rsi
+    sprite: ADT/Clothing/Eyes/HUD/advanced_hud.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Eyes/HUD/captain.rsi
+    sprite: ADT/Clothing/Eyes/HUD/advanced_hud.rsi
   - type: ClothingGrantComponent # Sirena-Edit's-Start
     component:
     - type: ShowJobInfo
