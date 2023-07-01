@@ -225,7 +225,11 @@
       - ClothingBackpackSatchelHolding
       - ClothingBackpackDuffelHolding
       - WelderExperimental
-      - JawsOfLife
+      - JawsOfLife 
+      - ClothingEyesHudDiagnostic #Sirena T4 add
+      - ClothingEyesHudMedical #Sirena T4 add
+      - ClothingEyesHudSecurity #Sirena T4 add
+      - ADTClothingEyesHudAdvanced #Sirena T4 add
 
 - type: entity
   id: CircuitImprinter

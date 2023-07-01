@@ -1,0 +1,1 @@
+technologies-hud = Технология визоров
