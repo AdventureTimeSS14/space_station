@@ -221,7 +221,7 @@
   - type: DamageVisuals
     thresholds: [ 20, 40, 100 ]
     targetLayers:
-      - "enum.HumanoidVisualLayers.Tail"
+      #- "enum.HumanoidVisualLayers.Tail"
       - "enum.HumanoidVisualLayers.Chest"
       - "enum.HumanoidVisualLayers.Head"
       - "enum.HumanoidVisualLayers.LArm"
