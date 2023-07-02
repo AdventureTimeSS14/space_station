@@ -55,6 +55,8 @@
   name: ERT security belt
   description: Part of ERT security's gear
   components:
+  - type: Storage
+    capacity: 60
   - type: StorageFill
     contents:
       - id: EmergencyMedipen

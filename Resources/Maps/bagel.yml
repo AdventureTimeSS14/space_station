@@ -123918,18 +123918,18 @@ entities:
     - pos: 22.5,-0.5
       parent: 60
       type: Transform
-- proto: HatBandGold
-  entities:
-  - uid: 952
-    components:
-    - pos: -66.48321,13.590916
-      parent: 60
-      type: Transform
-  - uid: 24187
-    components:
-    - pos: -56.55667,-23.491457
-      parent: 60
-      type: Transform
+#- proto: HatBandGold
+#  entities:
+#  - uid: 952
+#    components:
+#    - pos: -66.48321,13.590916
+#      parent: 60
+#      type: Transform
+  #- uid: 24187
+  #  components:
+  #  - pos: -56.55667,-23.491457
+  #    parent: 60
+  #    type: Transform
 - proto: HatBandRed
   entities:
   - uid: 1405
