@@ -72,6 +72,8 @@
   name: ERT Leader belt
   description: Part of ERT leader's gear
   components:
+  - type: Storage
+    capacity: 60
   - type: StorageFill
     contents:
       - id: MagazinePistol
@@ -89,6 +91,8 @@
   name: ERT medical belt
   description: Part of ERT medical's gear
   components:
+  - type: Storage
+    capacity: 60
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
