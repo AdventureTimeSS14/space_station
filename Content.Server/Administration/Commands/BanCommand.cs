@@ -125,7 +125,7 @@ namespace Content.Server.Administration.Commands
             
             var banId = await dbMan.GetLastServerBanId();
 
-            if (webhookUrl != null)
+            if (!string.IsNullOrEmpty(webhookUrl))
             {
                 var payload = new WebhookPayload
                 {

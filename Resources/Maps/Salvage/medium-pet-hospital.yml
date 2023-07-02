@@ -41,8 +41,6 @@ entities:
       type: Physics
     - fixtures: {}
       type: Fixtures
-    - fixtures: {}
-      type: Fixtures
     - gravityShakeSound: !type:SoundPathSpecifier
         path: /Audio/Effects/alert.ogg
       type: Gravity
@@ -197,13 +195,6 @@ entities:
             43: 11,-7
             44: 12,-7
         - node:
-            color: '#9FED5896'
-            id: HalfTileOverlayGreyscale180
-          decals:
-            42: 10,-7
-            43: 11,-7
-            44: 12,-7
-        - node:
             color: '#52B4E996'
             id: HalfTileOverlayGreyscale270
           decals:
@@ -317,15 +308,11 @@ entities:
           -1,-1:
             0: 34956
             1: 1088
-            1: 1088
-            3: 1088
           0,-1:
             0: 65535
           -1,-3:
+            0: 51336
             1: 1088
-            1: 1088
-            1: 1088
-            3: 1088
           -1,-4:
             0: 32768
           0,-4:
@@ -340,11 +327,9 @@ entities:
             0: 65535
           1,-2:
             0: 65535
-            2: 2048
-            2: 2048
+          1,-1:
             0: 63487
             2: 2048
-            1: 2048
           2,-4:
             0: 65280
           2,-3:
@@ -357,7 +342,6 @@ entities:
             0: 12544
           3,-3:
             0: 30307
-            3: 272
             3: 272
           3,-2:
             0: 26487
@@ -408,8 +392,8 @@ entities:
         - volume: 2500
           temperature: 293.15
           moles:
-          - 0
-          - 0
+          - 21.213781
+          - 79.80423
           - 0
           - 0
           - 0
@@ -440,19 +424,6 @@ entities:
           moles:
           - 20.078888
           - 75.53487
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.14996
-          moles:
           - 0
           - 0
           - 0
@@ -1202,8 +1173,8 @@ entities:
       parent: 289
       type: Transform
     - toggleAction:
-        popupToggleSuffix: null
-        charges: null
+        sound: null
+        itemIconStyle: BigItem
         icon:
           sprite: Objects/Tools/flashlight.rsi
           state: flashlight
@@ -1214,16 +1185,13 @@ entities:
         keywords: []
         enabled: True
         useDelay: null
+        charges: null
         checkCanInteract: True
-        popup: null
         clientExclusive: False
         priority: 0
         autoPopulate: True
         autoRemove: True
         temporary: False
-        itemIconStyle: BigItem
-        sound: null
-        userPopup: null
         event: !type:ToggleActionEvent {}
       type: HandheldLight
 - proto: MaterialDiamond
