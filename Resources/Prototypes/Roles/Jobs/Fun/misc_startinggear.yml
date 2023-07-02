@@ -270,20 +270,20 @@
 
 #Brigmedic
 
-- type: startingGear
-  id: BrigmedicGear
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitBrigmedic
-    outerClothing: ClothingOuterCoatAMG
-    back: ClothingBackpackBrigmedicFilled
-    shoes: ClothingShoesColorRed
-    gloves: ClothingHandsGlovesNitrile
-    eyes: ClothingEyesHudMedical
-    head: ClothingHeadHatBeretBrigmedic
-    id: BrigmedicPDA
-    ears: ClothingHeadsetBrigmedic
-    mask: ClothingMaskBreathMedicalSecurity
-    belt: ClothingBeltMedicalFilled
-  innerclothingskirt: ClothingUniformJumpskirtBrigmedic
-  satchel: ClothingBackpackSatchelBrigmedicFilled
-  duffelbag: ClothingBackpackDuffelBrigmedicFilled
+#- type: startingGear
+#  id: BrigmedicGear
+#  equipment:
+#    jumpsuit: ClothingUniformJumpsuitBrigmedic
+#    outerClothing: ClothingOuterCoatAMG
+#    back: ClothingBackpackBrigmedicFilled
+#    shoes: ClothingShoesColorRed
+#    gloves: ClothingHandsGlovesNitrile
+#    eyes: ClothingEyesHudMedical
+#    head: ClothingHeadHatBeretBrigmedic
+#    id: BrigmedicPDA
+#    ears: ClothingHeadsetBrigmedic
+#    mask: ClothingMaskBreathMedicalSecurity
+#    belt: ClothingBeltMedicalFilled
+#  innerclothingskirt: ClothingUniformJumpskirtBrigmedic
+#  satchel: ClothingBackpackSatchelBrigmedicFilled
+#  duffelbag: ClothingBackpackDuffelBrigmedicFilled

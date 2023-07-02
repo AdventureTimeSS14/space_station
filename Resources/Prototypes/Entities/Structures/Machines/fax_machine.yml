@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: BaseMachinePowered
   id: FaxMachineBase
   name: long range fax machine
@@ -106,6 +106,6 @@
       name: "Captain's Office"
       receiveNukeCodes: true
       receiveStationGoal: true # Corvax-StationGoal
-    - type: ExternalNetworkConnection
-      deviceType: Fax
-      autoConnect: true
+    #- type: ExternalNetworkConnection
+    #  deviceType: Fax
+    #  autoConnect: true

@@ -1,4 +1,4 @@
-﻿using Content.Shared.Physics;
+using Content.Shared.Physics;
 using Content.Shared.Whitelist;
 using Robust.Shared.Audio;
 using Robust.Shared.Containers;
@@ -33,7 +33,7 @@ public abstract class SharedEntityStorageComponent : Component
     /// The total amount of items that can fit in one entitystorage
     /// </summary>
     [DataField("capacity")]
-    public int Capacity = 30;
+    public int Capacity = 33;
 
     /// <summary>
     /// Whether or not the entity still has collision when open

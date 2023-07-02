@@ -181,11 +181,11 @@
   description: Armored hardsuit helmet for security needs.
   components:
   - type: Sprite
-    #sprite: Clothing/Head/Hardsuits/security-red.rsi
-    sprite: ADT/Clothing/Head/Hardsuits/hos_hardsuithead.rsi
+    sprite: Clothing/Head/Hardsuits/security-red.rsi
+    #sprite: ADT/Clothing/Head/Hardsuits/hos_hardsuithead.rsi
   - type: Clothing
-    #sprite: Clothing/Head/Hardsuits/security-red.rsi
-    sprite: ADT/Clothing/Head/Hardsuits/hos_hardsuithead.rsi
+    sprite: Clothing/Head/Hardsuits/security-red.rsi
+    #sprite: ADT/Clothing/Head/Hardsuits/hos_hardsuithead.rsi
   - type: PointLight
     color: "#ffeead"
   - type: PressureProtection

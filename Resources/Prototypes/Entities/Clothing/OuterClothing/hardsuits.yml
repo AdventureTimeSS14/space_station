@@ -377,11 +377,11 @@
   description: A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor.
   components:
   - type: Sprite
-    #sprite: Clothing/OuterClothing/Hardsuits/security-red.rsi
-    sprite: ADT/Clothing/OuterClothing/Hardsuits/hos_hardsuit.rsi
+    sprite: Clothing/OuterClothing/Hardsuits/security-red.rsi
+    #sprite: ADT/Clothing/OuterClothing/Hardsuits/hos_hardsuit.rsi
   - type: Clothing
-    #sprite: Clothing/OuterClothing/Hardsuits/security-red.rsi
-    sprite: ADT/Clothing/OuterClothing/Hardsuits/hos_hardsuit.rsi
+    sprite: Clothing/OuterClothing/Hardsuits/security-red.rsi
+    #sprite: ADT/Clothing/OuterClothing/Hardsuits/hos_hardsuit.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.45
     lowPressureMultiplier: 10000
