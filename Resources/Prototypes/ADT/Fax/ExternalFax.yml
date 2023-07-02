@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: FaxMachineBase
   id: ExternalFaxMachine
   name: Fax
@@ -11,7 +11,7 @@
       examinableAddress: true
       receiveFrequencyId: Fax
       transmitFrequencyId: Fax
-    - type: ExternalNetworkConnection
-      deviceType: Fax
-      autoConnect: true
+    #- type: ExternalNetworkConnection
+    #  deviceType: Fax
+    #  autoConnect: true
 
