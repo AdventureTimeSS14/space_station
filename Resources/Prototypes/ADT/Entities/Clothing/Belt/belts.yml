@@ -56,7 +56,7 @@
   description: Part of ERT security's gear
   components:
   - type: Storage
-    capacity: 60
+    capacity: 50
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -73,10 +73,9 @@
   description: Part of ERT leader's gear
   components:
   - type: Storage
-    capacity: 60
+    capacity: 50
   - type: StorageFill
     contents:
-      - id: MagazinePistol
       - id: MagazinePistol
       - id: MagazinePistol
       - id: EmergencyMedipen
@@ -92,7 +91,7 @@
   description: Part of ERT medical's gear
   components:
   - type: Storage
-    capacity: 60
+    capacity: 50
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
