@@ -41,10 +41,5 @@
 <GuideEntityEmbed Entity="MedicalTechFab"/>
 <GuideEntityEmbed Entity="SecurityTechFab"/>
 </Box>
-<<<<<<< HEAD
 Воспользовавшись производственным станком (например, протолатом или принтером схем), вы можете синхронизировать его с сервером РнД, чтобы разблокировать новые рецепты для печати. Печать требует различные материалы (сталь, стекло, пластик, золото, или плазму), которые можно заказать в отделе снабжения или попросить у утилизаторов.
-=======
-At a lathe, you can choose a server to allow it print whatever recipes you have unlocked. Recipes require various materials (steel, glass, plastic, gold, plasma) which can be acquired at Cargo or Salvage.
->>>>>>> engbranch/master
-
 </Document>
