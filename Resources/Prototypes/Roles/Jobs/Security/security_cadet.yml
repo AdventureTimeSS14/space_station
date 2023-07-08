@@ -24,7 +24,8 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitSecGrey # Corvax-Resprite
     back: ClothingBackpackSecurityFilled
-    shoes: ClothingShoesBootsJackSec # Corvax-Resprite
+    shoes: ClothingShoesBootsJack
+    outerClothing: ClothingOuterArmorBasic
     id: SecurityCadetPDA
     ears: ClothingHeadsetSecurity
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
