@@ -1,3 +1,4 @@
+using System.Numerics;
 using Content.Shared.Sirena.Animations;
 using Robust.Client.Animations;
 using Robust.Shared.Animations;

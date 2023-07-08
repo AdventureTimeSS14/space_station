@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+using System.Numerics;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using Content.Shared.Corvax.CCCVars;
