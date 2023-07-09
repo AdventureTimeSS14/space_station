@@ -211,7 +211,7 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
         {
             RemovePilot(user, pilotComponent);
 
-            // This feels backwards; is this intended to be a toggle? 
+            // This feels backwards; is this intended to be a toggle?
             if (console == uid)
                 return false;
         }

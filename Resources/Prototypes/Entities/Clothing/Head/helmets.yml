@@ -329,6 +329,18 @@
 #        Heat: 0.90
 #        Radiation: 0.75
 
+#FixPrototype
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetHelmet
+  name: ERT leader helmet
+  description: An in-atmosphere helmet worn by the leader of a Nanotrasen Emergency Response Team. Has blue highlights.
+  components:
+    - type: Sprite
+      sprite: Clothing/Head/Helmets/ert_leader.rsi
+    - type: Clothing
+      sprite: Clothing/Head/Helmets/ert_leader.rsi
+
 #ERT HELMETS
 #ERT Leader Helmet
 - type: entity

@@ -93,7 +93,7 @@ public sealed partial class EmergencyShuttleSystem
 
         SubscribeLocalEvent<EscapePodComponent, EntityUnpausedEvent>(OnEscapeUnpaused);
     }
-    
+
     // Corvax-Hijack-Start
     private void OnEmagged(EntityUid uid, EmergencyShuttleConsoleComponent component, ref GotEmaggedEvent args)
     {
