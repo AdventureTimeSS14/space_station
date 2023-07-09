@@ -1,5 +1,3 @@
-using Content.Server.Mind.Components;
-using Content.Server.PDA.Ringer;
 using Content.Server.Store.Components;
 using Content.Server.UserInterface;
 using Content.Shared.FixedPoint;
@@ -23,6 +21,7 @@ public sealed partial class StoreSystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
 
     public override void Initialize()
     {
@@ -185,7 +184,7 @@ public sealed partial class StoreSystem : EntitySystem
         var ui = _ui.GetUiOrNull(uid, StoreUiKey.Key);
         if (ui != null)
         {
-            _ui.SetUiState(ui, new StoreInitializeState(preset.StoreName));
+            UserInterfaceSystem.SetUiState(ui, new StoreInitializeState(preset.StoreName));
         }
     }
 }
