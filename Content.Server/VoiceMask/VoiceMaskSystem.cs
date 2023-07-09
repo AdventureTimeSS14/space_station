@@ -5,10 +5,8 @@ using Content.Shared.Actions;
 using Content.Shared.Database;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Preferences;
-using Content.Shared.Verbs;
 using Content.Shared.VoiceMask;
 using Robust.Server.GameObjects;
-using Robust.Shared.Player;
 
 namespace Content.Server.VoiceMask;
 
@@ -26,7 +24,6 @@ public sealed partial class VoiceMaskSystem : EntitySystem
         SubscribeLocalEvent<VoiceMaskerComponent, GotUnequippedEvent>(OnUnequip);
         SubscribeLocalEvent<VoiceMaskSetNameEvent>(OnSetName);
         // SubscribeLocalEvent<VoiceMaskerComponent, GetVerbsEvent<AlternativeVerb>>(GetVerbs);
-        InitializeTTS(); // Corvax-TTS
     }
 
     private void OnSetName(VoiceMaskSetNameEvent ev)
@@ -72,11 +69,11 @@ public sealed partial class VoiceMaskSystem : EntitySystem
     private void OpenUI(EntityUid player, ActorComponent? actor = null)
     {
         if (!Resolve(player, ref actor))
-        {
             return;
-        }
+        if (!_uiSystem.TryGetUi(player, VoiceMaskUIKey.Key, out var bui))
+            return;
 
-        _uiSystem.GetUiOrNull(player, VoiceMaskUIKey.Key)?.Open(actor.PlayerSession);
+        _uiSystem.OpenUi(bui, actor.PlayerSession);
         UpdateUI(player);
     }
 
@@ -87,7 +84,8 @@ public sealed partial class VoiceMaskSystem : EntitySystem
             return;
         }
 
-        _uiSystem.GetUiOrNull(owner, VoiceMaskUIKey.Key)?.SetState(new VoiceMaskBuiState(component.VoiceName, component.VoiceId)); // Corvax-TTS
+        if (_uiSystem.TryGetUi(owner, VoiceMaskUIKey.Key, out var bui))
+            UserInterfaceSystem.SetUiState(bui, new VoiceMaskBuiState(component.VoiceName));
     }
 }
 
