@@ -18,10 +18,9 @@ SERVER_FILES = [
 
 VERSION = os.environ['GITHUB_SHA']
 FORK_ID = "ADT"
-FORK_VERSION = "0.1"
-BUILD_URL = f"http://builds.xenlil.ru/{FORK_ID}/builds/{{FORK_VERSION}}/{FILE}"
-MANIFEST_URL = f"http://builds.xenlil.ru/{FORK_ID}/version/{{FORK_VERSION}}/manifest"
-MANIFEST_DOWNLOAD_URL = f"http://builds.xenlil.ru/{FORK_ID}/version/{{FORK_VERSION}}/download"
+BUILD_URL = f"https://builds.adventurestation.space:27690/{{FORK_ID}}/builds/{{FORK_VERSION}}/{FILE}"
+MANIFEST_URL = f"https://builds.adventurestation.space:27690/{{FORK_ID}}/version/{{FORK_VERSION}}/manifest"
+MANIFEST_DOWNLOAD_URL = f"https://builds.adventurestation.space:27690/{{FORK_ID}}/version/{{FORK_VERSION}}/download"
 
 def main() -> None:
     client_file = os.path.join("release", FILE)
