@@ -46,6 +46,7 @@
     gloves: ClothingHandsGlovesCombat
     ears: ClothingHeadsetAltSecurity
     belt: ClothingBeltSecurityFilled
+    pocket1: WeaponPistolMk58Nonlethal
     underwearb: ClothingUnderwearBottomBoxersHOS # Sirena-Underwear
   underweart: ClothingUnderwearTopBraHOS # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesHOS # Sirena-Underwear

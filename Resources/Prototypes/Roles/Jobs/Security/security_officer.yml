@@ -30,6 +30,7 @@
     id: SecurityPDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltSecurityFilled
+    pocket1: WeaponPistolMk58Nonlethal
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
   underweart: ClothingUnderwearTopBraSportsAlternative # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
