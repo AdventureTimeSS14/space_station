@@ -23,7 +23,7 @@
     whitelist:
       tags:
         - Knife
-    - type: FootstepModifier # Corvax-Sounds
+  - type: FootstepModifier # Corvax-Sounds
     footstepSoundCollection:
       collection: FootstepBoots
 
