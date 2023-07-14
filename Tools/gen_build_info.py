@@ -17,10 +17,11 @@ SERVER_FILES = [
 ]
 
 VERSION = os.environ['GITHUB_SHA']
+print(VERSION)
 FORK_ID = "ADT"
-BUILD_URL = f"https://builds.adventurestation.space:27690/{{FORK_ID}}/builds/{{FORK_VERSION}}/{FILE}"
-MANIFEST_URL = f"https://builds.adventurestation.space:27690/{{FORK_ID}}/version/{{FORK_VERSION}}/manifest"
-MANIFEST_DOWNLOAD_URL = f"https://builds.adventurestation.space:27690/{{FORK_ID}}/version/{{FORK_VERSION}}/download"
+BUILD_URL = f"http://builds.adventurestation.space/builds/{{FORK_VERSION}}/{FILE}"
+MANIFEST_URL = f"http://builds.adventurestation.space/version/{{FORK_VERSION}}/manifest"
+MANIFEST_DOWNLOAD_URL = f"http://builds.adventurestation.space/version/{{FORK_VERSION}}/download"
 
 def main() -> None:
     client_file = os.path.join("release", FILE)
