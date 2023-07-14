@@ -493,19 +493,6 @@
     state: stamp-cmo
 
 - type: entity
-  name: DENIED rubber stamp
-  parent: RubberStampMime
-  id: RubberStampDenied
-  components:
-  - type: Stamp
-    stampedName: stamp-component-stamped-name-denied
-    stampState: "paper_stamp-deny"
-    sound: /Audio/Items/Stamp/automatic_stamp.ogg
-  - type: Sprite
-    sprite: Objects/Misc/bureaucracy.rsi
-    state: stamp-deny
-
-- type: entity
   name: head of personnel's rubber stamp
   parent: RubberStampBase
   id: RubberStampHop
