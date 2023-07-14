@@ -20,22 +20,6 @@ jobs:
       with:
         submodules: 'recursive'
 
-    # Corvax-Secrets-Start
-    - name: Setup secrets
-      env:
-        SSH_KEY: ${{ secrets.SECRETS_PRIVATE_KEY }}
-      if: ${{ env.SSH_KEY != '' }}
-      run: |
-        mkdir ~/.ssh
-        echo "${{ secrets.SECRETS_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        echo "HOST *" > ~/.ssh/config
-        echo "StrictHostKeyChecking no" >> ~/.ssh/config
-        git -c submodule.Secrets.update=checkout submodule update --init
-        cp -R Secrets/Prototypes Resources/Prototypes/CorvaxSecrets
-        cp -R Secrets/ServerPrototypes Resources/Prototypes/CorvaxSecretsServer
-    # Corvax-Secrets-End
-
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v3
       with:
@@ -75,15 +59,4 @@ jobs:
         host: ${{ secrets.BUILDS_HOST }}
         username: ${{ secrets.BUILDS_USERNAME }}
         key: ${{ secrets.BUILDS_SSH_KEY }}
-        script: node ~/scripts/push_to_manifest.js -fork syndicate -id ${{ github.sha }}
-
-    - name: Publish changelog (Discord)
-      run: Tools/actions_changelogs_since_last_run.py
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
-
-    - name: Publish changelog (RSS)
-      run: Tools/actions_changelog_rss.py
-      env:
-        CHANGELOG_RSS_KEY: ${{ secrets.CHANGELOG_RSS_KEY }}
+        script: python3 ~/manifest.py ${{ github.sha }}
