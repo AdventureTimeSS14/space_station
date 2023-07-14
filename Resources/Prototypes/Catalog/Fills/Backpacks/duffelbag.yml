@@ -27,8 +27,9 @@
       - id: GrenadeFlashBang
       - id: GrenadeFlashBang
         amount: 2
+      - id: PillAmbuzolPlus
       - id: PillAmbuzol
-        amount: 5
+        amount: 4
   - type: Storage
     capacity: 160
 
@@ -251,6 +252,7 @@
       - id: SyringeRomerol
       - id: WeaponRevolverMateba
       - id: MagazineBoxMagnumIncendiary
+      - id: PillAmbuzolPlus
       - id: PillAmbuzol
         amount: 3
 
