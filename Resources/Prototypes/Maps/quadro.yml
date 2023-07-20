@@ -1,20 +1,19 @@
 - type: gameMap
-  id: Bagel
-  mapName: 'Bagel Station'
-  mapPath: /Maps/bagel.yml
-  minPlayers: 40
-  maxPlayers: 75
+  id: Quadro
+  mapName: 'Quadro Station'
+  mapPath: /Maps/quadro.yml
+  minPlayers: 50
   stations:
-    Bagel:
+    Quadro:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: '{0} Bagel Station {1}'
+          mapNameTemplate: '{0} Quadro {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: '14'
+            prefixCreator: 'TG'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/emergency_lox.yml
+          emergencyShuttlePath: /Maps/Shuttles/emergency_box.yml
         - type: StationJobs
           overflowJobs:
             - Passenger
@@ -22,39 +21,40 @@
             CargoTechnician: [ 3, 3 ]
             Passenger: [ -1, -1 ]
             Bartender: [ 2, 2 ]
-            Botanist: [ 3, 3 ]
+            Botanist: [ 2, 2 ]
             Chef: [ 2, 2 ]
             Clown: [ 1, 1 ]
-            Janitor: [ 3, 3 ]
+            Janitor: [ 2, 2 ]
             Mime: [ 1, 1 ]
             Captain: [ 1, 1 ]            
             Magistrat: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
             ChiefEngineer: [ 1, 1 ]
-            StationEngineer: [ 4, 4 ]
+            StationEngineer: [ 3, 3 ]
             ChiefMedicalOfficer: [ 1, 1 ]
             MedicalDoctor: [ 3, 3 ]
-            Chemist: [ 2, 3 ]
+            Chemist: [ 2, 2 ]
             ResearchDirector: [ 1, 1 ]
-            Scientist: [ 4, 4 ]
+            Scientist: [ 3, 3 ]
             HeadOfSecurity: [ 1, 1 ]
             SecurityOfficer: [ 4, 4 ]
             Chaplain: [ 1, 1 ]
             Warden: [ 1, 1 ]
-            Librarian: [ 1, 1 ]
-            #Lawyer: [ 2, 2 ]
+            Librarian: [ 2, 2 ]
+            #Lawyer: [ 2, 2 ] # Corvax-IAA
             IAA: [ 1, 1 ] # Corvax-IAA
             Quartermaster: [ 1, 1 ]
-            SalvageSpecialist: [ 3, 3 ]
+            SalvageSpecialist: [ 2, 2 ]
             Musician: [ 1, 1 ]
             AtmosphericTechnician: [ 3, 3 ]
             TechnicalAssistant: [ 2, 2 ]
             MedicalIntern: [ 2, 2 ]
             ServiceWorker: [ 2, 2 ]
-            SecurityCadet: [ 2, 2 ]
-            Reporter: [ 2, 2 ]
+            SecurityCadet: [ 3, 3 ]
             Detective: [ 1, 1 ]
             ResearchAssistant: [ 2, 2 ]
             Brigmedic: [ 1, 1 ]     
             Paramedic: [ 1, 1 ]            
             ADTBlueShieldOfficer: [ 1, 2 ]
+            Boxer: [ 1, 1 ]     
+            Zookeeper: [ 1, 1 ] 
