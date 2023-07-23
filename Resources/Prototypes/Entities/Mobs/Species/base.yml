@@ -115,7 +115,6 @@
         sprite: Mobs/Customization/masking_helpers.rsi
         state: unisex_full
         visible: false
-      - map: ["jumpsuit"]
       - map: [ "underwearb" ] #Sirena
       - map: [ "underweart" ] #Sirena
       - map: [ "enum.HumanoidVisualLayers.LFoot" ]
@@ -147,11 +146,6 @@
       - map: [ "head" ]
       - map: [ "pocket1" ]
       - map: [ "pocket2" ]
-      - map: ["enum.HumanoidVisualLayers.Handcuffs"]
-        color: "#ffffff"
-        sprite: Objects/Misc/handcuffs.rsi
-        state: body-overlay-2
-        visible: false
       - map: [ "clownedon" ] # Dynamically generated
         sprite: "Effects/creampie.rsi"
         state: "creampie_human"

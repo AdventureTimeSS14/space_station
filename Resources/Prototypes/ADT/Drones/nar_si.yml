@@ -102,7 +102,7 @@
   components:
   - type: HTN
     rootTask: SimpleHostileCompound
-  - type: Faction
+  - type: NpcFactionMember
     factions:
     - SimpleHostile
   - type: Tag
@@ -155,7 +155,7 @@
   components:
   - type: HTN
     rootTask: SimpleHostileCompound
-  - type: Faction
+  - type: NpcFactionMember
     factions:
     - SimpleHostile
   - type: Tag
