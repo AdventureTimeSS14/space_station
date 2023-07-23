@@ -86,6 +86,14 @@
     Plastic: 500
 
 - type: latheRecipe
+  id: ModularReceiver
+  result: ModularReceiver
+  completetime: 12
+  materials:
+    Steel: 750
+    Plastic: 100
+
+- type: latheRecipe
   id: RadioHandheld
   result: RadioHandheld
   completetime: 2

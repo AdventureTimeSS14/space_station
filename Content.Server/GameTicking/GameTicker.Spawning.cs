@@ -105,7 +105,7 @@ namespace Content.Server.GameTicking
         {
             var character = GetPlayerProfile(player);
 
-            var jobBans = _roleBanManager.GetJobBans(player.UserId);
+            var jobBans = _banManager.GetJobBans(player.UserId);
             if (jobBans == null || jobId != null && jobBans.Contains(jobId))
                 return;
 
@@ -153,7 +153,7 @@ namespace Content.Server.GameTicking
             var getDisallowed = _playTimeTrackings.GetDisallowedJobs(player);
             restrictedRoles.UnionWith(getDisallowed);
 
-            var jobBans = _roleBanManager.GetJobBans(player.UserId);
+            var jobBans = _banManager.GetJobBans(player.UserId);
             if(jobBans != null) restrictedRoles.UnionWith(jobBans);
 
             // Pick best job best on prefs.
