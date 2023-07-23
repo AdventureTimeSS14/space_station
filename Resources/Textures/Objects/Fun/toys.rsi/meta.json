@@ -60,9 +60,6 @@
             "name": "plushie_xeno"
         },
         {
-            "name": "doll"
-        },
-        {
             "name": "plushie_resomi_blue"
         },
         {
@@ -121,9 +118,6 @@
         {
             "name": "mouse-equipped-HELMET",
             "directions": 4
-        },
-        {
-            "name": "capbullet"
         },
         {
             "name": "foamcrossbow-inhand-right",
