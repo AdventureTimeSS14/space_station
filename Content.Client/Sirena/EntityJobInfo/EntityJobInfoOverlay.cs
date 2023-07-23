@@ -107,9 +107,12 @@ public sealed class EntityJobInfoOverlay : Overlay
             if (_entManager.TryGetComponent(idUid, out PdaComponent? pda) && pda.ContainedId is not null)
             {
 
-                var pdaId = CompOrNull<IdCardComponent>(pda.ContainedId);
-                if (TryMatchJobTitleToIcon(pdaId.JobTitle, out string? icon))
-                    return icon;
+                var pdaId = _entManager.GetComponentOrNull<IdCardComponent>(pda.ContainedId);
+                if (pdaId != null)
+                {
+                    if (TryMatchJobTitleToIcon(pdaId.JobTitle, out string? icon))
+                        return icon;
+                }
             }
             // ID Card
             if (_entManager.TryGetComponent(idUid, out IdCardComponent? id))
