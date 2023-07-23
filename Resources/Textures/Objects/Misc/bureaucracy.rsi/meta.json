@@ -31,6 +31,12 @@
     {
       "name": "envelope_torn_overlay"
     },
+      {
+          "name": "stamp-iaa"
+      },
+      {
+          "name": "stamp-cent"
+      },
     {
       "name": "folder-base"
     },

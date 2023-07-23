@@ -120,6 +120,9 @@
             "directions": 4
         },
         {
+            "name": "capbullet"
+        },
+        {
             "name": "foamcrossbow-inhand-right",
             "directions": 4
         },
