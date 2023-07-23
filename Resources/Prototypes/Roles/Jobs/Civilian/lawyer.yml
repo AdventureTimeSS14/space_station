@@ -6,11 +6,10 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 36000 # 10 hrs
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 72000
   startingGear: LawyerGear
-  requirements:
-  - !type:DepartmentTimeRequirement
-    department: Security
-    time: 72000
   icon: "Lawyer"
   supervisors: job-supervisors-hop
   access:
