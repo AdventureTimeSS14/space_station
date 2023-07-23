@@ -10,6 +10,9 @@ using Robust.Shared.Utility;
 using Content.Shared.Access.Components;
 using Content.Shared.Roles;
 using System.Diagnostics.CodeAnalysis;
+using Content.Shared.Access.Components;
+using Content.Shared.Containers.ItemSlots;
+using Robust.Shared.Containers;
 
 namespace Content.Client.Sirena.EntityJobInfo;
 
@@ -103,7 +106,9 @@ public sealed class EntityJobInfoOverlay : Overlay
             // PDA
             if (_entManager.TryGetComponent(idUid, out PdaComponent? pda) && pda.ContainedId is not null)
             {
-                if (TryMatchJobTitleToIcon(pda.ContainedId.JobTitle, out string? icon))
+
+                var pdaId = CompOrNull<IdCardComponent>(pda.ContainedId);
+                if (TryMatchJobTitleToIcon(pdaId.JobTitle, out string? icon))
                     return icon;
             }
             // ID Card
