@@ -256,7 +256,7 @@ entities:
       type: Physics
     - fixtures: {}
       type: Fixtures
-    - id: Empty
+    - id: Quadro
       type: BecomesStation
     - type: OccluderTree
     - type: Shuttle
