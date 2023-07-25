@@ -32,6 +32,7 @@ namespace Content.IntegrationTests.Tests
         {
             "CentComm",
             "Dart",
+            "Quadro"
         };
 
         private static readonly string[] Grids =
