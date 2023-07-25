@@ -5,13 +5,15 @@ concurrency:
 
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: [Build & Test Release]
-    types: [completed]
+  schedule:
+    - cron: '0 1 * * *'
+  #workflow_run:
+    #workflows: [Build & Test Release]
+    #types: [completed]
 
 jobs:
   build:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    #if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -62,7 +64,7 @@ jobs:
         username: ${{ secrets.BUILDS_USERNAME }}
         key: ${{ secrets.BUILDS_SSH_KEY }}
         script: python3 ~/manifest.py ${{ github.sha }} adt
-    
+
     - name: Update CDN repository
       run: |
         curl -X POST -d "" -H 'Authorization: Bearer ${{ secrets.BUILDS_TOKEN }}' "http://${{ secrets.BUILDS_HOST }}:27690/control/update"
