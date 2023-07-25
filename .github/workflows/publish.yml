@@ -62,3 +62,7 @@ jobs:
         username: ${{ secrets.BUILDS_USERNAME }}
         key: ${{ secrets.BUILDS_SSH_KEY }}
         script: python3 ~/manifest.py ${{ github.sha }}
+    
+    - name: Update CDN repository
+      run: |
+        curl -X POST -d "" -H 'Authorization: Bearer ${{ secrets.BUILDS_TOKEN }}' "http://${{ secrets.BUILDS_HOST }}:27690/control/update"
