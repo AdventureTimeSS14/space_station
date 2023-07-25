@@ -4,7 +4,6 @@ on:
   workflow_run:
     workflows: [Update ERP]
     types: [completed]
-    branches: [ERP]
 
 jobs:
   build:
@@ -17,7 +16,9 @@ jobs:
 
     steps:
       - name: Checkout Master
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+        with:
+          ref: ERP
 
       - name: Setup Submodule
         run: |
