@@ -25,3 +25,11 @@ jobs:
           token: ${{ github.token }}
           from_branch: master
           to_branch: ERP
+  ci-success:
+    name: Update ERP
+    needs:
+      - update-production
+    runs-on: ubuntu-latest
+    steps:
+      - name: CI succeeded
+        run: exit 0
