@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   noSpawn: true
   parent: ClothingBackpackERTSecurity
   id: ClothingBackpackADTBlueShieldOfficerFilled
@@ -12,11 +12,11 @@
         - id: WeaponDisabler
         - id: Stunbaton
         - id: HandheldCrewMonitor
-        - id: MagazineMagnumSubMachineGunHighVelocity
-        - id: MagazineMagnumSubMachineGunHighVelocity
-        - id: MagazineMagnumSubMachineGunRubber
-        - id: MagazineMagnumSubMachineGunRubber
-        - id: WeaponSubMachineGunVectorRubber
+        - id: MagazinePistolSubMachineGun
+        - id: MagazinePistolSubMachineGun
+        - id: MagazinePistolSubMachineGunRubber
+        - id: MagazinePistolSubMachineGunRubber
+        - id: WeaponSubMachineGunDrozdRubber
         - id: WeaponPulsePistol
         - id: GrenadeFlashBang
         - id: GrenadeFlashBang
