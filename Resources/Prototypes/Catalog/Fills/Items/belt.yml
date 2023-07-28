@@ -159,3 +159,18 @@
     - id: WeaponWandFireball
     - id: WeaponWandDeath
     - id: WeaponWandPolymorphDoor
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingBlueShieldFilled
+  parent: ClothingBeltMilitaryWebbingMed
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: SyndiHypo
+      - id: EpinephrineChemistryBottle
+        amount: 1
+      - id: EphedrineChemistryBottle
+        amount: 1
+      - id: OmnizineChemistryBottle
+      - id: MedkitCombatFilled
