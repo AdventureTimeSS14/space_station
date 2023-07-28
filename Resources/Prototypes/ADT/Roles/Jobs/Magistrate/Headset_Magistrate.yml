@@ -7,6 +7,10 @@
   - type: ContainerFill
     containers:
       key_slots:
-      - EncryptionKeyIAA
+      - ADTEncryptionKeyLawyer
+      - EncryptionKeyCommand
+      - EncryptionKeySecurity
+      - EncryptionKeyCommon
+      - EncryptionKeyCentCom
   - type: Sprite
     sprite: Clothing/Ears/Headsets/servicesecurity.rsi

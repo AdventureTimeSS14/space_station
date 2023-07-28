@@ -25,7 +25,7 @@
     back: ClothingBackpackFilled
     shoes: ClothingShoesBootsLaceup
     id: LawyerPDA
-    ears: ClothingHeadsetSecurity
+    ears: ADTClothingHeadsetLawyer
     # TODO add copy of space law
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
