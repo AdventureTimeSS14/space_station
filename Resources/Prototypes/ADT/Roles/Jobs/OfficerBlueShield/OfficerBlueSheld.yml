@@ -38,8 +38,8 @@
     jumpsuit: ClothingUniformJumpsuitNanotrasen
     back: ClothingBackpackADTBlueShieldOfficerFilled
     shoes: ClothingShoesBootsCombatFilled
-    outerClothing: ClothingOuterVestWeb
-    belt: ClothingBeltMilitaryWebbingMedFilled
+    outerClothing: ClothingOuterArmorBulletproof
+    belt: ClothingBeltMilitaryWebbingBlueShieldFilled
     gloves: ClothingHandsGlovesCombat
     id: ADTBlueShieldOfficerPDA
     neck: ClothingNeckCloakNanotrasen
