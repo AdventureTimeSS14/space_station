@@ -1,2 +1,2 @@
-ent-ClothingHeadsetMagistrat = magistrat headset
-    .desc = magistrat's headset.
+ent-ClothingHeadsetMagistrat = гарнитура магистрата
+    .desc = Гарнитура, используемая высшим представителем Закона на станции.
