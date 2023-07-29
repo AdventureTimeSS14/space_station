@@ -6,7 +6,7 @@
   description: Very loud and very dangerous energy sword that can reflect shots. Can be stored in pockets when turned off.
   components:
   - type: Sprite
-    sprite: ADT\Objects\Weapons\Melee\telescopic_baton.rsi
+    sprite: ADT/Objects/Weapons/Melee/telescopic_baton.rsi
     layers:
     - state: telescope_off
       map: [ "enum.ToggleVisuals.Layer" ]
@@ -32,7 +32,7 @@
         Blunt: 0
   - type: Item
     size: 5
-    sprite: ADT\Objects\Weapons\Melee\telescopic_baton.rsi
+    sprite: ADT/Objects/Weapons/Melee/telescopic_baton.rsi
   - type: UseDelay
     delay: 1.0
   - type: DisarmMalus
@@ -52,7 +52,7 @@
   description: Very loud and very dangerous energy sword that can reflect shots. Can be stored in pockets when turned off.
   components:
   - type: Sprite
-    sprite: ADT\Objects\Weapons\Melee\telescopic_baton_bob.rsi
+    sprite: ADT/Objects/Weapons/Melee/telescopic_baton_bob.rsi
     layers:
     - state: telescope_off
       map: [ "enum.ToggleVisuals.Layer" ]
@@ -78,7 +78,7 @@
         Blunt: 0
   - type: Item
     size: 5
-    sprite: ADT\Objects\Weapons\Melee\telescopic_baton_bob.rsi
+    sprite: ADT/Objects/Weapons/Melee/telescopic_baton_bob.rsi
   - type: UseDelay
     delay: 1.0
   - type: DisarmMalus
@@ -100,7 +100,7 @@
   description: Very loud and very dangerous energy sword that can reflect shots. Can be stored in pockets when turned off.
   components:
   - type: Sprite
-    sprite: ADT\Objects\Weapons\Melee\telescopic_baton_kon.rsi
+    sprite: ADT/Objects/Weapons/Melee/telescopic_baton_kon.rsi
     layers:
     - state: telescope_off
       map: [ "enum.ToggleVisuals.Layer" ]
@@ -126,7 +126,7 @@
         Blunt: 0
   - type: Item
     size: 5
-    sprite: ADT\Objects\Weapons\Melee\telescopic_baton_kon.rsi
+    sprite: ADT/Objects/Weapons/Melee/telescopic_baton_kon.rsi
   - type: UseDelay
     delay: 1.0
   - type: DisarmMalus
