@@ -57,8 +57,7 @@
     contents:
       - id: BoxSurvival
       - id: Flash
-      #- name: StationCharter
-      - name: ADTtelescopicBaton
+      - id: ADTtelescopicBaton
 
 - type: entity
   noSpawn: true
