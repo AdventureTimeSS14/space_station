@@ -16,7 +16,7 @@
     bonkSound: "/Audio/Weapons/punch4.ogg"
     damageOpen:
       types:
-        Blunt: 10
+        Blunt: 8
     damageFolded:
       types:
         Blunt: 0
@@ -29,7 +29,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 0
+        Blunt: 8
   - type: Item
     size: 5
     sprite: ADT/Objects/Weapons/Melee/telescopic_baton.rsi
@@ -62,7 +62,7 @@
     bonkSound: "/Audio/Weapons/punch4.ogg"
     damageOpen:
       types:
-        Blunt: 10
+        Blunt: 8
     damageFolded:
       types:
         Blunt: 0
@@ -75,7 +75,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 0
+        Blunt: 8
   - type: Item
     size: 5
     sprite: ADT/Objects/Weapons/Melee/telescopic_baton_bob.rsi
@@ -110,7 +110,7 @@
     bonkSound: "/Audio/Weapons/punch4.ogg"
     damageOpen:
       types:
-        Blunt: 10
+        Blunt: 8
     damageFolded:
       types:
         Blunt: 0
@@ -123,7 +123,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 0
+        Blunt: 8
   - type: Item
     size: 5
     sprite: ADT/Objects/Weapons/Melee/telescopic_baton_kon.rsi
