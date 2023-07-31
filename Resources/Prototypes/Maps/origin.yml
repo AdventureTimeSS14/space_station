@@ -27,7 +27,6 @@
             Janitor: [ 3, 3 ]
             Mime: [ 1, 1 ]
             Captain: [ 1, 1 ]
-            IAA: [ 1, 1 ] # Corvax-IAA
             HeadOfPersonnel: [ 1, 1 ]
             ChiefEngineer: [ 1, 1 ]
             StationEngineer: [ 5, 5 ]
@@ -54,9 +53,13 @@
             ResearchAssistant: [ 4, 4]
             Boxer: [ 1, 1 ]
             Paramedic: [ 1, 1 ]
-            Brigmedic: [ 1, 1 ]
             Psychologist: [ 1, 1]
             SeniorEngineer: [ 1, 1]
             SeniorOfficer: [ 1, 1]
             SeniorPhysician: [ 1, 1]
             SeniorResearcher: [ 1, 1]
+            #ADT
+            Brigmedic: [ 1, 1 ]           
+            ADTBlueShieldOfficer: [ 1, 2 ]
+            Magistrat: [ 1, 1 ]
+            IAA: [ 1, 1 ] # Corvax-IAA

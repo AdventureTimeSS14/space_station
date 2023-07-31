@@ -2,6 +2,7 @@
   id: DefaultMapPool
   maps:
   - CorvaxDelta
+  - CorvaxAvrite
   - Aspid
   - Barratry
   - Cluster
