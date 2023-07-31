@@ -129,6 +129,7 @@
       - id: DrinkDetFlask
       - id: SpeedLoaderMagnum
       - id: ClothingHandsGlovesForensic
+      - id: ADTtelescopicBaton
 
 - type: entity
   id: ClosetBombFilled
