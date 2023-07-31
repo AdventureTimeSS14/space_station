@@ -159,6 +159,18 @@
         },
         {
             "name": "Magistrat"
+        },
+        {
+            "name": "SeniorEngineer"
+        },
+        {
+            "name": "SeniorResearcher"
+        },
+        {
+            "name": "SeniorPhysician"
+        },
+        {
+            "name": "SeniorOfficer"
         }
     ]
 }
