@@ -141,10 +141,11 @@
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltSecurityFilled
     pocket1: Flare
+    pocket2: FlashlightSeclite
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
-    pocket2: FlashlightSeclite
+    
 
 - type: startingGear
   id: ERTSecurityGearEVA
@@ -161,10 +162,11 @@
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltSecurityFilled
     pocket1: Flare
+    pocket2: FlashlightSeclite
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
-    pocket2: FlashlightSeclite
+    
 
 # Medical
 - type: job
