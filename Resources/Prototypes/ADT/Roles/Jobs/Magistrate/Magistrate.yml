@@ -11,7 +11,7 @@
     #   department: Sponsor
     #   time: 10  
   startingGear: MagistratGear
-  icon: "Magistrat"
+  icon: "JobIconMagistrat"
   requireAdminNotify: true
   joinNotifyCrew: true
   supervisors: job-supervisors-captain

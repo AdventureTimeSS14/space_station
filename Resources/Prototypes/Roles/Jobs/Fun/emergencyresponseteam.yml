@@ -19,7 +19,7 @@
   playTimeTracker: JobERTLeader
   setPreference: false
   startingGear: ERTLeaderGearEVA
-  icon: "Nanotrasen"
+  icon: "JobIconNanotrasen"
   supervisors: job-supervisors-centcom
   canBeAntag: false
   accessGroups:
