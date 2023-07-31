@@ -171,6 +171,9 @@
         },
         {
             "name": "SeniorOfficer"
+        },
+        {
+            "name": "ShaftMiner"
         }
     ]
 }
