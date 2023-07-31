@@ -10,7 +10,7 @@
       department: Security
       time: 72000
   startingGear: LawyerGear
-  icon: "Lawyer"
+  icon: "JobIconLawyer"
   supervisors: job-supervisors-hop
   access:
   - Service

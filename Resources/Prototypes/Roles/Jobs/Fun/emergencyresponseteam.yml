@@ -6,7 +6,7 @@
   playTimeTracker: JobERTLeader
   setPreference: false
   startingGear: ERTLeaderGearEVA
-  icon: "Nanotrasen"
+  icon: "JobIconNanotrasen"
   supervisors: job-supervisors-centcom
   canBeAntag: false
   accessGroups:
@@ -30,14 +30,14 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTLeader
     back: ClothingBackpackERTLeaderFilled
-    shoes: ClothingShoesBootsJack
+    shoes: ClothingShoesBootsCombatFilled
     head: ClothingHeadHelmetERTLeader
     eyes: ClothingEyesHudSecurity
-    gloves: ClothingHandsGlovesColorBlack
+    gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorBulletproof
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
-    belt: ClothingBeltSecurityWebbing
+    ears: ClothingHeadsetAltCentCom
+    belt: ClothingBeltSecurityFilled
     pocket1: Flare
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
@@ -48,14 +48,14 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTLeader
     back: ClothingBackpackERTLeaderFilled
-    shoes: ClothingShoesBootsMag
+    shoes: ClothingShoesBootsMagAdv
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesSecurity
-    gloves: ClothingHandsGlovesColorBlack
+    gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTLeader
     suitstorage: OxygenTankFilled
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltSecurityFilled
     pocket1: Flare
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
@@ -70,7 +70,7 @@
   playTimeTracker: JobERTEngineer
   setPreference: false
   startingGear: ERTEngineerGearEVA
-  icon: "Nanotrasen"
+  icon: "JobIconNanotrasen"
   supervisors: job-supervisors-centcom
   canBeAntag: false
   accessGroups:
@@ -84,10 +84,10 @@
     shoes: ClothingShoesBootsWork
     head: ClothingHeadHelmetERTEngineer
     eyes: ClothingEyesGlassesMeson
-    gloves: ClothingHandsGlovesColorYellow
+    gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorBulletproof
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltChiefEngineerFilled
     pocket1: Flare
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
@@ -102,11 +102,11 @@
     shoes: ClothingShoesBootsMagAdv
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesMeson
-    gloves: ClothingHandsGlovesColorYellow
+    gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTEngineer
     suitstorage: OxygenTankFilled
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltChiefEngineerFilled
     pocket1: Flare
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
@@ -121,7 +121,7 @@
   playTimeTracker: JobERTSecurity
   setPreference: false
   startingGear: ERTEngineerGearEVA
-  icon: "Nanotrasen"
+  icon: "JobIconNanotrasen"
   supervisors: job-supervisors-centcom
   canBeAntag: false
   accessGroups:
@@ -132,18 +132,19 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTSecurity
     back: ClothingBackpackERTSecurityFilled
-    shoes: ClothingShoesBootsJack
+    shoes: ClothingShoesBootsCombatFilled
     head: ClothingHeadHelmetERTSecurity
     eyes: ClothingEyesHudSecurity
-    gloves: ClothingHandsGlovesColorBlack
+    gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorBulletproof
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
-    belt: ClothingBeltSecurityWebbing
+    ears: ClothingHeadsetAltCentCom
+    belt: ClothingBeltSecurityFilled
     pocket1: Flare
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+    pocket2: FlashlightSeclite
 
 - type: startingGear
   id: ERTSecurityGearEVA
@@ -153,16 +154,17 @@
     shoes: ClothingShoesBootsMag
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesSecurity
-    gloves: ClothingHandsGlovesColorBlack
+    gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTSecurity
     suitstorage: OxygenTankFilled
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
-    belt: ClothingBeltSecurityWebbing
+    ears: ClothingHeadsetAltCentCom
+    belt: ClothingBeltSecurityFilled
     pocket1: Flare
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+    pocket2: FlashlightSeclite
 
 # Medical
 - type: job
@@ -172,7 +174,7 @@
   playTimeTracker: JobERTMedical
   setPreference: false
   startingGear: ERTMedicalGearEVA
-  icon: "Nanotrasen"
+  icon: "JobIconNanotrasen"
   supervisors: job-supervisors-centcom
   canBeAntag: false
   accessGroups:
@@ -183,13 +185,13 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTMedic
     back: ClothingBackpackERTMedicalFilled
-    shoes: ClothingShoesBootsJack
+    shoes: ClothingShoesBootsCombatFilled
     head: ClothingHeadHelmetERTMedic
     eyes: ClothingEyesHudMedical
-    gloves: ClothingHandsGlovesColorBlack
+    gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorBulletproof
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMedicalFilled
     pocket1: HandheldHealthAnalyzer
     pocket2: Flare
@@ -205,11 +207,11 @@
     shoes: ClothingShoesBootsMag
     mask: ClothingMaskGasERT
     eyes: ClothingEyesHudMedical
-    gloves: ClothingHandsGlovesColorBlack
+    gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTMedical
     suitstorage: OxygenTankFilled
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMedicalFilled
     pocket1: HandheldHealthAnalyzer
     pocket2: Flare
@@ -225,7 +227,7 @@
   playTimeTracker: JobERTJanitor
   setPreference: false
   startingGear: ERTJanitorGearEVA
-  icon: "Nanotrasen"
+  icon: "JobIconNanotrasen"
   supervisors: job-supervisors-centcom
   canBeAntag: false
   accessGroups:
@@ -241,7 +243,7 @@
     gloves: ClothingHandsGlovesColorBlack
     outerClothing: ClothingOuterArmorBulletproof
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltJanitorFilled
     pocket1: Flare
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
@@ -259,7 +261,7 @@
     outerClothing: ClothingOuterHardsuitERTJanitor
     suitstorage: OxygenTankFilled
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltJanitorFilled
     pocket1: Flare
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear

@@ -21,6 +21,7 @@
   id: TurnUndead
   name: turn-undead-action-name
   description: turn-undead-action-description
+  checkCanInteract: false
   icon: Interface/Actions/zombie-turn.png
   event: !type:ZombifySelfActionEvent
 
