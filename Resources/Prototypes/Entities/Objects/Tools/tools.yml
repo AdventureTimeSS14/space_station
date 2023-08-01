@@ -21,7 +21,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Piercing: 2
+        Piercing: 4
     attackRate: 2 #open and close that shit on their arm like hell! because you sure aren't doing any damage with this
     soundHit:
       path: "/Audio/Items/wirecutter.ogg"
@@ -68,7 +68,7 @@
     attackRate: 1
     damage:
       types:
-        Piercing: 6
+        Piercing: 8
     soundHit:
       path: "/Audio/Weapons/bladeslice.ogg"
   - type: Tool
@@ -108,7 +108,7 @@
     attackRate: 1.5
     damage:
       types:
-        Blunt: 4.5
+        Blunt: 8
   - type: Tool
     qualities:
       - Anchoring
@@ -142,8 +142,8 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 8
-        Structural: 3
+        Blunt: 10
+        Structural: 4
   - type: Tool
     qualities:
       - Prying
