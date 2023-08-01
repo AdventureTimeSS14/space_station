@@ -11,166 +11,166 @@
       "name": "CustomId"
     },
     {
-      "name": "Detective"
+      "name": "JobIconDetective"
     },
     {
-      "name": "QuarterMaster"
+      "name": "JobIconQuarterMaster"
     },
     {
-      "name": "Botanist"
+      "name": "JobIconBotanist"
     },
     {
-      "name": "Boxer"
+      "name": "JobIconBoxer"
     },
     {
-      "name": "AtmosphericTechnician"
+      "name": "JobIconAtmosphericTechnician"
     },
     {
-      "name": "Nanotrasen"
+      "name": "JobIconNanotrasen"
     },
     {
-      "name": "Prisoner"
+      "name": "JobIconPrisoner"
     },
     {
-      "name": "Janitor"
+      "name": "JobIconJanitor"
     },
     {
-      "name": "Chemist"
+      "name": "JobIconChemist"
     },
     {
-      "name": "StationEngineer"
+      "name": "JobIconStationEngineer"
     },
     {
-      "name": "SecurityOfficer"
+      "name": "JobIconSecurityOfficer"
     },
     {
       "name": "NoId"
     },
     {
-      "name": "ChiefMedicalOfficer"
+      "name": "JobIconChiefMedicalOfficer"
     },
     {
-      "name": "Roboticist"
+      "name": "JobIconRoboticist"
     },
     {
-      "name": "Chaplain"
+      "name": "JobIconChaplain"
     },
     {
-      "name": "Lawyer"
+      "name": "JobIconLawyer"
     },
     {
       "name": "Unknown"
     },
     {
-      "name": "Librarian"
+      "name": "JobIconLibrarian"
     },
     {
-      "name": "CargoTechnician"
+      "name": "JobIconCargoTechnician"
     },
     {
-      "name": "Scientist"
+      "name": "JobIconScientist"
     },
     {
-      "name": "ResearchAssistant"
+      "name": "JobIconResearchAssistant"
     },
     {
-      "name": "Geneticist"
+      "name": "JobIconGeneticist"
     },
     {
-      "name": "Clown"
+      "name": "JobIconClown"
     },
     {
-      "name": "Captain"
+      "name": "JobIconCaptain"
     },
     {
-      "name": "HeadOfPersonnel"
+      "name": "JobIconHeadOfPersonnel"
     },
     {
-      "name": "Virologist"
+      "name": "JobIconVirologist"
     },
     {
-      "name": "ShaftMiner"
+      "name": "JobIconShaftMiner"
     },
     {
-      "name": "Passenger"
+      "name": "JobIconPassenger"
     },
     {
-      "name": "ChiefEngineer"
+      "name": "JobIconChiefEngineer"
     },
     {
-      "name": "Bartender"
+      "name": "JobIconBartender"
     },
     {
-      "name": "HeadOfSecurity"
+      "name": "JobIconHeadOfSecurity"
     },
     {
-      "name": "Brigmedic"
+      "name": "JobIconBrigmedic"
     },
     {
-      "name": "MedicalDoctor"
+      "name": "JobIconMedicalDoctor"
     },
     {
-      "name": "Paramedic"
+      "name": "JobIconParamedic"
     },
     {
-      "name": "Chef"
+      "name": "JobIconChef"
     },
     {
-      "name": "Warden"
+      "name": "JobIconWarden"
     },
     {
-      "name": "ResearchDirector"
+      "name": "JobIconResearchDirector"
     },
     {
-      "name": "Mime"
+      "name": "JobIconMime"
     },
     {
-      "name": "Musician"
+      "name": "JobIconMusician"
     },
     {
-      "name": "Reporter"
+      "name": "JobIconReporter"
     },
     {
-      "name": "Psychologist"
+      "name": "JobIconPsychologist"
     },
     {
-      "name": "MedicalIntern"
+      "name": "JobIconMedicalIntern"
     },
     {
-      "name": "TechnicalAssistant"
+      "name": "JobIconTechnicalAssistant"
     },
     {
-      "name": "ServiceWorker"
+      "name": "JobIconServiceWorker"
     },
     {
-      "name": "SecurityCadet"
+      "name": "JobIconSecurityCadet"
     },
     {
-      "name": "IAA"
+      "name": "JobIconIAA"
     },
     {
-      "name": "Zombie"
+      "name": "JobIconZombie"
     },
     {
-      "name": "Zookeeper"
+      "name": "JobIconZookeeper"
     },
     {
-      "name": "ADTBlueShieldOfficer"
+      "name": "JobIconADTBlueShieldOfficer"
     },
     {
-      "name": "Magistrat"
+      "name": "JobIconMagistrat"
     },
     {
-      "name": "SeniorEngineer"
+      "name": "JobIconSeniorEngineer"
     },
     {
-      "name": "SeniorResearcher"
+      "name": "JobIconSeniorResearcher"
     },
     {
-      "name": "SeniorPhysician"
+      "name": "JobIconSeniorPhysician"
     },
     {
-      "name": "SeniorOfficer"
+      "name": "JobIconSeniorOfficer"
     }
   ]
 }
