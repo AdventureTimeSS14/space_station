@@ -1,4 +1,3 @@
-
 - type: entity
   name: TelescopicBaton
   parent: BaseItem
@@ -11,9 +10,9 @@
     - state: telescope_off
       map: [ "enum.ToggleVisuals.Layer" ]
   - type: SwitchableWeapon
-    openSound: "/Audio/Items/flashlight_on.ogg"
-    closeSound: "/Audio/Items/flashlight_off.ogg"
-    bonkSound: "/Audio/Weapons/punch4.ogg"
+    openSound: "/Audio/ADT/open_telescopichka.ogg"
+    closeSound: "/Audio/ADT/close_telescopichka.ogg"
+    bonkSound: "/Audio/ADT/bonk_dubinka.ogg"
     damageOpen:
       types:
         Blunt: 8
