@@ -191,7 +191,7 @@
 - type: entity
   id: RightFootShark
   name: "правая ступня акулы"
-  parent: PartVulpkanin
+  parent: PartShark
   components:
     - type: Sprite
       netsync: false

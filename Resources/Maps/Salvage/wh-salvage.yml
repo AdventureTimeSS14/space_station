@@ -395,8 +395,8 @@ entities:
     - type: Shuttle
     - type: RadiationGridResistance
     - type: GasTileOverlay
-    - nextUpdate: 0
-      type: SpreaderGrid
+    - type: SpreaderGrid
+    - type: GridPathfinding
 - proto: AirlockFreezer
   entities:
   - uid: 252
