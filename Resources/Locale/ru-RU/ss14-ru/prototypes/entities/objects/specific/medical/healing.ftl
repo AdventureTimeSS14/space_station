@@ -45,3 +45,7 @@ ent-SyringeIpecac = шприц ипекака
     .desc = { ent-BaseSyringe.desc }
 ent-SyringeCorpium = шприц корпиума
     .desc = { ent-BaseSyringe.desc }
+ent-RegenerativeMesh = регенеративная сетка
+    .desc = Используется для лечения даже самых неприятных ожогов. Также эффективен против щелочных ожогов.
+ent-MedicatedSuture = медицинская нить
+    .desc = Нить, пропитанная лекарством, эффективно лечит удары тупым предметом и закрывает раны.
