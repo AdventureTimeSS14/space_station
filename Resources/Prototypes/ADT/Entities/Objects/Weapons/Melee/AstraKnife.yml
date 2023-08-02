@@ -1,6 +1,6 @@
 - type: loadout
   id: AstraKnifeLoadout
-  entity: AstraKnife
+  entity: ADTAstraKnife
   sponsorOnly: true
   
 - type: entity
