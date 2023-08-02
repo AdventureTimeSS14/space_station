@@ -16,8 +16,8 @@ ent-SalvageExpeditionsComputerCircuitboard = консоль утилизатор
     .desc = Машинная плата для консоли утилизаторских экспедиций.
 ent-CargoShuttleConsoleCircuitboard = консоль управления грузовым шаттлом (машинная плата)
     .desc = Машинная плата для консоли управления грузовым шаттлом.
-ent-SalvageShuttleConsoleCircuitboard = salvage shuttle console board
-    .desc = A computer printed circuit board for a salvage shuttle console.
+ent-SalvageShuttleConsoleCircuitboard = консоль управления утилизационным шаттлом (машинная плата)
+    .desc = Компьютерная печатная плата для консоли утилизационного шаттла.
 ent-SurveillanceCameraMonitorCircuitboard = монитор камер наблюдения (машинная плата)
     .desc = Машинная плата для монитора камер наблюдения.
 ent-SurveillanceWirelessCameraMonitorCircuitboard = монитор беспроводных камер наблюдения (машинная плата)
@@ -60,3 +60,6 @@ ent-ComputerIFFCircuitboard = консоль системы опознавани
     .desc = Позволяет управлять параметрами системы опознавания судна.
 ent-ComputerIFFSyndicateCircuitboard = консоль системы опознавания синдиката (машинная плата)
     .desc = Позволяет управлять параметрами скрытности и системы опознавания судна.
+
+ent-ComputerMassMediaCircuitboard = консоль масс-медиа (машинная плата)
+    .desc = Компьютерная печатная плата для консоли масс-медиа

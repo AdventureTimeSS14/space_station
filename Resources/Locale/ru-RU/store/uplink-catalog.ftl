@@ -186,7 +186,40 @@ uplink-operative-skirt-name = { ent-ClothingUniformJumpskirtOperative }
 uplink-operative-skirt-desc = Юбка-комбинезон из отборной ткани, выдаваемая нашим ядерным оперативницам, гарантирует, что вы будете выделяться, и не имеет никаких других преимуществ, кроме крутого внешнего вида.
 uplink-balloon-name = { ent-BalloonSyn }
 uplink-balloon-desc = { ent-BalloonSyn.desc }
-uplink-scarf-syndie-red-name = striped syndicate red scarf
-uplink-scarf-syndie-red-desc = A stylish striped syndicate red scarf. The perfect winter accessory for those with a keen fashion sense, and those who are in the mood to steal something.
-uplink-scarf-syndie-green-name = striped syndicate green scarf
-uplink-scarf-syndie-green-desc = A stylish striped syndicate green scarf. The perfect winter accessory for those with a keen fashion sense, and those who are in the mood to steal something.
+uplink-scarf-syndie-red-name = полосатый красный шарф Синдиката
+uplink-scarf-syndie-red-desc = Стильный полосатый синдикатный красный шарф. Идеальный зимний аксессуар для тех, кто разбирается в моде и хочет что-нибудь украсть.
+uplink-scarf-syndie-green-name = полосатый зелёный шарф Синдиката
+uplink-scarf-syndie-green-desc = Стильный полосатый синдикатный зеленый шарф. Идеальный зимний аксессуар для тех, кто разбирается в моде и хочет что-нибудь украсть.
+
+uplink-sniper-ammo-name = коробка патронов (.60 антиматерия)
+uplink-sniper-ammo-desc = коробка 10 патронов для снайперской винтовки Христова
+
+uplink-combat-medkit-name = Боевой медицинский комплект
+uplink-combat-medkit-desc = Аптечка для лечения боевых ранений.
+
+uplink-eshield-name = Энергетический щит
+uplink-eshield-desc = Экзотический энергетический щит, отражающий почти все лазерные лучи, а также немного защищающий от пуль и других физических атак.
+
+uplink-combat-medipen-name = Боевой Медипен
+uplink-combat-medipen-desc = Одноразовая лечебная ручка, содержащая химические вещества, которые регенерируют большинство повреждений.
+
+uplink-sniper-bundle-name = Снайперский набор
+uplink-sniper-bundle-desc = Неприметный портфель, в котором находится христов, 10 запасных патронов и удобная маскировка
+
+uplink-reinforcement-radio-monkey-name = Обезьяний телепорт подкрепления
+uplink-reinforcement-radio-monkey-desc = Позовите обученную обезьяну, чтобы помочь вам. Поставляется с одной синдикатной сигаретой.
+
+uplink-emp-implanter-name = Имплантатор ЭМИ
+uplink-emp-implanter-desc = При активации взрывает небольшой импульс ЭМИ, который истощает энергию ближайшей электроники, может быть использован три раза, прежде чем разрядится внутренняя батарея.
+
+uplink-dna-scrambler-implanter-name = Имплантатор скремблера ДНК
+uplink-dna-scrambler-implanter-desc = Одноразовый имплантат, который можно активировать, чтобы изменить вашу ДНК и придать вам совершенно новый вид, также имеет функцию отмены изменений. Невозможно зашифровать уже зашифрованную ДНК.
+
+uplink-syndicate-sponge-box-name = Коробка губок Синдиката
+uplink-syndicate-sponge-box-desc = Коробка, содержащая 6 синдикатных губок, замаскированных под обезьяньи кубы, которые после контакта с водой превращаются в различных разъяренных диких животных.
+
+uplink-disposable-turret-name = Одноразовая баллистическая турель
+uplink-disposable-turret-desc = Выглядит и функционирует как обычный электрический ящик для инструментов. При ударе по ящику с инструментами он превратится в баллистическую турель, теоретически стреляющую во всех, кроме членов синдиката.
+
+uplink-holy-hand-grenade-name = Святая ручная граната
+uplink-holy-hand-grenade-desc = Господи, благослови эту Твою ручную гранату, чтобы с ее помощью Ты мог разнести твоих врагов на мелкие кусочки, по Твоей милости.
