@@ -10,7 +10,7 @@
       role: JobParamedic
       time: 25200
   startingGear: ADTBlueShieldOfficerGear
-  icon: "ADTBlueShieldOfficer"
+  icon: "JobIconADTBlueShieldOfficer"
   supervisors: job-supervisors-captain
   canBeAntag: false
   access:

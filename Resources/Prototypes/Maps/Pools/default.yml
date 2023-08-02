@@ -2,6 +2,7 @@
   id: DefaultMapPool
   maps:
   - CorvaxDelta
+  - CorvaxAvrite
   - Aspid
   - Barratry
   - Cluster
@@ -10,7 +11,6 @@
   - Kettle
   - Marathon
   - Meta
-  - Moose
   - Omega
   - Origin
   - Saltern

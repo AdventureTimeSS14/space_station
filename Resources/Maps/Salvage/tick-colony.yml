@@ -299,8 +299,8 @@ entities:
     - type: Shuttle
     - type: GasTileOverlay
     - type: RadiationGridResistance
-    - nextUpdate: 0
-      type: SpreaderGrid
+    - type: SpreaderGrid
+    - type: GridPathfinding
 - proto: AsteroidRockMining
   entities:
   - uid: 1
