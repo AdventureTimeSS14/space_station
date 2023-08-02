@@ -730,7 +730,7 @@
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
-      
+
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatCapcap
@@ -745,3 +745,4 @@
     tags:
     - WhitelistChameleon
     - HamsterWearable
+

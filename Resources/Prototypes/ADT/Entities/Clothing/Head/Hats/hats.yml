@@ -55,3 +55,14 @@
     sprite: ADT/Clothing/Head/Hats/dungeon_master.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/dungeon_master.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadMarineBeret
+  name: MarineLieutenantBeret
+  description: Marine beret
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/marineberet.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/marineberet.rsi

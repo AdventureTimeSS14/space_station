@@ -27,6 +27,7 @@
       - id: RubberStampQm
       - id: ClothingHeadsetAltCargo
       - id: BoxEncryptionKeyCargo
+      - id: ADTtelescopicBaton
       # Sirena-Underwear-Start
       - id: ClothingUnderwearBottomBoxersQM
       - id: ClothingUnderwearBottomPantiesQM
@@ -69,6 +70,7 @@
       - id: ClothingHeadCaptainHat
       - id: ClothingHeadCaptainCap
       - id: ClothingOuterCoatCaptain
+      - id: ADTtelescopicBaton
       # Sirena-Underwear-Start
       - id: ClothingUnderwearBottomBoxersCap
       - id: ClothingUnderwearBottomPantiesCap
@@ -106,6 +108,7 @@
       - id: WeaponAntiqueLaser
       - id: JetpackCaptainFilled
       - id: MedalCase
+      - id: ADTtelescopicBaton
       # Corvax-Resprite-Start
       - id: ClothingHeadCaptainHat
       - id: ClothingHeadCaptainCap
@@ -126,6 +129,7 @@
       - id: ClothingHeadsetCommand
       - id: BoxPDA
       - id: BoxID
+      - id: ADTtelescopicBaton
       - id: BoxHeadset
       - id: IDComputerCircuitboard
       - id: WeaponDisabler
@@ -187,6 +191,7 @@
   components:
   - type: StorageFill
     contents:
+      - id: ADTtelescopicBaton
       - id: ClothingNeckCloakCe
       - id: ClothingEyesGlassesMeson
       - id: ClothingBeltChiefEngineerFilled
@@ -261,6 +266,7 @@
       - id: HandheldCrewMonitor
       - id: DoorRemoteMedical
       - id: RubberStampCMO
+      - id: ADTtelescopicBaton
       - id: MedicalTechFabCircuitboard
       - id: MaterialBiomass
         amount: 3
@@ -309,6 +315,7 @@
   components:
   - type: StorageFill
     contents:
+      - id: ADTtelescopicBaton
       - id: ResearchComputerCircuitboard
       - id: ProtolatheMachineCircuitboard
       - id: CircuitImprinterMachineCircuitboard

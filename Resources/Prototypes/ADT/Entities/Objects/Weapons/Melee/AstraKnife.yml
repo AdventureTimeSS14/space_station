@@ -1,12 +1,12 @@
 - type: loadout
   id: AstraKnifeLoadout
-  entity: AstraKnife
+  entity: ADTAstraKnife
   sponsorOnly: true
   
 - type: entity
-  name: astra knife
+  name: Astra Knife
   parent: BaseKnife
-  id: AstraKnife
+  id: ADTAstraKnife
   description: A deadly knife intended for melee confrontations.
   components:
   - type: Tag

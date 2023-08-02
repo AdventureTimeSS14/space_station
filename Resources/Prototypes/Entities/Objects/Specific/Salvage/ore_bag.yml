@@ -15,7 +15,7 @@
   - type: Item
     size: 176
   - type: Storage
-    capacity: 230
+    capacity: 240
     quickInsert: true
     areaInsert: true
     whitelist:
