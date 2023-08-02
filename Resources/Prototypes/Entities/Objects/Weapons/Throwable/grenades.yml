@@ -46,9 +46,9 @@
     canCreateVacuum: false
   - type: OnUseTimerTrigger
     beepSound:
-      path: "/Audio/Effects/beep1.ogg"
+      path: "/Audio/MidiCustom/pustota.ogg"
       params:
-        volume: 5
+        volume: 1
     initialBeepDelay: 0
     beepInterval: 2 # 2 beeps total (at 0 and 2)
 
