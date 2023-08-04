@@ -4,3 +4,7 @@ ent-ADTObjectsWeaponSubMachineGunPPCH45S = ППЧ-45У
 ent-ADTObjectsWeaponSubMachineGunUmp = ПП Юмп
     .desc = "Ну типо ну там это."
     .suffix = { "" }
+
+ent-ADTAbakanRifleAEK = AEK-974
+    .desc = Советский общевойсковой автомат, разработанный в 2478 году на заводе имени Дегтярёва в Планете Коврове под руководством  Станислав.И.К. Данный Автомат был вооружен МВД и ССО. Новое это хорошо забытое старое.
+    .suffix = { "" }
