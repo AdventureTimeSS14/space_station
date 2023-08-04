@@ -26,3 +26,35 @@
   # to prevent bag open/honk spam
   - type: UseDelay
     delay: 0.5
+
+- type: entity
+  parent: Clothing
+  id: ADTClothingBackpackUSSPattaked
+  name: Shtormed backpack
+  description: A large duffel bag for holding extra things.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Back/ussp_attaked_backpack.rsi
+    state: icon
+  - type: Item
+    size: 9999
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+  - type: Storage
+    capacity: 250
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 0.8
+  - type: UserInterface
+    interfaces:
+    - key: enum.StorageUiKey.Key
+      type: StorageBoundUserInterface
+  # to prevent bag open/honk spam
+  - type: UseDelay
+    delay: 0.5
