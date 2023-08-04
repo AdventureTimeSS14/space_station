@@ -5,5 +5,7 @@
       amount: 1
     Water:
       amount: 4
+    Milk:
+      amount: 1
   products:
-    ADTCocoaDrink: 5
+    ADTCocoaDrink: 6
