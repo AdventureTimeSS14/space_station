@@ -10,9 +10,9 @@
     - state: base
       map: [ "enum.ToggleVisuals.Layer" ]
   - type: SwitchableWeapon
-    openSound: "/Audio/Items/flashlight_on.ogg"
-    closeSound: "/Audio/Items/flashlight_off.ogg"
-    bonkSound: "/Audio/Weapons/punch4.ogg"
+    openSound: "/Audio/ADT/schelchok-vyiklyucheniya.ogg"
+    closeSound: "/Audio/ADT/schelchok-vyiklyucheniya.ogg"
+    bonkSound: "/Audio/Weapons/pierce.ogg"
     damageOpen:
       types:
         Slash: 10
