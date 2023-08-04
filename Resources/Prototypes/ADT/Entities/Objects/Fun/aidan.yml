@@ -2,34 +2,8 @@
   parent: BasePlushie
   id: ADTPlushieAidan
   name: Aidan Simp
-  descriotion: Very very good moderator.
+  description: Very very good moderator.
   components:
   - type: Sprite
     sprite: ADT/Objects/Fun/plushie_aidan.rsi
     state: plushie_aidan
-  #- type: EmitSoundOnUse
-  #  sound:
-  #    collection: ToySqueak
-  #- type: EmitSoundOnActivate
-  #  sound:
-  #    collection: ToySqueak
-  #- type: EmitSoundOnCollide
-  #  sound:
-  #    collection: ToySqueak
-  #- type: EmitSoundOnLand
-  #  sound:
-  #    collection: ToyFall
-  #- type: ItemCooldown
-  #- type: UseDelay
-  #  delay: 1.0
-  #- type: MeleeWeapon
-  #  soundHit:
-  #    collection: ToySqueak
-  #  damage:
-  #    types:
-  #      Blunt: 0
-  #- type: PhysicalComposition
-  #  materialComposition:
-  #    Cloth: 100
-  #- type: StaticPrice
-  #  price: 5
