@@ -13,4 +13,4 @@
         - ReagentId: ADTCocoaSolids
           Quantity: 5
   - type: Produce
-    seedId: cocoatree
+    seedId: ADTcocoatree
