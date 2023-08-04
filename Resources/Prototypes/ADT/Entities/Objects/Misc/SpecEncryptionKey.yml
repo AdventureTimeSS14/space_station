@@ -1,0 +1,14 @@
+- type: entity
+  parent: EncryptionKey
+  id: ADTEncryptionKeySpec
+  name: Spec encryption key
+  description: Special Forces radio channel encryption key.
+  components:
+    - type: EncryptionKey
+      channels:
+      - ADTSpecChannel
+      defaultChannel: ADTSpecChannel
+    - type: Sprite
+      layers:
+      - state: crypt_silver
+      - state: nano_label

@@ -1,0 +1,14 @@
+- type: entity
+  parent: ClothingHeadset
+  id: ADTClothingHeadsetMerc
+  name: Merc headset
+  description: A headset for mercenary.
+  components:
+    - type: ContainerFill
+      containers:
+        key_slots:
+        - ADTEncryptionKeyMerc
+    - type: Sprite
+      sprite: ADT/Clothing/Ears/Headsets/armyheadset.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Ears/Headsets/armyheadset.rsi
