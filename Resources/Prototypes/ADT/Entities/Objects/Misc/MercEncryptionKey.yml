@@ -1,0 +1,14 @@
+- type: entity
+  parent: EncryptionKey
+  id: ADTEncryptionKeyMerc
+  name: Merc encryption key
+  description: The encryption key of the mercenaries radio channel.
+  components:
+    - type: EncryptionKey
+      channels:
+      - ADTMercChannel
+      defaultChannel: ADTMercChannel
+    - type: Sprite
+      layers:
+      - state: crypt_silver
+      - state: nano_label

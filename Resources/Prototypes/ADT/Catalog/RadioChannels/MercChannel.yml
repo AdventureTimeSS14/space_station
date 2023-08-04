@@ -1,0 +1,7 @@
+- type: radioChannel
+  id: ADTMercChannel
+  name: Наёмнический
+  keycode: 'ч'
+  frequency: 1306
+  color: "#ff144b"
+  longRange: true

@@ -1,0 +1,45 @@
+- type: entity
+  name: folding knife
+  parent: BaseItem
+  id: ADTObjectsWeaponsMeleeFoldingKnife
+  description: Very loud and very dangerous energy sword that can reflect shots. Can be stored in pockets when turned off.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Melee/folding_knife.rsi
+    layers:
+    - state: base
+      map: [ "enum.ToggleVisuals.Layer" ]
+  - type: SwitchableWeapon
+    openSound: "/Audio/ADT/schelchok-vyiklyucheniya.ogg"
+    closeSound: "/Audio/ADT/schelchok-vyiklyucheniya.ogg"
+    bonkSound: "/Audio/Weapons/pierce.ogg"
+    damageOpen:
+      types:
+        Slash: 10
+    damageFolded:
+      types:
+        Blunt: 0
+    staminaDamageFolded: 0
+    staminaDamageOpen: 0
+    sizeOpened: 10
+    sizeClosed: 5
+  - type: StaminaDamageOnHit
+    damage: 0
+  - type: MeleeWeapon
+    damage:
+      types:
+        Slash: 10
+  - type: Item
+    size: 5
+    sprite: ADT/Objects/Weapons/Melee/folding_knife.rsi
+  - type: UseDelay
+    delay: 1.0
+  - type: DisarmMalus
+    malus: 0
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+     enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: {state: icon}
+          False: {state: base}

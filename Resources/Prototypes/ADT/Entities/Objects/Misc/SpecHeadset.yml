@@ -1,0 +1,14 @@
+- type: entity
+  parent: ClothingHeadset
+  id: ADTClothingHeadsetSpec
+  name: Special forces headset
+  description: A headset for special forces.
+  components:
+    - type: ContainerFill
+      containers:
+        key_slots:
+        - ADTEncryptionKeySpec
+    - type: Sprite
+      sprite: ADT/Clothing/Ears/Headsets/armyheadset.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Ears/Headsets/armyheadset.rsi

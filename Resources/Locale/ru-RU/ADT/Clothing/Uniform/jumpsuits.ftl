@@ -10,3 +10,6 @@ ent-ADTClothingUniformBrownWeddingSuit = Коричневый свадебный
 ent-ADTClothingUniformPriestPrimalSuit = Традиционный наряд жрицы
     .desc = Традиционный наряд для проведения традиционных обрядов
     .suffix = { "" }
+ent-ADTClothingUniformJumpsuitMaugly = Штурмовой костюм "Маугли"
+    .desc = Удобный и прочный современный штурмовой костюм из плотной палаточной хлопчатобумажной ткани, который хорошо показал себя на войне в джунглях.
+    .suffix = { "" }

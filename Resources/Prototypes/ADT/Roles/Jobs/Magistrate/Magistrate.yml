@@ -11,7 +11,7 @@
     #   department: Sponsor
     #   time: 10  
   startingGear: MagistratGear
-  icon: "Magistrat"
+  icon: "JobIconMagistrat"
   requireAdminNotify: true
   joinNotifyCrew: true
   supervisors: job-supervisors-captain
@@ -39,6 +39,7 @@
     belt:
     neck: ClothingNeckLawyerbadge
     pocket1: RubberStampMagistrat
+    pocket2: ADTtelescopicBaton
   innerclothingskirt: ClothingUniformJumpsuitLawyerBlack
   satchel: ClothingBackpackSatchel
   duffelbag: ClothingBackpackDuffel
