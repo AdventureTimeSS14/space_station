@@ -74,3 +74,21 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/dungeon_master_suit.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/dungeon_master_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitMaugly
+  name: Stormer maugly
+  description: A jumpsuit made of strong material, providing robust protection.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/stormer_maugly.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/stormer_maugly.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.9
+        Piercing: 0.85
+        Heat: 0.8
