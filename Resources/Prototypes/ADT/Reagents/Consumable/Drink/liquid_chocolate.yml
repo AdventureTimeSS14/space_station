@@ -1,0 +1,22 @@
+- type: reagent
+  id: ADTChocolateDrink
+  name: chocolate-drink-name
+  parent: BaseDrink
+  desc: chocolate-drink-desc
+  physicalDesc: reagent-physical-desc-aromatic
+  flavor: ADTChocolateDrinkFlavor
+  color: "#8a5a3a"
+  recognizable: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateHunger
+        factor: 0.3
+      - !type:AdjustReagent
+        reagent: Theobromine
+        amount: 0.1
+      - !type:SatiateThirst
+        factor: 0.5
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/chocolateglass.rsi
+    state: icon

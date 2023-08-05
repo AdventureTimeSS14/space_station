@@ -1,0 +1,8 @@
+- type: microwaveMealRecipe
+  id: ADTRecipeChocolateDrink
+  name: chocolate drink recipe
+  result: ADTChocolateGlass
+  time: 10
+  solids:
+    FoodSnackChocolateBar: 1
+    DrinkGlass: 1

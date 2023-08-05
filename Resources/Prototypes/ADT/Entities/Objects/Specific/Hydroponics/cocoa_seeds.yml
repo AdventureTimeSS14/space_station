@@ -1,0 +1,9 @@
+- type: entity
+  parent: SeedBase
+  name: seed of cocoa
+  id: ADTCocoaSeeds
+  components:
+    - type: Seed
+      seedId: ADTcocoatree
+    - type: Sprite
+      sprite: ADT/Objects/Specific/Hydroponics/cocoa.rsi

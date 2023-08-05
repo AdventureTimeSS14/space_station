@@ -1,0 +1,18 @@
+- type: entity
+  parent: ReagentContainerBase
+  id: ADTReagentContainerCocoaSolid
+  name: cocoa solid bag
+  description: A big bag of cocoa solid. Use water before consumption!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 50
+        reagents:
+        - ReagentId: ADTCocoaSolids
+          Quantity: 50
+  - type: TrashOnEmpty
+    solution: food
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/cocoa_pack.rsi
+    state: icon
