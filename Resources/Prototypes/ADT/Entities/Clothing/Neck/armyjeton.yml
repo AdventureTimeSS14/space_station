@@ -1,0 +1,8 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckJeton
+  name: Jeton
+  description: 
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/armytoken.rsi
