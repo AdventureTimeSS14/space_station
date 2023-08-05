@@ -1,0 +1,9 @@
+- type: microwaveMealRecipe
+  id: ADTRecipeChocolateBar
+  name: chocolate bar recipe
+  result: FoodSnackChocolateBar
+  time: 10
+  reagents:
+    ADTCocoaSolids: 5
+    Milk: 5
+    Sugar: 5

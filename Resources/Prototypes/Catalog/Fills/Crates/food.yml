@@ -54,6 +54,8 @@
       amount: 2
     - id: FoodContainerEgg
       amount: 2
+    - id: ADTReagentContainerCocoaSolid
+      amount: 1
 
 - type: entity
   id: CrateFoodDinnerware

@@ -1,0 +1,14 @@
+- type: flavor
+  id: ADTCocoaSolidsFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTCocoaSolidsFlavor
+
+- type: flavor
+  id: ADTChocolateDrinkFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTChocolateDrinkFlavor
+
+- type: flavor
+  id: ADTCocoaDrinkFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTCocoaDrink

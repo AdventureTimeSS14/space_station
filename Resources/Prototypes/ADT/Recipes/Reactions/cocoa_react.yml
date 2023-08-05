@@ -1,0 +1,11 @@
+- type: reaction
+  id: ADTCocoaDrink
+  reactants:
+    ADTCocoaSolids:
+      amount: 1
+    Water:
+      amount: 4
+    Milk:
+      amount: 1
+  products:
+    ADTCocoaDrink: 6

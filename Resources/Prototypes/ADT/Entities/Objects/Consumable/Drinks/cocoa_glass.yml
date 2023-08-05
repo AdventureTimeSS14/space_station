@@ -1,0 +1,16 @@
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTDrinkCocoaGlass
+  name: hot cocoa
+  description: A heated drink consisting cocoa powder.
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTCocoaDrink
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/cocoa_drink.rsi
