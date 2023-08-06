@@ -12,7 +12,7 @@
   - type: SwitchableWeapon
     openSound: "/Audio/ADT/open_telescopichka.ogg"
     closeSound: "/Audio/ADT/close_telescopichka.ogg"
-    bonkSound: "/Audio/ADT/bonk_dubinka.ogg"
+    #bonkSound: "/Audio/ADT/bonk_dubinka.ogg"
     damageOpen:
       types:
         Blunt: 6
@@ -58,7 +58,7 @@
   - type: SwitchableWeapon
     openSound: "/Audio/ADT/open_telescopichka.ogg"
     closeSound: "/Audio/ADT/close_telescopichka.ogg"
-    bonkSound: "/Audio/ADT/bonk_dubinka.ogg"
+    #bonkSound: "/Audio/ADT/bonk_dubinka.ogg"
     damageOpen:
       types:
         Blunt: 6
@@ -106,7 +106,7 @@
   - type: SwitchableWeapon
     openSound: "/Audio/ADT/open_telescopichka.ogg"
     closeSound: "/Audio/ADT/close_telescopichka.ogg"
-    bonkSound: "/Audio/ADT/bonk_dubinka.ogg"
+    #bonkSound: "/Audio/ADT/bonk_dubinka.ogg"
     damageOpen:
       types:
         Blunt: 6
