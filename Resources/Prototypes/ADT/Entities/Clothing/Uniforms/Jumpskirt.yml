@@ -166,5 +166,27 @@
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/true_detective_jumpskirt.rsi
 
+#nope_ingeneer
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformRedgiJumpskirt
+  name: Redgi skirt
+  description: this shit isnt fucking work
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/skirt_redji.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/skirt_redji.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformNewBarmanSkirt
+  name: New barman skirt
+  description: new barman skirt by NT
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/new_barman_skirt.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/new_barman_skirt.rsi
 
 

@@ -18,4 +18,63 @@
     contents:
       - id: WeaponRifleAk
       - id: MagazineLightRifle
+        amount: 3
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ADTClothingBackpackDuffelSyndicateFilledHristov
+  name: Hristov bundle
+  description: "Old faithful: The classic C-20r Submachine Gun, bundled with three magazines." #, and a Suppressor.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ADTWeaponSniperHristovII
+      - id: ADTMagazineHriII
+        amount: 3
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ADTClothingBackpackDuffelSyndicateFilledElite
+  name: Syndicate elite bundle
+  description: "For those who knows at armor." #, and a Suppressor.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitSyndieElite
+      - id: ClothingShoesBootsMagSyndie
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateAmmoBundle
+  id: ADTClothingBackpackDuffelSyndicateFilledC20Ammo
+  name: C20 Ammo Bundle
+  description: "Old faithful: The classic C-20r Submachine Gun, bundled with three magazines." #, and a Suppressor.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazinePistolSubMachineGun
+        amount: 4
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateAmmoBundle
+  id: ADTClothingBackpackDuffelSyndicateFilledBuldogAmmo
+  name: Buldog Ammo Bundle
+  description: "Old faithful: The classic C-20r Submachine Gun, bundled with three magazines." #, and a Suppressor.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineShotgunSlug
+      - id: MagazineShotgunSlug
+      - id: MagazineShotgun
+      - id: MagazineShotgun
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateAmmoBundle
+  id: ADTClothingBackpackDuffelSyndicateFilledBuldogAmmoXL
+  name: Buldog XL Ammo Bundle
+  description: "Old faithful: The classic C-20r Submachine Gun, bundled with three magazines." #, and a Suppressor.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ADTMagazineShotgunSlugXL
+      - id: ADTMagazineShotgunXL
         amount: 2

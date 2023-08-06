@@ -8,7 +8,7 @@
     damage:
       types:
         Piercing: 60
-        Structural: 30
+        Structural: 40
     ignoreResistances: true
   - type: StaminaDamageOnCollide
-    damage: 100
+    damage: 55

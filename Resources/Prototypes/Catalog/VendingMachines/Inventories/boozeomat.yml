@@ -4,6 +4,8 @@
     DrinkGlass: 20 #Kept glasses at top for ease to differentiate from booze.
     DrinkShotGlass: 10
     DrinkGlassCoupeShaped: 10
+    ADTJigger: 5
+    ADTBarSpoon: 5
     DrinkVacuumFlask: 5
     DrinkFlaskBar: 5
     DrinkShaker: 5

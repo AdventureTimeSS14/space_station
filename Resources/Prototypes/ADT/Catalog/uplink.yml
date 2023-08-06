@@ -13,10 +13,10 @@
   id: ADTUplinkMagazineShothgun
   name: uplink-Shothgun-magazine-name
   description: uplink-Shothgun-magazine-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Shotgun/m12.rsi, state: slug }
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Shotgun/m12.rsi, state: base }
   productEntity: MagazineShotgun
   cost:
-    Telecrystal: 4
+    Telecrystal: 2
   categories:
   - UplinkAmmo
 
@@ -27,7 +27,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: red }
   productEntity: MagazinePistolSubMachineGun
   cost:
-    Telecrystal: 4
+    Telecrystal: 3
   categories:
   - UplinkAmmo
 
@@ -41,3 +41,99 @@
     Telecrystal: 4
   categories:
   - UplinkAmmo
+
+- type: listing
+  id: ADTUplinkadvansedHristov
+  name: uplink-Hristov-bundle-name
+  description: uplink-hrisov-bundle-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Snipers/heavy_sniper.rsi, state: base }
+  productEntity: ADTClothingBackpackDuffelSyndicateFilledHristov
+  cost:
+    Telecrystal: 20
+  categories:
+  - UplinkBundles
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: ADTUplinkadvansedmagboots
+  name: uplink-advanced-magboots
+  description: uplink-advanced-magboots-desc
+  icon: { sprite: ADT/Clothing/Shoes/Boots/advanced.rsi, state: icon }
+  productEntity: ADTClothingShoesBootsMagAdvSynd
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkArmor
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: ADTUplinkEliteBundle
+  name: uplink-elite-bundle-name
+  description: uplink-elite-bundle-desc
+  icon: { sprite: Clothing/OuterClothing/Hardsuits/syndieelite.rsi, state: icon }
+  productEntity: ADTClothingBackpackDuffelSyndicateFilledElite
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkArmor
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: ADTUplinkC20AmmoBundle
+  name: uplink-C20-ammo-bundle-name
+  description: uplink-C20-ammo-bundle-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: red }
+  productEntity: ADTClothingBackpackDuffelSyndicateFilledC20Ammo
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkAmmo 
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: ADTUplinkBuldogAmmoBundle
+  name: uplink-Buldog-ammo-bundle-name
+  description: uplink-Buldog-ammo-bundle-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Shotgun/m12.rsi, state: base }
+  productEntity: ADTClothingBackpackDuffelSyndicateFilledBuldogAmmo
+  cost:
+    Telecrystal: 6
+  categories:
+  - UplinkAmmo 
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: ADTUplinkBuldogXLAmmoBundle
+  name: uplink-BuldogXL-ammo-bundle-name
+  description: uplink-BuldogXL-ammo-bundle-desc
+  icon: { sprite: /Textures/ADT/Objects/Weapons/Guns/Ammunition/Magazine/xl.rsi, state: base }
+  productEntity: ADTClothingBackpackDuffelSyndicateFilledBuldogAmmoXL
+  cost:
+    Telecrystal: 12
+  categories:
+  - UplinkAmmo 
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink

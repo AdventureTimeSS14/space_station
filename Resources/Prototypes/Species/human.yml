@@ -46,16 +46,16 @@
       points: 1 # Corvax-Sponsors
       required: false
     HeadTop: # the cat ear joke
-      points: 1 # Corvax-Sponsors
+      points: 2 # Corvax-Sponsors
       required: false
     Chest:
       points: 1
       required: false
     Legs:
-      points: 2
+      points: 4
       required: false
     Arms:
-      points: 2
+      points: 4
       required: false
 
 - type: humanoidBaseSprite
