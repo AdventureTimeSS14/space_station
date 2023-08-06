@@ -48,6 +48,7 @@
       - id: ReagentContainerMilk
         amount: 2
       - id: ReagentContainerMilkSoy
+      - id: ADTIronTray
 
 - type: entity
   id: ClosetJanitorFilled

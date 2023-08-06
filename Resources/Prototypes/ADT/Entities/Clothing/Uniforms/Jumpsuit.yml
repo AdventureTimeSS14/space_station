@@ -92,3 +92,37 @@
         Slash: 0.9
         Piercing: 0.85
         Heat: 0.8
+
+ #nope_ingeneer
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformRedgiSuit
+  name: Redgi suit
+  description: An old and stylish suit that old Redgi wear somedays before.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/redji_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/redji_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformNewBarmanSuit
+  name: New barman suit
+  description: New uniform for barmen by NT.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/new_barman_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/new_barman_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformNewServiceSuit
+  name: New sevice suit
+  description: New uniform for serviceworker by NT.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/new_service_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/new_service_suit.rsi

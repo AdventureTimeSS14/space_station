@@ -1,0 +1,24 @@
+- type: entity
+  id: ADTIronTray
+  name: Iron tray
+  parent: BaseStorageItem
+  description: An iron tray to store and service food
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Misc/iron_tray.rsi
+    state: icon
+  - type: Storage
+    capacity: 30
+    whitelist:
+      components:
+        - Food
+        - Drink
+  - type: Item
+    size: 300
+  - type: ItemCooldown
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      path: "/Audio/Weapons/smash.ogg"

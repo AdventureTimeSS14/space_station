@@ -25,3 +25,18 @@
   - type: Fiber
     fiberMaterial: fibers-synthetic
   - type: FingerprintMask
+
+#nope_ingeneer
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsRedjiGloves
+  name: Redji gloves
+  description: Old pair of gloves without fingers.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/redji_gloves.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/redji_gloves.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-black
