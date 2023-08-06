@@ -6,40 +6,43 @@
     "x": 32,
     "y": 32
   },
-  "states": [
-    {
-      "name": "spoon"
-    },
-    {
-      "name": "spoon-inhand-left",
-      "directions": 4
-    },
-    {
-      "name": "spoon-inhand-right",
-      "directions": 4
-    },
-    {
-      "name": "fork"
-    },
-    {
-      "name": "inhand-left",
-      "directions": 4
-    },
-    {
-      "name": "inhand-right",
-      "directions": 4
-    },
-    {
-      "name": "loadedfood"
-    },
-    {
-      "name": "plastic_spoon"
-    },
-    {
-      "name": "plastic_fork"
-    },
-    {
-      "name": "plastic_knife"
-    }
-  ]
+    "states": [
+        {
+            "name": "spoon"
+        },
+        {
+            "name": "spoon-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "spoon-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "barspoon"
+        },
+        {
+            "name": "fork"
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "loadedfood"
+        },
+        {
+            "name": "plastic_spoon"
+        },
+        {
+            "name": "plastic_fork"
+        },
+        {
+            "name": "plastic_knife"
+        }
+    ]
 }

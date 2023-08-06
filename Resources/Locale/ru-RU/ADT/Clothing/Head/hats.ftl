@@ -4,3 +4,6 @@ ent-ADTClothingHeadHatBlackOrientalEars = Чёрные ушки ориентал
 ent-ADTClothingHeadHatOktyabrinaOrientalEars = Подарок для Октябрины
     .desc = На внутренней стороне нацарапано "Для той, чьи волосы цвета сирени". Это пахнет радостью и счастьем.
     .suffix = { "" }
+ent-ADTClothingHeadHatRedji = Шляпа старика Рэджи
+    .desc = Слегка потёртая, стильная шляпа.
+    .suffix = { "" }

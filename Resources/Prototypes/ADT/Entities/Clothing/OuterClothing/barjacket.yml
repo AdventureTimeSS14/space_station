@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ADTClothingOuterJacketBartender
+  name: Bar jacket
+  description: stylish jacket for bear holding.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Jackets/barjacket.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Jackets/barjacket.rsi
