@@ -125,6 +125,38 @@
       - SubstationMachineCircuitboard
       - CellRechargerCircuitboard
       - WeaponCapacitorRechargerCircuitboard
+  - type: EmagLatheRecipes
+    emagStaticRecipes:
+       - CartridgePistol
+       - CartridgeMagnum
+       - ShellShotgun
+       - ShellShotgunFlare
+       - ShellTranquilizer
+       - CartridgeLightRifle
+       - CartridgeRifle
+       - MagazineBoxPistol
+       - MagazineBoxMagnum
+       - MagazineBoxRifle
+       - MagazineBoxLightRifle
+    emagDynamicRecipes:
+      - CartridgePistolRubber
+      - CartridgeMagnumRubber
+      - ShellShotgunBeanbag
+      - CartridgeRifleRubber
+      - CartridgeLightRifleRubber
+      - MagazineBoxPistolRubber
+      - MagazineBoxMagnumRubber
+      - MagazineBoxRifleRubber
+      - MagazineBoxLightRifleRubber
+      - ShellShotgunIncendiary
+      - CartridgePistolIncendiary
+      - CartridgeMagnumIncendiary
+      - CartridgeLightRifleIncendiary
+      - CartridgeRifleIncendiary
+      - MagazineBoxPistolIncendiary
+      - MagazineBoxMagnumIncendiary
+      - MagazineBoxLightRifleIncendiary
+      - MagazineBoxRifleIncendiary
 
 - type: entity
   id: Protolathe
@@ -226,7 +258,17 @@
       - ClothingBackpackSatchelHolding
       - ClothingBackpackDuffelHolding
       - WelderExperimental
-      - JawsOfLife 
+      - JawsOfLife
+      - ClothingEyesGlassesChemical
+  - type: EmagLatheRecipes
+    emagDynamicRecipes:
+      - ExplosivePayload
+      - WeaponLaserCarbine
+      - WeaponAdvancedLaser
+      - WeaponLaserCannon
+      - WeaponXrayCannon
+      - WeaponTaser
+      - JawsOfLife
       - ClothingEyesHudDiagnostic #Sirena T4 add
       - ClothingEyesHudMedical #Sirena T4 add
       - ClothingEyesHudSecurity #Sirena T4 add
@@ -407,6 +449,7 @@
     idleState: icon
     runningState: icon
     staticRecipes:
+      - ClothingEyesHudSecurity
       - Flash
       - Handcuffs
       - Zipties
@@ -438,16 +481,6 @@
       - MagazineBoxMagnumRubber
       - MagazineBoxRifleRubber
       - MagazineBoxLightRifleRubber
-      #- MagazinePistolHighCapacity // https://github.com/xtray85/space-station-14/actions/runs/5333627632/jobs/9664343159
-#Error: /Prototypes/Entities/Structures/Machines/lathe.yml(434,9)  PrototypeID MagazinePistolHighCapacity for type Content.Shared.Research.Prototypes.LatheRecipePrototype at Line: 434, Col: 9 not found
-#Error: /Prototypes/Entities/Structures/Machines/lathe.yml(435,9)  PrototypeID MagazinePistolCaselessRifle for type Content.Shared.Research.Prototypes.LatheRecipePrototype at Line: 435, Col: 9 not found
-#Error: /Prototypes/Entities/Structures/Machines/lathe.yml(436,9)  PrototypeID MagazineRifle for type Content.Shared.Research.Prototypes.LatheRecipePrototype at Line: 436, Col: 9 not found
-#Error: /Prototypes/Entities/Structures/Machines/lathe.yml(437,9)  PrototypeID MagazinePistolSubMachineGun for type Content.Shared.Research.Prototypes.LatheRecipePrototype at Line: 437, Col: 9 not found
-#Error: /Prototypes/Entities/Structures/Machines/lathe.yml(438,9)  PrototypeID ClothingEyesHudSecurity for type Content.Shared.Research.Prototypes.LatheRecipePrototype at Line: 438, Col: 9 not found
-      #- MagazinePistolCaselessRifle
-      #- MagazineRifle
-      #- MagazinePistolSubMachineGun
-      #- ClothingEyesHudSecurity
       - CartridgePistolHighVelocity
       - CartridgeMagnumHighVelocity
       - CartridgeLightRifleHighVelocity
@@ -469,6 +502,7 @@
       - SignalTrigger
       - VoiceTrigger
       - TimerTrigger
+      - Truncheon
       - FlashPayload
       - ExplosivePayload
       - WeaponLaserCarbine
@@ -549,7 +583,7 @@
     staticRecipes:
       - Brutepack
       - Ointment
-      #- HandLabeler - YAML пишет нет такого прототипа
+      - HandLabeler
       - Defibrillator
       - HandheldHealthAnalyzer
       - ClothingHandsGlovesLatex
@@ -658,6 +692,8 @@
       - ClothingUniformJumpskirtPrisoner
       - ClothingUniformJumpsuitQM
       - ClothingUniformJumpskirtQM
+      - ClothingUniformJumpsuitQMTurtleneck
+      - ClothingUniformJumpskirtQMTurtleneck
       - ClothingUniformJumpsuitResearchDirector
       - ClothingUniformJumpskirtResearchDirector
       - ClothingUniformJumpsuitScientist

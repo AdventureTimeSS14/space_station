@@ -1,6 +1,7 @@
 using System.Globalization;
 using System.Linq;
 using System.Numerics;
+using Content.Server.Administration.Managers;
 using Content.Server.Corvax.OwOAction;
 using Content.Server.Corvax.Sponsors;
 using Content.Server.Ghost;
@@ -8,6 +9,7 @@ using Content.Server.Players;
 using Content.Server.Spawners.Components;
 using Content.Server.Speech.Components;
 using Content.Server.Station.Components;
+using Content.Shared.CCVar;
 using Content.Shared.Database;
 using Content.Shared.GameTicking;
 using Content.Shared.Preferences;
@@ -24,6 +26,8 @@ namespace Content.Server.GameTicking
 {
     public sealed partial class GameTicker
     {
+        [Dependency] private readonly IAdminManager _adminManager = default!;
+
         [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
         private const string ObserverPrototypeName = "MobObserver";
 
@@ -135,6 +139,10 @@ namespace Content.Server.GameTicking
                 JoinAsObserver(player);
                 return;
             }
+
+            // Automatically de-admin players who are joining.
+            if (_cfg.GetCVar(CCVars.AdminDeadminOnJoin) && _adminManager.IsAdmin(player))
+                _adminManager.DeAdmin(player);
 
             // We raise this event to allow other systems to handle spawning this player themselves. (e.g. late-join wizard, etc)
             var bev = new PlayerBeforeSpawnEvent(player, character, jobId, lateJoin, station);

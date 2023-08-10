@@ -2,6 +2,7 @@
   id: JobIcon
   abstract: true
   priority: 1
+  locationPreference: Left
 
 - type: statusIcon
   parent: JobIcon
