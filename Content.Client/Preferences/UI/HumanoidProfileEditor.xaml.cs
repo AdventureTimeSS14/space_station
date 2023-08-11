@@ -118,6 +118,7 @@ namespace Content.Client.Preferences.UI
             IEntityManager entityManager, IConfigurationManager configurationManager)
         {
             RobustXamlLoader.Load(this);
+            _random = IoCManager.Resolve<IRobustRandom>();
             _prototypeManager = prototypeManager;
             _entMan = entityManager;
             _preferencesManager = preferencesManager;

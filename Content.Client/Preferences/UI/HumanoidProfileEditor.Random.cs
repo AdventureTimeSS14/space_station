@@ -1,10 +1,12 @@
 using Content.Shared.Preferences;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Random;
 
 namespace Content.Client.Preferences.UI
 {
     public sealed partial class HumanoidProfileEditor
     {
+        private readonly IRobustRandom _random;
         private readonly IPrototypeManager _prototypeManager;
 
         private void RandomizeEverything()

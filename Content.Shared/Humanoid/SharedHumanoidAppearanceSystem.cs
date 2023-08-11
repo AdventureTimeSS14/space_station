@@ -389,7 +389,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
             Dirty(humanoid);
     }
 
-    private void EnsureDefaultMarkings(EntityUid uid, HumanoidAppearanceComponent? humanoid)
+    public void EnsureDefaultMarkings(EntityUid uid, HumanoidAppearanceComponent? humanoid)
     {
         if (!Resolve(uid, ref humanoid))
         {
