@@ -11,6 +11,7 @@ using Content.Shared.GameTicking;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
+using Content.Shared.Inventory;
 using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Content.Shared.Sirena;
@@ -142,6 +143,8 @@ namespace Content.Client.Preferences.UI
             #region Appearance
 
             _tabContainer.SetTabTitle(0, Loc.GetString("humanoid-profile-editor-appearance-tab"));
+
+            ShowClothes.OnPressed += ToggleClothes;
 
             #region Sex
 
@@ -560,6 +563,11 @@ namespace Content.Client.Preferences.UI
             IsDirty = false;
         }
 
+        private void ToggleClothes(BaseButton.ButtonEventArgs obj)
+        {
+            RebuildSpriteView();
+        }
+
         private void UpdateRoleRequirements()
         {
             _jobList.DisposeAllChildren();
@@ -777,7 +785,7 @@ namespace Content.Client.Preferences.UI
             }
             else
             {
-                _previewSprite.Sprite = sprite;
+                _previewSprite.SetEntity(_previewDummy.Value);
             }
 
             if (_previewSpriteSide == null)
@@ -794,7 +802,7 @@ namespace Content.Client.Preferences.UI
             }
             else
             {
-                _previewSpriteSide.Sprite = sprite;
+                _previewSpriteSide.SetEntity(_previewDummy.Value);
             }
             _needUpdatePreview = true;
         }
@@ -1183,8 +1191,11 @@ namespace Content.Client.Preferences.UI
             if (Profile is null)
                 return;
 
-            EntitySystem.Get<HumanoidAppearanceSystem>().LoadProfile(_previewDummy!.Value, Profile);
-            LobbyCharacterPreviewPanel.GiveDummyJobClothes(_previewDummy!.Value, Profile);
+            var humanoid = _entMan.System<HumanoidAppearanceSystem>();
+            humanoid.LoadProfile(_previewDummy!.Value, Profile);
+
+            if (ShowClothes.Pressed)
+                LobbyCharacterPreviewPanel.GiveDummyJobClothes(_previewDummy!.Value, Profile);
         }
 
         public void UpdateControls()

@@ -22,6 +22,7 @@
       - id: DoorRemoteArmory
       - id: ClothingOuterHardsuitWarden
       - id: HoloprojectorSecurity
+      - id: ClothingEyesHudSecurity
 
 - type: entity
   id: LockerWardenFilled
@@ -35,7 +36,6 @@
         prob: 0.3
       - id: ClothingHeadHatWarden
       - id: ClothingHeadHatBeretWarden
-      - id: ClothingHeadHatCapWardenAlt # Corvax-SecFashion
       - id: ClothingBeltSecurityFilled
       - id: Flash
       - id: ClothingEyesGlassesSecurity
@@ -44,10 +44,10 @@
       - id: ClothingShoesBootsJack
       - id: ClothingOuterCoatWarden
       - id: ClothingOuterWinterWarden
-      - id: ClothingOuterCoatWardenAlt # Corvax-SecFashion
       - id: RubberStampWarden
       - id: DoorRemoteArmory
       - id: HoloprojectorSecurity
+      - id: ClothingEyesHudSecurity
 
 - type: entity
   id: LockerSecurityFilled
@@ -69,8 +69,9 @@
       - id: ClothingHeadsetSecurity
       - id: ClothingHandsGlovesColorBlack
       - id: ClothingShoesBootsJack
-      - id: ClothingOuterCoatSecurityOvercoat # Corvax-SecFashion
-        prob: 0.2
+      - id: WeaponMeleeNeedle
+        prob: 0.1
+      - id: ClothingEyesHudSecurity
 
 - type: entity
   id: LockerBrigmedicFilled
@@ -79,6 +80,7 @@
   components:
   - type: StorageFill
     contents:
+      - id: ClothingEyesHudSecurity
       - id: WeaponDisabler
       - id: TrackingImplanter
         amount: 2
@@ -105,11 +107,6 @@
         prob: 0.7
       - id: ClothingNeckCloakMoth #bzzz Moth-pocalypse
         prob: 0.15
-      - id: ClothingHeadHelmetSecurityMedic # Corvax-Resprite
-      - id: ClothingOuterVestSecurityMedic # Corvax-Resprite
-        prob: 0.5
-      - id: ClothingOuterCoatLabSecurityMedic # Corvax-Resprite
-        prob: 0.5
 
 - type: entity
   id: LockerDetectiveFilled
@@ -118,6 +115,8 @@
   components:
   - type: StorageFill
     contents:
+      - id: ClothingEyesHudSecurity
+        prob: 0.3
       - id: ClothingHeadHatFedoraBrown
       - id: ClothingNeckTieDet
       - id: ClothingOuterVestDetective
@@ -129,7 +128,6 @@
       - id: DrinkDetFlask
       - id: SpeedLoaderMagnum
       - id: ClothingHandsGlovesForensic
-      - id: ADTtelescopicBaton
 
 - type: entity
   id: ClosetBombFilled

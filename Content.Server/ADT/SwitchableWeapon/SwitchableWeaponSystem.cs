@@ -42,7 +42,7 @@ public sealed class SwitchableWeaponSystem : EntitySystem
         if (!component.IsOpen)
             return;
 
-        args.HitSoundOverride = component.BonkSound;
+        //args.HitSoundOverride = component.BonkSound;
     }
 
     private void OnExamined(EntityUid uid, SwitchableWeaponComponent comp, ExaminedEvent args)

@@ -84,15 +84,13 @@
       - ForcedSleep
       - TemporaryBlindness
       - Pacified
+      - StaminaModifier
   - type: Blindable
   # Other
   - type: Inventory
   - type: InventorySlots
   - type: Clickable
   - type: InteractionOutline
-  - type: Icon
-    sprite: Mobs/Species/Human/parts.rsi
-    state: full
   - type: Sprite
     noRot: true
     drawdepth: Mobs
@@ -269,7 +267,8 @@
     attackRate: 1
     damage:
       types:
-        Blunt: 5
+        # Actually does 5 damage due to +25% damage bonus on all single target melee attacks
+        Blunt: 4
   - type: Pullable
   - type: DoAfter
   - type: CreamPied
@@ -380,7 +379,6 @@
         - map: [ "pocket1" ]
         - map: [ "pocket2" ]
     - type: Physics
-      bodyType: Dynamic
     - type: Fixtures
       fixtures:
         fix1:
