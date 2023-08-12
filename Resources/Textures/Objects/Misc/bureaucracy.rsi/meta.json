@@ -323,6 +323,9 @@
         {
             "name": "clipboard-equipped-BELT",
             "directions": 4
+        },
+        {
+            "name": "folder-sec-doc"
         }
     ]
 }
