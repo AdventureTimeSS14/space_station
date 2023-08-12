@@ -101,6 +101,17 @@
         Blunt: 2
 
 - type: entity
+  id: BaseBulletHighVelocity
+  name: base bullet high-velocity
+  parent: BaseBullet
+  noSpawn: true
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 17
+
+- type: entity
   id: BaseBulletRubber
   name: base bullet rubber
   parent: BaseBullet
