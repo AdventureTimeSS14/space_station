@@ -1299,12 +1299,6 @@ namespace Content.Client.Preferences.UI
 
                 var jobIcon = prototypeManager.Index<StatusIconPrototype>(job.Icon);
                 icon.Texture = jobIcon.Icon.Frame0();
-                if (job.Icon != null)
-                {
-                    var specifier = new SpriteSpecifier.Rsi(new("/Textures/Interface/Misc/job_icons.rsi"),
-                        job.Icon);
-                    icon.Texture = specifier.Frame0();
-                }
 
                 _requirementsLabel = new Label()
                 {
