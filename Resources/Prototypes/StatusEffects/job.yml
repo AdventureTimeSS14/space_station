@@ -23,7 +23,7 @@
   id: JobIconBorg
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: Borg
+    state: JobIconBorg
 
 - type: statusIcon
   parent: JobIcon

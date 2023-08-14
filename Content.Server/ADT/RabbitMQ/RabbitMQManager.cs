@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿/*
+using System.Text;
 using System.Threading.Tasks;
 using Content.Server.ADT.ExternalNetwork;
 using Content.Shared.ADT.ACCVars;
@@ -80,3 +81,4 @@ public sealed class RabbitMQManager
         }
     }
 }
+*/

@@ -41,7 +41,6 @@ public sealed class FaxSystem : EntitySystem
     [Dependency] private readonly QuickDialogSystem _quickDialog = default!;
     [Dependency] private readonly UserInterfaceSystem _userInterface = default!;
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
-    [Dependency] private readonly RabbitMQManager _mqManager = default!;
 
     private const string PaperSlotId = "Paper";
 
@@ -383,12 +382,12 @@ public sealed class FaxSystem : EntitySystem
                 component.KnownFaxes[host] = $"External-{hostName}";
             }
 
-            _mqManager.SendMessage(new NetworkPackage()
-            {
-                Command = NetworkCommand.Ping,
-                PackageType = DeviceTypes.Fax,
-                Sender = (int)uid
-            });
+            // _mqManager.SendMessage(new NetworkPackage()
+            // {
+            //     Command = NetworkCommand.Ping,
+            //     PackageType = DeviceTypes.Fax,
+            //     Sender = (int)uid
+            // });
         }
 
         _deviceNetworkSystem.QueuePacket(uid, null, payload);
@@ -439,26 +438,7 @@ public sealed class FaxSystem : EntitySystem
             payload[FaxConstants.FaxPaperStampedByData] = paper.StampedBy;
         }
 
-        if (component.DestinationFaxAddress.Length == 36)
-        {
-            if (TryComp<ExternalNetworkComponent>(component.Owner, out var _externalNetwork))
-            {
-                var networkPackage = new NetworkPackage()
-                {
-                    Command = NetworkCommand.Transfer,
-                    Address = component.DestinationFaxAddress,
-                    Sender = (int) component.Owner,
-                    PackageType = DeviceTypes.Fax,
-                    SenderAddress = _externalNetwork.Address,
-                    Data = payload
-                };
-                _mqManager.SendMessage(networkPackage);
-            }
-        }
-        else
-        {
-            _deviceNetworkSystem.QueuePacket(uid, component.DestinationFaxAddress, payload);
-        }
+        _deviceNetworkSystem.QueuePacket(uid, component.DestinationFaxAddress, payload);
 
         _adminLogger.Add(LogType.Action, LogImpact.Low, $"{(sender != null ? ToPrettyString(sender.Value) : "Unknown"):user} sent fax from \"{component.FaxName}\" {ToPrettyString(uid)} to {faxName} ({component.DestinationFaxAddress}): {paper.Content}");
 

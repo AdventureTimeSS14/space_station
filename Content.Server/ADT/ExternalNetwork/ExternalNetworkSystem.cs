@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿/*
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
@@ -12,7 +13,6 @@ using Content.Server.DeviceNetwork;
 using Content.Server.DeviceNetwork.Systems;
 using Content.Server.Fax;
 using Content.Server.Popups;
-using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
@@ -153,3 +153,4 @@ public sealed class NetworkPackage : EntityEventArgs
     public string? PackageType { get; set; }
     public NetworkPayload? Data { get; set;}
 }
+*/
