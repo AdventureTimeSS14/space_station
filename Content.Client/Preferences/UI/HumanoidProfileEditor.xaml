@@ -95,12 +95,6 @@
                                     <Control HorizontalExpand="True"/>
                                     <OptionButton Name="CSpeciesButton" HorizontalAlignment="Right" />
                                 </BoxContainer>
-                                <prefUi:HighlightedContainer>
-                                    <BoxContainer Orientation="Horizontal">
-                                        <Label Text="{Loc 'humanoid-profile-editor-species-label'}" />
-                                        <OptionButton Name="CSpeciesButton" />
-                                    </BoxContainer>
-                                </prefUi:HighlightedContainer>
                                 <!-- Corvax-TTS-Start -->
                                 <prefUi:HighlightedContainer>
                                     <BoxContainer Orientation="Horizontal">
