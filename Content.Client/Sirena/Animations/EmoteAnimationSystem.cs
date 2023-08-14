@@ -8,7 +8,6 @@ using static Content.Shared.Sirena.Animations.EmoteAnimationComponent;
 using Content.Shared.Interaction;
 using Robust.Shared.GameObjects;
 using System.ComponentModel;
-using SharpFont.Cache;
 
 namespace Content.Client.Sirena.Animations;
 

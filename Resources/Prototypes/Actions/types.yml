@@ -191,3 +191,4 @@
   description: action-desc-honk
   icon: { sprite: Objects/Fun/bikehorn.rsi, state: icon }
   event: !type:ActivateImplantEvent
+  useDelay: 1

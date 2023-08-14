@@ -11,3 +11,9 @@
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+
+- type: startingGear
+  id: HoloClownGear
+  equipment:
+    pocket1: BikeHorn
+

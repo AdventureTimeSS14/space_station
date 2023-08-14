@@ -19,6 +19,7 @@ using Content.Shared.Emag.Components;
 using Content.Shared.Emag.Systems;
 using Content.Shared.Fax;
 using Content.Shared.Interaction;
+using Content.Shared.Paper;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
 using Robust.Shared.Containers;
@@ -40,7 +41,6 @@ public sealed class FaxSystem : EntitySystem
     [Dependency] private readonly QuickDialogSystem _quickDialog = default!;
     [Dependency] private readonly UserInterfaceSystem _userInterface = default!;
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
-    [Dependency] private readonly RabbitMQManager _mqManager = default!;
 
     private const string PaperSlotId = "Paper";
 
@@ -283,7 +283,7 @@ public sealed class FaxSystem : EntitySystem
                         return;
 
                     args.Data.TryGetValue(FaxConstants.FaxPaperStampStateData, out string? stampState);
-                    args.Data.TryGetValue(FaxConstants.FaxPaperStampedByData, out List<string>? stampedBy);
+                    args.Data.TryGetValue(FaxConstants.FaxPaperStampedByData, out List<StampDisplayInfo>? stampedBy);
                     args.Data.TryGetValue(FaxConstants.FaxPaperPrototypeData, out string? prototypeId);
 
                     var printout = new FaxPrintout(content, name, prototypeId, stampState, stampedBy);
@@ -382,12 +382,12 @@ public sealed class FaxSystem : EntitySystem
                 component.KnownFaxes[host] = $"External-{hostName}";
             }
 
-            _mqManager.SendMessage(new NetworkPackage()
-            {
-                Command = NetworkCommand.Ping,
-                PackageType = DeviceTypes.Fax,
-                Sender = (int)uid
-            });
+            // _mqManager.SendMessage(new NetworkPackage()
+            // {
+            //     Command = NetworkCommand.Ping,
+            //     PackageType = DeviceTypes.Fax,
+            //     Sender = (int)uid
+            // });
         }
 
         _deviceNetworkSystem.QueuePacket(uid, null, payload);
@@ -438,26 +438,7 @@ public sealed class FaxSystem : EntitySystem
             payload[FaxConstants.FaxPaperStampedByData] = paper.StampedBy;
         }
 
-        if (component.DestinationFaxAddress.Length == 36)
-        {
-            if (TryComp<ExternalNetworkComponent>(component.Owner, out var _externalNetwork))
-            {
-                var networkPackage = new NetworkPackage()
-                {
-                    Command = NetworkCommand.Transfer,
-                    Address = component.DestinationFaxAddress,
-                    Sender = (int) component.Owner,
-                    PackageType = DeviceTypes.Fax,
-                    SenderAddress = _externalNetwork.Address,
-                    Data = payload
-                };
-                _mqManager.SendMessage(networkPackage);
-            }
-        }
-        else
-        {
-            _deviceNetworkSystem.QueuePacket(uid, component.DestinationFaxAddress, payload);
-        }
+        _deviceNetworkSystem.QueuePacket(uid, component.DestinationFaxAddress, payload);
 
         _adminLogger.Add(LogType.Action, LogImpact.Low, $"{(sender != null ? ToPrettyString(sender.Value) : "Unknown"):user} sent fax from \"{component.FaxName}\" {ToPrettyString(uid)} to {faxName} ({component.DestinationFaxAddress}): {paper.Content}");
 
@@ -507,9 +488,9 @@ public sealed class FaxSystem : EntitySystem
             // Apply stamps
             if (printout.StampState != null)
             {
-                foreach (var stampedBy in printout.StampedBy)
+                foreach (var stamp in printout.StampedBy)
                 {
-                    _paperSystem.TryStamp(printed, stampedBy, printout.StampState);
+                    _paperSystem.TryStamp(printed, stamp, printout.StampState);
                 }
             }
         }

@@ -365,6 +365,7 @@
       - id: JetpackSecurityFilled
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
+      - id: BookSecretDocuments
       # Sirena-Underwear-Start
       - id: ClothingUnderwearBottomBoxersHOS
       - id: ClothingUnderwearBottomPantiesHOS
