@@ -23,19 +23,20 @@
     price: 50
 
 - type: entity
-  id: AnomalyLocator
-  parent: [ BaseItem, PowerCellSlotSmallItem ]
+  id: AnomalyLocatorUnpowered
+  parent: BaseItem
   name: anomaly locator
   description: A device designed to aid in the locating of anomalies. Did you check the gas miners?
+  suffix: Unpowered
   components:
   - type: Sprite
     sprite: Objects/Specific/Research/anomalylocator.rsi
     layers:
-    - state: icon
-    - state: screen
-      shader: unshaded
-      visible: false
-      map: ["enum.PowerDeviceVisualLayers.Powered"]
+      - state: icon
+      - state: screen
+        shader: unshaded
+        visible: false
+        map: ["enum.PowerDeviceVisualLayers.Powered"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -43,9 +44,6 @@
         enum.PowerDeviceVisualLayers.Powered:
           True: { visible: true }
           False: { visible: false }
-  - type: PowerCellDraw
-    drawRate: 1
-    useRate: 0
   - type: ProximityBeeper
     component: Anomaly
     maximumDistance: 20
@@ -58,6 +56,15 @@
         volume: -8
   - type: StaticPrice
     price: 70
+
+- type: entity
+  id: AnomalyLocator
+  parent: [ AnomalyLocatorUnpowered, PowerCellSlotSmallItem ]
+  suffix: Powered
+  components:
+  - type: PowerCellDraw
+    drawRate: 1
+    useRate: 0
 
 - type: entity
   id: AnomalyLocatorEmpty

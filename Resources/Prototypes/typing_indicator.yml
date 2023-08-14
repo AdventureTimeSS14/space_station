@@ -22,11 +22,13 @@
   id: holo
   typingState: holo0
   idleState: holo3 # Corvax-TypingIndicator
+  offset: 0, 0.0625
 
 - type: typingIndicator
   id: lawyer
   typingState: lawyer0
   idleState: lawyer3 # Corvax-TypingIndicator
+  offset: 0, 0.125
 
 - type: typingIndicator
   id: moth
@@ -37,3 +39,4 @@
   id: slime
   typingState: slime0
   idleState: slime3
+  offset: 0, 0.125

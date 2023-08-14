@@ -168,7 +168,7 @@
    - chittered
    - chittered.
    - chittered!
-  
+
 - type: emote
   id: Squeak
   category: Vocal
@@ -256,9 +256,18 @@
 #Фикс еррора если появится оригинальное это удалить
 - type: emote
   id: Salute
-  category: Vocal
-  chatMessages: [squishing]
+  category: Hands
+  chatMessages: [Salute]
   chatTriggers:
-    - Salute
-    - Salute.
-    - Salute!
+    - salute
+    - salute.
+    - salute!
+    - salutes
+    - salutes.
+    - salutes!
+
+- type: emote
+  id: DefaultDeathgasp
+  chatMessages: ["emote-deathgasp"]
+  chatTriggers:
+  - deathgasp
