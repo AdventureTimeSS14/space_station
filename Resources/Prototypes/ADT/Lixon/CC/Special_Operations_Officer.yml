@@ -23,7 +23,7 @@
       contents:
         - id: BoxSurvival
         - id: RubberStampCentcom
-        - id: BoxMagazineMagnumSubMachineGunHighVelocity
+        #- id: BoxMagazineMagnumSubMachineGunHighVelocity
         - id: WeaponSubMachineGunVector
 
 - type: entity

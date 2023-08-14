@@ -1,431 +1,431 @@
-- type: entity
-  name: Robot Nar Si
-  id: ADTNarSi
-  parent: PlayerSiliconBase
-  components:
-  - type: InteractionOutline
-  - type: InnateTool
-    tools:
-      - id: UnholyHalberd
-      - id: ADTNarSiSpawnSpellbook
-      - id: ADTNarsiFireballSpellbook
-  - type: UserInterface
-    interfaces:
-    - key: enum.StrippingUiKey.Key
-      type: StrippableBoundUserInterface
-  - type: GhostTakeoverAvailable
-  - type: MovementSpeedModifier
-    baseWalkSpeed : 3
-    baseSprintSpeed : 2
-  - type: MobState
-    allowedStates:
-      - Alive
-      - Dead
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      800: Dead
-  - type: Sprite
-    drawdepth: Mobs
-    netsync: false
-    sprite: ADT/Mobs/nar.rsi
-    state: mech_narsi
-  - type: MovementIgnoreGravity
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 1
-        density: 160
-        mask:
-        - LargeMobMask
-        layer:
-        - MobLayer
-  - type: Appearance
-    #rotate: true // Error: /Prototypes/ADT/Drones/nar_si.yml(46,5)  Field "rotate" not found in "Robust.Shared.GameObjects.AppearanceComponent". Error: /Prototypes/ADT/Drones/nar_si.yml(47,5)  Field "states" not found in "Robust.Shared.GameObjects.AppearanceComponent".
-    #states:
-    #  Alive:
-    #    Base: mech_narsi
-    #  Dead:
-    #    Base: died_mech_narsi
-  - type: CombatMode
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.75
-        Slash: 0.75
-        Piercing: 0.75
-        Heat: 0.75
-        Radiation: 0
-
-#Spawn Demons Start
-- type: entity
-  id: ADTNarSiSpawnSpellbook
-  name: spawn spellbook
-  parent: BaseSpellbook
-  components:
-    - type: Spellbook
-      instantSpells:
-        FlashRune: -1
-      worldSpells:
-        SpawnNarsiSpell: -1
-
-- type: worldTargetAction
-  id: SpawnNarsiSpell
-  name: action-name-spell-summon-demons
-  description: action-description-spell-summon-demons
-  useDelay: 10
-  range: 4
-  itemIconStyle: BigAction
-  icon:
-    sprite: Objects/Magic/magicactions.rsi
-    state: spell_default
-  serverEvent: !type:WorldSpawnSpellEvent
-    prototypes:
-      - id: ADTBlodyEyesDemon
-        amount: 1
-      - id: ADTBunchDemonicEyesDemon
-        amount: 3
-      - id: ADTDemonicEyeDemon
-        amount: 4
-    offsetVector2: 0, 1
-    speech: action-speech-spell-summon-demons
-
-#BaseNarSiDemons
-- type: entity
-  parent: SimpleMobBase
-  id: ADTBaseMobNarsiDemon
-  name: narsi demon
-  description: narsi demon
-  abstract: true
-  components:
-  - type: HTN
-    rootTask: SimpleHostileCompound
-  - type: NpcFactionMember
-    factions:
-    - SimpleHostile
-  - type: Tag
-    tags:
-    - DoorBumpOpener
-    - Flesh
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: ADT/Mobs/Aliens/nar_si_demons.rsi
-  - type: MovementAlwaysTouching
-  - type: MovementSpeedModifier
-    baseWalkSpeed: 1
-    baseSprintSpeed: 1.5
-  - type: MobState
-    allowedStates:
-    - Alive
-    - Dead
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      75: Dead
-  - type: Stamina
-    excess: 50
-  - type: Appearance
-  - type: Butcherable
-    spawned:
-    - id: FoodMeat
-      amount: 1
-  - type: Bloodstream
-    bloodMaxVolume: 100
-  - type: CombatMode
-  - type: MeleeWeapon
-    hidden: true
-    soundHit:
-        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
-    angle: 0
-    animation: WeaponArcClaw
-    damage:
-      types:
-        Slash: 3
-  - type: ReplacementAccent
-    accent: genericAggressive
-
-- type: entity
-  parent: SimpleMobBase
-  id: ADTBaseMobNarsiBigDemon
-  name: narsi demon
-  description: narsi demon
-  abstract: true
-  components:
-  - type: HTN
-    rootTask: SimpleHostileCompound
-  - type: NpcFactionMember
-    factions:
-    - SimpleHostile
-  - type: Tag
-    tags:
-    - DoorBumpOpener
-    - Flesh
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: ADT/Mobs/Aliens/nar_si_big_demons.rsi
-  - type: MovementAlwaysTouching
-  - type: MovementSpeedModifier
-    baseWalkSpeed: 1
-    baseSprintSpeed: 1.5
-  - type: MobState
-    allowedStates:
-    - Alive
-    - Dead
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      75: Dead
-  - type: Stamina
-    excess: 50
-  - type: Appearance
-  - type: Butcherable
-    spawned:
-    - id: FoodMeat
-      amount: 1
-  - type: Bloodstream
-    bloodMaxVolume: 100
-  - type: CombatMode
-  - type: MeleeWeapon
-    hidden: true
-    soundHit:
-        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
-    angle: 0
-    animation: WeaponArcClaw
-    damage:
-      types:
-        Slash: 3
-  - type: ReplacementAccent
-    accent: genericAggressive
-
-- type: entity
-  parent: ADTBaseMobNarsiDemon
-  id: ADTBlodyEyesDemon
-  name: Bloody eye demon
-  description: Dark matter whose eyes randomly pop out of the body. They all seem to be following you...
-  components:
-  - type: Sprite
-    layers:
-    - map: [ "enum.DamageStateVisualLayers.Base" ]
-      state: blody_eyes
-    scale: 1.4, 1.4
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: blody_eyes
-      Critical:
-        Base: blody_eyes_dead
-      Dead:
-        Base: blody_eyes_dead
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      450: Dead
-  - type: MeleeWeapon
-    hidden: true
-    soundHit:
-        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
-    angle: 0
-    animation: WeaponArcClaw
-    damage:
-      types:
-        Slash: 25
-
-- type: entity
-  parent: ADTBaseMobNarsiDemon
-  id: ADTBunchDemonicEyesDemon
-  name: Pile of demonic eyes
-  description: A multi eyepiece that follows your every move... Doesn't look friendly.
-  components:
-  - type: Sprite
-    layers:
-    - map: [ "enum.DamageStateVisualLayers.Base" ]
-      state: bunch_demonic_eyes
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: bunch_demonic_eyes
-      Critical:
-        Base: bunch_demonic_eyes_dead
-      Dead:
-        Base: bunch_demonic_eyes_dead
-    scale: 1.2, 1.2
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      150: Dead
-  - type: MeleeWeapon
-    hidden: true
-    soundHit:
-        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
-    angle: 0
-    animation: WeaponArcClaw
-    damage:
-      types:
-        Slash: 10
-
-- type: entity
-  parent: ADTBaseMobNarsiDemon
-  id: ADTDemonicEyeDemon
-  name: demonic eye
-  description: A clot of darkness and blood, longing for your death.
-  components:
-  - type: Sprite
-    layers:
-    - map: [ "enum.DamageStateVisualLayers.Base" ]
-      state: demonic_eye
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: demonic_eye
-      Critical:
-        Base: demonic_eye_dead
-      Dead:
-        Base: demonic_eye_dead
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      50: Dead
-  - type: MeleeWeapon
-    hidden: true
-    soundHit:
-        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
-    angle: 0
-    animation: WeaponArcClaw
-    damage:
-      types:
-        Slash: 5
-
-- type: entity
-  parent: ADTBaseMobNarsiBigDemon
-  id: ADTBloodyMouthDemon
-  name: Bloody mouth
-  description: The personification of the gluttony of the dark god....
-  components:
-  - type: Sprite
-    layers:
-    - map: [ "enum.DamageStateVisualLayers.Base" ]
-      state: demonic_mouth
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: demonic_mouth
-      Critical:
-        Base: demonic_mouth_dead
-      Dead:
-        Base: demonic_mouth_dead
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      450: Dead
-  - type: MeleeWeapon
-    hidden: true
-    soundHit:
-        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
-    angle: 0
-    animation: WeaponArcClaw
-    damage:
-      types:
-        Slash: 25
-
-- type: entity
-  parent: ADTBaseMobNarsiBigDemon
-  id: ADTDarkRattlesnakeDemon
-  name: Dark rattlesnake
-  description: A hissing abyss that awaits the awakening of its master....
-  components:
-  - type: Sprite
-    layers:
-    - map: [ "enum.DamageStateVisualLayers.Base" ]
-      state: dark_rattlesnake
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: dark_rattlesnake
-      Critical:
-        Base: dark_rattlesnake_dead
-      Dead:
-        Base: dark_rattlesnake_dead
-  - type: MovementSpeedModifier
-    baseWalkSpeed: 1.5
-    baseSprintSpeed: 2.5
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      350: Dead
-  - type: MeleeWeapon
-    hidden: true
-    soundHit:
-        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
-    angle: 0
-    animation: WeaponArcClaw
-    damage:
-      types:
-        Slash: 15
-        Poison: 5
-
-- type: entity
-  parent: ADTBaseMobNarsiBigDemon
-  id: ADTBloodyArmySoldierDemon
-  name: Soldier of the bloody army
-  description: Loyal servant of the Nar'Si. Will fight to destroy the world until he himself is destroyed.
-  components:
-  - type: Sprite
-    layers:
-    - map: [ "enum.DamageStateVisualLayers.Base" ]
-      state: bloody_army_soldier
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: bloody_army_soldier
-      Critical:
-        Base: bloody_army_soldier_dead
-      Dead:
-        Base: bloody_army_soldier_dead
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      750: Dead
-  - type: MeleeWeapon
-    hidden: true
-    soundHit:
-        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
-    angle: 0
-    animation: WeaponArcClaw
-    damage:
-      types:
-        Slash: 35
-#Spawn Demons End
-
-- type: entity
-  id: ADTNarsiFireballSpellbook
-  name: fireball spellbook
-  parent: BaseSpellbook
-  components:
-  - type: Sprite
-    netsync: false
-    sprite: Objects/Magic/spellbooks.rsi
-    layers:
-    - state: bookfireball
-  - type: Spellbook
-    worldSpells:
-      ADTFireball: -1
-
-- type: worldTargetAction
-  id: ADTFireball
-  name: action-name-spell-fireball
-  description: action-description-spell-fireball
-  useDelay: 0.1
-  itemIconStyle: BigAction
-  checkCanAccess: false
-  range: 60
-  sound: !type:SoundPathSpecifier
-    path: /Audio/Magic/fireball.ogg
-  icon:
-    sprite: Objects/Magic/magicactions.rsi
-    state: fireball
-  serverEvent: !type:ProjectileSpellEvent
-    prototype: ProjectileFireball
-    posData: !type:TargetCasterPos
-    speech: action-speech-spell-fireball
+#- type: entity
+#  name: Robot Nar Si
+#  id: ADTNarSi
+#  parent: PlayerSiliconBase
+#  components:
+#  - type: InteractionOutline
+#  - type: InnateTool
+#    tools:
+#      - id: UnholyHalberd
+#      - id: ADTNarSiSpawnSpellbook
+#      - id: ADTNarsiFireballSpellbook
+#  - type: UserInterface
+#    interfaces:
+#    - key: enum.StrippingUiKey.Key
+#      type: StrippableBoundUserInterface
+#  - type: GhostTakeoverAvailable
+#  - type: MovementSpeedModifier
+#    baseWalkSpeed : 3
+#    baseSprintSpeed : 2
+#  - type: MobState
+#    allowedStates:
+#      - Alive
+#      - Dead
+#  - type: MobThresholds
+#    thresholds:
+#      0: Alive
+#      800: Dead
+#  - type: Sprite
+#    drawdepth: Mobs
+#    netsync: false
+#    sprite: ADT/Mobs/nar.rsi
+#    state: mech_narsi
+#  - type: MovementIgnoreGravity
+#  - type: Fixtures
+#    fixtures:
+#      fix1:
+#        shape:
+#          !type:PhysShapeCircle
+#          radius: 1
+#        density: 160
+#        mask:
+#        - LargeMobMask
+#        layer:
+#        - MobLayer
+#  - type: Appearance
+#    #rotate: true // Error: /Prototypes/ADT/Drones/nar_si.yml(46,5)  Field "rotate" not found in "Robust.Shared.GameObjects.AppearanceComponent". Error: /Prototypes/ADT/Drones/nar_si.yml(47,5)  Field "states" not found in "Robust.Shared.GameObjects.AppearanceComponent".
+#    #states:
+#    #  Alive:
+#    #    Base: mech_narsi
+#    #  Dead:
+#    #    Base: died_mech_narsi
+#  - type: CombatMode
+#  - type: Armor
+#    modifiers:
+#      coefficients:
+#        Blunt: 0.75
+#        Slash: 0.75
+#        Piercing: 0.75
+#        Heat: 0.75
+#        Radiation: 0
+#
+##Spawn Demons Start
+#- type: entity
+#  id: ADTNarSiSpawnSpellbook
+#  name: spawn spellbook
+#  parent: BaseSpellbook
+#  components:
+#    - type: Spellbook
+#      instantSpells:
+#        FlashRune: -1
+#      worldSpells:
+#        SpawnNarsiSpell: -1
+#
+#- type: worldTargetAction
+#  id: SpawnNarsiSpell
+#  name: action-name-spell-summon-demons
+#  description: action-description-spell-summon-demons
+#  useDelay: 10
+#  range: 4
+#  itemIconStyle: BigAction
+#  icon:
+#    sprite: Objects/Magic/magicactions.rsi
+#    state: spell_default
+#  serverEvent: !type:WorldSpawnSpellEvent
+#    prototypes:
+#      - id: ADTBlodyEyesDemon
+#        amount: 1
+#      - id: ADTBunchDemonicEyesDemon
+#        amount: 3
+#      #- id: ADTDemonicEyeDemon
+#      #  amount: 4
+#    offsetVector2: 0, 1
+#    speech: action-speech-spell-summon-demons
+#
+##BaseNarSiDemons
+#- type: entity
+#  parent: SimpleMobBase
+#  id: ADTBaseMobNarsiDemon
+#  name: narsi demon
+#  description: narsi demon
+#  abstract: true
+#  components:
+#  - type: HTN
+#    rootTask: SimpleHostileCompound
+#  - type: NpcFactionMember
+#    factions:
+#    - SimpleHostile
+#  - type: Tag
+#    tags:
+#    - DoorBumpOpener
+#    - Flesh
+#  - type: Sprite
+#    drawdepth: Mobs
+#    sprite: ADT/Mobs/Aliens/nar_si_demons.rsi
+#  - type: MovementAlwaysTouching
+#  - type: MovementSpeedModifier
+#    baseWalkSpeed: 1
+#    baseSprintSpeed: 1.5
+#  - type: MobState
+#    allowedStates:
+#    - Alive
+#    - Dead
+#  - type: MobThresholds
+#    thresholds:
+#      0: Alive
+#      75: Dead
+#  - type: Stamina
+#    excess: 50
+#  - type: Appearance
+#  - type: Butcherable
+#    spawned:
+#    - id: FoodMeat
+#      amount: 1
+#  - type: Bloodstream
+#    bloodMaxVolume: 100
+#  - type: CombatMode
+#  - type: MeleeWeapon
+#    hidden: true
+#    soundHit:
+#        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+#    angle: 0
+#    animation: WeaponArcClaw
+#    damage:
+#      types:
+#        Slash: 3
+#  - type: ReplacementAccent
+#    accent: genericAggressive
+#
+#- type: entity
+#  parent: SimpleMobBase
+#  id: ADTBaseMobNarsiBigDemon
+#  name: narsi demon
+#  description: narsi demon
+#  abstract: true
+#  components:
+#  - type: HTN
+#    rootTask: SimpleHostileCompound
+#  - type: NpcFactionMember
+#    factions:
+#    - SimpleHostile
+#  - type: Tag
+#    tags:
+#    - DoorBumpOpener
+#    - Flesh
+#  - type: Sprite
+#    drawdepth: Mobs
+#    sprite: ADT/Mobs/Aliens/nar_si_big_demons.rsi
+#  - type: MovementAlwaysTouching
+#  - type: MovementSpeedModifier
+#    baseWalkSpeed: 1
+#    baseSprintSpeed: 1.5
+#  - type: MobState
+#    allowedStates:
+#    - Alive
+#    - Dead
+#  - type: MobThresholds
+#    thresholds:
+#      0: Alive
+#      75: Dead
+#  - type: Stamina
+#    excess: 50
+#  - type: Appearance
+#  - type: Butcherable
+#    spawned:
+#    - id: FoodMeat
+#      amount: 1
+#  - type: Bloodstream
+#    bloodMaxVolume: 100
+#  - type: CombatMode
+#  - type: MeleeWeapon
+#    hidden: true
+#    soundHit:
+#        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+#    angle: 0
+#    animation: WeaponArcClaw
+#    damage:
+#      types:
+#        Slash: 3
+#  - type: ReplacementAccent
+#    accent: genericAggressive
+#
+#- type: entity
+#  parent: ADTBaseMobNarsiDemon
+#  id: ADTBlodyEyesDemon
+#  name: Bloody eye demon
+#  description: Dark matter whose eyes randomly pop out of the body. They all seem to be following you...
+#  components:
+#  - type: Sprite
+#    layers:
+#    - map: [ "enum.DamageStateVisualLayers.Base" ]
+#      state: blody_eyes
+#    scale: 1.4, 1.4
+#  - type: DamageStateVisuals
+#    states:
+#      Alive:
+#        Base: blody_eyes
+#      Critical:
+#        Base: blody_eyes_dead
+#      Dead:
+#        Base: blody_eyes_dead
+#  - type: MobThresholds
+#    thresholds:
+#      0: Alive
+#      450: Dead
+#  - type: MeleeWeapon
+#    hidden: true
+#    soundHit:
+#        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+#    angle: 0
+#    animation: WeaponArcClaw
+#    damage:
+#      types:
+#        Slash: 25
+#
+#- type: entity
+#  parent: ADTBaseMobNarsiDemon
+#  id: ADTBunchDemonicEyesDemon
+#  name: Pile of demonic eyes
+#  description: A multi eyepiece that follows your every move... Doesn't look friendly.
+#  components:
+#  - type: Sprite
+#    layers:
+#    - map: [ "enum.DamageStateVisualLayers.Base" ]
+#      state: bunch_demonic_eyes
+#  - type: DamageStateVisuals
+#    states:
+#      Alive:
+#        Base: bunch_demonic_eyes
+#      Critical:
+#        Base: bunch_demonic_eyes_dead
+#      Dead:
+#        Base: bunch_demonic_eyes_dead
+#    scale: 1.2, 1.2
+#  - type: MobThresholds
+#    thresholds:
+#      0: Alive
+#      150: Dead
+#  - type: MeleeWeapon
+#    hidden: true
+#    soundHit:
+#        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+#    angle: 0
+#    animation: WeaponArcClaw
+#    damage:
+#      types:
+#        Slash: 10
+#
+##- type: entity
+##  parent: ADTBaseMobNarsiDemon
+##  id: ADTDemonicEyeDemon
+##  name: demonic eye
+##  description: A clot of darkness and blood, longing for your death.
+##  components:
+##  - type: Sprite
+##    layers:
+##    - map: [ "enum.DamageStateVisualLayers.Base" ]
+##      state: demonic_eye
+##  - type: DamageStateVisuals
+##    states:
+##      Alive:
+##        Base: demonic_eye
+##      Critical:
+##        Base: demonic_eye_dead
+##      Dead:
+##        Base: demonic_eye_dead
+##  - type: MobThresholds
+##    thresholds:
+##      0: Alive
+##      50: Dead
+##  - type: MeleeWeapon
+##    hidden: true
+##    soundHit:
+##        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+##    angle: 0
+##    animation: WeaponArcClaw
+##    damage:
+##      types:
+##        Slash: 5
+#
+#- type: entity
+#  parent: ADTBaseMobNarsiBigDemon
+#  id: ADTBloodyMouthDemon
+#  name: Bloody mouth
+#  description: The personification of the gluttony of the dark god....
+#  components:
+#  - type: Sprite
+#    layers:
+#    - map: [ "enum.DamageStateVisualLayers.Base" ]
+#      state: demonic_mouth
+#  - type: DamageStateVisuals
+#    states:
+#      Alive:
+#        Base: demonic_mouth
+#      Critical:
+#        Base: demonic_mouth_dead
+#      Dead:
+#        Base: demonic_mouth_dead
+#  - type: MobThresholds
+#    thresholds:
+#      0: Alive
+#      450: Dead
+#  - type: MeleeWeapon
+#    hidden: true
+#    soundHit:
+#        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+#    angle: 0
+#    animation: WeaponArcClaw
+#    damage:
+#      types:
+#        Slash: 25
+#
+#- type: entity
+#  parent: ADTBaseMobNarsiBigDemon
+#  id: ADTDarkRattlesnakeDemon
+#  name: Dark rattlesnake
+#  description: A hissing abyss that awaits the awakening of its master....
+#  components:
+#  - type: Sprite
+#    layers:
+#    - map: [ "enum.DamageStateVisualLayers.Base" ]
+#      state: dark_rattlesnake
+#  - type: DamageStateVisuals
+#    states:
+#      Alive:
+#        Base: dark_rattlesnake
+#      Critical:
+#        Base: dark_rattlesnake_dead
+#      Dead:
+#        Base: dark_rattlesnake_dead
+#  - type: MovementSpeedModifier
+#    baseWalkSpeed: 1.5
+#    baseSprintSpeed: 2.5
+#  - type: MobThresholds
+#    thresholds:
+#      0: Alive
+#      350: Dead
+#  - type: MeleeWeapon
+#    hidden: true
+#    soundHit:
+#        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+#    angle: 0
+#    animation: WeaponArcClaw
+#    damage:
+#      types:
+#        Slash: 15
+#        Poison: 5
+#
+#- type: entity
+#  parent: ADTBaseMobNarsiBigDemon
+#  id: ADTBloodyArmySoldierDemon
+#  name: Soldier of the bloody army
+#  description: Loyal servant of the Nar'Si. Will fight to destroy the world until he himself is destroyed.
+#  components:
+#  - type: Sprite
+#    layers:
+#    - map: [ "enum.DamageStateVisualLayers.Base" ]
+#      state: bloody_army_soldier
+#  - type: DamageStateVisuals
+#    states:
+#      Alive:
+#        Base: bloody_army_soldier
+#      Critical:
+#        Base: bloody_army_soldier_dead
+#      Dead:
+#        Base: bloody_army_soldier_dead
+#  - type: MobThresholds
+#    thresholds:
+#      0: Alive
+#      750: Dead
+#  - type: MeleeWeapon
+#    hidden: true
+#    soundHit:
+#        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+#    angle: 0
+#    animation: WeaponArcClaw
+#    damage:
+#      types:
+#        Slash: 35
+##Spawn Demons End
+#
+#- type: entity
+#  id: ADTNarsiFireballSpellbook
+#  name: fireball spellbook
+#  parent: BaseSpellbook
+#  components:
+#  - type: Sprite
+#    netsync: false
+#    sprite: Objects/Magic/spellbooks.rsi
+#    layers:
+#    - state: bookfireball
+#  - type: Spellbook
+#    worldSpells:
+#      ADTFireball: -1
+#
+#- type: worldTargetAction
+#  id: ADTFireball
+#  name: action-name-spell-fireball
+#  description: action-description-spell-fireball
+#  useDelay: 0.1
+#  itemIconStyle: BigAction
+#  checkCanAccess: false
+#  range: 60
+#  sound: !type:SoundPathSpecifier
+#    path: /Audio/Magic/fireball.ogg
+#  icon:
+#    sprite: Objects/Magic/magicactions.rsi
+#    state: fireball
+#  serverEvent: !type:ProjectileSpellEvent
+#    prototype: ProjectileFireball
+#    posData: !type:TargetCasterPos
+#    speech: action-speech-spell-fireball

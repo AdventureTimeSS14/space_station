@@ -481,14 +481,14 @@
       - MagazineBoxMagnumRubber
       - MagazineBoxRifleRubber
       - MagazineBoxLightRifleRubber
-      - CartridgePistolHighVelocity
-      - CartridgeMagnumHighVelocity
-      - CartridgeLightRifleHighVelocity
-      - CartridgeRifleHighVelocity
-      - MagazineBoxPistolHighVelocity
-      - MagazineBoxMagnumHighVelocity
-      - MagazineBoxLightRifleHighVelocity
-      - MagazineBoxRifleHighVelocity
+      #- CartridgePistolHighVelocity
+      #- CartridgeMagnumHighVelocity
+      #- CartridgeLightRifleHighVelocity
+      #- CartridgeRifleHighVelocity
+      #- MagazineBoxPistolHighVelocity
+      #- MagazineBoxMagnumHighVelocity
+      #- MagazineBoxLightRifleHighVelocity
+      #- MagazineBoxRifleHighVelocity
       - ShellShotgunIncendiary
       - CartridgePistolIncendiary
       - CartridgeMagnumIncendiary
@@ -583,7 +583,7 @@
     staticRecipes:
       - Brutepack
       - Ointment
-      - HandLabeler
+      #- HandLabeler
       - Defibrillator
       - HandheldHealthAnalyzer
       - ClothingHandsGlovesLatex
