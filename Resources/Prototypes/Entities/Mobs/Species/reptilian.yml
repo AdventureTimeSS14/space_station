@@ -27,6 +27,7 @@
   #- type: LizardBlood
   - type: Speech
     speechSounds: Lizard
+    speechVerb: Reptilian
   - type: Vocal
     sounds:
       Male: UnisexReptilian
