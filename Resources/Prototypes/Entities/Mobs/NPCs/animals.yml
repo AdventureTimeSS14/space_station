@@ -1669,7 +1669,7 @@
       damage:
         types:
           Piercing: 8
-          Poison: 6
+          Poison: 1
     - type: FootstepModifier
       footstepSoundCollection:
         collection: FootstepClownFast
