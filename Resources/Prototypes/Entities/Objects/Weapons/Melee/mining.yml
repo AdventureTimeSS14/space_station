@@ -32,11 +32,13 @@
   - type: AmmoCounter
   - type: UseDelayOnShoot
   - type: UseDelay
-    delay: 0.9
+    delay: 2
   - type: LeechOnMarker
     leech:
       groups:
-        Brute: -10
+        Brute: -20
+        Burn: -10
+        Airloss: -10 
   - type: Gun
     soundGunshot: /Audio/Weapons/plasma_cutter.ogg
     fireRate: 1
@@ -52,8 +54,8 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 10
-        Slash: 5
+        Blunt: 15
+        Slash: 10
   - type: Wieldable
   - type: MeleeRequiresWield
   - type: GunRequiresWield
