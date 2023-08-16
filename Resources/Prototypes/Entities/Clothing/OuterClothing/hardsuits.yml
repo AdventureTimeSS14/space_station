@@ -430,31 +430,33 @@
   parent: ClothingOuterHardsuitBase
   id: BlueShieldsuit
   name: Скафандр Синего Щита
-  description: Скафандр предназначенный для защитника командования.
+  description: Скафандр предназначенный для защитника командования. Облегченная версия, дающая мобильность в обмен на уровень защиты.
   components:
   - type: Sprite
     sprite: ADT/Clothing/OuterClothing/Hardsuits/blueshield_hardsuit.rsi
   - type: Clothing
     sprite: ADT/Clothing/OuterClothing/Hardsuits/blueshield_hardsuit.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
+    walkModifier: 1
+    sprintModifier: 1
   - type: PressureProtection
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 10000
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.60
-        Slash: 0.60
-        Piercing: 0.60
-        Heat: 0.80
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.7
         Radiation: 0.8
         Caustic: 0.85
   - type: ExplosionResistance
-    damageCoefficient: 0.2
+    damageCoefficient: 0.6
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetBlueShield
+  - type: Item
+    size: 80
 
 #Cybersun Juggernaut Hardsuit
 - type: entity

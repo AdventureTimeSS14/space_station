@@ -34,7 +34,8 @@
   equipment:
     head: ClothingHeadHatBeretWarden
     eyes: ClothingEyesGlassesSecurity
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetCentCom
+    mask: ClothingMaskGasSecurity
     jumpsuit: ClothingUniformJumpsuitNanotrasen
     back: ClothingBackpackADTBlueShieldOfficerFilled
     shoes: ClothingShoesBootsCombatFilled
@@ -43,6 +44,12 @@
     gloves: ClothingHandsGlovesCombat
     id: ADTBlueShieldOfficerPDA
     neck: ClothingNeckCloakNanotrasen
+    pocket1: WeaponDisabler
+    pocket2: WeaponPulsePistol
+    suitstorage: WeaponSubMachineGunDrozdRubber
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
 - type: entity
   id: SpawnADTBlueShieldOfficer

@@ -8,19 +8,21 @@
         - id: MedkitBruteFilled
         - id: Zipties
         - id: Zipties
-        - id: Zipties
-        - id: WeaponDisabler
+        #- id: Zipties
+        #- id: WeaponDisabler
         - id: Stunbaton
         - id: HandheldCrewMonitor
         - id: MagazinePistolSubMachineGun
         - id: MagazinePistolSubMachineGun
         - id: MagazinePistolSubMachineGunRubber
         - id: MagazinePistolSubMachineGunRubber
-        - id: WeaponSubMachineGunDrozdRubber
-        - id: WeaponPulsePistol
-        - id: GrenadeFlashBang
-        - id: GrenadeFlashBang
-        - id: GrenadeFlashBang
-        - id: BoxSurvivalSecurity
+        #- id: WeaponSubMachineGunDrozdRubber
+        #- id: WeaponPulsePistol
+        #- id: GrenadeFlashBang
+        #- id: GrenadeFlashBang
+        #- id: GrenadeFlashBang
+        #- id: BoxSurvivalSecurity
         #- id: BlueShieldBox
+        - id: BlueShieldsuit
+        - id: OxygenTankFilled
 
