@@ -32,14 +32,14 @@
 - type: startingGear
   id: ADTBlueShieldOfficerGear
   equipment:
-    head: ADTClothingHeadHatBeretBlueshield
+    head: ClothingHeadHatBeretWarden
     eyes: ClothingEyesGlassesSecurity
     ears: ClothingHeadsetCentCom
     mask: ClothingMaskGasSecurity
     jumpsuit: ClothingUniformJumpsuitNanotrasen
     back: ClothingBackpackADTBlueShieldOfficerFilled
     shoes: ClothingShoesBootsCombatFilled
-    outerClothing: ADTClothingBlueshieldArmor
+    outerClothing: ClothingOuterArmorBulletproof
     belt: ClothingBeltMilitaryWebbingBlueShieldFilled
     gloves: ClothingHandsGlovesCombat
     id: ADTBlueShieldOfficerPDA
@@ -47,9 +47,9 @@
     pocket1: WeaponDisabler
     pocket2: WeaponPulsePistol
     suitstorage: WeaponSubMachineGunDrozdRubber
-    underwearb: ADTClothingUnderwearBottomBoxersBlueshield # Sirena-Underwear
-  underweart: ADTClothingUnderwearTopBraBlueshield # Sirena-Underwear
-  underwearb: ADTClothingUnderwearBottomPantiesBlueshield # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
 - type: entity
   id: SpawnADTBlueShieldOfficer
