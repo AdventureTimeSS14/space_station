@@ -174,3 +174,6 @@
         amount: 1
       - id: OmnizineChemistryBottle
       - id: MedkitCombatFilled
+      - id: SpaceMedipen
+      - id: EmergencyMedipen
+  
