@@ -35,6 +35,6 @@ gun-chamber-bolt-ammo = Затвор заблокирован
 gun-chamber-bolt = Затвор [color={$color}]{$bolt}[/color].
 gun-chamber-bolt-closed = Затвор заблокирован
 gun-chamber-bolt-opened = Затвор разблокирован
-gun-chamber-bolt-close = Заблокировать затвор
-gun-chamber-bolt-open = Разблокировать затвор
+gun-chamber-bolt-close = Разблокировать затвор
+gun-chamber-bolt-open = Заблокировать затвор
 gun-chamber-rack = Стойка
