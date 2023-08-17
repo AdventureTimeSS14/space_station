@@ -385,6 +385,15 @@
             "name": "ripley-g-open"
         },
         {
+            "name": "ripley-open-alt"
+        },
+        {
+            "name": "ripley-alt"
+        },
+        {
+            "name": "ripley-broken-alt"
+        },
+        {
             "name": "ripley-g-full",
             "directions": 4
         },
@@ -482,17 +491,6 @@
         {
             "name": "vim-open",
             "directions": 4
-        },
-        {
-            "name": "ripley-alt",
-            "directions": 4
-        },
-        {
-            "name": "ripley-broken-alt"  
-        },
-        {
-            "name": "ripley-open-alt"
         }
-
     ]
 }
