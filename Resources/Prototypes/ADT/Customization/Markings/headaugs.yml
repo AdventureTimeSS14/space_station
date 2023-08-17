@@ -2,7 +2,7 @@
   id: Malstrem
   bodyPart: Eyes
   markingCategory: Head
-  sponsorOnly: true
+  sponsorOnly: False
   coloring:
     default:
       type:
@@ -29,7 +29,7 @@
   id: Terminator
   bodyPart: Eyes
   markingCategory: Head
-  sponsorOnly: true
+  sponsorOnly: False
   coloring:
     default:
       type:
