@@ -359,14 +359,6 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: braid
 - type: marking
-  id: ADTVulpkaninBraided
-  bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [VulpkaninSpecies]
-  sprites:
-    - sprite: Mobs/Customization/human_hair.rsi
-      state: braided
-- type: marking
   id: ADTVulpkaninBraidfront
   bodyPart: Hair
   markingCategory: Hair
@@ -406,14 +398,6 @@
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: braidtail
-- type: marking
-  id: ADTVulpkaninBun
-  bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [VulpkaninSpecies]
-  sprites:
-    - sprite: Mobs/Customization/human_hair.rsi
-      state: bun
 - type: marking
   id: ADTVulpkaninBunhead2
   bodyPart: Hair
