@@ -28,7 +28,7 @@
       Unsexed: FemaleHuman
   - type: Damageable
     damageContainer: Biological
-    damageModifierSet: Scale
+    damageModifierSet: Demon
   - type: MeleeWeapon
     hidden: true
     soundHit:
@@ -50,7 +50,7 @@
       types:
         Heat : 0.3 #per second, scales with temperature & other constants
   - type: MovementSpeedModifier
-    baseWalkSpeed : 2.7
+    baseWalkSpeed : 2.5
     baseSprintSpeed : 4.5
   - type: Perishable
 
