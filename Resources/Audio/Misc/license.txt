@@ -5,3 +5,6 @@ siren.ogg taken from https://github.com/ParadiseSS13/Paradise/blob/master/sound/
 redalert.ogg was taken from: https://github.com/Skyrat-SS13/Skyrat13/commit/2d4f2d1b489590b559e4073f41b126cef56f4c50
 
 bluealert.ogg was taken from: https://github.com/Skyrat-SS13/Skyrat13/commit/2d4f2d1b489590b559e4073f41b126cef56f4c50
+
+tension_session.ogg made by is created by
+Doomer. Taken from https://www.youtube.com/watch?v=6RS0DlO9kqs&list=PLMI3J0WpdGTGPgYdRqiQfiXauUbNkwR6Z&index=5
