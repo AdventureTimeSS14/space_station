@@ -18,7 +18,7 @@
       state: vulpkanin_m
     - type: Damageable
       damageContainer: Biological
-      damageModifierSet: Scale
+      damageModifierSet: Fur
     - type: MeleeWeapon
       hidden: true
       soundHit:
@@ -40,8 +40,8 @@
         types:
           Heat : 0.1 #per second, scales with temperature & other constants
     - type: MovementSpeedModifier
-      baseWalkSpeed : 3.0
-      baseSprintSpeed : 4.9
+      baseWalkSpeed : 2.7
+      baseSprintSpeed : 4.6
     - type: Perishable
 
 - type: entity

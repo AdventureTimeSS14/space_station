@@ -44,7 +44,7 @@
       Unsexed: UnisexReptilian
   - type: Damageable
     damageContainer: Biological
-    damageModifierSet: Scale
+    damageModifierSet: Kobalt
   - type: MeleeWeapon
     hidden: true
     soundHit:

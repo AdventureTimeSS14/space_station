@@ -176,4 +176,8 @@
       - id: MedkitCombatFilled
       - id: SpaceMedipen
       - id: EmergencyMedipen
+  - type: Sprite
+    sprite: ADT/Clothing/Belt/blueshield_webbing.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Belt/blueshield_webbing.rsi
   

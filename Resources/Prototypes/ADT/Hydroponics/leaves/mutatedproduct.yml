@@ -1,0 +1,20 @@
+- type: entity
+  name: cannabis white leaves
+  parent: ProduceBase
+  id: ADTLeavesCannabisWhite
+  description: "Recently legalized in most galaxies. This one have omnizine inside"
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Hydroponics/cannabiswhite.rsi
+  - type: Produce
+    seedId: ADTcannabiswhite
+  - type: Food
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: THC
+          Quantity: 5
+        - ReagentId: Omnizine
+          Quantity: 10
+  

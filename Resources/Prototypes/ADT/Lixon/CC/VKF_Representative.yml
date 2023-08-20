@@ -3,17 +3,17 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitCentcomOfficer
     back: ClothingBackpackFilled_VKF_R
-    shoes: ClothingShoesBootCombatFilled
+    #shoes: ClothingShoesBootCombatFilled - портатип не найден
     mask: ClothingMaskGasCentcom
     outerClothing: ClothingOuterVestWeb
     eyes: ClothingEyesGlassesSecurity
-    head: ClothingHeadHatBeretHos
+    #head: ClothingHeadHatBeretHos - портатип не найден
     id: CentcomPDA
     gloves: ClothingHandsGlovesColorWhite
     ears: ClothingHeadsetCentCom
-    belt: SecurityFilled
+    #belt: SecurityFilled - портатип не найден
     pocket1: FlashlightSeclite
-    pocket2: MicroBombImpanter
+    #pocket2: MicroBombImpanter  - портатип не найден
 
 - type: entity
   parent: ClothingBackpack

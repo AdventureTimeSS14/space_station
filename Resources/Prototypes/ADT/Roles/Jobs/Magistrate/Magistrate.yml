@@ -9,7 +9,7 @@
       time: 600000
     # - !type:DepartmentTimeRequirement
     #   department: Sponsor
-    #   time: 10  
+    #   time: 10
   startingGear: MagistratGear
   icon: "JobIconMagistrat"
   requireAdminNotify: true
@@ -29,14 +29,14 @@
     jumpsuit: ClothingUniformJumpsuitLawyerBlack
     back: ClothingBackpack
     shoes: ClothingShoesBootsLaceup
-    mask:
+    #mask: Ну что за косипор оставляет пустуе значения?
     outerClothing: ClothingOuterRobesJudge
     eyes: ClothingEyesGlassesSunglasses
     head: ClothingHeadHatPwig
     id: MagistratPDA
-    gloves:
+    #gloves:
     ears: ClothingHeadsetMagistrat
-    belt:
+    #belt:
     neck: ClothingNeckLawyerbadge
     pocket1: RubberStampMagistrat
     pocket2: ADTtelescopicBaton

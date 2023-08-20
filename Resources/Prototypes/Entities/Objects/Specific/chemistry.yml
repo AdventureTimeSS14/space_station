@@ -437,4 +437,4 @@
     whitelist:
       components:
       - Pill
-  - type: Dumpable
+
