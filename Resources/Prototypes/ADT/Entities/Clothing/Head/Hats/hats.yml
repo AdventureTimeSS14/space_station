@@ -66,3 +66,18 @@
     sprite: ADT/Clothing/Head/Hats/marineberet.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/marineberet.rsi
+
+#Pyotr
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsPyotrCap
+  name: Pyotr`s cap
+  description: Standart officer`s cap from Pyotr Shahin`s homeworld
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/pyotr_cap.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/pyotr_cap.rsi

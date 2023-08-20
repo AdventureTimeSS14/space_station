@@ -5,3 +5,7 @@ ent-ADTClothingNeckKnightCloak = Плащ рыцаря
 ent-ADTClothingNeckJeton = Армейский Жетон
     .desc = На жетоне могла быть указан ваше Имя и Фамилия
     .suffix = { "" }
+
+ent-ADTClothingNeckPyotrCloak = плащ Петра Шахина
+    .desc = Темно-зеленый плащ, расшитый золотом
+    .suffix = { "" }    
