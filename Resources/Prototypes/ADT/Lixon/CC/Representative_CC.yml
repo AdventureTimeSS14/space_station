@@ -4,16 +4,14 @@
     jumpsuit: ClothingUniformJumpsuitCentcomOfficer
     back: ClothingBackpackFilled_CC_R
     shoes: ClothingShoesBootsLaceup
-    mask: 
     outerClothing: ClothingOuterVest
     eyes: ClothingEyesGlassesSunglasses
     head: ClothingHeadHatBeretCentcomNaval
     id: CentcomPDA
     gloves: ClothingHandsGlovesColorGray
     ears: ClothingHeadsetCentCom
-    belt: 
-    pocket2: MicroBombImpanter
-    
+    #pocket2: MicroBombImpanter - Протатип не найден
+
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackFilled_CC_R

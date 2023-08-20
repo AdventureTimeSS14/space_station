@@ -163,6 +163,9 @@
   parent: BaseBullet
   noSpawn: true
   components:
+  - type: Reflective
+    reflective:
+    - Energy
   - type: FlyBySound
     sound:
       collection: EnergyMiss
@@ -195,8 +198,9 @@
     soundHit:
       path: "/Audio/Weapons/Guns/Hits/taser_hit.ogg"
     soundForce: true
-  - type: StaminaDamageOnCollide
-    damage: 50
+  - type: StunOnCollide
+    stunAmount: 1
+    knockdownAmount: 1
 
 - type: entity
   name : disabler bolt
@@ -366,8 +370,8 @@
         - MobState
     damage:
       types:
-        Blunt: 20
-        Slash: 5
+        Blunt: 40
+        Slash: 10
   - type: Projectile
     impactEffect: BulletImpactEffectKinetic
     damage:
@@ -388,7 +392,7 @@
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
     layers:
-      - state: magicm
+      - state: magicm_red
         shader: unshaded
   - type: Ammo
     muzzleFlash: null
@@ -429,6 +433,10 @@
   name: epsilon particles
   noSpawn: true
   components:
+  - type: Sprite
+    layers:
+      - state: magicm_cyan
+        shader: unshaded
   - type: AnomalousParticle
     particleType: Epsilon
 
@@ -450,9 +458,13 @@
   name: zeta particles
   noSpawn: true
   components:
+  - type: Sprite
+    layers:
+      - state: magicm_yellow
+        shader: unshaded
   - type: AnomalousParticle
     particleType: Zeta
-
+        
 - type: entity
   parent: AnomalousParticleZeta
   id: AnomalousParticleZetaStrong
@@ -468,6 +480,7 @@
 - type: entity
   parent: AnomalousParticleDelta
   id: AnomalousParticleOmegaStrong
+  name: omega particles
   noSpawn: true
   components:
   - type: Sprite

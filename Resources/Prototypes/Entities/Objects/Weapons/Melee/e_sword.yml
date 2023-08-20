@@ -7,9 +7,7 @@
   - type: EnergySword
     litDamageBonus:
         types:
-            Slash: 15
-            Heat: 15
-            Structural: 4
+            Slash: 30
             Blunt: -4.5
     litDisarmMalus: 0.6
   - type: Sprite
@@ -65,8 +63,7 @@
     secret: true
     litDamageBonus:
         types:
-            Slash: 9
-            Heat: 9
+            Slash: 20
             Blunt: -1
     litDisarmMalus: 0.4
     activateSound: !type:SoundPathSpecifier
@@ -145,8 +142,7 @@
     secret: true
     litDamageBonus:
         types:
-            Slash: 7.5
-            Heat: 7.5
+            Slash: 16
             Blunt: -1
     litDisarmMalus: 0.6
   - type: Sprite
@@ -173,9 +169,7 @@
   - type: EnergySword
     litDamageBonus:
         types:
-            Slash: 9
-            Heat: 9
-            Structural: 20
+            Slash: 24
             Blunt: -4.5
     litDisarmMalus: 0.7
   - type: MeleeWeapon

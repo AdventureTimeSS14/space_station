@@ -1,0 +1,28 @@
+- type: entity
+  name: Pyotr's sabre
+  parent: BaseItem
+  id: ADTPyotrSabre
+  description: A ceremonial weapon belonging to the Pyotr Shahin. Heavier than stadart captain`s sabre.
+  components:
+  - type: Sharp
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Melee/pyotr_sabre.rsi
+    state: icon
+  - type: MeleeWeapon
+    attackRate: 1.2
+    damage:
+      types:
+        Slash: 22
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+  - type: Reflect
+    enabled: true
+    reflectProb: .5
+    spread: 90        
+  - type: Item
+    size: 15
+    sprite: ADT/Objects/Weapons/Melee/pyotr_sabre.rsi
+  - type: DisarmMalus
+  - type: Tag
+    tags:
+    - CaptainSabre

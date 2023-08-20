@@ -21,6 +21,9 @@
             "directions": 4
         },
         {
+            "name": "bolt-open"
+        },
+        {
             "name": "inhand-right",
             "directions": 4
         },
