@@ -113,13 +113,13 @@
     - type: Sprite
       sprite: Mobs/Aliens/Carps/holo.rsi
     - type: Physics
-    - type: Fixtures
     - type: MobThresholds
       thresholds:
         0: Alive
         50: Dead
     - type: Stamina
       critThreshold: 100
+    - type: Fixtures
       fixtures:
         fix1:
           shape:

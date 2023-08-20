@@ -4,7 +4,7 @@
   noun: seeds-noun-seeds
   displayName: seeds-cannabiswhite-display-name
   plantRsi: ADT/Objects/Specific/Hydroponics/cannabiswhite.rsi
-  packetPrototype: CannabisWhiteSeeds
+  packetPrototype: ADTcannabiswhiteSeeds
   productPrototypes:
     - ADTLeavesCannabisWhite
   harvestRepeat: Repeat
