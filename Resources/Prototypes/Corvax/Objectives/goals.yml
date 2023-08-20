@@ -21,3 +21,31 @@
 - type: stationGoal
   id: StationGoalZoo
   text: station-goal-zoo
+
+- type: stationGoal
+  id: stationgoalbiggerdorms
+  text:   station-goal-biggerdorms
+
+- type: stationGoal
+  id: stationgoalfight
+  text:   station-goal-fight
+
+- type: stationGoal
+  id: stationgoalwatchingplace
+  text:   station-goal-wathcingplace
+
+- type: stationGoal
+  id: stationgoalborntokill
+  text:   station-goal-borntokill
+
+- type: stationGoal
+  id: stationgoalnuar
+  text:   station-goal-nuar
+
+- type: stationGoal
+  id: stationgoaltheatre
+  text:   station-goal-theatre
+
+- type: stationGoal
+  id: stationgoalchill
+  text:   station-goal-chill

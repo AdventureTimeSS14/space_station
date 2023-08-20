@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: BlastDoor
   parent: BaseShutter
   name: blast door
@@ -19,7 +19,7 @@
     canPry: false
     crushDamage:
       types:
-        Blunt: 25 # yowch
+        Blunt: 100 # yowch
   - type: Occluder
   - type: Appearance
   - type: RadiationBlocker

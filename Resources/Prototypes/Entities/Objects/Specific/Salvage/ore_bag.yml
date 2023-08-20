@@ -15,10 +15,11 @@
   - type: Item
     size: 176
   - type: Storage
-    capacity: 240
+    capacity: 300
     quickInsert: true
     areaInsert: true
     whitelist:
       tags:
         - Ore
+        - ArtifactFragment
   - type: Dumpable

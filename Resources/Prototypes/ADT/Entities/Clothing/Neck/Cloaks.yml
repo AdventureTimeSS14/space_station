@@ -15,3 +15,13 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Neck/Cloaks/knight_cloak.rsi
+
+#Pyotr
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckPyotrCloak
+  name: Pyotr's cloak
+  description: Dark green with gold thread cloak.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/Cloaks/pyotr_cloak.rsi

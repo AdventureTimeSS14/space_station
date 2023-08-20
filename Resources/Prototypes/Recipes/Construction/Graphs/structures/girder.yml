@@ -1,4 +1,4 @@
-﻿- type: constructionGraph
+- type: constructionGraph
   id: Girder
   start: start
   graph:
@@ -341,6 +341,32 @@
                   data: 0
             - tool: Cutting
               doAfter: 1
+
+    - node: reinforcedGirder
+      entity: ReinforcedGirder
+      edges:
+        - to: shuttleWall
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored { }
+          steps:
+            - material: Silver
+              amount: 4
+              doAfter: 1
+
+    - node: shuttleWall
+      entity: WallShuttle
+      edges:
+        - to: reinforcedGirder
+          completed:
+            - !type:GivePrototype
+              prototype: IngotSilver1
+              amount: 4
+          steps:
+            - tool: Welding
+              doAfter: 5
 
     - node: wallrust
       entity: WallSolidRust

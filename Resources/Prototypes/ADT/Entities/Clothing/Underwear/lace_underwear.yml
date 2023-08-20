@@ -1,0 +1,86 @@
+#Bottom
+
+- type: entity
+  parent: ClothingUnderwearBottomBase
+  id: ADTClothingUnderwearRedLacePanties
+  name: red lace panties
+  description: Red, lacy and, probably, very expensive.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Under/red_panties.rsi
+
+- type: entity
+  parent: ClothingUnderwearBottomBase
+  id: ADTClothingUnderwearBlackLacePanties
+  name: black lace panties
+  description: Black, lacy and, probably, very expensive.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Under/black_panties.rsi
+
+- type: entity
+  parent: ClothingUnderwearBottomBase
+  id: ADTClothingUnderwearWhiteComfyPanties
+  name: white comfy panties
+  description: White, very comfortable and with a pink bow.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Under/whitecomfy_panties.rsi
+
+#Top
+
+- type: entity
+  parent: ClothingUnderwearTopBase
+  id: ADTClothingUnderwearTopLaceBraRed
+  name: red lace bra
+  description: Red, lacy and, probably, very expensive.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Under/red_bra.rsi
+
+- type: entity
+  parent: ClothingUnderwearTopBase
+  id: ADTClothingUnderwearTopLaceBraBlack
+  name: black lace bra
+  description: Black, lacy and, probably, very expensive.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Under/black_bra.rsi
+
+- type: entity
+  parent: ClothingUnderwearTopBase
+  id: ADTClothingUnderwearTopComfyWhiteBra
+  name: comfy white bra
+  description: White, very comfortable and with a pink bow
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Under/whitecomfy_bra.rsi
+
+#Stockings
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearRedStockings
+  name: red stockings
+  description: Red lace stockings. Not for a standart shift
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Under/red_stockings.rsi
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearBlackStockings
+  name: black stockings
+  description: Black lace stockings. Not for a standart shift
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Under/black_stockings.rsi
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearWhiteStockings
+  name: white stockings
+  description: White lace stockings. With a pink bow
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Under/white_stockings.rsi
