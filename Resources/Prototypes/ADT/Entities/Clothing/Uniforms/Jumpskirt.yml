@@ -189,4 +189,14 @@
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/new_barman_skirt.rsi
 
-
+#Pyotr
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformRitaBlackDress
+  name: Rita`s black dress
+  description: Black dress own by Rita Engler with a very risky cut
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/rita_black_dress.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/rita_black_dress.rsi

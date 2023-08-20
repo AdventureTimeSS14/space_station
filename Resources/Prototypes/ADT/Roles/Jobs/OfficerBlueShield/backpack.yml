@@ -25,4 +25,6 @@
         #- id: BlueShieldBox
         - id: BlueShieldsuit
         - id: OxygenTankFilled
+    - type: Sprite
+      sprite: ADT/Clothing/Back/blueshield_backpack.rsi
 

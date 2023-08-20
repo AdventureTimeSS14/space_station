@@ -46,6 +46,27 @@
               amount: 2
               doAfter: 3
 
+        - to: shuttlewindow
+          steps:
+            - material: Silver
+              amount: 2
+              doAfter: 3
+
+    - node: shuttlewindow
+      entity: ShuttleWindow
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: IngotSilver1
+              amount: 2
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 2
+
     - node: window
       entity: Window
       edges:
