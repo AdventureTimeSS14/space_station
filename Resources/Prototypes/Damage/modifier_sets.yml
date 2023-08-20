@@ -90,6 +90,7 @@
     Heat: 2.0
   flatReductions:
     Blunt: 5
+    Slash: 5
 
 - type: damageModifierSet
   id: Web # Very flammable, can be easily hacked and slashed, but shooting or hitting it is another story.
@@ -127,7 +128,7 @@
     Blunt: 1.1
     Slash: 0.9
     Cold: 1.5
-    Heat: 0.9
+    Heat: 0.8
     Poison: 0.9
 
 - type: damageModifierSet
@@ -151,8 +152,8 @@
     Piercing: 1.15
     Slash: 1.15
     Cold: 0.7
-    Heat: 1.3
-    Poison: 1.1
+    Heat: 1.5
+    Poison: 1.5
 
 - type: damageModifierSet
   id: Zombie #Blunt resistant and immune to biological threats, but can be hacked apart and burned
