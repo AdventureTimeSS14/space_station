@@ -86,4 +86,22 @@
       - id: ClothingMaskSterile
         amount: 2
 
+#ADT
+- type: entity
+  id: CrateSecurityHardsuit
+  parent: CrateSecgear
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitSecurity
+        amount: 2
+
+- type: entity
+  id: CrateSecurityUSSPjuggernaut
+  parent: CrateSecgear
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterArmorUSSPjuggernaut
+      - id: ADTClothingHeadUSSPjuggernautHelmetArmored
 # Cosmetic Crates

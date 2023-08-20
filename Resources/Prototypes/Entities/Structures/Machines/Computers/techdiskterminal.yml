@@ -43,3 +43,9 @@
   weights:
     2: 19
     3: 1
+
+- type: weightedRandom
+  id: SuperRareTechDiskTierWeights
+  weights:
+    2: 4
+    3: 1
