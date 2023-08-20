@@ -12,3 +12,98 @@
   id: ADTCocoaDrinkFlavor
   flavorType: Complex
   description: flavor-complex-ADTCocoaDrink
+
+- type: flavor
+  id: ADTSummerShadeFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTSummerShadeFlavor
+
+- type: flavor
+  id: ADTWinterSunFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTWinterSunFlavor
+
+- type: flavor
+  id: ADTHungoverAngelFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTHungoverAngelFlavor
+
+- type: flavor
+  id: ADTCitrusBalanceFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTCitrusBalanceFlavor
+
+- type: flavor
+  id: ADTDobryiDrinkFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTDobryiDrinkFlavor
+
+- type: flavor
+  id: ADTMilkEclipseFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTMilkEclipseFlavor
+
+- type: flavor
+  id: ADTArcticExplosionFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTArcticExplosionFlavor
+
+- type: flavor
+  id: ADTSugarKnightFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTSugarKnightFlavor
+
+- type: flavor
+  id: ADTGrapeLadyFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTGrapeLadyFlavor
+
+- type: flavor
+  id: ADTSaturdayBaronFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTSaturdayBaronFlavor
+
+- type: flavor
+  id: ADTArcticLatteFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTArcticLatteFlavor
+
+- type: flavor
+  id: ADTSpecialTeaOolongFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTSpecialTeaOolongFlavor
+
+- type: flavor
+  id: ADTAzureBlueFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTAzureBlueFlavor
+
+- type: flavor
+  id: ADTPenetrationDrinkFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTPenetrationDrinkFlavor
+
+- type: flavor
+  id: ADTEclipsedEclispeFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTEclipsedEclispeFlavor
+
+- type: flavor
+  id: ADTSpaceBushFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTSpaceBushFlavor
+
+- type: flavor
+  id: ADTBusinessConversationFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTBusinessConversationFlavor
+
+- type: flavor
+  id: ADTBuckwheatSolidsFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTBuckwheatSolidsFlavor
+
+- type: flavor
+  id: ADTBuckwheat
+  flavorType: Complex
+  description: flavor-complex-ADTBuckwheat
