@@ -82,8 +82,21 @@
   id: EvaKit
   icon:
     sprite: Clothing/Head/Helmets/eva.rsi
-    state: icon
+    state: icon   
   product: CrateEvaKit
   cost: 5000
   category: Engineering
   group: market
+
+#ADT
+- type: cargoProduct
+  id: EngineeringVoidJetpack
+  icon:
+    sprite: Objects/Tanks/Jetpacks/void.rsi
+    state: icon
+  product: CrateEngineeringVoidJetpack
+  cost: 8000
+  category: Engineering
+  group: market
+
+

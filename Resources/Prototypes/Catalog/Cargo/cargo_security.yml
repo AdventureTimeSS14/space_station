@@ -67,3 +67,34 @@
   cost: 800
   category: Security
   group: market
+
+#ADT
+- type: cargoProduct
+  id: SecurityBrigMedLocker
+  icon:
+    sprite: Structures/Storage/closet.rsi
+    state: brigmedlocked
+  product: LockerBrigmedic
+  cost: 2000
+  category: Security
+  group: market
+
+- type: cargoProduct
+  id: SecurityHardsuit
+  icon:
+    sprite: Clothing/OuterClothing/Hardsuits/security.rsi
+    state: icon
+  product: CrateSecurityHardsuit
+  cost: 5000
+  category: Security
+  group: market
+
+- type: cargoProduct
+  id: SecurityUSSPjuggernaut
+  icon:
+    sprite: ADT/Clothing/OuterClothing/Armor/usspjuggernaut.rsi
+    state: icon
+  product: CrateSecurityUSSPjuggernaut
+  cost: 12000
+  category: Security
+  group: market

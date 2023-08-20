@@ -2,7 +2,7 @@
   parent: ClothingOuterHardsuitBase
   id: ADTSpaceMarinne
   name: berserker hardsuit
-  description: Repent of your sins.
+  description: Technology from the dark age.
   components:
   - type: Sprite
     sprite: ADT/Clothing/OuterClothing/Hardsuits/marinne.rsi
@@ -17,13 +17,13 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.2 #best armor in the game
-        Slash: 0.2
-        Piercing: 0.15 #лучшая броня имеет 0.2. Имбааа!
-        Heat: 0.2
-        Radiation: 0.2
+        Blunt: 0.5 
+        Slash: 0.5
+        Piercing: 0.5 
+        Heat: 0.5
+        Radiation: 0.5
   - type: ExplosionResistance
-    damageCoefficient: 0.2
+    damageCoefficient: 0.8
   - type: ToggleableClothing
     clothingPrototype: ADTSpaceMarinneHead
 
@@ -43,3 +43,10 @@
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8

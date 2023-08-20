@@ -1,0 +1,17 @@
+- type: entity
+  id: CrateScienceTopDisk
+  parent: CrateScienceSecure
+  components:
+  - type: StorageFill
+    contents:
+      - id: TechnologyDiskSuperRare
+        amount: 4
+
+- type: entity
+  id: CrateBerserk
+  parent: LavalendChest
+  components:
+  - type: StorageFill
+    contents:
+      - id: ADTSpaceMarinne
+

@@ -16,8 +16,8 @@ public sealed class SalvageTimeMod : IPrototype, ISalvageMod
     public float Cost { get; }
 
     [DataField("minDuration")]
-    public int MinDuration = 630;
+    public int MinDuration = 700;
 
     [DataField("maxDuration")]
-    public int MaxDuration = 570;
+    public int MaxDuration = 640;
 }

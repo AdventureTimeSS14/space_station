@@ -127,3 +127,13 @@
         amount: 2
       - id: ClothingOuterHardsuitEVA
         amount: 2
+
+#ADT
+- type: entity
+  id: CrateEngineeringVoidJetpack
+  parent: CrateGenericSteel
+  components:
+  - type: StorageFill
+    contents:
+      - id: JetpackVoid
+        amount: 2 
