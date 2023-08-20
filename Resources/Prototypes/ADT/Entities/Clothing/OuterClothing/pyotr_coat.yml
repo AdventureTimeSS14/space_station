@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ADTClothingOuterCoatPyotrCoat
+  name: Pyotr`s Coat
+  description: This dark coat is heavier than look
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Coats/pyotr_coat.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Coats/pyotr_coat.rsi
+  - type: StorageFill
+    contents:
+    - id: CigarGoldCase
+    - id: Lighter
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.7
+        Heat: 0.8

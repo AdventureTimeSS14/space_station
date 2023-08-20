@@ -126,3 +126,37 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/new_service_suit.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/new_service_suit.rsi
+
+#Pyotr
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformPyotrUniform
+  name: Pyotr`s uniform
+  description: Dark green uniform, own by Pyotr Shahin.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/pyotr_uniform.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/pyotr_uniform.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformPyotrJumpsuit
+  name: Pyotr`s jumpsuit
+  description: Dark green sweater, good for sitting in a cold bunker.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/pyotr_jumpsuit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/pyotr_jumpsuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformPyotrOfficialSuit
+  name: Pyotr`s official suit
+  description: Dark green jacket with white shirt, for social events.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/pyotr_officialsuit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/pyotr_officialsuit.rsi
