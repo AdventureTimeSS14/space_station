@@ -64,8 +64,7 @@
         path: /Audio/Effects/bite.ogg
       damage:
         types:
-          Piercing: 5
-          Slash: 10
+          Slash: 5
     - type: TypingIndicator
       proto: alien
     - type: NoSlip
@@ -115,6 +114,12 @@
       sprite: Mobs/Aliens/Carps/holo.rsi
     - type: Physics
     - type: Fixtures
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        50: Dead
+    - type: Stamina
+      critThreshold: 100
       fixtures:
         fix1:
           shape:

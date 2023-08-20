@@ -39,8 +39,8 @@
         Piercing: 0.2
         Caustic: 0.2
   - type: ClothingSpeedModifier
-    walkModifier: 0.83
-    sprintModifier: 0.83
+    walkModifier: 0.60
+    sprintModifier: 0.60
   - type: ExplosionResistance
     damageCoefficient: 0.65
   - type: GroupExamine
