@@ -3,10 +3,10 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitCentcomOfficerBlack
     back: ClothingBackpackFilled_CC_FO
-    shoes: ClothingShoesBootsCentcomBlack
+    #shoes: ClothingShoesBootsCentcomBlack - портатип не найден
     head: ClothingHeadCapCentcomBlack
     eyes: ClothingEyesGlassesSunglasses
-    gloves: ClothingHandsGlovesIhscombat
+    #gloves: ClothingHandsGlovesIhscombat - портатип не найден
     outerClothing: ClothingOuterArmorBulletproof
     id: CentcomPDA
     ears: ClothingHeadsetAltCentCom

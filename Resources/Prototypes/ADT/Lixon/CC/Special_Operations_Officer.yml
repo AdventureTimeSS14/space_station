@@ -10,7 +10,7 @@
     outerClothing: ClothingOuterVestKevlar
     id: CentcomPDA
     ears: ClothingHeadsetAltCentCom
-    belt: SecurityFilled
+    #belt: SecurityFilled - Портатип не нейден
     mask: ClothingMaskGasCentcom
     pocket1: MacroBombImplanter
 
