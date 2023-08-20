@@ -129,4 +129,3 @@
       components:
         - Produce
         - Seed
-  - type: Dumpable
