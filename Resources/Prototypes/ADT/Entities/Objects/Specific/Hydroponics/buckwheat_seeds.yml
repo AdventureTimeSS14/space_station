@@ -1,0 +1,9 @@
+- type: entity
+  parent: SeedBase
+  name: packet of buckwheat seed 
+  id: ADTBuckwheatSeeds
+  components:
+    - type: Seed
+      seedId: ADTbuckwheatplant
+    - type: Sprite
+      sprite: ADT/Objects/Specific/Hydroponics/buckwheat.rsi

@@ -1,0 +1,46 @@
+#- type: entity
+#  parent: ReagentContainerBase
+#  id: ADTIcePacket
+#  name: icepacket-name
+#  description: icepacket-desc
+#  components:
+#  - type: SolutionContainerManager
+#    solutions:
+#      food:
+#        maxVol: 50
+#        reagents:
+#        - ReagentId: Ice
+#          Quantity: 50
+#  - type: TrashOnEmpty
+#    solution: food
+#  - type: Sprite
+#    sprite: ADT/Objects/Consumable/Food/ice_pack.rsi
+#    layers:
+#      - state: fill-5
+#        map: ["enum.SolutionContainerLayers.Fill"]
+#        visible: true
+#      - state: icon
+#  - type: Icon
+#    state: icon
+#  - type: SolutionContainerVisuals
+#    maxFillLevels: 5
+#    fillBaseName: fill-
+
+- type: entity
+  parent: ReagentContainerBase
+  id: ADTIcePacket
+  name: ice-packet-name
+  description: ice packet-desc
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 50
+        reagents:
+        - ReagentId: Ice
+          Quantity: 50
+  - type: TrashOnEmpty
+    solution: food
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/ice_pack.rsi
+    state: icon

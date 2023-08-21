@@ -1,0 +1,21 @@
+- type: seed
+  id: ADTbuckwheatplant
+  name: seeds-buckwheat-name
+  noun: seeds-noun-seeds
+  displayName: seeds-buckwheat-display-name
+  plantRsi: ADT/Objects/Specific/Hydroponics/buckwheat.rsi
+  packetPrototype: ADTBuckwheatSeeds
+  productPrototypes:
+    - ADTBuckwheatFood
+  harvestRepeat: Repeat
+  lifespan: 55
+  maturation: 6
+  production: 9
+  yield: 3
+  potency: 10
+  idealLight: 6
+  chemicals:
+    ADTBuckwheatSolids:
+      Min: 2
+      Max: 10
+      PotencyDivisor: 10

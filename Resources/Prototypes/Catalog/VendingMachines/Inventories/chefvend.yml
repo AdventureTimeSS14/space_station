@@ -1,10 +1,12 @@
 - type: vendingMachineInventory
   id: ChefvendInventory
   startingInventory:
+    ADTBookNewRecipes: 2
     ReagentContainerFlour: 2
     ReagentContainerCornmeal: 2
     ReagentContainerSugar: 2
     ReagentContainerRice: 2
+    ADTReagentContainerBuckwheat: 2
     ADTReagentContainerCocoaSolid: 2
     FoodCondimentPacketSalt: 4
     FoodCondimentBottleEnzyme: 2
@@ -20,3 +22,4 @@
     FoodButter: 4
     FoodCheese: 1
     FoodMeat: 6
+    ADTFoodSausageRaw: 6

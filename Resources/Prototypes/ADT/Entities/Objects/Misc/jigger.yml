@@ -20,6 +20,10 @@
     solution: drink
   - type: SolutionTransfer
     canChangeTransferAmount: true
+    minTransferAmount: 1
+    maxTransferAmount: 5
+    transferAmount: 1
+    toggleState: 1 # draw
   - type: Spillable
     solution: drink
   - type: Sprite

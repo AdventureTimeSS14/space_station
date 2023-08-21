@@ -1,7 +1,7 @@
 - type: reaction
   id: ADTCocoaDrink
   reactants:
-    ADTCocoaSolids:
+    CocoaPowder:
       amount: 1
     Water:
       amount: 4

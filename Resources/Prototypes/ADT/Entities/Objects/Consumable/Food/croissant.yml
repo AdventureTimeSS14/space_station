@@ -1,0 +1,98 @@
+- type: entity
+  name: croissant-cream-name
+  parent: FoodBakedBase
+  id: ADTFoodCroissantCream
+  description: croissant-cream-desc
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/croissant.rsi
+    state: cream
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - creamy
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Vitamin
+          Quantity: 1
+
+- type: entity
+  name: croissant-choco-name
+  parent: FoodBakedBase
+  id: ADTFoodCroissantChocolate
+  description: croissant-choco-desc
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/croissant.rsi
+    state: chocolate
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - nutty
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 12
+        - ReagentId: Vitamin
+          Quantity: 1
+
+- type: entity
+  name: croissant-cheese-name
+  parent: FoodBakedBase
+  id: ADTFoodCroissantCheese
+  description: croissant-cheese-desc
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/croissant.rsi
+    state: cheese
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - cheesy
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 1
+
+- type: entity
+  name: hot-dog-name
+  parent: FoodInjectableBase
+  id: ADTFoodHotDog
+  description: hot-dog-desc
+  components:
+  - type: FlavorProfile
+    flavors:
+      - bun
+      - meaty
+      - spicy
+  - type: Food
+    transferAmount: 3
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/croissant.rsi
+    state: hotdog
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Vitamin
+          Quantity: 1
+        - ReagentId: Protein
+          Quantity: 3
+
+

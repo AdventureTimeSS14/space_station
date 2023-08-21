@@ -1,0 +1,77 @@
+- type: entity
+  name: buckwheat-kasha-name
+  parent: FoodBowlBase
+  id: ADTFoodBoiledBuckwheat
+  description: buckwheat-kasha-desc
+  components:
+  - type: FlavorProfile
+    flavors:
+      - ADTBuckwheat
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/buckwheat_kasha.rsi
+    layers:
+    - state: bowl
+    - state: buckwheat_kasha
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxvol: 12
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Protein
+          Quantity: 3
+
+- type: entity
+  name: buckwheat-egg-kasha-name
+  parent: FoodBowlBase
+  id: ADTFoodBoiledBuckwheatEgg
+  description: buckwheat-egg-kasha-desc
+  components:
+  - type: FlavorProfile
+    flavors:
+      - ADTBuckwheat
+      - egg
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/buckwheat_kasha.rsi
+    layers:
+    - state: bowl
+    - state: buckwheat-kasha-egg
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxvol: 12
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Vitamin
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 3
+
+- type: entity
+  name: buckwheat-sausage-kasha-name
+  parent: FoodBowlBase
+  id: ADTFoodBoiledBuckwheatSausage
+  description: buckwheat-sausage-kasha-desc
+  components:
+  - type: FlavorProfile
+    flavors:
+      - ADTBuckwheat
+      - meaty
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/buckwheat_kasha.rsi
+    layers:
+    - state: bowl
+    - state: buckwheat-kasha-sausage
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxvol: 40
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 18
+        - ReagentId: Vitamin
+          Quantity: 7
+        - ReagentId: Protein
+          Quantity: 6

@@ -20,3 +20,5 @@ ent-ClothingEyesGlassesMercenary = mercenary glasses
     .desc = Glasses made for combat, to protect the eyes from bright blinding flashes.
 ent-ClothingEyesGlassesThermal = оптический термальный сканер
     .desc = Термалы в форме очков.
+ent-ClothingEyesHudBeer = пивные очки
+    .desc = Пара солнцезащитных очков, оснащенных сканером реагентов, а также дающих понимание вязкости жидкости во время движения.

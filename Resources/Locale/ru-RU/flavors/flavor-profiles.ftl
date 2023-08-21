@@ -148,8 +148,8 @@ flavor-complex-chaos = как хаос
 flavor-complex-squirming = как шевеление
 flavor-complex-electrons = как электроны
 flavor-complex-parents = как чьи-то родители
-flavor-complex-plastic = like plastic
-flavor-complex-glue = like glue
+flavor-complex-plastic = как пластик
+flavor-complex-glue = как клей
 
 ## Generic alcohol/soda taste. This should be replaced with an actual flavor profile.
 
@@ -161,7 +161,7 @@ flavor-complex-juice = как сок
 
 flavor-complex-rocksandstones = как скалы и камни
 flavor-complex-water = как вода
-flavor-complex-beer = как моча
+flavor-complex-beer =  как пенное и алкоголь
 flavor-complex-ale = как хлеб
 flavor-complex-cola = как кола
 flavor-complex-vodka = как забродившее зерно
@@ -176,6 +176,7 @@ flavor-complex-coffee = как кофе
 flavor-complex-milk = как молоко
 flavor-complex-tea = как чай
 flavor-complex-ice = как лёд
+flavor-complex-champagne = как шипучее и свежевыпеченный хлеб
 
 ## Cocktails
 
@@ -186,7 +187,7 @@ flavor-complex-singulo = как бездонная дыра
 flavor-complex-syndie-bomb = как горький виски
 flavor-complex-tequila-sunrise = как мексиканское утро
 flavor-complex-irish-coffee = как пробуждение алкоголика
-flavor-complex-iced-beer = как ледяная моча
+flavor-complex-iced-beer = как ледяное пенное
 flavor-complex-gargle-blaster = как будто кто-то ударил вас по голове золотым слитком, покрытым лимоном.
 flavor-complex-bloody-mary = как тяжелое похмелье
 flavor-complex-beepsky = как нефть и виски
