@@ -22,6 +22,9 @@ using Robust.Shared.Player;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
+using Content.Shared.Damage.Prototypes;
+using Content.Shared.FixedPoint;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Damage.Systems;
 
@@ -29,6 +32,7 @@ public sealed partial class StaminaSystem : EntitySystem
 {
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly INetManager _net = default!;
+    [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
     [Dependency] private readonly AlertsSystem _alerts = default!;
@@ -276,6 +280,12 @@ public sealed partial class StaminaSystem : EntitySystem
         // Have we already reached the point of max stamina damage?
         if (component.Critical)
             return;
+
+        // modify damage value by the entitys stun resistance, so certain armours can counter stunmeta
+        var damage = new DamageSpecifier(_proto.Index<DamageTypePrototype>("Stun"), FixedPoint2.New(value));
+        var modifyEv = new DamageModifyEvent(damage);
+        RaiseLocalEvent(uid, modifyEv);
+        value = modifyEv.Damage.DamageDict["Stun"].Float();
 
         var oldDamage = component.StaminaDamage;
         component.StaminaDamage = MathF.Max(0f, component.StaminaDamage + value);
