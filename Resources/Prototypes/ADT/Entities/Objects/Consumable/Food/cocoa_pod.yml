@@ -1,16 +1,16 @@
-- type: entity
-  name: cocoa pod
-  description: a cocoabara?
-  id: ADTCocoaFood
-  parent: ProduceBase
-  components:
-  - type: Sprite
-    sprite: ADT/Objects/Specific/Hydroponics/cocoa.rsi
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        reagents:
-        - ReagentId: ADTCocoaSolids
-          Quantity: 5
-  - type: Produce
-    seedId: ADTcocoatree
+#- type: entity
+#  name: cocoa pod
+#  description: a cocoabara?
+#  id: ADTCocoaFood
+#  parent: ProduceBase
+#  components:
+#  - type: Sprite
+#    sprite: ADT/Objects/Specific/Hydroponics/cocoa.rsi
+#  - type: SolutionContainerManager
+#    solutions:
+#      food:
+#        reagents:
+#        - ReagentId: ADTCocoaSolids
+#          Quantity: 5
+#  - type: Produce
+#    seedId: ADTcocoatree

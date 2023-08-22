@@ -1,20 +1,20 @@
-- type: reagent
-  id: ADTCocoaSolids
-  name: cocoa-sodid-name
-  group: Foods
-  desc: cocoa-solid-desc
-  physicalDesc: reagent-physical-desc-powdery
-  flavor: ADTCocoaSolidsFlavor
-  color: "#491F13"
-  recognizable: true
-  metabolisms:
-    Food:
-      effects:
-      - !type:AdjustReagent
-        reagent: Sugar
-        amount: 0.6
-      - !type:SatiateThirst
-        factor: -0.5 #its flour
-      - !type:AdjustReagent
-        reagent: Nutriment
-        amount: 0.1
+#- type: reagent
+#  id: ADTCocoaSolids
+#  name: cocoa-sodid-name
+#  group: Foods
+#  desc: cocoa-solid-desc
+#  physicalDesc: reagent-physical-desc-powdery
+#  flavor: ADTCocoaSolidsFlavor
+#  color: "#491F13"
+#  recognizable: true
+#  metabolisms:
+#    Food:
+#      effects:
+#      - !type:AdjustReagent
+#        reagent: Sugar
+#        amount: 0.6
+#      - !type:SatiateThirst
+#        factor: -0.5 #its flour
+#      - !type:AdjustReagent
+#        reagent: Nutriment
+#        amount: 0.1

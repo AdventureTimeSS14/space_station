@@ -7,10 +7,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 50
+        maxVol: 30
         reagents:
-        - ReagentId: ADTCocoaSolids
-          Quantity: 50
+        - ReagentId: CocoaPowder
+          Quantity: 30
   - type: TrashOnEmpty
     solution: food
   - type: Sprite

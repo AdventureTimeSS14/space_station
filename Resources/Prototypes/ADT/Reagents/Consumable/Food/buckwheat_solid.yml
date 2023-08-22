@@ -1,0 +1,18 @@
+- type: reagent
+  id: ADTBuckwheatSolids
+  name: buckwheat-sodid-name
+  group: Foods
+  desc: buckwheat-solid-desc
+  physicalDesc: reagent-physical-desc-powdery
+  flavor: ADTBuckwheatSolidsFlavor
+  color: "#401e05"
+  recognizable: true
+  metabolisms:
+    Food:
+      effects:
+      - !type:AdjustReagent
+        reagent: Sugar
+        amount: 0.1
+      - !type:AdjustReagent
+        reagent: Nutriment
+        amount: 0.25

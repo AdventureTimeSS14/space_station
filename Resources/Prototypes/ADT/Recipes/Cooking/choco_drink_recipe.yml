@@ -6,3 +6,12 @@
   solids:
     FoodSnackChocolateBar: 1
     DrinkGlass: 1
+
+- type: microwaveMealRecipe
+  id: ADTRecipeHypoallergenChocolateDrink
+  name: chocolate drink recipe
+  result: ADTChocolateGlass
+  time: 10
+  solids:
+    ADTHypoAllergenChocolateBar: 1
+    DrinkGlass: 1
