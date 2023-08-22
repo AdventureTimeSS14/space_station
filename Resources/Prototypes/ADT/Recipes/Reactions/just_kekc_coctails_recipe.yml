@@ -140,9 +140,11 @@
   id: ADTSpecialTeaOolong
   reactants:
     Whiskey:
-      amount: 1
+      amount: 2
     Vodka:
-      amount: 9
+      amount: 7
+    Sugar:
+      amount: 1
   products:
     ADTSpecialTeaOolong: 10
 
