@@ -32,4 +32,4 @@
     minTransferAmount: 1
     maxTransferAmount: 50
     transferAmount: 1
-    toggleState: 1 # draw
+    #toggleState: 1 # draw

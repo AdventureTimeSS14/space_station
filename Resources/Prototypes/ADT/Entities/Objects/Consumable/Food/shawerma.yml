@@ -58,7 +58,7 @@
   name: shawerma-cheese-name
   parent: ADTShawermaBase
   id: ADTShawermaCheese
-  descriptrion: shawerma-cheese-desc
+  description: shawerma-cheese-desc
   components:
   - type: FlavorProfile
     flavors:
