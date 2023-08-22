@@ -1,10 +1,12 @@
 - type: vendingMachineInventory
   id: BoozeOMatInventory
   startingInventory:
+    ADTBookNewCocktails: 2
     DrinkGlass: 20 #Kept glasses at top for ease to differentiate from booze.
     DrinkShotGlass: 10
     DrinkGlassCoupeShaped: 10
     ADTJigger: 5
+    ADTMixingGlass: 3
     ADTBarSpoon: 5
     DrinkVacuumFlask: 5
     DrinkFlaskBar: 5
@@ -16,12 +18,16 @@
     DrinkCognacBottleFull: 4
     DrinkColaBottleFull: 4
     DrinkCreamCarton: 5
+    ADTReagentContainerCocoaSolid: 3
+    ADTIcePacket: 3
     DrinkGinBottleFull: 3
     DrinkGoldschlagerBottleFull: 1
     DrinkGrenadineBottleFull: 2
     DrinkJuiceLimeCarton: 3
     DrinkJuiceOrangeCarton: 3
     DrinkJuiceTomatoCarton: 3
+    ADTDrinkJuiceBerryCarton: 3
+    ADTDrinkJuiceLemonCarton: 3
     DrinkCoffeeLiqueurBottleFull: 3
     DrinkMelonLiquorBottleFull: 3
     DrinkPatronBottleFull: 2

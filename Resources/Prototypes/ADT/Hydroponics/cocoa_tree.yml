@@ -1,21 +1,21 @@
-- type: seed
-  id: ADTcocoatree
-  name: cocoa-tree-seed
-  noun: cocoa-tree
-  displayName: cocoa-tree
-  plantRsi: ADT/Objects/Specific/Hydroponics/cocoa.rsi
-  packetPrototype: ADTCocoaSeeds
-  productPrototypes:
-    - ADTCocoaFood
-  harvestRepeat: Repeat
-  lifespan: 55
-  maturation: 6
-  production: 6
-  yield: 3
-  potency: 10
-  idealLight: 6
-  chemicals:
-    CocoaSolids:
-      Min: 3
-      Max: 30
-      PotencyDivisor: 10
+#- type: seed
+#  id: ADTcocoatree
+#  name: cocoa-tree-seed
+#  noun: cocoa-tree
+#  displayName: cocoa-tree
+#  plantRsi: ADT/Objects/Specific/Hydroponics/cocoa.rsi
+#  packetPrototype: ADTCocoaSeeds
+#  productPrototypes:
+#    - ADTCocoaFood
+#  harvestRepeat: Repeat
+#  lifespan: 55
+#  maturation: 6
+#  production: 6
+#  yield: 3
+#  potency: 10
+#  idealLight: 6
+#  chemicals:
+#    CocoaSolids:
+#      Min: 3
+#      Max: 30
+#      PotencyDivisor: 10

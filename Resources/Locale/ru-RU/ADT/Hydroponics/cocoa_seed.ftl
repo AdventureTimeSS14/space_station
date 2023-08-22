@@ -18,3 +18,19 @@ ent-ADTDrinkCocoaGlass = стакан какао
     .desc = { "бодрящий и вкусный способ начать рабочий день" }
     .suffix = { "" }
 
+reagent-name-cocoapowder = какао-порошок
+reagent-desc-cocoapowder = Из лучших сортов какао-бобов
+
+seeds-cocoa-name = какао
+seeds-cocoa-display-name = какао-дерево
+
+ent-FoodCocoaBeans = какао-бобы
+    .desc = { "Шоколада никогда не бывает слишком много!" }
+    .suffix = { "" }
+
+ent-FoodCocoaPod = плод какао
+    .desc = { "Шоколада никогда не бывает слишком много!" }
+    .suffix = { "" }
+
+ent-CocoaSeeds = пакет семян какао
+    .desc = { ent-SeedBase.desc }

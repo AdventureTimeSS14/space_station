@@ -1,0 +1,18 @@
+- type: entity
+  parent: ReagentContainerBase
+  id: ADTReagentContainerBuckwheat
+  name: buckwheat bag
+  description: A big bag of buckwheat.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 50
+        reagents:
+        - ReagentId: ADTBuckwheatSolids
+          Quantity: 50
+  - type: TrashOnEmpty
+    solution: food
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/buckwheat_pack.rsi
+    state: icon

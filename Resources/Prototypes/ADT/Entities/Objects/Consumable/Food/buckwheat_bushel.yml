@@ -1,0 +1,16 @@
+- type: entity
+  name: buckwheat bushel
+  description: buckwheat bushel
+  id: ADTBuckwheatFood
+  parent: ProduceBase
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Hydroponics/buckwheat.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: ADTBuckwheatSolids
+          Quantity: 5
+  - type: Produce
+    seedId: ADTbuckwheatplant
