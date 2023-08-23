@@ -139,10 +139,12 @@
 - type: reaction
   id: ADTSpecialTeaOolong
   reactants:
-    Whiskey:
+    Sugar:
       amount: 1
+    Whiskey:
+      amount: 2
     Vodka:
-      amount: 9
+      amount: 7
   products:
     ADTSpecialTeaOolong: 10
 
@@ -199,20 +201,6 @@
       amount: 4
   products:
     ADTSpaceBush: 6
-
-- type: reaction
-  id: ADTBusinessConversation
-  reactants:
-    CubaLibre:
-      amount: 3
-    Vodka:
-      amount: 1
-    Gin:
-      amount: 1
-    Bicaridine:
-      amount: 1
-  products:
-    ADTBusinessConversation: 6
 
 - type: reaction
   id: ADTBusinessConversation
