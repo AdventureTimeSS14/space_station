@@ -140,11 +140,9 @@
   id: ADTSpecialTeaOolong
   reactants:
     Whiskey:
-      amount: 2
-    Vodka:
-      amount: 7
-    Sugar:
       amount: 1
+    Vodka:
+      amount: 9
   products:
     ADTSpecialTeaOolong: 10
 
@@ -167,7 +165,7 @@
   reactants:
     Wine:
       amount: 3
-    GreenTea:
+    ADTAppleLiqueur:
       amount: 1
     Sugar:
       amount: 1
@@ -215,3 +213,42 @@
       amount: 1
   products:
     ADTBusinessConversation: 6
+
+- type: reaction
+  id: ADTBusinessConversation
+  reactants:
+    CubaLibre:
+      amount: 3
+    Vodka:
+      amount: 1
+    Gin:
+      amount: 1
+    Bicaridine:
+      amount: 1
+  products:
+    ADTBusinessConversation: 6
+
+- type: reaction
+  id: ADTAppleMartini
+  reactants:
+    ADTAppleLiqueur:
+      amount: 3
+    Vermouth:
+      amount: 2
+    Gin:
+      amount: 1
+  products:
+    ADTAppleMartini: 6
+
+
+- type: reaction
+  id: ADTBacardiApple
+  reactants:
+    ADTAppleLiqueur:
+      amount: 1
+    Rum:
+      amount: 1
+    Ice:
+      amount: 1
+  products:
+    ADTBacardiApple: 3

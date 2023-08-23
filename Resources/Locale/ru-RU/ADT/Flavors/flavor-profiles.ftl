@@ -20,6 +20,10 @@ flavor-complex-ADTPenetrationDrinkFlavor = как отсылка к инди-и�
 flavor-complex-ADTEclipsedEclispeFlavor = как алкоголь, еще алкоголь и потемнение в глазах
 flavor-complex-ADTSpaceBushFlavor = как алкогольная газировка
 flavor-complex-ADTBusinessConversationFlavor = как горечь, алкоголь и преступное прошлое
+flavor-complex-ADTAppleLiqueurFlavor = как крепкий яблочный сок
+flavor-complex-ADTAppleMartiniFlavor = как алкоголь и зелёное яблоко
+flavor-complex-ADTBacardiAppleFlavor = как ром с привкусом яблока
+flavor-complex-ADTVodkaAntivirusFlavor = как очень крепкая холодная водка
 
 flavor-complex-ADTBuckwheatSolidsFlavor = как сухая гречка
 flavor-complex-ADTBuckwheat = как гречневая каша

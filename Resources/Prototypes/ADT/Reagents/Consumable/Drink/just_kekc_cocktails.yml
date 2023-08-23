@@ -338,3 +338,63 @@
       - !type:AdjustReagent
         reagent: Bicaridine
         amount: 0.3
+
+- type: reagent
+  id: ADTAppleLiqueur
+  name: apple-liqueur-name
+  parent: BaseAlcohol
+  desc: apple-liqueur-desc
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: ADTAppleLiqueurFlavor
+  color: "#664300"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtappleliqueur
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.05
+
+- type: reagent
+  id: ADTAppleMartini
+  name: apple-martini-name
+  parent: BaseAlcohol
+  desc: apple-martini-desc
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: ADTAppleMartiniFlavor
+  color: "#664300"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtapplemartini
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.15
+
+- type: reagent
+  id: ADTBacardiApple
+  name: bacardi-apple-name
+  parent: BaseAlcohol
+  desc: bacardi-apple-desc
+  physicalDesc: reagent-physical-desc-refreshing
+  flavor: ADTBacardiAppleFlavor
+  color: "#C2A894"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtbacardiapple
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.15

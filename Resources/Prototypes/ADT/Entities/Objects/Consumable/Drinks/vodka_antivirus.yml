@@ -1,0 +1,17 @@
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTVodkaAntivirusGlass
+  name: vodka-antivirus-name
+  description: vodka-antivirus-desc
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTVodkaAntivirus
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/vodka_antivirusglass.rsi
+    state: icon
