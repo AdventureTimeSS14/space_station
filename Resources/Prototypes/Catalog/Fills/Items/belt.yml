@@ -167,7 +167,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: SyndiHypo
+      - id: ADTCombatHypo
       - id: EpinephrineChemistryBottle
         amount: 1
       - id: EphedrineChemistryBottle
