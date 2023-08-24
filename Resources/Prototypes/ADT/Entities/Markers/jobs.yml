@@ -5,8 +5,6 @@
   components:
   - type: SpawnPoint
     job_id: ServiceWorker
-  - type: startingGear
-    id: ADTServiceWorkerGear
 
 - type: entity
   id: SpawnPointBartender
@@ -15,8 +13,6 @@
   components:
   - type: SpawnPoint
     job_id: Bartender
-  - type: startingGear
-    id: ADTBartenderGear
   - type: Sprite
     layers:
       - state: green
