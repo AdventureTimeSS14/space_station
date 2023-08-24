@@ -1,0 +1,23 @@
+- type: entity
+  id: SpawnPointServiceWorker
+  parent: SpawnPointAssistant
+  name: service worker
+  components:
+  - type: SpawnPoint
+    job_id: ServiceWorker
+  - type: startingGear
+    id: ADTServiceWorkerGear
+
+- type: entity
+  id: SpawnPointBartender
+  parent: SpawnPointJobBase
+  name: bartender
+  components:
+  - type: SpawnPoint
+    job_id: Bartender
+  - type: startingGear
+    id: ADTBartenderGear
+  - type: Sprite
+    layers:
+      - state: green
+      - state: bartender

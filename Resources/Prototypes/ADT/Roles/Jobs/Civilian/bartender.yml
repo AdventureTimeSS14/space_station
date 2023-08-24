@@ -1,0 +1,36 @@
+- type: job
+  id: Bartender
+  name: job-name-bartender
+  description: job-description-bartender
+  playTimeTracker: JobBartender
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Civilian
+      time: 3600 # Corvax-RoleTime
+  startingGear: ADTBartenderGear
+  icon: "JobIconBartender"
+  supervisors: job-supervisors-hop
+  access:
+  - Service
+  - Maintenance
+  - Bar
+  extendedAccess:
+  - Kitchen
+  - Hydroponics
+
+- type: startingGear
+  id: ADTBartenderGear
+  equipment:
+    head: ClothingHeadHatTophat
+    jumpsuit: ADTClothingUniformNewBarmanSuit
+    outerClothing: ClothingOuterVest
+    back: ClothingBackpackFilled
+    shoes: ClothingShoesColorBlack
+    id: BartenderPDA
+    ears: ClothingHeadsetService
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+  innerclothingskirt: ADTClothingUniformNewBarmanSkirt
+  satchel: ClothingBackpackSatchelFilled
+  duffelbag: ClothingBackpackDuffelFilled
