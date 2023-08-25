@@ -1,0 +1,8 @@
+- type: entity
+  id: ADTCrateMindshieldImplants
+  parent: CrateCommandSecure
+  components:
+  - type: StorageFill
+    contents:
+      - id: ADTMindShieldImplanter
+        amount: 2

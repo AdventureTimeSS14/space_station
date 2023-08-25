@@ -1,4 +1,4 @@
-﻿- type: artifactEffect
+- type: artifactEffect
   id: EffectBadFeeling
   targetDepth: 0
   effectHint: artifact-effect-hint-mental
@@ -427,7 +427,7 @@
   effectHint: artifact-effect-hint-release
   components:
   - type: RadiationSource
-    intensity: 6
+    intensity: 4
 
 - type: artifactEffect
   id: EffectMaterialSpawn
@@ -524,19 +524,19 @@
     spawns:
     - id: RandomAnomalySpawner
 
-- type: artifactEffect
-  id: EffectBoom
-  targetDepth: 3
-  effectHint: artifact-effect-hint-environment
-  components:
-  - type: TriggerArtifact
-  - type: ExplodeOnTrigger
-  - type: Explosive
-    deleteAfterExplosion: false
-    explosionType: Default
-    totalIntensity: 500
-    intensitySlope: 2.5
-    maxIntensity: 50
+#- type: artifactEffect
+#  id: EffectBoom
+#  targetDepth: 3
+#  effectHint: artifact-effect-hint-environment
+#  components:
+#  - type: TriggerArtifact
+#  - type: ExplodeOnTrigger
+#  - type: Explosive
+#    deleteAfterExplosion: false
+#    explosionType: Default
+#    totalIntensity: 500
+#    intensitySlope: 2.5
+#    maxIntensity: 50
 
 - type: artifactEffect
   id: EffectSingulo
