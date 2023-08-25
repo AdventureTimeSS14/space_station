@@ -6,9 +6,69 @@
     "x": 32,
     "y": 32
   },
-  "states": [
-    {
-        "name": "plushie_jessie"
-    }
-  ]
+    "states": [
+        {
+            "name": "plushie_jessie"
+        },
+        {
+            "name": "plushie_abigail"
+        },
+        {
+            "name": "plushie_ayus"
+        },
+        {
+            "name": "plushie_bob"
+        },
+        {
+            "name": "plushie_evgeniy"
+        },
+        {
+            "name": "plushie_fries"
+        },
+        {
+            "name": "plushie_ilumi"
+        },
+        {
+            "name": "plushie_jan"
+        },
+        {
+            "name": "plushie_jason"
+        },
+        {
+            "name": "plushie_kus"
+        },
+        {
+            "name": "plushie_lilit"
+        },
+        {
+            "name": "plushie_luke"
+        },
+        {
+            "name": "plushie_lya"
+        },
+        {
+            "name": "plushie_nova"
+        },
+        {
+            "name": "plushie_peter"
+        },
+        {
+            "name": "plushie_rebecca"
+        },
+        {
+            "name": "plushie_schrodinger"
+        },
+        {
+            "name": "plushie_terenty"
+        },
+        {
+            "name": "plushie_uvarov"
+        },
+        {
+            "name": "plushie_valtor"
+        },
+        {
+            "name": "plushie_walter"
+        }
+    ]
 }
