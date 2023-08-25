@@ -303,3 +303,57 @@
   - type: Sprite
     sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
     state: adtbizconversation
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTAppleLiqueurGlass
+  name: apple-liqueur-name
+  description: apple-liqueur-desc
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTAppleLiqueur
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtappleliqueur
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTAppleMartiniGlass
+  name: apple-martini-name
+  description: apple-martini-desc
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTAppleMartini
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtapplemartini
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTBacardiAppleGlass
+  name: bacardi-apple-name
+  description: bacardi-apple-desc
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTBacardiApple
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtbacardiapple
