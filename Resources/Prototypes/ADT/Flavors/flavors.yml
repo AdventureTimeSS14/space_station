@@ -99,6 +99,26 @@
   description: flavor-complex-ADTBusinessConversationFlavor
 
 - type: flavor
+  id: ADTAppleLiqueurFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTAppleLiqueurFlavor
+
+- type: flavor
+  id: ADTAppleMartiniFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTAppleMartiniFlavor
+
+- type: flavor
+  id: ADTBacardiAppleFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTBacardiAppleFlavor
+
+- type: flavor
+  id: ADTVodkaAntivirusFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTVodkaAntivirusFlavor
+
+- type: flavor
   id: ADTBuckwheatSolidsFlavor
   flavorType: Complex
   description: flavor-complex-ADTBuckwheatSolidsFlavor

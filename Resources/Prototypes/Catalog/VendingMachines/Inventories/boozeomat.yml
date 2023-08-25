@@ -29,6 +29,7 @@
     ADTDrinkJuiceBerryCarton: 3
     ADTDrinkJuiceLemonCarton: 3
     DrinkCoffeeLiqueurBottleFull: 3
+    ADTDrinkAppleLiqueurBottleFull: 3
     DrinkMelonLiquorBottleFull: 3
     DrinkPatronBottleFull: 2
     DrinkRumBottleFull: 4
@@ -42,3 +43,4 @@
     DrinkWhiskeyBottleFull: 5
     DrinkWineBottleFull: 5
     DrinkChampagneBottleFull: 2 #because the premium drink
+    ADTDrinkVodkaAntivirusBottleFull: 2
