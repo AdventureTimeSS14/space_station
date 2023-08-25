@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: ADTMindShieldImplantCargo
+  icon:
+    sprite: Objects/Specific/Chemistry/syringe.rsi
+    state: syringe_base0
+  product: ADTCrateMindshieldImplants
+  cost: 3000
+  category: Armory
+  group: market

@@ -268,7 +268,7 @@
       contents:
         - id: BoxSurvivalMedical
         - id: WeaponPulseCarbine
-        - id: Hypospray
+        - id: ADTCombatHypo
         - id: MedkitAdvancedFilled
         - id: CrowbarRed
         - id: OmnizineChemistryBottle
