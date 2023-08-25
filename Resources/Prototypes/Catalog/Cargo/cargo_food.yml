@@ -24,7 +24,7 @@
     sprite: Objects/Consumable/Food/snacks.rsi
     state: nutribrick
   product: CrateFoodMRE
-  cost: 1000
+  cost: 1800
   category: Food
   group: market
 
