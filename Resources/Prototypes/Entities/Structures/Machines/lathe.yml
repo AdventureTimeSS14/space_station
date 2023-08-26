@@ -81,6 +81,9 @@
     idleState: icon
     runningState: building
     staticRecipes:
+      - GeigerCounter
+      - EmergencyOxygenTank
+      - OxygenTank
       - Wirecutter
       - Screwdriver
       - Welder
