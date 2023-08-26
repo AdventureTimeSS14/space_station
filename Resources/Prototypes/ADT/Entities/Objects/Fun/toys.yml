@@ -293,3 +293,13 @@
   - type: Sprite
     sprite: ADT/Objects/Fun/toys.rsi
     state: plushie_walter
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieIohan
+  name: Djessie plushie
+  description: Soft and cuddly smelling plush toy that looks like it belonged to NT working in cargo.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_iohan
