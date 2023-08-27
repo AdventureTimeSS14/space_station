@@ -63,6 +63,32 @@
     ClothingHeadHatFez: 2
     ClothingBeltStorageWaistbag: 3
     ADTClothingSandals: 5
+    ClothingUniformTurleneckBlack: 3
+    ClothingUniformTurleneckBlackWomen: 3
+    ClothingUniformTurleneckBlue: 3
+    ClothingUniformTurleneckBlueBlack: 3
+    ClothingUniformTurleneckBlueWomen: 3
+    ClothingUniformTurleneckGolub: 3
+    ClothingUniformTurleneckGolubBlack: 3
+    ClothingUniformTurleneckGolubWomen: 3
+    ClothingUniformTurleneckGreen: 3
+    ClothingUniformTurleneckGreenBlack: 3
+    ClothingUniformTurleneckGreenWomen: 3
+    ClothingUniformTurleneckOrange: 3
+    ClothingUniformTurleneckOrangeBlack: 3
+    ClothingUniformTurleneckOrangeWomen: 3
+    ClothingUniformTurleneckPurpur: 3
+    ClothingUniformTurleneckPurpurBlack: 3
+    ClothingUniformTurleneckPurpurWomen: 3
+    ClothingUniformTurleneckRed: 3
+    ClothingUniformTurleneckRedBlack: 3
+    ClothingUniformTurleneckRedWomen: 3
+    ClothingUniformTurleneckSalat: 3
+    ClothingUniformTurleneckSalatBlack: 3
+    ClothingUniformTurleneckSalatWomen: 3
+    ClothingUniformTurleneckWhite: 3
+    ClothingUniformTurleneckWhiteBlack: 3
+    ClothingUniformTurleneckWhiteWomen: 3
   contrabandInventory:
     ClothingUniformJumpsuitTacticool: 1
     ClothingUniformJumpskirtTacticool: 1
