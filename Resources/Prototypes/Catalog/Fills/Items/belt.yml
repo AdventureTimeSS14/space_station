@@ -161,6 +161,17 @@
     - id: WeaponWandPolymorphDoor
 
 - type: entity
+  id: ClothingBeltHolsterFilled
+  parent: ClothingBeltHolster
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponRevolverInspector
+        - id: SpeedLoaderMagnum
+        - id: SpeedLoaderMagnumRubber
+
+- type: entity
   id: ClothingBeltMilitaryWebbingBlueShieldFilled
   parent: ClothingBeltMilitaryWebbingMed
   suffix: Filled
@@ -180,4 +191,4 @@
     sprite: ADT/Clothing/Belt/blueshield_webbing.rsi
   - type: Clothing
     sprite: ADT/Clothing/Belt/blueshield_webbing.rsi
-  
+
