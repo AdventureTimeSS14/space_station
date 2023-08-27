@@ -56,7 +56,11 @@
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
   - type: Gun
-    fireRate: 2
+    selectedMode: SemiAuto
+    fireRate: 2.5
+    availableModes:
+    - SemiAuto
+    - FullAuto
   - type: RevolverAmmoProvider
     capacity: 5
     chambers: [ True, True, True, True, True ]

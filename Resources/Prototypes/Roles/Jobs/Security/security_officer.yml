@@ -26,7 +26,7 @@
     shoes: ClothingShoesBootsJackSec # Corvax-Resprite
     eyes: ClothingEyesGlassesSecurity
     head: ClothingHeadHelmetBasic
-    outerClothing: ClothingOuterArmorBasic
+    outerClothing: ClothingOuterArmorBulletproof
     id: SecurityPDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltSecurityFilled

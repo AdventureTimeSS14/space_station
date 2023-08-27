@@ -251,3 +251,17 @@
     contents:
       - id: BoxSurvival
       - id: RubberStampMime
+
+#ADT
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackSatchelSecurity
+  id: ADTClothingBackpackSatchelSeniorSecurityFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalSecurity
+      - id: Flash
+      - id: SpeedLoaderMagnumRubber
+      - id: SpeedLoaderMagnumRubber
+      - id: SpeedLoaderMagnum

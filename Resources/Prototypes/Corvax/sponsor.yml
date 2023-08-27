@@ -1,4 +1,4 @@
-﻿# OopsieDoopsie
+# OopsieDoopsie
 - type: entity
   parent: ClothingOuterBase
   id: ClothingOuterAtmosianBomberJacket
@@ -207,7 +207,7 @@
 
 # jesuisunfou
 - type: entity
-  parent: ClothingHandsBase
+  parent: ClothingHandsGlovesCombat
   id: ClothingHandsGlovesLeatherUSSPBlack
   name: old ussp leather gloves
   description: Black leather gloves from USSP

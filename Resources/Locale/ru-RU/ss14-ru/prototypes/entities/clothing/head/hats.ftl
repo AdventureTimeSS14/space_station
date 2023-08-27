@@ -104,3 +104,5 @@ ent-ClothingHeadHatHetmanHat = гетманская шапка
     .desc = Из Запорожской Сечи с любовью.
 ent-ClothingHeadHatMagician = magician's top hat.
     .desc = A magician's top hat.
+ent-ClothingHeadHelmetBasic = Шлем
+    .desc = Стандартный шлем службы безопасности.
