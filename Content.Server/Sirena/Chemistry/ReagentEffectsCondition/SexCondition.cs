@@ -5,7 +5,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server.Sirena.Chemistry.ReagentEffectsCondition;
 
-public sealed class SexCondition : ReagentEffectCondition
+public sealed partial class SexCondition : ReagentEffectCondition
 {
     [DataField("sex")]
     public Sex Sex = default!;

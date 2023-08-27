@@ -11,7 +11,7 @@ using Robust.Shared.Player;
 
 namespace Content.Server.Capibara
 {
-    public sealed class CapibaraSystem : EntitySystem
+    public sealed partial class CapibaraSystem : EntitySystem
     {
         [Dependency] private readonly PopupSystem _popup = default!;
         [Dependency] private readonly ActionsSystem _action = default!;
@@ -57,6 +57,6 @@ namespace Content.Server.Capibara
 
     }
 
-    public sealed class CapibaraRaiseArmyActionEvent : InstantActionEvent { };
-    public sealed class CapibaraDomainActionEvent : InstantActionEvent { };
+    public sealed partial class CapibaraRaiseArmyActionEvent : InstantActionEvent { };
+    public sealed partial class CapibaraDomainActionEvent : InstantActionEvent { };
 };

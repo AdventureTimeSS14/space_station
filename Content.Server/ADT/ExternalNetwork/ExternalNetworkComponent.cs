@@ -5,7 +5,7 @@ namespace Content.Server.ADT.ExternalNetwork;
 
 [RegisterComponent]
 [ComponentProtoName("ExternalNetworkConnection")]
-public sealed class ExternalNetworkComponent : Component
+public sealed partial class ExternalNetworkComponent : Component
 {
 
     [ViewVariables(VVAccess.ReadOnly)]
