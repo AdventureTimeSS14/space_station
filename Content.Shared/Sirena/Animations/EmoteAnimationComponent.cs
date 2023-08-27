@@ -7,22 +7,22 @@ namespace Content.Shared.Sirena.Animations;
 
 /// <summary>
 /// </summary>
-public class EmoteFlipActionEvent : InstantActionEvent { };
+public partial class EmoteFlipActionEvent : InstantActionEvent { };
 
 /// <summary>
 /// </summary>
-public class EmoteJumpActionEvent : InstantActionEvent { };
+public partial class EmoteJumpActionEvent : InstantActionEvent { };
 
 /// <summary>
 /// </summary>
-public class EmoteTurnActionEvent : InstantActionEvent { };
+public partial class EmoteTurnActionEvent : InstantActionEvent { };
 
-public class EmoteStopTailActionEvent : InstantActionEvent { };
-public class EmoteStartTailActionEvent : InstantActionEvent { };
+public partial class EmoteStopTailActionEvent : InstantActionEvent { };
+public partial class EmoteStartTailActionEvent : InstantActionEvent { };
 
 [RegisterComponent]
 [NetworkedComponent]
-public class EmoteAnimationComponent : Component
+public partial class EmoteAnimationComponent : Component
 {
     [ViewVariables(VVAccess.ReadWrite)]
     public string AnimationId = "none";
