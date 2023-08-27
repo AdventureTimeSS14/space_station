@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingOuterBaseLarge
+  parent: ClothingUniformBase
   id: ADTClothingGorkaset
   name: Gorkaset
   description: ""

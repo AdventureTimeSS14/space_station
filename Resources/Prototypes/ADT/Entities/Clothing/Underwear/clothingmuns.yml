@@ -1,0 +1,35 @@
+- type: entity
+  parent: ClothingUnderwearBottomBase
+  id: ADTClothingUnderwearBottomPantiesMunsBlue
+  name: bluedshield boxers
+  description: Standard Nanotrasen underwear for Blue Shield Officer.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/muns_panties_blue.rsi
+
+- type: entity
+  parent: ClothingUnderwearBottomBase
+  id: ADTClothingUnderwearBottomPantiesMunsRed
+  name: bluedshield boxers
+  description: Standard Nanotrasen underwear for Blue Shield Officer.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/muns_panties_red.rsi
+
+- type: entity
+  parent: ClothingUnderwearTopBase
+  id: ADTClothingUnderwearTopBraMunsBlue
+  name: blueshield bra
+  description: Standard Nanotrasen bra for Blue Shield Officer.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/muns_bra_blue.rsi
+
+- type: entity
+  parent: ClothingUnderwearTopBase
+  id: ADTClothingUnderwearTopBraMunsRed
+  name: blueshield bra
+  description: Standard Nanotrasen bra for Blue Shield Officer.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/muns_bra_red.rsi
