@@ -7,7 +7,7 @@ namespace Content.Shared.Sirena.EntityHealthBar
     /// This component allows you to see health bars above damageable mobs.
     /// </summary>
     [RegisterComponent]
-    public sealed class ShowHealthBarsComponent : Component
+    public sealed partial class ShowHealthBarsComponent : Component
     {
         /// <summary>
         /// If null, displays all health bars.
