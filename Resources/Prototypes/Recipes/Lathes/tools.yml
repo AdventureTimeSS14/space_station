@@ -202,3 +202,26 @@
     Glass: 500
     Plasma: 300
     Gold: 50
+
+- type: latheRecipe
+  id: EmergencyOxygenTank
+  result: EmergencyOxygenTank
+  completetime: 2
+  materials:
+    Steel: 200
+
+- type: latheRecipe
+  id: OxygenTank
+  result: OxygenTank
+  completetime: 2
+  materials:
+    Steel: 500
+
+- type: latheRecipe
+  id: GeigerCounter
+  result: GeigerCounter
+  completetime: 2
+  materials:
+    Steel: 100
+    Glass: 50
+    Plastic: 50

@@ -168,6 +168,7 @@
         prob: 0.15
       - id: DoorRemoteEngineering
       - id: RubberStampCE
+      - id: ADTtelescopicBaton
       - id: JetpackVoidFilled
       - id: ClothingHeadsetAltEngineering
       - id: BoxEncryptionKeyEngineering
@@ -225,6 +226,7 @@
       - id: HandheldCrewMonitor
       - id: DoorRemoteMedical
       - id: RubberStampCMO
+      - id: ADTtelescopicBaton
       - id: MedicalTechFabCircuitboard
       - id: BoxEncryptionKeyMedical
       # Sirena-Underwear-Start
@@ -286,6 +288,7 @@
       - id: ClothingHandsGlovesColorPurple
       - id: ClothingBeltUtilityFilled
       - id: RubberStampRd
+      - id: ADTtelescopicBaton
       - id: ClothingHeadsetAltScience
       - id: BoxEncryptionKeyScience
       - id: BoxEncryptionKeyRobo
