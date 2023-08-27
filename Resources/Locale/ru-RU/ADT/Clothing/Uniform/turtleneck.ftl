@@ -2,7 +2,7 @@ ent-ClothingUniformTurleneckAmerc = Водолазка Наёмника
     .desc = Практичный и удобная водолазка оливкового цвета.
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckTactick = Тактический водолазка
+ent-ClothingUniformTurleneckTactick = Тактическая водолазка
     .desc = Тактическая и удобная водолазка с усиленной синтетической тканью.
     .suffix = { "" }
 
