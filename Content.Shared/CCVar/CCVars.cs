@@ -326,10 +326,10 @@ namespace Content.Shared.CCVar
         /// URL of the Discord webhook which will relay all ahelp messages.
         /// </summary>
         public static readonly CVarDef<string> DiscordAHelpWebhook =
-            CVarDef.Create("discord.ahelp_webhook", string.Empty, CVar.SERVERONLY);
-        
+            CVarDef.Create("discord.ahelp_webhook", string.Empty, CVar.SERVERONLY | CVar.CONFIDENTIAL);
+
         public static readonly CVarDef<string> DiscordBansWebhook =
-            CVarDef.Create("discord.bans_webhook", string.Empty, CVar.SERVERONLY);
+            CVarDef.Create("discord.bans_webhook", string.Empty, CVar.SERVERONLY | CVar.CONFIDENTIAL);
 
         /// <summary>
         /// The server icon to use in the Discord ahelp embed footer.
@@ -344,13 +344,18 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<string> DiscordAHelpAvatar =
             CVarDef.Create("discord.ahelp_avatar", string.Empty, CVar.SERVERONLY);
 
-        /*
-         * Sheets
-         */
+        /// <summary>
+        /// URL of the Discord webhook which will relay round restart messages.
+        /// </summary>
+        public static readonly CVarDef<string> DiscordRoundUpdateWebhook =
+            CVarDef.Create("discord.round_update_webhook", string.Empty, CVar.SERVERONLY | CVar.CONFIDENTIAL);
 
-        // public static readonly CVarDef<string> SheetsSpreadsheetId =
-        //     CVarDef.Create("sheets.spreadsheet_id", string.Empty, CVar.SERVERONLY);
-            
+        /// <summary>
+        /// Role id for the Discord webhook to ping when the round ends.
+        /// </summary>
+        public static readonly CVarDef<string> DiscordRoundEndRoleWebhook =
+            CVarDef.Create("discord.round_end_role", string.Empty, CVar.SERVERONLY);
+
         /*
          * Suspicion
          */
@@ -1240,7 +1245,7 @@ namespace Content.Shared.CCVar
         /// Is the emergency shuttle allowed to be early launched.
         /// </summary>
         public static readonly CVarDef<bool> EmergencyEarlyLaunchAllowed =
-            CVarDef.Create("shuttle.emergency_early_launch_allowed", true, CVar.SERVERONLY);
+            CVarDef.Create("shuttle.emergency_early_launch_allowed", false, CVar.SERVERONLY);
 
         /// <summary>
         /// How long the emergency shuttle remains docked with the station, in seconds.
