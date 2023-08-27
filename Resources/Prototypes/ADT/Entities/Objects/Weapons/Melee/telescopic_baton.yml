@@ -15,12 +15,12 @@
     #bonkSound: "/Audio/ADT/bonk_dubinka.ogg"
     damageOpen:
       types:
-        Blunt: 6
+        Blunt: 0
     damageFolded:
       types:
         Blunt: 0
     staminaDamageFolded: 0
-    staminaDamageOpen: 21
+    staminaDamageOpen: 35
     sizeOpened: 15
     sizeClosed: 5
   - type: StaminaDamageOnHit
@@ -28,7 +28,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 6
+        Blunt: 0
   - type: Item
     size: 5
     sprite: ADT/Objects/Weapons/Melee/telescopic_baton.rsi
