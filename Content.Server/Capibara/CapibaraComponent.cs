@@ -5,7 +5,7 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototy
 namespace Content.Server.Capibara
 {
     [RegisterComponent]
-    public sealed class CapibaraComponent : Component
+    public sealed partial class CapibaraComponent : Component
     {
         /// <summary>
         ///     The action for the Raise Army ability

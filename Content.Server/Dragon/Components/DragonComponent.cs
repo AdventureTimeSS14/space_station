@@ -102,5 +102,5 @@ namespace Content.Server.Dragon
 
     public sealed partial class DragonSpawnRiftActionEvent : InstantActionEvent {}
 
-    public sealed class DragonRoarActionEvent : InstantActionEvent { }
+    public sealed partial class DragonRoarActionEvent : InstantActionEvent { }
 }

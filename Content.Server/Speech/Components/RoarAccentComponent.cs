@@ -4,7 +4,7 @@ namespace Content.Server.Speech.Components;
 ///     Roar!
 /// </summary>
 [RegisterComponent]
-public sealed class RoarAccentComponent : Component
+public sealed partial class RoarAccentComponent : Component
 {
 
 }

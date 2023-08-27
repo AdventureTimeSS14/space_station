@@ -6,7 +6,7 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototy
 namespace Content.Server.Corvax.OwOAction;
 
 [RegisterComponent]
-public sealed class OwOActionComponent : Component
+public sealed partial class OwOActionComponent : Component
 {
     private bool _isON;
 
@@ -32,4 +32,4 @@ public sealed class OwOActionComponent : Component
     }
 }
 
-public sealed class OwOAccentActionEvent : InstantActionEvent { };
+public sealed partial class OwOAccentActionEvent : InstantActionEvent { };

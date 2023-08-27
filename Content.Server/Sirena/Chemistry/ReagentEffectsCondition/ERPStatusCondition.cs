@@ -10,7 +10,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server.Sirena.Chemistry.ReagentEffectsCondition;
 
-public sealed class ERPStatusCondition : ReagentEffectCondition
+public sealed partial class ERPStatusCondition : ReagentEffectCondition
 {
     [DataField("erp")]
     public EnumERPStatus ERP = default!;

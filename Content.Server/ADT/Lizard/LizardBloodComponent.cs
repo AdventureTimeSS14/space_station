@@ -8,7 +8,7 @@ namespace Content.Server.Speech.Components;
 ///     Lizard specific properties
 /// </summary>
 [RegisterComponent]
-public sealed class LizardBloodComponent : Component
+public sealed partial class LizardBloodComponent : Component
 {
     public EntityUid Uid;
 
