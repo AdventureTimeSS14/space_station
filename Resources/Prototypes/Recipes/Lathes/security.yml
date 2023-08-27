@@ -357,7 +357,7 @@
 
 - type: latheRecipe
   id: MagazineHeavyRifle
-  result: BaseMagazineHeavyRifle
+  result: MagazineRifle
   completetime: 2
   materials:
     Steel: 300
