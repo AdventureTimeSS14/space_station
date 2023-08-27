@@ -528,6 +528,12 @@
       - TargetHuman
       - TargetSyndicate
       - TargetClown
+      - MagazineLightRifle
+      - MagazineRifle
+      - MagazineShotgun
+      - MagazinePistolSubMachineGun
+      - MagazinePistol
+      - SpeedLoaderMagnum
     dynamicRecipes:
       - CartridgePistolRubber
       - CartridgeMagnumRubber
