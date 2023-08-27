@@ -1,0 +1,16 @@
+- type: startingGear
+  id: ADTBartenderGear
+  equipment:
+    head: ClothingHeadHatTophat
+    jumpsuit: ADTClothingUniformNewBarmanSuit
+    outerClothing: ClothingOuterVest
+    back: ClothingBackpackFilled
+    shoes: ClothingShoesColorBlack
+    id: BartenderPDA
+    ears: ClothingHeadsetService
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+  innerclothingskirt: ADTClothingUniformNewBarmanSkirt
+  satchel: ClothingBackpackSatchelFilled
+  duffelbag: ClothingBackpackDuffelFilled
