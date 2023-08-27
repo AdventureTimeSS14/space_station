@@ -3,7 +3,7 @@
   name: job-name-serviceworker
   description: job-description-serviceworker
   playTimeTracker: JobServiceWorker
-  startingGear: ServiceWorkerGear
+  startingGear: ADTServiceWorkerGear
   icon: "JobIconServiceWorker"
   supervisors: job-supervisors-service
   canBeAntag: false
