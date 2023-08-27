@@ -1,0 +1,19 @@
+- type: reagent
+  id: ADTCherryExquisiteWine
+  name: cherry-exq-wine-name
+  parent: BaseAlcohol
+  desc: cherry-exq-wine-desc
+  physicalDesc: reagent-physical-desc-translucent
+  flavor: ADTCherryExquisiteWineFlavor
+  color: "#7E4043"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/cherryexquisitewineglass.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.05

@@ -234,7 +234,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.25
+        amount: 0.3
 
 - type: reagent
   id: ADTAzureBlue
@@ -294,7 +294,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.15
+        amount: 0.6
 
 - type: reagent
   id: ADTSpaceBush
@@ -334,10 +334,10 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.15
+        amount: 0.2
       - !type:AdjustReagent
         reagent: Bicaridine
-        amount: 0.3
+        amount: 0.2
 
 - type: reagent
   id: ADTAppleLiqueur

@@ -1,13 +1,9 @@
 - type: entity
-  parent: DrinkBase
+  parent: FlaskBase
   id: ADTDrinkArmyFlask
   name: Flask
   description: ''
   components:
   - type: Drink
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 50
   - type: Sprite
     sprite: ADT/Objects/Consumable/Drinks/ArmyFlask.rsi

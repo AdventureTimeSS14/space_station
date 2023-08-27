@@ -23,7 +23,8 @@ flavor-complex-ADTBusinessConversationFlavor = как горечь, алкого
 flavor-complex-ADTAppleLiqueurFlavor = как крепкий яблочный сок
 flavor-complex-ADTAppleMartiniFlavor = как алкоголь и зелёное яблоко
 flavor-complex-ADTBacardiAppleFlavor = как ром с привкусом яблока
-flavor-complex-ADTVodkaAntivirusFlavor = как очень крепкая холодная водка
+flavor-complex-ADTVodkaAntivirusFlavor = как разбавленный спирт
+flavor-complex-ADTCherryExquisiteWineFlavor = как сладкая вишнёвая кожура
 
 flavor-complex-ADTBuckwheatSolidsFlavor = как сухая гречка
 flavor-complex-ADTBuckwheat = как гречневая каша

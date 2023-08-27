@@ -3,3 +3,6 @@ ent-ADTDrinkVodkaAntivirusBottleFull = водка "Антивирус"
 
 ent-ADTDrinkAppleLiqueurBottleFull = бутылка яблочного ликёра
     .desc = Фруктовый, десертный алкогольный напиток
+
+ent-ADTDrinkCherryExquisiteWineBottleFull = бутылка вишнёвого изысканного вина
+    .desc = "Изысканный и сладкий вишневый напиток с 20 летней выдержкой, созданный компанией "Nestrof"" - громкие слова на этикетке сладко пахнущей бутылки.
