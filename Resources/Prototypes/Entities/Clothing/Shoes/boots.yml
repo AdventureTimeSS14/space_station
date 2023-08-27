@@ -23,6 +23,9 @@
     whitelist:
       tags:
         - Knife
+  - type: StorageFill
+    contents:
+      - id: CombatKnife
   - type: FootstepModifier # Corvax-Sounds
     footstepSoundCollection:
       collection: FootstepBoots

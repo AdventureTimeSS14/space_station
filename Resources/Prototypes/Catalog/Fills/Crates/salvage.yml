@@ -69,36 +69,16 @@
         # Just no (0.1%)
         #  - Working guns
       - id: WeaponRevolverDeckard
-        prob: 0.001
+        prob: 0.01
       - id: WeaponRevolverInspector
-        prob: 0.001
+        prob: 0.01
       - id: ClothingShoesBootsMagBlinding
-        prob: 0.001
+        prob: 0.01
         #  - Skub
       - id: Skub
         prob: 0.001
       - id: ClothingHeadHatCatEars
         prob: 0.01
-        #  - Pins
-      - id: ClothingNeckLGBTPin
-        prob: 0.025
-        orGroup: LGBTQIAPlusPins
-      - id: ClothingNeckAromanticPin
-        orGroup: LGBTQIAPlusPins
-      - id: ClothingNeckAsexualPin
-        orGroup: LGBTQIAPlusPins
-      - id: ClothingNeckBisexualPin
-        orGroup: LGBTQIAPlusPins
-      - id: ClothingNeckIntersexPin
-        orGroup: LGBTQIAPlusPins
-      - id: ClothingNeckLesbianPin
-        orGroup: LGBTQIAPlusPins
-      - id: ClothingNeckNonBinaryPin
-        orGroup: LGBTQIAPlusPins
-      - id: ClothingNeckPansexualPin
-        orGroup: LGBTQIAPlusPins
-      - id: ClothingNeckTransPin
-        orGroup: LGBTQIAPlusPins
       # Corvax-Pins-Start
       - id: ClothingNeckUSSPPin
         prob: 0.025
@@ -120,13 +100,12 @@
       - id: ClothingNeckVitezstviPin
         orGroup: CorporateAndGovermentPins
       # Corvax-Pins-End
-        # TRAITOR EQUIPMENT (0.01%)
       - id: Telecrystal10
-        prob: 0.0001
+        prob: 0.001
       - id: WeaponRevolverPython
-        prob: 0.0001
+        prob: 0.001
       - id: WeaponRevolverMateba
-        prob: 0.0001
+        prob: 0.001
 
 - type: entity
   parent: CrateGenericSteel
@@ -137,7 +116,7 @@
   - type: StorageFill
     contents:
     - id: SalvagePartsT3Spawner
-      amount: 5
+      amount: 10
 
 - type: entity
   parent: CrateGenericSteel
@@ -148,7 +127,7 @@
   - type: StorageFill
     contents:
     - id: SalvagePartsT3T4Spawner
-      amount: 5
+      amount: 10
 
 - type: entity
   parent: CrateGenericSteel
@@ -159,4 +138,4 @@
   - type: StorageFill
     contents:
     - id: SalvagePartsT4Spawner
-      amount: 5
+      amount: 10

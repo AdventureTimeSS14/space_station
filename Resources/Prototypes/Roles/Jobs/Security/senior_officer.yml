@@ -31,15 +31,15 @@
   id: SeniorOfficerGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitSeniorOfficer
-    back: ClothingBackpackSecurityFilled
+    back: ADTClothingBackpackSeniorSecurityFilled
     shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesGlassesSecurity
     head: ClothingHeadHatBeret
-    outerClothing: ClothingOuterArmorBasic
+    outerClothing: ClothingOuterArmorBulletproof
     id: SeniorOfficerPDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltSecurityFilled
-    pocket1: WeaponPistolMk58Nonlethal
+    pocket1: WeaponRevolverDeckard
   innerclothingskirt: ClothingUniformJumpskirtSeniorOfficer
-  satchel: ClothingBackpackSatchelSecurityFilled
-  duffelbag: ClothingBackpackDuffelSecurityFilled
+  satchel: ADTClothingBackpackSatchelSeniorSecurityFilled
+  duffelbag: ADTClothingBackpackDuffelSeniorSecurityFilled

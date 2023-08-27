@@ -15,8 +15,9 @@
     ClothingUniformJumpskirtSecGrey: 3
     ClothingUniformJumpsuitSecBlue: 3
     ClothingHeadsetSecurity: 3
-    ClothingOuterWinterSec: 2
-    ClothingOuterArmorBasic: 2
-    ClothingOuterArmorBasicSlim: 2 
-    ClothingEyesBlindfold: 1
-    ClothingShoesBootsCombat: 1
+    ClothingOuterWinterSec: 4
+    ClothingOuterArmorBasic: 4
+    ClothingOuterArmorBasicSlim: 4 
+    ClothingEyesBlindfold: 2
+    ClothingShoesBootsCombat: 6
+    ClothingOuterCoatSecurityOvercoat: 6

@@ -32,12 +32,13 @@
   - type: AmmoCounter
   - type: UseDelayOnShoot
   - type: UseDelay
-    delay: 2
+    delay: 1.5
   - type: LeechOnMarker
     leech:
       groups:
-        Brute: -25
-        Airloss: -15
+        Brute: -10
+        Burn: -10
+        Airloss: -5
   - type: Gun
     soundGunshot: /Audio/Weapons/plasma_cutter.ogg
     fireRate: 1
@@ -53,8 +54,8 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 10
-        Slash: 10
+        Blunt: 5
+        Slash: 5
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
@@ -106,7 +107,9 @@
   - type: LeechOnMarker
     leech:
       groups:
-        Brute: -15
+        Brute: -10
+        Burn: -10
+        Airloss: -5
   - type: Sprite
     sprite: Objects/Weapons/Melee/crusher_glaive.rsi
   - type: MeleeWeapon
