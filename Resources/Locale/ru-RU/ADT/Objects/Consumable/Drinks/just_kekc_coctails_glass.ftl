@@ -57,3 +57,4 @@ ent-ADTAppleMartiniGlass = бокал яблочного мартини
 
 ent-ADTBacardiAppleGlass = стакан яблока Бакарди
     .desc = "Вам нравятся лонги и физзы?"
+

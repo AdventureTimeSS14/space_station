@@ -4,6 +4,12 @@
   abstract: true
   components:
   - type: Drink
+  - type: Item
+    size: 8
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 60
   - type: PhysicalComposition
     materialComposition:
       Steel: 300
@@ -30,7 +36,7 @@
       drink:
         reagents:
         - ReagentId: Water
-          Quantity: 50
+          Quantity: 60
   - type: TrashOnEmpty
     solution: drink
 
@@ -94,5 +100,11 @@
   name: vacuum flask
   description: Keeping your drinks at the perfect temperature since 1892.
   components:
+  - type: Item
+    size: 10
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 90
   - type: Sprite
     sprite: Objects/Consumable/Drinks/vacuumflask.rsi
