@@ -1,0 +1,327 @@
+#Tactick
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckTactick
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_tactick.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_tactick.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.9
+        Piercing: 0.85
+        Heat: 0.8
+#Mercenary
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckAmerc
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_amerc.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_amerc.rsi
+#Black
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckBlack
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_black.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_black.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckBlackWomen
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_black_women.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_black_women.rsi
+#Blue
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckBlue
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_blue.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_blue.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckBlueBlack
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_blueblack.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_blueblack.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckBlueWomen
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_blue_women.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_blue_women.rsi
+#golub
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckGolub
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_golub.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_golub.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckGolubBlack
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_golubblack.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_golubblack.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckGolubWomen
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_golub_women.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_golub_women.rsi
+
+#Green
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckGreen
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_green.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_green.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckGreenBlack
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_greenblack.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_greenblack.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckGreenWomen
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_green_women.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_green_women.rsi
+
+#Orange
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckOrange
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_orange.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_orange.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckOrangeBlack
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_orangeblack.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_orangeblack.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckOrangeWomen
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_orange_women.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_orange_women.rsi
+
+#Purpur
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckPurpur
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_purpur.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_purpur.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckPurpurBlack
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_purpurblack.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_purpurblack.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckPurpurWomen
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_purpur_women.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_purpur_women.rsi
+
+#Red
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckRed
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_red.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_red.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckRedBlack
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_redblack.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_redblack.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckRedWomen
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_red_women.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_red_women.rsi
+
+#Salat
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckSalat
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_salat.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_salat.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckSalatBlack
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_salatblack.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_salatblack.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckSalatWomen
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_salat_women.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_salat_women.rsi
+
+#White
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckWhite
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_white.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_white.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckWhiteBlack
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_whiteblack.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_whiteblack.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformTurleneckWhiteWomen
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_white_women.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_white_women.rsi
