@@ -13,8 +13,6 @@
     CrateFunInstrumentsVariety: 0.25
     CrateSalvageEquipment: 0.25
     RandomArtifactSpawner: 0.25
-    # weighted down since it sells for a lot
-    NuclearBombKeg: 0.1
     # money
     SpaceCash1000: 0.5
 
@@ -39,7 +37,6 @@
     KukriKnife: 0.25
     # rare armor
     ClothingHeadHelmetSwat: 0.25
-    ClothingOuterArmorBasicSlim: 0.25
     # money
     SpaceCash2500: 1
 
@@ -47,7 +44,6 @@
   id: SalvageRewardEpic
   weights:
     # rare machinery
-    AmmoTechFabCircuitboard: 1.0
     ResearchAndDevelopmentServerMachineCircuitboard: 1.0
     CratePartsT4: 1.0
     PowerCellAntiqueProto: 0.25
@@ -57,3 +53,9 @@
     ADTcannabiswhiteSeeds: 0.4
     # money
     SpaceCash10000: 1
+    # weighted down since it sells for a lot
+    NuclearBombKeg: 0.1
+    CrateMaterialGlass: 0.5
+    CrateMaterialPlasteel: 0.5
+    CrateMaterialPlastic: 0.5
+    CrateMaterialSteel: 0.5
