@@ -33,3 +33,22 @@
   - type: Sprite
     sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
     state: adtappleliqueurbottle
+
+- type: entity
+  parent: DrinkBottleBaseFull
+  id: ADTDrinkCherryExquisiteWineBottleFull
+  name: cherry exquisite wine
+  description: a bottle of cherry wine by Nestrof company
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 100
+        reagents:
+        - ReagentId: ADTCherryExquisiteWine
+          Quantity: 100
+  - type: Drink
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/cherryexquisitewinebottle.rsi
+    state: icon
+

@@ -1,0 +1,17 @@
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTCherryExquisiteWine
+  name: cherry-exq-wine-name
+  description: cherry-exq-wine-desc
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTCherryExquisiteWine
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/cherryexquisitewineglass.rsi
+    state: icon

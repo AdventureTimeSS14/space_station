@@ -1,2 +1,2 @@
-ent-ADTDrinkArmyFlask = Армейский Фляга
+ent-ADTDrinkArmyFlask = Армейская Фляга
     .desc = Довольно качественная фляга.

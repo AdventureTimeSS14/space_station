@@ -119,6 +119,11 @@
   description: flavor-complex-ADTVodkaAntivirusFlavor
 
 - type: flavor
+  id: ADTCherryExquisiteWineFlavor
+  flavorType: Complex
+  description: flavor-complex-ADTCherryExquisiteWineFlavor
+
+- type: flavor
   id: ADTBuckwheatSolidsFlavor
   flavorType: Complex
   description: flavor-complex-ADTBuckwheatSolidsFlavor
