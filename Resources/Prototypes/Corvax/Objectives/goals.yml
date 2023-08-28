@@ -49,3 +49,11 @@
 - type: stationGoal
   id: stationgoalchill
   text:   station-goal-chill
+
+- type: stationGoal
+  id: stationgoalborgs
+  text:   station-goal-borgs
+
+- type: stationGoal
+  id: stationgoalbar
+  text:   station-goal-bar
