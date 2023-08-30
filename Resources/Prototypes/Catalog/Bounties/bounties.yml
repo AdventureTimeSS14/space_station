@@ -291,7 +291,7 @@
 
 - type: cargoBounty
   id: BountyMouse
-  reward: 2500
+  reward: 2400
   description: bounty-description-mouse
   entries:
   - name: bounty-item-mouse
