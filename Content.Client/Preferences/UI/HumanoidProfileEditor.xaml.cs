@@ -410,14 +410,24 @@ namespace Content.Client.Preferences.UI
 
             foreach (var antag in prototypeManager.EnumeratePrototypes<AntagPrototype>().OrderBy(a => Loc.GetString(a.Name)))
             {
+                bool check = false;
+                if (playTime.IsAllowed(antag, out var reason))
+                {
+                    check = true;
+                }
+
                 if (!antag.SetPreference)
                 {
                     continue;
                 }
 
                 var selector = new AntagPreferenceSelector(antag);
+                var selector = new AntagPreferenceSelector(antag, check);
+                selector.Preference = false;
                 _antagList.AddChild(selector);
                 _antagPreferences.Add(selector);
+
+
 
                 selector.PreferenceChanged += preference =>
                 {
@@ -1371,7 +1381,10 @@ namespace Content.Client.Preferences.UI
                 var antagId = preferenceSelector.Antag.ID;
                 var preference = Profile?.AntagPreferences.Contains(antagId) ?? false;
 
-                preferenceSelector.Preference = preference;
+                if (!preferenceSelector.Locked)
+                {
+                    preferenceSelector.Preference = preference;
+                }
             }
         }
 
@@ -1397,9 +1410,10 @@ namespace Content.Client.Preferences.UI
                 set => _checkBox.Pressed = value;
             }
 
+            public bool Locked = false;
             public event Action<bool>? PreferenceChanged;
 
-            public AntagPreferenceSelector(AntagPrototype antag)
+            public AntagPreferenceSelector(AntagPrototype antag, bool check)
             {
                 Antag = antag;
 
@@ -1420,6 +1434,11 @@ namespace Content.Client.Preferences.UI
                         _checkBox
                     }
                 });
+                if (check == false)
+                {
+                    Locked = true;
+                    _checkBox.Disabled = true;
+                }
             }
 
             private void OnCheckBoxToggled(BaseButton.ButtonToggledEventArgs args)
