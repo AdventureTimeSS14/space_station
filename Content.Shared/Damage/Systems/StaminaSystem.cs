@@ -281,11 +281,13 @@ public sealed partial class StaminaSystem : EntitySystem
         if (component.Critical)
             return;
 
-        // modify damage value by the entitys stun resistance, so certain armours can counter stunmeta
         var damage = new DamageSpecifier(_proto.Index<DamageTypePrototype>("Stun"), FixedPoint2.New(value));
         var modifyEv = new DamageModifyEvent(damage);
         RaiseLocalEvent(uid, modifyEv);
-        value = modifyEv.Damage.DamageDict["Stun"].Float();
+        if (modifyEv.Damage.DamageDict.ContainsKey("Stun"))
+        {
+            value = modifyEv.Damage.DamageDict["Stun"].Float();
+        }
 
         var oldDamage = component.StaminaDamage;
         component.StaminaDamage = MathF.Max(0f, component.StaminaDamage + value);

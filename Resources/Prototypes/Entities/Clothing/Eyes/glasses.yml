@@ -124,6 +124,10 @@
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
+  - type: ShowSecurityIcons
+  - type: ClothingGrantComponent # Sirena-Edit's-Start
+    component:
+    - type: ShowJobInfo # Sirena-Edit's-End
   - type: Tag
     tags:
     - HamsterWearable
