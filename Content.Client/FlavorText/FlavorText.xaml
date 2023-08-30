@@ -1,6 +1,6 @@
 <Control Name="CFlavorText" xmlns="https://spacestation14.io">
     <BoxContainer Orientation="Vertical" HorizontalExpand="True">
-        <LineEdit Name="CFlavorTextInput" Access="Public" MinSize="220 0" HorizontalExpand="True" />
+        <TextEdit Name="CFlavorTextInput" Access="Public" MinSize="220 100" Margin="10" HorizontalExpand="True" VerticalExpand="True" />
         <RichTextLabel Name="CFlavorTextRulesLabel" HorizontalExpand="False" VerticalExpand="True" MaxWidth="850" HorizontalAlignment="Left"/>
         <!-- Sirena-ERPStatus-Start -->
         <OptionButton Name="CERPStatusOption" Access="Public" MinSize="220 0" HorizontalExpand="True" />
