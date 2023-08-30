@@ -21,10 +21,8 @@ namespace Content.Client.FlavorText
             IoCManager.InjectDependencies(this);
 
             var loc = IoCManager.Resolve<ILocalizationManager>();
-            //TODO: FlavorText to TextArea
-            //CFlavorTextInput.Placeholder = new Rope.Leaf(loc.GetString("flavor-text-placeholder"));
-            //CFlavorTextInput.OnKeyBindDown  += _ => FlavorTextChanged();
-            CFlavorTextInput.OnTextChanged += _ => FlavorTextChanged();
+            CFlavorTextInput.Placeholder = new Rope.Leaf(loc.GetString("flavor-text-placeholder"));
+            CFlavorTextInput.OnKeyBindDown  += _ => FlavorTextChanged();
 
             _flavorTextRulesLabel.SetMarkup($"[color=yellow]{Loc.GetString(
                 "Описание вашего персонажа имеет некоторые правила, созданные для того, чтобы наладить в них описание:\r\n1. Никакой биографии. \"Жил на севере\", и всё подобное, что задевает историю самого персонажа - не должно присутствовать в описании.\r\n2. Ничего из желаний, мотиваций персонажа.\r\n3. Само описание должно нести внешний вид персонажа, с учётом того, что может быть скрыто одеждой в каких-то случаях.\r\n4. Описание должно говорить о росте персонажа и его внешнем телосложении."
@@ -36,7 +34,7 @@ namespace Content.Client.FlavorText
 
         public void FlavorTextChanged()
         {
-            OnFlavorTextChanged?.Invoke(CFlavorTextInput.Text);
+            OnFlavorTextChanged?.Invoke(Rope.Collapse(CFlavorTextInput.TextRope).Trim());
         }
         public void NoERPLabelInfo()
         {
