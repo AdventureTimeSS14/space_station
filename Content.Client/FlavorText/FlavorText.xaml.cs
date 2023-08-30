@@ -21,7 +21,8 @@ namespace Content.Client.FlavorText
             IoCManager.InjectDependencies(this);
 
             var loc = IoCManager.Resolve<ILocalizationManager>();
-            CFlavorTextInput.Placeholder = new Rope.Leaf(loc.GetString("flavor-text-placeholder"));
+            //TODO: FlavorText to TextArea
+            //CFlavorTextInput.Placeholder = new Rope.Leaf(loc.GetString("flavor-text-placeholder"));
             //CFlavorTextInput.OnKeyBindDown  += _ => FlavorTextChanged();
             CFlavorTextInput.OnTextChanged += _ => FlavorTextChanged();
 
