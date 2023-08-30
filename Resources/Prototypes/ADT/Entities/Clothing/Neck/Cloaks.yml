@@ -25,3 +25,12 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Neck/Cloaks/pyotr_cloak.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckHoPAltCloak
+  name: HoP parade cloak
+  description: Cloak for Head of Personell for special events.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/Cloaks/HoP_alt_cloak.rsi

@@ -137,3 +137,19 @@
     whitelist:
       tags:
       - NukeOpsUplink
+
+- type: listing
+  id: ADTUplinkXC67AmmoBundle
+  name: uplink-XC67-ammo-bundle-name
+  description: uplink-XC67-ammo-bundle-desc
+  icon: { sprite: /Textures/ADT/Objects/Weapons/Guns/Rifels/xc67.rsi, state: icon}
+  productEntity: ADTClothingBackpackDuffelSyndicateFilledXC67
+  cost:
+    Telecrystal: 18
+  categories:
+  - UplinkBundles 
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
