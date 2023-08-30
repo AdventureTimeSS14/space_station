@@ -907,7 +907,7 @@ namespace Content.Client.Preferences.UI
 
         private void UpdateFlavorTextEdit()
         {
-            if (_flavorTextEdit != null)
+            if(_flavorTextEdit != null)
             {
                 _flavorTextEdit.Text = Profile?.FlavorText ?? "";
             }
@@ -972,41 +972,41 @@ namespace Content.Client.Preferences.UI
             switch (skin)
             {
                 case HumanoidSkinColor.HumanToned:
+                {
+                    if (!_skinColor.Visible)
                     {
-                        if (!_skinColor.Visible)
-                        {
-                            _skinColor.Visible = true;
-                            _rgbSkinColorContainer.Visible = false;
-                        }
-
-                        _skinColor.Value = SkinColor.HumanSkinToneFromColor(Profile.Appearance.SkinColor);
-
-                        break;
+                        _skinColor.Visible = true;
+                        _rgbSkinColorContainer.Visible = false;
                     }
+
+                    _skinColor.Value = SkinColor.HumanSkinToneFromColor(Profile.Appearance.SkinColor);
+
+                    break;
+                }
                 case HumanoidSkinColor.Hues:
+                {
+                    if (!_rgbSkinColorContainer.Visible)
                     {
-                        if (!_rgbSkinColorContainer.Visible)
-                        {
-                            _skinColor.Visible = false;
-                            _rgbSkinColorContainer.Visible = true;
-                        }
-
-                        // set the RGB values to the direct values otherwise
-                        _rgbSkinColorSelector.Color = Profile.Appearance.SkinColor;
-                        break;
+                        _skinColor.Visible = false;
+                        _rgbSkinColorContainer.Visible = true;
                     }
+
+                    // set the RGB values to the direct values otherwise
+                    _rgbSkinColorSelector.Color = Profile.Appearance.SkinColor;
+                    break;
+                }
                 case HumanoidSkinColor.TintedHues:
+                {
+                    if (!_rgbSkinColorContainer.Visible)
                     {
-                        if (!_rgbSkinColorContainer.Visible)
-                        {
-                            _skinColor.Visible = false;
-                            _rgbSkinColorContainer.Visible = true;
-                        }
-
-                        // set the RGB values to the direct values otherwise
-                        _rgbSkinColorSelector.Color = Profile.Appearance.SkinColor;
-                        break;
+                        _skinColor.Visible = false;
+                        _rgbSkinColorContainer.Visible = true;
                     }
+
+                    // set the RGB values to the direct values otherwise
+                    _rgbSkinColorSelector.Color = Profile.Appearance.SkinColor;
+                    break;
+                }
             }
 
         }
@@ -1100,7 +1100,7 @@ namespace Content.Client.Preferences.UI
 
             // hair color
             Color? hairColor = null;
-            if (Profile.Appearance.HairStyleId != HairStyles.DefaultHairStyle &&
+            if ( Profile.Appearance.HairStyleId != HairStyles.DefaultHairStyle &&
                 _markingManager.Markings.TryGetValue(Profile.Appearance.HairStyleId, out var hairProto)
             )
             {
@@ -1118,7 +1118,7 @@ namespace Content.Client.Preferences.UI
             }
             if (hairColor != null)
             {
-                CMarkings.HairMarking = new(Profile.Appearance.HairStyleId, new List<Color>() { hairColor.Value });
+                CMarkings.HairMarking = new (Profile.Appearance.HairStyleId, new List<Color>() { hairColor.Value });
             }
             else
             {
@@ -1135,7 +1135,7 @@ namespace Content.Client.Preferences.UI
 
             // facial hair color
             Color? facialHairColor = null;
-            if (Profile.Appearance.FacialHairStyleId != HairStyles.DefaultFacialHairStyle &&
+            if ( Profile.Appearance.FacialHairStyleId != HairStyles.DefaultFacialHairStyle &&
                 _markingManager.Markings.TryGetValue(Profile.Appearance.FacialHairStyleId, out var facialHairProto)
             )
             {
@@ -1153,7 +1153,7 @@ namespace Content.Client.Preferences.UI
             }
             if (facialHairColor != null)
             {
-                CMarkings.FacialHairMarking = new(Profile.Appearance.FacialHairStyleId, new List<Color>() { facialHairColor.Value });
+                CMarkings.FacialHairMarking = new (Profile.Appearance.FacialHairStyleId, new List<Color>() { facialHairColor.Value });
             }
             else
             {
@@ -1296,7 +1296,7 @@ namespace Content.Client.Preferences.UI
                     Text = Loc.GetString("role-timer-locked"),
                     Visible = true,
                     HorizontalAlignment = HAlignment.Center,
-                    StyleClasses = { StyleBase.StyleClassLabelSubText },
+                    StyleClasses = {StyleBase.StyleClassLabelSubText},
                 };
 
                 _lockStripe = new StripeBack()
@@ -1313,7 +1313,7 @@ namespace Content.Client.Preferences.UI
 
                 _jobTitle = new Label()
                 {
-                    Margin = new Thickness(5f, 0, 5f, 0),
+                    Margin = new Thickness(5f,0,5f,0),
                     Text = job.LocalizedName,
                     MinSize = new Vector2(200, 0),
                     MouseFilter = MouseFilterMode.Stop
@@ -1403,7 +1403,7 @@ namespace Content.Client.Preferences.UI
             {
                 Antag = antag;
 
-                _checkBox = new CheckBox { Text = Loc.GetString(antag.Name) };
+                _checkBox = new CheckBox {Text = Loc.GetString(antag.Name)};
                 _checkBox.OnToggled += OnCheckBoxToggled;
 
                 if (antag.Description != null)
@@ -1445,7 +1445,7 @@ namespace Content.Client.Preferences.UI
             {
                 Trait = trait;
 
-                _checkBox = new CheckBox { Text = Loc.GetString(trait.Name) };
+                _checkBox = new CheckBox {Text = Loc.GetString(trait.Name)};
                 _checkBox.OnToggled += OnCheckBoxToggled;
 
                 if (trait.Description is { } desc)

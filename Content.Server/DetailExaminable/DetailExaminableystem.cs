@@ -1,4 +1,5 @@
 using Content.Shared.Examine;
+using Content.Shared.IdentityManagement;
 using Content.Shared.Verbs;
 using Content.Shared.Sirena;
 using Robust.Shared.Utility;
@@ -21,7 +22,9 @@ namespace Content.Server.DetailExaminable
 
         private void OnGetExamineVerbs(EntityUid uid, DetailExaminableComponent component, GetVerbsEvent<ExamineVerb> args)
         {
-            // TODO: Hide if identity isn't visible (when identity is merged)
+            if (Identity.Name(args.Target, EntityManager) != MetaData(args.Target).EntityName)
+                return;
+
             var detailsRange = _examineSystem.IsInDetailsRange(args.User, uid);
 
             var verb = new ExamineVerb()
