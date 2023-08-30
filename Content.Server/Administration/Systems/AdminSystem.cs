@@ -1,11 +1,11 @@
-using System.Globalization;
 using System.Linq;
 using Content.Server.Administration.Managers;
 using Content.Server.Corvax.Sponsors;
 using Content.Server.GameTicking.Events;
 using Content.Server.IdentityManagement;
-using Content.Server.Players;
+using Content.Server.Mind;
 using Content.Server.Roles;
+using Content.Server.Roles.Jobs;
 using Content.Shared.Administration;
 using Content.Shared.Administration.Events;
 using Content.Shared.GameTicking;
@@ -21,6 +21,9 @@ namespace Content.Server.Administration.Systems
     {
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly IAdminManager _adminManager = default!;
+        [Dependency] private readonly JobSystem _jobs = default!;
+        [Dependency] private readonly MindSystem _minds = default!;
+        [Dependency] private readonly RoleSystem _role = default!;
         [Dependency] private readonly SponsorsManager _sponsorManager = default!;
 
         private readonly Dictionary<NetUserId, PlayerInfo> _playerList = new();
@@ -104,10 +107,10 @@ namespace Content.Server.Administration.Systems
 
         private void OnRoleEvent(RoleEvent ev)
         {
-            if (!ev.Role.Antagonist || ev.Role.Mind.Session == null)
+            if (!ev.Antagonist || ev.Mind.Session == null)
                 return;
 
-            UpdatePlayerList(ev.Role.Mind.Session);
+            UpdatePlayerList(ev.Mind.Session);
         }
 
         private void OnAdminPermsChanged(AdminPermsChangedEventArgs obj)
@@ -171,12 +174,13 @@ namespace Content.Server.Administration.Systems
                 identityName = Identity.Name(session.AttachedEntity.Value, EntityManager);
             }
 
-            var mind = data.ContentData()?.Mind;
-
-            var job = mind?.AllRoles.FirstOrDefault(role => role is Job);
-            var startingRole = job != null ? CultureInfo.CurrentCulture.TextInfo.ToTitleCase(job.Name) : string.Empty;
-
-            var antag = mind?.AllRoles.Any(r => r.Antagonist) ?? false;
+            var antag = false;
+            var startingRole = string.Empty;
+            if (_minds.TryGetMind(session, out var mindId, out _))
+            {
+                antag = _role.MindIsAntagonist(mindId);
+                startingRole = _jobs.MindTryGetJobName(mindId);
+            }
 
             var connected = session != null && session.Status is SessionStatus.Connected or SessionStatus.InGame;
 
