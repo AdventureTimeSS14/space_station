@@ -215,7 +215,7 @@
     contents:
       - id: MedkitFilled
       - id: ClothingHandsGlovesNitrile
-      - name: ClothingEyesHudMedical #Removed until working properly
+      - id: ClothingEyesHudMedical #Removed until working properly
       - id: ClothingHeadsetAltMedical
       - id: ClothingCloakCmo
       - id: ClothingBackpackDuffelSurgeryFilled
@@ -245,7 +245,7 @@
     contents:
       - id: MedkitFilled
       - id: ClothingHandsGlovesNitrile
-      - name: ClothingEyesHudMedical #Removed until working properly
+      - id: ClothingEyesHudMedical #Removed until working properly
       - id: ClothingHeadsetAltMedical
       - id: ClothingCloakCmo
       - id: ClothingBackpackDuffelSurgeryFilled
