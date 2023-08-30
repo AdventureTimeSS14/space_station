@@ -125,7 +125,7 @@ namespace Content.Client.Preferences.UI
             _configurationManager = configurationManager;
             _markingManager = IoCManager.Resolve<MarkingManager>();
 
-            #region Left
+             #region Left
 
             #region Randomize
 
@@ -411,7 +411,7 @@ namespace Content.Client.Preferences.UI
             foreach (var antag in prototypeManager.EnumeratePrototypes<AntagPrototype>().OrderBy(a => Loc.GetString(a.Name)))
             {
                 bool check = false;
-                if (playTime.IsAllowed(antag, out var reason))
+                if (_requirements.IsAllowed(antag, out var reason))
                 {
                     check = true;
                 }
@@ -421,7 +421,6 @@ namespace Content.Client.Preferences.UI
                     continue;
                 }
 
-                var selector = new AntagPreferenceSelector(antag);
                 var selector = new AntagPreferenceSelector(antag, check);
                 selector.Preference = false;
                 _antagList.AddChild(selector);
