@@ -161,3 +161,21 @@
   components:
   - type: Sprite
     sprite: Sirena/Clothing/Underwear/Bottom/heads/rd/panties.rsi
+
+- type: entity
+  parent: ClothingUnderwearBottomBase
+  id: ADTClothingUnderwearBottomMonokiniWhite
+  name: white monokini bottom
+  description: monokini bottom. Painted white.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/monokini_bottom_white.rsi
+
+- type: entity
+  parent: ClothingUnderwearBottomBase
+  id: ADTClothingUnderwearBottomMonokiniBlack
+  name: black monokini bottom
+  description: monokini bottom. Painted black.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/monokini_bottom_black.rsi

@@ -40,3 +40,17 @@
   - type: Fiber
     fiberMaterial: fibers-synthetic
     fiberColor: fibers-black
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsRabbitGloves
+  name: Rabbit Gloves
+  description: Shhh. Furry.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/rabbit_gloves.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/rabbit_gloves.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+  - type: FingerprintMask

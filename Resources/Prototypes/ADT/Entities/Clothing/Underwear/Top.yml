@@ -105,3 +105,21 @@
   components:
   - type: Sprite
     sprite: Sirena/Clothing/Underwear/Top/heads/rd/bra.rsi
+
+- type: entity
+  parent: ClothingUnderwearTopBase
+  id: ADTClothingUnderwearTopMonokiniWhite
+  name: white monokini top
+  description: monokini top. Painted white.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/monokini_top_white.rsi
+
+- type: entity
+  parent: ClothingUnderwearTopBase
+  id: ADTClothingUnderwearTopMonokiniBlack
+  name: black monokini top
+  description: monokini top. Painted black.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/monokini_top_black.rsi
