@@ -2,7 +2,7 @@
   name: TelescopicBaton
   parent: BaseItem
   id: ADTtelescopicBaton
-  description: Very loud and very dangerous energy sword that can reflect shots. Can be stored in pockets when turned off.
+  description: Big, dangerous telescopic baton. Can be stored in pockets when turned off.
   components:
   - type: Sprite
     sprite: ADT/Objects/Weapons/Melee/telescopic_baton.rsi
@@ -15,7 +15,7 @@
     #bonkSound: "/Audio/ADT/bonk_dubinka.ogg"
     damageOpen:
       types:
-        Blunt: 0
+        Blunt: 2.4
     damageFolded:
       types:
         Blunt: 0
@@ -28,7 +28,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 0
+        Blunt: 2.4
   - type: Item
     size: 5
     sprite: ADT/Objects/Weapons/Melee/telescopic_baton.rsi
@@ -48,7 +48,7 @@
   name: TelescopicBatonBob
   parent: BaseItem
   id: ADTtelescopicBatonBob
-  description: Very loud and very dangerous energy sword that can reflect shots. Can be stored in pockets when turned off.
+  description: Big, dangerous telescopic baton. Can be stored in pockets when turned off.
   components:
   - type: Sprite
     sprite: ADT/Objects/Weapons/Melee/telescopic_baton_bob.rsi
@@ -61,12 +61,12 @@
     #bonkSound: "/Audio/ADT/bonk_dubinka.ogg"
     damageOpen:
       types:
-        Blunt: 6
+        Blunt: 2.4
     damageFolded:
       types:
         Blunt: 0
     staminaDamageFolded: 0
-    staminaDamageOpen: 21
+    staminaDamageOpen: 35
     sizeOpened: 15
     sizeClosed: 5
   - type: StaminaDamageOnHit
@@ -74,7 +74,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 6
+        Blunt: 2.4
   - type: Item
     size: 5
     sprite: ADT/Objects/Weapons/Melee/telescopic_baton_bob.rsi
@@ -96,7 +96,7 @@
   name: TelescopicBatonKon
   parent: BaseItem
   id: ADTtelescopicBatonKon
-  description: Very loud and very dangerous energy sword that can reflect shots. Can be stored in pockets when turned off.
+  description: Big, dangerous telescopic baton. Can be stored in pockets when turned off.
   components:
   - type: Sprite
     sprite: ADT/Objects/Weapons/Melee/telescopic_baton_kon.rsi
@@ -109,12 +109,12 @@
     #bonkSound: "/Audio/ADT/bonk_dubinka.ogg"
     damageOpen:
       types:
-        Blunt: 6
+        Blunt: 2.4
     damageFolded:
       types:
         Blunt: 0
     staminaDamageFolded: 0
-    staminaDamageOpen: 21
+    staminaDamageOpen: 35
     sizeOpened: 15
     sizeClosed: 5
   - type: StaminaDamageOnHit
@@ -122,7 +122,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 6
+        Blunt: 2.4
   - type: Item
     size: 5
     sprite: ADT/Objects/Weapons/Melee/telescopic_baton_kon.rsi
