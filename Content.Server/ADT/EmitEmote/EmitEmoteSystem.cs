@@ -1,8 +1,4 @@
-/// <summary>
-/// This system can be used for send emote-message to clients when some custom item was used.
-///
 /// by ModerN, mailto:modern-nm@yandex.by or https://github.com/modern-nm. Discord: modern.df
-/// </summary>
 
 using Content.Server.Chat.Systems;
 using Content.Shared.ADT;
@@ -10,6 +6,9 @@ using Content.Shared.Interaction.Events;
 
 namespace Content.Server.ADT;
 
+/// <summary>
+/// This system can be used for send emote-message to clients when some custom item was used.
+/// </summary>
 public sealed class EmitEmoteSystem : EntitySystem
 {
     public override void Initialize()

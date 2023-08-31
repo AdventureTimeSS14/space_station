@@ -1,13 +1,9 @@
-using Content.Shared.Chat.Prototypes;
-using Robust.Shared.GameStates;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+/// by ModerN, mailto:modern-nm@yandex.by or https://github.com/modern-nm. Discord: modern.df
 namespace Content.Shared.ADT
 {
+    /// <summary>
+    /// Base emote emitter.
+    /// </summary>
     public abstract partial class BaseEmitEmoteComponent : Component
     {
         [ViewVariables(VVAccess.ReadWrite)]
