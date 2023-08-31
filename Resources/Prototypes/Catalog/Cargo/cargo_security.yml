@@ -75,7 +75,7 @@
     sprite: Structures/Storage/closet.rsi
     state: brigmedlocked
   product: LockerBrigmedicFilled
-  cost: 3400
+  cost: 3800
   category: Security
   group: market
 
