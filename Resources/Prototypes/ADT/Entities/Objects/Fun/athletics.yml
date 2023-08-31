@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseItem
   id: ADTDumbbell
-  name: Dumbbell
+  name: dumbbell
   description: Dumbbell. It smells like your sweat
   components:
   - type: Sprite
@@ -9,6 +9,24 @@
     state: icon
   - type: Item
     sprite: ADT/Objects/Fun/dumbbell.rsi
+    size: 5
+  - type: ItemCooldown
+  - type: EmitEmoteOnUse #handler and component
+    emote: WorkOut #emoteID
+  - type: UseDelay # cooldown
+    delay: 0.5
+
+- type: entity
+  parent: BaseItem
+  id: ADTKettlebell
+  name: kettlebell
+  description: Kettlebell. It smells like your sweat
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/kettlebell.rsi
+    state: icon
+  - type: Item
+    sprite: ADT/Objects/Fun/kettlebell.rsi
     size: 5
   - type: ItemCooldown
 #  - type: Tool

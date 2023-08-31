@@ -10,7 +10,8 @@ using Content.Shared.Interaction.Events;
 
 namespace Content.Server.ADT;
 
-public sealed class EmitEmoteSystem : EntitySystem {
+public sealed class EmitEmoteSystem : EntitySystem
+{
     public override void Initialize()
     {
         base.Initialize();
@@ -26,22 +27,19 @@ public sealed class EmitEmoteSystem : EntitySystem {
             args.Handled = true;
     }
 
+    /// <summary>
+    /// This method makes user of entity (if it has EmitEmoteOnUseComponent) to call emote. watch Resources/ADT/Entities/Objects/Fun/athletics.yml — dumbbell
+    /// </summary>
     private void TryEmitEmote(EntityUid uid, EmitEmoteOnUseComponent component, EntityUid? user = null, bool predict = true)
     {
+        if (user == null)
+            return;
         if (component.EmoteType == null)
             return;
 
-        TryPrototype(uid, out var prototype);
-        if (prototype != null)
-            if (prototype.ID.ToLower() == "adtdumbbell")
-            {
-                EntityManager.TrySystem<ChatSystem>(out var chatSystem);
-                if (chatSystem != null && user != null)
-                {
-
-                    chatSystem.TryEmoteWithChat((EntityUid) user, component.EmoteType); //Resources\Prototypes\Voice\speech_emotes.yml
-                    //chatSystem.TrySendInGameICMessage((EntityUid) user, component.EmoteType, InGameICChatType.Emote, false);
-                }
-            }
+        if(EntityManager.TrySystem<ChatSystem>(out var chatSystem)) 
+        {
+            chatSystem.TryEmoteWithChat((EntityUid) user, component.EmoteType);
+        }
     }
 }

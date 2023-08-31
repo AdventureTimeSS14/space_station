@@ -272,7 +272,7 @@
   chatTriggers:
   - deathgasp
 
-- type: emote
+- type: emote # эмоция work out
   id: WorkOut
   chatMessages: ["качается"]
   chatTriggers:
