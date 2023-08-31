@@ -271,3 +271,12 @@
   chatMessages: ["emote-deathgasp"]
   chatTriggers:
   - deathgasp
+
+- type: emote
+  id: WorkOut
+  chatMessages: ["качается"]
+  chatTriggers:
+    - works out
+    - bigs up
+    - buffs up
+    - качается

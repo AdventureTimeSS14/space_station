@@ -1,0 +1,27 @@
+- type: entity
+  parent: BaseItem
+  id: ADTDumbbell
+  name: Dumbbell
+  description: Dumbbell. It smells like your sweat
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/dumbbell.rsi
+    state: icon
+  - type: Item
+    sprite: ADT/Objects/Fun/dumbbell.rsi
+    size: 5
+  - type: ItemCooldown
+#  - type: Tool
+#    qualities:
+#    - Honking
+#    useSound:
+#      collection: BikeHorn
+#  - type: EmitSoundOnUse # action on use
+#    sound:
+#      collection: BikeHorn
+#      params:
+#        variation: 0.125
+  - type: EmitEmoteOnUse
+    emote: WorkOut
+  - type: UseDelay # cooldown
+    delay: 0.5
