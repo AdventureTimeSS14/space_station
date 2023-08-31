@@ -9,7 +9,7 @@
       - id: JawsOfLife
 
 - type: entity
-  parent: ClothingBackpackDuffelSyndicateAmmoBundle
+  parent: ClothingBackpackDuffelSyndicateBundle
   id: ADTClothingBackpackDuffelSyndicateFilledAKMS
   name: AKMS bundle
   description: "Old faithful: The classic C-20r Submachine Gun, bundled with three magazines." #, and a Suppressor.
@@ -81,13 +81,24 @@
         amount: 2
 
 - type: entity
-  parent: ClothingBackpackDuffelSyndicateAmmoBundle
+  parent: ClothingBackpackDuffelSyndicateBundle
   id: ADTClothingBackpackDuffelSyndicateFilledXC67
-  name: uplink-XC67-ammo-bundle-name
-  description: uplink-XC67-ammo-bundle-desc #, and a Suppressor.
+  name: uplink-XC67-bundle-name
+  description: uplink-XC67-bundle-desc #, and a Suppressor.
   components:
   - type: StorageFill
     contents:
       - id: ADTWeaponRifleXC67
       - id: ADTExtMagazineRifle
         amount: 2
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateAmmoBundle
+  id: ADTClothingBackpackDuffelSyndicateFilledXC67Ammo
+  name: uplink-XC67-ammo-bundle-name
+  description: uplink-XC67-ammo-bundle-desc 
+  components:
+  - type: StorageFill
+    contents:
+      - id: ADTExtMagazineRifle
+        amount: 3

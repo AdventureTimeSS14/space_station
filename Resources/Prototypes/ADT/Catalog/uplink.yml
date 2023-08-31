@@ -139,15 +139,31 @@
       - NukeOpsUplink
 
 - type: listing
-  id: ADTUplinkXC67AmmoBundle
-  name: uplink-XC67-ammo-bundle-name
-  description: uplink-XC67-ammo-bundle-desc
+  id: ADTUplinkXC67Bundle
+  name: Набор с штурмовой винтовкой нового поколения
+  description: Намного лучше всего того дерьма что используют на станции
   icon: { sprite: /Textures/ADT/Objects/Weapons/Guns/Rifels/xc67.rsi, state: icon}
   productEntity: ADTClothingBackpackDuffelSyndicateFilledXC67
   cost:
     Telecrystal: 18
   categories:
   - UplinkBundles 
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: ADTUplinkXC67AmmoBundle
+  name: Набор патрон для штурмовой винтовки нового поколения
+  description: содержит 3 запасных магазина для штурмовой винтовки
+  icon: { sprite: /Textures/ADT/Objects/Weapons/Guns/Ammunition/Magazine/ext_rifle_mag.rsi, state: base }
+  productEntity: ADTClothingBackpackDuffelSyndicateFilledXC67Ammo
+  cost:
+    Telecrystal: 12
+  categories:
+  - UplinkAmmo 
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
