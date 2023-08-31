@@ -267,6 +267,10 @@
       - WelderExperimental
       - JawsOfLife
       - ClothingEyesGlassesChemical
+      - ClothingEyesHudDiagnostic #Sirena T4 add
+      - ClothingEyesHudMedical #Sirena T4 add
+      - ClothingEyesHudSecurity #Sirena T4 add
+      - ADTClothingEyesHudAdvanced #Sirena T4 add
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ExplosivePayload

@@ -14,11 +14,11 @@
   - type: Clothing
     sprite: ADT/Objects/Weapons/Guns/Rifels/xc67.rsi
   - type: Gun
-    minAngle: 2
-    maxAngle: 8
-    fireRate: 7
-    angleIncrease: 1
-    angleDecay: 12
+    #minAngle: 2
+    #maxAngle: 8
+    #fireRate: 7
+    #angleIncrease: 1
+    #angleDecay: 12
     selectedMode: FullAuto
     availableModes:
     - SemiAuto

@@ -9483,22 +9483,6 @@ entities:
       pos: -2.7859645,-9.918386
       parent: 1399
       type: Transform
-- proto: WindoorChemistryLocked
-  entities:
-  - uid: 492
-    components:
-    - rot: 3.141592653589793 rad
-      pos: -19.5,3.5
-      parent: 1399
-      type: Transform
-- proto: WindoorMedicalLocked
-  entities:
-  - uid: 294
-    components:
-    - rot: 3.141592653589793 rad
-      pos: -16.5,-5.5
-      parent: 1399
-      type: Transform
 - proto: WindowReinforcedDirectional
   entities:
   - uid: 296
