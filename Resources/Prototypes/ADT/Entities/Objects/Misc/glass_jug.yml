@@ -14,6 +14,8 @@
         visible: false
       - state: icon-front
         map: [ "enum.SolutionContainerLayers.Overlay" ]
+  - type: Item
+    size: 15
   - type: Appearance
   - type: SolutionContainerManager
     solutions:
