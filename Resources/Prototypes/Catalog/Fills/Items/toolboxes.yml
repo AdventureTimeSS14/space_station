@@ -18,6 +18,7 @@
         orGroup: HarmonicaOrChocolate
       - id: FoodSnackChocolate
         orGroup: HarmonicaOrChocolate
+      - id: DrinkWaterBottleFull
 
 - type: entity
   id: ToolboxElectricalFilled

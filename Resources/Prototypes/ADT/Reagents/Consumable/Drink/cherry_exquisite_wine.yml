@@ -5,7 +5,7 @@
   desc: cherry-exq-wine-desc
   physicalDesc: reagent-physical-desc-translucent
   flavor: ADTCherryExquisiteWineFlavor
-  color: "#7E4043"
+  color: "#A33E43"
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/cherryexquisitewineglass.rsi
     state: icon
