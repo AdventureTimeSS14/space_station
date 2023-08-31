@@ -9,9 +9,11 @@ uplink-C20-ammo-bundle-desc = набор содержащий 4 запасных
 uplink-Buldog-ammo-bundle-name = Набор патрон Бульдог
 uplink-Buldog-ammo-bundle-desc = набор содержащий 4 запасных магазина по цене 3.
 uplink-BuldogXL-ammo-bundle-name = Набор XL магазинов для Бульдога
-uplink-BuldogXL-ammo-bundle-desc = набор содержащий 3 XL магазина бульдог
-uplink-XC67-ammo-bundle-name = набор xC-67
-uplink-XC67-ammo-bundle-desc = набор, содержащий штурмовую винтовку хС-67 и два магазина к ней
+uplink-BuldogXL-ammo-bundle-desc = набор содержащий 4 XL магазина бульдог
+uplink-XC67-bundle-name = набор xC-67
+uplink-XC67-bundle-desc = набор, содержащий штурмовую винтовку хС-67 и два магазина к ней
+uplink-XC67-ammo-bundle-name = набор магазинов штурмовой винтовки xC-67
+uplink-XC67-ammo-bundle-desc = набор, содержащий три магазина штурмовой винтовки xC67
 
 ent-ADTClothingBackpackDuffelSyndicateFilledXC67 = набор xC-67
     .desc = набор, содержащий штурмовую винтовку хС-67 и два магазина к ней
