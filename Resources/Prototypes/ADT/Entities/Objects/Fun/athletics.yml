@@ -9,12 +9,12 @@
     state: icon
   - type: Item
     sprite: ADT/Objects/Fun/dumbbell.rsi
-    size: 5
+    size: 30
   - type: ItemCooldown
   - type: EmitEmoteOnUse #handler and component
     emote: WorkOut #emoteID
   - type: UseDelay # cooldown
-    delay: 0.5
+    delay: 5
 
 - type: entity
   parent: BaseItem
@@ -27,7 +27,7 @@
     state: icon
   - type: Item
     sprite: ADT/Objects/Fun/kettlebell.rsi
-    size: 5
+    size: 50
   - type: ItemCooldown
 #  - type: Tool
 #    qualities:
@@ -42,4 +42,4 @@
   - type: EmitEmoteOnUse
     emote: WorkOut
   - type: UseDelay # cooldown
-    delay: 0.5
+    delay: 15
