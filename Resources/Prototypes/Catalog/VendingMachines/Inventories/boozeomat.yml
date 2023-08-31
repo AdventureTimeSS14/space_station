@@ -11,6 +11,7 @@
     DrinkVacuumFlask: 5
     DrinkFlaskBar: 5
     DrinkShaker: 5
+    ADTDrinkGlassJug: 3
     DrinkAbsintheBottleFull: 2
     DrinkAleBottleFull: 5
     DrinkBeerBottleFull: 5
@@ -20,6 +21,7 @@
     DrinkCreamCarton: 5
     ADTReagentContainerCocoaSolid: 3
     ADTIcePacket: 3
+    DrinkWaterBottleFull: 10
     DrinkGinBottleFull: 3
     DrinkGoldschlagerBottleFull: 1
     DrinkGrenadineBottleFull: 2

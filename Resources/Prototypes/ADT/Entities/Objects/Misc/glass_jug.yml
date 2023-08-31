@@ -1,0 +1,26 @@
+- type: entity
+  name: Glass jug
+  description: A glass jug. Perfect container for lemonade
+  parent: DrinkGlassBase
+  id: ADTDrinkGlassJug
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Misc/glass_jug.rsi
+    layers:
+      - state: icon
+        map: [ "enum.SolutionContainerLayers.Base" ]
+      - state: fill1
+        map: [ "enum.SolutionContainerLayers.Fill" ]
+        visible: false
+      - state: icon-front
+        map: [ "enum.SolutionContainerLayers.Overlay" ]
+  - type: Item
+    size: 15
+  - type: Appearance
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 150
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: fill

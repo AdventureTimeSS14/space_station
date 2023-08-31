@@ -5,7 +5,7 @@
   desc: vodka-antivirus-desc
   physicalDesc: reagent-physical-desc-overpowering
   flavor: ADTVodkaAntivirusFlavor
-  color: "#3E1B00"
+  color: "#d1d1d155"
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/vodka_antivirusglass.rsi
     state: icon
@@ -16,4 +16,4 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.7
+        amount: 0.9
