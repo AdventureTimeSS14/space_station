@@ -25,7 +25,7 @@
   desc: winter-sun-desc
   physicalDesc: reagent-physical-desc-milky
   flavor: ADTWinterSunFlavor
-  color: "#EFDECD"
+  color: "#edccab"
   recognizable: false
   metabolisms:
     Drink:
@@ -121,7 +121,7 @@
   desc: arctic-explosion-desc
   physicalDesc: reagent-physical-desc-refreshing
   flavor: ADTArcticExplosionFlavor
-  color: "#C2A894"
+  color: "#c5e3e2"
   recognizable: false
   metabolisms:
     Drink:
@@ -203,7 +203,7 @@
   desc: artic-latte-desc
   physicalDesc: reagent-physical-desc-refreshing
   flavor: ADTArcticLatteFlavor
-  color: "#C19A6B"
+  color: "#916631"
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
     state: adtarcticlatte
@@ -223,7 +223,7 @@
   desc: special-teaoolong-desc
   physicalDesc: reagent-physical-desc-overpowering
   flavor: ADTSpecialTeaOolongFlavor
-  color: "#EAE6CA"
+  color: "#8c492a"
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
     state: adtspecialteaoolong
@@ -243,7 +243,7 @@
   desc: azure-blue-desc
   physicalDesc: reagent-physical-desc-tropical
   flavor: ADTAzureBlueFlavor
-  color: "#102C54"
+  color: "#6498e3"
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
     state: adtazureblue
@@ -263,7 +263,7 @@
   desc: penetration-drink-desc
   physicalDesc: reagent-physical-desc-overpowering
   flavor: ADTPenetrationDrinkFlavor
-  color: "#AF4035"
+  color: "#6ddb6b"
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
     state: adtpenetrationdrink
@@ -283,7 +283,7 @@
   desc: eclipsed-eclipse-desc
   physicalDesc: reagent-physical-desc-overpowering
   flavor: ADTEclipsedEclispeFlavor
-  color: "#A3C6C0"
+  color: "#592506"
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
     state: adteclipsedeclispe
@@ -303,7 +303,7 @@
   desc: space-bush-desc
   physicalDesc: reagent-physical-desc-fizzy
   flavor: ADTSpaceBushFlavor
-  color: "#A3C6C0"
+  color: "#85de8e"
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
     state: adtspacebush
@@ -323,7 +323,7 @@
   desc: business-conversation-desc
   physicalDesc: reagent-physical-desc-overpowering
   flavor: ADTBusinessConversationFlavor
-  color: "#3E1B00"
+  color: "#a8140a"
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
     state: adtbizconversation
@@ -346,7 +346,8 @@
   desc: apple-liqueur-desc
   physicalDesc: reagent-physical-desc-cloudy
   flavor: ADTAppleLiqueurFlavor
-  color: "#664300"
+  color: "#47941b"
+  recognizable: true
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
     state: adtappleliqueur
@@ -386,7 +387,7 @@
   desc: bacardi-apple-desc
   physicalDesc: reagent-physical-desc-refreshing
   flavor: ADTBacardiAppleFlavor
-  color: "#C2A894"
+  color: "#d4f2a7"
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
     state: adtbacardiapple
