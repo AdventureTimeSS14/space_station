@@ -1,5 +1,6 @@
 using Robust.Shared.Prototypes;
 
+
 namespace Content.Shared.Roles
 {
     /// <summary>
@@ -8,10 +9,6 @@ namespace Content.Shared.Roles
     [Prototype("antag")]
     public sealed class AntagPrototype : IPrototype
     {
-        private string _name = string.Empty;
-        private string _objective = string.Empty;
-        private string? _description = string.Empty;
-
         [ViewVariables]
         [IdDataField]
         public string ID { get; private set; } = default!;
@@ -45,5 +42,9 @@ namespace Content.Shared.Roles
         /// </summary>
         [DataField("setPreference")]
         public bool SetPreference { get; private set; }
+
+
+        [DataField("requirements")]
+        public HashSet<JobRequirement>? Requirements;
     }
 }

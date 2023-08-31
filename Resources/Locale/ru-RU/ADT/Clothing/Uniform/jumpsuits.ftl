@@ -44,3 +44,15 @@ ent-ADTClothingUniformPyotrOfficialSuit = официальный пиджак П
 ent-ADTClothingUniformRitaBlackDress = черное платье Риты
     .desc = Черное платье, принадлежащее Рите Энглер. С рискованно большим вырезом
     .suffix = { "" }
+
+ent-ADTClothingUniformRabbitDress = кроличий купальник
+    .desc = А куда здесь крепить КПК?
+    .suffix = { "" }
+
+ent-ADTClothingUniformAbibasBlackSuit = черный спортивный костюм
+    .desc = Спортивка для четких пацанов
+    .suffix = { "" }
+
+ent-ADTClothingUniformAbibasWhiteSuit = белый спортивный костюм
+    .desc = Спортивка для блатных пацанов
+    .suffix = { "" }

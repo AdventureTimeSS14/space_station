@@ -200,3 +200,14 @@
     sprite: ADT/Clothing/Uniforms/Jumpskirt/rita_black_dress.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/rita_black_dress.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformRabbitDress
+  name: rabbit black dress
+  description: soo...how pick a PDA in this?
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/rabbit_dress.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/rabbit_dress.rsi

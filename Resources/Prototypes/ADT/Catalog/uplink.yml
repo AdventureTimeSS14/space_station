@@ -5,7 +5,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Rifles/ak.rsi, state: icon }
   productEntity: ADTClothingBackpackDuffelSyndicateFilledAKMS
   cost:
-    Telecrystal: 25
+    Telecrystal: 15
   categories:
   - UplinkBundles
 
@@ -49,7 +49,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Snipers/heavy_sniper.rsi, state: base }
   productEntity: ADTClothingBackpackDuffelSyndicateFilledHristov
   cost:
-    Telecrystal: 20
+    Telecrystal: 15
   categories:
   - UplinkBundles
   conditions:
@@ -132,6 +132,22 @@
     Telecrystal: 12
   categories:
   - UplinkAmmo 
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: ADTUplinkXC67AmmoBundle
+  name: uplink-XC67-ammo-bundle-name
+  description: uplink-XC67-ammo-bundle-desc
+  icon: { sprite: /Textures/ADT/Objects/Weapons/Guns/Rifels/xc67.rsi, state: icon}
+  productEntity: ADTClothingBackpackDuffelSyndicateFilledXC67
+  cost:
+    Telecrystal: 18
+  categories:
+  - UplinkBundles 
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:

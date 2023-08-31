@@ -160,3 +160,25 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/pyotr_officialsuit.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/pyotr_officialsuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformAbibasBlackSuit
+  name: black sport suit
+  description: Sportsuit for real buddies.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/black_abibas.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/black_abibas.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformAbibasWhiteSuit
+  name: white sport suit
+  description: Sportsuit for respectful buddies.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/white_abibas.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/white_abibas.rsi

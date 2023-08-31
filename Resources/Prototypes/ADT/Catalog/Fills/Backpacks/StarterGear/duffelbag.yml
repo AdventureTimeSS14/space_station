@@ -18,7 +18,7 @@
     contents:
       - id: WeaponRifleAk
       - id: MagazineLightRifle
-        amount: 3
+        amount: 4
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
@@ -30,7 +30,7 @@
     contents:
       - id: ADTWeaponSniperHristovII
       - id: ADTMagazineHriII
-        amount: 3
+        amount: 4
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
@@ -76,5 +76,18 @@
   - type: StorageFill
     contents:
       - id: ADTMagazineShotgunSlugXL
+      - id: ADTMagazineShotgunSlugXL
       - id: ADTMagazineShotgunXL
+        amount: 2
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateAmmoBundle
+  id: ADTClothingBackpackDuffelSyndicateFilledXC67
+  name: uplink-XC67-ammo-bundle-name
+  description: uplink-XC67-ammo-bundle-desc #, and a Suppressor.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ADTWeaponRifleXC67
+      - id: ADTExtMagazineRifle
         amount: 2

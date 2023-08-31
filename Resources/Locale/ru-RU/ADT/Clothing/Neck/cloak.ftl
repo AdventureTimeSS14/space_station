@@ -8,4 +8,8 @@ ent-ADTClothingNeckJeton = Армейский Жетон
 
 ent-ADTClothingNeckPyotrCloak = плащ Петра Шахина
     .desc = Темно-зеленый плащ, расшитый золотом
+    .suffix = { "" }
+
+ent-ADTClothingNeckHoPAltCloak = торжественный плащ Главы Персонала
+    .desc = Плащ Главы Персонала для особых случаев
     .suffix = { "" }    

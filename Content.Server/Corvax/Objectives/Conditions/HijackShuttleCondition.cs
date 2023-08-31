@@ -13,13 +13,13 @@ namespace Content.Server.Objectives.Conditions
     [DataDefinition]
     public sealed partial class HijackShuttleCondition : IObjectiveCondition
     {
-        private Mind.Mind? _mind;
+        private MindComponent? _mind;
 
-        public IObjectiveCondition GetAssigned(Mind.Mind mind)
+        public IObjectiveCondition GetAssigned(EntityUid mindId, MindComponent mind)
         {
             return new HijackShuttleCondition
             {
-                _mind = mind,
+                _mind = mind
             };
         }
 
@@ -53,15 +53,16 @@ namespace Content.Server.Objectives.Conditions
                 if (!entMan.TryGetComponent<MindContainerComponent>(entity, out var mind) || mind.Mind == null)
                     continue;
 
-                var isPersonTraitor = mindSystem.HasRole<TraitorRole>(mind.Mind);
-                if (!isPersonTraitor)
-                {
-                    var isPersonCuffed =
-                        entMan.TryGetComponent<CuffableComponent>(mind.Mind.OwnedEntity, out var cuffed)
-                        && cuffed.CuffedHandCount == 0;
-                    if (isPersonCuffed)
-                        return false; // Fail if some crew not cuffed
-                }
+                //TODO: Поификсить только трейторы могут воровать шатл
+                // var isPersonTraitor = mindSystem.HasRole<TraitorRole>(mind.Mind);
+                // if (!isPersonTraitor)
+                // {
+                //     var isPersonCuffed =
+                //         entMan.TryGetComponent<CuffableComponent>(mind.Mind.OwnedEntity, out var cuffed)
+                //         && cuffed.CuffedHandCount == 0;
+                //     if (isPersonCuffed)
+                //         return false; // Fail if some crew not cuffed
+                // }
             }
             // TODO: Allow pets?
 
