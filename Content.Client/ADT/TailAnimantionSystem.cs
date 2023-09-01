@@ -1,3 +1,9 @@
+/// <summary>
+/// This system can be used for send emote-message to clients when some custom item was used.
+///
+/// by ModerN, mailto:modern-nm@yandex.by or https://github.com/modern-nm. Discord: modern.df
+/// </summary>
+
 using Content.Shared.Damage;
 using Content.Shared.FixedPoint;
 using Content.Shared.Sprite;
