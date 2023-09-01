@@ -8,7 +8,22 @@
     },
     "states": [
         {
-            "name": "icon"
+            "name": "dumbbell20kg"
+        },
+        {
+            "name": "dumbbell15kg"
+        },
+        {
+            "name": "dumbbell10kg"
+        },
+        {
+            "name": "dumbbell8kg"
+        },
+        {
+            "name": "dumbbell5kg"
+        },
+        {
+            "name": "dumbbell2kg"
         },
         {
             "name": "inhand-left",
