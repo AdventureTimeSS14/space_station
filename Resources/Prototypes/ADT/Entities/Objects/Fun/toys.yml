@@ -303,3 +303,13 @@
   - type: Sprite
     sprite: ADT/Objects/Fun/toys.rsi
     state: plushie_iohan
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieDarina
+  name: Darina plushie
+  description: Soft and cuddly smelling plush toy that looks like it belonged to NT working in cargo.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_darina
