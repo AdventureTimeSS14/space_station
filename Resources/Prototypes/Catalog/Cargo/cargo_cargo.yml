@@ -7,3 +7,15 @@
   cost: 250
   category: Cargo
   group: market
+
+#by ADT
+
+- type: cargoProduct
+  id: ADTCargoUtilisatorComplect
+  icon:
+    sprite: Clothing/OuterClothing/Hardsuits/spatio.rsi
+    state: icon
+  product: ADTCargoUtilisatorComplectCrate
+  cost: 5000
+  category: Cargo
+  group: market
