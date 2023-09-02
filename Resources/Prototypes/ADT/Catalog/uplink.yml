@@ -145,7 +145,7 @@
   icon: { sprite: /Textures/ADT/Objects/Weapons/Guns/Rifels/xc67.rsi, state: icon}
   productEntity: ADTClothingBackpackDuffelSyndicateFilledXC67
   cost:
-    Telecrystal: 18
+    Telecrystal: 25
   categories:
   - UplinkBundles 
   conditions:
@@ -161,7 +161,7 @@
   icon: { sprite: /Textures/ADT/Objects/Weapons/Guns/Ammunition/Magazine/ext_rifle_mag.rsi, state: base }
   productEntity: ADTClothingBackpackDuffelSyndicateFilledXC67Ammo
   cost:
-    Telecrystal: 12
+    Telecrystal: 16
   categories:
   - UplinkAmmo 
   conditions:
