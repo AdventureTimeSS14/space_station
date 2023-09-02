@@ -5,3 +5,7 @@ ent-ADTClothingOuterJacketBartender = Барная жилетка
 ent-ADTClothingOuterCoatPyotrCoat = шинель Петра Шахина
     .desc = Темно-зеленая шинель. Кажется тяжелее, чем должна быть.
     .suffix = { "" }
+
+ent-ADTClothingOuterCoatHikeLabcoatCmo = походный халат главного врача
+    .desc = Частично открытый халат. Не сковывает движения.
+    .suffix = { "" }

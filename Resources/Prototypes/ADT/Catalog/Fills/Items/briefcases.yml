@@ -15,3 +15,19 @@
       - id: ADTClothingUniformPyotrUniform
       - id: ADTClothingUniformPyotrJumpsuit
       - id: ADTClothingUniformPyotrOfficialSuit
+
+- type: entity
+  id: ADTBriefcaseBrownHikingCmo
+  name: Chief medical officer's hiking briefcase
+  parent: BriefcaseBrown
+  suffix: Filled
+  components:
+  - type: Storage
+    capacity: 40
+  - type: StorageFill
+    contents:
+      - id: ADTClothingOuterCoatHikeLabcoatCmo
+      - id: ADTClothingUniformHikeJumpskirtCmo
+      - id: ADTClothingUniformHikeformCmo
+      - id: ADTClothingHighbootsCmo
+      - id: DrinkShinyFlask

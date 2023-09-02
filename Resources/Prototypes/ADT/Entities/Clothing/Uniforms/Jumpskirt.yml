@@ -200,3 +200,16 @@
     sprite: ADT/Clothing/Uniforms/Jumpskirt/rita_black_dress.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/rita_black_dress.rsi
+
+# CMO
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ADTClothingUniformHikeJumpskirtCmo
+  name: chief medical officer's hiking jumpskirt
+  description: Shirt and baggy skirt. Perfect for working in and out of medical departament.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/hike_jumpskirt_cmo.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/hike_jumpskirt_cmo.rsi
+

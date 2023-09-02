@@ -160,3 +160,14 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/pyotr_officialsuit.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/pyotr_officialsuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformHikeformCmo
+  name: chief medical officer's hiking uniform
+  description: Shirt and baggy pants. Perfect for working in and out of medical departament.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/hike_uniform_cmo.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/hike_uniform_cmo.rsi

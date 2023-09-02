@@ -8,3 +8,7 @@ ent-ADTClothingShoesBootsMagAdvSynd = Улучшенные магнитные б
 ent-ADTClothingSandals = сандалии
     .desc = Пара простых сандалей. НИ. В КОЕМ. СЛУЧАЕ. НЕ СОВМЕЩАТЬ. С НОСКАМИ
     .suffix = { "" }
+
+ent-ADTClothingHighbootsCmo = Сапоги главного врача
+    .desc = Пара высоких сапог, чтобы не заморать ноги во время ходьбы по лужам крови.
+    .suffix = { "" }

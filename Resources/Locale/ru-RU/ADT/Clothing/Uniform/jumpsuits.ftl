@@ -44,3 +44,11 @@ ent-ADTClothingUniformPyotrOfficialSuit = официальный пиджак П
 ent-ADTClothingUniformRitaBlackDress = черное платье Риты
     .desc = Черное платье, принадлежащее Рите Энглер. С рискованно большим вырезом
     .suffix = { "" }
+
+ent-ADTClothingUniformHikeformCmo = походный костюм главного врача
+    .desc = Рубашка и мешковитые штаны, отлично подходящие для активной работы как вне, так и внутри своего отдела.
+    .suffix = { "" }
+
+ent-ADTClothingUniformHikeJumpskirtCmo = походная юбка-костюм главного врача
+    .desc = Рубашка и мешковитая юбка, отлично подходящие для активной работы как вне, так и внутри своего отдела.
+    .suffix = { "" }
