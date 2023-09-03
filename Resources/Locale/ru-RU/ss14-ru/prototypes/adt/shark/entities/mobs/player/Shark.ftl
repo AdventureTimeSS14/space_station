@@ -1,2 +1,2 @@
-ent-MobShark = Акула
+ent-MobShark = Плафеим
     .desc = { ent-BaseMobShark.desc }
