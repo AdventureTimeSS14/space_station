@@ -50,6 +50,7 @@ job-name-senior-physician = Старший врач
 job-name-senior-researcher = Ведущий научный сотрудник
 job-name-senior-officer = Старший офицер
 job-name-senior-engineer = Ведущий инженер
+job-name-borg = Киборг
 # Role timers - Make these alphabetical or I cut you
 JobVirusolog = Вирусолог
 JobAtmosphericTechnician = Атмосферный техник

@@ -1,6 +1,6 @@
 - type: entity
   save: false
-  name: "Акула"
+  name: "Плафеим"
   parent: BaseMobShark
   id: MobShark
   components:

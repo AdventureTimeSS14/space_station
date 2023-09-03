@@ -1,1 +1,1 @@
-species-name-Shark = Акула
+species-name-Shark = Плафеим
