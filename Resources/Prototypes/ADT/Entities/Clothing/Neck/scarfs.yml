@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckScarfWindy
+  name:  a windy scarf
+  description: It's don't seem to be a wind here...
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/windyscarf.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Neck/windyscarf.rsi
