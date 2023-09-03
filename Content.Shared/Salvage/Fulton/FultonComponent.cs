@@ -32,7 +32,7 @@ public sealed partial class FultonComponent : Component
     /// How long the fulton will remain before teleporting to the beacon.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("duration")]
-    public TimeSpan FultonDuration = TimeSpan.FromSeconds(45);
+    public TimeSpan FultonDuration = TimeSpan.FromSeconds(15);
 
     [ViewVariables(VVAccess.ReadWrite), DataField("whitelist"), AutoNetworkedField]
     public EntityWhitelist? Whitelist = new()
@@ -42,6 +42,11 @@ public sealed partial class FultonComponent : Component
             "EntityStorage",
             "Item",
             "ReagentTank",
+            "Machine",
+            "Computer",
+            "VendingMachine",
+            "AtmosDevice",
+            "RadiationReceiver",
         }
     };
 
