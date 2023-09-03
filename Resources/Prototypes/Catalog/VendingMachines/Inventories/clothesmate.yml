@@ -63,32 +63,37 @@
     ClothingHeadHatFez: 2
     ClothingBeltStorageWaistbag: 3
     ADTClothingSandals: 5
-    ClothingUniformTurleneckBlack: 3
-    ClothingUniformTurleneckBlackWomen: 3
-    ClothingUniformTurleneckBlue: 3
-    ClothingUniformTurleneckBlueBlack: 3
-    ClothingUniformTurleneckBlueWomen: 3
-    ClothingUniformTurleneckGolub: 3
-    ClothingUniformTurleneckGolubBlack: 3
-    ClothingUniformTurleneckGolubWomen: 3
-    ClothingUniformTurleneckGreen: 3
-    ClothingUniformTurleneckGreenBlack: 3
-    ClothingUniformTurleneckGreenWomen: 3
-    ClothingUniformTurleneckOrange: 3
-    ClothingUniformTurleneckOrangeBlack: 3
-    ClothingUniformTurleneckOrangeWomen: 3
-    ClothingUniformTurleneckPurpur: 3
-    ClothingUniformTurleneckPurpurBlack: 3
-    ClothingUniformTurleneckPurpurWomen: 3
-    ClothingUniformTurleneckRed: 3
-    ClothingUniformTurleneckRedBlack: 3
-    ClothingUniformTurleneckRedWomen: 3
-    ClothingUniformTurleneckSalat: 3
-    ClothingUniformTurleneckSalatBlack: 3
-    ClothingUniformTurleneckSalatWomen: 3
-    ClothingUniformTurleneckWhite: 3
-    ClothingUniformTurleneckWhiteBlack: 3
-    ClothingUniformTurleneckWhiteWomen: 3
+    ADTClothingUniformTurleneckBlack: 3
+    ADTClothingUniformTurleneckBlackWomen: 3
+    ADTClothingUniformTurleneckBlue: 3
+    ADTClothingUniformTurleneckBlueBlack: 3
+    ADTClothingUniformTurleneckBlueWomen: 3
+    ADTClothingUniformTurleneckGolub: 3
+    ADTClothingUniformTurleneckGolubBlack: 3
+    ADTClothingUniformTurleneckGolubWomen: 3
+    ADTClothingUniformTurleneckGreen: 3
+    ADTClothingUniformTurleneckGreenBlack: 3
+    ADTClothingUniformTurleneckGreenWomen: 3
+    ADTClothingUniformTurleneckOrange: 3
+    ADTClothingUniformTurleneckOrangeBlack: 3
+    ADTClothingUniformTurleneckOrangeWomen: 3
+    ADTClothingUniformTurleneckPurpur: 3
+    ADTClothingUniformTurleneckPurpurBlack: 3
+    ADTClothingUniformTurleneckPurpurWomen: 3
+    ADTClothingUniformTurleneckRed: 3
+    ADTClothingUniformTurleneckRedBlack: 3
+    ADTClothingUniformTurleneckRedWomen: 3
+    ADTClothingUniformTurleneckSalat: 3
+    ADTClothingUniformTurleneckSalatBlack: 3
+    ADTClothingUniformTurleneckSalatWomen: 3
+    ADTClothingUniformTurleneckWhite: 3
+    ADTClothingUniformTurleneckWhiteBlack: 3
+    ADTClothingUniformTurleneckWhiteWomen: 3
+    ADTClothingUniformTurleneckBlackSleeveless: 3
+    ADTClothingUniformTurleneckBlackWomenSleeveless: 3
+    ADTClothingUniformTurleneckWhiteSleeveless: 3
+    ADTClothingUniformTurleneckWhiteBlackSleeveless: 3
+    ADTClothingUniformTurleneckWhiteWomenSleeveless: 3
   contrabandInventory:
     ClothingUniformJumpsuitTacticool: 1
     ClothingUniformJumpskirtTacticool: 1

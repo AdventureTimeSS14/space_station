@@ -1,124 +1,131 @@
-ent-ClothingUniformTurleneckAmerc = Водолазка Наёмника
-    .desc = Практичный и удобная водолазка оливкового цвета.
+ent-ADTClothingUniformTurleneckAmerc = Водолазка Наёмника
+    .desc = Практичная и удобная водолазка оливкового цвета.
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckTactick = Тактическая водолазка
+ent-ADTClothingUniformTurleneckTactick = Тактическая водолазка
     .desc = Тактическая и удобная водолазка с усиленной синтетической тканью.
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckBlack = Чёрная водолазка
-    .desc = Практичный и удобная водолазка черного цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckBlack = Чёрная водолазка
+    .desc = Практичная и удобная водолазка черного цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckBlackWomen = Чёрная водолазка с юбкой
-    .desc = Практичный и удобная водолазка черного цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckBlackWomen = Чёрная водолазка с юбкой
+    .desc = Практичная и удобная водолазка черного цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckBlue = Синяя водолазка
-    .desc = Практичный и удобная водолазка синего цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckBlue = Синяя водолазка
+    .desc = Практичная и удобная водолазка синего цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckBlueBlack = Синяя водолазка
-    .desc = Практичный и удобная водолазка синего цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckBlueBlack = Синяя водолазка
+    .desc = Практичная и удобная водолазка синего цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckBlueWomen = Синяя водолазка с юбкой
-    .desc = Практичный и удобная водолазка синего цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckBlueWomen = Синяя водолазка с юбкой
+    .desc = Практичная и удобная водолазка синего цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckGolub = Голубая водолазка
-    .desc = Практичный и удобная водолазка голубого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckGolub = Голубая водолазка
+    .desc = Практичная и удобная водолазка голубого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckGolubBlack = Голубая водолазка
-    .desc = Практичный и удобная водолазка голубого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckGolubBlack = Голубая водолазка
+    .desc = Практичная и удобная водолазка голубого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckGolubWomen = Голубая водолазка с юбкой
-    .desc = Практичный и удобная водолазка голубого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckGolubWomen = Голубая водолазка с юбкой
+    .desc = Практичная и удобная водолазка голубого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckGreen = Зелёная водолазка
-    .desc = Практичный и удобная водолазка зелёного цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckGreen = Зелёная водолазка
+    .desc = Практичная и удобная водолазка зелёного цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckGreenBlack = Зелёная водолазка
-    .desc = Практичный и удобная водолазка зелёного цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckGreenBlack = Зелёная водолазка
+    .desc = Практичная и удобная водолазка зелёного цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckGreenWomen = Зелёная водолазка с юбкой
-    .desc = Практичный и удобная водолазка зелёного цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckGreenWomen = Зелёная водолазка с юбкой
+    .desc = Практичная и удобная водолазка зелёного цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckOrange = Оранжевая водолазка
-    .desc = Практичный и удобная водолазка оранжевого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckOrange = Оранжевая водолазка
+    .desc = Практичная и удобная водолазка оранжевого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckOrangeBlack = Оранжевая водолазка
-    .desc = Практичный и удобная водолазка оранжевого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckOrangeBlack = Оранжевая водолазка
+    .desc = Практичная и удобная водолазка оранжевого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckOrangeWomen = Оранжевая водолазка с юбкой
-    .desc = Практичный и удобная водолазка оранжевого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckOrangeWomen = Оранжевая водолазка с юбкой
+    .desc = Практичная и удобная водолазка оранжевого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckPurpur = Фиолетовая водолазка
-    .desc = Практичный и удобная водолазка фиолетового цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckPurpur = Фиолетовая водолазка
+    .desc = Практичная и удобная водолазка фиолетового цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckPurpurBlack = Фиолетовая водолазка
-    .desc = Практичный и удобная водолазка фиолетового цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckPurpurBlack = Фиолетовая водолазка
+    .desc = Практичная и удобная водолазка фиолетового цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckPurpurWomen = Фиолетовая водолазка с юбкой
-    .desc = Практичный и удобная водолазка фиолетового цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckPurpurWomen = Фиолетовая водолазка с юбкой
+    .desc = Практичная и удобная водолазка фиолетового цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckRed = Красная водолазка
-    .desc = Практичный и удобная водолазка красного цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckRed = Красная водолазка
+    .desc = Практичная и удобная водолазка красного цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckRedBlack = Красная водолазка
-    .desc = Практичный и удобная водолазка красного цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckRedBlack = Красная водолазка
+    .desc = Практичная и удобная водолазка красного цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckRedWomen = Красная водолазка с юбкой
-    .desc = Практичный и удобная водолазка красного цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckRedWomen = Красная водолазка с юбкой
+    .desc = Практичная и удобная водолазка красного цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckSalat = Жёлтая водолазка
-    .desc = Описание Удобная и практичная жёлтая водолазка. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckSalat = Жёлтая водолазка
+    .desc = Практичная и удобная водолазка жёлтого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckSalatBlack = Жёлтая водолазка
-    .desc = Описание Удобная и практичная жёлтая водолазка. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckSalatBlack = Жёлтая водолазка
+    .desc = Практичная и удобная водолазка жёлтого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckSalatWomen = Жёлтая водолазка с юбкой
-    .desc = Описание Удобная и практичная жёлтая водолазка. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckSalatWomen = Жёлтая водолазка с юбкой
+    .desc = Практичная и удобная водолазка жёлтого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckWhite = Белая водолазка
-    .desc = Практичный и удобная водолазка белого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckWhite = Белая водолазка
+    .desc = Практичная и удобная водолазка белого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckWhiteBlack = Белая водолазка
-    .desc = Практичный и удобная водолазка белого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckWhiteBlack = Белая водолазка
+    .desc = Практичная и удобная водолазка белого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ClothingUniformTurleneckWhiteWomen = Белая водолазка с юбкой
-    .desc = Практичный и удобная водолазка белого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
+ent-ADTClothingUniformTurleneckWhiteWomen = Белая водолазка с юбкой
+    .desc = Практичная и удобная водолазка белого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-
-
-
-
-
-
-#
-ent- = 
-    .desc = .
+ent-ADTClothingUniformTurleneckBlackSleeveless = Чёрная водолазка
+    .desc = Практичная и удобная водолазка чёрного цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
+ent-ADTClothingUniformTurleneckBlackWomenSleeveless = Чёрная водолазка с юбкой
+    .desc = Практичная и удобная водолазка чёрного цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed"..
+    .suffix = { "" }
 
+ent-ADTClothingUniformTurleneckWhiteSleeveless = Белая водолазка
+    .desc = Практичная и удобная водолазка белого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed"..
+    .suffix = { "" }
+
+ent-ADTClothingUniformTurleneckWhiteBlackSleeveless = Белая водолазка
+    .desc = Практичная и удобная водолазка белого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed"..
+    .suffix = { "" }
+
+ent-ADTClothingUniformTurleneckWhiteWomenSleeveless = Белая водолазка с юбкой
+    .desc = Практичная и удобная водолазка белого цвета. На лейбле можно заметить "Modeling Agency Dar-Vaxed"..
+    .suffix = { "" }
