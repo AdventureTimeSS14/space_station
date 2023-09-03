@@ -51,7 +51,7 @@
   - type: Rotatable
   - type: Pullable
   - type: PowerNetworkBattery
-    maxSupply: 1000000000
-    supplyRampTolerance: 1000000000
+    maxSupply: 100000000000
+    supplyRampTolerance: 100000000000
   - type: GuideHelp
     guides: [ Singularity, Power ]

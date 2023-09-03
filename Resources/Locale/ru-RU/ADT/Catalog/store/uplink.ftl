@@ -13,7 +13,7 @@ uplink-BuldogXL-ammo-bundle-desc = набор содержащий 4 XL мага
 uplink-XC67-bundle-name = набор xC-67
 uplink-XC67-bundle-desc = набор, содержащий штурмовую винтовку хС-67 и два магазина к ней
 uplink-XC67-ammo-bundle-name = набор магазинов штурмовой винтовки xC-67
-uplink-XC67-ammo-bundle-desc = набор, содержащий три магазина штурмовой винтовки xC67
+uplink-XC67-ammo-bundle-desc = набор, содержащий три магазина штурмовой винтовки xC6fu
 
 ent-ADTClothingBackpackDuffelSyndicateFilledXC67 = набор xC-67
     .desc = набор, содержащий штурмовую винтовку хС-67 и два магазина к ней
