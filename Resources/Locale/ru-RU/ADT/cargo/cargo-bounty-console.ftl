@@ -1,4 +1,4 @@
-bounty-console-menu-title = Консоль заказов карго
+bounty-console-menu-title = Консоль поручений карго
 bounty-console-label-button-text = Распечатать
 bounty-console-time-label = Время: [color=orange]{$time}[/color]
 bounty-console-reward-label = Награда: [color=limegreen]${$reward}[/color]
