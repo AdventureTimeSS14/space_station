@@ -1,8 +1,8 @@
 ent-Spear = копье
     .desc = Настоящая классика. Убийство по доступной цене с 200 000 года до н.э.
-ent-SpearReinforced = reinforced spear
-    .desc = A spear with a reinforced glass shard as a tip.
-ent-SpearPlasma = plasma spear
-    .desc = A spear with a plasma shard as a tip.
-ent-SpearUranium = uranium spear
-    .desc = A spear with a uranium shard as a tip.
+ent-SpearReinforced = копьё с укреплённым наконечником
+    .desc = Бессмертная классика, улучшенная благодаря технологиям укреплённых стёкол. Будущее наступило, старик!
+ent-SpearPlasma = копьё с плазменным наконечником
+    .desc = Классическое копьё с необычно выглядящим наконечником из плазменного стекла. Впрочем, вам вряд ли есть дело до красоты.
+ent-SpearUranium = копьё с урановым наконечником
+    .desc = Крайне прочное и острое копьё с наконечником из уранового стекла. Имеются противопокозания.
