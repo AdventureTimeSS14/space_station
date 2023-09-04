@@ -14,9 +14,9 @@ bounty-console-id-label = ID#{$id}
 bounty-console-flavor-left = Награды получаются от местных заказчиков.
 bounty-console-flavor-right = v1.4
 
-bounty-manifest-header = Официальный список заказов карго (ID#{$id})
+bounty-manifest-header = Официальный список поручений карго (ID#{$id})
 bounty-manifest-list-start = Список предметов:
 
-ent-ComputerCargoBounty = консоль заказов карго
+ent-ComputerCargoBounty = консоль поручений карго
     .desc = Используется для просмотра активных заказов
     .suffix = { "" }
