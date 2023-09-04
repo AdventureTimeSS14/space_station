@@ -46,7 +46,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.25
+          radius: 0.45
         density: 1000
         mask:
         - MobMask
@@ -138,7 +138,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.45
+          radius: 0.65
         density: 400
         mask:
         - MobMask
@@ -177,7 +177,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.45
+          radius: 0.6
         density: 450
         mask:
         - MobMask
@@ -219,7 +219,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.45
+          radius: 0.75
         density: 15500
         mask:
         - MobMask
@@ -264,7 +264,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.45
+          radius: 0.65
         density: 1350
         mask:
         - MobMask
@@ -357,7 +357,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.45
+          radius: 0.55
         density: 235
         mask:
         - MobMask
