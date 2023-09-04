@@ -65,7 +65,7 @@
   icon: { sprite: ADT/Clothing/Shoes/Boots/advanced.rsi, state: icon }
   productEntity: ADTClothingShoesBootsMagAdvSynd
   cost:
-    Telecrystal: 8
+    Telecrystal: 6
   categories:
   - UplinkArmor
   conditions:

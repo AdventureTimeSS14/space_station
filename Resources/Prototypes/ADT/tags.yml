@@ -9,3 +9,10 @@
 
 - type: Tag
   id: MagazineHristov
+
+- type: Tag
+  id: Syringecartridge
+
+- type: Tag
+  id: SyringeGunMagazine
+
