@@ -31,7 +31,7 @@
     ears: ClothingHeadsetSecurity
     pocket1: ForensicPad
     pocket2: ForensicScanner
-    belt: ClothingBeltHolster
+    belt: ClothingBeltHolsterFilled
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
   underweart: ClothingUnderwearTopBraSportsAlternative # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
