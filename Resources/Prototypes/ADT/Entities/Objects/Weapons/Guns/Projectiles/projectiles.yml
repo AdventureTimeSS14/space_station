@@ -1,0 +1,9 @@
+- type: entity
+  id: syringeprojctile
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: syringeproj

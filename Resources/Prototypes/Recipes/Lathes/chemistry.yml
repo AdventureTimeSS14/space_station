@@ -13,6 +13,14 @@
     Glass: 200
 
 - type: latheRecipe
+  id: Syringecartridge
+  result: Syringecartridge
+  completetime: 1
+  materials:
+    Plastic: 67
+    Glass: 67
+
+- type: latheRecipe
   id: CryostasisBeaker
   result: CryostasisBeaker
   completetime: 2
