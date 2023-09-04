@@ -47,8 +47,9 @@
         prob: 0.6
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetMedical
-     # - id: ClothingEyesHudMedical #Removed until working properly
+      - id: ClothingEyesHudMedical #Removed until working properly
       - id: ClothingBeltMedical
+      - id: DnaSyringeGun
       - id: ClothingHeadHatSurgcapGreen
         prob: 0.1
         orGroup: Surgcaps
@@ -81,7 +82,7 @@
         prob: 0.6
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetMedical
-     # - id: ClothingEyesHudMedical #Removed until working properly
+      - id: ClothingEyesHudMedical #Removed until working properly
       - id: ClothingBeltMedical
       - id: ClothingHeadHatSurgcapGreen
         prob: 0.1

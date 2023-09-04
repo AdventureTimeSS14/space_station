@@ -81,7 +81,7 @@
   description: uplink-gloves-north-star-desc
   productEntity: ClothingHandsGlovesNorthStar
   cost:
-    Telecrystal: 10
+    Telecrystal: 8
   categories:
   - UplinkWeapons
 
@@ -92,14 +92,10 @@
   icon: { sprite: /Textures/Objects/Weapons/Melee/e_sword_double.rsi, state: icon }
   productEntity: EnergySwordDouble
   cost:
-    Telecrystal: 16
+    Telecrystal: 30
   categories:
   - UplinkWeapons
-  conditions:
-    - !type:StoreWhitelistCondition
-      blacklist:
-        tags:
-          - NukeOpsUplink
+
 
 - type: listing
   id: UplinkDisposableTurret
@@ -189,7 +185,7 @@
   description: uplink-c4-desc
   productEntity: C4
   cost:
-    Telecrystal: 2 # Corvax-Revert
+    Telecrystal: 5
   categories:
   - UplinkExplosives
 
@@ -214,7 +210,7 @@
   description: uplink-c4-bundle-desc
   productEntity: ClothingBackpackDuffelSyndicateC4tBundle
   cost:
-    Telecrystal: 12 # Corvax-Revert
+    Telecrystal: 20 
   categories:
   - UplinkExplosives
 
@@ -241,16 +237,16 @@
 
 # Ammo
 
-- type: listing
-  id: UplinkPistol9mmMagazine
-  name: uplink-pistol-magazine-name
-  description: uplink-pistol-magazine-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi, state: red-icon }
-  productEntity: MagazinePistol
-  cost:
-    Telecrystal: 1
-  categories:
-  - UplinkAmmo
+#- type: listing
+#  id: UplinkPistol9mmMagazine
+#  name: uplink-pistol-magazine-name
+#  description: uplink-pistol-magazine-desc
+#  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi, state: red-icon }
+#  productEntity: MagazinePistol
+#  cost:
+#    Telecrystal: 1
+#  categories:
+#  - UplinkAmmo
 
 # For the C20R
 - type: listing
@@ -314,6 +310,26 @@
     Telecrystal: 2
   categories:
   - UplinkAmmo
+
+
+- type: listing
+  id: UplinkSyringeCartridge
+  name: uplink-syringe-cartridge-name
+  description: uplink-syringe-cartridge-desc
+  productEntity: BoxSyringeCartridge
+  cost:
+    Telecrystal: 6
+  categories:
+  - UplinkAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+  - !type:BuyerWhitelistCondition
+    blacklist:
+      components:
+      - SurplusBundle
 
 #Utility
 
@@ -623,7 +639,7 @@
   description: uplink-ammo-bundle-desc
   productEntity: ClothingBackpackDuffelSyndicateAmmoFilled
   cost:
-    Telecrystal: 15
+    Telecrystal: 20
   categories:
   - UplinkBundles
   conditions:
@@ -642,7 +658,7 @@
   description: uplink-meds-bundle-desc
   productEntity: ClothingBackpackDuffelSyndicateMedicalBundleFilled
   cost:
-    Telecrystal: 20
+    Telecrystal: 15
   categories:
   - UplinkBundles
   conditions:
@@ -696,7 +712,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Launchers/china_lake.rsi, state: icon }
   productEntity: ClothingBackpackDuffelSyndicateFilledGrenadeLauncher
   cost:
-    Telecrystal: 25
+    Telecrystal: 35
   categories:
   - UplinkBundles
 
@@ -1036,7 +1052,7 @@
   description: uplink-clothing-thieving-gloves-desc
   productEntity: ThievingGloves
   cost:
-    Telecrystal: 4
+    Telecrystal: 2
   categories:
   - UplinkArmor
 
@@ -1151,7 +1167,7 @@
   description: uplink-ultrabright-lantern-desc
   productEntity: LanternFlash
   cost:
-    Telecrystal: 2
+    Telecrystal: 1
   categories:
   - UplinkMisc
 
@@ -1171,7 +1187,7 @@
   description: uplink-nocturine-chemistry-bottle-desc
   productEntity: NocturineChemistryBottle
   cost:
-    Telecrystal: 5
+    Telecrystal: 4
   categories:
   - UplinkMisc
 
@@ -1181,7 +1197,7 @@
   description: uplink-combat-medkit-desc
   productEntity: MedkitCombatFilled
   cost:
-    Telecrystal: 5
+    Telecrystal: 4
   categories:
   - UplinkMisc
 
@@ -1201,7 +1217,7 @@
   description: uplink-stimpack-desc
   productEntity: Stimpack
   cost:
-    Telecrystal: 8
+    Telecrystal: 4
   categories:
   - UplinkMisc
 
@@ -1211,7 +1227,7 @@
   description: uplink-stimkit-desc
   productEntity: StimkitFilled
   cost:
-    Telecrystal: 12
+    Telecrystal: 6
   categories:
   - UplinkMisc
 
@@ -1269,7 +1285,7 @@
   description: uplink-cat-ears-desc
   productEntity: ClothingHeadHatCatEars
   cost:
-    Telecrystal: 26
+    Telecrystal: 25
   categories:
   - UplinkPointless
 
