@@ -4,16 +4,17 @@ using Content.Server.Corvax.Sponsors;
 using Content.Server.GameTicking.Events;
 using Content.Server.IdentityManagement;
 using Content.Server.Mind;
-using Content.Server.Roles;
-using Content.Server.Roles.Jobs;
 using Content.Shared.Administration;
 using Content.Shared.Administration.Events;
 using Content.Shared.GameTicking;
 using Content.Shared.IdentityManagement;
+using Content.Shared.Roles;
+using Content.Shared.Roles.Jobs;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.Enums;
 using Robust.Shared.Network;
+using Robust.Shared.Player;
 
 namespace Content.Server.Administration.Systems
 {
@@ -21,9 +22,9 @@ namespace Content.Server.Administration.Systems
     {
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly IAdminManager _adminManager = default!;
-        [Dependency] private readonly JobSystem _jobs = default!;
+        [Dependency] private readonly SharedJobSystem _jobs = default!;
         [Dependency] private readonly MindSystem _minds = default!;
-        [Dependency] private readonly RoleSystem _role = default!;
+        [Dependency] private readonly SharedRoleSystem _role = default!;
         [Dependency] private readonly SponsorsManager _sponsorManager = default!;
 
         private readonly Dictionary<NetUserId, PlayerInfo> _playerList = new();
@@ -107,10 +108,11 @@ namespace Content.Server.Administration.Systems
 
         private void OnRoleEvent(RoleEvent ev)
         {
-            if (!ev.Antagonist || ev.Mind.Session == null)
+            var session = _minds.GetSession(ev.Mind);
+            if (!ev.Antagonist || session == null)
                 return;
 
-            UpdatePlayerList(ev.Mind.Session);
+            UpdatePlayerList(session);
         }
 
         private void OnAdminPermsChanged(AdminPermsChangedEventArgs obj)
