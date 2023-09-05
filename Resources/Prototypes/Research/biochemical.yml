@@ -113,6 +113,8 @@
   recipeUnlocks:
   - ChemMasterMachineCircuitboard
   - ChemDispenserMachineCircuitboard
+  - DnaSyringeGun
+  - Syringecartridge
   technologyPrerequisites:
   - Chemistry
 

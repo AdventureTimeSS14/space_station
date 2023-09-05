@@ -19,13 +19,13 @@
   - type: SolutionContainerManager
     solutions:
       ammo:
-        maxVol: 15
+        maxVol: 7.5
   - type: FitsInDispenser
     solution: ammo
   - type: RefillableSolution
     solution: ammo
   - type: SolutionTransfer
-    maxTransferAmount: 15
+    maxTransferAmount: 7.5
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice
