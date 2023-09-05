@@ -10,7 +10,8 @@
   - type: Storage
     capacity: 30
     whitelist:
-      components:
+      tags:
+        - Trash
         - Food
         - Drink
   - type: Item
