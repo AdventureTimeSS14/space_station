@@ -7,6 +7,7 @@ petting-success-generic = Вы гладите { $target } по голове.
 petting-success-soft-floofy = Вы гладите { $target } по { POSS-ADJ($target) } мягкой пушистой голове.
 petting-success-bird = Вы гладите { $target } по { POSS-ADJ($target) } милой пернатой голове.
 petting-success-cat = Вы гладите { $target } по { POSS-ADJ($target) } маленькой пушистой голове.
+petting-success-cat-bingus = Вы гладите { $target } по { POSS-ADJ($target) } маленькой гладкой голове.
 petting-success-corrupted-corgi = В порыве самонадеянности, вы гладите { $target } по { POSS-ADJ($target) } маленькой проклятой голове.
 petting-success-crab = Вы гладите { $target } по { POSS-ADJ($target) } маленькой гладкой голове.
 petting-success-dehydrated-carp = Вы гладите { $target } по { POSS-ADJ($target) } маленькой сухой голове. Похоже, вы теперь нравитесь { CAPITALIZE(OBJECT($target)) }!
