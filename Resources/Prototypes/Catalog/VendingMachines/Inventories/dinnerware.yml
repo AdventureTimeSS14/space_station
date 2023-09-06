@@ -13,6 +13,8 @@
     Beaker: 5
     LargeBeaker: 5
     ADTDrinkGlassJug: 3
+    ADTDrinkTeapot: 1
+    ADTDrinkTeacup: 5
     DrinkMug: 5
     DrinkMugBlack: 2
     DrinkMugBlue: 2
