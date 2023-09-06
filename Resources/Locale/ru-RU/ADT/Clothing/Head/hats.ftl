@@ -1,10 +1,10 @@
-ent-ADTClothingHeadHatBlackOrientalEars = Чёрные ушки ориентала
+ent-ADTClothingHeadHatBlackOrientalEars = чёрные ушки ориентала
     .desc = Ня.
     .suffix = { "" }
-ent-ADTClothingHeadHatOktyabrinaOrientalEars = Подарок для Октябрины
+ent-ADTClothingHeadHatOktyabrinaOrientalEars = подарок для Октябрины
     .desc = На внутренней стороне нацарапано "Для той, чьи волосы цвета сирени". Это пахнет радостью и счастьем.
     .suffix = { "" }
-ent-ADTClothingHeadHatRedji = Шляпа старика Рэджи
+ent-ADTClothingHeadHatRedji = шляпа старика Рэджи
     .desc = Слегка потёртая, стильная шляпа.
     .suffix = { "" }
 
