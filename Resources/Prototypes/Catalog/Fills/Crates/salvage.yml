@@ -75,34 +75,9 @@
       - id: ClothingShoesBootsMagBlinding
         prob: 0.01
         #  - Skub
-      - id: Skub
-        prob: 0.001
-      - id: ClothingHeadHatCatEars
-        prob: 0.01
-      # Corvax-Pins-Start
-      - id: ClothingNeckUSSPPin
-        prob: 0.025
-        orGroup: CorporateAndGovermentPins
-      - id: ClothingNeckDonkPin
-        orGroup: CorporateAndGovermentPins
-      - id: ClothingNeckEarthPin
-        orGroup: CorporateAndGovermentPins
-      - id: ClothingNeckLogistikaPin
-        orGroup: CorporateAndGovermentPins
-      - id: ClothingNeckDeForestPin
-        orGroup: CorporateAndGovermentPins
-      - id: ClothingNeckNakamuraPin
-        orGroup: CorporateAndGovermentPins
-      - id: ClothingNeckNanoTrasenPin
-        orGroup: CorporateAndGovermentPins
-      - id: ClothingNeckSyndicakePin
-        orGroup: CorporateAndGovermentPins
-      - id: ClothingNeckVitezstviPin
-        orGroup: CorporateAndGovermentPins
-      # Corvax-Pins-End
       - id: Telecrystal10
         prob: 0.001
-      - id: WeaponRevolverPython
+      - id: WeaponRevolverPython357
         prob: 0.001
       - id: WeaponRevolverMateba
         prob: 0.001
@@ -116,7 +91,7 @@
   - type: StorageFill
     contents:
     - id: SalvagePartsT3Spawner
-      amount: 10
+      amount: 12
 
 - type: entity
   parent: CrateGenericSteel
@@ -127,7 +102,7 @@
   - type: StorageFill
     contents:
     - id: SalvagePartsT3T4Spawner
-      amount: 10
+      amount: 12
 
 - type: entity
   parent: CrateGenericSteel
@@ -138,4 +113,4 @@
   - type: StorageFill
     contents:
     - id: SalvagePartsT4Spawner
-      amount: 10
+      amount: 12

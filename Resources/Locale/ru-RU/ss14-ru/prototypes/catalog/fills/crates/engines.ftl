@@ -20,5 +20,5 @@ ent-CrateEngineeringSolar = ящик сборных солнечных пане�
     .desc = { ent-CrateEngineering.desc }
 ent-CrateEngineeringShuttle = ящик электропитания шаттла
     .desc = { ent-CrateEngineeringSecure.desc }
-ent-CrateEngineeringShuttle = ящик с индустриальным СМЭС
+ent-CrateEngineeringIndustrialSMES = ящик с индустриальным СМЭС
     .desc = { ent-CrateEngineeringSecure.desc }

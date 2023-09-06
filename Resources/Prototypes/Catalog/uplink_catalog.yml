@@ -15,7 +15,7 @@
   id: UplinkRevolverPython
   name: uplink-revolver-python-name
   description: uplink-revolver-python-desc
-  productEntity: WeaponRevolverPythonAP
+  productEntity: WeaponRevolverPython357AP
   cost:
     Telecrystal: 8 # Originally was 13 TC but was not used due to high cost
   categories:
@@ -237,33 +237,33 @@
 
 # Ammo
 
-#- type: listing
-#  id: UplinkPistol9mmMagazine
-#  name: uplink-pistol-magazine-name
-#  description: uplink-pistol-magazine-desc
-#  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi, state: red-icon }
-#  productEntity: MagazinePistol
-#  cost:
-#    Telecrystal: 1
-#  categories:
-#  - UplinkAmmo
-
-# For the C20R
 - type: listing
-  id: UplinkMagazinePistolSubMachineGun
-  name: uplink-pistol-magazine-c20r-name
-  description: uplink-pistol-magazine-c20r-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: red-icon }
-  productEntity: MagazinePistolSubMachineGun
+  id: UplinkPistol9mmMagazine
+  name: uplink-pistol-magazine-name
+  description: uplink-pistol-magazine-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi, state: red-icon }
+  productEntity: MagazinePistol
   cost:
-    Telecrystal: 3
+    Telecrystal: 1
   categories:
   - UplinkAmmo
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
+
+# For the C20R
+#- type: listing
+#  id: UplinkMagazinePistolSubMachineGun
+#  name: uplink-pistol-magazine-c20r-name
+#  description: uplink-pistol-magazine-c20r-desc
+#  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: red-icon }
+#  productEntity: MagazinePistolSubMachineGun
+#  cost:
+#    Telecrystal: 3
+#  categories:
+#  - UplinkAmmo
+#  conditions:
+#  - !type:StoreWhitelistCondition
+#    whitelist:
+#      tags:
+#      - NukeOpsUplink
 
 # For the Cobra
 - type: listing
@@ -279,13 +279,13 @@
 
 # For the Python
 - type: listing
-  id: UplinkSpeedLoaderMagnumAP
-  name: uplink-speedloader-magnum-name
+  id: UplinkSpeedLoader357AP
+  name: uplink-speedloader-357-name
   description: uplink-speedloader-magnu-desc
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi, state: icon }
-  productEntity: SpeedLoaderMagnumAP
+  productEntity: SpeedLoader357AP
   cost:
-    Telecrystal: 2
+    Telecrystal: 4
   categories:
   - UplinkAmmo
 
@@ -682,6 +682,7 @@
   categories:
   - UplinkBundles
 
+
 - type: listing
   id: UplinkC20RBundle
   name: uplink-c20r-bundle-name
@@ -692,6 +693,15 @@
     Telecrystal: 17
   categories:
   - UplinkBundles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
 
 - type: listing
   id: UplinkBulldogBundle
@@ -703,6 +713,15 @@
     Telecrystal: 20
   categories:
   - UplinkBundles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
 
 
 - type: listing
@@ -715,6 +734,15 @@
     Telecrystal: 35
   categories:
   - UplinkBundles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
 
 - type: listing
   id: UplinkL6SawBundle
@@ -726,6 +754,15 @@
     Telecrystal: 30
   categories:
   - UplinkBundles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
 
 - type: listing
   id: UplinkZombieBundle
@@ -742,10 +779,6 @@
     whitelist:
       tags:
       - NukeOpsUplink
-  - !type:BuyerWhitelistCondition
-    blacklist:
-      components:
-      - SurplusBundle
 
 - type: listing
   id: UplinkSurplusBundle

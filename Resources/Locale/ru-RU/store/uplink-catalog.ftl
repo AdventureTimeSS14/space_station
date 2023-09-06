@@ -1,8 +1,8 @@
 # Weapons
 uplink-pistol-viper-name = { ent-WeaponPistolViper }
 uplink-pistol-viper-desc = { ent-WeaponPistolViper.desc }
-uplink-revolver-python-name = { ent-WeaponRevolverPython }
-uplink-revolver-python-desc = { ent-WeaponRevolverPython.desc }
+uplink-revolver-python-name = { ent-WeaponRevolverPython357 }
+uplink-revolver-python-desc = { ent-WeaponRevolverPython357.desc }
 uplink-pistol-cobra-name = { ent-WeaponPistolCobra }
 uplink-pistol-cobra-desc = { ent-WeaponPistolCobra.desc }
 uplink-rifle-mosin-name = { ent-WeaponSniperMosin }
@@ -37,7 +37,7 @@ uplink-pistol-magazine-name = Пистолетный магазин (9мм)
 uplink-pistol-magazine-desc = Пистолетный магазин на 10 патронов. Совместим с "Гадюкой".
 uplink-pistol-magazine-caseless-name = Пистолетный магазин (.25 безгильзовые)
 uplink-pistol-magazine-caseless-desc = Пистолетный магазин на 10 патронов. Совместим с "Коброй".
-uplink-speedloader-magnum-name = Спидлоадер (.44 магнум)
+uplink-speedloader-357-name = Спидлоадер (.357 магнум)
 uplink-speedloader-magnu-desc = Спидлоадер на 6 патронов для револьвера. Совместим с "Питоном".
 uplink-mosin-ammo-name = Коробка патронов (7,62 винтовочные)
 uplink-mosin-ammo-desc = Коробка патронов для резервной винтовки.
@@ -48,7 +48,7 @@ uplink-Shothgun-magazine-desc = Один барабан с 8 патронами.
 uplink-MachineGun-magazine-name = магазин ПП (9мм)
 uplink-MachineGun-magazine-desc = Магазин с 30 патронами 9мм. Совместим с "C-20r"
 uplink-LightRifle-magazine-name = магазин (7,62 винтовочные)
-uplink-LightRifle-magazine-desc = Магазин с 30 патронами 7,62. Совместим с "AKMS"
+uplink-LightRifle-magazine-desc = Магазин с 30 патронами 7,62. Совместим с "AKMН"
 # Utility
 uplink-holopara-kit-name = Набор "Голопаразит"
 uplink-holopara-kit-desc =
@@ -100,8 +100,8 @@ uplink-surplus-bundle-name = Ящик припасов синдиката
 uplink-surplus-bundle-desc = Содержит случайное снаряжение Синдиката, общей стоимостью в 50 телекристаллов. Оно может быть как бесполезным хламом, так и реально крутым.
 uplink-super-surplus-bundle-name = Ящик суперприпасов синдиката
 uplink-super-surplus-bundle-desc = Содержит случайное снаряжение Синдиката, общей стоимостью в 125 телекристаллов.
-uplink-AKMS-bundle-name = набор "AKMS"
-uplink-AKMS-bundle-desc = Содержит в себе AKMS и два запасных магазина к нему
+uplink-AKMS-bundle-name = набор "АКМН"
+uplink-AKMS-bundle-desc = Содержит в себе АКМН и два запасных магазина к нему
 # Tools
 uplink-toolbox-name = Ящик инструментов
 uplink-toolbox-desc = Полный набор инструментов для предателя с тягой к механике. Включает пару изолированных боевых перчаток, противогаз синдиката и плечевую кобуру.
