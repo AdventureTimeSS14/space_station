@@ -1,0 +1,67 @@
+- type: construction
+  name: sofa left side
+  id: ADTBlackSofaLeftSideRecipe
+  graph: Seat
+  startNode: start
+  targetNode: adtblacksofaleft
+  category: construction-category-furniture
+  description: It looks comfy.
+  icon:
+    sprite: ADT/Structures/Furniture/black_sofa.rsi
+    state: sofa_left
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: sofa middle
+  id: ADTBlackSofaMiddleRecipe
+  graph: Seat
+  startNode: start
+  targetNode: adtblacksofamiddle
+  category: construction-category-furniture
+  description: It looks comfy.
+  icon:
+    sprite: ADT/Structures/Furniture/black_sofa.rsi
+    state: sofa_middle
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: sofa right side
+  id: ADTBlackSofaRightSideRecipe
+  graph: Seat
+  startNode: start
+  targetNode: adtblacksofaright
+  category: construction-category-furniture
+  description: It looks comfy.
+  icon:
+    sprite: ADT/Structures/Furniture/black_sofa.rsi
+    state: sofa_right
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: ADTDeckChairRecipe
+  name: deckchair
+  description: A deckchair for the acquisition of an even tan under the light of the nearest star.
+  graph: bed
+  startNode: start
+  targetNode: adtdeckchair
+  category: construction-category-furniture
+  icon:
+    sprite: ADT/Structures/Furniture/deckchair.rsi
+    state: deckchair
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked

@@ -1,0 +1,56 @@
+- type: entity
+  name: sofa left side
+  id: ADTBlackSofaLeftSide
+  parent: SeatBase
+  description: It looks comfy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/black_sofa.rsi
+    state: sofa_left
+  - type: Construction
+    graph: Seat
+    node: adtblacksofaleft
+
+- type: entity
+  name: sofa middle
+  id: ADTBlackSofaMiddle
+  parent: SeatBase
+  description: It looks comfy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/black_sofa.rsi
+    state: sofa_middle
+  - type: Construction
+    graph: Seat
+    node: adtblacksofamiddle
+
+- type: entity
+  name: sofa right side
+  id: ADTBlackSofaRightSide
+  parent: SeatBase
+  description: It looks comfy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/black_sofa.rsi
+    state: sofa_right
+  - type: Construction
+    graph: Seat
+    node: adtblacksofaright
