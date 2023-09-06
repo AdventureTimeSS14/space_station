@@ -13,9 +13,9 @@
   - type: Sprite
     sprite: ADT/Structures/Furniture/black_sofa.rsi
     state: sofa_left
-  #- type: Construction
-  #  graph: Seat
-  #  node: chairComfy
+  - type: Construction
+    graph: Seat
+    node: adtblacksofaleft
 
 - type: entity
   name: sofa middle
@@ -32,9 +32,9 @@
   - type: Sprite
     sprite: ADT/Structures/Furniture/black_sofa.rsi
     state: sofa_middle
-  #- type: Construction
-  #  graph: Seat
-  #  node: chairComfy
+  - type: Construction
+    graph: Seat
+    node: adtblacksofamiddle
 
 - type: entity
   name: sofa right side
@@ -51,6 +51,6 @@
   - type: Sprite
     sprite: ADT/Structures/Furniture/black_sofa.rsi
     state: sofa_right
-  #- type: Construction
-  #  graph: Seat
-  #  node: chairComfy
+  - type: Construction
+    graph: Seat
+    node: adtblacksofaright

@@ -73,3 +73,11 @@
 - type: lobbyBackground
   id: UnderTheTree
   background: /Textures/LobbyScreens/UnderTheTree.png
+
+- type: lobbyBackground
+  id: RobusTyanka
+  background: /Textures/LobbyScreens/RobusTyanka.png
+
+- type: lobbyBackground
+  id: Lunalita
+  background: /Textures/LobbyScreens/Lunalita.png
