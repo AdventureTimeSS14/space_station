@@ -1,10 +1,10 @@
-ent-BaseMagazineBoxPistol = коробка патронов (.35 авто)
+ent-BaseMagazineBoxPistol = коробка патронов (9мм)
     .desc = { ent-BaseItem.desc }
-ent-MagazineBoxPistol = коробка патронов (.35 авто)
+ent-MagazineBoxPistol = коробка патронов (9мм)
     .desc = { ent-BaseMagazineBoxPistol.desc }
-ent-MagazineBoxPistolHighVelocity = коробка патронов (.35 авто высокоскоростные)
+ent-MagazineBoxPistolHighVelocity = коробка патронов (9мм высокоскоростные)
     .desc = { ent-BaseMagazineBoxPistol.desc }
-ent-MagazineBoxPistolPractice = коробка патронов (.35 авто учебные)
+ent-MagazineBoxPistolPractice = коробка патронов (9мм учебные)
     .desc = { ent-BaseMagazineBoxPistol.desc }
-ent-MagazineBoxPistolRubber = коробка патронов (.35 авто резиновые)
+ent-MagazineBoxPistolRubber = коробка патронов (9мм резиновые)
     .desc = { ent-BaseMagazineBoxPistol.desc }

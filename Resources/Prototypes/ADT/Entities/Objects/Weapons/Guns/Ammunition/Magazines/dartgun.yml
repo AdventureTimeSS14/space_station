@@ -13,7 +13,7 @@
       tags:
         - Syringecartridge
     proto: Syringecartridge
-    capacity: 7
+    capacity: 8
   - type: Item
     size: 3
   - type: ContainerContainer
@@ -29,12 +29,12 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 8
+    steps: 9
     zeroVisible: false
   - type: Appearance
 
 - type: entity
-  id: SyringeGunMagazine
+  id:   SyringeGunMagazine
   name: Syringe Gun Magazine
   parent: BaseSyringeGunMagazine
   components:

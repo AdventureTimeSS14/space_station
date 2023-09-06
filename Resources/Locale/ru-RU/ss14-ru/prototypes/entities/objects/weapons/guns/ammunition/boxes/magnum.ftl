@@ -1,10 +1,10 @@
 ent-BaseMagazineBoxMagnum = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
-ent-MagazineBoxMagnum = коробка патронов (.45 магнум)
+ent-MagazineBoxMagnum = коробка патронов (.44 магнум)
     .desc = { ent-BaseMagazineBoxMagnum.desc }
-ent-MagazineBoxMagnumHighVelocity = коробка патронов (.45 магнум высокоскоростные)
+ent-MagazineBoxMagnumHighVelocity = коробка патронов (.44 магнум высокоскоростные)
     .desc = { ent-BaseMagazineBoxMagnum.desc }
-ent-MagazineBoxMagnumPractice = коробка патронов (.45 магнум учебные)
+ent-MagazineBoxMagnumPractice = коробка патронов (.44 магнум учебные)
     .desc = { ent-BaseMagazineBoxMagnum.desc }
-ent-MagazineBoxMagnumRubber = коробка патронов (.45 магнум резиновые)
+ent-MagazineBoxMagnumRubber = коробка патронов (.44 магнум резиновые)
     .desc = { ent-BaseMagazineBoxMagnum.desc }

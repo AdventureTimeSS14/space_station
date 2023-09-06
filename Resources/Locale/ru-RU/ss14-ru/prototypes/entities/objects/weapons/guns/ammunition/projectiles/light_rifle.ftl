@@ -1,8 +1,8 @@
-ent-BulletLightRifle = пуля (.20 винтовочная)
+ent-BulletLightRifle = пуля (5,56 винтовочная)
     .desc = { ent-BaseBullet.desc }
-ent-BulletLightRifleHighVelocity = пуля (.20 винтовочная высокоскоростная)
+ent-BulletLightRifleHighVelocity = пуля (5,56 винтовочная высокоскоростная)
     .desc = { ent-BaseBulletHighVelocity.desc }
-ent-BulletLightRiflePractice = пуля (.20 винтовочная учебная)
+ent-BulletLightRiflePractice = пуля (5,56 винтовочная учебная)
     .desc = { ent-BaseBulletPractice.desc }
-ent-BulletLightRifleRubber = пуля (.20 винтовочная резиновая)
+ent-BulletLightRifleRubber = пуля (5,56 винтовочная резиновая)
     .desc = { ent-BaseBulletRubber.desc }

@@ -39,42 +39,42 @@ namespace Content.Server.Salvage
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("baseAttachingTime")]
-        public TimeSpan BaseAttachingTime = TimeSpan.FromSeconds(30);
+        public TimeSpan BaseAttachingTime = TimeSpan.FromSeconds(10);
 
         /// <summary>
         /// How long it actually takes for the magnet to pull in the debris
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("attachingTime")]
-        public TimeSpan AttachingTime = TimeSpan.FromSeconds(30);
+        public TimeSpan AttachingTime = TimeSpan.FromSeconds(10);
 
         /// <summary>
         /// How long the magnet can hold the debris until it starts losing the lock
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("holdTime")]
-        public TimeSpan HoldTime = TimeSpan.FromSeconds(240);
+        public TimeSpan HoldTime = TimeSpan.FromSeconds(300);
 
         /// <summary>
         /// How long the magnet can hold the debris while losing the lock
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("detachingTime")]
-        public TimeSpan DetachingTime = TimeSpan.FromSeconds(30);
+        public TimeSpan DetachingTime = TimeSpan.FromSeconds(45);
 
         /// <summary>
         /// How long the magnet has to cool down for after use
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("baseCooldownTime")]
-        public TimeSpan BaseCooldownTime = TimeSpan.FromSeconds(60);
+        public TimeSpan BaseCooldownTime = TimeSpan.FromSeconds(30);
 
         /// <summary>
         /// How long the magnet actually has to cool down for after use
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("cooldownTime")]
-        public TimeSpan CooldownTime = TimeSpan.FromSeconds(60);
+        public TimeSpan CooldownTime = TimeSpan.FromSeconds(30);
 
         [DataField("salvageChannel", customTypeSerializer: typeof(PrototypeIdSerializer<RadioChannelPrototype>))]
         public string SalvageChannel = "Supply";
@@ -102,7 +102,7 @@ namespace Content.Server.Salvage
         /// generated rather than a static salvage prototype.
         /// </summary>
         [DataField("asteroidChance"), ViewVariables(VVAccess.ReadWrite)]
-        public float AsteroidChance = 0.6f;
+        public float AsteroidChance = 0.4f;
 
         /// <summary>
         /// A weighted random prototype corresponding to
