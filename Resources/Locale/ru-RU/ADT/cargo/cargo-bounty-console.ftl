@@ -18,5 +18,5 @@ bounty-manifest-header = Официальный список поручений 
 bounty-manifest-list-start = Список предметов:
 
 ent-ComputerCargoBounty = консоль поручений карго
-    .desc = Используется для просмотра активных заказов
+    .desc = Используется для просмотра активных поручений.
     .suffix = { "" }

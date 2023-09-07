@@ -1,5 +1,5 @@
-ent-ADTClothingUniformDungeonMasterSuit = Костюм Мастера 
-    .desc = Для настоящих Dungeon Master's
+ent-ADTClothingUniformDungeonMasterSuit = костюм Мастера 
+    .desc = Для настоящих Dungeon Masters
 
-ent-ADTClothingHeadHatsDungeonMasterHat = Фуражка Мастера
-    .desc = Для настоящих Dungeon Master's
+ent-ADTClothingHeadHatsDungeonMasterHat = фуражка Мастера
+    .desc = Для настоящих Dungeon Masters
