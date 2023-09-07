@@ -1,10 +1,10 @@
-ent-ADTClothingOuterSuitRacoon = Костюм енота
+ent-ADTClothingOuterSuitRacoon = костюм енота
     .desc = Это же Мортиша!
-ent-ADTClothingHeadHatRacoon = Шапка от костюма енота
+ent-ADTClothingHeadHatRacoon = шапка от костюма енота
     .desc = Это пренадлежит Мортише?
-ent-ADTClothingOuterSuitFox = Костюм лисы
+ent-ADTClothingOuterSuitFox = костюм лисы
     .desc = Алиса???
-ent-ADTClothingHeadHatFox = Шапка от костюма лисы
+ent-ADTClothingHeadHatFox = шапка от костюма лисы
     .desc = Алиса!!!
-ent-ADTClothingHeadHatsBatHat = Шапка летучей мыши
+ent-ADTClothingHeadHatsBatHat = шапка летучей мыши
     .desc = такая же как у Фина, только это Ремилия.

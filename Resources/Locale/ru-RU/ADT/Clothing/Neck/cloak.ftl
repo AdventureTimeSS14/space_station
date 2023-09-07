@@ -1,8 +1,8 @@
-ent-ADTClothingNeckKnightCloak = Плащ рыцаря
+ent-ADTClothingNeckKnightCloak = плащ рыцаря
     .desc = Шёлковый и внушительный рыцарский плащ. За честь короны!
     .suffix = { "" }
 
-ent-ADTClothingNeckJeton = Армейский Жетон
+ent-ADTClothingNeckJeton = армейский Жетон
     .desc = На жетоне могла быть указан ваше Имя и Фамилия
     .suffix = { "" }
 

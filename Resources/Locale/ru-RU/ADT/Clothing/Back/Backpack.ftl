@@ -1,4 +1,4 @@
-ent-ADTClothingBackpackUSSPattaked = Штурмовой Рюкзак "Атака"
+ent-ADTClothingBackpackUSSPattaked = штурмовой Рюкзак "Атака"
     .desc = Полноформатный, сверхпрочный, нагрузочный рюкзак для военного использования.
 
 ent-ClothingBackpackADTBlueShieldOfficerFilled = рюкзак офицера "Синего Щита"

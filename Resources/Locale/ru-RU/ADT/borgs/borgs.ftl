@@ -269,3 +269,7 @@ ent-BorgCharger = зарядная станция киборгов
 ent-BorgChargerCircuitboard = зарядная станция киборгов (машинная плата)
     .desc = Машинная плата для зарядной станции киборгов
     .suffix = { "" }
+
+action-name-view-laws = Просмотреть законы
+
+action-description-view-laws = Просмотреть законы, которым вы обязаны следовать.
