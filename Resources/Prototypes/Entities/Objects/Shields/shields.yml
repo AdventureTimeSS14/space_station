@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   name: base shield
   parent: BaseItem
   id: BaseShield
@@ -347,7 +347,7 @@
       color: blue
     - type: Reflect
       enabled: false
-      reflectProb: 0.95
+      reflectProb: 0.30
       reflects:
         - Energy
     - type: Blocking
@@ -355,7 +355,7 @@
         coefficients:
           Blunt: 1.0
           Slash: 0.9
-          Piercing: 0.85
+          Piercing: 0.65
           Heat: 0.6
       activeBlockModifier:
         coefficients:
