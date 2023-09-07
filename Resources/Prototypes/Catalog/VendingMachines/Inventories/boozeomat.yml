@@ -5,11 +5,13 @@
     DrinkGlass: 20 #Kept glasses at top for ease to differentiate from booze.
     DrinkShotGlass: 10
     DrinkGlassCoupeShaped: 10
+    ADTDrinkTeacup: 10
     ADTJigger: 5
     ADTMixingGlass: 3
     ADTBarSpoon: 5
     DrinkVacuumFlask: 5
     DrinkFlaskBar: 5
+    ADTDrinkTeapot: 2 # Всё ещё думаю над тем, уменьшать или оставить такое кол-во.
     DrinkShaker: 5
     ADTDrinkGlassJug: 3
     DrinkAbsintheBottleFull: 2
