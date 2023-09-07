@@ -44,4 +44,5 @@
 - type: typingIndicator
   id: spider
   typingState: spider0
+  idleState: spider1
   offset: 0, 0.125

@@ -9,10 +9,11 @@
     state: icon
   - type: Storage
     capacity: 30
-    whitelist:
-      tags:
-        - Food
-        - Drink
+#   TODO: ERROR FOOD & Drink нет таких тэгов
+#    whitelist:
+#      tags:
+#        - Food
+#        - Drink
   - type: Item
     size: 300
   - type: ItemCooldown
