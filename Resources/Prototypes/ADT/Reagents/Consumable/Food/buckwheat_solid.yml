@@ -4,7 +4,7 @@
   group: Foods
   desc: buckwheat-solid-desc
   physicalDesc: reagent-physical-desc-powdery
-  flavor: ADTBuckwheatSolidsFlavor
+  #flavor: ADTBuckwheatSolidsFlavor
   color: "#401e05"
   recognizable: true
   metabolisms:
