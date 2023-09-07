@@ -116,3 +116,12 @@
       - id: WallmountGeneratorAPUElectronics
       - id: HandheldGPSBasic
       - id: InflatableDoorStack1
+
+#ADT
+- type: entity
+  id: CrateEngineeringIndustrialSMES
+  parent: CrateEngineeringSecure
+  components:
+  - type: StorageFill
+    contents:
+      - id: ADTSMESIndustrialEmpty

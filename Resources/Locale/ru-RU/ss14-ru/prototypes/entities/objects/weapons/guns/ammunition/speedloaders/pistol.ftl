@@ -1,10 +1,10 @@
-ent-BaseSpeedLoaderPistol = спидлоадер (.35 авто)
+ent-BaseSpeedLoaderPistol = спидлоадер (9мм)
     .desc = { ent-BaseItem.desc }
-ent-SpeedLoaderPistol = спидлоадер (.35 авто)
+ent-SpeedLoaderPistol = спидлоадер (9мм)
     .desc = { ent-BaseSpeedLoaderPistol.desc }
-ent-SpeedLoaderPistolHighVelocity = спидлоадер (.35 авто высокоскоростные)
+ent-SpeedLoaderPistolHighVelocity = спидлоадер (9мм высокоскоростные)
     .desc = { ent-BaseSpeedLoaderPistol.desc }
-ent-SpeedLoaderPistolPractice = спидлоадер (.35 авто учебные)
+ent-SpeedLoaderPistolPractice = спидлоадер (9мм учебные)
     .desc = { ent-BaseSpeedLoaderPistol.desc }
-ent-SpeedLoaderPistolRubber = спидлоадер (.35 авто резиновые)
+ent-SpeedLoaderPistolRubber = спидлоадер (9мм резиновые)
     .desc = { ent-BaseSpeedLoaderPistol.desc }

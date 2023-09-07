@@ -13563,7 +13563,7 @@ entities:
     - pos: -10.5,7.5
       parent: 104
       type: Transform
-- proto: VendingMachineChemicals
+- proto: ChemDispenser
   entities:
   - uid: 1335
     components:

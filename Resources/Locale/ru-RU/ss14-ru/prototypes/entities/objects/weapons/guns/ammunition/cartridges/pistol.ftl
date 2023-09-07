@@ -1,10 +1,10 @@
-ent-BaseCartridgePistol = патрон (.35 авто)
+ent-BaseCartridgePistol = патрон (9мм)
     .desc = { ent-BaseCartridge.desc }
-ent-CartridgePistol = патрон (.35 авто)
+ent-CartridgePistol = патрон (9мм)
     .desc = { ent-BaseCartridgePistol.desc }
-ent-CartridgePistolHighVelocity = патрон (.35 авто высокоскоростной)
+ent-CartridgePistolHighVelocity = патрон (9мм высокоскоростной)
     .desc = { ent-BaseCartridgePistol.desc }
-ent-CartridgePistolPractice = патрон (.35 авто учебный)
+ent-CartridgePistolPractice = патрон (9мм учебный)
     .desc = { ent-BaseCartridgePistol.desc }
-ent-CartridgePistolRubber = патрон (.35 авто резиновый)
+ent-CartridgePistolRubber = патрон (9мм  резиновый)
     .desc = { ent-BaseCartridgePistol.desc }

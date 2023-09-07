@@ -1,10 +1,10 @@
-ent-BaseMagazineMagnumSubMachineGun = магазин Вектора (.45 магнум)
+ent-BaseMagazineMagnumSubMachineGun = магазин Вектора (.45 ACP)
     .desc = { ent-BaseItem.desc }
-ent-MagazineMagnumSubMachineGun = магазин Вектора (.45 магнум)
+ent-MagazineMagnumSubMachineGun = магазин Вектора (.45 ACP)
     .desc = { ent-BaseMagazineMagnumSubMachineGun.desc }
-ent-MagazineMagnumSubMachineGunHighVelocity = магазин Вектора (.45 магнум высокоскоростные)
+ent-MagazineMagnumSubMachineGunHighVelocity = магазин Вектора (.45 ACP высокоскоростные)
     .desc = { ent-BaseMagazineMagnumSubMachineGun.desc }
-ent-MagazineMagnumSubMachineGunPractice = магазин Вектора (.45 магнум учебные)
+ent-MagazineMagnumSubMachineGunPractice = магазин Вектора (.45 ACP учебные)
     .desc = { ent-BaseMagazineMagnumSubMachineGun.desc }
-ent-MagazineMagnumSubMachineGunRubber = магазин Вектора (.45 магнум резиновые)
+ent-MagazineMagnumSubMachineGunRubber = магазин Вектора (.45 ACP резиновые)
     .desc = { ent-BaseMagazineMagnumSubMachineGun.desc }

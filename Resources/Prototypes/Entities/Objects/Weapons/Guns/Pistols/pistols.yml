@@ -159,7 +159,7 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
   - type: Gun
-    fireRate: 6
+    fireRate: 7
     availableModes:
     - SemiAuto
     - Burst

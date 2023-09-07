@@ -1,10 +1,10 @@
-ent-BaseMagazineRifle = магазин (.20 винтовочные)
+ent-BaseMagazineRifle = магазин (5,56 винтовочные)
     .desc = { ent-BaseItem.desc }
-ent-MagazineRifle = магазин (.20 винтовочные)
+ent-MagazineRifle = магазин (5,56 винтовочные)
     .desc = { ent-BaseMagazineRifle.desc }
-ent-MagazineRifleHighVelocity = магазин (.20 винтовочные высокоскоростные)
+ent-MagazineRifleHighVelocity = магазин (5,56 винтовочные высокоскоростные)
     .desc = { ent-BaseMagazineRifle.desc }
-ent-MagazineRiflePractice = магазин (.20 винтовочные учебные)
+ent-MagazineRiflePractice = магазин (5,56 винтовочные учебные)
     .desc = { ent-BaseMagazineRifle.desc }
-ent-MagazineRifleRubber = магазин (.20 винтовочные резиновые)
+ent-MagazineRifleRubber = магазин (5,56 винтовочные резиновые)
     .desc = { ent-BaseMagazineRifle.desc }
