@@ -1,12 +1,12 @@
-ent-BaseCartridgeMagnum = патрон (.45 магнум)
+ent-BaseCartridgeMagnum = патрон (.44 магнум)
     .desc = { ent-BaseCartridge.desc }
-ent-CartridgeMagnum = патрон (.45 магнум)
+ent-CartridgeMagnum = патрон (.44 магнум)
     .desc = { ent-BaseCartridgeMagnum.desc }
-ent-CartridgeMagnumHighVelocity = патрон (.45 магнум высокоскоростной)
+ent-CartridgeMagnumHighVelocity = патрон (.44 магнум высокоскоростной)
     .desc = { ent-BaseCartridgeMagnum.desc }
-ent-CartridgeMagnumPractice = патрон (.45 магнум учебный)
+ent-CartridgeMagnumPractice = патрон (.44 магнум учебный)
     .desc = { ent-BaseCartridgeMagnum.desc }
-ent-CartridgeMagnumRubber = патрон (.45 магнум резиновый)
+ent-CartridgeMagnumRubber = патрон (.44 магнум резиновый)
     .desc = { ent-BaseCartridgeMagnum.desc }
 ent-BaseAnomalousCartridge = { ent-BaseCartridgeMagnum }
     .desc = В два раза мощнее стандартного заряда М.А.К.А.К.

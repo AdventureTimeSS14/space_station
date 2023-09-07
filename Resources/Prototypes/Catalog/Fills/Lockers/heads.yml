@@ -425,5 +425,7 @@
       - id: ClothingUnderwearBottomBoxersHOS
       - id: ClothingUnderwearBottomPantiesHOS
       - id: ClothingUnderwearTopBraHOS
+      - id: ClothingUnderwearTopBraHOS
+      - id: WeaponRevolverUnica  
       # Sirena-Underwear-End
 

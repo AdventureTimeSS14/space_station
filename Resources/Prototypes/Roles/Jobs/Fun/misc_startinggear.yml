@@ -149,6 +149,7 @@
     id: SyndiPDA
     pocket1: DoubleEmergencyOxygenTankFilled
     pocket2: BaseUplinkRadio40TC
+    suitstorage: SyringeGun
     belt: ClothingBeltMilitaryWebbingMedFilled
   innerclothingskirt: ClothingUniformJumpskirtOperative
   satchel: ClothingBackpackDuffelSyndicateOperativeMedic

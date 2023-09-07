@@ -1,8 +1,8 @@
-ent-BulletCaselessRifle = пуля (.25 безгильзовая)
+ent-BulletCaselessRifle = пуля (4,7×33мм)
     .desc = { ent-BaseBullet.desc }
-ent-BulletCaselessRifleHighVelocity = пуля (.25 безгильзовя высокоскоростная)
+ent-BulletCaselessRifleHighVelocity = пуля (4,7×33мм высокоскоростная)
     .desc = { ent-BaseBulletHighVelocity.desc }
-ent-BulletCaselessRiflePractice = пуля (.25 безгильзовая учебная)
+ent-BulletCaselessRiflePractice = пуля (4,7×33мм безгильзовая учебная)
     .desc = { ent-BaseBulletPractice.desc }
-ent-BulletCaselessRifleRubber = пуля (.25 безгильзовая резиновая)
+ent-BulletCaselessRifleRubber = пуля (4,7×33мм резиновая)
     .desc = { ent-BaseBulletRubber.desc }

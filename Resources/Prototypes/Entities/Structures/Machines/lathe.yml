@@ -551,6 +551,7 @@
       - MagazinePistolSubMachineGun
       - MagazinePistol
       - SpeedLoaderMagnum
+      - SpeedLoader357
     dynamicRecipes:
       - CartridgePistolRubber
       - CartridgeMagnumRubber

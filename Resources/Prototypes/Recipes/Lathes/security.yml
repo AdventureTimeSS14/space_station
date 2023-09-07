@@ -410,3 +410,10 @@
   completetime: 2
   materials:
     Steel: 700
+
+- type: latheRecipe
+  id: SpeedLoader357
+  result: SpeedLoader357
+  completetime: 2
+  materials:
+    Steel: 1500

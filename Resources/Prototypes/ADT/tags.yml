@@ -16,3 +16,8 @@
 - type: Tag
   id: SyringeGunMagazine
 
+- type: Tag
+  id: Cartridge357
+
+- type: Tag
+  id: SpeedLoader357
