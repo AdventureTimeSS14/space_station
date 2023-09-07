@@ -4,7 +4,7 @@
   group: Foods
   desc: reagent-desc-flour
   physicalDesc: reagent-physical-desc-powdery
-  flavor: chalky
+ #flavor: chalky
   color: white
   recognizable: true
   metabolisms:
@@ -25,7 +25,7 @@
   group: Foods
   desc: reagent-desc-cornmeal
   physicalDesc: reagent-physical-desc-powdery
-  flavor: corn #so corn doesnt taste chalky
+ #flavor: corn #so corn doesnt taste chalky
   color: tan
   metabolisms:
     Food:
@@ -42,7 +42,7 @@
   group: Foods
   desc: reagent-desc-oats
   physicalDesc: reagent-physical-desc-coarse
-  flavor: oats
+ #flavor: oats
   color: tan
   metabolisms:
     Food:
@@ -60,7 +60,7 @@
   group: Foods
   desc: reagent-desc-enzyme
   physicalDesc: reagent-physical-desc-chalky
-  flavor: bitter
+ #flavor: bitter
   color: "#009900"
 
 - type: reagent
@@ -69,7 +69,7 @@
   group: Foods
   desc: reagent-desc-egg
   physicalDesc: reagent-physical-desc-mucus-like
-  flavor: egg
+ #flavor: egg
   color: white
   recognizable: true
   metabolisms:
@@ -85,7 +85,7 @@
   group: Foods
   desc: reagent-desc-blackpepper
   physicalDesc: reagent-physical-desc-grainy
-  flavor: peppery
+ #flavor: peppery
   color: black
   recognizable: true
 
@@ -95,7 +95,7 @@
   group: Foods
   desc: reagent-desc-vinegar
   physicalDesc: reagent-physical-desc-sour
-  flavor: bitter
+ #flavor: bitter
   color: tan
   recognizable: true
   metabolisms:
@@ -119,7 +119,7 @@
   group: Foods
   desc: reagent-desc-rice
   physicalDesc: reagent-physical-desc-chewy
-  flavor: rice
+ #flavor: rice
   color: white
   recognizable: true
   metabolisms:
@@ -138,7 +138,7 @@
   group: Foods
   desc: reagent-desc-oil-olive
   physicalDesc: reagent-physical-desc-oily
-  flavor: oily
+ #flavor: oily
   flavorMinimum: 0.05
   color: olive
   recognizable: true
@@ -155,7 +155,7 @@
   group: Foods
   desc: reagent-desc-oil
   physicalDesc: reagent-physical-desc-oily
-  flavor: oily
+ #flavor: oily
   flavorMinimum: 0.05
   recognizable: true
   color: "#b67823"
@@ -170,7 +170,7 @@
   group: Foods
   desc: reagent-desc-capsaicin-oil
   physicalDesc: reagent-physical-desc-oily
-  flavor: spicy
+ #flavor: spicy
   flavorMinimum: 0.05
   color: "#FF0000"
   recognizable: true
@@ -204,7 +204,7 @@
   group: Foods
   desc: reagent-desc-cocoapowder
   physicalDesc: reagent-physical-desc-powdery
-  flavor: chocolate
+ #flavor: chocolate
   color: "#800000"
   meltingPoint: 146.0
   metabolisms:
@@ -230,7 +230,7 @@
   group: Foods
   desc: reagent-desc-butter
   physicalDesc: reagent-physical-desc-creamy
-  flavor: butter
+ #flavor: butter
   color: yellow
   meltingPoint: 32.0
   boilingPoint: 100.0

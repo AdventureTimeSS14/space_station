@@ -5,7 +5,7 @@
   group: Foods
   desc: reagent-desc-nutriment
   physicalDesc: reagent-physical-desc-opaque
-  flavor: nutriment
+ #flavor: nutriment
   color: "#24591F"
   metabolisms:
     Food:
@@ -24,7 +24,7 @@
   group: Foods
   desc: reagent-desc-vitamin
   physicalDesc: reagent-physical-desc-chalky
-  flavor: vitamin
+ #flavor: vitamin
   color: "#D3D3D3"
   metabolisms:
     Food: #This makes it not compete with medicines, a large bonus for something that can heal
@@ -53,7 +53,7 @@
   group: Foods
   desc: reagent-desc-protein
   physicalDesc: reagent-physical-desc-clumpy
-  flavor: protein
+ #flavor: protein
   color: "#FFFFE5"
   metabolisms:
     Food:
@@ -74,7 +74,7 @@
   group: Foods
   desc: reagent-desc-sugar
   physicalDesc: reagent-physical-desc-sweet
-  flavor: sweet
+ #flavor: sweet
   color: white
   meltingPoint: 146.0
   metabolisms:
