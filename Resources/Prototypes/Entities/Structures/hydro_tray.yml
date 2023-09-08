@@ -77,9 +77,9 @@
         acts: ["Destruction"]
   - type: Machine
     board: HydroponicsTrayMachineCircuitboard
+  - type: TTS # Corvax-TTS
+    voice: TrainingRobot
   - type: WiresPanel
-#  - type: TTS # Corvax-TTS
-#    voice: TrainingRobot
   - type: Wires
     BoardName: wires-board-name-hydroponicstray
     LayoutId: HydroponicsTray

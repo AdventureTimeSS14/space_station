@@ -374,7 +374,7 @@
 
 #Cybersun Juggernaut Hardsuit
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase  # Corvax-Resprite
+  parent: ClothingHeadHardsuitWithLightBase # Corvax-Resprite
   id: ClothingHeadHelmetHardsuitCybersun
   noSpawn: true
   name: cybersun juggernaut helmet
@@ -384,7 +384,7 @@
     sprite: Clothing/Head/Hardsuits/cybersun.rsi
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/cybersun.rsi
-  - type: PointLight  # Corvax-Resprite
+  - type: PointLight # Corvax-Resprite
     color: red
   - type: PressureProtection
     highPressureMultiplier: 0.3
@@ -537,8 +537,8 @@
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertleader.rsi
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertleader.rsi
-  - type: PointLight
-    color: "#addbff"
+  - type: PointLight # Corvax-Resprite
+    color: cyan
   - type: Armor
     modifiers:
       coefficients:
@@ -659,7 +659,7 @@
 #Deathsquad Hardsuit
 
 - type: entity
-  parent: ClothingHeadHardsuitBase
+  parent: ClothingHeadHardsuitWithLightBase # Corvax-Resprite
   id: ClothingHeadHelmetHardsuitDeathsquad
   noSpawn: true
   name: deathsquad hardsuit helmet
@@ -669,6 +669,8 @@
     sprite: Clothing/Head/Hardsuits/deathsquad.rsi
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/deathsquad.rsi
+  - type: PointLight # Corvax-Resprite
+    color: cyan
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000

@@ -71,6 +71,8 @@
       - id: ClothingShoesBootsJack
       - id: WeaponMeleeNeedle
         prob: 0.1
+      - id: ClothingOuterCoatSecurityOvercoat # Corvax-SecFashion
+        prob: 0.2
       - id: ClothingEyesHudSecurity
 
 - type: entity
@@ -126,6 +128,7 @@
       - id: BoxForensicPad
       - id: DrinkDetFlask
       - id: ClothingHandsGlovesForensic
+      - id: BookBusido # Corvax-Books
 
 - type: entity
   id: ClosetBombFilled

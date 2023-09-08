@@ -801,6 +801,7 @@
       - ClothingNeckMantleHOS
       - ClothingNeckMantleHOSShoulder # Corvax-Resprite: Old mantle
       - ClothingNeckMantleRD
+      - ClothingNeckMantleQM # Corvax-Resprite
       - ClothingOuterWinterMusician
       - ClothingOuterWinterClown
       - ClothingOuterWinterMime

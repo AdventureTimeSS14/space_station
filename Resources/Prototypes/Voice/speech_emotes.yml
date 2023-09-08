@@ -29,15 +29,12 @@
     - yelled
     - yelling
     # Corvax-Localization-Start
-    - крик
     - кричит
     - кричит.
     - кричит!
-    - ор
     - орёт
     - орёт.
     - орёт!
-    - визг
     - визжит
     - визжит.
     - визжит!
@@ -46,7 +43,7 @@
 - type: emote
   id: Laugh
   category: Vocal
-  chatMessages: [смеётся] # Corvax-Localization
+  chatMessages: [смеётся.] # Corvax-Localization
   chatTriggers:
     - laugh
     - laughs
@@ -67,14 +64,12 @@
     - giggling
     - giggled
     # Corvax-Localization-Start
-    - смех
     - смеется
     - смеется.
     - смеется!
     - смеётся
     - смеётся.
     - смеётся!
-    - хохот
     - хохочет
     - хохочет.
     - хохочет!
@@ -89,7 +84,7 @@
 - type: emote
   id: Sigh
   category: Vocal
-  chatMessages: [вздыхает] # Corvax-Localization
+  chatMessages: [вздыхает.] # Corvax-Localization
   chatTriggers:
     - sigh
     - sighs
@@ -98,8 +93,6 @@
     - sighs.
     - sighed.
     # Corvax-Localization-Start
-    - вздох
-    - вздох.
     - вздыхает
     - вздыхает.
     - вздохнул
@@ -108,11 +101,10 @@
     - вздохнула.
     # Corvax-Localization-End
 
-
 - type: emote
   id: Whistle
   category: Vocal
-  chatMessages: [whistle]
+  chatMessages: [свистит.] # Corvax-Localization
   chatTriggers:
     - whistle
     - whistle.
@@ -123,11 +115,19 @@
     - whistleblowing
     - whistleblowing.
     - whistleblowing!
+    # Corvax-Localization-Start
+    - свистит
+    - свистит.
+    - свистит!
+    - свистнул
+    - свистнул.
+    - свистнул!
+    # Corvax-Localization-End
 
 - type: emote
   id: Crying
   category: Vocal
-  chatMessages: [crying]
+  chatMessages: [плачет.] # Corvax-Localization
   chatTriggers:
     - cry
     - cry.
@@ -138,11 +138,19 @@
     - cries
     - cries.
     - cries!
+    # Corvax-Localization-Start
+    - плачет
+    - плачет.
+    - плачет!
+    - рыдает
+    - рыдает.
+    - рыдает!
+    # Corvax-Localization-End
 
 - type: emote
   id: Squish
   category: Vocal
-  chatMessages: [squishing]
+  chatMessages: [хлюпает.] # Corvax-Localization
   chatTriggers:
     - squish
     - squish.
@@ -153,11 +161,16 @@
     - squishes
     - squishes.
     - squishes!
+    # Corvax-Localization-Start
+    - хлюпает
+    - хлюпает.
+    - хлюпает!
+    # Corvax-Localization-End
 
 - type: emote
   id: Chitter
   category: Vocal
-  chatMessages: [chitters.]
+  chatMessages: [стрекочет.] # Corvax-Localization
   chatTriggers:
    - chitter
    - chitter.
@@ -168,11 +181,16 @@
    - chittered
    - chittered.
    - chittered!
+   # Corvax-Localization-Start
+   - стрекочет
+   - стрекочет.
+   - стрекочет!
+   # Corvax-Localization-End
 
 - type: emote
   id: Squeak
   category: Vocal
-  chatMessages: [squeaks.]
+  chatMessages: [пищит.] # Corvax-Localization
   chatTriggers:
    - squeak
    - squeak.
@@ -183,6 +201,11 @@
    - squeaked
    - squeaked.
    - squeaked!
+   # Corvax-Localization-Start
+   - пищит
+   - пищит.
+   - пищит!
+   # Corvax-Localization-End
 
 # hand emotes
 - type: emote
@@ -215,7 +238,7 @@
 - type: emote
   id: Snap
   category: Hands
-  chatMessages: [щёлкает пальцами] # Corvax-Localization
+  chatMessages: [щёлкает пальцами.] # Corvax-Localization
   chatTriggers:
     - snap
     - snaps
@@ -253,11 +276,10 @@
     - щёлкнула пальцами
     # Corvax-Localization-End
 
-#Фикс еррора если появится оригинальное это удалить
 - type: emote
   id: Salute
   category: Hands
-  chatMessages: [Salute]
+  chatMessages: [салютует.] # Corvax-Localization
   chatTriggers:
     - salute
     - salute.
@@ -265,18 +287,23 @@
     - salutes
     - salutes.
     - salutes!
+    # Corvax-Localization-Start
+    - салютует
+    - салютует.
+    - салютует!
+    - отдаёт честь
+    - отдаёт честь.
+    - отдаёт честь!
+    - отдал честь
+    - отдал честь.
+    - отдал честь!
+    - отдала честь
+    - отдала честь.
+    - отдала честь!
+    # Corvax-Localization-End
 
 - type: emote
   id: DefaultDeathgasp
   chatMessages: ["emote-deathgasp"]
   chatTriggers:
   - deathgasp
-
-- type: emote # эмоция work out
-  id: WorkOut
-  chatMessages: ["качается"]
-  chatTriggers:
-    - works out
-    - bigs up
-    - buffs up
-    - качается
