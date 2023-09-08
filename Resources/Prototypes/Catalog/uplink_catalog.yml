@@ -178,6 +178,10 @@
   categories:
     - UplinkExplosives
   conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - NukeOpsUplink
   - !type:BuyerWhitelistCondition
     blacklist:
       components:
