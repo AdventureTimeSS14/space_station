@@ -120,7 +120,7 @@
   - type: Speech
     speechVerb: Slime
   - type: TTS # Corvax-TTS
-    voice: Chen
+    voice: Baya
 
 - type: entity
   name: blue slime

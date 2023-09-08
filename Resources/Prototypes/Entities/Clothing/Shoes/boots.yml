@@ -29,9 +29,6 @@
   - type: StorageFill
     contents:
       - id: CombatKnife
-  - type: FootstepModifier # Corvax-Sounds
-    footstepSoundCollection:
-      collection: FootstepBoots
 
 - type: entity
   parent: ClothingShoesBaseButcherable

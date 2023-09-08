@@ -20,7 +20,6 @@
           availableJobs:
             #service
             Captain: [ 1, 1 ]
-            IAA: [ 1, 1 ] # Corvax-IAA
             HeadOfPersonnel: [ 1, 1 ]
             Bartender: [ 2, 2 ]
             Botanist: [ 4, 4 ]
@@ -66,7 +65,7 @@
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
             #ADT
-            Brigmedic: [ 1, 1 ]           
+            Brigmedic: [ 1, 1 ]
             ADTBlueShieldOfficer: [ 1, 2 ]
             Magistrat: [ 1, 1 ]
             IAA: [ 1, 1 ] # Corvax-IAA

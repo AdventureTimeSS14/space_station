@@ -181,7 +181,7 @@
     - ShoesRequiredStepTriggerImmune
     - DoorBumpOpener
   - type: TTS # Corvax-TTS
-    voice: TrainingRobot
+    voice: Baya
 
 - type: entity
   id: BaseBorgChassisNT

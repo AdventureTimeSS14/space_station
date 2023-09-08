@@ -60,7 +60,7 @@
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
-      - id: Ointment 
+      - id: Ointment
       - id: Gauze
       - id: Brutepack
       - id: MagazinePistolSubMachineGun
@@ -77,9 +77,9 @@
   - type: StorageFill
     contents:
       - id: MagazinePistol
-      - id: MagazinePistol
+        amount: 2
       - id: EmergencyMedipen
-      - id: Ointment 
+      - id: Ointment
       - id: Gauze
       - id: Brutepack
 

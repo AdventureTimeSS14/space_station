@@ -25,7 +25,6 @@
             Chef: [ 1, 2 ]
             Janitor: [ 2, 2 ]
             Captain: [ 1, 1 ]
-            IAA: [ 2, 2 ] # Corvax-IAA
             HeadOfPersonnel: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
@@ -68,7 +67,7 @@
             Boxer: [ 2, 2 ]
             Reporter: [ 1, 2 ]
             #ADT
-            Brigmedic: [ 1, 1 ]           
+            Brigmedic: [ 1, 1 ]
             ADTBlueShieldOfficer: [ 1, 2 ]
             Magistrat: [ 1, 1 ]
             IAA: [ 1, 1 ] # Corvax-IAA

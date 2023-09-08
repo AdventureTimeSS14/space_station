@@ -133,7 +133,7 @@
   - type: Construction
     node: medical
   - type: TTS # Corvax-TTS
-    voice: TrainingRobot
+    voice: Baya
 
 - type: entity
   id: BorgChassisService

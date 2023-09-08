@@ -103,39 +103,39 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/mateba.ogg
 
-#- type: entity
-#  name: Python
-#  parent: BaseWeaponRevolver
-#  id: WeaponRevolverPython
-#  description: A robust revolver favoured by Syndicate agents. Uses .45 magnum ammo.
-#  components:
-#  - type: Sprite
-#    sprite: Objects/Weapons/Guns/Revolvers/python.rsi
-#  - type: Clothing
-#    sprite: Objects/Weapons/Guns/Revolvers/python.rsi
-#  - type: Gun
-#    selectedMode: SemiAuto
-#    fireRate: 2
-#    availableModes:
-#    - SemiAuto
-#    soundGunshot:
-#      path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
-#      params:
-#        volume: 2.25
+- type: entity
+  name: Python
+  parent: BaseWeaponRevolver
+  id: WeaponRevolverPython
+  description: A robust revolver favoured by Syndicate agents. Uses .45 magnum ammo.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Revolvers/python.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Revolvers/python.rsi
+  - type: Gun
+    selectedMode: SemiAuto
+    fireRate: 2
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
+      params:
+        volume: 2.25
 
-#- type: entity
-#  name: Python
-#  parent: WeaponRevolverPython
-#  id: WeaponRevolverPythonAP # For the uplink.
-#  suffix: armor-piercing
-#  description: A robust revolver favoured by Syndicate agents. Uses .45 magnum ammo.
-#  components:
-#  - type: RevolverAmmoProvider
-#    whitelist:
-#      tags:
-#        - CartridgeMagnum
-#        - SpeedLoaderMagnum
-#    proto: CartridgeMagnumAP
+- type: entity
+  name: Python
+  parent: WeaponRevolverPython
+  id: WeaponRevolverPythonAP # For the uplink.
+  suffix: armor-piercing
+  description: A robust revolver favoured by Syndicate agents. Uses .45 magnum ammo.
+  components:
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeMagnum
+        - SpeedLoaderMagnum
+    proto: CartridgeMagnumAP
 
 
 - type: entity

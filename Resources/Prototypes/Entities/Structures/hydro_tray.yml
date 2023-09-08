@@ -78,7 +78,7 @@
   - type: Machine
     board: HydroponicsTrayMachineCircuitboard
   - type: TTS # Corvax-TTS
-    voice: TrainingRobot
+    voice: Baya
   - type: WiresPanel
   - type: Wires
     BoardName: wires-board-name-hydroponicstray

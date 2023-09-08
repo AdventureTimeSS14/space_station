@@ -159,7 +159,7 @@
     graph: TaxiBot
     node: bot
   - type: TTS # Corvax-TTS
-    voice: Robold
+    voice: Baya
 
 - type: entity
   parent: MobSiliconBaseVehicle
@@ -189,7 +189,7 @@
       storagebase: !type:Container
         ents: []
   - type: TTS # Corvax-TTS
-    voice: Robold
+    voice: Baya
 
 - type: entity
   parent: MobSiliconBase
