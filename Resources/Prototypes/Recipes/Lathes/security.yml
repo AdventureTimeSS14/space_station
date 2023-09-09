@@ -360,7 +360,7 @@
   result: MagazineRifle
   completetime: 2
   materials:
-    Steel: 300
+    Steel: 600
 
 - type: latheRecipe
   id: MagazineLightRifle
