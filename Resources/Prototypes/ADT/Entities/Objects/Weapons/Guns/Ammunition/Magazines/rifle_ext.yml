@@ -7,7 +7,7 @@
   components:
   - type: Tag
     tags:
-      - ADTExtMagazineRifle
+      - MagazineRifle
   - type: Item
     size: 7
   - type: BallisticAmmoProvider

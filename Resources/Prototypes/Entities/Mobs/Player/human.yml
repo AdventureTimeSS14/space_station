@@ -13,7 +13,7 @@
     - type: Loadout
       prototypes: [SyndicateOperativeGearExtremelyBasic]
     - type: RandomMetadata
-      nameSegments: [adt_nukeagent_names] # Corvax-Localization
+      nameSegments: [corvax_names_death_commando] # Corvax-Localization
     - type: NpcFactionMember
       factions:
       - Syndicate

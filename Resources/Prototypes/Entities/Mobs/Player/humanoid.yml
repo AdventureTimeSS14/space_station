@@ -335,7 +335,7 @@
       sprite: Mobs/Species/Human/parts.rsi
       state: full
     - type: RandomMetadata
-      nameSegments: [ adt_nukeagent_names ] # Corvax-Localization
+      nameSegments: [ corvax_names_death_commando ] # Corvax-Localization
     - type: RandomHumanoidSpawner
       settings: SyndicateAgent
 

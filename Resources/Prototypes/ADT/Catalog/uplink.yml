@@ -11,8 +11,8 @@
 
 - type: listing
   id: ADTUplinkMagazineShothgun
-  name: uplink-Shotgun-magazine-name
-  description: uplink-Shotgun-magazine-desc
+  name: uplink-Shothgun-magazine-name
+  description: uplink-Shothgun-magazine-desc
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Shotgun/m12.rsi, state: base }
   productEntity: MagazineShotgun
   cost:
@@ -140,8 +140,8 @@
 
 - type: listing
   id: ADTUplinkXC67Bundle
-  name: uplink-xc67-name
-  description: uplink-xc67-description
+  name: xC-67 assault rifle bundle
+  description: Prototype of new assault rifle from manufacturer of Cr-25
   icon: { sprite: /Textures/ADT/Objects/Weapons/Guns/Rifels/xc67.rsi, state: icon}
   productEntity: ADTClothingBackpackDuffelSyndicateFilledXC67
   cost:
@@ -156,8 +156,8 @@
 
 - type: listing
   id: ADTUplinkXC67AmmoBundle
-  name: uplink-xc67ammo-name
-  description: uplink-xc67ammo-description
+  name: xC-67 magazine
+  description: Bundle of three 5,56-mm extended magazines
   icon: { sprite: /Textures/ADT/Objects/Weapons/Guns/Ammunition/Magazine/ext_rifle_mag.rsi, state: base }
   productEntity: ADTClothingBackpackDuffelSyndicateFilledXC67Ammo
   cost:

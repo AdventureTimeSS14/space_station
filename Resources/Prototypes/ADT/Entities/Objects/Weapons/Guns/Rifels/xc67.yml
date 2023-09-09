@@ -36,7 +36,6 @@
         whitelist:
           tags:
             - MagazineRifle
-            - ADTExtMagazineRifle
       gun_chamber:
         name: Chamber
         startingItem: CartridgeRifle

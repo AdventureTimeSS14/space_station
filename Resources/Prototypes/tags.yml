@@ -1044,7 +1044,3 @@
 - type: Tag
   id: ModularReceiver
 
-#ADTTags
-
-- type: Tag
-  id: ADTExtMagazineRifle
