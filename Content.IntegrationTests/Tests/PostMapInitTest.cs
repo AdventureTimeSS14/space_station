@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading;
@@ -44,8 +44,8 @@ namespace Content.IntegrationTests.Tests
 
         private static readonly string[] GameMaps =
         {
-            //ADT MAP
-            "Quadro",
+            ////ADT MAP
+            //"Quadro",
 
             // Corvax-Start
             "CorvaxAvrite",

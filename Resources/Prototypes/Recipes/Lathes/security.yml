@@ -355,12 +355,12 @@
     Plastic: 950
 
 
-- type: latheRecipe
-  id: MagazineHeavyRifle
-  result: MagazineRifle
-  completetime: 2
-  materials:
-    Steel: 400
+#- type: latheRecipe
+#  id: MagazineHeavyRifle
+#  result: MagazineRifle
+#  completetime: 2
+#  materials:
+#    Steel: 400
 
 - type: latheRecipe
   id: MagazineLightRifle
