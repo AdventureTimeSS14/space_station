@@ -272,6 +272,7 @@
       - ClothingEyesHudMedical #Sirena T4 add
       - ClothingEyesHudSecurity #Sirena T4 add
       - ADTClothingEyesHudAdvanced #Sirena T4 add
+      - DnaSyringeGun
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ExplosivePayload
@@ -801,6 +802,7 @@
       - ClothingNeckMantleHOS
       - ClothingNeckMantleHOSShoulder # Corvax-Resprite: Old mantle
       - ClothingNeckMantleRD
+      - ClothingNeckMantleQM # Corvax-Resprite
       - ClothingOuterWinterMusician
       - ClothingOuterWinterClown
       - ClothingOuterWinterMime

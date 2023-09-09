@@ -44,6 +44,15 @@ namespace Content.IntegrationTests.Tests
 
         private static readonly string[] GameMaps =
         {
+            //ADT MAP
+            "Quadro",
+
+            // Corvax-Start
+            "CorvaxAvrite",
+            "CorvaxDelta",
+            "CorvaxIshimura",
+            // Corvax-End
+
             "Dev",
             "TestTeg",
             "Fland",

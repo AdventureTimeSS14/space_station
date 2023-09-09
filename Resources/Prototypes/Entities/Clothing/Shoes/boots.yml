@@ -19,6 +19,9 @@
     sprite: Clothing/Shoes/Boots/jackboots.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/jackboots.rsi
+  - type: FootstepModifier # Corvax-Sounds
+    footstepSoundCollection:
+      collection: FootstepBoots
   - type: Storage
     whitelist:
       tags:
@@ -26,9 +29,6 @@
   - type: StorageFill
     contents:
       - id: CombatKnife
-  - type: FootstepModifier # Corvax-Sounds
-    footstepSoundCollection:
-      collection: FootstepBoots
 
 - type: entity
   parent: ClothingShoesBaseButcherable

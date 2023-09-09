@@ -93,8 +93,8 @@
     - FullAuto
   - type: RevolverAmmoProvider
     capacity: 7
-    chambers: [ True, True, True, True, True ]
-    ammoSlots: [ null, null, null, null, null ]
+    chambers: [ True, True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null, null ]
   - type: MagazineVisuals
     magState: mag
     steps: 4

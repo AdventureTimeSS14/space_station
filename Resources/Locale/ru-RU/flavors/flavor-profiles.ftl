@@ -42,6 +42,7 @@ flavor-base-cheap = дёшево
 flavor-base-piquant = пикантно
 flavor-base-sharp = резко
 flavor-base-syrupy = сиропово
+flavor-base-spaceshroom = таинственно
 # lmao
 flavor-base-terrible = ужасно
 
@@ -150,6 +151,7 @@ flavor-complex-electrons = как электроны
 flavor-complex-parents = как чьи-то родители
 flavor-complex-plastic = как пластик
 flavor-complex-glue = как клей
+flavor-complex-spaceshroom-cooked = как космический умами
 
 ## Generic alcohol/soda taste. This should be replaced with an actual flavor profile.
 
@@ -161,7 +163,7 @@ flavor-complex-juice = как сок
 
 flavor-complex-rocksandstones = как скалы и камни
 flavor-complex-water = как вода
-flavor-complex-beer =  как пенное и алкоголь
+flavor-complex-beer = как моча
 flavor-complex-ale = как хлеб
 flavor-complex-cola = как кола
 flavor-complex-vodka = как забродившее зерно
@@ -172,11 +174,11 @@ flavor-complex-coffee-liquor = как крепкий, горький кофе
 flavor-complex-whiskey = как патока
 flavor-complex-shitty-wine = как виноградная кожура
 flavor-complex-iced-tea = как холодный чай
+flavor-complex-champagne = как свежеиспечённый хлеб
 flavor-complex-coffee = как кофе
 flavor-complex-milk = как молоко
 flavor-complex-tea = как чай
 flavor-complex-ice = как лёд
-flavor-complex-champagne = как шипучее и свежевыпеченный хлеб
 
 ## Cocktails
 
@@ -187,7 +189,7 @@ flavor-complex-singulo = как бездонная дыра
 flavor-complex-syndie-bomb = как горький виски
 flavor-complex-tequila-sunrise = как мексиканское утро
 flavor-complex-irish-coffee = как пробуждение алкоголика
-flavor-complex-iced-beer = как ледяное пенное
+flavor-complex-iced-beer = как ледяная моча
 flavor-complex-gargle-blaster = как будто кто-то ударил вас по голове золотым слитком, покрытым лимоном.
 flavor-complex-bloody-mary = как тяжелое похмелье
 flavor-complex-beepsky = как нефть и виски
@@ -202,6 +204,7 @@ flavor-complex-themartinez = как фиалки и лимонная водка
 
 ### This is exactly what pilk tastes like. I'm not even joking. I might've been a little drunk though
 
+flavor-complex-white-gilgamesh = как слегка газированные сливки
 flavor-complex-antifreeze = как тепло
 flavor-complex-pilk = как сладкое молоко
 

@@ -1,5 +1,8 @@
 ent-ClothingOuterApron = apron
     .desc = A fancy apron for a stylish person.
+ent-ClothingOuterApronBar = apron
+    .desc = A darker apron designed for bartenders.
+    .suffix = Bartender
 ent-ClothingOuterApronBotanist = apron
     .desc = A thick blue-apron, perfect for insulating your soft flesh from spills, soil and thorns.
     .suffix = Botanical
@@ -26,8 +29,6 @@ ent-ClothingOuterPoncho = poncho
     .desc = A warm and comfy poncho.
 ent-ClothingOuterSanta = santa suit
     .desc = Ho ho ho!
-ent-ClothingOuterStraightjacket = straight jacket
-    .desc = A straight jacket.
 ent-ClothingOuterWizardViolet = violet wizard robes
     .desc = A bizarre gem-encrusted violet robe that radiates magical energies.
 ent-ClothingOuterWizard = wizard robes

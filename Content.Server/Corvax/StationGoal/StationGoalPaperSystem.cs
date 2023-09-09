@@ -2,7 +2,6 @@ using System.Linq;
 using Content.Server.Fax;
 using Content.Shared.GameTicking;
 using Content.Shared.Paper;
-using Content.Shared.Random.Helpers;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 
@@ -51,14 +50,10 @@ namespace Content.Server.Corvax.StationGoal
                     Loc.GetString(goal.Text),
                     Loc.GetString("station-goal-fax-paper-name"),
                     null,
-                    "paper_stamp-cent",
+                    "paper_stamp-centcom",
                     new List<StampDisplayInfo>
                     {
-                        new StampDisplayInfo
-                        {
-                            StampedName = Loc.GetString("stamp-component-stamped-name-centcom"),
-                            StampedColor = Color.FromHex("#BB3232")
-                        }
+                        new() { StampedName = Loc.GetString("stamp-component-stamped-name-centcom"), StampedColor = Color.FromHex("#BB3232") },
                     });
                 _faxSystem.Receive(fax.Owner, printout, null, fax);
 
