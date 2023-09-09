@@ -1,6 +1,7 @@
 - type: job
   id: ADTBlueShieldOfficer
   name: job-name-ADTBlueShieldOfficer
+  description: job-description-ADTBlueShieldOfficer
   playTimeTracker: JobADTBlueShieldOfficer
   requirements:
     - !type:RoleTimeRequirement
