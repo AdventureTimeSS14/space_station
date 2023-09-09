@@ -252,8 +252,8 @@ namespace Content.Server.GameTicking
             UpdateLateJoinStatus();
             AnnounceRound();
             UpdateInfoText();
-            RaiseLocalEvent(new RoundStartedEvent(RoundId)); // Corvax-RoundNotifications
             SendRoundStartedDiscordMessage();
+            RaiseLocalEvent(new RoundStartedEvent(RoundId)); // Corvax
 
 #if EXCEPTION_TOLERANCE
             }
@@ -363,7 +363,7 @@ namespace Content.Server.GameTicking
 
                 var entity = mind.OriginalOwnedEntity;
                 if (Exists(entity))
-                    _pvsOverride.AddGlobalOverride(entity.Value, recursive: true);
+                    _pvsOverride.AddGlobalOverride(entity.Value);
 
                 var roles = _roles.MindGetAllRoles(mindId);
 
@@ -391,7 +391,7 @@ namespace Content.Server.GameTicking
             RaiseNetworkEvent(new RoundEndMessageEvent(gamemodeTitle, roundEndText, roundDuration, RoundId,
                 listOfPlayerInfoFinal.Length, listOfPlayerInfoFinal, LobbySong,
                 new SoundCollectionSpecifier("RoundEnd").GetSound()));
-            RaiseLocalEvent(new RoundEndedEvent(RoundId, roundDuration)); // Corvax-RoundNotifications
+            RaiseLocalEvent(new RoundEndedEvent(RoundId, roundDuration)); // Corvax
         }
 
         private async void SendRoundEndDiscordMessage()

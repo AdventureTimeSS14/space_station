@@ -46,12 +46,12 @@
             ResearchDirector: [ 1, 1 ]
             Scientist: [ 3, 4 ]
             ResearchAssistant: [ 2, 2 ]
-            SeniorResearcher: [ 1, 1 ] 
+            SeniorResearcher: [ 1, 1 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
             SecurityOfficer: [ 4, 4 ]
             Warden: [ 1, 1 ]
-            Lawyer: [ 2, 2 ]
+            #Lawyer: [ 2, 2 ] # Corvax-IAA
             SecurityCadet: [ 2, 2 ]
             Detective: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ]
@@ -67,7 +67,7 @@
             Boxer: [ 2, 2 ]
             Reporter: [ 1, 2 ]
             #ADT
-            Brigmedic: [ 1, 1 ]           
+            Brigmedic: [ 1, 1 ]
             ADTBlueShieldOfficer: [ 1, 2 ]
             Magistrat: [ 1, 1 ]
             IAA: [ 1, 1 ] # Corvax-IAA

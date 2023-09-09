@@ -62,7 +62,6 @@
       - id: JetpackCaptainFilled
       - id: MedalCase
       - id: ClothingHeadCaptainHat
-      - id: ClothingHeadCaptainCap
       - id: ClothingOuterCoatCaptain
       - id: ADTtelescopicBaton
       # Sirena-Underwear-Start
@@ -102,10 +101,10 @@
       - id: WeaponAntiqueLaser
       - id: JetpackCaptainFilled
       - id: MedalCase
+      - id: ClothingHeadHatCapcap
       - id: ADTtelescopicBaton
       # Corvax-Resprite-Start
       - id: ClothingHeadCaptainHat
-      - id: ClothingHeadCaptainCap
       - id: ClothingOuterCoatCaptain
       # Corvax-Resprite-End
       - id: ADTClothingEyesHudAdvanced #ADT mods
@@ -139,8 +138,8 @@
       - id: BoxEncryptionKeyService
       - id: ClothingBackpackIan
         prob: 0.5
-      - id: AccessConfigurator
       - id: ClothingOuterCoatHOP # Corvax-Resprite
+      - id: AccessConfigurator
       - id: ADTClothingNeckHoPAltCloak # ADT-Resprite
       # Sirena-Underwear-Start
       - id: ClothingUnderwearBottomBoxersHOP
@@ -383,7 +382,7 @@
       - id: ClothingUnderwearBottomPantiesHOS
       - id: ClothingUnderwearTopBraHOS
       # Sirena-Underwear-End
-
+      - id: BookBusido # Corvax-Books
 
 - type: entity
   id: LockerHeadOfSecurityFilled
@@ -434,6 +433,6 @@
       - id: ClothingUnderwearBottomPantiesHOS
       - id: ClothingUnderwearTopBraHOS
       - id: ClothingUnderwearTopBraHOS
-      - id: WeaponRevolverUnica  
+      - id: WeaponRevolverUnica
       # Sirena-Underwear-End
 
