@@ -1,2 +1,2 @@
-ent-ADTCartridgeMagnumHighVelocityTranquilizer = cartridge (.45 magnum high-velocity)
+ent-ADTCartridgeMagnumHighVelocityTranquilizer = патрон (.44 магнум высокоскоростной транквилизатор)
     .desc = { ent-BaseCartridgeMagnum.desc }

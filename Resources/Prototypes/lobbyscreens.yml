@@ -81,3 +81,7 @@
 - type: lobbyBackground
   id: Lunalita
   background: /Textures/LobbyScreens/Lunalita.png
+
+- type: lobbyBackground
+  id: ShizzyAllstars
+  background: /Textures/LobbyScreens/adtallstars.png

@@ -11,3 +11,9 @@ ent-ADTClothingHeadHatRedji = шляпа старика Рэджи
 ent-ADTClothingHeadHatsPyotrCap = фуражка Петра Шахина
     .desc = Темно-зеленая фуражка, стандартная для офицеров с родного мира Петра.
     .suffix = { "" }
+
+ent-ADTClothingHeadPinkHat = праздничная розовая шляпа
+    .desc = Где мой бокал мартини?!
+    .suffix = { "" }
+
+

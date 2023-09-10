@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ADTClothingOuterBrownFurCoat
+  name: brown fur coat
+  description: This brown fur coat made from elite skin of brown bear
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Coats/brown_furcoat.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Coats/brown_furcoat.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ADTClothingOuterBlackFurCoat
+  name: black fur coat
+  description: This black fur coat made from skin of black bear
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Coats/black_furcoat.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Coats/black_furcoat.rsi

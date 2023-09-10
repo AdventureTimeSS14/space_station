@@ -1,10 +1,10 @@
-ent-BaseMagazineShotgun = барабан (.50 дробь)
+ent-BaseMagazineShotgun = барабан (12х70 дробь)
     .desc = { ent-BaseItem.desc }
-ent-MagazineShotgun = барабан (.50 дробь)
+ent-MagazineShotgun = барабан (12х70 дробь)
     .desc = { ent-BaseMagazineShotgun.desc }
-ent-MagazineShotgunBeanbag = барабан (.50 травматические)
+ent-MagazineShotgunBeanbag = барабан (12х70 травматические)
     .desc = { ent-BaseMagazineShotgun.desc }
-ent-MagazineShotgunSlug = барабан (.50 пуля)
+ent-MagazineShotgunSlug = барабан (12х70 пуля)
     .desc = { ent-BaseMagazineShotgun.desc }
-ent-MagazineShotgunIncendiary = барабан (.50 зажигательные)
+ent-MagazineShotgunIncendiary = барабан (12х70 зажигательные)
     .desc = { ent-BaseMagazineShotgun.desc }

@@ -1,10 +1,10 @@
-ent-BaseCartridgeRifle = патрон (.20 винтовочный)
+ent-BaseCartridgeRifle = патрон (6.5х39 мм TSF)
     .desc = { ent-BaseCartridge.desc }
-ent-CartridgeRifle = патрон (.20 винтовочный)
+ent-CartridgeRifle = патрон (6.5х39 мм TSF)
     .desc = { ent-BaseCartridgeRifle.desc }
-ent-CartridgeRiflePractice = патрон (.20 винтовочный учебный)
+ent-CartridgeRiflePractice = патрон (6.5х39 мм TSF учебный)
     .desc = { ent-BaseCartridgeRifle.desc }
-ent-CartridgeRifleRubber = патрон (.20 винтовочный резиновый)
+ent-CartridgeRifleRubber = патрон (6.5х39 мм TSF резиновый)
     .desc = { ent-BaseCartridgeRifle.desc }
-ent-CartridgeRifleIncendiary = патрон (.20 винтовочный зажигательный)
+ent-CartridgeRifleIncendiary = патрон (6.5х39 мм TSF зажигательный)
     .desc = { ent-BaseCartridgeRifle.desc }
