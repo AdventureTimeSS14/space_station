@@ -1,0 +1,18 @@
+- type: entity
+  name: black chair
+  id: ADTBlackChair
+  parent: SeatBase
+  description: It looks comfy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/black_chair.rsi
+    state: armchair
+  - type: Construction
+    graph: Seat
+    node: adtblackchair

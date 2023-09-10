@@ -92,7 +92,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Melee/e_sword_double.rsi, state: icon }
   productEntity: EnergySwordDouble
   cost:
-    Telecrystal: 50
+    Telecrystal: 40
   categories:
   - UplinkWeapons
 

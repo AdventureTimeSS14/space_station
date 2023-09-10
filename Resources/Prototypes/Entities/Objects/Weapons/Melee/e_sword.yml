@@ -169,11 +169,11 @@
   - type: EnergySword
     litDamageBonus:
         types:
-            Slash: 20
+            Slash: 22
             Blunt: -4.5
     litDisarmMalus: 0.7
   - type: MeleeWeapon
-    attackRate: 1.2
+    attackRate: 1.3
     angle: 100
     soundHit:
       path: /Audio/Weapons/eblade1.ogg
@@ -194,5 +194,5 @@
     sprite: Objects/Weapons/Melee/e_sword_double.rsi
   - type: Reflect
     enabled: true
-    reflectProb: .40
+    reflectProb: .65
     spread: 75

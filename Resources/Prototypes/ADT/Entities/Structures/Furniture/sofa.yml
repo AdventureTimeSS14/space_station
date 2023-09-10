@@ -54,3 +54,177 @@
   - type: Construction
     graph: Seat
     node: adtblacksofaright
+
+#red sofa
+- type: entity
+  name: red sofa left side
+  id: ADTRedSofaLeftSide
+  parent: SeatBase
+  description: It looks comfy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/red_sofa.rsi
+    state: sofa_left
+  - type: Construction
+    graph: Seat
+    node: adtredsofaleft
+
+- type: entity
+  name: red sofa middle
+  id: ADTRedSofaMiddle
+  parent: SeatBase
+  description: It looks comfy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/red_sofa.rsi
+    state: sofa_middle
+  - type: Construction
+    graph: Seat
+    node: adtredsofamiddle
+
+- type: entity
+  name: red sofa right side
+  id: ADTRedSofaRightSide
+  parent: SeatBase
+  description: It looks comfy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/red_sofa.rsi
+    state: sofa_right
+  - type: Construction
+    graph: Seat
+    node: adtredsofaright
+
+#violet sofa
+- type: entity
+  name: violet sofa left side
+  id: ADTVioletSofaLeftSide
+  parent: SeatBase
+  description: It looks comfy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/violet_sofa.rsi
+    state: sofa_left
+  - type: Construction
+    graph: Seat
+    node: adtvioletsofaleft
+
+- type: entity
+  name: violet sofa middle
+  id: ADTVioletSofaMiddle
+  parent: SeatBase
+  description: It looks comfy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/violet_sofa.rsi
+    state: sofa_middle
+  - type: Construction
+    graph: Seat
+    node: adtvioletsofamiddle
+
+- type: entity
+  name: violet sofa right side
+  id: ADTVioletSofaRightSide
+  parent: SeatBase
+  description: It looks comfy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/violet_sofa.rsi
+    state: sofa_right
+  - type: Construction
+    graph: Seat
+    node: adtvioletsofaright
+
+#leather sofa
+- type: entity
+  name: leather sofa left side
+  id: ADTLeatherSofaLeftSide
+  parent: SeatBase
+  description: It looks comfy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/leather_sofa.rsi
+    state: sofa_left
+  - type: Construction
+    graph: Seat
+    node: adtleathersofaleft
+
+- type: entity
+  name: leather sofa middle
+  id: ADTLeatherSofaMiddle
+  parent: SeatBase
+  description: It looks comfy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/leather_sofa.rsi
+    state: sofa_middle
+  - type: Construction
+    graph: Seat
+    node: adtleathersofamiddle
+
+- type: entity
+  name: leather sofa right side
+  id: ADTLeatherSofaRightSide
+  parent: SeatBase
+  description: It looks comfy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/leather_sofa.rsi
+    state: sofa_right
+  - type: Construction
+    graph: Seat
+    node: adtleathersofaright

@@ -8,3 +8,36 @@
     sprite: ADT/Clothing/Neck/windyscarf.rsi
   - type: Clothing
     sprite: ADT/Clothing/Neck/windyscarf.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckBlueFur
+  name:  blue fur tape
+  description: This fur tape ideal set in your garderobe
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/bluefurtape.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Neck/bluefurtape.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckPinkFur
+  name:  pink fur tape
+  description: This fur tape ideal set in your garderobe
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/pinkfurtape.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Neck/pinkfurtape.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckBlackFur
+  name:  black fur tape
+  description: This fur tape ideal set in your garderobe
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/blackfurtape.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Neck/blackfurtape.rsi

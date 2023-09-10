@@ -182,3 +182,25 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/white_abibas.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/white_abibas.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformAbibasRedSuit
+  name: red sport suit
+  description: Sportsuit for respectful buddies.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/red_abibas.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/red_abibas.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformAbibasBlueSuit
+  name: blue sport suit
+  description: Sportsuit for respectful buddies.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/blue_abibas.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/blue_abibas.rsi

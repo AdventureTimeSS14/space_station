@@ -154,6 +154,39 @@
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/lilit_black_dress.rsi
 
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformBlueLatexDress
+  name: blue latex dress
+  description: Where i see the same..its from serial?
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/blue_latex_dress.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/blue_latex_dress.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformLeopardDress
+  name: leopard dress
+  description: Baby, you just a kitty in this dress! Mrrau.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/leopard_dress.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/leopard_dress.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformPinkSexyDress
+  name: pink sexy dress
+  description: Ideal outfit for drink another martini shot.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/pink_dress.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/pink_dress.rsi
+
 #chu-see
 - type: entity
   parent: ClothingUniformBase
