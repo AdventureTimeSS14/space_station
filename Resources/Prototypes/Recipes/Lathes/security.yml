@@ -369,12 +369,12 @@
   materials:
     Steel: 1200
 
-- type: latheRecipe
-  id: BaseMagazinePistol
-  result: MagazinePistol
-  completetime: 2
-  materials:
-    Steel: 150
+#- type: latheRecipe
+#  id: BaseMagazinePistol
+#  result: MagazinePistol
+#  completetime: 2
+#  materials:
+#    Steel: 150
 
 - type: latheRecipe
   id: MagazineRifle
@@ -397,12 +397,12 @@
   materials:
     Steel: 900
 
-#- type: latheRecipe
-#  id: MagazinePistol
-#  result: MagazinePistol
-#  completetime: 2
-#  materials:
-#    Steel: 400
+- type: latheRecipe
+  id: MagazinePistol
+  result: MagazinePistol
+  completetime: 2
+  materials:
+    Steel: 400
 
 - type: latheRecipe
   id: SpeedLoaderMagnum

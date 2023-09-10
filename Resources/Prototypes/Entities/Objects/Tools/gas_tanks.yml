@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   abstract: true
   parent: BaseItem
   id: GasTankBase
@@ -48,7 +48,7 @@
         Blunt: 10
   - type: PhysicalComposition
     materialComposition:
-      Steel: 400
+      Steel: 300
   - type: StaticPrice
     price: 20
 
