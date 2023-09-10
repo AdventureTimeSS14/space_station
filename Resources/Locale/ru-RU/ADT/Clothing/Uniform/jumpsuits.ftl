@@ -56,3 +56,26 @@ ent-ADTClothingUniformAbibasBlackSuit = черный спортивный кос
 ent-ADTClothingUniformAbibasWhiteSuit = белый спортивный костюм
     .desc = Спортивка для блатных пацанов
     .suffix = { "" }
+
+ent-ADTClothingUniformAbibasRedSuit = красный спортивный костюм
+    .desc = Спортивка для четких пацанов
+    .suffix = { "" }
+
+ent-ADTClothingUniformAbibasBlueSuit = синий спортивный костюм
+    .desc = Спортивка для блатных пацанов
+    .suffix = { "" }
+
+
+ent-ADTClothingUniformBlueLatexDress = голубое латексное платье
+    .desc = Где-то я такое уже видел... Это из сериала?
+    .suffix = { "" }
+
+
+ent-ADTClothingUniformLeopardDress = леопардовое платье
+    .desc = Детка, в этом платье ты просто супер кошечка! Мррау!
+    .suffix = { "" }
+
+
+ent-ADTClothingUniformPinkSexyDress = розовый сексуальный наряд
+    .desc = Идеальный наряд, для того что бы выпить бокал мартини!
+    .suffix = { "" }

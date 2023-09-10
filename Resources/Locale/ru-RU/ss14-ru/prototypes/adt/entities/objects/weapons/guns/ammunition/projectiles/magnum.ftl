@@ -1,2 +1,2 @@
-ent-ADTBulletMagnumHighVelocityTranquilizer = bullet (.45 magnum high-velocity)
+ent-ADTBulletMagnumHighVelocityTranquilizer = пуля (.44 магнум высокоскоростной транквилизатор)
     .desc = { ent-BaseBulletHighVelocity.desc }

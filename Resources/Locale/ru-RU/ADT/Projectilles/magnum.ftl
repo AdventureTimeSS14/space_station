@@ -6,5 +6,5 @@ ent-ADTMagazineBoxMagnumHighVelocityTranquilizer = коробка патроно
     .desc = { ent-BaseMagazineBoxMagnum.desc }
 ent-ADTMagazineMagnumSubMachineGunHighVelocityTranquilizer = магазин Вектора (.44 магнум высокоскоростные, транквилизатор)
     .desc = { ent-BaseMagazineMagnumSubMachineGun.desc }
-ent-BoxMagazineMagnumSubMachineGunPractice = Ящик магазинов для вектора (высокоскоростные, транквилизатор)
+ent-BoxMagazineMagnumSubMachineGunPractice = ящик магазинов для вектора (высокоскоростные, транквилизатор)
     .desc = Ящик, полный магазинов для Вектора (высокоскоростные, транквилизатор)

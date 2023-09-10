@@ -1,2 +1,2 @@
-ent-ADTMagazineMagnumSubMachineGunHighVelocityTranquilizer = Vector magazine (.45 magnum High-Velocity)
+ent-ADTMagazineMagnumSubMachineGunHighVelocityTranquilizer = магазин Вектора (.44 магнум высокоскоростной транквилизатор)
     .desc = { ent-BaseMagazineMagnumSubMachineGun.desc }

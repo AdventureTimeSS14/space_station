@@ -1,2 +1,2 @@
-ent-ADTMagazineBoxMagnumHighVelocityTranquilizer = ammunition box (.45 magnum high-velocity)
+ent-ADTMagazineBoxMagnumHighVelocityTranquilizer = коробка магазинов (.44 магнум высокоскоростные транквилизаторы)
     .desc = { ent-BaseMagazineBoxMagnum.desc }
