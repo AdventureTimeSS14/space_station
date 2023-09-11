@@ -411,6 +411,7 @@
     - Flash
     - BorgModuleCable
     - BorgModuleFireExtinguisher
+    - BorgModulePDA
     - BorgModuleGPS
     - BorgModuleRadiationDetection
     - BorgModuleTool
