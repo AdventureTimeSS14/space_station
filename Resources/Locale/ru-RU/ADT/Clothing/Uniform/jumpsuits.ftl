@@ -45,6 +45,7 @@ ent-ADTClothingUniformRitaBlackDress = черное платье Риты
     .desc = Черное платье, принадлежащее Рите Энглер. С рискованно большим вырезом
     .suffix = { "" }
 
+
 ent-ADTClothingUniformRabbitDress = кроличий купальник
     .desc = А куда здесь крепить КПК?
     .suffix = { "" }
@@ -78,4 +79,13 @@ ent-ADTClothingUniformLeopardDress = леопардовое платье
 
 ent-ADTClothingUniformPinkSexyDress = розовый сексуальный наряд
     .desc = Идеальный наряд, для того что бы выпить бокал мартини!
+
+
+ent-ADTClothingUniformHikeformCmo = походный костюм главного врача
+    .desc = Рубашка и мешковитые штаны, отлично подходящие для активной работы как вне, так и внутри своего отдела.
+    .suffix = { "" }
+
+
+ent-ADTClothingUniformHikeJumpskirtCmo = походная юбка-костюм главного врача
+    .desc = Рубашка и мешковитая юбка, отлично подходящие для активной работы как вне, так и внутри своего отдела.
     .suffix = { "" }
