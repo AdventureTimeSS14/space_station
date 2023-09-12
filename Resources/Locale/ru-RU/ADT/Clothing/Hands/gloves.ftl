@@ -5,3 +5,9 @@ ent-ADTClothingHandsRedjiGloves = Перчатки старика Реджи
 
 ent-ADTClothingHandsRabbitGloves = кроличьи перчатки
     .desc = Ох. Фурри.
+
+ent-ADTClothingHandsRingUrog = обручальное кольцо Урог-Джаха
+    .desc = На кольце выгравировано "Юна"
+
+ent-ADTClothingHandsRingYuna = обручальное кольцо Юны Джах
+    .desc = На кольце выгравировано "Урог"

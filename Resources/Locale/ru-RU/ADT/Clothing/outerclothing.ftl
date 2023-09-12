@@ -5,3 +5,7 @@ ent-ADTClothingOuterJacketBartender = Барная жилетка
 ent-ADTClothingOuterCoatPyotrCoat = шинель Петра Шахина
     .desc = Темно-зеленая шинель. Кажется тяжелее, чем должна быть.
     .suffix = { "" }
+
+ent-ADTClothingOuterCoatOctyabrinaCoat = пальто Октябрины
+    .desc = Темно-красное пальто. Кажется тяжелее, чем должно быть.
+    .suffix = { "" }

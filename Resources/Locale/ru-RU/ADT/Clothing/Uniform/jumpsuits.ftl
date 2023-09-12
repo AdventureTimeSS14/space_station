@@ -79,3 +79,7 @@ ent-ADTClothingUniformLeopardDress = леопардовое платье
 ent-ADTClothingUniformPinkSexyDress = розовый сексуальный наряд
     .desc = Идеальный наряд, для того что бы выпить бокал мартини!
     .suffix = { "" }
+
+ent-ADTClothingUniformYunaBlackDress = черное платье Юны Джах
+    .desc = Черное платье для торжеств, принадлежащее Юне Джах
+    .suffix = { "" }

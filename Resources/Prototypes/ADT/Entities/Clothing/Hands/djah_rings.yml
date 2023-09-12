@@ -1,0 +1,29 @@
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsRingUrog
+  name: wedding ring of Urog-Djah
+  description: the ring is engraved with "Yuna"
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/ring_urog.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/ring_urog.rsi
+  - type: Item
+    size: 1
+  - type: StaticPrice
+    price: 1000
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsRingYuna
+  name: wedding ring of Yuna-Djah
+  description: the ring is engraved with "Urog"
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/ring_yuna.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/ring_yuna.rsi
+  - type: Item
+    size: 1
+  - type: StaticPrice
+    price: 1000
