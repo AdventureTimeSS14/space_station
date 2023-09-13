@@ -19,3 +19,21 @@
         Slash: 0.8
         Piercing: 0.7
         Heat: 0.8
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ADTClothingOuterCoatOctyabrinaCoat
+  name: Octyabrina`s Coat
+  description: This red coat is heavier than look
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Coats/oktyabrina_coat.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Coats/oktyabrina_coat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.7
+        Heat: 0.8
