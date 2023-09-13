@@ -100,6 +100,19 @@
     - FireExtinguisher
 
 - type: entity
+  id: BorgModulePDA
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  name: PDA cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: generic
+    - state: icon-pda
+  - type: ItemBorgModule
+    items:
+    - BorgPDA
+
+- type: entity
   id: BorgModuleGPS
   parent: [ BaseBorgModule, BaseProviderBorgModule ]
   name: GPS cyborg module
