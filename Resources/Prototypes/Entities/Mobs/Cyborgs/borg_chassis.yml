@@ -14,7 +14,7 @@
       map: ["light"]
       visible: false
   - type: BorgChassis
-    maxModules: 5
+    maxModules: 6
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
@@ -42,7 +42,7 @@
       map: ["light"]
       visible: false
   - type: BorgChassis
-    maxModules: 3
+    maxModules: 4
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
@@ -69,7 +69,7 @@
       map: ["light"]
       visible: false
   - type: BorgChassis
-    maxModules: 3
+    maxModules: 4
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
@@ -96,7 +96,7 @@
       map: ["light"]
       visible: false
   - type: BorgChassis
-    maxModules: 3
+    maxModules: 4
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
@@ -123,7 +123,7 @@
       map: ["light"]
       visible: false
   - type: BorgChassis
-    maxModules: 3
+    maxModules: 4
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
@@ -152,7 +152,7 @@
       map: ["light"]
       visible: false
   - type: BorgChassis
-    maxModules: 3
+    maxModules: 4
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
