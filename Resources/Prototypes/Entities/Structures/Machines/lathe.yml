@@ -539,11 +539,11 @@
       - ShellShotgun
       - ShellShotgunFlare
       - ShellTranquilizer
-      - MagazinePistol
-      - MagazinePistolSubMachineGun
-      - MagazinePistolSubMachineGunTopMounted
-      - MagazineRifle
-      - MagazineLightRifle
+      #- MagazinePistol
+      #- MagazinePistolSubMachineGun
+      #- MagazinePistolSubMachineGunTopMounted
+      #- MagazineRifle
+      #- MagazineLightRifle
       - MagazineBoxPistol
       - MagazineBoxMagnum
       - MagazineBoxRifle
