@@ -1,42 +1,52 @@
 # flip animation
-- type: instantAction
+- type: entity
   id: EmoteFlip
   name: emote-flip-action-name
   description: emote-flip-action-description
-  icon: Interface/Actions/blight.png
-  event: !type:EmoteFlipActionEvent
+  components:
+  - type: InstantAction
+    icon: Interface/Actions/blight.png
+    event: !type:EmoteFlipActionEvent
 
 # jump animation
-- type: instantAction
+- type: entity
   id: EmoteJump
   name: emote-jump-action-name
   description: emote-jump-action-description
-  icon: Interface/Actions/blight.png
-  event: !type:EmoteJumpActionEvent
+  components:
+    - type: InstantAction
+      icon: Interface/Actions/blight.png
+      event: !type:EmoteJumpActionEvent
 
   # turn around in 4 directions animation
-- type: instantAction
+- type: entity
   id: EmoteTurn
   name: emote-turn-action-name
   description: emote-turn-action-description
-  icon: Interface/Actions/blight.png
-  event: !type:EmoteTurnActionEvent
+  components:
+    - type: InstantAction
+      icon: Interface/Actions/blight.png
+      event: !type:EmoteTurnActionEvent
 
   # stop-tail animation
-- type: instantAction
+- type: entity
   id: EmoteStopTail
   name: emote-stop-tail-action-name
   description: emote-stop-tail-action-description
-  icon: Interface/Actions/blight.png
-  event: !type:EmoteStopTailActionEvent
+  components:
+    - type: InstantAction
+      icon: Interface/Actions/blight.png
+      event: !type:EmoteStopTailActionEvent
 
   # start-tail animation
-- type: instantAction
+- type: entity
   id: EmoteStartTail
   name: emote-start-tail-action-name
   description: emote-start-tail-action-description
-  icon: Interface/Actions/blight.png
-  event: !type:EmoteStartTailActionEvent
+  components:
+    - type: InstantAction
+      icon: Interface/Actions/blight.png
+      event: !type:EmoteStartTailActionEvent
 
 
 # Using EmoteAnimation from IC action chat

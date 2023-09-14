@@ -22,6 +22,7 @@ using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
+using Robust.Client.UserInterface.CustomControls;
 using Robust.Client.UserInterface.XAML;
 using Robust.Client.Utility;
 using Robust.Shared.Configuration;
@@ -33,6 +34,7 @@ using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using Content.Shared.ADT.ACCVars;
 using static Robust.Client.UserInterface.Controls.BoxContainer;
+using Direction = Robust.Shared.Maths.Direction;
 
 namespace Content.Client.Preferences.UI
 {
@@ -91,17 +93,11 @@ namespace Content.Client.Preferences.UI
         private readonly List<AntagPreferenceSelector> _antagPreferences;
         private readonly List<TraitPreferenceSelector> _traitPreferences;
 
-        private Control _previewSpriteControl => CSpriteViewFront;
-        private Control _previewSpriteSideControl => CSpriteViewSide;
-
+        private SpriteView _previewSpriteView => CSpriteView;
+        private Button _previewRotateLeftButton => CSpriteRotateLeft;
+        private Button _previewRotateRightButton => CSpriteRotateRight;
+        private Direction _previewRotation = Direction.North;
         private EntityUid? _previewDummy;
-
-        /// <summary>
-        /// Used to avoid unnecessarily re-creating the entity.
-        /// </summary>
-        private string? _lastSpecies;
-        private SpriteView? _previewSprite;
-        private SpriteView? _previewSpriteSide;
 
         private BoxContainer _rgbSkinColorContainer => CRgbSkinColorContainer;
         private ColorSelectorSliders _rgbSkinColorSelector;
@@ -125,7 +121,7 @@ namespace Content.Client.Preferences.UI
             _configurationManager = configurationManager;
             _markingManager = IoCManager.Resolve<MarkingManager>();
 
-             #region Left
+            #region Left
 
             #region Randomize
 
@@ -289,7 +285,7 @@ namespace Content.Client.Preferences.UI
                 IsDirty = true;
             };
 
-            _hairPicker.OnSlotAdd += delegate ()
+            _hairPicker.OnSlotAdd += delegate()
             {
                 if (Profile is null)
                     return;
@@ -309,7 +305,7 @@ namespace Content.Client.Preferences.UI
                 IsDirty = true;
             };
 
-            _facialHairPicker.OnSlotAdd += delegate ()
+            _facialHairPicker.OnSlotAdd += delegate()
             {
                 if (Profile is null)
                     return;
@@ -426,8 +422,6 @@ namespace Content.Client.Preferences.UI
                 _antagList.AddChild(selector);
                 _antagPreferences.Add(selector);
 
-
-
                 selector.PreferenceChanged += preference =>
                 {
                     Profile = Profile?.WithAntagPreference(antag.ID, preference);
@@ -494,7 +488,6 @@ namespace Content.Client.Preferences.UI
                 _tabContainer.SetTabTitle(_tabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-flavortext-tab"));
                 _flavorTextEdit = flavorText.CFlavorTextInput;
 
-
                 flavorText.OnFlavorTextChanged += OnFlavorTextChange;
 
                 // Sirena-ERPStatus-Start
@@ -528,6 +521,18 @@ namespace Content.Client.Preferences.UI
             #endregion FlavorText
 
             #region Dummy
+
+            _previewRotateLeftButton.OnPressed += _ =>
+            {
+                _previewRotation = _previewRotation.TurnCw();
+                _needUpdatePreview = true;
+            };
+            _previewRotateRightButton.OnPressed += _ =>
+            {
+                _previewRotation = _previewRotation.TurnCcw();
+                _needUpdatePreview = true;
+            };
+
             var species = Profile?.Species ?? SharedHumanoidAppearanceSystem.DefaultSpecies;
             var dollProto = _prototypeManager.Index<SpeciesPrototype>(species).DollPrototype;
 
@@ -535,27 +540,7 @@ namespace Content.Client.Preferences.UI
                 _entMan.DeleteEntity(_previewDummy!.Value);
 
             _previewDummy = _entMan.SpawnEntity(dollProto, MapCoordinates.Nullspace);
-            _lastSpecies = species;
-
-            _previewSprite = new SpriteView
-            {
-                Scale = new Vector2(6, 6),
-                OverrideDirection = Direction.South,
-                VerticalAlignment = VAlignment.Center,
-                SizeFlagsStretchRatio = 1
-            };
-            _previewSprite.SetEntity(_previewDummy.Value);
-            _previewSpriteControl.AddChild(_previewSprite);
-
-            _previewSpriteSide = new SpriteView
-            {
-                Scale = new Vector2(6, 6),
-                OverrideDirection = Direction.East,
-                VerticalAlignment = VAlignment.Center,
-                SizeFlagsStretchRatio = 1
-            };
-            _previewSpriteSide.SetEntity(_previewDummy.Value);
-            _previewSpriteSideControl.AddChild(_previewSpriteSide);
+            _previewSpriteView.SetEntity(_previewDummy);
             #endregion Dummy
 
             #endregion Left
@@ -775,35 +760,7 @@ namespace Content.Client.Preferences.UI
                 _entMan.DeleteEntity(_previewDummy!.Value);
 
             _previewDummy = _entMan.SpawnEntity(dollProto, MapCoordinates.Nullspace);
-            _lastSpecies = species;
-
-            if (_previewSprite == null)
-            {
-                // Front
-                _previewSprite = new SpriteView
-                {
-                    Scale = new Vector2(6, 6),
-                    OverrideDirection = Direction.South,
-                    VerticalAlignment = VAlignment.Center,
-                    SizeFlagsStretchRatio = 1
-                };
-                _previewSpriteControl.AddChild(_previewSprite);
-            }
-            _previewSprite.SetEntity(_previewDummy.Value);
-
-            if (_previewSpriteSide == null)
-            {
-                _previewSpriteSide = new SpriteView
-                {
-                    Scale = new Vector2(6, 6),
-                    OverrideDirection = Direction.East,
-                    VerticalAlignment = VAlignment.Center,
-                    SizeFlagsStretchRatio = 1
-                };
-                _previewSpriteSideControl.AddChild(_previewSpriteSide);
-            }
-            _previewSpriteSide.SetEntity(_previewDummy.Value);
-
+            _previewSpriteView.SetEntity(_previewDummy);
             _needUpdatePreview = true;
         }
 
@@ -1196,6 +1153,8 @@ namespace Content.Client.Preferences.UI
 
             if (ShowClothes.Pressed)
                 LobbyCharacterPreviewPanel.GiveDummyJobClothes(_previewDummy!.Value, Profile);
+
+            _previewSpriteView.OverrideDirection = (Direction) ((int) _previewRotation % 4 * 2);
         }
 
         public void UpdateControls()
@@ -1233,7 +1192,6 @@ namespace Content.Client.Preferences.UI
             if (_needUpdatePreview)
             {
                 UpdatePreview();
-
                 _needUpdatePreview = false;
             }
         }
@@ -1312,7 +1270,6 @@ namespace Content.Client.Preferences.UI
                 {
                     Visible = false,
                     HorizontalExpand = true,
-                    TooltipDelay = 0.2f,
                     MouseFilter = MouseFilterMode.Stop,
                     Children =
                     {
@@ -1331,7 +1288,6 @@ namespace Content.Client.Preferences.UI
                 if (job.LocalizedDescription != null)
                 {
                     _jobTitle.ToolTip = job.LocalizedDescription;
-                    _jobTitle.TooltipDelay = 0.2f;
                 }
 
                 AddChild(new BoxContainer
@@ -1347,9 +1303,11 @@ namespace Content.Client.Preferences.UI
                 });
             }
 
-            public void LockRequirements(string requirements)
+            public void LockRequirements(FormattedMessage requirements)
             {
-                _lockStripe.ToolTip = requirements;
+                var tooltip = new Tooltip();
+                tooltip.SetMessage(requirements);
+                _lockStripe.TooltipSupplier = _ => tooltip;
                 _lockStripe.Visible = true;
                 _optionButton.Visible = false;
             }
@@ -1422,7 +1380,6 @@ namespace Content.Client.Preferences.UI
                 if (antag.Description != null)
                 {
                     _checkBox.ToolTip = Loc.GetString(antag.Description);
-                    _checkBox.TooltipDelay = 0.2f;
                 }
 
                 AddChild(new BoxContainer
@@ -1469,7 +1426,6 @@ namespace Content.Client.Preferences.UI
                 if (trait.Description is { } desc)
                 {
                     _checkBox.ToolTip = Loc.GetString(desc);
-                    _checkBox.TooltipDelay = 0.2f;
                 }
 
                 AddChild(new BoxContainer

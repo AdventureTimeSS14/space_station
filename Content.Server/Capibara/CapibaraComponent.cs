@@ -1,4 +1,3 @@
-using Content.Shared.Actions.ActionTypes;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
@@ -11,7 +10,7 @@ namespace Content.Server.Capibara
         ///     The action for the Raise Army ability
         /// </summary>
         [DataField("actionRaiseArmy", required: true)]
-        public InstantAction ActionRaiseArmy = new();
+        public EntityUid? ActionRaiseArmy = new();
 
         /// <summary>
         ///     The amount of hunger one use of Raise Army consumes

@@ -89,7 +89,7 @@
   materials:
     Steel: 300
     Glass: 200
-    
+
 - type: latheRecipe
   id: ClothingEyesHudSecurity
   result: ClothingEyesHudSecurity
@@ -105,6 +105,14 @@
   materials:
     Steel: 400
     Glass: 400
+
+- type: latheRecipe
+  id: TelescopicShield
+  result: TelescopicShield
+  completetime: 4
+  materials:
+    Steel: 300
+    Glass: 800
 
 - type: latheRecipe
   id: Flash
@@ -232,6 +240,13 @@
     Steel: 500
 
 - type: latheRecipe
+  id: MagazinePistolSubMachineGunTopMounted
+  result: MagazinePistolSubMachineGunTopMounted
+  completetime: 5
+  materials:
+    Steel: 300
+
+- type: latheRecipe
   id: MagazineBoxPistol
   result: MagazineBoxPistol
   completetime: 5
@@ -260,6 +275,13 @@
   materials:
     Steel: 350
     Plastic: 300
+
+- type: latheRecipe
+  id: MagazineLightRifle
+  result: MagazineLightRifle
+  completetime: 5
+  materials:
+    Steel: 375
 
 - type: latheRecipe
   id: MagazineBoxRifle
@@ -361,13 +383,6 @@
 #  completetime: 2
 #  materials:
 #    Steel: 400
-
-- type: latheRecipe
-  id: MagazineLightRifle
-  result: MagazineLightRifle
-  completetime: 2
-  materials:
-    Steel: 1200
 
 #- type: latheRecipe
 #  id: BaseMagazinePistol

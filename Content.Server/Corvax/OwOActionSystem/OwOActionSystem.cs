@@ -1,7 +1,7 @@
 ﻿using Content.Server.Corvax.Sponsors;
 using Content.Server.Speech.Components;
 using Content.Shared.Actions;
-using Content.Shared.Actions.ActionTypes;
+using Content.Shared.ADT.OwOAccent;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Verbs;
 using Robust.Shared.Prototypes;
@@ -20,8 +20,13 @@ public sealed class OwOActionSystem : EntitySystem
         base.Initialize();
         SubscribeLocalEvent<MobStateComponent, OwOAccentActionEvent>(OnOwOAction);
         SubscribeLocalEvent<OwOActionComponent, OwOAccentActionEvent>(OnChange);
-        SubscribeLocalEvent<OwOActionComponent, ComponentStartup>(OnStartup);
+        SubscribeLocalEvent<OwOActionComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<OwOActionComponent, ComponentShutdown>(OnShutdown);
+    }
+
+    private void OnMapInit(EntityUid uid, OwOActionComponent component, MapInitEvent args)
+    {
+        _actionsSystem.AddAction(uid, ref component.OwOActionEntity, component.OwOAction);
     }
 
     private void OnChange(EntityUid uid, OwOActionComponent component, OwOAccentActionEvent args)
@@ -31,20 +36,10 @@ public sealed class OwOActionSystem : EntitySystem
 
     private void OnShutdown(EntityUid uid, OwOActionComponent component, ComponentShutdown args)
     {
-        if(component.OwOAction != null)
-            _actionsSystem.RemoveAction(uid, component.OwOAction);
+        if(component.OwOActionEntity != null)
+            _actionsSystem.RemoveAction(uid, component.OwOActionEntity);
     }
 
-    private void OnStartup(EntityUid uid, OwOActionComponent component, ComponentStartup args)
-    {
-        if(component.OwOAction == null && _proto.TryIndex(component.ActionId, out InstantActionPrototype? act))
-        {
-            component.OwOAction = new(act);
-        }
-
-        if(component.OwOAction != null)
-            _actionsSystem.AddAction(uid, component.OwOAction, null);
-    }
 
     private void OnOwOAction(EntityUid uid, MobStateComponent component, OwOAccentActionEvent ev)
     {

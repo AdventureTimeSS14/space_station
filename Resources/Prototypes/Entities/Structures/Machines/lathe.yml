@@ -295,6 +295,7 @@
   components:
   - type: Sprite
     sprite: Structures/Machines/circuit_imprinter.rsi
+    snapCardinals: true
     layers:
     - state: icon
       map: ["enum.LatheVisualLayers.IsRunning"]
@@ -538,8 +539,11 @@
       - ShellShotgun
       - ShellShotgunFlare
       - ShellTranquilizer
-      - CartridgeLightRifle
-      - CartridgeRifle
+      - MagazinePistol
+      - MagazinePistolSubMachineGun
+      - MagazinePistolSubMachineGunTopMounted
+      - MagazineRifle
+      - MagazineLightRifle
       - MagazineBoxPistol
       - MagazineBoxMagnum
       - MagazineBoxRifle
@@ -551,6 +555,7 @@
       - MagazineRifle
       - MagazineShotgun
       - MagazinePistolSubMachineGun
+      - MagazinePistolSubMachineGunTopMounted
       - MagazinePistol
       - SpeedLoaderMagnum
       - SpeedLoader357
@@ -586,6 +591,7 @@
       - VoiceTrigger
       - TimerTrigger
       - Truncheon
+      - TelescopicShield
       - FlashPayload
       - ExplosivePayload
       - WeaponLaserCarbine
