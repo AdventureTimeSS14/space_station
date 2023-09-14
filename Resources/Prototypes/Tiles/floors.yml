@@ -1194,18 +1194,6 @@
   heatCapacity: 10000
 
 - type: tile
-  id: FloorGlassAlt
-  name: tiles-glass-floor-alt
-  sprite: /Textures/Tiles/glass_alt.png
-  baseTurf: Plating
-  isSubfloor: false
-  canCrowbar: true
-  footstepSounds:
-    collection: FootstepTile
-  itemDrop: SheetGlass1
-  heatCapacity: 10000
-
-- type: tile
   id: FloorRGlass
   name: tiles-reinforced-glass-floor
   sprite: /Textures/Tiles/rglass.png
@@ -1215,18 +1203,6 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: Plating
-  isSubfloor: false
-  canCrowbar: true
-  footstepSounds:
-    collection: FootstepTile
-  itemDrop: SheetRGlass1
-  heatCapacity: 10000
-
-- type: tile
-  id: FloorRGlassAlt
-  name: tiles-reinforced-glass-floor-alt
-  sprite: /Textures/Tiles/rglass_alt.png
   baseTurf: Plating
   isSubfloor: false
   canCrowbar: true

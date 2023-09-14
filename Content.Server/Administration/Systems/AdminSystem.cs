@@ -188,7 +188,7 @@ namespace Content.Server.Administration.Systems
 
             var sponsor = _sponsorManager.TryGetInfo(data.UserId, out var sponsorInfo) && sponsorInfo.HavePriorityJoin;
 
-            return new PlayerInfo(name, entityName, identityName, startingRole, antag, sponsor, session?.AttachedEntity, data.UserId,
+            return new PlayerInfo(name, entityName, identityName, startingRole, antag, sponsor, GetNetEntity(session?.AttachedEntity), data.UserId,
                 connected, _roundActivePlayers.Contains(data.UserId));
         }
     }

@@ -295,6 +295,7 @@
   components:
   - type: Sprite
     sprite: Structures/Machines/circuit_imprinter.rsi
+    snapCardinals: true
     layers:
     - state: icon
       map: ["enum.LatheVisualLayers.IsRunning"]
@@ -551,6 +552,7 @@
       - MagazineRifle
       - MagazineShotgun
       - MagazinePistolSubMachineGun
+      - MagazinePistolSubMachineGunTopMounted
       - MagazinePistol
       - SpeedLoaderMagnum
       - SpeedLoader357
