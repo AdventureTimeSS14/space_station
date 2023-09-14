@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 1 * * *'
-  #workflow_run:
-    #workflows: [Build & Test Release]
-    #types: [completed]
+  workflow_run:
+    workflows: [Build & Test Release]
+    types: [completed]
 
 jobs:
   build:
