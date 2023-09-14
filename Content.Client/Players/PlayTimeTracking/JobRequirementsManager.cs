@@ -98,21 +98,21 @@ public sealed class JobRequirementsManager
         {
             foreach (var requirement in antag.Requirements)
             {
-                if (JobRequirements.TryRequirementMet(requirement, roles, out reason, _prototypes))
+                if (JobRequirements.TryRequirementMet(requirement, roles, out reason, _entManager, _prototypes))
                     continue;
 
                 if (!first)
                     reasonBuilder.Append('\n');
                 first = false;
 
-                reasonBuilder.AppendLine(reason);
+                reasonBuilder.AppendLine(reason.ToString());
             }
         }
-        reason = reasonBuilder.Length == 0 ? null : reasonBuilder.ToString();
+        reason = reasonBuilder.Length == 0 ? null : FormattedMessage.FromMarkup(reasonBuilder.ToString());
         return reason == null;
     }
 
-    public bool IsAllowed(JobPrototype job, [NotNullWhen(false)] out string? reason)
+    public bool IsAllowed(JobPrototype job, [NotNullWhen(false)] out FormattedMessage? reason)
     {
         reason = null;
 

@@ -121,7 +121,7 @@ namespace Content.Client.Preferences.UI
             _configurationManager = configurationManager;
             _markingManager = IoCManager.Resolve<MarkingManager>();
 
-             #region Left
+            #region Left
 
             #region Randomize
 
@@ -285,7 +285,7 @@ namespace Content.Client.Preferences.UI
                 IsDirty = true;
             };
 
-            _hairPicker.OnSlotAdd += delegate ()
+            _hairPicker.OnSlotAdd += delegate()
             {
                 if (Profile is null)
                     return;
@@ -305,7 +305,7 @@ namespace Content.Client.Preferences.UI
                 IsDirty = true;
             };
 
-            _facialHairPicker.OnSlotAdd += delegate ()
+            _facialHairPicker.OnSlotAdd += delegate()
             {
                 if (Profile is null)
                     return;
@@ -422,8 +422,6 @@ namespace Content.Client.Preferences.UI
                 _antagList.AddChild(selector);
                 _antagPreferences.Add(selector);
 
-
-
                 selector.PreferenceChanged += preference =>
                 {
                     Profile = Profile?.WithAntagPreference(antag.ID, preference);
@@ -489,7 +487,6 @@ namespace Content.Client.Preferences.UI
                 _tabContainer.AddChild(flavorText);
                 _tabContainer.SetTabTitle(_tabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-flavortext-tab"));
                 _flavorTextEdit = flavorText.CFlavorTextInput;
-
 
                 flavorText.OnFlavorTextChanged += OnFlavorTextChange;
 

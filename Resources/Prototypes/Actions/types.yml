@@ -18,9 +18,10 @@
       checkCanInteract: false
       icon: Interface/Actions/owo-button.png
       iconOn: Interface/Actions/owo-button-on.png
-      userPopup: action-popup-owovoice
-      popupToggleSuffix: -enabled
-      serverEvent: !type:OwOAccentActionEvent
+      event: !type:OwOAccentActionEvent
+#      userPopup: action-popup-owovoice # Нет больше таких методов
+#      popupToggleSuffix: -enabled
+#      serverEvent: !type:OwOAccentActionEvent
 
 - type: entity
   id: ActionTurnUndead

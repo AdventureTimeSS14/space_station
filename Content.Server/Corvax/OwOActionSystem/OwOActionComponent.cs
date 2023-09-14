@@ -1,6 +1,5 @@
 ﻿using Content.Shared.Actions;
-using Content.Shared.Actions.ActionTypes;
-using Robust.Shared.Serialization;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Server.Corvax.OwOAction;
@@ -10,11 +9,11 @@ public sealed partial class OwOActionComponent : Component
 {
     private bool _isON;
 
-    [DataField("actionId", customTypeSerializer:typeof(PrototypeIdSerializer<InstantActionPrototype>))]
-    public string ActionId = "OwOVoice";
+    [DataField("actionId", customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
+    public string OwOAction = "OwOVoice";
 
     [DataField("action")] // must be a data-field to properly save cooldown when saving game state.
-    public InstantAction? OwOAction = null;
+    public EntityUid? OwOActionEntity = null;
 
     [ViewVariables(VVAccess.ReadWrite)]
     public bool IsON
@@ -24,12 +23,10 @@ public sealed partial class OwOActionComponent : Component
         {
             if(_isON == value) return;
             _isON = value;
-            if(OwOAction != null)
-                EntitySystem.Get<SharedActionsSystem>().SetToggled(OwOAction, _isON);
+            if(OwOActionEntity != null)
+                EntitySystem.Get<SharedActionsSystem>().SetToggled(OwOActionEntity, _isON);
 
             Dirty();
         }
     }
 }
-
-public sealed partial class OwOAccentActionEvent : InstantActionEvent { };

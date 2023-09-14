@@ -1,12 +1,9 @@
 using Robust.Shared.GameStates;
 using Content.Server.Actions;
-using Content.Shared.Actions.ActionTypes;
 using Content.Shared.Sirena.Animations;
 using static Content.Shared.Sirena.Animations.EmoteAnimationComponent;
 using Content.Server.Chat.Systems;
 using Content.Shared.Chat.Prototypes;
-using Robust.Shared.GameObjects;
-using System.Diagnostics;
 
 namespace Content.Server.Sirena.Animations;
 
@@ -46,16 +43,17 @@ public class EmoteAnimationSystem : SharedEmoteAnimationSystem
 
     private void OnMapInint(EntityUid uid, EmoteAnimationComponent component, MapInitEvent args)
     {
-        var actionFlip = new InstantAction(_proto.Index<InstantActionPrototype>(EmoteFlipActionPrototype));
-        var actionJump = new InstantAction(_proto.Index<InstantActionPrototype>(EmoteJumpActionPrototype));
-        var actionTurn = new InstantAction(_proto.Index<InstantActionPrototype>(EmoteTurnActionPrototype));
-        var actionStopTail = new InstantAction(_proto.Index<InstantActionPrototype>(EmoteStopTailActionPrototype));
-        var actionStartTail = new InstantAction(_proto.Index<InstantActionPrototype>(EmoteStartTailActionPrototype));
-        component.FlipAction = actionFlip;
-        component.JumpAction = actionJump;
-        component.TurnAction = actionTurn;
-        component.StopTailAction = actionStopTail;
-        component.StartTailAction = actionStartTail;
+        //TODO: ERROR разобраться с action system
+        // var actionFlip = new EntityUid(_proto.Index<EntityPrototype>(EmoteFlipActionPrototype));
+        // var actionJump = new InstantAction(_proto.Index<InstantActionPrototype>(EmoteJumpActionPrototype));
+        // var actionTurn = new InstantAction(_proto.Index<InstantActionPrototype>(EmoteTurnActionPrototype));
+        // var actionStopTail = new InstantAction(_proto.Index<InstantActionPrototype>(EmoteStopTailActionPrototype));
+        // var actionStartTail = new InstantAction(_proto.Index<InstantActionPrototype>(EmoteStartTailActionPrototype));
+        // component.FlipAction = actionFlip;
+        // component.JumpAction = actionJump;
+        // component.TurnAction = actionTurn;
+        // component.StopTailAction = actionStopTail;
+        // component.StartTailAction = actionStartTail;
         //_action.AddAction(uid, actionFlip, null);
         //_action.AddAction(uid, actionJump, null);
         //_action.AddAction(uid, actionTurn, null);
