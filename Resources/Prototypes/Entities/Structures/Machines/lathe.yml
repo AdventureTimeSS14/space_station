@@ -539,8 +539,11 @@
       - ShellShotgun
       - ShellShotgunFlare
       - ShellTranquilizer
-      - CartridgeLightRifle
-      - CartridgeRifle
+      - MagazinePistol
+      - MagazinePistolSubMachineGun
+      - MagazinePistolSubMachineGunTopMounted
+      - MagazineRifle
+      - MagazineLightRifle
       - MagazineBoxPistol
       - MagazineBoxMagnum
       - MagazineBoxRifle
@@ -588,6 +591,7 @@
       - VoiceTrigger
       - TimerTrigger
       - Truncheon
+      - TelescopicShield
       - FlashPayload
       - ExplosivePayload
       - WeaponLaserCarbine
