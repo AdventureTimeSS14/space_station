@@ -41,6 +41,13 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: SiliconLawBound
+  - type: SiliconLawProvider
+    laws:
+    - Corporate1
+    - Corporate2
+    - Corporate3
+    - Corporate4
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
@@ -68,6 +75,13 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: SiliconLawBound
+  - type: SiliconLawProvider
+    laws:
+    - Corporate1
+    - Corporate2
+    - Corporate3
+    - Corporate4
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
