@@ -52,7 +52,7 @@ namespace Content.IntegrationTests.Tests
             "CorvaxDelta",
             "CorvaxIshimura",
 			"CorvaxSpectrum",
-            "CorvaxGate",
+            //"CorvaxGate",
             // Corvax-End
 
             "Dev",

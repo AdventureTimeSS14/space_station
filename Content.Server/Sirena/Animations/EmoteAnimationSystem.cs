@@ -43,7 +43,8 @@ public class EmoteAnimationSystem : SharedEmoteAnimationSystem
 
     private void OnMapInint(EntityUid uid, EmoteAnimationComponent component, MapInitEvent args)
     {
-        //TODO: ERROR разобраться с action system
+        //_action.AddAction(uid, ref component.FlipAction, null);
+        //TODO: xTray разобраться с action system
         // var actionFlip = new EntityUid(_proto.Index<EntityPrototype>(EmoteFlipActionPrototype));
         // var actionJump = new InstantAction(_proto.Index<InstantActionPrototype>(EmoteJumpActionPrototype));
         // var actionTurn = new InstantAction(_proto.Index<InstantActionPrototype>(EmoteTurnActionPrototype));
