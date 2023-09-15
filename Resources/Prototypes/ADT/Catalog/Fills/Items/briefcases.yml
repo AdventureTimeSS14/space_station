@@ -21,11 +21,11 @@
   suffix: Filled
   components:
   - type: Storage
-    capacity: 40
+    capacity: 80
   - type: StorageFill
     contents:
       - id: ADTClothingOuterCoatHikeLabcoatCmo
       - id: ADTClothingUniformHikeJumpskirtCmo
       - id: ADTClothingUniformHikeformCmo
-      - id: ADTClothingHighbootsCmo
-      - id: DrinkShinyFlask
+      - id: ADTClothingHighboots
+      - id: ADTClothingBeltMedicalBagFilled

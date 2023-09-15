@@ -9,6 +9,6 @@ ent-ADTClothingSandals = сандали
     .desc = Пара простых сандалей. НИ. В КОЕМ. СЛУЧАЕ. НЕ СОВМЕЩАТЬ. С НОСКАМИ
     .suffix = { "" }
 
-ent-ADTClothingHighbootsCmo = Сапоги главного врача
+ent-ADTClothingHighboots = сапоги
     .desc = Пара высоких сапог, чтобы не заморать ноги во время ходьбы по лужам крови.
     .suffix = { "" }

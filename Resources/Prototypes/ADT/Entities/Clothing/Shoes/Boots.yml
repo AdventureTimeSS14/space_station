@@ -139,13 +139,14 @@
   - type: Clothing
     sprite: ADT/Clothing/Shoes/Boots/sandals.rsi
 
+#CMO
 - type: entity
   parent: ClothingShoesBaseButcherable
-  id: ADTClothingHighbootsCmo
-  name: Chief medical officer's highboots
+  id: ADTClothingHighboots
+  name: Highboots
   description: a pair of highboot to walk on blood puddles
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Shoes/Boots/cmo_highboots.rsi
+    sprite: ADT/Clothing/Shoes/Boots/highboots.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Shoes/Boots/cmo_highboots.rsi
+    sprite: ADT/Clothing/Shoes/Boots/highboots.rsi
