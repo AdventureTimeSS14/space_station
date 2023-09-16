@@ -7,6 +7,7 @@
     weight: 10
     startDelay: 30
     duration: 35
+    minimumPlayers: 20
     startAudio: # Corvax-Announcements
       path: /Audio/Corvax/Announcements/flux.ogg
       params:
@@ -34,7 +35,7 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 1
+    weight: 6
     reoccurrenceDelay: 5
     earliestStart: 1
     duration: 1
@@ -58,8 +59,8 @@
   components:
   - type: StationEvent
     startAnnouncement: station-event-bureaucratic-error-announcement
-    minimumPlayers: 25
-    weight: 5
+    minimumPlayers: 35
+    weight: 3
     duration: 1
   - type: BureaucraticErrorRule
 
@@ -71,8 +72,8 @@
   - type: StationEvent
     weight: 5
     duration: 1
-    earliestStart: 45
-    minimumPlayers: 20
+    earliestStart: 40
+    minimumPlayers: 25
   - type: RandomSpawnRule
     prototype: SpawnPointGhostDragon
 
@@ -82,11 +83,11 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 10
+    weight: 15
     duration: 1
-    earliestStart: 30
+    earliestStart: 15
     reoccurrenceDelay: 60
-    minimumPlayers: 40
+    minimumPlayers: 20
   - type: NinjaSpawnRule
 
 - type: entity
@@ -95,9 +96,9 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 7.5
+    weight: 1
     duration: 1
-    earliestStart: 45
+    earliestStart: 60
     minimumPlayers: 20
   - type: RandomSpawnRule
     prototype: MobRevenant
@@ -141,7 +142,7 @@
   components:
   - type: StationEvent
     earliestStart: 15
-    minimumPlayers: 15
+    minimumPlayers: 20
     weight: 5
     startDelay: 50
     duration: 240
@@ -153,9 +154,9 @@
   noSpawn: true
   components:
   - type: StationEvent
-    earliestStart: 30
-    weight: 7.5
-    minimumPlayers: 10 #Enough to hopefully have at least one engineering guy
+    earliestStart: 60
+    weight: 2
+    minimumPlayers: 25 #Enough to hopefully have at least one engineering guy
     startAnnouncement: station-event-meteor-swarm-start-announcement
     endAnnouncement: station-event-meteor-swarm-end-announcement
     startAudio:
@@ -366,8 +367,8 @@
   noSpawn: true
   components:
   - type: StationEvent
-    earliestStart: 45
-    weight: 5
+    earliestStart: 30
+    weight: 10
     minimumPlayers: 10
     reoccurrenceDelay: 30
     duration: 1
@@ -398,8 +399,8 @@
     startAnnouncement: station-event-immovable-rod-start-announcement
     startAudio:
       path: /Audio/Announcements/attention.ogg
-    weight: 5
+    weight: 1
     duration: 1
     earliestStart: 45
-    minimumPlayers: 20
+    minimumPlayers: 40
   - type: ImmovableRodRule

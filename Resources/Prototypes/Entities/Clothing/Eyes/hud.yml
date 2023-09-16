@@ -40,9 +40,6 @@
   - type: Clothing
     sprite: Clothing/Eyes/Hud/sec.rsi
   - type: ShowSecurityIcons
-  - type: ClothingGrantComponent # Sirena-Edit's-Start
-    component:
-    - type: ShowJobInfo # Sirena-Edit's-End
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
@@ -66,9 +63,9 @@
     sprite: ADT/Clothing/Eyes/HUD/advanced_hud.rsi
   - type: ClothingGrantComponent # Sirena-Edit's-Start
     component:
-    - type: ShowJobInfo
     - type: ShowHealthBars
       damageContainer: Biological # Sirena-Edit's-End
+  - type: ShowSecurityIcons
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5

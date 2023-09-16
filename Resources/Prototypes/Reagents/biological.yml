@@ -1,4 +1,4 @@
-﻿- type: reagent
+- type: reagent
   id: Blood
   name: reagent-name-blood
   group: Biological
@@ -102,11 +102,11 @@
       - !type:HealthChange
         damage:
           groups:
-            Burn: -5
-            Brute: -5
-            Toxin: -2
+            Burn: -15
+            Brute: -15
+            Toxin: -12
           types:
-            Bloodloss: -5
+            Bloodloss: -15
   # Just in case you REALLY want to water your plants
   plantMetabolism:
   - !type:PlantAdjustWater

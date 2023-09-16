@@ -143,6 +143,7 @@
        - ShellShotgunFlare
        - ShellTranquilizer
        - CartridgeLightRifle
+       - SpeedLoader357
        - CartridgeRifle
        - MagazineBoxPistol
        - MagazineBoxMagnum
@@ -165,6 +166,8 @@
       - CartridgeRifleIncendiary
       - MagazineBoxPistolIncendiary
       - MagazineBoxMagnumIncendiary
+      - Magazine357Incendiary
+      - SpeedLoader357Rubber
       - MagazineBoxLightRifleIncendiary
       - MagazineBoxRifleIncendiary
 
@@ -577,6 +580,8 @@
       #- MagazineBoxMagnumHighVelocity
       #- MagazineBoxLightRifleHighVelocity
       #- MagazineBoxRifleHighVelocity
+      - Magazine357Incendiary
+      - SpeedLoader357Rubber
       - ShellShotgunIncendiary
       - CartridgePistolIncendiary
       - CartridgeMagnumIncendiary

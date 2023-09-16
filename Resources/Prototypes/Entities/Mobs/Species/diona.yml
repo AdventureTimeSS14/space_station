@@ -34,7 +34,7 @@
       - id: FoodMeatPlant
         amount: 5
   - type: Bloodstream
-    bloodReagent: Water
+    bloodReagent: Nutriment
   - type: Reactive
     groups:
       Flammable: [ Touch ]
@@ -89,8 +89,8 @@
     templateId: diona
   - type: InventorySlots
   - type: MovementSpeedModifier
-    baseWalkSpeed : 1.5
-    baseSprintSpeed : 3.5
+    baseWalkSpeed : 3.5
+    baseSprintSpeed : 4.5
   - type: Speech
     speechVerb: Plant
   - type: Vocal
@@ -100,7 +100,6 @@
       Unsexed: UnisexDiona
   - type: BodyEmotes
     soundsId: DionaBodyEmotes
-  - type: Pacified # Corvax-DionaPacifist
   - type: IgnoreKudzu
 
 - type: entity
