@@ -2,7 +2,7 @@
 - type: weightedRandomSpecies
   id: SpeciesWeights
   weights:
-    Human: 5
+    Human: 15
     Reptilian: 4
     SlimePerson: 4
     Diona: 2

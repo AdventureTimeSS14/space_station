@@ -34,7 +34,7 @@ public abstract partial class SharedEntityStorageComponent : Component
     /// The total amount of items that can fit in one entitystorage
     /// </summary>
     [DataField("capacity")]
-    public int Capacity = 33;
+    public int Capacity = 50;
 
     /// <summary>
     /// Whether or not the entity still has collision when open
