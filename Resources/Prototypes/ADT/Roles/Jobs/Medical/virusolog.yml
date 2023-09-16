@@ -10,7 +10,7 @@
   startingGear: VirusologGear
   icon: "JobIconVirologist"
   supervisors: job-supervisors-cmo
-  canBeAntag: false
+  canBeAntag: true
   access:
     - Medical
     - Chemistry

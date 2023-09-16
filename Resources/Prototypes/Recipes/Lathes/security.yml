@@ -363,6 +363,13 @@
     Plastic: 1250
 
 - type: latheRecipe
+  id: MagazineBox357Incendiary
+  result: MagazineBox357Incendiary
+  completetime: 5
+  materials:
+    Plastic: 1000
+
+- type: latheRecipe
   id: MagazineBoxLightRifleIncendiary
   result: MagazineBoxLightRifleIncendiary
   completetime: 5
@@ -432,3 +439,11 @@
   completetime: 2
   materials:
     Steel: 1500
+
+- type: latheRecipe
+  id: SpeedLoader357Rubber
+  result: SpeedLoader357Rubber
+  completetime: 2
+  materials:
+    Steel: 700
+    Plastic: 1000  
