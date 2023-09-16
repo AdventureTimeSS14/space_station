@@ -149,7 +149,7 @@
         EmergencyO2Kit: 1
         MedicalSupplies: 1
         MedicalChemistrySupplies: 1
-        EmergencyBruteKit: 
+        EmergencyBruteKit: 1
 
 - type: entity
   id: GiftsFireProtection
