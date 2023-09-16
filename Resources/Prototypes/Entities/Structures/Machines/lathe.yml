@@ -166,7 +166,7 @@
       - CartridgeRifleIncendiary
       - MagazineBoxPistolIncendiary
       - MagazineBoxMagnumIncendiary
-      - Magazine357Incendiary
+      - MagazineBox357Incendiary
       - SpeedLoader357Rubber
       - MagazineBoxLightRifleIncendiary
       - MagazineBoxRifleIncendiary
@@ -580,7 +580,7 @@
       #- MagazineBoxMagnumHighVelocity
       #- MagazineBoxLightRifleHighVelocity
       #- MagazineBoxRifleHighVelocity
-      - Magazine357Incendiary
+      - MagazineBox357Incendiary
       - SpeedLoader357Rubber
       - ShellShotgunIncendiary
       - CartridgePistolIncendiary

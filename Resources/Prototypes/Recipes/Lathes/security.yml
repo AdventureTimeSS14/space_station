@@ -363,8 +363,8 @@
     Plastic: 1250
 
 - type: latheRecipe
-  id: Magazine357Incendiary
-  result: Magazine357Incendiary
+  id: MagazineBox357Incendiary
+  result: MagazineBox357Incendiary
   completetime: 5
   materials:
     Plastic: 1000
