@@ -52,6 +52,11 @@
         visualType: Medium
         messages: [ "generic-reagent-effect-nauseous" ]
         probability: 0.2
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-usual" ]
+        probability: 0.05
       - !type:ChemVomit
         conditions:
         - !type:ReagentThreshold
@@ -111,6 +116,11 @@
         damage:
           types:
             Poison: -0.5
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-hungover" ]
+        probability: 0.05
 
 - type: reagent
   id: Arithrazine
@@ -129,6 +139,11 @@
             Radiation: -3
           groups:
             Brute: 0.5
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-usual" ]
+        probability: 0.05
 
 - type: reagent
   id: Bicaridine
@@ -162,6 +177,11 @@
         conditions:
         - !type:ReagentThreshold
           min: 15
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-usual" ]
+        probability: 0.05
     Alcohol:
       effects:
       - !type:Drunk
@@ -246,6 +266,11 @@
         conditions:
         - !type:ReagentThreshold
           min: 10
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-usual" ]
+        probability: 0.05
 
 - type: reagent
   id: Dexalin
@@ -271,6 +296,11 @@
           types:
             Asphyxiation: 3
             Cold: 1
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-asphyxia" ]
+        probability: 0.05
 
 - type: reagent
   id: DexalinPlus
@@ -303,6 +333,11 @@
           types:
             Asphyxiation: 5
             Cold: 3
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-asphyxia" ]
+        probability: 0.05
 
 # this ones a doozy
 - type: reagent
@@ -365,6 +400,14 @@
         key: KnockedDown
         time: 0.75
         type: Remove
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: 
+        - medicine-effect-usual
+        - medicine-effect-asphyxia 
+        probability: 0.05
+
 
 - type: reagent
   id: Hyronalin
@@ -394,6 +437,11 @@
         conditions:
         - !type:ReagentThreshold
           min: 30
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-usual" ]
+        probability: 0.05
 
 - type: reagent
   id: Ipecac
@@ -430,6 +478,11 @@
             Asphyxiation: -5
       - !type:ModifyBleedAmount
         amount: -0.25
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-asphyxia" ]
+        probability: 0.05
 
 - type: reagent
   id: Kelotane
@@ -463,6 +516,11 @@
         conditions:
         - !type:ReagentThreshold
           min: 25
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-usual" ]
+        probability: 0.05
 
 - type: reagent
   id: Leporazine
@@ -643,6 +701,11 @@
         damage:
           types:
             Caustic: -5
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-usual" ]
+        probability: 0.05
 
 - type: reagent
   id: Stellibinin
@@ -666,6 +729,11 @@
           min: 1
         reagent: Amatoxin
         amount: -3
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-usual" ]
+        probability: 0.05
 
 - type: reagent
   id: Synaptizine
@@ -741,6 +809,11 @@
             Heat: -0.33
             Shock: -0.33
             Cold: -0.33
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-usual" ]
+        probability: 0.05
 
 - type: reagent
   id: Lipozine
@@ -755,7 +828,7 @@
       effects:
       # what the hell, this isn't satiating at all!!
       - !type:SatiateHunger
-        factor: -1
+        factor: -5
 
   # Should heal quite literally everything, use in very small amounts
 - type: reagent
@@ -776,6 +849,11 @@
             Toxin: -2
             Airloss: -2
             Brute: -2
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-usual" ]
+        probability: 0.05
 
 - type: reagent
   id: Ultravasculine
@@ -832,6 +910,11 @@
     Medicine:
       effects:
       - !type:ChemHealEyeDamage
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-eyedamage" ]
+        probability: 0.04
 
 - type: reagent
   id: Cognizine
@@ -848,6 +931,11 @@
         conditions:
         - !type:ReagentThreshold
           min: 5
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-mind" ]
+        probability: 0.05
 
 - type: reagent
   id: Ethyloxyephedrine
@@ -934,3 +1022,9 @@
         - !type:ReagentThreshold
           min: 30
         probability: 0.02
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-usual" ]
+        probability: 0.05
+
