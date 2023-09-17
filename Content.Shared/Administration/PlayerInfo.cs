@@ -11,7 +11,7 @@ namespace Content.Shared.Administration
         string StartingJob,
         bool Antag,
         bool Sponsor,
-        EntityUid? EntityUid,
+        NetEntity? NetEntity,
         NetUserId SessionId,
         bool Connected,
         bool ActiveThisRound);

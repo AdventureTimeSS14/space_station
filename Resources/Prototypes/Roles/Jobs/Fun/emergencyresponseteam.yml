@@ -12,19 +12,6 @@
   accessGroups:
   - AllAccess
 
-- type: job
-  id: ERTLeader3
-  name: Central Commander
-  description: job-description-ertleader
-  playTimeTracker: JobERTLeader
-  setPreference: false
-  startingGear: ERTLeaderGearEVA
-  icon: "JobIconNanotrasen"
-  supervisors: job-supervisors-centcom
-  canBeAntag: false
-  accessGroups:
-  - AllAccess
-
 - type: startingGear
   id: ERTLeaderGear
   equipment:
@@ -145,7 +132,7 @@
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
-    
+
 
 - type: startingGear
   id: ERTSecurityGearEVA
@@ -166,7 +153,7 @@
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
-    
+
 
 # Medical
 - type: job

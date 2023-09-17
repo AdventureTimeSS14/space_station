@@ -8,4 +8,8 @@ ent-ADTClothingOuterCoatPyotrCoat = шинель Петра Шахина
 
 ent-ADTClothingOuterCoatHikeLabcoatCmo = походный халат главного врача
     .desc = Частично открытый халат. Не сковывает движения.
+	.suffix = { "" }
+
+ent-ADTClothingOuterCoatOctyabrinaCoat = пальто Октябрины
+    .desc = Темно-красное пальто. Кажется тяжелее, чем должно быть.
     .suffix = { "" }

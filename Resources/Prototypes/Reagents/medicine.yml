@@ -32,7 +32,7 @@
       - !type:HealthChange
         damage:
           types:
-            Poison: -1
+            Poison: -2
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -159,7 +159,7 @@
       - !type:HealthChange
         damage:
           groups:
-            Brute: -2
+            Brute: -3
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -211,10 +211,10 @@
           damage:
           # todo scale with temp like SS13
             groups:
-              Airloss: -6
-              Brute: -4
-              Burn: -6
-              Toxin: -4
+              Airloss: -9
+              Brute: -7
+              Burn: -9
+              Toxin: -7
 
 - type: reagent
   id: Doxarubixadone
@@ -233,7 +233,7 @@
             max: 150.0
           damage:
             types:
-             Cellular: -2
+             Cellular: -8
 
 - type: reagent
   id: Dermaline
@@ -249,9 +249,9 @@
       - !type:HealthChange
         damage:
           types:
-            Heat: -1.5
-            Shock: -1.5
-            Cold: -1.5
+            Heat: -3
+            Shock: -3
+            Cold: -3
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -271,6 +271,7 @@
         visualType: Small
         messages: [ "medicine-effect-usual" ]
         probability: 0.05
+          min: 15
 
 - type: reagent
   id: Dexalin
@@ -316,7 +317,7 @@
       - !type:HealthChange
         damage:
           types:
-            Asphyxiation: -3.5
+            Asphyxiation: -5
             Bloodloss: -3
       - !type:AdjustReagent
         conditions:
@@ -706,6 +707,7 @@
         visualType: Small
         messages: [ "medicine-effect-usual" ]
         probability: 0.05
+            Caustic: -15
 
 - type: reagent
   id: Stellibinin
@@ -721,7 +723,7 @@
       - !type:HealthChange
         damage:
           types:
-            Poison: -4
+            Poison: -14
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold
@@ -799,11 +801,9 @@
       effects:
       - !type:HealthChange
         conditions:
-        - !type:TotalDamage
-          max: 50
         damage:
           groups:
-            Brute: -1
+            Brute: -1.5
           types:
             Poison: -0.5 ##Should be about what it was when it healed the toxin group
             Heat: -0.33
@@ -814,6 +814,10 @@
         visualType: Small
         messages: [ "medicine-effect-usual" ]
         probability: 0.05
+            Poison: -1 ##пошли визарды нахуй
+            Heat: -0.66
+            Shock: -0.66
+            Cold: -0.66
 
 - type: reagent
   id: Lipozine
@@ -854,6 +858,14 @@
         visualType: Small
         messages: [ "medicine-effect-usual" ]
         probability: 0.05
+            Burn: -4
+            Toxin: -4
+            Airloss: -4
+            Brute: -4
+      - !type:ModifyBleedAmount
+        amount: -1.5
+      - !type:ModifyBloodLevel
+        amount: 3
 
 - type: reagent
   id: Ultravasculine

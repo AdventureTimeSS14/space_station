@@ -389,11 +389,13 @@
     steps: 5
     zeroVisible: true
   - type: Appearance
+  - type: Item
+    size: 20   
   - type: Tag
     tags:
     - HighRiskItem
   - type: StaticPrice
-    price: 750
+    price: 7500
 
 - type: entity
   name: advanced laser pistol
@@ -402,7 +404,7 @@
   description: An experimental high-energy laser pistol with a self-charging nuclear battery.
   components:
   - type: Item
-    size: 30  # Intentionally larger than other pistols
+    size: 10
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/advancedlasergun.rsi
     layers:

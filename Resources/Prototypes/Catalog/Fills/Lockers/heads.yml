@@ -16,7 +16,6 @@
       - id: SalvageShuttleConsoleCircuitboard
       - id: CargoBountyComputerCircuitboard
       - id: CigPackGreen
-        prob: 0.50
       - id: DoorRemoteCargo
       - id: RubberStampQm
       - id: ClothingHeadsetAltCargo
@@ -47,11 +46,9 @@
       - id: WeaponDisabler
       - id: CommsComputerCircuitboard
       - id: ClothingHeadsetAltCommand
-      - id: SpaceCash1000
+      - id: SpaceCash10000
       - id: PlushieNuke
-        prob: 0.1
       - id: CigarGoldCase
-        prob: 0.25
       - id: ClothingBeltSheathFilled
       - id: DoorRemoteCommand
       - id: ClothingNeckCloakCapFormal
@@ -87,11 +84,9 @@
       - id: WeaponDisabler
       - id: CommsComputerCircuitboard
       - id: ClothingHeadsetAltCommand
-      - id: SpaceCash1000
+      - id: SpaceCash10000
       - id: PlushieNuke
-        prob: 0.1
       - id: CigarGoldCase
-        prob: 0.25
       - id: ClothingBeltSheathFilled
       - id: DoorRemoteCommand
       - id: ClothingNeckCloakCapFormal
@@ -128,7 +123,6 @@
       - id: WeaponDisabler
       - id: ClothingOuterWinterHoP
       - id: CigarGoldCase
-        prob: 0.25
         # Fuck the HoP they don't deserve fucking cigars.
         # Yes they do fuck you.
       - id: DoorRemoteService
@@ -137,7 +131,6 @@
       - id: BoxEncryptionKeyPassenger
       - id: BoxEncryptionKeyService
       - id: ClothingBackpackIan
-        prob: 0.5
       - id: ClothingOuterCoatHOP # Corvax-Resprite
       - id: AccessConfigurator
       - id: ADTClothingNeckHoPAltCloak # ADT-Resprite
@@ -167,7 +160,6 @@
       - id: ClothingShoesBootsMagAdv
       - id: ClothingHandsGlovesColorYellow
       - id: CigarCase
-        prob: 0.15
       - id: DoorRemoteEngineering
       - id: RubberStampCE
       - id: ADTtelescopicBaton
@@ -197,7 +189,6 @@
       - id: ClothingUniformJumpsuitChiefEngineerTurtle
       - id: ClothingUniformJumpskirtChiefEngineerTurtle
       - id: CigarCase
-        prob: 0.15
       - id: DoorRemoteEngineering
       - id: RubberStampCE
       - id: ClothingHeadsetAltEngineering
@@ -351,7 +342,6 @@
       - id: WeaponDisabler
       - id: ClothingHeadHatBeretHoS
       - id: ClothingHeadHatCapHoS # Corvax-SecFashion
-        prob: 0.5
       - id: ClothingHeadHatHoshat
       - id: ClothingNeckCloakHos
       - id: ClothingOuterCoatHoSTrench
@@ -363,13 +353,11 @@
 #      - id: ClothingShoeSlippersDuck # Corvax-Resprite: Need more space for style
 #        prob: 0.2
       - id: DrinkVacuumFlask
-        prob: 0.8
       - id: ClothingBeltSecurityFilled
       - id: ClothingHeadsetAltSecurity
       - id: ClothingEyesGlassesSecurity
       - id: ClothingShoesBootsJack
       - id: CigarGoldCase
-        prob: 0.50
       - id: DoorRemoteSecurity
       - id: ClothingUniformJumpskirtHosFormal
       - id: ClothingUniformJumpsuitHosFormal
@@ -379,6 +367,8 @@
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: WeaponRevolverUnica #ADTrevolver
+      - id: ADTWeaponPistolX01 #ADTmultiphase
       # Sirena-Underwear-Start
       - id: ClothingUnderwearBottomBoxersHOS
       - id: ClothingUnderwearBottomPantiesHOS
@@ -397,7 +387,6 @@
       - id: WeaponDisabler
       - id: ClothingHeadHatBeretHoS
       - id: ClothingHeadHatCapHoS # Corvax-SecFashion
-        prob: 0.5
       - id: ClothingHeadHatHoshat
       - id: ClothingNeckCloakHos
       - id: ClothingOuterCoatHoSTrench
@@ -405,23 +394,17 @@
       - id: ClothingUniformJumpskirtHoSAlt
       - id: ClothingUniformJumpsuitHoSAlt
       - id: ClothingUniformJumpsuitHoSBlue
-        prob: 0.5
       - id: ClothingUniformJumpsuitHoSGrey
-        prob: 0.5
       - id: ClothingUniformJumpsuitHoSParadeMale
-        prob: 0.1
       - id: ClothingUniformJumpskirtHoSParadeMale
-        prob: 0.1
 #      - id: ClothingShoeSlippersDuck # Corvax-Resprite: Need more space for style
 #        prob: 0.2
       - id: DrinkVacuumFlask
-        prob: 0.8
       - id: ClothingBeltSecurityFilled
       - id: ClothingHeadsetAltSecurity
       - id: ClothingEyesGlassesSecurity
       - id: ClothingShoesBootsJack
       - id: CigarGoldCase
-        prob: 0.50
       - id: DoorRemoteSecurity
       - id: ClothingUniformJumpskirtHosFormal
       - id: ClothingUniformJumpsuitHosFormal
@@ -430,11 +413,12 @@
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: WeaponRevolverUnica #ADTrevolver
+      - id: ADTWeaponPistolX01 #ADTmultiphase
       # Sirena-Underwear-Start
       - id: ClothingUnderwearBottomBoxersHOS
       - id: ClothingUnderwearBottomPantiesHOS
       - id: ClothingUnderwearTopBraHOS
       - id: ClothingUnderwearTopBraHOS
-      - id: WeaponRevolverUnica
       # Sirena-Underwear-End
 

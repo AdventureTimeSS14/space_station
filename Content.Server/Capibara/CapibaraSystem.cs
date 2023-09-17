@@ -30,7 +30,7 @@ namespace Content.Server.Capibara
 
         private void OnStartup(EntityUid uid, CapibaraComponent component, ComponentStartup args)
         {
-            _action.AddAction(uid, component.ActionRaiseArmy, null);
+            _action.AddAction(uid, ref component.ActionRaiseArmy, component.ArmyMobSpawnId);
         }
 
         /// <summary>

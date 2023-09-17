@@ -12,7 +12,7 @@
   startingGear: ParamedicGear
   icon: "JobIconParamedic"
   supervisors: job-supervisors-cmo
-  canBeAntag: false
+  canBeAntag: true
   access:
   - Medical
   - Maintenance

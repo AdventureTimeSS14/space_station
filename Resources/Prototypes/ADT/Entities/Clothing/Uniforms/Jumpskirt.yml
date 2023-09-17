@@ -258,4 +258,15 @@
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/hike_jumpskirt_cmo.rsi
 
+#Yuna
 
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformYunaBlackDress
+  name: Yuna`s black dress
+  description: Black dress own by Yuna Djah
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/yuna_black_dress.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/yuna_black_dress.rsi

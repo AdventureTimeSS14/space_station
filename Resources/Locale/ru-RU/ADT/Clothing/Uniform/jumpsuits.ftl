@@ -89,3 +89,7 @@ ent-ADTClothingUniformHikeformCmo = походный костюм главног
 ent-ADTClothingUniformHikeJumpskirtCmo = походная юбка-костюм главного врача
     .desc = Рубашка и мешковитая юбка, отлично подходящие для активной работы как вне, так и внутри своего отдела.
     .suffix = { "" }
+
+ent-ADTClothingUniformYunaBlackDress = черное платье Юны Джах
+    .desc = Черное платье для торжеств, принадлежащее Юне Джах
+    .suffix = { "" }

@@ -50,6 +50,49 @@
     sprite: ADT/Clothing/Shoes/Boots/redji_shoes.rsi
 
 - type: entity
+  id: ActionToggleADTMagboots
+  parent: ActionBaseToggleMagboots
+  noSpawn: true
+  components:
+    - type: InstantAction
+      icon: { sprite: ADT/Clothing/Shoes/Boots/advanced.rsi, state: icon }
+      iconOn: ADT/Clothing/Shoes/Boots/advanced.rsi/icon-on.png
+      itemIconStyle: NoItem
+      event: !type:ToggleActionEvent
+
+- type: entity
+  id: ActionToggleADTGasTank
+  name: action-name-internals-toggle
+  description: action-description-internals-toggle
+  noSpawn: true
+  components:
+    - type: InstantAction
+      icon:
+        sprite: Interface/Alerts/internals.rsi
+        state: internal2
+      iconOn:
+        sprite: Interface/Alerts/internals.rsi
+        state: internal1
+      event: !type:ToggleActionEvent
+      useDelay: 1
+
+- type: entity
+  id: ActionToggleADTJetpack
+  name: action-name-jetpack-toggle
+  description: action-description-jetpack-toggle
+  noSpawn: true
+  components:
+    - type: InstantAction
+      icon:
+        sprite: Objects/Tanks/Jetpacks/blue.rsi
+        state: icon
+      iconOn:
+        sprite: Objects/Tanks/Jetpacks/blue.rsi
+        state: icon-on
+      useDelay: 1.0
+      event: !type:ToggleJetpackEvent
+
+- type: entity
   parent: ClothingShoesBootsMag
   id: ADTClothingShoesBootsMagAdvSynd
   name: advanced syndicate magboots
@@ -61,36 +104,19 @@
   - type: Clothing
     sprite: ADT/Clothing/Shoes/Boots/advanced.rsi
   - type: Magboots
-    toggleAction:
-      icon: { sprite: ADT/Clothing/Shoes/Boots/advanced.rsi, state: icon }
-      iconOn: ADT/Clothing/Shoes/Boots/advanced.rsi/icon-on.png
-      name: action-name-magboot-toggle
-      description: action-decription-magboot-toggle
-      itemIconStyle: NoItem
-      event: !type:ToggleActionEvent
+    toggleAction: ActionToggleADTMagboots
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 1
     enabled: false
   - type: GasTank
-    toggleAction:
-      name: action-name-internals-toggle
-      description: action-description-internals-toggle
-      icon:
-        sprite: Interface/Alerts/internals.rsi
-        state: internal2
-      iconOn:
-        sprite: Interface/Alerts/internals.rsi
-        state: internal1
-      event: !type:ToggleActionEvent
-      useDelay: 1
     outputPressure: 21.3
     air:
-      # 2 minutes of thrust
-      volume: 1.5
+      # 8 minutes of thrust
+      volume: 3
       temperature: 293.15
       moles:
-        - 0.153853429 # oxygen
+        - 0.615413716 # oxygen
   - type: ActivatableUI
     key: enum.SharedGasTankUiKey.Key
   - type: UserInterface
@@ -102,17 +128,7 @@
     maxIntensity: 20
   - type: Jetpack
     moleUsage: 0.00085
-    toggleAction:
-      icon:
-        sprite: Objects/Tanks/Jetpacks/blue.rsi
-        state: icon
-      iconOn:
-        sprite: Objects/Tanks/Jetpacks/blue.rsi
-        state: icon-on
-      name: action-name-jetpack-toggle
-      description: action-description-jetpack-toggle
-      useDelay: 1.0
-      event: !type:ToggleJetpackEvent
+    toggleAction: ActionToggleADTJetpack
   - type: InputMover
     toParent: true
   - type: MovementSpeedModifier

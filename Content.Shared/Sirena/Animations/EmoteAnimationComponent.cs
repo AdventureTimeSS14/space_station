@@ -1,5 +1,4 @@
 using Content.Shared.Actions;
-using Content.Shared.Actions.ActionTypes;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
 
@@ -27,11 +26,11 @@ public partial class EmoteAnimationComponent : Component
     [ViewVariables(VVAccess.ReadWrite)]
     public string AnimationId = "none";
 
-    public InstantAction? FlipAction;
-    public InstantAction? JumpAction;
-    public InstantAction? TurnAction;
-    public InstantAction? StopTailAction;
-    public InstantAction? StartTailAction;
+    public EntityUid? FlipAction;
+    public EntityUid? JumpAction;
+    public EntityUid? TurnAction;
+    public EntityUid? StopTailAction;
+    public EntityUid? StartTailAction;
 
     [Serializable, NetSerializable]
     public class EmoteAnimationComponentState : ComponentState

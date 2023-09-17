@@ -24,6 +24,17 @@
       provided_container: !type:Container { }
 
 - type: entity
+  id: ActionBorgSwapModule
+  name: Swap Module
+  description: Select this module, enabling you to use the tools it provides.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    itemIconStyle: BigItem
+    useDelay: 0.5
+    event: !type:BorgModuleActionSelectedEvent
+
+- type: entity
   id: BaseBorgModuleCargo
   parent: BaseBorgModule
   abstract: true
@@ -98,6 +109,19 @@
   - type: ItemBorgModule
     items:
     - FireExtinguisher
+
+- type: entity
+  id: BorgModulePDA
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  name: PDA cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: generic
+    - state: icon-pda
+  - type: ItemBorgModule
+    items:
+    - BorgPDA
 
 - type: entity
   id: BorgModuleGPS

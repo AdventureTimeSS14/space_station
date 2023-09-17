@@ -143,6 +143,7 @@
        - ShellShotgunFlare
        - ShellTranquilizer
        - CartridgeLightRifle
+       - SpeedLoader357
        - CartridgeRifle
        - MagazineBoxPistol
        - MagazineBoxMagnum
@@ -165,6 +166,8 @@
       - CartridgeRifleIncendiary
       - MagazineBoxPistolIncendiary
       - MagazineBoxMagnumIncendiary
+      - MagazineBox357Incendiary
+      - SpeedLoader357Rubber
       - MagazineBoxLightRifleIncendiary
       - MagazineBoxRifleIncendiary
 
@@ -295,6 +298,7 @@
   components:
   - type: Sprite
     sprite: Structures/Machines/circuit_imprinter.rsi
+    snapCardinals: true
     layers:
     - state: icon
       map: ["enum.LatheVisualLayers.IsRunning"]
@@ -411,6 +415,7 @@
     - Flash
     - BorgModuleCable
     - BorgModuleFireExtinguisher
+    - BorgModulePDA
     - BorgModuleGPS
     - BorgModuleRadiationDetection
     - BorgModuleTool
@@ -537,8 +542,11 @@
       - ShellShotgun
       - ShellShotgunFlare
       - ShellTranquilizer
-      - CartridgeLightRifle
-      - CartridgeRifle
+      #- MagazinePistol
+      #- MagazinePistolSubMachineGun
+      #- MagazinePistolSubMachineGunTopMounted
+      #- MagazineRifle
+      #- MagazineLightRifle
       - MagazineBoxPistol
       - MagazineBoxMagnum
       - MagazineBoxRifle
@@ -550,6 +558,7 @@
       - MagazineRifle
       - MagazineShotgun
       - MagazinePistolSubMachineGun
+      - MagazinePistolSubMachineGunTopMounted
       - MagazinePistol
       - SpeedLoaderMagnum
       - SpeedLoader357
@@ -571,6 +580,8 @@
       #- MagazineBoxMagnumHighVelocity
       #- MagazineBoxLightRifleHighVelocity
       #- MagazineBoxRifleHighVelocity
+      - MagazineBox357Incendiary
+      - SpeedLoader357Rubber
       - ShellShotgunIncendiary
       - CartridgePistolIncendiary
       - CartridgeMagnumIncendiary
@@ -585,6 +596,7 @@
       - VoiceTrigger
       - TimerTrigger
       - Truncheon
+      - TelescopicShield
       - FlashPayload
       - ExplosivePayload
       - WeaponLaserCarbine
