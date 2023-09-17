@@ -265,13 +265,12 @@
       - !type:Jitter
         conditions:
         - !type:ReagentThreshold
-          min: 10
+          min: 15
       - !type:PopupMessage
         type: Local
         visualType: Small
         messages: [ "medicine-effect-usual" ]
         probability: 0.05
-          min: 15
 
 - type: reagent
   id: Dexalin
@@ -701,13 +700,12 @@
       - !type:HealthChange
         damage:
           types:
-            Caustic: -5
+            Caustic: -15
       - !type:PopupMessage
         type: Local
         visualType: Small
         messages: [ "medicine-effect-usual" ]
         probability: 0.05
-            Caustic: -15
 
 - type: reagent
   id: Stellibinin
@@ -805,19 +803,15 @@
           groups:
             Brute: -1.5
           types:
-            Poison: -0.5 ##Should be about what it was when it healed the toxin group
-            Heat: -0.33
-            Shock: -0.33
-            Cold: -0.33
+            Poison: -1 ##пошли визарды нахуй
+            Heat: -0.66
+            Shock: -0.66
+            Cold: -0.66
       - !type:PopupMessage
         type: Local
         visualType: Small
         messages: [ "medicine-effect-usual" ]
         probability: 0.05
-            Poison: -1 ##пошли визарды нахуй
-            Heat: -0.66
-            Shock: -0.66
-            Cold: -0.66
 
 - type: reagent
   id: Lipozine
@@ -849,15 +843,6 @@
       - !type:HealthChange
         damage:
           groups:
-            Burn: -2
-            Toxin: -2
-            Airloss: -2
-            Brute: -2
-      - !type:PopupMessage
-        type: Local
-        visualType: Small
-        messages: [ "medicine-effect-usual" ]
-        probability: 0.05
             Burn: -4
             Toxin: -4
             Airloss: -4
@@ -866,6 +851,11 @@
         amount: -1.5
       - !type:ModifyBloodLevel
         amount: 3
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-usual" ]
+        probability: 0.05
 
 - type: reagent
   id: Ultravasculine
