@@ -277,7 +277,7 @@
         - id: MagazineRifle
         - id: MagazineRifle
         - id: C4
-          amount: 4
+          amount: 1
 
 - type: entity
   noSpawn: true
