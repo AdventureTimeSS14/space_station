@@ -1,0 +1,75 @@
+
+- type: entity
+  name: lightMODERN
+  description: "A light fixture. Draws power and produces light when equipped with a light tube."
+  id: lightMODERN
+  parent: Poweredlight
+  components:
+  - type: RotatingLight
+  - type: PointLight
+    radius: 12
+    energy: 4.5
+    softness: 0.5
+    color: "#B4FCF0"
+    mask: /Textures/Effects/LightMasks/cone.png
+  - type: ApcPowerReceiver
+    needsPower: false
+  - type: Sprite
+    sprite: Structures/Wallmounts/Lighting/emergency_light.rsi
+    layers:
+    - state: base
+      map: [ "enum.EmergencyLightVisualLayers.Base" ]
+    - state: emergency_light_off
+      map: [ "enum.EmergencyLightVisualLayers.LightOff" ]
+      color: "#FF4020"
+    - state: emergency_light_on
+      map: [ "enum.EmergencyLightVisualLayers.LightOn" ]
+      color: "#FF4020"
+      shader: "unshaded"
+      visible: false
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: SmartLight
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSink
+    ports:
+      - On
+      - Off
+      - Toggle
+
+- type: entity
+  name: lightMODERN1
+  description: "A light fixture. Draws power and produces light when equipped with a light tube."
+  id: lightMODERN1
+  parent: AlwaysPoweredWallLight
+  components:
+  #- type: EmergencyLight
+  - type: RotatingLight
+  - type: PointLight
+    radius: 12
+    energy: 4.5
+    softness: 0.5
+    color: "#B4FCF0"
+    mask: /Textures/Effects/LightMasks/cone.png
+  - type: PoweredLight
+    bulb: Tube
+    damage:
+      types:
+        Heat: 5
+  - type: ContainerContainer
+    containers:
+      light_bulb: !type:ContainerSlot
+  - type: ApcPowerReceiver
+    needsPower: false
+  - type: ExtensionCableReceiver
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: SmartLight
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSink
+    ports:
+      - On
+      - Off
+      - Toggle
