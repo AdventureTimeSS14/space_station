@@ -219,7 +219,7 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 10
+    weight: 3
     duration: 1
     startAudio:
       path: /Audio/Announcements/sentience.ogg # Corvax-Announcements
@@ -353,6 +353,7 @@
   - type: StationEvent
     earliestStart: 50
     weight: 5
+    minimumPlayers: 25
     duration: 1
   - type: ZombieRule
     minStartDelay: 0 #let them know immediately

@@ -150,6 +150,9 @@
   - type: Strap
     buckleOffset: "0, 0"
     maxBuckleDistance: 1
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 6
+    baseSprintSpeed : 8
   - type: Construction
     graph: TaxiBot
     node: bot
