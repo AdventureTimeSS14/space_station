@@ -49,8 +49,9 @@
     PowerCellAntiqueProto: 0.25
     #ADTstuf
     CrateScienceTopDisk: 0.75
-    CrateBerserk: 0.25
+    CrateBerserk: 0.025
     ADTcannabiswhiteSeeds: 0.4
+    CrateSyndicateSuperSurplusBundle: 0.0001
     # money
     SpaceCash10000: 1
     # weighted down since it sells for a lot

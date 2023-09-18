@@ -275,10 +275,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 20
+        maxVol: 50
         reagents:
         - ReagentId: OilOlive
-          Quantity: 20
+          Quantity: 50
 
 - type: entity
   parent: ReagentContainerBase
@@ -291,10 +291,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 20
+        maxVol: 50
         reagents:
         - ReagentId: Mayo
-          Quantity: 20
+          Quantity: 50
 
 # - type: entity
 #   parent: ReagentContainerBase

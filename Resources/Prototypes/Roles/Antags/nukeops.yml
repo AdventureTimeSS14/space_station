@@ -7,7 +7,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 72000 #20 hrs
+      time: 36000 #10 hrs
     - !type:DepartmentTimeRequirement
       department: Security
       time: 72000 #20 hrs
