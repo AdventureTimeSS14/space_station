@@ -8,6 +8,9 @@
     name: ghost-role-information-rat-king-name
     description: ghost-role-information-rat-king-description
     rules: ghost-role-information-rat-king-rules
+    requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 36000 # 10h overall
   - type: GhostRoleMobSpawner
     prototype: MobRatKing
   - type: Sprite
@@ -64,6 +67,13 @@
   components:
   - type: GhostRole
     rules: ghost-role-information-nukeop-rules
+    requirements:
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 36000 #10 hrs
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 72000 #20 hrs
   - type: GhostRoleMobSpawner
     prototype: MobHumanNukeOp
   - type: Sprite
@@ -84,6 +94,13 @@
     name: ghost-role-information-loneop-name
     description: ghost-role-information-loneop-description
     rules: ghost-role-information-loneop-rules
+    requirements:
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 36000 #10 hrs
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 72000 #20 hrs
   - type: GhostRoleMobSpawner
     prototype: MobHumanLoneNuclearOperative
   - type: Sprite
@@ -104,6 +121,9 @@
     name: ghost-role-information-space-dragon-name
     description: ghost-role-information-space-dragon-description
     rules: ghost-role-component-default-rules
+    requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 36000 # 10h overall
   - type: GhostRoleMobSpawner
     prototype: MobDragon
   - type: Sprite
@@ -122,6 +142,9 @@
     name: Space Ninja
     description: Use stealth and deception to sabotage the station.
     rules: You are an elite mercenary of the Spider Clan. You aren't required to follow your objectives, yet your NINJA HONOR demands you try.
+    requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 72000 # 20h overall
   - type: GhostRoleMobSpawner
     prototype: MobHumanSpaceNinja
   - type: Sprite
