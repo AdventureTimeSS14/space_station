@@ -45,19 +45,19 @@
     - id: ReagentContainerMilk
       amount: 8
     - id: ReagentContainerMilkSoy
-      amount: 4
+      amount: 3
     - id: ReagentContainerMilkSoy
-      amount: 4
+      amount: 3
     - id: ReagentContainerSugar
-      amount: 4
+      amount: 3
     - id: FoodCondimentPacketSalt
-      amount: 4
+      amount: 3
     - id: FoodCondimentBottleEnzyme
-      amount: 4
+      amount: 3
     - id: FoodContainerEgg
-      amount: 4
+      amount: 3
     - id: ADTReagentContainerCocoaSolid
-      amount: 4
+      amount: 3
     - id: ReagentContainerOliveoil
       amount: 2
     - id: ReagentContainerMayo
