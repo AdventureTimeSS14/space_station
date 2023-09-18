@@ -723,7 +723,7 @@
 
 #ERT Engineer Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitSyndie
+  parent: ClothingOuterHardsuitSyndieElite
   id: ClothingOuterHardsuitERTEngineer
   name: ERT engineer's hardsuit
   components:
@@ -749,7 +749,7 @@
 
 #ERT Security Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitSyndie
+  parent: ClothingOuterHardsuitSyndieElite
   id: ClothingOuterHardsuitERTSecurity
   name: ERT security's hardsuit
   components:
@@ -762,7 +762,7 @@
 
 #ERT Janitor Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitSyndie
+  parent: ClothingOuterHardsuitSyndieElite
   id: ClothingOuterHardsuitERTJanitor
   name: ERT janitor's hardsuit
   components:
