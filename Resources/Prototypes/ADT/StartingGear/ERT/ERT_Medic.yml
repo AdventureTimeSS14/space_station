@@ -3,7 +3,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorBlue
     back: ADTClothingBackpackERTMedicalFilledL
-    shoes: ClothingShoesBootsMag
+    shoes: ADTClothingShoesBootsMagERT
     mask: ClothingMaskBreath
     eyes: ClothingEyesHudMedical
     gloves: ClothingHandsGlovesColorBlack

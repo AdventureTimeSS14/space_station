@@ -60,10 +60,12 @@
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
-      - id: Ointment
-      - id: Gauze
-      - id: Brutepack
-      - id: MagazinePistolSubMachineGun
+        amount: 2
+      - id: MagazinePistolHighCapacity
+      - id: WeaponPistolViper
+      - id: MedicatedSuture
+      - id: ExGrenade
+        amount: 3
 
 #RPSL
 - type: entity
@@ -76,12 +78,13 @@
     capacity: 50
   - type: StorageFill
     contents:
-      - id: MagazinePistol
-        amount: 2
       - id: EmergencyMedipen
-      - id: Ointment
-      - id: Gauze
-      - id: Brutepack
+        amount: 2
+      - id: MagazinePistolHighCapacity
+      - id: WeaponPistolViper
+      - id: MedicatedSuture
+      - id: ExGrenade
+        amount: 3
 
 #RPSM
 - type: entity
@@ -96,12 +99,13 @@
     contents:
       - id: EmergencyMedipen
       - id: EmergencyMedipen
-      - id: AntiPoisonMedipen
-      - id: AntiPoisonMedipen
+      - id: MedicatedSuture
+      - id: MedicatedSuture
       - id: EpinephrineChemistryBottle
       - id: EphedrineChemistryBottle
       - id: ADTObjectsSpecificBicaridineChemistryBottle
-      - id: ADTObjectsSpecificDermalineChemistryBottle
+      - id: ADTObjectsSpecificDexalinPlusChemistryBottle
+      - id: RegenerativeMesh
 
 #Pyotr
 
