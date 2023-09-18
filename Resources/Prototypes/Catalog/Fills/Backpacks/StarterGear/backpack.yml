@@ -246,14 +246,18 @@
   components:
     - type: StorageFill
       contents:
-        - id: BoxSurvival
         - id: WeaponPulseCarbine
         - id: WeaponPulsePistol
         - id: WeaponDisabler
         - id: MedicatedSuture
         - id: RegenerativeMesh
         - id: Handcuffs
-        - id: CrowbarRed
+        - id: JawsOfLife
+        - id: WeaponRifleLecter
+        - id: MagazineRifle
+        - id: MagazineRifle
+        - id: C4
+          amount: 1
 
 - type: entity
   noSpawn: true
@@ -262,14 +266,18 @@
   components:
     - type: StorageFill
       contents:
-        - id: BoxSurvival
         - id: WeaponDisabler
         - id: WeaponPulsePistol
         - id: WeaponPulseCarbine
         - id: MedicatedSuture
         - id: RegenerativeMesh
         - id: BoxHandcuff
-        - id: CrowbarRed
+        - id: JawsOfLife
+        - id: WeaponRifleLecter
+        - id: MagazineRifle
+        - id: MagazineRifle
+        - id: C4
+          amount: 1
 
 - type: entity
   noSpawn: true
@@ -278,14 +286,18 @@
   components:
     - type: StorageFill
       contents:
-        - id: BoxSurvivalMedical
         - id: WeaponPulseCarbine
         - id: ADTCombatHypo
         - id: MedkitAdvancedFilled
-        - id: CrowbarRed
         - id: OmnizineChemistryBottle
         - id: EpinephrineChemistryBottle
         - id: EpinephrineChemistryBottle
+        - id: BluespaceBeaker
+        - id: Defibrillator
+        - id: CrowbarRed
+        - id: WeaponRifleLecter
+        - id: MagazineRifle
+        - id: MagazineRifle
 
 - type: entity
   noSpawn: true
@@ -294,7 +306,6 @@
   components:
     - type: StorageFill
       contents:
-        - id: BoxSurvival
         - id: trayScanner
         - id: WeaponPulseCarbine
         - id: MedicatedSuture
@@ -303,8 +314,13 @@
         - id: RCDAmmo
         - id: RCDAmmo
         - id: RCDAmmo
-        - id: CableMVStack
-        - id: CableHVStack
+        - id: WeaponRifleLecter
+        - id: MagazineRifle
+        - id: MagazineRifle
+        - id: C4
+          amount: 4
+        - id: ExGrenade
+          amount: 3
 
 - type: entity
   noSpawn: true
@@ -319,7 +335,7 @@
         - id: BoxLightMixed
         - id: BoxLightMixed
         - id: Soap
-        - id: CrowbarRed
+        - id: JawsOfLife
         - id: AdvMopItem
 
 - type: entity
