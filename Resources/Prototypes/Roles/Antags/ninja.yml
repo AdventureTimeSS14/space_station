@@ -4,6 +4,4 @@
   antagonist: true
   setPreference: false
   objective: roles-antag-space-ninja-objective
-    requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 72000 # 20h overall
+
