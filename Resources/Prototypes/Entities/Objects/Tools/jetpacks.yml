@@ -50,7 +50,7 @@
     - type: GasTank
       outputPressure: 21.3
       air:
-        volume: 5
+        volume: 70
         temperature: 293.15
     - type: Jetpack
       moleUsage: 0.00085
@@ -98,12 +98,12 @@
   - type: GasTank
     outputPressure: 42.6
     air:
-      # 13 minutes of thrust
-      volume: 5
+      # 150 minutes of thrust
+      volume: 70
       temperature: 293.15
       moles:
-        - 1.025689525 # oxygen
-        - 1.025689525 # nitrogen
+        - 11.315 # oxygen
+        - 11.315 # nitrogen
 
 #Empty black
 - type: entity
@@ -131,12 +131,12 @@
   - type: GasTank
     outputPressure: 42.6
     air:
-      # 13 minutes of thrust
-      volume: 5
+      # 150 minutes of thrust
+      volume: 70
       temperature: 293.15
       moles:
-        - 1.025689525 # oxygen
-        - 1.025689525 # nitrogen
+        - 11.315 # oxygen
+        - 11.315 # nitrogen
 
 #Empty captain
 - type: entity
@@ -168,12 +168,12 @@
   - type: GasTank
     outputPressure: 42.6
     air:
-      # 13 minutes of thrust
-      volume: 5
+      # 150 minutes of thrust
+      volume: 70
       temperature: 293.15
       moles:
-        - 1.025689525 # oxygen
-        - 1.025689525 # nitrogen
+        - 11.315 # oxygen
+        - 11.315 # nitrogen
 
 #Empty mini
 - type: entity
@@ -194,7 +194,7 @@
     - type: GasTank
       outputPressure: 42.6
       air:
-        volume: 1.5
+        volume: 20
 
 # Filled mini
 - type: entity
@@ -206,12 +206,12 @@
   - type: GasTank
     outputPressure: 42.6
     air:
-      # 4 minutes of thrust
-      volume: 1.5
+      # 80 minutes of thrust
+      volume: 20
       temperature: 293.15
       moles:
-        - 0.307706858 # oxygen
-        - 0.307706858 # nitrogen
+        - 0.747 # oxygen
+        - 0.747 # nitrogen
 
 #Empty security
 - type: entity
@@ -239,12 +239,12 @@
   - type: GasTank
     outputPressure: 42.6
     air:
-      # 13 minutes thrust
-      volume: 5
+      # 150 minutes of thrust
+      volume: 70
       temperature: 293.15
       moles:
-        - 1.025689525 # oxygen
-        - 1.025689525 # nitrogen
+        - 11.315 # oxygen
+        - 11.315 # nitrogen
 
 #Empty void
 - type: entity
@@ -274,9 +274,9 @@
   - type: GasTank
     outputPressure: 42.6
     air:
-      # 13 minutes of thrust
-      volume: 5
+      # 150 minutes of thrust
+      volume: 70
       temperature: 293.15
       moles:
-        - 1.025689525 # oxygen
-        - 1.025689525 # nitrogen
+        - 11.315 # oxygen
+        - 11.315 # nitrogen

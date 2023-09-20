@@ -90,7 +90,7 @@ public sealed class StealthSystem : SharedStealthSystem
         _shader.SetParameter("visibility", visibility);
 
         visibility = MathF.Max(0, visibility);
-        args.Sprite.Color = new Color(visibility, visibility, 1, 1);
+        args.Sprite.Color = new Color(visibility, visibility, 0, 0);
     }
 }
 

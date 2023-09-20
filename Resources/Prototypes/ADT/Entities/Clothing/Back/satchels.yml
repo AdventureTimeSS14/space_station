@@ -1,0 +1,24 @@
+- type: entity
+  parent: ClothingBackpack
+  id: ADTClothingBackpackSatchelninja
+  name: satchel
+  description: A trendy looking satchel.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Back/ninjasatchel.rsi #Adventure Time sprites
+  - type: Storage
+    capacity: 150
+
+- type: entity
+  parent: ADTClothingBackpackSatchelninja
+  id: ADTClothingBackpackSatchelninjaTools
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+      - id: Crowbar
+      - id: Wrench
+      - id: Screwdriver
+      - id: Wirecutter
+      - id: Welder
+      - id: Multitool

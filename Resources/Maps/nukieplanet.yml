@@ -13523,7 +13523,7 @@ entities:
           - pos: -10.5,7.5
             parent: 104
             type: Transform
-  - proto: VendingMachineChemicals
+  - proto: ChemDispenser
     entities:
       - uid: 1335
         components:
@@ -13567,7 +13567,7 @@ entities:
           - pos: -9.5,7.5
             parent: 104
             type: Transform
-  - proto: VendingMachineSnack
+  - proto: MaterialReclaimer
     entities:
       - uid: 2442
         components:
