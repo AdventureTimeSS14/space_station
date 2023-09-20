@@ -475,7 +475,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
             - !type:PlaySoundBehavior
-              sound: /Audio/ADT/open_telescopichka.ogg"
+              sound: /Audio/ADT/open_telescopichka.ogg
             - !type:SpawnEntitiesBehavior
               spawn:
                 SheetSteel:
