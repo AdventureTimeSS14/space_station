@@ -842,3 +842,37 @@
             - Impassable
             - HighImpassable
     - type: GrapplingProjectile
+
+#ADT
+- type: entity
+  id: ADTBulletChargestrong
+  name: charge bolt
+  parent: BaseBullet
+  noSpawn: true
+  description: Marks a target for additional damage.
+  components:
+  - type: Reflective
+    reflective:
+    - NonEnergy
+  - type: Sprite
+    noRot: false
+    sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
+    layers:
+      - state: chronobolt
+        shader: unshaded
+  - type: GatheringProjectile
+  - type: DamageMarkerOnCollide
+    whitelist:
+      components:
+        - MobState
+    damage:
+      types:
+        Blunt: 80
+  - type: Projectile
+    impactEffect: BulletImpactEffectKinetic
+    damage:
+      types:
+        Blunt: 0
+  # Short lifespan
+  - type: TimedDespawn
+    lifetime: 0.4

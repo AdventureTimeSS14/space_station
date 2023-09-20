@@ -9,3 +9,8 @@ ent-ADTClothingBackpackHeartSatchel = сумка-сердце
 
 ent-ADTClothingBackpackHeart = рюкзак-сердце
     .desc = Сумка для хранения. Ой, а что там? Все украденные тобой сердца?  
+
+ent-ADTClothingBackpackSatchelninja = сумка ниндзя 
+    .desc = Высоко технологичная сумка изготовленая из тех же материалов что и костюм ниндзи.
+ent-ADTClothingBackpackSatchelninjaTools = { ent-ADTClothingBackpackSatchelninja }
+    .desc = { ent-ADTClothingBackpackSatchelninja.desc }

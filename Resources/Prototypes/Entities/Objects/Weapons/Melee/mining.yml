@@ -10,7 +10,7 @@
   - type: PointLight
     color: "#ffeead"
     enabled: false
-    radius: 4
+    radius: 6
 
 - type: entity
   name: crusher
@@ -81,7 +81,7 @@
   - type: Item
     size: 10
 
-# Like a crusher... but better
+# Like a crusher... but sucks
 - type: entity
   name: crusher glaive
   parent: WeaponCrusher

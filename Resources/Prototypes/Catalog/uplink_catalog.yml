@@ -299,7 +299,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi, state: icon }
   productEntity: SpeedLoader357AP
   cost:
-    Telecrystal: 4
+    Telecrystal: 2
   categories:
   - UplinkAmmo
 

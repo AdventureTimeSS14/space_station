@@ -5,12 +5,12 @@
   id: Bible
   components:
   - type: UseDelay
-    delay: 10.0
+    delay: 5.0
   - type: Bible
     damage:
       groups:
-        Brute: -15
-        Burn: -15
+        Brute: -20
+        Burn: -20
     damageOnFail:
       groups:
         Brute: 15
