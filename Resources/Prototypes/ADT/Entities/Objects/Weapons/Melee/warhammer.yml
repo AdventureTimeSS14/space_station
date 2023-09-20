@@ -1,0 +1,49 @@
+- type: entity
+  name: Warhammer
+  parent: BaseWeaponCrusher
+  id: ADTWeaponWarhammer
+  components:
+  - type: Tag
+    tags:
+      - Pickaxe
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Melee/warhammer.rsi # Adventures Time sprites
+    state: icon
+  - type: AmmoCounter
+  - type: UseDelayOnShoot
+  - type: UseDelay
+    delay: 0.8
+  - type: LeechOnMarker
+    leech:
+      groups:
+        Brute: -25
+        Burn: -25
+        Airloss: -25
+  - type: Gun
+    soundGunshot: /Audio/Weapons/plasma_cutter.ogg
+    fireRate: 0.5
+    useKey: false
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.5
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
+  - type: BasicEntityAmmoProvider
+    proto: ADTBulletChargestrong
+    capacity: 1
+    count: 1
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 20
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 20
+  - type: GunRequiresWield
+  - type: Item
+    size: 150
+  - type: DisarmMalus
+  - type: Tool
+    qualities:
+      - Prying

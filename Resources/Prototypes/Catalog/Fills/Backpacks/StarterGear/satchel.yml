@@ -1,5 +1,4 @@
 - type: entity
-  noSpawn: true
   parent: ClothingBackpackSatchel
   id: ClothingBackpackSatchelFilled
   components:
@@ -8,7 +7,6 @@
       - id: BoxSurvival
 
 - type: entity
-  noSpawn: true
   parent: ClothingBackpackSatchel
   id: ClothingBackpackSatchelTools
   components:
@@ -32,7 +30,6 @@
       - id: RubberStampClown
 
 - type: entity
-  noSpawn: true
   parent: ClothingBackpackSatchelSecurity
   id: ClothingBackpackSatchelSecurityFilled
   components:
@@ -43,7 +40,6 @@
       - id: MagazinePistol
       
 - type: entity
-  noSpawn: true
   parent: ClothingBackpackSatchelSecurity
   id: ClothingBackpackSatchelSecurityFilledDetective
   components:
@@ -55,7 +51,6 @@
       - id: ForensicScanner
 
 - type: entity
-  noSpawn: true
   parent: ClothingBackpackSatchelBrigmedic
   id: ClothingBackpackSatchelBrigmedicFilled
   components:
@@ -65,7 +60,6 @@
       - id: Flash
 
 - type: entity
-  noSpawn: true
   parent: ClothingBackpackSatchelMedical
   id: ClothingBackpackSatchelMedicalFilled
   components:
