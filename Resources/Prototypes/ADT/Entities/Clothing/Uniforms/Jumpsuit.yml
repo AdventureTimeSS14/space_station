@@ -204,3 +204,16 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/blue_abibas.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/blue_abibas.rsi
+
+#Conjurer
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformAJohanPants
+  name: Johan`s pants
+  description: Just pants, right.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/johan_pants.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/johan_pants.rsi

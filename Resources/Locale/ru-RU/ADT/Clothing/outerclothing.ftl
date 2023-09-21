@@ -9,3 +9,7 @@ ent-ADTClothingOuterCoatPyotrCoat = шинель Петра Шахина
 ent-ADTClothingOuterCoatOctyabrinaCoat = пальто Октябрины
     .desc = Темно-красное пальто. Кажется тяжелее, чем должно быть.
     .suffix = { "" }
+
+ent-ADTClothingOuterCoatJohanCoat = пальто Йохана
+    .desc = Белое пальто, да? С голубыми полосками, да? ДА.
+    .suffix = { "" }

@@ -81,3 +81,18 @@
     sprite: ADT/Clothing/Head/Hats/pyotr_cap.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/pyotr_cap.rsi
+
+#Conjurer
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsJohanCap
+  name: Johans`s cap
+  description: Looks strange but cool
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/johan_cap.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/johan_cap.rsi
