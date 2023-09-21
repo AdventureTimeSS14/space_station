@@ -52,3 +52,18 @@
 #      amount: 1
 #  products:
 #    SalineGlucoseSolution: 3
+
+- type: reagent
+  id: ADTFleurdeMaiReagent
+  name: reagent-name-fleurdemai
+  parent: BaseAlcohol
+  desc: reagent-desc-fleurdemai
+  physicalDesc: reagent-physical-desc-translucent
+  #flavor: ADTCherryExquisiteWineFlavor
+  color: "#c8a2c8"
+  metabolisms:
+    Drink:
+      effects:
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.05
