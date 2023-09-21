@@ -16,4 +16,6 @@ ent-ADTClothingHeadPinkHat = праздничная розовая шляпа
     .desc = Где мой бокал мартини?!
     .suffix = { "" }
 
-
+ent-ADTClothingHeadHatsJohanCap = фуражка Йохана
+    .desc = Выглядит всрато, но круто.
+    .suffix = { "" }
