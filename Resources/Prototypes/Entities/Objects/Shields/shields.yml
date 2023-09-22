@@ -36,13 +36,13 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 9999
+            damage: 501
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
         - trigger:
             !type:DamageTrigger
-            damage: 9998 #This is probably enough damage before it breaks
+            damage: 500 #This is probably enough damage before it breaks
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -149,13 +149,13 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 9999
+            damage: 501
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
         - trigger:
             !type:DamageTrigger
-            damage: 9998 #Weaker shield
+            damage: 500 #Weaker shield
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -204,13 +204,13 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 9999
+            damage: 501
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
         - trigger:
             !type:DamageTrigger
-            damage: 9998 #Very weak shield
+            damage: 500 #Very weak shield
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -284,7 +284,7 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 9999
+            damage: 500
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -367,13 +367,13 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 9999
+            damage: 501
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
         - trigger:
             !type:DamageTrigger
-            damage: 9998
+            damage: 500
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -464,13 +464,13 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 9999
+            damage: 501
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
         - trigger:
             !type:DamageTrigger
-            damage: 9998
+            damage: 500
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
