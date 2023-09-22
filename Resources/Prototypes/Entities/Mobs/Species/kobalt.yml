@@ -66,8 +66,8 @@
       types:
         Heat : 0.1 #per second, scales with temperature & other constants
   - type: MovementSpeedModifier
-    baseWalkSpeed : 2.6
-    baseSprintSpeed : 4.4
+    baseWalkSpeed : 2.7
+    baseSprintSpeed : 4.5
   - type: Perishable
   - type: MobThresholds
     thresholds:
