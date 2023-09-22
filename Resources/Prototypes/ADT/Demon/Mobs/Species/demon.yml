@@ -50,8 +50,8 @@
       types:
         Heat : 0.3 #per second, scales with temperature & other constants
   - type: MovementSpeedModifier
-    baseWalkSpeed : 2.5
-    baseSprintSpeed : 4.5
+    baseWalkSpeed : 2.4
+    baseSprintSpeed : 4.4
   - type: Perishable
 
 - type: entity
