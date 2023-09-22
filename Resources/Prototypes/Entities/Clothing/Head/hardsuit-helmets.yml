@@ -25,7 +25,7 @@
   name: atmos hardsuit helmet
   description: A special hardsuit helmet designed for working in low-pressure, high thermal environments.
   components:
-  - type: BreathMask
+  #- type: BreathMask респрайт шлемов для вульп?
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/atmospherics.rsi
     layers:
