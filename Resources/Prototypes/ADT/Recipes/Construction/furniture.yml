@@ -269,3 +269,108 @@
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
+
+#кресла Юны
+- type: construction
+  name: violet chair
+  id: ADTVioletChairRecipe
+  graph: Seat
+  startNode: start
+  targetNode: adtvioletchair
+  category: construction-category-furniture
+  description: It looks comfy.
+  icon:
+    sprite: ADT/Structures/Furniture/yuna_chairs.rsi
+    state: kreslo_fiol
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: red chair
+  id: ADTRedChairRecipe
+  graph: Seat
+  startNode: start
+  targetNode: adtredchair
+  category: construction-category-furniture
+  description: It looks comfy.
+  icon:
+    sprite: ADT/Structures/Furniture/yuna_chairs.rsi
+    state: kreslo_red
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: leather chair
+  id: ADTLeatherChairRecipe
+  graph: Seat
+  startNode: start
+  targetNode: adtleatherchair
+  category: construction-category-furniture
+  description: It looks comfy.
+  icon:
+    sprite: ADT/Structures/Furniture/yuna_chairs.rsi
+    state: kreslo_kor
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+#церковная лавочка от shi106
+
+- type: construction
+  name: church bench left side
+  id: ADTChurchBenchLeftSideRecipe
+  graph: Seat
+  startNode: start
+  targetNode: adtchurchbenchleft
+  category: construction-category-furniture
+  description: Simple, but beautiful.
+  icon:
+    sprite: ADT/Structures/Furniture/church_bench.rsi
+    state: bench_left
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: church bench middle
+  id: ADTChurchBenchMiddleRecipe
+  graph: Seat
+  startNode: start
+  targetNode: adtchurchbenchmiddle
+  category: construction-category-furniture
+  description: Simple, but beautiful.
+  icon:
+    sprite: ADT/Structures/Furniture/church_bench.rsi
+    state: bench_middle
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: church bench right side
+  id: ADTChurchBenchRightSideRecipe
+  graph: Seat
+  startNode: start
+  targetNode: adtchurchbenchright
+  category: construction-category-furniture
+  description: Simple, but beautiful.
+  icon:
+    sprite: ADT/Structures/Furniture/church_bench.rsi
+    state: bench_right
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
