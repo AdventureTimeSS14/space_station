@@ -5,7 +5,7 @@
   minPlayers: 5
   maxPlayers: 40
   stations:
-    Packed:
+    ADTPacked:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

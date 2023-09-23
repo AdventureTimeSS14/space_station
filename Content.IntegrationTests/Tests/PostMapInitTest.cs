@@ -46,7 +46,7 @@ namespace Content.IntegrationTests.Tests
         {
             ////ADT MAP
             //"Quadro",
-            //"ADTPacked",
+            "ADTPacked",
 
             // Corvax-Start
             "CorvaxAvrite",
