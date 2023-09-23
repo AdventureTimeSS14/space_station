@@ -13,3 +13,6 @@ ent-ADTObjectWeaponsMeleeBlackBouquet = Чёрный букет
 ent-ADTObjectWeaponsMeleeBouquetWithBeer = Пивной букет
     .desc = Будьте уникальным! Подарите букет который можно съесть, заодно опрокинув по бутылочке пивасика.
     .suffix = { "" }
+ent-ADTObjectWeaponsMeleeLiliacBouquet = сиреневый букет
+    .desc = Маленький шедевр генетики - розы сорта "Флидефарбен Розен". Приобрели не только цвет, но и запах сирени
+    .suffix = { "" }
