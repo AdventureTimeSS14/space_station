@@ -98,3 +98,23 @@
     size: 15
     sprite: ADT/Objects/Weapons/Melee/black_bouquet.rsi
   - type: DisarmMalus
+
+- type: entity
+  parent: BaseItem
+  id: ADTObjectWeaponsMeleeLiliacBouquet
+  name: liliac roses bouquet
+  description: This roses are difinietly not colored, thay have always been like thah
+  components:
+  - type: Sharp
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Melee/liliac_bouquet.rsi
+    state: icon
+  - type: MeleeWeapon
+    attackRate: 1.0 
+    damage:
+      types:
+        Slash: 1
+  - type: Item
+    size: 15
+    sprite: ADT/Objects/Weapons/Melee/liliac_bouquet.rsi
+  - type: DisarmMalus

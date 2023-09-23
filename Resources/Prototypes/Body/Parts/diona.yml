@@ -63,8 +63,8 @@
   - type: Sprite
     state: "l_leg"
   - type: MovementBodyPart
-    walkSpeed : 1.5
-    sprintSpeed : 3.5
+    walkSpeed : 2.5
+    sprintSpeed : 4.5
 
 - type: entity
   id: RightLegDiona
@@ -77,8 +77,8 @@
     partType: Leg
     symmetry: Right
   - type: MovementBodyPart
-    walkSpeed : 1.5
-    sprintSpeed : 3.5
+    walkSpeed : 2.5
+    sprintSpeed : 4.5
 
 - type: entity
   id: LeftFootDiona

@@ -13,3 +13,19 @@ ent-ADTClothingNeckPyotrCloak = плащ Петра Шахина
 ent-ADTClothingNeckHoPAltCloak = торжественный плащ Главы Персонала
     .desc = Плащ Главы Персонала для особых случаев
     .suffix = { "" }    
+
+ent-ADTClothingNeckDarkGreyCloak = темно-серый плащ
+    .desc = Даже грейтайд заслуживает иметь свой плащ.
+    .suffix = { "" }
+
+ent-ADTClothingNeckGothicCloak = готический плащ
+    .desc = Для классических вампиров, ценящих старый стиль.
+    .suffix = { "" }
+
+ent-ADTClothingNeckSyndicateCloak = плащ Синдиката
+    .desc = Антагонизируй со стилем!
+    .suffix = { "" }
+
+ent-ADTClothingNeckNukeOpsCloak = плащ Ядерных Оперативников
+    .desc = Согреет вас холодными вечерами на базе Ядерных Оперативников.
+    .suffix = { "" }    

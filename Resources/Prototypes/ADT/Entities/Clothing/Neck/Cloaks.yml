@@ -34,3 +34,39 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Neck/Cloaks/HoP_alt_cloak.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckDarkGreyCloak
+  name: dark grey cloak
+  description: Even a greytide deserve his cloak.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/Cloaks/darkgrey_cloak.rsi #спрайты от floppo4ka
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckGothicCloak
+  name: gothic cloak
+  description: For a classy old-style vampires.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/Cloaks/gothic_cloak.rsi #спрайты от floppo4ka
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckSyndicateCloak
+  name: syndicate cloak
+  description: Antagonize with style!
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/Cloaks/syndicate_cloak.rsi #спрайты от floppo4ka
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckNukeOpsCloak
+  name: nuke ops cloak
+  description: Protect from cold evening on a nukie planet.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/Cloaks/nukeops_cloak.rsi #спрайты от floppo4ka

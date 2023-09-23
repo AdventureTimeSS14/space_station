@@ -17,5 +17,8 @@ uplink-xc67ammo-description = набор, содержащий три расши
 uplink-AKMS-bundle-name = Набор АКМС
 uplink-AKMS-bundle-desc = набор, содержащий АКМС и четыре магазина к нему
 
-ent-ADTClothingBackpackDuffelSyndicateFilledXC67Ammo = набор магазинов для xC-67
-    .desc = ннабор, содержащий три расширенных магазина от хС-67 под патрон 6.5х39 мм TSF
+uplink-syndiecloak-name = плащ Синдиката
+uplink-syndiecloak-desc = антагонизируй со стилем!
+
+uplink-nukeopscloak-name = плащ Ядерных Оперативников
+uplink-nukeopscloak-desc = защитит тебя от холода на базе

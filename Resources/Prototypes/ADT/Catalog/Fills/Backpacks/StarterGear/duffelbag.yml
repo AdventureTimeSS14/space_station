@@ -95,8 +95,8 @@
 - type: entity
   parent: ClothingBackpackDuffelSyndicateAmmoBundle
   id: ADTClothingBackpackDuffelSyndicateFilledXC67Ammo
-  name: uplink-XC67-ammo-bundle-name
-  description: uplink-XC67-ammo-bundle-desc 
+  name: xC-67 extended magazine bundle
+  description: Duffelbag with a three extended 6.5 mm mag for xC-67
   components:
   - type: StorageFill
     contents:

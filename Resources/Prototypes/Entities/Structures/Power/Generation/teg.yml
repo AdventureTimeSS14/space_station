@@ -57,7 +57,7 @@
     # It fires processing on behalf of its connected circulators.
     - type: AtmosDevice
     - type: TegGenerator
-      powerFactor: 1.0
+      powerFactor: 0.3
 
     - type: DeviceNetwork
       deviceNetId: AtmosDevices

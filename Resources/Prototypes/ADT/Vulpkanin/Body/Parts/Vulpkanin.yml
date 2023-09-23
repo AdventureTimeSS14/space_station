@@ -150,8 +150,8 @@
       partType: Leg
       symmetry: Left
     - type: MovementBodyPart
-      walkSpeed: 3
-      sprintSpeed: 4.9
+      walkSpeed: 2.7
+      sprintSpeed: 4.6
 
 - type: entity
   id: RightLegVulpkanin
@@ -169,8 +169,8 @@
       partType: Leg
       symmetry: Right
     - type: MovementBodyPart
-      walkSpeed: 3
-      sprintSpeed: 4.9
+      walkSpeed: 2.7
+      sprintSpeed: 4.6
 
 - type: entity
   id: LeftFootVulpkanin
