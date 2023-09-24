@@ -1,7 +1,7 @@
 - type: entity
   save: false
   name: Urisst' Mzhand Kobolt
-  parent: BaseMobOrganic
+  parent: BaseMobSpeciesOrganic
   id: BaseMobKobolt
   abstract: true
   components:
