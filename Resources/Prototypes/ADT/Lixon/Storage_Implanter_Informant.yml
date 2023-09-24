@@ -17,8 +17,8 @@
     #TODO xTray нет протатипа OpenStorageImplant
     #- type: SubdermalImplant
     #  implantAction: OpenStorageImplant
-    #- type: Item
-    #  size: 9999
+    - type: Item
+      size: 9999
     - type: Storage
       capacity: 9999 #10-20 should be more than enough for this
     - type: ContainerContainer
