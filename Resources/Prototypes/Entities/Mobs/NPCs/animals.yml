@@ -2116,6 +2116,14 @@
         Base: caracal_flop
       Dead:
         Base: caracal_dead
+  - type: InteractionPopup
+    successChance: 0.9
+    interactSuccessString: petting-success-cat
+    interactFailureString: petting-failure-generic
+    interactSuccessSound:
+      path: /Audio/ADT/carakal_purr.ogg
+    interactFailureSound:
+      path: /Audio/ADT/carakal_hiss.ogg
 
 - type: entity
   name: sloth
