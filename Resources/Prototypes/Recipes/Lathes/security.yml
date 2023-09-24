@@ -323,13 +323,6 @@
     Plastic: 600
 
 - type: latheRecipe
-  id: SpeedLoaderMagnum
-  result: SpeedLoaderMagnum
-  completetime: 5
-  materials:
-    Steel: 200
-
-- type: latheRecipe
   id: ShellShotgunIncendiary
   result: ShellShotgunIncendiary
   completetime: 2
@@ -462,4 +455,4 @@
   completetime: 2
   materials:
     Steel: 700
-    Plastic: 1000  
+    Plastic: 1000

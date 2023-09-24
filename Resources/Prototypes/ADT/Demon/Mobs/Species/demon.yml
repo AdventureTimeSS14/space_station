@@ -1,7 +1,7 @@
 - type: entity
   save: false
   name: Urisst' Mzhand Demon
-  parent: BaseMobOrganic
+  parent: BaseMobSpeciesOrganic
   id: BaseMobDemon
   abstract: true
   components:
