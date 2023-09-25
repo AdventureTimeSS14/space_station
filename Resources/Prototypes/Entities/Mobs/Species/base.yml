@@ -28,12 +28,17 @@
       sprite: Mobs/Customization/masking_helpers.rsi
       state: unisex_full
       visible: false
-    - map: ["jumpsuit"]
     - map: [ "underwearb" ] #Sirena
     - map: [ "underweart" ] #Sirena
-    - map: ["enum.HumanoidVisualLayers.LFoot"]
-    - map: ["enum.HumanoidVisualLayers.RFoot"]
+    - map: [ "enum.HumanoidVisualLayers.LFoot" ]
+    - map: [ "enum.HumanoidVisualLayers.RFoot" ]
     - map: [ "socks" ] #Sirena
+    - map: ["jumpsuit"]
+    #- map: [ "underwearb" ] #Sirena
+    #- map: [ "underweart" ] #Sirena
+    #- map: ["enum.HumanoidVisualLayers.LFoot"]
+    #- map: ["enum.HumanoidVisualLayers.RFoot"]
+    #- map: [ "socks" ] #Sirena
     - map: ["enum.HumanoidVisualLayers.LHand"]
     - map: ["enum.HumanoidVisualLayers.RHand"]
     - map: [ "id" ]
