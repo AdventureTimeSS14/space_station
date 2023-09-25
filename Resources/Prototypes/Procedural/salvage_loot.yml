@@ -7,8 +7,6 @@
       entries:
         - proto: AdvMopItem
           prob: 0.5
-        - proto: AmmoTechFabCircuitboard
-          cost: 2
         - proto: AutolatheMachineCircuitboard
           cost: 2
         - proto: BiomassReclaimerMachineCircuitboard
@@ -26,23 +24,12 @@
           cost: 2
         - proto: CloningPodMachineCircuitboard
           cost: 2
-        - proto: CognizineChemistryBottle
-        - proto: CratePartsT3
-          cost: 2
-          prob: 0.5
-        - proto: CratePartsT3T4
-          cost: 5
-          prob: 0.5
         - proto: CratePartsT4
-          cost: 5
-          prob: 0.5
+          cost: 3
+          prob: 1
         - proto: CrateSalvageEquipment
           cost: 3
           prob: 0.5
-        - proto: GasRecycler
-          cost: 2
-        - proto: GeneratorRTG
-          cost: 5
         - proto: GravityGeneratorMini
           cost: 2
         - proto: GyroscopeUnanchored
@@ -54,13 +41,9 @@
           cost: 5
         - proto: OmnizineChemistryBottle
           prob: 0.5
-        - proto: PortableGeneratorPacman
-          cost: 2
-        - proto: PortableGeneratorSuperPacman
-          cost: 3
         - proto: PowerCellAntiqueProto
           cost: 5
-          prob: 0.5
+          prob: 0.25
         - proto: ProtolatheMachineCircuitboard
         - proto: RandomArtifactSpawner
           cost: 2
@@ -89,7 +72,7 @@
           cost: 5
           prob: 0.5
         - proto: ResearchDisk10000
-          prob: 0.5
+          prob: 0.75
         - proto: ResearchDisk5000
           prob: 0.5
         - proto: RipleyHarness
@@ -105,11 +88,34 @@
           cost: 5
         - proto: TechnologyDiskRare
           cost: 5
+          prob: 0.75
+        - proto: CrateScienceTopDisk
+          cost: 5
           prob: 0.5
-        - proto: ThrusterUnanchored
-        - proto: WaterTankHighCapacity
         - proto: WeldingFuelTankHighCapacity
           cost: 3
+        - proto: ADTWeaponWarhammer
+          cost: 5
+          prob: 0.1
+        - proto: CrateSyndicateSuperSurplusBundle
+          cost: 5
+          prob: 0.0001
+        - proto: CrateBerserk
+          cost: 5
+          prob: 0.055
+        - proto: Katana
+          cost: 5
+          prob: 0.25
+        - proto: CrateMaterialPlastic
+          cost: 5
+          prob: 1
+        - proto: CrateMaterialSteel
+          cost: 5
+          prob: 1
+        - proto: CargoTelepadMachineCircuitboard
+          cost: 5
+          prob: 0.1
+
 
 # Mob loot table
 
