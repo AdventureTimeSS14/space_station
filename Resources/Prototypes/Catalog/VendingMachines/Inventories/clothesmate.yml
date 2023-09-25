@@ -10,7 +10,7 @@
     ClothingHeadBandGreen: 2
     ClothingHeadBandRed: 2
     ClothingHeadBandSkull: 2
-    ADTClothingNeckDarkGreyCloak: 3
+    ADTClothingNeckDarkGreyCloak: 1
     ClothingUniformJumpsuitColorGrey: 3
     ClothingUniformJumpskirtColorGrey: 3
     ClothingUniformJumpsuitColorWhite: 3
@@ -47,8 +47,10 @@
     ClothingShoesColorOrange: 2
     ClothingShoesColorRed: 2
     ClothingShoesColorPurple: 2
-    ADTClothingFootWrapsWhite: 10
-    ADTClothingFootWrapsBlack: 10
+    ADTClothingFootWrapsWhite: 3
+    ADTClothingFootWrapsBlack: 3
+    ADTClothingFootWrapsHighWhite: 3
+    ADTClothingFootWrapsHighBlack: 3
     ClothingHeadHatGreysoft: 3
     ClothingHeadHatMimesoft: 3
     ClothingHeadHatBluesoft: 2

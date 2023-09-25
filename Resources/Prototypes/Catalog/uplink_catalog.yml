@@ -92,7 +92,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Melee/e_sword_double.rsi, state: icon }
   productEntity: EnergySwordDouble
   cost:
-    Telecrystal: 40
+    Telecrystal: 30
   categories:
   - UplinkWeapons
 
@@ -411,7 +411,7 @@
   productEntity: ReinforcementRadioSyndicate
   icon: { sprite: Objects/Devices/communication.rsi, state: old-radio }
   cost:
-    Telecrystal: 16
+    Telecrystal: 12
   categories:
   - UplinkUtility
   conditions:
@@ -427,7 +427,7 @@
   productEntity: ReinforcementRadioSyndicateNukeops
   icon: { sprite: Objects/Devices/communication.rsi, state: old-radio }
   cost:
-    Telecrystal: 24
+    Telecrystal: 16
   categories:
   - UplinkUtility
   conditions:
@@ -443,7 +443,7 @@
   productEntity: ReinforcementRadioSyndicateMonkey
   icon: { sprite: Objects/Devices/communication.rsi, state: old-radio }
   cost:
-    Telecrystal: 8
+    Telecrystal: 6
   categories:
   - UplinkUtility
 
@@ -1143,7 +1143,7 @@
   description: uplink-clothing-outer-hardsuit-juggernaut-desc
   productEntity: ClothingOuterHardsuitJuggernaut
   cost:
-    Telecrystal: 24
+    Telecrystal: 16
   categories:
   - UplinkArmor
 
