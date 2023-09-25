@@ -52,6 +52,16 @@
   - type: Item
     size: 10
 
+- type: entity
+  parent: Telecrystal
+  id: Telecrystal100
+  suffix: 100 TC
+  components:
+  - type: Stack
+    count: 100
+  - type: Item
+    size: 100
+
 # Uplinks
 - type: entity
   parent: BaseItem
