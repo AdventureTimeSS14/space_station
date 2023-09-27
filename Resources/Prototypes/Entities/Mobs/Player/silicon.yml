@@ -302,3 +302,100 @@
       cell_slot:
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
+#adt moment
+- type: entity
+  id: ADTPlayerBorgMining
+  parent: BorgChassisMining
+  suffix: Battery, Cargo
+  components:
+  - type: ContainerFill
+    containers:
+      borg_brain:
+      - MMIFilled
+      borg_module:
+      - BorgModuleGrapplingGun
+      - BorgModuleAppraisal
+      - BorgModuleMining
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMedium
+
+- type: entity
+  id: ADTPlayerBorgEngineer
+  parent: BorgChassisEngineer
+  suffix: Battery, Engineer
+  components:
+  - type: ContainerFill
+    containers:
+      borg_brain:
+      - MMIFilled
+      borg_module:
+      - BorgModuleAdvancedTool
+      - BorgModuleGasAnalyzer
+      - BorgModuleConstruction
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMedium
+
+- type: entity
+  id: ADTPlayerBorgJanitor
+  parent: BorgChassisJanitor
+  suffix: Battery, Janitor
+  components:
+  - type: ContainerFill
+    containers:
+      borg_brain:
+      - MMIFilled
+      borg_module:
+      - BorgModuleLightReplacer
+      - BorgModuleCleaning
+      - BorgModuleTrashCollection
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMedium
+
+- type: entity
+  id: ADTPlayerBorgMedical
+  parent: BorgChassisMedical
+  suffix: Battery, Medical
+  components:
+  - type: ContainerFill
+    containers:
+      borg_brain:
+      - MMIFilled
+      borg_module:
+      - BorgModuleDiagnosis
+      - BorgModuleTreatment
+      - BorgModuleDefibrillator
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMedium
+
+- type: entity
+  id: ADTPlayerBorgService
+  parent: BorgChassisService
+  suffix: Battery, Service
+  components:
+  - type: ContainerFill
+    containers:
+      borg_brain:
+      - MMIFilled
+      borg_module:
+      - BorgModuleLiteracy
+      - BorgModuleMusique
+      - BorgModuleGardening
+      - BorgModuleHarvesting
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMedium
+
