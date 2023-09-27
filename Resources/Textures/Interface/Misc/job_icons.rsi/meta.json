@@ -173,7 +173,10 @@
       "name": "JobIconSeniorPhysician"
     },
     {
-      "name": "JobIconSeniorOfficer"
+        "name": "JobIconSeniorOfficer"
+    },
+    {
+        "name": "JobIconADTInvestigator"
     }
   ]
 }

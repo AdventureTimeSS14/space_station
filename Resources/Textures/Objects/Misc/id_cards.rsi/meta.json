@@ -215,7 +215,10 @@
       "name": "idseniorphysician"
     },
     {
-      "name": "idseniorofficer"
+        "name": "idseniorofficer"
+    },
+    {
+        "name": "idinvestigator"
     },
     {
       "name": "gold-inhand-left",

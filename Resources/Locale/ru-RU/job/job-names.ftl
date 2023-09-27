@@ -50,6 +50,8 @@ job-name-senior-physician = Ведущий врач
 job-name-senior-officer = Офицер-инструктор СБ
 job-name-ADTBlueShieldOfficer = Офицер "Синего Щита"
 job-name-magistrat = Магистрат
+job-name-ADTInvestigator = Следователь СБ
+
 # Role timers - Make these alphabetical or I cut you
 JobAtmosphericTechnician = Атмосферный техник
 JobBartender = Бармен
@@ -103,3 +105,4 @@ JobBoxer = Боксёр
 JobZookeeper = Зоотехник
 JobADTBlueShieldOfficer = Офицер "Синего Щита"
 JobMagistrat = Магистрат
+JobADTInvestigator = Следователь СБ

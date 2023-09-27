@@ -1,0 +1,27 @@
+#КПК и айди следователя
+
+- type: entity
+  parent: IDCardStandard
+  id: ADTInvestigatorIDCard
+  name: investigator ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idinvestigator
+  - type: PresetIdCard
+    job: ADTInvestigator
+
+- type: entity
+  parent: BasePDA
+  id: ADTInvestigatorPDA
+  name: investigator PDA
+  description: It smells like ink and the case is prematurely closed due to the death of a suspect at work.
+  components:
+  - type: Pda
+    id: ADTInvestigatorIDCard
+    state: pda-investigator
+  - type: PdaBorderColor
+    borderColor: "#774705"
+  - type: Icon
+    state: pda-investigator

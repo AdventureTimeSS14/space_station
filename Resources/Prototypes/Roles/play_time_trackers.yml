@@ -157,3 +157,6 @@
 - type: playTimeTracker
   id: JobMagistrat
 
+- type: playTimeTracker
+  id: JobADTInvestigator
+

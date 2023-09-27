@@ -87,3 +87,23 @@ ent-ADTClothingUniformYunaBlackDress = черное платье Юны Джах
 ent-ADTClothingUniformAJohanPants = штаны Йохана
     .desc = Да, тут только штаны. Наслаждайтесь свободой в плечах.
     .suffix = { "" }
+
+ent-ADTClothingUniformInvestigatorSuit = форма следователя Службы Безопасности
+    .desc = Одежда для того, кто намерен докопаться до сути всех тайн.
+    .suffix = { "" }
+
+ent-ADTClothingUniformWhiteShorts = белые шорты
+    .desc = Белые шорты для отдыха. Пожалуйста, не пролейте на них ничего.
+    .suffix = { "" }
+
+ent-ADTClothingUniformBlackShorts = черные шорты
+    .desc = Черные шорты для отдыха.
+    .suffix = { "" }
+
+ent-ADTClothingUniformWhiteBreeches = белые бриджи
+    .desc = Белые бриджи для отдыха. Пожалуйста, не пролейте на них ничего.
+    .suffix = { "" }
+
+ent-ADTClothingUniformBlackBreeches = черные бриджи
+    .desc = Черные бриджи для отдыха.
+    .suffix = { "" }

@@ -32,6 +32,7 @@
     pocket1: ForensicPad
     pocket2: ForensicScanner
     belt: ClothingBeltHolsterFilled
+    gloves: ClothingHandsGlovesForensic
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
   underweart: ClothingUnderwearTopBraSportsAlternative # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
