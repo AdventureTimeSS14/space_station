@@ -82,6 +82,7 @@
   - Detective
   - Warden
   - Brigmedic
+  - ADTInvestigator
 
 - type: department
   id: Science

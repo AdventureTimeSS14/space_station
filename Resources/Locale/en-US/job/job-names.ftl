@@ -51,6 +51,7 @@ job-name-senior-engineer = Senior Engineer
 job-name-senior-researcher = Senior Researcher
 job-name-senior-physician = Senior Physician
 job-name-senior-officer = Senior Officer
+job-name-ADTInvestigator = Security Investigator
 
 # Role timers - Make these alphabetical or I cut you
 JobAtmosphericTechnician = Atmospheric Technician
@@ -94,6 +95,7 @@ JobSalvageSpecialist = Salvage Specialist
 JobScientist = Scientist
 JobSecurityCadet = Security Cadet
 JobSecurityOfficer = Security Officer
+JobADTInvestigator = Security Investigator
 JobSeniorEngineer = Senior Engineer
 JobSeniorOfficer = Senior Officer
 JobSeniorPhysician = Senior Physician

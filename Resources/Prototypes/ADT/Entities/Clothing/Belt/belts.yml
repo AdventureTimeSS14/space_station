@@ -137,3 +137,15 @@
   - type: StorageFill
     contents:
       - id: ADTPyotrSabre
+
+#кобура следователя СБ
+
+- type: entity
+  id: ADTClothingBeltInvestigatorHolster
+  parent: ClothingBeltHolster
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponPistolMk58Nonlethal
+        - id: MagazinePistol

@@ -11,3 +11,10 @@
   icon:
     sprite: Interface/Misc/job_icons.rsi
     state: JobIconADTBlueShieldOfficer
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconADTInvestigator
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: JobIconADTInvestigator
