@@ -1,0 +1,47 @@
+- type: job
+  id: ADTInvestigator
+  name: job-name-ADTInvestigator
+  description: job-description-ADTInvestigator
+  playTimeTracker: JobADTInvestigator
+  requirements:
+  - !type:RoleTimeRequirement
+      role: JobWarden
+      time: 10800 #3 hrs
+  - !type:RoleTimeRequirement
+      role: JobIAA
+      time: 10800 #3 hrs
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 108000 # 30 hours
+  startingGear: ADTInvestigatorGear
+  icon: "JobIconADTInvestigator"
+  supervisors: job-supervisors-hos
+  canBeAntag: false
+  access:
+  - Security
+  - Brig
+  - Maintenance
+  - Service
+  - Detective
+
+- type: startingGear
+  id: ADTInvestigatorGear
+  equipment:
+    jumpsuit: ADTClothingUniformInvestigatorSuit
+    back: ADTClothingBackpackInvestigatorFilled
+    shoes: ClothingShoesBootsJackSec # Corvax-Resprite
+    eyes: ClothingEyesGlassesSunglasses
+    head: ADTClothingHeadHatsInvestigatorCap
+    outerClothing: ADTClothingOuterCoatInvestigator
+    id: ADTInvestigatorPDA
+    ears: ClothingHeadsetSecurity
+    pocket1: ADTtelescopicBaton
+    pocket2: ForensicScanner
+    belt: ADTClothingBeltInvestigatorHolster
+    gloves: ClothingHandsGlovesForensic
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraSportsAlternative # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+  innerclothingskirt: ADTClothingUniformInvestigatorSuit
+  satchel: ADTClothingBackpackSatchelInvestigatorFilled
+  duffelbag: ADTClothingBackpackDuffelInvestigatorFilled

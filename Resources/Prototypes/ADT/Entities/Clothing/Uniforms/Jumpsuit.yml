@@ -217,3 +217,62 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/johan_pants.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/johan_pants.rsi
+
+#Комбинезон следователя
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformInvestigatorSuit
+  name: investigator suit
+  description: The costume of the one who will get to the bottom of all the secrets.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/investigator_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/investigator_suit.rsi
+
+#вещи Урога
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformWhiteShorts
+  name: white shorts
+  description: White shorts for the chill. Please don't spill anything on them.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/white_shorts.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/white_shorts.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformBlackShorts
+  name: black shorts
+  description: black shorts for the chill.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/black_shorts.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/black_shorts.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformWhiteBreeches
+  name: white breeches
+  description: white breeches for the chill. Please don't spill anything on them.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/white_breeches.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/white_breeches.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformBlackBreeches
+  name: black breeches
+  description: black breeches for the chill.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/black_breeches.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/black_breeches.rsi
