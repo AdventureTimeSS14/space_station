@@ -323,3 +323,13 @@
   - type: Sprite
     sprite: ADT/Objects/Fun/toys.rsi
     state: plushie_akula
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushiePrazat
+  name: Prazat Dar Vahed plushie
+  description: It looks like a cute little human doll... But in fact, this is a doll of a man who has done a lot of terrible things, who regrets and reproaches himself for it every day...
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_prazat
