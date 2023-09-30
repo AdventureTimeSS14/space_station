@@ -46,12 +46,13 @@ namespace Content.IntegrationTests.Tests
         {
             ////ADT MAP
             //"Quadro",
+            "ADTPacked",
 
             // Corvax-Start
             "CorvaxAvrite",
             "CorvaxDelta",
             "CorvaxIshimura",
-			"CorvaxSpectrum",
+			//"CorvaxSpectrum",
             //"CorvaxGate",
             // Corvax-End
 

@@ -154,7 +154,7 @@
   icon: { sprite: /Textures/ADT/Objects/Weapons/Guns/Rifels/xc67.rsi, state: icon}
   productEntity: ADTClothingBackpackDuffelSyndicateFilledXC67
   cost:
-    Telecrystal: 25
+    Telecrystal: 18
   categories:
   - UplinkBundles 
   conditions:
@@ -170,9 +170,34 @@
   icon: { sprite: /Textures/ADT/Objects/Weapons/Guns/Ammunition/Magazine/ext_rifle_mag.rsi, state: base }
   productEntity: ADTClothingBackpackDuffelSyndicateFilledXC67Ammo
   cost:
-    Telecrystal: 16
+    Telecrystal: 10
   categories:
   - UplinkAmmo 
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: ADTUplinkSyndieCloak
+  name: uplink-syndiecloak-name
+  description: uplink-syndiecloak-desc
+  productEntity: ADTClothingNeckSyndicateCloak
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkPointless
+
+- type: listing
+  id: ADTUplinkNukeOpsCloak
+  name: uplink-nukeopscloak-name
+  description: uplink-nukeopscloak-desc
+  productEntity: ADTClothingNeckNukeOpsCloak
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkPointless
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:

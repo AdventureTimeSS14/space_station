@@ -22,10 +22,9 @@ namespace Content.Server.Capibara
         public override void Initialize()
         {
             base.Initialize();
-
-            SubscribeLocalEvent<CapibaraComponent, ComponentStartup>(OnStartup);
-
-            SubscribeLocalEvent<CapibaraComponent, CapibaraRaiseArmyActionEvent>(OnRaiseArmy);
+            //TODO xTray капибара уже бесит, одни проблемы с ней
+            // SubscribeLocalEvent<CapibaraComponent, ComponentStartup>(OnStartup);
+            // SubscribeLocalEvent<CapibaraComponent, CapibaraRaiseArmyActionEvent>(OnRaiseArmy);
         }
 
         private void OnStartup(EntityUid uid, CapibaraComponent component, ComponentStartup args)

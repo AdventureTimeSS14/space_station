@@ -123,6 +123,36 @@
             - material: Steel
               amount: 2
               doAfter: 1
+        - to: adtvioletchair
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+        - to: adtredchair
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+        - to: adtleatherchair
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+        - to: adtchurchbenchleft
+          steps:
+            - material: WoodPlank
+              amount: 2
+              doAfter: 1
+        - to: adtchurchbenchmiddle
+          steps:
+            - material: WoodPlank
+              amount: 2
+              doAfter: 1
+        - to: adtchurchbenchright
+          steps:
+            - material: WoodPlank
+              amount: 2
+              doAfter: 1
 
     - node: chair
       entity: Chair
@@ -399,3 +429,75 @@
           steps:
             - tool: Screwing
               doAfter: 2
+
+    - node: adtvioletchair
+      entity: ADTVioletChair
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+    - node: adtredchair
+      entity: ADTRedChair
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+    - node: adtleatherchair
+      entity: ADTLeatherChair
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+    - node: adtchurchbenchleft
+      entity: ADTChurchBenchLeftSide
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: MaterialWoodPlank1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1
+
+    - node: adtchurchbenchmiddle
+      entity: ADTChurchBenchMiddle
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: MaterialWoodPlank1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1
+
+    - node: adtchurchbenchright
+      entity: ADTChurchBenchRightSide
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: MaterialWoodPlank1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1

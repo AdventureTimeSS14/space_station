@@ -22,7 +22,7 @@
       - id: DoorRemoteArmory
       - id: ClothingOuterHardsuitWarden
       - id: HoloprojectorSecurity
-      - id: ClothingEyesHudSecurity
+      #- id: ClothingEyesHudSecurity
 
 - type: entity
   id: LockerWardenFilled
@@ -47,7 +47,7 @@
       - id: RubberStampWarden
       - id: DoorRemoteArmory
       - id: HoloprojectorSecurity
-      - id: ClothingEyesHudSecurity
+      #- id: ClothingEyesHudSecurity
 
 - type: entity
   id: LockerSecurityFilled
@@ -73,7 +73,7 @@
         prob: 0.1
       - id: ClothingOuterCoatSecurityOvercoat # Corvax-SecFashion
         prob: 0.2
-      - id: ClothingEyesHudSecurity
+      #- id: ClothingEyesHudSecurity
 
 - type: entity
   id: LockerBrigmedicFilled
@@ -82,7 +82,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingEyesHudSecurity
+      #- id: ClothingEyesHudSecurity
       - id: WeaponDisabler
       - id: TrackingImplanter
         amount: 2
@@ -117,8 +117,8 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingEyesHudSecurity
-        prob: 0.3
+      #- id: ClothingEyesHudSecurity
+        #prob: 0.3
       - id: ClothingHeadHatFedoraBrown
       - id: ClothingNeckTieDet
       - id: ClothingOuterVestDetective
@@ -139,7 +139,13 @@
     contents:
       - id: ClothingHeadHelmetBombSuit
       - id: ClothingOuterSuitBomb
-      - id: ClothingMaskGas
+      # NT is cheap, what can you do...
+      - id: Wirecutter
+        prob: 0.9
+      - id: Screwdriver
+        prob: 0.9
+      - id: Multitool
+        prob: 0.5
 
 - type: entity
   parent: GunSafe

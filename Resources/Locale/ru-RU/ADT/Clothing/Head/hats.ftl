@@ -19,3 +19,8 @@ ent-ADTClothingHeadPinkHat = праздничная розовая шляпа
 ent-ADTClothingHeadHatsJohanCap = фуражка Йохана
     .desc = Выглядит всрато, но круто.
     .suffix = { "" }
+
+ent-ADTClothingHeadHatsInvestigatorCap = фуражка следователя Службы Безопасности
+    .desc = Слава NanoTrasen!
+    .suffix = { "" }
+

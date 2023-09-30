@@ -13,7 +13,7 @@ ent-ADTBlackSofaRightSide = черный диван
 ent-ADTDeckChair = деревянный шезлонг
     .desc = Шезлонг для приобретения ровного загара под светом ближайшей звезды
 
-ent-ADTBlackChair = черное кресло
+ent-ADTBlackChair = чёрное кресло
     .desc = Выглядит крайне комфортно
 
 ent-ADTDoubleBedTop = двухспальная кровать
@@ -63,3 +63,24 @@ ent-ADTLeatherSofaMiddle = кожаный диван
 ent-ADTLeatherSofaRightSide = кожаный диван
     .suffix = Правая часть
     .desc = Большой диван, с которого не хочется слезать
+
+ent-ADTVioletChair = фиолетовое кресло
+    .desc = Выглядит крайне комфортно
+
+ent-ADTRedChair = красное кресло
+    .desc = Выглядит крайне комфортно
+
+ent-ADTLeatherChair = кожаное кресло
+    .desc = Выглядит крайне комфортно
+
+ent-ADTChurchBenchLeftSide = церковная скамейка
+    .suffix = Левая часть
+    .desc = Простая, но красивая.
+
+ent-ADTChurchBenchMiddle = церковная скамейка
+    .suffix = Середина
+    .desc = Простая, но красивая.
+
+ent-ADTChurchBenchRightSide = церковная скамейка
+    .suffix = Правая часть
+    .desc = Простая, но красивая.

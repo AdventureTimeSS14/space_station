@@ -27,7 +27,7 @@ namespace Content.Shared.Preferences
     [Serializable, NetSerializable]
     public sealed partial class HumanoidCharacterProfile : ICharacterProfile
     {
-        public const int MaxNameLength = 32;
+        public const int MaxNameLength = 64;
         public const int MaxDescLength = 512;
 
         private readonly Dictionary<string, JobPriority> _jobPriorities;
@@ -469,7 +469,7 @@ namespace Content.Shared.Preferences
                 flavortext = FormattedMessage.RemoveMarkup(FlavorText);
             }
 
-            var appearance = HumanoidCharacterAppearance.EnsureValid(Appearance, Species, sponsorMarkings);
+            var appearance = HumanoidCharacterAppearance.EnsureValid(Appearance, Species, Sex, sponsorMarkings);
 
             var prefsUnavailableMode = PreferenceUnavailable switch
             {

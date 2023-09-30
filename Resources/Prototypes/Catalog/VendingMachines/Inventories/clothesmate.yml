@@ -10,8 +10,9 @@
     ClothingHeadBandGreen: 2
     ClothingHeadBandRed: 2
     ClothingHeadBandSkull: 2
-    ClothingUniformJumpsuitColorGrey: 8
-    ClothingUniformJumpskirtColorGrey: 8
+    ADTClothingNeckDarkGreyCloak: 1
+    ClothingUniformJumpsuitColorGrey: 3
+    ClothingUniformJumpskirtColorGrey: 3
     ClothingUniformJumpsuitColorWhite: 3
     ClothingUniformJumpskirtColorWhite: 3
     ClothingUniformJumpsuitColorBlue: 2
@@ -46,7 +47,11 @@
     ClothingShoesColorOrange: 2
     ClothingShoesColorRed: 2
     ClothingShoesColorPurple: 2
-    ClothingHeadHatGreysoft: 8
+    ADTClothingFootWrapsWhite: 3
+    ADTClothingFootWrapsBlack: 3
+    ADTClothingFootWrapsHighWhite: 3
+    ADTClothingFootWrapsHighBlack: 3
+    ClothingHeadHatGreysoft: 3
     ClothingHeadHatMimesoft: 3
     ClothingHeadHatBluesoft: 2
     ClothingHeadHatYellowsoft: 2
@@ -62,7 +67,7 @@
     ClothingNeckScarfStripedGreen: 3
     ClothingHeadHatFez: 2
     ClothingBeltStorageWaistbag: 3
-    ADTClothingSandals: 5
+    ADTClothingSandals: 3
     ADTClothingUniformTurleneckBlack: 3
     ADTClothingUniformTurleneckBlackWomen: 3
     ADTClothingUniformTurleneckBlue: 3
@@ -94,6 +99,8 @@
     ADTClothingUniformTurleneckWhiteSleeveless: 3
     ADTClothingUniformTurleneckWhiteBlackSleeveless: 3
     ADTClothingUniformTurleneckWhiteWomenSleeveless: 3
+    ADTClothingNeckGothicCloak: 1
   contrabandInventory:
     ClothingUniformJumpsuitTacticool: 1
     ClothingUniformJumpskirtTacticool: 1
+    ADTClothingNeckSyndicateCloak: 1

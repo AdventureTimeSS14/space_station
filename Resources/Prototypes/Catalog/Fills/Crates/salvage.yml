@@ -76,7 +76,7 @@
         prob: 0.01
         #  - Skub
       - id: Telecrystal10
-        prob: 0.001
+        prob: 0.01
       - id: WeaponRevolverPython357
         prob: 0.001
       - id: ClothingHeadHatCatEars

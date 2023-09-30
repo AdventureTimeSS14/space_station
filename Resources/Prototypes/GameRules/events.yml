@@ -7,7 +7,6 @@
     weight: 10
     startDelay: 30
     duration: 35
-    minimumPlayers: 20
     startAudio: # Corvax-Announcements
       path: /Audio/Corvax/Announcements/flux.ogg
       params:
@@ -59,10 +58,21 @@
   components:
   - type: StationEvent
     startAnnouncement: station-event-bureaucratic-error-announcement
-    minimumPlayers: 35
+    minimumPlayers: 25
     weight: 3
     duration: 1
   - type: BureaucraticErrorRule
+
+- type: entity
+  parent: BaseGameRule
+  id: ClosetSkeleton
+  noSpawn: true
+  components:
+  - type: StationEvent
+    weight: 10
+    duration: 1
+  - type: RandomEntityStorageSpawnRule
+    prototype: MobSkeletonCloset
 
 - type: entity
   parent: BaseGameRule
@@ -72,8 +82,8 @@
   - type: StationEvent
     weight: 5
     duration: 1
-    earliestStart: 40
-    minimumPlayers: 25
+    earliestStart: 45
+    minimumPlayers: 20
   - type: RandomSpawnRule
     prototype: SpawnPointGhostDragon
 
@@ -83,11 +93,11 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 15
+    weight: 5
     duration: 1
-    earliestStart: 45
+    earliestStart: 30
     reoccurrenceDelay: 60
-    minimumPlayers: 20
+    minimumPlayers: 40
   - type: NinjaSpawnRule
 
 - type: entity
@@ -96,9 +106,9 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 1
+    weight: 7.5
     duration: 1
-    earliestStart: 60
+    earliestStart: 45
     minimumPlayers: 20
   - type: RandomSpawnRule
     prototype: MobRevenant
@@ -142,7 +152,7 @@
   components:
   - type: StationEvent
     earliestStart: 15
-    minimumPlayers: 20
+    minimumPlayers: 15
     weight: 5
     startDelay: 50
     duration: 240
@@ -184,13 +194,11 @@
   - type: VentCrittersRule
     entries:
     - id: MobMouse
-      prob: 0.015
+      prob: 0.02
     - id: MobMouse1
-      prob: 0.015
+      prob: 0.02
     - id: MobMouse2
-      prob: 0.015
-    - id: MobRatServant
-      prob: 0.015
+      prob: 0.02
     specialEntries:
     - id: SpawnPointGhostRatKing
       prob: 0.005
@@ -219,7 +227,7 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 3
+    weight: 10
     duration: 1
     startAudio:
       path: /Audio/Announcements/sentience.ogg # Corvax-Announcements
@@ -353,7 +361,6 @@
   - type: StationEvent
     earliestStart: 50
     weight: 5
-    minimumPlayers: 25
     duration: 1
   - type: ZombieRule
     minStartDelay: 0 #let them know immediately
@@ -368,8 +375,8 @@
   noSpawn: true
   components:
   - type: StationEvent
-    earliestStart: 30
-    weight: 10
+    earliestStart: 45
+    weight: 5
     minimumPlayers: 10
     reoccurrenceDelay: 30
     duration: 1
@@ -400,8 +407,8 @@
     startAnnouncement: station-event-immovable-rod-start-announcement
     startAudio:
       path: /Audio/Announcements/attention.ogg
-    weight: 1
+    weight: 5
     duration: 1
     earliestStart: 45
-    minimumPlayers: 40
+    minimumPlayers: 20
   - type: ImmovableRodRule

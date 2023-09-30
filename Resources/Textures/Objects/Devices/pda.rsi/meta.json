@@ -218,7 +218,10 @@
       "name": "pda-seniorphysician"
     },
     {
-      "name": "pda-seniorofficer"
+        "name": "pda-seniorofficer"
+    },
+    {
+        "name": "pda-investigator"
     }
   ]
 }

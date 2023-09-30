@@ -5,3 +5,6 @@ ent-HolofanProjector = атмос голопроектор
     .suffix = { "" }
 ent-HoloprojectorSecurity = проектор голобарьера
     .desc = Создает твёрдый но хрупкий барьер.
+ent-HoloprojectorSecurityEmpty = { ent-HoloprojectorSecurity }
+    .suffix = Пустой
+    .desc = { ent-HoloprojectorSecurity.desc }

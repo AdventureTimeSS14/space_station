@@ -1,7 +1,7 @@
 - type: entity
   save: false
   name: Shark McHands
-  parent: BaseMobOrganic
+  parent: BaseMobSpeciesOrganic
   id: BaseMobShark
   abstract: true
   components:

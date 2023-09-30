@@ -138,8 +138,8 @@
     partType: Leg
     symmetry: Left
   - type: MovementBodyPart
-    walkSpeed : 2.7
-    sprintSpeed : 4.9
+    walkSpeed : 2.6
+    sprintSpeed : 4.5
 
 - type: entity
   id: RightLegKobolt
@@ -157,8 +157,8 @@
     partType: Leg
     symmetry: Right
   - type: MovementBodyPart
-    walkSpeed : 2.7
-    sprintSpeed : 4.9
+    walkSpeed : 2.6
+    sprintSpeed : 4.5
 
 - type: entity
   id: LeftFootKobolt

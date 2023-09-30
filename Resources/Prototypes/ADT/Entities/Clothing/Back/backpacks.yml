@@ -76,3 +76,71 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Back/heart_backpack.rsi
+
+#рюкзак следователя
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackSecurity
+  id: ADTClothingBackpackInvestigatorFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalSecurity
+      - id: Flash
+      - id: Pen
+        amount: 2
+      - id: PaperOffice
+        amount: 20
+      - id: MaterialCardboard1
+        amount: 2
+      - id: BoxFolderBase
+        amount: 2
+      - id: BoxFolderRed
+        amount: 2
+      - id: BoxFolderBlue
+        amount: 2
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackDuffelSecurity
+  id: ADTClothingBackpackDuffelInvestigatorFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalSecurity
+      - id: Flash
+      - id: Pen
+        amount: 2
+      - id: PaperOffice
+        amount: 20
+      - id: MaterialCardboard1
+        amount: 2
+      - id: BoxFolderBase
+        amount: 2
+      - id: BoxFolderRed
+        amount: 2
+      - id: BoxFolderBlue
+        amount: 2
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackSatchelSecurity
+  id: ADTClothingBackpackSatchelInvestigatorFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalSecurity
+      - id: Flash
+      - id: Pen
+        amount: 2
+      - id: PaperOffice
+        amount: 20
+      - id: MaterialCardboard1
+        amount: 2
+      - id: BoxFolderBase
+        amount: 2
+      - id: BoxFolderRed
+        amount: 2
+      - id: BoxFolderBlue
+        amount: 2

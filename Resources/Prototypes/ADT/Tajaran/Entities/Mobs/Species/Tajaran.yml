@@ -1,7 +1,7 @@
 - type: entity
   save: false
   name: Tajaran McHands
-  parent: BaseMobOrganic
+  parent: BaseMobSpeciesOrganic
   id: BaseMobTajaran
   abstract: true
   components:
