@@ -189,7 +189,7 @@
   description: uplink-c4-desc
   productEntity: C4
   cost:
-    Telecrystal: 5
+    Telecrystal: 4
   categories:
   - UplinkExplosives
 
@@ -311,7 +311,7 @@
   description: uplink-mosin-ammo-desc
   productEntity: MagazineBoxLightRifle
   cost:
-    Telecrystal: 15
+    Telecrystal: 3
   categories:
   - UplinkAmmo
 
