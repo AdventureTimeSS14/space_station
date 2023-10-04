@@ -2,6 +2,7 @@
   id: ProteinCooking
   impact: Low
   minTemp: 347
+  scaled: false
   reactants:
     UncookedAnimalProteins:
       amount: 0.5
