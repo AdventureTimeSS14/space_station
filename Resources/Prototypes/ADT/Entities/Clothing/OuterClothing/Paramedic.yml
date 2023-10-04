@@ -1,0 +1,28 @@
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ADTClothingOuterParamedicVoidHardsuit
+  name: Пустотный скафандр Парамедика
+  description: Современное средство защиты для Парамедиков. Он представляет собой высокотехнологичный комплект, разработанный для обеспечения безопасности и эффективной работы специалистов в экстремальных условиях космоса. Скафандр обеспечивает надежную защиту от внешних факторов, таких как радиация, химические вещества и биологические угрозы. Он выполнен из прочных и устойчивых материалов.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/paramedic_hardsuit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/paramedic_hardsuit.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 1000
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: TemperatureProtection
+    coefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Heat: 0.90
+        Radiation: 0.75
+        Caustic: 0.5
+  - type: GroupExamine
+  - type: ToggleableClothing
+    clothingPrototype: ADTClothingHeadHelmetParamedicVoid

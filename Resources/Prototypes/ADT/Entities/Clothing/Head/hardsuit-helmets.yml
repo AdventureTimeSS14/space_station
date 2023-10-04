@@ -182,3 +182,25 @@
         Piercing: 0.4
         Heat: 0.4
         Radiation: 0
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadHelmetParamedicVoid
+  noSpawn: true
+  name: Шлем пустотного скафадра парамедика
+  description: Шлем к пустотному скафандру парамедика для выхода в космос. Не отличается большими защитными характеристиками
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/paramadic_helmet.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/paramadic_helmet.rsi
+  - type: PointLight
+    color: Blue
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Radiation: 0.95
+        Caustic: 0.85
