@@ -65,7 +65,7 @@
     Alcohol:
       effects:
       - !type:Drunk
-        boozePower: 30
+        boozePower: 20
   plantMetabolism:
   - !type:PlantAdjustToxins
     amount: -10
@@ -108,7 +108,7 @@
       effects:
       - !type:GenericStatusEffect
         key: Drunk
-        time: 10.0
+        time: 15.0
         type: Remove
       - !type:HealthChange
         conditions:
