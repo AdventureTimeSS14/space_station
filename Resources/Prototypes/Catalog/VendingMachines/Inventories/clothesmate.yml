@@ -1,6 +1,44 @@
 - type: vendingMachineInventory
   id: ClothesMateInventory
   startingInventory:
+    ADTClothingNeckDarkGreyCloak: 1
+    ADTClothingSandals: 3
+    ADTClothingFootWrapsWhite: 3
+    ADTClothingFootWrapsBlack: 3
+    ADTClothingFootWrapsHighWhite: 3
+    ADTClothingFootWrapsHighBlack: 3
+    ADTClothingUniformTurleneckBlack: 3
+    ADTClothingUniformTurleneckBlackWomen: 3
+    ADTClothingUniformTurleneckBlue: 3
+    ADTClothingUniformTurleneckBlueBlack: 3
+    ADTClothingUniformTurleneckBlueWomen: 3
+    ADTClothingUniformTurleneckGolub: 3
+    ADTClothingUniformTurleneckGolubBlack: 3
+    ADTClothingUniformTurleneckGolubWomen: 3
+    ADTClothingUniformTurleneckGreen: 3
+    ADTClothingUniformTurleneckGreenBlack: 3
+    ADTClothingUniformTurleneckGreenWomen: 3
+    ADTClothingUniformTurleneckOrange: 3
+    ADTClothingUniformTurleneckOrangeBlack: 3
+    ADTClothingUniformTurleneckOrangeWomen: 3
+    ADTClothingUniformTurleneckPurpur: 3
+    ADTClothingUniformTurleneckPurpurBlack: 3
+    ADTClothingUniformTurleneckPurpurWomen: 3
+    ADTClothingUniformTurleneckRed: 3
+    ADTClothingUniformTurleneckRedBlack: 3
+    ADTClothingUniformTurleneckRedWomen: 3
+    ADTClothingUniformTurleneckSalat: 3
+    ADTClothingUniformTurleneckSalatBlack: 3
+    ADTClothingUniformTurleneckSalatWomen: 3
+    ADTClothingUniformTurleneckWhite: 3
+    ADTClothingUniformTurleneckWhiteBlack: 3
+    ADTClothingUniformTurleneckWhiteWomen: 3
+    ADTClothingUniformTurleneckBlackSleeveless: 3
+    ADTClothingUniformTurleneckBlackWomenSleeveless: 3
+    ADTClothingUniformTurleneckWhiteSleeveless: 3
+    ADTClothingUniformTurleneckWhiteBlackSleeveless: 3
+    ADTClothingUniformTurleneckWhiteWomenSleeveless: 3
+    ADTClothingNeckGothicCloak: 1
     ClothingBackpack: 5
     ClothingBackpackDuffel: 5
     ClothingBackpackSatchel: 3
@@ -10,7 +48,6 @@
     ClothingHeadBandGreen: 2
     ClothingHeadBandRed: 2
     ClothingHeadBandSkull: 2
-    ADTClothingNeckDarkGreyCloak: 1
     ClothingUniformJumpsuitColorGrey: 3
     ClothingUniformJumpskirtColorGrey: 3
     ClothingUniformJumpsuitColorWhite: 3
@@ -47,10 +84,6 @@
     ClothingShoesColorOrange: 2
     ClothingShoesColorRed: 2
     ClothingShoesColorPurple: 2
-    ADTClothingFootWrapsWhite: 3
-    ADTClothingFootWrapsBlack: 3
-    ADTClothingFootWrapsHighWhite: 3
-    ADTClothingFootWrapsHighBlack: 3
     ClothingHeadHatGreysoft: 3
     ClothingHeadHatMimesoft: 3
     ClothingHeadHatBluesoft: 2
@@ -67,40 +100,7 @@
     ClothingNeckScarfStripedGreen: 3
     ClothingHeadHatFez: 2
     ClothingBeltStorageWaistbag: 3
-    ADTClothingSandals: 3
-    ADTClothingUniformTurleneckBlack: 3
-    ADTClothingUniformTurleneckBlackWomen: 3
-    ADTClothingUniformTurleneckBlue: 3
-    ADTClothingUniformTurleneckBlueBlack: 3
-    ADTClothingUniformTurleneckBlueWomen: 3
-    ADTClothingUniformTurleneckGolub: 3
-    ADTClothingUniformTurleneckGolubBlack: 3
-    ADTClothingUniformTurleneckGolubWomen: 3
-    ADTClothingUniformTurleneckGreen: 3
-    ADTClothingUniformTurleneckGreenBlack: 3
-    ADTClothingUniformTurleneckGreenWomen: 3
-    ADTClothingUniformTurleneckOrange: 3
-    ADTClothingUniformTurleneckOrangeBlack: 3
-    ADTClothingUniformTurleneckOrangeWomen: 3
-    ADTClothingUniformTurleneckPurpur: 3
-    ADTClothingUniformTurleneckPurpurBlack: 3
-    ADTClothingUniformTurleneckPurpurWomen: 3
-    ADTClothingUniformTurleneckRed: 3
-    ADTClothingUniformTurleneckRedBlack: 3
-    ADTClothingUniformTurleneckRedWomen: 3
-    ADTClothingUniformTurleneckSalat: 3
-    ADTClothingUniformTurleneckSalatBlack: 3
-    ADTClothingUniformTurleneckSalatWomen: 3
-    ADTClothingUniformTurleneckWhite: 3
-    ADTClothingUniformTurleneckWhiteBlack: 3
-    ADTClothingUniformTurleneckWhiteWomen: 3
-    ADTClothingUniformTurleneckBlackSleeveless: 3
-    ADTClothingUniformTurleneckBlackWomenSleeveless: 3
-    ADTClothingUniformTurleneckWhiteSleeveless: 3
-    ADTClothingUniformTurleneckWhiteBlackSleeveless: 3
-    ADTClothingUniformTurleneckWhiteWomenSleeveless: 3
-    ADTClothingNeckGothicCloak: 1
+    ClothingEyesGlasses: 6
   contrabandInventory:
     ClothingUniformJumpsuitTacticool: 1
     ClothingUniformJumpskirtTacticool: 1
-    #ADTClothingNeckSyndicateCloak: 1

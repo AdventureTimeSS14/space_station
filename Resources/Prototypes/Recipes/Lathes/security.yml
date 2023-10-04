@@ -249,6 +249,20 @@
     Steel: 500
 
 - type: latheRecipe
+  id: MagazinePistol
+  result: MagazinePistol
+  completetime: 5
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: MagazinePistolSubMachineGun
+  result: MagazinePistolSubMachineGun
+  completetime: 5
+  materials:
+    Steel: 300
+
+- type: latheRecipe
   id: MagazinePistolSubMachineGunTopMounted
   result: MagazinePistolSubMachineGunTopMounted
   completetime: 5
@@ -286,6 +300,13 @@
     Plastic: 300
 
 - type: latheRecipe
+  id: MagazineRifle
+  result: MagazineRifle
+  completetime: 5
+  materials:
+    Steel: 375
+
+- type: latheRecipe
   id: MagazineLightRifle
   result: MagazineLightRifle
   completetime: 5
@@ -321,6 +342,13 @@
   materials:
     Steel: 350
     Plastic: 600
+
+- type: latheRecipe
+  id: SpeedLoaderMagnum
+  result: SpeedLoaderMagnum
+  completetime: 5
+  materials:
+    Steel: 200
 
 - type: latheRecipe
   id: ShellShotgunIncendiary
@@ -392,67 +420,55 @@
   materials:
     Plastic: 950
 
-
-#- type: latheRecipe
-#  id: MagazineHeavyRifle
-#  result: MagazineRifle
-#  completetime: 2
-#  materials:
-#    Steel: 400
-
-#- type: latheRecipe
-#  id: BaseMagazinePistol
-#  result: MagazinePistol
-#  completetime: 2
-#  materials:
-#    Steel: 150
-
 - type: latheRecipe
-  id: MagazineRifle
-  result: MagazineRifle
+  id: ShellShotgunPractice
+  result: ShellShotgunPractice
   completetime: 2
   materials:
-    Steel: 825
+    Plastic: 20
 
 - type: latheRecipe
-  id: MagazineShotgun
-  result: MagazineShotgun
-  completetime: 2
+  id: MagazineBoxPistolPractice
+  result: MagazineBoxPistolPractice
+  completetime: 5
   materials:
-    Steel: 250
+    Plastic: 600
 
 - type: latheRecipe
-  id: MagazinePistolSubMachineGun
-  result: MagazinePistolSubMachineGun
-  completetime: 2
+  id: MagazineBoxMagnumPractice
+  result: MagazineBoxMagnumPractice
+  completetime: 5
   materials:
-    Steel: 900
+    Plastic: 1200
 
 - type: latheRecipe
-  id: MagazinePistol
-  result: MagazinePistol
-  completetime: 2
+  id: MagazineBoxLightRiflePractice
+  result: MagazineBoxLightRiflePractice
+  completetime: 5
   materials:
-    Steel: 400
-
-- type: latheRecipe
-  id: SpeedLoaderMagnum
-  result: SpeedLoaderMagnum
-  completetime: 2
-  materials:
-    Steel: 700
-
-- type: latheRecipe
-  id: SpeedLoader357
-  result: SpeedLoader357
-  completetime: 2
-  materials:
-    Steel: 1500
-
-- type: latheRecipe
-  id: SpeedLoader357Rubber
-  result: SpeedLoader357Rubber
-  completetime: 2
-  materials:
-    Steel: 700
     Plastic: 1000
+
+- type: latheRecipe
+  id: MagazineBoxRiflePractice
+  result: MagazineBoxRiflePractice
+  completetime: 5
+  materials:
+    Plastic: 900
+
+- type: latheRecipe
+  id: WeaponLaserCarbinePractice
+  result: WeaponLaserCarbinePractice
+  completetime: 6
+  materials:
+    Steel: 1800
+    Glass: 400
+    Plastic: 250
+
+- type: latheRecipe
+  id: WeaponDisablerPractice
+  result: WeaponDisablerPractice
+  completetime: 4
+  materials:
+    Steel: 500
+    Glass: 100
+    Plastic: 200
