@@ -169,8 +169,9 @@
   - type: EnergySword
     litDamageBonus:
         types:
-            Slash: 22
+            Slash: 30
             Blunt: -4.5
+            Structural: 45
     litDisarmMalus: 0.7
   - type: MeleeWeapon
     attackRate: 1.3

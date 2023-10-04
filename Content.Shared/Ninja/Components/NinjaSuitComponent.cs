@@ -23,10 +23,10 @@ public sealed partial class NinjaSuitComponent : Component
     public float PassiveWattage = 0.36f;
 
     /// <summary>
-    /// Battery charge used while cloaked, stacks with passive. Will last 200 seconds while cloaked on a small-capacity power cell.
+    /// Battery charge used while cloaked, stacks with passive. Will last 100-120 seconds while cloaked on a small-capacity power cell.
     /// </summary>
     [DataField("cloakWattage")]
-    public float CloakWattage = 3.20f;
+    public float CloakWattage = 2.85f;
 
     /// <summary>
     /// Sound played when a ninja is hit while cloaked.
