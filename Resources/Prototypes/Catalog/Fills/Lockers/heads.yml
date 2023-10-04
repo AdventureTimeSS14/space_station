@@ -245,6 +245,7 @@
       - id: ClothingUnderwearBottomPantiesCMO
       - id: ClothingUnderwearTopBraCMO
       # Sirena-Underwear-End
+      - id: ADTBriefcaseBrownHikingCmo
 
 - type: entity
   id: LockerChiefMedicalOfficerFilled
@@ -281,6 +282,7 @@
       - id: ClothingUnderwearBottomPantiesCMO
       - id: ClothingUnderwearTopBraCMO
       # Sirena-Underwear-End
+      - id: ADTBriefcaseBrownHikingCmo
 
 - type: entity
   id: LockerResearchDirectorFilledHardsuit
