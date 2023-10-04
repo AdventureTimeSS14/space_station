@@ -266,7 +266,6 @@
 - type: reaction
   id: Impedrezene
   minTemp: 370
-  scaled: false
   reactants:
     Mercury:
       amount: 1
@@ -303,7 +302,6 @@
 - type: reaction
   id: MindbreakerToxin
   minTemp: 370
-  scaled: false
   reactants:
     Silicon:
       amount: 1
@@ -377,7 +375,6 @@
   id: Sigynate
   impact: Medium
   minTemp: 370
-  scaled: false
   reactants:
     SodiumCarbonate:
       amount: 1

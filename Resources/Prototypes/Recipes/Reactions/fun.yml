@@ -74,7 +74,6 @@
 - type: reaction
   id: SpaceGlue
   minTemp: 370
-  scaled: false
   reactants:
     SpaceLube:
       amount: 1
@@ -98,7 +97,6 @@
   impact: Low
   quantized: true
   minTemp: 374
-  scaled: false
   reactants:
     Oil:
       amount: 5

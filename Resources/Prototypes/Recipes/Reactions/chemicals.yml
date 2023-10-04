@@ -259,7 +259,6 @@
   id: Desoxyephedrine
   impact: Medium
   minTemp: 370
-  scaled: false
   reactants:
     Ephedrine:
       amount: 1
