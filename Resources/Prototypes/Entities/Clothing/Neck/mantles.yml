@@ -19,7 +19,7 @@
     sprite: Clothing/Neck/mantles/cemantle.rsi
   - type: Clothing
     sprite: Clothing/Neck/mantles/cemantle.rsi
-    
+
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckMantleCMO
@@ -30,7 +30,7 @@
     sprite: Clothing/Neck/mantles/cmomantle.rsi
   - type: Clothing
     sprite: Clothing/Neck/mantles/cmomantle.rsi
-    
+
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckMantleHOP
@@ -41,7 +41,7 @@
     sprite: Clothing/Neck/mantles/hopmantle.rsi
   - type: Clothing
     sprite: Clothing/Neck/mantles/hopmantle.rsi
-    
+
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckMantleHOS
@@ -52,7 +52,7 @@
     sprite: Clothing/Neck/mantles/hosmantle.rsi
   - type: Clothing
     sprite: Clothing/Neck/mantles/hosmantle.rsi
-    
+
 - type: entity # Corvax-Resprite: Old mantle renamed and saved as that new entity
   parent: ClothingNeckBase
   id: ClothingNeckMantleHOSShoulder
@@ -63,7 +63,7 @@
     sprite: Clothing/Neck/mantles/hosmantle_shoulder.rsi
   - type: Clothing
     sprite: Clothing/Neck/mantles/hosmantle_shoulder.rsi
-    
+
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckMantleRD
@@ -74,14 +74,3 @@
     sprite: Clothing/Neck/mantles/rdmantle.rsi
   - type: Clothing
     sprite: Clothing/Neck/mantles/rdmantle.rsi
-
-- type: entity
-  parent: ClothingNeckBase
-  id: ClothingNeckMantleQM
-  name: quartermaster's mantle
-  description: For the master of goods and materials to rule over the department, a befitting mantle to show off superiority!
-  components:
-  - type: Sprite
-    sprite: Clothing/Neck/mantles/qmmantle.rsi
-  - type: Clothing
-    sprite: Clothing/Neck/mantles/qmmantle.rsi  
