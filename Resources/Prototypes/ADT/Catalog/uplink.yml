@@ -58,7 +58,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Snipers/heavy_sniper.rsi, state: base }
   productEntity: ADTClothingBackpackDuffelSyndicateFilledHristov
   cost:
-    Telecrystal: 15
+    Telecrystal: 25
   categories:
   - UplinkBundles
   conditions:

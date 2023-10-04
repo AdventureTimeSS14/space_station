@@ -111,3 +111,18 @@
     sprite: ADT/Clothing/Head/Hats/investigator_cap.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/investigator_cap.rsi
+
+#кепка Мендозы
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsMendozaCap
+  name: Mendoza`s cap
+  description: The purple cap of a certain Alexei Mendoza. At the back is a large cross drawn with a marker. Next to it are fourteen more of the same small crosses. The owner of the cap jokes that this is the number of his escapes from brig.
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/mendosa_soft.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/mendosa_soft.rsi
