@@ -15,6 +15,7 @@
   - HotplateMachineCircuitboard
   - ChemicalPayload
   - ClothingEyesGlassesChemical
+  - Jug
 
 - type: technology
   id: SurgicalTools
@@ -73,20 +74,6 @@
   - VaccinatorMachineCircuitboard
   - DiagnoserMachineCircuitboard
 
-#- type: technology
-#  id: HUD
-#  name: research-technology-hud
-#  icon:
-#    sprite: Clothing/Eyes/Hud/sec.rsi
-#    state: icon
-#  discipline: Biochemical
-#  tier: 1
-#  cost: 2500
-#  recipeUnlocks:
-#  - ClothingEyesHudMedical
-#  #- ClothingEyesHudSecurity Error: /Prototypes/Research/biochemical.yml(72,5)  PrototypeID ClothingEyesHudSecurity for type Content.Shared.Research.Prototypes.LatheRecipePrototype at Line: 72, Col: 5 not found
-#  # https://github.com/xtray85/space-station-14/actions/runs/5333627632/jobs/9664343159
-
 # Tier 2
 
 - type: technology
@@ -115,6 +102,7 @@
   - ChemDispenserMachineCircuitboard
   - DnaSyringeGun
   - Syringecartridge
+  - BorgModuleAdvancedTreatment
   technologyPrerequisites:
   - Chemistry
 
@@ -156,7 +144,7 @@
   tier: 3
   cost: 15000
   recipeUnlocks:
-  - CloningPodMachineCircuitboard
-  - MedicalScannerMachineCircuitboard
-  - CloningConsoleComputerCircuitboard
-  - BiomassReclaimerMachineCircuitboard
+    - CloningPodMachineCircuitboard
+    - MedicalScannerMachineCircuitboard
+    - CloningConsoleComputerCircuitboard
+    - BiomassReclaimerMachineCircuitboard

@@ -19,7 +19,6 @@ public sealed partial class ThirstComponent : Component
     [AutoNetworkedField]
     public float ActualDecayRate;
 
-    // Thirst
     [DataField, AutoNetworkedField]
     public ThirstThreshold CurrentThirstThreshold;
 
@@ -36,7 +35,7 @@ public sealed partial class ThirstComponent : Component
     /// </summary>
     [DataField("nextUpdateTime", customTypeSerializer: typeof(TimeOffsetSerializer)), ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]
-    public TimeSpan NextUpdateTime = TimeSpan.MaxValue;
+    public TimeSpan NextUpdateTime;
 
     /// <summary>
     /// The time between each update.
@@ -46,7 +45,7 @@ public sealed partial class ThirstComponent : Component
     public TimeSpan UpdateRate = TimeSpan.FromSeconds(1);
 
     [DataField("thresholds")]
-    [AutoNetworkedField(cloneData: true)]
+    [AutoNetworkedField]
     public Dictionary<ThirstThreshold, float> ThirstThresholds = new()
     {
         {ThirstThreshold.OverHydrated, 600.0f},
