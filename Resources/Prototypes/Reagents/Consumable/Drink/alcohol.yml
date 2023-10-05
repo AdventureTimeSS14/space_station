@@ -27,7 +27,7 @@
   parent: BaseAlcohol
   desc: reagent-desc-ale
   physicalDesc: reagent-physical-desc-bubbly
- #flavor: ale
+  flavor: ale
   color: "#663100"
   recognizable: true
   metamorphicSprite:
@@ -40,7 +40,7 @@
   parent: BaseAlcohol
   desc: reagent-desc-beer
   physicalDesc: reagent-physical-desc-bubbly
- #flavor: beer
+  flavor: beer
   color: "#cfa85f"
   recognizable: true
   metamorphicSprite:

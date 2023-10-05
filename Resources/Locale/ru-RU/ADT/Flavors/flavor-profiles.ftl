@@ -28,3 +28,6 @@ flavor-complex-ADTCherryExquisiteWineFlavor = как сладкая вишнёв
 
 flavor-complex-ADTBuckwheatSolidsFlavor = как сухая гречка
 flavor-complex-ADTBuckwheat = как гречневая каша
+
+flavor-base-adtpoppy = маково
+flavor-base-adtvanilla = ванильно
