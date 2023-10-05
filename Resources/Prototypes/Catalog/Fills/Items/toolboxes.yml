@@ -6,6 +6,7 @@
   components:
   - type: StorageFill
     contents:
+      - id: MiniFireExtinguisher
       - id: CrowbarRed
       - id: ClothingMaskBreath
         amount: 2
