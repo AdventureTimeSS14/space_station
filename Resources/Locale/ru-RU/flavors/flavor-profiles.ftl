@@ -164,7 +164,7 @@ flavor-complex-juice = как сок
 
 flavor-complex-rocksandstones = как скалы и камни
 flavor-complex-water = как вода
-flavor-complex-beer = как моча
+flavor-complex-beer = как освежающее пиво
 flavor-complex-ale = как хлеб
 flavor-complex-cola = как кола
 flavor-complex-vodka = как забродившее зерно
@@ -190,7 +190,7 @@ flavor-complex-singulo = как бездонная дыра
 flavor-complex-syndie-bomb = как горький виски
 flavor-complex-tequila-sunrise = как мексиканское утро
 flavor-complex-irish-coffee = как пробуждение алкоголика
-flavor-complex-iced-beer = как ледяная моча
+flavor-complex-iced-beer = как ледяное пиво
 flavor-complex-gargle-blaster = как будто кто-то ударил вас по голове золотым слитком, покрытым лимоном.
 flavor-complex-bloody-mary = как тяжелое похмелье
 flavor-complex-beepsky = как нефть и виски

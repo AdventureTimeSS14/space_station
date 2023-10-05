@@ -3,7 +3,7 @@
 - type: entity
   parent: PosterBase
   id: ADTPosterLegitGreatFood
-  name: "Great Food"
+  name: Great Food
   description: "A poster advertising high-quality food from the station's kitchen."
   components:
   - type: Sprite
@@ -12,7 +12,7 @@
 - type: entity
   parent: PosterBase
   id: ADTPosterLegitTurnOnSensors
-  name: "Turn on the sensors"
+  name: Turn on the sensors
   description: "A reminder from the paramedic to everyone at the station - turn on the sensors so that you are quickly found in case of trouble."
   components:
   - type: Sprite
@@ -21,18 +21,29 @@
 - type: entity
   parent: PosterBase
   id: ADTPosterLegitOktoberfest
-  name: "Oktoberfest!"
+  name: Oktoberfest!
   description: "A poster with a tayaran advertising the traditional October beer festival."
+  suffix: Oktoberfest
   components:
   - type: Sprite
     state: poster_adtoktoberfest_legit #Спрайт от Празата
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterLegitOktoberfest2
+  name: Oktoberfest!
+  description: "A poster with a beer mug advertising the traditional October beer festival."
+  suffix: Oktoberfest
+  components:
+  - type: Sprite
+    state: poster_adtoktoberfest2_legit #Спрайт от Празата
 
 #контрабандные постеры
 
 - type: entity
   parent: PosterBase
   id: ADTPosterContrabandLustTayaran
-  name: "Lusty Tayaran"
+  name: Lusty Tayaran
   description: "A poster with tayaran women of attractive appearance and in a provocative suit. Tayarans can also be beautiful!"
   components:
   - type: Sprite
@@ -41,7 +52,7 @@
 - type: entity
   parent: PosterBase
   id: ADTPosterContrabandFearThem
-  name: "Fear Them!"
+  name: Fear Them!
   description: "An elite squad of nuclear operatives will burn you to the ground. Leave NanoTrasen before it's too late!"
   components:
   - type: Sprite
@@ -50,7 +61,7 @@
 - type: entity
   parent: PosterBase
   id: ADTPosterContrabandSilence
-  name: "Don`t takl!"
+  name: Don`t takl!
   description: "The Syndicate warns mime agents that you can be terribly tortured for divulging secrets."
   components:
   - type: Sprite

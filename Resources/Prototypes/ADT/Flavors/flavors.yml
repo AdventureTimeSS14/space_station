@@ -132,3 +132,13 @@
   id: ADTBuckwheat
   flavorType: Complex
   description: flavor-complex-ADTBuckwheat
+
+- type: flavor
+  id: adt_poppy
+  flavorType: Base
+  description: flavor-base-adtpoppy
+
+- type: flavor
+  id: adt_vanilla
+  flavorType: Base
+  description: flavor-base-adtvanilla
