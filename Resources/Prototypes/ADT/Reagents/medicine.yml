@@ -1,40 +1,40 @@
-- type: reagent
-  id: ADTMZessulsBlood
-  name: reagent-name-zessul-blood
-  group: Medicine
-  desc: reagent-desc-zessul-blood
-  physicalDesc: reagent-physical-desc-bloody
-  #flavor: metallic
-  color: "#800000"
-  metabolisms:
-    Medicine:
-      effects:
-      - !type:HealthChange
-        damage:
-          groups:
-            Brute: -1
-            Burn: -1
-          types:
-            Cold: -1
+#- type: reagent
+#  id: ADTMZessulsBlood
+#  name: reagent-name-zessul-blood
+#  group: Medicine
+#  desc: reagent-desc-zessul-blood
+#  physicalDesc: reagent-physical-desc-bloody
+#  #flavor: metallic
+#  color: "#800000"
+#  metabolisms:
+#    Medicine:
+#      effects:
+#      - !type:HealthChange
+#        damage:
+#          groups:
+#            Brute: -1
+#            Burn: -1
+#          types:
+#            Cold: -1
 
-- type: reagent
-  id: SalineGlucoseSolution
-  name: reagent-name-salineglucosesolution
-  group: Medicine
-  desc: reagent-desc-salineglucosesolution
-  physicalDesc: reagent-physical-desc-salineglucosesolution
-  #flavor: somesalty
-  color: "#75b1f0"
-  metabolisms:
-    Medicine:
-      effects:
-      - !type:HealthChange
-        damage:
-          groups:
-            Burn: -0.5
-            Brute: -0.5
-          types:
-            Bloodloss: -2
+#- type: reagent     # честно не знаю, зачем это в файлах, если никак не достать, но отчётливо видно в гайдах.
+#  id: SalineGlucoseSolution
+#  name: reagent-name-salineglucosesolution
+#  group: Medicine
+#  desc: reagent-desc-salineglucosesolution
+#  physicalDesc: reagent-physical-desc-salineglucosesolution
+#  #flavor: somesalty
+#  color: "#75b1f0"
+#  metabolisms:
+#    Medicine:
+#      effects:
+#      - !type:HealthChange
+#        damage:
+#          groups:
+#            Burn: -0.5
+#            Brute: -0.5
+#          types:
+#            Bloodloss: -2
 
 - type: flavor
   id: somesalty
@@ -42,7 +42,7 @@
   description: flavor-complex-somesalty
 
 #- type: reaction
-#  id: SalineGlucoseSolution
+#  id: SalineGlucoseSolution #причём здесь же и рецепт. Не ясно, в общем.
 #  reactants:
 #    Water:
 #      amount: 1
@@ -112,11 +112,6 @@
         damage:
           types:
             Slash: -0.25
-      - !type:PopupMessage
-        type: Local
-        visualType: Small
-        messages: [ "medicine-effect-slash" ]
-        probability: 0.05
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -125,6 +120,14 @@
         damage:
           types:
             Slash: -1
+      - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 0.5
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-slash" ]
+        probability: 0.05
 
 - type: reagent
   id: ADTMPeroHydrogen #литералли перекись водорода, но круче. Пероводород.
@@ -141,11 +144,6 @@
         damage:
           types:
             Piercing: -0.25
-      - !type:PopupMessage
-        type: Local
-        visualType: Small
-        messages: [ "medicine-effect-piercing" ]
-        probability: 0.05
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -154,6 +152,14 @@
         damage:
           types:
             Piercing: -1
+      - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 0.5
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-piercing" ]
+        probability: 0.05
 
 # Dermaline.
 - type: reagent
@@ -167,6 +173,11 @@
   metabolisms:
     Medicine:
       effects:
+      - !type:AdjustTemperature
+        conditions:
+        - !type:Temperature
+          min: 308.15
+        amount: -1500
       - !type:PopupMessage
         type: Local
         visualType: Small
@@ -196,11 +207,6 @@
         damage:
           types:
             Shock: -0.25
-      - !type:PopupMessage
-        type: Local
-        visualType: Small
-        messages: [ "medicine-effect-shock" ]
-        probability: 0.05
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -209,6 +215,14 @@
         damage:
           types:
             Shock: -1
+      - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 0.5
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-shock" ]
+        probability: 0.05
 
 #Dylovene
 # У этилредоксразина будет больше смысла в паре с диловеном, так что тут только один препарат.
@@ -223,15 +237,6 @@
   metabolisms:
     Medicine:
       effects:
-      - !type:PopupMessage
-        type: Local
-        visualType: Small
-        messages: [ "medicine-effect-major-stress" ]
-        probability: 0.1
-        conditions:
-        - !type:ReagentThreshold
-          reagent: Dylovene
-          min: 0.5
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -246,6 +251,15 @@
         - !type:ReagentThreshold
           reagent: Dylovene
           min: 0.5
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Dylovene
+          min: 0.5
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-major-stress" ]
+        probability: 0.1
 
 #DexalinPlus
 # Баффы очень маленькие, поскольку я хочу откреститься подальше от старого дексалина
@@ -265,6 +279,9 @@
           types:
             Asphyxiation: -0.25
       - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 0.5
         type: Local
         visualType: Small
         messages: [ "medicine-effect-asphyxia" ]
@@ -292,6 +309,9 @@
       - !type:ModifyBleedAmount
         amount: -0.5
       - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 0.5
         type: Local
         visualType: Small
         messages: [ "medicine-effect-usual" ]
@@ -304,3 +324,50 @@
         damage:
           types:
             Bloodloss: -0.5
+
+#а теперь маленькие, простенькие препаратики, которые предложили в дискорде.
+
+- type: reagent
+  id: ADTMAgolatine #Аголатин, изменённое название антидепрессанта Агомелатина.
+  name: reagent-name-agolatine
+  group: Medicine
+  desc: reagent-desc-agolatine
+  physicalDesc: reagent-physical-desc-opaque
+  #flavor: medicine
+  color: "#f7ce5c"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-emotions" ]
+        probability: 0.04
+
+- type: reagent
+  id: ADTMHaloperidol #Антипсихотик, работает чисто как в Баратравме.
+  name: reagent-name-haloperidol
+  group: Medicine
+  desc: reagent-desc-haloperidol
+  physicalDesc: reagent-physical-desc-opaque
+  #flavor: medicine
+  color: "#f7ce5c"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows 
+        type: Remove
+        time: 10
+      - !type:GenericStatusEffect
+        key: Drunk
+        time: 5.0 #Некоторые наркотические приколы включают в себя компонент опьянения. В любом случае он ниже, чем у этилредоксразина в 2 раза.
+        type: Remove
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: 
+        - medicine-effect-antipsychotic
+        - medicine-effect-emotions
+        probability: 0.04

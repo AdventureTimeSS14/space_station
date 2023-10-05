@@ -53,6 +53,9 @@
         messages: [ "generic-reagent-effect-nauseous" ]
         probability: 0.2
       - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          max: 20
         type: Local
         visualType: Small
         messages: [ "medicine-effect-usual" ]
@@ -108,7 +111,7 @@
       effects:
       - !type:GenericStatusEffect
         key: Drunk
-        time: 15.0
+        time: 10.0
         type: Remove
       - !type:HealthChange
         conditions:
@@ -162,10 +165,18 @@
         damage:
           groups:
             Brute: -2
+      - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 5
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-usual" ]
+        probability: 0.05
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 15
+          min: 15.1
         damage:
           types:
             Asphyxiation: 0.5
@@ -178,12 +189,15 @@
       - !type:Jitter
         conditions:
         - !type:ReagentThreshold
-          min: 15
+          min: 15.1
       - !type:PopupMessage
+        conditions:
+        - !type:ReagentThreshold
+          min: 15.1
         type: Local
         visualType: Small
-        messages: [ "medicine-effect-usual" ]
-        probability: 0.05
+        messages: [ "medicine-effect-stress" ]
+        probability: 0.2
     Alcohol:
       effects:
       - !type:Drunk
@@ -254,6 +268,14 @@
             Heat: -1.5
             Shock: -1.5
             Cold: -1.5
+      - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 5
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-usual" ]
+        probability: 0.05
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -269,10 +291,13 @@
         - !type:ReagentThreshold
           min: 10
       - !type:PopupMessage
+        conditions:
+        - !type:ReagentThreshold
+          min: 10
         type: Local
         visualType: Small
-        messages: [ "medicine-effect-usual" ]
-        probability: 0.05
+        messages: [ "medicine-effect-stress" ]
+        probability: 0.06
 
 - type: reagent
   id: Dexalin
@@ -299,6 +324,9 @@
             Asphyxiation: 3
             Cold: 1
       - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 5
         type: Local
         visualType: Small
         messages: [ "medicine-effect-asphyxia" ]
@@ -336,6 +364,9 @@
             Asphyxiation: 5
             Cold: 3
       - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 5
         type: Local
         visualType: Small
         messages: [ "medicine-effect-asphyxia" ]
@@ -403,6 +434,9 @@
         time: 0.75
         type: Remove
       - !type:PopupMessage
+        conditions:
+        - !type:MobStateCondition
+          mobstate: Critical
         type: Local
         visualType: Small
         messages: 
@@ -426,6 +460,14 @@
         damage:
           types:
             Radiation: -1
+      - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 5
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-usual" ]
+        probability: 0.05
       - !type:ChemVomit
         probability: 0.02
       - !type:HealthChange
@@ -440,10 +482,13 @@
         - !type:ReagentThreshold
           min: 30
       - !type:PopupMessage
+        conditions:
+        - !type:ReagentThreshold
+          min: 30
         type: Local
         visualType: Small
-        messages: [ "medicine-effect-usual" ]
-        probability: 0.05
+        messages: [ "medicine-effect-stress" ]
+        probability: 0.06
 
 - type: reagent
   id: Ipecac
@@ -482,6 +527,9 @@
         amount: -0.25
       - !type:PopupMessage
         type: Local
+        conditions:
+        - !type:MobStateCondition
+          mobstate: Critical
         visualType: Small
         messages: [ "medicine-effect-asphyxia" ]
         probability: 0.05
@@ -519,6 +567,9 @@
         - !type:ReagentThreshold
           min: 25
       - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 5
         type: Local
         visualType: Small
         messages: [ "medicine-effect-usual" ]
@@ -708,7 +759,11 @@
           types:
             Caustic: -5
       - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 5
         type: Local
+
         visualType: Small
         messages: [ "medicine-effect-usual" ]
         probability: 0.05
@@ -736,7 +791,11 @@
         reagent: Amatoxin
         amount: -3
       - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 5
         type: Local
+
         visualType: Small
         messages: [ "medicine-effect-usual" ]
         probability: 0.05
@@ -813,6 +872,9 @@
             Shock: -0.33
             Cold: -0.33
       - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 5
         type: Local
         visualType: Small
         messages: [ "medicine-effect-usual" ]
@@ -857,6 +919,9 @@
       - !type:ModifyBloodLevel
         amount: 3
       - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 5
         type: Local
         visualType: Small
         messages: [ "medicine-effect-usual" ]
@@ -908,7 +973,7 @@
         type: Local
         visualType: Small
         messages: [ "medicine-effect-stress" ]
-        probability: 0.05
+        probability: 0.06
 
 - type: reagent
   id: Oculine
@@ -1035,6 +1100,9 @@
           min: 30
         probability: 0.02
       - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 5
         type: Local
         visualType: Small
         messages: [ "medicine-effect-usual" ]

@@ -327,10 +327,11 @@
 
 - type: reaction
   id: Charcoal
+  minTemp: 370
   reactants:
     Carbon:
       amount: 1
-    Ash:
+    Nitrogen:
       amount: 1
   products:
     Charcoal: 1
