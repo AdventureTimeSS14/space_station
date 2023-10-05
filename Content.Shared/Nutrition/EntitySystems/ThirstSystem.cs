@@ -48,7 +48,7 @@ public sealed class ThirstSystem : EntitySystem
         UpdateEffects(uid, component);
 
         TryComp(uid, out MovementSpeedModifierComponent? moveMod);
-           _movement.RefreshMovementSpeedModifiers(uid, moveMod);
+            _movement.RefreshMovementSpeedModifiers(uid, moveMod);
     }
 
     private void OnRefreshMovespeed(EntityUid uid, ThirstComponent component, RefreshMovementSpeedModifiersEvent args)
@@ -182,7 +182,6 @@ public sealed class ThirstSystem : EntitySystem
 
             thirst.CurrentThirstThreshold = calculatedThirstThreshold;
             UpdateEffects(uid, thirst);
-
         }
     }
 

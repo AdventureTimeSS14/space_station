@@ -92,6 +92,9 @@
       - PosterContrabandEnlistGorlex
       - PosterContrabandInterdyne
       - PosterContrabandWaffleCorp
+      - ADTPosterContrabandLustTayaran # Спрайт от Празата
+      - ADTPosterContrabandFearThem # Спрайт от Иллюми
+      - ADTPosterContrabandSilence # Спрайт от Иллюми
     chance: 1
 
 - type: entity
@@ -149,4 +152,7 @@
       - PosterLegitPeriodicTable
       - PosterLegitRenault
       - PosterLegitNTTGC
+      - ADTPosterLegitGreatFood #спрайт от Празата
+      - ADTPosterLegitTurnOnSensors #спрайт от Празата
+      - ADTPosterLegitOktoberfest #спрайт от Празата
     chance: 1

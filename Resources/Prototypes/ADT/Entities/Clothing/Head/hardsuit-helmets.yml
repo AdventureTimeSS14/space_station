@@ -182,3 +182,26 @@
         Piercing: 0.4
         Heat: 0.4
         Radiation: 0
+
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadHelmetParamedicVoid
+  noSpawn: true
+  name: helmet of a paramedic's spacesuit
+  description: Helmet to a paramedic's void spacesuit for going into space. Does not differ in large protective characteristics.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/paramedic_helmet.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/paramedic_helmet.rsi
+  - type: PointLight
+    color: Blue
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Radiation: 0.95
+        Caustic: 0.85

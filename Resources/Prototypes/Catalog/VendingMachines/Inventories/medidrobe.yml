@@ -16,8 +16,9 @@
     ClothingOuterWinterPara: 2
     ClothingOuterCoatParamedicWB: 2
     ClothingHeadHatParamedicsoft: 2
-    ClothingHeadHelmetVoidParamed: 1
-    ClothingOuterHardsuitVoidParamed: 1
+    ADTClothingOuterParamedicVoidHardsuit: 1
+    #ClothingHeadHelmetVoidParamed: 1
+    #ClothingOuterHardsuitVoidParamed: 1
     ClothingOuterHospitalGown: 5
     UniformScrubsColorGreen: 4
     UniformScrubsColorBlue: 4
