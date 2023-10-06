@@ -74,7 +74,7 @@
   desc: reagent-desc-ketchunaise
   physicalDesc: reagent-physical-desc-saucey
   #I love it when people just make up fake prototypes.
-  flavor: piquant
+  #flavor: piquant
   color: "#fba399"
   recognizable: true
 

@@ -100,7 +100,7 @@
       drink:
         maxVol: 50
         reagents:
-        - ReagentId: ADTLuckyJonny
+        - ReagentId: ADTLuckyJonnyBeer
           Quantity: 50
   - type: Sprite
     sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
@@ -118,7 +118,7 @@
       drink:
         maxVol: 50
         reagents:
-        - ReagentId: ADTSecUnfiltered
+        - ReagentId: ADTSecUnfilteredBeer
           Quantity: 50
   - type: Sprite
     sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
