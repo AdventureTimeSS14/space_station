@@ -25,6 +25,7 @@ stages:
 pre-job:
   stage: pre_installs
   script:
+    - export GITHUB_ACTIONS=true
     - git submodule update --init --recursive
     - export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
     - /home/gitlab-runner/.dotnet/dotnet restore
