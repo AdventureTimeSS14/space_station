@@ -80,8 +80,10 @@ def install_hooks():
 
     print("Hooks need updating.")
 
-    hooks_target_dir = "hooks"
+    hooks_target_dir = Path("..")/".git"/"hooks"
     hooks_source_dir = Path("hooks")
+
+    os
 
     # Clear entire tree since we need to kill deleted files too.
     for filename in os.listdir(str(hooks_target_dir)):
