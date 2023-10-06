@@ -1,0 +1,19 @@
+- type: cargoProduct
+  id: ADTFunOktoberfestCloth
+  icon:
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/Oktoberfest/oktoberfest_dirndlshortgreen.rsi
+    state: icon
+  product: ADTCrateOktoberfestCloth
+  cost: 750
+  category: Fun
+  group: market
+
+- type: cargoProduct
+  id: ADTFunOktoberFestMug
+  icon:
+    sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
+    state: classicpaulaner_mug
+  product: ADTCrateOktoberfestMug
+  cost: 200
+  category: Fun
+  group: market

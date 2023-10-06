@@ -1,0 +1,101 @@
+#ADT Октоберфест
+
+- type: cargoProduct
+  id: ADTCargoOktoberfestSnack
+  icon:
+    sprite: ADT/Objects/Consumable/Food/oktoberfest.rsi
+    state: brezel_salt
+  product: ADTCrateOktoberfestSnack
+  cost: 1500
+  category: Food
+  group: market
+
+- type: cargoProduct
+  id: ADTCargoBeerTank
+  icon:
+    sprite: ADT/Structures/Storage/beertank.rsi
+    state: beer
+  product: ADTBeerTank
+  cost: 300
+  category: Food
+  group: market
+
+- type: cargoProduct
+  id: ADTCargoGoldenAleTank
+  icon:
+    sprite: ADT/Structures/Storage/beertank.rsi
+    state: goldenale
+  product: ADTBeerTankGoldenAle
+  cost: 300
+  category: Food
+  group: market
+
+- type: cargoProduct
+  id: ADTCargoSausageBeerTank
+  icon:
+    sprite: ADT/Structures/Storage/beertank.rsi
+    state: sausagebeer
+  product: ADTBeerTankSausage
+  cost: 300
+  category: Food
+  group: market
+
+- type: cargoProduct
+  id: ADTCargoTechnoBeerTank
+  icon:
+    sprite: ADT/Structures/Storage/beertank.rsi
+    state: technobeer
+  product: ADTBeerTankTechno
+  cost: 300
+  category: Food
+  group: market
+
+- type: cargoProduct
+  id: ADTCargoPaulanerTank
+  icon:
+    sprite: ADT/Structures/Storage/beertank.rsi
+    state: paulanerbeer
+  product: ADTBeerTankClassicPaulaner
+  cost: 300
+  category: Food
+  group: market
+
+- type: cargoProduct
+  id: ADTCargoLivseyBeerTank
+  icon:
+    sprite: ADT/Structures/Storage/beertank.rsi
+    state: livseybeer
+  product: ADTBeerTankLivsey
+  cost: 300
+  category: Food
+  group: market
+
+- type: cargoProduct
+  id: ADTCargoLuckyJonnyBeerTank
+  icon:
+    sprite: ADT/Structures/Storage/beertank.rsi
+    state: luckyjonnybeer
+  product: ADTBeerTankLuckyJonny
+  cost: 300
+  category: Food
+  group: market
+
+- type: cargoProduct
+  id: ADTCargoSecUnfilteredBeerTank
+  icon:
+    sprite: ADT/Structures/Storage/beertank.rsi
+    state: secunfilteredbeer
+  product: ADTBeerTankSecUnfiltered
+  cost: 300
+  category: Food
+  group: market
+
+- type: cargoProduct
+  id: ADTCargoGlyphidStoutTank
+  icon:
+    sprite: ADT/Structures/Storage/beertank.rsi
+    state: glyphidstout
+  product: ADTBeerTankGlyphidStout
+  cost: 300
+  category: Food
+  group: market

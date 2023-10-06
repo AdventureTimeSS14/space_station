@@ -84,3 +84,15 @@ ent-ADTChurchBenchMiddle = церковная скамейка
 ent-ADTChurchBenchRightSide = церковная скамейка
     .suffix = Правая часть
     .desc = Простая, но красивая.
+
+ent-ADTTableOktoberfest = стол для Октоберфеста
+    .suffix = Октоберфест
+    .desc = Стол, способный выдержать очень много выпивки и закусок.
+
+ent-ADTTableOktoberfestOrange = стол с оранжевой скатертью для Октоберфеста
+    .suffix = Октоберфест
+    .desc = Стол, способный выдержать очень много выпивки и закусок.
+
+ent-ADTOktoberfestChair = роскошный праздничный стул
+    .suffix = Октоберфест
+    .desc = Комфортнейший стул для празндика пива.
