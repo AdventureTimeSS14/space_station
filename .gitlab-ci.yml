@@ -37,8 +37,6 @@ build-job:       # This job runs in the build stage, which runs first.
     GITHUB_ACTIONS: 1
     DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
   script:
-    - export GITHUB_ACTIONS=true
-    - export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
     - echo "Compiling the code..."
     - /home/gitlab-runner/.dotnet/dotnet build --configuration Tools --no-restore /p:WarningsAsErrors=nullable /m
     - echo "Compile complete."
