@@ -9,7 +9,7 @@ install-dep:       # This job runs in the build stage, which runs first.
     DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
   script:
     - git submodule update --init --recursive
-    - echo pwd
+    - echo test
     - cd RobustToolbox
     - git submodule update --init --recursive
 
