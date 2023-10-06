@@ -5,6 +5,8 @@ stages:
 
 install-dep:
   stage: install
+  artifacts:
+    untracked: true
   script:
     - |
       echo "Install dependenses ..."
@@ -17,6 +19,8 @@ build-project:       # This job runs in the build stage, which runs first.
   variables:
     GITHUB_ACTIONS: 1
   dependencies: []
+  artifacts:
+    untracked: true
   script:
     - |
       echo "Restore Projects ..."
