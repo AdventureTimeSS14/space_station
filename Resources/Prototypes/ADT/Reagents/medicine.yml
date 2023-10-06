@@ -4,7 +4,7 @@
   group: Medicine
   desc: reagent-desc-zessul-blood
   physicalDesc: reagent-physical-desc-bloody
-  #flavor: metallic
+  flavor: metallic
   color: "#800000"
   metabolisms:
     Medicine:
@@ -23,7 +23,7 @@
   group: Medicine
   desc: reagent-desc-salineglucosesolution
   physicalDesc: reagent-physical-desc-salineglucosesolution
-  #flavor: somesalty
+  flavor: somesalty
   color: "#75b1f0"
   metabolisms:
     Medicine:
@@ -59,7 +59,7 @@
   parent: BaseAlcohol
   desc: reagent-desc-fleurdemai
   physicalDesc: reagent-physical-desc-translucent
-  #flavor: ADTCherryExquisiteWineFlavor
+  flavor: ADTCherryExquisiteWineFlavor
   color: "#c8a2c8"
   metabolisms:
     Drink:

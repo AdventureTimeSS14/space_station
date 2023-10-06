@@ -4,7 +4,7 @@
   group: Medicine
   desc: reagent-desc-cryptobiolin
   physicalDesc: reagent-physical-desc-fizzy
-  #flavor: medicine
+  flavor: medicine
   color: "#081a80"
   metabolisms:
     Medicine:
@@ -24,7 +24,7 @@
   group: Medicine
   desc: reagent-desc-dylovene
   physicalDesc: reagent-physical-desc-translucent
-  #flavor: medicine
+  flavor: medicine
   color: "#3a1d8a"
   metabolisms:
     Medicine:
@@ -75,7 +75,7 @@
   group: Medicine
   desc: reagent-desc-diphenhydramine
   physicalDesc: reagent-physical-desc-chalky
-  #flavor: medicine
+  flavor: medicine
   color: "#64ffe6"
   metabolisms:
     Medicine:
@@ -98,7 +98,7 @@
   group: Medicine
   desc: reagent-desc-ethylredoxrazine
   physicalDesc: reagent-physical-desc-opaque
-  #flavor: medicine
+  flavor: medicine
   color: "#2d5708"
   metabolisms:
     Medicine:
@@ -118,7 +118,7 @@
   group: Medicine
   desc: reagent-desc-arithrazine
   physicalDesc: reagent-physical-desc-cloudy
-  #flavor: medicine
+  flavor: medicine
   color: "#bd5902"
   metabolisms:
     Medicine:
@@ -136,7 +136,7 @@
   group: Medicine
   desc: reagent-desc-bicaridine
   physicalDesc: reagent-physical-desc-opaque
-  #flavor: medicine
+  flavor: medicine
   color: "#ffaa00"
   metabolisms:
     Medicine:
@@ -172,7 +172,7 @@
   group: Medicine
   desc: reagent-desc-cryoxadone
   physicalDesc: reagent-physical-desc-fizzy
-  #flavor: medicine
+  flavor: medicine
   color: "#0091ff"
   plantMetabolism:
   - !type:PlantAdjustToxins
@@ -202,7 +202,7 @@
   group: Medicine
   desc: reagent-desc-doxarubixadone
   physicalDesc: reagent-physical-desc-bubbling
-  #flavor: medicine
+  flavor: medicine
   color: "#32cd32"
   metabolisms:
     Medicine:
@@ -221,7 +221,7 @@
   group: Medicine
   desc: reagent-desc-dermaline
   physicalDesc: reagent-physical-desc-translucent
-  #flavor: medicine
+  flavor: medicine
   color: "#215263"
   metabolisms:
     Medicine:
@@ -253,7 +253,7 @@
   group: Medicine
   desc: reagent-desc-dexalin
   physicalDesc: reagent-physical-desc-opaque
-  #flavor: medicine
+  flavor: medicine
   color: "#0041a8"
   metabolisms:
     Medicine:
@@ -278,7 +278,7 @@
   group: Medicine
   desc: reagent-desc-dexalin-plus
   physicalDesc: reagent-physical-desc-cloudy
-  #flavor: medicine
+  flavor: medicine
   color: "#4da0bd"
   metabolisms:
     Medicine:
@@ -311,7 +311,7 @@
   group: Medicine
   desc: reagent-desc-epinephrine
   physicalDesc: reagent-physical-desc-odorless
-  #flavor: medicine
+  flavor: medicine
   color: "#d2fffa"
   metabolisms:
     Medicine:
@@ -372,7 +372,7 @@
   group: Medicine
   desc: reagent-desc-hyronalin
   physicalDesc: reagent-physical-desc-cloudy
-  #flavor: medicine
+  flavor: medicine
   color: "#4cb580"
   metabolisms:
     Medicine:
@@ -401,7 +401,7 @@
   group: Medicine
   desc: reagent-desc-ipecac
   physicalDesc: reagent-physical-desc-inky
-  #flavor: medicine
+  flavor: medicine
   color: "#422912"
   metabolisms:
     Medicine:
@@ -415,7 +415,7 @@
   group: Medicine
   desc: reagent-desc-inaprovaline
   physicalDesc: reagent-physical-desc-opaque
-  #flavor: medicine
+  flavor: medicine
   color: "#731024"
   metabolisms:
     Medicine:
@@ -437,7 +437,7 @@
   group: Medicine
   desc: reagent-desc-kelotane
   physicalDesc: reagent-physical-desc-strong-smelling
-  #flavor: medicine
+  flavor: medicine
   color: "#bf3d19"
   metabolisms:
     Medicine:
@@ -470,7 +470,7 @@
   group: Medicine
   desc: reagent-desc-leporazine
   physicalDesc: reagent-physical-desc-pungent
-  #flavor: medicine
+  flavor: medicine
   color: "#ff7db5"
   metabolisms:
     Medicine:
@@ -501,7 +501,7 @@
   group: Medicine
   desc: reagent-desc-barozine
   physicalDesc: reagent-physical-desc-viscous
-  #flavor: medicine
+  flavor: medicine
   color: "#ff867d"
   metabolisms:
     Medicine:
@@ -545,7 +545,7 @@
   group: Medicine
   desc: reagent-desc-phalanximine
   physicalDesc: reagent-physical-desc-acrid
-  #flavor: medicine
+  flavor: medicine
   color: "#c8ff75"
   plantMetabolism:
     - !type:PlantAdjustToxins
@@ -571,7 +571,7 @@
   group: Medicine
   desc: reagent-desc-ambuzol
   physicalDesc: reagent-physical-desc-crisp
-  #flavor: medicine
+  flavor: medicine
   color: "#86caf7"
   metabolisms:
     Medicine:
@@ -587,7 +587,7 @@
   group: Medicine
   desc: reagent-desc-ambuzol-plus
   physicalDesc: reagent-physical-desc-crisp
-  #flavor: medicine
+  flavor: medicine
   color: "#1274b5"
   metabolisms:
     Medicine:
@@ -604,7 +604,7 @@
   group: Medicine
   desc: reagent-desc-pulped-banana-peel
   physicalDesc: reagent-physical-desc-pulpy
-  #flavor: medicine
+  flavor: medicine
   color: "#FFE774"
   metabolisms:
     Medicine:
@@ -618,7 +618,7 @@
   group: Medicine
   desc: reagent-desc-saline
   physicalDesc: reagent-physical-desc-salty
-  #flavor: salty
+  flavor: salty
   color: "#0064C8"
   metabolisms:
     Drink:
@@ -634,7 +634,7 @@
   group: Medicine
   desc: reagent-desc-siderlac
   physicalDesc: reagent-physical-desc-milky
-  #flavor: medicine
+  flavor: medicine
   color: "#f4dab8"
   metabolisms:
     Medicine:
@@ -650,7 +650,7 @@
   group: Medicine
   desc: reagent-desc-stellibinin
   physicalDesc: reagent-physical-desc-starry
-  #flavor: medicine
+  flavor: medicine
   color: "#2b2f77"
   metabolisms:
     Medicine:
@@ -673,7 +673,7 @@
   group: Medicine
   desc: reagent-desc-synaptizine
   physicalDesc: reagent-physical-desc-pungent
-  #flavor: medicine
+  flavor: medicine
   color: "#d49a2f"
   metabolisms:
     Poison:
@@ -701,7 +701,7 @@
   group: Medicine
   desc: reagent-desc-tranexamic-acid
   physicalDesc: reagent-physical-desc-viscous
-  #flavor: medicine
+  flavor: medicine
   color: "#ba7d7d"
   metabolisms:
     Medicine:
@@ -724,7 +724,7 @@
   group: Medicine
   desc: reagent-desc-tricordrazine
   physicalDesc: reagent-physical-desc-opaque
-  #flavor: medicine
+  flavor: medicine
   color: "#00e5ff"
   metabolisms:
     Medicine:
@@ -748,7 +748,7 @@
   group: Medicine
   desc: reagent-desc-lipozine
   physicalDesc: reagent-physical-desc-oily
-  #flavor: medicine
+  flavor: medicine
   color: "#2690b5"
   metabolisms:
     Medicine:
@@ -764,7 +764,7 @@
   group: Medicine
   desc: reagent-desc-omnizine
   physicalDesc: reagent-physical-desc-soothing
-  #flavor: medicine
+  flavor: medicine
   color: "#fcf7f9"
   metabolisms:
     Medicine:
@@ -783,7 +783,7 @@
   group: Medicine
   desc: reagent-desc-ultravasculine
   physicalDesc: reagent-physical-desc-thick-and-grainy
-  #flavor: medicine
+  flavor: medicine
   color: "#520e30"
   metabolisms:
     Medicine:
@@ -826,7 +826,7 @@
   desc: reagent-desc-oculine
   group: Medicine
   physicalDesc: reagent-physical-desc-translucent
-  #flavor: medicine
+  flavor: medicine
   color: "#404040"
   metabolisms:
     Medicine:
@@ -839,7 +839,7 @@
   desc: reagent-desc-cognizine
   group: Medicine
   physicalDesc: reagent-physical-desc-enigmatic
-  #flavor: magical
+  flavor: magical
   color: "#b50ee8"
   metabolisms:
     Medicine:
@@ -855,7 +855,7 @@
   desc: reagent-desc-ethyloxyephedrine
   group: Medicine
   physicalDesc: reagent-physical-desc-shiny
-  #flavor: medicine
+  flavor: medicine
   color: "#d5d5e4"
   metabolisms:
     Medicine:
@@ -880,7 +880,7 @@
   desc: reagent-desc-diphenylmethylamine
   group: Medicine
   physicalDesc: reagent-physical-desc-glowing
-  #flavor: medicine
+  flavor: medicine
   color: "#b0abaa"
   metabolisms:
     Medicine:
@@ -901,7 +901,7 @@
   group: Medicine
   desc: reagent-desc-sigynate
   physicalDesc: reagent-physical-desc-thick
-  #flavor: sweet
+  flavor: sweet
   color: "#e0a5b9"
   metabolisms:
     Medicine:

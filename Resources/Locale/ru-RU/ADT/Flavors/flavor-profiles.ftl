@@ -31,3 +31,12 @@ flavor-complex-ADTBuckwheat = как гречневая каша
 
 flavor-base-adtpoppy = маково
 flavor-base-adtvanilla = ванильно
+
+flavor-complex-goldenale = как эль, золото и исцеление
+flavor-complex-sausagebeer = как хмель, солод и колбаска
+flavor-complex-technobeer = как хмель, солод и горячая зад...душа инженера
+flavor-complex-classicpaulaner = как хмель, солод и традиция
+flavor-complex-livseybeer = как хмель, солод и жидкость из криокамеры
+flavor-complex-luckyjonny = как хмель, солод и...а это что такое?
+flavor-complex-secunfiltered = как хмель, солод и удар станбатоном
+flavor-complex-glyphidstout = как хмель, солод, опьянение, темнота, опасность и дворфы

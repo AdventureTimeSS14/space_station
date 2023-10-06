@@ -4,7 +4,7 @@
   parent: BaseDrink
   desc: chocolate-drink-desc
   physicalDesc: reagent-physical-desc-aromatic
-  #flavor: ADTChocolateDrinkFlavor
+  flavor: ADTChocolateDrinkFlavor
   color: "#8a5a3a"
   recognizable: true
   metabolisms:

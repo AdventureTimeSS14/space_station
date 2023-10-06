@@ -1,0 +1,203 @@
+- type: reagent
+  id: ADTGoldenAle
+  name: golden-ale-name
+  parent: BaseAlcohol
+  desc: golden-ale-desc
+  physicalDesc: reagent-physical-desc-bubbly
+  flavor: ADTGoldenAleFlavor
+  color: "#663100"
+  recognizable: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.3
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -1.5
+          types:
+            Poison: -0.7 ##Should be about what it was when it healed the toxin group
+            Heat: -0.7
+            Shock: -0.7
+            Cold: -0.7
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
+    state: goldenale
+
+
+- type: reagent
+  id: ADTSausageBeer
+  name: sausage-beer-name
+  parent: BaseAlcohol
+  desc: sausage-beer-desc
+  physicalDesc: reagent-physical-desc-bubbly
+  flavor: ADTSausageBeerFlavor
+  color: "#cfa85f"
+  recognizable: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.3
+      - !type:AdjustReagent
+        reagent: Nutriment
+        amount: 0.2
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
+    state: sausagebeer
+
+- type: reagent
+  id: ADTTechnoBeer
+  name: techo-beer-name
+  parent: BaseAlcohol
+  desc: techo-beer-desc
+  physicalDesc: reagent-physical-desc-bubbly
+  flavor: ADTTechnoBeerFlavor
+  color: "#cfa85f"
+  recognizable: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.35
+      - !type:AdjustTemperature
+        amount: 100
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
+    state: technobeer
+
+- type: reagent
+  id: ADTClassicPaulanerBeer
+  name: classic-paulaner-name
+  parent: BaseAlcohol
+  desc: classic-paulaner-desc
+  physicalDesc: reagent-physical-desc-bubbly
+  flavor: ADTClassicPaulanerBeerFlavor
+  color: "#cfa85f"
+  recognizable: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.2
+      - !type:AdjustReagent
+        reagent: Nutriment
+        amount: 0.1
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
+    state: classicpaulaner
+
+- type: reagent
+  id: ADTLivseyBeer
+  name: livsey-beer-name
+  parent: BaseAlcohol
+  desc: livsey-beer-desc
+  physicalDesc: reagent-physical-desc-bubbly
+  flavor: ADTLivseyBeerFlavor
+  color: "#cfa85f"
+  recognizable: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.35
+      - !type:AdjustTemperature
+        amount: -100
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
+    state: livseybeer
+
+- type: reagent
+  id: ADTLuckyJonnyBeer
+  name: lucky-jonny-name
+  parent: BaseAlcohol
+  desc: lucky-jonny-desc
+  physicalDesc: reagent-physical-desc-bubbly
+  flavor: ADTLuckyJonnyBeerFlavor
+  color: "#cfa85f"
+  recognizable: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.35
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.1
+        sprintSpeedModifier: 1.1
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 5
+        refresh: false
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
+    state: luckyjonny
+
+- type: reagent
+  id: ADTSecUnfilteredBeer
+  name: sec-unfiltered-name
+  parent: BaseAlcohol
+  desc: sec-unfiltered-desc
+  physicalDesc: reagent-physical-desc-bubbly
+  flavor: ADTSecUnfilteredBeerFlavor
+  color: "#cfa85f"
+  recognizable: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.35
+      - !type:MovespeedModifier
+        walkSpeedModifier: 0.85
+        sprintSpeedModifier: 0.85
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
+    state: secunfiltered
+
+- type: reagent
+  id: ADTGlyphidStoutBeer
+  name: glyphid-stout-name
+  parent: BaseAlcohol
+  desc: glyphid-stout-desc
+  physicalDesc: reagent-physical-desc-bubbly
+  flavor: ADTGlyphidStoutBeerFlavor
+  color: "#cfa85f"
+  recognizable: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.45
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: -0.9 ##Should be about what it was when it healed the toxin group
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
+    state: glyphidstout

@@ -3,7 +3,7 @@
   name: reagent-name-e-z-nutrient
   group: Botanical
   desc: reagent-desc-e-z-nutrient
-  #flavor: bitter
+  flavor: bitter
   color: "#664330"
   physicalDesc: reagent-physical-desc-thick
   plantMetabolism:
@@ -22,7 +22,7 @@
   name: reagent-name-left4-zed
   group: Botanical
   desc: reagent-desc-left4-zed
-  #flavor: bitter
+  flavor: bitter
   color: "#5b406c"
   physicalDesc: reagent-physical-desc-heterogeneous
   plantMetabolism:
@@ -53,7 +53,7 @@
   name: reagent-name-pest-killer
   group: Botanical
   desc: reagent-desc-pest-killer
-  #flavor: bitter
+  flavor: bitter
   color: "#9e9886"
   physicalDesc: reagent-physical-desc-bubbling
   plantMetabolism:
@@ -77,7 +77,7 @@
   name: reagent-name-plant-b-gone
   group: Botanical
   desc: reagent-desc-plant-b-gone
-  #flavor: bitter
+  flavor: bitter
   color: "#49002E"
   physicalDesc: reagent-physical-desc-bubbling
   plantMetabolism:
@@ -108,7 +108,7 @@
   name: reagent-name-robust-harvest
   group: Botanical
   desc: reagent-desc-robust-harvest
- #flavor: bitter
+  flavor: bitter
   color: "#3e901c"
   physicalDesc: reagent-physical-desc-robust
   plantMetabolism:
@@ -161,7 +161,7 @@
   name: reagent-name-weed-killer
   group: Botanical
   desc: reagent-desc-weed-killer
- #flavor: bitter
+  flavor: bitter
   color: "#968395"
   physicalDesc: reagent-physical-desc-bubbling
   plantMetabolism:
@@ -186,7 +186,7 @@
   group: Botanical
   desc: reagent-desc-ammonia
   physicalDesc: reagent-physical-desc-pungent
- #flavor: bitter
+  flavor: bitter
   color: "#77b58e"
   boilingPoint: -33.0
   meltingPoint: -77.7
@@ -209,7 +209,7 @@
   group: Botanical
   desc: reagent-desc-diethylamine
   physicalDesc: reagent-physical-desc-strong-smelling
- #flavor: bitter
+  flavor: bitter
   color: "#a1000b"
   boilingPoint: 55.5
   meltingPoint: -50.0
