@@ -11,7 +11,7 @@ install-dep:       # This job runs in the build stage, which runs first.
     - cd RobustToolbox
     - git submodule update --init --recursive
 
-install-dep:       # This job runs in the build stage, which runs first.
+build:       # This job runs in the build stage, which runs first.
   stage: build
   variables:
     GITHUB_ACTIONS: 1
