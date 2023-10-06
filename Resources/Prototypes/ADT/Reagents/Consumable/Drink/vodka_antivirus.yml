@@ -4,7 +4,7 @@
   parent: BaseAlcohol
   desc: vodka-antivirus-desc
   physicalDesc: reagent-physical-desc-overpowering
-  #flavor: ADTVodkaAntivirusFlavor
+  flavor: ADTVodkaAntivirusFlavor
   color: "#d1d1d155"
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/vodka_antivirusglass.rsi

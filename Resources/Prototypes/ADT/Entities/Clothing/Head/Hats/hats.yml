@@ -126,3 +126,110 @@
     sprite: ADT/Clothing/Head/Hats/mendosa_soft.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/mendosa_soft.rsi
+
+#октоберфест
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsBavarianHat
+  name: bavarian hat
+  description: Traditional bavarian hat
+  suffix: Oktoberfest
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hat.rsi #спрайты от SHIONE
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hat.rsi #спрайты от SHIONE
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsBavarianHatBlueBorder
+  name: bavarian hat with blue border
+  description: Traditional bavarian hat with a blue border
+  suffix: Oktoberfest
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatborderblue.rsi #спрайты от SHIONE
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatborderblue.rsi #спрайты от SHIONE
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsBavarianHatRedBorder
+  name: bavarian hat with red border
+  description: Traditional bavarian hat with a red border
+  suffix: Oktoberfest
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatborderred.rsi #спрайты от SHIONE
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatborderred.rsi #спрайты от SHIONE
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsBavarianHatGreenBorder
+  name: bavarian hat with green border
+  description: Traditional bavarian hat with a green border
+  suffix: Oktoberfest
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatbordergreen.rsi #спрайты от SHIONE
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatbordergreen.rsi #спрайты от SHIONE
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsBavarianHatBlue
+  name: bavarian blue hat
+  description: Traditional bavarian blue hat with a feather
+  suffix: Oktoberfest
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatblue.rsi #спрайты от SHIONE
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatblue.rsi #спрайты от SHIONE
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsBavarianHatGreen
+  name: bavarian green hat
+  description: Traditional bavarian green hat with a feather
+  suffix: Oktoberfest
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatgreen.rsi #спрайты от SHIONE
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatgreen.rsi #спрайты от SHIONE
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsBavarianHatRed
+  name: bavarian red hat
+  description: Traditional bavarian red hat with a feather
+  suffix: Oktoberfest
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatred.rsi #спрайты от SHIONE
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatred.rsi #спрайты от SHIONE

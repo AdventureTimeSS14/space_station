@@ -4,7 +4,7 @@
   group: Foods
   desc: reagent-desc-astrotame
   physicalDesc: reagent-physical-desc-sugary
- #flavor: sweet
+  flavor: sweet
   color: aquamarine
   recognizable: true
 
@@ -14,7 +14,7 @@
   group: Foods
   desc: reagent-desc-bbq-sauce
   physicalDesc: reagent-physical-desc-gloopy
- #flavor: sweet
+  flavor: sweet
   color: darkred
   recognizable: true
 
@@ -24,7 +24,7 @@
   group: Foods
   desc: reagent-desc-cornoil
   physicalDesc: reagent-physical-desc-oily
- #flavor: oily
+  flavor: oily
   color: yellow
   recognizable: true
 
@@ -34,7 +34,7 @@
   group: Foods
   desc: reagent-desc-frostoil
   physicalDesc: reagent-physical-desc-cold
- #flavor: cold
+  flavor: cold
   color: skyblue
 
 - type: reagent
@@ -43,7 +43,7 @@
   group: Foods
   desc: reagent-desc-horseradish-sauce
   physicalDesc: reagent-physical-desc-overpowering
- #flavor: spicy
+  flavor: spicy
   color: gray
   recognizable: true
 
@@ -53,7 +53,7 @@
   group: Foods
   desc: reagent-desc-hotsauce
   physicalDesc: reagent-physical-desc-spicy
- #flavor: spicy
+  flavor: spicy
   color: red
   recognizable: true
 
@@ -63,7 +63,7 @@
   group: Foods
   desc: reagent-desc-ketchup
   physicalDesc: reagent-physical-desc-tangy
- #flavor: tomato
+  flavor: tomato
   color: red
   recognizable: true
 
@@ -84,7 +84,7 @@
   group: Foods
   desc: reagent-desc-mayo
   physicalDesc: reagent-physical-desc-thick
- #flavor: sour
+  flavor: sour
   color: "#f9f5e5"
   recognizable: true
 
@@ -94,7 +94,7 @@
   group: Foods
   desc: reagent-desc-mustard
   physicalDesc: reagent-physical-desc-thick
- #flavor: sour
+  flavor: sour
   color: "#ffdb58"
   recognizable: true
 
@@ -104,7 +104,7 @@
   group: Foods
   desc: reagent-desc-vinaigrette
   physicalDesc: reagent-physical-desc-sour
- #flavor: sour
+  flavor: sour
   color: "#efdaae"
   recognizable: true
 
@@ -114,7 +114,7 @@
   group: Foods
   desc: reagent-desc-soysauce
   physicalDesc: reagent-physical-desc-salty
- #flavor: salty
+  flavor: salty
   color: saddlebrown
   recognizable: true
   metabolisms:
@@ -131,7 +131,7 @@
   group: Foods
   desc: reagent-desc-table-salt
   physicalDesc: reagent-physical-desc-grainy
- #flavor: salty
+  flavor: salty
   color: "#cfd1d0"
   recognizable: true
   boilingPoint: 1465.0

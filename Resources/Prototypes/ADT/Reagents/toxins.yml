@@ -3,7 +3,7 @@
   name: reagent-name-ultra-chloral-hydrate
   group: Toxins
   desc: reagent-desc-ultra-chloral-hydrate
-  #flavor: bitter
+  flavor: bitter
   color: "#000067"
   physicalDesc: reagent-physical-desc-nondescript
   metabolisms:

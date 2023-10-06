@@ -1,0 +1,94 @@
+- type: entity
+  id: ADTTableOktoberfest
+  parent: TableBase
+  name: wood oktoberfest table
+  description: Do not apply fire to this. Rumour says it burns easily.
+  suffix: Oktoberfest
+  components:
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/oktoberfest_table.rsi
+  - type: Icon
+    sprite: ADT/Structures/Furniture/oktoberfest_table.rsi
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 15
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/woodhit.ogg
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Tag
+    tags:
+    - Wooden
+
+- type: entity
+  id: ADTTableOktoberfestOrange
+  parent: TableBase
+  name: wood orange oktoberfest table
+  description: Do not apply fire to this. Rumour says it burns easily.
+  suffix: Oktoberfest
+  components:
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/oktoberfest_table_orange.rsi
+  - type: Icon
+    sprite: ADT/Structures/Furniture/oktoberfest_table_orange.rsi
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 15
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/woodhit.ogg
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Tag
+    tags:
+    - Wooden
+
+- type: entity
+  name: oktoberfest chair
+  id: ADTOktoberfestChair
+  parent: SeatBase
+  description: It looks comfy.
+  suffix: Oktoberfest
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/oktoberfest_chair.rsi
+    state: oct_chair_orange
