@@ -24,7 +24,9 @@ stages:          # List of stages for jobs, and their order of execution
 build-job:       # This job runs in the build stage, which runs first.
   stage: build
   before_script:
+    - export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
     - wget https://dot.net/v1/dotnet-install.sh && bash dotnet-install.sh --channel 7.0
+    - alias dotnet='/home/gitlab-runner/.dotnet/dotnet'
   script:
     - echo "Updating dependenses..."
     - git submodule update --init --recursive
