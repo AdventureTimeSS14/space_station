@@ -11,7 +11,7 @@ install-dep:
   script:
     - echo "Install dependenses ..."
 
-build-project:       # This job runs in the build stage, which runs first.
+build-project:       
   stage: build
   variables:
     GITHUB_ACTIONS: 1
@@ -27,20 +27,38 @@ build-project:       # This job runs in the build stage, which runs first.
       dotnet run --project Content.YAMLLinter/Content.YAMLLinter.csproj --no-build
       echo "Compile complete."
 
-yaml-test:       # This job runs in the build stage, which runs first.
+yaml-test:       
   stage: test
-  needs: ["build-project"]
   variables:
     GITHUB_ACTIONS: 1
     GIT_CLEAN_FLAGS: none
     GIT_CHECKOUT: none
   dependencies: []
   script:
-    - |
-      dotnet run --project Content.YAMLLinter/Content.YAMLLinter.csproj --no-build
-      echo "Compile complete."
+    - dotnet run --project Content.YAMLLinter/Content.YAMLLinter.csproj --no-build      
 
+content-test:       
+  stage: test
+  need: ["yaml-test"]
+  variables:
+    GITHUB_ACTIONS: 1
+    GIT_CLEAN_FLAGS: none
+    GIT_CHECKOUT: none
+  dependencies: []
+  script:
+    - dotnet test --configuration Tools --no-build Content.Tests/Content.Tests.csproj -- NUnit.ConsoleOut=0  
 
+unit-test:       
+  stage: test
+  need: ["content-test"]
+  variables:
+    DOTNET_gcServer:1
+    GITHUB_ACTIONS: 1
+    GIT_CLEAN_FLAGS: none
+    GIT_CHECKOUT: none
+  dependencies: []
+  script:
+    - dotnet test --configuration Tools --no-build Content.IntegrationTests/Content.IntegrationTests.csproj -- NUnit.ConsoleOut=0 NUnit.MapWarningTo=Failed
 
 
 remove-build:
