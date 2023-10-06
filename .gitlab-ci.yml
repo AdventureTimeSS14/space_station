@@ -8,11 +8,14 @@ YAMLLinter:       # This job runs in the build stage, which runs first.
     DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
   script:
     - |
+      echo "Install dependenses ..."
       git submodule update --init --recursive
       cd RobustToolbox
       git submodule update --init --recursive
       cd ..
+      echo "Restore Projects ..."
       dotnet restore
+      echo "Build Projects ..."
       dotnet build --configuration Release --no-restore /p:WarningsAsErrors= /m
       dotnet run --project Content.YAMLLinter/Content.YAMLLinter.csproj --no-build
       echo "Compile complete."
