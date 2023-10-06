@@ -30,6 +30,7 @@ pre-job:
 build-job:       # This job runs in the build stage, which runs first.
   stage: build
   script:
+    - export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
     - echo "Compiling the code..."
     - /home/gitlab-runner/.dotnet/dotnet restore
     - /home/gitlab-runner/.dotnet/dotnet build --configuration Tools --no-restore /p:WarningsAsErrors=nullable /m
