@@ -16,6 +16,7 @@ build-project:       # This job runs in the build stage, which runs first.
   stage: build
   variables:
     GITHUB_ACTIONS: 1
+  dependencies: []
   script:
     - |
       echo "Restore Projects ..."
@@ -29,6 +30,7 @@ yaml-test:       # This job runs in the build stage, which runs first.
   stage: test
   variables:
     GITHUB_ACTIONS: 1
+  dependencies: []
   script:
     - |
       dotnet run --project Content.YAMLLinter/Content.YAMLLinter.csproj --no-build
