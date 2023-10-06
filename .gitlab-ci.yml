@@ -17,19 +17,9 @@
 # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Getting-Started.gitlab-ci.yml
 
 stages:  
-  - pre_installs        # List of stages for jobs, and their order of execution
   - build
   - test
   #- deploy
-
-pre-job:
-  stage: pre_installs
-  variables:
-    GITHUB_ACTIONS: 1
-    DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
-  script:
-    - git submodule update --init --recursive
-    - /home/gitlab-runner/.dotnet/dotnet restore
 
 build-job:       # This job runs in the build stage, which runs first.
   stage: build
@@ -37,6 +27,8 @@ build-job:       # This job runs in the build stage, which runs first.
     GITHUB_ACTIONS: 1
     DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
   script:
+    - git submodule update --init --recursive
+    - /home/gitlab-runner/.dotnet/dotnet restore
     - echo "Compiling the code..."
     - /home/gitlab-runner/.dotnet/dotnet build --configuration Tools --no-restore /p:WarningsAsErrors=nullable /m
     - echo "Compile complete."
