@@ -21,3 +21,10 @@ build:       # This job runs in the build stage, which runs first.
     - /home/gitlab-runner/.dotnet/dotnet build --configuration Release --no-restore /p:WarningsAsErrors= /m
     - /home/gitlab-runner/.dotnet/dotnet run --project Content.YAMLLinter/Content.YAMLLinter.csproj --no-build
     - echo "Compile complete."
+
+remove-build:
+  stage: build
+  when: on_failure
+  script:
+    - cd ..
+    - rm -R space_station
