@@ -7,10 +7,13 @@ install-dep:       # This job runs in the build stage, which runs first.
   variables:
     GITHUB_ACTIONS: 1
     DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
+  artifacts:
+    path: space_station/
   script:
-    - git submodule update --init --recursive
-    - cd RobustToolbox
-    - git submodule update --init --recursive
+    - |
+      git submodule update --init --recursive
+      cd RobustToolbox
+      git submodule update --init --recursive
 
 build:       # This job runs in the build stage, which runs first.
   stage: build
@@ -18,10 +21,11 @@ build:       # This job runs in the build stage, which runs first.
     GITHUB_ACTIONS: 1
     DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
   script:
-    - dotnet restore
-    - dotnet build --configuration Release --no-restore /p:WarningsAsErrors= /m
-    - dotnet run --project Content.YAMLLinter/Content.YAMLLinter.csproj --no-build
-    - echo "Compile complete."
+    - |
+      dotnet restore
+      dotnet build --configuration Release --no-restore /p:WarningsAsErrors= /m
+      dotnet run --project Content.YAMLLinter/Content.YAMLLinter.csproj --no-build
+      echo "Compile complete."
 
 remove-build:
   stage: clean
