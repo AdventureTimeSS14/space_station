@@ -1,12 +1,8 @@
 stages:  
-  - install
   - build
-  - test
 
 install-dep:
-  stage: install
-  artifacts:
-    untracked: true
+  stage: build
   script:
     - |
       echo "Install dependenses ..."
@@ -16,11 +12,10 @@ install-dep:
 
 build-project:       # This job runs in the build stage, which runs first.
   stage: build
+  needs: ["install-dep"]
   variables:
     GITHUB_ACTIONS: 1
   dependencies: []
-  artifacts:
-    untracked: true
   script:
     - |
       echo "Restore Projects ..."
@@ -31,7 +26,8 @@ build-project:       # This job runs in the build stage, which runs first.
       echo "Compile complete."
 
 yaml-test:       # This job runs in the build stage, which runs first.
-  stage: test
+  stage: build
+  needs: ["build-project"]
   variables:
     GITHUB_ACTIONS: 1
   dependencies: []
