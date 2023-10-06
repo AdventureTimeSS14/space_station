@@ -26,6 +26,7 @@ pre-job:
   stage: pre_installs
   script:
     - git submodule update --init --recursive
+    - export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
     - /home/gitlab-runner/.dotnet/dotnet restore
 
 build-job:       # This job runs in the build stage, which runs first.
