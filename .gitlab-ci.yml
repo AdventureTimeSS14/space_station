@@ -17,7 +17,7 @@ build-project:       # This job runs in the build stage, which runs first.
   variables:
     GITHUB_ACTIONS: 1
     GIT_CLEAN_FLAGS: none
-    GIT_CLEAN_FLAGS: none
+    GIT_CHECKOUT: none
   dependencies: []
   script:
     - |
@@ -34,7 +34,7 @@ yaml-test:       # This job runs in the build stage, which runs first.
   variables:
     GITHUB_ACTIONS: 1
     GIT_CLEAN_FLAGS: none
-    GIT_CLEAN_FLAGS: none
+    GIT_CHECKOUT: none
   dependencies: []
   script:
     - |
