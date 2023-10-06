@@ -1,13 +1,22 @@
 stages:  
   - build
  
-build-job:       # This job runs in the build stage, which runs first.
+install-dep:       # This job runs in the build stage, which runs first.
   stage: build
   variables:
     GITHUB_ACTIONS: 1
     DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
   script:
     - git submodule update --init --recursive
+    - cd RobustToolbox
+    - git submodule update --init --recursive
+
+install-dep:       # This job runs in the build stage, which runs first.
+  stage: build
+  variables:
+    GITHUB_ACTIONS: 1
+    DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
+  script:
     - /home/gitlab-runner/.dotnet/dotnet restore
     - /home/gitlab-runner/.dotnet/dotnet build --configuration Release --no-restore /p:WarningsAsErrors= /m
     - /home/gitlab-runner/.dotnet/dotnet run --project Content.YAMLLinter/Content.YAMLLinter.csproj --no-build
