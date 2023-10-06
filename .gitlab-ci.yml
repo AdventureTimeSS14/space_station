@@ -4,7 +4,7 @@ stages:
   - test
 
 install-dep:
-stage: install
+  stage: install
   script:
     - |
       echo "Install dependenses ..."
