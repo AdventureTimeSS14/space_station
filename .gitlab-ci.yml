@@ -1,5 +1,6 @@
 stages:  
   - build
+  - clean
  
 install-dep:       # This job runs in the build stage, which runs first.
   stage: build
@@ -23,7 +24,7 @@ build:       # This job runs in the build stage, which runs first.
     - echo "Compile complete."
 
 remove-build:
-  stage: build
+  stage: clean
   when: on_failure
   script:
     - cd ..
