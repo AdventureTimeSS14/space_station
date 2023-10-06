@@ -39,7 +39,7 @@ yaml-test:
 
 content-test:       
   stage: test
-  need: ["yaml-test"]
+  needs: ["yaml-test"]
   variables:
     GITHUB_ACTIONS: 1
     GIT_CLEAN_FLAGS: none
@@ -50,9 +50,9 @@ content-test:
 
 unit-test:       
   stage: test
-  need: ["content-test"]
+  needs: ["content-test"]
   variables:
-    DOTNET_gcServer:1
+    DOTNET_gcServer: 1
     GITHUB_ACTIONS: 1
     GIT_CLEAN_FLAGS: none
     GIT_CHECKOUT: none
