@@ -24,7 +24,12 @@ stages:          # List of stages for jobs, and their order of execution
 build-job:       # This job runs in the build stage, which runs first.
   stage: build
   script:
+    - echo "Updating dependenses..."
+    - git submodule update --init --recursive
+    - cd RobustToolbox/
+    - git submodule update --init --recursive
     - echo "Compiling the code..."
+    - 
     - echo "Compile complete."
 
 unit-test-job:   # This job runs in the test stage.
