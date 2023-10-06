@@ -5,12 +5,11 @@ stages:
 
 install-dep:
   stage: install
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+    GIT_SUBMODULE_UPDATE_FLAGS: --init --depth 50 --recursive --remote --jobs 4
   script:
-    - |
-      echo "Install dependenses ..."
-      git submodule update --init --recursive
-      cd RobustToolbox
-      git submodule update --init --recursive
+    - echo "Install dependenses ..."
 
 build-project:       # This job runs in the build stage, which runs first.
   stage: build
@@ -30,7 +29,6 @@ build-project:       # This job runs in the build stage, which runs first.
 
 yaml-test:       # This job runs in the build stage, which runs first.
   stage: test
-  needs: ["build-project"]
   variables:
     GITHUB_ACTIONS: 1
     GIT_CLEAN_FLAGS: none
