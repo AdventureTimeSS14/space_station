@@ -5,7 +5,6 @@ YAMLLinter:       # This job runs in the build stage, which runs first.
   stage: build
   variables:
     GITHUB_ACTIONS: 1
-    DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
   script:
     - |
       echo "Install dependenses ..."
