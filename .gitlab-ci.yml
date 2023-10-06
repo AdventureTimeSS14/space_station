@@ -28,9 +28,10 @@ build-job:       # This job runs in the build stage, which runs first.
     DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
   script:
     - git submodule update --init --recursive
+    - echo "Restore Dependenses ..."
     - /home/gitlab-runner/.dotnet/dotnet restore
     - echo "Compiling the code..."
-    - /home/gitlab-runner/.dotnet/dotnet build --configuration Tools --no-restore /p:WarningsAsErrors=nullable /m
+    - /home/gitlab-runner/.dotnet/dotnet build --configuration Tools /p:WarningsAsErrors=nullable /m
     - echo "Compile complete."
 
 unit-test-job:   # This job runs in the test stage.
