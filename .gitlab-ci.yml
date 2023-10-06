@@ -1,8 +1,10 @@
-stages:  
+stages:
+  - install  
   - build
+  - test
 
 install-dep:
-  stage: build
+  stage: install
   script:
     - |
       echo "Install dependenses ..."
@@ -12,9 +14,10 @@ install-dep:
 
 build-project:       # This job runs in the build stage, which runs first.
   stage: build
-  needs: ["install-dep"]
   variables:
     GITHUB_ACTIONS: 1
+    GIT_CLEAN_FLAGS: none
+    GIT_CLEAN_FLAGS: none
   dependencies: []
   script:
     - |
@@ -26,10 +29,12 @@ build-project:       # This job runs in the build stage, which runs first.
       echo "Compile complete."
 
 yaml-test:       # This job runs in the build stage, which runs first.
-  stage: build
+  stage: test
   needs: ["build-project"]
   variables:
     GITHUB_ACTIONS: 1
+    GIT_CLEAN_FLAGS: none
+    GIT_CLEAN_FLAGS: none
   dependencies: []
   script:
     - |
