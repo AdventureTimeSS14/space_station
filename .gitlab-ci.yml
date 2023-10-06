@@ -29,12 +29,10 @@ pre-job:
 
 build-job:       # This job runs in the build stage, which runs first.
   stage: build
-  before_script:
-    - alias dotnet='/home/gitlab-runner/.dotnet/dotnet'
   script:
     - echo "Compiling the code..."
-    - dotnet restore
-    - dotnet build --configuration Tools --no-restore /p:WarningsAsErrors=nullable /m
+    - /home/gitlab-runner/.dotnet/dotnet restore
+    - /home/gitlab-runner/.dotnet/dotnet build --configuration Tools --no-restore /p:WarningsAsErrors=nullable /m
     - echo "Compile complete."
 
 unit-test-job:   # This job runs in the test stage.
