@@ -1,23 +1,41 @@
 stages:  
+  - install
   - build
- 
-YAMLLinter:       # This job runs in the build stage, which runs first.
-  stage: build
-  variables:
-    GITHUB_ACTIONS: 1
+  - test
+
+install-dep:
+stage: install
   script:
     - |
       echo "Install dependenses ..."
       git submodule update --init --recursive
       cd RobustToolbox
       git submodule update --init --recursive
-      cd ..
+
+build-project:       # This job runs in the build stage, which runs first.
+  stage: build
+  variables:
+    GITHUB_ACTIONS: 1
+  script:
+    - |
       echo "Restore Projects ..."
       dotnet restore
       echo "Build Projects ..."
       dotnet build --configuration Release --no-restore /p:WarningsAsErrors= /m
       dotnet run --project Content.YAMLLinter/Content.YAMLLinter.csproj --no-build
       echo "Compile complete."
+
+yaml-test:       # This job runs in the build stage, which runs first.
+  stage: test
+  variables:
+    GITHUB_ACTIONS: 1
+  script:
+    - |
+      dotnet run --project Content.YAMLLinter/Content.YAMLLinter.csproj --no-build
+      echo "Compile complete."
+
+
+
 
 remove-build:
   stage: .post
