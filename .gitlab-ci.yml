@@ -24,15 +24,20 @@ stages:
 
 pre-job:
   stage: pre_installs
+  variables:
+    GITHUB_ACTIONS: 1
+    DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
   script:
-    - export GITHUB_ACTIONS=true
     - git submodule update --init --recursive
-    - export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
     - /home/gitlab-runner/.dotnet/dotnet restore
 
 build-job:       # This job runs in the build stage, which runs first.
   stage: build
+  variables:
+    GITHUB_ACTIONS: 1
+    DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
   script:
+    - export GITHUB_ACTIONS=true
     - export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
     - echo "Compiling the code..."
     - /home/gitlab-runner/.dotnet/dotnet build --configuration Tools --no-restore /p:WarningsAsErrors=nullable /m
