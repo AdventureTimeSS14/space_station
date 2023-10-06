@@ -16,24 +16,21 @@
 # This specific template is located at:
 # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Getting-Started.gitlab-ci.yml
 
-stages:          # List of stages for jobs, and their order of execution
+stages:  
+  - pre_installs        # List of stages for jobs, and their order of execution
   - build
   - test
   #- deploy
 
+pre-job:
+  stage: pre_installs
+  script:
+    - git submodule update --init --recursive
+
 build-job:       # This job runs in the build stage, which runs first.
   stage: build
-  before_script:
-    - export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
-    - wget https://dot.net/v1/dotnet-install.sh && bash dotnet-install.sh --channel 7.0
-    - alias dotnet='/home/gitlab-runner/.dotnet/dotnet'
   script:
-    - echo "Updating dependenses..."
-    - git submodule update --init --recursive
-    - cd RobustToolbox/
-    - git submodule update --init --recursive
     - echo "Compiling the code..."
-    - cd ..
     - dotnet restore
     - dotnet build --configuration Tools --no-restore /p:WarningsAsErrors=nullable /m
     - echo "Compile complete."
