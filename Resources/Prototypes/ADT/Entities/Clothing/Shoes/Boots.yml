@@ -226,3 +226,15 @@
     state: icon
   - type: Clothing
     sprite: ADT/Clothing/Shoes/Boots/whitehigh_footwraps.rsi #спрайты от floppo4ka
+
+#CMO
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ADTClothingHighboots
+  name: Highboots
+  description: a pair of highboot to walk on blood puddles
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/highboots.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/highboots.rsi

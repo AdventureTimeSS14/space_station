@@ -71,6 +71,21 @@
   - type: AntiRottingContainer
   - type: StaticPrice
     price: 200
+  - type: ItemSlots
+    slots:
+     paper_slot:
+       name: Paper
+       whitelist:
+         tags:
+           - Document
+       insertOnInteract: false 
+  - type: ItemMapper
+    mapLayers:
+      morgue_paper:
+        whitelist:
+          tags:
+            - Document
+    sprite: Structures/Storage/morgue.rsi
 
 - type: entity
   id: Crematorium

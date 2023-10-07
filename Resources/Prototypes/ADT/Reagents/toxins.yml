@@ -21,3 +21,8 @@
         component: ForcedSleeping
         refresh: false
         type: Add
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "narcotic-effect-sleepy" ]
+        probability: 0.06

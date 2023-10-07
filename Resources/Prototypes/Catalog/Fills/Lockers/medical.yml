@@ -48,6 +48,7 @@
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetMedical
       - id: ClothingEyesHudMedical #Removed until working properly
+      - id: ADTClothingBeltMedicalBag
       - id: ClothingBeltMedical
       - id: ClothingHeadHatSurgcapGreen
         prob: 0.1
@@ -82,6 +83,7 @@
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetMedical
       - id: ClothingEyesHudMedical #Removed until working properly
+      - id: ADTClothingBeltMedicalBag
       - id: ClothingBeltMedical
       - id: ClothingHeadHatSurgcapGreen
         prob: 0.1
@@ -118,6 +120,7 @@
       - id: BoxBottle
         amount: 2
       - id: ChemBag
+      - id: ADTClothingBeltMedicalBag
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetMedical
       - id: ClothingMaskSterile
