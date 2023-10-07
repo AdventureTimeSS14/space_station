@@ -4,7 +4,7 @@
   group: Narcotics
   desc: reagent-desc-desoxyephedrine
   physicalDesc: reagent-physical-desc-translucent
-  #flavor: bitter
+  flavor: bitter
   color: "#FAFAFA"
   boilingPoint: 212.0  # Dexosyephedrine vape when?
   meltingPoint: 170.0
@@ -53,7 +53,7 @@
   group: Narcotics
   desc: reagent-desc-ephedrine
   physicalDesc: reagent-physical-desc-powdery
-  #flavor: bitter
+  flavor: bitter
   color: "#D2FFFA"
   boilingPoint: 255.0
   meltingPoint: 36.0
@@ -98,7 +98,7 @@
   group: Narcotics
   desc: reagent-desc-stimulants
   physicalDesc: reagent-physical-desc-energizing
-  #flavor: sharp
+  flavor: sharp
   color: "#9A040E"
   boilingPoint: 212.0
   meltingPoint: 170.0
@@ -152,7 +152,7 @@
   name: reagent-name-thc
   group: Narcotics
   desc: reagent-desc-thc
-  #flavor: bitter
+  flavor: bitter
   flavorMinimum: 0.05
   color: "#808080"
   physicalDesc: reagent-physical-desc-crystalline
@@ -170,6 +170,11 @@
         type: Add
         time: 16
         refresh: false
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "narcotic-effect-rainbows" ]
+        probability: 0.07
 
 - type: reagent
   id: THCOil # deprecated in favor of THC, preserved here for forks
@@ -177,7 +182,7 @@
   group: Narcotics
   desc: reagent-desc-thc-oil
   physicalDesc: reagent-physical-desc-skunky
-  #flavor: bitter
+  flavor: bitter
   flavorMinimum: 0.05
   color: "#DAA520"
   metabolisms:
@@ -189,13 +194,18 @@
         type: Add
         time: 16
         refresh: false
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "narcotic-effect-rainbows" ]
+        probability: 0.07
 
 - type: reagent
   id: Nicotine
   name: reagent-name-nicotine
   group: Narcotics
   desc: reagent-desc-nicotine
-  #flavor: bitter
+  flavor: bitter
   color: "#C0C0C0"
   physicalDesc: reagent-physical-desc-strong-smelling
   plantMetabolism:
@@ -209,7 +219,7 @@
   group: Narcotics
   desc: reagent-desc-impedrezene
   physicalDesc: reagent-physical-desc-acrid
-  #flavor: bitter
+  flavor: bitter
   color: "#215263"
   metabolisms:
     Narcotic:
@@ -231,6 +241,11 @@
         probability: 0.05
       - !type:Drunk # Headaches and slurring are major symptoms of brain damage, this is close enough
         boozePower: 5
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "narcotic-effect-rainbows" ]
+        probability: 0.07
 
 - type: reagent
   id: SpaceDrugs
@@ -238,7 +253,7 @@
   group: Narcotics
   desc: reagent-desc-space-drugs
   physicalDesc: reagent-physical-desc-syrupy
-  #flavor: bitter
+  flavor: bitter
   color: "#63806e"
   metabolisms:
     Narcotic:
@@ -249,6 +264,11 @@
         type: Add
         time: 5
         refresh: false
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "narcotic-effect-rainbows" ]
+        probability: 0.07
 
 # Probably replace this one with sleeping chem when putting someone in a comatose state is easier
 - type: reagent
@@ -272,6 +292,11 @@
         component: ForcedSleeping
         refresh: false
         type: Add
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "narcotic-effect-sleepy" ]
+        probability: 0.05
 
 - type: reagent
   id: MuteToxin
@@ -295,7 +320,7 @@
   group: Narcotics
   desc: reagent-desc-norepinephric-acid
   physicalDesc: reagent-physical-desc-milky
-  #flavor: salty
+  flavor: salty
   color: "#96a8b5"
   boilingPoint: 255.0
   meltingPoint: 36.0

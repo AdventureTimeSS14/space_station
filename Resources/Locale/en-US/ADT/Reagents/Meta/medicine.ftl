@@ -22,3 +22,8 @@ reagent-desc-nikematide = Used for treating minor oxygen deprivation, but still 
 reagent-name-diethamilate = diethamilate
 reagent-desc-diethamilate = Hemostatic chemical to prevent small bleeding. Heals bloodloss when paired with dexalin plus.
 
+reagent-name-agolatine = agolatine
+reagent-desc-agolatine = An atypical antidepressant most commonly used to treat major depressive disorder and generalized anxiety disorder.
+
+reagent-name-haloperidol = haloperidol
+reagent-desc-haloperidol = A typical antipsychotic medication. Used in the treatment of schizophrenia, tics in Tourette syndrome, mania in bipolar disorder, delirium, agitation, acute psychosis, and hallucinations from alcohol withdrawal.

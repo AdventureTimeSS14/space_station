@@ -78,7 +78,7 @@
   group: Medicine
   desc: reagent-desc-sodiumizole
   physicalDesc: reagent-physical-desc-translucent
-  #flavor: medicine
+  flavor: medicine
   color: "#ba4d16"
   metabolisms:
     Medicine:
@@ -103,7 +103,7 @@
   group: Medicine
   desc: reagent-desc-nitrofurfoll
   physicalDesc: reagent-physical-desc-translucent
-  #flavor: medicine
+  flavor: medicine
   color: "#fcf27c"
   metabolisms:
     Medicine:
@@ -135,7 +135,7 @@
   group: Medicine
   desc: reagent-desc-perohydrogen
   physicalDesc: reagent-physical-desc-translucent
-  #flavor: medicine
+  flavor: medicine
   color: "#d1d1d155"
   metabolisms:
     Medicine:
@@ -168,7 +168,7 @@
   group: Medicine
   desc: reagent-desc-anelgesin
   physicalDesc: reagent-physical-desc-translucent
-  #flavor: medicine
+  flavor: medicine
   color: "#5b79ab"
   metabolisms:
     Medicine:
@@ -198,7 +198,7 @@
   group: Medicine
   desc: reagent-desc-minoxide
   physicalDesc: reagent-physical-desc-soothing
-  #flavor: medicine
+  flavor: medicine
   color: "#e3fcff"
   metabolisms:
     Medicine:
@@ -232,7 +232,7 @@
   group: Medicine
   desc: reagent-desc-biomicine
   physicalDesc: reagent-physical-desc-translucent
-  #flavor: medicine
+  flavor: medicine
   color: "#d1d1d155"
   metabolisms:
     Medicine:
@@ -269,7 +269,7 @@
   group: Medicine
   desc: reagent-desc-nikematide
   physicalDesc: reagent-physical-desc-translucent
-  #flavor: medicine
+  flavor: medicine
   color: "#c98928"
   metabolisms:
     Medicine:
@@ -301,7 +301,7 @@
   group: Medicine
   desc: reagent-desc-diethamilate
   physicalDesc: reagent-physical-desc-powdery
-  #flavor: medicine
+  flavor: medicine
   color: "#f5c6dc"
   metabolisms:
     Medicine:
@@ -333,7 +333,7 @@
   group: Medicine
   desc: reagent-desc-agolatine
   physicalDesc: reagent-physical-desc-opaque
-  #flavor: medicine
+  flavor: medicine
   color: "#f7ce5c"
   metabolisms:
     Medicine:
@@ -345,13 +345,13 @@
         probability: 0.04
 
 - type: reagent
-  id: ADTMHaloperidol #Антипсихотик, работает чисто как в Баратравме.
+  id: ADTMHaloperidol #Нейролептик, работает чисто как в Баратравме.
   name: reagent-name-haloperidol
   group: Medicine
   desc: reagent-desc-haloperidol
+  flavor: bitter
   physicalDesc: reagent-physical-desc-opaque
-  #flavor: medicine
-  color: "#f7ce5c"
+  color: "#ad5113"
   metabolisms:
     Medicine:
       effects:
@@ -359,7 +359,7 @@
         key: SeeingRainbows
         component: SeeingRainbows 
         type: Remove
-        time: 10
+        time: 20
       - !type:GenericStatusEffect
         key: Drunk
         time: 5.0 #Некоторые наркотические приколы включают в себя компонент опьянения. В любом случае он ниже, чем у этилредоксразина в 2 раза.
@@ -367,7 +367,10 @@
       - !type:PopupMessage
         type: Local
         visualType: Small
-        messages: 
-        - medicine-effect-antipsychotic
+        messages:  
         - medicine-effect-emotions
-        probability: 0.04
+        - narcotic-effect-sleepy
+        - medicine-effect-antipsychotic
+        probability: 0.05 
+        #я пытался сперва сделать так, чтобы последняя надпись всплывала при условии что чел видит радуги, не получилось.
+        #затем попытался сделать список реагентов, при которых появлялась эта надпись. Тоже не получилось.
