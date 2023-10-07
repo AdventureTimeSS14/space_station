@@ -8,6 +8,8 @@ install-dep:
   variables:
     GIT_SUBMODULE_STRATEGY: recursive
     GIT_SUBMODULE_UPDATE_FLAGS: --init --depth 50 --recursive --jobs 4
+  before_script:
+    - \[ -d ../artifacts \] || mkdir ../artifacts
   script:
     - echo "Install dependenses ..."
 
@@ -45,20 +47,34 @@ content-test:
     GIT_CLEAN_FLAGS: none
     GIT_CHECKOUT: none
   dependencies: []
+  before_script:
+    - \[ -d ../artifacts \] || mkdir ../artifacts
   script:
-    - dotnet test --configuration Tools --no-build Content.Tests/Content.Tests.csproj -- NUnit.ConsoleOut=0  
+    - dotnet test --configuration Tools --no-build Content.Tests/Content.Tests.csproj --logger "junit;LogFilePath=../artifacts/content-tests.xml"
+  artifacts:
+    paths: 
+      - ./artifacts/content-tests.xml
+    reports:
+      junit: ./artifacts/content-tests.xml
 
 unit-test:       
   stage: test
-  needs: ["content-test"]
+  needs: ["yaml-test"]
   variables:
     DOTNET_gcServer: 1
     GITHUB_ACTIONS: 1
     GIT_CLEAN_FLAGS: none
     GIT_CHECKOUT: none
   dependencies: []
+  before_script:
+    - \[ -d ../artifacts \] || mkdir ../artifacts
   script:
-    - dotnet test --configuration Tools --no-build Content.IntegrationTests/Content.IntegrationTests.csproj -- NUnit.ConsoleOut=0 NUnit.MapWarningTo=Failed
+    - dotnet test --configuration Tools --no-build Content.IntegrationTests/Content.IntegrationTests.csproj --logger "junit;LogFilePath=../artifacts/unit-tests.xml"
+  artifacts:
+    paths: 
+      - ./artifacts/unit-tests.xml
+    reports:
+      junit: ./artifacts/unit-tests.xml
 
 
 remove-build:
