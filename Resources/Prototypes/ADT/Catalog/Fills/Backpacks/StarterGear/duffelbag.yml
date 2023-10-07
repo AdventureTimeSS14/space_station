@@ -102,3 +102,29 @@
     contents:
       - id: ADTExtMagazineRifle
         amount: 3
+#Senior
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackDuffelSecurity
+  id: ADTClothingBackpackDuffelSeniorSecurityFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalSecurity
+      - id: Flash
+      - id: SpeedLoaderMagnumRubber
+      - id: SpeedLoaderMagnumRubber
+      - id: SpeedLoaderMagnum
+      - id: ADTSmokeGrenade
+      - id: ADTSmokeGrenade
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateAmmoBundle
+  id: ADTClothingBackpackDuffelSsmokeGrenade
+  name: Набор дымовых гранат синдиката
+  description: Набор из 6 штук дымовых гранат синдиката 
+  components:
+  - type: StorageFill
+    contents:
+      - id: ADTSSmokeGrenade
+        amount: 6

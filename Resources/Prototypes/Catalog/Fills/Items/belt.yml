@@ -133,6 +133,7 @@
         amount: 2
       - id: EmpGrenade
         amount: 2
+      - id: ADTSSmokeGrenade #ADT
 
 - type: entity
   id: ClothingBeltMilitaryWebbingMedFilled

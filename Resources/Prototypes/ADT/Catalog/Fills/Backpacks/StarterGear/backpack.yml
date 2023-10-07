@@ -53,3 +53,18 @@
       - id: BoxSurvivalMedical
       - id: JawsOfLife
 
+#Senior
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackSecurity
+  id: ADTClothingBackpackSeniorSecurityFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalSecurity
+      - id: Flash
+      - id: SpeedLoaderMagnumRubber
+      - id: SpeedLoaderMagnumRubber
+      - id: SpeedLoaderMagnum
+      - id: ADTSmokeGrenade
+      - id: ADTSmokeGrenade

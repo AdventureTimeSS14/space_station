@@ -131,6 +131,7 @@
         amount: 2
       - id: GrenadeFrag
         amount: 2
+      - id: ADTSSmokeGrenade
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateAmmo
@@ -299,6 +300,8 @@
       - id: WeaponPistolViper
       - id: PinpointerNuclear
       - id: MicroBombImplanter
+      - id: ADTSSmokeGrenade
+      - id: ADTSSmokeGrenade
 
 
 - type: entity

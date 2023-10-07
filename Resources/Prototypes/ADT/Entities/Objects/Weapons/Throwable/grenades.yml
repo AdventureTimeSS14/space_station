@@ -1,0 +1,45 @@
+- type: entity
+  name: Дымовая граната
+  description: Вам определенно не стоит пытаться разобрать её самостоятельно 
+  parent: GrenadeBase
+  id: ADTSmokeGrenade
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Weapons/Grenades/smokegrenades.rsi
+    - type: SmokeOnTrigger
+      spreadAmount: 70
+      time: 40
+      sound: /Audio/Effects/smoke.ogg
+    - type: DeleteOnTrigger
+    - type: Appearance
+    - type: OnUseTimerTrigger
+      delay: 2.5
+      beepSound:
+        path: "/Audio/Effects/beep1.ogg"
+        params:
+          volume: 5
+      initialBeepDelay: 0
+      beepInterval: 2
+
+- type: entity
+  name: Дымовая граната
+  description: Вам определенно не стоит пытаться разобрать её самостоятельно. Вы чувствуете страх держа её в руках
+  parent: GrenadeBase
+  id: ADTSSmokeGrenade
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Weapons/Grenades/ssmokegreandes.rsi
+    - type: SmokeOnTrigger
+      spreadAmount: 120
+      time: 60
+      sound: /Audio/Effects/smoke.ogg
+    - type: DeleteOnTrigger
+    - type: Appearance
+    - type: OnUseTimerTrigger
+      delay: 2.5
+      beepSound:
+        path: "/Audio/Effects/beep1.ogg"
+        params:
+          volume: 5
+      initialBeepDelay: 0
+      beepInterval: 2
