@@ -177,6 +177,12 @@
     },
     {
         "name": "JobIconADTInvestigator"
-    }
+    },
+      {
+          "name": "Revolutionary"
+      },
+      {
+          "name": "HeadRevolutionary"
+      }
   ]
 }
