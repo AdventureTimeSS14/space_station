@@ -14,7 +14,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.3
+        amount: 0.2
       - !type:HealthChange
         damage:
           groups:
@@ -45,7 +45,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.3
+        amount: 0.2
       - !type:AdjustReagent
         reagent: Nutriment
         amount: 0.2
@@ -69,9 +69,14 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.35
+        amount: 0.25
+    Medicine:
+      effects:
       - !type:AdjustTemperature
-        amount: 100
+        conditions:
+        - !type:Temperature
+          max: 350.15
+        amount: 10000 # thermal energy, not temperature!
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
     state: technobeer
@@ -92,7 +97,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.2
+        amount: 0.15
       - !type:AdjustReagent
         reagent: Nutriment
         amount: 0.1
@@ -116,9 +121,14 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.35
+        amount: 0.25
+    Medicine:
+      effects:
       - !type:AdjustTemperature
-        amount: -100
+        conditions:
+        - !type:Temperature
+          min: 263.15
+        amount: -10000
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
     state: livseybeer
@@ -139,7 +149,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.35
+        amount: 0.25
       - !type:MovespeedModifier
         walkSpeedModifier: 1.1
         sprintSpeedModifier: 1.1
@@ -169,7 +179,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.35
+        amount: 0.3
       - !type:MovespeedModifier
         walkSpeedModifier: 0.85
         sprintSpeedModifier: 0.85
@@ -193,7 +203,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.45
+        amount: 0.35
       - !type:HealthChange
         damage:
           types:

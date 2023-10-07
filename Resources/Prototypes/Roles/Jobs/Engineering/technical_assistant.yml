@@ -4,10 +4,12 @@
   description: job-description-technical-assistant
   playTimeTracker: JobTechnicalAssistant
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 54000 #15 hrs
-      inverted: true # stop playing intern if you're good at engineering!
+    - !type:OverallPlaytimeRequirement
+      time: 7200 #2 hrs
+    #- !type:DepartmentTimeRequirement
+    #  department: Engineering
+    #  time: 54000 #15 hrs
+    #  inverted: true # stop playing intern if you're good at engineering!
   startingGear: TechnicalAssistantGear
   icon: "JobIconTechnicalAssistant"
   supervisors: job-supervisors-engineering

@@ -156,7 +156,7 @@
         conditions:
         - !type:ReagentThreshold
           reagent: Ethanol
-          min: 12
+          min: 30
         # dwarves immune to vomiting from alcohol
         - !type:OrganType
           type: Dwarf
