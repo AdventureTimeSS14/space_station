@@ -1,0 +1,69 @@
+stages:
+  - install  
+  - build
+  - test
+
+install-dep:
+  stage: install
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+    GIT_SUBMODULE_UPDATE_FLAGS: --init --depth 50 --recursive --jobs 4
+  script:
+    - echo "Install dependenses ..."
+
+build-project:       
+  stage: build
+  variables:
+    GITHUB_ACTIONS: 1
+    GIT_CLEAN_FLAGS: none
+    GIT_CHECKOUT: none
+  dependencies: []
+  script:
+    - |
+      echo "Restore Projects ..."
+      dotnet restore
+      echo "Build Projects ..."
+      dotnet build --configuration Release --no-restore /p:WarningsAsErrors= /m
+      dotnet run --project Content.YAMLLinter/Content.YAMLLinter.csproj --no-build
+      echo "Compile complete."
+
+yaml-test:       
+  stage: test
+  variables:
+    GITHUB_ACTIONS: 1
+    GIT_CLEAN_FLAGS: none
+    GIT_CHECKOUT: none
+  dependencies: []
+  script:
+    - dotnet run --project Content.YAMLLinter/Content.YAMLLinter.csproj --no-build      
+
+content-test:       
+  stage: test
+  needs: ["yaml-test"]
+  variables:
+    GITHUB_ACTIONS: 1
+    GIT_CLEAN_FLAGS: none
+    GIT_CHECKOUT: none
+  dependencies: []
+  script:
+    - dotnet test --configuration Tools --no-build Content.Tests/Content.Tests.csproj -- NUnit.ConsoleOut=0  
+
+unit-test:       
+  stage: test
+  needs: ["content-test"]
+  variables:
+    DOTNET_gcServer: 1
+    GITHUB_ACTIONS: 1
+    GIT_CLEAN_FLAGS: none
+    GIT_CHECKOUT: none
+  dependencies: []
+  script:
+    - dotnet test --configuration Tools --no-build Content.IntegrationTests/Content.IntegrationTests.csproj -- NUnit.ConsoleOut=0 NUnit.MapWarningTo=Failed
+
+
+remove-build:
+  stage: .post
+  when: on_failure
+  script:
+    - cd ..
+    - rm -R space_station

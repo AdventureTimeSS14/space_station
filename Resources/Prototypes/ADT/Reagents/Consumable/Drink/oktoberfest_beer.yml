@@ -70,8 +70,13 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.35
+    Medicine:
+      effects:
       - !type:AdjustTemperature
-        amount: 100
+        conditions:
+        - !type:Temperature
+          max: 350.15
+        amount: 10000 # thermal energy, not temperature!
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
     state: technobeer
@@ -117,8 +122,13 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.35
+    Medicine:
+      effects:
       - !type:AdjustTemperature
-        amount: -100
+        conditions:
+        - !type:Temperature
+          min: 263.15
+        amount: -10000
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
     state: livseybeer

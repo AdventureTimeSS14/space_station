@@ -125,7 +125,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 15
+          min: 25
         - !type:OrganType
           type: Dwarf
           shouldHave: false
@@ -136,7 +136,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 15
+          min: 25
         - !type:OrganType
           type: Dwarf
         damage:
@@ -145,7 +145,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 15
+          min: 25
         - !type:OrganType
           type: Dwarf
         damage:
@@ -156,7 +156,7 @@
         conditions:
         - !type:ReagentThreshold
           reagent: Ethanol
-          min: 12
+          min: 36
         # dwarves immune to vomiting from alcohol
         - !type:OrganType
           type: Dwarf

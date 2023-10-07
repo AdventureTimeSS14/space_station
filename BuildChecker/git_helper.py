@@ -83,6 +83,11 @@ def install_hooks():
     hooks_target_dir = Path("..")/".git"/"hooks"
     hooks_source_dir = Path("hooks")
 
+    os
+
+    if not os.path.exists(hooks_target_dir):
+        os.makedirs(hooks_target_dir)
+
     # Clear entire tree since we need to kill deleted files too.
     for filename in os.listdir(str(hooks_target_dir)):
         os.remove(str(hooks_target_dir/filename))
