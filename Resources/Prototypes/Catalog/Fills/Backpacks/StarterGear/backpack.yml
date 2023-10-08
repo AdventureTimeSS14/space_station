@@ -261,6 +261,34 @@
 
 - type: entity
   noSpawn: true
+  parent: ClothingBackpackERTLeader
+  id: ClothingBackpackERTLeaderFilledREV
+  components:
+    - type: StorageFill
+      contents:
+        #- id: WeaponPulseCarbine
+        #- id: WeaponPulsePistol
+        - id: WeaponDisabler
+        - id: MedicatedSuture
+        - id: RegenerativeMesh
+        #- id: Handcuffs
+        - id: JawsOfLife
+        - id: BoxZiptie
+        - id: BoxFlashbang
+        - id: WeaponSubMachineGunDrozdRubber
+        - id: MagazinePistolSubMachineGunRubber
+          amount: 2
+        - id: MagazinePistolSubMachineGun
+          amount: 2
+        #- id: WeaponRifleLecter
+        #- id: MagazineRifle
+        #- id: MagazineRifle
+        #- id: C4
+        #  amount: 1
+        - id: CombatKnife
+
+- type: entity
+  noSpawn: true
   parent: ClothingBackpackERTSecurity
   id: ClothingBackpackERTSecurityFilled
   components:
@@ -278,6 +306,34 @@
         - id: MagazineRifle
         - id: C4
           amount: 1
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackERTSecurity
+  id: ClothingBackpackERTSecurityFilledREV
+  components:
+    - type: StorageFill
+      contents:
+        #- id: WeaponPulseCarbine
+        #- id: WeaponPulsePistol
+        - id: WeaponDisabler
+        - id: MedicatedSuture
+        - id: RegenerativeMesh
+        #- id: Handcuffs
+        - id: JawsOfLife
+        - id: BoxZiptie
+        - id: BoxFlashbang
+        - id: WeaponSubMachineGunDrozdRubber
+        - id: MagazinePistolSubMachineGunRubber
+          amount: 2
+        - id: MagazinePistolSubMachineGun
+          amount: 2
+        #- id: WeaponRifleLecter
+        #- id: MagazineRifle
+        #- id: MagazineRifle
+        #- id: C4
+        #  amount: 1
+        - id: CombatKnife
 
 - type: entity
   noSpawn: true
@@ -301,6 +357,35 @@
 
 - type: entity
   noSpawn: true
+  parent: ClothingBackpackERTMedical
+  id: ClothingBackpackERTMedicalFilledREV
+  components:
+    - type: StorageFill
+      contents:
+        #- id: WeaponPulseCarbine
+        - id: ADTCombatHypo
+        - id: MedkitAdvancedFilled
+        #- id: OmnizineChemistryBottle
+        #- id: EpinephrineChemistryBottle
+        - id: EpinephrineChemistryBottle
+        - id: BluespaceBeaker
+        - id: Defibrillator
+        - id: CrowbarRed
+        #- id: WeaponRifleLecter
+        #- id: MagazineRifle
+        #- id: MagazineRifle
+        - id: WeaponDisabler
+        - id: BoxZiptie
+        - id: WeaponSubMachineGunDrozdRubber
+        - id: MagazinePistolSubMachineGunRubber
+          amount: 2
+        - id: MagazinePistolSubMachineGun
+          amount: 1
+        - id: ADTtelescopicBaton
+        - id: CombatKnife
+
+- type: entity
+  noSpawn: true
   parent: ClothingBackpackERTEngineer
   id: ClothingBackpackERTEngineerFilled
   components:
@@ -321,6 +406,38 @@
           amount: 4
         - id: ExGrenade
           amount: 3
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackERTEngineer
+  id: ClothingBackpackERTEngineerFilledREV
+  components:
+    - type: StorageFill
+      contents:
+        - id: trayScanner
+        - id: WeaponDisabler
+        - id: MedicatedSuture
+        - id: RegenerativeMesh
+        - id: RCD
+        - id: RCDAmmo
+        - id: RCDAmmo
+        #- id: RCDAmmo
+        #- id: WeaponRifleLecter
+        #- id: MagazineRifle
+        #- id: MagazineRifle
+        #- id: C4
+        #  amount: 4
+        #- id: ExGrenade
+        #  amount: 3
+        - id: BoxZiptie
+        - id: WeaponSubMachineGunDrozdRubber
+        - id: MagazinePistolSubMachineGunRubber
+          amount: 2
+        - id: MagazinePistolSubMachineGun
+          amount: 1
+        - id: ADTtelescopicBaton
+        - id: CombatKnife
+
 
 - type: entity
   noSpawn: true

@@ -234,8 +234,8 @@
       - id: ADTtelescopicBaton
       - id: MedicalTechFabCircuitboard
       - id: BoxEncryptionKeyMedical
-      - id: ADTMindShieldImplanter
-        amount: 2
+      #- id: ADTMindShieldImplanter
+      #  amount: 2
       - id: MaterialBiomass
         amount: 3
       - id: TrackingImplanter
@@ -272,8 +272,8 @@
         amount: 3
       - id: TrackingImplanter
         amount: 2
-      - id: ADTMindShieldImplanter
-        amount: 2
+      #- id: ADTMindShieldImplanter
+      #  amount: 2
       - id: NitrousOxideTankFilled
       - id: BoxEncryptionKeyMedical
       # Sirena-Underwear-Start
