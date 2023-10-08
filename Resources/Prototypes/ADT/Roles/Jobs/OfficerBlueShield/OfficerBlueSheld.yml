@@ -26,6 +26,9 @@
     - Medical
     - Engineering
     - Cargo
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
 
 - type: playTimeTracker
   id: JobADTBlueShieldOfficer
