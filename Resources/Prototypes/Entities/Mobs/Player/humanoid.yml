@@ -15,6 +15,7 @@
       - NamesLastERTCallsign # Corvax-Localization
     - type: RandomHumanoidSpawner
       settings: ERTLeader
+  #noSpawn: true
 
 - type: randomHumanoidSettings
   id: ERTLeader
@@ -30,6 +31,7 @@
       nameSegments:
       - NamesFirstMilitaryLeaderCorvax # Corvax-Localization
       - NamesLastERTCallsign # Corvax-Localization
+  #noSpawn: true
 
 - type: entity
   id: RandomHumanoidSpawnerERTLeaderEVA
@@ -54,6 +56,31 @@
     - type: Loadout
       prototypes: [ ERTLeaderGearEVA ]
 
+#против революции
+
+- type: entity
+  id: RandomHumanoidSpawnerERTLeaderREV
+  parent: RandomHumanoidSpawnerERTLeader
+  name: ERT leader
+  suffix: REV
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertleadereva
+    - type: RandomHumanoidSpawner
+      settings: ERTLeaderREV
+
+- type: randomHumanoidSettings
+  id: ERTLeaderREV
+  parent: ERTLeader
+  components:
+    - type: GhostRole
+      name: ghost-role-information-ert-leader-name
+      description: ghost-role-information-ert-leader-description
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ ERTLeaderGearREV ]
+
 ## ERT Janitor
 
 - type: entity
@@ -70,6 +97,7 @@
       - NamesLastERTCallsign # Corvax-Localization
     - type: RandomHumanoidSpawner
       settings: ERTJanitor
+  #noSpawn: true
 
 - type: randomHumanoidSettings
   id: ERTJanitor
@@ -85,6 +113,7 @@
       - NamesLastERTCallsign # Corvax-Localization
     - type: Loadout
       prototypes: [ ERTJanitorGear ]
+  #noSpawn: true
 
 - type: entity
   id: RandomHumanoidSpawnerERTJanitorEVA
@@ -121,10 +150,11 @@
       state: ertengineer
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryCorvax # Corvax-Localization
+      - NamesFirstERTEngineer # Corvax-Localization
       - NamesLastERTCallsign # Corvax-Localization
     - type: RandomHumanoidSpawner
       settings: ERTEngineer
+  #noSpawn: true
 
 - type: randomHumanoidSettings
   id: ERTEngineer
@@ -140,6 +170,7 @@
       - NamesLastERTCallsign # Corvax-Localization
     - type: Loadout
       prototypes: [ ERTEngineerGear ]
+  #noSpawn: true
 
 - type: entity
   id: RandomHumanoidSpawnerERTEngineerEVA
@@ -164,6 +195,31 @@
     - type: Loadout
       prototypes: [ ERTEngineerGearEVA ]
 
+#против революции
+
+- type: entity
+  id: RandomHumanoidSpawnerERTEngineerREV
+  parent: RandomHumanoidSpawnerERTEngineer
+  name: ERT engineer
+  suffix: REV
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertengineereva
+    - type: RandomHumanoidSpawner
+      settings: ERTEngineerREV
+
+- type: randomHumanoidSettings
+  id: ERTEngineerREV
+  parent: ERTEngineer
+  components:
+    - type: GhostRole
+      name: ghost-role-information-ert-engineer-name
+      description: ghost-role-information-ert-engineer-description
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ ERTEngineerGearREV ]
+
 ## ERT Security
 
 - type: entity
@@ -180,6 +236,7 @@
       - NamesLastERTCallsign # Corvax-Localization
     - type: RandomHumanoidSpawner
       settings: ERTSecurity
+  #noSpawn: true
 
 - type: randomHumanoidSettings
   id: ERTSecurity
@@ -197,6 +254,7 @@
       - NamesLastERTCallsign # Corvax-Localization
     - type: Loadout
       prototypes: [ ERTSecurityGear ]
+  #noSpawn: true
 
 - type: entity
   id: RandomHumanoidSpawnerERTSecurityEVA
@@ -221,6 +279,31 @@
     - type: Loadout
       prototypes: [ ERTSecurityGearEVA ]
 
+#против революции
+
+- type: entity
+  id: RandomHumanoidSpawnerERTSecurityREV
+  parent: RandomHumanoidSpawnerERTSecurity
+  name: ERT security
+  suffix: REV
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertsecurityeva
+    - type: RandomHumanoidSpawner
+      settings: ERTSecurityREV
+
+- type: randomHumanoidSettings
+  id: ERTSecurityREV
+  parent: ERTSecurity
+  components:
+    - type: GhostRole
+      name: ghost-role-information-ert-security-name
+      description: ghost-role-information-ert-security-description
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ ERTSecurityGearREV ]
+
 ## ERT Medic
 
 - type: entity
@@ -233,10 +316,11 @@
       state: ertmedical
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryCorvax # Corvax-Localization
+      - NamesFirstERTMedical # Corvax-Localization
       - NamesLastERTCallsign # Corvax-Localization
     - type: RandomHumanoidSpawner
       settings: ERTMedical
+  #noSpawn: true
 
 - type: randomHumanoidSettings
   id: ERTMedical
@@ -248,10 +332,11 @@
     - type: GhostTakeoverAvailable
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryCorvax # Corvax-Localization
+      - NamesFirstERTMedical # Corvax-Localization
       - NamesLastERTCallsign # Corvax-Localization
     - type: Loadout
       prototypes: [ ERTMedicalGear ]
+  #noSpawn: true
 
 - type: entity
   id: RandomHumanoidSpawnerERTMedicalEVA
@@ -275,6 +360,31 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ ERTMedicalGearEVA ]
+
+#против революции
+
+- type: entity
+  id: RandomHumanoidSpawnerERTMedicalREV
+  parent: RandomHumanoidSpawnerERTMedical
+  name: ERT medic
+  suffix: REV
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertmedicaleva
+    - type: RandomHumanoidSpawner
+      settings: ERTMedicalREV
+
+- type: randomHumanoidSettings
+  id: ERTMedicalREV
+  parent: ERTMedical
+  components:
+    - type: GhostRole
+      name: ghost-role-information-ert-medical-name
+      description: ghost-role-information-ert-medical-description
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ ERTMedicalGearREV ]
 
 ## CBURN
 

@@ -59,3 +59,19 @@ ent-ClothingBackpackSalvageFilled = { ent-ClothingBackpackSalvage }
 ent-ClothingBackpackPirateFilled = { ent-ClothingBackpackSatchelLeather }
     .suffix = Заполненный, Пират
     .desc = { ent-ClothingBackpackSatchelLeather.desc }
+
+ent-ClothingBackpackERTLeaderFilledREV = { ent-ClothingBackpackERTLeader }
+    .suffix = Против бунтов
+    .desc = { ent-ClothingBackpackERTLeader.desc }
+
+ent-ClothingBackpackERTMedicalFilledREV = { ent-ClothingBackpackERTMedical }
+    .suffix = Против бунтов
+    .desc = { ent-ClothingBackpackERTMedical.desc }
+
+ent-ClothingBackpackERTEngineerFilledREV = { ent-ClothingBackpackERTEngineer }
+    .suffix = Против бунтов
+    .desc = { ent-ClothingBackpackERTEngineer.desc }
+
+ent-ClothingBackpackERTSecurityFilledREV = { ent-ClothingBackpackERTSecurity }
+    .suffix = Против бунтов
+    .desc = { ent-ClothingBackpackERTSecurity.desc }
