@@ -55,3 +55,7 @@ ent-ADTClothingHeadHatsBavarianHatGreen = зеленая егерская шля
 ent-ADTClothingHeadHatsBavarianHatRed = красная егерская шляпа
     .desc = Егерская шляпа красного цвета, с пером. 
     .suffix = { "Октоберфест" }
+
+ent-ADTClothingHeadHatsPathologistsCap = шапочка патологоанатома
+    .desc = медицинская шапочка, которой прикрывают голову при осмотре трупов.
+    .suffix = { "Патологоанатом" }

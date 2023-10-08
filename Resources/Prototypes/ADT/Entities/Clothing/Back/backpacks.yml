@@ -144,3 +144,34 @@
         amount: 2
       - id: BoxFolderBlue
         amount: 2
+
+# Приколы Патологоанатома
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackMedical
+  id: ADTClothingBackpackPathologistFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalMedical
+      - id: BoxFolderClipboard
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackSatchelMedical
+  id: ADTClothingBackpackSatchelPathologistFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalMedical
+      - id: BoxFolderClipboard
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackDuffelMedical
+  id: ADTClothingBackpackDuffelPathologistFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalMedical
+      - id: BoxFolderClipboard

@@ -173,3 +173,11 @@ ent-ADTClothingUniformOktoberfestDirndlGreen = дирндль с зеленой 
 ent-ADTClothingUniformOktoberfestDirndlRed = дирндль с красной юбкой
     .desc = Стилизованное под традиционный наряд платье с красной юбкой.
     .suffix = { "Октоберфест" }
+
+ent-ADTClothingUniformPathologistSuit = костюм патологоанатома
+    .desc = Лёгкий комбинезон для работника морга.
+    .suffix = { "Патологоанатом" }    
+
+ent-ADTClothingUniformPathologistSkirt = юбка-костюм патологоанатома
+    .desc = Лёгкая юбка-комбинезон для работницы морга.
+    .suffix = { "Патологоанатом" }    

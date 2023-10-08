@@ -49,3 +49,4 @@ job-description-senior-researcher = Teach new scientists the basics of item prin
 job-description-senior-physician = Teach new medics the basics of tending to the wounded, chemistry, diagnosing the diseased and disposing of the dead.
 job-description-senior-officer = Teach new officers the basics of searches, preforming arrests, prison times and how to properly shoot a firearm.
 job-description-ADTInvestigator = Conduct interrogations, interview victims and witnesses, help the detective and the warden, solve a spesificly complex criminal cases.
+job-description-ADTPathologist = Examine the bodies of the dead crew, determine the causes of death and don't forget to clone them.

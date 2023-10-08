@@ -23,3 +23,13 @@ ent-ADTClothingBackpackDuffelInvestigatorFilled = вещмешок следов�
 
 ent-ADTClothingBackpackSatchelInvestigatorFilled = сумка следователя СБ
     .desc = Сумка для хранения кипы бумаг и вещдоков.
+
+
+ent-ADTClothingBackpackPathologistFilled = рюкзак патологоанатома
+    .desc = Рюкзак для хранения инструментов и бумаг
+
+ent-ADTClothingBackpackDuffelPathologistFilled = вещмешок патологоанатома
+    .desc = Большой вещмешок для хранения инструментов и бумаг
+
+ent-ADTClothingBackpackSatchelPathologistFilled = сумка патологоанатома
+    .desc = Сумка для хранения инструментов и бумаг

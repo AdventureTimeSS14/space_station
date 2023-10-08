@@ -21,3 +21,7 @@ ent-ADTClothingOuterCoatJohanCoat = пальто Йохана
 ent-ADTClothingOuterCoatInvestigator = бушлат следователя Службы Безопасности
     .desc = Один вид этого бушлата повышает вероятность чистосердечного признания подозреваемого на 50%.
     .suffix = { "" }
+
+ent-ADTClothingOuterBioPathologist = защитный костюм патологоанатома
+    .desc = Костюм, защищающий от биологического заражения во время работы с трупами.
+    .suffix = { "Патологоанатом" }

@@ -363,7 +363,7 @@
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/Oktoberfest/oktoberfest_male_redvest.rsi #спрайты от SHIONE
 
-#CMO
+#Medical
 - type: entity
   parent: ClothingUniformBase
   id: ADTClothingUniformHikeformCmo
@@ -374,3 +374,14 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/hike_uniform_cmo.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/hike_uniform_cmo.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformPathologistSuit
+  name: pathologist jumpsuit
+  description: A lightweight jumpsuit for a morgue worker
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/genetics.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/genetics.rsi
