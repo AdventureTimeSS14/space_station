@@ -15,7 +15,7 @@
       - NamesLastERTCallsign # Corvax-Localization
     - type: RandomHumanoidSpawner
       settings: ERTLeader
-  noSpawn: true
+  #noSpawn: true
 
 - type: randomHumanoidSettings
   id: ERTLeader
@@ -31,7 +31,7 @@
       nameSegments:
       - NamesFirstMilitaryLeaderCorvax # Corvax-Localization
       - NamesLastERTCallsign # Corvax-Localization
-  noSpawn: true
+  #noSpawn: true
 
 - type: entity
   id: RandomHumanoidSpawnerERTLeaderEVA
@@ -97,7 +97,7 @@
       - NamesLastERTCallsign # Corvax-Localization
     - type: RandomHumanoidSpawner
       settings: ERTJanitor
-  noSpawn: true
+  #noSpawn: true
 
 - type: randomHumanoidSettings
   id: ERTJanitor
@@ -113,7 +113,7 @@
       - NamesLastERTCallsign # Corvax-Localization
     - type: Loadout
       prototypes: [ ERTJanitorGear ]
-  noSpawn: true
+  #noSpawn: true
 
 - type: entity
   id: RandomHumanoidSpawnerERTJanitorEVA
@@ -154,7 +154,7 @@
       - NamesLastERTCallsign # Corvax-Localization
     - type: RandomHumanoidSpawner
       settings: ERTEngineer
-  noSpawn: true
+  #noSpawn: true
 
 - type: randomHumanoidSettings
   id: ERTEngineer
@@ -170,7 +170,7 @@
       - NamesLastERTCallsign # Corvax-Localization
     - type: Loadout
       prototypes: [ ERTEngineerGear ]
-  noSpawn: true
+  #noSpawn: true
 
 - type: entity
   id: RandomHumanoidSpawnerERTEngineerEVA
@@ -236,7 +236,7 @@
       - NamesLastERTCallsign # Corvax-Localization
     - type: RandomHumanoidSpawner
       settings: ERTSecurity
-  noSpawn: true
+  #noSpawn: true
 
 - type: randomHumanoidSettings
   id: ERTSecurity
@@ -254,7 +254,7 @@
       - NamesLastERTCallsign # Corvax-Localization
     - type: Loadout
       prototypes: [ ERTSecurityGear ]
-  noSpawn: true
+  #noSpawn: true
 
 - type: entity
   id: RandomHumanoidSpawnerERTSecurityEVA
@@ -320,7 +320,7 @@
       - NamesLastERTCallsign # Corvax-Localization
     - type: RandomHumanoidSpawner
       settings: ERTMedical
-  noSpawn: true
+  #noSpawn: true
 
 - type: randomHumanoidSettings
   id: ERTMedical
@@ -336,7 +336,7 @@
       - NamesLastERTCallsign # Corvax-Localization
     - type: Loadout
       prototypes: [ ERTMedicalGear ]
-  noSpawn: true
+  #noSpawn: true
 
 - type: entity
   id: RandomHumanoidSpawnerERTMedicalEVA
