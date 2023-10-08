@@ -36,7 +36,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 20
+          min: 20.05
         damage:
           types:
             Brute: 2
@@ -55,7 +55,7 @@
       - !type:PopupMessage
         conditions:
         - !type:TotalDamage
-          max: 20
+          min: 5
         type: Local
         visualType: Small
         messages: [ "medicine-effect-usual" ]
@@ -68,7 +68,7 @@
     Alcohol:
       effects:
       - !type:Drunk
-        boozePower: 20
+        boozePower: 18
   plantMetabolism:
   - !type:PlantAdjustToxins
     amount: -10
@@ -176,7 +176,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 15.1
+          min: 15.05
         damage:
           types:
             Asphyxiation: 0.5
@@ -193,7 +193,7 @@
       - !type:PopupMessage
         conditions:
         - !type:ReagentThreshold
-          min: 15.1
+          min: 15.05
         type: Local
         visualType: Small
         messages: [ "medicine-effect-stress" ]
@@ -279,7 +279,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 10
+          min: 10.05
         damage:
           types:
             Asphyxiation: 1
@@ -289,11 +289,11 @@
       - !type:Jitter
         conditions:
         - !type:ReagentThreshold
-          min: 10
+          min: 10.05
       - !type:PopupMessage
         conditions:
         - !type:ReagentThreshold
-          min: 10
+          min: 10.05
         type: Local
         visualType: Small
         messages: [ "medicine-effect-stress" ]
@@ -318,7 +318,7 @@
       - !type:HealthChange
         conditions:
           - !type:ReagentThreshold
-            min: 20
+            min: 20.05
         damage:
           types:
             Asphyxiation: 3
@@ -358,7 +358,7 @@
       - !type:HealthChange
         conditions:
           - !type:ReagentThreshold
-            min: 25
+            min: 25.05
         damage:
           types:
             Asphyxiation: 5
@@ -402,7 +402,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 20
+          min: 20.05
         damage:
           types:
             Asphyxiation: 1
@@ -473,18 +473,18 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 30
+          min: 30.05
         damage:
           types:
            Heat: 2
       - !type:Jitter
         conditions:
         - !type:ReagentThreshold
-          min: 30
+          min: 30.05
       - !type:PopupMessage
         conditions:
         - !type:ReagentThreshold
-          min: 30
+          min: 30.05
         type: Local
         visualType: Small
         messages: [ "medicine-effect-stress" ]
@@ -555,7 +555,7 @@
         factor: -10
         conditions:
         - !type:ReagentThreshold
-          min: 30
+          min: 30.05
       - !type:PopupMessage
         type: Local
         messages:
@@ -565,7 +565,7 @@
         probability: 0.1
         conditions:
         - !type:ReagentThreshold
-          min: 25
+          min: 25.05
       - !type:PopupMessage
         conditions:
         - !type:TotalDamage
@@ -844,7 +844,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 15
+          min: 15.05
         damage:
           types:
             Bloodloss: 3
