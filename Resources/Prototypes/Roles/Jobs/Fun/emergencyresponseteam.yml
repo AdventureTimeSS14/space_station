@@ -49,6 +49,25 @@
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
+- type: startingGear
+  id: ERTLeaderGearREV
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTLeader
+    back: ClothingBackpackERTLeaderFilledREV
+    shoes: ADTClothingShoesBootsMagERT
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitERTLeader
+    suitstorage: OxygenTankFilled
+    id: ERTLeaderPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ADTClothingBeltMilitaryWebbingRPSL_Rev
+    pocket1: PinpointerNuclear
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+
 # Engineer
 - type: job
   id: ERTEngineer
@@ -101,6 +120,26 @@
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
+- type: startingGear
+  id: ERTEngineerGearREV
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTEngineer
+    back: ClothingBackpackERTEngineerFilledREV
+    shoes: ADTClothingShoesBootsMagERT
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesMeson
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitERTEngineer
+    suitstorage: OxygenTankFilled
+    id: ERTLeaderPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ClothingBeltChiefEngineerFilled
+    pocket1: PinpointerNuclear
+    pocket2: RemoteSignaller
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+
 # Security
 - type: job
   id: ERTSecurity
@@ -134,6 +173,26 @@
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
+
+- type: startingGear
+  id: ERTSecurityGearREV
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTSecurity
+    back: ClothingBackpackERTSecurityFilledREV
+    shoes: ADTClothingShoesBootsMagERT
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitERTSecurity
+    suitstorage: OxygenTankFilled
+    id: ERTLeaderPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ADTClothingBeltMilitaryWebbingRPSSL_Rev
+    pocket1: PinpointerNuclear
+    pocket2: FlashlightSeclite
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
 - type: startingGear
   id: ERTSecurityGearEVA
@@ -194,6 +253,26 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTMedic
     back: ClothingBackpackERTMedicalFilled
+    shoes: ADTClothingShoesBootsMagERT
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesHudMedical
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitERTMedical
+    suitstorage: OxygenTankFilled
+    id: ERTLeaderPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ADTClothingBeltMilitaryWebbingRPSML
+    pocket1: HandheldHealthAnalyzer
+    pocket2: PinpointerNuclear
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+
+- type: startingGear
+  id: ERTMedicalGearREV
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTMedic
+    back: ClothingBackpackERTMedicalFilledREV
     shoes: ADTClothingShoesBootsMagERT
     mask: ClothingMaskGasERT
     eyes: ClothingEyesHudMedical
