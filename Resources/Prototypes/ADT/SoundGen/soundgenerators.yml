@@ -25,7 +25,7 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/destruction_1.ogg
-        radius: 8
+      radius: 8
 
 - type: entity
   parent: ADTSoundGenBase
@@ -38,7 +38,7 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/destruction_2.ogg
-        radius: 8
+      radius: 8
 
 - type: entity
   parent: ADTSoundGenBase
@@ -51,7 +51,7 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/destruction_3.ogg
-        radius: 8
+      radius: 8
 
 - type: entity
   parent: ADTSoundGenBase
@@ -64,7 +64,7 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/budilnik.ogg
-        radius: 5
+      radius: 5
 
 - type: entity
   parent: ADTSoundGenBase
@@ -77,7 +77,7 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/hit.ogg
-        radius: 4
+      radius: 4
 
 - type: entity
   parent: ADTSoundGenBase
@@ -90,7 +90,7 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/moving_objects_ambient_scary.ogg
-        radius: 15
+      radius: 15
 
 - type: entity
   parent: ADTSoundGenBase
@@ -103,7 +103,7 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/factory_ambient.ogg
-        radius: 18
+      radius: 18
 
 - type: entity
   parent: ADTSoundGenBase
@@ -116,7 +116,7 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/pianino_chord_sudden.ogg
-        radius: 2
+      radius: 2
 
 - type: entity
   parent: ADTSoundGenBase
@@ -129,7 +129,7 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/shaft_water.ogg
-        radius: 15
+      radius: 15
 
 - type: entity
   parent: ADTSoundGenBase
@@ -142,7 +142,7 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/short_ambient_scary.ogg
-        radius: 8
+      radius: 8
 
 - type: entity
   parent: ADTSoundGenBase
@@ -155,7 +155,7 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/reverse_dissolve_scary.ogg
-        radius: 4
+      radius: 4
 
 - type: entity
   parent: ADTSoundGenBase
@@ -168,4 +168,4 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/dungeon_ambient_scary.ogg
-        radius: 20
+      radius: 20
