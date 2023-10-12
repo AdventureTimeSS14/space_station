@@ -8,10 +8,10 @@
   description: Sound Generator! Wowie!
   components:
   - type: Sprite
-    sprite: /Objects/Misc/soundgen.rsi
+    sprite: /Objects/Misc/skub.rsi
     state: icon
   - type: Item
-    sprite: /Objects/Misc/soundgen.rsi
+    sprite: /Objects/Misc/skub.rsi
 
 
 - type: entity
@@ -27,10 +27,10 @@
         path: /Audio/ADT/SoundGen/destruction_1.ogg
         radius: 8
     - type: Sprite
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
       state: icon
     - type: Item
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
 
 
 - type: entity
@@ -46,10 +46,10 @@
         path: /Audio/ADT/SoundGen/destruction_2.ogg
         radius: 8
     - type: Sprite
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
       state: icon
     - type: Item
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
 
 - type: entity
   parent: ADTSoundGenBase
@@ -64,10 +64,10 @@
         path: /Audio/ADT/SoundGen/destruction_3.ogg
         radius: 8
     - type: Sprite
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
       state: icon
     - type: Item
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
 
 - type: entity
   parent: ADTSoundGenBase
@@ -82,10 +82,10 @@
         path: /Audio/ADT/SoundGen/budilnik.ogg
         radius: 5
     - type: Sprite
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
       state: icon
     - type: Item
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
 
 - type: entity
   parent: ADTSoundGenBase
@@ -100,10 +100,10 @@
         path: /Audio/ADT/SoundGen/hit.ogg
         radius: 4
     - type: Sprite
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
       state: icon
     - type: Item
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
 
 - type: entity
   parent: ADTSoundGenBase
@@ -118,10 +118,10 @@
         path: /Audio/ADT/SoundGen/moving_objects_ambient_scary.ogg
         radius: 15
     - type: Sprite
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
       state: icon
     - type: Item
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
 
 - type: entity
   parent: ADTSoundGenBase
@@ -136,10 +136,10 @@
         path: /Audio/ADT/SoundGen/factory_ambient.ogg
         radius: 18
     - type: Sprite
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
       state: icon
     - type: Item
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
 
 - type: entity
   parent: ADTSoundGenBase
@@ -154,10 +154,10 @@
         path: /Audio/ADT/SoundGen/pianino_chord_sudden.ogg
         radius: 2
     - type: Sprite
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
       state: icon
     - type: Item
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
 
 - type: entity
   parent: ADTSoundGenBase
@@ -172,10 +172,10 @@
         path: /Audio/ADT/SoundGen/shaft_water.ogg
         radius: 15
     - type: Sprite
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
       state: icon
     - type: Item
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
 
 - type: entity
   parent: ADTSoundGenBase
@@ -190,10 +190,10 @@
         path: /Audio/ADT/SoundGen/short_ambient_scary.ogg
         radius: 8
     - type: Sprite
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
       state: icon
     - type: Item
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
 
 - type: entity
   parent: ADTSoundGenBase
@@ -208,10 +208,10 @@
         path: /Audio/ADT/SoundGen/reverse_dissolve_scary.ogg
         radius: 4
     - type: Sprite
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
       state: icon
     - type: Item
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
 
 - type: entity
   parent: ADTSoundGenBase
@@ -226,7 +226,7 @@
         path: /Audio/ADT/SoundGen/dungeon_ambient_scary.ogg
         radius: 20
     - type: Sprite
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
       state: icon
     - type: Item
-      sprite: /Objects/Misc/soundgen.rsi
+      sprite: /Objects/Misc/skub.rsi
