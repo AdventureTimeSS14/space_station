@@ -7,13 +7,13 @@
   abstract: true
   description: Sound Generator! Wowie!
   components:
-  - type: Sprite
-    sprite: ADT/Objects/Misc/soundgen.rsi
-    state: icon
-  - type: Item
-    sprite: ADT/Objects/Misc/soundgen.rsi
-  - sound:
-      radius: 7
+    - type: Sprite
+      sprite: ADT/Objects/Misc/soundgen.rsi
+      state: icon
+    - type: Item
+      sprite: ADT/Objects/Misc/soundgen.rsi
+    - sound:
+        radius: 7
 
 
 - type: entity
@@ -23,13 +23,13 @@
   abstract: true
   description: Sound Generator! Wowie!
   components:
-  - type: Sprite
-    sprite: ADT/Objects/Misc/soundgen.rsi
-    state: icon
-  - type: Item
-    sprite: ADT/Objects/Misc/soundgen.rsi
-  - sound:
-      radius: 17
+    - type: Sprite
+      sprite: ADT/Objects/Misc/soundgen.rsi
+      state: icon
+    - type: Item
+      sprite: ADT/Objects/Misc/soundgen.rsi
+    - sound:
+        radius: 17
 
 
 - type: entity
