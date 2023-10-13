@@ -5,7 +5,7 @@ namespace Content.Server.Fluids.EntitySystems;
 
 [RegisterComponent]
 [Access(typeof(SmokeSystem))]
-public sealed class SmokeOnTriggerComponent : Component
+public partial class SmokeOnTriggerComponent : Component
 {
     [DataField("spreadAmount"), ViewVariables(VVAccess.ReadWrite)]
     public int SpreadAmount = 20;
