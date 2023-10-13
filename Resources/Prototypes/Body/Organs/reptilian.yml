@@ -1,14 +1,14 @@
-﻿- type: entity
+- type: entity
   id: OrganReptilianStomach
   parent: OrganAnimalStomach
   noSpawn: true
   components:
   - type: Stomach
-    specialDigestible:
-      tags:
-      - Fruit
-      - Meat
-      - Pill
+    #specialDigestible:
+    #  tags:
+    #  - Fruit
+    #  - Meat
+    #  - Pill
   - type: SolutionContainerManager
     solutions:
       stomach:

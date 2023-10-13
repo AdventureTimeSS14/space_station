@@ -67,6 +67,30 @@
       - id: ExGrenade
         amount: 3
 
+- type: entity
+  id: ADTClothingBeltMilitaryWebbingRPSSL_Rev
+  parent: ClothingBeltMilitaryWebbing
+  name: ERT security belt
+  description: Part of ERT security's gear
+  suffix: Anti-REV
+  components:
+  - type: Storage
+    capacity: 50
+  - type: StorageFill
+    contents:
+      - id: EmergencyMedipen
+        amount: 2
+      #- id: MagazinePistolHighCapacity
+      #- id: WeaponPistolViper
+      #- id: MedicatedSuture
+      #- id: ExGrenade
+      #  amount: 3
+      - id: ADTtelescopicBaton
+      - id: Stunbaton
+      - id: Flash
+      - id: Handcuffs
+        amount: 3
+
 #RPSL
 - type: entity
   id: ADTClothingBeltMilitaryWebbingRPSL
@@ -84,6 +108,30 @@
       - id: WeaponPistolViper
       - id: MedicatedSuture
       - id: ExGrenade
+        amount: 3
+
+- type: entity
+  id: ADTClothingBeltMilitaryWebbingRPSL_Rev
+  parent: ClothingBeltMilitaryWebbing
+  name: ERT Leader belt
+  description: Part of ERT leader's gear
+  suffix: Anti-REV
+  components:
+  - type: Storage
+    capacity: 50
+  - type: StorageFill
+    contents:
+      - id: EmergencyMedipen
+        amount: 2
+      #- id: MagazinePistolHighCapacity
+      #- id: WeaponPistolViper
+      #- id: MedicatedSuture
+      #- id: ExGrenade
+      #  amount: 3
+      - id: ADTtelescopicBaton
+      - id: Stunbaton
+      - id: Flash
+      - id: Handcuffs
         amount: 3
 
 #RPSM

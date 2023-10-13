@@ -14,7 +14,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.3
+        amount: 0.2
       - !type:HealthChange
         damage:
           groups:
@@ -45,7 +45,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.3
+        amount: 0.2
       - !type:AdjustReagent
         reagent: Nutriment
         amount: 0.2
@@ -69,7 +69,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.35
+        amount: 0.25
     Medicine:
       effects:
       - !type:AdjustTemperature
@@ -97,7 +97,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.2
+        amount: 0.15
       - !type:AdjustReagent
         reagent: Nutriment
         amount: 0.1
@@ -121,7 +121,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.35
+        amount: 0.25
     Medicine:
       effects:
       - !type:AdjustTemperature
@@ -149,7 +149,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.35
+        amount: 0.25
       - !type:MovespeedModifier
         walkSpeedModifier: 1.1
         sprintSpeedModifier: 1.1
@@ -179,7 +179,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.35
+        amount: 0.3
       - !type:MovespeedModifier
         walkSpeedModifier: 0.85
         sprintSpeedModifier: 0.85
@@ -203,7 +203,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.45
+        amount: 0.35
       - !type:HealthChange
         damage:
           types:
