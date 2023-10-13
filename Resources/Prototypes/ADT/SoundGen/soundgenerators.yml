@@ -12,6 +12,24 @@
     state: icon
   - type: Item
     sprite: ADT/Objects/Misc/soundgen.rsi
+  - sound:
+      radius: 7
+
+
+- type: entity
+  parent: BaseItem
+  id: ADTSoundGenBaseAmb
+  name: ADTSoundGenBase
+  abstract: true
+  description: Sound Generator! Wowie!
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Misc/soundgen.rsi
+    state: icon
+  - type: Item
+    sprite: ADT/Objects/Misc/soundgen.rsi
+  - sound:
+      radius: 17
 
 
 - type: entity
@@ -25,7 +43,7 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/destruction_1.ogg
-      range: 8
+      
 
 - type: entity
   parent: ADTSoundGenBase
@@ -38,7 +56,7 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/destruction_2.ogg
-      range: 8
+      
 
 - type: entity
   parent: ADTSoundGenBase
@@ -51,7 +69,7 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/destruction_3.ogg
-      range: 8
+      
 
 - type: entity
   parent: ADTSoundGenBase
@@ -64,7 +82,7 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/budilnik.ogg
-      range: 5
+      
 
 - type: entity
   parent: ADTSoundGenBase
@@ -77,10 +95,10 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/hit.ogg
-      range: 4
+      
 
 - type: entity
-  parent: ADTSoundGenBase
+  parent: ADTSoundGenBaseAmb
   id: ADTSoundGenMovingObjects
   name: ADTSoundGenMovingObjects
   abstract: false
@@ -90,10 +108,10 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/moving_objects_ambient_scary.ogg
-      range: 15
+      
 
 - type: entity
-  parent: ADTSoundGenBase
+  parent: ADTSoundGenBaseAmb
   id: ADTSoundGenFactory
   name: ADTSoundGenFactory
   abstract: false
@@ -103,7 +121,7 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/factory_ambient.ogg
-      range: 18
+      
 
 - type: entity
   parent: ADTSoundGenBase
@@ -116,10 +134,10 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/pianino_chord_sudden.ogg
-      range: 2
+      
 
 - type: entity
-  parent: ADTSoundGenBase
+  parent: ADTSoundGenBaseAmb
   id: ADTSoundGenShaftWater
   name: ADTSoundGenShaftWater
   abstract: false
@@ -129,10 +147,10 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/shaft_water.ogg
-      range: 15
+      
 
 - type: entity
-  parent: ADTSoundGenBase
+  parent: ADTSoundGenBaseAmb
   id: ADTSoundGenShortScaryAmbient
   name: ADTSoundGenShortScaryAmbient
   abstract: false
@@ -142,7 +160,7 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/short_ambient_scary.ogg
-      range: 8
+      
 
 - type: entity
   parent: ADTSoundGenBase
@@ -155,10 +173,10 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/reverse_dissolve_scary.ogg
-      range: 4
+      
 
 - type: entity
-  parent: ADTSoundGenBase
+  parent: ADTSoundGenBaseAmb
   id: ADTSoundGenDungeonAmbientScary
   name: ADTSoundGenDungeonAmbientScary
   abstract: false
@@ -168,6 +186,6 @@
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/ADT/SoundGen/dungeon_ambient_scary.ogg
-      range: 20
+      
 
 # Я тебя уже который час пытаюсь починить. Работай сука.
