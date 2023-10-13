@@ -13,6 +13,7 @@
     - type: Item
       sprite: ADT/Objects/Misc/soundgen.rsi
     - sound:
+        path: /Audio/ADT/SoundGen/destruction_1.ogg
         radius: 7
 
 
@@ -29,6 +30,7 @@
     - type: Item
       sprite: ADT/Objects/Misc/soundgen.rsi
     - sound:
+        path: /Audio/ADT/SoundGen/shaft_water.ogg
         radius: 17
 
 
