@@ -395,9 +395,9 @@
   description: Rather bland and inoffensive. Perfect for vanishing off the face of the universe.
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_hos.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_hop.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_hos.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_hop.rsi
 
 
 - type: entity
