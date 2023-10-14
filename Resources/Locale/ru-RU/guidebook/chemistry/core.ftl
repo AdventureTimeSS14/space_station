@@ -11,5 +11,6 @@ guidebook-reagent-recipes-header = Рецепт
 guidebook-reagent-recipes-reagent-display = [bold]{ $reagent }[/bold] \[{ $ratio }\]
 guidebook-reagent-recipes-mix = Смешайте
 guidebook-reagent-effects-header = Эффекты
+guidebook-reagent-recipes-mix-and-heat = Смешивайте при {$temperature}K
 guidebook-reagent-effects-metabolism-group-rate = [bold]{ $group }[/bold] [color=gray]({ $rate } единиц в секунду)[/color]
 guidebook-reagent-physical-description = На вид вещество { $description }.

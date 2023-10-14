@@ -1,5 +1,7 @@
 <Document>
 
+- Ниже преведены новые препараты!
+
 # Основные лекарства
 
 Эти лекарства, так или иначе, почти всегда полезны в медицинском отсеке.
@@ -23,6 +25,7 @@
 <GuideReagentEmbed Reagent="ADTCopperNitride"/>
 
 ## Полезное
+<GuideReagentEmbed Reagent="Charcoal"/>
 <GuideReagentEmbed Reagent="Ipecac"/>
 <GuideReagentEmbed Reagent="ADTMAgolatine"/>
 <GuideReagentEmbed Reagent="ADTMHaloperidol"/>

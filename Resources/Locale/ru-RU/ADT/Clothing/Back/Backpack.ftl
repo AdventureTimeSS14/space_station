@@ -33,3 +33,13 @@ ent-ADTClothingBackpackDuffelPathologistFilled = вещмешок патолог
 
 ent-ADTClothingBackpackSatchelPathologistFilled = сумка патологоанатома
     .desc = Сумка для хранения инструментов и бумаг
+
+
+ent-ADTClothingBackpackMedical = медицинский рюкзак
+    .desc = Рюкзак для хранения медицинского оборудования
+
+ent-ADTClothingBackpackDuffelMedical = медицинский вещмешок
+    .desc = Вместительный вещмешок для хранения медицинского оборудования.
+
+ent-ADTClothingBackpackSatchelMedical = медицинская сумка
+    .desc = Сумка для хранения медицинского оборудования.

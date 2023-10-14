@@ -1,0 +1,426 @@
+# баночка
+- type: entity
+  name: vitamin canister
+  id: ADTMVitaminCanister
+  parent: PillCanister
+  description: Contains healthy vitamins for you.
+  components:
+#  - type: Sprite
+#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
+#    state: vitamin_canister
+#  - type: Item
+#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
+  - type: Storage
+    capacity: 10
+  - type: StorageFill
+    contents:
+      - id: ADTMVitaminPill 
+        amount: 10
+  - type: GuideHelp
+    guides: 
+    - Medicine
+
+- type: entity
+  name: agolatine canister
+  id: ADTMAgolatineCanister
+  parent: PillCanister
+  description: Contains antidepressants for you.
+  components:
+#  - type: Sprite
+#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
+#    state: agolatine_canister
+#  - type: Item
+#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
+  - type: Storage
+    capacity: 10
+  - type: StorageFill
+    contents:
+      - id: ADTMAgolatinePill 
+        amount: 10
+  - type: GuideHelp
+    guides: 
+    - Medicine
+
+# бутылочка (не разбивающаяся)
+- type: entity
+  name: bottle
+  parent: BaseItem
+  id: BaseChemistryEmptyPlasticBottle
+  abstract: true
+  description: A small plastic bottle.
+  components:
+  - type: Tag
+    tags:
+    - Bottle
+    - Trash
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 25
+  - type: SpaceGarbage
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/bottle.rsi # заменить на новенькие.
+    layers:
+      - state: bottle-1
+      - state: bottle-1-1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: bottle-1-
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        canMix: true
+  - type: RefillableSolution
+    solution: drink
+  - type: DrainableSolution
+    solution: drink
+  - type: ExaminableSolution
+    solution: drink
+  - type: DrawableSolution
+    solution: drink
+  - type: SolutionTransfer
+    maxTransferAmount: 30
+    canChangeTransferAmount: true
+  - type: UserInterface
+    interfaces:
+    - key: enum.TransferAmountUiKey.Key
+      type: TransferAmountBoundUserInterface
+  - type: Item
+    size: 3
+    sprite: Objects/Specific/Chemistry/beaker.rsi
+  - type: Spillable
+    solution: drink
+  - type: MeleeWeapon
+    soundNoDamage:
+      path: "/Audio/Effects/Fluids/splat.ogg"
+    damage:
+      types:
+        Blunt: 0
+  - type: TrashOnEmpty
+    solution: drink
+  - type: StaticPrice
+    price: 0
+  - type: GuideHelp
+    guides: 
+    - Medicine
+
+- type: entity
+  id: ADTMPeroHydrogenBottle
+  name: perohydrogen bottle
+  parent: BaseChemistryEmptyPlasticBottle
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink: 
+        reagents:
+        - ReagentId: ADTMPeroHydrogen
+          Quantity: 30
+
+- type: entity
+  id: ADTMNikematideBottle
+  name: nikematide bottle
+  parent: BaseChemistryEmptyPlasticBottle
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink: 
+        reagents:
+        - ReagentId: ADTMNikematide
+          Quantity: 30
+
+# Упаковки
+- type: entity
+  id: BasePack
+  parent: BaseStorageItem
+  description: Holds 10 pills.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/pills_canister.rsi #заменить на новые.
+    state: pill_canister
+  - type: Item
+    sprite: Objects/Specific/Chemistry/pills_canister.rsi 
+  - type: Tag
+    tags:
+      - PillCanister
+  - type: Storage
+    capacity: 10
+    whitelist:
+      components:
+      - Pill
+  - type: GuideHelp
+    guides: 
+    - Medicine
+
+- type: entity
+  name: sodiumizole pack
+  id: ADTMSodiumizolePack
+  parent: BasePack
+  components:
+#  - type: Sprite
+#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
+#    state: sodiumizole
+#  - type: Item
+#    sprite: Objects/Specific/Chemistry/pills.rsi 
+  - type: StorageFill
+    contents:
+      - id: ADTMSodiumizolePill 
+        amount: 10
+
+- type: entity
+  name: nitrofurfoll pack
+  id: ADTMNitrofurfollPack
+  parent: BasePack
+  components:
+#  - type: Sprite
+#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
+#    state: nitrofurfoll
+#  - type: Item
+#    sprite: Objects/Specific/Chemistry/pills.rsi 
+  - type: StorageFill
+    contents:
+      - id: ADTMNitrofurfollPill 
+        amount: 10
+
+- type: entity
+  name: anelgesin pack
+  id: ADTMAnelgesinPack
+  parent: BasePack
+  components:
+#  - type: Sprite
+#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
+#    state: anelgezin
+#  - type: Item
+#    sprite: Objects/Specific/Chemistry/pills.rsi 
+  - type: StorageFill
+    contents:
+      - id: ADTMAnelgesinPill 
+        amount: 10
+
+- type: entity
+  name: minoxide pack
+  id: ADTMMinoxidePack
+  parent: BasePack
+  components:
+#  - type: Sprite
+#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
+#    state: minoxide
+#  - type: Item
+#    sprite: Objects/Specific/Chemistry/pills.rsi 
+  - type: StorageFill
+    contents:
+      - id: ADTMMinoxidePill 
+        amount: 10
+
+- type: entity
+  name: diethamilate pack
+  id: ADTMDiethamilatePack
+  parent: BasePack
+  components:
+#  - type: Sprite
+#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
+#    state: diethamilate
+#  - type: Item
+#    sprite: Objects/Specific/Chemistry/pills.rsi 
+  - type: StorageFill
+    contents:
+      - id: ADTMDiethamilatePill 
+        amount: 10
+
+- type: entity
+  name: haloperidol pack
+  id: ADTMHaloperidolPack
+  parent: BasePack
+  components:
+#  - type: Sprite
+#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
+#    state: haloperidol
+#  - type: Item
+#    sprite: Objects/Specific/Chemistry/pills.rsi 
+  - type: StorageFill
+    contents:
+      - id: ADTMHaloperidolPill 
+        amount: 10
+
+- type: entity
+  name: charcoal pack
+  id: ADTMCharcoalPack
+  parent: BasePack
+  components:
+#  - type: Sprite
+#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
+#    state: anelgezin
+#  - type: Item
+#    sprite: Objects/Specific/Chemistry/pills.rsi 
+  - type: StorageFill
+    contents:
+      - id: PillCharcoal
+        amount: 10
+
+- type: entity
+  name: ethylredoxrazine pack
+  id: ADTMEthylredoxrazinePack
+  parent: BasePack
+  components:
+#  - type: Sprite
+#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
+#    state: anelgezin
+#  - type: Item
+#    sprite: Objects/Specific/Chemistry/pills.rsi 
+  - type: StorageFill
+    contents:
+      - id: ADTMEthylredoxrazinePill 
+        amount: 10
+
+
+# пиллюли.
+- type: entity
+  name: pill
+  parent: Pill
+  id: ADTMPillBase
+  abstract: true
+  description: It's not a suppository.
+  components:
+  - type: GuideHelp
+    guides: 
+    - Medicine
+
+- type: entity
+  name: sodiumizole pill
+  parent: ADTMPillBase
+  id: ADTMSodiumizolePill 
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: ADTMSodiumizole
+          Quantity: 10
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/pills.rsi
+    state: pill7
+
+- type: entity
+  name: nitrofurfoll pill
+  parent: ADTMPillBase
+  id: ADTMNitrofurfollPill 
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: ADTMNitrofurfoll
+          Quantity: 10
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/pills.rsi
+    state: pill7
+
+- type: entity
+  name: anelgesin pill
+  parent: ADTMPillBase
+  id: ADTMAnelgesinPill 
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: ADTMAnelgesin
+          Quantity: 10
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/pills.rsi
+    state: pill8
+
+- type: entity
+  name: minoxide pill
+  parent: ADTMPillBase
+  id: ADTMMinoxidePill 
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: ADTMMinoxide
+          Quantity: 10
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/pills.rsi
+    state: pill20
+
+- type: entity
+  name: diethamilate pill
+  parent: ADTMPillBase
+  id: ADTMDiethamilatePill 
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: ADTMDiethamilate
+          Quantity: 10
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/pills.rsi
+    state: pill9
+
+- type: entity
+  name: haloperidol pill
+  parent: ADTMPillBase
+  id: ADTMHaloperidolPill 
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: ADTMHaloperidol
+          Quantity: 10
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/pills.rsi
+    state: pill9
+
+- type: entity
+  name: ethylredoxrazine pill
+  parent: ADTMPillBase
+  id: ADTMEthylredoxrazinePill 
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Ethylredoxrazine
+          Quantity: 10
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/pills.rsi
+    state: pill17
+
+- type: entity
+  name: agolatine pill
+  parent: ADTMPillBase
+  id: ADTMAgolatinePill 
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: ADTMAgolatine
+          Quantity: 10
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/pills.rsi
+    state: pill7
+
+- type: entity
+  name: vitamin pill
+  parent: ADTMPillBase
+  id: ADTMVitaminPill 
+  description: Found in healthy, complete meals.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Vitamin
+          Quantity: 10
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/pills.rsi
+    state: pill16

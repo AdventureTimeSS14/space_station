@@ -4,3 +4,6 @@ ent-ADTClothingHeadMarineBeret = берет Лейтенанта Морской 
 
 ent-ADTClothingHeadHatBeretBlueshield = берет офицера "Синего Щита"
     .desc = Серый берет, с кокардой подразделения "Синего Щита".
+
+ent-ADTClothingHeadHatsMedicalBeret = медицинский берет
+    .desc = Белый берет с аккуратно пришитым крестом. От него исходит знакомый запах спирта.
