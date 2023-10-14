@@ -29,11 +29,6 @@
     tags:
     - HamsterWearable
     - WhitelistChameleon
-  - type: SpawnItemsOnUse
-    items:
-      - id: ADTClothingHeadHatWeldingHat
-    sound:
-      path: "/Audio/ADT/open_telescopichka.ogg"
 
 - type: entity
   parent: WeldingMaskBase
@@ -45,11 +40,6 @@
     sprite: Clothing/Head/Welding/flame_welding_mask.rsi
   - type: Clothing
     sprite: Clothing/Head/Welding/flame_welding_mask.rsi
-  - type: SpawnItemsOnUse
-    items:
-      - id:  ADTClothingHeadHatWeldingMaskFlame
-    sound:
-      path: "/Audio/ADT/open_telescopichka.ogg"
 
 - type: entity
   parent: WeldingMaskBase
@@ -61,11 +51,6 @@
     sprite: Clothing/Head/Welding/blue_flame_welding_mask.rsi
   - type: Clothing
     sprite: Clothing/Head/Welding/blue_flame_welding_mask.rsi
-  - type: SpawnItemsOnUse
-    items:
-      - id: ADTClothingHeadHatWeldingMaskFlameBlue
-    sound:
-      path: "/Audio/ADT/open_telescopichka.ogg"
 
 - type: entity
   parent: WeldingMaskBase
@@ -77,8 +62,3 @@
     sprite: Clothing/Head/Welding/paintedwelding.rsi
   - type: Clothing
     sprite: Clothing/Head/Welding/paintedwelding.rsi
-  - type: SpawnItemsOnUse
-    items:
-      - id: ADTClothingHeadHatWeldingMaskPainted
-    sound:
-      path: "/Audio/ADT/open_telescopichka.ogg"
