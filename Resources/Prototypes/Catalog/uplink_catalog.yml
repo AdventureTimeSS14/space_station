@@ -252,8 +252,8 @@
 
 - type: listing
   id: ADTUplinkSmokeGrenade
-  name: Дымовая граната
-  description: Дымовая граната распыляет дым на небольшую область, является улучшенной версией обычной 
+  name: uplink-SmokeGrenade-name
+  description: uplink-SmokeGrenade-desc
   productEntity: ADTSSmokeGrenade
   cost:
     Telecrystal: 4
@@ -836,8 +836,8 @@
 #ADT
 - type: listing
   id: ADTUplinkSmokeBundle
-  name: Набор дымовых гранат синдиката
-  description: Набор из 6 дымовых гранат синдиката
+  name: uplink-SmokeGrenadeBundle-name
+  description: uplink-SmokeGrenadeBundle-desc
   productEntity: ADTClothingBackpackDuffelSsmokeGrenade
   cost:
     Telecrystal: 18

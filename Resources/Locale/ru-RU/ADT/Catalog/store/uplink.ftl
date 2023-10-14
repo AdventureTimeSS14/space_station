@@ -22,3 +22,10 @@ uplink-syndiecloak-desc = антагонизируй со стилем!
 
 uplink-nukeopscloak-name = плащ Ядерных Оперативников
 uplink-nukeopscloak-desc = защитит тебя от холода на базе
+
+uplink-SmokeGrenadeBundle-name = Набор дымовых бомб синдиката
+uplink-SmokeGrenadeBundle-desc = Набор из 6 дымовых бомб синдиката
+
+
+uplink-SmokeGrenade-name = Дымовая бомба синдиката
+uplink-SmokeGrenade-desc = Распыляет дым на небольшую область. Является улучшенной версией обычной гранаты.

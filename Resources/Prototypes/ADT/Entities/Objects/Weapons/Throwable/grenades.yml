@@ -1,6 +1,6 @@
 - type: entity
-  name: Дымовая граната
-  description: Вам определенно не стоит пытаться разобрать её самостоятельно 
+  name: SmokeGrenade
+  description: 
   parent: GrenadeBase
   id: ADTSmokeGrenade
   components:
@@ -22,8 +22,8 @@
       beepInterval: 2
 
 - type: entity
-  name: Дымовая граната
-  description: Вам определенно не стоит пытаться разобрать её самостоятельно. Вы чувствуете страх держа её в руках
+  name: Syndicate Smoke Grenade
+  description: 
   parent: GrenadeBase
   id: ADTSSmokeGrenade
   components:
