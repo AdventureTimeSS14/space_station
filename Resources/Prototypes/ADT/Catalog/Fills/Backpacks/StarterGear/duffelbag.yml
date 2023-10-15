@@ -102,3 +102,14 @@
     contents:
       - id: ADTExtMagazineRifle
         amount: 3
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateAmmoBundle
+  id: ADTClothingBackpackDuffelSsmokeGrenade
+  name: Набор дымовых гранат синдиката
+  description: Набор из 6 штук дымовых гранат синдиката 
+  components:
+  - type: StorageFill
+    contents:
+      - id: ADTSSmokeGrenade
+        amount: 6
