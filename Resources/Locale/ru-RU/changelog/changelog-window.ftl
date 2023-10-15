@@ -8,3 +8,7 @@ changelog-new-changes = новые обновления
 changelog-version-tag = версия v{ $version }
 changelog-button = Обновления
 changelog-button-new-entries = Обновления (!)
+
+changelog-tab-title-Changelog = Визарды
+changelog-tab-title-ChangelogADT = Время Приключений
+changelog-tab-title-ChangelogSyndie = Корвакс
