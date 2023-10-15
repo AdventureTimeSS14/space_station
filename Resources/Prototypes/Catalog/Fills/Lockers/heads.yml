@@ -146,8 +146,8 @@
       - id: ClothingUnderwearBottomBoxersHOP
       - id: ClothingUnderwearBottomPantiesHOP
       - id: ClothingUnderwearTopBraHOP
-      - id: ADTHOSJumpskirtWarm
-      - id: ADTHOSJumpsuitWarm
+      - id: ADTHOPJumpskirtWarm
+      - id: ADTHOPJumpsuitWarm
       # Sirena-Underwear-End
 
 - type: entity
@@ -238,8 +238,8 @@
       - id: ADTtelescopicBaton
       - id: MedicalTechFabCircuitboard
       - id: BoxEncryptionKeyMedical
-      - id: ADTMindShieldImplanter
-        amount: 2
+      # id: ADTMindShieldImplanter
+      #  amount: 2
       - id: ADTCMOJumpskirtWarm
       - id: ADTCMOJumpsuitWarm
       - id: MaterialBiomass
@@ -281,8 +281,8 @@
         amount: 3
       - id: TrackingImplanter
         amount: 2
-      - id: ADTMindShieldImplanter
-        amount: 2
+      # id: ADTMindShieldImplanter
+      # amount: 2
       - id: NitrousOxideTankFilled
       - id: BoxEncryptionKeyMedical
       # Sirena-Underwear-Start
