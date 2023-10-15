@@ -308,6 +308,7 @@
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/Oktoberfest/oktoberfest_dirndlshortblue.rsi #спрайты от SHIONE
 
+
 - type: entity
   parent: ClothingUniformBase
   id: ADTClothingUniformOktoberfestDirndlBlue
@@ -343,3 +344,48 @@
     sprite: ADT/Clothing/Uniforms/Jumpskirt/Oktoberfest/oktoberfest_dirndlgreen.rsi #спрайты от SHIONE
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/Oktoberfest/oktoberfest_dirndlgreen.rsi #спрайты от SHIONE
+#костюмы от Празата
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTCEJumpskirtWarm
+  name: ce jumpskirt warm
+  description: It's a high visibility jumpskirt given to those engineers insane enough to achieve the rank of Chief Engineer. It has minor radiation shielding.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/jumpskirt_ce.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/jumpskirt_ce.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTCMOJumpskirtWarm
+  name: cmo jumpskirt warm
+  description: It's a jumpsuit worn by those with the experience to be Chief Medical Officer. It provides minor biological protection.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/jumpskirt_cmo.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/jumpskirt_cmo.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTHOPJumpskirtWarm
+  name: hop jumpskirt warm
+  description: Rather bland and inoffensive. Perfect for vanishing off the face of the universe.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/jumpskirt_hop.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/jumpskirt_hop.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTQMJumpskirtWarm
+  name: qm jumpskirt warm
+  description: A sharp turtleneck made for the hardy work environment of supply.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/jumpskirt_qm.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/jumpskirt_qm.rsi
