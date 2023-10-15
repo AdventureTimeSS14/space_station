@@ -533,6 +533,7 @@
     idleState: icon
     runningState: icon
     staticRecipes:
+      - ADTSmokeGrenades
       - ClothingEyesHudSecurity
       - Flash
       - Handcuffs

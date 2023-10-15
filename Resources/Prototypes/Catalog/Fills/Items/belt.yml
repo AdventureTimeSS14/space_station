@@ -128,11 +128,12 @@
   - type: StorageFill
     contents:
       - id: ExGrenade
-        amount: 4
+        amount: 3
       - id: SyndieMiniBomb
         amount: 2
       - id: EmpGrenade
         amount: 2
+      - id: ADTSmokeGrenade
 
 - type: entity
   id: ClothingBeltMilitaryWebbingMedFilled
