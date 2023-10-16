@@ -1,0 +1,16 @@
+- type: vendingMachineInventory
+  id: ADTPrazatClothesMateInventory
+  startingInventory:
+    ADTClothingSandals: 3
+    ADTClothingUniformTurleneckBlack: 3
+    ADTClothingUniformTurleneckBlackWomen: 3
+    ADTClothingUniformTurleneckWhite: 3
+    ADTClothingUniformTurleneckWhiteBlack: 3
+    ADTClothingUniformTurleneckWhiteWomen: 3
+    ADTClothingUniformTurleneckBlackSleeveless: 3
+    ADTClothingUniformTurleneckBlackWomenSleeveless: 3
+    ADTClothingUniformTurleneckWhiteSleeveless: 3
+    ADTClothingUniformTurleneckWhiteBlackSleeveless: 3
+    ADTClothingUniformTurleneckWhiteWomenSleeveless: 3
+    SirenaChokerSpike: 3
+    SirenaChokerHeart: 3
