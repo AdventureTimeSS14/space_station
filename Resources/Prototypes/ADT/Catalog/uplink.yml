@@ -58,7 +58,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Snipers/heavy_sniper.rsi, state: base }
   productEntity: ADTClothingBackpackDuffelSyndicateFilledHristov
   cost:
-    Telecrystal: 25
+    Telecrystal: 20
   categories:
   - UplinkBundles
   conditions:
@@ -203,3 +203,47 @@
     whitelist:
       tags:
       - NukeOpsUplink
+
+- type: listing
+  id: UplinkADTHandDefibrillator
+  name: uplink-ADTHandDefibrillator-name
+  description: uplink-ADTHandDefibrillator-desc
+  productEntity: ADTHandDefibrillator
+  cost:
+    Telecrystal: 25
+  categories:
+  - UplinkMisc
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: ADTUplinkSyndieSSmokegrenade
+  name: uplink-ssmokegrenade-name
+  description: uplink-ssmokegrenade-desc
+  productEntity: ADTSSmokeGrenade
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkExplosives
+
+- type: listing
+  id: ADTUplinkSmokeBundle
+  name: uplink-SmokeGrenadeBundle-name
+  description: uplink-SmokeGrenadeBundle-desc
+  productEntity: ADTClothingBackpackDuffelSsmokeGrenade
+  cost:
+    Telecrystal: 18
+  categories:
+  - UplinkBundles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle

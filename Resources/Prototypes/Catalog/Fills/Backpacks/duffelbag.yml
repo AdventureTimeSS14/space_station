@@ -299,6 +299,7 @@
       - id: WeaponPistolViper
       - id: PinpointerNuclear
       - id: MicroBombImplanter
+      - id: ADTSmokeGrenade
 
 
 - type: entity

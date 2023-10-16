@@ -315,6 +315,7 @@
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/Oktoberfest/oktoberfest_male_greenvest.rsi #спрайты от SHIONE
 
+
 - type: entity
   parent: ClothingUniformBase
   id: ADTClothingUniformOktoberfestRedCheckered
@@ -362,6 +363,53 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/Oktoberfest/oktoberfest_male_redvest.rsi #спрайты от SHIONE
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/Oktoberfest/oktoberfest_male_redvest.rsi #спрайты от SHIONE
+
+#костюмы от Празата
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTCEJumpsuitWarm
+  name: ce jumpsuit warm
+  description: It's a high visibility jumpskirt given to those engineers insane enough to achieve the rank of Chief Engineer. It has minor radiation shielding.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_ce.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_ce.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTCMOJumpsuitWarm
+  name: cmo jumpsuit warm
+  description: It's a jumpsuit worn by those with the experience to be Chief Medical Officer. It provides minor biological protection.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_cmo.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_cmo.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTHOPJumpsuitWarm
+  name: hop jumpsuit warm
+  description: Rather bland and inoffensive. Perfect for vanishing off the face of the universe.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_hop.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_hop.rsi
+
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTQMJumpsuitWarm
+  name: qm jumpsuit warm
+  description: A sharp turtleneck made for the hardy work environment of supply.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_qm.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_qm.rsi
 
 #Medical
 - type: entity

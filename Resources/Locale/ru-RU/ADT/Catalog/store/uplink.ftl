@@ -22,3 +22,12 @@ uplink-syndiecloak-desc = антагонизируй со стилем!
 
 uplink-nukeopscloak-name = плащ Ядерных Оперативников
 uplink-nukeopscloak-desc = защитит тебя от холода на базе
+
+uplink-ADTHandDefibrillator-name = Переносной дефибрилятор синдиката
+uplink-ADTHandDefibrillator-desc = Облегченная версия обычного дефибрилятора, более эффективен в лечении но имеет больше сильный разряд. Можно надеть на шею.
+
+uplink-ssmokegrenade-name = Дымовая граната синдиката
+uplink-ssmokegrenade-desc = Расплыет на определенную область непроглядный дым. Является улучшенной версией обычной гранаты.
+
+uplink-ssmokegrenade-bundle-name = Набор дымовых граната
+uplink-ssmokegrenade-bundle-desc = Набор из 6 дымовых граната синдиката. Идеально подходят для вечеринки
