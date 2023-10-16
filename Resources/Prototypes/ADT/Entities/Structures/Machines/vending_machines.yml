@@ -24,3 +24,30 @@
   - type: GuideHelp
     guides: 
     - Medicine
+
+- type: entity
+  parent: VendingMachine
+  id: VendingMachinePatholodrobe
+  name: Patholodrobe
+  description: Clothes to work with dead bodies.
+  components:
+  - type: VendingMachine
+    pack: PatholodrobeInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: Advertise
+    pack: PatholodrobeAds
+  - type: Sprite
+    sprite: Structures/Machines/VendingMachines/genedrobe.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: GuideHelp
+    guides: 
+    - ADTPathologist

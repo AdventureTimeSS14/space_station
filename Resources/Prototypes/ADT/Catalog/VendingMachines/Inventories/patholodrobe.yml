@@ -1,0 +1,11 @@
+- type: vendingMachineInventory
+  id: PatholodrobeInventory
+  startingInventory:
+    ADTClothingHeadHatsPathologistsCap: 2
+    ADTClothingUniformPathologistSuit: 2
+    ADTClothingUniformPathologistSkirt: 2
+    ADTClothingOuterBioPathologist: 2 
+    ClothingShoesColorWhite: 2
+    ADTClothingBackpackPathologist: 2
+    ADTClothingBackpackDuffelPathologist: 2
+    ADTClothingBackpackSatchelPathologist: 2
