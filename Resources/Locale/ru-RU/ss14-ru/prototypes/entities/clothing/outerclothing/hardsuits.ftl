@@ -60,3 +60,5 @@ ent-ClothingOuterHardsuitPirateEVA = скафандр EVA космических
     .suffix = Пират
 ent-ClothingOuterHardsuitClown = скафандр клоуна
     .desc = Самодельный клоунский скафандр.
+ent-ClothingOuterHardsuitMedic = кроваво-красный костюм медика
+    .desc = Тяжелобронированный и мобильный скафандр, специально разработанный для оказания медицинской помощи на передовой.

@@ -7,6 +7,6 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 80
+        Piercing: 90
         Structural: 100
-    ignoreResistances: true
+    #ignoreResistances: true
