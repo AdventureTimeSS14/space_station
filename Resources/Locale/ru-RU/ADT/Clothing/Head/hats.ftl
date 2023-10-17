@@ -58,4 +58,4 @@ ent-ADTClothingHeadHatsBavarianHatRed = красная егерская шляп
 
 ent-ADTClothingHeadHatsPathologistsCap = шапочка патологоанатома
     .desc = медицинская шапочка, которой прикрывают голову при осмотре трупов.
-    .suffix = { "Патологоанатом" }
+    .suffix = { "" }

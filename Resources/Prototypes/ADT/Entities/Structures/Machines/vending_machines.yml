@@ -31,9 +31,11 @@
     energy: 1.6
     color: "#c2adff"
 
-  id: VendingMachinePill
+- type: entity
+  parent: VendingMachine
+  id: ADTVendingMachinePill
   name: Pill-O-Mat
-  description: A practical solution to many of your sores.
+  description: (Almost) A practical solution to many of your sores.
   components:
   - type: VendingMachine
     pack: PillInventory
@@ -58,7 +60,7 @@
 
 - type: entity
   parent: VendingMachine
-  id: VendingMachinePatholodrobe
+  id: ADTVendingMachinePatholodrobe
   name: Patholodrobe
   description: Clothes to work with dead bodies.
   components:
