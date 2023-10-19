@@ -990,3 +990,15 @@
       Steel: 5
       CableHV: 5
       Uranium: 2
+
+
+- type: entity
+  id: FormPrinterMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: uniform printer machine board
+  components:
+  - type: MachineBoard
+    prototype: PrinterDoc
+    requirements:
+      MatterBin: 1
+      Manipulator: 2

@@ -114,3 +114,5 @@ ent-SalvageMagnetMachineCircuitboard = магнит обломков (машин
     .desc = Печатная плата магнита обломков.
 ent-MiniGravityGeneratorCircuitboard = мини-генератор гравитации (машинная плата)
     .desc = Печатная плата мини-генератора гравитации.
+ent-FormPrinterMachineCircuitboard = принтер документов (машинная плата)
+    .desc = Печатная плата для принтера документов.

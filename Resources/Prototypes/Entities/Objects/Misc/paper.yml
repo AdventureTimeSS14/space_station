@@ -57,6 +57,13 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
 
+# Corvax-Printer-Start
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      SheetPrinter: 100
+# Corvax-Printer-End
+
 - type: entity
   name: office paper
   parent: Paper
@@ -464,7 +471,7 @@
         whitelist:
           tags:
             - Write
-        insertOnInteract: false 
+        insertOnInteract: false
   - type: Item
     sprite: Objects/Misc/clipboard.rsi
     size: 10
