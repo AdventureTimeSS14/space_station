@@ -333,3 +333,23 @@
   - type: Sprite
     sprite: ADT/Objects/Fun/toys.rsi
     state: plushie_prazat
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieLo
+  name: Lo Vud plushie
+  description: A plush version of a once-living mime. It seems the toy got wet, as if someone was crying into it. She looks unhappy. It smells like space drugs.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_lo
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieSati
+  name: Sati plushie
+  description: Arcana's toy, looks tired... And hey, what kind of clothes is she wearing? If you look closely, you will notice that a tag is sewn to the strange black and scarlet robe "Remember that your lives are worth more than a couple of credits!"
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_sati

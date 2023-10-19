@@ -1,6 +1,6 @@
-ent-SirenaChokerSpike = Чокер с шипами
+ent-SirenaChokerWithSpike = Чокер с шипами
     .desc = Если его вывернуть задом-наперед, то это будет оружие пыток
     .suffix = { "" }
-ent-SirenaChokerHeart = Чокер с сердцем
+ent-SirenaChokerWithHeart = Чокер с сердцем
     .desc = Для хороших членов экипажа
     .suffix = { "" }

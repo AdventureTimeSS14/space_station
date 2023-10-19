@@ -52,6 +52,7 @@
   - TimerTrigger
   - FlashPayload
   - ExplosivePayload
+  - Igniter
 
 - type: technology
   id: WeaponizedLaserManipulation

@@ -1,13 +1,16 @@
 using System.Linq;
 using Content.Server.Chemistry.Components;
+using Robust.Shared.Audio;
 using Content.Server.Chemistry.EntitySystems;
 using Content.Server.Chemistry.ReactionEffects;
+using Content.Server.Explosion.EntitySystems;
 using Content.Server.Spreader;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Reaction;
 using Content.Shared.FixedPoint;
 using Content.Shared.Smoking;
 using Robust.Server.GameObjects;
+using Content.Server.Explosion.EntitySystems;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
@@ -30,6 +33,7 @@ public sealed class SmokeSystem : EntitySystem
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly SolutionContainerSystem _solutionSystem = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private readonly AudioSystem _audioSystem = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -38,17 +42,7 @@ public sealed class SmokeSystem : EntitySystem
         SubscribeLocalEvent<SmokeComponent, EntityUnpausedEvent>(OnSmokeUnpaused);
         SubscribeLocalEvent<SmokeComponent, ReactionAttemptEvent>(OnReactionAttempt);
         SubscribeLocalEvent<SmokeComponent, SpreadNeighborsEvent>(OnSmokeSpread);
-        SubscribeLocalEvent<SmokeDissipateSpawnComponent, TimedDespawnEvent>(OnSmokeDissipate);
-    }
-
-    private void OnSmokeDissipate(EntityUid uid, SmokeDissipateSpawnComponent component, ref TimedDespawnEvent args)
-    {
-        if (!TryComp<TransformComponent>(uid, out var xform))
-        {
-            return;
-        }
-
-        Spawn(component.Prototype, xform.Coordinates);
+        SubscribeLocalEvent<SmokeOnTriggerComponent, TriggerEvent>(HandleSmokeTrigger);
     }
 
     private void OnSmokeSpread(EntityUid uid, SmokeComponent component, ref SpreadNeighborsEvent args)
@@ -229,6 +223,16 @@ public sealed class SmokeSystem : EntitySystem
         EnsureComp<ActiveEdgeSpreaderComponent>(uid);
         var timer = EnsureComp<TimedDespawnComponent>(uid);
         timer.Lifetime = duration;
+    }
+
+    private void HandleSmokeTrigger(EntityUid uid, SmokeOnTriggerComponent comp, TriggerEvent args)
+    {
+        var xform = Transform(uid);
+        var smokeEnt = Spawn("Smoke", xform.Coordinates);
+        var smoke = EnsureComp<SmokeComponent>(smokeEnt);
+        smoke.SpreadAmount = comp.SpreadAmount;
+        _audioSystem.PlayPvs(comp.Sound, xform.Coordinates, AudioParams.Default.WithVariation(0.125f));
+        args.Handled = true;
     }
 
     /// <summary>

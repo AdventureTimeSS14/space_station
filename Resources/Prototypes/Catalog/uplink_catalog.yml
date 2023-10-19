@@ -427,7 +427,7 @@
   productEntity: ReinforcementRadioSyndicateNukeops
   icon: { sprite: Objects/Devices/communication.rsi, state: old-radio }
   cost:
-    Telecrystal: 16
+    Telecrystal: 18
   categories:
   - UplinkUtility
   conditions:
