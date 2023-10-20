@@ -112,10 +112,10 @@
       - !type:HealthChange
         conditions:
           - !type:ReagentThreshold
-            min: 80 #please wait 3 minutes before using another stimpack
+            min: 30 #please wait 3 minutes before using another stimpack
         damage:
           types:
-            Poison: 1
+            Poison: 5
       - !type:GenericStatusEffect
         key: Stun
         time: 3
