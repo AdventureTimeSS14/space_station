@@ -1,13 +1,13 @@
 - type: entity
-  parent: ClothingOuterBaseLarge
+  parent: ClothingUniformBase
   id: ADTClothingGorkaset
   name: Gorkaset
   description: ""
   components:
   - type: Sprite
-    sprite: ADT/Clothing/OuterClothing/Armor/Gorka_Clothing_set.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Gorka_Clothing_set.rsi
   - type: Clothing
-    sprite: ADT/Clothing/OuterClothing/Armor/Gorka_Clothing_set.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Gorka_Clothing_set.rsi
   - type: Armor
     modifiers:
       coefficients:
