@@ -96,6 +96,8 @@
   - type: Machine
     board: WeaponCapacitorRechargerCircuitboard
   # no powercellslot since stun baton etc arent powercells
+  - type: Charger
+    baseChargeRate: 50
   - type: ItemSlots
     slots:
       charger_slot:
@@ -121,7 +123,7 @@
       shader: "unshaded"
   - type: WallMount
   - type: Charger
-    chargeRate: 25
+    baseChargeRate: 35
   - type: ItemSlots
     slots:
       charger_slot:

@@ -1,7 +1,7 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  #- CorvaxDelta
+  - CorvaxDelta
   - CorvaxAvrite
   - Aspid
   - Barratry

@@ -6,7 +6,7 @@
     sprite: ADT/Objects/Consumable/Food/oktoberfest.rsi
     state: brezel_salt
   product: ADTCrateOktoberfestSnack
-  cost: 1500
+  cost: 650
   category: Food
   group: market
 
@@ -16,7 +16,7 @@
     sprite: ADT/Structures/Storage/beertank.rsi
     state: beer
   product: ADTBeerTank
-  cost: 300
+  cost: 150
   category: Food
   group: market
 
@@ -26,7 +26,7 @@
     sprite: ADT/Structures/Storage/beertank.rsi
     state: goldenale
   product: ADTBeerTankGoldenAle
-  cost: 300
+  cost: 150
   category: Food
   group: market
 
@@ -36,7 +36,7 @@
     sprite: ADT/Structures/Storage/beertank.rsi
     state: sausagebeer
   product: ADTBeerTankSausage
-  cost: 300
+  cost: 150
   category: Food
   group: market
 
@@ -46,7 +46,7 @@
     sprite: ADT/Structures/Storage/beertank.rsi
     state: technobeer
   product: ADTBeerTankTechno
-  cost: 300
+  cost: 150
   category: Food
   group: market
 
@@ -56,7 +56,7 @@
     sprite: ADT/Structures/Storage/beertank.rsi
     state: paulanerbeer
   product: ADTBeerTankClassicPaulaner
-  cost: 300
+  cost: 150
   category: Food
   group: market
 
@@ -66,7 +66,7 @@
     sprite: ADT/Structures/Storage/beertank.rsi
     state: livseybeer
   product: ADTBeerTankLivsey
-  cost: 300
+  cost: 150
   category: Food
   group: market
 
@@ -76,7 +76,7 @@
     sprite: ADT/Structures/Storage/beertank.rsi
     state: luckyjonnybeer
   product: ADTBeerTankLuckyJonny
-  cost: 300
+  cost: 150
   category: Food
   group: market
 
@@ -86,7 +86,7 @@
     sprite: ADT/Structures/Storage/beertank.rsi
     state: secunfilteredbeer
   product: ADTBeerTankSecUnfiltered
-  cost: 300
+  cost: 150
   category: Food
   group: market
 
@@ -96,6 +96,6 @@
     sprite: ADT/Structures/Storage/beertank.rsi
     state: glyphidstout
   product: ADTBeerTankGlyphidStout
-  cost: 300
+  cost: 150
   category: Food
   group: market

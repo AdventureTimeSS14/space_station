@@ -20,11 +20,11 @@
         maxVol: 30
         reagents:
         - ReagentId: Nutriment
-          Quantity: 8
+          Quantity: 4
         - ReagentId: Protein
-          Quantity: 8
+          Quantity: 2
         - ReagentId: Vitamin
-          Quantity: 8
+          Quantity: 1
 
 - type: entity
   name: bratwurst
@@ -48,11 +48,11 @@
         maxVol: 30
         reagents:
         - ReagentId: Nutriment
-          Quantity: 8
+          Quantity: 4
         - ReagentId: Protein
-          Quantity: 8
+          Quantity: 2
         - ReagentId: Vitamin
-          Quantity: 8
+          Quantity: 1
 
 - type: entity
   name: brezel
@@ -75,9 +75,9 @@
         maxVol: 15
         reagents:
         - ReagentId: Nutriment
-          Quantity: 8
+          Quantity: 4
         - ReagentId: Vitamin
-          Quantity: 3
+          Quantity: 1
 
 - type: entity
   name: brezel with poppy seeds
@@ -101,9 +101,9 @@
         maxVol: 15
         reagents:
         - ReagentId: Nutriment
-          Quantity: 8
+          Quantity: 4
         - ReagentId: Vitamin
-          Quantity: 3
+          Quantity: 1
 
 - type: entity
   name: brezel with salt
@@ -127,9 +127,9 @@
         maxVol: 15
         reagents:
         - ReagentId: Nutriment
-          Quantity: 8
+          Quantity: 4
         - ReagentId: Vitamin
-          Quantity: 3
+          Quantity: 1
 
 - type: entity
   name: brezel with chocolate
@@ -154,9 +154,9 @@
         maxVol: 15
         reagents:
         - ReagentId: Nutriment
-          Quantity: 8
+          Quantity: 1
         - ReagentId: Vitamin
-          Quantity: 3
+          Quantity: 1
 
 - type: entity
   name: brezel with vanilla
@@ -181,6 +181,6 @@
         maxVol: 15
         reagents:
         - ReagentId: Nutriment
-          Quantity: 8
+          Quantity: 4
         - ReagentId: Vitamin
-          Quantity: 3
+          Quantity: 1
