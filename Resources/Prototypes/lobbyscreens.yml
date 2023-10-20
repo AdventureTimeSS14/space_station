@@ -85,3 +85,15 @@
 - type: lobbyBackground
   id: ShizzyAllstars
   background: /Textures/LobbyScreens/adtallstars.png
+
+- type: lobbyBackground
+  id: AveRezomi
+  background: /Textures/LobbyScreens/averezomi.png
+
+- type: lobbyBackground
+  id: LoVud_and_Sati
+  background: /Textures/LobbyScreens/barsiki.png
+
+- type: lobbyBackground
+  id: Timrika
+  background: /Textures/LobbyScreens/timrika.png

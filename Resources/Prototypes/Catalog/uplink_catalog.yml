@@ -92,7 +92,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Melee/e_sword_double.rsi, state: icon }
   productEntity: EnergySwordDouble
   cost:
-    Telecrystal: 30
+    Telecrystal: 45
   categories:
   - UplinkWeapons
 
@@ -1246,7 +1246,7 @@
   description: uplink-combat-medipen-desc
   productEntity: CombatMedipen
   cost:
-    Telecrystal: 4
+    Telecrystal: 8
   categories:
   - UplinkMisc
 
@@ -1256,7 +1256,7 @@
   description: uplink-stimpack-desc
   productEntity: Stimpack
   cost:
-    Telecrystal: 4
+    Telecrystal: 8
   categories:
   - UplinkMisc
 
@@ -1266,7 +1266,7 @@
   description: uplink-stimkit-desc
   productEntity: StimkitFilled
   cost:
-    Telecrystal: 6
+    Telecrystal: 14
   categories:
   - UplinkMisc
 
