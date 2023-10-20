@@ -1,4 +1,46 @@
 - type: guideEntry
+  id: KorporateZakon
+  name: guide-entry-all-korporate-zakon
+  text: "/ServerInfo/ADT/srp/KorporateZakon.xml"
+  children:
+  - KorporateZakonOPRS
+  - KorporateZakonMinor
+  - KorporateZakonMedium
+  - KorporateZakonSerious
+  - KorporateZakonSuperHeavy
+  - KorporateZakonCritical
+
+- type: guideEntry
+  id: KorporateZakonOPRS
+  name: guide-entry-all-korporate-zakon-oprs
+  text: "/ServerInfo/ADT/srp/KorporateZakonOPRS.xml"
+
+- type: guideEntry
+  id: KorporateZakonMinor
+  name: guide-entry-all-korporate-zakon-minor
+  text: "/ServerInfo/ADT/srp/KorporateZakonMinor.xml"
+
+- type: guideEntry
+  id: KorporateZakonMedium
+  name: guide-entry-all-korporate-zakon-medium
+  text: "/ServerInfo/ADT/srp/KorporateZakonMedium.xml"
+
+- type: guideEntry
+  id: KorporateZakonSerious
+  name: guide-entry-all-korporate-zakon-serious
+  text: "/ServerInfo/ADT/srp/KorporateZakonSerious.xml"
+
+- type: guideEntry
+  id: KorporateZakonSuperHeavy
+  name: guide-entry-all-korporate-zakon-superheavy
+  text: "/ServerInfo/ADT/srp/KorporateZakonSuperHeavy.xml"
+
+- type: guideEntry
+  id: KorporateZakonCritical
+  name: guide-entry-all-korporate-zakon-critical
+  text: "/ServerInfo/ADT/srp/KorporateZakonCritical.xml"
+
+- type: guideEntry
   id: SRP
   name: guide-entry-all-srp
   text: "/ServerInfo/ADT/SRP.xml"
@@ -38,16 +80,30 @@
   name: guide-entry-command-procedure
   text: "/ServerInfo/ADT/srp/SrpCommandProcedure.xml"
 
-
-
-
-
- #Срп ЮРдепа
+#Срп ЮРдепа
 - type: guideEntry
   id: SrpLawyer
   name: guide-entry-lawyer
   text: "/ServerInfo/ADT/srp/SrpLawyer.xml"
+  children:
+  - SrpLawyerMagistrat
+  - SrpLawyerIIA
+  - SrpLawyerLawyers
 
+- type: guideEntry
+  id: SrpLawyerMagistrat
+  name: guide-entry-lawyer-magistrat
+  text: "/ServerInfo/ADT/srp/SrpLawyerMagistrat.xml"
+
+- type: guideEntry
+  id: SrpLawyerIIA
+  name: guide-entry-lawyer-iia
+  text: "/ServerInfo/ADT/srp/SrpLawyerIIA.xml"
+
+- type: guideEntry
+  id: SrpLawyerLawyers
+  name: guide-entry-lawyer-lawyers
+  text: "/ServerInfo/ADT/srp/SrpLawyerLawyers.xml"
 
  #Срп Сб
 - type: guideEntry
@@ -58,6 +114,7 @@
   - HeadSecurity
   - Warden
   - Senyor
+  - Sledovatil
   - Detective
   - Pilot
   - Oficer
@@ -83,6 +140,11 @@
   id: Senyor
   name: guide-entry-senyor
   text: "/ServerInfo/ADT/srp/SrpSecuritySenyor.xml"
+
+- type: guideEntry
+  id: Sledovatil
+  name: guide-entry-sledovatil
+  text: "/ServerInfo/ADT/srp/SrpSecuritySledovatil.xml"
 
 - type: guideEntry
   id: Detective
