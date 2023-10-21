@@ -20,6 +20,7 @@
         shader: unshaded
         map: [ "blade" ]
   - type: MeleeWeapon
+    wideAnimationRotation: -135
     attackRate: 1
     soundHit:
       path: /Audio/Weapons/eblade1.ogg
@@ -55,7 +56,7 @@
 - type: entity
   name: pen
   parent: EnergySword
-  id: EnergyDagger 
+  id: EnergyDagger
   suffix: E-Dagger
   description: 'A dark ink pen.'
   components:
@@ -84,6 +85,7 @@
         shader: unshaded
         map: [ "blade" ]
   - type: MeleeWeapon
+    wideAnimationRotation: -135
     attackRate: 1
     hidden: true
     damage:
@@ -174,8 +176,9 @@
             Structural: 35
     litDisarmMalus: 0.7
   - type: MeleeWeapon
-    attackRate: 1.15
-    angle: 80
+    wideAnimationRotation: -135
+    attackRate: 1.5
+    angle: 100
     soundHit:
       path: /Audio/Weapons/eblade1.ogg
     damage:
