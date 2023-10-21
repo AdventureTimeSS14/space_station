@@ -60,7 +60,7 @@
       - id: RubberStampCaptain
       - id: WeaponAntiqueLaser
       - id: JetpackCaptainFilled
-      - id: FormPrinterMachineCircuitboard
+      - id: PrinterDocCircuitboard
       - id: MedalCase
       - id: ClothingHeadHatCapcap
       - id: ClothingHeadCaptainHat
@@ -85,7 +85,7 @@
       - id: CaptainIDCard
       - id: ClothingHeadHatCaptain
       - id: ClothingNeckCloakCap
-      - id: FormPrinterMachineCircuitboard
+      - id: PrinterDocCircuitboard
       - id: ClothingHandsGlovesCaptain
       - id: WeaponDisabler
       - id: CommsComputerCircuitboard
@@ -125,7 +125,7 @@
       - id: ClothingHeadsetCommand
       - id: BoxPDA
       - id: BoxID
-      - id: FormPrinterMachineCircuitboard
+      - id: PrinterDocCircuitboard
       - id: ADTtelescopicBaton
       - id: BoxHeadset
       - id: IDComputerCircuitboard
@@ -388,7 +388,7 @@
       - id: SecurityTechFabCircuitboard
       - id: JetpackSecurityFilled
       - id: BoxEncryptionKeySecurity
-      - id: FormPrinterMachineCircuitboard
+      - id: PrinterDocCircuitboard
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
       - id: WeaponRevolverUnica #ADTrevolver
@@ -440,7 +440,7 @@
       - id: ClothingUniformJumpskirtHosFormal
       - id: ClothingUniformJumpsuitHosFormal
       - id: RubberStampHos
-      - id: FormPrinterMachineCircuitboard
+      - id: PrinterDocCircuitboard
       - id: SecurityTechFabCircuitboard
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
