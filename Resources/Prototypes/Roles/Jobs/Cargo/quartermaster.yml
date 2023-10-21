@@ -48,6 +48,6 @@
     underwearb: ClothingUnderwearBottomBoxersQM # Sirena-Underwear
   underweart: ClothingUnderwearTopBraQM # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesQM # Sirena-Underwear
-  innerclothingskirt: ClothingUniformJumpskirtQM
+  innerClothingSkirt: ClothingUniformJumpskirtQM
   satchel: ClothingBackpackSatchelQuartermasterFilled
   duffelbag: ClothingBackpackDuffelQuartermasterFilled

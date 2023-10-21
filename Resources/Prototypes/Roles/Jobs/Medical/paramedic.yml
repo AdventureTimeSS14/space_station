@@ -31,6 +31,6 @@
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
-  innerclothingskirt: ClothingUniformJumpskirtParamedic
+  innerClothingSkirt: ClothingUniformJumpskirtParamedic
   satchel: ADTClothingBackpackSatchelParamedicalFilled
   duffelbag: ADTClothingBackpackDuffelParamedicalFilled
