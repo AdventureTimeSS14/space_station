@@ -1,6 +1,6 @@
 - type: latheRecipe
   id: FormPrinterMachineCircuitboard
-  result: FormPrinterMachineCircuitboard
+  result: PrinterDocCircuitboard
   completetime: 4
   materials:
      Steel: 100
