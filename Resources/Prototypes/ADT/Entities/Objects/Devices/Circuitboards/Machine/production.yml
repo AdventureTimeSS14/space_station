@@ -1,5 +1,5 @@
 - type: entity
-  id: FormPrinterMachineCircuitboard
+  id: PrinterDocCircuitboard
   parent: BaseMachineCircuitboard
   name: uniform printer machine board
   components:
