@@ -8,7 +8,7 @@
     state: icon
   discipline: Arsenal
   tier: 1
-  cost: 5000
+  cost: 3500
   recipeUnlocks:
   - WeaponProtoKineticAccelerator
   # These are roundstart but not replenishable for salvage
@@ -23,7 +23,7 @@
     state: incendiarydisplay
   discipline: Arsenal
   tier: 1
-  cost: 10000
+  cost: 8500
   recipeUnlocks:
   - ShellShotgunIncendiary
   - CartridgePistolIncendiary
@@ -44,7 +44,7 @@
     state: payload-explosive-armed
   discipline: Arsenal
   tier: 1
-  cost: 7500
+  cost: 6000
   recipeUnlocks:
   - Signaller
   - SignalTrigger
@@ -62,7 +62,7 @@
     state: icon
   discipline: Arsenal
   tier: 1
-  cost: 7500
+  cost: 6000
   recipeUnlocks:
   - WeaponLaserCarbine
 
@@ -74,7 +74,7 @@
     state: beanbag
   discipline: Arsenal
   tier: 1
-  cost: 5000
+  cost: 3500
   recipeUnlocks:
   - ShellShotgunBeanbag
   - CartridgePistolRubber
@@ -95,7 +95,7 @@
     state: practice
   discipline: Arsenal
   tier: 1
-  cost: 2000
+  cost: 1000
   recipeUnlocks:
   - ShellShotgunPractice
   - MagazineBoxPistolPractice
@@ -115,7 +115,7 @@
     state: icon
   discipline: Arsenal
   tier: 2
-  cost: 10000
+  cost: 8500
   recipeUnlocks:
   - WeaponLaserCannon
 
@@ -127,7 +127,7 @@
     state: icon
   discipline: Arsenal
   tier: 2
-  cost: 10000
+  cost: 8500
   recipeUnlocks:
   - WeaponXrayCannon
 
@@ -139,7 +139,7 @@
     state: icon
   discipline: Arsenal
   tier: 2
-  cost: 8000
+  cost: 6000
   recipeUnlocks:
   - Truncheon
   - TelescopicShield
@@ -155,7 +155,7 @@
     state: icon
   discipline: Arsenal
   tier: 3
-  cost: 15000
+  cost: 12000
   recipeUnlocks:
   - WeaponTaser
 
@@ -167,6 +167,6 @@
     state: icon
   discipline: Arsenal
   tier: 3
-  cost: 15000
+  cost: 12000
   recipeUnlocks:
   - WeaponAdvancedLaser
