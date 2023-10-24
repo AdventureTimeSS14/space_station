@@ -45,8 +45,8 @@
       beepInterval: 2
 
 - type: entity
-  name: flashbang
-  description: Eeeeeeeeeeeeeeeeeeeeee
+  name: TritiumGrenades
+  description: Tritium Grenades
   parent: GrenadeBase
   id: ADTTritiumGrenades
   components:
@@ -70,8 +70,8 @@
       path: /Audio/Effects/glass_break1.ogg
 
 - type: entity
-  name: ADTGasSpawnerTritium
-  description: ok.
+  name: ADTGasSpawnerTritiumEffect
+  description: Gas Spawner Tritium
   id: ADTGasSpawnerTritium
   placement:
     mode: SnapgridCenter
