@@ -18,39 +18,48 @@
     radius: 3
     energy: 0.5
     color: "#fbffb8"
-  - type: Construction
-    graph: pumpkin_light1
-    node: pumpkinlight1
+  #- type: Construction
+  #  graph: pumpkin_light1
+  #  node: pumpkinlight1
 
 - type: entity
   id: ADTHalloweenPumpkinLight2
   parent: ADTHalloweenPumpkinLight1
+  name: pumpkin light
+  description: pumpkin light
+  suffix: Halloween
   components:
   - type: Sprite
     state: pumpkin_light2
-  - type: Construction
-    graph: pumpkin_light2
-    node: pumpkinlight2
+  #- type: Construction
+  #  graph: pumpkin_light2
+  #  node: pumpkinlight2
 
 - type: entity
   id: ADTHalloweenPumpkinLight3
   parent: ADTHalloweenPumpkinLight1
+  name: pumpkin light
+  description: pumpkin light
+  suffix: Halloween
   components:
   - type: Sprite
     state: pumpkin_light3
-  - type: Construction
-    graph: pumpkin_light3
-    node: pumpkinlight3
+  #- type: Construction
+  #  graph: pumpkin_light3
+  #  node: pumpkinlight3
 
 - type: entity
   id: ADTHalloweenPumpkinLight4
   parent: ADTHalloweenPumpkinLight1
+  name: pumpkin light
+  description: pumpkin light
+  suffix: Halloween
   components:
   - type: Sprite
     state: pumpkin_light3
-  - type: Construction
-    graph: pumpkin_light4
-    node: pumpkinlight4
+  #- type: Construction
+  #  graph: pumpkin_light4
+  #  node: pumpkinlight4
 
 - type: entity
   id: ADTHalloweenPottedPlant1
