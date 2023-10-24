@@ -63,7 +63,7 @@
     intensitySlope: 1
     maxIntensity: 100
   - type: SpawnOnTrigger
-    proto: ADTGasSpawnerTritium
+    proto: ADTTritiumGasSpawner
   - type: Appearance
   - type: TimerTriggerVisuals
     primingSound:
@@ -72,7 +72,7 @@
 - type: entity
   name: ADTGasSpawnerTritiumEffect
   description: Gas Spawner Tritium
-  id: ADTGasSpawnerTritium
+  id: ADTTritiumGasSpawner
   placement:
     mode: SnapgridCenter
   components:
