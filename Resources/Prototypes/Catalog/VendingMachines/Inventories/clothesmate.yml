@@ -7,43 +7,45 @@
     ADTClothingFootWrapsBlack: 3
     ADTClothingFootWrapsHighWhite: 3
     ADTClothingFootWrapsHighBlack: 3
-    ADTClothingUniformTurleneckBlack: 3
-    ADTClothingUniformTurleneckBlackWomen: 3
-    ADTClothingUniformTurleneckBlue: 3
-    ADTClothingUniformTurleneckBlueBlack: 3
-    ADTClothingUniformTurleneckBlueWomen: 3
-    ADTClothingUniformTurleneckGolub: 3
-    ADTClothingUniformTurleneckGolubBlack: 3
-    ADTClothingUniformTurleneckGolubWomen: 3
-    ADTClothingUniformTurleneckGreen: 3
-    ADTClothingUniformTurleneckGreenBlack: 3
-    ADTClothingUniformTurleneckGreenWomen: 3
-    ADTClothingUniformTurleneckOrange: 3
-    ADTClothingUniformTurleneckOrangeBlack: 3
-    ADTClothingUniformTurleneckOrangeWomen: 3
-    ADTClothingUniformTurleneckPurpur: 3
-    ADTClothingUniformTurleneckPurpurBlack: 3
-    ADTClothingUniformTurleneckPurpurWomen: 3
-    ADTClothingUniformTurleneckRed: 3
-    ADTClothingUniformTurleneckRedBlack: 3
-    ADTClothingUniformTurleneckRedWomen: 3
-    ADTClothingUniformTurleneckSalat: 3
-    ADTClothingUniformTurleneckSalatBlack: 3
-    ADTClothingUniformTurleneckSalatWomen: 3
-    ADTClothingUniformTurleneckWhite: 3
-    ADTClothingUniformTurleneckWhiteBlack: 3
-    ADTClothingUniformTurleneckWhiteWomen: 3
-    ADTClothingUniformTurleneckBlackSleeveless: 3
-    ADTClothingUniformTurleneckBlackWomenSleeveless: 3
-    ADTClothingUniformTurleneckWhiteSleeveless: 3
-    ADTClothingUniformTurleneckWhiteBlackSleeveless: 3
-    ADTClothingUniformTurleneckWhiteWomenSleeveless: 3
+    ADTClothingUniformTurleneckBlack: 2
+    ADTClothingUniformTurleneckBlackWomen: 2
+    ADTClothingUniformTurleneckBlue: 2
+    ADTClothingUniformTurleneckBlueBlack: 2
+    ADTClothingUniformTurleneckBlueWomen: 2
+    ADTClothingUniformTurleneckGolub: 2
+    ADTClothingUniformTurleneckGolubBlack: 2
+    ADTClothingUniformTurleneckGolubWomen: 2
+    ADTClothingUniformTurleneckGreen: 2
+    ADTClothingUniformTurleneckGreenBlack: 2
+    ADTClothingUniformTurleneckGreenWomen: 2
+    ADTClothingUniformTurleneckOrange: 2
+    ADTClothingUniformTurleneckOrangeBlack: 2
+    ADTClothingUniformTurleneckOrangeWomen: 2
+    ADTClothingUniformTurleneckPurpur: 2
+    ADTClothingUniformTurleneckPurpurBlack: 2
+    ADTClothingUniformTurleneckPurpurWomen: 2
+    ADTClothingUniformTurleneckRed: 2
+    ADTClothingUniformTurleneckRedBlack: 2
+    ADTClothingUniformTurleneckRedWomen: 2
+    ADTClothingUniformTurleneckSalat: 2
+    ADTClothingUniformTurleneckSalatBlack: 2
+    ADTClothingUniformTurleneckSalatWomen: 2
+    ADTClothingUniformTurleneckWhite: 2
+    ADTClothingUniformTurleneckWhiteBlack: 2
+    ADTClothingUniformTurleneckWhiteWomen: 2
+    ADTClothingUniformTurleneckBlackSleeveless: 2
+    ADTClothingUniformTurleneckBlackWomenSleeveless: 2
+    ADTClothingUniformTurleneckWhiteSleeveless: 2
+    ADTClothingUniformTurleneckWhiteBlackSleeveless: 2
+    ADTClothingUniformTurleneckWhiteWomenSleeveless: 2
     ADTClothingNeckGothicCloak: 1
-    ClothingBackpack: 5
-    ClothingBackpackDuffel: 5
+    ClothingBackpack: 3
+    ClothingBackpackDuffel: 3
     ClothingBackpackSatchel: 3
     ClothingBackpackSatchelLeather: 2
-    ClothingHeadHatBeret: 4
+    ADTClothingBackpackBlackLadySatchel: 3
+    ADTClothingBackpackLeatherLadySatchel: 3
+    ClothingHeadHatBeret: 3
     ClothingHeadBandBlack: 2
     ClothingHeadBandBlue: 2
     ClothingHeadBandGreen: 2

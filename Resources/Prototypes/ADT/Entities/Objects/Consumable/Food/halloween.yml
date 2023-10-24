@@ -1,0 +1,424 @@
+- type: entity
+  name: pumpkin
+  parent: [FoodProduceBase, ItemHeftyBase]
+  id: ADTFoodPumpkin
+  description: Round orange object that you can slice and eat.
+  components:
+  - type: Item
+    size: 10
+  - type: FlavorProfile
+    flavors:
+      - adt_pumpkin
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 25
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 15
+        - ReagentId: Vitamin
+          Quantity: 5
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Hydroponics/pumpkin.rsi
+  - type: Produce
+    seedId: adt_pumpkin
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: ADTJuicePumpkin
+        Quantity: 20
+  - type: Damageable
+    damageContainer: Biological
+  - type: DamageOnHighSpeedImpact
+    minimumSpeed: 0.1
+    damage:
+      types:
+        Blunt: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: desecration
+      - !type:SpillBehavior
+        solution: food
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: SliceableFood
+    count: 3
+    slice: ADTFoodPumkinSlice
+  - type: Butcherable
+    butcheringType: Knife
+    spawned:
+    - id: ClothingHeadHatPumpkin
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: pumpkin slice
+  parent: ProduceSliceBase
+  id: ADTFoodPumkinSlice
+  description: Juicy orange slice.
+  components:
+  - type: Item
+    size: 2
+  - type: FlavorProfile
+    flavors:
+      - adt_pumpkin
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Hydroponics/pumpkin.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Vitamin
+          Quantity: 1
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: ADTJuicePumpkin
+        Quantity: 5
+  - type: Tag
+    tags:
+    - Fruit
+
+#снэки на хеллоуин
+- type: entity
+  name: black candies
+  parent: FoodSnackBase
+  id: ADTFoodSnackBlackCandies
+  description: black candies
+  suffix: Halloween
+  components:
+  - type: FlavorProfile
+    flavors:
+      - chocolate
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/halloween_candies.rsi
+    state: black
+  - type: Item
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3
+
+- type: entity
+  name: green candies
+  parent: ADTFoodSnackBlackCandies
+  id: ADTFoodSnackGreenCandies
+  description: green candies
+  suffix: Halloween
+  components:
+  - type: FlavorProfile
+    flavors:
+      - chocolate
+  - type: Sprite
+    state: green
+
+- type: entity
+  name: red candies
+  parent: ADTFoodSnackBlackCandies
+  id: ADTFoodSnackRedCandies
+  description: red candies
+  suffix: Halloween
+  components:
+  - type: FlavorProfile
+    flavors:
+      - chocolate
+  - type: Sprite
+    state: red
+
+- type: entity
+  name: violet candies
+  parent: ADTFoodSnackBlackCandies
+  id: ADTFoodSnackVioletCandies
+  description: violet candies
+  suffix: Halloween
+  components:
+  - type: FlavorProfile
+    flavors:
+      - chocolate
+  - type: Sprite
+    state: violet
+
+- type: entity
+  name: yellow candies
+  parent: ADTFoodSnackBlackCandies
+  id: ADTFoodSnackYellowCandies
+  description: yellow candies
+  suffix: Halloween
+  components:
+  - type: FlavorProfile
+    flavors:
+      - chocolate
+  - type: Sprite
+    state: yellow
+
+- type: entity
+  name: bat gingerbread
+  parent: ADTFoodSnackBlackCandies
+  id: ADTFoodSnackBatGingerBread
+  description: bat gingerbread
+  suffix: Halloween
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+  - type: Sprite
+    state: bat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 7
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+
+- type: entity
+  name: scull gingerbread
+  parent: ADTFoodSnackBatGingerBread
+  id: ADTFoodSnackScullGingerBread
+  description: scull gingerbread
+  suffix: Halloween
+  components:
+  - type: Sprite
+    state: scull
+
+- type: entity
+  name: pumpkin gingerbread
+  parent: ADTFoodSnackBatGingerBread
+  id: ADTFoodSnackPumpkinGingerBread
+  description: pumpkin gingerbread
+  suffix: Halloween
+  components:
+  - type: Sprite
+    state: pumpkin
+
+- type: entity
+  name: chocolate bunny
+  parent: ADTFoodSnackBlackCandies
+  id: ADTFoodSnackBunnyCandies
+  description: chocolate bunny
+  suffix: Halloween
+  components:
+  - type: FlavorProfile
+    flavors:
+      - chocolate
+  - type: Sprite
+    state: bunny
+
+- type: entity
+  name: chocolate coin
+  parent: ADTFoodSnackBlackCandies
+  id: ADTFoodSnackCoinCandies
+  description: chocolate coin
+  suffix: Halloween
+  components:
+  - type: FlavorProfile
+    flavors:
+      - chocolate
+  - type: Sprite
+    state: coin
+
+- type: entity
+  name: jelly brains
+  parent: ADTFoodSnackBatGingerBread
+  id: ADTFoodSnackBrains
+  description: jelly brains
+  suffix: Halloween
+  components:
+  - type: Sprite
+    state: brains
+
+- type: entity
+  name: jelly heart
+  parent: ADTFoodSnackBatGingerBread
+  id: ADTFoodSnackHeart
+  description: jelly heart
+  suffix: Halloween
+  components:
+  - type: Sprite
+    state: heart
+
+- type: entity
+  name: jelly worms
+  parent: ADTFoodSnackBatGingerBread
+  id: ADTFoodSnackWorms
+  description: jelly worms
+  suffix: Halloween
+  components:
+  - type: Sprite
+    state: worms
+
+- type: entity
+  name: caramel stick
+  parent: ADTFoodSnackBatGingerBread
+  id: ADTFoodSnackHLCaramel
+  description: caramel stick
+  suffix: Halloween
+  components:
+  - type: Sprite
+    state: hl_caramel
+
+- type: entity
+  name: caramel stick
+  parent: ADTFoodSnackBatGingerBread
+  id: ADTFoodSnackMintCaramel
+  description: caramel stick
+  suffix: Halloween
+  components:
+  - type: Sprite
+    state: mint_caramel
+
+- type: entity
+  name: jelly eyes
+  parent: ADTFoodSnackBatGingerBread
+  id: ADTFoodSnackEyes
+  description: jelly eyes
+  suffix: Halloween
+  components:
+  - type: Sprite
+    state: eyes
+
+- type: entity
+  name: candy blue
+  parent: ADTFoodSnackBatGingerBread
+  id: ADTFoodSnackCandyBlue
+  description: candy blue
+  suffix: Halloween
+  components:
+  - type: Sprite
+    state: candyblue
+
+- type: entity
+  name: candy gow
+  parent: ADTFoodSnackBatGingerBread
+  id: ADTFoodSnackCandyGoW
+  description: candy gow
+  suffix: Halloween
+  components:
+  - type: Sprite
+    state: candygow
+
+- type: entity
+  name: candy green
+  parent: ADTFoodSnackBatGingerBread
+  id: ADTFoodSnackCandyGreen
+  description: candy green
+  suffix: Halloween
+  components:
+  - type: Sprite
+    state: candygreen
+
+- type: entity
+  name: candy mine
+  parent: ADTFoodSnackBatGingerBread
+  id: ADTFoodSnackCandyMine
+  description: candy mine
+  suffix: Halloween
+  components:
+  - type: Sprite
+    state: candymine
+
+- type: entity
+  name: candy red
+  parent: ADTFoodSnackBatGingerBread
+  id: ADTFoodSnackCandyRed
+  description: candy red
+  suffix: Halloween
+  components:
+  - type: Sprite
+    state: candyred
+
+- type: entity
+  name: pumpkin pie
+  parent: FoodPieBase
+  id: ADTFoodPiePumpkin
+  description: A pie containing sweet, sweet love... and pumpkin.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - adt_pumpkin
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/pumpkin_pie.rsi
+    state: pumpkin_pie
+  - type: SliceableFood
+    slice: ADTFoodPiePumpkinSlice
+  - type: Tag
+    tags:
+    - Fruit 
+    - Pie 
+  
+- type: entity
+  name: slice of pumpkin pie
+  parent: FoodPieSliceBase
+  id: ADTFoodPiePumpkinSlice
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - adt_pumpkin
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/pumpkin_pie.rsi
+    state: slice
+  - type: Tag
+    tags:
+    - Fruit 
+    - Pie
+
+- type: microwaveMealRecipe
+  id: ADTRecipePumpkinPie
+  name: pumpkin pie
+  result: ADTFoodPiePumpkin
+  time: 15
+  solids:
+    FoodDoughPie: 1
+    ADTFoodPumpkin: 1
+    FoodPlateTin: 1
+
+- type: entity
+  name: pumpkin soup
+  parent: FoodBowlBase
+  id: ADTFoodSoupPumpkin
+  description: A humble split pumpkin soup.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - creamy
+      - adt_pumpkin
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/pumpkin_soup.rsi
+    state: icon
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxvol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Vitamin
+          Quantity: 5
+
+- type: microwaveMealRecipe
+  id: ADTRecipePumpkinSoup
+  name: pumpkin soup recipe
+  result: ADTFoodSoupPumpkin
+  time: 10
+  reagents:
+    Water: 5
+  solids:
+    FoodBowlBig: 1
+    ADTFoodPumkinSlice: 2
+    FoodCarrot: 1
+    FoodPotato: 1

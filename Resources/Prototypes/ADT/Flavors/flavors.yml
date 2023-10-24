@@ -184,3 +184,8 @@
   id: ADTGlyphidStoutBeerFlavor
   flavorType: Complex
   description: flavor-complex-glyphidstout
+
+- type: flavor
+  id: adt_pumpkin
+  flavorType: Base
+  description: flavor-base-pumpkin
