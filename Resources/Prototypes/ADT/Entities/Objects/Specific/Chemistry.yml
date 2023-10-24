@@ -1,15 +1,29 @@
 # баночка
 - type: entity
+  name: pill canister
+  id: ADTPillCanister
+  parent: PillCanister
+  description: Holds up to 10 pills.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/pills.rsi 
+    state: pill-canister
+  - type: Item
+    sprite: ADT/Objects/Specific/Medical/pills.rsi 
+  - type: Storage
+    capacity: 10
+
+- type: entity
   name: vitamin canister
   id: ADTMVitaminCanister
   parent: PillCanister
   description: Contains healthy vitamins for you.
   components:
-#  - type: Sprite
-#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
-#    state: vitamin_canister
-#  - type: Item
-#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/pills.rsi 
+    state: vitamin-canister
+  - type: Item
+    sprite: ADT/Objects/Specific/Medical/pills.rsi 
   - type: Storage
     capacity: 10
   - type: StorageFill
@@ -24,13 +38,13 @@
   name: agolatine canister
   id: ADTMAgolatineCanister
   parent: PillCanister
-  description: Contains antidepressants for you.
+  description: Contains (kinda) healthy antidepressants for you.
   components:
-#  - type: Sprite
-#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
-#    state: agolatine_canister
-#  - type: Item
-#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/pills.rsi 
+    state: agolatine-canister
+  - type: Item
+    sprite: ADT/Objects/Specific/Medical/pills.rsi 
   - type: Storage
     capacity: 10
   - type: StorageFill
@@ -58,16 +72,19 @@
       Plastic: 25
   - type: SpaceGarbage
   - type: Sprite
-    sprite: Objects/Specific/Chemistry/bottle.rsi # заменить на новенькие.
+    sprite: ADT/Objects/Specific/Medical/plastic-bottle.rsi
     layers:
-      - state: bottle-1
-      - state: bottle-1-1
-        map: ["enum.SolutionContainerLayers.Fill"]
+      - state: icon
+        map: [ "enum.SolutionContainerLayers.Base" ]
+      - state: fill1
+        map: [ "enum.SolutionContainerLayers.Fill" ]
         visible: false
+      - state: icon-front
+        map: [ "enum.SolutionContainerLayers.Overlay" ]
   - type: Appearance
   - type: SolutionContainerVisuals
-    maxFillLevels: 6
-    fillBaseName: bottle-1-
+    maxFillLevels: 7
+    fillBaseName: fill
   - type: Drink
   - type: SolutionContainerManager
     solutions:
@@ -91,7 +108,7 @@
       type: TransferAmountBoundUserInterface
   - type: Item
     size: 3
-    sprite: Objects/Specific/Chemistry/beaker.rsi
+    sprite: ADT/Objects/Specific/Medical/plastic-bottle.rsi
   - type: Spillable
     solution: drink
   - type: MeleeWeapon
@@ -102,6 +119,9 @@
         Blunt: 0
   - type: TrashOnEmpty
     solution: drink
+  - type: Openable
+    sound:
+      path: /Audio/Items/pop.ogg
   - type: StaticPrice
     price: 0
   - type: GuideHelp
@@ -109,10 +129,26 @@
     - Medicine
 
 - type: entity
+  id: ADTPlasticBottle
+  name: plastic bottle
+  parent: BaseChemistryEmptyPlasticBottle
+
+- type: entity
   id: ADTMPeroHydrogenBottle
   name: perohydrogen bottle
   parent: BaseChemistryEmptyPlasticBottle
+  description: A small plastic bottle. The letters on the label so small that they form a funny face.
   components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/plastic-bottle.rsi
+    layers:
+      - state: icon
+        map: [ "enum.SolutionContainerLayers.Base" ]
+      - state: fill1
+        map: [ "enum.SolutionContainerLayers.Fill" ]
+        visible: false
+      - state: icon-front-perohydrogen
+        map: [ "enum.SolutionContainerLayers.Overlay" ]
   - type: SolutionContainerManager
     solutions:
       drink: 
@@ -123,8 +159,19 @@
 - type: entity
   id: ADTMNikematideBottle
   name: nikematide bottle
+  description: A small plastic bottle. The letters on the label so small that they form a funny face.
   parent: BaseChemistryEmptyPlasticBottle
   components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/plastic-bottle.rsi
+    layers:
+      - state: icon
+        map: [ "enum.SolutionContainerLayers.Base" ]
+      - state: fill1
+        map: [ "enum.SolutionContainerLayers.Fill" ]
+        visible: false
+      - state: icon-front-nikematide
+        map: [ "enum.SolutionContainerLayers.Overlay" ]
   - type: SolutionContainerManager
     solutions:
       drink: 
@@ -140,10 +187,10 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Objects/Specific/Chemistry/pills_canister.rsi #заменить на новые.
-    state: pill_canister
+    sprite: ADT/Objects/Specific/Medical/packs.rsi 
+    state: pack
   - type: Item
-    sprite: Objects/Specific/Chemistry/pills_canister.rsi 
+    sprite: ADT/Objects/Specific/Medical/packs.rsi 
   - type: Tag
     tags:
       - PillCanister
@@ -157,15 +204,20 @@
     - Medicine
 
 - type: entity
+  id: ADTPillPack
+  name: pill pack
+  parent: BasePack
+
+- type: entity
   name: sodiumizole pack
   id: ADTMSodiumizolePack
   parent: BasePack
   components:
-#  - type: Sprite
-#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
-#    state: sodiumizole
-#  - type: Item
-#    sprite: Objects/Specific/Chemistry/pills.rsi 
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/packs.rsi 
+    state: sodiumizole
+  - type: Item
+    sprite: ADT/Objects/Specific/Medical/packs.rsi 
   - type: StorageFill
     contents:
       - id: ADTMSodiumizolePill 
@@ -176,11 +228,11 @@
   id: ADTMNitrofurfollPack
   parent: BasePack
   components:
-#  - type: Sprite
-#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
-#    state: nitrofurfoll
-#  - type: Item
-#    sprite: Objects/Specific/Chemistry/pills.rsi 
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/packs.rsi 
+    state: nitrofurfoll
+  - type: Item
+    sprite: ADT/Objects/Specific/Medical/packs.rsi 
   - type: StorageFill
     contents:
       - id: ADTMNitrofurfollPill 
@@ -191,11 +243,11 @@
   id: ADTMAnelgesinPack
   parent: BasePack
   components:
-#  - type: Sprite
-#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
-#    state: anelgezin
-#  - type: Item
-#    sprite: Objects/Specific/Chemistry/pills.rsi 
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/packs.rsi 
+    state: anelgesin
+  - type: Item
+    sprite: ADT/Objects/Specific/Medical/packs.rsi 
   - type: StorageFill
     contents:
       - id: ADTMAnelgesinPill 
@@ -206,11 +258,11 @@
   id: ADTMMinoxidePack
   parent: BasePack
   components:
-#  - type: Sprite
-#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
-#    state: minoxide
-#  - type: Item
-#    sprite: Objects/Specific/Chemistry/pills.rsi 
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/packs.rsi 
+    state: minoxide
+  - type: Item
+    sprite: ADT/Objects/Specific/Medical/packs.rsi 
   - type: StorageFill
     contents:
       - id: ADTMMinoxidePill 
@@ -221,11 +273,11 @@
   id: ADTMDiethamilatePack
   parent: BasePack
   components:
-#  - type: Sprite
-#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
-#    state: diethamilate
-#  - type: Item
-#    sprite: Objects/Specific/Chemistry/pills.rsi 
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/packs.rsi 
+    state: diethamilate
+  - type: Item
+    sprite: ADT/Objects/Specific/Medical/packs.rsi 
   - type: StorageFill
     contents:
       - id: ADTMDiethamilatePill 
@@ -236,11 +288,11 @@
   id: ADTMHaloperidolPack
   parent: BasePack
   components:
-#  - type: Sprite
-#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
-#    state: haloperidol
-#  - type: Item
-#    sprite: Objects/Specific/Chemistry/pills.rsi 
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/packs.rsi 
+    state: haloperidol
+  - type: Item
+    sprite: ADT/Objects/Specific/Medical/packs.rsi 
   - type: StorageFill
     contents:
       - id: ADTMHaloperidolPill 
@@ -251,11 +303,11 @@
   id: ADTMCharcoalPack
   parent: BasePack
   components:
-#  - type: Sprite
-#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
-#    state: anelgezin
-#  - type: Item
-#    sprite: Objects/Specific/Chemistry/pills.rsi 
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/packs.rsi 
+    state: charcoal
+  - type: Item
+    sprite: ADT/Objects/Specific/Medical/packs.rsi 
   - type: StorageFill
     contents:
       - id: PillCharcoal
@@ -266,11 +318,11 @@
   id: ADTMEthylredoxrazinePack
   parent: BasePack
   components:
-#  - type: Sprite
-#    sprite: ADT/Objects/Specific/Chemistry/pills.rsi 
-#    state: anelgezin
-#  - type: Item
-#    sprite: Objects/Specific/Chemistry/pills.rsi 
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/packs.rsi 
+    state: ethylredoxrazine
+  - type: Item
+    sprite: ADT/Objects/Specific/Medical/packs.rsi 
   - type: StorageFill
     contents:
       - id: ADTMEthylredoxrazinePill 
