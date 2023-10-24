@@ -86,7 +86,7 @@
   parent: MarkerBase
   id: ADTHelloweenPlantRandom
   name: random helloween decor spawner
-  decription: random helloween decor spawner
+  #decription: random helloween decor spawner
   suffix: Helloween
   components:
   - type: Sprite
