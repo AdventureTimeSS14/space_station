@@ -74,3 +74,4 @@
             Magistrat: [ 1, 1 ]
             Virusolog: [ 1, 1]
             ADTPathologist: [ 1 , 1]
+            ADTInvestigator: [ 1, 1 ] #ADT

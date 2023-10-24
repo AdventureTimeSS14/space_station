@@ -14,8 +14,8 @@
     baseDecayRate: 0.0125 # Spiders have slow metabolisms all things considered, so I decided to just make their hunger drain slower.
     starvationDamage:
       types:
-        Cold: 0.5
-        Bloodloss: 0.5
+        Cold: 0.05
+        Bloodloss: 0.05
   - type: Thirst
     baseDecayRate: 0.0125 # Read comment in hunger
   # Damage (Self)

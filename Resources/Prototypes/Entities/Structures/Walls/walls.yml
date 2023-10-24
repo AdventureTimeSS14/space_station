@@ -750,6 +750,9 @@
   - type: IconSmooth
     key: walls
     base: state
+  - type: Construction
+    graph: Girder
+    node: shuttleWall
 
 - type: entity
   parent: BaseWall

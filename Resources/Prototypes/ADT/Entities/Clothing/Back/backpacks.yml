@@ -100,6 +100,7 @@
         amount: 2
       - id: BoxFolderBlue
         amount: 2
+      - id: ADTBookInvestigator
 
 - type: entity
   noSpawn: true
@@ -122,6 +123,7 @@
         amount: 2
       - id: BoxFolderBlue
         amount: 2
+      - id: ADTBookInvestigator
 
 - type: entity
   noSpawn: true
@@ -144,6 +146,7 @@
         amount: 2
       - id: BoxFolderBlue
         amount: 2
+      - id: ADTBookInvestigator
 
 # Приколы Патологоанатома
 - type: entity
@@ -206,3 +209,23 @@
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/genetics.rsi
+
+#дамские сумочки
+
+- type: entity
+  parent: ClothingBackpack
+  id: ADTClothingBackpackBlackLadySatchel
+  name: black lady satchel
+  description: Satchel for storage. Wow, whats there? A stolen hearts?
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Back/blacklady_satchel.rsi
+
+- type: entity
+  parent: ClothingBackpack
+  id: ADTClothingBackpackLeatherLadySatchel
+  name: leather lady satchel
+  description: Satchel for storage. Wow, whats there? A stolen hearts?
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Back/leatherlady_satchel.rsi

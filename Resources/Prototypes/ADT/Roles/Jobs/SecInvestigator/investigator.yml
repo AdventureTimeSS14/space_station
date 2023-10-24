@@ -6,10 +6,10 @@
   requirements:
   - !type:RoleTimeRequirement
       role: JobWarden
-      time: 10800 #3 hrs
+      time: 21600 #6 hrs
   - !type:RoleTimeRequirement
       role: JobIAA
-      time: 10800 #3 hrs
+      time: 21600 #6 hrs
   - !type:DepartmentTimeRequirement
     department: Security
     time: 108000 # 30 hours

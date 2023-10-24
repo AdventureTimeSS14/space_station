@@ -3,6 +3,14 @@ guide-new-cocktails-ADT = Авторские коктейли, рецепты
 
 guide-pathologist-ADT = Морг и патологоанатом
 
+guide-entry-all-korporate-zakon = Корпоративный Закон
+guide-entry-all-korporate-zakon-oprs = ОПРС
+guide-entry-all-korporate-zakon-minor = Легкие нарушения
+guide-entry-all-korporate-zakon-medium = Средние нарушения
+guide-entry-all-korporate-zakon-serious = Тяжкие нарушения
+guide-entry-all-korporate-zakon-superheavy = Сверхтяжкие нарушения
+guide-entry-all-korporate-zakon-critical = Критические нарушения
+
 guide-entry-all-srp = Стандартные Рабочие Процедуры
 
 guide-entry-command = Командование станцией
@@ -11,10 +19,15 @@ guide-entry-command-head-personal = Глава Персонала
 guide-entry-command-procedure = Процедуры Командования
 
 guide-entry-lawyer = Юридический Департамент NT
+guide-entry-lawyer-magistrat = Магистрат
+guide-entry-lawyer-iia = Агент внутренних дел
+guide-entry-lawyer-lawyers = Юрист
+
 guide-entry-security = Отдел Службы Безопасности
 guide-entry-head-security = Глава Службы безопасности
 guide-entry-warden = Смотритель
 guide-entry-senyor = Инструктор-СБ
+guide-entry-sledovatil = Следователь
 guide-entry-detective = Детектив
 guide-entry-pilot = Пилот СБ
 guide-entry-oficer = Офицер СБ

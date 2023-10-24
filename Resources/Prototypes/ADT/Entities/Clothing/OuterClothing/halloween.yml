@@ -1,0 +1,103 @@
+- type: entity
+  parent: ClothingOuterArmorBasic
+  id: ADTCSIJArmor
+  name: CSIJ bulletproof vest
+  description: No one knows what this bulletproof vest is made of, and it's better not to know... On the back there are the initials CS - 'Cruelty Squad'.
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Suits/Halloween/CSIJ_armor.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Suits/Halloween/CSIJ_armor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.7
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.80
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ADTJasonBomber
+  name: maniac bomber
+  description: maniac bomber
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Suits/Halloween/jason.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Suits/Halloween/jason.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ADTStudentBomber
+  name: student bomber
+  description: student bomber
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Suits/Halloween/hotline_student.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Suits/Halloween/hotline_student.rsi
+
+- type: entity
+  parent: ClothingOuterArmorBasic
+  id: ADTKillaArmor
+  name: Killa armor vest
+  description: Killa armor vest
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Suits/Halloween/killa_armor.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Suits/Halloween/killa_armor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.3
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.80
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+
+- type: entity
+  parent: ClothingOuterArmorBasic
+  id: ADTTagillaArmor
+  name: Tagilla bulletproof vest
+  description: Tagilla bulletproof vest
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Suits/Halloween/tagilla_armor.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Suits/Halloween/tagilla_armor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.3
+        Heat: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.80
+  #- type: Storage
+  #  capacity: 12
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ADTVergileCloak
+  name: Vergile cloak
+  description: Vergile cloak
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Suits/Halloween/vergile_cloak.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Suits/Halloween/vergile_cloak.rsi

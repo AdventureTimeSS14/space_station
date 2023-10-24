@@ -53,3 +53,9 @@ ent-ADTClothingBackpackDuffelPathologist = вещмешок патологоан
 
 ent-ADTClothingBackpackSatchelPathologist = сумка патологоанатома
     .desc = Сумка для хранения инструментов и бумаг
+    
+ent-ADTClothingBackpackBlackLadySatchel = черная дамская сумочка
+    .desc = Миниатюрно, стильно, позволяет вместить в себя косметику, оружие и ломик.
+
+ent-ADTClothingBackpackLeatherLadySatchel = кожаный ранец
+    .desc = Для тех, кто снова хочет оказаться в школе.

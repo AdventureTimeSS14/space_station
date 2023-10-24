@@ -1,0 +1,9 @@
+- type: entity
+  parent: SeedBase
+  name: packet of pumpkin seeds
+  id: ADTPumpkinSeeds
+  components:
+    - type: Seed
+      seedId: adt_pumpkin
+    - type: Sprite
+      sprite: ADT/Objects/Specific/Hydroponics/pumpkin.rsi

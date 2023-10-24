@@ -68,3 +68,18 @@
   components:
   - type: Sprite
     sprite: Sirena/Clothing/Underwear/Socks/socksthigh.rsi
+
+#метла для хеллоуина
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderSocksBroom
+  name: witch broom
+  description: time to fly
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Under/broom.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 1.5

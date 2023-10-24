@@ -1,11 +1,12 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  #- CorvaxDelta
+  - CorvaxDelta
   - CorvaxAvrite
   - Aspid
   - Barratry
-  - Cluster
+  #- Cluster
+  - HalloweenCluster
   #- Core
   - Fland
   - Kettle

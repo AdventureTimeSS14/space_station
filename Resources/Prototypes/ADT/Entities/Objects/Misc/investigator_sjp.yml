@@ -1,0 +1,17 @@
+- type: entity
+  parent: BookBase
+  id: ADTBookInvestigator
+  name: Investigator. Standart Job Procedures
+  description: This big and very heavy book contain a SJP of Investigator.
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/books.rsi
+      layers:
+        - state: book_space_law
+    - type: Paper
+      content: book-text-investigator
+    - type: MeleeWeapon
+      attackRate: 1
+      damage:
+        types:
+          Blunt: 5
