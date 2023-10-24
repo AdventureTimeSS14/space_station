@@ -1,6 +1,7 @@
-﻿- type: vendingMachineInventory
+- type: vendingMachineInventory
   id: SodaInventory
   startingInventory:
+    ADTDrinkHellEnergy: 5
     DrinkColaCan: 3
     DrinkGrapeCan: 3
     DrinkRootBeerCan: 3

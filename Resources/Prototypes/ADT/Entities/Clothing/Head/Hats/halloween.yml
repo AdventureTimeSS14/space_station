@@ -1,0 +1,74 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadVyasovHat
+  name: shabby fedora
+  description: It looks very shabby brown in color, it smells like a nightmare straight from Vyazova Street
+  suffix: Halloween
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/Halloween/vyazovhat.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/Halloween/vyazovhat.rsi
+
+- type: entity
+  parent: ADTClothingHeadUSSPjuggernautHelmetArmored
+  id: ADTClothingHeadKillaHelmet
+  name: Killa helmet
+  description: Killa helmet
+  suffix: Halloween
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/Halloween/killahelmet.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/Halloween/killahelmet.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadSquidGame
+  name: squid game head
+  description: squid game head
+  suffix: Halloween
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/Halloween/squidgame.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/Halloween/squidgame.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadXenomorph
+  name: Xenomorph head
+  description: Xenomorph head
+  suffix: Halloween
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/Halloween/xeno_head.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/Halloween/xeno_head.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadZombie
+  name: zombie head
+  description: zombie head
+  suffix: Halloween
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/Halloween/zombie_head.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/Halloween/zombie_head.rsi

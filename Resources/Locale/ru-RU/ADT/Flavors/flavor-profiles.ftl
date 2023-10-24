@@ -40,3 +40,5 @@ flavor-complex-livseybeer = как хмель, солод и жидкость и
 flavor-complex-luckyjonny = как хмель, солод и...а это что такое?
 flavor-complex-secunfiltered = как хмель, солод и удар станбатоном
 flavor-complex-glyphidstout = как хмель, солод, опьянение, темнота, опасность и дворфы
+
+flavor-base-pumpkin = тыквенно

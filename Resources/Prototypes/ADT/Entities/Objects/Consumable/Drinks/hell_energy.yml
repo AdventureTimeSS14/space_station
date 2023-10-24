@@ -1,0 +1,24 @@
+- type: entity
+  parent: DrinkCanBaseFull
+  id: ADTDrinkHellEnergy
+  name: hell enery
+  description: A special series of 14 Loko and enery drink for a Halloween. Not recommended by doctors.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Stimulants
+          Quantity: 10
+        - ReagentId: FourteenLoko
+          Quantity: 15
+        - ReagentId: Ice
+          Quantity: 5
+  - type: Tag
+    tags:
+    - Recyclable
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/hell_energy.rsi
+  - type: Item
+    sprite: ADT/Objects/Consumable/Drinks/hell_energy.rsi
