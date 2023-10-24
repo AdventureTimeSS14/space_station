@@ -117,8 +117,8 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/tagilla_pants.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/tagilla_pants.rsi
-  - type: Storage
-    capacity: 5
+  #- type: Storage
+  #  capacity: 5
 
 - type: entity
   parent: ClothingUniformBase

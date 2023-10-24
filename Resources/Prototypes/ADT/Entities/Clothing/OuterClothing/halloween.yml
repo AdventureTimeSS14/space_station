@@ -87,8 +87,8 @@
         Heat: 0.7
   - type: ExplosionResistance
     damageCoefficient: 0.80
-  - type: Storage
-    capacity: 12
+  #- type: Storage
+  #  capacity: 12
 
 - type: entity
   parent: ClothingOuterStorageBase
