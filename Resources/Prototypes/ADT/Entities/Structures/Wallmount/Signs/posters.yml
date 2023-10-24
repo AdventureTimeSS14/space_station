@@ -86,3 +86,230 @@
   components:
   - type: Sprite
     state: painting_gagarin
+
+#хеллоуинский декор
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterHalloweenSpooky
+  name: spooky poster
+  description: spooky poster
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_helloween.rsi
+    state: spooky
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterHalloweenYummy
+  name: yummy poster
+  description: yummy poster
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_helloween.rsi
+    state: yummy
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterHalloweenSpider
+  name: spider poster
+  description: spider poster
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_helloween.rsi
+    state: spider
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterHalloweenSpiderWeb1
+  name: spider web
+  description: spider web
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_helloween.rsi
+    state: spiderweb1
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterHalloweenSpiderWeb2
+  name: spider web
+  description: spider web
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_helloween.rsi
+    state: spiderweb2
+
+- type: entity
+  parent: MarkerBase
+  id: ADTHalloweenPosterRandom
+  name: random helloween wall decor spawner
+  #decription: random helloween wall decor spawner
+  suffix: Halloween
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: ADT/Objects/Decoration/poster_helloween.rsi
+        state: spider
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+      - ADTPosterHalloweenSpooky
+      - ADTPosterHalloweenYummy
+      - ADTPosterHalloweenSpider
+      - ADTPosterHalloweenSpiderWeb1
+      - ADTPosterHalloweenSpiderWeb2
+    chance: 1
+
+#флажки к хеллоуину
+#черно-оранжевые
+- type: entity
+  parent: PosterBase
+  id: ADTHalloweenTrianglesBlackOrange1
+  name: black-orange triangles
+  description: black-orange triangles
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/triangles_halloween.rsi
+    state: blackorange1
+
+- type: entity
+  parent: PosterBase
+  id: ADTHalloweenTrianglesBlackOrange2
+  name: black-orange triangles
+  description: black-orange triangles
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/triangles_halloween.rsi
+    state: blackorange2
+
+- type: entity
+  parent: PosterBase
+  id: ADTHalloweenTrianglesBlackOrange3
+  name: black-orange triangles
+  description: black-orange triangles
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/triangles_halloween.rsi
+    state: blackorange3
+
+#черно-белые
+- type: entity
+  parent: PosterBase
+  id: ADTHalloweenTrianglesBlackWhite1
+  name: black-white triangles
+  description: black-white triangles
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/triangles_halloween.rsi
+    state: blackwhite1
+
+- type: entity
+  parent: PosterBase
+  id: ADTHalloweenTrianglesBlackWhite2
+  name: black-white triangles
+  description: black-white triangles
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/triangles_halloween.rsi
+    state: blackwhite2
+
+- type: entity
+  parent: PosterBase
+  id: ADTHalloweenTrianglesBlackWhite3
+  name: black-white triangles
+  description: black-white triangles
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/triangles_halloween.rsi
+    state: blackwhite3
+
+#оранжево-желтые
+- type: entity
+  parent: PosterBase
+  id: ADTHalloweenTrianglesOrangeYellow1
+  name: orange-yellow triangles
+  description: orange-yellow triangles
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/triangles_halloween.rsi
+    state: orangeyellow1
+
+- type: entity
+  parent: PosterBase
+  id: ADTHalloweenTrianglesOrangeYellow2
+  name: orange-yellow triangles
+  description: orange-yellow triangles
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/triangles_halloween.rsi
+    state: orangeyellow2
+
+- type: entity
+  parent: PosterBase
+  id: ADTHalloweenTrianglesOrangeYellow3
+  name: orange-yellow triangles
+  description: orange-yellow triangles
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/triangles_halloween.rsi
+    state: orangeyellow3
+
+#счастливого хеллоуина
+- type: entity
+  parent: PosterBase
+  id: ADTHalloweenTrianglesHappy1
+  name: happy halloween triangles
+  description: happy halloween triangles
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/triangles_halloween.rsi
+    state: HPHW1
+
+- type: entity
+  parent: PosterBase
+  id: ADTHalloweenTrianglesHappy2
+  name: happy halloween triangles
+  description: happy halloween triangles
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/triangles_halloween.rsi
+    state: HPHW2
+
+- type: entity
+  parent: PosterBase
+  id: ADTHalloweenTrianglesHappy3
+  name: happy halloween triangles
+  description: happy halloween triangles
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/triangles_halloween.rsi
+    state: HPHW3
+
+- type: entity
+  parent: PosterBase
+  id: ADTHalloweenTrianglesHappy4
+  name: happy halloween triangles
+  description: happy halloween triangles
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/triangles_halloween.rsi
+    state: HPHW4
