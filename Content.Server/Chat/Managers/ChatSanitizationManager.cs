@@ -91,10 +91,11 @@ public sealed class ChatSanitizationManager : IChatSanitizationManager
         { "lel.", "chatsan-laughs" },
         { "kek", "chatsan-laughs" },
         { "kek.", "chatsan-laughs" },
+        { "rofl", "chatsan-laughs" },
         { "o7", "chatsan-salutes" },
         { ";_;7", "chatsan-tearfully-salutes"},
-        { ")", "chatsan-smiles"},
-        { "idk", "chatsan-shrugs" }
+        { "idk", "chatsan-shrugs" },
+        { "idk.", "chatsan-shrugs" }
     };
 
     private bool _doSanitize;
