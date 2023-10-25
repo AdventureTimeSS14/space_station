@@ -27,6 +27,13 @@
     sprite: ADT/Clothing/Head/Hats/Halloween/killahelmet.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/Halloween/killahelmet.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.95
+        Heat: 0.95
+  - type: ExplosionResistance
+    damageCoefficient: 0.95
 
 - type: entity
   parent: ClothingHeadBase

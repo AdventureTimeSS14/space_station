@@ -145,6 +145,28 @@
     state: spiderweb2
 
 - type: entity
+  parent: PosterBase
+  id: ADTPosterHappyHalloween
+  name: happy halloween
+  description: happy halloween
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_helloween.rsi
+    state: happyhalloween
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterTayarHalloween
+  name: happy halloween
+  description: happy halloween
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_helloween.rsi
+    state: tayarhalloween
+
+- type: entity
   parent: MarkerBase
   id: ADTHalloweenPosterRandom
   name: random helloween wall decor spawner
@@ -164,6 +186,8 @@
       - ADTPosterHalloweenSpider
       - ADTPosterHalloweenSpiderWeb1
       - ADTPosterHalloweenSpiderWeb2
+      - ADTPosterHappyHalloween
+      - ADTPosterTayarHalloween
     chance: 1
 
 #флажки к хеллоуину
