@@ -70,7 +70,7 @@
     fiberMaterial: fibers-synthetic
 
 - type: entity
-  parent: ClothingHandsGlovesCombat
+  parent: ClothingHandsBase
   id: ADTClothingHandsFingerlessCombat
   name: fingerless combat gloves
   description: These tactical gloves are fireproof and shockproof, and have become much cooler.
@@ -82,9 +82,6 @@
   - type: Fiber
     fiberMaterial: fibers-insulative
     fiberColor: fibers-black
-  - type: Insulated
-  - type: GloveHeatResistance
-    heatResistance: 1400
 
 - type: entity
   parent: ClothingHandsBase
@@ -102,7 +99,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Slash: 12
+        Slash: 8
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
     animation: WeaponArcFist
