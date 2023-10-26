@@ -56,10 +56,20 @@
   suffix: Halloween
   components:
   - type: Sprite
-    state: pumpkin_light3
+    state: pumpkin_light4
   #- type: Construction
   #  graph: pumpkin_light4
   #  node: pumpkinlight4
+
+- type: entity
+  id: ADTHalloweenPumpkinLight5
+  parent: ADTHalloweenPumpkinLight1
+  name: pumpkin light
+  description: pumpkin light
+  suffix: Halloween
+  components:
+  - type: Sprite
+    state: pumpkin_light5
 
 - type: entity
   id: ADTHalloweenPottedPlant1
@@ -101,6 +111,7 @@
       - ADTHalloweenPumpkinLight2
       - ADTHalloweenPumpkinLight3
       - ADTHalloweenPumpkinLight4
+      - ADTHalloweenPumpkinLight5
       - ADTHalloweenPottedPlant1
       - ADTHalloweenPottedPlant2
     chance: 1

@@ -35,7 +35,7 @@
     angle: 75
     damage:
       types:
-        Blunt: 3
+        Blunt: 0.5
     soundHit:
       collection: BoxingHit
   - type: StaminaDamageOnHit
@@ -45,7 +45,7 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 2
+        Blunt: 1
   - type: Item
     size: 15
   - type: DisarmMalus
@@ -65,7 +65,7 @@
     angle: 75
     damage:
       types:
-        Blunt: 1
+        Blunt: 0.5
     soundHit:
       collection: BoxingHit
   - type: StaminaDamageOnHit
@@ -82,7 +82,7 @@
     sprite: ADT/Objects/Weapons/Melee/tagilla_sledge.rsi
     state: icon
   - type: MeleeWeapon
-    attackRate: 0.6
+    attackRate: 0.4
     angle: 75
     damage:
       types:
@@ -112,22 +112,26 @@
   description: The hammer is coated with urethane, which provides a "thud" using steel balls to dampen the impact and reduce the vibration of the recoil in the handle.
   suffix: Halloween
   components:
-    - type: StaminaDamageOnHit
-      damage: 8
-    - type: Appearance
-    - type: DisarmMalus
-      malus: 0
-    - type: MeleeWeapon
-      soundHit:
-        collection: RubberHammer
-        params:
-            variation: 0.03
-            volume: 3
-      soundNoDamage:
-        collection: RubberHammer
-        params:
-            variation: 0.03
-            volume: 3
-      damage:
-        types:
-          Blunt: 0
+  - type: StaminaDamageOnHit
+    damage: 5
+  - type: Appearance
+  - type: DisarmMalus
+    malus: 0
+  - type: MeleeWeapon
+    soundHit:
+      collection: RubberHammer
+      params:
+          variation: 0.03
+          volume: 3
+    soundNoDamage:
+      collection: RubberHammer
+      params:
+         variation: 0.03
+         volume: 3
+    damage:
+      types:
+        Blunt: 0.01
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 0.1
