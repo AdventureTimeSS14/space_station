@@ -385,12 +385,32 @@
   color: "#c98928"
   metabolisms:
     Medicine:
-      effects:
       metabolismRate: 0.03
+      effects:
       - !type:MovespeedModifier
         conditions:
         - !type:TotalDamage
-          min: 0.5
+          min: 25
+          max: 50
         walkSpeedModifier: 1.35
         sprintSpeedModifier: 1.35
+      - !type:MovespeedModifier
+        conditions:
+        - !type:TotalDamage
+          min: 50
+          max: 75
+        walkSpeedModifier: 2.35
+        sprintSpeedModifier: 2.35
+
+
+
+
+#      - !type:PopupMessage
+#        conditions:
+#        - !type:TotalDamage
+#          min: 0.5
+#        type: Local
+#        visualType: Small
+#        messages: [ "medicine-effect-usual" ]
+#        probability: 0.05
       
