@@ -374,3 +374,23 @@
         probability: 0.05 
         #я пытался сперва сделать так, чтобы последняя надпись всплывала при условии что чел видит радуги, не получилось.
         #затем попытался сделать список реагентов, при которых появлялась эта надпись. Тоже не получилось.
+
+- type: reagent
+  id: ADTMMorphine
+  name: reagent-name-morphine
+  group: Medicine
+  desc: reagent-desc-morphine
+  physicalDesc: reagent-physical-desc-translucent
+  flavor: medicine
+  color: "#c98928"
+  metabolisms:
+    Medicine:
+      effects:
+      metabolismRate: 0.03
+      - !type:MovespeedModifier
+        conditions:
+        - !type:TotalDamage
+          min: 0.5
+        walkSpeedModifier: 1.35
+        sprintSpeedModifier: 1.35
+      
