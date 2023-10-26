@@ -3,20 +3,18 @@
   name: pill canister
   id: ADTPillCanister
   parent: PillCanister
-  description: Holds up to 10 pills.
+  description: Holds up to 9 pills.
   components:
   - type: Sprite
     sprite: ADT/Objects/Specific/Medical/pills.rsi 
     state: pill-canister
   - type: Item
     sprite: ADT/Objects/Specific/Medical/pills.rsi 
-  - type: Storage
-    capacity: 10
 
 - type: entity
   name: vitamin canister
   id: ADTMVitaminCanister
-  parent: PillCanister
+  parent: ADTPillCanister
   description: Contains healthy vitamins for you.
   components:
   - type: Sprite
@@ -24,36 +22,32 @@
     state: vitamin-canister
   - type: Item
     sprite: ADT/Objects/Specific/Medical/pills.rsi 
-  - type: Storage
-    capacity: 10
   - type: StorageFill
     contents:
       - id: ADTMVitaminPill 
-        amount: 10
+        amount: 9
   - type: GuideHelp
     guides: 
-    - Medicine
+    - Medicine # заменитт на врачебный
 
 - type: entity
   name: agolatine canister
   id: ADTMAgolatineCanister
-  parent: PillCanister
-  description: Contains (kinda) healthy antidepressants for you.
+  parent: ADTPillCanister
+  description: Contains (almost) healthy antidepressants for you.
   components:
   - type: Sprite
     sprite: ADT/Objects/Specific/Medical/pills.rsi 
     state: agolatine-canister
   - type: Item
     sprite: ADT/Objects/Specific/Medical/pills.rsi 
-  - type: Storage
-    capacity: 10
   - type: StorageFill
     contents:
       - id: ADTMAgolatinePill 
         amount: 10
   - type: GuideHelp
     guides: 
-    - Medicine
+    - Medicine # заменить на врачебный
 
 # бутылочка (не разбивающаяся)
 - type: entity
@@ -126,7 +120,7 @@
     price: 0
   - type: GuideHelp
     guides: 
-    - Medicine
+    - Medicine #заменить на врачебный
 
 - type: entity
   id: ADTPlasticBottle
@@ -201,7 +195,7 @@
       - Pill
   - type: GuideHelp
     guides: 
-    - Medicine
+    - Medicine # заменить на гайд врачей
 
 - type: entity
   id: ADTPillPack
@@ -339,7 +333,7 @@
   components:
   - type: GuideHelp
     guides: 
-    - Medicine
+    - Medicine #заменить на врачебный
 
 - type: entity
   name: sodiumizole pill
@@ -476,3 +470,27 @@
   - type: Sprite
     sprite: Objects/Specific/Chemistry/pills.rsi
     state: pill16
+
+# Патологоанатомические приколы
+- type: entity
+  name: box of foot tags
+  parent: BoxCardboard
+  id: FootTagBox
+  description: It's plastic a box with foot tags inside.
+  components:
+  - type: Item
+    size: 15
+  - type: Storage
+    capacity: 15
+  - type: StorageFill
+    contents:
+      - id: ADTFootTag
+        amount: 15
+  - type: Sprite
+    state: box
+  - type: PhysicalComposition
+    materialComposition:
+      Cardboard: 50
+  - type: GuideHelp
+    guides: 
+    - ADTPathologist

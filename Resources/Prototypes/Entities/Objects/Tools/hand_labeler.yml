@@ -22,5 +22,6 @@
       whitelist:
         components:
           - Item
+          - EntityStorage
         tags:
           - Structure

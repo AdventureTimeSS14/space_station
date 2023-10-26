@@ -81,6 +81,9 @@
       paper_label: !type:ContainerSlot
   - type: StaticPrice
     price: 50
+  - type: GuideHelp
+    guides: 
+    - ADTPathologist
 
 - type: entity
   id: BodyBag_Folded
@@ -95,6 +98,9 @@
 # - type: Placeable
 #   prototype: someId
 #   snap: Center
+  - type: GuideHelp
+    guides: 
+    - ADTPathologist
 
 - type: entity
   parent: BaseItem

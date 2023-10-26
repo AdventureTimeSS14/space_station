@@ -39,6 +39,10 @@
   components:
   - type: VendingMachine
     pack: PillInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    denyState: deny-unshaded
   - type: Advertise
     pack: PillAds
   - type: Speech
@@ -58,7 +62,7 @@
     color: "#a1e1f0"
   - type: GuideHelp
     guides: 
-    - Medicine
+    - Medicine # заменить на докторский, когда я изменю его.
 
 
 - type: entity

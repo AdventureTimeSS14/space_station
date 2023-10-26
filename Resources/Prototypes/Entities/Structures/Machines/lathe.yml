@@ -687,8 +687,12 @@
       - Syringe
       - Implanter
       - PillCanister
+      - ADTPillCanister
+      - ADTPillPack
       - BodyBag
+      - ADTFootTag
       - ChemistryEmptyBottle01
+      - ADTPlasticBottle
       - Medkit
       - MedkitBurn
       - MedkitToxin
