@@ -8,7 +8,7 @@
     state: beakerlarge
   discipline: Biochemical
   tier: 1
-  cost: 5000
+  cost: 3500
   recipeUnlocks:
   - LargeBeaker
   - Dropper
@@ -25,7 +25,7 @@
     state: saw
   discipline: Biochemical
   tier: 1
-  cost: 2500 #this is useless so heavy decrease
+  cost: 1000 #this is useless so heavy decrease
   recipeUnlocks:
   - Scalpel
   - Retractor
@@ -42,7 +42,7 @@
     state: icon
   discipline: Biochemical
   tier: 1
-  cost: 7500
+  cost: 6000
   recipeUnlocks:
   - CryostasisBeaker
   - StasisBedMachineCircuitboard
@@ -55,7 +55,7 @@
     state: medical
   discipline: Biochemical
   tier: 1
-  cost: 7500
+  cost: 6000
   recipeUnlocks:
   - BorgModuleDiagnosis
   - BorgModuleTreatment
@@ -69,7 +69,7 @@
     state: icon
   discipline: Biochemical
   tier: 1
-  cost: 5000
+  cost: 3500
   recipeUnlocks:
   - VaccinatorMachineCircuitboard
   - DiagnoserMachineCircuitboard
@@ -84,7 +84,7 @@
     state: pod-on
   discipline: Biochemical
   tier: 2
-  cost: 7500
+  cost: 6000
   recipeUnlocks:
   - CryoPodMachineCircuitboard
 
@@ -96,7 +96,7 @@
     state: industrial-working
   discipline: Biochemical
   tier: 2
-  cost: 10000
+  cost: 8500
   recipeUnlocks:
   - ChemMasterMachineCircuitboard
   - ChemDispenserMachineCircuitboard
@@ -114,7 +114,7 @@
     state: scanner
   discipline: Biochemical
   tier: 2
-  cost: 10000
+  cost: 8500
   recipeUnlocks:
   - HandheldCrewMonitor
 
@@ -128,7 +128,7 @@
     state: beakerbluespace
   discipline: Biochemical
   tier: 3
-  cost: 10000
+  cost: 8500
   recipeUnlocks:
   - BluespaceBeaker
   - SyringeBluespace
@@ -142,7 +142,7 @@
     state: pod_0
   discipline: Biochemical
   tier: 3
-  cost: 15000
+  cost: 12000
   recipeUnlocks:
     - CloningPodMachineCircuitboard
     - MedicalScannerMachineCircuitboard

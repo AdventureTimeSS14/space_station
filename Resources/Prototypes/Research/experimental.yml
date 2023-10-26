@@ -1,4 +1,4 @@
-﻿# Tier 1
+# Tier 1
 
 - type: technology
   id: BasicRobotics
@@ -8,7 +8,7 @@
     state: drone
   discipline: Experimental
   tier: 1
-  cost: 5000
+  cost: 3500
   recipeUnlocks:
   - ProximitySensor
   - Drone
@@ -22,7 +22,7 @@
     state: icon
   discipline: Experimental
   tier: 1
-  cost: 5000
+  cost: 3500
   recipeUnlocks:
   - AnomalyScanner
   - AnomalyLocator
@@ -39,7 +39,7 @@
     state: display
   discipline: Experimental
   tier: 1
-  cost: 5000
+  cost: 3500
   recipeUnlocks:
   - NodeScanner
   - BorgModuleArtifact
@@ -54,7 +54,7 @@
     state: display
   discipline: Experimental
   tier: 1
-  cost: 5000
+  cost: 3500
   recipeUnlocks:
   - TechDiskComputerCircuitboard
 
@@ -66,7 +66,7 @@
     state: icon
   discipline: Experimental
   tier: 1
-  cost: 7500
+  cost: 6000
   recipeUnlocks:
   - ClothingShoesBootsMag
 
@@ -80,7 +80,7 @@
     state: advanced_matter_bin
   discipline: Experimental
   tier: 2
-  cost: 10000
+  cost: 8500
   recipeUnlocks:
   - AdvancedCapacitorStockPart
   - AdvancedMatterBinStockPart
@@ -94,7 +94,7 @@
     state: display
   discipline: Experimental
   tier: 2
-  cost: 5000
+  cost: 3500
   recipeUnlocks:
   - TraversalDistorterMachineCircuitboard
 
@@ -106,7 +106,7 @@
     state: base
   discipline: Experimental
   tier: 2
-  cost: 10000
+  cost: 8500
   recipeUnlocks:
   - WeaponPistolCHIMP
   technologyPrerequisites:
@@ -120,7 +120,7 @@
     state: icon
   discipline: Experimental
   tier: 2
-  cost: 7500
+  cost: 6000
   recipeUnlocks:
   - RPED
 
@@ -134,7 +134,7 @@
     state: super_matter_bin
   discipline: Experimental
   tier: 3
-  cost: 15000
+  cost: 12000
   recipeUnlocks:
   - SuperCapacitorStockPart
   - SuperMatterBinStockPart
@@ -148,7 +148,7 @@
     state: base
   discipline: Experimental
   tier: 3
-  cost: 60000
+  cost: 45000
   recipeUnlocks:
     - WeaponForceGun
     - WeaponTetherGun

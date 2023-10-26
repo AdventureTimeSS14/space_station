@@ -6,7 +6,7 @@
   components:
   - type: Sprite
     # TODO: draw a sprite
-    sprite: Structures/Machines/electric_grill.rsi
+    sprite: ADT/Structures/Machines/electric_grill.rsi # спрайт от Юны для Времени Приключений
     drawdepth: SmallObjects
     snapCardinals: true
     layers:

@@ -318,11 +318,13 @@
   - type: VentCrittersRule
     entries:
     - id: MobAdultSlimesBlueAngry
-      prob: 0.02
+      prob: 0.01
     - id: MobAdultSlimesGreenAngry
-      prob: 0.02
+      prob: 0.01
     - id: MobAdultSlimesYellowAngry
-      prob: 0.02
+      prob: 0.01
+    - id: ADTMobAdultSlimesGreenHalloweenAngry
+      prob: 0.04
 
 - type: entity
   id: SpiderSpawn

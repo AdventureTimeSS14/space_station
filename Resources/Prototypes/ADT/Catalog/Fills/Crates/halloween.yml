@@ -1,0 +1,47 @@
+- type: entity
+  id: ADTCrateHalloweenFood
+  parent: CratePlastic
+  name: halloween candy crate
+  description: halloween candy crate
+  suffix: Halloween
+  components:
+  - type: StorageFill
+    contents:
+    - id: ADTBoxHalloweenCandy
+      amount: 4
+    - id: ADTHalloweenCandyBowl
+    - id: ADTHalloweenSmileCandyBowl
+    - id: ADTHalloweenNTCandyBowl
+    - id: ADTHalloweenSyndieCandyBowl
+    - id: ADTHalloweenZombieCandyBowl
+    - id: ADTHalloweenSealCandyBowl
+
+- type: entity
+  id: ADTCrateHalloweenCloth
+  parent: CratePlastic
+  name: halloween clothing crate
+  description: halloween clothing crate
+  suffix: Halloween
+  components:
+  - type: StorageFill
+    contents:
+    - id: ADTBoxHalloweenCandy
+      amount: 4
+    - id: ADTBoxNightmareClown
+    - id: ADTBoxCrueltySquad
+    - id: ADTBoxJason
+    - id: ADTBoxVyazov
+    - id: ADTBoxHotlineMiami
+    - id: ADTBoxKilla
+    - id: ADTBoxServantOfEvil
+    - id: ADTBoxDude
+    - id: ADTBoxSquidPlayers
+    - id: ADTBoxSquidOrganizer
+    - id: ADTBoxTagilla
+    - id: ADTBoxNevadaClown
+    - id: ADTBoxTransilvania
+    - id: ADTBoxVergile
+    - id: ADTXenoBox
+    - id: ADTSuperstarPoliceBox
+    - id: ADTSuperstarPoliceWingmanBox
+    - id: ADTBunnyDancerBox
