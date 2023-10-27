@@ -11,6 +11,6 @@
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
-  innerclothingskirt: ADTClothingUniformNewBarmanSkirt
+  innerClothingSkirt: ADTClothingUniformNewBarmanSkirt
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled

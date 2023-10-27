@@ -101,7 +101,7 @@ public sealed partial class ClimbSystem : VirtualController
             }
 
             var xform = _xformQuery.GetComponent(uid);
-            _xformSystem.SetLocalPositionNoLerp(uid, xform.LocalPosition + comp.Direction * frameTime, xform);
+            _xformSystem.SetLocalPosition(uid, xform.LocalPosition + comp.Direction * frameTime, xform);
         }
     }
 
@@ -257,27 +257,27 @@ public sealed partial class ClimbSystem : VirtualController
          // Need direction relative to climber's parent.
          var localDirection = (-parentRot).RotateVec(worldDirection);
 
-        // On top of it already so just do it in place.
-        if (localDirection.LengthSquared() < 0.01f)
-        {
-            climbing.NextTransition = null;
-        }
-        // VirtualController over to the thing.
-        else
-        {
-            var climbDuration = TimeSpan.FromSeconds(distance / climbing.TransitionRate);
-            climbing.NextTransition = _timing.CurTime + climbDuration;
+         // On top of it already so just do it in place.
+         if (localDirection.LengthSquared() < 0.01f)
+         {
+             climbing.NextTransition = null;
+         }
+         // VirtualController over to the thing.
+         else
+         {
+             var climbDuration = TimeSpan.FromSeconds(distance / climbing.TransitionRate);
+             climbing.NextTransition = _timing.CurTime + climbDuration;
 
-            climbing.Direction = localDirection.Normalized() * climbing.TransitionRate;
-            _actionBlockerSystem.UpdateCanMove(uid);
-        }
+             climbing.Direction = localDirection.Normalized() * climbing.TransitionRate;
+             _actionBlockerSystem.UpdateCanMove(uid);
+         }
 
-        climbing.IsClimbing = true;
-        Dirty(uid, climbing);
+         climbing.IsClimbing = true;
+         Dirty(uid, climbing);
 
-        _audio.PlayPredicted(comp.FinishClimbSound, climbable, user);
+         _audio.PlayPredicted(comp.FinishClimbSound, climbable, user);
 
-        var startEv = new StartClimbEvent(climbable);
+         var startEv = new StartClimbEvent(climbable);
          var climbedEv = new ClimbedOnEvent(uid, user);
          RaiseLocalEvent(uid, ref startEv);
          RaiseLocalEvent(climbable, ref climbedEv);

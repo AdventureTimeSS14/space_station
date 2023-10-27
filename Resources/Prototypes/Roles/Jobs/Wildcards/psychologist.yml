@@ -23,6 +23,6 @@
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
   underweart: ClothingUnderwearTopBraSports # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
-  innerclothingskirt: ClothingUniformJumpskirtPsychologist # Corvax-Resprite
+  innerClothingSkirt: ClothingUniformJumpskirtPsychologist # Corvax-Resprite
   satchel: ClothingBackpackSatchelPsychologistFilled # Corvax-Stamp
   duffelbag: ClothingBackpackDuffelPsychologistFilled # Corvax-Stamp

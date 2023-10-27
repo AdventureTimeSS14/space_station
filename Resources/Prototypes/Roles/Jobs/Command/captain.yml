@@ -47,6 +47,6 @@
     underwearb: ClothingUnderwearBottomBoxersCap # Sirena-Underwear
   underweart: ClothingUnderwearTopBraCap # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesCap # Sirena-Underwear
-  innerclothingskirt: ClothingUniformJumpskirtCaptain
+  innerClothingSkirt: ClothingUniformJumpskirtCaptain
   satchel: ClothingBackpackSatchelCaptainFilled
   duffelbag: ClothingBackpackDuffelCaptainFilled
