@@ -46,6 +46,7 @@ namespace Content.IntegrationTests.Tests
             ////ADT MAP
             //"Quadro",
             "ADTPacked",
+            "HalloweenCluster",
 
             // Corvax-Start
             "CorvaxAvrite",

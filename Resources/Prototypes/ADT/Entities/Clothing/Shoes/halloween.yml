@@ -1,0 +1,23 @@
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ADTClownNightmareShoes
+  name: clown nightmare shoes
+  description: No way.
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Halloween/clownnightmareshoes.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Halloween/clownnightmareshoes.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ADTGreyClownPsyhoShoes
+  name: grey clown psyho shoes
+  description: grey clown psyho shoes
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Halloween/greyclownshoes.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Halloween/greyclownshoes.rsi
