@@ -357,9 +357,9 @@
     slice: ADTFoodPiePumpkinSlice
   - type: Tag
     tags:
-    - Fruit 
-    - Pie 
-  
+    - Fruit
+    - Pie
+
 - type: entity
   name: slice of pumpkin pie
   parent: FoodPieSliceBase
@@ -374,7 +374,7 @@
     state: slice
   - type: Tag
     tags:
-    - Fruit 
+    - Fruit
     - Pie
 
 - type: microwaveMealRecipe
@@ -403,7 +403,7 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxvol: 15
+        maxVol: 15
         reagents:
         - ReagentId: Nutriment
           Quantity: 8
