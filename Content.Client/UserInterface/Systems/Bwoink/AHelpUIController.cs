@@ -151,7 +151,7 @@ public sealed class AHelpUIController: UIController, IOnSystemChanged<BwoinkSyst
         {
             // Вызов случайного звукового эффекта с убавленной громкостью
             var randomSoundEffect = GetRandomSoundEffect();
-            SoundSystem.Play(randomSoundEffect, Filter.Local(), soundModifier: 0.5f);
+            SoundSystem.Play(randomSoundEffect, Filter.Local());
 
             _clyde.RequestWindowAttention();
         }
