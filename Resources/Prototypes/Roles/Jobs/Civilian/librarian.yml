@@ -25,7 +25,7 @@
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   inhand:
-    right hand: BriefcaseBrownFilled
-  innerclothingskirt: ClothingUniformJumpskirtLibrarian # Corvax-Resprite
+    - BriefcaseBrownFilled
+  innerClothingSkirt: ClothingUniformJumpskirtLibrarian # Corvax-Resprite
   satchel: ClothingBackpackSatchelLibrarianFilled
   duffelbag: ClothingBackpackDuffelLibrarianFilled
