@@ -152,7 +152,6 @@ public sealed class AHelpUIController: UIController, IOnSystemChanged<BwoinkSyst
         }
         if (localPlayer.UserId != message.TrueSender)
         {
-            // Вызов случайного звукового эффекта с убавленной громкостью
             var randomSoundEffect = GetRandomSoundEffect();
             SoundSystem.Play(randomSoundEffect, Filter.Local());
 
