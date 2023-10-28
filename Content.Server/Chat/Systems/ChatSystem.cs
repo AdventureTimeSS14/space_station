@@ -1,6 +1,8 @@
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using Content.Server.Speech.EntitySystems;
+using Content.Server.Speech.Components;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
@@ -16,7 +18,6 @@ using Content.Shared.Ghost;
 using Content.Shared.Humanoid;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
-using Content.Shared.Inventory;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Radio;
 using Robust.Server.GameObjects;
@@ -34,6 +35,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Server.Chat.Systems;
 
+// TODO refactor whatever active warzone this class and chatmanager have become
 /// <summary>
 ///     ChatSystem is responsible for in-simulation chat handling, such as whispering, speaking, emoting, etc.
 ///     ChatSystem depends on ChatManager to actually send the messages.
@@ -54,6 +56,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly MobStateSystem _mobStateSystem = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedInteractionSystem _interactionSystem = default!;
+    [Dependency] private readonly ReplacementAccentSystem _wordreplacement = default!;
 
     public const int VoiceRange = 10; // how far voice goes in world units
     public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
@@ -192,6 +195,9 @@ public sealed partial class ChatSystem : SharedChatSystem
 
         if (!CanSendInGame(message, shell, player))
             return;
+
+        if (player != null)
+            _chatManager.SenderEntities.GetOrNew(player).Add(GetNetEntity(source));
 
         if (desiredType == InGameICChatType.Speak && message.StartsWith(LocalPrefix))
         {
@@ -494,7 +500,7 @@ public sealed partial class ChatSystem : SharedChatSystem
                 _chatManager.ChatMessageToOne(ChatChannel.Whisper, obfuscatedMessage, wrappedUnknownMessage, source, false, session.ConnectedClient);
         }
 
-        _replay.RecordServerMessage(new ChatMessage(ChatChannel.Whisper, message, wrappedMessage, GetNetEntity(source), MessageRangeHideChatForReplay(range)));
+        _replay.RecordServerMessage(new ChatMessage(ChatChannel.Whisper, message, wrappedMessage, GetNetEntity(source), null, MessageRangeHideChatForReplay(range)));
 
         var ev = new EntitySpokeEvent(source, message, originalMessage, channel, obfuscatedMessage);
         RaiseLocalEvent(source, ev, true);
@@ -569,6 +575,8 @@ public sealed partial class ChatSystem : SharedChatSystem
             ("entityName", name),
             ("message", FormattedMessage.EscapeText(message)));
 
+        _chatManager.SenderEntities.GetOrNew(player).Add(GetNetEntity(source));
+
         SendInVoiceRange(ChatChannel.LOOC, message, wrappedMessage, source, hideChat ? ChatTransmitRange.HideChat : ChatTransmitRange.Normal);
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"LOOC from {player:Player}: {message}");
     }
@@ -595,8 +603,9 @@ public sealed partial class ChatSystem : SharedChatSystem
             _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Dead chat from {player:Player}: {message}");
         }
 
-        _chatManager.ChatMessageToMany(ChatChannel.Dead, message, wrappedMessage, source, hideChat, true, clients.ToList());
+        _chatManager.SenderEntities.GetOrNew(player).Add(GetNetEntity(source));
 
+        _chatManager.ChatMessageToMany(ChatChannel.Dead, message, wrappedMessage, source, hideChat, true, clients.ToList());
     }
     #endregion
 
@@ -661,7 +670,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             _chatManager.ChatMessageToOne(channel, message, wrappedMessage, source, entHideChat, session.ConnectedClient);
         }
 
-        _replay.RecordServerMessage(new ChatMessage(channel, message, wrappedMessage, GetNetEntity(source), MessageRangeHideChatForReplay(range)));
+        _replay.RecordServerMessage(new ChatMessage(channel, message, wrappedMessage, GetNetEntity(source), null, MessageRangeHideChatForReplay(range)));
     }
 
     /// <summary>
@@ -695,6 +704,8 @@ public sealed partial class ChatSystem : SharedChatSystem
     {
         var newMessage = message.Trim();
         newMessage = ReplaceWords(newMessage); // Corvax-ChatSanitize
+        newMessage = SanitizeMessageReplaceWords(newMessage);
+
         if (capitalize)
             newMessage = SanitizeMessageCapital(newMessage);
         if (capitalizeTheWordI)
@@ -740,6 +751,20 @@ public sealed partial class ChatSystem : SharedChatSystem
         if (char.IsLetter(message[^1]))
             message += ".";
         return message;
+    }
+
+    [ValidatePrototypeId<ReplacementAccentPrototype>]
+    public const string ChatSanitize_Accent = "chatsanitize";
+
+    public string SanitizeMessageReplaceWords(string message)
+    {
+        if (string.IsNullOrEmpty(message)) return message;
+
+        var msg = message;
+
+        msg = _wordreplacement.ApplyReplacements(msg, ChatSanitize_Accent);
+
+        return msg;
     }
 
     /// <summary>
@@ -906,4 +931,3 @@ public enum ChatTransmitRange : byte
     /// Ghosts can't hear or see it at all. Regular players can if in-range.
     NoGhosts
 }
-

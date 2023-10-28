@@ -29,7 +29,7 @@
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedical
     # the purple glasses?
-  innerclothingskirt: ClothingUniformJumpskirtColorWhite
+  innerClothingSkirt: ClothingUniformJumpskirtColorWhite
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled
 

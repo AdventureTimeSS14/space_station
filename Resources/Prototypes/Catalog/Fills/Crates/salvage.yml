@@ -97,8 +97,12 @@
   components:
   - type: StorageFill
     contents:
-    - id: SalvagePartsT3Spawner
-      amount: 12
+    - id: SuperCapacitorStockPart
+      prob: 0.1
+    - id: PicoManipulatorStockPart
+      prob: 0.1
+    - id: SuperMatterBinStockPart
+      prob: 0.1
 
 - type: entity
   parent: CrateGenericSteel
@@ -108,8 +112,18 @@
   components:
   - type: StorageFill
     contents:
-    - id: SalvagePartsT3T4Spawner
-      amount: 12
+    - id: QuadraticCapacitorStockPart
+      prob: 0.1
+    - id: FemtoManipulatorStockPart
+      prob: 0.1
+    - id: BluespaceMatterBinStockPart
+      prob: 0.1
+    - id: SuperCapacitorStockPart
+      prob: 0.1
+    - id: PicoManipulatorStockPart
+      prob: 0.1
+    - id: SuperMatterBinStockPart
+      prob: 0.1
 
 - type: entity
   parent: CrateGenericSteel
@@ -119,5 +133,9 @@
   components:
   - type: StorageFill
     contents:
-    - id: SalvagePartsT4Spawner
-      amount: 12
+    - id: QuadraticCapacitorStockPart
+      prob: 0.1
+    - id: FemtoManipulatorStockPart
+      prob: 0.1
+    - id: BluespaceMatterBinStockPart
+      prob: 0.1
