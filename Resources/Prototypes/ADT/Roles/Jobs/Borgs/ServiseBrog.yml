@@ -1,0 +1,12 @@
+- type: job
+  id: ADTServiseBorg
+  name: JobADTServiseBorg 
+  description: job-description-borg
+  playTimeTracker: JobServiseBorg
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 216000 #60 hrs
+  canBeAntag: false
+  icon: JobIconBorg
+  supervisors: job-supervisors-rd
+  jobEntity: ADTPlayerBorgService
