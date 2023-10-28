@@ -44,7 +44,7 @@
   - type: StorageFill
     contents:
       - id: ADTMAgolatinePill 
-        amount: 10
+        amount: 9
   - type: GuideHelp
     guides: 
     - Medicine # заменить на врачебный
@@ -491,6 +491,10 @@
   - type: PhysicalComposition
     materialComposition:
       Cardboard: 50
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/foot-tag-box.rsi
+  - type: Item
+    sprite: ADT/Objects/Specific/Medical/foot-tag-box.rsi 
   - type: GuideHelp
     guides: 
     - ADTPathologist
