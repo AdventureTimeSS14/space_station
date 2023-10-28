@@ -282,6 +282,11 @@
       - ClothingEyesHudSecurity #Sirena T4 add
       - ADTClothingEyesHudAdvanced #Sirena T4 add
       - DnaSyringeGun
+      - LedLightTubeViolet
+      - LedLightTubeYellow
+      - LedLightTubeBlue
+      - LedLightTubeRed
+      - LedLightTubeGreen
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ExplosivePayload
