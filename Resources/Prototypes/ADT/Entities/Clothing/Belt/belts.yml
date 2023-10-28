@@ -197,3 +197,20 @@
     contents:
         - id: WeaponPistolMk58Nonlethal
         - id: MagazinePistol
+
+
+#РПС Киллы
+
+- type: entity
+  id: ADTClothingBeltKilla
+  parent: ClothingBeltMilitaryWebbing
+  name: Triton belt
+  description: Triton belt
+  suffix: Halloween
+  components:
+  - type: Storage
+    capacity: 50
+  - type: Sprite
+    sprite: ADT/Clothing/Belt/killa_webbing.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Belt/killa_webbing.rsi

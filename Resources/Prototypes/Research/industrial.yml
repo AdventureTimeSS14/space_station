@@ -1,4 +1,4 @@
-﻿# Tier 1
+# Tier 1
 
 - type: technology
   id: SalvageEquipment
@@ -8,7 +8,7 @@
     state: handdrill
   discipline: Industrial
   tier: 1
-  cost: 7500
+  cost: 6000
   recipeUnlocks:
   - MiningDrill
   - BorgModuleMining
@@ -22,7 +22,7 @@
     state: medium
   discipline: Industrial
   tier: 1
-  cost: 5000
+  cost: 3500
   recipeUnlocks:
   - PowerCellMedium
 
@@ -34,7 +34,7 @@
     state: panel
   discipline: Industrial
   tier: 1
-  cost: 7500
+  cost: 6000
   recipeUnlocks:
   - WallmountSubstationElectronics
   - WallmountGeneratorElectronics
@@ -48,7 +48,7 @@
     state: icon
   discipline: Industrial
   tier: 1
-  cost: 7500
+  cost: 6000
   recipeUnlocks:
   - ProtolatheMachineCircuitboard
   - AutolatheMachineCircuitboard
@@ -63,7 +63,7 @@
     state: portgen0
   discipline: Industrial
   tier: 1
-  cost: 7500
+  cost: 6000
   recipeUnlocks:
   - PortableGeneratorPacmanMachineCircuitboard
   - PortableGeneratorSuperPacmanMachineCircuitboard
@@ -81,7 +81,7 @@
     state: freezerOff
   discipline: Industrial
   tier: 1
-  cost: 7500
+  cost: 6000
   recipeUnlocks:
   - BorgModuleGasAnalyzer
   - ThermomachineFreezerMachineCircuitBoard
@@ -97,7 +97,7 @@
     state: base
   discipline: Industrial
   tier: 2
-  cost: 5000
+  cost: 3500
   recipeUnlocks:
   - WeaponGrapplingGun
   - BorgModuleGrapplingGun
@@ -110,7 +110,7 @@
     state: icon
   discipline: Industrial
   tier: 2
-  cost: 10000
+  cost: 8500
   recipeUnlocks:
   - RCD
   - RCDAmmo
@@ -124,7 +124,7 @@
     state: base
   discipline: Industrial
   tier: 2
-  cost: 10000
+  cost: 8500
   recipeUnlocks:
   - ShuttleConsoleCircuitboard
   - RadarConsoleCircuitboard
@@ -140,7 +140,7 @@
     state: ripley
   discipline: Industrial
   tier: 2
-  cost: 7500
+  cost: 6000
   recipeUnlocks:
   - RipleyHarness
   - RipleyLArm
@@ -159,7 +159,7 @@
     state: icon
   discipline: Industrial
   tier: 2
-  cost: 5000
+  cost: 3500
   recipeUnlocks:
   - HolofanProjector
   - PortableScrubberMachineCircuitBoard
@@ -172,7 +172,7 @@
     state: high
   discipline: Industrial
   tier: 2
-  cost: 7500
+  cost: 6000
   recipeUnlocks:
   - PowerCellHigh
   technologyPrerequisites:
@@ -186,7 +186,7 @@
     state: icon
   discipline: Industrial
   tier: 2
-  cost: 10000
+  cost: 8500
   recipeUnlocks:
     - WelderExperimental
     - PowerDrill
@@ -203,7 +203,7 @@
     state: holding
   discipline: Industrial
   tier: 3
-  cost: 15000
+  cost: 12000
   recipeUnlocks:
   - ClothingBackpackHolding
   - ClothingBackpackSatchelHolding

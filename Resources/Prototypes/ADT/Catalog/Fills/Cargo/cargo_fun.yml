@@ -17,3 +17,13 @@
   cost: 200
   category: Fun
   group: market
+
+- type: cargoProduct
+  id: ADTFunHalloweenCloth
+  icon:
+    sprite: ADT/Objects/Storage/halloween_box.rsi
+    state: pennywise
+  product: ADTCrateHalloweenCloth
+  cost: 4250
+  category: Fun
+  group: market

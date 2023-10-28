@@ -11,3 +11,6 @@ ent-ADTClothingHandsRingUrog = обручальное кольцо Урог-Дж
 
 ent-ADTClothingHandsRingYuna = обручальное кольцо Юны Джах
     .desc = На кольце выгравировано "Урог"
+
+ent-ADTClothingHandsFingerlessCombat = беспалые боевые перчатки
+    .desc = Эти тактические перчатки огнеупорные и ударопрочные, и стали намного круче.

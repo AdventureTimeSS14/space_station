@@ -353,3 +353,13 @@
   - type: Sprite
     sprite: ADT/Objects/Fun/toys.rsi
     state: plushie_sati
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieUma
+  name: Uma plushie
+  description: Soft and so cute!
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_uma
