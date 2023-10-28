@@ -67,6 +67,6 @@
     underwearb: ClothingUnderwearBottomBoxersHOP # Sirena-Underwear
   underweart: ClothingUnderwearTopBraHOP # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesHOP # Sirena-Underwear
-  innerclothingskirt: ClothingUniformJumpskirtHoP
+  innerClothingSkirt: ClothingUniformJumpskirtHoP
   satchel: ClothingBackpackSatchelHOPFilled
   duffelbag: ClothingBackpackDuffelHOPFilled

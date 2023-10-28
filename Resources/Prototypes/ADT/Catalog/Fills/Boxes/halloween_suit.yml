@@ -7,9 +7,9 @@
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    state: base
-    layers:
-    - state: pennywise
+    state: pennywise
+    #layers:
+    #- state: pennywise
   - type: Item
     size: 100
   - type: Storage
@@ -46,10 +46,10 @@
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    #state: base
-    layers:
-    - state: base
-    - state: сrueltysquad
+    state: сrueltysquad
+    #layers:
+    #- state: base
+    #- state: сrueltysquad
   - type: StorageFill
     contents:
     - id: ADTCSIJArmor
@@ -60,7 +60,7 @@
       amount: 1
     - id: ADTBioMercUniform
       amount: 1
-    - id: ClothingShoesBootsJack
+    - id: ClothingShoesBootsCombat
       amount: 1
 
 - type: entity
@@ -72,10 +72,10 @@
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    #state: base
-    layers:
-    - state: base
-    - state: jasonvoorhees
+    state: jasonvoorhees
+    #layers:
+    #- state: base
+    #- state: jasonvoorhees
   - type: StorageFill
     contents:
     - id: ADTJasonBomber
@@ -86,7 +86,7 @@
       amount: 1
     - id: ADTJasonCostume
       amount: 1
-    - id: ClothingShoesBootsJack
+    - id: ClothingShoesBootsCombat
       amount: 1
     - id: ClothingHandsGlovesColorBlack
       amount: 1
@@ -100,10 +100,10 @@
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    #state: base
-    layers:
-    - state: base
-    - state: freddy
+    state: freddy
+    #layers:
+    #- state: base
+    #- state: freddy
   - type: StorageFill
     contents:
     - id: ADTVyasovCostume
@@ -122,10 +122,10 @@
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    #state: base
-    layers:
-    - state: base
-    - state: jecket
+    state: jecket
+    #layers:
+    #- state: base
+    #- state: jecket
   - type: Item
     size: 125
   - type: Storage
@@ -152,10 +152,10 @@
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    #state: base
-    layers:
-    - state: base
-    - state: killa
+    state: killa
+    #layers:
+    #- state: base
+    #- state: killa
   - type: StorageFill
     contents:
     - id: ADTClothingBeltKilla
@@ -164,7 +164,7 @@
       amount: 1
     - id: ADTKillaArmor
       amount: 1
-    - id: ClothingShoesBootsJack
+    - id: ClothingShoesBootsCombat
       amount: 1
     - id: ADTClothingUniformAbibasBlackSuit
       amount: 1
@@ -178,10 +178,10 @@
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    #state: base
-    layers:
-    - state: base
-    - state: minion
+    state: minion
+    #layers:
+    #- state: base
+    #- state: minion
   - type: StorageFill
     contents:
     - id: ADTServantOfEvilUniform
@@ -190,7 +190,7 @@
       amount: 1
     - id: ClothingHandsGlovesColorBlack
       amount: 1
-    - id: ClothingShoesBootsJack
+    - id: ClothingShoesBootsCombat
       amount: 1
 
 - type: entity
@@ -202,10 +202,10 @@
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    #state: base
-    layers:
-    - state: base
-    - state: postal2
+    state: postal2
+    #layers:
+    #- state: base
+    #- state: postal2
   - type: Item
     size: 125
   - type: Storage
@@ -214,7 +214,7 @@
     contents:
     - id: ADTDudeShirt
       amount: 1
-    - id: ClothingShoesBootsJack
+    - id: ClothingShoesBootsCombat
       amount: 1
     - id: ClothingOuterCoatJensen
       amount: 1
@@ -234,9 +234,9 @@
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    #state: base
-    layers:
-    - state: base
+    state: base
+    #layers:
+    #- state: base
   - type: StorageFill
     contents:
     - id: ADTSquidGamePlayerSuit
@@ -253,9 +253,9 @@
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    #state: base
-    layers:
-    - state: base
+    state: base
+    #layers:
+    #- state: base
   - type: StorageFill
     contents:
     - id: ADTSquidGameOrganizerSuit
@@ -282,10 +282,10 @@
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    #state: base
-    layers:
-    - state: base
-    - state: tagilla
+    state: tagilla
+    #layers:
+    #- state: base
+    #- state: tagilla
   - type: StorageFill
     contents:
     - id: ADTTagillaSuit
@@ -299,9 +299,9 @@
     - id: ADTTagillaSledgehammerToy
       orGroup: ToyOrRealSledge
     - id: ADTTagillaSledgehammerReal
-      prob: 0.25
+      prob: 0.1
       orGroup: ToyOrRealSledge
-    - id: ClothingShoesBootsJack
+    - id: ClothingShoesBootsCombat
       amount: 1
 
 - type: entity
@@ -313,10 +313,10 @@
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    #state: base
-    layers:
-    - state: base
-    - state: tricky
+    state: tricky
+    #layers:
+    #- state: base
+    #- state: tricky
   - type: StorageFill
     contents:
     - id: ADTDJClownSuit
@@ -335,10 +335,10 @@
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    #state: base
-    layers:
-    - state: base
-    - state: vampire
+    state: vampire
+    #layers:
+    #- state: base
+    #- state: vampire
   - type: StorageFill
     contents:
     - id: ADTVampireSuit
@@ -359,10 +359,10 @@
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    #state: base
-    layers:
-    - state: base
-    - state: vergil
+    state: vergil
+    #layers:
+    #- state: base
+    #- state: vergil
   - type: StorageFill
     contents:
     - id: ADTVergileSuit
@@ -383,10 +383,10 @@
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    #state: base
-    layers:
-    - state: base
-    - state: xeno
+    state: xeno
+    #layers:
+    #- state: base
+    #- state: xeno
   - type: StorageFill
     contents:
     - id: ADTXenomorphSuit
@@ -403,10 +403,10 @@
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    #state: base
-    layers:
-    - state: base
-    - state: harry
+    state: harry
+    #layers:
+    #- state: base
+    #- state: harry
   - type: StorageFill
     contents:
     - id: ClothingUniformJumpsuitSuperstarCop
@@ -427,10 +427,10 @@
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    #state: base
-    layers:
-    - state: base
-    - state: kim
+    state: kim
+    #layers:
+    #- state: base
+    #- state: kim
   - type: StorageFill
     contents:
     - id: ClothingEyesBinoclardLenses
@@ -455,10 +455,10 @@
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    #state: base
-    layers:
-    - state: base
-    - state: rabbit
+    state: rabbit
+    #layers:
+    #- state: base
+    #- state: rabbit
   - type: StorageFill
     contents:
     - id: ADTClothingUniformRabbitDress
@@ -477,9 +477,9 @@
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    #state: base
-    layers:
-    - state: base
+    state: base
+    #layers:
+    #- state: base
   - type: StorageFill
     contents:
     - id: ADTFoodSnackBlackCandies

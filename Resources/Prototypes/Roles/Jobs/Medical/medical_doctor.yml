@@ -29,6 +29,6 @@
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
-  innerclothingskirt: ClothingUniformJumpskirtMedicalDoctor
+  innerClothingSkirt: ClothingUniformJumpskirtMedicalDoctor
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled

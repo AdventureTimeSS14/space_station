@@ -27,7 +27,6 @@ namespace Content.Server.ADT.Lizard
         [Dependency] private readonly SleepingSystem _sleepingSystem = default!;
         [Dependency] private readonly ChemistrySystem _chemistry = default!;
         [Dependency] private readonly BloodstreamSystem _bloodstream = default!;
-        [Dependency] private readonly SolutionContainerSystem _solutionContainer = default!;
         [Dependency] private readonly ReactiveSystem _reactiveSystem = default!;
         [Dependency] private readonly ReactiveSystem _reactive = default!;
 
