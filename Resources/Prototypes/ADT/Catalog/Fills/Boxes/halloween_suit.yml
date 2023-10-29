@@ -533,6 +533,24 @@
       amount: 1
     - id: ADTPayDayWolfMask
       amount: 1
+    - id: ClothingShoesBootsLaceup
+      amount: 4
+    - id: ClothingUniformJumpsuitLawyerGood
+      amount: 1
+    - id: ClothingUniformJumpsuitLawyerBlue
+      amount: 1
+    - id: ClothingUniformJumpsuitLawyerRed
+      amount: 1
+    - id: ClothingUniformJumpsuitLawyerBlack
+      amount: 1
+    - id: ClothingHandsGlovesColorBlack
+      amount: 1
+    - id: ClothingHandsGlovesColorBlue
+      amount: 1
+    - id: ClothingHandsGlovesColorRed
+      amount: 1
+    - id: ClothingHandsGlovesColorGray
+      amount: 1
 
 - type: entity
   id: ADTChainSawManBox
@@ -551,6 +569,8 @@
     contents:
     - id: ADTClothingHeadHatChainSaw
       amount: 1
-    - id: ClothingOuterDiscoAssBlazer
+    - id: ADTJumpsuitHunterDemon
+      amount: 1
+    - id: ClothingShoesColorRed
       amount: 1
 
