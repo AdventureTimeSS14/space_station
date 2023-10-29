@@ -418,6 +418,6 @@
   description: A sharp turtleneck made for the hardy work environment of supply.
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_qm.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/suit_hunterdemon.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_qm.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/suit_hunterdemon.rsi
