@@ -130,9 +130,6 @@
     sprite: ADT/Clothing/Mask/payday_chains.rsi
   - type: Clothing
     sprite: ADT/Clothing/Mask/payday_chains.rsi
-    clothingVisuals:
-      mask:
-      - state: equipped-MASK
   - type: BreathMask
 
 - type: entity
@@ -146,9 +143,6 @@
     sprite: ADT/Clothing/Mask/payday_dallas.rsi
   - type: Clothing
     sprite: ADT/Clothing/Mask/payday_dallas.rsi
-    clothingVisuals:
-      mask:
-      - state: equipped-MASK
   - type: BreathMask
 
 - type: entity
@@ -162,9 +156,6 @@
     sprite: ADT/Clothing/Mask/payday_houston.rsi
   - type: Clothing
     sprite: ADT/Clothing/Mask/payday_houston.rsi
-    clothingVisuals:
-      mask:
-      - state: equipped-MASK
   - type: BreathMask
 
 - type: entity
@@ -178,7 +169,4 @@
     sprite: ADT/Clothing/Mask/payday_wolf.rsi
   - type: Clothing
     sprite: ADT/Clothing/Mask/payday_wolf.rsi
-    clothingVisuals:
-      mask:
-      - state: equipped-MASK
   - type: BreathMask
