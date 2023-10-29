@@ -41,18 +41,6 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ADTClothingHeadHatFox
-  name: fox head
-  description: "It's a fox head. Snort snort snort!"
-  components:
-  - type: Sprite
-    sprite: ADT/Clothing/Head/Misc/foxhead.rsi
-  - type: Clothing
-    sprite: ADT/Clothing/Head/Misc/foxhead.rsi
-  - type: IngestionBlocker
-
-- type: entity
-  parent: ClothingHeadBase
   id: ADTClothingHeadHatChainSaw
   name: fox head
   description: "It's a fox head. Snort snort snort!"
