@@ -543,14 +543,9 @@
       amount: 1
     - id: ClothingUniformJumpsuitLawyerBlack
       amount: 1
-    - id: ClothingHandsGlovesColorBlack
-      amount: 1
-    - id: ClothingHandsGlovesColorBlue
-      amount: 1
-    - id: ClothingHandsGlovesColorRed
-      amount: 1
-    - id: ClothingHandsGlovesColorGray
-      amount: 1
+    - id: ClothingHandsGlovesNitrile
+      amount: 4
+
 
 - type: entity
   id: ADTChainSawManBox
