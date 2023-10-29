@@ -242,6 +242,7 @@
     capacity: 60
     whitelist:
       tags:
+        - Patch
         - Wrench
         - Bottle
         - Spray
