@@ -101,3 +101,43 @@
     Steel: 200
     Glass: 100
 
+- type: latheRecipe
+  id: LedLightTubeViolet
+  result: LedLightTubeViolet
+  completetime: 2
+  materials:
+    Steel: 50
+    Glass: 50
+
+- type: latheRecipe
+  id: LedLightTubeGreen
+  result: LedLightTubeGreen
+  completetime: 2
+  materials:
+    Steel: 50
+    Glass: 50
+
+- type: latheRecipe
+  id: LedLightTubeRed
+  result: LedLightTubeRed
+  completetime: 2
+  materials:
+    Steel: 50
+    Glass: 50
+
+- type: latheRecipe
+  id: LedLightTubeBlue
+  result: LedLightTubeBlue
+  completetime: 2
+  materials:
+    Steel: 50
+    Glass: 50
+
+- type: latheRecipe
+  id: LedLightTubeYellow
+  result: LedLightTubeYellow
+  completetime: 2
+  materials:
+    Steel: 50
+    Glass: 50
+
