@@ -62,6 +62,7 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.BUILDS_HOST }}
+        port: ${{ secrets.BUILDS_PORT }}
         username: ${{ secrets.BUILDS_USERNAME }}
         key: ${{ secrets.BUILDS_SSH_KEY }}
         script: python3 ~/manifest.py ${{ github.sha }} adt
