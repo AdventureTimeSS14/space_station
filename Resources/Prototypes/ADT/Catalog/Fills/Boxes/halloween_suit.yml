@@ -509,3 +509,63 @@
     - id: ADTFoodSnackCandyGreen
     - id: ADTFoodSnackCandyMine
     - id: ADTFoodSnackCandyRed
+
+- type: entity
+  id: ADTPayDayBox
+  parent: ADTBoxNightmareClown
+  name: police-superstar box
+  description: police-superstar box
+  suffix: Halloweeen
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Storage/halloween_box.rsi
+    state: payday
+    #layers:
+    #- state: base
+    #- state: harry
+  - type: StorageFill
+    contents:
+    - id: ADTPayDayChainsMask
+      amount: 1
+    - id: ADTPayDayDallasMask
+      amount: 1
+    - id: ADTPayDayHoustonMask
+      amount: 1
+    - id: ADTPayDayWolfMask
+      amount: 1
+    - id: ClothingShoesBootsLaceup
+      amount: 4
+    - id: ClothingUniformJumpsuitLawyerGood
+      amount: 1
+    - id: ClothingUniformJumpsuitLawyerBlue
+      amount: 1
+    - id: ClothingUniformJumpsuitLawyerRed
+      amount: 1
+    - id: ClothingUniformJumpsuitLawyerBlack
+      amount: 1
+    - id: ClothingHandsGlovesNitrile
+      amount: 4
+
+
+- type: entity
+  id: ADTChainSawManBox
+  parent: ADTBoxNightmareClown
+  name: police-superstar box
+  description: police-superstar box
+  suffix: Halloweeen
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Storage/halloween_box.rsi
+    state: chainsaw
+    #layers:
+    #- state: base
+    #- state: harry
+  - type: StorageFill
+    contents:
+    - id: ADTClothingHeadHatChainSaw
+      amount: 1
+    - id: ADTJumpsuitHunterDemon
+      amount: 1
+    - id: ClothingShoesColorRed
+      amount: 1
+
