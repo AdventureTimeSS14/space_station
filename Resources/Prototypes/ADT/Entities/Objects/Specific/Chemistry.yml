@@ -44,7 +44,7 @@
   - type: StorageFill
     contents:
       - id: ADTMAgolatinePill 
-        amount: 10
+        amount: 9
   - type: GuideHelp
     guides: 
     - Medicine # заменить на врачебный
@@ -478,8 +478,6 @@
   id: FootTagBox
   description: It's plastic a box with foot tags inside.
   components:
-  - type: Item
-    size: 15
   - type: Storage
     capacity: 15
   - type: StorageFill
@@ -487,7 +485,11 @@
       - id: ADTFootTag
         amount: 15
   - type: Sprite
-    state: box
+    sprite: ADT/Objects/Specific/Medical/foot-tag-box.rsi
+    state: icon
+  - type: Item
+    sprite: ADT/Objects/Specific/Medical/foot-tag-box.rsi 
+    size: 15
   - type: PhysicalComposition
     materialComposition:
       Cardboard: 50
