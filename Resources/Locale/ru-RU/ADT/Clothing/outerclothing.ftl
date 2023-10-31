@@ -17,3 +17,7 @@ ent-ADTClothingOuterCoatJohanCoat = пальто Йохана
 ent-ADTClothingOuterCoatInvestigator = бушлат следователя Службы Безопасности
     .desc = Один вид этого бушлата повышает вероятность чистосердечного признания подозреваемого на 50%.
     .suffix = { "" }
+
+ent-ADTClothingOuterCoatAidan = пальто Эйдана
+    .desc = Двубортное пальто с отворотами.
+    .suffix = { "Именное" }
