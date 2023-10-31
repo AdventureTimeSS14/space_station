@@ -47,6 +47,10 @@ namespace Content.IntegrationTests.Tests
             //"Quadro",
             "ADTPacked",
             "HalloweenCluster",
+            "HalloweenKettle",
+            "HalloweenBoxstation",
+            "HalloweenBagel",
+            "HalloweenAspid",
 
             // Corvax-Start
             "CorvaxAvrite",
