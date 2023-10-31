@@ -26,6 +26,7 @@
     SheetUranium: 1.0
     CratePartsT3T4: 1
     TechnologyDiskRare: 0.75
+    ADTPowerCellBlueSpace: 0.5
     # cloning boards
     CloningPodMachineCircuitboard: 0.75
     MedicalScannerMachineCircuitboard: 0.75

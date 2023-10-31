@@ -208,3 +208,16 @@
   - ClothingBackpackHolding
   - ClothingBackpackSatchelHolding
   - ClothingBackpackDuffelHolding
+
+- type: technology
+  id: Advanted Energy
+  name: research-avanted-energy
+  icon:
+    sprite: Objects/Misc/module.rsi
+    state: ind_smes_circuit
+  discipline: Industrial
+  tier: 3
+  cost: 15000
+  recipeUnlocks:
+  - ADTSMESIndustrialMachineCircuitboard
+  - ADTPowerCellHyper
