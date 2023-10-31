@@ -281,6 +281,7 @@
       - ClothingEyesHudMedical #Sirena T4 add
       - ClothingEyesHudSecurity #Sirena T4 add
       - ADTClothingEyesHudAdvanced #Sirena T4 add
+      - ADTPowerCellHyper
       - DnaSyringeGun
       - LedLightTubeViolet
       - LedLightTubeYellow
@@ -394,6 +395,7 @@
       - SodaDispenserMachineCircuitboard
       - TelecomServerCircuitboard
       - MassMediaCircuitboard
+      - ADTSMESIndustrialMachineCircuitboard
   - type: MaterialStorage
     whitelist:
       tags:

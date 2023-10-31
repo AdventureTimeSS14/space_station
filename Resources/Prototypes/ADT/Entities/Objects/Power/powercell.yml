@@ -1,0 +1,34 @@
+- type: entity
+  name: blue space power cell
+  description: A rechargeable standardized power cell. This one looks like a rare and powerful prototype.
+  id: ADTPowerCellBlueSpace
+  suffix: Full
+  parent: BasePowerCell
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
+      state: bluespace
+    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+      state: o2
+      shader: unshaded
+  - type: Battery
+    maxCharge: 3600
+    startingCharge: 3600
+
+- type: entity
+  id: ADTPowerCellBluespaceEmpty
+  suffix: Empty
+  parent: ADTPowerCellBlueSpace
+  components:
+  - type: Sprite
+    layers:
+      - map: [ "enum.PowerCellVisualLayers.Base" ]
+        state: bluespace
+      - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+        state: o2
+        shader: unshaded
+        visible: false
+  - type: Battery
+    maxCharge: 3600
+    startingCharge: 0
