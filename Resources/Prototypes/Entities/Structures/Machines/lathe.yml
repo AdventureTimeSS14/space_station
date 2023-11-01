@@ -117,6 +117,10 @@
       - FoodPlateSmallPlastic
       - SprayBottle
       - PowerCellSmall
+      - VehicleWheelchairFolded
+      - RollerBedSpawnFolded
+      - CheapRollerBedSpawnFolded
+      - EmergencyRollerBedSpawnFolded
       - MicroManipulatorStockPart
       - MatterBinStockPart
       - CapacitorStockPart
@@ -277,7 +281,13 @@
       - ClothingEyesHudMedical #Sirena T4 add
       - ClothingEyesHudSecurity #Sirena T4 add
       - ADTClothingEyesHudAdvanced #Sirena T4 add
+      - ADTPowerCellHyper
       - DnaSyringeGun
+      - LedLightTubeViolet
+      - LedLightTubeYellow
+      - LedLightTubeBlue
+      - LedLightTubeRed
+      - LedLightTubeGreen
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ExplosivePayload
@@ -386,6 +396,7 @@
       - TelecomServerCircuitboard
       - MassMediaCircuitboard
       - FormPrinterMachineCircuitboard
+      - ADTSMESIndustrialMachineCircuitboard
   - type: MaterialStorage
     whitelist:
       tags:
@@ -416,7 +427,7 @@
     staticRecipes:
     - MMI
     - PositronicBrain
-    - Flash
+    - SciFlash
     - BorgModuleCable
     - BorgModuleFireExtinguisher
     - BorgModulePDA
@@ -690,6 +701,10 @@
       - PillCanister
       - BodyBag
       - ChemistryEmptyBottle01
+      - VehicleWheelchairFolded
+      - RollerBedSpawnFolded
+      - CheapRollerBedSpawnFolded
+      - EmergencyRollerBedSpawnFolded
       - Medkit
       - MedkitBurn
       - MedkitToxin

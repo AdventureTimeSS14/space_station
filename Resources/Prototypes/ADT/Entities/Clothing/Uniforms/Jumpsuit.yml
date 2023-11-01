@@ -410,3 +410,28 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_qm.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_qm.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJumpsuitHunterDemon
+  name: qm jumpsuit warm
+  description: A sharp turtleneck made for the hardy work environment of supply.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/suit_hunterdemon.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/suit_hunterdemon.rsi
+
+#костюм Эйдана
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJumpsuitAidan
+  name: Aidan suit
+  description: Aidan suit
+  suffix: Personal
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/suit_aidan.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/suit_aidan.rsi

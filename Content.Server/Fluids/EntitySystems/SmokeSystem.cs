@@ -6,6 +6,7 @@ using Content.Server.Chemistry.ReactionEffects;
 using Content.Server.Explosion.EntitySystems;
 using Content.Server.Spreader;
 using Content.Shared.Chemistry.Components;
+using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Chemistry.Reaction;
 using Content.Shared.FixedPoint;
 using Content.Shared.Smoking;
@@ -14,7 +15,6 @@ using Content.Server.Explosion.EntitySystems;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
-using Robust.Shared.Spawners;
 using Robust.Shared.Timing;
 using TimedDespawnComponent = Robust.Shared.Spawners.TimedDespawnComponent;
 

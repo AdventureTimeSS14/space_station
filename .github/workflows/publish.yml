@@ -54,6 +54,7 @@ jobs:
         path: "release/${{ github.sha }}"
         remote_path: ${{ secrets.BUILDS_PATH }}
         remote_host: ${{ secrets.BUILDS_HOST }}
+        remote_port: ${{ secrets.BUILDS_PORT }}
         remote_user: ${{ secrets.BUILDS_USERNAME }}
         remote_key: ${{ secrets.BUILDS_SSH_KEY }}
 
@@ -61,6 +62,7 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.BUILDS_HOST }}
+        port: ${{ secrets.BUILDS_PORT }}
         username: ${{ secrets.BUILDS_USERNAME }}
         key: ${{ secrets.BUILDS_SSH_KEY }}
         script: python3 ~/manifest.py ${{ github.sha }} adt

@@ -43,3 +43,24 @@
         Slash: 0.8
         Piercing: 0.7
         Heat: 0.8
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ADTClothingOuterCoatAidan
+  name: Aidan coat
+  description: Aidan coat.
+  suffix: Personal
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Coats/aidan_coat.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Coats/aidan_coat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.70
+        Piercing: 0.70
+        Heat: 0.70
+  - type: ExplosionResistance
+    damageCoefficient: 0.90
