@@ -63,7 +63,7 @@
     netsync: false
     noRot: true
     drawdepth: Mobs
-    scale: 1.1, 1.1
+    scale: 1.1, 1.05
 
 - type: entity
   parent: BaseSpeciesDummy
@@ -77,6 +77,6 @@
     netsync: false
     noRot: true
     drawdepth: Mobs
-    scale: 1.1, 1.1
+    scale: 1.1, 1.05
 
 #Weh
