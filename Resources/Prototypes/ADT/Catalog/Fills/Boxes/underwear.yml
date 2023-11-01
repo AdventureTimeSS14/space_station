@@ -1,0 +1,12 @@
+- type: entity
+  name: underwear box
+  parent: BoxCardboard
+  id: ADTUnderwearBox
+  description: a box with underwear.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingUnderwearTopBraWhite
+      - id: ClothingUnderwearTopBraSports
+      - id: ClothingUnderwearTopBraCap
+      - id: ClothingUnderwearTopBraCE
