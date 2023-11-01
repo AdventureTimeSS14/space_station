@@ -53,10 +53,10 @@
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 15
+        maxVol: 20
   - type: Hypospray
     solutionName: pen
-    transferAmount: 15
+    transferAmount: 20
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 1
@@ -79,10 +79,10 @@
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 15
+        maxVol: 20
         reagents:
-        - ReagentId: Bicaridine
-          Quantity: 14
+        - ReagentId: ADTStypticPowder
+          Quantity: 20
 #Patch healing small
 - type: entity
   name: healing mini-patch
@@ -97,10 +97,10 @@
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 15
+        maxVol: 20
         reagents:
-        - ReagentId: Bicaridine
-          Quantity: 7
+        - ReagentId: ADTStypticPowder
+          Quantity: 10
 #Patch burn
 - type: entity
   name: burn patch
@@ -115,10 +115,10 @@
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 15
+        maxVol: 20
         reagents:
-        - ReagentId: Dermaline
-          Quantity: 9
+        - ReagentId: ADTSilverSulfadiazine
+          Quantity: 20
 #Patch burn small
 - type: entity
   name: burn mini-patch.
@@ -133,10 +133,10 @@
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 15
+        maxVol: 20
         reagents:
-        - ReagentId: Dermaline
-          Quantity: 4.5
+        - ReagentId: ADTSilverSulfadiazine
+          Quantity: 10
 #honk honk?
 - type: entity
   name: honk patch
