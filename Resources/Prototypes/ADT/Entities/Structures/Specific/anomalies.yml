@@ -21,7 +21,7 @@
     color: "#cb5b7e"
     castShadows: false
   - type: TileSpawnAnomaly
-    floorTileId: FloorFlesh
+    floorTileId: FloorChromite
   - type: EntitySpawnAnomaly
     superCriticalSpawns:
      - ADTMobWrecker

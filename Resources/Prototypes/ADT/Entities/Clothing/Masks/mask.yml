@@ -118,6 +118,22 @@
         Piercing: 0.95
         Heat: 0.95
 
+- type: entity
+  parent: ClothingMaskBase
+  id: ADTMichaelMyersMask
+  name: Michael Myers mask
+  description: Michael Myers mask
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Mask/michael_myersmask.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Mask/michael_myersmask.rsi
+    clothingVisuals:
+      mask:
+      - state: equipped-MASK
+  - type: BreathMask
+
 # PayDay2 mask
 - type: entity
   parent: ClothingMaskBase
