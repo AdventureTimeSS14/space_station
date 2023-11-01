@@ -548,24 +548,22 @@
 
 
 - type: entity
-  id: ADTChainSawManBox
+  id: ADTMichaelMyersBox
   parent: ADTBoxNightmareClown
-  name: police-superstar box
-  description: police-superstar box
+  name: michael myers box
+  description: michael myers box
   suffix: Halloweeen
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
-    state: chainsaw
+    state: michael
     #layers:
     #- state: base
     #- state: harry
   - type: StorageFill
     contents:
-    - id: ADTClothingHeadHatChainSaw
+    - id: ADTMichaelMyersMask
       amount: 1
-    - id: ADTJumpsuitHunterDemon
-      amount: 1
-    - id: ClothingShoesColorRed
+    - id: ADTHalloweenMichaelMyersSuit
       amount: 1
 
