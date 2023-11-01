@@ -546,6 +546,27 @@
     - id: ClothingHandsGlovesNitrile
       amount: 4
 
+- type: entity
+  id: ADTChainSawManBox
+  parent: ADTBoxNightmareClown
+  name: police-superstar box
+  description: police-superstar box
+  suffix: Halloweeen
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Storage/halloween_box.rsi
+    state: chainsaw
+    #layers:
+    #- state: base
+    #- state: harry
+  - type: StorageFill
+    contents:
+    - id: ADTClothingHeadHatChainSaw
+      amount: 1
+    - id: ADTJumpsuitHunterDemon
+      amount: 1
+    - id: ClothingShoesColorRed
+      amount: 1
 
 - type: entity
   id: ADTMichaelMyersBox
