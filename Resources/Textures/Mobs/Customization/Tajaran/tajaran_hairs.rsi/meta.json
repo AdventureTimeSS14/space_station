@@ -23,6 +23,9 @@
         { "name": "shaggy", "directions": 4 },
         { "name": "spikey", "directions": 4 },
         { "name": "straight", "directions": 4 },
+        { "name": "eyebrows", "directions": 4 },
+        { "name": "pigtail", "directions": 4 },
+        { "name": "ponytail", "directions": 4 },
         { "name": "victory", "directions": 4 }
     ]
 }
