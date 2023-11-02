@@ -109,3 +109,7 @@ ent-ADTPlushieSati = Сати
 ent-ADTPlushieUma = Ума
     .desc = Мягкая, и такая милая!
     .suffix = { "" }
+
+ent-ADTPlushieTimrika = Тимрика
+    .desc = На вид мягкая, милая и шерстяная таяранка! Однако рисунки костей имеют свою историю.
+    .suffix = { "" }
