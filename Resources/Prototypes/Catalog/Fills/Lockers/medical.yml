@@ -5,6 +5,8 @@
   components:
   - type: StorageFill
     contents:
+      - id: ADTPatchPackFilled
+        amount: 1
       - id: BoxSyringe
       - id: EpinephrineChemistryBottle
         amount: 1
@@ -133,6 +135,7 @@
     contents:
       #- id: ClothingHeadHelmetVoidParamed
       #- id: ClothingOuterHardsuitVoidParamed
+      - id: ADTPatchPackFilled
       - id: ADTClothingOuterParamedicVoidHardsuit
       - id: ClothingOuterCoatParamedicWB
       - id: ClothingHeadHatParamedicsoft
