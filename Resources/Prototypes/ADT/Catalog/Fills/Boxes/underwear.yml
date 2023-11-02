@@ -7,9 +7,8 @@
   - type: Sprite
     sprite: ADT/Objects/Storage/underwear_boxes.rsi
     state: box
-  - type: Item #добавить спрайты вообще всему.
+  - type: Item
     sprite: ADT/Objects/Storage/underwear_boxes.rsi
-    state: box
     size: 10
   - type: Storage
     capacity: 10
