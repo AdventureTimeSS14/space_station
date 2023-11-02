@@ -47,7 +47,7 @@
 
 - type: marking
   id: BodyBlots
-  bodyPart: [ Chest, RArm, LArm, RLeg, LFoot,  ]
+  bodyPart: [ Chest, RArm, LArm, RLeg, LLeg ] #глянуть почему не работает.
   markingCategory: Overlay
   speciesRestriction: [TajaranSpecies]
   sprites:
@@ -74,7 +74,7 @@
 
 - type: marking
   id: arm1
-  bodyPart: [ RArm, LArm, RLeg, LLeg ]
+  bodyPart: [ RHand, LHand, RLeg, LLeg ]
   markingCategory: Overlay
   speciesRestriction: [TajaranSpecies]
   sprites:
@@ -145,7 +145,7 @@
   speciesRestriction: [TajaranSpecies]
   sprites:
     - sprite: Mobs/Customization/Tajaran/tajaran_tail.rsi #Спрайты от moroz_3
-      state: wingler_3
+      state: wingler_3 #исправить спрайты
 
 - type: marking
   id: TailWingler2
@@ -154,7 +154,7 @@
   speciesRestriction: [TajaranSpecies]
   sprites:
     - sprite: Mobs/Customization/Tajaran/tajaran_tail.rsi #Спрайты от moroz_3
-      state: wingler_2
+      state: wingler_2 #исправить спрайты
 
 - type: marking
   id: TailWingler1
@@ -163,7 +163,7 @@
   speciesRestriction: [TajaranSpecies]
   sprites:
     - sprite: Mobs/Customization/Tajaran/tajaran_tail.rsi #Спрайты от moroz_3
-      state: wingler_1
+      state: wingler_1 #исправить спрайты
 
 - type: marking
   id: TailTip
@@ -202,23 +202,19 @@
       state: tail_fluffy
 
 #Голова.
+
+##Голова (верх)
 - type: marking
   id: Head1
   bodyPart: Head
-  markingCategory: Head
+  markingCategory: HeadTop
   speciesRestriction: [TajaranSpecies]
   sprites:
     - sprite: Mobs/Customization/Tajaran/tajaran_head.rsi
-      state: inears
-
-- type: marking
-  id: Head3
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [TajaranSpecies]
-  sprites:
+      state: outears
     - sprite: Mobs/Customization/Tajaran/tajaran_head.rsi
-      state: inears
+      state: inears 
+##
 
 - type: marking
   id: Head5
@@ -228,15 +224,6 @@
   sprites:
     - sprite: Mobs/Customization/Tajaran/tajaran_head.rsi
       state: nose
-
-- type: marking
-  id: Head6
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [TajaranSpecies]
-  sprites:
-    - sprite: Mobs/Customization/Tajaran/tajaran_head.rsi
-      state: outears
 
 - type: marking
   id: Head7
@@ -485,22 +472,22 @@
       state: eyebrows
 
 - type: marking
-  id: HairLionMane
+  id: HairPigtail
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [TajaranSpecies]
   sprites:
     - sprite: Mobs/Customization/Tajaran/tajaran_hairs.rsi #Спрайты от prazat911
-      state: lion_mane
+      state: pigtail
 
 - type: marking
-  id: HairLionMane2
+  id: HairPonytail
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [TajaranSpecies]
   sprites:
     - sprite: Mobs/Customization/Tajaran/tajaran_hairs.rsi #Спрайты от prazat911
-      state: lion_mane_2
+      state: ponytail
 
 #Бороды. (которые, как бы, лицевая раст-сть)
 - type: marking
