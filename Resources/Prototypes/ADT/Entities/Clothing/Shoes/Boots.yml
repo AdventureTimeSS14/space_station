@@ -227,6 +227,18 @@
   - type: Clothing
     sprite: ADT/Clothing/Shoes/Boots/whitehigh_footwraps.rsi #спрайты от floppo4ka
 
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ADTClothingAidanShoes
+  name: Aidan shoes
+  description: Aidan shoes
+  suffix: Personal
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/aidan_shoes.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/aidan_shoes.rsi
+
 #Med
 - type: entity
   parent: ClothingShoesBaseButcherable

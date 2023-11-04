@@ -57,3 +57,11 @@
 - type: stationGoal
   id: stationgoalbar
   text:   station-goal-bar
+
+- type: stationGoal
+  id: stationgoaldocks
+  text:   station-goal-docks
+
+- type: stationGoal
+  id: stationgoalsmes
+  text:   station-goal-smes

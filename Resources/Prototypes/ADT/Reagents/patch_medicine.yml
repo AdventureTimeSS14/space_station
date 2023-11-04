@@ -1,0 +1,52 @@
+#Кровоостанавливающая пудра
+- type: reagent
+  id: ADTStypticPowder
+  name: reagent-name-styptic-powder
+  group: Medicine
+  desc: reagent-desc-styptic-powder
+  flavor: medicine
+  color: "#c8a2c8"
+  physicalDesc: reagent-physical-desc-powdery
+  metabolisms:
+    Medicine:
+      metabolismRate : 0.25
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -0.75
+      - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 0.5
+        type: Local
+        visualType: Small
+        messages: [ "" ]
+        probability: 0.05
+#Сульфадиазин серебра
+- type: reagent
+  id: ADTSilverSulfadiazine
+  name: reagent-name-silver-sulfadiazine
+  group: Medicine
+  desc: reagent-desc-silver-sulfadiazine
+  flavor: medicine
+  color: "#c8a2c8"
+  physicalDesc: reagent-physical-desc-powdery
+  metabolisms:
+    Medicine:
+      metabolismRate : 0.25
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: -0.25
+            Shock: -0.25
+            Cold: -0.25
+      - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 0.5
+        type: Local
+        visualType: Small
+        messages: [ "" ]
+        probability: 0.05
