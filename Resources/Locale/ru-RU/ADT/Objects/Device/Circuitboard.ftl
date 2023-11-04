@@ -1,2 +1,2 @@
-ent-ADTIndustrialSMESMachineCircuitboard = Плата Индустриального СМЭСА
-    .desc = Крайне вместительная модификация обычного смэса
+ent-ADTIndustrialSMESMachineCircuitboard = плата Индустриального СМЭС
+    .desc = Крайне вместительная модификация обычного СМЭС

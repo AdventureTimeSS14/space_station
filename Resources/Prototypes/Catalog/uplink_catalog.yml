@@ -86,13 +86,29 @@
   - UplinkWeapons
 
 - type: listing
-  id: UplinkEswordDouble
+  id: UplinkEswordDoubleNukie
   name: uplink-esword-double-name
   description: uplink-esword-double-desc
   icon: { sprite: /Textures/Objects/Weapons/Melee/e_sword_double.rsi, state: icon }
   productEntity: EnergySwordDouble
   cost:
     Telecrystal: 45
+  categories:
+  - UplinkWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+        - NukeOpsUplink
+
+- type: listing
+  id: UplinkEswordDouble
+  name: uplink-esword-double-name
+  description: uplink-esword-double-desc
+  icon: { sprite: /Textures/Objects/Weapons/Melee/e_sword_double.rsi, state: icon }
+  productEntity: EnergySwordDouble
+  cost:
+    Telecrystal: 16
   categories:
   - UplinkWeapons
   conditions:
@@ -359,7 +375,7 @@
   icon: { sprite: /Textures/Objects/Misc/guardian_info.rsi, state: icon }
   productEntity: BoxHoloparasite
   cost:
-    Telecrystal: 14
+    Telecrystal: 12
   categories:
   - UplinkUtility
   conditions:
@@ -1186,6 +1202,11 @@
     Telecrystal: 2
   categories:
   - UplinkMisc
+  conditions:
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+        - NukeOpsUplink
 
 - type: listing
   id: UplinkSnackBox
@@ -1204,7 +1225,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Melee/e_shield.rsi, state: eshield-on }
   productEntity: EnergyShield
   cost:
-    Telecrystal: 6
+    Telecrystal: 12
   categories:
   - UplinkMisc
 
@@ -1264,9 +1285,14 @@
   description: uplink-combat-medipen-desc
   productEntity: CombatMedipen
   cost:
-    Telecrystal: 8
+    Telecrystal: 4
   categories:
   - UplinkMisc
+  conditions:
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+        - NukeOpsUplink
 
 - type: listing
   id: UplinkStimpack
@@ -1274,9 +1300,14 @@
   description: uplink-stimpack-desc
   productEntity: Stimpack
   cost:
-    Telecrystal: 8
+    Telecrystal: 4
   categories:
   - UplinkMisc
+  conditions:
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+        - NukeOpsUplink
 
 - type: listing
   id: UplinkStimkit
@@ -1284,9 +1315,59 @@
   description: uplink-stimkit-desc
   productEntity: StimkitFilled
   cost:
+    Telecrystal: 6
+  categories:
+  - UplinkMisc
+  conditions:
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+        - NukeOpsUplink
+
+- type: listing
+  id: UplinkCombatMedipenNukie
+  name: uplink-combat-medipen-name
+  description: uplink-combat-medipen-desc
+  productEntity: CombatMedipen
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkMisc
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+        - NukeOpsUplink
+
+- type: listing
+  id: UplinkStimpackNukie
+  name: uplink-stimpack-name
+  description: uplink-stimpack-desc
+  productEntity: Stimpack
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkMisc
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+        - NukeOpsUplink
+
+- type: listing
+  id: UplinkStimkitNukie
+  name: uplink-stimkit-name
+  description: uplink-stimkit-desc
+  productEntity: StimkitFilled
+  cost:
     Telecrystal: 14
   categories:
   - UplinkMisc
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+        - NukeOpsUplink
 
 - type: listing
   id: UplinkSyndicateSegwayCrate

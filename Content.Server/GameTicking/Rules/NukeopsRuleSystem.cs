@@ -44,6 +44,7 @@ using Content.Shared.Zombies;
 using Robust.Server.GameObjects;
 using Robust.Server.Maps;
 using Robust.Server.Player;
+using Robust.Shared.Players;
 using Robust.Shared.Audio;
 using Robust.Shared.Map;
 using Robust.Shared.Player;
@@ -336,7 +337,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
         var eligibleQuery = EntityQueryEnumerator<StationEventEligibleComponent, NpcFactionMemberComponent>();
         while (eligibleQuery.MoveNext(out var eligibleUid, out var eligibleComp, out var member))
         {
-            if (!_npcFaction.IsFactionFriendly(component.Faction, eligibleUid, member))
+            if (!_npcFaction.IsFactionHostile(component.Faction, eligibleUid, member))
                 continue;
 
             eligible.Add((eligibleUid, eligibleComp, member));
@@ -351,9 +352,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
         var query = EntityQueryEnumerator<NukeOperativeComponent, ActorComponent>();
         while (query.MoveNext(out _, out var nukeops, out var actor))
         {
-            _chatManager.DispatchServerMessage(actor.PlayerSession, Loc.GetString("nukeops-welcome", ("station", component.TargetStation.Value)));
-            _audio.PlayGlobal(nukeops.GreetSoundNotification, actor.PlayerSession);
-            filter.AddPlayer(actor.PlayerSession);
+            NotifyNukie(actor.PlayerSession, nukeops, component);
         }
     }
 
@@ -795,10 +794,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
 
             if (nukeops.TargetStation != null && !string.IsNullOrEmpty(Name(nukeops.TargetStation.Value)))
             {
-                _chatManager.DispatchServerMessage(playerSession, Loc.GetString("nukeops-welcome", ("station", nukeops.TargetStation.Value)));
-
-                 // Notificate player about new role assignment
-                 _audio.PlayGlobal(component.GreetSoundNotification, playerSession);
+                NotifyNukie(playerSession, component, nukeops);
             }
         }
     }
@@ -994,6 +990,18 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
 
         var operatives = new List<IPlayerSession>();
         SpawnOperatives(numNukies, operatives, true, component);
+    }
+
+    /// <summary>
+    /// Display a greeting message and play a sound for a nukie
+    /// </summary>
+    private void NotifyNukie(ICommonSession session, NukeOperativeComponent nukeop, NukeopsRuleComponent nukeopsRule)
+    {
+        if (nukeopsRule.TargetStation is not { } station)
+            return;
+
+        _chatManager.DispatchServerMessage(session, Loc.GetString("nukeops-welcome", ("station", station)));
+        _audio.PlayGlobal(nukeop.GreetSoundNotification, session);
     }
 
     //For admins forcing someone to nukeOps.

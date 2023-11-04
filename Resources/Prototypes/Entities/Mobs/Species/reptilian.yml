@@ -59,11 +59,11 @@
     heatDamage:
       types:
         Heat : 0.1 #per second, scales with temperature & other constants
-  - type: Sprite
-    netsync: false
-    noRot: true
-    drawdepth: Mobs
-    scale: 1.1, 1.05
+  #- type: Sprite
+  #  netsync: false
+  #  noRot: true
+  #  drawdepth: Mobs
+  #  scale: 1.05, 1.0
 
 - type: entity
   parent: BaseSpeciesDummy
@@ -73,10 +73,10 @@
   components:
   - type: HumanoidAppearance
     species: Reptilian
-  - type: Sprite
-    netsync: false
-    noRot: true
-    drawdepth: Mobs
-    scale: 1.1, 1.05
+  #- type: Sprite
+  #  netsync: false
+  #  noRot: true
+  #  drawdepth: Mobs
+  #  scale: 1.05, 1.0
 
 #Weh

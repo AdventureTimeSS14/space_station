@@ -9,3 +9,39 @@ ent-ADTCrateSecurityBrigmedic = ящик бригмедика
 
 ent-SecurityBrigMedLocker = { ent-ADTCrateSecurityBrigmedic }
     .desc = { ent-ADTCrateSecurityBrigmedic.desc }
+
+ent-CrateEngineeringVoidJetpack = ящик пустотных джетпаков
+    .desc = Содержит в себе два пустотных джетпака.
+
+ent-FunRingBox = { ent-RingBox }
+    .desc = Коробка с кольцами для проведения свадьбы.
+
+ent-VendingMachineRestockChefvend = набор пополнения Шефвенда
+    .desc = Контейнер для пополнения ассортимента Шефвенда.
+
+ent-CrateVendingMachineRestockChefvendFilled = ящик набора пополнения Шефвенда
+    .desc = Содержит в себе набор для пополнения Шефвенда.
+
+ent-CrateVendingMachineRestockChefvend = ящик пополнения Шефвенда
+    .desc = Содержит в себе набор для пополнения Шефвенда.
+
+ent-VendingMachineRestockCondimentStation = набор пополнения Островка соусов
+    .desc = Контейнер для пополнения ассортимента Островка соусов. Ммм, кетчунез...
+
+ent-CrateVendingMachineRestockCondimentStationFilled = ящик набора пополнения Островка соусов
+    .desc = Содержит в себе набор для пополнения Островка соусов.
+
+
+
+ent-CrateFunDartsSet = набор для игры в дартс
+    .desc = Ящик со всем необходимым для игры в дартс.
+
+ent-FunDartsSet = { ent-CrateFunDartsSet }
+    .desc = { ent-CrateFunDartsSet.desc }
+
+ent-CrateMindShieldImplants = ящик имплантов МайндШилд
+    .desc = Ящик, содержащий в себе три импланта Майндшилд.
+
+ent-MedicalMindShieldImplants = { ent-CrateMindShieldImplants }
+    .desc = { ent-CrateMindShieldImplants.desc }
+
