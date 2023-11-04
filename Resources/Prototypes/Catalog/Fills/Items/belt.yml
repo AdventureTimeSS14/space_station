@@ -17,6 +17,9 @@
   parent: ClothingBeltUtility
   suffix: Engineering
   components:
+  - type: Storage
+    maxItemSize: Cheat
+    maxTotalWeight: 9000
   - type: StorageFill
     contents:
       - id: MiniFireExtinguisher

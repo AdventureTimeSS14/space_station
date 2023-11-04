@@ -7,7 +7,7 @@
   - type: Sprite
     sprite: Corvax/Back/Backpacks/military.rsi
   - type: Storage
-    maxItemSize: Ginormous
+    maxItemSize: Huge
 
 - type: entity
   parent: ClothingBackpack
@@ -18,7 +18,7 @@
   - type: Sprite
     sprite: Corvax/Back/Backpacks/deathsquad-backpack.rsi
   - type: Storage
-    maxItemSize: Ginormous
+    maxItemSize: Huge
 
 - type: entity
   parent: ClothingBackpack
@@ -29,4 +29,4 @@
   - type: Sprite
     sprite: Corvax/Back/Backpacks/ce.rsi
   - type: Storage
-    maxItemSize: Ginormous
+    maxItemSize: Huge

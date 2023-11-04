@@ -45,6 +45,10 @@
   parent: Dresser
   suffix: Filled
   components:
+  - type: Storage
+    maxItemSize: Cheat
+    maxTotalWeight: 0
+    maxSlots: 50 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
       - id: ClothingNeckLGBTPin

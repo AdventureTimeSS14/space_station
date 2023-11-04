@@ -174,12 +174,15 @@
   id: BoxMRE
   description: A box of decades old military surplus rations. It is surprisingly not rotten.
   components:
+  - type: Storage
+    maxItemSize: Large
+    maxTotalWeight: 100
   - type: StorageFill
     contents:
-      - id: DrinkMREFlask
-      - id: FoodSnackNutribrick
-      - id: FoodSnackMREBrownie
-      - id: FoodCondimentPacketKetchup
+      - id: DrinkMREFlask # Size 8
+      - id: FoodSnackNutribrick #Size 2
+      - id: FoodSnackMREBrownie #Size 2
+      - id: FoodCondimentPacketKetchup #Size 2
   - type: Sprite
     layers:
       - state: box_olive

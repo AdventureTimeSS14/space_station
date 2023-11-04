@@ -485,7 +485,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetBlueShield
   - type: Item
-    size: 80
+    size: Large
 
 # Syndicate Medic Hardsuit
 - type: entity

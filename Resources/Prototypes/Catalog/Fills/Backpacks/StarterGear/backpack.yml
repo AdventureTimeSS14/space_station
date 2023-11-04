@@ -243,6 +243,9 @@
   parent: ClothingBackpackERTLeader
   id: ClothingBackpackERTLeaderFilled
   components:
+    - type: Storage
+      maxItemSize: Huge
+      maxTotalWeight: 9000
     - type: StorageFill
       contents:
         - id: WeaponPulseCarbine
@@ -263,6 +266,9 @@
   parent: ClothingBackpackERTLeader
   id: ClothingBackpackERTLeaderFilledREV
   components:
+    - type: Storage
+      maxItemSize: Huge
+      maxTotalWeight: 9000
     - type: StorageFill
       contents:
         #- id: WeaponPulseCarbine
@@ -291,6 +297,9 @@
   parent: ClothingBackpackERTSecurity
   id: ClothingBackpackERTSecurityFilled
   components:
+    - type: Storage
+      maxItemSize: Huge
+      maxTotalWeight: 9000
     - type: StorageFill
       contents:
         - id: WeaponDisabler
@@ -311,6 +320,10 @@
   parent: ClothingBackpackERTSecurity
   id: ClothingBackpackERTSecurityFilledREV
   components:
+    - type: Storage
+      maxItemSize: Huge
+      maxTotalWeight: 0
+      maxSlots: 50 #By this ignore maxTotalWeight
     - type: StorageFill
       contents:
         #- id: WeaponPulseCarbine
@@ -339,6 +352,9 @@
   parent: ClothingBackpackERTMedical
   id: ClothingBackpackERTMedicalFilled
   components:
+    - type: Storage
+      maxItemSize: Huge
+      maxTotalWeight: 200
     - type: StorageFill
       contents:
         - id: WeaponPulseCarbine
@@ -359,6 +375,10 @@
   parent: ClothingBackpackERTMedical
   id: ClothingBackpackERTMedicalFilledREV
   components:
+    - type: Storage
+      maxItemSize: Huge
+      maxTotalWeight: 0
+      maxSlots: 50 #By this ignore maxTotalWeight
     - type: StorageFill
       contents:
         #- id: WeaponPulseCarbine
@@ -388,6 +408,9 @@
   parent: ClothingBackpackERTEngineer
   id: ClothingBackpackERTEngineerFilled
   components:
+    - type: Storage
+      maxItemSize: Huge #ToDo xTray Need Fix Size
+      maxTotalWeight: 100
     - type: StorageFill
       contents:
         - id: trayScanner
@@ -411,6 +434,9 @@
   parent: ClothingBackpackERTEngineer
   id: ClothingBackpackERTEngineerFilledREV
   components:
+    - type: Storage
+      maxItemSize: Huge
+      maxTotalWeight: 10000
     - type: StorageFill
       contents:
         - id: trayScanner
@@ -420,14 +446,6 @@
         - id: RCD
         - id: RCDAmmo
         - id: RCDAmmo
-        #- id: RCDAmmo
-        #- id: WeaponRifleLecter
-        #- id: MagazineRifle
-        #- id: MagazineRifle
-        #- id: C4
-        #  amount: 4
-        #- id: ExGrenade
-        #  amount: 3
         - id: BoxZiptie
         - id: WeaponSubMachineGunDrozdRubber
         - id: MagazinePistolSubMachineGunRubber

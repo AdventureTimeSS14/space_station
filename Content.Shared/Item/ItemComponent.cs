@@ -99,5 +99,14 @@ public enum ItemSize
     /// <summary>
     /// Picture furry gf
     /// </summary>
-    Ginormous = 32
+    Ginormous = 32,
+
+    Size100 = 100,
+    Size200 = 200,
+    Size300 = 300,
+
+    /// <summary>
+    /// Cheat Size
+    /// </summary>
+    Cheat = 999999
 }

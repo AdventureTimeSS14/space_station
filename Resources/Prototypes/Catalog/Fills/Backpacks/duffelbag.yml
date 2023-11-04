@@ -30,8 +30,6 @@
       - id: PillAmbuzolPlus
       - id: PillAmbuzol
         amount: 4
-  - type: Storage
-    maxItemSize: Ginormous
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateMedicalBundle
