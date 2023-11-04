@@ -13,7 +13,9 @@
   - type: Item
     size: 100
   - type: Storage
-    capacity: 100
+    maxItemSize: Size100
+    maxTotalWeight: 0
+    maxSlots: 50 #By this ignore maxTotalWeight
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -129,7 +131,7 @@
   - type: Item
     size: 125
   - type: Storage
-    capacity: 125
+    maxItemSize: Ginormous
   - type: StorageFill
     contents:
     - id: BaseBallBat
@@ -209,7 +211,7 @@
   - type: Item
     size: 125
   - type: Storage
-    capacity: 125
+    maxItemSize: Ginormous
   - type: StorageFill
     contents:
     - id: ADTDudeShirt
@@ -391,7 +393,7 @@
     contents:
     - id: ADTXenomorphSuit
       amount: 3
-    - id: ADTClothingHeadXenomorph 
+    - id: ADTClothingHeadXenomorph
       amount: 3
 
 - type: entity

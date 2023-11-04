@@ -38,7 +38,7 @@
     - state: box-open
       map: ["openLayer"]
   - type: Storage
-    capacity: 5
+    maxItemSize: Small
   - type: Item
     sprite: ADT/Objects/Specific/perfume_lilac_box.rsi
     size: 5

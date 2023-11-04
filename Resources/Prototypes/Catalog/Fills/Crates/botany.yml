@@ -84,6 +84,7 @@
       - id: SoybeanSeeds
       - id: GrapeSeeds
       - id: WatermelonSeeds
+      - id: PeaSeeds
       - id: CocoaSeeds
       - id: ADTBuckwheatSeeds
       - id: ADTPumpkinSeeds

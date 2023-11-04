@@ -7,7 +7,7 @@
   - type: Sprite
     sprite: ADT/Clothing/Back/ninjasatchel.rsi #Adventure Time sprites
   - type: Storage
-    capacity: 150
+    maxItemSize: Huge
 
 - type: entity
   parent: ADTClothingBackpackSatchelninja

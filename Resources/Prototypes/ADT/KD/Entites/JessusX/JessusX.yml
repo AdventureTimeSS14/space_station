@@ -41,7 +41,7 @@
     slots:
     - Mask
   - type: Storage
-    capacity: 0
+    maxItemSize: Tiny
   - type: UserInterface
     interfaces:
     - key: enum.StorageUiKey.Key

@@ -11,7 +11,7 @@
         reagents:
         - ReagentId: CocoaPowder
           Quantity: 30
-  - type: TrashOnEmpty
+  - type: TrashOnSolutionEmpty
     solution: food
   - type: Sprite
     sprite: ADT/Objects/Consumable/Food/cocoa_pack.rsi
