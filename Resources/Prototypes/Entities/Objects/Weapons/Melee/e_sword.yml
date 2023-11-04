@@ -174,15 +174,15 @@
   - type: EnergySword
     litDamageBonus:
         types:
-            Slash: 17
-            Heat: 17
-            Structural: 20
+            Slash: 15
+            Heat: 15
+            Structural: 30
             Blunt: -4.5
     litDisarmMalus: 0.7
   - type: MeleeWeapon
-    wideAnimationRotation: -135
-    attackRate: 1.5
-    angle: 100
+    wideAnimationRotation: -100
+    attackRate: 1.35
+    angle: 80
     soundHit:
       path: /Audio/Weapons/eblade1.ogg
     damage:
