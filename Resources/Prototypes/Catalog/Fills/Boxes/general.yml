@@ -108,7 +108,7 @@
       - state: box
       - state: pda
   - type: Storage
-    capacity: 60
+    maxItemSize: Huge
     whitelist:
       components:
       - Pda
@@ -128,7 +128,7 @@
       - state: box
       - state: id # Corvax-Resprite
   - type: Storage
-    capacity: 60
+    maxItemSize: Huge
     whitelist:
       components:
       - IdCard
@@ -148,7 +148,7 @@
       - state: box
       - state: headset
   - type: Storage
-    capacity: 60
+    maxItemSize: Huge
     whitelist:
       components:
       - Headset
@@ -192,7 +192,7 @@
   description: A special box for sensitive people.
   components:
   - type: Storage
-    capacity: 30
+    maxItemSize: Large
   - type: Sprite
     layers:
       - state: box_hug
@@ -295,7 +295,7 @@
       - state: box
       - state: encryptokey
   - type: Storage
-    capacity: 30
+    maxItemSize: Large
     whitelist:
       components:
       - EncryptionKey
@@ -393,7 +393,7 @@
       - id: EncryptionKeySyndie
         amount: 2
   - type: Storage
-    capacity: 15
+    maxItemSize: Normal
 
 - type: entity
   name: deathrattle implant box

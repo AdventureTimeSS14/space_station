@@ -5,7 +5,7 @@
   suffix: Filled
   components:
   - type: Storage
-    capacity: 60
+    maxItemSize: Huge
   - type: StorageFill
     contents:
       - id: ADTClothingBeltPyotrSheath

@@ -136,7 +136,7 @@
       description: ghost-role-information-ert-leader-description
     - type: GhostTakeoverAvailable
     - type: Loadout
-      prototypes: [ ERTLeaderGearEVALecter ]
+      prototypes: [ ADTERTLeaderGearEVA_L ]
 
 ## ERT Janitor
 
@@ -388,7 +388,7 @@
       description: ghost-role-information-ert-security-description
     - type: GhostTakeoverAvailable
     - type: Loadout
-      prototypes: [ ERTSecurityGearEVALecter ]
+      prototypes: [ ADTERTSecurityGearEVA_L ]
 
 ## ERT Medic
 

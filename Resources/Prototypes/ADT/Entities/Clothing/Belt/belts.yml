@@ -11,7 +11,7 @@
   - type: Clothing
     sprite: ADT/Clothing/Belt/supreme-commander-sheath.rsi
   - type: Storage
-    capacity: 15
+    maxItemSize: Normal
     whitelist:
       tags:
         - SupremeCommanderSabre
@@ -35,7 +35,7 @@
   - type: Clothing
     sprite: ADT/Clothing/Belt/supreme-sheath.rsi
   - type: Storage
-    capacity: 15
+    maxItemSize: Normal
     whitelist:
       tags:
         - SupremeSabre
@@ -56,7 +56,7 @@
   description: Part of ERT security's gear
   components:
   - type: Storage
-    capacity: 50
+    maxItemSize: Large
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -75,7 +75,7 @@
   suffix: Anti-REV
   components:
   - type: Storage
-    capacity: 50
+    maxItemSize: Large
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -99,7 +99,7 @@
   description: Part of ERT leader's gear
   components:
   - type: Storage
-    capacity: 50
+    maxItemSize: Huge
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -118,7 +118,7 @@
   suffix: Anti-REV
   components:
   - type: Storage
-    capacity: 50
+    maxItemSize: Huge
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -142,7 +142,7 @@
   description: Part of ERT medical's gear
   components:
   - type: Storage
-    capacity: 50
+    maxItemSize: Huge
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -171,7 +171,7 @@
   - type: Clothing
     sprite: ADT/Clothing/Belt/pyotr_sheath.rsi
   - type: Storage
-    capacity: 15
+    maxItemSize: Huge
     whitelist:
       tags:
         - CaptainSabre
@@ -209,7 +209,7 @@
   suffix: Halloween
   components:
   - type: Storage
-    capacity: 50
+    maxItemSize: Huge
   - type: Sprite
     sprite: ADT/Clothing/Belt/killa_webbing.rsi
   - type: Clothing

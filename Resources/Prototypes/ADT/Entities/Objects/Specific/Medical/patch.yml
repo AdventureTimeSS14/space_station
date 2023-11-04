@@ -12,7 +12,7 @@
   - type: Item
     size: 10
   - type: Storage
-    capacity: 18
+    maxItemSize: Large
     quickInsert: true
     areaInsert: true
     whitelist:

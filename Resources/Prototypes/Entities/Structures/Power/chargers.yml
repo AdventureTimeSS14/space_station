@@ -205,7 +205,7 @@
             visible: true
             state: borgcharger1
   - type: EntityStorage
-    capacity: 1
+    maxItemSize: Tiny
     whitelist:
       components:
       - BorgChassis

@@ -14,7 +14,7 @@
     slots:
     - back
   - type: Storage
-    capacity: 360
+    maxItemSize: Ginormous
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -43,7 +43,7 @@
     slots:
     - back
   - type: Storage
-    capacity: 250
+    maxItemSize: Ginormous
   - type: ContainerContainer
     containers:
       storagebase: !type:Container

@@ -8,7 +8,7 @@
     sprite: ADT/Objects/Misc/iron_tray.rsi
     state: icon
   - type: Storage
-    capacity: 30
+    maxItemSize: Huge
 #   TODO: ERROR FOOD & Drink нет таких тэгов
 #    whitelist:
 #      tags:
