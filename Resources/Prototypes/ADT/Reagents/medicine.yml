@@ -337,6 +337,7 @@
   color: "#f7ce5c"
   metabolisms:
     Medicine:
+      metabolismRate: 0.1
       effects:
       - !type:PopupMessage
         type: Local
@@ -392,15 +393,14 @@
         - !type:TotalDamage
           min: 25
           max: 50
-        walkSpeedModifier: 1.35
-        sprintSpeedModifier: 1.35
+        acceleration: 20
       - !type:MovespeedModifier
         conditions:
         - !type:TotalDamage
           min: 50
           max: 75
-        walkSpeedModifier: 2.35
-        sprintSpeedModifier: 2.35
+        walkSpeedModifier: 1.35
+        sprintSpeedModifier: 1.35
 
 
 

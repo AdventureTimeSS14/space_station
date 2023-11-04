@@ -475,7 +475,7 @@
 - type: entity
   name: box of foot tags
   parent: BoxCardboard
-  id: FootTagBox
+  id: ADTFootTagBox
   description: It's plastic a box with foot tags inside.
   components:
   - type: Storage
@@ -496,3 +496,66 @@
   - type: GuideHelp
     guides: 
     - ADTPathologist
+
+- type: entity
+  name: small syringe
+  description: A small syringe to take.. you guessed it, small samples of liquid.
+  parent: BaseItem
+  id: ADTSMallSyringe
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/syringe.rsi
+    layers:
+      - state: fill1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+      - state: syringe_base
+        map: ["enum.SolutionContainerLayers.Base"]
+  - type: Icon
+    sprite: ADT/Objects/Specific/Medical/syringe.rsi
+    state: "syringe_base"
+  - type: Item
+    size: 2
+    sprite: ADT/Objects/Specific/Medical/syringe.rsi
+    heldPrefix: 0
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 5
+  - type: FitsInDispenser
+    solution: beaker
+  - type: Injector
+    minTransferAmount: 1
+    maxTransferAmount: 5
+    delay: 3
+    transferAmount: 1
+    toggleState: Draw
+  - type: SolutionContainerVisuals
+    maxFillLevels: 5
+    fillBaseName: fill
+  - type: Tag
+    tags:
+    - Syringe
+    - Trash
+
+- type: entity
+  name: box of small syringes
+  parent: BoxCardboard
+  id: ADTSmallSyringeBox
+  description: It's plastic a box with small syringes inside.
+  components:
+  - type: Storage
+    capacity: 16
+  - type: StorageFill
+    contents:
+      - id: ADTSMallSyringe
+        amount: 8
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/syringe.rsi
+    state: icon
+  - type: Item
+    sprite: ADT/Objects/Specific/Medical/syringe.rsi
+    size: 16
+  - type: PhysicalComposition
+    materialComposition:
+      Cardboard: 50

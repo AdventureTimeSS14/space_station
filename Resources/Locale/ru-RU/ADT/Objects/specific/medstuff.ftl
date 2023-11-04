@@ -38,10 +38,13 @@ ent-ADTPatchHonk = хонк пластырь
     .desc = Чудо клоунской медицины, повышает уровень веселья в крови.
     .suffix = { "" }
 
-ent-ADTCratePatchPack = набор пластырей
+ent-ADTCratePatchPackFilled = набор пластырей
     .desc = Набор содержащий 4 коробки с пластырями
     .suffix = { "" }
 
+ent-ADTCratePatchPack = набор пластырей
+    .desc = { ent-ADTCratePatchPackFilled.desc }
+    .suffix = { "" }
 
 ent-ADTPillCanister = баночка для таблеток
     .desc = Вмещает до 9 таблеток.
@@ -121,6 +124,18 @@ ent-ADTMVitaminPill = таблетка витаминов
     .suffix = { "" }
 ent-PillCharcoal = таблетка угля (10)
     .desc = { ent-Pill.desc }
+    .suffix = { "" }
+
+ent-ADTCrateVendingMachineRestockPill = набор пополнения ТаблеткоМата
+    .desc = Ящик с набором пополнения ТаблеткоМата.
+    .suffix = { "" }
+
+ent-ADTCrateVendingMachineRestockPillFilled = набор пополнения ТаблеткоМата
+    .desc = Ящик с набором пополнения ТаблеткоМата.
+    .suffix = { "" }
+
+ent-ADTVendingMachineRestockPill = набор пополнения ТаблеткоМата
+    .desc = Поместите в ТаблеткоМат вашего отдела.
     .suffix = { "" }
 
 ent-ADTFootTag = бирка для ног

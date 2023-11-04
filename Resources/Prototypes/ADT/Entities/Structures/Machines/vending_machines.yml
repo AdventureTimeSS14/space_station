@@ -43,6 +43,8 @@
     brokenState: broken
     normalState: normal-unshaded
     denyState: deny-unshaded
+    ejectState: eject-unshaded
+    ejectDelay: 0.6
   - type: Advertise
     pack: PillAds
   - type: Speech
@@ -60,6 +62,8 @@
     radius: 1.8
     energy: 1.6
     color: "#a1e1f0"
+  - type: StaticPrice
+    price: 2600
   - type: GuideHelp
     guides: 
     - Medicine # заменить на докторский, когда я изменю его.
