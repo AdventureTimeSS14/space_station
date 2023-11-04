@@ -175,7 +175,8 @@
     graph: SupplyBot
     node: bot
   - type: Storage
-    capacity: 250
+    maxItemSize: Huge
+    maxTotalWeight: 40
   - type: UserInterface
     interfaces:
     - key: enum.StorageUiKey.Key
@@ -271,7 +272,6 @@
   name: cleanbot
   description: The creep of automation now threatening space janitors.
   components:
-    #Modify
   - type: Sprite
     drawdepth: Mobs
     sprite: ADT/Mobs/Silicon/Bots/cleanbot.rsi

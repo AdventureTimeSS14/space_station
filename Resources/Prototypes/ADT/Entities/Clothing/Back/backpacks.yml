@@ -14,7 +14,7 @@
     slots:
     - back
   - type: Storage
-    capacity: 360
+    maxItemSize: Ginormous
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -43,7 +43,7 @@
     slots:
     - back
   - type: Storage
-    capacity: 250
+    maxItemSize: Ginormous
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -84,6 +84,10 @@
   parent: ClothingBackpackSecurity
   id: ADTClothingBackpackInvestigatorFilled
   components:
+  - type: Storage
+    maxItemSize: Huge
+    maxTotalWeight: 0
+    maxSlots: 50 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
       - id: BoxSurvivalSecurity
@@ -107,6 +111,10 @@
   parent: ClothingBackpackDuffelSecurity
   id: ADTClothingBackpackDuffelInvestigatorFilled
   components:
+  - type: Storage
+    maxItemSize: Huge
+    maxTotalWeight: 0
+    maxSlots: 50 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
       - id: BoxSurvivalSecurity
@@ -130,6 +138,10 @@
   parent: ClothingBackpackSatchelSecurity
   id: ADTClothingBackpackSatchelInvestigatorFilled
   components:
+  - type: Storage
+    maxItemSize: Huge
+    maxTotalWeight: 0
+    maxSlots: 50 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
       - id: BoxSurvivalSecurity

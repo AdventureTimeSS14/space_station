@@ -11,7 +11,7 @@
   - type: Clothing
     sprite: ADT/Clothing/Belt/supreme-commander-sheath.rsi
   - type: Storage
-    capacity: 15
+    maxItemSize: Normal
     whitelist:
       tags:
         - SupremeCommanderSabre
@@ -35,7 +35,7 @@
   - type: Clothing
     sprite: ADT/Clothing/Belt/supreme-sheath.rsi
   - type: Storage
-    capacity: 15
+    maxItemSize: Normal
     whitelist:
       tags:
         - SupremeSabre
@@ -56,7 +56,9 @@
   description: Part of ERT security's gear
   components:
   - type: Storage
-    capacity: 50
+    maxItemSize: Ginormous
+    maxTotalWeight: 0
+    maxSlots: 50 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -75,20 +77,17 @@
   suffix: Anti-REV
   components:
   - type: Storage
-    capacity: 50
+    maxItemSize: Ginormous
+    maxTotalWeight: 0
+    maxSlots: 50 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
-      - id: EmergencyMedipen
+      - id: EmergencyMedipen # Size 2
         amount: 2
-      #- id: MagazinePistolHighCapacity
-      #- id: WeaponPistolViper
-      #- id: MedicatedSuture
-      #- id: ExGrenade
-      #  amount: 3
-      - id: ADTtelescopicBaton
-      - id: Stunbaton
-      - id: Flash
-      - id: Handcuffs
+      - id: ADTtelescopicBaton #Size 2
+      - id: Stunbaton #Size 2
+      - id: Flash #Size 2
+      - id: Handcuffs #Size 2
         amount: 3
 
 #RPSL
@@ -99,7 +98,8 @@
   description: Part of ERT leader's gear
   components:
   - type: Storage
-    capacity: 50
+    maxItemSize: Ginormous
+    maxSlots: 50
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -118,7 +118,9 @@
   suffix: Anti-REV
   components:
   - type: Storage
-    capacity: 50
+    maxItemSize: Ginormous
+    maxTotalWeight: 0
+    maxSlots: 50 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -142,7 +144,9 @@
   description: Part of ERT medical's gear
   components:
   - type: Storage
-    capacity: 50
+    maxItemSize: Ginormous
+    maxTotalWeight: 0
+    maxSlots: 50 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -171,7 +175,7 @@
   - type: Clothing
     sprite: ADT/Clothing/Belt/pyotr_sheath.rsi
   - type: Storage
-    capacity: 15
+    maxItemSize: Huge
     whitelist:
       tags:
         - CaptainSabre
@@ -209,7 +213,7 @@
   suffix: Halloween
   components:
   - type: Storage
-    capacity: 50
+    maxItemSize: Huge
   - type: Sprite
     sprite: ADT/Clothing/Belt/killa_webbing.rsi
   - type: Clothing

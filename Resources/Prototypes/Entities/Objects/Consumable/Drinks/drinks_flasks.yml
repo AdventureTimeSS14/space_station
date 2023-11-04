@@ -36,8 +36,8 @@
       drink:
         reagents:
         - ReagentId: Water
-          Quantity: 60
-  - type: TrashOnEmpty
+          Quantity: 50
+  - type: TrashOnSolutionEmpty
     solution: drink
 
 - type: entity

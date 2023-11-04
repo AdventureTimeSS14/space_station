@@ -13,7 +13,7 @@
       path: /Audio/Weapons/Guns/Gunshots/Magic/staff_animation.ogg
   - type: BasicEntityAmmoProvider
     proto: ProjectilePolyboltCarp
-    capacity: 5
+    capacity: 2
 
 - type: entity
   name: wand of carp polymorph
@@ -23,7 +23,7 @@
   components:
   - type: BasicEntityAmmoProvider
     proto: ProjectilePolyboltCarp
-    capacity: 5
+    capacity: 2
     count: 5
 
 - type: entity
@@ -34,7 +34,7 @@
   components:
   - type: BasicEntityAmmoProvider
     proto: ProjectilePolyboltMonkey
-    capacity: 5
+    capacity: 2
     count: 5
 
 - type: entity
@@ -54,7 +54,7 @@
       path: /Audio/Magic/fireball.ogg
   - type: BasicEntityAmmoProvider
     proto: ProjectileFireball
-    capacity: 5
+    capacity: 2
     count: 5
 
 - type: entity
@@ -103,7 +103,7 @@
   components:
   - type: BasicEntityAmmoProvider
     proto: ProjectilePolyboltCluwne
-    capacity: 3
+    capacity: 2
     count: 3
 
 - type: entity
@@ -114,5 +114,5 @@
   components:
   - type: BasicEntityAmmoProvider
     proto: ProjectilePolyboltBread
-    capacity: 10
+    capacity: 2
     count: 10

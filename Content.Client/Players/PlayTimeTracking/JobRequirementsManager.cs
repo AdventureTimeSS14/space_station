@@ -1,7 +1,4 @@
 using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using Content.Client.Corvax.Sponsors;
 using Content.Shared.CCVar;
 using Content.Shared.Players;
 using Content.Shared.Players.PlayTimeTracking;
@@ -12,6 +9,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Client.Corvax.Sponsors;
 
 namespace Content.Client.Players.PlayTimeTracking;
 
@@ -92,6 +90,12 @@ public sealed class JobRequirementsManager
             return false;
         }
 
+        var info = _sponsorsManager.TryGetInfo(out var sponsorInfo);
+        if (info && sponsorInfo != null && sponsorInfo.AllowJob)
+        {
+            return true;
+        }
+
         if (job.Requirements == null ||
             !_cfg.GetCVar(CCVars.GameRoleTimers))
         {
@@ -102,12 +106,7 @@ public sealed class JobRequirementsManager
         if (player == null)
             return true;
 
-        var info = _sponsorsManager.TryGetInfo(out var sponsorInfo);
-        if (info && sponsorInfo != null)
-        {
-            if (sponsorInfo.AllowJob)
-                return true;
-        }
+
 
         return CheckRoleTime(job.Requirements, out reason);
     }
@@ -131,4 +130,24 @@ public sealed class JobRequirementsManager
         reason = reasons.Count == 0 ? null : FormattedMessage.FromMarkup(string.Join('\n', reasons));
         return reason == null;
     }
+
+    public TimeSpan FetchOverallPlaytime()
+    {
+        return _roles.TryGetValue("Overall", out var overallPlaytime) ? overallPlaytime : TimeSpan.Zero;
+    }
+
+    public IEnumerable<KeyValuePair<string, TimeSpan>> FetchPlaytimeByRoles()
+    {
+        var jobsToMap = _prototypes.EnumeratePrototypes<JobPrototype>();
+
+        foreach (var job in jobsToMap)
+        {
+            if (_roles.TryGetValue(job.PlayTimeTracker, out var locJobName))
+            {
+                yield return new KeyValuePair<string, TimeSpan>(job.Name, locJobName);
+            }
+        }
+    }
+
+
 }

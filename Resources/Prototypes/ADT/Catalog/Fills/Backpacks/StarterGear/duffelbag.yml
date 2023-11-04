@@ -38,6 +38,9 @@
   name: Syndicate elite bundle
   description: "For those who knows at armor." #, and a Suppressor.
   components:
+  - type: Storage
+    maxItemSize: Huge
+    maxTotalWeight: 9000
   - type: StorageFill
     contents:
       - id: ClothingOuterHardsuitSyndieElite
@@ -107,7 +110,7 @@
   parent: ClothingBackpackDuffelSyndicateAmmoBundle
   id: ADTClothingBackpackDuffelSsmokeGrenade
   name: Набор дымовых гранат синдиката
-  description: Набор из 6 штук дымовых гранат синдиката 
+  description: Набор из 6 штук дымовых гранат синдиката
   components:
   - type: StorageFill
     contents:

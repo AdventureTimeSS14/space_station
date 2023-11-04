@@ -3,6 +3,8 @@
   parent: BriefcaseBrown
   suffix: IAA
   components:
+    - type: Item
+      size: Huge
     - type: StorageFill
       contents:
         - id: Paper
