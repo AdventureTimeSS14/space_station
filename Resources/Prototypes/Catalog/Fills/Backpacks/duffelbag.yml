@@ -203,6 +203,8 @@
   name: syndicate pyjama duffel bag
   description: Contains 3 pairs of syndicate pyjamas and 3 plushies for the ultimate sleepover.
   components:
+  - type: Storage
+    maxTotalWeight: 44
   - type: StorageFill
     contents:
       - id: ClothingUniformJumpsuitPyjamaSyndicateRed
@@ -310,6 +312,7 @@
   components:
   - type: StorageFill
     contents:
+      - id: SyndiHypo
       - id: BoxSurvivalSyndicate
       - id: SawAdvanced
       - id: Cautery
