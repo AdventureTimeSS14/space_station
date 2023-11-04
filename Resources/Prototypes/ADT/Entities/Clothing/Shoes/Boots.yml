@@ -57,8 +57,8 @@
     - type: InstantAction
       icon: { sprite: ADT/Clothing/Shoes/Boots/advanced.rsi, state: icon }
       iconOn: ADT/Clothing/Shoes/Boots/advanced.rsi/icon-on.png
-      itemIconStyle: NoItem
-      event: !type:ToggleActionEvent
+      #itemIconStyle: NoItem
+      #event: !type:ToggleActionEvent
 
 - type: entity
   id: ActionToggleADTGasTank
@@ -89,11 +89,11 @@
       iconOn:
         sprite: Objects/Tanks/Jetpacks/blue.rsi
         state: icon-on
-      useDelay: 1.0
+      #useDelay: 1.0
       event: !type:ToggleJetpackEvent
 
 - type: entity
-  parent: ClothingShoesBootsMag
+  parent: ClothingShoesBootsMagSyndie
   id: ADTClothingShoesBootsMagAdvSynd
   name: advanced syndicate magboots
   description: State-of-the-art magnetic boots that do not slow down their wearer. Made by gorlax for gorlax

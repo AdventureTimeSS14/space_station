@@ -1,2 +1,2 @@
-ent-RingBox = ring box
-    .desc = very good.
+ent-RingBox = коробка с кольцами
+    .desc = Для самых решительных.
