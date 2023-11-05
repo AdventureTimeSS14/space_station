@@ -251,3 +251,14 @@
     sprite: ADT/Clothing/Shoes/Boots/golden_heels.rsi
   - type: Clothing
     sprite: ADT/Clothing/Shoes/Boots/golden_heels.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesColorWhite
+  name: white shoes
+  description: Don't take them off at your office Christmas party.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Color/white.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Color/white.rsi
