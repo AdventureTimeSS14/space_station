@@ -4,6 +4,6 @@
   name: OuterBaseChaplain
   components:
   - type: Sprite
-    sprite: ADT/Clothing/OuterClothing/Suits/rasy_chaplain
+    sprite: ADT/Clothing/OuterClothing/Suits/rasy_chaplain.rsi
   - type: Clothing
-    sprite: ADT/Clothing/OuterClothing/Suits/rasy_chaplain
+    sprite: ADT/Clothing/OuterClothing/Suits/rasy_chaplain.rsi
