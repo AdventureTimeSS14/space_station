@@ -43,11 +43,7 @@
       visible: false
   - type: SiliconLawBound
   - type: SiliconLawProvider
-    laws:
-    - Corporate1
-    - Corporate2
-    - Corporate3
-    - Corporate4
+    laws: Drone
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
@@ -77,11 +73,7 @@
       visible: false
   - type: SiliconLawBound
   - type: SiliconLawProvider
-    laws:
-    - Corporate1
-    - Corporate2
-    - Corporate3
-    - Corporate4
+    laws: Drone
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:

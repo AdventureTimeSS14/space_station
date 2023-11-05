@@ -1,5 +1,6 @@
 
 using Content.Shared.Damage;
+using Content.Shared.Item;
 using Robust.Shared.Audio;
 
 namespace Content.Shared.ADT.SwitchableWeapon;
@@ -42,8 +43,8 @@ public sealed partial class SwitchableWeaponComponent : Component
     public SoundSpecifier? BonkSound;
 
     [ViewVariables(VVAccess.ReadWrite)][DataField("sizeOpened")]
-    public int SizeOpened = 15;
+    public ItemSize SizeOpened = ItemSize.Normal;
 
     [ViewVariables(VVAccess.ReadWrite)][DataField("sizeClosed")]
-    public int SizeClosed = 5;
+    public ItemSize SizeClosed = ItemSize.Normal;
 }

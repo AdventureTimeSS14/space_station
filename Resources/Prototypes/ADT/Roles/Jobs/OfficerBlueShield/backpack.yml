@@ -3,6 +3,9 @@
   parent: ClothingBackpackERTSecurity
   id: ClothingBackpackADTBlueShieldOfficerFilled
   components:
+    - type: Storage
+      maxItemSize: Huge
+      maxTotalWeight: 9000
     - type: StorageFill
       contents:
         - id: MedkitBruteFilled

@@ -39,7 +39,7 @@
         reagents:
         - ReagentId: Ice
           Quantity: 50
-  - type: TrashOnEmpty
+  - type: TrashOnSolutionEmpty
     solution: food
   - type: Sprite
     sprite: ADT/Objects/Consumable/Food/ice_pack.rsi

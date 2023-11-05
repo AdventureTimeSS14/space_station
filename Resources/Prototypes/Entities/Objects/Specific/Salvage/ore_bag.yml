@@ -14,14 +14,14 @@
     slots:
     - belt
   - type: Item
-    size: 176
+    size: Ginormous
   - type: Storage
-    capacity: 300
+    maxSlots: 10
+    maxItemSize: Normal
     quickInsert: true
     areaInsert: true
     whitelist:
       tags:
         - ArtifactFragment
         - Ore
-        - ArtifactFragment
   - type: Dumpable
