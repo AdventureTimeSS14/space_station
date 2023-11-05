@@ -55,3 +55,6 @@ ent-ADTClothingHeadHatsBavarianHatGreen = зеленая егерская шля
 ent-ADTClothingHeadHatsBavarianHatRed = красная егерская шляпа
     .desc = Егерская шляпа красного цвета, с пером. 
     .suffix = { "Октоберфест" }
+
+ent-ADTClothingHeadHairPin = золотая заколка
+    .desc = Золотая заколка для волос с красными перьями. Производства "Modeling Agency Dar-Vaxed".

@@ -61,3 +61,9 @@ ent-ClothingUnderwearSocksShort = короткие носки
     .desc = Короткие белые носки NanoTrasen для рабочих станции.
 ent-ClothingUnderwearSocksThigh = высокие чулки
     .desc = Стандартные белые чулки NanoTrasen для рабочих станции.
+
+ent-ADTClothingUnderwearTopBraSportsBlack = спортивный черный топик
+    .desc = Для любителей спорта и стиля. Производство компании  "Modeling Agency Dar-Vaxed".
+
+ent-ADTClothingUnderwearTopBraPea = топик в горошек
+    .desc = Легкая и короткая женская блузка без рукавов. Производство компании  "Modeling Agency Dar-Vaxed".
