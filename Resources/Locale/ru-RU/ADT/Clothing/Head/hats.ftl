@@ -61,3 +61,6 @@ ent-ADTClothingHeadHairPin = золотая заколка
 
 ent-ADTClothingHeadPovar = Поварской колпак-берет шеф-повара
     .desc = Обязательный головной убор уважающего себя шеф-повара, а так-же чтобы на еду не попали волосы.
+
+ent-ADTClothingHeadZakolka = Золотая заколка для волос с красными перьями
+    .desc = Подружка, это заколка! Производство "Modeling Agency Dar-Vaxed".
