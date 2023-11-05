@@ -233,3 +233,14 @@
     sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatred.rsi #спрайты от SHIONE
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatred.rsi #спрайты от SHIONE
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadPovar
+  name: MarineLieutenantBeret
+  description: Marine beret
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/hat_povar.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/hat_povar.rsi

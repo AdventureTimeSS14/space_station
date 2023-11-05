@@ -58,3 +58,6 @@ ent-ADTClothingHeadHatsBavarianHatRed = красная егерская шляп
 
 ent-ADTClothingHeadHairPin = золотая заколка
     .desc = Золотая заколка для волос с красными перьями. Производства "Modeling Agency Dar-Vaxed".
+
+ent-ADTClothingHeadPovar = Поварской колпак-берет шеф-повара
+    .desc = Обязательный головной убор уважающего себя шеф-повара, а так-же чтобы на еду не попали волосы.
