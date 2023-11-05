@@ -9,3 +9,6 @@ ent-ADTClothingOuterGraySweatshirtTop = серая толстовка-топка
 
 ent-ADTClothingOuterBlackSweatshirtTop = черная толстовка-топка
     .desc = Стильная белая толстовка-топка. Производства компании "Modeling Agency Dar-Vaxed".
+
+ent-ADTClothingOuterBaseChaplainRasy = Ряса священника
+    .desc = Верхнее одеяние лиц духовного звания.

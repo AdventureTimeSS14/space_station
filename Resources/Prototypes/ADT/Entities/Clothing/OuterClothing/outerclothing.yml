@@ -1,0 +1,9 @@
+- type: entity
+  parent: ClothingOuterBase
+  id: ADTClothingOuterBaseChaplainRasy
+  name: OuterBaseChaplain
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Suits/rasy_chaplain
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Suits/rasy_chaplain

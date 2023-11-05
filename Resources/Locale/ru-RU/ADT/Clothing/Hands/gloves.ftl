@@ -20,3 +20,6 @@ ent-ADTBrassKnucklesGloves = Кастет
 
 ent-ADTClothingHandsBlackLongGloves = черные дамские перчатки
     .desc = Лёгкие и шелковистые черные перчатки с золотыми кольцами. Производства компании "Modeling Agency Dar-Vaxed".
+
+ent-ADTClothingHandsGlovesJanitor = Хозяйственные перчатки
+    .desc = Латексные перчатки для работы с грязью.
