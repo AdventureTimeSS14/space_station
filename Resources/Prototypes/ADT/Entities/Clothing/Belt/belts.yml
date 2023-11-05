@@ -77,9 +77,9 @@
   suffix: Anti-REV
   components:
   - type: Storage
-    maxItemSize: Ginormous
+    maxItemSize: Normal
     maxTotalWeight: 0
-    maxSlots: 50 #By this ignore maxTotalWeight
+    maxSlots: 10 
   - type: StorageFill
     contents:
       - id: EmergencyMedipen # Size 2
@@ -98,8 +98,8 @@
   description: Part of ERT leader's gear
   components:
   - type: Storage
-    maxItemSize: Ginormous
-    maxSlots: 50
+    maxItemSize: Normal
+    maxSlots: 10
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -118,9 +118,9 @@
   suffix: Anti-REV
   components:
   - type: Storage
-    maxItemSize: Ginormous
+    maxItemSize: Normal
     maxTotalWeight: 0
-    maxSlots: 50 #By this ignore maxTotalWeight
+    maxSlots: 10 
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -144,9 +144,9 @@
   description: Part of ERT medical's gear
   components:
   - type: Storage
-    maxItemSize: Ginormous
+    maxItemSize: Normal
     maxTotalWeight: 0
-    maxSlots: 50 #By this ignore maxTotalWeight
+    maxSlots: 10 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
