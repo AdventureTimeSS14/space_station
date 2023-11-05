@@ -5,7 +5,7 @@
   components:
     - type: Storage
       maxItemSize: Huge
-      maxTotalWeight: 9000
+      maxTotalWeight: 50
     - type: StorageFill
       contents:
         - id: MedkitBruteFilled
