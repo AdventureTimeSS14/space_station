@@ -37,7 +37,7 @@
 
 - type: entity
   id: ADTBaseMelnikovCigarSpent
-  parent: MelnikovCigar
+  parent: BaseMelnikovCigar
   suffix: spent
   components:
   - type: Sprite
