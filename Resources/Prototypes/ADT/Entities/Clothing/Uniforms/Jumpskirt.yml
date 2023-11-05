@@ -489,3 +489,14 @@
     sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/yellow_swimwear.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/yellow_swimwear.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJumpskirtBlackShortDress
+  name: black short dress
+  description: black short dress
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/black_short_dress.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/black_short_dress.rsi

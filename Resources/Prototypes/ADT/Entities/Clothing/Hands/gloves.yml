@@ -137,3 +137,17 @@
     soundHit:
       path: /Audio/Weapons/genhit2.ogg
     animation: WeaponArcFist
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsBlackLongGloves
+  name: long black gloves
+  description: long black gloves
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/long-black-gloves.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/long-black-gloves.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+  - type: FingerprintMask

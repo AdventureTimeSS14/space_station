@@ -435,3 +435,71 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/suit_aidan.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/suit_aidan.rsi
+
+#одежда стильномата
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJumpsuitAnarchyTshirt
+  name: black anarchy t-shirt
+  description: black anarchy t-shirt
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/black_anarchy.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/black_anarchy.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJumpsuitDenimPants
+  name: denim pants
+  description: denim pants
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/denim_pants.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/denim_pants.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJumpsuitDenim
+  name: denim jumpsuit
+  description: denim jumpsuit
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/denim_jumpsuit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/denim_jumpsuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJumpsuitCamouflageTshirt
+  name: camouflage suit
+  description: camouflage suit
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/camo_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/camo_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJumpsuitCamouflageTshirtDesert
+  name: desert camouflage suit
+  description: desert camouflage suit
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/desert_camo_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/desert_camo_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJumpsuitSerious
+  name: serious suit
+  description: serious suit
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/serious_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/serious_suit.rsi

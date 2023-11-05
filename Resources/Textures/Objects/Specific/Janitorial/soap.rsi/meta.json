@@ -126,6 +126,17 @@
     {
       "name": "syndie-inhand-right",
       "directions": 4
-    }
+    },
+    {
+      "name": "honk-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "honk-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "honk"
+     }
   ]
 }
