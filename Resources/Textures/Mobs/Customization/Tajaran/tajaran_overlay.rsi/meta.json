@@ -10,6 +10,7 @@
         { "name": "stripes_body", "directions": 4 },
         { "name": "skeleton_body", "directions": 4 },
         { "name": "patch", "directions": 4 },
-        { "name": "blots_body", "directions": 4 }
+        { "name": "blots_body", "directions": 4 },
+        { "name": "points", "directions": 4 }
     ]
 }

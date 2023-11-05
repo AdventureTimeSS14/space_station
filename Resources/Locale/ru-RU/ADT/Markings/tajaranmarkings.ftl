@@ -45,6 +45,8 @@ marking-TailSkeleton = Рисунок скелета (хвост)
 marking-TailSkeleton-tail_skeleton = Скелет
 marking-TailFluffy = Пушистый (хвост)
 marking-TailFluffy-tail_fluffy = Хвост
+marking-TailColor = Хвост (цвет)
+marking-Tail-tail_m = Хвост
 
 marking-Head1 = Ушки
 marking-Head1-outears = Наружное ухо
