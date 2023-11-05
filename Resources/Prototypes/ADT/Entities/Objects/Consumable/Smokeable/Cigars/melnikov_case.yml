@@ -5,7 +5,7 @@
   description: Внизу крышки имеется небольшая гравировка с инициалами А.М.
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Smokeables/Cigars/case.rsi
+    sprite: ADT/Objects/Consumable/Smokeables/melnikov_case.rsi
     layers:
     - state: closed
     - state: open
