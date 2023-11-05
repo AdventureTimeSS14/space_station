@@ -126,7 +126,7 @@ public sealed class RoleBanCommand : IConsoleCommand
 
         var roleBanId = await dbMan.GetLastServerRoleBanId();
 
-        if (webhookUrl != null)
+        if (!string.IsNullOrEmpty(webhookUrl))
         {
             var payload = new WebhookPayload
             {

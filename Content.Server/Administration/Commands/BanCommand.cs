@@ -117,16 +117,18 @@ public sealed class BanCommand : LocalizedCommands
 
         _bans.CreateServerBan(targetUid, target, player?.UserId, null, targetHWid, minutes, severity, reason);
 
-        var banId = await _dbManager.GetLastServerBanId();
 
-        DateTimeOffset? expires = null;
-        if (minutes > 0)
-        {
-            expires = DateTimeOffset.Now + TimeSpan.FromMinutes(minutes);
-        }
 
-        if (webhookUrl != null)
+        if (!string.IsNullOrEmpty(webhookUrl))
         {
+            var banId = await _dbManager.GetLastServerBanId();
+
+            DateTimeOffset? expires = null;
+            if (minutes > 0)
+            {
+                expires = DateTimeOffset.Now + TimeSpan.FromMinutes(minutes);
+            }
+
             var payload = new WebhookPayload
             {
                 Username = "Это бан",

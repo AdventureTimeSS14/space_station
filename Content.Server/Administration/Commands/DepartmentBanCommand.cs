@@ -137,11 +137,11 @@ public sealed class DepartmentBanCommand : IConsoleCommand
                 severity, reason, now);
         }
 
-        if (webhookUrl != null)
+        if (!string.IsNullOrEmpty(webhookUrl))
         {
             var roleBanIdsString = "";
 
-            if (departmentProto.Roles != null && departmentProto.Roles.Count > 0)
+            if (departmentProto?.Roles != null && departmentProto.Roles.Count > 0)
             {
                 int[] roleBanIds;
                 roleBanIds = new int[departmentProto.Roles.Count];
