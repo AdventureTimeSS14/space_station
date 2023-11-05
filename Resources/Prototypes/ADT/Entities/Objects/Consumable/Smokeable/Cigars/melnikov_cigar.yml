@@ -20,7 +20,7 @@
             Quantity: 5
 
 - type: entity
-  id: MelnikovCigar
+  id: ADTMelnikovCigar
   parent: BaseMelnikovCigar
   name: Сигара Алексея Мельникова
   description: Кому вообще пришло в голову называть сигареты чьим-то именем?
@@ -36,7 +36,7 @@
     size: 1
 
 - type: entity
-  id: BaseMelnikovCigarSpent
+  id: ADTBaseMelnikovCigarSpent
   parent: MelnikovCigar
   suffix: spent
   components:

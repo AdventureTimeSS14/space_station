@@ -37,7 +37,7 @@
   - type: Storage
     capacity: 8
   - type: Item
-    sprite: Objects/Consumable/Smokeables/Cigars/case.rsi
+    sprite: ADT/Objects/Consumable/Smokeables/melnikov_case.rsi
     size: 8
   - type: StorageFill
     contents:
