@@ -47,7 +47,7 @@
 
 - type: marking
   id: BodyBlots
-  bodyPart: [ Chest, RArm, LArm, RLeg, LLeg ] #глянуть почему не работает.
+  bodyPart: [ Chest, RArm, LArm, RLeg, LLeg ] 
   markingCategory: Overlay
   speciesRestriction: [TajaranSpecies]
   sprites:
@@ -56,7 +56,7 @@
 
 - type: marking
   id: patch2
-  bodyPart: [ Chest, RArm, LArm, RLeg, LLeg, RFoot ]
+  bodyPart: [ Chest, RLeg, LLeg ]
   markingCategory: Overlay
   speciesRestriction: [TajaranSpecies]
   sprites:
@@ -74,11 +74,11 @@
 
 - type: marking
   id: arm1
-  bodyPart: [ RHand, LHand, RLeg, LLeg ]
+  bodyPart: [ RArm, LArm, RLeg, LLeg ] #честно, я без малейшего понятия, почему это не работает. Черта либо клипается сквозь одежду, либо обрезает руки.
   markingCategory: Overlay
   speciesRestriction: [TajaranSpecies]
   sprites:
-    - sprite: Mobs/Customization/Tajaran/tajaran_parts.rsi
+    - sprite: Mobs/Customization/Tajaran/tajaran_overlay.rsi
       state: points
 
 #Части тел.
@@ -121,7 +121,7 @@
 
 - type: marking
   id: LLegGradient
-  bodyPart: LFoot 
+  bodyPart: RFoot
   markingCategory: Legs
   speciesRestriction: [TajaranSpecies]
   sprites:
@@ -145,7 +145,7 @@
   speciesRestriction: [TajaranSpecies]
   sprites:
     - sprite: Mobs/Customization/Tajaran/tajaran_tail.rsi #Спрайты от moroz_3
-      state: wingler_3 #исправить спрайты
+      state: wingler_3 
 
 - type: marking
   id: TailWingler2
@@ -154,7 +154,7 @@
   speciesRestriction: [TajaranSpecies]
   sprites:
     - sprite: Mobs/Customization/Tajaran/tajaran_tail.rsi #Спрайты от moroz_3
-      state: wingler_2 #исправить спрайты
+      state: wingler_2 
 
 - type: marking
   id: TailWingler1
@@ -163,7 +163,7 @@
   speciesRestriction: [TajaranSpecies]
   sprites:
     - sprite: Mobs/Customization/Tajaran/tajaran_tail.rsi #Спрайты от moroz_3
-      state: wingler_1 #исправить спрайты
+      state: wingler_1 
 
 - type: marking
   id: TailTip
@@ -200,6 +200,15 @@
   sprites:
     - sprite: Mobs/Customization/Tajaran/tajaran_tail.rsi #Спрайты от moroz_3
       state: tail_fluffy
+
+- type: marking
+  id: TailColor
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [TajaranSpecies]
+  sprites:
+    - sprite: Mobs/Species/CatSkin/parts.rsi
+      state: tail_m
 
 #Голова.
 
@@ -288,6 +297,15 @@
   sprites:
     - sprite: Mobs/Customization/Tajaran/tajaran_head.rsi #Спрайты от moroz_3
       state: mane_head
+
+- type: marking
+  id: HairEyebrows
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [TajaranSpecies]
+  sprites:
+    - sprite: Mobs/Customization/Tajaran/tajaran_hairs.rsi #Спрайты от moroz_3
+      state: eyebrows
 
 #Морда.
 - type: marking
@@ -461,15 +479,6 @@
   sprites:
     - sprite: Mobs/Customization/Tajaran/tajaran_hairs.rsi
       state: victory
-
-- type: marking
-  id: HairEyebrows
-  bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [TajaranSpecies]
-  sprites:
-    - sprite: Mobs/Customization/Tajaran/tajaran_hairs.rsi #Спрайты от moroz_3
-      state: eyebrows
 
 - type: marking
   id: HairPigtail
