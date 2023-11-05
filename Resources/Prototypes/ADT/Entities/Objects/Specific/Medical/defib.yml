@@ -5,7 +5,7 @@
   parent: [ BaseDefibrillator, PowerCellSlotMediumItem ]
   components:
   - type: Item
-    size: 20
+    size: Normal 
   - type: Clothing
     quickEquip: false
     slots:
