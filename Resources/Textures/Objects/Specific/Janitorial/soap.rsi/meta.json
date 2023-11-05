@@ -74,11 +74,11 @@
             "directions": 4
         },
         {
-            "name": "honk-inhand-left",
+            "name": "honk-inhand-right",
             "directions": 4
         },
         {
-            "name": "honk-inhand-right",
+            "name": "honk-inhand-left",
             "directions": 4
         },
         {
