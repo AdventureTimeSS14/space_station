@@ -1,0 +1,11 @@
+- type: entity
+  parent: BaseItem
+  id: ADTSoundGenDestruction2
+  name: ADTSoundGenDestruction2
+  abstract: false
+  components:
+  - type: TimedDespawn
+    lifetime: 0.3
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/ADT/bonk_dubinka.ogg
