@@ -123,3 +123,23 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Underwear/monokini_top_black.rsi
+
+#бра от Празата для Стильномата
+
+- type: entity
+  parent: ClothingUnderwearTopBase
+  id: ADTClothingUnderwearTopBraSportsBlack
+  name: black sports bra
+  description: Sports bra. Painted black.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Top/sportsbrablack.rsi
+
+- type: entity
+  parent: ClothingUnderwearTopBase
+  id: ADTClothingUnderwearTopBraPea
+  name: pea bra
+  description: pea bra
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Top/peabra.rsi

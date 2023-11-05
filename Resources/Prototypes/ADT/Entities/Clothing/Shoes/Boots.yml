@@ -238,3 +238,16 @@
     sprite: ADT/Clothing/Shoes/Boots/aidan_shoes.rsi
   - type: Clothing
     sprite: ADT/Clothing/Shoes/Boots/aidan_shoes.rsi
+
+#туфли от Празата
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ADTClothingFootGoldenHeels
+  name: golden heels
+  description: Specially for your dress!
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/golden_heels.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/golden_heels.rsi
