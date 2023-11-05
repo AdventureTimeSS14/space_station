@@ -37,6 +37,7 @@ public sealed class ChatSanitizationManager : IChatSanitizationManager
         { "!щ", "chatsan-snaps" },
         // Corvax-Localization-End
         // I could've done this with regex, but felt it wasn't the right idea.
+        { ")", "chatsan-smiles" },
         { ":)", "chatsan-smiles" },
         { ":]", "chatsan-smiles" },
         { "=)", "chatsan-smiles" },
@@ -91,10 +92,11 @@ public sealed class ChatSanitizationManager : IChatSanitizationManager
         { "lel.", "chatsan-laughs" },
         { "kek", "chatsan-laughs" },
         { "kek.", "chatsan-laughs" },
+        { "rofl", "chatsan-laughs" },
         { "o7", "chatsan-salutes" },
         { ";_;7", "chatsan-tearfully-salutes"},
-        { ")", "chatsan-smiles"},
-        { "idk", "chatsan-shrugs" }
+        { "idk", "chatsan-shrugs" },
+        { "idk.", "chatsan-shrugs" }
     };
 
     private bool _doSanitize;

@@ -167,3 +167,15 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/xenomorph_suit.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/xenomorph_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTHalloweenMichaelMyersSuit
+  name: Michael Myers suit
+  description: Michael Myers suit
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/michael_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/michael_suit.rsi

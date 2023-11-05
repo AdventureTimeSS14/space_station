@@ -7,29 +7,25 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototy
 namespace Content.Shared.Roles
 {
     [Prototype("startingGear")]
-    public sealed class StartingGearPrototype : IPrototype
+    public sealed partial class StartingGearPrototype : IPrototype
     {
-        [DataField("equipment", customTypeSerializer: typeof(PrototypeIdValueDictionarySerializer<string, EntityPrototype>))]
-        private Dictionary<string, string> _equipment = new();
+        [DataField]
+        public Dictionary<string, EntProtoId> Equipment = new();
 
         /// <summary>
         /// if empty, there is no skirt override - instead the uniform provided in equipment is added.
         /// </summary>
-        [DataField("innerclothingskirt", customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
-        private string? _innerClothingSkirt;
+        [DataField]
+        public EntProtoId? InnerClothingSkirt;
 
-        [DataField("satchel", customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
-        private string? _satchel;
+        [DataField]
+        public EntProtoId? Satchel;
 
-        [DataField("duffelbag", customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
-        private string? _duffelbag;
+        [DataField]
+        public EntProtoId? Duffelbag;
 
-        public IReadOnlyDictionary<string, string> Inhand => _inHand;
-        /// <summary>
-        /// hand index, item prototype
-        /// </summary>
-        [DataField("inhand")]
-        private Dictionary<string, string> _inHand = new(0);
+        [DataField]
+        public List<EntProtoId> Inhand = new(0);
 
         // Sirena-Underwear-Start
         [DataField("underweart")]
@@ -47,12 +43,12 @@ namespace Content.Shared.Roles
         {
             if (profile != null)
             {
-                if (slot == "jumpsuit" && profile.Clothing == ClothingPreference.Jumpskirt && !string.IsNullOrEmpty(_innerClothingSkirt))
-                    return _innerClothingSkirt;
-                if (slot == "back" && profile.Backpack == BackpackPreference.Satchel && !string.IsNullOrEmpty(_satchel))
-                    return _satchel;
-                if (slot == "back" && profile.Backpack == BackpackPreference.Duffelbag && !string.IsNullOrEmpty(_duffelbag))
-                    return _duffelbag;
+                if (slot == "jumpsuit" && profile.Clothing == ClothingPreference.Jumpskirt && !string.IsNullOrEmpty(InnerClothingSkirt))
+                    return InnerClothingSkirt;
+                if (slot == "back" && profile.Backpack == BackpackPreference.Satchel && !string.IsNullOrEmpty(Satchel))
+                    return Satchel;
+                if (slot == "back" && profile.Backpack == BackpackPreference.Duffelbag && !string.IsNullOrEmpty(Duffelbag))
+                    return Duffelbag;
                 // Sirena-Underwear-Start
                 if (slot == "underweart" && profile.Sex == Sex.Female && !string.IsNullOrEmpty(_underweart))
                     return _underweart;
@@ -61,7 +57,7 @@ namespace Content.Shared.Roles
                 // Sirena-Underwear-End
             }
 
-            return _equipment.TryGetValue(slot, out var equipment) ? equipment : string.Empty;
+            return Equipment.TryGetValue(slot, out var equipment) ? equipment : string.Empty;
         }
     }
 }

@@ -389,3 +389,114 @@
     sprite: ADT/Clothing/Uniforms/Jumpskirt/jumpskirt_qm.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/jumpskirt_qm.rsi
+
+#купальники
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJumpskirtSwimwearBlack
+  name: black swimwear
+  description: black swimwear
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/black_swimwear.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/black_swimwear.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJumpskirtSwimwearBlue
+  name: blue swimwear
+  description: blue swimwear
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/blue_swimwear.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/blue_swimwear.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJumpskirtSwimwearGold
+  name: gold swimwear
+  description: gold swimwear
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/gold_swimwear.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/gold_swimwear.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJumpskirtSwimwearGreen
+  name: green swimwear
+  description: green swimwear
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/green_swimwear.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/green_swimwear.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJumpskirtSwimwearOrange
+  name: orange swimwear
+  description: orange swimwear
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/orange_swimwear.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/orange_swimwear.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJumpskirtSwimwearPurple
+  name: purple swimwear
+  description: purple swimwear
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/purple_swimwear.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/purple_swimwear.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJumpskirtSwimwearRed
+  name: red swimwear
+  description: red swimwear
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/red_swimwear.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/red_swimwear.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJumpskirtSwimwearWhite
+  name: white swimwear
+  description: white swimwear
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/white_swimwear.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/white_swimwear.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJumpskirtSwimwearYellow
+  name: yellow swimwear
+  description: yellow swimwear
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/yellow_swimwear.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/Swimwear/yellow_swimwear.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJumpskirtBlackShortDress
+  name: black short dress
+  description: black short dress
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/black_short_dress.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/black_short_dress.rsi

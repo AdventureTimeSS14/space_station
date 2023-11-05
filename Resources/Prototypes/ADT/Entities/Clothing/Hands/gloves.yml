@@ -117,3 +117,37 @@
     sprite: ADT/Clothing/Hands/Gloves/Halloween/red_martial_gloves.rsi
   - type: Fiber
     fiberMaterial: fibers-synthetic
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTBrassKnucklesGloves
+  name: gloves from the dimension of nightmares
+  description: The right glove has blades, it seems, with which its former owner dealt with his victims.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/brassknuckles_gloves.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/brassknuckles_gloves.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 12
+    soundHit:
+      path: /Audio/Weapons/genhit2.ogg
+    animation: WeaponArcFist
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsBlackLongGloves
+  name: long black gloves
+  description: long black gloves
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/long-black-gloves.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/long-black-gloves.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+  - type: FingerprintMask

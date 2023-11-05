@@ -5,7 +5,9 @@
   suffix: Filled
   components:
   - type: Storage
-    capacity: 60
+    maxItemSize: Ginormous
+    maxTotalWeight: 0
+    maxSlots: 50 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
       - id: ADTClothingBeltPyotrSheath

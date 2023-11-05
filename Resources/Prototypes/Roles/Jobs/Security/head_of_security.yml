@@ -55,6 +55,6 @@
     underwearb: ClothingUnderwearBottomBoxersHOS # Sirena-Underwear
   underweart: ClothingUnderwearTopBraHOS # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesHOS # Sirena-Underwear
-  innerclothingskirt: ClothingUniformJumpskirtHoS
+  innerClothingSkirt: ClothingUniformJumpskirtHoS
   satchel: ClothingBackpackSatchelHOSFilled
   duffelbag: ClothingBackpackDuffelHOSFilled

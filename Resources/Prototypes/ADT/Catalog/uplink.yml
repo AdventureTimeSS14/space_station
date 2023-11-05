@@ -225,7 +225,7 @@
   description: uplink-ssmokegrenade-desc
   productEntity: ADTSSmokeGrenade
   cost:
-    Telecrystal: 4
+    Telecrystal: 2
   categories:
   - UplinkExplosives
 
@@ -235,7 +235,7 @@
   description: uplink-SmokeGrenadeBundle-desc
   productEntity: ADTClothingBackpackDuffelSsmokeGrenade
   cost:
-    Telecrystal: 18
+    Telecrystal: 8
   categories:
   - UplinkBundles
   conditions:
@@ -247,3 +247,18 @@
       blacklist:
         components:
           - SurplusBundle
+
+- type: listing
+  id: ADTUplinkSyndieADTTritiumGrenades
+  name: uplink-tritiumgrenades-name
+  description: uplink-tritiumgrenades-desc
+  productEntity: ADTTritiumGrenades
+  cost:
+    Telecrystal: 6
+  categories:
+  - UplinkExplosives
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink

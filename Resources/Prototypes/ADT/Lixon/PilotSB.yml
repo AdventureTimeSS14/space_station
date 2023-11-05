@@ -13,6 +13,6 @@
     belt: ClothingBeltSecurityFilled
     Hands: ClothingHandsGlovesFingerless
     pocket2: ClothingOuterWinterSec
-  innerclothingskirt: ClothingUniformJumpskirtSec
+  innerClothingSkirt: ClothingUniformJumpskirtSec
   satchel: ClothingBackpackSatchelSecurityFilled
   duffelbag: ClothingBackpackDuffelSecurityFilled

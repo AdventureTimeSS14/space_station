@@ -43,6 +43,6 @@
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponRevolverDeckard
-  innerclothingskirt: ClothingUniformJumpskirtSeniorOfficer
+  innerClothingSkirt: ClothingUniformJumpskirtSeniorOfficer
   satchel: ADTClothingBackpackSatchelSeniorSecurityFilled
   duffelbag: ADTClothingBackpackDuffelSeniorSecurityFilled

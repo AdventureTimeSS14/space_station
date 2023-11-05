@@ -29,6 +29,22 @@
   - UniformPrinterMachineCircuitboard
 
 - type: technology
+  id:  ColorLightTech
+  name: research-technology-light-tech
+  icon:
+    sprite: ADT/Objects/Specific/light.rsi
+    state: icon
+  discipline: CivilianServices
+  tier: 1
+  cost: 1000
+  recipeUnlocks:
+  - LedLightTubeViolet
+  - LedLightTubeYellow
+  - LedLightTubeBlue
+  - LedLightTubeRed
+  - LedLightTubeGreen
+
+- type: technology
   id: Hydroponics
   name: research-technology-basic-hydroponics
   icon:

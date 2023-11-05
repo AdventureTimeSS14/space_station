@@ -7,7 +7,9 @@
   - type: EnergySword
     litDamageBonus:
         types:
-            Slash: 30
+            Slash: 15
+            Heat: 15
+            Structural: 4
             Blunt: -4.5
     litDisarmMalus: 0.6
   - type: Sprite
@@ -20,6 +22,7 @@
         shader: unshaded
         map: [ "blade" ]
   - type: MeleeWeapon
+    wideAnimationRotation: -135
     attackRate: 1
     soundHit:
       path: /Audio/Weapons/eblade1.ogg
@@ -27,7 +30,7 @@
       types:
         Blunt: 4.5
   - type: Item
-    size: 5
+    size: Small
     sprite: Objects/Weapons/Melee/e_sword.rsi
   - type: UseDelay
     delay: 1.0
@@ -55,7 +58,7 @@
 - type: entity
   name: pen
   parent: EnergySword
-  id: EnergyDagger 
+  id: EnergyDagger
   suffix: E-Dagger
   description: 'A dark ink pen.'
   components:
@@ -63,7 +66,8 @@
     secret: true
     litDamageBonus:
         types:
-            Slash: 20
+            Slash: 9
+            Heat: 9
             Blunt: -1
     litDisarmMalus: 0.4
     activateSound: !type:SoundPathSpecifier
@@ -84,13 +88,14 @@
         shader: unshaded
         map: [ "blade" ]
   - type: MeleeWeapon
+    wideAnimationRotation: -135
     attackRate: 1
     hidden: true
     damage:
       types:
         Blunt: 1
   - type: Item
-    size: 2
+    size: Tiny
     sprite: Objects/Weapons/Melee/e_dagger.rsi
   - type: UseDelay
     delay: 1.0
@@ -142,7 +147,8 @@
     secret: true
     litDamageBonus:
         types:
-            Slash: 16
+            Slash: 7.5
+            Heat: 7.5
             Blunt: -1
     litDisarmMalus: 0.6
   - type: Sprite
@@ -155,7 +161,7 @@
         shader: unshaded
         map: [ "blade" ]
   - type: Item
-    size: 5
+    size: Small
     sprite: Objects/Weapons/Melee/e_cutlass.rsi
 
 - type: entity
@@ -165,16 +171,17 @@
   description: Syndicate Command Interns thought that having one blade on the energy sword was not enough. This can be stored in pockets.
   components:
   - type: Wieldable
-    wieldTime: 0
   - type: EnergySword
     litDamageBonus:
         types:
-            Slash: 30
+            Slash: 15
+            Heat: 15
+            Structural: 30
             Blunt: -4.5
-            Structural: 35
     litDisarmMalus: 0.7
   - type: MeleeWeapon
-    attackRate: 1.15
+    wideAnimationRotation: -100
+    attackRate: 1.35
     angle: 80
     soundHit:
       path: /Audio/Weapons/eblade1.ogg
@@ -191,9 +198,11 @@
         shader: unshaded
         map: [ "blade" ]
   - type: Item
-    size: 10
+    size: Small
     sprite: Objects/Weapons/Melee/e_sword_double.rsi
   - type: Reflect
     enabled: true
     reflectProb: .55
     spread: 75
+  - type: UseDelay
+    delay: 1

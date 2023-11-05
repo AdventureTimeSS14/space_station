@@ -109,10 +109,7 @@
   #- type: GhostTakeoverAvailable
   - type: SiliconLawBound
   - type: SiliconLawProvider
-    laws:
-    - Drone1
-    - Drone2
-    - Drone3
+    laws: Drone
   - type: MovementSpeedModifier
     baseWalkSpeed : 5
     baseSprintSpeed : 5
@@ -287,6 +284,8 @@
       cell_slot:
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
+  - type: RandomMetadata
+    nameSegments: [names_borg]
 
 - type: entity
   id: PlayerBorgBattery
@@ -302,6 +301,7 @@
       cell_slot:
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
+
 #adt moment
 - type: entity
   id: ADTPlayerBorgMining
@@ -398,4 +398,3 @@
       cell_slot:
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
-

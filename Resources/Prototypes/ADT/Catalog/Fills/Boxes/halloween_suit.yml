@@ -13,7 +13,9 @@
   - type: Item
     size: 100
   - type: Storage
-    capacity: 100
+    maxItemSize: Size100
+    maxTotalWeight: 0
+    maxSlots: 50 #By this ignore maxTotalWeight
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -129,7 +131,7 @@
   - type: Item
     size: 125
   - type: Storage
-    capacity: 125
+    maxItemSize: Ginormous
   - type: StorageFill
     contents:
     - id: BaseBallBat
@@ -209,7 +211,7 @@
   - type: Item
     size: 125
   - type: Storage
-    capacity: 125
+    maxItemSize: Ginormous
   - type: StorageFill
     contents:
     - id: ADTDudeShirt
@@ -391,7 +393,7 @@
     contents:
     - id: ADTXenomorphSuit
       amount: 3
-    - id: ADTClothingHeadXenomorph 
+    - id: ADTClothingHeadXenomorph
       amount: 3
 
 - type: entity
@@ -509,3 +511,82 @@
     - id: ADTFoodSnackCandyGreen
     - id: ADTFoodSnackCandyMine
     - id: ADTFoodSnackCandyRed
+
+- type: entity
+  id: ADTPayDayBox
+  parent: ADTBoxNightmareClown
+  name: police-superstar box
+  description: police-superstar box
+  suffix: Halloweeen
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Storage/halloween_box.rsi
+    state: payday
+    #layers:
+    #- state: base
+    #- state: harry
+  - type: StorageFill
+    contents:
+    - id: ADTPayDayChainsMask
+      amount: 1
+    - id: ADTPayDayDallasMask
+      amount: 1
+    - id: ADTPayDayHoustonMask
+      amount: 1
+    - id: ADTPayDayWolfMask
+      amount: 1
+    - id: ClothingShoesBootsLaceup
+      amount: 4
+    - id: ClothingUniformJumpsuitLawyerGood
+      amount: 1
+    - id: ClothingUniformJumpsuitLawyerBlue
+      amount: 1
+    - id: ClothingUniformJumpsuitLawyerRed
+      amount: 1
+    - id: ClothingUniformJumpsuitLawyerBlack
+      amount: 1
+    - id: ClothingHandsGlovesNitrile
+      amount: 4
+
+- type: entity
+  id: ADTChainSawManBox
+  parent: ADTBoxNightmareClown
+  name: police-superstar box
+  description: police-superstar box
+  suffix: Halloweeen
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Storage/halloween_box.rsi
+    state: chainsaw
+    #layers:
+    #- state: base
+    #- state: harry
+  - type: StorageFill
+    contents:
+    - id: ADTClothingHeadHatChainSaw
+      amount: 1
+    - id: ADTJumpsuitHunterDemon
+      amount: 1
+    - id: ClothingShoesColorRed
+      amount: 1
+
+- type: entity
+  id: ADTMichaelMyersBox
+  parent: ADTBoxNightmareClown
+  name: michael myers box
+  description: michael myers box
+  suffix: Halloweeen
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Storage/halloween_box.rsi
+    state: michael
+    #layers:
+    #- state: base
+    #- state: harry
+  - type: StorageFill
+    contents:
+    - id: ADTMichaelMyersMask
+      amount: 1
+    - id: ADTHalloweenMichaelMyersSuit
+      amount: 1
+

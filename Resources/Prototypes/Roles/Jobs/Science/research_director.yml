@@ -39,6 +39,6 @@
     underwearb: ClothingUnderwearBottomBoxersRD # Sirena-Underwear
   underweart: ClothingUnderwearTopBraRD # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesRD # Sirena-Underwear
-  innerclothingskirt: ClothingUniformJumpskirtResearchDirector
+  innerClothingSkirt: ClothingUniformJumpskirtResearchDirector
   satchel: ClothingBackpackSatchelResearchDirectorFilled
   duffelbag: ClothingBackpackDuffelResearchDirectorFilled

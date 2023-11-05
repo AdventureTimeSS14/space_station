@@ -89,14 +89,3 @@
   cost: 500
   category: Engineering
   group: market
-
-#ADT
-- type: cargoProduct
-  id: EngineIndastrialSMES
-  icon:
-    sprite: ADT/Structures/Power/smes.rsi
-    state: smes
-  product: CrateEngineeringIndustrialSMES
-  cost: 20000
-  category: Engineering
-  group: market

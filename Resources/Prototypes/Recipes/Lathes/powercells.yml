@@ -25,3 +25,14 @@
     Glass: 400
     Plastic: 200
     Gold: 50
+    #ADT
+- type: latheRecipe
+  id: ADTPowerCellHyper
+  result: PowerCellHyperPrinted
+  completetime: 10
+  materials:
+    Steel: 500
+    Glass: 500
+    Plastic: 300
+    Gold: 100
+    Plasma: 100

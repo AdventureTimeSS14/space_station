@@ -117,3 +117,72 @@
       coefficients:
         Piercing: 0.95
         Heat: 0.95
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ADTMichaelMyersMask
+  name: Michael Myers mask
+  description: Michael Myers mask
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Mask/michael_myersmask.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Mask/michael_myersmask.rsi
+    clothingVisuals:
+      mask:
+      - state: equipped-MASK
+  - type: BreathMask
+
+# PayDay2 mask
+- type: entity
+  parent: ClothingMaskBase
+  id: ADTPayDayChainsMask
+  name: squid game worker mask
+  description: squid game worker mask
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Mask/payday_chains.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Mask/payday_chains.rsi
+  - type: BreathMask
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ADTPayDayDallasMask
+  name: squid game worker mask
+  description: squid game worker mask
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Mask/payday_dallas.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Mask/payday_dallas.rsi
+  - type: BreathMask
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ADTPayDayHoustonMask
+  name: squid game worker mask
+  description: squid game worker mask
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Mask/payday_houston.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Mask/payday_houston.rsi
+  - type: BreathMask
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ADTPayDayWolfMask
+  name: squid game worker mask
+  description: squid game worker mask
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Mask/payday_wolf.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Mask/payday_wolf.rsi
+  - type: BreathMask

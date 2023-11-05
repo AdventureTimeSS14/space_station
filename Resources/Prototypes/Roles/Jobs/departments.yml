@@ -6,6 +6,7 @@
   - CargoTechnician
   - Quartermaster
   - SalvageSpecialist
+  - ADTSupplyBorg
 
 - type: department
   id: Civilian
@@ -28,6 +29,8 @@
   - Reporter
   - Zookeeper
   - ServiceWorker
+  - ADTServiseBorg
+  - ADTJanitorBorg
 
 - type: department
   id: Command
@@ -56,6 +59,7 @@
   - SeniorEngineer
   - StationEngineer
   - TechnicalAssistant
+  - ADTEngiBorg
 
 - type: department
   id: Medical
@@ -69,6 +73,7 @@
   - Psychologist
   - Paramedic
   - SeniorPhysician
+  - ADTMedicalBorg
 
 - type: department
   id: Security

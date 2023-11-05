@@ -44,3 +44,7 @@ ent-CrateVendingMachineRestockHappyHonk = { ent-CrateVendingMachineRestockHappyH
     .desc = { ent-CrateVendingMachineRestockHappyHonkFilled.desc }
 ent-CrateVendingMachineRestockChemVend = { ent-CrateVendingMachineRestockChemVendFilled }
     .desc = { CrateVendingMachineRestockChemVendFilled.desc }
+ent-CrateVendingMachineRestockCondimentStation = ящик пополнения Островка соусов
+    .desc = Содержит в себе набор для пополнения Островка соусов.
+ent-CrateVendingMachineRestockChefvend = ящик пополнения Шефвенда
+    .desc = Содержит в себе набор для пополнения Шефвенда.

@@ -3,11 +3,6 @@
   name: job-name-technical-assistant
   description: job-description-technical-assistant
   playTimeTracker: JobTechnicalAssistant
-  #requirements:
-  #  - !type:DepartmentTimeRequirement
-  #    department: Engineering
-  #    time: 54000 #15 hrs
-  #    inverted: true # stop playing intern if you're good at engineering!
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 14400 #4 hrs
@@ -32,6 +27,6 @@
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
-  innerclothingskirt: ClothingUniformJumpskirtColorYellow
+  innerClothingSkirt: ClothingUniformJumpskirtColorYellow
   satchel: ClothingBackpackSatchelEngineeringFilled
   duffelbag: ClothingBackpackDuffelEngineeringFilled

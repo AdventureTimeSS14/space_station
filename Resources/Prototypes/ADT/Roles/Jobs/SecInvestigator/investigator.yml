@@ -42,6 +42,6 @@
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
   underweart: ClothingUnderwearTopBraSportsAlternative # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
-  innerclothingskirt: ADTClothingUniformInvestigatorSuit
+  innerClothingSkirt: ADTClothingUniformInvestigatorSuit
   satchel: ADTClothingBackpackSatchelInvestigatorFilled
   duffelbag: ADTClothingBackpackDuffelInvestigatorFilled

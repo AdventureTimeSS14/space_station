@@ -22,6 +22,7 @@
         amount: 2
       - id: BungoSeeds
         amount: 2
+      - id: ADTcannabiswhiteSeeds
 
 - type: entity
   id: CrateHydroponicsSeedsMedicinal
@@ -39,6 +40,7 @@
         amount: 3
       - id: PoppySeeds
         amount: 3
+      - id: ADTcannabiswhiteSeeds
 
 - type: entity
   id: CrateHydroponicsTools
@@ -82,6 +84,7 @@
       - id: SoybeanSeeds
       - id: GrapeSeeds
       - id: WatermelonSeeds
+      - id: PeaSeeds
       - id: CocoaSeeds
       - id: ADTBuckwheatSeeds
       - id: ADTPumpkinSeeds

@@ -363,3 +363,13 @@
   - type: Sprite
     sprite: ADT/Objects/Fun/toys.rsi
     state: plushie_uma
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieTimrika
+  name: Timrika plushie
+  description: It looks like a soft, cute and woolly tyaranka! However, bone drawings have their own history.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_timrika

@@ -36,13 +36,16 @@
   onlyWhitelisted: true
   points:
     Hair:
-      points: 10
+      points: 1
+      required: false
+    FacialHair:
+      points: 1
       required: false
     Chest:
       points: 1
       required: false
     Tail:
-      points: 1
+      points: 2
       required: false
     Head:
       points: 3

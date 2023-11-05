@@ -43,7 +43,7 @@
     neck: ClothingNeckLawyerbadge
     pocket1: RubberStampMagistrat
     pocket2: ADTtelescopicBaton
-  innerclothingskirt: ClothingUniformJumpsuitLawyerBlack
+  innerClothingSkirt: ClothingUniformJumpsuitLawyerBlack
   satchel: ClothingBackpackSatchel
   duffelbag: ClothingBackpackDuffel
 

@@ -1,0 +1,306 @@
+- type: entity
+  parent: BaseMobFlesh
+  id: ADTMobDistorted
+  name: distorted
+  description: distorted
+  suffix: DO NOT MAP
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: ADT/Mobs/Aliens/abomination.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: distorted
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: distorted
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 6
+  #- type: Damageable
+  #  damageContainer: Biological
+  #  damageModifierSet: distorted
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.4
+    baseSprintSpeed: 4.4
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Dead
+
+- type: entity
+  parent: BaseMobFlesh
+  id: ADTMobEcho
+  name: echo
+  description: echo
+  suffix: DO NOT MAP
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: ADT/Mobs/Aliens/abomination.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: echo
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: echo
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 4
+  #- type: Damageable
+  #  damageContainer: Biological
+  #  damageModifierSet: echo
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3.0
+    baseSprintSpeed: 4.7
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      95: Dead
+
+- type: entity
+  parent: BaseMobFlesh
+  id: ADTMobGrant
+  name: grant
+  description: grant
+  suffix: DO NOT MAP
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: ADT/Mobs/Aliens/abomination.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: grant
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: grant
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 10
+        Poison: 5
+  #- type: Damageable
+  #  damageContainer: Biological
+  #  damageModifierSet: grant
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.2
+    baseSprintSpeed: 3.7
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Dead
+
+- type: entity
+  parent: BaseMobFlesh
+  id: ADTMobHunter
+  name: hunter
+  description: hunter
+  suffix: DO NOT MAP
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: ADT/Mobs/Aliens/abom_wrecker.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: hunter
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: hunter
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 12
+  #- type: Damageable
+  #  damageContainer: Biological
+  #  damageModifierSet: hunter
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3.2
+    baseSprintSpeed: 4.75
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      300: Dead
+
+- type: entity
+  parent: BaseMobFlesh
+  id: ADTMobSoldier
+  name: soldier
+  description: soldier
+  suffix: DO NOT MAP
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: ADT/Mobs/Aliens/abomination.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: soldier
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: soldier
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 4
+  #- type: Damageable
+  #  damageContainer: Biological
+  #  damageModifierSet: soldier
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.7
+    baseSprintSpeed: 4.3
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Dead
+
+- type: entity
+  parent: BaseMobFlesh
+  id: ADTMobWrecker
+  name: wrecker
+  description: wrecker
+  suffix: DO NOT MAP
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: ADT/Mobs/Aliens/abom_wrecker.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: wrecker
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: wrecker
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 15
+  #- type: Damageable
+  #  damageContainer: Biological
+  #  damageModifierSet: wrecker
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.2
+    baseSprintSpeed: 3.5
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      600: Dead
+
+#- type: damageModifierSet
+#  id: distorted
+#  coefficients:
+#    Blunt: 1
+#    Piercing: 1
+#    Slash: 1.0
+#    Cold: 0.5
+#    Heat: 0.5
+#    Poison: 0.5
+#    Bloodloss: 1
+
+#- type: damageModifierSet
+#  id: echo
+#  coefficients:
+#    Blunt: 1
+#    Piercing: 1
+#    Slash: 0.4
+#    Cold: 0.6
+#    Heat: 0.6
+#    Poison: 1.0
+#    Bloodloss: 1
+
+#- type: damageModifierSet
+#  id: grant
+#  coefficients:
+#    Blunt: 0.5
+#    Piercing: 0.7
+#    Slash: 0.5
+#    Cold: 0.7
+#    Heat: 0.7
+#    Poison: 0.7
+#    Bloodloss: 1
+
+#- type: damageModifierSet
+#  id: hunter
+#  coefficients:
+#    Blunt: 0.45
+#    Piercing: 0.6
+#    Slash: 0.45
+#    Cold: 0.6
+#    Heat: 0.45
+#    Poison: 0.6
+#    Bloodloss: 1
+
+#- type: damageModifierSet
+#  id: soldier
+#  coefficients:
+#    Blunt: 0.8
+#    Piercing: 0.8
+#    Slash: 0.8
+#    Cold: 0.8
+#    Heat: 0.8
+#    Poison: 0.8
+#    Bloodloss: 1
+
+#- type: damageModifierSet
+#  id: wrecker
+#  coefficients:
+#    Blunt: 0.4
+#    Piercing: 0.55
+#    Slash: 0.4
+#    Cold: 0.55
+#    Heat: 0.65
+#    Poison: 0.55
+#    Bloodloss: 1

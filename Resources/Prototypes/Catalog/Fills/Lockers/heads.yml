@@ -6,6 +6,7 @@
   - type: StorageFill
     contents:
       - id: ClothingNeckCloakQm
+      - id: BoxFolderQmClipboard
       - id: ClothingHeadsetCargo
       - id: ClothingHandsGlovesColorBrown
       - id: CargoRequestComputerCircuitboard
@@ -21,9 +22,7 @@
       - id: BoxEncryptionKeyCargo
       - id: ADTtelescopicBaton
       # Sirena-Underwear-Start
-      - id: ClothingUnderwearBottomBoxersQM
-      - id: ClothingUnderwearBottomPantiesQM
-      - id: ClothingUnderwearTopBraQM
+      - id: ADTUnderwearBoxQM
       # Sirena-Underwear-End
       - id: ADTQMJumpskirtWarm
       - id: ADTQMJumpsuitWarm
@@ -66,9 +65,7 @@
       - id: ClothingOuterCoatCaptain
       - id: ADTtelescopicBaton
       # Sirena-Underwear-Start
-      - id: ClothingUnderwearBottomBoxersCap
-      - id: ClothingUnderwearBottomPantiesCap
-      - id: ClothingUnderwearTopBraCap
+      - id: ADTUnderwearBoxCap
       # Sirena-Underwear-End
 
 - type: entity
@@ -104,6 +101,9 @@
       - id: MedalCase
       - id: ClothingHeadHatCapcap
       - id: ADTtelescopicBaton
+      # Sirena-Underwear-Start
+      - id: ADTUnderwearBoxCap
+      # Sirena-Underwear-End
       # Corvax-Resprite-Start
       - id: ClothingHeadCaptainHat
       - id: ClothingOuterCoatCaptain
@@ -143,12 +143,10 @@
       - id: AccessConfigurator
       - id: ADTClothingNeckHoPAltCloak # ADT-Resprite
       # Sirena-Underwear-Start
-      - id: ClothingUnderwearBottomBoxersHOP
-      - id: ClothingUnderwearBottomPantiesHOP
-      - id: ClothingUnderwearTopBraHOP
+      - id: ADTUnderwearBoxHOP
+      # Sirena-Underwear-End
       - id: ADTHOPJumpskirtWarm
       - id: ADTHOPJumpsuitWarm
-      # Sirena-Underwear-End
 
 - type: entity
   id: LockerChiefEngineerFilledHardsuit
@@ -179,9 +177,7 @@
       - id: BoxEncryptionKeyEngineering
       - id: AccessConfigurator
       # Sirena-Underwear-Start
-      - id: ClothingUnderwearBottomBoxersCE
-      - id: ClothingUnderwearBottomPantiesCE
-      - id: ClothingUnderwearTopBraCE
+      - id: ADTUnderwearBoxCE
       # Sirena-Underwear-End
 
 - type: entity
@@ -207,9 +203,7 @@
       - id: BoxEncryptionKeyEngineering
       - id: AccessConfigurator
       # Sirena-Underwear-Start
-      - id: ClothingUnderwearBottomBoxersCE
-      - id: ClothingUnderwearBottomPantiesCE
-      - id: ClothingUnderwearTopBraCE
+      - id: ADTUnderwearBoxCE
       # Sirena-Underwear-End
       - id: ADTCEJumpskirtWarm
       - id: ADTCEJumpsuitWarm
@@ -247,9 +241,7 @@
       - id: TrackingImplanter
         amount: 2
       # Sirena-Underwear-Start
-      - id: ClothingUnderwearBottomBoxersCMO
-      - id: ClothingUnderwearBottomPantiesCMO
-      - id: ClothingUnderwearTopBraCMO
+      - id: ADTUnderwearBoxCMO
       # Sirena-Underwear-End
 
 
@@ -286,9 +278,7 @@
       - id: NitrousOxideTankFilled
       - id: BoxEncryptionKeyMedical
       # Sirena-Underwear-Start
-      - id: ClothingUnderwearBottomBoxersCMO
-      - id: ClothingUnderwearBottomPantiesCMO
-      - id: ClothingUnderwearTopBraCMO
+      - id: ADTUnderwearBoxCMO
       # Sirena-Underwear-End
 
 - type: entity
@@ -315,9 +305,7 @@
       - id: BoxEncryptionKeyScience
       - id: BoxEncryptionKeyRobo
       # Sirena-Underwear-Start
-      - id: ClothingUnderwearBottomBoxersRD
-      - id: ClothingUnderwearBottomPantiesRD
-      - id: ClothingUnderwearTopBraRD
+      - id: ADTUnderwearBoxRD
       # Sirena-Underwear-End
 
 - type: entity
@@ -343,9 +331,7 @@
       - id: BoxEncryptionKeyScience
       - id: BoxEncryptionKeyRobo
       # Sirena-Underwear-Start
-      - id: ClothingUnderwearBottomBoxersRD
-      - id: ClothingUnderwearBottomPantiesRD
-      - id: ClothingUnderwearTopBraRD
+      - id: ADTUnderwearBoxRD
       # Sirena-Underwear-End
 
 - type: entity
@@ -390,9 +376,7 @@
       - id: WeaponRevolverUnica #ADTrevolver
       - id: ADTWeaponPistolX01 #ADTmultiphase
       # Sirena-Underwear-Start
-      - id: ClothingUnderwearBottomBoxersHOS
-      - id: ClothingUnderwearBottomPantiesHOS
-      - id: ClothingUnderwearTopBraHOS
+      - id: ADTUnderwearBoxHOS
       # Sirena-Underwear-End
       - id: BookBusido # Corvax-Books
 
@@ -443,9 +427,6 @@
       - id: WeaponRevolverUnica #ADTrevolver
       - id: ADTWeaponPistolX01 #ADTmultiphase
       # Sirena-Underwear-Start
-      - id: ClothingUnderwearBottomBoxersHOS
-      - id: ClothingUnderwearBottomPantiesHOS
-      - id: ClothingUnderwearTopBraHOS
-      - id: ClothingUnderwearTopBraHOS
+      - id: ADTUnderwearBoxHOS
       # Sirena-Underwear-End
 
