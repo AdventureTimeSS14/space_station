@@ -1,0 +1,33 @@
+- type: entity
+  id: ADTCrateFunAdminPlushie
+  parent: CrateGenericSteel
+  components:
+  - type: StorageFill
+    contents:
+      - id: ADTPlushieAidan
+      - id: ADTPlushieJessie
+      - id: ADTPlushieAbigail
+      - id: ADTPlushieAyus
+      - id: ADTPlushieBob
+      - id: ADTPlushieEvgeniy
+      - id: ADTPlushieFries
+      - id: ADTPlushieIlumi
+      - id: ADTPlushieJan
+      - id: ADTPlushieJason
+      - id: ADTPlushieKus
+      - id: ADTPlushieLilit
+      - id: ADTPlushieLuke
+      - id: ADTPlushieLya
+      - id: ADTPlushieNova
+      - id: ADTPlushiePeter
+      - id: ADTPlushieRebecca
+      - id: ADTPlushieSchrodinger
+      - id: ADTPlushieTerenty
+      - id: ADTPlushieUvarov
+      - id: ADTPlushieValtor
+      - id: ADTPlushieWalter
+      - id: ADTPlushieIohan
+      - id: ADTPlushieDarina
+      - id: ADTPlushieAkula
+      - id: ADTPlushiePrazat
+      - id: ADTPlushieLo
