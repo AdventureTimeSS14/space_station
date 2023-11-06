@@ -5,3 +5,11 @@
   components:
   - type: Stomach
     maxVol: 50
+
+- type: entity
+  id: OrganNovakidLungs
+  parent: OrganHumanLungs
+  suffix: "novakid"
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Novakid ]

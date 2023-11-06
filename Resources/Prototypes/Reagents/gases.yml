@@ -17,6 +17,10 @@
       - !type:Oxygenate
         conditions:
         - !type:OrganType
+          type: Novakid
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
           type: Animal
       - !type:Oxygenate
         conditions:
@@ -62,12 +66,44 @@
     Gas:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Novakid
+          shouldHave: false
+        - !type:ReagentThreshold
+          reagent: Plasma
+          min: 1
+        ignoreResistances: true
+        damage:
+          types:
+            Poison: 1
+      - !type:ChemVomit
+        probability: 0.12
+        conditions:
+        - !type:OrganType
+          type: Novakid
+          shouldHave: false
+        - !type:ReagentThreshold
+          reagent: Plasma
+          min: 0.8
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Novakid
+        - !type:ReagentThreshold
+          reagent: Plasma
+          min: 0.6
         scaleByQuantity: true
         ignoreResistances: true
         damage:
           types:
-            Poison:
-              1
+            Blunt: -2
+            Slash: -2
+            Piercing: -2
+            Brute: -2
+            Burn: -2
+            Heat: -1
+            Poison: -1
       # Cant be added until I add metabolism effects on reagent removal
       #- !type:AdjustAlert
       #  alertType: Toxins

@@ -14,7 +14,7 @@
       part: TorsoNovakid
       organs:
         heart: OrganAnimalHeart
-        lungs: OrganHumanLungs
+        lungs: OrganNovakidLungs
         stomach: OrganNovakidStomach
         liver: OrganAnimalLiver
         kidneys: OrganHumanKidneys
