@@ -151,3 +151,32 @@
   - type: Fiber
     fiberMaterial: fibers-synthetic
   - type: FingerprintMask
+
+ # Перчатки уборщика
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsGlovesJanitor
+  name: latex gloves
+  description: Thin sterile latex gloves. Basic PPE for any doctor.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/janitor_groves.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/janitor_groves.rsi
+  - type: Fiber
+    fiberMaterial: fibers-latex
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsGlovesBoxingRed
+  id: ADTClothingHandsGlovesBlackDams
+  name: red gloves for martial arts
+  description: red gloves for martial arts
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/blackdams_gloves.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/blackdams_gloves.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic

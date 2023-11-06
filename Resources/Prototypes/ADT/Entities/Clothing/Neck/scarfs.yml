@@ -41,3 +41,14 @@
     sprite: ADT/Clothing/Neck/blackfurtape.rsi
   - type: Clothing
     sprite: ADT/Clothing/Neck/blackfurtape.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckChefPovarFio
+  name:  pink fur tape
+  description: This fur tape ideal set in your garderobe
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/chefpovarfio.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Neck/chefpovarfio.rsi

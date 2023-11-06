@@ -500,3 +500,15 @@
     sprite: ADT/Clothing/Uniforms/Jumpskirt/black_short_dress.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/black_short_dress.rsi
+
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformShortDressBlackGold
+  name: Rose white wedding dress
+  description: Specially for a princess!
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/shortdressblackgold.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/shortdressblackgold.rsi
