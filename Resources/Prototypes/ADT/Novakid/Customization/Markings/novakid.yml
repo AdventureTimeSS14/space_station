@@ -180,7 +180,7 @@
     state: supernova
 
 - type: marking
-  id: NovakidHair20
+  id: NovakidHair21
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [NovakidSpecies]
@@ -189,7 +189,7 @@
     state: universal_style
 
 - type: marking
-  id: NovakidHair20
+  id: NovakidHair22
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [NovakidSpecies]
