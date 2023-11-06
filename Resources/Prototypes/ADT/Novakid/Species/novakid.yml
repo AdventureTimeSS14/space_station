@@ -24,7 +24,6 @@
     Chest: MobNovakidTorso
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
-    Tail: MobNovakidTail
     Eyes: MobHumanoidEyes
     LArm: MobNovakidLArm
     RArm: MobNovakidRArm
@@ -149,9 +148,3 @@
   baseSprite:
     sprite: ADT/Mobs/Novakid/parts.rsi
     state: r_foot
-
-- type: humanoidBaseSprite
-  id: MobNovakidTail
-  baseSprite:
-    sprite: ADT/Mobs/Novakid/parts.rsi
-    state: tail
