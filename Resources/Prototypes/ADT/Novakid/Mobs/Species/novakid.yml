@@ -79,6 +79,17 @@
         visualType: Large
         messages: [ "novakid-hurt-by-water-popup" ]
         probability: 0.25
+    - reagents: [ Plasma ]
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaled: true
+        damage:
+          types:
+            Blunt: 5
+            Slash: 5
+            Piercing: 5
+            Heat: 5
   - type: MobThresholds
     thresholds:
       0: Alive
