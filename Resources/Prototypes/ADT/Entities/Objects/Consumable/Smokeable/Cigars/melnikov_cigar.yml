@@ -12,7 +12,7 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 80
+        maxVol: 45
         reagents:
           - ReagentId: Nicotine
             Quantity: 40
@@ -23,7 +23,7 @@
   id: ADTMelnikovCigar
   parent: BaseMelnikovCigar
   name: Сигара Алексея Мельникова
-  description: Кому вообще пришло в голову называть сигареты чьим-то именем?
+  description: Кому вообще пришло в голову называть сигары чьим-то именем?
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigars/cigar-gold.rsi
@@ -33,7 +33,7 @@
     slots: [ mask ]
     equippedPrefix: unlit
   - type: Item
-    size: 1
+    size: Tiny
 
 - type: entity
   id: ADTBaseMelnikovCigarSpent
