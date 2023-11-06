@@ -12,7 +12,7 @@
           map: [ "enabled" ]
   - type: Item
     sprite: ADT/Objects/Misc/minifire_extinguisher.rsi
-    size: 5
+    size: Small
   - type: SolutionContainerManager
     solutions:
       spray:
