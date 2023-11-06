@@ -28,4 +28,8 @@ ent-ADTClothingNeckSyndicateCloak = плащ Синдиката
 
 ent-ADTClothingNeckNukeOpsCloak = плащ Ядерных Оперативников
     .desc = Согреет вас холодными вечерами на базе Ядерных Оперативников.
-    .suffix = { "" }    
+    .suffix = { "" }
+
+ent-ADTClothingNeckMantiesChaplain = Мантия священника
+    .desc = Черная мантия священника.
+    .suffix = { "" }

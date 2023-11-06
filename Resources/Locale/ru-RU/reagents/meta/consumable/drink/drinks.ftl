@@ -54,3 +54,5 @@ reagent-name-the-martinez = Мартинес
 reagent-desc-the-martinez = Легенда среди киберпанков. Вспоминается по напитку, забывается по пьяни.
 reagent-name-white-gilgamesh = белый Гильгамеш
 reagent-desc-white-gilgamesh = Тошнотворная смесь молока и пива. Вызывает ощущение одеревенелости.
+reagent-name-kvass = квас
+reagent-desc-kvass = Традиционный славянский и балтский кислый напиток, который готовят на основе брожения из муки и солода.
