@@ -200,7 +200,7 @@
     soundForce: true
   - type: StunOnCollide
     stunAmount: 1
-    knockdownAmount: 0.5
+    knockdownAmount: 1
   #- type: StaminaDamageOnCollide
   #  damage: 100
 
