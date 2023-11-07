@@ -26,6 +26,9 @@
       Male: MaleHuman
       Female: FemaleHuman
       Unsexed: FemaleHuman
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Demon # Потому что. Я зол, эта штука ломала мне мозг на протяжении двух часов, пока я искал ошибку >:c
   - type: MeleeWeapon
     hidden: true
     soundHit:
