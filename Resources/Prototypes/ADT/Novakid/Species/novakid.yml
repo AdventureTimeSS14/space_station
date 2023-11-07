@@ -47,7 +47,8 @@
       defaultMarkings: [ NovakidFace1 ]
     Chest:
       points: 1
-      required: false
+      required: true
+      defaultMarkings: [ NovakidOverlay ]
     Tail:
       points: 1
       required: false

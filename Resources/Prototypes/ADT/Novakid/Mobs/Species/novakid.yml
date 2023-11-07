@@ -8,6 +8,7 @@
   - type: HumanoidAppearance
     species: NovakidSpecies
   - type: Hunger
+  - type: ZombieImmune
   - type: Thirst
   - type: Icon
     sprite: ADT/Mobs/Novakid/parts.rsi

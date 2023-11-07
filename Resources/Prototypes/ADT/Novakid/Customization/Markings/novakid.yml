@@ -359,12 +359,13 @@
   - sprite: ADT/Mobs/Novakid/custom.rsi
     state: zeta
 
-# - type: marking
-#   id: NovakinOverlay
-#   bodyPart: Chest, Head
-#   markingCategory: Chest
-#   speciesRestriction: [NovakidSpecies]
-#   forcedColoring: true
-#   sprites:
-#     - sprite: ADT/Mobs/Novakid/custom.rsi
-#       state: base_novakid_defolt
+- type: marking
+  id: NovakidOverlay
+  bodyPart: Chest, Head
+  markingCategory: Chest
+  speciesRestriction: [NovakidSpecies]
+  forcedColoring: true
+  color: ffffff
+  sprites:
+    - sprite: ADT/Mobs/Novakid/custom.rsi
+      state: base_novakid_defolt

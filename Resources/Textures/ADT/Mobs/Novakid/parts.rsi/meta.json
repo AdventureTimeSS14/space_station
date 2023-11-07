@@ -8,12 +8,10 @@
     },
     "states": [
         {
-            "name": "full_f",
-            "directions": 4
+            "name": "full_f"
         },
         {
-            "name": "full_m",
-            "directions": 4
+            "name": "full_m"
         },
         {
             "name": "head_f",
@@ -66,9 +64,6 @@
         {
             "name": "torso_m",
             "directions": 4
-        },
-        {
-            "name": "dead"
         }
     ]
 }
