@@ -22,7 +22,6 @@
         amount: 2
       - id: BungoSeeds
         amount: 2
-      - id: ADTcannabiswhiteSeeds
 
 - type: entity
   id: CrateHydroponicsSeedsMedicinal
@@ -41,6 +40,7 @@
       - id: PoppySeeds
         amount: 3
       - id: ADTcannabiswhiteSeeds
+        prob: 0.2
 
 - type: entity
   id: CrateHydroponicsTools
