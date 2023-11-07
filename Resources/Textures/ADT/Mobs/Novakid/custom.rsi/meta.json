@@ -163,14 +163,17 @@
         {
             "name": "ye",
             "directions": 4
-        }
-        ,
+        },
         {
             "name": "zeta",
             "directions": 4
         },
         {
-            "name": "base_novakid_defolt",
+            "name": "head_novakid_defolt",
+            "directions": 4
+        },
+        {
+            "name": "torso_novakid_defolt",
             "directions": 4
         }
     ]

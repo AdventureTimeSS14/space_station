@@ -360,12 +360,41 @@
     state: zeta
 
 - type: marking
-  id: NovakidOverlay
-  bodyPart: Chest, Head
+  id: HeadNovakidDefolt
+  bodyPart: Head
+  markingCategory: HeadTop
+  speciesRestriction: [NovakidSpecies]
+  forcedColoring: true
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: ADT/Mobs/Novakid/custom.rsi
+    state: head_novakid_defolt
+
+- type: marking
+  id: TorsoNovakidDefolt
+  bodyPart: Chest
   markingCategory: Chest
   speciesRestriction: [NovakidSpecies]
   forcedColoring: true
-  color: ffffff
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
   sprites:
-    - sprite: ADT/Mobs/Novakid/custom.rsi
-      state: base_novakid_defolt
+  - sprite: ADT/Mobs/Novakid/custom.rsi
+    state: torso_novakid_defolt
+# - type: marking
+#   id: NovakidOverlay
+#   bodyPart: [ Head, Chest ]
+#   markingCategory: Overlay
+#   speciesRestriction: [NovakidSpecies]
+#   forcedColoring: true
+#   color: ffffff
+#   sprites:
+#     - sprite: ADT/Mobs/Novakid/custom.rsi
+#       state: base_novakid_defolt

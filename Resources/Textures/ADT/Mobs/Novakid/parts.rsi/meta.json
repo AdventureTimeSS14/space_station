@@ -22,10 +22,6 @@
             "directions": 4
         },
         {
-            "name": "head_t",
-            "directions": 4
-        },
-        {
             "name": "l_arm",
             "directions": 4
         },
