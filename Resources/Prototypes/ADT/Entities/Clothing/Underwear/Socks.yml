@@ -80,6 +80,6 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Under/broom.rsi
-  - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 1.2
+  #- type: ClothingSpeedModifier
+  #  walkModifier: 0.9
+  #  sprintModifier: 1.2

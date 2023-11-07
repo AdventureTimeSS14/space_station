@@ -4,6 +4,8 @@
   id: ADTWeaponSniperHristovII
   description: A portable anti-materiel rifle. Fires armor piercing 14.5mm shells. Uses .60 anti-materiel ammo upgraded by gorlax marodeurs.
   components:
+  - type: Item
+    size: Huge
   - type: Sprite
     sprite: ADT/Objects/Weapons/Guns/new_hristov.rsi
     layers:

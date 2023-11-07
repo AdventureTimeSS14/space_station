@@ -231,8 +231,8 @@
 
 - type: listing
   id: ADTUplinkSmokeBundle
-  name: uplink-SmokeGrenadeBundle-name
-  description: uplink-SmokeGrenadeBundle-desc
+  name: uplink-ssmokegrenade-bundle-name
+  description: uplink-ssmokegrenade-bundle-desc
   productEntity: ADTClothingBackpackDuffelSsmokeGrenade
   cost:
     Telecrystal: 8

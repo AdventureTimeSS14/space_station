@@ -15,3 +15,30 @@
       damage:
         types:
           Blunt: 5
+
+- type: entity
+  parent: BoxFolderBase
+  id: ADTInvestigatorBoxFolderBase
+  components:
+  - type: StorageFill
+    contents:
+      - id: PaperOffice
+        amount: 10
+
+- type: entity
+  parent: BoxFolderRed
+  id: ADTInvestigatorBoxFolderRed
+  components:
+  - type: StorageFill
+    contents:
+      - id: PaperOffice
+        amount: 10
+
+- type: entity
+  parent: BoxFolderBlue
+  id: ADTInvestigatorBoxFolderBlue
+  components:
+  - type: StorageFill
+    contents:
+      - id: PaperOffice
+        amount: 10

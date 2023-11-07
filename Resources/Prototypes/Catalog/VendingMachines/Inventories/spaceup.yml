@@ -1,7 +1,6 @@
 - type: vendingMachineInventory
   id: SpaceUpInventory
   startingInventory:
-    ADTDrinkHellEnergy: 5
     DrinkSpaceUpCan: 3
     DrinkSpaceMountainWindCan: 3
     DrinkGrapeCan: 2

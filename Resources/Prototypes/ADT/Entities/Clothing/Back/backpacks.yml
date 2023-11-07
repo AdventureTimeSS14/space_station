@@ -80,83 +80,79 @@
 #рюкзак следователя
 
 - type: entity
-  noSpawn: true
+  #noSpawn: true
   parent: ClothingBackpackSecurity
   id: ADTClothingBackpackInvestigatorFilled
   components:
-  - type: Storage
-    maxItemSize: Huge
-    maxTotalWeight: 0
-    maxSlots: 50 #By this ignore maxTotalWeight
+  #- type: Storage
+  #  maxItemSize: Huge
+  #  maxTotalWeight: 0
+  #  maxSlots: 50 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
       - id: BoxSurvivalSecurity
       - id: Flash
       - id: Pen
         amount: 2
-      - id: PaperOffice
-        amount: 20
-      - id: MaterialCardboard1
+      #- id: PaperOffice
+      #  amount: 20
+      - id: ADTInvestigatorBoxFolderBase
         amount: 2
-      - id: BoxFolderBase
+      - id: ADTInvestigatorBoxFolderRed
         amount: 2
-      - id: BoxFolderRed
-        amount: 2
-      - id: BoxFolderBlue
+      - id: ADTInvestigatorBoxFolderBlue
         amount: 2
       - id: ADTBookInvestigator
 
 - type: entity
-  noSpawn: true
+  #noSpawn: true
   parent: ClothingBackpackDuffelSecurity
   id: ADTClothingBackpackDuffelInvestigatorFilled
   components:
-  - type: Storage
-    maxItemSize: Huge
-    maxTotalWeight: 0
-    maxSlots: 50 #By this ignore maxTotalWeight
+  #- type: Storage
+  #  maxItemSize: Huge
+  #  maxTotalWeight: 0
+  #  maxSlots: 50 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
       - id: BoxSurvivalSecurity
       - id: Flash
       - id: Pen
         amount: 2
-      - id: PaperOffice
-        amount: 20
-      - id: MaterialCardboard1
+      #- id: PaperOffice
+      #  amount: 20
+      - id: ADTInvestigatorBoxFolderBase
         amount: 2
-      - id: BoxFolderBase
+      - id: ADTInvestigatorBoxFolderRed
         amount: 2
-      - id: BoxFolderRed
-        amount: 2
-      - id: BoxFolderBlue
+      - id: ADTInvestigatorBoxFolderBlue
         amount: 2
       - id: ADTBookInvestigator
 
 - type: entity
-  noSpawn: true
+  #noSpawn: true
   parent: ClothingBackpackSatchelSecurity
   id: ADTClothingBackpackSatchelInvestigatorFilled
   components:
-  - type: Storage
-    maxItemSize: Huge
-    maxTotalWeight: 0
-    maxSlots: 50 #By this ignore maxTotalWeight
+  #- type: Storage
+  #  maxItemSize: Huge
+  #  maxTotalWeight: 0
+  #  maxSlots: 50 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
       - id: BoxSurvivalSecurity
       - id: Flash
       - id: Pen
         amount: 2
-      - id: PaperOffice
-        amount: 20
-      - id: MaterialCardboard1
+      #- id: PaperOffice
+      #  amount: 20
+      #- id: MaterialCardboard1
+      #  amount: 2
+      - id: ADTInvestigatorBoxFolderBase
         amount: 2
-      - id: BoxFolderBase
+      - id: ADTInvestigatorBoxFolderRed
         amount: 2
-      - id: BoxFolderRed
-        amount: 2
-      - id: BoxFolderBlue
+      - id: ADTInvestigatorBoxFolderBlue
         amount: 2
       - id: ADTBookInvestigator
 

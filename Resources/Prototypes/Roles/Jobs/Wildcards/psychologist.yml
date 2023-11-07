@@ -21,6 +21,7 @@
     id: PsychologistPDA
     ears: ClothingHeadsetMedical
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraSports # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtPsychologist # Corvax-Resprite

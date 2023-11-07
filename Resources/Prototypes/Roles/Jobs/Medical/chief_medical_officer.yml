@@ -47,6 +47,7 @@
     ears: ClothingHeadsetCMO
     belt: ClothingBeltMedicalFilled
     underwearb: ClothingUnderwearBottomBoxersCMO # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraCMO # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesCMO # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtCMO
