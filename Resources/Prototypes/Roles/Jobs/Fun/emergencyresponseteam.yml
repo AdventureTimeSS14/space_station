@@ -27,6 +27,7 @@
     belt: ADTClothingBeltMilitaryWebbingRPSL
     pocket1: PinpointerNuclear
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
@@ -46,6 +47,7 @@
     belt: ADTClothingBeltMilitaryWebbingRPSL
     pocket1: PinpointerNuclear
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
@@ -65,6 +67,7 @@
     belt: ADTClothingBeltMilitaryWebbingRPSL_Rev
     pocket1: PinpointerNuclear
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
@@ -97,6 +100,7 @@
     belt: ClothingBeltChiefEngineerFilled
     pocket1: PinpointerNuclear
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
@@ -117,6 +121,7 @@
     pocket1: PinpointerNuclear
     pocket2: RemoteSignaller
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
@@ -137,6 +142,7 @@
     pocket1: PinpointerNuclear
     pocket2: RemoteSignaller
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
@@ -170,6 +176,7 @@
     pocket1: PinpointerNuclear
     pocket2: RemoteSignaller
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
@@ -191,6 +198,7 @@
     pocket1: PinpointerNuclear
     pocket2: FlashlightSeclite
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
@@ -211,6 +219,7 @@
     pocket1: PinpointerNuclear
     pocket2: FlashlightSeclite
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
@@ -245,6 +254,7 @@
     pocket1: HandheldHealthAnalyzer
     pocket2: PinpointerNuclear
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
@@ -265,6 +275,7 @@
     pocket1: HandheldHealthAnalyzer
     pocket2: PinpointerNuclear
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
@@ -285,6 +296,7 @@
     pocket1: HandheldHealthAnalyzer
     pocket2: PinpointerNuclear
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
@@ -317,6 +329,7 @@
     pocket1: Flare
     pocket2: PinpointerNuclear
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
@@ -336,5 +349,6 @@
     pocket1: Flare
     pocket2: PinpointerNuclear
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear

@@ -1,7 +1,6 @@
 - type: vendingMachineInventory
   id: StarkistInventory
   startingInventory:
-    ADTDrinkHellEnergy: 5
     DrinkStarkistCan: 4
     DrinkGrapeCan: 2
     DrinkRootBeerCan: 2

@@ -1,7 +1,6 @@
 - type: vendingMachineInventory
   id: ShamblersJuiceInventory
   startingInventory:
-    ADTDrinkHellEnergy: 5
     DrinkShamblersJuiceCan: 4
     DrinkGrapeCan: 2
     DrinkRootBeerCan: 2

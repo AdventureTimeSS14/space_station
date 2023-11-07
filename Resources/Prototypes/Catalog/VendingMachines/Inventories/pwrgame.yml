@@ -1,7 +1,6 @@
 - type: vendingMachineInventory
   id: PwrGameInventory
   startingInventory:
-    ADTDrinkHellEnergy: 5
     DrinkPwrGameCan: 4
     DrinkEnergyDrinkCan: 4
     DrinkGrapeCan: 2
