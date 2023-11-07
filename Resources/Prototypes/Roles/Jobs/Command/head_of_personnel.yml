@@ -65,6 +65,7 @@
     ears: ClothingHeadsetAltCommand
     belt: BoxFolderClipboard
     underwearb: ClothingUnderwearBottomBoxersHOP # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraHOP # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesHOP # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtHoP

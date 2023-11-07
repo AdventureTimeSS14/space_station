@@ -49,6 +49,7 @@
   - type: StorageFill
     contents:
       - id: Flash
+      - id: BoxSurvivalSecurity
 
 - type: entity
   noSpawn: true
@@ -243,9 +244,9 @@
   parent: ClothingBackpackERTLeader
   id: ClothingBackpackERTLeaderFilled
   components:
-    - type: Storage
-      maxItemSize: Huge
-      maxTotalWeight: 9000
+    #- type: Storage
+    #  maxItemSize: Huge
+    #  maxTotalWeight: 9000
     - type: StorageFill
       contents:
         - id: WeaponPulseCarbine
@@ -266,9 +267,9 @@
   parent: ClothingBackpackERTLeader
   id: ClothingBackpackERTLeaderFilledREV
   components:
-    - type: Storage
-      maxItemSize: Huge
-      maxTotalWeight: 9000
+    #- type: Storage
+    #  maxItemSize: Huge
+    #  maxTotalWeight: 9000
     - type: StorageFill
       contents:
         #- id: WeaponPulseCarbine
@@ -297,9 +298,9 @@
   parent: ClothingBackpackERTSecurity
   id: ClothingBackpackERTSecurityFilled
   components:
-    - type: Storage
-      maxItemSize: Huge
-      maxTotalWeight: 9000
+    #- type: Storage
+    #  maxItemSize: Huge
+    #  maxTotalWeight: 9000
     - type: StorageFill
       contents:
         - id: WeaponDisabler
@@ -320,10 +321,10 @@
   parent: ClothingBackpackERTSecurity
   id: ClothingBackpackERTSecurityFilledREV
   components:
-    - type: Storage
-      maxItemSize: Huge
-      maxTotalWeight: 0
-      maxSlots: 50 #By this ignore maxTotalWeight
+    #- type: Storage
+    #  maxItemSize: Huge
+    #  maxTotalWeight: 0
+    #  maxSlots: 50 #By this ignore maxTotalWeight
     - type: StorageFill
       contents:
         #- id: WeaponPulseCarbine
@@ -375,10 +376,10 @@
   parent: ClothingBackpackERTMedical
   id: ClothingBackpackERTMedicalFilledREV
   components:
-    - type: Storage
-      maxItemSize: Huge
-      maxTotalWeight: 0
-      maxSlots: 50 #By this ignore maxTotalWeight
+    #- type: Storage
+    #  maxItemSize: Huge
+    #  maxTotalWeight: 0
+    #  maxSlots: 50 #By this ignore maxTotalWeight
     - type: StorageFill
       contents:
         #- id: WeaponPulseCarbine
@@ -408,18 +409,15 @@
   parent: ClothingBackpackERTEngineer
   id: ClothingBackpackERTEngineerFilled
   components:
-    - type: Storage
-      maxItemSize: Huge #ToDo xTray Need Fix Size
-      maxTotalWeight: 100
+    #- type: Storage
+    #  maxItemSize: Huge #ToDo xTray Need Fix Size
+    #  maxTotalWeight: 100
     - type: StorageFill
       contents:
-        - id: trayScanner
         - id: WeaponPulseCarbine
         - id: MedicatedSuture
         - id: RegenerativeMesh
         - id: RCD
-        - id: RCDAmmo
-        - id: RCDAmmo
         - id: RCDAmmo
         - id: WeaponRifleLecter
         - id: MagazineRifle
@@ -434,9 +432,9 @@
   parent: ClothingBackpackERTEngineer
   id: ClothingBackpackERTEngineerFilledREV
   components:
-    - type: Storage
-      maxItemSize: Huge
-      maxTotalWeight: 10000
+    #- type: Storage
+    #  maxItemSize: Huge
+    #  maxTotalWeight: 10000
     - type: StorageFill
       contents:
         - id: trayScanner
@@ -444,7 +442,6 @@
         - id: MedicatedSuture
         - id: RegenerativeMesh
         - id: RCD
-        - id: RCDAmmo
         - id: RCDAmmo
         - id: BoxZiptie
         - id: WeaponSubMachineGunDrozdRubber
@@ -481,8 +478,8 @@
   name: death squad backpack
   description: Holds the kit of CentComm's most feared agents.
   components:
-    - type: Storage
-      maxTotalWeight: 56
+    #- type: Storage
+    #  maxTotalWeight: 56
     - type: StorageFill
       contents:
         - id: BoxSurvivalEngineering

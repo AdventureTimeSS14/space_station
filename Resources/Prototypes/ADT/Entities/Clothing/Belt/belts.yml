@@ -56,9 +56,8 @@
   description: Part of ERT security's gear
   components:
   - type: Storage
-    maxItemSize: Ginormous
-    maxTotalWeight: 0
-    maxSlots: 50 #By this ignore maxTotalWeight
+    maxItemSize: Normal
+    maxSlots: 10
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -167,8 +166,6 @@
   name: Pyotr`s sabre sheath
   description: An ornate sheath designed to hold an officer's blade.
   components:
-  - type: Item
-    size: 25
   - type: Sprite
     sprite: ADT/Clothing/Belt/pyotr_sheath.rsi
     state: sheath
@@ -213,7 +210,7 @@
   suffix: Halloween
   components:
   - type: Storage
-    maxItemSize: Huge
+    maxItemSize: Normal
   - type: Sprite
     sprite: ADT/Clothing/Belt/killa_webbing.rsi
   - type: Clothing

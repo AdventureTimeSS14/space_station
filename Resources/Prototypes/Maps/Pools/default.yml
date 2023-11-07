@@ -1,25 +1,25 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  #- CorvaxDelta
+  - CorvaxDelta
   #- CorvaxAvrite
-  #- Aspid
-  #- Barratry
-  #- Cluster
-  - HalloweenCluster
+  - Aspid
+  - Barratry
+  - Cluster
+  #- HalloweenCluster
   #- Core
-  #- Fland
+  - Fland
   #- Kettle
   #- Marathon
   #- Meta
-  #- Omega
+  - Omega
   #- Origin
   - Saltern
   #- Packed
   - ADTPacked
-  #- Bagel
-  #- Box
-  - HalloweenKettle
-  - HalloweenBoxstation
-  - HalloweenBagel
-  - HalloweenAspid
+  - Bagel
+  - Box
+  #- HalloweenKettle
+  #- HalloweenBoxstation
+  #- HalloweenBagel
+  #- HalloweenAspid

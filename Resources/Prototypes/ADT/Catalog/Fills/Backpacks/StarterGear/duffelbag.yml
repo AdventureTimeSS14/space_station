@@ -109,8 +109,8 @@
 - type: entity
   parent: ClothingBackpackDuffelSyndicateAmmoBundle
   id: ADTClothingBackpackDuffelSsmokeGrenade
-  name: Набор дымовых гранат синдиката
-  description: Набор из 6 штук дымовых гранат синдиката
+  name: набор дымовых гранат синдиката
+  description: Набор из шести дымовых гранат синдиката
   components:
   - type: StorageFill
     contents:

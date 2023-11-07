@@ -244,14 +244,3 @@
     sprite: ADT/Clothing/Head/Hats/hat_povar.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/hat_povar.rsi
-
-- type: entity
-  parent: ClothingHeadBase
-  id: ADTClothingHeadZakolka
-  name: MarineLieutenantBeret
-  description: Marine beret
-  components:
-  - type: Sprite
-    sprite: ADT/Clothing/Head/Hats/hat_zakolka.rsi
-  - type: Clothing
-    sprite: ADT/Clothing/Head/Hats/hat_zakolka.rsi

@@ -37,6 +37,7 @@
     id: RnDPDA
     ears: ClothingHeadsetRD
     underwearb: ClothingUnderwearBottomBoxersRD # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraRD # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesRD # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtResearchDirector

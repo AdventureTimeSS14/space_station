@@ -1,4 +1,4 @@
-﻿- type: job
+- type: job
   id: Captain
   name: job-name-captain
   description: job-description-captain
@@ -45,6 +45,7 @@
     id: CaptainPDA
     ears: ClothingHeadsetAltCommand
     underwearb: ClothingUnderwearBottomBoxersCap # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraCap # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesCap # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtCaptain
