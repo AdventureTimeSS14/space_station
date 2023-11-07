@@ -21,6 +21,7 @@
     ears: ClothingHeadsetService
     pocket1: ADTZookeperHandheldHealthAnalyzer
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraSports # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpsuitSafari

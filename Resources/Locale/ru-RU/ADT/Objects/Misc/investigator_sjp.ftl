@@ -1,6 +1,18 @@
 ent-ADTBookInvestigator = СРП Следователя СБ
     .desc = Очень объемная и тяжелая книга, содержащая в себе подробное описание СРП следователя Службы Безопасности.
 
+ent-ADTInvestigatorBoxFolderBase = { ent-BoxFolderBase }
+    .desc = { ent-BoxFolderBase.desc }
+
+ent-ADTInvestigatorBoxFolderRed = { ent-BoxFolderBase }
+    .suffix = Красная
+    .desc = { ent-BoxFolderBase.desc }
+
+ent-ADTInvestigatorBoxFolderBlue = { ent-BoxFolderBase }
+    .suffix = Синяя
+    .desc = { ent-BoxFolderBase.desc }
+
+
 book-text-investigator = 
     Основное СРП:
 

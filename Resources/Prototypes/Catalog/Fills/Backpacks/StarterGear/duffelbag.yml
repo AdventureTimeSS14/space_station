@@ -48,6 +48,7 @@
   - type: StorageFill
     contents:
       - id: Flash
+      - id: BoxSurvivalSecurity
 
 - type: entity
   noSpawn: true

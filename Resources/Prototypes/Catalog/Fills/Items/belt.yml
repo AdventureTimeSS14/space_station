@@ -17,9 +17,9 @@
   parent: ClothingBeltUtility
   suffix: Engineering
   components:
-  - type: Storage
-    maxItemSize: Cheat
-    maxTotalWeight: 9000
+  #- type: Storage
+  #  maxItemSize: Cheat
+  #  maxTotalWeight: 9000
   - type: StorageFill
     contents:
       - id: MiniFireExtinguisher
@@ -184,6 +184,9 @@
   parent: ClothingBeltMilitaryWebbingMed
   suffix: Filled
   components:
+  - type: Storage
+    maxSlots: 9
+    maxItemSize: Normal
   - type: StorageFill
     contents:
       - id: ADTCombatHypo
