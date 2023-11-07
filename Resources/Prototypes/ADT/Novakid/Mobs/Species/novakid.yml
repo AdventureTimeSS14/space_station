@@ -26,9 +26,6 @@
       Male: MaleHuman
       Female: FemaleHuman
       Unsexed: FemaleHuman
-  - type: Damageable
-    damageContainer: Biological
-    damageModifierSet: Novakid
   - type: MeleeWeapon
     hidden: true
     soundHit:

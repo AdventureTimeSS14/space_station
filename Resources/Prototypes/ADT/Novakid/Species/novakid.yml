@@ -4,7 +4,6 @@
   roundStart: true
   prototype: MobNovakid
   sprites: MobNovakidSprites
-  defaultSkinTone: "#34a223"
   markingLimits: MobNovakidMarkingLimits
   dollPrototype: MobNovakidDummy
   skinColoration: Hues
@@ -19,11 +18,10 @@
   sprites:
     Head: MobNovakidHead
     Hair: MobHumanoidAnyMarking
-    FacialHair: MobHumanoidAnyMarking
-    Snout: MobHumanoidAnyMarking
-    Chest: MobNovakidTorso
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
+    Snout: MobHumanoidAnyMarking
+    Chest: MobNovakidTorso
     LArm: MobNovakidLArm
     RArm: MobNovakidRArm
     LHand: MobNovakidLHand
@@ -40,9 +38,6 @@
     Hair:
       points: 1
       required: false
-    FacialHair:
-      points: 0
-      required: true
     HeadTop:
       points: 1
       required: false
