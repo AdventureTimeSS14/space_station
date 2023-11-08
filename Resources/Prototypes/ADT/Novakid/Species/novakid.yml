@@ -1,7 +1,7 @@
 - type: species
   id: NovakidSpecies
   name: species-name-novakid
-  roundStart: true
+  roundStart: false # изменить потом
   prototype: MobNovakid
   sprites: MobNovakidSprites
   markingLimits: MobNovakidMarkingLimits

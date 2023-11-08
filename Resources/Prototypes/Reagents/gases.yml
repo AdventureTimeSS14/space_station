@@ -97,13 +97,13 @@
         ignoreResistances: true
         damage:
           types:
-            Blunt: -2
-            Slash: -2
-            Piercing: -2
-            Brute: -2
-            Burn: -2
-            Heat: -1
-            Poison: -1
+            Blunt: -0.005
+            Slash: -0.005
+            Piercing: -0.005
+            Brute: -0.005
+            Burn: -0.005
+            Heat: -0.005
+            Poison: -0.002
       - !type:GenericStatusEffect
         conditions:
         - !type:OrganType

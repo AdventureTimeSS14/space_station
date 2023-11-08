@@ -24,9 +24,9 @@
     speechSounds: Lizard
   - type: Vocal
     sounds:
-      Male: MaleHuman
-      Female: FemaleHuman
-      Unsexed: FemaleHuman
+      Male: UnisexNovakid
+      Female: UnisexNovakid
+      Unsexed: UnisexNovakid
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Demon # Потому что. Я зол, эта штука ломала мне мозг на протяжении двух часов, пока я искал ошибку >:c
@@ -67,7 +67,7 @@
       methods: [ Touch ]
       effects:
       - !type:WashCreamPieReaction
-    - reagents: [ Water ]
+    - reagents: [ Water, SpaceCleaner ]
       methods: [ Touch ]
       effects:
       - !type:HealthChange
@@ -108,3 +108,57 @@
   components:
   - type: HumanoidAppearance
     species: NovakidSpecies
+
+
+- type: emoteSounds
+  id: UnisexNovakid
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: NovakidScreams
+    Laugh:
+      collection: NovakidLaugh
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: MaleYawn
+    Snore:
+      collection: Snores
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      collection: MaleSigh
+    Crying:
+      collection: MaleCry
+    Whistle:
+      collection: Whistles
+
+
+- type: soundCollection
+  id: NovakidLaugh
+  files:
+    - /Audio/ADT/Novakid/novakid_laugh01.ogg
+    - /Audio/ADT/Novakid/novakid_laugh02.ogg
+    - /Audio/ADT/Novakid/novakid_laugh03.ogg
+    - /Audio/ADT/Novakid/novakid_laugh04.ogg
+    - /Audio/ADT/Novakid/novakid_laugh05.ogg
+
+- type: soundCollection
+  id: NovakidScreams
+  files:
+    - /Audio/ADT/Novakid/novakid_scream01.ogg
+    - /Audio/ADT/Novakid/novakid_scream02.ogg
+    - /Audio/ADT/Novakid/novakid_scream03.ogg
+    - /Audio/ADT/Novakid/novakid_scream04.ogg
+    - /Audio/ADT/Novakid/novakid_scream05.ogg
