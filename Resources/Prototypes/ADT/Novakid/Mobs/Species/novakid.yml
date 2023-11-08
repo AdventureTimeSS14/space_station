@@ -1,0 +1,163 @@
+- type: entity
+  save: false
+  name: Urisst' Mzhand Novakid
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobNovakid
+  abstract: true
+  components:
+  - type: HumanoidAppearance
+    species: NovakidSpecies
+  - type: Hunger
+  - type: ZombieImmune
+  - type: Thirst
+  - type: Icon
+    sprite: ADT/Mobs/Novakid/parts.rsi
+    state: full_m
+  - type: Sprite
+    netsync: false
+    noRot: true
+    drawdepth: Mobs
+  - type: Body
+    prototype: Novakid
+    requiredLegs: 2
+  - type: Speech
+    speechSounds: Lizard
+  - type: Vocal
+    sounds:
+      Male: UnisexNovakid
+      Female: UnisexNovakid
+      Unsexed: UnisexNovakid
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Demon # Потому что. Я зол, эта штука ломала мне мозг на протяжении двух часов, пока я искал ошибку >:c
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Weapons/pierce.ogg
+    angle: 30
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Piercing: 5
+  - type: Temperature
+    heatDamageThreshold: 450
+    coldDamageThreshold: 193  #starting temperature damage treshold
+    currentTemperature: 310.15
+    specificHeat: 46
+    coldDamage:
+      types:
+        Cold : 0.5 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat : 0.2 #per second, scales with temperature & other constants
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2.5
+    baseSprintSpeed : 4.5
+  - type: Perishable
+  - type: Barotrauma
+    damage:
+      types:
+        Blunt: 0.01 # Супер пониженный дамаг от давления
+  - type: Reactive
+    groups:
+      Flammable: [ Touch ]
+      Extinguish: [ Touch ]
+    reactions:
+    - reagents: [ Water, SpaceCleaner ]
+      methods: [ Touch ]
+      effects:
+      - !type:WashCreamPieReaction
+    - reagents: [ Water, SpaceCleaner ]
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaled: true
+        damage:
+          types:
+            Heat: 4 # Повышенный дамаг от водички и моющего средства. Пшик-пшик
+      - !type:PopupMessage
+        type: Local
+        visualType: Large
+        messages: [ "novakid-hurt-by-water-popup" ]
+        probability: 0.25
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical
+      300: Dead
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+            Ash:
+              min: 1
+              max: 1
+      - !type:GibBehavior { }
+
+- type: entity
+  save: false
+  name: Urist McHands
+  parent: MobHumanDummy
+  id: MobNovakidDummy
+  noSpawn: true
+  description: A dummy reptilian meant to be used in character setup.
+  components:
+  - type: HumanoidAppearance
+    species: NovakidSpecies
+
+
+- type: emoteSounds
+  id: UnisexNovakid
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: NovakidScreams
+    Laugh:
+      collection: NovakidLaugh
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: MaleYawn
+    Snore:
+      collection: Snores
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      collection: MaleSigh
+    Crying:
+      collection: MaleCry
+    Whistle:
+      collection: Whistles
+
+
+- type: soundCollection
+  id: NovakidLaugh
+  files:
+    - /Audio/ADT/Novakid/novakid_laugh01.ogg
+    - /Audio/ADT/Novakid/novakid_laugh02.ogg
+    - /Audio/ADT/Novakid/novakid_laugh03.ogg
+    - /Audio/ADT/Novakid/novakid_laugh04.ogg
+    - /Audio/ADT/Novakid/novakid_laugh05.ogg
+
+- type: soundCollection
+  id: NovakidScreams
+  files:
+    - /Audio/ADT/Novakid/novakid_scream01.ogg
+    - /Audio/ADT/Novakid/novakid_scream02.ogg
+    - /Audio/ADT/Novakid/novakid_scream03.ogg
+    - /Audio/ADT/Novakid/novakid_scream04.ogg
