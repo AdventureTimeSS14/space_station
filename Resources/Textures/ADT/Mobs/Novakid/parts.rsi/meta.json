@@ -8,63 +8,57 @@
     },
     "states": [
         {
-            "name": "cow_ears",
+            "name": "full_f"
+        },
+        {
+            "name": "full_m"
+        },
+        {
+            "name": "head_f",
             "directions": 4
         },
         {
-            "name": "demon_ears",
+            "name": "head_m",
             "directions": 4
         },
         {
-            "name": "goatee",
+            "name": "l_arm",
             "directions": 4
         },
         {
-            "name": "cow_horns",
+            "name": "l_foot",
             "directions": 4
         },
         {
-            "name": "cow_spots",
+            "name": "l_hand",
             "directions": 4
         },
         {
-            "name": "deer_antlers_horns",
+            "name": "l_leg",
             "directions": 4
         },
         {
-            "name": "guards_stripes",
+            "name": "r_arm",
             "directions": 4
         },
         {
-            "name": "lines_emperos",
+            "name": "r_foot",
             "directions": 4
         },
         {
-            "name": "queen_lines",
+            "name": "r_hand",
             "directions": 4
         },
         {
-            "name": "small_horns",
+            "name": "r_leg",
             "directions": 4
         },
         {
-            "name": "tree_lines",
+            "name": "torso_f",
             "directions": 4
         },
         {
-            "name": "trinity_spots",
-            "directions": 4
-        },
-        {
-            "name": "demon_tail",
-            "directions": 4
-        },
-        {
-            "name": "long",
-            "directions": 4
-        },
-        {
-            "name": "up",
+            "name": "torso_m",
             "directions": 4
         }
     ]

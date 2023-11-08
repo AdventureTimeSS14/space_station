@@ -40,3 +40,7 @@
 - type: metabolizerType
   id: Arachnid
   name: arachnid
+
+- type: metabolizerType
+  id: Novakid
+  name: novakid
