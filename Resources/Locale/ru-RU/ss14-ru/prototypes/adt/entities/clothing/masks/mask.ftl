@@ -1,2 +1,2 @@
-ent-ADTClothingMaskGasDarkRavenFriskis = raven gas mask
-    .desc = raven gas mask
+ent-ADTClothingMaskGasDarkRavenFriskis = Маска ворона
+    .desc = Вещи сотрудников бывают странные, да ?

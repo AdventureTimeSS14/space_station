@@ -199,7 +199,7 @@
 
 - type: marking
   id: NovakidFace1
-  bodyPart: HeadSide
+  bodyPart: Head
   markingCategory: HeadSide
   speciesRestriction: [NovakidSpecies]
   sprites:
@@ -208,7 +208,7 @@
 
 - type: marking
   id: NovakidFace2
-  bodyPart: HeadSide
+  bodyPart: Head
   markingCategory: HeadSide
   speciesRestriction: [NovakidSpecies]
   sprites:
@@ -217,7 +217,7 @@
 
 - type: marking
   id: NovakidFace3
-  bodyPart: HeadSide
+  bodyPart: Head
   markingCategory: HeadSide
   speciesRestriction: [NovakidSpecies]
   sprites:
@@ -226,7 +226,7 @@
 
 - type: marking
   id: NovakidFace4
-  bodyPart: HeadSide
+  bodyPart: Head
   markingCategory: HeadSide
   speciesRestriction: [NovakidSpecies]
   sprites:
@@ -235,7 +235,7 @@
 
 - type: marking
   id: NovakidFace5
-  bodyPart: HeadSide
+  bodyPart: Head
   markingCategory: HeadSide
   speciesRestriction: [NovakidSpecies]
   sprites:
@@ -244,7 +244,7 @@
 
 - type: marking
   id: NovakidFace6
-  bodyPart: HeadSide
+  bodyPart: Head
   markingCategory: HeadSide
   speciesRestriction: [NovakidSpecies]
   sprites:
@@ -253,7 +253,7 @@
 
 - type: marking
   id: NovakidFace7
-  bodyPart: HeadSide
+  bodyPart: Head
   markingCategory: HeadSide
   speciesRestriction: [NovakidSpecies]
   sprites:
@@ -262,7 +262,7 @@
 
 - type: marking
   id: NovakidFace8
-  bodyPart: HeadSide
+  bodyPart: Head
   markingCategory: HeadSide
   speciesRestriction: [NovakidSpecies]
   sprites:
@@ -271,7 +271,7 @@
 
 - type: marking
   id: NovakidFace9
-  bodyPart: HeadSide
+  bodyPart: Head
   markingCategory: HeadSide
   speciesRestriction: [NovakidSpecies]
   sprites:
@@ -280,7 +280,7 @@
 
 - type: marking
   id: NovakidFace10
-  bodyPart: HeadSide
+  bodyPart: Head
   markingCategory: HeadSide
   speciesRestriction: [NovakidSpecies]
   sprites:
@@ -289,7 +289,7 @@
 
 - type: marking
   id: NovakidFace11
-  bodyPart: HeadSide
+  bodyPart: Head
   markingCategory: HeadSide
   speciesRestriction: [NovakidSpecies]
   sprites:
@@ -298,7 +298,7 @@
 
 - type: marking
   id: NovakidFace12
-  bodyPart: HeadSide
+  bodyPart: Head
   markingCategory: HeadSide
   speciesRestriction: [NovakidSpecies]
   sprites:
@@ -307,7 +307,7 @@
 
 - type: marking
   id: NovakidFace13
-  bodyPart: HeadSide
+  bodyPart: Head
   markingCategory: HeadSide
   speciesRestriction: [NovakidSpecies]
   sprites:
@@ -316,7 +316,7 @@
 
 - type: marking
   id: NovakidFace14
-  bodyPart: HeadSide
+  bodyPart: Head
   markingCategory: HeadSide
   speciesRestriction: [NovakidSpecies]
   sprites:
@@ -325,7 +325,7 @@
 
 - type: marking
   id: NovakidFace15
-  bodyPart: HeadSide
+  bodyPart: Head
   markingCategory: HeadSide
   speciesRestriction: [NovakidSpecies]
   sprites:
@@ -334,7 +334,7 @@
 
 - type: marking
   id: NovakidFace16
-  bodyPart: HeadSide
+  bodyPart: Head
   markingCategory: HeadSide
   speciesRestriction: [NovakidSpecies]
   sprites:
@@ -343,7 +343,7 @@
 
 - type: marking
   id: NovakidFace17
-  bodyPart: HeadSide
+  bodyPart: Head
   markingCategory: HeadSide
   speciesRestriction: [NovakidSpecies]
   sprites:
@@ -352,7 +352,7 @@
 
 - type: marking
   id: NovakidFace18
-  bodyPart: HeadSide
+  bodyPart: Head
   markingCategory: HeadSide
   speciesRestriction: [NovakidSpecies]
   sprites:
