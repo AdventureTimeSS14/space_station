@@ -17,6 +17,10 @@
         {
             "name": "equipped-MASK-unshaded",
             "directions": 4
+        },
+        {
+            "name": "up-equipped-MASK",
+            "directions": 4
         }
     ]
 }
