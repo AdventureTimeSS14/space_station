@@ -1,24 +1,4 @@
 - type: entity
-  parent: ClothingMaskGas
-  id: ADTClothingMaskGasDarkRavenFriskis
-  name: raven gas mask
-  description: raven gas mask
-  components:
-  - type: Sprite
-    sprite: ADT/Clothing/Mask/raven.rsi
-  - type: Clothing
-    sprite: ADT/Clothing/Mask/raven.rsi
-    clothingVisuals:
-      mask:
-      - state: equipped-MASK
-      - state: equipped-MASK-unshaded
-        shader: unshaded
-  - type: Armor
-    modifiers:
-      coefficients:
-        Heat: 0.80
-
-- type: entity
   parent: ClothingMaskBase
   id: ADTJasonHockeyMask
   name: hockey mask of maniac
