@@ -38,6 +38,7 @@
       - id: BoxSurvivalSecurity
       - id: Flash
       - id: MagazinePistol
+      - id: ADTSpaceLaw
 
 - type: entity
   parent: ClothingBackpackSatchelSecurity
@@ -49,6 +50,7 @@
       - id: Flash
       - id: ForensicPad
       - id: ForensicScanner
+      - id: ADTSpaceLaw
 
 - type: entity
   parent: ClothingBackpackSatchelBrigmedic

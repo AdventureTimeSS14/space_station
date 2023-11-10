@@ -24,6 +24,8 @@
     sprite: Objects/Misc/books.rsi
     layers:
     - state: book_space_law
+  - type: Item
+    size: 0
   - type: Tag
     tags:
     - Book
@@ -31,6 +33,12 @@
     openOnActivation: true
     guides:
       - KorporateZakon
+  - type: MeleeWeapon
+      attackRate: 1
+      damage:
+        types:
+          Blunt: 3
+
 
 - type: entity
   parent: BoxFolderBase
