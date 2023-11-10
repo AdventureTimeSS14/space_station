@@ -218,3 +218,7 @@ ent-ADTJumpsuitSerious = серьезная форма
 ent-ADTJumpskirtBlackShortDress = чёрное короткое платье
     .desc = Легкое платье с открытой спиной из чёрной шелковой ткани с золотыми лентами, для элегантных распутных дам. Производство компании "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitHungerGames = Комбинезон Капитолия
+    .desc = Комбинезон компании "Космических Голодных Игр".
+    .suffix = { "" }
