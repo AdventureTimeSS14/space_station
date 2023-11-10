@@ -511,6 +511,6 @@
   description: A stately blue jumpsuit to represent Capitols
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/jumpsuit_capitols.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_capitols.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_capitols.rsi

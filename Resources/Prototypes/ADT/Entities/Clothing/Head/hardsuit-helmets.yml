@@ -221,7 +221,8 @@
   - type: IdentityBlocker
   - type: PointLight
     enabled: false
-    radius: 6
+    color: "#0000FF"
+    radius: 7
     energy: 1
   - type: Armor
     modifiers:
