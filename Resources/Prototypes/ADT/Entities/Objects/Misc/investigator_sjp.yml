@@ -25,7 +25,7 @@
     layers:
     - state: book_space_law
   - type: Item
-    size: 0
+    size: Tiny
   - type: Tag
     tags:
     - Book
