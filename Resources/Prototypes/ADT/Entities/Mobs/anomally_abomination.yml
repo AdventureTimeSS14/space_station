@@ -26,17 +26,17 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 9
+        Slash: 6
   #- type: Damageable
   #  damageContainer: Biological
   #  damageModifierSet: distorted
   - type: MovementSpeedModifier
-    baseWalkSpeed: 2.7
-    baseSprintSpeed: 4.7
+    baseWalkSpeed: 2.4
+    baseSprintSpeed: 4.4
   - type: MobThresholds
     thresholds:
       0: Alive
-      120: Dead
+      100: Dead
 
 - type: entity
   parent: BaseMobFlesh
@@ -66,13 +66,13 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 8
+        Slash: 4
   #- type: Damageable
   #  damageContainer: Biological
   #  damageModifierSet: echo
   - type: MovementSpeedModifier
     baseWalkSpeed: 3.0
-    baseSprintSpeed: 5.2
+    baseSprintSpeed: 4.7
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -106,18 +106,18 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 15
+        Slash: 10
         Poison: 5
   #- type: Damageable
   #  damageContainer: Biological
   #  damageModifierSet: grant
   - type: MovementSpeedModifier
     baseWalkSpeed: 2.2
-    baseSprintSpeed: 4.0
+    baseSprintSpeed: 3.7
   - type: MobThresholds
     thresholds:
       0: Alive
-      300: Dead
+      200: Dead
 
 - type: entity
   parent: BaseMobFlesh
@@ -147,17 +147,17 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 20
+        Slash: 12
   #- type: Damageable
   #  damageContainer: Biological
   #  damageModifierSet: hunter
   - type: MovementSpeedModifier
     baseWalkSpeed: 3.2
-    baseSprintSpeed: 5.2
+    baseSprintSpeed: 4.75
   - type: MobThresholds
     thresholds:
       0: Alive
-      450: Dead
+      300: Dead
 
 - type: entity
   parent: BaseMobFlesh
@@ -187,17 +187,17 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 8
+        Slash: 4
   #- type: Damageable
   #  damageContainer: Biological
   #  damageModifierSet: soldier
   - type: MovementSpeedModifier
     baseWalkSpeed: 2.7
-    baseSprintSpeed: 4.7
+    baseSprintSpeed: 4.3
   - type: MobThresholds
     thresholds:
       0: Alive
-      110: Dead
+      100: Dead
 
 - type: entity
   parent: BaseMobFlesh
@@ -227,17 +227,17 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 25
+        Slash: 15
   #- type: Damageable
   #  damageContainer: Biological
   #  damageModifierSet: wrecker
   - type: MovementSpeedModifier
     baseWalkSpeed: 2.2
-    baseSprintSpeed: 4.0
+    baseSprintSpeed: 3.5
   - type: MobThresholds
     thresholds:
       0: Alive
-      850: Dead
+      600: Dead
 
 #- type: damageModifierSet
 #  id: distorted

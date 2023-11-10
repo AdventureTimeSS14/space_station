@@ -20,7 +20,7 @@
     - type: Item
       size: 9999
     - type: Storage
-      capacity: 9999 #10-20 should be more than enough for this
+      maxItemSize: Ginormous #10-20 should be more than enough for this
     - type: ContainerContainer
       containers:
         storagebase: !type:Container

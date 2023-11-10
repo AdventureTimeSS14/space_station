@@ -31,6 +31,10 @@
     id: SeniorPhysicianPDA
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalFilled
+    underwearb: ClothingUnderwearBottomBoxersCMO # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+  underweart: ClothingUnderwearTopBraCMO # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesCMO # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtSeniorPhysician
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled

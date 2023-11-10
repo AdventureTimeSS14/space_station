@@ -43,11 +43,7 @@
       visible: false
   - type: SiliconLawBound
   - type: SiliconLawProvider
-    laws:
-    - Corporate1
-    - Corporate2
-    - Corporate3
-    - Corporate4
+    laws: Corporate
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
@@ -77,11 +73,7 @@
       visible: false
   - type: SiliconLawBound
   - type: SiliconLawProvider
-    laws:
-    - Corporate1
-    - Corporate2
-    - Corporate3
-    - Corporate4
+    laws: Corporate
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
@@ -109,6 +101,8 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: SiliconLawProvider
+    laws: Drone
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
@@ -146,8 +140,6 @@
     noMindState: medical_e_r
   - type: Construction
     node: medical
-  - type: TTS # Corvax-TTS
-    voice: Baya
 
 - type: entity
   id: BorgChassisService

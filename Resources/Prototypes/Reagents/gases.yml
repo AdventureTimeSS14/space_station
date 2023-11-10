@@ -17,6 +17,10 @@
       - !type:Oxygenate
         conditions:
         - !type:OrganType
+          type: Novakid
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
           type: Animal
       - !type:Oxygenate
         conditions:
@@ -62,12 +66,64 @@
     Gas:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Novakid
+          shouldHave: false
+        - !type:ReagentThreshold
+          reagent: Plasma
+          min: 1
+        ignoreResistances: true
+        damage:
+          types:
+            Poison: 1
+      - !type:ChemVomit
+        probability: 0.12
+        conditions:
+        - !type:OrganType
+          type: Novakid
+          shouldHave: false
+        - !type:ReagentThreshold
+          reagent: Plasma
+          min: 0.8
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Novakid
+        - !type:ReagentThreshold
+          reagent: Plasma
+          min: 0.6
         scaleByQuantity: true
         ignoreResistances: true
         damage:
           types:
-            Poison:
-              1
+            Blunt: -0.015
+            Slash: -0.015
+            Piercing: -0.015
+            Brute: -0.015
+            Burn: -0.015
+            Heat: -0.015
+            Poison: -0.012
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:OrganType
+          type: Novakid
+        - !type:ReagentThreshold
+          reagent: Plasma
+          min: 1
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 5
+        refresh: false
+      - !type:Drunk
+        conditions:
+        - !type:OrganType
+          type: Novakid
+          shouldHave: false
+        - !type:ReagentThreshold
+          reagent: Plasma
+          min: 1
       # Cant be added until I add metabolism effects on reagent removal
       #- !type:AdjustAlert
       #  alertType: Toxins
@@ -261,6 +317,9 @@
         - !type:ReagentThreshold
           reagent: NitrousOxide
           min: 0.2
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         emote: Laugh
         showInChat: true
         probability: 0.1
@@ -269,6 +328,9 @@
         - !type:ReagentThreshold
           reagent: NitrousOxide
           min: 0.2
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         emote: Scream
         showInChat: true
         probability: 0.01

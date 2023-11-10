@@ -21,6 +21,7 @@
     shoes: ClothingShoesColorRed
     belt: ClothingBeltChampion
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraSports # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: UniformShortsRedWithTop

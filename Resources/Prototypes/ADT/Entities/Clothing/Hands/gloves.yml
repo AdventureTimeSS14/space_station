@@ -137,3 +137,32 @@
     soundHit:
       path: /Audio/Weapons/genhit2.ogg
     animation: WeaponArcFist
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsBlackLongGloves
+  name: long black gloves
+  description: long black gloves
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/long-black-gloves.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/long-black-gloves.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+  - type: FingerprintMask
+
+ # Перчатки уборщика
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsGlovesJanitor
+  name: latex gloves
+  description: Thin sterile latex gloves. Basic PPE for any doctor.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/janitor_groves.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/janitor_groves.rsi
+  - type: Fiber
+    fiberMaterial: fibers-latex
+  - type: FingerprintMask

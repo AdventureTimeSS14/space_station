@@ -112,7 +112,7 @@ namespace Content.Server.Administration.Systems
             }
         }
 
-        public void UpdatePlayerList(IPlayerSession player)
+        public void UpdatePlayerList(ICommonSession player)
         {
             _playerList[player.UserId] = GetPlayerInfo(player.Data, player);
 
@@ -206,7 +206,7 @@ namespace Content.Server.Administration.Systems
             UpdatePanicBunker();
         }
 
-        private void SendFullPlayerList(IPlayerSession playerSession)
+        private void SendFullPlayerList(ICommonSession playerSession)
         {
             var ev = new FullPlayerListEvent();
 
@@ -215,7 +215,7 @@ namespace Content.Server.Administration.Systems
             RaiseNetworkEvent(ev, playerSession.ConnectedClient);
         }
 
-        private PlayerInfo GetPlayerInfo(IPlayerData data, IPlayerSession? session)
+        private PlayerInfo GetPlayerInfo(SessionData data, ICommonSession? session)
         {
             var name = data.UserName;
             var entityName = string.Empty;
@@ -331,7 +331,7 @@ namespace Content.Server.Administration.Systems
         ///     chat messages and showing a popup to other players.
         ///     Their items are dropped on the ground.
         /// </summary>
-        public void Erase(IPlayerSession player)
+        public void Erase(ICommonSession player)
         {
             var entity = player.AttachedEntity;
             _chat.DeleteMessagesBy(player);

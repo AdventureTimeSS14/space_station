@@ -25,6 +25,7 @@
     ears: ClothingHeadsetService
     belt: ClothingBeltJanitorFilled
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtJanitor
@@ -41,6 +42,7 @@
     ears: ClothingHeadsetService
     belt: ClothingBeltJanitorFilled
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtJanimaid

@@ -38,7 +38,7 @@
       - id: BoxSurvivalSecurity
       - id: Flash
       - id: MagazinePistol
-      
+
 - type: entity
   parent: ClothingBackpackSatchelSecurity
   id: ClothingBackpackSatchelSecurityFilledDetective
@@ -56,8 +56,8 @@
   components:
   - type: StorageFill
     contents:
-      - id: BoxSurvivalBrigmedic
       - id: Flash
+      - id: BoxSurvivalSecurity
 
 - type: entity
   parent: ClothingBackpackSatchelMedical

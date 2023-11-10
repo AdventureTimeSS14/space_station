@@ -21,8 +21,8 @@
         Blunt: 0
     staminaDamageFolded: 0
     staminaDamageOpen: 35
-    sizeOpened: 15
-    sizeClosed: 5
+    sizeOpened: Normal
+    sizeClosed: Small 
   - type: StaminaDamageOnHit
     damage: 0
   - type: MeleeWeapon
@@ -30,7 +30,7 @@
       types:
         Blunt: 2.4
   - type: Item
-    size: 5
+    size: Small
     sprite: ADT/Objects/Weapons/Melee/telescopic_baton.rsi
   - type: UseDelay
     delay: 1.0
@@ -46,7 +46,7 @@
 
 - type: entity
   name: TelescopicBatonBob
-  parent: BaseItem
+  parent: ADTtelescopicBaton
   id: ADTtelescopicBatonBob
   description: Big, dangerous telescopic baton. Can be stored in pockets when turned off.
   components:
@@ -67,8 +67,6 @@
         Blunt: 0
     staminaDamageFolded: 0
     staminaDamageOpen: 35
-    sizeOpened: 15
-    sizeClosed: 5
   - type: StaminaDamageOnHit
     damage: 0
   - type: MeleeWeapon
@@ -76,7 +74,7 @@
       types:
         Blunt: 2.4
   - type: Item
-    size: 5
+    size: Small
     sprite: ADT/Objects/Weapons/Melee/telescopic_baton_bob.rsi
   - type: UseDelay
     delay: 1.0
@@ -94,7 +92,7 @@
 
 - type: entity
   name: TelescopicBatonKon
-  parent: BaseItem
+  parent: ADTtelescopicBaton
   id: ADTtelescopicBatonKon
   description: Big, dangerous telescopic baton. Can be stored in pockets when turned off.
   components:
@@ -115,8 +113,6 @@
         Blunt: 0
     staminaDamageFolded: 0
     staminaDamageOpen: 35
-    sizeOpened: 15
-    sizeClosed: 5
   - type: StaminaDamageOnHit
     damage: 0
   - type: MeleeWeapon
@@ -124,7 +120,7 @@
       types:
         Blunt: 2.4
   - type: Item
-    size: 5
+    size: Small
     sprite: ADT/Objects/Weapons/Melee/telescopic_baton_kon.rsi
   - type: UseDelay
     delay: 1.0

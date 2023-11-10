@@ -11,7 +11,7 @@
       - state: icon-0
         map: ["enum.StorageFillLayers.Fill"]
   - type: Storage
-    capacity: 50
+    maxItemSize: Huge
     whitelist:
       components:
         - Pill

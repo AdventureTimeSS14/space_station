@@ -3,6 +3,9 @@
   parent: ClothingBackpackSatchel
   id: ClothingBackpackSatchelIAAFilled
   components:
+    - type: Storage
+      maxItemSize: Huge
+      maxTotalWeight: 9000
     - type: StorageFill
       contents:
         - id: BoxSurvival
@@ -13,6 +16,9 @@
   parent: ClothingBackpackSatchelMedical
   id: ClothingBackpackSatchelPsychologistFilled
   components:
+    - type: Storage
+      maxItemSize: Huge
+      maxTotalWeight: 9000
     - type: StorageFill
       contents:
         - id: BoxSurvivalMedical

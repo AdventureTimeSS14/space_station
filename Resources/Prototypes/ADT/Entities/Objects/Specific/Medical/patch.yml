@@ -10,9 +10,10 @@
     scale: 1.3, 1.3
     state: patchpack
   - type: Item
-    size: 10
+    size: Normal
   - type: Storage
-    capacity: 18
+    maxTotalWeight: 12
+    maxItemSize: Small
     quickInsert: true
     areaInsert: true
     whitelist:
@@ -49,7 +50,7 @@
       map: ["enum.SolutionContainerLayers.Fill"]
   - type: Item
     sprite: ADT/Objects/Specific/Medical/patch.rsi
-    size: 3
+    size: Small
   - type: SolutionContainerManager
     solutions:
       pen:

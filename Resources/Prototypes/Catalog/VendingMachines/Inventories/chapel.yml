@@ -3,8 +3,10 @@
   startingInventory:
     ClothingUniformJumpsuitChaplain: 2
     ClothingUniformJumpskirtChaplain: 2
-    ClothingUniformJumpsuitMonasticRobeDark: 1
-    ClothingUniformJumpsuitMonasticRobeLight: 1
+    ClothingUniformJumpsuitMonasticRobeDark: 2
+    ClothingUniformJumpsuitMonasticRobeLight: 2
+    ADTClothingOuterBaseChaplainRasy: 2
+    ADTClothingNeckMantiesChaplain: 2
     ADTWoodenCross: 1
     ADTSilverCross: 1
     ADTGoldenCross: 1
@@ -19,6 +21,8 @@
     ClothingOuterPlagueSuit: 1
     ClothingMaskPlague: 1
     ClothingHeadsetService: 2
+    BoxCandle: 2
+    BoxCandleSmall: 2
   emaggedInventory:
     ClothingOuterArmorCult: 1
     ClothingHeadHelmetCult: 1

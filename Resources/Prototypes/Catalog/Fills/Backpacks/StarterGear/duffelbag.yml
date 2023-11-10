@@ -27,7 +27,7 @@
       - id: BoxSurvivalSecurity
       - id: Flash
       - id: MagazinePistol
-      
+
 - type: entity
   noSpawn: true
   parent: ClothingBackpackDuffelSecurity
@@ -47,8 +47,8 @@
   components:
   - type: StorageFill
     contents:
-      - id: BoxSurvivalBrigmedic
       - id: Flash
+      - id: BoxSurvivalSecurity
 
 - type: entity
   noSpawn: true

@@ -11,9 +11,27 @@
     size: 5
   - type: Clothing
     slots: [socks]
+  # - type: Tag
+  #   tags:
+  #     - socks
+  - type: Butcherable
+    butcheringType: Knife
+    spawned:
+    - id: MaterialCloth1
+      amount: 1
+  - type: Food
+    requiresSpecialDigestion: true
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
   - type: Tag
     tags:
-      - socks
+    - ClothMade
+    - socks
 
 - type: entity
   parent: ClothingUnderwearSocksBase
@@ -80,6 +98,6 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Under/broom.rsi
-  - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 1.2
+  #- type: ClothingSpeedModifier
+  #  walkModifier: 0.9
+  #  sprintModifier: 1.2
