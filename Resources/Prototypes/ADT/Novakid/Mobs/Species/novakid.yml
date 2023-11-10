@@ -8,8 +8,13 @@
   - type: HumanoidAppearance
     species: NovakidSpecies
   - type: Hunger
+  - type: Bloodstream
+    bloodReagent: Plasma
   - type: ZombieImmune
   - type: Thirst
+  - type: PointLight
+    color: "#ffffff"
+    energy: 0.4
   - type: Icon
     sprite: ADT/Mobs/Novakid/parts.rsi
     state: full_m
