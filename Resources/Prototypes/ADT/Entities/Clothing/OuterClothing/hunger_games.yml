@@ -17,9 +17,7 @@
         Heat: 0.8
   - type: ExplosionResistance
     damageCoefficient: 0.88
-  - type: Matchbox
+  #- type: Matchbox
   - type: Storage
-    whitelist:
-      tags:
-        - Knife
-        - Sidearm
+    maxItemSize: Small
+    maxTotalWeight: 2
