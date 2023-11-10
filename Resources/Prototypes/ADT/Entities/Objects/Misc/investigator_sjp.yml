@@ -8,13 +8,29 @@
       sprite: Objects/Misc/books.rsi
       layers:
         - state: book_space_law
-    - type: Paper
-      content: book-text-investigator
     - type: MeleeWeapon
       attackRate: 1
       damage:
         types:
           Blunt: 5
+
+- type: entity
+  id: ADTSpaceLaw
+  parent: BaseItem
+  name: Космический закон
+  description: На страже порядка
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book_space_law
+  - type: Tag
+    tags:
+    - Book
+  - type: GuideHelp
+    openOnActivation: true
+    guides:
+      - KorporateZakon
 
 - type: entity
   parent: BoxFolderBase
