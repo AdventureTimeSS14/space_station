@@ -379,10 +379,10 @@
 - type: reagent
   id: ADTMMorphine
   name: reagent-name-morphine
-  group: Medicine
+  group: [ Medicine, Narcotics ]
   desc: reagent-desc-morphine
   physicalDesc: reagent-physical-desc-translucent
-  flavor: medicine
+  flavor: bitter
   color: "#c98928"
   metabolisms:
     Medicine:
@@ -391,20 +391,17 @@
       - !type:MovespeedModifier
         conditions:
         - !type:TotalDamage
-          min: 25
-          max: 50
-        acceleration: 20
+          min: 60
+          max: 80
+        walkSpeedModifier: 0.8
+        sprintSpeedModifier: 0.9
       - !type:MovespeedModifier
         conditions:
         - !type:TotalDamage
-          min: 50
-          max: 75
-        walkSpeedModifier: 1.35
-        sprintSpeedModifier: 1.35
-
-
-
-
+          min: 80
+          max: 100
+        walkSpeedModifier: 0.6
+        sprintSpeedModifier: 0.7
 #      - !type:PopupMessage
 #        conditions:
 #        - !type:TotalDamage
@@ -413,4 +410,17 @@
 #        visualType: Small
 #        messages: [ "medicine-effect-usual" ]
 #        probability: 0.05
+#    Narcotic:
+#      effects:
+#      - !type:GenericStatusEffect
+#        key: SeeingRainbows
+#        component: SeeingRainbows
+#        type: Add
+#        time: 5
+#        refresh: false
+#      - !type:PopupMessage
+#        type: Local
+#        visualType: Small
+#        messages: [ "narcotic-effect-rainbows" ]
+#        probability: 0.07
       
