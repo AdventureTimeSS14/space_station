@@ -4,6 +4,7 @@
   roundStart: false # изменить потом
   prototype: MobNovakid
   sprites: MobNovakidSprites
+  defaultSkinTone: "#34a223"
   markingLimits: MobNovakidMarkingLimits
   dollPrototype: MobNovakidDummy
   skinColoration: Hues
