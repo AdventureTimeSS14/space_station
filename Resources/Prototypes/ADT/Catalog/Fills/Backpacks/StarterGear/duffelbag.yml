@@ -40,7 +40,7 @@
   components:
   - type: Storage
     maxItemSize: Huge
-    maxTotalWeight: 9000
+    maxTotalWeight: 40
   - type: StorageFill
     contents:
       - id: ClothingOuterHardsuitSyndieElite
