@@ -1,28 +1,8 @@
 - type: vendingMachineInventory
   id: ADTPrazatClothesMateInventory
   startingInventory:
-    ADTClothingSandals: 3
-    ADTClothingUniformTurleneckBlack: 3
-    ADTClothingUniformTurleneckBlackWomen: 3
-    ADTClothingUniformTurleneckWhite: 3
-    ADTClothingUniformTurleneckWhiteBlack: 3
-    ADTClothingUniformTurleneckWhiteWomen: 3
-    ADTClothingUniformTurleneckBlackSleeveless: 3
-    ADTClothingUniformTurleneckBlackWomenSleeveless: 3
-    ADTClothingUniformTurleneckWhiteSleeveless: 3
-    ADTClothingUniformTurleneckWhiteBlackSleeveless: 3
-    ADTClothingUniformTurleneckWhiteWomenSleeveless: 3
     SirenaChokerWithSpike: 3
     SirenaChokerWithHeart: 3
-    ADTJumpskirtSwimwearBlack: 2
-    ADTJumpskirtSwimwearBlue: 2
-    ADTJumpskirtSwimwearGold: 2
-    ADTJumpskirtSwimwearGreen: 2
-    ADTJumpskirtSwimwearOrange: 2
-    ADTJumpskirtSwimwearPurple: 2
-    ADTJumpskirtSwimwearRed: 2
-    ADTJumpskirtSwimwearWhite: 2
-    ADTJumpskirtSwimwearYellow: 2
     ADTJumpsuitDenimPants: 2
     ADTJumpsuitDenim: 2
     ADTJumpsuitCamouflageTshirt: 2
