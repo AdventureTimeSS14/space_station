@@ -61,3 +61,6 @@ ent-ADTClothingHeadHairPin = золотая заколка
 
 ent-ADTClothingHeadPovar = Поварской колпак-берет шеф-повара
     .desc = Обязательный головной убор уважающего себя шеф-повара, а так-же чтобы на еду не попали волосы.
+
+ent-ADTClothingHeadHelmetHungerGamesCapitols = Шлем Капитолия
+    .desc = Шлем компании "Космических Голодных Игр".
