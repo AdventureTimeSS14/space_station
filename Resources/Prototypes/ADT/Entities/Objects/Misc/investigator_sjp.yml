@@ -8,6 +8,8 @@
       sprite: Objects/Misc/books.rsi
       layers:
         - state: book_space_law
+    - type: Paper
+      content: book-text-investigator
     - type: MeleeWeapon
       attackRate: 1
       damage:
