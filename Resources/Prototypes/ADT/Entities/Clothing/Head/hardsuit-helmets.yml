@@ -216,12 +216,12 @@
     sprite: ADT/Clothing/Head/Helmets/helmet_capitols.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Helmets/helmet_capitols.rsi
-    quickEquip: true
+    ##quickEquip: true
   - type: IngestionBlocker
   - type: IdentityBlocker
   - type: PointLight
     enabled: false
-    color: "#0000FF"
+    color: "#30d5c8"
     radius: 7
     energy: 1
   - type: Armor
