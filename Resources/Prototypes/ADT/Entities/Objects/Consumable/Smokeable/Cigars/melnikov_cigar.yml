@@ -35,18 +35,32 @@
   - type: Item
     size: Tiny
 
+#- type: entity
+#  id: ADTBaseMelnikovCigarSpent
+#  parent: BaseMelnikovCigar
+#  suffix: spent
+#  components:
+#  - type: Sprite
+#    state: burnt-icon
+#  - type: Smokable
+#    state: Burnt
+#  - type: SolutionContainerManager
+#    solutions:
+#      smokable:
+#        maxVol: 45
 - type: entity
   id: ADTBaseMelnikovCigarSpent
   parent: BaseMelnikovCigar
   suffix: spent
   components:
   - type: Sprite
+    sprite: Objects/Consumable/Smokeables/Cigars/cigar-gold.rsi
     state: burnt-icon
   - type: Smokable
+    sprite: Objects/Consumable/Smokeables/Cigars/cigar-gold.rsi
     state: Burnt
   - type: SolutionContainerManager
     solutions:
       smokable:
         maxVol: 45
-
 
