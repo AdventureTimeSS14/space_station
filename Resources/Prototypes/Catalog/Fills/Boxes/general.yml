@@ -175,8 +175,8 @@
   description: A box of decades old military surplus rations. It is surprisingly not rotten.
   components:
   - type: Storage
-    maxItemSize: Large
-    maxTotalWeight: 100
+    maxItemSize: Normal
+    maxTotalWeight: 10
   - type: StorageFill
     contents:
       - id: DrinkMREFlask # Size 8

@@ -96,6 +96,7 @@
       - ADTPosterContrabandFearThem # Спрайт от Иллюми
       - ADTPosterContrabandSilence # Спрайт от Иллюми
       - ADTPosterContrabandLustUma
+      - ADTPosterContrabandLustArDeco
     chance: 1
 
 - type: entity
