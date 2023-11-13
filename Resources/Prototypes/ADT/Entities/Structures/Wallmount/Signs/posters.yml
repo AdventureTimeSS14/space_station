@@ -76,6 +76,15 @@
   - type: Sprite
     state: poster_adtlustuma_contraband #Спрайт от Празата
 
+- type: entity
+  parent: PosterBase
+  id: ADTPosterContrabandLustArDeco
+  name: Tayaran ArDeco
+  description: "A poster with tayaran women of attractive appearance and in ar deco suit."
+  components:
+  - type: Sprite
+    state: poster_adtlustardeco_contraband #Спрайт от Празата
+
 #картины
 
 - type: entity

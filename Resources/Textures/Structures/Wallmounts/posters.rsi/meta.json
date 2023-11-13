@@ -418,6 +418,9 @@
             "name": "poster_adtlustuma_contraband"
         },
         {
+            "name": "poster_adtlustardeco_contraband"
+        },
+        {
             "name": "poster52_contraband",
             "directions": 1,
             "delays": [

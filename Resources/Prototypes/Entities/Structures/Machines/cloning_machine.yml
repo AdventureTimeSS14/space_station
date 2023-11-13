@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: CloningPod
   parent: BaseMachinePowered
   name: cloning pod
@@ -25,7 +25,7 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.25,-0.5,0.25,0.5"
+          bounds: "-0.2,-0.4,0.2,0.4"
         density: 190
         mask:
         - MachineMask
