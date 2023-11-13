@@ -486,3 +486,18 @@
   - type: Sprite
     sprite: ADT/Objects/Decoration/triangles_birthday.rsi
     state: ryright
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterDontSitDown
+  name: "Don not sit down"
+  description: "Don not sit down"
+  suffix: One Year
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/dontsitdown.rsi
+    state: dontsitdown
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: cyan
