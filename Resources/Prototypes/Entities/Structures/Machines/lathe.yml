@@ -395,6 +395,7 @@
       - SodaDispenserMachineCircuitboard
       - TelecomServerCircuitboard
       - MassMediaCircuitboard
+      - FormPrinterMachineCircuitboard
       - ADTSMESIndustrialMachineCircuitboard
   - type: MaterialStorage
     whitelist:
