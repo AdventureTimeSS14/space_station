@@ -11,7 +11,7 @@
       state: gold-icon
     - type: Item
       sprite: ADT/Memes/gold-crowbar.rsi
-      size: 10
+      size: Normal
       heldPrefix: gold
 
 - type: loadout

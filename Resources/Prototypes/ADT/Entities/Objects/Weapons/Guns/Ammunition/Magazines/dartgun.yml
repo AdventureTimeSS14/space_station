@@ -15,7 +15,7 @@
     proto: Syringecartridge
     capacity: 8
   - type: Item
-    size: 3
+    size: Tiny
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container

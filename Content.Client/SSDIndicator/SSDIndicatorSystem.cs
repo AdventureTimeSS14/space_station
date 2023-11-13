@@ -1,4 +1,4 @@
-﻿using Content.Shared.CCVar;
+using Content.Shared.CCVar;
 using Content.Shared.SSDIndicator;
 using Content.Shared.StatusIcon;
 using Content.Shared.StatusIcon.Components;
@@ -26,7 +26,8 @@ public sealed class SSDIndicatorSystem : EntitySystem
     {
         if (!component.IsSSD ||
             !_cfg.GetCVar(CCVars.ICShowSSDIndicator) ||
-            args.InContainer)
+            args.InContainer ||
+            args.HasStealthComponent)
             return;
 
         args.StatusIcons.Add(_prototype.Index<StatusIconPrototype>(component.Icon));

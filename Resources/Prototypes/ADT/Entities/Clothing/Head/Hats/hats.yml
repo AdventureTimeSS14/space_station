@@ -244,3 +244,65 @@
     sprite: ADT/Clothing/Head/Hats/hat_povar.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/hat_povar.rsi
+
+#колпаки ко Дню Рождения
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsNTCap
+  name: NT birthday cap
+  description: NT birthday cap
+  suffix: One Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/ntbirthdaycap.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/ntbirthdaycap.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsBlueCap
+  name: blue birthday cap
+  description: blue birthday cap
+  suffix: One Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/bluebirthdaycap.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/bluebirthdaycap.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsGrayCap
+  name: gray birthday cap
+  description: gray birthday cap
+  suffix: One Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/graybirthdaycap.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/graybirthdaycap.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsPinkCap
+  name: pink birthday cap
+  description: pink birthday cap
+  suffix: One Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/pinkbirthdaycap.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/pinkbirthdaycap.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsSyndieCap
+  name: syndie birthday cap
+  description: syndie birthday cap
+  suffix: One Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/syndiebirthdaycap.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/syndiebirthdaycap.rsi

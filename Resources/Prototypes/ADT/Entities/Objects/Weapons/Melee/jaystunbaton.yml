@@ -27,7 +27,7 @@
   - type: ItemCooldown 
   - type: Item
     heldPrefix: off
-    size: 20
+    size: Normal
   - type: Clothing
     sprite: ADT/Objects/Weapons/Melee/jaystunbaton.rsi
     quickEquip: false
