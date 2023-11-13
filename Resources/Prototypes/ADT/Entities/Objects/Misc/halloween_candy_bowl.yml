@@ -22,7 +22,7 @@
     maxFillLevels: 4
     fillBaseName: icon
   - type: Item
-    size: 50
+    size: Huge
 
 - type: entity
   name: halloween candy bowl

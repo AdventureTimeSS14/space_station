@@ -9,6 +9,7 @@
     state: hypo
   - type: Item
     sprite: ADT/Objects/Specific/cyberhypo.rsi
+    size: Small
   - type: SolutionContainerManager
     solutions:
       hypospray:

@@ -31,3 +31,46 @@
       - id: ADTPlushieAkula
       - id: ADTPlushiePrazat
       - id: ADTPlushieLo
+
+- type: entity
+  id: ADTCrateBirthdayParty
+  parent: CrateGenericSteel
+  components:
+  - type: StorageFill
+    contents:
+      - id: GlowstickBase
+        amount: 2
+      - id: GlowstickBlue
+        amount: 2
+      - id: GlowstickPurple
+        amount: 2
+      - id: GlowstickRed
+        amount: 2
+      - id: GlowstickYellow
+        amount: 2
+      - id: FoodCakeBirthday
+        amount: 4
+      - id: DrinkLean
+        amount: 4
+      - id: KnifePlastic
+        amount: 2
+      - id: ADTClothingHeadHatsNTCap
+        amount: 4
+      - id: ADTClothingHeadHatsBlueCap
+        amount: 1
+      - id: ADTClothingHeadHatsGrayCap
+        amount: 1
+      - id: ADTClothingHeadHatsPinkCap
+        amount: 1
+      - id: ADTClothingHeadHatsSyndieCap
+        amount: 1
+      - id: ADTBirthDayBalloon1
+        amount: 2
+      - id: ADTBirthDayBalloon2
+        amount: 2
+      - id: ADTBirthDayBalloon3
+        amount: 2
+      - id: ADTBirthDayBalloon4
+        amount: 2
+      - id: ADTBirthDayBalloon5
+        amount: 2

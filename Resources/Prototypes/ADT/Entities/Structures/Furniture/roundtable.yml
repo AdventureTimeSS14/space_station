@@ -1,0 +1,140 @@
+- type: entity
+  id: ADTRoundTablePlastic
+  parent: BaseStructure
+  name: plastic round table
+  description: Do not apply fire to this. Rumour says it burns easily.
+  suffix: One Year
+  components:
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 15
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: PlaceableSurface
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        density: 55
+        mask: # tables should collide with other tables
+        - TableMask
+        layer:
+        - TableLayer
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/roundtable.rsi
+    state: round_plastic
+  - type: Icon
+    sprite: ADT/Structures/Furniture/roundtable.rsi
+    state: round_plastic
+  - type: Climbable
+  - type: Bonkable
+    bonkDamage:
+      types:
+        Blunt: 4
+    bonkSound: !type:SoundCollectionSpecifier
+      collection: TrayHit
+  - type: Clickable
+  - type: Construction
+    graph: ADTRoundTable
+    node: plasticRoundTable
+  - type: Anchorable
+  - type: Rotatable
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+
+- type: entity
+  id: ADTRoundTableWood
+  parent: ADTRoundTablePlastic
+  name: wood round table
+  description: Do not apply fire to this. Rumour says it burns easily.
+  suffix: One Year
+  components:
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 15
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/woodhit.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/roundtable.rsi
+    state: round_wood
+  - type: Icon
+    sprite: ADT/Structures/Furniture/roundtable.rsi
+    state: round_wood
+  - type: Construction
+    graph: ADTRoundTable
+    node: woodRoundTable
+
+- type: entity
+  id: ADTRoundTableGlass
+  parent: ADTRoundTablePlastic
+  name: glass round table
+  description: Do not apply fire to this. Rumour says it burns easily.
+  suffix: One Year
+  components:
+  - type: GlassTable
+    climberDamage:
+      types:
+        Slash: 30
+    tableDamage:
+      types:
+        Blunt: 100
+    tableMassLimit: 60
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 15
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/glass_break2.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/roundtable.rsi
+    state: round_glass
+  - type: Icon
+    sprite: ADT/Structures/Furniture/roundtable.rsi
+    state: round_glass
+  - type: Construction
+    graph: ADTRoundTable
+    node: glassRoundTable

@@ -67,6 +67,7 @@
       # Sirena-Underwear-Start
       - id: ADTUnderwearBoxCap
       # Sirena-Underwear-End
+      - id: ADTSwimsuitCap
 
 - type: entity
   id: LockerCaptainFilled
@@ -109,6 +110,7 @@
       - id: ClothingOuterCoatCaptain
       # Corvax-Resprite-End
       - id: ADTClothingEyesHudAdvanced #ADT mods
+      - id: ADTSwimsuitCap
 
 - type: entity
   id: LockerHeadOfPersonnelFilled

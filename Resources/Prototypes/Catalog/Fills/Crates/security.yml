@@ -113,7 +113,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: BrigmedicPDA
+      #- id: BrigmedicPDA
       - id: ClothingHeadHatBeretSecurityMedic
       - id: ClothingHeadHatBeretBrigmedic
       - id: ClothingBackpackDuffelBrigmedic
