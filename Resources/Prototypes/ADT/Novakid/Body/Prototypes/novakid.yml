@@ -13,7 +13,7 @@
     torso:
       part: TorsoNovakid
       organs:
-        heart: OrganAnimalHeart
+        heart: OrganNovakidHeart
         lungs: OrganNovakidLungs
         stomach: OrganNovakidStomach
         liver: OrganAnimalLiver
