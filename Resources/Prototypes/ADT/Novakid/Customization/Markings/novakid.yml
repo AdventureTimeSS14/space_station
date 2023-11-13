@@ -388,13 +388,147 @@
   sprites:
   - sprite: ADT/Mobs/Novakid/custom.rsi
     state: torso_novakid_defolt
-# - type: marking
-#   id: NovakidOverlay
-#   bodyPart: [ Head, Chest ]
-#   markingCategory: Overlay
-#   speciesRestriction: [NovakidSpecies]
-#   forcedColoring: true
-#   color: ffffff
-#   sprites:
-#     - sprite: ADT/Mobs/Novakid/custom.rsi
-#       state: base_novakid_defolt
+
+- type: marking
+  id: NovakidFace19
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [NovakidSpecies]
+  sprites:
+  - sprite: ADT/Mobs/Novakid/custom.rsi
+    state: cone_a
+
+- type: marking
+  id: NovakidFace20
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [NovakidSpecies]
+  sprites:
+  - sprite: ADT/Mobs/Novakid/custom.rsi
+    state: connect_a
+
+- type: marking
+  id: NovakidFace21
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [NovakidSpecies]
+  sprites:
+  - sprite: ADT/Mobs/Novakid/custom.rsi
+    state: dot_a
+
+- type: marking
+  id: NovakidFace22
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [NovakidSpecies]
+  sprites:
+  - sprite: ADT/Mobs/Novakid/custom.rsi
+    state: dotline_a
+
+- type: marking
+  id: NovakidFace23
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [NovakidSpecies]
+  sprites:
+  - sprite: ADT/Mobs/Novakid/custom.rsi
+    state: eyes_a
+
+- type: marking
+  id: NovakidFace24
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [NovakidSpecies]
+  sprites:
+  - sprite: ADT/Mobs/Novakid/custom.rsi
+    state: G_a
+
+- type: marking
+  id: NovakidFace25
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [NovakidSpecies]
+  sprites:
+  - sprite: ADT/Mobs/Novakid/custom.rsi
+    state: house
+
+- type: marking
+  id: NovakidFace26
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [NovakidSpecies]
+  sprites:
+  - sprite: ADT/Mobs/Novakid/custom.rsi
+    state: K
+
+- type: marking
+  id: NovakidFace27
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [NovakidSpecies]
+  sprites:
+  - sprite: ADT/Mobs/Novakid/custom.rsi
+    state: lima-a
+
+- type: marking
+  id: NovakidFace28
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [NovakidSpecies]
+  sprites:
+  - sprite: ADT/Mobs/Novakid/custom.rsi
+    state: linedot_a
+
+- type: marking
+  id: NovakidFace29
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [NovakidSpecies]
+  sprites:
+  - sprite: ADT/Mobs/Novakid/custom.rsi
+    state: omega_a
+
+- type: marking
+  id: NovakidFace30
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [NovakidSpecies]
+  sprites:
+  - sprite: ADT/Mobs/Novakid/custom.rsi
+    state: plus
+
+- type: marking
+  id: NovakidFace31
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [NovakidSpecies]
+  sprites:
+  - sprite: ADT/Mobs/Novakid/custom.rsi
+    state: rose
+
+- type: marking
+  id: NovakidFace32
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [NovakidSpecies]
+  sprites:
+  - sprite: ADT/Mobs/Novakid/custom.rsi
+    state: shatter_a
+
+- type: marking
+  id: NovakidFace33
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [NovakidSpecies]
+  sprites:
+  - sprite: ADT/Mobs/Novakid/custom.rsi
+    state: star_a
+
+- type: marking
+  id: NovakidFace34
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [NovakidSpecies]
+  sprites:
+  - sprite: ADT/Mobs/Novakid/custom.rsi
+    state: two-a
