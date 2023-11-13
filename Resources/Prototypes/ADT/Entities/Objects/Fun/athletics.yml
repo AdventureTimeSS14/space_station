@@ -10,7 +10,7 @@
     state: dumbbell2kg
   - type: Item
     sprite: ADT/Objects/Fun/dumbbell.rsi
-    size: 15
+    size: Small
   - type: ItemCooldown
   - type: EmitEmoteOnUse #handler and component
     emote: WorkOut #emoteID
@@ -28,7 +28,7 @@
     state: dumbbell5kg
   - type: Item
     sprite: ADT/Objects/Fun/dumbbell.rsi
-    size: 20
+    size: Small
   - type: ItemCooldown
   - type: EmitEmoteOnUse #handler and component
     emote: WorkOut #emoteID
@@ -46,7 +46,7 @@
     state: dumbbell8kg
   - type: Item
     sprite: ADT/Objects/Fun/dumbbell.rsi
-    size: 25
+    size: Normal
   - type: ItemCooldown
   - type: EmitEmoteOnUse #handler and component
     emote: WorkOut #emoteID
@@ -64,7 +64,7 @@
     state: dumbbell10kg
   - type: Item
     sprite: ADT/Objects/Fun/dumbbell.rsi
-    size: 30
+    size: Normal
   - type: ItemCooldown
   - type: EmitEmoteOnUse #handler and component
     emote: WorkOut #emoteID
@@ -82,7 +82,7 @@
     state: dumbbell15kg
   - type: Item
     sprite: ADT/Objects/Fun/dumbbell.rsi
-    size: 40
+    size: Large
   - type: ItemCooldown
   - type: EmitEmoteOnUse #handler and component
     emote: WorkOut #emoteID
@@ -100,7 +100,7 @@
     state: dumbbell20kg
   - type: Item
     sprite: ADT/Objects/Fun/dumbbell.rsi
-    size: 50
+    size: Large
   - type: ItemCooldown
   - type: EmitEmoteOnUse #handler and component
     emote: WorkOut #emoteID
@@ -119,7 +119,7 @@
     state: icon5
   - type: Item
     sprite: ADT/Objects/Fun/kettlebell.rsi
-    size: 20
+    size: Normal
   - type: ItemCooldown
   - type: EmitEmoteOnUse
     emote: WorkOut
@@ -137,7 +137,7 @@
     state: icon10
   - type: Item
     sprite: ADT/Objects/Fun/kettlebell.rsi
-    size: 30
+    size: Normal
   - type: ItemCooldown
   - type: EmitEmoteOnUse
     emote: WorkOut
@@ -155,7 +155,7 @@
     state: icon15
   - type: Item
     sprite: ADT/Objects/Fun/kettlebell.rsi
-    size: 40
+    size: Large
   - type: ItemCooldown
   - type: EmitEmoteOnUse
     emote: WorkOut
@@ -173,7 +173,7 @@
     state: icon20
   - type: Item
     sprite: ADT/Objects/Fun/kettlebell.rsi
-    size: 50
+    size: Large
   - type: ItemCooldown
   - type: EmitEmoteOnUse
     emote: WorkOut
@@ -191,7 +191,7 @@
     state: icon25
   - type: Item
     sprite: ADT/Objects/Fun/kettlebell.rsi
-    size: 60
+    size: Huge
   - type: ItemCooldown
   - type: EmitEmoteOnUse
     emote: WorkOut
@@ -209,7 +209,7 @@
     state: icon30
   - type: Item
     sprite: ADT/Objects/Fun/kettlebell.rsi
-    size: 70
+    size: Huge
   - type: ItemCooldown
   - type: EmitEmoteOnUse
     emote: WorkOut

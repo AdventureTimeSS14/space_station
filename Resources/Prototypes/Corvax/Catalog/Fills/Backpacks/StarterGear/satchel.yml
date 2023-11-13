@@ -3,22 +3,22 @@
   parent: ClothingBackpackSatchel
   id: ClothingBackpackSatchelIAAFilled
   components:
-    - type: Storage
-      maxItemSize: Huge
-      maxTotalWeight: 9000
+    #- type: Storage
+    #  maxItemSize: Huge
+    #  maxTotalWeight: 9000
     - type: StorageFill
       contents:
         - id: BoxSurvival
-        - id: BriefcaseIAAFilled
+        #- id: BriefcaseIAAFilled
 
 - type: entity
   noSpawn: true
   parent: ClothingBackpackSatchelMedical
   id: ClothingBackpackSatchelPsychologistFilled
   components:
-    - type: Storage
-      maxItemSize: Huge
-      maxTotalWeight: 9000
+    #- type: Storage
+    #  maxItemSize: Huge
+    #  maxTotalWeight: 9000
     - type: StorageFill
       contents:
         - id: BoxSurvivalMedical

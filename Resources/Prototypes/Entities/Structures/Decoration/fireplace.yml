@@ -32,3 +32,6 @@
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
+  - type: Construction
+    graph: ADTFireplace
+    node: fireplace

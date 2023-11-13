@@ -4,13 +4,9 @@
   parent: ToolboxEmergency
   suffix: Filled
   components:
-  - type: Storage
-    maxItemSize: Ginormous
-    maxTotalWeight: 0
-    maxSlots: 50 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
-      - id: MiniFireExtinguisher
+      #- id: MiniFireExtinguisher
       - id: CrowbarRed
       - id: ClothingMaskBreath
         amount: 2

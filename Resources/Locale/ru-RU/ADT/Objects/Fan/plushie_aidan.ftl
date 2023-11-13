@@ -113,3 +113,11 @@ ent-ADTPlushieUma = Ума
 ent-ADTPlushieTimrika = Тимрика
     .desc = На вид мягкая, милая и шерстяная таяранка! Однако рисунки костей имеют свою историю.
     .suffix = { "" }
+
+ent-ADTPlushieAmira = Амира
+    .desc = На вид мягкая и милая научный руководитель.
+    .suffix = { "" }
+
+ent-ADTPlushieOvai = Овай
+    .desc = На вид мягкий и милый ящер-атмос.
+    .suffix = { "" }

@@ -18,6 +18,8 @@
     containers:
       ballistic-ammo: !type:Container
         ents: []
+  - type: Item
+    size: Small
 
 - type: entity
   id: SpeedLoader357
