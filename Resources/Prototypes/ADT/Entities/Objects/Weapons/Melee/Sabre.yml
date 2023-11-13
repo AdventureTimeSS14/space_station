@@ -18,7 +18,7 @@
         Cellular: 50
         Radiation: 50
   - type: Item
-    size: 15
+    size: Huge
     sprite: ADT/Objects/Weapons/Melee/supreme-commander-sabre.rsi
   - type: DisarmMalus
 
@@ -43,6 +43,6 @@
         Radiation: 15
         Blunt: -1
   - type: Item
-    size: 15
+    size: Huge
     sprite: ADT/Objects/Weapons/Melee/supreme-sabre.rsi
   - type: DisarmMalus

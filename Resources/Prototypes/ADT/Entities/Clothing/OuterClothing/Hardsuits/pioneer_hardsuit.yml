@@ -1,0 +1,33 @@
+- type: entity
+  parent: ClothingOuterHardsuitSyndieCommander
+  id: ADTClothingOuterHardsuitPioneerAgent
+  name: agent "Pioneer" hardsuit
+  description: agent "Pioneer" hardsuit
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/pioneeragent.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/pioneeragent.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ADTClothingHeadHelmetHardsuitPioneerAgent
+
+- type: entity
+  parent: ClothingHeadHelmetHardsuitSyndieCommander
+  id: ADTClothingHeadHelmetHardsuitPioneerAgent
+  noSpawn: true
+  name: agent "Pioneer" hardsuit helmet
+  description: agent "Pioneer" hardsuit helmet
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/pioneeragenthelmet.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/pioneeragenthelmet.rsi
+  - type: PointLight # Corvax-Resprite
+    color: cyan
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8

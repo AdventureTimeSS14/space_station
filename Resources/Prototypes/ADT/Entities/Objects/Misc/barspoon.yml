@@ -11,6 +11,7 @@
     state: barspoon
   - type: Item
     heldPrefix: spoon
+    size: Tiny
   - type: Utensil
     types:
     - Spoon

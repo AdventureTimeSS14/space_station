@@ -8,7 +8,7 @@
     sound:
       path: /Audio/Items/toolbox_drop.ogg
   - type: Storage
-    maxSlots: 7
+    maxSlots: 8
     maxItemSize: Normal
     maxTotalWeight: 14
   - type: Item

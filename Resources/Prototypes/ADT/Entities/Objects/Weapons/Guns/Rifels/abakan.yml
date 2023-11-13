@@ -58,7 +58,7 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
   - type: Item
-    size: 50
+    size: Large
 
 - type: entity
   name: AN-97
@@ -120,4 +120,4 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
   - type: Item
-    size: 50
+    size: Large

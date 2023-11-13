@@ -10,6 +10,8 @@
         maxVol: 5
   - type: Drink
     isOpen: true
+  - type: Item
+    size: Small
   - type: FitsInDispenser
     solution: drink
   - type: DrawableSolution

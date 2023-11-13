@@ -20,7 +20,7 @@
     reflectProb: .5
     spread: 90        
   - type: Item
-    size: 15
+    size: Huge
     sprite: ADT/Objects/Weapons/Melee/pyotr_sabre.rsi
   - type: DisarmMalus
   - type: Tag

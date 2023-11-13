@@ -512,3 +512,14 @@
     sprite: ADT/Clothing/Uniforms/Jumpskirt/shortdressblackgold.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/shortdressblackgold.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTSwimsuitCap
+  name: captain swimsuit
+  description: Do not go to the auditor from CENTCOM in this
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/captainswimsuit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/captainswimsuit.rsi
