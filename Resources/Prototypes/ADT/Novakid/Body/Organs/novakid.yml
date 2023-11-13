@@ -5,6 +5,9 @@
   components:
   - type: Stomach
     maxVol: 50
+  - type: Metabolizer
+    maxReagents: 5
+    metabolizerTypes: [ Novakid ]
 
 - type: entity
   id: OrganNovakidLungs
@@ -13,3 +16,16 @@
   components:
   - type: Metabolizer
     metabolizerTypes: [ Novakid ]
+
+- type: entity
+  id: OrganNovakidHeart
+  parent: OrganAnimalHeart
+  suffix: "novakid"
+  components:
+  - type: Metabolizer
+    maxReagents: 2
+    metabolizerTypes: [ Novakid ]
+    groups:
+    - id: Medicine
+    - id: Poison
+    - id: Narcotic
