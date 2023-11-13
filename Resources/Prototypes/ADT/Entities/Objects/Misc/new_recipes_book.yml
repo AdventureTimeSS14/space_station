@@ -11,6 +11,8 @@
   - type: Tag
     tags:
     - Book
+  - type: Item
+    size: Small
   - type: GuideHelp
     openOnActivation: true
     guides:
@@ -29,6 +31,8 @@
   - type: Tag
     tags:
     - Book
+  - type: Item
+    size: Small
   - type: GuideHelp
     openOnActivation: true
     guides:

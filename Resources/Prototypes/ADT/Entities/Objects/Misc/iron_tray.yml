@@ -15,7 +15,7 @@
 #        - Food
 #        - Drink
   - type: Item
-    size: 300
+    size: Ginormous
   - type: ItemCooldown
   - type: MeleeWeapon
     damage:

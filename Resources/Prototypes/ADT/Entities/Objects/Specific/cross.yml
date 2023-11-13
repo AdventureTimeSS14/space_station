@@ -30,7 +30,7 @@
     state: icon
     scale: 0.5 , 0.5
   - type: Item
-    size: 5
+    size: Small
     sprite: ADT/Objects/Specific/Chapel/woodencross.rsi
   - type: MeleeWeapon
     damage:
@@ -48,7 +48,7 @@
     state: icon
     scale: 0.5 , 0.5
   - type: Item
-    size: 5
+    size: Small
     sprite: ADT/Objects/Specific/Chapel/silvercross.rsi
 
 - type: entity
@@ -62,5 +62,5 @@
     state: icon
     scale: 0.5 , 0.5
   - type: Item
-    size: 5
+    size: Small
     sprite: ADT/Objects/Specific/Chapel/goldencross.rsi

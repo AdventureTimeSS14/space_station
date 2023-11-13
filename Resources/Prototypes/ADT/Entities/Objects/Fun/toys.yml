@@ -78,7 +78,7 @@
       types:
         Blunt: 0
   - type: Item
-    size: 10
+    size: Small
     sprite: Objects/Fun/toys.rsi
     heldPrefix: garbagerama
   - type: ItemCooldown
@@ -373,3 +373,23 @@
   - type: Sprite
     sprite: ADT/Objects/Fun/toys.rsi
     state: plushie_timrika
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieAmira
+  name: Amira plushie
+  description: It looks like a soft and cute research director.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_amira
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieOvai
+  name: Ovai plushie
+  description: It looks like a soft and cute atmos.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_ovai

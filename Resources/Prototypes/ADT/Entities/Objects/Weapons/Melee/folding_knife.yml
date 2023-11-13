@@ -30,7 +30,7 @@
       types:
         Slash: 10
   - type: Item
-    size: 5
+    size: Small
     sprite: ADT/Objects/Weapons/Melee/folding_knife.rsi
   - type: UseDelay
     delay: 1.0

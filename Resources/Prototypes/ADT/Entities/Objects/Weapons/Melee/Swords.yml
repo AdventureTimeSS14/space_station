@@ -17,7 +17,7 @@
       types:
         Slash: 25
   - type: Item
-    size: 15
+    size: Huge
     sprite: ADT/Objects/Weapons/Melee/murasama.rsi
   - type: DisarmMalus
 
@@ -46,7 +46,7 @@
       types:
         Blunt: 1
   - type: Item
-    size: 15
+    size: Huge
   - type: DisarmMalus
   - type: Reflect
     enabled: true
@@ -96,7 +96,7 @@
         Blunt: 10
         Structural: 35
   - type: Item
-    size: 20
+    size: Huge
   - type: DisarmMalus
   - type: Clothing
     quickEquip: false

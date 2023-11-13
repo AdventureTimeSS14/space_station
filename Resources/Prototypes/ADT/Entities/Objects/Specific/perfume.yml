@@ -20,6 +20,7 @@
     state: perfume
   - type: Item
     sprite: ADT/Objects/Specific/perfume_lilac.rsi
+    size: Small
   - type: Spray
     transferAmount: 3
 
@@ -41,7 +42,7 @@
     maxItemSize: Small
   - type: Item
     sprite: ADT/Objects/Specific/perfume_lilac_box.rsi
-    size: 5
+    size: Normal
     heldPrefix: box
   - type: StorageFill
     contents:

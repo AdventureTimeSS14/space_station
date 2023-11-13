@@ -94,3 +94,60 @@
   - type: Sprite
     sprite: ADT/Structures/Furniture/spider_stool.rsi #спрайт от Умы
     state: icon
+
+- type: entity
+  name: pizzeria chair
+  id: ADTPizzeriaStool
+  parent: SeatBase
+  description: It looks spooky.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/pizzeria_stool.rsi #спрайт от Иллюми
+    state: icon
+  - type: Construction
+    graph: ADTStool
+    node: pizzeriaStool
+
+- type: entity
+  name: red stool
+  id: ADTRedStool
+  parent: SeatBase
+  description: It looks spooky.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/red_stool.rsi #спрайт от Овая
+    state: icon
+  - type: Construction
+    graph: ADTStool
+    node: redStool
+
+- type: entity
+  name: white stool
+  id: ADTWhiteStool
+  parent: SeatBase
+  description: It looks spooky.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/white_stool.rsi #спрайт от Овая
+    state: icon
+  - type: Construction
+    graph: ADTStool
+    node: whiteStool
