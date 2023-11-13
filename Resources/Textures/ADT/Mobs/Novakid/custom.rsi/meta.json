@@ -175,6 +175,70 @@
         {
             "name": "torso_novakid_defolt",
             "directions": 4
+        },
+        {
+            "name": "cone_a",
+            "directions": 4
+        },
+        {
+            "name": "connect_a",
+            "directions": 4
+        },
+        {
+            "name": "dot_a",
+            "directions": 4
+        },
+        {
+            "name": "dotline_a",
+            "directions": 4
+        },
+        {
+            "name": "G_a",
+            "directions": 4
+        },
+        {
+            "name": "house",
+            "directions": 4
+        },
+        {
+            "name": "K",
+            "directions": 4
+        },
+        {
+            "name": "lima-a",
+            "directions": 4
+        },
+        {
+            "name": "linedot_a",
+            "directions": 4
+        },
+        {
+            "name": "omega_a",
+            "directions": 4
+        },
+        {
+            "name": "plus",
+            "directions": 4
+        },
+        {
+            "name": "rose",
+            "directions": 4
+        },
+        {
+            "name": "shatter_a",
+            "directions": 4
+        },
+        {
+            "name": "star_a",
+            "directions": 4
+        },
+        {
+            "name": "two-a",
+            "directions": 4
+        },
+        {
+            "name": "eyes_a",
+            "directions": 4
         }
     ]
 }

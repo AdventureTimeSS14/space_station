@@ -204,13 +204,13 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 501
+            damage: 251
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
         - trigger:
             !type:DamageTrigger
-            damage: 500 #Very weak shield
+            damage: 250 #Very weak shield
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
