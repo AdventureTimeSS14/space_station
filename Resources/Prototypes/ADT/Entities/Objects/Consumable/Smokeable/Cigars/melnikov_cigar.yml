@@ -1,8 +1,73 @@
+#- type: entity
+#  parent: BaseSmokable
+#  id: BaseMelnikovCigar
+#  abstract: true
+#  components:
+#  - type: Smokable
+#    exposeTemperature: 1173.15
+#  - type: Cigar
+#  - type: Tag
+ #   tags:
+ #   - Trash
+ # - type: SolutionContainerManager
+  #  solutions:
+  #    smokable:
+  #      maxVol: 45
+  #      reagents:
+  #        - ReagentId: Nicotine
+  #          Quantity: 40
+  #        - ReagentId: Omnizine
+ #           Quantity: 5
+
+#- type: entity
+ # id: ADTMelnikovCigar
+#  parent: BaseMelnikovCigar
+#  name: Сигара Алексея Мельникова
+#  description: Кому вообще пришло в голову называть сигары чьим-то именем?
+#  components:
+#  - type: Sprite
+#    sprite: Objects/Consumable/Smokeables/Cigars/cigar-gold.rsi
+#    state: unlit-icon
+#  - type: Clothing
+#    sprite: Objects/Consumable/Smokeables/Cigars/cigar-gold.rsi
+#    slots: [ mask ]
+#    equippedPrefix: unlit
+#  - type: Item
+#    size: Tiny
+
+#- type: entity
+#  id: ADTBaseMelnikovCigarSpent
+#  parent: BaseMelnikovCigar
+#  suffix: spent
+#  components:
+#  - type: Sprite
+#    state: burnt-icon
+#  - type: Smokable
+#    state: Burnt
+#  - type: SolutionContainerManager
+#    solutions:
+#      smokable:
+#        maxVol: 45    
 - type: entity
-  parent: BaseSmokable
-  id: BaseMelnikovCigar
-  abstract: true
+  id: ADTMelnikovCigar
+  parent: BaseCigar
+  name: Сигара Алексея Мельникова
+  description: Кому вообще пришло в голову называть сигары чьим-то именем?
   components:
+  - type: Sprite
+    sprite: Objects/Consumable/Smokeables/Cigars/cigar.rsi
+    state: unlit-icon
+  - type: Tag
+    tags:
+      - Cigar
+      - Trash
+  - type: Clothing
+    sprite: Objects/Consumable/Smokeables/Cigars/cigar.rsi
+    slots: [ mask ]
+    equippedPrefix: unlit
+  - type: Item
+    size: Tiny
+      components:
   - type: Smokable
     exposeTemperature: 1173.15
   - type: Cigar
@@ -18,49 +83,3 @@
             Quantity: 40
           - ReagentId: Omnizine
             Quantity: 5
-
-- type: entity
-  id: ADTMelnikovCigar
-  parent: BaseMelnikovCigar
-  name: Сигара Алексея Мельникова
-  description: Кому вообще пришло в голову называть сигары чьим-то именем?
-  components:
-  - type: Sprite
-    sprite: Objects/Consumable/Smokeables/Cigars/cigar-gold.rsi
-    state: unlit-icon
-  - type: Clothing
-    sprite: Objects/Consumable/Smokeables/Cigars/cigar-gold.rsi
-    slots: [ mask ]
-    equippedPrefix: unlit
-  - type: Item
-    size: Tiny
-
-#- type: entity
-#  id: ADTBaseMelnikovCigarSpent
-#  parent: BaseMelnikovCigar
-#  suffix: spent
-#  components:
-#  - type: Sprite
-#    state: burnt-icon
-#  - type: Smokable
-#    state: Burnt
-#  - type: SolutionContainerManager
-#    solutions:
-#      smokable:
-#        maxVol: 45
-- type: entity
-  id: ADTBaseMelnikovCigarSpent
-  parent: BaseMelnikovCigar
-  suffix: spent
-  components:
-  - type: Sprite
-    sprite: Objects/Consumable/Smokeables/Cigars/cigar-gold.rsi
-    state: burnt-icon
-  - type: Smokable
-    sprite: Objects/Consumable/Smokeables/Cigars/cigar-gold.rsi
-    state: Burnt
-  - type: SolutionContainerManager
-    solutions:
-      smokable:
-        maxVol: 45
-
