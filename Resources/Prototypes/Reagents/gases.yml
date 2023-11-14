@@ -57,6 +57,10 @@
     Poison:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Novakid
+          shouldHave: false
         damage:
           types:
             Poison: 3
