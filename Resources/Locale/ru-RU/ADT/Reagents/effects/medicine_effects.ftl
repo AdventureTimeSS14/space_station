@@ -13,3 +13,4 @@ medicine-effect-shock = Вы чувствуете, как боль от элек
 medicine-effect-major-stress = Ваше тело сильно напрягается.
 medicine-effect-emotions = Ваши эмоции и чувства становятся менее выразительными.
 medicine-effect-antipsychotic = Ваше зрение и мысли становятся менее расплывчатыми.
+medicine-effect-pain = Вы чувствуете, как ваша боль притупляется.

@@ -343,6 +343,7 @@
         type: Local
         visualType: Small
         messages: [ "medicine-effect-emotions" ]
+       #- medicine-effect-visible-emotions 
         probability: 0.04
 
 - type: reagent
@@ -379,48 +380,78 @@
 - type: reagent
   id: ADTMMorphine
   name: reagent-name-morphine
-  group: [ Medicine, Narcotics ]
+  group: Medicine
   desc: reagent-desc-morphine
   physicalDesc: reagent-physical-desc-translucent
   flavor: bitter
   color: "#c98928"
   metabolisms:
     Medicine:
-      metabolismRate: 0.03
+      metabolismRate: 0.1
       effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -0.25
       - !type:MovespeedModifier
         conditions:
         - !type:TotalDamage
           min: 60
           max: 80
-        walkSpeedModifier: 0.8
-        sprintSpeedModifier: 0.9
+        walkSpeedModifier: 1.15  #итого скорость будет ~2,015. (обычная = 2,5) 
+        sprintSpeedModifier: 1.27 #итого скорость будет ~4. (обычная = 4,5)
+        statusLifetime: 1.1
       - !type:MovespeedModifier
         conditions:
         - !type:TotalDamage
           min: 80
           max: 100
-        walkSpeedModifier: 0.6
-        sprintSpeedModifier: 0.7
-#      - !type:PopupMessage
-#        conditions:
-#        - !type:TotalDamage
-#          min: 0.5
-#        type: Local
-#        visualType: Small
-#        messages: [ "medicine-effect-usual" ]
-#        probability: 0.05
-#    Narcotic:
-#      effects:
-#      - !type:GenericStatusEffect
-#        key: SeeingRainbows
-#        component: SeeingRainbows
-#        type: Add
-#        time: 5
-#        refresh: false
-#      - !type:PopupMessage
-#        type: Local
-#        visualType: Small
-#        messages: [ "narcotic-effect-rainbows" ]
-#        probability: 0.07
-      
+        walkSpeedModifier: 1.2 # 1,5 
+        sprintSpeedModifier: 1.56 # 3,5 
+        statusLifetime: 1.1
+      - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 0.5
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-pain" ]
+        probability: 0.05
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 20
+        probability: 0.5
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 20
+        damage:
+          types:
+            Asphyxiation: 5
+      - !type:Jitter
+        conditions:
+        - !type:ReagentThreshold
+          min: 20
+    Narcotic:
+      metabolismRate: 0.1
+      effects:
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 1.5
+        refresh: false
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages:
+         - narcotic-effect-rainbows
+         - goodfeeling-artifact-drastic-3
+        probability: 0.05
+      - !type:PopupMessage
+        type: Pvs
+        visualType: Small
+        messages: [ "narcotic-effect-visible-miosis" ]
+        probability: 0.05
+

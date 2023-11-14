@@ -26,3 +26,71 @@
         visualType: Small
         messages: [ "narcotic-effect-sleepy" ]
         probability: 0.06
+
+
+- type: reagent
+  id: ADTPhronidolepaxorine
+  name: ADTPhronidolepaxorine
+  group: Toxins
+  desc: ADTPhronidolepaxorine
+  physicalDesc: reagent-physical-desc-translucent
+  flavor: bitter
+  color: "#c98928"
+  metabolisms:
+    Poison:
+      effects:  
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Siderlac #если метаболизируется сидерлак, то он не наносит урон.
+          min: 0
+          max: 0.5
+        - !type:OrganType
+          type: Novakid
+          shouldHave: false #все, кроме новакидов будут получать по 10 урона кислотными.
+        damage:
+          types:
+            Caustic: 5
+      - !type:Drunk
+        conditions:
+        - !type:OrganType
+          type: Novakid
+        boozePower: 10 #у этанола 2.
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:OrganType
+          type: Novakid
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 20 #у масла ТГК 16 стоит.
+        refresh: false
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Novakid
+        - !type:ReagentThreshold
+          min: 10
+        damage:
+          types:
+            Bloodloss: 0.5
+      - !type:AdjustTemperature
+        conditions:
+        - !type:OrganType
+          type: Novakid
+        - !type:ReagentThreshold
+          min: 20
+        - !type:Temperature
+          min: 190
+        amount: -15000
+      - !type:PopupMessage
+        conditions:
+        - !type:OrganType
+          type: Novakid
+        type: Local
+        visualType: Small
+        messages: [ "narcotic-effect-rainbows" ]
+        probability: 0.05
+#ну и эффекты. 
+#получилось небольшое спаггети, но я тупо не знаю, как нормально это всё сузить.
+

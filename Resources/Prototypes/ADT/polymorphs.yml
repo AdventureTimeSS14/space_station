@@ -1,0 +1,21 @@
+- type: polymorph
+  id: ADTMonkey1
+  entity: MobMonkey
+  forced: true
+  transferName: true
+  allowRepeatedMorphs: False
+  inventory: Drop
+  revertOnCrit: true
+  revertOnDeath: true
+  duration: 20
+
+- type: polymorph
+  id: ADTMonkey2
+  entity: MobMonkey
+  forced: true
+  transferName: true
+  allowRepeatedMorphs: False
+  inventory: Drop
+  revertOnCrit: true
+  revertOnDeath: true
+  duration: 60

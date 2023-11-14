@@ -1,0 +1,30 @@
+- type: reagent
+  id: ADTMChaoticPolymorphine
+  name: chaotic polymorphine
+  group: Medicine
+  desc: chaotic polymorphine
+  physicalDesc: reagent-physical-desc-opaque
+  flavor: medicine
+  color: "#f5c6dc"
+  metabolisms:
+    Medicine:
+      metabolismRate: 1
+      effects:
+      - !type:Polymorph
+        prototype: ADTMonkey1
+        conditions:
+          - !type:OrganType
+            type: Human
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTMonkey2
+        conditions:
+          - !type:OrganType
+            type: Human
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5

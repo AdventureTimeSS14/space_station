@@ -111,8 +111,8 @@
     damage:
       types:
         Blunt: 0
-  - type: TrashOnEmpty
-    solution: drink
+#  - type: TrashOnEmpty
+#    solution: drink
   - type: Openable
     sound:
       path: /Audio/Items/pop.ogg
