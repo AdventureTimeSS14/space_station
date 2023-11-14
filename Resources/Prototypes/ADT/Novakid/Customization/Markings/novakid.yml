@@ -361,7 +361,7 @@
 
 - type: marking
   id: HeadNovakidDefolt
-  bodyPart: Head
+  bodyPart: [ Head ]
   markingCategory: HeadTop
   speciesRestriction: [NovakidSpecies]
   forcedColoring: true
