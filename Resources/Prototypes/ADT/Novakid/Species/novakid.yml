@@ -36,6 +36,9 @@
   id: MobNovakidMarkingLimits
   onlyWhitelisted: true
   points:
+    Head:
+      points: 1
+      required: false
     Hair:
       points: 1
       required: false
