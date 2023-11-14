@@ -54,10 +54,10 @@
   suffix: spent
   components:
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Smokeables/melnikov_case.rsi
+    sprite: Objects/Consumable/Smokeables/Cigars/cigar-gold.rsi
     state: burnt-icon
   - type: Smokable
-    sprite: ADT/Objects/Consumable/Smokeables/melnikov_case.rsi
+    sprite: Objects/Consumable/Smokeables/Cigars/cigar-gold.rsi
     state: Burnt
   - type: SolutionContainerManager
     solutions:
