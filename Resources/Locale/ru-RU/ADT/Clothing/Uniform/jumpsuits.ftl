@@ -194,30 +194,30 @@ ent-ADTJumpskirtSwimwearYellow = желтый купальник
 
 ent-ADTJumpsuitAnarchyTshirt = черная футболка с символикой анархизма
     .desc = "Анархия-мама сынов своих любит, Анархия-мама не продаст, Свинцовым дождём врага приголубит, Анархия-мама - за нас!"
-    .suffix = { "" }
 
 ent-ADTJumpsuitDenimPants = джинсовые штаны
     .desc = Брюки из джинсовой ткани.
-    .suffix = { "" }
 
 ent-ADTJumpsuitDenim = джинсовый комбинезон
     .desc = Классический джинсовый полукомбинезон на лямках. Производства компании "Modeling Agency Dar-Vaxed".
-    .suffix = { "" }
 
 ent-ADTJumpsuitCamouflageTshirt = камуфляжная футболка
     .desc = Обычные футболка и брюки зеленой камуфляжной расцветки.
-    .suffix = { "" }
 
 ent-ADTJumpsuitCamouflageTshirtDesert = пустынная камуфляжная футболка
     .desc = Обычные футболка и брюки пустынной камуфляжной расцветки. Верните себе 2003 год!
-    .suffix = { "" }
 
 ent-ADTJumpsuitSerious = серьезная форма
     .desc = Серая футболка, черные джинсы - выглядит серьезно, грубо и круто!
-    .suffix = { "" }
 
 ent-ADTJumpskirtBlackShortDress = чёрное короткое платье
     .desc = Легкое платье с открытой спиной из чёрной шелковой ткани с золотыми лентами, для элегантных распутных дам. Производство компании "Modeling Agency Dar-Vaxed".
+
+ent-ADTClothingUniformJumpsuitHungerGames = Комбинезон Капитолия
+    .desc = Комбинезон компании "Космических Голодных Игр".
+
+ent-ADTSwimsuitCap = капитанский купальник
+    .desc = Только не выходите в этом перед проверяющими с ЦК.
     .suffix = { "" }
 
 ent-ADTClothingUniformPathologistSuit = костюм патологоанатома

@@ -1,9 +1,10 @@
 - type: species
   id: NovakidSpecies
   name: species-name-novakid
-  roundStart: false # изменить потом
+  roundStart: true
   prototype: MobNovakid
   sprites: MobNovakidSprites
+  defaultSkinTone: "#34a223"
   markingLimits: MobNovakidMarkingLimits
   dollPrototype: MobNovakidDummy
   skinColoration: Hues

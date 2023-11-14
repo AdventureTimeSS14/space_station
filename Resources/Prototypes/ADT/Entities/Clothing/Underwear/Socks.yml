@@ -8,7 +8,7 @@
   - type: Sprite
     state: icon
   - type: Item
-    size: 5
+    size: Tiny
   - type: Clothing
     slots: [socks]
   # - type: Tag

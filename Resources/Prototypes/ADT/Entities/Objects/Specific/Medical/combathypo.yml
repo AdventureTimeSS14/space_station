@@ -9,6 +9,7 @@
     state: icon
   - type: Item
     sprite: ADT/Objects/Specific/Medical/adt_combathypo.rsi
+    size: Normal
   - type: SolutionContainerManager
     solutions:
       hypospray:

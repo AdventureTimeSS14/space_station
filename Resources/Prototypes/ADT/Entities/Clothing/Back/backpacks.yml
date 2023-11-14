@@ -8,13 +8,14 @@
     sprite: ADT/Clothing/Back/syndicate_bag.rsi
     state: icon
   - type: Item
-    size: 9999
+    size: Huge
   - type: Clothing
     quickEquip: false
     slots:
     - back
   - type: Storage
-    maxItemSize: Ginormous
+    maxItemSize: Huge
+    maxTotalWeight: 28
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -37,13 +38,14 @@
     sprite: ADT/Clothing/Back/ussp_attaked_backpack.rsi
     state: icon
   - type: Item
-    size: 9999
+    size: Huge
   - type: Clothing
     quickEquip: false
     slots:
     - back
   - type: Storage
-    maxItemSize: Ginormous
+    maxItemSize: Huge
+    maxTotalWeight: 36
   - type: ContainerContainer
     containers:
       storagebase: !type:Container

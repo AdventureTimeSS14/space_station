@@ -5,7 +5,7 @@
   components:
   - type: Drink
   - type: Item
-    size: 8
+    size: Normal
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -101,7 +101,7 @@
   description: Keeping your drinks at the perfect temperature since 1892.
   components:
   - type: Item
-    size: 10
+    size: Normal
   - type: SolutionContainerManager
     solutions:
       drink:
