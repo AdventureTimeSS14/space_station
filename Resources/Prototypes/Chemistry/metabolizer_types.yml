@@ -44,3 +44,23 @@
 - type: metabolizerType
   id: Novakid
   name: novakid
+
+- type: metabolizerType
+  id: Demon
+  name: demon
+
+- type: metabolizerType
+  id: Shark
+  name: shark
+
+- type: metabolizerType
+  id: Vulpkanin
+  name: vulpkanin
+
+- type: metabolizerType
+  id: Tajaran
+  name: tajaran
+
+- type: metabolizerType
+  id: Reptilian
+  name: reptilian

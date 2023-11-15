@@ -5,3 +5,15 @@
   components:
     - type: Stomach
       maxVolume: 50
+
+- type: entity
+  id: OrganSharkHeart
+  parent: OrganAnimalHeart
+  components:
+  - type: Metabolizer
+    maxReagents: 2
+    metabolizerTypes: [ Shark ]
+    groups:
+    - id: Medicine
+    - id: Poison
+    - id: Narcotic

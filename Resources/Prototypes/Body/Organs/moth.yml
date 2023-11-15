@@ -26,3 +26,15 @@
     groups:
       - id: Food
       - id: Drink
+
+- type: entity
+  id: OrganMothHeart
+  parent: OrganAnimalHeart
+  components:
+  - type: Metabolizer
+    maxReagents: 2
+    metabolizerTypes: [ Moth ]
+    groups:
+    - id: Medicine
+    - id: Poison
+    - id: Narcotic

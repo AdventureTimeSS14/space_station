@@ -13,7 +13,7 @@
     torso:
       part: TorsoMoth
       organs:
-        heart: OrganAnimalHeart
+        heart: OrganMothHeart
         lungs: OrganHumanLungs
         stomach: OrganMothStomach
         liver: OrganAnimalLiver
