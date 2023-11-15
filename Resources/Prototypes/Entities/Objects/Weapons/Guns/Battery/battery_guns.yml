@@ -395,7 +395,7 @@
     zeroVisible: true
   - type: Appearance
   - type: Item
-    size: 20
+    size: Normal
   - type: Tag
     tags:
     - HighRiskItem
