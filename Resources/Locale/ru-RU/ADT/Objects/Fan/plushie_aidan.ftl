@@ -121,3 +121,7 @@ ent-ADTPlushieAmira = Амира
 ent-ADTPlushieOvai = Овай
     .desc = На вид мягкий и милый ящер-атмос.
     .suffix = { "" }
+
+ent-ADTPlushieFritz = Эллис
+    .desc = 
+    .suffix = { "" }

@@ -393,3 +393,13 @@
   - type: Sprite
     sprite: ADT/Objects/Fun/toys.rsi
     state: plushie_ovai
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieFritz
+  name: Ellis plushie
+  description: It looks like a soft and cute atmos.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_ellis
