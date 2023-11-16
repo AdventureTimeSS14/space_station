@@ -31,6 +31,7 @@
       - id: ADTPlushieAkula
       - id: ADTPlushiePrazat
       - id: ADTPlushieLo
+      - id: ADTPlushieFritz
 
 - type: entity
   id: ADTCrateBirthdayParty
