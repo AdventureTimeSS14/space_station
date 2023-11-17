@@ -88,5 +88,5 @@ ent-ADTClothingHeadHatsSyndieCap = синди колпак
 ent-ADTClothingHeadHatsCinnamonFlatCap = коричневая плоская кепка
     .desc = Кепка с закругленной тульей и короткими полями. Сшита из плотной ткани, что делает её идеальными для прохладной погоды. Производство компании "Modeling Agency Dar-Vaxed" 
 
-ent-ADTClothingHeadHatsGreyFlatCap = синди колпак
+ent-ADTClothingHeadHatsGreyFlatCap = серая плоская кепка
     .desc = { ent-ADTClothingHeadHatsCinnamonFlatCap.desc }
