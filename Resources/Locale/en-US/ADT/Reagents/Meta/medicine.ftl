@@ -27,3 +27,6 @@ reagent-desc-agolatine = An atypical antidepressant most commonly used to treat 
 
 reagent-name-haloperidol = haloperidol
 reagent-desc-haloperidol = A typical antipsychotic medication. Used in the treatment of schizophrenia, tics in Tourette syndrome, mania in bipolar disorder, delirium, agitation, acute psychosis, and hallucinations from alcohol withdrawal.
+
+reagent-name-morphine = morphine
+reagent-desc-morphine = A strong opiate that is found naturally in opium, by drying the latex of opium poppies. Mainly used as an analgesic.

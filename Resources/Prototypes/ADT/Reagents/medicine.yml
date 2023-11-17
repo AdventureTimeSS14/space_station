@@ -405,7 +405,6 @@
         conditions:
         - !type:TotalDamage
           min: 80
-          max: 100
         walkSpeedModifier: 1.2 # 1,5 
         sprintSpeedModifier: 1.56 # 3,5 
         statusLifetime: 1.1
@@ -421,7 +420,7 @@
         conditions:
         - !type:ReagentThreshold
           min: 20
-        probability: 0.5
+        probability: 0.3
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold

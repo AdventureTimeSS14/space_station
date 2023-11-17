@@ -134,3 +134,16 @@
       amount: 2
   products:
     Vitamin: 2
+
+- type: reaction
+  id: ADTMMorphine
+  minTemp: 370
+  reactants:
+    ADTMOpium:
+      amount: 1
+    Water:
+      amount: 1
+    Ethanol:
+      amount: 1
+  products:
+    ADTMMorphine: 3
