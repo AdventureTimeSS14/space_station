@@ -1,16 +1,39 @@
 - type: vendingMachineInventory
   id: ADTPrazatClothesMateInventory
   startingInventory:
+    ADTClothingHeadHatsCinnamonFlatCap: 2
+    ADTClothingHeadHatsGreyFlatCap: 2
+    ADTClothingEyesGlassesPink: 2
     SirenaChokerWithSpike: 3
     SirenaChokerWithHeart: 3
+    ADTClothingNeckGoldChain: 3
+    ADTClothingNeckBlueTie: 3
+    ADTClothingNeckGoldTie: 3
     ADTJumpsuitDenimPants: 2
     ADTJumpsuitDenim: 2
     ADTJumpsuitCamouflageTshirt: 2
     ADTJumpsuitCamouflageTshirtDesert: 2
     ADTJumpsuitSerious: 2
+    ADTClothingUniformJumpsuitBlackShirt: 2
+    ADTClothingUniformJumpsuitBlueShirt: 2
+    ADTClothingUniformJumpsuitPurpleShirt: 2
+    ADTClothingUniformJumpsuitRedShirt: 2
+    ADTClothingUniformJumpsuitFancyShirt: 2
+    ADTClothingUniformJumpsuitRedPlaidShirt: 2
+    ADTClothingUniformJumpsuitHawaiiShirt: 2
+    ADTClothingUniformJumpsuitGothicAttire: 2
+    ADTClothingUniformJumpsuitOldGreySuit: 2
+    ADTClothingUniformJumpsuitOldBrownSuit: 2
+    ADTClothingUniformJumpsuitSweatshirtBright: 2
     ADTClothingOuterGraySweatshirtTop: 2
     ADTClothingOuterBlackSweatshirtTop: 2
+    ADTClothingBeltBlackSuspenders: 3
+    ADTClothingBeltBrownSuspenders: 3
+    ADTClothingOuterWinterRussianCoat: 2
     ADTClothingUnderwearTopBraPea: 2
     ADTClothingUnderwearTopBraSportsBlack: 2
+    ADTClothingFootLightShoes: 2
+    ADTClothingFootWhiteSandals: 2
+    ADTClothingFootBlackBoots: 2
   contrabandInventory:
     ADTJumpsuitAnarchyTshirt: 2

@@ -35,6 +35,8 @@ ent-ClothingUnderwearBottomBoxersRD = трусы научного руковод
     .desc = Стандартное белье для научного руководителя.
 ent-ClothingUnderwearBottomPantiesRD = трусики научного руководителя
     .desc = Стандартное белье для научного руководителя.
+ent-ADTClothingUnderwearBottomLacePanties = кружевные трусики
+    .desc = Красивое кружевное нижнее бельё.
 
 ent-ClothingUnderwearTopBraSports = спортивный бра
     .desc =  Спортивный бра белого цвета.
@@ -54,6 +56,8 @@ ent-ClothingUnderwearTopBraQM = бра квартирмейстера
     .desc = Стандартный бра для квартирмейстера.
 ent-ClothingUnderwearTopBraRD = бра научного руководителя
     .desc = Стандартный бра для научного руководителя.
+ent-ADTClothingUnderwearTopLaceBra = кружевное бра
+    .desc = Красивое кружевное нижнее бельё
 
 ent-ClothingUnderwearSocksHigh = высокие носки
     .desc = Высокие белые носки NanoTrasen для рабочих станции.
@@ -61,6 +65,8 @@ ent-ClothingUnderwearSocksShort = короткие носки
     .desc = Короткие белые носки NanoTrasen для рабочих станции.
 ent-ClothingUnderwearSocksThigh = высокие чулки
     .desc = Стандартные белые чулки NanoTrasen для рабочих станции.
+ent-ADTClothingUnderwearLaceSocksThigh = кружевные чулки
+    .desc = Красивые кружевные чулки.
 
 ent-ADTClothingUnderwearTopBraSportsBlack = спортивный черный топик
     .desc = Для любителей спорта и стиля. Производство компании  "Modeling Agency Dar-Vaxed".

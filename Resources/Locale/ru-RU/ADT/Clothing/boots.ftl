@@ -36,3 +36,12 @@ ent-ADTClothingAidanShoes = остроконечные туфли Эйдана
 ent-ADTClothingFootGoldenHeels = золотые туфли
     .desc = Шикарная пара золотистых туфель. Благодаря особым свойствам ткани эти туфли могут носить даже представители тех видов, кому такая обувь обычно неудобна. Производства компании "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
+
+ent-ADTClothingFootLightShoes = дамские туфли
+    .desc = Элегантные туфли на высоком каблуке. Производство компании "Modeling Agency Dar-Vaxed"
+
+ent-ADTClothingFootWhiteSandals = белые сандали
+    .desc = Для тёплых сезонов станции.
+
+ent-ADTClothingFootBlackBoots = чёрные сапоги
+    .desc = В них удобно бегать хулиганам!
