@@ -3,3 +3,6 @@ ent-ADTClothingBlueshieldArmor = бронежилет офицера "Синег
 
 ent-ADTClothingHungerGamesArmorCapitols = Броня Капитолия
     .desc = Броня компании "Космических Голодных Игр".
+
+ent-ADTOuterClothingShahid = Жилет Шахида
+    .desc = Набит взрывчаткой
