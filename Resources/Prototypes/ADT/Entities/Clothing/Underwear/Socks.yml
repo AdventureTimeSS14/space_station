@@ -101,3 +101,13 @@
   #- type: ClothingSpeedModifier
   #  walkModifier: 0.9
   #  sprintModifier: 1.2
+
+#приколы празата
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearLaceSocksThigh
+  name: lace stockings
+  description: Good looking lace stockings.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/lace_socks_thigh.rsi

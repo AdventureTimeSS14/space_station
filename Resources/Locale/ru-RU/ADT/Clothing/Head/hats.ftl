@@ -84,3 +84,9 @@ ent-ADTClothingHeadHatsPinkCap = розовый колпак
 ent-ADTClothingHeadHatsSyndieCap = синди колпак
     .desc = Разве с таким колпаком нужно приглашение на праздник?
     .suffix = { "День рождения сервера" }
+
+ent-ADTClothingHeadHatsCinnamonFlatCap = коричневая плоская кепка
+    .desc = Кепка с закругленной тульей и короткими полями. Сшита из плотной ткани, что делает её идеальной для прохладной погоды. Производство компании "Modeling Agency Dar-Vaxed" 
+
+ent-ADTClothingHeadHatsGreyFlatCap = серая плоская кепка
+    .desc = { ent-ADTClothingHeadHatsCinnamonFlatCap.desc }

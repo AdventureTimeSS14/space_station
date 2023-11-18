@@ -161,3 +161,12 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Underwear/Top/peabra.rsi
+
+- type: entity
+  parent: ClothingUnderwearTopBase
+  id: ADTClothingUnderwearTopLaceBra
+  name: lace bra
+  description: Good looking lace underwear.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Top/lace_bra.rsi

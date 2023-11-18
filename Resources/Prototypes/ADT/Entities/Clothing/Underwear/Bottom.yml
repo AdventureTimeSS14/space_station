@@ -197,3 +197,12 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Underwear/monokini_bottom_black.rsi
+
+- type: entity
+  parent: ClothingUnderwearBottomBase
+  id: ADTClothingUnderwearBottomLacePanties
+  name: lace panties
+  description: Good looking lace underwear.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/lace_panties.rsi #спрайты от prazat911
