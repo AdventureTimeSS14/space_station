@@ -1,0 +1,1607 @@
+- type: loadout
+  id: LoadoutCommandCapNeckMantle
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Captain
+  items:
+    - ClothingNeckMantleCap
+
+- type: loadout
+  id: LoadoutCommandCapNeckCloak
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Captain
+  items:
+    - ClothingNeckCloakCap
+
+- type: loadout
+  id: LoadoutCommandCapNeckCloakFormal
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Captain
+  items:
+    - ClothingNeckCloakCapFormal
+
+- type: loadout
+  id: LoadoutCommandCapJumpsuitFormal
+  category: Jobs
+  cost: 3
+  exclusive: true
+  jobWhitelist:
+    - Captain
+  items:
+    - ClothingUniformJumpsuitCapFormal
+
+- type: loadout
+  id: LoadoutCommandCapJumpskirtFormal
+  category: Jobs
+  cost: 3
+  exclusive: true
+  jobWhitelist:
+    - Captain
+  items:
+    - ClothingUniformJumpskirtCapFormalDress
+
+- type: loadout
+  id: LoadoutCommandCapOuterWinter
+  category: Jobs
+  cost: 2
+  jobWhitelist:
+    - Captain
+  items:
+    - ClothingOuterWinterCap
+
+- type: loadout
+  id: LoadoutCommandCapGloves
+  category: Jobs
+  cost: 1
+  jobWhitelist:
+    - Captain
+  items:
+    - ClothingHandsGlovesCaptain
+
+- type: loadout
+  id: LoadoutCommandCapHat
+  category: Jobs
+  cost: 1
+  jobWhitelist:
+    - Captain
+  items:
+    - ClothingHeadHatCaptain
+
+- type: loadout
+  id: LoadoutCommandCapHatCapcap
+  category: Jobs
+  cost: 1
+  jobWhitelist:
+    - Captain
+  items:
+    - ClothingHeadHatCapcap
+
+- type: loadout
+  id: LoadoutCommandCapMaskGas
+  category: Jobs
+  cost: 1
+  jobWhitelist:
+    - Captain
+  items:
+    - ClothingMaskGasCaptain
+
+- type: loadout
+  id: LoadoutCommandCapItemDrinkFlask
+  category: Jobs
+  cost: 1
+  jobWhitelist:
+    - Captain
+  items:
+    - DrinkFlask
+
+- type: loadout
+  id: LoadoutCommandCENeckMantle
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - ChiefEngineer
+  items:
+    - ClothingNeckMantleCE
+
+- type: loadout
+  id: LoadoutCommandCENeckCloak
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - ChiefEngineer
+  items:
+    - ClothingNeckCloakCe
+
+- type: loadout
+  id: LoadoutCommandCEOuterWinter
+  category: Jobs
+  cost: 2
+  jobWhitelist:
+    - ChiefEngineer
+  items:
+    - ClothingOuterWinterCE
+
+- type: loadout
+  id: LoadoutCommandCMONeckMantle
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - ChiefMedicalOfficer
+  items:
+    - ClothingNeckMantleCMO
+
+- type: loadout
+  id: LoadoutCommandCMONeckCloak
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - ChiefMedicalOfficer
+  items:
+    - ClothingCloakCmo
+
+- type: loadout
+  id: LoadoutCommandCMOOuterWinter
+  category: Jobs
+  cost: 2
+  jobWhitelist:
+    - ChiefMedicalOfficer
+  items:
+    - ClothingOuterWinterCMO
+
+- type: loadout
+  id: LoadoutCommandCMOOuterLab
+  category: Jobs
+  cost: 1
+  jobWhitelist:
+    - ChiefMedicalOfficer
+  items:
+    - ClothingOuterCoatLabCmo
+
+- type: loadout
+  id: LoadoutCommandCMOHatBeret
+  category: Jobs
+  cost: 1
+  jobWhitelist:
+    - ChiefMedicalOfficer
+  items:
+    - ClothingHeadHatBeretCmo
+
+- type: loadout
+  id: LoadoutCommandHOPNeckMantle
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - HeadOfPersonnel
+  items:
+    - ClothingNeckMantleHOP
+
+- type: loadout
+  id: LoadoutcommandHOPNeckCloak
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - HeadOfPersonnel
+  items:
+    - ClothingNeckCloakHop
+
+- type: loadout
+  id: LoadoutcommandHOPBackIan
+  category: Jobs
+  cost: 4
+  jobWhitelist:
+    - HeadOfPersonnel
+  items:
+    - ClothingBackpackIan
+
+- type: loadout
+  id: LoadoutCommandHOPHatCap
+  category: Jobs
+  cost: 1
+  jobWhitelist:
+    - HeadOfPersonnel
+  items:
+    - ClothingHeadHatHopcap
+
+- type: loadout
+  id: LoadoutCommandHOSNeckMantle
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - HeadOfSecurity
+  items:
+    - ClothingNeckMantleHOS
+
+- type: loadout
+  id: LoadoutCommandHOSNeckCloak
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - HeadOfSecurity
+  items:
+    - ClothingNeckCloakHos
+
+- type: loadout
+  id: LoadoutCommandHOSJumpsuitAlt
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - HeadOfSecurity
+  items:
+    - ClothingUniformJumpsuitHoSAlt
+
+- type: loadout
+  id: LoadoutCommandHOSJumpsuitBlue
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - HeadOfSecurity
+  items:
+    - ClothingUniformJumpsuitHoSBlue
+
+- type: loadout
+  id: LoadoutCommandHOSJumpsuitGrey
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - HeadOfSecurity
+  items:
+    - ClothingUniformJumpsuitHoSGrey
+
+- type: loadout
+  id: LoadoutCommandHOSJumpsuitParade
+  category: Jobs
+  cost: 3
+  exclusive: true
+  jobWhitelist:
+    - HeadOfSecurity
+  items:
+    - ClothingUniformJumpsuitHoSParadeMale
+
+- type: loadout
+  id: LoadoutCommandHOSJumpsuitFormal
+  category: Jobs
+  cost: 3
+  exclusive: true
+  jobWhitelist:
+    - HeadOfSecurity
+  items:
+    - ClothingUniformJumpsuitHosFormal
+
+- type: loadout
+  id: LoadoutCommandHOSJumpskirtAlt
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - HeadOfSecurity
+  items:
+    - ClothingUniformJumpskirtHoSAlt
+
+- type: loadout
+  id: LoadoutCommandHOSJumpskirtParade
+  category: Jobs
+  cost: 3
+  exclusive: true
+  jobWhitelist:
+    - HeadOfSecurity
+  items:
+    - ClothingUniformJumpskirtHoSParadeMale
+
+- type: loadout
+  id: LoadoutCommandHOSJumpskirtFormal
+  category: Jobs
+  cost: 3
+  exclusive: true
+  jobWhitelist:
+    - HeadOfSecurity
+  items:
+    - ClothingUniformJumpskirtHosFormal
+
+- type: loadout
+  id: LoadoutCommandHOSOuterWinter
+  category: Jobs
+  cost: 2
+  jobWhitelist:
+    - HeadOfSecurity
+  items:
+    - ClothingOuterWinterHoS
+
+- type: loadout
+  id: LoadoutCommandHOSOuterTrench
+  category: Jobs
+  cost: 2
+  jobWhitelist:
+    - HeadOfSecurity
+  items:
+    - ClothingOuterCoatHoSTrench
+
+- type: loadout
+  id: LoadoutCommandHOSHatBeret
+  category: Jobs
+  cost: 1
+  jobWhitelist:
+    - HeadOfSecurity
+  items:
+    - ClothingHeadHatBeretHoS
+
+- type: loadout
+  id: LoadoutCommandHOSHatHoshat
+  category: Jobs
+  cost: 1
+  jobWhitelist:
+    - HeadOfSecurity
+  items:
+    - ClothingHeadHatHoshat
+
+# What? This isn't a thing?? :(
+# - type: loadout
+#   id: LoadoutCommandQMNeckMantle
+#   category: Jobs
+#   cost: 2
+#   exclusive: true
+#   jobWhitelist:
+#     - Quartermaster
+#   items:
+#     - ClothingNeckMantleQM
+
+- type: loadout
+  id: LoadoutCommandQMNeckCloak
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Quartermaster
+  items:
+    - ClothingNeckCloakQm
+
+- type: loadout
+  id: LoadoutCommandQMUniformTurtleneck
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Quartermaster
+  items:
+    - ClothingUniformJumpsuitQMTurtleneck
+
+- type: loadout
+  id: LoadoutCommandQMUniformTurtleneckSkirt
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Quartermaster
+  items:
+    - ClothingUniformJumpskirtQMTurtleneck
+
+- type: loadout
+  id: LoadoutCommandQMHeadSoft
+  category: Jobs
+  cost: 1
+  jobWhitelist:
+    - Quartermaster
+  items:
+    - ClothingHeadHatQMsoft
+
+- type: loadout
+  id: LoadoutCommandRDNeckMantle
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - ResearchDirector
+  items:
+    - ClothingNeckMantleRD
+
+- type: loadout
+  id: LoadoutCommandRDNeckCloak
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - ResearchDirector
+  items:
+    - ClothingNeckCloakRd
+
+- type: loadout
+  id: LoadoutCommandRDOuterWinter
+  category: Jobs
+  cost: 2
+  jobWhitelist:
+    - ResearchDirector
+  items:
+    - ClothingOuterWinterRD
+
+- type: loadout
+  id: LoadoutEngineeringUniformHazard
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - StationEngineer
+  items:
+    - ClothingUniformJumpsuitEngineeringHazard
+
+- type: loadout
+  id: LoadoutEngineeringOuterHazard
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - StationEngineer
+  items:
+    - ClothingOuterVestHazard
+
+- type: loadout
+  id: LoadoutEngineeringChickenSuit # :)
+  category: Jobs
+  cost: 3
+  exclusive: true
+  jobWhitelist:
+    - AtmosphericTechnician
+  items:
+    - ClothingOuterSuitChicken
+    - ClothingHeadHatChickenhead
+
+- type: loadout
+  id: LoadoutEngineeringEyesMeson
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - StationEngineer
+    - AtmosphericTechnician
+  items:
+    - ClothingEyesGlassesMeson
+
+- type: loadout
+  id: LoadoutEngineeringHeadBeret
+  category: Jobs
+  cost: 1
+  exclusive: true
+  jobWhitelist:
+    - StationEngineer
+    - AtmosphericTechnician
+    - ChiefEngineer
+  items:
+    - ClothingHeadHatBeretEngineering
+
+- type: loadout
+  id: LoadoutEngineeringHeadHardhatBlue
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - StationEngineer
+    - AtmosphericTechnician
+  items:
+    - ClothingHeadHatHardhatBlue
+
+- type: loadout
+  id: LoadoutEngineeringHeadHardhatOrange
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - StationEngineer
+    - AtmosphericTechnician
+  items:
+    - ClothingHeadHatHardhatOrange
+
+- type: loadout
+  id: LoadoutEngineeringHeadHardhatYellow
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - StationEngineer
+    - AtmosphericTechnician
+  items:
+    - ClothingHeadHatHardhatYellow
+
+- type: loadout
+  id: LoadoutEngineeringHeadHardhatWhite
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - StationEngineer
+    - AtmosphericTechnician
+  items:
+    - ClothingHeadHatHardhatWhite
+
+- type: loadout
+  id: LoadoutEngineeringHeadHardhatRed
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - StationEngineer
+    - AtmosphericTechnician
+  items:
+    - ClothingHeadHatHardhatRed
+
+- type: loadout
+  id: LoadoutEngineeringItemInflatable
+  category: Jobs
+  cost: 4
+  jobWhitelist:
+    - StationEngineer
+    - AtmosphericTechnician
+  items:
+    - BoxInflatable
+
+- type: loadout
+  id: LoadoutMedicalGlovesNitrile
+  category: Jobs
+  cost: 1
+  exclusive: true
+  jobWhitelist:
+    - MedicalDoctor
+    - Paramedic
+    - ChiefMedicalOfficer
+  items:
+    - ClothingHandsGlovesNitrile
+
+- type: loadout
+  id: LoadoutMedicalEyesMediHUD
+  category: Jobs
+  cost: 3
+  exclusive: true
+  jobWhitelist:
+    - MedicalDoctor
+    - Paramedic
+    - ChiefMedicalOfficer
+  items:
+    - ClothingEyesHudMedical
+
+- type: loadout
+  id: LoadoutMedicalOuterLabcoat
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - MedicalDoctor
+    - Chemist
+  items:
+    - ClothingOuterCoatLab
+
+- type: loadout
+  id: LoadoutMedicalNeckStethoscope
+  category: Jobs
+  cost: 1
+  exclusive: true
+  jobWhitelist:
+    - MedicalDoctor
+    - ChiefMedicalOfficer
+  items:
+    - ClothingNeckStethoscope
+
+- type: loadout
+  id: LoadoutMedicalUniformScrubsBlue
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - MedicalDoctor
+  items:
+    - UniformScrubsColorBlue
+
+- type: loadout
+  id: LoadoutMedicalUniformScrubsGreen
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - MedicalDoctor
+  items:
+    - UniformScrubsColorGreen
+
+- type: loadout
+  id: LoadoutMedicalUniformScrubsPurple
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - MedicalDoctor
+  items:
+    - UniformScrubsColorPurple
+
+- type: loadout
+  id: LoadoutMedicalOuterLabcoatChem
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Chemist
+  items:
+    - ClothingOuterCoatLabChem
+
+- type: loadout
+  id: LoadoutMedicalItemHandLabeler
+  category: Jobs
+  exclusive: true
+  jobWhitelist:
+    - Chemist
+  items:
+    - HandLabeler
+
+- type: loadout
+  id: LoadoutMedicalUniformParamedicJumpsuit
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Paramedic
+  items:
+    - ClothingUniformJumpsuitParamedic
+
+- type: loadout
+  id: LoadoutMedicalUniformParamedicJumpskirt
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Paramedic
+  items:
+    - ClothingUniformJumpskirtParamedic
+
+- type: loadout
+  id: LoadoutMedicalHeadNurse
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - MedicalDoctor
+  items:
+    - ClothingHeadNurseHat
+
+- type: loadout
+  id: LoadoutScienceOuterCoat
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Scientist
+    - ResearchAssistant
+    - ResearchDirector
+  items:
+    - ClothingOuterCoatRnd
+
+- type: loadout
+  id: LoadoutScienceOuterLabcoat
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Scientist
+    - ResearchAssistant
+  items:
+    - ClothingOuterCoatLab
+
+- type: loadout
+  id: LoadoutScienceOuterLabcoatSeniorResearcher
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - SeniorResearcher
+  items:
+    - ClothingOuterCoatLabSeniorResearcher
+
+- type: loadout
+  id: LoadoutScienceHatBeret
+  category: Jobs
+  cost: 1
+  exclusive: true
+  jobWhitelist:
+    - Scientist
+    - ResearchAssistant
+  items:
+    - ClothingHeadHatBeretRND
+
+- type: loadout
+  id: LoadoutSecurityUniformGrey
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - SecurityOfficer
+    - SecurityCadet
+    - SeniorOfficer
+    - Warden
+  items:
+    - ClothingUniformJumpsuitSecGrey
+
+- type: loadout
+  id: LoadoutSecurityOuterArmorBasic
+  category: Jobs
+  cost: 4
+  exclusive: true
+  jobWhitelist:
+    - SecurityOfficer
+    - SeniorOfficer
+  items:
+    - ClothingOuterArmorBasic
+
+- type: loadout
+  id: LoadoutSecurityHeadHelmetBasic
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - SecurityOfficer
+    - SeniorOfficer
+  items:
+    - ClothingHeadHelmetBasic
+
+- type: loadout
+  id: LoadoutSecurityMaskGasSwat
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - SeniorOfficer
+    - Warden
+    - HeadOfSecurity
+  items:
+    - ClothingMaskGasSwat
+
+- type: loadout
+  id: LoadoutSecurityEyesGlasses
+  category: Jobs
+  cost: 1
+  exclusive: true
+  jobWhitelist:
+    - SecurityOfficer
+    - SecurityCadet
+    - SeniorOfficer
+    - Warden
+    - HeadOfSecurity
+  items:
+    - ClothingEyesGlassesSecurity
+
+- type: loadout
+  id: LoadoutSecurityEyesHud
+  category: Jobs
+  cost: 3
+  exclusive: true
+  jobWhitelist:
+    - SecurityOfficer
+    - SeniorOfficer
+    - Warden
+    - HeadOfSecurity
+  items:
+    - ClothingEyesHudSecurity
+
+- type: loadout
+  id: LoadoutSecurityShoesBootsCombatFilled
+  category: Jobs
+  cost: 3
+  exclusive: true
+  jobWhitelist:
+    - SecurityOfficer
+    - SeniorOfficer
+    - Warden
+    - HeadOfSecurity
+  items:
+    - ClothingShoesBootsCombatFilled
+
+- type: loadout
+  id: LoadoutSecurityShoesJackboots
+  category: Jobs
+  cost: 1
+  jobWhitelist:
+    - Detective
+    - SecurityOfficer
+    - SecurityCadet
+    - SeniorOfficer
+    - Warden
+    - HeadOfSecurity
+  items:
+    - ClothingShoesBootsJack
+
+- type: loadout
+  id: LoadoutServiceClownOutfitJester
+  category: Jobs
+  cost: 3
+  exclusive: true
+  jobWhitelist:
+    - Clown
+  items:
+    - ClothingUniformJumpsuitJester
+    - ClothingHeadHatJester
+    - ClothingShoesJester
+
+- type: loadout
+  id: LoadoutServiceClownOutfitJesterAlt
+  category: Jobs
+  cost: 3
+  exclusive: true
+  jobWhitelist:
+    - Clown
+  items:
+    - ClothingUniformJumpsuitJesterAlt
+    - ClothingHeadHatJesterAlt
+    - ClothingShoesJester
+
+- type: loadout
+  id: LoadoutServiceBartenderUniformPurple
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Bartender
+  items:
+    - ClothingUniformJumpsuitBartenderPurple
+
+- type: loadout
+  id: LoadoutServiceBotanistUniformOveralls
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Botanist
+  items:
+    - ClothingUniformOveralls
+
+- type: loadout
+  id: LoadoutServiceLawyerUniformBlueSuit
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Lawyer
+  items:
+    - ClothingUniformJumpsuitLawyerBlue
+
+- type: loadout
+  id: LoadoutServiceLawyerUniformBlueSkirt
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Lawyer
+  items:
+    - ClothingUniformJumpskirtLawyerBlue
+
+- type: loadout
+  id: LoadoutServiceLawyerUniformRedSuit
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Lawyer
+  items:
+    - ClothingUniformJumpsuitLawyerRed
+
+- type: loadout
+  id: LoadoutServiceLawyerUniformRedSkirt
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Lawyer
+  items:
+    - ClothingUniformJumpskirtLawyerRed
+
+- type: loadout
+  id: LoadoutServiceLawyerUniformPurpleSuit
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Lawyer
+  items:
+    - ClothingUniformJumpsuitLawyerPurple
+
+- type: loadout
+  id: LoadoutServiceLawyerUniformPurpleSkirt
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Lawyer
+  items:
+    - ClothingUniformJumpskirtLawyerPurple
+
+- type: loadout
+  id: LoadoutServiceLawyerUniformGoodSuit
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Lawyer
+  items:
+    - ClothingUniformJumpsuitLawyerGood
+
+- type: loadout
+  id: LoadoutServiceLawyerUniformGoodSkirt
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Lawyer
+  items:
+    - ClothingUniformJumpskirtLawyerGood
+
+- type: loadout
+  id: LoadoutServiceReporterUniformJournalist
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Reporter
+  items:
+    - ClothingUniformJumpsuitJournalist
+
+- type: loadout
+  id: LoadoutServiceReporterUniformDetectivesuit
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Reporter
+  items:
+    - ClothingUniformJumpsuitDetective
+
+- type: loadout
+  id: LoadoutServiceReporterUniformDetectiveskirt
+  category: Jobs
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Reporter
+  items:
+    - ClothingUniformJumpskirtDetective
+
+# Alphabetically ordered
+- type: loadoutCategory
+  id: Accessories
+
+- type: loadoutCategory
+  id: Items
+
+- type: loadoutCategory
+  id: Jobs
+
+- type: loadoutCategory
+  id: Outer
+
+- type: loadoutCategory
+  id: Uncategorized
+
+- type: loadoutCategory
+  id: Uniform
+
+- type: loadout
+  id: LoadoutEyesEyepatch
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingEyesEyepatch
+
+- type: loadout
+  id: LoadoutEyesBlindfold
+  category: Accessories
+  cost: 2
+  items:
+    - ClothingEyesBlindfold
+
+- type: loadout
+  id: LoadoutHeadBeaverHat
+  category: Accessories
+  cost: 2
+  items:
+    - ClothingHeadHatBeaverHat
+
+- type: loadout
+  id: LoadoutHeadTophat
+  category: Accessories
+  cost: 2
+  items:
+    - ClothingHeadHatTophat
+
+- type: loadout
+  id: LoadoutHeadHatBluesoft
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingHeadHatBluesoft
+
+- type: loadout
+  id: LoadoutHeadHatBluesoftFlipped
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingHeadHatBluesoftFlipped
+
+- type: loadout
+  id: LoadoutHeadHatCorpsoft
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingHeadHatCorpsoft
+
+- type: loadout
+  id: LoadoutHeadHatCorpsoftFlipped
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingHeadHatCorpsoftFlipped
+
+- type: loadout
+  id: LoadoutHeadHatGreensoft
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingHeadHatGreensoft
+
+- type: loadout
+  id: LoadoutHeadHatGreensoftFlipped
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingHeadHatGreensoftFlipped
+
+- type: loadout
+  id: LoadoutHeadHatGreysoft
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingHeadHatGreysoft
+
+- type: loadout
+  id: LoadoutHeadHatGreysoftFlipped
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingHeadHatGreysoftFlipped
+
+- type: loadout
+  id: LoadoutHeadHatOrangesoft
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingHeadHatOrangesoft
+
+- type: loadout
+  id: LoadoutHeadHatOrangesoftFlipped
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingHeadHatOrangesoftFlipped
+
+- type: loadout
+  id: LoadoutHeadHatPurplesoft
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingHeadHatPurplesoft
+
+- type: loadout
+  id: LoadoutHeadHatPurplesoftFlipped
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingHeadHatPurplesoftFlipped
+
+- type: loadout
+  id: LoadoutHeadHatRedsoft
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingHeadHatRedsoft
+
+- type: loadout
+  id: LoadoutHeadHatRedsoftFlipped
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingHeadHatRedsoftFlipped
+
+- type: loadout
+  id: LoadoutHeadHatYellowsoft
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingHeadHatYellowsoft
+
+- type: loadout
+  id: LoadoutHeadHatYellowsoftFlipped
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingHeadHatYellowsoftFlipped
+
+- type: loadout
+  id: LoadoutItemCig
+  category: Items
+  cost: 1
+  items:
+    - Cigarette
+
+- type: loadout
+  id: LoadoutItemCigsGreen
+  category: Items
+  cost: 2
+  items:
+    - CigPackGreen
+
+- type: loadout
+  id: LoadoutItemCigsRed
+  category: Items
+  cost: 2
+  items:
+    - CigPackRed
+
+- type: loadout
+  id: LoadoutItemCigsBlue
+  category: Items
+  cost: 2
+  items:
+    - CigPackBlue
+
+- type: loadout
+  id: LoadoutItemCigsBlack
+  category: Items
+  cost: 2
+  items:
+    - CigPackBlack
+
+- type: loadout
+  id: LoadoutItemPAI
+  category: Items
+  cost: 3
+  items:
+    - PersonalAI
+
+- type: loadout
+  id: LoadoutItemLighter
+  category: Items
+  cost: 2
+  items:
+    - Lighter
+
+- type: loadout
+  id: LoadoutItemLighterCheap
+  category: Items
+  cost: 1
+  items:
+    - CheapLighter
+
+- type: loadout
+  id: LoadoutItemMatches
+  category: Items
+  cost: 1
+  items:
+    - Matchbox
+
+- type: loadout
+  id: LoadoutItemPlushieSharkBlue
+  category: Items
+  cost: 2
+  items:
+    - PlushieSharkBlue
+
+- type: loadout
+  id: LoadoutItemPlushieSharkPink
+  category: Items
+  cost: 2
+  items:
+    - PlushieSharkPink
+
+- type: loadout
+  id: LoadoutItemPlushieSharkGrey
+  category: Items
+  cost: 2
+  items:
+    - PlushieSharkGrey
+
+- type: loadout
+  id: LoadoutItemPlushieCarp
+  category: Items
+  cost: 2
+  items:
+    - PlushieCarp
+
+- type: loadout
+  id: LoadoutNeckScarfStripedRed
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingNeckScarfStripedRed
+
+- type: loadout
+  id: LoadoutNeckScarfStripedBlue
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingNeckScarfStripedBlue
+
+- type: loadout
+  id: LoadoutNeckScarfStripedGreen
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingNeckScarfStripedGreen
+
+- type: loadout
+  id: LoadoutNeckScarfStripedZebra
+  category: Accessories
+  cost: 1
+  items:
+    - ClothingNeckScarfStripedZebra
+
+- type: loadout
+  id: LoadoutOuterGhostSheet
+  category: Outer
+  cost: 2
+  items:
+    - ClothingOuterGhostSheet
+
+- type: loadout
+  id: LoadoutOuterCoatBomberjacket
+  category: Outer
+  cost: 3
+  items:
+    - ClothingOuterCoatBomber
+
+- type: loadout
+  id: LoadoutOuterCoatHoodieBlack
+  category: Outer
+  cost: 2
+  items:
+    - ClothingOuterHoodieBlack
+
+- type: loadout
+  id: LoadoutOuterCoatHoodieGrey
+  category: Outer
+  cost: 2
+  items:
+    - ClothingOuterHoodieGrey
+
+- type: loadout
+  id: LoadoutOuterCoatWinterCoat
+  category: Outer
+  cost: 3
+  items:
+    - ClothingOuterWinterCoat
+
+# Colored
+- type: loadout
+  id: LoadoutShoesBlack
+  category: Accessories
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingShoesColorBlack
+
+- type: loadout
+  id: LoadoutShoesBlue
+  category: Accessories
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingShoesColorBlue
+
+- type: loadout
+  id: LoadoutShoesBrown
+  category: Accessories
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingShoesColorBrown
+
+- type: loadout
+  id: LoadoutShoesGreen
+  category: Accessories
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingShoesColorGreen
+
+- type: loadout
+  id: LoadoutShoesOrange
+  category: Accessories
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingShoesColorOrange
+
+- type: loadout
+  id: LoadoutShoesPurple
+  category: Accessories
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingShoesColorPurple
+
+- type: loadout
+  id: LoadoutShoesRed
+  category: Accessories
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingShoesColorRed
+
+- type: loadout
+  id: LoadoutShoesWhite
+  category: Accessories
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingShoesColorWhite
+
+- type: loadout
+  id: LoadoutShoesYellow
+  category: Accessories
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingShoesColorYellow
+
+
+# Miscellaneous
+- type: loadout
+  id: LoadoutShoesSlippersDuck
+  category: Accessories
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingShoeSlippersDuck
+
+- type: loadout
+  id: LoadoutUniformAncientJumpsuit
+  category: Uniform
+  cost: 2
+  exclusive: true
+  jobWhitelist:
+    - Passenger
+  items:
+    - ClothingUniformJumpsuitAncient
+
+# Colored jumpsuits
+
+- type: loadout
+  id: LoadoutUniformJumpsuitColorBlack
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpsuitColorBlack
+
+- type: loadout
+  id: LoadoutUniformJumpskirtColorBlack
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpskirtColorBlack
+
+- type: loadout
+  id: LoadoutUniformJumpsuitColorBlue
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpsuitColorBlue
+
+- type: loadout
+  id: LoadoutUniformJumpskirtColorBlue
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpskirtColorBlue
+
+- type: loadout
+  id: LoadoutUniformJumpsuitColorGreen
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpsuitColorGreen
+
+- type: loadout
+  id: LoadoutUniformJumpskirtColorGreen
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpskirtColorGreen
+
+- type: loadout
+  id: LoadoutUniformJumpsuitColorOrange
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpsuitColorOrange
+
+- type: loadout
+  id: LoadoutUniformJumpskirtColorOrange
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpskirtColorOrange
+
+- type: loadout
+  id: LoadoutUniformJumpsuitColorPink
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpsuitColorPink
+
+- type: loadout
+  id: LoadoutUniformJumpskirtColorPink
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpskirtColorPink
+
+- type: loadout
+  id: LoadoutUniformJumpsuitColorRed
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpsuitColorRed
+
+- type: loadout
+  id: LoadoutUniformJumpskirtColorRed
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpskirtColorRed
+
+- type: loadout
+  id: LoadoutUniformJumpsuitColorWhite
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpsuitColorWhite
+
+- type: loadout
+  id: LoadoutUniformJumpskirtColorWhite
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpskirtColorWhite
+
+- type: loadout
+  id: LoadoutUniformJumpsuitColorYellow
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpsuitColorYellow
+
+- type: loadout
+  id: LoadoutUniformJumpskirtColorYellow
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpskirtColorYellow
+
+- type: loadout
+  id: LoadoutUniformJumpsuitColorDarkBlue
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpsuitColorDarkBlue
+
+- type: loadout
+  id: LoadoutUniformJumpskirtColorDarkBlue
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpskirtColorDarkBlue
+
+- type: loadout
+  id: LoadoutUniformJumpsuitColorTeal
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpsuitColorTeal
+
+- type: loadout
+  id: LoadoutUniformJumpskirtColorTeal
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpskirtColorTeal
+
+- type: loadout
+  id: LoadoutUniformJumpsuitColorPurple
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpsuitColorPurple
+
+- type: loadout
+  id: LoadoutUniformJumpskirtColorPurple
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpskirtColorPurple
+
+- type: loadout
+  id: LoadoutUniformJumpsuitColorDarkGreen
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpsuitColorDarkGreen
+
+- type: loadout
+  id: LoadoutUniformJumpskirtColorDarkGreen
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpskirtColorDarkGreen
+
+- type: loadout
+  id: LoadoutUniformJumpsuitColorLightBrown
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpsuitColorLightBrown
+
+- type: loadout
+  id: LoadoutUniformJumpskirtColorLightBrown
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpskirtColorLightBrown
+
+- type: loadout
+  id: LoadoutUniformJumpsuitColorBrown
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpsuitColorBrown
+
+- type: loadout
+  id: LoadoutUniformJumpskirtColorBrown
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpskirtColorBrown
+
+- type: loadout
+  id: LoadoutUniformJumpsuitColorMaroon
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpsuitColorMaroon
+
+- type: loadout
+  id: LoadoutUniformJumpskirtColorMaroon
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformJumpskirtColorMaroon
+
+- type: loadout
+  id: LoadoutUniformJumpsuitColorRainbow
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformColorRainbow
+
+- type: loadout
+  id: LoadoutUniformJumpskirtColorRainbow
+  category: Uniform
+  cost: 2
+  items:
+    - ClothingUniformColorRainbow
