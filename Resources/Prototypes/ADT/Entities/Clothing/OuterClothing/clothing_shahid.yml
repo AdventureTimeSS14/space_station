@@ -16,11 +16,15 @@
         Heat: 0.9
   - type: Storage
     maxItemSize: Small
-    maxTotalWeight: 2
+    maxTotalWeight: 4
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
         ents: []
+  - type: UserInterface
+    interfaces:
+    - key: enum.StorageUiKey.Key
+      type: StorageBoundUserInterface
   # to prevent bag open/honk spam
   - type: UseDelay
     delay: 0.5
@@ -34,7 +38,7 @@
   - type: Explosive # Powerful explosion in a very small radius. Doesn't break underplating.
     explosionType: DemolitionCharge
     totalIntensity: 80
-    intensitySlope: 5
+    intensitySlope: 7
     maxIntensity: 30
     canCreateVacuum: false
   - type: ExplodeOnTrigger
