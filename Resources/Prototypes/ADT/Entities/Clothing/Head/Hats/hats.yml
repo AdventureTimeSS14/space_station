@@ -306,3 +306,25 @@
     sprite: ADT/Clothing/Head/Hats/syndiebirthdaycap.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/syndiebirthdaycap.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsCinnamonFlatCap
+  name: sinnamon flat cap
+  description: A cap with rounded crown and short margins. Sewn from thick fabric, that makes it perfect for cold weather. Made by company "Modeling Agency Dar-Vaxed".
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/cinnamon_flat_cap.rsi 
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/cinnamon_flat_cap.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsGreyFlatCap
+  name: grey flat cap
+  description: A cap with rounded crown and short margins. Sewn from thick fabric, that makes it perfect for cold weather. Made by company "Modeling Agency Dar-Vaxed".
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/grey_flat_cap.rsi 
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/grey_flat_cap.rsi #спрайты от prazat911
