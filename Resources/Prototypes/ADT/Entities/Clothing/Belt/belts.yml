@@ -224,9 +224,9 @@
   description: A suspenders made with elastic ribbon and the addition of rubber. Made by company "Modeling Agency Dar-Vaxed".
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Belt/Чёрный Подтяжки #я вообще без понятия, почему папка именно так зовётся. Я ЕЁ ПЕРЕИМЕНОВЫВАЛ
+    sprite: ADT/Clothing/Belt/black_suspenders.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Belt/Чёрный Подтяжки #спрайты от prazat911
+    sprite: ADT/Clothing/Belt/black_suspenders.rsi #спрайты от prazat911
     quickEquip: true
 
 - type: entity
@@ -236,7 +236,7 @@
   description: A suspenders made of rough leather. Made by company "Modeling Agency Dar-Vaxed".
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Belt/Кожаные Подтяжки #ТОЖЕ САМОЕ
+    sprite: ADT/Clothing/Belt/leather_suspenders.rsi 
   - type: Clothing
-    sprite: ADT/Clothing/Belt/Кожаные Подтяжки  #спрайты от prazat911
+    sprite: ADT/Clothing/Belt/leather_suspenders.rsi #спрайты от prazat911
     quickEquip: true
