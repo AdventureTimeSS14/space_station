@@ -18,6 +18,8 @@
       settings: DeathSquad
 
 - type: randomHumanoidSettings
+  speciesBlacklist: 
+    - Diona
   id: DeathSquad
   randomizeName: false
   components:
@@ -53,6 +55,8 @@
   #noSpawn: true
 
 - type: randomHumanoidSettings
+  speciesBlacklist: 
+    - Diona
   id: ERTLeader
   randomizeName: false
   components:
@@ -82,6 +86,8 @@
       settings: ERTLeaderEVA
 
 - type: randomHumanoidSettings
+  speciesBlacklist: 
+    - Diona
   id: ERTLeaderEVA
   parent: ERTLeader
   components:
@@ -108,6 +114,8 @@
       settings: ERTLeaderREV
 
 - type: randomHumanoidSettings
+  speciesBlacklist: 
+    - Diona
   id: ERTLeaderREV
   parent: ERTLeader
   components:
@@ -127,6 +135,8 @@
       settings: ERTLeaderEVALecter
 
 - type: randomHumanoidSettings
+  speciesBlacklist: 
+    - Diona
   id: ERTLeaderEVALecter
   parent: ERTLeaderEVA
   components:
@@ -158,6 +168,8 @@
   #noSpawn: true
 
 - type: randomHumanoidSettings
+  speciesBlacklist: 
+    - Diona
   id: ERTJanitor
   parent: ERTLeader
   components:
@@ -187,6 +199,8 @@
       settings: ERTJanitorEVA
 
 - type: randomHumanoidSettings
+  speciesBlacklist: 
+    - Diona
   id: ERTJanitorEVA
   parent: ERTJanitor
   components:
@@ -218,6 +232,8 @@
   #noSpawn: true
 
 - type: randomHumanoidSettings
+  speciesBlacklist: 
+    - Diona
   id: ERTEngineer
   parent: ERTLeader
   components:
@@ -247,6 +263,8 @@
       settings: ERTEngineerEVA
 
 - type: randomHumanoidSettings
+  speciesBlacklist: 
+    - Diona
   id: ERTEngineerEVA
   parent: ERTEngineer
   components:
@@ -273,6 +291,8 @@
       settings: ERTEngineerREV
 
 - type: randomHumanoidSettings
+  speciesBlacklist: 
+    - Diona
   id: ERTEngineerREV
   parent: ERTEngineer
   components:
@@ -334,6 +354,8 @@
       settings: ERTSecurityEVA
 
 - type: randomHumanoidSettings
+  speciesBlacklist:
+    - Diona
   id: ERTSecurityEVA
   parent: ERTSecurity
   components:
@@ -360,6 +382,8 @@
       settings: ERTSecurityREV
 
 - type: randomHumanoidSettings
+  speciesBlacklist:
+    - Diona
   id: ERTSecurityREV
   parent: ERTSecurity
   components:
@@ -379,6 +403,8 @@
       settings: ERTSecurityEVALecter
 
 - type: randomHumanoidSettings
+  speciesBlacklist:
+    - Diona
   id: ERTSecurityEVALecter
   parent: ERTSecurityEVA
   components:
@@ -410,6 +436,8 @@
   #noSpawn: true
 
 - type: randomHumanoidSettings
+  speciesBlacklist: 
+    - Diona
   id: ERTMedical
   parent: ERTLeader
   components:
@@ -439,6 +467,8 @@
       settings: ERTMedicalEVA
 
 - type: randomHumanoidSettings
+  speciesBlacklist: 
+    - Diona
   id: ERTMedicalEVA
   parent: ERTMedical
   components:
@@ -465,6 +495,8 @@
       settings: ERTMedicalREV
 
 - type: randomHumanoidSettings
+  speciesBlacklist: 
+    - Diona
   id: ERTMedicalREV
   parent: ERTMedical
   components:
@@ -489,7 +521,7 @@
       settings: CBURNAgent
 
 - type: randomHumanoidSettings
-  speciesBlacklist: # Corvax-MRP
+  speciesBlacklist: 
     - Diona
   id: CBURNAgent
   components:
