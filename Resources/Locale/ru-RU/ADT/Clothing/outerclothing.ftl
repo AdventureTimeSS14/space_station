@@ -22,6 +22,9 @@ ent-ADTClothingOuterCoatAidan = пальто Эйдана
     .desc = Двубортное пальто с отворотами.
     .suffix = { "Именное" }
 
+ent-ADTClothingOuterWinterRussianCoat = Русский пуховик
+    .desc = Используется на экстремально холодных фронтах, сделан из натуральный шерсти. Производство компании "Modeling Agency Dar-Vaxed" и Текстильный комбинат СССП, улица Сталинавская.
+
 ent-ADTClothingOuterBioPathologist = защитный костюм патологоанатома
     .desc = Костюм, защищающий от биологического заражения во время работы с трупами.
     .suffix = { "" }

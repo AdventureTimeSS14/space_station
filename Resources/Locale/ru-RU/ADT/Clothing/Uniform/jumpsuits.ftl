@@ -220,6 +220,50 @@ ent-ADTSwimsuitCap = капитанский купальник
     .desc = Только не выходите в этом перед проверяющими с ЦК.
     .suffix = { "" }
 
+ent-ADTClothingUniformJumpsuitBlackShirt = чёрная рубашка
+    .desc = Обычная черная повседневная рубашка. Производство компании "Modeling Agency Dar-Vaxed".
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitBlueShirt = синяя рубашка
+    .desc = Обычная синяя повседневная рубашка. Производство компании "Modeling Agency Dar-Vaxed".
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitGothicAttire = готический наряд
+    .desc = Для тех, кто ненавидит яркие цвета.
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitSweatshirtBright = свитшот яркой личности
+    .desc = Для тех, кто любит яркие цвета.
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitFancyShirt = причудливая рубашка
+    .desc = Не знаю даже, как он сюда попал...
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitOldGreySuit = старый серый костюм
+    .desc = Сам костюм новый, но дизайн довольно устаревший, опираясь на текущей стиль компании "Modeling Agency Dar-Vaxed". Удивительно, что этот комплект одежды находится в продаже.
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitHawaiiShirt = гавайская рубашка
+    .desc = Идеальный вариант для тех, кто должен выглядеть серьезно, но при этом не хочет скрывать свою жизнерадостную натуру. Производство компании "Modeling Agency Dar-Vaxed".
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitOldBrownSuit = старый коричневый костюм
+    .desc = Тщательно ухоженная белая рубашка с коричневым пиджаком. Возможно он был ярко-коричневым, пока не выцвел. Производство компании  "Modeling Agency Dar-Vaxed"
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitPurpleShirt = фиолетовая рубашка
+    .desc = Обычная фиолетовая повседневная рубашка. Производство компании "Modeling Agency Dar-Vaxed".
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitRedShirt = красная рубашка
+    .desc = Обычная красная повседневная рубашка. Производство компании "Modeling Agency Dar-Vaxed".
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitRedPlaidShirt = красная рубашка в клетку
+    .desc = Пахнет барбекью... Производство компании  "Modeling Agency Dar-Vaxed"
+    .suffix = { "" }
+
 ent-ADTClothingUniformPathologistSuit = костюм патологоанатома
     .desc = Лёгкий комбинезон для работника морга.
     .suffix = { "" } 
@@ -234,3 +278,4 @@ ent-ADTClothingUniformHikeformCmo = походный костюм главног
 
 ent-ADTClothingUniformHikeJumpskirtCmo = походная юбка-костюм главного врача
     .desc = Рубашка и мешковитая юбка, отлично подходящие для активной работы как вне, так и внутри своего отдела.
+    .suffix = { "" }
