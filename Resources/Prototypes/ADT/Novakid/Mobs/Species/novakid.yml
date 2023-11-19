@@ -43,7 +43,7 @@
     animation: WeaponArcPunch
     damage:
       types:
-        Piercing: 5
+        Heat: 5
   - type: Temperature
     heatDamageThreshold: 450
     coldDamageThreshold: 193  #starting temperature damage treshold
@@ -55,6 +55,8 @@
     heatDamage:
       types:
         Heat : 0.2 #per second, scales with temperature & other constants
+  - type: FlashImmunity
+  - type: EyeProtection
   - type: MovementSpeedModifier
     baseWalkSpeed : 2.5
     baseSprintSpeed : 4.5
