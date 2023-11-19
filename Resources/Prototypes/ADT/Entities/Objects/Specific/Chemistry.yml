@@ -3,7 +3,6 @@
   name: pill canister
   id: ADTPillCanister
   parent: PillCanister
-  description: Holds up to 9 pills.
   components:
   - type: Sprite
     sprite: ADT/Objects/Specific/Medical/pills.rsi 
@@ -25,7 +24,7 @@
   - type: StorageFill
     contents:
       - id: ADTMVitaminPill 
-        amount: 9
+        amount: 10
   - type: GuideHelp
     guides: 
     - Medicine # заменитт на врачебный
@@ -44,7 +43,7 @@
   - type: StorageFill
     contents:
       - id: ADTMAgolatinePill 
-        amount: 9
+        amount: 10
   - type: GuideHelp
     guides: 
     - Medicine # заменить на врачебный
@@ -101,7 +100,7 @@
     - key: enum.TransferAmountUiKey.Key
       type: TransferAmountBoundUserInterface
   - type: Item
-    size: 3
+    size: Small
     sprite: ADT/Objects/Specific/Medical/plastic-bottle.rsi
   - type: Spillable
     solution: drink
@@ -126,6 +125,32 @@
   id: ADTPlasticBottle
   name: plastic bottle
   parent: BaseChemistryEmptyPlasticBottle
+
+- type: entity
+  id: ADTMMorphineBottle
+  name: morphine bottle
+  parent: BaseChemistryEmptyBottle
+  description: A small bottle with morphine. #новые текстурки
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink: 
+        reagents:
+        - ReagentId: ADTMMorphine
+          Quantity: 30
+
+- type: entity
+  id: ADTMOpiumBottle
+  name: opium bottle
+  parent: BaseChemistryEmptyBottle
+  description: A small bottle with opium. #новые текстурки
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink: 
+        reagents:
+        - ReagentId: ADTMOpium
+          Quantity: 30
 
 - type: entity
   id: ADTMPeroHydrogenBottle
@@ -185,11 +210,12 @@
     state: pack
   - type: Item
     sprite: ADT/Objects/Specific/Medical/packs.rsi 
+    size: Small
   - type: Tag
     tags:
       - PillCanister
   - type: Storage
-    capacity: 10
+    maxTotalWeight: 10
     whitelist:
       components:
       - Pill
@@ -515,7 +541,7 @@
     sprite: ADT/Objects/Specific/Medical/syringe.rsi
     state: "syringe_base"
   - type: Item
-    size: 2
+    size: Tiny
     sprite: ADT/Objects/Specific/Medical/syringe.rsi
     heldPrefix: 0
   - type: SolutionContainerManager
@@ -545,17 +571,18 @@
   description: It's plastic a box with small syringes inside.
   components:
   - type: Storage
-    capacity: 16
+    maxTotalWeight: 6
+    maxItemSize: Small
   - type: StorageFill
     contents:
       - id: ADTSMallSyringe
-        amount: 8
+        amount: 6
   - type: Sprite
     sprite: ADT/Objects/Specific/Medical/syringe.rsi
     state: icon
   - type: Item
     sprite: ADT/Objects/Specific/Medical/syringe.rsi
-    size: 16
+    size: Normal 
   - type: PhysicalComposition
     materialComposition:
       Cardboard: 50

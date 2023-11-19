@@ -57,7 +57,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 20
+          min: 10
         damage:
           types:
-            Asphyxiation: 3
+            Asphyxiation: 2

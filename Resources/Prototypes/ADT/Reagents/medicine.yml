@@ -339,12 +339,35 @@
     Medicine:
       metabolismRate: 0.1
       effects:
+      - !type:HealthChange #передоз антидепрессантов существует, и это плоха, дети.
+        conditions:
+        - !type:ReagentThreshold
+          min: 50
+        damage:
+          types:
+            Asphyxiation: 2
+            Blunt: 1
       - !type:PopupMessage
         type: Local
         visualType: Small
         messages: [ "medicine-effect-emotions" ]
-       #- medicine-effect-visible-emotions 
-        probability: 0.04
+        probability: 0.05
+      - !type:PopupMessage
+        conditions:
+        - !type:SexCondition
+          sex: 0
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-visible-emotions-m" ]
+        probability: 0.05
+      - !type:PopupMessage
+        conditions:
+        - !type:SexCondition
+          sex: 1
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-visible-emotions-f" ]
+        probability: 0.05 #в общем, я не придумал способ обойти пол существ в всплывающем тексте, отчего у нас 2 надписи на 2 пола.
 
 - type: reagent
   id: ADTMHaloperidol #Нейролептик, работает чисто как в Баратравме.
@@ -392,7 +415,7 @@
       - !type:HealthChange
         damage:
           groups:
-            Brute: -0.25
+            Brute: -0.5
       - !type:MovespeedModifier
         conditions:
         - !type:TotalDamage

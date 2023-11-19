@@ -14,3 +14,6 @@ medicine-effect-major-stress = Ваше тело сильно напрягает
 medicine-effect-emotions = Ваши эмоции и чувства становятся менее выразительными.
 medicine-effect-antipsychotic = Ваше зрение и мысли становятся менее расплывчатыми.
 medicine-effect-pain = Вы чувствуете, как ваша боль притупляется.
+
+medicine-effect-visible-emotions-m = { CAPITALIZE($entity) } выглядит менее эмоциональным.
+medicine-effect-visible-emotions-f = { CAPITALIZE($entity) } выглядит менее эмоциональной.
