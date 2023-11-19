@@ -14,7 +14,9 @@
   - type: Thirst
   - type: PointLight
     color: "#ffffff"
-    energy: 0.4
+    energy: 0.6
+  - type: Inventory
+    templateId: novakid
   - type: Icon
     sprite: ADT/Mobs/Novakid/parts.rsi
     state: full_m
