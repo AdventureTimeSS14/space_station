@@ -16,7 +16,7 @@
         heart: OrganAnimalHeart
         lungs: OrganHumanLungs
         stomach: OrganVulpkaninStomach
-        liver: OrganAnimalLiver
+        liver: ADTOrganVulpkaninAnimalLiver  #Печень вульпы
         kidneys: OrganHumanKidneys
       connections:
         - left arm
