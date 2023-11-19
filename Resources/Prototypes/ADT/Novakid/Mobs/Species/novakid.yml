@@ -56,7 +56,7 @@
         Cold : 0.5 #per second, scales with temperature & other constants
     heatDamage:
       types:
-        Heat : 0.2 #per second, scales with temperature & other constants
+        Heat : 0.2 #per second, scales with temperature & other constants.
   - type: FlashImmunity
   - type: EyeProtection
   - type: MovementSpeedModifier
