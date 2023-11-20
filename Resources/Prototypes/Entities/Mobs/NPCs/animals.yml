@@ -308,7 +308,7 @@
     - trigger:
         !type:DamageTypeTrigger
         damageType: Blunt
-        damage: 10
+        damage: 80
       behaviors:
       - !type:GibBehavior { }
 
