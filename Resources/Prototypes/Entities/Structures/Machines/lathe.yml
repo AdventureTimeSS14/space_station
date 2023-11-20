@@ -689,6 +689,8 @@
     staticRecipes:
       - Brutepack
       - Ointment
+      - ADTAntibioticOintment
+      - ADTMedicalTourniquet
       - HandLabeler
       - Defibrillator
       - HandheldHealthAnalyzer
