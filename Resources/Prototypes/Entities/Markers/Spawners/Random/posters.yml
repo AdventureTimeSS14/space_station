@@ -97,6 +97,8 @@
       - ADTPosterContrabandSilence # Спрайт от Иллюми
       - ADTPosterContrabandLustUma
       - ADTPosterContrabandLustArDeco
+      - ADTPosterDontSitDown
+      - ADTPosterTayarHalloween
     chance: 1
 
 - type: entity
@@ -155,19 +157,10 @@
       - PosterLegitRenault
       - PosterLegitNTTGC
       - ADTPosterLegitEfficiency
-      #- ADTPosterLegitGreatFood #спрайт от Празата
-      #- ADTPosterLegitTurnOnSensors #спрайт от Празата
-      #- ADTPosterLegitOktoberfest #спрайт от Празата
-      #- ADTPosterLegitOktoberfest2 #спрайт от Празата
-    chance: 0.3
-    rarePrototypes: #временная мера на момент дня рожденья проекта
-      - ADTPosterOneYear1 #спрайт от Умы
-      - ADTPosterOneYear2 #спрайт от Умы
-      - ADTPosterOneYear3 #спрайт от Умы
-      - ADTPosterOneYear4 #спрайт от Умы
       - ADTPosterLegitGreatFood #спрайт от Празата
       - ADTPosterLegitTurnOnSensors #спрайт от Празата
       - ADTPosterLegitOktoberfest #спрайт от Празата
       - ADTPosterLegitOktoberfest2 #спрайт от Празата
       - ADTPosterPassTheBanana #спрайт от Уолтера
-    rareChance: 0.7
+      - ADTPosterSingoPizza
+    chance: 1

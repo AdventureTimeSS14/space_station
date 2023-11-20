@@ -8,7 +8,7 @@
   components:
   - type: LightBulb
     color: "#00FF00"
-    lightEnergy: 6
+    lightEnergy: 2
     lightRadius: 15
     lightSoftness: 0.9
     BurningTemperature: 1000
@@ -23,7 +23,7 @@
   components:
   - type: LightBulb
     color: "#FF0000"
-    lightEnergy: 6
+    lightEnergy: 2
     lightRadius: 15
     lightSoftness: 0.9
     BurningTemperature: 1000
@@ -38,7 +38,7 @@
   components:
   - type: LightBulb
     color: "#0000FF"
-    lightEnergy: 6
+    lightEnergy: 2
     lightRadius: 15
     lightSoftness: 0.9
     BurningTemperature: 1000
@@ -53,7 +53,7 @@
   components:
   - type: LightBulb
     color: "#FFE400"
-    lightEnergy: 6
+    lightEnergy: 2
     lightRadius: 15
     lightSoftness: 0.9
     BurningTemperature: 1000
@@ -68,7 +68,7 @@
   components:
   - type: LightBulb
     color: "#EE82EE"
-    lightEnergy: 6
+    lightEnergy: 2
     lightRadius: 15
     lightSoftness: 0.9
     BurningTemperature: 1000

@@ -298,3 +298,6 @@ ent-ADTPosterDontSitDown = "Не садись!"
 
 ent-ADTPosterContrabandLustArDeco = таяранское ар-деко
     .desc = На плакате изображена таяранка в привлекательной позе и наряде в стиле ар-деко.
+
+ent-ADTPosterSingoPizza = пицца тайм!
+    .desc = На плакате изображена сингулярность в виде пиццы.

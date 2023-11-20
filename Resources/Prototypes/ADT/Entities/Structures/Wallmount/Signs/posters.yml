@@ -510,3 +510,13 @@
     radius: 3
     energy: 2
     color: cyan
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterSingoPizza
+  name: Pizza Time!
+  description: Pizza Time!
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/pizzatime.rsi
+    state: pizzatime
