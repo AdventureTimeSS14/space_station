@@ -14,7 +14,7 @@
   - type: Thirst
   - type: PointLight
     color: "#ffffff"
-    energy: 0.4
+    energy: 0.6
   - type: Icon
     sprite: ADT/Mobs/Novakid/parts.rsi
     state: full_m
@@ -43,7 +43,7 @@
     animation: WeaponArcPunch
     damage:
       types:
-        Piercing: 5
+        Heat: 5
   - type: Temperature
     heatDamageThreshold: 450
     coldDamageThreshold: 193  #starting temperature damage treshold
@@ -54,7 +54,9 @@
         Cold : 0.5 #per second, scales with temperature & other constants
     heatDamage:
       types:
-        Heat : 0.2 #per second, scales with temperature & other constants
+        Heat : 0.2 #per second, scales with temperature & other constants.
+  - type: FlashImmunity
+  - type: EyeProtection
   - type: MovementSpeedModifier
     baseWalkSpeed : 2.5
     baseSprintSpeed : 4.5
