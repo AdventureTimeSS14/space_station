@@ -266,7 +266,7 @@ namespace Content.IntegrationTests.Tests
                         Assert.That(lateSpawns, Is.GreaterThan(0), $"Found no latejoin spawn points on {mapProto}");
                     }
 
-                    /*
+                    
 
                     // Test all availableJobs have spawnPoints
                     // This is done inside gamemap test because loading the map takes ages and we already have it.
@@ -275,6 +275,7 @@ namespace Content.IntegrationTests.Tests
                         .Select(x => x.Key);
                     var spawnPoints = entManager.EntityQuery<SpawnPointComponent>()
                         .Where(spawnpoint => spawnpoint.SpawnType == SpawnPointType.Job)
+                        .Where(x=>x.Key != "SAI") // backmen: SAI
                         .Select(spawnpoint => spawnpoint.Job.ID)
                         .Distinct();
                     List<string> missingSpawnPoints = new();
@@ -287,7 +288,7 @@ namespace Content.IntegrationTests.Tests
                     Assert.That(missingSpawnPoints, Has.Count.EqualTo(0),
                         $"There is no spawnpoint for {string.Join(", ", missingSpawnPoints)} on {mapProto}.");
 
-                    */
+                    
                 }
 
                 try
