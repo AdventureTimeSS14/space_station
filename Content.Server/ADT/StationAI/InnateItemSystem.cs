@@ -6,7 +6,7 @@ using Content.Shared.Tag;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
-namespace Content.Server.Backmen.StationAI;
+namespace Content.Server.ADT.StationAI;
 
 public sealed partial class InnateItemSystem : EntitySystem
 {
