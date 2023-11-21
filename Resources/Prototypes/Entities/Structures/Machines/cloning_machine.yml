@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   id: CloningPod
   parent: BaseMachinePowered
   name: cloning pod
@@ -20,17 +20,6 @@
         map: ["base"]
   - type: Physics
     bodyType: Static
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.2,-0.4,0.2,0.4"
-        density: 190
-        mask:
-        - MachineMask
-        layer:
-        - MachineLayer
   - type: Construction
     graph: Machine
     node: machine
