@@ -303,11 +303,11 @@
     tags:
     - Trash
     - VimPilot
-  - type: Destructible
+  - type: Destructible #процесс разрушения на органы
     thresholds:
     - trigger:
         !type:DamageTypeTrigger
-        damageType: Blunt
+        damageType: Blunt #при каком дамаге это происходит 
         damage: 80
       behaviors:
       - !type:GibBehavior { }
