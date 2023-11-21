@@ -56,11 +56,22 @@
       - SemiAuto
       - Burst
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
+      collection: FN_Fal_choot
   - type: Item
     size: Large
 
-# Empty mags
+
+
+    ## рандомизатор звуков для разнообразия звуков выстрела
+- type: soundCollection
+  id: FN_Fal_choot
+  files:
+    - /Audio/ADT/Weapons/fnfal/FN-FAL_shoot1.ogg
+    - /Audio/ADT/Weapons/fnfal/FN-FAL_shoot2.ogg
+    - /Audio/ADT/Weapons/fnfal/FN-FAL_shoot3.ogg
+    - /Audio/ADT/Weapons/fnfal/FN-FAL_shoot4.ogg
+
+# Base mags
 - type: entity
   id: ADTBaseMagazineRifleFNFAL
   name: "extended magazine (.20 rifle)"
@@ -94,7 +105,7 @@
     zeroVisible: false
   - type: Appearance
 
-# Magazines
+# Magazines FN_FAL
 - type: entity
   id: ADTMagazineRifleFNFAL
   name: "extended magazine (.20 rifle)"
