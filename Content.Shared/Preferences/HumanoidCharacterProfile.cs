@@ -77,7 +77,7 @@ namespace Content.Shared.Preferences
             HumanoidCharacterProfile other,
             Dictionary<string, JobPriority> jobPriorities,
             List<string> antagPreferences,
-            List<string> traitPreferences),
+            List<string> traitPreferences,
             List<string> loadoutPreferences)
             : this(other.Name, other.FlavorText, (int) other.ERPStatus, other.Species, other.Voice, other.Age, other.Sex, other.Gender, other.Appearance, other.Clothing, other.Backpack,
                 jobPriorities, other.PreferenceUnavailable, antagPreferences, traitPreferences, loadoutPreferences)
@@ -105,7 +105,7 @@ namespace Content.Shared.Preferences
             IReadOnlyDictionary<string, JobPriority> jobPriorities,
             PreferenceUnavailableMode preferenceUnavailable,
             IReadOnlyList<string> antagPreferences,
-            IReadOnlyList<string> traitPreferences),
+            IReadOnlyList<string> traitPreferences,
             IReadOnlyList<string> loadoutPreferences)
             : this(name, flavortext, erpStatus, species, voice, age, sex, gender, appearance, clothing, backpack, new Dictionary<string, JobPriority>(jobPriorities),
                 preferenceUnavailable, new List<string>(antagPreferences), new List<string>(traitPreferences), new List<string>(loadoutPreferences))
