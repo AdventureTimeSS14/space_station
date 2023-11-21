@@ -51,7 +51,7 @@ namespace Content.Shared.Preferences
             Dictionary<string, JobPriority> jobPriorities,
             PreferenceUnavailableMode preferenceUnavailable,
             List<string> antagPreferences,
-            List<string> traitPreferences),
+            List<string> traitPreferences,
             List<string> loadoutPreferences)
         {
             Name = name;
