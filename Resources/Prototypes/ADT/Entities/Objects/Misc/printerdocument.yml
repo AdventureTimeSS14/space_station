@@ -1042,16 +1042,18 @@
   # Материал бумага
 - type: material
   id: SheetPrinter
-  stackEntity: SheetPrinter1
+  stackEntity: Paper
   name: бумага
   icon: { sprite: Objects/Misc/bureaucracy.rsi, state: paper }
   color: "#ffffff"
   price: 0.05
 
-- type: stack
-  id: SheetPrinter1
-  name: Paper
-  icon: { sprite: Objects/Misc/bureaucracy.rsi, state: paper }
-  spawn: Paper
-  maxCount: 1
-  itemSize: 1
+
+# - type: stack
+#   id: SheetPrinter1
+#   name: Paper
+#   icon: { sprite: Objects/Misc/bureaucracy.rsi, state: paper }
+#   spawn: Paper
+#   maxCount: 1
+#   itemSize: 1
+
