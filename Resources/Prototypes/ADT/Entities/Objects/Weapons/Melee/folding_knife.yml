@@ -21,8 +21,8 @@
         Blunt: 0
     staminaDamageFolded: 0
     staminaDamageOpen: 0
-    sizeOpened: 10
-    sizeClosed: 5
+    sizeOpened: Normal
+    sizeClosed: Small
   - type: StaminaDamageOnHit
     damage: 0
   - type: MeleeWeapon

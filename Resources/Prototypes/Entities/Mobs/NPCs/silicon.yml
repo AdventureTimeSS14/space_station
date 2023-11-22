@@ -56,6 +56,7 @@
     - Piercing
     - Heat
     - Shock
+    locPrefix: silicon
   - type: MovedByPressure
   - type: Physics
     bodyType: KinematicController # Same for all inheritors
@@ -86,6 +87,9 @@
     thresholds:
       0: Alive
       120: Dead
+    stateAlertDict:
+      Alive: BorgHealth
+    showOverlays: false
   - type: Stamina
     critThreshold: 120
   - type: Destructible
@@ -177,6 +181,9 @@
   - type: Storage
     maxItemSize: Huge
     maxTotalWeight: 40
+  - type: Access
+    groups:
+    - Cargo
   - type: UserInterface
     interfaces:
     - key: enum.StorageUiKey.Key

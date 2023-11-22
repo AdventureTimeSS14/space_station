@@ -853,7 +853,6 @@ public sealed class ChatUIController : UIController
                 AddSpeechBubble(msg, SpeechBubble.SpeechType.Looc, prefixText, prefixEndText);
                 break;
         }
-
     }
 
     public void OnDeleteChatMessagesBy(MsgDeleteChatMessagesBy msg)

@@ -30,7 +30,7 @@
         Heat: 10
   - type: Explosive
     explosionType: Default
-    totalIntensity: 120 # ~ 5 tile radius
+    totalIntensity: 10 # ~ 5 tile radius
 
 - type: entity
   id: WeldingFuelTankFull
@@ -70,7 +70,7 @@
         maxVol: 5000
   - type: Explosive
     explosionType: Default
-    totalIntensity: 140
+    totalIntensity: 20
 
 # Water
 
@@ -178,3 +178,4 @@
       fillBaseName: watertank-2-
     - type: ExaminableSolution
       solution: tank
+

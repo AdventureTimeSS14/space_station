@@ -351,9 +351,7 @@
       borg_brain:
       - MMIFilled
       borg_module:
-      - BorgModuleLightReplacer
       - BorgModuleCleaning
-      - BorgModuleTrashCollection
   - type: ItemSlots
     slots:
       cell_slot:
@@ -389,7 +387,6 @@
       borg_brain:
       - MMIFilled
       borg_module:
-      - BorgModuleLiteracy
       - BorgModuleMusique
       - BorgModuleGardening
       - BorgModuleHarvesting

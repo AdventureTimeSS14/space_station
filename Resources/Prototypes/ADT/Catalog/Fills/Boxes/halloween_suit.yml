@@ -11,9 +11,9 @@
     #layers:
     #- state: pennywise
   - type: Item
-    size: 100
+    size: Ginormous
   - type: Storage
-    maxItemSize: Size100
+    maxItemSize: Ginormous
     maxTotalWeight: 0
     maxSlots: 50 #By this ignore maxTotalWeight
   - type: ContainerContainer
@@ -129,7 +129,7 @@
     #- state: base
     #- state: jecket
   - type: Item
-    size: 125
+    size: Ginormous
   - type: Storage
     maxItemSize: Ginormous
   - type: StorageFill
@@ -209,7 +209,7 @@
     #- state: base
     #- state: postal2
   - type: Item
-    size: 125
+    size: Ginormous
   - type: Storage
     maxItemSize: Ginormous
   - type: StorageFill

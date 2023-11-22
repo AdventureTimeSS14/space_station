@@ -8,7 +8,7 @@
   components:
   - type: Sprite
   - type: Item
-    size: 50
+    size: Ginormous
   - type: Clothing
     sprite: Objects/Weapons/Guns/BurstRifles/abakan.rsi
     quickEquip: false
