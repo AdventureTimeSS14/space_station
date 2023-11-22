@@ -129,3 +129,7 @@ ent-ADTPlushieFritz = Фицджеральд Эллис
 ent-ADTPlushieAzalia = плюшевая Азалия
     .desc = Мягкая и милая игрушка-блондинка.
     .suffix = { "" }
+
+ent-ADTPlushieSofy = Софи
+    .desc = Милая плюшевая игрушка, так и хочется её обнять.
+    .suffix = { "" }

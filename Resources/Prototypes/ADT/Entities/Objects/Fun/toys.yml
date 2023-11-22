@@ -413,3 +413,14 @@
   - type: Sprite
     sprite: ADT/Objects/Fun/toys.rsi
     state: plushie_azalia
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieSofy
+  name: Sofy plushie
+  description: It looks like a soft and cute blondie.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_sofy
+
