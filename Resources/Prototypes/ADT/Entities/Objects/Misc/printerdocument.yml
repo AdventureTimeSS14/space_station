@@ -1049,11 +1049,43 @@
   price: 0.05
 
 
-# - type: stack
-#   id: SheetPrinter1
-#   name: Paper
-#   icon: { sprite: Objects/Misc/bureaucracy.rsi, state: paper }
-#   spawn: Paper
-#   maxCount: 1
-#   itemSize: 1
+- type: stack
+  id: Paper
+  name: Paper
+  icon: { sprite: Objects/Misc/bureaucracy.rsi, state: paper }
+  spawn: Paper
+  maxCount: 1
+  itemSize: 1
 
+# - type: material
+#   id: Plasma
+#   stackEntity: SheetPlasma1
+#   name: materials-plasma
+#   icon: { sprite: Objects/Materials/Sheets/other.rsi, state: plasma }
+#   color: "#7e009e"
+#   price: 0.2
+
+
+# - type: entity
+#   parent: SheetPlasma
+#   id: SheetPlasma1
+#   name: plasma
+#   suffix: Single
+#   components:
+#   - type: Sprite
+#     state: plasma
+#   - type: Stack
+#     count: 1
+
+# - type: entity
+#   parent: SheetOtherBase
+#   id: SheetPlasma
+#   name: plasma
+#   suffix: Full
+#   components:
+#   - type: Material
+#   - type: PhysicalComposition
+#     materialComposition:
+#       Plasma: 100
+#   - type: Stack
+#     stackType: Plasma
