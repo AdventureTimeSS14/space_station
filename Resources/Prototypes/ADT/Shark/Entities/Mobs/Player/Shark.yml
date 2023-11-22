@@ -2,7 +2,7 @@
   save: false
   name: "Плафеим"
   parent: BaseMobShark
-  id: MobShark
+  id: ADTMobShark
   components:
     - type: CombatMode
     - type: InteractionPopup

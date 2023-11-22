@@ -774,9 +774,6 @@
   - type: IconSmooth
     key: walls
     base: state
-  - type: Construction
-    graph: Girder
-    node: shuttleWall
   - type: Reflect
     reflectProb: 1
 

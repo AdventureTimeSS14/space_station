@@ -2,7 +2,7 @@
   id: SharkSpecies
   name: species-name-Shark
   roundStart: true #can player role
-  prototype: MobShark
+  prototype: ADTMobShark
   sprites: MobSharkSprites
   markingLimits: MobSharkMarkingLimits
   dollPrototype: MobSharkDummy

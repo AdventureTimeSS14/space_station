@@ -13,7 +13,7 @@
       types:
         Piercing: 15
   - type: Item
-    size: 5
+    size: Tiny
 
 - type: entity
   parent: ClothingHeadBase
@@ -30,4 +30,4 @@
       types:
         Piercing: 15
   - type: Item
-    size: 5
+    size: Small

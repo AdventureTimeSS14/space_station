@@ -9,6 +9,6 @@
   - type: Clothing
     sprite: ADT/KD/RingEmerald.rsi
   - type: Item
-    size: 1
+    size: Tiny
   - type: StaticPrice
     price: 1000

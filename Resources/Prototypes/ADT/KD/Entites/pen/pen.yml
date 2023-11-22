@@ -13,4 +13,4 @@
   - type: Item
     sprite: ADT/KD/pen.rsi
     heldPrefix: pen
-    size: 2
+    size: Tiny
