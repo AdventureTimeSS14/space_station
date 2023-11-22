@@ -478,17 +478,6 @@
       content: doc-text-printer-REPORTACCOMPLISHMENTGOALS
 
 
-  # Материал бумага
-- type: material
-  id: SheetPrinter
-  stackEntity: Paper
-  name: бумага
-  icon: { sprite: Objects/Misc/bureaucracy.rsi, state: paper }
-  color: "#ffffff"
-  price: 0.05
-
-
-
 #Сам принтер
 - type: entity
   parent: BaseLathe
@@ -1049,3 +1038,20 @@
   materials:
      Steel: 100
      Glass: 900
+
+  # Материал бумага
+- type: material
+  id: SheetPrinter
+  stackEntity: Paper
+  name: бумага
+  icon: { sprite: Objects/Misc/bureaucracy.rsi, state: paper }
+  color: "#ffffff"
+  price: 0.05
+
+- type: stack
+  id: SheetPrinter1
+  name: rods
+  icon: { sprite: Objects/Misc/bureaucracy.rsi, state: paper }
+  spawn: Paper
+  maxCount: 1
+  itemSize: 1
