@@ -436,8 +436,6 @@
   parent: BoxCardboard
   id: BoxCandle
   components:
-  - type: Item
-    size: 30
   - type: Sprite
     layers:
       - state: box
@@ -462,8 +460,6 @@
   parent: BoxCardboard
   id: BoxCandleSmall
   components:
-  - type: Item
-    size: 30
   - type: Sprite
     layers:
       - state: box

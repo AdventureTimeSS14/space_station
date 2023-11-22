@@ -10,7 +10,7 @@
     - state: icon
       map: ["enum.GunVisualLayers.Base"]
   - type: Item
-    size: 1
+    size: Tiny
     sprite: ADT/Objects/Weapons/Guns/HMGs/yumidegurshavstail.rsi
   - type: Gun
     fireRate: 30

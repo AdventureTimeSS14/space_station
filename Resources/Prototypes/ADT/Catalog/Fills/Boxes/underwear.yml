@@ -9,7 +9,7 @@
     state: box
   - type: Item
     sprite: ADT/Objects/Storage/underwear_boxes.rsi
-    size: 10
+    size: Normal
   - type: Storage
     maxItemSize: Normal
   - type: StorageFill

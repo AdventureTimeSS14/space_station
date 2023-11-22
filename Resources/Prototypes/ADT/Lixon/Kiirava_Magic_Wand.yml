@@ -8,12 +8,12 @@
     sprite: ADT/Objects/Weapons/Guns/kiiravamagicwand.rsi
     layers:
     - state: icon
-      map: ["enum.GunVisualLayers.Base"] 
+      map: ["enum.GunVisualLayers.Base"]
   - type: Item
-    size: 1
+    size: Tiny
     sprite: ADT/Objects/Weapons/Guns/kiiravamagicwand.rsi
   - type: Gun
-    fireRate: 1 
+    fireRate: 1
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/Magic/staff_healing.ogg
   - type: BallisticAmmoProvider
@@ -28,7 +28,7 @@
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        
+
 - type: entity
   id: ADTCartridgeWand
   name: cartridge (.10 rifle)
@@ -47,4 +47,4 @@
   - type: Projectile
     damage:
       types:
-        Slash: 50 
+        Slash: 50
