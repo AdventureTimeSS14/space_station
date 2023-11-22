@@ -512,7 +512,7 @@
   - type: Transform
     noRot: false
   - type: Machine
-    board: FormPrinterMachineCircuitboard
+    board: ADTFormPrinterMachineCircuitboard
   - type: Lathe
     producingSound: /Audio/Machines/scanning.ogg
     idleState: icon
@@ -1016,7 +1016,7 @@
 
     #плата принтера
 - type: entity
-  id: FormPrinterMachineCircuitboard
+  id: ADTFormPrinterMachineCircuitboard
   parent: BaseItem
   name: form printer machine board
   components:
@@ -1043,8 +1043,8 @@
 
 #плата принтера рецепт в протолате
 - type: latheRecipe
-  id: FormPrinterMachineCircuitboard
-  result: FormPrinterMachineCircuitboard
+  id: ADTFormPrinterMachineCircuitboard
+  result: ADTFormPrinterMachineCircuitboard
   completetime: 4
   materials:
      Steel: 100

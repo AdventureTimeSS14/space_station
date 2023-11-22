@@ -139,6 +139,7 @@
       - CellRechargerCircuitboard
       - BorgChargerCircuitboard
       - WeaponCapacitorRechargerCircuitboard
+      - ADTFormPrinterMachineCircuitboard
   - type: EmagLatheRecipes
     emagStaticRecipes:
        - CartridgePistol
@@ -399,7 +400,7 @@
       - TelecomServerCircuitboard
       - MassMediaCircuitboard
       - ADTSMESIndustrialMachineCircuitboard
-      - FormPrinterMachineCircuitboard
+      - ADTFormPrinterMachineCircuitboard
   - type: MaterialStorage
     whitelist:
       tags:

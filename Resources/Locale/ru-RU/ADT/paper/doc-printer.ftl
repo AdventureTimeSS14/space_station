@@ -876,7 +876,7 @@ doc-text-printer-REPORTACCOMPLISHMENTGOALS =
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
 
-ent-FormPrinterMachineCircuitboard = принтер документов (машинная плата)
+ent-ADTFormPrinterMachineCircuitboard = принтер документов (машинная плата)
     .desc = Печатная плата для принтера документов.
 
 ent-PrinterDoc = Принтер документов

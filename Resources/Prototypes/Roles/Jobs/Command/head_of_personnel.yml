@@ -65,7 +65,7 @@
     id: HoPPDA
     ears: ClothingHeadsetAltCommand
     belt: BoxFolderClipboard
-    pocket1: FormPrinterMachineCircuitboard
+    pocket1: ADTFormPrinterMachineCircuitboard
     underwearb: ClothingUnderwearBottomBoxersHOP # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraHOP # Sirena-Underwear
