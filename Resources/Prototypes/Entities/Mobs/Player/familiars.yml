@@ -27,7 +27,7 @@
     tags:
     - Chapel
   - type: Item
-    size: 5
+    size: Small
   - type: MindContainer
     showExamineInfo: true
   - type: NpcFactionMember

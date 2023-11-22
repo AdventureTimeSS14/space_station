@@ -35,7 +35,7 @@
     sprite: ADT/KD/JessusX.rsi
     state: icon
   - type: Item
-    size: 5
+    size: Small
     sprite: ADT/KD/JessusX.rsi
   - type: Clothing
     slots:

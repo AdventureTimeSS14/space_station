@@ -12,7 +12,7 @@
           map: [ "enabled" ]
   - type: Item
     sprite: ADT/KD/fireborn.rsi
-    size: 15
+    size: Normal
   - type: SolutionContainerManager
     solutions:
       spray:
@@ -21,7 +21,7 @@
         - ReagentId: Phlogiston
           Quantity: 100
         - ReagentId: Napalm
-          Quantity: 900          
+          Quantity: 900
   - type: RefillableSolution
     solution: spray
   - type: DrainableSolution
