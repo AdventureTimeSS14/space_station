@@ -55,7 +55,7 @@
     state: heart_on
   - type: Metabolizer
     maxReagents: 2
-    metabolizerTypes: [Drask]
+    metabolizerTypes: [Human]
     groups:
     - id: Medicine
     - id: Poison
@@ -83,7 +83,7 @@
   - type: Stomach
   - type: Metabolizer
     maxReagents: 3
-    metabolizerTypes: [Drask]
+    metabolizerTypes: [Human]
     groups:
     - id: Food
     - id: Drink
