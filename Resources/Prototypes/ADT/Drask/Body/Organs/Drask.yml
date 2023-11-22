@@ -99,5 +99,5 @@
     state: kidneys
   - type: Metabolizer
     maxReagents: 5
-    metabolizerTypes: [Drask]
+    metabolizerTypes: [Human]
     removeEmpty: true
