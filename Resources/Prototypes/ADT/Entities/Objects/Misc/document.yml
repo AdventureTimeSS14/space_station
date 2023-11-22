@@ -512,6 +512,7 @@
   - type: Transform
     noRot: false
   - type: Machine
+    board: FormPrinterMachineCircuitboard
   - type: Lathe
     producingSound: /Audio/Machines/scanning.ogg
     idleState: icon
@@ -1013,17 +1014,29 @@
     SheetPrinter: 100
 
 
-    #Плата принтера
+    #плата принтера
 - type: entity
   id: FormPrinterMachineCircuitboard
-  parent: BaseMachineCircuitboard
-  name: uniform printer machine board
+  parent: BaseItem
+  name: form printer machine board
   components:
   - type: MachineBoard
     prototype: PrinterDoc
     requirements:
       MatterBin: 1
       Manipulator: 2
+  - type: Tag
+    tags:
+      - DroneUsable
+  - type: StaticPrice
+    price: 100
+  - type: PhysicalComposition
+    materialComposition:
+      Glass: 400
+    chemicalComposition:
+      Silicon: 20
+
+
 
 #плата принтера рецепт в протолате
 - type: latheRecipe
