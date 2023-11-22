@@ -1116,3 +1116,6 @@
 
 - type: Tag
   id: ADTExtMagazineRifle
+
+- type: Tag
+  id: ADTMagazineRifleFNFAL
