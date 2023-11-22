@@ -1029,7 +1029,6 @@
       Silicon: 20
 
 
-
 #плата принтера рецепт в протолате
 - type: latheRecipe
   id: ADTFormPrinterMachineCircuitboard
@@ -1057,6 +1056,7 @@
 #   maxCount: 1
 #   itemSize: 1
 
+
 # - type: material
 #   id: Plasma
 #   stackEntity: SheetPlasma1
@@ -1076,6 +1076,7 @@
 #     state: plasma
 #   - type: Stack
 #     count: 1
+
 
 # - type: entity
 #   parent: SheetOtherBase
