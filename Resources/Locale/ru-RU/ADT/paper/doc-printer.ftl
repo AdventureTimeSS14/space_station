@@ -875,3 +875,9 @@ doc-text-printer-REPORTACCOMPLISHMENTGOALS =
     Отчёт:
     =============================================
                                 ⠀[italic]Место для печатей[/italic]
+
+ent-FormPrinterMachineCircuitboard = принтер документов (машинная плата)
+    .desc = Печатная плата для принтера документов.
+
+ent-PrinterDoc = Принтер документов
+    .desc = Уникальная разработка Nanotrasen со всеми основными формами.
