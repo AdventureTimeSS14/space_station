@@ -62,7 +62,7 @@
     materialComposition:
       SheetPrinter: 100
   - type: Stack
-    maxCount: 1
+    count: 1
 # Corvax-Printer-End
 
 - type: entity
