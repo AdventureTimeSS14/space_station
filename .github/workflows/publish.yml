@@ -34,6 +34,9 @@ jobs:
         cd RobustToolbox
         git fetch --depth=1
 
+    - name: Remove Dotnet 8
+      run: sudo apt remove --purge dotnet-sdk-8.0
+
     - name: Install dependencies
       run: dotnet restore
 
