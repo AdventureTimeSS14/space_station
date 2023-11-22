@@ -61,7 +61,7 @@
   - type: PhysicalComposition
     materialComposition:
       SheetPrinter: 100
-  - Stack:
+  - type: Stack
     count: 1
 # Corvax-Printer-End
 
