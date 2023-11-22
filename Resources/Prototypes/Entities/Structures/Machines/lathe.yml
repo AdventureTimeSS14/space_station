@@ -399,6 +399,7 @@
       - TelecomServerCircuitboard
       - MassMediaCircuitboard
       - ADTSMESIndustrialMachineCircuitboard
+      - FormPrinterMachineCircuitboard
   - type: MaterialStorage
     whitelist:
       tags:
