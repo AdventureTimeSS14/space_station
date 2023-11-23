@@ -33,23 +33,20 @@
 
 - type: markingPoints
   id: MobVulpkaninMarkingLimits
+  onlyWhitelisted: true
   points:
     Hair:
       points: 1
       required: false
-      onlyWhitelisted: false
     Chest:
       points: 1
       required: false
-      onlyWhitelisted: true
     Tail:
       points: 1
       required: false
-      onlyWhitelisted: true
     Head:
       points: 3
       required: false
-      onlyWhitelisted: true
 - type: humanoidBaseSprite
   id: MobVulpkaninEyes
   baseSprite:
