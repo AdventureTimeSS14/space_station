@@ -47,7 +47,6 @@
     Head:
       points: 3
       required: false
-      
 - type: humanoidBaseSprite
   id: MobVulpkaninEyes
   baseSprite:
