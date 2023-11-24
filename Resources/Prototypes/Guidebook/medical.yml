@@ -29,6 +29,7 @@
   name: guide-entry-chemist
   text: "/ServerInfo/Guidebook/Medical/Chemist.xml"
   children:
+  - ADTChemicals
   - Medicine
   - Botanicals
   - Chemicals

@@ -21,3 +21,14 @@
   - type: StealCondition
     prototype: HoPIDCard
     owner: job-name-hop
+
+- type: entity
+  noSpawn: true
+  parent: BaseTraitorStealObjective
+  id: ADTCMODefibrillatorStealObjective
+  components:
+  - type: NotJobRequirement
+    job: ChiefMedicalOfficer
+  - type: StealCondition
+    prototype: ADTMobileDefibrillator
+    owner: job-name-cmo

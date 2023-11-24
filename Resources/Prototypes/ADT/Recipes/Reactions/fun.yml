@@ -1,5 +1,5 @@
 - type: reaction
-  id: ADTPMChaoticPolymorphine
+  id: ADTMChaoticPolymorphine
   reactants:
     Uranium:
       amount: 4
@@ -10,12 +10,12 @@
     SulfuricAcid:
       amount: 1
   products:
-    ADTPMChaoticPolymorphine: 3
+    ADTMChaoticPolymorphine: 3
 
 - type: reaction
-  id: ADTPMPolymorphine
+  id: ADTMPolymorphine
   reactants:
-    ADTPMChaoticPolymorphine:
+    ADTMChaoticPolymorphine:
       amount: 1
     DexalinPlus:
       amount: 1
@@ -24,4 +24,4 @@
     Plasma:
       amount: 1
   products:
-    ADTPMPolymorphine: 4
+    ADTMPolymorphine: 4

@@ -68,7 +68,7 @@
     Alcohol:
       effects:
       - !type:Drunk
-        boozePower: 18
+        boozePower: 6 #у этанола 2
   plantMetabolism:
   - !type:PlantAdjustToxins
     amount: -10
@@ -159,12 +159,12 @@
   flavor: medicine
   color: "#ffaa00"
   metabolisms:
-    Medicine:
+    Medicine: #он почему-то очень странно усваивается, не 0.5 в секунду. оно постоянно меняется.
       effects:
       - !type:HealthChange
         damage:
           groups:
-            Brute: -2
+            Brute: -2 #в районе ~19 в каждой группе (что очень странно)
       - !type:PopupMessage
         conditions:
         - !type:TotalDamage
@@ -198,9 +198,6 @@
         visualType: Small
         messages: [ "medicine-effect-stress" ]
         probability: 0.2
-    Alcohol:
-      effects:
-      - !type:Drunk
 
 - type: reagent
   id: Cryoxadone
@@ -267,7 +264,7 @@
           types:
             Heat: -1.5
             Shock: -1.5
-            Cold: -1.5
+            Cold: -1.5 #получается, всего за единицу лечит 9 ожогов.
       - !type:PopupMessage
         conditions:
         - !type:TotalDamage

@@ -1,0 +1,36 @@
+- type: entity
+  name: foot tag
+  parent: BaseItem
+  id: ADTFootTag
+  description: A piece of paper for dead.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/foot_tag
+    layers:
+    - state: paper
+    - state: paper_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      visible: false
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/foot_tag
+    slots:
+    - FEET
+  - type: Paper
+  - type: ActivatableUI
+    key: enum.PaperUiKey.Key
+    closeOnHandDeselect: false
+  - type: UserInterface
+    interfaces:
+    - key: enum.PaperUiKey.Key
+      type: PaperBoundUserInterface
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - Document
+    - Trash
+  - type: Appearance
+  - type: PaperVisuals
+  - type: GuideHelp
+    guides: 
+    - ADTPathologist

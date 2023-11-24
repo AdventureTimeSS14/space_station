@@ -23,3 +23,30 @@
   - type: MultiHandedItem
   - type: PowerCellDraw
     useRate: 200
+
+- type: entity
+  id: ADTMobileDefibrillator
+  name: mobile defibrillator
+  description: Mobile version of defibrillator. Can be fixed on your belt, a medical one and even fits in pockets! #somehow
+  parent: [ BaseDefibrillator, PowerCellSlotMediumItem ]
+  components:
+  - type: Item
+    size: Small
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - belt
+  - type: Tag
+    tags:
+    - Defibrillator
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/mobile_defib.rsi 
+  - type: Defibrillator
+    zapHeal:
+      types:
+        Asphyxiation: -25
+    writheDuration: 5
+    zapDamage: 3
+  - type: MultiHandedItem
+  - type: PowerCellDraw
+    useRate: 200 #~3 использования.

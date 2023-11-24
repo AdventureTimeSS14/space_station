@@ -57,7 +57,7 @@
     state: antib_ointment 
   - type: Item
     heldPrefix: antib_ointment
-  - type: Healing
+  - type: Healing #по факту, эта штука может вылечить аж 210 урона за 10 штук, но учитывая то, что кислотные раны очень редки, то где-то 190, что тоже достаточно.
     damageContainers:
       - Biological
     damage:
@@ -82,16 +82,7 @@
   - type: Stack
     stackType: ADTAntibioticOintment
     count: 1
-
-- type: entity
-  id: ADTAntibioticOintment10Lingering
-  parent: ADTAntibioticOintment
-  suffix: 10, Lingering
-  components:
-  - type: Stack
-    lingering: true
-    count: 10
-
+    
 #стаки
 - type: stack
   id: ADTAntibioticOintment

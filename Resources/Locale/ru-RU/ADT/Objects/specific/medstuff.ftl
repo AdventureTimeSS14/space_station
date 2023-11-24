@@ -6,9 +6,18 @@ ent-ADTCombatHypo = боевой гипоспрей
     .desc = Модель гипоспрея, разработанная NT для использования в боевых ситуациях - с повышенным объемом в ущерб скорости применения. 
     .suffix = { "" }
 
-ent-ADTHandDefibrillator = боевой переносной Дефибрилятор
-    .desc = Облегченная версия дефибрилятора, возращает в жизни лучше и быстрее, хоть разряд опаснее. Можно надеть на шею
+ent-ADTHandDefibrillator = боевой переносной Дефибриллятор
+    .desc = Облегченная версия дефибриллятора, возращает к жизни лучше и быстрее, хоть разряд опаснее. Можно надеть на шею
     .suffix = { "" }
+
+ent-ADTMedicalTourniquet  = кровоостанавливающий жгут-турникет
+    .desc = Компактное средство от кровотечения.
+
+ent-ADTAntibioticOintment = антибиотическая мазь
+    .desc = Используется для лечения как ушибов, порезов, уколов, так и ожогов.
+ent-ADTAntibioticOintment1 = { ent-ADTAntibioticOintment }
+    .desc = { ent-ADTAntibioticOintment.desc }
+    .suffix = Один
 
 ent-ADTPatchPack = коробка для пластырей
     .desc = Коробка для хранения медицинских пластырей.
@@ -44,6 +53,10 @@ ent-ADTCratePatchPackFilled = набор пластырей
 
 ent-ADTCratePatchPack = набор пластырей
     .desc = { ent-ADTCratePatchPackFilled.desc }
+    .suffix = { "" }
+
+ent-ADTMobileDefibrillator = мобильный дефибриллятор
+    .desc = Облегченная версия дефибрилятора, которую можно закрепить на ваш пояс, так же как и на медицинский. Это чудо даже в карман поместится!
     .suffix = { "" }
 
 ent-ADTPillCanister = баночка для таблеток

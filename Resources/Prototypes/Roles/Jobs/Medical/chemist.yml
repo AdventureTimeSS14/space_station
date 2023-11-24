@@ -26,6 +26,7 @@
     ears: ClothingHeadsetMedical
     belt: ChemBag
     pocket1: HandLabeler
+    pocket2: ADTBookNewChemicals    
     # the purple glasses?
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal

@@ -6,6 +6,7 @@
     - type: Stomach
       maxVolume: 50
 
+- type: entity
   id: ADTOrganVulpkaninAnimalLiver
   parent: BaseAnimalOrgan
   name: liver

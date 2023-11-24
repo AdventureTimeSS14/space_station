@@ -228,6 +228,8 @@
       - id: ClothingHeadHatBeretCmo
       - id: ClothingOuterHardsuitMedical
       - id: Hypospray
+      - id: ADTBookNewChemicals
+      - id: ADTMobileDefibrillator
       - id: HandheldCrewMonitor
       - id: DoorRemoteMedical
       - id: RubberStampCMO
@@ -265,6 +267,8 @@
       - id: ClothingMaskSterile
       - id: ClothingHeadHatBeretCmo
       - id: Hypospray
+      - id: ADTBookNewChemicals
+      - id: ADTMobileDefibrillator
       - id: HandheldCrewMonitor
       - id: DoorRemoteMedical
       - id: RubberStampCMO
