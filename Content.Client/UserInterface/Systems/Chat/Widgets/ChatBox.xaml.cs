@@ -19,6 +19,7 @@ public partial class ChatBox : UIWidget
 #pragma warning restore RA0003
 {
     private readonly ChatUIController _controller;
+    private DateTime? LastMessageStamp;
 
     public bool Main { get; set; }
 
@@ -43,7 +44,20 @@ public partial class ChatBox : UIWidget
 
     private void OnTextEntered(LineEditEventArgs args)
     {
-        _controller.SendMessage(this, SelectedChannel);
+        if (!LastMessageStamp.HasValue)
+        {
+            LastMessageStamp = DateTime.Now;
+            _controller.SendMessage(this, SelectedChannel);
+        }
+        else
+        {
+            TimeSpan timeDifference = DateTime.Now - LastMessageStamp.Value;
+            if (timeDifference > TimeSpan.FromSeconds(1))
+            {
+                LastMessageStamp = DateTime.Now;
+                _controller.SendMessage(this, SelectedChannel);
+            }
+        }
     }
 
     private void OnMessageAdded(ChatMessage msg)
