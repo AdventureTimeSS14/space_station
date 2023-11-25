@@ -166,3 +166,20 @@
   - type: Clothing
     sprite: ADT/Clothing/Mask/payday_wolf.rsi
   - type: BreathMask
+
+- type: entity
+  parent: ClothingMaskGas
+  id: ADTClothingMaskGasLapkeeSet
+  name: white sec mask
+  description: white sec mask
+  suffix: Personal, Lapkee
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: ADT/Clothing/Mask/lapkeeset_mask.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Mask/lapkeeset_mask.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Cold: 0.95

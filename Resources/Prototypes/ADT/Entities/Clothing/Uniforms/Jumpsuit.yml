@@ -635,3 +635,40 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/red_plaid_shirt.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/red_plaid_shirt.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitOldDarkSuit
+  name: old dark suit
+  description: The label is visible on it... it seems that someone overwritten the inscription on it "It seems you really like the letter X ..."
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/old_dark.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/old_dark.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitLapkeeSet
+  name: dark security turtleneck
+  description: Perhaps a custom-made durable turtleneck, with obviously having a place to be armored, for heavy work in the harsh conditions of deep space. She smells pleasantly of tangerines and war crimes.
+  suffix: Personal, Lapkee
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/lapkee_turtleneck.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/lapkee_turtleneck.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.90
+  - type: TemperatureProtection
+    coefficient: 0.1
+  - type: Armor #лёгкая защита по 5-10% от всякой ерунды, оправдано описанием
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.9
+        Cold: 0.9
+        Shock: 0.9

@@ -262,3 +262,11 @@ ent-ADTClothingUniformJumpsuitRedShirt = красная рубашка
 ent-ADTClothingUniformJumpsuitRedPlaidShirt = красная рубашка в клетку
     .desc = Пахнет барбекью... Производство компании  "Modeling Agency Dar-Vaxed"
     .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitOldDarkSuit = старый темный комбинезон
+    .desc = На нем видна этикетка... кажется на ней кто-то перезаписал надпись "Кажется тебе и правда нравится буква X..."
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitLapkeeSet = тёмная охранная водолазка
+    .desc = Возможно сделанная на заказ прочная, с явно имеющими место быть броневставками водолазка для тяжёлой работы в тяжёлых условиях дальнего космоса. От неё приятно веет мандаринками и военными преступлениями.
+    .suffix = { "Именное, Lapkee" }
