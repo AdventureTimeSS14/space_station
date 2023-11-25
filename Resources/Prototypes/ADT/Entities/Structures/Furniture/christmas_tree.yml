@@ -68,10 +68,10 @@
           - ADTGoldenStarGarland
     sprite: ADT/Structures/Furniture/christmas_tree.rsi
   - type: Appearance
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
-        ents: []
+  #- type: ContainerContainer
+  #  containers:
+  #    storagebase: !type:Container
+  #      ents: []
   - type: UserInterface
     interfaces:
     - key: enum.StorageUiKey.Key
