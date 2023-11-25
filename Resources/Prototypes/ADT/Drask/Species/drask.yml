@@ -12,7 +12,7 @@
   femaleFirstNames: Draskfrist
   maleLastNames: Draskfrist
   femaleLastNames: Draskfrist
-  naming: FirstDashFirst
+  naming: FirstDashFirstDashFirst
 
 - type: speciesBaseSprites
   id: MobDraskSprites
