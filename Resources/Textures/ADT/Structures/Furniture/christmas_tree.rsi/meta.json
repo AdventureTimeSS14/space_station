@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by discord:LunaLita#0840",
+    "size": {
+        "x": 64,
+        "y": 96
+    },
+    "states": [
+        {
+            "name": "christmas_tree"
+        },
+        {
+            "name": "goldenstar_garland",
+            "delays": [
+                [
+                    0.2,
+                    0.3,
+                    0.2,
+                    0.1
+                ]
+            ]
+        }
+    ]
+}
+

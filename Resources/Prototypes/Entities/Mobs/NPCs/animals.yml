@@ -197,10 +197,12 @@
         Base: chicken-0
       Dead:
         Base: dead-0
+  - type: Body
+    prototype: ADTChicken
   - type: Butcherable
     spawned:
     - id: FoodMeatChicken
-      amount: 1
+      amount: 0
   - type: InteractionPopup
     successChance: 0.8
     interactSuccessString: petting-success-bird

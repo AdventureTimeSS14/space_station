@@ -166,3 +166,25 @@
   - type: Fiber
     fiberMaterial: fibers-latex
   - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ADTClothingHandsGlovesLapkee
+  name: white combat gloves
+  description: white combat gloves
+  suffix: Personal, Lapkee
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/white_lapkee.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/white_lapkee.rsi
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+    fiberColor: fibers-black
+  - type: TemperatureProtection #слабая защита от температуры
+    coefficient: 0.05
+  - type: Armor
+    modifiers:
+      coefficients:
+        Cold: 0.95
+        Shock: 0.95
