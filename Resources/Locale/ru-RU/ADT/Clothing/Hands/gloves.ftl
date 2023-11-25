@@ -26,3 +26,7 @@ ent-ADTClothingHandsGlovesJanitor = Хозяйственные перчатки
 
 ent-ADTClothingHandsGlovesBlackDams = Черные дамские перчатки
     .desc = Лёгкие и шелковистые черные перчатки с золотыми кольцами. Производство компании  "Modeling Agency Dar-Vaxed".
+
+ent-ADTClothingHandsGlovesLapkee = светлые тактические перчатки
+    .desc = Прочные перчатки на лапки с изоляцией от нежелательных поджариваний, имеет чёрные кончики пальцев.
+    .suffix = { "Именное, Lapkee" }

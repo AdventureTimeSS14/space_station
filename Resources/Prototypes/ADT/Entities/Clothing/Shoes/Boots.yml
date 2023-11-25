@@ -284,3 +284,26 @@
     sprite: ADT/Clothing/Shoes/Boots/black_boots.rsi
   - type: Clothing
     sprite: ADT/Clothing/Shoes/Boots/black_boots.rsi  #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingShoesStorageBase
+  id: ADTClothingFootLapkeeSet
+  name: tactical sneekers
+  description: tactical sneekers
+  suffix: Personal, Lapkee
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/tactical_sneekers.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/tactical_sneekers.rsi
+  - type: Matchbox
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepBoots
+  - type: Storage
+    whitelist:
+      tags:
+        - Knife
+        - Sidearm
+  - type: TemperatureProtection #слабая защита от холода
+    coefficient: 0.05

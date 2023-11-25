@@ -1,4 +1,4 @@
-ent-ADTClothingOuterJacketBartender = Барная жилетка
+ent-ADTClothingOuterJacketBartender = барная жилетка
     .desc = удобная барная жилетка для повседневной носки.
     .suffix = { "" }
 
@@ -22,5 +22,9 @@ ent-ADTClothingOuterCoatAidan = пальто Эйдана
     .desc = Двубортное пальто с отворотами.
     .suffix = { "Именное" }
 
-ent-ADTClothingOuterWinterRussianCoat = Русский пуховик
+ent-ADTClothingOuterWinterRussianCoat = русский пуховик
     .desc = Используется на экстремально холодных фронтах, сделан из натуральный шерсти. Производство компании "Modeling Agency Dar-Vaxed" и Текстильный комбинат СССП, улица Сталинавская.
+
+ent-ADTClothingOuterCoatXCoat = икс-ключительное облачение
+    .desc = Кажется тот, кто его носит отличается иксключительным эгоизмом. 
+    .suffix = { "" }

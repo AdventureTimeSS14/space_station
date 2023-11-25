@@ -1,0 +1,95 @@
+- type: Tag
+  id: ADTGoldenStarGarland
+
+#- type: entity
+#  id: ADTСhristmasTree
+#  parent: PottedPlantBase
+#  name: plastic christmas tree
+#  description: plastic christmas tree
+#  suffix: New Year
+#  placement:
+#    mode: SnapgridCenter
+#  components:
+#  - type: Clickable
+#  - type: InteractionOutline
+#  - type: Fixtures
+#    fixtures:
+#      fix1:
+#        shape:
+#          !type:PhysShapeCircle
+#          radius: 0.5
+#        density: 100
+#        mask:
+#        - Impassable
+#  - type: Sprite
+#    drawdepth: Overdoors
+#    sprite: ADT/Structures/Furniture/christmas_tree.rsi
+#    state: christmas_tree
+#    noRot: true
+#  - type: Pullable
+#  - type: Damageable
+#    damageContainer: Inorganic
+#    damageModifierSet: Metallic
+#  - type: Destructible
+#    thresholds:
+#    - trigger:
+#        !type:DamageTrigger
+#        damage: 100
+#      behaviors:
+#        - !type:DoActsBehavior
+#          acts: [ "Destruction" ]
+#    - trigger:
+#        !type:DamageTrigger
+#        damage: 50
+#      behaviors:
+#      - !type:DoActsBehavior
+#        acts: ["Destruction"]
+#      - !type:PlaySoundBehavior
+#        sound:
+#          path: /Audio/Effects/metalbreak.ogg
+#  - type: StaticPrice
+#    price: 10
+#  - type: Transform
+#    anchored: true
+#  - type: Physics
+#    bodyType: Static
+#  - type: Anchorable
+#  - type: Storage
+#    maxSlots: 7
+#    maxItemSize: Normal
+#    whitelist:
+#      tags:
+#        - ADTGoldenStarGarland
+#  - type: ItemMapper
+#    mapLayers:
+#      goldenstar_garland:
+#        whitelist:
+#          tags:
+#          - ADTGoldenStarGarland
+#    sprite: ADT/Structures/Furniture/christmas_tree.rsi
+#  - type: Appearance
+#  #- type: ContainerContainer
+#  #  containers:
+#  #    storagebase: !type:Container
+#  #      ents: []
+#  - type: UserInterface
+#    interfaces:
+#    - key: enum.StorageUiKey.Key
+#      type: StorageBoundUserInterface
+  
+- type: entity
+  name: goldenstar garland
+  parent: BaseItem
+  id: ADTGoldenStarGarland
+  description: A light emitting device that would look like from ancient castle.
+  suffix: New Year
+  components:
+  - type: Tag
+    tags:
+    - ADTGoldenStarGarland
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/goldenstar_garland.rsi
+    state: icon
+  - type: Item
+    sprite: ADT/Structures/Furniture/goldenstar_garland.rsi
+    size: Normal
