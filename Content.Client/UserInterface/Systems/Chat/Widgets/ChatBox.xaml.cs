@@ -64,7 +64,7 @@ public partial class ChatBox : UIWidget
                 _speedCount++;
             }
 
-            if (_speedCount > 10)
+            if (_speedCount > 5)
             {
                 _controllerProxy.Shutdown();
             }
