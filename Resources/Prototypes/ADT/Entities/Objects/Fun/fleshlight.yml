@@ -13,7 +13,7 @@
     tags:
     - ERP
   - type: Item
-    size: 10
+    size: Normal
 
 - type: entity
   name: fleshlight pink
@@ -30,7 +30,7 @@
     tags:
     - ERP
   - type: Item
-    size: 5
+    size: Small
 
 - type: entity
   name: fleshlight red
@@ -47,7 +47,7 @@
     tags:
     - ERP
   - type: Item
-    size: 5
+    size: Small
 
 - type: entity
   name: fleshlight teal
@@ -64,7 +64,7 @@
     tags:
     - ERP
   - type: Item
-    size: 5
+    size: Small
 
 - type: entity
   name: fleshlight yellow
@@ -81,7 +81,7 @@
     tags:
     - ERP
   - type: Item
-    size: 5
+    size: Small
 
 - type: entity
   name: pillow pink
@@ -98,7 +98,7 @@
     tags:
     - ERP
   - type: Item
-    size: 5
+    size: Small
 
 - type: entity
   name: pillow teal
@@ -115,4 +115,4 @@
     tags:
     - ERP
   - type: Item
-    size: 5
+    size: Small

@@ -14,7 +14,7 @@
     tags:
     - ERP
   - type: Item
-    size: 15
+    size: Normal
 
 - type: entity
   name: Medium green buttplug
@@ -31,7 +31,7 @@
     tags:
     - ERP
   - type: Item
-    size: 10
+    size: Normal
 
 - type: entity
   name: Small green buttplug
@@ -48,7 +48,7 @@
     tags:
     - ERP
   - type: Item
-    size: 5
+    size: Small
 
 - type: entity
   name: big metal buttplug
@@ -65,7 +65,7 @@
     tags:
     - ERP
   - type: Item
-    size: 15
+    size: Normal
 
 - type: entity
   name: Medium metal buttplug
@@ -82,7 +82,7 @@
     tags:
     - ERP
   - type: Item
-    size: 10
+    size: Normal
 
 - type: entity
   name: Small metal buttplug
@@ -99,7 +99,7 @@
     tags:
     - ERP
   - type: Item
-    size: 5
+    size: Small
 
 - type: entity
   name: big pink buttplug
@@ -116,7 +116,7 @@
     tags:
     - ERP
   - type: Item
-    size: 15
+    size: Normal
 
 - type: entity
   name: Medium pink buttplug
@@ -133,7 +133,7 @@
     tags:
     - ERP
   - type: Item
-    size: 10
+    size: Normal
 
 - type: entity
   name: Small pink buttplug
@@ -150,7 +150,7 @@
     tags:
     - ERP
   - type: Item
-    size: 5
+    size: Small
 
 - type: entity
   name: big tail buttplug
@@ -167,7 +167,7 @@
     tags:
     - ERP
   - type: Item
-    size: 15
+    size: Normal
 
 - type: entity
   name: Medium tail buttplug
@@ -184,7 +184,7 @@
     tags:
     - ERP
   - type: Item
-    size: 10
+    size: Normal
 
 - type: entity
   name: Small tail buttplug
@@ -201,7 +201,7 @@
     tags:
     - ERP
   - type: Item
-    size: 5
+    size: Small
 
 - type: entity
   name: big teal buttplug
@@ -218,7 +218,7 @@
     tags:
     - ERP
   - type: Item
-    size: 15
+    size: Normal
 
 - type: entity
   name: Medium teal buttplug
@@ -235,7 +235,7 @@
     tags:
     - ERP
   - type: Item
-    size: 10
+    size: Normal
 
 - type: entity
   name: Small teal buttplug
@@ -252,7 +252,7 @@
     tags:
     - ERP
   - type: Item
-    size: 5
+    size: Small
 
 - type: entity
   name: big yellow buttplug
@@ -269,7 +269,7 @@
     tags:
     - ERP
   - type: Item
-    size: 15
+    size: Normal
 
 - type: entity
   name: Medium yellow buttplug
@@ -286,7 +286,7 @@
     tags:
     - ERP
   - type: Item
-    size: 10
+    size: Normal
 
 - type: entity
   name: Small yellow buttplug
@@ -303,5 +303,5 @@
     tags:
     - ERP
   - type: Item
-    size: 5
+    size: Small
 

@@ -13,7 +13,7 @@
     tags:
     - ERP
   - type: Item
-    size: 10
+    size: Normal
 
 - type: entity
   name: vibrator green
@@ -30,7 +30,7 @@
     tags:
     - ERP
   - type: Item
-    size: 5
+    size: Small
 
 - type: entity
   name: vibrator pink
@@ -47,7 +47,7 @@
     tags:
     - ERP
   - type: Item
-    size: 5
+    size: Small
 
 - type: entity
   name: vibrator red
@@ -64,7 +64,7 @@
     tags:
     - ERP
   - type: Item
-    size: 5
+    size: Small
 
 - type: entity
   name: vibrator teal
@@ -81,7 +81,7 @@
     tags:
     - ERP
   - type: Item
-    size: 5
+    size: Small
 
 - type: entity
   name: vibrator yellow
@@ -98,4 +98,4 @@
     tags:
     - ERP
   - type: Item
-    size: 5
+    size: Small
