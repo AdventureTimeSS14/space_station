@@ -329,7 +329,7 @@ namespace Content.Shared.CCVar
         /// How many times per second artifacts when the round is over.
         /// If set to 0, they won't activate (on a timer) when the round ends.
         /// </summary>
-        public static readonly CVarDef<float> ArtifactRoundEndTimer = CVarDef.Create("game.artifact_round_end_timer", 0.0f, CVar.NOTIFY | CVar.REPLICATED);
+        public static readonly CVarDef<float> ArtifactRoundEndTimer = CVarDef.Create("game.artifact_round_end_timer", 0.5f, CVar.NOTIFY | CVar.REPLICATED);
 
         /// <summary>
         /// The time in seconds that the server should wait before restarting the round.
@@ -1831,5 +1831,12 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<int> NewsContentLimit =
             CVarDef.Create("news.content_limit", 2048, CVar.SERVER | CVar.REPLICATED);
+
+        /*
+         * Miscellaneous
+         */
+
+        public static readonly CVarDef<bool> GatewayGeneratorEnabled =
+            CVarDef.Create("gateway.generator_enabled", true);
     }
 }
