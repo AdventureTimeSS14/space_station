@@ -58,6 +58,7 @@ public partial class ChatBox : UIWidget
             {
                 _lastMessageStamp = DateTime.Now;
                 _controller.SendMessage(this, SelectedChannel);
+                _speedCount = 0;
             }
             else
             {
