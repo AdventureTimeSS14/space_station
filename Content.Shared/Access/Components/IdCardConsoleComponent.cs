@@ -73,6 +73,7 @@ public sealed partial class IdCardConsoleComponent : Component
         "Security",
         "Service",
         "Theatre",
+        "Centcom",
     };
 
     [Serializable, NetSerializable]
