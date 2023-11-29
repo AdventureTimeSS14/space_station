@@ -90,6 +90,7 @@
       - id: MedkitOxygenFilled
       - id: HolofanProjector
       - id: DoorRemoteFirefight
+      - id: ADTClothingHeadHatsBeretAtmos
 
 - type: entity
   id: LockerAtmosphericsFilled
@@ -105,6 +106,7 @@
       - id: MedkitOxygenFilled
       - id: HolofanProjector
       - id: DoorRemoteFirefight
+      - id: ADTClothingHeadHatsBeretAtmos
 
 - type: entity
   id: LockerEngineerFilledHardsuit
