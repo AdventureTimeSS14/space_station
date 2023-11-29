@@ -21,7 +21,6 @@
     - Command
     - External
     - IAA
-    - LawyerDepartament
 
 - type: startingGear
   id: IAAGear
