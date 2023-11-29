@@ -1,0 +1,13 @@
+- type: entity
+  name: investigator's rubber stamp
+  parent: RubberStampBase
+  id: ADTRubberStampinvestigator
+  suffix: DO NOT MAP
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-investigator
+    stampedColor: "#97670e"
+    stampState: "paper_stamp-investigator"
+  - type: Sprite
+    sprite: ADT/Objects/Misc/bureaucracy.rsi
+    state: stamp-investigator

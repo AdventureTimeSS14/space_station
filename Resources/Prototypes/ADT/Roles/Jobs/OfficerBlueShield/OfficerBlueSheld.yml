@@ -27,6 +27,7 @@
     - Engineering
     - Cargo
     - Centcom
+    - BlueShield
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
