@@ -13,6 +13,8 @@
     science:     Structures/Doors/Airlocks/Standard/science.rsi
     security:    Structures/Doors/Airlocks/Standard/security.rsi
     virology:    Structures/Doors/Airlocks/Standard/virology.rsi
+    centcom:     Structures/Doors/Airlocks/Standard/centcom.rsi
+    corporate:   Structures/Doors/Airlocks/Standard/corporate.rsi
 
 - type: AirlockGroup
   id: Glass
@@ -28,6 +30,8 @@
     medical:     Structures/Doors/Airlocks/Glass/medical.rsi
     security:    Structures/Doors/Airlocks/Glass/security.rsi
     virology:    Structures/Doors/Airlocks/Glass/virology.rsi
+    centcom:     Structures/Doors/Airlocks/Glass/centcom.rsi
+    corporate:   Structures/Doors/Airlocks/Glass/corporate.rsi
 
 - type: AirlockGroup
   id: Windoor
