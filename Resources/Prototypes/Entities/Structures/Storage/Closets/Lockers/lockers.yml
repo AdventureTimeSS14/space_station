@@ -449,17 +449,3 @@
     stateBaseClosed: hop
     stateDoorOpen: hop_open
     stateDoorClosed: representative_door
-
-# Centcom
-- type: entity
-  id: LockerCentcom
-  name: CentCom locker
-  parent: LockerBaseSecure
-  components:
-  - type: Appearance
-  - type: AccessReader
-    access: [["Centcom"]]
-  - type: EntityStorageVisuals
-    stateBaseClosed: cc
-    stateDoorOpen: cc_open
-    stateDoorClosed: cc_door
