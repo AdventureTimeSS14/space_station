@@ -17,6 +17,7 @@
   - Lawyer
   - Brig
   - Maintenance
+  - LawyerDepartament
 
 - type: startingGear
   id: LawyerGear

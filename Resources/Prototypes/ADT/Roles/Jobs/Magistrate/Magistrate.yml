@@ -22,6 +22,8 @@
     - Maintenance
     - Service
     - Security
+    - Magistrate
+    - LawyerDepartament
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
