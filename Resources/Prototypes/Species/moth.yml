@@ -8,10 +8,10 @@
   markingLimits: MobMothMarkingLimits
   dollPrototype: MobMothDummy
   skinColoration: Hues
-  maleFirstNames: names_moth_first_male
-  femaleFirstNames: names_moth_first_female
-  maleLastNames: names_moth_last # Corvax-LastnameGender
-  femaleLastNames: names_moth_last # Corvax-LastnameGender
+  maleFirstNames: first_male_moth # ADT-name-custom
+  femaleFirstNames: first_female_moth # ADT-name-custom
+  maleLastNames: last_moth # ADT-custom
+  femaleLastNames: last_moth # ADT-custom
 
 - type: speciesBaseSprites
   id: MobMothSprites
