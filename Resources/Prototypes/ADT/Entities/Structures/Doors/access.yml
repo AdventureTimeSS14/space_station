@@ -30,11 +30,3 @@
   components:
   - type: AccessReader
     access: [["Investigator"]]
-
-- type: entity
-  parent: AirlockSecurity
-  id: AirlockLawDepartamentLocked
-  suffix: Lawyer Departament, Locked
-  components:
-  - type: AccessReader
-    access: [["LawyerDepartament"]]
