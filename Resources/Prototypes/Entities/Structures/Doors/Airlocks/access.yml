@@ -120,6 +120,14 @@
     access: [["NuclearOperative"]]
 
 - type: entity
+  parent: AirlockExternal
+  id: AirlockExternalCentcomLocked
+  suffix: External, Centcom, Locked
+  components:
+  - type: AccessReader
+    access: [["Centcom"]]
+
+- type: entity
   parent: AirlockFreezer
   id: AirlockFreezerLocked
   suffix: Kitchen, Locked
@@ -214,6 +222,62 @@
   components:
   - type: AccessReader
     access: [["Research"], ["Medical"]]
+
+- type: entity
+  parent: AirlockCorporate
+  id: AirlockCorporateLocked
+  suffix: Corporate, Centcom, Locked
+  components:
+  - type: AccessReader
+    access: [["Centcom"]]
+
+- type: entity
+  parent: AirlockCentcomHatch
+  id: AirlockCentcomHatchLocked
+  suffix: Centcom, Locked
+  components:
+  - type: AccessReader
+    access: [["Centcom"]]
+
+- type: entity
+  parent: AirlockCentcomClassic
+  id: AirlockCentcomClassicLocked
+  suffix: Centcom, Locked
+  components:
+  - type: AccessReader
+    access: [["Centcom"]]
+
+- type: entity
+  parent: AirlockCentcom
+  id: AirlockCentcomLocked
+  suffix: Centcom, Locked
+  components:
+  - type: AccessReader
+    access: [["Centcom"]]
+
+- type: entity
+  parent: AirlockCentcomClassic
+  id: AirlockCentcomCommandClassicLocked
+  suffix: Command, Locked
+  components:
+  - type: AccessReader
+    access: [["Command"]]
+
+- type: entity
+  parent: AirlockCentcomHatch
+  id: AirlockCentcomCommandHatchLocked
+  suffix: Command, Centcom, Locked
+  components:
+  - type: AccessReader
+    access: [["Command"]]
+
+- type: entity
+  parent: AirlockCorporate
+  id: AirlockCorporateCommandLocked
+  suffix: Corporate, Command, Locked
+  components:
+  - type: AccessReader
+    access: [["Command"]]
 
 - type: entity
   parent: AirlockCommand
@@ -406,6 +470,14 @@
 
 - type: entity
   parent: AirlockExternalGlass
+  id: AirlockExternalGlassCentcomLocked
+  suffix: External, Glass, Centcom, Locked
+  components:
+  - type: AccessReader
+    access: [["Centcom"]]
+
+- type: entity
+  parent: AirlockExternalGlass
   id: AirlockExternalGlassEngineeringLocked
   suffix: External, Glass, Engineering, Locked
   components:
@@ -515,6 +587,30 @@
   components:
   - type: AccessReader
     access: [["Research"], ["Medical"]]
+
+- type: entity
+  parent: AirlockCorporateGlass
+  id: AirlockCorporateGlassLocked
+  suffix: Centcom, Locked
+  components:
+  - type: AccessReader
+    access: [["Centcom"]]
+
+- type: entity
+  parent: AirlockCentcomGlass
+  id: AirlockCentcomGlassLocked
+  suffix: Centcom, Locked
+  components:
+  - type: AccessReader
+    access: [["Centcom"]]
+
+- type: entity
+  parent: AirlockCorporateGlass
+  id: AirlockCorporateCommandGlassLocked
+  suffix: Command, Locked
+  components:
+  - type: AccessReader
+    access: [["Command"]]
 
 - type: entity
   parent: AirlockCommandGlass
@@ -676,6 +772,14 @@
   components:
   - type: AccessReader
     access: [["Cargo"]]
+
+- type: entity
+  parent: AirlockMaint
+  id: AirlockMaintCentcomLocked
+  suffix: Centcom, Locked
+  components:
+  - type: AccessReader
+    access: [["Centcom"]]
 
 - type: entity
   parent: AirlockMaint
@@ -927,6 +1031,14 @@
     access: [["NuclearOperative"]]
 
 - type: entity
+  parent: AirlockShuttle
+  id: AirlockExternalShuttleCentcomLocked
+  suffix: External, Docking, Centcom, Locked
+  components:
+  - type: AccessReader
+    access: [["Centcom"]]
+
+- type: entity
   parent: AirlockGlassShuttle
   id: AirlockExternalGlassShuttleLocked
   suffix: External, Glass, Docking, Locked
@@ -949,6 +1061,14 @@
   components:
   - type: AccessReader
     access: [["NuclearOperative"]]
+
+- type: entity
+  parent: AirlockGlassShuttle
+  id: AirlockExternalGlassShuttleCentcomLocked
+  suffix: External, Centcom, Glass, Docking, Locked
+  components:
+  - type: AccessReader
+    access: [["Centcom"]]
 
 - type: entity
   parent: AirlockGlassShuttle
@@ -976,6 +1096,14 @@
     - type: GridFill
 
 #HighSecDoors
+- type: entity
+  parent: HighSecDoor
+  id: HighSecCentcomLocked
+  suffix: Centcom, Locked
+  components:
+  - type: AccessReader
+    access: [["Centcom"]]
+
 - type: entity
   parent: HighSecDoor
   id: HighSecCommandLocked
