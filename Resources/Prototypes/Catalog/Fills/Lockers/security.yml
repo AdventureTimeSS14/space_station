@@ -22,8 +22,8 @@
       - id: DoorRemoteArmory
       - id: ClothingOuterHardsuitWarden
       - id: HoloprojectorSecurity
+      - id: ClothingHeadHatCapWardenAlt
       #- id: ClothingEyesHudSecurity
-      ##- id: ClothingHeadHatCapWardenAlt
       ##- id: ClothingOuterCoatWardenAlt
 
 - type: entity
@@ -49,8 +49,8 @@
       - id: RubberStampWarden
       - id: DoorRemoteArmory
       - id: HoloprojectorSecurity
+      - id: ClothingHeadHatCapWardenAlt
       #- id: ClothingEyesHudSecurity
-      ##- id: ClothingHeadHatCapWardenAlt
       ##- id: ClothingOuterCoatWardenAlt
 
 - type: entity
