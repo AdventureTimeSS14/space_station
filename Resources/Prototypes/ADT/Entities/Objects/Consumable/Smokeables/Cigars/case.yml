@@ -1,0 +1,13 @@
+- type: entity
+  id: ADTCigarFellyCase
+  parent: CigarCase
+  name: элитный портсигар #Рот я трахала таких названий. Выдумывайте сами
+  description: Прочный, матовый и приятный на ощупь портсигар с внутренней обивкой из кожи розовых вульп. Создан для демонстрации красивого способа умереть.
+  #suffix: Именное, Feylly
+  components:
+  - type: StorageFill
+    contents:
+    - id: CigarGold
+      amount: 8
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Smokeables/Cigars/case.rsi 
