@@ -307,3 +307,10 @@
         - Sidearm
   - type: TemperatureProtection #слабая защита от холода
     coefficient: 0.05
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Cold: 0.95
+        Shock: 0.95

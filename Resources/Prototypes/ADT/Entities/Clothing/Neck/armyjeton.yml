@@ -6,3 +6,12 @@
   components:
     - type: Sprite
       sprite: ADT/Clothing/Neck/armytoken.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckSecBadge
+  name: Sec Badge
+  description: Sec Badge
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/secbadge.rsi
