@@ -1,0 +1,19 @@
+- type: entity
+  id: ADTPortableGeneratorSuperPacmanMachineCircuitboardHard
+  parent: BaseMachineCircuitboard
+  name: S.U.P.E.R.P.A.C.M.A.N.-type portable generator machine board
+  suffix: Hard
+  components:
+    - type: Sprite
+      state: engineering
+    - type: MachineBoard
+      prototype: PortableGeneratorSuperPacman
+      requirements:
+        Capacitor: 20
+      materialRequirements:
+        CableHV: 100
+    - type: PhysicalComposition
+      materialComposition:
+        Glass: 200
+      chemicalComposition:
+        Silicon: 20
