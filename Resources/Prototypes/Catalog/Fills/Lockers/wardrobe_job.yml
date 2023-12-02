@@ -204,6 +204,7 @@
        - id: ClothingBackpackEngineering
        - id: ClothingShoesColorWhite
        - id: ClothingUniformJumpskirtAtmos
+       - id: ADTClothingHeadHatsBeretAtmos
 
  - type: entity
    id: WardrobeEngineeringFilled
