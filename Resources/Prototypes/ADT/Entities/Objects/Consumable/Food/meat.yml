@@ -74,14 +74,14 @@
         - ReagentId: Nutriment
           Quantity: 24
         - ReagentId: Protein
-          Quantity: 20
+          Quantity: 24
   - type: SliceableFood
     count: 12
-    slice: FoodMeatChickenCutletCooked
+    slice: ADTFoodMeatChickenBakedSlice
   - type: Item
     size: Normal
   - type: Food
-    transferAmount: 10
+    transferAmount: 6
 
 - type: entity
   name: stuffed chicken with vegetables
@@ -95,22 +95,24 @@
     - Meat
   - type: Sprite
     sprite: ADT/Objects/Consumable/Food/chicken_meat.rsi
-    state: chicken_baked_wvegs
+    layers:
+    - state: plate
+    - state: chicken_baked_wvegs
   - type: SolutionContainerManager
     solutions:
       food:
         reagents:
         - ReagentId: Nutriment
-          Quantity: 40
+          Quantity: 36
         - ReagentId: Protein
-          Quantity: 25
+          Quantity: 24
   - type: SliceableFood
-    count: 15
-    slice: FoodMeatChickenCutletCooked
+    count: 12
+    slice: ADTFoodMeatChickenBakedStuffedSlice
   - type: Item
     size: Normal
   - type: Food
-    transferAmount: 10
+    transferAmount: 6
     trash: FoodPlate
 
 - type: entity
@@ -137,7 +139,7 @@
   - type: Item
     size: Small
   - type: Food
-    transferAmount: 2
+    transferAmount: 6
 
 - type: entity
   name: baked chicken leg
@@ -163,4 +165,56 @@
   - type: Item
     size: Small
   - type: Food
-    transferAmount: 2
+    transferAmount: 6
+
+- type: entity
+  name: slice of baked chicken
+  parent: FoodMeatBase
+  id: ADTFoodMeatChickenBakedSlice
+  description: A slace of baked chicken.
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/chicken_meat.rsi
+    state: baked_slice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Protein
+          Quantity: 2
+  - type: Item
+    size: Small
+  - type: Food
+    transferAmount: 4
+
+- type: entity
+  name: slice of stuffed baked chicken
+  parent: FoodMeatBase
+  id: ADTFoodMeatChickenBakedStuffedSlice
+  description: A slace of baked and stuffed chicken.
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/chicken_meat.rsi
+    state: baked_stuffed_slice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3
+        - ReagentId: Protein
+          Quantity: 2
+  - type: Item
+    size: Small
+  - type: Food
+    transferAmount: 5
