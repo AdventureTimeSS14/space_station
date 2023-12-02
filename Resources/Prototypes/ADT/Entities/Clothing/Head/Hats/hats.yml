@@ -328,3 +328,16 @@
     sprite: ADT/Clothing/Head/Hats/grey_flat_cap.rsi 
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/grey_flat_cap.rsi #спрайты от prazat911
+
+#New Year
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsElf
+  name: elf hat
+  description: A hat of a real worker. With glued ears.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/elf_hat.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/elf_hat.rsi #спрайты от dion_clawed

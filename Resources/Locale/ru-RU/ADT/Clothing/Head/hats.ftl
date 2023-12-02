@@ -90,3 +90,6 @@ ent-ADTClothingHeadHatsCinnamonFlatCap = коричневая плоская к�
 
 ent-ADTClothingHeadHatsGreyFlatCap = серая плоская кепка
     .desc = { ent-ADTClothingHeadHatsCinnamonFlatCap.desc }
+
+ent-ADTClothingHeadHatsElf = шапка Эльфа
+    .desc = Шапка настоящего трудяги с приклеенными ушками.
