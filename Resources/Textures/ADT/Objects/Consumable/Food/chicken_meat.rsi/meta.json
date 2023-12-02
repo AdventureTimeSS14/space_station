@@ -24,6 +24,15 @@
         },
         {
             "name": "wing_cooked"
+        },
+        {
+            "name": "plate"
+        },
+        {
+            "name": "baked_slice"
+        },
+        {
+            "name": "baked_stuffed_slice"
         }
     ]
 }

@@ -18,3 +18,9 @@ ent-ADTFoodMeatChickenBakedLeg = запеченная куриная ножка
 
 ent-ADTFoodMeatChickenBakedWing = запеченное куриное крылышко
     .desc = Запеченное куриное крылышко. Вкуснятина. 
+
+ent-ADTFoodMeatChickenBakedSlice = кусок запеченной курицы
+    .desc = Отрезанный от цельной запеченной курицы кусочек.
+
+ent-ADTFoodMeatChickenBakedStuffedSlice = кусок запеченной фаршированной курицы
+    .desc = Отрезанный от цельной запеченной и фаршированной курицы кусочек.

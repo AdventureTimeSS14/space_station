@@ -658,17 +658,14 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/lapkee_turtleneck.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/lapkee_turtleneck.rsi
-  - type: ClothingSpeedModifier
-    walkModifier: 0.90
-    sprintModifier: 0.90
   - type: TemperatureProtection
     coefficient: 0.1
   - type: Armor #лёгкая защита по 5-10% от всякой ерунды, оправдано описанием
     modifiers:
       coefficients:
-        Blunt: 0.9
+        Blunt: 0.95
         Slash: 0.95
         Piercing: 0.95
-        Heat: 0.9
-        Cold: 0.9
-        Shock: 0.9
+        Heat: 0.95
+        Cold: 0.95
+        Shock: 0.95
