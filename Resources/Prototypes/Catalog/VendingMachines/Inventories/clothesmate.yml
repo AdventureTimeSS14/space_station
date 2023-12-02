@@ -7,32 +7,35 @@
     ADTClothingFootWrapsBlack: 3
     ADTClothingFootWrapsHighWhite: 3
     ADTClothingFootWrapsHighBlack: 3
-    ADTClothingUniformTurleneckBlack: 2
-    ADTClothingUniformTurleneckBlackWomen: 2
-    ADTClothingUniformTurleneckBlue: 2
-    ADTClothingUniformTurleneckBlueBlack: 2
-    ADTClothingUniformTurleneckBlueWomen: 2
-    ADTClothingUniformTurleneckGolub: 2
-    ADTClothingUniformTurleneckGolubBlack: 2
-    ADTClothingUniformTurleneckGolubWomen: 2
-    ADTClothingUniformTurleneckGreen: 2
-    ADTClothingUniformTurleneckGreenBlack: 2
-    ADTClothingUniformTurleneckGreenWomen: 2
-    ADTClothingUniformTurleneckOrange: 2
-    ADTClothingUniformTurleneckOrangeBlack: 2
-    ADTClothingUniformTurleneckOrangeWomen: 2
-    ADTClothingUniformTurleneckPurpur: 2
-    ADTClothingUniformTurleneckPurpurBlack: 2
-    ADTClothingUniformTurleneckPurpurWomen: 2
-    ADTClothingUniformTurleneckRed: 2
-    ADTClothingUniformTurleneckRedBlack: 2
-    ADTClothingUniformTurleneckRedWomen: 2
-    ADTClothingUniformTurleneckSalat: 2
-    ADTClothingUniformTurleneckSalatBlack: 2
-    ADTClothingUniformTurleneckSalatWomen: 2
-    ADTClothingUniformTurleneckWhite: 2
-    ADTClothingUniformTurleneckWhiteBlack: 2
-    ADTClothingUniformTurleneckWhiteWomen: 2
+    ADTClothingUniformTurtleneckBlack: 2
+    ADTClothingUniformTurtleneckBlackWomen: 2
+    ADTClothingUniformTurtleneckGrey: 2
+    ADTClothingUniformTurtleneckGreyWomen: 2
+    ADTClothingUniformTurtleneckBrown: 2
+    ADTClothingUniformTurtleneckBrownWomen: 2
+    ADTClothingUniformTurtleneckBlue: 2
+    ADTClothingUniformTurtleneckBlueWomen: 2
+    ADTClothingUniformTurtleneckAzure: 2
+    ADTClothingUniformTurtleneckAzureWomen: 2
+    ADTClothingUniformTurtleneckAquamarine: 2
+    ADTClothingUniformTurtleneckAquamarineWomen: 2
+    ADTClothingUniformTurtleneckGreen: 2
+    ADTClothingUniformTurtleneckGreenWomen: 2
+    ADTClothingUniformTurtleneckOrange: 2
+    ADTClothingUniformTurtleneckOrangeWomen: 2
+    ADTClothingUniformTurtleneckYellow: 2
+    ADTClothingUniformTurtleneckYellowWomen: 2
+    ADTClothingUniformTurtleneckPurple: 2
+    ADTClothingUniformTurtleneckPurpleWomen: 2
+    ADTClothingUniformTurtleneckPink: 2
+    ADTClothingUniformTurtleneckPinkWomen: 2
+    ADTClothingUniformTurtleneckRed: 2
+    ADTClothingUniformTurtleneckRedWomen: 2
+    #ADTClothingUniformTurleneckSalat: 2
+    #ADTClothingUniformTurleneckSalatBlack: 2
+    #ADTClothingUniformTurleneckSalatWomen: 2
+    ADTClothingUniformTurtleneckWhite: 2
+    ADTClothingUniformTurtleneckWhiteWomen: 2
     ADTClothingUniformTurleneckBlackSleeveless: 2
     ADTClothingUniformTurleneckBlackWomenSleeveless: 2
     ADTClothingUniformTurleneckWhiteSleeveless: 2
