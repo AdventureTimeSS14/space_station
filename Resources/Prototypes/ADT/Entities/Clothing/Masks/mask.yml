@@ -182,4 +182,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Cold: 0.95
+        Piercing: 0.95
+        Heat: 0.9
+        Cold: 0.8
+        Shock: 0.8
