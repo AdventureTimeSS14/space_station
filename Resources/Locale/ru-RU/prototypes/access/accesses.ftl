@@ -1,4 +1,5 @@
 id-card-access-level-command = Командование
+id-card-access-level-centcom = ЦентКом
 id-card-access-level-captain = Капитан
 id-card-access-level-head-of-personnel = Глава персонала
 id-card-access-level-head-of-security = Глава службы безопасности
@@ -12,7 +13,7 @@ id-card-access-level-atmospherics = Атмосферный
 id-card-access-level-research-director = Научный руководитель
 id-card-access-level-research = Научный
 id-card-access-level-chief-medical-officer = Главный врач
-id-card-access-level-medical = Медотсек
+id-card-access-level-medical = Медицинский
 id-card-access-level-chemistry = Химия
 id-card-access-level-paramedic = Парамедик
 id-card-access-level-quartermaster = Квартирмейстер

@@ -105,6 +105,7 @@
       - id: ADTInvestigatorBoxFolderBlue
         amount: 2
       - id: ADTBookInvestigator
+      - id: ADTRubberStampinvestigator
 
 - type: entity
   #noSpawn: true
@@ -130,6 +131,7 @@
       - id: ADTInvestigatorBoxFolderBlue
         amount: 2
       - id: ADTBookInvestigator
+      - id: ADTRubberStampinvestigator
 
 - type: entity
   #noSpawn: true
@@ -157,6 +159,7 @@
       - id: ADTInvestigatorBoxFolderBlue
         amount: 2
       - id: ADTBookInvestigator
+      - id: ADTRubberStampinvestigator
 
 #дамские сумочки
 

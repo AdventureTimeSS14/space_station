@@ -455,7 +455,7 @@
     jobIcon: JobIconNanotrasen
   - type: Access
     groups:
-    - AllAccess
+    - AllAccessCentcom
 
 - type: entity
   parent: CentcomIDCard
