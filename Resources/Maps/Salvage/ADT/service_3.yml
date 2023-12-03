@@ -1,0 +1,40 @@
+meta:
+  format: 6
+  postmapinit: true
+tilemap: {}
+entities:
+- proto: AirAlarm
+  entities:
+  - uid: 1
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: -34.5,-6.5
+      type: Transform
+    - address: Возд-6148-4369
+      transmitFrequency: 1621
+      receiveFrequency: 1621
+      type: DeviceNetwork
+    - devices:
+      - invalid
+      - invalid
+      - invalid
+      - invalid
+      type: DeviceList
+    - containers:
+        board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2
+      type: ContainerContainer
+- proto: AirAlarmElectronics
+  entities:
+  - uid: 2
+    components:
+    - flags: InContainer
+      type: MetaData
+    - parent: 1
+      type: Transform
+    - canCollide: False
+      type: Physics
+...
