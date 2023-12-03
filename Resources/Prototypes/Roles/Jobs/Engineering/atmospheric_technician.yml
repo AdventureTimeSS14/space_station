@@ -10,7 +10,7 @@
   startingGear: AtmosphericTechnicianGear
   icon: "JobIconAtmosphericTechnician"
   supervisors: job-supervisors-ce
-  canBeAntag: true
+  canBeAntag: false
   access:
   - Maintenance
   - Engineering
