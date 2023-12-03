@@ -163,20 +163,20 @@
   name: "Engineering Chunk"
   mapPath: /Maps/Salvage/ADT/engi_2.yml
 
-- type: salvageMap
-  id: ADTengi3
-  name: "Engineering Chunk"
-  mapPath: /Maps/Salvage/ADT/engi_3.yml
+#- type: salvageMap
+#  id: ADTengi3
+#  name: "Engineering Chunk"
+#  mapPath: /Maps/Salvage/ADT/engi_3.yml
 
-- type: salvageMap
-  id: ADTengi4
-  name: "Engineering Chunk"
-  mapPath: /Maps/Salvage/ADT/engi_4.yml
+#- type: salvageMap
+#  id: ADTengi4
+#  name: "Engineering Chunk"
+#  mapPath: /Maps/Salvage/ADT/engi_4.yml
 
-- type: salvageMap
-  id: ADTengi5
-  name: "Engineering Chunk"
-  mapPath: /Maps/Salvage/ADT/engi_5.yml
+#- type: salvageMap
+#  id: ADTengi5
+#  name: "Engineering Chunk"
+#  mapPath: /Maps/Salvage/ADT/engi_5.yml
 
 - type: salvageMap
   id: ADTgravity
@@ -203,10 +203,10 @@
   name: "Medical Chunk"
   mapPath: /Maps/Salvage/ADT/medical_4.yml
 
-- type: salvageMap
-  id: ADTmedical5
-  name: "Medical Chunk"
-  mapPath: /Maps/Salvage/ADT/medical_5.yml
+#- type: salvageMap
+#  id: ADTmedical5
+#  name: "Medical Chunk"
+#  mapPath: /Maps/Salvage/ADT/medical_5.yml
 
 - type: salvageMap
   id: ADTmidshut1
@@ -253,10 +253,10 @@
   name: "Salvage"
   mapPath: /Maps/Salvage/ADT/salvage_1.yml
 
-- type: salvageMap
-  id: ADTsalvage2
-  name: "Salvage"
-  mapPath: /Maps/Salvage/ADT/salvage_2.yml
+#- type: salvageMap
+#  id: ADTsalvage2
+#  name: "Salvage"
+#  mapPath: /Maps/Salvage/ADT/salvage_2.yml
 
 - type: salvageMap
   id: ADTsalvage3
@@ -323,15 +323,15 @@
   name: "Security Salvage"
   mapPath: /Maps/Salvage/ADT/service_2.yml
 
-- type: salvageMap
-  id: ADTservice3
-  name: "Security Salvage"
-  mapPath: /Maps/Salvage/ADT/service_3.yml
+#- type: salvageMap
+#  id: ADTservice3
+#  name: "Security Salvage"
+#  mapPath: /Maps/Salvage/ADT/service_3.yml
 
-- type: salvageMap
-  id: ADTservicebeach
-  name: "Beach Salvage"
-  mapPath: /Maps/Salvage/ADT/service_beach.yml
+#- type: salvageMap
+#  id: ADTservicebeach
+#  name: "Beach Salvage"
+#  mapPath: /Maps/Salvage/ADT/service_beach.yml
 
 - type: salvageMap
   id: ADTservicebotany
@@ -343,32 +343,32 @@
 #  name: "Singulo Salvage"
 #  mapPath: /Maps/Salvage/ADT/singularity.yml
 
-- type: salvageMap
-  id: ADTsyndy1
-  name: "Sindycate Salvage"
-  mapPath: /Maps/Salvage/ADT/syndy_1.yml
+#- type: salvageMap
+#  id: ADTsyndy1
+#  name: "Sindycate Salvage"
+#  mapPath: /Maps/Salvage/ADT/syndy_1.yml
 
 - type: salvageMap
   id: ADTsyndy2
   name: "Sindycate Salvage"
   mapPath: /Maps/Salvage/ADT/syndy_2.yml
 
-- type: salvageMap
-  id: ADTsyndy3
-  name: "Sindycate Salvage"
-  mapPath: /Maps/Salvage/ADT/syndy_3.yml
+#- type: salvageMap
+#  id: ADTsyndy3
+#  name: "Sindycate Salvage"
+#  mapPath: /Maps/Salvage/ADT/syndy_3.yml
 
 - type: salvageMap
   id: ADTsyndy4
   name: "Sindycate Salvage"
   mapPath: /Maps/Salvage/ADT/syndy_4.yml
 
-- type: salvageMap
-  id: ADTsyndy5
-  name: "Sindycate Salvage"
-  mapPath: /Maps/Salvage/ADT/syndy_5.yml
+#- type: salvageMap
+#  id: ADTsyndy5
+#  name: "Sindycate Salvage"
+#  mapPath: /Maps/Salvage/ADT/syndy_5.yml
 
-- type: salvageMap
-  id: ADTsyndy6
-  name: "Sindycate Salvage"
-  mapPath: /Maps/Salvage/ADT/syndy_6.yml
+#- type: salvageMap
+#  id: ADTsyndy6
+#  name: "Sindycate Salvage"
+#  mapPath: /Maps/Salvage/ADT/syndy_6.yml
