@@ -1,0 +1,12 @@
+meta:
+  format: 6
+  postmapinit: false
+tilemap: {}
+entities:
+- proto: UraniumOre
+  entities:
+  - uid: 1
+    components:
+    - pos: 10.548276,25.257845
+      type: Transform
+...
