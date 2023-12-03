@@ -17,6 +17,7 @@
       - id: CigPackGreen
         prob: 0.50
       - id: DoorRemoteCargo
+      - id: ADTClothingHeadHatsBeretSupply
       - id: RubberStampQm
       - id: ClothingHeadsetAltCargo
       - id: BoxEncryptionKeyCargo
@@ -40,7 +41,6 @@
       - id: CaptainIDCard
       - id: ClothingHeadHatCaptain
       - id: ClothingNeckCloakCap
-      - id: ClothingHandsGlovesCaptain
       - id: ClothingOuterHardsuitCap
       - id: ClothingMaskGasCaptain
       - id: WeaponDisabler
@@ -149,6 +149,7 @@
       # Sirena-Underwear-End
       - id: ADTHOPJumpskirtWarm
       - id: ADTHOPJumpsuitWarm
+      - id: ADTClothingHeadHatsBeretHOP
 
 - type: entity
   id: LockerChiefEngineerFilledHardsuit
@@ -166,7 +167,6 @@
       - id: ClothingNeckCloakCe
       - id: ClothingEyesGlassesMeson
       - id: ClothingBeltChiefEngineerFilled
-      - id: ClothingHeadHatBeretEngineering
       - id: ClothingShoesBootsMagAdv
       - id: ClothingHandsGlovesColorYellow
       - id: CigarCase
@@ -181,6 +181,7 @@
       # Sirena-Underwear-Start
       - id: ADTUnderwearBoxCE
       # Sirena-Underwear-End
+      - id: ADTClothingHeadHatsBeretCE
 
 - type: entity
   id: LockerChiefEngineerFilled
@@ -193,7 +194,6 @@
       - id: ClothingNeckCloakCe
       - id: ClothingEyesGlassesMeson
       - id: ClothingBeltChiefEngineerFilled
-      - id: ClothingHeadHatBeretEngineering
       - id: ClothingHandsGlovesColorYellow
       - id: ClothingUniformJumpsuitChiefEngineerTurtle
       - id: ClothingUniformJumpskirtChiefEngineerTurtle
@@ -209,6 +209,7 @@
       # Sirena-Underwear-End
       - id: ADTCEJumpskirtWarm
       - id: ADTCEJumpsuitWarm
+      - id: ADTClothingHeadHatsBeretCE
 
 - type: entity
   id: LockerChiefMedicalOfficerFilledHardsuit
