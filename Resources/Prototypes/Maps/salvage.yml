@@ -268,10 +268,10 @@
   name: "Salvage EVA"
   mapPath: /Maps/Salvage/ADT/salvage_EVA.yml
 
-- type: salvageMap
-  id: ADTsec1
-  name: "Security Salvage"
-  mapPath: /Maps/Salvage/ADT/sec_1.yml
+#- type: salvageMap
+#  id: ADTsec1
+#  name: "Security Salvage"
+#  mapPath: /Maps/Salvage/ADT/sec_1.yml
 
 - type: salvageMap
   id: ADTsec2

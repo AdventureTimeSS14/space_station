@@ -295,14 +295,6 @@ entities:
       pos: 4.3294024,1.5823894
       parent: 1
       type: Transform
-- proto: BoxSurvivalBrigmedic
-  entities:
-  - uid: 96
-    components:
-    - rot: -1.5707963267948966 rad
-      pos: 1.5844975,2.4673452
-      parent: 1
-      type: Transform
 - proto: CableApcExtension
   entities:
   - uid: 21
