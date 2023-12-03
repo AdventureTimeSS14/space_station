@@ -1,0 +1,63 @@
+- type: entity
+  id: ADTPortableGeneratorSuperPacmanMachineCircuitboardHard
+  parent: BaseMachineCircuitboard
+  name: S.U.P.E.R.P.A.C.M.A.N.-type portable generator machine board
+  suffix: Hard
+  components:
+    - type: Sprite
+      state: engineering
+    - type: MachineBoard
+      prototype: ADTPortableGeneratorSuperPacman
+      requirements:
+        Capacitor: 20
+      materialRequirements:
+        CableHV: 100
+
+- type: entity
+  name: S.U.P.E.R.P.A.C.M.A.N.-type portable generator
+  description: |-
+    An advanced generator for powering departments.
+    Runs off uranium sheets and is rated for up to 50 kW.
+  parent: PortableGeneratorSwitchableBase
+  id: ADTPortableGeneratorSuperPacman
+  suffix: Uranium, 50 kW
+  components:
+    - type: Sprite
+      layers:
+        - state: portgen1
+          map: [ "enum.GeneratorVisualLayers.Body" ]
+        - state: portgen_on_unlit
+          map: [ "enum.GeneratorVisualLayers.Unlit" ]
+          shader: unshaded
+          visible: false
+    - type: GenericVisualizer
+      visuals:
+        enum.GeneratorVisuals.Running:
+          enum.GeneratorVisualLayers.Body:
+            True: { state: portgen1on }
+            False: { state: portgen1 }
+          enum.GeneratorVisualLayers.Unlit:
+            True: { visible: true }
+            False: { visible: false }
+
+    - type: Machine
+      board: ADTPortableGeneratorSuperPacmanMachineCircuitboardHard
+    - type: FuelGenerator
+      minTargetPower: 10000
+      maxTargetPower: 50000
+      targetPower: 50000
+      optimalPower: 50000
+      # 30 minutes at full power
+      optimalBurnRate: 0.016666666
+      # Barely save any fuel from reducing power output
+      fuelEfficiencyConstant: 0.1
+    - type: SolidFuelGeneratorAdapter
+      fuelMaterial: Uranium
+      multiplier: 0.01
+    - type: MaterialStorage
+      storageLimit: 3000
+      materialWhiteList: [Uranium]
+    - type: PortableGenerator
+    - type: UpgradePowerSupplier
+      powerSupplyMultiplier: 1.25
+      scaling: Exponential
