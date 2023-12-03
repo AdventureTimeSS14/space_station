@@ -9,6 +9,10 @@
         amount: 2
       - id: ClothingUniformJumpskirtColorGrey
         amount: 2
+      - id: ADTClothingUniformTurtleneckGrey
+        amount: 2
+      - id: ADTClothingUniformTurtleneckGreyWomen
+        amount: 2
       - id: ClothingShoesColorBlack
         amount: 3
       - id: ClothingHeadHatGreysoft
@@ -64,6 +68,46 @@
         prob: 0.25
       - id: ClothingUniformJumpskirtColorPurple
         prob: 0.25
+      - id: ADTClothingUniformTurtleneckWhite
+        prob: 0.1
+      - id: ADTClothingUniformTurtleneckWhiteWomen
+        prob: 0.1
+      - id: ADTClothingUniformTurtleneckAzure
+        prob: 0.1
+      - id: ADTClothingUniformTurtleneckAzureWomen
+        prob: 0.1
+      - id: ADTClothingUniformTurtleneckYellow
+        prob: 0.1
+      - id: ADTClothingUniformTurtleneckYellowWomen
+        prob: 0.1
+      - id: ADTClothingUniformTurtleneckGreen
+        prob: 0.1
+      - id: ADTClothingUniformTurtleneckGreenWomen
+        prob: 0.1
+      - id: ADTClothingUniformTurtleneckOrange
+        prob: 0.1
+      - id: ADTClothingUniformTurtleneckOrangeWomen
+        prob: 0.1
+      - id: ADTClothingUniformTurtleneckPink
+        prob: 0.1
+      - id: ADTClothingUniformTurtleneckPinkWomen
+        prob: 0.1
+      - id: ADTClothingUniformTurtleneckRed
+        prob: 0.1
+      - id: ADTClothingUniformTurtleneckRedWomen
+        prob: 0.1
+      - id: ADTClothingUniformTurtleneckBlue
+        prob: 0.1
+      - id: ADTClothingUniformTurtleneckBlueWomen
+        prob: 0.1
+      - id: ADTClothingUniformTurtleneckAquamarine
+        prob: 0.1
+      - id: ADTClothingUniformTurtleneckAquamarineWomen
+        prob: 0.1
+      - id: ADTClothingUniformTurtleneckPurple
+        prob: 0.1
+      - id: ADTClothingUniformTurtleneckPurpleWomen
+        prob: 0.1
       - id: ClothingShoesColorBlack
         amount: 1
       - id: ClothingShoesColorBrown
@@ -84,6 +128,8 @@
     contents:
       - id: ClothingUniformJumpsuitColorYellow
       - id: ClothingUniformJumpskirtColorYellow
+      - id: ADTClothingUniformTurtleneckYellow
+      - id: ADTClothingUniformTurtleneckYellowWomen
       - id: ClothingShoesColorOrange
         amount: 2
       - id: ClothingHeadBandGold
@@ -98,6 +144,8 @@
     contents:
       - id: ClothingUniformJumpsuitColorWhite
       - id: ClothingUniformJumpskirtColorWhite
+      - id: ADTClothingUniformTurtleneckWhite
+      - id: ADTClothingUniformTurtleneckWhiteWomen
       - id: ClothingShoesColorWhite
         amount: 2
       - id: ClothingHeadHatMimesoft
@@ -111,6 +159,8 @@
     contents:
       - id: ClothingUniformJumpsuitColorBlue
       - id: ClothingUniformJumpskirtColorBlue
+      - id: ADTClothingUniformTurtleneckBlue
+      - id: ADTClothingUniformTurtleneckBlueWomen
       - id: ClothingShoesColorBrown
         amount: 2
 
@@ -123,6 +173,8 @@
     contents:
       - id: ClothingUniformJumpsuitColorPink
       - id: ClothingUniformJumpskirtColorPink
+      - id: ADTClothingUniformTurtleneckPink
+      - id: ADTClothingUniformTurtleneckPinkWomen
       - id: ClothingShoesColorBrown
         amount: 2
 
@@ -135,6 +187,8 @@
     contents:
       - id: ClothingUniformJumpsuitColorBlack
       - id: ClothingUniformJumpskirtColorBlack
+      - id: ADTClothingUniformTurtleneckBlack
+      - id: ADTClothingUniformTurtleneckBlackWomen
       - id: ClothingShoesColorBlack
         amount: 2
       - id: ClothingHeadBandBlack
@@ -150,6 +204,8 @@
     contents:
       - id: ClothingUniformJumpsuitColorGreen
       - id: ClothingUniformJumpskirtColorGreen
+      - id: ADTClothingUniformTurtleneckGreen
+      - id: ADTClothingUniformTurtleneckGreenWomen
       - id: ClothingShoesColorBlack
         amount: 2
       - id: ClothingHeadBandGreen

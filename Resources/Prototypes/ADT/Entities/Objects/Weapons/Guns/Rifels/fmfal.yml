@@ -49,7 +49,11 @@
     price: 500
   - type: AmmoCounter
   - type: Gun
-    fireRate: 7
+    fireRate: 6.3
+    minAngle: 5
+    maxAngle: 7
+    angleIncrease: 2
+    angleDecay: 4
     selectedMode: Burst
     availableModes:
       #- FullAuto
@@ -59,6 +63,9 @@
       collection: FN_Fal_choot
   - type: Item
     size: Large
+  - type: GunWieldBonus
+    minAngle: -5
+    maxAngle: -5
 
 
 

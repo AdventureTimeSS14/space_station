@@ -173,6 +173,10 @@
     price: 500
   - type: AmmoCounter
   - type: Gun
+    minAngle: 5
+    maxAngle: 7
+    angleIncrease: 2
+    angleDecay: 4
     fireRate: 7
     selectedMode: FullAuto
     availableModes:
@@ -183,6 +187,9 @@
       path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
   - type: Item
     size: Large
+  - type: GunWieldBonus
+    minAngle: -15
+    maxAngle: -15
 
 - type: entity
   name: АКSy-74
@@ -235,7 +242,11 @@
     price: 500
   - type: AmmoCounter
   - type: Gun
-    fireRate: 7.5
+    minAngle: 5
+    maxAngle: 7
+    angleIncrease: 2
+    angleDecay: 4
+    fireRate: 7.1
     selectedMode: FullAuto
     availableModes:
       - FullAuto
@@ -245,3 +256,6 @@
       path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
   - type: Item
     size: Large
+  - type: GunWieldBonus
+    minAngle: -13
+    maxAngle: -13
