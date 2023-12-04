@@ -303,10 +303,10 @@
   name: "Botany Salvage"
   mapPath: /Maps/Salvage/ADT/service_botany.yml
 
-- type: salvageMap
-  id: ADTsyndy2
-  name: "Sindycate Salvage"
-  mapPath: /Maps/Salvage/ADT/syndy_2.yml
+#- type: salvageMap
+#  id: ADTsyndy2
+#  name: "Sindycate Salvage"
+#  mapPath: /Maps/Salvage/ADT/syndy_2.yml
 
 - type: salvageMap
   id: ADTsyndy4
