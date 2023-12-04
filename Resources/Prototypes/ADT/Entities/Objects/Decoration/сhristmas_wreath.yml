@@ -1,0 +1,57 @@
+- type: entity
+  parent: BaseSign
+  id: CristmasWreathBase
+  abstract: true
+  suffix: New Year
+  components:
+  - type: WallMount
+    arc: 360
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: ADT/Objects/Decoration/cristmas_wreaths.rsi
+    snapCardinals: true
+
+- type: entity
+  parent: CristmasWreathBase
+  id: ADTCristmasWreath
+  name: christmas wreath
+  description: A typical decoration in houses on Earth in the run-up to Christmas.
+  components:
+  - type: Sprite
+    state: christmaswreath_01
+
+- type: entity
+  parent: CristmasWreathBase
+  id: ADTCristmasWreath2
+  name: christmas wreath
+  description: A typical decoration in houses on Earth in the run-up to Christmas.
+  components:
+  - type: Sprite
+    state: christmaswreath_02
+
+- type: entity
+  parent: CristmasWreathBase
+  id: ADTCristmasWreath3
+  name: christmas wreath
+  description: A typical decoration in houses on Earth in the run-up to Christmas.
+  components:
+  - type: Sprite
+    state: christmaswreath_03
+
+- type: entity
+  parent: CristmasWreathBase
+  id: ADTCristmasMistletoe
+  name: christmas wmistletoe
+  description: A main decoration in houses in England on Earth in the run-up to Christmas.
+  components:
+  - type: Sprite
+    state: christmasmistletoe_01
+
+- type: entity
+  parent: CristmasWreathBase
+  id: ADTCristmasMistletoe2
+  name: christmas wmistletoe
+  description: A main decoration in houses in England on Earth in the run-up to Christmas.
+  components:
+  - type: Sprite
+    state: christmasmistletoe_02
