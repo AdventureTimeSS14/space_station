@@ -124,16 +124,14 @@ public sealed class AHelpUIController: UIController, IOnSystemChanged<BwoinkSyst
     private void ReceivedBwoink(object? sender, SharedBwoinkSystem.BwoinkTextMessage message)
     {
         Logger.InfoS("c.s.go.es.bwoink", $"@{message.UserId}: {message.Text}");
-        var localPlayer = _playerManager.LocalSession;
+        var localPlayer = _playerManager.LocalPlayer;
         if (localPlayer == null)
         {
             return;
         }
         if (localPlayer.UserId != message.TrueSender)
         {
-            var randomSoundEffect = GetRandomSoundEffect();
-            _audio.PlayGlobal(randomSoundEffect, Filter.Local(), false);
-
+            SoundSystem.Play("/Audio/Effects/adminhelp.ogg", Filter.Local());
             _clyde.RequestWindowAttention();
         }
 
@@ -146,21 +144,22 @@ public sealed class AHelpUIController: UIController, IOnSystemChanged<BwoinkSyst
 
         UIHelper!.Receive(message);
     }
-    private string GetRandomSoundEffect() //функция рандомизации звуковых эффектов в ф1.
-    {
-        // Список звуковых эффектов
-        var soundEffects = new List<string>
-        {
-        "/Audio/Effects/adminhelp1.ogg",
-        "/Audio/Effects/adminhelp2.ogg",
-        "/Audio/Effects/adminhelp3.ogg"
-        };
 
-        // Получение случайного звукового эффекта из списка
-        var random = new Random();
-        var randomIndex = random.Next(0, soundEffects.Count);
-        return soundEffects[randomIndex];
-    }
+    //private string GetRandomSoundEffect() //функция рандомизации звуковых эффектов в ф1.
+    //{
+    //    // Список звуковых эффектов
+    //    var soundEffects = new List<string>
+    //    {
+    //    "/Audio/Effects/adminhelp1.ogg",
+    //    "/Audio/Effects/adminhelp2.ogg",
+    //    "/Audio/Effects/adminhelp3.ogg"
+    //    };
+
+    //    // Получение случайного звукового эффекта из списка
+    //    var random = new Random();
+    //    var randomIndex = random.Next(0, soundEffects.Count);
+    //    return soundEffects[randomIndex];
+    //}
 
     private void DiscordRelayUpdated(BwoinkDiscordRelayUpdated args, EntitySessionEventArgs session)
     {
