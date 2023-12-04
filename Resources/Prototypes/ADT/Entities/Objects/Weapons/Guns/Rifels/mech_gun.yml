@@ -10,11 +10,17 @@
   - type: Gun
     fireRate: 1
     selectedMode: SemiAuto
-    angleDecay: 45
+    angleDecay: 60
+    minAngle: 58
+    maxAngle: 62
     availableModes:
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+  - type: GunWieldBonus
+    minAngle: -55
+    maxAngle: -55
+  - type: Wieldable
   - type: Appearance
   - type: GenericVisualizer
     visuals:
