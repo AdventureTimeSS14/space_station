@@ -124,19 +124,20 @@ public sealed class AHelpUIController: UIController, IOnSystemChanged<BwoinkSyst
     private void ReceivedBwoink(object? sender, SharedBwoinkSystem.BwoinkTextMessage message)
     {
         Logger.InfoS("c.s.go.es.bwoink", $"@{message.UserId}: {message.Text}");
-        var localPlayer = _playerManager.LocalPlayer;
+        var localPlayer = _playerManager.LocalSession;
         if (localPlayer == null)
         {
             return;
         }
         if (localPlayer.UserId != message.TrueSender)
         {
-            SoundSystem.Play("/Audio/Effects/adminhelp.ogg", Filter.Local());
+            var randomSoundEffect = GetRandomSoundEffect();
+            _audio.PlayGlobal(randomSoundEffect, Filter.Local(), false);
+
             _clyde.RequestWindowAttention();
         }
 
         EnsureUIHelper();
-
         if (!UIHelper!.IsOpen)
         {
             UnreadAHelpReceived();
@@ -144,22 +145,19 @@ public sealed class AHelpUIController: UIController, IOnSystemChanged<BwoinkSyst
 
         UIHelper!.Receive(message);
     }
+    private string GetRandomSoundEffect() //функция рандомизации звуковых эффектов в ф1.
+    {
+        // Список звуковых эффектов
+        var soundEffects = new List<string>
+        {
+        "/Audio/Effects/adminhelp.ogg"
+        };
 
-    //private string GetRandomSoundEffect() //функция рандомизации звуковых эффектов в ф1.
-    //{
-    //    // Список звуковых эффектов
-    //    var soundEffects = new List<string>
-    //    {
-    //    "/Audio/Effects/adminhelp1.ogg",
-    //    "/Audio/Effects/adminhelp2.ogg",
-    //    "/Audio/Effects/adminhelp3.ogg"
-    //    };
-
-    //    // Получение случайного звукового эффекта из списка
-    //    var random = new Random();
-    //    var randomIndex = random.Next(0, soundEffects.Count);
-    //    return soundEffects[randomIndex];
-    //}
+        // Получение случайного звукового эффекта из списка
+        var random = new Random();
+        var randomIndex = random.Next(0, soundEffects.Count);
+        return soundEffects[randomIndex];
+    }
 
     private void DiscordRelayUpdated(BwoinkDiscordRelayUpdated args, EntitySessionEventArgs session)
     {
