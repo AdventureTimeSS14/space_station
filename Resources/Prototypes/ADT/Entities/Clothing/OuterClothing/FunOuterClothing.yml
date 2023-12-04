@@ -30,3 +30,16 @@
     sprite: ADT/Clothing/OuterClothing/Suits/chefpovar_outer.rsi
   - type: Clothing
     sprite: ADT/Clothing/OuterClothing/Suits/chefpovar_outer.rsi
+
+- type: entity
+  parent: ClothingOuterBase
+  id: ADTClothingOuterDedMoroz
+  suffix: New Year
+  name: Ded Moroz suit
+  description: Suit clothing ded moroz
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Fun/ded_morozsuitouter.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Fun/ded_morozsuitouter.rsi
+
