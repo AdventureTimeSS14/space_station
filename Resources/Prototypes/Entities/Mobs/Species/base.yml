@@ -216,6 +216,7 @@
       Unsexed: MaleHuman
   - type: Emoting
   - type: EmoteAnimation
+  - type: EmotePanel
   - type: BodyEmotes
     soundsId: GeneralBodyEmotes
   - type: Grammar

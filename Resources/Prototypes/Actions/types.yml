@@ -1,4 +1,16 @@
 - type: entity
+  id: ActionOpenEmotes
+  name: action-name-emotes
+  description: action-description-emotes
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: Interface/Actions/emotes.png
+    event: !type:OpenEmotesActionEvent
+    #event: !type:ScreamActionEvent
+    checkCanInteract: false
+
+- type: entity
   id: ActionScream
   name: Scream
   description: AAAAAAAAAAAAAAAAAAAAAAAAA
