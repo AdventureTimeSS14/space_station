@@ -6,7 +6,7 @@ ent-FoodMandarin = мандарин
 
 # кожура
 ent-TrashMandarinPeel = мандариновая кожура
-    .desc = ""
+    .desc = "Пахнет новым годом."
     .suffix = Новый год
 
 # долька
