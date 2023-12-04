@@ -4,6 +4,7 @@ using Content.Shared.ADT.EmotePanel;
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.Emoting;
 using Robust.Client.GameObjects;
+using Robust.Client.Player;
 using Robust.Client.UserInterface;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -18,7 +19,7 @@ public sealed class EmotePanelSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly IUserInterfaceManager _userInterfaceManager = default!;
-
+    [Dependency] private readonly IPlayerManager _playerMan = default!;
     [Dependency] private readonly SpriteSystem _spriteSystem = default!;
 
     /// <summary>
@@ -46,7 +47,7 @@ public sealed class EmotePanelSystem : EntitySystem
 
     private void OnPlayerDetached(PlayerDetachedEvent args)
     {
-        _openedMenu?.Dispose();
+       _openedMenu?.Dispose();
     }
 
     private void HandleEmoteMenuEvent(RequestEmoteMenuEvent args)
@@ -64,8 +65,8 @@ public sealed class EmotePanelSystem : EntitySystem
                 var actionName = prototype.ChatMessages[_random.Next(prototype.ChatMessages.Count)];
                 var texturePath = _spriteSystem.Frame0(new SpriteSpecifier.Texture(new ResPath(DefaultIcon)));
 
-                //if (prototype.Icon != null)
-                //    texturePath = _spriteSystem.Frame0(prototype.Icon);
+                if (prototype.Icon != null)
+                    texturePath = _spriteSystem.Frame0(prototype.Icon);
 
                 var emoteButton = _openedMenu.AddButton(actionName, texturePath);
                 emoteButton.Opacity = 210;
@@ -83,7 +84,8 @@ public sealed class EmotePanelSystem : EntitySystem
         {
             _openedMenu = null;
         };
+        if (_playerMan.LocalEntity != null)
+            _openedMenu.OpenAttached((EntityUid) _playerMan.LocalEntity);
 
-        _openedMenu.OpenAttached(new EntityUid(args.Target));
     }
 }

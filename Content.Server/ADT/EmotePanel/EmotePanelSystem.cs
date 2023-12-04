@@ -52,6 +52,8 @@ public sealed class EmotePanelSystem: EntitySystem
                 // Or we can put only those emotes, what we can trigger with chat
                 if (prototype.ChatTriggers.Count <= 0)
                     continue;
+                if (prototype.Icon == null)
+                    continue;
 
                 switch (prototype.Category)
                 {
@@ -68,7 +70,7 @@ public sealed class EmotePanelSystem: EntitySystem
                         break;
                 }
             }
-
+            ev.Prototypes.Sort();
             RaiseNetworkEvent(ev, actorComponent.PlayerSession);
         }
 
