@@ -1,0 +1,56 @@
+- type: entity
+  name: Подозрительный подарок
+  description: Подарок подозрительной наружности. Из него доносится еле слышное пиканье.
+  parent: BaseItem
+  id: toyC4Package
+  suffix: Новый год
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/c4toyPackage.rsi
+    state: icon
+    layers:
+    - state: icon
+      map: ["enum.TriggerVisualLayers.Base"]
+  - type: Item
+    sprite: ADT/Objects/Fun/c4toyPackage.rsi
+    size: Small
+  - type: SpawnItemsOnUse
+    items:
+    - id: toyC4
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+      
+ 
+
+- type: entity
+  parent: BaseItem
+  id: toyC4
+  name: игрушечная с4
+  description: Игрушка, которая поможет Вам ВЗОВАТЬСЯ от смеха.
+  suffix: Новый год
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/c4toy.rsi
+    state: icon
+  - type: Item
+    sprite: ADT/Objects/Fun/c4toy.rsi
+    size: Tiny
+  - type: ItemCooldown
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/ADT/Fun/c4NY_music.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/ADT/Fun/bell.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/ADT/Fun/bell.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: 135
+    soundHit:
+      path: /Audio/ADT/Fun/bell.ogg
+    damage:
+      types:
+        Blunt: 0
+  - type: UseDelay
+    delay: 28

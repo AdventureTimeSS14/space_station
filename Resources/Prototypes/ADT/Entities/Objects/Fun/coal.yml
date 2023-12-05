@@ -1,0 +1,12 @@
+- type: entity
+  parent: BaseItem
+  id: coal
+  name: уголь
+  description: Для самых непослушных.
+  suffix: Новый год
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/coal.rsi
+    state: icon
+  - type: Item
+    size: Tiny
