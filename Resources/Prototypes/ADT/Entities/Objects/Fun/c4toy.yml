@@ -1,9 +1,9 @@
 - type: entity
-  name: Подозрительный подарок
-  description: Подарок подозрительной наружности. Из него доносится еле слышное пиканье.
+  name: Suspicious gift
+  description: A gift of suspicious appearance. A barely audible beeping sound comes from it.
   parent: BaseItem
   id: toyC4Package
-  suffix: Новый год
+  suffix: New Year
   components:
   - type: Sprite
     sprite: ADT/Objects/Fun/c4toyPackage.rsi
@@ -25,8 +25,8 @@
 - type: entity
   parent: BaseItem
   id: toyC4
-  name: игрушечная с4
-  description: Игрушка, которая поможет Вам ВЗОВАТЬСЯ от смеха.
+  name: toy c4
+  description: A toy that will help you EXPLODE with laughter.
   suffix: Новый год
   components:
   - type: Sprite

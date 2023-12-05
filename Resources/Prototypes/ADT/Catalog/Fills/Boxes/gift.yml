@@ -1,9 +1,9 @@
 - type: entity
-  name: картонный подарок
+  name: cardboard gift
   parent: BaseStorageItem
   id: cardboardGift
-  description: подарок для тех, кто плохо работал на NanoTrasen в этом году.
-  suffix: Новый год
+  description: a gift for those who performed poorly on NanoTrasen this year.
+  suffix: New Year
   components:
   - type: Sprite
     sprite: ADT/Objects/Storage/gift.rsi
