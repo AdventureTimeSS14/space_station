@@ -270,3 +270,14 @@ ent-ADTClothingUniformJumpsuitOldDarkSuit = старый темный комби
 ent-ADTClothingUniformJumpsuitLapkeeSet = тёмная охранная водолазка
     .desc = Возможно сделанная на заказ прочная, с явно имеющими место быть броневставками водолазка для тяжёлой работы в тяжёлых условиях дальнего космоса. От неё приятно веет мандаринками и военными преступлениями.
     .suffix = { "Именное, Lapkee" }
+
+ent-ADTClothingUniformJumpsuitSweaterHolidayBeige = бежевый свитер
+    .desc = Этот свитер носит главная звезда праздника.
+ent-ADTClothingUniformJumpsuitSweaterHolidayBlue = синий свитер
+    .desc = Истинный скакун Санты изображен на этом теплом свитере.
+ent-ADTClothingUniformJumpsuitSweaterHolidayRedDark = красный праздничный свитер c черными штанами
+    .desc = Красная, теплая, яркая, праздничная и главное - стильная. Этим всё сказано
+ent-ADTClothingUniformJumpsuitSweaterHolidayRedWhite = красный праздничный свитер c белыми штанами
+    .desc = Красная, теплая, яркая, праздничная. Этим всё сказано
+ent-ADTClothingUniformJumpsuitElf = костюм Эльфа
+    .desc = Пахнет елью, досками,пихтой, а так же праздником.

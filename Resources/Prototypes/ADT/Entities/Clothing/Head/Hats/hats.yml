@@ -395,3 +395,15 @@
     sprite: ADT/Clothing/Head/Hats/beret_CentCom.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/beret_CentCom.rsi
+#New Year
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsElf
+  name: elf hat
+  description: A hat of a real worker. With glued ears.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/elf_hat.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/elf_hat.rsi #спрайты от dion_clawed

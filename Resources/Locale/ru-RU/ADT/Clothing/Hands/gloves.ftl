@@ -30,3 +30,10 @@ ent-ADTClothingHandsGlovesBlackDams = Черные дамские перчатк
 ent-ADTClothingHandsGlovesLapkee = светлые тактические перчатки
     .desc = Прочные перчатки на лапки с изоляцией от нежелательных поджариваний, имеет чёрные кончики пальцев.
     .suffix = { "Именное, Lapkee" }
+
+ent-ADTClothingHandsGlovesMittensRed = красные варежки
+    .desc = Красные, теплые, пахнут духом праздника.
+ent-ADTClothingHandsGlovesMittensBlue = синие варежки
+    .desc = Тронешь кого-то - он заледенеет.
+ent-ADTClothingHandsGlovesMittensGreen = зеленые варежки
+    .desc = Зима будет долгой, а работы много. Вперед на завод игрушек!

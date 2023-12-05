@@ -73,3 +73,16 @@ ent-ADTClothingUnderwearTopBraSportsBlack = спортивный черный т
 
 ent-ADTClothingUnderwearTopBraPea = топик в горошек
     .desc = Легкая и короткая женская блузка без рукавов. Производство компании  "Modeling Agency Dar-Vaxed".
+
+ent-ADTClothingUnderwearSocksBeige = бежевые праздничные носки
+    .desc = Ноги чувствуют тепло от плотного слоя шерстки в них.
+ent-ADTClothingUnderwearSocksBlue = синие праздничные носки
+    .desc = Синие - словно лед. Теплые - как праздник.
+ent-ADTClothingUnderwearSocksFingerless = празднечные носки без пальцев
+    .desc = Когти не помеха для праздника! 
+ent-ADTClothingUnderwearSocksRed = красные праздничные носки
+    .desc = Традиционные носки на Новый Год.
+ent-ADTClothingUnderwearSocksGreen = зеленые носки
+    .desc = Истинный эльф ходит в них.
+ent-ADTClothingUnderwearSocksGnome = носки гнома
+    .desc = Специально для хождения по леденным шахтам помошникам санты.

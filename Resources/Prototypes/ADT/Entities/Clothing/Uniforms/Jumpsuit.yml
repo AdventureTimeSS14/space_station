@@ -876,3 +876,65 @@
 #    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_amerc.rsi
 #  - type: Clothing
 #    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_amerc.rsi
+
+
+#New Year
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitSweaterHolidayBeige 
+  name: beige sweater
+  description: A real star of the show is wearing this sweater.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/sweater_beige.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/sweater_beige.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitSweaterHolidayBlue
+  name: blue sweater
+  description: A real Santa's raindeer is on this sweater.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/sweater_blue.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/sweater_blue.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitSweaterHolidayRedDark
+  name: red sweater with black pants
+  description: Red, bright, warm, festive and most important - stylish.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/sweater_red_dark.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/sweater_red_dark.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitSweaterHolidayRedWhite
+  name: red sweater with white pants
+  description: Red, bright, warm, festive.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/sweater_red_white.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/sweater_red_white.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitElf
+  name: elf costume
+  description: Smells like wood, spruce and holidays.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/elf_costume.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/elf_costume.rsi #спрайты от dion_clawed

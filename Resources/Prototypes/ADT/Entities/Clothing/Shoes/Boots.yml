@@ -307,3 +307,16 @@
         - Sidearm
   - type: TemperatureProtection #слабая защита от холода
     coefficient: 0.05
+
+#New Year
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ADTClothingFootElfBoots
+  name: elf boots
+  description: Warm boots to work in a house on north.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/elf_boots.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/elf_boots.rsi  #спрайты от dion_clawed

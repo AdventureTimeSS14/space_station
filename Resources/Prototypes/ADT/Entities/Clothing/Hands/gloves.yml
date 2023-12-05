@@ -192,3 +192,40 @@
         Heat: 0.95
         Cold: 0.95
         Shock: 0.95
+
+#New Year
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsGlovesMittensRed
+  name: red mittens
+  description: Red, warm, festive.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/mittens_red.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/mittens_red.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsGlovesMittensBlue
+  name: blue mittens
+  description: One touch and you will freeze someone.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/mittens_blue.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/mittens_blue.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsGlovesMittensGreen
+  name: green mittens
+  description: The winter is long, we have a lot of work. Let's go to the toy factory!
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/mittens_green.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/mittens_green.rsi #спрайты от dion_clawed
