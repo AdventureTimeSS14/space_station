@@ -229,6 +229,9 @@
         },
         {
             "name": "pda-investigator"
+        },
+        {
+            "name": "pda-syndi-agent"
         }
     ]
 }

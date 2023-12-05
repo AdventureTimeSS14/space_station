@@ -6,6 +6,7 @@ using Content.Shared.Item;
 using Content.Shared.ADT.SwitchableWeapon;
 using Content.Shared.Toggleable;
 using Content.Shared.Weapons.Melee.Events;
+using Robust.Shared.Audio.Systems;
 
 namespace Content.Server.ADT.SwitchableWeapon;
 
