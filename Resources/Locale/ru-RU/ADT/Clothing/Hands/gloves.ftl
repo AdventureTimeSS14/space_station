@@ -37,3 +37,6 @@ ent-ADTClothingHandsGlovesMittensBlue = синие варежки
     .desc = Тронешь кого-то - он заледенеет.
 ent-ADTClothingHandsGlovesMittensGreen = зеленые варежки
     .desc = Зима будет долгой, а работы много. Вперед на завод игрушек!
+
+ent-ADTClothingHandsGlovesSnowMaiden = перчатки Снегурочки
+    .desc = Тёплые перчатки для зимней поры.

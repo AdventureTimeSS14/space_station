@@ -229,3 +229,15 @@
     sprite: ADT/Clothing/Hands/Gloves/mittens_green.rsi
   - type: Clothing
     sprite: ADT/Clothing/Hands/Gloves/mittens_green.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsGlovesSnowMaiden
+  name: snow maiden's gloves
+  description: A gloves of Snow Maiden.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/gloves_snow_maiden.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/gloves_snow_maiden.rsi #спрайты от prazat911

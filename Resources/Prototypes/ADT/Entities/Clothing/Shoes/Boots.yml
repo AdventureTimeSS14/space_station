@@ -320,3 +320,15 @@
     sprite: ADT/Clothing/Shoes/Boots/elf_boots.rsi
   - type: Clothing
     sprite: ADT/Clothing/Shoes/Boots/elf_boots.rsi  #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ADTClothingFootBootsSnowMaiden
+  name: snow maiden's boots
+  description: Warm boots of Snow Maiden.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/snow_maiden.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/snow_maiden.rsi  #спрайты от prazat911

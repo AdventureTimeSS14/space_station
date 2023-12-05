@@ -52,3 +52,6 @@ ent-ADTClothingFootLapkeeSet = тактические кроссовки
 
 ent-ADTClothingFootElfBoots = сапоги Эльфа
     .desc = Теплая обувь для работы в домике на севере!
+
+ent-ADTClothingFootBootsSnowMaiden = сапоги Снегурочки
+    .desc = Сапоги внучки Деда Мороза.

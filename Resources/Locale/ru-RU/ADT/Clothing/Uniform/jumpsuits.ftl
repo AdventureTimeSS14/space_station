@@ -281,3 +281,6 @@ ent-ADTClothingUniformJumpsuitSweaterHolidayRedWhite = красный празд
     .desc = Красная, теплая, яркая, праздничная. Этим всё сказано
 ent-ADTClothingUniformJumpsuitElf = костюм Эльфа
     .desc = Пахнет елью, досками,пихтой, а так же праздником.
+
+ent-ADTClothingUniformSnowMaiden = костюм Снегурочки
+    .desc = Костюм с юбкой помощницы Деда Мороза.

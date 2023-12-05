@@ -407,3 +407,15 @@
     sprite: ADT/Clothing/Head/Hats/elf_hat.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/elf_hat.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsSnowMaiden
+  name: snow maiden's hat
+  description: A hat of a Snow Maiden.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/hat_snow_maiden.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/hat_snow_maiden.rsi #спрайты от prazat911

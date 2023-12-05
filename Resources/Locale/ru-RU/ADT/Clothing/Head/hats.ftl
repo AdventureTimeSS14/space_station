@@ -126,3 +126,6 @@ ent-ADTClothingHeadHatRoga = Праздничные рога
     
 ent-ADTClothingHeadHatsElf = шапка Эльфа
     .desc = Шапка настоящего трудяги с приклеенными ушками.
+
+ent-ADTClothingHeadHatsSnowMaiden = шапка Снегурочки
+    .desc = Яркая, голубая шапка на детский утренник.
