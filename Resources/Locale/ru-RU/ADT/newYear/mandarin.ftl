@@ -1,21 +1,21 @@
 # by ModerN https://github.com/modern-nm/ for Adventure Time project https://discord.gg/D5hnyn2nFA
 # плод
-ent-FoodMandarin = мандарин
+ent-ADTFoodMandarin = мандарин
     .desc = Полезный, оранжевый.
     .suffix = Новый год
 
 # кожура
-ent-TrashMandarinPeel = мандариновая кожура
+ent-ADTTrashMandarinPeel = мандариновая кожура
     .desc = Пахнет новым годом.
     .suffix = Новый год
 
 # долька
-ent-FoodMandarinSlice = мандариновая долька
+ent-ADTFoodMandarinSlice = мандариновая долька
     .desc = Пахнет новым годом.
     .suffix = Новый год
 
 # пакет семян
-ent-MandarinSeeds = пакет семян мандарина
+ent-ADTMandarinSeeds = пакет семян мандарина
     .desc = Ох, скорей бы выросли!
     .suffix = Новый год
 
