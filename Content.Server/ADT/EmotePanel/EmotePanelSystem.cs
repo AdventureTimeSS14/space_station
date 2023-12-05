@@ -1,3 +1,5 @@
+/// Made for Adventure Time Project by ModerN. https://github.com/modern-nm mailto:modern-nm@yandex.by
+/// see also https://github.com/DocNITE/liebendorf-station/tree/feature/emote-radial-panel
 using Content.Server.Actions;
 using Content.Server.Chat.Systems;
 using Content.Shared.ADT.EmotePanel;
@@ -9,9 +11,12 @@ using Content.Server.Speech.Components;
 
 namespace Content.Server.ADT.EmotePanel;
 
-public sealed class EmotePanelSystem: EntitySystem
+/// <summary>
+/// EmotePanelSystem process actions on "ActionOpenEmotes" and RadialUi.
+/// <see cref="Content.Shared.ADT.EmotePanel.EmotePanelComponent"/>
+/// </summary>
+public sealed class EmotePanelSystem : EntitySystem
 {
-    [Dependency] private readonly IEntityManager _entityManager = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly ActionsSystem _actions = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
@@ -34,8 +39,14 @@ public sealed class EmotePanelSystem: EntitySystem
     }
     private void OnShutdown(EntityUid uid, EmotePanelComponent component, ComponentShutdown args)
     {
-        throw new NotImplementedException();
+        _actions.RemoveAction(uid, component.OpenEmotesActionEntity);
     }
+    /// <summary>
+    /// Gathers emotes-prototypes and sends to client, which trigger OpenEmotesActionEvent.
+    /// </summary>
+    /// <param name="uid">source of action</param>
+    /// <param name="component"></param>
+    /// <param name="args"></param>
     private void OnEmotingAction(EntityUid uid, EmotePanelComponent component, OpenEmotesActionEvent args)
     {
         if (args.Handled)

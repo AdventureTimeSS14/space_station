@@ -1,8 +1,9 @@
+/// Made for Adventure Time Project by ModerN. https://github.com/modern-nm mailto:modern-nm@yandex.by
+/// see also https://github.com/DocNITE/liebendorf-station/tree/feature/emote-radial-panel
 using Content.Client.UserInterface.Systems.Radial;
 using Content.Client.UserInterface.Systems.Radial.Controls;
 using Content.Shared.ADT.EmotePanel;
 using Content.Shared.Chat.Prototypes;
-using Content.Shared.Emoting;
 using Robust.Client.GameObjects;
 using Robust.Client.Player;
 using Robust.Client.UserInterface;
@@ -15,7 +16,6 @@ namespace Content.Client.ADT.EmotePanel;
 
 public sealed class EmotePanelSystem : EntitySystem
 {
-    [Dependency] private readonly IEntityManager _entityManager = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly IUserInterfaceManager _userInterfaceManager = default!;
@@ -26,7 +26,6 @@ public sealed class EmotePanelSystem : EntitySystem
     /// We should enable radial for single target
     /// </summary>
     private RadialContainer? _openedMenu;
-    private EntityUid _target;
 
     private const string DefaultIcon = "/Textures/Interface/AdminActions/play.png";
 
@@ -50,6 +49,10 @@ public sealed class EmotePanelSystem : EntitySystem
        _openedMenu?.Dispose();
     }
 
+    /// <summary>
+    /// Draws RadialUI.
+    /// <seealso cref="Content.Client.UserInterface.Systems.Radial.RadialUiController"/>
+    /// </summary>
     private void HandleEmoteMenuEvent(RequestEmoteMenuEvent args)
     {
         if (_openedMenu != null)

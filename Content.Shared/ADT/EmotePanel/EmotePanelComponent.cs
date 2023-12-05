@@ -1,11 +1,17 @@
+/// Made for Adventure Time Project by ModerN. https://github.com/modern-nm mailto:modern-nm@yandex.by
+/// see also https://github.com/DocNITE/liebendorf-station/tree/feature/emote-radial-panel
 using Content.Shared.Actions;
 using Robust.Shared.GameObjects;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
-//
+
 namespace Content.Shared.ADT.EmotePanel;
 
+
+/// <summary>
+/// This component describes ActionEntity "ActionOpenEmotes". This class is a part of code which is responsible for using RadialUiController.
+/// </summary>
 [RegisterComponent, NetworkedComponent]
 public sealed partial class EmotePanelComponent: Component
 {
@@ -15,6 +21,9 @@ public sealed partial class EmotePanelComponent: Component
     [DataField, AutoNetworkedField]
     public EntityUid? OpenEmotesActionEntity;
 }
+/// <summary>
+/// This event carries list of emotes-prototypes and entity - the source of request. This class is a part of code which is responsible for using RadialUiController.
+/// </summary>
 [Serializable, NetSerializable]
 public sealed partial class RequestEmoteMenuEvent : EntityEventArgs
 {
@@ -26,6 +35,10 @@ public sealed partial class RequestEmoteMenuEvent : EntityEventArgs
         Target = target;
     }
 }
+
+/// <summary>
+/// This event carries prototype-id of emote, which was selected. This class is a part of code which is responsible for using RadialUiController.
+/// </summary>
 [Serializable, NetSerializable]
 public sealed partial class SelectEmoteEvent : EntityEventArgs
 {
