@@ -1,0 +1,13 @@
+- type: entity
+  id: ADTEvidanceBag
+  name: Evidance Bag
+  parent: BaseStorageItem
+  description: Designed to store evidence, not drugs
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Misc/Evidance.rsi
+    state: icon
+    scale: 0.7, 0.7
+  - type: Storage
+    maxSlots: 1
+    maxItemSize: Small
