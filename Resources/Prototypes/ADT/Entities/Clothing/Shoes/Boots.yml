@@ -307,3 +307,16 @@
         - Sidearm
   - type: TemperatureProtection #слабая защита от холода
     coefficient: 0.05
+
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ADTClothingFootNewMekkaBoots
+  name: New Mekka boots
+  description: Comfortable for bullies!
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/newmekka.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/newmekka.rsi  #спрайты от prazat911
+
