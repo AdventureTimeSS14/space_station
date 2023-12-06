@@ -38,7 +38,7 @@
   id: ADTTreeSilverMishura
 
 - type: entity
-  id: ADTСhristmasTree
+  id: ADTChristmasPlasticTree
   parent: BaseStructure
   name: plastic christmas tree
   description: A very festive tree for a very festive holiday.
@@ -53,7 +53,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.5
+          radius: 0.45
         density: 100
         mask:
         - Impassable
@@ -347,7 +347,7 @@
     sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
     state: golden_star
   - type: Item
-    size: Normal
+    size: Small
 
 - type: entity
   name: red tree star
@@ -363,7 +363,7 @@
     sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
     state: red_star
   - type: Item
-    size: Normal
+    size: Small
 
 - type: entity
   name: silver tree star
@@ -379,7 +379,7 @@
     sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
     state: silver_star
   - type: Item
-    size: Normal
+    size: Small
 
 #мишура
 
@@ -397,7 +397,7 @@
     sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
     state: silver_mishura
   - type: Item
-    size: Normal
+    size: Small
 
 - type: entity
   name: golden mishura
@@ -413,7 +413,7 @@
     sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
     state: golden_mishura
   - type: Item
-    size: Normal
+    size: Small
 
 - type: entity
   name: red mishura
@@ -429,4 +429,4 @@
     sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
     state: red_mishura
   - type: Item
-    size: Normal
+    size: Small
