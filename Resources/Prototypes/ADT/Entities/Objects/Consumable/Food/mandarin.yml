@@ -1,0 +1,122 @@
+#by ModerN for Adventure Time project
+# плод
+- type: entity
+  name: mandarin
+  parent: FoodLemon
+  id: ADTFoodMandarin
+  description: Healthy, very orange.
+  suffix: NewYear
+  components:
+  - type: FlavorProfile
+    flavors:
+      - ADTmandarin
+  - type: Food
+    trash: ADTTrashMandarinPeel
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Hydroponics/mandarin.rsi
+  - type: Produce
+    seedId: ADTmandarin
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: ADTJuiceMandarin
+        Quantity: 10
+  - type: SliceableFood
+    count: 5
+    slice: ADTFoodMandarinSlice
+  - type: Tag
+    tags:
+    - Fruit
+
+# кожура
+- type: entity
+  name: mandarin peel
+  parent: TrashBananaPeel
+  id: ADTTrashMandarinPeel
+  suffix: NewYear
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Hydroponics/mandarin.rsi
+    state: peel
+  - type: Item
+    sprite: ADT/Objects/Specific/Hydroponics/mandarin.rsi
+    heldPrefix: peel
+
+
+# долька
+- type: entity
+  name: mandarin slice
+  parent: ProduceSliceBase
+  id: ADTFoodMandarinSlice
+  description: Mmm, tropical.
+  suffix: NewYear
+  components:
+  - type: FlavorProfile
+    flavors:
+      - ADTmandarin
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Hydroponics/mandarin.rsi
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: ADTJuiceMandarin
+        Quantity: 2
+  - type: Tag
+    tags:
+    - Fruit
+
+# пакет семян
+- type: entity
+  parent: SeedBase
+  name: packet of mandarin seeds
+  id: ADTMandarinSeeds
+  suffix: NewYear
+  components:
+    - type: Seed
+      seedId: ADTmandarin
+    - type: Sprite
+      sprite: ADT/Objects/Specific/Hydroponics/mandarin.rsi
+
+#семяна
+- type: seed
+  id: ADTmandarin
+  name: seeds-mandarin-name
+  noun: seeds-noun-seeds
+  displayName: seeds-mandarin-display-name
+  suffix: NewYear
+  plantRsi: ADT/Objects/Specific/Hydroponics/mandarin.rsi
+  packetPrototype: ADTMandarinSeeds
+  productPrototypes:
+    - ADTFoodMandarin
+  harvestRepeat: Repeat
+  lifespan: 55
+  maturation: 6
+  production: 6
+  yield: 3
+  potency: 10
+  idealLight: 8
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 4
+      PotencyDivisor: 25
+
+#сок
+- type: reagent
+  id: ADTJuiceMandarin
+  name: reagent-name-juice-mandarin
+  parent: BaseDrink
+  desc: reagent-desc-juice-mandarin
+  physicalDesc: reagent-physical-desc-citric
+  flavor: ADTmandarin
+  color: "#E78108"
+
+#на вкус как..
+- type: flavor
+  id: ADTmandarin
+  flavorType: Base
+  description: flavor-base-mandarin
