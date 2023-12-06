@@ -61,3 +61,27 @@
     sprite: ADT/Clothing/Head/Misc/hairpin.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Misc/hairpin.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatDedMoroz
+  suffix: New Year
+  name: hat ded moroz
+  description: "It is hat ded moroz"
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Misc/ded_morozhat.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Misc/ded_morozhat.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatRoga
+  suffix: New Year
+  name: hat roga
+  description: "Hat roga"
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Misc/hat_roga.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Misc/hat_roga.rsi

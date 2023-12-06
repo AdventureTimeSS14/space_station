@@ -2,18 +2,18 @@
   id: DefaultMapPool
   maps:
   - CorvaxDelta
-  #- CorvaxAvrite
   - Aspid
   - Atlas
   - Bagel
   - Barratry
+  - Box
   - Cluster
-  #- HalloweenCluster
-  #- Core
+  - Core
   - Fland
   #- Kettle
   #- Marathon
   #- Meta
+  - Gemini
   - Omega
   #- Origin
   - Saltern

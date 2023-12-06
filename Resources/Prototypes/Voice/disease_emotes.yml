@@ -5,6 +5,7 @@
 
 - type: emote
   id: Cough
+  icon: Interface/Emotes/coughs.png
   category: Vocal
   chatMessages: [кашляет] # Corvax-Localization
   chatTriggers:
@@ -37,6 +38,7 @@
 
 - type: emote
   id: Yawn
+  icon: Interface/Emotes/yawns.png
   category: Vocal
   chatMessages: [зевает] # Corvax-Localization
   chatTriggers:

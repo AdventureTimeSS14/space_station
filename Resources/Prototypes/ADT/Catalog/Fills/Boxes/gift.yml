@@ -1,0 +1,15 @@
+- type: entity
+  name: cardboard gift
+  parent: BaseStorageItem
+  id: cardboardGift
+  description: a gift for those who performed poorly on NanoTrasen this year.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Storage/gift.rsi
+    state: icon
+  - type: Item
+    size: Ginormous
+    sprite: ADT/Objects/Storage/gift.rsi
+  - type: Storage
+    maxTotalWeight: 24

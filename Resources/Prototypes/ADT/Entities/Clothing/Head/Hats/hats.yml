@@ -328,3 +328,81 @@
     sprite: ADT/Clothing/Head/Hats/grey_flat_cap.rsi 
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/grey_flat_cap.rsi #спрайты от prazat911
+
+# Новые береты от Празата. Ну, который prazat911.
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsBeretAtmos
+  name: atmospheric techinican's beret
+  description: A blue beret with sewn emblem of engineering departament. Smells like frezon.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/beret_atmospheric_technician.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/beret_atmospheric_technician.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsBeretHOP
+  name: head of personell's beret
+  description: A blue beret with sewn commander's emblem. The most important in work - cold mind and sure hand.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/beret_HOP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/beret_HOP.rsi
+  
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsBeretSOO
+  name: special operations officer's beret
+  description: A grey beret with sewn ERT emblem. Show who's in charge here!
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/beret_SOO.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/beret_SOO.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsBeretSupply
+  name: suply departament beret
+  description: Copper beret with sewn Supply departament emblem. #медный берет?
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/beret_cargo.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/beret_cargo.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsBeretCE
+  name: chief engineer's beret
+  description: A white beret with sewn engineering departament emblem. Smells like machine oil and beer.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/beret_CE.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/beret_CE.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsBeretCentCom
+  name: central command beret
+  description: A green with sewn CentComm emblem. The style of a military bureaucrat.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/beret_CentCom.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/beret_CentCom.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsBeretArmy
+  name: army beret
+  description: army beret
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/armyberet.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/armyberet.rsi

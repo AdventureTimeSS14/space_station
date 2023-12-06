@@ -1,4 +1,16 @@
 - type: entity
+  id: ActionOpenEmotes
+  name: action-name-emotes
+  description: action-description-emotes
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: Interface/Actions/emotes.png
+    event: !type:OpenEmotesActionEvent
+    #event: !type:ScreamActionEvent
+    checkCanInteract: false
+
+- type: entity
   id: ActionScream
   name: Scream
   description: AAAAAAAAAAAAAAAAAAAAAAAAA
@@ -73,6 +85,22 @@
       sprite: Actions/Implants/implants.rsi
       state: explosive
     event: !type:ActivateImplantEvent
+
+- type: entity
+  id: ActionActivateDeathAcidifier
+  name: Activate Death-Acidifier
+  description: Activates your death-acidifier, completely melting you and your equipment
+  noSpawn: true
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    itemIconStyle: BigAction
+    priority: -20
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: gib
+    event: !type:ActivateImplantEvent
+
 
 - type: entity
   id: ActionActivateFreedomImplant

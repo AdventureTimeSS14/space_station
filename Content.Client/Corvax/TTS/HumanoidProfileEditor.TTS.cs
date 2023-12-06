@@ -9,7 +9,6 @@ namespace Content.Client.Preferences.UI;
 
 public sealed partial class HumanoidProfileEditor
 {
-    private TTSManager _ttsMgr = default!;
     private TTSSystem _ttsSys = default!;
     private List<TTSVoicePrototype> _voiceList = default!;
     private readonly List<string> _sampleText = new()
@@ -22,7 +21,6 @@ public sealed partial class HumanoidProfileEditor
 
     private void InitializeVoice()
     {
-        _ttsMgr = IoCManager.Resolve<TTSManager>();
         _ttsSys = _entMan.System<TTSSystem>();
         _voiceList = _prototypeManager
             .EnumeratePrototypes<TTSVoicePrototype>()
@@ -80,7 +78,7 @@ public sealed partial class HumanoidProfileEditor
         if (_previewDummy is null || Profile is null)
             return;
 
-        _ttsSys.StopAllStreams();
-        _ttsMgr.RequestTTS(_previewDummy.Value, IoCManager.Resolve<IRobustRandom>().Pick(_sampleText), Profile.Voice);
+        //_ttsSys.StopAllStreams();
+        _ttsSys.RequestGlobalTTS(_random.Pick(_sampleText), Profile.Voice);
     }
 }
