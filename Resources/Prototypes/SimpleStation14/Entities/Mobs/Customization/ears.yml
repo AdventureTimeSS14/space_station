@@ -10,24 +10,6 @@
       state: avali_outer
 
 - type: marking
-  id: EarsBunny
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Felinid]
-  sprites:
-    - sprite: SimpleStation14/Mobs/Customization/ears.rsi
-      state: bunny
-
-- type: marking
-  id: EarsBunny2
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Felinid]
-  sprites:
-    - sprite: SimpleStation14/Mobs/Customization/ears.rsi
-      state: bunny2
-
-- type: marking
   id: EarsChemlight
   bodyPart: HeadTop
   markingCategory: HeadTop
@@ -59,35 +41,15 @@
       state: easternd_horns
 
 - type: marking
-  id: EarsJackal
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Felinid]
-  sprites:
-    - sprite: SimpleStation14/Mobs/Customization/ears.rsi
-      state: jackal_outer
-    - sprite: SimpleStation14/Mobs/Customization/ears.rsi
-      state: jackal_inner
-
-- type: marking
   id: EarsMagus
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Reptilian, Oni]
+  speciesRestriction: [Reptilian]
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/ears.rsi
       state: magus_ears
     - sprite: SimpleStation14/Mobs/Customization/ears.rsi
       state: magus_neck
-
-- type: marking
-  id: EarsMouse
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Felinid]
-  sprites:
-    - sprite: SimpleStation14/Mobs/Customization/ears.rsi
-      state: mouse
 
 - type: marking
   id: EarsShadowkin
@@ -113,7 +75,7 @@
   id: EarsSylveon
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Reptilian, SlimePerson, Oni]
+  speciesRestriction: [Reptilian, SlimePerson]
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/ears.rsi
       state: sylveon_primary

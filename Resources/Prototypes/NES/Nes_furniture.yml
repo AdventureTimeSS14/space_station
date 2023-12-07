@@ -66,7 +66,7 @@
   parent: BaseComputer
   id: NesComputerButton
   name: терминал взаимодействия
-  description: This can be used to check medical records.
+  description: Терминал для взаимодействия с подключенными к нему устройствами.
   components:
   - type: Clickable
   - type: UseDelay

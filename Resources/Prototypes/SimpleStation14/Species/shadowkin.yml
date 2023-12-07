@@ -11,9 +11,9 @@
   maleFirstNames: names_shadowkin
   femaleFirstNames: names_shadowkin
   minAge: 18
-  maxAge: 300
-  youngAge: 20
-  oldAge: 250
+  maxAge: 80
+  youngAge: 25
+  oldAge: 50
   sexes:
     - Male
     - Female

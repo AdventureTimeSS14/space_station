@@ -14,16 +14,12 @@
   - type: Body
     prototype: Shadowkin
     requiredLegs: 2
-  - type: Flammable
-    damage:
-      types:
-        Heat: 1.5 # burn more
   - type: MobState
   - type: MobThresholds
-    thresholds: # Weak
+    thresholds:
       0: Alive
-      80: Critical
-      160: Dead
+      90: Critical
+      150: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
       48: 0.85
@@ -34,8 +30,9 @@
   - type: Barotrauma
     damage:
       types:
-        Blunt: 0.35 # per second, scales with pressure and other constants.
+        Blunt: 1 # В секунду.
   - type: Bloodstream
+    bloodReagent: ShadowkinBlood
     bloodlossDamage:
       types:
         Bloodloss:
@@ -51,7 +48,7 @@
     - DoorBumpOpener
   - type: Temperature
     heatDamageThreshold: 330
-    coldDamageThreshold: 195
+    coldDamageThreshold: 200
     currentTemperature: 310.15
     specificHeat: 46
     coldDamage:
@@ -72,10 +69,15 @@
           - MobMask
         layer:
           - MobLayer
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 0.0
+    damageRecovery:
+      types:
+        Asphyxiation: 0.0
   - type: Sprite
-    scale: 0.85, 0.85 # Small
-  - type: Eye
-    zoom: "0.85, 0.85"
+    scale: 0.95, 0.95
   - type: MeleeWeapon
     soundHit:
       collection: Punch
@@ -125,11 +127,10 @@
   components:
   - type: HumanoidAppearance
     species: Shadowkin
-  - type: Sprite # sprite again because we want different layer ordering
+  - type: Sprite
     netsync: false
     noRot: true
     drawdepth: Mobs
-    scale: 0.85, 0.85 # Small
     layers:
       - map: ["enum.HumanoidVisualLayers.Chest"]
       - map: ["enum.HumanoidVisualLayers.Head"]

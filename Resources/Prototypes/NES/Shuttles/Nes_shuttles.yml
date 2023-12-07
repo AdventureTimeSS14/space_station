@@ -53,6 +53,9 @@
     layers:
     - state: base
       map: ["enum.ThrusterVisualLayers.Base"]
+    - state: thrust
+      map: ["enum.ThrusterVisualLayers.ThrustOn"]
+      scale: 0, 0
     - state: thrust_burn_unshaded
       map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
       shader: unshaded
@@ -74,6 +77,9 @@
     layers:
     - state: base
       map: ["enum.ThrusterVisualLayers.Base"]
+    - state: thrust
+      map: ["enum.ThrusterVisualLayers.ThrustOn"]
+      scale: 0, 0
     - state: thrust_burn_unshaded
       map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
       shader: unshaded
@@ -175,9 +181,9 @@
       map: ["enum.StorageVisualLayers.Lock"]
   - type: Emitter
     boltType: BulletGrenadeFrag
-    baseFireBurstDelayMin: 10
+    baseFireBurstDelayMin: 8
     baseFireInterval: 0.8
-    baseFireBurstDelayMax: 10
+    baseFireBurstDelayMax: 15
   - type: Gun
     showExamineText: false
     fireRate: 1 #just has to be fast enough to keep up with upgrades
@@ -252,9 +258,9 @@
       map: ["enum.StorageVisualLayers.Lock"]
   - type: Emitter
     boltType: BulletAntiMateriel
-    baseFireBurstDelayMin: 0
-    baseFireInterval: 0.2
-    baseFireBurstDelayMax: 0
+    baseFireBurstDelayMin: 1
+    baseFireInterval: 0.5
+    baseFireBurstDelayMax: 1
   - type: Gun
     showExamineText: false
     fireRate: 1 #just has to be fast enough to keep up with upgrades

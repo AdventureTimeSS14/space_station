@@ -1,0 +1,38 @@
+#NES шаттлы
+
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: NesSecurityShuttleConsoleCircuitboard
+  name: консоль управления шаттлом СБ
+  description: Плата консоли, используемая для постройки консоли управления СБ шаттлом.
+  components:
+    - type: ComputerBoard
+      prototype: NesComputerShuttleSecurity
+
+- type: entity
+  parent: BaseComputerShuttle
+  id: NesComputerShuttleSecurity
+  name: консоль управления СБ шаттлом
+  description: Управляйте СБ шаттлом не выходя из дома!
+  components:
+    - type: Sprite
+      layers:
+        - map: ["computerLayerBody"]
+          state: computer
+        - map: ["computerLayerKeyboard"]
+          state: generic_keyboard
+        - map: ["computerLayerScreen"]
+          state: shuttle
+        - map: ["computerLayerKeys"]
+          state: generic_keys
+    - type: DroneConsole
+      components:
+        - type: SecShuttle
+    - type: RadarConsole
+      maxRange: 300
+    - type: PointLight
+      radius: 1.5
+      energy: 1.6
+      color: "#c94242"
+    - type: Computer
+      board: NesSecurityShuttleConsoleCircuitboard
