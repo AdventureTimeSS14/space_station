@@ -1,74 +1,74 @@
 <Document>
-# Space Ninja
+# Космический ниндзя
 
-The Space Ninja is a ghost role randomly available mid-late game. If you pick it you will be given your gear, your objectives and the greeting.
+Космический ниндзя - это роль призрака, появляющаяся со случайным шансом в середине-конце раунда. Если вы её запросите, то получите ваше снаряжение, цели и приветствие.
 
-You are a ninja, but in space. The Spider Clan has sent you to the station to wreak all kinds of havoc, from bolting the armory open and killing the entire station to engaging in a slipping war with the clown and fighting in rage cages.
+Итак, вы – ниндзя, только космический. Клан Паука отправил вас на станцию, чтобы вы сеяли всевозможные разрушения: от взлома оружейной брига и уничтожения всей станции до скользкой битвы с клоуном и соревнований по бирпонгу. Самое главное - следуйте целям и не переборщите.
 
-# Equipment
+# Снаряжение
 
-You start with a microbomb implant, so if you get KIA or seppuku you will leave behind a nice crater and all your precious equipment is kept out of enemy hands.
+По умолчанию в вас установлен имплант микробомбы, поэтому, если вы были убиты в бою или желаете провести обряд сеппуку, у вас есть возможность оставить после себя маленький кратер от взрыва и предотвратить кражу вашего драгоценного снаряжения врагами.
 
-Your bag is full of tools for more subtle sabotage, along with a survival box if you need a snack.
+Ваша сумка набита инструментами для более тонкой работы по саботажу, а также аварийным запасом, если вам нужно перекусить.
 
-You have a jetpack and pinpointer that will let you find the station.
+Джетпак и пинпоинтер также поможет вам в поиске станции и вашей цели для подрыва (если таковая имеется).
 
-<GuideEntityEmbed Entity="PinpointerStation" Caption="station pinpointer"/>
+<GuideEntityEmbed Entity="PinpointerStation" Caption="Пинпоинтер"/>
 
-## Ninja Suit
+## Костюм космического ниндзя
 
-<GuideEntityEmbed Entity="ClothingOuterSuitSpaceNinja" Captain="ninja suit"/>
+<GuideEntityEmbed Entity="ClothingOuterSuitSpaceNinja" Captain="Костюм космического ниндзя"/>
 
-Your single most important item is your suit, without it none of your abilities would work.
-Your suit requires power to function, its internal battery can be replaced by clicking on it **with a better one**.
-You can see the current charge by examining the suit or in a sweet battery alert at the top right of your screen.
+Костюм - самый важный элемент вашей экипировки. Без него ни одна из имеющихся способностей не будет работать.
+Ему требуется энергия для работы, а батарея, находящаяся внутри, может быть заменена на более вместительную (сделать это можно, вынув старую батарею, и кликнуть новой по костюму)
+Узнать заряд батареи можно комбинацией клавиш Shift + ЛКМ или же по удобному индикатору в правой верхней части экрана.
 
-If you run out of power and need to recharge your battery, just use your gloves to drain an APC, substation or a SMES.
+Если энергия в костюме закончится, вам нужно будет зарядить его с помощью ваших перчаток, просто высосав энергию из ЛКП, подстанции или СМЭСа.
 
-## Ninja Gloves
+## Перчатки космического ниндзя
 
-<GuideEntityEmbed Entity="ClothingHandsGlovesSpaceNinja" Caption="ninja gloves"/>
+<GuideEntityEmbed Entity="ClothingHandsGlovesSpaceNinja" Caption="Перчатки космического ниндзя"/>
 
-These bad boys are your bread and butter.
+О, да, эти плохиши - ваш хлеб с маслом.
 
-They are insulated so you can nom on wires in peace. Obviously they block your fingerprints from being left on things you touch.
+Они полностью изолированы, так что можете спокойно хватать ими любые провода. И, конечно же, они не оставляют никаких отпечатков.
 
-You have an action to toggle gloves. When the gloves are turned on, they allow you to use special abilities, which are triggered by interacting with things with an empty hand and with combat mode disabled.
+Перчатки можно активировать. Когда вы это сделаете, вы сможете использовать специальные способности, которые сработают при пустых руках и отключенном боевом режиме.
 
-Your glove abilities include:
-- Emagging an unlimited number of doors.
-- Draining power from transformers such as APCs, substations or SMESes. The higher the voltage, the more efficient the draining is.
-- You can shock any mob, stunning and slightly damaging them.
-- You can download technologies from a R&D server for one of your objectives.
-- You can hack a communications console to call in a threat.
+В общем и целом, с помощью ваших перчаток вы можете:
+- Взломать бесконечное количество шлюзов.
+- Выкачать энергию из ЛКП, подстанций и СМЭСов. Чем выше вольтаж, тем больше энергии вы получите.
+- Ударить током любое существо, оглушив его и нанеся немного урона.
+- Украсть технологии с сервера РНД для выполнения одной из своих целей.
+- Взломать консоль связи мостика, чтобы призвать угрозу для станции, также выполнив цель.
 
-## Energy Katana
+## Энергетическая катана
 
-<GuideEntityEmbed Entity="EnergyKatana" Captain="energy katana"/>
+<GuideEntityEmbed Entity="EnergyKatana" Caption="Энергетическая катана"/>
 
-Deals a lot of damage and can be recalled at will, costing suit power proportional to the distance teleported.
-While in hand you can teleport to anywhere that you can see, meaning most doors and windows, but not past solid walls.
-This has a limited number of charges which regenerate slowly, so keep a charge or two spare incase you need a quick getaway.
+Катана наносит большое количество урона и может быть возвращена вам по команде, однако это будет стоить заряда батареи, пропорционального дистанции между вами.
+Удерживая энергокатану в руках, вы можете телепортироваться в любое место в поле вашего зрения, что означает пространства за дверьми и окнами, но никак не твёрдыми непрозрачными стенами.
+Эта способность имеет ограничение в три заряда, которые медленно восполняются, так что неплохо было бы иметь один или два про запас для экстренного побега.
 
-## Spider Clan Charge
+## Бомба клана Паука
 
-<GuideEntityEmbed Entity="SpiderCharge" Caption="spider clan charge"/>
+<GuideEntityEmbed Entity="SpiderCharge" Caption="Бомба клана Паука"/>
 
-A modified C-4 explosive, you start with this in your pocket. Creates a large explosion but must be armed in your target area.
-A random area on the map is selected for you to blow up, which is one of your objectives. It can't be activated manually, simply plant it on a wall or something.
-Can't be unstuck once planted.
+Это модифицированный заряд С-4, который по умолчанию будет лежать у вас в кармане. Он создаёт взрыв большой силы, но должен быть активирован в целевом месте станции.
+Точка минирования выбирается случайным образом и является одной из ваших целей. Чтобы её активировать, нужно поместить её на стену в нужном месте.
+Как только бомба заложена, она не может быть снята.
 
-## Ninja Shoes
+## Ботинки космического ниндзя
 
-Special noslips that make you go really fast.
-Energy not required.
+Специально созданные нескользящие ботинки, делающие вас очень быстрым.
+Не требуют энергии для работы.
 
-# Objectives
+# Цели
 
-- Download X research nodes: Use your gloves on an R&D server with a number of unlocked technologies
-- Doorjack X doors on the station: Use your gloves to emag a number of doors.
-- Detonate the spider clan charge: Plant your spider clan charge at a random location and watch it go boom.
-- Call in a threat: Use your gloves on a communications console.
-- Survive: Don't die.
+- Украдите N количество технологий: Используйте свои перчатки для взлома сервера РНД и выкачайте оттуда всё изученное.
+- Взломайте N количество дверей на станции: Используйте ваши перчатки для взлома дверей.
+- Взорвите Бомбу клана Паука: Установите бомбу Паука в целевой локации и ждите детонации. Помните, крутые парни не оборачиваются на взрывы.
+- Вызовите угрозу станции: Взломайте коммуникационную консоль мостика с помощью своих перчаток, чтобы вызвать неизвестную угрозу.
+- Выжить: Просто не умрите! Легко, верно? Верно?...
 
 </Document>
