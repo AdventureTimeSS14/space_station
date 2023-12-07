@@ -877,6 +877,16 @@
 #  - type: Clothing
 #    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_amerc.rsi
 
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformSchool
+  name: school uniform
+  description: Japan uniform fron Earth. It reminds me something...
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/uniform_school.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/uniform_school.rsi #спрайты от Умы
 
 #New Year
 - type: entity
@@ -938,3 +948,15 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/elf_costume.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/elf_costume.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformMonkeyHolidaySuit
+  name: monkey holiday costume
+  description: Holiday suit for monkeys.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/monkey_holiday_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/monkey_holiday_suit.rsi #спрайты от Умы

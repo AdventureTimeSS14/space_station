@@ -395,6 +395,18 @@
     sprite: ADT/Clothing/Head/Hats/beret_CentCom.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/beret_CentCom.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsAntenna
+  name: antennas
+  description: For better pilot synchronization.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/antennas.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/antennas.rsi #спрайты от Умы
+
 #New Year
 - type: entity
   parent: ClothingHeadBase
@@ -419,3 +431,30 @@
     sprite: ADT/Clothing/Head/Hats/hat_snow_maiden.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/hat_snow_maiden.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsMonkeyHoliday
+  name: monkey holiday hat
+  description: A holiday hat for monkeys.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/hat_monkey_holiday.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/hat_monkey_holiday.rsi #спрайты от Умы
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsCatHoliday
+  name: cat holiday hat
+  description: A holiday hat for cats.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/hat_cat_holiday.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/hat_cat_holiday.rsi #спрайты от Умы
+  - type: Tag
+    tags:
+    - CatWearable

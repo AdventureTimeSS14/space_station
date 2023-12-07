@@ -27,3 +27,6 @@
 
 - type: Tag
   id: ADTSparkler
+
+- type: Tag
+  id: CatWearable

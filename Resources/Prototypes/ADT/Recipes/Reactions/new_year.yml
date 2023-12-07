@@ -1,0 +1,43 @@
+- type: reaction
+  id: ADTChampagneMandarin
+  reactants:
+    Champagne:
+      amount: 2
+    ADTJuiceMandarin:
+      amount: 1
+  products:
+    ADTChampagneMandarin: 3
+
+- type: reaction
+  id: ADTMulledWineCold
+  reactants:
+    ADTСinnamon:
+      amount: 1
+    ADTCarnation:
+      amount: 2
+    JuiceLemon:
+      amount: 1
+    Wine:
+      amount: 2
+  products:
+    ADTMulledWineCold: 6
+
+- type: reaction
+  id: ADTMulledWine
+  minTemp: 353
+  reactants:
+    ADTMulledWineCold:
+      amount: 1
+  products:
+    ADTMulledWine: 1
+
+#технически не совсем приготовление напитка, но всё же
+- type: microwaveMealRecipe
+  id: RecipeMulledWineWarm
+  name: warm mulled wine recipe
+  result: ADTMulledWineGlass
+  time: 10
+  reagents:
+    ADTMulledWineCold: 30
+  solids:
+    DrinkGlass: 1

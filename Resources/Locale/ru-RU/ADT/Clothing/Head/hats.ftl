@@ -129,3 +129,12 @@ ent-ADTClothingHeadHatsElf = шапка Эльфа
 
 ent-ADTClothingHeadHatsSnowMaiden = шапка Снегурочки
     .desc = Яркая, голубая шапка на детский утренник.
+
+ent-ADTClothingHeadHatsAntenna = антенны
+    .desc = Две небольшие пиромидки, крепящиеся на голову.
+
+ent-ADTClothingHeadHatsMonkeyHoliday = праздичная шляпка мартышек
+    .desc = Праздинчная шляпка для мартышек.
+
+ent-ADTClothingHeadHatsCatHoliday = праздичная шляпка кошек
+    .desc = Праздничная шляпка для кошек.

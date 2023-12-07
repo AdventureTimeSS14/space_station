@@ -284,3 +284,9 @@ ent-ADTClothingUniformJumpsuitElf = костюм Эльфа
 
 ent-ADTClothingUniformSnowMaiden = костюм Снегурочки
     .desc = Костюм с юбкой помощницы Деда Мороза.
+
+ent-ADTClothingUniformSchool = школьная форма
+    .desc = Японская школьная форма с Земли. Что-то она напоминает...
+
+ent-ADTClothingUniformMonkeyHolidaySuit = праздничная одежда для мартышек
+    .desc = Праздничная одежда для мартышек!
