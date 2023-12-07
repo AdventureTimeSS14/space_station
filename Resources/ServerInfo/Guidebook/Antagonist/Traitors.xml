@@ -42,7 +42,7 @@
   - Сбегите на эвакуационном шаттле живым и свободным (не закованным в наручники).
   - Помогите случайно выбранному коллеге-предателю выполнить 2/3 своих целей.
   - Умрите славной смертью (Унесите с собой в могилу людей моментальным действием (Кроме тех, которые указаны в пункте правил 1 "Гриф". Если не уверены в своём плане, проконсультируйтесь с администрацией в АХелп.))
-  - Украдите [color=#a4885c]ID карту[/color] Капитана.
+  - Украдите [color=#a4885c]ID карту капитана[/color]
   <Box>
     <GuideEntityEmbed Entity="CaptainIDCard" Caption="ID карта капитана"/>
   </Box>
@@ -66,9 +66,17 @@
   <Box>
     <GuideEntityEmbed Entity="HandTeleporter" Caption="Ручной телепорт"/>
   </Box>
-  - Украдитк [color=#a4885c]Чрезвычайные приказы по безопасности[/color] Главы службы безопасности.
+  - Украдите [color=#a4885c]Чрезвычайные приказы по безопасности[/color] Главы службы безопасности.
   <Box>
     <GuideEntityEmbed Entity="BookSecretDocuments" Caption="Чрезвычайные приказы по безопасности"/>
+  </Box>
+    - Украдите [color=#a4885c]Х-01 Мультифазовый энергетический пистолет[/color] Главы службы безопасности.
+  <Box>
+    <GuideEntityEmbed Entity="ADTWeaponPistolX01" Caption="Х-01 Мультифазовый энергетический пистолет"/>
+  </Box>
+    - Украдите [color=#a4885c]ID карту главы персонала[/color].
+  <Box>
+    <GuideEntityEmbed Entity="HoPIDCard" Caption="ID карта главы персонала"/>
   </Box>
   - Украдите [color=#a4885c]Продвинутые магнитные сапоги[/color] Старшего инженера.
   <Box>
@@ -82,6 +90,10 @@
   <Box>
   <GuideEntityEmbed Entity="MobCorgiIan" Caption="Иан"/>
   <GuideEntityEmbed Entity="FoodMeatCorgi" Caption="Первосортное мясо корги"/>
+  </Box>
+  - Украдите [color=#a4885c]Портативный планшет заказов[/color] Квартирмейстера.
+  <Box>
+  <GuideEntityEmbed Entity="BoxFolderQmClipboard" Caption="Портативный планшет заказов"/>
   </Box>
 
 </Document>
