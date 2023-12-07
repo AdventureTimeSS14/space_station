@@ -43,7 +43,8 @@ public sealed partial class SayPostingSystem : EntitySystem
             // Make sure the messager time doesn't cut into the time to next incident.
             sayposting.NextOfTime += duration;
 
-            _chatManager.ChatMessageToAll(Shared.Chat.ChatChannel.IC, "Тест");
+            //тут ещё хз что писать
+            //_chatManager.ChatMessageToAll(Shared.Chat.ChatChannel IC, "Тест");
 
 
         }
