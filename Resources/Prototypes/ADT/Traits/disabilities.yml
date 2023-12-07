@@ -1,0 +1,9 @@
+- type: trait
+  id: ADTSayPosting
+  name: trait-narcolepsy-name
+  description: trait-narcolepsy-decs
+  components:
+    - type: SayPosting
+      timeDelaySayPosting: 30, 60
+      durationSayPosting: 10, 30
+
