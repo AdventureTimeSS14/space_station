@@ -1,4 +1,4 @@
-using Content.Shared.ADT.SayPosting;
+//using Content.Shared.ADT.SayPosting;
 using Content.Server.Chat.Managers;
 using Content.Shared.StatusEffect;
 using Robust.Shared.Random;
@@ -44,8 +44,8 @@ public sealed partial class SayPostingSystem : EntitySystem
             sayposting.NextOfTime += duration;
 
             //тут ещё хз что писать
-            //_chatManager.ChatMessageToAll(Shared.Chat.ChatChannel IC, "Тест");
-
+            //_chatManager.ChatMessageToAll(Shared.Chat.ChatChannel.IC, "Тест");
+            _chatManager.ChatMessageToAll(, "test");
 
         }
     }
