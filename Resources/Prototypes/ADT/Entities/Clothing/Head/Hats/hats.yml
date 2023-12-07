@@ -434,6 +434,28 @@
 
 - type: entity
   parent: ClothingHeadBase
+  id: ADTClothingHeadHornsDeer
+  name: deer horns
+  description: A horns of Santa's helpers.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/deer_horns.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/deer_horns.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatChristmas
+  name: christmas hat
+  description: A hat to celebrate christmas.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/hat_christmas.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/hat_christmas.rsi #спрайты от prazat911
+
   id: ADTClothingHeadHatsMonkeyHoliday
   name: monkey holiday hat
   description: A holiday hat for monkeys.
