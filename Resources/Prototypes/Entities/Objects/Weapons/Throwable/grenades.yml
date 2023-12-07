@@ -46,11 +46,11 @@
     canCreateVacuum: false
   - type: OnUseTimerTrigger
     beepSound:
-      path: "/Audio/MidiCustom/pustota.ogg"
+      path: "/Audio/ADT/Weapons/grenade-plonk-sound.ogg"
       params:
-        volume: 1
-    initialBeepDelay: 0
-    beepInterval: 2 # 2 beeps total (at 0 and 2)
+        volume: 10
+    initialBeepDelay: 1
+    beepInterval: 4 # 2 beeps total (at 0 and 2)
 
 - type: entity
   name: flashbang
