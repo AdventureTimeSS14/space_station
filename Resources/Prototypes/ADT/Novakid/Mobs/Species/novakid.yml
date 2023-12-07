@@ -12,6 +12,7 @@
     bloodReagent: Plasma
   - type: ZombieImmune
   - type: Thirst
+  - type: NovakidGlowing # see NovakidFeaturesSystem.cs
   - type: PointLight
     color: "#ffffff"
     energy: 0.6
