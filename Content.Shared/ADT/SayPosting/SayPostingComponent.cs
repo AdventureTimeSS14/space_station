@@ -1,6 +1,6 @@
 using System.Numerics;
 
-namespace Content.Shared.ADT
+namespace Content.Shared.ADT.SayPosting
 {
 
     [RegisterComponent, Access(typeof(SayPostingSystem))]
