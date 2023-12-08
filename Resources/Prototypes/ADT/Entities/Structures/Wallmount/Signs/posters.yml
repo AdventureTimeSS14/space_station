@@ -520,3 +520,18 @@
   - type: Sprite
     sprite: ADT/Objects/Decoration/pizzatime.rsi
     state: pizzatime
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterNewYear
+  name: "2568"
+  description: Poster that celebrates New Year on Earth.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_new_year.rsi #спрайты от yamato_no_orochi8
+    state: new_year
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#5469e6"

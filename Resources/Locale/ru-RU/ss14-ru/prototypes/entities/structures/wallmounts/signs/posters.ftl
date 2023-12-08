@@ -301,3 +301,6 @@ ent-ADTPosterContrabandLustArDeco = таяранское ар-деко
 
 ent-ADTPosterSingoPizza = пицца тайм!
     .desc = На плакате изображена сингулярность в виде пиццы.
+
+ent-ADTPosterNewYear = новый год
+    .desc = Плакат, напоминающий о смене Земного года.

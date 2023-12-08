@@ -163,4 +163,7 @@
       - ADTPosterLegitOktoberfest2 #спрайт от Празата
       - ADTPosterPassTheBanana #спрайт от Уолтера
       - ADTPosterSingoPizza
-    chance: 1
+    chance: 0.5
+    rarePrototypes: #временный прикол, который стоит потом убрать.
+      - ADTPosterNewYear
+    rareChance: 0.6

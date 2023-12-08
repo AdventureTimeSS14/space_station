@@ -1,0 +1,71 @@
+#Гвоздика
+- type: entity 
+  name: carnation
+  parent: FoodProduceBase
+  id: ADTFoodCarnation
+  description: Is that really IS a carnation?
+  suffix: New Year
+  components:
+  - type: FlavorProfile
+    flavors:
+      - savory
+  - type: Food
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: ADTCarnation
+          Quantity: 5
+  - type: Item
+    sprite: ADT/Objects/Consumable/Food/new-year/carnation.rsi
+    size: Tiny
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/new-year/carnation.rsi #спрайты от Умы.
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: ADTCarnation
+        Quantity: 5
+  - type: SolutionSpiker
+    sourceSolution: food
+    ignoreEmpty: true
+    popup: adt-spike-solution-put
+  - type: Appearance
+  - type: DeleteOnTrigger
+
+#Корица
+- type: entity 
+  name: cinnamon
+  parent: FoodProduceBase
+  id: ADTFoodCinnamon
+  description: Fragrant cinnamon sticks.
+  suffix: New Year
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+  - type: Food
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: ADTСinnamon
+          Quantity: 5
+  - type: Item
+    sprite: ADT/Objects/Consumable/Food/new-year/cinnamon.rsi
+    size: Tiny
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/new-year/cinnamon.rsi #спрайты от Умы.
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: ADTСinnamon
+        Quantity: 5
+  - type: SolutionSpiker
+    sourceSolution: food
+    ignoreEmpty: true
+    popup: adt-spike-solution-put
+  - type: Appearance
+  - type: DeleteOnTrigger
