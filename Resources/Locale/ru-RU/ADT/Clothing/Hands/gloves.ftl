@@ -40,3 +40,10 @@ ent-ADTClothingHandsGlovesMittensGreen = зеленые варежки
 
 ent-ADTClothingHandsGlovesSnowMaiden = перчатки Снегурочки
     .desc = Тёплые перчатки для зимней поры.
+
+ent-ADTClothingHandsGlovesMittensRedGreen = красные варежки
+    .desc = Красные варежки с зелёными полосками.
+ent-ADTClothingHandsGlovesRed = красные перчатки
+    .desc = Тёплые красные перчатки.
+ent-ADTClothingHandsGlovesRed2 = { ent-ADTClothingHandsGlovesRed }
+    .desc = { ent-ADTClothingHandsGlovesRed.desc}

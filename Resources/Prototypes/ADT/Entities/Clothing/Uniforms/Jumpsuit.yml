@@ -897,9 +897,9 @@
   suffix: New Year
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/sweater_beige.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_beige.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/sweater_beige.rsi #спрайты от dion_clawed
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_beige.rsi #спрайты от dion_clawed
 
 - type: entity
   parent: ClothingUniformBase
@@ -909,9 +909,9 @@
   suffix: New Year
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/sweater_blue.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_blue.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/sweater_blue.rsi #спрайты от dion_clawed
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_blue.rsi #спрайты от dion_clawed
 
 - type: entity
   parent: ClothingUniformBase
@@ -921,9 +921,9 @@
   suffix: New Year
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/sweater_red_dark.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_red_dark.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/sweater_red_dark.rsi #спрайты от dion_clawed
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_red_dark.rsi #спрайты от dion_clawed
 
 - type: entity
   parent: ClothingUniformBase
@@ -933,9 +933,9 @@
   suffix: New Year
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/sweater_red_white.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_red_white.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/sweater_red_white.rsi #спрайты от dion_clawed
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_red_white.rsi #спрайты от dion_clawed
 
 - type: entity
   parent: ClothingUniformBase
@@ -945,9 +945,9 @@
   suffix: New Year
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/elf_costume.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/elf_costume.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/elf_costume.rsi #спрайты от dion_clawed
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/elf_costume.rsi #спрайты от dion_clawed
 
 - type: entity
   parent: ClothingUniformBase
@@ -957,6 +957,78 @@
   suffix: New Year
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/monkey_holiday_suit.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/monkey_holiday_suit.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/monkey_holiday_suit.rsi #спрайты от Умы
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/monkey_holiday_suit.rsi #спрайты от Умы
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformRollNeckSnowman
+  name: snowman roll-neck
+  description: A roll-neck with a mister snowman!
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/roll-neck_snowman.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/roll-neck_snowman.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformShirtSpruce
+  name: shirt with a spruce
+  description: A grey shirt with a picture of a Christmas tree.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_spruce.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_spruce.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformShirtDeer
+  name: shirt with a deer
+  description: A green shirt with a picture of a deer.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_deer.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_deer.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitSweaterHoliday
+  name: holiday sweater
+  description: A green sweater with gift-like print.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_holiday.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_holiday.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformShirtSnowflake
+  name: shirt with a snowflake
+  description: A green shirt with a picture of a snowflake.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_snowflake.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_snowflake.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformShirtSnowman
+  name: shirt with a snowman
+  description: A red shirt with a picture of a snowman.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_snowman.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_snowman.rsi #спрайты от prazat911

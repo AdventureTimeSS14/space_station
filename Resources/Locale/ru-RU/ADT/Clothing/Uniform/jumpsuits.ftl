@@ -290,3 +290,16 @@ ent-ADTClothingUniformSchool = школьная форма
 
 ent-ADTClothingUniformMonkeyHolidaySuit = праздничная одежда для мартышек
     .desc = Праздничная одежда для мартышек!
+
+ent-ADTClothingUniformRollNeckSnowman = водолазка со снеговиком
+    .desc = Красная водолазка с Мистером Снеговиком!
+ent-ADTClothingUniformShirtSpruce = костюм с рисунком ёлки
+    .desc = Серый костюм с рисунком украшенной ёлкой.
+ent-ADTClothingUniformShirtDeer = костюм с рисунком оленя
+    .desc = Зелёный костюм с рисунком помощника Санты.
+ent-ADTClothingUniformJumpsuitSweaterHoliday = рождественский свитер
+    .desc = Зелёный свитер с полосами.
+ent-ADTClothingUniformShirtSnowflake = костюм с рисунком снежинок
+    .desc = Зелёный костюм с красивым рисунком красивого снегопада.
+ent-ADTClothingUniformShirtSnowman = костюм с рисунком снеговика
+    .desc = Красный костюм с рисунком простого снеговика.

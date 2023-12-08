@@ -172,3 +172,33 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Underwear/Socks/socks_red.rsi #Спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearSocksRedWhite
+  name: red socks with white stripe
+  description: Just a red socks.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Socks/socks_redwhite.rsi #Спрайты от prazat911
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearSocksFingerlessStripped
+  name: fingerless stripped socks
+  description: Socks for those, whose claws won't let them to warm legs.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Socks/socks_fingerless_stripped.rsi #Спрайты от prazat911
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearSocksStripped
+  name: stripped socks
+  description: A holiday stripped socks.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Socks/socks_stripped.rsi #Спрайты от prazat911

@@ -206,3 +206,14 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Underwear/lace_panties.rsi #спрайты от prazat911
+
+#New Year.
+- type: entity
+  parent: ClothingUnderwearBottomBase
+  id: ADTClothingUnderwearBottomChristmasPanties
+  name: christmas panties 
+  description: A questionable christmas underwear...
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/panties_christmas.rsi #спрайты от prazat911

@@ -416,9 +416,9 @@
   suffix: New Year
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Head/Hats/elf_hat.rsi
+    sprite: ADT/Clothing/Head/Hats/New-Year/elf_hat.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Head/Hats/elf_hat.rsi #спрайты от dion_clawed
+    sprite: ADT/Clothing/Head/Hats/New-Year/elf_hat.rsi #спрайты от dion_clawed
 
 - type: entity
   parent: ClothingHeadBase
@@ -428,9 +428,9 @@
   suffix: New Year
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Head/Hats/hat_snow_maiden.rsi
+    sprite: ADT/Clothing/Head/Hats/New-Year/hat_snow_maiden.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Head/Hats/hat_snow_maiden.rsi #спрайты от prazat911
+    sprite: ADT/Clothing/Head/Hats/New-Year/hat_snow_maiden.rsi #спрайты от prazat911
 
 - type: entity
   parent: ClothingHeadBase
@@ -440,9 +440,14 @@
   suffix: New Year
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Head/Hats/deer_horns.rsi
+    sprite: ADT/Clothing/Head/Hats/New-Year/deer_horns.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Head/Hats/deer_horns.rsi #спрайты от prazat911
+    sprite: ADT/Clothing/Head/Hats/New-Year/deer_horns.rsi #спрайты от prazat911
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+      - state: equipped-HELMET-linght
+        shader: unshaded
 
 - type: entity
   parent: ClothingHeadBase
@@ -452,19 +457,21 @@
   suffix: New Year
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Head/Hats/hat_christmas.rsi
+    sprite: ADT/Clothing/Head/Hats/New-Year/hat_christmas.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Head/Hats/hat_christmas.rsi #спрайты от prazat911
+    sprite: ADT/Clothing/Head/Hats/New-Year/hat_christmas.rsi #спрайты от prazat911
 
+- type: entity
+  parent: ClothingHeadBase
   id: ADTClothingHeadHatsMonkeyHoliday
   name: monkey holiday hat
   description: A holiday hat for monkeys.
   suffix: New Year
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Head/Hats/hat_monkey_holiday.rsi
+    sprite: ADT/Clothing/Head/Hats/New-Year/hat_monkey_holiday.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Head/Hats/hat_monkey_holiday.rsi #спрайты от Умы
+    sprite: ADT/Clothing/Head/Hats/New-Year/hat_monkey_holiday.rsi #спрайты от Умы
 
 - type: entity
   parent: ClothingHeadBase
@@ -474,9 +481,21 @@
   suffix: New Year
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Head/Hats/hat_cat_holiday.rsi
+    sprite: ADT/Clothing/Head/Hats/New-Year/hat_cat_holiday.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Head/Hats/hat_cat_holiday.rsi #спрайты от Умы
+    sprite: ADT/Clothing/Head/Hats/New-Year/hat_cat_holiday.rsi #спрайты от Умы
   - type: Tag
     tags:
     - CatWearable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadChristmasFlower
+  name: christmas flower
+  description: A flower on your head
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/New-Year/hat_flower.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/New-Year/hat_flower.rsi #спрайты от prazat911
