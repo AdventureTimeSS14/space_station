@@ -603,7 +603,7 @@
     state: brownsofa_right
   - type: Construction
     graph: Seat
-    node: adtsofabrownight
+    node: adtsofabrownright
 
 - type: entity
   name: brown sofa left side
