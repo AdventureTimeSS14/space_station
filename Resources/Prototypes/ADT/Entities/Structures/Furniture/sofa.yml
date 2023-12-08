@@ -466,7 +466,7 @@
     state: bluesofa_right
   - type: Construction
     graph: Seat
-    node: adtsofablueight
+    node: adtsofablueright
 
 - type: entity
   name: blue sofa left side
