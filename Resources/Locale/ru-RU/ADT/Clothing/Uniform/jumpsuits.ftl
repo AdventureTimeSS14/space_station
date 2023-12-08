@@ -271,6 +271,9 @@ ent-ADTClothingUniformJumpsuitLapkeeSet = тёмная охранная водо
     .desc = Возможно сделанная на заказ прочная, с явно имеющими место быть броневставками водолазка для тяжёлой работы в тяжёлых условиях дальнего космоса. От неё приятно веет мандаринками и военными преступлениями.
     .suffix = { "Именное, Lapkee" }
 
+ent-ADTClothingUniformNewMekka = униформа Новой Мекки
+    .desc = Эта униформа имеет очень долгую и  кровавую историю...
+
 ent-ADTClothingUniformJumpsuitSweaterHolidayBeige = бежевый свитер
     .desc = Этот свитер носит главная звезда праздника.
 ent-ADTClothingUniformJumpsuitSweaterHolidayBlue = синий свитер

@@ -123,7 +123,10 @@ ent-ADTClothingHeadHatDedMoroz = Колпак Деда Мороза
 ent-ADTClothingHeadHatRoga = Праздничные рога
     .desc = .
     .suffix = { "Новый Год" }
-    
+
+ent-ADTClothingHeadHatsBeretArmy = армейский берет
+    .desc = Потрёпанный на службе военный берет. Имеет золотую нашивку сбоку.
+
 ent-ADTClothingHeadHatsElf = шапка Эльфа
     .desc = Шапка настоящего трудяги с приклеенными ушками.
 

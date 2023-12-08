@@ -1,0 +1,57 @@
+#NES игрушки
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieVernio
+  name: Плюшевый Вернио
+  description: Персонаж старого комикса про Вернио и Арсению маршс, теперь в плюшевом формате.
+  components:
+  - type: Sprite
+    sprite: NES/Toys.rsi
+    state: VernioMrsh
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/Items/Toys/weh.ogg
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieArsenia
+  name: Плюшевая Арсения
+  description: Персонаж старого комикса про Вернио и Арсению маршс, теперь в плюшевом формате.
+  components:
+  - type: Sprite
+    sprite: NES/Toys.rsi
+    state: ArseniaPlush
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/Items/Toys/weh.ogg
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieAserovich
+  name: Плюшевый Асерович
+  description: Гандон.
+  components:
+  - type: Sprite
+    sprite: NES/Toys.rsi
+    state: Aserovich
