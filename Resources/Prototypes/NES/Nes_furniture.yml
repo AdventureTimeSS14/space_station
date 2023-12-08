@@ -85,7 +85,7 @@
       state: medcomp
     - map: ["computerLayerKeys"]
       state: med_key
-  - type: Fixtures
+ # - type: Fixtures
   - type: DeviceNetwork
     deviceNetId: Wireless
   - type: WirelessNetworkConnection
