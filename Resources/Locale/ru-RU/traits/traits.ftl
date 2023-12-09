@@ -23,4 +23,4 @@ trait-wheelchair-bound-desc = Вы не можете передвигаться 
 trait-frontal-lisp-name = Фронтальная шепелявость
 trait-frontal-lisp-desc = Вы говорите с шепелявостью
 trait-socialanxiety-name = Заикание
-trait-socialanxiety-desc = Вы беспокоитесь, когда говорите и заикаетесь.
+trait-socialanxiety-desc = Вы беспокоитесь, когда говорите и заикаетесь
