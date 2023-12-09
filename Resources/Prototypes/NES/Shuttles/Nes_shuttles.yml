@@ -145,7 +145,7 @@
   id: NesCombatEmitter
   name: тяжелый рельсотрон
   parent: ConstructibleMachine
-  description: Тяжелый рельсотрон, разгоняющий снаряд в своле до сверх скоростей. Снаряд будучи обычным стержнем на большой скорости может вызвать непоправимый ущерб противнику.
+  description: Тяжелый рельсотрон, разгоняющий снаряд в стволе до сверх скоростей. Снаряд будучи обычным стержнем на большой скорости может вызвать непоправимый ущерб.
   placement:
     mode: SnapgridCenter
   components:
@@ -181,7 +181,7 @@
       map: ["enum.StorageVisualLayers.Lock"]
   - type: Emitter
     boltType: BulletGrenadeFrag
-    baseFireBurstDelayMin: 8
+    baseFireBurstDelayMin: 10
     baseFireInterval: 0.8
     baseFireBurstDelayMax: 15
   - type: Gun
@@ -220,22 +220,10 @@
       - Toggle
 
 - type: entity
-  noSpawn: true
-  parent: BaseBullet
-  id: NesBulletRailgun
-  name: снаряд рельсотрона
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Piercing: 70
-        Structural: 10
-
-- type: entity
   id: NesCombatEmitterSmall
   name: рельсотрон
-  parent: NesCombatEmitter
-  description: Рельсотрон, разгоняющий снаряд в своле до сверх скоростей. Снаряд будучи обычным стержнем на большой скорости может повредить обшивку вражеского корабля.
+  parent: ConstructibleMachine
+  description: Рельсотрон, разгоняющий снаряд в стволе до сверх скоростей. Снаряд будучи обычным стержнем на большой скорости может повредить обшивку вражеского корабля.
   placement:
     mode: SnapgridCenter
   components:
@@ -296,6 +284,8 @@
   - type: Appearance
   - type: Lock
     locked: true
+  - type: AccessReader
+    access: [['Security']]
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: BasicDevice
