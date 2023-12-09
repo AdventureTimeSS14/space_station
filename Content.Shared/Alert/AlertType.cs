@@ -31,7 +31,6 @@ namespace Content.Shared.Alert
         Parched,
         Charge, // Parkstation-IPC
         Stamina,
-        ShadowkinPower,
         Pulled,
         Pulling,
         Magboots,
