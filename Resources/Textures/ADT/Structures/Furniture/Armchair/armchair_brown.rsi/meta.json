@@ -8,10 +8,12 @@
   },
   "states": [
     {
-      "name": "brownarmchair"
+        "name": "brownarmchair",
+        "directions": 4
     },
     {
-      "name": "brownarmchair_02"
+        "name": "brownarmchair_02",
+        "directions": 4
     }
   ]
 }

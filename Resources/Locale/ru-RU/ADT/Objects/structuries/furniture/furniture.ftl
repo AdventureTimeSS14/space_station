@@ -154,17 +154,20 @@ ent-ADTLeatherChair = кожаное кресло
 
 ent-ADTArmchairWhite = белое кресло
     .desc = Выглядит крайне комфортно.
+
 ent-ADTArmchairWhite2 = { ent-ADTArmchairWhite }
     .desc = { ent-ADTArmchairWhite.desc }
 
 ent-ADTArmchairBrown = коричневое кресло
     .desc = { ent-ADTArmchairWhite }
-ent-ADTArmchairBrown = { ent-ADTArmchairBrown }
+
+ent-ADTArmchairBrown2 = { ent-ADTArmchairBrown }
     .desc = { ent-ADTArmchairWhite.desc }
 
 ent-ADTArmchairBlue = синее кресло
     .desc = { ent-ADTArmchairWhite }
-ent-ADTArmchairBlue = { ent-ADTArmchairBlue }
+
+ent-ADTArmchairBlue2 = { ent-ADTArmchairBlue }
     .desc = { ent-ADTArmchairWhite.desc }
 
 ent-ADTChurchBenchLeftSide = церковная скамейка
