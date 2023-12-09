@@ -179,3 +179,9 @@ marking-HumanHairVeryshortovereyealternate = Очень короткая (Чер
 marking-HumanHairVlongfringe = Очень короткая (Чёлка)
 marking-HumanHairVolaju = Воладзю
 marking-HumanHairWisp = Пряди
+
+marking-ADTHumanHairClassicalBusiness = Деловая (классическая)
+marking-ADTHumanHairFloorlenghtBedhead = Небрежная (длинная, классическая)
+marking-ADTHumanHairClassicalBusiness2 = Деловая 2 (классическая)
+marking-ADTHumanHairClassicalBusiness3 = Деловая 3 (классическая)
+marking-ADTHumanHairClassicalBusiness4 = Деловая 4 (классическая)
