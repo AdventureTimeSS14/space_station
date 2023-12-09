@@ -2299,6 +2299,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: cat
+    - map: [ "head" ]
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -2313,7 +2314,7 @@
         - MobLayer
   - type: Inventory
     speciesId: cat
-    templateId: pet
+    templateId: adtcat
   - type: InventorySlots
   - type: Strippable
   - type: UserInterface

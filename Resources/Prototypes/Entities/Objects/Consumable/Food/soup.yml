@@ -609,9 +609,10 @@
     flavors:
       - slimy
   - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/sawdustsoup.rsi
     layers:
     - state: bowl
-    - state: slime
+    - state: sawdustsoup
   - type: SolutionContainerManager
     solutions:
       food:

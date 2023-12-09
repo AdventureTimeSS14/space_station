@@ -189,3 +189,8 @@
   id: adt_pumpkin
   flavorType: Base
   description: flavor-base-pumpkin
+
+- type: flavor
+  id: ADTSawdust
+  flavorType: Complex
+  description: flavor-complex-ADTSawdust

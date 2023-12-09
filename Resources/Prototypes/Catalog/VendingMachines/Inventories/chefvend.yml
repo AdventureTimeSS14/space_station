@@ -8,6 +8,7 @@
     ReagentContainerRice: 4
     ADTReagentContainerBuckwheat: 4
     ADTReagentContainerCocoaSolid: 4
+    ADTCarnationPack: 5 #Новый год
     FoodCondimentPacketSalt: 8
     FoodCondimentBottleEnzyme: 4
     FoodCondimentBottleHotsauce: 4

@@ -24,3 +24,9 @@
 
 - type: Tag
   id: Patch
+
+- type: Tag
+  id: ADTSparkler
+
+- type: Tag
+  id: CatWearable

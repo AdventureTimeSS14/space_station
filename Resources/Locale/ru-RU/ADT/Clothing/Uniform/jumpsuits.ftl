@@ -273,3 +273,36 @@ ent-ADTClothingUniformJumpsuitLapkeeSet = тёмная охранная водо
 
 ent-ADTClothingUniformNewMekka = униформа Новой Мекки
     .desc = Эта униформа имеет очень долгую и  кровавую историю...
+
+ent-ADTClothingUniformJumpsuitSweaterHolidayBeige = бежевый свитер
+    .desc = Этот свитер носит главная звезда праздника.
+ent-ADTClothingUniformJumpsuitSweaterHolidayBlue = синий свитер
+    .desc = Истинный скакун Санты изображен на этом теплом свитере.
+ent-ADTClothingUniformJumpsuitSweaterHolidayRedDark = красный праздничный свитер c черными штанами
+    .desc = Красная, теплая, яркая, праздничная и главное - стильная. Этим всё сказано
+ent-ADTClothingUniformJumpsuitSweaterHolidayRedWhite = красный праздничный свитер c белыми штанами
+    .desc = Красная, теплая, яркая, праздничная. Этим всё сказано
+ent-ADTClothingUniformJumpsuitElf = костюм Эльфа
+    .desc = Пахнет елью, досками,пихтой, а так же праздником.
+
+ent-ADTClothingUniformSnowMaiden = костюм Снегурочки
+    .desc = Костюм с юбкой помощницы Деда Мороза.
+
+ent-ADTClothingUniformSchool = школьная форма
+    .desc = Японская школьная форма с Земли. Что-то она напоминает...
+
+ent-ADTClothingUniformMonkeyHolidaySuit = праздничная одежда для мартышек
+    .desc = Праздничная одежда для мартышек!
+
+ent-ADTClothingUniformRollNeckSnowman = водолазка со снеговиком
+    .desc = Красная водолазка с Мистером Снеговиком!
+ent-ADTClothingUniformShirtSpruce = костюм с рисунком ёлки
+    .desc = Серый костюм с рисунком украшенной ёлкой.
+ent-ADTClothingUniformShirtDeer = костюм с рисунком оленя
+    .desc = Зелёный костюм с рисунком помощника Санты.
+ent-ADTClothingUniformJumpsuitSweaterHoliday = рождественский свитер
+    .desc = Зелёный свитер с полосами.
+ent-ADTClothingUniformShirtSnowflake = костюм с рисунком снежинок
+    .desc = Зелёный костюм с красивым рисунком красивого снегопада.
+ent-ADTClothingUniformShirtSnowman = костюм с рисунком снеговика
+    .desc = Красный костюм с рисунком простого снеговика.

@@ -1,0 +1,56 @@
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTMulledWineGlass
+  name: mulled-wine-name
+  description: mulled-wine-desc
+  suffix: New Year
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTMulledWine
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: mulled_wine
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTMulledWineColdGlass
+  name: mulled-wine-cold-name
+  description: mulled-wine-cold-desc
+  suffix: New Year
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTMulledWineCold
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: mulled_wine_cold
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTChampagneMandarinGlass
+  name: champagne-mandarin-name
+  description: champagne-mandarin-desc
+  suffix: New Year
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTChampagneMandarin
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: champagne_mandarin

@@ -17,6 +17,7 @@
   - type: ApcPowerReceiver
     powerLoad: 0 # off by default
   - type: EntityHeater
+  - type: SolutionHeater #логично должно быть, что гриль подогревает и жидкости.
   - type: ItemPlacer
     maxEntities: 4 # big grill, many steaks
     whitelist:
