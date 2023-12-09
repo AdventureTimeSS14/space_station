@@ -1,44 +1,44 @@
-- type: trait
-  id: ColorBlindnessMonochrome
-  name: trait-monochromacy-name
-  description: trait-monochromacy-description
-  cost: 2
-  category: Negative
-  components:
-    - type: Monochromacy
+#- type: trait
+#  id: ColorBlindnessMonochrome
+#  name: trait-monochromacy-name
+#  description: trait-monochromacy-description
+#  cost: 2
+#  category: Negative
+#  components:
+#    - type: Monochromacy
 
-- type: trait
-  id: Nearsighted
-  name: trait-nearsighted-name
-  description: trait-nearsighted-description
-  cost: 3
-  category: Negative
-  components:
-    - type: Nearsighted
+#- type: trait
+#  id: Nearsighted
+#  name: trait-nearsighted-name
+#  description: trait-nearsighted-description
+#  cost: 3
+#  category: Negative
+#  components:
+#    - type: Nearsighted
 
-- type: trait
-  id: FakeMime
-  name: trait-mute-name
-  description: trait-mute-description
-  cost: 4
-  category: Negative
-  blacklist:
-    components:
-      - MimePowers
-  components:
-    - type: MuteTrait
+#- type: trait
+#  id: FakeMime
+#  name: trait-mute-name
+#  description: trait-mute-description
+#  cost: 4
+#  category: Negative
+#  blacklist:
+#    components:
+#      - MimePowers
+#  components:
+#    - type: MuteTrait
 
-- type: trait
-  id: Ageusia
-  name: trait-ageusia-name
-  description: trait-ageusia-description
-  cost: 1
-  category: Negative
-  blacklist:
-    species:
-      - IPC
-  components:
-    - type: Ageusia
+#- type: trait
+#  id: Ageusia
+#  name: trait-ageusia-name
+#  description: trait-ageusia-description
+#  cost: 1
+#  category: Negative
+#  blacklist:
+#    species:
+#      - IPC
+#  components:
+#    - type: Ageusia
 
 # Me when chat shitcode
 # - type: trait

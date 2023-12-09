@@ -44,6 +44,7 @@
     protectionTime: 12
   - type: Battery
     maxCharge: 150000
+    startingCharge: 150000
   - type: Silicon
     entityType: enum.SiliconType.Player
     batteryPowered: true
@@ -65,9 +66,9 @@
   - type: ActiveRadio
   - type: IntrinsicRadioReceiver
   - type: IntrinsicRadioTransmitter
-  - type: Wires
-    BoardName: "IPC"
-    LayoutId: IPC
+  #- type: Wires
+  #  BoardName: "IPC"
+  #  LayoutId: IPC
   - type: SSDIndicator
 
 - type: entity
