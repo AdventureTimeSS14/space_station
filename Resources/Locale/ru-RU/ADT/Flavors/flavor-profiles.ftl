@@ -31,6 +31,11 @@ flavor-complex-ADTBuckwheat = как гречневая каша
 
 flavor-base-adtpoppy = маково
 flavor-base-adtvanilla = ванильно
+flavor-base-holiday = празднично
+
+flavor-complex-milkshake = как приятный милкшейк
+flavor-complex-tea-cimmanon-lemon = как горячий кисло-сладкий чай 
+flavor-complex-sbiten-cimmanon-lemon = как кисло-сладкий, немного крепкий мёд
 
 flavor-complex-goldenale = как эль, золото и исцеление
 flavor-complex-sausagebeer = как хмель, солод и колбаска

@@ -189,3 +189,24 @@
   id: adt_pumpkin
   flavorType: Base
   description: flavor-base-pumpkin
+
+#New Year
+- type: flavor
+  id: ADTHoliday
+  flavorType: Base
+  description: flavor-base-holiday
+
+- type: flavor
+  id: ADTMilkshake
+  flavorType: Complex
+  description: flavor-complex-milkshake
+
+- type: flavor
+  id: ADTTeaCinnamonLemon
+  flavorType: Complex
+  description: flavor-complex-tea-cimmanon-lemon
+  
+- type: flavor
+  id: ADTSbitenCinnamonLemon
+  flavorType: Complex
+  description: flavor-complex-sbiten-cimmanon-lemon

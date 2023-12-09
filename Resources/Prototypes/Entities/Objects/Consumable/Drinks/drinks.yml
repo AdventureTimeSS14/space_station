@@ -76,6 +76,17 @@
       Glass: 25
   - type: ExaminableSolution
     solution: drink
+  # нужно для того, чтобы стекло лопалось.
+  - type: AtmosExposed
+  - type: Construction
+    graph: DrinkBurst
+    node: start
+  - type: Temperature
+    currentTemperature: 290
+  - type: InternalTemperature
+    thickness: 0.02
+    area: 0.02
+    conductivity: 0.43
 
 # Transformable container - normal glass
 - type: entity
@@ -107,6 +118,9 @@
       sprite: Objects/Consumable/Drinks/glass_clear.rsi
       state: icon
   - type: TransformableContainer
+  - type: Construction
+    graph: DrinkBurst
+    node: start
 
 - type: entity
   name: Coupe glass

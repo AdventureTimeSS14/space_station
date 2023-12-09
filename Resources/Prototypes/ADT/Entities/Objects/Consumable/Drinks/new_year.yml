@@ -1,5 +1,5 @@
 - type: entity
-  parent: DrinkGlassBase
+  parent: DrinkGlass
   id: ADTMulledWineGlass
   name: mulled-wine-name
   description: mulled-wine-desc
@@ -13,9 +13,6 @@
         reagents:
         - ReagentId: ADTMulledWine
           Quantity: 30
-  - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
-    state: mulled_wine
 
 - type: entity
   parent: DrinkGlassBase

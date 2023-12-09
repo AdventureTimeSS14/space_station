@@ -23,6 +23,7 @@
     whitelist:
       components:
       - Temperature
+      - FitsInDispenser
   - type: PlaceableSurface
   - type: Machine
     board: ElectricGrillMachineCircuitboard
