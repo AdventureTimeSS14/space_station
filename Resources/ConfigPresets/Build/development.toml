@@ -19,10 +19,10 @@ preload = false
 expedition_cooldown = 30.0
 
 [shuttle]
-grid_fill = true
+grid_fill = false
 auto_call_time = 0
 emergency = false
-arrivals = true
+arrivals = false
 
 [admin]
 see_own_notes = true

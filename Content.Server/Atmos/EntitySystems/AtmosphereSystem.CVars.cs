@@ -30,7 +30,7 @@ namespace Content.Server.Atmos.EntitySystems
         /// instead of this value, because atmos devices do not update each are sub-update and sometimes are skipped to
         /// meet the tick deadline.
         /// </summary>
-        public float AtmosTime => 1f / AtmosTickRate;
+        public float AtmosTime => 0.2f / AtmosTickRate;
 
         private void InitializeCVars()
         {
