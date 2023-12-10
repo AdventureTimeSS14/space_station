@@ -3,7 +3,7 @@
 - type: entity
   parent: BasePlushie
   id: PlushieVernio
-  name: Плюшевый Вернио
+  name: плюшевый Вернио
   description: Персонаж старого комикса про Вернио и Арсению маршс, теперь в плюшевом формате.
   components:
   - type: Sprite
@@ -26,7 +26,7 @@
 - type: entity
   parent: BasePlushie
   id: PlushieArsenia
-  name: Плюшевая Арсения
+  name: плюшевая Арсения
   description: Персонаж старого комикса про Вернио и Арсению маршс, теперь в плюшевом формате.
   components:
   - type: Sprite
@@ -49,9 +49,19 @@
 - type: entity
   parent: BasePlushie
   id: PlushieAserovich
-  name: Плюшевый Асерович
+  name: плюшевый Асерович
   description: Гандон.
   components:
   - type: Sprite
     sprite: NES/Toys.rsi
     state: Aserovich
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieShadowkin
+  name: плюшевый Сумеречник
+  description: Игрушка сумеречника в странной обтягивающей одежде и очками.
+  components:
+  - type: Sprite
+    sprite: NES/Toys.rsi
+    state: Shadowkin
