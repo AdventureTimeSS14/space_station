@@ -19,6 +19,13 @@
     - type: Clickable
     - type: Damageable
       damageContainer: Inorganic # Note that for dumb reasons, this essentially makes them a wall.
+    - type: PassiveDamage # Slight passive regen. Костыль.
+      allowedStates:
+      - Critical
+      damageCap: 20
+      damage:
+        groups:
+          Brute: 0.01
     # - type: Bloodstream # This is left commented out because it's not necessary for a robot, but you may want it.
     #   bloodReagent: MotorOil
     #   bloodlossDamage:
@@ -171,6 +178,7 @@
         - map: ["pocket1"]
         - map: ["pocket2"]
         - map: ["enum.HumanoidVisualLayers.Tail"]
+        #- map: ["enum.HumanoidVisualLayers.Wings"]
         - map: ["clownedon"] # Dynamically generated
           sprite: "Effects/creampie.rsi"
           state: "creampie_human"
