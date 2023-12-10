@@ -1048,10 +1048,11 @@
   price: 0.05
 
 
- - type: stack
-   id: Paper1
-   name: Paper
-   icon: { sprite: Objects/Misc/bureaucracy.rsi, state: paper }
-   spawn: Paper
-   maxCount: 1
-   itemSize: 1
+# Стак бумаги.
+- type: stack
+  id: Paper1
+  name: paper
+  icon: { sprite: Objects/Misc/bureaucracy.rsi, state: paper }
+  spawn: Paper
+  maxCount: 1
+  itemSize: 1
