@@ -56,6 +56,13 @@
               max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      SheetPrinter: 100
+  - type: Stack
+    stackType: ADTPaper
+    count: 1
 
 - type: entity
   name: office paper
