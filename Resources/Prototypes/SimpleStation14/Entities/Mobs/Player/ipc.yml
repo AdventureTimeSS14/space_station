@@ -66,9 +66,9 @@
   - type: ActiveRadio
   - type: IntrinsicRadioReceiver
   - type: IntrinsicRadioTransmitter
-  #- type: Wires
-  #  BoardName: "IPC"
-  #  LayoutId: IPC
+  - type: Wires
+    boardName: "IPC"
+    layoutId: IPC
   - type: SSDIndicator
 
 - type: entity
