@@ -118,9 +118,6 @@
       sprite: Objects/Consumable/Drinks/glass_clear.rsi
       state: icon
   - type: TransformableContainer
-  - type: Construction
-    graph: DrinkBurst
-    node: start
 
 - type: entity
   name: Coupe glass

@@ -27,3 +27,6 @@ reagent-desc-hot-cocoa = Вкуснейший какао с зефиром.
 
 reagent-name-hot-chocolate = горячий шоколад
 reagent-desc-hot-chocolate = Смотри, не обожги губы.
+
+reagent-name-hot-chocolate-allergic = гипоаллергенный горячий шоколад
+reagent-desc-hot-chocolate-allergic = Вкус хуже, чем у обычного, но не опасен для некоторых рас.

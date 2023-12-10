@@ -22,3 +22,5 @@
           Quantity: 8
         - ReagentId: CocoaPowder
           Quantity: 1
+  - type: Extractable
+    grindableSolutionName: food

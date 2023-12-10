@@ -15,7 +15,7 @@
           Quantity: 30
 
 - type: entity
-  parent: DrinkGlassBase
+  parent: DrinkGlass
   id: ADTMulledWineColdGlass
   name: mulled-wine-cold-name
   description: mulled-wine-cold-desc
@@ -34,7 +34,7 @@
     state: mulled_wine_cold
 
 - type: entity
-  parent: DrinkGlassBase
+  parent: DrinkGlass
   id: ADTChampagneMandarinGlass
   name: champagne-mandarin-name
   description: champagne-mandarin-desc
@@ -51,3 +51,117 @@
   - type: Sprite
     sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
     state: champagne_mandarin
+
+- type: entity
+  parent: DrinkGlass
+  id: ADTChristmasMilkshakeGlass
+  name: christmas-milkshake-name
+  description: christmas-milkshake-desc
+  suffix: New Year
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTChristmasMilkshake
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: christmas_milkshake
+
+- type: entity
+  parent: DrinkGlass
+  id: ADTTeaCinnamonLemonGlass
+  name: tea-cinnamon-lemon-name
+  description: tea-cinnamon-lemon-desc
+  suffix: New Year
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTTeaCinnamonLemon
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: warm_tea_cinnamon_lemon
+
+- type: entity
+  parent: DrinkGlass
+  id: ADTSbitenCinnamonLemonGlass
+  name: sbiten-cinnamon-lemon-name
+  description: sbiten-cinnamon-lemon-desc
+  suffix: New Year
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTSbitenCinnamonLemon
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: sbiten_cinnamon_lemon
+
+- type: entity
+  parent: DrinkGlass
+  id: ADTHotCocoaGlass
+  name: hot-cocoa-name
+  description: hot-cocoa-desc
+  suffix: New Year
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTHotCocoa
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: hot_cocoa
+
+- type: entity
+  parent: DrinkGlass
+  id: ADTHotChocolateGlass
+  name: hot-chocolate-name
+  description: hot-chocolate-desc
+  suffix: New Year
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTHotChocolate
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: hot_chocolate
+
+- type: entity
+  parent: DrinkGlass
+  id: ADTHotChocolateAllergicGlass
+  name: hot-chocolate-name-allergic
+  description: hot-chocolate-desc-allergic
+  suffix: New Year
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTHotChocolateAllergic
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: hot_chocolate

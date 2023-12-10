@@ -96,6 +96,17 @@
   products:
     ADTHotChocolate: 15
 
+- type: reaction
+  id: ADTHotChocolateAllergic
+  minTemp: 373
+  reactants:
+    Nutriment:
+      amount: 8
+    CocoaPowder:
+       amount: 1 #просто перемолотая плитка гипо-шоколада.
+  products:
+    ADTHotChocolateAllergic: 10
+
 #технически не совсем приготовление напитка, но всё же
 - type: microwaveMealRecipe
   id: RecipeMulledWineWarm
@@ -118,20 +129,57 @@
     ADTMulledWineGlass: 1 #Костыли, но по-другому я никак не могу придумать.
 
 - type: microwaveMealRecipe
-  id: RecipeADTHotChocolate2
+  id: RecipeADTHotChocolate
   name: hot chocolate recipe
   result: ADTHotChocolateGlass
   time: 10
   solids:
     DrinkGlass: 1
-    FoodSnackChocolateBar: 1
+    FoodSnackChocolateBar: 2
 
 - type: microwaveMealRecipe
-  id: RecipeADTHotCocoa2
+  id: RecipeADTHotChocolate2
+  name: hot chocolate recipe
+  result: ADTHotChocolateGlass
+  time: 10
+  solids:
+    ADTHotChocolateGlass: 1
+    FoodSnackChocolateBar: 2
+
+- type: microwaveMealRecipe
+  id: RecipeADTHotChocolate
+  name: hot hypoallergen chocolate recipe
+  result: ADTHotChocolateAllergicGlass
+  time: 10
+  solids:
+    DrinkGlass: 1
+    ADTHypoAllergenChocolateBar: 2
+
+- type: microwaveMealRecipe
+  id: RecipeADTHotChocolate2
+  name: hot hypoallergen chocolate recipe
+  result: ADTHotChocolateAllergicGlass
+  time: 10
+  solids:
+    ADTHotChocolateAllergicGlass: 1
+    ADTHypoAllergenChocolateBar: 2
+
+- type: microwaveMealRecipe
+  id: RecipeADTHotCocoa
   name: hot cocoa recipe
-  result: ADTMulledWineGlass
+  result: ADTHotCocoaGlass
   time: 10
   reagents:
     ADTCocoaDrink: 30
   solids:
     DrinkGlass: 1
+
+- type: microwaveMealRecipe
+  id: RecipeADTHotCocoa2
+  name: hot cocoa recipe
+  result: ADTHotCocoaGlass
+  time: 10
+  reagents:
+    ADTCocoaDrink: 30
+  solids:
+    ADTHotCocoaGlass: 1

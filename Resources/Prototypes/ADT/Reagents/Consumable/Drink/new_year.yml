@@ -59,7 +59,7 @@
 - type: reagent
   id: ADTSbitenCinnamonLemon
   name: reagent-name-sbiten-cinnamon-lemon
-  parent: BaseDrink
+  parent: BaseAlcohol
   desc: reagent-desc-sbiten-cinnamon-lemon
   physicalDesc: reagent-physical-desc-aromatic
   flavor: ADTSbitenCinnamonLemon
@@ -85,6 +85,26 @@
   name: reagent-name-hot-chocolate
   parent: BaseDrink
   desc: reagent-desc-hot-chocolate
+  physicalDesc: reagent-physical-desc-aromatic
+  flavor: ADTChocolateDrinkFlavor 
+  color: "#9c9289"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: hot_chocolate
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Theobromine
+        amount: 0.05
+
+- type: reagent
+  id: ADTHotChocolateAllergic
+  name: reagent-name-hot-chocolate-allergic
+  parent: BaseDrink
+  desc: reagent-desc-hot-chocolate-allergic
   physicalDesc: reagent-physical-desc-aromatic
   flavor: ADTChocolateDrinkFlavor 
   color: "#9c9289"
