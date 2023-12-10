@@ -29,6 +29,9 @@
         "name": "blue_flag"
     },
     {
+      "name": "FederationFlag"
+    },
+    {
         "name": "acorp_flag"
     }
   ]
