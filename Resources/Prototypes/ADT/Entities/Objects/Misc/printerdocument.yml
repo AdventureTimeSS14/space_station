@@ -1052,6 +1052,6 @@
   id: ADTPaper
   name: paper
   icon: { sprite: Objects/Misc/bureaucracy.rsi, state: paper }
-  spawn: ADTAntibioticOintment
+  spawn: Paper
   maxCount: 1
   itemSize: 1
