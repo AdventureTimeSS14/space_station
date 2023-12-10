@@ -145,7 +145,7 @@
   id: NesCombatEmitter
   name: тяжелый рельсотрон
   parent: ConstructibleMachine
-  description: Тяжелый рельсотрон, разгоняющий снаряд в своле до сверх скоростей. Снаряд будучи обычным стержнем на большой скорости может вызвать непоправимый ущерб противнику.
+  description: Тяжелый рельсотрон, разгоняющий снаряд в стволе до сверх скоростей. Снаряд будучи обычным стержнем на большой скорости может вызвать непоправимый ущерб.
   placement:
     mode: SnapgridCenter
   components:
@@ -168,7 +168,7 @@
   - type: Transform
     anchored: true
   - type: Sprite
-    sprite: Structures/Power/Generation/Singularity/emitter.rsi
+    sprite: NES/Railguns/railgun.rsi
     layers:
     - state: emitter # Corvax-Resprite
     - state: beam
@@ -181,7 +181,7 @@
       map: ["enum.StorageVisualLayers.Lock"]
   - type: Emitter
     boltType: BulletGrenadeFrag
-    baseFireBurstDelayMin: 8
+    baseFireBurstDelayMin: 10
     baseFireInterval: 0.8
     baseFireBurstDelayMax: 15
   - type: Gun
@@ -205,7 +205,9 @@
   - type: Rotatable
   - type: Appearance
   - type: Lock
-    locked: false
+    locked: true
+  - type: AccessReader
+    access: [['Security']]
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: BasicDevice
@@ -217,12 +219,11 @@
       - Off
       - Toggle
 
-
 - type: entity
   id: NesCombatEmitterSmall
   name: рельсотрон
   parent: ConstructibleMachine
-  description: Рельсотрон, разгоняющий снаряд в своле до сверх скоростей. Снаряд будучи обычным стержнем на большой скорости может повредить обшивку вражеского корабля.
+  description: Рельсотрон, разгоняющий снаряд в стволе до сверх скоростей. Снаряд будучи обычным стержнем на большой скорости может повредить обшивку вражеского корабля.
   placement:
     mode: SnapgridCenter
   components:
@@ -245,7 +246,7 @@
   - type: Transform
     anchored: true
   - type: Sprite
-    sprite: Structures/Power/Generation/Singularity/emitter.rsi
+    sprite: NES/Railguns/railgun.rsi
     layers:
     - state: emitter # Corvax-Resprite
     - state: beam
@@ -257,7 +258,7 @@
 #      visible: false # Corvax-Resprite
       map: ["enum.StorageVisualLayers.Lock"]
   - type: Emitter
-    boltType: BulletAntiMateriel
+    boltType: NesBulletRailgun
     baseFireBurstDelayMin: 1
     baseFireInterval: 0.5
     baseFireBurstDelayMax: 1
@@ -282,7 +283,9 @@
   - type: Rotatable
   - type: Appearance
   - type: Lock
-    locked: false
+    locked: true
+  - type: AccessReader
+    access: [['Security']]
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: BasicDevice

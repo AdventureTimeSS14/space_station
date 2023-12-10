@@ -2,7 +2,7 @@
   save: false
   parent: BaseMobHuman
   id: MobShadowkin
-  name: Urist McFloof
+  name: УристМак Сумеречник
   components:
   - type: HumanoidAppearance
     species: Shadowkin
@@ -89,9 +89,9 @@
         Piercing: 1
   - type: Vocal
     sounds:
-      Male: MaleSlime
-      Female: FemaleSlime
-      Unsexed: MaleSlime
+      Male: MaleHuman
+      Female: FemaleHuman
+      Unsexed: MaleHuman
   - type: CombatMode
     canDisarm: true
   - type: MindContainer

@@ -1,0 +1,11 @@
+- type: entity
+  noSpawn: true
+  parent: BaseBullet
+  id: NesBulletRailgun
+  name: снаряд рельсотрона
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 70
+        Structural: 10
