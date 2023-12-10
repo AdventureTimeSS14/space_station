@@ -439,6 +439,8 @@
     - type: Strap
       buckleOffset: "0,0"
       maxBuckleDistance: 1
+    - type: StaticPrice
+      price: 150
     - type: Fixtures
       fixtures:
         fix1:
@@ -459,3 +461,5 @@
   components:
     - type: Foldable
       folded: true
+    - type: StaticPrice
+      price: 150

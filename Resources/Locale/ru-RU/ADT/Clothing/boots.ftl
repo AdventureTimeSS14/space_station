@@ -45,3 +45,16 @@ ent-ADTClothingFootWhiteSandals = белые сандали
 
 ent-ADTClothingFootBlackBoots = чёрные сапоги
     .desc = В них удобно бегать хулиганам!
+
+ent-ADTClothingFootLapkeeSet = тактические кроссовки
+    .desc = Тяжёлая и увесистая обувь, которой и убить не трудно - доработанная чьими то хитрыми лапками пара кроссовок с выпрямленными носками, уплотненной подошвой и повышенной эргономикой. Прекрасно давит клоунов. 
+    .suffix = { "Именное, Lapkee" }
+
+ent-ADTClothingFootNewMekkaBoots = сапоги Новой Мекки
+    .desc = Явно потрёпанные сапоги, в которых прошли уж точно не одну милю.
+
+ent-ADTClothingFootElfBoots = сапоги Эльфа
+    .desc = Теплая обувь для работы в домике на севере!
+
+ent-ADTClothingFootBootsSnowMaiden = сапоги Снегурочки
+    .desc = Сапоги внучки Деда Мороза.

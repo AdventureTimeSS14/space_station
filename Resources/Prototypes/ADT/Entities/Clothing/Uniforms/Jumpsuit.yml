@@ -635,3 +635,417 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/red_plaid_shirt.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/red_plaid_shirt.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitOldDarkSuit
+  name: old dark suit
+  description: The label is visible on it... it seems that someone overwritten the inscription on it "It seems you really like the letter X ..."
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/old_dark.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/old_dark.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitLapkeeSet
+  name: dark security turtleneck
+  description: Perhaps a custom-made durable turtleneck, with obviously having a place to be armored, for heavy work in the harsh conditions of deep space. She smells pleasantly of tangerines and war crimes.
+  suffix: Personal, Lapkee
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/lapkee_turtleneck.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/lapkee_turtleneck.rsi
+  - type: TemperatureProtection
+    coefficient: 0.1
+  - type: Armor #лёгкая защита по 5-10% от всякой ерунды, оправдано описанием
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+        Cold: 0.95
+        Shock: 0.95
+
+# Водолазки. От prazat911, конечно же.
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformTurtleneckAquamarine
+  name: aquamarine turtleneck
+  description: Too bright!
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_aquamarine.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_aquamarine.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformTurtleneckWhite
+  name: white turtleneck
+  description: Warm and comfy.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_white.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_white.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformTurtleneckAzure
+  name: azure turtleneck
+  description: Brighter shade of blue.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_azure.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_azure.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformTurtleneckYellow
+  name: yellow turtleneck
+  description: Filled with happines.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_yellow.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_yellow.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformTurtleneckGreen
+  name: green turtleneck
+  description: Cheaper analog of CentComm turtleneck.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_green.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_green.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformTurtleneckBrown
+  name: brown turtleneck
+  description: -Ya know why i wear red? It hides blood well! -But that's brown color...
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_brown.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_brown.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformTurtleneckRed
+  name: red turtleneck
+  description: Hides blood of clowns well!
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_red.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_red.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformTurtleneckOrange
+  name: orange turtleneck
+  description: I don't want to talk about it.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_orange.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_orange.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformTurtleneckPink
+  name: pink turtleneck
+  description: Who would wear this?
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_pink.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_pink.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformTurtleneckGrey
+  name: grey turtleneck
+  description: Grey style?
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_grey.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_grey.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformTurtleneckBlue
+  name: blue turtleneck
+  description: Darker shade of azure.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_blue.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_blue.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformTurtleneckPurple
+  name: purple turtleneck
+  description: Feel yourself like a real scientist.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_purple.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_purple.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformTurtleneckBlack
+  name: black turtleneck
+  description: Favourite clothes of bookworms.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_black.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_black.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformTurleneckBlackSleeveless
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_blacksleeveless.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_blacksleeveless.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformTurleneckWhiteSleeveless
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_whitesleeveless.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_whitesleeveless.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformTurleneckWhiteBlackSleeveless
+  name: ancient jumpsuit
+  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_whiteblacksleeveless.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_whiteblacksleeveless.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformNewMekka
+  name: New Mekka jumpsuit
+  description: New Mekka jumpsuit
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/newmekkauniform.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/newmekkauniform.rsi
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Piercing: 0.8
+        Heat: 0.9
+
+#далее идут водолазки, которые Празат попросил вырезать на время их доделывания. Потом их переделать и закинуть по йамлам.
+#- type: entity
+#  parent: ClothingUniformBase
+#  id: ADTClothingUniformTurleneckTactick
+#  name: ancient jumpsuit
+#  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+#  components:
+#  - type: Sprite
+#    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_tactick.rsi
+#  - type: Clothing
+#    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_tactick.rsi
+#  - type: Armor
+#    modifiers:
+#      coefficients:
+#        Blunt: 0.8
+#        Slash: 0.9
+#        Piercing: 0.85
+#        Heat: 0.8
+
+#- type: entity
+#  parent: ClothingUniformBase
+#  id: ADTClothingUniformTurleneckAmerc
+#  name: ancient jumpsuit
+#  description: A terribly ragged and frayed grey jumpsuit. It looks like it hasn't been washed in over a decade.
+#  components:
+#  - type: Sprite
+#    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_amerc.rsi
+#  - type: Clothing
+#    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_amerc.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformSchool
+  name: school uniform
+  description: Japan uniform fron Earth. It reminds me something...
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/uniform_school.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/uniform_school.rsi #спрайты от Умы
+
+#New Year
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitSweaterHolidayBeige 
+  name: beige sweater
+  description: A real star of the show is wearing this sweater.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_beige.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_beige.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitSweaterHolidayBlue
+  name: blue sweater
+  description: A real Santa's raindeer is on this sweater.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_blue.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_blue.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitSweaterHolidayRedDark
+  name: red sweater with black pants
+  description: Red, bright, warm, festive and most important - stylish.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_red_dark.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_red_dark.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitSweaterHolidayRedWhite
+  name: red sweater with white pants
+  description: Red, bright, warm, festive.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_red_white.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_red_white.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitElf
+  name: elf costume
+  description: Smells like wood, spruce and holidays.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/elf_costume.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/elf_costume.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformMonkeyHolidaySuit
+  name: monkey holiday costume
+  description: Holiday suit for monkeys.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/monkey_holiday_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/monkey_holiday_suit.rsi #спрайты от Умы
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformRollNeckSnowman
+  name: snowman roll-neck
+  description: A roll-neck with a mister snowman!
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/roll-neck_snowman.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/roll-neck_snowman.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformShirtSpruce
+  name: shirt with a spruce
+  description: A grey shirt with a picture of a Christmas tree.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_spruce.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_spruce.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformShirtDeer
+  name: shirt with a deer
+  description: A green shirt with a picture of a deer.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_deer.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_deer.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitSweaterHoliday
+  name: holiday sweater
+  description: A green sweater with gift-like print.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_holiday.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_holiday.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformShirtSnowflake
+  name: shirt with a snowflake
+  description: A green shirt with a picture of a snowflake.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_snowflake.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_snowflake.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformShirtSnowman
+  name: shirt with a snowman
+  description: A red shirt with a picture of a snowman.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_snowman.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_snowman.rsi #спрайты от prazat911

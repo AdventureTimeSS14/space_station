@@ -105,6 +105,7 @@
       - id: ADTInvestigatorBoxFolderBlue
         amount: 2
       - id: ADTBookInvestigator
+      - id: ADTRubberStampinvestigator
 
 - type: entity
   #noSpawn: true
@@ -130,6 +131,7 @@
       - id: ADTInvestigatorBoxFolderBlue
         amount: 2
       - id: ADTBookInvestigator
+      - id: ADTRubberStampinvestigator
 
 - type: entity
   #noSpawn: true
@@ -157,6 +159,7 @@
       - id: ADTInvestigatorBoxFolderBlue
         amount: 2
       - id: ADTBookInvestigator
+      - id: ADTRubberStampinvestigator
 
 #дамские сумочки
 
@@ -177,3 +180,21 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Back/leatherlady_satchel.rsi
+
+- type: entity
+  parent: ClothingBackpackSatchelSecurity
+  id: ADTClothingBackpackSatchelLapkee
+  name: lapkee satchel
+  description: lapkee satchel
+  suffix: Personal, Lapkee
+  components:
+  - type: Storage
+    maxTotalWeight: 30
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalSecurity
+      - id: Flash
+      - id: MagazinePistol
+      - id: ADTSpaceLaw
+  - type: Sprite
+    sprite: ADT/Clothing/Back/lapkee_satchel.rsi

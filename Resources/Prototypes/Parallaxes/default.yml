@@ -6,8 +6,8 @@
   layers:
     - texture:
         !type:ImageParallaxTextureSource
-        path: "/Textures/Parallaxes/layer1.png"
-      slowness: 0.998046875
+        path: "/Textures/Parallaxes/NES/BlueParallax.png"
+      slowness: 0.99
       scale: "1, 1"
     - texture:
         !type:GeneratedParallaxTextureSource
@@ -23,12 +23,12 @@
         !type:GeneratedParallaxTextureSource
         id: "hq_wizard_stars_faster"
         configPath: "/Prototypes/Parallaxes/parallax_config_stars-2.toml"
-      slowness: 0.987265625
+      slowness: 0.9
     - texture:
         !type:GeneratedParallaxTextureSource
         id: "hq_wizard_stars_dim_faster"
         configPath: "/Prototypes/Parallaxes/parallax_config_stars_dim-2.toml"
-      slowness: 0.984352
+      slowness: 0.5
   layersLQ:
     - texture:
         !type:GeneratedParallaxTextureSource
@@ -43,9 +43,9 @@
   layers:
     - texture:
         !type:ImageParallaxTextureSource
-        path: "/Textures/Parallaxes/layer1.png"
-      slowness: 0.5
-      scale: "3, 3"
+        path: "/Textures/Parallaxes/NES/BlueParallax.png"
+      slowness: 0.95
+      scale: "1, 1"
     - texture:
         !type:GeneratedParallaxTextureSource
         id: "hq_wizard_stars"
@@ -73,4 +73,3 @@
         configPath: "/Prototypes/Parallaxes/parallax_config.toml"
         slowness: 0.5
   layersLQUseHQ: false
-

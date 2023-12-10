@@ -166,3 +166,114 @@
   - type: Fiber
     fiberMaterial: fibers-latex
   - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ADTClothingHandsGlovesLapkee
+  name: white combat gloves
+  description: white combat gloves
+  suffix: Personal, Lapkee
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/white_lapkee.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/white_lapkee.rsi
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+    fiberColor: fibers-black
+  - type: TemperatureProtection #слабая защита от температуры
+    coefficient: 0.05
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.95
+        Heat: 0.95
+        Cold: 0.95
+        Shock: 0.95
+
+#New Year
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsGlovesMittensRed
+  name: red mittens
+  description: Red, warm, festive.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/New-Year/mittens_red.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/New-Year/mittens_red.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsGlovesMittensBlue
+  name: blue mittens
+  description: One touch and you will freeze someone.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/New-Year/mittens_blue.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/New-Year/mittens_blue.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsGlovesMittensGreen
+  name: green mittens
+  description: The winter is long, we have a lot of work. Let's go to the toy factory!
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/New-Year/mittens_green.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/New-Year/mittens_green.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsGlovesSnowMaiden
+  name: snow maiden's gloves
+  description: A gloves of Snow Maiden.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/New-Year/gloves_snow_maiden.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/New-Year/gloves_snow_maiden.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsGlovesMittensRedGreen
+  name: red mittens
+  description: A red mittens with green stripes.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/New-Year/mittens_red_green.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/New-Year/mittens_red_green.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsGlovesRed
+  name: red gloves
+  description: A red warm gloves.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/New-Year/gloves_red.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/New-Year/gloves_red.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsGlovesRed2 #я честно без понятия, в чём разница между ними.
+  name: red gloves
+  description: A red warm gloves.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/New-Year/gloves_red2.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/New-Year/gloves_red2.rsi #спрайты от prazat911

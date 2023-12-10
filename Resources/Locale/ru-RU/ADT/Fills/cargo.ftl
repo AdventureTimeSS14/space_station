@@ -45,3 +45,6 @@ ent-CrateMindShieldImplants = ящик имплантов МайндШилд
 ent-MedicalMindShieldImplants = { ent-CrateMindShieldImplants }
     .desc = { ent-CrateMindShieldImplants.desc }
 
+ent-ADTFunChristmasTree = ящик с новогодней ёлкой
+    .desc = Ящик с качественной новогодней ёлкой и набором игрушек для неё.
+

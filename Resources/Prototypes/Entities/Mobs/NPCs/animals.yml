@@ -197,10 +197,12 @@
         Base: chicken-0
       Dead:
         Base: dead-0
+  - type: Body
+    prototype: ADTChicken
   - type: Butcherable
     spawned:
     - id: FoodMeatChicken
-      amount: 1
+      amount: 0
   - type: InteractionPopup
     successChance: 0.8
     interactSuccessString: petting-success-bird
@@ -364,6 +366,7 @@
   - type: Speech
     speechVerb: Moth
     speechSounds: Squeak
+  - type: MothAccent
   - type: Sprite
     sprite: Mobs/Animals/mothroach.rsi
     layers:
@@ -390,10 +393,10 @@
     thresholds:
       0: Alive
       25: Critical
-      50: Dead
+      45: Dead
   - type: MovementSpeedModifier
     baseWalkSpeed : 2.5
-    baseSprintSpeed : 4.5
+    baseSprintSpeed : 4
     weightlessAcceleration: 1.5
     weightlessFriction: 1
     weightlessModifier: 1
@@ -423,17 +426,18 @@
       Unsexed: UnisexMoth
     wilhelmProbability: 0.001
   - type: MobPrice
-    price: 60
+    price: 150
   - type: Tag
     tags:
     - Trash
     - CannotSuicide
+    - VimPilot
   - type: CanEscapeInventory
   - type: NpcFactionMember
     factions:
     - Mouse
   - type: Body
-    prototype: Moth
+    prototype: Mothroach
   - type: TypingIndicator
     proto: moth
 
@@ -2295,6 +2299,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: cat
+    - map: [ "head" ]
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -2309,7 +2314,7 @@
         - MobLayer
   - type: Inventory
     speciesId: cat
-    templateId: pet
+    templateId: adtcat
   - type: InventorySlots
   - type: Strippable
   - type: UserInterface

@@ -1,3 +1,5 @@
+# When adding new food also add to random spawner located in Resources\Prototypes\Entities\Markers\Spawners\Random\Food_Drinks\food_meal.yml
+
 - type: entity
   parent: FoodBase
   id: FoodBowlBase
@@ -607,9 +609,10 @@
     flavors:
       - slimy
   - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/sawdustsoup.rsi
     layers:
     - state: bowl
-    - state: slime
+    - state: sawdustsoup
   - type: SolutionContainerManager
     solutions:
       food:

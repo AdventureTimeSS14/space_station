@@ -12,12 +12,15 @@
   startingGear: ParamedicGear
   icon: "JobIconParamedic"
   supervisors: job-supervisors-cmo
-  canBeAntag: true
+  canBeAntag: false
   access:
   - Medical
   - Maintenance
   - External
   - Chemistry
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
 
 - type: startingGear
   id: ParamedicGear

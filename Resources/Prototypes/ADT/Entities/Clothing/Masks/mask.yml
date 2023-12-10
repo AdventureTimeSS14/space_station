@@ -166,3 +166,55 @@
   - type: Clothing
     sprite: ADT/Clothing/Mask/payday_wolf.rsi
   - type: BreathMask
+
+- type: entity
+  parent: ClothingMaskGas
+  id: ADTClothingMaskGasLapkeeSet
+  name: white sec mask
+  description: white sec mask
+  suffix: Personal, Lapkee
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: ADT/Clothing/Mask/lapkeeset_mask.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Mask/lapkeeset_mask.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.95
+        Heat: 0.9
+        Cold: 0.8
+        Shock: 0.8
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ADTClothingMaskBorodaDedMoroz
+  suffix: New Year
+  name: Boroda ded moroz
+  description: Boroda ded moroz
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Mask/ded_morozsetboroda.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Mask/ded_morozsetboroda.rsi
+    clothingVisuals:
+      mask:
+      - state: equipped-MASK
+  - type: BreathMask
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ADTChronosMask
+  name: chronos victim mask
+  description: chronos victim mask
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Mask/chronosvisor.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Mask/chronosvisor.rsi
+  - type: BreathMask
+  - type: ShowSecurityIcons
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5

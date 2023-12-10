@@ -29,3 +29,7 @@ ent-ADTClothingBackpackBlackLadySatchel = черная дамская сумоч
 
 ent-ADTClothingBackpackLeatherLadySatchel = кожаный ранец
     .desc = Для тех, кто снова хочет оказаться в школе.
+
+ent-ADTClothingBackpackSatchelLapkee = тёмная сумка
+    .desc = 50 оттенков чёрного для работы в отделе службы безопасности с удобством и комфортом. Исполнена из прочной кожи ассистентов.
+    .suffix = { "Именное, Lapkee" }

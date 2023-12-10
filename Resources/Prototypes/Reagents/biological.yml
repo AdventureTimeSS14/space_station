@@ -5,6 +5,9 @@
   desc: reagent-desc-blood
   flavor: metallic
   color: "#800000"
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/bloodglass.rsi
+    state: icon
   recognizable: true
   physicalDesc: reagent-physical-desc-ferrous
   slippery: false
@@ -64,6 +67,19 @@
   desc: reagent-desc-hemocyanin-blood
   flavor: metallic
   color: "#162581"
+  recognizable: true
+  physicalDesc: reagent-physical-desc-ferrous
+  slippery: false
+
+#NES кровь сумеречника
+- type: reagent
+  parent: Blood
+  id: ShadowkinBlood
+  name: reagent-name-shadowkin-blood
+  group: Biological
+  desc: reagent-desc-shadowkin-blood
+  flavor: metallic
+  color: "#2e0f24"
   recognizable: true
   physicalDesc: reagent-physical-desc-ferrous
   slippery: false

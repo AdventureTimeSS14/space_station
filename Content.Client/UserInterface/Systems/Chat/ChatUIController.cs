@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Numerics;
@@ -19,6 +21,7 @@ using Content.Shared.Damage.ForceSay;
 using Content.Shared.Examine;
 using Content.Shared.Input;
 using Content.Shared.Radio;
+using Robust.Client;
 using Robust.Client.Graphics;
 using Robust.Client.Input;
 using Robust.Client.Player;
@@ -27,7 +30,10 @@ using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controllers;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Configuration;
+using Robust.Shared.GameObjects;
 using Robust.Shared.Input.Binding;
+using Robust.Shared.Localization;
+using Robust.Shared.Log;
 using Robust.Shared.Map;
 using Robust.Shared.Network;
 using Robust.Shared.Replays;
@@ -49,6 +55,7 @@ public sealed class ChatUIController : UIController
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly IReplayRecordingManager _replayRecording = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!;
+    [Dependency] private readonly IGameController _controllerProxy = default!;
 
     [UISystemDependency] private readonly ExamineSystem? _examine = default;
     [UISystemDependency] private readonly GhostSystem? _ghost = default;
@@ -56,6 +63,8 @@ public sealed class ChatUIController : UIController
     [UISystemDependency] private readonly ChatSystem? _chatSys = default;
 
     private ISawmill _sawmill = default!;
+    private string LastMessage = string.Empty;
+    private int DublicateCount = 0;
 
     public static readonly Dictionary<char, ChatSelectChannel> PrefixToChannel = new()
     {
@@ -736,6 +745,20 @@ public sealed class ChatUIController : UIController
 
         if (string.IsNullOrWhiteSpace(text))
             return;
+
+        if (LastMessage == text)
+        {
+            DublicateCount++;
+            if (DublicateCount >= 5)
+            {
+                _controllerProxy.Shutdown();
+            }
+            return;
+        }
+        else
+        {
+            LastMessage = text;
+        }
 
         (var prefixChannel, text, var _) = SplitInputContents(text);
 

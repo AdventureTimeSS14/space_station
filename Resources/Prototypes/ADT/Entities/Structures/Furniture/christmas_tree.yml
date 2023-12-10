@@ -1,0 +1,432 @@
+- type: Tag
+  id: ADTGoldenStarGarland
+
+- type: Tag
+  id: ADTSilverStarGarland
+
+- type: Tag
+  id: ADTBaseStarGarland
+
+- type: Tag
+  id: ADTShinyGarland
+
+- type: Tag
+  id: ADTTreeGoldenStar
+
+- type: Tag
+  id: ADTTreeRedStar
+
+- type: Tag
+  id: ADTTreeSilverStar
+
+- type: Tag
+  id: ADTTreeRedBalls
+
+- type: Tag
+  id: ADTTreeGoldenBalls
+
+- type: Tag
+  id: ADTTreeSilverBalls
+
+- type: Tag
+  id: ADTTreeRedMishura
+
+- type: Tag
+  id: ADTTreeGoldenMishura
+
+- type: Tag
+  id: ADTTreeSilverMishura
+
+- type: entity
+  id: ADTChristmasPlasticTree
+  parent: BaseStructure
+  name: plastic christmas tree
+  description: A very festive tree for a very festive holiday.
+  suffix: New Year
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 100
+        mask:
+        - Impassable
+  - type: Sprite
+    drawdepth: Overdoors
+    sprite: ADT/Structures/Furniture/christmas_tree.rsi
+    state: christmas_tree
+    noRot: true
+    offset: "0.0,0.3"
+  - type: Pullable
+  #- type: PointLight
+  #  radius: 1.6
+  #  energy: 1.2
+  #  enabled: false
+  #  mask: /Textures/Effects/LightMasks/cone.png
+  #  autoRot: true
+  #  offset: "0, 0.6"
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 400
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 75
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              Log:
+                min: 2
+                max: 8
+  #- type: Storage
+  #  maxSlots: 7
+  #  maxItemSize: Normal
+  #  whitelist:
+  #    tags:
+  #      - ADTGoldenStarGarland
+  - type: ItemSlots
+    slots:
+      garland:
+        name: Garland
+        #startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - ADTGoldenStarGarland
+            - ADTSilverStarGarland
+            - ADTBaseStarGarland
+            - ADTShinyGarland
+      mishura:
+        name: Mishura
+        #startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - ADTTreeRedMishura
+            - ADTTreeGoldenMishura
+            - ADTTreeSilverMishura
+      tree_top:
+        name: TreeTop
+        #startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - ADTTreeGoldenStar
+            - ADTTreeRedStar
+            - ADTTreeSilverStar
+      tree_toys:
+        name: TreeToys
+        #startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - ADTTreeRedBalls
+            - ADTTreeSilverBalls
+            - ADTTreeGoldenBalls
+  - type: ItemMapper
+    mapLayers:
+      goldenstar_garland:
+        whitelist:
+          tags:
+          - ADTGoldenStarGarland
+      silverstar_garland:
+        whitelist:
+          tags:
+          - ADTSilverStarGarland
+      basestar_garland:
+        whitelist:
+          tags:
+          - ADTBaseStarGarland
+      shiny_garland:
+        whitelist:
+          tags:
+          - ADTShinyGarland
+      red_balls:
+        whitelist:
+          tags:
+          - ADTTreeRedBalls
+      silver_balls:
+        whitelist:
+          tags:
+          - ADTTreeSilverBalls
+      golden_balls:
+        whitelist:
+          tags:
+          - ADTTreeGoldenBalls
+      red_star:
+        whitelist:
+          tags:
+          - ADTTreeRedStar
+      golden_star:
+        whitelist:
+          tags:
+          - ADTTreeGoldenStar
+      silver_star:
+        whitelist:
+          tags:
+          - ADTTreeSilverStar
+      silver_mishura:
+        whitelist:
+          tags:
+          - ADTTreeSilverMishura
+      red_mishura:
+        whitelist:
+          tags:
+          - ADTTreeRedMishura
+      golden_mishura:
+        whitelist:
+          tags:
+          - ADTTreeGoldenMishura
+    sprite: ADT/Structures/Furniture/christmas_tree.rsi
+  - type: ContainerContainer
+    containers:
+      garland: !type:ContainerSlot
+      mishura: !type:ContainerSlot
+      tree_top: !type:ContainerSlot
+      tree_toys: !type:ContainerSlot
+      #storagebase: !type:Container
+      #  ents: []
+  #- type: UserInterface
+  #  interfaces:
+  #  - key: enum.StorageUiKey.Key
+  #    type: StorageBoundUserInterface
+  - type: StaticPrice
+    price: 10
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Appearance
+
+
+#Гирлянды
+
+- type: entity
+  name: goldenstar garland
+  parent: BaseItem
+  id: ADTGoldenStarGarland
+  description: A light emitting device that would look like from ancient castle.
+  suffix: New Year
+  components:
+  - type: Tag
+    tags:
+    - ADTGoldenStarGarland
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
+    state: goldenstar_garland
+  - type: Item
+    #sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
+    size: Normal
+
+- type: entity
+  name: silverstar garland
+  parent: BaseItem
+  id: ADTSilverStarGarland
+  description: A light emitting device that would look like from ancient castle.
+  suffix: New Year
+  components:
+  - type: Tag
+    tags:
+    - ADTSilverStarGarland
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
+    state: silverstar_garland
+  - type: Item
+    size: Normal
+
+- type: entity
+  name: base garland
+  parent: BaseItem
+  id: ADTBaseStarGarland
+  description: A light emitting device that would look like from ancient castle.
+  suffix: New Year
+  components:
+  - type: Tag
+    tags:
+    - ADTBaseStarGarland
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
+    state: basestar_garland
+  - type: Item
+    size: Normal
+
+- type: entity
+  name: shiny garland
+  parent: BaseItem
+  id: ADTShinyGarland
+  description: A light emitting device that would look like from ancient castle.
+  suffix: New Year
+  components:
+  - type: Tag
+    tags:
+    - ADTShinyGarland
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
+    state: shiny_garland
+  - type: Item
+    size: Normal
+
+#Новогодние шарики
+- type: entity
+  name: red tree balls
+  parent: BaseItem
+  id: ADTTreeRedBalls
+  description: red tree balls
+  suffix: New Year
+  components:
+  - type: Tag
+    tags:
+    - ADTTreeRedBalls
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
+    state: red_balls
+  - type: Item
+    size: Normal
+
+- type: entity
+  name: silver tree balls
+  parent: BaseItem
+  id: ADTTreeSilverBalls
+  description: silver tree balls
+  suffix: New Year
+  components:
+  - type: Tag
+    tags:
+    - ADTTreeSilverBalls
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
+    state: silver_balls
+  - type: Item
+    size: Normal
+
+- type: entity
+  name: golden tree balls
+  parent: BaseItem
+  id: ADTTreeGoldenBalls
+  description: silver tree balls
+  suffix: New Year
+  components:
+  - type: Tag
+    tags:
+    - ADTTreeGoldenBalls
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
+    state: golden_balls
+  - type: Item
+    size: Normal
+
+#звезды
+
+- type: entity
+  name: golden tree star
+  parent: BaseItem
+  id: ADTTreeGoldenStar
+  description: golden tree star
+  suffix: New Year
+  components:
+  - type: Tag
+    tags:
+    - ADTTreeGoldenStar
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
+    state: golden_star
+  - type: Item
+    size: Small
+
+- type: entity
+  name: red tree star
+  parent: BaseItem
+  id: ADTTreeRedStar
+  description: red tree star
+  suffix: New Year
+  components:
+  - type: Tag
+    tags:
+    - ADTTreeRedStar
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
+    state: red_star
+  - type: Item
+    size: Small
+
+- type: entity
+  name: silver tree star
+  parent: BaseItem
+  id: ADTTreeSilverStar
+  description: silver tree star
+  suffix: New Year
+  components:
+  - type: Tag
+    tags:
+    - ADTTreeSilverStar
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
+    state: silver_star
+  - type: Item
+    size: Small
+
+#мишура
+
+- type: entity
+  name: silver mishura
+  parent: BaseItem
+  id: ADTTreeSilverMishura
+  description: silver mishura
+  suffix: New Year
+  components:
+  - type: Tag
+    tags:
+    - ADTTreeSilverMishura
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
+    state: silver_mishura
+  - type: Item
+    size: Small
+
+- type: entity
+  name: golden mishura
+  parent: BaseItem
+  id: ADTTreeGoldenMishura
+  description: golden mishura
+  suffix: New Year
+  components:
+  - type: Tag
+    tags:
+    - ADTTreeGoldenMishura
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
+    state: golden_mishura
+  - type: Item
+    size: Small
+
+- type: entity
+  name: red mishura
+  parent: BaseItem
+  id: ADTTreeRedMishura
+  description: red mishura
+  suffix: New Year
+  components:
+  - type: Tag
+    tags:
+    - ADTTreeRedMishura
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/newyeartreetoys.rsi
+    state: red_mishura
+  - type: Item
+    size: Small
