@@ -47,6 +47,7 @@
 
 - type: markingPoints
   id: MobIPCMarkingLimits
+  onlyWhitelisted: true
   points:
     Chest:
       points: 0
