@@ -1,0 +1,1057 @@
+##Сами бумаги с формами
+- type: entity
+  parent: Paper
+  id: ReportStation
+  name: Отчет о ситуации на станции
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-ReportStation
+
+- type: entity
+  parent: Paper
+  id: ReporDepartment
+  name: Отчёт о работе отдела
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-ReporDepartment
+
+- type: entity
+  parent: Paper
+  id: ReportEmployeePerformance
+  name: Отчёт о работе сотрудника
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-ReportEmployeePerformance
+
+- type: entity
+  parent: Paper
+  id: ReportOnTheChaptersMeeting
+  name: Отчёт о собрании глав
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-ReportOnTheChaptersMeeting
+
+- type: entity
+  parent: Paper
+  id: InternalAffairsAgentsReport
+  name: Отчёт Агента Внутренних Дел
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-InternalAffairsAgentsReport
+
+- type: entity
+  parent: Paper
+  id: ConditionReport
+  name: Отчёт о техническом состоянии
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-ConditionReport
+
+
+- type: entity
+  parent: Paper
+  id: ReportStudyObject
+  name: Отчёт об изучении объекта
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-ReportStudyObject
+
+- type: entity
+  parent: Paper
+  id: DisposalReport
+  name: Отчёт об утилизации
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-DisposalReport
+
+- type: entity
+  parent: Paper
+  id: ApplicationAppointmentInterim
+  name: Заявление о назначении на ВрИО
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-ApplicationAppointmentInterim
+
+- type: entity
+  parent: Paper
+  id: ApplicationEmployment
+  name: Заявление о трудоустройстве
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-ApplicationEmployment
+
+- type: entity
+  parent: Paper
+  id: LetterResignation
+  name: Заявление об увольнении
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-LetterResignation
+
+- type: entity
+  parent: Paper
+  id: ApplicationAccess
+  name: Заявление на получение доступа
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-ApplicationAccess
+
+- type: entity
+  parent: Paper
+  id: ApplicationEquipment
+  name: Заявление на получение снаряжения
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-ApplicationEquipment
+
+- type: entity
+  parent: Paper
+  id: EvacuationShuttleRequest
+  name: Запрос эвакуационного шаттла
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-EvacuationShuttleRequest
+
+- type: entity
+  parent: Paper
+  id: ShuttleRegistrationRequest
+  name: Запрос регистрации шаттла
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-ShuttleRegistrationRequest
+
+- type: entity
+  parent: Paper
+  id: RequestCallMembersCentralCommitteeDSO
+  name: Запрос на вызов членов ЦК, ДСО
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-RequestCallMembersCentralCommitteeDSO
+
+- type: entity
+  parent: Paper
+  id: RequestChangeSalary
+  name: Запрос на изменение заработной платы
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-RequestChangeSalary
+
+- type: entity
+  parent: Paper
+  id: RequestNonListedEmployment
+  name: Запрос внеперечневого трудоустройства
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-RequestNonListedEmployment
+
+- type: entity
+  parent: Paper
+  id: RequestDocuments
+  name: Запрос предоставления документов
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-RequestDocuments
+
+- type: entity
+  parent: Paper
+  id: RequestEuthanasia
+  name: Запрос на проведение эвтаназии
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-RequestEuthanasia
+
+- type: entity
+  parent: Paper
+  id: RequestConstructionWork
+  name: Запрос на проведение строительных работ
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-RequestConstructionWork
+
+- type: entity
+  parent: Paper
+  id: RequestModernization
+  name: Запрос на проведение модернизации
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-RequestModernization
+
+- type: entity
+  parent: Paper
+  id: ComplaintViolationLaborRules
+  name: Жалоба на нарушение трудового порядка
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-ComplaintViolationLaborRules
+
+- type: entity
+  parent: Paper
+  id: ComplaintОffense
+  name: Жалоба на правонарушение
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-ComplaintОffense
+
+- type: entity
+  parent: Paper
+  id: PermissionEquipment
+  name: Разрешение на использование снаряжения
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-PermissionEquipment
+
+- type: entity
+  parent: Paper
+  id: SearchPermission
+  name: Разрешение на обыск
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-SearchPermission
+
+- type: entity
+  parent: Paper
+  id: PermissionWeapons
+  name: Разрешение на ношение оружия
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-SearchPermission
+
+- type: entity
+  parent: Paper
+  id: PrescriptionDrugAuthorization
+  name: Разрешение на рецептурный препарат
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-PrescriptionDrugAuthorization
+
+- type: entity
+  parent: Paper
+  id: PermissionDisposeBody
+  name: Разрешение на утилизацию тела
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-PermissionDisposeBody
+
+- type: entity
+  parent: Paper
+  id: ConstructionPermit
+  name: Разрешение на строительство
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-ConstructionPermit
+
+- type: entity
+  parent: Paper
+  id: OrderDismissal
+  name: Приказ об увольнении
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-OrderDismissal
+
+- type: entity
+  parent: Paper
+  id: OrderDeprivationAccess
+  name: Приказ о лишении доступа
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-OrderDeprivationAccess
+
+- type: entity
+  parent: Paper
+  id: OrderEncouragement
+  name: Приказ о поощрении
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-OrderEncouragement
+
+- type: entity
+  parent: Paper
+  id: OrderParolePrisoner
+  name: Приказ об УДО заключенного
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-OrderParolePrisoner
+
+- type: entity
+  parent: Paper
+  id: OrderRecognizingSentienceCreature
+  name: Приказ о признании разумности существа
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-OrderRecognizingSentienceCreature
+
+- type: entity
+  parent: Paper
+  id: OrderMedicalIntervention
+  name: Распоряжение о медицинском вмешательстве
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-OrderMedicalIntervention
+
+- type: entity
+  parent: Paper
+  id: ProductManufacturingOrder
+  name: Заказ на производство продукта
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-ProductManufacturingOrder
+
+- type: entity
+  parent: Paper
+  id: OrderPurchaseResourcesEquipment
+  name: Заказ на закупку ресурсов, снаряжения
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-OrderPurchaseResourcesEquipment
+
+- type: entity
+  parent: Paper
+  id: OrderingSpecialEquipment
+  name: Заказ специального снаряжения
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-OrderingSpecialEquipment
+
+- type: entity
+  parent: Paper
+  id: OrderPurchaseWeapons
+  name: Заказ на закупку вооружения
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-OrderPurchaseWeapons
+
+- type: entity
+  parent: Paper
+  id: Certificate
+  name: Грамота
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-Certificate
+
+- type: entity
+  parent: Paper
+  id: CertificateAdvancedTraining
+  name: Свидетельство о повышении квалификации
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-CertificateAdvancedTraining
+
+- type: entity
+  parent: Paper
+  id: CertificateOffense
+  name: Свидетельство о правонарушении
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-CertificateOffense
+
+- type: entity
+  parent: Paper
+  id: DeathCertificate
+  name: Свидетельство о смерти
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-DeathCertificate
+
+- type: entity
+  parent: Paper
+  id: MarriageCertificate
+  name: Свидетельство о заключении брака
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-MarriageCertificate
+
+- type: entity
+  parent: Paper
+  id: DivorceCertificate
+  name: Свидетельство о расторжении брака
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-DivorceCertificate
+
+- type: entity
+  parent: Paper
+  id: ClosingIndictment
+  name: Обвинительное заключение
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: ClosingIndictment
+
+- type: entity
+  parent: Paper
+  id: Sentence
+  name: Приговор
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-Sentence
+
+- type: entity
+  parent: Paper
+  id: StatementHealth
+  name: Заключение о состоянии здоровья
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-StatementHealth
+
+- type: entity
+  parent: Paper
+  id: NOTICEOFLIQUIDATION
+  name: УвЕдОмЛеНиЕ о ЛиКвИдАцИи
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-NOTICEOFLIQUIDATION
+
+- type: entity
+  parent: Paper
+  id: BUSINESSDEAL
+  name: ДеЛоВаЯ сДеЛкА
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-BUSINESSDEAL
+
+- type: entity
+  parent: Paper
+  id: NOTEBEGINNINGMILITARYACTIONS
+  name: НоТа О нАчАлЕ вОеНнЫх ДеЙсТвИй
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-NOTEBEGINNINGMILITARYACTIONS
+
+- type: entity
+  parent: Paper
+  id: REPORTACCOMPLISHMENTGOALS
+  name: ОтЧёТ о ВыПоЛнЕнИи ЦеЛеЙ
+  description: Напечатано на принтере
+  components:
+    - type: Paper
+      content: doc-text-printer-REPORTACCOMPLISHMENTGOALS
+
+
+#Сам принтер
+- type: entity
+  parent: BaseLathe
+  id: PrinterDoc
+  name: принтер документов
+  description: Уникальная разработка Nanotrasen.
+  components:
+  - type: Sprite
+    sprite: ADT/Structures/Machines/printer.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: idle
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Transform
+    noRot: false
+  - type: Machine
+    board: ADTFormPrinterMachineCircuitboard
+  - type: Lathe
+    producingSound: /Audio/Machines/scanning.ogg
+    idleState: icon
+    runningState: building
+    staticRecipes:
+      - ReportStationRecipe
+      - ReporDepartmentRecipe
+      - ReportEmployeePerformanceRecipe
+      - ReportOnTheChaptersMeetingRecipe
+      - InternalAffairsAgentsReportRecipe
+      - ConditionReportRecipe
+      - ReportStudyObjectRecipe
+      - DisposalReportRecipe
+      - ApplicationAppointmentInterimRecipe
+      - ApplicationEmploymentRecipe
+      - LetterResignationRecipe
+      - ApplicationAccessRecipe
+      - ApplicationEquipmentRecipe
+      - EvacuationShuttleRequestRecipe
+      - ShuttleRegistrationRequestRecipe
+      - RequestCallMembersCentralCommitteeDSORecipe
+      - RequestChangeSalaryRecipe
+      - RequestNonListedEmploymentRecipe
+      - RequestDocumentsRecipe
+      - RequestEuthanasiaRecipe
+      - RequestConstructionWorkRecipe
+      - RequestModernizationRecipe
+      - ComplaintViolationLaborRulesRecipe
+      - PermissionEquipmentRecipe
+      - SearchPermissionRecipe
+      - PermissionWeaponsRecipe
+      - PrescriptionDrugAuthorizationRecipe
+      - PermissionDisposeBodyRecipe
+      - ConstructionPermitRecipe
+      - OrderDismissalRecipe
+      - OrderDeprivationAccessRecipe
+      - OrderEncouragementRecipe
+      - OrderParolePrisonerRecipe
+      - OrderRecognizingSentienceCreatureRecipe
+      - OrderMedicalInterventionRecipe
+      - ProductManufacturingOrderRecipe
+      - OrderPurchaseResourcesEquipmentRecipe
+      - OrderingSpecialEquipmentRecipe
+      - OrderPurchaseWeaponsRecipe
+      - CertificateRecipe
+      - CertificateAdvancedTrainingRecipe
+      - CertificateOffenseRecipe
+      - DeathCertificateRecipe
+      - MarriageCertificateRecipe
+      - DivorceCertificateRecipe
+      - ClosingIndictmentRecipe
+      - SentenceRecipe
+      - StatementHealtheRecipe
+  - type: EmagLatheRecipes
+    emagStaticRecipes:
+        - NOTICEOFLIQUIDATIONRecipe
+        - BUSINESSDEALRecipe
+        - NOTEBEGINNINGMILITARYACTIONSRecipe
+        - REPORTACCOMPLISHMENTGOALSRecipe
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 25
+        mask:
+        - TabletopMachineMask
+        layer:
+        - TabletopMachineLayer
+  - type: MaterialStorage
+    whitelist:
+      tags:
+      - Document
+
+#цена формы, результат
+- type: latheRecipe
+  id: ReportStationRecipe
+  result: ReportStation
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: ReporDepartmentRecipe
+  result: ReporDepartment
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: ReportEmployeePerformanceRecipe
+  result: ReportEmployeePerformance
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: ReportOnTheChaptersMeetingRecipe
+  result: ReportOnTheChaptersMeeting
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: InternalAffairsAgentsReportRecipe
+  result: InternalAffairsAgentsReport
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: ConditionReportRecipe
+  result: ConditionReport
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: ReportStudyObjectRecipe
+  result: ReportStudyObject
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: DisposalReportRecipe
+  result: DisposalReport
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: ApplicationAppointmentInterimRecipe
+  result: ApplicationAppointmentInterim
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: ApplicationEmploymentRecipe
+  result: ApplicationEmployment
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: LetterResignationRecipe
+  result: LetterResignation
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: ApplicationAccessRecipe
+  result: ApplicationAccess
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: ApplicationEquipmentRecipe
+  result: ApplicationEquipment
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: EvacuationShuttleRequestRecipe
+  result: EvacuationShuttleRequest
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: ShuttleRegistrationRequestRecipe
+  result: ShuttleRegistrationRequest
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: RequestCallMembersCentralCommitteeDSORecipe
+  result: RequestCallMembersCentralCommitteeDSO
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: RequestChangeSalaryRecipe
+  result: RequestChangeSalary
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: RequestNonListedEmploymentRecipe
+  result: RequestNonListedEmployment
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: RequestDocumentsRecipe
+  result: RequestDocuments
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: RequestEuthanasiaRecipe
+  result: RequestEuthanasia
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: RequestConstructionWorkRecipe
+  result: RequestConstructionWork
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: RequestModernizationRecipe
+  result: RequestModernization
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: ComplaintViolationLaborRulesRecipe
+  result: ComplaintViolationLaborRules
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: ComplaintОffenseRecipe
+  result: ComplaintОffense
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: PermissionEquipmentRecipe
+  result: PermissionEquipment
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: SearchPermissionRecipe
+  result: SearchPermission
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: PermissionWeaponsRecipe
+  result: PermissionWeapons
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: PrescriptionDrugAuthorizationRecipe
+  result: PrescriptionDrugAuthorization
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: PermissionDisposeBodyRecipe
+  result: PermissionDisposeBody
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: ConstructionPermitRecipe
+  result: ConstructionPermit
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: OrderDismissalRecipe
+  result: OrderDismissal
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: OrderDeprivationAccessRecipe
+  result: OrderDeprivationAccess
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: OrderEncouragementRecipe
+  result: OrderEncouragement
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: OrderParolePrisonerRecipe
+  result: OrderParolePrisoner
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: OrderRecognizingSentienceCreatureRecipe
+  result: OrderRecognizingSentienceCreature
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: OrderMedicalInterventionRecipe
+  result: OrderMedicalIntervention
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: ProductManufacturingOrderRecipe
+  result: ProductManufacturingOrder
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: OrderPurchaseResourcesEquipmentRecipe
+  result: OrderPurchaseResourcesEquipment
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: OrderingSpecialEquipmentRecipe
+  result: OrderingSpecialEquipment
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: OrderPurchaseWeaponsRecipe
+  result: OrderPurchaseWeapons
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: CertificateRecipe
+  result: Certificate
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: CertificateAdvancedTrainingRecipe
+  result: CertificateAdvancedTraining
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: CertificateOffenseRecipe
+  result: CertificateOffense
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: DeathCertificateRecipe
+  result: DeathCertificate
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: MarriageCertificateRecipe
+  result: MarriageCertificate
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: DivorceCertificateRecipe
+  result: DivorceCertificate
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: ClosingIndictmentRecipe
+  result: ClosingIndictment
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: SentenceRecipe
+  result: Sentence
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: StatementHealtheRecipe
+  result: StatementHealth
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: NOTICEOFLIQUIDATIONRecipe
+  result: NOTICEOFLIQUIDATION
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: BUSINESSDEALRecipe
+  result: BUSINESSDEAL
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: NOTEBEGINNINGMILITARYACTIONSRecipe
+  result: NOTEBEGINNINGMILITARYACTIONS
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: REPORTACCOMPLISHMENTGOALSRecipe
+  result: REPORTACCOMPLISHMENTGOALS
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+
+    #плата принтера
+- type: entity
+  id: ADTFormPrinterMachineCircuitboard
+  parent: BaseItem
+  name: form printer machine board
+  components:
+  - type: MachineBoard
+    prototype: PrinterDoc
+    requirements:
+      MatterBin: 1
+      Manipulator: 2
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: generic
+  - type: Tag
+    tags:
+      - DroneUsable
+  - type: StaticPrice
+    price: 100
+  - type: PhysicalComposition
+    materialComposition:
+      Glass: 400
+    chemicalComposition:
+      Silicon: 20
+
+
+#плата принтера рецепт в протолате
+- type: latheRecipe
+  id: ADTFormPrinterMachineCircuitboard
+  result: ADTFormPrinterMachineCircuitboard
+  completetime: 4
+  materials:
+     Steel: 100
+     Glass: 900
+
+  # Материал бумага
+- type: material
+  id: SheetPrinter
+  stackEntity: Paper
+  name: бумага
+  icon: { sprite: Objects/Misc/bureaucracy.rsi, state: paper }
+  color: "#ffffff"
+  price: 0.05
+
+#Стак бумажки.
+- type: stack
+  id: ADTPaper
+  name: paper 
+  icon: { sprite: "/Objects/Misc/bureaucracy.rsi", state: paper }
+  spawn: Paper
+  maxCount: 1
+  itemSize: 1
