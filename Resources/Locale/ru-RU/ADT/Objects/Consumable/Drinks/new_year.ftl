@@ -22,5 +22,5 @@ ent-ADTHotCocoaGlass = стакан горячего какао
 ent-ADTHotChocolateGlass = стакан горячего шоколада
     .desc = Смотри, не обожги губы.
 
-ent-ADTHotChocolateGlass = стакан гипоаллергенного горячего шоколада
+ent-ADTHotChocolateAllergicGlass = стакан гипоаллергенного горячего шоколада
     .desc = Вкус хуже, чем у обычного, но не опасен для некоторых рас.

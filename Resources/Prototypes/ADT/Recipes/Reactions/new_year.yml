@@ -147,7 +147,7 @@
     FoodSnackChocolateBar: 2
 
 - type: microwaveMealRecipe
-  id: RecipeADTHotChocolate
+  id: RecipeADTHotChocolateAllergic
   name: hot hypoallergen chocolate recipe
   result: ADTHotChocolateAllergicGlass
   time: 10
@@ -156,7 +156,7 @@
     ADTHypoAllergenChocolateBar: 2
 
 - type: microwaveMealRecipe
-  id: RecipeADTHotChocolate2
+  id: RecipeADTHotChocolateAllergic2
   name: hot hypoallergen chocolate recipe
   result: ADTHotChocolateAllergicGlass
   time: 10
