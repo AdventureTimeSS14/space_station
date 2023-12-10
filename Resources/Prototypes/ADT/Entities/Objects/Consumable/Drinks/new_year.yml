@@ -1,5 +1,5 @@
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: ADTMulledWineGlass
   name: mulled-wine-name
   description: mulled-wine-desc
@@ -15,7 +15,7 @@
           Quantity: 30
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: ADTMulledWineColdGlass
   name: mulled-wine-cold-name
   description: mulled-wine-cold-desc
@@ -34,7 +34,7 @@
     state: mulled_wine_cold
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: ADTChampagneMandarinGlass
   name: champagne-mandarin-name
   description: champagne-mandarin-desc
@@ -53,7 +53,7 @@
     state: champagne_mandarin
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: ADTChristmasMilkshakeGlass
   name: christmas-milkshake-name
   description: christmas-milkshake-desc
@@ -72,7 +72,7 @@
     state: christmas_milkshake
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: ADTTeaCinnamonLemonGlass
   name: tea-cinnamon-lemon-name
   description: tea-cinnamon-lemon-desc
@@ -91,7 +91,7 @@
     state: warm_tea_cinnamon_lemon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: ADTSbitenCinnamonLemonGlass
   name: sbiten-cinnamon-lemon-name
   description: sbiten-cinnamon-lemon-desc
@@ -110,7 +110,7 @@
     state: sbiten_cinnamon_lemon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: ADTHotCocoaGlass
   name: hot-cocoa-name
   description: hot-cocoa-desc
@@ -129,7 +129,7 @@
     state: hot_cocoa
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: ADTHotChocolateGlass
   name: hot-chocolate-name
   description: hot-chocolate-desc
@@ -148,7 +148,7 @@
     state: hot_chocolate
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: ADTHotChocolateAllergicGlass
   name: hot-chocolate-name-allergic
   description: hot-chocolate-desc-allergic
