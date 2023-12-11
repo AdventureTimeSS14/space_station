@@ -24,3 +24,7 @@ ent-ADTHotChocolateGlass = стакан горячего шоколада
 
 ent-ADTHotChocolateAllergicGlass = стакан гипоаллергенного горячего шоколада
     .desc = Вкус хуже, чем у обычного, но не опасен для некоторых рас.
+
+ent-ADTRandomNewYearDrinkSpawner = спавнер случайного новогоднего напитка
+    .desc = { ent-MarkerBase.desc }
+    .suffix = { "Новый год" }
