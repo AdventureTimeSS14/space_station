@@ -164,6 +164,9 @@
     whitelist:
       components:
       - BorgChassis
+  #- type: SiliconCharger
+  #  chargeMulti: 50
+  #  targetTemp: 390
   - type: Construction
     containers:
     - machine_parts

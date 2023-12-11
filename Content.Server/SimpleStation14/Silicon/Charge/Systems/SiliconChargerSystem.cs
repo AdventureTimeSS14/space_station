@@ -14,10 +14,11 @@ using Content.Shared.Hands.Components;
 using Content.Shared.Interaction.Components;
 using Content.Shared.Inventory;
 using Content.Shared.Popups;
+using Content.Shared.Power;
 using Content.Shared.PowerCell.Components;
 using Content.Shared.SimpleStation14.Silicon;
-using Content.Shared.SimpleStation14.Silicon.Charge;
 using Content.Shared.StepTrigger.Components;
+using Content.Shared.Storage.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
@@ -27,6 +28,7 @@ namespace Content.Server.SimpleStation14.Silicon.Charge;
 
 public sealed class SiliconChargerSystem : EntitySystem
 {
+    [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] private readonly ItemSlotsSystem _itemSlots = default!;
     [Dependency] private readonly DamageableSystem _damageable = default!;
     [Dependency] private readonly IPrototypeManager _prototypes = default!;
@@ -34,7 +36,7 @@ public sealed class SiliconChargerSystem : EntitySystem
     [Dependency] private readonly HandsSystem _hands = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly ExplosionSystem _explosion = default!;
-    [Dependency] private readonly SharedSiliconChargerSystem _sharedCharger = default!;
+    //[Dependency] private readonly SharedSiliconChargerSystem _sharedCharger = default!;
     [Dependency] private readonly BatterySystem _battery = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
@@ -51,10 +53,24 @@ public sealed class SiliconChargerSystem : EntitySystem
         SubscribeLocalEvent<SiliconChargerComponent, EndCollideEvent>(OnEndCollide);
 
         SubscribeLocalEvent<SiliconChargerComponent, ComponentShutdown>(OnChargerShutdown);
+
+        SubscribeLocalEvent<SiliconChargerComponent, StorageAfterOpenEvent>(HandleStateOpen);
+        SubscribeLocalEvent<SiliconChargerComponent, StorageAfterCloseEvent>(HandleStateClose);
     }
 
     // TODO: Potentially refactor this so it chaches all found entities upon the storage being closed, or stepped on, etc.
     // Perhaps a variable for it? Open chargers like the pad wouldn't update to things picked up, but it seems silly to redo it each frame for closed ones.
+    private void HandleStateOpen(EntityUid uid, SiliconChargerComponent component, ref StorageAfterOpenEvent _)
+    {
+        UpdateState(uid, component);
+    }
+
+    /// <inheritdoc cref="HandleStateOpen"/>
+    private void HandleStateClose(EntityUid uid, SiliconChargerComponent component, ref StorageAfterCloseEvent _)
+    {
+        UpdateState(uid, component);
+    }
+
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
@@ -70,7 +86,7 @@ public sealed class SiliconChargerSystem : EntitySystem
             if (TryComp<ApcPowerReceiverComponent>(uid, out var powerComp) && !powerComp.Powered)
             {
                 if (chargerComp.Active != wasActive)
-                    _sharedCharger.UpdateState(uid, chargerComp);
+                    UpdateState(uid, chargerComp);
 
                 continue;
             }
@@ -93,7 +109,7 @@ public sealed class SiliconChargerSystem : EntitySystem
             }
 
             if (chargerComp.Active != wasActive)
-                _sharedCharger.UpdateState(uid, chargerComp);
+                UpdateState(uid, chargerComp);
         }
         #endregion Entity Storage Chargers
 
@@ -108,7 +124,7 @@ public sealed class SiliconChargerSystem : EntitySystem
                 if (chargerComp.Active)
                 {
                     chargerComp.Active = false;
-                    _sharedCharger.UpdateState(uid, chargerComp);
+                    UpdateState(uid, chargerComp);
                 }
                 continue;
             }
@@ -116,7 +132,7 @@ public sealed class SiliconChargerSystem : EntitySystem
             if (!chargerComp.Active)
             {
                 chargerComp.Active = true;
-                _sharedCharger.UpdateState(uid, chargerComp);
+                UpdateState(uid, chargerComp);
             }
 
             var chargeRate = frameTime * chargerComp.ChargeMulti / chargerComp.PresentEntities.Count;
@@ -325,4 +341,41 @@ public sealed class SiliconChargerSystem : EntitySystem
     }
     #endregion Step Trigger Chargers
     #endregion Charger specific
+
+    public void UpdateState(EntityUid uid, SiliconChargerComponent? component = null)
+    {
+        if (!Resolve(uid, ref component))
+            return;
+
+        if (component.Active)
+        {
+            _appearance.SetData(uid, PowerDeviceVisuals.VisualState, SiliconChargerVisualState.Charging);
+
+            // If we're in prediction, return since Client doesn't have the information needed to handle this.
+            // Didn't seem to matter in practice, but probably for the best.
+            if (_timing.InPrediction)
+                return;
+
+            //if (component.SoundLoop != null && component.SoundStream == null)
+            //    component.SoundStream =
+            //        _audio.PlayPvs(component.SoundLoop, uid, AudioParams.Default.WithLoop(true).WithMaxDistance(5));
+        }
+        else
+        {
+            var state = SiliconChargerVisualState.Normal;
+
+            if (EntityManager.TryGetComponent<EntityStorageComponent>(uid, out var storageComp) && storageComp.Open)
+                state = SiliconChargerVisualState.NormalOpen;
+
+            _appearance.SetData(uid, PowerDeviceVisuals.VisualState, state);
+
+            // If we're in prediction, return since Client doesn't have the information needed to handle this.
+            // Didn't seem to matter in practice, but probably for the best.
+            if (_timing.InPrediction)
+                return;
+
+            //component.SoundStream?.Stop();
+            //component.SoundStream = null;
+        }
+    }
 }
