@@ -141,3 +141,13 @@
     radius: 1.5
     energy: 1.6
     color: "#1f8c28"
+
+- type: entity
+  parent: PosterBase
+  id: PosterContrabandFederation
+  name: Федеративный плакат
+  description: "Древний плакат с символом древнего государства."
+  components:
+  - type: Sprite
+    sprite: NES/Flags.rsi
+    state: FederationFlag

@@ -15,9 +15,9 @@
     wideAnimationRotation: -135
     damage:
       groups:
-        Brute: 5
+        Brute: 1
       types:
-        Structural: 10
+        Structural: 1
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
@@ -29,7 +29,6 @@
     size: Normal
     sprite: Objects/Weapons/Melee/pickaxe.rsi
   - type: UseDelay
-    delay: 1
 
 - type: entity
   name: mining drill
@@ -44,6 +43,8 @@
     sprite: Objects/Tools/handdrill.rsi
     state: handdrill
   - type: ItemCooldown
+  - type: Item
+    size: Normal
   - type: MeleeWeapon
     attackRate: 1.5
     damage:
