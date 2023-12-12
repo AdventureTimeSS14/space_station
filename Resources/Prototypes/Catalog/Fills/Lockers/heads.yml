@@ -344,7 +344,8 @@
   components:
   - type: StorageFill
     contents:
-      #- id: ClothingEyesHudSecurity
+      - id: NesSecurityShuttleConsoleCircuitboard
+      - id: ClothingEyesHudSecurity
       - id: WeaponDisabler
       - id: ClothingHeadHatBeretHoS
       - id: ClothingHeadHatCapHoS # Corvax-SecFashion
@@ -391,6 +392,7 @@
   - type: StorageFill
     contents:
       #- id: ClothingEyesHudSecurity
+      - id: NesSecurityShuttleConsoleCircuitboard
       - id: WeaponDisabler
       - id: ClothingHeadHatBeretHoS
       - id: ClothingHeadHatCapHoS # Corvax-SecFashion

@@ -1,0 +1,153 @@
+#NES флаги
+
+- type: entity
+  parent: BaseFigurine
+  id: SmallFlag
+  name: Флажок
+  description: Флажок, с внеочередным двухглавым федеративным орлом.
+  components:
+  - type: Sprite
+    sprite: NES/Flags.rsi
+    state: mini_flag
+
+- type: entity
+  id: NES_Flag
+  parent: BannerBase
+  name: Флаг
+  description: Чистый голубой флаг, чистый холст для художника.
+  components:
+  - type: Sprite
+    sprite: NES/Flags.rsi
+    state: blue_flag
+
+- type: entity
+  id: NES_AcorpFlag
+  parent: BannerBase
+  name: Флаг ACorp
+  description: Тёмный флаг старой корпорации по злым делишкам и ядерному вооружению.
+  components:
+  - type: Sprite
+    sprite: NES/Flags.rsi
+    state: acorp_flag
+
+- type: entity
+  id: NES_ChinaFlag
+  parent: BannerBase
+  name: Флаг ТКК
+  description: Яркий флаг Торговой Коалиции Китая, неожиданно вам захотелось получить миску риса.
+  components:
+  - type: Sprite
+    sprite: NES/Flags.rsi
+    state: china_flag
+
+- type: entity
+  id: NES_FandorFlag
+  parent: BannerBase
+  name: Флаг Фандора
+  description: Флаг с символикой объеденения Фандор.
+  components:
+  - type: Sprite
+    sprite: NES/Flags.rsi
+    state: fandor_flag
+
+- type: entity
+  id: NES_FederationFlag
+  parent: BannerBase
+  name: Флаг Федерации
+  description: Флаг с белым двухглавым орлом федеративных ублюдков.
+  components:
+  - type: Sprite
+    sprite: NES/Flags.rsi
+    state: fd_flag
+
+#Терминалы
+
+- type: entity
+  parent: BaseComputer
+  id: NesComputerButton
+  name: боевой терминал взаимодействия
+  description: Терминал для взаимодействия с подключенными к нему устройствами, требует доступ службы безопасности.
+  components:
+  - type: Clickable
+  - type: UseDelay
+  - type: SignalSwitch
+    clickSound: "/Audio/Machines/beep.ogg"
+    onPort: Pressed
+    offPort: Pressed
+    statusPort: Pressed
+    delay: 0.5 # prevent light-toggling auto-clickers.
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: medcomp
+      color: "#ff0000"
+    - map: ["computerLayerKeys"]
+      state: med_key
+ # - type: Fixtures
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSource
+    ports:
+      - Pressed
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#ff0000"
+  - type: Lock
+    locked: true
+  - type: AccessReader
+    access: [['Security']]
+
+- type: entity
+  parent: BaseComputer
+  id: NesPeopleComputerButton
+  name: терминал взаимодействия
+  description: Терминал для взаимодействия с подключенными к нему устройствами.
+  components:
+  - type: Clickable
+  - type: UseDelay
+  - type: SignalSwitch
+    clickSound: "/Audio/Machines/beep.ogg"
+    onPort: Pressed
+    offPort: Pressed
+    statusPort: Pressed
+    delay: 0.5 # prevent light-toggling auto-clickers.
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: medcomp
+      color: "#5adbff"
+    - map: ["computerLayerKeys"]
+      state: med_key
+ # - type: Fixtures
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSource
+    ports:
+      - Pressed
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#1f8c28"
+
+- type: entity
+  parent: PosterBase
+  id: PosterContrabandFederation
+  name: Федеративный плакат
+  description: "Древний плакат с символом древнего государства."
+  components:
+  - type: Sprite
+    sprite: NES/Flags.rsi
+    state: FederationFlag

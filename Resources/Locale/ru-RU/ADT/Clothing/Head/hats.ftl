@@ -116,13 +116,33 @@ ent-ADTClothingHeadHatsBeretCE = берет старшего инженера
 ent-ADTClothingHeadHatsBeretCentCom = берет центрального командования
     .desc = Зелённый берет с вышитой эмблемой ЦК. Стиль военного бюрократа.
 
-ent-ADTClothingHeadHatDedMoroz = Колпак Деда Мороза
+ent-ADTClothingHeadHatDedMoroz = колпак Деда Мороза
     .desc = Новогодний колпак Деда Мороза.
-    .suffix = { "Новый Год" }
-
-ent-ADTClothingHeadHatRoga = Праздничные рога
-    .desc = .
     .suffix = { "Новый Год" }
 
 ent-ADTClothingHeadHatsBeretArmy = армейский берет
     .desc = Потрёпанный на службе военный берет. Имеет золотую нашивку сбоку.
+
+ent-ADTClothingHeadHatsElf = шапка Эльфа
+    .desc = Шапка настоящего трудяги с приклеенными ушками.
+
+ent-ADTClothingHeadHatsSnowMaiden = шапка Снегурочки
+    .desc = Яркая, голубая шапка на детский утренник.
+
+ent-ADTClothingHeadHatsAntenna = антенны
+    .desc = Две небольшие пиромидки, крепящиеся на голову.
+
+ent-ADTClothingHeadHatsMonkeyHoliday = праздичная шляпка мартышек
+    .desc = Праздинчная шляпка для мартышек.
+
+ent-ADTClothingHeadHatsCatHoliday = праздичная шляпка кошек
+    .desc = Праздничная шляпка для кошек.
+
+ent-ADTClothingHeadHornsDeer = оленьки рожки
+    .desc = Рожки и нос помощника санты.
+
+ent-ADTClothingHeadHatChristmas = рождественский колпак
+    .desc = Неотъемлимый атрибут праздника Земли.
+
+ent-ADTClothingHeadChristmasFlower = головной цветок
+    .desc = Красивое украшение на голову.

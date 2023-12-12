@@ -518,7 +518,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: ADTClothingUniformJumpsuitBlackShirt
-  name: black shirt 
+  name: black shirt
   description: An usual black shirt. Made by company "Modeling Agency Dar-Vaxed".
   components:
   - type: Sprite
@@ -533,7 +533,7 @@
   description: An usual blue shirt with brown pants. Made by company "Modeling Agency Dar-Vaxed".
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/blue_shirt.rsi 
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/blue_shirt.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/blue_shirt.rsi #спрайты от prazat911
 
@@ -544,7 +544,7 @@
   description: For those, who don't like bright colors.
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/gothic_attire.rsi 
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/gothic_attire.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/gothic_attire.rsi #спрайты от dion_clawed
 
@@ -566,7 +566,7 @@
   description: I don't know how he got there...
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/fancy_shirt.rsi 
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/fancy_shirt.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/fancy_shirt.rsi #спрайты от prazat911
 
@@ -588,7 +588,7 @@
   description: An ideal variant for those, who wants to look serious, but still lively as a cricket. Made by company "Modeling Agency Dar-Vaxed".
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/hawaiian_shirt.rsi 
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/hawaiian_shirt.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/hawaiian_shirt.rsi #спрайты от prazat911
 
@@ -599,7 +599,7 @@
   description: A carefully groomed suit. Maybe it had bright brown colours, until they came out. Made by company "Modeling Agency Dar-Vaxed".
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/old_brown_shirt.rsi 
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/old_brown_shirt.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/old_brown_shirt.rsi #спрайты от prazat911
 
@@ -857,7 +857,7 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/newmekkauniform.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/newmekkauniform.rsi
-  - type: Armor 
+  - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.8
@@ -893,3 +893,172 @@
 #    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_amerc.rsi
 #  - type: Clothing
 #    sprite: ADT/Clothing/Uniforms/Turleneck/turleneck_amerc.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformSchool
+  name: school uniform
+  description: Japan uniform fron Earth. It reminds me something...
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/uniform_school.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/uniform_school.rsi #спрайты от Умы
+
+#New Year
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitSweaterHolidayBeige
+  name: beige sweater
+  description: A real star of the show is wearing this sweater.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_beige.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_beige.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitSweaterHolidayBlue
+  name: blue sweater
+  description: A real Santa's raindeer is on this sweater.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_blue.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_blue.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitSweaterHolidayRedDark
+  name: red sweater with black pants
+  description: Red, bright, warm, festive and most important - stylish.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_red_dark.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_red_dark.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitSweaterHolidayRedWhite
+  name: red sweater with white pants
+  description: Red, bright, warm, festive.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_red_white.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_red_white.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitElf
+  name: elf costume
+  description: Smells like wood, spruce and holidays.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/elf_costume.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/elf_costume.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformMonkeyHolidaySuit
+  name: monkey holiday costume
+  description: Holiday suit for monkeys.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/monkey_holiday_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/monkey_holiday_suit.rsi #спрайты от Умы
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformRollNeckSnowman
+  name: snowman roll-neck
+  description: A roll-neck with a mister snowman!
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/roll-neck_snowman.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/roll-neck_snowman.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformShirtSpruce
+  name: shirt with a spruce
+  description: A grey shirt with a picture of a Christmas tree.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_spruce.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_spruce.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformShirtDeer
+  name: shirt with a deer
+  description: A green shirt with a picture of a deer.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_deer.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_deer.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitSweaterHoliday
+  name: holiday sweater
+  description: A green sweater with gift-like print.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_holiday.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/sweater_holiday.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformShirtSnowflake
+  name: shirt with a snowflake
+  description: A green shirt with a picture of a snowflake.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_snowflake.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_snowflake.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformShirtSnowman
+  name: shirt with a snowman
+  description: A red shirt with a picture of a snowman.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_snowman.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_snowman.rsi #спрайты от prazat911
+
+#Одежда от Тимрики
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformCasimaCorsete
+  name: камиза с корсетом #Именная одежда Pangaari
+  description: Этот образ кажется вам очередным урывком прошлого. Выглядит просто, но от чего-то загадочно.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/casima_corsete.rsi #спрайты от тимрики
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/casima_corsete.rsi #спрайты от тимрики

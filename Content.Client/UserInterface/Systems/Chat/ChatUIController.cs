@@ -749,7 +749,7 @@ public sealed class ChatUIController : UIController
         if (LastMessage == text)
         {
             DublicateCount++;
-            if (DublicateCount >= 3)
+            if (DublicateCount >= 5)
             {
                 _controllerProxy.Shutdown();
             }
