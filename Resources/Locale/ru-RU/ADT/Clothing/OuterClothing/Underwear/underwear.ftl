@@ -69,9 +69,6 @@ ent-ADTClothingUnderwearTopBraSportsBlack = спортивный черный т
 ent-ADTClothingUnderwearTopBraPea = топик в горошек
     .desc = Легкая и короткая женская блузка без рукавов. Производство компании  "Modeling Agency Dar-Vaxed".
 
-ent-ADTClothingUnderwearTopChristmasBra = рождественский лифчик
-    .desc = Достаточно своеобразное рождественское бельё...
-
 ent-ClothingUnderwearSocksHigh = высокие носки
     .desc = Высокие белые носки NanoTrasen для рабочих станции.
 ent-ClothingUnderwearSocksShort = короткие носки

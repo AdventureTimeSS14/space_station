@@ -170,14 +170,3 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Underwear/Top/lace_bra.rsi
-
-#New Year. Ёмоё.
-- type: entity
-  parent: ClothingUnderwearTopBase
-  id: ADTClothingUnderwearTopChristmasBra
-  name: christmas bra
-  description: A questionable bra for christmas...
-  suffix: New Year
-  components:
-  - type: Sprite
-    sprite: ADT/Clothing/Underwear/Top/christmas_bra.rsi #спрайты от prazat911

@@ -1049,3 +1049,14 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_snowman.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_snowman.rsi #спрайты от prazat911
+
+#Карсет, который лифчик. Потому что нижнее бельё находится ниже по слою, чем внешние черты. 
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformChristmasCorset
+  name: christmas corset
+  description: A questionable corset for christmas...
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Top/christmas_bra.rsi #спрайты от prazat911
