@@ -14,7 +14,7 @@
     solutions:
       organ:
         reagents:
-        - ReagentId: MotorOil
+        - ReagentId: Oil
           Quantity: 10
 
 - type: entity
