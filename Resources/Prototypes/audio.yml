@@ -45,16 +45,16 @@
   rules: NearMaintenance
   priority: 2
 
-- type: ambientMusic
-  id: Space
-  sound:
-    params:
-      volume: -10
-    collection: AmbienceSpace
-  fadeIn: true
-  interruptable: true
-  rules: InSpace
-  priority: 1
+# - type: ambientMusic
+#   id: Space
+#   sound:
+#     params:
+#       volume: -10
+#     collection: AmbienceSpace
+#   fadeIn: true
+#   interruptable: true
+#   rules: InSpace
+#   priority: 1
 
 - type: ambientMusic
   id: Mining
@@ -175,12 +175,12 @@
     - /Audio/Ambience/ambiruin6.ogg
     - /Audio/Ambience/ambiruin7.ogg
 
-- type: soundCollection
-  id: AmbienceSpace
-  files:
-    - /Audio/Ambience/starlight.ogg
-    - /Audio/Ambience/constellations.ogg
-    - /Audio/Ambience/drifting.ogg
+# - type: soundCollection
+#   id: AmbienceSpace
+#   files:
+#     - /Audio/Ambience/starlight.ogg
+#     - /Audio/Ambience/constellations.ogg
+#     - /Audio/Ambience/drifting.ogg
 
 - type: soundCollection
   id: AmbienceSpooky

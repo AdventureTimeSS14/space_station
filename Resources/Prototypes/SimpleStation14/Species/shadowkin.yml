@@ -10,9 +10,11 @@
   skinColoration: Hues
   maleFirstNames: names_shadowkin
   femaleFirstNames: names_shadowkin
+  maleLastNames: names_arachnid_last # Corvax-LastnameGender
+  femaleLastNames: names_arachnid_last # Corvax-LastnameGender
   minAge: 18
   maxAge: 80
-  youngAge: 25
+  youngAge: 30
   oldAge: 50
   sexes:
     - Male
