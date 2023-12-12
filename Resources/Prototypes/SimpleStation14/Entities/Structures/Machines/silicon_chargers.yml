@@ -56,7 +56,7 @@
         machine_parts: !type:Container
         entity_storage: !type:Container
     - type: SiliconCharger
-      chargeMulti: 1000
+      chargeMulti: 50
       targetTemp: 390
     - type: Construction
       graph: Machine
@@ -64,6 +64,7 @@
       containers:
       - machine_board
       - machine_parts
+      - entity_storage
     - type: Machine
       board: IndustrialChargerCircuitboard
     - type: Destructible
