@@ -38,10 +38,8 @@
       effects:
       - !type:HealthChange
         damage:
-          types:
-            Heat: -0.25
-            Shock: -0.25
-            Cold: -0.25
+          groups:
+            Burn: -1
       - !type:PopupMessage
         conditions:
         - !type:TotalDamage
