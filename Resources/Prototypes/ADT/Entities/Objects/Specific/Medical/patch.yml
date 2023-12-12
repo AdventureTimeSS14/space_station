@@ -55,6 +55,8 @@
     solutions:
       pen:
         maxVol: 20
+  - type: DeleteOnSolutionEmpty
+    solution: pen
   - type: Hypospray
     solutionName: pen
     transferAmount: 20
