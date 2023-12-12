@@ -16,11 +16,13 @@
   id: ADTWinterSun
   reactants:
     CafeLatte: #Проблема с Coffe почемуто не может быть компонентом, заменено на CofeLatte
-      amount: 2
+      amount: 3
     Cream:
+      amount: 2
+    ADTСinnamon:
       amount: 1
   products:
-    ADTWinterSun: 3
+    ADTWinterSun: 6
 
 - type: reaction
   id: ADTHungoverAngel
@@ -62,8 +64,10 @@
     IceCream:
       amount: 2
     Tea:
-      amount: 3
+      amount: 2
     Milk:
+      amount: 1
+    ADTСinnamon:
       amount: 1
   products:
     ADTMilkEclipse: 6

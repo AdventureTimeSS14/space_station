@@ -1,7 +1,7 @@
 - type: vendingMachineInventory
   id: MegaSeedServitorInventory
   startingInventory:
-    ADTPumpkinSeeds: 5
+    ADTMandarinSeeds: 5
     AloeSeeds: 3
     AmbrosiaVulgarisSeeds: 3
     AppleSeeds: 5

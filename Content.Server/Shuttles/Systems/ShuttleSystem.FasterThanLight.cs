@@ -35,26 +35,26 @@ public sealed partial class ShuttleSystem
     private MapId? _hyperSpaceMap;
 
     public const float DefaultStartupTime = 5.5f;
-    public const float DefaultTravelTime = 20f;
-    public const float DefaultArrivalTime = 5f;
-    private const float FTLCooldown = 10f;
+    public const float DefaultTravelTime = 40f;
+    public const float DefaultArrivalTime = 80f;
+    private const float FTLCooldown = 50f;
     private const float ShuttleFTLRange = 100f;
 
     /// <summary>
     /// Minimum mass a grid needs to be to block a shuttle recall.
     /// </summary>
-    public const float ShuttleFTLMassThreshold = 300f;
+    public const float ShuttleFTLMassThreshold = 500f;
 
     // I'm too lazy to make CVars.
 
     private readonly SoundSpecifier _startupSound = new SoundPathSpecifier("/Audio/Effects/Shuttle/hyperspace_begin.ogg")
     {
-        Params = AudioParams.Default.WithVolume(-5f),
+        Params = AudioParams.Default.WithVolume(-3f),
     };
     // private SoundSpecifier _travelSound = new SoundPathSpecifier();
     private readonly SoundSpecifier _arrivalSound = new SoundPathSpecifier("/Audio/Effects/Shuttle/hyperspace_end.ogg")
     {
-        Params = AudioParams.Default.WithVolume(-5f),
+        Params = AudioParams.Default.WithVolume(-3f),
     };
 
     private readonly TimeSpan _hyperspaceKnockdownTime = TimeSpan.FromSeconds(5);
@@ -275,7 +275,7 @@ public sealed partial class ShuttleSystem
                     {
                         if (shuttle != null)
                             Enable(uid, body, shuttle);
-                        _physics.SetLinearVelocity(uid, new Vector2(0f, 20f), body: body);
+                        _physics.SetLinearVelocity(uid, new Vector2(0f, 40f), body: body);
                         _physics.SetAngularVelocity(uid, 0f, body: body);
                         _physics.SetLinearDamping(body, 0f);
                         _physics.SetAngularDamping(body, 0f);

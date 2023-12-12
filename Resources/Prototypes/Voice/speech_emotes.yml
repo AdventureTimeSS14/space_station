@@ -45,7 +45,7 @@
   id: Laugh
   icon: Interface/Emotes/laugh.png
   category: Vocal
-  chatMessages: [смеётся.] # Corvax-Localization
+  chatMessages: [смеётся] # Corvax-Localization
   chatTriggers:
     - laugh
     - laughs
@@ -92,7 +92,7 @@
   id: Sigh
   icon: Interface/Emotes/sighn.png
   category: Vocal
-  chatMessages: [вздыхает.] # Corvax-Localization
+  chatMessages: [вздыхает] # Corvax-Localization
   chatTriggers:
     - sigh
     - sighs
@@ -113,7 +113,7 @@
   id: Whistle
   icon: Interface/Emotes/whistle.png
   category: Vocal
-  chatMessages: [свистит.] # Corvax-Localization
+  chatMessages: [свистит] # Corvax-Localization
   chatTriggers:
     - whistle
     - whistle.
@@ -137,7 +137,7 @@
   id: Crying
   icon: Interface/Emotes/crying.png
   category: Vocal
-  chatMessages: [плачет.] # Corvax-Localization
+  chatMessages: [плачет] # Corvax-Localization
   chatTriggers:
     - cry
     - cry.
@@ -160,7 +160,7 @@
 - type: emote
   id: Squish
   category: Vocal
-  chatMessages: [хлюпает.] # Corvax-Localization
+  chatMessages: [хлюпает] # Corvax-Localization
   chatTriggers:
     - squish
     - squish.
@@ -180,7 +180,7 @@
 - type: emote
   id: Chitter
   category: Vocal
-  chatMessages: [стрекочет.] # Corvax-Localization
+  chatMessages: [стрекочет] # Corvax-Localization
   chatTriggers:
    - chitter
    - chitter.
@@ -200,7 +200,7 @@
 - type: emote
   id: Squeak
   category: Vocal
-  chatMessages: [пищит.] # Corvax-Localization
+  chatMessages: [пищит] # Corvax-Localization
   chatTriggers:
    - squeak
    - squeak.
@@ -250,7 +250,7 @@
   id: Snap
   icon: Interface/Emotes/snaps-fingers.png
   category: Hands
-  chatMessages: [щёлкает пальцами.] # Corvax-Localization
+  chatMessages: [щёлкает пальцами] # Corvax-Localization
   chatTriggers:
     - snap
     - snaps
@@ -292,7 +292,7 @@
   id: Salute
   icon: Interface/Emotes/salute.png
   category: Hands
-  chatMessages: [салютует.] # Corvax-Localization
+  chatMessages: [салютует] # Corvax-Localization
   chatTriggers:
     - salute
     - salute.

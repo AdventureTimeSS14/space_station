@@ -1,0 +1,37 @@
+- type: entity
+  name: sawdust soup
+  parent: FoodBowlBase
+  id: ADTFoodSoupSawdust
+  description: Where did the soup come from in my sawdust?
+  components:
+  - type: FlavorProfile
+    flavors:
+      - ADTSawdust
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/sawdustsoup.rsi
+    layers:
+    - state: bowl
+    - state: sawdustsoup
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 12
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3
+        - ReagentId: Vitamin
+          Quantity: 3
+        - ReagentId: Water
+          Quantity: 10
+
+- type: microwaveMealRecipe
+  id: ADTFoodSawdustSoupRecipe
+  name: sawdust soup recipe
+  result: ADTFoodSoupSawdust
+  time: 15
+  reagents:
+    Water: 10
+    TableSalt: 10
+  solids:
+    FoodBowlBig: 1
+    MaterialWoodPlank1: 1

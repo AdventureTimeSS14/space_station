@@ -14,5 +14,5 @@ ent-ADTClothingNeckBlackFur = черная меховая лента
     .desc = Эта меховая лента, идеально впишется в ваш праздничный образ.
     .suffix = { "" }
 
-ent-ADTClothingNeckChefPovarFio = Шейный бант повара
+ent-ADTClothingNeckChefPovarFio = шейный бант повара
     .desc = Модный аксессуар для поваров, имеющий не практическое значение, а скорее чисто эстетическое.
