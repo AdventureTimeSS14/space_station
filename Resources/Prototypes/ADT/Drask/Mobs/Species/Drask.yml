@@ -59,6 +59,9 @@
       Male: MaleDrask
       Female: FemaleDrask
       Unsexed: MaleDrask
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Drask
 
 - type: entity
   save: false

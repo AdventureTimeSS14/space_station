@@ -10,9 +10,11 @@
   skinColoration: Hues
   maleFirstNames: names_shadowkin
   femaleFirstNames: names_shadowkin
+  maleLastNames: names_arachnid_last # Corvax-LastnameGender
+  femaleLastNames: names_arachnid_last # Corvax-LastnameGender
   minAge: 18
   maxAge: 80
-  youngAge: 25
+  youngAge: 30
   oldAge: 50
   sexes:
     - Male
@@ -40,7 +42,14 @@
 
 - type: markingPoints
   id: MobShadowkinMarkingLimits
+  onlyWhitelisted: true
   points:
+    Hair:
+      points: 0
+      required: false
+    FacialHair:
+      points: 0
+      required: false
     Tail:
       points: 1
       required: true
@@ -50,13 +59,13 @@
       required: true
       defaultMarkings: [EarsShadowkin]
     Chest:
-      points: 1
+      points: 0
       required: false
     Legs:
-      points: 2
+      points: 0
       required: false
     Arms:
-      points: 2
+      points: 0
       required: false
 
 - type: humanoidBaseSprite

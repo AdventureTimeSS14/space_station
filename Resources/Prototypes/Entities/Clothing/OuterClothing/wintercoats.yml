@@ -9,14 +9,14 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
   - type: TemperatureProtection
-    coefficient: 0.1
+    coefficient: 0.9
   - type: Item
     size: Normal
   - type: Armor
     modifiers:
       coefficients:
-        Slash: 0.95
-        Heat: 0.90
+        Slash: 0.5
+        Heat: 0.5
   - type: Food
     requiresSpecialDigestion: true
   - type: SolutionContainerManager

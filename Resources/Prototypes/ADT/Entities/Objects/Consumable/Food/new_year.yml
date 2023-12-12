@@ -69,3 +69,621 @@
     popup: adt-spike-solution-put
   - type: Appearance
   - type: DeleteOnTrigger
+
+#Печенье
+- type: entity
+  name: atmos cake
+  parent: FoodSnackBase
+  id: ADTFoodSnackAtmosCake
+  description: atmos cake
+  suffix: New Year
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/new-year/newyearsnack.rsi
+    state: atmos
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+
+- type: entity
+  name: botanic cake
+  parent: ADTFoodSnackAtmosCake
+  id: ADTFoodSnackBotanicCake
+  description: botanic cake
+  components:
+  - type: Sprite
+    state: botanic
+
+- type: entity
+  name: candy stick
+  parent: ADTFoodSnackAtmosCake
+  id: ADTFoodSnackCandyStick
+  description: candy stick
+  components:
+  - type: Sprite
+    state: stick
+
+- type: entity
+  name: cargo cake
+  parent: ADTFoodSnackAtmosCake
+  id: ADTFoodSnackCargoCake
+  description: cargo cake
+  components:
+  - type: Sprite
+    state: cargo
+
+- type: entity
+  name: cookie man
+  parent: ADTFoodSnackAtmosCake
+  id: ADTFoodSnackCookieMan
+  description: cookie man
+  components:
+  - type: Sprite
+    state: cookieman
+
+- type: entity
+  name: chef cake
+  parent: ADTFoodSnackAtmosCake
+  id: ADTFoodSnackChefCake
+  description: chef cake
+  components:
+  - type: Sprite
+    state: chef
+
+- type: entity
+  name: doctor cake
+  parent: ADTFoodSnackAtmosCake
+  id: ADTFoodSnackDoctorCake
+  description: doctor cake
+  components:
+  - type: Sprite
+    state: doctor
+
+- type: entity
+  name: gift cake
+  parent: ADTFoodSnackAtmosCake
+  id: ADTFoodSnackGiftCake
+  description: gift cake
+  components:
+  - type: Sprite
+    state: gift
+
+- type: entity
+  name: glove cake
+  parent: ADTFoodSnackAtmosCake
+  id: ADTFoodSnackGloveCake
+  description: glove cake
+  components:
+  - type: Sprite
+    state: glove
+
+- type: entity
+  name: janitory cake
+  parent: ADTFoodSnackAtmosCake
+  id: ADTFoodSnackJanitoryCake
+  description: janitory cake
+  components:
+  - type: Sprite
+    state: janitory
+
+- type: entity
+  name: mime cake
+  parent: ADTFoodSnackAtmosCake
+  id: ADTFoodSnackMimeCake
+  description: mime cake
+  components:
+  - type: Sprite
+    state: mime
+
+- type: entity
+  name: nukie cake
+  parent: ADTFoodSnackAtmosCake
+  id: ADTFoodSnackNukieCake
+  description: nukie cake
+  components:
+  - type: Sprite
+    state: nukie
+
+- type: entity
+  name: clown cake
+  parent: ADTFoodSnackAtmosCake
+  id: ADTFoodSnackClownCake
+  description: clown cake
+  components:
+  - type: Sprite
+    state: clown
+
+- type: entity
+  name: greytide cake
+  parent: ADTFoodSnackAtmosCake
+  id: ADTFoodSnackGreytideCake
+  description: greytide cake
+  components:
+  - type: Sprite
+    state: greytide
+
+- type: entity
+  name: scientist cake
+  parent: ADTFoodSnackAtmosCake
+  id: ADTFoodSnackScientistCake
+  description: scientist cake
+  components:
+  - type: Sprite
+    state: scientist
+
+- type: entity
+  name: security cake
+  parent: ADTFoodSnackAtmosCake
+  id: ADTFoodSnackSecurityCake
+  description: security cake
+  components:
+  - type: Sprite
+    state: security
+
+- type: entity
+  name: snowflake cake
+  parent: ADTFoodSnackAtmosCake
+  id: ADTFoodSnackSnowflakeCake
+  description: snowflake cake
+  components:
+  - type: Sprite
+    state: snowflake
+
+- type: entity
+  name: snowman cake
+  parent: ADTFoodSnackAtmosCake
+  id: ADTFoodSnackSnowmanCake
+  description: snowman cake
+  components:
+  - type: Sprite
+    state: snowman
+
+- type: entity
+  name: socks cake
+  parent: ADTFoodSnackAtmosCake
+  id: ADTFoodSnackSocksCake
+  description: socks cake
+  components:
+  - type: Sprite
+    state: socks
+
+- type: entity
+  name: tree cake
+  parent: ADTFoodSnackAtmosCake
+  id: ADTFoodSnackTreeCake
+  description: tree cake
+  components:
+  - type: Sprite
+    state: tree
+
+#Коробки со сладостями
+
+- type: entity
+  id: ADTBoxNewYearSnack1
+  parent: BaseStorageItem
+  name: new year snackbox 1
+  description: new year snackbox 1
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/new-year/newyearsnack.rsi
+    state: box1
+  - type: Item
+    size: Large
+  - type: Storage
+    maxItemSize: Small
+    maxTotalWeight: 10
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: PhysicalComposition
+    materialComposition:
+      Cardboard: 100
+  - type: StorageFill
+    contents:
+    - id: ADTFoodSnackAtmosCake
+      amount: 1
+    - id: ADTFoodSnackBotanicCake
+      amount: 1
+    - id: ADTFoodSnackCargoCake
+      amount: 1
+    - id: ADTFoodSnackChefCake
+      amount: 1
+    - id: ADTFoodSnackDoctorCake
+      amount: 1
+    - id: ADTFoodSnackJanitoryCake
+      amount: 1
+    - id: ADTFoodSnackScientistCake
+      amount: 1
+    - id: ADTFoodSnackSecurityCake
+      amount: 1
+    - id: ADTFoodSnackYellowCandies
+      amount: 1
+    - id: ADTFoodSnackBunnyCandies
+      amount: 1
+
+- type: entity
+  name: new year snackbox 2
+  description: new year snackbox 2
+  parent: ADTBoxNewYearSnack1
+  id: ADTBoxNewYearSnack2
+  components:
+  - type: Sprite
+    state: box2
+  - type: StorageFill
+    contents:
+    - id: ADTFoodSnackCandyStick
+      amount: 2
+    - id: ADTFoodSnackCookieMan
+      amount: 1
+    - id: ADTFoodSnackGiftCake
+      amount: 1
+    - id: ADTFoodSnackGloveCake
+      amount: 1
+    - id: ADTFoodSnackSnowflakeCake
+      amount: 1
+    - id: ADTFoodSnackSnowmanCake
+      amount: 1
+    - id: ADTFoodSnackSocksCake
+      amount: 1
+    - id: ADTFoodSnackTreeCake
+      amount: 1
+    - id: ADTFoodSnackCoinCandies
+      amount: 1
+
+- type: entity
+  name: new year snackbox 3
+  description: new year snackbox 3
+  parent: ADTBoxNewYearSnack1
+  id: ADTBoxNewYearSnack3
+  components:
+  - type: Sprite
+    state: box3
+  - type: StorageFill
+    contents:
+    - id: ADTFoodSnackMimeCake
+      amount: 1
+    - id: ADTFoodSnackNukieCake
+      amount: 2
+    - id: ADTFoodSnackClownCake
+      amount: 2
+    - id: ADTFoodSnackGreytideCake
+      amount: 2
+    - id: ADTFoodSnackCoinCandies
+      amount: 2
+    - id: ADTFoodSnackBlackCandies
+      amount: 1
+
+#новогодние блюда
+
+- type: entity
+  name: olivier salad
+  parent: FoodBowlBase
+  id: ADTFoodOlivierSalad
+  description: olivier salad
+  suffix: New Year
+  components:
+  - type: FlavorProfile
+    flavors:
+      - ADTOlivier
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/new-year/newyearfood.rsi
+    layers:
+    - state: bowl
+    - state: olivier
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 9
+        - ReagentId: Vitamin
+          Quantity: 3
+
+- type: entity
+  name: jellied meat
+  parent: FoodMeatBase
+  id: ADTFoodJelliedMeat
+  description: jellied meat
+  suffix: New Year
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/new-year/newyearfood.rsi
+    layers:
+    #- state: plate_small
+    - state: jellymeat
+  - type: FlavorProfile
+    flavors:
+      - ADTJellymeat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Protein
+          Quantity: 8
+  - type: Item
+    size: Normal
+  - type: Food
+    transferAmount: 5
+    trash: FoodPlateSmall
+
+- type: entity
+  name: herring under furcoat
+  parent: FoodMeatBase
+  id: ADTFoodHerringUnderFurcoat
+  description: herring under furcoat
+  suffix: New Year
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/new-year/newyearfood.rsi
+    layers:
+    - state: plate_small
+    - state: herring
+  - type: FlavorProfile
+    flavors:
+      - ADTHerringUnderFurcoat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 9
+        - ReagentId: Protein
+          Quantity: 3
+        - ReagentId: Vitamin
+          Quantity: 3
+  - type: Item
+    size: Normal
+  - type: Food
+    transferAmount: 6
+    trash: FoodPlateSmall
+
+- type: entity
+  name: ham
+  parent: FoodMeatBase
+  id: ADTFoodMeatHam
+  description: ham
+  suffix: New Year
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/new-year/newyearfood.rsi
+    layers:
+    - state: plate
+    - state: ham
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 18
+        - ReagentId: Protein
+          Quantity: 6
+  - type: SliceableFood
+    count: 6
+    slice: ADTFoodMeatHamPiece
+  - type: Item
+    size: Normal
+  - type: Food
+    transferAmount: 4
+    trash: FoodPlate
+
+- type: entity
+  name: ham piece
+  parent: FoodMeatBase
+  id: ADTFoodMeatHamPiece
+  description: ham piece
+  suffix: New Year
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/new-year/newyearfood.rsi
+    layers:
+    - state: hampiece
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3
+        - ReagentId: Protein
+          Quantity: 1
+  - type: Item
+    size: Normal
+  - type: Food
+    transferAmount: 6
+
+- type: entity
+  name: pudding
+  parent: FoodCakeBase
+  id: ADTFoodCakePudding
+  description: pudding
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/new-year/newyearfood.rsi
+    layers:
+    #- state: plate_small
+    - state: pudding
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 12
+        - ReagentId: Protein
+          Quantity: 3
+        - ReagentId: Vitamin
+          Quantity: 3
+  - type: Item
+    size: Normal
+  - type: Food
+    transferAmount: 6
+    trash: FoodPlateSmall
+
+- type: entity
+  name: christmas pudding
+  parent: FoodCakeBase
+  id: ADTFoodCakePuddingChristmas
+  description: christmas pudding
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/new-year/newyearfood.rsi
+    layers:
+    #- state: plate_small
+    - state: christmaspudding
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 15
+        - ReagentId: Protein
+          Quantity: 3
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Item
+    size: Normal
+  - type: Food
+    transferAmount: 6
+    trash: FoodPlateSmall
+
+#рецепты
+
+- type: microwaveMealRecipe
+  id: ADTFoodOlivierSaladRecipe
+  name: olivier salad recipe
+  result: ADTFoodOlivierSalad
+  time: 15
+  reagents:
+    Mayo: 5
+  solids:
+    FoodBowlBig: 1
+    FoodPotato: 2
+    FoodMeat: 1
+    FoodCarrot: 1
+    FoodEgg: 1
+
+- type: microwaveMealRecipe
+  id: ADTFoodJelliedMeatRecipe
+  name: jellied meat recipe
+  result: ADTFoodJelliedMeat
+  time: 20
+  reagents:
+    Water: 15
+    TableSalt: 5
+    UncookedAnimalProteins: 10
+  solids:
+    FoodMeat: 1
+    FoodPlateSmall: 1
+
+- type: microwaveMealRecipe
+  id: ADTFoodHerringUnderFurcoatRecipe
+  name: herring under furcoat recipe
+  result: ADTFoodHerringUnderFurcoat
+  time: 15
+  reagents:
+    Mayo: 5
+  solids:
+    FoodCarrot: 2
+    FoodEgg: 1
+    FoodMeatFish: 1
+    FoodPlateSmall: 1
+
+- type: microwaveMealRecipe
+  id: ADTFoodMeatHamRecipe
+  name: ham with mead recipe
+  result: ADTFoodMeatHam
+  time: 25
+  reagents:
+    Blackpepper: 5
+    TableSalt: 5
+  solids:
+    FoodMeat: 2
+    FoodPlate: 1
+
+- type: microwaveMealRecipe
+  id: ADTFoodCakePuddingRecipe
+  name: puding recipe
+  result: ADTFoodCakePudding
+  time: 10
+  reagents:
+    Water: 15
+    Milk: 10
+    Flour: 10
+    Sugar: 15
+    Egg: 6
+  solids:
+    FoodPlateSmall: 1
+
+- type: microwaveMealRecipe
+  id: ADTFoodCakePuddingChristmasRecipe
+  name: christmas puding recipe
+  result: ADTFoodCakePuddingChristmas
+  time: 10
+  reagents:
+    Water: 15
+    Milk: 10
+    Flour: 10
+    Sugar: 15
+    Egg: 6
+  solids:
+    FoodPlateSmall: 1
+    ADTFoodSnackCandyStick: 2
+
+#спавнер еды
+- type: entity
+  parent: MarkerBase
+  id: ADTRandomNewYearFoodSpawner
+  name: random new year food spawner
+  suffix: New Year
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: ADT/Objects/Consumable/Food/new-year/newyearsnack.rsi
+        state: stick
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+      - ADTFoodOlivierSalad
+      - ADTFoodJelliedMeat
+      - ADTFoodHerringUnderFurcoat
+      - ADTFoodMeatHam
+      - ADTFoodCakePudding
+      - ADTFoodCakePuddingChristmas
+      - ADTBoxNewYearSnack1
+      - ADTBoxNewYearSnack2
+      - ADTBoxNewYearSnack3
+      - ADTFoodMeatChickenBaked
+      - ADTFoodMeatChickenBakedWithVegetables
+      - ADTFoodMeatChickenBakedWing
+      - ADTFoodMeatChickenBakedLeg
+    #chance: 0.7

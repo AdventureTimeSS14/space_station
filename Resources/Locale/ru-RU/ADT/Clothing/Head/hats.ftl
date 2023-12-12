@@ -116,7 +116,7 @@ ent-ADTClothingHeadHatsBeretCE = берет старшего инженера
 ent-ADTClothingHeadHatsBeretCentCom = берет центрального командования
     .desc = Зелённый берет с вышитой эмблемой ЦК. Стиль военного бюрократа.
 
-ent-ADTClothingHeadHatDedMoroz = Колпак Деда Мороза
+ent-ADTClothingHeadHatDedMoroz = колпак Деда Мороза
     .desc = Новогодний колпак Деда Мороза.
     .suffix = { "Новый Год" }
 

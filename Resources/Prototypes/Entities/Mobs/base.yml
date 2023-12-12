@@ -153,10 +153,10 @@
     specificHeat: 42
     coldDamage:
       types:
-        Cold: 1 #per second, scales with temperature & other constants
+        Cold: 1.1 #per second, scales with temperature & other constants
     heatDamage:
       types:
-        Heat: 1 #per second, scales with temperature & other constants
+        Heat: 1.1 #per second, scales with temperature & other constants
   - type: Barotrauma
     damage:
       types:

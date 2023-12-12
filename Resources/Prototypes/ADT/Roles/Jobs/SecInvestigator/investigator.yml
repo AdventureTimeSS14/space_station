@@ -24,6 +24,9 @@
   - Service
   - Detective
   - Investigator
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
 
 - type: startingGear
   id: ADTInvestigatorGear
