@@ -71,7 +71,7 @@
   - type: IntrinsicRadioReceiver
   - type: IntrinsicRadioTransmitter
   - type: Wires
-    boardName: "IPC"
+    boardName: "ipc-board-name"
     layoutId: IPC
   #- type: CharacterInformation
   - type: SSDIndicator
