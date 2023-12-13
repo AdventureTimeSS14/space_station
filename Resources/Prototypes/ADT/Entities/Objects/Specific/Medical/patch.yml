@@ -86,6 +86,11 @@
         reagents:
         - ReagentId: ADTStypticPowder
           Quantity: 20
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: ADTStypticPowder
+        Quantity: 20
 #Patch healing small
 - type: entity
   name: healing mini-patch
@@ -104,6 +109,11 @@
         reagents:
         - ReagentId: ADTStypticPowder
           Quantity: 10
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: ADTStypticPowder
+        Quantity: 10
 #Patch burn
 - type: entity
   name: burn patch
@@ -122,6 +132,11 @@
         reagents:
         - ReagentId: ADTSilverSulfadiazine
           Quantity: 20
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: ADTSilverSulfadiazine
+        Quantity: 20
 #Patch burn small
 - type: entity
   name: burn mini-patch.
@@ -140,6 +155,11 @@
         reagents:
         - ReagentId: ADTSilverSulfadiazine
           Quantity: 10
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: ADTSilverSulfadiazine
+        Quantity: 10
 #honk honk?
 - type: entity
   name: honk patch
@@ -158,6 +178,11 @@
         reagents:
         - ReagentId: Honk
           Quantity: 6
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Honk
+        Quantity: 6
 #patch crate
 - type: entity
   id: ADTCratePatchPack
