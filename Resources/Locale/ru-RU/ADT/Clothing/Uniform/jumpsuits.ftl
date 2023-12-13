@@ -306,3 +306,7 @@ ent-ADTClothingUniformShirtSnowflake = костюм с рисунком снеж
     .desc = Зелёный костюм с красивым рисунком красивого снегопада.
 ent-ADTClothingUniformShirtSnowman = костюм с рисунком снеговика
     .desc = Красный костюм с рисунком простого снеговика.
+
+ent-ADTClothingUniformChristmasCorset = рождественский корсет
+    .desc = Достаточно своеобразный рождественский корсет...
+
