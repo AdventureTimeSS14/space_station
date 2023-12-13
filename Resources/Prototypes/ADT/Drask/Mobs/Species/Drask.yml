@@ -52,6 +52,8 @@
       Brute:
         sprite: Mobs/Effects/brute_damage.rsi
         color: "#0091ff"
+      Burn:
+        sprite: Mobs/Effects/burn_damage.rsi
   - type: Speech
     speechSounds: Drask
   - type: Vocal
