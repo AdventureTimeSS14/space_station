@@ -280,6 +280,7 @@ ent-ADTHalloweenPottedPlant2 = зомбицветочек
     .desc = Пахнет умиротворением и разложением.
 
 ent-ADTHelloweenPlantRandom = спавнер декора к Хеллоуину
+    .desc = { ent-MarkerBase.desc }
     .suffix = Хеллоуин
 
 ent-ADTPosterHalloweenSpooky = плакат "Страшненько"
@@ -303,6 +304,7 @@ ent-ADTPosterHalloweenSpiderWeb2 = паутина
     .desc = Дом паука Аркадия.
 
 ent-ADTHalloweenPosterRandom = спавнер настенного декора к Хеллоуину
+    .desc = { ent-MarkerBase.desc }
     .suffix = Хеллоуин
 
 ent-ADTClothingUnderSocksBroom = ведьмина метла
