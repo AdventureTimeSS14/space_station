@@ -127,6 +127,8 @@
     - type: Icon
       sprite: SimpleStation14/Mobs/Species/IPC/parts.rsi
       state: full
+    - type: MindContainer
+      showExamineInfo: true
     - type: Sprite
       noRot: true
       drawdepth: Mobs
