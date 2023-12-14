@@ -2,16 +2,20 @@
 # плод
 - type: entity
   name: mandarin
-  parent: FoodLemon
+  parent: FoodProduceBase
   id: ADTFoodMandarin
   description: Healthy, very orange.
   suffix: NewYear
   components:
-  - type: FlavorProfile
-    flavors:
-      - ADTmandarin
-  - type: Food
-    trash: ADTTrashMandarinPeel
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 9
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
   - type: Sprite
     sprite: ADT/Objects/Specific/Hydroponics/mandarin.rsi
   - type: Produce
@@ -21,9 +25,28 @@
       reagents:
       - ReagentId: ADTJuiceMandarin
         Quantity: 10
-  - type: SliceableFood
-    count: 5
-    slice: ADTFoodMandarinSlice
+  - type: SpawnItemsOnUse
+    items:
+      - id: ADTFoodMandarinPeeled
+      - id: ADTTrashMandarinPeel  
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: mandarin
+  parent: ADTFoodMandarin
+  id: ADTFoodMandarinPeeled
+  description: Peeled mandarin. Is it holidays already?
+  suffix: NewYear
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Hydroponics/mandarin.rsi
+    state: peeledprod
+  - type: SpawnItemsOnUse
+    items:
+      - id: ADTFoodMandarinSlice
+        uses: 9
   - type: Tag
     tags:
     - Fruit
@@ -31,7 +54,7 @@
 # кожура
 - type: entity
   name: mandarin peel
-  parent: TrashBananaPeel
+  parent: BaseItem
   id: ADTTrashMandarinPeel
   suffix: NewYear
   components:
@@ -41,7 +64,10 @@
   - type: Item
     sprite: ADT/Objects/Specific/Hydroponics/mandarin.rsi
     heldPrefix: peel
-
+  - type: Tag
+    tags:
+    - Trash
+  - type: SpaceGarbage
 
 # долька
 - type: entity
