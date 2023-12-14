@@ -7,7 +7,7 @@
   - Bagel
   - Barratry
   - Box
-  - Cluster
+  #- Cluster
   - Core
   - Fland
   #- Kettle
@@ -25,3 +25,4 @@
   #- HalloweenBoxstation
   #- HalloweenBagel
   #- HalloweenAspid
+  - ADTNYCluster
