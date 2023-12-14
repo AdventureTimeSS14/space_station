@@ -51,6 +51,7 @@ namespace Content.IntegrationTests.Tests
             "HalloweenBoxstation",
             "HalloweenBagel",
             "HalloweenAspid",
+            "ADTNYCluster",
 
             // Corvax-Start
             "CorvaxAvrite",

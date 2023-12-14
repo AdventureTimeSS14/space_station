@@ -109,3 +109,13 @@
   cost: 1200
   category: Food
   group: market
+
+- type: cargoProduct
+  id: ADTCargoChocolateGorilla
+  icon:
+    sprite: ADT/Objects/Consumable/Food/new-year/chocogorilla.rsi
+    state: chocogorilla
+  product: ADTCrateChocolateGorilla
+  cost: 1000
+  category: Food
+  group: market

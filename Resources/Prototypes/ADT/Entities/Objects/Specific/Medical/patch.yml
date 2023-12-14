@@ -60,6 +60,8 @@
   - type: Hypospray
     solutionName: pen
     transferAmount: 20
+  - type: Extractable
+    grindableSolutionName: pen
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 1
