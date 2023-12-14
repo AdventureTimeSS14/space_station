@@ -87,6 +87,6 @@
       - id: PeaSeeds
       - id: CocoaSeeds
       - id: ADTBuckwheatSeeds
-      - id: ADTPumpkinSeeds
+      - id: ADTMandarinSeeds
         amount: 3
      #- id: ADTCocoaSeeds

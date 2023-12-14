@@ -283,10 +283,10 @@
     specificHeat: 42
     coldDamage:
       types:
-        Cold: 0.1 #per second, scales with temperature & other constants
+        Cold: 0.2 #per second, scales with temperature & other constants
     heatDamage:
       types:
-        Heat: 0.1 #per second, scales with temperature & other constants
+        Heat: 0.2 #per second, scales with temperature & other constants
   - type: ThermalRegulator
     metabolismHeat: 800
     radiatedHeat: 100
