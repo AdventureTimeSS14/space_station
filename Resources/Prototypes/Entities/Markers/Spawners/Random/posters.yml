@@ -99,6 +99,9 @@
       - ADTPosterContrabandLustArDeco
       - ADTPosterDontSitDown
       - ADTPosterTayarHalloween
+      - ADTPosterLustyMoth
+      - ADTPosterWatchOutChem
+      - ADTPosterPanem
     chance: 1
 
 - type: entity
@@ -163,4 +166,16 @@
       - ADTPosterLegitOktoberfest2 #спрайт от Празата
       - ADTPosterPassTheBanana #спрайт от Уолтера
       - ADTPosterSingoPizza
-    chance: 1
+      - ADTPosterPapersPlease
+      - ADTPosterDontTalkToArty
+      - ADTPosterWorkUnderWay
+      - ADTPosterPlasmaMan
+    #chance: 0.6
+    rarePrototypes: #временный прикол, который стоит потом убрать.
+      - ADTPosterNewYear
+      - ADTPosterNewYear2
+      - ADTPosterNewYear3
+      - ADTCristmasWreath
+      - ADTCristmasWreath2
+      - ADTCristmasWreath3
+    rareChance: 0.4

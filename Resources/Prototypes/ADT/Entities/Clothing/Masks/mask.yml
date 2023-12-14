@@ -186,3 +186,35 @@
         Heat: 0.9
         Cold: 0.8
         Shock: 0.8
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ADTClothingMaskBorodaDedMoroz
+  suffix: New Year
+  name: Boroda ded moroz
+  description: Boroda ded moroz
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Mask/ded_morozsetboroda.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Mask/ded_morozsetboroda.rsi
+    clothingVisuals:
+      mask:
+      - state: equipped-MASK
+  - type: BreathMask
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ADTChronosMask
+  name: chronos victim mask
+  description: chronos victim mask
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Mask/chronosvisor.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Mask/chronosvisor.rsi
+  - type: BreathMask
+  - type: ShowSecurityIcons
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5

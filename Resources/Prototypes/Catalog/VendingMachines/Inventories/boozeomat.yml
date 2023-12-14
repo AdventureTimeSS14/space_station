@@ -14,6 +14,8 @@
     ADTDrinkTeapot: 2 # Всё ещё думаю над тем, уменьшать или оставить такое кол-во.
     DrinkShaker: 5
     ADTDrinkGlassJug: 3
+    ADTCarnationPack: 10 #Новый год
+    ADTCinnamonPack: 5
     DrinkAbsintheBottleFull: 2
     DrinkAleBottleFull: 5
     DrinkBeerBottleFull: 5

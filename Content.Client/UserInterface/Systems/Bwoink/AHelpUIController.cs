@@ -138,7 +138,6 @@ public sealed class AHelpUIController: UIController, IOnSystemChanged<BwoinkSyst
         }
 
         EnsureUIHelper();
-
         if (!UIHelper!.IsOpen)
         {
             UnreadAHelpReceived();
@@ -151,9 +150,7 @@ public sealed class AHelpUIController: UIController, IOnSystemChanged<BwoinkSyst
         // Список звуковых эффектов
         var soundEffects = new List<string>
         {
-        "/Audio/Effects/adminhelp1.ogg",
-        "/Audio/Effects/adminhelp2.ogg",
-        "/Audio/Effects/adminhelp3.ogg"
+        "/Audio/Effects/adminhelp.ogg"
         };
 
         // Получение случайного звукового эффекта из списка

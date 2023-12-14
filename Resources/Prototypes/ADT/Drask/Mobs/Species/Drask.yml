@@ -52,6 +52,8 @@
       Brute:
         sprite: Mobs/Effects/brute_damage.rsi
         color: "#0091ff"
+      Burn:
+        sprite: Mobs/Effects/burn_damage.rsi
   - type: Speech
     speechSounds: Drask
   - type: Vocal
@@ -59,6 +61,9 @@
       Male: MaleDrask
       Female: FemaleDrask
       Unsexed: MaleDrask
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Drask
 
 - type: entity
   save: false

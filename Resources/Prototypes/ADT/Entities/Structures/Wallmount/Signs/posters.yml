@@ -518,5 +518,130 @@
   description: Pizza Time!
   components:
   - type: Sprite
-    sprite: ADT/Objects/Decoration/pizzatime.rsi
+    sprite: ADT/Objects/Decoration/pizzatime.rsi #спрайты от yamato_no_orochi8
     state: pizzatime
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterLustyMoth
+  name: lusty grey moth
+  description: You think you see them somewhere
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/lustymoth.rsi #спрайты от nerdyyyy__
+    state: lustymoth
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterWatchOutChem
+  name: watch out chem
+  description: watch out chem
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/watchoutchem.rsi #спрайты от yamato_no_orochi8
+    state: chem
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#cc0022"
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterPanem
+  name: panem et circenses
+  description: panem et circenses
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/panem.rsi #спрайты от yamato_no_orochi8
+    state: panem
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterPapersPlease
+  name: papers, please!
+  description: papers, please!
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/papersplease.rsi #спрайты от yamato_no_orochi8
+    state: papersplease
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterDontTalkToArty
+  name: dont talk
+  description: dont talk
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/donttalktoarty.rsi #спрайты от yamato_no_orochi8
+    state: donttalktoarty
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#c028fc"
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterWorkUnderWay
+  name: work under way
+  description: work under way
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/workunderway.rsi #спрайты от yamato_no_orochi8
+    state: workunderway
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#d4b30f"
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterPlasmaMan
+  name: plasma!
+  description: plasma!
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/plasmaman.rsi #спрайты от yamato_no_orochi8
+    state: plasmaman
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#d40fca"
+
+#Новогодние постеры
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterNewYear
+  name: "2568"
+  description: Poster that celebrates New Year on Earth.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_new_year.rsi #спрайты от yamato_no_orochi8
+    state: new_year
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#5469e6"
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterNewYear2
+  name: happy new year
+  description: Poster that celebrates New Year on Earth.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_new_year.rsi #спрайты от prazat911
+    state: new_year2
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterNewYear3
+  name: new year tayaran
+  description: Poster that celebrates New Year on Earth.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_new_year.rsi #спрайты от prazat911
+    state: new_year3

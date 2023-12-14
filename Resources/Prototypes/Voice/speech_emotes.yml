@@ -1,6 +1,7 @@
 # vocal emotes
 - type: emote
   id: Scream
+  icon: Interface/Emotes/scream.png
   category: Vocal
   chatMessages: [кричит!] # Corvax-Localization
   chatTriggers:
@@ -42,8 +43,9 @@
 
 - type: emote
   id: Laugh
+  icon: Interface/Emotes/laugh.png
   category: Vocal
-  chatMessages: [смеётся.] # Corvax-Localization
+  chatMessages: [смеётся] # Corvax-Localization
   chatTriggers:
     - laugh
     - laughs
@@ -88,8 +90,9 @@
 
 - type: emote
   id: Sigh
+  icon: Interface/Emotes/sighn.png
   category: Vocal
-  chatMessages: [вздыхает.] # Corvax-Localization
+  chatMessages: [вздыхает] # Corvax-Localization
   chatTriggers:
     - sigh
     - sighs
@@ -108,8 +111,9 @@
 
 - type: emote
   id: Whistle
+  icon: Interface/Emotes/whistle.png
   category: Vocal
-  chatMessages: [свистит.] # Corvax-Localization
+  chatMessages: [свистит] # Corvax-Localization
   chatTriggers:
     - whistle
     - whistle.
@@ -131,8 +135,9 @@
 
 - type: emote
   id: Crying
+  icon: Interface/Emotes/crying.png
   category: Vocal
-  chatMessages: [плачет.] # Corvax-Localization
+  chatMessages: [плачет] # Corvax-Localization
   chatTriggers:
     - cry
     - cry.
@@ -155,7 +160,7 @@
 - type: emote
   id: Squish
   category: Vocal
-  chatMessages: [хлюпает.] # Corvax-Localization
+  chatMessages: [хлюпает] # Corvax-Localization
   chatTriggers:
     - squish
     - squish.
@@ -175,7 +180,7 @@
 - type: emote
   id: Chitter
   category: Vocal
-  chatMessages: [стрекочет.] # Corvax-Localization
+  chatMessages: [стрекочет] # Corvax-Localization
   chatTriggers:
    - chitter
    - chitter.
@@ -195,7 +200,7 @@
 - type: emote
   id: Squeak
   category: Vocal
-  chatMessages: [пищит.] # Corvax-Localization
+  chatMessages: [пищит] # Corvax-Localization
   chatTriggers:
    - squeak
    - squeak.
@@ -215,6 +220,7 @@
 # hand emotes
 - type: emote
   id: Clap
+  icon: Interface/Emotes/claps.png
   category: Hands
   chatMessages: [хлопает!] # Corvax-Localization
   chatTriggers:
@@ -242,8 +248,9 @@
 
 - type: emote
   id: Snap
+  icon: Interface/Emotes/snaps-fingers.png
   category: Hands
-  chatMessages: [щёлкает пальцами.] # Corvax-Localization
+  chatMessages: [щёлкает пальцами] # Corvax-Localization
   chatTriggers:
     - snap
     - snaps
@@ -283,8 +290,9 @@
 
 - type: emote
   id: Salute
+  icon: Interface/Emotes/salute.png
   category: Hands
-  chatMessages: [салютует.] # Corvax-Localization
+  chatMessages: [салютует] # Corvax-Localization
   chatTriggers:
     - salute
     - salute.

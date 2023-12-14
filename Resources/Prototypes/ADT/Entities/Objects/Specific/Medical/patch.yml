@@ -55,9 +55,13 @@
     solutions:
       pen:
         maxVol: 20
+  - type: DeleteOnSolutionEmpty
+    solution: pen
   - type: Hypospray
     solutionName: pen
     transferAmount: 20
+  - type: Extractable
+    grindableSolutionName: pen
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 1

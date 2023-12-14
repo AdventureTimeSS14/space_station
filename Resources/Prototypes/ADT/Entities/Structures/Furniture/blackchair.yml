@@ -151,3 +151,118 @@
   - type: Construction
     graph: ADTStool
     node: whiteStool
+
+#New Year
+- type: entity
+  name: white armchair
+  id: ADTArmchairWhite
+  parent: SeatBase
+  description: It looks comfy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/Armchair/armchair_white.rsi #спрайт от lunalita
+    state: whitearmchair
+  - type: Construction
+    graph: Seat
+    node: adtarmchairwhite
+
+- type: entity
+  name: white armchair
+  id: ADTArmchairWhite2
+  parent: SeatBase
+  description: It looks comfy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/Armchair/armchair_white.rsi #спрайт от lunalita
+    state: whitearmchair_02
+  - type: Construction
+    graph: Seat
+    node: adtarmchairwhite2
+
+- type: entity
+  name: brown armchair
+  id: ADTArmchairBrown
+  parent: SeatBase
+  description: It looks comfy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/Armchair/armchair_brown.rsi #спрайт от lunalita
+    state: brownarmchair
+  - type: Construction
+    graph: Seat
+    node: adtarmchairbrown
+
+- type: entity
+  name: brown armchair
+  id: ADTArmchairBrown2
+  parent: SeatBase
+  description: It looks comfy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/Armchair/armchair_brown.rsi #спрайт от lunalita
+    state: brownarmchair_02
+  - type: Construction
+    graph: Seat
+    node: adtarmchairbrown2
+
+- type: entity
+  name: blue armchair
+  id: ADTArmchairBlue
+  parent: SeatBase
+  description: It looks comfy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/Armchair/armchair_blue.rsi #спрайт от lunalita
+    state: bluearmchair
+  - type: Construction
+    graph: Seat
+    node: adtarmchairblue
+
+- type: entity
+  name: blue armchair
+  id: ADTArmchairBlue2
+  parent: SeatBase
+  description: It looks comfy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: ADT/Structures/Furniture/Armchair/armchair_blue.rsi #спрайт от lunalita
+    state: bluearmchair_02
+  - type: Construction
+    graph: Seat
+    node: adtarmchairblue2

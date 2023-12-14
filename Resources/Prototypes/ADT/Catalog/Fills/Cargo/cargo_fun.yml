@@ -27,3 +27,15 @@
   cost: 4250
   category: Fun
   group: market
+
+- type: cargoProduct
+  id: ADTFunChristmasTree
+  #name: crate of christmas tree
+  #description: crate of christmas tree
+  icon:
+    sprite: ADT/Structures/Furniture/christmas_tree.rsi
+    state: christmas_tree
+  product: ADTCrateChristmasTree
+  cost: 250
+  category: Fun
+  group: market
