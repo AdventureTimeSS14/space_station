@@ -4,6 +4,11 @@ ent-ADTFoodMandarin = мандарин
     .desc = Полезный, оранжевый.
     .suffix = Новый год
 
+# очищенный плод.
+ent-ADTFoodMandarinPeeled = очищенный мандарин
+    .desc = Освобождённый от шкурки мандарин. Что, уже праздники?
+    .suffix = Новый год
+
 # кожура
 ent-ADTTrashMandarinPeel = мандариновая кожура
     .desc = Пахнет новым годом.
