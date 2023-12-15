@@ -9,6 +9,7 @@
     - type: Input
       context: "human"
     - type: InputMover
+    - type: ZombieImmune
     - type: MobMover
     - type: DamageOnHighSpeedImpact
       damage:
