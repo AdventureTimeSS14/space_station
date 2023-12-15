@@ -1,0 +1,53 @@
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ADTClothingOuterHardsuitERTHeavy
+  name: ERT heavy suit
+  description: ERT heavy suit
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/heavyERT.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/heavyERT.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.2
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.2
+        Slash: 0.2
+        Piercing: 0.15
+        Heat: 0.2
+        Radiation: 0
+        Caustic: 0.1
+        Stun: 0.05
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.75
+  - type: ToggleableClothing
+    clothingPrototype: ADTClothingHeadHelmetHardsuitERTHeavy
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase # Corvax-Resprite
+  id: ADTClothingHeadHelmetHardsuitERTHeavy
+  noSpawn: true
+  name: ERT heavy helmet
+  description: ERT heavy helmet
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/heavyERT.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/heavyERT.rsi
+  - type: PointLight # Corvax-Resprite
+    color: blue
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
