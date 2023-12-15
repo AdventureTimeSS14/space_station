@@ -75,7 +75,7 @@
     layoutId: IPC
   #- type: CharacterInformation
   - type: SSDIndicator
-#  - type: Uncloneable
+  - type: UnblockableSpeech
 
 - type: entity
   save: false
