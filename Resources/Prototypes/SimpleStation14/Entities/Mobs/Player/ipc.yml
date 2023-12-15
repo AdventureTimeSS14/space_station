@@ -17,7 +17,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      140: Critical
+      125: Critical
       180: Dead
   - type: NpcFactionMember
     factions:
@@ -45,9 +45,6 @@
   - type: Battery
     maxCharge: 150000
     startingCharge: 150000
-  #- type: RandomBatteryCharge
-  #  batteryMaxMinMax: 0.85, 1.15
-  #  batteryChargeMinMax: 0.40, 0.90
   - type: Silicon
     entityType: enum.SiliconType.Player
     batteryPowered: true
@@ -61,7 +58,6 @@
       2: 0.80
       1: 0.45
       0: 0.00
-  #- type: Carriable
   - type: BatteryDrinker
   - type: EncryptionKeyHolder
     keySlots: 3
@@ -73,7 +69,6 @@
   - type: Wires
     boardName: "ipc-board-name"
     layoutId: IPC
-  #- type: CharacterInformation
   - type: SSDIndicator
   - type: UnblockableSpeech
 
