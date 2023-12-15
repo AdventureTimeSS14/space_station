@@ -190,6 +190,7 @@
     - id: FoodEggChickenFertilized
       maxAmount: 3
   - type: ReproductivePartner
+  - type: ZombieImmune # Временно. Мертвые зомби курицы бесконечно спавнят яйца с зараженными курицами
   - type: Appearance
   - type: DamageStateVisuals
     states:
@@ -311,7 +312,7 @@
     thresholds:
     - trigger:
         !type:DamageTypeTrigger
-        damageType: Blunt #при каком дамаге это происходит 
+        damageType: Blunt #при каком дамаге это происходит
         damage: 80
       behaviors:
       - !type:GibBehavior { }
