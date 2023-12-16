@@ -139,7 +139,6 @@
       - CellRechargerCircuitboard
       - BorgChargerCircuitboard
       - WeaponCapacitorRechargerCircuitboard
-      - ADTFormPrinterMachineCircuitboard
   - type: EmagLatheRecipes
     emagStaticRecipes:
        - CartridgePistol
@@ -401,7 +400,6 @@
       - TelecomServerCircuitboard
       - MassMediaCircuitboard
       - ADTSMESIndustrialMachineCircuitboard
-      - ADTFormPrinterMachineCircuitboard
   - type: MaterialStorage
     whitelist:
       tags:
@@ -852,8 +850,7 @@
       - ClothingOuterWinterCargo
       - ClothingOuterWinterMiner
       - ClothingOuterWinterMed
-      - ClothingOuterWinterPara      - BorgChargerCircuitboard
-      - WeaponCapacitorRechargerCircuitboard
+      - ClothingOuterWinterPara
       - ClothingOuterWinterChem
       - ClothingOuterWinterGen
       - ClothingOuterWinterViro

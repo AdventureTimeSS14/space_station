@@ -66,7 +66,6 @@
     gloves: ClothingHandsGlovesHop
     ears: ClothingHeadsetAltCommand
     belt: BoxFolderClipboard
-    pocket1: ADTFormPrinterMachineCircuitboard
     underwearb: ClothingUnderwearBottomBoxersHOP # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraHOP # Sirena-Underwear
