@@ -185,20 +185,8 @@
       - !type:Jitter
         conditions:
         - !type:ReagentThreshold
-<<<<<<< HEAD
           min: 15
       - !type:Drunk
-=======
-          min: 15.1
-      - !type:PopupMessage
-        conditions:
-        - !type:ReagentThreshold
-          min: 15.05
-        type: Local
-        visualType: Small
-        messages: [ "medicine-effect-stress" ]
-        probability: 0.2
->>>>>>> 804ccd63f97e2efc6514b465e2522c579bfa5407
 
 - type: reagent
   id: Cryoxadone
