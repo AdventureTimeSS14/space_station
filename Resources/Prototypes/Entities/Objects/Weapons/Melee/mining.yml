@@ -101,8 +101,6 @@
         Brute: -10
         Burn: -10
         Airloss: -5
-  - type: Sprite
-    sprite: Objects/Weapons/Melee/crusher_glaive.rsi
   - type: MeleeWeapon
     attackRate: 1.25
   - type: Tag

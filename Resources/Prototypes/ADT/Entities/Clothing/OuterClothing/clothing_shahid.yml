@@ -8,7 +8,7 @@
     sprite: ADT/Clothing/OuterClothing/Fun/ShahidBelt.rsi
   - type: Clothing
     sprite: ADT/Clothing/OuterClothing/Fun/ShahidBelt.rsi
-  - type: Armor 
+  - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.9
@@ -17,7 +17,7 @@
         Heat: 0.9
   - type: Storage
     maxItemSize: Small
-    maxTotalWeight: 4
+    grid
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -54,4 +54,4 @@
           - !type:DoActsBehavior
             acts: ["Destruction"]
           - !type:ExplodeBehavior
-  
+
