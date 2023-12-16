@@ -1005,12 +1005,6 @@ entities:
       pos: -2.5,-8.5
       parent: 173
       type: Transform
-    - containers:
-        machine_board: !type:Container
-          ents: []
-        machine_parts: !type:Container
-          ents: []
-      type: ContainerContainer
 - proto: NesThrusterRSY
   entities:
   - uid: 70
