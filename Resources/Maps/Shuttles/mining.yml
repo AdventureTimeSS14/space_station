@@ -1132,7 +1132,7 @@ entities:
       pos: -3.5,7.5
       parent: 181
       type: Transform
-- proto: NesNigThruster
+- proto: NesBigThruster
   entities:
   - uid: 23
     components:
@@ -1140,12 +1140,6 @@ entities:
       pos: -2.5,-7.5
       parent: 181
       type: Transform
-    - containers:
-        machine_board: !type:Container
-          ents: []
-        machine_parts: !type:Container
-          ents: []
-      type: ContainerContainer
 - proto: NesOldThrusterRSY
   entities:
   - uid: 29

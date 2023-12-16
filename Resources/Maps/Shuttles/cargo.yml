@@ -162,12 +162,30 @@ entities:
             0: 140
           -2,-2:
             0: 32768
+            1: 19660
+          -2,-3:
+            1: 32768
         uniqueMixes:
         - volume: 2500
           temperature: 293.15
           moles:
           - 21.824879
           - 82.10312
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 0
+          - 0
           - 0
           - 0
           - 0
@@ -979,7 +997,7 @@ entities:
     - pos: -2.3491383,7.651448
       parent: 173
       type: Transform
-- proto: NesNigThruster
+- proto: NesBigThruster
   entities:
   - uid: 140
     components:
@@ -1037,13 +1055,6 @@ entities:
   - uid: 166
     components:
     - pos: 0.5,4.5
-      parent: 173
-      type: Transform
-- proto: PlushieShadowkin
-  entities:
-  - uid: 163
-    components:
-    - pos: -0.25857472,-3.5278215
       parent: 173
       type: Transform
 - proto: Poweredlight
@@ -1196,10 +1207,6 @@ entities:
       parent: 173
       type: Transform
     - linkedPorts:
-        invalid:
-        - Left: Forward
-        - Right: Reverse
-        - Middle: Off
         42:
         - Left: Forward
         - Right: Reverse

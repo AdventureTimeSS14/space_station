@@ -107,7 +107,7 @@
         - WallLayer
 
 - type: entity
-  id: NesNigThruster
+  id: NesBigThruster
   name: СЭИД двигатель
   parent: [ NesBaseBigStructure, BaseThruster ]
   components:
