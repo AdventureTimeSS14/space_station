@@ -518,7 +518,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: ADTClothingUniformJumpsuitBlackShirt
-  name: black shirt 
+  name: black shirt
   description: An usual black shirt. Made by company "Modeling Agency Dar-Vaxed".
   components:
   - type: Sprite
@@ -533,7 +533,7 @@
   description: An usual blue shirt with brown pants. Made by company "Modeling Agency Dar-Vaxed".
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/blue_shirt.rsi 
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/blue_shirt.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/blue_shirt.rsi #спрайты от prazat911
 
@@ -544,7 +544,7 @@
   description: For those, who don't like bright colors.
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/gothic_attire.rsi 
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/gothic_attire.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/gothic_attire.rsi #спрайты от dion_clawed
 
@@ -566,7 +566,7 @@
   description: I don't know how he got there...
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/fancy_shirt.rsi 
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/fancy_shirt.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/fancy_shirt.rsi #спрайты от prazat911
 
@@ -588,7 +588,7 @@
   description: An ideal variant for those, who wants to look serious, but still lively as a cricket. Made by company "Modeling Agency Dar-Vaxed".
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/hawaiian_shirt.rsi 
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/hawaiian_shirt.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/hawaiian_shirt.rsi #спрайты от prazat911
 
@@ -599,7 +599,7 @@
   description: A carefully groomed suit. Maybe it had bright brown colours, until they came out. Made by company "Modeling Agency Dar-Vaxed".
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Uniforms/Jumpsuit/old_brown_shirt.rsi 
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/old_brown_shirt.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/old_brown_shirt.rsi #спрайты от prazat911
 
@@ -857,7 +857,7 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/newmekkauniform.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/newmekkauniform.rsi
-  - type: Armor 
+  - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.8
@@ -908,7 +908,7 @@
 #New Year
 - type: entity
   parent: ClothingUniformBase
-  id: ADTClothingUniformJumpsuitSweaterHolidayBeige 
+  id: ADTClothingUniformJumpsuitSweaterHolidayBeige
   name: beige sweater
   description: A real star of the show is wearing this sweater.
   suffix: New Year
@@ -1049,3 +1049,27 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_snowman.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/New-Year/shirt_snowman.rsi #спрайты от prazat911
+
+#Одежда от Тимрики
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformCasimaCorsete
+  name: камиза с корсетом #Именная одежда Pangaari
+  description: Этот образ кажется вам очередным урывком прошлого. Выглядит просто, но от чего-то загадочно.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/casima_corsete.rsi #спрайты от тимрики
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/casima_corsete.rsi #спрайты от тимрики
+
+#Карсет, который лифчик. Потому что нижнее бельё находится ниже по слою, чем внешние черты. 
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformChristmasCorset
+  name: christmas corset
+  description: A questionable corset for christmas...
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Top/christmas_bra.rsi #спрайты от prazat911

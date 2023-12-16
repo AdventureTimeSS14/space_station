@@ -14,6 +14,7 @@
       department: Engineering
       time: 216000 # 60 hrs
   startingGear: SeniorEngineerGear
+  canBeAntag: false
   icon: "JobIconSeniorEngineer"
   supervisors: job-supervisors-ce
   access:
@@ -21,6 +22,10 @@
   - Engineering
   - External
   - Atmospherics
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
 
 - type: startingGear
   id: SeniorEngineerGear

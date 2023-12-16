@@ -36,13 +36,13 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 501
+            damage: 251
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
         - trigger:
             !type:DamageTrigger
-            damage: 500 #This is probably enough damage before it breaks
+            damage: 250 #This is probably enough damage before it breaks
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -149,13 +149,13 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 501
+            damage: 251
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
         - trigger:
             !type:DamageTrigger
-            damage: 500 #Weaker shield
+            damage: 250 #Weaker shield
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -337,7 +337,7 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 500
+            damage: 250
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -420,13 +420,13 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 501
+            damage: 251
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
         - trigger:
             !type:DamageTrigger
-            damage: 500
+            damage: 250
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -514,13 +514,13 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 501
+            damage: 251
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
         - trigger:
             !type:DamageTrigger
-            damage: 500
+            damage: 250
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
