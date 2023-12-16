@@ -300,7 +300,7 @@
         scaleByQuantity: true
         ignoreResistances: true
         damage:
-          Groups:
+          groups:
             Brute: -5
             Burn: -5
 
@@ -406,7 +406,7 @@
         ignoreResistances: true
         damage:
           types:
-            Cellular: 0.01
+            Cellular: 0.5
       - !type:GenericStatusEffect
         conditions:
         - !type:ReagentThreshold
@@ -415,9 +415,10 @@
         key: SeeingRainbows
         component: SeeingRainbows
         type: Add
-        time: 5
+        time: 500
         refresh: false
       - !type:Drunk
+        boozePower: 500
         conditions:
         - !type:ReagentThreshold
           reagent: Frezon
