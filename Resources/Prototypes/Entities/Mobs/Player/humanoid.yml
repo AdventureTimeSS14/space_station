@@ -367,6 +367,32 @@
     - type: Loadout
       prototypes: [ ERTSecurityGearEVA ]
 
+- type: entity
+  id: RandomHumanoidSpawnerERTSecurityHeavy
+  parent: RandomHumanoidSpawnerERTSecurity
+  name: ERT security heavy
+  suffix: ERTRole, Armored EVA
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertsecurityeva
+    - type: RandomHumanoidSpawner
+      settings: ERTSecurityHeavy
+
+- type: randomHumanoidSettings
+  speciesBlacklist:
+    - Diona
+  id: ERTSecurityHeavy
+  parent: ERTSecurity
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-ert-security-name
+      description: ghost-role-information-ert-security-description
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ ERTSecurityGearHeavy ]
+
 #против революции
 
 - type: entity

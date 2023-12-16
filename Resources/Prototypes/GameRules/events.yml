@@ -165,7 +165,7 @@
   noSpawn: true
   components:
   - type: StationEvent
-    earliestStart: 60
+    earliestStart: 15
     weight: 2
     minimumPlayers: 25 #Enough to hopefully have at least one engineering guy
     startAnnouncement: station-event-meteor-swarm-start-announcement
@@ -257,7 +257,7 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 10
+    weight: 5
     startAnnouncement: station-event-solar-flare-start-announcement
     endAnnouncement: station-event-solar-flare-end-announcement
     startAudio: # Corvax-Announcements

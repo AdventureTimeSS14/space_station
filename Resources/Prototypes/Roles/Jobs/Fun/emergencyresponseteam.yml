@@ -223,6 +223,29 @@
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
+- type: startingGear
+  id: ERTSecurityGearHeavy
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTSecurity
+    back: ClothingBackpackERTSecurityFilled
+    shoes: ADTClothingShoesBootsMagERT
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ADTClothingOuterHardsuitERTHeavy
+    suitstorage: OxygenTankFilled
+    id: ERTLeaderPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ADTClothingBeltMilitaryWebbingRPSSL
+    pocket1: PinpointerNuclear
+    pocket2: FlashlightSeclite
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+  inhand:
+    - ADTERTShield
+
 
 # Medical
 - type: job

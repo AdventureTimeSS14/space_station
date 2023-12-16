@@ -1708,7 +1708,7 @@ namespace Content.Shared.CCVar
         /// Link to Discord server to show in the launcher.
         /// </summary>
         public static readonly CVarDef<string> InfoLinksDiscord =
-            CVarDef.Create("infolinks.discord", "https://discord.gg/RHasSfZUZm", CVar.SERVER | CVar.REPLICATED);
+            CVarDef.Create("infolinks.discord", "https://discord.gg/3psEVT8e9B", CVar.SERVER | CVar.REPLICATED);
 
         /// <summary>
         /// Link to website to show in the launcher.
@@ -1732,7 +1732,7 @@ namespace Content.Shared.CCVar
         /// Link to wiki to show in the launcher.
         /// </summary>
         public static readonly CVarDef<string> InfoLinksWiki =
-            CVarDef.Create("infolinks.wiki", "https://ss14adventure.fandom.com/ru/", CVar.SERVER | CVar.REPLICATED);
+            CVarDef.Create("infolinks.wiki", "https://wiki.adventurestation.space/", CVar.SERVER | CVar.REPLICATED);
 
         /// <summary>
         /// Link to Patreon. Not shown in the launcher currently.
