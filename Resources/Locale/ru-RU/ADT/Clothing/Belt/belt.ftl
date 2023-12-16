@@ -11,3 +11,11 @@ ent-ADTClothingBeltBlackSuspenders = чёрные подтяжки
 
 ent-ADTClothingBeltBrownSuspenders = кожанные подтяжки
     .desc = Обычные подтяжки из грубой кожи. Производство компании "Modeling Agency Dar-Vaxed".
+
+ent-ADTClothingBeltMedicalBag = медицинская поясная сумка
+    .desc = Небольшая, но вместительная сумка для хранения медикаментов. Тут даже поместится планшет для бумаги!
+    .suffix = { "" }
+
+ent-ADTClothingBeltMedicalBagFilled = медицинская поясная сумка
+    .desc = Небольшая, но вместительная сумка для хранения медикаментов. Тут даже поместится планшет для бумаги!
+    .suffix = { "Заполнено" }

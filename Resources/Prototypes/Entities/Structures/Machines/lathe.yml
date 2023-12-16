@@ -695,6 +695,8 @@
     staticRecipes:
       - Brutepack
       - Ointment
+      - ADTAntibioticOintment
+      - ADTMedicalTourniquet
       - HandLabeler
       - Defibrillator
       - HandheldHealthAnalyzer
@@ -705,8 +707,12 @@
       - Syringe
       - Implanter
       - PillCanister
+      - ADTPillCanister
+      - ADTPillPack
       - BodyBag
+      - ADTFootTag
       - ChemistryEmptyBottle01
+      - ADTPlasticBottle
       - VehicleWheelchairFolded
       - RollerBedSpawnFolded
       - CheapRollerBedSpawnFolded

@@ -1,0 +1,19 @@
+- type: entity
+  id: ADTBookNewChemicals
+  parent: BaseItem
+  name: magazine about new medication
+  description: A magazine, which consists information about chemicals.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Misc/new_recipe_book.rsi
+    layers:
+    - state: icon
+  - type: Tag
+    tags:
+    - Book
+  - type: Item
+    size: Small
+  - type: GuideHelp
+    openOnActivation: true
+    guides:
+    - ADTChemicals

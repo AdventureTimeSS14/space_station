@@ -256,6 +256,7 @@
         - PillCanister
         - Radio
         - DiscreteHealthAnalyzer
+        - Defibrillator
       components:
         - Hypospray
         - Injector
@@ -288,6 +289,10 @@
       #   whitelist:
       #     tags:
       #     - WrenchMedical
+      defibrillator:
+        whitelist:
+         tags:
+         - Defibrillator
       wrench:
         whitelist:
           tags:

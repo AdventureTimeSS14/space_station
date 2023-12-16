@@ -1,0 +1,24 @@
+- type: entity
+  parent: IDCardStandard
+  id: ADTPathologistIDCard
+  name: investigator ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idmedicaldoctor
+  - type: PresetIdCard
+    job: ADTPathologist
+
+- type: entity
+  parent: MedicalPDA
+  id: ADTPathologistPDA
+  name: pathologist PDA
+  description: It breezes chill.
+  components:
+  - type: Pda
+    id: ADTPathologistIDCard
+    state: pda-medical
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#065c42"

@@ -35,6 +35,8 @@
   name: guide-entry-bartender
   text: "/ServerInfo/Guidebook/Service/Bartender.xml"
   filterEnabled: True
+  children:
+  - ADTNewCocktails
 
 - type: guideEntry
   id: Chef
@@ -42,7 +44,7 @@
   text: "/ServerInfo/Guidebook/Service/Chef.xml"
   children:
   - Food Recipes
-
+  - ADTNewRecipes
 - type: guideEntry
   id: Food Recipes
   name: guide-entry-foodrecipes

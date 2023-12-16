@@ -4,8 +4,13 @@
     ClothingBackpackDuffelMedical: 4
     ClothingBackpackMedical: 4
     ClothingBackpackSatchelMedical: 4
+    ADTClothingBackpackDuffelMedical: 4
+    ADTClothingBackpackMedical: 4
+    ADTClothingBackpackSatchelMedical: 4
+    ADTClothingBeltMedicalBag: 4
     ClothingUniformJumpsuitParamedic: 4
     ClothingUniformJumpskirtParamedic: 4
+    ADTClothingHeadHatsMedicalBeret: 4
     ClothingHeadNurseHat: 4
     ClothingOuterCoatLab: 4
     ClothingShoesColorWhite: 4

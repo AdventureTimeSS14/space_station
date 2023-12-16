@@ -14,9 +14,13 @@
         amount: 2
       - id: Ointment
         amount: 2
+      - id: ADTAntibioticOintment
+        amount: 2
       - id: Bloodpack
         amount: 2
       - id: Gauze
+      - id: ADTMedicalTourniquet
+        amount: 3
 
 - type: entity
   id: LockerWallMedicalFilled
@@ -33,10 +37,13 @@
         amount: 2
       - id: Ointment
         amount: 2
+      - id: ADTAntibioticOintment
+        amount: 2
       - id: Bloodpack
         amount: 2
       - id: Gauze
-
+      - id: ADTMedicalTourniquet
+        amount: 3
 
 - type: entity
   id: LockerMedicalFilled
@@ -50,6 +57,7 @@
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetMedical
       - id: ClothingEyesHudMedical #Removed until working properly
+      - id: ADTClothingBeltMedicalBag
       - id: ClothingBeltMedical
       - id: ClothingHeadHatSurgcapGreen
         prob: 0.1
@@ -84,6 +92,7 @@
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetMedical
       - id: ClothingEyesHudMedical #Removed until working properly
+      - id: ADTClothingBeltMedicalBag
       - id: ClothingBeltMedical
       - id: ClothingHeadHatSurgcapGreen
         prob: 0.1
@@ -120,6 +129,7 @@
       - id: BoxBottle
         amount: 2
       - id: ChemBag
+      - id: ADTClothingBeltMedicalBag
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetMedical
       - id: ClothingMaskSterile
@@ -146,5 +156,7 @@
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetMedical
       - id: ClothingMaskSterile
+      - id: ADTMedicalTourniquet
+        amount: 3
       - id: MedkitFilled
         prob: 0.3

@@ -76,6 +76,11 @@
         damage:
           types:
             Poison: 1.5
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "narcotic-effect-sleepy" ]
+        probability: 0.05
 
 - type: reagent
   id: Mold

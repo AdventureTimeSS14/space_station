@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingOuterBioGeneral
+  id: ADTClothingOuterBioPathologist
+  name: pathologist's bio suit
+  suffix: Pathologist
+  description: A suit that protects against biological contamination while working with dead bodies.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Bio/cmo.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Bio/cmo.rsi

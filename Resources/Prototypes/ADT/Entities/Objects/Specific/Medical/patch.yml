@@ -160,22 +160,3 @@
         reagents:
         - ReagentId: Honk
           Quantity: 6
-#patch crate
-- type: entity
-  id: ADTCratePatchPack
-  parent: CrateMedical
-  components:
-  - type: StorageFill
-    contents:
-      - id: ADTPatchPackFilled
-        amount: 4
-#Cargo
-- type: cargoProduct
-  id: ADTCratePatchPack
-  icon:
-    sprite: ADT/Objects/Specific/Medical/patch.rsi
-    state: patchpack
-  product: ADTCratePatchPack
-  cost: 1600
-  category: Medical
-  group: market

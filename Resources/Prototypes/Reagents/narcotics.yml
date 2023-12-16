@@ -170,6 +170,11 @@
         type: Add
         time: 16
         refresh: false
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "narcotic-effect-rainbows" ]
+        probability: 0.07
 
 - type: reagent
   id: THCOil # deprecated in favor of THC, preserved here for forks
@@ -189,6 +194,11 @@
         type: Add
         time: 16
         refresh: false
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "narcotic-effect-rainbows" ]
+        probability: 0.07
 
 - type: reagent
   id: Nicotine
@@ -231,6 +241,11 @@
         probability: 0.05
       - !type:Drunk # Headaches and slurring are major symptoms of brain damage, this is close enough
         boozePower: 5
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "narcotic-effect-rainbows" ]
+        probability: 0.07
 
 - type: reagent
   id: SpaceDrugs
@@ -249,6 +264,11 @@
         type: Add
         time: 5
         refresh: false
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "narcotic-effect-rainbows" ]
+        probability: 0.07
 
 - type: reagent
   id: Bananadine
@@ -290,6 +310,11 @@
         component: ForcedSleeping
         refresh: false
         type: Add
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "narcotic-effect-sleepy" ]
+        probability: 0.05
 
 - type: reagent
   id: MuteToxin

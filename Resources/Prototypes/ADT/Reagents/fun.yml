@@ -1,0 +1,333 @@
+- type: reagent
+  id: ADTMPolymorphine
+  name: reagent-name-polymorphine
+  group: Medicine
+  desc: reagent-desc-polymorphine
+  physicalDesc: reagent-physical-desc-enigmatic
+  flavor: tingly
+  color: "#b26de3"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:Polymorph
+        prototype: ADTPMonkey
+        conditions:
+          - !type:OrganType
+            type: Human
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPMonkey2
+        conditions:
+          - !type:OrganType
+            type: Human
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPMonkey
+        conditions:
+          - !type:OrganType
+            type: Dwarf
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPMonkey2
+        conditions:
+          - !type:OrganType
+            type: Dwarf
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPLizard
+        conditions:
+          - !type:OrganType
+            type: Reptilian
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPLizard2
+        conditions:
+          - !type:OrganType
+            type: Reptilian
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPSpider
+        conditions:
+          - !type:OrganType
+            type: Arachnid
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPSpider2
+        conditions:
+          - !type:OrganType
+            type: Arachnid
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPBush
+        conditions:
+          - !type:OrganType
+            type: Plant
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPBush2
+        conditions:
+          - !type:OrganType
+            type: Plant
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPMothroach
+        conditions:
+          - !type:OrganType
+            type: Moth
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPMothroach2
+        conditions:
+          - !type:OrganType
+            type: Moth
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPSmile
+        conditions:
+          - !type:OrganType
+            type: Slime
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPSmile2
+        conditions:
+          - !type:OrganType
+            type: Slime
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph #тут уже наши расы.
+        prototype: ADTPRodMetall
+        conditions:
+          - !type:OrganType
+            type: Novakid
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPRodMetall2
+        conditions:
+          - !type:OrganType
+            type: Novakid
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph 
+        prototype: ADTPCat
+        conditions:
+          - !type:OrganType
+            type: Tajaran
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPCat2
+        conditions:
+          - !type:OrganType
+            type: Tajaran
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph 
+        prototype: ADTPDog
+        conditions:
+          - !type:OrganType
+            type: Vulpkanin
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPDog2
+        conditions:
+          - !type:OrganType
+            type: Vulpkanin
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph 
+        prototype: ADTPCarp
+        conditions:
+          - !type:OrganType
+            type: Shark
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPCarp
+        conditions:
+          - !type:OrganType
+            type: Shark
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph 
+        prototype: ADTPMonkey 
+        conditions:
+          - !type:OrganType
+            type: Demon
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPMonkey2
+        conditions:
+          - !type:OrganType
+            type: Demon
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:PopupMessage
+        conditions:
+          - !type:ReagentThreshold
+            min: 20
+        type: Local
+        visualType: Small
+        messages: [ "polymorph-effect-feelings" ]
+        probability: 0.05
+
+- type: reagent
+  id: ADTMChaoticPolymorphine
+  name: reagent-name-chaotic-polymorphine
+  group: Medicine
+  desc: reagent-desc-chaotic-polymorphine
+  physicalDesc: reagent-physical-desc-volatile
+  flavor: Magical
+  color: "#62278c"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            min: 30
+            max: 30
+        damage:
+          types:
+            Cellular: 20
+      - !type:Polymorph
+        prototype: ADTPMonkey
+        conditions:
+          - !type:ReagentThreshold
+            min: 30
+            max: 30
+        probability: 0.1
+      - !type:Polymorph
+        prototype: ADTPBread
+        conditions:
+          - !type:ReagentThreshold
+            min: 30
+            max: 30
+        probability: 0.1
+      - !type:Polymorph
+        prototype: ADTPRodMetall2
+        conditions:
+          - !type:ReagentThreshold
+            min: 30
+            max: 30
+        probability: 0.1
+      - !type:Polymorph
+        prototype: ADTPFrog
+        conditions:
+          - !type:ReagentThreshold
+            min: 30
+            max: 30
+        probability: 0.1
+      - !type:Polymorph
+        prototype: ADTPCat
+        conditions:
+          - !type:ReagentThreshold
+            min: 30
+            max: 30
+        probability: 0.1
+      - !type:Polymorph
+        prototype: ADTPSkeleton
+        conditions:
+          - !type:ReagentThreshold
+            min: 30
+            max: 30
+        probability: 0.1
+      - !type:Polymorph
+        prototype: ADTPCow
+        conditions:
+          - !type:ReagentThreshold
+            min: 30
+            max: 30
+        probability: 0.1
+      - !type:Polymorph
+        prototype: ADTPPossum
+        conditions:
+          - !type:ReagentThreshold
+            min: 30
+            max: 30
+        probability: 0.1
+      - !type:Polymorph
+        prototype: ADTPSloth
+        conditions:
+          - !type:ReagentThreshold
+            min: 30
+            max: 30
+        probability: 0.1
+      - !type:Polymorph
+        prototype: ADTPCarp
+        conditions:
+          - !type:ReagentThreshold
+            min: 30
+            max: 30
+        probability: 0.1
+      - !type:PopupMessage
+        conditions:
+          - !type:ReagentThreshold
+            min: 30
+        type: Local
+        visualType: Small
+        messages: [ "polymorph-effect-feelings" ]
+        probability: 0.05

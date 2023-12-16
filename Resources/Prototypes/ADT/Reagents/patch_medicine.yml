@@ -15,13 +15,15 @@
         damage:
           groups:
             Brute: -0.75
+      - !type:ModifyBleedAmount
+        amount: -1 #почему кровоостанавливающая пудра не останавливала кровотечение?
       - !type:PopupMessage
         conditions:
         - !type:TotalDamage
           min: 0.5
         type: Local
         visualType: Small
-        messages: [ "" ]
+        messages: [ "medicine-effect-usual" ]
         probability: 0.05
 #Сульфадиазин серебра
 - type: reagent
@@ -46,5 +48,5 @@
           min: 0.5
         type: Local
         visualType: Small
-        messages: [ "" ]
+        messages: [ "medicine-effect-usual" ]
         probability: 0.05

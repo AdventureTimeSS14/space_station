@@ -1,35 +1,70 @@
 <Document>
 
-# Core Medications
+- Ниже преведены новые препараты!
 
-These medications are almost always useful to medbay in one way or another.
+# Основные лекарства
+
+Эти лекарства, так или иначе, почти всегда полезны в медицинском отсеке.
 
 <GuideReagentEmbed Reagent="Bicaridine"/>
 <GuideReagentEmbed Reagent="Kelotane"/>
 <GuideReagentEmbed Reagent="Dermaline"/>
 <GuideReagentEmbed Reagent="Dylovene"/>
+<GuideReagentEmbed Reagent="Tricordrazine"/>
 <GuideReagentEmbed Reagent="Inaprovaline"/>
 <GuideReagentEmbed Reagent="Dexalin"/>
 <GuideReagentEmbed Reagent="DexalinPlus"/>
-<GuideReagentEmbed Reagent="Iron"/>
+<GuideReagentEmbed Reagent="Saline"/>
 
-# Specialty Medications
+# Дополнительные лекарства
 
-These medications tend to have specific use cases.
+Большинство этих лекарств продаются во многих аптеках по вселенной и имеют большой спрос. Некоторые из них, в паре с определённым химикатом, становятся полноценными медицинскими препаратами.
+
+- Нитрид меди НЕ является медицинским препаратом, а лишь одним из нужных реагентов в реакциях.
+- Желательно добавлять с начала нужное количество меди, а затем азот, чтобы получились точные числа.
+<GuideReagentEmbed Reagent="ADTCopperNitride"/>
+
+## Полезное
+<GuideReagentEmbed Reagent="Charcoal"/>
+<GuideReagentEmbed Reagent="Ipecac"/>
+<GuideReagentEmbed Reagent="ADTMAgolatine"/>
+<GuideReagentEmbed Reagent="ADTMHaloperidol"/>
+<GuideReagentEmbed Reagent="Oculine"/>
+<GuideReagentEmbed Reagent="Vitamin"/>
+
+## Бикаридин
+<GuideReagentEmbed Reagent="ADTMSodiumizole"/>
+<GuideReagentEmbed Reagent="ADTMNitrofurfoll"/>
+<GuideReagentEmbed Reagent="ADTMPeroHydrogen"/>
+
+## Дермалин
+<GuideReagentEmbed Reagent="ADTMAnelgesin"/>
+<GuideReagentEmbed Reagent="ADTMMinoxide"/>
+
+## Диловен
+<GuideReagentEmbed Reagent="ADTMBiomicine"/>
+<GuideReagentEmbed Reagent="Ethylredoxrazine"/>
+
+## Дексалин плюс
+<GuideReagentEmbed Reagent="ADTMDiethamilate"/>
+<GuideReagentEmbed Reagent="ADTMNikematide"/>
+
+# Особые лекарства
+
+Эти лекарства используют в особых случаях.
 
 <GuideReagentEmbed Reagent="Cryoxadone"/>
 <GuideReagentEmbed Reagent="Epinephrine"/>
 <GuideReagentEmbed Reagent="Hyronalin"/>
 <GuideReagentEmbed Reagent="Arithrazine"/>
 <GuideReagentEmbed Reagent="Phalanximine"/>
-<GuideReagentEmbed Reagent="Tricordrazine"/>
 <GuideReagentEmbed Reagent="TranexamicAcid"/>
 <GuideReagentEmbed Reagent="Romerol"/>
 <GuideReagentEmbed Reagent="Oculine"/>
 
-# All Medications
+# Все лекарства
 
-This is a list of -all- medications available, including ones previously listed.
+Это список -всех- доступных лекарств, включая тех, что указаны выше.
 
 <GuideReagentGroupEmbed Group="Medicine"/>
 

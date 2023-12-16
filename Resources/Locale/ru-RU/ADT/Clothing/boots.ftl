@@ -58,3 +58,6 @@ ent-ADTClothingFootElfBoots = сапоги Эльфа
 
 ent-ADTClothingFootBootsSnowMaiden = сапоги Снегурочки
     .desc = Сапоги внучки Деда Мороза.
+ent-ADTClothingHighboots = сапоги
+    .desc = Пара высоких сапог, чтобы не заморать ноги во время ходьбы по лужам крови.
+    .suffix = { "" }

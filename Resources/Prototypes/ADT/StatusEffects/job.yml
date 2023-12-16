@@ -18,3 +18,10 @@
   icon:
     sprite: Interface/Misc/job_icons.rsi
     state: JobIconADTInvestigator
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconADTPathologist
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: CustomId

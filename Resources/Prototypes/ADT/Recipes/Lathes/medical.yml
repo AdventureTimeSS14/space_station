@@ -1,0 +1,15 @@
+- type: latheRecipe
+  id: ADTMedicalTourniquet
+  result: ADTMedicalTourniquet 
+  completetime: 5
+  materials:
+    Glass: 50
+    Plastic: 50
+
+- type: latheRecipe
+  id: ADTAntibioticOintment
+  result: ADTAntibioticOintment1
+  completetime: 2
+  materials:
+    Glass: 50
+    Plastic: 50

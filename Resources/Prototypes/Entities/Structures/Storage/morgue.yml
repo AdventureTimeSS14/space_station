@@ -71,6 +71,23 @@
   - type: AntiRottingContainer
   - type: StaticPrice
     price: 200
+  - type: PaperLabel
+    labelSlot:
+      insertVerbText: Attach Label
+      ejectVerbText: Remove Label
+      whitelist:
+        components:
+        - Paper
+  - type: ItemMapper
+    mapLayers:
+      morgue_paper:
+        whitelist:
+          tags:
+            - Document
+    sprite: Structures/Storage/morgue.rsi
+  - type: GuideHelp
+    guides: 
+    - ADTPathologist
 
 - type: entity
   id: Crematorium

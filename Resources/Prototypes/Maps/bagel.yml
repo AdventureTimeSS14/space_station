@@ -72,6 +72,7 @@
             ADTBlueShieldOfficer: [ 1, 2 ]
             Magistrat: [ 1, 1 ]
             IAA: [ 1, 1 ] # Corvax-IAA
+            ADTPathologist: [ 1 , 1]
             ADTInvestigator: [ 1, 1 ] #ADT
             ADTEngiBorg: [ 1, 1 ] #ADT
             ADTJanitorBorg: [ 1, 1 ] #ADT

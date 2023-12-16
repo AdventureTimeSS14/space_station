@@ -161,6 +161,68 @@
       - id: ADTBookInvestigator
       - id: ADTRubberStampinvestigator
 
+# Приколы Патологоанатома
+- type: entity
+  parent: ClothingBackpackMedical
+  id: ADTClothingBackpackPathologist
+#  components:
+#  - type: Sprite
+#    sprite: ADT/Clothing/Back/pathologist_backpack.rsi
+
+- type: entity
+  parent: ClothingBackpackSatchelMedical
+  id: ADTClothingBackpackSatchelPathologist
+#  components:
+#  - type: Sprite
+#    sprite: ADT/Clothing/Back/pathologist_satchel.rsi
+
+- type: entity
+  parent: ClothingBackpackDuffelMedical
+  id: ADTClothingBackpackDuffelPathologist
+#  components:
+#  - type: Sprite
+#    sprite: ADT/Clothing/Back/pathologist_duffel.rsi
+
+- type: entity
+  noSpawn: true
+  parent: ADTClothingBackpackPathologist
+  id: ADTClothingBackpackPathologistFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalMedical
+      - id: BoxFolderClipboard
+
+- type: entity
+  noSpawn: true
+  parent: ADTClothingBackpackSatchelPathologist
+  id: ADTClothingBackpackSatchelPathologistFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalMedical
+      - id: BoxFolderClipboard
+
+- type: entity
+  noSpawn: true
+  parent: ADTClothingBackpackDuffelPathologist
+  id: ADTClothingBackpackDuffelPathologistFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalMedical
+      - id: BoxFolderClipboard
+
+# медицинские штучки-брючки
+- type: entity
+  parent: ClothingBackpack
+  id: ADTClothingBackpackMedical
+  name: medical backpack
+  description: Backpack to store some medical equipment.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Backpacks/genetics.rsi
+
 #дамские сумочки
 
 - type: entity

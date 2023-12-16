@@ -56,6 +56,11 @@
         damage:
           groups:
             Toxin: -1
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-hungover" ]
+        probability: 0.04
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
     state: adthungoverangel
