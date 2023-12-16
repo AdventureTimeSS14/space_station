@@ -444,7 +444,7 @@ namespace Content.Shared.CCVar
             CVarDef.Create("pirates.min_players", 25);
 
         public static readonly CVarDef<int> PiratesMaxOps =
-            CVarDef.Create("pirates.max_pirates", 6);
+            CVarDef.Create("pirates.max_pirates", 8);
 
         public static readonly CVarDef<int> PiratesPlayersPerOp =
             CVarDef.Create("pirates.players_per_pirate", 5);
