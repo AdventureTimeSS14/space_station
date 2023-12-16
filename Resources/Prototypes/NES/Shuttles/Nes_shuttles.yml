@@ -114,8 +114,8 @@
   - type: Thruster
     baseThrust: 2000
     thrust: 2000
-  - type: Machine
-    board: ThrusterMachineCircuitboard
+#  - type: Machine
+#   board: ThrusterMachineCircuitboard
   - type: Transform
     anchored: true
   - type: ApcPowerReceiver
