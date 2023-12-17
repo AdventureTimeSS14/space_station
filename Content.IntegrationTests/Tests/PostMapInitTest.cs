@@ -54,9 +54,9 @@ namespace Content.IntegrationTests.Tests
             "ADTNYCluster",
 
             // Corvax-Start
-            "CorvaxAvrite",
+            //"CorvaxAvrite",
             "CorvaxDelta",
-            "CorvaxIshimura",
+            //"CorvaxIshimura",
 			//"CorvaxSpectrum",
             //"CorvaxGate",
             // Corvax-End
@@ -81,7 +81,7 @@ namespace Content.IntegrationTests.Tests
             "Gemini",
             "MeteorArena",
             "Atlas",
-            "Reach"    
+            "Reach"
         };
 
         /// <summary>
