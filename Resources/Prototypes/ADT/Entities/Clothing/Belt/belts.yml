@@ -177,6 +177,8 @@
   - type: Clothing
     sprite: ADT/Clothing/Belt/pyotr_sheath.rsi
   - type: Storage
+    grid:
+    - 0,0,10,7
     maxItemSize: Huge
     whitelist:
       tags:

@@ -28,13 +28,16 @@
   name: investigator bushlat
   description: This pea jacket increases the chance of a suspect's confession by half.
   components:
+  - type: Storage
+    grid:
+    - 0,0,10,7
   - type: Sprite
     sprite: ADT/Clothing/OuterClothing/Coats/investigator_coat.rsi
   - type: Clothing
     sprite: ADT/Clothing/OuterClothing/Coats/investigator_coat.rsi
   - type: StorageFill
     contents:
-    - id: CigarGoldCase
+    #- id: CigarGoldCase
     - id: Lighter
   - type: Armor
     modifiers:

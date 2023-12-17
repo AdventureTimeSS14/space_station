@@ -201,7 +201,7 @@
     sprite: Clothing/Back/Backpacks/ertleader.rsi
   - type: Storage
     grid:
-    - 0,0,10,3
+    - 0,0,10,7
 
 - type: entity
   parent: ClothingBackpackERTLeader
@@ -209,6 +209,9 @@
   name: ERT security backpack
   description: A spacious backpack with lots of pockets, worn by Security Officers of an Emergency Response Team.
   components:
+  - type: Storage
+    grid:
+    - 0,0,10,7
   - type: Sprite
     sprite: Clothing/Back/Backpacks/ertsec.rsi
 
