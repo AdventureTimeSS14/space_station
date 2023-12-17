@@ -1,28 +1,31 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  - CorvaxDelta
-  - Aspid
-  - Atlas
-  - Bagel
-  - Barratry
-  - Box
+  #- CorvaxDelta
+  #- Aspid
+  #- Atlas
+  #- Bagel
+  #- Barratry
+  #- Box
   #- Cluster
-  - Core
-  - Fland
+  #- Core
+  #- Fland
   #- Kettle
   #- Marathon
   #- Meta
-  - Gemini
-  - Omega
+  #- Gemini
+  #- Omega
   #- Origin
-  - Saltern
+  #- Saltern
   #- Packed
-  - ADTPacked
-  - Bagel
-  - Box
-  #- HalloweenKettle
-  #- HalloweenBoxstation
-  #- HalloweenBagel
-  #- HalloweenAspid
+  #- ADTPacked
+  #- Bagel
+  #- Box
   - ADTNYCluster
+  - ADTNYSaltern
+  - ADTNYBox
+  - ADTNYAspid
+  - ADTNYMarathon
+  - ADTNYBagel
+  - ADTNYCore
+  #- ADTNYDelta
