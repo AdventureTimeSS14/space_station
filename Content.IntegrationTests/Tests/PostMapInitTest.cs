@@ -52,6 +52,13 @@ namespace Content.IntegrationTests.Tests
             "HalloweenBagel",
             "HalloweenAspid",
             "ADTNYCluster",
+            "ADTNYSaltern",
+            "ADTNYBox",
+            "ADTNYAspid",
+            "ADTNYMarathon",
+            "ADTNYBagel",
+            "ADTNYCore",
+            "ADTNYDelta",
 
             // Corvax-Start
             "CorvaxAvrite",
