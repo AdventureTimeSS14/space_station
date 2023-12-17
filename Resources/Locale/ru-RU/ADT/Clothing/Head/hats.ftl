@@ -154,3 +154,11 @@ ent-ADTClothingHeadHatsPathologistsCap = шапочка патологоанат
     .desc = медицинская шапочка, которой прикрывают голову при осмотре трупов.
     .suffix = { "" }
 
+ent-ADTClothingHeadHatsParamedicBeret = берет парамедика
+    .desc = Берет, связанный с постоянной медицинской работой.
+
+ent-ADTClothingHeadHatHoodBioPathologist = { ent-ClothingHeadHatHoodBioGeneral }
+    .desc = Капюшон для патологоанатома, защищающий голову и лицо от биологического заражения.
+
+ent-ADTClothingHeadHatHoodBioParamedic = { ent-ClothingHeadHatHoodBioGeneral }
+    .desc = Капюшон для парамедика, защищающий голову и лицо от биологического заражения.

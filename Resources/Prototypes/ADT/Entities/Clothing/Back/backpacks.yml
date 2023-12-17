@@ -229,6 +229,14 @@
   - type: Sprite
     sprite: Clothing/Back/Backpacks/genetics.rsi
 
+- type: entity
+  parent: ClothingBackpack
+  id: ADTClothingBackpackParamedic
+  name: paramedical backpack
+  description: Backpack to store some paramedical equipment.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Back/paramedic_backpack.rsi
 #дамские сумочки
 
 - type: entity

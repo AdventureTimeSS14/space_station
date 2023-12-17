@@ -3,5 +3,7 @@ ent-ADTVendingMachinePrazatClothing = СтильноМат
 
 ent-ADTVendingMachinePill = ТаблеткоМат
     .desc = (Почти) практическое решение всех ваших болячек.
-ent-ADTVendingMachinePatholodrobe = ПатологоДероб
+ent-ADTVendingMachinePatholodrobe = ПатологоШкаф
     .desc = Одежда для работы с трупами.
+ent-VendingMachineParaDrobe = ПараШкаф
+    .desc = Стильная одежда для экстренных медицинских вызовов.

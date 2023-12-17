@@ -149,14 +149,18 @@
       - id: ADTClothingOuterParamedicVoidHardsuit
       - id: ClothingOuterCoatParamedicWB
       - id: ClothingHeadHatParamedicsoft
+      - id: ADTClothingHeadHatsParamedicBeret
       - id: ClothingUniformJumpsuitParamedic
       - id: ClothingUniformJumpskirtParamedic
       - id: ClothingEyesHudMedical
       - id: Defibrillator
       - id: ClothingHandsGlovesLatex
-      - id: ClothingHeadsetMedical
+      - id: ADTClothingHeadsetParamedic
+      - id: ADTClothingOuterCoatLabParamedic
       - id: ClothingMaskSterile
       - id: ADTMedicalTourniquet
         amount: 3
       - id: MedkitFilled
         prob: 0.3
+      - id: ADTClothingHeadHatHoodBioParamedic
+      - id: ADTClothingOuterBioParamedic

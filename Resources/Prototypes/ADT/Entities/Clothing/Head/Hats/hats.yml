@@ -340,6 +340,9 @@
     sprite: ADT/Clothing/Head/Hats/beret_atmospheric_technician.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/beret_atmospheric_technician.rsi
+  - type: Tag
+    tags: 
+      - HamsterWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -351,7 +354,10 @@
     sprite: ADT/Clothing/Head/Hats/beret_HOP.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/beret_HOP.rsi
-  
+  - type: Tag
+    tags: 
+      - HamsterWearable  
+
 - type: entity
   parent: ClothingHeadBase
   id: ADTClothingHeadHatsBeretSOO
@@ -362,6 +368,9 @@
     sprite: ADT/Clothing/Head/Hats/beret_SOO.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/beret_SOO.rsi
+  - type: Tag
+    tags: 
+      - HamsterWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -373,6 +382,9 @@
     sprite: ADT/Clothing/Head/Hats/beret_cargo.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/beret_cargo.rsi
+  - type: Tag
+    tags: 
+      - HamsterWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -384,6 +396,9 @@
     sprite: ADT/Clothing/Head/Hats/beret_CE.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/beret_CE.rsi
+  - type: Tag
+    tags: 
+      - HamsterWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -395,6 +410,9 @@
     sprite: ADT/Clothing/Head/Hats/beret_CentCom.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/beret_CentCom.rsi
+  - type: Tag
+    tags: 
+      - HamsterWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -510,6 +528,7 @@
     sprite: ADT/Clothing/Head/Hats/New-Year/hat_flower.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/New-Year/hat_flower.rsi #спрайты от prazat911
+  
 # medical update
 - type: entity
   parent: ClothingHeadBase
@@ -532,3 +551,42 @@
     sprite: ADT/Clothing/Head/Hats/medical_beret.rsi #спрайты от prazat911
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/medical_beret.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatsParamedicBeret
+  name: paramedic's beret
+  description: A blue beret of a constantly busy job.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/beret_paramedic.rsi #спрайты от prazat911
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/beret_paramedic.rsi
+  - type: Tag
+    tags: 
+      - HamsterWearable
+
+#Шлемы для биокостюмов.
+- type: entity
+  parent: ClothingHeadHatHoodBioGeneral
+  id: ADTClothingHeadHatHoodBioPathologist
+  name: bio hood
+  suffix: pathologist
+  description: An hood for pathologists that protects the head and face from biological contaminants.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/hood_pathologist.rsi #заменить текстурки.
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/hood_pathologist.rsi
+
+- type: entity
+  parent: ClothingHeadHatHoodBioGeneral
+  id: ADTClothingHeadHatHoodBioParamedic
+  name: bio hood
+  suffix: paramedic
+  description: An hood for paramedics that protects the head and face from biological contaminants.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/hood_paramedic.rsi 
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/hood_paramedic.rsi

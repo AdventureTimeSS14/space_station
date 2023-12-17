@@ -29,7 +29,7 @@
     back: ADTClothingBackpackParamedicalMedicalFilled
     shoes: ClothingShoesColorWhite
     id: ParamedicPDA
-    ears: ClothingHeadsetMedical
+    ears: ADTClothingHeadsetParamedic
     belt: ClothingBeltParamedicFilled
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
