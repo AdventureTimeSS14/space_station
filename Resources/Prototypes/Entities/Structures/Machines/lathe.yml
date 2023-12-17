@@ -304,7 +304,7 @@
       - WeaponAdvancedLaser
       - WeaponLaserCannon
       - WeaponXrayCannon
-      - WeaponTaser
+      #- WeaponTaser
       - JawsOfLife
       - ClothingEyesHudDiagnostic #Sirena T4 add
       - ClothingEyesHudMedical #Sirena T4 add

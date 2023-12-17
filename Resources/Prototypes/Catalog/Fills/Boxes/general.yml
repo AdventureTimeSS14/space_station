@@ -6,7 +6,7 @@
   components:
   - type: Item
     size: Large
-    shape: 
+    shape:
     - 0,0,2,2
   - type: Storage
     maxItemSize: Small
@@ -187,7 +187,8 @@
   components:
   - type: Storage
     maxItemSize: Normal
-    maxTotalWeight: 10
+    grid:
+    - 0,0,10,7
   - type: StorageFill
     contents:
       - id: DrinkMREFlask # Size 8

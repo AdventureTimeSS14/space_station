@@ -17,7 +17,8 @@
         Heat: 0.9
   - type: Storage
     maxItemSize: Small
-    grid
+    grid:
+    - 0,0,3,3
   - type: ContainerContainer
     containers:
       storagebase: !type:Container

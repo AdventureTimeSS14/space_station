@@ -754,6 +754,26 @@
       {
         "name": "uneven",
         "directions": 4
-      }
+      },
+        {
+            "name": "classic_business",
+            "directions": 4
+        },
+        {
+            "name": "classic_business2",
+            "directions": 4
+        },
+        {
+            "name": "classic_business3",
+            "directions": 4
+        },
+        {
+            "name": "classic_business4",
+            "directions": 4
+        },
+        {
+            "name": "classic_bedhead",
+            "directions": 4
+        }
     ]
   }

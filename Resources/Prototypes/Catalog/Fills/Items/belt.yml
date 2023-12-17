@@ -187,7 +187,8 @@
   suffix: Filled
   components:
   - type: Storage
-    maxSlots: 9
+    grid:
+    - 0,0,10,7
     maxItemSize: Normal
   - type: StorageFill
     contents:

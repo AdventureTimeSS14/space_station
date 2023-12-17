@@ -57,7 +57,8 @@
   components:
   - type: Storage
     maxItemSize: Normal
-    maxSlots: 10
+    grid:
+    - 0,0,10,7
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -78,7 +79,8 @@
   - type: Storage
     maxItemSize: Normal
     #maxTotalWeight: 0
-    maxSlots: 10 
+    grid:
+    - 0,0,10,7
   - type: StorageFill
     contents:
       - id: EmergencyMedipen # Size 2
@@ -98,7 +100,8 @@
   components:
   - type: Storage
     maxItemSize: Normal
-    maxSlots: 10
+    grid:
+    - 0,0,10,7
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -119,7 +122,8 @@
   - type: Storage
     maxItemSize: Normal
     #maxTotalWeight: 0
-    maxSlots: 10 
+    grid:
+    - 0,0,10,7
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -145,7 +149,8 @@
   - type: Storage
     maxItemSize: Normal
     #maxTotalWeight: 0
-    maxSlots: 10 #By this ignore maxTotalWeight
+    grid:
+    - 0,0,10,7
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -215,7 +220,7 @@
     sprite: ADT/Clothing/Belt/killa_webbing.rsi
   - type: Clothing
     sprite: ADT/Clothing/Belt/killa_webbing.rsi
- 
+
  #Празатомат
 - type: entity
   parent: ClothingBeltBase
@@ -236,7 +241,7 @@
   description: A suspenders made of rough leather. Made by company "Modeling Agency Dar-Vaxed".
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Belt/leather_suspenders.rsi 
+    sprite: ADT/Clothing/Belt/leather_suspenders.rsi
   - type: Clothing
     sprite: ADT/Clothing/Belt/leather_suspenders.rsi #спрайты от prazat911
     quickEquip: true
