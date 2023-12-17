@@ -191,7 +191,9 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalMedical
-      - id: BoxFolderClipboard
+      - id: ADTSmallSyringe
+      - id: BodyBag_Folded
+      - id: ADTFootTag
 
 - type: entity
   noSpawn: true
@@ -201,7 +203,9 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalMedical
-      - id: BoxFolderClipboard
+      - id: ADTSmallSyringe
+      - id: BodyBag_Folded
+      - id: ADTFootTag
 
 - type: entity
   noSpawn: true
@@ -211,7 +215,9 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalMedical
-      - id: BoxFolderClipboard
+      - id: ADTSmallSyringe
+      - id: BodyBag_Folded
+      - id: ADTFootTag
 
 # медицинские штучки-брючки
 - type: entity

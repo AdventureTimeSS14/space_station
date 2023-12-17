@@ -27,7 +27,7 @@
         amount: 10
   - type: GuideHelp
     guides: 
-    - Medicine # заменитт на врачебный
+    - Medical Doctor # заменитт на врачебный
 
 - type: entity
   name: agolatine canister
@@ -46,7 +46,7 @@
         amount: 10
   - type: GuideHelp
     guides: 
-    - Medicine # заменить на врачебный
+    - Medical Doctor # заменить на врачебный
 
 # бутылочка (не разбивающаяся)
 - type: entity
@@ -119,7 +119,7 @@
     price: 0
   - type: GuideHelp
     guides: 
-    - Medicine #заменить на врачебный
+    - Medical Doctor
 
 - type: entity
   id: ADTPlasticBottle
@@ -221,7 +221,7 @@
       - Pill
   - type: GuideHelp
     guides: 
-    - Medicine # заменить на гайд врачей
+    - Medical Doctor # заменить на гайд врачей
 
 - type: entity
   id: ADTPillPack
@@ -359,7 +359,7 @@
   components:
   - type: GuideHelp
     guides: 
-    - Medicine #заменить на врачебный
+    - Medical Doctor
 
 - type: entity
   name: sodiumizole pill
@@ -527,7 +527,7 @@
   name: small syringe
   description: A small syringe to take.. you guessed it, small samples of liquid.
   parent: BaseItem
-  id: ADTSMallSyringe
+  id: ADTSmallSyringe
   components:
   - type: Sprite
     sprite: ADT/Objects/Specific/Medical/syringe.rsi
@@ -549,7 +549,7 @@
       injector:
         maxVol: 5
   - type: FitsInDispenser
-    solution: beaker
+    solution: injector
   - type: Injector
     minTransferAmount: 1
     maxTransferAmount: 5
@@ -563,6 +563,10 @@
     tags:
     - Syringe
     - Trash
+  - type: UserInterface
+    interfaces:
+    - key: enum.TransferAmountUiKey.Key
+      type: TransferAmountBoundUserInterface
 
 - type: entity
   name: box of small syringes
@@ -575,7 +579,7 @@
     maxItemSize: Small
   - type: StorageFill
     contents:
-      - id: ADTSMallSyringe
+      - id: ADTSmallSyringe
         amount: 6
   - type: Sprite
     sprite: ADT/Objects/Specific/Medical/syringe.rsi

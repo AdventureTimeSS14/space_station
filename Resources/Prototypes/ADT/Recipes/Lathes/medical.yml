@@ -13,3 +13,11 @@
   materials:
     Glass: 50
     Plastic: 50
+
+- type: latheRecipe
+  id: ADTSmallSyringe
+  result: ADTSmallSyringe
+  completetime: 1
+  materials:
+    Plastic: 25
+    Steel: 25

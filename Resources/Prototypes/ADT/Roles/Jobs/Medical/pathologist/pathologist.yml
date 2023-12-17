@@ -24,6 +24,7 @@
     id: ADTPathologistPDA
     ears: ClothingHeadsetMedical
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraSportsAlternative # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerclothingskirt: ADTClothingUniformPathologistSuit
