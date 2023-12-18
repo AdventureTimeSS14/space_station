@@ -150,7 +150,8 @@ public sealed class AHelpUIController: UIController, IOnSystemChanged<BwoinkSyst
         // Список звуковых эффектов
         var soundEffects = new List<string>
         {
-        "/Audio/Effects/adminhelp.ogg"
+        "/Audio/Effects/adminhelp.ogg",
+        "/Audio/Effects/adminhelpbread4.ogg"
         };
 
         // Получение случайного звукового эффекта из списка
