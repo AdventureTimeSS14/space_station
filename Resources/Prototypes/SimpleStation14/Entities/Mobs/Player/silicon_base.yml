@@ -20,13 +20,6 @@
     - type: Clickable
     - type: Damageable
       damageContainer: Inorganic # Note that for dumb reasons, this essentially makes them a wall.
-    - type: PassiveDamage # Slight passive regen. Костыль.
-      allowedStates:
-      - Critical
-      damageCap: 20
-      damage:
-        groups:
-          Brute: 0.01
     # - type: Bloodstream # This is left commented out because it's not necessary for a robot, but you may want it.
     #   bloodReagent: MotorOil
     #   bloodlossDamage:
@@ -118,7 +111,7 @@
         0: Alive
         165: Dead
     - type: Damageable
-      damageContainer: Silicon # Not a wall.
+      damageContainer: ADTSilicon # Not a wall.
     - type: Stamina
       critThreshold: 200
     - type: Destructible

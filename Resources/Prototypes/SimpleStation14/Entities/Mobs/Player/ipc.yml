@@ -19,6 +19,7 @@
       0: Alive
       125: Critical
       180: Dead
+    allowRevives: true # Для воскрешения достаточно починить урон. - ss220.
   - type: NpcFactionMember
     factions:
     - NanoTrasen
@@ -71,6 +72,7 @@
     layoutId: IPC
   - type: SSDIndicator
   - type: UnblockableSpeech
+  - type: EmotePanel
 
 - type: entity
   save: false
