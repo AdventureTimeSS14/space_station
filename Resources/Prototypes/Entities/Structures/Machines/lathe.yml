@@ -138,7 +138,7 @@
       - SubstationMachineCircuitboard
       - CellRechargerCircuitboard
       - BorgChargerCircuitboard
-      - IndustrialChargerCircuitboard
+      #- IndustrialChargerCircuitboard # закомментировано для теста
       - WeaponCapacitorRechargerCircuitboard
       - ADTFormPrinterMachineCircuitboard
   - type: EmagLatheRecipes
