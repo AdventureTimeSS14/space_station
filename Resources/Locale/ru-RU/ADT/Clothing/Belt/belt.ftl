@@ -11,3 +11,7 @@ ent-ADTClothingBeltBlackSuspenders = чёрные подтяжки
 
 ent-ADTClothingBeltBrownSuspenders = кожанные подтяжки
     .desc = Обычные подтяжки из грубой кожи. Производство компании "Modeling Agency Dar-Vaxed".
+
+ent-ADTClothingBeltSecAuditorHolster = кобура аудитора СБ
+    .desc = Кобура для проверяющего работу Службы Безопасности станции.
+    .suffix = { "ЦК, CombatBibis, Заполненная" }
