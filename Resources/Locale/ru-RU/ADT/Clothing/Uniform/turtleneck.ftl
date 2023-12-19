@@ -146,6 +146,12 @@ ent-ADTQMJumpsuitWarm = водолазка квартирмейстера
     .desc = Строгая водолазка, предназначенная для суровых условий работы в области снабжения.
     .suffix = {""}
 
+ent-ADTHOSJumpsuitWarm = { ent-ClothingUniformJumpsuitHoSAlt }
+    .desc = { ent-ClothingUniformJumpsuitHoSAlt.desc }
+
+ent-ADTRDJumpsuitWarm = { ent-ClothingUniformJumpsuitResearchDirector }
+    .desc = { ent-ClothingUniformJumpsuitResearchDirector.desc }
+
 ent-ADTCEJumpskirtWarm = водолазка старшего инженера
     .desc = Это комбинезон повышенной заметности, который выдается тем инженерам, которые достаточно безумны и живучи, чтобы достичь звания главного инженера. Имеет слабую защиту от радиации.
     .suffix = {""}
@@ -162,3 +168,8 @@ ent-ADTQMJumpskirtWarm = водолазка квартирмейстера
     .desc = Строгая водолазка, предназначенная для суровых условий работы в области снабжения.
     .suffix = {""}
 
+ent-ADTHOSJumpskirtWarm = { ent-ClothingUniformJumpsuitHoSAlt }
+    .desc = { ent-ClothingUniformJumpsuitHoSAlt.desc }
+    
+ent-ADTRDJumpskirtWarm = { ent-ClothingUniformJumpsuitResearchDirector }
+    .desc = { ent-ClothingUniformJumpsuitResearchDirector.desc }

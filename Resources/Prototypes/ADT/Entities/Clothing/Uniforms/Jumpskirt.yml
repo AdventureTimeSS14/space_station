@@ -390,6 +390,28 @@
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/jumpskirt_qm.rsi
 
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTHOSJumpskirtWarm
+  name: hos Jumpskirt warm
+  description: A turtleneck for someone domineering.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_qm.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_qm.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTRDJumpskirtWarm
+  name: rd Jumpskirt warm
+  description: A purple turtleneck to wear stylishly with labcoat.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_qm.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_qm.rsi
+
 #купальники
 - type: entity
   parent: ClothingUniformBase

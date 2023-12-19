@@ -160,8 +160,6 @@
     contents:
       - id: ClothingOuterHardsuitEngineeringWhite
       - id: ClothingMaskBreath
-      - id: ClothingUniformJumpsuitChiefEngineerTurtle
-      - id: ClothingUniformJumpskirtChiefEngineerTurtle
       - id: OxygenTankFilled
       - id: NitrogenTankFilled
       - id: ClothingNeckCloakCe
@@ -195,8 +193,6 @@
       - id: ClothingEyesGlassesMeson
       - id: ClothingBeltChiefEngineerFilled
       - id: ClothingHandsGlovesColorYellow
-      - id: ClothingUniformJumpsuitChiefEngineerTurtle
-      - id: ClothingUniformJumpskirtChiefEngineerTurtle
       - id: CigarCase
         prob: 0.15
       - id: DoorRemoteEngineering
@@ -354,8 +350,8 @@
       - id: ClothingNeckCloakHos
       - id: ClothingOuterCoatHoSTrench
       - id: ClothingOuterCoatHoSGreatcoat # Corvax-Resprite
-      - id: ClothingUniformJumpskirtHoSAlt
-      - id: ClothingUniformJumpsuitHoSAlt
+      - id: ADTHOSJumpsuitWarm
+      - id: ADTHOSJumpskirtWarm
       - id: ClothingOuterHardsuitSecurityRed
       - id: ClothingMaskGasSwat
 #      - id: ClothingShoeSlippersDuck # Corvax-Resprite: Need more space for style

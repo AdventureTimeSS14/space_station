@@ -399,7 +399,6 @@
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_hop.rsi
 
-
 - type: entity
   parent: ClothingUniformBase
   id: ADTQMJumpsuitWarm
@@ -421,6 +420,28 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/suit_hunterdemon.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/suit_hunterdemon.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTHOSJumpsuitWarm
+  name: hos jumpsuit warm
+  description: A turtleneck for someone domineering.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_qm.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_qm.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTRDJumpsuitWarm
+  name: rd jumpsuit warm
+  description: A purple turtleneck to wear stylishly with labcoat.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_qm.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_qm.rsi
 
 #костюм Эйдана
 
