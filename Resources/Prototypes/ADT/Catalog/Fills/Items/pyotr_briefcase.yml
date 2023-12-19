@@ -15,3 +15,21 @@
       - id: ADTClothingNeckPyotrCloak
       - id: ADTClothingOuterCoatPyotrCoat
       - id: ADTClothingUniformPyotrOfficialSuit
+
+- type: entity
+  id: ADTBriefcaseCentcomm
+  name: Centcomm briefcase
+  parent: BriefcaseBrown
+  suffix: Filled
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Misc/sec_auditor_briefcase.rsi
+    state: icon
+  - type: Item
+    sprite: ADT/Objects/Misc/sec_auditor_briefcase.rsi
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 12
+    soundHit:
+      path: "/Audio/Weapons/smash.ogg"
