@@ -52,6 +52,7 @@
 # Using EmoteAnimation from IC action chat
 - type: emote
   id: EmoteFlip
+  icon: Interface/Emotes/somersaults.png
   category: Animations
   chatMessages: [делает сальто]
   chatTriggers:
@@ -63,6 +64,7 @@
 
 - type: emote
   id: EmoteJump
+  icon: Interface/Emotes/jump.png
   category: Animations
   chatMessages: [прыгает]
   chatTriggers:
@@ -75,6 +77,7 @@
 
 - type: emote
   id: EmoteTurn
+  icon: Interface/Emotes/spin.png
   category: Animations
   chatMessages: [кружится]
   chatTriggers:
