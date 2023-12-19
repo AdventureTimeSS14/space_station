@@ -94,8 +94,8 @@
       gun_magazine:
         name: Magazine
         startingItem: MagazinePistol
-        insertSound: /Audio/ADT/Weapons/Guns/MagIn/glock19in.ogg
-        ejectSound: /Audio/ADT/Weapons/Guns/MagOut/glock19out.ogg
+        #insertSound: /Audio/ADT/Weapons/Guns/MagIn/glock19in.ogg
+        #ejectSound: /Audio/ADT/Weapons/Guns/MagOut/glock19out.ogg
         priority: 2
         whitelist:
           tags:
