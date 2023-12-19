@@ -87,6 +87,7 @@
         Blunt: 2
         Slash: 3
         Piercing: 1
+  - type: Shadowkin
   - type: Vocal
     sounds:
       Male: MaleHuman
