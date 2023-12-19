@@ -54,6 +54,7 @@
     pocket1: WeaponPistolMk58Nonlethal
     underwearb: ClothingUnderwearBottomBoxersHOS # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
+    neck: ADTClothingNeckSecBadge
   underweart: ClothingUnderwearTopBraHOS # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesHOS # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtHoS

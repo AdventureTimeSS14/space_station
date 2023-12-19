@@ -219,34 +219,34 @@
       tags:
       - NukeOpsUplink
 
-- type: listing
-  id: ADTUplinkSyndieSSmokegrenade
-  name: uplink-ssmokegrenade-name
-  description: uplink-ssmokegrenade-desc
-  productEntity: ADTSSmokeGrenade
-  cost:
-    Telecrystal: 2
-  categories:
-  - UplinkExplosives
+#- type: listing
+#  id: ADTUplinkSyndieSSmokegrenade
+#  name: uplink-ssmokegrenade-name
+#  description: uplink-ssmokegrenade-desc
+#  productEntity: ADTSSmokeGrenade
+#  cost:
+#    Telecrystal: 2
+#  categories:
+#  - UplinkExplosives
 
-- type: listing
-  id: ADTUplinkSmokeBundle
-  name: uplink-ssmokegrenade-bundle-name
-  description: uplink-ssmokegrenade-bundle-desc
-  productEntity: ADTClothingBackpackDuffelSsmokeGrenade
-  cost:
-    Telecrystal: 8
-  categories:
-  - UplinkBundles
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
-    - !type:BuyerWhitelistCondition
-      blacklist:
-        components:
-          - SurplusBundle
+#- type: listing
+#  id: ADTUplinkSmokeBundle
+#  name: uplink-ssmokegrenade-bundle-name
+#  description: uplink-ssmokegrenade-bundle-desc
+#  productEntity: ADTClothingBackpackDuffelSsmokeGrenade
+#  cost:
+#    Telecrystal: 8
+#  categories:
+#  - UplinkBundles
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - NukeOpsUplink
+#    - !type:BuyerWhitelistCondition
+#      blacklist:
+#        components:
+#          - SurplusBundle
 
 - type: listing
   id: ADTUplinkSyndieADTTritiumGrenades
