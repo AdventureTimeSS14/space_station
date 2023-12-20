@@ -24,6 +24,7 @@
 
 - type: entity
   id: OwOVoice
+  abstract: true
   name: owovoice-action-name
   components:
     - type: InstantAction
