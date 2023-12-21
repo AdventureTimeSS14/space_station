@@ -1,7 +1,23 @@
-﻿- type: entity
+- type: entity
   id: OrganVulpkaninStomach
   parent: OrganAnimalStomach
   noSpawn: true
   components:
     - type: Stomach
       maxVolume: 50
+
+- type: entity
+  id: ADTOrganVulpkaninAnimalLiver
+  parent: BaseAnimalOrgan
+  name: liver
+  noSpawn: true
+  components:
+  - type: Sprite
+    state: liver
+  - type: Organ
+  - type: Metabolizer
+    maxReagents: 1
+    metabolizerTypes: [ Animal ]
+    groups:
+    - id: Alcohol
+      rateModifier: 0.1

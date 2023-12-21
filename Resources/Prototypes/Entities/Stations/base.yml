@@ -33,6 +33,12 @@
     - type: StationArrivals
 
 - type: entity
+  id: BaseStationGateway
+  abstract: true
+  components:
+    - type: GatewayGenerator
+
+- type: entity
   id: BaseStationShuttles
   abstract: true
   components:
@@ -40,6 +46,7 @@
       paths:
         - /Maps/Shuttles/cargo.yml
         - /Maps/Shuttles/mining.yml
+        - /Maps/Shuttles/security.yml
 
 - type: entity
   id: BaseStationCentcomm

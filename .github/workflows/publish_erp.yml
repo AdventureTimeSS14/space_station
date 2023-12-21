@@ -31,10 +31,21 @@ jobs:
           cd RobustToolbox
           git fetch --depth=1
 
-      - name: Package all
-        run: |
-          Tools/package_server_build.py -p linux-x64
-          Tools/package_client_build.py
+      - name: Remove Dotnet 8
+        run: sudo apt remove --purge dotnet-sdk-8.0
+
+      - name: Install dependencies
+        run: dotnet restore
+
+      - name: Build Packaging
+        run: dotnet build Content.Packaging --configuration Release --no-restore /m
+
+      - name: Package server
+        run: dotnet run --project Content.Packaging server --platform linux-x64
+
+      - name: Package client
+        run: dotnet run --project Content.Packaging client --no-wipe-release
+
 
       - name: Update Build Info
         run: Tools/gen_build_info.py

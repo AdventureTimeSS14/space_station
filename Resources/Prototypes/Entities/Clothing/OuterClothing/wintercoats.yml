@@ -11,12 +11,12 @@
   - type: TemperatureProtection
     coefficient: 0.1
   - type: Item
-    size: Small
+    size: Normal
   - type: Armor
     modifiers:
       coefficients:
-        Slash: 0.95
-        Heat: 0.90
+        Slash: 0.5
+        Heat: 0.5
   - type: Food
     requiresSpecialDigestion: true
   - type: SolutionContainerManager

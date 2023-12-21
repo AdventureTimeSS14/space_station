@@ -33,3 +33,10 @@ ent-ADTClothingNeckNukeOpsCloak = плащ Ядерных Оперативник
 ent-ADTClothingNeckMantiesChaplain = Мантия священника
     .desc = Черная мантия священника.
     .suffix = { "" }
+
+ent-ADTClothingNeckNewMekkaCloak = накидка Новой Мекки
+    .desc = Зеленая накидка, очень удобная в носке. Скреплена застёжкой на шее.
+
+ent-ADTClothingNeckCloakLapkee = светлый плащ
+    .desc = 50 оттенков белого для белых или не очень сотрудников.
+    .suffix = { "Именное, Lapkee" }

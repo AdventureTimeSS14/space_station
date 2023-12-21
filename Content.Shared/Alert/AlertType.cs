@@ -29,6 +29,7 @@ namespace Content.Shared.Alert
         Starving,
         Thirsty,
         Parched,
+        Charge, // Parkstation-IPC
         Stamina,
         Pulled,
         Pulling,
@@ -42,6 +43,7 @@ namespace Content.Shared.Alert
         Corporeal,
         Bleed,
         Pacified,
+        Caged,
         Debug1,
         Debug2,
         Debug3,
@@ -49,7 +51,9 @@ namespace Content.Shared.Alert
         Debug5,
         Debug6,
         SuitPower,
-        BorgHealth
+        BorgHealth,
+        BorgCrit,
+        BorgDead
     }
 
 }

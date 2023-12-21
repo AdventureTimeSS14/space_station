@@ -2,24 +2,30 @@
   id: DefaultMapPool
   maps:
   #- CorvaxDelta
-  #- CorvaxAvrite
   #- Aspid
+  #- Atlas
+  #- Bagel
   #- Barratry
+  #- Box
   #- Cluster
-  - HalloweenCluster
   #- Core
   #- Fland
   #- Kettle
   #- Marathon
   #- Meta
+  #- Gemini
   #- Omega
   #- Origin
-  - Saltern
+  #- Saltern
   #- Packed
-  - ADTPacked
+  #- ADTPacked
   #- Bagel
   #- Box
-  - HalloweenKettle
-  - HalloweenBoxstation
-  - HalloweenBagel
-  - HalloweenAspid
+  - ADTNYCluster
+  - ADTNYSaltern
+  - ADTNYBox
+  - ADTNYAspid
+  - ADTNYMarathon
+  - ADTNYBagel
+  - ADTNYCore
+  #- ADTNYDelta

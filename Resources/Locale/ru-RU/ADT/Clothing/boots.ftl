@@ -33,6 +33,28 @@ ent-ADTClothingAidanShoes = остроконечные туфли Эйдана
     .desc = Стильные туфли из натуральной кожи крупного рогатого скота.
     .suffix = { "Именное" }
 
-ent-ADTClothingFootGoldenHeels = Золотые туфли
+ent-ADTClothingFootGoldenHeels = золотые туфли
     .desc = Шикарная пара золотистых туфель. Благодаря особым свойствам ткани эти туфли могут носить даже представители тех видов, кому такая обувь обычно неудобна. Производства компании "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
+
+ent-ADTClothingFootLightShoes = дамские туфли
+    .desc = Элегантные туфли на высоком каблуке. Производство компании "Modeling Agency Dar-Vaxed"
+
+ent-ADTClothingFootWhiteSandals = белые сандали
+    .desc = Для тёплых сезонов станции.
+
+ent-ADTClothingFootBlackBoots = чёрные сапоги
+    .desc = В них удобно бегать хулиганам!
+
+ent-ADTClothingFootLapkeeSet = тактические кроссовки
+    .desc = Тяжёлая и увесистая обувь, которой и убить не трудно - доработанная чьими то хитрыми лапками пара кроссовок с выпрямленными носками, уплотненной подошвой и повышенной эргономикой. Прекрасно давит клоунов. 
+    .suffix = { "Именное, Lapkee" }
+
+ent-ADTClothingFootNewMekkaBoots = сапоги Новой Мекки
+    .desc = Явно потрёпанные сапоги, в которых прошли уж точно не одну милю.
+
+ent-ADTClothingFootElfBoots = сапоги Эльфа
+    .desc = Теплая обувь для работы в домике на севере!
+
+ent-ADTClothingFootBootsSnowMaiden = сапоги Снегурочки
+    .desc = Сапоги внучки Деда Мороза.

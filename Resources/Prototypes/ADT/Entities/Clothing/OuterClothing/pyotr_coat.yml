@@ -55,3 +55,32 @@
         Slash: 0.8
         Piercing: 0.7
         Heat: 0.8
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ADTClothingOuterCoatXCoat
+  name: X`s Coat
+  description: X`s Coat
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Coats/x_coat.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Coats/x_coat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.7
+        Heat: 0.8
+
+- type: entity
+  parent: ADTClothingOuterCoatPyotrCoat
+  id: ADTClothingOuterCoatSecAuditor
+  name: sec auditor coat
+  description: sec auditor coat
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Coats/sec_auditor_coat.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Coats/sec_auditor_coat.rsi

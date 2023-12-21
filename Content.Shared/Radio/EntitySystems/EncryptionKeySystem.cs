@@ -9,6 +9,8 @@ using Content.Shared.Radio.Components;
 using Content.Shared.Tools;
 using Content.Shared.Tools.Components;
 using Content.Shared.Wires;
+using Robust.Shared.Audio;
+using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
@@ -175,6 +177,14 @@ public sealed partial class EncryptionKeySystem : EntitySystem
     {
         if (!args.IsInDetailsRange)
             return;
+
+        // Parkstation-Ipc-Start
+        if (!component.ExamineWhileLocked && !component.KeysUnlocked)
+            return;
+
+        if (!component.ExamineWhileLocked && TryComp<WiresPanelComponent>(uid, out var panel) && !panel.Open)
+            return;
+        // Parkstation-Ipc-End
 
         if (component.KeyContainer.ContainedEntities.Count == 0)
         {

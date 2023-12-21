@@ -43,6 +43,11 @@
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponRevolverDeckard
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+    neck: ADTClothingNeckSecBadge
+  underweart: ClothingUnderwearTopBraSportsAlternative # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtSeniorOfficer
   satchel: ADTClothingBackpackSatchelSeniorSecurityFilled
   duffelbag: ADTClothingBackpackDuffelSeniorSecurityFilled

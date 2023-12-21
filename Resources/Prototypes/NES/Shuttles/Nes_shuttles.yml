@@ -1,0 +1,363 @@
+#NES шаттлы
+
+- type: entity
+  id: NesBaseOldThruster
+  parent: BaseStructureDynamic
+  abstract: true
+  components:
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Rotatable
+      rotateWhileAnchored: true
+    - type: Thruster
+      damage:
+        types:
+          Heat: 40
+    - type: InteractionOutline
+    - type: Sprite
+    - type: Appearance
+    - type: ApcPowerReceiver
+      powerLoad: 100
+    - type: ExtensionCableReceiver
+    - type: ThrusterVisuals
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Metallic
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 300  # Considering we need a lot of thrusters didn't want to make an individual one too tanky
+        behaviors:
+          - !type:DoActsBehavior
+            acts: ["Destruction"]
+    - type: StaticPrice
+      price: 150
+  placement:
+    mode: SnapgridCenter
+
+- type: entity
+  id: NesThrusterRSY
+  name: двигатель РСУ
+  parent: [ NesBaseOldThruster, ConstructibleMachine ]
+  components:
+  - type: Thruster
+    baseThrust: 200
+    thrust: 200
+  - type: Machine
+    board: ThrusterMachineCircuitboard
+  - type: Sprite
+    sprite: NES/Shuttle/RSY_thruster.rsi
+    layers:
+    - state: base
+      map: ["enum.ThrusterVisualLayers.Base"]
+    - state: thrust
+      map: ["enum.ThrusterVisualLayers.ThrustOn"]
+      scale: 1, 1
+    - state: thrust_burn_unshaded
+      map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
+      shader: unshaded
+      visible: false
+      offset: 0, 1
+
+- type: entity
+  id: NesOldThrusterRSY
+  name: старый двигатель РСУ
+  parent: [ NesBaseOldThruster, ConstructibleMachine ]
+  components:
+  - type: Thruster
+    baseThrust: 150
+    thrust: 150
+  - type: Machine
+    board: ThrusterMachineCircuitboard
+  - type: Sprite
+    sprite: NES/Shuttle/OldRSY_thryster.rsi
+    layers:
+    - state: base
+      map: ["enum.ThrusterVisualLayers.Base"]
+    - state: thrust
+      map: ["enum.ThrusterVisualLayers.ThrustOn"]
+      scale: 1, 1
+    - state: thrust_burn_unshaded
+      map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
+      shader: unshaded
+      visible: false
+      offset: 0, 1
+
+- type: entity
+  id: NesBaseBigStructure
+  parent: BaseStructure
+  abstract: true
+  components:
+  - type: Transform
+    anchored: false
+  - type: Clickable
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.3,-1.3,1.3,1.3"
+        density: 600
+        layer:
+        - WallLayer
+
+- type: entity
+  id: NesBigThruster
+  name: СЭИД двигатель
+  parent: [ NesBaseBigStructure, BaseThruster ]
+  components:
+  - type: Thruster
+    baseThrust: 2000
+    thrust: 2000
+#  - type: Machine
+#   board: ThrusterMachineCircuitboard
+  - type: Transform
+    anchored: true
+  - type: ApcPowerReceiver
+    powerLoad: 1500
+  - type: StaticPrice
+    price: 5000
+  - type: Sprite
+    sprite: NES/Shuttle/ZETA_thruster.rsi
+    layers:
+    - state: base
+      map: ["enum.ThrusterVisualLayers.Base"]
+      scale: 1.5, 1.5
+    - state: thrust
+      map: ["enum.ThrusterVisualLayers.ThrustOn"]
+      shader: unshaded
+      scale: 1.5, 1.5
+      visible: false
+    - state: thrust_burn_unshaded
+      map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
+      color: "#5adbff"
+      shader: unshaded
+      scale: 1, 1
+      visible: false
+      offset: 0, 2.4
+
+- type: entity
+  id: NesFuelThruster
+  name: жидкотоплевный ракетный двигатель
+  parent: [ NesBaseOldThruster, ConstructibleMachine ]
+  components:
+  - type: Thruster
+    baseThrust: 250
+    thrust: 250
+  - type: Machine
+    board: ThrusterMachineCircuitboard
+  - type: Sprite
+    sprite: NES/Shuttle/ROCKET_thruster.rsi
+    layers:
+    - state: base
+      map: ["enum.ThrusterVisualLayers.Base"]
+    - state: thrust_burn_unshaded
+      map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
+      shader: unshaded
+      visible: false
+      offset: 0, 1
+
+- type: entity
+  id: NesCombatEmitter
+  name: тяжелый рельсотрон
+  parent: ConstructibleMachine
+  description: Тяжелый рельсотрон, разгоняющий снаряд в стволе до сверх скоростей. Снаряд будучи обычным стержнем на большой скорости может вызвать непоправимый ущерб.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    canCollide: false
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 400
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    sprite: NES/Railguns/railgun.rsi
+    layers:
+    - state: emitter # Corvax-Resprite
+    - state: beam
+      shader: unshaded
+      visible: false
+      map: ["enum.EmitterVisualLayers.Lights"]
+    - state: unlock # Corvax-Resprite
+      shader: unshaded
+#      visible: false # Corvax-Resprite
+      map: ["enum.StorageVisualLayers.Lock"]
+  - type: Emitter
+    boltType: BulletGrenadeFrag
+    baseFireBurstDelayMin: 10
+    baseFireInterval: 0.8
+    baseFireBurstDelayMax: 15
+  - type: Gun
+    showExamineText: false
+    fireRate: 1 #just has to be fast enough to keep up with upgrades
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/NES/Canon/Canon1.ogg
+  - type: PowerConsumer
+    voltage: Medium
+  - type: NodeContainer
+    examinable: true
+    nodes:
+      input:
+        !type:CableDeviceNode
+        nodeGroupID: MVPower
+  - type: Anchorable
+  - type: Pullable
+  - type: Rotatable
+  - type: Appearance
+  - type: Lock
+    locked: true
+  - type: AccessReader
+    access: [['Security']]
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSink
+    ports:
+      - On
+      - Off
+      - Toggle
+
+- type: entity
+  id: NesCombatEmitterSmall
+  name: рельсотрон
+  parent: ConstructibleMachine
+  description: Рельсотрон, разгоняющий снаряд в стволе до сверх скоростей. Снаряд будучи обычным стержнем на большой скорости может повредить обшивку вражеского корабля.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    canCollide: false
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 400
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    sprite: NES/Railguns/railgun.rsi
+    layers:
+    - state: emitter # Corvax-Resprite
+    - state: beam
+      shader: unshaded
+      visible: false
+      map: ["enum.EmitterVisualLayers.Lights"]
+    - state: unlock # Corvax-Resprite
+      shader: unshaded
+#      visible: false # Corvax-Resprite
+      map: ["enum.StorageVisualLayers.Lock"]
+  - type: Emitter
+    boltType: NesBulletRailgun
+    baseFireBurstDelayMin: 1
+    baseFireInterval: 0.5
+    baseFireBurstDelayMax: 1
+  - type: Gun
+    showExamineText: false
+    fireRate: 1 #just has to be fast enough to keep up with upgrades
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/NES/Canon/Canon2.ogg
+  - type: PowerConsumer
+    voltage: Medium
+  - type: NodeContainer
+    examinable: true
+    nodes:
+      input:
+        !type:CableDeviceNode
+        nodeGroupID: MVPower
+  - type: Anchorable
+  - type: Pullable
+  - type: Rotatable
+  - type: Appearance
+  - type: Lock
+    locked: true
+  - type: AccessReader
+    access: [['Security']]
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSink
+    ports:
+      - On
+      - Off
+      - Toggle
+
+- type: entity
+  id: NesMiniGyroscope
+  name: САС истребителя #Для маленьких шаттлов
+  parent: [ BaseThruster, ConstructibleMachine ]
+  components:
+  - type: Thruster
+    thrusterType: Angular
+    requireSpace: false
+    baseThrust: 300
+    thrust: 300
+    machinePartThrust: Manipulator
+  - type: Sprite
+    sprite: Structures/Shuttles/gyroscope.rsi
+    snapCardinals: true
+    layers:
+    - state: base
+      map: ["enum.ThrusterVisualLayers.Base"]
+    - state: thrust
+      map: ["enum.ThrusterVisualLayers.ThrustOn"]
+      shader: unshaded
+      visible: false
+    - state: thrust_burn
+      map: [ "enum.ThrusterVisualLayers.Thrusting" ]
+      visible: false
+    - state: thrust_burn_unshaded
+      map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
+      shader: unshaded
+      visible: false
+  - type: PointLight
+    radius: 1.3
+    energy: 0.8
+    enabled: false
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    offset: "0, 0.1" # shine from the top, not bottom of the computer
+    color: "#4246b3"
+  - type: Machine
+    board: GyroscopeMachineCircuitboard
+  - type: UpgradePowerDraw
+    powerDrawMultiplier: 0.75
+    scaling: Exponential
+  - type: StaticPrice
+    price: 2000

@@ -239,7 +239,7 @@
   - type: Clothing
     sprite: ADT/Clothing/Shoes/Boots/aidan_shoes.rsi
 
-#туфли от Празата
+#туфли и не только от Празата
 
 - type: entity
   parent: ClothingShoesBaseButcherable
@@ -251,3 +251,95 @@
     sprite: ADT/Clothing/Shoes/Boots/golden_heels.rsi
   - type: Clothing
     sprite: ADT/Clothing/Shoes/Boots/golden_heels.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ADTClothingFootLightShoes
+  name: light shoes
+  description: Elegant shoes on a high heels. Made by company "Modeling Agency Dar-Vaxed".
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/light_shoes.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/light_shoes.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ADTClothingFootWhiteSandals
+  name: white sandals
+  description: White sandals. #кто бы мог подумать.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/white_sandals.rsi 
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/white_sandals.rsi  #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ADTClothingFootBlackBoots
+  name: black boots
+  description: Comfortable for bullies!
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/black_boots.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/black_boots.rsi  #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingShoesStorageBase
+  id: ADTClothingFootLapkeeSet
+  name: tactical sneekers
+  description: tactical sneekers
+  suffix: Personal, Lapkee
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/tactical_sneekers.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/tactical_sneekers.rsi
+  - type: Matchbox
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepBoots
+  - type: Storage
+    whitelist:
+      tags:
+        - Knife
+        - Sidearm
+  - type: TemperatureProtection #слабая защита от холода
+    coefficient: 0.05
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ADTClothingFootNewMekkaBoots
+  name: New Mekka boots
+  description: Comfortable for bullies!
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/newmekka.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/newmekka.rsi  #спрайты от prazat911
+
+#New Year
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ADTClothingFootElfBoots
+  name: elf boots
+  description: Warm boots to work in a house on north.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/elf_boots.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/elf_boots.rsi  #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ADTClothingFootBootsSnowMaiden
+  name: snow maiden's boots
+  description: Warm boots of Snow Maiden.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/snow_maiden.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/snow_maiden.rsi  #спрайты от prazat911

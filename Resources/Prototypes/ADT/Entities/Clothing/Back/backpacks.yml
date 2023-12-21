@@ -8,13 +8,14 @@
     sprite: ADT/Clothing/Back/syndicate_bag.rsi
     state: icon
   - type: Item
-    size: 9999
+    size: Huge
   - type: Clothing
     quickEquip: false
     slots:
     - back
   - type: Storage
-    maxItemSize: Ginormous
+    maxItemSize: Huge
+    maxTotalWeight: 28
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -37,13 +38,14 @@
     sprite: ADT/Clothing/Back/ussp_attaked_backpack.rsi
     state: icon
   - type: Item
-    size: 9999
+    size: Huge
   - type: Clothing
     quickEquip: false
     slots:
     - back
   - type: Storage
-    maxItemSize: Ginormous
+    maxItemSize: Huge
+    maxTotalWeight: 36
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -80,85 +82,84 @@
 #рюкзак следователя
 
 - type: entity
-  noSpawn: true
+  #noSpawn: true
   parent: ClothingBackpackSecurity
   id: ADTClothingBackpackInvestigatorFilled
   components:
-  - type: Storage
-    maxItemSize: Huge
-    maxTotalWeight: 0
-    maxSlots: 50 #By this ignore maxTotalWeight
+  #- type: Storage
+  #  maxItemSize: Huge
+  #  maxTotalWeight: 0
+  #  maxSlots: 50 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
       - id: BoxSurvivalSecurity
       - id: Flash
       - id: Pen
         amount: 2
-      - id: PaperOffice
-        amount: 20
-      - id: MaterialCardboard1
+      #- id: PaperOffice
+      #  amount: 20
+      - id: ADTInvestigatorBoxFolderBase
         amount: 2
-      - id: BoxFolderBase
+      - id: ADTInvestigatorBoxFolderRed
         amount: 2
-      - id: BoxFolderRed
-        amount: 2
-      - id: BoxFolderBlue
+      - id: ADTInvestigatorBoxFolderBlue
         amount: 2
       - id: ADTBookInvestigator
+      - id: ADTRubberStampinvestigator
 
 - type: entity
-  noSpawn: true
+  #noSpawn: true
   parent: ClothingBackpackDuffelSecurity
   id: ADTClothingBackpackDuffelInvestigatorFilled
   components:
-  - type: Storage
-    maxItemSize: Huge
-    maxTotalWeight: 0
-    maxSlots: 50 #By this ignore maxTotalWeight
+  #- type: Storage
+  #  maxItemSize: Huge
+  #  maxTotalWeight: 0
+  #  maxSlots: 50 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
       - id: BoxSurvivalSecurity
       - id: Flash
       - id: Pen
         amount: 2
-      - id: PaperOffice
-        amount: 20
-      - id: MaterialCardboard1
+      #- id: PaperOffice
+      #  amount: 20
+      - id: ADTInvestigatorBoxFolderBase
         amount: 2
-      - id: BoxFolderBase
+      - id: ADTInvestigatorBoxFolderRed
         amount: 2
-      - id: BoxFolderRed
-        amount: 2
-      - id: BoxFolderBlue
+      - id: ADTInvestigatorBoxFolderBlue
         amount: 2
       - id: ADTBookInvestigator
+      - id: ADTRubberStampinvestigator
 
 - type: entity
-  noSpawn: true
+  #noSpawn: true
   parent: ClothingBackpackSatchelSecurity
   id: ADTClothingBackpackSatchelInvestigatorFilled
   components:
-  - type: Storage
-    maxItemSize: Huge
-    maxTotalWeight: 0
-    maxSlots: 50 #By this ignore maxTotalWeight
+  #- type: Storage
+  #  maxItemSize: Huge
+  #  maxTotalWeight: 0
+  #  maxSlots: 50 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
       - id: BoxSurvivalSecurity
       - id: Flash
       - id: Pen
         amount: 2
-      - id: PaperOffice
-        amount: 20
-      - id: MaterialCardboard1
+      #- id: PaperOffice
+      #  amount: 20
+      #- id: MaterialCardboard1
+      #  amount: 2
+      - id: ADTInvestigatorBoxFolderBase
         amount: 2
-      - id: BoxFolderBase
+      - id: ADTInvestigatorBoxFolderRed
         amount: 2
-      - id: BoxFolderRed
-        amount: 2
-      - id: BoxFolderBlue
+      - id: ADTInvestigatorBoxFolderBlue
         amount: 2
       - id: ADTBookInvestigator
+      - id: ADTRubberStampinvestigator
 
 #дамские сумочки
 
@@ -179,3 +180,21 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Back/leatherlady_satchel.rsi
+
+- type: entity
+  parent: ClothingBackpackSatchelSecurity
+  id: ADTClothingBackpackSatchelLapkee
+  name: lapkee satchel
+  description: lapkee satchel
+  suffix: Personal, Lapkee
+  components:
+  - type: Storage
+    maxTotalWeight: 30
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalSecurity
+      - id: Flash
+      - id: MagazinePistol
+      - id: ADTSpaceLaw
+  - type: Sprite
+    sprite: ADT/Clothing/Back/lapkee_satchel.rsi

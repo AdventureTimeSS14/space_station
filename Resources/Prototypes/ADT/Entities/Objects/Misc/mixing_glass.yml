@@ -15,7 +15,7 @@
         visible: false
       - state: mixing_glass-front
   - type: Item
-    size: 10
+    size: Small
     sprite: ADT/Objects/Misc/mixing_glass.rsi
   - type: SolutionContainerManager
     solutions:

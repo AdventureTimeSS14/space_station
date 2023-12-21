@@ -234,7 +234,7 @@
 
 - type: Tag
   id: CanPilot
-  
+
 - type: Tag
   id: CannonRestrict
 
@@ -375,6 +375,9 @@
   id: CubanCarp
 
 - type: Tag
+  id: DeathAcidifier
+
+- type: Tag
   id: Debug
 
 - type: Tag
@@ -406,6 +409,9 @@
 
 - type: Tag
   id: Donut
+
+- type: Tag
+  id: DrinkCan
 
 - type: Tag
   id: DrinkSpaceGlue
@@ -646,6 +652,9 @@
 
 - type: Tag
   id: Lemon
+
+- type: Tag
+  id: LightReplacer
 
 - type: Tag
   id: Lime
@@ -973,6 +982,9 @@
   id: SpeedLoaderRifle
 
 - type: Tag
+  id: SpiderCraft
+
+- type: Tag
   id: SpreaderIgnore
 
 - type: Tag
@@ -1110,3 +1122,6 @@
 
 - type: Tag
   id: ADTExtMagazineRifle
+
+- type: Tag
+  id: ADTMagazineRifleFNFAL

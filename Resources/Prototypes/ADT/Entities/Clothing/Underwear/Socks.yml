@@ -8,12 +8,30 @@
   - type: Sprite
     state: icon
   - type: Item
-    size: 5
+    size: Tiny
   - type: Clothing
     slots: [socks]
+  # - type: Tag
+  #   tags:
+  #     - socks
+  - type: Butcherable
+    butcheringType: Knife
+    spawned:
+    - id: MaterialCloth1
+      amount: 1
+  - type: Food
+    requiresSpecialDigestion: true
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
   - type: Tag
     tags:
-      - socks
+    - ClothMade
+    - socks
 
 - type: entity
   parent: ClothingUnderwearSocksBase
@@ -80,6 +98,107 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Under/broom.rsi
-  - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 1.2
+  #- type: ClothingSpeedModifier
+  #  walkModifier: 0.9
+  #  sprintModifier: 1.2
+
+#приколы празата
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearLaceSocksThigh
+  name: lace stockings
+  description: Good looking lace stockings.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/lace_socks_thigh.rsi
+
+#New Year
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearSocksBeige
+  name: beige socks
+  description: Feels warm from thick wool inside.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Socks/socks_beige.rsi #Спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearSocksBlue
+  name: blue socks
+  description: Blue like ice, warm like holidays.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Socks/socks_blue.rsi #Спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearSocksFingerless
+  name: fingerless socks
+  description: Claws won't stop holidays!
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Socks/socks_fingerless.rsi #Спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearSocksGnome
+  name: gnome socks
+  description: Made for walking in ice caves in Santa's residence.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Socks/socks_gnome.rsi #Спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearSocksGreen
+  name: green socks
+  description: A real Elf wears this.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Socks/socks_green.rsi #Спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearSocksRed
+  name: red socks
+  description: Traditional New Year holiday socks.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Socks/socks_red.rsi #Спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearSocksRedWhite
+  name: red socks with white stripe
+  description: Just a red socks.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Socks/socks_redwhite.rsi #Спрайты от prazat911
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearSocksFingerlessStripped
+  name: fingerless stripped socks
+  description: Socks for those, whose claws won't let them to warm legs.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Socks/socks_fingerless_stripped.rsi #Спрайты от prazat911
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearSocksStripped
+  name: stripped socks
+  description: A holiday stripped socks.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Socks/socks_stripped.rsi #Спрайты от prazat911

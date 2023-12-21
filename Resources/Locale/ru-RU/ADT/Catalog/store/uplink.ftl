@@ -26,11 +26,11 @@ uplink-nukeopscloak-desc = защитит тебя от холода на баз
 uplink-ADTHandDefibrillator-name = Переносной дефибрилятор синдиката
 uplink-ADTHandDefibrillator-desc = Облегченная версия обычного дефибрилятора, более эффективен в лечении но имеет больше сильный разряд. Можно надеть на шею.
 
-uplink-ssmokegrenade-name = Дымовая граната синдиката
-uplink-ssmokegrenade-desc = Расплыет на определенную область непроглядный дым. Является улучшенной версией обычной гранаты.
+uplink-ssmokegrenade-name = дымовая граната синдиката
+uplink-ssmokegrenade-desc = Распыляет на определенную область непроглядный дым. Является улучшенной версией обычной гранаты.
 
-uplink-ssmokegrenade-bundle-name = Набор дымовых граната
-uplink-ssmokegrenade-bundle-desc = Набор из 6 дымовых граната синдиката. Идеально подходят для вечеринки
+uplink-ssmokegrenade-bundle-name = набор дымовых гранат
+uplink-ssmokegrenade-bundle-desc = Набор из 6 дымовых граната синдиката. Идеально подходят для кальянной вечеринки
 
-uplink-tritiumgrenades-name = Тритиевая взрывчатка
+uplink-tritiumgrenades-name = тритиевая взрывчатка
 uplink-tritiumgrenades-desc = Радиоактивная граната выпускающая газ при взрыве, хорошо подходит для уничтожение экипажа без защиты.

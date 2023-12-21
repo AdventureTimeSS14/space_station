@@ -40,7 +40,7 @@
   components:
   - type: Storage
     maxItemSize: Huge
-    maxTotalWeight: 9000
+    maxTotalWeight: 40
   - type: StorageFill
     contents:
       - id: ClothingOuterHardsuitSyndieElite
@@ -109,8 +109,8 @@
 - type: entity
   parent: ClothingBackpackDuffelSyndicateAmmoBundle
   id: ADTClothingBackpackDuffelSsmokeGrenade
-  name: Набор дымовых гранат синдиката
-  description: Набор из 6 штук дымовых гранат синдиката
+  name: набор дымовых гранат синдиката
+  description: Набор из шести дымовых гранат синдиката
   components:
   - type: StorageFill
     contents:

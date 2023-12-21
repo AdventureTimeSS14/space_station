@@ -8,12 +8,30 @@
   - type: Sprite
     state: icon
   - type: Item
-    size: 1
+    size: Tiny
   - type: Clothing
     slots: [underwearb]
+  # - type: Tag
+  #   tags:
+  #     - underwearb
+  - type: Butcherable
+    butcheringType: Knife
+    spawned:
+    - id: MaterialCloth1
+      amount: 1
+  - type: Food
+    requiresSpecialDigestion: true
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
   - type: Tag
     tags:
-      - underwearb
+    - ClothMade
+    - underwearb
 
 - type: entity
   parent: ClothingUnderwearBottomBase
@@ -179,3 +197,23 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Underwear/monokini_bottom_black.rsi
+
+- type: entity
+  parent: ClothingUnderwearBottomBase
+  id: ADTClothingUnderwearBottomLacePanties
+  name: lace panties
+  description: Good looking lace underwear.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/lace_panties.rsi #спрайты от prazat911
+
+#New Year.
+- type: entity
+  parent: ClothingUnderwearBottomBase
+  id: ADTClothingUnderwearBottomChristmasPanties
+  name: christmas panties 
+  description: A questionable christmas underwear...
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/panties_christmas.rsi #спрайты от prazat911

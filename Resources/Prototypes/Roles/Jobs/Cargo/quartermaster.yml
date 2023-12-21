@@ -25,7 +25,6 @@
   - Salvage
   - Quartermaster
   - Maintenance
-  - External
   - Command
   #special:
   #- !type:AddImplantSpecial
@@ -46,8 +45,12 @@
     belt: BoxFolderClipboard
     pocket1: AppraisalTool
     underwearb: ClothingUnderwearBottomBoxersQM # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraQM # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesQM # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtQM
   satchel: ClothingBackpackSatchelQuartermasterFilled
   duffelbag: ClothingBackpackDuffelQuartermasterFilled
+  
+
+  

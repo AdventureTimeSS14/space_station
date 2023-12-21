@@ -9,7 +9,7 @@
   - type: Clothing
     sprite: ADT/Clothing/Hands/ring_urog.rsi
   - type: Item
-    size: 1
+    size: Tiny
   - type: StaticPrice
     price: 1000
 
@@ -24,6 +24,6 @@
   - type: Clothing
     sprite: ADT/Clothing/Hands/ring_yuna.rsi
   - type: Item
-    size: 1
+    size: Tiny
   - type: StaticPrice
     price: 1000

@@ -95,6 +95,13 @@
       - ADTPosterContrabandLustTayaran # Спрайт от Празата
       - ADTPosterContrabandFearThem # Спрайт от Иллюми
       - ADTPosterContrabandSilence # Спрайт от Иллюми
+      - ADTPosterContrabandLustUma
+      - ADTPosterContrabandLustArDeco
+      - ADTPosterDontSitDown
+      - ADTPosterTayarHalloween
+      - ADTPosterLustyMoth
+      - ADTPosterWatchOutChem
+      - ADTPosterPanem
     chance: 1
 
 - type: entity
@@ -152,8 +159,23 @@
       - PosterLegitPeriodicTable
       - PosterLegitRenault
       - PosterLegitNTTGC
+      - ADTPosterLegitEfficiency
       - ADTPosterLegitGreatFood #спрайт от Празата
       - ADTPosterLegitTurnOnSensors #спрайт от Празата
       - ADTPosterLegitOktoberfest #спрайт от Празата
       - ADTPosterLegitOktoberfest2 #спрайт от Празата
-    chance: 1
+      - ADTPosterPassTheBanana #спрайт от Уолтера
+      - ADTPosterSingoPizza
+      - ADTPosterPapersPlease
+      - ADTPosterDontTalkToArty
+      - ADTPosterWorkUnderWay
+      - ADTPosterPlasmaMan
+    #chance: 0.6
+    rarePrototypes: #временный прикол, который стоит потом убрать.
+      - ADTPosterNewYear
+      - ADTPosterNewYear2
+      - ADTPosterNewYear3
+      - ADTCristmasWreath
+      - ADTCristmasWreath2
+      - ADTCristmasWreath3
+    rareChance: 0.4

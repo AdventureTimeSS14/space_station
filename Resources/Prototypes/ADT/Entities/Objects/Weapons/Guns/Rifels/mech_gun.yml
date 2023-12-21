@@ -1,0 +1,32 @@
+- type: entity
+  name: kinetic Accelerator
+  id: WeaponProtoKineticAcceleratorMech
+  parent: BaseMechEquipment
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Mech/mecha_equipment.rsi
+    state: mecha_kineticgun
+  - type: Item
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+  - type: MultiHandedItem
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.AmmoVisuals.HasAmmo:
+        empty-icon:
+          True: { visible: False }
+          False: { visible: True }
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletKinetic
+    fireCost: 5
+  - type: UseDelay
+    delay: 1
+  - type: Battery
+    maxCharge: 50
+    startingCharge: 50

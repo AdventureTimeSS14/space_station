@@ -12,6 +12,7 @@
             - material: Steel
               amount: 2
               doAfter: 1
+
     - node: girder
       entity: Girder
       edges:
@@ -27,6 +28,7 @@
           steps:
             - tool: Screwing
               doAfter: 2
+
         - to: wall
           completed:
             - !type:SnapToGrid
@@ -37,16 +39,18 @@
             - material: Steel
               amount: 2
               doAfter: 2
+
         - to: reinforcedGirder
           completed:
             - !type:SnapToGrid
-              southRotation: true
+              southRotation: false
           conditions:
             - !type:EntityAnchored {}
           steps:
             - material: Plasteel
               amount: 2
               doAfter: 1
+
         - to: woodWall
           completed:
             - !type:SnapToGrid
@@ -57,6 +61,7 @@
             - material: WoodPlank
               amount: 2
               doAfter: 2
+
         - to: uraniumWall
           completed:
             - !type:SnapToGrid
@@ -68,6 +73,7 @@
               amount: 2
             - tool: Welding
               doAfter: 10
+
         - to: silverWall
           completed:
             - !type:SnapToGrid
@@ -79,6 +85,7 @@
               amount: 2
             - tool: Welding
               doAfter: 20
+
         - to: plasticWall
           completed:
             - !type:SnapToGrid
@@ -89,6 +96,7 @@
             - material: Plastic
               amount: 2
               doAfter: 2
+
         - to: plasmaWall
           completed:
             - !type:SnapToGrid
@@ -100,6 +108,7 @@
               amount: 2
             - tool: Welding
               doAfter: 20
+
         - to: goldWall
           completed:
             - !type:SnapToGrid
@@ -111,6 +120,7 @@
               amount: 2
             - tool: Welding
               doAfter: 20
+
         - to: bananiumWall
           completed:
             - !type:SnapToGrid
@@ -123,6 +133,7 @@
               doAfter: 2
             - tool: Welding
               doAfter: 20
+
         - to: meatWall
           completed:
             - !type:SnapToGrid
@@ -133,6 +144,23 @@
             - material: MeatSheets
               amount: 2
               doAfter: 2
+
+        - to: shuttleInteriorWall
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored { }
+          steps:
+            - material: MetalRod
+              amount: 2
+              doAfter: 1
+            - tool: Screwing
+              doAfter: 1
+            - material: Steel
+              amount: 2
+              doAfter: 1
+
     - node: wall
       entity: WallSolid
       edges:
@@ -144,6 +172,7 @@
           steps:
             - tool: Welding
               doAfter: 10
+
     - node: woodWall
       entity: WallWood
       edges:
@@ -155,6 +184,7 @@
           steps:
             - tool: Prying
               doAfter: 10
+
     - node: uraniumWall
       entity: WallUranium
       edges:
@@ -168,6 +198,7 @@
               doAfter: 10
             - tool: Prying
               doAfter: 10
+
     - node: silverWall
       entity: WallSilver
       edges:
@@ -181,6 +212,7 @@
               doAfter: 20
             - tool: Prying
               doAfter: 10
+
     - node: plasticWall
       entity: WallPlastic
       edges:
@@ -192,6 +224,7 @@
           steps:
             - tool: Prying
               doAfter: 10
+
     - node: plasmaWall
       entity: WallPlasma
       edges:
@@ -205,6 +238,7 @@
               doAfter: 20
             - tool: Prying
               doAfter: 10
+
     - node: goldWall
       entity: WallGold
       edges:
@@ -218,6 +252,7 @@
               doAfter: 20
             - tool: Prying
               doAfter: 10
+
     - node: bananiumWall
       entity: WallClown
       edges:
@@ -231,6 +266,7 @@
               doAfter: 20
             - tool: Prying
               doAfter: 10
+
     - node: meatWall
       entity: WallMeat
       edges:
@@ -242,6 +278,24 @@
           steps:
             - tool: Prying
               doAfter: 5
+
+    - node: shuttleInteriorWall
+      entity: WallShuttleInterior
+      edges:
+        - to: girder
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+            - !type:SpawnPrototype
+              prototype: PartRodMetal1
+              amount: 2
+          steps:
+            - tool: Welding
+              doAfter: 10
+            - tool: Screwing
+              doAfter: 1
+
     - node: reinforcedGirder
       entity: ReinforcedGirder
       edges:
@@ -255,6 +309,39 @@
             - material: Plasteel
               amount: 2
               doAfter: 1
+
+        - to: shuttleWall
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored { }
+          steps:
+            - material: MetalRod
+              amount: 4
+              doAfter: 1
+            - tool: Screwing
+              doAfter: 2
+            - material: Plasteel
+              amount: 2
+              doAfter: 1
+
+        - to: diagonalshuttleWall
+          completed:
+            - !type:SnapToGrid
+              southRotation: false
+          conditions:
+            - !type:EntityAnchored { }
+          steps:
+            - material: Steel
+              amount: 1
+              doAfter: 1
+            - tool: Welding
+              doAfter: 4
+            - material: Plasteel
+              amount: 1
+              doAfter: 1
+
         - to: girder
           completed:
             - !type:SnapToGrid
@@ -267,16 +354,7 @@
           steps:
             - tool: Cutting
               doAfter: 2
-        - to: shuttleWall
-          completed:
-            - !type:SnapToGrid
-              southRotation: true
-          conditions:
-            - !type:EntityAnchored { }
-          steps:
-            - material: Silver
-              amount: 4
-              doAfter: 1
+
     - node: reinforcedWall
       entity: WallReinforced
       edges:
@@ -328,21 +406,102 @@
                   data: 0
             - tool: Cutting
               doAfter: 1
-    - node: wallrust
-      entity: WallSolidRust
-      edges:
-        - to: wall
-          steps:
-            - tool: Welding
-              doAfter: 5
+
     - node: shuttleWall
       entity: WallShuttle
       edges:
         - to: reinforcedGirder
           completed:
-            - !type:GivePrototype
-              prototype: IngotSilver1
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 2
+            - !type:SpawnPrototype
+              prototype: PartRodMetal1
               amount: 4
+          steps:
+            - tool: Welding
+              doAfter: 10
+            - tool: Cutting
+              doAfter: 1
+              completed:
+                - !type:VisualizerDataInt
+                  key: "enum.ShuttleWallVisuals.DeconstructionStage"
+                  data: 5
+            - tool: Screwing
+              doAfter: 2
+            - tool: Welding
+              doAfter: 5
+              completed:
+                - !type:VisualizerDataInt
+                  key: "enum.ShuttleWallVisuals.DeconstructionStage"
+                  data: 4
+            - tool: Prying
+              doAfter: 2
+            - tool: Anchoring
+              doAfter: 1
+              completed:
+                - !type:VisualizerDataInt
+                  key: "enum.ShuttleWallVisuals.DeconstructionStage"
+                  data: 3
+            - tool: Welding
+              doAfter: 10
+              completed:
+                - !type:VisualizerDataInt
+                  key: "enum.ShuttleWallVisuals.DeconstructionStage"
+                  data: 2
+            - tool: Prying
+              doAfter: 1
+              completed:
+                - !type:VisualizerDataInt
+                  key: "enum.ShuttleWallVisuals.DeconstructionStage"
+                  data: 1
+            - tool: Screwing
+              doAfter: 1
+              completed:
+                - !type:VisualizerDataInt
+                  key: "enum.ShuttleWallVisuals.DeconstructionStage"
+                  data: 0
+            - tool: Cutting
+              doAfter: 4
+
+    - node: diagonalshuttleWall
+      entity: WallShuttleDiagonal
+      edges:
+        - to: reinforcedGirder
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 1
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 1
+          steps:
+          #To-Do: Add deconstruct visuals
+            - tool: Welding
+              doAfter: 5
+            - tool: Cutting
+              doAfter: 1
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 5
+            - tool: Prying
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 1
+            - tool: Welding
+              doAfter: 10
+            - tool: Prying
+              doAfter: 1
+            - tool: Screwing
+              doAfter: 1
+            - tool: Cutting
+              doAfter: 1
+
+    - node: wallrust
+      entity: WallSolidRust
+      edges:
+        - to: wall
           steps:
             - tool: Welding
               doAfter: 5

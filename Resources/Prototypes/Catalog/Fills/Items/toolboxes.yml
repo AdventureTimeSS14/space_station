@@ -4,13 +4,9 @@
   parent: ToolboxEmergency
   suffix: Filled
   components:
-  - type: Storage
-    maxItemSize: Ginormous
-    maxTotalWeight: 0
-    maxSlots: 50 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
-      - id: MiniFireExtinguisher
+      #- id: MiniFireExtinguisher
       - id: CrowbarRed
       - id: ClothingMaskBreath
         amount: 2
@@ -86,23 +82,20 @@
         prob: 0.5
 
 - type: entity
-  id: ToolboxSyndicateFilled
-  name: suspicious toolbox
-  suffix: Filled
   parent: ToolboxSyndicate
+  id: ToolboxSyndicateFilled
+  suffix: Filled
   components:
-  - type: Storage
-    maxSlots: 8
   - type: StorageFill
     contents:
-      - id: Crowbar
-      - id: Wrench
-      - id: Screwdriver
-      - id: Wirecutter
-      - id: Welder
-      - id: Multitool
-      - id: ClothingHandsGlovesCombat
-      - id: ClothingMaskGasSyndicate
+    - id: Crowbar
+    - id: Wrench
+    - id: Screwdriver
+    - id: Wirecutter
+    - id: Welder
+    - id: Multitool
+    - id: ClothingHandsGlovesCombat
+    - id: ClothingMaskGasSyndicate
 
 - type: entity
   id: ToolboxGoldFilled

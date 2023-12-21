@@ -9,7 +9,6 @@
   access:
   - Cargo
   - Maintenance
-  - External
   extendedAccess:
   - Salvage
 
@@ -24,6 +23,7 @@
     ears: ClothingHeadsetCargo
     pocket1: AppraisalTool
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtCargo

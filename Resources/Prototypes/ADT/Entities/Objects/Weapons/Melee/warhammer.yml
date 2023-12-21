@@ -42,7 +42,7 @@
         Blunt: 20
   - type: GunRequiresWield
   - type: Item
-    size: 150
+    size: Ginormous
   - type: DisarmMalus
   - type: Tool
     qualities:

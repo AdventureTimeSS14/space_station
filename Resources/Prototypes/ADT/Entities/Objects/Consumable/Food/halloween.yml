@@ -5,7 +5,7 @@
   description: Round orange object that you can slice and eat.
   components:
   - type: Item
-    size: 10
+    size: Normal
   - type: FlavorProfile
     flavors:
       - adt_pumpkin
@@ -65,7 +65,7 @@
   description: Juicy orange slice.
   components:
   - type: Item
-    size: 2
+    size: Tiny
   - type: FlavorProfile
     flavors:
       - adt_pumpkin

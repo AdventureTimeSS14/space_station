@@ -2,7 +2,7 @@
 - type: entity
   parent: BaseSMES
   id: ADTSMESIndustrial
-  suffix: Basic, 8MW
+  suffix: Basic, 80MW
   components:
   - type: Sprite
     sprite: ADT/Structures/Power/smes.rsi
@@ -19,9 +19,21 @@
       - map: ["enum.SmesVisualLayers.Output"]
         state: "smes-op1"
         shader: unshaded
+  - type: Smes
+  - type: UpgradeBattery
+    maxChargeMultiplier: 2
+    baseMaxCharge: 80000000
+  - type: UpgradePowerSupplyRamping
+    scaling: Linear
+    supplyRampingMultiplier: 1     
   - type: Battery
     maxCharge: 80000000
     startingCharge: 80000000
+  - type: PowerNetworkBattery
+    maxSupply: 15000000
+    maxChargeRate: 500000
+    supplyRampTolerance: 500000
+    supplyRampRate: 100000
   - type: Machine
     board: ADTIndustrialSMESMachineCircuitboard
 

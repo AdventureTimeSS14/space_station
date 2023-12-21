@@ -8,12 +8,30 @@
   - type: Sprite
     state: icon
   - type: Item
-    size: 1
+    size: Tiny
   - type: Clothing
     slots: [underweart]
+  # - type: Tag
+  #   tags:
+  #     - underweart
+  - type: Butcherable
+    butcheringType: Knife
+    spawned:
+    - id: MaterialCloth1
+      amount: 1
+  - type: Food
+    requiresSpecialDigestion: true
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
   - type: Tag
     tags:
-      - underweart
+    - ClothMade
+    - underweart
 
 - type: entity
   parent: ClothingUnderwearTopBase
@@ -143,3 +161,12 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Underwear/Top/peabra.rsi
+
+- type: entity
+  parent: ClothingUnderwearTopBase
+  id: ADTClothingUnderwearTopLaceBra
+  name: lace bra
+  description: Good looking lace underwear.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Top/lace_bra.rsi

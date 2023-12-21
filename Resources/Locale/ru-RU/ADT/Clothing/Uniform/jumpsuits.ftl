@@ -193,28 +193,123 @@ ent-ADTJumpskirtSwimwearYellow = желтый купальник
 
 ent-ADTJumpsuitAnarchyTshirt = черная футболка с символикой анархизма
     .desc = "Анархия-мама сынов своих любит, Анархия-мама не продаст, Свинцовым дождём врага приголубит, Анархия-мама - за нас!"
-    .suffix = { "" }
 
 ent-ADTJumpsuitDenimPants = джинсовые штаны
     .desc = Брюки из джинсовой ткани.
-    .suffix = { "" }
 
 ent-ADTJumpsuitDenim = джинсовый комбинезон
     .desc = Классический джинсовый полукомбинезон на лямках. Производства компании "Modeling Agency Dar-Vaxed".
-    .suffix = { "" }
 
 ent-ADTJumpsuitCamouflageTshirt = камуфляжная футболка
     .desc = Обычные футболка и брюки зеленой камуфляжной расцветки.
-    .suffix = { "" }
 
 ent-ADTJumpsuitCamouflageTshirtDesert = пустынная камуфляжная футболка
     .desc = Обычные футболка и брюки пустынной камуфляжной расцветки. Верните себе 2003 год!
-    .suffix = { "" }
 
 ent-ADTJumpsuitSerious = серьезная форма
     .desc = Серая футболка, черные джинсы - выглядит серьезно, грубо и круто!
+
+ent-ADTJumpskirtBlackShortDress = чёрное короткое платье
+    .desc = Легкое платье с открытой спиной из чёрной шелковой ткани с золотыми лентами, для элегантных распутных дам. Производство компании "Modeling Agency Dar-Vaxed".
+
+ent-ADTClothingUniformJumpsuitHungerGames = Комбинезон Капитолия
+    .desc = Комбинезон компании "Космических Голодных Игр".
+
+ent-ADTSwimsuitCap = капитанский купальник
+    .desc = Только не выходите в этом перед проверяющими с ЦК.
     .suffix = { "" }
 
-ent-ADTClothingUniformShortDressBlackGold = Чёрное короткое платье
-    .desc = Легкое платье с открытой спиной из чёрной шелковой ткани с золотыми лентами, для элегантных распутных дам. Производство компании  "Modeling Agency Dar-Vaxed"
+ent-ADTClothingUniformJumpsuitBlackShirt = чёрная рубашка
+    .desc = Обычная черная повседневная рубашка. Производство компании "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitBlueShirt = синяя рубашка
+    .desc = Обычная синяя повседневная рубашка. Производство компании "Modeling Agency Dar-Vaxed".
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitGothicAttire = готический наряд
+    .desc = Для тех, кто ненавидит яркие цвета.
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitSweatshirtBright = свитшот яркой личности
+    .desc = Для тех, кто любит яркие цвета.
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitFancyShirt = причудливая рубашка
+    .desc = Не знаю даже, как он сюда попал...
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitOldGreySuit = старый серый костюм
+    .desc = Сам костюм новый, но дизайн довольно устаревший, опираясь на текущей стиль компании "Modeling Agency Dar-Vaxed". Удивительно, что этот комплект одежды находится в продаже.
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitHawaiiShirt = гавайская рубашка
+    .desc = Идеальный вариант для тех, кто должен выглядеть серьезно, но при этом не хочет скрывать свою жизнерадостную натуру. Производство компании "Modeling Agency Dar-Vaxed".
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitOldBrownSuit = старый коричневый костюм
+    .desc = Тщательно ухоженная белая рубашка с коричневым пиджаком. Возможно он был ярко-коричневым, пока не выцвел. Производство компании  "Modeling Agency Dar-Vaxed"
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitPurpleShirt = фиолетовая рубашка
+    .desc = Обычная фиолетовая повседневная рубашка. Производство компании "Modeling Agency Dar-Vaxed".
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitRedShirt = красная рубашка
+    .desc = Обычная красная повседневная рубашка. Производство компании "Modeling Agency Dar-Vaxed".
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitRedPlaidShirt = красная рубашка в клетку
+    .desc = Пахнет барбекью... Производство компании  "Modeling Agency Dar-Vaxed"
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitOldDarkSuit = старый темный комбинезон
+    .desc = На нем видна этикетка... кажется на ней кто-то перезаписал надпись "Кажется тебе и правда нравится буква X..."
+    .suffix = { "" }
+
+ent-ADTClothingUniformJumpsuitLapkeeSet = тёмная охранная водолазка
+    .desc = Возможно сделанная на заказ прочная, с явно имеющими место быть броневставками водолазка для тяжёлой работы в тяжёлых условиях дальнего космоса. От неё приятно веет мандаринками и военными преступлениями.
+    .suffix = { "Именное, Lapkee" }
+
+ent-ADTClothingUniformNewMekka = униформа Новой Мекки
+    .desc = Эта униформа имеет очень долгую и  кровавую историю...
+
+ent-ADTClothingUniformJumpsuitSweaterHolidayBeige = бежевый свитер
+    .desc = Этот свитер носит главная звезда праздника.
+ent-ADTClothingUniformJumpsuitSweaterHolidayBlue = синий свитер
+    .desc = Истинный скакун Санты изображен на этом теплом свитере.
+ent-ADTClothingUniformJumpsuitSweaterHolidayRedDark = красный праздничный свитер c черными штанами
+    .desc = Красная, теплая, яркая, праздничная и главное - стильная. Этим всё сказано
+ent-ADTClothingUniformJumpsuitSweaterHolidayRedWhite = красный праздничный свитер c белыми штанами
+    .desc = Красная, теплая, яркая, праздничная. Этим всё сказано
+ent-ADTClothingUniformJumpsuitElf = костюм Эльфа
+    .desc = Пахнет елью, досками,пихтой, а так же праздником.
+
+ent-ADTClothingUniformSnowMaiden = костюм Снегурочки
+    .desc = Костюм с юбкой помощницы Деда Мороза.
+
+ent-ADTClothingUniformSchool = школьная форма
+    .desc = Японская школьная форма с Земли. Что-то она напоминает...
+
+ent-ADTClothingUniformMonkeyHolidaySuit = праздничная одежда для мартышек
+    .desc = Праздничная одежда для мартышек!
+
+ent-ADTClothingUniformRollNeckSnowman = водолазка со снеговиком
+    .desc = Красная водолазка с Мистером Снеговиком!
+ent-ADTClothingUniformShirtSpruce = костюм с рисунком ёлки
+    .desc = Серый костюм с рисунком украшенной ёлкой.
+ent-ADTClothingUniformShirtDeer = костюм с рисунком оленя
+    .desc = Зелёный костюм с рисунком помощника Санты.
+ent-ADTClothingUniformJumpsuitSweaterHoliday = рождественский свитер
+    .desc = Зелёный свитер с полосами.
+ent-ADTClothingUniformShirtSnowflake = костюм с рисунком снежинок
+    .desc = Зелёный костюм с красивым рисунком красивого снегопада.
+ent-ADTClothingUniformShirtSnowman = костюм с рисунком снеговика
+    .desc = Красный костюм с рисунком простого снеговика.
+
+ent-ADTClothingUniformChristmasCorset = рождественский корсет
+    .desc = Достаточно своеобразный рождественский корсет...
+
+ent-ADTClothingUniformSecAuditor = униформа аудитора СБ
+    .desc = Стандартная униформа проверяющих работу Службы Безопасности станции со стороны комитета надзора NanoTrasen.
+    .suffix = { "ЦК, CombatBibis" }

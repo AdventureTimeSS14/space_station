@@ -137,6 +137,14 @@
 
 - type: entity
   parent: WindoorSecure
+  id: WindoorSecureCentcomLocked
+  suffix: Centcom, Locked
+  components:
+  - type: AccessReader
+    access: [["Centcom"]]
+
+- type: entity
+  parent: WindoorSecure
   id: WindoorSecureCommandLocked
   suffix: Command, Locked
   components:
@@ -174,6 +182,14 @@
   components:
   - type: AccessReader
     access: [["Kitchen"]]
+
+- type: entity
+  parent: WindoorSecureSecurityLocked
+  id: WindoorSecureSecurityLawyerLocked
+  suffix: Security/Lawyer, Locked
+  components:
+  - type: AccessReader
+    access: [["Security"], ["Lawyer"]]
 
 - type: entity
   parent: WindoorSecure

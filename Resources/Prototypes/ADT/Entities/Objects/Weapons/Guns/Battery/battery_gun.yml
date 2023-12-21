@@ -43,3 +43,5 @@
     - HighRiskItem
   - type: StaticPrice
     price: 7500
+  - type: Item
+    size: Normal

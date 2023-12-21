@@ -42,3 +42,7 @@ ent-HappyHonkCluwne = обед Жалкий Клувень
 ent-FoodMealHappyHonkClown = { ent-HappyHonk }
     .suffix = Спавнер случайный обед
     .desc = { ent-HappyHonk.desc }
+
+ent-HappyHonkNukieSnacks = снэкбокс Синдиката
+    .desc = Подозрительный обед с потенциально взрывоопасным сюрпризом.
+    .suffix = Игрушка Опасный

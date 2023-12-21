@@ -26,6 +26,8 @@
     - Medical
     - Engineering
     - Cargo
+    - Centcom
+    - BlueShield
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
@@ -51,6 +53,7 @@
     pocket2: WeaponPulsePistol
     suitstorage: WeaponSubMachineGunDrozdRubber
     underwearb: ADTClothingUnderwearBottomBoxersBlueshield # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ADTClothingUnderwearTopBraBlueshield # Sirena-Underwear
   underwearb: ADTClothingUnderwearBottomPantiesBlueshield # Sirena-Underwear
 

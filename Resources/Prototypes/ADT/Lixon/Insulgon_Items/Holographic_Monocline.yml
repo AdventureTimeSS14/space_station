@@ -16,7 +16,7 @@
         Piercing: 5
         Radiation: 10
   - type: Item
-    size: 15
+    size: Normal
     sprite: ADT/Objects/Weapons/Melee/holographic-monocline.rsi
   - type: Tool
     qualities:

@@ -9,7 +9,7 @@
     tags:
       - ADTExtMagazineRifle
   - type: Item
-    size: 7
+    size: Small
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:

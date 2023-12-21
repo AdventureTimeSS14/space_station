@@ -78,7 +78,7 @@
       types:
         Blunt: 0
   - type: Item
-    size: 10
+    size: Small
     sprite: Objects/Fun/toys.rsi
     heldPrefix: garbagerama
   - type: ItemCooldown
@@ -373,3 +373,74 @@
   - type: Sprite
     sprite: ADT/Objects/Fun/toys.rsi
     state: plushie_timrika
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieAmira
+  name: Amira plushie
+  description: It looks like a soft and cute research director.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_amira
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieOvai
+  name: Ovai plushie
+  description: It looks like a soft and cute atmos.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_ovai
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieFritz
+  name: Ellis plushie
+  description: It looks like a soft and cute atmos.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_ellis
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieAzalia
+  name: Azalia plushie
+  description: It looks like a soft and cute blondie.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_azalia
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieSofy
+  name: Sofy plushie
+  description: It looks like a soft and cute blondie.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_sofy
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieLiexer
+  name: Ketua
+  description: It looks like a soft and cute blondie.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_liexer
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieMa
+  name: Ma
+  description: It looks like a soft and cute blondie.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_ma
+

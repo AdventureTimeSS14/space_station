@@ -10,7 +10,7 @@
     - type: StaminaDamageOnHit
       damage: 10
     - type: Item
-      size: 5
+      size: Small
       sprite: ADT/Objects/Misc/bathbroom.rsi
     - type: MeleeWeapon
       damage:

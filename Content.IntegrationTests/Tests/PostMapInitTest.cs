@@ -51,6 +51,14 @@ namespace Content.IntegrationTests.Tests
             "HalloweenBoxstation",
             "HalloweenBagel",
             "HalloweenAspid",
+            "ADTNYCluster",
+            "ADTNYSaltern",
+            "ADTNYBox",
+            "ADTNYAspid",
+            "ADTNYMarathon",
+            "ADTNYBagel",
+            "ADTNYCore",
+            "ADTNYDelta",
 
             // Corvax-Start
             "CorvaxAvrite",
@@ -78,7 +86,9 @@ namespace Content.IntegrationTests.Tests
             "Core",
             "Marathon",
             "Kettle",
-            "MeteorArena"
+            "Gemini",
+            "MeteorArena",
+            "Atlas"
         };
 
         /// <summary>
@@ -341,7 +351,7 @@ namespace Content.IntegrationTests.Tests
             var mapFolder = new ResPath("/Maps");
             var maps = resourceManager
                 .ContentFindFiles(mapFolder)
-                .Where(filePath => filePath.Extension == "yml" && !filePath.Filename.StartsWith(".", StringComparison.Ordinal))
+                .Where(filePath => filePath.Extension == "yml" && !filePath.Filename.StartsWith(".", StringComparison.Ordinal) && !filePath.Filename.StartsWith("corvax_", StringComparison.Ordinal))
                 .ToArray();
 
             var mapNames = new List<string>();

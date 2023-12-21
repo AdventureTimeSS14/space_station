@@ -44,6 +44,7 @@
   - Salvage
   - Security
   - Brig
+  - Lawyer
   - Cargo
   - Atmospherics
   - Medical
@@ -62,9 +63,12 @@
     shoes: ClothingShoesColorBrown
     head: ClothingHeadHatHopcap
     id: HoPPDA
+    gloves: ClothingHandsGlovesHop
     ears: ClothingHeadsetAltCommand
     belt: BoxFolderClipboard
+    pocket1: ADTFormPrinterMachineCircuitboard
     underwearb: ClothingUnderwearBottomBoxersHOP # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraHOP # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesHOP # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtHoP

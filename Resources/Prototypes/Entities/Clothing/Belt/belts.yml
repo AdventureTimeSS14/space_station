@@ -11,12 +11,10 @@
   - type: Clothing
     sprite: Clothing/Belt/utility.rsi
   - type: Storage
-    maxItemSize: Normal
+    #maxItemSize: Normal
     # TODO: Fill this out more.
     whitelist:
       tags:
-        - MiniFireExtinguisher
-        - Powerdrill
         - Wirecutter
         - Crowbar
         - Screwdriver
@@ -25,17 +23,22 @@
         - GeigerCounter
         - Flare
         - CableCoil
+        - Powerdrill
+        - JawsOfLife
         - CigPack
         - Radio
         - HolofanProjector
         - Multitool
         - AppraisalTool
+        - MiniFireExtinguisher
       components:
         - SprayPainter
         - NetworkConfigurator
         - RCD
         - RCDAmmo
         - Welder
+        - Flash
+        - Handcuff
         - PowerCell
         - Geiger
         - TrayScanner
@@ -409,7 +412,7 @@
 # Belts without visualizers
 
 - type: entity
-  parent: ClothingBeltStorageBase
+  parent: ClothingBeltAmmoProviderBase
   id: ClothingBeltBandolier
   name: bandolier
   description: A bandolier for holding shotgun ammunition.
@@ -420,10 +423,11 @@
     sprite: Clothing/Belt/bandolier.rsi
   - type: Item
     size: Huge
-  - type: Storage
+  - type: BallisticAmmoProvider
     whitelist:
       tags:
         - ShellShotgun
+    capacity: 14
 
 - type: entity
   parent: ClothingBeltBase
@@ -478,6 +482,9 @@
   name: security webbing
   description: Unique and versatile chest rig, can hold security gear.
   components:
+  - type: Storage
+    maxSlots: 8
+    maxItemSize: Normal
   - type: Sprite
     sprite: Clothing/Belt/securitywebbing.rsi
   - type: Clothing

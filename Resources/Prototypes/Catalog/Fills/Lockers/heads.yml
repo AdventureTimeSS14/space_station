@@ -17,6 +17,7 @@
       - id: CigPackGreen
         prob: 0.50
       - id: DoorRemoteCargo
+      - id: ADTClothingHeadHatsBeretSupply
       - id: RubberStampQm
       - id: ClothingHeadsetAltCargo
       - id: BoxEncryptionKeyCargo
@@ -40,7 +41,6 @@
       - id: CaptainIDCard
       - id: ClothingHeadHatCaptain
       - id: ClothingNeckCloakCap
-      - id: ClothingHandsGlovesCaptain
       - id: ClothingOuterHardsuitCap
       - id: ClothingMaskGasCaptain
       - id: WeaponDisabler
@@ -67,6 +67,7 @@
       # Sirena-Underwear-Start
       - id: ADTUnderwearBoxCap
       # Sirena-Underwear-End
+      - id: ADTSwimsuitCap
 
 - type: entity
   id: LockerCaptainFilled
@@ -109,6 +110,7 @@
       - id: ClothingOuterCoatCaptain
       # Corvax-Resprite-End
       - id: ADTClothingEyesHudAdvanced #ADT mods
+      - id: ADTSwimsuitCap
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
@@ -147,6 +149,7 @@
       # Sirena-Underwear-End
       - id: ADTHOPJumpskirtWarm
       - id: ADTHOPJumpsuitWarm
+      - id: ADTClothingHeadHatsBeretHOP
 
 - type: entity
   id: LockerChiefEngineerFilledHardsuit
@@ -164,7 +167,6 @@
       - id: ClothingNeckCloakCe
       - id: ClothingEyesGlassesMeson
       - id: ClothingBeltChiefEngineerFilled
-      - id: ClothingHeadHatBeretEngineering
       - id: ClothingShoesBootsMagAdv
       - id: ClothingHandsGlovesColorYellow
       - id: CigarCase
@@ -179,6 +181,7 @@
       # Sirena-Underwear-Start
       - id: ADTUnderwearBoxCE
       # Sirena-Underwear-End
+      - id: ADTClothingHeadHatsBeretCE
 
 - type: entity
   id: LockerChiefEngineerFilled
@@ -191,7 +194,6 @@
       - id: ClothingNeckCloakCe
       - id: ClothingEyesGlassesMeson
       - id: ClothingBeltChiefEngineerFilled
-      - id: ClothingHeadHatBeretEngineering
       - id: ClothingHandsGlovesColorYellow
       - id: ClothingUniformJumpsuitChiefEngineerTurtle
       - id: ClothingUniformJumpskirtChiefEngineerTurtle
@@ -207,6 +209,7 @@
       # Sirena-Underwear-End
       - id: ADTCEJumpskirtWarm
       - id: ADTCEJumpsuitWarm
+      - id: ADTClothingHeadHatsBeretCE
 
 - type: entity
   id: LockerChiefMedicalOfficerFilledHardsuit
@@ -341,7 +344,8 @@
   components:
   - type: StorageFill
     contents:
-      #- id: ClothingEyesHudSecurity
+      - id: NesSecurityShuttleConsoleCircuitboard
+      - id: ClothingEyesHudSecurity
       - id: WeaponDisabler
       - id: ClothingHeadHatBeretHoS
       - id: ClothingHeadHatCapHoS # Corvax-SecFashion
@@ -388,6 +392,7 @@
   - type: StorageFill
     contents:
       #- id: ClothingEyesHudSecurity
+      - id: NesSecurityShuttleConsoleCircuitboard
       - id: WeaponDisabler
       - id: ClothingHeadHatBeretHoS
       - id: ClothingHeadHatCapHoS # Corvax-SecFashion

@@ -1,7 +1,15 @@
 - type: vendingMachineInventory
   id: RobustSoftdrinksInventory
   startingInventory:
-    ADTDrinkHellEnergy: 5
+    ADTMulledWineGlass: 2
+    ADTMulledWineColdGlass: 2
+    ADTChampagneMandarinGlass: 2
+    ADTChristmasMilkshakeGlass: 2
+    ADTTeaCinnamonLemonGlass: 2
+    ADTSbitenCinnamonLemonGlass: 2
+    ADTHotCocoaGlass: 2
+    ADTHotChocolateGlass: 2
+    ADTHotChocolateAllergicGlass: 2
     DrinkColaCan: 4
     DrinkGrapeCan: 2
     DrinkRootBeerCan: 2

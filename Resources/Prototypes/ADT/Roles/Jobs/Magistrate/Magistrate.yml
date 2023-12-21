@@ -22,6 +22,7 @@
     - Maintenance
     - Service
     - Security
+    - Magistrate
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
@@ -29,13 +30,13 @@
 - type: startingGear
   id: MagistratGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitLawyerBlack
-    back: ClothingBackpack
+    jumpsuit: ADTClothingUniformsJumpsuitWhiteDiplomatSuitL
+    back: ClothingBackpackIAAFilled
     shoes: ClothingShoesBootsLaceup
     #mask: Ну что за косипор оставляет пустуе значения?
-    outerClothing: ClothingOuterRobesJudge
+    #outerClothing: ClothingOuterRobesJudge
     eyes: ClothingEyesGlassesSunglasses
-    head: ClothingHeadHatPwig
+    #head: ClothingHeadHatPwig
     id: MagistratPDA
     #gloves:
     ears: ClothingHeadsetMagistrat
@@ -43,9 +44,15 @@
     neck: ClothingNeckLawyerbadge
     pocket1: RubberStampMagistrat
     pocket2: ADTtelescopicBaton
-  innerClothingSkirt: ClothingUniformJumpsuitLawyerBlack
-  satchel: ClothingBackpackSatchel
-  duffelbag: ClothingBackpackDuffel
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+  innerClothingSkirt: ADTClothingUniformsJumpsuitWhiteDiplomatSuitL
+  satchel: ClothingBackpackSatchelIAAFilled
+  duffelbag: ClothingBackpackDuffelIAAFilled
+  #inhand:
+  #  - BriefcaseIAAFilled
 
 
 

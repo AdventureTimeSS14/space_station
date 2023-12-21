@@ -13,10 +13,10 @@
     - state: box-open
       map: ["openLayer"]
   - type: Storage
-    maxItemSize: Normal
+    maxItemSize: Small
   - type: Item
     sprite: ADT/KD/RingBox.rsi
-    size: 4
+    size: Small
     heldPrefix: box
   - type: StorageFill
     contents:

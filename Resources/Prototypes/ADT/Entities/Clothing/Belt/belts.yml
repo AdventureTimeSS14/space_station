@@ -56,9 +56,8 @@
   description: Part of ERT security's gear
   components:
   - type: Storage
-    maxItemSize: Ginormous
-    maxTotalWeight: 0
-    maxSlots: 50 #By this ignore maxTotalWeight
+    maxItemSize: Normal
+    maxSlots: 10
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -78,7 +77,7 @@
   components:
   - type: Storage
     maxItemSize: Normal
-    maxTotalWeight: 0
+    #maxTotalWeight: 0
     maxSlots: 10 
   - type: StorageFill
     contents:
@@ -119,7 +118,7 @@
   components:
   - type: Storage
     maxItemSize: Normal
-    maxTotalWeight: 0
+    #maxTotalWeight: 0
     maxSlots: 10 
   - type: StorageFill
     contents:
@@ -145,7 +144,7 @@
   components:
   - type: Storage
     maxItemSize: Normal
-    maxTotalWeight: 0
+    #maxTotalWeight: 0
     maxSlots: 10 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
@@ -167,8 +166,6 @@
   name: Pyotr`s sabre sheath
   description: An ornate sheath designed to hold an officer's blade.
   components:
-  - type: Item
-    size: 25
   - type: Sprite
     sprite: ADT/Clothing/Belt/pyotr_sheath.rsi
     state: sheath
@@ -213,8 +210,50 @@
   suffix: Halloween
   components:
   - type: Storage
-    maxItemSize: Huge
+    maxItemSize: Normal
   - type: Sprite
     sprite: ADT/Clothing/Belt/killa_webbing.rsi
   - type: Clothing
     sprite: ADT/Clothing/Belt/killa_webbing.rsi
+ 
+ #Празатомат
+- type: entity
+  parent: ClothingBeltBase
+  id: ADTClothingBeltBlackSuspenders
+  name: black suspenders
+  description: A suspenders made with elastic ribbon and the addition of rubber. Made by company "Modeling Agency Dar-Vaxed".
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Belt/black_suspenders.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Belt/black_suspenders.rsi #спрайты от prazat911
+    quickEquip: true
+
+- type: entity
+  parent: ClothingBeltBase
+  id: ADTClothingBeltBrownSuspenders
+  name: brown suspenders
+  description: A suspenders made of rough leather. Made by company "Modeling Agency Dar-Vaxed".
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Belt/leather_suspenders.rsi 
+  - type: Clothing
+    sprite: ADT/Clothing/Belt/leather_suspenders.rsi #спрайты от prazat911
+    quickEquip: true
+
+#кобура аудитора СБ
+
+- type: entity
+  id: ADTClothingBeltSecAuditorHolster
+  parent: ClothingBeltHolster
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+        - id: ADTWeaponPistolPMM
+        - id: MagazinePistol
+  - type: Sprite
+    sprite: ADT/Clothing/Belt/sec_auditor_holster.rsi 
+  - type: Clothing
+    sprite: ADT/Clothing/Belt/sec_auditor_holster.rsi 
+    quickEquip: true

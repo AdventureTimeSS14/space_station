@@ -15,7 +15,7 @@
       types:
         Slash: 1
   - type: Item
-    size: 15
+    size: Normal
     sprite: ADT/Objects/Weapons/Melee/white_bouquet.rsi
   - type: DisarmMalus
 
@@ -35,7 +35,7 @@
       types:
         Slash: 1
   - type: Item
-    size: 15
+    size: Normal
     sprite: ADT/Objects/Weapons/Melee/rose_bouquet.rsi
   - type: DisarmMalus
 
@@ -55,7 +55,7 @@
       types:
         Slash: 1
   - type: Item
-    size: 15
+    size: Normal
     sprite: ADT/Objects/Weapons/Melee/yellow_bouquet.rsi
   - type: DisarmMalus
 
@@ -75,7 +75,7 @@
       types:
         Slash: 1
   - type: Item
-    size: 15
+    size: Normal
     sprite: ADT/Objects/Weapons/Melee/bouquet_with_beer.rsi
   - type: DisarmMalus
 
@@ -95,7 +95,7 @@
       types:
         Slash: 1
   - type: Item
-    size: 15
+    size: Normal
     sprite: ADT/Objects/Weapons/Melee/black_bouquet.rsi
   - type: DisarmMalus
 
@@ -115,6 +115,6 @@
       types:
         Slash: 1
   - type: Item
-    size: 15
+    size: Normal
     sprite: ADT/Objects/Weapons/Melee/liliac_bouquet.rsi
   - type: DisarmMalus
