@@ -379,7 +379,7 @@
   - type: StationEvent
     earliestStart: 50
     weight: 5
-    minimumPlayers: 100
+    minimumPlayers: 35
     duration: 1
   - type: ZombieRule
     minStartDelay: 0 #let them know immediately
