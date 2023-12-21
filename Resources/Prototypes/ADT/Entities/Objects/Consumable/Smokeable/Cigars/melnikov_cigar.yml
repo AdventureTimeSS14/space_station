@@ -50,7 +50,7 @@
 #        maxVol: 45    
 - type: entity
   id: ADTMelnikovCigar
-  parent: BaseCigar
+  parent: CigarGold
   name: Sigar Melnikov
   description: Sigar
   components:
