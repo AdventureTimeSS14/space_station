@@ -69,7 +69,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: CigarGold
+    - id: ADTMelnikovCigar
       amount: 8
   - type: Sprite
     sprite: ADT/Objects/Consumable/Smokeables/melnikov_case.rsi
