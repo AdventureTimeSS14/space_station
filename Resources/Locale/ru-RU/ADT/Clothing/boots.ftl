@@ -58,3 +58,6 @@ ent-ADTClothingFootElfBoots = сапоги Эльфа
 
 ent-ADTClothingFootBootsSnowMaiden = сапоги Снегурочки
     .desc = Сапоги внучки Деда Мороза.
+
+ent-ClothingShoesBootsWinter = зимние ботинки
+    .desc = Пушистые сапоги помогут пережить даже самую холодную зиму.
