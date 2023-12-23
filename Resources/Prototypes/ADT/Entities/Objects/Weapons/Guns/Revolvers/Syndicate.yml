@@ -10,11 +10,6 @@
   - type: Item
     size: Normal
     sprite: Objects/Weapons/Melee/white_cane.rsi
-  - type: MeleeWeapon
-    wideAnimationRotation: 45
-    damage:
-      types:
-        Blunt: 5
   - type: Gun
     fireRate: 2
     selectedMode: SemiAuto
