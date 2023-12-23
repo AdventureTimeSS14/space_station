@@ -1,38 +1,7 @@
 - type: entity
-  id: ADTBaseFakeDefibrillator
-  parent: BaseItem
-  name: defibrillator
-  description: CLEAR! Zzzzat!
-  suffix: Fake
-  abstract: true
+  id: ADTFakeDefibrillator
+  parent: Defibrillator
   components:
-    - type: Sprite
-      sprite: Objects/Specific/Medical/defib.rsi
-      layers:
-        - state: icon
-        - state: screen
-          map: [ "enum.ToggleVisuals.Layer" ]
-          visible: false
-          shader: unshaded
-        - state: ready
-          map: ["enum.PowerDeviceVisualLayers.Powered"]
-          shader: unshaded
-    - type: Appearance
-    - type: GenericVisualizer
-      visuals:
-        enum.ToggleVisuals.Toggled:
-          enum.ToggleVisuals.Layer:
-            True: { visible: true }
-            False: { visible: false }
-        enum.DefibrillatorVisuals.Ready:
-          enum.PowerDeviceVisualLayers.Powered:
-            True: { visible: true }
-            False: { visible: false }
-    - type: Item
-      size: Normal
-    - type: ItemCooldown
-    - type: Speech
-      speechVerb: Robotic
     - type: Defibrillator
       zapHeal:
         types:
@@ -41,15 +10,3 @@
       zapDamage: 35
       zapDelay: 2
       doAfterDuration: 1
-    - type: DoAfter
-    - type: UseDelay
-    - type: StaticPrice
-      price: 100
-
-- type: entity
-  id: ADTFakeDefibrillator
-  parent: [ ADTBaseFakeDefibrillator, PowerCellSlotMediumItem ]
-  components:
-  - type: MultiHandedItem
-  - type: PowerCellDraw
-    useRate: 100
