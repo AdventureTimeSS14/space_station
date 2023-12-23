@@ -1,0 +1,51 @@
+- type: entity
+  id: ADTAmatoxinChemistryBottle
+  name: amatoxin bottle
+  parent: BaseChemistryBottleFilled
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          maxVol: 30
+          reagents:
+            - ReagentId: Amatoxin
+              Quantity: 30
+
+- type: entity
+  id: ADTLicoxideChemistryBottle
+  name: licoxide bottle
+  parent: BaseChemistryBottleFilled
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          maxVol: 30
+          reagents:
+            - ReagentId: Licoxide
+              Quantity: 30
+
+- type: entity
+  id: ADTLexorinChemistryBottle
+  name: licoxide bottle
+  parent: BaseChemistryBottleFilled
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          maxVol: 30
+          reagents:
+            - ReagentId: Lexorin
+              Quantity: 30
+
+- type: entity
+  id: BartenderToxinsPack
+  suffix: Filled
+  parent: MedkitCombat
+  components:
+  - type: StorageFill
+    contents:
+      - id: MuteToxinChemistryBottle
+      - id: ADTAmatoxinChemistryBottle
+      - id: ADTLicoxideChemistryBottle
+      - id: ADTLexorinChemistryBottle
+      - id: ADTLexorinChemistryBottle
