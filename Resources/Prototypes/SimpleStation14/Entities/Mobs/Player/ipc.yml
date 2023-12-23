@@ -27,12 +27,12 @@
     proto: robot
   - type: Destructible
     thresholds:
-      - trigger:
-          !type:DamageTypeTrigger
-          damageType: Blunt
-          damage: 400
-        behaviors:
-          - !type:GibBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 400
+      behaviors:
+        - !type:GibBehavior { }
   - type: SlowOnDamage
     speedModifierThresholds:
       60: 0.7

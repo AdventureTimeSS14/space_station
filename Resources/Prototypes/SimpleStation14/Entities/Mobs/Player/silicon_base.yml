@@ -1,7 +1,7 @@
 - type: entity
   save: false
   abstract: true
-  id: PlayerSiliconBase1 # For player controlled silicons
+  id: ADTPlayerSiliconBase # For player controlled silicons
   components:
     - type: Reactive
       groups:
@@ -98,7 +98,7 @@
       thermalRegulationTemperatureThreshold: 125
 
 - type: entity
-  parent: PlayerSiliconBase1
+  parent: ADTPlayerSiliconBase
   id: PlayerSiliconHumanoidBase
   abstract: true
   components:
@@ -111,7 +111,7 @@
         0: Alive
         165: Dead
     - type: Damageable
-      damageContainer: ADTSilicon # Not a wall.
+      damageContainer: ADTSiliconDamageContainer # Not a wall.
     - type: Stamina
       critThreshold: 200
     - type: Destructible
@@ -182,24 +182,32 @@
           state: "creampie_human"
           visible: false
     - type: Repairable
-      fuelcost: 60
-      doAfterDelay: 18
-    # - type: Bloodstream ### Кровь отключена
-    #   damageBleedModifiers: BloodlossIPC
-    #   bloodReagent: Water
-    #   bleedReductionAmount: 0
-    #   bloodMaxVolume: 500
-    #   chemicalMaxVolume: 0
-    #   bleedPuddleThreshold: 3
-    #   bleedRefreshAmount: 0
-    #   bloodLossThreshold: 0
-    #   maxBleedAmount: 14
-    #   bloodlossDamage:
-    #     types:
-    #       Burn: 1.5
-    #   bloodlossHealDamage:
-    #     types:
-    #       Burn: 0
+      #fuelcost: 60
+      doAfterDelay: 10 # was 18
+      damage:
+        types:
+          Blunt: -20
+          Slash: -20
+          Piercing: -20
+      #bloodlossModifier: -100
+    - type: Bloodstream ### я добавил компонент Bloodstream как заглушку. Он нужен,
+# чтобы хилиться с помощью CableStack. Дело в том, что HealingSystem использует проверку на наличие BloodstreamComponent.
+# В любом случае Bloodstream здесь является костылём, чтобы не лезть в код. В будущем можно зделать для IPC нормальную bloodstream систему.
+      damageBleedModifiers: BloodlossIPC
+      bloodReagent: Water
+      bleedReductionAmount: 0
+      bloodMaxVolume: 0
+      chemicalMaxVolume: 0
+      bleedPuddleThreshold: 3
+      bleedRefreshAmount: 0
+      bloodLossThreshold: 0
+      maxBleedAmount: 0
+      bloodlossDamage:
+        types:
+          Burn: 1.5
+      bloodlossHealDamage:
+        types:
+          Burn: 0
     - type: Flammable
       fireSpread: true
       canResistFire: true
