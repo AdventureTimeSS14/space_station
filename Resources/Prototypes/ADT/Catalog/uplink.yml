@@ -262,3 +262,79 @@
     whitelist:
       tags:
       - NukeOpsUplink
+
+
+    # Job Specific
+
+- type: listing
+  id: ADTStunbaguette
+  name: uplink-stun-baguette-name
+  description: uplink-stun-baguette-desc
+  productEntity: ADTStunbaguette
+  cost:
+    Telecrystal: 7
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Chef
+    - Mime
+    
+- type: listing
+  id: ADTuplinkCaneShotgun
+  name: uplink-cane-shotgun-name
+  description: uplink-cane-shotgun-desc
+  productEntity: ADTWhiteCaneShotgun
+  cost:
+    Telecrystal: 6
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Mime
+    - Passenger
+
+- type: listing
+  id: ADTuplinkMuteToxin
+  name: uplink-mute-toxin-name
+  description: uplink-mute-toxin-desc
+  productEntity: MuteToxinChemistryBottle
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Mime
+
+- type: listing
+  id: ADTuplinkBartenderToxinsPack
+  name: uplink-bar-toxins-name
+  description: uplink-bar-toxins-desc
+  productEntity: BartenderToxinsPack
+  cost:
+    Telecrystal: 12
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Bartender
+
+- type: listing
+  id: ADTuplinkADTFakeDefibrillator
+  name: uplink-fake-defib-name
+  description: uplink-fake-defib-desc
+  productEntity: ADTFakeDefibrillator
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkJob
+  conditions:
+    - !type:BuyerDepartmentCondition
+      whitelist:
+      - Medical
+
