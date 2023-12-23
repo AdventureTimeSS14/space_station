@@ -37,7 +37,7 @@
           shape:
             !type:PhysShapeCircle
             radius: 0.35
-          density: 50
+          density: 185 ### влияет на шанс Disarm. было 50
           mask:
             - MobMask
           layer:
