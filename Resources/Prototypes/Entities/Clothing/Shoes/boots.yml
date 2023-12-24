@@ -24,16 +24,6 @@
   - type: FootstepModifier # Corvax-Sounds
     footstepSoundCollection:
       collection: FootstepBoots
-  - type: Storage
-    grid:
-    - 0,0,4,3
-    whitelist:
-      tags:
-        - Knife
-        - Sidearm
-  - type: StorageFill
-    contents:
-      - id: CombatKnife
 
 - type: entity
   parent: ClothingShoesBaseButcherable

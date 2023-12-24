@@ -300,11 +300,6 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepBoots
-  - type: Storage
-    whitelist:
-      tags:
-        - Knife
-        - Sidearm
   - type: TemperatureProtection #слабая защита от холода
     coefficient: 0.05
 
