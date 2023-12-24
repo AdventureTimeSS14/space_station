@@ -1,0 +1,70 @@
+- type: entity
+  parent: NesBaseBigStructure
+  id: NesGravityGeneratorBroken
+  name: сломаный генератор гравитации #Nes Сломаный грави ген
+  description: Врятле он уже на что-то годится.
+  components:
+    - type: Clickable
+    - type: InteractionOutline
+    - type: Sprite
+      sprite: Structures/Machines/gravity_generator.rsi
+      drawdepth: Mobs
+      layers:
+        - state: broken
+    - type: Damageable
+      damageContainer: Inorganic
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 200
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                path: /Audio/Effects/metalbreak.ogg
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                SheetSteel1:
+                  min: 2
+                  max: 4
+
+- type: entity
+  id: NesGravityGeneratorCore
+  parent: BaseItem
+  name: гравитационное ядро
+  description: То, благодаря чему раньше под вашими ногами был пол, а не потолок.
+  components:
+    - type: Sprite
+      sprite: NES/GraviCore.rsi
+      state: GraviCore
+    - type: StaticPrice
+      price: 15000
+    - type: PointLight
+      radius: 3
+      energy: 3
+      color: "#9ad67a"
+    - type: Tag
+      tags:
+      - HighRiskItem
+
+- type: entity
+  noSpawn: true
+  parent: GravityGenerator
+  id: GravityGeneratorUnanchored
+  suffix: Unanchored
+  components:
+  - type: Transform
+    anchored: false
+  - type: Physics
+    bodyType: Dynamic
+
+- type: entity
+  id: CrateEngineeringGravityGenerator
+  name: ящик с генератором гравитации
+  parent: CrateEngineeringSecure
+  components:
+  - type: StorageFill
+    contents:
+      - id: GravityGeneratorUnanchored

@@ -1,0 +1,58 @@
+#NES броня и прочее
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: NesClothingOuterHardsuitPirates
+  name: скафандр мародерского штурмовика
+  description: Тяжелый скафандр с двумя визорами, обеспечивающими своему носителю обзор на 360 градусов. Эсклюзивные разработки космическиз мародеров.
+  components:
+  - type: Sprite
+    sprite: NES/Spacesuits/Pirates_HardsuitArmor.rsi
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: NES/Spacesuits/Pirates_HardsuitArmor.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.45
+        Slash: 0.45
+        Piercing: 0.45
+        Heat: 0.4
+        Radiation: 0.3
+        Caustic: 0.5
+        Stun: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: ToggleableClothing
+    clothingPrototype: NesClothingHeadHelmetHardsuitPirates
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: NesClothingHeadHelmetHardsuitPirates
+  noSpawn: true
+  name: шлем скафандра мародерского штурмовика
+  description: Шлем способный остановить выстрел низкоколиберной пули с двумя визорами, обеспечивающими своему носителю обзор на 360 градусов. Эсклюзивные разработки космическиз мародеров.
+  components:
+  - type: Sprite
+    sprite: NES/Spacesuits/Pirates_HardsuitHelmet.rsi
+  - type: Clothing
+    sprite: NES/Spacesuits/Pirates_HardsuitHelmet.rsi
+  - type: PointLight
+    color: blue
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9

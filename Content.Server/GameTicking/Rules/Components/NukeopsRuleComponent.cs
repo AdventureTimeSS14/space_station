@@ -21,7 +21,7 @@ public sealed partial class NukeopsRuleComponent : Component
     /// The minimum needed amount of players
     /// </summary>
     [DataField]
-    public int MinPlayers = 20;
+    public int MinPlayers = 30; //Дебаг, вернуть на 30
 
     /// <summary>
     ///     This INCLUDES the operatives. So a value of 3 is satisfied by 2 players & 1 operative
@@ -30,7 +30,7 @@ public sealed partial class NukeopsRuleComponent : Component
     public int PlayersPerOperative = 7;
 
     [DataField]
-    public int MaxOps = 5;
+    public int MaxOps = 6;
 
     /// <summary>
     /// What will happen if all of the nuclear operatives will die. Used by LoneOpsSpawn event.
@@ -147,7 +147,7 @@ public sealed partial class NukeopsRuleComponent : Component
     public ResPath OutpostMap = new("/Maps/nukieplanet.yml");
 
     [DataField(customTypeSerializer: typeof(ResPathSerializer))]
-    public ResPath ShuttleMap = new("/Maps/infiltrator.yml");
+    public ResPath ShuttleMap = new("/Maps/Shuttles/SYND_Karneline.yml");
 
     [DataField]
     public WinType WinType = WinType.Neutral;
