@@ -40,7 +40,7 @@
       sprite: NES/GraviCore.rsi
       state: GraviCore
     - type: StaticPrice
-      price: 15000
+      price: 5000
     - type: PointLight
       radius: 3
       energy: 3
