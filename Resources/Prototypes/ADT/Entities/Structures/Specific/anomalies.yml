@@ -34,3 +34,41 @@
   - type: EmitSoundOnSpawn
     sound:
       path: /Audio/Voice/Human/femalescream_1.ogg
+
+
+
+- type: entity
+  id: ADTAnomalyMonke
+  name: monke anomaly
+  description: An impossible object. Should you be standing this close to it?
+  parent: BaseAnomaly
+  suffix: Monke, DO NOT MAP
+  components:
+  - type: Anomaly
+    corePrototype: ADTAnomalyCoreMonke
+    coreInertPrototype: ADTAnomalyCoreMonkeInert
+  - type: Sprite
+    noRot: true
+    drawdepth: Effects #it needs to draw over stuff.
+    sprite: ADT/Structures/Specific/monke_anomaly.rsi
+    layers:
+    - state: anom_base
+      map: ["enum.AnomalyVisualLayers.Base"]
+    - state: anom_pulse
+      map: ["enum.AnomalyVisualLayers.Animated"]
+      visible: false
+  - type: PointLight
+    radius: 2.0
+    energy: 7.5
+    color: "#fff700"
+    castShadows: false
+  - type: EntitySpawnAnomaly
+    superCriticalSpawns:
+     - MobGorilla
+     - TrashBananaPeelBig3
+    spawns:
+    - MobMonkey
+    - TrashBananaPeel
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/Animals/monkey_scream.ogg
