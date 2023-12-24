@@ -151,3 +151,65 @@
   - type: Sprite
     sprite: NES/Flags.rsi
     state: FederationFlag
+
+- type: entity
+  parent: ComputerComms
+  id: NesErtComputerComms
+  name: консоль связи ОБР
+  components:
+    - type: AccessReader
+      access: [[ "Command" ]]
+    - type: CommunicationsConsole
+      title: comms-console-announcement-title-ert
+      global: true
+      canShuttle: false
+      sound:
+        path: /Audio/Announcements/attention.ogg
+        params:
+          volume: -4
+
+- type: entity
+  id: NesBaseBigStructure
+  parent: BaseStructure
+  abstract: true
+  components:
+  - type: Transform
+    anchored: false
+  - type: Clickable
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.3,-1.3,1.3,1.3"
+        density: 600
+        layer:
+        - WallLayer
+
+- type: entity
+  id: NesSignalTerminalDirectional
+  name: настенный терминал
+  suffix: Направленый
+  parent: SignalButton
+  components:
+  - type: WallMount
+    arc: 180
+  - type: SignalSwitch
+    clickSound: "/Audio/Machines/beep.ogg"
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: NES/button.rsi
+    state: dead
+  - type: Construction
+    graph: SignalButtonDirectionalGraph
+    node: SignalButtonDirectionalNode
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#ff0000"
+  - type: Lock
+    locked: true
+  - type: AccessReader
+    access: [['Security']]

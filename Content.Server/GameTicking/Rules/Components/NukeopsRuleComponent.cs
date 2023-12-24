@@ -147,7 +147,7 @@ public sealed partial class NukeopsRuleComponent : Component
     public ResPath OutpostMap = new("/Maps/nukieplanet.yml");
 
     [DataField(customTypeSerializer: typeof(ResPathSerializer))]
-    public ResPath ShuttleMap = new("/Maps/infiltrator.yml");
+    public ResPath ShuttleMap = new("/Maps/Shuttles/SYND_Karneline.yml");
 
     [DataField]
     public WinType WinType = WinType.Neutral;
