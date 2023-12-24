@@ -33,3 +33,6 @@ ent-ADTClothingBackpackLeatherLadySatchel = кожаный ранец
 ent-ADTClothingBackpackSatchelLapkee = тёмная сумка
     .desc = 50 оттенков чёрного для работы в отделе службы безопасности с удобством и комфортом. Исполнена из прочной кожи ассистентов.
     .suffix = { "Именное, Lapkee" }
+
+ent-ADTClothingBackpackDuffelDurathead = дюротканевый вещмешок
+    .desc = Вещмешок выполненый из более прочной и эластичной дюраткани.
