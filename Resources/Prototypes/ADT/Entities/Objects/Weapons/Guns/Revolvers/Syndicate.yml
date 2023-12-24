@@ -23,7 +23,7 @@
     whitelist:
       tags:
       - ShellShotgun
-    capacity: 3
+    capacity: 1
     proto: ShellShotgun
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
