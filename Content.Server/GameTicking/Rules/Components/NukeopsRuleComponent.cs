@@ -21,7 +21,7 @@ public sealed partial class NukeopsRuleComponent : Component
     /// The minimum needed amount of players
     /// </summary>
     [DataField]
-    public int MinPlayers = 30; //Дебаг, вернуть на 30
+    public int MinPlayers = 20;
 
     /// <summary>
     ///     This INCLUDES the operatives. So a value of 3 is satisfied by 2 players & 1 operative
@@ -30,7 +30,7 @@ public sealed partial class NukeopsRuleComponent : Component
     public int PlayersPerOperative = 7;
 
     [DataField]
-    public int MaxOps = 6;
+    public int MaxOps = 5;
 
     /// <summary>
     /// What will happen if all of the nuclear operatives will die. Used by LoneOpsSpawn event.
