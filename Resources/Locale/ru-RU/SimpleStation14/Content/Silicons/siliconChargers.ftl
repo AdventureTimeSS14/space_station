@@ -1,5 +1,5 @@
-silicon-charger-overheatwarning = You feel like you're in a microwave!
-silicon-charger-chargerate-string = Charge rate
-silicon-charger-efficiency-string = Efficiency
+silicon-charger-overheatwarning = Вы чувствуете, будто вы в микроволновке!
+silicon-charger-chargerate-string = Скорость зарядки
+silicon-charger-efficiency-string = Эффективность
 
-silicon-charger-list-full = {CAPITALIZE(THE($charger))} can only accommodate so many targets!
+silicon-charger-list-full = {CAPITALIZE($charger)} может вместить только такое количество целей!

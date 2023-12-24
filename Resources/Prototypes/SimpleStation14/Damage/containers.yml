@@ -10,7 +10,7 @@
 #     - Bloodloss
 
 - type: damageContainer
-  id: ADTSilicon
+  id: ADTSiliconDamageContainer
   supportedGroups:
     - Brute
     - Burn

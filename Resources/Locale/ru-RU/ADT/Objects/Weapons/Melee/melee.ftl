@@ -24,3 +24,7 @@ ent-ADTPyotrSabre = палаш Петра Шахина
 ent-ADTWoodenSword = деревянный меч
     .desc = Настоящий робаст нуждается в ежедневных тренировках.
     .suffix = { "Тренировочное" }
+
+ent-ADTStunbaguette = багет
+    .desc = Bon appétit! Attendez... Il est faux!
+    .suffix = { "Дубинка" }
