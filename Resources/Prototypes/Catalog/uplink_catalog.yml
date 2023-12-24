@@ -160,7 +160,7 @@
   description: uplink-mini-bomb-desc
   productEntity: SyndieMiniBomb
   cost:
-    Telecrystal: 6
+    Telecrystal: 8
   categories:
     - UplinkExplosives
 
@@ -209,7 +209,7 @@
   description: uplink-c4-desc
   productEntity: C4
   cost:
-    Telecrystal: 4
+    Telecrystal: 3
   categories:
   - UplinkExplosives
 
@@ -431,7 +431,7 @@
   productEntity: ReinforcementRadioSyndicate
   icon: { sprite: Objects/Devices/communication.rsi, state: old-radio }
   cost:
-    Telecrystal: 12
+    Telecrystal: 10
   categories:
   - UplinkUtility
   conditions:
@@ -493,9 +493,9 @@
   name: uplink-encryption-key-name
   description: uplink-encryption-key-desc
   icon: { sprite: /Textures/Objects/Devices/encryption_keys.rsi, state: synd_label }
-  productEntity: BoxEncryptionKeySyndie # Two for the price of one
+  productEntity: EncryptionKeySyndie # One for the price of one
   cost:
-    Telecrystal: 2
+    Telecrystal: 1
   categories:
   - UplinkUtility
 
@@ -517,7 +517,7 @@
   icon: { sprite: /Textures/Objects/Misc/bureaucracy.rsi, state: pen }
   productEntity: HypopenBox
   cost:
-    Telecrystal: 6
+    Telecrystal: 10
   categories:
   - UplinkUtility
 
@@ -537,7 +537,7 @@
   description: uplink-radio-jammer-desc
   productEntity: RadioJammer
   cost:
-    Telecrystal: 4
+    Telecrystal: 3
   categories:
   - UplinkUtility
 
@@ -550,7 +550,7 @@
   icon: { sprite: /Textures/Clothing/Back/Backpacks/backpack.rsi, state: icon }
   productEntity: StorageImplanter
   cost:
-    Telecrystal: 8
+    Telecrystal: 10
   categories:
     - UplinkImplants
   conditions:
@@ -577,7 +577,7 @@
   icon: { sprite: /Textures/Mobs/Species/Human/parts.rsi, state: full }
   productEntity: DnaScramblerImplanter
   cost:
-    Telecrystal: 10
+    Telecrystal: 8
   categories:
     - UplinkImplants
 
@@ -922,7 +922,7 @@
   description: uplink-power-sink-desc
   productEntity: PowerSink
   cost:
-    Telecrystal: 8
+    Telecrystal: 6
   categories:
   - UplinkTools
   conditions:
@@ -1151,7 +1151,7 @@
   description: uplink-clothing-thieving-gloves-desc
   productEntity: ThievingGloves
   cost:
-    Telecrystal: 2
+    Telecrystal: 4
   categories:
   - UplinkArmor
 
@@ -1295,15 +1295,15 @@
 #   categories:
 #   - UplinkMisc
 
-- type: listing
-  id: UplinkNocturineChemistryBottle
-  name: uplink-nocturine-chemistry-bottle-name
-  description: uplink-nocturine-chemistry-bottle-desc
-  productEntity: NocturineChemistryBottle
-  cost:
-    Telecrystal: 4
-  categories:
-  - UplinkMisc
+# - type: listing
+#   id: UplinkNocturineChemistryBottle
+#   name: uplink-nocturine-chemistry-bottle-name
+#   description: uplink-nocturine-chemistry-bottle-desc
+#   productEntity: NocturineChemistryBottle
+#   cost:
+#      Telecrystal: 6
+#   categories:
+#   - UplinkMisc
 
 - type: listing
   id: UplinkCombatMedkit
