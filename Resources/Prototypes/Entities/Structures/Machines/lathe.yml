@@ -623,6 +623,8 @@
       - WeaponXrayCannon
       - MagazineBox357Incendiary
       - SpeedLoader357Rubber
+      - WeaponADTWeaponLasgunSALR36
+      - WeaponADTPowerCellLasgun
   - type: MaterialStorage
     whitelist:
       tags:

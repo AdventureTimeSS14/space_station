@@ -7,3 +7,23 @@
 #  cost: 3000
 #  category: Armory
 #  group: market
+
+- type: cargoProduct
+  id: ADTArmoryPistolUSSP
+  icon:
+    sprite: ADT/Objects/Weapons/Guns/Pistols/pmm.rsi
+    state: icon
+  product: ADTCrateArmoryUSSPPistols
+  cost: 3500
+  category: Armory
+  group: market
+
+- type: cargoProduct
+  id: ADTArmoryLasgunSALR36
+  icon:
+    sprite: ADT/Objects/Weapons/Guns/Battery/salr36.rsi
+    state: icon
+  product: ADTCrateArmorySALR36
+  cost: 5000
+  category: Armory
+  group: market

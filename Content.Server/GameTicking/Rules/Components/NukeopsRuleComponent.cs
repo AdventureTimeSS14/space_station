@@ -102,7 +102,7 @@ public sealed partial class NukeopsRuleComponent : Component
     ///     Delay between war declaration and nuke ops arrival on station map. Gives crew time to prepare
     /// </summary>
     [DataField("warNukieArriveDelay")]
-    public TimeSpan? WarNukieArriveDelay = TimeSpan.FromMinutes(15);
+    public TimeSpan? WarNukieArriveDelay = TimeSpan.FromMinutes(20);
 
     /// <summary>
     ///     Minimal operatives count for war declaration

@@ -20,4 +20,23 @@
         volume: -4
     soundEmpty:
       path: /Audio/ADT/Weapons/Guns/Empty/ar12_empty.ogg
-    fireRate: 7.5
+    fireRate: 6
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: ADTMagazineRifleAR12
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineLightRifle
+            - ADTMagazineRifleAR12
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeLightRifle
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle

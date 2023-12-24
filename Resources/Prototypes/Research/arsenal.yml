@@ -118,6 +118,8 @@
   cost: 8500
   recipeUnlocks:
   - WeaponLaserCannon
+  - WeaponADTWeaponLasgunSALR36
+  - WeaponADTPowerCellLasgun
 
 - type: technology
   id: WaveParticleHarnessing
