@@ -379,6 +379,7 @@
   - type: StationEvent
     earliestStart: 50
     weight: 5
+    minimumPlayers: 35
     duration: 1
   - type: ZombieRule
     minStartDelay: 0 #let them know immediately
@@ -395,7 +396,7 @@
   - type: StationEvent
     earliestStart: 45
     weight: 5
-    minimumPlayers: 10
+    minimumPlayers: 30
     reoccurrenceDelay: 30
     duration: 1
   - type: LoneOpsSpawnRule

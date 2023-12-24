@@ -41,3 +41,10 @@ ent-ADTPatchHonk = хонк пластырь
 ent-ADTCratePatchPack = набор пластырей
     .desc = Набор содержащий 4 коробки с пластырями
     .suffix = { "" }
+
+ent-ADTBaseFakeDefibrillator = дефибриллятор
+    .desc = ЧИСТО! РАЗРЯД!
+    .suffix = { "Поддельный" }
+ent-Defibrillator = дефибриллятор
+    .desc = ЧИСТО! РАЗРЯД!
+    .suffix = { "Поддельный" }
