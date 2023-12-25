@@ -140,6 +140,7 @@
       - SubstationMachineCircuitboard
       - CellRechargerCircuitboard
       - BorgChargerCircuitboard
+      #- IndustrialChargerCircuitboard # закомментировано для теста
       - WeaponCapacitorRechargerCircuitboard
       - ADTFormPrinterMachineCircuitboard
   - type: EmagLatheRecipes
@@ -632,6 +633,8 @@
       - WeaponXrayCannon
       - MagazineBox357Incendiary
       - SpeedLoader357Rubber
+      - WeaponADTWeaponLasgunSALR36
+      - WeaponADTPowerCellLasgun
   - type: MaterialStorage
     whitelist:
       tags:

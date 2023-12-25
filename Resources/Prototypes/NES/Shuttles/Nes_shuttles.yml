@@ -18,10 +18,10 @@
     - type: InteractionOutline
     - type: Sprite
     - type: Appearance
-    - type: ThrusterVisuals
     - type: ApcPowerReceiver
-      powerLoad: 1500
+      powerLoad: 100
     - type: ExtensionCableReceiver
+    - type: ThrusterVisuals
     - type: Damageable
       damageContainer: Inorganic
       damageModifierSet: Metallic
@@ -68,8 +68,8 @@
   parent: [ NesBaseOldThruster, ConstructibleMachine ]
   components:
   - type: Thruster
-    baseThrust: 100
-    thrust: 100
+    baseThrust: 150
+    thrust: 150
   - type: Machine
     board: ThrusterMachineCircuitboard
   - type: Sprite
@@ -87,59 +87,60 @@
       offset: 0, 1
 
 - type: entity
-  id: NesNigThruster
+  id: NesBigThruster
   name: СЭИД двигатель
-  parent: [ BaseThruster, ConstructibleMachine ]
+  parent: [ NesBaseBigStructure, BaseThruster ]
   components:
   - type: Thruster
-    baseThrust: 1000
-    thrust: 1000
-  - type: Machine
-    board: ThrusterMachineCircuitboard
-  - type: PointLight
-    radius: 10
-    color: "#B4FCF0"
-    energy: 1
-    netsync: false
+    baseThrust: 2000
+    thrust: 2000
+#  - type: Machine
+#   board: ThrusterMachineCircuitboard
+  - type: Transform
+    anchored: true
+  - type: ApcPowerReceiver
+    powerLoad: 1500
+  - type: StaticPrice
+    price: 5000
   - type: Sprite
-    sprite: Structures/Shuttles/thruster.rsi
+    sprite: NES/Shuttle/ZETA_thruster.rsi
     layers:
     - state: base
       map: ["enum.ThrusterVisualLayers.Base"]
-      scale: 2, 2
+      scale: 1.5, 1.5
     - state: thrust
       map: ["enum.ThrusterVisualLayers.ThrustOn"]
       shader: unshaded
-      scale: 2, 2
+      scale: 1.5, 1.5
       visible: false
     - state: thrust_burn_unshaded
       map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
       color: "#5adbff"
       shader: unshaded
-      scale: 2, 2
+      scale: 1, 1
       visible: false
-      offset: 0, 2
+      offset: 0, 2.4
 
-- type: entity
-  id: NesFuelThruster
-  name: жидкотоплевный ракетный двигатель
-  parent: [ NesBaseOldThruster, ConstructibleMachine ]
-  components:
-  - type: Thruster
-    baseThrust: 250
-    thrust: 250
-  - type: Machine
-    board: ThrusterMachineCircuitboard
-  - type: Sprite
-    sprite: NES/Shuttle/ROCKET_thruster.rsi
-    layers:
-    - state: base
-      map: ["enum.ThrusterVisualLayers.Base"]
-    - state: thrust_burn_unshaded
-      map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
-      shader: unshaded
-      visible: false
-      offset: 0, 1
+# - type: entity
+#   id: NesFuelThruster
+#   name: жидкотоплевный ракетный двигатель
+#   parent: [ NesBaseOldThruster, ConstructibleMachine ]
+#   components:
+#   - type: Thruster
+#     baseThrust: 250
+#     thrust: 250
+#   - type: Machine
+#     board: ThrusterMachineCircuitboard
+#   - type: Sprite
+#     sprite: NES/Shuttle/ROCKET_thruster.rsi
+#     layers:
+#     - state: base
+#       map: ["enum.ThrusterVisualLayers.Base"]
+#     - state: thrust_burn_unshaded
+#       map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
+#       shader: unshaded
+#       visible: false
+#       offset: 0, 1
 
 - type: entity
   id: NesCombatEmitter
@@ -246,7 +247,7 @@
   - type: Transform
     anchored: true
   - type: Sprite
-    sprite: NES/Railguns/railgun.rsi
+    sprite: NES/Railguns/mini_railgun.rsi
     layers:
     - state: emitter # Corvax-Resprite
     - state: beam
@@ -265,9 +266,9 @@
   - type: Gun
     showExamineText: false
     fireRate: 1 #just has to be fast enough to keep up with upgrades
-    selectedMode: SemiAuto
+    selectedMode: FullAuto
     availableModes:
-      - SemiAuto
+      - FullAuto
     soundGunshot:
       path: /Audio/NES/Canon/Canon2.ogg
   - type: PowerConsumer
@@ -299,7 +300,7 @@
 
 - type: entity
   id: NesMiniGyroscope
-  name: САС истребителя #Для маленьких шаттлов
+  name: гироскоп истребителя #Для маленьких шаттлов
   parent: [ BaseThruster, ConstructibleMachine ]
   components:
   - type: Thruster

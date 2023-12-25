@@ -599,8 +599,8 @@
   time: 20
   reagents:
     Water: 15
-    TableSalt: 5
-    UncookedAnimalProteins: 10
+    UncookedAnimalProteins: 9
+    Fat: 9
   solids:
     FoodMeat: 1
     FoodPlateSmall: 1

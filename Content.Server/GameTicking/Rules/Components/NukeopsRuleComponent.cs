@@ -102,7 +102,7 @@ public sealed partial class NukeopsRuleComponent : Component
     ///     Delay between war declaration and nuke ops arrival on station map. Gives crew time to prepare
     /// </summary>
     [DataField("warNukieArriveDelay")]
-    public TimeSpan? WarNukieArriveDelay = TimeSpan.FromMinutes(25);
+    public TimeSpan? WarNukieArriveDelay = TimeSpan.FromMinutes(20);
 
     /// <summary>
     ///     Minimal operatives count for war declaration
@@ -147,7 +147,7 @@ public sealed partial class NukeopsRuleComponent : Component
     public ResPath OutpostMap = new("/Maps/nukieplanet.yml");
 
     [DataField(customTypeSerializer: typeof(ResPathSerializer))]
-    public ResPath ShuttleMap = new("/Maps/infiltrator.yml");
+    public ResPath ShuttleMap = new("/Maps/Shuttles/SYND_Karneline.yml");
 
     [DataField]
     public WinType WinType = WinType.Neutral;

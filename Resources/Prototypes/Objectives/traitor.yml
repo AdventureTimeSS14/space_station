@@ -153,6 +153,20 @@
     prototype: Hypospray
     owner: job-name-cmo
 
+#NES ядро гравитации
+
+- type: entity
+  noSpawn: true
+  parent: BaseTraitorStealObjective
+  id: GraviCoreStealObjective
+  components:
+  - type: Objective
+    difficulty: 3
+  - type: NotCommandRequirement
+  - type: StealCondition
+    prototype: NesGravityGeneratorCore
+    owner: objective-condition-steal-station
+
 ## rd
 
 - type: entity

@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from https://github.com/SPLURT-Station/S.P.L.U.R.T-Station-13/tree/f83a6bb2ab5623f700d7732a432e7e50f1f4a571; inhand-left, inhand-right, imera, aurora by discord:Van#1931; sisa, slarsha, nukie, rocker, red by discord:SMN - SAY MY NAME, not SeMeN#8129",
+    "copyright": "Created ADT team",
     "size": {
         "x": 32,
         "y": 32
@@ -108,6 +108,12 @@
         },
         {
             "name": "plushie_sofy"
+        },
+        {
+            "name": "plushie_liexer"
+        },
+        {
+            "name": "plushie_ma"
         }
     ]
 }

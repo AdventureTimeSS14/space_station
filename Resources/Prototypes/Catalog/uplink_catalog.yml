@@ -85,21 +85,21 @@
   categories:
   - UplinkWeapons
 
-- type: listing
-  id: UplinkEswordDoubleNukie
-  name: uplink-esword-double-name
-  description: uplink-esword-double-desc
-  icon: { sprite: /Textures/Objects/Weapons/Melee/e_sword_double.rsi, state: icon }
-  productEntity: EnergySwordDouble
-  cost:
-    Telecrystal: 45
-  categories:
-  - UplinkWeapons
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-        - NukeOpsUplink
+#- type: listing
+#  id: UplinkEswordDoubleNukie
+#  name: uplink-esword-double-name
+#  description: uplink-esword-double-desc
+#  icon: { sprite: /Textures/Objects/Weapons/Melee/e_sword_double.rsi, state: icon }
+#  productEntity: EnergySwordDouble
+#  cost:
+#    Telecrystal: 45
+#  categories:
+#  - UplinkWeapons
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#        - NukeOpsUplink
 
 - type: listing
   id: UplinkEswordDouble
@@ -170,7 +170,7 @@
   description: uplink-mini-bomb-desc
   productEntity: SyndieMiniBomb
   cost:
-    Telecrystal: 6
+    Telecrystal: 5
   categories:
     - UplinkExplosives
 
@@ -219,7 +219,7 @@
   description: uplink-c4-desc
   productEntity: C4
   cost:
-    Telecrystal: 4
+    Telecrystal: 3
   categories:
   - UplinkExplosives
 
@@ -244,7 +244,7 @@
   description: uplink-c4-bundle-desc
   productEntity: ClothingBackpackDuffelSyndicateC4tBundle
   cost:
-    Telecrystal: 20
+    Telecrystal: 18
   categories:
   - UplinkExplosives
 
@@ -265,7 +265,7 @@
   icon: { sprite: /Textures/Objects/Misc/bureaucracy.rsi, state: pen }
   productEntity: PenExplodingBox
   cost:
-    Telecrystal: 5
+    Telecrystal: 3
   categories:
   - UplinkExplosives
 
@@ -803,14 +803,14 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/SMGs/c20r.rsi, state: icon }
   productEntity: ClothingBackpackDuffelSyndicateFilledSMG
   cost:
-    Telecrystal: 17
+    Telecrystal: 15
   categories:
   - UplinkBundles
   conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
+    #- !type:StoreWhitelistCondition
+    #  whitelist:
+    #    tags:
+    #      - NukeOpsUplink
     - !type:BuyerWhitelistCondition
       blacklist:
         components:
@@ -823,14 +823,14 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Shotguns/bulldog.rsi, state: icon }
   productEntity: ClothingBackpackDuffelSyndicateFilledShotgun
   cost:
-    Telecrystal: 20
+    Telecrystal: 16
   categories:
   - UplinkBundles
   conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
+    #- !type:StoreWhitelistCondition
+    #  whitelist:
+    #    tags:
+    #      - NukeOpsUplink
     - !type:BuyerWhitelistCondition
       blacklist:
         components:
@@ -868,10 +868,10 @@
   categories:
   - UplinkBundles
   conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
+    #- !type:StoreWhitelistCondition
+    #  whitelist:
+    #    tags:
+    #      - NukeOpsUplink
     - !type:BuyerWhitelistCondition
       blacklist:
         components:
@@ -973,7 +973,7 @@
   description: uplink-power-sink-desc
   productEntity: PowerSink
   cost:
-    Telecrystal: 8
+    Telecrystal: 4
   categories:
   - UplinkTools
   conditions:
@@ -1066,7 +1066,7 @@
   description: uplink-revolver-cap-gun-fake-desc
   productEntity: RevolverCapGunFake
   cost:
-    Telecrystal: 9
+    Telecrystal: 8
   categories:
   - UplinkJob
   conditions:
@@ -1440,7 +1440,7 @@
   description: uplink-combat-medipen-desc
   productEntity: CombatMedipen
   cost:
-    Telecrystal: 8
+    Telecrystal: 4
   categories:
   - UplinkMisc
   conditions:
@@ -1455,7 +1455,7 @@
   description: uplink-stimpack-desc
   productEntity: Stimpack
   cost:
-    Telecrystal: 8
+    Telecrystal: 4
   categories:
   - UplinkMisc
   conditions:
@@ -1470,7 +1470,7 @@
   description: uplink-stimkit-desc
   productEntity: StimkitFilled
   cost:
-    Telecrystal: 14
+    Telecrystal: 6
   categories:
   - UplinkMisc
   conditions:
@@ -1501,7 +1501,7 @@
   description: uplink-bribe-desc
   productEntity: BriefcaseSyndieLobbyingBundleFilled
   cost:
-    Telecrystal: 4
+    Telecrystal: 2
   categories:
     - UplinkMisc
 

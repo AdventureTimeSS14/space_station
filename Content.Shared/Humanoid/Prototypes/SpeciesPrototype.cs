@@ -133,4 +133,5 @@ public enum SpeciesNaming : byte
     FirstDashFirst,
     FirstDashFirstDashFirst,
     TheFirstofLast,
+    FirstDashLast, // Parkstation-IPC
 }

@@ -247,3 +247,20 @@
   - type: Clothing
     sprite: ADT/Clothing/Belt/leather_suspenders.rsi #спрайты от prazat911
     quickEquip: true
+
+#кобура аудитора СБ
+
+- type: entity
+  id: ADTClothingBeltSecAuditorHolster
+  parent: ClothingBeltHolster
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+        - id: ADTWeaponPistolPMM
+        - id: MagazinePistol
+  - type: Sprite
+    sprite: ADT/Clothing/Belt/sec_auditor_holster.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Belt/sec_auditor_holster.rsi
+    quickEquip: true

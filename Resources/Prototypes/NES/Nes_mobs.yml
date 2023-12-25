@@ -39,3 +39,113 @@
   - type: ConditionalSpawner
     prototypes:
       - MobCatGarfield
+
+- type: entity
+  name: Джей-Джей
+  parent: SimpleMobBase
+  id: NesMobDjay
+  description: Младший сын Уолтера. Прячется на корабле ОБР.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: NES/Mobs/djay.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: djay
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 50
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Inventory
+    speciesId: dog
+    templateId: pet
+  - type: InventorySlots
+  - type: Strippable
+  - type: UserInterface
+    interfaces:
+    - key: enum.StrippingUiKey.Key
+      type: StrippableBoundUserInterface
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: walter
+      Critical:
+        Base: djay_ded
+      Dead:
+        Base: djay_ded
+  - type: Butcherable
+    spawned:
+    - id: FoodMeat
+      amount: 1
+  - type: ReplacementAccent
+    accent: dog
+  - type: InteractionPopup
+    successChance: 0.7
+    interactSuccessString: petting-success-dog
+    interactFailureString: petting-failure-generic
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/Animals/small_dog_bark_happy.ogg
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: male
+  - type: Tag
+    tags:
+    - CannotSuicide
+    - VimPilot
+
+- type: entity
+  name: спавн Джей-Джей
+  id: NesSpawnMobDogDjay
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - NesMobDjay
+
+- type: entity
+  name: Джей-Синд
+  parent: NesMobDjay
+  id: NesMobDjaySyndie
+  description: Старший сын Уолтера. Прячется на корабле ядерных оперативников.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: NES/Mobs/djay.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: syndie-djay
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: walter
+      Critical:
+        Base: syndie-djay_ded
+      Dead:
+        Base: syndie-djay_ded
+
+- type: entity
+  name: спавн Джей-Синд
+  id: NesSpawnMobDogDjaySyndie
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - NesMobDjaySyndie

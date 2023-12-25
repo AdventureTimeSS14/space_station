@@ -8,6 +8,7 @@ using Robust.Shared.Prototypes;
 using Content.Shared.Chat.Prototypes;
 using Content.Server.Emoting.Components;
 using Content.Server.Speech.Components;
+using Content.Shared.Sirena.Animations;
 
 namespace Content.Server.ADT.EmotePanel;
 
@@ -77,6 +78,10 @@ public sealed class EmotePanelSystem : EntitySystem
                         break;
                     case EmoteCategory.Vocal:
                         if (EntityManager.TryGetComponent<VocalComponent>(uid, out var _))
+                            ev.Prototypes.Add(prototype.ID);
+                        break;
+                    case EmoteCategory.Animations:
+                        if(EntityManager.TryGetComponent<EmoteAnimationComponent>(uid, out var _))
                             ev.Prototypes.Add(prototype.ID);
                         break;
                 }

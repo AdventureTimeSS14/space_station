@@ -136,6 +136,12 @@
   icon: "spacebucks"
   description: barsign-prototype-description-spacebucks
 
+- type: barSign
+  id: monkeytime
+  name: barsign-prototype-name-Monkey-Time
+  icon: "monkeytime"
+  description: barsign-prototype-description-Monkey-Time
+
 # Hidden signs list below this point
 - type: barSign
   id: EmpBarSign

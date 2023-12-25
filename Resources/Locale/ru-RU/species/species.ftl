@@ -8,3 +8,6 @@ species-name-diona = Диона
 species-name-arachnid = Арахнид
 species-name-moth = Ниан
 species-name-shadowkin = Сумеречник
+
+## Parkstation-IPC names
+species-name-ipc = КПБ

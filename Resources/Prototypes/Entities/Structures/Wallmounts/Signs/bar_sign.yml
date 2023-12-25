@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: BaseBarSign
   parent: BaseStructure
   name: bar sign
@@ -255,3 +255,15 @@
   components:
   - type: BarSign
     current: Spacebucks
+
+- type: entity
+  parent: BaseBarSign
+  id: ADTBarSignMonkeyTime
+  name: Monkey Time
+  description: Present you the monkey supermancy.
+  components:
+  - type: BarSign
+    current: monkeytime
+  - type: Sprite
+    drawdepth: Objects
+    sprite: Structures/Wallmounts/barsign.rsi

@@ -453,6 +453,7 @@
   id: MobDuckMallard
   description: An adorable mallard duck, it's fluffy and soft!
   components:
+  - type: ZombieImmune
   - type: Sprite
     drawdepth: Mobs
     layers:

@@ -60,7 +60,7 @@
   parent: BasePlushie
   id: PlushieShadowkin
   name: плюшевый Сумеречник
-  description: Игрушка сумеречника в странной обтягивающей одежде и очками.
+  description: Игрушка сумеречника в странной обтягивающей одежде и с очками.
   components:
   - type: Sprite
     sprite: NES/Toys.rsi
