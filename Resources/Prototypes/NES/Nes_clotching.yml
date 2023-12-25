@@ -47,7 +47,7 @@
     - back
   - type: Storage
     maxItemSize: Huge
-    maxTotalWeight: 36
+    #maxTotalWeight: 36
   - type: ContainerContainer
     containers:
       storagebase: !type:Container

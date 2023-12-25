@@ -247,9 +247,6 @@
   parent: ClothingBackpackERTLeader
   id: ClothingBackpackERTLeaderFilled
   components:
-    #- type: Storage
-    #  maxItemSize: Huge
-    #  maxTotalWeight: 9000
     - type: StorageFill
       contents:
         - id: WeaponPulseCarbine
@@ -301,9 +298,6 @@
   parent: ClothingBackpackERTSecurity
   id: ClothingBackpackERTSecurityFilled
   components:
-    #- type: Storage
-    #  maxItemSize: Huge
-    #  maxTotalWeight: 9000
     - type: StorageFill
       contents:
         - id: WeaponDisabler
@@ -324,10 +318,6 @@
   parent: ClothingBackpackERTSecurity
   id: ClothingBackpackERTSecurityFilledREV
   components:
-    #- type: Storage
-    #  maxItemSize: Huge
-    #  maxTotalWeight: 0
-    #  maxSlots: 50 #By this ignore maxTotalWeight
     - type: StorageFill
       contents:
         #- id: WeaponPulseCarbine
@@ -358,7 +348,8 @@
   components:
     - type: Storage
       maxItemSize: Huge
-      maxTotalWeight: 200
+      grid:
+      - 0,0,10,7
     - type: StorageFill
       contents:
         - id: WeaponPulseCarbine
@@ -461,12 +452,14 @@
   parent: ClothingBackpackERTJanitor
   id: ClothingBackpackERTJanitorFilled
   components:
+    - type: Storage
+      grid:
+      - 0,0,7,6
     - type: StorageFill
       contents:
         - id: BoxSurvival
         - id: WeaponPulsePistol
         - id: MedkitFilled
-        - id: BoxLightMixed
         - id: BoxLightMixed
         - id: Soap
         - id: JawsOfLife
@@ -481,8 +474,9 @@
   name: death squad backpack
   description: Holds the kit of CentComm's most feared agents.
   components:
-    #- type: Storage
-    #  maxTotalWeight: 56
+    - type: Storage
+      grid:
+      - 0,0,7,6
     - type: StorageFill
       contents:
         - id: BoxSurvivalEngineering

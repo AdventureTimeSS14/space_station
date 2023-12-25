@@ -2,8 +2,8 @@
   id: CorvaxDefaultMapPool
   maps:
   #- CorvaxDelta
-  - CorvaxAvrite
-  - CorvaxIshimura
+  #- CorvaxAvrite
+  #- CorvaxIshimura
   #- CorvaxSpectrum
   #- CorvaxGate
   - Aspid
@@ -13,7 +13,7 @@
   - Cluster
   - Core
   - Fland
-  - Kettle
+  #- Kettle
   - Marathon
   - Meta
   - Omega

@@ -203,10 +203,10 @@
   name: "Pirate Chunk"
   mapPath: /Maps/Salvage/ADT/pirate.yml
 
-- type: salvageMap
-  id: ADTpoligon
-  name: "Poligon Chunk"
-  mapPath: /Maps/Salvage/ADT/poligon.yml
+# - type: salvageMap    Пусть автор фиксит
+#   id: ADTpoligon
+#   name: "Poligon Chunk"
+#   mapPath: /Maps/Salvage/ADT/poligon.yml
 
 - type: salvageMap
   id: ADTrnd1

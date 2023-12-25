@@ -1,5 +1,5 @@
 #Гвоздика
-- type: entity 
+- type: entity
   name: carnation
   parent: FoodProduceBase
   id: ADTFoodCarnation
@@ -35,7 +35,7 @@
   - type: DeleteOnTrigger
 
 #Корица
-- type: entity 
+- type: entity
   name: cinnamon
   parent: FoodProduceBase
   id: ADTFoodCinnamon
@@ -281,7 +281,8 @@
     size: Large
   - type: Storage
     maxItemSize: Small
-    maxTotalWeight: 10
+    grid:
+    - 0,0,10,7
   - type: ContainerContainer
     containers:
       storagebase: !type:Container

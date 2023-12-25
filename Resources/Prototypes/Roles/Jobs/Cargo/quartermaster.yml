@@ -26,12 +26,13 @@
   - Quartermaster
   - Maintenance
   - Command
-  #special:
-  #- !type:AddImplantSpecial
-  #  implants: [ MindShieldImplant ]
-  #- !type:AddComponentSpecial
-  #  components:
-  #    - type: CommandStaff
+  - Brig
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
 
 - type: startingGear
   id: QuartermasterGear
@@ -51,6 +52,6 @@
   innerClothingSkirt: ClothingUniformJumpskirtQM
   satchel: ClothingBackpackSatchelQuartermasterFilled
   duffelbag: ClothingBackpackDuffelQuartermasterFilled
-  
 
-  
+
+

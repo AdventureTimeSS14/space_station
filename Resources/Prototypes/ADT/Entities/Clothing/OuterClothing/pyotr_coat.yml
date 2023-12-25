@@ -4,13 +4,16 @@
   name: Pyotr`s Coat
   description: This dark coat is heavier than look
   components:
+  - type: Storage
+    grid:
+    - 0,0,10,10
   - type: Sprite
     sprite: ADT/Clothing/OuterClothing/Coats/pyotr_coat.rsi
   - type: Clothing
     sprite: ADT/Clothing/OuterClothing/Coats/pyotr_coat.rsi
   - type: StorageFill
     contents:
-    - id: CigarGoldCase
+    #- id: CigarGoldCase #TODO Хз какого он размера он не влазет
     - id: Lighter
   - type: Armor
     modifiers:
@@ -42,7 +45,7 @@
   parent: ClothingOuterStorageBase
   id: ADTClothingOuterCoatJohanCoat
   name: Johans`s Coat
-  description: White coat with blue strips? YOS. 
+  description: White coat with blue strips? YOS.
   components:
   - type: Sprite
     sprite: ADT/Clothing/OuterClothing/Coats/johan_coat.rsi

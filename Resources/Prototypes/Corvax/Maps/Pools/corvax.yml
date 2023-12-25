@@ -2,8 +2,8 @@
   id: CorvaxMapPool
   maps:
     #- CorvaxDelta
-    - CorvaxAvrite
-    - CorvaxIshimura
+    #- CorvaxAvrite
+    #- CorvaxIshimura
     #- CorvaxSpectrum
     #- CorvaxGate
     - Box
