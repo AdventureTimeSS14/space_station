@@ -1,0 +1,8 @@
+- type: trait
+  id: ColorBlindnessMonochrome
+  name: trait-monochromacy-name
+  description: trait-monochromacy-description
+  cost: 2
+  category: Negative
+  components:
+    - type: Monochromacy
