@@ -24,6 +24,6 @@
     sprite: ADT/Objects/Weapons/Guns/Battery/salr36.rsi
     state: icon
   product: ADTCrateArmorySALR36
-  cost: 5000
+  cost: 30000
   category: Armory
   group: market
