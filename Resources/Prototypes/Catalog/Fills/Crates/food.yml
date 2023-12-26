@@ -42,12 +42,6 @@
       amount: 6
     - id: ReagentContainerRice
       amount: 6
-    - id: ReagentContainerMilk
-      amount: 8
-    - id: ReagentContainerMilkSoy
-      amount: 3
-    - id: ReagentContainerMilkSoy
-      amount: 3
     - id: ReagentContainerSugar
       amount: 3
     - id: FoodCondimentPacketSalt

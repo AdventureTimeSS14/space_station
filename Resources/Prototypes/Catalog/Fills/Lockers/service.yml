@@ -49,7 +49,7 @@
       # yes, I'm using this as an excuse to not have to do extra work.
       - id: DrinkMilkCarton
         amount: 2
-      - id: ReagentContainerMilkSoy
+      - id: DrinkSoyMilkCarton
       - id: ADTIronTray
 
 - type: entity
