@@ -66,16 +66,6 @@
   - UplinkWeapons
 
 - type: listing
-  id: UplinkFireAxeFlaming
-  name: uplink-fire-axe-flaming-name
-  description: uplink-fire-axe-flaming-desc
-  productEntity: FireAxeFlaming
-  cost:
-    Telecrystal: 10
-  categories:
-  - UplinkWeapons
-
-- type: listing
   id: UplinkGlovesNorthStar
   name: uplink-gloves-north-star-name
   description: uplink-gloves-north-star-desc
@@ -588,10 +578,10 @@
   icon: { sprite: /Textures/Objects/Fun/Darts/dart_red.rsi, state: icon }
   productEntity: HypoDartBox
   cost:
-    Telecrystal: 3
+    Telecrystal: 2
   categories:
   - UplinkUtility
-  
+
 # Implants
 
 - type: listing
@@ -764,6 +754,17 @@
       blacklist:
         components:
           - SurplusBundle
+
+- type: listing
+  id: UplinkChemistryKitBundle
+  name: uplink-chemistry-kit-name
+  description: uplink-chemistry-kit-desc
+  icon: { sprite: /Textures/Objects/Storage/boxicons.rsi, state: vials }
+  productEntity: ChemicalSynthesisKit
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkBundles
 
 - type: listing
   id: UplinkMedsBundle
@@ -1014,7 +1015,21 @@
     - Botanist
 
 - type: listing
-  id: uplinkRiggedBoxingGloves
+  id: uplinkRiggedBoxingGlovesPassenger
+  name: uplink-rigged-boxing-gloves-name
+  description: uplink-rigged-boxing-gloves-desc
+  productEntity: ClothingHandsGlovesBoxingRigged
+  cost:
+    Telecrystal: 8
+  categories:
+    - UplinkJob
+  conditions:
+    - !type:BuyerJobCondition
+      whitelist:
+        - Passenger
+
+- type: listing
+  id: uplinkRiggedBoxingGlovesBoxer
   name: uplink-rigged-boxing-gloves-name
   description: uplink-rigged-boxing-gloves-desc
   productEntity: ClothingHandsGlovesBoxingRigged
@@ -1025,7 +1040,6 @@
   conditions:
     - !type:BuyerJobCondition
       whitelist:
-        - Passenger
         - Boxer
 
 - type: listing

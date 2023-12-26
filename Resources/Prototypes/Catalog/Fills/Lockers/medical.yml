@@ -119,6 +119,7 @@
       - id: BoxPillCanister
       - id: BoxBottle
         amount: 2
+      - id: BoxVial
       - id: ChemBag
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetMedical

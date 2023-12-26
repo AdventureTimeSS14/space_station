@@ -17,9 +17,6 @@
   parent: ClothingBeltUtility
   suffix: Engineering
   components:
-  #- type: Storage
-  #  maxItemSize: Cheat
-  #  maxTotalWeight: 9000
   - type: StorageFill
     contents:
       - id: MiniFireExtinguisher
@@ -118,9 +115,10 @@
   parent: ClothingBeltSheath
   suffix: Filled
   components:
-  - type: StorageFill
-    contents:
-      - id: CaptainSabre
+  - type: ContainerFill
+    containers:
+      item:
+      - CaptainSabre
 
 - type: entity
   id: ClothingBeltMilitaryWebbingGrenadeFilled
@@ -180,6 +178,16 @@
         - id: WeaponRevolverInspector
         - id: SpeedLoaderMagnum
         - id: SpeedLoaderMagnumRubber
+
+- type: entity
+  id: ClothingBeltChefFilled
+  parent: ClothingBeltChef
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: FoodShakerSalt
+    - id: FoodShakerPepper
 
 - type: entity
   id: ClothingBeltMilitaryWebbingBlueShieldFilled

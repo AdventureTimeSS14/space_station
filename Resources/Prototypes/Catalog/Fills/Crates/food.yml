@@ -62,6 +62,10 @@
       amount: 2
     - id: ReagentContainerMayo
       amount: 2
+    - id: DrinkMilkCarton
+      amount: 4
+    - id: DrinkSoyMilkCarton
+      amount: 2
 
 - type: entity
   id: CrateFoodDinnerware

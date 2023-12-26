@@ -52,6 +52,7 @@
   - type: Tag
     tags:
     - Trash
+    - Skewer
   - type: MeleeWeapon
     attackRate: 1.2
     damage:
