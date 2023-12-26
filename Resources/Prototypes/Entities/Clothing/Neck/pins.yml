@@ -10,22 +10,6 @@
 
 - type: entity
   parent: ClothingNeckPinBase
-  id: ClothingNeckLGBTPin
-  name: LGBT pin
-  description: be gay do crime
-  components:
-  - type: Sprite
-    sprite: Clothing/Neck/Misc/pins.rsi
-    layers:
-    - state: lgbt
-  - type: Clothing
-    sprite: Clothing/Neck/Misc/pins.rsi
-    clothingVisuals:
-      neck:
-      - state: lgbt-equipped
-
-- type: entity
-  parent: ClothingNeckPinBase
   id: ClothingNeckAromanticPin
   name: aromantic pin
   description: be aro do crime

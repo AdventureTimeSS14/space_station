@@ -57,7 +57,6 @@ namespace Content.IntegrationTests.Tests
             "ADTNYAspid",
             "ADTNYMarathon",
             "ADTNYBagel",
-            "ADTNYCore",
             "ADTNYDelta",
 
             // Corvax-Start

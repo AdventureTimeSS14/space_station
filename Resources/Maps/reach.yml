@@ -5964,13 +5964,6 @@ entities:
     - pos: 3.506415,3.5395489
       parent: 407
       type: Transform
-- proto: ClothingNeckLGBTPin
-  entities:
-  - uid: 1904
-    components:
-    - pos: 6.5183535,-8.5258465
-      parent: 407
-      type: Transform
 - proto: ClothingNeckStethoscope
   entities:
   - uid: 1898
