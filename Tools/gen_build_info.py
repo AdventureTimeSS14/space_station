@@ -13,7 +13,8 @@ from zipfile import ZipFile, ZIP_DEFLATED
 FILE = "SS14.Client.zip"
 
 SERVER_FILES = [
-    "SS14.Server_linux-x64.zip"
+    "SS14.Server_linux-x64.zip",
+    "SS14.Server_win-x64.zip"
 ]
 
 VERSION = os.environ['GITHUB_SHA']
