@@ -9,6 +9,7 @@
     job: HeadOfSecurity
   - type: StealCondition
     prototype: ADTWeaponPistolX01
+    stealGroup: WeaponAntiqueLaser
     owner: job-name-hos
 
 - type: entity
@@ -19,5 +20,6 @@
   - type: NotJobRequirement
     job: HeadOfPersonnel
   - type: StealCondition
+    stealGroup: CaptainIDCard
     prototype: HoPIDCard
     owner: job-name-hop

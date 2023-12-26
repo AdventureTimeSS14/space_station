@@ -109,3 +109,5 @@
     #- type: ExternalNetworkConnection
     #  deviceType: Fax
     #  autoConnect: true
+    - type: StealTarget
+      stealGroup: FaxMachineCaptain

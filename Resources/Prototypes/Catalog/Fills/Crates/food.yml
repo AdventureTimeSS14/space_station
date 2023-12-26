@@ -42,12 +42,6 @@
       amount: 6
     - id: ReagentContainerRice
       amount: 6
-    - id: ReagentContainerMilk
-      amount: 8
-    - id: ReagentContainerMilkSoy
-      amount: 3
-    - id: ReagentContainerMilkSoy
-      amount: 3
     - id: ReagentContainerSugar
       amount: 3
     - id: FoodCondimentPacketSalt
@@ -61,6 +55,10 @@
     - id: ReagentContainerOliveoil
       amount: 2
     - id: ReagentContainerMayo
+      amount: 2
+    - id: DrinkMilkCarton
+      amount: 4
+    - id: DrinkSoyMilkCarton
       amount: 2
 
 - type: entity

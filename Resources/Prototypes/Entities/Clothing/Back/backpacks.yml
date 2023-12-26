@@ -316,27 +316,6 @@
 
 - type: entity
   parent: ClothingBackpack
-  id: ClothingBackpackDebug3
-  name: gay wackpack
-  description: What the fuck is this?
-  suffix: Debug
-  components:
-  - type: Storage
-    grid:
-    - 0,0,0,3
-    - 0,0,2,0
-    - 0,3,2,3
-    - 2,1,2,1
-    - 4,0,4,2
-    - 6,0,6,2
-    - 5,1,5,1
-    - 5,3,5,3
-    - 9,0,9,1
-    - 8,2,8,3
-    - 10,2,10,3
-
-- type: entity
-  parent: ClothingBackpack
   id: ClothingBackpackDebug4
   name: offset wackpack
   description: What the fuck is this?
