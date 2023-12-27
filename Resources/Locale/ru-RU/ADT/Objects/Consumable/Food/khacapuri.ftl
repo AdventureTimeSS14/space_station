@@ -1,2 +1,2 @@
-ent-ADTFoodKhachapuri = Хачапури
+ent-ADTFoodKhachapuri = хачапури
     .desc = Блюдо, состоящее из тонкого теста, сырной начинки.
