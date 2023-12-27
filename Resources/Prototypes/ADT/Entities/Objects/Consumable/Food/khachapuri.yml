@@ -1,0 +1,22 @@
+- type: entity
+  name: Khachapuri-name
+  parent: ADTFoodSausageRaw
+  id: ADTFoodKhachapuri
+  description: Khachapuri-desc
+  components:
+  - type: Food
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/khachapuri.rsi
+    state: icon
+  - type: FlavorProfile
+    flavors:
+      - cheesy
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 1
