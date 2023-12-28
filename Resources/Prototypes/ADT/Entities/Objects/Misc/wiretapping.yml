@@ -67,7 +67,7 @@
       - id: ADTWiretapping
   - type: Storage
     grid:
-    - 0,0,10,7
+    - 0,0,1,0
     maxItemSize: Small
   - type: ContainerContainer
     containers:
