@@ -328,7 +328,7 @@
   description: bounty-description-percussion
   entries:
   - name: bounty-item-percussion
-    amount: 3
+    amount: 5
     whitelist:
       tags:
       - PercussionInstrument
@@ -470,7 +470,7 @@
 
 - type: cargoBounty
   id: BountyAnomalyCore
-  reward: 10000
+  reward: 15000
   description: bounty-description-anomaly-core
   entries:
   - name: bounty-item-anomaly-core
@@ -481,7 +481,7 @@
 
 - type: cargoBounty
   id: BountyBorgModule
-  reward: 3500
+  reward: 7000
   description: bounty-description-borg-module
   entries:
   - name: bounty-item-borg-module
