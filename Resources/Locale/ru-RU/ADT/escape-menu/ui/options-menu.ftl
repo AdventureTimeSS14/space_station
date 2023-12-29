@@ -1,0 +1,9 @@
+ui-options-opaque-storage-window = Непрозрачное окно хранилища
+ui-options-fancy-speech = Показывать имена над головой при диалоге
+ui-options-fancy-name-background = Добавление фона к диалоговым окнам
+
+ui-options-function-move-stored-item = Переместить сохраненный элемент
+ui-options-function-rotate-stored-item = Повернуть сохраненный элемент
+ui-options-static-storage-ui = Заблокировать окно хранилища на панели быстрого доступа
+
+ui-options-function-toggle-fullscreen = Переключить полноэкранный режим

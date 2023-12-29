@@ -100,6 +100,7 @@
   parent: ClothingShoesBaseWinterBoots
   id: ClothingShoesBootsWinter
   name: winter boots
+  description: desc
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Boots/winterboots.rsi
@@ -112,6 +113,7 @@
   parent: ClothingShoesBaseWinterBoots
   id: ClothingShoesBootsWinterCargo
   name: cargo winter boots
+  description: desc
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Boots/winterbootscargo.rsi
@@ -122,6 +124,7 @@
   parent: ClothingShoesBaseWinterBoots
   id: ClothingShoesBootsWinterEngi
   name: engineering winter boots
+  description: desc
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Boots/winterbootsengi.rsi
@@ -132,6 +135,7 @@
   parent: ClothingShoesBaseWinterBoots
   id: ClothingShoesBootsWinterMed
   name: medical winter boots
+  description: desc
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Boots/winterbootsmed.rsi
@@ -142,6 +146,7 @@
   parent: ClothingShoesBaseWinterBoots
   id: ClothingShoesBootsWinterSci
   name: science winter boots
+  description: desc
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Boots/winterbootssci.rsi
@@ -150,8 +155,9 @@
 
 - type: entity
   parent: ClothingShoesBaseWinterBoots
-  id: ClothingShoesBootsWinterSec #Перевести
+  id: ClothingShoesBootsWinterSec
   name: security winter boots
+  description: desc
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Boots/winterbootssec.rsi

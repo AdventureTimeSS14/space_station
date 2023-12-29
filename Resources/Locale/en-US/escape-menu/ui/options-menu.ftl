@@ -100,7 +100,7 @@ ui-options-header-dev = Development
 ui-options-header-general = General
 
 ui-options-hotkey-keymap = Use US QWERTY Keys
-ui-options-hotkey-toggle-walk = Toggle Walk #Перевести
+ui-options-hotkey-toggle-walk = Toggle Walk
 
 ui-options-function-move-up = Move Up
 ui-options-function-move-left = Move Left
@@ -128,7 +128,7 @@ ui-options-function-examine-entity = Examine
 ui-options-function-swap-hands = Swap hands
 ui-options-function-move-stored-item = Move stored item
 ui-options-function-rotate-stored-item = Rotate stored item
-ui-options-static-storage-ui = Lock storage window to hotbar #Перевести
+ui-options-static-storage-ui = Lock storage window to hotbar
 
 ui-options-function-smart-equip-backpack = Smart-equip to backpack
 ui-options-function-smart-equip-belt = Smart-equip to belt
