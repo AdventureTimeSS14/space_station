@@ -1,3 +1,11 @@
+ui-options-tab-misc = Основные
+
+ui-options-general-ui-style = Стиль интерфейса
+ui-options-general-discord = Дискорд
+ui-options-general-cursor = Курсор
+ui-options-general-speech = Речь
+ui-options-general-storage = Инвентарь
+
 ui-options-discordrich = Включить информацию о текущей игровой активности Discord
 
 ui-options-opaque-storage-window = Непрозрачное окно хранилища
