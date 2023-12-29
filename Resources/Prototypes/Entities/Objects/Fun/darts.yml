@@ -38,7 +38,7 @@
   - type: DamageOtherOnHit
     damage:
       types:
-        Piercing: 4
+        Piercing: 8
   - type: Item
     size: Tiny
     sprite: Objects/Fun/Darts/dart_red.rsi
