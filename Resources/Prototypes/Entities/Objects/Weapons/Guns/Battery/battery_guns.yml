@@ -160,10 +160,13 @@
     sprite: Objects/Weapons/Guns/Battery/makeshift.rsi
   - type: HitscanBatteryAmmoProvider
     proto: RedLaser
-    fireCost: 62.5
+    fireCost: 100
   - type: Battery
     maxCharge: 500
     startingCharge: 500
+  - type: Construction
+    graph: makeshiftlaser
+    node: makeshiftlaser
 
 - type: entity
   name: laser rifle

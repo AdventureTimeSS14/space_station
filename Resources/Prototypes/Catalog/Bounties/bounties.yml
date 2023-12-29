@@ -99,7 +99,7 @@
 
 - type: cargoBounty
   id: BountyClownCostume
-  reward: 1700
+  reward: 3400
   description: bounty-description-clown-costume
   entries:
   - name: bounty-item-clown-mask
@@ -152,7 +152,7 @@
   description: bounty-description-donk-pocket
   entries:
   - name: bounty-item-donk-pocket
-    amount: 12
+    amount: 6
     whitelist:
       tags:
       - DonkPocket
@@ -328,7 +328,7 @@
   description: bounty-description-percussion
   entries:
   - name: bounty-item-percussion
-    amount: 4
+    amount: 3
     whitelist:
       tags:
       - PercussionInstrument
@@ -361,7 +361,7 @@
   description: bounty-description-radio
   entries:
   - name: bounty-item-radio
-    amount: 12
+    amount: 10
     whitelist:
       components:
       - Headset
@@ -386,7 +386,7 @@
   description: bounty-description-shiv
   entries:
   - name: bounty-item-shiv
-    amount: 5
+    amount: 3
     whitelist:
       tags:
       - Shiv
@@ -459,7 +459,7 @@
 
 - type: cargoBounty
   id: BountyTrash
-  reward: 700
+  reward: 1500
   description: bounty-description-trash
   entries:
   - name: bounty-item-trash

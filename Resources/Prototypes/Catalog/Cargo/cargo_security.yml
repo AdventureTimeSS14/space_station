@@ -85,7 +85,7 @@
     sprite: Structures/Storage/closet.rsi
     state: brigmedlocked
   product: ADTCrateSecurityBrigmedic
-  cost: 3500
+  cost: 4000
   category: Security
   group: market
 
