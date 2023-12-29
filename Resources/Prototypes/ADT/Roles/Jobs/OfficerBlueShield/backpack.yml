@@ -6,7 +6,7 @@
     - type: Storage
       maxItemSize: Huge
       grid:
-      - 0,0,10,7
+      - 0,0,9,5
     - type: StorageFill
       contents:
         - id: MedkitBruteFilled

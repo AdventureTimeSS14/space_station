@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: ClothingShoesBootsJack
   id: ClothingShoesBootsJackSec
   components:
@@ -6,3 +6,7 @@
       sprite: Corvax/Clothing/Shoes/Boots/jackboots_sec.rsi
     - type: Clothing
       sprite: Corvax/Clothing/Shoes/Boots/jackboots_sec.rsi
+    - type: ContainerFill
+      containers:
+        item:
+        - CombatKnife
