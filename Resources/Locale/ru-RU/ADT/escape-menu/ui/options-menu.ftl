@@ -6,6 +6,6 @@ ui-options-fancy-name-background = Добавление фона к диалог
 
 ui-options-function-move-stored-item = Переместить сохраненный элемент
 ui-options-function-rotate-stored-item = Повернуть сохраненный элемент
-ui-options-static-storage-ui = Заблокировать окно хранилища на панели быстрого доступа
+ui-options-static-storage-ui = Переключить статичность хранилища
 
 ui-options-function-toggle-fullscreen = Переключить полноэкранный режим
