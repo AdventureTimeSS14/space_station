@@ -13,7 +13,7 @@ ui-options-default = Default
 
 # Misc/General menu
 
-ui-options-discordrich = Enable Discord Rich Presence #Перевести
+ui-options-discordrich = Enable Discord Rich Presence
 ui-options-general-ui-style = UI Style
 ui-options-general-discord = Discord
 ui-options-general-cursor = Cursor
@@ -39,10 +39,10 @@ ui-options-volume-percent = { TOSTRING($volume, "P0") }
 
 ui-options-show-held-item = Show held item next to cursor
 ui-options-show-combat-mode-indicators = Show combat mode indicators with cursor
-ui-options-opaque-storage-window = Opaque storage window #Перевести
+ui-options-opaque-storage-window = Opaque storage window
 ui-options-show-looc-on-head = Show LOOC chat above characters head
-ui-options-fancy-speech = Show names in speech bubbles #Перевести
-ui-options-fancy-name-background = Add background to speech bubble names #Перевести
+ui-options-fancy-speech = Show names in speech bubbles
+ui-options-fancy-name-background = Add background to speech bubble names
 ui-options-vsync = VSync
 ui-options-fullscreen = Fullscreen
 ui-options-lighting-label = Lighting Quality:

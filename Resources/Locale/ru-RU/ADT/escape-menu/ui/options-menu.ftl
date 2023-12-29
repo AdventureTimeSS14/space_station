@@ -1,3 +1,5 @@
+ui-options-discordrich = Включить информацию о текущей игровой активности Discord
+
 ui-options-opaque-storage-window = Непрозрачное окно хранилища
 ui-options-fancy-speech = Показывать имена над головой при диалоге
 ui-options-fancy-name-background = Добавление фона к диалоговым окнам
