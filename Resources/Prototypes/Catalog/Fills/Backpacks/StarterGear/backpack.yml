@@ -302,7 +302,7 @@
         - id: WeaponPulseCarbine
         - id: MedicatedSuture
         - id: RegenerativeMesh
-        - id: BoxHandcuff
+        # - id: BoxHandcuff
         - id: JawsOfLife
         - id: WeaponRifleLecter
         - id: MagazineRifle
@@ -319,8 +319,8 @@
         - id: MedicatedSuture
         - id: RegenerativeMesh
         - id: JawsOfLife
-        - id: BoxZiptie
-        - id: BoxFlashbang
+        - id: BoxHandcuff
+        # - id: BoxFlashbang
         - id: WeaponSubMachineGunDrozdRubber
         - id: MagazinePistolSubMachineGunRubber
           amount: 2
@@ -346,7 +346,7 @@
     - id: EpinephrineChemistryBottle
     - id: EpinephrineChemistryBottle
     - id: BluespaceBeaker
-    - id: Defibrillator
+    # - id: Defibrillator
     - id: CrowbarRed
     - id: WeaponRifleLecter
     - id: MagazineRifle
@@ -363,7 +363,7 @@
         - id: MedkitAdvancedFilled
         - id: EpinephrineChemistryBottle
         - id: BluespaceBeaker
-        - id: Defibrillator
+        # - id: Defibrillator
         - id: CrowbarRed
         - id: WeaponDisabler
         - id: BoxZiptie
