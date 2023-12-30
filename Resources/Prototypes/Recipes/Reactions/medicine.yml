@@ -88,7 +88,7 @@
     Hydroxide:
       amount: 2
   products:
-    Epinephrine: 8
+    Epinephrine: 9
 
 - type: reaction
   id: Dermaline
