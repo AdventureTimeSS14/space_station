@@ -115,3 +115,15 @@ ghost-role-information-loneop-description = Вы - одинокий ядерны
 ghost-role-information-loneop-rules = Вы являетесь оперативником Синдиката, которому поручено уничтожить станцию. Как антагонист, вы можете делать всё необходимое для выполнения цели.
 ghost-role-information-taxibot-name = Таксибот
 ghost-role-information-taxibot-description = Доставляйте членов экипажа в места назначения.
+
+ghost-role-information-Cak-name = Кетс
+ghost-role-information-Cak-description = Ты любимое детище повара - живой кот в виде кекса.
+ghost-role-information-Cak-rules = Ты - съедобная и сладкий котик. Найди своё место в мире, где каждый хочет съесть тебя.
+
+ghost-role-information-BreadDog-name = Хлебопёс
+ghost-role-information-BreadDog-description = Ты любимое детище повара - живая собака из теста.
+ghost-role-information-BreadDog-rules = Ты - съедобная собака, сделанная из хлеба. Найди своё место в мире, где каждый хочет съесть тебя.
+
+ghost-role-information-exterminator-name = Терминатор
+ghost-role-information-exterminator-description = Ты был послан в прошлое для устранения разумного существа, важного для будущего. 
+ghost-role-information-exterminator-rules = Ты - крупный антагонист и можешь убивать любого, кто посмеет попробовать ОСТАНОВИТЬ ТЕБЯ. Но помни, что главная твоя задача - устранить цель.

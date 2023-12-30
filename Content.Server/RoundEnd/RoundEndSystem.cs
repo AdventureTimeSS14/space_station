@@ -131,7 +131,7 @@ namespace Content.Server.RoundEnd
             return _countdownTokenSource != null;
         }
 
-        public void RequestRoundEnd(EntityUid? requester = null, bool checkCooldown = true, string text = "round-end-system-shuttle-called-announcement", string name = "Station")
+        public void RequestRoundEnd(EntityUid? requester = null, bool checkCooldown = true, string text = "round-end-system-shuttle-called-announcement", string name = "Станции")
         {
             var duration = DefaultCountdownDuration;
 
@@ -149,7 +149,7 @@ namespace Content.Server.RoundEnd
             RequestRoundEnd(duration, requester, checkCooldown, text, name);
         }
 
-        public void RequestRoundEnd(TimeSpan countdownTime, EntityUid? requester = null, bool checkCooldown = true, string text = "round-end-system-shuttle-called-announcement", string name = "Station")
+        public void RequestRoundEnd(TimeSpan countdownTime, EntityUid? requester = null, bool checkCooldown = true, string text = "round-end-system-shuttle-called-announcement", string name = "Станции")
         {
             if (_gameTicker.RunLevel != GameRunLevel.InRound) return;
 
@@ -234,7 +234,7 @@ namespace Content.Server.RoundEnd
             }
 
             _chatSystem.DispatchGlobalAnnouncement(Loc.GetString("round-end-system-shuttle-recalled-announcement"),
-                Loc.GetString("Station"), false, colorOverride: Color.Gold);
+                Loc.GetString("Станции"), false, colorOverride: Color.Gold);
 
             _audio.PlayGlobal("/Audio/Announcements/shuttlerecalled.ogg", Filter.Broadcast(), true);
 

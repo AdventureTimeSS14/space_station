@@ -92,6 +92,10 @@
         Blunt: 10
         Structural: 10
   - type: RandomHumanoidAppearance
+  - type: AutoImplant
+    implants:
+    - DeathAcidifierImplant
+  - type: ZombieImmune
 
 - type: entity
   parent:
@@ -181,3 +185,6 @@
     - ShoesRequiredStepTriggerImmune
     # let mind transfer on gib work
     - MindTransferTarget
+  - type: AutoImplant
+    implants:
+    - DeathAcidifierImplant

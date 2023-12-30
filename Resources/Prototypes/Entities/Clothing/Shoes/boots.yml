@@ -24,6 +24,10 @@
   - type: FootstepModifier # Corvax-Sounds
     footstepSoundCollection:
       collection: FootstepBoots
+  - type: ContainerFill
+    containers:
+      item:
+      - CombatKnife
 
 - type: entity
   parent: ClothingShoesBaseButcherable
