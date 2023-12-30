@@ -319,7 +319,7 @@
     Diethylamine:
      amount: 4
   products:
-    Ephedrine: 10
+    Ephedrine: 9
 
 - type: reaction
   id: MuteToxin
