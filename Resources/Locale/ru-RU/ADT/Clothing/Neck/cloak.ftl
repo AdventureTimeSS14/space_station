@@ -40,3 +40,6 @@ ent-ADTClothingNeckNewMekkaCloak = накидка Новой Мекки
 ent-ADTClothingNeckCloakLapkee = светлый плащ
     .desc = 50 оттенков белого для белых или не очень сотрудников.
     .suffix = { "Именное, Lapkee" }
+
+ent-ClothingNeckCloakVoid = пустотный плащ
+    .desc = Плащ тьмы. Для тех, кто перешел на темную сторону силы.

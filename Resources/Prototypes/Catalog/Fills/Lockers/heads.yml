@@ -395,7 +395,7 @@
   components:
   - type: StorageFill
     contents:
-      #- id: ClothingEyesHudSecurity
+      - id: ClothingEyesHudSecurity
       - id: NesSecurityShuttleConsoleCircuitboard
       - id: WeaponDisabler
       - id: ClothingHeadHatBeretHoS
