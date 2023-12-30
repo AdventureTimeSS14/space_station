@@ -1,0 +1,75 @@
+- type: entity
+  parent: ClothingMaskBreathMedicalSecurity
+  id: NesClothingMaskSpaceMaroder
+  name: военная маска космического мародера
+  description: Военная маска для космических мародеров, плотно держится на вашем лице позволяя дышать кислородом из баллона.
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/medicalsecurity.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/medicalsecurity.rsi
+
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: NesClothingBeltMilitaryWebbingMaroders
+  name: РПС космического мародера
+  description: РПС космического мародера, имеет в себе 7 вместительных карманов для магазинов вашего оружия.
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/militarywebbing.rsi
+  - type: Clothing
+    sprite: Clothing/Belt/militarywebbing.rsi
+
+- type: entity
+  id: NesClothingBeltMilitaryWebbingMarodersFilled
+  parent: NesClothingBeltMilitaryWebbingMaroders
+  suffix: Заполненый
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineLightRifle
+        amount: 7
+
+- type: entity
+  parent: ADTClothingBackpackUSSPattaked
+  id: NesClothingBackpackSpaceMaroders
+  name: рюкзак космического мародера
+  description: Большой рюкзак космического мародера, идеально для сбора награбленого мусора.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Back/ussp_attaked_backpack.rsi
+    state: icon
+  - type: Item
+    size: Huge
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+  - type: Storage
+    maxItemSize: Huge
+    #maxTotalWeight: 36
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  - type: UserInterface
+    interfaces:
+    - key: enum.StorageUiKey.Key
+      type: StorageBoundUserInterface
+  # to prevent bag open/honk spam
+  - type: UseDelay
+    delay: 0.5
+
+- type: entity
+  id: NesClothingBackpackSpaceMarodersFilled
+  parent: NesClothingBackpackSpaceMaroders
+  suffix: Заполненый
+  components:
+  - type: StorageFill
+    contents:
+      - id: CombatMedipen
+      - id: BoxSurvival
+      - id: ADTGunRifleAN

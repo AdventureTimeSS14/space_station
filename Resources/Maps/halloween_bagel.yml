@@ -60953,13 +60953,6 @@ entities:
     - pos: -10.308835,13.564301
       parent: 2
       type: Transform
-- proto: ClothingNeckLGBTPin
-  entities:
-  - uid: 8886
-    components:
-    - pos: -11.221505,22.789167
-      parent: 2
-      type: Transform
 - proto: ClothingNeckMantleCap
   entities:
   - uid: 8888

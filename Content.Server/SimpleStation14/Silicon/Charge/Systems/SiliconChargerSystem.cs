@@ -227,10 +227,13 @@ public sealed class SiliconChargerSystem : EntitySystem
         }
         if (TryComp<InventoryComponent>(entity, out var inventoryComp))
         {
-            foreach (var slot in _inventory.GetSlots(entity, inventoryComp))
+            if (_inventory.TryGetSlots(entity, out var slots))
             {
-                if (_inventory.TryGetSlotEntity(entity, slot.Name, out var slotItem))
-                    entitiesToCharge.AddRange(SearchThroughEntities(slotItem.Value));
+                foreach (var slot in slots)
+                {
+                    if (_inventory.TryGetSlotEntity(entity, slot.Name, out var slotItem))
+                        entitiesToCharge.AddRange(SearchThroughEntities(slotItem.Value));
+                }
             }
         }
         /// modern.df ipc-locale

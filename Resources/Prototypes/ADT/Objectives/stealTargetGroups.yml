@@ -1,0 +1,6 @@
+﻿- type: stealTargetGroup
+  id: NesGravityGeneratorCore
+  name: гравитационное ядро
+  sprite:
+    sprite: NES/GraviCore.rsi
+    state: GraviCore

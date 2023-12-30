@@ -45,7 +45,7 @@
     back: ClothingBackpackHOSFilled
     shoes: ClothingShoesBootsJackSec # Corvax-Resprite
     outerClothing: ClothingOuterCoatHoSTrench
-    eyes: ClothingEyesGlassesSecurity
+    eyes: ClothingEyesGlassesSunglasses
     head: ClothingHeadHatBeretHoS
     id: HoSPDA
     gloves: ClothingHandsGlovesCombat

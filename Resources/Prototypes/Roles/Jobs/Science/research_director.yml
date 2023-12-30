@@ -20,12 +20,13 @@
   - Command
   - Maintenance
   - ResearchDirector
-  #special:
-  #- !type:AddImplantSpecial
-  #  implants: [ MindShieldImplant ]
-  #- !type:AddComponentSpecial
-  #  components:
-  #    - type: CommandStaff
+  - Brig
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
 
 - type: startingGear
   id: ResearchDirectorGear
@@ -33,7 +34,7 @@
     jumpsuit: ADTRDJumpsuitWarm
     back: ClothingBackpackResearchDirectorFilled
     shoes: ClothingShoesColorBrown
-    outerClothing: ClothingOuterCoatRnd
+    outerClothing: ClothingOuterCoatRD
     id: RnDPDA
     ears: ClothingHeadsetRD
     underwearb: ClothingUnderwearBottomBoxersRD # Sirena-Underwear

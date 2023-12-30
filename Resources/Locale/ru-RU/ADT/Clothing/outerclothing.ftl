@@ -32,3 +32,12 @@ ent-ADTClothingOuterCoatXCoat = икс-ключительное облачени
 ent-ADTClothingOuterCoatSecAuditor = шинель аудитора СБ
     .desc = Стандартная шинель проверяющих работу Службы Безопасности станции со стороны комитета надзора NanoTrasen.
     .suffix = { "ЦК, CombatBibis" }
+
+ent-ClothingOuterVestKevlar = кевларовый бронежилет
+    .desc = Синтетический бронежилет. В этот жилет добавлены лямки и баллистические пластины.
+    .suffix = { "" }
+
+ent-ClothingOuterVest = бронежилет
+    .desc = Плотный жилет с прорезиненной, водонепроницаемой оболочкой.
+    .suffix = { "" }
+

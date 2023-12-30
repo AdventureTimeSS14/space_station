@@ -1,5 +1,5 @@
 #Гвоздика
-- type: entity 
+- type: entity
   name: carnation
   parent: FoodProduceBase
   id: ADTFoodCarnation
@@ -35,7 +35,7 @@
   - type: DeleteOnTrigger
 
 #Корица
-- type: entity 
+- type: entity
   name: cinnamon
   parent: FoodProduceBase
   id: ADTFoodCinnamon
@@ -281,7 +281,8 @@
     size: Large
   - type: Storage
     maxItemSize: Small
-    maxTotalWeight: 10
+    grid:
+    - 0,0,2,3
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -295,11 +296,11 @@
     - id: ADTFoodSnackBotanicCake
       amount: 1
     - id: ADTFoodSnackCargoCake
-      amount: 1
+      amount: 2
     - id: ADTFoodSnackChefCake
       amount: 1
     - id: ADTFoodSnackDoctorCake
-      amount: 1
+      amount: 2
     - id: ADTFoodSnackJanitoryCake
       amount: 1
     - id: ADTFoodSnackScientistCake
@@ -322,9 +323,9 @@
   - type: StorageFill
     contents:
     - id: ADTFoodSnackCandyStick
-      amount: 2
+      amount: 3
     - id: ADTFoodSnackCookieMan
-      amount: 1
+      amount: 2
     - id: ADTFoodSnackGiftCake
       amount: 1
     - id: ADTFoodSnackGloveCake
@@ -353,11 +354,11 @@
     - id: ADTFoodSnackMimeCake
       amount: 1
     - id: ADTFoodSnackNukieCake
-      amount: 2
+      amount: 3
     - id: ADTFoodSnackClownCake
       amount: 2
     - id: ADTFoodSnackGreytideCake
-      amount: 2
+      amount: 3
     - id: ADTFoodSnackCoinCandies
       amount: 2
     - id: ADTFoodSnackBlackCandies

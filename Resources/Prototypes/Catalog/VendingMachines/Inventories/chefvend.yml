@@ -19,9 +19,9 @@
     ReagentContainerMayo: 4
     MonkeyCubeBox: 2
     FoodContainerEgg: 4
-    ReagentContainerMilk: 4
-    ReagentContainerMilkSoy: 3
     FoodButter: 8
     FoodCheese: 3
     FoodMeat: 12
     ADTFoodSausageRaw: 12
+    DrinkMilkCarton: 2
+    DrinkSoyMilkCarton: 1

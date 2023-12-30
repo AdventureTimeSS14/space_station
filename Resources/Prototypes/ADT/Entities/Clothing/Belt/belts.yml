@@ -56,8 +56,9 @@
   description: Part of ERT security's gear
   components:
   - type: Storage
+    grid:
+    - 0,0,3,3
     maxItemSize: Normal
-    maxSlots: 10
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -65,8 +66,6 @@
       - id: MagazinePistolHighCapacity
       - id: WeaponPistolViper
       - id: MedicatedSuture
-      - id: ExGrenade
-        amount: 3
 
 - type: entity
   id: ADTClothingBeltMilitaryWebbingRPSSL_Rev
@@ -76,9 +75,9 @@
   suffix: Anti-REV
   components:
   - type: Storage
+    grid:
+    - 0,0,3,3
     maxItemSize: Normal
-    #maxTotalWeight: 0
-    maxSlots: 10 
   - type: StorageFill
     contents:
       - id: EmergencyMedipen # Size 2
@@ -97,8 +96,9 @@
   description: Part of ERT leader's gear
   components:
   - type: Storage
+    grid:
+    - 0,0,3,3
     maxItemSize: Normal
-    maxSlots: 10
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -106,8 +106,6 @@
       - id: MagazinePistolHighCapacity
       - id: WeaponPistolViper
       - id: MedicatedSuture
-      - id: ExGrenade
-        amount: 3
 
 - type: entity
   id: ADTClothingBeltMilitaryWebbingRPSL_Rev
@@ -117,18 +115,13 @@
   suffix: Anti-REV
   components:
   - type: Storage
+    grid:
+    - 0,0,3,3
     maxItemSize: Normal
-    #maxTotalWeight: 0
-    maxSlots: 10 
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
         amount: 2
-      #- id: MagazinePistolHighCapacity
-      #- id: WeaponPistolViper
-      #- id: MedicatedSuture
-      #- id: ExGrenade
-      #  amount: 3
       - id: ADTtelescopicBaton
       - id: Stunbaton
       - id: Flash
@@ -143,9 +136,9 @@
   description: Part of ERT medical's gear
   components:
   - type: Storage
+    grid:
+    - 0,0,3,3
     maxItemSize: Normal
-    #maxTotalWeight: 0
-    maxSlots: 10 #By this ignore maxTotalWeight
   - type: StorageFill
     contents:
       - id: EmergencyMedipen
@@ -161,7 +154,7 @@
 #Pyotr
 
 - type: entity
-  parent: ClothingBeltStorageBase
+  parent: ClothingBeltSheath
   id: ADTClothingBeltPyotrSheath
   name: Pyotr`s sabre sheath
   description: An ornate sheath designed to hold an officer's blade.
@@ -171,21 +164,28 @@
     state: sheath
   - type: Clothing
     sprite: ADT/Clothing/Belt/pyotr_sheath.rsi
-  - type: Storage
-    maxItemSize: Huge
-    whitelist:
-      tags:
-        - CaptainSabre
+  - type: Item
+    size: Ginormous
+  - type: ItemSlots
+    slots:
+      item:
+        name: Sabre
+        insertVerbText: sheath-insert-verb
+        ejectVerbText: sheath-eject-verb
+        whitelist:
+          tags:
+          - CaptainSabre
   - type: ItemMapper
     mapLayers:
       sheath-sabre:
         whitelist:
           tags:
           - CaptainSabre
+  - type: ContainerFill
+    containers:
+      item:
+      - ADTPyotrSabre
   - type: Appearance
-  - type: StorageFill
-    contents:
-      - id: ADTPyotrSabre
 
 #кобура следователя СБ
 
@@ -215,7 +215,7 @@
     sprite: ADT/Clothing/Belt/killa_webbing.rsi
   - type: Clothing
     sprite: ADT/Clothing/Belt/killa_webbing.rsi
- 
+
  #Празатомат
 - type: entity
   parent: ClothingBeltBase
@@ -236,7 +236,7 @@
   description: A suspenders made of rough leather. Made by company "Modeling Agency Dar-Vaxed".
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Belt/leather_suspenders.rsi 
+    sprite: ADT/Clothing/Belt/leather_suspenders.rsi
   - type: Clothing
     sprite: ADT/Clothing/Belt/leather_suspenders.rsi #спрайты от prazat911
     quickEquip: true
@@ -253,7 +253,7 @@
         - id: ADTWeaponPistolPMM
         - id: MagazinePistol
   - type: Sprite
-    sprite: ADT/Clothing/Belt/sec_auditor_holster.rsi 
+    sprite: ADT/Clothing/Belt/sec_auditor_holster.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Belt/sec_auditor_holster.rsi 
+    sprite: ADT/Clothing/Belt/sec_auditor_holster.rsi
     quickEquip: true

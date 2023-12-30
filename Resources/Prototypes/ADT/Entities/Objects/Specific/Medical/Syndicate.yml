@@ -1,0 +1,12 @@
+- type: entity
+  id: ADTFakeDefibrillator
+  parent: Defibrillator
+  components:
+    - type: Defibrillator
+      zapHeal:
+        types:
+          Asphyxiation: -1
+      writheDuration: 5
+      zapDamage: 35
+      zapDelay: 2
+      doAfterDuration: 1

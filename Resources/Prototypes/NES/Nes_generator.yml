@@ -1,0 +1,91 @@
+- type: entity
+  parent: NesBaseBigStructure
+  # parent: BaseStructure
+  id: NesGravityGeneratorBroken
+  name: broken gravity generator #Nes Сломаный грави ген
+  description: broken gravity generator
+  components:
+    - type: Clickable
+    - type: InteractionOutline
+    - type: Sprite
+      sprite: Structures/Machines/gravity_generator.rsi
+      drawdepth: Mobs
+      layers:
+        - state: broken
+    - type: Damageable
+      damageContainer: Inorganic
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 200
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                path: /Audio/Effects/metalbreak.ogg
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                SheetSteel1:
+                  min: 2
+                  max: 4
+    - type: Anchorable
+      delay: 6
+    - type: Pullable
+    - type: Construction
+      graph: ADTBrokenGravigen
+      node: adtbrokengravigen
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-1.5,-1.5,1.5,1.5"
+          density: 1000
+          mask:
+          - LargeMobMask
+          layer:
+          - WallLayer
+    - type: Appearance
+
+- type: entity
+  id: NesGravityGeneratorCore
+  parent: BaseItem
+  name: gravity generator core
+  description: gravity generator core
+  components:
+    - type: Sprite
+      sprite: NES/GraviCore.rsi
+      state: GraviCore
+    - type: StaticPrice
+      price: 5000
+    - type: PointLight
+      radius: 3
+      energy: 3
+      color: "#9ad67a"
+    - type: Tag
+      tags:
+      - HighRiskItem
+
+- type: entity
+  noSpawn: true
+  parent: GravityGenerator
+  id: GravityGeneratorUnanchored
+  suffix: Unanchored
+  components:
+  - type: Transform
+    anchored: false
+  - type: Physics
+    bodyType: Dynamic
+
+- type: entity
+  id: CrateEngineeringGravityGenerator
+  name: crate with gravity generator
+  parent: CrateEngineeringSecure
+  components:
+  - type: StorageFill
+    contents:
+      - id: GravityGeneratorUnanchored

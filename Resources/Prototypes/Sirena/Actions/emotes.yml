@@ -3,6 +3,7 @@
   id: EmoteFlip
   name: emote-flip-action-name
   description: emote-flip-action-description
+  abstract: true
   components:
   - type: InstantAction
     icon: Interface/Actions/blight.png
@@ -13,6 +14,7 @@
   id: EmoteJump
   name: emote-jump-action-name
   description: emote-jump-action-description
+  abstract: true
   components:
     - type: InstantAction
       icon: Interface/Actions/blight.png
@@ -23,6 +25,7 @@
   id: EmoteTurn
   name: emote-turn-action-name
   description: emote-turn-action-description
+  abstract: true
   components:
     - type: InstantAction
       icon: Interface/Actions/blight.png
@@ -33,6 +36,7 @@
   id: EmoteStopTail
   name: emote-stop-tail-action-name
   description: emote-stop-tail-action-description
+  abstract: true
   components:
     - type: InstantAction
       icon: Interface/Actions/blight.png
@@ -43,6 +47,7 @@
   id: EmoteStartTail
   name: emote-start-tail-action-name
   description: emote-start-tail-action-description
+  abstract: true
   components:
     - type: InstantAction
       icon: Interface/Actions/blight.png

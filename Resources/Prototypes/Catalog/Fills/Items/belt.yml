@@ -17,9 +17,6 @@
   parent: ClothingBeltUtility
   suffix: Engineering
   components:
-  #- type: Storage
-  #  maxItemSize: Cheat
-  #  maxTotalWeight: 9000
   - type: StorageFill
     contents:
       - id: MiniFireExtinguisher
@@ -53,7 +50,7 @@
   - type: StorageFill
     contents:
       - id: GrenadeFlashBang
-      - id: GrenadeFlashBang
+      - id: TearGasGrenade
       - id: Stunbaton
       - id: Handcuffs
       - id: Handcuffs
@@ -89,8 +86,9 @@
 
 - type: entity
   id: ClothingBeltParamedicFilled
-  parent: ClothingBeltMedical
-  suffix: Filled
+  parent: ClothingBeltMedical #in the future, make this a seperate prototype so it can have a unique, darker sprite
+  name: EMT belt
+  suffix: Paramedic,Filled
   components:
   - type: StorageFill
     contents:
@@ -117,9 +115,10 @@
   parent: ClothingBeltSheath
   suffix: Filled
   components:
-  - type: StorageFill
-    contents:
-      - id: CaptainSabre
+  - type: ContainerFill
+    containers:
+      item:
+      - CaptainSabre
 
 - type: entity
   id: ClothingBeltMilitaryWebbingGrenadeFilled
@@ -130,8 +129,9 @@
   - type: Item
     size: Ginormous
   - type: Storage
-    maxSlots: 8
     maxItemSize: Normal
+    grid:
+    - 0,0,7,1
   - type: StorageFill
     contents:
       - id: ExGrenade
@@ -180,12 +180,23 @@
         - id: SpeedLoaderMagnumRubber
 
 - type: entity
+  id: ClothingBeltChefFilled
+  parent: ClothingBeltChef
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: FoodShakerSalt
+    - id: FoodShakerPepper
+
+- type: entity
   id: ClothingBeltMilitaryWebbingBlueShieldFilled
   parent: ClothingBeltMilitaryWebbingMed
   suffix: Filled
   components:
   - type: Storage
-    maxSlots: 9
+    grid:
+    - 0,0,3,3
     maxItemSize: Normal
   - type: StorageFill
     contents:

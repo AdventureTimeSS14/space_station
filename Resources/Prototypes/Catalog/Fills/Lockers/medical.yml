@@ -119,6 +119,7 @@
       - id: BoxPillCanister
       - id: BoxBottle
         amount: 2
+      - id: BoxVial
       - id: ChemBag
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetMedical
@@ -139,6 +140,7 @@
       - id: ADTClothingOuterParamedicVoidHardsuit
       - id: ClothingOuterCoatParamedicWB
       - id: ClothingHeadHatParamedicsoft
+      - id: ClothingOuterWinterPara
       - id: ClothingUniformJumpsuitParamedic
       - id: ClothingUniformJumpskirtParamedic
       - id: ClothingEyesHudMedical

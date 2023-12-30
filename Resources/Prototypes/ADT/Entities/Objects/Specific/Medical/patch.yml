@@ -12,7 +12,8 @@
   - type: Item
     size: Normal
   - type: Storage
-    maxTotalWeight: 12
+    grid:
+    - 0,0,10,7
     maxItemSize: Small
     quickInsert: true
     areaInsert: true

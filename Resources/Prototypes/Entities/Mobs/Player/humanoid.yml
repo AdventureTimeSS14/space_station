@@ -13,12 +13,12 @@
     - type: RandomMetadata
       nameSegments:
         - NamesFirstMilitaryLeader
-        - names_last
+        - NamesLastMilitary
     - type: RandomHumanoidSpawner
       settings: DeathSquad
 
 - type: randomHumanoidSettings
-  speciesBlacklist: 
+  speciesBlacklist:
     - Diona
   id: DeathSquad
   randomizeName: false
@@ -33,7 +33,7 @@
     - type: RandomMetadata
       nameSegments:
         - NamesFirstMilitaryLeader
-        - names_last
+        - NamesLastMilitary
 
 
 ## ERT Leader
@@ -55,7 +55,7 @@
   #noSpawn: true
 
 - type: randomHumanoidSettings
-  speciesBlacklist: 
+  speciesBlacklist:
     - Diona
   id: ERTLeader
   randomizeName: false
@@ -86,7 +86,7 @@
       settings: ERTLeaderEVA
 
 - type: randomHumanoidSettings
-  speciesBlacklist: 
+  speciesBlacklist:
     - Diona
   id: ERTLeaderEVA
   parent: ERTLeader
@@ -114,7 +114,7 @@
       settings: ERTLeaderREV
 
 - type: randomHumanoidSettings
-  speciesBlacklist: 
+  speciesBlacklist:
     - Diona
   id: ERTLeaderREV
   parent: ERTLeader
@@ -135,7 +135,7 @@
       settings: ERTLeaderEVALecter
 
 - type: randomHumanoidSettings
-  speciesBlacklist: 
+  speciesBlacklist:
     - Diona
   id: ERTLeaderEVALecter
   parent: ERTLeaderEVA
@@ -168,7 +168,7 @@
   #noSpawn: true
 
 - type: randomHumanoidSettings
-  speciesBlacklist: 
+  speciesBlacklist:
     - Diona
   id: ERTJanitor
   parent: ERTLeader
@@ -199,7 +199,7 @@
       settings: ERTJanitorEVA
 
 - type: randomHumanoidSettings
-  speciesBlacklist: 
+  speciesBlacklist:
     - Diona
   id: ERTJanitorEVA
   parent: ERTJanitor
@@ -232,7 +232,7 @@
   #noSpawn: true
 
 - type: randomHumanoidSettings
-  speciesBlacklist: 
+  speciesBlacklist:
     - Diona
   id: ERTEngineer
   parent: ERTLeader
@@ -263,7 +263,7 @@
       settings: ERTEngineerEVA
 
 - type: randomHumanoidSettings
-  speciesBlacklist: 
+  speciesBlacklist:
     - Diona
   id: ERTEngineerEVA
   parent: ERTEngineer
@@ -291,7 +291,7 @@
       settings: ERTEngineerREV
 
 - type: randomHumanoidSettings
-  speciesBlacklist: 
+  speciesBlacklist:
     - Diona
   id: ERTEngineerREV
   parent: ERTEngineer
@@ -462,7 +462,7 @@
   #noSpawn: true
 
 - type: randomHumanoidSettings
-  speciesBlacklist: 
+  speciesBlacklist:
     - Diona
   id: ERTMedical
   parent: ERTLeader
@@ -493,7 +493,7 @@
       settings: ERTMedicalEVA
 
 - type: randomHumanoidSettings
-  speciesBlacklist: 
+  speciesBlacklist:
     - Diona
   id: ERTMedicalEVA
   parent: ERTMedical
@@ -521,7 +521,7 @@
       settings: ERTMedicalREV
 
 - type: randomHumanoidSettings
-  speciesBlacklist: 
+  speciesBlacklist:
     - Diona
   id: ERTMedicalREV
   parent: ERTMedical
@@ -547,7 +547,7 @@
       settings: CBURNAgent
 
 - type: randomHumanoidSettings
-  speciesBlacklist: 
+  speciesBlacklist:
     - Diona
   id: CBURNAgent
   components:

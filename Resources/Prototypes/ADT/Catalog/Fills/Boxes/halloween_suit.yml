@@ -14,8 +14,8 @@
     size: Ginormous
   - type: Storage
     maxItemSize: Ginormous
-    maxTotalWeight: 0
-    maxSlots: 50 #By this ignore maxTotalWeight
+    grid:
+    - 0,0,10,7
   - type: ContainerContainer
     containers:
       storagebase: !type:Container

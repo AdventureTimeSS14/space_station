@@ -9,5 +9,6 @@
     state: icon
     scale: 0.7, 0.7
   - type: Storage
-    maxSlots: 1
+    grid:
+    - 0,0,10,7
     maxItemSize: Small

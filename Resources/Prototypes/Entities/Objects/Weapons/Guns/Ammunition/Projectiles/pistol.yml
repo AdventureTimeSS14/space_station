@@ -41,3 +41,15 @@
     damage:
       groups:
         Burn: 10
+
+- type: entity
+  id: BulletPistolUranium
+  parent: BaseBullet
+  name: bullet (.35 auto uranium)
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Radiation: 6
+        Piercing: 10

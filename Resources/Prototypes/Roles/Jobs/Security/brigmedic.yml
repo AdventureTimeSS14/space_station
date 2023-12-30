@@ -29,7 +29,7 @@
     back: ClothingBackpackBrigmedicFilled
     shoes: ClothingShoesColorRed
     gloves: ClothingHandsGlovesNitrile
-    eyes: ClothingEyesHudMedical
+    eyes: ClothingEyesHudMedSec
     head: ClothingHeadHatBeretBrigmedic
     id: BrigmedicPDA
     ears: ClothingHeadsetBrigmedic

@@ -54,7 +54,7 @@ namespace Content.Server.Shuttles.Components
         public readonly List<EntityUid> AngularThrusters = new();
 
         [ViewVariables]
-        public float AngularThrust = 0f;
+        public float AngularThrust = 10f;
 
         /// <summary>
         /// A bitmask of all the directions we are considered thrusting.
@@ -66,9 +66,9 @@ namespace Content.Server.Shuttles.Components
         /// Damping applied to the shuttle's physics component when not in FTL.
         /// </summary>
         [DataField("linearDamping"), ViewVariables(VVAccess.ReadWrite)]
-        public float LinearDamping = 0f;
+        public float LinearDamping = 0.06f;
 
         [DataField("angularDamping"), ViewVariables(VVAccess.ReadWrite)]
-        public float AngularDamping = 0f;
+        public float AngularDamping = 0.06f;
     }
 }

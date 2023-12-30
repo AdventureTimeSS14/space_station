@@ -53,6 +53,8 @@
     - HighRiskItem
   - type: StaticPrice
     price: 750
+  - type: StealTarget
+    stealGroup: ClothingShoesBootsMagAdv
 
 - type: entity
   parent: ClothingShoesBootsMag
@@ -114,6 +116,10 @@
   - type: Tag
     tags:
       - WhitelistChameleon
+  # - type: ContainerFill
+  #   containers:
+  #     item:
+  #     - CombatKnife
 
 - type: entity
   id: ActionBaseToggleMagboots
