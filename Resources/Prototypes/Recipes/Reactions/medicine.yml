@@ -80,15 +80,15 @@
   id: Epinephrine
   reactants:
     Phenol:
-      amount: 1
+      amount: 2
     Acetone:
-      amount: 1
+      amount: 3
     Chlorine:
-      amount: 1
+      amount: 2
     Hydroxide:
-      amount: 1
+      amount: 2
   products:
-    Epinephrine: 4
+    Epinephrine: 8
 
 - type: reaction
   id: Dermaline
