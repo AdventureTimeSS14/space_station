@@ -793,17 +793,19 @@
     staticRecipes:
       - ClothingUniformJumpsuitColorGrey
       - ClothingUniformJumpskirtColorGrey
-      - ADTClothingUniformNewBarmanSuit
-      - ADTClothingUniformNewBarmanSkirt
+      - ClothingUniformJumpsuitBartender
+      - ClothingUniformJumpskirtBartender
       - ClothingUniformJumpsuitCaptain
       - ClothingUniformJumpskirtCaptain
+      - ClothingUniformJumpsuitCapFormal
+      - ClothingUniformJumpskirtCapFormalDress
       - ClothingUniformJumpsuitCargo
       - ClothingUniformJumpskirtCargo
       - ClothingUniformJumpsuitSalvageSpecialist
       - ClothingUniformJumpsuitChiefEngineer
       - ClothingUniformJumpskirtChiefEngineer
-      - ADTCEJumpsuitWarm
-      - ADTCEJumpskirtWarm
+      - ClothingUniformJumpsuitChiefEngineerTurtle
+      - ClothingUniformJumpskirtChiefEngineerTurtle
       - ClothingUniformJumpsuitChaplain
       - ClothingUniformJumpskirtChaplain
       - ClothingUniformJumpsuitBrigmedic
@@ -815,20 +817,22 @@
       - ClothingUniformJumpsuitClown
       - ClothingUniformJumpsuitCMO
       - ClothingUniformJumpskirtCMO
-      - ADTCMOJumpsuitWarm
-      - ADTCMOJumpskirtWarm
       - ClothingUniformJumpsuitDetective
       - ClothingUniformJumpskirtDetective
       - ClothingUniformJumpsuitEngineering
       - ClothingUniformJumpskirtEngineering
       - ClothingUniformJumpsuitHoP
       - ClothingUniformJumpskirtHoP
-      - ADTHOPJumpsuitWarm
-      - ADTHOPJumpskirtWarm
       - ClothingUniformJumpsuitHoS
       - ClothingUniformJumpskirtHoS
-      - ADTHOSJumpsuitWarm
-      - ADTHOSJumpskirtWarm
+      - ClothingUniformJumpsuitHosFormal
+      - ClothingUniformJumpskirtHosFormal
+      - ClothingUniformJumpsuitHoSAlt
+      - ClothingUniformJumpskirtHoSAlt
+      - ClothingUniformJumpsuitHoSBlue
+      - ClothingUniformJumpsuitHoSGrey
+      - ClothingUniformJumpsuitHoSParadeMale
+      - ClothingUniformJumpskirtHoSParadeMale
       - ClothingUniformJumpsuitHydroponics
       - ClothingUniformJumpskirtHydroponics
       - ClothingUniformJumpsuitJanitor
@@ -847,10 +851,10 @@
       - ClothingUniformJumpskirtPrisoner
       - ClothingUniformJumpsuitQM
       - ClothingUniformJumpskirtQM
-      - ADTQMJumpsuitWarm
-      - ADTQMJumpsuitWarm
-      - ADTRDJumpsuitWarm
-      - ADTRDJumpskirtWarm
+      - ClothingUniformJumpsuitQMTurtleneck
+      - ClothingUniformJumpskirtQMTurtleneck
+      - ClothingUniformJumpsuitResearchDirector
+      - ClothingUniformJumpskirtResearchDirector
       - ClothingUniformJumpsuitScientist
       - ClothingUniformJumpskirtScientist
       - ClothingUniformJumpsuitSec
