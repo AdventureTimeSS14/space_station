@@ -123,7 +123,15 @@
         },
         {
             "name": "shark_inhand-right"
+        },
+        {   
+            "name": "plushie_jungar"
+        },
+        {   
+            "name": "plushie_migel"
+        },
+        {   
+            "name": "plushie_teo"
         }
     ]
 }
-
