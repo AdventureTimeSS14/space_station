@@ -82,6 +82,7 @@
         Piercing: 0.95
         Heat: 0.90
         Radiation: 0.25
+        Stun: 0.8
   - type: ToggleableClothing
     slot: head
   - type: ContainerContainer

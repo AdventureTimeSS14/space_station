@@ -36,9 +36,9 @@ public sealed partial class ShuttleSystem
 
     public const float DefaultStartupTime = 5.5f;
     public const float DefaultTravelTime = 40f;
-    public const float DefaultArrivalTime = 80f;
-    private const float FTLCooldown = 50f;
-    private const float ShuttleFTLRange = 100f;
+    public const float DefaultArrivalTime = 40f;
+    private const float FTLCooldown = 30f;
+    private const float ShuttleFTLRange = 50f;
 
     /// <summary>
     /// Minimum mass a grid needs to be to block a shuttle recall.
