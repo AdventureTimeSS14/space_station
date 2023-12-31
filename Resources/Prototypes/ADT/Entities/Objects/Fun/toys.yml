@@ -83,7 +83,7 @@
     heldPrefix: garbagerama
   - type: ItemCooldown
 
-
+  
 - type: entity
   parent: BasePlushie
   id: ADTPlushieJessie
@@ -444,32 +444,3 @@
     sprite: ADT/Objects/Fun/toys.rsi
     state: plushie_ma
 
-- type: entity
-  parent: BasePlushie
-  id: ADTPlushieJungar
-  name: Djessie plushie
-  description: It looks like a soft and cute blondie.
-  components:
-  - type: Sprite
-    sprite: ADT/Objects/Fun/toys.rsi
-    state: plushie_jungar
-
-- type: entity
-  parent: BasePlushie
-  id: ADTPlushieMigel
-  name: Djessie plushie
-  description: It looks like a soft and cute blondie.
-  components:
-  - type: Sprite
-    sprite: ADT/Objects/Fun/toys.rsi
-    state: plushie_migel
-
-- type: entity
-  parent: BasePlushie
-  id: ADTPlushieTeo
-  name: Djessie plushie
-  description: It looks like a soft and cute blondie.
-  components:
-  - type: Sprite
-    sprite: ADT/Objects/Fun/toys.rsi
-    state: plushie_teo
