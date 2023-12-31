@@ -66,6 +66,8 @@
           Quantity: 9
         - ReagentId: Carbon
           Quantity: 1
+        - ReagentId: Lead
+          Quantity: 0.1
 
 - type: entity
   parent: SheetSteel

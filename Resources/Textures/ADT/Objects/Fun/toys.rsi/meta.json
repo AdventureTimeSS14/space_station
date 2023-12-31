@@ -114,17 +114,25 @@
         },
         {
             "name": "plushie_ma"
-
         },
-        {   "name": "plushie_jungar"
-
+        {
+            "name": "shark_mini_pink"
         },
-        {   "name": "plushie_migel"
-
+        {
+            "name": "shark_inhand-left"
         },
-        {   "name": "plushie_teo"
-
-    }
+        {
+            "name": "shark_inhand-right"
+        },
+        {   
+            "name": "plushie_jungar"
+        },
+        {   
+            "name": "plushie_migel"
+        },
+        {   
+            "name": "plushie_teo"
+        }
 
 ]
 }
