@@ -48,3 +48,14 @@ ent-ADTBaseFakeDefibrillator = дефибриллятор
 ent-Defibrillator = дефибриллятор
     .desc = ЧИСТО! РАЗРЯД!
     .suffix = { "Поддельный" }
+
+ent-BaseChemistryEmptyVial = пробирка
+    .desc = Небольшая пробирка.
+    .suffix = { "" }
+
+ent-VestineChemistryVial = пробирка с вестином
+    .desc = Небольшая пробирка, на которой стоит маркировка "Вестин".
+    .suffix = { "Вестин" }
+
+ent-BoxVial = коробка пробирок
+    .desc = Содержит шесть пробирок.
