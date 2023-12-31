@@ -165,7 +165,7 @@ ent-ADTArmchairBrown2 = { ent-ADTArmchairBrown }
     .desc = { ent-ADTArmchairWhite.desc }
 
 ent-ADTArmchairBlue = синее кресло
-    .desc = { ent-ADTArmchairWhite }
+    .desc = { ent-ADTArmchairWhite.desc }
 
 ent-ADTArmchairBlue2 = { ent-ADTArmchairBlue }
     .desc = { ent-ADTArmchairWhite.desc }

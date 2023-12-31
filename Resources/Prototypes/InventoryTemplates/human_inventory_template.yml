@@ -90,6 +90,9 @@
       uiWindowPos: 1,3
       strippingWindowPos: 1,0
       displayName: Head
+      blacklist:
+        tags:
+          - CatWearable
     - name: pocket1
       slotTexture: pocket
       slotFlags: POCKET
