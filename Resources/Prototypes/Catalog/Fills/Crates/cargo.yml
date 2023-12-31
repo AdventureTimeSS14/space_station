@@ -259,7 +259,7 @@
     - id: ToyAmongPequeno
       prob: 0.01  
       orGroup: Useful
-    - id: UplinkExplodingPen
+    - id: PenExploding
       prob: 0.01
       orGroup: Useful
     #notuseful
