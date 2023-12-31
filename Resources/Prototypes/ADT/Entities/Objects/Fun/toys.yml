@@ -8,16 +8,16 @@
     state: plushie_resomi_blue
   - type: EmitSoundOnUse
     sound:
-      path: /Audio/Items/Toys/toysqueak2.ogg
+      path: /Audio/Items/Toys//Audio/ADT/Items/Toys2.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/Items/Toys/toysqueak2.ogg
+      path: /Audio/Items/Toys//Audio/ADT/Items/Toys2.ogg
   - type: EmitSoundOnActivate
     sound:
-      path: /Audio/Items/Toys/toysqueak2.ogg
+      path: /Audio/Items/Toys//Audio/ADT/Items/Toys2.ogg
   - type: MeleeWeapon
     soundHit:
-      path: /Audio/Items/Toys/toysqueak2.ogg
+      path: /Audio/Items/Toys//Audio/ADT/Items/Toys2.ogg
 
 - type: entity
   parent: BasePlushie
@@ -29,16 +29,16 @@
     state: plushie_resomi_green
   - type: EmitSoundOnUse
     sound:
-      path: /Audio/Items/Toys/toysqueak2.ogg
+      path: /Audio/Items/Toys//Audio/ADT/Items/Toys2.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/Items/Toys/toysqueak2.ogg
+      path: /Audio/Items/Toys//Audio/ADT/Items/Toys2.ogg
   - type: EmitSoundOnActivate
     sound:
-      path: /Audio/Items/Toys/toysqueak2.ogg
+      path: /Audio/Items/Toys//Audio/ADT/Items/Toys2.ogg
   - type: MeleeWeapon
     soundHit:
-      path: /Audio/Items/Toys/toysqueak2.ogg
+      path: /Audio/Items/Toys//Audio/ADT/Items/Toys2.ogg
 
 - type: entity
   parent: BasePlushie
@@ -50,16 +50,16 @@
     state: plushie_resomi_yellow
   - type: EmitSoundOnUse
     sound:
-      path: /Audio/Items/Toys/toysqueak2.ogg
+      path: /Audio/Items/Toys//Audio/ADT/Items/Toys2.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/Items/Toys/toysqueak2.ogg
+      path: /Audio/Items/Toys//Audio/ADT/Items/Toys2.ogg
   - type: EmitSoundOnActivate
     sound:
-      path: /Audio/Items/Toys/toysqueak2.ogg
+      path: /Audio/Items/Toys//Audio/ADT/Items/Toys2.ogg
   - type: MeleeWeapon
     soundHit:
-      path: /Audio/Items/Toys/toysqueak2.ogg
+      path: /Audio/Items/Toys//Audio/ADT/Items/Toys2.ogg
 
 - type: entity
   parent: BaseItem
@@ -444,3 +444,34 @@
     sprite: ADT/Objects/Fun/toys.rsi
     state: plushie_ma
 
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieMiniPinkShark
+  name: mini shark plushie
+  description: A pretty old plushie, that got a refresh. Looks well-groomed and washed. There is a label on it that says "My luck will be always with you. Timri.K."
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: shark_mini_pink
+  - type: Item
+    size: Tiny
+    sprite: ADT/Objects/Fun/toys.rsi
+    heldPrefix: shark
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/ADT/Items/Toys/soundshark.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/ADT/Items/Toys/soundshark.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/ADT/Items/Toys/soundshark.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/ADT/Items/Toys/soundshark.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/ADT/Items/Toys/soundshark.ogg
+    damage:
+      types:
+        Blunt: 0
