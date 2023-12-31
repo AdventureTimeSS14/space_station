@@ -163,6 +163,9 @@
     - id: ClothingUniformJumpskirtSyndieFormalDress
       prob: 0.01
       orGroup: Clothes
+    - id: ClothingOuterHardsuitDeathsquad
+      prob: 0.0001
+      orGroup: Clothes
     #swag
     - id: ClothingNeckBling
       prob: 0.01
@@ -254,6 +257,9 @@
       prob: 0.01
       orGroup: Useful
     - id: ToyAmongPequeno
+      prob: 0.01  
+      orGroup: Useful
+    - id: UplinkExplodingPen
       prob: 0.01
       orGroup: Useful
     #notuseful
