@@ -10,8 +10,6 @@
   parent: BaseItem
   description: Designed to store evidence, not drugs
   components:
-  # - type: Transform
-  #   anchored: true
   - type: Appearance
   - type: Sprite
     sprite: ADT/Objects/Misc/Evidance.rsi
@@ -44,10 +42,12 @@
 
 - type: entity
   name: pill
-  parent: Pill
+  parent: FoodInjectableBase
   id: ADTPillExperimental
   description: It's not a suppository.
   components:
+  - type: SliceableFood
+    count: 2
   - type: Sprite
     sprite: ADT/Objects/Misc/pill_ex.rsi
     state: trava_ent
@@ -69,10 +69,12 @@
 
 - type: entity
   name: pill
-  parent: Pill
+  parent: FoodInjectableBase
   id: ADTPillExter
   description: It's not a suppository.
   components:
+  - type: SliceableFood
+    count: 2
   - type: Sprite
     sprite: ADT/Objects/Misc/pill_ex.rsi
     state: extezi_ent
