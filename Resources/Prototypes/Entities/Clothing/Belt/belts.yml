@@ -589,10 +589,6 @@
   name: security webbing
   description: Unique and versatile chest rig, can hold security gear.
   components:
-  - type: Storage
-    grid:
-    - 0,0,15,1
-    maxItemSize: Normal
   - type: Sprite
     sprite: Clothing/Belt/securitywebbing.rsi
   - type: Clothing
