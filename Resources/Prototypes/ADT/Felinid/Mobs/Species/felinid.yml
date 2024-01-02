@@ -5,11 +5,12 @@
   id: MobFelinidBase
   abstract: true
   components:
+  - type: Felinid
   - type: Sprite
     netsync: false
     noRot: true
     drawdepth: Mobs
-    scale: 0.8, 0.8
+    scale: 0.95, 0.95
     layers:
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
       - map: [ "enum.HumanoidVisualLayers.Head" ]
@@ -167,3 +168,52 @@
         - map: [ "head" ]
         - map: [ "pocket1" ]
         - map: [ "pocket2" ]
+
+
+- type: entity
+  parent: BaseItem
+  id: Hairball
+  name: hairball
+  description: Felinids, man... Placeholder sprite.
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Specific/felinid.rsi
+      state: icon
+    - type: Hairball
+    - type: SolutionContainerManager
+      solutions:
+        hairball:
+          maxVol: 25
+          reagents:
+            - ReagentId: Protein
+              Quantity: 2
+    - type: Extractable
+      grindableSolutionName: hairball
+    # - type: Tag
+    #   tags:
+    #     - Recyclable
+    #     - Trash
+
+- type: entity
+  id: ActionHairball
+  name: hairball-action
+  description: hairball-action-desc
+  noSpawn: true
+  components:
+    - type: InstantAction
+#      icon: { sprite: Backmen/Structures/web.rsi, state: web1 }
+      priority: -10
+      event: !type:HairballActionEvent
+      charges: 100  #костыль
+      useDelay: 30
+
+- type: entity
+  id: ActionEatMouse
+  name: action-name-eat-mouse
+  description: action-description-eat-mouse
+  noSpawn: true
+  components:
+    - type: InstantAction
+      useDelay: 10
+      icon: ADT/Icons/verbiconfangs.png
+      event: !type:EatMouseActionEvent
