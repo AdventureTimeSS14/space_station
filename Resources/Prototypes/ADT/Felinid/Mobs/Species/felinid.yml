@@ -5,11 +5,12 @@
   id: MobFelinidBase
   abstract: true
   components:
+  - type: Felinid
   - type: Sprite
     netsync: false
     noRot: true
     drawdepth: Mobs
-    scale: 0.8, 0.8
+    scale: 0.95, 0.95
     layers:
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
       - map: [ "enum.HumanoidVisualLayers.Head" ]
