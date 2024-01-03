@@ -166,10 +166,8 @@
   components:
   - type: Objective
     difficulty: 3
-  - type: NotCommandRequirement
   - type: StealCondition
     stealGroup: NesGravityGeneratorCore
-    prototype: NesGravityGeneratorCore
     owner: objective-condition-steal-station
 
 ## rd

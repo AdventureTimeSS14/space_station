@@ -69,6 +69,8 @@
     - type: Tag
       tags:
       - HighRiskItem
+    - type: StealTarget
+      stealGroup: NesGravityGeneratorCore
 
 - type: entity
   noSpawn: true
