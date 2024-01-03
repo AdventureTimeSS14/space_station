@@ -130,6 +130,31 @@
     - DawInstrumentMachineCircuitboard
     - MassMediaCircuitboard
 
+- type: technology
+  id: RoboticCleanliness
+  name: research-technology-robotic-cleanliness
+  icon:
+    sprite: Mobs/Silicon/chassis.rsi
+    state: janitor
+  discipline: CivilianServices
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+  - BorgModuleLightReplacer
+  - BorgModuleAdvancedCleaning
+
+- type: technology
+  id: MeatManipulation
+  name: research-technology-meat-manipulation
+  icon:
+    sprite: Structures/Machines/fat_sucker.rsi
+    state: display
+  discipline: CivilianServices
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+  - FatExtractorMachineCircuitboard
+
 # Tier 2
 
 - type: technology
