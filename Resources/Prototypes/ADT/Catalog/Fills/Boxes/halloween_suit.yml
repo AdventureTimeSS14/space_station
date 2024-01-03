@@ -480,26 +480,22 @@
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
     state: base
-    #layers:
-    #- state: base
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,20,0
   - type: StorageFill
     contents:
     - id: ADTFoodSnackBlackCandies
-      amount: 2
     - id: ADTFoodSnackGreenCandies
-      amount: 2
     - id: ADTFoodSnackRedCandies
-      amount: 2
     - id: ADTFoodSnackVioletCandies
-      amount: 2
     - id: ADTFoodSnackYellowCandies
-      amount: 2
     - id: ADTFoodSnackBatGingerBread
     - id: ADTFoodSnackScullGingerBread
     - id: ADTFoodSnackPumpkinGingerBread
     - id: ADTFoodSnackBunnyCandies
     - id: ADTFoodSnackCoinCandies
-      amount: 3
     - id: ADTFoodSnackBrains
     - id: ADTFoodSnackHeart
     - id: ADTFoodSnackWorms
