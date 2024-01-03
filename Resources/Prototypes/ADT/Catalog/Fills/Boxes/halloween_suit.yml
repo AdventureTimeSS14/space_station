@@ -163,8 +163,6 @@
     #- state: killa
   - type: StorageFill
     contents:
-    - id: ADTClothingBeltKilla
-      amount: 1
     - id: ADTClothingHeadKillaHelmet
       amount: 1
     - id: ADTKillaArmor
