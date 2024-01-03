@@ -133,7 +133,7 @@
   id: ClothingOuterBaseMedium
   components:
   - type: Item
-    size: Huge
+    size: Small
   - type: Clothing
     slots:
     - outerClothing

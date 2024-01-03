@@ -12,10 +12,13 @@
     #- state: pennywise
   - type: Item
     size: Ginormous
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
   - type: Storage
-    maxItemSize: Normal
+    maxItemSize: Huge
     grid:
-    - 0,0,4,3
+    - 0,0,8,6
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
