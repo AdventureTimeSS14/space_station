@@ -170,12 +170,4 @@
       - ADTPosterDontTalkToArty
       - ADTPosterWorkUnderWay
       - ADTPosterPlasmaMan
-    #chance: 0.6
-    rarePrototypes: #временный прикол, который стоит потом убрать.
-      - ADTPosterNewYear
-      - ADTPosterNewYear2
-      - ADTPosterNewYear3
-      - ADTCristmasWreath
-      - ADTCristmasWreath2
-      - ADTCristmasWreath3
-    rareChance: 0.4
+    chance: 1
