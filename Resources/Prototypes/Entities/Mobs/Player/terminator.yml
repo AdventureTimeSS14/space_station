@@ -92,6 +92,9 @@
         Blunt: 10
         Structural: 10
   - type: RandomHumanoidAppearance
+  - type: Prying
+    pryPowered: true
+    force: true
   - type: AutoImplant
     implants:
     - DeathAcidifierImplant
