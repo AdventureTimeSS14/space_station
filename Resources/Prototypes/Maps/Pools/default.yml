@@ -9,7 +9,7 @@
   - Cluster
   - Core
   - Fland
-  - Kettle
+  # - Kettle
   - Marathon
   - Meta
   - Gemini
