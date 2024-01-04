@@ -12,6 +12,10 @@
             "directions": 4
         },
         {
+            "name": "glow",
+            "directions": 4
+        },
+        {
             "name": "off",
             "directions": 4,
             "delays": [

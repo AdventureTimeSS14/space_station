@@ -247,6 +247,12 @@
     },
     {
       "name": "paper_stamp-generic"
-    }
+    },
+      {
+          "name": "stamp-iaa"
+      },
+      {
+          "name": "stamp-psychologist"
+      }
   ]
 }
