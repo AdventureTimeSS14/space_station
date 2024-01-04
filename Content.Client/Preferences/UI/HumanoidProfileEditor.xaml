@@ -153,6 +153,9 @@
         </BoxContainer>
         <!-- Right side -->
         <BoxContainer Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True" VerticalAlignment="Center">
+            <BoxContainer Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 5">
+                <Label Name="CSponsors" Text="{Loc 'humanoid-profile-editor-sponsor-label'}" Visible="False" />
+            </BoxContainer>
             <SpriteView Name="CSpriteView" Scale="8 8" SizeFlagsStretchRatio="1" />
             <BoxContainer Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 5">
                 <Button Name="CSpriteRotateLeft" Text="◀" StyleClasses="OpenRight" />

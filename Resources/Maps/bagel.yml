@@ -59741,13 +59741,6 @@ entities:
     - pos: -10.308835,13.564301
       parent: 60
       type: Transform
-- proto: ClothingNeckLGBTPin
-  entities:
-  - uid: 7174
-    components:
-    - pos: -11.221505,22.789167
-      parent: 60
-      type: Transform
 - proto: ClothingNeckMantleCMO
   entities:
   - uid: 17463
@@ -108588,13 +108581,6 @@ entities:
   - uid: 6674
     components:
     - pos: 21.334734,-11.3924055
-      parent: 60
-      type: Transform
-- proto: LGBTQHandyFlag
-  entities:
-  - uid: 9548
-    components:
-    - pos: -41.49743,-36.512333
       parent: 60
       type: Transform
 - proto: LightBulb
