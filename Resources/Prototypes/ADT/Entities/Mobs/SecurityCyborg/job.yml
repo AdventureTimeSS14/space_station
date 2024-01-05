@@ -8,14 +8,14 @@
       time: 216000 #60 hrs
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 36000
+      time: 46000
     - !type:RoleTimeRequirement
       role: JobWarden
       time: 21600 #6 hrs
   icon: "JobADTIconSecurityCyborg"
   supervisors: job-supervisors-rd
   jobEntity: ADTMobCyborSecurity
-  #startingGear: ADTSecurityCyborgGear
+  startingGear: ADTSecurityCyborgGear
   canBeAntag: false
   access:
   - Security
@@ -56,8 +56,8 @@
     back: ClothingBackpackSecurityFilled
     id: SecurityPDA
     belt: ClothingBeltSecurityFilled
-    pocket1: WeaponPistolMk58Nonlethal
-    #pocket2:
-    #neck: # ADTClothingNeckSecBadge # армейский жетон
+    pocket1: ADtWeaponSecCyborg
+    pocket2: WeaponDisabler
+    #neck: ADTClothingNeckSecBadge # армейский жетон
   satchel: ClothingBackpackSatchelSecurityFilled
   duffelbag: ClothingBackpackDuffelSecurityFilled

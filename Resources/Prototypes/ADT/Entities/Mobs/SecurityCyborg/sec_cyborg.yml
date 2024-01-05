@@ -4,6 +4,16 @@
   name: Security Cyborg
   description: A cyborg designed to quell any unrest. Mechanized heavy power.
   components:
+  - type: SuitSensor
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    transmitFrequencyId: SuitSensor
+  - type: WirelessNetworkConnection
+    range: 1200
+  - type: StationLimitedNetwork
+  - type: Loadout
+    prototypes:
+      - ADTSecurityCyborgGear
   - type: SiliconEmitSoundOnDrained
     sound: "/Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg"
     interval: 15
@@ -84,7 +94,7 @@
   - type: ShowSecurityIcons
   - type: SiliconLawBound
   - type: SiliconLawProvider
-    laws: Drone
+    laws: SecCybLaw
   # - type: EmagSiliconLaw
   #   stunTime: 5
   #   emagLaws: SyndicateStatic
@@ -95,6 +105,19 @@
       key_slots:
       - EncryptionKeySecurity
       - EncryptionKeyCommon
+  - type: AutoImplant
+    implants:
+    - TrackingImplant
+  # - type: InnateTool
+  #   tools:
+  #     - id: WeaponDisabler
+  - type: RandomMetadata
+    nameSegments: [names_sec_cyb]
+  - type: Damageable
+    damageModifierSet: ADTSecurityCybDamagModSet
+
+
+
 
 - type: entity
   save: false
@@ -109,4 +132,29 @@
   - type: Inventory
     templateId: ADTCyborgSecInventory
 
+- type: damageModifierSet
+  id: ADTSecurityCybDamagModSet
+  coefficients:
+    Blunt: 0.5
+    Slash: 0.5
+    Piercing: 0.3
+    # fire and lasers burn it good
+    Heat: 1.0
+    # zap
+    Shock: 0.9
+    Cold: 0.05
+    Caustic: 0.25
 
+- type: dataset
+  id: names_sec_cyb
+  values:
+  - Cyber-653
+  - Steelbot-057
+  - TechnoGuard-435
+  - RoboShield-452
+  - MechSec-453
+  - CircuitDefender-856
+  - CyberSentry-469
+  - SteelSafeguard-347
+  - MechProtector-231
+  - TechnoWarden-467

@@ -1,0 +1,184 @@
+- type: entity
+  name: cyborg pistol
+  parent: WeaponAntiqueLaser
+  id: ADtWeaponSecCyborg
+  description: A small, easily concealable, but somewhat underpowered gun. Retrofitted with a fully automatic receiver. Uses .35 auto ammo.
+  components:
+  - type: Item
+    size: Small
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 40
+  - type: Sprite
+    sprite: ADT/Mobs/Silicon/Cyborg/cyb_gun.rsi
+    scale: 0.9, 0.9
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      visible: false
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Appearance
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: false
+  - type: Clothing
+    sprite: ADT/Mobs/Silicon/Cyborg/cyb_gun.rsi
+  - type: Gun
+    fireRate: 1.5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: HitscanBatteryAmmoProvider
+    proto: ADTPulseGreen
+    fireCost: 200
+  - type: Battery
+    maxCharge: 2220
+    startingCharge: 2220
+
+
+
+# - type: entity
+#   name: pulse pistol
+#   parent: BaseWeaponBatterySmall
+#   id: WeaponPulsePistol
+#   description: A state of the art energy pistol favoured as a sidearm by the NT-ERT operatives.
+#   components:
+#   - type: Sprite
+#     sprite: Objects/Weapons/Guns/Battery/pulse_pistol.rsi
+#     layers:
+#     - state: base
+#       map: ["enum.GunVisualLayers.Base"]
+#     - state: mag-unshaded-4
+#       map: ["enum.GunVisualLayers.MagUnshaded"]
+#       shader: unshaded
+#   - type: Clothing
+#     sprite: Objects/Weapons/Guns/Battery/pulse_pistol.rsi
+#   - type: Gun
+#     selectedMode: SemiAuto
+#     availableModes:
+#     - SemiAuto
+#     soundGunshot:
+#       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+#   - type: HitscanBatteryAmmoProvider
+#     proto: Pulse
+#     fireCost: 200
+#   - type: Battery
+#     maxCharge: 2000
+#     startingCharge: 2000
+
+# - type: entity
+#   name: laser cannon
+#   parent: BaseWeaponBattery
+#   id: WeaponLaserCannon
+#   description: A heavy duty, high powered laser weapon.
+#   components:
+#   - type: Sprite
+#     sprite: Objects/Weapons/Guns/Battery/laser_cannon.rsi
+#     layers:
+#     - state: base
+#       map: ["enum.GunVisualLayers.Base"]
+#     - state: mag-unshaded-4
+#       map: ["enum.GunVisualLayers.MagUnshaded"]
+#       shader: unshaded
+#   - type: Clothing
+#     sprite: Objects/Weapons/Guns/Battery/laser_cannon.rsi
+#   - type: Gun
+#     fireRate: 1.5
+#     soundGunshot:
+#       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+#   - type: HitscanBatteryAmmoProvider
+#     proto: RedHeavyLaser
+#     fireCost: 100
+
+# - type: entity
+#   name: antique laser pistol
+#   parent: BaseWeaponBatterySmall
+#   id: WeaponAntiqueLaser
+#   description: This is an antique laser pistol. All craftsmanship is of the highest quality. It is decorated with assistant leather and chrome. The object menaces with spikes of energy.
+#   components:
+#   - type: Sprite
+#     sprite: Objects/Weapons/Guns/Battery/antiquelasergun.rsi
+#     layers:
+#     - state: base
+#       map: ["enum.GunVisualLayers.Base"]
+#     - state: mag-unshaded-4
+#       map: ["enum.GunVisualLayers.MagUnshaded"]
+#       shader: unshaded
+#   - type: Clothing
+#     sprite: Objects/Weapons/Guns/Battery/antiquelasergun.rsi
+#   - type: Gun
+#     soundGunshot:
+#       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+#   - type: HitscanBatteryAmmoProvider
+#     proto: RedMediumLaser
+#     fireCost: 100
+#   - type: BatterySelfRecharger
+#     autoRecharge: true
+#     autoRechargeRate: 40
+#   - type: MagazineVisuals
+#     magState: mag
+#     steps: 5
+#     zeroVisible: true
+#   - type: Appearance
+
+# - type: entity
+#   name: X-01 multiphas laser pistol
+#   parent: BaseWeaponBatterySmall
+#   id: ADTWeaponPistolX01
+#   description: new version of antique gun witout selfrcharge
+#   components:
+#   - type: Sprite
+#     sprite: ADT/Objects/Weapons/Guns/Battery/xyecoc.rsi
+#     layers:
+#     - state: base
+#       map: ["enum.GunVisualLayers.Base"]
+#     - state: mag-unshaded-4
+#       visible: false
+#       map: ["enum.GunVisualLayers.MagUnshaded"]
+#       shader: unshaded
+#   - type: Appearance
+#   - type: MagazineVisuals
+#     magState: mag
+#     steps: 5
+#     zeroVisible: false
+#   - type: Clothing
+#     sprite: ADT/Objects/Weapons/Guns/Battery/xyecoc.rsi
+#   - type: Gun
+#     fireRate: 1.5
+#     soundGunshot:
+#       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+#   - type: ProjectileBatteryAmmoProvider
+#     proto: BulletDisabler
+#     fireCost: 60
+#   - type: BatteryWeaponFireModes
+#     fireModes:
+#     - proto: BulletDisabler
+#       fireCost: 60
+#     - proto: BulletTaser
+#       fireCost: 148
+#     - proto: ADTBulletLaser
+#       fireCost: 111
+#   - type: Battery
+#     maxCharge: 2220
+#     startingCharge: 2220
+
+
+- type: hitscan
+  id: ADTPulseGreen
+  damage:
+    types:
+      Heat: 30
+  muzzleFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: muzzle_xray
+  travelFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: xray
+  impactFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: impact_xray
