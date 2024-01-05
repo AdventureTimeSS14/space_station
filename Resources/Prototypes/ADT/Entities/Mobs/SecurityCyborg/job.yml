@@ -12,7 +12,7 @@
     - !type:RoleTimeRequirement
       role: JobWarden
       time: 21600 #6 hrs
-  icon: JobIconBorg # JobIconADTInvestigator
+  icon: "JobIconADTSecurityCyborg"
   supervisors: job-supervisors-rd
   jobEntity: ADTMobCyborSecurity
   #startingGear: ADTSecurityCyborgGear
@@ -43,12 +43,12 @@
     - sprite: Mobs/Silicon/chassis.rsi
       state: engineer_e
 
-# - type: statusIcon
-#   parent: JobIcon
-#   id: JobIconADTInvestigator
-#   icon:
-#     sprite: Interface/Misc/job_icons.rsi
-#     state: JobIconADTInvestigator
+- type: statusIcon
+  parent: JobIcon
+  id: JobADTIconSecurityCyborg
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: JobADTIconSecurityCyborg
 
 - type: startingGear
   id: ADTSecurityCyborgGear
