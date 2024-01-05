@@ -667,6 +667,8 @@
           type: HumanoidMarkingModifierBoundUserInterface
         - key: enum.StrippingUiKey.Key
           type: StrippableBoundUserInterface
+        - key: enum.SiliconLawsUiKey.Key
+          type: SiliconLawBoundUserInterface
     - type: Emoting
     - type: Grammar
       attributes:
@@ -697,7 +699,7 @@
       damage:
         types:
           Blunt: 9 # It's tough.
-          Structural: 4
+          Structural: 7
     - type: MobPrice
       price: 1500 # Kidnapping a living person and selling them for cred is a good move.
       deathPenalty: 0.01 # However they really ought to be living and intact, otherwise they're worth 100x less.
@@ -912,7 +914,7 @@
     thresholds:
       0: Alive
       125: Critical
-      180: Dead
+      200: Dead
     allowRevives: true # Для воскрешения достаточно починить урон. - ss220.
   - type: NpcFactionMember
     factions:
@@ -967,6 +969,26 @@
   - type: SSDIndicator
   - type: UnblockableSpeech
   - type: EmotePanel
+  - type: ContentEye
+    maxZoom: 1.0,1.0
+  # - type: Loadout
+  #   prototypes: [ ADTSecurityCyborgGear ]
+  # - type: NpcFactionMember
+  #   factions:
+  #   - NanoTrasen
+  # - type: ActivatableUIRequiresLock
+  - type: ShowSecurityIcons
+  - type: SiliconLawBound
+  # - type: EmagSiliconLaw
+  #   stunTime: 5
+  #   emagLaws: SyndicateStatic
+  # - type: IonStormTarget
+  # - type: BorgChassis
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySecurity
+      - EncryptionKeyCommon
 
 
 - type: entity
@@ -999,7 +1021,7 @@
   icon: JobIconBorg # JobIconADTInvestigator
   supervisors: job-supervisors-rd
   jobEntity: ADTMobCyborSecurity
-  startingGear: ADTSecurityCyborgGear
+  #startingGear: ADTSecurityCyborgGear
   canBeAntag: false
   access:
   - Security
