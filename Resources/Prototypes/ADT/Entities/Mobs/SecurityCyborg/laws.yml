@@ -1,0 +1,22 @@
+# #Drone
+# - type: siliconLaw
+#   id: Drone1
+#   order: 1
+#   lawString: law-drone-1
+
+# - type: siliconLaw
+#   id: Drone2
+#   order: 2
+#   lawString: law-drone-2
+
+# - type: siliconLaw
+#   id: Drone3
+#   order: 3
+#   lawString: law-drone-3
+
+# - type: siliconLawset
+#   id: Drone
+#   laws:
+#   - Drone1
+#   - Drone2
+#   - Drone3

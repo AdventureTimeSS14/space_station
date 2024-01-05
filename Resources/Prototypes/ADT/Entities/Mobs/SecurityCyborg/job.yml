@@ -12,7 +12,7 @@
     - !type:RoleTimeRequirement
       role: JobWarden
       time: 21600 #6 hrs
-  icon: "JobIconADTSecurityCyborg"
+  icon: "JobADTIconSecurityCyborg"
   supervisors: job-supervisors-rd
   jobEntity: ADTMobCyborSecurity
   #startingGear: ADTSecurityCyborgGear
