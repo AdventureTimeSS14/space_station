@@ -1,0 +1,63 @@
+- type: job
+  id: ADTSecurityCyborg
+  name: JobADTSecurityCyborg
+  description: job-description-security-cyborg
+  playTimeTracker: JobSecurityCyborg
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 216000 #60 hrs
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 36000
+    - !type:RoleTimeRequirement
+      role: JobWarden
+      time: 21600 #6 hrs
+  icon: JobIconBorg # JobIconADTInvestigator
+  supervisors: job-supervisors-rd
+  jobEntity: ADTMobCyborSecurity
+  #startingGear: ADTSecurityCyborgGear
+  canBeAntag: false
+  access:
+  - Security
+  - Brig
+  - Maintenance
+  - Service
+  - Detective
+  - Investigator
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+
+- type: entity
+  id: ADTSpawnPointSecurityCyborg
+  parent: ADTSpawnPointJobBase
+  name: SecurityCyborg
+  components:
+  - type: SpawnPoint
+    job_id: ADTSecurityCyborg
+  - type: Sprite       # Потом подправить
+    layers:
+    - state: green
+    - sprite: Mobs/Silicon/chassis.rsi
+      state: engineer
+    - sprite: Mobs/Silicon/chassis.rsi
+      state: engineer_e
+
+# - type: statusIcon
+#   parent: JobIcon
+#   id: JobIconADTInvestigator
+#   icon:
+#     sprite: Interface/Misc/job_icons.rsi
+#     state: JobIconADTInvestigator
+
+- type: startingGear
+  id: ADTSecurityCyborgGear
+  equipment:
+    back: ClothingBackpackSecurityFilled
+    id: SecurityPDA
+    belt: ClothingBeltSecurityFilled
+    pocket1: WeaponPistolMk58Nonlethal
+    #pocket2:
+    #neck: # ADTClothingNeckSecBadge # армейский жетон
+  satchel: ClothingBackpackSatchelSecurityFilled
+  duffelbag: ClothingBackpackDuffelSecurityFilled
