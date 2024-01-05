@@ -10,12 +10,17 @@
       department: Security
       time: 46000
     - !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 21600 #6 hrs
+    - !type:RoleTimeRequirement
       role: JobWarden
       time: 21600 #6 hrs
+    - !type:RoleTimeRequirement
+      role: JobDetective
+      time: 7200 #2 hrs
   icon: "JobADTIconSecurityCyborg"
   supervisors: job-supervisors-rd
   jobEntity: ADTMobCyborSecurity
-  startingGear: ADTSecurityCyborgGear
   canBeAntag: false
   access:
   - Security
@@ -54,7 +59,7 @@
   id: ADTSecurityCyborgGear
   equipment:
     suitstorage: ADTGunRifleFNFAL  #ADTMagazineRifleFNFAL
-    back: ClothingBackpackSecurityFilled
+    back: ADTClothingBackpackSecurityCyb
     id: SecurityPDA
     belt: ClothingBeltSecurityFilled
     pocket1: ADtWeaponSecCyborg
