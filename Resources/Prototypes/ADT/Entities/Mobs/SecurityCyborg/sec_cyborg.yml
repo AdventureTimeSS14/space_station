@@ -85,12 +85,6 @@
   - type: EmotePanel
   - type: ContentEye
     maxZoom: 1.0,1.0
-  # - type: Loadout
-  #   prototypes: [ ADTSecurityCyborgGear ]
-  # - type: NpcFactionMember
-  #   factions:
-  #   - NanoTrasen
-  # - type: ActivatableUIRequiresLock
   - type: ShowSecurityIcons
   - type: SiliconLawBound
   - type: SiliconLawProvider
@@ -108,16 +102,10 @@
   - type: AutoImplant
     implants:
     - TrackingImplant
-  # - type: InnateTool
-  #   tools:
-  #     - id: WeaponDisabler
   - type: RandomMetadata
     nameSegments: [names_sec_cyb]
   - type: Damageable
     damageModifierSet: ADTSecurityCybDamagModSet
-
-
-
 
 - type: entity
   save: false
@@ -131,30 +119,3 @@
     species: ADTCyborgSpecies
   - type: Inventory
     templateId: ADTCyborgSecInventory
-
-- type: damageModifierSet
-  id: ADTSecurityCybDamagModSet
-  coefficients:
-    Blunt: 0.5
-    Slash: 0.5
-    Piercing: 0.3
-    # fire and lasers burn it good
-    Heat: 1.0
-    # zap
-    Shock: 0.9
-    Cold: 0.05
-    Caustic: 0.25
-
-- type: dataset
-  id: names_sec_cyb
-  values:
-  - Cyber-653
-  - Steelbot-057
-  - TechnoGuard-435
-  - RoboShield-452
-  - MechSec-453
-  - CircuitDefender-856
-  - CyberSentry-469
-  - SteelSafeguard-347
-  - MechProtector-231
-  - TechnoWarden-467

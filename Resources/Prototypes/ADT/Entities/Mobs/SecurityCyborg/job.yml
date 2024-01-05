@@ -53,6 +53,7 @@
 - type: startingGear
   id: ADTSecurityCyborgGear
   equipment:
+    suitstorage: ADTGunRifleFNFAL  #ADTMagazineRifleFNFAL
     back: ClothingBackpackSecurityFilled
     id: SecurityPDA
     belt: ClothingBeltSecurityFilled

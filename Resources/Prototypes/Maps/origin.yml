@@ -79,3 +79,4 @@
             ADTMedicalBorg: [ 1, 1 ] #ADT
             ADTServiseBorg: [ 1, 1 ] #ADT
             ADTSupplyBorg: [ 1, 1 ] #ADT
+            ADTSecurityCyborg: [ 1, 1 ] #ADT
