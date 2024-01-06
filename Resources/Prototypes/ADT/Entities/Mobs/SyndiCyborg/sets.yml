@@ -1,0 +1,229 @@
+- type: entity
+  id: ADTBorgToolbox
+  name: Borg Toolbox
+  description: This is where your favorite thief's supplies lie. Try to remember which ones.
+  parent: BaseItem
+  components:
+  - type: Sprite
+    sprite: Objects/Tools/Toolboxes/toolbox_thief.rsi
+    state: icon
+  - type: ThiefUndeterminedBackpack
+    transformAfterSelect: AlwaysPoweredWallLight
+    possibleSets:
+    - ADTBorgSetADTBorgModuleSyndicateRangeweapon
+    - ADTBorgSetADTBorgModuleSyndicateEnergySword
+    - ADTBorgSetADTBorgModuleSyndicateSyndicateJawsOfLife
+    - ADTBorgSetADTBorgModuleSyndicatePinpointerNuclear
+    - ADTBorgSetBorgModuleCable
+    - ADTBorgSetBorgModuleFireExtinguisher
+    - ADTBorgSetBorgModuleGPS
+    - ADTBorgSetBorgModuleRadiationDetection
+    - ADTBorgSetBorgModuleTool
+    - ADTBorgSetBorgModuleAppraisal
+    - ADTBorgSetBorgModuleMining
+    - ADTBorgSetBorgModuleGrapplingGun
+    - ADTBorgSetBorgModuleAdvancedTool
+    - ADTBorgSetBorgModuleGasAnalyzer
+    - ADTBorgSetBorgModuleConstruction
+    - ADTBorgSetBorgModuleRCD
+    - ADTBorgSetBorgModuleDiagnosis
+    - ADTBorgSetBorgModuleTreatment
+    - ADTBorgSetBorgModuleDefibrillator
+  - type: ActivatableUI
+    key: enum.ThiefBackpackUIKey.Key
+  - type: UserInterface
+    interfaces:
+      - key: enum.ThiefBackpackUIKey.Key
+        type: ThiefBackpackBoundUserInterface
+#
+- type: thiefBackpackSet
+  id: ADTBorgSetBorgModuleCable
+  name: adt-borg-set-BorgModuleCable
+  description: adt-borg-set-description-BorgModuleCable
+  sprite:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: generic
+  content:
+  - BorgModuleCable
+
+- type: thiefBackpackSet
+  id: ADTBorgSetBorgModuleFireExtinguisher
+  name: adt-borg-set-BorgModuleFireExtinguisher
+  description: adt-borg-set-description-BorgModuleFireExtinguisher
+  sprite:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: generic
+  content:
+  - BorgModuleFireExtinguisher
+
+- type: thiefBackpackSet
+  id: ADTBorgSetBorgModuleGPS
+  name: adt-borg-set-BorgModuleGPS
+  description: adt-borg-set-description-BorgModuleGPS
+  sprite:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: generic
+  content:
+  - BorgModuleGPS
+
+- type: thiefBackpackSet
+  id: ADTBorgSetBorgModuleRadiationDetection
+  name: adt-borg-set-BorgModuleRadiationDetection
+  description: adt-borg-set-description-BorgModuleRadiationDetection
+  sprite:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: generic
+  content:
+  - BorgModuleRadiationDetection
+
+- type: thiefBackpackSet
+  id: ADTBorgSetBorgModuleTool
+  name: adt-borg-set-BorgModuleTool
+  description: adt-borg-set-description-BorgModuleTool
+  sprite:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: generic
+  content:
+  - BorgModuleTool
+#cargo
+- type: thiefBackpackSet
+  id: ADTBorgSetBorgModuleAppraisal
+  name: adt-borg-set-BorgModuleAppraisal
+  description: adt-borg-set-description-BorgModuleAppraisal
+  sprite:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: cargo
+  content:
+  - BorgModuleAppraisal
+
+- type: thiefBackpackSet
+  id: ADTBorgSetBorgModuleMining
+  name: adt-borg-set-BorgModuleMining
+  description: adt-borg-set-description-BorgModuleMining
+  sprite:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: cargo
+  content:
+  - BorgModuleMining
+
+- type: thiefBackpackSet
+  id: ADTBorgSetBorgModuleGrapplingGun
+  name: adt-borg-set-BorgModuleGrapplingGun
+  description: adt-borg-set-description-BorgModuleGrapplingGun
+  sprite:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: cargo
+  content:
+  - BorgModuleGrapplingGun
+#engineering
+- type: thiefBackpackSet
+  id: ADTBorgSetBorgModuleAdvancedTool
+  name: adt-borg-set-BorgModuleAdvancedTool
+  description: adt-borg-set-description-BorgModuleAdvancedTool
+  sprite:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: engineering
+  content:
+  - BorgModuleAdvancedTool
+
+- type: thiefBackpackSet
+  id: ADTBorgSetBorgModuleGasAnalyzer
+  name: adt-borg-set-BorgModuleGasAnalyzer
+  description: adt-borg-set-description-BorgModuleGasAnalyzer
+  sprite:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: engineering
+  content:
+  - BorgModuleGasAnalyzer
+
+- type: thiefBackpackSet
+  id: ADTBorgSetBorgModuleConstruction
+  name: adt-borg-set-BorgModuleConstruction
+  description: adt-borg-set-description-BorgModuleConstruction
+  sprite:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: engineering
+  content:
+  - BorgModuleConstruction
+
+- type: thiefBackpackSet
+  id: ADTBorgSetBorgModuleRCD
+  name: adt-borg-set-BorgModuleRCD
+  description: adt-borg-set-description-BorgModuleRCD
+  sprite:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: engineering
+  content:
+  - BorgModuleRCD
+#medical
+- type: thiefBackpackSet
+  id: ADTBorgSetBorgModuleDiagnosis
+  name: adt-borg-set-BorgModuleDiagnosis
+  description: adt-borg-set-description-BorgModuleDiagnosis
+  sprite:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: medical
+  content:
+  - BorgModuleDiagnosis
+
+- type: thiefBackpackSet
+  id: ADTBorgSetBorgModuleTreatment
+  name: adt-borg-set-BorgModuleTreatment
+  description: adt-borg-set-description-BorgModuleTreatment
+  sprite:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: medical
+  content:
+  - BorgModuleTreatment
+
+- type: thiefBackpackSet
+  id: ADTBorgSetBorgModuleDefibrillator
+  name: adt-borg-set-BorgModuleDefibrillator
+  description: adt-borg-set-description-BorgModuleDefibrillator
+  sprite:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: medical
+  content:
+  - BorgModuleDefibrillator
+
+#s
+- type: thiefBackpackSet
+  id: ADTBorgSetADTBorgModuleSyndicateRangeweapon
+  name: adt-borg-set-ADTBorgModuleSyndicateRangeweapon
+  description: adt-borg-set-description-ADTBorgModuleSyndicateRangeweapon
+  sprite:
+    sprite: ADT/Objects/Specific/nukeborg.rsi
+    state: nukeops
+  content:
+  - ADTBorgModuleSyndicateRangeweapon
+
+- type: thiefBackpackSet
+  id: ADTBorgSetADTBorgModuleSyndicateEnergySword
+  name: adt-borg-set-ADTBorgModuleSyndicateEnergySword
+  description: adt-borg-set-description-ADTBorgModuleSyndicateEnergySword
+  sprite:
+    sprite: ADT/Objects/Specific/nukeborg.rsi
+    state: nukeops
+  content:
+  - ADTBorgModuleSyndicateEnergySword
+
+- type: thiefBackpackSet
+  id: ADTBorgSetADTBorgModuleSyndicateSyndicateJawsOfLife
+  name: adt-borg-set-ADTBorgModuleSyndicateSyndicateJawsOfLife
+  description: adt-borg-set-description-ADTBorgModuleSyndicateSyndicateJawsOfLife
+  sprite:
+    sprite: ADT/Objects/Specific/nukeborg.rsi
+    state: nukeops
+  content:
+  - ADTBorgModuleSyndicateSyndicateJawsOfLife
+
+- type: thiefBackpackSet
+  id: ADTBorgSetADTBorgModuleSyndicatePinpointerNuclear
+  name: adt-borg-set-ADTBorgModuleSyndicatePinpointerNuclear
+  description: adt-borg-set-description-ADTBorgModuleSyndicatePinpointerNuclear
+  sprite:
+    sprite: ADT/Objects/Specific/nukeborg.rsi
+    state: nukeops
+  content:
+  - ADTBorgModuleSyndicatePinpointerNuclear
+

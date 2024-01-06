@@ -1,0 +1,64 @@
+- type: entity
+  id: ADTBorgChassisBloodhound
+  parent: ADTBaseBorgChassisSyndicate
+  name: bloodhound
+  components:
+  - type: Sprite
+    sprite: ADT/Mobs/Silicon/Bots/bloodhound.rsi
+    layers:
+    - state: bloodhound
+    - state: bloodhounde
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: bloodhounder
+      shader: unshaded
+      visible: false
+  - type: BorgChassis
+    hasMindState: bloodhounde
+    noMindState: bloodhounder
+  - type: Construction
+    node: engineer
+  - type: Inventory
+    templateId: borgTall
+
+- type: entity
+  id: ADTBorgChassisBloodhoundBattery
+  parent: ADTBorgChassisBloodhound
+  suffix: Battery
+  components:
+  - type: ContainerFill
+    containers:
+      borg_brain:
+      - ADTMMIFilledBloodhoundGhost
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHigh
+
+- type: entity
+  parent: MMI
+  id: ADTMMIFilledBloodhoundGhost
+  suffix: Filled
+  components:
+  - type: ItemSlots
+    slots:
+      brain_slot:
+        name: "Brain"
+        startingItem: ADTOrganHumanBrainBloodhoundGhost
+        whitelist:
+          components:
+            - Brain
+
+- type: entity
+  id: ADTOrganHumanBrainBloodhoundGhost
+  parent: OrganHumanBrain
+  components:
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: adt-ghost-role-information-bloodhound-name
+    description: adt-ghost-role-information-bloodhound-desc
+  - type: GhostTakeoverAvailable

@@ -1,0 +1,68 @@
+- type: Tag
+  id: ADTBorgModuleSyndicate
+
+- type: entity
+  id: ADTBaseBorgModuleSyndicate
+  parent: BaseBorgModule
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - ADTBorgModuleSyndicate
+
+- type: entity
+  id: ADTBorgModuleSyndicatePinpointerNuclear
+  parent: [ ADTBaseBorgModuleSyndicate, BaseProviderBorgModule ]
+  name: PinpointerNuclear
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/nukeborg.rsi
+    layers:
+    - state: nukeops
+    - state: icon-pinpointed
+  - type: ItemBorgModule
+    items:
+    - PinpointerNuclear
+
+- type: entity
+  id: ADTBorgModuleSyndicateEnergySword
+  parent: [ ADTBaseBorgModuleSyndicate, BaseProviderBorgModule ]
+  name: EnergySword
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/nukeborg.rsi
+    layers:
+    - state: nukeops
+    - state: icon-lasersword
+  - type: ItemBorgModule
+    items:
+    - EnergySword
+    - EnergyShield
+
+- type: entity
+  id: ADTBorgModuleSyndicateSyndicateJawsOfLife
+  parent: [ ADTBaseBorgModuleSyndicate, BaseProviderBorgModule ]
+  name: SyndicateJawsOfLife
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/nukeborg.rsi
+    layers:
+    - state: nukeops
+    - state: icon-hristov
+  - type: ItemBorgModule
+    items:
+    - SyndicateJawsOfLife
+
+- type: entity
+  id: ADTBorgModuleSyndicateRangeweapon
+  parent: [ ADTBaseBorgModuleSyndicate, BaseProviderBorgModule ]
+  name: Rangeweapon
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/nukeborg.rsi
+    layers:
+    - state: nukeops
+    - state: icon-rangeweapon
+  - type: ItemBorgModule
+    items:
+    - ADTBorgItemLaser

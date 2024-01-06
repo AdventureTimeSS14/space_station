@@ -1,0 +1,20 @@
+- type: listing
+  id: UplinkADTBorgChassisBloodhoundBattery
+  name: adt-ghost-role-information-bloodhound-name
+  description: adt-ghost-role-information-bloodhound-desc
+  productEntity: ADTBorgChassisBloodhoundBattery
+  icon: { sprite: ADT/Mobs/Silicon/Bots/bloodhound.rsi, state: bloodhound }
+  cost:
+    Telecrystal: 14
+  categories:
+  - UplinkUtility
+- type: listing
+  id: UplinkADTBorgToolbox
+  name: uplink-ADTBorgToolbox-name
+  description: uplink-ADTBorgToolbox-desc
+  productEntity: ADTBorgToolbox
+  icon: { sprite: Objects/Tools/Toolboxes/toolbox_thief.rsi, state: icon }
+  cost:
+    Telecrystal: 12
+  categories:
+  - UplinkUtility
