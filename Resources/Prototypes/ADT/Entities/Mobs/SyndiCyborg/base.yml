@@ -74,7 +74,6 @@
   - type: SiliconLawBound
   - type: SiliconLawProvider
     laws: SyndicateStatic
-    emagLaws: SyndicateStatic
   - type: IonStormTarget
   - type: Strippable
   - type: InventorySlots
