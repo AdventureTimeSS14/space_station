@@ -267,6 +267,7 @@
     - Cutlet
     - Fish
   - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/fish.rsi
     state: fishcutlet
   - type: SolutionContainerManager
     solutions:
@@ -296,6 +297,7 @@
     - Cooked
     - Fish
   - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/fish.rsi
     layers:
     - state: fishcooked
   - type: SolutionContainerManager
@@ -327,6 +329,7 @@
     - Cutlet
     - Fish
   - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/fish.rsi
     state: fishcutletcooked
   - type: SolutionContainerManager
     solutions:
