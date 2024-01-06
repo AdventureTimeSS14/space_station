@@ -169,7 +169,8 @@
     damageCoefficient: 0.1
   - type: Storage
     maxItemSize: Huge
-    #maxTotalWeight: 50
+    grid:
+    - 0,0,9,4
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 1

@@ -92,6 +92,13 @@
         Blunt: 10
         Structural: 10
   - type: RandomHumanoidAppearance
+  - type: Prying
+    pryPowered: true
+    force: true
+  - type: AutoImplant
+    implants:
+    - DeathAcidifierImplant
+  - type: ZombieImmune
 
 - type: entity
   parent:
@@ -175,9 +182,15 @@
         Structural: 5
   - type: Puller
     needsHands: false
+  - type: Prying
+    pryPowered: true
+    force: true
   - type: Tag
     tags:
     - DoorBumpOpener
     - ShoesRequiredStepTriggerImmune
     # let mind transfer on gib work
     - MindTransferTarget
+  - type: AutoImplant
+    implants:
+    - DeathAcidifierImplant

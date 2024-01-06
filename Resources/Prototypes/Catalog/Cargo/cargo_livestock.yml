@@ -134,7 +134,7 @@
     sprite: Mobs/Animals/mouse.rsi
     state: icon-0
   product: CrateNPCMouse
-  cost: 4400
+  cost: 15000
   category: Livestock
   group: market
 

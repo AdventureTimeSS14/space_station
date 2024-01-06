@@ -249,6 +249,13 @@
   - type: PressureProtection
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
 
 #Chief Engineer's Hardsuit
 - type: entity

@@ -32,4 +32,7 @@
   id: CatWearable
 
 - type: Tag
+  id: PowerCellMedium
+
+- type: Tag
   id: Fish

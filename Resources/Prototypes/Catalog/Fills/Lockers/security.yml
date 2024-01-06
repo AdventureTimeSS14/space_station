@@ -24,7 +24,7 @@
       - id: HoloprojectorSecurity
       - id: ClothingHeadHatCapWardenAlt
       - id: ClothingOuterCoatWardenAlt
-      #- id: ClothingEyesHudSecurity
+      - id: ClothingEyesHudSecurity
 
 
 - type: entity
@@ -52,7 +52,7 @@
       - id: HoloprojectorSecurity
       - id: ClothingHeadHatCapWardenAlt
       - id: ClothingOuterCoatWardenAlt
-      #- id: ClothingEyesHudSecurity
+      - id: ClothingEyesHudSecurity
 
 
 - type: entity

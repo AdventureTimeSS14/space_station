@@ -13,7 +13,7 @@
     size: Normal
   - type: Storage
     grid:
-    - 0,0,10,7
+    - 0,0,5,1
     maxItemSize: Small
     quickInsert: true
     areaInsert: true

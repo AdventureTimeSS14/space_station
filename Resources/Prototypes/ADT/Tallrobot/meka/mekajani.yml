@@ -1,0 +1,55 @@
+- type: entity
+  id: ADTTallRobotMekaJani
+  parent: ADTTallRobotMekaBase
+  name: service cyborg
+  components:
+  - type: Sprite
+    sprite: ADT/Mobs/Silicon/Bots/tallrobot/mekajani.rsi
+    layers:
+    - state: mekajani
+      map: ["enum.DamageStateVisualLayers.Base"]
+    - state: mekajanitipped
+      visible: false
+    - state: mekajanie
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: mekajanier
+      shader: unshaded
+      visible: false
+    - state: mekajanirest
+      visible: false
+  - type: BorgChassis
+    moduleWhitelist:
+      tags:
+      - BorgModuleGeneric
+      - BorgModuleService
+      - BorgModuleJanitor
+    hasMindState: mekajanie
+    noMindState: mekajanier
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: mekajani
+      Critical:
+        Base: mekajanitipped
+      Dead:
+        Base: mekajanitipped
+  - type: Construction
+    node: service
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Service
+    - Binary
+    - Common
+    - Science
+  - type: ActiveRadio
+    channels:
+    - Service
+    - Binary
+    - Common
+    - Science
+  - type: AccessReader
+    access: [["Service"], ["Command"], ["Research"]]
+  - type: Inventory
+    templateId: borgTall
