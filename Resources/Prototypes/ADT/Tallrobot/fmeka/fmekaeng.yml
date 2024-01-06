@@ -1,0 +1,50 @@
+- type: entity
+  id: ADTTallRobotFMekaEng
+  parent: ADTTallRobotFMekaBase
+  name: eng cyborg
+  components:
+  - type: Sprite
+    sprite: ADT/Mobs/Silicon/Bots/tallrobot/fmekaeng.rsi
+    layers:
+    - state: fmekaeng
+      map: ["enum.DamageStateVisualLayers.Base"]
+    - state: fmekaenge
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: fmekaenger
+      shader: unshaded
+      visible: false
+  - type: BorgChassis
+    moduleWhitelist:
+      tags:
+      - BorgModuleGeneric
+      - BorgModuleEngineering
+    hasMindState: fmekaenge
+    noMindState: fmekaenger
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: fmekaeng
+      Critical:
+        Base: fmekaeng-wreck
+      Dead:
+        Base: fmekaeng-wreck
+  - type: Construction
+    node: engineer
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Engineering
+    - Binary
+    - Common
+    - Science
+  - type: ActiveRadio
+    channels:
+    - Engineering
+    - Binary
+    - Common
+    - Science
+  - type: AccessReader
+    access: [["Engineering"], ["Command"], ["Research"]]
+  - type: Inventory
+    templateId: borgTall
