@@ -257,7 +257,7 @@
 
 - type: entity
   name: raw fish cutlet
-  parent: ADTFoodFish
+  parent: FoodMeatBase
   id: ADTFoodFishCutlet
   description: A raw fish cutlet.
   components:
@@ -267,6 +267,7 @@
     - Cutlet
     - Fish
   - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/fish.rsi
     state: fishcutlet
   - type: SolutionContainerManager
     solutions:
@@ -287,7 +288,7 @@
 
 - type: entity
   name: cooked fish
-  parent: ADTFoodFish
+  parent: FoodMeatRawBase
   id: ADTFoodFishCooked
   description: A cooked fish fillet.
   components:
@@ -296,6 +297,7 @@
     - Cooked
     - Fish
   - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/fish.rsi
     layers:
     - state: fishcooked
   - type: SolutionContainerManager
@@ -317,7 +319,7 @@
 
 - type: entity
   name: cooked fish cutlet
-  parent: ADTFoodFish
+  parent: FoodMeatBase
   id: ADTFoodFishCutletCooked
   description: A cooked fish cutlet
   components:
@@ -327,6 +329,7 @@
     - Cutlet
     - Fish
   - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/fish.rsi
     state: fishcutletcooked
   - type: SolutionContainerManager
     solutions:

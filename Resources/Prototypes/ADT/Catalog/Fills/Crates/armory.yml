@@ -31,6 +31,6 @@
   - type: StorageFill
     contents:
       - id: ADTWeaponLasgunSALR36
-        amount: 3
-      - id: ADTPowerCellLasgunEmpty
-        amount: 6
+        amount: 2
+      - id: ADTPowerCellLasgun
+        amount: 4

@@ -19,3 +19,7 @@ ent-SpawnPointGhostDragon = спавнер роли призрак
 ent-SpawnPointGhostSpaceNinja = спавнер роли призрак
     .suffix = Космический ниндзя
     .desc = { ent-MarkerBase.desc }
+
+ent-SpawnPointGhostTerminator = спавнер терминатора
+    .suffix = Терминатор
+    .desc = { ent-MarkerBase.desc }

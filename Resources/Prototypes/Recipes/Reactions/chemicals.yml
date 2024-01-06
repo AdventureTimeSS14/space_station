@@ -80,7 +80,7 @@
       amount: 1
     Sulfur:
       amount: 1
-    Oxygen: 
+    Oxygen:
       amount: 2
   products:
     SulfuricAcid: 3
@@ -311,15 +311,15 @@
   impact: Medium
   reactants:
     Oil:
-      amount: 1
+      amount: 3
     Hydrogen:
       amount: 1
     Sugar:
-      amount: 1
+      amount: 2
     Diethylamine:
-     amount: 1
+     amount: 4
   products:
-    Ephedrine: 4
+    Ephedrine: 9
 
 - type: reaction
   id: MuteToxin

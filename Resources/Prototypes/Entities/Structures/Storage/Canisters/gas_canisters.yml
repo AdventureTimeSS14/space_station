@@ -97,7 +97,7 @@
           components:
             - GasTank
     - type: StaticPrice
-      price: 1000
+      price: 100
     - type: AccessReader
       access: [["Atmospherics"], ["ResearchDirector"]]
     - type: Lock

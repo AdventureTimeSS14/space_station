@@ -164,9 +164,9 @@
       global: true
       canShuttle: false
       sound:
-        path: /Audio/Announcements/attention.ogg
+        path: /Audio/NES/StationEvents/ERTincoming.ogg
         params:
-          volume: -4
+          volume: -10
 
 - type: entity
   id: NesBaseBigStructure
