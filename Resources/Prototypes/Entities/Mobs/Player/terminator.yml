@@ -92,6 +92,9 @@
         Blunt: 10
         Structural: 10
   - type: RandomHumanoidAppearance
+  - type: Prying
+    pryPowered: true
+    force: true
   - type: AutoImplant
     implants:
     - DeathAcidifierImplant
@@ -179,6 +182,9 @@
         Structural: 5
   - type: Puller
     needsHands: false
+  - type: Prying
+    pryPowered: true
+    force: true
   - type: Tag
     tags:
     - DoorBumpOpener
