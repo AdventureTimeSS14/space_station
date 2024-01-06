@@ -257,7 +257,7 @@
 
 - type: entity
   name: raw fish cutlet
-  parent: ADTFoodFish
+  parent: FoodMeatBase
   id: ADTFoodFishCutlet
   description: A raw fish cutlet.
   components:
@@ -287,7 +287,7 @@
 
 - type: entity
   name: cooked fish
-  parent: ADTFoodFish
+  parent: FoodMeatRawBase
   id: ADTFoodFishCooked
   description: A cooked fish fillet.
   components:
@@ -317,7 +317,7 @@
 
 - type: entity
   name: cooked fish cutlet
-  parent: ADTFoodFish
+  parent: FoodMeatBase
   id: ADTFoodFishCutletCooked
   description: A cooked fish cutlet
   components:
