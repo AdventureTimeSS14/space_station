@@ -73,6 +73,8 @@
   - type: SSDIndicator
   - type: UnblockableSpeech
   - type: EmotePanel
+  - type: ContentEye
+    maxZoom: 1.0,1.0
 
 - type: entity
   save: false
