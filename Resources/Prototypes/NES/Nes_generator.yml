@@ -1,8 +1,9 @@
 - type: entity
   parent: NesBaseBigStructure
+  # parent: BaseStructure
   id: NesGravityGeneratorBroken
-  name: сломаный генератор гравитации #Nes Сломаный грави ген
-  description: Врятле он уже на что-то годится.
+  name: broken gravity generator #Nes Сломаный грави ген
+  description: broken gravity generator
   components:
     - type: Clickable
     - type: InteractionOutline
@@ -29,12 +30,32 @@
                 SheetSteel1:
                   min: 2
                   max: 4
+    - type: Anchorable
+      delay: 6
+    - type: Pullable
+    - type: Construction
+      graph: ADTBrokenGravigen
+      node: adtbrokengravigen
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-1.5,-1.5,1.5,1.5"
+          density: 1000
+          mask:
+          - LargeMobMask
+          layer:
+          - WallLayer
+    - type: Appearance
 
 - type: entity
   id: NesGravityGeneratorCore
   parent: BaseItem
-  name: гравитационное ядро
-  description: То, благодаря чему раньше под вашими ногами был пол, а не потолок.
+  name: gravity generator core
+  description: gravity generator core
   components:
     - type: Sprite
       sprite: NES/GraviCore.rsi
@@ -48,6 +69,8 @@
     - type: Tag
       tags:
       - HighRiskItem
+    - type: StealTarget
+      stealGroup: NesGravityGeneratorCore
 
 - type: entity
   noSpawn: true
@@ -62,7 +85,7 @@
 
 - type: entity
   id: CrateEngineeringGravityGenerator
-  name: ящик с генератором гравитации
+  name: crate with gravity generator
   parent: CrateEngineeringSecure
   components:
   - type: StorageFill

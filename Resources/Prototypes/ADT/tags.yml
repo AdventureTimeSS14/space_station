@@ -30,3 +30,6 @@
 
 - type: Tag
   id: CatWearable
+
+- type: Tag
+  id: PowerCellMedium

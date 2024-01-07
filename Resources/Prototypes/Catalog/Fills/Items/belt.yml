@@ -196,7 +196,7 @@
   components:
   - type: Storage
     grid:
-    - 0,0,10,7
+    - 0,0,3,3
     maxItemSize: Normal
   - type: StorageFill
     contents:

@@ -61,9 +61,9 @@
 - type: storeCategory
   id: UplinkPointless
   name: store-category-pointless
-  priority: 9
+  priority: 10
 
-#revenant
+ #revenant
 - type: storeCategory
   id: RevenantAbilities
   name: store-category-abilities

@@ -1310,13 +1310,13 @@ namespace Content.Shared.CCVar
         /// The map to use for the arrivals station.
         /// </summary>
         public static readonly CVarDef<string> ArrivalsMap =
-            CVarDef.Create("shuttle.arrivals_map", "/Maps/Misc/terminal.yml", CVar.SERVERONLY);
+            CVarDef.Create("shuttle.arrivals_map", "/Maps/Misc/planet_terminal.yml", CVar.SERVERONLY);
 
         /// <summary>
         /// Cooldown between arrivals departures. This should be longer than the FTL time or it will double cycle.
         /// </summary>
         public static readonly CVarDef<float> ArrivalsCooldown =
-            CVarDef.Create("shuttle.arrivals_cooldown", 50f, CVar.SERVERONLY);
+            CVarDef.Create("shuttle.arrivals_cooldown", 30f, CVar.SERVERONLY);
 
         /// <summary>
         /// Are players allowed to return on the arrivals shuttle.

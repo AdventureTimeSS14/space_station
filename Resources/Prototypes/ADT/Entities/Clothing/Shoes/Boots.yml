@@ -141,6 +141,10 @@
     - WhitelistChameleon
   - type: StaticPrice
     price: 7500
+  # - type: ContainerFill
+  #   containers:
+  #     item:
+  #     - CombatKnife
 
 #Pyotr
 
@@ -178,6 +182,10 @@
     - WhitelistChameleon
   - type: StaticPrice
     price: 750
+  - type: ContainerFill
+    # containers:
+    #   item:
+    #   - CombatKnife
 
 - type: entity
   parent: ClothingShoesBaseButcherable

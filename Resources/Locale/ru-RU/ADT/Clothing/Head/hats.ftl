@@ -150,3 +150,7 @@ ent-ADTClothingHeadChristmasFlower = головной цветок
 ent-ADTClothingHeadSecAuditorCap = фуражка аудитора СБ
     .desc = Стандартный головной убор проверяющих работу Службы Безопасности станции со стороны комитета надзора NanoTrasen.
     .suffix = { "ЦК, CombatBibis" }
+
+ent-ClothingHeadHelmetJanitorBombSuit = саперный шлем уборщика
+    .desc = Защитный головной убор на случай, когда уборка становится по-настоящему взрывной.
+    .suffix = { "НЕ МАППЕРИТЬ" }    

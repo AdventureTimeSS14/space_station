@@ -112,3 +112,5 @@ chat-speech-verb-ghost-1 = complains
 chat-speech-verb-ghost-2 = breathes
 chat-speech-verb-ghost-3 = hums
 chat-speech-verb-ghost-4 = mutters
+
+chat-manager-sender-centcomm = Central Command

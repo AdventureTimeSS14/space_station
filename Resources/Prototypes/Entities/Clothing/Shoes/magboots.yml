@@ -116,6 +116,10 @@
   - type: Tag
     tags:
       - WhitelistChameleon
+  # - type: ContainerFill
+  #   containers:
+  #     item:
+  #     - CombatKnife
 
 - type: entity
   id: ActionBaseToggleMagboots

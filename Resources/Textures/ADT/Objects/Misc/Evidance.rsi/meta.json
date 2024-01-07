@@ -9,6 +9,12 @@
     "states": [
         {
             "name": "icon"
+        },
+        {
+            "name": "place_number"
+        },
+        {
+            "name": "place_number2"
         }
     ]
 }
