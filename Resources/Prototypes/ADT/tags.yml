@@ -33,3 +33,6 @@
 
 - type: Tag
   id: PowerCellMedium
+
+- type: Tag
+  id: Fish

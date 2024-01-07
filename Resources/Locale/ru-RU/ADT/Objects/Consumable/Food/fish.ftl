@@ -1,0 +1,10 @@
+ent-ADTFoodFish = Филе рыбы
+    .desc = Филе сырой рыбы
+ent-ADTFoodFishCutlet = Рыбная котлета
+    .desc = Выглядит сырой для употребляния в пищу
+ent-ADTFoodFishCooked = Жареное филе рыбы
+    .desc = Вкусная и полезная жаренная рыба
+ent-ADTFoodFishCutletCooked = Жаренная рыбная котлета
+    .desc = Небольшая рыбная котлета. Пахнет вкусно
+ent-ADTFoodMealSashimi = Сашими
+    .desc = Это сашими сделано из обычной рыбы. Наконец-то нормальная еда.

@@ -51,3 +51,8 @@ ent-ADTFunChristmasTree = ящик с новогодней ёлкой
 ent-ADTCargoChocolateGorilla = ящик с шоколадной гориллой
     .desc = Ящик со статуей гориллы из шоколада. Съедобного шоколада.
 
+ent-ADTCrateFishFreezer = Холодильник с рыбой 
+    .desc = Холодильный ящик с 6 кусочками рыбы и 3 рыбными котлетами
+
+ent-ADTCargoFishCrate = Холодильник с рыбой 
+    .desc = Холодильник с рыбой
