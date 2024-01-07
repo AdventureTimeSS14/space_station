@@ -39,7 +39,7 @@ ent-ADTClothingBackpackDuffelDurathead = дюротканевый вещмешо
 
 
 ent-ADTClothingBackpackMedical = медицинский рюкзак
-    .desc = Рюкзак для хранения медицинского оборудования
+    .desc = Рюкзак для хранения медицинского оборудования.
 
 ent-ADTClothingBackpackDuffelMedical = медицинский вещмешок
     .desc = Вместительный вещмешок для хранения медицинского оборудования.
@@ -49,13 +49,13 @@ ent-ADTClothingBackpackSatchelMedical = медицинская сумка
 
 
 ent-ADTClothingBackpackPathologist = рюкзак патологоанатома
-    .desc = Рюкзак для хранения инструментов и бумаг
+    .desc = Рюкзак для хранения инструментов и бумаг.
 
 ent-ADTClothingBackpackDuffelPathologist = вещмешок патологоанатома
-    .desc = Большой вещмешок для хранения инструментов и бумаг
+    .desc = Большой вещмешок для хранения инструментов и бумаг.
 
 ent-ADTClothingBackpackSatchelPathologist = сумка патологоанатома
-    .desc = Сумка для хранения инструментов и бумаг
+    .desc = Сумка для хранения инструментов и бумаг.
 
 
 ent-ADTClothingBackpackParamedic = рюкзак парамедика
