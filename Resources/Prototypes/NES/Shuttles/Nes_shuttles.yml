@@ -39,7 +39,7 @@
     mode: SnapgridCenter
 
 - type: entity
-  id: NesThrusterRSY
+  id: NesRCS
   name: двигатель РСУ
   parent: [ NesBaseOldThruster, ConstructibleMachine ]
   components:
@@ -63,7 +63,7 @@
       offset: 0, 1
 
 - type: entity
-  id: NesOldThrusterRSY
+  id: NesOldRCS
   name: старый двигатель РСУ
   parent: [ NesBaseOldThruster, ConstructibleMachine ]
   components:
@@ -223,29 +223,11 @@
 - type: entity
   id: NesCombatEmitterSmall
   name: рельсотрон
-  parent: ConstructibleMachine
+  parent: NesCombatEmitter
   description: Рельсотрон, разгоняющий снаряд в стволе до сверх скоростей. Снаряд будучи обычным стержнем на большой скорости может повредить обшивку вражеского корабля.
   placement:
     mode: SnapgridCenter
   components:
-  - type: Clickable
-  - type: InteractionOutline
-  - type: Physics
-    canCollide: false
-    bodyType: Static
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.25,-0.25,0.25,0.25"
-        density: 400
-        mask:
-        - MachineMask
-        layer:
-        - MachineLayer
-  - type: Transform
-    anchored: true
   - type: Sprite
     sprite: NES/Railguns/mini_railgun.rsi
     layers:
@@ -264,39 +246,15 @@
     baseFireInterval: 0.5
     baseFireBurstDelayMax: 1
   - type: Gun
-    showExamineText: false
-    fireRate: 1 #just has to be fast enough to keep up with upgrades
-    selectedMode: FullAuto
-    availableModes:
-      - FullAuto
+    fireRate: 1
     soundGunshot:
       path: /Audio/NES/Canon/Canon2.ogg
-  - type: PowerConsumer
-    voltage: Medium
   - type: NodeContainer
     examinable: true
     nodes:
       input:
         !type:CableDeviceNode
-        nodeGroupID: MVPower
-  - type: Anchorable
-  - type: Pullable
-  - type: Rotatable
-  - type: Appearance
-  - type: Lock
-    locked: true
-  - type: AccessReader
-    access: [['Security']]
-  - type: DeviceNetwork
-    deviceNetId: Wireless
-    receiveFrequencyId: BasicDevice
-  - type: WirelessNetworkConnection
-    range: 200
-  - type: DeviceLinkSink
-    ports:
-      - On
-      - Off
-      - Toggle
+        nodeGroupID: LVPower
 
 - type: entity
   id: NesMiniGyroscope

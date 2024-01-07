@@ -1130,7 +1130,7 @@ entities:
       type: DeviceLinkSource
     - canCollide: False
       type: Physics
-- proto: NesThrusterRSY
+- proto: NesRCS
   entities:
   - uid: 14
     components:
