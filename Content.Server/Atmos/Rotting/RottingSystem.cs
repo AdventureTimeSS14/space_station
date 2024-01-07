@@ -13,6 +13,7 @@ using Robust.Server.Containers;
 using Robust.Server.GameObjects;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Timing;
+using Content.Shared.Atmos.Miasma;
 
 namespace Content.Server.Atmos.Rotting;
 

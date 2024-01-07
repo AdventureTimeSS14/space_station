@@ -481,18 +481,18 @@
         messages: [ "narcotic-effect-visible-miosis" ]
         probability: 0.05
 
-#- type: reagent
-#  id: ADTMRotting
-#  name: Rotting
-#  group: Medicine
-#  desc: Rotting
-#  flavor: bitter
-#  physicalDesc: reagent-physical-desc-opaque
-#  color: "#ad5113"
-#  metabolisms:
-#    Medicine:
-#      effects:
-#        - !type:Embalm
-#          conditions:
-#            - !type:ReagentThreshold
-#              min: 10
+- type: reagent
+  id: ADTMRotting
+  name: Rotting
+  group: Medicine
+  desc: Rotting
+  flavor: bitter
+  physicalDesc: reagent-physical-desc-opaque
+  color: "#ad5113"
+  metabolisms:
+    Medicine:
+      effects:
+        - !type:Embalm
+          conditions:
+            - !type:ReagentThreshold
+              min: 10

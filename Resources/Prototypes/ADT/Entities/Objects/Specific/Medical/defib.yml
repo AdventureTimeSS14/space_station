@@ -50,3 +50,5 @@
   - type: MultiHandedItem
   - type: PowerCellDraw
     useRate: 200 #~3 использования.
+  - type: StealTarget
+    stealGroup: MobileDefibrillator

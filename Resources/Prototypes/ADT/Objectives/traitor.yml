@@ -32,5 +32,6 @@
   - type: NotJobRequirement
     job: ChiefMedicalOfficer
   - type: StealCondition
+    stealGroup: MobileDefibrillator
     prototype: ADTMobileDefibrillator
     owner: job-name-cmo
