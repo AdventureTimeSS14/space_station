@@ -106,6 +106,18 @@
     nameSegments: [names_sec_cyb]
   - type: Damageable
     damageModifierSet: ADTSecurityCybDamagModSet
+  - type: TriggerOnMobstateChange
+    mobState:
+    - Critical
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: SoldierDeath
+  - type: Speech
+    speechSounds: Metrocop
+    soundCooldownTime: 0.5
+  # - type: Speech
+  #   speechSounds: Combine
+  #   soundCooldownTime: 0.1
 
 - type: entity
   save: false
