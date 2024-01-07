@@ -349,7 +349,7 @@
   categories:
   - UplinkJob
   conditions:
-  - !type:BuyerJobCondition
-    whitelist:
-    - Chef
-    - ServiceWorker
+    - !type:BuyerJobCondition
+      whitelist:
+      - Chef
+      - ServiceWorker
