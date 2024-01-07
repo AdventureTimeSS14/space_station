@@ -18,3 +18,21 @@
   - type: Construction
     graph: DuffelDurathead
     node: DuffelDurathead
+
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ADTClothingBackpackDuffelMedical
+  name: medical duffel bag
+  description: A large duffel bag to hold medical equipment
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Duffels/genetics.rsi
+
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ADTClothingBackpackDuffelParamedic
+  name: parsmedical duffel bag
+  description: A large duffel bag to hold paramedical equipment
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Back/paramedic_duffel.rsi
