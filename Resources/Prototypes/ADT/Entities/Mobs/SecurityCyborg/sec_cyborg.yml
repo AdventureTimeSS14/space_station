@@ -81,7 +81,7 @@
     boardName: "ipc-board-name"
     layoutId: ADTBodyCyborgSec
   - type: SSDIndicator
-  - type: UnblockableSpeech
+  #- type: UnblockableSpeech  По идее должен иметь возможность разговаривать после крита, но тоже самое после смерти
   - type: EmotePanel
   - type: ContentEye
     maxZoom: 1.0,1.0

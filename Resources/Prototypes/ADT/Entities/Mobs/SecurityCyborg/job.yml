@@ -5,10 +5,10 @@
   playTimeTracker: JobSecurityCyborg
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 216000 #60 hrs
+      time: 216000000 #60 hrs    216000
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 46000
+      time: 460000000 #46000
     - !type:RoleTimeRequirement
       role: JobSecurityOfficer
       time: 21600 #6 hrs
@@ -63,7 +63,7 @@
     id: SecurityPDA
     belt: ClothingBeltSecurityFilled
     pocket1: ADtWeaponSecCyborg
-    pocket2: WeaponDisabler
+    #pocket2: WeaponDisabler
     #neck: ADTClothingNeckSecBadge # армейский жетон
   satchel: ClothingBackpackSatchelSecurityFilled
   duffelbag: ClothingBackpackDuffelSecurityFilled

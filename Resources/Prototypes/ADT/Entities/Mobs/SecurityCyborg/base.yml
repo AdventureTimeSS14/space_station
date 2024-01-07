@@ -355,7 +355,7 @@
       damageOverlayGroups:
         Brute:
           sprite: Mobs/Effects/brute_damage.rsi
-          color: "#DD8822"
+          color: "#141414"
         # Burn:
         #   sprite: Mobs/Effects/burn_damage.rsi
     # Organs
