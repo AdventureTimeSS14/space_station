@@ -69,3 +69,4 @@
             ADTBlueShieldOfficer: [ 1, 2 ]
             Magistrat: [ 1, 1 ]
             ADTInvestigator: [ 1, 1 ] #ADT
+            ADTSecurityCyborg: [ 1, 1 ] #ADT
