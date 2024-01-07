@@ -1,0 +1,6 @@
+- type: trait
+  id: ColorBlindnessMonochrome
+  name: trait-monochromacy-name
+  description: trait-monochromacy-description
+  components:
+    - type: Monochromacy

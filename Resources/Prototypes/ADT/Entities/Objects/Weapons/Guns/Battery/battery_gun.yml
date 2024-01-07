@@ -45,3 +45,57 @@
     price: 7500
   - type: Item
     size: Normal
+
+- type: entity
+  id: ADTWeaponLasgunSALR36
+  parent: BaseItem
+  name: SA-LR36
+  description: SA-LR36
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Guns/Battery/salr36.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: mag-unshaded-0
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: ADT/Objects/Weapons/Guns/Battery/salr36.rsi
+    slots:
+    - Back
+    - suitStorage
+  #- type: AmmoCounter
+  - type: Gun
+    fireRate: 3.5
+    selectedMode: FullAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+  - type: MagazineAmmoProvider
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: ADTPowerCellLasgun
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        whitelist:
+          tags:
+            - ADTLasgunPowerCell
+  - type: Appearance
+  - type: StaticPrice
+    price: 1000
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true

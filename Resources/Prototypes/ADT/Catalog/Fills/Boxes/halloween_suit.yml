@@ -12,10 +12,13 @@
     #- state: pennywise
   - type: Item
     size: Ginormous
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
   - type: Storage
-    maxItemSize: Ginormous
-    maxTotalWeight: 0
-    maxSlots: 50 #By this ignore maxTotalWeight
+    maxItemSize: Huge
+    grid:
+    - 0,0,8,6
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -160,8 +163,6 @@
     #- state: killa
   - type: StorageFill
     contents:
-    - id: ADTClothingBeltKilla
-      amount: 1
     - id: ADTClothingHeadKillaHelmet
       amount: 1
     - id: ADTKillaArmor
@@ -480,26 +481,22 @@
   - type: Sprite
     sprite: ADT/Objects/Storage/halloween_box.rsi
     state: base
-    #layers:
-    #- state: base
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,20,0
   - type: StorageFill
     contents:
     - id: ADTFoodSnackBlackCandies
-      amount: 2
     - id: ADTFoodSnackGreenCandies
-      amount: 2
     - id: ADTFoodSnackRedCandies
-      amount: 2
     - id: ADTFoodSnackVioletCandies
-      amount: 2
     - id: ADTFoodSnackYellowCandies
-      amount: 2
     - id: ADTFoodSnackBatGingerBread
     - id: ADTFoodSnackScullGingerBread
     - id: ADTFoodSnackPumpkinGingerBread
     - id: ADTFoodSnackBunnyCandies
     - id: ADTFoodSnackCoinCandies
-      amount: 3
     - id: ADTFoodSnackBrains
     - id: ADTFoodSnackHeart
     - id: ADTFoodSnackWorms

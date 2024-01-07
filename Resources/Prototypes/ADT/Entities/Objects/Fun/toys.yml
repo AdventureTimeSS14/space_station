@@ -83,7 +83,38 @@
     heldPrefix: garbagerama
   - type: ItemCooldown
 
-  
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieMiniPinkShark
+  name: mini shark plushie
+  description: A pretty old plushie, that got a refresh. Looks well-groomed and washed. There is a label on it that says "My luck will be always with you. Timri.K."
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: shark_mini_pink
+  - type: Item
+    size: Tiny
+    sprite: ADT/Objects/Fun/toys.rsi
+    heldPrefix: shark
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/ADT/Items/Toys/soundshark.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/ADT/Items/Toys/soundshark.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/ADT/Items/Toys/soundshark.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/ADT/Items/Toys/soundshark.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/ADT/Items/Toys/soundshark.ogg
+    damage:
+      types:
+        Blunt: 0
+
 - type: entity
   parent: BasePlushie
   id: ADTPlushieJessie
@@ -424,3 +455,62 @@
     sprite: ADT/Objects/Fun/toys.rsi
     state: plushie_sofy
 
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieLiexer
+  name: Ketua
+  description: It looks like a soft and cute blondie.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_liexer
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieMa
+  name: Ma
+  description: It looks like a soft and cute blondie.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_ma
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieJungar
+  name: Djessie plushie
+  description: It looks like a soft and cute blondie.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_jungar
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieMigel
+  name: Djessie plushie
+  description: It looks like a soft and cute blondie.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_migel
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieTeo
+  name: Djessie plushie
+  description: It looks like a soft and cute blondie.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_teo
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieDekus
+  name: Djessie plushie
+  description: It looks like a soft and cute blondie.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_dekus

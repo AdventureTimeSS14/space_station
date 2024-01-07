@@ -83,6 +83,8 @@
         prob: 0.001
       - id: ClothingHeadHatCatEars
         prob: 0.01
+      - id: ClothingHeadHatDogEars
+        prob: 0.01
         # TRAITOR EQUIPMENT (0.01%)
       - id: Telecrystal10
         prob: 0.0001
@@ -115,29 +117,29 @@
   - type: StorageFill
     contents:
     - id: QuadraticCapacitorStockPart
-      prob: 0.1
+      amount: 3
     - id: FemtoManipulatorStockPart
-      prob: 0.1
+      amount: 3
     - id: BluespaceMatterBinStockPart
-      prob: 0.1
+      amount: 3
     - id: SuperCapacitorStockPart
-      prob: 0.1
+      amount: 3
     - id: PicoManipulatorStockPart
-      prob: 0.1
+      amount: 3
     - id: SuperMatterBinStockPart
-      prob: 0.1
+      amount: 3
 
 - type: entity
   parent: CrateGenericSteel
   id: CratePartsT4
   name: tier 4 parts crate
-  description: Contains 5 random tier 4 parts for upgrading machines.
+  description: Contains 18 random tier 4 parts for upgrading machines.
   components:
   - type: StorageFill
     contents:
     - id: QuadraticCapacitorStockPart
-      prob: 0.1
+      amount: 6
     - id: FemtoManipulatorStockPart
-      prob: 0.1
+      amount: 6
     - id: BluespaceMatterBinStockPart
-      prob: 0.1
+      amount: 6

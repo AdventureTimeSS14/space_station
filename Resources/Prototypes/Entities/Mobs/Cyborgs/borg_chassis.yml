@@ -33,6 +33,7 @@
   - type: Sprite
     layers:
     - state: miner
+      map: ["movement"]
     - state: miner_e_r
       map: ["enum.BorgVisualLayers.Light"]
       shader: unshaded
@@ -44,6 +45,13 @@
   - type: SiliconLawBound
   - type: SiliconLawProvider
     laws: Corporate
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: miner_moving
+    noMovementLayers:
+      movement:
+        state: miner
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
@@ -68,6 +76,8 @@
     - Science
   - type: AccessReader
     access: [["Cargo"], ["Salvage"], ["Command"], ["Research"]]
+  - type: Inventory
+    templateId: borgTall
 
 - type: entity
   id: BorgChassisEngineer
@@ -112,6 +122,8 @@
     - Science
   - type: AccessReader
     access: [["Engineering"], ["Command"], ["Research"]]
+  - type: Inventory
+    templateId: borgShort
 
 - type: entity
   id: BorgChassisJanitor
@@ -121,6 +133,7 @@
   - type: Sprite
     layers:
     - state: janitor
+      map: ["movement"]
     - state: janitor_e_r
       map: ["enum.BorgVisualLayers.Light"]
       shader: unshaded
@@ -131,6 +144,13 @@
       visible: false
   - type: SiliconLawProvider
     laws: Drone
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: janitor_moving
+    noMovementLayers:
+      movement:
+        state: janitor
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
@@ -155,6 +175,8 @@
     - Science
   - type: AccessReader
     access: [["Service"], ["Command"], ["Research"]]
+  - type: Inventory
+    templateId: borgShort
 
 - type: entity
   id: BorgChassisMedical
@@ -164,6 +186,7 @@
   - type: Sprite
     layers:
     - state: medical
+      map: ["movement"]
     - state: medical_e_r
       map: ["enum.BorgVisualLayers.Light"]
       shader: unshaded
@@ -172,6 +195,13 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: medical_moving
+    noMovementLayers:
+      movement:
+        state: medical
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
@@ -196,6 +226,8 @@
     - Science
   - type: AccessReader
     access: [["Medical"], ["Command"], ["Research"]]
+  - type: Inventory
+    templateId: borgDutch
 
 - type: entity
   id: BorgChassisService
@@ -237,3 +269,5 @@
     - Science
   - type: AccessReader
     access: [["Service"], ["Command"], ["Research"]]
+  - type: Inventory
+    templateId: borgTall

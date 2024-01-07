@@ -1,7 +1,5 @@
 ent-ClothingNeckPinBase = pin
     .desc = be nothing do crime
-ent-ClothingNeckLGBTPin = LGBT pin
-    .desc = be gay do crime
 ent-ClothingNeckAromanticPin = aromantic pin
     .desc = be aro do crime
 ent-ClothingNeckAsexualPin = asexual pin

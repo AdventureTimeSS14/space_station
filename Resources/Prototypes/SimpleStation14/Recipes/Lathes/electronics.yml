@@ -1,0 +1,7 @@
+- type: latheRecipe
+  id: IndustrialChargerCircuitboard
+  result: IndustrialChargerCircuitboard
+  completetime: 2
+  materials:
+    Steel: 50
+    Plastic: 50

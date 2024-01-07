@@ -633,20 +633,6 @@ entities:
             threshold: 1.5
             enabled: True
           ignore: False
-        Miasma:
-          lowerWarnAround:
-            threshold: 0
-            enabled: False
-          upperWarnAround:
-            threshold: 0.5
-            enabled: True
-          lowerBound:
-            threshold: 0
-            enabled: False
-          upperBound:
-            threshold: 0.05
-            enabled: True
-          ignore: False
         NitrousOxide:
           lowerWarnAround:
             threshold: 0
@@ -798,20 +784,6 @@ entities:
             enabled: False
           upperBound:
             threshold: 1.5
-            enabled: True
-          ignore: False
-        Miasma:
-          lowerWarnAround:
-            threshold: 0
-            enabled: False
-          upperWarnAround:
-            threshold: 0.5
-            enabled: True
-          lowerBound:
-            threshold: 0
-            enabled: False
-          upperBound:
-            threshold: 0.05
             enabled: True
           ignore: False
         NitrousOxide:

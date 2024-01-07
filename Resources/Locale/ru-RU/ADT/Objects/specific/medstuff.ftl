@@ -51,6 +51,24 @@ ent-ADTCratePatchPackFilled = набор пластырей
     .desc = Набор содержащий 4 коробки с пластырями
     .suffix = { "" }
 
+ent-ADTBaseFakeDefibrillator = дефибриллятор
+    .desc = ЧИСТО! РАЗРЯД!
+    .suffix = { "Поддельный" }
+ent-Defibrillator = дефибриллятор
+    .desc = ЧИСТО! РАЗРЯД!
+    .suffix = { "Поддельный" }
+
+ent-BaseChemistryEmptyVial = пробирка
+    .desc = Небольшая пробирка.
+    .suffix = { "" }
+
+ent-VestineChemistryVial = пробирка с вестином
+    .desc = Небольшая пробирка, на которой стоит маркировка "Вестин".
+    .suffix = { "Вестин" }
+
+ent-BoxVial = коробка пробирок
+    .desc = Содержит шесть пробирок.
+
 ent-ADTCratePatchPack = набор пластырей
     .desc = { ent-ADTCratePatchPackFilled.desc }
     .suffix = { "" }

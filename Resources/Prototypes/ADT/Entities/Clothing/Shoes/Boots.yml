@@ -141,6 +141,10 @@
     - WhitelistChameleon
   - type: StaticPrice
     price: 7500
+  # - type: ContainerFill
+  #   containers:
+  #     item:
+  #     - CombatKnife
 
 #Pyotr
 
@@ -178,6 +182,10 @@
     - WhitelistChameleon
   - type: StaticPrice
     price: 750
+  - type: ContainerFill
+    # containers:
+    #   item:
+    #   - CombatKnife
 
 - type: entity
   parent: ClothingShoesBaseButcherable
@@ -270,7 +278,7 @@
   description: White sandals. #кто бы мог подумать.
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Shoes/Boots/white_sandals.rsi 
+    sprite: ADT/Clothing/Shoes/Boots/white_sandals.rsi
   - type: Clothing
     sprite: ADT/Clothing/Shoes/Boots/white_sandals.rsi  #спрайты от dion_clawed
 
@@ -286,7 +294,7 @@
     sprite: ADT/Clothing/Shoes/Boots/black_boots.rsi  #спрайты от dion_clawed
 
 - type: entity
-  parent: ClothingShoesStorageBase
+  parent: ClothingShoesMilitaryBase
   id: ADTClothingFootLapkeeSet
   name: tactical sneekers
   description: tactical sneekers
@@ -300,11 +308,6 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepBoots
-  - type: Storage
-    whitelist:
-      tags:
-        - Knife
-        - Sidearm
   - type: TemperatureProtection #слабая защита от холода
     coefficient: 0.05
 
@@ -343,6 +346,7 @@
     sprite: ADT/Clothing/Shoes/Boots/snow_maiden.rsi
   - type: Clothing
     sprite: ADT/Clothing/Shoes/Boots/snow_maiden.rsi  #спрайты от prazat911
+
 #Med
 - type: entity
   parent: ClothingShoesBaseButcherable

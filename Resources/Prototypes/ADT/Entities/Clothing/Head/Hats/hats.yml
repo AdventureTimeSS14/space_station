@@ -528,6 +528,20 @@
     sprite: ADT/Clothing/Head/Hats/New-Year/hat_flower.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/New-Year/hat_flower.rsi #спрайты от prazat911
+
+#аудитор СБ
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadSecAuditorCap
+  name: sec auditor cap
+  description: sec auditor cap
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/sec_auditor_cap.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/sec_auditor_cap.rsi
+
   
 # medical update
 - type: entity

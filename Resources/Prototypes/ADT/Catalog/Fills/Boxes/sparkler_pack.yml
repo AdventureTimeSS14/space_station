@@ -40,7 +40,8 @@
       Cardboard: 50
   - type: SpaceGarbage
   - type: Storage
-    maxSlots: 5
+    grid:
+    - 0,0,4,0
   - type: Item
     sprite: ADT/Objects/Storage/sparkler_pack.rsi
     size: Small

@@ -65,6 +65,16 @@
 
 - type: entity
   noSpawn: true
+  parent: ClothingBackpackMedical
+  id: ClothingBackpackParamedicFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalMedical
+      - id: EmergencyRollerBedSpawnFolded
+
+- type: entity
+  noSpawn: true
   parent: ClothingBackpackCaptain
   id: ClothingBackpackCaptainFilled
   components:
@@ -247,9 +257,6 @@
   parent: ClothingBackpackERTLeader
   id: ClothingBackpackERTLeaderFilled
   components:
-    #- type: Storage
-    #  maxItemSize: Huge
-    #  maxTotalWeight: 9000
     - type: StorageFill
       contents:
         - id: WeaponPulseCarbine
@@ -262,25 +269,17 @@
         - id: WeaponRifleLecter
         - id: MagazineRifle
         - id: MagazineRifle
-        - id: C4
-          amount: 1
 
 - type: entity
   noSpawn: true
   parent: ClothingBackpackERTLeader
   id: ClothingBackpackERTLeaderFilledREV
   components:
-    #- type: Storage
-    #  maxItemSize: Huge
-    #  maxTotalWeight: 9000
     - type: StorageFill
       contents:
-        #- id: WeaponPulseCarbine
-        #- id: WeaponPulsePistol
         - id: WeaponDisabler
         - id: MedicatedSuture
         - id: RegenerativeMesh
-        #- id: Handcuffs
         - id: JawsOfLife
         - id: BoxZiptie
         - id: BoxFlashbang
@@ -289,11 +288,6 @@
           amount: 2
         - id: MagazinePistolSubMachineGun
           amount: 2
-        #- id: WeaponRifleLecter
-        #- id: MagazineRifle
-        #- id: MagazineRifle
-        #- id: C4
-        #  amount: 1
         - id: CombatKnife
 
 - type: entity
@@ -301,9 +295,6 @@
   parent: ClothingBackpackERTSecurity
   id: ClothingBackpackERTSecurityFilled
   components:
-    #- type: Storage
-    #  maxItemSize: Huge
-    #  maxTotalWeight: 9000
     - type: StorageFill
       contents:
         - id: WeaponDisabler
@@ -311,44 +302,30 @@
         - id: WeaponPulseCarbine
         - id: MedicatedSuture
         - id: RegenerativeMesh
-        - id: BoxHandcuff
+        # - id: BoxHandcuff
         - id: JawsOfLife
         - id: WeaponRifleLecter
         - id: MagazineRifle
         - id: MagazineRifle
-        - id: C4
-          amount: 1
 
 - type: entity
   noSpawn: true
   parent: ClothingBackpackERTSecurity
   id: ClothingBackpackERTSecurityFilledREV
   components:
-    #- type: Storage
-    #  maxItemSize: Huge
-    #  maxTotalWeight: 0
-    #  maxSlots: 50 #By this ignore maxTotalWeight
     - type: StorageFill
       contents:
-        #- id: WeaponPulseCarbine
-        #- id: WeaponPulsePistol
         - id: WeaponDisabler
         - id: MedicatedSuture
         - id: RegenerativeMesh
-        #- id: Handcuffs
         - id: JawsOfLife
-        - id: BoxZiptie
-        - id: BoxFlashbang
+        - id: BoxHandcuff
+        # - id: BoxFlashbang
         - id: WeaponSubMachineGunDrozdRubber
         - id: MagazinePistolSubMachineGunRubber
           amount: 2
         - id: MagazinePistolSubMachineGun
           amount: 2
-        #- id: WeaponRifleLecter
-        #- id: MagazineRifle
-        #- id: MagazineRifle
-        #- id: C4
-        #  amount: 1
         - id: CombatKnife
 
 - type: entity
@@ -356,47 +333,38 @@
   parent: ClothingBackpackERTMedical
   id: ClothingBackpackERTMedicalFilled
   components:
-    - type: Storage
-      maxItemSize: Huge
-      maxTotalWeight: 200
-    - type: StorageFill
-      contents:
-        - id: WeaponPulseCarbine
-        - id: ADTCombatHypo
-        - id: MedkitAdvancedFilled
-        - id: OmnizineChemistryBottle
-        - id: EpinephrineChemistryBottle
-        - id: EpinephrineChemistryBottle
-        - id: BluespaceBeaker
-        - id: Defibrillator
-        - id: CrowbarRed
-        - id: WeaponRifleLecter
-        - id: MagazineRifle
-        - id: MagazineRifle
+  - type: Storage
+    grid:
+      - 0,0,9,5
+    maxItemSize: Huge
+  - type: StorageFill
+    contents:
+    - id: WeaponPulseCarbine
+    - id: ADTCombatHypo
+    - id: MedkitAdvancedFilled
+    - id: OmnizineChemistryBottle
+    - id: EpinephrineChemistryBottle
+    - id: EpinephrineChemistryBottle
+    - id: BluespaceBeaker
+    # - id: Defibrillator
+    - id: CrowbarRed
+    - id: WeaponRifleLecter
+    - id: MagazineRifle
+    - id: MagazineRifle
 
 - type: entity
   noSpawn: true
   parent: ClothingBackpackERTMedical
   id: ClothingBackpackERTMedicalFilledREV
   components:
-    #- type: Storage
-    #  maxItemSize: Huge
-    #  maxTotalWeight: 0
-    #  maxSlots: 50 #By this ignore maxTotalWeight
     - type: StorageFill
       contents:
-        #- id: WeaponPulseCarbine
         - id: ADTCombatHypo
         - id: MedkitAdvancedFilled
-        #- id: OmnizineChemistryBottle
-        #- id: EpinephrineChemistryBottle
         - id: EpinephrineChemistryBottle
         - id: BluespaceBeaker
-        - id: Defibrillator
+        # - id: Defibrillator
         - id: CrowbarRed
-        #- id: WeaponRifleLecter
-        #- id: MagazineRifle
-        #- id: MagazineRifle
         - id: WeaponDisabler
         - id: BoxZiptie
         - id: WeaponSubMachineGunDrozdRubber
@@ -426,9 +394,7 @@
         - id: MagazineRifle
         - id: MagazineRifle
         - id: C4
-          amount: 4
-        - id: ExGrenade
-          amount: 3
+          amount: 2
 
 - type: entity
   noSpawn: true
@@ -461,12 +427,15 @@
   parent: ClothingBackpackERTJanitor
   id: ClothingBackpackERTJanitorFilled
   components:
+    - type: Storage
+      grid:
+      - 0,0,5,9
+      maxItemSize: Huge
     - type: StorageFill
       contents:
         - id: BoxSurvival
         - id: WeaponPulsePistol
         - id: MedkitFilled
-        - id: BoxLightMixed
         - id: BoxLightMixed
         - id: Soap
         - id: JawsOfLife
@@ -481,8 +450,10 @@
   name: death squad backpack
   description: Holds the kit of CentComm's most feared agents.
   components:
-    #- type: Storage
-    #  maxTotalWeight: 56
+    - type: Storage
+      grid:
+      - 0,0,9,5
+      maxItemSize: Huge
     - type: StorageFill
       contents:
         - id: BoxSurvivalEngineering

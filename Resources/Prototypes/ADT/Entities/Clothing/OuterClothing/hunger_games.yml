@@ -20,7 +20,8 @@
   #- type: Matchbox
   - type: Storage
     maxItemSize: Small
-    maxTotalWeight: 2
+    grid:
+    - 0,0,3,3
   - type: ContainerContainer
     containers:
       storagebase: !type:Container

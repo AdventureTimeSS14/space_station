@@ -5,3 +5,7 @@ ent-ADTBriefcaseBrownPyotr = чемодан Петра Шахина
 ent-ADTBriefcaseBrownHikingCmo = походный чемодан главного врача
     .suffix = Заполненный
     .desc = Коричневый чемодан, заполненный всем нужным для рабочих вылазок главного врача.
+    
+ent-ADTBriefcaseCentcomm = чемодан ЦентКома
+    .desc = Роскошный и сверхпрочный чемодан с символикой NanoTrasen. Предназначен для очень важных людей с очень важными бумагами.
+    .suffix = { "ЦК, CombatBibis" }

@@ -7,7 +7,7 @@
   components:
   - type: Sprite
   - type: Item
-    size: Huge
+    size: Large
   - type: Clothing
     sprite: Objects/Weapons/Guns/SMGs/atreides.rsi
     quickEquip: false
@@ -120,7 +120,7 @@
     - type: Clothing
       sprite: Objects/Weapons/Guns/SMGs/drozd.rsi
     - type: Gun
-      fireRate: 6
+      fireRate: 7
       selectedMode: FullAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
@@ -221,7 +221,7 @@
   - type: ChamberMagazineAmmoProvider
     boltClosed: null
   - type: Gun
-    fireRate: 5
+    fireRate: 6
     selectedMode: FullAuto
     availableModes:
     - FullAuto

@@ -9,3 +9,13 @@ admin-verb-text-make-zombie = Сделать зомби
 admin-verb-text-make-nuclear-operative = Сделать ядерным оперативником
 admin-verb-text-make-pirate = Сделать пиратом
 admin-verb-text-make-space-ninja = Сделать космическим ниндзя
+
+admin-verb-make-head-rev = Сделать цель главой Революции.
+admin-verb-make-thief = Сделать цель вором.
+
+admin-verb-text-make-traitor = Сделать Предателем
+admin-verb-text-make-zombie = Сделать Зомби
+admin-verb-text-make-nuclear-operative = Сделать Ядерным Оперативником
+admin-verb-text-make-pirate = Сделать Пиратом
+admin-verb-text-make-head-rev = Сделать Главой Революции
+admin-verb-text-make-thief = Сделать Вором

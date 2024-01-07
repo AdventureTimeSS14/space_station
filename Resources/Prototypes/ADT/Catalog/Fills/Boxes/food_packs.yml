@@ -13,7 +13,8 @@
     sprite: ADT/Objects/Storage/carnation_pack.rsi
     size: Tiny
   - type: Storage
-    maxTotalWeight: 3
+    grid:
+    - 0,0,10,7
     maxItemSize: Tiny
   - type: StorageFill
     contents:
@@ -34,7 +35,8 @@
     sprite: ADT/Objects/Storage/cinnamon_pack.rsi
     size: Tiny
   - type: Storage
-    maxTotalWeight: 5
+    grid:
+    - 0,0,10,7
     maxItemSize: Tiny
   - type: StorageFill
     contents:

@@ -155,6 +155,7 @@
   description: He's da mini rat. He don't make da roolz.
   noSpawn: true #Must be configured to a King or the AI breaks.
   components:
+  - type: FelinidFood
   - type: CombatMode
   - type: MovementSpeedModifier
     baseWalkSpeed : 2.5     #Value was 3.5 (Nerf since 20.12.2022)
@@ -289,7 +290,7 @@
 - type: entity
   id: ActionRatKingDomain
   name: Rat King's Domain
-  description: Spend some hunger to release a cloud of miasma into the air.
+  description: Spend some hunger to release a cloud of ammonia into the air.
   noSpawn: true
   components:
   - type: InstantAction

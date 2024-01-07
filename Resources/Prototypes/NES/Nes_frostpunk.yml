@@ -251,28 +251,3 @@
     - type: RadiationBlocker
       resistance: 2
 
-- type: startingGear
-  id: NesFrostpynkFinskiVulpaGear
-  equipment:
-    back: WeaponSniperMosin
-    shoes: ClothingShoesColorWhite
-    belt: ClothingBeltAssault
-    pocket1: MagazineBoxLightRifle
-
-- type: entity
-  name: Финская Вульпа
-  suffix: Фростпанк
-  parent: BaseMobVulpkanin
-  id: NesMobFrostpynkFinskiVulpa
-  components:
-  - type: NpcFactionMember
-    factions:
-      - Syndicate
-  - type: Loadout
-    prototypes:
-      - NesFrostpynkFinskiVulpaGear
-  - type: GhostRole
-    name: Финская Вульпа
-    description: Попытайте удачу украсть паровое ядро.
-  - type: GhostRoleMobSpawner
-    prototype: NesMobFrostpynkFinskiVulpa

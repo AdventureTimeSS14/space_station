@@ -45,6 +45,7 @@
     gloves: ClothingHandsGlovesForensic
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
+    neck: ADTClothingNeckSecBadge
   underweart: ClothingUnderwearTopBraSportsAlternative # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ADTClothingUniformInvestigatorSuit

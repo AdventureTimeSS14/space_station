@@ -399,7 +399,6 @@
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_hop.rsi
 
-
 - type: entity
   parent: ClothingUniformBase
   id: ADTQMJumpsuitWarm
@@ -421,6 +420,28 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/suit_hunterdemon.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/suit_hunterdemon.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTHOSJumpsuitWarm
+  name: hos jumpsuit warm
+  description: A turtleneck for someone domineering.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/hos_alt.rsi #ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_hos.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/hos_alt.rsi #ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_hos.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTRDJumpsuitWarm
+  name: rd jumpsuit warm
+  description: A purple turtleneck to wear stylishly with labcoat.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/rnd.rsi #ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_rd.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/rnd.rsi #ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_rd.rsi
 
 #костюм Эйдана
 
@@ -1073,6 +1094,20 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Underwear/Top/christmas_bra.rsi #спрайты от prazat911
+
+#униформа проверяющего СБ
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformSecAuditor
+  name: uniform of sec auditor
+  description: uniform of sec auditor
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/sec_auditor.rsi #спрайты от КомбатБибиса
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/sec_auditor.rsi #спрайты от КомбатБибиса
+
 #Medical
 - type: entity
   parent: ClothingUniformBase

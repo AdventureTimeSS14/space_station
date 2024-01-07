@@ -33,6 +33,7 @@
   - Medicine
   - Botanicals
   - Chemicals
+  - AdvancedBrute
 
 - type: guideEntry
   id: Medicine
@@ -45,3 +46,8 @@
   name: guide-entry-botanicals
   text: "/ServerInfo/Guidebook/Medical/Botanicals.xml"
   filterEnabled: True
+
+- type: guideEntry
+  id: AdvancedBrute
+  name: guide-entry-brute
+  text: "/ServerInfo/Guidebook/Medical/AdvancedBrute.xml"

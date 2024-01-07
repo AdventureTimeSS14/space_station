@@ -12,7 +12,7 @@
       - id: ClothingHeadHatBeretWarden
       - id: ClothingBeltSecurityFilled
       - id: Flash
-      - id: ClothingEyesGlassesSecurity
+      - id: ClothingEyesGlassesSunglasses
       - id: ClothingHeadsetAltSecurity
       - id: ClothingHandsGlovesCombat
       - id: ClothingShoesBootsJack
@@ -24,7 +24,7 @@
       - id: HoloprojectorSecurity
       - id: ClothingHeadHatCapWardenAlt
       - id: ClothingOuterCoatWardenAlt
-      #- id: ClothingEyesHudSecurity
+      - id: ClothingEyesHudSecurity
 
 
 - type: entity
@@ -41,7 +41,7 @@
       - id: ClothingHeadHatBeretWarden
       - id: ClothingBeltSecurityFilled
       - id: Flash
-      - id: ClothingEyesGlassesSecurity
+      - id: ClothingEyesGlassesSunglasses
       - id: ClothingHeadsetAltSecurity
       - id: ClothingHandsGlovesCombat
       - id: ClothingShoesBootsJack
@@ -52,7 +52,7 @@
       - id: HoloprojectorSecurity
       - id: ClothingHeadHatCapWardenAlt
       - id: ClothingOuterCoatWardenAlt
-      #- id: ClothingEyesHudSecurity
+      - id: ClothingEyesHudSecurity
 
 
 - type: entity
@@ -71,7 +71,7 @@
       - id: ClothingBeltSecurityFilled
       - id: Flash
         prob: 0.5
-      - id: ClothingEyesGlassesSecurity
+      - id: ClothingEyesGlassesSunglasses
       - id: ClothingHeadsetSecurity
       - id: ClothingHandsGlovesColorBlack
       - id: ClothingShoesBootsJack

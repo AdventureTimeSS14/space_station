@@ -25,7 +25,8 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Storage
-    maxSlots: 6
+    grid:
+    - 0,0,5,3
     maxItemSize: Normal
   - type: ContainerContainer
     containers:
@@ -47,13 +48,10 @@
   components:
   - type: Storage
     maxItemSize: Ginormous
-    maxTotalWeight: 0
-    maxSlots: 50 #By this ignore maxTotalWeight
+    grid:
+    - 0,0,10,7
   - type: StorageFill
     contents:
-      - id: ClothingNeckLGBTPin
-        prob: 0.06
-        orGroup: dressermainloot
       - id: ClothingUniformJumpsuitColorGrey
         prob: 0.06
         orGroup: dressermainloot

@@ -15,7 +15,8 @@
     - back
   - type: Storage
     maxItemSize: Huge
-    maxTotalWeight: 28
+    grid:
+    - 0,0,10,7
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -45,7 +46,8 @@
     - back
   - type: Storage
     maxItemSize: Huge
-    maxTotalWeight: 36
+    grid:
+    - 0,0,10,7
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -265,7 +267,8 @@
   suffix: Personal, Lapkee
   components:
   - type: Storage
-    maxTotalWeight: 30
+    grid:
+    - 0,0,10,7
   - type: StorageFill
     contents:
       - id: BoxSurvivalSecurity

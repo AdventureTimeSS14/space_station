@@ -80,3 +80,15 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Neck/Cloaks/newmekkacloak.rsi #спрайты от floppo4ka
+
+#плащ Lapkee
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckCloakLapkee
+  name: light cloak
+  description: light cloak
+  suffix: Lapkee
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/Cloaks/lapkeeset_cloack.rsi

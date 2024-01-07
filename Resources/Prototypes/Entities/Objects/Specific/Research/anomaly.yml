@@ -21,6 +21,8 @@
     - ScannersAndVessels
   - type: StaticPrice
     price: 50
+  - type: Item
+    storedRotation: -90
 
 - type: entity
   id: AnomalyLocatorUnpowered

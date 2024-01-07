@@ -311,6 +311,10 @@ ent-ADTClothingUniformShirtSnowman = костюм с рисунком снего
 ent-ADTClothingUniformChristmasCorset = рождественский корсет
     .desc = Достаточно своеобразный рождественский корсет...
 
+ent-ADTClothingUniformSecAuditor = униформа аудитора СБ
+    .desc = Стандартная униформа проверяющих работу Службы Безопасности станции со стороны комитета надзора NanoTrasen.
+    .suffix = { "ЦК, CombatBibis" }
+
 ent-ADTClothingUniformPathologistSuit = костюм патологоанатома
     .desc = Лёгкий комбинезон для работника морга.
     .suffix = { "" } 

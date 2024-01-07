@@ -17,6 +17,7 @@
   - Medical
   - Maintenance
   - External
+  extendedAccess:
   - Chemistry
   special:
   - !type:AddImplantSpecial

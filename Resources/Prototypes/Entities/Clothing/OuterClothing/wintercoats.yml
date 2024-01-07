@@ -15,8 +15,8 @@
   - type: Armor
     modifiers:
       coefficients:
-        Slash: 0.5
-        Heat: 0.5
+        Slash: 0.95
+        Heat: 0.90
   - type: Food
     requiresSpecialDigestion: true
   - type: SolutionContainerManager

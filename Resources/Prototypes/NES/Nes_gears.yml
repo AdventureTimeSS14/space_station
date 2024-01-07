@@ -1,0 +1,40 @@
+# - type: startingGear
+#   id: NesFrostpynkFinskiVulpaGear
+#   equipment:
+#     back: WeaponSniperMosin
+#     shoes: ClothingShoesColorWhite
+#     belt: ClothingBeltAssault
+#     pocket1: MagazineBoxLightRifle
+
+- type: startingGear
+  id: DEBG
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSec
+    outer: ClothingOuterWinterSec
+    back: ClothingBackpackSecurityFilled
+    shoes: ClothingShoesBootsJackSec # Corvax-Resprite
+    eyes: ClothingEyesGlassesSecurity
+    head: ClothingHeadHatBeret
+    #outerClothing: PilotSuitSEC  - портатип не найден
+    id: SecurityPDA
+    ears: ClothingHeadsetSecurity
+    belt: ClothingBeltSecurityFilled
+    Hands: ClothingHandsGlovesFingerless
+    pocket2: ClothingOuterWinterSec
+  innerClothingSkirt: ClothingUniformJumpskirtSec
+  satchel: ClothingBackpackSatchelSecurityFilled
+  duffelbag: ClothingBackpackDuffelSecurityFilled
+
+- type: startingGear
+  id: NesSpaceMaroderGear
+  equipment:
+    jumpsuit: ADTClothingUniformJumpsuitMaugly
+    outerClothing: NesClothingOuterHardsuitPirates
+    back: NesClothingBackpackSpaceMarodersFilled
+    shoes: ClothingShoesBootsCombatFilled
+    eyes: ADTClothingEyesHudAdvanced
+    id: PiratePDA
+    ears: ClothingHeadsetSecurity
+    belt: NesClothingBeltMilitaryWebbingMarodersFilled
+    gloves: ClothingHandsGlovesColorBlack
+    pocket2: DoubleEmergencyOxygenTankFilled
