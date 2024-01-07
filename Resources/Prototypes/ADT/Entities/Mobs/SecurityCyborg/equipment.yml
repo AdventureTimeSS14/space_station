@@ -25,7 +25,7 @@
   - type: Clothing
     sprite: ADT/Mobs/Silicon/Cyborg/cyb_gun.rsi
   - type: Gun
-    fireRate: 2
+    fireRate: 1.7
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: ProjectileBatteryAmmoProvider
@@ -34,11 +34,11 @@
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: BulletDisabler
-      fireCost: 60
+      fireCost: 70
     - proto: ADTEmitterBoltCyb
-      fireCost: 100
+      fireCost: 200
     - proto: ADTAnomalousParticleOmegaStrongCyb
-      fireCost: 100
+      fireCost: 200
   - type: Battery
     maxCharge: 2220
     startingCharge: 2220

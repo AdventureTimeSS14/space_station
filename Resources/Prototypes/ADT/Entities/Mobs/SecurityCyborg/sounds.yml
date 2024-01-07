@@ -1,0 +1,112 @@
+- type: speechSounds
+  id: Metrocop
+  saySound:
+    path: /Audio/ADT/Footsteps/say/off2.ogg
+  askSound:
+    path: /Audio/ADT/Footsteps/say/off1.ogg
+  exclaimSound:
+    path: /Audio/ADT/Footsteps/say/off3.ogg
+
+- type: speechSounds
+  id: Combine
+  saySound:
+    path: /Audio/ADT/Footsteps/off2.ogg
+  askSound:
+    path: /Audio/ADT/Footsteps/off3.ogg
+  exclaimSound:
+    path: /Audio/ADT/Footsteps/off1.ogg
+
+- type: soundCollection
+  id: Metrocop
+  files:
+  - /Audio/ADT/Footsteps/say/off1.ogg
+  - /Audio/ADT/Footsteps/say/off2.ogg
+  - /Audio/ADT/Footsteps/say/off3.ogg
+  - /Audio/ADT/Footsteps/say/off4.ogg
+
+- type: soundCollection
+  id: SoldierDeath
+  files:
+  - /Audio/ADT/Footsteps/combine/die1.ogg
+  - /Audio/ADT/Footsteps/combine/die2.ogg
+  - /Audio/ADT/Footsteps/combine/die3.ogg
+  - /Audio/ADT/Footsteps/combine/die4.ogg
+
+# # ERT Junitor
+# - type: entity
+#   name: Epsilon - 11 уборщик ОБР
+#   parent: MobHuman
+#   suffix: МТФ
+#   id: MobHumanERTJunitorEVAV3
+#   components:
+#   - type: Icon
+#     sprite: Markers/jobs.rsi
+#     state: ertjanitor
+#   - type: GhostTakeoverAvailable
+#   - type: Speech
+#     speechSounds: Metrocop
+#     soundCooldownTime: 0.1
+#   - type: TriggerOnMobstateChange
+#     mobState:
+#     - Critical
+#   - type: EmitSoundOnTrigger
+#     sound:
+#       collection: SoldierDeath
+#   - type: GhostRole
+#     allowMovement: true
+#     allowSpeech: true
+#     makeSentient: true
+#     name: ОБР уборщик
+#     description: Уборщик отделения Epsilon - 11, эй! кто дал ему пистолет?!
+#     requirements:
+#       - !type:DepartmentTimeRequirement
+#         department: Security
+#         time: 9000
+#       - !type:OverallPlaytimeRequirement
+#         time: 16000
+#       - !type:RoleTimeRequirement
+#         role: JobJanitor
+#         time: 1500
+#   - type: SpecForce
+#     actionBssActionName: ActionCentcomFtlAction
+#   - type: Loadout
+#     prototypes: [ERTJanitorGearEVAV3]
+#   - type: RandomMetadata
+#     nameSegments:
+#     - NamesPVTs
+#     - names_last_male
+#   - type: RandomHumanoidAppearance
+#     randomizeName: false
+
+# - type: entity
+#   name: Урист Макбайн
+#   parent: MobHuman
+#   description: Жалкая кучка спецназа.
+#   id: MobHumanCombine
+#   components:
+#   - type: Icon
+#     sprite: Markers/jobs.rsi
+#     state: cyborg
+#   - type: Speech
+#     speechSounds: Combine
+#     soundCooldownTime: 0.1
+#   - type: Stamina
+#     critThreshold: 250
+#   - type: MobState
+#   - type: MobThresholds
+#     thresholds:
+#       0: Alive
+#       200: Critical
+#       250: Dead
+#   - type: SlowOnDamage
+#     speedModifierThresholds:
+#       100: 0.7
+#       150: 0.5
+#   - type: TriggerOnMobstateChange
+#     mobState:
+#     - Critical
+#   - type: EmitSoundOnTrigger
+#     sound:
+#       collection: SoldierDeath
+#       params:
+#         volume: 3

@@ -164,6 +164,7 @@
     whitelist:
       components:
       - BorgChassis
+      - Silicon
   #- type: SiliconCharger
   #  chargeMulti: 50
   #  targetTemp: 390
@@ -212,6 +213,7 @@
     whitelist:
       components:
       - BorgChassis
+      - Silicon
   - type: ContainerContainer
     containers:
       entity_storage: !type:Container
