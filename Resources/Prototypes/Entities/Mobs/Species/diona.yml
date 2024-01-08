@@ -17,6 +17,7 @@
   - type: Icon
     sprite: Mobs/Species/Diona/parts.rsi
     state: full
+  - type: Carriable
   - type: Body
     prototype: Diona
     requiredLegs: 2

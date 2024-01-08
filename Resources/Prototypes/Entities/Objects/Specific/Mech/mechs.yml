@@ -124,6 +124,8 @@
     damage:
       types:
         Blunt: 14 #intentionally shit so people realize that going into combat with the ripley is usually a bad idea.
+  - type: StaticPrice
+    price: 12000
   - type: MovementSpeedModifier
     baseWalkSpeed: 2.25
     baseSprintSpeed: 3.6
