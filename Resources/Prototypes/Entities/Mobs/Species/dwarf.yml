@@ -25,6 +25,7 @@
     noRot: true
     drawdepth: Mobs
     scale: 1, 0.8
+  - type: Carriable
   - type: Body
     prototype: Dwarf
     requiredLegs: 2
