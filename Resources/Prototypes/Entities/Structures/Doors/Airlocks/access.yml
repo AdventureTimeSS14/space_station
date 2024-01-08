@@ -422,14 +422,6 @@
     access: [["Security", "Command"]]
 
 - type: entity
-  parent: AirlockExternalGlass
-  id: AirlockExternalGlassSecurityLocked
-  suffix: External, Glass, Security, Locked
-  components:
-  - type: AccessReader
-    access: [["Security"]]
-
-- type: entity
   parent: AirlockCommand
   id: AirlockEVALocked
   suffix: EVA, Locked

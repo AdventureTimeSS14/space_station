@@ -17,7 +17,6 @@
     requiredLegs: 2
   - type: HumanoidAppearance
     species: SlimePerson
-  - type: Carriable
   - type: Speech
     speechVerb: Slime
     speechSounds: Slime

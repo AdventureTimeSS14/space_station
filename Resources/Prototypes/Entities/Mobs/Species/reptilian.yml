@@ -18,7 +18,6 @@
   - type: Icon
     sprite: Mobs/Species/Reptilian/parts.rsi
     state: full
-  - type: Carriable
   - type: Body
     prototype: Reptilian
     requiredLegs: 2

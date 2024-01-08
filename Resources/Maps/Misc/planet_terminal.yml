@@ -4675,6 +4675,13 @@ entities:
     - pos: -7.5,9.5
       parent: 818
       type: Transform
+- proto: KitchenKnife
+  entities:
+  - uid: 1193
+    components:
+    - pos: 10.649275,9.52482
+      parent: 818
+      type: Transform
 - proto: KitchenMicrowave
   entities:
   - uid: 820
@@ -4687,6 +4694,13 @@ entities:
   - uid: 1191
     components:
     - pos: 11.5,7.5
+      parent: 818
+      type: Transform
+- proto: KukriKnife
+  entities:
+  - uid: 5
+    components:
+    - pos: 7.6116056,8.491207
       parent: 818
       type: Transform
 - proto: LeftHandVulpkanin

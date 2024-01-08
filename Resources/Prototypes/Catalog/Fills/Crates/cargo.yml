@@ -15,26 +15,6 @@
   #never make a storage fill this large
   - type: StorageFill
     contents:
-    #ADT
-    - id: MobMothroach
-      prob: 0.2
-      orGroup: Weapons
-    - id: MobMothroach
-      prob: 0.2
-      orGroup: Clothes
-    - id: MobMothroach
-      prob: 0.2
-      orGroup: Junk
-    - id: MobMothroach
-      prob: 0.2
-      orGroup: Canister
-    - id: MobMothroach
-      prob: 0.2
-      orGroup: Swag
-    - id: ADTTallRobotMekaJani
-      prob: 0.01
-      orGroup: NotUseful
-    #Офовский мусор
     - id: SpaceCash1000000
       prob: 0.001
       orGroup: Money
@@ -156,15 +136,15 @@
     - id: ClothingUniformJumpsuitFamilyGuy
       prob: 0.05
       orGroup: Clothes
-    # - id: ClothingOuterHardsuitCBURN
-    #   prob: 0.01
-    #   orGroup: Clothes
+    - id: ClothingOuterHardsuitCBURN
+      prob: 0.01
+      orGroup: Clothes
     - id: ClothingBackpackERTClown
       prob: 0.01
       orGroup: Clothes
-    # - id: ClothingNeckCloakAdmin
-    #   prob: 0.01
-    #   orGroup: Clothes
+    - id: ClothingNeckCloakAdmin
+      prob: 0.01
+      orGroup: Clothes
     - id: ClothingOuterFlannelBlue
       prob: 0.01
       orGroup: Clothes
@@ -246,7 +226,7 @@
       prob: 0.01
       orGroup: Plushies
     - id: PlushieMoth
-      prob: 0.3
+      prob: 0.01
       orGroup: Plushies
     #useful
     - id: AmeJar
@@ -277,7 +257,7 @@
       prob: 0.01
       orGroup: Useful
     - id: ToyAmongPequeno
-      prob: 0.01
+      prob: 0.01  
       orGroup: Useful
     - id: PenExploding
       prob: 0.01
@@ -290,7 +270,7 @@
       prob: 0.01
       orGroup: NotUseful
     - id: MobLaserRaptor
-      prob: 0.001
+      prob: 0.01
       orGroup: NotUseful
     - id: DrinkNothing
       prob: 0.01
