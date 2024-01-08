@@ -14,6 +14,7 @@ guide-entry-all-srp = Стандартные Рабочие Процедуры
 guide-entry-command = Командование станцией
 guide-entry-command-captain = Капитан
 guide-entry-command-head-personal = Глава Персонала
+guide-entry-command-blue-shield = Cиний Щит
 guide-entry-command-procedure = Процедуры Командования
 
 guide-entry-lawyer = Юридический Департамент NT
@@ -43,7 +44,9 @@ guide-entry-security-dopolnenie = Дополнительно
 guide-entry-security-sledstvie = Следствие
 
 guide-entry-engineer = Инженерный Отдел
+guide-entry-engineer-all = Общее СРП отдела
 guide-entry-engineer-se = Старший Инженер
+guide-entry-engineer-Brigadir = Бригадир
 guide-entry-engineer-eng = Инженер
 guide-entry-engineer-atmos = Атмосферный Техник
 guide-entry-engineer-eng-jun = Тех. ассистент
