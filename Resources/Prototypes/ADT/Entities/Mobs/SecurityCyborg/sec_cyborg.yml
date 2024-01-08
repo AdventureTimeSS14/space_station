@@ -118,6 +118,11 @@
   # - type: Speech
   #   speechSounds: Combine
   #   soundCooldownTime: 0.1
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepSoldier
+      params:
+        volume: -2
 
 - type: entity
   save: false

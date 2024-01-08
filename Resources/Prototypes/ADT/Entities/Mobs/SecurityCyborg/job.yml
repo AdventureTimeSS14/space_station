@@ -60,7 +60,7 @@
   equipment:
     suitstorage: ADTGunRifleFNFAL  #ADTMagazineRifleFNFAL
     back: ADTClothingBackpackSecurityCyb
-    id: SecurityPDA
+    id: ADTSecurityCybPDA
     belt: ClothingBeltSecurityFilled
     pocket1: ADtWeaponSecCyborg
     #pocket2: WeaponDisabler

@@ -31,3 +31,13 @@
   - /Audio/ADT/Footsteps/combine/die2.ogg
   - /Audio/ADT/Footsteps/combine/die3.ogg
   - /Audio/ADT/Footsteps/combine/die4.ogg
+
+- type: soundCollection
+  id: FootstepSoldier
+  files:
+  - /Audio/ADT/Footsteps/gear1.ogg
+  - /Audio/ADT/Footsteps/gear2.ogg
+  - /Audio/ADT/Footsteps/gear3.ogg
+  - /Audio/ADT/Footsteps/gear4.ogg
+  - /Audio/ADT/Footsteps/gear5.ogg
+  - /Audio/ADT/Footsteps/gear6.ogg
