@@ -102,6 +102,7 @@
   id: ADTPlayerSiliconHumanoidBaseSchrodinger
   abstract: true
   components:
+    - type: StatusIcon
     - type: MobState
       allowedStates:
         - Alive
