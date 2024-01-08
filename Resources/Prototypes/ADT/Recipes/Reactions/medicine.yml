@@ -128,12 +128,14 @@
 - type: reaction
   id: Vitamin
   reactants:
-    Phenol:
+    Carbon:
       amount: 1
     Hydrogen:
-      amount: 2
+      amount: 1
+    Oxygen:
+      amount: 1
   products:
-    Vitamin: 2
+    Vitamin: 3
 
 - type: reaction
   id: ADTMMorphine
@@ -147,3 +149,17 @@
       amount: 1
   products:
     ADTMMorphine: 3
+
+- type: reaction
+  id: ADTMFormalin
+  minTemp: 370
+  reactants:
+    Water:
+      amount: 2
+    Vinegar: #тут не совсем должен быть уксус, а формальдегит. Но в таком случае придётся делать ещё один препарат от гниения. 
+      amount: 1
+    Iron:
+      amount: 1
+      catalyst: true
+  products:
+    ADTMFormalin: 3

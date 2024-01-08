@@ -12,6 +12,7 @@
 Большинство этих лекарств продаются во многих аптеках по вселенной и имеют большой спрос. Некоторые из них, в паре с определённым химикатом, становятся полноценными медицинскими препаратами.
 
 [head=2]Полезное[/head]
+<GuideReagentEmbed Reagent="ADTMFormalin"/>
 <GuideReagentEmbed Reagent="ADTMAgolatine"/>
 <GuideReagentEmbed Reagent="ADTMHaloperidol"/>
 <GuideReagentEmbed Reagent="ADTMMorphine"/>

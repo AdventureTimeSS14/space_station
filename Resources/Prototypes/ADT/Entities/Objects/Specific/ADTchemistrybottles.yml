@@ -93,3 +93,20 @@
   - type: Tag
     tags:
     - Bottle
+
+- type: entity
+  id: ADTObjectsSpecificFormalinChemistryBottle
+  name: Formalin bottle
+  parent: BaseChemistryEmptyBottle
+  description: A basis of pathologist's work.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTMFormalin
+          Quantity: 30
+  - type: Tag
+    tags:
+    - Bottle
