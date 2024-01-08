@@ -1,0 +1,22 @@
+- type: entity
+  name: Sashimi
+  parent: FoodMealSashimi
+  id: ADTFoodMealSashimi
+  description: Its taste can only be described as "Exotic". The poisoning though? That's pretty common.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 31
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 10
+        - ReagentId: TableSalt
+          Quantity: 1
+  - type: Tag
+    tags:
+    - Fish

@@ -63,12 +63,25 @@
   children:
   - SrpCommandCaptain
   - SrpCommandHeadofPersonal
+  - HeadSecurity
+  - SrpSE
+  - SrpCargoKvartirmester
+  - SrpScientisNR
+  - SrpMedicCMO
+  - SrpLawyerMagistrat
+  - SrpCommandBlueShield
   - SrpCommandProcedure
 
 - type: guideEntry
   id: SrpCommandCaptain
   name: guide-entry-command-captain
   text: "/ServerInfo/ADT/srp/SrpCommandCaptain.xml"
+
+
+- type: guideEntry
+  id: SrpCommandBlueShield
+  name: guide-entry-command-blue-shield
+  text: "/ServerInfo/ADT/srp/SrpCommandBS.xml"
 
 - type: guideEntry
   id: SrpCommandHeadofPersonal
@@ -86,7 +99,6 @@
   name: guide-entry-lawyer
   text: "/ServerInfo/ADT/srp/SrpLawyer.xml"
   children:
-  - SrpLawyerMagistrat
   - SrpLawyerIIA
   - SrpLawyerLawyers
 
@@ -111,11 +123,11 @@
   name: guide-entry-security
   text: "/ServerInfo/ADT/srp/SrpSecurity.xml"
   children:
-  - HeadSecurity
   - Warden
   - Senyor
   - Sledovatil
   - Detective
+  - Brigmedic
   - Pilot
   - Oficer
   - Cadet
@@ -125,6 +137,11 @@
   - SecNezareg
   - SecDopolnenie
   - SecSledstvie
+
+- type: guideEntry
+  id: Brigmedic
+  name: guide-entry-medic-brigmedic
+  text: "/ServerInfo/ADT/srp/SrpSecurityBrigmedic.xml"
 
 - type: guideEntry
   id: HeadSecurity
@@ -232,7 +249,7 @@
 
 
 
- 
+
 
 
 
@@ -244,10 +261,21 @@
   name: guide-entry-engineer
   text: "/ServerInfo/ADT/srp/SrpEngineer.xml"
   children:
-  - SrpSE
+  - SrpEngAll
+  - SrpBrigadir
   - SrpEng
   - SrpAtmos
   - SrpEngJun
+
+- type: guideEntry
+  id: SrpBrigadir
+  name: guide-entry-engineer-Brigadir
+  text: "/ServerInfo/ADT/srp/SrpEngineerBrigadir.xml"
+
+- type: guideEntry
+  id: SrpEngAll
+  name: guide-entry-engineer-all
+  text: "/ServerInfo/ADT/srp/SrpEngAll.xml"
 
 - type: guideEntry
   id: SrpSE
@@ -277,7 +305,6 @@
   name: guide-entry-scientis
   text: "/ServerInfo/ADT/srp/SrpScientis.xml"
   children:
-  - SrpScientisNR
   - SrpScientisSenyor
   - SrpScientisMider
   - SrpScientisLaborant
@@ -322,7 +349,6 @@
   name: guide-entry-medic
   text: "/ServerInfo/ADT/srp/SrpMedic.xml"
   children:
-  - SrpMedicCMO
   - SrpMedicSenyor
   - SrpMedicParamed
   - SrpMedicMedic
@@ -355,7 +381,6 @@
   - SrpMedicMedicVirusolog
   - SrpMedicMedicHirurg
   - SrpMedicMedicPatologoanatom
-  - SrpMedicMedicBrigmedic
 
 - type: guideEntry
   id: SrpMedicMedicVirusolog
@@ -371,11 +396,6 @@
   id: SrpMedicMedicPatologoanatom
   name: guide-entry-medic-patologoanatom
   text: "/ServerInfo/ADT/srp/SrpMedicPatologoanatom.xml"
-
-- type: guideEntry
-  id: SrpMedicMedicBrigmedic
-  name: guide-entry-medic-brigmedic
-  text: "/ServerInfo/ADT/srp/SrpMedicBrigmedic.xml"
 
 
 ###
@@ -422,7 +442,6 @@
   name: guide-entry-cargo
   text: "/ServerInfo/ADT/srp/SrpCargo.xml"
   children:
-  - SrpCargoKvartirmester
   - SrpCargoUtilizer
   - SrpCargoLoader
 
@@ -478,7 +497,7 @@
   id: SrpServisBarmen
   name: guide-entry-servis-barmen
   text: "/ServerInfo/ADT/srp/SrpServisBarmen.xml"
-  
+
 
 - type: guideEntry
   id: SrpServisYborshick

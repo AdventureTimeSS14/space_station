@@ -72,3 +72,4 @@
             Magistrat: [ 1, 1 ]
             ADTPathologist: [ 1 , 1]
             ADTInvestigator: [ 1, 1 ] #ADT
+            ADTSecurityCyborg: [ 1, 1 ] #ADT

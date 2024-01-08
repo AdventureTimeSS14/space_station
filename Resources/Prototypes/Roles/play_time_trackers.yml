@@ -177,3 +177,6 @@
 
 - type: playTimeTracker
   id: JobADTPathologist
+
+- type: playTimeTracker
+  id: JobSecurityCyborg
