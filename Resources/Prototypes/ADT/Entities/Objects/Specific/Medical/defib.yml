@@ -44,11 +44,32 @@
   - type: Defibrillator
     zapHeal:
       types:
-        Asphyxiation: -25
-    writheDuration: 5
-    zapDamage: 3
+        Asphyxiation: -20
+    doAfterDuration: 1.5
+    chargeSound:
+      path: /Audio/ADT/Items/Medical/Defibs/mob-defib_charge.ogg
   - type: MultiHandedItem
   - type: PowerCellDraw
-    useRate: 200 #~3 использования.
+    useRate: 666 #~1 использование на средней
   - type: StealTarget
     stealGroup: MobileDefibrillator
+
+- type: entity
+  id: ADTHighVoltageDefibrillator
+  name: high voltage defibrillator
+  description: A defibrillator that takes less time to zap but deals more electric damage.
+  parent: [ BaseDefibrillator, PowerCellSlotMediumItem ]
+  components:
+  - type: MultiHandedItem #новую текстурку.
+  - type: PowerCellDraw
+    useRate: 200 #~3 использования
+  - type: Defibrillator
+    zapHeal:
+      types:
+        Asphyxiation: -25
+    doAfterDuration: 2
+    chargeSound:
+      path: /Audio/ADT/Items/Medical/Defibs/highvolt-defib_charge.ogg #подредактировать звуки.
+    zapDamage: 30
+    writheDuration: 10
+    zapDelay: 3

@@ -48,7 +48,7 @@ public sealed partial class DefibrillatorComponent : Component
     /// How long the victim will be electrocuted after getting zapped.
     /// </summary>
     [DataField("writheDuration"), ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan WritheDuration = TimeSpan.FromSeconds(3);
+    public TimeSpan WritheDuration = TimeSpan.FromSeconds(5);
 
     /// <summary>
     /// How long the doafter for zapping someone takes
@@ -57,7 +57,7 @@ public sealed partial class DefibrillatorComponent : Component
     /// This is synced with the audio; do not change one but not the other.
     /// </remarks>
     [DataField("doAfterDuration"), ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan DoAfterDuration = TimeSpan.FromSeconds(3);
+    public TimeSpan DoAfterDuration = TimeSpan.FromSeconds(5);
 
     /// <summary>
     /// The sound when someone is zapped.
