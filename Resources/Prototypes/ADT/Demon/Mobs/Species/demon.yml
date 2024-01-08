@@ -16,6 +16,7 @@
     netsync: false
     noRot: true
     drawdepth: Mobs
+  - type: Carriable
   - type: Body
     prototype: Demon
     requiredLegs: 2
