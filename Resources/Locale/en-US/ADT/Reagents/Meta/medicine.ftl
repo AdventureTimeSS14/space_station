@@ -30,3 +30,6 @@ reagent-desc-haloperidol = A typical antipsychotic medication. Used in the treat
 
 reagent-name-morphine = morphine
 reagent-desc-morphine = A strong opiate that is found naturally in opium, by drying the latex of opium poppies. Mainly used as an analgesic.
+
+reagent-name-formalin = formalin
+reagent-desc-formalin = A chemical that coagulates proteine and prevents its decomposition. Used in embalming corpses.

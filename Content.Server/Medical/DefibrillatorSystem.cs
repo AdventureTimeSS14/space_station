@@ -217,7 +217,7 @@ public sealed class DefibrillatorSystem : EntitySystem
 
         if (HasComp<EmbalmedComponent>(target))
         {
-            _chatManager.TrySendInGameICMessage(uid, Loc.GetString("defibrillator-rotten"),
+            _chatManager.TrySendInGameICMessage(uid, Loc.GetString("defibrillator-embalmed"),
                 InGameICChatType.Speak, true);
         }
         else

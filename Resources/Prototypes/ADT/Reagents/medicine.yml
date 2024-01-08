@@ -342,7 +342,7 @@
       - !type:HealthChange #передоз антидепрессантов существует, и это плоха, дети.
         conditions:
         - !type:ReagentThreshold
-          min: 50
+          min: 40
         damage:
           types:
             Asphyxiation: 2
@@ -412,6 +412,9 @@
     Medicine:
       metabolismRate: 0.1
       effects:
+      - !type:GenericStatusEffect
+        key: Stutter
+        component: ScrambledAccent #В какой-то степени анельгезия.
       - !type:HealthChange
         damage:
           groups:
@@ -482,17 +485,24 @@
         probability: 0.05
 
 - type: reagent
-  id: ADTMRotting
-  name: Rotting
+  id: ADTMFormalin #Даже название коверкать не буду. Формалин существует.
+  name: reagent-name-formalin
   group: Medicine
-  desc: Rotting
+  desc: reagent-desc-formalin
   flavor: bitter
-  physicalDesc: reagent-physical-desc-opaque
-  color: "#ad5113"
+  physicalDesc: reagent-physical-desc-skunky
+  color: "#ffd478"
+  metaboliseWhileDead: true
   metabolisms:
     Medicine:
       effects:
-        - !type:Embalm
-          conditions:
-            - !type:ReagentThreshold
-              min: 10
+      - !type:Embalm
+         conditions:
+          - !type:ReagentThreshold
+            min: 10
+          - !type:MobStateCondition
+            mobstate: Dead
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 1

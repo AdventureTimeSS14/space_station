@@ -102,6 +102,13 @@ namespace Content.Shared.Chemistry.Reagent
         [DataField]
         public float Viscosity;
 
+        /// <summary>
+        /// If this reagent will still metabolise if the body is dead.
+        /// </summary>
+        /// Again, thanks to Gotimanga 
+        [DataField("metaboliseWhileDead")]
+        public bool MetaboliseWhileDead = false;
+
         [DataField(serverOnly: true)]
         public FrozenDictionary<ProtoId<MetabolismGroupPrototype>, ReagentEffectsEntry>? Metabolisms;
 
