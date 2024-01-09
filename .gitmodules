@@ -7,3 +7,6 @@
 	url = git@gitlab.com:Morbo/corvax-secrets.git
 	branch = master
 	update = none
+[submodule "ADT_Secrets"]
+	path = ADT_Secrets
+	url = https://github.com/xtray85/ADT_STATION.git
