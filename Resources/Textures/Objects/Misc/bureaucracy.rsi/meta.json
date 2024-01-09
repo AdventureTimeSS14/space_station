@@ -297,28 +297,28 @@
       "name": "stamp-warden"
     },
     {
-      "name": "stamp-iaa"
+    "name": "stamp-iaa"
     },
     {
-      "name": "paper_stamp-investigator"
+    "name": "paper_stamp-investigator"
     },
     {
-      "name": "paper_stamp-mag"
+    "name": "paper_stamp-mag"
     },
     {
-      "name": "paper_stamp-cent"
+    "name": "paper_stamp-cent"
     },
     {
-      "name": "paper_stamp-approve"
+    "name": "paper_stamp-approve"
     },
     {
-      "name": "stamp-approve"
+    "name": "stamp-approve"
     },
     {
-      "name": "paper_stamp-psychologist"
+    "name": "paper_stamp-psychologist"
     },
     {
-      "name": "stamp-psychologist"
+    "name": "stamp-psychologist"
     }
   ]
 }
