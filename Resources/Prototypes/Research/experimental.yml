@@ -139,21 +139,20 @@
   recipeUnlocks:
   - RPED
 
-# Tier 3
-
 - type: technology
-  id: SuperParts
-  name: research-technology-super-parts
+  id: DeterrenceTechnologies
+  name: research-technology-deterrence
   icon:
-    sprite: Objects/Misc/stock_parts.rsi
-    state: super_matter_bin
+    sprite: Objects/Weapons/Guns/Battery/particle_decelerator.rsi
+    state: base
   discipline: Experimental
-  tier: 3
-  cost: 12000
+  tier: 2
+  cost: 7500
   recipeUnlocks:
-  - SuperCapacitorStockPart
-  - SuperMatterBinStockPart
-  - PicoManipulatorStockPart
+  - WeaponParticleDecelerator
+  - HoloprojectorField
+
+# Tier 3
 
 - type: technology
   id: GravityManipulation
@@ -167,3 +166,15 @@
   recipeUnlocks:
     - WeaponForceGun
     - WeaponTetherGun
+
+- type: technology
+  id: QuantumLeaping
+  name: research-technology-quantum-leaping
+  icon:
+    sprite: Objects/Devices/swapper.rsi
+    state: icon
+  discipline: Experimental
+  tier: 3
+  cost: 10000
+  recipeUnlocks:
+  - DeviceQuantumSpinInverter
