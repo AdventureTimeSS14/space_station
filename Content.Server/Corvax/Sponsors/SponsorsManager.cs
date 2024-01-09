@@ -35,6 +35,7 @@ public sealed class SponsorsManager
         _netMgr.Disconnect += OnDisconnect;
     }
 
+
     public bool TryGetInfo(NetUserId userId, [NotNullWhen(true)] out SponsorInfo? sponsor)
     {
         return _cachedSponsors.TryGetValue(userId, out sponsor);

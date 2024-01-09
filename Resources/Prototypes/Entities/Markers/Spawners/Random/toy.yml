@@ -33,6 +33,7 @@
         - ToyAmongPequeno
         - ToyMouse
         - PlushieDiona
+        - PlushieArachind
         - ADTPlushieResomiBlue
         - ADTPlushieResomiGreen
         - ADTPlushieResomiYellow
@@ -104,7 +105,7 @@
       - ToyFigurineLawyer
       - ToyFigurineCargoTech
       - ToyFigurineSalvage
-      - ToyFigurineQuartermaster   
+      - ToyFigurineQuartermaster
       - ToyFigurineChiefEngineer
       - ToyFigurineAtmosTech
       - ToyFigurineEngineer

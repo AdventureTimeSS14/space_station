@@ -1,3 +1,4 @@
+using Content.Client.Corvax.Sponsors;
 using Content.Client.GameTicking.Managers;
 using Content.Client.LateJoin;
 using Content.Client.Lobby.UI;
