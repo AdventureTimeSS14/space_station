@@ -1,0 +1,12 @@
+- type: damageModifierSet
+  id: ADTSecurityCybDamagModSet
+  coefficients:
+    Blunt: 0.6
+    Slash: 0.6
+    Piercing: 0.3
+    # fire and lasers burn it good
+    Heat: 1.0
+    # zap
+    Shock: 0.9
+    Cold: 0.08
+    Caustic: 0.25
