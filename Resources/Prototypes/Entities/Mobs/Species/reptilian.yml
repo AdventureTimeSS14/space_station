@@ -18,11 +18,9 @@
   - type: Icon
     sprite: Mobs/Species/Reptilian/parts.rsi
     state: full
-  - type: Carriable
   - type: Body
     prototype: Reptilian
     requiredLegs: 2
-  - type: Perishable
   - type: Butcherable
     butcheringType: Spike
     spawned:
@@ -59,12 +57,7 @@
         Cold : 0.1 #per second, scales with temperature & other constants
     heatDamage:
       types:
-        Heat : 0.1 #per second, scales with temperature & other constants
-  #- type: Sprite
-  #  netsync: false
-  #  noRot: true
-  #  drawdepth: Mobs
-  #  scale: 1.05, 1.0
+        Heat : 1.5 #per second, scales with temperature & other constants
 
 - type: entity
   parent: BaseSpeciesDummy

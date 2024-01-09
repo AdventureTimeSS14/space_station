@@ -19,7 +19,6 @@
     - type: Damageable
       damageContainer: Biological
       damageModifierSet: Fur
-    - type: Carriable
     - type: MeleeWeapon
       hidden: true
       soundHit:

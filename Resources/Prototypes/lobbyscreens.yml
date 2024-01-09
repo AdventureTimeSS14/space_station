@@ -97,3 +97,7 @@
 - type: lobbyBackground
   id: Timrika
   background: /Textures/LobbyScreens/timrika.png
+
+- type: lobbyBackground
+  id: revolution
+  background: /Textures/LobbyScreens/revolution.png

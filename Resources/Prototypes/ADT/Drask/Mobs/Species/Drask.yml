@@ -16,7 +16,6 @@
     state: full
   - type: Thirst
   - type: Perishable
-  - type: Carriable
   - type: Butcherable
     butcheringType: Spike
     spawned:
