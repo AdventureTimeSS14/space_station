@@ -130,9 +130,6 @@
       - RollerBedSpawnFolded
       - CheapRollerBedSpawnFolded
       - EmergencyRollerBedSpawnFolded
-      - MicroManipulatorStockPart
-      - MatterBinStockPart
-      - CapacitorStockPart
       - ConveyorBeltAssembly
       - IntercomElectronics
       - FirelockElectronics

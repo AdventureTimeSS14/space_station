@@ -59725,13 +59725,6 @@ entities:
     - type: Transform
       pos: -10.308835,13.564301
       parent: 60
-- proto: ClothingNeckLGBTPin
-  entities:
-  - uid: 7174
-    components:
-    - type: Transform
-      pos: -11.221505,22.789167
-      parent: 60
 - proto: ClothingNeckMantleCMO
   entities:
   - uid: 17463
