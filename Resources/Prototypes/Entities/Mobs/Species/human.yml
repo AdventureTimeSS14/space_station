@@ -5,7 +5,6 @@
   name: Urist McHands
   abstract: true
   components:
-  - type: Carriable
   - type: Hunger
     starvationDamage:
       types:

@@ -43,8 +43,6 @@
   - type: Examiner
   - type: BlockMovement
   - type: BadFood
-  - type: StaticPrice
-    price: 1500
   - type: Tag
     tags:
       - Meat
@@ -55,8 +53,6 @@
   name: eyes
   description: "I see you!"
   components:
-  - type: StaticPrice
-    price: 2200
   - type: Sprite
     layers:
       - state: eyeball-l
@@ -68,8 +64,6 @@
   name: tongue
   description: "A fleshy muscle mostly used for lying."
   components:
-  - type: StaticPrice
-    price: 2000
   - type: Sprite
     state: tongue
 
@@ -90,8 +84,6 @@
   name: ears
   description: "There are three parts to the ear. Inner, middle and outer. Only one of these parts should normally be visible."
   components:
-  - type: StaticPrice
-    price: 1000
   - type: Sprite
     state: ears
 
@@ -106,8 +98,6 @@
       - state: lung-l
       - state: lung-r
   - type: Lung
-  - type: StaticPrice
-    price: 3600
   - type: Metabolizer
     removeEmpty: true
     solutionOnBody: false
@@ -142,8 +132,6 @@
   # The heart 'metabolizes' medicines and poisons that aren't filtered out by other organs.
   # This is done because these chemicals need to have some effect even if they aren't being filtered out of your body.
   # You're technically 'immune to poison' without a heart, but.. uhh, you'll have bigger problems on your hands.
-  - type: StaticPrice
-    price: 3000
   - type: Metabolizer
     maxReagents: 4
     metabolizerTypes: [Human]
@@ -207,8 +195,6 @@
       - state: kidney-l
       - state: kidney-r
   # The kidneys just remove anything that doesn't currently have any metabolisms, as a stopgap.
-  - type: StaticPrice
-    price: 2000
   - type: Metabolizer
     maxReagents: 5
     metabolizerTypes: [Human]

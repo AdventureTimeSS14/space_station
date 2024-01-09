@@ -45,7 +45,7 @@
   category: Vocal
   chatMessages: [growls]
   chatTriggers:
-    # - рычит
+    - рычит
     - ррр
     - growl
     - growls
