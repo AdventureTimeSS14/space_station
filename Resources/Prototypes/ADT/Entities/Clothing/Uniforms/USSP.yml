@@ -154,7 +154,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ADTClothingHeadHatBeretParatrooperUSSPP
+  id: ADTClothingHeadHatBeretParatrooperUSSP
   name: paratrooper's beret
   description: The famous crimson beret of the USSP Space Marines. This beret is worn only by those who deserve to prove themselves in battle, it is the most honorable award for paratroopers along with a gold medal.
   components:
