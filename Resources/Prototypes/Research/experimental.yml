@@ -94,9 +94,9 @@
   tier: 2
   cost: 8500
   recipeUnlocks:
-  - AdvancedCapacitorStockPart
-  - AdvancedMatterBinStockPart
-  - NanoManipulatorStockPart
+  - CapacitorStockPart
+  - MatterBinStockPart
+  - MicroManipulatorStockPart
 
 - type: technology
   id: AbnormalArtifactManipulation

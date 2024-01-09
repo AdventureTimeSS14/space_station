@@ -24,7 +24,7 @@
     mixMessage: "bible-mixing-success"
     reactionTypes:
     - Holy
-  - type: ItemCooldown
+  #- type: ItemCooldown
   - type: Sprite
     sprite: ADT/Objects/Specific/Chapel/woodencross.rsi
     state: icon

@@ -72,10 +72,9 @@
     sprite: ADT/Clothing/Eyes/HUD/advanced_hud.rsi
   - type: Clothing
     sprite: ADT/Clothing/Eyes/HUD/advanced_hud.rsi
-  - type: ClothingGrantComponent # Sirena-Edit's-Start
-    component:
-    - type: ShowHealthBars
-      damageContainer: Biological # Sirena-Edit's-End
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
   - type: ShowSecurityIcons
   - type: FlashImmunity
   - type: EyeProtection

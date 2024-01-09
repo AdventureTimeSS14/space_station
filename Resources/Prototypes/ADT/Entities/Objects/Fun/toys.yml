@@ -81,7 +81,6 @@
     size: Small
     sprite: Objects/Fun/toys.rsi
     heldPrefix: garbagerama
-  - type: ItemCooldown
 
 - type: entity
   parent: BasePlushie

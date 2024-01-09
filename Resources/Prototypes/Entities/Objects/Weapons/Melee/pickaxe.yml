@@ -50,7 +50,7 @@
   - type: Sprite
     sprite: Objects/Tools/handdrill.rsi
     state: handdrill
-  - type: ItemCooldown
+  #- type: ItemCooldown
   - type: Item
     size: Normal
   - type: MeleeWeapon

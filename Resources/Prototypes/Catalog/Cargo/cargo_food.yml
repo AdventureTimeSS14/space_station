@@ -34,7 +34,7 @@
     sprite: Objects/Consumable/Food/ingredients.rsi
     state: flour-big
   product: CrateFoodCooking
-  cost: 1250
+  cost: 4100
   category: Food
   group: market
 

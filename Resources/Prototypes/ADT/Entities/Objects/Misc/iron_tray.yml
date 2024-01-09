@@ -18,7 +18,7 @@
 #        - Drink
   - type: Item
     size: Ginormous
-  - type: ItemCooldown
+  #- type: ItemCooldown
   - type: MeleeWeapon
     damage:
       types:

@@ -107624,7 +107624,7 @@ entities:
         15097:
         - Pressed: Toggle
       type: DeviceLinkSource
-    - type: ItemCooldown
+    #- type: ItemCooldown
   - uid: 15146
     components:
     - pos: -43.5,23.5
@@ -107688,7 +107688,7 @@ entities:
         1310:
         - Pressed: Toggle
       type: DeviceLinkSource
-    - type: ItemCooldown
+    #- type: ItemCooldown
   - uid: 15151
     components:
     - rot: -1.5707963267948966 rad
@@ -107802,7 +107802,7 @@ entities:
         1316:
         - Pressed: Toggle
       type: DeviceLinkSource
-    - type: ItemCooldown
+    #- type: ItemCooldown
   - uid: 15160
     components:
     - rot: 3.141592653589793 rad
@@ -107815,7 +107815,7 @@ entities:
         1315:
         - Pressed: Toggle
       type: DeviceLinkSource
-    - type: ItemCooldown
+    #- type: ItemCooldown
 - proto: SignalButtonBridge
   entities:
   - uid: 15161
