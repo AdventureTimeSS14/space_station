@@ -1,5 +1,6 @@
 using System.Linq;
 using System.Numerics;
+using Content.Client.Corvax.Sponsors;
 using Content.Client.Humanoid;
 using Content.Client.Lobby.UI;
 using Content.Client.Message;
@@ -102,6 +103,7 @@ namespace Content.Client.Preferences.UI
         private BoxContainer _rgbSkinColorContainer => CRgbSkinColorContainer;
         private ColorSelectorSliders _rgbSkinColorSelector;
 
+        private bool _sponsorOnly;
         private bool _isDirty;
         private bool _needUpdatePreview;
         public int CharacterSlot;
@@ -198,7 +200,8 @@ namespace Content.Client.Preferences.UI
             CSpeciesButton.OnItemSelected += args =>
             {
                 CSpeciesButton.SelectId(args.Id);
-                SetSpecies(_speciesList[args.Id].ID);
+                var _species = _speciesList[args.Id];
+                SetSpecies(_species);
                 UpdateHairPickers();
                 OnSkinColorOnValueChanged();
             };
@@ -807,15 +810,18 @@ namespace Content.Client.Preferences.UI
         }
         // Corvax-TTS-End
 
-        private void SetSpecies(string newSpecies)
+        private void SetSpecies(SpeciesPrototype newSpecies)
         {
-            Profile = Profile?.WithSpecies(newSpecies);
+            Profile = Profile?.WithSpecies(newSpecies.ID);
             OnSkinColorOnValueChanged(); // Species may have special color prefs, make sure to update it.
-            CMarkings.SetSpecies(newSpecies); // Repopulate the markings tab as well.
+            CMarkings.SetSpecies(newSpecies.ID); // Repopulate the markings tab as well.
             UpdateSexControls(); // update sex for new species
             RebuildSpriteView(); // they might have different inv so we need a new dummy
             IsDirty = true;
+            _sponsorOnly = newSpecies.SponsorOnly;
             _needUpdatePreview = true;
+            UpdateSaveButton();
+            UpdateCSponsors();
         }
 
         private void SetName(string newName)
@@ -870,6 +876,11 @@ namespace Content.Client.Preferences.UI
             {
                 _flavorTextEdit.TextRope = new Rope.Leaf(Profile?.FlavorText ?? "");
             }
+        }
+
+        private void UpdateCSponsors()
+        {
+            CSponsors.Visible = _sponsorOnly;
         }
 
         // Sirena-ERPStatus-Start
@@ -1132,7 +1143,7 @@ namespace Content.Client.Preferences.UI
 
         private void UpdateSaveButton()
         {
-            _saveButton.Disabled = Profile is null || !IsDirty;
+            _saveButton.Disabled = Profile is null || !IsDirty || _sponsorOnly;
         }
 
         private void UpdatePreview()
@@ -1173,6 +1184,7 @@ namespace Content.Client.Preferences.UI
             UpdateHairPickers();
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
+            UpdateCSponsors();
 
             _preferenceUnavailableButton.SelectId((int) Profile.PreferenceUnavailable);
         }

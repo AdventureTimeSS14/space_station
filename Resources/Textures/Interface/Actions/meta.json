@@ -5,7 +5,7 @@
         "y": 32
     },
     "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from https://github.com/tgstation/tgstation/commit/3d049e69fe71a0be2133005e65ea469135d648c8. Harm and disarm heavily modified. Web made by jackfrost (github) for SS14. disarm, disarmOff, harm, harmOff localized by discord:kuro_0001 (388673708753027083)",
+    "copyright": "Taken from https://github.com/tgstation/tgstation/commit/3d049e69fe71a0be2133005e65ea469135d648c8. Harm and disarm heavily modified. Web made by jackfrost (github) for SS14. Eyeclose and Eyeopen by Bhijn and Myr (deathride58 on Github), under CC0.",
     "states": [
         {
             "name": "internal0"
@@ -15,9 +15,6 @@
         },
         {
             "name": "scream"
-        },
-        {
-            "name": "emotes"
         },
         {
             "name": "disarm"
@@ -47,9 +44,6 @@
             "name": "overloadlight"
         },
         {
-            "name": "owo-button"
-        },
-        {
             "name": "malfunction"
         },
         {
@@ -57,6 +51,12 @@
         },
         {
             "name": "ghostHearingToggled"
+        },
+        {
+            "name": "eyeopen"
+        },
+        {
+            "name": "eyeclose"
         }
     ]
 }

@@ -9,6 +9,7 @@ using Content.Shared.IdentityManagement;
 using Content.Shared.Nutrition.Components;
 using Content.Shared.Nutrition.EntitySystems;
 using Content.Server.Body.Components;
+using Content.Server.Chemistry.Containers.EntitySystems;
 using Content.Server.Medical;
 using Content.Server.Nutrition.EntitySystems;
 using Content.Server.Popups;
@@ -100,7 +101,7 @@ public sealed class FelinidSystem : EntitySystem
         }
     }
 
-    private static readonly SoundSpecifier HairballPlay = new SoundPathSpecifier("/Audio/ADT/Felinid/hairball.ogg", 
+    private static readonly SoundSpecifier HairballPlay = new SoundPathSpecifier("/Audio/ADT/Felinid/hairball.ogg",
         AudioParams.Default.WithVariation(0.15f));
 
     private void OnHairball(EntityUid uid, FelinidComponent component, HairballActionEvent args)
@@ -167,11 +168,15 @@ public sealed class FelinidSystem : EntitySystem
 
         if (TryComp<BloodstreamComponent>(uid, out var bloodstream))
         {
-            var temp = bloodstream.ChemicalSolution.SplitSolution(20);
-
-            if (_solutionSystem.TryGetSolution(hairball, hairballComp.SolutionName, out var hairballSolution))
+            if (bloodstream.ChemicalSolution.HasValue)
             {
-                _solutionSystem.TryAddSolution(hairball, hairballSolution, temp);
+                //TODO: Хз что тут за ...
+                // var temp = bloodstream.ChemicalSolution..SplitSolution(20);
+                //
+                // if (_solutionSystem.TryGetSolution(hairball, hairballComp.SolutionName, out var hairballSolution))
+                // {
+                //     _solutionSystem.TryAddSolution(hairball, hairballSolution, temp);
+                // }
             }
         }
     }

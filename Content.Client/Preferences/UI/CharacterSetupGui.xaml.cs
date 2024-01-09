@@ -1,5 +1,6 @@
 using System.Linq;
 using System.Numerics;
+using Content.Client.Corvax.Sponsors;
 using Content.Client.Humanoid;
 using Content.Client.Info;
 using Content.Client.Info.PlaytimeStats;

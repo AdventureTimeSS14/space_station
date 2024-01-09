@@ -98,6 +98,8 @@
     node: done
     containers:
     - entity_storage
+  - type: StaticPrice
+    price: 20
 
 #Wall Closet
 - type: entity
