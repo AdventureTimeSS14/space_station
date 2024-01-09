@@ -67347,7 +67347,7 @@ entities:
         800:
         - Pressed: Toggle
       type: DeviceLinkSource
-    - type: ItemCooldown
+    #- type: ItemCooldown
   - uid: 10181
     components:
     - rot: 1.5707963267948966 rad
@@ -67360,7 +67360,7 @@ entities:
         800:
         - Pressed: Toggle
       type: DeviceLinkSource
-    - type: ItemCooldown
+    #- type: ItemCooldown
   - uid: 10182
     components:
     - rot: 3.141592653589793 rad

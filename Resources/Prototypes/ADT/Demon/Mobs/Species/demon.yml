@@ -16,7 +16,6 @@
     netsync: false
     noRot: true
     drawdepth: Mobs
-  - type: Carriable
   - type: Body
     prototype: Demon
     requiredLegs: 2
@@ -31,7 +30,7 @@
     damageContainer: Biological
     damageModifierSet: Demon
   - type: MeleeWeapon
-    hidden: true
+    # hidden: true
     soundHit:
       path: /Audio/Weapons/pierce.ogg
     angle: 30

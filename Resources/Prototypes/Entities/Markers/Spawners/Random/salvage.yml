@@ -63,20 +63,24 @@
       offset: 0.0
 
 - type: entity
-  name: Salvage T2 Machine Parts Spawner
-  id: SalvagePartsT2Spawner
+  name: salvage loot spawner
+  id: SalvageLootSpawner
   parent: MarkerBase
   components:
     - type: Sprite
       layers:
         - state: red
-        - sprite: Objects/Misc/stock_parts.rsi
-          state: advanced_matter_bin
+        - sprite: Objects/Weapons/Melee/crusher.rsi
+          state: icon
     - type: RandomSpawner
       prototypes:
-        - AdvancedCapacitorStockPart
-        - NanoManipulatorStockPart
-        - AdvancedMatterBinStockPart
+      - WeaponCrusher
+      - WeaponCrusherDagger
+      - WeaponCrusherGlaive
+      - MiningDrill
+      - AdvancedCapacitorStockPart
+      - NanoManipulatorStockPart
+      - AdvancedMatterBinStockPart
       offset: 0.0
 
 - type: entity
@@ -257,3 +261,29 @@
   - type: ConditionalSpawner
     prototypes:
     - MobCobraSpaceSalvage
+
+- type: entity
+  name: Salvage Flesh Spawner
+  id: SalvageFleshSpawner
+  parent: SalvageMobSpawner
+  suffix: 100
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Mobs/Aliens/flesh.rsi
+          state: jared
+    - type: RandomSpawner
+      rarePrototypes:
+      - MobSharkSalvage
+      rareChance: 0
+      prototypes:
+      - MobFleshJaredSalvage
+      - MobFleshGolemSalvage
+      - MobFleshGolemSalvage
+      - MobFleshClampSalvage
+      - MobFleshClampSalvage
+      - MobFleshLoverSalvage
+      - MobFleshLoverSalvage
+      chance: 1
+      offset: 0.2

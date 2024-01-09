@@ -1,5 +1,5 @@
 - type: entity
-  parent: DrinkBottleBaseFull
+  parent: DrinkBottleGlassBaseFull
   id: ADTDrinkJuiceBerryCarton
   name: berry juice
   description: juice mix from many berries.
@@ -16,7 +16,7 @@
     sprite: ADT/Objects/Consumable/Drinks/berryjuice.rsi
 
 - type: entity
-  parent: DrinkBottleBaseFull
+  parent: DrinkBottleGlassBaseFull
   id: ADTDrinkJuiceLemonCarton
   name: lemon juice
   description: juice from lemon.

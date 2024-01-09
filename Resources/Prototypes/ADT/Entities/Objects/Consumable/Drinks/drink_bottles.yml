@@ -1,5 +1,5 @@
 - type: entity
-  parent: DrinkBottleBaseFull
+  parent: DrinkBottleGlassBaseFull
   id: ADTDrinkVodkaAntivirusBottleFull
   name: vodka "antivirus"
   description: heady drink, that is more usifull in making fire bombs, rather in drinking.
@@ -17,7 +17,7 @@
     state: icon
 
 - type: entity
-  parent: DrinkBottleBaseFull
+  parent: DrinkBottleGlassBaseFull
   id: ADTDrinkAppleLiqueurBottleFull
   name: apple liquer
   description: fruit, dessert alcoholic drink.
@@ -35,7 +35,7 @@
     state: adtappleliqueurbottle
 
 - type: entity
-  parent: DrinkBottleBaseFull
+  parent: DrinkBottleGlassBaseFull
   id: ADTDrinkCherryExquisiteWineBottleFull
   name: cherry exquisite wine
   description: a bottle of cherry wine by Nestrof company

@@ -18,29 +18,6 @@
     metabolizerTypes: [ Novakid ]
 
 - type: entity
-  id: ADTOrganNovakidBrain
-  parent: OrganHumanBrain
-  name: brain
-  description: "The source of incredible, unending intelligence. Honk."
-  components:
-  - type: Sprite
-    sprite: ADT/Mobs/Novakid/organs.rsi
-    state: brain
-  - type: Organ
-  - type: Input
-    context: "ghost"
-  - type: Brain
-  - type: InputMover
-  - type: Examiner
-  - type: BlockMovement
-  - type: BadFood
-  - type: StaticPrice
-    price: 1500
-  - type: Tag
-    tags:
-      - Meat
-
-- type: entity
   id: OrganNovakidHeart
   parent: OrganAnimalHeart
   suffix: "novakid"

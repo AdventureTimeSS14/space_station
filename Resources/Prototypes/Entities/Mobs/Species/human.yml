@@ -5,7 +5,6 @@
   name: Urist McHands
   abstract: true
   components:
-  - type: Carriable
   - type: Hunger
     starvationDamage:
       types:
@@ -15,7 +14,6 @@
     sprite: Mobs/Species/Human/parts.rsi
     state: full
   - type: Thirst
-  - type: Perishable
   - type: Butcherable
     butcheringType: Spike
     spawned:

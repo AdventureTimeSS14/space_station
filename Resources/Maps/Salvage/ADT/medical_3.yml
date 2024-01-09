@@ -216,8 +216,6 @@ entities:
       type: GridAtmosphere
     - type: GasTileOverlay
     - type: RadiationGridResistance
-    - mobsToKill: []
-      type: SalvageMobRestrictionsGrid
 - proto: ActionVendingThrow
   entities:
   - uid: 45
