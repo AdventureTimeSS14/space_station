@@ -1,0 +1,12 @@
+- type: entity
+  id: ADTCrateFishFreezer
+  parent: CrateFreezer
+  name: Crate of fillet of fish
+  description: Crate with 6 fillet of fish and 3 fish cutlet.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ADTFoodFish
+      amount: 6
+    - id: ADTFoodFishCutlet
+      amount: 3

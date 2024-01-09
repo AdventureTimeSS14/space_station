@@ -117,6 +117,12 @@
     ClothingEyesGlasses: 6
     ClothingEyesGlassesSunglasses: 2
     ClothingHandsGlovesColorBlack: 4
+    ADTClothingUnderwearRedLacePanties: 3
+    ADTClothingUnderwearTopLaceBraRed: 3
+    ADTClothingUnderwearBlackLacePanties: 3
+    ADTClothingUnderwearTopLaceBraBlack: 3
+    ADTClothingUnderwearWhiteComfyPanties: 3
+    ADTClothingUnderwearTopComfyWhiteBra: 3
   contrabandInventory:
     ClothingUniformJumpsuitTacticool: 1
     ClothingUniformJumpskirtTacticool: 1

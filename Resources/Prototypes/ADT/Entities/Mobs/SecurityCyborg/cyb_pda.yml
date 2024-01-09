@@ -1,0 +1,13 @@
+- type: entity
+  parent: BasePDA
+  id: ADTSecurityCybPDA
+  name: security PDA
+  description: Red to hide the stains of passenger blood.
+  components:
+  - type: Pda
+    id: ADTSecurityCybIDCard
+    state: pda-security
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+  - type: Icon
+    state: pda-security

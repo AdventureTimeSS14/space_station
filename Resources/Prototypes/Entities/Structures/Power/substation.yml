@@ -52,7 +52,7 @@
   - type: BatteryDischarger
     voltage: Medium
   - type: PowerNetworkBattery
-    maxSupply: 150000
+    maxSupply: 200000
     maxChargeRate: 5000
     supplyRampTolerance: 5000
     supplyRampRate: 1000
@@ -185,7 +185,7 @@
   - type: BatteryDischarger
     voltage: Medium
   - type: PowerNetworkBattery
-    maxSupply: 300000
+    maxSupply: 150000
     maxChargeRate: 5000
     supplyRampTolerance: 5000
     supplyRampRate: 1000

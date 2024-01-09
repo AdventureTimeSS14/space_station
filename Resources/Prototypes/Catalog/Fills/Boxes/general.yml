@@ -188,7 +188,7 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 0,0,10,7
+    - 0,0,5,1
   - type: StorageFill
     contents:
       - id: DrinkMREFlask # Size 8

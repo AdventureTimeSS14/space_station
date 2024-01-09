@@ -66,7 +66,7 @@
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
             #ADT
-            Brigmedic: [ 1, 1 ]           
+            Brigmedic: [ 1, 1 ]
             ADTBlueShieldOfficer: [ 1, 2 ]
             Magistrat: [ 1, 1 ]
             IAA: [ 1, 1 ] # Corvax-IAA
@@ -76,3 +76,4 @@
             ADTMedicalBorg: [ 1, 1 ] #ADT
             ADTServiseBorg: [ 1, 1 ] #ADT
             ADTSupplyBorg: [ 1, 1 ] #ADT
+            ADTSecurityCyborg: [ 1, 1 ] #ADT

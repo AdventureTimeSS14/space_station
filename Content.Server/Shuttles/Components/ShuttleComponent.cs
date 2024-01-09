@@ -20,9 +20,9 @@ namespace Content.Server.Shuttles.Components
         /// Maximum velocity assuming unupgraded, tier 1 thrusters
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]
-        public float BaseMaxLinearVelocity = 40f;
+        public float BaseMaxLinearVelocity = 20f;
 
-        public const float MaxAngularVelocity = 8f;
+        public const float MaxAngularVelocity = 4f;
 
         /// <summary>
         /// The cached thrust available for each cardinal direction
@@ -54,7 +54,7 @@ namespace Content.Server.Shuttles.Components
         public readonly List<EntityUid> AngularThrusters = new();
 
         [ViewVariables]
-        public float AngularThrust = 10f;
+        public float AngularThrust = 0f;
 
         /// <summary>
         /// A bitmask of all the directions we are considered thrusting.
@@ -66,9 +66,9 @@ namespace Content.Server.Shuttles.Components
         /// Damping applied to the shuttle's physics component when not in FTL.
         /// </summary>
         [DataField("linearDamping"), ViewVariables(VVAccess.ReadWrite)]
-        public float LinearDamping = 0.06f;
+        public float LinearDamping = 0.05f;
 
         [DataField("angularDamping"), ViewVariables(VVAccess.ReadWrite)]
-        public float AngularDamping = 0.06f;
+        public float AngularDamping = 0.05f;
     }
 }
