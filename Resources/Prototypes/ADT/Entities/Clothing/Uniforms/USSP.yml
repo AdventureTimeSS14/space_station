@@ -159,9 +159,9 @@
   description: The famous crimson beret of the USSP Space Marines. This beret is worn only by those who deserve to prove themselves in battle, it is the most honorable award for paratroopers along with a gold medal.
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Head/Hats/paratrooper_beret_USSPP.rsi
+    sprite: ADT/Clothing/Head/Hats/paratrooper_beret_USSP.rsi
   - type: Clothing
-    sprite: ADT/Clothing/Head/Hats/paratrooper_beret_USSPP.rsi
+    sprite: ADT/Clothing/Head/Hats/paratrooper_beret_USSP.rsi
 
 - type: entity
   parent: ClothingUniformBase
