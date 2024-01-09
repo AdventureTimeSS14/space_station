@@ -133,6 +133,20 @@
     Plastic: 100
 
 - type: latheRecipe
+  id: FloorGreenCircuit
+  result: FloorTileItemGCircuit4
+  completetime: 2
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: FloorBlueCircuit
+  result: FloorTileItemBCircuit4
+  completetime: 2
+  materials:
+    Steel: 100
+
+- type: latheRecipe
   id: RadioHandheld
   result: RadioHandheld
   completetime: 2

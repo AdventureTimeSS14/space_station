@@ -61008,7 +61008,7 @@ entities:
         8966:
         - Pressed: Toggle
       type: DeviceLinkSource
-    - type: ItemCooldown
+    #- type: ItemCooldown
   - uid: 8994
     components:
     - pos: -13.5,12.5
@@ -61046,7 +61046,7 @@ entities:
         480:
         - Pressed: Toggle
       type: DeviceLinkSource
-    - type: ItemCooldown
+    #- type: ItemCooldown
   - uid: 8997
     components:
     - pos: 51.5,18.5

@@ -12,7 +12,7 @@
     damage:
       types:
         Blunt: 2
-    bluntStaminaDamageFactor: 2.0 
+    bluntStaminaDamageFactor: 2.0
     angle: 60
     animation: WeaponArcSlash
   - type: StaminaDamageOnHit
@@ -21,7 +21,7 @@
   - type: StaminaDamageOnCollide
     damage: 30
     sound: /Audio/Weapons/egloves.ogg
-  - type: ItemCooldown
+  #- type: ItemCooldown
   - type: Item
     heldPrefix: off
     size: Normal
