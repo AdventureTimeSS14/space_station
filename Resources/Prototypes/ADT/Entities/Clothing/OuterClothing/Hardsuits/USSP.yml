@@ -1,0 +1,366 @@
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ADTClothingOuterHardsuitOBS7USSP
+  name: USSP OBS-7 Konrad armor suit
+  description: OBS-7 "Konrad", stands for, Combined-Arms Armor-Suit Model 7, is a single combined-arms armor suit of the Konrad series, designed to provide high protection and mobility. This armor suit surpasses its predecessor in terms of mobility and protection from laser weapons, although it is significantly inferior in armor protection from small arms and explosions.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/OBS7USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/OBS7USSP.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.2
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.2
+        Slash: 0.2
+        Piercing: 0.15
+        Heat: 0.2
+        Radiation: 0
+        Caustic: 0.1
+        Stun: 0.05
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.75
+  - type: ToggleableClothing
+    clothingPrototype: ADTClothingHeadHelmetHardsuitOBS7USSP
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadHelmetHardsuitOBS7USSPP
+  noSpawn: true
+  name: helmet of the USSP OBS-7 Konrad armor suit
+  description: helmet of the USSP OBS-7 Konrad armor suit
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/OBS7_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/OBS7_USSP.rsi
+  - type: PointLight
+    color: white
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ADTClothingOuterHardsuitOBS5USSP
+  name: USSP OBS-5 Konrad armor suit
+  description: OBS-5 "Konrad", also known as the Combined-Arms Armor Suit Model 5, is a morally intimidating model of a single combined-arms armor suit of the Konrad series. This spacesuit was designed with high protection against small arms and explosions in mind.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/OBS5USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/OBS5USSP.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.2
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.2
+        Slash: 0.2
+        Piercing: 0.15
+        Heat: 0.2
+        Radiation: 0
+        Caustic: 0.1
+        Stun: 0.05
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.75
+  - type: ToggleableClothing
+    clothingPrototype: ADTClothingHeadHelmetHardsuitOBS5USSPP
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadHelmetHardsuitOBS5USSPP
+  noSpawn: true
+  name: helmet of the USSP OBS-5 Konrad Armor Suit
+  description: helmet of the USSP OBS-5 Konrad armor suit
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/OBS5_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/OBS5_USSP.rsi
+  - type: PointLight
+    color: white
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ADTClothingOuterHardsuitSL5USSP
+  name: USSP SL-5 "Pilot" spacesuit
+  description: Pilot's Spacesuit Model 5, a special kit consisting of an outer jumpsuit, shock absorbers and armor plates designed to protect and isolate the pilot of a space shuttle from the external environment of boundless space.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/SL5USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/SL5USSP.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.95
+        Piercing: 0.15
+        Heat: 0.90
+        Radiation: 0
+        Caustic: 0.5
+        Stun: 0.05
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.95
+  - type: ToggleableClothing
+    clothingPrototype: ADTClothingHeadHelmetHardsuitSL5USSPP
+
+- type: entity
+  parent: ClothingHeadEVAHelmetBase
+  id: ADTClothingHeadHelmetHardsuitSL5USSPP
+  noSpawn: true
+  name: the helmet of the Pilot's Spacesuit Model 5
+  description: A protective helmet to protect the head from the external environment of space, this helmet is equipped with an air supply system through a balloon, so that you can breathe without wearing masks.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/SL5_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/SL5_USSP.rsi
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ADTClothingOuterHardsuitDBS40KUSSP
+  name: Power armor of the cosmo-paratrooper SSSP "DBS-40k"
+  description: An experimental model of a military armored suit, specially designed for the needs of the Space Landing forces of the USSP. This is a weighted and modified version of the OBS-7. During the modifications of the armor suit, the armor plates were replaced with a stronger analog, and additional armor was installed, which made it more massive. However, the protective characteristics have been significantly improved, providing the carrier with high protection from enemy factors in outer space and on the surface of planets.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/DBS40KUSSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/DBS40KUSSP.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.2
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.2
+        Slash: 0.2
+        Piercing: 0.15
+        Heat: 0.2
+        Radiation: 0
+        Caustic: 0.1
+        Stun: 0.05
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.75
+  - type: ToggleableClothing
+    clothingPrototype: ADTClothingHeadHelmetHardsuitDBS40KUSSPP
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadHelmetHardsuitDBS40KUSSPP
+  noSpawn: true
+  name: the armor helmet of the exocosuit
+  description: An enhanced version of the OBS-7 helmet. What at first glance looks like cutouts for the eyes, in fact, these are external sensors and measuring systems that work like a rangefinder.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/DBS40K_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/DBS40K_USSP.rsi
+  - type: PointLight
+    color: white
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ADTClothingOuterHardsuitCamouflageColorsExocosuit
+  name: the exocosuit of the SSSP special forces "S.A.M." in camouflage colors
+  description: The S.A.M. exocosuit, also known as the "Adaptive Camouflage System", is a completely innovative means of protection for operatives of Special units of the USSP. Combining advanced technologies of composite materials, carbon coatings, as well as adaptive camouflage, roughly speaking - "invisibility", these exosuits provide outstanding protective effectiveness and have shown themselves to be at their best in operational conditions. This spacesuit is in the "Camouflage" color scheme
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/camouflagecolors_exocosuitUSSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/camouflagecolors_exocosuitUSSP.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.2
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.2
+        Slash: 0.2
+        Piercing: 0.15
+        Heat: 0.2
+        Radiation: 0
+        Caustic: 0.1
+        Stun: 0.05
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.75
+  - type: ToggleableClothing
+    clothingPrototype: ADTClothingHeadHelmetHardsuitCamouflageColors
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadHelmetHardsuitCamouflageColors
+  noSpawn: true
+  name: the armor helmet of the exocosuit
+  description: A sturdy special forces helmet with motion, light and sound sensors, the helmet has no cutouts for the eyes, which provides full protection for the wearer's head.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/camouflagecolors_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/camouflagecolors_USSP.rsi
+  - type: PointLight
+    color: white
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ADTClothingOuterHardsuitDesertedExocosuit
+  name: the exocosuit of the SSSP special forces "S.A.M." in deserted colors
+  description: The S.A.M. exocosuit, also known as the "Adaptive Camouflage System", is a completely innovative means of protection for operatives of Special units of the USSP. Combining advanced technologies of composite materials, carbon coatings, as well as adaptive camouflage, roughly speaking - "invisibility", these exosuits provide outstanding protective effectiveness and have shown themselves to be at their best in operational conditions. This spacesuit is in the "Deserted" color scheme
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/deserted_exocosuitUSSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/deserted_exocosuitUSSP.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.2
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.2
+        Slash: 0.2
+        Piercing: 0.15
+        Heat: 0.2
+        Radiation: 0
+        Caustic: 0.1
+        Stun: 0.05
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.75
+  - type: ToggleableClothing
+    clothingPrototype: ADTClothingHeadHelmetHardsuitDesertedColors
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadHelmetHardsuitDesertedColors
+  noSpawn: true
+  name: the armor helmet of the exocosuit
+  description: A sturdy special forces helmet with motion, light and sound sensors, the helmet has no cutouts for the eyes, which provides full protection for the wearer's head.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/deserted_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/deserted_USSP.rsi
+  - type: PointLight
+    color: white
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ADTClothingOuterHardsuitTacticalExocosuit
+  name: the exocosuit of the SSSP special forces "S.A.M." in the tactical scheme
+  description: The S.A.M. exocosuit, also known as the "Adaptive Camouflage System", is a completely innovative means of protection for operatives of Special units of the USSP. Combining advanced technologies of composite materials, carbon coatings, as well as adaptive camouflage, roughly speaking - "invisibility", these exosuits provide outstanding protective effectiveness and have shown themselves to be at their best in operational conditions. This spacesuit is in the "Tactical" color scheme
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/tactical_exocosuitUSSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/tactical_exocosuitUSSP.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.2
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.2
+        Slash: 0.2
+        Piercing: 0.15
+        Heat: 0.2
+        Radiation: 0
+        Caustic: 0.1
+        Stun: 0.05
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.75
+  - type: ToggleableClothing
+    clothingPrototype: ADTClothingHeadHelmetHardsuitTacticalColors
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadHelmetHardsuitTacticalColors
+  noSpawn: true
+  name: the armor helmet of the exocosuit
+  description: A sturdy special forces helmet with motion, light and sound sensors, the helmet has no cutouts for the eyes, which provides full protection for the wearer's head.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/tactical_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/tactical_USSP.rsi
+  - type: PointLight
+    color: white
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
