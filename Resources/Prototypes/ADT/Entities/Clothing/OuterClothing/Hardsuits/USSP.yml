@@ -30,8 +30,7 @@
 
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
-  id: ADTClothingHeadHelmetHardsuitOBS7USSPP
-  noSpawn: true
+  id: ADTClothingHeadHelmetHardsuitOBS7USSP
   name: helmet of the USSP OBS-7 Konrad armor suit
   description: helmet of the USSP OBS-7 Konrad armor suit
   components:
@@ -70,13 +69,13 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.2
-        Slash: 0.2
-        Piercing: 0.15
-        Heat: 0.2
-        Radiation: 0
-        Caustic: 0.1
-        Stun: 0.05
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.45
+        Heat: 0.6
+        Radiation: 0.8
+        Caustic: 0.75
+        Stun: 0.6
   - type: ClothingSpeedModifier
     sprintModifier: 0.75
   - type: ToggleableClothing
@@ -85,7 +84,6 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ADTClothingHeadHelmetHardsuitOBS5USSPP
-  noSpawn: true
   name: helmet of the USSP OBS-5 Konrad Armor Suit
   description: helmet of the USSP OBS-5 Konrad armor suit
   components:
@@ -124,13 +122,13 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.70
-        Slash: 0.95
-        Piercing: 0.15
-        Heat: 0.90
-        Radiation: 0
-        Caustic: 0.5
-        Stun: 0.05
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.45
+        Heat: 0.8
+        Radiation: 0.8
+        Caustic: 0.8
+        Stun: 0.6
   - type: ClothingSpeedModifier
     sprintModifier: 0.95
   - type: ToggleableClothing
@@ -139,7 +137,6 @@
 - type: entity
   parent: ClothingHeadEVAHelmetBase
   id: ADTClothingHeadHelmetHardsuitSL5USSPP
-  noSpawn: true
   name: the helmet of the Pilot's Spacesuit Model 5
   description: A protective helmet to protect the head from the external environment of space, this helmet is equipped with an air supply system through a balloon, so that you can breathe without wearing masks.
   components:
@@ -166,13 +163,13 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.2
-        Slash: 0.2
-        Piercing: 0.15
-        Heat: 0.2
-        Radiation: 0
-        Caustic: 0.1
-        Stun: 0.05
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.45
+        Heat: 0.6
+        Radiation: 0.8
+        Caustic: 0.75
+        Stun: 0.6
   - type: ClothingSpeedModifier
     sprintModifier: 0.75
   - type: ToggleableClothing
@@ -181,7 +178,6 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ADTClothingHeadHelmetHardsuitDBS40KUSSPP
-  noSpawn: true
   name: the armor helmet of the exocosuit
   description: An enhanced version of the OBS-7 helmet. What at first glance looks like cutouts for the eyes, in fact, these are external sensors and measuring systems that work like a rangefinder.
   components:
@@ -220,13 +216,13 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.2
-        Slash: 0.2
-        Piercing: 0.15
-        Heat: 0.2
-        Radiation: 0
-        Caustic: 0.1
-        Stun: 0.05
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.45
+        Heat: 0.6
+        Radiation: 0.8
+        Caustic: 0.75
+        Stun: 0.6
   - type: ClothingSpeedModifier
     sprintModifier: 0.75
   - type: ToggleableClothing
@@ -235,7 +231,6 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ADTClothingHeadHelmetHardsuitCamouflageColors
-  noSpawn: true
   name: the armor helmet of the exocosuit
   description: A sturdy special forces helmet with motion, light and sound sensors, the helmet has no cutouts for the eyes, which provides full protection for the wearer's head.
   components:
@@ -274,13 +269,13 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.2
-        Slash: 0.2
-        Piercing: 0.15
-        Heat: 0.2
-        Radiation: 0
-        Caustic: 0.1
-        Stun: 0.05
+        Blunt: 0.55
+        Slash: 0.55
+        Piercing: 0.45
+        Heat: 0.5
+        Radiation: 0.6
+        Caustic: 0.65
+        Stun: 0.6
   - type: ClothingSpeedModifier
     sprintModifier: 0.75
   - type: ToggleableClothing
@@ -289,7 +284,6 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ADTClothingHeadHelmetHardsuitDesertedColors
-  noSpawn: true
   name: the armor helmet of the exocosuit
   description: A sturdy special forces helmet with motion, light and sound sensors, the helmet has no cutouts for the eyes, which provides full protection for the wearer's head.
   components:
@@ -328,13 +322,13 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.2
-        Slash: 0.2
-        Piercing: 0.15
-        Heat: 0.2
-        Radiation: 0
-        Caustic: 0.1
-        Stun: 0.05
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.45
+        Heat: 0.6
+        Radiation: 0.8
+        Caustic: 0.75
+        Stun: 0.6
   - type: ClothingSpeedModifier
     sprintModifier: 0.75
   - type: ToggleableClothing
@@ -343,7 +337,6 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ADTClothingHeadHelmetHardsuitTacticalColors
-  noSpawn: true
   name: the armor helmet of the exocosuit
   description: A sturdy special forces helmet with motion, light and sound sensors, the helmet has no cutouts for the eyes, which provides full protection for the wearer's head.
   components:
