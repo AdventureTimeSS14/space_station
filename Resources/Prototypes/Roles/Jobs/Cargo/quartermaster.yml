@@ -19,7 +19,7 @@
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"
   supervisors: job-supervisors-captain
-  canBeAntag: false # НЕ ДОЛЖНО БЫТЬ
+  canBeAntag: true
   access:
   - Cargo
   - Salvage
@@ -29,7 +29,7 @@
   - Brig
   special:
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ] # ИЗ-ЗА ЭТОГО И НЕ ДОЛЖНО БЫТЬ
+    implants: [ MindShieldImplant ]
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
