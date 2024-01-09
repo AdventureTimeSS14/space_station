@@ -153,17 +153,6 @@
     sprite: ADT/Clothing/Head/Hats/officer_USSP_cap.rsi
 
 - type: entity
-  parent: ClothingHeadBase
-  id: ADTClothingHeadHatBeretParatrooperUSSP
-  name: paratrooper's beret
-  description: The famous crimson beret of the USSP Space Marines. This beret is worn only by those who deserve to prove themselves in battle, it is the most honorable award for paratroopers along with a gold medal.
-  components:
-  - type: Sprite
-    sprite: ADT/Clothing/Head/Hats/paratrooper_beret_USSP.rsi
-  - type: Clothing
-    sprite: ADT/Clothing/Head/Hats/paratrooper_beret_USSP.rsi
-
-- type: entity
   parent: ClothingUniformBase
   id: ADTInfantrymanTUSSPUniform
   name: the uniform of the SSP infantryman
