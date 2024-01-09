@@ -250,6 +250,9 @@
       - Scalpel
       - Retractor
       - Cautery
+      - CapacitorStockPart
+      - MatterBinStockPart
+      - MicroManipulatorStockPart
       - Drill
       - WeaponParticleDecelerator
       - HoloprojectorField
