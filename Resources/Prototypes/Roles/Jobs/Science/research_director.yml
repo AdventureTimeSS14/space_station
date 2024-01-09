@@ -14,7 +14,7 @@
   icon: "JobIconResearchDirector"
   requireAdminNotify: true
   supervisors: job-supervisors-captain
-  canBeAntag: true
+  canBeAntag: false # НЕ ДОЛЖНО БЫТЬ
   access:
   - Research
   - Command
@@ -23,7 +23,7 @@
   - Brig
   special:
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
+    implants: [ MindShieldImplant ] # ИЗ-ЗА ЭТОГО И НЕ ДОЛЖНО БЫТЬ
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
