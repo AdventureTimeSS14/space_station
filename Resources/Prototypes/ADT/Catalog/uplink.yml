@@ -342,7 +342,8 @@
   id: ADTUplinkThiefBundle
   name: uplink-thief-bundle-name
   description: uplink-thief-bundle-desc
-  productEntity: ADTToolboxSyndicateFilledThief   cost:
+  productEntity: ADTToolboxSyndicateFilledThief   
+  cost:
     Telecrystal: 10
   categories:
     - UplinkBundles
