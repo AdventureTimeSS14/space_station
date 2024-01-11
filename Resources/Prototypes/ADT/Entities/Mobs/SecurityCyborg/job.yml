@@ -23,7 +23,20 @@
   jobEntity: ADTMobCyborSecurity
   canBeAntag: false
   access:
-  - AllAccess
+  - Command
+  - Brig
+  - Security
+  - Armory
+  - Maintenance
+  - Service
+  - External
+  - Research
+  - Medical
+  - Engineering
+  - Cargo
+  - Centcom
+  - Detective
+  - Investigator
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

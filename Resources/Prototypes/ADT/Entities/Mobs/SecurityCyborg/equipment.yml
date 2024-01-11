@@ -127,8 +127,8 @@
     sprite: ADT/Mobs/Silicon/Cyborg/advanced.rsi
   - type: Clothing
     sprite: ADT/Mobs/Silicon/Cyborg/advanced.rsi
-  # - type: Magboots
-  #   toggleAction: ActionToggleMagboots
+  - type: Magboots
+    # toggleAction: ActionToggleMagboots
 
 - type: entity
   parent: ClothingNeckMantleHOSShoulder
