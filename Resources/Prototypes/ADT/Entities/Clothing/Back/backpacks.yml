@@ -201,3 +201,41 @@
       - id: ADTSpaceLaw
   - type: Sprite
     sprite: ADT/Clothing/Back/lapkee_satchel.rsi
+
+- type: entity
+  parent: ClothingBackpack
+  id: ADTClothingBackpackOR80L
+  name: backpack "OR-80L"
+  description: combined arms backpack
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Back/backpack_OR80L.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,9,4
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+
+- type: entity
+  parent: ClothingBackpack
+  id: ADTClothingBackpackOR40L
+  name: backpack "OR-40L"
+  description: combined arms backpack
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Back/backpack_OR40L.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,9,4
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
