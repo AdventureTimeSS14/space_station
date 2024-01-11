@@ -49,7 +49,7 @@
     price: 500
   - type: AmmoCounter
   - type: Gun
-    fireRate: 6.3
+    fireRate: 4.7
     minAngle: 5
     maxAngle: 7
     angleIncrease: 2
