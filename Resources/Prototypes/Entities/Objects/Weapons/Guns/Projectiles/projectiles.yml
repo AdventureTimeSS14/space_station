@@ -985,7 +985,7 @@
     impactEffect: BulletImpactEffectKinetic
     damage:
       types:
-        Heat: 20
+        Heat: 27
 
 - type: entity
   name: emitter bolt

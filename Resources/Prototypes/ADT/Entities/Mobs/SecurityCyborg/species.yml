@@ -1,6 +1,6 @@
 - type: species
   id: ADTCyborgSpecies
-  name: species-name-ipc
+  name: species-name-cyb-security
   roundStart: false #
   prototype: ADTMobCyborSecurity
   sprites: ADTMobCyborgSecSprites
