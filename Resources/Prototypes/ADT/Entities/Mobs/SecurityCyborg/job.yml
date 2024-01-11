@@ -23,12 +23,7 @@
   jobEntity: ADTMobCyborSecurity
   canBeAntag: false
   access:
-  - Security
-  - Brig
-  - Maintenance
-  - Service
-  - Detective
-  - Investigator
+  - AllAccess
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
@@ -64,6 +59,9 @@
     belt: ClothingBeltSecurityFilled
     pocket1: ADtWeaponSecCyborg
     #pocket2: WeaponDisabler
-    #neck: ADTClothingNeckSecBadge # армейский жетон
+    neck: ADTClothingNeckMantleHOSShoulderSecurityCyb
+    shoes: ADTClothingShoesBootsCybSec
   satchel: ClothingBackpackSatchelSecurityFilled
   duffelbag: ClothingBackpackDuffelSecurityFilled
+
+
