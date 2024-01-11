@@ -142,6 +142,7 @@
   - type: Flashable
   - type: Damageable
     damageContainer: Silicon
+    damageModifierSet: CyborgMetallic
   - type: Destructible
     thresholds:
     - trigger:
@@ -250,3 +251,10 @@
         - Syndicate
     - type: ShowSyndicateIcons
     - type: MovementAlwaysTouching
+    - type: Damageable
+      damageModifierSet: CyborgMetallicStrong 
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        130: Critical
+        260: Dead
