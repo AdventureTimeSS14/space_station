@@ -119,9 +119,7 @@
       collection: FootstepSoldier
       params:
         volume: -2
-  #- type: NoSlip #есть магбутсы поэтому не нужен
-  # - type: Magboots
-  #   toggleAction: ActionToggleMagboots
+  - type: NoSlip
   - type: Insulated
 
 
