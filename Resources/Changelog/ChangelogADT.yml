@@ -1019,3 +1019,16 @@ Entries:
   - {message: Изменено КЗ и СРП. Крепитесь, type: Tweak}
   id: 55660 #костыль отображения в Обновлениях
   time: '2024-01-08T07:20:00.0000000+00:00'
+
+- author: Altius
+  changes:
+  - {message: Новая одежда СССП, type: add}
+  - {message: Новые скафандры СССП, type: add}
+  - {message: Новые РПС СССП, type: add}
+  - {message: Новые фуражки СССП, type: add}
+  - {message: Новые береты СССП, type: add}
+  - {message: Офицерский ремень с кобурой, type: add}
+  - {message: Тельняшка, type: add}
+  - {message: Ботинки СССП, type: add}
+  id: 55661 #костыль отображения в Обновлениях
+  time: '2024-01-11T07:20:00.0000000+00:00'
