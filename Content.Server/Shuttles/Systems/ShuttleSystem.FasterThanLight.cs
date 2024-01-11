@@ -36,9 +36,9 @@ public sealed partial class ShuttleSystem
 
     public const float DefaultStartupTime = 5.5f;
     public const float DefaultTravelTime = 40f;
-    public const float DefaultArrivalTime = 80f;
-    private const float FTLCooldown = 50f;
-    private const float ShuttleFTLRange = 100f;
+    public const float DefaultArrivalTime = 40f;
+    private const float FTLCooldown = 30f;
+    private const float ShuttleFTLRange = 50f;
 
     /// <summary>
     /// Minimum mass a grid needs to be to block a shuttle recall.
@@ -76,6 +76,8 @@ public sealed partial class ShuttleSystem
     /// Minimum mass for an FTL destination
     /// </summary>
     public const float FTLDestinationMass = 500f;
+
+    private HashSet<EntityUid> _lookupEnts = new();
 
     private EntityQuery<BodyComponent> _bodyQuery;
     private EntityQuery<BuckleComponent> _buckleQuery;
@@ -716,8 +718,10 @@ public sealed partial class ShuttleSystem
             // Handle clearing biome stuff as relevant.
             tileSet.Clear();
             _biomes.ReserveTiles(xform.MapUid.Value, aabb, tileSet);
+            _lookupEnts.Clear();
+            _lookup.GetEntitiesIntersecting(xform.MapUid.Value, aabb, _lookupEnts, LookupFlags.Uncontained);
 
-            foreach (var ent in _lookup.GetEntitiesIntersecting(xform.MapUid.Value, aabb, LookupFlags.Uncontained))
+            foreach (var ent in _lookupEnts)
             {
                 if (ent == uid || immune.Contains(ent))
                 {

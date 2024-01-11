@@ -1993,7 +1993,7 @@ entities:
       pos: 2.3266983,2.5124903
       parent: 1
       type: Transform
-    - type: ItemCooldown
+    #- type: ItemCooldown
 - proto: ClothingBackpackDuffelSyndicatePyjamaBundle
   entities:
   - uid: 434

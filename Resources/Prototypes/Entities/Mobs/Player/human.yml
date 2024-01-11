@@ -57,7 +57,7 @@
 
 # Space Ninja
 - type: entity
-  noSpawn: true
+  #noSpawn: true
   name: Space Ninja
   parent: MobHuman
   id: MobHumanSpaceNinja

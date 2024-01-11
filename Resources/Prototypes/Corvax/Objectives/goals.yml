@@ -1,6 +1,6 @@
-- type: stationGoal
-  id: StationGoalShuttle
-  text: station-goal-shuttle
+# - type: stationGoal
+#   id: StationGoalShuttle
+#   text: station-goal-shuttle
 
 - type: stationGoal
   id: StationGoalSingularity
@@ -65,3 +65,23 @@
 - type: stationGoal
   id: stationgoalsmes
   text:   station-goal-smes
+
+- type: stationGoal
+  id: stationgoalshuttlecrew
+  text:   station-goal-shuttlecrew
+
+- type: stationGoal
+  id: stationgoalshuttlernd
+  text:   station-goal-shuttlernd
+
+- type: stationGoal
+  id: stationgoalshuttleminning
+  text:   station-goal-shuttleminning
+
+- type: stationGoal
+  id: stationgoalshuttlemedical
+  text:   station-goal-shuttlemedical
+
+- type: stationGoal
+  id: stationgoaltesla
+  text:   station-goal-tesla

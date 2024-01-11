@@ -91,7 +91,7 @@
     graph: APC
     node: apc
   - type: PowerNetworkBattery
-    maxSupply: 50000
+    maxSupply: 15000
     maxChargeRate: 5000
     supplyRampTolerance: 1000
     supplyRampRate: 500
@@ -131,6 +131,8 @@
     requirePower: true
     mediumVoltageNode: input
     lowVoltageNode: output
+  - type: LightningTarget
+    priority: 1
   - type: StaticPrice
     price: 500
   - type: BatteryDrinkerSource

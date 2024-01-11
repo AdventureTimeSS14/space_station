@@ -1,0 +1,80 @@
+- type: job
+  id: ADTSecurityCyborg
+  name: JobADTSecurityCyborg
+  description: job-description-security-cyborg
+  playTimeTracker: JobSecurityCyborg
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 2160000000 #60 hrs    216000
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 4600000000 #46000
+    - !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 21600000000 #6 hrs 21600
+    - !type:RoleTimeRequirement
+      role: JobWarden
+      time: -100000000 #6 hrs 21600
+    - !type:RoleTimeRequirement
+      role: JobDetective
+      time: 720000000 #2 hrs 7200
+  icon: "JobADTIconSecurityCyborg"
+  supervisors: job-supervisors-rd
+  jobEntity: ADTMobCyborSecurity
+  canBeAntag: false
+  access:
+  - Command
+  - Brig
+  - Security
+  - Armory
+  - Maintenance
+  - Service
+  - External
+  - Research
+  - Medical
+  - Engineering
+  - Cargo
+  - Centcom
+  - Detective
+  - Investigator
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+
+- type: entity
+  id: ADTSpawnPointSecurityCyborg
+  parent: ADTSpawnPointJobBase
+  name: SecurityCyborg
+  components:
+  - type: SpawnPoint
+    job_id: ADTSecurityCyborg
+  - type: Sprite       # Потом подправить
+    layers:
+    - state: green
+    - sprite: Mobs/Silicon/chassis.rsi
+      state: engineer
+    - sprite: Mobs/Silicon/chassis.rsi
+      state: engineer_e
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobADTIconSecurityCyborg
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: JobADTIconSecurityCyborg
+
+- type: startingGear
+  id: ADTSecurityCyborgGear
+  equipment:
+    suitstorage: ADTGunRifleFNFAL  #ADTMagazineRifleFNFAL
+    back: ADTClothingBackpackSecurityCyb
+    id: ADTSecurityCybPDA
+    belt: ClothingBeltSecurityFilled
+    pocket1: ADtWeaponSecCyborg
+    #pocket2: WeaponDisabler
+    neck: ADTClothingNeckMantleHOSShoulderSecurityCyb
+    #shoes: ADTClothingShoesBootsCybSec
+  satchel: ClothingBackpackSatchelSecurityFilled
+  duffelbag: ClothingBackpackDuffelSecurityFilled
+
+

@@ -119,3 +119,13 @@
   cost: 1000
   category: Food
   group: market
+
+- type: cargoProduct
+  id: ADTCargoFishCrate
+  icon:
+    sprite: ADT/Objects/Consumable/Food/fish.rsi
+    state: fish
+  product: ADTCrateFishFreezer
+  cost: 1000
+  category: Food
+  group: market

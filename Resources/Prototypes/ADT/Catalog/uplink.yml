@@ -342,8 +342,7 @@
   id: ADTUplinkThiefBundle
   name: uplink-thief-bundle-name
   description: uplink-thief-bundle-desc
-  productEntity: ADTToolboxSyndicateFilledThief 
-  cost:
+  productEntity: ADTToolboxSyndicateFilledThief   cost:
     Telecrystal: 10
   categories:
     - UplinkBundles
@@ -397,3 +396,19 @@
     Telecrystal: 15
   categories:
     - UplinkBundles
+
+- type: listing
+  id: ADTuplinkExplosivePizzabox
+  name: uplink-explosive-pizzabox-name
+  description: uplink-explosive-pizzabox-desc
+  productEntity: ADTExplosivePizzabox
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkJob
+  conditions:
+    - !type:BuyerJobCondition
+      whitelist:
+      - Chef
+      - ServiceWorker
+

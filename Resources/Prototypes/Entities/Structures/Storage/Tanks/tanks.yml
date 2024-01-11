@@ -6,7 +6,7 @@
   suffix: Empty
   components:
   - type: StaticPrice
-    price: 750
+    price: 100
   - type: Sprite
     sprite: Structures/Storage/tanks.rsi
     layers:
@@ -28,6 +28,7 @@
     weldingDamage:
       types:
         Heat: 10
+  - type: PacifismDangerousAttack
   - type: Explosive
     explosionType: Default
     totalIntensity: 10 # ~ 5 tile radius
@@ -80,7 +81,7 @@
   suffix: Empty
   components:
   - type: StaticPrice
-    price: 500
+    price: 100
   - type: Sprite
     sprite: Structures/Storage/tanks.rsi
     layers:
@@ -185,7 +186,7 @@
   suffix: Empty
   components:
     - type: StaticPrice
-      price: 500
+      price: 100
     - type: Sprite
       sprite: Structures/Storage/tanks.rsi
       layers:

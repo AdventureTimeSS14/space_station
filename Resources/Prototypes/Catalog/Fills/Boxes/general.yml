@@ -188,7 +188,7 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 0,0,10,7
+    - 0,0,5,1
   - type: StorageFill
     contents:
       - id: DrinkMREFlask # Size 8
@@ -436,7 +436,7 @@
 - type: entity
   name: lead-lined box
   parent: BoxCardboard
-  suffix: Debug
+  suffix: DEBUG
   id: BoxLeadLined
   description: This box stymies the transmission of harmful radiation.
   components:

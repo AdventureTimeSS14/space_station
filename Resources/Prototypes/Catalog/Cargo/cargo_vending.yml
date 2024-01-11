@@ -23,7 +23,7 @@
     sprite: Objects/Specific/Service/vending_machine_restock.rsi
     state: base
   product: CrateVendingMachineRestockChefvendFilled
-  cost: 1100
+  cost: 1400
   category: Service
   group: market
 
@@ -33,7 +33,7 @@
     sprite: Objects/Specific/Service/vending_machine_restock.rsi
     state: base
   product: CrateVendingMachineRestockClothesFilled
-  cost: 5700
+  cost: 6200
   category: Service
   group: market
 

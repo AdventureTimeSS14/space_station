@@ -8,11 +8,15 @@
     sprite: Clothing/Eyes/Hud/diag.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Hud/diag.rsi
-  - type: ClothingGrantComponent  # Sirena-Edit's-Star
-    component:
-    - type: ShowHealthBars
-      damageContainer: Inorganic  # Sirena-Edit's-End
-
+  - type: ShowHealthBars
+    damageContainers:
+    - Inorganic
+    - Silicon
+# TODO: xTray отключено при миграции
+#  - type: ClothingGrantComponent  # Sirena-Edit's-Star
+#    component:
+#    - type: ShowHealthBars
+#      damageContainer: Inorganic  # Sirena-Edit's-End
 
 - type: entity
   parent: ClothingEyesBase
@@ -24,10 +28,17 @@
     sprite: Clothing/Eyes/Hud/med.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Hud/med.rsi
-  - type: ClothingGrantComponent  # Sirena-Edit's-Start
-    component:
-    - type: ShowHealthBars
-      damageContainer: Biological
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
+# TODO: xTray отключено при миграции
+#  - type: ClothingGrantComponent  # Sirena-Edit's-Start
+#    component:
+#    - type: ShowHealthBars
+#      damageContainer: Biological
 
 - type: entity
   parent: ClothingEyesBase
@@ -61,10 +72,9 @@
     sprite: ADT/Clothing/Eyes/HUD/advanced_hud.rsi
   - type: Clothing
     sprite: ADT/Clothing/Eyes/HUD/advanced_hud.rsi
-  - type: ClothingGrantComponent # Sirena-Edit's-Start
-    component:
-    - type: ShowHealthBars
-      damageContainer: Biological # Sirena-Edit's-End
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
   - type: ShowSecurityIcons
   - type: FlashImmunity
   - type: EyeProtection
@@ -132,11 +142,13 @@
     sprite: Clothing/Eyes/Hud/medonion.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Hud/medonion.rsi
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
   - type: ShowHungerIcons
-  - type: ClothingGrantComponent  # Sirena-Edit's-Start
-    component:
-    - type: ShowHealthBars
-      damageContainer: Biological
 
 - type: entity
   parent: ClothingEyesBase
@@ -148,6 +160,12 @@
     sprite: Clothing/Eyes/Hud/medonionbeer.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Hud/medonionbeer.rsi
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
   - type: ShowHungerIcons
   - type: ShowThirstIcons
 
@@ -162,13 +180,6 @@
   - type: Clothing
     sprite: Clothing/Eyes/Hud/medsec.rsi
   - type: ShowSecurityIcons
-  - type: ClothingGrantComponent  # Sirena-Edit's-Start
-    component:
-    - type: ShowHealthBars
-      damageContainer: Biological
-  - type: FlashImmunity
-  - type: EyeProtection
-    protectionTime: 5
 
 - type: entity
   parent: ClothingEyesBase
@@ -181,6 +192,13 @@
   - type: Clothing
     sprite: Clothing/Eyes/Hud/medsecengi.rsi
   - type: ShowSecurityIcons
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+    - Inorganic
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
   - type: ShowSyndicateIcons
 
 - type: entity
@@ -194,6 +212,13 @@
   - type: Clothing
     sprite: Clothing/Eyes/Hud/omni.rsi
   - type: ShowSecurityIcons
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+    - Inorganic
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
   - type: ShowHungerIcons
   - type: ShowThirstIcons
   - type: ShowSyndicateIcons
@@ -210,8 +235,10 @@
     sprite: Clothing/Eyes/Hud/synd.rsi
   - type: ShowSyndicateIcons
   - type: ShowSecurityIcons
-  - type: ClothingGrantComponent  # Sirena-Edit's-Start
-    component:
-    - type: ShowHealthBars
-      damageContainer: Biological
 
+- type: entity
+  parent: ClothingEyesGlassesSunglasses
+  id: ClothingEyesGlassesHiddenSecurity
+  suffix: Syndicate
+  components:
+  - type: ShowSecurityIcons

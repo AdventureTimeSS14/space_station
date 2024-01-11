@@ -138,7 +138,7 @@
         Radiation: 0
         Caustic: 0.75
   - type: GroupExamine
-  - type: ClothingSpeedModifier # Понижение скорости 
+  - type: ClothingSpeedModifier # Понижение скорости
     walkModifier: 0.7
     sprintModifier: 0.7
 

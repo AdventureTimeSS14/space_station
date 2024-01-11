@@ -20,6 +20,9 @@
   - Brig
   - Maintenance
   - External
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
 
 - type: startingGear
   id: BrigmedicGear
@@ -29,7 +32,7 @@
     back: ClothingBackpackBrigmedicFilled
     shoes: ClothingShoesColorRed
     gloves: ClothingHandsGlovesNitrile
-    eyes: ClothingEyesHudMedSec
+    eyes: ClothingEyesHudMedical
     head: ClothingHeadHatBeretBrigmedic
     id: BrigmedicPDA
     ears: ClothingHeadsetBrigmedic

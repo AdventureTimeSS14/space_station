@@ -88,6 +88,7 @@
   - Warden
   - Brigmedic
   - ADTInvestigator
+  - ADTSecurityCyborg
 
 - type: department
   id: Science
