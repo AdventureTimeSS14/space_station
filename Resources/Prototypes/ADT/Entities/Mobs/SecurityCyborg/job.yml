@@ -73,7 +73,7 @@
     pocket1: ADtWeaponSecCyborg
     #pocket2: WeaponDisabler
     neck: ADTClothingNeckMantleHOSShoulderSecurityCyb
-    shoes: ADTClothingShoesBootsCybSec
+    #shoes: ADTClothingShoesBootsCybSec
   satchel: ClothingBackpackSatchelSecurityFilled
   duffelbag: ClothingBackpackDuffelSecurityFilled
 
