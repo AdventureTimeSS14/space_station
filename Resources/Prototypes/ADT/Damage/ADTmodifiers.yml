@@ -56,3 +56,32 @@
     Cold: 1.5
     Heat: 2.0
     Poison: 1.1
+
+- type: damageModifierSet
+  id: CyborgMetallic
+  coefficients:
+    Blunt: 0.8
+    Slash: 0.7
+    Piercing: 0.8
+    Heat: 1.2
+    Shock: 1.5
+  flatReductions:
+    Blunt: 5
+    Slash: 5
+    Piercing: 5
+    Heat: 5
+
+
+- type: damageModifierSet
+  id: CyborgMetallicStrong 
+  coefficients:
+    Blunt: 0.6
+    Slash: 0.6
+    Piercing: 0.6
+    Heat: 0.8
+    Shock: 1.1
+  flatReductions:
+    Blunt: 9
+    Slash: 9
+    Piercing: 9
+    Heat: 9
