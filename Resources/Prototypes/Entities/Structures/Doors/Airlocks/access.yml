@@ -504,6 +504,14 @@
 
 - type: entity
   parent: AirlockExternalGlass
+  id: AirlockExternalGlassSecurityLocked
+  suffix: External, Glass, Security, Locked
+  components:
+  - type: AccessReader
+    access: [["Security"]]
+
+- type: entity
+  parent: AirlockExternalGlass
   id: AirlockExternalGlassAtmosphericsLocked
   suffix: External, Glass, Atmospherics, Locked
   components:

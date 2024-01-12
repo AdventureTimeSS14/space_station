@@ -39,7 +39,7 @@
     mode: SnapgridCenter
 
 - type: entity
-  id: NesThrusterRSY
+  id: NesRCS
   name: двигатель РСУ
   parent: [ NesBaseOldThruster, ConstructibleMachine ]
   components:
@@ -63,7 +63,7 @@
       offset: 0, 1
 
 - type: entity
-  id: NesOldThrusterRSY
+  id: NesOldRCS
   name: старый двигатель РСУ
   parent: [ NesBaseOldThruster, ConstructibleMachine ]
   components:
@@ -102,6 +102,24 @@
     powerLoad: 1500
   - type: StaticPrice
     price: 5000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 2000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    # Same as AME, but numbers still picked from a hat.
+    maxIntensity: 80
+    intensitySlope: 5
+    totalIntensity: 300
   - type: Sprite
     sprite: NES/Shuttle/ZETA_thruster.rsi
     layers:
@@ -185,6 +203,8 @@
     baseFireBurstDelayMin: 10
     baseFireInterval: 0.8
     baseFireBurstDelayMax: 15
+  - type: Machine
+    board: NesCombatEmitterCircuitboard
   - type: Gun
     showExamineText: false
     fireRate: 1 #just has to be fast enough to keep up with upgrades
@@ -223,29 +243,11 @@
 - type: entity
   id: NesCombatEmitterSmall
   name: рельсотрон
-  parent: ConstructibleMachine
+  parent: NesCombatEmitter
   description: Рельсотрон, разгоняющий снаряд в стволе до сверх скоростей. Снаряд будучи обычным стержнем на большой скорости может повредить обшивку вражеского корабля.
   placement:
     mode: SnapgridCenter
   components:
-  - type: Clickable
-  - type: InteractionOutline
-  - type: Physics
-    canCollide: false
-    bodyType: Static
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.25,-0.25,0.25,0.25"
-        density: 400
-        mask:
-        - MachineMask
-        layer:
-        - MachineLayer
-  - type: Transform
-    anchored: true
   - type: Sprite
     sprite: NES/Railguns/mini_railgun.rsi
     layers:
@@ -263,45 +265,46 @@
     baseFireBurstDelayMin: 1
     baseFireInterval: 0.5
     baseFireBurstDelayMax: 1
+  - type: Machine
+    board: NesCombatEmitterSmallCircuitboard
   - type: Gun
-    showExamineText: false
-    fireRate: 1 #just has to be fast enough to keep up with upgrades
-    selectedMode: FullAuto
-    availableModes:
-      - FullAuto
+    fireRate: 1
     soundGunshot:
       path: /Audio/NES/Canon/Canon2.ogg
-  - type: PowerConsumer
-    voltage: Medium
-  - type: NodeContainer
-    examinable: true
-    nodes:
-      input:
-        !type:CableDeviceNode
-        nodeGroupID: MVPower
-  - type: Anchorable
-  - type: Pullable
-  - type: Rotatable
-  - type: Appearance
-  - type: Lock
-    locked: true
-  - type: AccessReader
-    access: [['Security']]
-  - type: DeviceNetwork
-    deviceNetId: Wireless
-    receiveFrequencyId: BasicDevice
-  - type: WirelessNetworkConnection
-    range: 200
-  - type: DeviceLinkSink
-    ports:
-      - On
-      - Off
-      - Toggle
+
+- type: entity
+  id: NesCombatEmitterCircuitboard
+  parent: BaseMachineCircuitboard
+  name: тяжелый рельсотрон (машинная плата)
+  components:
+    - type: MachineBoard
+      prototype: NesCombatEmitter
+      requirements:
+        Capacitor: 6
+        Manipulator: 4
+      materialRequirements:
+        CableHV: 12
+        Steel: 5
+        Plasteel: 20
+
+- type: entity
+  id: NesCombatEmitterSmallCircuitboard
+  parent: BaseMachineCircuitboard
+  name: рельсотрон (машинная плата)
+  components:
+    - type: MachineBoard
+      prototype: NesCombatEmitterSmall
+      requirements:
+        Capacitor: 4
+        Manipulator: 2
+      materialRequirements:
+        CableHV: 10
+        Steel: 10
 
 - type: entity
   id: NesMiniGyroscope
   name: гироскоп истребителя #Для маленьких шаттлов
-  parent: [ BaseThruster, ConstructibleMachine ]
+  parent: Gyroscope
   components:
   - type: Thruster
     thrusterType: Angular
@@ -309,31 +312,6 @@
     baseThrust: 300
     thrust: 300
     machinePartThrust: Manipulator
-  - type: Sprite
-    sprite: Structures/Shuttles/gyroscope.rsi
-    snapCardinals: true
-    layers:
-    - state: base
-      map: ["enum.ThrusterVisualLayers.Base"]
-    - state: thrust
-      map: ["enum.ThrusterVisualLayers.ThrustOn"]
-      shader: unshaded
-      visible: false
-    - state: thrust_burn
-      map: [ "enum.ThrusterVisualLayers.Thrusting" ]
-      visible: false
-    - state: thrust_burn_unshaded
-      map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
-      shader: unshaded
-      visible: false
-  - type: PointLight
-    radius: 1.3
-    energy: 0.8
-    enabled: false
-    mask: /Textures/Effects/LightMasks/cone.png
-    autoRot: true
-    offset: "0, 0.1" # shine from the top, not bottom of the computer
-    color: "#4246b3"
   - type: Machine
     board: GyroscopeMachineCircuitboard
   - type: UpgradePowerDraw
