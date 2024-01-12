@@ -39,3 +39,9 @@
 
 - type: Tag
   id: Fish
+
+- type: Tag
+  id: MobileDefibrillator
+  
+- type: Tag
+  id: HighVoltageDefibrillator

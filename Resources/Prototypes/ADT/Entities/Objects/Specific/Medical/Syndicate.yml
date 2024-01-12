@@ -1,12 +1,11 @@
 - type: entity
-  id: ADTFakeDefibrillator
-  parent: Defibrillator
+  id: ADTHighVoltageDefibrillatorFake
+  parent: ADTHighVoltageDefibrillator
+  desc: A defibrillator that takes less time to zap but deals more electric damage. But something's off..
   components:
     - type: Defibrillator
       zapHeal:
         types:
           Asphyxiation: -1
-      writheDuration: 5
-      zapDamage: 35
-      zapDelay: 2
-      doAfterDuration: 1
+      zapDamage: 100
+

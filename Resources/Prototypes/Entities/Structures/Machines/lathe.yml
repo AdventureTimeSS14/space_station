@@ -236,6 +236,7 @@
       - Hemostat
       - Beaker
       - LargeBeaker
+      - ADTHighVoltageDefibrillator
       - Syringecartridge
       - CryostasisBeaker
       - SyringeCryostasis
@@ -774,6 +775,7 @@
       - SyringeBluespace
       - Jug
       - SyringeCryostasis
+      - ADTHighVoltageDefibrillator
   - type: Machine
     board: MedicalTechFabCircuitboard
 

@@ -325,7 +325,7 @@
     - Bartender
 
 - type: listing
-  id: ADTuplinkADTFakeDefibrillator
+  id: ADTHighVoltageDefibrillatorFake
   name: uplink-fake-defib-name
   description: uplink-fake-defib-desc
   productEntity: ADTFakeDefibrillator
