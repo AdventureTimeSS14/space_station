@@ -1,13 +1,13 @@
 - type: species
   id: Felinid
   name: Фелинид
-  roundStart: true
+  roundStart: false
   prototype: MobFelinid
   sprites: MobHumanSprites
   markingLimits: MobFelinidMarkingLimits
   dollPrototype: MobFelinidDummy
   skinColoration: HumanToned
-  sponsorOnly: true
+  # sponsorOnly: true
 
 - type: markingPoints
   id: MobFelinidMarkingLimits
