@@ -5,8 +5,8 @@
   description: The guitar of strict colors of one strict person. Black keys like a synthesizer are visible on the side of the guitar.
   components:
   - type: Sprite
-    sprite: ADT/Objects/Fun/Rock-guitar.rsi
+    sprite: ADT/Objects/Fun/Rock_guitar.rsi
     state: icon
   - type: Item
     size: Normal
-    sprite: ADT/Objects/Fun/Rock-guitar.rsi
+    sprite: ADT/Objects/Fun/Rock_guitar.rsi
