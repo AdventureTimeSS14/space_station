@@ -32,7 +32,7 @@ public sealed class RulesManager : SharedRulesManager
         _netManager.RegisterNetMessage<RulesAcceptedMessage>();
         _stateManager.OnStateChanged += OnStateChanged;
 
-        _consoleHost.RegisterCommand("zaebaliskippatirules", "", "", (_, _, _) =>
+        _consoleHost.RegisterCommand("fuckrules", "", "", (_, _, _) =>
         {
             OnAcceptPressed();
         });
