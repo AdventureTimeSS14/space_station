@@ -30,6 +30,19 @@ public abstract partial class SharedGunSystem
 
     private void OnAltVerb(EntityUid uid, GunComponent component, GetVerbsEvent<AlternativeVerb> args)
     {
+        ///ADT-Personal-Gun block start
+        if (component.Personable)
+        {
+            AlternativeVerb verbPersonalize = new()
+            {
+                Act = () => MakeWeaponPersonal(uid, component, args.User),
+                Text = Loc.GetString("gun-personalize-verb"),
+                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/fold.svg.192dpi.png")),
+            };
+            args.Verbs.Add(verbPersonalize);
+        }
+        ///ADT-Personal-Gun block end
+
         if (!args.CanAccess || !args.CanInteract || component.SelectedMode == component.AvailableModes)
             return;
 
@@ -44,19 +57,6 @@ public abstract partial class SharedGunSystem
 
         args.Verbs.Add(verb);
 
-        ///ADT-Personal-Gun block start
-        if (component.Personable)
-        {
-            AlternativeVerb verbPersonalize = new()
-            {
-                Act = () => MakeWeaponPersonal(uid, component, args.User),
-                Text = Loc.GetString("gun-personalize-verb"),
-                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/fold.svg.192dpi.png")),
-            };
-            args.Verbs.Add(verbPersonalize);
-        }
-
-        ///ADT-Personal-Gun block end
     }
 
     private SelectiveFire GetNextMode(GunComponent component)
