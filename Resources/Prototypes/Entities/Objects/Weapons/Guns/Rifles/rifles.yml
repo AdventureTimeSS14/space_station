@@ -159,6 +159,7 @@
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg
+    personable: true
   - type: ItemSlots
     slots:
       gun_magazine:

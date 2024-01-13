@@ -43,6 +43,20 @@ public abstract partial class SharedGunSystem
         };
 
         args.Verbs.Add(verb);
+
+        ///ADT-Personal-Gun block start
+        if (component.Personable)
+        {
+            AlternativeVerb verbPersonalize = new()
+            {
+                Act = () => MakeWeaponPersonal(uid, component, args.User),
+                Text = Loc.GetString("gun-personalize-verb"),
+                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/fold.svg.192dpi.png")),
+            };
+            args.Verbs.Add(verbPersonalize);
+        }
+
+        ///ADT-Personal-Gun block end
     }
 
     private SelectiveFire GetNextMode(GunComponent component)
@@ -82,6 +96,15 @@ public abstract partial class SharedGunSystem
 
         Audio.PlayPredicted(component.SoundMode, uid, user);
         Popup(Loc.GetString("gun-selected-mode", ("mode", GetLocSelector(fire))), uid, user);
+        Dirty(uid, component);
+    }
+
+    private void MakeWeaponPersonal(EntityUid uid, GunComponent component, EntityUid? user = null)
+    {
+        if(component.GunOwner != null)
+            return;
+        component.GunOwner = user;
+        Popup(Loc.GetString("gun-was-personalized"), uid, user);
         Dirty(uid, component);
     }
 
