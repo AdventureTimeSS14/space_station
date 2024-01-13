@@ -84,6 +84,48 @@
       state: generic_keyboard
     - map: ["computerLayerScreen"]
       state: medcomp
+      color: "#ff5400"
+    - map: ["computerLayerKeys"]
+      state: med_key
+ # - type: Fixtures
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSource
+    ports:
+      - Pressed
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#ff5400"
+  - type: Lock
+    locked: true
+  - type: AccessReader
+    access: [['Security']]
+
+- type: entity
+  parent: NesPeopleComputerButton
+  id: NesSyndicateComputerButton
+  name: боевой терминал Синдиката
+  description: Терминал для взаимодействия с подключенными к нему устройствами, требует доступ мародеров Горлакса.
+  components:
+  - type: Clickable
+  - type: UseDelay
+  - type: SignalSwitch
+    clickSound: "/Audio/Machines/beep.ogg"
+    onPort: Pressed
+    offPort: Pressed
+    statusPort: Pressed
+    delay: 0.5 # prevent light-toggling auto-clickers.
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: medcomp
       color: "#ff0000"
     - map: ["computerLayerKeys"]
       state: med_key
@@ -102,7 +144,7 @@
   - type: Lock
     locked: true
   - type: AccessReader
-    access: [['Security']]
+    access: [['NuclearOperative']]
 
 - type: entity
   parent: BaseComputer

@@ -248,11 +248,29 @@
     {
       "name": "paper_stamp-generic"
     },
-      {
-          "name": "stamp-iaa"
-      },
-      {
-          "name": "stamp-psychologist"
-      }
+    {
+      "name": "stamp-iaa"
+    },
+    {
+      "name": "stamp-psychologist"
+    },
+    {
+      "name": "paper_stamp-approve"
+    },
+    {
+      "name": "paper_stamp-cent"
+    },
+    {
+      "name": "paper_stamp-investigator"
+    },
+    {
+      "name": "paper_stamp-mag"
+    },
+    {
+      "name": "paper_stamp-psychologist"
+    },
+    {
+      "name": "stamp-approve"
+    }
   ]
 }

@@ -49,3 +49,94 @@
       - id: ADTLicoxideChemistryBottle
       - id: ADTLexorinChemistryBottle
       - id: ADTLexorinChemistryBottle
+
+- type: entity
+  parent: ToolboxSyndicate
+  id: ADTToolboxSyndicateFilledThief # 10 TC
+  name: Thieving bundle
+  description: Everything you need to become a better thief version.
+  components:
+  - type: StorageFill
+    contents:
+      - id: StorageImplanter
+      - id: ThievingGloves
+      - id: Crowbar
+      - id: Wrench
+      - id: Screwdriver
+      - id: Welder
+      - id: Wirecutter
+      - id: Multitool
+      - id: ClothingHandsGlovesCombat
+      - id: ClothingMaskGasSyndicate
+
+
+- type: entity
+  parent: BoxCardboard
+  id: ADTBoxSyndicateFilledEscapist # 15 TC
+  name: Escapist bundle
+  description: For those who already got in or afraid of troubles.
+  components:
+  - type: StorageFill
+    contents:
+      - id: EmpImplanter
+      - id: FreedomImplanter
+      - id: DnaScramblerImplanter
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ADTClothingBackpackDuffelSyndicateFilledMaid # 20 TC
+  name: Maid bundle
+  description: Good syndie.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingHeadHatCatEars
+      - id: ClothingUniformJumpskirtJanimaidmini
+      - id: ClothingUnderSocksCoder
+      - id: SirenaChokerWithHeart
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ADTClothingBackpackDuffelSyndicateFilledStealth # 12 TC
+  name: Stealth bundle
+  description: I'm tired of creating descs
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponPistolCobra
+      - id: Fulton
+      - id: FultonBeacon
+      - id: ADTStealthBoxBox
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ADTClothingBackpackDuffelSyndicateFilledIntruder # 20 TC
+  name: Intruder bundle
+  description: I'm tired of creating descs
+  components:
+  - type: StorageFill
+    contents:
+      - id: Emag
+      - id: SyndicateJawsOfLife
+      - id: C4
+      - id: C4
+      - id: Flash
+      - id: ClothingEyesGlassesSunglasses
+      - id: AgentIDCard
+      - id: RadioJammer
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ADTClothingBackpackDuffelSyndicateFilledBlackmail # 15 TC
+  name: Blackmail bundle
+  description: I'm tired of creating descs
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingMaskGasVoiceChameleon
+      - id: RemoteSignaller
+      - id: RemoteSignaller
+      - id: C4
+      - id: C4
+      - id: C4
+      - id: AgentIDCard

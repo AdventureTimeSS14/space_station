@@ -24,10 +24,10 @@
   order: 5
   lawString: law-seccyb-5
 
-- type: siliconLaw
-  id: SecCyb6
-  order: 6
-  lawString: law-seccyb-6
+# - type: siliconLaw
+#   id: SecCyb6
+#   order: 6
+#   lawString: law-seccyb-6
 
 - type: siliconLawset
   id: SecCybLaw
@@ -37,4 +37,4 @@
   - SecCyb3
   - SecCyb4
   - SecCyb5
-  - SecCyb6
+  # - SecCyb6
