@@ -23,6 +23,15 @@
         ]
       },
       {
+        "name": "zippo_icon_base"
+      },
+      {
+        "name": "zippo_open"
+      },
+      {
+        "name": "zippo_top"
+      },
+      {
         "name": "inhand-left",
         "directions": 4
       },
