@@ -19,11 +19,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTCalliePillow
   name: CalliePillow
-  description: Little Callie! 
+  description: Little Callie!
   components:
   - type: Sprite
     state: callie
@@ -40,11 +40,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTCamillePillow
   name: CamillePillow
-  description: Little camille! 
+  description: Little camille!
   components:
   - type: Sprite
     state: camille
@@ -61,11 +61,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTCascaPillow
   name: CascaPillow
-  description: Little casca! 
+  description: Little casca!
   components:
   - type: Sprite
     state: casca
@@ -82,11 +82,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTChaikaPillow
   name: ChaikaPillow
-  description: Little chaika! 
+  description: Little chaika!
   components:
   - type: Sprite
     state: chaika
@@ -103,11 +103,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTElisabethPillow
   name: ElisabethPillow
-  description: Little elisabeth! 
+  description: Little elisabeth!
   components:
   - type: Sprite
     state: elisabeth
@@ -124,11 +124,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTFoxy_granpaPillow
   name: Foxy_granpaPillow
-  description: Little foxy_granpa! 
+  description: Little foxy_granpa!
   components:
   - type: Sprite
     state: foxy_granpa
@@ -145,11 +145,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTHarukoPillow
   name: HarukoPillow
-  description: Little haruko! 
+  description: Little haruko!
   components:
   - type: Sprite
     state: haruko
@@ -166,11 +166,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTHoloPillow
   name: HoloPillow
-  description: Little holo! 
+  description: Little holo!
   components:
   - type: Sprite
     state: holo
@@ -187,11 +187,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTIanPillow
   name: IanPillow
-  description: Little ian! 
+  description: Little ian!
   components:
   - type: Sprite
     state: ian
@@ -208,11 +208,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTImeraPillow
   name: ImeraPillow
-  description: Little imera! 
+  description: Little imera!
   components:
   - type: Sprite
     state: imera
@@ -229,11 +229,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTJolynePillow
   name: JolynePillow
-  description: Little jolyne! 
+  description: Little jolyne!
   components:
   - type: Sprite
     state: jolyne
@@ -250,11 +250,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTKurisuPillow
   name: KurisuPillow
-  description: Little kurisu! 
+  description: Little kurisu!
   components:
   - type: Sprite
     state: kurisu
@@ -271,11 +271,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTMariePillow
   name: MariePillow
-  description: Little marie! 
+  description: Little marie!
   components:
   - type: Sprite
     state: marie
@@ -292,11 +292,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTYokoPillow
   name: YokoPillow
-  description: Little yoko! 
+  description: Little yoko!
   components:
   - type: Sprite
     state: yoko
@@ -313,11 +313,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTMugiPillow
   name: MugiPillow
-  description: Little mugi! 
+  description: Little mugi!
   components:
   - type: Sprite
     state: mugi
@@ -334,11 +334,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTNagaPillow
   name: NagaPillow
-  description: Little naga! 
+  description: Little naga!
   components:
   - type: Sprite
     state: naga
@@ -355,11 +355,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTNarsiePillow
   name: NarsiePillow
-  description: Little narsie! 
+  description: Little narsie!
   components:
   - type: Sprite
     state: narsie
@@ -376,11 +376,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTNukiePillow
   name: NukiePillow
-  description: Little nukie! 
+  description: Little nukie!
   components:
   - type: Sprite
     state: nukie
@@ -397,11 +397,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTPatchouliPillow
   name: PatchouliPillow
-  description: Little patchouli! 
+  description: Little patchouli!
   components:
   - type: Sprite
     state: patchouli
@@ -418,11 +418,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTPlutiaPillow
   name: PlutiaPillow
-  description: Little plutia! 
+  description: Little plutia!
   components:
   - type: Sprite
     state: plutia
@@ -439,11 +439,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTRedPillow
   name: RedPillow
-  description: Little red! 
+  description: Little red!
   components:
   - type: Sprite
     state: red
@@ -460,11 +460,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTReiPillow
   name: ReiPillow
-  description: Little rei! 
+  description: Little rei!
   components:
   - type: Sprite
     state: rei
@@ -481,11 +481,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTReisenPillow
   name: ReisenPillow
-  description: Little reisen! 
+  description: Little reisen!
   components:
   - type: Sprite
     state: reisen
@@ -502,11 +502,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTRockerPillow
   name: RockerPillow
-  description: Little rocker! 
+  description: Little rocker!
   components:
   - type: Sprite
     state: rocker
@@ -523,11 +523,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTSisaPillow
   name: SisaPillow
-  description: Little sisa! 
+  description: Little sisa!
   components:
   - type: Sprite
     state: sisa
@@ -544,11 +544,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTSlarshaPillow
   name: SlarshaPillow
-  description: Little slarsha! 
+  description: Little slarsha!
   components:
   - type: Sprite
     state: slarsha
@@ -565,11 +565,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTSquidPillow
   name: SquidPillow
-  description: Little squid! 
+  description: Little squid!
   components:
   - type: Sprite
     state: squid
@@ -586,11 +586,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTSquigglyPillow
   name: SquigglyPillow
-  description: Little squiggly! 
+  description: Little squiggly!
   components:
   - type: Sprite
     state: squiggly
@@ -607,11 +607,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTSue_bowchiefPillow
   name: Sue_bowchiefPillow
-  description: Little sue_bowchief! 
+  description: Little sue_bowchief!
   components:
   - type: Sprite
     state: sue_bowchief
@@ -628,11 +628,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTTomokoPillow
   name: TomokoPillow
-  description: Little tomoko! 
+  description: Little tomoko!
   components:
   - type: Sprite
     state: tomoko
@@ -649,11 +649,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTTorielPillow
   name: TorielPillow
-  description: Little toriel! 
+  description: Little toriel!
   components:
   - type: Sprite
     state: toriel
@@ -670,11 +670,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTUmaruPillow
   name: UmaruPillow
-  description: Little umaru! 
+  description: Little umaru!
   components:
   - type: Sprite
     state: umaru
@@ -691,11 +691,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTYaranaikaPillow
   name: Robot vacuum cleanerPillow
-  description: Little Robot vacuum cleaner! 
+  description: Little Robot vacuum cleaner!
   components:
   - type: Sprite
     state: yaranaika
@@ -712,11 +712,11 @@
     soundHit:
       path: /Audio/Items/Toys/toysqueak2.ogg
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTKirravaPillow
   name: kirravaPillow
-  description: Little kirrava! 
+  description: Little kirrava!
   components:
   - type: Sprite
     state: kirrava
@@ -735,11 +735,11 @@
   - type: StaminaDamageOnHit
     damage: 20
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTYrogPillow
   name: YrogPillow
-  description: Little yrog! 
+  description: Little yrog!
   components:
   - type: Sprite
     state: yrog
@@ -758,11 +758,11 @@
   - type: StaminaDamageOnHit
     damage: 20
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTKysPillow
   name: KysPillow
-  description: Little kys! 
+  description: Little kys!
   components:
   - type: Sprite
     state: kys
@@ -781,11 +781,11 @@
   - type: StaminaDamageOnHit
     damage: 20
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTNa_leuPillow
   name: Na_leuPillow
-  description: Little na_leu! 
+  description: Little na_leu!
   components:
   - type: Sprite
     state: na_leu
@@ -804,7 +804,7 @@
   - type: StaminaDamageOnHit
     damage: 20
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTYunaPillow
   name: YunaPillow
@@ -827,7 +827,7 @@
   - type: StaminaDamageOnHit
     damage: 20
 
-- type: entity          
+- type: entity
   parent: BasePillow
   id: ADTJunalPillow
   name: JunalPillow
@@ -869,7 +869,7 @@
   - type: EmitSoundOnActivate
     sound:
       collection: ToySqueak
-  - type: ItemCooldown
+  #- type: ItemCooldown
   - type: UseDelay
     delay: 1.0
   - type: MeleeWeapon

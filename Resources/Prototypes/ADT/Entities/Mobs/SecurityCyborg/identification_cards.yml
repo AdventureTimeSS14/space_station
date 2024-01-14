@@ -1,0 +1,11 @@
+- type: entity
+  parent: SecurityIDCard
+  id: ADTSecurityCybIDCard
+  name: "security cyborg ID card"
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idsecurityofficer
+  - type: PresetIdCard
+    job: ADTSecurityCyborg

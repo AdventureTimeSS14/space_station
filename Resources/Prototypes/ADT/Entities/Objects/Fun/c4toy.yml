@@ -19,8 +19,8 @@
     - id: toyC4
     sound:
       path: /Audio/Effects/unwrap.ogg
-      
- 
+
+
 
 - type: entity
   parent: BaseItem
@@ -35,7 +35,7 @@
   - type: Item
     sprite: ADT/Objects/Fun/c4toy.rsi
     size: Tiny
-  - type: ItemCooldown
+  #- type: ItemCooldown
   - type: EmitSoundOnUse
     sound:
       path: /Audio/ADT/Fun/c4NY_music.ogg

@@ -14,3 +14,13 @@ guidebook-reagent-effects-header = Эффекты
 guidebook-reagent-recipes-mix-and-heat = Смешивайте при {$temperature}K
 guidebook-reagent-effects-metabolism-group-rate = [bold]{ $group }[/bold] [color=gray]({ $rate } единиц в секунду)[/color]
 guidebook-reagent-physical-description = На вид вещество { $description }.
+guidebook-reagent-recipes-mix-info = {$minTemp ->
+    [0] {$hasMax ->
+            [true] {$verb} ниже {$maxTemp}K
+            *[false] {$verb}
+        }
+    *[other] {$verb} {$hasMax ->
+            [true] между {$minTemp}K и {$maxTemp}K
+            *[false] выше {$minTemp}K
+        }
+}

@@ -18,7 +18,7 @@ public sealed partial class EmotePanelComponent: Component
     [DataField]
     public EntProtoId OpenEmotesAction = "ActionOpenEmotes";
 
-    [DataField, AutoNetworkedField]
+    [DataField]
     public EntityUid? OpenEmotesActionEntity;
 }
 /// <summary>

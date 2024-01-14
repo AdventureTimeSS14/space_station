@@ -71,7 +71,7 @@
       0: 0.00
   - type: BatteryDrinker
   - type: EncryptionKeyHolder
-    keySlots: 3
+    keySlots: 4
     examineWhileLocked: false
     keysExtractionMethod: Cutting
   - type: ActiveRadio
@@ -89,16 +89,15 @@
   - type: SiliconLawBound
   - type: SiliconLawProvider
     laws: SecCybLaw
-  # - type: EmagSiliconLaw
-  #   stunTime: 5
-  #   emagLaws: SyndicateStatic
+  - type: EmagSiliconLaw
+    stunTime: 5
+    emagLaws: SyndicateStatic
   # - type: IonStormTarget
   # - type: BorgChassis
   - type: ContainerFill
     containers:
       key_slots:
-      - EncryptionKeySecurity
-      - EncryptionKeyCommon
+      - ADTEncryptionKeyCybSecurity
   - type: AutoImplant
     implants:
     - TrackingImplant
@@ -115,9 +114,14 @@
   - type: Speech
     speechSounds: Metrocop
     soundCooldownTime: 0.5
-  # - type: Speech
-  #   speechSounds: Combine
-  #   soundCooldownTime: 0.1
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepSoldier
+      params:
+        volume: -2
+  - type: NoSlip
+  - type: Insulated
+
 
 - type: entity
   save: false

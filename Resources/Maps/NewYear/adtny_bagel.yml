@@ -138623,7 +138623,7 @@ entities:
           attenuation: LinearDistanceClamped
         path: /Audio/Weapons/eblade1.ogg
       type: MeleeWeapon
-    - type: ItemCooldown
+    #- type: ItemCooldown
 - proto: TransmitterSubspaceStockPart
   entities:
   - uid: 1201

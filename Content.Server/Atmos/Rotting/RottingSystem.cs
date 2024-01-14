@@ -105,7 +105,7 @@ public sealed class RottingSystem : EntitySystem
         var ev = new IsRottingEvent();
         RaiseLocalEvent(uid, ref ev);
 
-        return ev.Handled;
+        return !ev.Handled;
     }
 
     public bool IsRotten(EntityUid uid, RottingComponent? rotting = null)
@@ -158,7 +158,7 @@ public sealed class RottingSystem : EntitySystem
     {
         if (args.Handled)
             return;
-        args.Handled = component.CurrentTemperature > Atmospherics.T0C + 0.85f;
+        args.Handled = component.CurrentTemperature < Atmospherics.T0C + 0.85f;
     }
 
     public override void Update(float frameTime)

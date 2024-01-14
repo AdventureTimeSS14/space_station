@@ -426,6 +426,20 @@
     state: icon
 
 - type: reagent
+  id: Mopwata
+  name: reagent-name-mopwata
+  parent: BaseDrink
+  desc: reagent-desc-mopwata
+  physicalDesc: reagent-physical-desc-murky
+  flavor: mopwata
+  color: "#59502b"
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 0.6
+
+- type: reagent
   id: TheMartinez
   name: reagent-name-the-martinez
   parent: BaseDrink

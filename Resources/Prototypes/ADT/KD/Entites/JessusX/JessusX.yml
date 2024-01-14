@@ -29,7 +29,7 @@
     mixMessage: "bible-mixing-success"
     reactionTypes:
     - Holy
-  - type: ItemCooldown
+  #- type: ItemCooldown
   - type: Sprite
     netsync: false
     sprite: ADT/KD/JessusX.rsi

@@ -83,6 +83,9 @@
           prob: 0.65
         - proto: WeldingFuelTankHighCapacity
           cost: 3
+        - proto: WeaponTeslaGun
+          prob: 0.1
+          cost: 2
         - proto: ADTWeaponWarhammer
           cost: 5
           prob: 0.3
@@ -114,11 +117,11 @@
 # Ores - these are guaranteed
 # - Low value
 - type: salvageLoot
-  id: OreTin
+  id: OreIron
   guaranteed: true
   loots:
     - !type:BiomeMarkerLoot
-      proto: OreTin
+      proto: OreIron
 
 - type: salvageLoot
   id: OreCoal

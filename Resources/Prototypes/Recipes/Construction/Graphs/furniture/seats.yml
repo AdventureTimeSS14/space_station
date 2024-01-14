@@ -58,6 +58,11 @@
               doAfter: 1
             - material: MetalRod
               amount: 2
+        - to: chairSteelBench
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
         - to: adtblacksofaleft
           steps:
             - material: Steel
@@ -409,6 +414,18 @@
             - tool: Screwing
               doAfter: 1
 
+    - node: chairSteelBench
+      entity: SteelBench
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1
+
     - node: adtblacksofaleft
       entity: ADTBlackSofaLeftSide
       edges:
@@ -733,7 +750,7 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 2      
+              doAfter: 2
 
     - node: adtsofawhiteleft2
       entity: ADTSofaWhiteLeftSide2
@@ -745,7 +762,7 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 2      
+              doAfter: 2
 
     - node: adtsofawhiteright2
       entity: ADTSofaWhiteRightSide2
@@ -757,7 +774,7 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 2      
+              doAfter: 2
 
     - node: adtsofawhitemiddle
       entity: ADTSofaWhiteMiddle
@@ -769,7 +786,7 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 2      
+              doAfter: 2
 
     - node: adtsofawhiteleftcorner
       entity: ADTSofaWhiteLeftCorner
@@ -782,7 +799,7 @@
           steps:
             - tool: Screwing
               doAfter: 2
-              
+
     - node: adtsofawhiterightcorner
       entity: ADTSofaWhiteRightCorner
       edges:
@@ -793,9 +810,9 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 2    
+              doAfter: 2
 
-##Blue.    
+##Blue.
     - node: adtsofablueleft
       entity: ADTSofaBlueLeftSide
       edges:
@@ -806,7 +823,7 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 2    
+              doAfter: 2
 
     - node: adtsofablueright
       entity: ADTSofaBlueRightSide
@@ -818,7 +835,7 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 2    
+              doAfter: 2
 
     - node: adtsofablueleft2
       entity: ADTSofaBlueLeftSide2
@@ -830,7 +847,7 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 2    
+              doAfter: 2
 
     - node: adtsofablueright2
       entity: ADTSofaBlueRightSide2
@@ -842,7 +859,7 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 2    
+              doAfter: 2
 
     - node: adtsofabluemiddle
       entity: ADTSofaBlueMiddle
@@ -854,7 +871,7 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 2      
+              doAfter: 2
 
     - node: adtsofablueleftcorner
       entity: ADTSofaBlueLeftCorner
@@ -867,7 +884,7 @@
           steps:
             - tool: Screwing
               doAfter: 2
-              
+
     - node: adtsofabluerightcorner
       entity: ADTSofaBlueRightCorner
       edges:
@@ -878,7 +895,7 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 2    
+              doAfter: 2
 
 ##Brown
     - node: adtsofabrownleft
@@ -891,7 +908,7 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 2    
+              doAfter: 2
 
     - node: adtsofabrownright
       entity: ADTSofaBrownRightSide
@@ -903,7 +920,7 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 2    
+              doAfter: 2
 
     - node: adtsofabrownleft2
       entity: ADTSofaBrownLeftSide2
@@ -915,7 +932,7 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 2    
+              doAfter: 2
 
     - node: adtsofabrownright2
       entity: ADTSofaBrownRightSide2
@@ -927,7 +944,7 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 2    
+              doAfter: 2
 
     - node: adtsofabrownmiddle
       entity: ADTSofaBrownMiddle
@@ -939,7 +956,7 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 2      
+              doAfter: 2
 
     - node: adtsofabrownleftcorner
       entity: ADTSofaBrownLeftCorner
@@ -952,7 +969,7 @@
           steps:
             - tool: Screwing
               doAfter: 2
-              
+
     - node: adtsofabrownrightcorner
       entity: ADTSofaBrownRightCorner
       edges:
@@ -963,4 +980,4 @@
               amount: 2
           steps:
             - tool: Screwing
-              doAfter: 2    
+              doAfter: 2
