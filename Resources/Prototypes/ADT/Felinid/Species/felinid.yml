@@ -9,6 +9,7 @@
   skinColoration: HumanToned
   sponsorOnly: true
 
+
 - type: markingPoints
   id: MobFelinidMarkingLimits
   points:
