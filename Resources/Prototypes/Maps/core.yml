@@ -68,7 +68,7 @@
             Reporter: [ 2, 2 ]
             #ADT
             Brigmedic: [ 1, 1 ]
-            ADTBlueShieldOfficer: [ 1, 2 ]
+            ADTBlueShieldOfficer: [ 1, 1 ]
             Magistrat: [ 1, 1 ]
             IAA: [ 1, 1 ] # Corvax-IAA
             ADTInvestigator: [ 1, 1 ] #ADT
