@@ -114,10 +114,18 @@
       - ExteriorLightTube
       - LightBulb
       - Bucket
+      - DrinkMug
+      - DrinkMugMetal
+      - DrinkGlass
+      - DrinkShotGlass
+      - DrinkGlassCoupeShaped
       - FoodPlate
       - FoodPlateSmall
       - FoodPlatePlastic
       - FoodPlateSmallPlastic
+      - FoodBowlBig
+      - FoodPlateTin
+      - FoodKebabSkewer
       - SprayBottle
       - MopItem
       - Holoprojector
@@ -783,8 +791,6 @@
       whitelist:
         tags:
           - Sheet
-    - type: StealTarget
-      stealGroup: AmmoTechFabCircuitboard
 
 - type: entity
   id: MedicalTechFab

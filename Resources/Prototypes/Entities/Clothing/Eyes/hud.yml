@@ -34,11 +34,9 @@
   - type: ShowHealthIcons
     damageContainers:
     - Biological
-# TODO: xTray отключено при миграции
-#  - type: ClothingGrantComponent  # Sirena-Edit's-Start
-#    component:
-#    - type: ShowHealthBars
-#      damageContainer: Biological
+  - type: Tag
+    tags:
+    - HudMedical
 
 - type: entity
   parent: ClothingEyesBase
@@ -50,35 +48,13 @@
     sprite: Clothing/Eyes/Hud/sec.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Hud/sec.rsi
-  - type: ShowSecurityIcons
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
-
-#- type: ClothingGrantComponent # Sirena-Edit's-Start
-  #  component:
-  #  - type: ShowJobInfo # Sirena-Edit's-End
-  # - type: ClothingGrantComponent # Sirena-Edit's-Start
-  #  component:
-  #  - type: ShowJobInfo # Sirena-Edit's-End
-
-- type: entity
-  parent: ClothingEyesBase
-  id: ADTClothingEyesHudAdvanced
-  name: Advanced hud
-  description: A heads-up display that scans the humanoids in view and provides accurate data about their ID status and security records.
-  components:
-  - type: Sprite
-    sprite: ADT/Clothing/Eyes/HUD/advanced_hud.rsi
-  - type: Clothing
-    sprite: ADT/Clothing/Eyes/HUD/advanced_hud.rsi
-  - type: ShowHealthIcons
-    damageContainers:
-    - Biological
   - type: ShowSecurityIcons
-  - type: FlashImmunity
-  - type: EyeProtection
-    protectionTime: 5
+  - type: Tag
+    tags:
+    - HudSecurity
 
 - type: entity
   parent: ClothingEyesBase
@@ -173,13 +149,19 @@
   parent: ClothingEyesBase
   id: ClothingEyesHudMedSec
   name: medsec hud
-  description: Filler
+  description: An eye display that looks like a mixture of medical and security huds.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Hud/medsec.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Hud/medsec.rsi
+  - type: Construction
+    graph: HudMedSec
+    node: medsecHud
   - type: ShowSecurityIcons
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
 
 - type: entity
   parent: ClothingEyesBase
