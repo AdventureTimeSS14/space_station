@@ -3,7 +3,7 @@
   coefficients:
     Blunt: 0.7
     Slash: 0.7
-    Piercing: 0.8
+    Piercing: 0.7
     # fire and lasers burn it good
     Heat: 1.0
     # zap
