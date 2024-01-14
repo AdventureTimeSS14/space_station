@@ -340,10 +340,9 @@
   - type: Medibot
     treatments:
       Alive:
-        reagent: Tricordrazine
-        quantity: 30
-        minDamage: 0
-        maxDamage: 50
+        reagent: DoctorsDelight
+        quantity: 10
+        minDamage: 10
       Critical:
         reagent: Inaprovaline
         quantity: 15
