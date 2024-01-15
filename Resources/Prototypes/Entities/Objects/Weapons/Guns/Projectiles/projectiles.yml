@@ -289,6 +289,26 @@
     impactEffect: BulletImpactEffectLaser
     damage:
       types:
+        Heat: 25
+    soundHit:
+      path: "/Audio/Weapons/tap.ogg"
+    soundForce: true
+
+- type: entity
+  name : Laser bolt
+  id: ADTBulletLaserMK2
+  parent: ADTBulletLaser
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+    layers:
+    - state: omnilaser
+      shader: unshaded
+  - type: Projectile
+    impactEffect: BulletImpactEffectLaser
+    damage:
+      types:
         Heat: 20
     soundHit:
       path: "/Audio/Weapons/tap.ogg"
@@ -1012,12 +1032,12 @@
         - Opaque
       fly-by: *flybyfixture
   - type: StaminaDamageOnCollide
-    damage: 20
+    damage: 14
   - type: Projectile
 #   soundHit:  Waiting on serv3
     damage:
       types:
-        Heat: 14
+        Heat: 20
   # mining laser real
   - type: GatheringProjectile
   - type: Tag

@@ -6,7 +6,7 @@
     - type: Storage
       maxItemSize: Huge
       grid:
-      - 0,0,9,5
+      - 0,0,6,5
     - type: StorageFill
       contents:
         - id: MedkitBruteFilled
@@ -14,12 +14,12 @@
         - id: Zipties
         #- id: Zipties
         #- id: WeaponDisabler
-        - id: Stunbaton
-        - id: HandheldCrewMonitor
-        - id: MagazinePistolSubMachineGun
-        - id: MagazinePistolSubMachineGun
-        - id: MagazinePistolSubMachineGunRubber
-        - id: MagazinePistolSubMachineGunRubber
+        # - id: Stunbaton
+        # - id: HandheldCrewMonitor
+        # - id: MagazinePistolSubMachineGun
+        # - id: MagazinePistolSubMachineGun
+        # - id: MagazinePistolSubMachineGunRubber
+        # - id: MagazinePistolSubMachineGunRubber
         #- id: WeaponSubMachineGunDrozdRubber
         #- id: WeaponPulsePistol
         #- id: GrenadeFlashBang
