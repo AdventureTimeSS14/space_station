@@ -1032,7 +1032,7 @@
         - Opaque
       fly-by: *flybyfixture
   - type: StaminaDamageOnCollide
-    damage: 20
+    damage: 14
   - type: Projectile
 #   soundHit:  Waiting on serv3
     damage:
