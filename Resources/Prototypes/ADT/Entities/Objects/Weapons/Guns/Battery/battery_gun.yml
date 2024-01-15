@@ -115,6 +115,10 @@
       visible: false
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
   - type: Clothing
     sprite: ADT/Objects/Weapons/Guns/Battery/BlueShield.rsi
   - type: Gun
