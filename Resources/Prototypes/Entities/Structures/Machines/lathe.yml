@@ -1061,16 +1061,17 @@
       whitelist:
         tags:
           - Ore
+          - Sheet
     - type: Lathe
       idleState: icon
       runningState: building
       staticRecipes:
         - SheetSteel30
         - SheetGlass30
-        - SheetRGlass30FromOre
+        - SheetRGlass30
         - SheetPlasma30
-        - SheetPGlass30FromOre
-        - SheetRPGlass30FromOre
+        - SheetPGlass30
+        - SheetRPGlass30
         - SheetUranium30
         - IngotGold30
         - IngotSilver30

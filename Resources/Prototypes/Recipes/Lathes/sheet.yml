@@ -147,32 +147,3 @@
   completetime: 1
   materials:
     Wood: 50
-
-#Рецепты для переработчика руды
-
-- type: latheRecipe
-  id: SheetRGlass30FromOre
-  result: SheetRGlass
-  completetime: 2
-  materials:
-    RawQuartz: 3000
-    RawIron: 1500
-    Coal: 500
-
-- type: latheRecipe
-  id: SheetPGlass30FromOre
-  result: SheetPGlass
-  completetime: 2
-  materials:
-    RawQuartz: 3000
-    RawPlasma: 3000
-
-- type: latheRecipe
-  id: SheetRPGlass30FromOre
-  result: SheetRPGlass
-  completetime: 2
-  materials:
-    RawQuartz: 3000
-    RawPlasma: 3000
-    RawIron: 1500
-    Coal: 500
