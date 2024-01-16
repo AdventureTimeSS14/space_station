@@ -101,3 +101,7 @@
 - type: lobbyBackground
   id: revolution
   background: /Textures/LobbyScreens/revolution.png
+
+- type: lobbyBackground
+  id: singulo_run
+  background: /Textures/LobbyScreens/singulo_run.png

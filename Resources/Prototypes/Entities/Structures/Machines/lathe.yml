@@ -1067,10 +1067,10 @@
       staticRecipes:
         - SheetSteel30
         - SheetGlass30
-        - SheetRGlass30
+        - SheetRGlass30FromOre
         - SheetPlasma30
-        - SheetPGlass30
-        - SheetRPGlass30
+        - SheetPGlass30FromOre
+        - SheetRPGlass30FromOre
         - SheetUranium30
         - IngotGold30
         - IngotSilver30
