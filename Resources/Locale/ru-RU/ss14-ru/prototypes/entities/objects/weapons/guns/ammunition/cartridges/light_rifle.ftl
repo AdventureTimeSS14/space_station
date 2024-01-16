@@ -8,3 +8,5 @@ ent-CartridgeLightRifleRubber = патрон (7.62х39 мм винтовочны
     .desc = { ent-BaseCartridgeLightRifle.desc }
 ent-CartridgeLightRifleIncendiary = патрон (7.62х39 мм винтовочный зажигательный)
     .desc = { ent-BaseCartridgeLightRifle.desc }
+ent-CartridgeLightRifleUranium = патрон (7.62х39 мм винтовочный урановый)
+    .desc = { ent-BaseCartridgeLightRifle.desc }

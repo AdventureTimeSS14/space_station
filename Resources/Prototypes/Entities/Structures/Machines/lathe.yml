@@ -1061,6 +1061,7 @@
       whitelist:
         tags:
           - Ore
+          - Sheet
     - type: Lathe
       idleState: icon
       runningState: building
