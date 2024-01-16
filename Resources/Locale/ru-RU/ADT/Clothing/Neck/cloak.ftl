@@ -44,5 +44,5 @@ ent-ADTClothingNeckCloakLapkee = светлый плащ
 ent-ClothingNeckCloakVoid = пустотный плащ
     .desc = Плащ тьмы. Для тех, кто перешел на темную сторону силы.
 
-ent-ADTClothingNeckMantleCentCommSchroja = наплечая мантия ЦентКома
+ent-ADTClothingNeckMantleCentComm = наплечая мантия ЦентКома
     .desc = Удобная наплечная накидка для высшего командного состава NanoTrasen.
