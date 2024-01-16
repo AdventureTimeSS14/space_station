@@ -1,0 +1,45 @@
+- type: entity
+  name: flippo Aidan lighter
+  parent: FlippoLighter
+  id: FlippoAidanLighter
+  description: "A zippo lighter with a blue metal coating. There are two letters on the case that stand for "Aidan Kresta"."
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Tools/flippolighter_aidan.rsi
+    layers:
+    - state: zippo_top
+      map: ["top"]
+    - state: zippo_icon_base
+      map: ["base"]
+    - state: zippo_open
+      map: ["open"]
+      visible: false
+    - state: lighter_flame
+      map: ["flame"]
+      visible: false
+      shader: unshaded
+  - type: StealTarget
+    stealGroup: FlippoEngravedLighter
+
+- type: entity
+  name: flippo Johan lighter
+  parent: FlippoLighter
+  id: FlippoJohanLighter
+  description: "A zippo lighter with a red metal coating. There are two letters on the case that stand for "Johan Kresta"."
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Tools/flippolighter_johan.rsi
+    layers:
+    - state: zippo_top
+      map: ["top"]
+    - state: zippo_icon_base
+      map: ["base"]
+    - state: zippo_open
+      map: ["open"]
+      visible: false
+    - state: lighter_flame
+      map: ["flame"]
+      visible: false
+      shader: unshaded
+  - type: StealTarget
+    stealGroup: FlippoEngravedLighter
