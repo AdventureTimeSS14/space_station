@@ -18,6 +18,7 @@
       - id: ADTWeaponRevolverDeckardGold
       - id: CentcomPDA
       - id: ADTClothingNeckMantleCentCommSchroja
+      - id: ClothingHeadsetAltCentCom
 
 - type: entity
   name: Deckard
