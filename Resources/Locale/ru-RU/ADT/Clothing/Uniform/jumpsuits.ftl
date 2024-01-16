@@ -315,6 +315,9 @@ ent-ADTClothingUniformSecAuditor = униформа аудитора СБ
     .desc = Стандартная униформа проверяющих работу Службы Безопасности станции со стороны комитета надзора NanoTrasen.
     .suffix = { "ЦК, CombatBibis" }
 
+ent-ClothingUniformJumpsuitCentcomAgent = костюм Агента ЦентКома
+    .desc = Костюм, который носит команда агентов CentCom. Пахнет подгоревшим кофе.
+
 ent-ADTClothingUniformPathologistSuit = костюм патологоанатома
     .desc = Лёгкий комбинезон для работника морга.
     .suffix = { "" } 

@@ -66,7 +66,7 @@
             Musician: [ 1, 1 ]
             #ADT
             Brigmedic: [ 1, 1 ]
-            ADTBlueShieldOfficer: [ 1, 2 ]
+            ADTBlueShieldOfficer: [ 1, 1 ]
             Magistrat: [ 1, 1 ]
             ADTPathologist: [ 1 , 1]
             ADTInvestigator: [ 1, 1 ] #ADT

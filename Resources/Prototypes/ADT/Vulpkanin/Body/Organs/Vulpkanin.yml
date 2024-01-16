@@ -10,7 +10,7 @@
   id: ADTOrganVulpkaninAnimalLiver
   parent: BaseAnimalOrgan
   name: liver
-  noSpawn: true
+  #noSpawn: true
   components:
   - type: Sprite
     state: liver

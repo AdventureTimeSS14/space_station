@@ -29,15 +29,9 @@
       slowness: 0.99999999
     - texture:
         !type:ImageParallaxTextureSource
-        path: "/Textures/Parallaxes/NES/LunaChe.png"
-      slowness: 0.995
-      scale: "1, 1"
-      tiled: false
-    - texture:
-        !type:ImageParallaxTextureSource
         path: "/Textures/Parallaxes/NES/planet4.png"
-      slowness: 0.97
-      scale: "3, 3"
+      slowness: 0.99
+      scale: "0.6, 0.6"
       tiled: false
   layersLQ:
     - texture:
@@ -73,8 +67,14 @@
     - texture:
         !type:ImageParallaxTextureSource
         path: "/Textures/Parallaxes/NES/planet2.png"
-      slowness: 0.98
-      scale: "1, 1"
+      slowness: 0.99
+      scale: "0.4, 0.4"
+      tiled: false
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/Parallaxes/NES/LunaChe.png"
+      slowness: 0.9
+      scale: "2, 2"
       tiled: false
   layersLQ:
     - texture:
@@ -144,23 +144,23 @@
     - texture:
         !type:ImageParallaxTextureSource
         path: "/Textures/Parallaxes/NES/GreenParallax2.png"
-      slowness: 0.99
+      slowness: 0.999
       scale: "1, 1"
     - texture:
         !type:GeneratedParallaxTextureSource
         id: "hq_wizard_stars"
         configPath: "/Prototypes/Parallaxes/parallax_config_stars.toml"
-      slowness: 0.988998
+      slowness: 0.999
     - texture:
         !type:GeneratedParallaxTextureSource
         id: "hq_wizard_stars"
         configPath: "/Prototypes/Parallaxes/parallax_config_stars.toml"
-      slowness: 0.99939
+      slowness: 0.998
     - texture:
         !type:GeneratedParallaxTextureSource
         id: "hq_wizard_stars_faster"
         configPath: "/Prototypes/Parallaxes/parallax_config_stars-2.toml"
-      slowness: 0.987265625
+      slowness: 0.9998
     - texture:
         !type:ImageParallaxTextureSource
         path: "/Textures/Parallaxes/NES/GreenPlanet.png"
@@ -228,8 +228,8 @@
     - texture:
         !type:ImageParallaxTextureSource
         path: "/Textures/Parallaxes/NES/PurplePlanet.png"
-      slowness: 0.98
-      scale: "0.3, 0.3"
+      slowness: 0.99
+      scale: "0.8, 0.8"
       tiled: false
   layersLQ:
     - texture:
@@ -255,7 +255,7 @@
     - texture:
         !type:ImageParallaxTextureSource
         path: "/Textures/Parallaxes/NES/PystinaPlanet.png"
-      slowness: 0.989
+      slowness: 0.992
       scale: "0.8, 0.8"
       tiled: false
   layersLQ:
