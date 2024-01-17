@@ -82,6 +82,20 @@
   completetime: 4
   materials:
     Cloth: 300
+#Cap
+- type: latheRecipe
+  id: ADTCapJumpsuitWarm
+  result: ADTCapJumpsuitWarm
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ADTCapJumpskirtWarm
+  result: ADTCapJumpskirtWarm
+  completetime: 4
+  materials:
+    Cloth: 300
 #Bartender
 - type: latheRecipe
   id: ADTClothingUniformNewBarmanSuit

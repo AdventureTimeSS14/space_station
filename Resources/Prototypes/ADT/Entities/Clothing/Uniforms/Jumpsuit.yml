@@ -428,9 +428,9 @@
   description: A turtleneck for someone domineering.
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/hos_alt.rsi #ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_hos.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_hos.rsi
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/hos_alt.rsi #ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_hos.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_hos.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -439,9 +439,21 @@
   description: A purple turtleneck to wear stylishly with labcoat.
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/rnd.rsi #ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_rd.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_rd.rsi
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/rnd.rsi #ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_rd.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_rd.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTCapJumpsuitWarm
+  name: cap jumpsuit warm
+  description: A blue turtleneck for the head of the station.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_cap.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_cap.rsi
+
 
 #костюм Эйдана
 
