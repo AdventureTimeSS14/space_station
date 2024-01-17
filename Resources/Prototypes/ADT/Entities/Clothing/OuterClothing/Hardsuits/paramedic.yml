@@ -26,6 +26,9 @@
   - type: GroupExamine
   - type: ToggleableClothing
     clothingPrototype: ADTClothingHeadHelmetParamedicVoid
+  - type: ContainerContainer
+    containers:
+      place: !type:ContainerSlot
   - type: ItemSlots   #слот для ПИИ
     slots:
       place:
