@@ -23,12 +23,10 @@
         Heat: 0.90
         Radiation: 0.75
         Caustic: 0.5
+  - type: Appearance
   - type: GroupExamine
   - type: ToggleableClothing
     clothingPrototype: ADTClothingHeadHelmetParamedicVoid
-  - type: ContainerContainer
-    containers:
-      place: !type:ContainerSlot
   - type: ItemSlots   #слот для ПИИ
     slots:
       place:
@@ -44,5 +42,9 @@
         whitelist:
           tags:
           - ADTPAIEqepped
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/paramedic_hardsuit.rsi
+  - type: ContainerContainer
+    containers:
+      place: !type:ContainerSlot
 
 
