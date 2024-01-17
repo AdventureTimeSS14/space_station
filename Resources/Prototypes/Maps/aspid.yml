@@ -72,3 +72,8 @@
             Magistrat: [ 1, 1 ]
             ADTInvestigator: [ 1, 1 ] #ADT
             ADTSecurityCyborg: [ 1, 1 ] #ADT
+            ADTEngiBorg: [ 1, 1 ] #ADT
+            ADTJanitorBorg: [ 1, 1 ] #ADT
+            ADTMedicalBorg: [ 1, 1 ] #ADT
+            ADTServiseBorg: [ 1, 1 ] #ADT
+            ADTSupplyBorg: [ 1, 1 ] #ADT

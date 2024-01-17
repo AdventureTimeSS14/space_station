@@ -20,7 +20,6 @@
           availableJobs:
             #service
             Captain: [ 1, 1 ]
-            IAA: [ 1, 1 ] # Corvax-IAA
             HeadOfPersonnel: [ 1, 1 ]
             Bartender: [ 2, 2 ]
             Botanist: [ 3, 3 ]
@@ -72,11 +71,11 @@
             Brigmedic: [ 1, 1 ]
             ADTBlueShieldOfficer: [ 1, 1 ]
             Magistrat: [ 1, 1 ]
-            Virusolog: [ 1, 1]
             ADTInvestigator: [ 1, 1 ] #ADT
+            ADTSecurityCyborg: [ 1, 1 ] #ADT
             ADTEngiBorg: [ 1, 1 ] #ADT
             ADTJanitorBorg: [ 1, 1 ] #ADT
             ADTMedicalBorg: [ 1, 1 ] #ADT
             ADTServiseBorg: [ 1, 1 ] #ADT
             ADTSupplyBorg: [ 1, 1 ] #ADT
-            ADTSecurityCyborg: [ 1, 1 ] #ADT
+            IAA: [ 1, 1 ] # Corvax-IAA
