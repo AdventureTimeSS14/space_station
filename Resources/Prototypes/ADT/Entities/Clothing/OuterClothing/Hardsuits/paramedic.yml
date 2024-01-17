@@ -30,7 +30,7 @@
     slots:
       place:
         name: PersonalAI
-        #startingItem: null
+        startingItem: null
         priority: 1
         whitelist:
           tags:
