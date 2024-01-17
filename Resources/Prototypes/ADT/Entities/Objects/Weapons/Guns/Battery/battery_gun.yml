@@ -133,7 +133,7 @@
     - proto: ADTBulletLaserMK2
       fireCost: 75
   - type: Battery
-    maxCharge: 600
-    startingCharge: 600
+    maxCharge: 1200
+    startingCharge: 1200
   - type: StaticPrice
     price: 3000
