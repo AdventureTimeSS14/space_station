@@ -29,6 +29,10 @@ entities:
       type: MetaData
     - parent: invalid
       type: Transform
+    - whitelist:
+        tags:
+        - ADTNanoTrasen
+      type: FTLDestination
     - chunks:
         -1,-1:
           ind: -1,-1

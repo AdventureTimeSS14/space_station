@@ -26,3 +26,20 @@
   - type: GroupExamine
   - type: ToggleableClothing
     clothingPrototype: ADTClothingHeadHelmetParamedicVoid
+  - type: ItemSlots   #слот для ПИИ
+    slots:
+      place:
+        name: PersonalAI
+        #startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - ADTPAIEqepped
+  - type: ItemMapper
+    mapLayers:
+      equipped-OUTERCLOTHING-PAI:
+        whitelist:
+          tags:
+          - ADTPAIEqepped
+
+
