@@ -6,3 +6,5 @@ ent-BulletPistolRubber = пуля (9х19 мм резиновая)
     .desc = { ent-BaseBulletRubber.desc }
 ent-BulletPistolIncendiary = пуля (9х19 мм зажигательная)
     .desc = { ent-BaseBulletIncendiary.desc }
+ent-BulletPistolUranium = пуля (9х19 мм урановая)
+    .desc = { ent-BaseBullet.desc }

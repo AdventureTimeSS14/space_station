@@ -14,3 +14,5 @@ ent-PelletShotgunTranquilizer = дробина (12х70 транквилизат�
     .desc = { ent-BaseBulletPractice.desc }
 ent-PelletShotgunFlare = дробина (12х70 фальшфейер)
     .desc = { ent-BaseBullet.desc }
+ent-PelletShotgunUranium = дробина (12х70 урановая)
+    .desc = { ent-BaseBullet.desc }

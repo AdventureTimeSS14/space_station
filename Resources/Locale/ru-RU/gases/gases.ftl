@@ -7,3 +7,4 @@ gases-water-vapor = Водяной пар
 gases-miasma = Миазмы
 gases-n2o = Оксид азота
 gases-frezon = Фрезон
+gases-ammonia = Аммиак
