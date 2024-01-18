@@ -1,18 +1,18 @@
 - type: entity
-  id: ADTTallRobotFMekaCargo
-  parent: ADTTallRobotFMekaBase
-  name: cargo cyborg
+  id: ADTTallRobotMekaMed
+  parent: ADTTallRobotMekaBase
+  name: med cyborg
   components:
   - type: Sprite
-    sprite: ADT/Mobs/Silicon/Bots/tallrobot/fmekacargo.rsi
+    sprite: ADT/Mobs/Silicon/Bots/tallrobot/mekamed.rsi
     layers:
-    - state: fmekacargo
+    - state: mekamed
       map: ["enum.DamageStateVisualLayers.Base"]
-    - state: fmekacargoe
+    - state: mekamed_e
       map: ["enum.BorgVisualLayers.Light"]
       shader: unshaded
       visible: false
-    - state: fmekacargoer
+    - state: mekamed_e_r
       shader: unshaded
       visible: false
     - state: robot_l
@@ -23,32 +23,32 @@
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
-      - BorgModuleCargo
-    hasMindState: fmekacargoe
-    noMindState: fmekacargoer
+      - BorgModuleMedical
+    hasMindState: mekamed_e
+    noMindState: mekamed_e_r
   - type: DamageStateVisuals
     states:
       Alive:
-        Base: fmekacargo
+        Base: mekamed
       Critical:
-        Base: fmekacargo-wreck
+        Base: mekamed-tipped
       Dead:
-        Base: fmekacargo-wreck
+        Base: mekamed-tipped
   - type: Construction
-    node: mining
+    node: service
   - type: IntrinsicRadioTransmitter
     channels:
-    - Supply
+    - Medical
     - Binary
     - Common
     - Science
   - type: ActiveRadio
     channels:
-    - Supply
+    - Medical
     - Binary
     - Common
     - Science
   - type: AccessReader
-    access: [["Cargo"], ["Salvage"], ["Command"], ["Research"]]
+    access: [["Medical"], ["Command"], ["Research"]]
   - type: Inventory
     templateId: borgTall

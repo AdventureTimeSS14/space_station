@@ -8,7 +8,7 @@
   "copyright": "Taken from Skyrat-tg at commit https://github.com/Skyrat-SS13/Skyrat-tg/commit/bb8d8f968abdddc1dcf86ceda8d47001d531e321",
   "states": [
     {
-      "name": "fmekacargo",
+      "name": "fmekamed",
       "directions": 4,
       "delays": [
         [
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "name": "fmekacargo-rest",
+      "name": "fmekamed-rest",
       "directions": 4,
       "delays": [
         [
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "name": "fmekacargoe",
+      "name": "fmekamed_e",
       "directions": 4,
       "delays": [
         [
@@ -80,7 +80,7 @@
       ]
     },
     {
-      "name": "fmekacargoer",
+      "name": "fmekamed_e_r",
       "directions": 4,
       "delays": [
         [
@@ -98,7 +98,7 @@
       ]
     },
     {
-      "name": "fmekacargo-tipped",
+      "name": "fmekamed-tipped",
       "delays": [
         [
           1
@@ -106,7 +106,7 @@
       ]
     },
     {
-      "name": "fmekacargo-wreck",
+      "name": "fmekamed-wreck",
       "delays": [
         [
           1
