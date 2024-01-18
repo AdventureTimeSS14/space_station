@@ -46,6 +46,6 @@
   - type: ContainerContainer
     containers:
       place: !type:ContainerSlot
-        ents: [ ]
+        #ents: [ ]
 
 
