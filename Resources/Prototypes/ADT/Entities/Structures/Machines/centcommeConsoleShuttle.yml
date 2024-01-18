@@ -2,7 +2,7 @@
   parent: BaseComputerShuttle
   id: ADTComputerShuttleCentCom
   name: консоль управления шаттлом ЦК
-  description: Mmm
+  description: Управляйте шаттлом ЦК не выходя из дома!
   components:
     - type: Sprite
       layers:
