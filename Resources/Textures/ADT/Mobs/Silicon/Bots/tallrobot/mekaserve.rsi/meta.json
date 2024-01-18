@@ -8,25 +8,53 @@
   "copyright": "Taken from Skyrat-tg at commit https://github.com/Skyrat-SS13/Skyrat-tg/commit/bb8d8f968abdddc1dcf86ceda8d47001d531e321",
   "states": [
     {
-      "name": "mekajani",
+      "name": "mekaserve",
       "directions": 4,
       "delays": [
         [
-          1
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          1
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          1
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          1
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
     {
-      "name": "mekajanie",
+      "name": "mekaserve_e",
       "directions": 4,
       "delays": [
         [
@@ -86,7 +114,7 @@
       ]
     },
     {
-      "name": "mekajanier",
+      "name": "mekaserve_e_r",
       "directions": 4,
       "delays": [
         [
@@ -116,7 +144,7 @@
       ]
     },
     {
-      "name": "mekajanirest",
+      "name": "mekaserve-rest",
       "directions": 4,
       "delays": [
         [
@@ -146,13 +174,28 @@
       ]
     },
     {
-      "name": "mekajanitipped",
+      "name": "mekaserve-tipped",
       "delays": [
         [
           10.0,
           0.1,
           0.1,
           0.1
+        ]
+      ]
+    },
+    {
+      "name": "mekaserve-wreck",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          30.0
         ]
       ]
     }

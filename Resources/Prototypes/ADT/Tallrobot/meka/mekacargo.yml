@@ -1,18 +1,18 @@
 - type: entity
-  id: ADTTallRobotFMekaCargo
-  parent: ADTTallRobotFMekaBase
+  id: ADTTallRobotMekaCargo
+  parent: ADTTallRobotMekaBase
   name: cargo cyborg
   components:
   - type: Sprite
-    sprite: ADT/Mobs/Silicon/Bots/tallrobot/fmekacargo.rsi
+    sprite: ADT/Mobs/Silicon/Bots/tallrobot/mekacargo.rsi
     layers:
-    - state: fmekacargo
+    - state: mekacargo
       map: ["enum.DamageStateVisualLayers.Base"]
-    - state: fmekacargoe
+    - state: mekacargo_e
       map: ["enum.BorgVisualLayers.Light"]
       shader: unshaded
       visible: false
-    - state: fmekacargoer
+    - state: mekacargo_e_r
       shader: unshaded
       visible: false
     - state: robot_l
@@ -24,16 +24,16 @@
       tags:
       - BorgModuleGeneric
       - BorgModuleCargo
-    hasMindState: fmekacargoe
-    noMindState: fmekacargoer
+    hasMindState: mekacargo_e
+    noMindState: mekacargo_e_r
   - type: DamageStateVisuals
     states:
       Alive:
-        Base: fmekacargo
+        Base: mekacargo
       Critical:
-        Base: fmekacargo-wreck
+        Base: mekacargo-tipped
       Dead:
-        Base: fmekacargo-wreck
+        Base: mekacargo-tipped
   - type: Construction
     node: mining
   - type: IntrinsicRadioTransmitter
