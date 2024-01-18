@@ -75,6 +75,22 @@
   - type: EmotePanel
   - type: ContentEye
     maxZoom: 1.0,1.0
+  - type: LightningTarget
+    priority: 4
+    lightningExplode: false
+  - type: Vocal
+    sounds:
+      Male: UnisexIPC
+      Female: UnisexIPC
+      Unsexed: UnisexIPC
+  - type: TriggerOnMobstateChange
+    mobState:
+    - Dead
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/ADT/IPC/borg_deathsound.ogg
+  - type: TTS # Corvax-TTS
+
 
 - type: entity
   save: false
