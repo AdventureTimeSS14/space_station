@@ -53,7 +53,7 @@
   abstract: true
   components:
     - type: StationCentcomm
-      map: "Maps/Dev/Schrodinger71/centcomm_adt.yml"  #ADT-mapping
+      #map: "Maps/Dev/Schrodinger71/centcomm_adt.yml"  #ADT-mapping
 
 - type: entity
   id: BaseStationEvacuation
