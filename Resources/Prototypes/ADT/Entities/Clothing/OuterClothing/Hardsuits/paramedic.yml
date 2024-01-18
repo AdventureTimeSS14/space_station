@@ -36,15 +36,16 @@
         whitelist:
           tags:
             - ADTPAIEqepped
-  - type: ItemMapper
-    mapLayers:
-      equipped-OUTERCLOTHING-PAI:
-        whitelist:
-          tags:
-          - ADTPAIEqepped
-    sprite: ADT/Clothing/OuterClothing/Hardsuits/paramedic_hardsuit.rsi
+  #- type: ItemMapper
+    #mapLayers:
+    #  equipped-OUTERCLOTHING-PAI:
+    #    whitelist:
+    #      tags:
+    #      - ADTPAIEqepped
+    #sprite: ADT/Clothing/OuterClothing/Hardsuits/paramedic_hardsuit.rsi
   - type: ContainerContainer
     containers:
       place: !type:ContainerSlot
+        ents: [ ]
 
 
