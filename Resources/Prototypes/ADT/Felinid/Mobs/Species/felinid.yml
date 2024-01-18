@@ -10,7 +10,7 @@
     netsync: false
     noRot: true
     drawdepth: Mobs
-    scale: 0.95, 0.95
+    scale: 0.97, 0.97
     layers:
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
       - map: [ "enum.HumanoidVisualLayers.Head" ]

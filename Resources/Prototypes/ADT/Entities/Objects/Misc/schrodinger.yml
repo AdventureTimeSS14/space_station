@@ -24,7 +24,6 @@
       - id: ClothingHeadsetAltCentCom
       - id: ADTClothingOuterCoatSchroCoat
 
-
 - type: entity
   name: Deckard
   parent: BaseWeaponRevolver
@@ -41,7 +40,7 @@
       shader: unshaded
   - type: Gun
     selectedMode: FullAuto
-    fireRate: 3
+    fireRate: 2.7
     availableModes:
     - SemiAuto
     - FullAuto
@@ -84,8 +83,9 @@
     sprite: ADT/Clothing/OuterClothing/Coats/schrodinger_coat.rsi
   - type: StorageFill
     contents:
-    - id: CigarGoldCase
+    - id: ADTCigarSchrodingerCase
     - id: FlippoEngravedLighter
+    - id: SpeedLoaderMagnum
   - type: Armor
     modifiers:
       coefficients:
@@ -93,3 +93,32 @@
         Slash: 0.8
         Piercing: 0.7
         Heat: 0.8
+
+- type: entity
+  id: ADTCigarSchrodingerCase
+  parent: CigarCase
+  name: case Melnicov
+  description: Case
+  components:
+  - type: StorageFill
+    contents:
+    - id: ADTSchrodingerCigar
+      amount: 8
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Smokeables/melnikov_case.rsi
+
+- type: entity
+  id: ADTSchrodingerCigar
+  parent: CigarGold
+  name: Sigar Gold
+  description: Sigar
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      smokable:
+        maxVol: 45
+        reagents:
+          - ReagentId: Nicotine
+            Quantity: 40
+          - ReagentId: Omnizine
+            Quantity: 5
