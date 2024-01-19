@@ -70101,13 +70101,6 @@ entities:
     - type: Transform
       pos: 16.717562,29.681984
       parent: 2
-- proto: ClothingNeckLGBTPin
-  entities:
-  - uid: 10501
-    components:
-    - type: Transform
-      pos: 78.38637,7.410472
-      parent: 2
 - proto: ClothingNeckMantleHOS
   entities:
   - uid: 10502

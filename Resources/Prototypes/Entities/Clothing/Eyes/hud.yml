@@ -162,6 +162,9 @@
   - type: ShowHealthBars
     damageContainers:
     - Biological
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
 
 - type: entity
   parent: ClothingEyesBase
@@ -224,3 +227,21 @@
   suffix: Syndicate
   components:
   - type: ShowSecurityIcons
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ADTClothingEyesHudAdvanced
+  name: Advanced hud
+  description: A heads-up display that scans the humanoids in view and provides accurate data about their ID status and security records.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Eyes/HUD/advanced_hud.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Eyes/HUD/advanced_hud.rsi
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+  - type: ShowSecurityIcons
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
