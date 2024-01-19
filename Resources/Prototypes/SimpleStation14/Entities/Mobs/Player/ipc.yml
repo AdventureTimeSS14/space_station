@@ -71,7 +71,7 @@
     boardName: "ipc-board-name"
     layoutId: IPC
   - type: SSDIndicator
-  - type: UnblockableSpeech
+#  - type: UnblockableSpeech
   - type: EmotePanel
   - type: ContentEye
     maxZoom: 1.0,1.0
