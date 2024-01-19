@@ -246,7 +246,7 @@
   - type: Barotrauma
     damage:
       types:
-        Blunt: 2 #per second, scales with pressure and other constants.
+        Blunt: 0.5 #per second, scales with pressure and other constants.
   - type: PassiveDamage # Slight passive regen. Assuming one damage type, comes out to about 4 damage a minute.
     allowedStates:
     - Alive
