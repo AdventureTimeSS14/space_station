@@ -154,3 +154,10 @@ ent-ADTClothingHeadSecAuditorCap = фуражка аудитора СБ
 ent-ClothingHeadHelmetJanitorBombSuit = саперный шлем уборщика
     .desc = Защитный головной убор на случай, когда уборка становится по-настоящему взрывной.
     .suffix = { "НЕ МАППЕРИТЬ" }    
+
+ent-ADTClothingHeadSportHat =
+    .desc = 
+ent-ADTClothingHeadSportRoseCap = 
+    .desc = 
+ent-ADTClothingHeadSportHatStep = cпортивная шапка-пипо "STEP"
+    .desc = Футуристичная шпака-пипо серии "STEP" в полоску.

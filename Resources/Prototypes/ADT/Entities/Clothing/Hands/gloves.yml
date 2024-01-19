@@ -277,3 +277,27 @@
     sprite: ADT/Clothing/Hands/Gloves/New-Year/gloves_red2.rsi
   - type: Clothing
     sprite: ADT/Clothing/Hands/Gloves/New-Year/gloves_red2.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsGlovesSport
+  name: sport winter gloves
+  description: A stylish sport gloves designed specifically for winter weather.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/gloves_sport.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/gloves_sport.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsGlovesSportStep
+  name: gloves by STEP series "Ultra"
+  description: A gloves "Ultra" by STEP series fingerless with soft lining, making them ideal for walking on or picking up weights.
+  suffix: New Year
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/gloves_sport_step.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/gloves_sport_step.rsi #спрайты от prazat911

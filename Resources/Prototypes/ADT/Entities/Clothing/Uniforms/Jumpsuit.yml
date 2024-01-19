@@ -1119,3 +1119,49 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/sec_auditor.rsi #спрайты от КомбатБибиса
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/sec_auditor.rsi #спрайты от КомбатБибиса
+
+#Спорт одёжка от @prazat911
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformSportSuit
+  name: winter sport suit
+  description: A warm suit for a scamper by winter breeze.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/sport_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/sport_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformSportRoseSuit
+  name: rose sport suit
+  description: A pink suit for sport.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/sport_rose_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/sport_rose_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformSportStepSuit
+  name: STEP sport suit
+  description: A suit from sport series "STEP".
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/sport_step_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/sport_step_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformSportZetaSuit
+  name: zeta sport suit
+  description: A green suit for a scamper.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/sport_zeta_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/sport_zeta_suit.rsi

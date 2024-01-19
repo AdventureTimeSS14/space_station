@@ -26,3 +26,36 @@
         Radiation: 0.20
   - type: ExplosionResistance
     damageCoefficient: 0.3
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ADTClothingOuterCoatSportJacket
+  name: sport bomber jacket
+  description: A thick, stylish bomber jacket for cold temperature.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Jackets/sport_jacket.rsi #спрайты от @prazat911
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Jackets/sport_jacket.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ADTClothingOuterCoatSportStepHoodie
+  name: STEP hoodie
+  description: This hoodie is like a cocoon, that places it's owner into another universe, where water, wind, mud and fire is no match for him. Mucho texto, really. But looks good.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Jackets/sport_step_hoodie.rsi #спрайты от @prazat911
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Jackets/sport_step_hoodie.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ADTClothingOuterCoatSportZetaBlouse
+  name: Zeta green blouse
+  description: A green blouse from series "Zeta".
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Jackets/sport_zeta_blouse.rsi #спрайты от @prazat911
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Jackets/sport_zeta_blouse.rsi
