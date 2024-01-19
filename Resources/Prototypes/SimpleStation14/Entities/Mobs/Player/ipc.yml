@@ -19,6 +19,11 @@
       0: Alive
       125: Critical
       180: Dead
+    stateAlertDict:
+      Alive: BorgHealth
+      Critical: BorgCrit
+      Dead: BorgDead
+
     allowRevives: true # Для воскрешения достаточно починить урон. - ss220.
   - type: NpcFactionMember
     factions:
@@ -71,7 +76,7 @@
     boardName: "ipc-board-name"
     layoutId: IPC
   - type: SSDIndicator
-  - type: UnblockableSpeech
+#  - type: UnblockableSpeech
   - type: EmotePanel
   - type: ContentEye
     maxZoom: 1.0,1.0
