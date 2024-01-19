@@ -224,7 +224,7 @@
         Heat: 5
     soundHit:
       path: "/Audio/Weapons/Guns/Hits/taser_hit.ogg"
-    soundForce: true
+    forceSound: true
   - type: StunOnCollide
     stunAmount: 1
     knockdownAmount: 1
@@ -270,8 +270,8 @@
       types:
         Heat: 5
     soundHit:
-      path: "/Audio/Weapons/tap.ogg"
-    soundForce: true
+      collection: WeakHit
+    forceSound: true
 
 - type: entity
   name : Laser bolt
@@ -350,8 +350,8 @@
       types:
         Heat: 1
     soundHit:
-      path: "/Audio/Weapons/tap.ogg"
-    soundForce: true
+      collection: WeakHit
+    forceSound: true
 
 - type: entity
   name: emitter bolt
@@ -809,14 +809,16 @@
         maxVol: 50
   - type: Fixtures
     fixtures:
-      fix1:
+      projectile:
         shape:
           !type:PhysShapeAabb
           bounds: "-0.10,-0.30,0.10,0.15"
         hard: false
         mask:
-        - FullTileMask
-        - Opaque
+        - Impassable
+        - BulletImpassable
+  - type: CanPenetrate
+    penetrationLayer: MobLayer
   - type: Vapor
     active: true
   - type: Appearance
@@ -919,8 +921,8 @@
       types:
         Heat: 2
     soundHit:
-      path: "/Audio/Weapons/tap.ogg"
-    soundForce: true
+      collection: WeakHit
+    forceSound: true
 
 - type: entity
   name: tesla gun lightning
