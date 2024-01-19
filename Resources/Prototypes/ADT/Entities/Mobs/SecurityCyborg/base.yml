@@ -245,7 +245,7 @@
         types:
           Blunt: 5
       soundHit:
-        path: /Audio/Effects/metalbreak.ogg
+        path: /Audio/Effects/metal_break1.ogg
     - type: LagCompensation
     - type: RangedDamageSound
       soundGroups:
