@@ -2,8 +2,8 @@
 	path = RobustToolbox
 	url = https://github.com/space-wizards/RobustToolbox.git
 	branch = master
-[submodule "Secrets"]
-	path = Secrets
-	url = git@gitlab.com:Morbo/corvax-secrets.git
+[submodule "ADT_Secrets"]
+	path = ADT_Secrets
+	url = https://github.com/xtray85/ADT_STATION
 	branch = master
 	update = none
