@@ -15,6 +15,10 @@
     - state: fmekaenger
       shader: unshaded
       visible: false
+    - state: robot_l
+      shader: unshaded
+      map: ["light"]
+      visible: false
   - type: BorgChassis
     moduleWhitelist:
       tags:

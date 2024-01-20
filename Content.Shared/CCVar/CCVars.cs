@@ -834,7 +834,7 @@ namespace Content.Shared.CCVar
         ///     If 0, appearing as a new player is disabled.
         /// </summary>
         public static readonly CVarDef<int> NewPlayerThreshold =
-            CVarDef.Create("admin.new_player_threshold", 0, CVar.ARCHIVE | CVar.REPLICATED | CVar.SERVER);
+            CVarDef.Create("admin.new_player_threshold", 320, CVar.ARCHIVE | CVar.REPLICATED | CVar.SERVER);
 
         /*
          * Explosions

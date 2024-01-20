@@ -1,7 +1,7 @@
 - type: entity
-  parent: IDCardStandard
+  parent: SecurityIDCard
   id: ADTSecurityCybIDCard
-  name: security ID card
+  name: "security cyborg ID card"
   components:
   - type: Sprite
     layers:

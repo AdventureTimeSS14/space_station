@@ -3,5 +3,6 @@
   result: IndustrialChargerCircuitboard
   completetime: 2
   materials:
-    Steel: 50
-    Plastic: 50
+    Steel: 900
+    Plastic: 100
+    Gold: 100

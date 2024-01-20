@@ -83,7 +83,7 @@
       specificHeat: 24
       coldDamage:
         types:
-          Cold: 0.1 # Per second, scales with temperature & other constants.
+          Cold: 0 # Per second, scales with temperature & other constants.
       heatDamage:
         types:
           Heat: 0.25 # Per second, scales with temperature & other constants.
@@ -224,7 +224,7 @@
       specificHeat: 50
       coldDamage:
         types:
-          Cold: 0.1 #per second, scales with temperature & other constants
+          Cold: 0 #per second, scales with temperature & other constants
       heatDamage:
         types:
           Heat: 0.15 #per second, scales with temperature & other constants
@@ -391,4 +391,4 @@
       decay: 6
       cooldown: 1
       critThreshold: 400
-    - type: NoSlip
+

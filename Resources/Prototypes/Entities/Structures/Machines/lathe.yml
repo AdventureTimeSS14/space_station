@@ -155,7 +155,7 @@
       - SubstationMachineCircuitboard
       - CellRechargerCircuitboard
       - BorgChargerCircuitboard
-      #- IndustrialChargerCircuitboard # закомментировано для теста
+      #- IndustrialChargerCircuitboard # закомментировано для теста (пусть так и остаётся, добавлю в список исследований)
       - WeaponCapacitorRechargerCircuitboard
       - ADTFormPrinterMachineCircuitboard
   - type: EmagLatheRecipes
@@ -472,6 +472,7 @@
       - MassMediaCircuitboard
       - ADTSMESIndustrialMachineCircuitboard
       - ADTFormPrinterMachineCircuitboard
+      - IndustrialChargerCircuitboard # Зарядник КПБ
   - type: MaterialStorage
     whitelist:
       tags:

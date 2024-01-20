@@ -1520,11 +1520,6 @@
     Telecrystal: 4
   categories:
   - UplinkMisc
-  conditions:
-    - !type:StoreWhitelistCondition
-      blacklist:
-        tags:
-        - NukeOpsUplink
 
 - type: listing
   id: UplinkStimpack
@@ -1535,11 +1530,6 @@
     Telecrystal: 4
   categories:
   - UplinkMisc
-  conditions:
-    - !type:StoreWhitelistCondition
-      blacklist:
-        tags:
-        - NukeOpsUplink
 
 - type: listing
   id: UplinkStimkit
@@ -1550,56 +1540,6 @@
     Telecrystal: 6
   categories:
   - UplinkMisc
-  conditions:
-    - !type:StoreWhitelistCondition
-      blacklist:
-        tags:
-        - NukeOpsUplink
-
-- type: listing
-  id: UplinkCombatMedipenNukie
-  name: uplink-combat-medipen-name
-  description: uplink-combat-medipen-desc
-  productEntity: CombatMedipen
-  cost:
-    Telecrystal: 4
-  categories:
-  - UplinkMisc
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-        - NukeOpsUplink
-
-- type: listing
-  id: UplinkStimpackNukie
-  name: uplink-stimpack-name
-  description: uplink-stimpack-desc
-  productEntity: Stimpack
-  cost:
-    Telecrystal: 4
-  categories:
-  - UplinkMisc
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-        - NukeOpsUplink
-
-- type: listing
-  id: UplinkStimkitNukie
-  name: uplink-stimkit-name
-  description: uplink-stimkit-desc
-  productEntity: StimkitFilled
-  cost:
-    Telecrystal: 6
-  categories:
-  - UplinkMisc
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-        - NukeOpsUplink
 
 - type: listing
   id: UplinkSyndicateSegwayCrate

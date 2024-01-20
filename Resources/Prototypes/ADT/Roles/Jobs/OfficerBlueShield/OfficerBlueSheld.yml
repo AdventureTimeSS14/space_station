@@ -49,9 +49,8 @@
     belt: ClothingBeltMilitaryWebbingBlueShieldFilled
     gloves: ClothingHandsGlovesCombat
     id: ADTBlueShieldOfficerPDA
-    pocket1: WeaponDisabler
-    pocket2: WeaponPulsePistol
-    suitstorage: WeaponSubMachineGunDrozdRubber
+    pocket1: ADTWeaponPistolBlueShitX02
+    pocket2: HandheldCrewMonitor
     underwearb: ADTClothingUnderwearBottomBoxersBlueshield # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
     neck: ClothingNeckCloakNanotrasen

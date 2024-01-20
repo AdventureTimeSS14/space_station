@@ -6,3 +6,5 @@ ent-BulletLightRifleRubber = пуля (6.5х39 мм TSF резиновая)
     .desc = { ent-BaseBulletRubber.desc }
 ent-BulletLightRifleIncendiary = пуля (6.5х39 мм TSF зажигательная)
     .desc = { ent-BaseBulletIncendiary.desc }
+ent-BulletLightRifleUranium = пуля (6.5х39 мм TSF урановая)
+    .desc = { ent-BaseBullet.desc }
