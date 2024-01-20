@@ -277,7 +277,7 @@
             Quantity: 7
           - ReagentId: Fat
             Quantity: 3
-        canReact: false
+          canReact: false
 
 - type: entity
   parent: MaterialSheetMeat
