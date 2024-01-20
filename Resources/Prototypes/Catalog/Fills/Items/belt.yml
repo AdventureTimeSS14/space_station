@@ -196,19 +196,18 @@
   components:
   - type: Storage
     grid:
-    - 0,0,3,3
+    - 0,0,7,1
     maxItemSize: Normal
   - type: StorageFill
     contents:
       - id: ADTCombatHypo
       - id: EpinephrineChemistryBottle
-        amount: 1
-      - id: EphedrineChemistryBottle
-        amount: 1
-      - id: OmnizineChemistryBottle
+        amount: 2
       - id: MedkitCombatFilled
-      - id: SpaceMedipen
-      - id: EmergencyMedipen
+      - id: BurnAutoInjector
+      - id: BruteAutoInjector
+      - id: DeviceQuantumSpinInverter
+        amount: 2
   - type: Sprite
     sprite: ADT/Clothing/Belt/blueshield_webbing.rsi
   - type: Clothing

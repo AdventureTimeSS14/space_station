@@ -1,16 +1,17 @@
 - type: species
   id: IPC
   name: species-name-ipc
-  roundStart: false # закомментировано для теста
+  roundStart: true # закомментировано для теста
   prototype: MobIPC
   sprites: MobIPCSprites
   markingLimits: MobIPCMarkingLimits
   dollPrototype: MobIPCDummy
   skinColoration: TintedHues
+  sponsorOnly: true
   minAge: 1
   maxAge: 240
   oldAge: 50
-  youngAge: 50
+  youngAge: 25
   maleFirstNames: IpcFirst
   femaleFirstNames: IpcFirst
   maleLastNames: IpcLast # Corvax-LastnameGender

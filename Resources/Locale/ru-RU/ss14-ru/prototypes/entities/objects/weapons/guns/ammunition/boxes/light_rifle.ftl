@@ -10,3 +10,5 @@ ent-MagazineBoxLightRifleRubber = коробка патронов (7.62х39 мм
     .desc = { ent-BaseMagazineBoxLightRifle.desc }
 ent-MagazineBoxLightRifleIncendiary = коробка патронов (7.62х39 мм винтовочные зажигательные)
     .desc = { ent-BaseMagazineBoxLightRifle.desc }
+ent-MagazineBoxLightRifleUranium = коробка патронов (7.62х39 винтовочные урановые)
+    .desc = { ent-BaseMagazineBoxLightRifle.desc }

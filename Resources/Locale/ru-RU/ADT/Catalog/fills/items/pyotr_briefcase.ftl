@@ -5,3 +5,7 @@ ent-ADTBriefcaseBrownPyotr = чемодан Петра Шахина
 ent-ADTBriefcaseCentcomm = чемодан ЦентКома
     .desc = Роскошный и сверхпрочный чемодан с символикой NanoTrasen. Предназначен для очень важных людей с очень важными бумагами.
     .suffix = { "ЦК, CombatBibis" }
+
+ent-ADTBriefcaseBrownSchrodinger = чемодан Шрёдингера
+    .desc = Стандартная униформа проверяющих работу станции со стороны комитета надзора NanoTrasen.
+    .suffix = { "ЦК, Шрёдя" }

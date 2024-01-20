@@ -66,7 +66,51 @@
   parent: BaseComputer
   id: NesComputerButton
   name: боевой терминал взаимодействия
+  suffix: Служба Безопасности
   description: Терминал для взаимодействия с подключенными к нему устройствами, требует доступ службы безопасности.
+  components:
+  - type: Clickable
+  - type: UseDelay
+  - type: SignalSwitch
+    clickSound: "/Audio/Machines/beep.ogg"
+    onPort: Pressed
+    offPort: Pressed
+    statusPort: Pressed
+    delay: 0.5 # prevent light-toggling auto-clickers.
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: medcomp
+      color: "#ff5400"
+    - map: ["computerLayerKeys"]
+      state: med_key
+ # - type: Fixtures
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSource
+    ports:
+      - Pressed
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#ff5400"
+  - type: Lock
+    locked: true
+  - type: AccessReader
+    access: [['Security']]
+
+- type: entity
+  parent: NesPeopleComputerButton
+  id: NesSyndicateComputerButton
+  name: боевой терминал
+  suffix: Ядерные оперативники
+  description: Терминал для взаимодействия с подключенными к нему устройствами, требует доступ мародеров Горлакса.
   components:
   - type: Clickable
   - type: UseDelay
@@ -102,7 +146,7 @@
   - type: Lock
     locked: true
   - type: AccessReader
-    access: [['Security']]
+    access: [['NuclearOperative']]
 
 - type: entity
   parent: BaseComputer
@@ -169,6 +213,38 @@
           volume: -10
 
 - type: entity
+  id: NesSignalTerminalDirectional
+  name: кнопка сигнала
+  suffix: Терминал, направленый
+  parent: SignalButton
+  components:
+  - type: WallMount
+    arc: 180
+  - type: SignalSwitch
+    clickSound: "/Audio/Machines/beep.ogg"
+  - type: Sprite
+    sprite: NES/button.rsi
+    layers:
+    - state: dead
+    - state: dead-unshaded
+      shader: unshaded
+    drawdepth: SmallObjects
+  - type: PointLight
+    radius: 2
+    energy: 2
+    color: "#4aad2c"
+
+- type: entity
+  id: NesSignalTerminalShitcureDirectional
+  suffix: Направленый, Служба Безопасности
+  parent: NesSignalTerminalDirectional
+  components:
+  - type: Lock
+    locked: true
+  - type: AccessReader
+    access: [['Security']]
+
+- type: entity
   id: NesBaseBigStructure
   parent: BaseStructure
   abstract: true
@@ -187,29 +263,3 @@
         density: 600
         layer:
         - WallLayer
-
-- type: entity
-  id: NesSignalTerminalDirectional
-  name: настенный терминал
-  suffix: Направленый
-  parent: SignalButton
-  components:
-  - type: WallMount
-    arc: 180
-  - type: SignalSwitch
-    clickSound: "/Audio/Machines/beep.ogg"
-  - type: Sprite
-    drawdepth: SmallObjects
-    sprite: NES/button.rsi
-    state: dead
-  - type: Construction
-    graph: SignalButtonDirectionalGraph
-    node: SignalButtonDirectionalNode
-  - type: PointLight
-    radius: 1.5
-    energy: 1.6
-    color: "#ff0000"
-  - type: Lock
-    locked: true
-  - type: AccessReader
-    access: [['Security']]

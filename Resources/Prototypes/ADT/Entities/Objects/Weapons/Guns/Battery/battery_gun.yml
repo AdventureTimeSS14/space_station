@@ -26,7 +26,7 @@
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisabler
-    fireCost: 60 
+    fireCost: 60
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: BulletDisabler
@@ -99,3 +99,46 @@
     magState: mag
     steps: 5
     zeroVisible: true
+
+- type: entity
+  name: X-02 multiphas laser pistol
+  parent: ADTWeaponPistolX01
+  id: ADTWeaponPistolBlueShitX02
+  description: new version of antique gun witout selfrcharge for "BlueShit"
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Guns/Battery/BlueShield.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      visible: false
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Clothing
+    sprite: ADT/Objects/Weapons/Guns/Battery/BlueShield.rsi
+  - type: Gun
+    fireRate: 3
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletDisabler
+    fireCost: 30
+  - type: BatteryWeaponFireModes
+    fireModes:
+    - proto: BulletDisabler
+      fireCost: 35
+    - proto: ADTBulletLaserMK2
+      fireCost: 40
+  - type: Battery
+    maxCharge: 1200
+    startingCharge: 1200
+  - type: StaticPrice
+    price: 3000

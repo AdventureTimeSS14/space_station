@@ -1,32 +1,30 @@
 - type: entity
-  noSpawn: true
   parent: ClothingBackpackERTSecurity
   id: ClothingBackpackADTBlueShieldOfficerFilled
   components:
     - type: Storage
       maxItemSize: Huge
       grid:
-      - 0,0,9,5
+      - 0,0,6,3
     - type: StorageFill
       contents:
-        - id: MedkitBruteFilled
+        # - id: MedkitBruteFilled
         - id: Zipties
-        - id: Zipties
-        #- id: Zipties
+          amount: 3
         #- id: WeaponDisabler
         - id: Stunbaton
-        - id: HandheldCrewMonitor
-        - id: MagazinePistolSubMachineGun
-        - id: MagazinePistolSubMachineGun
-        - id: MagazinePistolSubMachineGunRubber
-        - id: MagazinePistolSubMachineGunRubber
+        # - id: HandheldCrewMonitor
+        # - id: MagazinePistolSubMachineGun
+        # - id: MagazinePistolSubMachineGun
+        # - id: MagazinePistolSubMachineGunRubber
+        # - id: MagazinePistolSubMachineGunRubber
         #- id: WeaponSubMachineGunDrozdRubber
         #- id: WeaponPulsePistol
         #- id: GrenadeFlashBang
         #- id: GrenadeFlashBang
         #- id: GrenadeFlashBang
-        #- id: BoxSurvivalSecurity
-        #- id: BlueShieldBox
+        - id: BoxSurvivalSecurity
+        # - id: BlueShieldBox
         - id: BlueShieldsuit
         - id: OxygenTankFilled
     - type: Sprite
