@@ -123,9 +123,9 @@
       softness: 1
     - type: Explosive
       explosionType: HardBomb
-      totalIntensity: 4000.0
-      intensitySlope: 3
-      maxIntensity: 400
+      totalIntensity: 5000.0
+      intensitySlope: 4
+      maxIntensity: 500
 
 - type: entity
   parent: SyndicateBomb
