@@ -311,7 +311,6 @@
         Heat: 25
     soundHit:
       path: "/Audio/Weapons/tap.ogg"
-    soundForce: true
 
 - type: entity
   name : Laser bolt
