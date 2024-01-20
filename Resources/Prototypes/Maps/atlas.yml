@@ -69,3 +69,8 @@
             ADTServiseBorg: [ 1, 1 ] #ADT
             ADTSupplyBorg: [ 1, 1 ] #ADT
             IAA: [ 1, 1 ] # Corvax-IAA
+            SeniorEngineer: [ 1, 1 ]
+            SeniorPhysician: [ 1, 1 ]
+            SeniorResearcher: [ 1, 1 ]
+            SeniorOfficer: [ 1, 1 ]
+
