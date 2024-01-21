@@ -26,3 +26,5 @@
     - state: green_bit
       shader: unshaded
     - state: refill_stylish
+  - type: StaticPrice
+    price: 2000 #может это поможет?
