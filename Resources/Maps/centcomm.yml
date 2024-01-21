@@ -36,10 +36,10 @@ entities:
       name: Central Command
     - type: Transform
       parent: 6507
-    - type: FTLDestination
-      whitelist:
+    - whitelist:
         tags:
         - ADTNanoTrasen
+      type: FTLDestination
     - type: MapGrid
       chunks:
         -1,-1:
