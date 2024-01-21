@@ -58216,13 +58216,6 @@ entities:
     - type: Transform
       pos: 27.4845,-46.404865
       parent: 2
-- proto: ClothingNeckLGBTPin
-  entities:
-  - uid: 5872
-    components:
-    - type: Transform
-      pos: -53.645718,-60.37925
-      parent: 2
 - proto: ClothingNeckNonBinaryPin
   entities:
   - uid: 5103
