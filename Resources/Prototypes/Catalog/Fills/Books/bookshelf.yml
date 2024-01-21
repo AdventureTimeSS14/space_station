@@ -5,7 +5,7 @@
   components:
   - type: Storage
     grid:
-    - 0,0,15,3
+    - 0,0,16,3
     maxItemSize: Normal
     whitelist:
       tags:
