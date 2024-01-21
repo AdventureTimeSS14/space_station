@@ -45,6 +45,7 @@
     capacity: 1
     count: 1
   - type: MeleeWeapon
+    attackRate: 1.5
     wideAnimationRotation: -135
     damage:
       types:
@@ -70,14 +71,15 @@
   parent: BaseWeaponCrusher
   id: WeaponCrusherDagger
   name: crusher dagger
-  description: A scaled down version of a proto-kinetic crusher, usually used in a last ditch scenario.
+  description: A scaled down version of a proto-kinetic crusher. Uses kinetic energy to vibrate the blade at high speeds.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/crusher_dagger.rsi
     state: icon
   - type: MeleeWeapon
+    autoAttack: true
     wideAnimationRotation: -135
-    attackRate: 1.5
+    attackRate: 2
     damage:
       types:
         Slash: 15
@@ -103,7 +105,6 @@
         Burn: -10
         Airloss: -5
   - type: MeleeWeapon
-    attackRate: 1.25
   - type: Tag
     tags:
       - Pickaxe

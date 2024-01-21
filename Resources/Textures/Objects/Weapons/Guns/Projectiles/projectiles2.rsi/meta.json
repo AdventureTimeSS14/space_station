@@ -10,6 +10,18 @@
     {
       "name": "buckshot"
     },
+      {
+          "name": "shard"
+      },
+      {
+          "name": "piercing",
+          "delays": [
+              [
+                  0.05,
+                  0.05
+              ]
+          ]
+      },
     {
       "name": "buckshot-flare"
     },
@@ -64,6 +76,18 @@
     {
       "name": "smallfrag"
     },
+      {
+          "name": "grapeshot"
+      },
+      {
+          "name": "uranium",
+          "delays": [
+              [
+                  0.05,
+                  0.05
+              ]
+          ]
+      },
     {
       "name": "spark",
       "delays": [
