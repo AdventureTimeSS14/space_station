@@ -214,44 +214,45 @@ public static partial class PoolManager
         try
         {
             poolRetrieveTimeWatch.Start();
-            if (poolSettings.MustBeNew)
-            {
+            //TODO: xTray хз что за бред с ключем и как его исправлять
+            //if (poolSettings.MustBeNew)
+            //{
                 await testOut.WriteLineAsync(
                     $"{nameof(GetServerClientPair)}: Creating pair, because settings of pool settings");
                 pair = await CreateServerClientPair(poolSettings, testOut);
-            }
-            else
-            {
-                await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Looking in pool for a suitable pair");
-                pair = GrabOptimalPair(poolSettings);
-                if (pair != null)
-                {
-                    pair.ActivateContext(testOut);
-                    await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Suitable pair found");
-                    var canSkip = pair.Settings.CanFastRecycle(poolSettings);
+            //}
+            // else
+            // {
+            //     await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Looking in pool for a suitable pair");
+            //     pair = GrabOptimalPair(poolSettings);
+            //     if (pair != null)
+            //     {
+            //         pair.ActivateContext(testOut);
+            //         await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Suitable pair found");
+            //         var canSkip = pair.Settings.CanFastRecycle(poolSettings);
 
-                    if (canSkip)
-                    {
-                        await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Cleanup not needed, Skipping cleanup of pair");
-                        await SetupCVars(pair.Client, poolSettings);
-                        await SetupCVars(pair.Server, poolSettings);
-                        await pair.RunTicksSync(1);
-                    }
-                    else
-                    {
-                        await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Cleaning existing pair");
-                        await pair.CleanPooledPair(poolSettings, testOut);
-                    }
+            //         if (canSkip)
+            //         {
+            //             await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Cleanup not needed, Skipping cleanup of pair");
+            //             await SetupCVars(pair.Client, poolSettings);
+            //             await SetupCVars(pair.Server, poolSettings);
+            //             await pair.RunTicksSync(1);
+            //         }
+            //         else
+            //         {
+            //             await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Cleaning existing pair");
+            //             await pair.CleanPooledPair(poolSettings, testOut);
+            //         }
 
-                    await pair.RunTicksSync(5);
-                    await pair.SyncTicks(targetDelta: 1);
-                }
-                else
-                {
-                    await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Creating a new pair, no suitable pair found in pool");
-                    pair = await CreateServerClientPair(poolSettings, testOut);
-                }
-            }
+            //         await pair.RunTicksSync(5);
+            //         await pair.SyncTicks(targetDelta: 1);
+            //     }
+            //     else
+            //     {
+            //         await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Creating a new pair, no suitable pair found in pool");
+            //         pair = await CreateServerClientPair(poolSettings, testOut);
+            //     }
+            // }
         }
         finally
         {
