@@ -3,6 +3,17 @@
   parent: Bookshelf
   suffix: random filled
   components:
+  - type: Storage
+    grid:
+    - 0,0,15,3
+    maxItemSize: Normal
+    whitelist:
+      tags:
+      - Document
+      - Folder
+      - Write
+      - Book
+      - Spellbook
   - type: StorageFill
     contents:
       - id: BookRandom
