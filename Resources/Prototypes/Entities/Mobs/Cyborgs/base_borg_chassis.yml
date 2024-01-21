@@ -14,7 +14,7 @@
       types:
         Blunt: 5
     soundHit:
-      path: /Audio/Effects/hit_kick.ogg
+      collection: MetalThud
   - type: CombatMode
   - type: NoSlip
   - type: StaticPrice
@@ -142,7 +142,6 @@
   - type: Flashable
   - type: Damageable
     damageContainer: Silicon
-    damageModifierSet: CyborgMetallic
   - type: Destructible
     thresholds:
     - trigger:
@@ -160,7 +159,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          collection: MetalBreak
       - !type:EmptyContainersBehaviour
         containers:
         - borg_brain
@@ -251,10 +250,3 @@
         - Syndicate
     - type: ShowSyndicateIcons
     - type: MovementAlwaysTouching
-    - type: Damageable
-      damageModifierSet: CyborgMetallicStrong 
-    - type: MobThresholds
-      thresholds:
-        0: Alive
-        130: Critical
-        260: Dead

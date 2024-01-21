@@ -103,5 +103,9 @@
   background: /Textures/LobbyScreens/revolution.png
 
 - type: lobbyBackground
-  id: singulo_run
-  background: /Textures/LobbyScreens/singulo_run.png
+  id: Susstation
+  background: /Textures/LobbyScreens/susstation.png
+
+- type: lobbyBackground
+  id: SkellyVsTheRev
+  background: /Textures/LobbyScreens/skellyvstherev.png

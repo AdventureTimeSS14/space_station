@@ -31,6 +31,8 @@
         - Multitool
         - AppraisalTool
         - MiniFireExtinguisher
+        - JawsOfLife
+        - GPS
       components:
         - SprayPainter
         - NetworkConfigurator
@@ -391,6 +393,7 @@
         - Packet
         - Skewer
         - MonkeyCube
+        - Mayo
       components:
         - Mousetrap
         - Smokable
@@ -459,6 +462,7 @@
         - Radio
         - Sidearm
         - MagazinePistol
+        - MagazineMagnum
       components:
         - Stunbaton
         - FlashOnTrigger

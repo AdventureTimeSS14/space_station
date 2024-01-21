@@ -93,10 +93,10 @@ GeneratorPlasmaMachineCircuitboard: PortableGeneratorPacmanMachineCircuitboard
 GeneratorUraniumMachineCircuitboard: PortableGeneratorSuperPacmanMachineCircuitboard
 
 # 2023-12-10
-SpawnPointSeniorResearcher: null
-SpawnPointSeniorOfficer: null
-SpawnPointSeniorEngineer: null
-SpawnPointSeniorPhysician: null
+#SpawnPointSeniorResearcher: null
+#SpawnPointSeniorOfficer: null
+#SpawnPointSeniorEngineer: null
+#SpawnPointSeniorPhysician: null
 
 # 2023-12-12
 #No this is not the CMO hardsuit, their prototype IDs were just confusingly similar
@@ -133,6 +133,7 @@ DrinkGoldschlagerBottleFull: DrinkGildlagerBottleFull
 DrinkGoldschlagerGlass: DrinkGildlagerGlass
 
 # 2024-01-07
+ClosetBase: ClosetSteelBase
 MonkeyCubeBox: VariantCubeBox
 
 # 2024-01-08
@@ -157,3 +158,14 @@ AnalyzerSubspaceStockPart: null
 CrystalSubspaceStockPart: null
 TransmitterSubspaceStockPart: null
 
+# 2024-01-10
+ClothingHeadHatHoodRad: null
+
+# 2024-01-12
+SpaceMedipen: null
+
+# 2024-01-18
+ClothingHeadHelmetVoidParamed: null
+
+# 21.01.2024
+ClothingNeckLGBTPin: ClothingNeckNonBinaryPin
