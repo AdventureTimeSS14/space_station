@@ -48,7 +48,7 @@ ent-ADTClothingHandsGlovesRed = красные перчатки
 ent-ADTClothingHandsGlovesRed2 = { ent-ADTClothingHandsGlovesRed }
     .desc = { ent-ADTClothingHandsGlovesRed.desc}
 
-ent-ADTClothingHandsGlovesSport =
-    .desc = 
+ent-ADTClothingHandsGlovesSport = перчати серии STEP "Cold"
+    .desc = Беспалые перчатки серии "Cold", в которых удобно заниматься спортом любой расе.
 ent-ADTClothingHandsGlovesSportStep = перчатки серии STEP "Ultra"
     .desc = Перчатки "Ultra" серии STEP без пальцев и с мягкой подкладкой, закрывающей ладони, что делает их идеальными для передвижения на четвероногих или для подъема грузов.
