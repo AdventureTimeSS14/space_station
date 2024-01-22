@@ -2917,6 +2917,16 @@ entities:
     - type: GasTileOverlay
     - type: SpreaderGrid
     - type: GridPathfinding
+    - type: Joint
+      joints:
+        docking2542: !type:WeldJoint
+          bodyB: 6508
+          bodyA: 1668
+          id: docking2542
+          localAnchorB: 6,-0.5
+          localAnchorA: -35,-1.5
+          damping: 1246.5117
+          stiffness: 11188.664
   - uid: 6507
     components:
     - type: MetaData
@@ -3165,6 +3175,16 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
+    - type: Joint
+      joints:
+        docking2542: !type:WeldJoint
+          bodyB: 6508
+          bodyA: 1668
+          id: docking2542
+          localAnchorB: 6,-0.5
+          localAnchorA: -35,-1.5
+          damping: 1246.5117
+          stiffness: 11188.664
 - proto: AcousticGuitarInstrument
   entities:
   - uid: 1455
@@ -3179,17 +3199,19 @@ entities:
       parent: 1668
 - proto: ADTComputerShuttleCentCom
   entities:
-  - uid: 646
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 1.5,-2.5
-      parent: 1668
   - uid: 7077
     components:
     - type: Transform
       pos: 0.5,6.5
       parent: 6508
+- proto: ADTFTLPointCentCom
+  entities:
+  - uid: 7244
+    components:
+    - type: Transform
+      anchored: False
+      pos: -38.5,14.5
+      parent: 6507
 - proto: AirCanister
   entities:
   - uid: 3695
@@ -3826,6 +3848,9 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -34.5,-1.5
       parent: 1668
+    - type: Docking
+      dockJointId: docking2542
+      dockedWith: 6512
   - uid: 3969
     components:
     - type: Transform
@@ -3866,6 +3891,9 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 5.5,-0.5
       parent: 6508
+    - type: Docking
+      dockJointId: docking2542
+      dockedWith: 3968
 - proto: AirlockExternalLocked
   entities:
   - uid: 777
@@ -36434,6 +36462,11 @@ entities:
     components:
     - type: Transform
       pos: 2.5,-2.5
+      parent: 1668
+  - uid: 646
+    components:
+    - type: Transform
+      pos: 1.5,-2.5
       parent: 1668
   - uid: 647
     components:
