@@ -23,6 +23,7 @@
       - id: ADTClothingNeckMantleCentComm
       - id: ClothingHeadsetAltCentCom
       - id: ADTClothingOuterCoatSchroCoat
+      - id: ADTClothingNeckNanoTrasenPinSchrodinger
 
 - type: entity
   name: Deckard
@@ -40,7 +41,7 @@
       shader: unshaded
   - type: Gun
     selectedMode: FullAuto
-    fireRate: 2.7
+    fireRate: 2.6
     availableModes:
     - SemiAuto
     - FullAuto
@@ -122,3 +123,10 @@
             Quantity: 40
           - ReagentId: Omnizine
             Quantity: 5
+
+- type: entity
+  id: ADTClothingNeckNanoTrasenPinSchrodinger
+  parent: ClothingNeckNanoTrasenPin
+  components:
+  - type: TypingIndicatorClothing
+    proto: lawyer #lawyer  robot  alien  moth
