@@ -37,3 +37,19 @@
   components:
     - type: ComputerBoard
       prototype: ADTComputerShuttleCentCom
+
+- type: entity
+  id: ADTFTLPointCentCom
+  parent: MarkerBase
+  name: Central Command FTL point
+  components:
+    # - whitelist:
+    #     tags:
+    #     - ADTNanoTrasen
+    - whitelist:
+        tags:
+          - ADTNanoTrasen
+      type: FTLDestination
+    #- type: FTLDestination
+    - type: Sprite
+      state: pink
