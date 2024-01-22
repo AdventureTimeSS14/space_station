@@ -214,43 +214,44 @@ public static partial class PoolManager
         try
         {
             poolRetrieveTimeWatch.Start();
+            //TODO: xTray хз что за бред с ключем и как его исправлять
             if (poolSettings.MustBeNew)
             {
                 await testOut.WriteLineAsync(
                     $"{nameof(GetServerClientPair)}: Creating pair, because settings of pool settings");
                 pair = await CreateServerClientPair(poolSettings, testOut);
             }
-            else
-            {
-                await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Looking in pool for a suitable pair");
-                pair = GrabOptimalPair(poolSettings);
-                if (pair != null)
-                {
-                    pair.ActivateContext(testOut);
-                    await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Suitable pair found");
-                    var canSkip = pair.Settings.CanFastRecycle(poolSettings);
+             else
+             {
+                 await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Looking in pool for a suitable pair");
+                 pair = GrabOptimalPair(poolSettings);
+                 if (pair != null)
+                 {
+                     pair.ActivateContext(testOut);
+                     await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Suitable pair found");
+                     var canSkip = pair.Settings.CanFastRecycle(poolSettings);
 
-                    if (canSkip)
-                    {
-                        await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Cleanup not needed, Skipping cleanup of pair");
-                        await SetupCVars(pair.Client, poolSettings);
-                        await SetupCVars(pair.Server, poolSettings);
-                        await pair.RunTicksSync(1);
-                    }
-                    else
-                    {
-                        await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Cleaning existing pair");
-                        await pair.CleanPooledPair(poolSettings, testOut);
-                    }
+                     if (canSkip)
+                     {
+                         await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Cleanup not needed, Skipping cleanup of pair");
+                         await SetupCVars(pair.Client, poolSettings);
+                         await SetupCVars(pair.Server, poolSettings);
+                         await pair.RunTicksSync(1);
+                     }
+                     else
+                     {
+                         await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Cleaning existing pair");
+                         await pair.CleanPooledPair(poolSettings, testOut);
+                     }
 
-                    await pair.RunTicksSync(5);
-                    await pair.SyncTicks(targetDelta: 1);
-                }
-                else
-                {
-                    await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Creating a new pair, no suitable pair found in pool");
-                    pair = await CreateServerClientPair(poolSettings, testOut);
-                }
+                     await pair.RunTicksSync(5);
+                     await pair.SyncTicks(targetDelta: 1);
+                 }
+                 else
+                 {
+                     await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Creating a new pair, no suitable pair found in pool");
+                     pair = await CreateServerClientPair(poolSettings, testOut);
+                 }
             }
         }
         finally
@@ -337,10 +338,10 @@ public static partial class PoolManager
         {
             // If the _poolFailureReason is not null, we can assume at least one test failed.
             // So we say inconclusive so we don't add more failed tests to search through.
-            Assert.Inconclusive(@"
+            Assert.Inconclusive(@$"
 In a different test, the pool manager had an exception when trying to create a server/client pair.
 Instead of risking that the pool manager will fail at creating a server/client pairs for every single test,
-we are just going to end this here to save a lot of time. This is the exception that started this:\n {0}", _poolFailureReason);
+we are just going to end this here to save a lot of time. This is the exception that started this:\n {_poolFailureReason}");
         }
 
         if (_dead)

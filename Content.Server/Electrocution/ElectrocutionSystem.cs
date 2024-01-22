@@ -151,7 +151,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
 
             if (tileRef != null)
             {
-                foreach (var entity in _entityLookup.GetEntitiesIntersecting(tileRef.Value, flags: LookupFlags.StaticSundries))
+                foreach (var entity in _entityLookup.GetLocalEntitiesIntersecting(tileRef.Value, flags: LookupFlags.StaticSundries))
                 {
                     if (_tag.HasTag(entity, "Window"))
                         return false;
