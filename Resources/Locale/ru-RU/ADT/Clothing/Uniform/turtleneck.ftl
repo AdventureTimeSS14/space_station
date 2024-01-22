@@ -173,3 +173,9 @@ ent-ADTHOSJumpskirtWarm = { ent-ClothingUniformJumpsuitHoSAlt }
     
 ent-ADTRDJumpskirtWarm = { ent-ClothingUniformJumpsuitResearchDirector }
     .desc = { ent-ClothingUniformJumpsuitResearchDirector.desc }
+
+ent-ADTCapJumpsuitWarm = водолазка капитана
+    .desc = Самая главная водолазка на станции.
+    
+ent-ADTCapJumpskirtWarm = { ent-ADTCapJumpsuitWarm }
+    .desc = { ent-ADTCapJumpsuitWarm.desc }

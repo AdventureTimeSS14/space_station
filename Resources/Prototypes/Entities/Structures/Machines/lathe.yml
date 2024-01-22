@@ -891,22 +891,24 @@
     staticRecipes:
       - ClothingUniformJumpsuitColorGrey
       - ClothingUniformJumpskirtColorGrey
-      - ClothingUniformJumpsuitBartender
-      - ClothingUniformJumpskirtBartender
+      - ADTClothingUniformNewBarmanSuit
+      - ADTClothingUniformNewBarmanSkirt
       - ClothingHeadHatCapcap
       - ClothingHeadHatCaptain
       - ClothingUniformJumpsuitCaptain
       - ClothingUniformJumpskirtCaptain
       - ClothingUniformJumpsuitCapFormal
       - ClothingUniformJumpskirtCapFormalDress
+      - ADTCapJumpsuitWarm
+      - ADTCapJumpskirtWarm
       - ClothingUniformJumpsuitCargo
       - ClothingUniformJumpskirtCargo
       - ClothingUniformJumpsuitSalvageSpecialist
       - ClothingHeadHatBeretEngineering
       - ClothingUniformJumpsuitChiefEngineer
       - ClothingUniformJumpskirtChiefEngineer
-      - ClothingUniformJumpsuitChiefEngineerTurtle
-      - ClothingUniformJumpskirtChiefEngineerTurtle
+      - ADTCEJumpsuitWarm
+      - ADTCEJumpskirtWarm
       - ClothingUniformJumpsuitChaplain
       - ClothingUniformJumpskirtChaplain
       - ClothingUniformJumpsuitBrigmedic
@@ -919,6 +921,8 @@
       - ClothingHeadHatBeretCmo
       - ClothingUniformJumpsuitCMO
       - ClothingUniformJumpskirtCMO
+      - ADTCMOJumpsuitWarm
+      - ADTCMOJumpskirtWarm
       - ClothingUniformJumpsuitDetective
       - ClothingUniformJumpskirtDetective
       - ClothingUniformJumpsuitEngineering
@@ -926,14 +930,16 @@
       - ClothingHeadHatHopcap
       - ClothingUniformJumpsuitHoP
       - ClothingUniformJumpskirtHoP
+      - ADTHOPJumpsuitWarm
+      - ADTHOPJumpskirtWarm
       - ClothingHeadHatBeretHoS
       - ClothingHeadHatHoshat
       - ClothingUniformJumpsuitHoS
       - ClothingUniformJumpskirtHoS
       - ClothingUniformJumpsuitHosFormal
       - ClothingUniformJumpskirtHosFormal
-      - ClothingUniformJumpsuitHoSAlt
-      - ClothingUniformJumpskirtHoSAlt
+      - ADTHOSJumpsuitWarm
+      - ADTHOSJumpskirtWarm
       - ClothingUniformJumpsuitHoSBlue
       - ClothingUniformJumpsuitHoSGrey
       - ClothingUniformJumpsuitHoSParadeMale
@@ -958,11 +964,11 @@
       - ClothingHeadHatQMsoft
       - ClothingUniformJumpsuitQM
       - ClothingUniformJumpskirtQM
-      - ClothingUniformJumpsuitQMTurtleneck
-      - ClothingUniformJumpskirtQMTurtleneck
+      - ADTQMJumpsuitWarm
+      - ADTQMJumpskirtWarm
       - ClothingHeadHatBeretRND
-      - ClothingUniformJumpsuitResearchDirector
-      - ClothingUniformJumpskirtResearchDirector
+      - ADTRDJumpsuitWarm
+      - ADTRDJumpskirtWarm
       - ClothingUniformJumpsuitScientist
       - ClothingUniformJumpskirtScientist
       - ClothingHeadHatBeretSecurity
