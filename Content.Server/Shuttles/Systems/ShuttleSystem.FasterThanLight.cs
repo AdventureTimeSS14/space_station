@@ -34,7 +34,7 @@ public sealed partial class ShuttleSystem
 
     private MapId? _hyperSpaceMap;
 
-    public const float DefaultStartupTime = 5.5f;
+    public const float DefaultStartupTime = 5f;
     public const float DefaultTravelTime = 40f;
     public const float DefaultArrivalTime = 40f;
     private const float FTLCooldown = 30f;
@@ -47,14 +47,14 @@ public sealed partial class ShuttleSystem
 
     // I'm too lazy to make CVars.
 
-    private readonly SoundSpecifier _startupSound = new SoundPathSpecifier("/Audio/Effects/Shuttle/hyperspace_begin.ogg")
+    private readonly SoundSpecifier _startupSound = new SoundPathSpecifier("/Audio/Effects/Shuttle/hyperspace_begin_new.ogg")
     {
-        Params = AudioParams.Default.WithVolume(-3f),
+        Params = AudioParams.Default.WithVolume(17.0f),
     };
     // private SoundSpecifier _travelSound = new SoundPathSpecifier();
-    private readonly SoundSpecifier _arrivalSound = new SoundPathSpecifier("/Audio/Effects/Shuttle/hyperspace_end.ogg")
+    private readonly SoundSpecifier _arrivalSound = new SoundPathSpecifier("/Audio/Effects/Shuttle/hyperspace_end_new.ogg")
     {
-        Params = AudioParams.Default.WithVolume(-3f),
+        Params = AudioParams.Default.WithVolume(17.0f),
     };
 
     private readonly TimeSpan _hyperspaceKnockdownTime = TimeSpan.FromSeconds(5);
