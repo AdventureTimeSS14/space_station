@@ -19011,13 +19011,6 @@ entities:
       containers:
       - machine_parts
       - machine_board
-- proto: ClosetBase
-  entities:
-  - uid: 2491
-    components:
-    - type: Transform
-      pos: 20.5,23.5
-      parent: 1668
 - proto: ClosetChefFilled
   entities:
   - uid: 4579
@@ -19129,6 +19122,13 @@ entities:
     components:
     - type: Transform
       pos: 34.5,-18.5
+      parent: 1668
+- proto: ClosetSteelBase
+  entities:
+  - uid: 2491
+    components:
+    - type: Transform
+      pos: 20.5,23.5
       parent: 1668
 - proto: ClosetToolFilled
   entities:
@@ -34415,6 +34415,11 @@ entities:
     - type: Transform
       pos: 25.503832,-7.398362
       parent: 1668
+  - uid: 7245
+    components:
+    - type: Transform
+      pos: -1.703125,1.234375
+      parent: 1668
 - proto: RubberStampCentcom
   entities:
   - uid: 2917
@@ -34433,6 +34438,11 @@ entities:
     components:
     - type: Transform
       pos: 25.691332,-7.585862
+      parent: 1668
+  - uid: 7246
+    components:
+    - type: Transform
+      pos: -1.390625,1.1875
       parent: 1668
 - proto: RubberStampQm
   entities:
