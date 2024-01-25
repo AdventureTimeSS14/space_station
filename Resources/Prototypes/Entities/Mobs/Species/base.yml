@@ -89,6 +89,8 @@
         clownedon: # Not 'creampied' bc I can already see Skyrat complaining about conflicts.
           True: {visible: true}
           False: {visible: false}
+  - type: StatusIcon
+    bounds: -0.5,-0.5,0.5,0.5
   - type: RotationVisuals
     defaultRotation: 90
     horizontalRotation: 90
@@ -246,7 +248,7 @@
   - type: Barotrauma
     damage:
       types:
-        Blunt: 2 #per second, scales with pressure and other constants.
+        Blunt: 0.5 #per second, scales with pressure and other constants.
   - type: PassiveDamage # Slight passive regen. Assuming one damage type, comes out to about 4 damage a minute.
     allowedStates:
     - Alive

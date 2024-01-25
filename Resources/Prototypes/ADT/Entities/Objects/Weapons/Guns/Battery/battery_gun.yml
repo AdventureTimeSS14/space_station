@@ -115,6 +115,11 @@
       visible: false
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -122,18 +127,18 @@
   - type: Clothing
     sprite: ADT/Objects/Weapons/Guns/Battery/BlueShield.rsi
   - type: Gun
-    fireRate: 2
+    fireRate: 3
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisabler
-    fireCost: 60
+    fireCost: 30
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: BulletDisabler
-      fireCost: 50
+      fireCost: 35
     - proto: ADTBulletLaserMK2
-      fireCost: 75
+      fireCost: 40
   - type: Battery
-    maxCharge: 600
-    startingCharge: 600
+    maxCharge: 1200
+    startingCharge: 1200
   - type: StaticPrice
     price: 3000

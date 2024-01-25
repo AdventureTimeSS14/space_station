@@ -67,8 +67,8 @@
 - type: entity
   parent: FaxMachineBase
   id: FaxMachineCentcom
-  name: centcom long range fax machine
-  suffix: Centcom
+  name: CentCom long range fax machine
+  suffix: CentCom
   components:
   - type: Sprite
     layers:
@@ -78,6 +78,8 @@
   - type: FaxMachine
     name: "Central Command"
     notifyAdmins: true
+    receiveNukeCodes: true
+    receiveStationGoal: true # Corvax-StationGoal
 
 - type: entity
   parent: FaxMachineBase

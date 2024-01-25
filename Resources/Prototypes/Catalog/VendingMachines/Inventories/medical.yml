@@ -9,8 +9,6 @@
     ADTMedicalTourniquet: 10
     EpinephrineChemistryBottle: 3
     Syringe: 5
-    ADTPatchHealing: 2
-    ADTPatchBurn: 2
-    ADTPatchHealingMini: 4
-    ADTPatchBurnMini: 4
-    ADTPatchPack: 2
+    ADTPatchHealing: 4
+    ADTPatchBurn: 4
+    ADTPatchPackFilled: 2

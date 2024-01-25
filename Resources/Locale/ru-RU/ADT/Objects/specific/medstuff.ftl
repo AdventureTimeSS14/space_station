@@ -19,12 +19,13 @@ ent-ADTAntibioticOintment1 = { ent-ADTAntibioticOintment }
     .desc = { ent-ADTAntibioticOintment.desc }
     .suffix = Один
 
-ent-ADTPatchPack = коробка для пластырей
+
+ent-ADTPatchPack = коробка пластырей
     .desc = Коробка для хранения медицинских пластырей.
     .suffix = { "" }
 
-ent-ADTPatchPackFilled = коробка для пластырей
-    .desc = Коробка для хранения медицинских пластырей.
+ent-ADTPatchPackFilled = { ent-ADTPatchPack }
+    .desc = { ent-ADTPatchPack.desc }
     .suffix = { "Заполненный" }
 
 ent-ADTPatchHealing = заживляющий пластырь

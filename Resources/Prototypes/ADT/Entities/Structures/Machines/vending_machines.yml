@@ -136,6 +136,34 @@
     guides: 
     - Medical Doctor
 
+- type: entity
+  parent: VendingMachine
+  id: ADTVendingMachineMasterSportDrobe
+  name: MasterSportDrobe
+  description: A vending machine made by company "Dar-Vaxed". Here you can get sport clothes, and new clothing series "STEP" by "VD-sport"!
+  components:
+  - type: VendingMachine
+    pack: ADTMasterSportDrobeInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    denyState: deny-unshaded
+  - type: Advertise
+    pack: ClothesMateAds
+  - type: Speech
+  - type: Tag
+    tags:
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Structures/Machines/VendingMachines/mastersportdrobe.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
 
 - type: entity
   parent: VendingMachine
@@ -162,3 +190,7 @@
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: AccessReader
     access: [["Medical"]]
+  - type: PointLight
+    radius: 1.8
+    energy: 1.6
+    color: "#1ca9d4"

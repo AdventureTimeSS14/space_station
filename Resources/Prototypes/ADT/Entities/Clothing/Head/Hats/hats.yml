@@ -542,7 +542,41 @@
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/sec_auditor_cap.rsi
 
-  
+#Не поверите, шапки от @prazat911
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadSportHat
+  name: sport winter hat
+  description: A winter hat for men of sports. #я всё ещё жду описаний с названиями.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/sport_hat.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/sport_hat.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadSportRoseCap
+  name: pink sport cap
+  description: sec auditor cap
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/sport_rose_cap.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/sport_rose_cap.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadSportHatStep
+  name: sport hat STEP
+  description: A futuristic looking striped hat from "STEP" clothing series.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/sport_step_hat.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/sport_step_hat.rsi
+
 # medical update
 - type: entity
   parent: ClothingHeadBase

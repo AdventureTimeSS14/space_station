@@ -347,6 +347,52 @@
   - type: Clothing
     sprite: ADT/Clothing/Shoes/Boots/snow_maiden.rsi  #спрайты от prazat911
 
+#Вот это да, спортивные ботинки от @prazat911
+
+- type: entity
+  parent: ClothingShoesBase
+  id: ADTClothingFootSportBoots
+  name: sport high boots
+  description: A boots to sport in cold seasons.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/sport_boots.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/sport_boots.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ADTClothingFootSportRoseShoes
+  name: sport rose shoes
+  description: A pink sport shoes.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/sport_rose_shoes.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/sport_rose_shoes.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ADTClothingFootSportStepSneakers
+  name: STEP sneakers "Ultra"
+  description: Mucho texto. #извините, час ночи, всё равно всё перепишется ftl файлом.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/sport_step_sneakers.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/sport_step_sneakers.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ADTClothingFootSportZetaCrocs #я полагаю, что это кроксы. 
+  name: sport Zeta crocs 
+  description: A green crocs by clothing series "Zeta"
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/sport_zeta_crocs.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/sport_zeta_crocs.rsi
+
 #Med
 - type: entity
   parent: ClothingShoesBaseButcherable

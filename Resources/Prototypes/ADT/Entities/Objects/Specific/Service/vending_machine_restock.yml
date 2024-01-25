@@ -13,6 +13,24 @@
 
 - type: entity
   parent: ADTBaseVendingMachineRestock
+  id: ADTVendingMachineRestockStyle
+  name: Style-o-Mat restock box
+  description: Bring some colors into your station days with strylish clothing by "Dar-Vaxed"! Slot into your Style-o-Mat.
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - ADTPrazatClothesMateInventory
+  - type: Sprite
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_stylish
+
+- type: entity
+  parent: ADTBaseVendingMachineRestock
+  id: ADTVendingMachineRestockStyle
+  name: Style-o-Mat restock box
   id: ADTVendingMachineRestockPill
   name: Pill-O-Mat restock box
   description: Slot into your department's Pill-O-Mat.

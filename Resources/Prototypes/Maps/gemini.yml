@@ -37,7 +37,7 @@
             TechnicalAssistant: [ 8, 8 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
-            Chemist: [ 2, 3 ]
+            Chemist: [ 2, 2 ]
             Paramedic: [ 2, 2 ]
             MedicalDoctor: [ 4, 6 ]
             MedicalIntern: [ 8, 8 ]
@@ -61,3 +61,19 @@
             Clown: [ 1, 2 ]
             Mime: [ 1, 2 ]
             Musician: [ 1, 2 ]
+            #ADT
+            Brigmedic: [ 1, 1 ]
+            ADTBlueShieldOfficer: [ 1, 1 ]
+            Magistrat: [ 1, 1 ]
+            ADTInvestigator: [ 1, 1 ] #ADT
+            ADTSecurityCyborg: [ 1, 1 ] #ADT
+            ADTEngiBorg: [ 1, 1 ] #ADT
+            ADTJanitorBorg: [ 1, 1 ] #ADT
+            ADTMedicalBorg: [ 1, 1 ] #ADT
+            ADTServiseBorg: [ 1, 1 ] #ADT
+            ADTSupplyBorg: [ 1, 1 ] #ADT
+            IAA: [ 1, 1 ] # Corvax-IAA
+            SeniorEngineer: [ 1, 1 ]
+            SeniorPhysician: [ 1, 1 ]
+            SeniorResearcher: [ 1, 1 ]
+            SeniorOfficer: [ 1, 1 ]
