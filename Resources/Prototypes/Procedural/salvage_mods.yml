@@ -237,6 +237,6 @@
   proto: Bunker
   biomes:
     - Caves
-    - LowDesert
+#    - LowDesert
     - Snow
     - Grasslands
