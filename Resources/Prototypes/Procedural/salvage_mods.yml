@@ -231,3 +231,12 @@
   proto: LavaBrig
   biomes:
     - Lava
+
+- type: salvageDungeonMod
+  id: Bunker
+  proto: Bunker
+  biomes:
+    - Caves
+    - LowDesert
+    - Snow
+    - Grasslands
