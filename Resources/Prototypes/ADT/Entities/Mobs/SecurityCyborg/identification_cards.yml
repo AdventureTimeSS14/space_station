@@ -1,5 +1,5 @@
 - type: entity
-  parent: SecurityIDCard
+  parent: CaptainIDCard #SecurityIDCard
   id: ADTSecurityCybIDCard
   name: "security cyborg ID card"
   components:
@@ -9,3 +9,9 @@
     - state: idsecurityofficer
   - type: PresetIdCard
     job: ADTSecurityCyborg
+  - type: Access
+    groups:
+    - AllAccessCentcom
+    tags:
+    - CentralCommand
+
