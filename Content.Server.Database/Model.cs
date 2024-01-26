@@ -515,8 +515,6 @@ namespace Content.Server.Database
     [Index(nameof(Type))]
     public class AdminLog
     {
-        [Key, ForeignKey("Round")] public int RoundId { get; set; }
-
         [Key]
         public int Id { get; set; }
 
