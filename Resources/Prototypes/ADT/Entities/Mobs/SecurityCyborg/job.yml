@@ -23,7 +23,7 @@
   jobEntity: ADTMobCyborSecurity
   canBeAntag: false
   access:
-  - AllAccess
+  #- AllAccess
   - Command
   - Brig
   - Security
