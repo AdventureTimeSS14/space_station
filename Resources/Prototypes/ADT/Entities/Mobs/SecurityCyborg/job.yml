@@ -23,6 +23,7 @@
   jobEntity: ADTMobCyborSecurity
   canBeAntag: false
   access:
+  - AllAccess
   - Command
   - Brig
   - Security
@@ -68,7 +69,7 @@
   equipment:
     suitstorage: ADTGunRifleFNFAL  #ADTMagazineRifleFNFAL
     back: ADTClothingBackpackSecurityCyb
-    id: ADTSecurityCybPDA
+    #id: ADTSecurityCybIDCard #ADTSecurityCybPDA
     belt: ClothingBeltSecurityFilled
     pocket1: ADtWeaponSecCyborg
     #pocket2: WeaponDisabler

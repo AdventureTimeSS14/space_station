@@ -85,7 +85,7 @@
   - type: StorageFill
     contents:
     - id: ADTCigarSchrodingerCase
-    - id: FlippoEngravedLighter
+    - id: FlippoSchrodingerLighter
     - id: SpeedLoaderMagnum
   - type: Armor
     modifiers:
