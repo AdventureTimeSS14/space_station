@@ -56,7 +56,7 @@
   components:
   - type: StealCondition
     stealGroup: CommandIDCard
-    descriptionText: We must steal any command member's ID card.
+    descriptionText: objective-condition-changeling-commandidcard
 
 - type: entity
   noSpawn: true
@@ -65,4 +65,4 @@
   components:
   - type: StealCondition
     stealGroup: MaterialSmileExtract
-    descriptionText: We must steal smile's extract. It contains a compound that will be very useful to the hive.
+    descriptionText: objective-condition-changeling-smileextract
