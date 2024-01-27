@@ -281,8 +281,7 @@
   description: The creep of automation now threatening space janitors.
   components:
   - type: Sprite
-    drawdepth: Mobs
-    sprite: ADT/Mobs/Silicon/Bots/cleanbot.rsi
+    sprite: Mobs/Silicon/Bots/cleanbot.rsi
     state: cleanbot
   - type: Construction
     graph: CleanBot
@@ -322,14 +321,6 @@
     interactFailureString: petting-failure-cleanbot
     interactSuccessSound:
       path: /Audio/Ambience/Objects/periodic_beep.ogg
-  - type: Inventory
-    speciesId: dog
-    templateId: cleanbot
-  #Modify
-  - type: Hands
-    showInHands: false
-  - type: Body
-    prototype: MobCleanBot
 
 - type: entity
   parent: MobSiliconBase
