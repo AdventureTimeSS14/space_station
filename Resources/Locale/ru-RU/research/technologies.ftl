@@ -78,5 +78,3 @@ research-technology-faux-astro-tiles = Исскуственная печать �
 research-technology-quantum-fiber-weaving = Квантовые волокна
 research-technology-advanced-anomaly-research = Продвинутые исследования аномалий
 research-technology-portable-fission = Эксперементальные батареи
-
-
