@@ -7,3 +7,8 @@ ent-ADTCigarNe4toCase = портсигар Алексея Мельникова
 ent-ADTMelnikovCigar = Сигара Алексея Мельникова
     .desc = Кому вообще пришло в голову называть сигары чьим-то именем?
 
+ent-ADTCigarSchrodingerCase = { ent-CigarCase }
+    .desc = { ent-CigarCase.desc }
+
+ent-ADTSchrodingerCigar = { ent-CigarGold }
+    .desc = { ent-CigarGold.desc }

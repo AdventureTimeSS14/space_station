@@ -69,6 +69,6 @@
             #ADT
             Virusolog: [ 2, 2 ]
             Brigmedic: [ 1, 1 ]
-            ADTBlueShieldOfficer: [ 1, 2 ]
+            ADTBlueShieldOfficer: [ 1, 1 ]
             Magistrat: [ 1, 1 ]
             ADTInvestigator: [ 1, 1 ] #ADT

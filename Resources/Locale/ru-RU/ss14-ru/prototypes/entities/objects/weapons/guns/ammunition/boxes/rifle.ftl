@@ -12,3 +12,5 @@ ent-MagazineBoxRifleRubber = коробка патронов (6.5х39 мм TSF �
     .desc = { ent-BaseMagazineBoxRifle.desc }
 ent-MagazineBoxRifleIncendiary = коробка патронов (6.5х39 мм TSF зажигательные)
     .desc = { ent-BaseMagazineBoxRifle.desc }
+ent-MagazineBoxRifleUranium = коробка патронов (6.5х39 мм TSF урановые)
+    .desc = { ent-BaseMagazineBoxRifle.desc }

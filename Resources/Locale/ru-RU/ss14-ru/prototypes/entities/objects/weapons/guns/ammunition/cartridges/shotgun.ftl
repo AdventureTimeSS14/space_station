@@ -16,3 +16,5 @@ ent-ShellTranquilizer = ружейный патрон (12х70 транквили
     .desc = { ent-BaseShellShotgun.desc }
 ent-ShellShotgunImprovised = самодельный ружейный патрон (12х70)
     .desc = Самодельный дробовой патрон, выстреливающий больной металлической шрапнелью. Разброс так велик, что и по слону попасть невозможно.
+ent-ShellShotgunUranium = ружейный патрон (12х70 урановый)
+    .desc = { ent-BaseShellShotgun.desc }

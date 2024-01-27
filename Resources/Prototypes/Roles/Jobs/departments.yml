@@ -48,6 +48,7 @@
   - ResearchDirector
   - Quartermaster
   - ADTBlueShieldOfficer
+  primary: false
 
 - type: department
   id: Engineering
@@ -109,6 +110,7 @@
   - Reporter
   - Zookeeper
   - Psychologist
+  primary: false
 
 - type: department
   id: Law

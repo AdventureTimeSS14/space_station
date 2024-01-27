@@ -58,7 +58,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Snipers/heavy_sniper.rsi, state: base }
   productEntity: ADTClothingBackpackDuffelSyndicateFilledHristov
   cost:
-    Telecrystal: 20
+    Telecrystal: 15
   categories:
   - UplinkBundles
   conditions:
@@ -210,7 +210,7 @@
   description: uplink-ADTHandDefibrillator-desc
   productEntity: ADTHandDefibrillator
   cost:
-    Telecrystal: 25
+    Telecrystal: 4
   categories:
   - UplinkMisc
   conditions:
@@ -338,6 +338,65 @@
       whitelist:
       - Medical
 
+- type: listing
+  id: ADTUplinkThiefBundle
+  name: uplink-thief-bundle-name
+  description: uplink-thief-bundle-desc
+  productEntity: ADTToolboxSyndicateFilledThief   
+  cost:
+    Telecrystal: 10
+  categories:
+    - UplinkBundles
+
+- type: listing
+  id: ADTUplinkEscapistBundle
+  name: uplink-escapist-bundle-name
+  description: uplink-escapist-bundle-desc
+  productEntity: ADTBoxSyndicateFilledEscapist
+  cost:
+    Telecrystal: 15
+  categories:
+    - UplinkBundles
+
+- type: listing
+  id: ADTUplinkMaidBundle
+  name: uplink-maid-bundle-name
+  description: uplink-maid-bundle-desc
+  productEntity: ADTClothingBackpackDuffelSyndicateFilledMaid 
+  cost:
+    Telecrystal: 20
+  categories:
+    - UplinkBundles
+
+- type: listing
+  id: ADTUplinkStealthBundle
+  name: uplink-stealth-bundle-name
+  description: uplink-stealth-bundle-desc
+  productEntity: ADTClothingBackpackDuffelSyndicateFilledStealth 
+  cost:
+    Telecrystal: 12
+  categories:
+    - UplinkBundles
+
+- type: listing
+  id: ADTUplinkIntruderBundle
+  name: uplink-intruder-bundle-name
+  description: uplink-intruder-bundle-desc
+  productEntity: ADTClothingBackpackDuffelSyndicateFilledIntruder 
+  cost:
+    Telecrystal: 20
+  categories:
+    - UplinkBundles
+
+- type: listing
+  id: ADTUplinkBlackmailBundle
+  name: uplink-blackmail-bundle-name
+  description: uplink-blackmail-bundle-desc
+  productEntity: ADTClothingBackpackDuffelSyndicateFilledBlackmail 
+  cost:
+    Telecrystal: 15
+  categories:
+    - UplinkBundles
 
 - type: listing
   id: ADTuplinkExplosivePizzabox
@@ -353,3 +412,4 @@
       whitelist:
       - Chef
       - ServiceWorker
+

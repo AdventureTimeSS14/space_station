@@ -7,6 +7,7 @@ using System.Net;
 using System.Text.Json;
 using Content.Shared.Database;
 using Microsoft.EntityFrameworkCore;
+using NpgsqlTypes;
 
 namespace Content.Server.Database
 {
@@ -93,7 +94,7 @@ namespace Content.Server.Database
                 .IsUnique();
 
             modelBuilder.Entity<AdminLog>()
-                .HasKey(log => new {log.Id, log.RoundId});
+                .HasKey(log => new { log.Id, log.RoundId });
 
             modelBuilder.Entity<AdminLog>()
                 .Property(log => log.Id);
@@ -119,7 +120,7 @@ namespace Content.Server.Database
                 .HasDefaultValue(default(DateTime));
 
             modelBuilder.Entity<AdminLogPlayer>()
-                .HasKey(logPlayer => new {logPlayer.PlayerUserId, logPlayer.LogId, logPlayer.RoundId});
+                .HasKey(logPlayer => new { logPlayer.PlayerUserId, logPlayer.LogId, logPlayer.RoundId });
 
             modelBuilder.Entity<ServerBan>()
                 .HasIndex(p => p.PlayerUserId);
@@ -548,7 +549,7 @@ namespace Content.Server.Database
     {
         int Id { get; set; }
         Guid? PlayerUserId { get; set; }
-        (IPAddress, int)? Address { get; set; }
+        NpgsqlInet? Address { get; set; }
         byte[]? HWId { get; set; }
         DateTime BanTime { get; set; }
         DateTime? ExpirationTime { get; set; }
@@ -616,8 +617,7 @@ namespace Content.Server.Database
         /// <summary>
         /// CIDR IP address range of the ban. The whole range can match the ban.
         /// </summary>
-        [Column(TypeName = "inet")]
-        public (IPAddress, int)? Address { get; set; }
+        public NpgsqlInet? Address { get; set; }
 
         /// <summary>
         /// Hardware ID of the banned player.
@@ -806,7 +806,7 @@ namespace Content.Server.Database
         public Round? Round { get; set; }
         public Guid? PlayerUserId { get; set; }
         [Required] public TimeSpan PlaytimeAtNote { get; set; }
-        [Column(TypeName = "inet")] public (IPAddress, int)? Address { get; set; }
+        public NpgsqlInet? Address { get; set; }
         public byte[]? HWId { get; set; }
 
         public DateTime BanTime { get; set; }

@@ -239,3 +239,52 @@
   - type: Clothing
     sprite: ADT/Clothing/Belt/sec_auditor_holster.rsi
     quickEquip: true
+
+#офицерский ремень с кобурой
+
+- type: entity
+  id: ADTClothingBeltOfficersbeltwithholster
+  parent: ClothingBeltHolster
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+        - id: ADTWeaponPistolPMM
+        - id: MagazinePistol
+  - type: Sprite
+    sprite: ADT/Clothing/Belt/officers_belt_with_holster.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Belt/officers_belt_with_holster.rsi
+    quickEquip: true
+
+#рпс
+
+- type: entity
+  id: ADTClothingRPSUSSP
+  parent: ClothingBeltMilitaryWebbing
+  name: RPS USSP
+  description: RPS USSP
+  suffix: USSP
+  components:
+  - type: Storage
+    maxItemSize: Normal
+  - type: Sprite
+    sprite: ADT/Clothing/Belt/rps_ussp.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Belt/rps_ussp.rsi
+
+#тактический рпс
+
+- type: entity
+  id: ADTClothingRPSTacticalUSSP
+  parent: ClothingBeltMilitaryWebbing
+  name: RPS Tactical USSP
+  description: RPS Tactical USSP
+  suffix: USSP
+  components:
+  - type: Storage
+    maxItemSize: Normal
+  - type: Sprite
+    sprite: ADT/Clothing/Belt/rps_tactical_ussp.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Belt/rps_tactical_ussp.rsi

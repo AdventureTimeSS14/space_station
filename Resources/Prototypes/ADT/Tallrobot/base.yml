@@ -1,7 +1,7 @@
 - type: entity
   id: ADTTallRobotMekaBase
   parent: BaseBorgChassisNT
-  suffix: TallRobot
+  suffix: Meka TallRobot
   abstract: true
   components:
   - type: Fixtures
@@ -25,11 +25,23 @@
       0: Alive
       120: Critical
       220: Dead
+  - type: SiliconLawBound
+  - type: SiliconLawProvider
+    laws: Corporate
+  - type: ContainerFill
+    containers:
+      borg_brain:
+      - MMIFilled
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMedium
 
 - type: entity
   id: ADTTallRobotFMekaBase
   parent: ADTTallRobotMekaBase
-  suffix: TallRobot
+  suffix: FMeka TallRobot
   abstract: true
   components:
   - type: Sprite
