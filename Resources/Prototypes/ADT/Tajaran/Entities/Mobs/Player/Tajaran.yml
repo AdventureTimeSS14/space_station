@@ -7,9 +7,11 @@
     - type: CombatMode
     - type: InteractionPopup
       successChance: 1
-      interactSuccessString: hugging-success-generic
-      interactSuccessSound: /Audio/Effects/thudswoosh.ogg
-      messagePerceivedByOthers: hugging-success-generic-others
+      interactSuccessString: petting-success-generic
+      interactSuccessSound: /Audio/ADT/Felinid/cat_purr1.ogg
+      messagePerceivedByOthers: petting-success-soft-floofy-others
+      interactSuccessSpawn: EffectHearts
+      interactDelay: 4
     - type: MindContainer
       showExamineInfo: true
     - type: Input
