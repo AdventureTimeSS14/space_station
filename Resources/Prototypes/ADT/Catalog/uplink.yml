@@ -353,3 +353,33 @@
       whitelist:
       - Chef
       - ServiceWorker
+
+- type: listing
+  id: ADTUplinkNukeSyndiHoloprojectorField
+  name: uplink-syndiholoprojectorfield-name
+  description: uplink-syndiholoprojectorfield-desc
+  productEntity: ADTSyndiHoloprojectorField
+  cost:
+    Telecrystal: 12
+  categories:
+    - UplinkUtility
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: ADTUplinkSyndieSyndiHoloprojectorField
+  name: uplink-syndiholoprojectorfield-name
+  description: uplink-syndiholoprojectorfield-desc
+  productEntity: ADTSyndiHoloprojectorField
+  cost:
+    Telecrystal: 6
+  categories:
+    - UplinkUtility
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - NukeOpsUplink
