@@ -1,0 +1,35 @@
+- type: polymorph
+  id: ADTWizardForcedVulpkanin
+  entity: MobVulpkanin
+  forced: true
+  inventory: None
+  transferName: true
+  transferDamage: true
+  revertOnCrit: false
+  revertOnDeath: true
+
+- type: entity
+  id: ADTProjectilePolyboltVulpkanin
+  parent: ProjectilePolyboltBase
+  name: vulpkanin polybolt
+  description: Nooo, I don't wanna be monkey!
+  noSpawn: true
+  components:
+  - type: PolymorphOnCollide
+    polymorph: ADTWizardForcedVulpkanin
+    whitelist:
+      components:
+      - Body
+
+- type: entity
+  name: wand of vulpkanin polymorph
+  parent: WeaponWandPolymorphBase
+  id: ADTWeaponWandPolymorphVulpkanin
+  description: For when you need a monkey friend.
+  components:
+  - type: BasicEntityAmmoProvider
+    proto: ADTProjectilePolyboltVulpkanin
+    capacity: 2
+    count: 5
+
+
