@@ -30,7 +30,7 @@
   description: chitinous-armor-desc
   productAction: ActionLingArmor
   cost:
-    EvolutionPoints: 2
+    EvolutionPoints: 4
   categories:
   - ChangelingAbilities
   conditions:
@@ -43,7 +43,7 @@
   description: chameleon-skin-desc
   productAction: ActionLingInvisible
   cost:
-    EvolutionPoints: 2
+    EvolutionPoints: 3
   categories:
   - ChangelingAbilities
   conditions:
