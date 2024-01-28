@@ -110,7 +110,7 @@
   suffix: Central Command
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/centcomm.rsi
+    sprite: ADT/Structures/Doors/Airlocks/Standard/centcom.rsi
   - type: WiresPanelSecurity
     securityLevel: medSecurity
 
@@ -299,7 +299,7 @@
   suffix: Central Command
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/centcomm.rsi
+    sprite: ADT/Structures/Doors/Airlocks/Glass/centcom.rsi
   - type: WiresPanelSecurity
     securityLevel: medSecurity
 
