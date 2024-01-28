@@ -60,3 +60,5 @@ hugging-success-generic-others = { CAPITALIZE($user) } обнимает { $targe
 fence-rattle-success = *бдзынь*
 hugging-success-generic-target = { CAPITALIZE($user) } обнимает вас.
 petting-success-soft-floofy-others = { CAPITALIZE($user) } гладит { $target }.
+
+petting-success-ipc = Вы гладите { $target } по его металлической голове.

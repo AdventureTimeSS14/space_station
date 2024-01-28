@@ -24,3 +24,6 @@ roles-antag-thief-objective = Кое-какая собственность NT д
 
 roles-antag-terminator-name = терминатор
 roles-antag-terminator-objective = Устрани цель любой ценой, от этого зависит будущее.
+
+roles-antag-changeling-name = Генокрад
+roles-antag-changeling-objective = Используйте свои особые инопланетные способности, чтобы помочь в достижении ваших целей.

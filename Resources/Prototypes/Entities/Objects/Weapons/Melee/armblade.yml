@@ -26,3 +26,7 @@
     pryPowered: true
   - type: DisarmMalus
     malus: 0
+  - type: Reflect
+    enabled: true
+    reflectProb: .50
+    spread: 75

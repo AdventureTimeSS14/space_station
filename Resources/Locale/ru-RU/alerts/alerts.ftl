@@ -64,3 +64,6 @@ alerts-pacified-name = [color=green]Пацифизм[/color]
 alerts-pacified-desc = Вы чувствуете себя умиротворенно и не можете атаковать кого-либо напрямую.
 alerts-suit-power-name = Заряд костюма
 alerts-suit-power-desc = Запас энергии вашего костюма космического ниндзя.
+
+alerts-changeling-chemicals-name = Химические вещества
+alerts-changeling-chemicals-desc = Количество химических веществ в вашем теле. Они используются для способностей. Восстанавливаются через время.
