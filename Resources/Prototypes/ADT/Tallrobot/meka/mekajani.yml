@@ -19,6 +19,10 @@
       visible: false
     - state: mekajanirest
       visible: false
+    - state: robot_l
+      shader: unshaded
+      map: ["light"]
+      visible: false
   - type: BorgChassis
     moduleWhitelist:
       tags:

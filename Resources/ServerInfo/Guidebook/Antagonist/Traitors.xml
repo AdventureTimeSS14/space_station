@@ -95,5 +95,9 @@
   <Box>
   <GuideEntityEmbed Entity="BoxFolderQmClipboard" Caption="Портативный планшет заказов"/>
   </Box>
+  - Украдите [color=#a4885c]Гравитационное ядро[/color], подорвав Генератор Гравитации.
+  <Box>
+  <GuideEntityEmbed Entity="NesGravityGeneratorCore" Caption="Гравитационное ядро"/>
+  </Box>
 
 </Document>

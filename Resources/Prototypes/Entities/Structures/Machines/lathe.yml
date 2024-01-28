@@ -25,6 +25,9 @@
         !type:DamageTrigger
         damage: 100
       behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
       - !type:ChangeConstructionNodeBehavior
         node: machineFrame
       - !type:DoActsBehavior
@@ -114,10 +117,18 @@
       - ExteriorLightTube
       - LightBulb
       - Bucket
+      - DrinkMug
+      - DrinkMugMetal
+      - DrinkGlass
+      - DrinkShotGlass
+      - DrinkGlassCoupeShaped
       - FoodPlate
       - FoodPlateSmall
       - FoodPlatePlastic
       - FoodPlateSmallPlastic
+      - FoodBowlBig
+      - FoodPlateTin
+      - FoodKebabSkewer
       - SprayBottle
       - MopItem
       - Holoprojector
@@ -144,7 +155,7 @@
       - SubstationMachineCircuitboard
       - CellRechargerCircuitboard
       - BorgChargerCircuitboard
-      #- IndustrialChargerCircuitboard # закомментировано для теста
+      #- IndustrialChargerCircuitboard # закомментировано для теста (пусть так и остаётся, добавлю в список исследований)
       - WeaponCapacitorRechargerCircuitboard
       - ADTFormPrinterMachineCircuitboard
   - type: EmagLatheRecipes
@@ -461,6 +472,7 @@
       - MassMediaCircuitboard
       - ADTSMESIndustrialMachineCircuitboard
       - ADTFormPrinterMachineCircuitboard
+      - IndustrialChargerCircuitboard # Зарядник КПБ
   - type: MaterialStorage
     whitelist:
       tags:
@@ -783,8 +795,6 @@
       whitelist:
         tags:
           - Sheet
-    - type: StealTarget
-      stealGroup: AmmoTechFabCircuitboard
 
 - type: entity
   id: MedicalTechFab
@@ -881,22 +891,24 @@
     staticRecipes:
       - ClothingUniformJumpsuitColorGrey
       - ClothingUniformJumpskirtColorGrey
-      - ClothingUniformJumpsuitBartender
-      - ClothingUniformJumpskirtBartender
+      - ADTClothingUniformNewBarmanSuit
+      - ADTClothingUniformNewBarmanSkirt
       - ClothingHeadHatCapcap
       - ClothingHeadHatCaptain
       - ClothingUniformJumpsuitCaptain
       - ClothingUniformJumpskirtCaptain
       - ClothingUniformJumpsuitCapFormal
       - ClothingUniformJumpskirtCapFormalDress
+      - ADTCapJumpsuitWarm
+      - ADTCapJumpskirtWarm
       - ClothingUniformJumpsuitCargo
       - ClothingUniformJumpskirtCargo
       - ClothingUniformJumpsuitSalvageSpecialist
       - ClothingHeadHatBeretEngineering
       - ClothingUniformJumpsuitChiefEngineer
       - ClothingUniformJumpskirtChiefEngineer
-      - ClothingUniformJumpsuitChiefEngineerTurtle
-      - ClothingUniformJumpskirtChiefEngineerTurtle
+      - ADTCEJumpsuitWarm
+      - ADTCEJumpskirtWarm
       - ClothingUniformJumpsuitChaplain
       - ClothingUniformJumpskirtChaplain
       - ClothingUniformJumpsuitBrigmedic
@@ -909,6 +921,8 @@
       - ClothingHeadHatBeretCmo
       - ClothingUniformJumpsuitCMO
       - ClothingUniformJumpskirtCMO
+      - ADTCMOJumpsuitWarm
+      - ADTCMOJumpskirtWarm
       - ClothingUniformJumpsuitDetective
       - ClothingUniformJumpskirtDetective
       - ClothingUniformJumpsuitEngineering
@@ -916,14 +930,16 @@
       - ClothingHeadHatHopcap
       - ClothingUniformJumpsuitHoP
       - ClothingUniformJumpskirtHoP
+      - ADTHOPJumpsuitWarm
+      - ADTHOPJumpskirtWarm
       - ClothingHeadHatBeretHoS
       - ClothingHeadHatHoshat
       - ClothingUniformJumpsuitHoS
       - ClothingUniformJumpskirtHoS
       - ClothingUniformJumpsuitHosFormal
       - ClothingUniformJumpskirtHosFormal
-      - ClothingUniformJumpsuitHoSAlt
-      - ClothingUniformJumpskirtHoSAlt
+      - ADTHOSJumpsuitWarm
+      - ADTHOSJumpskirtWarm
       - ClothingUniformJumpsuitHoSBlue
       - ClothingUniformJumpsuitHoSGrey
       - ClothingUniformJumpsuitHoSParadeMale
@@ -948,11 +964,11 @@
       - ClothingHeadHatQMsoft
       - ClothingUniformJumpsuitQM
       - ClothingUniformJumpskirtQM
-      - ClothingUniformJumpsuitQMTurtleneck
-      - ClothingUniformJumpskirtQMTurtleneck
+      - ADTQMJumpsuitWarm
+      - ADTQMJumpskirtWarm
       - ClothingHeadHatBeretRND
-      - ClothingUniformJumpsuitResearchDirector
-      - ClothingUniformJumpskirtResearchDirector
+      - ADTRDJumpsuitWarm
+      - ADTRDJumpskirtWarm
       - ClothingUniformJumpsuitScientist
       - ClothingUniformJumpskirtScientist
       - ClothingHeadHatBeretSecurity

@@ -30,19 +30,19 @@ public sealed class ActionContainerSystem : EntitySystem
         SubscribeLocalEvent<ActionsContainerComponent, ComponentShutdown>(OnShutdown);
         SubscribeLocalEvent<ActionsContainerComponent, EntRemovedFromContainerMessage>(OnEntityRemoved);
         SubscribeLocalEvent<ActionsContainerComponent, EntInsertedIntoContainerMessage>(OnEntityInserted);
+        SubscribeLocalEvent<ActionsContainerComponent, ActionAddedEvent>(OnActionAdded);
         SubscribeLocalEvent<ActionsContainerComponent, MindAddedMessage>(OnMindAdded);
         SubscribeLocalEvent<ActionsContainerComponent, MindRemovedMessage>(OnMindRemoved);
     }
 
     private void OnMindAdded(EntityUid uid, ActionsContainerComponent component, MindAddedMessage args)
     {
-        if(!_mind.TryGetMind(uid, out var mindId, out _))
+        if (!_mind.TryGetMind(uid, out var mindId, out _))
             return;
-
         if (!TryComp<ActionsContainerComponent>(mindId, out var mindActionContainerComp))
             return;
 
-        if (!HasComp<GhostComponent>(uid) && mindActionContainerComp.Container.ContainedEntities.Count > 0 )
+        if (!HasComp<GhostComponent>(uid) && mindActionContainerComp.Container.ContainedEntities.Count > 0)
             _actions.GrantContainedActions(uid, mindId);
     }
 
@@ -175,6 +175,61 @@ public sealed class ActionContainerSystem : EntitySystem
     }
 
     /// <summary>
+    /// Transfers an actions from one container to another, while changing the attached entity.
+    /// </summary>
+    /// <remarks>
+    /// This will actually remove and then re-grant the action.
+    /// Useful where you need to transfer from one container to another but also change the attached entity (ie spellbook > mind > user)
+    /// </remarks>
+    public void TransferActionWithNewAttached(
+        EntityUid actionId,
+        EntityUid newContainer,
+        EntityUid newAttached,
+        BaseActionComponent? action = null,
+        ActionsContainerComponent? container = null)
+    {
+        if (!_actions.ResolveActionData(actionId, ref action))
+            return;
+
+        if (action.Container == newContainer)
+            return;
+
+        var attached = newAttached;
+        if (!AddAction(newContainer, actionId, action, container))
+            return;
+
+        DebugTools.AssertEqual(action.Container, newContainer);
+        _actions.AddActionDirect(newAttached, actionId, action: action);
+
+        DebugTools.AssertEqual(action.AttachedEntity, attached);
+    }
+
+    /// <summary>
+    /// Transfers all actions from one container to another, while changing the attached entity.
+    /// </summary>
+    /// <remarks>
+    /// This will actually remove and then re-grant the action.
+    /// Useful where you need to transfer from one container to another but also change the attached entity (ie spellbook > mind > user)
+    /// </remarks>
+    public void TransferAllActionsWithNewAttached(
+        EntityUid from,
+        EntityUid to,
+        EntityUid newAttached,
+        ActionsContainerComponent? oldContainer = null,
+        ActionsContainerComponent? newContainer = null)
+    {
+        if (!Resolve(from, ref oldContainer) || !Resolve(to, ref newContainer))
+            return;
+
+        foreach (var action in oldContainer.Container.ContainedEntities.ToArray())
+        {
+            TransferActionWithNewAttached(action, to, newAttached, container: newContainer);
+        }
+
+        DebugTools.AssertEqual(oldContainer.Container.Count, 0);
+    }
+
+    /// <summary>
     /// Adds a pre-existing action to an action container. If the action is already in some container it will first remove it.
     /// </summary>
     public bool AddAction(EntityUid uid, EntityUid actionId, BaseActionComponent? action = null, ActionsContainerComponent? comp = null)
@@ -187,6 +242,19 @@ public sealed class ActionContainerSystem : EntitySystem
 
         DebugTools.AssertOwner(uid, comp);
         comp ??= EnsureComp<ActionsContainerComponent>(uid);
+
+
+        if (!TryComp<MetaDataComponent>(actionId, out var actionMetaData))
+            return false;
+        if (!TryPrototype(actionId, out var actionPrototype, actionMetaData))
+            return false;
+
+        if (HasAction(uid, actionPrototype.ID))
+        {
+            Log.Debug($"Tried to insert action {ToPrettyString(actionId)} into {ToPrettyString(uid)}. Failed due to duplicate actions.");
+            return false;
+        }
+
         if (!_container.Insert(actionId, comp.Container))
         {
             Log.Error($"Failed to insert action {ToPrettyString(actionId)} into {ToPrettyString(uid)}");
@@ -198,6 +266,31 @@ public sealed class ActionContainerSystem : EntitySystem
         DebugTools.Assert(action.Container == uid);
 
         return true;
+    }
+
+    /// <summary>
+    /// Checks if the given entity has an action prototype in their actions container.
+    /// </summary>
+    public bool HasAction(EntityUid uid, string prototypeID, ActionsContainerComponent? actionsContainerComp = null)
+    {
+        if (!Resolve(uid, ref actionsContainerComp, false))
+            return false;
+
+        foreach (var act in actionsContainerComp.Container.ContainedEntities.ToArray())
+        {
+            if (TryComp<MetaDataComponent>(act, out var metaDataComponent))
+            {
+                if (TryPrototype(act, out var actPrototype, metaDataComponent))
+                {
+                    if (prototypeID == actPrototype.ID)
+                    {
+                        return true;
+                    }
+                }
+            }
+        }
+
+        return false;
     }
 
     /// <summary>
@@ -280,6 +373,12 @@ public sealed class ActionContainerSystem : EntitySystem
         var ev = new ActionRemovedEvent(args.Entity, data);
         RaiseLocalEvent(uid, ref ev);
         data.Container = null;
+    }
+
+    private void OnActionAdded(EntityUid uid, ActionsContainerComponent component, ActionAddedEvent args)
+    {
+        if (TryComp<MindComponent>(uid, out var mindComp) && mindComp.OwnedEntity != null && HasComp<ActionsContainerComponent>(mindComp.OwnedEntity.Value))
+            _actions.GrantContainedAction(mindComp.OwnedEntity.Value, uid, args.Action);
     }
 }
 

@@ -56,6 +56,14 @@
               max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: Extractable
+    grindableSolutionName: paper
+  - type: SolutionContainerManager
+    solutions:
+      paper:
+        reagents:
+        - ReagentId: Cellulose
+          Quantity: 3
 # Corvax-Printer-Start
   - type: Material
   - type: PhysicalComposition
@@ -65,6 +73,17 @@
     stackType: Paper1
     count: 1
 # Corvax-Printer-End
+
+- type: entity
+  name: paper scrap
+  parent: Paper
+  id: PaperScrap
+  description: 'A crumpled up piece of white paper.'
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    layers:
+    - state: scrap
 
 - type: entity
   name: office paper
@@ -268,6 +287,16 @@
     damage:
       types:
         Piercing: 3
+  - type: Extractable
+    grindableSolutionName: pen
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        reagents:
+        - ReagentId: Iron
+          Quantity: 2
+        - ReagentId: Iodine
+          Quantity: 1
 
 #TODO: I want the luxury pen to write a cool font like Merriweather in the future.
 
@@ -326,7 +355,7 @@
     state: pen_cap
 
 - type: entity
-  name: Centcom pen
+  name: CentCom pen
   parent: CyberPen
   id: PenCentcom
   description: In an attempt to keep up with the "power" of the cybersun bureaucracy, NT made a replica of cyber pen, in their corporate style.
@@ -404,6 +433,14 @@
         prob: 0.2
       - id: Paper
         prob: 0.2
+  - type: Extractable
+    grindableSolutionName: folder
+  - type: SolutionContainerManager
+    solutions:
+      folder:
+        reagents:
+        - ReagentId: Cellulose
+          Quantity: 4 #a little more rigid then paper so it yields slightly more
 
 - type: entity
   id: BoxFolderRed
@@ -490,7 +527,7 @@
 
 - type: entity
   id: BoxFolderCentCom
-  name: centcom folder
+  name: CentCom folder
   parent: BoxFolderBase
   suffix: DO NOT MAP
   description: CentCom's miserable little pile of secrets!
@@ -500,6 +537,16 @@
     layers:
     - state: folder-centcom
     - state: folder-base
+  - type: Extractable
+    grindableSolutionName: centcommfolder
+  - type: SolutionContainerManager
+    solutions:
+      centcommfolder:
+        reagents:
+        - ReagentId: Cellulose
+          Quantity: 4
+        - ReagentId: Gold
+          Quantity: 1
 
 - type: entity
   id: BoxFolderClipboard
@@ -526,7 +573,7 @@
   - type: ItemSlots
     slots:
       pen_slot:
-        name: Pen
+        name: clipboard-slot-component-slot-name-pen
         whitelist:
           tags:
             - Write
@@ -559,11 +606,19 @@
     damage:
       types:
         Blunt: 6
+  - type: Extractable
+    grindableSolutionName: clipboard
+  - type: SolutionContainerManager
+    solutions:
+      clipboard:
+        reagents:
+        - ReagentId: Cellulose
+          Quantity: 5
 
 - type: entity
   id: BoxFolderCentComClipboard
   parent: BoxFolderClipboard
-  name: centcom clipboard
+  name: CentCom clipboard
   description: A luxurious clipboard upholstered with green velvet. Often seen carried by CentCom officials, seldom seen actually used.
   components:
   - type: Sprite
@@ -584,6 +639,16 @@
     slots: [belt]
     quickEquip: false
     sprite: Objects/Misc/cc-clipboard.rsi
+  - type: Extractable
+    grindableSolutionName: centcommclipboard
+  - type: SolutionContainerManager
+    solutions:
+      centcommclipboard:
+        reagents:
+        - ReagentId: Cellulose
+          Quantity: 4
+        - ReagentId: Gold
+          Quantity: 1
 
 - type: entity
   id: BoxFolderQmClipboard
@@ -610,7 +675,7 @@
   - type: ItemSlots
     slots:
       pen_slot:
-        name: Pen
+        name: clipboard-slot-component-slot-name-pen
         whitelist:
           tags:
             - Write

@@ -289,6 +289,8 @@
         - id: MagazinePistolSubMachineGun
           amount: 2
         - id: CombatKnife
+        - id: CrowbarRed
+        - id: MagazineMagnum
 
 - type: entity
   noSpawn: true

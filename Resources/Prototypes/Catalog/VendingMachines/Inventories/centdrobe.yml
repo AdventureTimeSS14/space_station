@@ -5,15 +5,19 @@
     ClothingShoesBootsJack: 3
     ClothingHandsGlovesCombat: 3
     ClothingEyesGlassesSunglasses: 3
+    ClothingUniformJumpskirtCentcomOfficer: 3
     ClothingUniformJumpsuitCentcomOfficer: 3
     ClothingUniformJumpsuitCentcomOfficial: 3
+    ClothingUniformJumpskirtCentcomOfficial: 3
     ClothingUniformJumpsuitCentcomAgent: 3
     ClothingUniformJumpsuitCentcomFormal: 3
     ClothingUniformJumpskirtCentcomFormalDress: 3
     ClothingHeadHatCentcom: 3
+    ClothingHeadsetAltCentCom: 3
     ADTClothingHeadHatsBeretCentCom: 3
     ClothingMaskGasCentcom: 3
     ClothingHeadsetCentCom: 3
     ClothingOuterWinterCentcom: 3
     ClothingNeckScarfStripedCentcom: 3
     ClothingNeckCloakCentcom: 3
+    ADTClothingNeckMantleCentComm: 2 #ADT

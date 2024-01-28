@@ -8,3 +8,5 @@ ent-CartridgeRifleRubber = патрон (6.5х39 мм TSF резиновый)
     .desc = { ent-BaseCartridgeRifle.desc }
 ent-CartridgeRifleIncendiary = патрон (6.5х39 мм TSF зажигательный)
     .desc = { ent-BaseCartridgeRifle.desc }
+ent-CartridgeRifleUranium = патрон (6.5х39 мм TSF урановый)
+    .desc = { ent-BaseCartridgeRifle.desc }

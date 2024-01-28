@@ -224,6 +224,12 @@ namespace Content.Shared.CCVar
             GameRoleTimers = CVarDef.Create("game.role_timers", true, CVar.SERVER | CVar.REPLICATED);
 
         /// <summary>
+        /// Whether or not disconnecting inside of a cryopod should remove the character or just store them until they reconnect.
+        /// </summary>
+        public static readonly CVarDef<bool>
+            GameCryoSleepRejoining = CVarDef.Create("game.cryo_sleep_rejoining", false, CVar.SERVER | CVar.REPLICATED);
+
+        /// <summary>
         ///     Whether a random position offset will be applied to the station on roundstart.
         /// </summary>
         public static readonly CVarDef<bool> StationOffset =
@@ -304,6 +310,12 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<string> PanicBunkerCustomReason =
             CVarDef.Create("game.panic_bunker.custom_reason", string.Empty, CVar.SERVERONLY);
+
+        /// <summary>
+        /// Allow bypassing the panic bunker if the user is whitelisted.
+        /// </summary>
+        public static readonly CVarDef<bool> BypassBunkerWhitelist =
+            CVarDef.Create("game.panic_bunker.whitelisted_can_bypass", true, CVar.SERVERONLY);
 
         /// <summary>
         /// Make people bonk when trying to climb certain objects like tables.
@@ -477,6 +489,22 @@ namespace Content.Shared.CCVar
 
         public static readonly CVarDef<int> PiratesPlayersPerOp =
             CVarDef.Create("pirates.players_per_pirate", 5);
+
+        /*
+         * Changelings
+         */
+
+        public static readonly CVarDef<int> ChangelingMinPlayers =
+            CVarDef.Create("changeling.min_players", 5);
+
+        public static readonly CVarDef<int> ChangelingMaxChangelings =
+            CVarDef.Create("changeling.max_lings", 8); // Assuming average server maxes somewhere from like 50-80 people
+
+        public static readonly CVarDef<int> ChangelingPlayersPerChangeling =
+            CVarDef.Create("changeling.players_per_traitor", 5);
+
+        public static readonly CVarDef<int> ChangelingMaxPicks =
+            CVarDef.Create("changeling.max_picks", 20);
 
         /*
          * Tips
@@ -822,7 +850,7 @@ namespace Content.Shared.CCVar
         ///     If 0, appearing as a new player is disabled.
         /// </summary>
         public static readonly CVarDef<int> NewPlayerThreshold =
-            CVarDef.Create("admin.new_player_threshold", 0, CVar.ARCHIVE | CVar.REPLICATED | CVar.SERVER);
+            CVarDef.Create("admin.new_player_threshold", 320, CVar.ARCHIVE | CVar.REPLICATED | CVar.SERVER);
 
         /*
          * Explosions
@@ -1246,6 +1274,18 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<bool> VoteRestartEnabled =
             CVarDef.Create("vote.restart_enabled", true, CVar.SERVERONLY);
+
+        /// <summary>
+        ///     Config for when the restart vote should be allowed to be called regardless with less than this amount of players.
+        /// </summary>
+        public static readonly CVarDef<int> VoteRestartMaxPlayers =
+            CVarDef.Create("vote.restart_max_players", 20, CVar.SERVERONLY);
+
+        /// <summary>
+        ///     Config for when the restart vote should be allowed to be called based on percentage of ghosts.
+        ///
+        public static readonly CVarDef<int> VoteRestartGhostPercentage =
+            CVarDef.Create("vote.restart_ghost_percentage", 75, CVar.SERVERONLY);
 
         /// <summary>
         ///     See vote.enabled, but specific to preset votes

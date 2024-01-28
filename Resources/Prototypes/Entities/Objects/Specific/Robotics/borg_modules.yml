@@ -245,9 +245,10 @@
     - state: icon-tools-adv
   - type: ItemBorgModule
     items:
-    - Omnitool
+    - PowerDrill
+    - JawsOfLife
     - WelderExperimental
-    - NetworkConfigurator
+    - Multitool
 
 - type: entity
   id: BorgModuleGasAnalyzer
@@ -530,7 +531,7 @@
   id: BorgModuleOperative
   parent: [ BaseBorgModuleSyndicate, BaseProviderBorgModule ]
   name: operative cyborg module
-  description: A module that comes with a crowbar, a Cobra pistol, an Emag and a syndicate pinpointer.
+  description: A module that comes with a crowbar, an Emag and a syndicate pinpointer.
   components:
     - type: Sprite
       layers:
@@ -539,7 +540,6 @@
     - type: ItemBorgModule
       items:
         - Crowbar
-        - WeaponPistolCobra
         - Emag
         - PinpointerSyndicateNuclear
 
@@ -547,7 +547,7 @@
   id: BorgModuleEsword
   parent: [ BaseBorgModuleSyndicate, BaseProviderBorgModule ]
   name: energy sword cyborg module
-  description: A module that comes with an energy sword.
+  description: A module that comes with a double energy sword.
   components:
     - type: Sprite
       layers:
@@ -555,7 +555,7 @@
         - state: icon-tools
     - type: ItemBorgModule
       items:
-        - EnergySword
+        - EnergySwordDouble
         - PinpointerSyndicateNuclear
 
 - type: entity

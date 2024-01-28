@@ -80,7 +80,6 @@
   weights:
     ForensicScannerStealObjective: 1                    #sec
     FlippoEngravedLighterStealObjective: 0.5
-    AmmoTechFabCircuitboardStealObjective: 1
     ClothingHeadHatWardenStealObjective: 1
     ClothingOuterHardsuitVoidParamedStealObjective: 1   #med
     MedicalTechFabCircuitboardStealObjective: 1
@@ -94,7 +93,7 @@
     BibleStealObjective: 1
     ClothingNeckGoldmedalStealObjective: 1              #other
     ClothingNeckClownmedalStealObjective: 0.5
-    
+
 - type: weightedRandom
   id: ThiefObjectiveGroupStructure
   weights:
@@ -122,9 +121,34 @@
     ShivaStealObjective: 1
     SmileStealObjective: 1
     PunPunStealObjective: 1
-    
+    TropicoStealObjective: 1
+
 - type: weightedRandom
   id: ThiefObjectiveGroupEscape
   weights:
     EscapeThiefShuttleObjective: 1
-#Changeling, crew, wizard, when you code it...
+
+# Changeling
+- type: weightedRandom
+  id: ChangelingObjectiveGroups
+  weights:
+    ChangelingObjectiveGroupKill: 1
+    ChangelingObjectiveGroupState: 1
+    ChangelingObjectiveGroupSteal: 1
+
+- type: weightedRandom
+  id: ChangelingObjectiveGroupSteal
+  weights:
+    CommandIDStealObjective: 1
+    SmileExtractStealObjective: 1
+
+- type: weightedRandom
+  id: ChangelingObjectiveGroupKill
+  weights:
+    KillRandomPersonObjectiveLing: 1
+
+- type: weightedRandom
+  id: ChangelingObjectiveGroupState
+  weights:
+    EscapeLingShuttleObjective: 1
+#Crew, wizard, when you code it...

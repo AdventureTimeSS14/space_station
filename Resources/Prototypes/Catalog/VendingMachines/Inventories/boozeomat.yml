@@ -51,4 +51,5 @@
     ADTDrinkCherryExquisiteWineBottleFull: 1
     DrinkChampagneBottleFull: 2 #because the premium drink
     ADTDrinkVodkaAntivirusBottleFull: 2
-
+  emaggedInventory:
+    DrinkPoisonWinebottleFull: 2

@@ -76,3 +76,12 @@ ent-ClothingShoesBootsWinterSci = зимние ботинки учёного
 
 ent-ClothingShoesBootsWinterSec = зимние ботинки СБ
     .desc = Пушистые сапоги помогут пережить даже самую холодную зиму.
+
+ent-ADTClothingFootSportBoots = сапоги STEP "Cold"
+    .desc = Сапоги серии STEP "Cold" созданы специально для пробежек по улицам в холодную погоду. Сугробы им не помеха!
+ent-ADTClothingFootSportRoseShoes = ботинки STEP "Rose"
+    .desc = Спортивные ботинки с ярко-розовой подошвой.
+ent-ADTClothingFootSportStepSneakers = кроссовки STEP "Ultra"
+    .desc = Кроссовки серии STEP "Ultra" ставят легкость и сцепление превыше всего. Благодаря подошвам для бега с цепкой поверхностью и особой легкой метаморф-ткани, любые представители иных рас могут с полным комфортом на идти пробежку.
+ent-ADTClothingFootSportZetaCrocs = кроссы STEP "Zeta"
+    .desc = Кроссы STEP "Zeta" имеют удобную подошву и ярко-зелёную переднюю часть, чтобы вас точно заметили среди травы.

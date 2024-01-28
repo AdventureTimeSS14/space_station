@@ -114,7 +114,8 @@
         - id: GrenadeStinger
         - id: GrenadeFlashBang
         - id: GrenadeFlashBang
-        - id: WelderIndustrialAdvanced
+        - id: ADTSecurityCybPDA
+        #- id: WelderIndustrialAdvanced
 
 - type: entity
   parent: ADTClothingShoesBootsMagERT
