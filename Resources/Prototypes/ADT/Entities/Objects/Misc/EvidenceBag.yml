@@ -14,8 +14,100 @@
   - type: Sprite
     sprite: ADT/Objects/Misc/Evidance.rsi
     state: icon
-    scale: 0.7, 0.7
-  - type: Storage
-    grid:
-    - 0,0,10,7
-    maxItemSize: Small
+    scale: 0.6, 0.6
+  - type: ItemSlots
+    slots:
+      place:
+        name: Place
+        #startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+            - ADTPillExperimental
+            - ADTPillExter
+  - type: ItemMapper
+    mapLayers:
+      place_number:
+        whitelist:
+          tags:
+          - ADTPillExperimental
+      place_number2:
+        whitelist:
+          tags:
+          - ADTPillExter
+    sprite: ADT/Objects/Misc/Evidance.rsi
+  - type: ContainerContainer
+    containers:
+      place: !type:ContainerSlot
+
+- type: entity
+  name: pill
+  parent: FoodInjectableBase
+  id: ADTPillExperimental
+  description: It's not a suppository.
+  components:
+  - type: SliceableFood
+    count: 2
+  - type: Sprite
+    sprite: ADT/Objects/Misc/pill_ex.rsi
+    state: trava_ent
+    scale: 0.6, 0.6
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - ADTPillExperimental
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+          - ReagentId: SpaceDrugs
+            Quantity: 15
+          - ReagentId: Nocturine
+            Quantity: 15
+
+- type: entity
+  name: pill
+  parent: FoodInjectableBase
+  id: ADTPillExter
+  description: It's not a suppository.
+  components:
+  - type: SliceableFood
+    count: 2
+  - type: Sprite
+    sprite: ADT/Objects/Misc/pill_ex.rsi
+    state: extezi_ent
+    scale: 0.6, 0.6
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - ADTPillExter
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+          - ReagentId: Stimulants
+            Quantity: 15
+          - ReagentId: SpaceDrugs
+            Quantity: 15
+
+#Stimulants SpaceDrugs Nocturine
+#  - type: SolutionContainerManager
+#    solutions:
+#      smokable:
+#        maxVol: 45
+#        reagents:
+#          - ReagentId: Nicotine
+#            Quantity: 40
+ #         - ReagentId: Omnizine
+#            Quantity: 5
+  # - type: SolutionContainerManager
+  #   solutions:
+  #     food:
+  #       maxVol: 20
+  #       reagents:
+  #       - ReagentId: Bicaridine
+  #         Quantity: 10
