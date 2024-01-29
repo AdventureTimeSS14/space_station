@@ -29,8 +29,6 @@
 
 - type: entity
   parent: ADTBaseVendingMachineRestock
-  id: ADTVendingMachineRestockStyle
-  name: Style-o-Mat restock box
   id: ADTVendingMachineRestockPill
   name: Pill-O-Mat restock box
   description: Slot into your department's Pill-O-Mat.
