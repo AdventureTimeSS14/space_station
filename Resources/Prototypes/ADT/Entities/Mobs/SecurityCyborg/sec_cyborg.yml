@@ -111,6 +111,11 @@
   - type: EmitSoundOnTrigger
     sound:
       collection: SoldierDeath
+  - type: Vocal
+    sounds:
+      Male: UnisexIPC
+      Female: UnisexIPC
+      Unsexed: UnisexIPC
   - type: Speech
     speechSounds: Metrocop
     soundCooldownTime: 0.5
