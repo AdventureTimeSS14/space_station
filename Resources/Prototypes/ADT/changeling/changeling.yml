@@ -1,0 +1,135 @@
+- type: entity
+  id: ActionChangelingEvolutionMenu
+  name: action-evolution-menu
+  description: action-evolution-menu-decs
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: Interface/Actions/shop.png
+    event: !type:ChangelingEvolutionMenuActionEvent
+
+- type: entity
+  id: ActionChangelingAbsorb
+  name: action-absorb-dna
+  description: action-absorb-dna-desc
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: absorb_dna
+    whitelist:
+      components:
+      - Body
+    event: !type:LingAbsorbActionEvent
+    useDelay: 5
+    canTargetSelf: false
+
+- type: entity
+  id: ActionChangelingCycleDNA
+  name: action-cycle-dna
+  description: action-cycle-dna-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: cycle
+    event: !type:ChangelingCycleDNAActionEvent
+    useDelay: 1
+
+- type: entity
+  id: ActionChangelingTransform
+  name: action-transform
+  description: action-transform-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: transform
+    event: !type:ChangelingTransformActionEvent
+    useDelay: 5
+
+- type: entity
+  id: ActionLingRegenerate
+  name: action-regenerate
+  description: action-regenerate-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: regenerate
+    event: !type:LingRegenerateActionEvent
+    useDelay: 115
+
+- type: entity
+  id: ActionLingStingExtract
+  name: action-extract-dna-sting
+  description: action-extract-dna-sting-desc
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: sting_extract
+    whitelist:
+      components:
+      - Body
+    event: !type:LingStingExtractActionEvent
+    useDelay: 30
+    canTargetSelf: false
+
+- type: entity
+  id: ActionArmBlade
+  name: action-toggle-arm-blade
+  description: action-toggle-arm-blade-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Objects/Weapons/Melee/armblade.rsi
+      state: icon
+    event: !type:ArmBladeActionEvent
+    useDelay: 1
+
+- type: entity
+  id: ActionLingArmor
+  name: action-toggle-chitinous-armor
+  description: action-toggle-chitinous-armor-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Clothing/OuterClothing/Armor/lingarmor.rsi
+      state: icon
+    event: !type:LingArmorActionEvent
+    useDelay: 15
+
+- type: entity
+  id: ActionLingInvisible
+  name: action-toggle-chameleon-skin
+  description: action-toggle-chameleon-skin-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: chameleon
+    event: !type:LingInvisibleActionEvent
+    useDelay: 1
+
+- type: entity
+  id: ActionLingEMP
+  name: action-activate-dissonant-shriek
+  description: action-activate-dissonant-shriek-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: emp
+    useDelay: 15
+    event: !type:LingEMPActionEvent

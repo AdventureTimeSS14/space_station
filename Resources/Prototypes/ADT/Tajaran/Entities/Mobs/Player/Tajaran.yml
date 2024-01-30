@@ -7,9 +7,11 @@
     - type: CombatMode
     - type: InteractionPopup
       successChance: 1
-      interactSuccessString: hugging-success-generic
-      interactSuccessSound: /Audio/Effects/thudswoosh.ogg
-      messagePerceivedByOthers: hugging-success-generic-others
+      interactSuccessString: petting-success-generic
+      interactSuccessSound: /Audio/ADT/Felinid/cat_purr1.ogg
+      messagePerceivedByOthers: petting-success-soft-floofy-others
+      interactSuccessSpawn: EffectHearts
+      interactDelay: 4
     - type: MindContainer
       showExamineInfo: true
     - type: Input
@@ -17,8 +19,13 @@
     - type: MobMover
     - type: InputMover
     - type: Vocal
-      maleScream: /Audio/Voice/Human/malescream_1.ogg
-      femaleScream: /Audio/Voice/Human/femalescream_2.ogg
+      # maleScream: /Audio/Voice/Human/malescream_1.ogg
+      # femaleScream: /Audio/Voice/Human/femalescream_2.ogg
+      wilhelm: "/Audio/ADT/Felinid/cat_wilhelm.ogg"
+      sounds:
+        Male: ADTMaleTajaran
+        Female: ADTFemaleTajaran
+        Unsexed: ADTMaleTajaran
     - type: Alerts
     - type: Eye
     - type: CameraRecoil
@@ -34,3 +41,4 @@
       damageRecovery:
         types:
           Asphyxiation: -1.0
+

@@ -12,6 +12,7 @@ admin-verb-text-make-space-ninja = Сделать космическим нин�
 
 admin-verb-make-head-rev = Сделать цель главой Революции.
 admin-verb-make-thief = Сделать цель вором.
+admin-verb-make-changeling = Сделать цель в генокрада.
 
 admin-verb-text-make-traitor = Сделать Предателем
 admin-verb-text-make-zombie = Сделать Зомби
@@ -19,3 +20,4 @@ admin-verb-text-make-nuclear-operative = Сделать Ядерным Опер�
 admin-verb-text-make-pirate = Сделать Пиратом
 admin-verb-text-make-head-rev = Сделать Главой Революции
 admin-verb-text-make-thief = Сделать Вором
+admin-verb-text-make-changeling = Сделать генокрадом

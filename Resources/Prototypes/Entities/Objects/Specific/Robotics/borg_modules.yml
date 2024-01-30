@@ -258,9 +258,10 @@
     - state: icon-tools-adv
   - type: ItemBorgModule
     items:
-    - Omnitool
+    - PowerDrill
+    - JawsOfLife
     - WelderExperimental
-    - NetworkConfigurator
+    - Multitool
 
 - type: entity
   id: BorgModuleGasAnalyzer

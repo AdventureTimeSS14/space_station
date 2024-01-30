@@ -1,0 +1,66 @@
+# ## vocal emotes
+# - type: emote
+#   id: ADTHiss
+#   category: Vocal
+#   chatMessages: [шипит]
+#   chatTriggers:
+#     - шипит
+#     - шипит.
+#     - шипит!
+
+# - type: emote
+#   id: ADTMeow
+#   category: Vocal
+#   chatMessages: [мяукает]
+#   chatTriggers:
+#     - мяу
+#     - мяукнул
+#     - мяукнул.
+#     - мяукнул!
+#     - мяукнула
+#     - мяукнула.
+#     - мяукнула!
+#     - мяукает
+#     - мяукает.
+#     - мяукает!
+
+# - type: emote
+#   id: ADTMew
+#   category: Vocal
+#   chatMessages: [мякает]
+#   chatTriggers:
+#     - мя
+#     - мякает
+#     - мякает.
+#     - мякает!
+#     - ня
+#     - мякает?
+#     - mews.
+#     - mews!
+#     - mewing
+#     - mewed
+
+# - type: emote
+#   id: ADTGrowl
+#   category: Vocal
+#   chatMessages: [growls]
+#   chatTriggers:
+#     - рычит
+#     - ррр
+#     - growl
+#     - growls
+#     - growls.
+#     - growls!
+#     - growling
+#     - growled
+
+# - type: emote
+#   id: ADTPurr
+#   category: Vocal
+#   chatMessages: [мурчит]
+#   chatTriggers:
+#     - мур
+#     - мурчит
+#     - мурчит.
+#     - мурчит!
+

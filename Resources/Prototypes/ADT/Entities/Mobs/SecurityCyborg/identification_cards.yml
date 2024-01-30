@@ -1,5 +1,5 @@
 - type: entity
-  parent: CaptainIDCard #SecurityIDCard
+  parent: CentcomIDCard #SecurityIDCard
   id: ADTSecurityCybIDCard
   name: "security cyborg ID card"
   components:

@@ -58,6 +58,7 @@
   description: traitor-description
   showInVote: false
   rules:
+    - Changeling
     - Traitor
     - BasicStationEventScheduler
 
