@@ -1,0 +1,146 @@
+#пики
+- type: entity
+  name: playing card
+  parent: ADTFunCardBase
+  id: ADTFunCardClubs2
+  suffix: Cards
+  description: A high-tech scanning device that uses Terahertz Radiation to detect subfloor infrastructure.
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: clubs2-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardClubs3
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: clubs3-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardClubs4
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: clubs4-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardClubs5
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: clubs5-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardClubs6
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: clubs6-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardClubs7
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: clubs7-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardClubs8
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: clubs8-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardClubs9
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: clubs9-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardClubs10
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: clubs10-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardAceOfClubs
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: aceofclubs-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardJackOfClubs
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: jackofclubs-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardQueenOfClubs
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: queenofclubs-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardKingOfClubs
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: kingofclubs-on }
+          Off: { state: back-off }

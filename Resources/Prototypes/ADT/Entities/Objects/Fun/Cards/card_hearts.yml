@@ -1,0 +1,146 @@
+#черви
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardHearts2
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: hearts2-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardHearts3
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: hearts3-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardHearts4
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: hearts4-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardHearts5
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: hearts5-on }
+          Off: { state: back-off }
+
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardHearts6
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: hearts6-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardHearts7
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: hearts7-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardHearts8
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: hearts8-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardHearts9
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: hearts9-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardHearts10
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: hearts10-on }
+          Off: { state: back-off }
+
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardAceOfHearts
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: aceofhearts-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardJackOfHearts
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: jackofhearts-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardKingOfHearts
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: kingofhearts-on }
+          Off: { state: back-off }
+
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardQueenOfHearts
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: queenofhearts-on }
+          Off: { state: back-off }
