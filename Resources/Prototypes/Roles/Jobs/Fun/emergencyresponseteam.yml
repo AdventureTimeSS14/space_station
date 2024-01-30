@@ -233,7 +233,7 @@
   id: ERTSecurityGearHeavy
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTSecurity
-    back: ClothingBackpackERTSecurityFilled
+    back: ADTClothingBackpackERTSecurityFilledHeavy
     shoes: ADTClothingShoesBootsMagERT
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesSecurity

@@ -16,8 +16,8 @@ public sealed partial class PendingZombieComponent : Component
     {
         DamageDict = new ()
         {
-            { "Blunt", 0.25 },
-            { "Poison", 0.1 },
+            { "Blunt", 0.5 },
+            { "Poison", 0.25 },
         }
     };
 

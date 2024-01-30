@@ -1,0 +1,46 @@
+- type: entity
+  parent: BaseWeaponCrusher
+  id: ADTWeaponCrusherBORG
+  components:
+  - type: Tag
+    tags:
+      - Pickaxe
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/crusher.rsi
+    state: icon
+  - type: AmmoCounter
+  - type: UseDelayOnShoot
+  - type: UseDelay
+    delay: 1.5
+  - type: LeechOnMarker
+    leech:
+      groups:
+        Brute: -10
+        Burn: -10
+        Airloss: -5
+  - type: Gun
+    soundGunshot: /Audio/Weapons/plasma_cutter.ogg
+    fireRate: 1
+    useKey: false
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.5
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
+  - type: BasicEntityAmmoProvider
+    proto: BulletCharge
+    capacity: 1
+    count: 1
+  - type: MeleeWeapon
+    attackRate: 1.5
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 6
+        Slash: 6
+  - type: Item
+    size: Ginormous
+  - type: DisarmMalus
+  - type: Tool
+    qualities:
+      - Prying
+  - type: Prying

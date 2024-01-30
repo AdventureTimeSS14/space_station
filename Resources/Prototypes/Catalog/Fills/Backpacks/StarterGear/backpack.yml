@@ -520,3 +520,24 @@
       - id: SpeedLoaderMagnum
       - id: ADTSmokeGrenade
       - id: ADTSmokeGrenade
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackERTSecurity
+  id: ADTClothingBackpackERTSecurityFilledHeavy
+  components:
+    - type: StorageFill
+      contents:
+        - id: WeaponDisabler
+        - id: WeaponPulsePistol
+        - id: ADTWeaponLasgunSALR36
+        - id: MedicatedSuture
+        - id: RegenerativeMesh
+        # - id: BoxHandcuff
+        - id: JawsOfLife
+        - id: WeaponRifleLecter
+        - id: MagazineRifle
+        - id: MagazineRifle
+        - id: ADTPowerCellLasgun
+        - id: ADTPowerCellLasgun
+        - id: ADTPowerCellLasgun

@@ -176,23 +176,49 @@
   name: hairball
   description: Felinids, man... Placeholder sprite.
   components:
-    - type: Sprite
-      sprite: ADT/Objects/Specific/felinid.rsi
-      state: icon
-    - type: Hairball
-    - type: SolutionContainerManager
-      solutions:
-        hairball:
-          maxVol: 25
-          reagents:
-            - ReagentId: Protein
-              Quantity: 2
-    - type: Extractable
-      grindableSolutionName: hairball
-    # - type: Tag
-    #   tags:
-    #     - Recyclable
-    #     - Trash
+  - type: Sprite
+    sprite: ADT/Objects/Specific/felinid.rsi
+    state: icon
+  - type: Hairball
+  - type: SolutionContainerManager
+    solutions:
+      hairball:
+        maxVol: 25
+        reagents:
+          - ReagentId: Protein
+            Quantity: 2
+  - type: Extractable
+    grindableSolutionName: hairball
+  - type: Flammable
+    fireSpread: true
+    canResistFire: false
+    alwaysCombustible: true
+    canExtinguish: false # Mwahaha! Let the world burn because of one piece of paper!
+    damage:
+      types:
+        Heat: 1
+  - type: FireVisuals
+    sprite: Effects/fire.rsi
+    normalState: fire
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 15
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+            Ash:
+              min: 1
+              max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  # - type: Tag
+  #   tags:
+  #     - Recyclable
+  #     - Trash
 
 - type: entity
   id: ActionHairball

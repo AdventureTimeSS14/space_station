@@ -273,3 +273,7 @@ ent-BorgChargerCircuitboard = зарядная станция киборгов (
 action-name-view-laws = Просмотреть законы
 
 action-description-view-laws = Просмотреть законы, которым вы обязаны следовать.
+
+ent-ADTBorgModuleCrusher = модуль продвинутого снаряжениия киборга
+    .desc = Модуль, позволяющий киборгу использовать крушитель.
+    .suffix = { "" }
