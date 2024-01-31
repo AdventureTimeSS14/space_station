@@ -8,50 +8,13 @@
   revertOnCrit: false
   revertOnDeath: true
 
-- type: entity
-  id: ADTProjectilePolyboltVulpkanin
-  parent: ProjectilePolyboltBase
-  name: vulpkanin polybolt
-  description: Nooo, I don't wanna be monkey!
-  noSpawn: true
-  components:
-  - type: PolymorphOnCollide
-    polymorph: ADTWizardForcedVulpkanin
-    whitelist:
-      components:
-      - Body
 
-- type: entity
-  name: wand of vulpkanin polymorph
-  parent: WeaponWandPolymorphBase
-  id: ADTWeaponPulseCarabinUSSP
-  description: For when you need a monkey friend.
-  components:
-  - type: Sprite
-    sprite: ADT/Objects/Weapons/Guns/Battery/secretsUSSPLaser.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-  - type: Gun
-    selectedMode: SemiAuto
-    availableModes:
-    - SemiAuto
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-  - type: BasicEntityAmmoProvider
-    proto: ADTProjectilePolyboltVulpkanin
-    #fireCost: 10
-    capacity: 10
-    # count: 5
-  # - type: Battery
-  #   maxCharge: 2000
-  #   startingCharge: 2000
 
 # - type: entity
-#   name: pulse pistol
-#   parent: BaseWeaponBatterySmall
+#   name: wand of vulpkanin polymorph
+#   parent: WeaponDisabler
 #   id: ADTWeaponPulseCarabinUSSP
-#   description: A state of the art energy pistol favoured as a sidearm by the NT-ERT operatives.
+#   description: For when you need a monkey friend.
 #   components:
 #   - type: Sprite
 #     sprite: ADT/Objects/Weapons/Guns/Battery/secretsUSSPLaser.rsi
@@ -64,16 +27,45 @@
 #     - SemiAuto
 #     soundGunshot:
 #       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-#   - type: HitscanBatteryAmmoProvider
+#   - type: BasicEntityAmmoProvider
 #     proto: ADTProjectilePolyboltVulpkanin
-#     fireCost: 200
+#     fireCost: 300
+#     #capacity: 10
+#     # count: 5
 #   - type: Battery
 #     maxCharge: 2000
 #     startingCharge: 2000
 
+- type: entity
+  name: disabler
+  parent: BaseWeaponBatterySmall
+  id: ADTWeaponPulseCarabinUSSP
+  description: A self-defense weapon that exhausts organic targets, weakening them until they collapse.
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Weapons/Guns/Battery/secretsUSSPLaser.rsi
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+    - type: Gun
+      fireRate: 1.5
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+    - type: ProjectileBatteryAmmoProvider
+      proto: ADTProjectilePolyboltVulpkanin
+      fireCost: 300
+    - type: Appearance
+    - type: Battery
+      maxCharge: 2000
+      startingCharge: 2000
+
+
+
+
+
 
 # - type: entity
-#   id: ADTWeaponLasgunUSSP
+#   id: 1ADTWeaponLasgunUSSP
 #   parent: BaseItem
 #   name: SA-LR36
 #   description: SA-LR36
@@ -113,10 +105,10 @@
 #   - type: ContainerContainer
 #     containers:
 #       gun_magazine: !type:ContainerSlot
-#   - type: MagazineVisuals
-#     magState: mag
-#     steps: 1
-#     zeroVisible: true
+#   # - type: MagazineVisuals
+#   #   magState: mag
+#   #   steps: 1
+#   #   zeroVisible: true
 
 # #тэг для магазина лазгана
 # - type: Tag
@@ -154,7 +146,7 @@
 #       - ADTLasgunPowerCellUssp
 #   - type: Appearance
 #   - type: Riggable
-#   - type: HitscanBatteryAmmoProvider
+#   - type: ProjectileBatteryAmmoProvider
 #     proto: ADTProjectilePolyboltVulpkanin
 #     fireCost: 30
 
