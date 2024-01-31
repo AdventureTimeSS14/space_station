@@ -306,9 +306,6 @@
   id: Chicken
 
 - type: Tag
-  id: ChemDispensable # container that can go into the chem dispenser
-
-- type: Tag
   id: Cigarette
 
 - type: Tag
@@ -462,9 +459,6 @@
   id: DrinkSpaceGlue
 
 - type: Tag
-  id: DrinkBottle
-
-- type: Tag
   id: DroneUsable
 
 - type: Tag
@@ -565,10 +559,10 @@
 
 - type: Tag
   id: Goat
-  
+
 - type: Tag
   id: GPS
-  
+
 - type: Tag
   id: Grenade
 
@@ -794,7 +788,7 @@
   id: Matchstick
 
 - type: Tag
-  id: Mayo  
+  id: Mayo
 
 - type: Tag
   id: Meat

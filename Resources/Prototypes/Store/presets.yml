@@ -16,3 +16,11 @@
   - ADTUplinkShuttle
   currencyWhitelist:
   - Telecrystal
+
+- type: storePreset
+  id: StorePresetChangeling
+  storeName: EvolutionMenu
+  categories:
+  - ChangelingAbilities
+  currencyWhitelist:
+  - EvolutionPoints

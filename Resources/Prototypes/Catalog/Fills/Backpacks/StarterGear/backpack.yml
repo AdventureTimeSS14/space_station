@@ -395,8 +395,10 @@
         - id: WeaponRifleLecter
         - id: MagazineRifle
         - id: MagazineRifle
+        - id: ADTAdvancedHoloprojectorField
         - id: C4
           amount: 2
+
 
 - type: entity
   noSpawn: true
@@ -422,6 +424,7 @@
           amount: 1
         - id: ADTtelescopicBaton
         - id: CombatKnife
+        - id: ADTAdvancedHoloprojectorField
 
 
 - type: entity

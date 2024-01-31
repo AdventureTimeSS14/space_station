@@ -1,0 +1,21 @@
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardBlackJoker
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: blackjoker-on" }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardRedJoker
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: redjoker-on }
+          Off: { state: back-off }

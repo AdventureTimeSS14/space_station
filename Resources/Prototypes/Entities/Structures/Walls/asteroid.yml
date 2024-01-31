@@ -362,13 +362,13 @@
         tags:
           - Pickaxe
     - type: Damageable
-      damageContainer: Inorganic
-      damageModifierSet: Metallic
+      damageContainer: StructuralInorganic
+      damageModifierSet: Rock
     - type: Destructible
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 150
+            damage: 120
           behaviors:
             - !type:DoActsBehavior
               acts: ["Destruction"]

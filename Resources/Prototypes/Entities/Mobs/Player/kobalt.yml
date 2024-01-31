@@ -4,6 +4,8 @@
   parent: BaseMobKobolt
   id: MobKobolt
   components:
+    - type: Puller
+      needsHands: false
     - type: CombatMode
     - type: InteractionPopup
       successChance: 1

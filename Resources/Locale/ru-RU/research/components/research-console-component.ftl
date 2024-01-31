@@ -15,3 +15,4 @@ research-console-menu-research-points-text = Очки исследований: 
 research-console-menu-server-selection-button = Список серверов
 research-console-menu-server-sync-button = Синхронизировать
 research-console-no-access-popup = Нет доступа!
+research-console-unlock-technology-radio-broadcast = Открыто исследование [bold]{$technology}[/bold] за [bold]{$amount}[/bold] Очков технологий

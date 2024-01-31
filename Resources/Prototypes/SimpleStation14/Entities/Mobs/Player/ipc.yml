@@ -4,6 +4,11 @@
   name: Urist McPositronic
   #description: [mob_ipc-desc]
   components:
+  - type: InteractionPopup
+    interactSuccessString: petting-success-ipc
+    #interactFailureString: petting-failure-cleanbot
+    interactSuccessSound:
+      path: /Audio/Ambience/Objects/periodic_beep.ogg
   - type: SiliconEmitSoundOnDrained
     sound: "/Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg"
     interval: 15

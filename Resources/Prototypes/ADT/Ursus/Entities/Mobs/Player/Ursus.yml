@@ -23,7 +23,8 @@
     - type: CanHostGuardian
     - type: NpcFactionMember
       factions:
-        - NanoTrasen
+        #- NanoTrasen
+        - SimpleHostile
     - type: Respirator
       damage:
         types:
