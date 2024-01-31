@@ -1,0 +1,146 @@
+#крести
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardSpades2
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: spades2-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardSpades3
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: spades3-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardSpades4
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: spades4-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardSpades5
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: spades5-on }
+          Off: { state: back-off }
+
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardSpades6
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: spades6-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardSpades7
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: spades7-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardSpades8
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: spades8-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardSpades9
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: spades9-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardSpades10
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: spades10-on }
+          Off: { state: back-off }
+
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardAceOfSpades
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: aceofspades-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardJackOfSpades
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: jackofspades-on }
+          Off: { state: back-off }
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardKingOfSpades
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: kingofspades-on }
+          Off: { state: back-off }
+
+
+- type: entity
+  parent: ADTFunCardBase
+  id: ADTFunCardQueenOfSpades
+  components:
+  - type: GenericVisualizer
+    visuals:
+      enum.TrayScannerVisual.Visual:
+        base:
+          On: { state: queenofspades-on }
+          Off: { state: back-off }
