@@ -24,32 +24,147 @@
 - type: entity
   name: wand of vulpkanin polymorph
   parent: WeaponWandPolymorphBase
-  id: ADTWeaponWandPolymorphVulpkanin
+  id: ADTWeaponPulseCarabinUSSP
   description: For when you need a monkey friend.
   components:
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Guns/Battery/secretsUSSPLaser.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: BasicEntityAmmoProvider
     proto: ADTProjectilePolyboltVulpkanin
-    capacity: 2
-    count: 5
-
+    #fireCost: 10
+    capacity: 10
+    # count: 5
+  # - type: Battery
+  #   maxCharge: 2000
+  #   startingCharge: 2000
 
 # - type: entity
-#   name: svalinn laser pistol
-#   parent: BaseWeaponPowerCellSmall
-#   id: WeaponLaserSvalinn
-#   description: A cheap and widely used laser pistol.
+#   name: pulse pistol
+#   parent: BaseWeaponBatterySmall
+#   id: ADTWeaponPulseCarabinUSSP
+#   description: A state of the art energy pistol favoured as a sidearm by the NT-ERT operatives.
 #   components:
 #   - type: Sprite
-#     sprite: Objects/Weapons/Guns/Battery/svalinn.rsi
+#     sprite: ADT/Objects/Weapons/Guns/Battery/secretsUSSPLaser.rsi
 #     layers:
 #     - state: base
 #       map: ["enum.GunVisualLayers.Base"]
-#     - state: mag-unshaded-4
-#       map: ["enum.GunVisualLayers.MagUnshaded"]
-#       shader: unshaded
+#   - type: Gun
+#     selectedMode: SemiAuto
+#     availableModes:
+#     - SemiAuto
+#     soundGunshot:
+#       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+#   - type: HitscanBatteryAmmoProvider
+#     proto: ADTProjectilePolyboltVulpkanin
+#     fireCost: 200
+#   - type: Battery
+#     maxCharge: 2000
+#     startingCharge: 2000
+
+
+# - type: entity
+#   id: ADTWeaponLasgunUSSP
+#   parent: BaseItem
+#   name: SA-LR36
+#   description: SA-LR36
+#   components:
+#   - type: Sprite
+#     sprite: ADT/Objects/Weapons/Guns/Battery/secretsUSSPLaser.rsi
+#     layers:
+#     - state: base
+#       map: ["enum.GunVisualLayers.Base"]
+#     - state: mag-0
+#       map: ["enum.GunVisualLayers.Mag"]
 #   - type: Item
-#     sprite: Objects/Weapons/Guns/Battery/svalinn.rsi
+#     size: Huge
+#   #- type: AmmoCounter
+#   - type: Gun
+#     fireRate: 2
+#     selectedMode: SemiAuto
+#     availableModes:
+#     - SemiAuto
+#     #- FullAuto
+#     soundGunshot:
+#       path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+#   - type: MagazineAmmoProvider
+#   - type: ItemSlots
+#     slots:
+#       gun_magazine:
+#         name: Magazine
+#         startingItem: ADTLasgunPowerCellUssp
+#         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+#         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+#         whitelist:
+#           tags:
+#             - ADTLasgunPowerCellUssp
+#   - type: Appearance
+#   - type: StaticPrice
+#     price: 1000
+#   - type: ContainerContainer
+#     containers:
+#       gun_magazine: !type:ContainerSlot
 #   - type: MagazineVisuals
 #     magState: mag
-#     steps: 5
+#     steps: 1
 #     zeroVisible: true
+
+# #тэг для магазина лазгана
+# - type: Tag
+#   id: ADTLasgunPowerCellUssp
+
+# - type: entity
+#   name: lasgun power sell
+#   description: lasgun power sell
+#   id: ADTPowerCellLasgunUssp
+#   suffix: Full
+#   parent: BaseItem
+#   components:
+#   - type: Battery
+#     maxCharge: 600
+#     startingCharge: 600
+#     pricePerJoule: 0.15
+#   - type: Sprite
+#     sprite: ADT/Objects/Weapons/Guns/Battery/lasgunbatteryussp.rsi
+#     state: icon
+#   - type: SolutionContainerManager
+#     solutions:
+#       battery:
+#         maxVol: 5
+#   - type: InjectableSolution
+#     solution: battery
+#   - type: DrawableSolution
+#     solution: battery
+#   - type: Extractable
+#     juiceSolution:
+#       reagents:
+#         - ReagentId: Zinc
+#           Quantity: 5
+#   - type: Tag
+#     tags:
+#       - ADTLasgunPowerCellUssp
+#   - type: Appearance
+#   - type: Riggable
+#   - type: HitscanBatteryAmmoProvider
+#     proto: ADTProjectilePolyboltVulpkanin
+#     fireCost: 30
+
+# - type: entity
+#   name: lasgun power sell
+#   description: lasgun power sell
+#   id: ADTPowerCellLasgunEmptyUssp
+#   suffix: Empty
+#   parent: ADTPowerCellLasgunUssp
+#   components:
+#   - type: Battery
+#     maxCharge: 600
+#     startingCharge: 0
