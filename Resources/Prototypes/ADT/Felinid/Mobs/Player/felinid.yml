@@ -16,6 +16,11 @@
     showExamineInfo: true
   - type: Input
     context: "human"
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Critical
+      120: Dead
   - type: MobMover
   - type: InputMover
   - type: Respirator
