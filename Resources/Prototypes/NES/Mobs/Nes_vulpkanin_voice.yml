@@ -4,7 +4,7 @@
   id: VulpHeckaet
   category: Vocal
   chatMessages: [хекает]
-  charTriggers:
+  chatTriggers:
     - кхе
     - кхе.
     - хекает
@@ -101,7 +101,7 @@
 - type: soundCollection
   id: VulpHeckaetSound
   files:
-  - /Audio/ADT/Voice/Vulpakanin/vulpkanin_hekaet1.ogg
+    - /Audio/ADT/Voice/Vulpakanin/vulpkanin_hekaet1.ogg
 
 - type: speechSounds
   id: Vulpa
