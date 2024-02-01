@@ -30,6 +30,9 @@
   - type: Tag
     tags:
     - DoorBumpOpener
+  - type: NightVision
+    isOn: true
+    color: "#e0c8c8FF"
 
 - type: entity
   abstract: true
