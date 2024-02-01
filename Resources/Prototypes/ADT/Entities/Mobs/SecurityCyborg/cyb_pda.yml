@@ -113,7 +113,7 @@
   name: security PDA
   description: Red to hide the stains of passenger blood.
   components:
-  - type: Unremoveable
+  #- type: Unremoveable
   - type: Pda
     id: ADTSecurityCybIDCard
     state: pda-security

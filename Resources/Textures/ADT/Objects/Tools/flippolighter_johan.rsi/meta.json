@@ -8,12 +8,6 @@
     },
     "states": [
       {
-        "name": "icon_map"
-      },
-      {
-        "name": "cheap_icon_base"
-      },
-      {
         "name": "lighter_flame",
         "delays": [
           [

@@ -1,0 +1,64 @@
+- type: listing
+  id: ChangelingDNAExtract
+  name: extract-dna-string
+  description: extract-dna-string-desc
+  productAction: ActionLingStingExtract
+  cost:
+    EvolutionPoints: 3
+  categories:
+  - ChangelingAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: ChangelingArmBlade
+  name: arm-blade
+  description: arm-blade-desc
+  productAction: ActionArmBlade
+  cost:
+    EvolutionPoints: 4
+  categories:
+  - ChangelingAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: ChangelingArmor
+  name: chitinous-armor
+  description: chitinous-armor-desc
+  productAction: ActionLingArmor
+  cost:
+    EvolutionPoints: 4
+  categories:
+  - ChangelingAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: ChangelingChameleonSkin
+  name: chameleon-skin
+  description: chameleon-skin-desc
+  productAction: ActionLingInvisible
+  cost:
+    EvolutionPoints: 3
+  categories:
+  - ChangelingAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: ChangelingEMP
+  name: dissonant-shriek
+  description: dissonant-shriek-desc
+  productAction: ActionLingEMP
+  cost:
+    EvolutionPoints: 2
+  categories:
+  - ChangelingAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1

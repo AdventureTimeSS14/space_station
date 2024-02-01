@@ -1,0 +1,36 @@
+- type: entity
+  name: chemistry bag
+  id: ADTFunCardsBox
+  parent: BaseStorageItem
+  description: A bag for storing chemistry products, such as pills, pill canisters, bottles, and syringes.
+  suffix: Empty
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/box_card.rsi
+    drawdepth: SmallObjects
+    layers:
+    - state: box
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: box-open
+      map: ["enum.StorageVisualLayers.Door"]
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateDoorOpen: box-open
+    stateDoorClosed: box
+  - type: Item
+    sprite: ADT/Objects/Fun/box_card.rsi
+    heldPrefix: box
+    size: Large
+    shape:
+    - 0,0,1,1
+  - type: Storage
+    maxItemSize: Tiny # allow up to 5 large beakers / 10 beakers / 10 pill canisters
+    grid:
+    - 0,0,8,5
+    #     9 6
+    quickInsert: true
+    areaInsert: true
+    whitelist:
+      tags:
+        - ADTCardPlay
+  - type: Dumpable

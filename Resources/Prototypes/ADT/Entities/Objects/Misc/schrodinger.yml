@@ -57,6 +57,53 @@
   - type: StaticPrice
     price: 10000
 
+# - type: entity
+#   name: N1984
+#   parent: BaseWeaponPistol
+#   id: WeaponPistolN1984 # the spaces in description are for formatting.
+#   description: The sidearm of any self respecting officer.     Comes in .45 magnum, the lord's caliber.
+#   components:
+#   - type: StaticPrice
+#     price: 10000
+#   - type: Sprite
+#     sprite: Objects/Weapons/Guns/Pistols/N1984.rsi
+#     layers:
+#     - state: base
+#       map: ["enum.GunVisualLayers.Base"]
+#     - state: mag-0
+#       map: ["enum.GunVisualLayers.Mag"]
+#   - type: Clothing
+#     sprite: Objects/Weapons/Guns/Pistols/N1984.rsi
+#   - type: Gun
+#     minAngle: 1
+#     maxAngle: 20
+#     angleIncrease: 8
+#     angleDecay: 9
+#     fireRate: 4
+#     availableModes:
+#     - SemiAuto
+#     soundGunshot:
+#       path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
+#   - type: ItemSlots
+#     slots:
+#       gun_magazine:
+#         name: Magazine
+#         startingItem: MagazineMagnum
+#         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+#         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+#         priority: 2
+#         whitelist:
+#           tags:
+#             - MagazineMagnum
+#       gun_chamber:
+#         name: Chamber
+#         startingItem: CartridgeMagnum
+#         priority: 1
+#         whitelist:
+#           tags:
+#             - CartridgeMagnum
+
+
 - type: entity
   parent: ClothingNeckBase
   id: ADTClothingNeckMantleCentComm
@@ -85,7 +132,7 @@
   - type: StorageFill
     contents:
     - id: ADTCigarSchrodingerCase
-    - id: FlippoEngravedLighter
+    - id: FlippoSchrodingerLighter
     - id: SpeedLoaderMagnum
   - type: Armor
     modifiers:

@@ -96,6 +96,7 @@
       - id: MagazinePistolHighCapacity
       - id: WeaponPistolViper
       - id: MedicatedSuture
+      - id: ADTAdvancedHoloprojectorField
 
 - type: entity
   id: ADTClothingBeltMilitaryWebbingRPSL_Rev
