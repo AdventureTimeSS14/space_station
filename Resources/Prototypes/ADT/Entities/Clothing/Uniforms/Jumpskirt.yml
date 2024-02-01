@@ -736,6 +736,7 @@
     sprite: ADT/Clothing/Uniforms/Jumpskirt/snow_maiden.rsi #Спрайты от prazat911
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/snow_maiden.rsi
+
 #Medical
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -755,6 +756,17 @@
   description: A lightweight jumpskirt for a morgue worker
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpskirt/genetics.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/pathologist.rsi
   - type: Clothing
-    sprite: Clothing/6Uniforms/Jumpskirt/genetics.rsi
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/pathologist.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformPathologistSkirtAlt
+  name: pathologist jumpskirt
+  description: A lightweight jumpskirt for a morgue worker. A darker version.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/pathologist_alt.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/pathologist_alt.rsi

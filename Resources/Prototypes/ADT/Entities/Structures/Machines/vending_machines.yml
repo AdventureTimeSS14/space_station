@@ -98,7 +98,6 @@
     energy: 1.6
     color: "#1ca9d4"
 
-
 - type: entity
   parent: VendingMachine
   id: ADTVendingMachinePill
@@ -180,6 +179,37 @@
     pack: MediDrobeAds
   - type: Sprite
     sprite: ADT/Structures/Machines/VendingMachines/paradrobe.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: AccessReader
+    access: [["Medical"]]
+  - type: PointLight
+    radius: 1.8
+    energy: 1.6
+    color: "#1ca9d4"
+
+
+- type: entity
+  parent: VendingMachine
+  id: VendingMachinePatholoDrobe
+  name: PatholoDrobe
+  description: A vending machine that dispences new clothing for pathologists.
+  components:
+  - type: VendingMachine
+    pack: PatholodrobeInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: Advertise
+    pack: PatholodrobeAds
+  - type: Sprite
+    sprite: ADT/Structures/Machines/VendingMachines/patholodrobe.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]

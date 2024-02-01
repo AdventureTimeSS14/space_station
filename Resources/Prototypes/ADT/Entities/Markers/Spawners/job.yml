@@ -131,3 +131,15 @@
       state: miner
     - sprite: Mobs/Silicon/chassis.rsi
       state: miner_e
+
+- type: entity
+  id: SpawnPointADTPathologist
+  parent: SpawnPointJobBase
+  name: pathologist
+  components:
+  - type: SpawnPoint
+    job_id: ADTPathologist
+  - type: Sprite
+    layers:
+      - state: green
+      - state: geneticist

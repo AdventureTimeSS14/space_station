@@ -580,17 +580,6 @@
 # medical update
 - type: entity
   parent: ClothingHeadBase
-  id: ADTClothingHeadHatsPathologistsCap
-  name: pathologist cap
-  description: A medical cap to cover your head while examining a dead body.
-  components:
-  - type: Sprite
-    sprite: Clothing/Head/Hats/surgcap_blue.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Hats/surgcap_blue.rsi
-
-- type: entity
-  parent: ClothingHeadBase
   id: ADTClothingHeadHatsMedicalBeret
   name: medical beret
   description: A white beret with carefully sewn cross. Smells like familliar ethanol.
@@ -623,7 +612,7 @@
   description: An hood for pathologists that protects the head and face from biological contaminants.
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Head/Hats/hood_pathologist.rsi #заменить текстурки.
+    sprite: ADT/Clothing/Head/Hats/hood_pathologist.rsi 
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/hood_pathologist.rsi
 
@@ -635,6 +624,6 @@
   description: An hood for paramedics that protects the head and face from biological contaminants.
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Head/Hats/hood_paramedic.rsi 
+    sprite: ADT/Clothing/Head/Hats/hood_paramedic.rsi #спрайты от prazat911
   - type: Clothing
-    sprite: ADT/Clothing/Head/Hats/hood_paramedic.rsi
+    sprite: ADT/Clothing/Head/Hats/hood_paramedic.rsi 

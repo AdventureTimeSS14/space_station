@@ -5,7 +5,7 @@
   description: A suit that protects against biological contamination while working with dead bodies.
   components:
   - type: Sprite
-    sprite: ADT/Clothing/OuterClothing/Suits/bio_pathologist.rsi #заменить на новые.
+    sprite: ADT/Clothing/OuterClothing/Suits/bio_pathologist.rsi 
   - type: Clothing
     sprite: ADT/Clothing/OuterClothing/Suits/bio_pathologist.rsi
 

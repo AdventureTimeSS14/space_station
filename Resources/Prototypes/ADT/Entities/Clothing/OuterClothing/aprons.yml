@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ADTClothingOuterApronBar
+  name: bartender apron
+  description: An apron-jacket used by a bartender.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Misc/apronbar.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Misc/apronbar.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ADTClothingOuterApronPathologist
+  name: pathologist's apron
+  description: An apron used by pathologists.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Misc/apron_pathologist.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Misc/apron_pathologist.rsi

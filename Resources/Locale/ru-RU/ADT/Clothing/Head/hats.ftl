@@ -165,11 +165,6 @@ ent-ADTClothingHeadSportRoseCap = кепка STEP "Rose"
 ent-ADTClothingHeadSportHatStep = cпортивная шапка-пипо "STEP"
     .desc = Футуристичная шапка-пипо серии "STEP" в полоску.
 
-    
-ent-ADTClothingHeadHatsPathologistsCap = шапочка патологоанатома
-    .desc = медицинская шапочка, которой прикрывают голову при осмотре трупов.
-    .suffix = { "" }
-
 ent-ADTClothingHeadHatsParamedicBeret = берет парамедика
     .desc = Берет, связанный с постоянной медицинской работой.
 
