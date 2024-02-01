@@ -4,7 +4,7 @@
   description: extract-dna-string-desc
   productAction: ActionLingStingExtract
   cost:
-    EvolutionPoints: 3
+    EvolutionPoints: 4
   categories:
   - ChangelingAbilities
   conditions:
@@ -17,7 +17,7 @@
   description: arm-blade-desc
   productAction: ActionArmBlade
   cost:
-    EvolutionPoints: 4
+    EvolutionPoints: 6
   categories:
   - ChangelingAbilities
   conditions:
@@ -30,7 +30,7 @@
   description: chitinous-armor-desc
   productAction: ActionLingArmor
   cost:
-    EvolutionPoints: 4
+    EvolutionPoints: 6
   categories:
   - ChangelingAbilities
   conditions:
@@ -43,7 +43,7 @@
   description: chameleon-skin-desc
   productAction: ActionLingInvisible
   cost:
-    EvolutionPoints: 3
+    EvolutionPoints: 4
   categories:
   - ChangelingAbilities
   conditions:

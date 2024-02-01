@@ -24,6 +24,8 @@ using Robust.Shared.Serialization.Manager;
 using Content.Shared.Alert;
 using Content.Shared.Stealth.Components;
 using Content.Shared.Nutrition.Components;
+using Content.Shared.Hands.Components;
+using Content.Server.Hands.Systems;
 
 namespace Content.Server.Changeling.EntitySystems;
 
@@ -263,6 +265,43 @@ public sealed partial class ChangelingSystem : EntitySystem
         }
         else
         {
+            if (!TryComp(uid, out HandsComponent? handsComponent))
+                return;
+            if (handsComponent.ActiveHand == null)
+                return;
+
+            var handContainer = handsComponent.ActiveHand.Container;
+
+            if (handContainer == null)
+                return;
+
+            args.Handled = true;
+
+            if (!component.ArmBladeActive)
+            {
+                return;
+            }
+            else
+            {
+                if (handContainer.ContainedEntity != null)
+                {
+                    if (TryComp<MetaDataComponent>(handContainer.ContainedEntity.Value, out var targetMeta))
+                    {
+                        if (TryPrototype(handContainer.ContainedEntity.Value, out var prototype, targetMeta))
+                        {
+                            if (prototype.ID == ArmBladeId)
+                            {
+                                component.ArmBladeActive = false;
+                                QueueDel(handContainer.ContainedEntity.Value);
+                                _audioSystem.PlayPvs(component.SoundFlesh, uid);
+
+                            }
+                        }
+                    }
+                }
+            }
+
+
             if (!TryUseAbility(uid, component, component.ChemicalsCostFive))
                 return;
 

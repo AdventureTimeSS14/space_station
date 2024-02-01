@@ -150,6 +150,9 @@ public sealed partial class ChangelingSystem
                 }
             }
 
+            _store.TryAddCurrency(new Dictionary<string, FixedPoint2>
+            { {EvolutionPointsCurrencyPrototype, component.AbsorbedMobPointsAmount} }, uid);
+
             // give them 200 genetic damage and remove all of their blood
             var dmg = new DamageSpecifier(_proto.Index(GeneticDamageGroup), component.AbsorbGeneticDmg);
             _damageableSystem.TryChangeDamage(target, dmg);
