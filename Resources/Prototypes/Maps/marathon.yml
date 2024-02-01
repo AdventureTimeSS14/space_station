@@ -78,3 +78,4 @@
             SeniorPhysician: [ 1, 1 ]
             SeniorResearcher: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ]
+            ADTRoboticist: [ 2, 2 ] #ADT
