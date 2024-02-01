@@ -481,6 +481,14 @@ public sealed partial class ChangelingSystem
             return;
         }
 
+        if (!HasComp<DnaComponent>(target))
+        {
+            var selfMessageFailNoHuman = Loc.GetString("changeling-dna-sting-fail-nodna", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessageFailNoHuman, uid, uid);
+            return;
+        }
+
+
         if (!TryUseAbility(uid, component, component.ChemicalsCostTwentyFive))
             return;
 

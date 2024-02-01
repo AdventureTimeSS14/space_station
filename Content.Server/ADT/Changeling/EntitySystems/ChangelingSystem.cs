@@ -263,44 +263,19 @@ public sealed partial class ChangelingSystem : EntitySystem
             var selfMessage = Loc.GetString("changeling-transform-fail", ("target", selectedHumanoidData.MetaDataComponent.EntityName));
             _popup.PopupEntity(selfMessage, uid, uid);
         }
+        if (component.LingArmorActive)
+        {
+            var selfMessage = Loc.GetString("changeling-transform-fail", ("target", selectedHumanoidData.MetaDataComponent.EntityName));
+            _popup.PopupEntity(selfMessage, uid, uid);
+        }
+        if (component.ArmBladeActive)
+        {
+            var selfMessage = Loc.GetString("changeling-transform-fail", ("target", selectedHumanoidData.MetaDataComponent.EntityName));
+            _popup.PopupEntity(selfMessage, uid, uid);
+        }
+
         else
         {
-            if (!TryComp(uid, out HandsComponent? handsComponent))
-                return;
-            if (handsComponent.ActiveHand == null)
-                return;
-
-            var handContainer = handsComponent.ActiveHand.Container;
-
-            if (handContainer == null)
-                return;
-
-            args.Handled = true;
-
-            if (!component.ArmBladeActive)
-            {
-                return;
-            }
-            else
-            {
-                if (handContainer.ContainedEntity != null)
-                {
-                    if (TryComp<MetaDataComponent>(handContainer.ContainedEntity.Value, out var targetMeta))
-                    {
-                        if (TryPrototype(handContainer.ContainedEntity.Value, out var prototype, targetMeta))
-                        {
-                            if (prototype.ID == ArmBladeId)
-                            {
-                                component.ArmBladeActive = false;
-                                QueueDel(handContainer.ContainedEntity.Value);
-                                _audioSystem.PlayPvs(component.SoundFlesh, uid);
-
-                            }
-                        }
-                    }
-                }
-            }
-
 
             if (!TryUseAbility(uid, component, component.ChemicalsCostFive))
                 return;
@@ -353,8 +328,6 @@ public sealed partial class ChangelingSystem : EntitySystem
             if (newLingComponent.LingArmorActive)
                 SpawnLingArmor(transformedUid.Value, inventory);
 
-            if (newLingComponent.ArmBladeActive)
-                SpawnArmBlade(transformedUid.Value);
         }
     }
 }
