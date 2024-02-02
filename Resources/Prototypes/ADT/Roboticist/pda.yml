@@ -1,0 +1,26 @@
+- type: entity
+  parent: BasePDA
+  id: ADTRoboticistPDA
+  name: roboticist PDA
+  description: It's covered with an unknown gooey substance.
+  components:
+  - type: Pda
+    id: ResearchIDCard
+    state: pda-roboticist
+  - type: PdaBorderColor
+    borderColor: "#171716"
+    accentVColor: "#d90000"
+  - type: Icon
+    state: pda-roboticist
+
+- type: entity
+  parent: IDCardStandard
+  id: ADTRoboticistIDCard
+  name: roboticist ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idroboticist
+  - type: PresetIdCard
+    job: ADTRoboticist

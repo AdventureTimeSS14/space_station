@@ -77,3 +77,4 @@
             ADTMedicalBorg: [ 1, 1 ] #ADT
             ADTServiseBorg: [ 1, 1 ] #ADT
             ADTSupplyBorg: [ 1, 1 ] #ADT
+            ADTRoboticist: [ 1, 1 ] #ADT
