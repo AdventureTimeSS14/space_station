@@ -112,6 +112,7 @@
   - type: AutoImplant
     implants:
     - DeathAcidifierImplant
+    - FreedomImplant
   - type: ZombieImmune
 
 - type: entity
@@ -194,7 +195,7 @@
     damage:
       types:
         Blunt: 15
-        Structural: 5
+        Structural: 10
   - type: Puller
     needsHands: false
   - type: Prying

@@ -11,3 +11,27 @@
   - type: Sprite
     sprite: ADT/Objects/Misc/bureaucracy.rsi
     state: stamp-investigator
+
+- type: entity
+  name: DENIED rubber stamp
+  parent: RubberStampBaseAlt
+  id: ADTRubberStampUSSP
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-ussp
+    stampedColor: "#cc0000"
+    stampState: "paper_stamp-hos"
+  - type: Sprite
+    state: stamp-deny
+
+- type: entity
+  name: DENIED rubber stamp
+  parent: RubberStampBaseAlt
+  id: ADTRubberStampDorabotat
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-dorabotat
+    stampedColor: "#1f66a0"
+    stampState: "paper_stamp-hos"
+  - type: Sprite
+    state: stamp-deny

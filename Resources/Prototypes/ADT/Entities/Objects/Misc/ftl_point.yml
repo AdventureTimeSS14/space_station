@@ -1,0 +1,18 @@
+- type: Tag
+  id: ADTWinterPlanet
+
+- type: entity
+  id: ADTFTLPointWinterMap
+  parent: MarkerBase
+  name: Winter Planet
+  components:
+    # - whitelist:
+    #     tags:
+    #     - ADTNanoTrasen
+    - whitelist:
+        tags:
+          - ADTWinterPlanet
+      type: FTLDestination
+    #- type: FTLDestination
+    - type: Sprite
+      state: pink
