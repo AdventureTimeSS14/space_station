@@ -327,7 +327,7 @@
     impactEffect: BulletImpactEffectLaser
     damage:
       types:
-        Heat: 20
+        Heat: 30
     soundHit:
       path: "/Audio/Weapons/tap.ogg"
 

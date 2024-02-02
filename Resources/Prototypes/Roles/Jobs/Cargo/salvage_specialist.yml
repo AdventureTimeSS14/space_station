@@ -10,7 +10,7 @@
 #    - !type:OverallPlaytimeRequirement
 #      time: 36000 #10 hrs
   icon: "JobIconShaftMiner"
-  startingGear: NesSalvagerGear #Чуть измененный уник
+  startingGear: SalvageSpecialistGear
   supervisors: job-supervisors-qm
   access:
   - Cargo

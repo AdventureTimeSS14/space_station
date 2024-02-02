@@ -112,11 +112,7 @@
     butcheringType: Spike # TODO human.
     spawned:
       - id: FoodMeat
-<<<<<<< HEAD
       - id: ClothingHeadHatCatEars
-=======
-        amount: 5
->>>>>>> 34b9259859aa3462e01a15c10686cef0005c6cb9
 
 - type: entity
   save: false

@@ -1,6 +1,6 @@
 - type: tile
   id: NesFloorPlanetDirtArtificial
-  name: tiles-dirt-floor
+  name: tiles-dirt-floor-artifical
   sprite: /Textures/Tiles/Planet/dirt.rsi/dirt.png
   canCrowbar: false
   footstepSounds:
@@ -12,7 +12,7 @@
 # Desert
 - type: tile
   id: NesFloorDesertArtificial
-  name: tiles-desert-floor
+  name: tiles-desert-floor-artifical
   sprite: /Textures/Tiles/Planet/Desert/desert.png
   variants: 6
   placementVariants:
@@ -31,7 +31,7 @@
 
 - type: tile
   id: NesFloorLowDesertArtificial
-  name: tiles-low-desert-floor
+  name: tiles-low-desert-floor-artifical
   sprite: /Textures/Tiles/Planet/Desert/low_desert.png
   variants: 6
   placementVariants:
@@ -51,7 +51,7 @@
 # Grass
 - type: tile
   id: NesFloorPlanetGrassArtificial
-  name: tiles-grass-planet-floor
+  name: tiles-grass-planet-floor-artifical
   sprite: /Textures/Tiles/Planet/Grass/grass.png
   variants: 4
   placementVariants:
@@ -81,7 +81,7 @@
 # Lava
 - type: tile
   id: NesFloorBasaltArtificial
-  name: tiles-basalt-floor
+  name: tiles-basalt-floor-artifical
   sprite: /Textures/Tiles/Planet/basalt.png
   canCrowbar: false
   footstepSounds:
@@ -93,7 +93,7 @@
 # Snow
 - type: tile
   id: NesFloorSnowArtificial
-  name: tiles-snow
+  name: tiles-snow-artifical
   sprite: /Textures/Tiles/Planet/Snow/snow.png
   variants: 13
   placementVariants:
@@ -126,7 +126,7 @@
 # Ice
 - type: tile
   id: NesFloorIceArtificial
-  name: tiles-ice
+  name: tiles-ice-artifical
   sprite: /Textures/Tiles/Planet/Snow/ice.png
   canCrowbar: false
   friction: 0.05
@@ -140,7 +140,7 @@
 # Dug snow
 - type: tile
   id: NesFloorSnowDugArtificial
-  name: tiles-snow-dug
+  name: tiles-snow-dug-artifical
   sprite: /Textures/Tiles/Planet/Snow/snow_dug.png
   edgeSpritePriority: 1
   edgeSprites:
