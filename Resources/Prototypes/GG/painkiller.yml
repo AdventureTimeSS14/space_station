@@ -13,9 +13,9 @@
 
 - type: reagent
   id: Morphine
-  name: Morphine
+  name: reagent-name-morphine
   group: Medicine
-  desc: Morphine
+  desc: reagent-desc-morphine
   physicalDesc: reagent-physical-desc-viscous
   flavor: medicine
   color: "#ba7d7d"
