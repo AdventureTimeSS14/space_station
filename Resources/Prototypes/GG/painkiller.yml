@@ -32,12 +32,11 @@
     Medicine:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 1
         damage:
           groups:
             Brute: -0.1
-      conditions:
-      - !type:ReagentThreshold
-        min: 1
-      damage:
-        types:
-          Brute: 0.1
+
+
