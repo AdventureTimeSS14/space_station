@@ -29,6 +29,8 @@
         type: Add
         time: 60
         refresh: true
+    Medicine:
+      effects:
       - !type:HealthChange
         damage:
           groups:
