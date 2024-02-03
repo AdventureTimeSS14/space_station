@@ -6,13 +6,9 @@
   parent: MarkerBase
   name: Winter Planet
   components:
-    # - whitelist:
-    #     tags:
-    #     - ADTNanoTrasen
     - whitelist:
         tags:
           - ADTWinterPlanet
       type: FTLDestination
-    #- type: FTLDestination
     - type: Sprite
       state: pink
