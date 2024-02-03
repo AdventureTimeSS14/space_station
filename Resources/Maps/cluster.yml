@@ -3012,13 +3012,9 @@ entities:
             1227: -40,21
             1228: -40,22
             1229: -40,23
-<<<<<<< HEAD
-            1266: -6,52
-=======
             1263: -6,52
             1477: -4,-30
             1478: -4,-29
->>>>>>> upstream/master
         - node:
             color: '#FFFFFFFF'
             id: WarnLineN
@@ -3072,17 +3068,11 @@ entities:
             854: -25,-1
             855: -25,-2
             856: -25,-3
-<<<<<<< HEAD
-            1264: -8,52
-            1404: -12,-53
-            1405: -12,-54
-=======
             1261: -8,52
             1401: -12,-53
             1402: -12,-54
             1475: -2,-30
             1476: -2,-29
->>>>>>> upstream/master
         - node:
             color: '#FFFFFFFF'
             id: WarnLineW
@@ -3144,12 +3134,7 @@ entities:
             251: -1,12
             252: -4,8
             253: 3,12
-<<<<<<< HEAD
-            1239: -8,-27
-            1240: -4,-27
-=======
             1237: -8,-27
->>>>>>> upstream/master
         - node:
             color: '#FFFFFFFF'
             id: WoodTrimThinInnerSw
@@ -3157,12 +3142,7 @@ entities:
             248: 6,8
             249: -1,12
             250: 3,12
-<<<<<<< HEAD
-            1237: -6,-27
-            1238: -2,-27
-=======
             1236: -6,-27
->>>>>>> upstream/master
         - node:
             color: '#FFFFFFFF'
             id: WoodTrimThinLineE

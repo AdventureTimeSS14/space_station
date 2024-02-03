@@ -3,40 +3,6 @@ meta:
   postmapinit: false
 tilemap:
   0: Space
-<<<<<<< HEAD
-  4: FloorArcadeBlue2
-  13: FloorAsteroidTile
-  16: FloorBar
-  19: FloorBlueCircuit
-  21: FloorBrokenWood
-  22: FloorCarpetClown
-  27: FloorClown
-  31: FloorDark
-  36: FloorDarkMono
-  37: FloorDarkOffset
-  46: FloorFreezer
-  56: FloorGreenCircuit
-  60: FloorHydro
-  62: FloorKitchen
-  64: FloorLino
-  67: FloorMime
-  79: FloorReinforced
-  82: FloorShowroom
-  89: FloorSnow
-  91: FloorSteel
-  98: FloorSteelDirty
-  99: FloorSteelHerringbone
-  102: FloorSteelMono
-  106: FloorTechMaint
-  107: FloorTechMaint2
-  108: FloorTechMaint3
-  110: FloorWhite
-  115: FloorWhiteMono
-  119: FloorWhitePlastic
-  120: FloorWood
-  121: FloorWoodTile
-  123: Plating
-=======
   2: FloorArcadeBlue2
   11: FloorAsteroidTile
   14: FloorBar
@@ -69,7 +35,6 @@ tilemap:
   118: FloorWood
   119: FloorWoodTile
   121: Plating
->>>>>>> upstream/master
 entities:
 - proto: ""
   entities:
