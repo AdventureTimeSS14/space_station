@@ -24,7 +24,7 @@
   components:
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 40
+    autoRechargeRate: 10
   - type: Sprite
     sprite: ADT/Mobs/Silicon/Cyborg/cyb_gun.rsi
     scale: 0.9, 0.9
