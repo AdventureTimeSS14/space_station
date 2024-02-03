@@ -61,6 +61,9 @@ ent-ADTClothingOuterBioPathologist = защитный костюм патоло�
 ent-ADTClothingOuterApronPathologist = фартук патологоанатома
     .desc = Фартук для работы с трупами.
 
+ent-ADTClothingOuterCoatLabPathologist = халат патологоанатома
+    .desc = { ent-ClothingOuterCoatLab.desc }
+
 ent-ADTClothingOuterCoatHikeLabcoatCmo = походный халат главного врача
     .desc = Частично открытый халат. Не сковывает движения.
 

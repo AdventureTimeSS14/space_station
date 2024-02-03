@@ -8,8 +8,8 @@ ent-ADTVendingMachineMasterSportDrobe = СпортМастерШкаф
 ent-ADTVendingMachinePill = ТаблеткоМат
     .desc = (Почти) практическое решение всех ваших болячек.
 
-ent-ADTVendingMachinePatholodrobe = ПатологоШкаф
+ent-ADTVendingMachinePatholoDrobe = ПатологоШкаф
     .desc = Самая стильная одежда в самом отдалёном месте медицинского отдела.
 
-ent-VendingMachineParaDrobe = ПараШкаф
+ent-ADTVendingMachineParaDrobe = ПараШкаф
     .desc = Стильная одежда для экстренных медицинских вызовов.

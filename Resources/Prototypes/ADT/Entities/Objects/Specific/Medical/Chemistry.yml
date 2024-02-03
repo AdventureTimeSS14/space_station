@@ -27,7 +27,7 @@
         amount: 10
   - type: GuideHelp
     guides: 
-    - Medical Doctor # заменитт на врачебный
+    - Medical Doctor 
 
 - type: entity
   name: agolatine canister
@@ -46,7 +46,7 @@
         amount: 10
   - type: GuideHelp
     guides: 
-    - Medical Doctor # заменить на врачебный
+    - Medical Doctor 
 
 # бутылочка (не разбивающаяся)
 - type: entity
@@ -505,17 +505,19 @@
   description: It's plastic a box with foot tags inside.
   components:
   - type: Storage
-    capacity: 15
+    maxItemSize: Small
+    grid:
+    - 0,0,2,1
   - type: StorageFill
     contents:
       - id: ADTFootTag
-        amount: 15
+        amount: 6
   - type: Sprite
     sprite: ADT/Objects/Specific/Medical/foot-tag-box.rsi
     state: icon
   - type: Item
     sprite: ADT/Objects/Specific/Medical/foot-tag-box.rsi 
-    size: 15
+    size: Normal 
   - type: PhysicalComposition
     materialComposition:
       Cardboard: 50
@@ -575,8 +577,9 @@
   description: It's plastic a box with small syringes inside.
   components:
   - type: Storage
-    maxTotalWeight: 6
     maxItemSize: Small
+    grid:
+    - 0,0,2,1
   - type: StorageFill
     contents:
       - id: ADTSmallSyringe

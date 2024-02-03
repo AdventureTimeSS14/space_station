@@ -134,7 +134,7 @@
 
 - type: entity
   id: SpawnPointADTPathologist
-  parent: SpawnPointJobBase
+  parent: ADTSpawnPointJobBase
   name: pathologist
   components:
   - type: SpawnPoint
@@ -142,4 +142,4 @@
   - type: Sprite
     layers:
       - state: green
-      - state: geneticist
+      - state: pathologist

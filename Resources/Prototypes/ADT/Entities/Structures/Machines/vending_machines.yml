@@ -166,7 +166,7 @@
 
 - type: entity
   parent: VendingMachine
-  id: VendingMachineParaDrobe
+  id: ADTVendingMachineParaDrobe
   name: ParaDrobe
   description: A vending machine that dispences new clothing for paramedics.
   components:
@@ -197,7 +197,7 @@
 
 - type: entity
   parent: VendingMachine
-  id: VendingMachinePatholoDrobe
+  id: ADTVendingMachinePatholoDrobe
   name: PatholoDrobe
   description: A vending machine that dispences new clothing for pathologists.
   components:

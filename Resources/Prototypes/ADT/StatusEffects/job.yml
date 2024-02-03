@@ -24,4 +24,4 @@
   id: JobIconADTPathologist
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: CustomId
+    state: JobIconADTPathologist

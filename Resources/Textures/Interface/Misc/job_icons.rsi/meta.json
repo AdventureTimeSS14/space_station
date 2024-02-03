@@ -10,9 +10,9 @@
     {
       "name": "CustomId"
     },
-      {
-          "name": "JobIconBorg"
-      },
+    {
+      "name": "JobIconBorg"
+    },
     {
       "name": "JobIconDetective"
     },
@@ -178,23 +178,23 @@
     {
         "name": "JobIconADTInvestigator"
     },
-      {
-          "name": "Revolutionary"
-      },
-      {
-          "name": "HeadRevolutionary"
-      },
-      {
-          "name": "Syndicate"
-      },
-      {
-          "name": "MindShield"
-      },
-      {
-        "name": "JobADTIconSecurityCyborg"
-      },
-      {
-        "name": "JobIconADTPathologist"
-      }
+    {
+        "name": "Revolutionary"
+    },
+    {
+        "name": "HeadRevolutionary"
+    },
+    {
+        "name": "Syndicate"
+    },
+    {
+        "name": "MindShield"
+    },
+    {
+      "name": "JobIconADTPathologist"
+    },
+    {
+      "name": "JobADTIconSecurityCyborg"
+    }
   ]
 }
