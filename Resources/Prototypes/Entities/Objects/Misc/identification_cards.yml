@@ -661,6 +661,7 @@
     - JobIconServiceWorker
     - JobIconSecurityCadet
     - JobIconZookeeper
+    - JobIconVisitor
     - JobIconSeniorPhysician
     - JobIconSeniorOfficer
     - JobIconSeniorEngineer

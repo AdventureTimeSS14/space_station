@@ -38,6 +38,7 @@
     - type: Appearance
     - type: Battery
       startingCharge: 0
+      maxCharge: 8000000
     - type: ExaminableBattery
     - type: NodeContainer
       examinable: true

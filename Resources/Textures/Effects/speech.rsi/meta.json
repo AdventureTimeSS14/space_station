@@ -226,6 +226,23 @@
             ]
         },
         {
+            "name": "lizard0",
+            "delays": [
+                [
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.4
+                ]
+            ]
+        },
+        {
+            "name": "lizard1"
+        },
+        {
+            "name": "lizard2"
+        },
+        {
             "name": "moth0",
             "delays": [
                 [

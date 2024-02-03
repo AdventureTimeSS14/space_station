@@ -54,6 +54,8 @@ namespace Content.Client.Chemistry.UI
                 return;
 
             ChemicalList.Children.Clear();
+            //Sort inventory by reagentLabel
+            inventory.Sort((x, y) => x.Value.Key.CompareTo(y.Value.Key));
 
             foreach (var entry in inventory
                 .OrderBy(r => {_prototypeManager.TryIndex(r.Prototype, out ReagentPrototype? p); return p?.LocalizedName;}))

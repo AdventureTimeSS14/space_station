@@ -431,6 +431,8 @@
     items:
     - AnomalyScanner
     - AnomalyLocatorUnpowered
+    - RemoteSignaller
+    - Multitool
 
 # service modules
 - type: entity

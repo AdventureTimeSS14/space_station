@@ -22,7 +22,21 @@ public sealed class GuideEntryPrototypeTests
         var resMan = client.ResolveDependency<IResourceManager>();
         var parser = client.ResolveDependency<DocumentParsingManager>();
         var prototypes = protoMan.EnumeratePrototypes<GuideEntryPrototype>().ToList();
-        //TODO: xTray отключено
+
+        foreach (var proto in prototypes)
+        {
+            await client.WaitAssertion(() =>
+            {
+                using var reader = resMan.ContentFileReadText(proto.Text);
+                var text = reader.ReadToEnd();
+                Assert.That(parser.TryAddMarkup(new Document(), text), $"Failed to parse guidebook: {proto.Id}");
+            });
+
+            // Avoid styleguide update limit
+            await client.WaitRunTicks(1);
+        }
+
+        //TODO: xTray отключено (cо старого апстрима, включить если говно польется)
         // await client.WaitAssertion(() =>
         // {
         //     Assert.Multiple(() =>
@@ -35,7 +49,6 @@ public sealed class GuideEntryPrototypeTests
         //         }
         //     });
         // });
-
         await pair.CleanReturnAsync();
     }
 }

@@ -10,6 +10,7 @@
       - Fruit
     #  - Meat
       - Pill
+      - Paper
   - type: SolutionContainerManager
     solutions:
       stomach:

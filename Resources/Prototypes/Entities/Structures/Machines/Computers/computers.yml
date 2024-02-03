@@ -552,6 +552,8 @@
       path: /Audio/Corvax/Announcements/announce.ogg
       params:
         volume: -5
+  - type: DeviceNetwork
+    transmitFrequencyId: ShuttleTimer
   - type: ActivatableUI
     key: enum.CommunicationsConsoleUiKey.Key
   - type: UserInterface

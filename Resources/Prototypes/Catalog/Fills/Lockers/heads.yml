@@ -233,7 +233,6 @@
       - id: ClothingHeadHatBeretCmo
       - id: ClothingOuterHardsuitMedical
       - id: Hypospray
-      - id: HandheldCrewMonitor
       - id: DoorRemoteMedical
       - id: RubberStampCMO
       - id: ADTtelescopicBaton
@@ -269,7 +268,6 @@
       - id: ClothingMaskSterile
       - id: ClothingHeadHatBeretCmo
       - id: Hypospray
-      - id: HandheldCrewMonitor
       - id: DoorRemoteMedical
       - id: RubberStampCMO
       - id: ADTtelescopicBaton
@@ -310,6 +308,7 @@
       - id: ADTtelescopicBaton
       - id: ClothingHeadsetAltScience
       - id: BoxEncryptionKeyScience
+      - id: EncryptionKeyBinary
       - id: BoxEncryptionKeyRobo
       # Sirena-Underwear-Start
       - id: ADTUnderwearBoxRD
@@ -336,6 +335,7 @@
       - id: RubberStampRd
       - id: ClothingHeadsetAltScience
       - id: BoxEncryptionKeyScience
+      - id: EncryptionKeyBinary
       - id: BoxEncryptionKeyRobo
       # Sirena-Underwear-Start
       - id: ADTUnderwearBoxRD
