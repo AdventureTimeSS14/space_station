@@ -166,7 +166,7 @@
     - type: Tag
       tags:
         - ADTWinterPlanet
-    #end-whitelist-for-winter-planet
+    #start-whitelist-for-winter-planet    В будущем можно будет убрать
     - type: RadarConsole
       maxRange: 256
     - type: PointLight
