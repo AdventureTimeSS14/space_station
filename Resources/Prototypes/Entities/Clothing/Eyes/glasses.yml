@@ -183,6 +183,7 @@
     sprite: Clothing/Eyes/Glasses/outlawglasses.rsi
   - type: VisionCorrection
   - type: IdentityBlocker
+    coverage: EYES
 
 - type: entity
   parent: ClothingEyesGlasses
@@ -201,6 +202,8 @@
     tags:
     - HamsterWearable
     - WhitelistChameleon
+  - type: IdentityBlocker
+    coverage: EYES
 
 - type: entity
   parent: ClothingEyesGlasses
@@ -224,6 +227,8 @@
     guides:
     - Security
   - type: ShowSecurityIcons
+  - type: IdentityBlocker
+    coverage: EYES
 
 - type: entity
   parent: ClothingEyesGlasses
