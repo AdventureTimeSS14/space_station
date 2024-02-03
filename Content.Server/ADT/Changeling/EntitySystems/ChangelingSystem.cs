@@ -24,6 +24,8 @@ using Robust.Shared.Serialization.Manager;
 using Content.Shared.Alert;
 using Content.Shared.Stealth.Components;
 using Content.Shared.Nutrition.Components;
+using Content.Shared.Hands.Components;
+using Content.Server.Hands.Systems;
 
 namespace Content.Server.Changeling.EntitySystems;
 
@@ -261,8 +263,20 @@ public sealed partial class ChangelingSystem : EntitySystem
             var selfMessage = Loc.GetString("changeling-transform-fail", ("target", selectedHumanoidData.MetaDataComponent.EntityName));
             _popup.PopupEntity(selfMessage, uid, uid);
         }
+        if (component.LingArmorActive)
+        {
+            var selfMessage = Loc.GetString("changeling-transform-fail", ("target", selectedHumanoidData.MetaDataComponent.EntityName));
+            _popup.PopupEntity(selfMessage, uid, uid);
+        }
+        if (component.ArmBladeActive)
+        {
+            var selfMessage = Loc.GetString("changeling-transform-fail", ("target", selectedHumanoidData.MetaDataComponent.EntityName));
+            _popup.PopupEntity(selfMessage, uid, uid);
+        }
+
         else
         {
+
             if (!TryUseAbility(uid, component, component.ChemicalsCostFive))
                 return;
 
@@ -314,8 +328,6 @@ public sealed partial class ChangelingSystem : EntitySystem
             if (newLingComponent.LingArmorActive)
                 SpawnLingArmor(transformedUid.Value, inventory);
 
-            if (newLingComponent.ArmBladeActive)
-                SpawnArmBlade(transformedUid.Value);
         }
     }
 }

@@ -87,6 +87,13 @@ public sealed partial class ChangelingComponent : Component
     /// </summary>
     [DataField]
     public float AbsorbedChangelingPointsAmount = 5.0f;
+
+    /// <summary>
+    /// The amount of evolution points the changeling gains when they absorb somebody.
+    /// </summary>
+    [DataField]
+    public float AbsorbedMobPointsAmount = 2.0f;
+
     #endregion
 
     #region Regenerate Ability
