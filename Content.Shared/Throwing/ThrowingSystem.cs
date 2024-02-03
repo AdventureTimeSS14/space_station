@@ -52,7 +52,7 @@ public sealed class ThrowingSystem : EntitySystem
         bool playSound = true)
     {
         var thrownPos = _transform.GetMapCoordinates(uid);
-        var mapPos = _transform.ToMapCoordinates(coordinates);
+        var mapPos = coordinates.ToMap(EntityManager, _transform);
 
         if (mapPos.MapId != thrownPos.MapId)
             return;
