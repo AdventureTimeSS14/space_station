@@ -7,36 +7,4 @@
   icons: [ /Textures/GG/Interface/Alerts/painkiller.png ]
   name: На болеутоляющих
   description: Вас ничего не сковывает.
-
-# мне было лень редачить имя и описание, это вы как нить сами
 # иконку сделал LogDog из GG
-
-- type: reagent
-  id: Morphine
-  name: reagent-name-morphine
-  group: Medicine
-  desc: reagent-desc-morphine
-  physicalDesc: reagent-physical-desc-viscous
-  flavor: medicine
-  color: "#ba7d7d"
-  metabolisms:
-    Narcotic:
-      metabolismRate: 1
-      effects:
-      - !type:GenericStatusEffect
-        key: PainKiller
-        component: PainKiller
-        type: Add
-        time: 60
-        refresh: true
-    Medicine:
-      effects:
-      - !type:HealthChange
-        conditions:
-        - !type:ReagentThreshold
-          min: 1
-        damage:
-          groups:
-            Brute: -0.1
-
-

@@ -183,31 +183,8 @@
   revertOnCrit: true
   revertOnDeath: true
   duration: 120
-  
-#плафеймы
-- type: polymorph
-  id: ADTPCarp
-  entity: MobCarp
-  forced: true
-  transferName: true
-  allowRepeatedMorphs: False
-  inventory: Drop
-  revertOnCrit: true
-  revertOnDeath: true
-  duration: 40
 
-- type: polymorph
-  id: ADTPCarp2
-  entity: MobCarp
-  forced: true
-  transferName: true
-  allowRepeatedMorphs: False
-  inventory: Drop
-  revertOnCrit: true
-  revertOnDeath: true
-  duration: 120
-
-#новакиды
+#новакиды. Не совсем понятно, стоит ли и им добавлять, поскольку полиморфин работает на органику, но полиморф оставлю.
 - type: polymorph
   id: ADTPRodMetall
   entity: PartRodMetal1
@@ -222,6 +199,29 @@
 - type: polymorph
   id: ADTPRodMetall2
   entity: PartRodMetal1 #ну вы поняли, палка с огнём.
+  forced: true
+  transferName: true
+  allowRepeatedMorphs: False
+  inventory: Drop
+  revertOnCrit: true
+  revertOnDeath: true
+  duration: 120
+
+#Урсы
+- type: polymorph
+  id: ADTPSpaceBear
+  entity: MobBearSpace
+  forced: true
+  transferName: true
+  allowRepeatedMorphs: False
+  inventory: Drop
+  revertOnCrit: true
+  revertOnDeath: true
+  duration: 40
+
+- type: polymorph
+  id: ADTPSpaceBear2
+  entity: MobBearSpace
   forced: true
   transferName: true
   allowRepeatedMorphs: False

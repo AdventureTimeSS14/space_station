@@ -135,25 +135,7 @@
             min: 20
             max: 20
         probability: 0.5
-      - !type:Polymorph #тут уже наши расы.
-        prototype: ADTPRodMetall
-        conditions:
-          - !type:OrganType
-            type: Novakid
-          - !type:ReagentThreshold
-            min: 20
-            max: 20
-        probability: 0.5
-      - !type:Polymorph
-        prototype: ADTPRodMetall2
-        conditions:
-          - !type:OrganType
-            type: Novakid
-          - !type:ReagentThreshold
-            min: 20
-            max: 20
-        probability: 0.5
-      - !type:Polymorph 
+      - !type:Polymorph #наши расы.
         prototype: ADTPCat
         conditions:
           - !type:OrganType
@@ -190,24 +172,6 @@
             max: 20
         probability: 0.5
       - !type:Polymorph 
-        prototype: ADTPCarp
-        conditions:
-          - !type:OrganType
-            type: Shark
-          - !type:ReagentThreshold
-            min: 20
-            max: 20
-        probability: 0.5
-      - !type:Polymorph
-        prototype: ADTPCarp
-        conditions:
-          - !type:OrganType
-            type: Shark
-          - !type:ReagentThreshold
-            min: 20
-            max: 20
-        probability: 0.5
-      - !type:Polymorph 
         prototype: ADTPMonkey 
         conditions:
           - !type:OrganType
@@ -221,6 +185,24 @@
         conditions:
           - !type:OrganType
             type: Demon
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph 
+        prototype: ADTPSpaceBear 
+        conditions:
+          - !type:OrganType
+            type: Ursus
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPSpaceBear2
+        conditions:
+          - !type:OrganType
+            type: Ursus
           - !type:ReagentThreshold
             min: 20
             max: 20

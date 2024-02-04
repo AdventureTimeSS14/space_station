@@ -88,6 +88,12 @@
         visualType: Small
         messages: [ "medicine-effect-headache" ]
         probability: 0.05
+      - !type:GenericStatusEffect
+        key: PainKiller
+        component: PainKiller
+        type: Add
+        time: 10
+        refresh: true
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -375,104 +381,84 @@
         visualType: Small
         messages: [ "medicine-effect-visible-emotions-f" ]
         probability: 0.05 #в общем, я не придумал способ обойти пол существ в всплывающем тексте, отчего у нас 2 надписи на 2 пола.
+        #Бесполезное внимание к деталям, но извините, я такой.
 
 - type: reagent
-  id: ADTMHaloperidol #Нейролептик, работает чисто как в Баратравме.
-  name: reagent-name-haloperidol
+  id: ADTMFormalin #Даже название коверкать не буду. Формалин существует.
+  name: reagent-name-formalin
   group: Medicine
-  desc: reagent-desc-haloperidol
+  desc: reagent-desc-formalin
   flavor: bitter
-  physicalDesc: reagent-physical-desc-opaque
-  color: "#ad5113"
+  physicalDesc: reagent-physical-desc-skunky
+  color: "#ffd478"
+  metaboliseWhileDead: true
   metabolisms:
     Medicine:
       effects:
-      - !type:GenericStatusEffect
-        key: SeeingRainbows
-        component: SeeingRainbows 
-        type: Remove
-        time: 20
-      - !type:GenericStatusEffect
-        key: Drunk
-        time: 5.0 #Некоторые наркотические приколы включают в себя компонент опьянения. В любом случае он ниже, чем у этилредоксразина в 2 раза.
-        type: Remove
-      - !type:PopupMessage
-        type: Local
-        visualType: Small
-        messages:  
-        - medicine-effect-emotions
-        - narcotic-effect-sleepy
-        - medicine-effect-antipsychotic
-        probability: 0.05 
-        #я пытался сперва сделать так, чтобы последняя надпись всплывала при условии что чел видит радуги, не получилось.
-        #затем попытался сделать список реагентов, при которых появлялась эта надпись. Тоже не получилось.
+      - !type:Embalm
+         conditions:
+          - !type:ReagentThreshold
+            min: 5
+          - !type:MobStateCondition
+            mobstate: Dead
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 1
 
 - type: reagent
   id: ADTMMorphine
   name: reagent-name-morphine
   group: Medicine
   desc: reagent-desc-morphine
-  physicalDesc: reagent-physical-desc-translucent
+  physicalDesc: reagent-physical-desc-viscous
   flavor: bitter
   color: "#c98928"
   metabolisms:
     Medicine:
-      metabolismRate: 0.1
+      metabolismRate: 1
       effects:
+      - !type:GenericStatusEffect
+        key: PainKiller
+        component: PainKiller
+        type: Add
+        time: 60
+        refresh: true
       - !type:GenericStatusEffect
         key: Stutter
         component: ScrambledAccent #В какой-то степени анельгезия.
       - !type:HealthChange
         damage:
           groups:
-            Brute: -0.5
-      - !type:MovespeedModifier
-        conditions:
-        - !type:TotalDamage
-          min: 60
-          max: 80
-        walkSpeedModifier: 1.15  #итого скорость будет ~2,015. (обычная = 2,5) 
-        sprintSpeedModifier: 1.27 #итого скорость будет ~4. (обычная = 4,5)
-        statusLifetime: 1.1
-      - !type:MovespeedModifier
-        conditions:
-        - !type:TotalDamage
-          min: 80
-        walkSpeedModifier: 1.2 # 1,5 
-        sprintSpeedModifier: 1.56 # 3,5 
-        statusLifetime: 1.1
+            Brute: -1
       - !type:PopupMessage
         conditions:
         - !type:TotalDamage
           min: 0.5
         type: Local
         visualType: Small
-        messages: [ "medicine-effect-pain" ]
+        messages: [ "medicine-effect-pain" ] #пусть помимо иконки будет ещё и надпись.
         probability: 0.05
-      - !type:ChemVomit
+      - !type:ChemVomit #а это уже передозы.
         conditions:
         - !type:ReagentThreshold
-          min: 20
+          min: 30
         probability: 0.3
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 20
+          min: 30
         damage:
           types:
             Asphyxiation: 5
       - !type:Jitter
         conditions:
         - !type:ReagentThreshold
-          min: 20
-      - !type:GenericStatusEffect
-        key: KnockedDown
-        time: 1.5
-        type: Remove
+          min: 30
     Narcotic:
       metabolismRate: 0.1
       effects:
-      - !type:GenericStatusEffect
+      - !type:GenericStatusEffect #не забываем, что морфин ещё и наркотик.
         key: SeeingRainbows
         component: SeeingRainbows
         type: Add
@@ -490,26 +476,3 @@
         visualType: Small
         messages: [ "narcotic-effect-visible-miosis" ]
         probability: 0.05
-
-- type: reagent
-  id: ADTMFormalin #Даже название коверкать не буду. Формалин существует.
-  name: reagent-name-formalin
-  group: Medicine
-  desc: reagent-desc-formalin
-  flavor: bitter
-  physicalDesc: reagent-physical-desc-skunky
-  color: "#ffd478"
-  metaboliseWhileDead: true
-  metabolisms:
-    Medicine:
-      effects:
-      - !type:Embalm
-         conditions:
-          - !type:ReagentThreshold
-            min: 10
-          - !type:MobStateCondition
-            mobstate: Dead
-      - !type:HealthChange
-        damage:
-          types:
-            Poison: 1
