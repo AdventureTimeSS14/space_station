@@ -292,14 +292,14 @@
             max: 30
         probability: 0.1
       - !type:Polymorph
-        prototype: ADTPSloth
+        prototype: ADTPCarp
         conditions:
           - !type:ReagentThreshold
             min: 30
             max: 30
         probability: 0.1
       - !type:Polymorph
-        prototype: ADTPCarp
+        prototype: ADTPSpaceBear
         conditions:
           - !type:ReagentThreshold
             min: 30

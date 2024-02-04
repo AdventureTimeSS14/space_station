@@ -287,8 +287,8 @@
   duration: 40
 
 - type: polymorph
-  id: ADTPSloth
-  entity: MobSloth
+  id: ADTPCarp
+  entity: MobCarp
   forced: true
   transferName: true
   allowRepeatedMorphs: False

@@ -68,3 +68,7 @@
 - type: metabolizerType
   id: Reptilian
   name: reptilian
+
+- type: metabolizerType
+  id: Ursus
+  name: reptilian

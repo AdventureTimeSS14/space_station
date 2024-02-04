@@ -92,8 +92,7 @@
         key: PainKiller
         component: PainKiller
         type: Add
-        time: 10
-        refresh: true
+        time: 20
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -406,6 +405,38 @@
           types:
             Poison: 1
 
+
+- type: reagent
+  id: ADTMHaloperidol #Нейролептик, работает чисто как в Баратравме.
+  name: reagent-name-haloperidol
+  group: Medicine
+  desc: reagent-desc-haloperidol
+  flavor: bitter
+  physicalDesc: reagent-physical-desc-opaque
+  color: "#ad5113"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows 
+        type: Remove
+        time: 20
+      - !type:GenericStatusEffect
+        key: Drunk
+        time: 5.0 #Некоторые наркотические приколы включают в себя компонент опьянения. В любом случае он ниже, чем у этилредоксразина в 2 раза.
+        type: Remove
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages:  
+        - medicine-effect-emotions
+        - narcotic-effect-sleepy
+        - medicine-effect-antipsychotic
+        probability: 0.05 
+        #я пытался сперва сделать так, чтобы последняя надпись всплывала при условии что чел видит радуги, не получилось.
+        #затем попытался сделать список реагентов, при которых появлялась эта надпись. Тоже не получилось.
+
 - type: reagent
   id: ADTMMorphine
   name: reagent-name-morphine
@@ -424,9 +455,6 @@
         type: Add
         time: 60
         refresh: true
-      - !type:GenericStatusEffect
-        key: Stutter
-        component: ScrambledAccent #В какой-то степени анельгезия.
       - !type:HealthChange
         damage:
           groups:
@@ -462,7 +490,7 @@
         key: SeeingRainbows
         component: SeeingRainbows
         type: Add
-        time: 1.5
+        time: 2.5
         refresh: false
       - !type:PopupMessage
         type: Local
