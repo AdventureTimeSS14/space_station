@@ -70,7 +70,7 @@ public sealed partial class StrapComponent : Component
     /// </summary>
     [DataField]
     [ViewVariables(VVAccess.ReadWrite)]
-    public int Rotation;
+    public Angle Rotation;
 
     /// <summary>
     /// The size of the strap which is compared against when buckling entities

@@ -225,3 +225,51 @@ ent-ADTFunCardBlackJoker = { ent-ADTFunCardClubs2 }
 ent-ADTFunCardRedJoker = { ent-ADTFunCardClubs2 }
     .desc = { ent-ADTFunCardClubs2.desc }
     .suffix = { "Карты" }
+
+ent-ADTFunCasinoChipBase = Фишка 1$
+    .desc = Кусочек пластика для казино с цифрой "1" на нем.
+    .suffix = { "Карты" }
+
+ent-ADTFunCasinoChip5 = Фишка 5$
+    .desc = Кусочек пластика для казино с цифрой "5" на нем.
+    .suffix = { "Карты" }
+
+ent-ADTFunCasinoChip10 = Фишка 10$
+    .desc = Кусочек пластика для казино с цифрой "10" на нем.
+    .suffix = { "Карты" }
+
+ent-ADTFunCasinoChip50 = Фишка 50$
+    .desc = Кусочек пластика для казино с цифрой "50" на нем.
+    .suffix = { "Карты" }
+
+ent-ADTFunCasinoChip100 = Фишка 100$
+    .desc = Кусочек пластика для казино с цифрой "100" на нем.
+    .suffix = { "Карты" }
+
+ent-ADTFunDealerChip = Фишка дилера
+    .desc = Кусочек пластика для казино с надписью "Дилер" на нем.
+    .suffix = { "Карты" }
+
+ent-ADTFunCasinoChip1stack = Фишка 1$
+    .desc = Кусочек пластика для казино с цифрой "1" на нем.
+    .suffix = { "Карты" }
+
+ent-ADTFunCasinoChip5stack = Фишка 5$
+    .desc = Кусочек пластика для казино с цифрой "5" на нем.
+    .suffix = { "Карты" }
+
+ent-ADTFunCasinoChip10stack = Фишка 10$
+    .desc = Кусочек пластика для казино с цифрой "10" на нем.
+    .suffix = { "Карты" }
+
+ent-ADTFunCasinoChip50stack = Фишка 50$
+    .desc = Кусочек пластика для казино с цифрой "50" на нем.
+    .suffix = { "Карты" }
+
+ent-ADTFunCasinoChip100stack = Фишка 100$
+    .desc = Кусочек пластика для казино с цифрой "100" на нем.
+    .suffix = { "Карты" }
+
+ent-ADTFunPokerBox = Набор для игры в покер
+    .desc = Стильный пластиковый чемоданчик с колодой карт и покерными фишками.
+    .suffix = { "Карты" }
