@@ -101,6 +101,7 @@
   - SeniorResearcher
   - Scientist
   - ResearchAssistant
+  - ADTRoboticist # ADT Roboticist job
 
 - type: department
   id: Specific
