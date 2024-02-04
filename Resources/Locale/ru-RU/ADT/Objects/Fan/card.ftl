@@ -2,12 +2,12 @@ ent-ADTFunCardsBox = коробка карт
     .desc = Коробка для игральных карт.
     .suffix = { "Пустая" }
 
-ent-ADTFunCardsBoxFull54 = коробка карт
-    .desc = Коробка для игральных карт.
+ent-ADTFunCardsBoxFull54 = коробка игральных карт для покера
+    .desc = Коробка с колодой из 54 карт.
     .suffix = { "Полная" }
 
-ent-ADTFunCardsBoxFull36 = коробка карт
-    .desc = Коробка для игральных карт.
+ent-ADTFunCardsBoxFull36 = коробка игральных карт
+    .desc = Коробка с колодой из 36 карт. Можно в дурака раскидаться или в 21.
     .suffix = { "Полная" }
 
 ent-ADTFunCardClubs2 = карта

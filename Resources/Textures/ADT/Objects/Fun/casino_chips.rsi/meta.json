@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Made for Adventure Time project. Art by discord:prazat911",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        { "name": "playing_chips1_0" },
+        { "name": "playing_chips1_1" },
+        { "name": "playing_chips1_2" },
+        { "name": "playing_chips1_3" },
+        { "name": "playing_chips1_4" },
+        { "name": "playing_chips1_5" },
+        { "name": "playing_chips1_6" },
+        { "name": "playing_chips1_7" },
+        { "name": "playing_chips1_8" },
+        { "name": "playing_chips1_9" },
+        { "name": "playing_chips1_10" }
+    ]
+}
