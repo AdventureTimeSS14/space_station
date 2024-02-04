@@ -64,7 +64,7 @@
 - type: stack
   id: ADTCasinoChip50
   name: casino_chip_50
-  spawn: ADTFunCasinoChip25
+  spawn: ADTFunCasinoChip50
   maxCount: 10
   itemSize: 1
 
