@@ -17,29 +17,30 @@
           types:
             Cold: -1
 
-- type: reagent
-  id: SalineGlucoseSolution
-  name: reagent-name-salineglucosesolution
-  group: Medicine
-  desc: reagent-desc-salineglucosesolution
-  physicalDesc: reagent-physical-desc-salineglucosesolution
-  flavor: somesalty
-  color: "#75b1f0"
-  metabolisms:
-    Medicine:
-      effects:
-      - !type:HealthChange
-        damage:
-          groups:
-            Burn: -0.5
-            Brute: -0.5
-          types:
-            Bloodloss: -2
+# не знаю, кто и когда делал этот препарат, но он просто висит по-приколу с названием "Что такое".
+#- type: reagent
+#  id: SalineGlucoseSolution
+#  name: reagent-name-salineglucosesolution
+#  group: Medicine
+#  desc: reagent-desc-salineglucosesolution
+#  physicalDesc: reagent-physical-desc-salineglucosesolution
+#  flavor: somesalty
+#  color: "#75b1f0"
+#  metabolisms:
+#    Medicine:
+#      effects:
+#      - !type:HealthChange
+#        damage:
+#          groups:
+#            Burn: -0.5
+#            Brute: -0.5
+#          types:
+#            Bloodloss: -2
 
-- type: flavor
-  id: somesalty
-  flavorType: Complex
-  description: flavor-complex-somesalty
+#- type: flavor
+#  id: somesalty
+#  flavorType: Complex
+#  description: flavor-complex-somesalty
 
 #- type: reaction
 #  id: SalineGlucoseSolution #зачем делать реагент и рецепт к нему, но не задействовать это? Причём рецепт конфликтный.
