@@ -391,7 +391,7 @@
   flavor: bitter
   physicalDesc: reagent-physical-desc-skunky
   color: "#ffd478"
-  metaboliseWhileDead: true
+  worksOnTheDead: true
   metabolisms:
     Medicine:
       effects:
@@ -400,7 +400,7 @@
           - !type:ReagentThreshold
             min: 5
           - !type:MobStateCondition
-            mobstate: Dead
+            mobstate: dead
       - !type:HealthChange
         damage:
           types:
