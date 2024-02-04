@@ -5,6 +5,8 @@
   description: A bag for storing chemistry products, such as pills, pill canisters, bottles, and syringes.
   suffix: Full
   components:
+  - type: Item
+    size: Small
   - type: StorageFill
     contents:
       - id: ADTFunCardClubs2
@@ -69,6 +71,8 @@
   description: A bag for storing chemistry products, such as pills, pill canisters, bottles, and syringes.
   suffix: Full
   components:
+  - type: Item
+    size: Small
   - type: StorageFill
     contents:
       - id: ADTFunCardClubs6
