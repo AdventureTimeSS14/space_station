@@ -10,7 +10,7 @@
     netsync: false
     noRot: true
     drawdepth: Mobs
-    scale: 0.97, 0.97
+    scale: 0.98, 0.98
     layers:
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
       - map: [ "enum.HumanoidVisualLayers.Head" ]
@@ -97,7 +97,7 @@
     damage:
       types:
         Blunt: 0.9
-        Slash: 2
+        Slash: 5
   - type: Blindable
   - type: Speech
     speechSounds: Alto
