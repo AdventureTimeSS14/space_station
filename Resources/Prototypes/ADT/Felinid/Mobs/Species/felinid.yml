@@ -70,7 +70,7 @@
     - trigger:
         !type:DamageTypeTrigger
         damageType: Blunt #при каком дамаге это происходит
-        damage: 250
+        damage: 300
       behaviors:
       - !type:GibBehavior { }
   - type: Fixtures

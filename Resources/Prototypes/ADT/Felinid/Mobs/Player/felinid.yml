@@ -19,8 +19,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      60: Critical
-      120: Dead
+      80: Critical
+      160: Dead
   - type: MobMover
   - type: InputMover
   - type: Respirator
