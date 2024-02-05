@@ -219,8 +219,8 @@
         Caustic: 0.85
         Stun: 0.7
   - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
+    walkModifier: 0.85
+    sprintModifier: 0.85
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSecurity
@@ -516,7 +516,7 @@
         Blunt: 0.45
         Slash: 0.45
         Piercing: 0.45
-        Heat: 0.5
+        Heat: 0.45
         Radiation: 0.3
         Caustic: 0.5
         Stun: 0.5
@@ -628,7 +628,7 @@
         Blunt: 0.4
         Slash: 0.4
         Piercing: 0.4
-        Heat: 0.2
+        Heat: 0.4
         Radiation: 0.20
         Caustic: 0.5
         Stun: 0.4
