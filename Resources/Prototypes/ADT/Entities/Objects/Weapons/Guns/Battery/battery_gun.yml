@@ -122,6 +122,8 @@
       shader: unshaded
   - type: Gun
     fireRate: 1.2
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: ItemSlots
     slots:
       gun_magazine:

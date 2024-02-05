@@ -94,10 +94,9 @@
 #ревик осщ
 
 - type: entity
-  name: Револьверная батарея
-  description: На вид это просто спидлоадер, в который вместо пуль вставили маленькие батарейки и плотно закрепили их скотчем.
+  name: revolver power cell
+  description: lasgun power sell
   id: ADTPowerCellLasgunRevolver
-  suffix: Заряжен
   parent: BaseItem
   components:
   - type: Battery
