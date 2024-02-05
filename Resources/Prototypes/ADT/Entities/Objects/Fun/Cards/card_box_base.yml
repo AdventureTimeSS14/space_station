@@ -20,9 +20,9 @@
   - type: Item
     sprite: ADT/Objects/Fun/box_card.rsi
     heldPrefix: box
-    size: Large
+    size: Small
     shape:
-    - 0,0,1,1
+    - 0,0,0,0
   - type: Storage
     maxItemSize: Tiny # allow up to 5 large beakers / 10 beakers / 10 pill canisters
     grid:
