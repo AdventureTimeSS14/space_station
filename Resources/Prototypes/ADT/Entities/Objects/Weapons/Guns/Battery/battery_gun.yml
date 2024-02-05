@@ -2,7 +2,6 @@
   name: X-01 multiphas laser pistol
   parent: BaseWeaponBatterySmall
   id: ADTWeaponPistolX01
-  suffix: Мультифаз
   description: new version of antique gun witout selfrcharge
   components:
   - type: Sprite
@@ -110,7 +109,6 @@
   name: X-02 multiphas laser pistol
   parent: BaseWeaponPowerCellSmall
   id: ADTWeaponPistolBlueShitX02
-  suffix: Мультифаз, Револьвер
   description: New version of antique gun witout selfrcharge for "BlueShit"
   components:
   - type: Sprite

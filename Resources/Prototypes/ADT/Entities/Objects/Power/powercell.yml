@@ -108,7 +108,7 @@
     maxIntensity: 200
     intensitySlope: 1.5
   - type: Sprite
-    sprite: ADT/Objects/Weapons/Guns/Battery/lasgunbattery.rsi
+    sprite: ADT/Objects/Weapons/Guns/Battery/revolverbattery.rsi
     state: icon
   - type: SolutionContainerManager
     solutions:
