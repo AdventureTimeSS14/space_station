@@ -50,7 +50,7 @@
       baseWalkSpeed : 2.7
       baseSprintSpeed : 4.6
     - type: Perishable
-   - type: Sprite
+    - type: Sprite
       netsync: false
       noRot: true
       drawdepth: Mobs
