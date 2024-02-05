@@ -263,16 +263,6 @@ public sealed partial class ChangelingSystem : EntitySystem
             var selfMessage = Loc.GetString("changeling-transform-fail", ("target", selectedHumanoidData.MetaDataComponent.EntityName));
             _popup.PopupEntity(selfMessage, uid, uid);
         }
-        if (component.LingArmorActive)
-        {
-            var selfMessage = Loc.GetString("changeling-transform-fail", ("target", selectedHumanoidData.MetaDataComponent.EntityName));
-            _popup.PopupEntity(selfMessage, uid, uid);
-        }
-        if (component.ArmBladeActive)
-        {
-            var selfMessage = Loc.GetString("changeling-transform-fail", ("target", selectedHumanoidData.MetaDataComponent.EntityName));
-            _popup.PopupEntity(selfMessage, uid, uid);
-        }
 
         else
         {
@@ -327,6 +317,10 @@ public sealed partial class ChangelingSystem : EntitySystem
 
             if (newLingComponent.LingArmorActive)
                 SpawnLingArmor(transformedUid.Value, inventory);
+
+            if (newLingComponent.ArmBladeActive)
+                SpawnArmBlade(transformedUid.Value);
+
 
         }
     }
