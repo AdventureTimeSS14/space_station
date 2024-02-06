@@ -18,3 +18,5 @@
       - id: BoxBodyBag
       - id: BoxSyringe
       - id: BoxFolderGreen
+      - id: ADTObjectsSpecificFormalinChemistryBottle
+      - id: ADTReagentAnalyzer

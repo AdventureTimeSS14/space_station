@@ -136,6 +136,7 @@
       - id: ClothingMaskSterile
       - id: HandLabeler
         prob: 0.5
+      - id: ADTReagentAnalyzer
 
 - type: entity
   id: LockerParamedicFilled

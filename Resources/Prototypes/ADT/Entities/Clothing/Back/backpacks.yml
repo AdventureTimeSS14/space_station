@@ -193,7 +193,6 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalMedical
-      - id: ADTSmallSyringe
       - id: BodyBag_Folded
       - id: ADTFootTag
 
@@ -205,7 +204,6 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalMedical
-      - id: ADTSmallSyringe
       - id: BodyBag_Folded
       - id: ADTFootTag
 
@@ -217,7 +215,6 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalMedical
-      - id: ADTSmallSyringe
       - id: BodyBag_Folded
       - id: ADTFootTag
 

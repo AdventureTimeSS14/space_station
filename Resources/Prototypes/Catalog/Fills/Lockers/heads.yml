@@ -234,6 +234,7 @@
       - id: ClothingOuterHardsuitMedical
       - id: Hypospray
       - id: ADTBookNewChemicals
+      - id: ADTReagentAnalyzer
       - id: ADTMobileDefibrillator
       - id: HandheldCrewMonitor
       - id: DoorRemoteMedical
@@ -273,6 +274,7 @@
       - id: ClothingHeadHatBeretCmo
       - id: Hypospray
       - id: ADTBookNewChemicals
+      - id: ADTReagentAnalyzer
       - id: ADTMobileDefibrillator
       - id: HandheldCrewMonitor
       - id: DoorRemoteMedical

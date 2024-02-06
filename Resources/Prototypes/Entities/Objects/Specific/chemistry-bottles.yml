@@ -41,6 +41,8 @@
   - type: SolutionTransfer
     maxTransferAmount: 30
     canChangeTransferAmount: true
+  - type: FitsInDispenser
+    solution: drink
   - type: UserInterface
     interfaces:
     - key: enum.TransferAmountUiKey.Key

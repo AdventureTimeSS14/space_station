@@ -822,6 +822,7 @@
     staticRecipes:
       - Brutepack
       - Ointment
+      - ADTReagentAnalyzer
       - ADTAntibioticOintment
       - ADTMedicalTourniquet
       - Gauze

@@ -25,3 +25,12 @@
   completetime: 2
   materials:
     Plastic: 25
+
+- type: latheRecipe
+  id: ADTReagentAnalyzer
+  result: ADTReagentAnalyzer
+  completetime: 2
+  materials:
+    Glass: 600
+    Steel: 500
+    Plastic: 700

@@ -63,6 +63,7 @@
 <Box>
 <GuideEntityEmbed Entity="ADTObjectsSpecificFormalinChemistryBottle"/>
 <GuideEntityEmbed Entity="ADTSmallSyringe"/>
+<GuideEntityEmbed Entity="ADTReagentAnalyzer"/>
 </Box>
 <Box>
 <GuideEntityEmbed Entity="Brutepack"/>

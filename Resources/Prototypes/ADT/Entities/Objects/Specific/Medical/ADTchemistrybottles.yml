@@ -103,10 +103,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 30
+        maxVol: 15
         reagents:
         - ReagentId: ADTMFormalin
-          Quantity: 30
+          Quantity: 15
   - type: Tag
     tags:
     - Bottle
