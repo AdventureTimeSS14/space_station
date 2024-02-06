@@ -21,8 +21,8 @@
     tags:
       - DroneUsable
       - ADTCardPlay
-  - type: StaticPrice
-    price: 1
+  # - type: StaticPrice
+  #   price: 1
   - type: Stack
     stackType: ADTCasinoChip1
     baseLayer: base
@@ -95,8 +95,8 @@
     tags:
       - DroneUsable
       - ADTCardPlay
-  - type: StaticPrice
-    price: 1
+  # - type: StaticPrice
+  #   price: 1
   - type: Stack
     stackType: ADTCasinoChip5
     baseLayer: base
@@ -134,8 +134,8 @@
     tags:
       - DroneUsable
       - ADTCardPlay
-  - type: StaticPrice
-    price: 1
+  # - type: StaticPrice
+  #   price: 1
   - type: Stack
     stackType: ADTCasinoChip5
     baseLayer: base
@@ -173,8 +173,8 @@
     tags:
       - DroneUsable
       - ADTCardPlay
-  - type: StaticPrice
-    price: 1
+  # - type: StaticPrice
+  #   price: 1
   - type: Stack
     stackType: ADTCasinoChip5
     baseLayer: base
@@ -212,8 +212,8 @@
     tags:
       - DroneUsable
       - ADTCardPlay
-  - type: StaticPrice
-    price: 1
+  # - type: StaticPrice
+  #   price: 1
   - type: Stack
     stackType: ADTCasinoChip5
     baseLayer: base
@@ -248,8 +248,8 @@
     tags:
       - DroneUsable
       - ADTCardPlay
-  - type: StaticPrice
-    price: 1
+  # - type: StaticPrice
+  #   price: 1
 
 - type: entity
   parent: ADTFunCasinoChipBase
@@ -262,8 +262,8 @@
   - type: Stack
     stackType: ADTCasinoChip1
     count: 10
-  - type: StaticPrice
-    price: 0
+  # - type: StaticPrice
+  #   price: 0
 
 - type: entity
   parent: ADTFunCasinoChip5
@@ -276,8 +276,8 @@
   - type: Stack
     stackType: ADTCasinoChip5
     count: 10
-  - type: StaticPrice
-    price: 0
+  # - type: StaticPrice
+  #   price: 0
 
 - type: entity
   parent: ADTFunCasinoChip10
@@ -290,8 +290,8 @@
   - type: Stack
     stackType: ADTCasinoChip10
     count: 10
-  - type: StaticPrice
-    price: 0
+  # - type: StaticPrice
+  #   price: 0
 
 - type: entity
   parent: ADTFunCasinoChip50
@@ -304,8 +304,8 @@
   - type: Stack
     stackType: ADTCasinoChip50
     count: 10
-  - type: StaticPrice
-    price: 0
+  # - type: StaticPrice
+  #   price: 0
 
 - type: entity
   parent: ADTFunCasinoChip100
@@ -318,8 +318,8 @@
   - type: Stack
     stackType: ADTCasinoChip100
     count: 10
-  - type: StaticPrice
-    price: 0
+  # - type: StaticPrice
+  #   price: 0
 
 - type: entity
   id: ADTFunPokerBox
