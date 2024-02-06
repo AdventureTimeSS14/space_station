@@ -262,6 +262,8 @@
   - type: Stack
     stackType: ADTCasinoChip1
     count: 10
+  - type: StaticPrice
+    price: 10
 
 - type: entity
   parent: ADTFunCasinoChip5
@@ -274,6 +276,8 @@
   - type: Stack
     stackType: ADTCasinoChip5
     count: 10
+  - type: StaticPrice
+    price: 10
 
 - type: entity
   parent: ADTFunCasinoChip10
@@ -286,6 +290,8 @@
   - type: Stack
     stackType: ADTCasinoChip10
     count: 10
+  - type: StaticPrice
+    price: 10
 
 - type: entity
   parent: ADTFunCasinoChip50
@@ -298,6 +304,8 @@
   - type: Stack
     stackType: ADTCasinoChip50
     count: 10
+  - type: StaticPrice
+    price: 10
 
 - type: entity
   parent: ADTFunCasinoChip100
@@ -310,6 +318,8 @@
   - type: Stack
     stackType: ADTCasinoChip100
     count: 10
+  - type: StaticPrice
+    price: 10
 
 - type: entity
   id: ADTFunPokerBox
