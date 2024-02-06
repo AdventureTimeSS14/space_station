@@ -325,8 +325,11 @@ public sealed partial class ChangelingSystem : EntitySystem
             if (!TryComp(transformedUid.Value, out InventoryComponent? inventory))
                 return;
 
-                
-            
+            if (newLingComponent.LingArmorActive)
+                SpawnLingArmor(transformedUid.Value, inventory);
+
+            if (newLingComponent.ArmBladeActive)
+                SpawnArmBlade(transformedUid.Value);
         }
     }
 }
