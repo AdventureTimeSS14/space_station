@@ -265,7 +265,7 @@
   components:
     - type: StorageFill
       contents:
-        - id: BoxSurvival
+        - id: NesBoxSurvivalSalvager
 
 #ADT
 - type: entity

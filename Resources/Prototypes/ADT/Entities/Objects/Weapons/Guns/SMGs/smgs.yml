@@ -17,7 +17,7 @@
     fireRate: 6
     selectedMode: FullAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
+      path: /Audio/NES/Weapon/PPSh_shot.ogg
     availableModes:
     - FullAuto
   - type: ItemSlots
@@ -47,7 +47,7 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
-  
+
 - type: entity
   name: ump
   parent: BaseWeaponSubMachineGun
