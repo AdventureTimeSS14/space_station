@@ -107,7 +107,7 @@
     damageModifierSet: ADTSecurityCybDamagModSet
   - type: TriggerOnMobstateChange
     mobState:
-    - Critical
+    - Dead
   - type: EmitSoundOnTrigger
     sound:
       collection: SoldierDeath
