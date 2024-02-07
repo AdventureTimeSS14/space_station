@@ -71,7 +71,7 @@ public sealed partial class ChangelingComponent : Component
     /// How long an absorb stage takes, in seconds.
     /// </summary>
     [DataField]
-    public int AbsorbDuration = 15;
+    public int AbsorbDuration = 10;
 
     /// <summary>
     /// The stage of absorbing that the changeling is on. Maximum of 2 stages.
@@ -187,7 +187,7 @@ public sealed partial class ChangelingComponent : Component
     /// Range of the Dissonant Shriek's EMP in tiles.
     /// </summary>
     [DataField]
-    public float DissonantShriekEmpRange = 2.75f;
+    public float DissonantShriekEmpRange = 5f;
 
     /// <summary>
     /// Power consumed from batteries by the Dissonant Shriek's EMP
