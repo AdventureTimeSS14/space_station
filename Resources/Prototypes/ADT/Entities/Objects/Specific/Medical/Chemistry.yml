@@ -110,8 +110,6 @@
     damage:
       types:
         Blunt: 0
-#  - type: TrashOnEmpty
-#    solution: drink
   - type: Openable
     sound:
       path: /Audio/Items/pop.ogg
@@ -200,9 +198,9 @@
 
 # Упаковки
 - type: entity
-  id: BasePack
+  id: ADTBasePack
   parent: BaseStorageItem
-  description: Holds 10 pills.
+  description: Holds up to 10 pills.
   abstract: true
   components:
   - type: Sprite
@@ -215,7 +213,8 @@
     tags:
       - PillCanister
   - type: Storage
-    maxTotalWeight: 10
+    grid:
+    - 0,0,4,1
     whitelist:
       components:
       - Pill
@@ -226,12 +225,12 @@
 - type: entity
   id: ADTPillPack
   name: pill pack
-  parent: BasePack
+  parent: ADTBasePack
 
 - type: entity
   name: sodiumizole pack
   id: ADTMSodiumizolePack
-  parent: BasePack
+  parent: ADTPillPack
   components:
   - type: Sprite
     sprite: ADT/Objects/Specific/Medical/packs.rsi 
@@ -246,7 +245,7 @@
 - type: entity
   name: nitrofurfoll pack
   id: ADTMNitrofurfollPack
-  parent: BasePack
+  parent: ADTPillPack
   components:
   - type: Sprite
     sprite: ADT/Objects/Specific/Medical/packs.rsi 
@@ -261,7 +260,7 @@
 - type: entity
   name: anelgesin pack
   id: ADTMAnelgesinPack
-  parent: BasePack
+  parent: ADTPillPack
   components:
   - type: Sprite
     sprite: ADT/Objects/Specific/Medical/packs.rsi 
@@ -276,7 +275,7 @@
 - type: entity
   name: minoxide pack
   id: ADTMMinoxidePack
-  parent: BasePack
+  parent: ADTPillPack
   components:
   - type: Sprite
     sprite: ADT/Objects/Specific/Medical/packs.rsi 
@@ -291,7 +290,7 @@
 - type: entity
   name: diethamilate pack
   id: ADTMDiethamilatePack
-  parent: BasePack
+  parent: ADTPillPack
   components:
   - type: Sprite
     sprite: ADT/Objects/Specific/Medical/packs.rsi 
@@ -306,7 +305,7 @@
 - type: entity
   name: haloperidol pack
   id: ADTMHaloperidolPack
-  parent: BasePack
+  parent: ADTPillPack
   components:
   - type: Sprite
     sprite: ADT/Objects/Specific/Medical/packs.rsi 
@@ -321,7 +320,7 @@
 - type: entity
   name: charcoal pack
   id: ADTMCharcoalPack
-  parent: BasePack
+  parent: ADTPillPack
   components:
   - type: Sprite
     sprite: ADT/Objects/Specific/Medical/packs.rsi 
@@ -336,7 +335,7 @@
 - type: entity
   name: ethylredoxrazine pack
   id: ADTMEthylredoxrazinePack
-  parent: BasePack
+  parent: ADTPillPack
   components:
   - type: Sprite
     sprite: ADT/Objects/Specific/Medical/packs.rsi 
