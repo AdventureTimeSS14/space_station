@@ -254,6 +254,7 @@
       - id: ADTUnderwearBoxCMO
       # Sirena-Underwear-End
       - id: ADTBriefcaseBrownHikingCmo
+      - id: ADTClothingBeltMedicalBagFilled
 
 
 - type: entity
@@ -295,6 +296,7 @@
       - id: ADTUnderwearBoxCMO
       # Sirena-Underwear-End
       - id: ADTBriefcaseBrownHikingCmo
+      - id: ADTClothingBeltMedicalBagFilled
 
 - type: entity
   id: LockerResearchDirectorFilledHardsuit

@@ -34,12 +34,11 @@
   - type: StorageFill
     contents:
       - id: MedicatedSuture
-        amount: 2
       - id: BruteAutoInjector
         amount: 2
-      - id: EmergencyMedipen
       - id: ADTMedicalTourniquet
       - id: PillCanisterIron
+        amount: 2
 
 - type: entity
   id: MedkitToxinFilled
