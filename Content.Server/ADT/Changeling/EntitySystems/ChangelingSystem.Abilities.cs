@@ -21,6 +21,8 @@ using Content.Shared.FixedPoint;
 using Content.Server.Store.Components;
 using Content.Shared.Chemistry.Components;
 using Content.Server.Fluids.EntitySystems;
+using Content.Shared.Tag;
+
 
 namespace Content.Server.Changeling.EntitySystems;
 
@@ -36,6 +38,7 @@ public sealed partial class ChangelingSystem
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly PuddleSystem _puddle = default!;
+
 
     private void InitializeLingAbilities()
     {
@@ -76,6 +79,14 @@ public sealed partial class ChangelingSystem
             _popup.PopupEntity(selfMessage, uid, uid);
             return;
         }
+
+        if (_tagSystem.HasTag(target, "ChangelingBlacklist"))
+        {
+            var selfMessage = Loc.GetString("changeling-dna-sting-fail-nodna", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
 
         args.Handled = true;
 
@@ -487,6 +498,14 @@ public sealed partial class ChangelingSystem
             _popup.PopupEntity(selfMessageFailNoHuman, uid, uid);
             return;
         }
+
+        if (_tagSystem.HasTag(target, "ChangelingBlacklist"))
+        {
+            var selfMessage = Loc.GetString("changeling-dna-sting-fail-nodna", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
 
 
         if (!TryUseAbility(uid, component, component.ChemicalsCostTwentyFive))
