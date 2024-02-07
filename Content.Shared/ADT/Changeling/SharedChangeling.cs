@@ -47,3 +47,7 @@ public sealed partial class LingInvisibleActionEvent : InstantActionEvent
 public sealed partial class LingEMPActionEvent : InstantActionEvent
 {
 }
+
+public sealed partial class StasisDeathActionEvent : InstantActionEvent
+{
+}

@@ -45,6 +45,9 @@ public sealed partial class ChangelingComponent : Component
 
     #region Chemical Costs
     [DataField]
+    public float ChemicalsCostFree = 0;
+
+    [DataField]
     public float ChemicalsCostFive = -5f;
 
     [DataField]
@@ -199,6 +202,17 @@ public sealed partial class ChangelingComponent : Component
     public float DissonantShriekEmpDuration = 12f;
     #endregion
 
+
     [DataField]
     public float Accumulator = 0f;
+
+    [DataField]
+    public float StasisDeathDamageAmount = 300f;    /// Сколько пиздюлей генокрад получит от себя
+
+    [DataField]
+    public float StasisDeathHealAmount = -300f;     /// Сколько пиздюлей генокрад восстановит когда вейк апнется
+
+    [DataField]
+    public bool StasisDeathActive = false;      /// Получать или восстанавливать пиздюли?
+
 }
