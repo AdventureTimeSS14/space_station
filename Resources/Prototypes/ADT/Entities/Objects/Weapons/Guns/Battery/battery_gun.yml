@@ -21,23 +21,27 @@
   - type: Clothing
     sprite: ADT/Objects/Weapons/Guns/Battery/xyecoc.rsi
   - type: Gun
-    fireRate: 1.5
+    fireRate: 3
+    selectedMode: FullAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisabler
-    fireCost: 60
+    fireCost: 50
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: BulletDisabler
-      fireCost: 60
+      fireCost: 50
     - proto: BulletTaser
-      fireCost: 148
+      fireCost: 250
     - proto: ADTBulletLaser
-      fireCost: 111
+      fireCost: 50
   - type: Battery
-    maxCharge: 2220
-    startingCharge: 2220
+    maxCharge: 1500
+    startingCharge: 1500
   - type: Tag
     tags:
     - HighRiskItem
@@ -69,6 +73,7 @@
     slots:
     - Back
     - suitStorage
+
   #- type: AmmoCounter
   - type: Gun
     fireRate: 3.5
@@ -102,9 +107,9 @@
 
 - type: entity
   name: X-02 multiphas laser pistol
-  parent: ADTWeaponPistolX01
+  parent: BaseWeaponPowerCellSmall
   id: ADTWeaponPistolBlueShitX02
-  description: new version of antique gun witout selfrcharge for "BlueShit"
+  description: New version of antique gun witout selfrcharge for "BlueShit"
   components:
   - type: Sprite
     sprite: ADT/Objects/Weapons/Guns/Battery/BlueShield.rsi
@@ -115,30 +120,19 @@
       visible: false
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
-  - type: Item
-    size: Small
-    shape:
-    - 0,0,1,0
-    - 0,1,0,1
-  - type: MagazineVisuals
-    magState: mag
-    steps: 5
-    zeroVisible: true
+  - type: Gun
+    fireRate: 1.8
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: ADTPowerCellLasgunRevolver
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        whitelist:
+          tags:
+            - ADTLasgunRevolverCell
   - type: Clothing
     sprite: ADT/Objects/Weapons/Guns/Battery/BlueShield.rsi
-  - type: Gun
-    fireRate: 3
-  - type: ProjectileBatteryAmmoProvider
-    proto: BulletDisabler
-    fireCost: 30
-  - type: BatteryWeaponFireModes
-    fireModes:
-    - proto: BulletDisabler
-      fireCost: 35
-    - proto: ADTBulletLaserMK2
-      fireCost: 40
-  - type: Battery
-    maxCharge: 1200
-    startingCharge: 1200
-  - type: StaticPrice
-    price: 3000

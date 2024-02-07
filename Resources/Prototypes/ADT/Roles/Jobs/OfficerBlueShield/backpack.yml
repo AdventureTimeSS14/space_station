@@ -5,13 +5,14 @@
     - type: Storage
       maxItemSize: Huge
       grid:
-      - 0,0,6,3
+      - 0,0,6,4
     - type: StorageFill
       contents:
         # - id: MedkitBruteFilled
         - id: Zipties
           amount: 3
-        #- id: WeaponDisabler
+        - id: ADTPowerCellLasgunRevolver
+        - id: WeaponDisabler
         - id: Stunbaton
         # - id: HandheldCrewMonitor
         # - id: MagazinePistolSubMachineGun

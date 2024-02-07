@@ -1,5 +1,3 @@
-#NES игрушки
-
 - type: entity
   parent: BasePlushie
   id: PlushieVernio
@@ -50,6 +48,7 @@
   parent: BasePlushie
   id: PlushieAserovich
   name: плюшевый Асерович
+  suffix: НЕ МАППИТЬ
   description: Гандон.
   components:
   - type: Sprite
@@ -65,3 +64,41 @@
   - type: Sprite
     sprite: NES/Toys.rsi
     state: Shadowkin
+
+- type: entity
+  parent: BasePlushie
+  id: NesPlushieNeco
+  name: Неко Арк
+  suffix: НЕ МАППИТЬ
+  description: Плюшевая крутышка!
+  components:
+  - type: Sprite
+    state: PlushieArc
+    sprite: NES/Toys.rsi
+  - type: Item
+  - type: EmitSoundOnUse
+    sound:
+      collection: Ark
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/NES/necosound/kavooo.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      collection: Ark
+  - type: MeleeWeapon
+    soundHit:
+      collection: Ark
+  - type: UseDelay
+    delay: 2.5
+
+- type: soundCollection
+  id: Ark
+  files:
+  - /Audio/NES/necosound/nya.ogg
+  - /Audio/NES/necosound/nya2.ogg
+  - /Audio/NES/necosound/nya3.ogg
+  - /Audio/NES/necosound/nyanya.ogg
+  - /Audio/NES/necosound/china.ogg
+  - /Audio/NES/necosound/jan.ogg
+  - /Audio/NES/necosound/bibibi.ogg
+  - /Audio/NES/necosound/buubuu.ogg
