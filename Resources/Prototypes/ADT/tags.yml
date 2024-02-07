@@ -41,6 +41,9 @@
   id: Fish
 
 - type: Tag
+  id: ChangelingBlacklist
+  
+- type: Tag
   id: MobileDefibrillator
   
 - type: Tag
