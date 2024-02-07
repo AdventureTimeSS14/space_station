@@ -133,3 +133,18 @@
       state: emp
     useDelay: 15
     event: !type:LingEMPActionEvent
+
+    # Stasis Death
+- type: entity
+  id: ActionStasisDeath
+  name: action-stasis-death
+  description: action-stasis-death-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    icon:
+      sprite: Objects/Weapons/Melee/armblade.rsi
+      state: icon
+    event: !type:StasisDeathActionEvent
+    useDelay: 90
