@@ -114,7 +114,7 @@
         - id: GrenadeStinger
         - id: GrenadeFlashBang
         - id: GrenadeFlashBang
-        #- id: ADTSecurityCybPDA
+        - id: ADTSecurityCybPDA
         #- id: WelderIndustrialAdvanced
 
 - type: entity
