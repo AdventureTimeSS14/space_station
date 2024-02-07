@@ -137,6 +137,7 @@
       - id: HandLabeler
         prob: 0.5
       - id: ADTReagentAnalyzer
+      - id: ADTSmallSyringeBox
 
 - type: entity
   id: LockerParamedicFilled
