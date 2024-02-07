@@ -28,6 +28,6 @@
     socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraSportsAlternative # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
-  innerclothingskirt: ADTClothingUniformPathologistSuit
+  innerClothingSkirt: ADTClothingUniformPathologistSkirt
   satchel: ADTClothingBackpackSatchelPathologistFilled
   duffelbag: ADTClothingBackpackDuffelPathologistFilled

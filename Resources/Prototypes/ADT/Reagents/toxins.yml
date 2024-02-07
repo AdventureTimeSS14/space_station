@@ -30,9 +30,9 @@
 
 - type: reagent
   id: ADTPhronidolepaxorine
-  name: ADTPhronidolepaxorine
+  name: reagent-name-phronidolepaxorine
   group: Toxins
-  desc: ADTPhronidolepaxorine
+  desc: reagent-desc-phronidolepaxorine
   physicalDesc: reagent-physical-desc-translucent
   flavor: bitter
   color: "#c98928"

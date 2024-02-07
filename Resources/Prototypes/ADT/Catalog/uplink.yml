@@ -328,7 +328,7 @@
   id: ADTHighVoltageDefibrillatorFake
   name: uplink-fake-defib-name
   description: uplink-fake-defib-desc
-  productEntity: ADTFakeDefibrillator
+  productEntity: ADTHighVoltageDefibrillatorFake
   cost:
     Telecrystal: 10
   categories:

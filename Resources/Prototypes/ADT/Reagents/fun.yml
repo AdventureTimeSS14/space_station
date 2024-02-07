@@ -222,7 +222,7 @@
   group: Medicine
   desc: reagent-desc-chaotic-polymorphine
   physicalDesc: reagent-physical-desc-volatile
-  flavor: Magical
+  flavor: magical
   color: "#62278c"
   metabolisms:
     Medicine:
