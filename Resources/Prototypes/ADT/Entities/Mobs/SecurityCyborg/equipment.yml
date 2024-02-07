@@ -136,4 +136,8 @@
   id: ADTClothingNeckMantleHOSShoulderSecurityCyb
   name: Mantle cyborg
   description: desc
-  #components:
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/mantles/hosmantle_shoulder.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Neck/mantles/hosmantle_shoulder.rsi

@@ -333,6 +333,9 @@
     sprintModifier: 0.75
   - type: ToggleableClothing
     clothingPrototype: ADTClothingHeadHelmetHardsuitTacticalColors
+  - type: StealthClothing
+    visibility: 0.3
+    toggleAction: ActionTogglePhaseCloak
 
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
