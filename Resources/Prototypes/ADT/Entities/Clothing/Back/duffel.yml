@@ -32,11 +32,13 @@
 
 #этого вообще пока не должно быть в игре, поскольку у них нет текстур.
 
-- type: entity
-  parent: ClothingBackpackDuffel
-  id: ADTClothingBackpackDuffelParamedic
-  name: parsmedical duffel bag
-  description: A large duffel bag to hold paramedical equipment
-  components:
-  - type: Sprite
-    sprite: ADT/Clothing/Back/paramedic_duffel.rsi
+#- type: entity
+#  parent: ClothingBackpackDuffel
+#  id: ADTClothingBackpackDuffelParamedic
+#  name: parsmedical duffel bag
+#  description: A large duffel bag to hold paramedical equipment
+#  components:
+#  - type: Sprite
+#    sprite: ADT/Clothing/Back/paramedic_duffel.rsi
+
+#хочу проверить свою теорию.
