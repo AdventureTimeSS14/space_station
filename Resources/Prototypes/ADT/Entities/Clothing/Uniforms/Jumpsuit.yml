@@ -1165,3 +1165,65 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/sport_zeta_suit.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/sport_zeta_suit.rsi
+
+#День Святого Валентина
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformDarkManSuit
+  name: dark man suit
+  description: dark man suit
+  suffix: Valentine Day
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/dark_man_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/dark_man_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformBrightManSuit
+  name: bright man suit
+  description: bright man suit
+  suffix: Valentine Day
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/bright_man_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/bright_man_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformCupidonSuit
+  name: cupidon suit
+  description: cupidon suit
+  suffix: Valentine Day
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/cupidon_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/cupidon_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformRedSweaterHeart
+  name: red sweater with heart
+  description: red sweater with heart
+  suffix: Valentine Day
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/redsweaterheart_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/redsweaterheart_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformWhiteSweaterHeart
+  name: white sweater with heart
+  description: white sweater with heart
+  suffix: Valentine Day
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/whitesweaterheart_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/whitesweaterheart_suit.rsi
