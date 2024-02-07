@@ -43,7 +43,7 @@
   description: chameleon-skin-desc
   productAction: ActionLingInvisible
   cost:
-    EvolutionPoints: 4
+    EvolutionPoints: 7
   categories:
   - ChangelingAbilities
   conditions:

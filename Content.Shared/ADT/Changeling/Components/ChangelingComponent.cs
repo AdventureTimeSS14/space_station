@@ -45,6 +45,9 @@ public sealed partial class ChangelingComponent : Component
 
     #region Chemical Costs
     [DataField]
+    public float ChemicalsCostFree = 0;
+
+    [DataField]
     public float ChemicalsCostFive = -5f;
 
     [DataField]

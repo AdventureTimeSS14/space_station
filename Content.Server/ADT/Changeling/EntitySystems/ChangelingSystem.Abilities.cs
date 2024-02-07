@@ -536,7 +536,7 @@ public sealed partial class ChangelingSystem
             if (_mobState.IsDead(uid) && component.StasisDeathActive)
             {
 
-                if (!TryUseAbility(uid, component, component.ChemicalsCostTwentyFive))
+                if (!TryUseAbility(uid, component, component.ChemicalsCostFree))
                 return;
 
                 args.Handled = true;
