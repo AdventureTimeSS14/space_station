@@ -1,0 +1,18 @@
+# Снаряжения
+
+- type: startingGear
+  id: NesSalvagerGear # утиль уника
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
+    outerClothing: NesClothingOuterWinteSalvager
+    back: ClothingBackpackSalvageFilled
+    shoes: NesClothingShoesBootsSalvagerFilled
+    head: NesClothingHeadHatSalvagerRadio
+    id: SalvagePDA
+    ears: ClothingHeadsetCargo
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+  satchel: ClothingBackpackSatchelSalvageFilled
+  duffelbag: ClothingBackpackDuffelSalvageFilled

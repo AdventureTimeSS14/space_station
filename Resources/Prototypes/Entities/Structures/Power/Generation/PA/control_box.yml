@@ -15,6 +15,9 @@
   - type: ActivatableUI
     key: enum.ParticleAcceleratorControlBoxUiKey.Key
   - type: ActivatableUIRequiresPower
+  - type: AccessReader
+    access: [["Engineering"]]
+  - type: Lock
   - type: UserInterface
     interfaces:
     - key: enum.ParticleAcceleratorControlBoxUiKey.Key

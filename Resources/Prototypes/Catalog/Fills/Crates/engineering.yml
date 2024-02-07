@@ -212,7 +212,7 @@
   - type: StorageFill
     contents:
       - id: ClothingOuterHardsuitSpatio
-      - id: ClothingMaskGasExplorer
+      - id: NesClothingMaskGasSalvager
       - id: ClothingShoesBootsMag
       - id: ClothingUniformJumpsuitSalvageSpecialist
       - id: ClothingBackpackSatchelSalvage

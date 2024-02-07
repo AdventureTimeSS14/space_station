@@ -9,7 +9,7 @@
       - id: YellowOxygenTankFilled
       - id: NitrogenTankFilled
       - id: ClothingShoesBootsMag
-      - id: ClothingMaskGasExplorer
+      - id: NesClothingMaskGasSalvager
       - id: ClothingBeltUtilityFilled
       - id: SurvivalKnife
       - id: HandheldGPSBasic

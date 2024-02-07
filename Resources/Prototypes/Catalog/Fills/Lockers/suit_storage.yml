@@ -259,7 +259,7 @@
       - id: YellowOxygenTankFilled
       - id: ClothingShoesBootsMag
       - id: ClothingOuterHardsuitSpatio
-      - id: ClothingMaskGasExplorer
+      - id: NesClothingMaskGasSalvager
   - type: AccessReader
     access: [["Salvage"]]
 

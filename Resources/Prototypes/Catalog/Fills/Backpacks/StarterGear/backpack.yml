@@ -492,7 +492,7 @@
   components:
     - type: StorageFill
       contents:
-        - id: BoxSurvival
+        - id: NesBoxSurvivalSalvager
 
 # Pirate
 
