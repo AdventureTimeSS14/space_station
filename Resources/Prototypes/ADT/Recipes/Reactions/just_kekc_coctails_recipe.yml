@@ -242,3 +242,50 @@
       amount: 1
   products:
     ADTBacardiApple: 3
+
+#день святого валентина
+
+- type: reaction
+  id: ADTSerumLove
+  reactants:
+    IrishCarBomb:
+      amount: 1
+    Blood:
+      amount: 5
+  products:
+    ADTSerumLove: 6
+
+- type: reaction
+  id: ADTRossini
+  reactants:
+    Wine:
+      amount: 1
+    Cream:
+      amount: 1
+  products:
+    ADTRossini: 2
+
+
+- type: reaction
+  id: ADTKirRoyal
+  reactants:
+    Champagne:
+      amount: 5
+    Cream:
+      amount: 1
+  products:
+    ADTKirRoyal: 6
+
+- type: reaction
+  id: ADTCosmopolitan
+  reactants:
+    Wine:
+      amount: 2
+    JuiceLemon:
+      amount: 1
+    Ice:
+      amount: 1
+    Vodka:
+      amount: 2
+  products:
+    ADTCosmopolitan: 6
