@@ -401,83 +401,84 @@
         amount: 0.15
 
 #День Святого Валентина
+#комментим, дабы посмотреть ошибки.
 
-- type: reagent
-  id: ADTSerumLove
-  name: reagent-name-serum-love
-  parent: BaseAlcohol
-  desc: reagent-desc-serum-love
-  physicalDesc: reagent-physical-desc-refreshing
-  flavor: alcohol
-  color: "#ffb570"
-  metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
-    state: serum_love
-  metabolisms:
-    Drink:
-      effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.1
+#- type: reagent
+#  id: ADTSerumLove
+#  name: reagent-name-serum-love
+#  parent: BaseAlcohol
+#  desc: reagent-desc-serum-love
+#  physicalDesc: reagent-physical-desc-refreshing
+#  flavor: alcohol
+#  color: "#ffb570"
+#  metamorphicSprite:
+#    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
+#    state: serum_love
+#  metabolisms:
+#    Drink:
+#      effects:
+#      - !type:SatiateThirst
+#        factor: 2
+#      - !type:AdjustReagent
+#        reagent: Ethanol
+#        amount: 0.1
 
-- type: reagent
-  id: ADTRossini
-  name: reagent-name-rossini
-  parent: BaseAlcohol
-  desc: reagent-desc-rossini
-  physicalDesc: reagent-physical-desc-refreshing
-  flavor: alcohol
-  color: "#ff5331"
-  metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
-    state: rossini
-  metabolisms:
-    Drink:
-      effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.1
+#- type: reagent
+#  id: ADTRossini
+#  name: reagent-name-rossini
+#  parent: BaseAlcohol
+#  desc: reagent-desc-rossini
+#  physicalDesc: reagent-physical-desc-refreshing
+#  flavor: alcohol
+#  color: "#ff5331"
+#  metamorphicSprite:
+#    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
+#    state: rossini
+#  metabolisms:
+#    Drink:
+#      effects:
+#      - !type:SatiateThirst
+#        factor: 2
+#      - !type:AdjustReagent
+#        reagent: Ethanol
+#        amount: 0.1
 
-- type: reagent
-  id: ADTKirRoyal
-  name: reagent-name-kirroyal
-  parent: BaseAlcohol
-  desc: reagent-desc-kirroyal
-  physicalDesc: reagent-physical-desc-refreshing
-  flavor: alcohol
-  color: "#ffcb9b"
-  metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
-    state: kirroyal
-  metabolisms:
-    Drink:
-      effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.15
+#- type: reagent
+#  id: ADTKirRoyal
+#  name: reagent-name-kirroyal
+#  parent: BaseAlcohol
+#  desc: reagent-desc-kirroyal
+#  physicalDesc: reagent-physical-desc-refreshing
+#  flavor: alcohol
+#  color: "#ffcb9b"
+#  metamorphicSprite:
+#    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
+#    state: kirroyal
+#  metabolisms:
+#    Drink:
+#      effects:
+#      - !type:SatiateThirst
+#        factor: 2
+#      - !type:AdjustReagent
+#        reagent: Ethanol
+#        amount: 0.15
 
-- type: reagent
-  id: ADTCosmopolitan
-  name: reagent-name-cosmopolitan
-  parent: BaseAlcohol
-  desc: reagent-desc-cosmopolitan
-  physicalDesc: reagent-physical-desc-refreshing
-  flavor: alcohol
-  color: "#ffcb9b"
-  metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
-    state: cosmopolitan
-  metabolisms:
-    Drink:
-      effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.2
+#- type: reagent
+#  id: ADTCosmopolitan
+#  name: reagent-name-cosmopolitan
+#  parent: BaseAlcohol
+#  desc: reagent-desc-cosmopolitan
+#  physicalDesc: reagent-physical-desc-refreshing
+#  flavor: alcohol
+#  color: "#ffcb9b"
+#  metamorphicSprite:
+#    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
+#    state: cosmopolitan
+#  metabolisms:
+#    Drink:
+#      effects:
+#      - !type:SatiateThirst
+#        factor: 2
+#      - !type:AdjustReagent
+#        reagent: Ethanol
+#        amount: 0.2
