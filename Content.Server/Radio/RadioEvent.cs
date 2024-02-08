@@ -1,11 +1,18 @@
 using Content.Shared.Chat;
+using Content.Shared.Language;
 using Content.Shared.Radio;
 
 namespace Content.Server.Radio;
 
 [ByRefEvent]
-public readonly record struct RadioReceiveEvent(string Message, EntityUid MessageSource, RadioChannelPrototype Channel, MsgChatMessage ChatMsg);
-
+public readonly record struct RadioReceiveEvent(
+    // Frontier - languages mechanic
+    EntityUid MessageSource,
+    RadioChannelPrototype Channel,
+    ChatMessage UnderstoodChatMsg,
+    ChatMessage NotUnderstoodChatMsg,
+    LanguagePrototype Language
+);
 /// <summary>
 /// Use this event to cancel sending message per receiver
 /// </summary>
