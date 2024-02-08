@@ -1595,10 +1595,10 @@
   - type: NonSpreaderZombie
   - type: PreventSpiller
   - type: LanguageSpeaker # Frontier
-  speaks:
-  - Mouse
-  understands:
-  - Mouse
+    speaks:
+    - Mouse
+    understands:
+    - Mouse
 
 - type: entity
   parent: MobMouse
