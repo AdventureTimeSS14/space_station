@@ -1,0 +1,19 @@
+- type: entity
+  name: аварийный запас
+  parent: BoxCardboard
+  id: NesBoxSurvivalSalvager
+  description: Коробка с базовым набором для выживания.
+  suffix: Утиль
+  components:
+  - type: StorageFill
+    contents:
+      - id: NesClothingMaskGasSalvager
+      - id: EmergencyOxygenTankFilled
+      - id: EmergencyMedipen
+      - id: FoodTinMRE
+      - id: DrinkWaterBottleFull
+      - id: SpaceMedipen
+  - type: Sprite
+    layers:
+      - state: internals
+      - state: emergencytank

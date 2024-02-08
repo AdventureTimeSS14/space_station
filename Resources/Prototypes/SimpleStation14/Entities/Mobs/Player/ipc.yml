@@ -108,6 +108,11 @@
     understands:
     - GalacticCommon
     - RobotTalk
+  - type: Tag
+    tags:
+    - ChangelingBlacklist
+    - ShoesRequiredStepTriggerImmune
+
 
 
 - type: entity

@@ -126,6 +126,10 @@
         volume: -2
   - type: NoSlip
   - type: Insulated
+  - type: Tag
+    tags:
+    - ChangelingBlacklist
+    - ShoesRequiredStepTriggerImmune
   # - type: PresetIdCard
   #   job: ADTSecurityCyborg
   # - type: AccessReader

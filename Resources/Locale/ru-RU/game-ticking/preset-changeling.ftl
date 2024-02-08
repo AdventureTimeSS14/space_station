@@ -52,4 +52,5 @@ changeling-dna-sting = Вы забираете образец ДНК {THE($targe
 changeling-dna-sting-fail-nodna = {CAPITALIZE(THE($target))} не имеет ДНК!
 changeling-dna-sting-fail-alreadydna = У вас уже есть ДНК {THE($target)}!
 
-
+changeling-stasis-death-self-success = Ваше тело обмякает и падает замертво! Но вы ещё проснётесь...
+changeling-stasis-death-self-revive = Вы восстаёте из мёртвых! Буквально.

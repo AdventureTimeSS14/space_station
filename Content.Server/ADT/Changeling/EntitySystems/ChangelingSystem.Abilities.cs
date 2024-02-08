@@ -21,6 +21,10 @@ using Content.Shared.FixedPoint;
 using Content.Server.Store.Components;
 using Content.Shared.Chemistry.Components;
 using Content.Server.Fluids.EntitySystems;
+using Content.Shared.Tag;
+using Content.Shared.Mobs;
+using Content.Shared.Mobs.Components;
+using Content.Shared.Mobs.Systems;
 
 namespace Content.Server.Changeling.EntitySystems;
 
@@ -37,6 +41,7 @@ public sealed partial class ChangelingSystem
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly PuddleSystem _puddle = default!;
 
+
     private void InitializeLingAbilities()
     {
         SubscribeLocalEvent<ChangelingComponent, LingAbsorbActionEvent>(StartAbsorbing);
@@ -48,6 +53,7 @@ public sealed partial class ChangelingSystem
         SubscribeLocalEvent<ChangelingComponent, LingInvisibleActionEvent>(OnLingInvisible);
         SubscribeLocalEvent<ChangelingComponent, LingEMPActionEvent>(OnLingEmp);
         SubscribeLocalEvent<ChangelingComponent, LingStingExtractActionEvent>(OnLingDNASting);
+        SubscribeLocalEvent<ChangelingComponent, StasisDeathActionEvent>(OnStasisDeathAction);
     }
 
     private void StartAbsorbing(EntityUid uid, ChangelingComponent component, LingAbsorbActionEvent args)
@@ -76,6 +82,14 @@ public sealed partial class ChangelingSystem
             _popup.PopupEntity(selfMessage, uid, uid);
             return;
         }
+
+        if (_tagSystem.HasTag(target, "ChangelingBlacklist"))
+        {
+            var selfMessage = Loc.GetString("changeling-dna-sting-fail-nodna", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
 
         args.Handled = true;
 
@@ -488,6 +502,14 @@ public sealed partial class ChangelingSystem
             return;
         }
 
+        if (_tagSystem.HasTag(target, "ChangelingBlacklist"))
+        {
+            var selfMessage = Loc.GetString("changeling-dna-sting-fail-nodna", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
+
 
         if (!TryUseAbility(uid, component, component.ChemicalsCostTwentyFive))
             return;
@@ -499,5 +521,53 @@ public sealed partial class ChangelingSystem
             var selfMessageSuccess = Loc.GetString("changeling-dna-sting", ("target", Identity.Entity(target, EntityManager)));
             _popup.PopupEntity(selfMessageSuccess, uid, uid);
         }
+    }
+
+    private void OnStasisDeathAction(EntityUid uid, ChangelingComponent component, StasisDeathActionEvent args)     /// С каждым днём всё дальше от бога и всё ближе к пониманию робусты
+    {
+        if (args.Handled)
+            return;
+
+        if (!component.StasisDeathActive)
+        {
+            if (!_mobState.IsDead(uid))     
+            {
+                if (!TryUseAbility(uid, component, component.ChemicalsCostTwentyFive))
+                return;
+
+                args.Handled = true;
+
+                var damage_burn = new DamageSpecifier(_proto.Index(BurnDamageGroup), component.StasisDeathDamageAmount);
+                _damageableSystem.TryChangeDamage(uid, damage_burn);    /// Самоопиздюливание
+
+                component.StasisDeathActive = true;
+
+                var selfMessage = Loc.GetString("changeling-stasis-death-self-success");  /// всё, я спать откисать, адьос
+                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+
+            }
+        }
+        else
+        {
+
+            if (_mobState.IsDead(uid) && component.StasisDeathActive)
+            {
+
+                if (!TryUseAbility(uid, component, component.ChemicalsCostFree))
+                return;
+
+                args.Handled = true;
+
+                var selfMessage = Loc.GetString("changeling-stasis-death-self-revive");  /// вейк ап энд cum бэк ту ворк
+                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+
+                var damage_burn = new DamageSpecifier(_proto.Index(BurnDamageGroup), component.StasisDeathHealAmount);
+                _damageableSystem.TryChangeDamage(uid, damage_burn);    /// Самоантиопиздюливание
+                _mobState.ChangeMobState(uid, MobState.Critical);   /// Переходим в крит, если повреждений окажется меньше нужных для крита, поднимемся в MobState.Alive сами
+                _damageableSystem.TryChangeDamage(uid, damage_burn);
+                component.StasisDeathActive = false;
+            }
+        }
+
     }
 }
