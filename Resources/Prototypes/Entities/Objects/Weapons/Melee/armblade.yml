@@ -28,5 +28,5 @@
     malus: 0
   - type: Reflect
     enabled: true
-    reflectProb: .50
-    spread: 75
+    reflectProb: .30
+    spread: 50
