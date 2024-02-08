@@ -372,7 +372,7 @@
       drink:
         maxVol: 30
         reagents:
-        - ReagentId: ADTSerumLove
+        - ReagentId: Wine
           Quantity: 30
   - type: Sprite
     sprite: ADT/Objects/Consumable/Drinks/serumlove.rsi
@@ -390,7 +390,7 @@
       drink:
         maxVol: 30
         reagents:
-        - ReagentId: ADTRossini
+        - ReagentId: Wine
           Quantity: 30
   - type: Sprite
     sprite: ADT/Objects/Consumable/Drinks/rossini.rsi
@@ -408,7 +408,7 @@
       drink:
         maxVol: 30
         reagents:
-        - ReagentId: ADTKirRoyal
+        - ReagentId: Wine
           Quantity: 30
   - type: Sprite
     sprite: ADT/Objects/Consumable/Drinks/kirroyal.rsi
@@ -426,7 +426,7 @@
       drink:
         maxVol: 30
         reagents:
-        - ReagentId: ADTCosmopolitan
+        - ReagentId: Wine
           Quantity: 30
   - type: Sprite
     sprite: ADT/Objects/Consumable/Drinks/cosmopolitan.rsi
