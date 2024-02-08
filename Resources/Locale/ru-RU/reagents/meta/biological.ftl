@@ -1,9 +1,11 @@
 reagent-name-blood = кровь
 reagent-desc-blood = Я надеюсь, что это кетчуп.
+reagent-name-insect-blood = кровь насекомых
+reagent-desc-insect-blood = Ладно, это отвратительно. Выглядит даже... живым?
 reagent-name-slime = слизь
 reagent-desc-slime = Сначала вам показалось, что это градиент крови, но вы ошиблись.
-reagent-name-spider-blood = синяя кровь
-reagent-desc-spider-blood = На вкус совсем не как черничный сок.
+reagent-name-hemocyanin-blood = синяя кровь
+reagent-desc-hemocyanin-blood = На вкус совсем не как черничный сок.
 reagent-name-zombie-blood = кровь зомби
 reagent-desc-zombie-blood = Не рекомендуется употреблять в пищу. Может быть использована для создания прививки от инфекции.
 reagent-name-ichor = ихор
