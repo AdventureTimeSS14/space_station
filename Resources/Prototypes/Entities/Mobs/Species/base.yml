@@ -134,6 +134,7 @@
       - !type:WashCreamPieReaction
   - type: StatusEffects
     allowed:
+    - PainKiller
     - Stun
     - KnockedDown
     - SlowedDown
@@ -263,6 +264,7 @@
   # Organs
   - type: StatusEffects
     allowed:
+    - PainKiller
     - Stun
     - KnockedDown
     - SlowedDown

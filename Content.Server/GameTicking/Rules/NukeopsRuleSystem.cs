@@ -507,14 +507,14 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
         }
     }
 
-    private void SetWinType(EntityUid uid, WinType type, NukeopsRuleComponent? component = null, bool endRound = true)
+    private void SetWinType(EntityUid uid, WinType type, NukeopsRuleComponent? component = null)
     {
         if (!Resolve(uid, ref component))
             return;
 
         component.WinType = type;
 
-        if (endRound && (type == WinType.CrewMajor || type == WinType.OpsMajor))
+        if (type == WinType.CrewMajor || type == WinType.OpsMajor)
             _roundEndSystem.EndRound();
     }
 
@@ -526,7 +526,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
             if (!GameTicker.IsGameRuleAdded(uid, gameRule))
                 continue;
 
-            if (nukeops.RoundEndBehavior == RoundEndBehavior.Nothing || nukeops.WinType == WinType.CrewMajor || nukeops.WinType == WinType.OpsMajor)
+            if (!nukeops.EndsRound || nukeops.WinType == WinType.CrewMajor || nukeops.WinType == WinType.OpsMajor)
                 continue;
 
             // If there are any nuclear bombs that are active, immediately return. We're not over yet.
@@ -579,12 +579,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
                 ? WinCondition.NukiesAbandoned
                 : WinCondition.AllNukiesDead);
 
-            SetWinType(uid, WinType.CrewMajor, nukeops, false);
-            _roundEndSystem.DoRoundEndBehavior(
-                nukeops.RoundEndBehavior, nukeops.EvacShuttleTime, nukeops.RoundEndTextSender, nukeops.RoundEndTextShuttleCall, nukeops.RoundEndTextAnnouncement);
-
-            // prevent it called multiple times
-            nukeops.RoundEndBehavior = RoundEndBehavior.Nothing;
+            SetWinType(uid, WinType.CrewMajor, nukeops);
         }
     }
 
@@ -789,7 +784,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
 
         foreach (var (nukeops, gameRule) in EntityQuery<NukeopsRuleComponent, GameRuleComponent>())
         {
-            if (nukeops.OperativeMindPendingData.TryGetValue(uid, out var role) || !nukeops.SpawnOutpost || nukeops.RoundEndBehavior == RoundEndBehavior.Nothing)
+            if (nukeops.OperativeMindPendingData.TryGetValue(uid, out var role) || !nukeops.SpawnOutpost || !nukeops.EndsRound)
             {
                 role ??= nukeops.OperativeRoleProto;
                 _roles.MindAddRole(mindId, new NukeopsRoleComponent { PrototypeId = role });

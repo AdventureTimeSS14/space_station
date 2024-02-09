@@ -74,19 +74,19 @@ public sealed partial class ZombieRuleComponent : Component
     /// How many players for each initial infected.
     /// </summary>
     [DataField("playersPerInfected")]
-    public int PlayersPerInfected = 10;
+    public int PlayersPerInfected = 5;
 
     /// <summary>
     /// The maximum number of initial infected.
     /// </summary>
     [DataField("maxInitialInfected")]
-    public int MaxInitialInfected = 6;
+    public int MaxInitialInfected = 10;
 
     /// <summary>
     /// After this amount of the crew become zombies, the shuttle will be automatically called.
     /// </summary>
     [DataField("zombieShuttleCallPercentage")]
-    public float ZombieShuttleCallPercentage = 0.5f;
+    public float ZombieShuttleCallPercentage = 0.8f;
 
     /// <summary>
     /// Have we called the evac shuttle yet?

@@ -54,7 +54,8 @@ namespace Content.Shared.Alert
         BorgHealth,
         BorgCrit,
         BorgDead,
-        Chemicals
+        Chemicals,
+        PainKiller
     }
 
 }

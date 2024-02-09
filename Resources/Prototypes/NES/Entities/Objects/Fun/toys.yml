@@ -1,0 +1,104 @@
+- type: entity
+  parent: BasePlushie
+  id: PlushieVernio
+  name: плюшевый Вернио
+  description: Персонаж старого комикса про Вернио и Арсению маршс, теперь в плюшевом формате.
+  components:
+  - type: Sprite
+    sprite: NES/Toys.rsi
+    state: VernioMrsh
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/Items/Toys/weh.ogg
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieArsenia
+  name: плюшевая Арсения
+  description: Персонаж старого комикса про Вернио и Арсению маршс, теперь в плюшевом формате.
+  components:
+  - type: Sprite
+    sprite: NES/Toys.rsi
+    state: ArseniaPlush
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/Items/Toys/weh.ogg
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieAserovich
+  name: плюшевый Асерович
+  suffix: НЕ МАППИТЬ
+  description: Гандон.
+  components:
+  - type: Sprite
+    sprite: NES/Toys.rsi
+    state: Aserovich
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieShadowkin
+  name: плюшевый Сумеречник
+  description: Игрушка сумеречника в странной обтягивающей одежде и с очками.
+  components:
+  - type: Sprite
+    sprite: NES/Toys.rsi
+    state: Shadowkin
+
+- type: entity
+  parent: BasePlushie
+  id: NesPlushieNeco
+  name: Неко Арк
+  suffix: НЕ МАППИТЬ
+  description: Плюшевая крутышка!
+  components:
+  - type: Sprite
+    state: PlushieArc
+    sprite: NES/Toys.rsi
+  - type: Item
+  - type: EmitSoundOnUse
+    sound:
+      collection: Ark
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/NES/necosound/kavooo.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      collection: Ark
+  - type: MeleeWeapon
+    soundHit:
+      collection: Ark
+  - type: UseDelay
+    delay: 2.5
+
+- type: soundCollection
+  id: Ark
+  files:
+  - /Audio/NES/necosound/nya.ogg
+  - /Audio/NES/necosound/nya2.ogg
+  - /Audio/NES/necosound/nya3.ogg
+  - /Audio/NES/necosound/nyanya.ogg
+  - /Audio/NES/necosound/china.ogg
+  - /Audio/NES/necosound/jan.ogg
+  - /Audio/NES/necosound/bibibi.ogg
+  - /Audio/NES/necosound/buubuu.ogg

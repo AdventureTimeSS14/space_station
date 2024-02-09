@@ -110,3 +110,12 @@ tiles-wood3 = пол сломанный деревянный
 tiles-hull = наружная обшивка корпуса
 tiles-hull-reinforced = наружная укреплённая обшивка корпуса
 tiles-web = паутинный пол
+
+tiles-dirt-floor-artifical = грязь (искуственный)
+tiles-desert-floor-artifical = пол пустыня (искуственный)
+tiles-low-desert-floor-artifical = пол низин пустыни (искуственный)
+tiles-grass-planet-floor-artifical = пол трава планет (искуственный)
+tiles-basalt-floor-artifical = пол лавы (искуственный)
+tiles-snow-artifical = снег (искуственный)
+tiles-ice-artifical = лёд (искуственный)
+tiles-snow-dug-artifical = копаный снег (искуственный)
