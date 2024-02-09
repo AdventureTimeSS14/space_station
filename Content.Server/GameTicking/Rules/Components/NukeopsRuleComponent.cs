@@ -1,5 +1,4 @@
 using Content.Server.NPC.Components;
-using Content.Server.RoundEnd;
 using Content.Server.StationEvents.Events;
 using Content.Shared.Dataset;
 using Content.Shared.Roles;
@@ -33,34 +32,10 @@ public sealed partial class NukeopsRuleComponent : Component
     public int MaxOps = 4;
 
     /// <summary>
-    /// What will happen if all of the nuclear operatives will die. Used by LoneOpsSpawn event.
+    /// Whether or not all of the nuclear operatives dying will end the round. Used by LoneOpsSpawn event.
     /// </summary>
-    [DataField]
-    public RoundEndBehavior RoundEndBehavior = RoundEndBehavior.ShuttleCall;
-
-    /// <summary>
-    /// Text for shuttle call if RoundEndBehavior is ShuttleCall.
-    /// </summary>
-    [DataField]
-    public string RoundEndTextSender = "comms-console-announcement-title-centcom";
-
-    /// <summary>
-    /// Text for shuttle call if RoundEndBehavior is ShuttleCall.
-    /// </summary>
-    [DataField]
-    public string RoundEndTextShuttleCall = "nuke-ops-no-more-threat-announcement-shuttle-call";
-
-    /// <summary>
-    /// Text for announcement if RoundEndBehavior is ShuttleCall. Used if shuttle is already called
-    /// </summary>
-    [DataField]
-    public string RoundEndTextAnnouncement = "nuke-ops-no-more-threat-announcement";
-
-    /// <summary>
-    /// Time to emergency shuttle to arrive if RoundEndBehavior is ShuttleCall.
-    /// </summary>
-    [DataField]
-    public TimeSpan EvacShuttleTime = TimeSpan.FromMinutes(3);
+    [DataField("endsRound")]
+    public bool EndsRound = true;
 
     /// <summary>
     /// Whether or not to spawn the nuclear operative outpost. Used by LoneOpsSpawn event.

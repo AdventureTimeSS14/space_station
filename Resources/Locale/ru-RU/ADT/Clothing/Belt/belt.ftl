@@ -15,3 +15,7 @@ ent-ADTClothingBeltBrownSuspenders = кожанные подтяжки
 ent-ADTClothingBeltSecAuditorHolster = кобура аудитора СБ
     .desc = Кобура для проверяющего работу Службы Безопасности станции.
     .suffix = { "ЦК, CombatBibis, Заполненная" }
+
+ent-ADTClothingBeltQuiverCupidon = колчан купидона
+    .desc = Для доставки влюбленностей, и пусть никто не уйдет без стрелы в сердце!
+    .suffix = { "День Святого Валентина" }

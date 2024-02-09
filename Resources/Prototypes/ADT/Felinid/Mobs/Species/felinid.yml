@@ -10,7 +10,7 @@
     netsync: false
     noRot: true
     drawdepth: Mobs
-    scale: 0.97, 0.97
+    scale: 0.98, 0.98
     layers:
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
       - map: [ "enum.HumanoidVisualLayers.Head" ]
@@ -65,6 +65,14 @@
         visible: false
   - type: HumanoidAppearance
     species: Felinid
+  - type: Destructible #процесс разрушения на органы
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt #при каком дамаге это происходит
+        damage: 300
+      behaviors:
+      - !type:GibBehavior { }
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       fix1:
@@ -104,7 +112,7 @@
     butcheringType: Spike # TODO human.
     spawned:
       - id: FoodMeat
-        amount: 5
+      - id: ClothingHeadHatCatEars
 
 - type: entity
   save: false

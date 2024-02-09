@@ -50,11 +50,11 @@
       baseWalkSpeed : 2.7
       baseSprintSpeed : 4.6
     - type: Perishable
-    #- type: Sprite
-    #  netsync: false
-    #  noRot: true
-    #  drawdepth: Mobs
-    #  scale: 0.90, 0.90
+    - type: Sprite
+      netsync: false
+      noRot: true
+      drawdepth: Mobs
+      scale: 0.95, 0.95
 
 - type: entity
   save: false
@@ -66,9 +66,9 @@
   components:
     - type: HumanoidAppearance
       species: VulpkaninSpecies
-    #- type: Sprite
-    #  netsync: false
-    #  noRot: true
-    #  drawdepth: Mobs
-    #  scale: 0.90, 0.90
+    - type: Sprite
+      netsync: false
+      noRot: true
+      drawdepth: Mobs
+      scale: 0.95, 0.95
 

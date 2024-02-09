@@ -1,26 +1,37 @@
 - type: vendingMachineInventory
   id: ClothesMateInventory
   startingInventory:
+    ADTClothingUniformDarkManSuit: 2
+    ADTClothingUniformBrightManSuit: 2
+    ADTClothingUniformCupidonSuit: 1
+    ADTClothingBeltQuiverCupidon: 1
+    ADTClothingOuterCupidonWings: 1
+    ADTClothingUniformRedSweaterHeart: 2
+    ADTClothingUniformWhiteSweaterHeart: 2
+    ADTClothingOuterRedCardigan: 2
+    ADTClothingOuterBlackCardigan: 2
+    ADTClothingUnderwearSocksHeart: 2
+    ADTClothingUnderwearStockingsHeart: 2
     ClothingBackpack: 3
     ClothingBackpackDuffel: 3
     ClothingBackpackSatchel: 3
     ClothingBackpackSatchelLeather: 2
-    ADTClothingBackpackBlackLadySatchel: 3
-    ADTClothingBackpackLeatherLadySatchel: 3
-    ClothingHeadHatBeret: 3
+    ADTClothingBackpackBlackLadySatchel: 2
+    ADTClothingBackpackLeatherLadySatchel: 2
+    ClothingHeadHatBeret: 2
     ClothingHeadBandBlack: 2
     ClothingHeadBandBlue: 2
     ClothingHeadBandGreen: 2
     ClothingHeadBandRed: 2
     ClothingHeadBandSkull: 2
-    ClothingHeadHatGreyFlatcap: 3
-    ClothingHeadHatBrownFlatcap: 3
-    ClothingUniformJumpsuitColorGrey: 3
-    ClothingUniformJumpskirtColorGrey: 3
-    ClothingUniformJumpsuitColorWhite: 3
-    ClothingUniformJumpskirtColorWhite: 3
-    ClothingUniformJumpsuitColorBlack: 3
-    ClothingUniformJumpskirtColorBlack: 3
+    ClothingHeadHatGreyFlatcap: 2
+    ClothingHeadHatBrownFlatcap: 2
+    ClothingUniformJumpsuitColorGrey: 2
+    ClothingUniformJumpskirtColorGrey: 2
+    ClothingUniformJumpsuitColorWhite: 2
+    ClothingUniformJumpskirtColorWhite: 2
+    ClothingUniformJumpsuitColorBlack: 2
+    ClothingUniformJumpskirtColorBlack: 2
     ClothingUniformJumpsuitColorBlue: 2
     ClothingUniformJumpskirtColorBlue: 2
     ClothingUniformJumpsuitColorYellow: 2
@@ -52,16 +63,16 @@
     ClothingUniformJumpskirtCasualPurple: 2
     ClothingUniformJumpsuitCasualRed: 2
     ClothingUniformJumpskirtCasualRed: 2
-    ClothingShoesColorBlack: 8
-    ClothingShoesColorBrown: 4
-    ClothingShoesColorWhite: 3
+    ClothingShoesColorBlack: 4
+    ClothingShoesColorBrown: 2
+    ClothingShoesColorWhite: 2
     ClothingShoesColorBlue: 2
     ClothingShoesColorYellow: 2
     ClothingShoesColorGreen: 2
     ClothingShoesColorOrange: 2
     ClothingShoesColorRed: 2
     ClothingShoesColorPurple: 2
-    ClothingHeadHatGreysoft: 8
+    ClothingHeadHatGreysoft: 4
     ClothingHeadHatMimesoft: 3
     ClothingHeadHatBluesoft: 2
     ClothingHeadHatYellowsoft: 2
@@ -78,7 +89,7 @@
     ClothingNeckScarfStripedGreen: 3
     ClothingHeadHatFez: 2
     ClothingBeltStorageWaistbag: 3
-    ClothingEyesGlasses: 6
+    ClothingEyesGlasses: 3
     ClothingEyesGlassesSunglasses: 2
     ClothingHandsGlovesColorBlack: 4
     ClothingHandsGlovesColorGray: 4

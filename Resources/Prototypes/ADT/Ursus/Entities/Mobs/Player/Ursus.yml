@@ -24,7 +24,8 @@
     - type: NpcFactionMember
       factions:
         #- NanoTrasen
-        - SimpleHostile
+        #- SimpleHostile
+        - Ursus # сделал отдельную факцию, ибо эти две не подходят
     - type: Respirator
       damage:
         types:
