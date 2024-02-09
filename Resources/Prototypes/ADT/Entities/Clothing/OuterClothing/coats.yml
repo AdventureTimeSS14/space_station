@@ -68,3 +68,26 @@
         Heat: 0.70
   - type: ExplosionResistance
     damageCoefficient: 0.90
+
+#Выживалово
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ADTClothingOuterVizhivalovo
+  name: vizhivalovo jacket
+  description: vizhivalovo jacket
+  suffix: Vishivalovo
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Coats/vizhivalovo_coat.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Coats/vizhivalovo_coat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.70
+        Piercing: 0.9
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.90

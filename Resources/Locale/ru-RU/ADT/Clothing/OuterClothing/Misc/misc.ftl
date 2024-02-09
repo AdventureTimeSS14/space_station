@@ -13,3 +13,7 @@ ent-ADTClothingOuterBlackCardigan = черный кардиган
 ent-ADTClothingOuterCupidonWings = крылья купидона
     .desc = Мягкие, милые и почти как настоящие.
     .suffix = { "День Святого Валентина" }
+
+ent-ADTClothingOuterVizhivalovo = куртка Выживалово
+    .desc = Очень крепкая куртка для плотнейших замесов с лесными зверьми.
+    .suffix = { "Выживалово" }
