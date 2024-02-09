@@ -18,6 +18,12 @@ public sealed partial class LanguageSpeakerComponent : Component
     public string CurrentLanguage = default!;
 
     /// <summary>
+    /// чтоб в чате видно было не айди, а название.
+    /// </summary>
+    public string LocalizedID => Loc.GetString("language-" + CurrentLanguage);
+
+
+    /// <summary>
     ///     List of languages this entity can speak.
     /// </summary>
     [ViewVariables]

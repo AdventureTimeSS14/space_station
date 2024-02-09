@@ -423,6 +423,12 @@ public sealed partial class ChatSystem : SharedChatSystem
         if (TryComp<HumanoidAppearanceComponent>(source, out var comp))
             name = $"[color={comp.SpeakerColor.ToHex()}]{name}[/color]";
         // Corvax-SpeakerColor-End
+
+        // Frontier: languages mechanic ADT Upd start
+        if (TryComp<LanguageSpeakerComponent>(source, out var lang))
+            name = $"{name} ({lang.LocalizedID})";
+        // Frontier: languages mechanic ADT Upd end
+
         var wrappedMessage = WrapPublicMessage(source, name, message);
         var obfuscated = _language.ObfuscateSpeech(source, message, language);
         var wrappedObfuscated = WrapPublicMessage(source, name, obfuscated);
@@ -491,10 +497,18 @@ public sealed partial class ChatSystem : SharedChatSystem
             name = nameEv.Name;
         }
         name = FormattedMessage.EscapeText(name);
+
         // Corvax-SpeakerColor-Start
         if (TryComp<HumanoidAppearanceComponent>(source, out var comp))
             name = $"[color={comp.SpeakerColor.ToHex()}]{name}[/color]";
         // Corvax-SpeakerColor-End
+
+
+        // Frontier: languages mechanic ADT Upd start
+        if (TryComp<LanguageSpeakerComponent>(source, out var lang))
+            name = $"{name} ({lang.LocalizedID})";
+        // Frontier: languages mechanic ADT Upd end
+
 
         // Frontier - languages mechanic (+ everything in the foreach loop)
         var language = languageOverride ?? _language.GetLanguage(source);
