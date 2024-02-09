@@ -1,6 +1,8 @@
 - type: vendingMachineInventory
   id: GoodCleanFunInventory
   startingInventory:
+    ADTBoxValentineWhite: 5
+    ADTBoxValentineRed: 5
     DiceBag: 6
     Paper: 8
     d6Dice: 8

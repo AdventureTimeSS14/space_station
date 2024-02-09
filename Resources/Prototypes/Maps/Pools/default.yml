@@ -1,7 +1,7 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  - Aspid
+  #- Aspid
   - Atlas
   - Bagel
   - Box
@@ -16,4 +16,11 @@
   - Origin
   - Saltern
   - Packed
-  - Reach
+  #- Reach
+  - CorvaxDelta
+  - CorvaxAvrite
+  #- CorvaxGate
+  - CorvaxSilly
+  - CorvaxOutpost
+  - CorvaxAstra
+  - CorvaxGelta

@@ -90,7 +90,7 @@
   icon: { sprite: Clothing/OuterClothing/Hardsuits/syndieelite.rsi, state: icon }
   productEntity: ADTClothingBackpackDuffelSyndicateFilledElite
   cost:
-    Telecrystal: 10
+    Telecrystal: 14
   categories:
   - UplinkArmor
   conditions:

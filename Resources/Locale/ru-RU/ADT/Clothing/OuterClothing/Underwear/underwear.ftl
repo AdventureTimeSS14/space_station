@@ -96,3 +96,10 @@ ent-ADTClothingUnderwearSocksFingerlessStripped = беспалые носки в
     .desc = Для тех, кому когти мешают греть ноги.
 ent-ADTClothingUnderwearSocksStripped = носки в полоску
     .desc = Простые праздничные носки в полоску.
+
+ent-ADTClothingUnderwearSocksHeart = носки с сердечками
+    .desc = Теплый и милый подарок для любимого.
+    .suffix = { "День Святого Валентина" }
+ent-ADTClothingUnderwearStockingsHeart = длинные чулки с сердечками
+    .desc = Теплый и милый подарок для любимой.
+    .suffix = { "День Святого Валентина" }

@@ -1,0 +1,489 @@
+# безалкогольные
+
+- type: reagent
+  id: ADTSummerShade
+  name: summer-shade-name
+  parent: BaseDrink
+  desc: summer-shade-desc
+  physicalDesc: reagent-physical-desc-refreshing
+  flavor: ADTSummerShadeFlavor
+  color: "#FF2B2B"
+  recognizable: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 5
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtsummershade
+
+- type: reagent
+  id: ADTWinterSun
+  name: winter-sun-name
+  parent: BaseDrink
+  desc: winter-sun-desc
+  physicalDesc: reagent-physical-desc-milky
+  flavor: ADTWinterSunFlavor
+  color: "#edccab"
+  recognizable: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtwintersun
+
+- type: reagent
+  id: ADTHungoverAngel
+  name: hungover-angel-name
+  parent: BaseDrink
+  desc: hungover-angel-desc
+  physicalDesc: reagent-physical-desc-exhilarating
+  flavor: ADTHungoverAngelFlavor
+  color: "#FBEC5D"
+  recognizable: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Toxin: -1
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-hungover" ]
+        probability: 0.04
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adthungoverangel
+
+- type: reagent
+  id: ADTCitrusBalance
+  name: citrus-balance-name
+  parent: BaseDrink
+  desc: citrus-balance-desc
+  physicalDesc: reagent-physical-desc-citric
+  flavor: ADTCitrusBalanceFlavor
+  color: "#F8D568"
+  recognizable: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtcitrusbalance
+
+- type: reagent
+  id: ADTDobryiDrink
+  name: dobryi-drink-name
+  parent: BaseDrink
+  desc: dobryi-drink-desc
+  physicalDesc: reagent-physical-desc-sour
+  flavor: ADTDobryiDrinkFlavor
+  color: "#955F20"
+  recognizable: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtdobryidrink
+
+- type: reagent
+  id: ADTMilkEclipse
+  name: milk-eclipse-name
+  parent: BaseDrink
+  desc: milk-eclipse-desc
+  physicalDesc: reagent-physical-desc-refreshing
+  flavor: ADTMilkEclipseFlavor
+  color: "#D8DEBA"
+  recognizable: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 4
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtmilkeclipse
+
+- type: reagent
+  id: ADTArcticExplosion
+  name: arctic-explosion-name
+  parent: BaseDrink
+  desc: arctic-explosion-desc
+  physicalDesc: reagent-physical-desc-refreshing
+  flavor: ADTArcticExplosionFlavor
+  color: "#c5e3e2"
+  recognizable: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtarcticexplosion
+
+
+
+# алкогольные
+
+- type: reagent
+  id: ADTSugarKnight
+  name: sugar-knight-name
+  parent: BaseAlcohol
+  desc: sugar-knight-desc
+  physicalDesc: reagent-physical-desc-sugary
+  flavor: ADTSugarKnightFlavor
+  color: "#D36E70"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtsugarknight
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.1
+
+- type: reagent
+  id: ADTGrapeLady
+  name: grape-lady-name
+  parent: BaseAlcohol
+  desc: grape-lady-desc
+  physicalDesc: reagent-physical-desc-dark-red
+  flavor: ADTGrapeLadyFlavor
+  color: "#8C4852"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtgrapelady
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.1
+
+- type: reagent
+  id: ADTSaturdayBaron
+  name: saturday-baron-name
+  parent: BaseAlcohol
+  desc: saturday-baron-desc
+  physicalDesc: reagent-physical-desc-tart
+  flavor: ADTSaturdayBaronFlavor
+  color: "#EFA94A"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtsaturdaybaron
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.15
+
+- type: reagent
+  id: ADTArcticLatte
+  name: artic-latte-name
+  parent: BaseAlcohol
+  desc: artic-latte-desc
+  physicalDesc: reagent-physical-desc-refreshing
+  flavor: ADTArcticLatteFlavor
+  color: "#916631"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtarcticlatte
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.1
+
+- type: reagent
+  id: ADTSpecialTeaOolong
+  name: special-teaoolong-name
+  parent: BaseAlcohol
+  desc: special-teaoolong-desc
+  physicalDesc: reagent-physical-desc-overpowering
+  flavor: ADTSpecialTeaOolongFlavor
+  color: "#8c492a"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtspecialteaoolong
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.3
+
+- type: reagent
+  id: ADTAzureBlue
+  name: azure-blue-name
+  parent: BaseAlcohol
+  desc: azure-blue-desc
+  physicalDesc: reagent-physical-desc-tropical
+  flavor: ADTAzureBlueFlavor
+  color: "#6498e3"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtazureblue
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.15
+
+- type: reagent
+  id: ADTPenetrationDrink
+  name: penetration-drink-name
+  parent: BaseAlcohol
+  desc: penetration-drink-desc
+  physicalDesc: reagent-physical-desc-overpowering
+  flavor: ADTPenetrationDrinkFlavor
+  color: "#6ddb6b"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtpenetrationdrink
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.15
+
+- type: reagent
+  id: ADTEclipsedEclispe
+  name: eclipsed-eclipse-name
+  parent: BaseAlcohol
+  desc: eclipsed-eclipse-desc
+  physicalDesc: reagent-physical-desc-overpowering
+  flavor: ADTEclipsedEclispeFlavor
+  color: "#592506"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adteclipsedeclispe
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.6
+
+- type: reagent
+  id: ADTSpaceBush
+  name: space-bush-name
+  parent: BaseAlcohol
+  desc: space-bush-desc
+  physicalDesc: reagent-physical-desc-fizzy
+  flavor: ADTSpaceBushFlavor
+  color: "#85de8e"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtspacebush
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.15
+
+- type: reagent
+  id: ADTBusinessConversation
+  name: business-conversation-name
+  parent: BaseAlcohol
+  desc: business-conversation-desc
+  physicalDesc: reagent-physical-desc-overpowering
+  flavor: ADTBusinessConversationFlavor
+  color: "#a8140a"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtbizconversation
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.2
+      - !type:AdjustReagent
+        reagent: Bicaridine
+        amount: 0.2
+
+- type: reagent
+  id: ADTAppleLiqueur
+  name: apple-liqueur-name
+  parent: BaseAlcohol
+  desc: apple-liqueur-desc
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: ADTAppleLiqueurFlavor
+  color: "#47941b"
+  recognizable: true
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtappleliqueur
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.05
+
+- type: reagent
+  id: ADTAppleMartini
+  name: apple-martini-name
+  parent: BaseAlcohol
+  desc: apple-martini-desc
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: ADTAppleMartiniFlavor
+  color: "#664300"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtapplemartini
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.15
+
+- type: reagent
+  id: ADTBacardiApple
+  name: bacardi-apple-name
+  parent: BaseAlcohol
+  desc: bacardi-apple-desc
+  physicalDesc: reagent-physical-desc-refreshing
+  flavor: ADTBacardiAppleFlavor
+  color: "#d4f2a7"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
+    state: adtbacardiapple
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.15
+
+#День Святого Валентина
+#комментим, дабы посмотреть ошибки.
+
+#- type: reagent
+#  id: ADTSerumLove
+#  name: reagent-name-serum-love
+#  parent: BaseAlcohol
+#  desc: reagent-desc-serum-love
+#  physicalDesc: reagent-physical-desc-refreshing
+#  flavor: alcohol
+#  color: "#ffb570"
+#  metamorphicSprite:
+#    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
+#    state: serum_love
+#  metabolisms:
+#    Drink:
+#      effects:
+#      - !type:SatiateThirst
+#        factor: 2
+#      - !type:AdjustReagent
+#        reagent: Ethanol
+#        amount: 0.1
+
+#- type: reagent
+#  id: ADTRossini
+#  name: reagent-name-rossini
+#  parent: BaseAlcohol
+#  desc: reagent-desc-rossini
+#  physicalDesc: reagent-physical-desc-refreshing
+#  flavor: alcohol
+#  color: "#ff5331"
+#  metamorphicSprite:
+#    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
+#    state: rossini
+#  metabolisms:
+#    Drink:
+#      effects:
+#      - !type:SatiateThirst
+#        factor: 2
+#      - !type:AdjustReagent
+#        reagent: Ethanol
+#        amount: 0.1
+
+#- type: reagent
+#  id: ADTKirRoyal
+#  name: reagent-name-kirroyal
+#  parent: BaseAlcohol
+#  desc: reagent-desc-kirroyal
+#  physicalDesc: reagent-physical-desc-refreshing
+#  flavor: alcohol
+#  color: "#ffcb9b"
+#  metamorphicSprite:
+#    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
+#    state: kirroyal
+#  metabolisms:
+#    Drink:
+#      effects:
+#      - !type:SatiateThirst
+#        factor: 2
+#      - !type:AdjustReagent
+#        reagent: Ethanol
+#        amount: 0.15
+
+#- type: reagent
+#  id: ADTCosmopolitan
+#  name: reagent-name-cosmopolitan
+#  parent: BaseAlcohol
+#  desc: reagent-desc-cosmopolitan
+#  physicalDesc: reagent-physical-desc-refreshing
+#  flavor: alcohol
+#  color: "#ffcb9b"
+#  metamorphicSprite:
+#    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
+#    state: cosmopolitan
+#  metabolisms:
+#    Drink:
+#      effects:
+#      - !type:SatiateThirst
+#        factor: 2
+#      - !type:AdjustReagent
+#        reagent: Ethanol
+#        amount: 0.2

@@ -325,28 +325,44 @@ ent-ADTClothingUniformSportRoseSuit = костюм STEP "Rose"
 ent-ADTClothingUniformSportStepSuit = спортивный костюм "STEP"
     .desc = Эта стильная тренировочная футболка серии "STEP" от компании VD-sport с уникальным дизайном: один рукав короткий, другой – длинный, что делает её особенной. В дополнение к ней представлены модульные спортивные брюки STEP "Modular" с интересной опцией отстегивания нижней части, превращаясь в стильные шорты. Эта комбинация создана для городского спортсмена, начинающего свой путь с STEP. На этикетке указан состав 100% полиамид. На ощупь они эластичные и футуристичные.
 ent-ADTClothingUniformSportZetaSuit = костюм STEP "Zeta"
-    .desc = Спортивный костюм с зелёными полосами. 
+    .desc = Спортивный костюм с зелёными полосами.
+
+ent-ADTClothingUniformDarkManSuit = темный мужской костюм
+    .desc = Стильные темные брюки и пиджак с красной оторочкой.
+    .suffix = { "День Святого Валентина" }
+ent-ADTClothingUniformBrightManSuit = светлый мужской костюм
+    .desc = Стильные светлые брюки и красный верх.
+    .suffix = { "День Святого Валентина" }
+ent-ADTClothingUniformCupidonSuit = одеяние купидона
+    .desc = На 50% мифическое одеяние, на 50% - обернутая вокруг тела простыня.
+    .suffix = { "День Святого Валентина" }
+ent-ADTClothingUniformRedSweaterHeart = красный свитер с сердечком
+    .desc = Теплый, красный, с любовью.
+    .suffix = { "День Святого Валентина" }
+ent-ADTClothingUniformWhiteSweaterHeart = белый свитер с сердечком
+    .desc = Теплый, белый, с любовью.
+    .suffix = { "День Святого Валентина" }
+
+ent-ADTClothingUniformVizhivalovo = одежда Выживалово
+    .desc = Лучшие штаны и футболка для дегустации дешевых консерв.
+    .suffix = { "Выживалово" }
+
 
 ent-ADTClothingUniformPathologistSuit = костюм патологоанатома
     .desc = Лёгкий комбинезон для работника морга.
     .suffix = { "" } 
-
 ent-ADTClothingUniformPathologistSkirt = юбка-костюм патологоанатома
     .desc = Лёгкая юбка-комбинезон для работницы морга.
     .suffix = { "" } 
-
 ent-ADTClothingUniformPathologistSuitAlt = чёрный костюм патологоанатома
     .desc = Лёгкий комбинезон для работника морга. Более угрюмая версия.
     .suffix = { "" } 
-
 ent-ADTClothingUniformPathologistSkirtAlt = чёрная юбка-костюм патологоанатома
     .desc = Лёгкая юбка-комбинезон для работницы морга. Более угрюмая версия.
     .suffix = { "" } 
-
 ent-ADTClothingUniformHikeformCmo = походный костюм главного врача
     .desc = Рубашка и мешковитые штаны, отлично подходящие для активной работы как вне, так и внутри своего отдела.
     .suffix = { "" }
-
 ent-ADTClothingUniformHikeJumpskirtCmo = походная юбка-костюм главного врача
     .desc = Рубашка и мешковитая юбка, отлично подходящие для активной работы как вне, так и внутри своего отдела.
     .suffix = { "" }

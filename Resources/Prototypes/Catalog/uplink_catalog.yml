@@ -1346,7 +1346,7 @@
   description: uplink-clothing-outer-hardsuit-juggernaut-desc
   productEntity: ClothingOuterHardsuitJuggernaut
   cost:
-    Telecrystal: 16
+    Telecrystal: 24
   categories:
   - UplinkArmor
 
