@@ -74,7 +74,7 @@ public sealed partial class ZombieRuleComponent : Component
     /// How many players for each initial infected.
     /// </summary>
     [DataField("playersPerInfected")]
-    public int PlayersPerInfected = 10;
+    public int PlayersPerInfected = 5;
 
     /// <summary>
     /// The maximum number of initial infected.
