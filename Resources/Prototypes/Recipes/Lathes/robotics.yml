@@ -567,3 +567,13 @@
     Steel: 250
     Glass: 250
     Plastic: 250
+
+- type: latheRecipe
+  id: ADTBorgModuleCrusher
+  result: ADTBorgModuleCrusher
+  completetime: 3
+  materials:
+    Steel: 250
+    Glass: 250
+    Plastic: 250
+
