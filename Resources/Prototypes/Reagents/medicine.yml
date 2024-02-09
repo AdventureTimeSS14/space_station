@@ -516,10 +516,10 @@
       - !type:HealthChange
         conditions:
           - !type:ReagentThreshold
-            min: 30
+            min: 60
         damage:
           types:
-            Poison: 3
+            Poison: 1
       - !type:ChemVomit
         probability: 0.15
         conditions:
