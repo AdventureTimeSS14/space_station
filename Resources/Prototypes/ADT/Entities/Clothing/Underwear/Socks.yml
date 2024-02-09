@@ -202,3 +202,25 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Underwear/Socks/socks_stripped.rsi #Спрайты от prazat911
+
+#День Святого Валентина
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearSocksHeart
+  name: socks with hearts
+  description: socks with hearts
+  suffix: Valentine Day
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Socks/socks_heart.rsi #Спрайты от lunalita
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearStockingsHeart
+  name: stockings with hearts
+  description: socks with hearts
+  suffix: Valentine Day
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Socks/stockings_heart.rsi #Спрайты от lunalita
