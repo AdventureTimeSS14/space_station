@@ -60,7 +60,7 @@ namespace Content.IntegrationTests.Tests
             "ADTNYDelta",
 
             // Corvax-Start
-            //"CorvaxAvrite",
+            "CorvaxAvrite",
             "CorvaxDelta",
             //"CorvaxIshimura",
 			//"CorvaxSpectrum",
