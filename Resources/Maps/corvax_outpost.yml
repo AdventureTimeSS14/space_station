@@ -48325,7 +48325,6 @@ entities:
     - type: RandomSpawner
       chance: 0.2
       prototypes:
-      - SpawnPointEvilTwin
       - MobSkeletonCloset
   - uid: 17107
     components:
