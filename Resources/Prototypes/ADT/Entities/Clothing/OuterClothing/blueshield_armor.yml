@@ -17,5 +17,3 @@
         Heat: 0.8
   - type: ExplosionResistance
     damageCoefficient: 0.80
-  - type: Item
-    size: Large

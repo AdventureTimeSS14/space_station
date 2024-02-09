@@ -233,6 +233,19 @@
     - WeaponGrapplingGun
     - WeaponCrusherDagger
 
+- type: entity
+  id: ADTBorgModuleCrusher
+  parent: [ BaseBorgModuleCargo, BaseProviderBorgModule ]
+  name: Advanced salvage module
+  components:
+  - type: Sprite
+    layers:
+    - state: cargo
+    - state: icon-crusher
+  - type: ItemBorgModule
+    items:
+    - ADTWeaponCrusherBORG
+
 # engineering modules
 - type: entity
   id: BorgModuleAdvancedTool

@@ -28,3 +28,6 @@ ent-ADTWoodenSword = деревянный меч
 ent-ADTStunbaguette = багет
     .desc = Bon appétit! Attendez... Il est faux!
     .suffix = { "Дубинка" }
+
+ent-ADTWeaponCrusherBORG = модульный крушитель
+    .desc = Модульный крушитель киборга, для ситуаций когда нужно что-то потяжелее. 

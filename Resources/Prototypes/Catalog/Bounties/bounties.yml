@@ -1,6 +1,6 @@
 - type: cargoBounty
   id: BountyArtifact
-  reward: 2500
+  reward: 7500
   description: bounty-description-artifact
   entries:
   - name: bounty-item-artifact
@@ -23,7 +23,7 @@
 
 - type: cargoBounty
   id: BountyBoxHug
-  reward: 3000
+  reward: 12000
   description: bounty-description-box-hugs
   entries:
   - name: bounty-item-box-hugs
@@ -56,12 +56,12 @@
 
 - type: cargoBounty
   id: BountyBriefcase
-  reward: 7500
+  reward: 10000
   description: bounty-description-briefcase
   idPrefix: CC
   entries:
   - name: bounty-item-briefcase
-    amount: 5
+    amount: 2
     whitelist:
       tags:
       - Briefcase
@@ -91,7 +91,7 @@
 
 - type: cargoBounty
   id: BountyCarp
-  reward: 12500
+  reward: 15000
   description: bounty-description-carp
   idPrefix: CC
   entries:
@@ -188,7 +188,7 @@
 
 - type: cargoBounty
   id: BountyFlower
-  reward: 2000
+  reward: 6000
   description: bounty-description-flower
   idPrefix: CC
   entries:
@@ -268,7 +268,7 @@
 
 - type: cargoBounty
   id: BountyLung
-  reward: 2000
+  reward: 6000
   description: bounty-description-lung
   entries:
   - name: bounty-item-lung
@@ -363,7 +363,7 @@
   description: bounty-description-radio
   entries:
   - name: bounty-item-radio
-    amount: 12
+    amount: 7
     whitelist:
       components:
       - Headset
