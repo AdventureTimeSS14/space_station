@@ -1,6 +1,10 @@
 - type: vendingMachineInventory
   id: HotDrinksMachineInventory
   startingInventory:
+    ADTSerumLoveGlass: 3
+    ADTRossiniGlass: 3
+    ADTKirRoyalGlass: 3
+    ADTCosmopolitanGlass: 3
     DrinkHotCoffee: 5
     DrinkCafeLatte: 5
     DrinkTeacup: 5
