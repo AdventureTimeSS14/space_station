@@ -9233,6 +9233,20 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 12.424086,-61.87117
       parent: 2
+- proto: ADTSpawnPointADTSupplyBorg
+  entities:
+  - uid: 14737
+    components:
+    - type: Transform
+      pos: -4.5,40.5
+      parent: 2
+- proto: ADTSpawnPointEngiBorg
+  entities:
+  - uid: 14736
+    components:
+    - type: Transform
+      pos: -26.5,19.5
+      parent: 2
 - proto: ADTSpawnPointIAA
   entities:
   - uid: 14721
@@ -9252,6 +9266,13 @@ entities:
     - type: Transform
       pos: -47.5,-9.5
       parent: 2
+- proto: ADTSpawnPointJanitorBorg
+  entities:
+  - uid: 14732
+    components:
+    - type: Transform
+      pos: 2.5,-12.5
+      parent: 2
 - proto: ADTSpawnPointMagistrat
   entities:
   - uid: 14722
@@ -9259,12 +9280,33 @@ entities:
     - type: Transform
       pos: 9.5,28.5
       parent: 2
+- proto: ADTSpawnPointMedicalBorg
+  entities:
+  - uid: 14731
+    components:
+    - type: Transform
+      pos: 13.5,-35.5
+      parent: 2
 - proto: ADTSpawnPointRoboticist
   entities:
   - uid: 14725
     components:
     - type: Transform
       pos: 22.5,2.5
+      parent: 2
+- proto: ADTSpawnPointSecurityCyborg
+  entities:
+  - uid: 14734
+    components:
+    - type: Transform
+      pos: -45.5,-13.5
+      parent: 2
+- proto: ADTSpawnPointServiseBorg
+  entities:
+  - uid: 14733
+    components:
+    - type: Transform
+      pos: -18.5,-11.5
       parent: 2
 - proto: AirAlarm
   entities:
@@ -10512,7 +10554,7 @@ entities:
       pos: -54.5,16.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -4264.6025
+      secondsUntilStateChange: -4539.6006
       state: Opening
   - uid: 9987
     components:
@@ -69628,7 +69670,7 @@ entities:
       pos: 21.5,-12.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -89563.56
+      secondsUntilStateChange: -89838.56
       state: Closing
   - uid: 1457
     components:
@@ -80949,6 +80991,13 @@ entities:
     components:
     - type: Transform
       pos: -4.5,-18.5
+      parent: 2
+- proto: SpawnPointBrigmedic
+  entities:
+  - uid: 14735
+    components:
+    - type: Transform
+      pos: -46.5,-14.5
       parent: 2
 - proto: SpawnPointCaptain
   entities:
