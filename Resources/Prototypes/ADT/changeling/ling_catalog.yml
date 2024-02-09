@@ -4,7 +4,7 @@
   description: extract-dna-string-desc
   productAction: ActionLingStingExtract
   cost:
-    EvolutionPoints: 3
+    EvolutionPoints: 2
   categories:
   - ChangelingAbilities
   conditions:
@@ -30,7 +30,7 @@
   description: chitinous-armor-desc
   productAction: ActionLingArmor
   cost:
-    EvolutionPoints: 4
+    EvolutionPoints: 7
   categories:
   - ChangelingAbilities
   conditions:
@@ -43,7 +43,7 @@
   description: chameleon-skin-desc
   productAction: ActionLingInvisible
   cost:
-    EvolutionPoints: 3
+    EvolutionPoints: 7
   categories:
   - ChangelingAbilities
   conditions:
@@ -57,6 +57,19 @@
   productAction: ActionLingEMP
   cost:
     EvolutionPoints: 2
+  categories:
+  - ChangelingAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: ChangelingStasisDeath
+  name: stasis-death
+  description: stasis-death-desc
+  productAction: ActionStasisDeath
+  cost:
+    EvolutionPoints: 4
   categories:
   - ChangelingAbilities
   conditions:

@@ -45,11 +45,12 @@ changeling-dna-alreadyabsorbed = ДНК {CAPITALIZE(THE($target))} уже соб
 changeling-dna-nodna = {CAPITALIZE(THE($target))} не имеет ДНК!
 changeling-dna-switchdna = Переключился на ДНК {$target}.
 changeling-transform-activate = Вы превратились в {$target}.
-changeling-transform-fail = Вы уже превратились в {$target}!
+changeling-transform-fail = Вы не можете превратиться в {$target} сейчас!
 changeling-sting-fail-self = Ужалить {THE($target)} не вышло!
 changeling-sting-fail-target = Вы чувствуёте лёгкое покалывание.
 changeling-dna-sting = Вы забираете образец ДНК {THE($target)}.
 changeling-dna-sting-fail-nodna = {CAPITALIZE(THE($target))} не имеет ДНК!
 changeling-dna-sting-fail-alreadydna = У вас уже есть ДНК {THE($target)}!
 
-
+changeling-stasis-death-self-success = Ваше тело обмякает и падает замертво! Но вы ещё проснётесь...
+changeling-stasis-death-self-revive = Вы восстаёте из мёртвых! Буквально.

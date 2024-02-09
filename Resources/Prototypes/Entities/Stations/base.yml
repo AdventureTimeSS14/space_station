@@ -54,8 +54,9 @@
             - /Maps/Shuttles/trading_outpost.yml
         mining:
           paths:
-          - /Maps/Shuttles/cargo.yml
           - /Maps/Shuttles/mining.yml
+        security:
+          paths:
           - /Maps/Shuttles/security.yml
         ruins:
           hide: true

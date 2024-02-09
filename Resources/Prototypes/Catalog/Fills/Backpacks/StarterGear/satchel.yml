@@ -263,7 +263,7 @@
   components:
     - type: StorageFill
       contents:
-        - id: BoxSurvival
+        - id: NesBoxSurvivalSalvager
 
 - type: entity
   noSpawn: true

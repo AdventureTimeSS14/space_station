@@ -104,7 +104,7 @@ namespace Content.Server.Zombies
             RemComp<BarotraumaComponent>(target);
             RemComp<HungerComponent>(target);
             RemComp<ThirstComponent>(target);
-            RemComp<ReproductiveComponent>(target); 
+            RemComp<ReproductiveComponent>(target);
             RemComp<ReproductivePartnerComponent>(target);
 
             //funny voice
@@ -128,7 +128,7 @@ namespace Content.Server.Zombies
             var melee = EnsureComp<MeleeWeaponComponent>(target);
             melee.Animation = zombiecomp.AttackAnimation;
             melee.WideAnimation = zombiecomp.AttackAnimation;
-            melee.Range = 1.2f;
+            melee.Range = 2f;
 
             if (mobState.CurrentState == MobState.Alive)
             {
@@ -168,7 +168,7 @@ namespace Content.Server.Zombies
                 {
                     DamageDict = new()
                     {
-                        { "Slash", 13 },
+                        { "Slash", 15 },
                         { "Piercing", 7 },
                         { "Structural", 10 }
                     }
@@ -177,7 +177,7 @@ namespace Content.Server.Zombies
 
                 // humanoid zombies get to pry open doors and shit
                 var pryComp = EnsureComp<PryingComponent>(target);
-                pryComp.SpeedModifier = 0.75f;
+                pryComp.SpeedModifier = 1.2f;
                 pryComp.PryPowered = true;
                 pryComp.Force = true;
 

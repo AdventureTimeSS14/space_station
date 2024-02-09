@@ -3,6 +3,39 @@
 
 В этом блокноте собраны рецепты более полутора десятков уникальных коктейлей от одного хорошего бармена-слаймолюда. 
 
+## Коктейли ко Дню Святого Валентина
+<Box>
+  <GuideEntityEmbed Entity="ADTSerumLoveGlass" Caption="Сыворотка любви"/>
+  <GuideEntityEmbed Entity="ADTRossiniGlass" Caption="Россини"/>
+  <GuideEntityEmbed Entity="ADTKirRoyalGlass" Caption="Кир Ройал"/>
+  <GuideEntityEmbed Entity="ADTCosmopolitanGlass" Caption="Космполитен"/>
+</Box>
+[bold]Сыворотка любви[/bold]
+
+Рецепт:
+- Ирландская автомобильная бомба, 1 часть
+- Кровь, 5 частей
+
+[bold]Россини[/bold]
+
+Рецепт:
+- Вино, 1 часть
+- Сливки, 1 часть
+
+[bold]Манхеттенский Кир Ройал[/bold]
+
+Рецепт:
+- Сливки, 1 часть
+- Шампанское, 5 частей
+
+[bold]Космополитен[/bold]
+
+Рецепт:
+- Водка, 2 части
+- Вино, 2 части
+- Лёд, 1 часть
+- Сок лимона, 1 часть
+
 ## Новогодние напитки
 <Box>
   <GuideEntityEmbed Entity="ADTChristmasMilkshakeGlass" Caption="Новогодний милкшейк"/>
