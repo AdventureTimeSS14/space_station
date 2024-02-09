@@ -1,6 +1,10 @@
 - type: vendingMachineInventory
   id: GetmoreChocolateCorpInventory
   startingInventory:
+    ADTFoodCakeChocolateHeart: 2
+    ADTFoodBananChocolate: 3
+    ADTFoodBananChocolatePink: 3
+    ADTFoodBoxEclairs: 3
     FoodSnackRaisins: 3
     FoodSnackChocolate: 3
     FoodSnackCnDs: 3

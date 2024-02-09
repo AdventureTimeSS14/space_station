@@ -162,6 +162,11 @@
     - type: DroneConsole
       components:
         - type: SalvageShuttle
+    #start-whitelist-for-winter-planet    В будущем можно будет убрать
+    - type: Tag
+      tags:
+        - ADTWinterPlanet
+    #end-whitelist-for-winter-planet
     - type: RadarConsole
       maxRange: 256
     - type: PointLight
