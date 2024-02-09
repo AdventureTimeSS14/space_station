@@ -1,0 +1,181 @@
+- type: entity
+  name: chocolate cake
+  parent: FoodCakeBase
+  id: ADTFoodCakeChocolateHeart
+  description: A cake with added chocolate.
+  components:
+  - type: Sprite
+    state: chocolate_heart
+  - type: SliceableFood
+    slice: ADTFoodCakeChocolateHeartSlice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 35
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+        - ReagentId: Theobromine
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 5
+
+- type: entity
+  name: slice of chocolate cake
+  parent: FoodCakeSliceBase
+  id: ADTFoodCakeChocolateHeartSlice
+  components:
+  - type: Sprite
+    state: chocolate-slice-heart
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 8
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Theobromine
+          Quantity: 1
+        - ReagentId: Vitamin
+          Quantity: 1
+
+- type: entity
+  name: banana in chocolate
+  parent: FoodDonutBase
+  id: ADTFoodBananChocolate
+  description: Goes great with a mason jar of hippie's delight.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - banana
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/Snacks/banana_in_choco.rsi
+    state: in-dark-choco
+
+- type: entity
+  name: banana in pink chocolate
+  parent: FoodDonutBase
+  id: ADTFoodBananChocolatePink
+  description: Goes great with a mason jar of hippie's delight.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - banana
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/Snacks/banana_in_choco.rsi
+    state: in-pink-choco
+
+- type: entity
+  parent: [ BoxCardboard, BaseBagOpenClose ]
+  id: ADTFoodBoxEclairs
+  name: eclairs obx
+  description: Mmm, Eclairs.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/Snacks/eclairs.rsi
+    state: box
+    layers:
+    - state: box
+    - state: box-open
+      map: ["openLayer"]
+      visible: false
+    - state: eclairs_1
+      map: ["eclairs_1"]
+      visible: false
+    - state: eclairs_2
+      map: ["eclairs_2"]
+      visible: false
+    - state: eclairs_3
+      map: ["eclairs_3"]
+      visible: false
+    - state: eclairs_4
+      map: ["eclairs_4"]
+      visible: false
+  - type: Storage
+    grid:
+    - 0,0,3,0
+    whitelist:
+      tags:
+      - Donut
+  - type: Item
+    sprite: ADT/Objects/Consumable/Food/Snacks/eclairs.rsi
+    size: Small
+    # heldPrefix: box
+  - type: StorageFill
+    contents:
+    - id: ADTFoodEclairBrown
+      amount: 1
+    - id: ADTFoodEclairChocolate
+      amount: 1
+    - id: ADTFoodEclairWhite
+      amount: 1
+    - id: ADTFoodEclairPink
+      amount: 1
+  - type: ItemCounter
+    count:
+      tags: [Donut]
+    composite: true
+    layerStates:
+    - eclairs_1
+    - eclairs_2
+    - eclairs_3
+    - eclairs_4
+  - type: Appearance
+
+- type: entity
+  name: brown eclair
+  parent: FoodDonutBase
+  id: ADTFoodEclairBrown
+  description: Goes great with a mason jar of hippie's delight.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - creamy
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/Snacks/eclairs.rsi
+    state: eclairs_brown
+
+- type: entity
+  name: chocolate eclair
+  parent: FoodDonutBase
+  id: ADTFoodEclairChocolate
+  description: Goes great with a mason jar of hippie's delight.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - creamy
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/Snacks/eclairs.rsi
+    state: eclairs_chocolate
+
+- type: entity
+  name: pink eclair
+  parent: FoodDonutBase
+  id: ADTFoodEclairPink
+  description: Goes great with a mason jar of hippie's delight.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - creamy
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/Snacks/eclairs.rsi
+    state: eclairs_pink
+
+- type: entity
+  name: white eclair
+  parent: FoodDonutBase
+  id: ADTFoodEclairWhite
+  description: Goes great with a mason jar of hippie's delight.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - creamy
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/Snacks/eclairs.rsi
+    state: eclairs_white

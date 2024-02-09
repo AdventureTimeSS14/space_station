@@ -357,3 +357,77 @@
   - type: Sprite
     sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
     state: adtbacardiapple
+
+#День Святого Валентина
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTSerumLoveGlass
+  name: reagent-name-serum-love
+  description: reagent-desc-serum-love
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Wine
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/serumlove.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTRossiniGlass
+  name: reagent-name-rossini
+  description: reagent-desc-rossini
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Wine
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/rossini.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTKirRoyalGlass
+  name: reagent-name-kirroyal
+  description: reagent-desc-kirroyal
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Wine
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/kirroyal.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTCosmopolitanGlass
+  name: reagent-name-cosmopolitan
+  description: reagent-desc-cosmopolitan
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Wine
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/cosmopolitan.rsi
+    state: icon

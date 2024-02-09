@@ -5,7 +5,6 @@ using Content.Server.GameTicking;
 using Content.Server.GameTicking.Rules;
 using Content.Server.GameTicking.Rules.Components;
 using Content.Server.StationEvents.Components;
-using Content.Server.RoundEnd;
 
 namespace Content.Server.StationEvents.Events;
 
@@ -37,8 +36,7 @@ public sealed class LoneOpsSpawnRule : StationEventSystem<LoneOpsSpawnRuleCompon
         var nukeopsEntity = _gameTicker.AddGameRule(component.GameRuleProto);
         component.AdditionalRule = nukeopsEntity;
         var nukeopsComp = EntityManager.GetComponent<NukeopsRuleComponent>(nukeopsEntity);
-        nukeopsComp.SpawnOutpost = false;
-        nukeopsComp.RoundEndBehavior = RoundEndBehavior.Nothing;
+        nukeopsComp.EndsRound = false;
         _gameTicker.StartGameRule(nukeopsEntity);
     }
 
