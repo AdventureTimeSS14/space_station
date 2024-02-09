@@ -32,7 +32,7 @@
     - DoorBumpOpener
   - type: NightVision
     isOn: true
-    color: "#e0c8c8FF"
+    color: "#a1a1a1FF"
 
 - type: entity
   abstract: true
