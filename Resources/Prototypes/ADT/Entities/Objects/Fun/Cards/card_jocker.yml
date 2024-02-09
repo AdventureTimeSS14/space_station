@@ -6,7 +6,7 @@
     visuals:
       enum.TrayScannerVisual.Visual:
         base:
-          On: { state: blackjoker-on" }
+          On: { state: blackjoker-on }
           Off: { state: back-off }
 
 - type: entity

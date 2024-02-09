@@ -192,6 +192,9 @@
       },
       {
         "name": "JobADTIconSecurityCyborg"
+      },
+      {
+        "name": "JobIconChangeling"
       }
   ]
 }
