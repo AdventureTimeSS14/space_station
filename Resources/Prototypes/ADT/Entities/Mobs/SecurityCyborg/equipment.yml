@@ -24,7 +24,7 @@
   components:
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 40
+    autoRechargeRate: 10
   - type: Sprite
     sprite: ADT/Mobs/Silicon/Cyborg/cyb_gun.rsi
     scale: 0.9, 0.9
@@ -100,6 +100,8 @@
   name: backpack cyborg
   description: desc
   components:
+    - type: Sprite
+      sprite: ADT/Clothing/Back/ertleader_cyb.rsi
     - type: Unremoveable
     - type: StorageFill
       contents:
@@ -117,23 +119,32 @@
         - id: ADTSecurityCybPDA
         #- id: WelderIndustrialAdvanced
 
-- type: entity
-  parent: ADTClothingShoesBootsMagERT
-  id: ADTClothingShoesBootsCybSec
-  name: Boots cyborg
-  description: desc
-  components:
-  - type: Unremoveable
-  - type: Sprite
-    sprite: ADT/Mobs/Silicon/Cyborg/advanced.rsi
-  - type: Clothing
-    sprite: ADT/Mobs/Silicon/Cyborg/advanced.rsi
-  - type: Magboots
-    # toggleAction: ActionToggleMagboots
+# - type: entity
+#   parent: ADTClothingShoesBootsMagERT
+#   id: ADTClothingShoesBootsCybSec
+#   name: Boots cyborg
+#   description: desc
+#   components:
+#   - type: Unremoveable
+#   - type: Sprite
+#     sprite: ADT/Mobs/Silicon/Cyborg/advanced.rsi
+#   - type: Clothing
+#     sprite: ADT/Mobs/Silicon/Cyborg/advanced.rsi
+#   - type: Magboots
+#     # toggleAction: ActionToggleMagboots
 
 - type: entity
   parent: ClothingNeckMantleHOSShoulder
   id: ADTClothingNeckMantleHOSShoulderSecurityCyb
   name: Mantle cyborg
   description: desc
-  #components:
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/mantles/cybmantle_shoulder.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Neck/mantles/cybmantle_shoulder.rsi
+    clothingVisuals:
+      neck:
+      - state: equipped-NECK
+      - state: equipped-NECK-unshaded
+        shader: unshaded
