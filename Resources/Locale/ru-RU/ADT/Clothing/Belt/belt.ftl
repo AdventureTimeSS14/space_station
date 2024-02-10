@@ -19,3 +19,6 @@ ent-ADTClothingBeltSecAuditorHolster = кобура аудитора СБ
 ent-ADTClothingBeltQuiverCupidon = колчан купидона
     .desc = Для доставки влюбленностей, и пусть никто не уйдет без стрелы в сердце!
     .suffix = { "День Святого Валентина" }
+
+ent-ClothingBeltChef = пояс шеф-повара
+    .desc = Пояс для быстрого доступа к ножу, соусам и приправам.
