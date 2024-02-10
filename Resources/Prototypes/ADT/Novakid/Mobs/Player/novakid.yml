@@ -31,4 +31,12 @@
       damageRecovery:
         types:
           Asphyxiation: -1.0
+    - type: LanguageSpeaker
+      speaks:
+      - GalacticCommon
+      - Fire
+      understands:
+      - GalacticCommon
+      - Fire
+
 #Weh

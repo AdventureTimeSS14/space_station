@@ -442,3 +442,16 @@
     blacklist:
       tags:
       - NukeOpsUplink
+
+
+- type: listing
+  id: ADTUplinkCodetalkImplanter
+  name: uplink-codetalk-implanter-name
+  description: uplink-codetalk-implanter-desc
+  icon: { sprite: Objects/Specific/Medical/implanter.rsi, state: implanter0 }
+  productEntity: CodeSpeakImplanter
+  cost:
+    Telecrystal: 5
+  categories:
+    - UplinkImplants
+
