@@ -38,4 +38,7 @@
   id: Fish
 
 - type: Tag
+  id: BoomBoxTape
+  
+- type: Tag
   id: ChangelingBlacklist
