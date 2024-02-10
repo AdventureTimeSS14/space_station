@@ -4,6 +4,11 @@
   name: Security Cyborg
   description: A cyborg designed to quell any unrest. Mechanized heavy power.
   components:
+  - type: InteractionPopup
+    interactSuccessString: petting-success-ipc
+    #interactFailureString: petting-failure-cleanbot
+    interactSuccessSound:
+      path: /Audio/Ambience/Objects/periodic_beep.ogg
   - type: SuitSensor
   - type: DeviceNetwork
     deviceNetId: Wireless
