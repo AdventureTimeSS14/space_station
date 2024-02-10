@@ -81,6 +81,14 @@
   #  noRot: true
   #  drawdepth: Mobs
   #  scale: 0.85, 0.85
+  # Frontier - languages mechanic
+  - type: LanguageSpeaker
+    speaks:
+    - GalacticCommon
+    - Bubblish
+    understands:
+    - GalacticCommon
+    - Bubblish
 
 - type: entity
   parent: MobHumanDummy

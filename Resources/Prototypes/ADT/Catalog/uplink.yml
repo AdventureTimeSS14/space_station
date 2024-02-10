@@ -108,7 +108,7 @@
   cost:
     Telecrystal: 8
   categories:
-  - UplinkAmmo 
+  - UplinkAmmo
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
@@ -124,7 +124,7 @@
   cost:
     Telecrystal: 6
   categories:
-  - UplinkAmmo 
+  - UplinkAmmo
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
@@ -140,7 +140,7 @@
   cost:
     Telecrystal: 12
   categories:
-  - UplinkAmmo 
+  - UplinkAmmo
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
@@ -156,7 +156,7 @@
   cost:
     Telecrystal: 18
   categories:
-  - UplinkBundles 
+  - UplinkBundles
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
@@ -172,7 +172,7 @@
   cost:
     Telecrystal: 10
   categories:
-  - UplinkAmmo 
+  - UplinkAmmo
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
@@ -280,7 +280,7 @@
     whitelist:
     - Chef
     - Mime
-    
+
 - type: listing
   id: ADTuplinkCaneShotgun
   name: uplink-cane-shotgun-name
@@ -342,7 +342,7 @@
   id: ADTUplinkThiefBundle
   name: uplink-thief-bundle-name
   description: uplink-thief-bundle-desc
-  productEntity: ADTToolboxSyndicateFilledThief   
+  productEntity: ADTToolboxSyndicateFilledThief
   cost:
     Telecrystal: 10
   categories:
@@ -362,7 +362,7 @@
   id: ADTUplinkMaidBundle
   name: uplink-maid-bundle-name
   description: uplink-maid-bundle-desc
-  productEntity: ADTClothingBackpackDuffelSyndicateFilledMaid 
+  productEntity: ADTClothingBackpackDuffelSyndicateFilledMaid
   cost:
     Telecrystal: 20
   categories:
@@ -372,7 +372,7 @@
   id: ADTUplinkStealthBundle
   name: uplink-stealth-bundle-name
   description: uplink-stealth-bundle-desc
-  productEntity: ADTClothingBackpackDuffelSyndicateFilledStealth 
+  productEntity: ADTClothingBackpackDuffelSyndicateFilledStealth
   cost:
     Telecrystal: 12
   categories:
@@ -382,7 +382,7 @@
   id: ADTUplinkIntruderBundle
   name: uplink-intruder-bundle-name
   description: uplink-intruder-bundle-desc
-  productEntity: ADTClothingBackpackDuffelSyndicateFilledIntruder 
+  productEntity: ADTClothingBackpackDuffelSyndicateFilledIntruder
   cost:
     Telecrystal: 20
   categories:
@@ -392,7 +392,7 @@
   id: ADTUplinkBlackmailBundle
   name: uplink-blackmail-bundle-name
   description: uplink-blackmail-bundle-desc
-  productEntity: ADTClothingBackpackDuffelSyndicateFilledBlackmail 
+  productEntity: ADTClothingBackpackDuffelSyndicateFilledBlackmail
   cost:
     Telecrystal: 15
   categories:
@@ -442,3 +442,17 @@
     blacklist:
       tags:
       - NukeOpsUplink
+
+
+- type: listing
+  id: ADTUplinkCodetalkImplanter
+  name: uplink-codetalk-implanter-name
+  description: uplink-codetalk-implanter-desc
+  icon: { sprite: Objects/Specific/Medical/implanter.rsi, state: implanter0 }
+  productEntity: CodeSpeakImplanter
+  cost:
+    Telecrystal: 5
+  categories:
+    - UplinkImplants
+
+

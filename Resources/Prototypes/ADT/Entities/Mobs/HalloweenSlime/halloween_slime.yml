@@ -28,3 +28,9 @@
         - SimpleHostile
     - type: GhostRole
       description: ghost-role-information-angry-slimes-description
+    # Frontier - languages mechanic
+    - type: LanguageSpeaker
+      speaks:
+      - Bubblish
+      understands:
+      - Bubblish

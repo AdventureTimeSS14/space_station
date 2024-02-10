@@ -100,10 +100,19 @@
     sound:
       path: /Audio/ADT/IPC/borg_deathsound.ogg
   - type: TTS # Corvax-TTS
+  # Frontier - languages mechanic
+  - type: LanguageSpeaker
+    speaks:
+    - GalacticCommon
+    - RobotTalk
+    understands:
+    - GalacticCommon
+    - RobotTalk
   - type: Tag
     tags:
     - ChangelingBlacklist
     - ShoesRequiredStepTriggerImmune
+
 
 
 - type: entity
