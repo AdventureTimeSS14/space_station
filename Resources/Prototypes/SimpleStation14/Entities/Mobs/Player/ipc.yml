@@ -104,6 +104,10 @@
     tags:
     - ChangelingBlacklist
     - ShoesRequiredStepTriggerImmune
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
+
 
 
 - type: entity
