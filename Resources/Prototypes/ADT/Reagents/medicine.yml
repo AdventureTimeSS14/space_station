@@ -228,6 +228,9 @@
       - !type:AdjustReagent
         reagent: Licoxide
         amount: -0.5
+      - !type:AdjustReagent
+        reagent:  Tazinide
+        amount: -0.5
       - !type:PopupMessage
         conditions:
         - !type:TotalDamage
