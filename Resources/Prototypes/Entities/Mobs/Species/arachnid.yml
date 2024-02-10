@@ -118,14 +118,6 @@
         sprite: "Effects/creampie.rsi"
         state: "creampie_arachnid"
         visible: false
-  - type: LanguageSpeaker # Frontier
-    speaks:
-    - GalacticCommon
-    - Moffic
-    understands:
-    - GalacticCommon
-    - Moffic
-
 
 - type: entity
   parent: BaseSpeciesDummy
