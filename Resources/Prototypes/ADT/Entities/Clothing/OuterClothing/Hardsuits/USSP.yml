@@ -360,3 +360,58 @@
         Piercing: 0.9
         Heat: 0.9
 
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ADTClothingOuterHardsuitMonolithReserch
+  name: MoNILIth exocosuit of the SSSP
+  description: The S.A.M. exocosuit, also known as the "Adaptive Camouflage System", is a completely innovative means of protection for operatives of Special units of the USSP. Combining advanced technologies of composite materials, carbon coatings, as well as adaptive camouflage, roughly speaking - "invisibility", these exosuits provide outstanding protective effectiveness and have shown themselves to be at their best in operational conditions. This spacesuit is in the "Tactical" color scheme
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/ussp_rd.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/ussp_rd.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.8
+        Piercing: 0.9
+        Heat: 0.3
+        Radiation: 0.1
+        Caustic: 0.2
+        Stun: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+  - type: ClothingSpeedModifier
+    walkModifier: 0.75
+    sprintModifier: 0.75
+  - type: HeldSpeedModifier
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: ToggleableClothing
+    clothingPrototype: ADTClothingHeadHelmetHardsuitMonolithReserch
+  - type: StaticPrice
+    price: 750
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadHelmetHardsuitMonolithReserch
+  name: MONOLITh helmet
+  description: A sturdy special forces helmet with motion, light and sound sensors, the helmet has no cutouts for the eyes, which provides full protection for the wearer's head.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/ussp_rd.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/ussp_rd.rsi
+  - type: PointLight
+    color: "#d6adff"
+  - type: PressureProtection
+    highPressureMultiplier: 0.60
+    lowPressureMultiplier: 1000
