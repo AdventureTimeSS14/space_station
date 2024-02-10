@@ -61,14 +61,6 @@
       types:
         Heat : 1.5 #per second, scales with temperature & other constants
   - type: Wagging
-  # Frontier - languages mechanic
-  - type: LanguageSpeaker
-    speaks:
-    - GalacticCommon
-    - Draconic
-    understands:
-    - GalacticCommon
-    - Draconic
 
 - type: entity
   parent: BaseSpeciesDummy
