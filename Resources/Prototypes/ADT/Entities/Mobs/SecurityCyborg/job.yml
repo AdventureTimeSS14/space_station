@@ -5,10 +5,10 @@
   playTimeTracker: JobSecurityCyborg
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 216000 #60 hrs    216000
+      time: 324000 #90 hrs
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 46000 #46000
+      time: 324000 #90 hrs
     - !type:RoleTimeRequirement
       role: JobSecurityOfficer
       time: 21600 #6 hrs 21600
