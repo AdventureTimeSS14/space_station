@@ -113,5 +113,5 @@ JobADTSupplyBorg = Киборг Снабжения
 JobADTMedicalBorg = Медицинский Киборг
 JobADTServiseBorg = Сервисный Киборг
 JobADTJanitorBorg = Киборг Уборщик
-JobADTSecurityCyborg = Киборг СБ(В разработке)
+JobADTSecurityCyborg = Киборг СБ
 JobADTRoboticist = Робототехник

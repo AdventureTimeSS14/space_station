@@ -255,8 +255,6 @@ public sealed partial class ChangelingSystem : EntitySystem
     public void OnTransform(EntityUid uid, ChangelingComponent component, ChangelingTransformActionEvent args)
     {
         var selectedHumanoidData = component.StoredDNA[component.SelectedDNA];
-        var transformedUid = _polymorph.PolymorphEntityAsHumanoid(uid, selectedHumanoidData);
-
         if (args.Handled)
             return;
 
@@ -283,6 +281,7 @@ public sealed partial class ChangelingSystem : EntitySystem
 
         args.Handled = true;
 
+        var transformedUid = _polymorph.PolymorphEntityAsHumanoid(uid, selectedHumanoidData);
         if (transformedUid == null)
             return;
 

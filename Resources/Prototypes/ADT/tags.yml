@@ -42,6 +42,12 @@
 
 - type: Tag
   id: ChangelingBlacklist
+ 
+- type: Tag 
+  id: BoomBoxTape
+  
+- type: Tag
+  id: ChangelingBlacklist
   
 - type: Tag
   id: MobileDefibrillator

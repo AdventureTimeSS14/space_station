@@ -1096,7 +1096,7 @@
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
     layers:
-    - state: omnilaser
+    - state: adtomnilaser
       shader: unshaded
   - type: Projectile
     impactEffect: BulletImpactEffectDisabler

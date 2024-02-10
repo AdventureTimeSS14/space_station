@@ -191,10 +191,13 @@
         "name": "MindShield"
     },
     {
-      "name": "JobIconADTPathologist"
+      "name": "JobADTIconSecurityCyborg"
     },
     {
-      "name": "JobADTIconSecurityCyborg"
+      "name": "JobIconChangeling"
+    },
+    {
+      "name": "JobIconADTPathologist"
     }
   ]
 }

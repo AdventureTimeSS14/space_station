@@ -108,6 +108,9 @@
   - type: Tag
     tags:
     - ChangelingBlacklist
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
 
 
 - type: entity

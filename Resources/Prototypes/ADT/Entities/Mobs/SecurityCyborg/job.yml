@@ -5,19 +5,19 @@
   playTimeTracker: JobSecurityCyborg
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 2160000000 #60 hrs    216000
+      time: 324000 #90 hrs
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 4600000000 #46000
+      time: 324000 #90 hrs
     - !type:RoleTimeRequirement
       role: JobSecurityOfficer
-      time: 21600000000 #6 hrs 21600
+      time: 21600 #6 hrs 21600
     - !type:RoleTimeRequirement
       role: JobWarden
-      time: -100000000 #6 hrs 21600
+      time: 21600 #6 hrs 21600
     - !type:RoleTimeRequirement
       role: JobDetective
-      time: 720000000 #2 hrs 7200
+      time: 7200 #2 hrs 7200
   icon: "JobADTIconSecurityCyborg"
   supervisors: job-supervisors-rd
   jobEntity: ADTMobCyborSecurity
@@ -69,7 +69,7 @@
   equipment:
     suitstorage: ADTGunRifleFNFAL  #ADTMagazineRifleFNFAL
     back: ADTClothingBackpackSecurityCyb
-    #id: ADTSecurityCybIDCard #ADTSecurityCybPDA
+    #id: ADTSecurityCybPDA #ADTSecurityCybPDA
     belt: ClothingBeltSecurityFilled
     pocket1: ADtWeaponSecCyborg
     #pocket2: WeaponDisabler
