@@ -6,7 +6,14 @@
   components:
     - type: ItemSlots
     - type: ContainerContainer
+      containers:
+        boombox_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
     - type: DeviceLinkSource
+      ports:
+      - Pressed
     - type: Sprite
       sprite: Objects/Devices/boombox.rsi
       state: boombox
