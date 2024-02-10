@@ -1,8 +1,10 @@
 using System.Threading.Tasks;
 using Content.Server.Chat.Systems;
+using Content.Server.Language;
 using Content.Shared.Corvax.CCCVars;
 using Content.Shared.Corvax.TTS;
 using Content.Shared.GameTicking;
+using Content.Shared.Language;
 using Robust.Shared.Configuration;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -16,6 +18,7 @@ public sealed partial class TTSSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly TTSManager _ttsManager = default!;
     [Dependency] private readonly SharedTransformSystem _xforms = default!;
+    [Dependency] private readonly LanguageSystem _language = default!;
 
     private const int MaxMessageChars = 100 * 2; // same as SingleBubbleCharLimit * 2
     private bool _isEnabled = false;
@@ -67,30 +70,51 @@ public sealed partial class TTSSystem : EntitySystem
 
         if (args.ObfuscatedMessage != null)
         {
-            HandleWhisper(uid, args.Message, args.ObfuscatedMessage, protoVoice.Speaker);
+            HandleWhisper(uid, args.Message, args.ObfuscatedMessage, args.LanguageEncodedMessage, protoVoice.Speaker, args.Language);
             return;
         }
 
-        HandleSay(uid, args.Message, protoVoice.Speaker);
+        HandleSay(uid, args.Message, args.LanguageEncodedMessage, protoVoice.Speaker, args.Language);
     }
 
-    private async void HandleSay(EntityUid uid, string message, string speaker)
+    private async void HandleSay(EntityUid uid, string message, string encMessage, string speaker, LanguagePrototype language)
     {
         var soundData = await GenerateTTS(message, speaker);
         if (soundData is null) return;
-        RaiseNetworkEvent(new PlayTTSEvent(soundData, GetNetEntity(uid)), Filter.Pvs(uid));
+
+        var encSoundData = await GenerateTTS(encMessage, speaker);
+        if (encSoundData is null) return;
+
+        var soundTtsEvent = new PlayTTSEvent(soundData, GetNetEntity(uid));
+        var encSoundTtsEvent = new PlayTTSEvent(encSoundData, GetNetEntity(uid));
+
+        var receptions = Filter.Pvs(uid).Recipients;
+
+        foreach (var session in receptions)
+        {
+            if (!session.AttachedEntity.HasValue) continue;
+            var canUnderstand = _language.CanUnderstand(session.AttachedEntity.Value, language);
+
+            RaiseNetworkEvent(canUnderstand ? soundTtsEvent : encSoundTtsEvent,
+                session);
+        }
     }
 
-    private async void HandleWhisper(EntityUid uid, string message, string obfMessage, string speaker)
+    private async void HandleWhisper(EntityUid uid, string message, string obfMessage, string encMessage, string speaker, LanguagePrototype language)
     {
+
         var fullSoundData = await GenerateTTS(message, speaker, true);
         if (fullSoundData is null) return;
 
         var obfSoundData = await GenerateTTS(obfMessage, speaker, true);
         if (obfSoundData is null) return;
 
+        var encSoundData = await GenerateTTS(encMessage, speaker, true);
+        if (encSoundData is null) return;
+
         var fullTtsEvent = new PlayTTSEvent(fullSoundData, GetNetEntity(uid), true);
         var obfTtsEvent = new PlayTTSEvent(obfSoundData, GetNetEntity(uid), true);
+        var encTtsEvent = new PlayTTSEvent(encSoundData, GetNetEntity(uid), true);
 
         // TODO: Check obstacles
         var xformQuery = GetEntityQuery<TransformComponent>();
@@ -104,7 +128,12 @@ public sealed partial class TTSSystem : EntitySystem
             if (distance > ChatSystem.VoiceRange * ChatSystem.VoiceRange)
                 continue;
 
-            RaiseNetworkEvent(distance > ChatSystem.WhisperClearRange ? obfTtsEvent : fullTtsEvent, session);
+            var canUnderstand = _language.CanUnderstand(session.AttachedEntity.Value, language);
+
+            //TODO xTray Для тех кто далеко нужно сгенерировать отдельный звук с помехами
+            RaiseNetworkEvent(distance > ChatSystem.WhisperClearRange ? canUnderstand ?  obfTtsEvent : encTtsEvent
+                : canUnderstand ? fullTtsEvent : encTtsEvent,
+                session);
         }
     }
 

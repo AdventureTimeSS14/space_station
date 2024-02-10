@@ -433,7 +433,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         // Frontier: languages mechanic
         SendInVoiceRange(ChatChannel.Local, message, wrappedMessage, encodedMessage, wrappedEncodedMessage, source, range, languageOverride: language);
 
-        var ev = new EntitySpokeEvent(source, message, originalMessage, null, language, null);
+        var ev = new EntitySpokeEvent(source, message, originalMessage, encodedMessage, null, language, null);
         RaiseLocalEvent(source, ev, true);
 
         // To avoid logging any messages sent by entities that are not players, like vendors, cloning, etc.
@@ -507,7 +507,7 @@ public sealed partial class ChatSystem : SharedChatSystem
 
         // Frontier - languages mechanic (+ everything in the foreach loop)
         var language = languageOverride ?? _language.GetLanguage(source);
-        var languageObfuscatedMessage = _language.ObfuscateSpeech(source, message, language);
+        var languageEncodedMessage = _language.ObfuscateSpeech(source, message, language);
 
         foreach (var (session, data) in GetRecipients(source, WhisperMuffledRange))
         {
@@ -519,7 +519,7 @@ public sealed partial class ChatSystem : SharedChatSystem
                 continue; // Won't get logged to chat, and ghosts are too far away to see the pop-up, so we just won't send it to them.
 
             var canUnderstand = _language.CanUnderstand(listener, language);
-            var _message = canUnderstand ? message : languageObfuscatedMessage;
+            var _message = canUnderstand ? message : languageEncodedMessage;
 
             if (data.Range <= WhisperClearRange)
             {
@@ -538,7 +538,9 @@ public sealed partial class ChatSystem : SharedChatSystem
                 // Collisiongroup.Opaque is not ideal for this use. Preferably, there should be a check specifically with "Can Ent1 see Ent2" in mind
                 var _obfuscatedMessage = ObfuscateMessageReadability(_message);
                 var _wrappedobfuscatedMessage = Loc.GetString("chat-manager-entity-whisper-wrap-message",
-                    ("entityName", nameIdentity), ("message", FormattedMessage.EscapeText(_obfuscatedMessage)));
+                    ("entityName", nameIdentity),
+                    ("message", FormattedMessage.EscapeText(_obfuscatedMessage)));
+
                 _chatManager.ChatMessageToOne(ChatChannel.Whisper, _obfuscatedMessage, _wrappedobfuscatedMessage, source,
                     false, session.ConnectedClient);
 
@@ -560,7 +562,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             ("message", FormattedMessage.EscapeText(message)));
         _replay.RecordServerMessage(new ChatMessage(ChatChannel.Whisper, message, replayWrap, GetNetEntity(source), null, MessageRangeHideChatForReplay(range)));
 
-        var ev = new EntitySpokeEvent(source, message, originalMessage, channel, language, obfuscatedMessage);
+        var ev = new EntitySpokeEvent(source, message, originalMessage, languageEncodedMessage, channel, language, obfuscatedMessage);
         RaiseLocalEvent(source, ev, true);
         if (!hideLog)
             if (originalMessage == message)
@@ -1005,6 +1007,7 @@ public sealed class EntitySpokeEvent : EntityEventArgs
     public readonly EntityUid Source;
     public readonly string Message;
     public readonly string OriginalMessage;
+    public readonly string LanguageEncodedMessage;
     public readonly string? ObfuscatedMessage; // not null if this was a whisper
     public readonly LanguagePrototype Language;
 
@@ -1014,11 +1017,12 @@ public sealed class EntitySpokeEvent : EntityEventArgs
     /// </summary>
     public RadioChannelPrototype? Channel;
 
-    public EntitySpokeEvent(EntityUid source, string message, string originalMessage, RadioChannelPrototype? channel, LanguagePrototype language, string? obfuscatedMessage)
+    public EntitySpokeEvent(EntityUid source, string message, string originalMessage, string languageEncodedMessage, RadioChannelPrototype? channel, LanguagePrototype language, string? obfuscatedMessage)
     {
         Source = source;
         Message = message;
         OriginalMessage = originalMessage; // Corvax-TTS: Spec symbol sanitize
+        LanguageEncodedMessage = languageEncodedMessage;
         Channel = channel;
         ObfuscatedMessage = obfuscatedMessage;
         Language = language;
