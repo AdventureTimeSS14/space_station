@@ -18,7 +18,7 @@
     - !type:RoleTimeRequirement
       role: JobDetective
       time: 7200 #2 hrs 7200
-  icon: "JobADTIconSecurityCyborg"
+  icon: JobADTIconSecurityCyborg
   supervisors: job-supervisors-rd
   jobEntity: ADTMobCyborSecurity
   canBeAntag: false
