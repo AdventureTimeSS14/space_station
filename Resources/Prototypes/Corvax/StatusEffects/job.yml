@@ -3,4 +3,4 @@
   id: JobIconIAA
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconIAA
+    state: IAA
