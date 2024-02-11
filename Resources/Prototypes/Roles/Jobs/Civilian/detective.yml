@@ -35,5 +35,5 @@
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltHolsterFilled
   innerClothingSkirt: ClothingUniformJumpskirtDetective
-  satchel: ClothingBackpackSatchelFilledDetective
+  #satchel: ClothingBackpackSatchelFilledDetective
   duffelbag: ClothingBackpackDuffelFilledDetective
