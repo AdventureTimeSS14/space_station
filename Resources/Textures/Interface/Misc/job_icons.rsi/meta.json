@@ -186,6 +186,10 @@
         },
         {
             "name": "Investigator"
+        },
+        {
+            "name": "JobADTIconSecurityCyborg"
         }
+            
     ]
 }
