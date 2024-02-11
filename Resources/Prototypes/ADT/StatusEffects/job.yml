@@ -3,14 +3,14 @@
   id: JobIconMagistrat
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconMagistrat
+    state: Magistrat
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconADTBlueShieldOfficer
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconADTBlueShieldOfficer
+    state: BlueShieldOfficer
 
 - type: statusIcon
   parent: JobIcon
