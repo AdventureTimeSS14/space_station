@@ -8,7 +8,7 @@
 	branch = main
 	update = none
 [submodule "ADT_SECRETS"]
-	path = ADT_SECRETS
+	path = ADT_Secrets
 	url = https://github.com/xtray85/ADT_STATION.git
     	update = none
 	branch = main
