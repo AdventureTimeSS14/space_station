@@ -2,8 +2,8 @@
 	path = RobustToolbox
 	url = https://github.com/space-wizards/RobustToolbox.git
 	branch = master
-[submodule "Secrets"]
-	path = Secrets
+[submodule "secrets"]
+	path = secrets
 	url = https://github.com/xtray85/ADT_STATION.git
 	branch = main
 	update = none
