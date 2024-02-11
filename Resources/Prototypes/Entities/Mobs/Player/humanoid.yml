@@ -144,36 +144,6 @@
     - type: Loadout
       prototypes: [ ERTLeaderGearREV ]
 
-#против революции
-
-- type: entity
-  id: RandomHumanoidSpawnerERTLeaderREV
-  parent: RandomHumanoidSpawnerERTLeader
-  name: ERT leader
-  suffix: REV
-  components:
-    - type: Sprite
-      sprite: Markers/jobs.rsi
-      state: ertleadereva
-    - type: RandomHumanoidSpawner
-      settings: ERTLeaderREV
-
-- type: randomHumanoidSettings
-  speciesBlacklist:
-    - Diona
-  id: ERTLeaderREV
-  parent: ERTLeader
-  components:
-    - type: GhostRole
-      name: ghost-role-information-ert-leader-name
-      description: ghost-role-information-ert-leader-description
-      requirements:
-      - !type:OverallPlaytimeRequirement
-        time: 36000 # 10h overall
-    - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ ERTLeaderGearREV ]
-
 - type: entity
   id: RandomHumanoidSpawnerERTLeaderEVALecter
   parent: RandomHumanoidSpawnerERTLeaderEVA
@@ -375,36 +345,6 @@
     - type: Loadout
       prototypes: [ ERTEngineerGearREV ]
 
-#против революции
-
-- type: entity
-  id: RandomHumanoidSpawnerERTEngineerREV
-  parent: RandomHumanoidSpawnerERTEngineer
-  name: ERT engineer
-  suffix: REV
-  components:
-    - type: Sprite
-      sprite: Markers/jobs.rsi
-      state: ertengineereva
-    - type: RandomHumanoidSpawner
-      settings: ERTEngineerREV
-
-- type: randomHumanoidSettings
-  speciesBlacklist:
-    - Diona
-  id: ERTEngineerREV
-  parent: ERTEngineer
-  components:
-    - type: GhostRole
-      name: ghost-role-information-ert-engineer-name
-      description: ghost-role-information-ert-engineer-description
-      requirements:
-      - !type:OverallPlaytimeRequirement
-        time: 36000 # 10h overall
-    - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ ERTEngineerGearREV ]
-
 ## ERT Security
 
 - type: entity
@@ -476,77 +416,6 @@
     - type: Loadout
       prototypes: [ ERTSecurityGearEVA ]
     - type: InitialInfectedExempt
-
-- type: entity
-  id: RandomHumanoidSpawnerERTSecurityHeavy
-  parent: RandomHumanoidSpawnerERTSecurity
-  name: ERT security heavy
-  suffix: ERTRole, Armored EVA
-  components:
-    - type: Sprite
-      sprite: Markers/jobs.rsi
-      state: ertsecurityeva
-    - type: RandomHumanoidSpawner
-      settings: ERTSecurityHeavy
-
-- type: randomHumanoidSettings
-  speciesBlacklist:
-    - Diona
-  id: ERTSecurityHeavy
-  parent: ERTSecurity
-  components:
-    - type: MindShield
-    - type: GhostRole
-      name: ghost-role-information-ert-security-name
-      description: ghost-role-information-ert-security-description
-      requirements:
-      - !type:OverallPlaytimeRequirement
-        time: 36000 # 10h overall
-    - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ ERTSecurityGearHeavy ]
-
-#против революции
-
-- type: entity
-  id: RandomHumanoidSpawnerERTSecurityREV
-  parent: RandomHumanoidSpawnerERTSecurity
-  name: ERT security
-  suffix: REV
-  components:
-    - type: Sprite
-      sprite: Markers/jobs.rsi
-      state: ertsecurityeva
-    - type: RandomHumanoidSpawner
-      settings: ERTSecurityREV
-
-- type: randomHumanoidSettings
-  speciesBlacklist:
-    - Diona
-  id: ERTSecurityREV
-  parent: ERTSecurity
-  components:
-    - type: GhostRole
-      name: ghost-role-information-ert-security-name
-      description: ghost-role-information-ert-security-description
-      requirements:
-      - !type:OverallPlaytimeRequirement
-        time: 36000 # 10h overall
-    - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ ERTSecurityGearREV ]
-
-- type: entity
-  id: RandomHumanoidSpawnerERTSecurityHeavy
-  parent: RandomHumanoidSpawnerERTSecurity
-  name: ERT security heavy
-  suffix: ERTRole, Armored EVA
-  components:
-    - type: Sprite
-      sprite: Markers/jobs.rsi
-      state: ertsecurityeva
-    - type: RandomHumanoidSpawner
-      settings: ERTSecurityHeavy
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -692,36 +561,6 @@
     - type: Loadout
       prototypes: [ ERTMedicalGearEVA ]
     - type: InitialInfectedExempt
-
-#против революции
-
-- type: entity
-  id: RandomHumanoidSpawnerERTMedicalREV
-  parent: RandomHumanoidSpawnerERTMedical
-  name: ERT medic
-  suffix: REV
-  components:
-    - type: Sprite
-      sprite: Markers/jobs.rsi
-      state: ertmedicaleva
-    - type: RandomHumanoidSpawner
-      settings: ERTMedicalREV
-
-- type: randomHumanoidSettings
-  speciesBlacklist:
-    - Diona
-  id: ERTMedicalREV
-  parent: ERTMedical
-  components:
-    - type: GhostRole
-      name: ghost-role-information-ert-medical-name
-      description: ghost-role-information-ert-medical-description
-      requirements:
-      - !type:OverallPlaytimeRequirement
-        time: 36000 # 10h overall
-    - type: GhostTakeoverAvailable
-    - type: Loadout
-      prototypes: [ ERTMedicalGearREV ]
 
 #против революции
 

@@ -130,7 +130,7 @@
 
 
 - type: entity
-  parent: [ MobSiliconBase, BaseVehicle]
+  parent: [ MobSiliconBase]
   id: MobSiliconBaseVehicle # for vehicles
   abstract: true
   components:

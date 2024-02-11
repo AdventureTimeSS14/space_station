@@ -900,7 +900,6 @@
       - Saw
       - Hemostat
       - ClothingEyesGlassesChemical
-    dynamicRecipes:
       - ChemicalPayload
       - CryostasisBeaker
       - BluespaceBeaker

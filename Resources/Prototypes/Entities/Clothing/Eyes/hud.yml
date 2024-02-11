@@ -10,7 +10,6 @@
     sprite: Clothing/Eyes/Hud/diag.rsi
   - type: ShowHealthBars
     damageContainers:
-    damageContainers:
     - Inorganic
     - Silicon
 # TODO: xTray отключено при миграции

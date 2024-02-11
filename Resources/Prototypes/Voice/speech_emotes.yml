@@ -338,6 +338,8 @@
   category: Vocal
   chatMessages: [buzz!]
   chatTriggers:
+    - жужжит
+    - жужжит.
     - buzzing
     - buzzing!
     - buzzing.
