@@ -94,6 +94,7 @@
         component: PainKiller
         type: Add
         time: 20
+        refresh: true
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -474,19 +475,19 @@
       - !type:ChemVomit #а это уже передозы.
         conditions:
         - !type:ReagentThreshold
-          min: 30
+          min: 30.05
         probability: 0.3
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 30
+          min: 30.05
         damage:
           types:
             Asphyxiation: 5
       - !type:Jitter
         conditions:
         - !type:ReagentThreshold
-          min: 30
+          min: 30.05
     Narcotic:
       metabolismRate: 0.1
       effects:
