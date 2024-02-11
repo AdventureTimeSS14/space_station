@@ -340,6 +340,7 @@
       - SolCommonTranslator
       - RootSpeakTranslator
       - XenoTranslator
+      - DraskTranslator
       - BasicGalaticCommonTranslatorImplanter
       - AdvancedGalaticCommonTranslatorImplanter
       - BubblishTranslatorImplanter
@@ -354,6 +355,7 @@
       - SikTajTranslatorImplanter
       - NianTranslatorImplanter
       - FireTranslatorImplanter
+      - DraskTranslatorImplanter
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ExplosivePayload

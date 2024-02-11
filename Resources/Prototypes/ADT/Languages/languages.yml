@@ -1,4 +1,4 @@
-﻿# The universal language, assumed if the entity has a UniversalLanguageSpeakerComponent.
+# The universal language, assumed if the entity has a UniversalLanguageSpeakerComponent.
 # Do not use otherwise. Try to use the respective component instead of this language.
 - type: language
   id: Universal
@@ -640,3 +640,26 @@
   obfuscateSyllables: false
   replacement:
   - Oink
+
+# Spoken by the Drask race.
+- type: language
+  id: Drask
+  obfuscateSyllables: true
+  replacement:
+  - Овв
+  - Оумн
+  - Мноо
+  - Румум
+  - Ваар
+  - Дромнн
+  - Руум
+  - Гоом
+  - Фмонг
+  - Оорм
+  - Гаар
+  - Хоорб
+  - Саар
+  - Ссооумн
+  - Гнии
+  - Вииск
+  - Вррм

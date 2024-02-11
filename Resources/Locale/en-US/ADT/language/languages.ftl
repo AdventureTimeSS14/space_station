@@ -1,4 +1,4 @@
-﻿language-Universal-name = Universal
+language-Universal-name = Universal
 language-Universal-description = What are you?
 language-GalacticCommon-name = Galactic common
 language-GalacticCommon-description = Commonly used for inter-species communications and official purposes.
@@ -47,3 +47,5 @@ language-Pig-name = Animal pig
 language-Pig-description = A collection of sounds made by pigs.
 language-Moffic-name = Moffic
 language-Moffic-description = The language of the mothpeople borders on complete unintelligibility.
+language-Drask-name = Orluum
+language-Drask-description = The droning, vibrous language of the Drask. It sounds somewhat like whalesong.
