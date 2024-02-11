@@ -9,22 +9,12 @@
   metabolisms:
     Medicine:
       effects:
-      - !type:MovespeedModifier
-        conditions:
-        - !type:TotalDamage
-          min: 60
-          max: 80
-        walkSpeedModifier: 1.07  #итого скорость будет ~1,87. (обычная = 2,5) 
-        sprintSpeedModifier: 1.13 #итого скорость будет ~3,55. (обычная = 4,5)
-        statusLifetime: 1
-      - !type:MovespeedModifier
-        conditions:
-        - !type:TotalDamage
-          min: 80
-          max: 100
-        walkSpeedModifier: 1.05 # 1,31
-        sprintSpeedModifier: 1.28 # 2,88
-        statusLifetime: 1
+      - !type:GenericStatusEffect
+        key: PainKiller
+        component: PainKiller
+        type: Add
+        time: 10
+        refresh: false
       - !type:PopupMessage
         conditions:
         - !type:TotalDamage
@@ -57,7 +47,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 10
+          min: 10.05
         damage:
           types:
             Asphyxiation: 2
