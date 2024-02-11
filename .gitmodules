@@ -10,3 +10,4 @@
 [submodule "ADT_SECRETS"]
 	path = ADT_SECRETS
 	url = https://github.com/xtray85/ADT_STATION.git
+    update = none
