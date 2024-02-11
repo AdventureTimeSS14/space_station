@@ -1,200 +1,183 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Test",
-  "size": {
-    "x": 8,
-    "y": 8
-  },
-  "states": [
-    {
-      "name": "CustomId"
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from https://github.com/vgstation-coders/vgstation13/blob/e71d6c4fba5a51f99b81c295dcaec4fc2f58fb19/icons/mob/screen1.dmi | Brigmedic icon made by PuroSlavKing (Github) | Zombie icon made by RamZ | Zookeper by netwy (discort) | Rev and Head Rev icon taken from https://tgstation13.org/wiki/HUD and edited by coolmankid12345 (Discord) | Mindshield icon made by Psychpsyo (Github)",
+
+    "size": {
+        "x": 8,
+        "y": 8
     },
-      {
-          "name": "JobIconBorg"
-      },
-    {
-      "name": "JobIconDetective"
-    },
-    {
-      "name": "JobIconQuarterMaster"
-    },
-    {
-      "name": "JobIconBotanist"
-    },
-    {
-      "name": "JobIconBoxer"
-    },
-    {
-      "name": "JobIconAtmosphericTechnician"
-    },
-    {
-      "name": "JobIconNanotrasen"
-    },
-    {
-      "name": "JobIconPrisoner"
-    },
-    {
-      "name": "JobIconJanitor"
-    },
-    {
-      "name": "JobIconChemist"
-    },
-    {
-      "name": "JobIconStationEngineer"
-    },
-    {
-      "name": "JobIconSecurityOfficer"
-    },
-    {
-      "name": "NoId"
-    },
-    {
-      "name": "JobIconChiefMedicalOfficer"
-    },
-    {
-      "name": "JobIconRoboticist"
-    },
-    {
-      "name": "JobIconChaplain"
-    },
-    {
-      "name": "JobIconLawyer"
-    },
-    {
-      "name": "Unknown"
-    },
-    {
-      "name": "JobIconLibrarian"
-    },
-    {
-      "name": "JobIconCargoTechnician"
-    },
-    {
-      "name": "JobIconScientist"
-    },
-    {
-      "name": "JobIconResearchAssistant"
-    },
-    {
-      "name": "JobIconGeneticist"
-    },
-    {
-      "name": "JobIconClown"
-    },
-    {
-      "name": "JobIconCaptain"
-    },
-    {
-      "name": "JobIconHeadOfPersonnel"
-    },
-    {
-      "name": "JobIconVirologist"
-    },
-    {
-      "name": "JobIconShaftMiner"
-    },
-    {
-      "name": "JobIconPassenger"
-    },
-    {
-      "name": "JobIconChiefEngineer"
-    },
-    {
-      "name": "JobIconBartender"
-    },
-    {
-      "name": "JobIconHeadOfSecurity"
-    },
-    {
-      "name": "JobIconBrigmedic"
-    },
-    {
-      "name": "JobIconMedicalDoctor"
-    },
-    {
-      "name": "JobIconParamedic"
-    },
-    {
-      "name": "JobIconChef"
-    },
-    {
-      "name": "JobIconWarden"
-    },
-    {
-      "name": "JobIconResearchDirector"
-    },
-    {
-      "name": "JobIconMime"
-    },
-    {
-      "name": "JobIconMusician"
-    },
-    {
-      "name": "JobIconReporter"
-    },
-    {
-      "name": "JobIconPsychologist"
-    },
-    {
-      "name": "JobIconMedicalIntern"
-    },
-    {
-      "name": "JobIconTechnicalAssistant"
-    },
-    {
-      "name": "JobIconServiceWorker"
-    },
-    {
-      "name": "JobIconSecurityCadet"
-    },
-    {
-      "name": "JobIconIAA"
-    },
-    {
-      "name": "JobIconZombie"
-    },
-    {
-      "name": "JobIconZookeeper"
-    },
-    {
-      "name": "JobIconADTBlueShieldOfficer"
-    },
-    {
-      "name": "JobIconMagistrat"
-    },
-    {
-      "name": "JobIconSeniorEngineer"
-    },
-    {
-      "name": "JobIconSeniorResearcher"
-    },
-    {
-      "name": "JobIconSeniorPhysician"
-    },
-    {
-        "name": "JobIconSeniorOfficer"
-    },
-    {
-        "name": "JobIconADTInvestigator"
-    },
-      {
-          "name": "Revolutionary"
-      },
-      {
-          "name": "HeadRevolutionary"
-      },
-      {
-          "name": "Syndicate"
-      },
-      {
-          "name": "MindShield"
-      },
-      {
-        "name": "JobADTIconSecurityCyborg"
-      },
-      {
-        "name": "JobIconChangeling"
-      }
-  ]
+    "states": [
+        {
+            "name": "Detective"
+        },
+        {
+            "name": "QuarterMaster"
+        },
+        {
+            "name": "Botanist"
+        },
+        {
+            "name": "Borg"
+        },
+        {
+            "name": "Boxer"
+        },
+        {
+            "name": "AtmosphericTechnician"
+        },
+        {
+            "name": "Nanotrasen"
+        },
+        {
+            "name": "Prisoner"
+        },
+        {
+            "name": "Janitor"
+        },
+        {
+            "name": "Chemist"
+        },
+        {
+            "name": "StationEngineer"
+        },
+        {
+            "name": "SecurityOfficer"
+        },
+        {
+            "name": "NoId"
+        },
+        {
+            "name": "ChiefMedicalOfficer"
+        },
+        {
+            "name": "Roboticist"
+        },
+        {
+            "name": "Chaplain"
+        },
+        {
+            "name": "Lawyer"
+        },
+        {
+            "name": "Unknown"
+        },
+        {
+            "name": "Librarian"
+        },
+        {
+            "name": "CargoTechnician"
+        },
+        {
+            "name": "Scientist"
+        },
+        {
+            "name": "ResearchAssistant"
+        },
+        {
+            "name": "Geneticist"
+        },
+        {
+            "name": "Clown"
+        },
+        {
+            "name": "Captain"
+        },
+        {
+            "name": "HeadOfPersonnel"
+        },
+        {
+            "name": "Virologist"
+        },
+        {
+            "name": "ShaftMiner"
+        },
+        {
+            "name": "Passenger"
+        },
+        {
+            "name": "ChiefEngineer"
+        },
+        {
+            "name": "Bartender"
+        },
+        {
+            "name": "HeadOfSecurity"
+        },
+        {
+            "name": "Brigmedic"
+        },
+        {
+            "name": "MedicalDoctor"
+        },
+        {
+            "name": "Paramedic"
+        },
+        {
+            "name": "Chef"
+        },
+        {
+            "name": "Warden"
+        },
+        {
+            "name": "ResearchDirector"
+        },
+        {
+            "name": "Mime"
+        },
+        {
+            "name": "Musician"
+        },
+        {
+            "name": "Reporter"
+        },
+        {
+            "name": "Psychologist"
+        },
+        {
+            "name": "MedicalIntern"
+        },
+        {
+            "name": "TechnicalAssistant"
+        },
+        {
+            "name": "ServiceWorker"
+        },
+        {
+            "name": "SecurityCadet"
+        },
+        {
+            "name": "Zombie"
+        },
+        {
+            "name": "Zookeeper"
+        },
+        {
+            "name": "SeniorEngineer"
+        },
+        {
+            "name": "SeniorResearcher"
+        },
+        {
+            "name": "SeniorPhysician"
+        },
+        {
+            "name": "SeniorOfficer"
+        },
+        {
+            "name": "Revolutionary"
+        },
+        {
+            "name": "HeadRevolutionary"
+        },
+        {
+            "name": "MindShield"
+        },
+        {
+            "name": "Syndicate"
+        },
+        {
+            "name": "Visitor"
+        }
+    ]
 }

@@ -16,6 +16,7 @@
     ADTDrinkGlassJug: 3
     ADTCarnationPack: 10 #Новый год
     ADTCinnamonPack: 5
+    CustomDrinkJug: 2 #to allow for custom drinks in the soda/booze dispensers
     DrinkAbsintheBottleFull: 2
     DrinkAleBottleFull: 5
     DrinkBeerBottleFull: 5
@@ -51,5 +52,7 @@
     ADTDrinkCherryExquisiteWineBottleFull: 1
     DrinkChampagneBottleFull: 2 #because the premium drink
     ADTDrinkVodkaAntivirusBottleFull: 2
+    DrinkBeerCan: 5
+    DrinkWineCan: 5
   emaggedInventory:
     DrinkPoisonWinebottleFull: 2

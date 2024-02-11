@@ -10,6 +10,7 @@ using Content.Shared.Database;
 using Content.Shared.Language;
 using Content.Shared.Radio;
 using Content.Shared.Radio.Components;
+using Content.Shared.Speech;
 using Robust.Shared.Map;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
@@ -67,7 +68,7 @@ public sealed class RadioSystem : EntitySystem
                 msg = args.NotUnderstoodChatMsg;
             }
 
-            _netMan.ServerSendMessage(new MsgChatMessage { Message = msg }, actor.PlayerSession.ConnectedClient);
+            _netMan.ServerSendMessage(new MsgChatMessage { Message = msg }, actor.PlayerSession.Channel);
         }
     }
 
@@ -94,6 +95,31 @@ public sealed class RadioSystem : EntitySystem
             : MetaData(messageSource).EntityName;
 
         name = FormattedMessage.EscapeText(name);
+
+
+        SpeechVerbPrototype speech;
+        if (mask != null
+            && mask.Enabled
+            && mask.SpeechVerb != null
+            && _prototype.TryIndex<SpeechVerbPrototype>(mask.SpeechVerb, out var proto))
+        {
+            speech = proto;
+        }
+        else
+            speech = _chat.GetSpeechVerb(messageSource, message);
+
+        var content = escapeMarkup
+            ? FormattedMessage.EscapeText(message)
+            : message;
+
+        var wrappedMessage = Loc.GetString(speech.Bold ? "chat-radio-message-wrap-bold" : "chat-radio-message-wrap",
+            ("color", channel.Color),
+            ("fontType", speech.FontId),
+            ("fontSize", speech.FontSize),
+            ("verb", Loc.GetString(_random.Pick(speech.SpeechVerbStrings))),
+            ("channel", $"\\[{channel.LocalizedName}\\]"),
+            ("name", name),
+            ("message", content));
 
         // most radios are relayed to chat, so lets parse the chat message beforehand
 
