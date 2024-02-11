@@ -70,7 +70,7 @@
         - !type:OrganType
           type: Novakid
         - !type:ReagentThreshold
-          min: 10
+          min: 10.05
         damage:
           types:
             Bloodloss: 0.5
@@ -79,7 +79,7 @@
         - !type:OrganType
           type: Novakid
         - !type:ReagentThreshold
-          min: 20
+          min: 20.05
         - !type:Temperature
           min: 190
         amount: -15000
