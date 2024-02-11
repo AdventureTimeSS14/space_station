@@ -1,4 +1,4 @@
-﻿language-Universal-name = Универсальный
+language-Universal-name = Универсальный
 language-Universal-description = Что ты такое?
 language-GalacticCommon-name = Общегалактический
 language-GalacticCommon-description = Обычно используется для межвидового общения и официальных целей.
@@ -72,6 +72,9 @@ language-Pig-description = A collection of sounds made by pigs.
 language-Moffic-name = Паучий
 language-Moffic-description = Древний язык, на котором говорят арахниды.
 
+language-Drask-name = Орлуум
+language-Drask-description = Монотонный, вибрирующий язык драсков. Он чем-то напоминает китовую песню.
+
 language-GalacticCommon = Общ.
 language-Bubblish = Пузырчатый
 language-RootSpeak = Песнь корней
@@ -91,6 +94,7 @@ language-RobotTalk = Троичный
 language-Monkey = Обезьяний
 language-Bee = Пчелиный
 language-Mouse = Мышиный
+language-Drask = Орлуум
 # These ones are half-assed because these creatures are almost never played as.
 language-Chicken = Animal chicken
 language-Duck = Animal duck

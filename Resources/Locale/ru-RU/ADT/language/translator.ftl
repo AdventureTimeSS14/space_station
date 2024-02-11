@@ -1,4 +1,4 @@
-﻿translator-component-shutoff = {$translator} выключается.
+translator-component-shutoff = {$translator} выключается.
 translator-component-turnon = The {$translator} включается.
 translator-enabled = Оно включено.
 translator-disabled = Оно выключено.
@@ -49,3 +49,6 @@ ent-NianTranslatorImplanter = полноценный языковой импла
 
 ent-FireTranslatorImplanter = базовый языковой имплант Огненного языка
     .desc = Имплант, позволяющий понимать Огненный язык.
+
+ent-DraskTranslatorImplanter = полноценный языковой имплант Орлуум
+    .desc = Имплант, позволяющий понимать и общаться на языке Орлуум.

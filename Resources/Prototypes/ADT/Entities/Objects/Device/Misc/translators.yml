@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: TranslatorUnpowered
   parent: [ BaseItem ]
   name: Translator
@@ -233,4 +233,23 @@
     - Pig
     requires:
     - GalacticCommon
+    requires-all: false
+
+- type: entity
+  id: DraskTranslator
+  parent: [ TranslatorEmtpy ]
+  name: Orluum translator
+  description: "Translates speech between Orluum and Galactic Common."
+  components:
+  - type: HandheldTranslator
+    default-language: GalacticCommon
+    spoken:
+    - GalacticCommon
+    - Drask
+    understood:
+    - GalacticCommon
+    - Drask
+    requires:
+    - GalacticCommon
+    - Drask
     requires-all: false

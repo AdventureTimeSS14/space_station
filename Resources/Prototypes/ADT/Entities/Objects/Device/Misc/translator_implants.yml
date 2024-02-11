@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: BaseTranslatorImplanter
   parent: [ BaseItem ]
   name: Basic translator implant
@@ -175,3 +175,15 @@
   - type: TranslatorImplanter
     understood:
     - Fire
+
+- type: entity
+  id: DraskTranslatorImplanter
+  parent: [ BaseTranslatorImplanter ]
+  name: Orluum translator implant
+  description: "An implant giving the ability to understand and speak Orluum."
+  components:
+  - type: TranslatorImplanter
+    spoken:
+    - Drask
+    understood:
+    - Drask

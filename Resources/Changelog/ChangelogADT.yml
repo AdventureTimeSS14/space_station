@@ -1209,3 +1209,9 @@ Entries:
   - {message: "Есть такие треки, как: Space Asshole, The Wizard, The end of the expedition, Running out и Tear of veil. Планируется расширение ассортимента.", type: Tweak}
   id: 55680 #костыль отображения в Обновлениях
   time: '2024-02-10T08:20:00.0000000+00:00'
+
+- author: Xelasto
+  changes:
+  - {message: "Добавлен язык Орлуум", type: Add}
+  id: 55681 #костыль отображения в Обновлениях
+  time: '2024-02-11T08:20:00.0000000+00:00'

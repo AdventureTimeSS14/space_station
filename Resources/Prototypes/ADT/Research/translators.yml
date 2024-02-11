@@ -1,4 +1,4 @@
-﻿# Tier 2 - entrypoint to translators
+# Tier 2 - entrypoint to translators
 - type: technology
   id: BasicTranslation
   name: research-technology-basic-translation
@@ -17,6 +17,7 @@
   - RootSpeakTranslator
   - BasicGalaticCommonTranslatorImplanter
   - MofficTranslator
+  - DraskTranslator
 
 
 # Frontier - languages mechanic
@@ -40,3 +41,4 @@
   - RootSpeakTranslatorImplanter
   - AnimalTranslator
   - MofficTranslatorImplanter
+  - DraskTranslatorImplanter

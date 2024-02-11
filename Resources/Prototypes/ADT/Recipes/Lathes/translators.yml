@@ -1,4 +1,4 @@
-﻿# Translators
+# Translators
 - type: latheRecipe
   id: CanilunztTranslator
   result: CanilunztTranslator
@@ -214,6 +214,27 @@
 - type: latheRecipe
   id: FireTranslatorImplanter
   result: FireTranslatorImplanter
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 500
+    Plastic: 100
+    Gold: 50
+    Silver: 50
+
+- type: latheRecipe
+  id: DraskTranslator
+  result: DraskTranslator
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 100
+    Plastic: 50
+    Gold: 50
+
+- type: latheRecipe
+  id: DraskTranslatorImplanter
+  result: DraskTranslatorImplanter
   completetime: 2
   materials:
     Steel: 500
