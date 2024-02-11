@@ -59,7 +59,6 @@ public sealed class ChatUIController : UIController
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly IReplayRecordingManager _replayRecording = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!;
-    [Dependency] private readonly IGameController _controllerProxy = default!;
 
     [UISystemDependency] private readonly ExamineSystem? _examine = default;
     [UISystemDependency] private readonly GhostSystem? _ghost = default;
@@ -709,20 +708,6 @@ public sealed class ChatUIController : UIController
 
         if (string.IsNullOrWhiteSpace(text))
             return;
-
-        if (LastMessage == text)
-        {
-            DublicateCount++;
-            if (DublicateCount >= 5)
-            {
-                _controllerProxy.Shutdown();
-            }
-            return;
-        }
-        else
-        {
-            LastMessage = text;
-        }
 
         (var prefixChannel, text, var _) = SplitInputContents(text);
 
