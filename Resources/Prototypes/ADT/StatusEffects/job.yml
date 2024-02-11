@@ -17,4 +17,4 @@
   id: JobIconADTInvestigator
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconADTInvestigator
+    state: Investigator
