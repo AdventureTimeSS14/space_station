@@ -5,4 +5,5 @@
 [submodule "secrets"]
 	path = secrets
 	url = https://github.com/xtray85/ADT_STATION.git
-	optional = true
+	branch = main
+	update = none
