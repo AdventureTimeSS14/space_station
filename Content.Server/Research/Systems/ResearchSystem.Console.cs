@@ -38,12 +38,12 @@ public sealed partial class ResearchSystem
         if (!UnlockTechnology(uid, args.Id, ent))
             return;
 
-        var message = Loc.GetString("research-console-unlock-technology-radio-broadcast",
+        /*var message = Loc.GetString("research-console-unlock-technology-radio-broadcast",
             ("technology", Loc.GetString(technologyPrototype.Name)),
             ("amount", technologyPrototype.Cost));
-        _radio.SendRadioMessage(uid, message, component.AnnouncementChannel, uid, escapeMarkup: false);
+        _radio.SendRadioMessage(uid, message, component.AnnouncementChannel, uid);
         SyncClientWithServer(uid);
-        UpdateConsoleInterface(uid, component);
+        UpdateConsoleInterface(uid, component);*/
     }
 
     private void OnConsoleBeforeUiOpened(EntityUid uid, ResearchConsoleComponent component, BeforeActivatableUIOpenEvent args)

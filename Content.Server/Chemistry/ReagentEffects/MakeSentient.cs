@@ -3,6 +3,9 @@ using Content.Server.Speech.Components;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Mind.Components;
 using Robust.Shared.Prototypes;
+using System.Linq;
+using Content.Shared.Language;
+using Content.Shared.Language.Systems;
 
 namespace Content.Server.Chemistry.ReagentEffects;
 
@@ -21,6 +24,23 @@ public sealed partial class MakeSentient : ReagentEffect
         // We call this before the mind check to allow things like player-controlled mice to be able to benefit from the effect
         entityManager.RemoveComponent<ReplacementAccentComponent>(uid);
         entityManager.RemoveComponent<MonkeyAccentComponent>(uid);
+
+        // Frontier - languages mechanic
+        // Try to make the entity speak GalacticCommon - the default language for sentient species
+        var speaker = entityManager.EnsureComponent<LanguageSpeakerComponent>(uid);
+        var gc = SharedLanguageSystem.GalacticCommon.ID;
+
+        if (!speaker.UnderstoodLanguages.Contains(gc))
+            speaker.UnderstoodLanguages.Add(gc);
+
+        if (!speaker.SpokenLanguages.Contains(gc))
+        {
+            speaker.CurrentLanguage = gc;
+            speaker.SpokenLanguages.Add(gc);
+
+            args.EntityManager.EventBus.RaiseLocalEvent(uid, new SharedLanguageSystem.LanguagesUpdateEvent(), true);
+        }
+
 
         // Stops from adding a ghost role to things like people who already have a mind
         if (entityManager.TryGetComponent<MindContainerComponent>(uid, out var mindContainer) && mindContainer.HasMind)

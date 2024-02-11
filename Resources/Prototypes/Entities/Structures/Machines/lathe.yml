@@ -333,6 +333,30 @@
       - FauxTileAstroIce
       - OreBagOfHolding
       - DeviceQuantumSpinInverter
+      # Frontier - languages mechanic
+      - CanilunztTranslator
+      - BubblishTranslator
+      - NekomimeticTranslator
+      - DraconicTranslator
+      - SolCommonTranslator
+      - RootSpeakTranslator
+      - XenoTranslator
+      - DraskTranslator
+      - BasicGalaticCommonTranslatorImplanter
+      - AdvancedGalaticCommonTranslatorImplanter
+      - BubblishTranslatorImplanter
+      - NekomimeticTranslatorImplanter
+      - DraconicTranslatorImplanter
+      - CanilunztTranslatorImplanter
+      - SolCommonTranslatorImplanter
+      - RootSpeakTranslatorImplanter
+      - AnimalTranslator
+      - MofficTranslatorImplanter
+      - MofficTranslator
+      - SikTajTranslatorImplanter
+      - NianTranslatorImplanter
+      - FireTranslatorImplanter
+      - DraskTranslatorImplanter
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ExplosivePayload

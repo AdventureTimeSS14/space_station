@@ -72,6 +72,14 @@
   - type: Tag
     tags:
       - ShoesRequiredStepTriggerImmune
+  # Frontier - languages mechanic
+  - type: LanguageSpeaker
+    speaks:
+    - GalacticCommon
+    - RobotTalk
+    understands:
+    - GalacticCommon
+    - RobotTalk
 
 - type: entity
   name: drone
@@ -170,8 +178,8 @@
         base:
           Off: { state: shell }
           On: { state: drone }
-  - type: ReplacementAccent
-    accent: silicon
+#  - type: ReplacementAccent
+#    accent: silicon
   - type: Repairable
     fuelcost: 15
     doAfterDelay: 8
@@ -189,6 +197,13 @@
       - CannotSuicide
   - type: StaticPrice
     price: 250
+  # Frontier - languages mechanic
+  - type: LanguageSpeaker
+    speaks:
+    - RobotTalk
+    understands:
+    - RobotTalk
+
 
 - type: entity
   name: onestar mecha
