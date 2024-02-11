@@ -191,7 +191,7 @@
   id: JobIconVirologist
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: Virologist
+    state: JobIconVirologist
 
 - type: statusIcon
   parent: JobIcon
@@ -261,7 +261,7 @@
   id: JobIconWarden
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: Warden
+    state: JobIconWarden
 
 - type: statusIcon
   parent: JobIcon
@@ -331,14 +331,14 @@
   id: JobIconZombie # This is a perfectly legitimate profession to pursue
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: Zombie
+    state: JobIconZombie
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconZookeeper
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: Zookeeper
+    state: JobIconZookeeper
 
 - type: statusIcon
   parent: JobIcon
