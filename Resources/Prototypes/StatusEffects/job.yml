@@ -9,84 +9,84 @@
   id: JobIconDetective
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconDetective
+    state: Detective
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconQuarterMaster
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconQuarterMaster
+    state: QuarterMaster
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconBorg
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconBorg
+    state: Borg
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconBotanist
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconBotanist
+    state: Botanist
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconBoxer
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconBoxer
+    state: Boxer
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconAtmosphericTechnician
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconAtmosphericTechnician
+    state: AtmosphericTechnician
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconNanotrasen
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconNanotrasen
+    state: Nanotrasen
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconPrisoner
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconPrisoner
+    state: Prisoner
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconJanitor
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconJanitor
+    state: Janitor
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconChemist
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconChemist
+    state: Chemist
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconStationEngineer
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconStationEngineer
+    state: StationEngineer
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconSecurityOfficer
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconSecurityOfficer
+    state: SecurityOfficer
 
 - type: statusIcon
   parent: JobIcon
@@ -100,28 +100,28 @@
   id: JobIconChiefMedicalOfficer
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconChiefMedicalOfficer
+    state: ChiefMedicalOfficer
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconRoboticist
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconRoboticist
+    state: Roboticist
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconChaplain
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconChaplain
+    state: Chaplain
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconLawyer
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconLawyer
+    state: Lawyer
 
 - type: statusIcon
   parent: JobIcon
@@ -135,231 +135,231 @@
   id: JobIconLibrarian
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconLibrarian
+    state: Librarian
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconCargoTechnician
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconCargoTechnician
+    state: CargoTechnician
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconScientist
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconScientist
+    state: Scientist
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconResearchAssistant
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconResearchAssistant
+    state: ResearchAssistant
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconGeneticist
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconGeneticist
+    state: Geneticist
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconClown
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconClown
+    state: Clown
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconCaptain
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconCaptain
+    state: Captain
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconHeadOfPersonnel
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconHeadOfPersonnel
+    state: HeadOfPersonnel
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconVirologist
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconVirologist
+    state: Virologist
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconShaftMiner
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconShaftMiner
+    state: ShaftMiner
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconPassenger
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconPassenger
+    state: Passenger
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconChiefEngineer
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconChiefEngineer
+    state: ChiefEngineer
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconBartender
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconBartender
+    state: Bartender
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconHeadOfSecurity
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconHeadOfSecurity
+    state: HeadOfSecurity
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconBrigmedic
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconBrigmedic
+    state: Brigmedic
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconMedicalDoctor
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconMedicalDoctor
+    state: MedicalDoctor
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconParamedic
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconParamedic
+    state: Paramedic
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconChef
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconChef
+    state: Chef
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconWarden
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconWarden
+    state: Warden
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconResearchDirector
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconResearchDirector
+    state: ResearchDirector
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconMime
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconMime
+    state: Mime
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconMusician
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconMusician
+    state: Musician
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconReporter
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconReporter
+    state: Reporter
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconPsychologist
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconPsychologist
+    state: Psychologist
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconMedicalIntern
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconMedicalIntern
+    state: MedicalIntern
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconTechnicalAssistant
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconTechnicalAssistant
+    state: TechnicalAssistant
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconServiceWorker
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconServiceWorker
+    state: ServiceWorker
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconSecurityCadet
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconSecurityCadet
+    state: SecurityCadet
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconZombie # This is a perfectly legitimate profession to pursue
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconZombie
+    state: Zombie
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconZookeeper
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconZookeeper
+    state: Zookeeper
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconSeniorPhysician
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconSeniorPhysician
+    state: SeniorPhysician
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconSeniorOfficer
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconSeniorOfficer
+    state: SeniorOfficer
 
 - type: statusIcon
   parent: JobIcon
   id: JobIconSeniorEngineer
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: JobIconSeniorEngineer
+    state: SeniorEngineer
 
 - type: statusIcon
   parent: JobIcon
