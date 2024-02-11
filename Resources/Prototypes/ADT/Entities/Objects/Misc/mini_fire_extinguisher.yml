@@ -3,7 +3,6 @@
   parent: BaseItem
   id: MiniFireExtinguisher
   description: It extinguishes fires.
-  suffix: Schrodinger
   components:
   - type: Sprite
     sprite: ADT/Objects/Misc/minifire_extinguisher.rsi
