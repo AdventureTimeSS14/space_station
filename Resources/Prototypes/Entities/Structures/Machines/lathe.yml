@@ -887,7 +887,7 @@
       - MedkitRadiation
       - MedkitCombat
     dynamicRecipes:
-      - HandheldCrewMonitor
+      #- HandheldCrewMonitor
       - ClothingEyesHudMedical
       - ClothingHandsGlovesNitrile
       - CryostasisBeaker
