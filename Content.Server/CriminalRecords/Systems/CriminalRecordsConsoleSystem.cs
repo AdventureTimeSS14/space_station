@@ -128,7 +128,8 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
             // this is impossible
             _ => "not-wanted"
         };
-        _radio.SendRadioMessage(ent, Loc.GetString($"criminal-records-console-{statusString}", args), ent.Comp.SecurityChannel, ent);
+        //TODO xTray сообщение нужно добавить язык
+        //_radio.SendRadioMessage(ent, Loc.GetString($"criminal-records-console-{statusString}", args), ent.Comp.SecurityChannel, ent);
 
         UpdateUserInterface(ent);
     }

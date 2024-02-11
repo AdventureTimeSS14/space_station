@@ -326,7 +326,7 @@ namespace Content.Server.Polymorph.Systems
         public void SendToPausesdMap(EntityUid uid, TransformComponent transform)
         {
             //Ensures a map to banish the entity to
-            EnsurePausesdMap();
+            //EnsurePausesdMap();
             if (PausedMap != null)
                 _transform.SetParent(uid, transform, PausedMap.Value);
         }
@@ -370,15 +370,13 @@ namespace Content.Server.Polymorph.Systems
             if (Deleted(parent))
                 return null;
 
-            if (!_proto.TryIndex(component.Prototype, out PolymorphPrototype? proto))
-            {
-                _sawmill.Error(
-                    $"{nameof(PolymorphSystem)} encountered an improperly initialized polymorph component while reverting. Entity {ToPrettyString(uid)}. Prototype: {component.Prototype}");
-                return null;
-            }
+            var uidXform = Transform(uid);
+            var parentXform = Transform(parent);
 
-            RetrievePausedEntity(uid, parent);
-            if (proto.TransferDamage &&
+            _transform.SetParent(parent, parentXform, uidXform.ParentUid);
+            _transform.SetCoordinates(parent, parentXform, uidXform.Coordinates, uidXform.LocalRotation);
+
+            if (component.Configuration.TransferDamage &&
                 TryComp<DamageableComponent>(parent, out var damageParent) &&
                 _mobThreshold.GetScaledDamage(uid, parent, out var damage) &&
                 damage != null)
