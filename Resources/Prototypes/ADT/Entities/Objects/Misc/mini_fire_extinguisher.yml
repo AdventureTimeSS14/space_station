@@ -47,7 +47,7 @@
   - type: Tool
     qualities:
     - Rolling
-    speed: 0.4 # its very big, akward to use
+    speed: 0.4 
   - type: Appearance
   - type: GenericVisualizer
     visuals:
