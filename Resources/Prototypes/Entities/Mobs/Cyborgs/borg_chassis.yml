@@ -24,6 +24,15 @@
     node: cyborg
   - type: Speech
     speechVerb: Robotic
+  # Frontier - languages mechanic
+  - type: LanguageSpeaker
+    speaks:
+    - GalacticCommon
+    - RobotTalk
+    understands:
+    - GalacticCommon
+    - RobotTalk
+
 
 - type: entity
   id: BorgChassisMining

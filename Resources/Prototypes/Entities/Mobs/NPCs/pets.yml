@@ -36,6 +36,13 @@
     - VimPilot
   - type: StealTarget
     stealGroup: AnimalIan
+  - type: LanguageSpeaker # Frontier
+    speaks:
+    - Dog
+    understands:
+    - GalacticCommon
+    - Dog
+
 
 - type: entity
   name: Old Ian

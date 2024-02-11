@@ -96,6 +96,15 @@
       shiveringHeatRegulation: 1200
       normalBodyTemperature: 400
       thermalRegulationTemperatureThreshold: 125
+   # Frontier - languages mechanic
+    - type: LanguageSpeaker
+      speaks:
+      - GalacticCommon
+      - RobotTalk
+      understands:
+      - GalacticCommon
+      - RobotTalk
+
 
 - type: entity
   parent: ADTPlayerSiliconBaseSchrodinger

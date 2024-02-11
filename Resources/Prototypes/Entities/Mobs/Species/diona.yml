@@ -97,6 +97,13 @@
   - type: BodyEmotes
     soundsId: DionaBodyEmotes
   - type: IgnoreKudzu
+  - type: LanguageSpeaker
+    speaks:
+    - GalacticCommon
+    - RootSpeak
+    understands:
+    - GalacticCommon
+    - RootSpeak
 
 - type: entity
   parent: BaseSpeciesDummy
