@@ -2,7 +2,7 @@
   id: NesFloorPlanetDirtArtificial
   name: tiles-dirt-floor-artifical
   sprite: /Textures/Tiles/Planet/dirt.rsi/dirt.png
-  canCrowbar: false
+  #canCrowbar: false
   footstepSounds:
     collection: FootstepAsteroid
   heatCapacity: 10000
