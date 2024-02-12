@@ -22,7 +22,7 @@
   - 1.0
   - 1.0
   - 1.0
-  canCrowbar: false
+  #canCrowbar: false
   footstepSounds:
     collection: FootstepAsteroid
   heatCapacity: 10000
@@ -41,7 +41,7 @@
   - 1.0
   - 1.0
   - 1.0
-  canCrowbar: false
+  #canCrowbar: false
   footstepSounds:
     collection: FootstepAsteroid
   heatCapacity: 10000
@@ -70,7 +70,7 @@
     North: /Textures/Tiles/Planet/Grass/double_edge.png
     West: /Textures/Tiles/Planet/Grass/double_edge.png
   baseTurf: FloorPlanetDirt
-  canCrowbar: false
+  #canCrowbar: false
   footstepSounds:
     collection: FootstepGrass
   itemDrop: FloorTileItemGrass
@@ -83,7 +83,7 @@
   id: NesFloorBasaltArtificial
   name: tiles-basalt-floor-artifical
   sprite: /Textures/Tiles/Planet/basalt.png
-  canCrowbar: false
+  #canCrowbar: false
   footstepSounds:
     collection: FootstepAsteroid
   heatCapacity: 10000
@@ -116,7 +116,7 @@
     East: /Textures/Tiles/Planet/Snow/snow_double_edge_east.png
     North: /Textures/Tiles/Planet/Snow/snow_double_edge_north.png
     West: /Textures/Tiles/Planet/Snow/snow_double_edge_west.png
-  canCrowbar: false
+  #canCrowbar: false
   footstepSounds:
     collection: FootstepSnow
   heatCapacity: 10000
@@ -128,7 +128,7 @@
   id: NesFloorIceArtificial
   name: tiles-ice-artifical
   sprite: /Textures/Tiles/Planet/Snow/ice.png
-  canCrowbar: false
+  #canCrowbar: false
   friction: 0.05
   heatCapacity: 10000
   weather: true
@@ -148,7 +148,7 @@
     East: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_east.png
     North: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_north.png
     West: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_west.png
-  canCrowbar: false
+  #canCrowbar: false
   footstepSounds:
     collection: FootstepSnow
   heatCapacity: 10000
