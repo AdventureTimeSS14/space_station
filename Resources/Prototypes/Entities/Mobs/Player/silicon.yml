@@ -368,7 +368,7 @@
       - MMIFilled
       borg_module:
       - BorgModuleAdvancedTool
-      - BorgModuleGasAnalyzer
+      #- BorgModuleGasAnalyzer
       - BorgModuleConstruction
   - type: ItemSlots
     slots:
