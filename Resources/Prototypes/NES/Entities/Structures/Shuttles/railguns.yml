@@ -100,9 +100,9 @@
       map: ["enum.StorageVisualLayers.Lock"]
   - type: Emitter
     boltType: NesBulletRailgun
-    baseFireBurstDelayMin: 1
-    baseFireInterval: 0.5
-    baseFireBurstDelayMax: 1
+    #baseFireBurstDelayMin: 1
+    #baseFireInterval: 0.5
+    #baseFireBurstDelayMax: 1
   - type: Machine
     board: NesCombatEmitterSmallCircuitboard
   - type: Gun
