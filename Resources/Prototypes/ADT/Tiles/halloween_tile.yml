@@ -2,7 +2,7 @@
   id: ADTFloorBlackOrange
   name: tiles-blackorange-floor
   sprite: /Textures/ADT/Tiles/blackorange.png
-  #variants: 3
+  variants: 3
   placementVariants:
   - 1.0
   - 1.0
