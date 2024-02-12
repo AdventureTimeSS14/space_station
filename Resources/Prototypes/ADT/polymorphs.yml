@@ -296,3 +296,14 @@
   revertOnCrit: true
   revertOnDeath: true
   duration: 50
+
+- type: polymorph
+  id: ADTPMouse
+  entity: MobMouse
+  forced: true
+  transferName: true
+  allowRepeatedMorphs: False
+  inventory: Drop
+  revertOnCrit: true
+  revertOnDeath: true
+  duration: 30

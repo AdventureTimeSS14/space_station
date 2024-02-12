@@ -207,6 +207,42 @@
             min: 20
             max: 20
         probability: 0.5
+      - !type:Polymorph #животные, ради цели и разнообразия. Может быть сработает на некоторые расы, по типу Урсов или Унатхов.
+        prototype: ADTPMouse
+        conditions:
+          - !type:OrganType
+            type: Animal
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.25
+      - !type:Polymorph 
+        prototype: ADTPSpider2
+        conditions:
+          - !type:OrganType
+            type: Animal
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.25
+      - !type:Polymorph 
+        prototype: ADTPCarp
+        conditions:
+          - !type:OrganType
+            type: Animal
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.25
+      - !type:Polymorph 
+        prototype: ADTPLizard2
+        conditions:
+          - !type:OrganType
+            type: Animal
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.25
       - !type:PopupMessage
         conditions:
           - !type:ReagentThreshold
@@ -230,8 +266,8 @@
       - !type:HealthChange
         conditions:
           - !type:ReagentThreshold
-            min: 30
-            max: 30
+            min: 15
+            max: 15
         damage:
           types:
             Cellular: 20
@@ -239,77 +275,79 @@
         prototype: ADTPMonkey
         conditions:
           - !type:ReagentThreshold
-            min: 30
-            max: 30
+            min: 15
+            max: 15
         probability: 0.1
       - !type:Polymorph
         prototype: ADTPBread
         conditions:
           - !type:ReagentThreshold
-            min: 30
-            max: 30
+            min: 15
+            max: 15
         probability: 0.1
       - !type:Polymorph
         prototype: ADTPRodMetall2
         conditions:
           - !type:ReagentThreshold
-            min: 30
-            max: 30
+            min: 15
+            max: 15
         probability: 0.1
       - !type:Polymorph
         prototype: ADTPFrog
         conditions:
           - !type:ReagentThreshold
-            min: 30
-            max: 30
+            min: 15
+            max: 15
         probability: 0.1
       - !type:Polymorph
         prototype: ADTPCat
         conditions:
           - !type:ReagentThreshold
-            min: 30
-            max: 30
+            min: 15
+            max: 15
         probability: 0.1
       - !type:Polymorph
         prototype: ADTPSkeleton
         conditions:
           - !type:ReagentThreshold
-            min: 30
-            max: 30
+            min: 15
+            max: 15
         probability: 0.1
       - !type:Polymorph
         prototype: ADTPCow
         conditions:
           - !type:ReagentThreshold
-            min: 30
-            max: 30
+            min: 15
+            max: 15
         probability: 0.1
       - !type:Polymorph
         prototype: ADTPPossum
         conditions:
           - !type:ReagentThreshold
-            min: 30
-            max: 30
+            min: 15
+            max: 15
         probability: 0.1
       - !type:Polymorph
         prototype: ADTPCarp
         conditions:
           - !type:ReagentThreshold
-            min: 30
-            max: 30
+            min: 15
+            max: 15
         probability: 0.1
       - !type:Polymorph
         prototype: ADTPSpaceBear
         conditions:
           - !type:ReagentThreshold
-            min: 30
-            max: 30
+            min: 15
+            max: 15
         probability: 0.1
       - !type:PopupMessage
         conditions:
           - !type:ReagentThreshold
-            min: 30
+            min: 15
         type: Local
         visualType: Small
         messages: [ "polymorph-effect-feelings" ]
         probability: 0.05
+
+#мне стыдно смотреть на этот код, но иначе как его сделать я не представляю.
