@@ -134,6 +134,7 @@
     tags:
     - ChangelingBlacklist
     - ShoesRequiredStepTriggerImmune
+    - DoorBumpOpener # авто открытие двери, когда подходишь к ней
   # - type: PresetIdCard
   #   job: ADTSecurityCyborg
   # - type: AccessReader
