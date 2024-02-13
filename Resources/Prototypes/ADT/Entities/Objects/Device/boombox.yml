@@ -91,8 +91,7 @@
   components:
     - type: Sprite
       sprite: ADT/Objects/Devices/boomboxtape.rsi
-      state: tape
-      layers: ss14
+      state: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/AssHoleMono.ogg
 
@@ -105,8 +104,7 @@
   components:
     - type: Sprite
       sprite: ADT/Objects/Devices/boomboxtape.rsi
-      state: tape
-      layers: ss14
+      state: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/AssHoleMono.ogg
       syndStatus: true
@@ -121,8 +119,7 @@
   components:
     - type: Sprite
       sprite: ADT/Objects/Devices/boomboxtape.rsi
-      state: tape
-      layers: ss14
+      state: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/TheWizardMono.ogg
       syndStatus: true
@@ -136,8 +133,7 @@
   components:
     - type: Sprite
       sprite: ADT/Objects/Devices/boomboxtape.rsi
-      state: tape
-      layers: ss14
+      state: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/The-End-of-The-Expedition-mono.ogg
 
@@ -149,8 +145,7 @@
   components:
     - type: Sprite
       sprite: ADT/Objects/Devices/boomboxtape.rsi
-      state: tape
-      layers: ss14
+      state: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/Tear-of-veil-mono.ogg
 
@@ -162,8 +157,7 @@
   components:
     - type: Sprite
       sprite: ADT/Objects/Devices/boomboxtape.rsi
-      state: tape
-      layers: ss14
+      state: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/Running-out-mono.ogg
 
