@@ -129,7 +129,6 @@
   id: ADTCrateFunBoomBoxTapes2
   name: "Ящик кассет Undertale"
   description: "Ящик с музыкой из одной старинной игры для бумбокса."
-
   parent: CrateGenericSteel
   components:
   - type: StorageFill
