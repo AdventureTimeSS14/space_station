@@ -4,6 +4,9 @@
   name: BoomBox
   description: A boombox for playing music with a volume control. The manufacturer's label has been erased on the back cover...
   components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/boomboxx.rsi
+      state: boombox
     - type: ItemSlots
     - type: ContainerContainer
       containers:
@@ -11,17 +14,8 @@
           showEnts: False
           occludes: True
           ent: null
-    - type: DeviceLinkSource
-      ports:
-      - Pressed
     - type: Item
-      inhandVisuals:
-        left:
-          - state: inhand-left
-        right:
-          - state: inhand-right
-    - type: Sprite
-      sprite: ADT/Objects/Devices/boombox.rsi
+      size: Normal
     - type: BoomBox
       slots:
         boombox_slot:
@@ -38,6 +32,9 @@
       interfaces:
       - key: enum.BoomBoxUiKey.Key
         type: BoomBoxBoundUi
+    - type: DeviceLinkSource
+      ports:
+      - Pressed
 
 - type: entity
   parent: BaseItem
@@ -45,9 +42,8 @@
   abstract: true
   components:
     - type: Sprite
-      sprite: ADT/Objects/Devices/boomboxtape.rsi
-      layers:
-        - state: ss14
+      sprite: ADT/Objects/Device/tape.rsi
+      state: icon
     - type: Tag
       tags:
         - BoomBoxTape
@@ -63,13 +59,14 @@
   components:
     - type: Sprite
       sprite: ADT/Objects/Devices/tapepacked.rsi
-      state: ss14
+      state: tape
+    - type: Item
+      size: Small
     - type: SpawnItemsOnUse
       items:
       - id: BaseBoomBoxTape
       sound:
         path: /Audio/Effects/unwrap.ogg
-
 
 - type: entity
   parent: BaseBoomBoxTape
@@ -77,9 +74,6 @@
   name: The Wizard
   description: It is said that this tape can summon a wizard...
   components:
-    - type: Sprite
-      sprite: ADT/Objects/Devices/boomboxtape.rsi
-      state: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/TheWizardMono.ogg
 
@@ -89,9 +83,6 @@
   name: Space AssHole
   description: Ageless classics...
   components:
-    - type: Sprite
-      sprite: ADT/Objects/Devices/boomboxtape.rsi
-      state: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/AssHoleMono.ogg
 
@@ -102,9 +93,6 @@
   description: Ageless classics...
   suffix: Syndicate
   components:
-    - type: Sprite
-      sprite: ADT/Objects/Devices/boomboxtape.rsi
-      state: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/AssHoleMono.ogg
       syndStatus: true
@@ -117,9 +105,6 @@
   description: It is said that this tape can summon a wizard...
   suffix: Syndicate
   components:
-    - type: Sprite
-      sprite: ADT/Objects/Devices/boomboxtape.rsi
-      state: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/TheWizardMono.ogg
       syndStatus: true
@@ -131,9 +116,6 @@
   name: The end of the expedition
   description: Desc thing.
   components:
-    - type: Sprite
-      sprite: ADT/Objects/Devices/boomboxtape.rsi
-      state: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/The-End-of-The-Expedition-mono.ogg
 
@@ -143,9 +125,6 @@
   name: Tears of veil
   description: Desc thing.
   components:
-    - type: Sprite
-      sprite: ADT/Objects/Devices/boomboxtape.rsi
-      state: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/Tear-of-veil-mono.ogg
 
@@ -155,9 +134,6 @@
   name: Running out.
   description: Desc thing.
   components:
-    - type: Sprite
-      sprite: ADT/Objects/Devices/boomboxtape.rsi
-      state: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/Running-out-mono.ogg
 
@@ -239,3 +215,157 @@
   components:
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/Gaster-mono.ogg
+
+#Запакованные
+
+#1
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: BoomBoxTapeTheWizardPacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: BoomBoxTapeTheWizard
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: BoomBoxTapeAssHolePacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: BoomBoxTapeAssHole
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: BoomBoxTapeTEOTEPacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: BoomBoxTapeTEOTE
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: BoomBoxTapeTearsOfVeilPacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: BoomBoxTapeTearsOfVeil
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: BoomBoxTapeRunningOutPacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: BoomBoxTapeRunningOut
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+# 2
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: BoomBoxTapeHopesAndDreamsPacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: BoomBoxTapeHopesAndDreams
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: BoomBoxTapeNewOldHomePacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: BoomBoxTapeNewOldHome
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: BoomBoxTapeOnceUponATimePacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: BoomBoxTapeOnceUponATime
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: BoomBoxTapeSnowdinPacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: BoomBoxTapeSnowdin
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: BoomBoxTapeWaterfallPacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: BoomBoxTapeWaterfall
+      sound:
+        path: /Audio/Effects/unwrap.ogg
