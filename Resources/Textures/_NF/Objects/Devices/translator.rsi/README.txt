@@ -1,0 +1,1 @@
+"copyright": "Created by discord:auriss093 для Времени Приключений MRP"

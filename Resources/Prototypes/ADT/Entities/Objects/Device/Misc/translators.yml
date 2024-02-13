@@ -4,6 +4,13 @@
   name: Translator
   description: "Translates speech."
   components:
+  - type: Item
+    sprite: _NF/Objects/Devices/translator.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
   - type: Sprite
     sprite: _NF/Objects/Devices/translator.rsi
     state: icon
@@ -22,6 +29,15 @@
           False: { visible: false }
   - type: HandheldTranslator
     enabled: false
+  - type: ToggleableLightVisuals
+    spriteLayer: translator
+    inhandVisuals:
+      left:
+      - state: inhand-left-translator
+        shader: unshaded
+      right:
+      - state: inhand-right-translator
+        shader: unshaded
 
 - type: entity
   id: Translator
@@ -252,4 +268,23 @@
     requires:
     - GalacticCommon
     - Drask
+    requires-all: false
+
+- type: entity
+  id: SikTajTranslator
+  parent: [ TranslatorEmtpy ]
+  name: SikTaj translator
+  description: "Translates speech between SikTaj and Galactic Common."
+  components:
+  - type: HandheldTranslator
+    default-language: GalacticCommon
+    spoken:
+    - GalacticCommon
+    - SikTaj
+    understood:
+    - GalacticCommon
+    - SikTaj
+    requires:
+    - GalacticCommon
+    - SikTaj
     requires-all: false

@@ -33,6 +33,18 @@
         - CrateTrashCartFilled
         - ClosetMaintenanceFilledRandom
         - ClosetEmergencyFilledRandom
+        - BoomBoxTapeTheWizard
+        - BoomBoxTapeAssHole
+        - BoomBoxTapeTEOTE
+        - BoomBoxTapeTearsOfVeil
+        - BoomBoxTapeRunningOut
+        - BoomBoxTapeNATO
+        - BoomBoxTapeHopesAndDreams
+        - BoomBoxTapeNewOldHome
+        - BoomBoxTapeOnceUponATime
+        - BoomBoxTapeSnowdin
+        - BoomBoxTapeWaterfall
+        - BoomBoxTapeGaster
       rareChance: 0.8
       prototypes:
         - CrateSalvageAssortedGoodies
@@ -81,6 +93,19 @@
       - AdvancedCapacitorStockPart
       - NanoManipulatorStockPart
       - AdvancedMatterBinStockPart
+        - BoomBoxTapeTheWizard
+        - BoomBoxTapeAssHole
+        - BoomBoxTapeTEOTE
+        - BoomBoxTapeTearsOfVeil
+        - BoomBoxTapeRunningOut
+        - BoomBoxTapeNATO
+        - BoomBoxTapeHopesAndDreams
+        - BoomBoxTapeNewOldHome
+        - BoomBoxTapeOnceUponATime
+        - BoomBoxTapeSnowdin
+        - BoomBoxTapeWaterfall
+        - BoomBoxTapeGaster
+        - BoomBox
       offset: 0.0
 
 - type: entity

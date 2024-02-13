@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseItem
-  id: BaseBoomBox
+  id: BoomBox
   name: BoomBox
   description: A boombox for playing music with a volume control. The manufacturer's label has been erased on the back cover...
   components:
@@ -14,9 +14,14 @@
     - type: DeviceLinkSource
       ports:
       - Pressed
+    - type: Item
+      inhandVisuals:
+        left:
+          - state: inhand-left
+        right:
+          - state: inhand-right
     - type: Sprite
-      sprite: Objects/Devices/boombox.rsi
-      state: boombox
+      sprite: ADT/Objects/Devices/boombox.rsi
     - type: BoomBox
       slots:
         boombox_slot:
@@ -40,8 +45,9 @@
   abstract: true
   components:
     - type: Sprite
-      sprite: Objects/Devices/boomboxtape.rsi
-      state: tape
+      sprite: ADT/Objects/Devices/boomboxtape.rsi
+      layers:
+        - state: ss14
     - type: Tag
       tags:
         - BoomBoxTape
@@ -51,20 +57,42 @@
       syndItem: "SyndicatePersonalAI"
 
 - type: entity
+  parent: BaseItem
+  id: BaseBoomBoxPackedTape
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Devices/tapepacked.rsi
+      state: ss14
+    - type: SpawnItemsOnUse
+      items:
+      - id: BaseBoomBoxTape
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+
+- type: entity
   parent: BaseBoomBoxTape
-  id: BaseBoomBoxTapeTheWizard
+  id: BoomBoxTapeTheWizard
   name: The Wizard
   description: It is said that this tape can summon a wizard...
   components:
+    - type: Sprite
+      sprite: ADT/Objects/Devices/boomboxtape.rsi
+      state: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/TheWizardMono.ogg
 
 - type: entity
   parent: BaseBoomBoxTape
-  id: BaseBoomBoxTapeAssHole
+  id: BoomBoxTapeAssHole
   name: Space AssHole
   description: Ageless classics...
   components:
+    - type: Sprite
+      sprite: ADT/Objects/Devices/boomboxtape.rsi
+      state: tape
+      layers: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/AssHoleMono.ogg
 
@@ -75,6 +103,10 @@
   description: Ageless classics...
   suffix: Syndicate
   components:
+    - type: Sprite
+      sprite: ADT/Objects/Devices/boomboxtape.rsi
+      state: tape
+      layers: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/AssHoleMono.ogg
       syndStatus: true
@@ -82,11 +114,15 @@
 
 - type: entity
   parent: BaseBoomBoxTape
-  id: BaseBoomBoxTapeSyndTest
+  id: BoomBoxTapeSyndTest
   name: The Wizard
   description: It is said that this tape can summon a wizard...
   suffix: Syndicate
   components:
+    - type: Sprite
+      sprite: ADT/Objects/Devices/boomboxtape.rsi
+      state: tape
+      layers: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/TheWizardMono.ogg
       syndStatus: true
@@ -94,27 +130,118 @@
 
 - type: entity
   parent: BaseBoomBoxTape
-  id: BaseBoomBoxTapeTEOTE
+  id: BoomBoxTapeTEOTE
   name: The end of the expedition
   description: Desc thing.
   components:
+    - type: Sprite
+      sprite: ADT/Objects/Devices/boomboxtape.rsi
+      state: tape
+      layers: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/The-End-of-The-Expedition-mono.ogg
 
 - type: entity
   parent: BaseBoomBoxTape
-  id: BaseBoomBoxTapeTearsOfVeil
+  id: BoomBoxTapeTearsOfVeil
   name: Tears of veil
   description: Desc thing.
   components:
+    - type: Sprite
+      sprite: ADT/Objects/Devices/boomboxtape.rsi
+      state: tape
+      layers: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/Tear-of-veil-mono.ogg
 
 - type: entity
   parent: BaseBoomBoxTape
-  id: BaseBoomBoxTapeRunningOut
+  id: BoomBoxTapeRunningOut
   name: Running out.
   description: Desc thing.
   components:
+    - type: Sprite
+      sprite: ADT/Objects/Devices/boomboxtape.rsi
+      state: tape
+      layers: ss14
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/Running-out-mono.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: BoomBoxTapeNATO
+  name: NATO
+  description: Desc thing.
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/Instruktor_iz_NATO.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: BoomBoxTapeHopesAndDreams
+  name: Hopes And Dreams
+  suffix: Undertale
+  description: Desc thing.
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/Undertale_Hopes_And_Dreams.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: BoomBoxTapeMegalovania
+  name: Megalovania
+  suffix: Undertale
+  description: Desc thing.
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/Undertale_Megalovania.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: BoomBoxTapeNewOldHome
+  name: New Old Home
+  suffix: Undertale
+  description: Desc thing.
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/Undertale_New_Old_Home.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: BoomBoxTapeOnceUponATime
+  name: Once Upon a Time
+  suffix: Undertale
+  description: Desc thing.
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/Undertale_Once_Upon_a_Time.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: BoomBoxTapeSnowdin
+  name: Snowdin Town
+  suffix: Undertale
+  description: Desc thing.
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/Undertale_Snowdin_Town.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: BoomBoxTapeWaterfall
+  name: Waterfall
+  suffix: Undertale
+  description: Desc thing.
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/Undertale_Waterfall.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: BoomBoxTapeGaster
+  name: Gaster Theme
+  suffix: Undertale
+  description: Desc thing.
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/Gaster-mono.ogg
