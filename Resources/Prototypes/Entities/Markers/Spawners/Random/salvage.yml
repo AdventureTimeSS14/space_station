@@ -93,19 +93,19 @@
       - AdvancedCapacitorStockPart
       - NanoManipulatorStockPart
       - AdvancedMatterBinStockPart
-        - BoomBoxTapeTheWizard
-        - BoomBoxTapeAssHole
-        - BoomBoxTapeTEOTE
-        - BoomBoxTapeTearsOfVeil
-        - BoomBoxTapeRunningOut
-        - BoomBoxTapeNATO
-        - BoomBoxTapeHopesAndDreams
-        - BoomBoxTapeNewOldHome
-        - BoomBoxTapeOnceUponATime
-        - BoomBoxTapeSnowdin
-        - BoomBoxTapeWaterfall
-        - BoomBoxTapeGaster
-        - BoomBox
+      - BoomBoxTapeTheWizard
+      - BoomBoxTapeAssHole
+      - BoomBoxTapeTEOTE
+      - BoomBoxTapeTearsOfVeil
+      - BoomBoxTapeRunningOut
+      - BoomBoxTapeNATO
+      - BoomBoxTapeHopesAndDreams
+      - BoomBoxTapeNewOldHome
+      - BoomBoxTapeOnceUponATime
+      - BoomBoxTapeSnowdin
+      - BoomBoxTapeWaterfall
+      - BoomBoxTapeGaster
+      - BoomBox
       offset: 0.0
 
 - type: entity
