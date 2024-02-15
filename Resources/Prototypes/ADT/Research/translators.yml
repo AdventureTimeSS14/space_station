@@ -24,6 +24,7 @@
   - NianTranslator
   - FireTranslator
   - SikTajTranslator
+  - CintaTajTranslator
 
 
 # Frontier - languages mechanic
@@ -55,3 +56,4 @@
 #  - UrsTranslatorImplanter # Закомменчено до раундстарт урсов
   - ArkaneTranslatorImplanter
   - ShadowkinTranslatorImplanter
+  - CintaTajTranslatorImplanter
