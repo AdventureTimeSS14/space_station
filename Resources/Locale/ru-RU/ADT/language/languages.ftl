@@ -93,6 +93,9 @@ language-Dwarf-description = Rock and stone!
 language-Dev-name = Разработческий
 language-Dev-description = Больше звучит как ругань покрытая кодом, чем язык.
 
+language-CintaTaj-name = Синта’Тайр
+language-CintaTaj-description = Язык, разработанный таярами и унатхами для общения между двумя расами, представляет собой смесь шипений и слов.
+
 language-GalacticCommon = Общ.
 language-Bubblish = Пузырчатый
 language-RootSpeak = Песнь корней
@@ -127,3 +130,4 @@ language-Arkane = Каукиттен
 language-Shadowkin = Миар
 language-Dev = Разраб
 language-Dwarf = Шахт
+language-CintaTaj = Синта’тайр
