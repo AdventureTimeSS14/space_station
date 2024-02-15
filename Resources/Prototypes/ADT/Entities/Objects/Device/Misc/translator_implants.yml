@@ -237,6 +237,19 @@
     - BorgTalk
 
 - type: entity
+  id: CintaTajTranslatorImplanter
+  parent: [ BaseTranslatorImplanter ]
+  name: CintaTaj translator implant
+  description: "An implant giving the ability to understand and speak CintaTaj."
+  components:
+  - type: TranslatorImplanter
+    spoken:
+    - CintaTaj
+    understood:
+    - CintaTaj
+
+
+- type: entity
   id: SyndUniversalTranslatorImplanter
   parent: [ BaseTranslatorImplanter ]
   name: universal translator implant
