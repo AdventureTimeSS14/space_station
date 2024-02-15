@@ -62,27 +62,40 @@ ent-BaseBoomBoxPackedTape = запакованная кассета
     .desc = Плотно упакованная кассета для бумбокса.
 
 ent-BoomBoxTapeAssHolePacked = запакованная кассета "Space Asshole"
-        
+    .desc = Плотно упакованная кассета для бумбокса.
+
 ent-BoomBoxTapeTheWizardPacked = запакованная кассета "The Wizard"
+    .desc = Плотно упакованная кассета для бумбокса.
 
 ent-BoomBoxTapeTEOTEPacked = запакованная кассета "The End Of The Expeditiom"
+    .desc = Плотно упакованная кассета для бумбокса.
 
 ent-BoomBoxTapeTearsOfVeilPacked = запакованная кассета "Tears Of Veil"
+    .desc = Плотно упакованная кассета для бумбокса.
 
 ent-BoomBoxTapeRunningOutPacked = запакованная кассета "Running Out"
+    .desc = Плотно упакованная кассета для бумбокса.
 
 ent-BoomBoxTapeNATOPacked = запакованная кассета "Инструктор из *неразборчиво*"
+    .desc = Плотно упакованная кассета для бумбокса.
 
 ent-BoomBoxTapeHopesAndDreamsPacked = запакованная кассета "Hopes And Dreams"
+    .desc = Плотно упакованная кассета для бумбокса.
 
 ent-BoomBoxTapeMegalovaniaPacked = запакованная кассета "Megalovania"
+    .desc = Плотно упакованная кассета для бумбокса.
 
 ent-BoomBoxTapeNewOldHomePacked = запакованная кассета "New Old Home"
+    .desc = Плотно упакованная кассета для бумбокса.
 
 ent-BoomBoxTapeOnceUponATimePacked = запакованная кассета "Once Upon a Time"
+    .desc = Плотно упакованная кассета для бумбокса.
 
 ent-BoomBoxTapeSnowdinPacked = запакованная кассета "Snowdin Town"
+    .desc = Плотно упакованная кассета для бумбокса.
 
 ent-BoomBoxTapeWaterfallPacked = запакованная кассета "Waterfall"
+    .desc = Плотно упакованная кассета для бумбокса.
 
 ent-BoomBoxTapeGasterPacked = запакованная кассета
+    .desc = Плотно упакованная кассета для бумбокса.

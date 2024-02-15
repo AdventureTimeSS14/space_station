@@ -33,18 +33,18 @@
         - CrateTrashCartFilled
         - ClosetMaintenanceFilledRandom
         - ClosetEmergencyFilledRandom
-        - BoomBoxTapeTheWizard
-        - BoomBoxTapeAssHole
-        - BoomBoxTapeTEOTE
-        - BoomBoxTapeTearsOfVeil
-        - BoomBoxTapeRunningOut
-        - BoomBoxTapeNATO
-        - BoomBoxTapeHopesAndDreams
-        - BoomBoxTapeNewOldHome
-        - BoomBoxTapeOnceUponATime
-        - BoomBoxTapeSnowdin
-        - BoomBoxTapeWaterfall
-        - BoomBoxTapeGaster
+        - BoomBoxTapeTheWizardPacked
+        - BoomBoxTapeAssHolePacked
+        - BoomBoxTapeTEOTEPacked
+        - BoomBoxTapeTearsOfVeilPacked
+        - BoomBoxTapeRunningOutPacked
+        - BoomBoxTapeNATOPacked
+        - BoomBoxTapeHopesAndDreamsPacked
+        - BoomBoxTapeNewOldHomePacked
+        - BoomBoxTapeOnceUponATimePacked
+        - BoomBoxTapeSnowdinPacked
+        - BoomBoxTapeWaterfallPacked
+        - BoomBoxTapeGasterPacked
       rareChance: 0.8
       prototypes:
         - CrateSalvageAssortedGoodies
@@ -85,6 +85,21 @@
         - sprite: Objects/Weapons/Melee/crusher.rsi
           state: icon
     - type: RandomSpawner
+      rarePrototypes:
+      - BoomBoxTapeTheWizardPacked
+      - BoomBoxTapeAssHolePacked
+      - BoomBoxTapeTEOTEPacked
+      - BoomBoxTapeTearsOfVeilPacked
+      - BoomBoxTapeRunningOutPacked
+      - BoomBoxTapeNATOPacked
+      - BoomBoxTapeHopesAndDreamsPacked
+      - BoomBoxTapeNewOldHomePacked
+      - BoomBoxTapeOnceUponATimePacked
+      - BoomBoxTapeSnowdinPacked
+      - BoomBoxTapeWaterfallPacked
+      - BoomBoxTapeGasterPacked
+      - BoomBox
+      rareChance: 0.03
       prototypes:
       - WeaponCrusher
       - WeaponCrusherDagger
@@ -93,19 +108,7 @@
       - AdvancedCapacitorStockPart
       - NanoManipulatorStockPart
       - AdvancedMatterBinStockPart
-      - BoomBoxTapeTheWizard
-      - BoomBoxTapeAssHole
-      - BoomBoxTapeTEOTE
-      - BoomBoxTapeTearsOfVeil
-      - BoomBoxTapeRunningOut
-      - BoomBoxTapeNATO
-      - BoomBoxTapeHopesAndDreams
-      - BoomBoxTapeNewOldHome
-      - BoomBoxTapeOnceUponATime
-      - BoomBoxTapeSnowdin
-      - BoomBoxTapeWaterfall
-      - BoomBoxTapeGaster
-      - BoomBox
+      chance: 0.9
       offset: 0.0
 
 - type: entity

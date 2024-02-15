@@ -5,6 +5,7 @@
   noSpawn: true
   components:
   - type: InstantAction
+    checkCanInteract: false
     icon: _NF/Interface/Actions/language.png
     event: !type:LanguageMenuActionEvent
     useDelay: 2

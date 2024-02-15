@@ -155,18 +155,18 @@
         - WelderIndustrial
         - SheetPlasteel10
         - ClothingMaskGasExplorer
-        - BoomBoxTapeTheWizard
-        - BoomBoxTapeAssHole
-        - BoomBoxTapeTEOTE
-        - BoomBoxTapeTearsOfVeil
-        - BoomBoxTapeRunningOut
-        - BoomBoxTapeNATO
-        - BoomBoxTapeHopesAndDreams
-        - BoomBoxTapeNewOldHome
-        - BoomBoxTapeOnceUponATime
-        - BoomBoxTapeSnowdin
-        - BoomBoxTapeWaterfall
-        - BoomBoxTapeGaster
+        - BoomBoxTapeTheWizardPacked
+        - BoomBoxTapeAssHolePacked
+        - BoomBoxTapeTEOTEPacked
+        - BoomBoxTapeTearsOfVeilPacked
+        - BoomBoxTapeRunningOutPacked
+        - BoomBoxTapeNATOPacked
+        - BoomBoxTapeHopesAndDreamsPacked
+        - BoomBoxTapeNewOldHomePacked
+        - BoomBoxTapeOnceUponATimePacked
+        - BoomBoxTapeSnowdinPacked
+        - BoomBoxTapeWaterfallPacked
+        - BoomBoxTapeGasterPacked
       rareChance: 0.08
       prototypes:
         - FlashlightLantern

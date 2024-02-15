@@ -744,6 +744,30 @@
   - uoh
   - een
 
+# Spoken by the Dwarf race.
+- type: language
+  id: Dwarf
+  obfuscateSyllables: true
+  replacement:
+  - арр
+  - рок
+  - стн
+  - шахт
+  - руд
+  - трэ
+  - кирк
+  - диг
+  - йи
+  - мыэ
+  - молл
+  - бур
+  - пив
+  - стн
+  - дрг
+  - эйе
+
+
+
 # Here goes admeme languages.
 - type: language
   id: Dev

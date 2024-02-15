@@ -87,6 +87,9 @@ language-Arkane-description = Протяжный, чем-то напоминаю
 language-Shadowkin-name = Миар
 language-Shadowkin-description = Загадочный язык, на котором говорят сумеречники.
 
+language-Dwarf-name = Шахтёрский
+language-Dwarf-description = Rock and stone!
+
 language-Dev-name = Разработческий
 language-Dev-description = Больше звучит как ругань покрытая кодом, чем язык.
 
@@ -123,3 +126,4 @@ language-Urs = Рыкрур
 language-Arkane = Каукиттен
 language-Shadowkin = Миар
 language-Dev = Разраб
+language-Dwarf = Шахт
