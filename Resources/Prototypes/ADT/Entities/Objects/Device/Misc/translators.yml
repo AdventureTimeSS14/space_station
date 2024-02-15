@@ -4,6 +4,13 @@
   name: Translator
   description: "Translates speech."
   components:
+  - type: Item
+    sprite: _NF/Objects/Devices/translator.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
   - type: Sprite
     sprite: _NF/Objects/Devices/translator.rsi
     state: icon
@@ -22,6 +29,15 @@
           False: { visible: false }
   - type: HandheldTranslator
     enabled: false
+  - type: ToggleableLightVisuals
+    spriteLayer: translator
+    inhandVisuals:
+      left:
+      - state: inhand-left-translator
+        shader: unshaded
+      right:
+      - state: inhand-right-translator
+        shader: unshaded
 
 - type: entity
   id: Translator
@@ -252,4 +268,119 @@
     requires:
     - GalacticCommon
     - Drask
+    requires-all: false
+
+
+- type: entity
+  id: ShadowkinTranslator
+  parent: [ TranslatorEmtpy ]
+  name: Shadowkin translator
+  description: "Translates speech between Shadowkin lang and Galactic Common."
+  components:
+  - type: HandheldTranslator
+    default-language: GalacticCommon
+    spoken:
+    - GalacticCommon
+    - Shadowkin
+    understood:
+    - GalacticCommon
+    - Shadowkin
+    requires:
+    - GalacticCommon
+    - Shadowkin
+    requires-all: false
+
+- type: entity
+  id: ArkaneTranslator
+  parent: [ TranslatorEmtpy ]
+  name: Arkane translator
+  description: "Translates speech between Arkane lang and Galactic Common."
+  components:
+  - type: HandheldTranslator
+    default-language: GalacticCommon
+    spoken:
+    - GalacticCommon
+    - Arkane
+    understood:
+    - GalacticCommon
+    - Arkane
+    requires:
+    - GalacticCommon
+    - Arkane
+    requires-all: false
+
+- type: entity
+  id: NianTranslator
+  parent: [ TranslatorEmtpy ]
+  name: Nian translator
+  description: "Translates speech between Nian lang and Galactic Common."
+  components:
+  - type: HandheldTranslator
+    default-language: GalacticCommon
+    spoken:
+    - GalacticCommon
+    - Nian
+    understood:
+    - GalacticCommon
+    - Nian
+    requires:
+    - GalacticCommon
+    - Nian
+    requires-all: false
+
+- type: entity
+  id: FireTranslator
+  parent: [ TranslatorEmtpy ]
+  name: Fire translator
+  description: "Translates speech between Shadowkin lang and Galactic Common."
+  components:
+  - type: HandheldTranslator
+    default-language: GalacticCommon
+    spoken:
+    - GalacticCommon
+    - Fire
+    understood:
+    - GalacticCommon
+    - Fire
+    requires:
+    - GalacticCommon
+    - Fire
+    requires-all: false
+
+- type: entity
+  id: SikTajTranslator
+  parent: [ TranslatorEmtpy ]
+  name: SikTaj translator
+  description: "Translates speech between SikTaj and Galactic Common."
+  components:
+  - type: HandheldTranslator
+    default-language: GalacticCommon
+    spoken:
+    - GalacticCommon
+    - SikTaj
+    understood:
+    - GalacticCommon
+    - SikTaj
+    requires:
+    - GalacticCommon
+    - SikTaj
+    requires-all: false
+
+- type: entity
+  id: CintaTajTranslator
+  parent: [ TranslatorEmtpy ]
+  name: CintaTajTaj translator
+  description: "Translates speech between CintaTaj and Galactic Common."
+  components:
+  - type: HandheldTranslator
+    default-language: GalacticCommon
+    spoken:
+    - GalacticCommon
+    - CintaTaj
+    understood:
+    - GalacticCommon
+    - CintaTaj
+    requires:
+    - GalacticCommon
+    - CintaTaj
     requires-all: false

@@ -423,8 +423,8 @@ public sealed partial class ChatSystem : SharedChatSystem
         // Corvax-SpeakerColor-End
 
         // Frontier: languages mechanic ADT Upd start
-        if (TryComp<LanguageSpeakerComponent>(source, out var lang))
-            name = $"{name} ({lang.LocalizedID})";
+        if (TryComp<LanguageSpeakerComponent>(source, out var lang) && lang.CurrentLanguage != "GalacticCommon" && lang.CurrentLanguage != "Universal")
+            name = $"{lang.LocalizedID}|{name}";
         // Frontier: languages mechanic ADT Upd end
 
         var wrappedMessage = WrapPublicMessage(source, name, message);
@@ -501,8 +501,8 @@ public sealed partial class ChatSystem : SharedChatSystem
         // Corvax-SpeakerColor-End
 
         // Frontier: languages mechanic ADT Upd start
-        if (TryComp<LanguageSpeakerComponent>(source, out var lang))
-            name = $"{name} ({lang.LocalizedID})";
+        if (TryComp<LanguageSpeakerComponent>(source, out var lang) && lang.CurrentLanguage != "GalacticCommon" && lang.CurrentLanguage != "Universal")
+            name = $"{lang.LocalizedID}|{name}";
         // Frontier: languages mechanic ADT Upd end
 
         // Frontier - languages mechanic (+ everything in the foreach loop)

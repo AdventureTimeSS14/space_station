@@ -39,3 +39,23 @@
   cost: 250
   category: Fun
   group: market
+
+- type: cargoProduct
+  id: ADTClassicTapes
+  icon:
+    sprite: Objects/Devices/boomboxtape.rsi
+    state: tape
+  product: ADTCrateFunBoomBoxTapes1
+  cost: 5000
+  category: Fun
+  group: market
+
+- type: cargoProduct
+  id: ADTUTTapes
+  icon:
+    sprite: Objects/Devices/boomboxtape.rsi
+    state: tape
+  product: ADTCrateFunBoomBoxTapes2
+  cost: 5000
+  category: Fun
+  group: market
