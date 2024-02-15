@@ -382,3 +382,33 @@
       - id: BoomBoxTapeWaterfall
       sound:
         path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: BoomBoxTapeNATOPacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: BoomBoxTapeNATO
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: BoomBoxTapeGasterPacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: BoomBoxTapeGaster
+      sound:
+        path: /Audio/Effects/unwrap.ogg
