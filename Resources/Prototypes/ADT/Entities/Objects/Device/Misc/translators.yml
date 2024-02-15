@@ -270,6 +270,83 @@
     - Drask
     requires-all: false
 
+
+- type: entity
+  id: ShadowkinTranslator
+  parent: [ TranslatorEmtpy ]
+  name: Shadowkin translator
+  description: "Translates speech between Shadowkin lang and Galactic Common."
+  components:
+  - type: HandheldTranslator
+    default-language: GalacticCommon
+    spoken:
+    - GalacticCommon
+    - Shadowkin
+    understood:
+    - GalacticCommon
+    - Shadowkin
+    requires:
+    - GalacticCommon
+    - Shadowkin
+    requires-all: false
+
+- type: entity
+  id: ArkaneTranslator
+  parent: [ TranslatorEmtpy ]
+  name: Arkane translator
+  description: "Translates speech between Arkane lang and Galactic Common."
+  components:
+  - type: HandheldTranslator
+    default-language: GalacticCommon
+    spoken:
+    - GalacticCommon
+    - Arkane
+    understood:
+    - GalacticCommon
+    - Arkane
+    requires:
+    - GalacticCommon
+    - Arkane
+    requires-all: false
+
+- type: entity
+  id: NianTranslator
+  parent: [ TranslatorEmtpy ]
+  name: Nian translator
+  description: "Translates speech between Nian lang and Galactic Common."
+  components:
+  - type: HandheldTranslator
+    default-language: GalacticCommon
+    spoken:
+    - GalacticCommon
+    - Nian
+    understood:
+    - GalacticCommon
+    - Nian
+    requires:
+    - GalacticCommon
+    - Nian
+    requires-all: false
+
+- type: entity
+  id: FireTranslator
+  parent: [ TranslatorEmtpy ]
+  name: Fire translator
+  description: "Translates speech between Shadowkin lang and Galactic Common."
+  components:
+  - type: HandheldTranslator
+    default-language: GalacticCommon
+    spoken:
+    - GalacticCommon
+    - Fire
+    understood:
+    - GalacticCommon
+    - Fire
+    requires:
+    - GalacticCommon
+    - Fire
+    requires-all: false
+
 - type: entity
   id: SikTajTranslator
   parent: [ TranslatorEmtpy ]

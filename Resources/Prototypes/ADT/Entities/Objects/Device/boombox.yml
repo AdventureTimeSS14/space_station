@@ -44,6 +44,8 @@
     - type: Sprite
       sprite: ADT/Objects/Device/tape.rsi
       state: icon
+      layers:
+      - state: tape
     - type: Tag
       tags:
         - BoomBoxTape
@@ -51,6 +53,15 @@
       soundPath: /Audio/BoomBox/AssHoleMono.ogg
       syndStatus: false
       syndItem: "SyndicatePersonalAI"
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 5
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+
 
 - type: entity
   parent: BaseItem
@@ -59,6 +70,8 @@
   components:
     - type: Sprite
       sprite: ADT/Objects/Devices/tapepacked.rsi
+      layers:
+      - state: tape
       state: tape
     - type: Item
       size: Small

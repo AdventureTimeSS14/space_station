@@ -18,6 +18,12 @@
   - BasicGalaticCommonTranslatorImplanter
   - MofficTranslator
   - DraskTranslator
+#  - UrsTranslator # Закомменчено до раундстарт урсов
+  - ArkaneTranslator
+  - ShadowkinTranslator
+  - NianTranslator
+  - FireTranslator
+  - SikTajTranslator
 
 
 # Frontier - languages mechanic
@@ -42,3 +48,10 @@
   - AnimalTranslator
   - MofficTranslatorImplanter
   - DraskTranslatorImplanter
+  - SikTajTranslatorImplanter
+  - NianTranslatorImplanter
+  - FireTranslatorImplanter
+  - DraskTranslatorImplanter
+#  - UrsTranslatorImplanter # Закомменчено до раундстарт урсов
+  - ArkaneTranslatorImplanter
+  - ShadowkinTranslatorImplanter

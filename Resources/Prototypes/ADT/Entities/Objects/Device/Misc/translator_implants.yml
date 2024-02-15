@@ -187,3 +187,87 @@
     - Drask
     understood:
     - Drask
+
+- type: entity
+  id: UrsTranslatorImplanter
+  parent: [ BaseTranslatorImplanter ]
+  name: Urs translator implant
+  description: "An implant giving the ability to understand and speak Ursus language."
+  components:
+  - type: TranslatorImplanter
+    spoken:
+    - Urs
+    understood:
+    - Urs
+
+- type: entity
+  id: ArkaneTranslatorImplanter
+  parent: [ BaseTranslatorImplanter ]
+  name: Arkane translator implant
+  description: "An implant giving the ability to understand and speak Arcane language."
+  components:
+  - type: TranslatorImplanter
+    spoken:
+    - Arkane
+    understood:
+    - Arkane
+
+- type: entity
+  id: ShadowkinTranslatorImplanter
+  parent: [ BaseTranslatorImplanter ]
+  name: Shadowkin translator implant
+  description: "An implant giving the ability to understand and speak Shadowkin language."
+  components:
+  - type: TranslatorImplanter
+    spoken:
+    - Shadowkin
+    understood:
+    - Shadowkin
+
+- type: entity
+  id: BorgTranslatorImplanter
+  parent: [ BaseTranslatorImplanter ]
+  name: Borg translator implant
+  description: "An implant giving the ability to understand and speak Binary."
+  components:
+  - type: TranslatorImplanter
+    spoken:
+    - BorgTalk
+    understood:
+    - BorgTalk
+
+- type: entity
+  id: SyndUniversalTranslatorImplanter
+  parent: [ BaseTranslatorImplanter ]
+  name: universal translator implant
+  description: "An implant giving the ability to understand any racial language."
+  components:
+  - type: TranslatorImplanter
+    understood:
+    - RobotTalk
+    - Shadowkin
+    - Arkane
+    - Urs
+    - Drask
+    - Fire
+    - Nian
+    - SikTaj
+    - Moffic
+    - RootSpeak
+    - SolCommon
+    - Canilunzt
+    - Draconic
+    - Bubblish
+    - Nekomimetic
+
+- type: entity
+  id: DevTranslatorImplanter
+  parent: [ BaseTranslatorImplanter ]
+  name: Dev translator implant
+  description: "e"
+  components:
+  - type: TranslatorImplanter
+    spoken:
+    - Dev
+    understood:
+    - Dev

@@ -242,3 +242,96 @@
     Plastic: 100
     Gold: 50
     Silver: 50
+
+- type: latheRecipe
+  id: UrsTranslatorImplanter
+  result: UrsTranslatorImplanter
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 500
+    Plastic: 100
+    Gold: 50
+    Silver: 50
+
+- type: latheRecipe
+  id: ArkaneTranslatorImplanter
+  result: ArkaneTranslatorImplanter
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 500
+    Plastic: 100
+    Gold: 50
+    Silver: 50
+
+- type: latheRecipe
+  id: ShadowkinTranslatorImplanter
+  result: ShadowkinTranslatorImplanter
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 500
+    Plastic: 100
+    Gold: 50
+    Silver: 50
+
+- type: latheRecipe
+  id: UrsTranslator
+  result: UrsTranslator
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 100
+    Plastic: 50
+    Gold: 50
+
+- type: latheRecipe
+  id: ArkaneTranslator
+  result: ArkaneTranslator
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 100
+    Plastic: 50
+    Gold: 50
+
+- type: latheRecipe
+  id: ShadowkinTranslator
+  result: ShadowkinTranslator
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 100
+    Plastic: 50
+    Gold: 50
+
+- type: latheRecipe
+  id: NianTranslator
+  result: NianTranslator
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 100
+    Plastic: 50
+    Gold: 50
+
+- type: latheRecipe
+  id: FireTranslator
+  result: FireTranslator
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 100
+    Plastic: 50
+    Gold: 50
+
+- type: latheRecipe
+  id: SikTajTranslator
+  result: SikTajTranslator
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 100
+    Plastic: 50
+    Gold: 50

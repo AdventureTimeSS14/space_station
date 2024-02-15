@@ -58,4 +58,31 @@ ent-BoomBoxTapeWaterfall = кассета "Waterfall"
 ent-BoomBoxTapeGaster = кассета
     .desc = Старая пыльная кассета без пометок.
 
-# ъуъ
+ent-BaseBoomBoxPackedTape = запакованная кассета
+    .desc = Плотно упакованная кассета для бумбокса.
+
+ent-BoomBoxTapeAssHolePacked = запакованная кассета "Space Asshole"
+        
+ent-BoomBoxTapeTheWizardPacked = запакованная кассета "The Wizard"
+
+ent-BoomBoxTapeTEOTEPacked = запакованная кассета "The End Of The Expeditiom"
+
+ent-BoomBoxTapeTearsOfVeilPacked = запакованная кассета "Tears Of Veil"
+
+ent-BoomBoxTapeRunningOutPacked = запакованная кассета "Running Out"
+
+ent-BoomBoxTapeNATOPacked = запакованная кассета "Инструктор из *неразборчиво*"
+
+ent-BoomBoxTapeHopesAndDreamsPacked = запакованная кассета "Hopes And Dreams"
+
+ent-BoomBoxTapeMegalovaniaPacked = запакованная кассета "Megalovania"
+
+ent-BoomBoxTapeNewOldHomePacked = запакованная кассета "New Old Home"
+
+ent-BoomBoxTapeOnceUponATimePacked = запакованная кассета "Once Upon a Time"
+
+ent-BoomBoxTapeSnowdinPacked = запакованная кассета "Snowdin Town"
+
+ent-BoomBoxTapeWaterfallPacked = запакованная кассета "Waterfall"
+
+ent-BoomBoxTapeGasterPacked = запакованная кассета

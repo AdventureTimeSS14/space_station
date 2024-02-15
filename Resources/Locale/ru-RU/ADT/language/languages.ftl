@@ -75,6 +75,21 @@ language-Moffic-description = Древний язык, на котором го�
 language-Drask-name = Орлуум
 language-Drask-description = Монотонный, вибрирующий язык драсков. Он чем-то напоминает китовую песню.
 
+language-BorgTalk-name = Двоичный
+language-BorgTalk-description = Нули и единицы, передающие массивные и не очень данные.
+
+language-Urs-name = Рыкрур
+language-Urs-description = Басистый и рычащий язык, на котором говорят урсы.
+
+language-Arkane-name = Каукиттен
+language-Arkane-description = Протяжный, чем-то напоминающий Солнечный язык, на котором говорят арканы.
+
+language-Shadowkin-name = Миар
+language-Shadowkin-description = Загадочный язык, на котором говорят сумеречники.
+
+language-Dev-name = Разработческий
+language-Dev-description = Больше звучит как ругань покрытая кодом, чем язык.
+
 language-GalacticCommon = Общ.
 language-Bubblish = Пузырчатый
 language-RootSpeak = Песнь корней
@@ -103,3 +118,8 @@ language-Sheep = Animal sheep
 language-Kangaroo = Animal kangaroo
 language-Pig = Animal pig
 language-Moffic = Паучий
+language-BorgTalk = Двоичный
+language-Urs = Рыкрур
+language-Arkane = Каукиттен
+language-Shadowkin = Миар
+language-Dev = Разраб

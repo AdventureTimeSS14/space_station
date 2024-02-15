@@ -399,10 +399,10 @@
   - ud
   - wu
   - wuh
-  - taj
+  - "taj'"
   - tch
   - ser
-  - aerch
+  - "'aerch"
   - it
   - ei
   - endr
@@ -430,24 +430,22 @@
   - lach
   - sam
   - mak
-  - lirch
+  - "'lirch"
   - get
   - or
-  - jag
+  - "jag'"
   - eck
   - gec
   - stag
-  - onn
+  - "'onn"
   - bin
   - ket
-  - jart
+  - "jart'"
   - vul
   - einech
   - cres
-  - eirr
+  - "'eirr"
   - ghh
-  - ‘
-  - ‘
 
 # Spoken by the Nian race.
 - type: language
@@ -560,7 +558,7 @@
   - ссс
   - сСс
   - ССС
-
+# IPC
 - type: language
   id: RobotTalk
   obfuscateSyllables: true
@@ -568,6 +566,13 @@
   - "0"
   - "1"
   - "2"
+# Borgs
+- type: language
+  id: BorgTalk
+  obfuscateSyllables: true
+  replacement:
+  - "0"
+  - "1"
 
 - type: language
   id: Monkey
@@ -646,20 +651,129 @@
   id: Drask
   obfuscateSyllables: true
   replacement:
-  - Овв
-  - Оумн
-  - Мноо
-  - Румум
-  - Ваар
-  - Дромнн
-  - Руум
-  - Гоом
-  - Фмонг
-  - Оорм
-  - Гаар
-  - Хоорб
-  - Саар
-  - Ссооумн
-  - Гнии
-  - Вииск
-  - Вррм
+  - овв
+  - оумн
+  - мноо
+  - румум
+  - ваар
+  - дромнн
+  - руум
+  - гоом
+  - фмонг
+  - оорм
+  - гаар
+  - хоорб
+  - саар
+  - ссооумн
+  - гнии
+  - вииск
+  - вррм
+
+# Spoken by the Ursus race.
+- type: language
+  id: Urs
+  obfuscateSyllables: true
+  replacement:
+  - раа
+  - ишш
+  - тзуур
+  - арр
+  - кромм
+  - би
+  - инн
+  - рр
+  - оот
+  - вирр
+  - эк
+  - лерр
+  - мои
+  - крр
+  - тее
+  - ррс
+  - аа
+  - ир
+  - ррэк
+  - ер
+  - маа
+  - ке
+  - етт
+
+# Spoken by the Arkane race.
+- type: language
+  id: Arkane
+  obfuscateSyllables: true
+  replacement:
+  - рииа
+  - инн
+  - тлаа
+  - айр
+  - коо
+  - бии
+  - иинта
+  - реаа
+  - онт
+  - виер
+  - энк
+  - лааир
+  - оии
+  - кееа
+  - теу
+  - риина
+  - ин
+
+# Spoken by the Shadowkin race.
+- type: language
+  id: Shadowkin
+  obfuscateSyllables: true
+  replacement:
+  - mia
+  - ar
+  - ren
+  - naar
+  - mae
+  - tre
+  - ien
+  - trr
+  - ou
+  - rin
+  - nae
+  - ena
+  - oi
+  - kerr
+  - que
+  - uoh
+  - een
+
+# Here goes admeme languages.
+- type: language
+  id: Dev
+  obfuscateSyllables: true
+  replacement:
+  - су
+  - ка
+  - офф
+  - ямл
+  - бл
+  - пид
+  - рас
+  - о
+  - виз
+  - код
+  - с#
+  - мета
+  - билд
+  - сук
+  - гни
+  - эмис
+  - баг
+  - да
+  - бля
+  - гит
+  - мердж
+  - пулл
+  - ПР
+  - огг
+  - пнг
+  - робст
+  - релз
+  - дебаг

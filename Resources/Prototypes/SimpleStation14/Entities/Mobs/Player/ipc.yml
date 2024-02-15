@@ -104,9 +104,11 @@
   - type: LanguageSpeaker
     speaks:
     - GalacticCommon
+    - BorgTalk
     - RobotTalk
     understands:
     - GalacticCommon
+    - BorgTalk
     - RobotTalk
   - type: Tag
     tags:
