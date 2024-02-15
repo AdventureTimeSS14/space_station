@@ -365,3 +365,22 @@
     - GalacticCommon
     - SikTaj
     requires-all: false
+
+- type: entity
+  id: CintaTajTranslator
+  parent: [ TranslatorEmtpy ]
+  name: CintaTajTaj translator
+  description: "Translates speech between CintaTaj and Galactic Common."
+  components:
+  - type: HandheldTranslator
+    default-language: GalacticCommon
+    spoken:
+    - GalacticCommon
+    - CintaTaj
+    understood:
+    - GalacticCommon
+    - CintaTaj
+    requires:
+    - GalacticCommon
+    - CintaTaj
+    requires-all: false
