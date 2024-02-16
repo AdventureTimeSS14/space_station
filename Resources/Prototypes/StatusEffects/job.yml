@@ -9,7 +9,7 @@
   id: JobIconDetective
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: Detective
+    state: detective
 
 - type: statusIcon
   parent: JobIcon
