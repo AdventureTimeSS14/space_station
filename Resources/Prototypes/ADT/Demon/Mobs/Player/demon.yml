@@ -21,6 +21,14 @@
     - type: CameraRecoil
     - type: Examiner
     - type: CanHostGuardian
+    - type: LanguageSpeaker
+      speaks:
+      - GalacticCommon
+      - Arkane
+      understands:
+      - GalacticCommon
+      - Arkane
+
     - type: NpcFactionMember
       factions:
         - NanoTrasen
