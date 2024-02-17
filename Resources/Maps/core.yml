@@ -98527,7 +98527,7 @@ entities:
       parent: 6997
     - type: Physics
       canCollide: False
-- proto: LGBTQHandyFlag
+- proto: DrinkBeerBottleFull
   entities:
   - uid: 17207
     components:

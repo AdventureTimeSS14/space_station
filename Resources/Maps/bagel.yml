@@ -108281,7 +108281,7 @@ entities:
     - type: Transform
       pos: 21.334734,-11.3924055
       parent: 60
-- proto: LGBTQHandyFlag
+- proto: DrinkBeerBottleFull
   entities:
   - uid: 9548
     components:
