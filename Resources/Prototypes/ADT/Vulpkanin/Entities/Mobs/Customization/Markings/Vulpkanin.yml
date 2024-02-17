@@ -88,6 +88,15 @@
     - sprite: Mobs/Customization/vulpkanin_tail.rsi
       state: tail2
 
+- type: marking
+  id: ADTVulpkanintailAll
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [VulpkaninSpecies]
+  sprites:
+    - sprite: Mobs/Customization/vulpkanin_tail.rsi
+      state: tail_m
+
 #- type: marking
 #  id: ADTVulpkanintail3
 #  bodyPart: Tail
@@ -105,6 +114,15 @@
   sprites:
     - sprite: Mobs/Customization/vulpkanin_head.rsi
       state: ear
+
+- type: marking
+  id: ADTVulpkaninearBack
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [VulpkaninSpecies]
+  sprites:
+    - sprite: Mobs/Customization/vulpkanin_head.rsi
+      state: ear_back
 
 - type: marking
   id: ADTVulpkaninmuzzle

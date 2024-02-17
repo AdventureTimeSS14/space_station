@@ -81,7 +81,7 @@
   sprites:
   - sprite: Mobs/Customization/gauze.rsi
     state: gauze_shoulder
-    
+
 - type: marking
   id: GauzeStomach
   bodyPart: Chest
@@ -179,7 +179,7 @@
   sprites:
   - sprite: Mobs/Customization/gauze.rsi
     state: gauze_upperleg_r
-    
+
 - type: marking
   id: GauzeLowerLegRight
   bodyPart: RFoot
@@ -193,7 +193,7 @@
   sprites:
   - sprite: Mobs/Customization/gauze.rsi
     state: gauze_lowerleg_r
-    
+
 - type: marking
   id: GauzeBoxerWrapRight
   bodyPart: RHand
@@ -207,7 +207,7 @@
   sprites:
   - sprite: Mobs/Customization/gauze.rsi
     state: gauze_boxerwrap_r
-    
+
 - type: marking
   id: GauzeBoxerWrapLeft
   bodyPart: LHand
@@ -227,7 +227,7 @@
   id: GauzeLizardLefteyePatch
   bodyPart: Eyes
   markingCategory: Head
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, KoboltSpecies]
   coloring:
     default:
       type:
@@ -241,7 +241,7 @@
   id: GauzeLizardRighteyePatch
   bodyPart: Eyes
   markingCategory: Head
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, KoboltSpecies]
   coloring:
     default:
       type:
@@ -255,7 +255,7 @@
   id: GauzeLizardFootRight
   bodyPart: RFoot
   markingCategory: Legs
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, KoboltSpecies]
   coloring:
     default:
       type:
@@ -269,7 +269,7 @@
   id: GauzeLizardFootLeft
   bodyPart: LFoot
   markingCategory: Legs
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, KoboltSpecies]
   coloring:
     default:
       type:
@@ -283,7 +283,7 @@
   id: GauzeLizardBlindfold
   bodyPart: Eyes
   markingCategory: Head
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, KoboltSpecies]
   coloring:
     default:
       type:

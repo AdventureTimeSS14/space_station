@@ -2,8 +2,8 @@
   id: Fur # 1) - ебучий годспид, балансим уроном. 2) - шерсть должна гореть
   coefficients:
     Blunt: 1
-    Piercing: 1.4
-    Slash: 1.4
+    Piercing: 1.2
+    Slash: 1.2
     Cold: 0.6
     Heat: 1.5
     Poison: 1
@@ -73,7 +73,7 @@
 
 
 - type: damageModifierSet
-  id: CyborgMetallicStrong 
+  id: CyborgMetallicStrong
   coefficients:
     Blunt: 0.6
     Slash: 0.6
