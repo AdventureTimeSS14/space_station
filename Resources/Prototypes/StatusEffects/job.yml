@@ -8,8 +8,8 @@
   parent: JobIcon
   id: JobIconDetective
   icon:
-    sprite: Interface/Misc/job_icons.rsi
-    state: Detective
+    sprite: Interface/Misc/jobstatus_icons.rsi
+    state: detective
 
 - type: statusIcon
   parent: JobIcon
