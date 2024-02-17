@@ -43,16 +43,16 @@
   - DrinkMeadJug
 
 
-- type: reagentDispenserInventory
-  id: SodaDispenserEmagInventory
-  inventory:
-    - FourteenLoko
-    - Ephedrine
-    - Histamine
+# - type: reagentDispenserInventory
+#   id: SodaDispenserEmagInventory
+#   inventory:
+#     - FourteenLoko
+#     - Ephedrine
+#     - Histamine
 
-- type: reagentDispenserInventory
-  id: BoozeDispenserEmagInventory
-  inventory:
-    - AtomicBomb
-    - Ethanol
-    - Iron
+# - type: reagentDispenserInventory
+#   id: BoozeDispenserEmagInventory
+#   inventory:
+#     - AtomicBomb
+#     - Ethanol
+#     - Iron
