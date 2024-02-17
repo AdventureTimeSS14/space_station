@@ -82,24 +82,6 @@
   - type: GuideHelp
     guides:
     - Security
-  - type: ItemToggle
-    predictable: false
-    soundActivate:
-      collection: sparks
-      params:
-        variation: 0.250
-    soundDeactivate:
-      collection: sparks
-      params:
-        variation: 0.250
-    soundFailToActivate:
-      path: /Audio/Machines/button.ogg
-      params:
-        variation: 0.250
-  - type: ItemToggleMeleeWeapon
-    activatedDamage:
-      types:
-        Blunt: 0
 
 - type: entity
   name: truncheon
