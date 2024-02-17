@@ -62,7 +62,7 @@
   id: jobADTIconSecurityCyborg
   icon:
     sprite: Interface/Misc/job_icons.rsi
-    state: jobADTIconSecurityCyborg
+    state: JobADTIconSecurityCyborg
 
 - type: startingGear
   id: ADTSecurityCyborgGear
