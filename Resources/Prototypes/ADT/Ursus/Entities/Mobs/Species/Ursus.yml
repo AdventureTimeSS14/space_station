@@ -4,6 +4,9 @@
   name: Urist McUrsus
   abstract: true
   components:
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2.7
+    baseSprintSpeed : 4.6
   - type: HumanoidAppearance
     species: UrsusSpecies
   - type: Hunger

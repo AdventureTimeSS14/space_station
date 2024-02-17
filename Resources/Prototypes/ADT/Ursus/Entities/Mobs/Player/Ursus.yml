@@ -4,6 +4,9 @@
   parent: BaseMobUrsus
   id: MobUrsus
   components:
+    - type: MovementSpeedModifier
+      baseWalkSpeed : 0.9
+      baseSprintSpeed : 0.9
     - type: Inventory
       speciesId: urs #для одежды на урсов
     - type: Temperature
