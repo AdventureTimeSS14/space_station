@@ -50,7 +50,7 @@
     gloves: ClothingHandsGlovesCombat
     id: ADTBlueShieldOfficerPDA
     pocket1: ADTWeaponPistolBlueShitX02
-    #pocket2: HandheldCrewMonitor
+    pocket2: HandheldCrewMonitor
     underwearb: ADTClothingUnderwearBottomBoxersBlueshield # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
     neck: ClothingNeckCloakNanotrasen

@@ -5,7 +5,7 @@
   components:
   - type: InnateTool
     tools:
-      #- id: HandheldCrewMonitor   
+      - id: HandheldCrewMonitor
       - id: HandheldHealthAnalyzer
       - id: JawsOfLife
       - id: Hypospray
