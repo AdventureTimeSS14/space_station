@@ -110,3 +110,31 @@
     contents:
         - id: ADTChristmasPlasticTree
         - id: ADTClothingBackpackDuffelChristmasToys
+
+- type: entity
+  parent: CrateGenericSteel
+  id: ADTCrateFunBoomBoxTapes1
+  name: "Ящик кассет классики"
+  description: "Ящик с (относительно) классическими произведениями для бумбокса."
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoomBoxTapeTheWizardPacked
+      - id: BoomBoxTapeAssHolePacked
+      - id: BoomBoxTapeTEOTEPacked
+      - id: BoomBoxTapeTearsOfVeilPacked
+      - id: BoomBoxTapeRunningOutPacked
+
+- type: entity
+  parent: CrateGenericSteel
+  id: ADTCrateFunBoomBoxTapes2
+  name: "Ящик кассет Undertale"
+  description: "Ящик с музыкой из одной старинной игры для бумбокса."
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoomBoxTapeHopesAndDreamsPacked
+      - id: BoomBoxTapeNewOldHomePacked
+      - id: BoomBoxTapeOnceUponATimePacked
+      - id: BoomBoxTapeSnowdinPacked
+      - id: BoomBoxTapeWaterfallPacked

@@ -56,3 +56,15 @@ ent-ADTCrateFishFreezer = Холодильник с рыбой
 
 ent-ADTCargoFishCrate = Холодильник с рыбой 
     .desc = Холодильник с рыбой
+
+ent-ADTCrateFunBoomBoxTapes1 = ящик кассет классики
+    .desc = Ящик с (относительно) классическими произведениями для бумбокса.
+
+ent-ADTCrateFunBoomBoxTapes2 = ящик кассет Undertale
+    .desc = Ящик с музыкой из одной старинной игры для бумбокса.
+
+ent-ADTClassicTapes = ящик кассет классики
+    .desc = Ящик с (относительно) классическими произведениями для бумбокса.
+
+ent-ADTUTTapes = ящик кассет Undertale
+    .desc = Ящик с музыкой из одной старинной игры для бумбокса.

@@ -356,6 +356,17 @@
       - NianTranslatorImplanter
       - FireTranslatorImplanter
       - DraskTranslatorImplanter
+#      - UrsTranslatorImplanter # Закомменчено до раундстарт урсов
+      - ArkaneTranslatorImplanter
+      - ShadowkinTranslatorImplanter
+      - CintaTajTranslatorImplanter
+#      - UrsTranslator # Закомменчено до раундстарт урсов
+      - ArkaneTranslator
+      - ShadowkinTranslator
+      - NianTranslator
+      - FireTranslator
+      - SikTajTranslator
+      - CintaTajTranslator
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ExplosivePayload
