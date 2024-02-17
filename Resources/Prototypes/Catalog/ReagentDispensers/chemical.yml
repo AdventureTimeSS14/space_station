@@ -20,7 +20,7 @@
   - JugRadium
   - JugSilicon
   - JugSodium
-  - Jug_Sulfur
+  - JugSulfur
 
 - type: reagentDispenserInventory
   id: EmptyInventory
