@@ -34214,13 +34214,6 @@ entities:
     - type: Transform
       pos: -15.5,-26.5
       parent: 4812
-- proto: DefaultStationBeaconCryosleep
-  entities:
-  - uid: 10856
-    components:
-    - type: Transform
-      pos: -23.5,4.5
-      parent: 4812
 - proto: DefaultStationBeaconDetectiveRoom
   entities:
   - uid: 12110
@@ -86970,5 +86963,12 @@ entities:
     components:
     - type: Transform
       pos: 19.452671,-32.41012
+      parent: 4812
+- proto: DefaultStationBeaconCryosleep
+  entities:
+  - uid: 15000
+    components:
+    - type: Transform
+      pos: -23.5,4.5
       parent: 4812
 ...

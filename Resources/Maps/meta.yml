@@ -63230,13 +63230,6 @@ entities:
     - type: Transform
       pos: 37.5,19.5
       parent: 5350
-- proto: CryogenicSleepUnitSpawner
-  entities:
-  - uid: 12809
-    components:
-    - type: Transform
-      pos: 37.5,17.5
-      parent: 5350
 - proto: CryogenicSleepUnitSpawnerLateJoin
   entities:
   - uid: 12810
@@ -168944,5 +168937,12 @@ entities:
     components:
     - type: Transform
       pos: 45.520813,-8.421944
+      parent: 5350
+- proto: CryogenicSleepUnitSpawner
+  entities:
+  - uid: 30000
+    components:
+    - type: Transform
+      pos: 37.5,17.5
       parent: 5350
 ...

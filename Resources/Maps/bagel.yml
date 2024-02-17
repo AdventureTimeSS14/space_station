@@ -9609,13 +9609,6 @@ entities:
     - type: Transform
       pos: -7.5,-27.5
       parent: 60
-- proto: ADTSpawnPointMagistrat
-  entities:
-  - uid: 16534
-    components:
-    - type: Transform
-      pos: -44.5,-16.5
-      parent: 60
 - proto: ADTSpawnPointMedicalBorg
   entities:
   - uid: 7433
@@ -156848,5 +156841,12 @@ entities:
     components:
     - type: Transform
       pos: 8.5436735,-62.480114
+      parent: 60
+- proto: ADTSpawnPointMagistrat
+  entities:
+  - uid: 30000
+    components:
+    - type: Transform
+      pos: -44.5,-16.5
       parent: 60
 ...
