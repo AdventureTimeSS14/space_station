@@ -100,7 +100,6 @@
   parent: Jug
   name: jug (iodine)
   id: JugIodine
-  noSpawn: true
   components:
     - type: Label
       currentLabel: reagent-name-iodine
