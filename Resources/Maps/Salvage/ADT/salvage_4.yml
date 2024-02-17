@@ -1090,23 +1090,6 @@ entities:
       pos: 5.5,7.5
       parent: 2
       type: Transform
-- proto: AsteroidCrabSpawner
-  entities:
-  - uid: 592
-    components:
-    - pos: 22.5,8.5
-      parent: 2
-      type: Transform
-  - uid: 593
-    components:
-    - pos: 3.5,-2.5
-      parent: 2
-      type: Transform
-  - uid: 594
-    components:
-    - pos: 1.5,2.5
-      parent: 2
-      type: Transform
 - proto: AsteroidRock
   entities:
   - uid: 8
