@@ -30,7 +30,7 @@
   - Reporter
   - Visitor
   - Zookeeper
-  - Detective
+  # - Detective
   - ServiceWorker
   - ADTServiseBorg
   - ADTJanitorBorg
