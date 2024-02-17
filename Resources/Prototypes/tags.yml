@@ -465,6 +465,9 @@
   id: DrinkSpaceGlue
 
 - type: Tag
+  id: DrinkBottle
+
+- type: Tag
   id: DroneUsable
 
 - type: Tag

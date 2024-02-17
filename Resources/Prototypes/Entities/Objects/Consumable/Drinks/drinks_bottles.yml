@@ -4,6 +4,9 @@
   id: DrinkBottlePlasticBaseFull
   abstract: true
   components:
+  - type: Tag
+    tags:
+    - DrinkBottle
   - type: Openable
     sound:
       collection: bottleOpenSounds
@@ -352,6 +355,8 @@
         reagents:
         - ReagentId: Rum
           Quantity: 100
+  - type: Label
+    currentLabel: rum
   - type: Sprite
     sprite: Objects/Consumable/Drinks/rumbottle.rsi
 
@@ -403,6 +408,8 @@
         reagents:
         - ReagentId: Tequila
           Quantity: 100
+  - type: Label
+    currentLabel: tequila
   - type: Sprite
     sprite: Objects/Consumable/Drinks/tequillabottle.rsi
 
@@ -418,6 +425,8 @@
         reagents:
         - ReagentId: Vermouth
           Quantity: 100
+  - type: Label
+    currentLabel: vermouth
   - type: Sprite
     sprite: Objects/Consumable/Drinks/vermouthbottle.rsi
 
@@ -450,6 +459,8 @@
         reagents:
         - ReagentId: Whiskey
           Quantity: 100
+  - type: Label
+    currentLabel: whiskey
   - type: Sprite
     sprite: Objects/Consumable/Drinks/whiskeybottle.rsi
 
@@ -465,6 +476,8 @@
         reagents:
         - ReagentId: Wine
           Quantity: 100
+  - type: Label
+    currentLabel: wine
   - type: Sprite
     sprite: Objects/Consumable/Drinks/winebottle.rsi
 
@@ -522,7 +535,6 @@
         reagents:
         - ReagentId: Ale
           Quantity: 50
-
   - type: Sprite
     sprite: Objects/Consumable/Drinks/alebottle.rsi
 
