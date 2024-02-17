@@ -416,19 +416,20 @@
     - MaterialReclaimerMachineCircuitboard
     - ElectrolysisUnitMachineCircuitboard
     - CentrifugeMachineCircuitboard
-    - ChemDispenserMachineCircuitboard
-    - ChemMasterMachineCircuitboard
     - CondenserMachineCircuitBoard
     - HotplateMachineCircuitboard
     - UniformPrinterMachineCircuitboard
     - FloorGreenCircuit
     - FloorBlueCircuit
-    - MicrowaveMachineCircuitboard
-    - ReagentGrinderMachineCircuitboard
-    - ElectricGrillMachineCircuitboard
-    - BoozeDispenserMachineCircuitboard
-    - SodaDispenserMachineCircuitboard
     dynamicRecipes:
+      - ChemDispenserMachineCircuitboard
+      - ChemMasterMachineCircuitboard
+      - HotplateMachineCircuitboard
+      - MicrowaveMachineCircuitboard
+      - ReagentGrinderMachineCircuitboard
+      - ElectricGrillMachineCircuitboard
+      - BoozeDispenserMachineCircuitboard
+      - SodaDispenserMachineCircuitboard
       - ThermomachineFreezerMachineCircuitBoard
       - HellfireFreezerMachineCircuitBoard
       - PortableScrubberMachineCircuitBoard
@@ -869,7 +870,6 @@
       - Beaker
       - LargeBeaker
       - Dropper
-      - Jug
       - Syringe
       - Implanter
       - PillCanister
@@ -904,6 +904,7 @@
       - CryostasisBeaker
       - BluespaceBeaker
       - SyringeBluespace
+      - Jug
       - SyringeCryostasis
   - type: Machine
     board: MedicalTechFabCircuitboard
