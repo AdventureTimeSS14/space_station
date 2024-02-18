@@ -303,7 +303,7 @@
       - id: WeaponPistolViper
       - id: PinpointerNuclear
       - id: MicroBombImplanter
-      - id: ADTSmokeGrenade
+      - id: SmokeGrenade
 
 
 - type: entity

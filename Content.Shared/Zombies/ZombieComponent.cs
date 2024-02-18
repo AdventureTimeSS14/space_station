@@ -30,7 +30,7 @@ public sealed partial class ZombieComponent : Component, IAntagStatusIconCompone
     public float MinZombieInfectionChance = 0.20f;
 
     [ViewVariables(VVAccess.ReadWrite)]
-    public float ZombieMovementSpeedDebuff = 1.2f;
+    public float ZombieMovementSpeedDebuff = 1.0f;
 
     /// <summary>
     /// The skin color of the zombie

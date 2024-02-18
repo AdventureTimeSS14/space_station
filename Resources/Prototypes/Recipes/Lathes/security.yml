@@ -658,7 +658,7 @@
 #ADT
 - type: latheRecipe
   id: ADTSmokeGrenades
-  result: ADTSmokeGrenade
+  result: SmokeGrenade
   completetime: 2
   materials:
     Steel: 200
