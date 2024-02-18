@@ -4,6 +4,8 @@
   parent: BaseMobVulpkanin
   id: MobVulpkanin
   components:
+    - type: Inventory
+      speciesId: vulp
     - type: CombatMode
     - type: InteractionPopup
       successChance: 1
