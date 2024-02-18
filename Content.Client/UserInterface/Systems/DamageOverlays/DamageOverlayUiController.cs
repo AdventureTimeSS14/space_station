@@ -49,7 +49,7 @@ public sealed class DamageOverlayUiController : UIController
 
     private void OnMobStateChanged(MobStateChangedEvent args)
     {
-        if (args.Target != _playerManager.LocalPlayer?.ControlledEntity)
+        if (args.Target != _playerManager.LocalEntity)
             return;
 
         UpdateOverlays(args.Target, args.Component);
@@ -58,7 +58,7 @@ public sealed class DamageOverlayUiController : UIController
     private void OnThresholdCheck(ref MobThresholdChecked args)
     {
 
-        if (args.Target != _playerManager.LocalPlayer?.ControlledEntity)
+        if (args.Target != _playerManager.LocalEntity)
             return;
 
         UpdateOverlays(args.Target, args.MobState, args.Damageable, args.Threshold);

@@ -66,7 +66,7 @@
     Piercing: 0.7
     Shock: 2
     Heat: 3
-    
+
 # Like metallic, but without flat reduction so it can be damaged with fists.
 - type: damageModifierSet
   id: FlimsyMetallic
@@ -198,6 +198,11 @@
     Cold: 0.7
     Heat: 1.5
     Poison: 1.5
+
+- type: damageModifierSet
+  id: Vox
+  coefficients: # To be decided
+    Poison: 1
 
 - type: damageModifierSet
   id: Zombie #Blunt resistant and immune to biological threats, but can be hacked apart and burned

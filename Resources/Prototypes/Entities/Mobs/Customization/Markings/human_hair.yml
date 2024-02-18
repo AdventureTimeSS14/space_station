@@ -1343,3 +1343,10 @@
     - sprite: Mobs/Customization/human_hair.rsi #возвращение двух классических причесок по просьбам игроков
       state: classic_business4
 
+- type: marking
+  id: HumanHairTailed
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: Mobs/Customization/human_hair.rsi
+      state: tailed

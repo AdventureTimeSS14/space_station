@@ -83,8 +83,8 @@
   background: /Textures/LobbyScreens/Lunalita.png
 
 - type: lobbyBackground
-  id: ShizzyAllstars
-  background: /Textures/LobbyScreens/adtallstars.png
+  id: Robotics
+  background: /Textures/LobbyScreens/robotics.png
 
 - type: lobbyBackground
   id: AveRezomi
@@ -104,12 +104,16 @@
 
 - type: lobbyBackground
   id: Susstation
-  background: /Textures/LobbyScreens/susstation.png
+  background: /Textures/LobbyScreens/susstation.webp
 
 - type: lobbyBackground
   id: SkellyVsTheRev
-  background: /Textures/LobbyScreens/skellyvstherev.png
+  background: /Textures/LobbyScreens/skellyvstherev.webp
 
 - type: lobbyBackground
   id: Doomed
-  background: /Textures/LobbyScreens/doomed.png
+  background: /Textures/LobbyScreens/doomed.webp
+
+- type: lobbyBackground
+  id: Blueprint
+  background: /Textures/LobbyScreens/blueprint.webp

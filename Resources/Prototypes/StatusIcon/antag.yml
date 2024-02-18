@@ -23,6 +23,7 @@
   id: MindShieldIcon
   priority: 2
   locationPreference: Right
+  layer: Mod
   icon:
     sprite: Interface/Misc/job_icons.rsi
     state: MindShield

@@ -27,6 +27,7 @@ public sealed class BanCommand : LocalizedCommands
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly IServerDbManager _dbManager = default!;
     [Dependency] private readonly IEntitySystemManager _entitySystemManager = default!;
+    [Dependency] private readonly ILogManager _logManager = default!;
 
     private readonly HttpClient _httpClient = new();
     public override string Command => "ban";
@@ -55,7 +56,8 @@ public sealed class BanCommand : LocalizedCommands
 
         if (!Enum.TryParse(_cfg.GetCVar(CCVars.ServerBanDefaultSeverity), out NoteSeverity severity))
         {
-            Logger.WarningS("admin.server_ban", "Server ban severity could not be parsed from config! Defaulting to high.");
+            _logManager.GetSawmill("admin.server_ban")
+                .Warning("Server ban severity could not be parsed from config! Defaulting to high.");
             severity = NoteSeverity.High;
         }
 
