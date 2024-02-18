@@ -60,6 +60,16 @@
       "name": "ripley-broken"
     },
     {
+      "name": "ripley-alt",
+      "directions": 4
+    },    
+    {
+      "name": "ripley-open-alt"
+    },    
+    {
+      "name": "ripley-broken-alt"
+    },
+    {
       "name": "marauder",
       "directions": 4
     },
