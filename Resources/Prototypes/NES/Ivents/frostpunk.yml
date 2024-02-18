@@ -72,9 +72,6 @@
       volume: 30
       sound:
         path: /Audio/Ambience/Objects/engine_hum.ogg
-    - type: UpgradePowerSupplier
-      powerSupplyMultiplier: 1.25
-      scaling: Exponential
     - type: GeneratorExhaustGas
       gasType: CarbonDioxide
       moleRatio: 100

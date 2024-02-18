@@ -100,10 +100,10 @@
     - type: LanguageSpeaker
       speaks:
       - GalacticCommon
-      - RobotTalk
+      - BorgTalk
       understands:
       - GalacticCommon
-      - RobotTalk
+      - BorgTalk
 
 
 - type: entity

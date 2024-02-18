@@ -13,7 +13,7 @@
   id: EarsChemlight
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, KoboltSpecies]
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/ears.rsi
       state: chemlight_outer
@@ -24,7 +24,7 @@
   id: EarsDragonLong
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, KoboltSpecies]
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/ears.rsi
       state: dragonlong
@@ -33,7 +33,7 @@
   id: EarsEasternD
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, KoboltSpecies]
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/ears.rsi
       state: easternd_ears
@@ -44,7 +44,7 @@
   id: EarsMagus
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, KoboltSpecies]
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/ears.rsi
       state: magus_ears
@@ -75,7 +75,7 @@
   id: EarsSylveon
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Reptilian, SlimePerson]
+  speciesRestriction: [Reptilian, KoboltSpecies, SlimePerson]
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/ears.rsi
       state: sylveon_primary

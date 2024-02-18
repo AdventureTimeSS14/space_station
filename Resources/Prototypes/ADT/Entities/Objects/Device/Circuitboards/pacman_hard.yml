@@ -58,6 +58,3 @@
       storageLimit: 3000
       materialWhiteList: [Uranium]
     - type: PortableGenerator
-    - type: UpgradePowerSupplier
-      powerSupplyMultiplier: 1.25
-      scaling: Exponential

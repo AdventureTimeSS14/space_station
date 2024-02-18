@@ -59,10 +59,10 @@
   - type: LanguageSpeaker
     speaks:
     - GalacticCommon
-    - SolCommon
+    - Dwarf
     understands:
     - GalacticCommon
-    - SolCommon
+    - Dwarf
 
 - type: entity
   parent: BaseSpeciesDummy

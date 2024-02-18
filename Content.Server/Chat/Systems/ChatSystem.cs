@@ -15,11 +15,13 @@ using Content.Shared.Chat;
 using Content.Shared.Database;
 using Content.Shared.Ghost;
 using Content.Shared.Humanoid;
+using Content.Shared.Humanoid;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Players;
 using Content.Shared.Radio;
+using Content.Shared.Speech;
 using Robust.Server.Player;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
@@ -399,6 +401,8 @@ public sealed partial class ChatSystem : SharedChatSystem
         if (message.Length == 0)
             return;
 
+        var speech = GetSpeechVerb(source, message);
+
         // get the entity's apparent name (if no override provided).
         string name;
         if (nameOverride != null)
@@ -410,6 +414,9 @@ public sealed partial class ChatSystem : SharedChatSystem
             var nameEv = new TransformSpeakerNameEvent(source, Name(source));
             RaiseLocalEvent(source, nameEv);
             name = nameEv.Name;
+            // Check for a speech verb override
+            if (nameEv.SpeechVerb != null && _prototypeManager.TryIndex<SpeechVerbPrototype>(nameEv.SpeechVerb, out var proto))
+                speech = proto;
         }
 
         // Frontier - languages mechanic
@@ -423,8 +430,8 @@ public sealed partial class ChatSystem : SharedChatSystem
         // Corvax-SpeakerColor-End
 
         // Frontier: languages mechanic ADT Upd start
-        if (TryComp<LanguageSpeakerComponent>(source, out var lang))
-            name = $"{name} ({lang.LocalizedID})";
+        if (TryComp<LanguageSpeakerComponent>(source, out var lang) && lang.CurrentLanguage != "GalacticCommon" && lang.CurrentLanguage != "Universal")
+            name = $"{lang.LocalizedID}|{name}";
         // Frontier: languages mechanic ADT Upd end
 
         var wrappedMessage = WrapPublicMessage(source, name, message);
@@ -501,8 +508,8 @@ public sealed partial class ChatSystem : SharedChatSystem
         // Corvax-SpeakerColor-End
 
         // Frontier: languages mechanic ADT Upd start
-        if (TryComp<LanguageSpeakerComponent>(source, out var lang))
-            name = $"{name} ({lang.LocalizedID})";
+        if (TryComp<LanguageSpeakerComponent>(source, out var lang) && lang.CurrentLanguage != "GalacticCommon" && lang.CurrentLanguage != "Universal")
+            name = $"{lang.LocalizedID}|{name}";
         // Frontier: languages mechanic ADT Upd end
 
         // Frontier - languages mechanic (+ everything in the foreach loop)
@@ -655,7 +662,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         {
             wrappedMessage = Loc.GetString("chat-manager-send-admin-dead-chat-wrap-message",
                 ("adminChannelName", Loc.GetString("chat-manager-admin-channel-name")),
-                ("userName", player.ConnectedClient.UserName),
+                ("userName", player.Channel.UserName),
                 ("message", FormattedMessage.EscapeText(message)));
             _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Admin dead chat from {player:Player}: {message}");
         }
@@ -832,7 +839,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             .AddWhereAttachedEntity(HasComp<GhostComponent>)
             .Recipients
             .Union(_adminManager.ActiveAdmins)
-            .Select(p => p.ConnectedClient);
+            .Select(p => p.Channel);
     }
 
     private string SanitizeMessagePeriod(string message)
@@ -964,11 +971,13 @@ public sealed class TransformSpeakerNameEvent : EntityEventArgs
 {
     public EntityUid Sender;
     public string Name;
+    public string? SpeechVerb;
 
-    public TransformSpeakerNameEvent(EntityUid sender, string name)
+    public TransformSpeakerNameEvent(EntityUid sender, string name, string? speechVerb = null)
     {
         Sender = sender;
         Name = name;
+        SpeechVerb = speechVerb;
     }
 }
 
