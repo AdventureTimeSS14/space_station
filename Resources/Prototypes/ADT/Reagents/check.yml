@@ -1,6 +1,7 @@
 - type: reagent
   id: ADTCopperNitride
   name: reagent-name-absinthe
+  group: Medicine
   desc: reagent-desc-absinthe
   physicalDesc: reagent-physical-desc-crystalline
   color: "#09590a" 
