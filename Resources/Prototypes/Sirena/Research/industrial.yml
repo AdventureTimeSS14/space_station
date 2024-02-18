@@ -14,5 +14,5 @@
   - ClothingEyesHudMedical
   - ClothingEyesHudSecurity
   - ADTClothingEyesHudAdvanced
-  technologyPrerequisites:
-  - CompactPower
+  #technologyPrerequisites:
+  #- CompactPower

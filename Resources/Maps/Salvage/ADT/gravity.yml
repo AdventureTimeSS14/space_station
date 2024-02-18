@@ -247,13 +247,6 @@ entities:
     - pos: -2.5,2.5
       parent: 1
       type: Transform
-- proto: AsteroidCrabSpawner
-  entities:
-  - uid: 50
-    components:
-    - pos: -4.5,-3.5
-      parent: 1
-      type: Transform
 - proto: CableApcExtension
   entities:
   - uid: 79

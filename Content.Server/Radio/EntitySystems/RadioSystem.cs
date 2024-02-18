@@ -10,6 +10,7 @@ using Content.Shared.Database;
 using Content.Shared.Language;
 using Content.Shared.Radio;
 using Content.Shared.Radio.Components;
+using Content.Shared.Speech;
 using Robust.Shared.Map;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
@@ -67,7 +68,7 @@ public sealed class RadioSystem : EntitySystem
                 msg = args.NotUnderstoodChatMsg;
             }
 
-            _netMan.ServerSendMessage(new MsgChatMessage { Message = msg }, actor.PlayerSession.ConnectedClient);
+            _netMan.ServerSendMessage(new MsgChatMessage { Message = msg }, actor.PlayerSession.Channel);
         }
     }
 
@@ -96,7 +97,6 @@ public sealed class RadioSystem : EntitySystem
         name = FormattedMessage.EscapeText(name);
 
         // most radios are relayed to chat, so lets parse the chat message beforehand
-
         // Frontier - languages mechanic
         // A message that the listener could understand
         var wrappedMessage = WrapRadioMessage(messageSource, channel, name, message);
