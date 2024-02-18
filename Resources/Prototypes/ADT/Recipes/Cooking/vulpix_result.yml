@@ -1,0 +1,9 @@
+- type: microwaveMealRecipe
+  id: ADTFoodRecipeVulpix
+  name: "result vulpix"
+  result: ADTFoodVulpix
+  time: 5
+  solids:
+    ADTOrganVulpkaninAnimalLiver: 1
+    FoodCheeseSlice: 1
+    FoodOnion: 1
