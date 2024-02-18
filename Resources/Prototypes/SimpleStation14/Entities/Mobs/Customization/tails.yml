@@ -2,7 +2,7 @@
   id: TailAxolotl
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, KoboltSpecies]
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
       state: axolotl
@@ -11,7 +11,7 @@
   id: TailDatashark
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, KoboltSpecies]
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
       state: datashark_ears_inner
@@ -28,7 +28,7 @@
   id: TailEasternDragon
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, KoboltSpecies]
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
       state: easternd_primary
@@ -39,7 +39,7 @@
   id: TailFish
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, KoboltSpecies]
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
       state: fish_primary
@@ -50,7 +50,7 @@
   id: TailGecko
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, KoboltSpecies]
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
       state: gecko_primary
@@ -63,7 +63,7 @@
   id: TailMaw
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Reptilian, SlimePerson]
+  speciesRestriction: [Reptilian, KoboltSpecies, SlimePerson]
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
       state: maw
@@ -72,7 +72,7 @@
   id: TailShark
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, KoboltSpecies]
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
       state: shark_fin
@@ -83,7 +83,7 @@
   id: TailSnake
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Reptilian, SlimePerson]
+  speciesRestriction: [Reptilian, KoboltSpecies, SlimePerson]
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
       state: snake

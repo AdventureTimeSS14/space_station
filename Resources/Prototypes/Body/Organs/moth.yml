@@ -7,6 +7,7 @@
     specialDigestible:
       tags:
       - ClothMade
+      - Paper
       - Fruit
     #  - Meat
       - Pill

@@ -163,6 +163,7 @@
       - id: ClothingMaskSterile
       - id: ADTMedicalTourniquet
         amount: 3
+      - id: HandheldGPSBasic
       - id: MedkitFilled
         prob: 0.3
       - id: ADTClothingHeadHatHoodBioParamedic

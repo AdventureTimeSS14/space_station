@@ -9,7 +9,7 @@
   - 1.0
   baseTurf: Plating
   isSubfloor: false
-  canCrowbar: true
+  #canCrowbar: true
   footstepSounds:
     collection: FootstepFloor
   itemDrop: FloorTileItemSteel
@@ -26,7 +26,7 @@
   - 1.0
   baseTurf: Plating
   isSubfloor: false
-  canCrowbar: true
+  #canCrowbar: true
   footstepSounds:
     collection: FootstepFloor
   itemDrop: FloorTileItemSteel

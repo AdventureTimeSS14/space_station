@@ -35,14 +35,6 @@
     - звенит.
 
 - type: emote
-  id: Buzz
-  category: Vocal
-  chatMessages: [жужжит]
-  chatTriggers:
-    - жужжит
-    - жужжит.
-
-- type: emote
   id: SighBuzz
   category: Vocal
   chatMessages: [раздражённо жужжит]

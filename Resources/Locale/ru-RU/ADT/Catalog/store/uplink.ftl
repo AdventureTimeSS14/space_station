@@ -73,3 +73,6 @@ uplink-explosive-pizzabox-desc = Фальшивая коробка от пицц
 
 uplink-syndiholoprojectorfield-name = Кроваво-красный сдерживающий голопроектор
 uplink-syndiholoprojectorfield-desc = Устройство создающие на месте использования ничего не пропускающий барьер,в комплекте идет гипер батарея.
+
+uplink-unilang-implanter-name = Универсальный языковой имплант
+uplink-unilang-implanter-desc = Имплант, позволяющий вам понимать любую речь, кроме животной. Не включает в себя понимание Кодового языка.
