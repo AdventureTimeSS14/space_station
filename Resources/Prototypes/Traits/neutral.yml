@@ -20,7 +20,7 @@
 - type: trait
   id: Tall
   name: trait-tall-name
-  descriction: trait-tall-desc
+  description: trait-tall-desc
   whitelist:
     components:
       - SizeAttributeWhitelist
@@ -34,7 +34,7 @@
 - type: trait
   id: Short
   name: trait-short-name
-  descriction: trait-short-desc
+  description: trait-short-desc
   whitelist:
     components:
       - SizeAttributeWhitelist
