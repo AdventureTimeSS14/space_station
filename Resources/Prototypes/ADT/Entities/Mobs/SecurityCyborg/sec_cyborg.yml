@@ -133,11 +133,19 @@
     tags:
     - ChangelingBlacklist
     - ShoesRequiredStepTriggerImmune
+    - CanPilot
+    - FootstepSound
     - DoorBumpOpener # авто открытие двери, когда подходишь к ней
   # - type: PresetIdCard
   #   job: ADTSecurityCyborg
   # - type: AccessReader
   #   access: [ ["Engineering"], ["Command"], ["Research"], ["Cargo"], ["Salvage"], ["Brig"], ["Medical"], ["Medical"], ["Research"], ["Security"], ["Armory"], ["Detective"], ["External"], ["Service"], ["Captain"], ["CentralCommand"] ]
+  - type: SizeAttributeWhitelist # Frontier
+    tall: true
+    tallscale: 1.1
+  - type: SizeAttribute # Frontier
+    tall: true
+
 
 
 - type: entity
