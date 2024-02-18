@@ -16,6 +16,7 @@
         - NamesLastMilitary
     - type: RandomHumanoidSpawner
       settings: DeathSquad
+    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -37,6 +38,7 @@
       nameSegments:
         - NamesFirstMilitaryLeader
         - NamesLastMilitary
+    - type: InitialInfectedExempt
 
 
 ## ERT Leader
@@ -55,6 +57,7 @@
       - NamesLastERTCallsign # Corvax-Localization
     - type: RandomHumanoidSpawner
       settings: ERTLeader
+    - type: InitialInfectedExempt
   #noSpawn: true
 
 - type: randomHumanoidSettings
@@ -78,6 +81,7 @@
       - NamesFirstMilitaryLeaderCorvax # Corvax-Localization
       - NamesLastERTCallsign # Corvax-Localization
   #noSpawn: true
+    - type: InitialInfectedExempt
 
 - type: entity
   id: RandomHumanoidSpawnerERTLeaderEVA
@@ -90,6 +94,7 @@
       state: ertleadereva
     - type: RandomHumanoidSpawner
       settings: ERTLeaderEVA
+    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -107,6 +112,7 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ ERTLeaderGearEVA ]
+    - type: InitialInfectedExempt
 
 #против революции
 
@@ -145,6 +151,7 @@
   components:
     - type: RandomHumanoidSpawner
       settings: ERTLeaderEVALecter
+    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -162,6 +169,7 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ ADTERTLeaderGearEVA_L ]
+    - type: InitialInfectedExempt
 
 ## ERT Janitor
 
@@ -203,6 +211,7 @@
     - type: Loadout
       prototypes: [ ERTJanitorGear ]
   #noSpawn: true
+    - type: InitialInfectedExempt
 
 - type: entity
   id: RandomHumanoidSpawnerERTJanitorEVA
@@ -232,6 +241,7 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ ERTJanitorGearEVA ]
+    - type: InitialInfectedExempt
 
 ## ERT Engineer
 
@@ -273,6 +283,7 @@
     - type: Loadout
       prototypes: [ ERTEngineerGear ]
   #noSpawn: true
+    - type: InitialInfectedExempt
 
 - type: entity
   id: RandomHumanoidSpawnerERTEngineerEVA
@@ -302,6 +313,7 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ ERTEngineerGearEVA ]
+    - type: InitialInfectedExempt
 
 #против революции
 
@@ -373,6 +385,7 @@
     - type: Loadout
       prototypes: [ ERTSecurityGear ]
   #noSpawn: true
+    - type: InitialInfectedExempt
 
 - type: entity
   id: RandomHumanoidSpawnerERTSecurityEVA
@@ -402,18 +415,7 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ ERTSecurityGearEVA ]
-
-- type: entity
-  id: RandomHumanoidSpawnerERTSecurityHeavy
-  parent: RandomHumanoidSpawnerERTSecurity
-  name: ERT security heavy
-  suffix: ERTRole, Armored EVA
-  components:
-    - type: Sprite
-      sprite: Markers/jobs.rsi
-      state: ertsecurityeva
-    - type: RandomHumanoidSpawner
-      settings: ERTSecurityHeavy
+    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -486,6 +488,7 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ ADTERTSecurityGearEVA_L ]
+    - type: InitialInfectedExempt
 
 ## ERT Medic
 
@@ -527,6 +530,7 @@
     - type: Loadout
       prototypes: [ ERTMedicalGear ]
   #noSpawn: true
+    - type: InitialInfectedExempt
 
 - type: entity
   id: RandomHumanoidSpawnerERTMedicalEVA
@@ -556,6 +560,7 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ ERTMedicalGearEVA ]
+    - type: InitialInfectedExempt
 
 #против революции
 
@@ -599,6 +604,7 @@
       state: cburn
     - type: RandomHumanoidSpawner
       settings: CBURNAgent
+    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -619,6 +625,7 @@
       nameSegments:
       - NamesFirstMilitaryCorvax # Corvax-Localization
       - NamesLastERTCallsign # Corvax-Localization
+    - type: InitialInfectedExempt
 ## Central Command
 
 - type: entity
@@ -630,6 +637,7 @@
       state: centcom
     - type: RandomHumanoidSpawner
       settings: CentcomOfficial
+    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: CentcomOfficial
@@ -644,6 +652,7 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ CentcomGear ]
+    - type: InitialInfectedExempt
 
 ## Syndicate
 

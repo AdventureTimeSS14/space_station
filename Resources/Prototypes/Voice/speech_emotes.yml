@@ -332,3 +332,23 @@
   chatMessages: ["emote-deathgasp"]
   chatTriggers:
   - deathgasp
+
+- type: emote
+  id: Buzz
+  category: Vocal
+  chatMessages: [buzz!]
+  chatTriggers:
+    - жужжит
+    - жужжит.
+    - buzzing
+    - buzzing!
+    - buzzing.
+    - buzz
+    - buzz.
+    - buzz!
+    - buzzed
+    - buzzed.
+    - buzzed!
+    - buzzes
+    - buzzes.
+    - buzzes!

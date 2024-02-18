@@ -10,7 +10,7 @@
     layers:
       - state: smes
       - map: ["enum.SmesVisualLayers.Charge"]
-        state: "smes-og1" 
+        state: "smes-og1"
         shader: unshaded
         visible: false
       - map: ["enum.SmesVisualLayers.Input"]
@@ -20,12 +20,6 @@
         state: "smes-op1"
         shader: unshaded
   - type: Smes
-  - type: UpgradeBattery
-    maxChargeMultiplier: 2
-    baseMaxCharge: 120000000
-  - type: UpgradePowerSupplyRamping
-    scaling: Linear
-    supplyRampingMultiplier: 1     
   - type: Battery
     maxCharge: 120000000
     startingCharge: 120000000

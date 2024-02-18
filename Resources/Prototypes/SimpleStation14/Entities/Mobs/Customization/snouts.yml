@@ -2,7 +2,7 @@
   id: SnoutEasternDNW
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, KoboltSpecies]
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/snouts.rsi
       state: easterndnw_primary
@@ -13,7 +13,7 @@
   id: SnoutEasternDW
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, KoboltSpecies]
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/snouts.rsi
       state: easterndw_primary

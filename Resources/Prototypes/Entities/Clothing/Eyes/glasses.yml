@@ -201,6 +201,8 @@
     tags:
     - HamsterWearable
     - WhitelistChameleon
+  - type: IdentityBlocker
+    coverage: EYES
 
 - type: entity
   parent: ClothingEyesGlasses
@@ -224,6 +226,8 @@
     guides:
     - Security
   - type: ShowSecurityIcons
+  - type: IdentityBlocker
+    coverage: EYES
 
 - type: entity
   parent: ClothingEyesGlasses
