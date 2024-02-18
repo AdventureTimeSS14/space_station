@@ -1,15 +1,33 @@
 - type: reagent
   id: ADTCopperNitride
-  name: reagent-name-absinthe
+  name: reagent-name-bicaridine
   group: Medicine
-  desc: reagent-desc-absinthe
-  physicalDesc: reagent-physical-desc-crystalline
-  color: "#09590a" 
-  boilingPoint: 300
-  meltingPoint: 300
+  desc: reagent-desc-bicaridine
+  physicalDesc: reagent-physical-desc-opaque
+  flavor: medicine
+  color: "#ffaa00"
   metabolisms:
     Medicine:
       effects:
-      - !type:AdjustReagent
-        reagent: Licoxide
-        amount: -0.5
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -2
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 15
+        damage:
+          types:
+            Asphyxiation: 0.5
+            Poison: 1.5
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 30
+        probability: 0.02
+      - !type:Jitter
+        conditions:
+        - !type:ReagentThreshold
+          min: 15
+      - !type:Drunk
