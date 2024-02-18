@@ -95,7 +95,6 @@
     laws: SecCybLaw
   - type: EmagSiliconLaw
     stunTime: 5
-    emagLaws: SyndicateStatic
   # - type: IonStormTarget
   # - type: BorgChassis
   - type: ContainerFill
@@ -134,6 +133,7 @@
     tags:
     - ChangelingBlacklist
     - ShoesRequiredStepTriggerImmune
+    - DoorBumpOpener # авто открытие двери, когда подходишь к ней
   # - type: PresetIdCard
   #   job: ADTSecurityCyborg
   # - type: AccessReader
