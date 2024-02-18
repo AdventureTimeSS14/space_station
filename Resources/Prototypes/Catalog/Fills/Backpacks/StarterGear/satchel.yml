@@ -47,9 +47,10 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
-      - id: ForensicPad
+      - id: BoxForensicPad
       - id: ForensicScanner
       - id: ADTSpaceLaw
+      - id: Flash
 
 - type: entity
   parent: ClothingBackpackSatchelBrigmedic
@@ -296,8 +297,8 @@
       - id: SpeedLoaderMagnumRubber
       - id: SpeedLoaderMagnumRubber
       - id: SpeedLoaderMagnum
-      - id: ADTSmokeGrenade
-      - id: ADTSmokeGrenade
+      - id: SmokeGrenade
+      - id: SmokeGrenade
 
 - type: entity
   noSpawn: true
