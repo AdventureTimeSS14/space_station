@@ -9,14 +9,6 @@
   metabolisms:
     Medicine:
       effects:
-      - !type:HealthChange
-        conditions:
-        - !type:ReagentThreshold
-          reagent: Bicaridine
-          min: 0.5
-        damage:
-          groups:
-            Brute: -1
-            Burn: -1
-          types:
-            Cold: -1
+      - !type:AdjustReagent
+        reagent: Licoxide
+        amount: -0.5
