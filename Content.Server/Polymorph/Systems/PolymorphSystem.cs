@@ -16,7 +16,6 @@ using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Polymorph;
 using Content.Shared.Popups;
-using JetBrains.Annotations;
 using Robust.Server.Audio;
 using Robust.Server.Containers;
 using Robust.Server.GameObjects;
@@ -59,75 +58,100 @@ namespace Content.Server.Polymorph.Systems
 
         public override void Initialize()
         {
-            base.Initialize();
-
-            SubscribeLocalEvent<PolymorphableComponent, ComponentStartup>(OnStartup);
-            SubscribeLocalEvent<PolymorphableComponent, PolymorphActionEvent>(OnPolymorphActionEvent);
+            SubscribeLocalEvent<PolymorphableComponent, ComponentStartup>(OnComponentStartup);
             SubscribeLocalEvent<PolymorphedEntityComponent, MapInitEvent>(OnMapInit);
+
+            SubscribeLocalEvent<PolymorphableComponent, PolymorphActionEvent>(OnPolymorphActionEvent);
+            SubscribeLocalEvent<PolymorphedEntityComponent, RevertPolymorphActionEvent>(OnRevertPolymorphActionEvent);
+
             SubscribeLocalEvent<PolymorphedEntityComponent, BeforeFullyEatenEvent>(OnBeforeFullyEaten);
             SubscribeLocalEvent<PolymorphedEntityComponent, BeforeFullySlicedEvent>(OnBeforeFullySliced);
-            SubscribeLocalEvent<PolymorphedEntityComponent, RevertPolymorphActionEvent>(OnRevertPolymorphActionEvent);
             SubscribeLocalEvent<PolymorphedEntityComponent, DestructionEventArgs>(OnDestruction);
 
             InitializeCollide();
             InitializeMap();
-
-            _sawmill = Logger.GetSawmill("polymorph");
         }
 
-        private void OnStartup(EntityUid uid, PolymorphableComponent component, ComponentStartup args)
+        public override void Update(float frameTime)
         {
-            if (component.InnatePolymorphs != null)
+            base.Update(frameTime);
+
+            var query = EntityQueryEnumerator<PolymorphedEntityComponent>();
+            while (query.MoveNext(out var uid, out var comp))
             {
-                foreach (var morph in component.InnatePolymorphs)
+                comp.Time += frameTime;
+
+                if (comp.Configuration.Duration != null && comp.Time >= comp.Configuration.Duration)
                 {
-                    CreatePolymorphAction(morph, uid);
+                    Revert((uid, comp));
+                    continue;
+                }
+
+                if (!TryComp<MobStateComponent>(uid, out var mob))
+                    continue;
+
+                if (comp.Configuration.RevertOnDeath && _mobState.IsDead(uid, mob) ||
+                    comp.Configuration.RevertOnCrit && _mobState.IsIncapacitated(uid, mob))
+                {
+                    Revert((uid, comp));
+                }
+            }
+
+            UpdateCollide();
+        }
+
+        private void OnComponentStartup(Entity<PolymorphableComponent> ent, ref ComponentStartup args)
+        {
+            if (ent.Comp.InnatePolymorphs != null)
+            {
+                foreach (var morph in ent.Comp.InnatePolymorphs)
+                {
+                    CreatePolymorphAction(morph, ent);
                 }
             }
         }
 
-        private void OnPolymorphActionEvent(EntityUid uid, PolymorphableComponent component, PolymorphActionEvent args)
+        private void OnMapInit(Entity<PolymorphedEntityComponent> ent, ref MapInitEvent args)
         {
-            PolymorphEntity(uid, args.Prototype);
-        }
-
-        private void OnRevertPolymorphActionEvent(EntityUid uid, PolymorphedEntityComponent component, RevertPolymorphActionEvent args)
-        {
-            Revert(uid, component);
-        }
-
-        private void OnMapInit(EntityUid uid, PolymorphedEntityComponent component, MapInitEvent args)
-        {
-            if (!_proto.TryIndex(component.Prototype, out PolymorphPrototype? proto))
-            {
-                // warning instead of error because of the all-comps one entity test.
-                _sawmill.Warning($"{nameof(PolymorphSystem)} encountered an improperly set up polymorph component while initializing. Entity {ToPrettyString(uid)}. Prototype: {component.Prototype}");
-                RemCompDeferred(uid, component);
-                return;
-            }
-
-            if (proto.Forced)
+            var (uid, component) = ent;
+            if (component.Configuration.Forced)
                 return;
 
             if (_actions.AddAction(uid, ref component.Action, out var action, RevertPolymorphId))
             {
                 action.EntityIcon = component.Parent;
-                action.UseDelay = TimeSpan.FromSeconds(proto.Delay);
+                action.UseDelay = TimeSpan.FromSeconds(component.Configuration.Delay);
             }
         }
 
-        private void OnBeforeFullyEaten(EntityUid uid, PolymorphedEntityComponent comp, BeforeFullyEatenEvent args)
+        private void OnPolymorphActionEvent(Entity<PolymorphableComponent> ent, ref PolymorphActionEvent args)
         {
-            if (!_proto.TryIndex<PolymorphPrototype>(comp.Prototype, out var proto))
-            {
-                _sawmill.Error($"Invalid polymorph prototype {comp.Prototype}");
-                return;
-            }
+            PolymorphEntity(ent, args.Prototype.Configuration);
+        }
 
-            if (proto.RevertOnEat)
+        private void OnRevertPolymorphActionEvent(Entity<PolymorphedEntityComponent> ent,
+            ref RevertPolymorphActionEvent args)
+        {
+            Revert((ent, ent));
+        }
+
+        private void OnBeforeFullyEaten(Entity<PolymorphedEntityComponent> ent, ref BeforeFullyEatenEvent args)
+        {
+            var (_, comp) = ent;
+            if (comp.Configuration.RevertOnEat)
             {
                 args.Cancel();
-                Revert(uid, comp);
+                Revert((ent, ent));
+            }
+        }
+
+        private void OnBeforeFullySliced(Entity<PolymorphedEntityComponent> ent, ref BeforeFullySlicedEvent args)
+        {
+            var (_, comp) = ent;
+            if (comp.Configuration.RevertOnEat)
+            {
+                args.Cancel();
+                Revert((ent, ent));
             }
         }
 
@@ -135,67 +159,42 @@ namespace Content.Server.Polymorph.Systems
         /// It is possible to be polymorphed into an entity that can't "die", but is instead
         /// destroyed. This handler ensures that destruction is treated like death.
         /// </summary>
-        private void OnDestruction(EntityUid uid, PolymorphedEntityComponent comp, DestructionEventArgs args)
+        private void OnDestruction(Entity<PolymorphedEntityComponent> ent, ref DestructionEventArgs args)
         {
-            if (!_proto.TryIndex<PolymorphPrototype>(comp.Prototype, out var proto))
+            if (ent.Comp.Configuration.RevertOnDeath)
             {
-                _sawmill.Error($"Invalid polymorph prototype {comp.Prototype}");
-                return;
+                Revert((ent, ent));
             }
-
-            if (proto.RevertOnDeath)
-            {
-                Revert(uid, comp);
-            }
-        }
-
-        private void OnBeforeFullySliced(EntityUid uid, PolymorphedEntityComponent comp, BeforeFullySlicedEvent args)
-        {
-            if (!_proto.TryIndex<PolymorphPrototype>(comp.Prototype, out var proto))
-            {
-                _sawmill.Error("Invalid polymorph prototype {comp.Prototype}");
-                return;
-            }
-
-            if (proto.RevertOnEat)
-            {
-                args.Cancel();
-                Revert(uid, comp);
-            }
-        }
-
-        /// <summary>
-        /// Polymorphs the target entity into the specific polymorph prototype
-        /// </summary>
-        /// <param name="target">The entity that will be transformed</param>
-        /// <param name="id">The id of the polymorph prototype</param>
-        public EntityUid? PolymorphEntity(EntityUid target, string id)
-        {
-            if (!_proto.TryIndex<PolymorphPrototype>(id, out var proto))
-            {
-                _sawmill.Error("Invalid polymorph prototype {id}");
-                return null;
-            }
-
-            return PolymorphEntity(target, proto);
         }
 
         /// <summary>
         /// Polymorphs the target entity into the specific polymorph prototype
         /// </summary>
         /// <param name="uid">The entity that will be transformed</param>
-        /// <param name="proto">The polymorph prototype</param>
-        public EntityUid? PolymorphEntity(EntityUid uid, PolymorphPrototype proto)
+        /// <param name="protoId">The id of the polymorph prototype</param>
+        public EntityUid? PolymorphEntity(EntityUid uid, ProtoId<PolymorphPrototype> protoId)
+        {
+            var config = _proto.Index(protoId).Configuration;
+            return PolymorphEntity(uid, config);
+        }
+
+        /// <summary>
+        /// Polymorphs the target entity into another
+        /// </summary>
+        /// <param name="uid">The entity that will be transformed</param>
+        /// <param name="configuration">Polymorph data</param>
+        /// <returns></returns>
+        public EntityUid? PolymorphEntity(EntityUid uid, PolymorphConfiguration configuration)
         {
             // if it's already morphed, don't allow it again with this condition active.
-            if (!proto.AllowRepeatedMorphs && HasComp<PolymorphedEntityComponent>(uid))
+            if (!configuration.AllowRepeatedMorphs && HasComp<PolymorphedEntityComponent>(uid))
                 return null;
 
             // If this polymorph has a cooldown, check if that amount of time has passed since the
             // last polymorph ended.
             if (TryComp<PolymorphableComponent>(uid, out var polymorphableComponent) &&
                 polymorphableComponent.LastPolymorphEnd != null &&
-                _gameTiming.CurTime < polymorphableComponent.LastPolymorphEnd + proto.Cooldown)
+                _gameTiming.CurTime < polymorphableComponent.LastPolymorphEnd + configuration.Cooldown)
                 return null;
 
             // mostly just for vehicles
@@ -203,22 +202,23 @@ namespace Content.Server.Polymorph.Systems
 
             var targetTransformComp = Transform(uid);
 
-            var child = Spawn(proto.Entity, targetTransformComp.Coordinates);
+            var child = Spawn(configuration.Entity, targetTransformComp.Coordinates);
+
             MakeSentientCommand.MakeSentient(child, EntityManager);
 
-            var comp = _compFact.GetComponent<PolymorphedEntityComponent>();
-            comp.Parent = uid;
-            comp.Prototype = proto.ID;
-            AddComp(child, comp);
+            var polymorphedComp = _compFact.GetComponent<PolymorphedEntityComponent>();
+            polymorphedComp.Parent = uid;
+            polymorphedComp.Configuration = configuration;
+            AddComp(child, polymorphedComp);
 
             var childXform = Transform(child);
-            childXform.LocalRotation = targetTransformComp.LocalRotation;
+            _transform.SetLocalRotation(child, targetTransformComp.LocalRotation, childXform);
 
             if (_container.TryGetContainingContainer(uid, out var cont))
                 _container.Insert(child, cont);
 
             //Transfers all damage from the original to the new one
-            if (proto.TransferDamage &&
+            if (configuration.TransferDamage &&
                 TryComp<DamageableComponent>(child, out var damageParent) &&
                 _mobThreshold.GetScaledDamage(uid, child, out var damage) &&
                 damage != null)
@@ -226,7 +226,7 @@ namespace Content.Server.Polymorph.Systems
                 _damageable.SetDamage(child, damageParent, damage);
             }
 
-            if (proto.Inventory == PolymorphInventoryChange.Transfer)
+            if (configuration.Inventory == PolymorphInventoryChange.Transfer)
             {
                 _inventory.TransferEntityInventories(uid, child);
                 foreach (var hand in _hands.EnumerateHeld(uid))
@@ -235,7 +235,7 @@ namespace Content.Server.Polymorph.Systems
                     _hands.TryPickupAnyHand(child, hand);
                 }
             }
-            else if (proto.Inventory == PolymorphInventoryChange.Drop)
+            else if (configuration.Inventory == PolymorphInventoryChange.Drop)
             {
                 if (_inventory.TryGetContainerSlotEnumerator(uid, out var enumerator))
                 {
@@ -251,18 +251,20 @@ namespace Content.Server.Polymorph.Systems
                 }
             }
 
-            if (proto.TransferName && TryComp<MetaDataComponent>(uid, out var targetMeta))
+            if (configuration.TransferName && TryComp<MetaDataComponent>(uid, out var targetMeta))
                 _metaData.SetEntityName(child, targetMeta.EntityName);
 
-            if (proto.TransferHumanoidAppearance)
+            if (configuration.TransferHumanoidAppearance)
             {
                 _humanoid.CloneAppearance(uid, child);
             }
 
             if (_mindSystem.TryGetMind(uid, out var mindId, out var mind))
                 _mindSystem.TransferTo(mindId, child, mind: mind);
-            SendToPausesdMap(uid, targetTransformComp);
-
+            //Ensures a map to banish the entity to
+            EnsurePausedMap();
+            if (PausedMap != null)
+                _transform.SetParent(uid, targetTransformComp, PausedMap.Value);
             return child;
         }
 
@@ -324,7 +326,7 @@ namespace Content.Server.Polymorph.Systems
         public void SendToPausesdMap(EntityUid uid, TransformComponent transform)
         {
             //Ensures a map to banish the entity to
-            EnsurePausesdMap();
+            //EnsurePausesdMap();
             if (PausedMap != null)
                 _transform.SetParent(uid, transform, PausedMap.Value);
         }
@@ -355,26 +357,26 @@ namespace Content.Server.Polymorph.Systems
         /// </summary>
         /// <param name="uid">The entityuid of the entity being reverted</param>
         /// <param name="component"></param>
-        public EntityUid? Revert(EntityUid uid, PolymorphedEntityComponent? component = null)
+        public EntityUid? Revert(Entity<PolymorphedEntityComponent?> ent)
         {
-            if (Deleted(uid))
+            var (uid, component) = ent;
+            if (!Resolve(ent, ref component))
                 return null;
 
-            if (!Resolve(uid, ref component))
+            if (Deleted(uid))
                 return null;
 
             var parent = component.Parent;
             if (Deleted(parent))
                 return null;
 
-            if (!_proto.TryIndex(component.Prototype, out PolymorphPrototype? proto))
-            {
-                _sawmill.Error($"{nameof(PolymorphSystem)} encountered an improperly initialized polymorph component while reverting. Entity {ToPrettyString(uid)}. Prototype: {component.Prototype}");
-                return null;
-            }
+            var uidXform = Transform(uid);
+            var parentXform = Transform(parent);
 
-            RetrievePausedEntity(uid, parent);
-            if (proto.TransferDamage &&
+            _transform.SetParent(parent, parentXform, uidXform.ParentUid);
+            _transform.SetCoordinates(parent, parentXform, uidXform.Coordinates, uidXform.LocalRotation);
+
+            if (component.Configuration.TransferDamage &&
                 TryComp<DamageableComponent>(parent, out var damageParent) &&
                 _mobThreshold.GetScaledDamage(uid, parent, out var damage) &&
                 damage != null)
@@ -382,7 +384,7 @@ namespace Content.Server.Polymorph.Systems
                 _damageable.SetDamage(parent, damageParent, damage);
             }
 
-            if (proto.Inventory == PolymorphInventoryChange.Transfer)
+            if (component.Configuration.Inventory == PolymorphInventoryChange.Transfer)
             {
                 _inventory.TransferEntityInventories(uid, parent);
                 foreach (var held in _hands.EnumerateHeld(uid))
@@ -391,7 +393,7 @@ namespace Content.Server.Polymorph.Systems
                     _hands.TryPickupAnyHand(parent, held, checkActionBlocker: false);
                 }
             }
-            else if (proto.Inventory == PolymorphInventoryChange.Drop)
+            else if (component.Configuration.Inventory == PolymorphInventoryChange.Drop)
             {
                 if (_inventory.TryGetContainerSlotEnumerator(uid, out var enumerator))
                 {
@@ -414,11 +416,11 @@ namespace Content.Server.Polymorph.Systems
                 polymorphableComponent.LastPolymorphEnd = _gameTiming.CurTime;
 
             // if an item polymorph was picked up, put it back down after reverting
-            Transform(parent).AttachToGridOrMap();
+            _transform.AttachToGridOrMap(parent, parentXform);
 
             _popup.PopupEntity(Loc.GetString("polymorph-revert-popup-generic",
-                ("parent", Identity.Entity(uid, EntityManager)),
-                ("child", Identity.Entity(parent, EntityManager))),
+                    ("parent", Identity.Entity(uid, EntityManager)),
+                    ("child", Identity.Entity(parent, EntityManager))),
                 parent);
             QueueDel(uid);
 
@@ -454,7 +456,8 @@ namespace Content.Server.Polymorph.Systems
 
             if (TryComp(source, out MindShieldComponent? mindshieldComp)) // copy over mindshield status
             {
-                var copiedMindshieldComp = (Component) _serialization.CreateCopy(mindshieldComp, notNullableOverride: true);
+                var copiedMindshieldComp =
+                    (Component) _serialization.CreateCopy(mindshieldComp, notNullableOverride: true);
                 EntityManager.AddComponent(newEntityUid, copiedMindshieldComp);
             }
 
@@ -498,83 +501,42 @@ namespace Content.Server.Polymorph.Systems
         /// </summary>
         /// <param name="id">The string of the id of the polymorph action</param>
         /// <param name="target">The entity that will be gaining the action</param>
-        public void CreatePolymorphAction(string id, EntityUid target)
+        public void CreatePolymorphAction(ProtoId<PolymorphPrototype> id, Entity<PolymorphableComponent> target)
         {
-            if (!_proto.TryIndex<PolymorphPrototype>(id, out var polyproto))
-            {
-                _sawmill.Error("Invalid polymorph prototype");
-                return;
-            }
-
-            if (!TryComp<PolymorphableComponent>(target, out var polycomp))
+            target.Comp.PolymorphActions ??= new();
+            if (target.Comp.PolymorphActions.ContainsKey(id))
                 return;
 
-            polycomp.PolymorphActions ??= new Dictionary<string, EntityUid>();
-            if (polycomp.PolymorphActions.ContainsKey(id))
-                return;
-
-            var entproto = _proto.Index<EntityPrototype>(polyproto.Entity);
+            var polyProto = _proto.Index(id);
+            var entProto = _proto.Index(polyProto.Configuration.Entity);
 
             EntityUid? actionId = default!;
             if (!_actions.AddAction(target, ref actionId, RevertPolymorphId, target))
                 return;
 
-            polycomp.PolymorphActions.Add(id, actionId.Value);
-            _metaData.SetEntityName(actionId.Value, Loc.GetString("polymorph-self-action-name", ("target", entproto.Name)));
-            _metaData.SetEntityDescription(actionId.Value, Loc.GetString("polymorph-self-action-description", ("target", entproto.Name)));
+            target.Comp.PolymorphActions.Add(id, actionId.Value);
+
+            var metaDataCache = MetaData(actionId.Value);
+            _metaData.SetEntityName(actionId.Value,
+                Loc.GetString("polymorph-self-action-name", ("target", entProto.Name)), metaDataCache);
+            _metaData.SetEntityDescription(actionId.Value,
+                Loc.GetString("polymorph-self-action-description", ("target", entProto.Name)), metaDataCache);
 
             if (!_actions.TryGetActionData(actionId, out var baseAction))
                 return;
 
-            baseAction.Icon = new SpriteSpecifier.EntityPrototype(polyproto.Entity);
+            baseAction.Icon = new SpriteSpecifier.EntityPrototype(polyProto.Configuration.Entity);
             if (baseAction is InstantActionComponent action)
-                action.Event = new PolymorphActionEvent { Prototype = polyproto };
+                action.Event = new PolymorphActionEvent(prototype: polyProto);
         }
 
-        [PublicAPI]
-        public void RemovePolymorphAction(string id, EntityUid target, PolymorphableComponent? component = null)
+        public void RemovePolymorphAction(ProtoId<PolymorphPrototype> id, Entity<PolymorphableComponent> target)
         {
-            if (!Resolve(target, ref component, false))
+            if (target.Comp.PolymorphActions == null)
                 return;
-            if (component.PolymorphActions == null)
-                return;
-            if (component.PolymorphActions.TryGetValue(id, out var val))
+
+            if (target.Comp.PolymorphActions.TryGetValue(id, out var val))
                 _actions.RemoveAction(target, val);
-        }
-
-        public override void Update(float frameTime)
-        {
-            base.Update(frameTime);
-
-            var query = EntityQueryEnumerator<PolymorphedEntityComponent>();
-            while (query.MoveNext(out var uid, out var comp))
-            {
-                comp.Time += frameTime;
-
-                if (!_proto.TryIndex(comp.Prototype, out PolymorphPrototype? proto))
-                {
-                    _sawmill.Error($"{nameof(PolymorphSystem)} encountered an improperly initialized polymorph component while updating. Entity {ToPrettyString(uid)}. Prototype: {comp.Prototype}");
-                    RemCompDeferred(uid, comp);
-                    continue;
-                }
-
-                if (proto.Duration != null && comp.Time >= proto.Duration)
-                {
-                    Revert(uid, comp);
-                    continue;
-                }
-
-                if (!TryComp<MobStateComponent>(uid, out var mob))
-                    continue;
-
-                if (proto.RevertOnDeath && _mobState.IsDead(uid, mob) ||
-                    proto.RevertOnCrit && _mobState.IsIncapacitated(uid, mob))
-                {
-                    Revert(uid, comp);
-                }
-            }
-
-            UpdateCollide();
         }
     }
 }

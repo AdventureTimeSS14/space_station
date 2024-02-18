@@ -33,6 +33,8 @@
   - type: Speech
     speechSounds: Lizard
     speechVerb: Reptilian
+  - type: TypingIndicator
+    proto: lizard
   - type: Vocal
     sounds:
       Male: UnisexReptilian
@@ -66,9 +68,11 @@
     speaks:
     - GalacticCommon
     - Draconic
+    - CintaTaj
     understands:
     - GalacticCommon
     - Draconic
+    - CintaTaj
 
 - type: entity
   parent: BaseSpeciesDummy

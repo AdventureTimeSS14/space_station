@@ -6,195 +6,198 @@
     "x": 8,
     "y": 8
   },
-  "states": [
-    {
-      "name": "CustomId"
-    },
-      {
-          "name": "JobIconBorg"
-      },
-    {
-      "name": "JobIconDetective"
-    },
-    {
-      "name": "JobIconQuarterMaster"
-    },
-    {
-      "name": "JobIconBotanist"
-    },
-    {
-      "name": "JobIconBoxer"
-    },
-    {
-      "name": "JobIconAtmosphericTechnician"
-    },
-    {
-      "name": "JobIconNanotrasen"
-    },
-    {
-      "name": "JobIconPrisoner"
-    },
-    {
-      "name": "JobIconJanitor"
-    },
-    {
-      "name": "JobIconChemist"
-    },
-    {
-      "name": "JobIconStationEngineer"
-    },
-    {
-      "name": "JobIconSecurityOfficer"
-    },
-    {
-      "name": "NoId"
-    },
-    {
-      "name": "JobIconChiefMedicalOfficer"
-    },
-    {
-      "name": "JobIconRoboticist"
-    },
-    {
-      "name": "JobIconChaplain"
-    },
-    {
-      "name": "JobIconLawyer"
-    },
-    {
-      "name": "Unknown"
-    },
-    {
-      "name": "JobIconLibrarian"
-    },
-    {
-      "name": "JobIconCargoTechnician"
-    },
-    {
-      "name": "JobIconScientist"
-    },
-    {
-      "name": "JobIconResearchAssistant"
-    },
-    {
-      "name": "JobIconGeneticist"
-    },
-    {
-      "name": "JobIconClown"
-    },
-    {
-      "name": "JobIconCaptain"
-    },
-    {
-      "name": "JobIconHeadOfPersonnel"
-    },
-    {
-      "name": "JobIconVirologist"
-    },
-    {
-      "name": "JobIconShaftMiner"
-    },
-    {
-      "name": "JobIconPassenger"
-    },
-    {
-      "name": "JobIconChiefEngineer"
-    },
-    {
-      "name": "JobIconBartender"
-    },
-    {
-      "name": "JobIconHeadOfSecurity"
-    },
-    {
-      "name": "JobIconBrigmedic"
-    },
-    {
-      "name": "JobIconMedicalDoctor"
-    },
-    {
-      "name": "JobIconParamedic"
-    },
-    {
-      "name": "JobIconChef"
-    },
-    {
-      "name": "JobIconWarden"
-    },
-    {
-      "name": "JobIconResearchDirector"
-    },
-    {
-      "name": "JobIconMime"
-    },
-    {
-      "name": "JobIconMusician"
-    },
-    {
-      "name": "JobIconReporter"
-    },
-    {
-      "name": "JobIconPsychologist"
-    },
-    {
-      "name": "JobIconMedicalIntern"
-    },
-    {
-      "name": "JobIconTechnicalAssistant"
-    },
-    {
-      "name": "JobIconServiceWorker"
-    },
-    {
-      "name": "JobIconSecurityCadet"
-    },
-    {
-      "name": "JobIconIAA"
-    },
-    {
-      "name": "JobIconZombie"
-    },
-    {
-      "name": "JobIconZookeeper"
-    },
-    {
-      "name": "JobIconADTBlueShieldOfficer"
-    },
-    {
-      "name": "JobIconMagistrat"
-    },
-    {
-      "name": "JobIconSeniorEngineer"
-    },
-    {
-      "name": "JobIconSeniorResearcher"
-    },
-    {
-      "name": "JobIconSeniorPhysician"
-    },
-    {
-        "name": "JobIconSeniorOfficer"
-    },
-    {
-        "name": "JobIconADTInvestigator"
-    },
-      {
-          "name": "Revolutionary"
-      },
-      {
-          "name": "HeadRevolutionary"
-      },
-      {
-          "name": "Syndicate"
-      },
-      {
-          "name": "MindShield"
-      },
-      {
-        "name": "JobADTIconSecurityCyborg"
-      },
-      {
-        "name": "JobIconChangeling"
-      }
-  ]
+    "states": [
+        {
+            "name": "CustomId"
+        },
+        {
+            "name": "JobIconBorg"
+        },
+        {
+            "name": "JobIconDetective"
+        },
+        {
+            "name": "JobIconQuarterMaster"
+        },
+        {
+            "name": "JobIconBotanist"
+        },
+        {
+            "name": "JobIconBoxer"
+        },
+        {
+            "name": "JobIconAtmosphericTechnician"
+        },
+        {
+            "name": "JobIconNanotrasen"
+        },
+        {
+            "name": "JobIconPrisoner"
+        },
+        {
+            "name": "JobIconJanitor"
+        },
+        {
+            "name": "JobIconChemist"
+        },
+        {
+            "name": "JobIconStationEngineer"
+        },
+        {
+            "name": "JobIconSecurityOfficer"
+        },
+        {
+            "name": "NoId"
+        },
+        {
+            "name": "JobIconChiefMedicalOfficer"
+        },
+        {
+            "name": "JobIconRoboticist"
+        },
+        {
+            "name": "JobIconChaplain"
+        },
+        {
+            "name": "JobIconLawyer"
+        },
+        {
+            "name": "Unknown"
+        },
+        {
+            "name": "JobIconLibrarian"
+        },
+        {
+            "name": "JobIconCargoTechnician"
+        },
+        {
+            "name": "JobIconScientist"
+        },
+        {
+            "name": "JobIconResearchAssistant"
+        },
+        {
+            "name": "JobIconGeneticist"
+        },
+        {
+            "name": "JobIconClown"
+        },
+        {
+            "name": "JobIconCaptain"
+        },
+        {
+            "name": "JobIconHeadOfPersonnel"
+        },
+        {
+            "name": "JobIconVirologist"
+        },
+        {
+            "name": "JobIconShaftMiner"
+        },
+        {
+            "name": "JobIconPassenger"
+        },
+        {
+            "name": "JobIconChiefEngineer"
+        },
+        {
+            "name": "JobIconBartender"
+        },
+        {
+            "name": "JobIconHeadOfSecurity"
+        },
+        {
+            "name": "JobIconBrigmedic"
+        },
+        {
+            "name": "JobIconMedicalDoctor"
+        },
+        {
+            "name": "JobIconParamedic"
+        },
+        {
+            "name": "JobIconChef"
+        },
+        {
+            "name": "JobIconWarden"
+        },
+        {
+            "name": "JobIconResearchDirector"
+        },
+        {
+            "name": "JobIconMime"
+        },
+        {
+            "name": "JobIconMusician"
+        },
+        {
+            "name": "JobIconReporter"
+        },
+        {
+            "name": "JobIconPsychologist"
+        },
+        {
+            "name": "JobIconMedicalIntern"
+        },
+        {
+            "name": "JobIconTechnicalAssistant"
+        },
+        {
+            "name": "JobIconServiceWorker"
+        },
+        {
+            "name": "JobIconSecurityCadet"
+        },
+        {
+            "name": "JobIconIAA"
+        },
+        {
+            "name": "JobIconZombie"
+        },
+        {
+            "name": "JobIconZookeeper"
+        },
+        {
+            "name": "JobIconADTBlueShieldOfficer"
+        },
+        {
+            "name": "JobIconMagistrat"
+        },
+        {
+            "name": "JobIconSeniorEngineer"
+        },
+        {
+            "name": "JobIconSeniorResearcher"
+        },
+        {
+            "name": "JobIconSeniorPhysician"
+        },
+        {
+            "name": "JobIconSeniorOfficer"
+        },
+        {
+            "name": "JobIconADTInvestigator"
+        },
+        {
+            "name": "Revolutionary"
+        },
+        {
+            "name": "HeadRevolutionary"
+        },
+        {
+            "name": "Syndicate"
+        },
+        {
+            "name": "MindShield"
+        },
+        {
+            "name": "JobADTIconSecurityCyborg"
+        },
+        {
+            "name": "JobIconChangeling"
+        },
+        {
+            "name": "JobIconVisitor"
+        }
+    ]
 }

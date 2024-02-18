@@ -20,17 +20,17 @@
     energy: 7.5
     color: "#cb5b7e"
     castShadows: false
-  - type: TileSpawnAnomaly
-    floorTileId: FloorChromite
-  - type: EntitySpawnAnomaly
-    superCriticalSpawns:
-     - ADTMobWrecker
-    spawns:
-    - ADTMobDistorted
-    - ADTMobEcho
-    - ADTMobGrant
-    - ADTMobHunter
-    - ADTMobSoldier
+  #- type: TileSpawnAnomaly
+  #  floorTileId: FloorChromite
+  #- type: EntitySpawnAnomaly
+  #  superCriticalSpawns:
+  #   - ADTMobWrecker
+  #  spawns:
+  #  - ADTMobDistorted
+  #  - ADTMobEcho
+  #  - ADTMobGrant
+  #  - ADTMobHunter
+  #  - ADTMobSoldier
   - type: EmitSoundOnSpawn
     sound:
       path: /Audio/Voice/Human/femalescream_1.ogg

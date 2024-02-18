@@ -31,7 +31,7 @@
     shoes: ClothingShoesColorWhite
     id: ParamedicPDA
     ears: ClothingHeadsetMedical
-    belt: ClothingBeltParamedicFilled
+    #belt: ClothingBeltParamedicFilled
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear

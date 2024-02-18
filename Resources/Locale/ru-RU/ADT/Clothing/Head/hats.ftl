@@ -45,15 +45,15 @@ ent-ADTClothingHeadHatsBavarianHatGreenBorder = баварская шляпа с
     .suffix = { "Октоберфест" }
 
 ent-ADTClothingHeadHatsBavarianHatBlue = синяя егерская шляпа
-    .desc = Егерская шляпа синего цвета, с пером. 
+    .desc = Егерская шляпа синего цвета, с пером.
     .suffix = { "Октоберфест" }
 
 ent-ADTClothingHeadHatsBavarianHatGreen = зеленая егерская шляпа
-    .desc = Егерская шляпа зеленого цвета, с пером. 
+    .desc = Егерская шляпа зеленого цвета, с пером.
     .suffix = { "Октоберфест" }
 
 ent-ADTClothingHeadHatsBavarianHatRed = красная егерская шляпа
-    .desc = Егерская шляпа красного цвета, с пером. 
+    .desc = Егерская шляпа красного цвета, с пером.
     .suffix = { "Октоберфест" }
 
 ent-ADTClothingHeadHairPin = золотая заколка
@@ -86,7 +86,7 @@ ent-ADTClothingHeadHatsSyndieCap = синди колпак
     .suffix = { "День рождения сервера" }
 
 ent-ADTClothingHeadHatsCinnamonFlatCap = коричневая плоская кепка
-    .desc = Кепка с закругленной тульей и короткими полями. Сшита из плотной ткани, что делает её идеальной для прохладной погоды. Производство компании "Modeling Agency Dar-Vaxed" 
+    .desc = Кепка с закругленной тульей и короткими полями. Сшита из плотной ткани, что делает её идеальной для прохладной погоды. Производство компании "Modeling Agency Dar-Vaxed"
 
 ent-ADTClothingHeadHatsGreyFlatCap = серая плоская кепка
     .desc = { ent-ADTClothingHeadHatsCinnamonFlatCap.desc }
@@ -104,7 +104,7 @@ ent-ADTClothingHeadHatsBeretAtmos = берет атмосферного техн
 ent-ADTClothingHeadHatsBeretHOP = берет главы персонала
     .desc = Синий берет с вышитой командирской эмблемой. Холодная рассудительность и твердая рука - вот что главное.
 
-ent-ADTClothingHeadHatsBeretSOO = берет офицера специальных операций 
+ent-ADTClothingHeadHatsBeretSOO = берет офицера специальных операций
     .desc = Серый берет с вышитой эмблемой ОБР. Покажи, кто здесь главный!
 
 ent-ADTClothingHeadHatsBeretSupply = берет отдела снабжения
@@ -153,7 +153,7 @@ ent-ADTClothingHeadSecAuditorCap = фуражка аудитора СБ
 
 ent-ClothingHeadHelmetJanitorBombSuit = саперный шлем уборщика
     .desc = Защитный головной убор на случай, когда уборка становится по-настоящему взрывной.
-    .suffix = { "НЕ МАППЕРИТЬ" }    
+    .suffix = { "НЕ МАППЕРИТЬ" }
 
 ent-ADTClothingHeadSportHat = зимняя шапка STEP "Cold"
     .desc = Тёмная тёплая шапка для занятий в холодную погоду.
@@ -161,3 +161,6 @@ ent-ADTClothingHeadSportRoseCap = кепка STEP "Rose"
     .desc = Кепка с ярким козырьком из серии "Rose".
 ent-ADTClothingHeadSportHatStep = cпортивная шапка-пипо "STEP"
     .desc = Футуристичная шапка-пипо серии "STEP" в полоску.
+
+ent-ADTClothingHeadUrsHat = шапка урса
+    .desc = Тёплая шапка ушанка.

@@ -475,6 +475,13 @@
     Cloth: 300
 
 - type: latheRecipe
+  id: ClothingUniformJumpsuitQMFormal
+  result: ClothingUniformJumpsuitQMFormal
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
   id: ClothingUniformJumpskirtQM
   result: ClothingUniformJumpskirtQM
   completetime: 4
@@ -607,7 +614,7 @@
   result: ClothingOuterWinterCap
   completetime: 3.2
   materials:
-    Cloth: 300
+    Cloth: 500
     Durathread: 300
 
 - type: latheRecipe
@@ -615,7 +622,7 @@
   result: ClothingOuterWinterCE
   completetime: 3.2
   materials:
-    Cloth: 300
+    Cloth: 500
     Durathread: 300
 
 - type: latheRecipe
@@ -623,7 +630,7 @@
   result: ClothingOuterWinterCentcom
   completetime: 3.2
   materials:
-    Cloth: 300
+    Cloth: 500
     Durathread: 300
 
 - type: latheRecipe
@@ -631,15 +638,15 @@
   result: ClothingOuterWinterCMO
   completetime: 3.2
   materials:
-    Cloth: 300
-    Durathread: 300
+    Cloth: 500
+    Durathread: 500
 
 - type: latheRecipe
   id: ClothingOuterWinterHoP
   result: ClothingOuterWinterHoP
   completetime: 3.2
   materials:
-    Cloth: 300
+    Cloth: 500
     Durathread: 300
 
 - type: latheRecipe
@@ -647,7 +654,7 @@
   result: ClothingOuterWinterHoS
   completetime: 3.2
   materials:
-    Cloth: 300
+    Cloth: 500
     Durathread: 300
 
 - type: latheRecipe
@@ -655,7 +662,7 @@
   result: ClothingOuterWinterQM
   completetime: 3.2
   materials:
-    Cloth: 300
+    Cloth: 500
     Durathread: 300
 
 - type: latheRecipe
@@ -663,8 +670,8 @@
   result: ClothingOuterWinterRD
   completetime: 3.2
   materials:
-    Cloth: 300
-    Durathread: 300
+    Cloth: 500
+    Durathread: 400
 
 - type: latheRecipe
   id: ClothingNeckMantleCap
@@ -731,6 +738,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 300
 
 - type: latheRecipe
   id: ClothingOuterWinterClown
@@ -738,6 +746,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 300
 
 - type: latheRecipe
   id: ClothingOuterWinterMime
@@ -745,6 +754,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 300
 
 - type: latheRecipe
   id: ClothingOuterWinterCoat
@@ -752,6 +762,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 300
 
 - type: latheRecipe
   id: ClothingOuterWinterJani
@@ -759,6 +770,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 400
 
 - type: latheRecipe
   id: ClothingOuterWinterBar
@@ -766,6 +778,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 300
 
 - type: latheRecipe
   id: ClothingOuterWinterChef
@@ -773,6 +786,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 300
 
 - type: latheRecipe
   id: ClothingOuterWinterHydro
@@ -780,6 +794,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 300
 
 - type: latheRecipe
   id: ClothingOuterWinterAtmos
@@ -787,6 +802,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 300
 
 - type: latheRecipe
   id: ClothingOuterWinterEngi
@@ -794,6 +810,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 300
 
 - type: latheRecipe
   id: ClothingOuterWinterCargo
@@ -801,6 +818,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 300
 
 - type: latheRecipe
   id: ClothingOuterWinterMiner
@@ -808,6 +826,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 300
 
 - type: latheRecipe
   id: ClothingOuterWinterMed
@@ -815,6 +834,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 400
 
 - type: latheRecipe
   id: ClothingOuterWinterPara
@@ -822,6 +842,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 450
 
 - type: latheRecipe
   id: ClothingOuterWinterChem
@@ -829,6 +850,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 500
 
 - type: latheRecipe
   id: ClothingOuterWinterGen
@@ -836,6 +858,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 400
 
 - type: latheRecipe
   id: ClothingOuterWinterViro
@@ -843,6 +866,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 400
 
 - type: latheRecipe
   id: ClothingOuterWinterSci
@@ -850,6 +874,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 400
 
 - type: latheRecipe
   id: ClothingOuterWinterRobo
@@ -857,6 +882,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 300
 
 - type: latheRecipe
   id: ClothingOuterWinterSec
@@ -864,6 +890,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 300
 
 - type: latheRecipe
   id: ClothingOuterWinterSyndie
@@ -871,6 +898,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 300
 
 - type: latheRecipe
   id: ClothingOuterWinterSyndieCap
@@ -878,6 +906,7 @@
   completetime: 3.2
   materials:
     Cloth: 500
+    Durathread: 300
 
 - type: latheRecipe
   id: ClothingHeadHatCaptain
@@ -954,6 +983,14 @@
 - type: latheRecipe
   id: ClothingHeadHatBeretEngineering
   result: ClothingHeadHatBeretEngineering
+  completetime: 2
+  materials:
+    Cloth: 100
+    Durathread: 50
+
+- type: latheRecipe
+  id: ClothingHeadHatBeretQM
+  result: ClothingHeadHatBeretQM
   completetime: 2
   materials:
     Cloth: 100
@@ -1038,7 +1075,7 @@
   completetime: 2
   materials:
     Cloth: 100
-
+# Ties
 - type: latheRecipe
   id: ClothingNeckTieRed
   result: ClothingNeckTieRed
@@ -1056,6 +1093,62 @@
 - type: latheRecipe
   id: ClothingNeckTieSci
   result: ClothingNeckTieSci
+  completetime: 2
+  materials:
+    Cloth: 50
+# Scarfs
+- type: latheRecipe
+  id: ClothingNeckScarfStripedGreen
+  result: ClothingNeckScarfStripedGreen
+  completetime: 2
+  materials:
+    Cloth: 50
+
+- type: latheRecipe
+  id: ClothingNeckScarfStripedBlue
+  result: ClothingNeckScarfStripedBlue
+  completetime: 2
+  materials:
+    Cloth: 50
+
+- type: latheRecipe
+  id: ClothingNeckScarfStripedRed
+  result: ClothingNeckScarfStripedRed
+  completetime: 2
+  materials:
+    Cloth: 50
+
+- type: latheRecipe
+  id: ClothingNeckScarfStripedBrown
+  result: ClothingNeckScarfStripedBrown
+  completetime: 2
+  materials:
+    Cloth: 50
+
+- type: latheRecipe
+  id: ClothingNeckScarfStripedLightBlue
+  result: ClothingNeckScarfStripedLightBlue
+  completetime: 2
+  materials:
+    Cloth: 50
+
+- type: latheRecipe
+  id: ClothingNeckScarfStripedOrange
+  result: ClothingNeckScarfStripedOrange
+  completetime: 2
+  materials:
+    Cloth: 50
+
+- type: latheRecipe
+  id: ClothingNeckScarfStripedBlack
+  result: ClothingNeckScarfStripedBlack
+  completetime: 2
+  materials:
+    Cloth: 50
+
+- type: latheRecipe
+  id: ClothingNeckScarfStripedPurple
+  result: ClothingNeckScarfStripedPurple
   completetime: 2
   materials:
     Cloth: 50

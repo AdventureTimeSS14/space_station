@@ -26,6 +26,7 @@
     belt: ClothingBeltUtilityEngineering
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
+    pocket2: BorgTranslatorImplanter # Для двоичного языка
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtRoboticist
