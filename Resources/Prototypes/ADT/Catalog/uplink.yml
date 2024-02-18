@@ -451,8 +451,20 @@
   icon: { sprite: Objects/Specific/Medical/implanter.rsi, state: implanter0 }
   productEntity: CodeSpeakImplanter
   cost:
+    Telecrystal: 2
+  categories:
+    - UplinkImplants
+
+- type: listing
+  id: ADTUplinkUnilangImplanter
+  name: uplink-unilang-implanter-name
+  description: uplink-unilang-implanter-desc
+  icon: { sprite: Objects/Specific/Medical/implanter.rsi, state: implanter0 }
+  productEntity: SyndUniversalTranslatorImplanter
+  cost:
     Telecrystal: 5
   categories:
     - UplinkImplants
+
 
 

@@ -64,6 +64,13 @@
   - type: CameraRecoil
   - type: Examiner
   - type: CanHostGuardian
+  - type: LanguageSpeaker
+    speaks:
+    - GalacticCommon
+    - Nekomimetic
+    understands:
+    - GalacticCommon
+    - Nekomimetic
   - type: NpcFactionMember
     factions:
     - NanoTrasen

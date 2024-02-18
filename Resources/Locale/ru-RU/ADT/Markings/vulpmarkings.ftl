@@ -1,7 +1,8 @@
 marking-ADTVulpkanintail1 = Хвост 1
 marking-ADTVulpkanintail2 = Хвост 2
-
+marking-ADTVulpkanintailAll = Весь хвост
 marking-ADTVulpkaninear = Окрас ушей
+marking-ADTVulpkaninearBack = Окраска ушей
 marking-ADTVulpkaninmuzzle = Окрас лица
 marking-ADTVulpkaninmuzzleear = Окрас лица и ушей
 marking-ADTVulpkaninnose = Окрас носа
@@ -18,8 +19,3 @@ marking-ADTVulpkaninfullbelly = Окрас живота
 marking-ADTVulpkaninpointsfade = Окрас лап
 marking-ADTVulpkaninpointsfadebelly = Пятнистый окрас лап, груди и живота
 marking-ADTVulpkaninsharppoints = Резкие пятна
-marking-ADTVulpkanintail2 = Хвост 2
-marking-ADTVulpkanintail2 = Хвост 2
-marking-ADTVulpkanintail2 = Хвост 2
-marking-ADTVulpkanintail2 = Хвост 2
-marking-ADTVulpkanintail2 = Хвост 2

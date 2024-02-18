@@ -12,6 +12,10 @@
             "directions": 4
         },
         {
+            "name": "ear_back",
+            "directions": 4
+        },
+        {
             "name": "muzzle",
             "directions": 4
         },
