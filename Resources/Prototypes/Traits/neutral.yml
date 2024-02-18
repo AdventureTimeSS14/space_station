@@ -15,7 +15,6 @@
     - type: LizardAccent
     - type: MothAccent
     - type: ReplacementAccent
-    - type: OwOAccent
       accent: dwarf
 
 - type: trait
