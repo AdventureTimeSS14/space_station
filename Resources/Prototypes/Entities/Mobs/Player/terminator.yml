@@ -212,3 +212,9 @@
   - type: AutoImplant
     implants:
     - DeathAcidifierImplant
+  - type: SizeAttributeWhitelist # Frontier
+    tall: true
+    tallscale: 1.1
+  - type: SizeAttribute # Frontier
+    tall: true
+

@@ -15,4 +15,33 @@
     - type: LizardAccent
     - type: MothAccent
     - type: ReplacementAccent
+    - type: OwOAccent
       accent: dwarf
+
+- type: trait
+  id: Tall
+  name: trait-tall-name
+  descriction: trait-tall-desc
+  whitelist:
+    components:
+      - SizeAttributeWhitelist
+  blacklist:
+    components:
+      - SizeAttribute
+  components:
+    - type: SizeAttribute
+      tall: true
+
+- type: trait
+  id: Short
+  name: trait-short-name
+  descriction: trait-short-desc
+  whitelist:
+    components:
+      - SizeAttributeWhitelist
+  blacklist:
+    components:
+      - SizeAttribute
+  components:
+    - type: SizeAttribute
+      short: true

@@ -49,6 +49,12 @@
     - GalacticCommon
     understands:
     - GalacticCommon
+  - type: SizeAttributeWhitelist # Frontier
+    tall: true
+    tallscale: 1.1
+    short: true
+    shortscale: 0.9
+
 
 # Used for mobs that have health and can take damage.
 - type: entity
