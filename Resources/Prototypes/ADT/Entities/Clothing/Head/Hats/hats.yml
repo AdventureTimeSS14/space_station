@@ -314,7 +314,7 @@
   description: A cap with rounded crown and short margins. Sewn from thick fabric, that makes it perfect for cold weather. Made by company "Modeling Agency Dar-Vaxed".
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Head/Hats/cinnamon_flat_cap.rsi 
+    sprite: ADT/Clothing/Head/Hats/cinnamon_flat_cap.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/cinnamon_flat_cap.rsi #спрайты от prazat911
 
@@ -325,7 +325,7 @@
   description: A cap with rounded crown and short margins. Sewn from thick fabric, that makes it perfect for cold weather. Made by company "Modeling Agency Dar-Vaxed".
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Head/Hats/grey_flat_cap.rsi 
+    sprite: ADT/Clothing/Head/Hats/grey_flat_cap.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/grey_flat_cap.rsi #спрайты от prazat911
 
@@ -351,7 +351,7 @@
     sprite: ADT/Clothing/Head/Hats/beret_HOP.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/beret_HOP.rsi
-  
+
 - type: entity
   parent: ClothingHeadBase
   id: ADTClothingHeadHatsBeretSOO
@@ -558,3 +558,15 @@
     sprite: ADT/Clothing/Head/Hats/sport_step_hat.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/sport_step_hat.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadUrsHat
+  name: urs hat
+  description: A futuristic looking striped hat from "STEP" clothing series.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/urs_hat.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/urs_hat.rsi
+

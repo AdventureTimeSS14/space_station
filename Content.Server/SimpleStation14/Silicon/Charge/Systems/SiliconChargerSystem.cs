@@ -283,7 +283,7 @@ public sealed class SiliconChargerSystem : EntitySystem
         var damage = new DamageSpecifier(_prototypes.Index<DamageTypePrototype>(chargerComp.DamageType), frameTime * chargerComp.ChargeMulti / 100);
         var damageDealt = _damageable.TryChangeDamage(entity, damage, false, true, damageComp, chargerUid);
 
-        if (damageDealt != null && damageDealt.Total > 0 && chargerComp.WarningTime < _timing.CurTime)
+        if (damageDealt != null && chargerComp.WarningTime < _timing.CurTime)
         {
             var popupBurn = Loc.GetString(chargerComp.OverheatString);
             _popup.PopupEntity(popupBurn, entity, entity, PopupType.MediumCaution);

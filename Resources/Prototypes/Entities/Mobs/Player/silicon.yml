@@ -220,8 +220,8 @@
         name: Keys
         whitelist:
           requireAll: true
-          tags:
-          - VehicleKey
+        #  tags:
+        #  - VehicleKey
         insertSound:
           path: /Audio/Effects/Vehicle/vehiclestartup.ogg
           params:
@@ -368,7 +368,7 @@
       - MMIFilled
       borg_module:
       - BorgModuleAdvancedTool
-      - BorgModuleGasAnalyzer
+      #- BorgModuleGasAnalyzer
       - BorgModuleConstruction
   - type: ItemSlots
     slots:

@@ -8,8 +8,8 @@
       sprite: ADT/Objects/Weapons/Grenades/smokegrenades.rsi
     - type: SmokeOnTrigger
       spreadAmount: 70
-      time: 40
-      sound: /Audio/Effects/smoke.ogg
+      #time: 40
+      #sound: /Audio/Effects/smoke.ogg
     - type: DeleteOnTrigger
     - type: Appearance
     - type: OnUseTimerTrigger
@@ -31,8 +31,8 @@
       sprite: ADT/Objects/Weapons/Grenades/ssmokegreandes.rsi
     - type: SmokeOnTrigger
       spreadAmount: 120
-      time: 60
-      sound: /Audio/Effects/smoke.ogg
+      #time: 60
+      #sound: /Audio/Effects/smoke.ogg
     - type: DeleteOnTrigger
     - type: Appearance
     - type: OnUseTimerTrigger

@@ -53,8 +53,10 @@
       speaks:
       - GalacticCommon
       - SikTaj
+      - CintaTaj
       understands:
       - GalacticCommon
       - SikTaj
+      - CintaTaj
 
 
