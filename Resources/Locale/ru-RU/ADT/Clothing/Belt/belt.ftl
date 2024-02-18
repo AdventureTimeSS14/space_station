@@ -22,3 +22,10 @@ ent-ADTClothingBeltQuiverCupidon = колчан купидона
 
 ent-ClothingBeltChef = пояс шеф-повара
     .desc = Пояс для быстрого доступа к ножу, соусам и приправам.
+
+ent-ClothingBeltMedicalEMT = пояс парамедика
+    .desc = Пояс для быстрого доступа к медикаментам в экстренных случаях.
+
+ent-ClothingBeltMedicalEMTFilled = пояс парамедика
+    .desc = Пояс для быстрого доступа к медикаментам в экстренных случаях.
+    .suffix = { "Заполненный" }

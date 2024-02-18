@@ -1,7 +1,7 @@
 - type: gameMap
   id: CorvaxGelta
   mapName: 'Gelta Station'
-  mapPath: /Maps/corvax_gelta.yml
+  mapPath: /Maps/CorvaxMaps/corvax_gelta.yml
   minPlayers: 40
   stations:
     Gelta:
