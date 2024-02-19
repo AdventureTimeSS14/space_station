@@ -9,6 +9,4 @@ public sealed partial class TraderSpawnRuleComponent : Component
 {
     [DataField("TraderShuttlePath")]
     public string TraderShuttlePath = "Maps/Shuttles/trader.yml";
-    [DataField("gameRuleProto", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
-    public string GameRuleProto = "Trader";
 }
