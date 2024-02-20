@@ -502,3 +502,16 @@
       minimumPlayers: 20
       weight: 5
     - type: MobReplacementRule
+
+- type: entity
+  id: TraderSpawn
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-trader-spawn-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    weight: 15
+    minimumPlayers: 45
+  - type: TraderSpawnRule

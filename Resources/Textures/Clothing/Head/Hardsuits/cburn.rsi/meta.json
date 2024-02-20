@@ -42,6 +42,22 @@
     {
       "name": "inhand-right-unshaded",
       "directions": 4
+    },
+    {
+      "name": "off-equipped-HELMET",
+      "directions": 4
+    },
+    {
+      "name": "on-equipped-HELMET",
+      "directions": 4
+    },
+    {
+      "name": "off-equipped-HELMET-vulp",
+      "directions": 4
+    },
+    {
+      "name": "on-equipped-HELMET-vulp",
+      "directions": 4
     }
   ]
 }
