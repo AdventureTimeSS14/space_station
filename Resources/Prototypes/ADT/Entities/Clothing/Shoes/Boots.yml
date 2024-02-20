@@ -396,7 +396,7 @@
 #берцы СССП
 
 - type: entity
-  parent: ClothingShoesMilitaryBase
+  parent: ClothingShoesBootsJack
   id: ADTClothingShoesBootsUSSPArmy
   name: USSP combat boots
   description: Robust combat boots for combat scenarios or combat situations. All combat, all the time.
@@ -409,4 +409,4 @@
   - type: ContainerFill
     containers:
       item:
-      - CombatKnife
+      - ADTUSSPCombatKnifeBarzai

@@ -253,3 +253,21 @@
       - id: ForensicScanner
       - id: ADTSpaceLaw
       - id: Flash
+
+#РКС-2 - рюкзак СССП
+
+- type: entity
+  parent: ClothingBackpack
+  id: ADTClothingBackpackRKS2
+  name: backpack "RKS-2"
+  description: combined arms backpack
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Back/backpack_RKS2.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+  - type: Storage
+    grid:
+    - 0,0,7,3
+    maxItemSize: Huge
