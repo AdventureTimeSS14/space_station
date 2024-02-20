@@ -179,7 +179,7 @@ public sealed partial class ChangelingComponent : Component
     /// How fast the changeling will turn visible from movement when using chameleon skin.
     /// </summary>
     [DataField]
-    public float ChameleonSkinMovementVisibilityRate = 0.10f;
+    public float ChameleonSkinMovementVisibilityRate = 0.60f;
     #endregion
 
     #region Dissonant Shriek Ability
