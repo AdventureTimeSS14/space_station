@@ -260,7 +260,7 @@
     shoes: ADTClothingShoesBootsMagERT
     id: CBURNPDA
     pocket1: RadioHandheld
-    pocket2: WeaponLaserGun
+    pocket2: WeaponPulsePistol
     suitstorage: OxygenTankFilled
     belt: ClothingBeltBandolier
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear

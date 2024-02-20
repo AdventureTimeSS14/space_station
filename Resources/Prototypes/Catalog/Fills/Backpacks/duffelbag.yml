@@ -15,7 +15,7 @@
 
 - type: entity
   id: ClothingBackpackDuffelCBURN
-  parent: ClothingBackpackDuffel
+  parent: ClothingBackpackERTSecurity
   name: CBURN duffel bag
   description: A duffel bag containing a variety of biological containment equipment.
   components:
@@ -23,13 +23,21 @@
     contents:
       - id: WeaponShotgunEnforcer
       - id: BoxShotgunIncendiary
-        amount: 3
-      - id: GrenadeFlashBang
+        amount: 2
+      - id: BoxLethalshot
+        amount: 2
       - id: GrenadeFlashBang
         amount: 2
       - id: PillAmbuzolPlus
       - id: PillAmbuzol
         amount: 4
+      - id: AntiPoisonMedipen
+        amount: 2
+      - id: BruteAutoInjector
+        amount: 2
+      - id: BurnAutoInjector
+        amount: 2
+      - id: JawsOfLife
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateMedicalBundle
