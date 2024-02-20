@@ -495,6 +495,7 @@ namespace Content.Shared.CCVar
          */
 
         public static readonly CVarDef<int> ChangelingMinPlayers =
+
             CVarDef.Create("changeling.min_players", 20);
 
         public static readonly CVarDef<int> ChangelingMaxChangelings =

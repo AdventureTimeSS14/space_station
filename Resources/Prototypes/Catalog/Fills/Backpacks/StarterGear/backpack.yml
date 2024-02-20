@@ -289,7 +289,6 @@
           amount: 2
         - id: CombatKnife
         - id: CrowbarRed
-        - id: MagazineMagnum
 
 - type: entity
   noSpawn: true
@@ -520,5 +519,5 @@
       - id: SpeedLoaderMagnumRubber
       - id: SpeedLoaderMagnumRubber
       - id: SpeedLoaderMagnum
-      - id: ADTSmokeGrenade
-      - id: ADTSmokeGrenade
+      - id: SmokeGrenade
+      - id: SmokeGrenade
