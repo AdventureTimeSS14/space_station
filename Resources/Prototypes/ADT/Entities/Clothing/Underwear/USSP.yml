@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUnderwearTopBase
   id: ADTTelnyachkaUSSPUniform
   name: t-shirt vest
   description: A T-shirt with alternating horizontal white stripes and blue stripes
