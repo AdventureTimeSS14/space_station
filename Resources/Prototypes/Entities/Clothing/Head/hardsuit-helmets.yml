@@ -689,20 +689,21 @@
   - type: BreathMask
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/cburn.rsi
-    layers:
-    - state: icon
-    - state: icon-unshaded
-      shader: unshaded
-    - state: light-overlay
-      visible: false
-      shader: unshaded
-      map: [ "light" ]
+    # layers:
+    # - state: icon
+    # - state: icon-unshaded
+    #   shader: unshaded
+    # - state: light-overlay
+    #   visible: false
+    #   shader: unshaded
+    #   map: [ "light" ]
   - type: Clothing
-    clothingVisuals:
-      head:
-      - state: equipped-head
-      - state: equipped-head-unshaded
-        shader: unshaded
+    sprite: Clothing/Head/Hardsuits/cburn.rsi
+    # clothingVisuals:
+    #   head:
+    #   - state: equipped-head
+    #   - state: equipped-head-unshaded
+    #     shader: unshaded
   - type: PointLight
     color: orange
   - type: PressureProtection
