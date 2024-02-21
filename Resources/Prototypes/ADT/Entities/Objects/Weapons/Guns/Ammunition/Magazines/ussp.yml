@@ -1,0 +1,151 @@
+#Магазин для СВЧ
+
+- type: entity
+  id: ADTMagazineSniperSVCH
+  name: magazine SVCH
+  parent: BaseMagazineLightRifle
+  suffix: USSP
+  components:
+  - type: Tag
+    tags:
+      - ADTMagazineSniperSVCH
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeLightRifle
+    proto: CartridgeLightRifle
+    capacity: 10
+  - type: Item
+    size: Tiny
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Guns/Ammunition/Magazine/Sniper/svch_magazine.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: Tag
+  id: ADTMagazineSniperSVCH
+
+#Магазины для ПП
+
+- type: Tag
+  id: ADTMagazineSR3M
+
+- type: Tag
+  id: ADTMagazineSR2M
+
+- type: Tag
+  id: ADTMagazineBizon
+
+- type: entity
+  id: ADTMagazineSR3M
+  name: magazine SR3m
+  parent: BaseMagazineLightRifle
+  suffix: USSP
+  components:
+  - type: Tag
+    tags:
+      - ADTMagazineSR3M
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeLightRifle
+    proto: CartridgeLightRifle
+    capacity: 20
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Guns/Ammunition/Magazine/SMG/sr3m_magazine.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: ADTMagazineBizon
+  name: magazine SR2m
+  parent: BaseMagazineLightRifle
+  suffix: USSP
+  components:
+  - type: Tag
+    tags:
+      - ADTMagazineBizon
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgePistol
+    proto: CartridgePistol
+    capacity: 64
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Guns/Ammunition/Magazine/SMG/bizon_magazine.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: ADTMagazineSR2M
+  name: magazine SR2m
+  parent: BaseMagazineLightRifle
+  suffix: USSP
+  components:
+  - type: Tag
+    tags:
+      - ADTMagazineSR2M
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgePistol
+    proto: CartridgePistol
+    capacity: 20
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Guns/Ammunition/Magazine/SMG/sr2m_magazine.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
