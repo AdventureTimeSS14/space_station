@@ -312,3 +312,17 @@
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 1
+
+#рюкзак детектива
+
+- type: entity
+  parent: ClothingBackpackSecurity
+  id: ClothingBackpackSecurityFilledDetective
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+      - id: BoxForensicPad
+      - id: ForensicScanner
+      - id: ADTSpaceLaw
+      - id: Flash

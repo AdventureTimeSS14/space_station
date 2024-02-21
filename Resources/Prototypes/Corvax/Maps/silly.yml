@@ -1,7 +1,7 @@
 - type: gameMap
   id: CorvaxSilly
   mapName: 'Silly Station'
-  mapPath: /Maps/corvax_silly.yml
+  mapPath: /Maps/CorvaxMaps/corvax_silly.yml
   minPlayers: 0
   maxPlayers: 20
   stations:

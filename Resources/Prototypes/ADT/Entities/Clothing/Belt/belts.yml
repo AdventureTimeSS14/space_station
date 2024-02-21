@@ -264,7 +264,7 @@
   - type: StorageFill
     contents:
         - id: ADTWeaponPistolPMM
-        - id: MagazinePistol
+        - id: ADTMagazinePistolPMM
   - type: Sprite
     sprite: ADT/Clothing/Belt/sec_auditor_holster.rsi
   - type: Clothing
@@ -281,7 +281,7 @@
   - type: StorageFill
     contents:
         - id: ADTWeaponPistolPMM
-        - id: MagazinePistol
+        - id: ADTMagazinePistolPMM
   - type: Sprite
     sprite: ADT/Clothing/Belt/officers_belt_with_holster.rsi
   - type: Clothing

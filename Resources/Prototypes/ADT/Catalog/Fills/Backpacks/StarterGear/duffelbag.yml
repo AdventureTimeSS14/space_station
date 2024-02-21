@@ -115,5 +115,5 @@
   components:
   - type: StorageFill
     contents:
-      - id: ADTSSmokeGrenade
+      - id: SmokeGrenade
         amount: 6

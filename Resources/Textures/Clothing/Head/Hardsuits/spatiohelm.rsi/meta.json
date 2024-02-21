@@ -25,6 +25,10 @@
       "directions": 4
     },
     {
+      "name": "equipped-head-vulp",
+      "directions": 4
+    },
+    {
       "name": "equipped-head-light",
       "directions": 4
     },

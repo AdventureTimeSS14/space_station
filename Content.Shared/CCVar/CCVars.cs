@@ -495,13 +495,14 @@ namespace Content.Shared.CCVar
          */
 
         public static readonly CVarDef<int> ChangelingMinPlayers =
-            CVarDef.Create("changeling.min_players", 15);
+
+            CVarDef.Create("changeling.min_players", 20);
 
         public static readonly CVarDef<int> ChangelingMaxChangelings =
-            CVarDef.Create("changeling.max_lings", 4); // Assuming average server maxes somewhere from like 50-80 people. Upd: У нас генокрады вместе с предателями, куда бля! Порезал в 2 раза лимит.
+            CVarDef.Create("changeling.max_lings", 3); // Assuming average server maxes somewhere from like 50-80 people. Upd: У нас генокрады вместе с предателями, куда бля! Порезал в 2 раза лимит.
 
         public static readonly CVarDef<int> ChangelingPlayersPerChangeling =
-            CVarDef.Create("changeling.players_per_traitor", 10);
+            CVarDef.Create("changeling.players_per_traitor", 15);
 
         public static readonly CVarDef<int> ChangelingMaxPicks =
             CVarDef.Create("changeling.max_picks", 20);
