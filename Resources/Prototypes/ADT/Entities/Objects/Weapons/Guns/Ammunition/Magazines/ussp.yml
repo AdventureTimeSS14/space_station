@@ -149,3 +149,157 @@
     steps: 2
     zeroVisible: false
   - type: Appearance
+
+#Магазины для пулеметов
+
+- type: Tag
+  id: ADTMagazineUSSPLMG
+
+- type: Tag
+  id: ADTMagazineUSSPLMGDrum
+
+- type: entity
+  id: ADTMagazineUSSPLMG
+  name: box of 7.62 for LMG
+  parent: BaseMagazineLightRifle
+  suffix: USSP
+  components:
+  - type: Tag
+    tags:
+      - ADTMagazineUSSPLMG
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeLightRifle
+    proto: CartridgeLightRifle
+    capacity: 100
+  - type: Item
+    size: Normal
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Guns/Ammunition/Magazine/LMG/ussp_lmg_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-5
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: ADTMagazineUSSPLMGDrum
+  name: magazine RPK
+  parent: BaseMagazineRifle
+  suffix: USSP
+  components:
+  - type: Tag
+    tags:
+      - ADTMagazineUSSPLMGDrum
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeRifle
+    proto: CartridgeRifle
+    capacity: 75
+  - type: Item
+    size: Medium
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Guns/Ammunition/Magazine/LMG/rpkdrum_magazine.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+#Магазин 6.5 мм под АК
+
+- type: Tag
+  id: ADTMagazineUSSPAK74
+
+- type: entity
+  id: ADTMagazineUSSPAK74
+  name: magazine ak74
+  parent: BaseMagazineRifle
+  suffix: USSP
+  components:
+  - type: Tag
+    tags:
+      - ADTMagazineUSSPAK74
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeRifle
+    proto: CartridgeRifle
+    capacity: 30
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Guns/Ammunition/Magazine/Rifle/ak74_magazine.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+#Бакелитовый под 7.62
+
+- type: Tag
+  id: ADTMagazineUSSPAKM
+
+- type: entity
+  id: ADTMagazineUSSPAKM
+  name: magazine AKM bacelite
+  parent: BaseMagazineLightRifle
+  suffix: USSP
+  components:
+  - type: Tag
+    tags:
+      - ADTMagazineUSSPAKM
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeLightRifle
+    proto: CartridgeLightRifle
+    capacity: 30
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Guns/Ammunition/Magazine/Rifle/akmbacelite_magazine.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
