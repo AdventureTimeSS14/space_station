@@ -209,7 +209,7 @@
     proto: CartridgeRifle
     capacity: 75
   - type: Item
-    size: Medium
+    size: Normal
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
