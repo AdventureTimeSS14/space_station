@@ -51,6 +51,8 @@ job-name-senior-officer = Офицер-инструктор СБ
 job-name-ADTBlueShieldOfficer = Офицер "Синего Щита"
 job-name-magistrat = Магистрат
 job-name-ADTInvestigator = Следователь СБ
+job-name-ussp-army-private = Военнослужащий СССП
+job-name-ussp-army-officer = Офицер СССП
 
 # Role timers - Make these alphabetical or I cut you
 JobAtmosphericTechnician = Атмосферный техник
@@ -113,3 +115,5 @@ JobADTServiseBorg = Сервисный Киборг
 JobADTJanitorBorg = Киборг Уборщик
 JobADTSecurityCyborg = Киборг СБ
 JobADTRoboticist = Робототехник
+JobUSSPArmyPrivate = Военнослужащий СССП
+JobUSSPArmyOfficer = Офицер СССП

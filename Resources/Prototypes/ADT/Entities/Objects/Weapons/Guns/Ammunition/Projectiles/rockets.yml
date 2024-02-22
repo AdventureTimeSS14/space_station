@@ -40,13 +40,13 @@
   - type: Sprite
     sprite: ADT/Objects/Weapons/Guns/Projectiles/ussp_rocketlauncher.rsi
     layers:
-      - state: schmel
+      - state: heat
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
     maxIntensity: 8
     intensitySlope: 3
-    totalIntensity: 80
+    totalIntensity: 120
     canCreateVacuum: false
   - type: Projectile
     impactEffect: BulletImpactEffectKinetic
@@ -61,6 +61,12 @@
 
 #ракета для Шмеля
 
+- type: Tag
+  id: ADTCartridgeRocketSchmelTermobar
+
+- type: Tag
+  id: ADTCartridgeRocketSapogHEAT
+
 - type: entity
   id: ADTCartridgeRocketSchmelTermobar
   name: Schmel Termobar Rocket
@@ -69,7 +75,7 @@
   components:
     - type: Tag
       tags:
-        - CartridgeRocket
+        - ADTCartridgeRocketSchmelTermobar
     - type: Item
       size: Small
     - type: CartridgeAmmo
@@ -89,7 +95,7 @@
   components:
     - type: Tag
       tags:
-        - CartridgeRocket
+        - ADTCartridgeRocketSapogHEAT
     - type: Item
       size: Small
     - type: CartridgeAmmo
@@ -97,6 +103,6 @@
       deleteOnSpawn: true
     - type: Sprite
       sprite: ADT/Objects/Weapons/Guns/Projectiles/ussp_rocketlauncher.rsi
-      state: schmel2
+      state: heat2
     - type: StaticPrice
       price: 20

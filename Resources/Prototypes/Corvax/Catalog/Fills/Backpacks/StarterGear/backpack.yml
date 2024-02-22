@@ -9,6 +9,8 @@
     - type: StorageFill
       contents:
         - id: BoxSurvival
+        - id: SpaceCash
+          amount: 1000
 
 - type: entity
   noSpawn: true
@@ -19,3 +21,5 @@
       contents:
         - id: BoxSurvivalMedical
         - id: RubberStampPsychologist
+        - id: SpaceCash
+          amount: 750

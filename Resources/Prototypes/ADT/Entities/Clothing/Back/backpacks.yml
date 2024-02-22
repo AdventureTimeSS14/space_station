@@ -108,6 +108,8 @@
         amount: 2
       - id: ADTBookInvestigator
       - id: ADTRubberStampinvestigator
+      - id: SpaceCash
+        amount: 750
 
 - type: entity
   #noSpawn: true
@@ -134,6 +136,8 @@
         amount: 2
       - id: ADTBookInvestigator
       - id: ADTRubberStampinvestigator
+      - id: SpaceCash
+        amount: 750
 
 - type: entity
   #noSpawn: true
@@ -162,6 +166,8 @@
         amount: 2
       - id: ADTBookInvestigator
       - id: ADTRubberStampinvestigator
+      - id: SpaceCash
+        amount: 750
 
 #дамские сумочки
 
@@ -253,6 +259,8 @@
       - id: ForensicScanner
       - id: ADTSpaceLaw
       - id: Flash
+      - id: SpaceCash
+        amount: 750
 
 #РКС-2 - рюкзак СССП
 

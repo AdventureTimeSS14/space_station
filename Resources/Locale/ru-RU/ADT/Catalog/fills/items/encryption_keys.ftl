@@ -6,3 +6,6 @@ ent-ADTEncryptionKeyMerc = ключ шифрования наёмника
 
 ent-ADTEncryptionKeySpec = ключ шифрования спецназа
     .desc = Ключ шифрования.
+
+ent-ADTEncryptionKeyUSSP = ключ шифрования СССП
+    .desc = Ключ шифрования СССП.
