@@ -101,11 +101,11 @@
       #- id: PaperOffice
       #  amount: 20
       - id: ADTInvestigatorBoxFolderBase
-        amount: 2
+        amount: 1
       - id: ADTInvestigatorBoxFolderRed
         amount: 2
       - id: ADTInvestigatorBoxFolderBlue
-        amount: 2
+        amount: 1
       - id: ADTBookInvestigator
       - id: ADTRubberStampinvestigator
       - id: SpaceCash
@@ -129,11 +129,11 @@
       #- id: PaperOffice
       #  amount: 20
       - id: ADTInvestigatorBoxFolderBase
-        amount: 2
+        amount: 1
       - id: ADTInvestigatorBoxFolderRed
         amount: 2
       - id: ADTInvestigatorBoxFolderBlue
-        amount: 2
+        amount: 1
       - id: ADTBookInvestigator
       - id: ADTRubberStampinvestigator
       - id: SpaceCash
@@ -159,11 +159,11 @@
       #- id: MaterialCardboard1
       #  amount: 2
       - id: ADTInvestigatorBoxFolderBase
-        amount: 2
+        amount: 1
       - id: ADTInvestigatorBoxFolderRed
         amount: 2
       - id: ADTInvestigatorBoxFolderBlue
-        amount: 2
+        amount: 1
       - id: ADTBookInvestigator
       - id: ADTRubberStampinvestigator
       - id: SpaceCash
