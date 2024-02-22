@@ -33,5 +33,4 @@
       - id: ForensicScanner
       - id: ADTSpaceLaw
       - id: Flash
-      - id: SpaceCash
-        amount: 750
+      - id: SpaceCash500

@@ -28,8 +28,7 @@
         # - id: BlueShieldBox
         - id: BlueShieldsuit
         - id: OxygenTankFilled
-        - id: SpaceCash
-          amount: 1000
+        - id: SpaceCash1000
     - type: Sprite
       sprite: ADT/Clothing/Back/blueshield_backpack.rsi
 

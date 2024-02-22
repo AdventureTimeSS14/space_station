@@ -6,8 +6,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
-      - id: SpaceCash
-        amount: 500
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -19,8 +18,7 @@
       - id: BoxHug
       - id: RubberStampClown
       - id: CrayonRainbow
-      - id: SpaceCash
-        amount: 750
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -33,8 +31,7 @@
       - id: Flash
       - id: MagazinePistol
       - id: ADTSpaceLaw
-      - id: SpaceCash
-        amount: 750
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -47,8 +44,7 @@
       - id: ForensicPad
       - id: ForensicScanner
       - id: ADTSpaceLaw
-      - id: SpaceCash
-        amount: 750
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -60,8 +56,7 @@
       - id: Flash
       - id: BoxSurvivalSecurity
       - id: ADTSpaceLaw
-      - id: SpaceCash
-        amount: 750
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -71,8 +66,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalMedical
-      - id: SpaceCash
-        amount: 750
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -83,8 +77,7 @@
     contents:
       - id: BoxSurvivalMedical
       - id: EmergencyRollerBedSpawnFolded
-      - id: SpaceCash
-        amount: 750
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -96,8 +89,8 @@
       - id: BoxSurvival
       - id: Flash
       - id: ADTtelescopicBaton
-      - id: SpaceCash
-        amount: 2000
+      - id: SpaceCash1000
+      - id: SpaceCash1000
 
 - type: entity
   noSpawn: true
@@ -109,8 +102,7 @@
       - id: BoxSurvivalEngineering
       - id: Flash
       - id: ADTtelescopicBaton
-      - id: SpaceCash
-        amount: 1200
+      - id: SpaceCash1000
 
 - type: entity
   noSpawn: true
@@ -122,8 +114,7 @@
       - id: BoxSurvival
       - id: Flash
       - id: ADTtelescopicBaton
-      - id: SpaceCash
-        amount: 1200
+      - id: SpaceCash1000
 
 - type: entity
   noSpawn: true
@@ -135,8 +126,7 @@
       - id: BoxSurvival
       - id: Flash
       - id: ADTtelescopicBaton
-      - id: SpaceCash
-        amount: 1200
+      - id: SpaceCash1000
 
 - type: entity
   noSpawn: true
@@ -148,8 +138,7 @@
       - id: BoxSurvivalMedical
       - id: Flash
       - id: ADTtelescopicBaton
-      - id: SpaceCash
-        amount: 1200
+      - id: SpaceCash1000
 
 - type: entity
   noSpawn: true
@@ -161,8 +150,7 @@
       - id: BoxSurvival
       - id: Flash
       - id: ADTtelescopicBaton
-      - id: SpaceCash
-        amount: 1200
+      - id: SpaceCash1000
 
 - type: entity
   noSpawn: true
@@ -174,8 +162,7 @@
       - id: BoxSurvivalSecurity
       - id: Flash
       - id: MagazinePistol
-      - id: SpaceCash
-        amount: 1200
+      - id: SpaceCash1000
 
 - type: entity
   noSpawn: true
@@ -185,8 +172,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalEngineering
-      - id: SpaceCash
-        amount: 750
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -196,8 +182,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalEngineering
-      - id: SpaceCash
-        amount: 750
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -207,8 +192,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
-      - id: SpaceCash
-        amount: 750
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -218,8 +202,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
-      - id: SpaceCash
-        amount: 500
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -230,8 +213,7 @@
     contents:
       - id: BoxSurvival
       - id: RubberStampMime
-      - id: SpaceCash
-        amount: 500
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -241,8 +223,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalMedical
-      - id: SpaceCash
-        amount: 750
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -254,8 +235,7 @@
       - id: BoxSurvival
       - id: Bible
       - id: RubberStampChaplain
-      - id: SpaceCash
-        amount: 500
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -267,8 +247,7 @@
         - id: BoxSurvival
         - id: AcousticGuitarInstrument
         - id: SaxophoneInstrument
-        - id: SpaceCash
-          amount: 500
+        - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -279,8 +258,7 @@
       contents:
         - id: BoxSurvival
         - id: BookRandom
-        - id: SpaceCash
-          amount: 500
+        - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -294,8 +272,7 @@
       - id: CigPackBlack
       - id: HandLabeler
       - id: BoxForensicPad
-      - id: SpaceCash
-        amount: 750
+      - id: SpaceCash500
 
 # ERT
 
@@ -530,8 +507,7 @@
     - type: StorageFill
       contents:
         - id: BoxSurvival
-        - id: SpaceCash
-          amount: 500
+        - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -541,8 +517,7 @@
     - type: StorageFill
       contents:
         - id: NesBoxSurvivalSalvager
-        - id: SpaceCash
-          amount: 750
+        - id: SpaceCash500
 
 # Pirate
 
@@ -573,5 +548,4 @@
       - id: SpeedLoaderMagnum
       - id: SmokeGrenade
       - id: SmokeGrenade
-      - id: SpaceCash
-        amount: 750
+      - id: SpaceCash500

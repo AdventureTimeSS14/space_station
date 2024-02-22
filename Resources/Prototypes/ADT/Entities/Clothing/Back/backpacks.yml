@@ -108,8 +108,7 @@
         amount: 1
       - id: ADTBookInvestigator
       - id: ADTRubberStampinvestigator
-      - id: SpaceCash
-        amount: 750
+      - id: SpaceCash500
 
 - type: entity
   #noSpawn: true
@@ -136,8 +135,7 @@
         amount: 1
       - id: ADTBookInvestigator
       - id: ADTRubberStampinvestigator
-      - id: SpaceCash
-        amount: 750
+      - id: SpaceCash500
 
 - type: entity
   #noSpawn: true
@@ -166,8 +164,7 @@
         amount: 1
       - id: ADTBookInvestigator
       - id: ADTRubberStampinvestigator
-      - id: SpaceCash
-        amount: 750
+      - id: SpaceCash500
 
 #дамские сумочки
 
