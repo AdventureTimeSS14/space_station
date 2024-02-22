@@ -218,3 +218,21 @@
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
+
+#противогаз СССП
+
+- type: entity
+  parent: ClothingMaskGasSyndicate
+  id: ADTClothingMaskGasUSSP
+  name: PMG-40 gasmask
+  description: The gas mask of the army of USSP.
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Mask/usspgasmask.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Mask/usspgasmask.rsi
+  - type: Tag
+    tags:
+    - HidesHair
+  - type: ShowSecurityIcons

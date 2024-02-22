@@ -392,3 +392,21 @@
     sprite: ADT/Clothing/Shoes/Boots/sport_zeta_crocs.rsi
   - type: Clothing
     sprite: ADT/Clothing/Shoes/Boots/sport_zeta_crocs.rsi
+
+#берцы СССП
+
+- type: entity
+  parent: ClothingShoesBootsJack
+  id: ADTClothingShoesBootsUSSPArmy
+  name: USSP combat boots
+  description: Robust combat boots for combat scenarios or combat situations. All combat, all the time.
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/army_boots.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/army_boots.rsi
+  - type: ContainerFill
+    containers:
+      item:
+      - ADTUSSPCombatKnifeBarzai

@@ -128,7 +128,7 @@ namespace Content.Server.Zombies
             var melee = EnsureComp<MeleeWeaponComponent>(target);
             melee.Animation = zombiecomp.AttackAnimation;
             melee.WideAnimation = zombiecomp.AttackAnimation;
-            melee.Range = 2f;
+            melee.Range = 1.25f;
 
             if (mobState.CurrentState == MobState.Alive)
             {

@@ -1,0 +1,745 @@
+- type: job
+  id: ADTJobUSSPArmyPrivate
+  name: job-name-ussp-army-private
+  description: job-description-ussp-army-private
+  playTimeTracker: JobUSSPArmyPrivate
+  setPreference: false
+  startingGear: ADTUSSPArmyPrivateGear
+  icon: "JobIconUSSPArmyPrivate"
+  supervisors: job-supervisors-ussp-centcom
+  access:
+  - Maintenance
+  - External
+  canBeAntag: false
+
+- type: playTimeTracker
+  id: JobUSSPArmyPrivate
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconUSSPArmyPrivate
+  icon:
+    sprite: ADT/Interface/Misc/job_icons.rsi
+    state: JobIconUSSPArmyPrivate
+
+- type: startingGear
+  id: ADTUSSPArmyPrivateGear
+  equipment:
+    jumpsuit: ADTParatrooperUSSPUniform
+    # back: ClothingBackpackERTLeaderFilled
+    shoes: ADTClothingShoesBootsUSSPArmy
+    mask: ADTClothingMaskGasUSSP
+    head: ADTClothingHeadHatBeretParatrooperUSSP
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ClothingHandsGlovesCombat
+    neck: ClothingNeckUSSPPin
+    # outerClothing: ClothingOuterArmorBulletproof
+    id: ADTUSSPArmyCard
+    ears: ADTClothingHeadsetUSSP
+    # belt: ADTClothingBeltMilitaryWebbingRPSL
+    # pocket1: PinpointerNuclear
+    underwearb: ADTTelnyachkaUSSPUniform # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ADTTelnyachkaUSSPUniform # Sirena-Underwear
+
+- type: entity
+  parent: IDCardStandard
+  id: ADTUSSPArmyCard
+  name: USSP Army Card
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Misc/USSP_idcard.rsi
+      state: private
+    - type: PresetIdCard
+      job: ADTJobUSSPArmyPrivate
+
+- type: job
+  id: ADTJobUSSPArmyOfficer
+  name: job-name-ussp-army-officer
+  description: job-description-ussp-army-officer
+  playTimeTracker: JobUSSPArmyOfficer
+  setPreference: false
+  startingGear: ADTUSSPArmyOfficerGear
+  icon: "JobIconUSSPArmyOfficer"
+  supervisors: job-supervisors-ussp-centcom
+  access:
+  - Maintenance
+  - External
+  canBeAntag: false
+
+- type: playTimeTracker
+  id: JobUSSPArmyOfficer
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconUSSPArmyOfficer
+  icon:
+    sprite: ADT/Interface/Misc/job_icons.rsi
+    state: JobIconUSSPArmyOfficer
+
+- type: entity
+  parent: IDCardStandard
+  id: ADTUSSPArmyOfficerCard
+  name: USSP Army Card
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Misc/USSP_idcard.rsi
+      state: private
+    - type: PresetIdCard
+      job: ADTJobUSSPArmyOfficer
+    # - type: AgentIDCard
+    #   icons:
+    #   # TODO figure out a better way of doing this.
+    #   # Probably by adding a bool or icon-category data-field to the icon prototype?
+    #   - JobIconDetective
+    #   - JobIconQuarterMaster
+    #   - JobIconBotanist
+    #   - JobIconBoxer
+    #   - JobIconAtmosphericTechnician
+    #   - JobIconNanotrasen
+    #   - JobIconPrisoner
+    #   - JobIconJanitor
+    #   - JobIconChemist
+    #   - JobIconStationEngineer
+    #   - JobIconSecurityOfficer
+    #   - JobIconChiefMedicalOfficer
+    #   - JobIconRoboticist
+    #   - JobIconChaplain
+    #   - JobIconLawyer
+    #   - JobIconUnknown
+    #   - JobIconLibrarian
+    #   - JobIconCargoTechnician
+    #   - JobIconScientist
+    #   - JobIconResearchAssistant
+    #   - JobIconGeneticist
+    #   - JobIconClown
+    #   - JobIconCaptain
+    #   - JobIconHeadOfPersonnel
+    #   - JobIconVirologist
+    #   - JobIconShaftMiner
+    #   - JobIconPassenger
+    #   - JobIconChiefEngineer
+    #   - JobIconBartender
+    #   - JobIconHeadOfSecurity
+    #   - JobIconBrigmedic
+    #   - JobIconMedicalDoctor
+    #   - JobIconParamedic
+    #   - JobIconChef
+    #   - JobIconWarden
+    #   - JobIconResearchDirector
+    #   - JobIconMime
+    #   - JobIconMusician
+    #   - JobIconReporter
+    #   - JobIconPsychologist
+    #   - JobIconMedicalIntern
+    #   - JobIconTechnicalAssistant
+    #   - JobIconServiceWorker
+    #   - JobIconSecurityCadet
+    #   - JobIconZookeeper
+    #   - JobIconSeniorPhysician
+    #   - JobIconSeniorOfficer
+    #   - JobIconSeniorEngineer
+    #   - JobIconSeniorResearcher
+    #   - JobIconVisitor
+    # - type: ActivatableUI
+    #   key: enum.AgentIDCardUiKey.Key
+    #   inHandsOnly: true
+    # - type: Tag
+    #   tags:
+    #   - DoorBumpOpener
+    # - type: UserInterface
+    #   interfaces:
+    #     - key: enum.AgentIDCardUiKey.Key
+    #       type: AgentIDCardBoundUserInterface
+    #     - key: enum.ChameleonUiKey.Key
+    #       type: ChameleonBoundUserInterface
+
+- type: startingGear
+  id: ADTUSSPArmyOfficerGear
+  equipment:
+    jumpsuit: ADTFlotUSSPUniform
+    # back: ClothingBackpackERTLeaderFilled
+    shoes: ADTClothingShoesBootsUSSPArmy
+    mask: ADTClothingMaskGasUSSP
+    head: ADTClothingHeadHatsOfficerUSSPCap
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ClothingHandsGlovesCombat
+    neck: ClothingNeckUSSPPin
+    # outerClothing: ClothingOuterArmorBulletproof
+    id: ADTUSSPArmyOfficerCard
+    ears: ADTClothingHeadsetUSSPSpetznaz
+    belt: ADTClothingBeltOfficersbeltwithholster
+    # pocket1: PinpointerNuclear
+    underwearb: ADTTelnyachkaUSSPUniform # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ADTTelnyachkaUSSPUniform # Sirena-Underwear
+
+
+- type: entity
+  id: ADTWardrobeKBSFilled
+  parent: WardrobeSecurity
+  name: USSP Wardrobe
+  description: "Cross the thin red line."
+  suffix: USSP
+  components:
+  - type: StorageFill
+    contents:
+      - id: ADTClothingRPSUSSP
+      - id: ADTClothingBackpackOR40L
+      - id: ADTClothingOuterHardsuitOBS5USSP
+      - id: MedkitCombatFilled
+      - id: ADTClothingMaskGasUSSP
+      - id: OxygenTankFilled
+      - id: NitrogenTankFilled
+      - id: ADTWeaponRifleAK55
+        prob: 0.5
+        orGroup: USSPInfantryWeapon
+      - id: ADTWeaponLightMachineGunPRK
+        prob: 0.25
+        orGroup: USSPInfantryWeapon
+      - id: ADTWeaponSMGBizon
+        prob: 0.25
+        orGroup: USSPInfantryWeapon
+
+#Снаряжение войск
+
+#ОБС-5
+- type: startingGear
+  id: ADTUSSPArmyOBS5Gear
+  equipment:
+    jumpsuit: ADTInfantrymanTUSSPUniform
+    back: ADTClothingBackpackOR40L_OBS5Gear
+    shoes: ADTClothingShoesBootsUSSPArmy
+    mask: ADTClothingMaskGasUSSP
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ADTClothingOuterHardsuitOBS5USSP
+    id: ADTUSSPArmyCard
+    ears: ADTClothingHeadsetUSSP
+    belt: ADTClothingRPSUSSP
+    underwearb: ADTTelnyachkaUSSPUniform # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ADTTelnyachkaUSSPUniform # Sirena-Underwear
+
+- type: entity
+  noSpawn: true
+  parent: ADTClothingBackpackOR40L
+  id: ADTClothingBackpackOR40L_OBS5Gear
+  components:
+    - type: StorageFill
+      contents:
+        - id: ADTWeaponRifleAK55
+        - id: MedkitCombatFilled
+        - id: OxygenTankFilled
+        - id: Zipties
+          amount: 2
+        - id: ADTMagazineUSSPAK74
+          amount: 4
+        - id: MagazineBoxRifleRubber
+
+#ОБС-7
+- type: startingGear
+  id: ADTUSSPArmyOBS7Gear
+  equipment:
+    jumpsuit: ADTFlotUSSPUniform
+    back: ADTClothingBackpackOR80L_OBS7Gear
+    shoes: ADTClothingShoesBootsUSSPArmy
+    mask: ADTClothingMaskGasUSSP
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ADTClothingOuterHardsuitOBS7USSP
+    id: ADTUSSPArmyOfficerCard
+    ears: ADTClothingHeadsetUSSPSpetznaz
+    belt: ADTClothingBeltOfficersbeltwithholster
+    underwearb: ADTTelnyachkaUSSPUniform # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ADTTelnyachkaUSSPUniform # Sirena-Underwear
+
+- type: entity
+  noSpawn: true
+  parent: ADTClothingBackpackOR80L
+  id: ADTClothingBackpackOR80L_OBS7Gear
+  components:
+    - type: StorageFill
+      contents:
+        - id: ADTWeaponSMGBizon
+        - id: MedkitCombatFilled
+        - id: JawsOfLife
+        - id: CombatMedipen
+        - id: DoubleEmergencyOxygenTankFilled
+        - id: Zipties
+          amount: 2
+        - id: ADTMagazineBizon
+          amount: 4
+        - id: MagazineBoxPistolRubber
+
+#Пилот СССП
+- type: startingGear
+  id: ADTUSSPArmyPilotGear
+  equipment:
+    jumpsuit: ADTPilotUSSPUniform 
+    back: ADTClothingBackpackOR40L_PilotGear
+    shoes: ADTClothingShoesBootsUSSPArmy
+    mask: ADTClothingMaskGasUSSP
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ADTClothingOuterHardsuitSL5USSP
+    id: ADTUSSPArmyOfficerCard
+    ears: ADTClothingHeadsetUSSPSpetznaz
+    pocket1: ADTWeaponSMGSR2M
+    belt: ADTClothingBeltOfficersbeltwithholster
+    underwearb: ADTTelnyachkaUSSPUniform # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ADTTelnyachkaUSSPUniform # Sirena-Underwear
+
+- type: entity
+  noSpawn: true
+  parent: ADTClothingBackpackOR40L
+  id: ADTClothingBackpackOR40L_PilotGear
+  components:
+    - type: StorageFill
+      contents:
+        - id: MedkitCombatFilled
+        - id: JawsOfLife
+        - id: CombatMedipen
+        - id: DoubleEmergencyOxygenTankFilled
+        - id: ADTMagazineSR2M
+          amount: 3
+        - id: MagazineBoxPistolRubber
+
+#Боец спецназа
+- type: startingGear
+  id: ADTUSSPArmySpetsnazGear
+  equipment:
+    jumpsuit: ADTFlotUSSPUniform
+    back: ADTClothingBackpackOR80L_SpetsnazGear
+    shoes: ADTClothingShoesBootsUSSPArmy
+    mask: ADTClothingMaskGasUSSP
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ADTClothingHandsFingerlessCombat
+    outerClothing: ADTClothingOuterHardsuitTacticalExocosuit
+    id: ADTUSSPArmyOfficerCard
+    ears: ADTClothingHeadsetUSSPSpetznaz
+    belt: ADTClothingRPSTacticalUSSP
+    pocket1: ADTWeaponSMGSR2M
+    pocket2: ADTMagazineSR2M
+    underwearb: ADTTelnyachkaUSSPUniform # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ADTTelnyachkaUSSPUniform # Sirena-Underwear
+
+- type: entity
+  noSpawn: true
+  parent: ADTClothingBackpackOR80L
+  id: ADTClothingBackpackOR80L_SpetsnazGear
+  components:
+    - type: StorageFill
+      contents:
+        - id: ADTWeaponSMGSR3M
+        - id: MedkitCombatFilled
+        - id: JawsOfLife
+        - id: CombatMedipen
+          amount: 3
+        - id: OmnizineChemistryBottle
+          amount: 2
+        - id: EphedrineChemistryBottle
+          amount: 2
+        - id: ADTCombatHypo
+        - id: DoubleEmergencyOxygenTankFilled
+        - id: Zipties
+          amount: 3
+        - id: ADTMagazineSR3M
+          amount: 4
+        - id: MagazineBoxLightRifleRubber
+
+#Боец спецназа с пулеметом
+- type: startingGear
+  id: ADTUSSPArmySpetsnazLMGGear
+  equipment:
+    jumpsuit: ADTFlotUSSPUniform
+    back: ADTClothingBackpackOR80L_SpetsnazLMGGear
+    shoes: ADTClothingShoesBootsUSSPArmy
+    mask: ADTClothingMaskGasUSSP
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ADTClothingHandsFingerlessCombat
+    outerClothing: ADTClothingOuterHardsuitTacticalExocosuit
+    id: ADTUSSPArmyOfficerCard
+    ears: ADTClothingHeadsetUSSPSpetznaz
+    belt: ADTClothingRPSTacticalUSSP
+    pocket1: ADTWeaponSMGSR2M
+    pocket2: ADTMagazineSR2M
+    underwearb: ADTTelnyachkaUSSPUniform # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ADTTelnyachkaUSSPUniform # Sirena-Underwear
+
+- type: entity
+  noSpawn: true
+  parent: ADTClothingBackpackOR80L
+  id: ADTClothingBackpackOR80L_SpetsnazLMGGear
+  components:
+    - type: StorageFill
+      contents:
+        - id: ADTWeaponLightMachineGunPKP60
+        - id: MedkitCombatFilled
+        - id: JawsOfLife
+        - id: CombatMedipen
+          amount: 2
+        - id: OmnizineChemistryBottle
+          amount: 2
+        - id: EphedrineChemistryBottle
+          amount: 2
+        - id: ADTCombatHypo
+        - id: DoubleEmergencyOxygenTankFilled
+        - id: Zipties
+          amount: 3
+        - id: ADTMagazineUSSPLMG
+          amount: 2
+
+#Боевой медик
+- type: startingGear
+  id: ADTUSSPArmyMedicGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMedicalDoctor
+    back: ADTClothingBackpackOR40L_MedicGear
+    shoes: ADTClothingShoesBootsUSSPArmy
+    mask: ClothingMaskBreathMedicalSecurity
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ClothingHandsGlovesNitrile
+    outerClothing: ADTClothingOuterHardsuitOBS5USSP
+    id: ADTUSSPArmyCard
+    ears: ADTClothingHeadsetUSSP
+    belt: ClothingBeltMedicalFilled
+    underwearb: ADTTelnyachkaUSSPUniform # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ADTTelnyachkaUSSPUniform # Sirena-Underwear
+
+- type: entity
+  noSpawn: true
+  parent: ADTClothingBackpackOR40L
+  id: ADTClothingBackpackOR40L_MedicGear
+  components:
+    - type: StorageFill
+      contents:
+        - id: ADTWeaponPistolPMM
+        - id: MedkitCombatFilled
+          amount: 2
+        - id: MedkitAdvancedFilled
+        - id: OxygenTankFilled
+        - id: ADTMagazinePistolPMM
+          amount: 2
+        - id: SyndiHypo
+        - id: OmnizineChemistryBottle
+          amount: 4     
+
+#Спавнеры
+
+#Рядовой
+- type: entity
+  id: ADTRandomHumanoidSpawnerUSSPPrivate
+  name: USSP Private
+  suffix: USSP
+  components:
+    - type: Sprite
+      layers:
+        - sprite: ADT/Markers/job.rsi
+          state: green
+        - sprite: ADT/Objects/Decoration/poster_ussp.rsi
+          state: kdv
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryUSSP
+      - NamesLastMilitaryUSSP
+    - type: RandomHumanoidSpawner
+      settings: ADTUSSPPrivateSettings
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  speciesBlacklist:
+    - Diona
+  id: ADTUSSPPrivateSettings
+  randomizeName: false
+  components:
+    - type: GhostRole
+      name: рядовой СССП
+      description: Служите социализму и подчиняйтесь офицерам.
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ ADTUSSPArmyPrivateGear ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryUSSP
+      - NamesLastMilitaryUSSP
+    - type: InitialInfectedExempt
+
+#Офицер
+- type: entity
+  id: ADTRandomHumanoidSpawnerUSSPOfficer
+  name: USSP Officer
+  suffix: USSP
+  components:
+    - type: Sprite
+      layers:
+        - sprite: ADT/Markers/job.rsi
+          state: green
+        - sprite: ADT/Objects/Decoration/poster_ussp.rsi
+          state: kdv
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryOfficerUSSP
+      - NamesLastMilitaryUSSP
+    - type: RandomHumanoidSpawner
+      settings: ADTUSSPOfficerSettings
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  speciesBlacklist:
+    - Diona
+  id: ADTUSSPOfficerSettings
+  randomizeName: false
+  components:
+    - type: GhostRole
+      name: офицер СССП
+      description: Служите социализму и управляйте своими подчиненными.
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ ADTUSSPArmyOfficerGear ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryOfficerUSSP
+      - NamesLastMilitaryUSSP
+    - type: InitialInfectedExempt
+
+#Рядовой в ОБС-5
+- type: entity
+  id: ADTRandomHumanoidSpawnerUSSPOBS5
+  name: USSP OBS-5
+  suffix: USSP
+  components:
+    - type: Sprite
+      layers:
+        - sprite: ADT/Markers/job.rsi
+          state: green
+        - sprite: ADT/Objects/Decoration/poster_ussp.rsi
+          state: kdv
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryUSSP
+      - NamesLastMilitaryUSSP
+    - type: RandomHumanoidSpawner
+      settings: ADTUSSPSettingsOBS5
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  speciesBlacklist:
+    - Diona
+  id: ADTUSSPSettingsOBS5
+  randomizeName: false
+  components:
+    - type: GhostRole
+      name: рядовой в ОБС-5
+      description: Служите социализму и подчиняйтесь офицерам.
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ ADTUSSPArmyOBS5Gear ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryUSSP
+      - NamesLastMilitaryUSSP
+    - type: InitialInfectedExempt
+  
+#Командир группы в ОБС-7
+- type: entity
+  id: ADTRandomHumanoidSpawnerUSSPOBS7
+  name: USSP SquadLeader
+  suffix: USSP
+  components:
+    - type: Sprite
+      layers:
+        - sprite: ADT/Markers/job.rsi
+          state: green
+        - sprite: ADT/Objects/Decoration/poster_ussp.rsi
+          state: kdv
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryOfficerUSSP
+      - NamesLastMilitaryUSSP
+    - type: RandomHumanoidSpawner
+      settings: ADTUSSPSettingsOBS7
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  speciesBlacklist:
+    - Diona
+  id: ADTUSSPSettingsOBS7
+  randomizeName: false
+  components:
+    - type: GhostRole
+      name: командир группы в ОБС-7
+      description: Служите социализму и управляйте своими подчиненными.
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ ADTUSSPArmyOBS7Gear ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryOfficerUSSP
+      - NamesLastMilitaryUSSP
+    - type: InitialInfectedExempt
+  
+#Пилот
+- type: entity
+  id: ADTRandomHumanoidSpawnerUSSPPilot
+  name: USSP Pilot
+  suffix: USSP
+  components:
+    - type: Sprite
+      layers:
+        - sprite: ADT/Markers/job.rsi
+          state: green
+        - sprite: ADT/Objects/Decoration/poster_ussp.rsi
+          state: kdv
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryOfficerUSSP
+      - NamesLastMilitaryUSSP
+    - type: RandomHumanoidSpawner
+      settings: ADTUSSPSettingsPilot
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  speciesBlacklist:
+    - Diona
+  id: ADTUSSPSettingsPilot
+  randomizeName: false
+  components:
+    - type: GhostRole
+      name: пилот СССП
+      description: Служите социализму и управляйте шаттлом.
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ ADTUSSPArmyPilotGear ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryOfficerUSSP
+      - NamesLastMilitaryUSSP
+    - type: InitialInfectedExempt
+
+#Спецназ
+- type: entity
+  id: ADTRandomHumanoidSpawnerUSSPSpetsnaz
+  name: USSP Spetsnaz
+  suffix: USSP
+  components:
+    - type: Sprite
+      layers:
+        - sprite: ADT/Markers/job.rsi
+          state: green
+        - sprite: ADT/Objects/Decoration/poster_ussp.rsi
+          state: kdv
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryOfficerUSSP
+      - NamesLastMilitaryUSSP
+    - type: RandomHumanoidSpawner
+      settings: ADTUSSPSettingsSpetsnaz
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  speciesBlacklist:
+    - Diona
+  id: ADTUSSPSettingsSpetsnaz
+  randomizeName: false
+  components:
+    - type: GhostRole
+      name: боец спецназа СССП
+      description: Служите социализму и проводите спецоперации.
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ ADTUSSPArmySpetsnazGear ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryOfficerUSSP
+      - NamesLastMilitaryUSSP
+    - type: InitialInfectedExempt
+  
+#Спецназ-пулеметчик
+- type: entity
+  id: ADTRandomHumanoidSpawnerUSSPSpetsnazLMG
+  name: USSP Spetsnaz LMG
+  suffix: USSP
+  components:
+    - type: Sprite
+      layers:
+        - sprite: ADT/Markers/job.rsi
+          state: green
+        - sprite: ADT/Objects/Decoration/poster_ussp.rsi
+          state: kdv
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryOfficerUSSP
+      - NamesLastMilitaryUSSP
+    - type: RandomHumanoidSpawner
+      settings: ADTUSSPSettingsSpetsnazLMG
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  speciesBlacklist:
+    - Diona
+  id: ADTUSSPSettingsSpetsnazLMG
+  randomizeName: false
+  components:
+    - type: GhostRole
+      name: боец спецназа СССП
+      description: Служите социализму и проводите спецоперации.
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ ADTUSSPArmySpetsnazLMGGear ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryOfficerUSSP
+      - NamesLastMilitaryUSSP
+    - type: InitialInfectedExempt
+  
+#Медик
+- type: entity
+  id: ADTRandomHumanoidSpawnerUSSPMedic
+  name: USSP Medic
+  suffix: USSP
+  components:
+    - type: Sprite
+      layers:
+        - sprite: ADT/Markers/job.rsi
+          state: green
+        - sprite: ADT/Objects/Decoration/poster_ussp.rsi
+          state: kdv
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryUSSP
+      - NamesLastMilitaryUSSP
+    - type: RandomHumanoidSpawner
+      settings: ADTUSSPSettingsMedic
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  speciesBlacklist:
+    - Diona
+  id: ADTUSSPSettingsMedic
+  randomizeName: false
+  components:
+    - type: GhostRole
+      name: медик СССП
+      description: Служите социализму и спасайте жизни товарищей.
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ ADTUSSPArmyMedicGear ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryUSSP
+      - NamesLastMilitaryUSSP
+    - type: InitialInfectedExempt

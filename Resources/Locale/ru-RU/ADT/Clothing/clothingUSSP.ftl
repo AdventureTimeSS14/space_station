@@ -10,7 +10,7 @@ ent-ADTClothingUniformMillitary = Парадная форма СВ СССП
 ent-ADTClothingHeadMil = Малиновый берет СВ СССП
     .desc = Малиновый берет военнослужащих войск СССП
 
-ent-ADTClothingUniformCommon = Обще-войсковой парадная форма
+ent-ADTClothingUniformCommon = Общевойсковая парадная форма
     .desc = Чистая и опрятная парадная форма СССП
 
 ent-ADTClothingUniformSea = Парадная форма МП СССП
@@ -32,7 +32,7 @@ ent-ADTClothingHeadKVD = Голубой Берет КДВ
     .desc = Голубой берет военнослужащих Космо-десантных войск
 
 ent-ADTClothingUniformMusical = Парадная форма Военного-оркестра
-    .desc = Полная парадная форма Военно-оркестровая службы СССП 
+    .desc = Полная парадная форма Военно-оркестровая службы СССП
 
 ent-ADTClothingHeadMusical = Парадная фуражка Военного-оркестра
     .desc = Парадная фуражка Военно-оркестровая службы СССП
