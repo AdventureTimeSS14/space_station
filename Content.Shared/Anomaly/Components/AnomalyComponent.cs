@@ -282,3 +282,15 @@ public readonly record struct AnomalyStabilityChangedEvent(EntityUid Anomaly, fl
 /// <param name="Anomaly">The anomaly being changed</param>
 [ByRefEvent]
 public readonly record struct AnomalyHealthChangedEvent(EntityUid Anomaly, float Health);
+
+
+/// For TV anom?
+
+[ByRefEvent]
+public record struct TVEmpPulseEvent(float EnergyConsumption, bool Affected, bool Disabled, TimeSpan Duration); // Parkstation-IPCs
+
+[ByRefEvent]
+public readonly record struct TVAnomalyPulseEvent(EntityUid Anomaly, float Stability, float Severity, TVEmpPulseEvent Duration);
+
+[ByRefEvent]
+public readonly record struct TVAnomalySupercriticalEvent(EntityUid Anomaly, TVEmpPulseEvent Duration);
