@@ -84,14 +84,21 @@ public sealed class OldTVAnomalySystem : EntitySystem
             if (!_random.Prob(stat.PassiveStaticChance * anom.Stability))
                 continue;
 
-            var range = stat.MaxStaticRange * anom.Stability * 2;
-            var damage = (int) (stat.MaxStaticDamage * anom.Severity);
-            var duration = stat.MaxPassiveStaticDuration * anom.Severity * 3;
+            var range = stat.MaxStaticRange * anom.Stability * 4;
+            var duration = stat.MaxPassiveStaticDuration * anom.Severity * 1;
 
             foreach (var (ent, comp) in _lookup.GetEntitiesInRange<StatusEffectsComponent>(xform.MapPosition, range))
             {
                 _status.TryAddStatusEffect<AnomStaticComponent>(ent, AnomStaticSystem.StaticKey, duration, true, comp);
             }
+            var closerange = stat.MaxStaticRange * anom.Stability * 2;
+            var closeduration = stat.MaxPassiveStaticDuration * anom.Severity * 3;
+
+            foreach (var (ent, comp) in _lookup.GetEntitiesInRange<StatusEffectsComponent>(xform.MapPosition, closerange))
+            {
+                _status.TryAddStatusEffect<AnomStaticComponent>(ent, AnomStaticSystem.StaticKey, closeduration, true, comp);
+            }
+
         }
     }
 
