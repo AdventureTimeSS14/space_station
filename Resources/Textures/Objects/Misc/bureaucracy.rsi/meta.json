@@ -295,6 +295,28 @@
         },
         {
             "name": "folder-valentine-red-overlay-paper"
+        },
+        {
+            "name": "glitch-paper_words",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "glitch-paper",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
         }
     ]
 }
