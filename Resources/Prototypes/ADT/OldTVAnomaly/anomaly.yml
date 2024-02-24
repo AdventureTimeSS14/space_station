@@ -32,3 +32,8 @@
   #  - ADTMobHunter
   #  - ADTMobSoldier
   - type: OldTVAnomaly
+  - type: AmbientSound
+    range: 15
+    volume: 0.6
+    sound:
+      path: /Audio/ADT/TVAnom/tv-morse-tihoe.ogg

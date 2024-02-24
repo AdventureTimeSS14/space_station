@@ -84,7 +84,7 @@ public sealed class OldTVAnomalySystem : EntitySystem
             if (!_random.Prob(stat.PassiveStaticChance * anom.Stability))
                 continue;
 
-            var range = stat.MaxStaticRange * anom.Stability;
+            var range = stat.MaxStaticRange * anom.Stability * 2;
             var damage = (int) (stat.MaxStaticDamage * anom.Severity);
             var duration = stat.MaxPassiveStaticDuration * anom.Severity * 3;
 
