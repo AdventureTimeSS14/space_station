@@ -32,6 +32,3 @@
   #  - ADTMobHunter
   #  - ADTMobSoldier
   - type: OldTVAnomaly
-  - type: EmitSoundOnSpawn
-    sound:
-      path: /Audio/Voice/Human/femalescream_1.ogg

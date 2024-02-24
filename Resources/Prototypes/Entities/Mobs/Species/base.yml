@@ -286,6 +286,7 @@
     - Muted
     - Pacified
     - StaminaModifier
+    - AnomStatic
   - type: Blindable
   # Other
   - type: Temperature
