@@ -71,4 +71,12 @@
 
 - type: metabolizerType
   id: Ursus
-  name: reptilian
+  name: ursus
+
+- type: metabolizerType
+  id: Drask
+  name: drask
+
+- type: metabolizerType
+  id: Felinid
+  name: felinid

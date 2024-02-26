@@ -154,6 +154,24 @@
             max: 20
         probability: 0.5
       - !type:Polymorph 
+        prototype: ADTPCat
+        conditions:
+          - !type:OrganType
+            type: Felinid
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPCat2
+        conditions:
+          - !type:OrganType
+            type: Felinid
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph 
         prototype: ADTPDog
         conditions:
           - !type:OrganType
@@ -203,6 +221,24 @@
         conditions:
           - !type:OrganType
             type: Ursus
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph 
+        prototype: ADTPSoap
+        conditions:
+          - !type:OrganType
+            type: Drask
+          - !type:ReagentThreshold
+            min: 20
+            max: 20
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPSoap2
+        conditions:
+          - !type:OrganType
+            type: Drask
           - !type:ReagentThreshold
             min: 20
             max: 20

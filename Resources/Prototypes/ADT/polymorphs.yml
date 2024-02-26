@@ -150,7 +150,7 @@
     duration: 120
 
 #наши расы
-#таяры
+#таяры и фелиниды, кто бы мог подумать.
 - type: polymorph
   id: ADTPCat
   configuration:
@@ -242,6 +242,31 @@
   id: ADTPSpaceBear2
   configuration:
     entity: MobBearSpace
+    forced: true
+    transferName: true
+    allowRepeatedMorphs: False
+    inventory: Drop
+    revertOnCrit: true
+    revertOnDeath: true
+    duration: 120
+
+#Драски
+- type: polymorph
+  id: ADTPSoap
+  configuration:
+    entity: Soap
+    forced: true
+    transferName: true
+    allowRepeatedMorphs: False
+    inventory: Drop
+    revertOnCrit: true
+    revertOnDeath: true
+    duration: 40
+
+- type: polymorph
+  id: ADTPSoap2
+  configuration:
+    entity: Soap
     forced: true
     transferName: true
     allowRepeatedMorphs: False

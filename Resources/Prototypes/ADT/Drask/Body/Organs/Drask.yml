@@ -24,7 +24,7 @@
     removeEmpty: true
     solutionOnBody: false
     solution: "Lung"
-    metabolizerTypes: [ Human ]
+    metabolizerTypes: [ Drask ]
     groups:
     - id: Gas
       rateModifier: 100.0
@@ -55,7 +55,7 @@
     state: heart_on
   - type: Metabolizer
     maxReagents: 2
-    metabolizerTypes: [Human]
+    metabolizerTypes: [ Drask ]
     groups:
     - id: Medicine
     - id: Poison
@@ -83,7 +83,7 @@
   - type: Stomach
   - type: Metabolizer
     maxReagents: 3
-    metabolizerTypes: [Human]
+    metabolizerTypes: [ Drask ]
     groups:
     - id: Food
     - id: Drink
@@ -99,5 +99,5 @@
     state: kidneys
   - type: Metabolizer
     maxReagents: 5
-    metabolizerTypes: [Human]
+    metabolizerTypes: [ Drask ]
     removeEmpty: true
