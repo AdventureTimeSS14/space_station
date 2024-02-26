@@ -3,6 +3,7 @@
   description: 
   parent: GrenadeBase
   id: ADTSmokeGrenade
+  noSpawn: true
   components:
     - type: Sprite
       sprite: ADT/Objects/Weapons/Grenades/smokegrenades.rsi
@@ -26,6 +27,7 @@
   description: 
   parent: GrenadeBase
   id: ADTSSmokeGrenade
+  noSpawn: true
   components:
     - type: Sprite
       sprite: ADT/Objects/Weapons/Grenades/ssmokegreandes.rsi

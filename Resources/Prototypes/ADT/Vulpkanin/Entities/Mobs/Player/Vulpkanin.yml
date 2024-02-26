@@ -4,6 +4,8 @@
   parent: BaseMobVulpkanin
   id: MobVulpkanin
   components:
+    - type: Inventory
+      speciesId: vulp
     - type: CombatMode
     - type: InteractionPopup
       successChance: 1
@@ -42,3 +44,8 @@
       understands:
       - GalacticCommon
       - Canilunzt
+    - type: SizeAttributeWhitelist # Frontier
+      tall: true
+      tallscale: 1.1
+      short: true
+      shortscale: 0.9

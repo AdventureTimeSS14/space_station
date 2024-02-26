@@ -12,3 +12,36 @@
       sprite: ADT/Clothing/Ears/Headsets/armyheadset.rsi
     - type: Clothing
       sprite: ADT/Clothing/Ears/Headsets/armyheadset.rsi
+
+- type: entity
+  parent: ClothingHeadset
+  id: ADTClothingHeadsetUSSP
+  name: USSP forces headset
+  description: A headset for USSP forces.
+  suffix: USSP
+  components:
+    - type: ContainerFill
+      containers:
+        key_slots:
+        - ADTEncryptionKeyUSSP
+    - type: Sprite
+      sprite: ADT/Clothing/Ears/Headsets/armyheadset.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Ears/Headsets/armyheadset.rsi
+
+- type: entity
+  parent: ClothingHeadset
+  id: ADTClothingHeadsetUSSPSpetznaz
+  name: USSP special forces headset
+  description: A headset for USSP special forces.
+  suffix: USSP
+  components:
+    - type: ContainerFill
+      containers:
+        key_slots:
+        - ADTEncryptionKeyUSSP
+        - ADTEncryptionKeySpec
+    - type: Sprite
+      sprite: ADT/Clothing/Ears/Headsets/armyheadset.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Ears/Headsets/armyheadset.rsi

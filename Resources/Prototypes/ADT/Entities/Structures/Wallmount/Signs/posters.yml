@@ -645,3 +645,93 @@
   - type: Sprite
     sprite: ADT/Objects/Decoration/poster_new_year.rsi #спрайты от prazat911
     state: new_year3
+
+#Флаги и плакаты СССП
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterGerbBKF
+  name: gerb BKF
+  description: gerb BKF
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_ussp.rsi
+    state: bkf
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterGerbKDV
+  name: gerb KDV
+  description: gerb KDV
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_ussp.rsi
+    state: kdv
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterGerbKS
+  name: gerb KS
+  description: gerb KS
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_ussp.rsi
+    state: ks
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterGerbUSSP
+  name: gerb USSP
+  description: gerb USSP
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_ussp.rsi
+    state: ussp
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterGerbUSSP2
+  name: gerb USSP
+  description: gerb USSP
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_ussp.rsi
+    state: ussp2
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterUSSPRHBZ
+  name: RHBZ poster
+  description: gerb USSP
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_ussp.rsi
+    state: rhbz
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterUSSPKS
+  name: USSP KS
+  description: gerb USSP
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_ussp.rsi
+    state: ks2
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterUSSPKDV
+  name: KDV poster
+  description: gerb USSP
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_ussp.rsi
+    state: kdv2

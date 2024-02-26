@@ -315,8 +315,9 @@ namespace Content.Server.Polymorph.Systems
             if (_mindSystem.TryGetMind(uid, out var mindId, out var mind))
                 _mindSystem.TransferTo(mindId, child, mind: mind);
 
-            SendToPausesdMap(uid, targetTransformComp);
-
+            EnsurePausedMap();   /// Апстрим: Может поломаться. Проверяйте.
+            if (PausedMap != null)
+                _transform.SetParent(uid, targetTransformComp, PausedMap.Value);
             return child;
         }
 

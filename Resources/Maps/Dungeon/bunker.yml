@@ -875,7 +875,7 @@ entities:
     - type: Transform
       pos: 1.6357312,47.533012
       parent: 1
-- proto: ADTSSmokeGrenade
+- proto: SmokeGrenade
   entities:
   - uid: 1514
     components:

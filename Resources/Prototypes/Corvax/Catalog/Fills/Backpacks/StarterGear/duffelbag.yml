@@ -11,6 +11,7 @@
       contents:
         - id: BoxSurvival
         #- id: BriefcaseIAAFilled
+        - id: SpaceCash1000
 
 - type: entity
   noSpawn: true
@@ -21,3 +22,4 @@
       contents:
         - id: BoxSurvivalMedical
         - id: RubberStampPsychologist
+        - id: SpaceCash500

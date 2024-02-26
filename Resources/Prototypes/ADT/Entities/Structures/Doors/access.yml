@@ -30,3 +30,21 @@
   components:
   - type: AccessReader
     access: [["Investigator"]]
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockGlassTraderLocked
+  suffix: Trader, Locked
+  components:
+  - type: AccessReader
+    access: [["Trader"]]
+
+#Windoors
+
+- type: entity
+  parent: BaseSecureWindoor
+  id: SecureWindoorTraderLocked
+  suffix: Trader, Locked
+  components:
+  - type: AccessReader
+    access: [["Trader"]]

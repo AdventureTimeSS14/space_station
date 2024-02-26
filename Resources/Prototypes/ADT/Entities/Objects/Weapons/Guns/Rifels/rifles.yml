@@ -40,3 +40,44 @@
         whitelist:
           tags:
             - CartridgeLightRifle
+
+- type: entity
+  name: AK-55
+  id: ADTWeaponRifleAK55
+  parent: WeaponRifleLecter
+  description: A rather traditionally made LMG with a pleasantly lacquered wooden pistol grip. Uses .30 rifle ammo.
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Guns/Rifels/ak55.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: ADTMagazineUSSPAK74
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - ADTMagazineUSSPLMGDrum
+            - ADTMagazineUSSPAK74
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeRifle
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeRifle
+  - type: Gun
+    fireRate: 6

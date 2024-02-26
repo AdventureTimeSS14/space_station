@@ -1,19 +1,19 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  - Atlas
-  - Bagel
-  - Box
-  - Cluster
-  - Core
-  - Fland
-  - Marathon
-  - Meta
+  # - Atlas
+  # - Bagel
+  # - Box
+  # - Cluster
+  # - Core
+  # - Fland
+  # - Marathon
+  # - Meta
   # - Gemini
-  - Omega
-  - Origin
-  - Saltern
-  - Packed
+  # - Omega
+  # - Origin
+  # - Saltern
+  # - Packed
   #- Reach
   - CorvaxDelta
   - CorvaxAvrite
@@ -22,3 +22,15 @@
   - CorvaxOutpost
   - CorvaxAstra
   - CorvaxGelta
+  - ADTAtlas
+  - ADTBagel
+  - ADTBox
+  - ADTCluster
+  - ADTCore
+  - ADTFland
+  - ADTMarathon
+  - ADTMeta
+  - ADTOmega
+  - ADTOrigin
+  - ADTSaltern
+  - ADTPacked
