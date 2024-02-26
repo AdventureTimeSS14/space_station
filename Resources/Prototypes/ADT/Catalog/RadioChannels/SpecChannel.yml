@@ -5,3 +5,11 @@
   frequency: 1307
   color: "#00fa9a"
   longRange: true
+
+- type: radioChannel
+  id: ADTUSSPChannel
+  name: СССП
+  keycode: 'я'
+  frequency: 1304
+  color: "#7ecc8e"
+  longRange: true

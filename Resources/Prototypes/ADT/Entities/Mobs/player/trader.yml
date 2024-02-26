@@ -1,0 +1,240 @@
+- type: randomHumanoidSettings
+  id: Trader
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-trader
+      description: ghost-role-information-trader-description
+      requirements:
+      - !type:OverallPlaytimeRequirement
+        time: 108000 # 30h overall
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ Trader ]
+    - type: InitialInfectedExempt
+    - type: RandomMetadata
+      nameSegments:
+      - names_first_male
+      - NamesLastERTCallsign
+
+- type: entity
+  parent: BasePDA
+  id: TraderPDA
+  name: trader PDA
+  description: trader PDA
+  components:
+  - type: Pda
+    id: TraderIDCard
+    state: pda-qm
+  - type: Icon
+    state: pda-qm
+
+- type: entity
+  parent: IDCardStandard
+  id: TraderIDCard
+  name: TraderIDCard
+  description: TraderIDCard
+  components:
+    - type: Sprite
+      layers:
+        - state: orange
+        - state: idcargotechnician
+    - type: IdCard
+      jobTitle: Торговец
+    - type: Access
+      tags:
+      - Trader
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackCargoFilled
+  id: ClothingBackpackCargoTraderFilled
+  components:
+    - type: StorageFill
+      contents:
+        - id: BoxSurvival
+        - id: RubberStampTrader
+
+- type: entity
+  name: Trader
+  id: SpawnMobTrader
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Markers/jobs.rsi
+        state: cargo_tech
+  - type: ConditionalSpawner
+    prototypes:
+      - RandomHumanoidSpawnerTrader
+
+- type: entity
+  id: RandomHumanoidSpawnerTrader
+  name: Trader
+  suffix: Trader
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: cargo_tech
+    - type: RandomHumanoidSpawner
+      settings: Trader
+    - type: InitialInfectedExempt
+
+- type: entity
+  name: RandomCargoProduct
+  id: RandomCargoProduct
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+  - type: ConditionalSpawner
+    prototypes:
+      - CrateArmorySMG
+      - CrateArmoryShotgun
+      - CrateTrackingImplants
+      - CrateTrainingBombs
+      - CrateArmoryLaser
+      - CrateArmoryPistols
+      - AirCanister
+      - OxygenCanister
+      - LiquidOxygenCanister
+      - NitrogenCanister
+      - LiquidNitrogenCanister
+      - CarbonDioxideCanister
+      - LiquidCarbonDioxideCanister
+      - StorageCanister
+      - PlasmaCanister
+      - CrateHydroponicsSeedsExotic
+      - CrateHydroponicsSeedsMedicinal
+      - CrateHydroponicsTools
+      - CrateHydroponicsSeeds
+      - CratePlantBGone
+      - CargoPallet
+      - OreBox
+      - CrateCargoLuxuryHardsuit
+      - ADTCargoUtilisatorComplectCrate
+      - CrateCrewMonitoringBoards
+      - CrateEmergencyExplosive
+      - CrateEmergencyFire
+      - CrateEmergencyInternals
+      - CrateEmergencyInternalsLarge
+      - CrateEmergencyRadiation
+      - CrateEmergencyInflatablewall
+      - CrateSlimepersonLifeSupport
+      - CrateGenericBiosuit
+      - CrateEngineeringCableLV
+      - CrateEngineeringCableMV
+      - CrateEngineeringCableHV
+      - CrateEngineeringCableBulk
+      - CrateEngineeringElectricalSupplies
+      - CrateEngineeringStationBeaconBundle
+      - CrateEngineeringJetpack
+      - CrateEngineeringMiniJetpack
+      - CrateAirlockKit
+      - CrateEvaKit
+      - CrateRCDAmmo
+      - CrateRCD
+      - CrateParticleDecelerators
+      - CrateEngineeringVoidJetpack
+      - CrateEngineeringAMEJar
+      - CrateEngineeringSingularityGenerator
+      - CrateEngineeringSingularityContainment
+      - CrateEngineeringSingularityCollector
+      - CrateEngineeringParticleAccelerator
+      - CrateEngineeringSolar
+      - CrateEngineeringTeslaGenerator
+      - CrateEngineeringTeslaCoil
+      - CrateEngineeringTeslaGroundingRod
+      - CrateFoodPizza
+      - CrateFoodPizzaLarge
+      - CrateFoodMRE
+      - CrateFoodCooking
+      - CrateFoodDinnerware
+      - CrateFoodBarSupply
+      - CrateFoodSoftdrinks
+      - CrateFoodSoftdrinksLarge
+      - CrateFunInstrumentsVariety
+      - CrateFunInstrumentsBrass
+      - CrateFunInstrumentsString
+      - CrateFunInstrumentsWoodwind
+      - CrateFunInstrumentsKeyedPercussion
+      - CrateFunInstrumentsSpecial
+      - CrateFunArtSupplies
+      - CrateFunParty
+      - CrateFunWaterGuns
+      - CrateFunPlushie
+      - CrateFunLizardPlushieBulk
+      - CrateFunLightImplants
+      - CrateFunSadTromboneImplants
+      - CrateFunBoxing
+      - CrateFunPirate
+      - CrateFunToyBox
+      - CrateFunBikeHornImplants
+      - CrateFunMysteryFigurines
+      - CrateFunDartsSet
+      - CrateCargoGambling
+      - CrateNPCBee
+      - CrateNPCButterflies
+      - CrateNPCCat
+      - CrateNPCChicken
+      - CrateNPCCrab
+      - CrateNPCDuck
+      - CrateNPCPuppyCorgi
+      - CrateNPCCow
+      - CrateNPCGoat
+      - CrateNPCGoose
+      - CrateNPCGorilla
+      - CrateNPCMonkeyCube
+      - CrateNPCKoboldCube
+      - CrateNPCMouse
+      - CrateNPCParrot
+      - CrateNPCPenguin
+      - CrateNPCPig
+      - CrateNPCSnake
+      - CrateNPCHamster
+      - CrateNPCLizard
+      - CrateNPCKangaroo
+      - CrateNPCMothroach
+      - CrateNPCCorgi
+      - CrateMaterialGlass
+      - CrateMaterialSteel
+      - CrateMaterialPlastic
+      - CrateMaterialPlasteel
+      - CrateMaterialTextiles
+      - CrateMaterialPlasma
+      - CrateMaterialCardboard
+      - CrateMaterialPaper
+      - WeldingFuelTankFull
+      - WaterTankFull
+      - CrateMedicalSupplies
+      - CrateChemistrySupplies
+      - CrateChemistryVials
+      - CrateEmergencyBurnKit
+      - CrateEmergencyToxinKit
+      - CrateEmergencyO2Kit
+      - CrateEmergencyBruteKit
+      - CrateEmergencyAdvancedKit
+      - CrateEmergencyRadiationKit
+      - CrateBodyBags
+      - CrateVirologyBiosuit
+      - CrateMindShieldImplants
+      - CrateChemistryP
+      - CrateChemistryS
+      - CrateChemistryD
+      - CrateArtifactContainer
+      - RandomArtifactSpawner
+      - CrateScienceBiosuit
+      - CrateSecurityArmor
+      - CrateSecurityHelmet
+      - CrateSecurityNonlethal
+      - CrateSecurityRiot
+      - CrateSecuritySupplies
+      - CrateRestraints
+      - CrateSecurityBiosuit
+      - DeployableBarrier
+      - CrateSecurityHardsuit
+      - CrateSecurityUSSPjuggernaut
+      - Thruster
+      - Gyroscope

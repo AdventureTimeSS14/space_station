@@ -58,6 +58,18 @@ namespace Content.IntegrationTests.Tests
             "ADTNYMarathon",
             "ADTNYBagel",
             "ADTNYDelta",
+            "ADTFland",
+            "ADTMeta",
+            "ADTCluster",
+            "ADTOmega",
+            "ADTBagel",
+            "ADTOrigin",
+            "ADTBox",
+            "ADTEuropa",
+            "ADTSaltern",
+            "ADTCore",
+            "ADTMarathon",
+            "ADTAtlas",
 
             // Corvax-Start
             "CorvaxAvrite",

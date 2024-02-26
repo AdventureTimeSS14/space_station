@@ -30,7 +30,7 @@ public sealed partial class ZombieComponent : Component, IAntagStatusIconCompone
     public float MinZombieInfectionChance = 0.20f;
 
     [ViewVariables(VVAccess.ReadWrite)]
-    public float ZombieMovementSpeedDebuff = 1.2f;
+    public float ZombieMovementSpeedDebuff = 0.9f;
 
     /// <summary>
     /// The skin color of the zombie
@@ -108,10 +108,10 @@ public sealed partial class ZombieComponent : Component, IAntagStatusIconCompone
     {
         DamageDict = new ()
         {
-            { "Blunt", -1.5 },
-            { "Slash", -1.5 },
-            { "Heat", -1 },
-            { "Piercing", -1.5 }
+            { "Blunt", -0.8 },
+            { "Slash", -0.6 },
+            { "Heat", -0.6 },
+            { "Piercing", -0.6 }
         }
     };
 
@@ -119,7 +119,7 @@ public sealed partial class ZombieComponent : Component, IAntagStatusIconCompone
     /// A multiplier applied to <see cref="PassiveHealing"/> when the entity is in critical condition.
     /// </summary>
     [DataField("passiveHealingCritMultiplier")]
-    public float PassiveHealingCritMultiplier = 5f;
+    public float PassiveHealingCritMultiplier = 3f;
 
     /// <summary>
     /// Healing given when a zombie bites a living being.
@@ -129,10 +129,10 @@ public sealed partial class ZombieComponent : Component, IAntagStatusIconCompone
     {
         DamageDict = new()
         {
-            { "Blunt", -8 },
-            { "Slash", -8 },
-            { "Heat", -4 },
-            { "Piercing", -8 }
+            { "Blunt", -4 },
+            { "Slash", -4 },
+            { "Heat", -2 },
+            { "Piercing", -4 }
         }
     };
 

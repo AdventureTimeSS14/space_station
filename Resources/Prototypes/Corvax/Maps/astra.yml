@@ -1,7 +1,7 @@
 - type: gameMap
   id: CorvaxAstra
   mapName: 'Astra Station'
-  mapPath: /Maps/corvax_astra.yml
+  mapPath: /Maps/CorvaxMaps/corvax_astra.yml
   minPlayers: 30
   stations:
     Astra:

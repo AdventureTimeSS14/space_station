@@ -18,3 +18,19 @@
   - type: Construction
     graph: DuffelDurathead
     node: DuffelDurathead
+
+#дюффель детектива
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackDuffelSecurity
+  id: ClothingBackpackDuffelSecurityFilledDetective
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+      - id: BoxForensicPad
+      - id: ForensicScanner
+      - id: ADTSpaceLaw
+      - id: Flash
+      - id: SpaceCash500

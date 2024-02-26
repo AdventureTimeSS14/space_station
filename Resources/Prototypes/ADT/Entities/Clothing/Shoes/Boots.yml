@@ -237,6 +237,30 @@
 
 - type: entity
   parent: ClothingShoesBaseButcherable
+  id: ADTClothingFootWrapsBrown
+  name: brown footwraps
+  description: Pair of pieces of clothing for those who are uncomfortable with ordinary shoes.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/brown_footwraps.rsi #спрайты от floppo4ka
+    state: icon
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/brown_footwraps.rsi #спрайты от floppo4ka
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ADTClothingFootWrapsHighBrown
+  name: brown white footwraps
+  description: Pair of pieces of clothing for those who are uncomfortable with ordinary shoes.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/brownhigh_footwraps.rsi #спрайты от floppo4ka
+    state: icon
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/brownhigh_footwraps.rsi #спрайты от floppo4ka
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
   id: ADTClothingAidanShoes
   name: Aidan shoes
   description: Aidan shoes
@@ -392,3 +416,21 @@
     sprite: ADT/Clothing/Shoes/Boots/sport_zeta_crocs.rsi
   - type: Clothing
     sprite: ADT/Clothing/Shoes/Boots/sport_zeta_crocs.rsi
+
+#берцы СССП
+
+- type: entity
+  parent: ClothingShoesBootsJack
+  id: ADTClothingShoesBootsUSSPArmy
+  name: USSP combat boots
+  description: Robust combat boots for combat scenarios or combat situations. All combat, all the time.
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/army_boots.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/army_boots.rsi
+  - type: ContainerFill
+    containers:
+      item:
+      - ADTUSSPCombatKnifeBarzai

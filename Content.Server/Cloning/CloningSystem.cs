@@ -33,6 +33,9 @@ using Robust.Shared.Containers;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using Content.Shared.ADT.Cloning;
+using Robust.Shared.Serialization.Manager;
+
 
 namespace Content.Server.Cloning
 {
@@ -60,6 +63,7 @@ namespace Content.Server.Cloning
         [Dependency] private readonly SharedMindSystem _mindSystem = default!;
         [Dependency] private readonly MetaDataSystem _metaSystem = default!;
         [Dependency] private readonly SharedJobSystem _jobs = default!;
+        [Dependency] private readonly ISerializationManager _serialization = default!;
 
         public readonly Dictionary<MindComponent, EntityUid> ClonesWaitingForMind = new();
         public const float EasyModeCloningCost = 0.7f;
@@ -218,6 +222,17 @@ namespace Content.Server.Cloning
 
             if (!ev.NameHandled)
                 _metaSystem.SetEntityName(mob, MetaData(bodyToClone).EntityName);
+
+            // Transfer of special components, e.g. small/big traits
+            foreach (var comp in EntityManager.GetComponents(bodyToClone))
+            {
+                if (comp is ITransferredByCloning)
+                {
+                    var copy = _serialization.CreateCopy(comp, notNullableOverride: true);
+                    copy.Owner = mob;
+                    EntityManager.AddComponent(mob, copy, overwrite: true);
+                }
+            }
 
             var cloneMindReturn = EntityManager.AddComponent<BeingClonedComponent>(mob);
             cloneMindReturn.Mind = mind;
