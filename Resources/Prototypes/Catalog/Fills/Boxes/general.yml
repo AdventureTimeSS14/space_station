@@ -50,9 +50,6 @@
     whitelist:
       components:
       - LightBulb
-  - type: Tag
-    tags:
-      - DroneUsable
 
 - type: entity
   name: lighttube box
@@ -74,9 +71,6 @@
     whitelist:
       components:
       - LightBulb
-  - type: Tag
-    tags:
-      - DroneUsable
 
 - type: entity
   name: mixed lights box
@@ -100,9 +94,6 @@
     whitelist:
       components:
       - LightBulb
-  - type: Tag
-    tags:
-      - DroneUsable
 
 - type: entity
   name: PDA box
@@ -238,9 +229,6 @@
     layers:
       - state: box
       - state: inflatable
-  - type: Tag
-    tags:
-      - DroneUsable
 
 
 - type: entity
@@ -284,7 +272,7 @@
   - type: Storage
     grid:
     - 0,0,5,3
-    maxItemSize: Normal
+    maxItemSize: Large
     whitelist:
       tags:
         - TrashBag
@@ -292,9 +280,6 @@
     layers:
       - state: box
       - state: trashbag
-  - type: Tag
-    tags:
-      - DroneUsable
 
 - type: entity
   name: passenger encryption key box

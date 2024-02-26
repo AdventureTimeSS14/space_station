@@ -120,3 +120,13 @@
   license: "CC-BY-NC-SA-3.0"
   copyright: "taken at commit 0587dd16e28108bdf0b0a28e2caae4319845e861, and recolored by TheShuEd"
   source: "https://github.com/Mojave-Sun/mojave-sun-13"
+
+- files: ["latticeTrain.png"]
+  license: "CC0-1.0"
+  copyright: "Created by TheShuEd (github) for space-station-14."
+  source: "https://github.com/space-wizards/space-station-14/pull/24927"
+
+- files: ["wood_large.png"]
+  license: "CC0-1.0"
+  copyright: "Created by ps3moira (github) for space-station-14."
+  source: "https://github.com/space-wizards/space-station-14/"

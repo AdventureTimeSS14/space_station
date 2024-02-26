@@ -26,6 +26,7 @@
         path: /Audio/Weapons/bladeslice.ogg
   - type: Item
     size: Small
+    storedRotation: -90
 
 # Kebabs
 

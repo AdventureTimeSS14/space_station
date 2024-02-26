@@ -15,7 +15,6 @@
   - type: Tag
     tags:
     - Sheet
-    - DroneUsable
   - type: Material
   - type: Damageable
     damageContainer: Inorganic
@@ -197,7 +196,6 @@
         - ReagentId: Carbon
           Quantity: 0.5
         canReact: false
-
 
 - type: entity
   parent: SheetGlassBase

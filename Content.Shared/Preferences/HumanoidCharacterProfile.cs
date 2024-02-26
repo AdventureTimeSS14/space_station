@@ -201,7 +201,24 @@ namespace Content.Shared.Preferences
             ).ID;
             // Corvax-TTS-End
 
-            var gender = sex == Sex.Male ? Gender.Male : Gender.Female;
+            // Corvax-TTS-Start
+            var voiceId = random.Pick(prototypeManager
+                .EnumeratePrototypes<TTSVoicePrototype>()
+                .Where(o => CanHaveVoice(o, sex)).ToArray()
+            ).ID;
+            // Corvax-TTS-End
+
+            var gender = Gender.Epicene;
+
+            switch (sex)
+            {
+                case Sex.Male:
+                    gender = Gender.Male;
+                    break;
+                case Sex.Female:
+                    gender = Gender.Female;
+                    break;
+            }
 
             var name = GetName(species, gender);
 
@@ -336,6 +353,7 @@ namespace Content.Shared.Preferences
             if (pref)
             {
                 if (!list.Contains(antagId))
+                if (!list.Contains(antagId))
                 {
                     list.Add(antagId);
                 }
@@ -401,7 +419,7 @@ namespace Content.Shared.Preferences
         {
             var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
 
-            if (!prototypeManager.TryIndex<SpeciesPrototype>(Species, out var speciesPrototype))
+            if (!prototypeManager.TryIndex<SpeciesPrototype>(Species, out var speciesPrototype) || speciesPrototype.RoundStart == false)
             {
                 Species = SharedHumanoidAppearanceSystem.DefaultSpecies;
                 speciesPrototype = prototypeManager.Index<SpeciesPrototype>(Species);

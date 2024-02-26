@@ -872,33 +872,8 @@ namespace Content.Server.Database
         public byte[] Data { get; set; } = default!;
     }
 
-    public interface IAdminRemarksCommon
-    {
-        public int Id { get; }
-
-        public int? RoundId { get; }
-        public Round? Round { get; }
-
-        public Guid? PlayerUserId { get; }
-        public Player? Player { get; }
-        public TimeSpan PlaytimeAtNote { get; }
-
-        public string Message { get; }
-
-        public Player? CreatedBy { get; }
-
-        public DateTime CreatedAt { get; }
-
-        public Player? LastEditedBy { get; }
-
-        public DateTime? LastEditedAt { get; }
-        public DateTime? ExpirationTime { get; }
-
-        public bool Deleted { get; }
-    }
-
     [Index(nameof(PlayerUserId))]
-    public class AdminNote : IAdminRemarksCommon
+    public class AdminNote
     {
         [Required, Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)] public int Id { get; set; }
 
@@ -932,7 +907,7 @@ namespace Content.Server.Database
     }
 
     [Index(nameof(PlayerUserId))]
-    public class AdminWatchlist : IAdminRemarksCommon
+    public class AdminWatchlist
     {
         [Required, Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)] public int Id { get; set; }
 
@@ -963,7 +938,7 @@ namespace Content.Server.Database
     }
 
     [Index(nameof(PlayerUserId))]
-    public class AdminMessage : IAdminRemarksCommon
+    public class AdminMessage
     {
         [Required, Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)] public int Id { get; set; }
 

@@ -448,6 +448,14 @@
 
 - type: entity
   parent: AirlockGlass
+  id: AirlockTheatreGlassLocked
+  suffix: Theatre, Locked
+  components:
+  - type: AccessReader
+    access: [["Theatre"]]
+
+- type: entity
+  parent: AirlockGlass
   id: AirlockBarGlassLocked
   suffix: Bar, Locked
   components:
@@ -525,6 +533,14 @@
   components:
   - type: AccessReader
     access: [["Kitchen"]]
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockJanitorGlassLocked
+  suffix: Janitor, Locked
+  components:
+  - type: AccessReader
+    access: [["Janitor"]]
 
 - type: entity
   parent: AirlockGlass

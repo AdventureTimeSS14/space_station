@@ -173,7 +173,7 @@ namespace Content.Server.Database
             if (!includeUnbanned)
             {
                 query = query.Where(p =>
-                    p.Unban == null && (p.ExpirationTime == null || p.ExpirationTime.Value > DateTime.Now));
+                    p.Unban == null && (p.ExpirationTime == null || p.ExpirationTime.Value > DateTime.UtcNow));
             }
 
             if (exemptFlags is { } exempt)
@@ -376,7 +376,7 @@ namespace Content.Server.Database
             if (!includeUnbanned)
             {
                 query = query?.Where(p =>
-                    p.Unban == null && (p.ExpirationTime == null || p.ExpirationTime.Value > DateTime.Now));
+                    p.Unban == null && (p.ExpirationTime == null || p.ExpirationTime.Value > DateTime.UtcNow));
             }
 
             query = query!.Distinct();
@@ -479,17 +479,6 @@ namespace Content.Server.Database
         }
         #endregion
 
-        protected override PlayerRecord MakePlayerRecord(Player record)
-        {
-            return new PlayerRecord(
-                new NetUserId(record.UserId),
-                new DateTimeOffset(record.FirstSeenTime),
-                record.LastSeenUserName,
-                new DateTimeOffset(record.LastSeenTime),
-                record.LastSeenAddress,
-                record.LastSeenHWId?.ToImmutableArray());
-        }
-
         public override async Task<int> AddConnectionLogAsync(
             NetUserId userId,
             string userName,
@@ -552,6 +541,12 @@ WHERE to_tsvector('english'::regconfig, a.message) @@ websearch_to_tsquery('engl
             }
 
             return db.AdminLog;
+        }
+
+        protected override DateTime NormalizeDatabaseTime(DateTime time)
+        {
+            DebugTools.Assert(time.Kind == DateTimeKind.Utc);
+            return time;
         }
 
         private async Task<DbGuardImpl> GetDbImpl([CallerMemberName] string? name = null)

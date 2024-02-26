@@ -272,11 +272,11 @@
       - id: ClothingHeadsetAltMedical
       - id: ClothingCloakCmo
       - id: ClothingBackpackDuffelSurgeryFilled
-      - id: ClothingOuterCoatLabCmo
       - id: ClothingMaskSterile
       - id: ClothingHeadHatBeretCmo
       - id: ClothingOuterHardsuitMedical
       - id: Hypospray
+      - id: HandheldCrewMonitor
       - id: HandheldCrewMonitor
       - id: DoorRemoteMedical
       - id: RubberStampCMO
@@ -354,6 +354,7 @@
       - id: ADTtelescopicBaton
       - id: ClothingHeadsetAltScience
       - id: BoxEncryptionKeyScience
+      - id: ClothingHeadsetAltScience
       - id: BoxEncryptionKeyRobo
       # Sirena-Underwear-Start
       - id: ADTUnderwearBoxRD
@@ -381,6 +382,7 @@
       - id: RubberStampRd
       - id: ClothingHeadsetAltScience
       - id: BoxEncryptionKeyScience
+      - id: ClothingHeadsetAltScience
       - id: BoxEncryptionKeyRobo
       # Sirena-Underwear-Start
       - id: ADTUnderwearBoxRD
@@ -403,6 +405,7 @@
       - id: ClothingHeadHatHoshat
       - id: ClothingNeckCloakHos
       - id: ClothingOuterCoatHoSTrench
+      - id: ClothingMaskNeckGaiter
       - id: ClothingOuterCoatHoSGreatcoat # Corvax-Resprite
       - id: ADTHOSJumpsuitWarm
       - id: ADTHOSJumpskirtWarm
@@ -450,6 +453,7 @@
       - id: ClothingHeadHatHoshat
       - id: ClothingNeckCloakHos
       - id: ClothingOuterCoatHoSTrench
+      - id: ClothingMaskNeckGaiter
       - id: ClothingOuterCoatHoSGreatcoat # Corvax-Resprite
       - id: ADTHOSJumpskirtWarm
       - id: ADTHOSJumpsuitWarm

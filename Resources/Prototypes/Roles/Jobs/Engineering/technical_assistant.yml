@@ -23,6 +23,7 @@
     id: TechnicalAssistantPDA
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
+    pocket2: BookEngineersHandbook
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
