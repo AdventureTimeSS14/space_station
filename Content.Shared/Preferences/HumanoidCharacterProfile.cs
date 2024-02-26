@@ -201,13 +201,6 @@ namespace Content.Shared.Preferences
             ).ID;
             // Corvax-TTS-End
 
-            // Corvax-TTS-Start
-            var voiceId = random.Pick(prototypeManager
-                .EnumeratePrototypes<TTSVoicePrototype>()
-                .Where(o => CanHaveVoice(o, sex)).ToArray()
-            ).ID;
-            // Corvax-TTS-End
-
             var gender = Gender.Epicene;
 
             switch (sex)
