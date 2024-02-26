@@ -588,6 +588,29 @@
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/urs_hat.rsi
 
+#шлем "Сфера" СССП
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHelmetUSSPSfera
+  name: sfera helmet
+  description: Standard security gear. Protects the head from impacts.
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Helmets/ussp_sfera.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Helmets/ussp_sfera.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.8
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+
 # medical update
 - type: entity
   parent: ClothingHeadBase

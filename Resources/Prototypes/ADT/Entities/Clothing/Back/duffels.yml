@@ -52,3 +52,4 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Back/paramedic_duffel.rsi
+      - id: SpaceCash500

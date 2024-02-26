@@ -101,13 +101,14 @@
       #- id: PaperOffice
       #  amount: 20
       - id: ADTInvestigatorBoxFolderBase
-        amount: 2
+        amount: 1
       - id: ADTInvestigatorBoxFolderRed
         amount: 2
       - id: ADTInvestigatorBoxFolderBlue
-        amount: 2
+        amount: 1
       - id: ADTBookInvestigator
       - id: ADTRubberStampinvestigator
+      - id: SpaceCash500
 
 - type: entity
   #noSpawn: true
@@ -127,13 +128,14 @@
       #- id: PaperOffice
       #  amount: 20
       - id: ADTInvestigatorBoxFolderBase
-        amount: 2
+        amount: 1
       - id: ADTInvestigatorBoxFolderRed
         amount: 2
       - id: ADTInvestigatorBoxFolderBlue
-        amount: 2
+        amount: 1
       - id: ADTBookInvestigator
       - id: ADTRubberStampinvestigator
+      - id: SpaceCash500
 
 - type: entity
   #noSpawn: true
@@ -155,13 +157,14 @@
       #- id: MaterialCardboard1
       #  amount: 2
       - id: ADTInvestigatorBoxFolderBase
-        amount: 2
+        amount: 1
       - id: ADTInvestigatorBoxFolderRed
         amount: 2
       - id: ADTInvestigatorBoxFolderBlue
-        amount: 2
+        amount: 1
       - id: ADTBookInvestigator
       - id: ADTRubberStampinvestigator
+      - id: SpaceCash500
 
 # Приколы Патологоанатома
 - type: entity
@@ -326,3 +329,22 @@
       - id: ForensicScanner
       - id: ADTSpaceLaw
       - id: Flash
+      - id: SpaceCash500
+
+#РКС-2 - рюкзак СССП
+
+- type: entity
+  parent: ClothingBackpack
+  id: ADTClothingBackpackRKS2
+  name: backpack "RKS-2"
+  description: combined arms backpack
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Back/backpack_RKS2.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+  - type: Storage
+    grid:
+    - 0,0,7,3
+    maxItemSize: Huge

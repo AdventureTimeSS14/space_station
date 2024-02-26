@@ -12,3 +12,19 @@
       layers:
       - state: crypt_silver
       - state: nano_label
+
+- type: entity
+  parent: EncryptionKey
+  id: ADTEncryptionKeyUSSP
+  name: USSP encryption key
+  description: USSP Forces radio channel encryption key.
+  components:
+    - type: EncryptionKey
+      channels:
+      - ADTUSSPChannel
+      - Common
+      defaultChannel: ADTUSSPChannel
+    - type: Sprite
+      layers:
+      - state: crypt_silver
+      - state: nano_label
