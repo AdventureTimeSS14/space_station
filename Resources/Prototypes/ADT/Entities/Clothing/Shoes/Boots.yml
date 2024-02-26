@@ -237,6 +237,30 @@
 
 - type: entity
   parent: ClothingShoesBaseButcherable
+  id: ADTClothingFootWrapsBrown
+  name: brown footwraps
+  description: Pair of pieces of clothing for those who are uncomfortable with ordinary shoes.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/brown_footwraps.rsi #спрайты от floppo4ka
+    state: icon
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/brown_footwraps.rsi #спрайты от floppo4ka
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ADTClothingFootWrapsHighBrown
+  name: brown white footwraps
+  description: Pair of pieces of clothing for those who are uncomfortable with ordinary shoes.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Shoes/Boots/brownhigh_footwraps.rsi #спрайты от floppo4ka
+    state: icon
+  - type: Clothing
+    sprite: ADT/Clothing/Shoes/Boots/brownhigh_footwraps.rsi #спрайты от floppo4ka
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
   id: ADTClothingAidanShoes
   name: Aidan shoes
   description: Aidan shoes

@@ -110,8 +110,10 @@
     ADTClothingSandals: 3
     ADTClothingFootWrapsWhite: 3
     ADTClothingFootWrapsBlack: 3
+    ADTClothingFootWrapsBrown: 3
     ADTClothingFootWrapsHighWhite: 3
     ADTClothingFootWrapsHighBlack: 3
+    ADTClothingFootWrapsHighBrown: 3
     ADTClothingUniformTurtleneckBlack: 2
     ADTClothingUniformTurtleneckBlackWomen: 2
     ADTClothingUniformTurtleneckGrey: 2
