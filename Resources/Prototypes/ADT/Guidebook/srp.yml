@@ -352,6 +352,7 @@
   - SrpMedicSenyor
   - SrpMedicParamed
   - SrpMedicMedic
+  - SrpMedicMedicPatologoanatom
   - SrpMedicChimestry
   - SrpMedicPhsiholog
   - SrpMedicIntern
@@ -380,7 +381,6 @@
   children:
   - SrpMedicMedicVirusolog
   - SrpMedicMedicHirurg
-  - SrpMedicMedicPatologoanatom
 
 - type: guideEntry
   id: SrpMedicMedicVirusolog

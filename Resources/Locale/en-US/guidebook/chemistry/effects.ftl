@@ -344,3 +344,9 @@ reagent-effect-guidebook-missing =
         [1] Causes
         *[other] cause
     } an unknown effect as nobody has written this effect yet
+
+reagent-effect-guidebook-embalm = 
+    { $chance ->
+        [1] Prevents
+        *[other] prevent
+    } the rotting of the corpses

@@ -22,3 +22,21 @@
       - id: Wirecutter
       - id: Welder
       - id: Multitool
+
+- type: entity
+  parent: ClothingBackpack
+  id: ADTClothingBackpackSatchelMedical
+  name: medical satchel
+  description: A satchel to hold medical equipment
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Satchels/genetics.rsi
+
+- type: entity
+  parent: ClothingBackpack
+  id: ADTClothingSatchelParamedic
+  name: paramedical satchel
+  description: A satchel to store some paramedical equipment.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Back/paramedic_satchel.rsi
