@@ -81,30 +81,30 @@
     - GalacticCommon
     - RobotTalk
 
-- type: entity
-  name: drone
-  id: Drone
-  parent: PlayerSiliconBase
-  components:
-  - type: Drone
-  - type: InnateTool
-    tools:
-      - id: ClothingBackpackSatchelDrone
-      - id: trayScanner
-      - id: Omnitool
-      - id: WelderExperimental
-  - type: NameIdentifier
-    group: Drone
-  - type: Inventory
-    templateId: drone
-  - type: InventorySlots
-  - type: Strippable
-  - type: UserInterface
-    interfaces:
-    - key: enum.StrippingUiKey.Key
-      type: StrippableBoundUserInterface
-    - key: enum.SiliconLawsUiKey.Key
-      type: SiliconLawBoundUserInterface
+# - type: entity
+#   name: drone
+#   id: Drone
+#   parent: PlayerSiliconBase
+#   components:
+#   - type: Drone
+#   - type: InnateTool
+#     tools:
+#       - id: ClothingBackpackSatchelDrone
+#       - id: trayScanner
+#       - id: Omnitool
+#       - id: WelderExperimental
+#   - type: NameIdentifier
+#     group: Drone
+#   - type: Inventory
+#     templateId: drone
+#   - type: InventorySlots
+#   - type: Strippable
+#   - type: UserInterface
+#     interfaces:
+#     - key: enum.StrippingUiKey.Key
+#       type: StrippableBoundUserInterface
+#     - key: enum.SiliconLawsUiKey.Key
+#       type: SiliconLawBoundUserInterface
   #- type: GhostRole
   #  makeSentient: true
   #  name: Maintenance Drone
@@ -115,94 +115,94 @@
   #   2. You may not harm any being, regardless of intent or circumstance.
   #   3. Your goals are to build, maintain, repair, improve, and power to the best of your abilities, You must never actively work against these goals.
   #- type: GhostTakeoverAvailable
-  - type: SiliconLawBound
-  - type: SiliconLawProvider
-    laws: Drone
-  - type: MovementSpeedModifier
-    baseWalkSpeed : 5
-    baseSprintSpeed : 5
-  - type: MobState
-    allowedStates:
-      - Alive
-      - Dead
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      60: Dead
-  - type: Flashable
-  - type: NoSlip
-  - type: StatusEffects
-    allowed:
-    - Stun
-    - KnockedDown
-    - SlowedDown
-  - type: SlowOnDamage
-    speedModifierThresholds:
-      30: 0.7
-      50: 0.5
-  - type: Temperature
-    heatDamageThreshold: 5000
-    currentTemperature: 310.15
-    specificHeat: 42
-    heatDamage:
-      types:
-        Heat : 1 #per second, scales with temperature & other constants
-  - type: Sprite
-    drawdepth: SmallMobs
-    layers:
-    - state: shell
-      sprite: Mobs/Silicon/drone.rsi
-      map: ["base"]
-  - type: MovementIgnoreGravity
-  - type: IntrinsicRadioTransmitter
-    channels:
-    - ADTSilicon
-  - type: ActiveRadio
-    channels:
-    - ADTSilicon
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.35
-        density: 50
-        mask:
-        - SmallMobMask
-        layer:
-        - SmallMobLayer
-  - type: Appearance
-  - type: GenericVisualizer
-    visuals:
-      enum.DroneVisuals.Status:
-        base:
-          Off: { state: shell }
-          On: { state: drone }
-#  - type: ReplacementAccent
-#    accent: silicon
-  - type: Repairable
-    fuelcost: 15
-    doAfterDelay: 8
-  - type: Actions
-  - type: UnpoweredFlashlight
-  - type: PointLight
-    enabled: false
-    radius: 3.5
-    softness: 1
-    mask: /Textures/Effects/LightMasks/cone.png
-    autoRot: true
-  - type: Tag
-    tags:
-      - ShoesRequiredStepTriggerImmune
-      - CannotSuicide
-  - type: StaticPrice
-    price: 250
-  # Frontier - languages mechanic
-  - type: LanguageSpeaker
-    speaks:
-    - RobotTalk
-    understands:
-    - RobotTalk
+#   - type: SiliconLawBound
+#   - type: SiliconLawProvider
+#     laws: Drone
+#   - type: MovementSpeedModifier
+#     baseWalkSpeed : 5
+#     baseSprintSpeed : 5
+#   - type: MobState
+#     allowedStates:
+#       - Alive
+#       - Dead
+#   - type: MobThresholds
+#     thresholds:
+#       0: Alive
+#       60: Dead
+#   - type: Flashable
+#   - type: NoSlip
+#   - type: StatusEffects
+#     allowed:
+#     - Stun
+#     - KnockedDown
+#     - SlowedDown
+#   - type: SlowOnDamage
+#     speedModifierThresholds:
+#       30: 0.7
+#       50: 0.5
+#   - type: Temperature
+#     heatDamageThreshold: 5000
+#     currentTemperature: 310.15
+#     specificHeat: 42
+#     heatDamage:
+#       types:
+#         Heat : 1 #per second, scales with temperature & other constants
+#   - type: Sprite
+#     drawdepth: SmallMobs
+#     layers:
+#     - state: shell
+#       sprite: Mobs/Silicon/drone.rsi
+#       map: ["base"]
+#   - type: MovementIgnoreGravity
+#   - type: IntrinsicRadioTransmitter
+#     channels:
+#     - ADTSilicon
+#   - type: ActiveRadio
+#     channels:
+#     - ADTSilicon
+#   - type: Fixtures
+#     fixtures:
+#       fix1:
+#         shape:
+#           !type:PhysShapeCircle
+#           radius: 0.35
+#         density: 50
+#         mask:
+#         - SmallMobMask
+#         layer:
+#         - SmallMobLayer
+#   - type: Appearance
+#   - type: GenericVisualizer
+#     visuals:
+#       enum.DroneVisuals.Status:
+#         base:
+#           Off: { state: shell }
+#           On: { state: drone }
+# #  - type: ReplacementAccent
+# #    accent: silicon
+#   - type: Repairable
+#     fuelcost: 15
+#     doAfterDelay: 8
+#   - type: Actions
+#   - type: UnpoweredFlashlight
+#   - type: PointLight
+#     enabled: false
+#     radius: 3.5
+#     softness: 1
+#     mask: /Textures/Effects/LightMasks/cone.png
+#     autoRot: true
+#   - type: Tag
+#     tags:
+#       - ShoesRequiredStepTriggerImmune
+#       - CannotSuicide
+#   - type: StaticPrice
+#     price: 250
+#   # Frontier - languages mechanic
+#   - type: LanguageSpeaker
+#     speaks:
+#     - RobotTalk
+#     understands:
+#     - RobotTalk
 
 
 - type: entity

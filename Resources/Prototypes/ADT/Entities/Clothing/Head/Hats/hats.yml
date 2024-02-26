@@ -5,9 +5,9 @@
   name: True detective hat
   description: This hat is worthy of a real detactive
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/true_detective_hat.rsi
   - type: Clothing
@@ -20,9 +20,9 @@
   name: Great Druid Wreath
   description: So heavy, but it's worth it to proudly wear it.
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/great_druid_wreath.rsi
   - type: Clothing
@@ -34,9 +34,9 @@
   name: Bat hat
   description: The same as Fin, only it's Remilia.
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/bat_hat.rsi
   - type: Clothing
@@ -48,9 +48,9 @@
   name: Dungeon Master Hat
   description: Dungeon Master Hat.
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/dungeon_master.rsi
   - type: Clothing
@@ -74,9 +74,9 @@
   name: Pyotr`s cap
   description: Standart officer`s cap from Pyotr Shahin`s homeworld
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/pyotr_cap.rsi
   - type: Clothing
@@ -89,9 +89,9 @@
   name: Johans`s cap
   description: Looks strange but cool
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/johan_cap.rsi
   - type: Clothing
@@ -104,9 +104,9 @@
   name: investigator cap
   description: Glory to NanoTrasen!
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/investigator_cap.rsi
   - type: Clothing
@@ -119,9 +119,9 @@
   name: Mendoza`s cap
   description: The purple cap of a certain Alexei Mendoza. At the back is a large cross drawn with a marker. Next to it are fourteen more of the same small crosses. The owner of the cap jokes that this is the number of his escapes from brig.
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/mendosa_soft.rsi
   - type: Clothing
@@ -136,9 +136,9 @@
   description: Traditional bavarian hat
   suffix: Oktoberfest
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hat.rsi #спрайты от SHIONE
   - type: Clothing
@@ -151,9 +151,9 @@
   description: Traditional bavarian hat with a blue border
   suffix: Oktoberfest
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatborderblue.rsi #спрайты от SHIONE
   - type: Clothing
@@ -166,9 +166,9 @@
   description: Traditional bavarian hat with a red border
   suffix: Oktoberfest
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatborderred.rsi #спрайты от SHIONE
   - type: Clothing
@@ -181,9 +181,9 @@
   description: Traditional bavarian hat with a green border
   suffix: Oktoberfest
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatbordergreen.rsi #спрайты от SHIONE
   - type: Clothing
@@ -196,9 +196,9 @@
   description: Traditional bavarian blue hat with a feather
   suffix: Oktoberfest
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatblue.rsi #спрайты от SHIONE
   - type: Clothing
@@ -211,9 +211,9 @@
   description: Traditional bavarian green hat with a feather
   suffix: Oktoberfest
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatgreen.rsi #спрайты от SHIONE
   - type: Clothing
@@ -226,9 +226,9 @@
   description: Traditional bavarian red hat with a feather
   suffix: Oktoberfest
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatred.rsi #спрайты от SHIONE
   - type: Clothing

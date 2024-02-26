@@ -4,9 +4,9 @@
   name: oriental ears
   description: "NYAH!"
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/orientalears.rsi
   - type: Clothing
@@ -20,9 +20,9 @@
   name: gift for October
   description: "On the inside is scrawled 'For the one whose hair is the color of lilac'. This smells like a joy and happy"
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/orientalears.rsi
   - type: Clothing

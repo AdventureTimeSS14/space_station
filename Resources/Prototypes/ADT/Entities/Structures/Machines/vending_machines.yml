@@ -13,9 +13,9 @@
   - type: Advertise
     pack: ClothesMateAds
   - type: Speech
-  - type: Tag
-    tags:
-      - DroneUsable
+  # - type: Tag
+  #   tags:
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Structures/Machines/VendingMachines/prazatomat.rsi
     layers:
@@ -47,9 +47,9 @@
   #- type: Advertise
   #  pack: ClothesMateAds
   - type: Speech
-  - type: Tag
-    tags:
-      - DroneUsable
+  # - type: Tag
+  #   tags:
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Structures/Machines/VendingMachines/halloweenmat.rsi
     layers:
@@ -81,9 +81,9 @@
   #- type: Advertise
   #  pack: ClothesMateAds
   - type: Speech
-  - type: Tag
-    tags:
-      - DroneUsable
+  # - type: Tag
+  #   tags:
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Structures/Machines/VendingMachines/newyearmate.rsi
     layers:
@@ -114,9 +114,9 @@
   - type: Advertise
     pack: ClothesMateAds
   - type: Speech
-  - type: Tag
-    tags:
-      - DroneUsable
+  # - type: Tag
+  #   tags:
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Structures/Machines/VendingMachines/mastersportdrobe.rsi
     layers:

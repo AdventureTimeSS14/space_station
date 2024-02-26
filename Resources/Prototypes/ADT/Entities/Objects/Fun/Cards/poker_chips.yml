@@ -19,7 +19,7 @@
   - type: Appearance
   - type: Tag
     tags:
-      - DroneUsable
+      # - DroneUsable
       - ADTCardPlay
   # - type: StaticPrice
   #   price: 1
@@ -93,7 +93,7 @@
   - type: Appearance
   - type: Tag
     tags:
-      - DroneUsable
+      # - DroneUsable
       - ADTCardPlay
   # - type: StaticPrice
   #   price: 1
@@ -132,7 +132,7 @@
   - type: Appearance
   - type: Tag
     tags:
-      - DroneUsable
+      # - DroneUsable
       - ADTCardPlay
   # - type: StaticPrice
   #   price: 1
@@ -171,7 +171,7 @@
   - type: Appearance
   - type: Tag
     tags:
-      - DroneUsable
+      # - DroneUsable
       - ADTCardPlay
   # - type: StaticPrice
   #   price: 1
@@ -210,7 +210,7 @@
   - type: Appearance
   - type: Tag
     tags:
-      - DroneUsable
+      # - DroneUsable
       - ADTCardPlay
   # - type: StaticPrice
   #   price: 1
@@ -246,7 +246,7 @@
   - type: Appearance
   - type: Tag
     tags:
-      - DroneUsable
+      # - DroneUsable
       - ADTCardPlay
   # - type: StaticPrice
   #   price: 1

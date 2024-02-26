@@ -116,9 +116,9 @@
   name: the cap of the Admiral of the USSP fleet
   description: A terribly clean and well-groomed cap. The obtrusive headdress of admirals in the space Fleet.
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/admiral_USSP_cap.rsi
   - type: Clothing
@@ -130,9 +130,9 @@
   name: the cap of the captain of the SSS fleet
   description: The obtrusive headdress of captains in the space Fleet.
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/captain_USSP_cap.rsi
   - type: Clothing
@@ -144,9 +144,9 @@
   name: the cap of an officer of the USSP Space Fleet
   description: An obligatory part of the uniform of a field and staff officer of the Space Fleet of the USSP. The cap has the emblem of the Space Forces of the USSP.
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/officer_USSP_cap.rsi
   - type: Clothing

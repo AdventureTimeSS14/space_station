@@ -26,7 +26,7 @@
           Off: { state: back-off }
   - type: Tag
     tags:
-      - DroneUsable
+      # - DroneUsable
       - ADTCardPlay
   - type: StaticPrice
     price: 1

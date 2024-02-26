@@ -4,9 +4,9 @@
   name: Priest hat
   description: "to do"
   components:
-  - type: Tag
-    tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+  # - type: Tag
+  #   tags: # ignore "WhitelistChameleon" tag
+  #     - DroneUsable
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/priest_weddind_hat.rsi
   - type: Clothing
