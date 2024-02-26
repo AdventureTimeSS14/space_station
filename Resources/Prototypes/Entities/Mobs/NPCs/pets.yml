@@ -128,6 +128,13 @@
     tags:
     - CannotSuicide
     - VimPilot
+  - type: LanguageSpeaker # Frontier
+    speaks:
+    - Cat
+    understands:
+    - GalacticCommon
+    - Cat
+
 
 - type: entity
   name: Exception
@@ -146,6 +153,13 @@
     tags:
     - CannotSuicide
     - VimPilot
+  - type: LanguageSpeaker # Frontier
+    speaks:
+    - Cat
+    understands:
+    - GalacticCommon
+    - Cat
+
 
 - type: entity
   name: Floppa
@@ -179,6 +193,13 @@
       path: /Audio/ADT/carakal_purr.ogg
     interactFailureSound:
       path: /Audio/ADT/carakal_hiss.ogg
+  - type: LanguageSpeaker # Frontier
+    speaks:
+    - Cat
+    understands:
+    - GalacticCommon
+    - Cat
+
 
 - type: entity
   name: Bandito
@@ -303,8 +324,8 @@
     spawned:
     - id: FoodMeat
       amount: 2
-  - type: ReplacementAccent
-    accent: dog
+  #- type: ReplacementAccent
+  #  accent: dog
   - type: InteractionPopup
     successChance: 0.5
     interactSuccessString: petting-success-dog
@@ -322,6 +343,13 @@
     - VimPilot
   - type: StealTarget
     stealGroup: AnimalMcGriff
+  - type: LanguageSpeaker # Frontier
+    speaks:
+    - Dog
+    understands:
+    - GalacticCommon
+    - Dog
+
 
 - type: entity
   name: Paperwork
@@ -402,8 +430,8 @@
     spawned:
     - id: FoodMeat
       amount: 3
-  - type: ReplacementAccent
-    accent: dog
+  #- type: ReplacementAccent
+  #  accent: dog
   - type: InteractionPopup
     successChance: 0.7
     interactSuccessString: petting-success-dog
@@ -421,6 +449,13 @@
     - VimPilot
   - type: StealTarget
     stealGroup: AnimalWalter
+  - type: LanguageSpeaker # Frontier
+    speaks:
+    - Dog
+    understands:
+    - GalacticCommon
+    - Dog
+
 
 - type: entity
   name: Morty
@@ -619,6 +654,13 @@
     - VimPilot
   - type: StealTarget
     stealGroup: AnimalHamlet
+  - type: LanguageSpeaker # Frontier
+    speaks:
+    - Mouse
+    understands:
+    - GalacticCommon
+    - Mouse
+
 
 - type: entity
   name: Shiva
@@ -820,6 +862,13 @@
       gender: male
   - type: StealTarget
     stealGroup: AnimalPunPun
+  - type: LanguageSpeaker # Frontier
+    speaks:
+    - Monkey
+    understands:
+    - GalacticCommon
+    - Monkey
+
 
 - type: entity
   name: Tropico
