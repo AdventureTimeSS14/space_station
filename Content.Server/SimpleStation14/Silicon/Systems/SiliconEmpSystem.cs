@@ -1,5 +1,5 @@
 using Content.Server.Emp;
-using Content.Server.Speech.Muting;
+using Content.Shared.Speech.Muting;
 using Content.Server.Stunnable;
 using Content.Shared.CombatMode.Pacification;
 using Content.Shared.Eye.Blinding.Components;
