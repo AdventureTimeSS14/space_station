@@ -83,7 +83,7 @@
   - type: Defibrillator
     zapHeal:
       types:
-        Asphyxiation: -25
+        Asphyxiation: -45
     doAfterDuration: 2
     zapDelay: 3
     powerOnSound:
@@ -94,7 +94,7 @@
       path: /Audio/ADT/Items/Medical/Defibs/highvolt-defib_charge.ogg
     zapSound:
       path: /Audio/ADT/Items/Medical/Defibs/highvolt-defib_zap.ogg
-    zapDamage: 30
+    zapDamage: 25
     writheDuration: 10
 
 - type: entity
