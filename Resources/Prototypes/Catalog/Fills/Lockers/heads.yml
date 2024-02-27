@@ -276,6 +276,9 @@
       - id: ClothingHeadHatBeretCmo
       - id: ClothingOuterHardsuitMedical
       - id: Hypospray
+      - id: ADTBookNewChemicals
+      - id: ADTReagentAnalyzer
+      - id: ADTMobileDefibrillator
       - id: HandheldCrewMonitor
       - id: HandheldCrewMonitor
       - id: DoorRemoteMedical
@@ -294,6 +297,8 @@
       # Sirena-Underwear-Start
       - id: ADTUnderwearBoxCMO
       # Sirena-Underwear-End
+      - id: ADTBriefcaseBrownHikingCmo
+      - id: ADTClothingBeltMedicalBagFilled
 
 
 - type: entity
@@ -313,6 +318,9 @@
       - id: ClothingMaskSterile
       - id: ClothingHeadHatBeretCmo
       - id: Hypospray
+      - id: ADTBookNewChemicals
+      - id: ADTReagentAnalyzer
+      - id: ADTMobileDefibrillator
       - id: HandheldCrewMonitor
       - id: DoorRemoteMedical
       - id: RubberStampCMO
@@ -331,6 +339,8 @@
       # Sirena-Underwear-Start
       - id: ADTUnderwearBoxCMO
       # Sirena-Underwear-End
+      - id: ADTBriefcaseBrownHikingCmo
+      - id: ADTClothingBeltMedicalBagFilled
 
 - type: entity
   id: LockerResearchDirectorFilledHardsuit

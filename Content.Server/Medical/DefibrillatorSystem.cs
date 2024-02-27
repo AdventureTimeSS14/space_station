@@ -23,6 +23,7 @@ using Content.Shared.Toggleable;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
+using Content.Shared.Atmos.Miasma;
 
 namespace Content.Server.Medical;
 
@@ -217,6 +218,13 @@ public sealed class DefibrillatorSystem : EntitySystem
         ICommonSession? session = null;
 
         var dead = true;
+
+        if (HasComp<EmbalmedComponent>(target))
+        {
+            _chatManager.TrySendInGameICMessage(uid, Loc.GetString("defibrillator-embalmed"),
+                InGameICChatType.Speak, true);
+        }
+        else
         if (_rotting.IsRotten(target))
         {
             _chatManager.TrySendInGameICMessage(uid, Loc.GetString("defibrillator-rotten"),

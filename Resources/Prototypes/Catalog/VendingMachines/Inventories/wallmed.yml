@@ -3,6 +3,8 @@
   startingInventory:
     Brutepack: 3
     Ointment: 3
+    ADTAntibioticOintment: 3
     Bloodpack: 3
+    ADTMedicalTourniquet: 5
     EpinephrineChemistryBottle: 3
     Syringe: 3

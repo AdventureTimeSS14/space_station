@@ -14,9 +14,13 @@
         amount: 2
       - id: Ointment
         amount: 2
+      - id: ADTAntibioticOintment
+        amount: 2
       - id: Bloodpack
         amount: 2
       - id: Gauze
+      - id: ADTMedicalTourniquet
+        amount: 3
 
 - type: entity
   id: LockerWallMedicalFilled
@@ -33,10 +37,13 @@
         amount: 2
       - id: Ointment
         amount: 2
+      - id: ADTAntibioticOintment
+        amount: 2
       - id: Bloodpack
         amount: 2
       - id: Gauze
-
+      - id: ADTMedicalTourniquet
+        amount: 3
 
 - type: entity
   id: LockerMedicalFilled
@@ -50,6 +57,7 @@
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetMedical
       - id: ClothingEyesHudMedical #Removed until working properly
+      - id: ADTClothingBeltMedicalBag
       - id: ClothingBeltMedical
       - id: ClothingHeadHatSurgcapGreen
         prob: 0.1
@@ -84,6 +92,7 @@
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetMedical
       - id: ClothingEyesHudMedical #Removed until working properly
+      - id: ADTClothingBeltMedicalBag
       - id: ClothingBeltMedical
       - id: ClothingHeadHatSurgcapGreen
         prob: 0.1
@@ -121,11 +130,14 @@
         amount: 2
       - id: BoxVial
       - id: ChemBag
+      - id: ADTClothingBeltMedicalBag
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetMedical
       - id: ClothingMaskSterile
       - id: HandLabeler
         prob: 0.5
+      - id: ADTReagentAnalyzer
+      - id: ADTSmallSyringeBox
 
 - type: entity
   id: LockerParamedicFilled
@@ -139,14 +151,20 @@
       - id: ADTClothingOuterParamedicVoidHardsuit
       - id: ClothingOuterCoatParamedicWB
       - id: ClothingHeadHatParamedicsoft
+      - id: ADTClothingHeadHatsParamedicBeret
       - id: ClothingOuterWinterPara
       - id: ClothingUniformJumpsuitParamedic
       - id: ClothingUniformJumpskirtParamedic
       - id: ClothingEyesHudMedical
       - id: Defibrillator
       - id: ClothingHandsGlovesLatex
-      - id: ClothingHeadsetMedical
+      - id: ADTClothingHeadsetParamedic
+      - id: ADTClothingOuterCoatLabParamedic
       - id: ClothingMaskSterile
+      - id: ADTMedicalTourniquet
+        amount: 3
       - id: HandheldGPSBasic
       - id: MedkitFilled
         prob: 0.3
+      - id: ADTClothingHeadHatHoodBioParamedic
+      - id: ADTClothingOuterBioParamedic

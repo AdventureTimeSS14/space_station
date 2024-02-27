@@ -5,7 +5,7 @@ public static class SkinColor
     public const float MaxTintedHuesSaturation = 0.1f;
     public const float MinTintedHuesLightness = 0.85f;
 
-    public const float MinHuesLightness = 0.175f;
+    public const float MinHuesLightness = 0.025f;
 
     public static Color ValidHumanSkinTone => Color.FromHsv(new Vector4(0.07f, 0.2f, 1f, 1f));
 

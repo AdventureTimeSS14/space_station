@@ -13,7 +13,7 @@
     torso:
       part: TorsoKobolt
       organs:
-        heart: OrganAnimalHeart
+        heart: OrganReptilianHeart
         lungs: OrganHumanLungs
         stomach: OrganKoboltStomach
         liver: OrganAnimalLiver

@@ -1,6 +1,6 @@
 - type: entity
   noSpawn: true
-  parent: ClothingBackpackSatchelMedical
+  parent: ADTClothingSatchelParamedic
   id: ADTClothingBackpackSatchelParamedicalFilled
   components:
   - type: StorageFill

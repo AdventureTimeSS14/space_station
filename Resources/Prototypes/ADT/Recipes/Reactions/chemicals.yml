@@ -9,3 +9,13 @@
       amount: 1
   products:
     ADTUltraChloralHydrate: 1
+
+- type: reaction
+  id: ADTCopperNitride
+  reactants:
+    Copper:
+      amount: 3
+    Nitrogen:
+      amount: 1
+  products:
+    ADTCopperNitride: 3

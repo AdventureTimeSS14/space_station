@@ -33,6 +33,7 @@ guide-entry-medicine = Медицина
 guide-entry-botanicals = Ботаника
 guide-entry-cloning = Клонирование
 guide-entry-cryogenics = Криогеника
+guide-entry-brute = Углублённое лечение механических травм
 guide-entry-survival = Выживание
 guide-entry-anomalous-research = Исследование аномалий
 guide-entry-scanners-and-vessels = Сканеры и сосуды
