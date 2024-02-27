@@ -36,3 +36,33 @@ ent-ADTClothingBackpackSatchelLapkee = тёмная сумка
 
 ent-ADTClothingBackpackDuffelDurathead = дюротканевый вещмешок
     .desc = Вещмешок выполненый из более прочной и эластичной дюраткани.
+
+
+ent-ADTClothingBackpackMedical = медицинский рюкзак
+    .desc = Рюкзак для хранения медицинского оборудования.
+
+ent-ADTClothingBackpackDuffelMedical = медицинский вещмешок
+    .desc = Вместительный вещмешок для хранения медицинского оборудования.
+
+ent-ADTClothingBackpackSatchelMedical = медицинская сумка
+    .desc = Сумка для хранения медицинского оборудования.
+
+
+ent-ADTClothingBackpackPathologist = рюкзак патологоанатома
+    .desc = Рюкзак для хранения инструментов и бумаг.
+
+ent-ADTClothingBackpackDuffelPathologist = вещмешок патологоанатома
+    .desc = Большой вещмешок для хранения инструментов и бумаг.
+
+ent-ADTClothingBackpackSatchelPathologist = сумка патологоанатома
+    .desc = Сумка для хранения инструментов и бумаг.
+
+
+ent-ADTClothingBackpackParamedic = рюкзак парамедика
+    .desc = Рюкзак, изготовленный для экстренных вызовов медицинской помощи.
+
+ent-ADTClothingBackpackDuffelParamedic = вещмешок парамедика
+    .desc = Вместительный вещмешок для оборудования экстренной помощи.
+
+ent-ADTClothingSatchelParamedic = сумка парамедика
+    .desc = Стерильная сумка для экстренных вызовов медицинской помощи.

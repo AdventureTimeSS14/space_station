@@ -205,6 +205,9 @@
         },
         {
             "name": "JobIconVisitor"
+        },
+        {
+          "name": "JobIconADTPathologist"
         }
     ]
 }

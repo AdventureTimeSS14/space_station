@@ -29,6 +29,9 @@ ent-ADTClothingOuterCoatXCoat = икс-ключительное облачени
     .desc = Кажется тот, кто его носит отличается иксключительным эгоизмом. 
     .suffix = { "" }
 
+ent-ADTClothingOuterWinterRussianCoat = Русский пуховик
+    .desc = Используется на экстремально холодных фронтах, сделан из натуральный шерсти. Производство компании "Modeling Agency Dar-Vaxed" и Текстильный комбинат СССП, улица Сталинавская.
+
 ent-ADTClothingOuterCoatSecAuditor = шинель аудитора СБ
     .desc = Стандартная шинель проверяющих работу Службы Безопасности станции со стороны комитета надзора NanoTrasen.
     .suffix = { "ЦК, CombatBibis" }
@@ -51,3 +54,21 @@ ent-ADTClothingOuterCoatSportStepHoodie = ветровка STEP "Ultra"
     .desc = Эта ветровка похожа на защитный кокон, помещающий тело владельца в карманную вселенную, где ветер, вода, грязь и огонь не могут причинить ему вреда. На этикетке гордо красуется огромная надпись "100% синтетика". Она абсолютно не пропускает воздух. (Внимание: Ветровка на самом деле не огнестойкий.)
 ent-ADTClothingOuterCoatSportZetaBlouse = блузка STEP "Zeta"
     .desc = Яркая зелёная блузка серии STEP "Zeta".
+
+ent-ADTClothingOuterBioPathologist = защитный костюм патологоанатома
+    .desc = Костюм, защищающий от биологического заражения во время работы с трупами.
+
+ent-ADTClothingOuterApronPathologist = фартук патологоанатома
+    .desc = Фартук для работы с трупами.
+
+ent-ADTClothingOuterCoatLabPathologist = халат патологоанатома
+    .desc = { ent-ClothingOuterCoatLab.desc }
+
+ent-ADTClothingOuterCoatHikeLabcoatCmo = походный халат главного врача
+    .desc = Частично открытый халат. Не сковывает движения.
+
+ent-ADTClothingOuterBioParamedic = защитный костюм парамедика
+    .desc = Костюм для парамедиков, защищающий от биологического заражения.
+
+ent-ADTClothingOuterCoatLabParamedic = халат парамедика
+    .desc = { ent-ClothingOuterCoatLab.desc }

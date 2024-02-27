@@ -67,6 +67,10 @@
   text:   station-goal-smes
 
 - type: stationGoal
+  id: stationgoalpolymorphine
+  text:   station-goal-polymorphine
+
+- type: stationGoal
   id: stationgoalshuttlecrew
   text:   station-goal-shuttlecrew
 

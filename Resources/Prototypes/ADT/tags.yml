@@ -32,13 +32,22 @@
   id: CatWearable
 
 - type: Tag
+  id: Defibrillator
+
+- type: Tag
   id: PowerCellMedium
 
 - type: Tag
   id: Fish
 
 - type: Tag
+  id: ChangelingBlacklist
+ 
+- type: Tag 
   id: BoomBoxTape
   
 - type: Tag
-  id: ChangelingBlacklist
+  id: MobileDefibrillator
+  
+- type: Tag
+  id: HighVoltageDefibrillator

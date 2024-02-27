@@ -9,16 +9,17 @@
     ClothingUniformJumpsuitMedicalDoctor: 4
     ClothingUniformJumpskirtMedicalDoctor: 4
     ClothingHeadHatBeretMedic: 4
+    ADTClothingBackpackDuffelMedical: 4
+    ADTClothingBackpackMedical: 4
+    ADTClothingBackpackSatchelMedical: 4
+    ADTClothingBeltMedicalBag: 4
+    ADTClothingHeadHatsMedicalBeret: 4
     ClothingHeadNurseHat: 4
     ClothingOuterCoatLab: 4
     ClothingShoesColorWhite: 4
     ClothingHandsGlovesLatex: 4
     ClothingHeadsetMedical: 4
     ClothingOuterWinterMed: 2
-    ClothingOuterWinterPara: 2
-    ClothingOuterCoatParamedicWB: 2
-    ClothingHeadHatParamedicsoft: 2
-    ADTClothingOuterParamedicVoidHardsuit: 1
     #ClothingHeadHelmetVoidParamed: 1
     #ClothingOuterHardsuitVoidParamed: 1
     ClothingOuterHospitalGown: 5

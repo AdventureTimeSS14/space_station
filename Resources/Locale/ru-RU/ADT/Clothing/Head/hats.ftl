@@ -58,12 +58,15 @@ ent-ADTClothingHeadHatsBavarianHatRed = красная егерская шляп
 
 ent-ADTClothingHeadHairPin = золотая заколка
     .desc = Золотая заколка для волос с красными перьями. Производства "Modeling Agency Dar-Vaxed".
+    .suffix = { "" }
 
 ent-ADTClothingHeadPovar = Поварской колпак-берет шеф-повара
     .desc = Обязательный головной убор уважающего себя шеф-повара, а так-же чтобы на еду не попали волосы.
+    .suffix = { "" }
 
 ent-ADTClothingHeadHelmetHungerGamesCapitols = Шлем Капитолия
     .desc = Шлем компании "Космических Голодных Игр".
+    .suffix = { "" }
 
 ent-ADTClothingHeadHatsNTCap = колпак NT
     .desc = Сегодня официальный день, раз колпак теперь в твоих руках.
@@ -164,3 +167,12 @@ ent-ADTClothingHeadSportHatStep = cпортивная шапка-пипо "STEP"
 
 ent-ADTClothingHeadUrsHat = шапка урса
     .desc = Тёплая шапка ушанка.
+
+ent-ADTClothingHeadHatsParamedicBeret = берет парамедика
+    .desc = Берет, связанный с постоянной медицинской работой.
+
+ent-ADTClothingHeadHatHoodBioPathologist = { ent-ClothingHeadHatHoodBioGeneral }
+    .desc = Капюшон для патологоанатома, защищающий голову и лицо от биологического заражения.
+
+ent-ADTClothingHeadHatHoodBioParamedic = { ent-ClothingHeadHatHoodBioGeneral }
+    .desc = Капюшон для парамедика, защищающий голову и лицо от биологического заражения.
