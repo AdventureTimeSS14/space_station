@@ -50,16 +50,16 @@
 #     spread: 90
 
 # Прототип кейса для хранения оружия.
-- type: entity
-  parent: CrateBaseSecure
-  id: ADTCrateCaseSecurity
-  name: secgear crate
-  components:
-  - type: Icon
-    sprite: Structures/Storage/Crates/sec_gear.rsi
-  - type: Sprite
-    sprite: Structures/Storage/Crates/sec_gear.rsi
-  - type: AccessReader
-    access: [["Security"]]
-  - type: Item
-    size: Ginormous
+# - type: entity
+#   parent: CrateBaseSecure
+#   id: ADTCrateCaseSecurity
+#   name: secgear crate
+#   components:
+#   - type: Icon
+#     sprite: Structures/Storage/Crates/sec_gear.rsi
+#   - type: Sprite
+#     sprite: Structures/Storage/Crates/sec_gear.rsi
+#   - type: AccessReader
+#     access: [["Security"]]
+#   - type: Item
+#     size: Ginormous
