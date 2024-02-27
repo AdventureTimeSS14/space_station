@@ -3349,6 +3349,13 @@ entities:
     - type: Transform
       pos: -11.470391,11.486723
       parent: 31
+- proto: ADTLockerPathologistFilled
+  entities:
+  - uid: 11449
+    components:
+    - type: Transform
+      pos: 15.5,-14.5
+      parent: 31
 - proto: ADTSpawnPointADTSupplyBorg
   entities:
   - uid: 11440
@@ -3418,6 +3425,27 @@ entities:
     components:
     - type: Transform
       pos: -7.5,-0.5
+      parent: 31
+- proto: ADTVendingMachineParaDrobe
+  entities:
+  - uid: 256
+    components:
+    - type: Transform
+      pos: 24.5,-5.5
+      parent: 31
+- proto: ADTVendingMachinePatholoDrobe
+  entities:
+  - uid: 7693
+    components:
+    - type: Transform
+      pos: 15.5,-13.5
+      parent: 31
+- proto: ADTVendingMachinePill
+  entities:
+  - uid: 11450
+    components:
+    - type: Transform
+      pos: 9.5,-9.5
       parent: 31
 - proto: ADTVendingMachinePrazatClothing
   entities:
@@ -33094,7 +33122,7 @@ entities:
       pos: 38.5,-5.5
       parent: 31
     - type: Door
-      secondsUntilStateChange: -7569.1743
+      secondsUntilStateChange: -7640.307
       state: Closing
   - uid: 4019
     components:
@@ -58304,6 +58332,13 @@ entities:
     - type: Transform
       pos: 17.5,-0.5
       parent: 31
+- proto: SpawnPointADTPathologist
+  entities:
+  - uid: 11448
+    components:
+    - type: Transform
+      pos: 13.5,-14.5
+      parent: 31
 - proto: SpawnPointAtmos
   entities:
   - uid: 9106
@@ -58519,10 +58554,10 @@ entities:
       parent: 31
 - proto: SpawnPointParamedic
   entities:
-  - uid: 256
+  - uid: 11447
     components:
     - type: Transform
-      pos: 24.5,-5.5
+      pos: 21.5,-5.5
       parent: 31
 - proto: SpawnPointPassenger
   entities:
@@ -69958,13 +69993,6 @@ entities:
     - type: Transform
       pos: -38.5,19.5
       parent: 31
-- proto: WardrobeGreyFilled
-  entities:
-  - uid: 7693
-    components:
-    - type: Transform
-      pos: 10.5,-13.5
-      parent: 31
 - proto: WardrobePrisonFilled
   entities:
   - uid: 1161
@@ -70010,8 +70038,10 @@ entities:
       desc: Smells of formaldehyde, smoke and menthol.
       name: mortician's wardrobe
     - type: Transform
-      pos: 15.536513,-13.5
+      pos: 10.473354,-13.498094
       parent: 31
+    - type: DamageOnHighSpeedImpact
+      lastHit: 0
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
