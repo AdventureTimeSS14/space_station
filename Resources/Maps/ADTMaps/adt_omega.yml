@@ -4201,6 +4201,13 @@ entities:
     - type: Transform
       pos: -10.386757,8.623476
       parent: 4812
+- proto: ADTLockerPathologistFilled
+  entities:
+  - uid: 12594
+    components:
+    - type: Transform
+      pos: -18.5,-18.5
+      parent: 4812
 - proto: ADTSpawnPointADTSupplyBorg
   entities:
   - uid: 12593
@@ -4270,6 +4277,20 @@ entities:
     components:
     - type: Transform
       pos: -1.5,6.5
+      parent: 4812
+- proto: ADTVendingMachinePatholoDrobe
+  entities:
+  - uid: 6622
+    components:
+    - type: Transform
+      pos: -20.5,-14.5
+      parent: 4812
+- proto: ADTVendingMachinePill
+  entities:
+  - uid: 4985
+    components:
+    - type: Transform
+      pos: -21.5,-22.5
       parent: 4812
 - proto: ADTVendingMachinePrazatClothing
   entities:
@@ -65818,13 +65839,6 @@ entities:
     - type: Transform
       pos: -10.362962,-1.5182831
       parent: 4812
-- proto: RollerBedSpawnFolded
-  entities:
-  - uid: 6622
-    components:
-    - type: Transform
-      pos: -20.448778,-14.242132
-      parent: 4812
 - proto: SalvageMagnet
   entities:
   - uid: 2923
@@ -68311,6 +68325,13 @@ entities:
     - type: Transform
       pos: -11.5,-14.5
       parent: 4812
+- proto: SpawnPointADTPathologist
+  entities:
+  - uid: 12595
+    components:
+    - type: Transform
+      pos: -19.5,-17.5
+      parent: 4812
 - proto: SpawnPointAtmos
   entities:
   - uid: 3259
@@ -70103,11 +70124,6 @@ entities:
     components:
     - type: Transform
       pos: 13.5,-9.5
-      parent: 4812
-  - uid: 4985
-    components:
-    - type: Transform
-      pos: -20.5,-14.5
       parent: 4812
   - uid: 6181
     components:
