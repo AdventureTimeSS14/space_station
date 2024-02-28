@@ -1,4 +1,3 @@
-using System.Linq;
 using Content.Client.Stylesheets;
 using Content.Shared.Chemistry;
 using Content.Shared.Chemistry.Reagent;
@@ -52,7 +51,7 @@ namespace Content.Client.Chemistry.UI
         /// Update the button grid of reagents which can be dispensed.
         /// </summary>
         /// <param name="inventory">Reagents which can be dispensed by this dispenser</param>
-        public void UpdateReagentsList(List<KeyValuePair<string, KeyValuePair<string,string>>> inventory)
+        public void UpdateReagentsList(List<KeyValuePair<string, KeyValuePair<string, string>>> inventory)
         {
             if (ChemicalList == null)
                 return;
@@ -134,7 +133,7 @@ namespace Content.Client.Chemistry.UI
 
             if (state.OutputContainer is null)
             {
-                ContainerInfo.Children.Add(new Label {Text = Loc.GetString("reagent-dispenser-window-no-container-loaded-text") });
+                ContainerInfo.Children.Add(new Label { Text = Loc.GetString("reagent-dispenser-window-no-container-loaded-text") });
                 return;
             }
 
@@ -159,11 +158,11 @@ namespace Content.Client.Chemistry.UI
                     ? p.LocalizedName
                     : Loc.GetString("reagent-dispenser-window-reagent-name-not-found-text");
 
-                var nameLabel = new Label {Text = $"{localizedName}: "};
+                var nameLabel = new Label { Text = $"{localizedName}: " };
                 var quantityLabel = new Label
                 {
                     Text = Loc.GetString("reagent-dispenser-window-quantity-label-text", ("quantity", quantity)),
-                    StyleClasses = {StyleNano.StyleClassLabelSecondaryColor},
+                    StyleClasses = { StyleNano.StyleClassLabelSecondaryColor },
                 };
 
                 ContainerInfo.Children.Add(new BoxContainer
@@ -202,4 +201,4 @@ namespace Content.Client.Chemistry.UI
             Text = "⏏";
         }
     }
-}
+}   
