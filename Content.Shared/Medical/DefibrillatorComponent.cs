@@ -30,7 +30,7 @@ public sealed partial class DefibrillatorComponent : Component
     /// The minimum time between zaps
     /// </summary>
     [DataField("zapDelay"), ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan ZapDelay = TimeSpan.FromSeconds(5);
+    public TimeSpan ZapDelay = TimeSpan.FromSeconds(3);
 
     /// <summary>
     /// How much damage is healed from getting zapped.
