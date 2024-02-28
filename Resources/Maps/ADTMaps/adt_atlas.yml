@@ -2049,7 +2049,7 @@ entities:
             0: 30719
           7,5:
             0: 55
-            4: 256
+            2: 256
           -4,4:
             0: 65535
           -4,5:
@@ -2363,8 +2363,8 @@ entities:
             0: 65395
           -12,0:
             0: 36751
-            2: 112
-            3: 28672
+            3: 112
+            4: 28672
           -12,1:
             0: 65535
           -12,2:
@@ -2517,6 +2517,21 @@ entities:
         - volume: 2500
           temperature: 293.15
           moles:
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
           - 6666.982
           - 0
           - 0
@@ -2534,21 +2549,6 @@ entities:
           moles:
           - 0
           - 6666.982
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 0
-          - 0
           - 0
           - 0
           - 0
@@ -2576,6 +2576,13 @@ entities:
       parent: 1523
     - type: InstantAction
       container: 1523
+- proto: ADTLockerPathologistFilled
+  entities:
+  - uid: 912
+    components:
+    - type: Transform
+      pos: 3.5,-11.5
+      parent: 30
 - proto: ADTSpawnPointADTSupplyBorg
   entities:
   - uid: 7963
@@ -2645,6 +2652,27 @@ entities:
     components:
     - type: Transform
       pos: -24.5,2.5
+      parent: 30
+- proto: ADTVendingMachineParaDrobe
+  entities:
+  - uid: 4252
+    components:
+    - type: Transform
+      pos: 3.5,-5.5
+      parent: 30
+- proto: ADTVendingMachinePatholoDrobe
+  entities:
+  - uid: 1549
+    components:
+    - type: Transform
+      pos: 4.5,-11.5
+      parent: 30
+- proto: ADTVendingMachinePill
+  entities:
+  - uid: 887
+    components:
+    - type: Transform
+      pos: 8.5,-13.5
       parent: 30
 - proto: ADTVendingMachinePrazatClothing
   entities:
@@ -17283,21 +17311,11 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -1.5,5.5
       parent: 30
-  - uid: 887
-    components:
-    - type: Transform
-      pos: 4.5,-11.5
-      parent: 30
   - uid: 889
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -1.5,6.5
-      parent: 30
-  - uid: 912
-    components:
-    - type: Transform
-      pos: 3.5,-11.5
       parent: 30
   - uid: 1269
     components:
@@ -18466,15 +18484,6 @@ entities:
       parent: 30
     - type: Physics
       canCollide: False
-- proto: ClothingHeadHatChickenhead
-  entities:
-  - uid: 5198
-    components:
-    - type: Transform
-      pos: 4.4612703,-11.1283
-      parent: 30
-    - type: Physics
-      canCollide: False
 - proto: ClothingHeadHatCone
   entities:
   - uid: 4129
@@ -18696,15 +18705,6 @@ entities:
     components:
     - type: Transform
       pos: -0.4913392,15.58255
-      parent: 30
-    - type: Physics
-      canCollide: False
-- proto: ClothingOuterSuitChicken
-  entities:
-  - uid: 4252
-    components:
-    - type: Transform
-      pos: 4.478327,-11.4409485
       parent: 30
     - type: Physics
       canCollide: False
@@ -19011,14 +19011,6 @@ entities:
     components:
     - type: Transform
       pos: -38.5,10.5
-      parent: 30
-- proto: ComputerMedicalRecords
-  entities:
-  - uid: 1549
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 8.5,-13.5
       parent: 30
 - proto: ComputerPowerMonitoring
   entities:
@@ -43484,6 +43476,13 @@ entities:
     components:
     - type: Transform
       pos: -2.5,-8.5
+      parent: 30
+- proto: SpawnPointADTPathologist
+  entities:
+  - uid: 5198
+    components:
+    - type: Transform
+      pos: 3.5,-12.5
       parent: 30
 - proto: SpawnPointAtmos
   entities:

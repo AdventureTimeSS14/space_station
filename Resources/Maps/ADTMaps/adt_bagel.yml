@@ -9573,6 +9573,13 @@ entities:
       parent: 19193
     - type: InstantAction
       container: 19193
+- proto: ADTLockerPathologistFilled
+  entities:
+  - uid: 22449
+    components:
+    - type: Transform
+      pos: 40.5,-10.5
+      parent: 60
 - proto: ADTSpawnPointADTSupplyBorg
   entities:
   - uid: 21690
@@ -9642,6 +9649,27 @@ entities:
     components:
     - type: Transform
       pos: 19.5,-33.5
+      parent: 60
+- proto: ADTVendingMachineParaDrobe
+  entities:
+  - uid: 172
+    components:
+    - type: Transform
+      pos: 49.5,-17.5
+      parent: 60
+- proto: ADTVendingMachinePatholoDrobe
+  entities:
+  - uid: 9171
+    components:
+    - type: Transform
+      pos: 41.5,-10.5
+      parent: 60
+- proto: ADTVendingMachinePill
+  entities:
+  - uid: 21778
+    components:
+    - type: Transform
+      pos: 39.5,-20.5
       parent: 60
 - proto: ADTVendingMachinePrazatClothing
   entities:
@@ -16844,10 +16872,10 @@ entities:
     - type: Transform
       pos: -19.561207,-5.30166
       parent: 60
-  - uid: 172
+  - uid: 134
     components:
     - type: Transform
-      pos: 40.456047,-10.342315
+      pos: 38.759163,-10.403553
       parent: 60
 - proto: BoxFlare
   entities:
@@ -68624,13 +68652,6 @@ entities:
     components:
     - type: Transform
       pos: -22.5,-29.5
-      parent: 60
-- proto: filingCabinetTallRandom
-  entities:
-  - uid: 134
-    components:
-    - type: Transform
-      pos: 49.5,-17.5
       parent: 60
 - proto: FireAlarm
   entities:
@@ -122933,7 +122954,7 @@ entities:
   - uid: 348
     components:
     - type: Transform
-      pos: 41.440662,-10.344523
+      pos: 36.634163,-9.356678
       parent: 60
 - proto: RubberStampMime
   entities:
@@ -129496,6 +129517,13 @@ entities:
     - type: Transform
       pos: 41.5,-30.5
       parent: 60
+- proto: SpawnPointADTPathologist
+  entities:
+  - uid: 21950
+    components:
+    - type: Transform
+      pos: 38.5,-9.5
+      parent: 60
 - proto: SpawnPointAtmos
   entities:
   - uid: 17917
@@ -132993,11 +133021,6 @@ entities:
     components:
     - type: Transform
       pos: -44.5,-10.5
-      parent: 60
-  - uid: 9171
-    components:
-    - type: Transform
-      pos: 40.5,-10.5
       parent: 60
   - uid: 9464
     components:
