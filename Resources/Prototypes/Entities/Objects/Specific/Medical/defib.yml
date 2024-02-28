@@ -34,7 +34,7 @@
     - type: Defibrillator
       zapHeal:
         types:
-          Asphyxiation: -20
+          Asphyxiation: -40
     - type: DoAfter
     - type: UseDelay
     - type: StaticPrice

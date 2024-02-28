@@ -4457,20 +4457,6 @@ entities:
       parent: 12533
     - type: InstantAction
       container: 12533
-- proto: ADTClosetL3ParamedicFilled
-  entities:
-  - uid: 12659
-    components:
-    - type: Transform
-      pos: -23.5,6.5
-      parent: 1
-- proto: ADTLockerPathologistFilled
-  entities:
-  - uid: 12661
-    components:
-    - type: Transform
-      pos: -22.5,14.5
-      parent: 1
 - proto: ADTSpawnPointADTSupplyBorg
   entities:
   - uid: 5320
@@ -4540,27 +4526,6 @@ entities:
     components:
     - type: Transform
       pos: 3.5,9.5
-      parent: 1
-- proto: ADTVendingMachineParaDrobe
-  entities:
-  - uid: 12658
-    components:
-    - type: Transform
-      pos: -26.5,6.5
-      parent: 1
-- proto: ADTVendingMachinePatholoDrobe
-  entities:
-  - uid: 8007
-    components:
-    - type: Transform
-      pos: -25.5,7.5
-      parent: 1
-- proto: ADTVendingMachinePill
-  entities:
-  - uid: 12662
-    components:
-    - type: Transform
-      pos: -22.5,9.5
       parent: 1
 - proto: ADTVendingMachinePrazatClothing
   entities:
@@ -26378,6 +26343,13 @@ entities:
     components:
     - type: Transform
       pos: -40.481712,-24.251455
+      parent: 1
+- proto: ChairGreyscale
+  entities:
+  - uid: 8007
+    components:
+    - type: Transform
+      pos: -25.5,7.5
       parent: 1
 - proto: ChairOfficeDark
   entities:
@@ -68109,13 +68081,6 @@ entities:
     components:
     - type: Transform
       pos: -12.5,13.5
-      parent: 1
-- proto: SpawnPointADTPathologist
-  entities:
-  - uid: 12660
-    components:
-    - type: Transform
-      pos: -24.5,14.5
       parent: 1
 - proto: SpawnPointAtmos
   entities:

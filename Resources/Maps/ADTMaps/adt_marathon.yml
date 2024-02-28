@@ -7780,13 +7780,6 @@ entities:
       parent: 5704
     - type: InstantAction
       container: 5704
-- proto: ADTLockerPathologistFilled
-  entities:
-  - uid: 11463
-    components:
-    - type: Transform
-      pos: -23.5,-0.5
-      parent: 30
 - proto: ADTSpawnPointADTSupplyBorg
   entities:
   - uid: 11453
@@ -7856,27 +7849,6 @@ entities:
     components:
     - type: Transform
       pos: -10.5,13.5
-      parent: 30
-- proto: ADTVendingMachineParaDrobe
-  entities:
-  - uid: 11457
-    components:
-    - type: Transform
-      pos: -14.5,-16.5
-      parent: 30
-- proto: ADTVendingMachinePatholoDrobe
-  entities:
-  - uid: 11458
-    components:
-    - type: Transform
-      pos: -25.5,-0.5
-      parent: 30
-- proto: ADTVendingMachinePill
-  entities:
-  - uid: 11459
-    components:
-    - type: Transform
-      pos: -14.5,-12.5
       parent: 30
 - proto: ADTVendingMachinePrazatClothing
   entities:
@@ -15010,6 +14982,11 @@ entities:
     components:
     - type: Transform
       pos: -36.50093,-14.325844
+      parent: 30
+  - uid: 21251
+    components:
+    - type: Transform
+      pos: -25.5,-0.5
       parent: 30
 - proto: BoxFlashbang
   entities:
@@ -51999,6 +51976,11 @@ entities:
     - type: Transform
       pos: -52.504753,53.54799
       parent: 30
+  - uid: 21252
+    components:
+    - type: Transform
+      pos: -25.5,-0.5
+      parent: 30
 - proto: ClothingHandsGlovesLeather
   entities:
   - uid: 3499
@@ -61500,7 +61482,7 @@ entities:
   - uid: 1343
     components:
     - type: Transform
-      pos: -18.56857,-21.43764
+      pos: -14.602694,-16.508675
       parent: 30
   - uid: 7395
     components:
@@ -113538,6 +113520,13 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 44.5,-18.5
       parent: 30
+- proto: Scalpel
+  entities:
+  - uid: 21253
+    components:
+    - type: Transform
+      pos: -25.5,-0.5
+      parent: 30
 - proto: Screen
   entities:
   - uid: 20592
@@ -118186,13 +118175,6 @@ entities:
     - type: Transform
       pos: -8.5,-9.5
       parent: 30
-- proto: SpawnPointADTPathologist
-  entities:
-  - uid: 11460
-    components:
-    - type: Transform
-      pos: -23.5,-4.5
-      parent: 30
 - proto: SpawnPointAtmos
   entities:
   - uid: 20345
@@ -121888,6 +121870,11 @@ entities:
     components:
     - type: Transform
       pos: -54.5,52.5
+      parent: 30
+  - uid: 21250
+    components:
+    - type: Transform
+      pos: -25.5,-0.5
       parent: 30
   - uid: 21580
     components:
