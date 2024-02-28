@@ -257,10 +257,10 @@
   - type: Lathe
     idleState: icon
     runningState: building
-    staticRecipes:
-    - LargeBeaker
-    - Dropper
-    - ClothingEyesGlassesChemical
+    # staticRecipes:
+    # - LargeBeaker
+    # - Dropper
+    # - ClothingEyesGlassesChemical #Отключено потому что реверт медтехнологии обратно
     dynamicRecipes:
       - PowerDrill
       - MiningDrill
@@ -278,9 +278,13 @@
       - HoloprojectorField
       - Saw
       - Hemostat
+      - Beaker
+      - LargeBeaker
+      - ADTHighVoltageDefibrillator
       - Syringecartridge
       - CryostasisBeaker
       - SyringeCryostasis
+      - Dropper
       - Syringe
       - Implanter
       - PillCanister
@@ -319,6 +323,7 @@
       - ClothingBackpackDuffelHolding
       - WelderExperimental
       - JawsOfLife
+      - ClothingEyesGlassesChemical
       - ClothingEyesHudDiagnostic #Sirena T4 add
       - ClothingEyesHudMedical #Sirena T4 add
       - ClothingEyesHudSecurity #Sirena T4 add
@@ -872,6 +877,9 @@
     staticRecipes:
       - Brutepack
       - Ointment
+      - ADTReagentAnalyzer
+      - ADTAntibioticOintment
+      - ADTMedicalTourniquet
       - Gauze
       - HandLabeler
       - Defibrillator
@@ -881,13 +889,16 @@
       - ClothingMaskSterile
       - DiseaseSwab
       - Beaker
-      - LargeBeaker
-      - Dropper
       - Syringe
+      - ADTSmallSyringe
       - Implanter
       - PillCanister
+      - ADTPillCanister
+      - ADTPillPack
       - BodyBag
+      - ADTFootTag
       - ChemistryEmptyBottle01
+      - ADTPlasticBottle
       - RollerBedSpawnFolded
       - CheapRollerBedSpawnFolded
       - EmergencyRollerBedSpawnFolded
@@ -900,6 +911,10 @@
       - MedkitRadiation
       - MedkitCombat
     dynamicRecipes:
+      - LargeBeaker
+      - Dropper
+      - ChemicalPayload
+      - CryostasisBeaker
       - HandheldCrewMonitor
       - ClothingEyesHudMedical
       - ClothingHandsGlovesNitrile
@@ -919,6 +934,7 @@
       - SyringeBluespace
       - Jug
       - SyringeCryostasis
+      - ADTHighVoltageDefibrillator
   - type: Machine
     board: MedicalTechFabCircuitboard
   - type: StealTarget

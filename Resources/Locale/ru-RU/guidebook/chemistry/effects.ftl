@@ -316,3 +316,9 @@ reagent-effect-guidebook-missing =
         [1] Вызывает
        *[other] вызывают
     } неизвестный эффект, так как никто еще не написал об этом эффекте
+
+reagent-effect-guidebook-embalm = 
+    { $chance ->
+        [1] Предотвращает
+        *[other] предотвращают
+    } гниение трупов

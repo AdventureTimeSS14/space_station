@@ -23,6 +23,8 @@
     - Service
     - Security
     - Magistrate
+    - Lawyer
+    - IAA 
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

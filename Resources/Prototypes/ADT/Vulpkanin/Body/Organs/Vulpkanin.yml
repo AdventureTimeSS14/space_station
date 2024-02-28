@@ -21,3 +21,15 @@
     groups:
     - id: Alcohol
       rateModifier: 0.1
+
+- type: entity
+  id: OrganVulpkaninHeart
+  parent: OrganAnimalHeart
+  components:
+  - type: Metabolizer
+    maxReagents: 2
+    metabolizerTypes: [ Vulpkanin, Animal ]
+    groups:
+    - id: Medicine
+    - id: Poison
+    - id: Narcotic

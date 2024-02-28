@@ -1,0 +1,11 @@
+- type: reaction
+  id: ADTPhronidolepaxorine
+  reactants:
+    Plasma:
+      amount: 2
+    Leporazine:
+      amount: 2
+    Lexorin:
+      amount: 1
+  products:
+    ADTPhronidolepaxorine: 3
