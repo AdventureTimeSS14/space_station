@@ -69,7 +69,6 @@
             ADTInvestigator: [ 1, 1 ] #ADT
             ADTSecurityCyborg: [ 1, 1 ] #ADT
             ADTRoboticist: [ 1, 1 ] #ADT
-            ADTPathologist: [ 1 , 1 ] #ADT
             #Senitors
             SeniorOfficer: [ 1, 1 ]
             SeniorResearcher: [ 1, 1 ]

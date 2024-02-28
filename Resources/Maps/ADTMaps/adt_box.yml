@@ -8600,20 +8600,6 @@ entities:
     - type: Transform
       pos: -1.4590547,-61.356407
       parent: 8364
-- proto: ADTClosetL3PathologistFilled
-  entities:
-  - uid: 20644
-    components:
-    - type: Transform
-      pos: 41.5,-18.5
-      parent: 8364
-- proto: ADTLockerPathologistFilled
-  entities:
-  - uid: 20641
-    components:
-    - type: Transform
-      pos: 39.5,-17.5
-      parent: 8364
 - proto: ADTSpawnPointADTSupplyBorg
   entities:
   - uid: 20597
@@ -8683,27 +8669,6 @@ entities:
     components:
     - type: Transform
       pos: 23.5,-5.5
-      parent: 8364
-- proto: ADTVendingMachineParaDrobe
-  entities:
-  - uid: 20645
-    components:
-    - type: Transform
-      pos: 44.5,-24.5
-      parent: 8364
-- proto: ADTVendingMachinePatholoDrobe
-  entities:
-  - uid: 20642
-    components:
-    - type: Transform
-      pos: 45.5,-19.5
-      parent: 8364
-- proto: ADTVendingMachinePill
-  entities:
-  - uid: 20640
-    components:
-    - type: Transform
-      pos: 24.5,-18.5
       parent: 8364
 - proto: ADTVendingMachinePrazatClothing
   entities:
@@ -81393,7 +81358,7 @@ entities:
   - uid: 27688
     components:
     - type: Transform
-      pos: 44.404556,-26.396193
+      pos: 44.416363,-24.520304
       parent: 8364
 - proto: Emitter
   entities:
@@ -124755,10 +124720,6 @@ entities:
           showEnts: False
           occludes: True
           ents: []
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
   - uid: 9447
     components:
     - type: Transform
@@ -144269,13 +144230,6 @@ entities:
     components:
     - type: Transform
       pos: 21.5,-18.5
-      parent: 8364
-- proto: SpawnPointADTPathologist
-  entities:
-  - uid: 20643
-    components:
-    - type: Transform
-      pos: 39.5,-19.5
       parent: 8364
 - proto: SpawnPointAtmos
   entities:

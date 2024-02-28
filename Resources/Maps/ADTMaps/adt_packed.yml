@@ -5971,20 +5971,6 @@ entities:
     - type: Transform
       pos: 49.5,-10.5
       parent: 2
-- proto: ADTClosetL3ParamedicFilled
-  entities:
-  - uid: 12911
-    components:
-    - type: Transform
-      pos: 51.5,4.5
-      parent: 2
-- proto: ADTLockerPathologistFilled
-  entities:
-  - uid: 12088
-    components:
-    - type: Transform
-      pos: 75.5,-1.5
-      parent: 2
 - proto: ADTSpawnPointADTSupplyBorg
   entities:
   - uid: 7782
@@ -6054,27 +6040,6 @@ entities:
     components:
     - type: Transform
       pos: 33.5,-3.5
-      parent: 2
-- proto: ADTVendingMachineParaDrobe
-  entities:
-  - uid: 12910
-    components:
-    - type: Transform
-      pos: 45.5,4.5
-      parent: 2
-- proto: ADTVendingMachinePatholoDrobe
-  entities:
-  - uid: 9478
-    components:
-    - type: Transform
-      pos: 69.5,-1.5
-      parent: 2
-- proto: ADTVendingMachinePill
-  entities:
-  - uid: 10911
-    components:
-    - type: Transform
-      pos: 55.5,-3.5
       parent: 2
 - proto: ADTVendingMachinePrazatClothing
   entities:
@@ -38269,7 +38234,7 @@ entities:
   - uid: 9622
     components:
     - type: Transform
-      pos: 45.54354,3.5468884
+      pos: 45.379837,4.5137033
       parent: 2
 - proto: Emitter
   entities:
@@ -58696,6 +58661,13 @@ entities:
     - type: Transform
       pos: 43.5,25.5
       parent: 2
+- proto: LockerMedical
+  entities:
+  - uid: 10911
+    components:
+    - type: Transform
+      pos: 75.5,-1.5
+      parent: 2
 - proto: LockerMedicalFilled
   entities:
   - uid: 11909
@@ -59200,6 +59172,12 @@ entities:
       parent: 2
 - proto: Morgue
   entities:
+  - uid: 2119
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 69.5,-1.5
+      parent: 2
   - uid: 4215
     components:
     - type: Transform
@@ -60402,7 +60380,7 @@ entities:
   - uid: 5046
     components:
     - type: Transform
-      pos: 49.57957,2.3329706
+      pos: 51.5,4.5
       parent: 2
 - proto: PottedPlantRandom
   entities:
@@ -68458,13 +68436,6 @@ entities:
     components:
     - type: Transform
       pos: 50.5,-8.5
-      parent: 2
-- proto: SpawnPointADTPathologist
-  entities:
-  - uid: 2119
-    components:
-    - type: Transform
-      pos: 73.5,-2.5
       parent: 2
 - proto: SpawnPointAtmos
   entities:

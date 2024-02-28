@@ -7010,8 +7010,7 @@ entities:
           9,-3:
             0: 65535
           9,-2:
-            0: 65279
-            2: 256
+            0: 65535
           10,-4:
             0: 65535
           10,-3:
@@ -7662,7 +7661,7 @@ entities:
             0: 65535
           -8,11:
             0: 64719
-            3: 816
+            2: 816
           -7,8:
             0: 65535
           -7,9:
@@ -7695,15 +7694,15 @@ entities:
             0: 65535
           -12,10:
             0: 62451
-            3: 3072
-            4: 12
+            2: 3072
+            3: 12
           -11,10:
-            3: 256
+            2: 256
             0: 65278
-            4: 1
+            3: 1
           -11,11:
             0: 52478
-            3: 1
+            2: 1
           -10,10:
             0: 65535
           -10,8:
@@ -7720,7 +7719,7 @@ entities:
             0: 65535
           -9,11:
             0: 63359
-            3: 2176
+            2: 2176
           -8,12:
             0: 48063
           -7,12:
@@ -7922,7 +7921,7 @@ entities:
           -1,11:
             0: 65535
           -5,12:
-            3: 30515
+            2: 30515
             0: 35020
           -5,13:
             0: 65535
@@ -7940,7 +7939,7 @@ entities:
             0: 65535
           -4,12:
             0: 17
-            3: 65518
+            2: 65518
           -4,13:
             0: 65535
           -4,14:
@@ -7948,7 +7947,7 @@ entities:
           -4,15:
             0: 61951
           -3,12:
-            3: 13107
+            2: 13107
             0: 52428
           -3,13:
             0: 65535
@@ -7980,13 +7979,13 @@ entities:
             0: 65535
           -7,14:
             0: 8191
-            3: 57344
+            2: 57344
           -7,15:
-            3: 238
+            2: 238
             0: 65297
           -6,12:
             0: 4369
-            3: 61166
+            2: 61166
           -6,13:
             0: 65535
           -6,14:
@@ -8298,7 +8297,7 @@ entities:
           17,-8:
             0: 29457
           17,-7:
-            4: 1
+            3: 1
             0: 4990
           17,-6:
             0: 4593
@@ -8426,14 +8425,14 @@ entities:
             0: 35771
           -12,8:
             0: 62451
-            5: 12
-            6: 3072
+            4: 12
+            5: 3072
           -12,9:
             0: 62451
-            3: 3084
+            2: 3084
           -12,11:
             0: 8947
-            3: 12
+            2: 12
           -12,12:
             0: 8751
           -12,13:
@@ -8627,17 +8626,17 @@ entities:
           -13,7:
             0: 39327
           -11,8:
-            5: 1
+            4: 1
             0: 65278
-            6: 256
+            5: 256
           -11,9:
-            3: 257
+            2: 257
             0: 65278
           1,12:
             0: 63897
           1,13:
             0: 65433
-            3: 64
+            2: 64
           1,14:
             0: 61695
           -11,12:
@@ -8654,8 +8653,8 @@ entities:
             0: 65497
           -13,12:
             0: 53199
-            6: 48
-            5: 12288
+            5: 48
+            4: 12288
           -13,13:
             0: 61727
           -18,4:
@@ -9148,8 +9147,8 @@ entities:
             0: 255
           -14,12:
             0: 32639
-            6: 128
-            5: 32768
+            5: 128
+            4: 32768
           -14,13:
             0: 31
           -17,12:
@@ -9189,21 +9188,6 @@ entities:
           moles:
           - 21.824879
           - 82.10312
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 21.596506
-          - 81.243996
           - 0
           - 0
           - 0
@@ -9589,20 +9573,6 @@ entities:
       parent: 19193
     - type: InstantAction
       container: 19193
-- proto: ADTClosetL3PathologistFilled
-  entities:
-  - uid: 22449
-    components:
-    - type: Transform
-      pos: 38.5,-5.5
-      parent: 60
-- proto: ADTLockerPathologistFilled
-  entities:
-  - uid: 22450
-    components:
-    - type: Transform
-      pos: 41.5,-10.5
-      parent: 60
 - proto: ADTSpawnPointADTSupplyBorg
   entities:
   - uid: 21690
@@ -9672,27 +9642,6 @@ entities:
     components:
     - type: Transform
       pos: 19.5,-33.5
-      parent: 60
-- proto: ADTVendingMachineParaDrobe
-  entities:
-  - uid: 22453
-    components:
-    - type: Transform
-      pos: 49.5,-14.5
-      parent: 60
-- proto: ADTVendingMachinePatholoDrobe
-  entities:
-  - uid: 21950
-    components:
-    - type: Transform
-      pos: 39.5,-5.5
-      parent: 60
-- proto: ADTVendingMachinePill
-  entities:
-  - uid: 21778
-    components:
-    - type: Transform
-      pos: 41.5,-24.5
       parent: 60
 - proto: ADTVendingMachinePrazatClothing
   entities:
@@ -110487,8 +110436,8 @@ entities:
         immutable: False
         temperature: 293.1496
         moles:
-        - 1.877957
-        - 7.0646954
+        - 1.6495836
+        - 6.2055764
         - 0
         - 0
         - 0
@@ -113014,7 +112963,7 @@ entities:
   - uid: 13798
     components:
     - type: Transform
-      pos: 47.544373,-10.5286045
+      pos: 49.5,-14.5
       parent: 60
 - proto: PottedPlant28
   entities:
@@ -122984,10 +122933,8 @@ entities:
   - uid: 348
     components:
     - type: Transform
-      pos: 37.44157,-9.549605
+      pos: 41.440662,-10.344523
       parent: 60
-    - type: Foldable
-      folded: True
 - proto: RubberStampMime
   entities:
   - uid: 7243
@@ -129548,13 +129495,6 @@ entities:
     components:
     - type: Transform
       pos: 41.5,-30.5
-      parent: 60
-- proto: SpawnPointADTPathologist
-  entities:
-  - uid: 22452
-    components:
-    - type: Transform
-      pos: 36.5,-9.5
       parent: 60
 - proto: SpawnPointAtmos
   entities:
