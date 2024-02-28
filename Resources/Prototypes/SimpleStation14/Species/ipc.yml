@@ -6,7 +6,7 @@
   sprites: MobIPCSprites
   markingLimits: MobIPCMarkingLimits
   dollPrototype: MobIPCDummy
-  skinColoration: TintedHues
+  skinColoration: Hues
   sponsorOnly: true
   minAge: 1
   maxAge: 240

@@ -70,6 +70,10 @@
       1: 0.45
       0: 0.00
   - type: BatteryDrinker
+  - type: Wires
+    boardName: "ipc-board-name"
+    layoutId: IPC
+  - type: WiresPanel
   - type: EncryptionKeyHolder
     keySlots: 3
     examineWhileLocked: false
@@ -77,9 +81,6 @@
   - type: ActiveRadio
   - type: IntrinsicRadioReceiver
   - type: IntrinsicRadioTransmitter
-  - type: Wires
-    boardName: "ipc-board-name"
-    layoutId: IPC
   - type: SSDIndicator
 #  - type: UnblockableSpeech
   - type: EmotePanel
