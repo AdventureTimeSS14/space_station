@@ -198,6 +198,7 @@
       - id: BoxSurvivalMedical
       - id: BodyBag_Folded
       - id: ADTFootTag
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -209,6 +210,7 @@
       - id: BoxSurvivalMedical
       - id: BodyBag_Folded
       - id: ADTFootTag
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -220,6 +222,7 @@
       - id: BoxSurvivalMedical
       - id: BodyBag_Folded
       - id: ADTFootTag
+      - id: SpaceCash500
 
 # медицинские штучки-брючки
 - type: entity
