@@ -12811,7 +12811,7 @@ entities:
     - type: RadiationGridResistance
     - type: LoadedMap
     - type: BecomesStation
-      id: Europa
+      id: ADTEuropa
 - proto: AccordionInstrument
   entities:
   - uid: 2598
