@@ -45,9 +45,9 @@
         messages: [ "narcotic-effect-visible-miosis" ]
         probability: 0.05  
       - !type:HealthChange
-        #conditions:
-       # - !type:ReagentThreshold
-       #   min: 10.05
+        conditions:
+        - !type:ReagentThreshold
+          min: 10.5
         damage:
           types:
             Asphyxiation: 2
