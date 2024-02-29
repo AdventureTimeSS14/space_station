@@ -10,3 +10,14 @@ ent-SuperchargedLightning = суперзаряженная молния
     .desc = { ent-ChargedLightning.desc }
 ent-HyperchargedLightning = гиперзаряженная молния
     .desc = { ent-ChargedLightning.desc }
+
+ent-ADTLightning = молния
+    .desc = { ent-BaseLightning.desc }
+ent-ADTLightningRevenant = страшная молния
+    .desc = { ent-BaseLightning.desc }
+ent-ADTChargedLightning = заряженная молния
+    .desc = { ent-BaseLightning.desc }
+ent-ADTSuperchargedLightning = суперзаряженная молния
+    .desc = { ent-ChargedLightning.desc }
+ent-ADTHyperchargedLightning = гиперзаряженная молния
+    .desc = { ent-ChargedLightning.desc }
