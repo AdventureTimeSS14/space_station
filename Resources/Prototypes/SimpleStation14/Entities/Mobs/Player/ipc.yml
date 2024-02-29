@@ -54,12 +54,12 @@
   - type: EyeProtection
     protectionTime: 12
   - type: Battery
-    maxCharge: 150000
-    startingCharge: 150000
+    maxCharge: 75000
+    startingCharge: 75000
   - type: Silicon
     entityType: enum.SiliconType.Player
     batteryPowered: true
-    drainPerSecond: 60
+    drainPerSecond: 30
     chargeThresholdMid: 0.80
     chargeThresholdLow: 0.35
     chargeThresholdCritical: 0.10
@@ -70,6 +70,10 @@
       1: 0.45
       0: 0.00
   - type: BatteryDrinker
+  - type: Wires
+    boardName: "ipc-board-name"
+    layoutId: IPC
+  - type: WiresPanel
   - type: EncryptionKeyHolder
     keySlots: 3
     examineWhileLocked: false
@@ -77,9 +81,6 @@
   - type: ActiveRadio
   - type: IntrinsicRadioReceiver
   - type: IntrinsicRadioTransmitter
-  - type: Wires
-    boardName: "ipc-board-name"
-    layoutId: IPC
   - type: SSDIndicator
 #  - type: UnblockableSpeech
   - type: EmotePanel
@@ -117,9 +118,11 @@
     - CanPilot
     - FootstepSound
     - DoorBumpOpener
-
-
-
+  - type: SizeAttributeWhitelist # Frontier
+    tall: true
+    tallscale: 1.1
+    short: true
+    shortscale: 0.9
 
 - type: entity
   save: false
