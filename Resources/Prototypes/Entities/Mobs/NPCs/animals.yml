@@ -61,6 +61,11 @@
   - type: Tag
     tags:
     - VimPilot
+  - type: LanguageSpeaker
+    speaks:
+    - Mouse
+    understands:
+    - Mouse
 
 - type: entity
   name: bee
@@ -1035,6 +1040,11 @@
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
+  - type: LanguageSpeaker # Frontier
+    speaks:
+    - Monkey
+    understands:
+    - Monkey
 
 - type: entity
   name: kangaroo
@@ -1287,7 +1297,7 @@
   - type: Speech
     speechSounds: Monkey
     speechVerb: Monkey
-  - type: MonkeyAccent
+  #- type: MonkeyAccent
   - type: NpcFactionMember
     factions:
     - Syndicate
@@ -1299,6 +1309,13 @@
   - type: GhostTakeoverAvailable
   - type: Loadout
     prototypes: [SyndicateOperativeGearMonkey]
+  - type: LanguageSpeaker # Frontier
+    speaks:
+    - Monkey
+    understands:
+    - GalacticCommon
+    - Monkey
+      
 
 - type: entity
   id: MobMonkeySyndicateAgent
@@ -3067,6 +3084,12 @@
   - type: MobPrice
     price: 60
   - type: NonSpreaderZombie
+  - type: LanguageSpeaker # Frontier
+    speaks:
+    - Mouse
+    understands:
+    - Mouse
+
 
 - type: entity
   name: pig

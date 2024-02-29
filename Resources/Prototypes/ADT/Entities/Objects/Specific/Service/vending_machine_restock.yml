@@ -26,3 +26,19 @@
     - state: green_bit
       shader: unshaded
     - state: refill_stylish
+
+- type: entity
+  parent: ADTBaseVendingMachineRestock
+  id: ADTVendingMachineRestockPill
+  name: Pill-O-Mat restock box
+  description: Slot into your department's Pill-O-Mat.
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - PillInventory
+  - type: Sprite
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: pillomat

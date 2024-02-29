@@ -52,6 +52,7 @@ job-name-senior-researcher = Senior Researcher
 job-name-senior-physician = Senior Physician
 job-name-senior-officer = Senior Officer
 job-name-ADTInvestigator = Security Investigator
+job-name-ADTPathologist = Pathologist
 job-name-visitor = Visitor
 
 # Role timers - Make these alphabetical or I cut you
@@ -86,6 +87,7 @@ JobMedicalIntern = Medical intern
 JobMime = Mime
 JobMusician = Musician
 JobParamedic = Paramedic
+JobADTPathologist = Pathologist
 JobPassenger = Passenger
 JobPsychologist = Psychologist
 JobQuartermaster = Quartermaster

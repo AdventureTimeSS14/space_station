@@ -8600,6 +8600,13 @@ entities:
     - type: Transform
       pos: -1.4590547,-61.356407
       parent: 8364
+- proto: ADTLockerPathologistFilled
+  entities:
+  - uid: 1906
+    components:
+    - type: Transform
+      pos: 37.5,-18.5
+      parent: 8364
 - proto: ADTSpawnPointADTSupplyBorg
   entities:
   - uid: 20597
@@ -8669,6 +8676,27 @@ entities:
     components:
     - type: Transform
       pos: 23.5,-5.5
+      parent: 8364
+- proto: ADTVendingMachineParaDrobe
+  entities:
+  - uid: 3211
+    components:
+    - type: Transform
+      pos: 44.5,-22.5
+      parent: 8364
+- proto: ADTVendingMachinePatholoDrobe
+  entities:
+  - uid: 1881
+    components:
+    - type: Transform
+      pos: 40.5,-18.5
+      parent: 8364
+- proto: ADTVendingMachinePill
+  entities:
+  - uid: 20640
+    components:
+    - type: Transform
+      pos: 27.5,-30.5
       parent: 8364
 - proto: ADTVendingMachinePrazatClothing
   entities:
@@ -81992,11 +82020,6 @@ entities:
     - type: Transform
       pos: 36.5,-38.5
       parent: 8364
-  - uid: 3211
-    components:
-    - type: Transform
-      pos: 40.5,-18.5
-      parent: 8364
   - uid: 17147
     components:
     - type: Transform
@@ -124720,6 +124743,10 @@ entities:
           showEnts: False
           occludes: True
           ents: []
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
   - uid: 9447
     components:
     - type: Transform
@@ -144231,6 +144258,13 @@ entities:
     - type: Transform
       pos: 21.5,-18.5
       parent: 8364
+- proto: SpawnPointADTPathologist
+  entities:
+  - uid: 20641
+    components:
+    - type: Transform
+      pos: 38.5,-18.5
+      parent: 8364
 - proto: SpawnPointAtmos
   entities:
   - uid: 17809
@@ -144881,11 +144915,6 @@ entities:
       parent: 8364
 - proto: StasisBed
   entities:
-  - uid: 1881
-    components:
-    - type: Transform
-      pos: 37.5,-18.5
-      parent: 8364
   - uid: 18676
     components:
     - type: Transform
@@ -151132,13 +151161,6 @@ entities:
     components:
     - type: Transform
       pos: 53.5,2.5
-      parent: 8364
-- proto: VendingMachineGeneDrobe
-  entities:
-  - uid: 1906
-    components:
-    - type: Transform
-      pos: 44.5,-22.5
       parent: 8364
 - proto: VendingMachineHappyHonk
   entities:

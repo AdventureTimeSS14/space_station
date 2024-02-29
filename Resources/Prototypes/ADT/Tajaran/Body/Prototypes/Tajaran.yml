@@ -13,7 +13,7 @@
     torso:
       part: TorsoTajaran
       organs:
-        heart: OrganAnimalHeart
+        heart: OrganTajaranHeart
         lungs: OrganHumanLungs
         stomach: OrganTajaranStomach
         liver: OrganAnimalLiver

@@ -412,3 +412,21 @@
       - id: BoomBoxTapeGaster
       sound:
         path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeBorat
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/borat.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeBarotrauma
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/barotrauma.ogg

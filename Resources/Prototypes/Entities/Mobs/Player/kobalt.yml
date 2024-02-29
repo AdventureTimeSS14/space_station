@@ -33,3 +33,8 @@
       damageRecovery:
         types:
           Asphyxiation: -1.0
+    - type: SizeAttributeWhitelist # Frontier
+      tall: true
+      tallscale: 0.9
+      short: true
+      shortscale: 0.8

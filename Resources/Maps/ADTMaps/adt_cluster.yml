@@ -4457,6 +4457,13 @@ entities:
       parent: 12533
     - type: InstantAction
       container: 12533
+- proto: ADTLockerPathologistFilled
+  entities:
+  - uid: 1922
+    components:
+    - type: Transform
+      pos: -22.5,13.5
+      parent: 1
 - proto: ADTSpawnPointADTSupplyBorg
   entities:
   - uid: 5320
@@ -4526,6 +4533,27 @@ entities:
     components:
     - type: Transform
       pos: 3.5,9.5
+      parent: 1
+- proto: ADTVendingMachineParaDrobe
+  entities:
+  - uid: 5874
+    components:
+    - type: Transform
+      pos: -25.5,5.5
+      parent: 1
+- proto: ADTVendingMachinePatholoDrobe
+  entities:
+  - uid: 12659
+    components:
+    - type: Transform
+      pos: -22.5,14.5
+      parent: 1
+- proto: ADTVendingMachinePill
+  entities:
+  - uid: 5916
+    components:
+    - type: Transform
+      pos: -11.5,11.5
       parent: 1
 - proto: ADTVendingMachinePrazatClothing
   entities:
@@ -27646,13 +27674,6 @@ entities:
     components:
     - type: Transform
       pos: -25.418951,24.343168
-      parent: 1
-- proto: ClothingHandsGlovesNitrile
-  entities:
-  - uid: 5874
-    components:
-    - type: Transform
-      pos: -22.4964,13.596224
       parent: 1
 - proto: ClothingHandsGlovesPowerglove
   entities:
@@ -68082,6 +68103,13 @@ entities:
     - type: Transform
       pos: -12.5,13.5
       parent: 1
+- proto: SpawnPointADTPathologist
+  entities:
+  - uid: 12658
+    components:
+    - type: Transform
+      pos: -25.5,15.5
+      parent: 1
 - proto: SpawnPointAtmos
   entities:
   - uid: 7130
@@ -69615,11 +69643,6 @@ entities:
     components:
     - type: Transform
       pos: -22.5,15.5
-      parent: 1
-  - uid: 1922
-    components:
-    - type: Transform
-      pos: -22.5,13.5
       parent: 1
   - uid: 1928
     components:
@@ -71879,13 +71902,6 @@ entities:
     components:
     - type: Transform
       pos: -36.5,-7.5
-      parent: 1
-- proto: VendingMachineGeneDrobe
-  entities:
-  - uid: 5916
-    components:
-    - type: Transform
-      pos: -25.5,5.5
       parent: 1
 - proto: VendingMachineHydrobe
   entities:

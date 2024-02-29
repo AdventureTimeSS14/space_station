@@ -7780,6 +7780,13 @@ entities:
       parent: 5704
     - type: InstantAction
       container: 5704
+- proto: ADTLockerPathologistFilled
+  entities:
+  - uid: 11463
+    components:
+    - type: Transform
+      pos: -19.5,-6.5
+      parent: 30
 - proto: ADTSpawnPointADTSupplyBorg
   entities:
   - uid: 11453
@@ -7849,6 +7856,27 @@ entities:
     components:
     - type: Transform
       pos: -10.5,13.5
+      parent: 30
+- proto: ADTVendingMachineParaDrobe
+  entities:
+  - uid: 11460
+    components:
+    - type: Transform
+      pos: -12.5,-19.5
+      parent: 30
+- proto: ADTVendingMachinePatholoDrobe
+  entities:
+  - uid: 11459
+    components:
+    - type: Transform
+      pos: -23.5,-0.5
+      parent: 30
+- proto: ADTVendingMachinePill
+  entities:
+  - uid: 11457
+    components:
+    - type: Transform
+      pos: -14.5,-12.5
       parent: 30
 - proto: ADTVendingMachinePrazatClothing
   entities:
@@ -118174,6 +118202,13 @@ entities:
     components:
     - type: Transform
       pos: -8.5,-9.5
+      parent: 30
+- proto: SpawnPointADTPathologist
+  entities:
+  - uid: 11458
+    components:
+    - type: Transform
+      pos: -24.5,-4.5
       parent: 30
 - proto: SpawnPointAtmos
   entities:

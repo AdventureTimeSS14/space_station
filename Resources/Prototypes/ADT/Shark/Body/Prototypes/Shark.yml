@@ -13,7 +13,7 @@
     torso:
       part: TorsoShark
       organs:
-        heart: OrganAnimalHeart
+        heart: OrganSharkHeart
         lungs: OrganHumanLungs
         stomach: OrganSharkStomach
         liver: OrganAnimalLiver

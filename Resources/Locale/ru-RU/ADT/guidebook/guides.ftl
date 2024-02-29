@@ -1,6 +1,9 @@
 guide-new-recipes-ADT = Новые блюда
 guide-new-cocktails-ADT = Авторские коктейли, рецепты
 
+guide-pathologist-ADT = Морг и патологоанатом
+guide-chemicals-ADT = Новые реагенты
+
 guide-entry-all-korporate-zakon = Корпоративный Закон
 guide-entry-all-korporate-zakon-oprs = ОПРС
 guide-entry-all-korporate-zakon-minor = Легкие нарушения

@@ -462,10 +462,11 @@ namespace Content.Server.Polymorph.Systems
                 EntityManager.AddComponent(newEntityUid, copiedMindshieldComp);
             }
 
-            SendToPausesdMap(newEntityUid, newEntityUidTransformComp);
-
-            newHumanoidData.EntityUid = newEntityUid;
-            _metaData.SetEntityName(newEntityUid, targetMeta.EntityName);
+            EnsurePausedMap();   /// Апстрим: Может поломаться. Проверяйте.
+            if (PausedMap != null)
+                _transform.SetParent(newEntityUid, newEntityUidTransformComp, PausedMap.Value);
+                newHumanoidData.EntityUid = newEntityUid;
+                _metaData.SetEntityName(newEntityUid, targetMeta.EntityName);
 
             return newHumanoidData;
         }

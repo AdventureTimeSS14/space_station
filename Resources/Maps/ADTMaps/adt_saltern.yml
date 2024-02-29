@@ -3419,6 +3419,25 @@ entities:
     - type: Transform
       pos: -7.5,-0.5
       parent: 31
+- proto: ADTVendingMachineParaDrobe
+  entities:
+  - uid: 7123
+    components:
+    - type: Transform
+      pos: 14.5,-15.5
+      parent: 31
+  - uid: 7799
+    components:
+    - type: Transform
+      pos: 23.5,-4.5
+      parent: 31
+- proto: ADTVendingMachinePill
+  entities:
+  - uid: 11447
+    components:
+    - type: Transform
+      pos: 19.5,-12.5
+      parent: 31
 - proto: ADTVendingMachinePrazatClothing
   entities:
   - uid: 9904
@@ -6855,11 +6874,6 @@ entities:
     components:
     - type: Transform
       pos: -10.371262,-31.421198
-      parent: 31
-  - uid: 7799
-    components:
-    - type: Transform
-      pos: 14.501501,-15.43846
       parent: 31
 - proto: BoxFolderRed
   entities:
@@ -33094,7 +33108,7 @@ entities:
       pos: 38.5,-5.5
       parent: 31
     - type: Door
-      secondsUntilStateChange: -7569.1743
+      secondsUntilStateChange: -7655.2407
       state: Closing
   - uid: 4019
     components:
@@ -58304,6 +58318,13 @@ entities:
     - type: Transform
       pos: 17.5,-0.5
       parent: 31
+- proto: SpawnPointADTPathologist
+  entities:
+  - uid: 2910
+    components:
+    - type: Transform
+      pos: 15.5,-15.5
+      parent: 31
 - proto: SpawnPointAtmos
   entities:
   - uid: 9106
@@ -60097,11 +60118,6 @@ entities:
     components:
     - type: Transform
       pos: -9.5,-18.5
-      parent: 31
-  - uid: 7123
-    components:
-    - type: Transform
-      pos: 14.5,-15.5
       parent: 31
   - uid: 7124
     components:
@@ -61904,13 +61920,6 @@ entities:
     components:
     - type: Transform
       pos: -15.5,-14.5
-      parent: 31
-- proto: VendingMachineViroDrobe
-  entities:
-  - uid: 2910
-    components:
-    - type: Transform
-      pos: 23.5,-4.5
       parent: 31
 - proto: VendingMachineWinter
   entities:
