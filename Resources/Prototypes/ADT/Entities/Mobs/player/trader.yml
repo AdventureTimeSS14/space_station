@@ -50,6 +50,7 @@
   keycode: 'ф'
   frequency: 1673
   color: "#b88646"
+  longRange: true
 
 - type: entity
   parent: EncryptionKey
