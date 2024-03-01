@@ -1,26 +1,26 @@
 - type: reagentDispenserInventory
   id: ChemDispenserStandardInventory
   inventory:
-  - JugAluminium
-  - JugCarbon
-  - JugChlorine
-  - JugCopper
-  - JugEthanol
-  - JugFluorine
-  - JugSugar
-  - JugHydrogen
-  - JugIodine
-  - JugIron
-  - JugLithium
-  - JugMercury
-  - JugNitrogen
-  - JugOxygen
-  - JugPhosphorus
-  - JugPotassium
-  - JugRadium
-  - JugSilicon
-  - JugSodium
-  - JugSulfur
+  - ADTJugAluminium
+  - ADTJugCarbon
+  - ADTJugChlorine
+  - ADTJugCopper
+  - ADTJugEthanol
+  - ADTJugFluorine
+  - ADTJugSugar
+  - ADTJugHydrogen
+  - ADTJugIodine
+  - ADTJugIron
+  - ADTJugLithium
+  - ADTJugMercury
+  - ADTJugNitrogen
+  - ADTJugOxygen
+  - ADTJugPhosphorus
+  - ADTJugPotassium
+  - ADTJugRadium
+  - ADTJugSilicon
+  - ADTJugSodium
+  - ADTJugSulfur
 
 - type: reagentDispenserInventory
   id: EmptyInventory
