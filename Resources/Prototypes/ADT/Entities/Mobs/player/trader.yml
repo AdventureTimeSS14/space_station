@@ -1,5 +1,8 @@
-- type: randomHumanoidSettings
+- type: entity
+  noSpawn: true
+  parent: MobHuman
   id: Trader
+  name: Trader
   components:
     - type: MindShield
     - type: GhostRole
@@ -9,14 +12,9 @@
       - !type:OverallPlaytimeRequirement
         time: 108000 # 30h overall
     - type: GhostTakeoverAvailable
+    - type: RandomHumanoidAppearance
     - type: Loadout
       prototypes: [ Trader ]
-    - type: InitialInfectedExempt
-    - type: RandomMetadata
-      nameSegments:
-      - names_first_male
-      - NamesLastERTCallsign
-
 - type: entity
   parent: BasePDA
   id: TraderPDA
@@ -44,6 +42,46 @@
     - type: Access
       tags:
       - Trader
+      - External
+
+- type: radioChannel
+  id: Trader
+  name: chat-radio-trader
+  keycode: 'ф'
+  frequency: 1673
+  color: "#b88646"
+  longRange: true
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyTrader
+  name: trader encryption key
+  description: An encryption key used by trader.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Trader
+    defaultChannel: Trader
+  - type: Sprite
+    layers:
+    - state: crypt_gray
+    - state: cargo_label
+
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetTrader
+  name: trader headset
+  description: A headset used by trader.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyTrader
+      - EncryptionKeyCommon
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/cargo.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/cargo.rsi
 
 - type: entity
   noSpawn: true
@@ -54,6 +92,8 @@
       contents:
         - id: BoxSurvival
         - id: RubberStampTrader
+        - id: AppraisalTool
+        - id: SpaceCash500
 
 - type: entity
   name: Trader
@@ -67,23 +107,11 @@
         state: cargo_tech
   - type: ConditionalSpawner
     prototypes:
-      - RandomHumanoidSpawnerTrader
+      - Trader
 
 - type: entity
-  id: RandomHumanoidSpawnerTrader
-  name: Trader
-  suffix: Trader
-  components:
-    - type: Sprite
-      sprite: Markers/jobs.rsi
-      state: cargo_tech
-    - type: RandomHumanoidSpawner
-      settings: Trader
-    - type: InitialInfectedExempt
-
-- type: entity
-  name: RandomCargoProduct
-  id: RandomCargoProduct
+  name: RandomTraderProduct
+  id: RandomTraderProduct
   parent: MarkerBase
   components:
   - type: Sprite
@@ -91,12 +119,6 @@
       - state: green
   - type: ConditionalSpawner
     prototypes:
-      - CrateArmorySMG
-      - CrateArmoryShotgun
-      - CrateTrackingImplants
-      - CrateTrainingBombs
-      - CrateArmoryLaser
-      - CrateArmoryPistols
       - AirCanister
       - OxygenCanister
       - LiquidOxygenCanister
@@ -226,6 +248,25 @@
       - CrateArtifactContainer
       - RandomArtifactSpawner
       - CrateScienceBiosuit
+      - Thruster
+      - Gyroscope
+
+- type: entity
+  name: RandomTraderArmory
+  id: RandomTraderArmory
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+  - type: ConditionalSpawner
+    prototypes:
+      - CrateArmorySMG
+      - CrateArmoryShotgun
+      - CrateTrackingImplants
+      - CrateTrainingBombs
+      - CrateArmoryLaser
+      - CrateArmoryPistols
       - CrateSecurityArmor
       - CrateSecurityHelmet
       - CrateSecurityNonlethal
@@ -236,5 +277,24 @@
       - DeployableBarrier
       - CrateSecurityHardsuit
       - CrateSecurityUSSPjuggernaut
-      - Thruster
-      - Gyroscope
+
+- type: entity
+  name: RandomTraderLoot
+  id: RandomTraderLoot
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+  - type: ConditionalSpawner
+    prototypes:
+      - ADTTallRobotFMekaCargo
+      - ADTTallRobotFMekaEng
+      - ADTTallRobotFMekaJani
+      - ADTTallRobotFMekaMed
+      - ADTTallRobotFMekaServe
+      - ADTTallRobotMekaCargo
+      - ADTTallRobotMekaEng
+      - ADTTallRobotMekaJani
+      - ADTTallRobotMekaMed
+      - ADTTallRobotMekaServe

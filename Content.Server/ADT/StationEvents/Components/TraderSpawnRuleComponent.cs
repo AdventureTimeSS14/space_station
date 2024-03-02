@@ -8,5 +8,5 @@ namespace Content.Server.StationEvents.Components;
 public sealed partial class TraderSpawnRuleComponent : Component
 {
     [DataField("TraderShuttlePath")]
-    public string TraderShuttlePath = "Maps/Shuttles/trader.yml";
+    public string TraderShuttlePath = "Maps/traderpost.yml";
 }
