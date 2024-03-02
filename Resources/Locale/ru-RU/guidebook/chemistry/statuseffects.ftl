@@ -10,6 +10,3 @@ reagent-effect-status-effect-Drunk = опьянение
 reagent-effect-status-effect-PressureImmunity = невосприимчивость к давлению
 reagent-effect-status-effect-Pacified = принудительный пацифизм
 reagent-effect-status-effect-RatvarianLanguage = паттерны ратварского языка
-reagent-effect-status-effect-PainKiller = болеутоление
-reagent-effect-status-effect-
-reagent-effect-status-effect-

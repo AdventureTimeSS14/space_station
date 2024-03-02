@@ -1,0 +1,10 @@
+- type: statusEffect
+  id: PainKiller
+  alert: PainKiller
+
+- type: alert
+  id: PainKiller
+  icons: [ /Textures/GG/Interface/Alerts/painkiller.png ]
+  name: На болеутоляющих
+  description: Вас ничего не сковывает.
+# иконку сделал LogDog из GG
