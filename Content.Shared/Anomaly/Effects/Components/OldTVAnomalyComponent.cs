@@ -30,7 +30,7 @@ public sealed partial class OldTVAnomalyComponent : Component
     public TimeSpan MaxSupercritStaticDuration = TimeSpan.FromSeconds(20);
 
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float PassiveStaticChance = 0.7f;
+    public float PassiveStaticChance = 0.85f;
 
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), ViewVariables(VVAccess.ReadWrite)]
     public TimeSpan NextSecond = TimeSpan.Zero;
