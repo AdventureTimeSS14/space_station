@@ -1,0 +1,35 @@
+- type: entity
+  name: lightning
+  id: ADTLightning
+  parent: Lightning
+  noSpawn: false
+
+- type: entity
+  name: spooky lightning
+  id: ADTLightningRevenant
+  parent: LightningRevenant
+  noSpawn: false
+
+- type: entity
+  name: charged lightning
+  id: ADTChargedLightning
+  parent: ChargedLightning
+  noSpawn: false
+
+- type: entity
+  name: lightning
+  id: ADTSpark
+  parent: Spark
+  noSpawn: false
+
+- type: entity
+  name: supercharged lightning
+  id: ADTSuperchargedLightning
+  parent: SuperchargedLightning
+  noSpawn: false
+
+- type: entity
+  name: hypercharged lightning
+  id: ADTHyperchargedLightning
+  parent: HyperchargedLightning
+  noSpawn: false
