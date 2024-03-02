@@ -82,6 +82,6 @@
       Unsexed: MaleFelinid
   - type: SizeAttributeWhitelist # Frontier
     tall: true
-    tallscale: 1.1
+    tallscale: 1
     short: true
-    shortscale: 1
+    shortscale: 0.8

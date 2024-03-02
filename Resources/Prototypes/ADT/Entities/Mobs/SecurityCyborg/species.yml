@@ -1,23 +1,38 @@
 - type: species
   id: ADTCyborgSpecies
   name: species-name-cyb-security
-  roundStart: false #
-  prototype: ADTMobCyborSecurity
+  roundStart: false #true # остаил для набегеров с софтом
+  prototype: ADTMobMouseCyborgSpecies #prototype: ADTMobCyborSecurity
   sprites: ADTMobCyborgSecSprites
   markingLimits: MobIPCMarkingLimits
-  dollPrototype: ADTMobCyborgSecDummy
+  dollPrototype: ADTMobMouseCyborgSpecies #ADTMobCyborgSecDummy
   skinColoration: TintedHues
   minAge: 1
   maxAge: 240
   oldAge: 50
   youngAge: 50
-  maleFirstNames: IpcFirst
-  femaleFirstNames: IpcFirst
-  maleLastNames: IpcLast # Corvax-LastnameGender
-  femaleLastNames: IpcLast # Corvax-LastnameGender
-  naming: FirstDashLast
+  # maleFirstNames: IpcFirst
+  # femaleFirstNames: IpcFirst
+  # maleLastNames: IpcLast # Corvax-LastnameGender
+  # femaleLastNames: IpcLast # Corvax-LastnameGender
+  # naming: FirstDashLast
   sexes:
   - Unsexed
+
+- type: entity
+  parent: MobMouse2
+  id: ADTMobMouseCyborgSpecies
+  name: "Крыска"
+  components:
+  - type: HumanoidAppearance
+    species: ADTCyborgSpecies
+  - type: RandomMetadata
+    nameSegments: [names_mouse_cyb]
+
+- type: dataset
+  id: names_mouse_cyb
+  values:
+  - Крыска
 
 - type: speciesBaseSprites
   id: ADTMobCyborgSecSprites

@@ -205,4 +205,4 @@ namespace Content.Client.Chemistry.UI
             Text = "⏏";
         }
     }
-}
+}   

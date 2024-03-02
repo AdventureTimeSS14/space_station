@@ -17,6 +17,10 @@
       - !type:Oxygenate
         conditions:
         - !type:OrganType
+          type: Drask
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
           type: Novakid
       - !type:Oxygenate
         conditions:
