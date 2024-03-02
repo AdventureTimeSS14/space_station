@@ -237,6 +237,23 @@
             max: 16
         probability: 0.5
       - !type:Polymorph 
+        prototype: ADTPRodMetall
+        conditions:
+          - !type:OrganType
+            type: Novakid
+          - !type:ReagentThreshold
+            min: 16
+            max: 16
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPRodMetall2
+        conditions:
+          - !type:OrganType
+            type: Novakid
+          - !type:ReagentThreshold
+            min: 16
+            max: 16
+        probability: 0.5
         prototype: ADTPSpaceBear 
         conditions:
           - !type:OrganType
