@@ -1,26 +1,26 @@
 - type: reagentDispenserInventory
   id: ChemDispenserStandardInventory
   inventory:
-  - ADTJugAluminium
-  - ADTJugCarbon
-  - ADTJugChlorine
-  - ADTJugCopper
-  - ADTJugEthanol
-  - ADTJugFluorine
-  - ADTJugSugar
-  - ADTJugHydrogen
-  - ADTJugIodine
-  - ADTJugIron
-  - ADTJugLithium
-  - ADTJugMercury
-  - ADTJugNitrogen
-  - ADTJugOxygen
-  - ADTJugPhosphorus
-  - ADTJugPotassium
-  - ADTJugRadium
-  - ADTJugSilicon
-  - ADTJugSodium
-  - ADTJugSulfur
+  - ADTCanisterAluminium
+  - ADTCanisterCarbon
+  - ADTCanisterChlorine
+  - ADTCanisterCopper
+  - ADTCanisterEthanol
+  - ADTCanisterFluorine
+  - ADTCanisterSugar
+  - ADTCanisterHydrogen
+  - ADTCanisterIodine
+  - ADTCanisterIron
+  - ADTCanisterLithium
+  - ADTCanisterMercury
+  - ADTCanisterNitrogen
+  - ADTCanisterOxygen
+  - ADTCanisterPhosphorus
+  - ADTCanisterPotassium
+  - ADTCanisterRadium
+  - ADTCanisterSilicon
+  - ADTCanisterSodium
+  - ADTCanisterSulfur
 
 - type: reagentDispenserInventory
   id: EmptyInventory

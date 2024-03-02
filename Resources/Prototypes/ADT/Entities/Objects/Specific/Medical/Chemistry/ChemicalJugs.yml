@@ -1,50 +1,80 @@
 #Основа основ.
 - type: entity
-  name: big jug
-  parent: ADTJug
-  id: ADTJug
-  description: A big jug for a big boys.
+  name: big canister
+  parent: BaseItem
+  id: ADTCanister
+  description: A big canister for a big boys.
   components:
-    - type: SolutionContainerManager
-      solutions:
-        beaker:
-          maxVol: 600
-          canMix: true
-    - type: Sprite
-      sprite: Objects/Specific/Chemistry/jug.rsi
-      layers:
-        - state: jug
-        - state: jug1
-          map: [ "enum.SolutionContainerLayers.Fill" ]
-          visible: false
-    - type: Item
-      size: Ginormous
-      sprite: Objects/Specific/Chemistry/jug.rsi #заменить
-    - type: HeldSpeedModifier
-      walkModifier: 0.8
-      sprintModifier: 0.8
-    - type: MultiHandedItem
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 600
+        canMix: true
+  - type: Sprite
+    sprite: ADT\Objects\Specific\Medical\Chemistry\canister.rsi
+    layers:
+      - state: icon
+      - state: fill-1
+        map: [ "enum.SolutionContainerLayers.Fill" ]
+        visible: false
+  - type: Item
+    size: Ginormous
+    sprite: ADT\Objects\Specific\Medical\Chemistry\canister.rsi
+  - type: HeldSpeedModifier
+    walkModifier: 0.5
+    sprintModifier: 0.5
+  - type: MultiHandedItem
+  - type: Label
+    originalName: ent-ADTCanister
+  - type: Tag
+    tags:
+    - ChemDispensable
+  - type: RefillableSolution
+    solution: beaker
+  - type: DrainableSolution
+    solution: beaker
+  - type: ExaminableSolution
+    solution: beaker
+  - type: DrawableSolution
+    solution: beaker
+  - type: InjectableSolution
+    solution: beaker
+  - type: SolutionTransfer
+    canChangeTransferAmount: true
+  - type: UserInterface
+    interfaces:
+      - key: enum.TransferAmountUiKey.Key
+        type: TransferAmountBoundUserInterface
+  - type: Drink
+    solution: beaker
+  - type: Spillable
+    solution: beaker
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 3
+    fillBaseName: fill-
+  - type: StaticPrice
+    price: 180
 
-#Химия.
 - type: entity
-  parent: ADTJug
-  name: jug (carbon)
-  id: ADTJugCarbon
+  parent: ADTCanister
+  name: canister (carbon)
+  id: ADTCanisterCarbon
   noSpawn: true
   components:
-    - type: Label
-      currentLabel: reagent-name-carbon
-    - type: SolutionContainerManager
-      solutions:
-        beaker:
-          reagents:
-            - ReagentId: Carbon
-              Quantity: 600
+  - type: Label
+    currentLabel: reagent-name-carbon
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        reagents:
+          - ReagentId: Carbon
+            Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (iodine)
-  id: ADTJugIodine
+  parent: ADTCanister
+  name: canister (iodine)
+  id: ADTCanisterIodine
   noSpawn: true
   components:
     - type: Label
@@ -57,9 +87,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (fluorine)
-  id: ADTJugFluorine
+  parent: ADTCanister
+  name: canister (fluorine)
+  id: ADTCanisterFluorine
   noSpawn: true
   components:
     - type: Label
@@ -72,9 +102,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (chlorine)
-  id: ADTJugChlorine
+  parent: ADTCanister
+  name: canister (chlorine)
+  id: ADTCanisterChlorine
   noSpawn: true
   components:
     - type: Label
@@ -87,9 +117,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (aluminium)
-  id: ADTJugAluminium
+  parent: ADTCanister
+  name: canister (aluminium)
+  id: ADTCanisterAluminium
   noSpawn: true
   components:
     - type: Label
@@ -102,9 +132,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (phosphorus)
-  id: ADTJugPhosphorus
+  parent: ADTCanister
+  name: canister (phosphorus)
+  id: ADTCanisterPhosphorus
   noSpawn: true
   components:
     - type: Label
@@ -117,9 +147,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (sulfur)
-  id: ADTJugSulfur
+  parent: ADTCanister
+  name: canister (sulfur)
+  id: ADTCanisterSulfur
   noSpawn: true
   components:
     - type: Label
@@ -132,9 +162,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (silicon)
-  id: ADTJugSilicon
+  parent: ADTCanister
+  name: canister (silicon)
+  id: ADTCanisterSilicon
   noSpawn: true
   components:
     - type: Label
@@ -147,9 +177,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (hydrogen)
-  id: ADTJugHydrogen
+  parent: ADTCanister
+  name: canister (hydrogen)
+  id: ADTCanisterHydrogen
   noSpawn: true
   components:
     - type: Label
@@ -162,9 +192,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (lithium)
-  id: ADTJugLithium
+  parent: ADTCanister
+  name: canister (lithium)
+  id: ADTCanisterLithium
   noSpawn: true
   components:
     - type: Label
@@ -177,9 +207,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (sodium)
-  id: ADTJugSodium
+  parent: ADTCanister
+  name: canister (sodium)
+  id: ADTCanisterSodium
   noSpawn: true
   components:
     - type: Label
@@ -192,9 +222,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (potassium)
-  id: ADTJugPotassium
+  parent: ADTCanister
+  name: canister (potassium)
+  id: ADTCanisterPotassium
   noSpawn: true
   components:
     - type: Label
@@ -207,9 +237,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (radium)
-  id: ADTJugRadium
+  parent: ADTCanister
+  name: canister (radium)
+  id: ADTCanisterRadium
   noSpawn: true
   components:
     - type: Label
@@ -222,9 +252,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (iron)
-  id: ADTJugIron
+  parent: ADTCanister
+  name: canister (iron)
+  id: ADTCanisterIron
   noSpawn: true
   components:
     - type: Label
@@ -237,9 +267,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (copper)
-  id: ADTJugCopper
+  parent: ADTCanister
+  name: canister (copper)
+  id: ADTCanisterCopper
   noSpawn: true
   components:
     - type: Label
@@ -252,9 +282,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (gold)
-  id: ADTJugGold
+  parent: ADTCanister
+  name: canister (gold)
+  id: ADTCanisterGold
   noSpawn: true
   components:
     - type: Label
@@ -267,9 +297,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (mercury)
-  id: ADTJugMercury
+  parent: ADTCanister
+  name: canister (mercury)
+  id: ADTCanisterMercury
   noSpawn: true
   components:
     - type: Label
@@ -282,9 +312,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (silver)
-  id: ADTJugSilver
+  parent: ADTCanister
+  name: canister (silver)
+  id: ADTCanisterSilver
   noSpawn: true
   components:
     - type: Label
@@ -297,9 +327,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (ethanol)
-  id: ADTJugEthanol
+  parent: ADTCanister
+  name: canister (ethanol)
+  id: ADTCanisterEthanol
   noSpawn: true
   components:
     - type: Label
@@ -312,9 +342,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (sugar)
-  id: ADTJugSugar
+  parent: ADTCanister
+  name: canister (sugar)
+  id: ADTCanisterSugar
   noSpawn: true
   components:
     - type: Label
@@ -327,9 +357,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (nitrogen)
-  id: ADTJugNitrogen
+  parent: ADTCanister
+  name: canister (nitrogen)
+  id: ADTCanisterNitrogen
   noSpawn: true
   components:
     - type: Label
@@ -342,9 +372,9 @@
               Quantity: 600
 
 - type: entity
-  parent: ADTJug
-  name: jug (oxygen)
-  id: ADTJugOxygen
+  parent: ADTCanister
+  name: canister (oxygen)
+  id: ADTCanisterOxygen
   noSpawn: true
   components:
     - type: Label
