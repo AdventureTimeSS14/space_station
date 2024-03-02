@@ -5,10 +5,10 @@
   parent: ADTPillPack
   components:
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\packs.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
     state: sodiumizole
   - type: Item
-    sprite: ADT\Objects\Specific\Medical\Chemistry\packs.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
   - type: StorageFill
     contents:
       - id: ADTMSodiumizolePill 
@@ -20,10 +20,10 @@
   parent: ADTPillPack
   components:
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\packs.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
     state: nitrofurfoll
   - type: Item
-    sprite: ADT\Objects\Specific\Medical\Chemistry\packs.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
   - type: StorageFill
     contents:
       - id: ADTMNitrofurfollPill 
@@ -35,10 +35,10 @@
   parent: ADTPillPack
   components:
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\packs.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
     state: anelgesin
   - type: Item
-    sprite: ADT\Objects\Specific\Medical\Chemistry\packs.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
   - type: StorageFill
     contents:
       - id: ADTMAnelgesinPill 
@@ -50,10 +50,10 @@
   parent: ADTPillPack
   components:
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\packs.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
     state: minoxide
   - type: Item
-    sprite: ADT\Objects\Specific\Medical\Chemistry\packs.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
   - type: StorageFill
     contents:
       - id: ADTMMinoxidePill 
@@ -65,10 +65,10 @@
   parent: ADTPillPack
   components:
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\packs.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
     state: diethamilate
   - type: Item
-    sprite: ADT\Objects\Specific\Medical\Chemistry\packs.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
   - type: StorageFill
     contents:
       - id: ADTMDiethamilatePill 
@@ -80,10 +80,10 @@
   parent: ADTPillPack
   components:
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\packs.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
     state: haloperidol
   - type: Item
-    sprite: ADT\Objects\Specific\Medical\Chemistry\packs.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
   - type: StorageFill
     contents:
       - id: ADTMHaloperidolPill 
@@ -95,10 +95,10 @@
   parent: ADTPillPack
   components:
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\packs.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
     state: charcoal
   - type: Item
-    sprite: ADT\Objects\Specific\Medical\Chemistry\packs.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
   - type: StorageFill
     contents:
       - id: PillCharcoal
@@ -110,10 +110,10 @@
   parent: ADTPillPack
   components:
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\packs.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
     state: ethylredoxrazine
   - type: Item
-    sprite: ADT\Objects\Specific\Medical\Chemistry\packs.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
   - type: StorageFill
     contents:
       - id: ADTMEthylredoxrazinePill 
@@ -127,10 +127,10 @@
   description: Contains healthy vitamins for you.
   components:
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\pills.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/pills.rsi
     state: vitamin-canister
   - type: Item
-    sprite: ADT\Objects\Specific\Medical\Chemistry\pills.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/pills.rsi
   - type: StorageFill
     contents:
       - id: ADTMVitaminPill 
@@ -146,10 +146,10 @@
   description: Contains (almost) healthy antidepressants for you.
   components:
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\pills.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/pills.rsi
     state: agolatine-canister
   - type: Item
-    sprite: ADT\Objects\Specific\Medical\Chemistry\pills.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/pills.rsi
   - type: StorageFill
     contents:
       - id: ADTMAgolatinePill 

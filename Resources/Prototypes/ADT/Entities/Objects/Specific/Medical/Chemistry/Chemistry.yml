@@ -5,10 +5,10 @@
   parent: PillCanister
   components:
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\pills.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/pills.rsi
     state: pill-canister
   - type: Item
-    sprite: ADT\Objects\Specific\Medical\Chemistry\pills.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/pills.rsi
 
 # бутылочка (не разбивающаяся)
 - type: entity
@@ -27,7 +27,7 @@
       Plastic: 25
   - type: SpaceGarbage
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\plastic-bottle.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/plastic-bottle.rsi
     layers:
       - state: icon
         map: [ "enum.SolutionContainerLayers.Base" ]
@@ -63,7 +63,7 @@
       type: TransferAmountBoundUserInterface
   - type: Item
     size: Small
-    sprite: ADT\Objects\Specific\Medical\Chemistry\plastic-bottle.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/plastic-bottle.rsi
   - type: Spillable
     solution: drink
   - type: MeleeWeapon
@@ -94,10 +94,10 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\packs.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
     state: pack
   - type: Item
-    sprite: ADT\Objects\Specific\Medical\Chemistry\packs.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
     size: Small
   - type: Tag
     tags:
@@ -152,7 +152,7 @@
   id: ADTSmallSyringe
   components:
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\syringe.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/syringe.rsi
     layers:
       - state: fill1
         map: ["enum.SolutionContainerLayers.Fill"]
@@ -160,11 +160,11 @@
       - state: syringe_base
         map: ["enum.SolutionContainerLayers.Base"]
   - type: Icon
-    sprite: ADT\Objects\Specific\Medical\Chemistry\syringe.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/syringe.rsi
     state: "syringe_base"
   - type: Item
     size: Tiny
-    sprite: ADT\Objects\Specific\Medical\Chemistry\syringe.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/syringe.rsi
     heldPrefix: 0
   - type: SolutionContainerManager
     solutions:
@@ -205,10 +205,10 @@
       - id: ADTSmallSyringe
         amount: 6
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\syringe.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/syringe.rsi
     state: icon
   - type: Item
-    sprite: ADT\Objects\Specific\Medical\Chemistry\syringe.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/syringe.rsi
     size: Normal 
   - type: PhysicalComposition
     materialComposition:
@@ -221,7 +221,7 @@
   id: ADTReagentAnalyzer
   components:
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\reagent_analyzer.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/reagent_analyzer.rsi
     layers:
       - state: icon
       - state: screen
@@ -231,7 +231,7 @@
         visible: false
   - type: Item
     size: Tiny
-    sprite: ADT\Objects\Specific\Medical\Chemistry\reagent_analyzer.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/reagent_analyzer.rsi
   - type: ActivatableUI
     key: enum.ReagentAnalyzerUiKey.Key
   - type: UserInterface
@@ -255,7 +255,7 @@
         whitelist:
           components:
           - FitsInDispenser
-    sprite: ADT\Objects\Specific\Medical\Chemistry\reagent_analyzer.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/reagent_analyzer.rsi
   - type: Appearance
 
 #гипсоспреи.
@@ -268,10 +268,10 @@
   id: ADMINHYPO
   components:
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\adt_combathypo.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/adt_combathypo.rsi
     state: icon
   - type: Item
-    sprite: ADT\Objects\Specific\Medical\Chemistry\adt_combathypo.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/adt_combathypo.rsi
     size: Normal
   - type: SolutionContainerManager
     solutions:
@@ -291,10 +291,10 @@
   id: ADTCombatHypo
   components:
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\adt_combathypo.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/adt_combathypo.rsi
     state: icon
   - type: Item
-    sprite: ADT\Objects\Specific\Medical\Chemistry\adt_combathypo.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/adt_combathypo.rsi
     size: Normal
   - type: SolutionContainerManager
     solutions:

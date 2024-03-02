@@ -11,7 +11,7 @@
         maxVol: 600
         canMix: true
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\canister.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/canister.rsi
     layers:
       - state: icon
       - state: fill-1
@@ -19,7 +19,7 @@
         visible: false
   - type: Item
     size: Ginormous
-    sprite: ADT\Objects\Specific\Medical\Chemistry\canister.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/canister.rsi
   - type: HeldSpeedModifier
     walkModifier: 0.5
     sprintModifier: 0.5

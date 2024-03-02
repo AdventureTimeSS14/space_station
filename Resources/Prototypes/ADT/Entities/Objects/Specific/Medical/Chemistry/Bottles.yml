@@ -6,7 +6,7 @@
   description: A small plastic bottle. The letters on the label so small that they form a funny face.
   components:
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\plastic-bottle.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/plastic-bottle.rsi
     layers:
       - state: icon
         map: [ "enum.SolutionContainerLayers.Base" ]
@@ -29,7 +29,7 @@
   parent: BaseChemistryEmptyPlasticBottle
   components:
   - type: Sprite
-    sprite: ADT\Objects\Specific\Medical\Chemistry\plastic-bottle.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/plastic-bottle.rsi
     layers:
       - state: icon
         map: [ "enum.SolutionContainerLayers.Base" ]
