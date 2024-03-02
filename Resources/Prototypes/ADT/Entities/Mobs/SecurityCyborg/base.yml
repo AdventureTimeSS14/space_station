@@ -185,10 +185,13 @@
         - map: ["pocket2"]
         - map: ["enum.HumanoidVisualLayers.Tail"]
         #- map: ["enum.HumanoidVisualLayers.Wings"]
+        - map: ["enum.DamageStateVisualLayers.Base"]
+          state: full
+          sprite: ADT/Mobs/Silicon/Cyborg/parts.rsi
         - map: ["clownedon"] # Dynamically generated
           sprite: "Effects/creampie.rsi"
           state: "creampie_human"
-          visible: false
+          visible: true #false
     - type: Repairable
       #fuelcost: 60
       doAfterDelay: 10 # was 18
@@ -311,8 +314,14 @@
         proper: true
     - type: StandingState
     - type: CanEscapeInventory
-    - type: HumanoidAppearance
-      species: ADTCyborgSpecies
+    # - type: HumanoidAppearance
+    #   species: ADTCyborgSpecies
+    # - type: Sprite
+    #   drawdepth: Mobs
+    #   layers:
+    #     - map: ["enum.DamageStateVisualLayers.Base"]
+    #       state: crawling
+    #       sprite: Corvax/Mobs/Pets/largo.rsi
     - type: Body
       prototype: ADTBodyCyborgSec
       requiredLegs: 2
