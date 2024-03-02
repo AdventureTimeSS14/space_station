@@ -33,6 +33,13 @@ jobs:
       run: |
         cd RobustToolbox
         git fetch --depth=1
+
+    - name: Install Secrets
+      run: |
+        git clone ${{ secrets.SECRETS_PATH }}
+        cd ADT_STATION/
+        chmod +x ./install.sh
+        ./install.sh
         
     - name: Install dependencies
       run: dotnet restore

@@ -51,3 +51,6 @@
   
 - type: Tag
   id: HighVoltageDefibrillator
+
+- type: Tag
+  id: Trader
