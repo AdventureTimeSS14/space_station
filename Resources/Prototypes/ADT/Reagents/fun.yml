@@ -254,6 +254,7 @@
             min: 16
             max: 16
         probability: 0.5
+      - !type:Polymorph
         prototype: ADTPSpaceBear 
         conditions:
           - !type:OrganType
