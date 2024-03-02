@@ -105,3 +105,15 @@
     slots:
       cell_slot:
         name: power-cell-slot-component-slot-name-default
+
+- type: entity
+  id: ADTHighVoltageDefibrillatorFake #дефиб синди.
+  parent: ADTHighVoltageDefibrillator
+  description: A defibrillator that takes less time to zap but deals more electric damage. But something's off..
+  components:
+    - type: Defibrillator
+      zapHeal:
+        types:
+          Asphyxiation: -1
+      zapDamage: 100
+
