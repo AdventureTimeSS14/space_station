@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "ADT & GG Team",
+  "copyright": "ADT & GG Team. Painkiller by LogDog. Polymorph by JustKekc",
   "size": {
     "x": 32,
     "y": 32
@@ -11,7 +11,8 @@
       "name": "painkiller"
     },
     {
-      "name": "polymorph"
+      "name": "polymorph",
+      "delays": [ [0.6, 0.1, 0.1, 0.1, 0.1, 0.1, 0.6, 0.1, 0.1, 0.1, 0.1, 0.1] ]
     }
   ]
 }
