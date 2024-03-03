@@ -1,7 +1,7 @@
 - type: reagent
   id: ADTMPolymorphine
   name: reagent-name-polymorphine
-  group: Medicine
+  group: Special
   desc: reagent-desc-polymorphine
   physicalDesc: reagent-physical-desc-enigmatic
   flavor: tingly
@@ -330,7 +330,7 @@
 - type: reagent
   id: ADTMChaoticPolymorphine
   name: reagent-name-chaotic-polymorphine
-  group: Medicine
+  group: Special
   desc: reagent-desc-chaotic-polymorphine
   physicalDesc: reagent-physical-desc-volatile
   flavor: magical
