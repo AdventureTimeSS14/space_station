@@ -103,5 +103,5 @@ ent-MobHamster = хомяк
     .desc = Милый, пушистый, робастный хомяк.
 ent-MobPig = свинья
     .desc = Хрю.
-    ent-MobPossumMortyOld = Морти
+ent-MobPossumMortyOld = Морти
     .desc = Резидент станции Дидельфис Вирджиниана. Чувствительный, но жизнерадостный парень.
