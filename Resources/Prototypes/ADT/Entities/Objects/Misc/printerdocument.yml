@@ -477,6 +477,27 @@
     - type: Paper
       content: doc-text-printer-REPORTACCOMPLISHMENTGOALS
 
+  # ывенту
+- type: entity
+  parent: Paper
+  id: RSFORM
+  name: Отчёт о сканировании объекта
+  description: '???'
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      layers:
+      - state: glitch-paper
+      - state: glitch-paper_words
+        map: ["enum.PaperVisualLayers.Writing"]
+        visible: false
+      - state: glitch-paper_words
+        map: ["enum.PaperVisualLayers.Stamp"]
+        visible: false
+
+    - type: Paper
+      content: doc-text-printer-redspace
+
 
 #Сам принтер
 - type: entity
@@ -555,6 +576,7 @@
       - ClosingIndictmentRecipe
       - SentenceRecipe
       - StatementHealtheRecipe
+      #- RSFORMRecipe #Разкомментить когда понадобится
   - type: EmagLatheRecipes
     emagStaticRecipes:
         - NOTICEOFLIQUIDATIONRecipe
@@ -997,6 +1019,15 @@
 - type: latheRecipe
   id: REPORTACCOMPLISHMENTGOALSRecipe
   result: REPORTACCOMPLISHMENTGOALS
+  completetime: 1
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+    # Ивееееент
+- type: latheRecipe
+  id: RSFORMRecipe
+  result: RSFORM
   completetime: 1
   applyMaterialDiscount: false
   materials:
