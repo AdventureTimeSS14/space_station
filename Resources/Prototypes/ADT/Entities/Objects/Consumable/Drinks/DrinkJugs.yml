@@ -480,3 +480,19 @@
   - type: Drink
   - type: Label
     currentLabel: apple-liqueur-name
+
+- type: entity
+  parent: ADTCanister
+  id: ADTDrinkWhiskeyCanister
+  name: cola canister
+  description: Cola. In space.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        reagents:
+        - ReagentId: Whiskey
+          Quantity: 600
+  - type: Drink
+  - type: Label
+    currentLabel: reagent-name-whiskey
