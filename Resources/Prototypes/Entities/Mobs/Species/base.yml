@@ -134,6 +134,7 @@
       - !type:WashCreamPieReaction
   - type: StatusEffects
     allowed:
+    - ADTApathy
     - PainKiller
     - Stun
     - KnockedDown
@@ -275,6 +276,7 @@
   # Organs
   - type: StatusEffects
     allowed:
+    - ADTApathy
     - PainKiller
     - Stun
     - KnockedDown

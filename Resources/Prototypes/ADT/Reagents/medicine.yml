@@ -364,6 +364,12 @@
           types:
             Asphyxiation: 2
             Blunt: 1
+      - !type:GenericStatusEffect
+        key: ADTApathy #добавляем апатию :thumbsup:
+        component: Apathy
+        type: Add
+        time: 2
+        refresh: false
       - !type:PopupMessage
         type: Local
         visualType: Small
