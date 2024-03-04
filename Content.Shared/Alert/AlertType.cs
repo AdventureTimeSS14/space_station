@@ -56,8 +56,7 @@ namespace Content.Shared.Alert
         BorgCrit,
         BorgDead,
         Chemicals,
-        PainKiller,
-        ADTAlertPolymorph
+        PainKiller
     }
 
 }
