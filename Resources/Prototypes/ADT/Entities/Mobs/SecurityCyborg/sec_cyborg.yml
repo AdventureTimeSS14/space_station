@@ -158,5 +158,5 @@
   components:
   - type: HumanoidAppearance
     species: ADTCyborgSpecies
-  - type: Inventory
-    templateId: ADTCyborgSecInventory
+  # - type: Inventory
+  #   templateId: ADTCyborgSecInventory

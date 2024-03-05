@@ -105,6 +105,7 @@
 # Дополнения
 - type: reaction
   id: ADTMAgolatine
+  minTemp: 370
   reactants:
     Carbon:
       amount: 1

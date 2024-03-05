@@ -6,8 +6,8 @@
     back: ClothingBackpackCargoTraderFilled
     shoes: ClothingShoesColorBlack
     id: TraderPDA
+    ears: ClothingHeadsetTrader
     belt: ClothingBeltUtilityFilled
-    pocket1: AppraisalTool
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear

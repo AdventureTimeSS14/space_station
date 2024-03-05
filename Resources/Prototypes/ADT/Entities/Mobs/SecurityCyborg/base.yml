@@ -137,6 +137,9 @@
       noRot: true
       drawdepth: Mobs
       layers:
+        - map: ["enum.DamageStateVisualLayers.Base"]
+          sprite: ADT/Mobs/Silicon/Cyborg/parts.rsi
+          state: full
         - map: ["enum.HumanoidVisualLayers.Chest"]
         - map: ["enum.HumanoidVisualLayers.Head"]
         - map: ["enum.HumanoidVisualLayers.Snout"]
@@ -311,8 +314,14 @@
         proper: true
     - type: StandingState
     - type: CanEscapeInventory
-    - type: HumanoidAppearance
-      species: ADTCyborgSpecies
+    # - type: HumanoidAppearance
+    #   species: ADTCyborgSpecies
+    # - type: Sprite
+    #   drawdepth: Mobs
+    #   layers:
+    #     - map: ["enum.DamageStateVisualLayers.Base"]
+    #       state: crawling
+    #       sprite: Corvax/Mobs/Pets/largo.rsi
     - type: Body
       prototype: ADTBodyCyborgSec
       requiredLegs: 2
