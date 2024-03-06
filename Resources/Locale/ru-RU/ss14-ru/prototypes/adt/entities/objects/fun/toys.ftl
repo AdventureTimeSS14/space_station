@@ -1,8 +1,8 @@
-ent-ADTPlushieResomiBlue = resomi plushie blue
-    .desc = Little cute Resomi! UwU
-ent-ADTPlushieResomiGreen = resomi plushie green
-    .desc = Little cute Resomi! UwU
-ent-ADTPlushieResomiYellow = resomi plushie yellow
-    .desc = Little cute Resomi! UwU
+ent-ADTPlushieResomiBlue = плюшевый синий Резоми
+    .desc = Милый маленький Резоми! UwU
+ent-ADTPlushieResomiGreen = плюшевый зелёный Резоми
+    .desc = { ent-ADTPlushieResomiGreen.desc }
+ent-ADTPlushieResomiYellow = плюшевый желтый Резоми
+    .desc = { ent-ADTPlushieResomiGreen.desc }
 ent-ADTGarbagerama = Garbagerama
-    .desc = Someone forgot it here.
+    .desc = Кто-то забыл это здесь

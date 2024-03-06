@@ -3,7 +3,7 @@ ent-AnomalyLocatorWideUnpowered = широкий локатор аномалий
     .suffix = { "Разряжен" }
 
 ent-AnomalyLocatorWide = { ent-AnomalyLocatorWideUnpowered }
-    .desc = { ent-AnomalyLocatorWide.desc }
+    .desc = { ent-AnomalyLocatorWideUnpowered.desc }
     .suffix = { "Заряжен" }
 
 ent-AnomalyLocatorWideEmpty = { ent-AnomalyLocatorWideUnpowered }
