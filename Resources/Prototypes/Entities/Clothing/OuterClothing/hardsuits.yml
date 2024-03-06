@@ -56,7 +56,7 @@
         Heat: 0.2
         Radiation: 0.5
         Caustic: 0.5
-        Stun: 0.75
+        Stun: 0.65
   - type: ClothingSpeedModifier
     walkModifier: 0.7
     sprintModifier: 0.7
@@ -185,6 +185,7 @@
         Piercing: 0.5
         Heat: 0.3
         Radiation: 0.1
+        Stun: 0.65
   - type: ExplosionResistance
     damageCoefficient: 0.2
   - type: TemperatureProtection
@@ -217,7 +218,7 @@
         Heat: 0.7
         Radiation: 0.8
         Caustic: 0.85
-        Stun: 0.7
+        Stun: 0.6
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.85
@@ -248,7 +249,7 @@
         Heat: 0.7
         Radiation: 0.8
         Caustic: 0.7
-        Stun: 0.8
+        Stun: 0.7
   - type: ExplosionResistance
     damageCoefficient: 0.25
   - type: ClothingSpeedModifier
@@ -283,7 +284,7 @@
         Heat: 0.7
         Radiation: 0.8
         Caustic: 0.7
-        Stun: 0.8
+        Stun: 0.6
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8
@@ -316,7 +317,7 @@
         Heat: 0.5
         Radiation: 0.5
         Caustic: 0.6
-        Stun: 0.7
+        Stun: 0.5
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
@@ -349,7 +350,7 @@
         Heat: 0.4
         Radiation: 0.0
         Caustic: 0.7
-        Stun: 0.8
+        Stun: 0.7
   - type: ClothingSpeedModifier
     walkModifier: 0.75
     sprintModifier: 0.8
@@ -449,7 +450,7 @@
         Heat: 0.7
         Radiation: 0.5
         Caustic: 0.6
-        Stun: 0.7
+        Stun: 0.6
   - type: ExplosionResistance
     damageCoefficient: 0.6
   - type: ClothingSpeedModifier
@@ -483,7 +484,7 @@
         Piercing: 0.65
         Radiation: 0.5
         Caustic: 0.8
-        Stun: 0.8
+        Stun: 0.6
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.9
@@ -551,7 +552,7 @@
         Piercing: 0.5
         Heat: 0.7
         Radiation: 0.8
-        Caustic: 0.85
+        Caustic: 0.75
   - type: ExplosionResistance
     damageCoefficient: 0.6
   - type: ToggleableClothing
