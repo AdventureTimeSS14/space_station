@@ -27,8 +27,6 @@
   - type: Pda
     id: TraderIDCard
     state: pda-tradertsf
-  - type: Icon
-    state: pda-tradertsf
 
 - type: entity
   parent: IDCardStandard
