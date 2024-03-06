@@ -3,4 +3,4 @@ ent-Lighter = простая зажигалка
 ent-CheapLighter = дешёвая зажигалка
     .desc = Опасно дешёвая пластиковая зажигалка, не обожгите большой палец!
 ent-FlippoEngravedLighter = зажигалка с гравировкой flippo
-    .desc = A rugged golden lighter, lasts quite a while. Engravings serve no tactical advantage whatsoever.
+    .desc = Прочная золотая зажигалка, служит довольно долго. Гравировки не дают никаких тактических преимуществ.ы
