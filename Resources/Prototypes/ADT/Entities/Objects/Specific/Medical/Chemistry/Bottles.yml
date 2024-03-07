@@ -108,9 +108,20 @@
 - type: entity
   id: ADTMFormalinBottle
   name: Formalin bottle
-  parent: ADTMMorphineBottle
+  parent: ADTGlassBottle
   description: A basis of pathologist's work.
   components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/Chemistry/glass-bottle.rsi
+    layers:
+      - state: fill1
+        map: [ "enum.SolutionContainerLayers.Fill" ]
+        visible: false
+      - state: icon_formalin
+        map: [ "enum.SolutionContainerLayers.Overlay" ]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 3
+    fillBaseName: fill
   - type: SolutionContainerManager
     solutions:
       drink:
