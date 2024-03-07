@@ -13,8 +13,8 @@
       visible: false
   - type: Clothing
     sprite: ADT/Clothing/Shoes/Boots/foot_tag
-    slots:
-    - FEET
+    slots: [socks]
+    quickEquip: false
   - type: Paper
   - type: ActivatableUI
     key: enum.PaperUiKey.Key
@@ -29,6 +29,7 @@
     tags:
     - Document
     - Trash
+    - socks
   - type: Appearance
   - type: PaperVisuals
   - type: GuideHelp

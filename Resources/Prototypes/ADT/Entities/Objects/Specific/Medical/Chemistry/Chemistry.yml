@@ -62,7 +62,7 @@
     - key: enum.TransferAmountUiKey.Key
       type: TransferAmountBoundUserInterface
   - type: Item
-    size: Small
+    size: Tiny
     sprite: ADT/Objects/Specific/Medical/Chemistry/plastic-bottle.rsi
   - type: Spillable
     solution: drink
@@ -98,7 +98,7 @@
     state: pack
   - type: Item
     sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
-    size: Small
+    size: Tiny
   - type: Tag
     tags:
       - PillCanister
