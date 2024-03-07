@@ -401,7 +401,7 @@
 
 - type: entity
   parent: ClothingOuterStorageBase
-  id: ClothingOuterCoatAaron
+  id: ADTClothingOuterCoatAaron
   name: aaron trenchcoat
   description: A battered dark raincoat that smells strongly of cigarette smoke.
   components:
