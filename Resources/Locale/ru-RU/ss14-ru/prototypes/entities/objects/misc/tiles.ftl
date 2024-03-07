@@ -106,4 +106,7 @@ ent-FloorTileItemGratingMaint = решётчатый технический по
     .desc = { ent-FloorTileItemBase.desc }
 ent-FloorTileItemWeb = паутинный пол
     .desc = { ent-FloorTileItemBase.desc }
-
+ent-FloorTileItemAstroGrass = астро-трава
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemAstroIce = астро-лед
+    .desc = { ent-FloorTileItemBase.desc }

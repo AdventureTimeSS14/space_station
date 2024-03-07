@@ -14,3 +14,5 @@ ent-ActionToggleMagbootsAdvanced = { ent-ActionBaseToggleMagboots }
     .desc = { ent-ActionBaseToggleMagboots.desc }
 ent-ActionToggleMagbootsSyndie = { ent-ActionBaseToggleMagboots }
     .desc = { ent-ActionBaseToggleMagboots.desc }
+ent-ClothingShoesBootsMagSci = магботы
+    .desc = Магнитные ботинки, часто используемые во время выхода в открытый космос для обеспечения того, чтобы пользователь оставался надежно прикрепленным к транспортному средству.
