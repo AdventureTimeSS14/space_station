@@ -46,6 +46,7 @@
     fireRate: 1.7
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+    personable: true
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisabler
     fireCost: 60

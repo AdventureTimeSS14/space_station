@@ -239,7 +239,6 @@ public sealed partial class GunComponent : Component
     /// </summary>
     //[DataField("gunOwner"), ViewVariables(VVAccess.ReadWrite)]
     public EntityUid? GunOwner = null;
-
 }
 
 [Flags]

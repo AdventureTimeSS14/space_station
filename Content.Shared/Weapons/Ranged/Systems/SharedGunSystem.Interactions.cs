@@ -56,7 +56,6 @@ public abstract partial class SharedGunSystem
         };
 
         args.Verbs.Add(verb);
-
     }
 
     private SelectiveFire GetNextMode(GunComponent component)
@@ -99,6 +98,12 @@ public abstract partial class SharedGunSystem
         Dirty(uid, component);
     }
 
+    /// <summary>
+    /// ADT, modern. This method makes weapon personal, making everyone except user not able to shoot with it.
+    /// </summary>
+    /// <param name="uid"></param>
+    /// <param name="component"></param>
+    /// <param name="user"></param>
     private void MakeWeaponPersonal(EntityUid uid, GunComponent component, EntityUid? user = null)
     {
         if(component.GunOwner != null)
