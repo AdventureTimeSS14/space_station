@@ -1,0 +1,7 @@
+- type: microwaveMealRecipe
+  id: ADTRecipeDriedCannabisWhite
+  name: dried cannabis leaves recipe
+  result: ADTLeavesCannabisWhiteDried
+  time: 10
+  solids:
+    ADTLeavesCannabisWhite: 1

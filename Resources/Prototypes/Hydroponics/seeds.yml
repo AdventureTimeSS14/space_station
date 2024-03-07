@@ -765,7 +765,7 @@
   productPrototypes:
     - LeavesCannabis
   mutationPrototypes:
-    - ADTcannabiswhite
+    - ADTCannabisWhite
   harvestRepeat: Repeat
   lifespan: 75
   maturation: 8
