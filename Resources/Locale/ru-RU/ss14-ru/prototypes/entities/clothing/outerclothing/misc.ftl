@@ -45,3 +45,5 @@ ent-ClothingOuterGhostSheet = простыня-призрак
     .desc = Страшно!!!
 ent-ClothingOuterHospitalGown = больничный халат
     .desc = Изготовлена из шерсти забитых ягнят. За счет жестокости она приобрела мягкость.
+ent-ClothingOuterRedRacoon = костюм красного енота
+    .desc = Пушистый костюм красного енота!
