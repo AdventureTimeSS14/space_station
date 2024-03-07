@@ -45,6 +45,29 @@
         - ReagentId: ADTMNikematide
           Quantity: 30
 
+- type: entity
+  id: ADTMDiethamilateBottle
+  name: diethamilate bottle
+  description: A small plastic bottle. The letters on the label so small that they form a funny face.
+  parent: BaseChemistryEmptyPlasticBottle
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/Chemistry/plastic-bottle.rsi
+    layers:
+      - state: icon
+        map: [ "enum.SolutionContainerLayers.Base" ]
+      - state: fill1
+        map: [ "enum.SolutionContainerLayers.Fill" ]
+        visible: false
+      - state: icon-front-diethamilate
+        map: [ "enum.SolutionContainerLayers.Overlay" ]
+  - type: SolutionContainerManager
+    solutions:
+      drink: 
+        reagents:
+        - ReagentId: ADTMDiethamilate
+          Quantity: 30
+
 #стеклянные ADT
 - type: entity
   id: ADTMMorphineBottle
