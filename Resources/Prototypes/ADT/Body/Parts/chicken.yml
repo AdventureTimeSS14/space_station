@@ -31,7 +31,7 @@
   id: ADTChickenBody
   name: chicken body
   parent: PartAnimal
-  noSpawn: true
+  # noSpawn: true
   components:
   - type: Sprite
     sprite: ADT/Mobs/Animals/chicken_parts.rsi

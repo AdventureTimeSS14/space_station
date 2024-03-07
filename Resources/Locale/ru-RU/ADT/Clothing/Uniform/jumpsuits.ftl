@@ -154,7 +154,7 @@ ent-ADTClothingUniformOktoberfestDirndlRed = дирндль с красной ю
 
 ent-ADTJumpsuitAidan = костюм Эйдана
     .desc = Сшитая на заказ белая рубашка с жилетом и черными брюками.
-    .suffix = { "Именное" }
+    .suffix = { "Именное, Altius" }
 
 ent-ADTJumpskirtSwimwearBlack = черный купальник
     .desc = Отлично подойдет для наслаждения морем, пусть и не настоящим. Ну или для пробежки через всю станцию, если вы проиграли спор.

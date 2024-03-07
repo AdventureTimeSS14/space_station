@@ -91,66 +91,66 @@ entities:
             color: '#8000E1FF'
             id: BotGreyscale
           decals:
-            79: -17,-9
-            80: -17,-10
-            81: -17,-11
+            44: -17,-9
+            45: -17,-10
+            46: -17,-11
         - node:
             color: '#B40000FF'
             id: BotGreyscale
           decals:
-            72: -17,-19
-            73: -17,-18
-            74: -17,-17
-            75: -17,-16
-            76: -17,-15
-            77: -17,-14
-            78: -17,-13
+            37: -17,-19
+            38: -17,-18
+            39: -17,-17
+            40: -17,-16
+            41: -17,-15
+            42: -17,-14
+            43: -17,-13
         - node:
             color: '#FFFFFFFF'
             id: BotGreyscale
           decals:
-            28: -7,-19
-            29: -7,-18
-            30: -7,-17
-            31: -7,-16
-            32: -7,-15
-            33: -7,-14
-            34: -7,-13
-            35: -9,-13
-            36: -9,-14
-            37: -9,-15
-            38: -9,-16
-            39: -9,-17
-            40: -9,-18
-            41: -9,-19
-            42: -11,-19
-            43: -11,-18
-            44: -11,-17
-            45: -11,-16
-            46: -11,-15
-            47: -11,-14
-            48: -11,-13
-            49: -13,-13
-            50: -13,-14
-            51: -13,-15
-            52: -13,-16
-            53: -13,-17
-            54: -13,-18
-            55: -13,-19
-            56: -15,-19
-            57: -15,-18
-            58: -15,-17
-            59: -15,-15
-            60: -15,-16
-            61: -15,-14
-            62: -15,-13
+            2: -7,-19
+            3: -7,-18
+            4: -7,-17
+            5: -7,-16
+            6: -7,-15
+            7: -7,-14
+            8: -7,-13
+            9: -9,-13
+            10: -9,-14
+            11: -9,-15
+            12: -9,-16
+            13: -9,-17
+            14: -9,-18
+            15: -9,-19
+            16: -11,-19
+            17: -11,-18
+            18: -11,-17
+            19: -11,-16
+            20: -11,-15
+            21: -11,-14
+            22: -11,-13
+            23: -13,-13
+            24: -13,-14
+            25: -13,-15
+            26: -13,-16
+            27: -13,-17
+            28: -13,-18
+            29: -13,-19
+            30: -15,-19
+            31: -15,-18
+            32: -15,-17
+            33: -15,-15
+            34: -15,-16
+            35: -15,-14
+            36: -15,-13
         - node:
             angle: 4.71238898038469 rad
             color: '#FFFFFFFF'
             id: WarnLineW
           decals:
-            26: -7,-10
-            27: -7,-11
+            0: -7,-10
+            1: -7,-11
     - type: GridAtmosphere
       version: 2
       data:
@@ -194,7 +194,8 @@ entities:
           0,-5:
             0: 65535
           1,-5:
-            0: 65535
+            0: 61439
+            1: 4096
           2,-5:
             0: 13107
           -4,-5:
@@ -243,6 +244,21 @@ entities:
           moles:
           - 21.824879
           - 82.10312
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.14948
+          moles:
+          - 18.472576
+          - 69.49208
           - 0
           - 0
           - 0
@@ -316,9 +332,6 @@ entities:
           tiles: eAAAAAAAeAAAAAAAgwAAAAAAeAAAAAAAeAAAAAAAgwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAeAAAAAAAgwAAAAAAgwAAAAAAgwAAAAAAegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgwAAAAAAgwAAAAAAgwAAAAAAgwAAAAAAegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
           version: 6
     - type: Broadphase
-    - type: Tag
-      tags:
-      - Trader
     - type: Physics
       bodyStatus: InAir
       angularDamping: 0.05
@@ -327,6 +340,9 @@ entities:
       bodyType: Dynamic
     - type: Fixtures
       fixtures: {}
+    - type: Tag
+      tags:
+      - Trader
     - type: OccluderTree
     - type: SpreaderGrid
     - type: Shuttle
@@ -517,6 +533,48 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 8.5,-6.5
       parent: 2
+- proto: ADTBannerTSF
+  entities:
+  - uid: 238
+    components:
+    - type: Transform
+      pos: 5.5,1.5
+      parent: 2
+  - uid: 239
+    components:
+    - type: Transform
+      pos: 2.5,-8.5
+      parent: 2
+  - uid: 240
+    components:
+    - type: Transform
+      pos: 6.5,-12.5
+      parent: 2
+  - uid: 241
+    components:
+    - type: Transform
+      pos: -2.5,-12.5
+      parent: 2
+  - uid: 449
+    components:
+    - type: Transform
+      pos: 2.5,2.5
+      parent: 420
+  - uid: 450
+    components:
+    - type: Transform
+      pos: -1.5,2.5
+      parent: 420
+  - uid: 451
+    components:
+    - type: Transform
+      pos: 2.5,10.5
+      parent: 420
+  - uid: 452
+    components:
+    - type: Transform
+      pos: -1.5,10.5
+      parent: 420
 - proto: ADTFoodMeatChickenBakedWithVegetables
   entities:
   - uid: 228
@@ -851,48 +909,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -12.5,-7.5
       parent: 2
-- proto: BannerCargo
-  entities:
-  - uid: 238
-    components:
-    - type: Transform
-      pos: 2.5,-8.5
-      parent: 2
-  - uid: 239
-    components:
-    - type: Transform
-      pos: 6.5,-12.5
-      parent: 2
-  - uid: 240
-    components:
-    - type: Transform
-      pos: -2.5,-12.5
-      parent: 2
-  - uid: 241
-    components:
-    - type: Transform
-      pos: 5.5,1.5
-      parent: 2
-  - uid: 449
-    components:
-    - type: Transform
-      pos: 2.5,2.5
-      parent: 420
-  - uid: 450
-    components:
-    - type: Transform
-      pos: -1.5,2.5
-      parent: 420
-  - uid: 451
-    components:
-    - type: Transform
-      pos: 2.5,10.5
-      parent: 420
-  - uid: 452
-    components:
-    - type: Transform
-      pos: -1.5,10.5
-      parent: 420
 - proto: Bed
   entities:
   - uid: 285
@@ -2109,38 +2125,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 1.5,16.5
       parent: 420
-- proto: ClosetBaseTardis
-  entities:
-  - uid: 297
-    components:
-    - type: Transform
-      pos: -4.5,-16.5
-      parent: 2
-  - uid: 298
-    components:
-    - type: Transform
-      pos: -0.5,-16.5
-      parent: 2
-  - uid: 299
-    components:
-    - type: Transform
-      pos: 4.5,-16.5
-      parent: 2
-  - uid: 300
-    components:
-    - type: Transform
-      pos: 8.5,-16.5
-      parent: 2
-  - uid: 302
-    components:
-    - type: Transform
-      pos: 2.5,3.5
-      parent: 2
-  - uid: 555
-    components:
-    - type: Transform
-      pos: -2.5,16.5
-      parent: 420
 - proto: ClosetEmergencyFilledRandom
   entities:
   - uid: 556
@@ -2152,6 +2136,38 @@ entities:
     components:
     - type: Transform
       pos: 5.5,5.5
+      parent: 420
+- proto: ClosetMaintenance
+  entities:
+  - uid: 297
+    components:
+    - type: Transform
+      pos: 8.5,-16.5
+      parent: 2
+  - uid: 298
+    components:
+    - type: Transform
+      pos: 4.5,-16.5
+      parent: 2
+  - uid: 299
+    components:
+    - type: Transform
+      pos: -0.5,-16.5
+      parent: 2
+  - uid: 300
+    components:
+    - type: Transform
+      pos: -4.5,-16.5
+      parent: 2
+  - uid: 302
+    components:
+    - type: Transform
+      pos: 2.5,3.5
+      parent: 2
+  - uid: 555
+    components:
+    - type: Transform
+      pos: -2.5,16.5
       parent: 420
 - proto: ClosetWallEmergencyFilledRandom
   entities:
@@ -3510,7 +3526,7 @@ entities:
       pos: 5.5,8.5
       parent: 420
     - type: Door
-      secondsUntilStateChange: -1305.0509
+      secondsUntilStateChange: -1934.3147
       state: Opening
 - proto: ShuttleWindow
   entities:
