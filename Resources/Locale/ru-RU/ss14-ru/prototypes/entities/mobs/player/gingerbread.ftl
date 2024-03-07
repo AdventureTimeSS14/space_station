@@ -1,2 +1,2 @@
-ent.MobGingerbread = Урист МакПряник
-    .desc = { ent-BaseMobReptilian.desc }
+ent-MobGingerbread = { ent-BaseMobGingerbread }
+    .desc = { ent-BaseMobGingerbread.desc }

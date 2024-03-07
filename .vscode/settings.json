@@ -1,5 +1,6 @@
 {
     "omnisharp.analyzeOpenDocumentsOnly": true,
     "dotnet.defaultSolution": "SpaceStation14.sln",
-    "iis.configDir": ""
+    "iis.configDir": "",
+    "dotnet.preferCSharpExtension": true
 }

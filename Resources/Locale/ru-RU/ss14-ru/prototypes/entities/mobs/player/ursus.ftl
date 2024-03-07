@@ -1,2 +1,2 @@
-ent-MobUrsus = Урист МакУрса
+ent-MobUrsus = { ent-BaseMobUrsus }
     .desc = { ent-BaseMobUrsus.desc }

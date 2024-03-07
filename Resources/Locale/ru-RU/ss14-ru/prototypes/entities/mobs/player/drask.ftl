@@ -1,2 +1,2 @@
-ent-MobDrask = Урист МакДраск
+ent-MobDrask = { ent-BaseMobDrask }
     .desc = { ent-BaseMobDrask.desc }

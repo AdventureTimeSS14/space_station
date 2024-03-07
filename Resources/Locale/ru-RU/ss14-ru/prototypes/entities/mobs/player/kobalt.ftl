@@ -1,2 +1,2 @@
-ent-MobKobolt = Урист МакКобольд
+ent-MobKobolt = { ent-BaseMobKobolt }
     .desc = { ent-BaseMobKobolt.desc }

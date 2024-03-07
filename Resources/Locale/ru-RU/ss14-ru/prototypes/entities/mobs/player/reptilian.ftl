@@ -1,2 +1,2 @@
-ent-MobReptilian = Урист Унатх
+ent-MobReptilian = { ent-BaseMobReptilian }
     .desc = { ent-BaseMobReptilian.desc }
