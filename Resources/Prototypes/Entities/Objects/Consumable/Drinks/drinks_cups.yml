@@ -364,3 +364,28 @@
     fillBaseName: icon-
   - type: TrashOnSolutionEmpty
     solution: drink
+
+- type: entity
+  parent: DrinkBaseCup
+  id: DrinkKarkadetea
+  name: karkade tea
+  description: Karkade tea will help calm the nervous system, as well as activate brain activity.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: Tea
+          Quantity: 20
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/karkade-tea.rsi
+    layers:
+      - state: icon-0
+      - map: ["enum.SolutionContainerLayers.Fill"]
+        state: icon-4
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 4
+    fillBaseName: icon-
+  - type: TrashOnSolutionEmpty
+    solution: drink
