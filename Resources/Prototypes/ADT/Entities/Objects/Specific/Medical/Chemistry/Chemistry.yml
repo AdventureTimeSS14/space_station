@@ -10,11 +10,12 @@
   - type: Item
     sprite: ADT/Objects/Specific/Medical/Chemistry/pills.rsi
 
-# бутылочка (не разбивающаяся)
+# бутылочки
+##пластиковая
 - type: entity
   name: bottle
   parent: BaseItem
-  id: BaseChemistryEmptyPlasticBottle
+  id: ADTBaseChemistryEmptyPlasticBottle
   abstract: true
   description: A small plastic bottle.
   components:
@@ -84,7 +85,59 @@
 - type: entity
   id: ADTPlasticBottle
   name: plastic bottle
-  parent: BaseChemistryEmptyPlasticBottle
+  parent: ADTBaseChemistryEmptyPlasticBottle
+
+##стеклянная
+- type: entity
+  name: bottle
+  parent: BaseChemistryEmptyBottle
+  id: ADTBaseChemistryEmptyBottle
+  abstract: true
+  description: A small plastic bottle.
+  components:
+  - type: Tag
+    tags:
+    - Bottle
+    - Trash
+  - type: PhysicalComposition
+    materialComposition:
+      Glass: 25
+  - type: SpaceGarbage
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/Chemistry/glass-bottle.rsi
+    layers:
+      - state: icon
+        map: [ "enum.SolutionContainerLayers.Base" ]
+      - state: fill1
+        map: [ "enum.SolutionContainerLayers.Fill" ]
+        visible: false
+      - state: icon-front
+        map: [ "enum.SolutionContainerLayers.Overlay" ]
+  - type: Appearance
+  - type: SolutionTransfer
+    minTransferAmount: 1
+    transferAmount: 5
+    maxTransferAmount: 30
+    canChangeTransferAmount: true
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: fill
+  - type: Item
+    size: Tiny
+    sprite: ADT/Objects/Specific/Medical/Chemistry/glass-bottle.rsi
+  - type: Openable
+    sound:
+      path: /Audio/Items/pop.ogg
+  - type: StaticPrice
+    price: 0
+  - type: GuideHelp
+    guides: 
+    - Medical Doctor
+
+- type: entity
+  id: ADTGlassBottle
+  name: glass bottle
+  parent: ADTBaseChemistryEmptyBottle
 
 # Упаковки
 - type: entity

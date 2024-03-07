@@ -2,7 +2,7 @@
 - type: entity
   id: ADTMPeroHydrogenBottle
   name: perohydrogen bottle
-  parent: BaseChemistryEmptyPlasticBottle
+  parent: ADTPlasticBottle
   description: A small plastic bottle. The letters on the label so small that they form a funny face.
   components:
   - type: Sprite
@@ -26,7 +26,7 @@
   id: ADTMNikematideBottle
   name: nikematide bottle
   description: A small plastic bottle. The letters on the label so small that they form a funny face.
-  parent: BaseChemistryEmptyPlasticBottle
+  parent: ADTPlasticBottle
   components:
   - type: Sprite
     sprite: ADT/Objects/Specific/Medical/Chemistry/plastic-bottle.rsi
@@ -49,7 +49,7 @@
   id: ADTMDiethamilateBottle
   name: diethamilate bottle
   description: A small plastic bottle. The letters on the label so small that they form a funny face.
-  parent: BaseChemistryEmptyPlasticBottle
+  parent: ADTPlasticBottle
   components:
   - type: Sprite
     sprite: ADT/Objects/Specific/Medical/Chemistry/plastic-bottle.rsi
@@ -72,9 +72,19 @@
 - type: entity
   id: ADTMMorphineBottle
   name: morphine bottle
-  parent: BaseChemistryEmptyBottle
+  parent: ADTGlassBottle
   description: A small bottle with morphine. 
   components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/Chemistry/glass-bottle.rsi
+    layers:
+      - state: icon
+        map: [ "enum.SolutionContainerLayers.Base" ]
+      - state: fill1
+        map: [ "enum.SolutionContainerLayers.Fill" ]
+        visible: false
+      - state: icon-front-morphine
+        map: [ "enum.SolutionContainerLayers.Overlay" ]
   - type: SolutionContainerManager
     solutions:
       drink: 
@@ -85,7 +95,7 @@
 - type: entity
   id: ADTMOpiumBottle
   name: opium bottle
-  parent: BaseChemistryEmptyBottle
+  parent: ADTMMorphineBottle
   description: A small bottle with opium. 
   components:
   - type: SolutionContainerManager
@@ -96,9 +106,9 @@
           Quantity: 30
 
 - type: entity
-  id: ADTObjectsSpecificFormalinChemistryBottle
+  id: ADTMFormalinBottle
   name: Formalin bottle
-  parent: BaseChemistryEmptyBottle
+  parent: ADTMMorphineBottle
   description: A basis of pathologist's work.
   components:
   - type: SolutionContainerManager
@@ -111,6 +121,7 @@
   - type: Tag
     tags:
     - Bottle
+
 
 #стеклянные обычные
 - type: entity

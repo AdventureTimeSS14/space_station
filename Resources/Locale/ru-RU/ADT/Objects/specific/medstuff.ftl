@@ -97,14 +97,9 @@ ent-ADTMVitaminCanister = баночка витаминов
 ent-ADTMAgolatineCanister = баночка аголатина
     .desc = Содержит относительно полезные антидепрессанты.
     .suffix = { "" }
+
 ent-ADTPlasticBottle = пластиковая бутылочка
     .desc = Небольшая пластиковая бутылочка.
-    .suffix = { "" }
-ent-ADTMMorphineBottle = бутылочка морфина
-    .desc = небольшая бутылочка с морфином.
-    .suffix = { "" }
-ent-ADTMOpiumBottle = бутылочка опиума
-    .desc = небольшая бутылочка с опиумом.
     .suffix = { "" }
 ent-ADTMPeroHydrogenBottle = бутылочка пероводорода
     .desc = Пластиковая бутылочка. Буквы на этикетке настолько малы, что издали сливаются в забавную рожицу.
@@ -112,8 +107,20 @@ ent-ADTMPeroHydrogenBottle = бутылочка пероводорода
 ent-ADTMNikematideBottle = бутылочка никематида
     .desc = { ent-ADTMPeroHydrogenBottle.desc }
     .suffix = { "" }
-ent-ADTObjectsSpecificFormalinChemistryBottle = бутылочка формалина
+ent-ADTMDiethamilateBottle = бутылочка диэтамилата
+    .desc = { ent-ADTMPeroHydrogenBottle.desc }
+
+ent-ADTGlassBottle = стеклянная бутылочка
+    .desc = Оранжевая стеклянная ёмкость.
+ent-ADTMMorphineBottle = бутылочка морфина
+    .desc = небольшая бутылочка с морфином.
+    .suffix = { "" }
+ent-ADTMOpiumBottle = бутылочка опиума
+    .desc = небольшая бутылочка с опиумом.
+    .suffix = { "" }
+ent-ADTMFormalinBottle = бутылочка формалина
     .desc = Основа работы патологоанатома.
+
 ent-BasePack = упаковка таблеток
     .desc = Содержит 10 таблеток с распространённым лекарством.
     .suffix = { "" }
