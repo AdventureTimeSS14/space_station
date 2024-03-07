@@ -10,22 +10,23 @@
       description: ghost-role-information-trader-description
       requirements:
       - !type:OverallPlaytimeRequirement
-        time: 108000 # 30h overall
+        time: 162000 # 45h overall
     - type: GhostTakeoverAvailable
     - type: RandomHumanoidAppearance
     - type: Loadout
       prototypes: [ Trader ]
+
 - type: entity
   parent: BasePDA
   id: TraderPDA
   name: trader PDA
   description: trader PDA
   components:
+  - type: Sprite
+    sprite: ADT/Objects/Misc/trader_pda.rsi
   - type: Pda
     id: TraderIDCard
-    state: pda-qm
-  - type: Icon
-    state: pda-qm
+    state: pda-tradertsf
 
 - type: entity
   parent: IDCardStandard
@@ -34,9 +35,10 @@
   description: TraderIDCard
   components:
     - type: Sprite
+      sprite: ADT/Objects/Misc/trader_id.rsi
       layers:
-        - state: orange
-        - state: idcargotechnician
+        - state: tsf
+        - state: idtrader_tsf
     - type: IdCard
       jobTitle: Торговец
     - type: Access
@@ -79,14 +81,14 @@
       - EncryptionKeyTrader
       - EncryptionKeyCommon
   - type: Sprite
-    sprite: Clothing/Ears/Headsets/cargo.rsi
+    sprite: ADT/Clothing/Ears/Headsets/trader.rsi
   - type: Clothing
-    sprite: Clothing/Ears/Headsets/cargo.rsi
+    sprite: ADT/Clothing/Ears/Headsets/trader.rsi
 
 - type: entity
   noSpawn: true
-  parent: ClothingBackpackCargoFilled
-  id: ClothingBackpackCargoTraderFilled
+  parent: ADTClothingBackpackDuffelDurathead
+  id: ClothingBackpackTraderFilled
   components:
     - type: StorageFill
       contents:
@@ -94,6 +96,7 @@
         - id: RubberStampTrader
         - id: AppraisalTool
         - id: SpaceCash500
+        - id: ADTClothingOuterCoatTrader
 
 - type: entity
   name: Trader
