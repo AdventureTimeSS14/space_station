@@ -350,7 +350,7 @@
     solutions:
       drink:
         reagents:
-        - ReagentId:
+        - ReagentId: Tea
           Quantity: 20
   - type: Sprite
     sprite: Objects/Consumable/Drinks/chamomile-tea.rsi
@@ -379,6 +379,31 @@
           Quantity: 20
   - type: Sprite
     sprite: Objects/Consumable/Drinks/karkade-tea.rsi
+    layers:
+      - state: icon-0
+      - map: ["enum.SolutionContainerLayers.Fill"]
+        state: icon-4
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 4
+    fillBaseName: icon-
+  - type: TrashOnSolutionEmpty
+    solution: drink
+
+- type: entity
+  parent: DrinkBaseCup
+  id: DrinkLemontea
+  name: lemon tea
+  description: Tea with lemon, literally hot water with lemon.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: Tea
+          Quantity: 20
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/lemon-tea.rsi
     layers:
       - state: icon-0
       - map: ["enum.SolutionContainerLayers.Fill"]
