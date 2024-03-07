@@ -6,3 +6,5 @@ ent-MagazineRiflePractice = магазин (6.5х39 мм TSF учебные)
     .desc = { ent-BaseMagazineRifle.desc }
 ent-MagazineRifleRubber = магазин (6.5х39 мм TSF резиновые)
     .desc = { ent-BaseMagazineRifle.desc }
+ent-MagazineRifleUranium = магазин (6.5х39 мм TSF урановые)
+    .desc = { ent-BaseMagazineRifle.desc }

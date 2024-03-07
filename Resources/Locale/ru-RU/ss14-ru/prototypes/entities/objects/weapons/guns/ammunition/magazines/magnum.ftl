@@ -6,3 +6,7 @@ ent-MagazineMagnumSubMachineGunPractice = магазин Вектора (.44 м�
     .desc = { ent-BaseMagazineMagnumSubMachineGun.desc }
 ent-MagazineMagnumSubMachineGunRubber = магазин Вектора (.44 магнум резиновые)
     .desc = { ent-BaseMagazineMagnumSubMachineGun.desc }
+ent-MagazineMagnumSubMachineGunUranium = магазин Вектора (.44 магнум урановые)
+    .desc = { ent-BaseMagazineMagnumSubMachineGun.desc }
+ent-MagazineMagnumSubMachineGunPiercing = магазин Вектора (.44 магнум бронебойные)
+    .desc = { ent-BaseMagazineMagnumSubMachineGun.desc }
