@@ -51,7 +51,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.45
+          radius: 0.25
         density: 1000
         mask:
         - MobMask
@@ -64,7 +64,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      50: Dead
+      100: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
       25: 0.5
@@ -142,7 +142,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Dead
+      130: Dead
   - type: Stamina
     critThreshold: 300
   - type: SlowOnDamage
@@ -153,7 +153,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.65
+          radius: 0.45
         density: 400
         mask:
         - MobMask
@@ -175,7 +175,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      80: Dead
+      120: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
       40: 0.7
@@ -190,7 +190,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.6
+          radius: 0.45
         density: 450
         mask:
         - MobMask
@@ -212,7 +212,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      300: Dead
+      400: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
       150: 0.7
@@ -226,7 +226,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.75
+          radius: 0.45
         density: 15500
         mask:
         - MobMask
@@ -251,7 +251,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Dead
+      170: Dead
   - type: MovementSpeedModifier
     baseSprintSpeed: 4
   - type: MeleeWeapon
@@ -266,7 +266,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.65
+          radius: 0.45
         density: 1350
         mask:
         - MobMask
@@ -333,7 +333,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      50: Dead
+      90: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
       25: 0.7
@@ -358,7 +358,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.55
+          radius: 0.45
         density: 235
         mask:
         - MobMask
