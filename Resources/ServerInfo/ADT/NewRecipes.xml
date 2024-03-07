@@ -90,6 +90,7 @@
   <GuideEntityEmbed Entity="ADTFoodMeatHam"/>
   <GuideEntityEmbed Entity="ADTFoodMeatHamPiece"/>
 </Box>
+
 ## Пудинги
 
 Для поклонников британской кухни на выбор есть два десерта - обычный пудинг и новогодний. Рецепт такой:
@@ -289,6 +290,16 @@
   <GuideEntityEmbed Entity="ADTFoodKhachapuri"/>
 </Box>
 
+## Вульпикс
+Блюдо для тех,кто любит иззысканные блюда.Готовится она так:
+ - Ломтик сыра
+ - Простой лук
+ - Печень вульпы
+
+В микровалновку на 10 секунд
+<Box>
+ <GuideEntityEmbed Entity="ADTFoodVulpix"/>
+</Box>
 
 ## Круассаны
 И последний пункт данного руководства - новый допущенный тип выпечки, круассаны

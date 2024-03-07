@@ -661,3 +661,17 @@
     sprite: ADT/Clothing/Head/Hats/hood_paramedic.rsi #спрайты от prazat911
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/hood_paramedic.rsi 
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatTrader
+  name: hat
+  description: trader.
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/trader.rsi #спрайты от prazat911
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/trader.rsi 

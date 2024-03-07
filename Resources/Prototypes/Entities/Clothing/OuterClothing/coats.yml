@@ -398,3 +398,18 @@
     sprite: Clothing/OuterClothing/Coats/space_asshole.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/space_asshole.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ADTClothingOuterCoatAaron
+  name: aaron trenchcoat
+  description: A battered dark raincoat that smells strongly of cigarette smoke.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/coat_aaron.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Coats/coat_aaron.rsi
+  - type: StorageFill
+    contents:
+    - id: SmokingPipeFilledTobacco
+    - id: FlippoEngravedLighter

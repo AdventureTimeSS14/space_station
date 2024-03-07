@@ -512,7 +512,7 @@
     startAnnouncement: station-event-trader-spawn-announcement
     startAudio:
       path: /Audio/Announcements/attention.ogg
-    weight: 10
+    weight: 15
     minimumPlayers: 45
     earliestStart: 30
     maxOccurrences: 1

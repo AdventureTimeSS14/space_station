@@ -146,6 +146,7 @@
         Slash: 0.8
         Piercing: 0.8
         Heat: 0.8
+        Stun: 0.7
   - type: NinjaSuit
   #- type: PowerCellSlot
   #  cellSlotId: cell_slot
