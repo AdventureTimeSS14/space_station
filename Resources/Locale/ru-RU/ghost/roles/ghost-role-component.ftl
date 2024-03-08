@@ -127,3 +127,6 @@ ghost-role-information-BreadDog-rules = Ты - съедобная собака, 
 ghost-role-information-exterminator-name = Терминатор
 ghost-role-information-exterminator-description = Ты был послан в прошлое для устранения разумного существа, важного для будущего. 
 ghost-role-information-exterminator-rules = Ты - крупный антагонист и можешь убивать любого, кто посмеет попробовать ОСТАНОВИТЬ ТЕБЯ. Но помни, что главная твоя задача - устранить цель.
+
+ghost-role-information-mothroach-name = Моль
+ghost-role-information-mothroach-description = Поразительно милая, поразительно надоедливая.

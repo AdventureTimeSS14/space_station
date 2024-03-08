@@ -217,6 +217,8 @@
     spawned:
     - id: FoodMeatChicken
       amount: 0
+    - id: ADTChickenBody
+      amount: 1
   - type: InteractionPopup
     successChance: 0.8
     interactSuccessString: petting-success-bird

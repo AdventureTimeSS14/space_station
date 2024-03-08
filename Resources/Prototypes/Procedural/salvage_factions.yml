@@ -42,3 +42,29 @@
   configs:
     DefenseStructure: CarpStatue
     Megafauna: MobDragonDungeon
+
+- type: salvageFaction
+  id: Argocytes
+  entries:
+    - proto: MobArgocyteSlurva
+    - proto: MobArgocyteBarrier
+    - proto: MobArgocyteSkitter
+    - proto: MobArgocyteSwiper
+    - proto: MobArgocyteMolder
+    - proto: MobArgocytePouncer
+    - proto: MobArgocyteGlider
+    - proto: MobArgocyteHarvester
+      cost: 2
+    - proto: MobArgocyteCrawler
+      cost: 2
+    - proto: MobArgocyteEnforcer
+      cost: 3
+      prob: 0.05
+    - proto: MobArgocyteFounder
+      cost: 5
+      prob: 0.05
+    - proto: MobArgocyteLeviathing
+      cost: 5
+      prob: 0.02
+  configs:
+    Megafauna: MobArgocyteLeviathing

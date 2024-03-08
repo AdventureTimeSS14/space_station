@@ -27,3 +27,5 @@ ent-ClothingHeadHatCatEars = кошачьи ушки
     .suffix = НЕ МАППИТЬ!
 ent-ClothingHeadHatSquid = сквидди
     .desc = Напугайте своих друзей этой маской древнего ужаса.
+ent-ClothingHeadHatRedRacoon = маска красного енота
+    .desc = Пушистая маска красного енота!

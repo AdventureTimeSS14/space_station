@@ -10,3 +10,6 @@ ent-BoxFolderClipboard = Клипборд-планшет
 ent-ADTPortableGeneratorSuperPacmanMachineCircuitboardHard = портативный генератор С.У.П.Е.Р.П.А.К.М.А.Н. (машинная плата)
     .desc = { ent-BaseMachineCircuitboard.desc }
     .suffix = { "Усложнено" }
+
+ent-ADTPortableGeneratorSuperPacman = портативный генератор С.У.П.Е.Р.П.А.К.М.А.Н.
+    .desc = Продвинутый генератор для обеспечения питанием целых отделов. Работает на листах урана и может выдавать мощность до 50 кВт.
