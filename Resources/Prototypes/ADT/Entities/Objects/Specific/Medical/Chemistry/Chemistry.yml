@@ -95,10 +95,6 @@
   abstract: true
   description: A small plastic bottle.
   components:
-  - type: Tag
-    tags:
-    - Bottle
-    - Trash
   - type: PhysicalComposition
     materialComposition:
       Glass: 25
@@ -170,7 +166,7 @@
   name: pill pack
   parent: ADTBasePack
 
-# Патологоанатомические приколы
+#всякие ящики и упаковки
 - type: entity
   name: box of foot tags
   parent: BoxCardboard
@@ -198,6 +194,62 @@
     guides: 
     - ADTPathologist
 
+- type: entity
+  name: box of small syringes
+  parent: BoxCardboard
+  id: ADTSmallSyringeBox
+  description: It's plastic a box with small syringes inside.
+  components:
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,2,1
+  - type: StorageFill
+    contents:
+      - id: ADTSmallSyringe
+        amount: 6
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/Chemistry/syringe.rsi
+    state: icon
+  - type: Item
+    sprite: ADT/Objects/Specific/Medical/Chemistry/syringe.rsi
+    size: Normal 
+  - type: PhysicalComposition
+    materialComposition:
+      Cardboard: 50
+
+- type: entity
+  name: box of medical treatment
+  parent: BaseStorageItem
+  id: ADTChemistryBottlesBox
+  description: A plastic a box with bottles with medicaments.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/Chemistry/syringe.rsi
+    state: icon
+  - type: Item
+    sprite: ADT/Objects/Specific/Medical/Chemistry/syringe.rsi 
+    size: Small
+    shape:
+    - 0,0,1,0
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 50
+  - type: Storage
+    maxItemSize: Tiny
+    grid:
+    - 0,0,3,0
+    whitelist:
+      tags:
+        - Bottle
+  - type: StorageFill
+    contents:
+      - id: ADTMMorphineBottle
+      - id: ADTDyloveneBiomicineBottle
+      - id: EpinephrineChemistryBottle
+      - id: ADTOmnizineBottle
+
+# Патологоанатомические приколы
 - type: entity
   name: small syringe
   description: A small syringe to take.. you guessed it, small samples of liquid.
@@ -242,30 +294,6 @@
     interfaces:
     - key: enum.TransferAmountUiKey.Key
       type: TransferAmountBoundUserInterface
-
-- type: entity
-  name: box of small syringes
-  parent: BoxCardboard
-  id: ADTSmallSyringeBox
-  description: It's plastic a box with small syringes inside.
-  components:
-  - type: Storage
-    maxItemSize: Small
-    grid:
-    - 0,0,2,1
-  - type: StorageFill
-    contents:
-      - id: ADTSmallSyringe
-        amount: 6
-  - type: Sprite
-    sprite: ADT/Objects/Specific/Medical/Chemistry/syringe.rsi
-    state: icon
-  - type: Item
-    sprite: ADT/Objects/Specific/Medical/Chemistry/syringe.rsi
-    size: Normal 
-  - type: PhysicalComposition
-    materialComposition:
-      Cardboard: 50
 
 - type: entity
   name: reagent analyzer

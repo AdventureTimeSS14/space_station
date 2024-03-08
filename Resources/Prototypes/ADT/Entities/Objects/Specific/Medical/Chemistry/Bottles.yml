@@ -129,10 +129,6 @@
         reagents:
         - ReagentId: ADTMFormalin
           Quantity: 15
-  - type: Tag
-    tags:
-    - Bottle
-
 
 #стеклянные обычные
 - type: entity
@@ -147,9 +143,6 @@
         reagents:
         - ReagentId: Arithrazine
           Quantity: 30
-  - type: Tag
-    tags:
-    - Bottle
 
 - type: entity
   id: ADTObjectsSpecificBicaridineChemistryBottle
@@ -163,9 +156,6 @@
         reagents:
         - ReagentId: Bicaridine
           Quantity: 30
-  - type: Tag
-    tags:
-    - Bottle
 
 - type: entity
   id: ADTObjectsSpecificDexalinPlusChemistryBottle
@@ -179,9 +169,6 @@
         reagents:
         - ReagentId: DexalinPlus
           Quantity: 30
-  - type: Tag
-    tags:
-    - Bottle
 
 - type: entity
   id: ADTObjectsSpecificDermalineChemistryBottle
@@ -195,9 +182,6 @@
         reagents:
         - ReagentId: Dermaline
           Quantity: 30
-  - type: Tag
-    tags:
-    - Bottle
 
 - type: entity
   id: ADTObjectsSpecificDexalinChemistryBottle
@@ -211,9 +195,6 @@
         reagents:
         - ReagentId: Dexalin
           Quantity: 30
-  - type: Tag
-    tags:
-    - Bottle
 
 - type: entity
   id:  ADTObjectsSpecificLeporazineChemistryBottle
@@ -227,6 +208,31 @@
         reagents:
         - ReagentId: Leporazine
           Quantity: 30
-  - type: Tag
-    tags:
-    - Bottle
+
+- type: entity
+  id: ADTDyloveneBiomicineBottle
+  name: dylovene & biomicine bottle
+  parent: BaseChemistryEmptyBottle
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Dylovene
+          Quantity: 15
+        - ReagentId: ADTMBiomicine
+          Quantity: 15
+
+- type: entity
+  id: ADTOmnizineBottle
+  name: omnizine bottle
+  parent: BaseChemistryEmptyBottle
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Omnizine
+          Quantity: 30
