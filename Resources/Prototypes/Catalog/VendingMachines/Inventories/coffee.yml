@@ -10,5 +10,8 @@
     DrinkTeacup: 5
     DrinkGreenTea: 5
     DrinkHotCoco: 5
+    ADTDrinkKarkadetea: 5
+    ADTDrinkChamotea: 5
+    ADTDrinkLemontea: 5
   emaggedInventory:
     DrinkNothing: 2
