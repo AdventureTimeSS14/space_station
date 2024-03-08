@@ -12,3 +12,6 @@ ent-TechnologyDisk = технологический диск
 ent-TechnologyDiskRare = { ent-TechnologyDisk }
     .suffix = Редкий
     .desc = { ent-TechnologyDisk.desc }
+ent-TechnologyDiskSuperRare = { ent-TechnologyDisk }
+    .suffix = Очень редкий
+    .desc = { ent-TechnologyDisk.desc }

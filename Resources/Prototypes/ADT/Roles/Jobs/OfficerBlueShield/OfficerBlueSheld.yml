@@ -73,7 +73,7 @@
   parent: BasePDA
   id: ADTBlueShieldOfficerPDA
   name: BlueShield PDA
-  description: Это пахнет защитой.
+  description: Smells like protection.
   components:
     - type: Pda
       id: ADTBlueShieldOfficerIDCard
