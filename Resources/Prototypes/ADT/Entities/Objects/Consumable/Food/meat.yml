@@ -254,6 +254,37 @@
   - type: Tag
     tags:
     - Fish
+  - type: Perishable
+    rotAfter: 600
+    molsPerSecondPerUnitMass: 0
+  - type: RotInto
+    entity: ADTFoodFishRotten
+    stage: 1
+
+
+- type: entity
+  name: rotten fish
+  parent: FoodMeatBase
+  id: ADTFoodFishRotten
+  components:
+  - type: Tag
+    tags:
+    - Raw
+    - Fish
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/fish.rsi
+    state: fish
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+        - ReagentId: Toxin
+          Quantity: 5
+        - ReagentId: Fat
+          Quantity: 2
+
 
 - type: entity
   name: raw fish cutlet
@@ -288,7 +319,7 @@
 
 - type: entity
   name: cooked fish
-  parent: FoodMeatRawBase
+  parent: FoodMeatBase
   id: ADTFoodFishCooked
   description: A cooked fish fillet.
   components:

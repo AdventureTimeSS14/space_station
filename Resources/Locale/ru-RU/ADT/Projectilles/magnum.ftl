@@ -8,3 +8,5 @@ ent-ADTMagazineMagnumSubMachineGunHighVelocityTranquilizer = магазин Ве
     .desc = { ent-BaseMagazineMagnumSubMachineGun.desc }
 ent-BoxMagazineMagnumSubMachineGunPractice = ящик магазинов для вектора (высокоскоростные, транквилизатор)
     .desc = Ящик, полный магазинов для Вектора (высокоскоростные, транквилизатор)
+ent-ADTBoxMagazineMagnumSubMachineGunHighVelocityTranquilizer = ящик магазинов для вектора (высокоскоростные)
+    .desc = Ящик, полный магазинов для Вектора (высокоскоростные)

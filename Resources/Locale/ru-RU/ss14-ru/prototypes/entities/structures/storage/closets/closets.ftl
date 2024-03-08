@@ -24,3 +24,6 @@ ent-ClosetBluespace = подозрительный шкаф
 ent-ClosetBluespaceUnstable = подозрительный шкаф
     .desc = Это хранилище... правда же?
     .suffix = Блюспейс нестабильный
+
+ent-ClosetJanitorBombFilled = шкаф взрывозащитного снаряжения уборщика
+    .desc = Это хранилище для взрывозащитных костюмов уборщика.

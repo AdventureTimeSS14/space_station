@@ -65,6 +65,20 @@
         - FloorAsteroidSand
       entities:
         - WallRockSand
+    # chasm time
+    - !type:BiomeEntityLayer
+      allowedTiles:
+      - FloorBasalt
+      threshold: 0.6
+      noise:
+        seed: 3
+        frequency: 0.02
+        fractalType: FBm
+        octaves: 5
+        lacunarity: 2
+        gain: 0.4
+      entities:
+      - FloorDesertChasm
     - !type:BiomeDummyLayer
       id: Loot
     # Fill layer
@@ -164,6 +178,20 @@
         cellularReturnType: Distance2
       entities:
         - WallRock
+    # chasm time
+    - !type:BiomeEntityLayer
+      allowedTiles:
+      - FloorBasalt
+      threshold: 0.6
+      noise:
+        seed: 3
+        frequency: 0.02
+        fractalType: FBm
+        octaves: 5
+        lacunarity: 2
+        gain: 0.4
+      entities:
+      - FloorChasmEntity
     - !type:BiomeDummyLayer
       id: Loot
     # Water
@@ -293,6 +321,20 @@
         cellularReturnType: Distance2
       entities:
         - WallRockBasalt
+    # chasm time
+    - !type:BiomeEntityLayer
+      allowedTiles:
+      - FloorBasalt
+      threshold: 0.6
+      noise:
+        seed: 3
+        frequency: 0.02
+        fractalType: FBm
+        octaves: 5
+        lacunarity: 2
+        gain: 0.4
+      entities:
+      - FloorChasmEntity
     - !type:BiomeDummyLayer
       id: Loot
     # Fill basalt
@@ -434,6 +476,20 @@
         octaves: 1
       entities:
       - FloorLiquidPlasmaEntity
+    # chasm time
+    - !type:BiomeEntityLayer
+      allowedTiles:
+      - FloorBasalt
+      threshold: 0.6
+      noise:
+        seed: 3
+        frequency: 0.02
+        fractalType: FBm
+        octaves: 5
+        lacunarity: 2
+        gain: 0.4
+      entities:
+      - FloorSnowChasm
     - !type:BiomeDummyLayer
       id: Loot
     - !type:BiomeTileLayer
@@ -568,6 +624,20 @@
         - FloorAsteroidSand
       entities:
         - WallRock
+    # chasm time
+    - !type:BiomeEntityLayer
+      allowedTiles:
+      - FloorBasalt
+      threshold: 0.6
+      noise:
+        seed: 3
+        frequency: 0.02
+        fractalType: FBm
+        octaves: 5
+        lacunarity: 2
+        gain: 0.4
+      entities:
+      - FloorChasmEntity
     - !type:BiomeDummyLayer
       id: Loot
     - !type:BiomeTileLayer
