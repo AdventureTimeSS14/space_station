@@ -1,4 +1,3 @@
-using Content.Shared.Actions;
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
@@ -8,35 +7,6 @@ namespace Content.Server.Dragon
     [RegisterComponent]
     public sealed partial class DragonComponent : Component
     {
-
-
-        /// <summary>
-        /// For deadless dragon's :)
-        /// </summary>
-        [ViewVariables(VVAccess.ReadWrite), DataField("heNeedsAlive")]
-        public bool HeNeedsAlive = false;
-
-
-
-        /// <summary>
-        /// For Roar dragon's :)
-        /// </summary>
-        public bool HeRoars = false;
-        [ViewVariables(VVAccess.ReadWrite), DataField("RoarFrequency")]
-        public int RoarFrequency = 30;
-        private int _defaultRoarTimeDelay = 100;
-        [ViewVariables(VVAccess.ReadWrite), DataField("DefaultRoarTimeDelay[DEBUG]")]
-        public int DefaultRoarTimeDelay
-        {
-            get
-            {
-                return _defaultRoarTimeDelay;
-            }
-            set
-            {
-                _defaultRoarTimeDelay = value;
-            }
-        }
 
         /// <summary>
         /// If we have active rifts.
@@ -85,20 +55,7 @@ namespace Content.Server.Dragon
         public SoundSpecifier? SoundRoar =
             new SoundPathSpecifier("/Audio/Animals/space_dragon_roar.ogg")
             {
-                Params = AudioParams.Default.WithVolume(0.2f),
-            };
-
-        [ViewVariables(VVAccess.ReadWrite), DataField("soundAlterRoar")]
-        public SoundSpecifier? SoundAlterRoar =
-            new SoundPathSpecifier("/Audio/Animals/alternative_space_dragon_roar.ogg")
-            {
-                Params = AudioParams.Default.WithVolume(1f),
+                Params = AudioParams.Default.WithVolume(3f),
             };
     }
-
-    public sealed partial class DragonDevourActionEvent : EntityTargetActionEvent {}
-
-    public sealed partial class DragonSpawnRiftActionEvent : InstantActionEvent {}
-
-    public sealed partial class DragonRoarActionEvent : InstantActionEvent { }
 }
