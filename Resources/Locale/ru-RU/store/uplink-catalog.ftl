@@ -112,9 +112,14 @@ uplink-uplink-implanter-name = Имплантер Аплинк
 uplink-uplink-implanter-desc = Незаметно заказывайте снаряжение без использования КПК. Глотайте телекристаллы, чтобы пополнить аплинк.
 uplink-deathrattle-implant-name = Коробка имплантеров Предсмертный хрип
 uplink-deathrattle-implant-desc = Коробка, содержащая достаточное количество имплантов "Предсмертный хрип" на целый отряд. Передает сообщение с вашими координатами по радиоканалу Синдиката когда вы попадаете в критическое состояние или погибаете.
+uplink-scram-implanter-name = имплант телепорта
+uplink-scram-implanter-desc = Одноразовый имплантат, который телепортирует вас в большом радиусе. Пытается телепортировать вас на свободную
+местность. Иногда это может не получиться. Страхование жизни не включено.
 # Bundles
 uplink-emp-kit-name = Набор отключения электричества
 uplink-emp-kit-desc = Ультимативное противодействие энергетическому оружию: Выводит из строя станнеры, разряжает дубинки-шокеры, садит лазерное оружие! Содержит 3 ЭМИ гранаты и имплантер ЭМИ. Примечание: не выводит из строя настоящее огнестрельное оружие.
+uplink-observation-kit-name = набор для наблюдений
+uplink-observation-kit-desc = Картонная коробка для хранения вещей.Включает в себя портативный монитор,солнцезащитные очки,плату монитора камер наблюдения.
 # Bundles
 uplink-meds-bundle-name = Медицинский набор
 uplink-meds-bundle-desc = Все, что нужно для возвращения в строй ваших товарищей: главным образом, боевая аптечка, дефибриллятор и три боевых медипена.
@@ -212,7 +217,10 @@ uplink-syndicate-segway-crate-name = { ent-VehicleSyndicateSegway }
 uplink-syndicate-segway-crate-desc = { ent-VehicleSyndicateSegway.desc }
 uplink-syndicate-sponge-box-name = Коробка губок Синдиката
 uplink-syndicate-sponge-box-desc = Коробка с 6 губками Синдиката, замаскированными под обезьяньи кубики, которые при контакте с водой превращаются в различных злобных диких животных.
+uplink-slipocalypse-clustersoap-name = граната мылопокалипсиса
+uplink-slipocalypse-clustersoap-desc = Рассыпается вокруг небольших кусочков мыла марки syndicate после того, как их бросили, эти кусочки мыла испаряются через 60 секунд.
 # Pointless
+uplink-slipocalypse-clusters
 uplink-revolver-cap-gun-name = { ent-RevolverCapGun }
 uplink-revolver-cap-gun-desc = { ent-RevolverCapGun.desc }
 uplink-syndicate-stamp-name = { ent-RubberStampSyndicate }
