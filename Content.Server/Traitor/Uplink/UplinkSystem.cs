@@ -63,6 +63,19 @@ namespace Content.Server.Traitor.Uplink
             return true;
         }
 
+        public bool RemoveUplink(EntityUid? uplinkEntity)
+        {
+            // Try to find target item
+            if (uplinkEntity != null)
+            {
+                uplinkEntity = null;
+                if (uplinkEntity != null)
+                    return false;
+            }
+            return true;
+        }
+
+
         /// <summary>
         /// Finds the entity that can hold an uplink for a user.
         /// Usually this is a pda in their pda slot, but can also be in their hands. (but not pockets or inside bag, etc.)

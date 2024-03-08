@@ -25,6 +25,8 @@ using Content.Shared.Tag;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
+using Content.Shared.Eye.Blinding.Components;
+using Content.Shared.Eye.Blinding.Systems;
 
 namespace Content.Server.Changeling.EntitySystems;
 
@@ -54,7 +56,13 @@ public sealed partial class ChangelingSystem
         SubscribeLocalEvent<ChangelingComponent, LingEMPActionEvent>(OnLingEmp);
         SubscribeLocalEvent<ChangelingComponent, LingStingExtractActionEvent>(OnLingDNASting);
         SubscribeLocalEvent<ChangelingComponent, StasisDeathActionEvent>(OnStasisDeathAction);
+        SubscribeLocalEvent<ChangelingComponent, BlindStingEvent>(OnBlindSting);
+        SubscribeLocalEvent<ChangelingComponent, AdrenalineActionEvent>(OnAdrenaline);
+        SubscribeLocalEvent<ChangelingComponent, ChangelingRefreshActionEvent>(OnRefresh);
+        SubscribeLocalEvent<ChangelingComponent, OmniHealActionEvent>(OnOmniHeal);
+        SubscribeLocalEvent<ChangelingComponent, MuteStingEvent>(OnMuteSting);
     }
+
 
     private void StartAbsorbing(EntityUid uid, ChangelingComponent component, LingAbsorbActionEvent args)
     {
@@ -164,9 +172,6 @@ public sealed partial class ChangelingSystem
                 }
             }
 
-            _store.TryAddCurrency(new Dictionary<string, FixedPoint2>
-            { {EvolutionPointsCurrencyPrototype, component.AbsorbedMobPointsAmount} }, uid);
-
             // give them 200 genetic damage and remove all of their blood
             var dmg = new DamageSpecifier(_proto.Index(GeneticDamageGroup), component.AbsorbGeneticDmg);
             _damageableSystem.TryChangeDamage(target, dmg);
@@ -189,6 +194,7 @@ public sealed partial class ChangelingSystem
             {
                 var selfMessage = Loc.GetString("changeling-dna-success", ("target", Identity.Entity(target, EntityManager)));
                 _popup.PopupEntity(selfMessage, uid, uid, PopupType.Medium);
+                component.CanRefresh = true;
             }
         }
 
@@ -530,10 +536,10 @@ public sealed partial class ChangelingSystem
 
         if (!component.StasisDeathActive)
         {
-            if (!_mobState.IsDead(uid))     
+            if (!_mobState.IsDead(uid))
             {
                 if (!TryUseAbility(uid, component, component.ChemicalsCostTwentyFive))
-                return;
+                    return;
 
                 args.Handled = true;
 
@@ -554,7 +560,7 @@ public sealed partial class ChangelingSystem
             {
 
                 if (!TryUseAbility(uid, component, component.ChemicalsCostFree))
-                return;
+                    return;
 
                 args.Handled = true;
 
@@ -570,4 +576,133 @@ public sealed partial class ChangelingSystem
         }
 
     }
+    private void OnBlindSting(EntityUid uid, ChangelingComponent component, BlindStingEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        var target = args.Target;
+
+        if (!TryStingTarget(uid, target, component))
+            return;
+
+        if (!HasComp<DnaComponent>(target))
+        {
+            var selfMessageFailNoHuman = Loc.GetString("changeling-dna-sting-fail-nodna", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessageFailNoHuman, uid, uid);
+            return;
+        }
+
+        if (_tagSystem.HasTag(target, "ChangelingBlacklist"))
+        {
+            var selfMessage = Loc.GetString("changeling-dna-sting-fail-nodna", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
+        if (!TryUseAbility(uid, component, component.ChemicalsCostFifteen))
+            return;
+
+        if (BlindSting(uid, target, component))
+        {
+            args.Handled = true;
+
+            var selfMessageSuccess = Loc.GetString("changeling-blind-sting", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessageSuccess, uid, uid);
+        }
+
+    }
+
+    private void OnMuteSting(EntityUid uid, ChangelingComponent component, MuteStingEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        var target = args.Target;
+
+        if (!TryStingTarget(uid, target, component))
+            return;
+
+        if (!HasComp<DnaComponent>(target))
+        {
+            var selfMessageFailNoHuman = Loc.GetString("changeling-dna-sting-fail-nodna", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessageFailNoHuman, uid, uid);
+            return;
+        }
+
+        if (_tagSystem.HasTag(target, "ChangelingBlacklist"))
+        {
+            var selfMessage = Loc.GetString("changeling-dna-sting-fail-nodna", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
+        if (!TryUseAbility(uid, component, component.ChemicalsCostTwenty))
+            return;
+
+        if (MuteSting(uid, target, component))
+        {
+            args.Handled = true;
+
+            var selfMessageSuccess = Loc.GetString("changeling-mute-sting", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessageSuccess, uid, uid);
+        }
+
+    }
+
+
+    private void OnAdrenaline(EntityUid uid, ChangelingComponent component, AdrenalineActionEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        if (!TryUseAbility(uid, component, component.ChemicalsCostTen))
+            return;
+
+        if (Adrenaline(uid, component))
+        {
+            args.Handled = true;
+
+            var selfMessage = Loc.GetString("changeling-adrenaline-self-success");
+            _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+        }
+
+    }
+
+    private void OnOmniHeal(EntityUid uid, ChangelingComponent component, OmniHealActionEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        if (!TryUseAbility(uid, component, component.ChemicalsCostTwentyFive))
+            return;
+
+        if (OmniHeal(uid, component))
+        {
+            args.Handled = true;
+
+            var selfMessage = Loc.GetString("changeling-omnizine-self-success");
+            _popup.PopupEntity(selfMessage, uid, uid, PopupType.Small);
+        }
+
+    }
+
+    private void OnRefresh(EntityUid uid, ChangelingComponent component, ChangelingRefreshActionEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        if (!TryUseAbility(uid, component, component.ChemicalsCostFree))
+            return;
+
+        if (Refresh(uid, component))
+        {
+            args.Handled = true;
+
+            var selfMessage = Loc.GetString("changeling-refresh-self-success");
+            _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+        }
+
+    }
+
 }
