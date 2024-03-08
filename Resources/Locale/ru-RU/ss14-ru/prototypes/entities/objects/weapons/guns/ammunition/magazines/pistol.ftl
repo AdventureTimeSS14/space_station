@@ -24,6 +24,8 @@ ent-MagazinePistolSubMachineGunPractice = магазин ПП (9х19 мм уче
     .desc = { ent-BaseMagazinePistolSubMachineGun.desc }
 ent-MagazinePistolSubMachineGunRubber = магазин ПП (9х19 мм резиновые)
     .desc = { ent-BaseMagazinePistolSubMachineGun.desc }
+ent-MagazinePistolSubMachineGunUranium = магазин ПП (9х19 мм урановые)
+    .desc = { ent-BaseMagazinePistolSubMachineGun.desc }
 
 ent-MagazineMagnum = пистолетный магазин (.44 магнум)
     .desc = Магазин под патрон .44 калибра.
