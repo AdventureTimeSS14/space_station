@@ -163,6 +163,29 @@ public sealed partial class StoreSystem : EntitySystem
         return true;
     }
 
+    public bool TryRefillCurrency(Dictionary<string, FixedPoint2> currency, EntityUid uid, StoreComponent? store = null)
+    {
+        if (!Resolve(uid, ref store))
+            return false;
+
+        //verify these before values are modified
+        foreach (var type in currency)
+        {
+            if (!store.CurrencyWhitelist.Contains(type.Key))
+                return false;
+        }
+
+        foreach (var type in currency)
+        {
+            if (!store.Balance.TryAdd(type.Key, type.Value))
+                store.Balance[type.Key] = type.Value;
+        }
+
+        UpdateUserInterface(null, uid, store);
+        return true;
+    }
+
+
     /// <summary>
     /// Initializes a store based on a preset ID
     /// </summary>
