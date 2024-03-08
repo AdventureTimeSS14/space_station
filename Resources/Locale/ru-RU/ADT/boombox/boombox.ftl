@@ -99,3 +99,9 @@ ent-BoomBoxTapeWaterfallPacked = запакованная кассета "Waterf
 
 ent-BoomBoxTapeGasterPacked = запакованная кассета
     .desc = Плотно упакованная кассета для бумбокса.
+
+ent-ADTBoomBoxTapeBorat = "Борат"
+    .desc = Старая кассета с музыкой из несмешного фильма. Если захотите побесить или развеселить космических кочевников.
+
+ent-ADTBoomBoxTapeBarotrauma = кассета "Wartrauma"
+    .desc = Музыка для аванпостов со скидками на боеприпасы и для подготовки к бою.

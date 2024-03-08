@@ -153,6 +153,7 @@
 - type: entity
   parent: BaseBoomBoxTape
   id: BoomBoxTapeNATO
+  nospawn: true
   name: NATO
   description: Desc thing.
   components:
