@@ -219,7 +219,6 @@ uplink-syndicate-sponge-box-desc = Коробка с 6 губками Синди
 uplink-slipocalypse-clustersoap-name = граната мылопокалипсиса
 uplink-slipocalypse-clustersoap-desc = Рассыпается вокруг небольших кусочков мыла марки syndicate после того, как их бросили, эти кусочки мыла испаряются через 60 секунд.
 # Pointless
-uplink-slipocalypse-clusters
 uplink-revolver-cap-gun-name = { ent-RevolverCapGun }
 uplink-revolver-cap-gun-desc = { ent-RevolverCapGun.desc }
 uplink-syndicate-stamp-name = { ent-RubberStampSyndicate }
