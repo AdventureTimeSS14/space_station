@@ -153,7 +153,7 @@
 - type: entity
   parent: BaseBoomBoxTape
   id: BoomBoxTapeNATO
-  nospawn: true
+  noSpawn: true
   name: NATO
   description: Desc thing.
   components:
@@ -389,6 +389,7 @@
   id: BoomBoxTapeNATOPacked
   name: The Wizard
   description: It is said that this tape can summon a wizard...
+  noSpawn: true
   components:
     - type: Sprite
       sprite: ADT/Objects/Device/tapepacked.rsi
