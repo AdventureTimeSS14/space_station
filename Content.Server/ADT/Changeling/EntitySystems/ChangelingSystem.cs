@@ -46,9 +46,6 @@ public sealed partial class ChangelingSystem : EntitySystem
     [Dependency] private readonly StatusEffectsSystem _status = default!;
     [Dependency] private readonly EntityManager _entityManager = default!;
 
-    [ValidatePrototypeId<StatusEffectPrototype>]
-    public const string ChangelingAdrenalineReagent = "ADTMMorphine";
-
     public override void Initialize()
     {
         base.Initialize();
