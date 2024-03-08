@@ -1,15 +1,15 @@
-- type: listing
-  id: ChangelingDNAExtract
-  name: extract-dna-string
-  description: extract-dna-string-desc
-  productAction: ActionLingStingExtract
-  cost:
-    EvolutionPoints: 2
-  categories:
-  - ChangelingAbilities
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 1
+#- type: listing
+#  id: ChangelingDNAExtract
+#  name: extract-dna-string
+#  description: extract-dna-string-desc
+#  productAction: ActionLingStingExtract
+#  cost:
+#    EvolutionPoints: 2
+#  categories:
+#  - ChangelingAbilities
+#  conditions:
+#  - !type:ListingLimitedStockCondition
+#    stock: 1
 
 - type: listing
   id: ChangelingArmBlade
@@ -70,6 +70,58 @@
   productAction: ActionStasisDeath
   cost:
     EvolutionPoints: 4
+  categories:
+  - ChangelingAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: ChangelingBlindSting
+  name: blind-sting
+  description: blind-sting-desc
+  productAction: ActionLingBlindSting
+  cost:
+    EvolutionPoints: 2
+  categories:
+  - ChangelingAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: ChangelingAdrenaline
+  name: adrenaline-cl
+  description: adrenaline-cl-desc
+  productAction: ActionLingAdrenaline
+  cost:
+    EvolutionPoints: 1
+  categories:
+  - ChangelingAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: ChangelingOmnizine
+  name: omnizine-cl
+  description: omnizine-cl-desc
+  productAction: ActionLingOmnizine
+  cost:
+    EvolutionPoints: 3
+  categories:
+  - ChangelingAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: ChangelingMuteSting
+  name: mute-sting
+  description: mute-sting-desc
+  productAction: ActionLingMuteSting
+  cost:
+    EvolutionPoints: 2
   categories:
   - ChangelingAbilities
   conditions:

@@ -1,6 +1,7 @@
 using Robust.Shared.Audio;
 using Content.Shared.Polymorph;
-using Robust.Shared.Prototypes;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
+using Content.Shared.Chemistry.Reagent;
 
 namespace Content.Shared.Changeling.Components;
 
@@ -29,7 +30,7 @@ public sealed partial class ChangelingComponent : Component
     /// The maximum amount of DNA strands a ling can have at one time
     /// </summary>
     [DataField]
-    public int DNAStrandCap = 10;
+    public int DNAStrandCap = 7;
 
     /// <summary>
     /// List of stolen DNA
@@ -215,4 +216,33 @@ public sealed partial class ChangelingComponent : Component
     [DataField]
     public bool StasisDeathActive = false;      /// Получать или восстанавливать пиздюли?
 
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public TimeSpan BlindStingDuration = TimeSpan.FromSeconds(10);
+
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public TimeSpan AdrenalineDuration = TimeSpan.FromSeconds(45);
+
+    [DataField("chemicalMorphine", customTypeSerializer: typeof(PrototypeIdSerializer<ReagentPrototype>))]
+    public string ChemicalMorphine = "ADTMMorphine";
+
+    [DataField("chemicalTranex", customTypeSerializer: typeof(PrototypeIdSerializer<ReagentPrototype>))]
+    public string ChemicalTranex = "TranexamicAcid";
+
+    [ViewVariables(VVAccess.ReadWrite), DataField("adrenalineAmount")]
+    public float AdrenalineAmount = 5f;
+
+    [DataField("chemicalOmnizine", customTypeSerializer: typeof(PrototypeIdSerializer<ReagentPrototype>))]
+    public string ChemicalOmni = "Omnizine";
+
+    [ViewVariables(VVAccess.ReadWrite), DataField("omnizineAmount")]
+    public float OmnizineAmount = 25f;
+
+    [DataField("chemicalMute", customTypeSerializer: typeof(PrototypeIdSerializer<ReagentPrototype>))]
+    public string ChemicalMute = "MuteToxin";
+
+    [ViewVariables(VVAccess.ReadWrite), DataField("muteAmount")]
+    public float MuteAmount = 20f;
+
+    [DataField]
+    public bool CanRefresh = false;      
 }
