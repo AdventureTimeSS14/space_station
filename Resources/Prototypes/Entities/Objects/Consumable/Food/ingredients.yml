@@ -484,6 +484,9 @@
   - type: SliceableFood
     count: 3
     slice: FoodCheeseSlice
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
 
 - type: entity
   name: cheese wedge
@@ -503,6 +506,9 @@
         reagents:
         - ReagentId: Nutriment
           Quantity: 5
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
 
 - type: entity
   name: chèvre log
@@ -574,6 +580,9 @@
   - type: SliceableFood
     count: 3
     slice: FoodTofuSlice
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
 
 - type: entity
   name: tofu slice
@@ -595,6 +604,9 @@
           Quantity: 3
         - ReagentId: Nutriment
           Quantity: 2
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
 
 - type: entity
   name: burned mess
