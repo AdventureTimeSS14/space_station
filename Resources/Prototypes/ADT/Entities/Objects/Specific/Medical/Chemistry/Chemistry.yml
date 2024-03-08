@@ -166,34 +166,7 @@
   name: pill pack
   parent: ADTBasePack
 
-#всякие ящики и упаковки
-- type: entity
-  name: box of foot tags
-  parent: BoxCardboard
-  id: ADTFootTagBox
-  description: It's plastic a box with foot tags inside.
-  components:
-  - type: Storage
-    maxItemSize: Small
-    grid:
-    - 0,0,2,1
-  - type: StorageFill
-    contents:
-      - id: ADTFootTag
-        amount: 6
-  - type: Sprite
-    sprite: ADT/Objects/Specific/Medical/foot-tag-box.rsi
-    state: icon
-  - type: Item
-    sprite: ADT/Objects/Specific/Medical/foot-tag-box.rsi 
-    size: Normal 
-  - type: PhysicalComposition
-    materialComposition:
-      Cardboard: 50
-  - type: GuideHelp
-    guides: 
-    - ADTPathologist
-
+#всякие ящики
 - type: entity
   name: box of small syringes
   parent: BoxCardboard
@@ -217,37 +190,6 @@
   - type: PhysicalComposition
     materialComposition:
       Cardboard: 50
-
-- type: entity
-  name: box of medical treatment
-  parent: BaseStorageItem
-  id: ADTChemistryBottlesBox
-  description: A plastic a box with bottles with medicaments.
-  components:
-  - type: Sprite
-    sprite: ADT/Objects/Specific/Medical/Chemistry/syringe.rsi
-    state: icon
-  - type: Item
-    sprite: ADT/Objects/Specific/Medical/Chemistry/syringe.rsi 
-    size: Small
-    shape:
-    - 0,0,1,0
-  - type: PhysicalComposition
-    materialComposition:
-      Plastic: 50
-  - type: Storage
-    maxItemSize: Tiny
-    grid:
-    - 0,0,3,0
-    whitelist:
-      tags:
-        - Bottle
-  - type: StorageFill
-    contents:
-      - id: ADTMMorphineBottle
-      - id: ADTDyloveneBiomicineBottle
-      - id: EpinephrineChemistryBottle
-      - id: ADTOmnizineBottle
 
 # Патологоанатомические приколы
 - type: entity

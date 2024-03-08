@@ -280,7 +280,7 @@
       - id: ADTBookNewChemicals
       - id: ADTReagentAnalyzer
       - id: ADTMobileDefibrillator
-      - id: ADTChemistryBottlesBox
+      - id: ADTBriefcaseMedical
       - id: HandheldCrewMonitor
       - id: DoorRemoteMedical
       - id: RubberStampCMO
@@ -322,7 +322,7 @@
       - id: ADTBookNewChemicals
       - id: ADTReagentAnalyzer
       - id: ADTMobileDefibrillator
-      - id: ADTChemistryBottlesBox
+      - id: ADTBriefcaseMedical
       - id: HandheldCrewMonitor
       - id: DoorRemoteMedical
       - id: RubberStampCMO

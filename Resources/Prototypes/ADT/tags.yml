@@ -54,3 +54,6 @@
 
 - type: Tag
   id: Trader
+
+- type: Tag
+  id: Medipen
