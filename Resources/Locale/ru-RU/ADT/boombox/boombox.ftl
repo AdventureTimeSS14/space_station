@@ -103,5 +103,72 @@ ent-BoomBoxTapeGasterPacked = запакованная кассета
 ent-ADTBoomBoxTapeBorat = "Борат"
     .desc = Старая кассета с музыкой из несмешного фильма. Если захотите побесить или развеселить космических кочевников.
 
-ent-ADTBoomBoxTapeBarotrauma = кассета "Wartrauma"
+ent-ADTBoomBoxTapeWartrauma = кассета "Wartrauma"
     .desc = Музыка для аванпостов со скидками на боеприпасы и для подготовки к бою.
+
+ent-ADTBoomBoxTapeWartraumaPacked = запакованная кассета "Wartrauma"
+    .desc = Музыка для аванпостов со скидками на боеприпасы и для подготовки к бою.
+
+ent-ADTBoomBoxTapeAllianceArmyPacked = запакованная кассета "Гимн Альянса"
+    .desc = Гимн совместных сил СССП и Ассамблеи вульпканинов.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeIfTomorrowPacked = запакованная кассета "Если завтра война"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeOurLocomotivePacked = запакованная кассета "Наш локомотив"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeSacredWarPacked = запакованная кассета "Священная война"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeTapokAlertPacked = запакованная кассета "Краснный рассвет"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeUSSPAnthemPacked = запакованная кассета "Гимн СССП"
+    .desc = Гимн СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeWeArmyOfThePeoplePacked = запакованная кассета "Мы - армия народа"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTape14MinutePacked = запакованная кассета "14 минут"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeAllianceArmy = кассета "Гимн Альянса"
+    .desc = Гимн совместных сил СССП и Ассамблеи вульпканинов.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeIfTomorrow = кассета "Если завтра война"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeOurLocomotive = кассета "Наш локомотив"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeSacredWar = кассета "Священная война"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeTapokAlert = кассета "Красный рассвет"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeUSSPAnthem = кассета "Гимн СССП"
+    .desc = Гимн СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeWeArmyOfThePeople = кассета "Мы - армия народа"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTape14Minute = кассета "14 минут"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }

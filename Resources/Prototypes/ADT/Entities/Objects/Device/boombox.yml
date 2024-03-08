@@ -424,11 +424,238 @@
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/borat.ogg
 
+#баротравма
+
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: ADTBoomBoxTapeWartraumaPacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: ADTBoomBoxTapeWartrauma
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
 - type: entity
   parent: BaseBoomBoxTape
-  id: ADTBoomBoxTapeBarotrauma
+  id: ADTBoomBoxTapeWartrauma
   name: The Wizard
   description: It is said that this tape can summon a wizard...
   components:
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/barotrauma.ogg
+
+#сссп
+
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: ADTBoomBoxTapeAllianceArmyPacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: USSP
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: ADTBoomBoxTapeAllianceArmy
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: ADTBoomBoxTapeIfTomorrowPacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: USSP
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: ADTBoomBoxTapeIfTomorrow
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: ADTBoomBoxTapeOurLocomotivePacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: USSP
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: ADTBoomBoxTapeOurLocomotive
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: ADTBoomBoxTapeSacredWarPacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: USSP
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: ADTBoomBoxTapeSacredWar
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: ADTBoomBoxTapeTapokAlertPacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: USSP
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: ADTBoomBoxTapeTapokAlert
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: ADTBoomBoxTapeUSSPAnthemPacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: USSP
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: ADTBoomBoxTapeUSSPAnthem
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: ADTBoomBoxTapeWeArmyOfThePeoplePacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: USSP
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: ADTBoomBoxTapeWeArmyOfThePeople
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: ADTBoomBoxTape14MinutePacked
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: USSP
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: ADTBoomBoxTape14Minute
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeAllianceArmy
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: USSP
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/USSP/alliancearmy.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeIfTomorrow
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: USSP
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/USSP/iftomorrow.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeOurLocomotive
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: USSP
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/USSP/ourlocomotive.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeSacredWar
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: USSP
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/USSP/sacredwar.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeUSSPAnthem
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: USSP
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/USSP/usspanthem.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeTapokAlert
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: USSP
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/USSP/tapokalert3.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeWeArmyOfThePeople
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: USSP
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/USSP/wearmyofthepeople.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTape14Minute
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: USSP
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/USSP/14minute.ogg
