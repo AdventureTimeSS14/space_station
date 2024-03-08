@@ -4,7 +4,7 @@
   parent: BaseDrink
   desc: reagent-desc-chamomile-tea
   physicalDesc: reagent-physical-desc-aromatic
-  flavor: flower
+  flavor: sweet
   color: "#C8FF03"
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/glass_chamomile.rsi
