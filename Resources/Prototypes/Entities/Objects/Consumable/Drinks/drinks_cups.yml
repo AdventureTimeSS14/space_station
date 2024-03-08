@@ -342,7 +342,7 @@
 
 - type: entity
   parent: DrinkBaseCup
-  id: DrinkChamotea
+  id: ADTDrinkChamotea
   name: chamomile tea
   description: Soothing tea.
   components:
@@ -367,7 +367,7 @@
 
 - type: entity
   parent: DrinkBaseCup
-  id: DrinkKarkadetea
+  id: ADTDrinkKarkadetea
   name: karkade tea
   description: Karkade tea will help calm the nervous system, as well as activate brain activity.
   components:
@@ -392,7 +392,7 @@
 
 - type: entity
   parent: DrinkBaseCup
-  id: DrinkLemontea
+  id: ADTDrinkLemontea
   name: lemon tea
   description: Tea with lemon, literally hot water with lemon.
   components:
