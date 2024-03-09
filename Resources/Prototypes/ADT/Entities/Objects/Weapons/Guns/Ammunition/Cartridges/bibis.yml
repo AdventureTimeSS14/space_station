@@ -18,7 +18,7 @@
     deleteOnSpawn: true
   - type: Sprite
     noRot: false
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    sprite: ADT/Objects/Weapons/Guns/Ammunition/airsoft_bibis.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -47,6 +47,10 @@
         Blunt: 0.1
   - type: StaminaDamageOnCollide
     damage: 5
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: depleted-uranium
 
 - type: entity
   name: Lecter Strikeball
@@ -66,7 +70,7 @@
   - type: Gun
     fireRate: 10
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg
+      path: /Audio/Weapons/Guns/Gunshots/airsoft.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -113,7 +117,7 @@
     whitelist:
       tags:
         - ADTCartridgeBibis
-    capacity: 100
+    capacity: 200
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
