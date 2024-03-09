@@ -1,4 +1,4 @@
 ent-BaseMobKobolt = Урист МакКобольд
     .desc = { ent-BaseMobSpecies.desc }
-ent-MobKoboltDummy = Urist McHands
-    .desc = A dummy reptilian meant to be used in character setup.
+ent-MobKoboltDummy = Урист МакКобольд
+    .desc = { ent-BaseSpeciesDummy.desc }
