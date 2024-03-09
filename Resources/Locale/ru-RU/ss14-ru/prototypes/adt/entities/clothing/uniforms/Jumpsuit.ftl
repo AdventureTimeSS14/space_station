@@ -10,3 +10,5 @@ ent-ADTClothingUniformPriestPrimalSuit = Priest's primal suit
     .desc = Primal suit for primal rituals
 ent-ADTClothingUniformCyberSun = костюм Киберсан
     .desc = Костюм Киберсан, стильно и практично !
+ent-ADTClothingUniformSupremeCommanderJumpsuit = джемпер для верховного главнокомандующего
+    .desc = Подходит для ситуаций супергалактического масштаба.
