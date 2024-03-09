@@ -118,3 +118,7 @@ ent-ClothingHeadHatMagician = цилиндр фокусника
     .desc = Цилиндр фокусника.
 ent-ClothingHeadHatCapcap = фуражка капитана
     .desc = Большая, стильная капитанская фуражка.
+ent-ClothingHeadHatGreyFlatcap = серая плоская кепка
+    .desc = Модно как для рабочего класса, так и для старика Дженкинса.
+ent-ClothingHeadHatBrownFlatcap = коричневая плоская кепка
+    .desc = Глупый клоун! Ты выставил меня в плохом свете!
