@@ -18,6 +18,7 @@
     icon:
       sprite: Interface/Actions/actions_ling.rsi
       state: absorb_dna
+    itemIconStyle: BigAction
     whitelist:
       components:
       - Body
@@ -35,6 +36,7 @@
     icon:
       sprite: Interface/Actions/actions_ling.rsi
       state: cycle
+    itemIconStyle: BigAction
     event: !type:ChangelingCycleDNAActionEvent
     useDelay: 1
 
@@ -48,6 +50,7 @@
     icon:
       sprite: Interface/Actions/actions_ling.rsi
       state: transform
+    itemIconStyle: BigAction
     event: !type:ChangelingTransformActionEvent
     useDelay: 5
 
@@ -62,6 +65,7 @@
     icon:
       sprite: Interface/Actions/actions_ling.rsi
       state: regenerate
+    itemIconStyle: BigAction
     event: !type:LingRegenerateActionEvent
     useDelay: 115
 
@@ -75,6 +79,7 @@
     icon:
       sprite: Interface/Actions/actions_ling.rsi
       state: sting_extract
+    itemIconStyle: BigAction
     whitelist:
       components:
       - Body
@@ -92,6 +97,7 @@
     icon:
       sprite: Objects/Weapons/Melee/armblade.rsi
       state: icon
+    itemIconStyle: BigAction
     event: !type:ArmBladeActionEvent
     useDelay: 1
 
@@ -105,6 +111,7 @@
     icon:
       sprite: Clothing/OuterClothing/Armor/lingarmor.rsi
       state: icon
+    itemIconStyle: BigAction
     event: !type:LingArmorActionEvent
     useDelay: 15
 
@@ -118,6 +125,7 @@
     icon:
       sprite: Interface/Actions/actions_ling.rsi
       state: chameleon
+    itemIconStyle: BigAction
     event: !type:LingInvisibleActionEvent
     useDelay: 1
 
@@ -131,6 +139,7 @@
     icon:
       sprite: Interface/Actions/actions_ling.rsi
       state: emp
+    itemIconStyle: BigAction
     useDelay: 15
     event: !type:LingEMPActionEvent
 
@@ -144,7 +153,91 @@
   - type: InstantAction
     checkCanInteract: false
     icon:
-      sprite: Clothing/Head/Helmets/linghelmet.rsi
-      state: icon
+      sprite: Interface/Actions/actions_ling.rsi
+      state: stasis
+    itemIconStyle: BigAction
     event: !type:StasisDeathActionEvent
     useDelay: 90
+
+    # Blind sting
+- type: entity
+  id: ActionLingBlindSting
+  name: action-blind-sting
+  description: action-blind-sting-desc
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: sting_blind
+    itemIconStyle: BigAction
+    whitelist:
+      components:
+      - Body
+    event: !type:BlindStingEvent
+    useDelay: 2
+    canTargetSelf: false
+
+    # Adrenaline
+- type: entity
+  id: ActionLingAdrenaline
+  name: action-adrenaline
+  description: action-adrenaline-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: epinephrine_overdose
+    itemIconStyle: BigAction
+    event: !type:AdrenalineActionEvent
+    useDelay: 30
+
+    # Refresh
+- type: entity
+  id: ActionLingRefresh
+  name: action-refresh-ling
+  description: action-refresh-ling-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: refresh_dna
+    itemIconStyle: BigAction
+    event: !type:ChangelingRefreshActionEvent
+    useDelay: 5
+
+    # Fleshmend
+- type: entity
+  id: ActionLingOmnizine
+  name: action-omnizine
+  description: action-omnizine-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: fleshmend
+    itemIconStyle: BigAction
+    event: !type:OmniHealActionEvent
+    useDelay: 30
+
+    # Mute sting
+- type: entity
+  id: ActionLingMuteSting
+  name: action-mute-sting
+  description: action-mute-sting-desc
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: sting_mute
+    itemIconStyle: BigAction
+    whitelist:
+      components:
+      - Body
+    event: !type:MuteStingEvent
+    useDelay: 5
+    canTargetSelf: false
