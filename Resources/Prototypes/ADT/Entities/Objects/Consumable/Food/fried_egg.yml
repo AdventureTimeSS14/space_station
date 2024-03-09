@@ -24,3 +24,6 @@
           Quantity: 2
         - ReagentId: Protein
           Quantity: 3
+  - type: Tag
+    tags:
+    - ADTCarnivoreFriendlyFood
