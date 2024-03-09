@@ -11,6 +11,7 @@
       - Pill
       - Crayon
       - Paper
+      - ADTCarnivoreFriendlyFood
   - type: SolutionContainerManager
     solutions:
       stomach:

@@ -443,7 +443,7 @@ namespace Content.Shared.CCVar
             CVarDef.Create("traitor.max_traitors", 4); // Assuming average server maxes somewhere from like 50-80 people
 
         public static readonly CVarDef<int> TraitorPlayersPerTraitor =
-            CVarDef.Create("traitor.players_per_traitor", 15);
+            CVarDef.Create("traitor.players_per_traitor", 12);
 
         public static readonly CVarDef<int> TraitorCodewordCount =
             CVarDef.Create("traitor.codeword_count", 4);
@@ -496,7 +496,7 @@ namespace Content.Shared.CCVar
 
         public static readonly CVarDef<int> ChangelingMinPlayers =
 
-            CVarDef.Create("changeling.min_players", 20);
+            CVarDef.Create("changeling.min_players", 5);
 
         public static readonly CVarDef<int> ChangelingMaxChangelings =
             CVarDef.Create("changeling.max_lings", 2); // Assuming average server maxes somewhere from like 50-80 people. Upd: У нас генокрады вместе с предателями, куда бля! Порезал в 2 раза лимит.

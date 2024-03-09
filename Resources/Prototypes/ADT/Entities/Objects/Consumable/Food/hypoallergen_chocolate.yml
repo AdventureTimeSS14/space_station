@@ -24,3 +24,7 @@
           Quantity: 1
   - type: Extractable
     grindableSolutionName: food
+  - type: Tag
+    tags:
+    - ADTCarnivoreFriendlyFood
+    - ADTMothFriendlyFood
