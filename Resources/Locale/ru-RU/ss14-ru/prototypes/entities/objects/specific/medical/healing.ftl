@@ -98,3 +98,5 @@ ent-SyringePhalanximine = шприц фалангимина
     .desc = { ent-BaseSyringe.desc }
 ent-SyringeSaline = шприц физраствора
     .desc = { ent-BaseSyringe.desc }
+ent-Tourniquet = жгут
+    .desc = Останавливает кровотечение! С надеждой.
