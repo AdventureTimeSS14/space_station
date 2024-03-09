@@ -60,6 +60,10 @@
       color: "#FF613F"
   - type: SliceableFood
     slice: FoodBreadVolcanicSlice
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
+    - Bread
 
 - type: entity
   name: volcanic slice
@@ -74,6 +78,10 @@
       color: "#281415"
     - state: alpha-slice-filling
       color: "#FF613F"
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
+    - Bread
 
 # Bread
 
@@ -140,6 +148,10 @@
         reagents:
         - ReagentId: Nutriment
           Quantity: 15
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
+    - Bread
 # Tastes like bread, banana, nut.
 
 - type: entity
@@ -163,6 +175,10 @@
         reagents:
         - ReagentId: Nutriment
           Quantity: 3
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
+    - Bread
 
 - type: entity
   name: cream cheese bread
@@ -190,6 +206,10 @@
           Quantity: 20
         - ReagentId: Vitamin
           Quantity: 5
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
+    - Bread
 # Tastes like bread, cheese.
 
 - type: entity
@@ -216,6 +236,10 @@
           Quantity: 4
         - ReagentId: Vitamin
           Quantity: 1.2
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
+    - Bread
 
 - type: entity
   name: meat bread
@@ -346,6 +370,10 @@
     - state: plain
   - type: SliceableFood
     slice: FoodBreadPlainSlice
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
+    - Bread
 
 - type: entity
   name: bread slice
@@ -357,6 +385,10 @@
   - type: Sprite
     layers:
     - state: plain-slice
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
+    - Bread
 
 - type: entity
   name: sausage bread
@@ -502,6 +534,10 @@
           Quantity: 30
         - ReagentId: Protein
           Quantity: 12
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
+    - Bread
 # Tastes like bread, tofu.
 
 - type: entity
@@ -527,6 +563,10 @@
           Quantity: 6
         - ReagentId: Vitamin
           Quantity: 2.4
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
+    - Bread
 
 - type: entity
   name: xeno meat bread
@@ -597,6 +637,8 @@
   - type: Tag
     tags:
     - Baguette
+    - ADTMothFriendlyFood
+    - Bread
   - type: Sprite
     state: baguette
   - type: SliceableFood
@@ -638,6 +680,10 @@
           Quantity: 0.1
         - ReagentId: Blackpepper
           Quantity: 0.1
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
+    - Bread
 
 - type: entity
   name: buttered toast
@@ -707,6 +753,10 @@
           Quantity: 6
         - ReagentId: Vitamin
           Quantity: 5
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
+    - Bread
 # Tastes like garlic, Italy.
 
 - type: entity
