@@ -145,6 +145,13 @@
   flavor: medicine
   color: "#d1d1d155"
   metabolisms:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Piercing: -0.75
     Medicine:
       effects:
       - !type:HealthChange
@@ -321,6 +328,11 @@
   flavor: medicine
   color: "#f5c6dc"
   metabolisms:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:ModifyBleedAmount
+        amount: -1.5 #буквально как транексамовая, но надо плескать её.
     Medicine:
       effects:
       - !type:ModifyBleedAmount
@@ -362,8 +374,8 @@
           min: 40
         damage:
           types:
-            Asphyxiation: 2
-            Blunt: 1
+            Asphyxiation: 0.4
+            Blunt: 0.2
       - !type:GenericStatusEffect
         key: ADTApathy #добавляем апатию :thumbsup:
         component: Apathy
