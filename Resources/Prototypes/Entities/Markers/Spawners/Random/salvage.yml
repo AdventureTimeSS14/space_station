@@ -44,6 +44,18 @@
         - BoomBoxTapeSnowdinPacked
         - BoomBoxTapeWaterfallPacked
         - BoomBoxTapeGasterPacked
+        - ADTBoomBoxTapeAlienSyndicate
+        - ADTBoomBoxTapeEmbraceTheAbyss
+        - ADTBoomBoxTapeTancALelec
+        - ADTBoomBoxTapeWartrauma
+        - ADTBoomBoxTapeHotlineCrystals
+        - ADTBoomBoxTapeHotlineDaisuke
+        - ADTBoomBoxTapeHotlineHydrogen
+        - ADTBoomBoxTapeHotlineItsSafe
+        - ADTBoomBoxTapeHotlineMoges
+        - ADTBoomBoxTapeHotlineMogesDisco
+        - ADTBoomBoxTapeHotlineMusik
+        - ADTBoomBoxTapeHotlineParis
       rareChance: 0.8
       prototypes:
         - CrateSalvageAssortedGoodies
@@ -97,6 +109,18 @@
       - BoomBoxTapeWaterfallPacked
       - BoomBoxTapeGasterPacked
       - BoomBox
+      - ADTBoomBoxTapeAlienSyndicate
+      - ADTBoomBoxTapeEmbraceTheAbyss
+      - ADTBoomBoxTapeTancALelec
+      - ADTBoomBoxTapeWartrauma
+      - ADTBoomBoxTapeHotlineCrystals
+      - ADTBoomBoxTapeHotlineDaisuke
+      - ADTBoomBoxTapeHotlineHydrogen
+      - ADTBoomBoxTapeHotlineItsSafe
+      - ADTBoomBoxTapeHotlineMoges
+      - ADTBoomBoxTapeHotlineMogesDisco
+      - ADTBoomBoxTapeHotlineMusik
+      - ADTBoomBoxTapeHotlineParis
       rareChance: 0.03
       prototypes:
       - WeaponCrusher

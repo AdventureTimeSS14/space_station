@@ -450,6 +450,33 @@
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/barotrauma.ogg
 
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeAlienSyndicate
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/barotrauma_aliensyndicate.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeEmbraceTheAbyss
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/barotrauma_embrasetheabyss.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeTancALelec
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/highfleettancalelek.ogg
+
 #сссп
 
 - type: entity
@@ -659,3 +686,85 @@
   components:
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/USSP/14minute.ogg
+
+#горячая линия - могес
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeHotlineCrystals
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: Hotline
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/HotlineMoges/hotline_crystals.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeHotlineDaisuke
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: Hotline
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/HotlineMoges/hotline_daisuke.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeHotlineHydrogen
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: Hotline
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/HotlineMoges/hotline_hydrogen.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeHotlineItsSafe
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: Hotline
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/HotlineMoges/hotline_itssafe.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeHotlineMoges
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: Hotline
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/HotlineMoges/hotline_moges.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeHotlineMogesDisco
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: Hotline
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/HotlineMoges/hotline_mogesdisco.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeHotlineMusik
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: Hotline
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/HotlineMoges/hotline_musik.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeHotlineParis
+  name: The Wizard
+  description: It is said that this tape can summon a wizard...
+  suffix: Hotline
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/HotlineMoges/hotline_paris.ogg

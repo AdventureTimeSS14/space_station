@@ -106,6 +106,15 @@ ent-ADTBoomBoxTapeBorat = "Борат"
 ent-ADTBoomBoxTapeWartrauma = кассета "Wartrauma"
     .desc = Музыка для аванпостов со скидками на боеприпасы и для подготовки к бою.
 
+ent-ADTBoomBoxTapeAlienSyndicate = кассета "Alien Syndicate"
+    .desc = Музыка для очень напряженного изучения инопланетных обломков.
+
+ent-ADTBoomBoxTapeEmbraceTheAbyss = кассета "Embrace The Abyss"
+    .desc = Говорят, это слушали древние пилоты шаттлов.
+
+ent-ADTBoomBoxTapeTancALelec = кассета "Tanc a Lelek"
+    .desc = Внимание, новый тепловой контакт!
+
 ent-ADTBoomBoxTapeWartraumaPacked = запакованная кассета "Wartrauma"
     .desc = Музыка для аванпостов со скидками на боеприпасы и для подготовки к бою.
 
@@ -172,3 +181,27 @@ ent-ADTBoomBoxTapeWeArmyOfThePeople = кассета "Мы - армия наро
 ent-ADTBoomBoxTape14Minute = кассета "14 минут"
     .desc = Военная песня СССП.
     .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeHotlineCrystals = кассета "Hotline Moges - Crystals"
+    .desc = Традиционные мелодии костюмированного карнавала тропического города.
+
+ent-ADTBoomBoxTapeHotlineDaisuke = кассета "Hotline Moges - Daisuke"
+    .desc = Традиционные мелодии костюмированного карнавала тропического города.
+
+ent-ADTBoomBoxTapeHotlineHydrogen = кассета "Hotline Moges - Hydrogen"
+    .desc = Традиционные мелодии костюмированного карнавала тропического города.
+
+ent-ADTBoomBoxTapeHotlineItsSafe = кассета "Hotline Moges - ItsSafe"
+    .desc = Традиционные мелодии костюмированного карнавала тропического города.
+
+ent-ADTBoomBoxTapeHotlineMoges = кассета "Hotline Moges - Moges"
+    .desc = Традиционные мелодии костюмированного карнавала тропического города.
+
+ent-ADTBoomBoxTapeHotlineMogesDisco = кассета "Hotline Moges - Moges Disco"
+    .desc = Традиционные мелодии костюмированного карнавала тропического города.
+
+ent-ADTBoomBoxTapeHotlineMusik = кассета "Hotline Moges - Musik"
+    .desc = Традиционные мелодии костюмированного карнавала тропического города.
+
+ent-ADTBoomBoxTapeHotlineParis = кассета "Hotline Moges - Paris"
+    .desc = Традиционные мелодии костюмированного карнавала тропического города.
