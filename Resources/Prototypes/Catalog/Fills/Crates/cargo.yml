@@ -110,9 +110,9 @@
     - id: WeaponRifleAk
       prob: 0.0001
       orGroup: Weapons
-    - id: Throngler
-      prob: 0.0001
-      orGroup: Weapons
+    # - id: Throngler
+    #   prob: 0.0001
+    #   orGroup: Weapons
     - id: WeaponLauncherPirateCannon
       prob: 0.001
       orGroup: Weapons
@@ -198,9 +198,9 @@
     - id: ClothingUniformJumpskirtSyndieFormalDress
       prob: 0.01
       orGroup: Clothes
-    - id: ClothingOuterHardsuitDeathsquad
-      prob: 0.0001
-      orGroup: Clothes
+    # - id: ClothingOuterHardsuitDeathsquad
+    #   prob: 0.0001
+    #   orGroup: Clothes
     - id: ClothingNeckCloakNanotrasen
       prob: 0.01
       orGroup: Clothes

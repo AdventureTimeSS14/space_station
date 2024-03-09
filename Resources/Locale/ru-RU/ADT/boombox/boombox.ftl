@@ -99,3 +99,109 @@ ent-BoomBoxTapeWaterfallPacked = запакованная кассета "Waterf
 
 ent-BoomBoxTapeGasterPacked = запакованная кассета
     .desc = Плотно упакованная кассета для бумбокса.
+
+ent-ADTBoomBoxTapeBorat = "Борат"
+    .desc = Старая кассета с музыкой из несмешного фильма. Если захотите побесить или развеселить космических кочевников.
+
+ent-ADTBoomBoxTapeWartrauma = кассета "Wartrauma"
+    .desc = Музыка для аванпостов со скидками на боеприпасы и для подготовки к бою.
+
+ent-ADTBoomBoxTapeAlienSyndicate = кассета "Alien Syndicate"
+    .desc = Музыка для очень напряженного изучения инопланетных обломков.
+
+ent-ADTBoomBoxTapeEmbraceTheAbyss = кассета "Embrace The Abyss"
+    .desc = Говорят, это слушали древние пилоты шаттлов.
+
+ent-ADTBoomBoxTapeTancALelec = кассета "Tanc a Lelek"
+    .desc = Внимание, новый тепловой контакт!
+
+ent-ADTBoomBoxTapeWartraumaPacked = запакованная кассета "Wartrauma"
+    .desc = Музыка для аванпостов со скидками на боеприпасы и для подготовки к бою.
+
+ent-ADTBoomBoxTapeAllianceArmyPacked = запакованная кассета "Гимн Альянса"
+    .desc = Гимн совместных сил СССП и Ассамблеи вульпканинов.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeIfTomorrowPacked = запакованная кассета "Если завтра война"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeOurLocomotivePacked = запакованная кассета "Наш локомотив"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeSacredWarPacked = запакованная кассета "Священная война"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeTapokAlertPacked = запакованная кассета "Краснный рассвет"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeUSSPAnthemPacked = запакованная кассета "Гимн СССП"
+    .desc = Гимн СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeWeArmyOfThePeoplePacked = запакованная кассета "Мы - армия народа"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTape14MinutePacked = запакованная кассета "14 минут"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeAllianceArmy = кассета "Гимн Альянса"
+    .desc = Гимн совместных сил СССП и Ассамблеи вульпканинов.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeIfTomorrow = кассета "Если завтра война"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeOurLocomotive = кассета "Наш локомотив"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeSacredWar = кассета "Священная война"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeTapokAlert = кассета "Красный рассвет"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeUSSPAnthem = кассета "Гимн СССП"
+    .desc = Гимн СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeWeArmyOfThePeople = кассета "Мы - армия народа"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTape14Minute = кассета "14 минут"
+    .desc = Военная песня СССП.
+    .suffix = { "СССП, Бумбокс" }
+
+ent-ADTBoomBoxTapeHotlineCrystals = кассета "Hotline Moges - Crystals"
+    .desc = Традиционные мелодии костюмированного карнавала тропического города.
+
+ent-ADTBoomBoxTapeHotlineDaisuke = кассета "Hotline Moges - Daisuke"
+    .desc = Традиционные мелодии костюмированного карнавала тропического города.
+
+ent-ADTBoomBoxTapeHotlineHydrogen = кассета "Hotline Moges - Hydrogen"
+    .desc = Традиционные мелодии костюмированного карнавала тропического города.
+
+ent-ADTBoomBoxTapeHotlineItsSafe = кассета "Hotline Moges - ItsSafe"
+    .desc = Традиционные мелодии костюмированного карнавала тропического города.
+
+ent-ADTBoomBoxTapeHotlineMoges = кассета "Hotline Moges - Moges"
+    .desc = Традиционные мелодии костюмированного карнавала тропического города.
+
+ent-ADTBoomBoxTapeHotlineMogesDisco = кассета "Hotline Moges - Moges Disco"
+    .desc = Традиционные мелодии костюмированного карнавала тропического города.
+
+ent-ADTBoomBoxTapeHotlineMusik = кассета "Hotline Moges - Musik"
+    .desc = Традиционные мелодии костюмированного карнавала тропического города.
+
+ent-ADTBoomBoxTapeHotlineParis = кассета "Hotline Moges - Paris"
+    .desc = Традиционные мелодии костюмированного карнавала тропического города.
