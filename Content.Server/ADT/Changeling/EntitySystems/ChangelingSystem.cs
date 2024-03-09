@@ -69,32 +69,11 @@ public sealed partial class ChangelingSystem : EntitySystem
         RemComp<ThirstComponent>(uid); // changelings dont get hungry or thirsty
     }
 
-    [ValidatePrototypeId<EntityPrototype>]
-    private const string ChangelingEvolutionMenuId = "ActionChangelingEvolutionMenu";
-
-    [ValidatePrototypeId<EntityPrototype>]
-    private const string ChangelingRegenActionId = "ActionLingRegenerate";
-
-    [ValidatePrototypeId<EntityPrototype>]
-    private const string ChangelingAbsorbActionId = "ActionChangelingAbsorb";
-
-    [ValidatePrototypeId<EntityPrototype>]
-    private const string ChangelingDNACycleActionId = "ActionChangelingCycleDNA";
-
-    [ValidatePrototypeId<EntityPrototype>]
-    private const string ChangelingTransformActionId = "ActionChangelingTransform";
-
     [ValidatePrototypeId<CurrencyPrototype>]
     public const string EvolutionPointsCurrencyPrototype = "EvolutionPoints";
 
     [ValidatePrototypeId<StorePresetPrototype>]
     public const string ChangelingShopPresetPrototype = "StorePresetChangeling";
-
-    [ValidatePrototypeId<EntityPrototype>]
-    private const string ChangelingRefreshActionId = "ActionLingRefresh";
-
-    [ValidatePrototypeId<EntityPrototype>]
-    private const string ChangelingDNAStingActionId = "ActionLingStingExtract";
 
     public bool ChangeChemicalsAmount(EntityUid uid, float amount, ChangelingComponent? component = null, bool regenCap = true)
     {
@@ -149,13 +128,13 @@ public sealed partial class ChangelingSystem : EntitySystem
 
     private void OnMapInit(EntityUid uid, ChangelingComponent component, MapInitEvent args)
     {
-        _action.AddAction(uid, ChangelingEvolutionMenuId);
-        _action.AddAction(uid, ChangelingRegenActionId);
-        _action.AddAction(uid, ChangelingAbsorbActionId);
-        _action.AddAction(uid, ChangelingDNAStingActionId);
-        _action.AddAction(uid, ChangelingDNACycleActionId);
-        _action.AddAction(uid, ChangelingTransformActionId);
-        _action.AddAction(uid, ChangelingRefreshActionId);
+        _action.AddAction(uid, ref component.ChangelingEvolutionMenuActionEntity, component.ChangelingEvolutionMenuAction);
+        _action.AddAction(uid, ref component.ChangelingRegenActionEntity, component.ChangelingRegenAction);
+        _action.AddAction(uid, ref component.ChangelingAbsorbActionEntity, component.ChangelingAbsorbAction);
+        _action.AddAction(uid, ref component.ChangelingDNAStingActionEntity, component.ChangelingDNAStingAction);
+        _action.AddAction(uid, ref component.ChangelingDNACycleActionEntity, component.ChangelingDNACycleAction);
+        _action.AddAction(uid, ref component.ChangelingTransformActionEntity, component.ChangelingTransformAction);
+        _action.AddAction(uid, ref component.ChangelingRefreshActionEntity, component.ChangelingRefreshAction);
     }
     private void OnShop(EntityUid uid, ChangelingComponent component, ChangelingEvolutionMenuActionEvent args)
     {
@@ -214,24 +193,10 @@ public sealed partial class ChangelingSystem : EntitySystem
             return false;
         }
 
-        if (_tagSystem.HasTag(target, "ChangelingBlacklist"))
-        {
-            var selfMessage = Loc.GetString("changeling-dna-sting-fail-nodna", ("target", Identity.Entity(target, EntityManager)));
-            _popup.PopupEntity(selfMessage, uid, uid);
-            return false;
-        }
-
-
         var newHumanoidData = _polymorph.TryRegisterPolymorphHumanoidData(target);
         if (newHumanoidData == null)
             return false;
 
-        if (component.StoredDNA.Count >= component.DNAStrandCap)
-        {
-            var selfMessage = Loc.GetString("changeling-dna-sting-fail-full");
-            _popup.PopupEntity(selfMessage, uid, uid);
-            return false;
-        }
         else
         {
             component.StoredDNA.Add(newHumanoidData.Value);
@@ -349,13 +314,6 @@ public sealed partial class ChangelingSystem : EntitySystem
             return false;
         }
 
-        if (_tagSystem.HasTag(target, "ChangelingBlacklist"))
-        {
-            var selfMessage = Loc.GetString("changeling-dna-sting-fail-nodna", ("target", Identity.Entity(target, EntityManager)));
-            _popup.PopupEntity(selfMessage, uid, uid);
-            return false;
-        }
-
         if (HasComp<ChangelingComponent>(target))
         {
             var selfMessage = Loc.GetString("changeling-sting-fail-self", ("target", Identity.Entity(target, EntityManager)));
@@ -379,13 +337,6 @@ public sealed partial class ChangelingSystem : EntitySystem
             return false;
         if (!TryComp<HumanoidAppearanceComponent>(target, out var humanoidappearance))
         {
-            return false;
-        }
-
-        if (_tagSystem.HasTag(target, "ChangelingBlacklist"))
-        {
-            var selfMessage = Loc.GetString("changeling-dna-sting-fail-nodna", ("target", Identity.Entity(target, EntityManager)));
-            _popup.PopupEntity(selfMessage, uid, uid);
             return false;
         }
 
@@ -473,6 +424,19 @@ public sealed partial class ChangelingSystem : EntitySystem
 
             /// Удаление всех способностей - нихуя не понял, потом сделаю. Надеюсь.
 
+            ///_action.RemoveAction(uid, component.ChangelingArmBladeActionEntity);
+            ///_action.RemoveAction(uid, component.ChangelingArmorActionActionEntity);
+            ///_action.RemoveAction(uid, component.ChangelingInvisibleActionEntity);
+            ///_action.RemoveAction(uid, component.ChangelingEMPActionEntity);
+            ///_action.RemoveAction(uid, component.ChangelingStasisDeathActionEntity);
+            ///_action.RemoveAction(uid, component.ChangelingBlindStingActionEntity);
+            ///_action.RemoveAction(uid, component.ChangelingAdrenalineActionEntity);
+            ///_action.RemoveAction(uid, component.ChangelingOmniHealActionEntity);
+            ///_action.RemoveAction(uid, component.ChangelingMuteStingActionEntity);
+
+            /// Всё ещё не работает, закомменчу что вышло, надо разобраться как при покупке использовать вместо
+            /// _action.AddAction(uid, component.Action);
+            /// _action.AddAction(uid, ref component.ActionEntity, component.Action);
             component.CanRefresh = false;
 
             component.SelectedDNA = 0;
