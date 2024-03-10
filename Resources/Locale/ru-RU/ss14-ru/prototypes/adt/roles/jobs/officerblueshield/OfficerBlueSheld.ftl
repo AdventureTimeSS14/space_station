@@ -1,6 +1,6 @@
-ent-SpawnADTBlueShieldOfficer = ADTBlueShieldOfficer
+ent-SpawnADTBlueShieldOfficer =  спавнер Офицер "Синего щита"
     .desc = { ent-SpawnPointJobBase.desc }
-ent-ADTBlueShieldOfficerPDA = BlueShield PDA
+ent-ADTBlueShieldOfficerPDA = кпк Офицер "Синего щита"
     .desc = Это пахнет защитой.
-ent-ADTBlueShieldOfficerIDCard = Blue Shield Officer ID card
+ent-ADTBlueShieldOfficerIDCard = ID карта Офицер "Синего щита"
     .desc = { ent-IDCardStandard.desc }
