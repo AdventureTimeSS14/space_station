@@ -99,3 +99,9 @@ ent-BoomBoxTapeWaterfallPacked = запакованная кассета "Waterf
 
 ent-BoomBoxTapeGasterPacked = запакованная кассета
     .desc = Плотно упакованная кассета для бумбокса.
+
+ent-BoomBoxTapeTenebreRossoSanguePacked = запакованная кассета "Tenebre Rosso Sangue-KEYGEN CHURCH"
+   .desc = Плотно упакованная кассета для бумбокса.
+
+ent-BoomBoxTapeTenebreRossoSangue = кассета "Tenebre Rosso Sangue-KEYGEN CHURCH"
+    .desc = ЧЕЛОВЕЧЕСТВО МЕРТВО. КРОВЬ - ЭТО ТОПЛИВО. АД ПОЛОН.

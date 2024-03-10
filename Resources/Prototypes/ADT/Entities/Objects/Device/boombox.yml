@@ -229,9 +229,34 @@
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/Gaster-mono.ogg
 
+- type: entity
+  parent: BaseBoomBoxTape
+  id: BoomBoxTapeTenebreRossoSangue
+  name: Tenebre Rosso Sangue
+  description: MANKIND IS DEAD. BLOOD IS FUEL. HELL IS FULL.
+  suffix: Ultraheal
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/TenebreRossoSangue-mono.ogg
+
 #Запакованные
 
 #1
+- type: entity
+  parent: BaseBoomBoxPackedTape
+  id: BoomBoxTapeTenebreRossoSanguePacked
+  name: Tenebre Rosso Sangue
+  description: It is said that this tape can summon a wizard...
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Device/tapepacked.rsi
+      state: tape
+    - type: SpawnItemsOnUse
+      items:
+      - id: BoomBoxTapeTenebreRossoSangue
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
 - type: entity
   parent: BaseBoomBoxPackedTape
   id: BoomBoxTapeTheWizardPacked
