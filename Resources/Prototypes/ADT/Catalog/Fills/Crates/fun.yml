@@ -139,3 +139,20 @@
       - id: BoomBoxTapeOnceUponATimePacked
       - id: BoomBoxTapeSnowdinPacked
       - id: BoomBoxTapeWaterfallPacked
+
+- type: entity
+  parent: CrateGenericSteel
+  id: ADTCrateFunBoomBoxTapesHotline
+  name: "Ящик кассет Hotline Moges"
+  description: "Ящик с музыкой из нового альбома - Hotline Moges."
+  components:
+  - type: StorageFill
+    contents:
+      - id: ADTBoomBoxTapeHotlineCrystals
+      - id: ADTBoomBoxTapeHotlineDaisuke
+      - id: ADTBoomBoxTapeHotlineHydrogen
+      - id: ADTBoomBoxTapeHotlineItsSafe
+      - id: ADTBoomBoxTapeHotlineMoges
+      - id: ADTBoomBoxTapeHotlineMogesDisco
+      - id: ADTBoomBoxTapeHotlineMusik
+      - id: ADTBoomBoxTapeHotlineParis

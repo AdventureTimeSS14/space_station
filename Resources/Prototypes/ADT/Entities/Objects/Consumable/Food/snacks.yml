@@ -35,6 +35,9 @@
     state: shrimp
   - type: Food
     trash: ADTFoodPacketChipsShrimpTrash
+  - type: Tag
+    tags:
+    - ADTCarnivoreFriendlyFood
 
 - type: entity
   name: chips
@@ -82,6 +85,10 @@
   - type: Item
   - type: Food
     trash: ADTFoodPacketBeefTrash
+  - type: Tag
+    tags:
+    - Cooked
+    - ADTCarnivoreFriendlyFood
 # Я однако не знаю какое им делать наполнение,по дефолту у них 10 питательных веществ, если нужно то заполните в base свои значения
 
 - type: entity

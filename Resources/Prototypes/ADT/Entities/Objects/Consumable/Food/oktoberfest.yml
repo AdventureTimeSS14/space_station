@@ -8,6 +8,7 @@
   - type: Tag
     tags:
     - Cooked
+    - ADTCarnivoreFriendlyFood
   - type: Sprite
     sprite: ADT/Objects/Consumable/Food/oktoberfest.rsi #спрайт от Празата
     state: weisswurst
@@ -36,6 +37,7 @@
   - type: Tag
     tags:
     - Cooked
+    - ADTCarnivoreFriendlyFood
   - type: Sprite
     sprite: ADT/Objects/Consumable/Food/oktoberfest.rsi #спрайт от Празата
     state: bratwurst
@@ -78,6 +80,9 @@
           Quantity: 4
         - ReagentId: Vitamin
           Quantity: 1
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
 
 - type: entity
   name: brezel with poppy seeds
@@ -104,6 +109,9 @@
           Quantity: 4
         - ReagentId: Vitamin
           Quantity: 1
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
 
 - type: entity
   name: brezel with salt
@@ -130,6 +138,9 @@
           Quantity: 4
         - ReagentId: Vitamin
           Quantity: 1
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
 
 - type: entity
   name: brezel with chocolate

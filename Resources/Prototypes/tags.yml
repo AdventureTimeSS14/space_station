@@ -1233,3 +1233,9 @@
 
 - type: Tag
   id: ADTNanoTrasen
+
+- type: Tag
+  id: ADTMothFriendlyFood
+
+- type: Tag
+  id: ADTCarnivoreFriendlyFood

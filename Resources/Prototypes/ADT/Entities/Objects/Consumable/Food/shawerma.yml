@@ -25,6 +25,10 @@
           Quantity: 3
   - type: Item
     sprite: ADT/Objects/Consumable/Food/shawerma.rsi
+  - type: Tag
+    tags:
+    - Cooked
+    - ADTCarnivoreFriendlyFood
 
 - type: entity
   name: shawerma-default-name

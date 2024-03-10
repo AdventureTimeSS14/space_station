@@ -68,3 +68,6 @@ ent-ADTClassicTapes = ящик кассет классики
 
 ent-ADTUTTapes = ящик кассет Undertale
     .desc = Ящик с музыкой из одной старинной игры для бумбокса.
+
+ent-ADTHotlineTapes = Ящик кассет Hotline Moges
+    .desc = Ящик с музыкой из нового альбома - Hotline Moges.
