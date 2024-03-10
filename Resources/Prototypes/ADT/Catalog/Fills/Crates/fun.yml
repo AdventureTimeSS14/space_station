@@ -124,6 +124,7 @@
       - id: BoomBoxTapeTEOTEPacked
       - id: BoomBoxTapeTearsOfVeilPacked
       - id: BoomBoxTapeRunningOutPacked
+      - id: BoomBoxTapeTenebreRossoSanguePacked
 
 - type: entity
   parent: CrateGenericSteel
