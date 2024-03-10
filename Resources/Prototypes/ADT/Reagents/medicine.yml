@@ -490,6 +490,14 @@
         visualType: Small
         messages: [ "medicine-effect-pain" ] #пусть помимо иконки будет ещё и надпись.
         probability: 0.05
+      - !type:GenericStatusEffect
+        key: Stun
+        time: 1.5
+        type: Remove
+      - !type:GenericStatusEffect
+        key: KnockedDown
+        time: 1.5
+        type: Remove
       - !type:ChemVomit #а это уже передозы.
         conditions:
         - !type:ReagentThreshold
