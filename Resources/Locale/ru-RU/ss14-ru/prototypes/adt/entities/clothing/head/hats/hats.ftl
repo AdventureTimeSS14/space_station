@@ -1,6 +1,10 @@
-ent-ADTClothingHeadHatsTrueDetectiveHat = True detective hat
-    .desc = This hat is worthy of a real detactive
-ent-ADTClothingHeadHatsGreatDruidWreath = Great Druid Wreath
-    .desc = So heavy, but it's worth it to proudly wear it.
-ent-ADTClothingHeadHatsBatHat = Bat hat
-    .desc = The same as Fin, only it's Remilia.
+ent-ADTClothingHeadHatsTrueDetectiveHat = шляпа настоящего детектива
+    .desc = Эта шляпа достойна настоящего детектора
+ent-ADTClothingHeadHatsGreatDruidWreath = великий венок друида
+    .desc = Такой тяжелый, но оно того стоит, чтобы с гордостью носить его.
+ent-ADTClothingHeadHatsBatHat = шляпа летучей мыши
+    .desc = То же, что и Фин, только это Ремилия.
+ent-ADTClothingHeadHatBeretSpecialForcesUSSP = берет спецназа USSP
+    .desc = Черный берет с символикой сил безопасности Министерства внутренних дел УССП, которым награждаются элитные войска и спецподразделения, в том числе спецподразделения специального назначения
+ent-ADTClothingHeadHatsMedicalBeret = медицинский берет
+    .desc = Белый берет с аккуратно вышитым крестом. Пахнет знакомым этанолом.

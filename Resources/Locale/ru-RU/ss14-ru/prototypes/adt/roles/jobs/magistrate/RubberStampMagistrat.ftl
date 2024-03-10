@@ -1,2 +1,2 @@
-ent-RubberStampMagistrat = magistrat's rubber stamp
+ent-RubberStampMagistrat = печать магистрата
     .desc = { ent-RubberStampMime.desc }
