@@ -163,13 +163,24 @@
         - BoomBoxTapeTEOTEPacked
         - BoomBoxTapeTearsOfVeilPacked
         - BoomBoxTapeRunningOutPacked
-        - BoomBoxTapeNATOPacked
         - BoomBoxTapeHopesAndDreamsPacked
         - BoomBoxTapeNewOldHomePacked
         - BoomBoxTapeOnceUponATimePacked
         - BoomBoxTapeSnowdinPacked
         - BoomBoxTapeWaterfallPacked
         - BoomBoxTapeGasterPacked
+        - ADTBoomBoxTapeAlienSyndicate
+        - ADTBoomBoxTapeEmbraceTheAbyss
+        - ADTBoomBoxTapeTancALelec
+        - ADTBoomBoxTapeWartrauma
+        - ADTBoomBoxTapeHotlineCrystals
+        - ADTBoomBoxTapeHotlineDaisuke
+        - ADTBoomBoxTapeHotlineHydrogen
+        - ADTBoomBoxTapeHotlineItsSafe
+        - ADTBoomBoxTapeHotlineMoges
+        - ADTBoomBoxTapeHotlineMogesDisco
+        - ADTBoomBoxTapeHotlineMusik
+        - ADTBoomBoxTapeHotlineParis
       rareChance: 0.08
       prototypes:
         - FlashlightLantern

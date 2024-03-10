@@ -1,0 +1,150 @@
+- type: Tag
+  id: ADTCartridgeBibis
+
+- type: Tag
+  id: ADTMagazineRifleBibis
+
+- type: entity
+  id: ADTBaseCartridgeStrikeball
+  name: bibis
+  parent: BaseCartridge
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - ADTCartridgeBibis
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+  - type: Sprite
+    noRot: false
+    sprite: ADT/Objects/Weapons/Guns/Ammunition/airsoft_bibis.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: ADTCartridgeStrikeballBibis
+  name: bibis
+  parent: ADTBaseCartridgeStrikeball
+  components:
+  - type: CartridgeAmmo
+    proto: ADTBulletBibis
+
+- type: entity
+  id: ADTBulletBibis
+  name: bibis ball
+  parent: BaseBulletRubber
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 0.1
+  - type: StaminaDamageOnCollide
+    damage: 5
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: depleted-uranium
+
+- type: entity
+  name: Lecter Strikeball
+  parent: BaseWeaponRifle
+  id: ADTWeaponRifleLecterBibis
+  description: A high end military grade assault rifle. Uses .20 rifle ammo.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Rifles/lecter.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Rifles/lecter.rsi
+  - type: Gun
+    fireRate: 10
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/airsoft.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: ADTMagazineRifleBibis
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - ADTMagazineRifleBibis
+      gun_chamber:
+        name: Chamber
+        startingItem: ADTCartridgeStrikeballBibis
+        priority: 1
+        whitelist:
+          tags:
+            - ADTCartridgeBibis
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+
+# Empty mags
+- type: entity
+  id: ADTBaseMagazineBibis
+  name: "magazine bibis"
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - ADTMagazineRifleBibis
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - ADTCartridgeBibis
+    capacity: 200
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Rifle/rifle_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+# Magazines
+- type: entity
+  id: ADTMagazineRifleBibis
+  name: "magazine bibis"
+  parent: ADTBaseMagazineBibis
+  components:
+  - type: BallisticAmmoProvider
+    proto: ADTCartridgeStrikeballBibis
+  - type: Sprite
+    layers:
+    - state: red
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

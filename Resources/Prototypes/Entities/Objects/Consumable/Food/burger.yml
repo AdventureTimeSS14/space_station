@@ -858,6 +858,9 @@
           Quantity: 6
         - ReagentId: Vitamin
           Quantity: 3
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
 # Tastes like bun, tofu.
 
 - type: entity
@@ -919,4 +922,3 @@
   - type: Tag
     tags:
     - Meat
-    

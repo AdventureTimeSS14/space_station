@@ -9,8 +9,8 @@
       - ClothMade
       - Paper
       - Fruit
-    #  - Meat
       - Pill
+      - ADTMothFriendlyFood
   - type: SolutionContainerManager
     solutions:
       stomach:

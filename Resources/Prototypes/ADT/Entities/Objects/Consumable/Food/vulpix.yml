@@ -21,3 +21,7 @@
           Quantity: 5
         - ReagentId: Vitamin
           Quantity: 3
+  - type: Tag
+    tags:
+    - Cooked
+    - ADTCarnivoreFriendlyFood

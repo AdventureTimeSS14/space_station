@@ -254,6 +254,7 @@
   - type: Tag
     tags:
     - Fish
+    - ADTCarnivoreFriendlyFood
   - type: Perishable
     rotAfter: 600
     molsPerSecondPerUnitMass: 0
@@ -297,6 +298,7 @@
     - Raw
     - Cutlet
     - Fish
+    - ADTCarnivoreFriendlyFood
   - type: Sprite
     sprite: ADT/Objects/Consumable/Food/fish.rsi
     state: fishcutlet
@@ -327,6 +329,7 @@
     tags:
     - Cooked
     - Fish
+    - ADTCarnivoreFriendlyFood
   - type: Sprite
     sprite: ADT/Objects/Consumable/Food/fish.rsi
     layers:
@@ -359,6 +362,7 @@
     - Cooked
     - Cutlet
     - Fish
+    - ADTCarnivoreFriendlyFood
   - type: Sprite
     sprite: ADT/Objects/Consumable/Food/fish.rsi
     state: fishcutletcooked

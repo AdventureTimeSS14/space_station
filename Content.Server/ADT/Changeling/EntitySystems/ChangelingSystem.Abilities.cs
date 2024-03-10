@@ -515,7 +515,12 @@ public sealed partial class ChangelingSystem
             return;
         }
 
-
+        if (component.StoredDNA.Count >= component.DNAStrandCap)
+        {
+            var selfMessage = Loc.GetString("changeling-dna-sting-fail-full");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
 
         if (!TryUseAbility(uid, component, component.ChemicalsCostTwentyFive))
             return;
