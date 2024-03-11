@@ -16,7 +16,7 @@
         - ReagentId: THC
           Quantity: 5
         - ReagentId: Omnizine
-          Quantity: 4
+          Quantity: 8
   
 - type: entity
   name: dried cannabis leaves
@@ -34,7 +34,7 @@
         - ReagentId: THC
           Quantity: 4
         - ReagentId: Omnizine
-          Quantity: 3
+          Quantity: 7
   - type: Sprite
     sprite: ADT/Objects/Specific/Hydroponics/cannabiswhite.rsi # Corvax-Resprite: Fix path
     state: dried
@@ -65,7 +65,7 @@
         - ReagentId: THC
           Quantity: 8
         - ReagentId: Omnizine
-          Quantity: 6
+          Quantity: 14
   - type: Sprite
     sprite: Objects/Misc/reagent_fillings.rsi
     state: powderpile
