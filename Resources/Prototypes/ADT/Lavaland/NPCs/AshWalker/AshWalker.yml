@@ -1,0 +1,100 @@
+- type: entity
+  save: false
+  name: Ash walker
+  parent: [ SimpleSpaceMobBase, MobCombat ]
+  id: BaseMobAshWalker
+  abstract: true
+  components:
+  - type: HumanoidAppearance
+    species: Reptilian
+  - type: Hunger
+    starvationDamage:
+      types:
+        Cold: 0.05
+        Bloodloss: 0.05
+  - type: Puller
+    needsHands: false
+  - type: Thirst
+  - type: Icon
+    sprite: Mobs/Species/Reptilian/parts.rsi
+    state: full
+  - type: Body
+    prototype: Reptilian
+    requiredLegs: 2
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatLizard
+      amount: 5
+  - type: Inventory
+    speciesId: reptilian
+  - type: LizardAccent
+  #- type: LizardBlood
+  - type: Speech
+    speechSounds: Lizard
+    speechVerb: Reptilian
+  - type: TypingIndicator
+    proto: lizard
+  - type: Vocal
+    sounds:
+      Male: UnisexReptilian
+      Female: UnisexReptilian
+      Unsexed: UnisexReptilian
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Scale
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/pierce.ogg
+    angle: 30
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 5
+  - type: Temperature
+    heatDamageThreshold: 400
+    coldDamageThreshold: 260  #starting temperature damage treshold
+    currentTemperature: 310.15
+    specificHeat: 42
+    coldDamage:
+      types:
+        Cold : 0.1 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat : 1.5 #per second, scales with temperature & other constants
+  - type: Wagging
+  # Frontier - languages mechanic
+  - type: LanguageSpeaker
+    speaks:
+    - CintaTaj
+    understands:
+    - CintaTaj
+  - type: SizeAttributeWhitelist # Frontier
+    tall: true
+    tallscale: 1.12
+    short: true
+    shortscale: 0.9
+  - type: NightVision
+    isOn: false
+
+- type: entity
+  save: false
+  name: Ash walker
+  parent: BaseMobAshWalker
+  id: MobAshWalker
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobAshWalkerDummy
+  noSpawn: true
+  description: A dummy reptilian meant to be used in character setup.
+  components:
+  - type: HumanoidAppearance
+    species: Reptilian
+  #- type: Sprite
+  #  netsync: false
+  #  noRot: true
+  #  drawdepth: Mobs
+  #  scale: 1.05, 1.0
+
+#Weh
