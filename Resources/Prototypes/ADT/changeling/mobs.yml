@@ -5,11 +5,11 @@
   noSpawn: true
   components:
   - type: LanguageSpeaker # Frontier
-  speaks:
-  - Monkey
-  understands:
-  - GalacticCommon
-  - Monkey
+    speaks:
+    - Monkey
+    understands:
+    - GalacticCommon
+    - Monkey
 
 - type: polymorph
   id: ChangelingLesserForm
