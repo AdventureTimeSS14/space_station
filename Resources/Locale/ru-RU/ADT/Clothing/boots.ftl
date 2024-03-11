@@ -96,3 +96,9 @@ ent-ADTClothingFootSportZetaCrocs = кроссы STEP "Zeta"
 
 ent-ADTClothingHighboots = сапоги главного врача
     .desc = Пара высоких сапог, чтобы не заморать ноги во время ходьбы по лужам крови.
+
+ent-ADTClothingJumpBoots = прыжковые ботинки
+    .desc = Громоздкие до первого полёта.
+
+ent-ADTClothingJumpBootsSynd = кроваво-красные прыжковые ботинки
+    .desc = Улучшенная версия прыжковых ботинок, оснащённая магнитами для... Лучшего приземления?

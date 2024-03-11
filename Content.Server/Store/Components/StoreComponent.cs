@@ -78,6 +78,9 @@ public sealed partial class StoreComponent : Component
     [ViewVariables, DataField]
     public bool RefundAllowed;
 
+    [ViewVariables, DataField("refundPossible")]
+    public bool RefundPossible;
+
     /// <summary>
     ///     The map the store was originally from, used to block refunds if the map is changed
     /// </summary>

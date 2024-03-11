@@ -446,3 +446,28 @@
     sprite: ADT/Clothing/Shoes/Boots/highboots.rsi
   - type: Clothing
     sprite: ADT/Clothing/Shoes/Boots/highboots.rsi
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ADTClothingJumpBoots
+  name: jumpboots
+  description: Robust combat boots for combat scenarios or combat situations. All combat, all the time.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/combatboots.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/combatboots.rsi
+  - type: Jumpboots
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ADTClothingJumpBootsSynd
+  name: blood-red jumpboots
+  description: Robust combat boots for combat scenarios or combat situations. All combat, all the time.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/combatboots.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/combatboots.rsi
+  - type: Jumpboots
+    jumpAction: ActionJumpbootsSynd

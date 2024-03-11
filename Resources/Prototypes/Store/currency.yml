@@ -15,6 +15,11 @@
   displayName: store-currency-display-evolution-points
   canWithdraw: false
 
+- type: currency
+  id: SpellPoints
+  displayName: store-currency-display-spell-points
+  canWithdraw: false
+
 #debug
 - type: currency
   id: DebugDollar

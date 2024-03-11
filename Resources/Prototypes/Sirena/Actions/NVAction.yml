@@ -12,8 +12,8 @@
 
 - type: entity
   id: SwitchNightVision
-  name: switch night vision
-  description: bla
+  name: night-vision-toggle
+  description: night-vision-toggle-desc
   noSpawn: true
   components:
   - type: InstantAction

@@ -130,3 +130,9 @@ ghost-role-information-exterminator-rules = Ты - крупный антагон
 
 ghost-role-information-mothroach-name = Моль
 ghost-role-information-mothroach-description = Поразительно милая, поразительно надоедливая.
+
+ghost-role-information-flesh-name = Порождение плоти
+ghost-role-information-flesh-description = Утолить голод...
+
+ghost-role-information-argocyte-name = Аргоцит
+ghost-role-information-argocyte-description = Защитите своё будущее гнездо от вторжения.
