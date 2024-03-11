@@ -156,7 +156,7 @@
       - map: ["pocket1"]
       - map: ["pocket2"]
       - map: ["enum.HumanoidVisualLayers.Tail"]
-      - map: ["enum.HumanoidVisualLayers.Wings"]
+      # - map: ["enum.HumanoidVisualLayers.Wings"]
       - map: ["clownedon"] # Dynamically generated
         sprite: "Effects/creampie.rsi"
         state: "creampie_human"
