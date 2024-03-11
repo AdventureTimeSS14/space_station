@@ -15,7 +15,7 @@
           - ReagentId: THC
             Quantity: 10
           - ReagentId: Omnizine
-            Quantity: 10
+            Quantity: 16
 
 - type: entity
   id: ADTBlunt
@@ -34,4 +34,4 @@
           - ReagentId: THC
             Quantity: 10
           - ReagentId: Omnizine
-            Quantity: 10
+            Quantity: 16
