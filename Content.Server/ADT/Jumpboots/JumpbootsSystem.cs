@@ -65,7 +65,6 @@ public sealed partial class JumpbootsSystem : SharedJumpbootsSystem
     {
         if (args.Slot == "shoes")
         {
-            _action.RemoveAction(uid, component.ActionEntity);
         }
     }
     private void OnJump(EntityUid uid, JumpbootsComponent component, JumpbootsActionEvent args)

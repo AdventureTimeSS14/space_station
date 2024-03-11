@@ -20,7 +20,7 @@ public sealed partial class JumpbootsComponent : Component
     public float Volume = 1f;
 
     [DataField("jumpStrength")]
-    public float Strength = 10f;
+    public float Strength = 13f;
 
     public SlotFlags AllowedSlots = SlotFlags.FEET;
 
