@@ -5,7 +5,7 @@
   description: A metal mug. You're not sure which metal.
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/mug_metal.rsi
+    sprite: ADT/Objects/Consumable/Drinksu/ssp_cup.rsi
   - type: PhysicalComposition
     materialComposition:
       Steel: 25
