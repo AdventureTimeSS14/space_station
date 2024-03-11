@@ -31,3 +31,5 @@ ent-ChairFoldingSpawnFolded = { ent-ChairFolding }
     .desc = { ent-ChairFolding.desc }
 ent-SteelBench = стальная скамейка
     .desc = Длинная скамья, созданная для метро. Реально стандартный дизайн.
+ent-ChairGreyscale = белый стул
+    .desc = Вы сидите в этом. Либо по своей воле, либо по принуждению.

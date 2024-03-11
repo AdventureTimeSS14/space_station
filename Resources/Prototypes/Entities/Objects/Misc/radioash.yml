@@ -1,0 +1,14 @@
+- type: entity
+  name: ash
+  parent: BaseItem
+  id: ADTRadioAsh
+  description: The usual pile of ashes. The usual one?
+  components:
+  - type: Sprite
+    sprite: Objects/Materials/materials.rsi
+    state: ash
+  - type: Tag
+    tags:
+    - Trash
+  - type: RadiationSource
+    intensity: 0.55
