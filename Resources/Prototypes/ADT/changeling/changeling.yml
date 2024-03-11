@@ -191,7 +191,7 @@
       state: epinephrine_overdose
     itemIconStyle: BigAction
     event: !type:AdrenalineActionEvent
-    useDelay: 30
+    useDelay: 90
 
     # Refresh
 - type: entity
@@ -221,7 +221,7 @@
       state: fleshmend
     itemIconStyle: BigAction
     event: !type:OmniHealActionEvent
-    useDelay: 30
+    useDelay: 90
 
     # Mute sting
 - type: entity
@@ -241,3 +241,119 @@
     event: !type:MuteStingEvent
     useDelay: 5
     canTargetSelf: false
+
+    # Drug sting
+- type: entity
+  id: ActionLingDrugSting
+  name: action-drug-sting
+  description: action-drug-sting-desc
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: sting_hallucination
+    itemIconStyle: BigAction
+    whitelist:
+      components:
+      - Body
+    event: !type:DrugStingEvent
+    useDelay: 5
+    canTargetSelf: false
+
+    # Muscles
+- type: entity
+  id: ActionLingMuscles
+  name: action-muscles
+  description: action-muscles-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: strained_muscles
+    itemIconStyle: BigAction
+    event: !type:ChangelingMusclesActionEvent
+    useDelay: 1
+
+    # Lesser form
+- type: entity
+  id: ActionLingLesserForm
+  name: action-lesser-form
+  description: action-lesser-form-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: lesser_form
+    itemIconStyle: BigAction
+    checkCanInteract: false
+    event: !type:ChangelingLesserFormActionEvent
+    useDelay: 10
+
+    # Arm shield
+- type: entity
+  id: ActionArmShield
+  name: action-toggle-arm-shield
+  description: action-toggle-arm-shield-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Objects/Weapons/Melee/armshield.rsi
+      state: icon
+    itemIconStyle: BigAction
+    event: !type:ArmShieldActionEvent
+    useDelay: 1
+
+    # Last Resort
+- type: entity
+  id: ActionLingLastResort
+  name: action-resort
+  description: action-resort-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: last_resort
+    itemIconStyle: BigAction
+    checkCanInteract: false
+    event: !type:LastResortActionEvent
+    useDelay: 1
+
+    # Lay eggs
+- type: entity
+  id: ActionLingEggs
+  name: action-eggs
+  description: action-eggs-desc
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: last_resort
+    itemIconStyle: BigAction
+    whitelist:
+      components:
+      - Body
+    event: !type:LingEggActionEvent
+    useDelay: 5
+    canTargetSelf: false
+
+    # Hatch
+- type: entity
+  id: ActionLingHatch
+  name: action-hatch
+  description: action-hatch-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: last_resort
+    itemIconStyle: BigAction
+    checkCanInteract: false
+    event: !type:LingHatchActionEvent
+    useDelay: 180

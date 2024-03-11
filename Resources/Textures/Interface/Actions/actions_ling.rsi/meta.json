@@ -60,7 +60,15 @@
     },
     {
         "name": "fleshmend"
+    },
+    {
+        "name": "strained_muscles"
+    },
+    {
+        "name": "lesser_form"
+    },
+    {
+        "name": "last_resort"
     }
-
   ]
 }

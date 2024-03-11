@@ -20,7 +20,17 @@
 - type: storePreset
   id: StorePresetChangeling
   storeName: EvolutionMenu
+  refundPossible: false
   categories:
   - ChangelingAbilities
   currencyWhitelist:
   - EvolutionPoints
+
+- type: storePreset
+  id: StorePresetWizard
+  storeName: SpellbookMenu
+  refundPossible: false
+  categories:
+  - WizardAbilities
+  currencyWhitelist:
+  - SpellPoints
