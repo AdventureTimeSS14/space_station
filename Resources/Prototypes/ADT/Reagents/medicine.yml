@@ -144,7 +144,7 @@
   physicalDesc: reagent-physical-desc-translucent
   flavor: medicine
   color: "#d1d1d155"
-  metabolisms:
+  reactiveEffects:
     Acidic:
       methods: [ Touch ]
       effects:
@@ -152,6 +152,7 @@
         damage:
           types:
             Piercing: -0.75
+  metabolisms:
     Medicine:
       effects:
       - !type:HealthChange
@@ -327,12 +328,13 @@
   physicalDesc: reagent-physical-desc-powdery
   flavor: medicine
   color: "#f5c6dc"
-  metabolisms:
+  reactiveEffects:
     Acidic:
       methods: [ Touch ]
       effects:
       - !type:ModifyBleedAmount
         amount: -1.5 #буквально как транексамовая, но надо плескать её.
+  metabolisms:
     Medicine:
       effects:
       - !type:ModifyBleedAmount
