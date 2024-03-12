@@ -7,7 +7,7 @@
   - type: Sprite
     sprite: ADT/Objects/Specific/Hydroponics/cannabiswhite.rsi
   - type: Produce
-    seedId: ADTcannabiswhite
+    seedId: ADTCannabisWhite
   - type: Food
   - type: SolutionContainerManager
     solutions:
