@@ -2,12 +2,14 @@ using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using Content.Shared.CCVar;
 using Robust.Shared.Configuration;
+using Content.Shared.ADT;
 
 namespace Content.Server.Chat.Managers;
 
 public sealed class ChatSanitizationManager : IChatSanitizationManager
 {
     [Dependency] private readonly IConfigurationManager _configurationManager = default!;
+    [Dependency] private readonly IEntityManager _entityManager = default!;
 
     private static readonly Dictionary<string, string> SmileyToEmote = new()
     {
@@ -122,7 +124,12 @@ public sealed class ChatSanitizationManager : IChatSanitizationManager
             if (input.EndsWith(smiley, true, CultureInfo.InvariantCulture))
             {
                 sanitized = input.Remove(input.Length - smiley.Length).TrimEnd();
-                emote = Loc.GetString(replacement, ("ent", speaker));
+                if (_entityManager.HasComponent<ApathyComponent>(speaker))
+                {
+                    emote = Loc.GetString(replacement + "-apathy", ("ent", speaker));
+                }
+                else
+                    emote = Loc.GetString(replacement, ("ent", speaker));
                 return true;
             }
         }
