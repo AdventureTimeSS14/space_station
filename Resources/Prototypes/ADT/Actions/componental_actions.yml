@@ -66,3 +66,33 @@
       sprite: Clothing/Shoes/Boots/combatboots.rsi
       state: icon
     event: !type:CompJumpActionEvent
+
+- type: entity
+  id: CompActionStasisHeal
+  name: action-stasis-heal
+  description: action-stasis-heal-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: fleshmend
+    itemIconStyle: BigAction
+    checkCanInteract: false
+    event: !type:CompStasisHealActionEvent
+    useDelay: 5
+
+- type: entity
+  id: CompActionStealth
+  name: action-stealth
+  description: action-stealth-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: chameleon
+    itemIconStyle: BigAction
+    checkCanInteract: false
+    event: !type:CompInvisibilityActionEvent
+    useDelay: 1

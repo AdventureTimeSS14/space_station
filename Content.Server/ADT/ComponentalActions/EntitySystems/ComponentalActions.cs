@@ -72,6 +72,12 @@ public sealed partial class ComponentalActionsSystem : EntitySystem
         SubscribeLocalEvent<JumpActComponent, MapInitEvent>(OnJumpInit);
         SubscribeLocalEvent<JumpActComponent, ComponentShutdown>(OnJumpShutdown);
 
+        SubscribeLocalEvent<StasisHealActComponent, MapInitEvent>(OnStasisHealInit);
+        SubscribeLocalEvent<StasisHealActComponent, ComponentShutdown>(OnStasisHealShutdown);
+
+        SubscribeLocalEvent<InvisibilityActComponent, MapInitEvent>(OnStealthInit);
+        SubscribeLocalEvent<InvisibilityActComponent, ComponentShutdown>(OnStealthShutdown);
+
         InitializeCompAbilities();
     }
 
@@ -106,6 +112,27 @@ public sealed partial class ComponentalActionsSystem : EntitySystem
         _action.AddAction(uid, ref component.ActionEntity, component.Action);
     }
     private void OnJumpShutdown(EntityUid uid, JumpActComponent component, ComponentShutdown args)
+    {
+        _action.RemoveAction(uid, component.ActionEntity);
+    }
+
+    private void OnStasisHealInit(EntityUid uid, StasisHealActComponent component, MapInitEvent args)
+    {
+        var movementSpeed = EnsureComp<MovementSpeedModifierComponent>(uid);
+        component.BaseSprintSpeed = movementSpeed.BaseSprintSpeed;
+        component.BaseWalkSpeed = movementSpeed.BaseWalkSpeed;
+        _action.AddAction(uid, ref component.ActionEntity, component.Action);
+    }
+    private void OnStasisHealShutdown(EntityUid uid, StasisHealActComponent component, ComponentShutdown args)
+    {
+        _action.RemoveAction(uid, component.ActionEntity);
+    }
+
+    private void OnStealthInit(EntityUid uid, InvisibilityActComponent component, MapInitEvent args)
+    {
+        _action.AddAction(uid, ref component.ActionEntity, component.Action);
+    }
+    private void OnStealthShutdown(EntityUid uid, InvisibilityActComponent component, ComponentShutdown args)
     {
         _action.RemoveAction(uid, component.ActionEntity);
     }

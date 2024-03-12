@@ -437,4 +437,7 @@ public sealed partial class ChangelingComponent : Component
     [DataField]
     public bool EggsReady = false;
 
+    [DataField]
+    public bool LastResortUsed = false;
+
 }

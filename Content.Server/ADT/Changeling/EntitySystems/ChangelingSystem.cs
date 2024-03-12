@@ -33,6 +33,7 @@ using Content.Shared.Damage;
 using Content.Shared.Gibbing.Systems;
 using Content.Shared.Mind;
 using Content.Shared.Sirena.NightVision.Components;
+using Content.Shared.CombatMode;
 
 namespace Content.Server.Changeling.EntitySystems;
 
@@ -56,6 +57,8 @@ public sealed partial class ChangelingSystem : EntitySystem
     [Dependency] private readonly DamageableSystem _damageableSystem = default!;
     [Dependency] private readonly GibbingSystem _gibbingSystem = default!;
     [Dependency] private readonly SharedMindSystem _mindSystem = default!;
+    [Dependency] private readonly SharedCombatModeSystem _combat = default!;
+
     public override void Initialize()
     {
         base.Initialize();
@@ -332,6 +335,7 @@ public sealed partial class ChangelingSystem : EntitySystem
         newLingComponent.ChameleonSkinActive = component.ChameleonSkinActive;
         newLingComponent.LingArmorActive = component.LingArmorActive;
         newLingComponent.CanRefresh = component.CanRefresh;
+        newLingComponent.LastResortUsed = component.LastResortUsed;
             RemComp(uid, component);
 
         if (TryComp(uid, out StoreComponent? storeComp))
@@ -612,6 +616,7 @@ public sealed partial class ChangelingSystem : EntitySystem
                 newLingComponent.LingArmorActive = component.LingArmorActive;
                 newLingComponent.CanRefresh = component.CanRefresh;
                 newLingComponent.LesserFormActive = !component.LesserFormActive;
+                newLingComponent.LastResortUsed = component.LastResortUsed;
                 RemComp(uid, component);
 
                 if (TryComp(uid, out StoreComponent? storeComp))
@@ -670,6 +675,7 @@ public sealed partial class ChangelingSystem : EntitySystem
                 newLingComponent.LingArmorActive = component.LingArmorActive;
                 newLingComponent.CanRefresh = component.CanRefresh;
                 newLingComponent.LesserFormActive = !component.LesserFormActive;
+                newLingComponent.LastResortUsed = component.LastResortUsed;
                 RemComp(uid, component);
 
                 if (TryComp(uid, out StoreComponent? storeComp))
@@ -734,6 +740,7 @@ public sealed partial class ChangelingSystem : EntitySystem
         newLingComponent.LingArmorActive = component.LingArmorActive;
         newLingComponent.CanRefresh = component.CanRefresh;
         newLingComponent.LesserFormActive = !component.LesserFormActive;
+        newLingComponent.LastResortUsed = true;
 
         _action.AddAction(uid, ref component.ChangelingLesserFormActionEntity, component.ChangelingLesserFormAction);
 

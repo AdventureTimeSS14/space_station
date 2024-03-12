@@ -50,8 +50,8 @@ using Content.Shared.Maps;
 using Content.Shared.Physics;
 using Content.Shared.Storage;
 using Robust.Server.GameObjects;
-using Robust.Shared.Serialization.Manager;
-using Robust.Shared.Spawners;
+using Content.Shared.Movement.Components;
+using Content.Shared.Movement.Systems;
 using Content.Shared.Throwing;
 
 namespace Content.Server.ComponentalActions.EntitySystems;
@@ -83,8 +83,34 @@ public sealed partial class ComponentalActionsSystem
         SubscribeLocalEvent<ProjectileActComponent, CompProjectileActionEvent>(OnProjectile);
         SubscribeLocalEvent<HealActComponent, CompHealActionEvent>(OnHeal);
         SubscribeLocalEvent<JumpActComponent, CompJumpActionEvent>(OnJump);
+        SubscribeLocalEvent<StasisHealActComponent, CompStasisHealActionEvent>(OnStasisHeal);
+        SubscribeLocalEvent<InvisibilityActComponent, CompInvisibilityActionEvent>(OnInvisibility);
     }
 
+    public override void Update(float frameTime)
+    {
+        base.Update(frameTime);
+
+        var query = EntityQueryEnumerator<StasisHealActComponent>();
+        while (query.MoveNext(out var uid, out var stasis))
+        {
+            if (stasis.Active)
+            {
+                var damage_brute = new DamageSpecifier(_proto.Index(BruteDamageGroup), stasis.RegenerateBruteHealAmount);
+                var damage_burn = new DamageSpecifier(_proto.Index(BurnDamageGroup), stasis.RegenerateBurnHealAmount);
+                var damage_airloss = new DamageSpecifier(_proto.Index(AirlossDamageGroup), stasis.RegenerateBurnHealAmount);
+                var damage_toxin = new DamageSpecifier(_proto.Index(ToxinDamageGroup), stasis.RegenerateBurnHealAmount);
+                var damage_genetic = new DamageSpecifier(_proto.Index(GeneticDamageGroup), stasis.RegenerateBurnHealAmount);
+                _damageableSystem.TryChangeDamage(uid, damage_brute);
+                _damageableSystem.TryChangeDamage(uid, damage_burn);
+                _damageableSystem.TryChangeDamage(uid, damage_airloss);
+                _damageableSystem.TryChangeDamage(uid, damage_toxin);
+                _damageableSystem.TryChangeDamage(uid, damage_genetic);
+                _bloodstreamSystem.TryModifyBloodLevel(uid, stasis.RegenerateBloodVolumeHealAmount); // give back blood and remove bleeding
+                _bloodstreamSystem.TryModifyBleedAmount(uid, stasis.RegenerateBleedReduceAmount);
+            }
+        }
+    }
     private List<EntityCoordinates> GetSpawnPositions(TransformComponent casterXform, ComponentalActionsSpawnData data)
     {
         switch (data)
@@ -188,6 +214,9 @@ public sealed partial class ComponentalActionsSystem
 
     public ProtoId<DamageGroupPrototype> BruteDamageGroup = "Brute";
     public ProtoId<DamageGroupPrototype> BurnDamageGroup = "Burn";
+    public ProtoId<DamageGroupPrototype> AirlossDamageGroup = "Airloss";
+    public ProtoId<DamageGroupPrototype> ToxinDamageGroup = "Toxin";
+    public ProtoId<DamageGroupPrototype> GeneticDamageGroup = "Genetic";
 
     private void OnHeal(EntityUid uid, HealActComponent component, CompHealActionEvent args)
     {
@@ -220,4 +249,58 @@ public sealed partial class ComponentalActionsSystem
         args.Handled = true;
     }
 
+    private void OnStasisHeal(EntityUid uid, StasisHealActComponent component, CompStasisHealActionEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        if (component.Active)
+        {
+            var movementSpeed = EnsureComp<MovementSpeedModifierComponent>(uid);
+            var sprintSpeed = component.BaseSprintSpeed;
+            var walkSpeed = component.BaseWalkSpeed;
+            _movementSpeedModifierSystem?.ChangeBaseSpeed(uid, walkSpeed, sprintSpeed, movementSpeed.Acceleration, movementSpeed);
+        }
+
+        if (!component.Active)
+        {
+            var movementSpeed = EnsureComp<MovementSpeedModifierComponent>(uid);
+            var sprintSpeed = component.SpeedModifier;
+            var walkSpeed = component.SpeedModifier;
+            _movementSpeedModifierSystem?.ChangeBaseSpeed(uid, walkSpeed, sprintSpeed, movementSpeed.Acceleration, movementSpeed);
+        }
+
+        component.Active = !component.Active;
+
+        args.Handled = true;
+    }
+
+    private void OnInvisibility(EntityUid uid, InvisibilityActComponent component, CompInvisibilityActionEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        var stealth = EnsureComp<StealthComponent>(uid); // cant remove the armor
+        var stealthonmove = EnsureComp<StealthOnMoveComponent>(uid); // cant remove the armor
+
+        var message = Loc.GetString(!component.Active ? "changeling-chameleon-toggle-on" : "changeling-chameleon-toggle-off");
+        _popup.PopupEntity(message, uid, uid);
+
+        if (!component.Active)
+        {
+            stealthonmove.PassiveVisibilityRate = component.PassiveVisibilityRate;
+            stealthonmove.MovementVisibilityRate = component.MovementVisibilityRate;
+            stealth.MinVisibility = component.MinVisibility;
+            stealth.MaxVisibility = component.MaxVisibility;
+        }
+        else
+        {
+            RemCompDeferred(uid, stealth);
+            RemCompDeferred(uid, stealthonmove);
+        }
+
+        component.Active = !component.Active;
+
+        args.Handled = true;
+    }
 }
