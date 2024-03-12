@@ -56,4 +56,10 @@
   id: Trader
 
 - type: Tag
+  id: MaskBlocker
+
+- type: Tag
+  id: GlassesBlocker
+
+- type: Tag
   id: Medipen

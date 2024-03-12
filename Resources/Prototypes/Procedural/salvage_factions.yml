@@ -68,3 +68,19 @@
       prob: 0.02
   configs:
     Megafauna: MobArgocyteLeviathing
+
+- type: salvageFaction
+  id: Abomination
+  entries:
+    - proto: ADTMobDistorted
+    - proto: ADTMobEcho
+    - proto: ADTMobGrant
+    - proto: ADTMobHunter
+      cost: 2
+    - proto: ADTMobSoldier
+      cost: 2
+    - proto: ADTMobWrecker
+      cost: 5
+      prob: 0.05
+  configs:
+    Megafauna: ADTMobWrecker

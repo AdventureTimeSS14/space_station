@@ -72,3 +72,8 @@
 - type: storeCategory
   id: ChangelingAbilities
   name: store-category-abilities
+
+#wizard
+- type: storeCategory
+  id: WizardAbilities
+  name: store-category-abilities

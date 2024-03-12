@@ -1,6 +1,7 @@
 using System.Linq;
 using Content.Server.Actions;
 using Content.Server.Administration.Logs;
+using Content.Server.Botany.Components;
 using Content.Server.PDA.Ringer;
 using Content.Server.Stack;
 using Content.Server.Store.Components;
@@ -206,7 +207,7 @@ public sealed partial class StoreSystem
             if (!_mind.TryGetMind(buyer, out var mind, out _))
                 actionId = _actions.AddAction(buyer, listing.ProductAction);
             else
-                actionId = _actionContainer.AddAction(mind, listing.ProductAction);
+            actionId = _actions.AddAction(buyer, listing.ProductAction);
 
             // Add the newly bought action entity to the list of bought entities
             // And then add that action entity to the relevant product upgrade listing, if applicable
@@ -228,7 +229,7 @@ public sealed partial class StoreSystem
             }
         }
 
-        if (listing is { ProductUpgradeID: not null, ProductActionEntity: not null })
+            if (listing is { ProductUpgradeID: not null, ProductActionEntity: not null })
         {
             if (listing.ProductActionEntity != null)
             {
@@ -318,6 +319,9 @@ public sealed partial class StoreSystem
             component.RefundAllowed = false;
             UpdateUserInterface(buyer, uid, component);
         }
+
+        if (!component.RefundPossible)
+            return;
 
         if (!component.RefundAllowed || component.BoughtEntities.Count == 0)
             return;

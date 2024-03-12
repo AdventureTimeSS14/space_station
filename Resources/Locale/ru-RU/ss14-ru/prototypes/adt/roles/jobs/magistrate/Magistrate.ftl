@@ -1,6 +1,6 @@
-ent-SpawnMagistrat = magistrat spawn
+ent-SpawnMagistrat = спавнер магистрата
     .desc = { ent-SpawnPointJobBase.desc }
-ent-MagistratPDA = magistrat PDA
-    .desc = magistrat PDA
-ent-MagistratIDCard = magistrat ID card
-    .desc = magistrat ID card
+ent-MagistratPDA = КПК Магистрата
+    .desc = { ent-SpawnPointJobBase.desc }
+ent-MagistratIDCard = ID Карта Магистрата
+    .desc = { ent-SpawnPointJobBase.desc }
