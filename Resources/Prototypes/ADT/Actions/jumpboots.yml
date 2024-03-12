@@ -12,7 +12,7 @@
     checkCanAccess: false
     repeat: true
     icon:
-      sprite: Clothing/Shoes/Boots/combatboots.rsi
+      sprite: ADT/Clothing/Shoes/Boots/jumpboots.rsi
       state: icon
     event: !type:JumpbootsActionEvent
 
@@ -31,6 +31,6 @@
     checkCanAccess: false
     repeat: true
     icon:
-      sprite: Clothing/Shoes/Boots/combatboots.rsi
+      sprite: ADT/Clothing/Shoes/Boots/jumpboots_syndie.rsi
       state: icon
     event: !type:JumpbootsActionEvent
