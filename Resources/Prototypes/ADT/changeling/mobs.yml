@@ -113,9 +113,9 @@
   - type: PreventSpiller
   - type: LanguageSpeaker # Frontier
     speaks:
-    - Mouse
+    - Xeno
     understands:
-    - Mouse
+    - Xeno
   - type: MeleeWeapon
     soundHit:
       path: /Audio/Weapons/pierce.ogg
@@ -221,9 +221,9 @@
   - type: PreventSpiller
   - type: LanguageSpeaker # Frontier
     speaks:
-    - Mouse
+    - Xeno
     understands:
-    - Mouse
+    - Xeno
   - type: MeleeWeapon
     soundHit:
       path: /Audio/Weapons/pierce.ogg
@@ -323,3 +323,53 @@
   effects:
     - !type:CreateEntityReactionEffect
       entity: ADTLingLarva #сам подставишь id сущности.
+
+- type: entity
+  parent: ChangelingHeadslug
+  id: ChangelingHeadslugMidround
+  suffix: Ghost role
+  components:
+  - type: GenericAntag
+    rule: LingMidround
+
+- type: entity
+  parent: BaseGameRule
+  id: MidroundChangelingSpawn
+  noSpawn: true
+  components:
+  - type: StationEvent
+    weight: 10
+    duration: 1
+    earliestStart: 30
+    minimumPlayers: 40
+  - type: RandomSpawnRule
+    prototype: SpawnPointGhostLing
+
+- type: entity
+  noSpawn: true
+  parent: BaseGameRule
+  id: LingMidround
+  components:
+  - type: GenericAntagRule
+    agentName: ling-round-end-agent-name  
+    objectives:
+    - EscapeLingShuttleObjective
+
+- type: entity
+  parent: MarkerBase
+  id: SpawnPointGhostLing
+  name: changeling spawn point
+  components:
+  - type: GhostRole
+    name: ghost-role-information-ling-name
+    description: ghost-role-information-ling-description
+    rules: ghost-role-information-ling-rules
+  - type: GhostRoleMobSpawner
+    prototype: ChangelingHeadslugMidround
+  - type: Sprite
+    layers:
+    - state: green
+      sprite: ADT/Mobs/Aliens/headslug.rsi
+      layers:
+      - map: ["enum.DamageStateVisualLayers.Base"]
+        state: headslug
