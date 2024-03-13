@@ -111,6 +111,11 @@
   id: ADTWeaponPistolBlueShitX02
   description: New version of antique gun witout selfrcharge for "BlueShit"
   components:
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
   - type: Sprite
     sprite: ADT/Objects/Weapons/Guns/Battery/BlueShield.rsi
     layers:
