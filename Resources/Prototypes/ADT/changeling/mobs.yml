@@ -288,8 +288,6 @@
   - type: Food
   - type: Item
     sprite: ADT/Objects/Specific/genо_larva_white.rsi
-    layers:
-    - state: icon
     inhandVisuals:
       left:
       - state: inhand-left
