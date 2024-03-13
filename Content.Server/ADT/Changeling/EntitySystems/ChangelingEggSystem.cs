@@ -29,7 +29,7 @@ public sealed partial class ChangelingEggSystem : EntitySystem
     {
         var damage_burn = new DamageSpecifier(_proto.Index(BruteDamageGroup), component.DamageAmount);
         _damageableSystem.TryChangeDamage(uid, damage_burn);    /// To be sure that target is dead
-        var newLing = EnsureComp<ChangelingComponent>(uid);     
+        var newLing = EnsureComp<ChangelingComponent>(uid);
         newLing.EggedBody = true;       /// To make egged person into a ling
         var selfMessage = Loc.GetString("changeling-eggs-inform");
         _popup.PopupEntity(selfMessage, uid, uid, PopupType.LargeCaution);      /// Popup
@@ -37,6 +37,7 @@ public sealed partial class ChangelingEggSystem : EntitySystem
     }
     private void OnShutdown(EntityUid uid, LingEggsHolderComponent component, ComponentShutdown args)
     {
+        RemComp<ChangelingComponent>(uid);
         _action.RemoveAction(uid, component.ChangelingHatchActionEntity);
     }
 }

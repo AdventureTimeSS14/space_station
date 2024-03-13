@@ -1003,8 +1003,14 @@ public sealed partial class ChangelingSystem
 
         else
         {
+            RemComp<LingEggsHolderComponent>(uid);
+
             if (SpawnLingMonkey(uid, component))
             {
+
+                var damage_brute = new DamageSpecifier(_proto.Index(BruteDamageGroup), component.GibDamage);
+                _damageableSystem.TryChangeDamage(uid, damage_brute);
+
                 args.Handled = true;
             }
         }

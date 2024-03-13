@@ -65,6 +65,7 @@ public sealed partial class ChangelingSystem : EntitySystem
 
         SubscribeLocalEvent<ChangelingComponent, ComponentStartup>(OnStartup);
         SubscribeLocalEvent<ChangelingComponent, MapInitEvent>(OnMapInit);
+        SubscribeLocalEvent<ChangelingComponent, ComponentShutdown>(OnShutdown);
 
         SubscribeLocalEvent<ChangelingComponent, ChangelingEvolutionMenuActionEvent>(OnShop);
         SubscribeLocalEvent<ChangelingComponent, ChangelingCycleDNAActionEvent>(OnCycleDNA);
@@ -148,6 +149,17 @@ public sealed partial class ChangelingSystem : EntitySystem
         _action.AddAction(uid, ref component.ChangelingDNACycleActionEntity, component.ChangelingDNACycleAction);
         _action.AddAction(uid, ref component.ChangelingTransformActionEntity, component.ChangelingTransformAction);
         _action.AddAction(uid, ref component.ChangelingRefreshActionEntity, component.ChangelingRefreshAction);
+    }
+
+    private void OnShutdown(EntityUid uid, ChangelingComponent component, ComponentShutdown args)
+    {
+        _action.RemoveAction(uid, component.ChangelingEvolutionMenuActionEntity);
+        _action.RemoveAction(uid, component.ChangelingRegenActionEntity);
+        _action.RemoveAction(uid, component.ChangelingAbsorbActionEntity);
+        _action.RemoveAction(uid, component.ChangelingDNAStingActionEntity);
+        _action.RemoveAction(uid, component.ChangelingDNACycleActionEntity);
+        _action.RemoveAction(uid, component.ChangelingTransformActionEntity);
+        _action.RemoveAction(uid, component.ChangelingRefreshActionEntity);
     }
     private void OnShop(EntityUid uid, ChangelingComponent component, ChangelingEvolutionMenuActionEvent args)
     {
@@ -723,8 +735,6 @@ public sealed partial class ChangelingSystem : EntitySystem
     {
         var slug = Spawn(LingMonkeyId, Transform(uid).Coordinates);
 
-        RemComp<LingEggsHolderComponent>(uid);
-
         var newLingComponent = EnsureComp<ChangelingComponent>(slug);
         newLingComponent.Chemicals = component.Chemicals;
         newLingComponent.ChemicalsPerSecond = component.ChemicalsPerSecond;
@@ -754,9 +764,6 @@ public sealed partial class ChangelingSystem : EntitySystem
 
         if (_mindSystem.TryGetMind(uid, out var mindId, out var mind))
             _mindSystem.TransferTo(mindId, slug, mind: mind);
-
-        var damage_brute = new DamageSpecifier(_proto.Index(BruteDamageGroup), component.GibDamage);
-        _damageableSystem.TryChangeDamage(uid, damage_brute);
 
         return true;
     }
