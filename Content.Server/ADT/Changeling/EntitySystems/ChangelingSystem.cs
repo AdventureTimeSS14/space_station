@@ -335,7 +335,6 @@ public sealed partial class ChangelingSystem : EntitySystem
         newLingComponent.ChameleonSkinActive = component.ChameleonSkinActive;
         newLingComponent.LingArmorActive = component.LingArmorActive;
         newLingComponent.CanRefresh = component.CanRefresh;
-        newLingComponent.LastResortUsed = component.LastResortUsed;
             RemComp(uid, component);
 
         if (TryComp(uid, out StoreComponent? storeComp))
@@ -616,7 +615,6 @@ public sealed partial class ChangelingSystem : EntitySystem
                 newLingComponent.LingArmorActive = component.LingArmorActive;
                 newLingComponent.CanRefresh = component.CanRefresh;
                 newLingComponent.LesserFormActive = !component.LesserFormActive;
-                newLingComponent.LastResortUsed = component.LastResortUsed;
                 RemComp(uid, component);
 
                 if (TryComp(uid, out StoreComponent? storeComp))
@@ -675,7 +673,6 @@ public sealed partial class ChangelingSystem : EntitySystem
                 newLingComponent.LingArmorActive = component.LingArmorActive;
                 newLingComponent.CanRefresh = component.CanRefresh;
                 newLingComponent.LesserFormActive = !component.LesserFormActive;
-                newLingComponent.LastResortUsed = component.LastResortUsed;
                 RemComp(uid, component);
 
                 if (TryComp(uid, out StoreComponent? storeComp))
@@ -724,11 +721,9 @@ public sealed partial class ChangelingSystem : EntitySystem
 
     public bool SpawnLingMonkey(EntityUid uid, ChangelingComponent component)
     {
-        _action.RemoveAction(uid, component.ChangelingHatchActionEntity);
-
         var slug = Spawn(LingMonkeyId, Transform(uid).Coordinates);
 
-        RemComp<NightVisionComponent>(slug);
+        RemComp<LingEggsHolderComponent>(uid);
 
         var newLingComponent = EnsureComp<ChangelingComponent>(slug);
         newLingComponent.Chemicals = component.Chemicals;
@@ -740,16 +735,11 @@ public sealed partial class ChangelingSystem : EntitySystem
         newLingComponent.LingArmorActive = component.LingArmorActive;
         newLingComponent.CanRefresh = component.CanRefresh;
         newLingComponent.LesserFormActive = !component.LesserFormActive;
-        newLingComponent.LastResortUsed = true;
 
-        _action.AddAction(uid, ref component.ChangelingLesserFormActionEntity, component.ChangelingLesserFormAction);
 
         RemComp(uid, component);
 
-        _actionContainer.TransferAllActionsWithNewAttached(uid, slug, slug);
-
-        _action.AddAction(slug, ref newLingComponent.ChangelingLastResortActionEntity, newLingComponent.ChangelingLastResortAction);
-        _action.RemoveAction(slug, newLingComponent.ChangelingLastResortActionEntity);
+        _action.AddAction(slug, ref component.ChangelingLesserFormActionEntity, component.ChangelingLesserFormAction);
 
 
         newLingComponent.StoredDNA = new List<PolymorphHumanoidData>();    /// Создание нового ДНК списка

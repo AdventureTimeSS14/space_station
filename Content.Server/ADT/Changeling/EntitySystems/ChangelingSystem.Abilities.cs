@@ -967,9 +967,6 @@ public sealed partial class ChangelingSystem
         if (!TryUseAbility(uid, component, component.ChemicalsCostFree))
             return;
 
-        if (component.LastResortUsed)
-            return;
-
         if (SpawnLingSlug(uid, component))
         {
             var damage_brute = new DamageSpecifier(_proto.Index(BruteDamageGroup), component.GibDamage);
@@ -979,7 +976,7 @@ public sealed partial class ChangelingSystem
         }
     }
 
-    private void OnHatch(EntityUid uid, ChangelingComponent component, LingHatchActionEvent args)
+    private void OnHatch(EntityUid uid, ChangelingComponent component, LingHatchActionEvent args)       /// TODO: Сделать из акшона автоматическую систему!
     {
         if (args.Handled)
             return;
@@ -1006,8 +1003,6 @@ public sealed partial class ChangelingSystem
 
         else
         {
-            _action.RemoveAction(uid, component.ChangelingHatchActionEntity);
-
             if (SpawnLingMonkey(uid, component))
             {
                 args.Handled = true;

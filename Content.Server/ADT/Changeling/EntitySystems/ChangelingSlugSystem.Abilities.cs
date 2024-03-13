@@ -27,7 +27,7 @@ public sealed partial class LingSlugSystem
         SubscribeLocalEvent<LingSlugComponent, LingEggDoAfterEvent>(OnLayEggsDoAfter);
     }
 
-    private void OnLayEggs(EntityUid uid, LingSlugComponent component, LingEggActionEvent args)
+    private void OnLayEggs(EntityUid uid, LingSlugComponent component, LingEggActionEvent args)     /// TODO: Заменить на кладку яиц при ударе.
     {
         if (args.Handled)
             return;
@@ -89,13 +89,15 @@ public sealed partial class LingSlugSystem
 
         else
         {
-            EnsureComp<LingEggsHolderComponent>(target);
+            var holderComp = EnsureComp<LingEggsHolderComponent>(target);
 
             var selfMessage = Loc.GetString("changeling-eggs-self-success", ("target", Identity.Entity(target, EntityManager)));
             _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
 
             component.EggsLaid = true;
             component.EggLing = target;
+
+            holderComp.ChangelingHatchAction = component.HatchAction;
 
             _action.RemoveAction(uid, component.LayEggsActionEntity);   /// Яйца откладываются только один раз
 
