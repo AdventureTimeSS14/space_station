@@ -28,11 +28,8 @@
       sprite: Mobs/Customization/masking_helpers.rsi
       state: unisex_full
       visible: false
-    - map: [ "underwearb" ] #Sirena
-    - map: [ "underweart" ] #Sirena
     - map: [ "enum.HumanoidVisualLayers.LFoot" ]
     - map: [ "enum.HumanoidVisualLayers.RFoot" ]
-    - map: [ "socks" ] #Sirena
     - map: ["jumpsuit"]
     #- map: [ "underwearb" ] #Sirena
     #- map: [ "underweart" ] #Sirena
@@ -196,7 +193,7 @@
   - type: CanHostGuardian
   - type: NpcFactionMember
     factions:
-    - NanoTrasen
+    - SimpleHostile
   - type: CreamPied
   - type: Stripping
   - type: Strippable
@@ -234,7 +231,6 @@
     tags:
     - FootstepSound
     - DoorBumpOpener
-  # Frontier - languages mechanic
   - type: SizeAttributeWhitelist # Frontier
     tall: true
     tallscale: 1.1
@@ -303,6 +299,18 @@
     normalBodyTemperature: 310.15
     thermalRegulationTemperatureThreshold: 25
   - type: Perishable
+  - type: Butcherable
+    butcheringType: Spike # TODO human.
+    spawned:
+      - id: FoodMeat
+        amount: 5
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 1.0
+    damageRecovery:
+      types:
+        Asphyxiation: -1.0
   - type: FireVisuals
     alternateState: Standing
 

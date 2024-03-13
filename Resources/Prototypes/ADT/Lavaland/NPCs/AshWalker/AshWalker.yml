@@ -1,7 +1,7 @@
 - type: entity
   save: false
   name: Ash walker
-  parent: [ SimpleSpaceMobBase, MobCombat ]
+  parent: BaseHumLavalandMob
   id: BaseMobAshWalker
   abstract: true
   components:
@@ -74,27 +74,20 @@
     tallscale: 1.12
     short: true
     shortscale: 0.9
-  - type: NightVision
-    isOn: false
+
 
 - type: entity
   save: false
-  name: Ash walker
+  name: AshWalker
   parent: BaseMobAshWalker
   id: MobAshWalker
+
 
 - type: entity
   parent: BaseSpeciesDummy
   id: MobAshWalkerDummy
   noSpawn: true
-  description: A dummy reptilian meant to be used in character setup.
+  description: A dummy ashwalker.
   components:
   - type: HumanoidAppearance
     species: Reptilian
-  #- type: Sprite
-  #  netsync: false
-  #  noRot: true
-  #  drawdepth: Mobs
-  #  scale: 1.05, 1.0
-
-#Weh
