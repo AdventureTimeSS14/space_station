@@ -60,3 +60,6 @@
 
 - type: Tag
   id: GlassesBlocker
+
+- type: Tag
+  id: Medipen
