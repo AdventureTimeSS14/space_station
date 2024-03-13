@@ -367,9 +367,7 @@
   - type: GhostRoleMobSpawner
     prototype: ChangelingHeadslugMidround
   - type: Sprite
+    sprite: ADT/Mobs/Aliens/headslug.rsi
     layers:
-    - state: green
-      sprite: ADT/Mobs/Aliens/headslug.rsi
-      layers:
-      - map: ["enum.DamageStateVisualLayers.Base"]
-        state: headslug
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: headslug
