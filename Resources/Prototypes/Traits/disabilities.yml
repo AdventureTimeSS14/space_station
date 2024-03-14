@@ -60,3 +60,11 @@
   description: trait-frontal-lisp-desc
   components:
     - type: FrontalLisp
+
+- type: trait
+  id: GalacticCommonUnknow
+  name: trait-common-lang-unknown-name
+  description: trait-common-lang-unknown-desc
+  components:
+    - type: UnknowLanguage
+      language: GalacticCommon
