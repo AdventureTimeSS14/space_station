@@ -34,6 +34,8 @@ using Content.Shared.Gibbing.Systems;
 using Content.Shared.Mind;
 using Content.Shared.Sirena.NightVision.Components;
 using Content.Shared.CombatMode;
+using Content.Server.UserInterface;
+using Content.Server.SlimeHair;
 
 namespace Content.Server.Changeling.EntitySystems;
 
@@ -76,6 +78,9 @@ public sealed partial class ChangelingSystem : EntitySystem
 
     private void OnStartup(EntityUid uid, ChangelingComponent component, ComponentStartup args)
     {
+        //RemComp<ActivatableUIComponent>(uid);     // TODO: Исправить проблему с волосами слаймов
+        //RemComp<UserInterfaceComponent>(uid);
+        //RemComp<SlimeHairComponent>(uid);
         _uplink.AddUplink(uid, FixedPoint2.New(10), ChangelingShopPresetPrototype, uid, EvolutionPointsCurrencyPrototype); // not really an 'uplink', but it's there to add the evolution menu
         StealDNA(uid, component);
 

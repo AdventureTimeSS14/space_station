@@ -94,6 +94,13 @@
     tallscale: 1
     short: true
     shortscale: 0.85
+  #- type: SlimeHair    # TODO: Исправить проблему с генокрадом
+  #- type: ActivatableUI
+  #  key: enum.SlimeHairUiKey.Key
+  #- type: UserInterface
+  #  interfaces:
+  #  - key: enum.SlimeHairUiKey.Key
+  #    type: SlimeHairBoundUserInterface
 
 
 - type: entity
