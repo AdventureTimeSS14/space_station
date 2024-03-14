@@ -103,8 +103,14 @@ ent-BoomBoxTapeGasterPacked = запакованная кассета
 ent-BoomBoxTapeTenebreRossoSanguePacked = запакованная кассета "Tenebre Rosso Sangue-KEYGEN CHURCH"
    .desc = Плотно упакованная кассета для бумбокса.
 
+ent-BoomBoxTapeUltraChurchPacked = запакованная кассета "KEYGEN CHURCH - UltraChurch"
+    .desc = desc = Плотно упакованная кассета для бумбокса.
+
 ent-BoomBoxTapeTenebreRossoSangue = кассета "Tenebre Rosso Sangue-KEYGEN CHURCH"
     .desc = ЧЕЛОВЕЧЕСТВО МЕРТВО. КРОВЬ - ЭТО ТОПЛИВО. АД ПОЛОН.
+
+ent-BoomBoxTapeUltraChurch = кассета "KEYGEN CHURCH - UltraChurch"
+    .desc = С самого начала эти кусочки никогда не складывались воедино.
 
 ent-ADTBoomBoxTapeBorat = "Борат"
     .desc = Старая кассета с музыкой из несмешного фильма. Если захотите побесить или развеселить космических кочевников.
@@ -211,3 +217,4 @@ ent-ADTBoomBoxTapeHotlineMusik = кассета "Hotline Moges - Musik"
 
 ent-ADTBoomBoxTapeHotlineParis = кассета "Hotline Moges - Paris"
     .desc = Традиционные мелодии костюмированного карнавала тропического города.
+
