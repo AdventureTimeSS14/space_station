@@ -2,7 +2,7 @@
 - type: entity
   id: ADTMPeroHydrogenBottle
   name: perohydrogen bottle
-  parent: BaseChemistryEmptyPlasticBottle
+  parent: ADTPlasticBottle
   description: A small plastic bottle. The letters on the label so small that they form a funny face.
   components:
   - type: Sprite
@@ -26,7 +26,7 @@
   id: ADTMNikematideBottle
   name: nikematide bottle
   description: A small plastic bottle. The letters on the label so small that they form a funny face.
-  parent: BaseChemistryEmptyPlasticBottle
+  parent: ADTPlasticBottle
   components:
   - type: Sprite
     sprite: ADT/Objects/Specific/Medical/Chemistry/plastic-bottle.rsi
@@ -45,13 +45,62 @@
         - ReagentId: ADTMNikematide
           Quantity: 30
 
+- type: entity
+  id: ADTMDiethamilateBottle
+  name: diethamilate bottle
+  description: A small plastic bottle. The letters on the label so small that they form a funny face.
+  parent: ADTPlasticBottle
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/Chemistry/plastic-bottle.rsi
+    layers:
+      - state: icon
+        map: [ "enum.SolutionContainerLayers.Base" ]
+      - state: fill1
+        map: [ "enum.SolutionContainerLayers.Fill" ]
+        visible: false
+      - state: icon-front-diethamilate
+        map: [ "enum.SolutionContainerLayers.Overlay" ]
+  - type: SolutionContainerManager
+    solutions:
+      drink: 
+        reagents:
+        - ReagentId: ADTMDiethamilate
+          Quantity: 30
+
+- type: entity
+  id: ADTDyloveneBiomicineBottle
+  name: dylovene & biomicine bottle
+  parent: ADTPlasticBottle
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Dylovene
+          Quantity: 15
+        - ReagentId: ADTMBiomicine
+          Quantity: 15
+
+
 #стеклянные ADT
 - type: entity
   id: ADTMMorphineBottle
   name: morphine bottle
-  parent: BaseChemistryEmptyBottle
+  parent: ADTGlassBottle
   description: A small bottle with morphine. 
   components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/Chemistry/glass-bottle.rsi
+    layers:
+      - state: icon
+        map: [ "enum.SolutionContainerLayers.Base" ]
+      - state: fill1
+        map: [ "enum.SolutionContainerLayers.Fill" ]
+        visible: false
+      - state: icon-front-morphine
+        map: [ "enum.SolutionContainerLayers.Overlay" ]
   - type: SolutionContainerManager
     solutions:
       drink: 
@@ -62,7 +111,7 @@
 - type: entity
   id: ADTMOpiumBottle
   name: opium bottle
-  parent: BaseChemistryEmptyBottle
+  parent: ADTMMorphineBottle
   description: A small bottle with opium. 
   components:
   - type: SolutionContainerManager
@@ -73,11 +122,22 @@
           Quantity: 30
 
 - type: entity
-  id: ADTObjectsSpecificFormalinChemistryBottle
+  id: ADTMFormalinBottle
   name: Formalin bottle
-  parent: BaseChemistryEmptyBottle
+  parent: ADTGlassBottle
   description: A basis of pathologist's work.
   components:
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/Chemistry/glass-bottle.rsi
+    layers:
+      - state: fill1
+        map: [ "enum.SolutionContainerLayers.Fill" ]
+        visible: false
+      - state: icon_formalin
+        map: [ "enum.SolutionContainerLayers.Overlay" ]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 3
+    fillBaseName: fill
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -85,9 +145,6 @@
         reagents:
         - ReagentId: ADTMFormalin
           Quantity: 15
-  - type: Tag
-    tags:
-    - Bottle
 
 #стеклянные обычные
 - type: entity
@@ -102,9 +159,6 @@
         reagents:
         - ReagentId: Arithrazine
           Quantity: 30
-  - type: Tag
-    tags:
-    - Bottle
 
 - type: entity
   id: ADTObjectsSpecificBicaridineChemistryBottle
@@ -118,9 +172,6 @@
         reagents:
         - ReagentId: Bicaridine
           Quantity: 30
-  - type: Tag
-    tags:
-    - Bottle
 
 - type: entity
   id: ADTObjectsSpecificDexalinPlusChemistryBottle
@@ -134,9 +185,6 @@
         reagents:
         - ReagentId: DexalinPlus
           Quantity: 30
-  - type: Tag
-    tags:
-    - Bottle
 
 - type: entity
   id: ADTObjectsSpecificDermalineChemistryBottle
@@ -150,9 +198,6 @@
         reagents:
         - ReagentId: Dermaline
           Quantity: 30
-  - type: Tag
-    tags:
-    - Bottle
 
 - type: entity
   id: ADTObjectsSpecificDexalinChemistryBottle
@@ -166,9 +211,6 @@
         reagents:
         - ReagentId: Dexalin
           Quantity: 30
-  - type: Tag
-    tags:
-    - Bottle
 
 - type: entity
   id:  ADTObjectsSpecificLeporazineChemistryBottle
@@ -182,6 +224,16 @@
         reagents:
         - ReagentId: Leporazine
           Quantity: 30
-  - type: Tag
-    tags:
-    - Bottle
+
+- type: entity
+  id: ADTOmnizineBottle
+  name: omnizine bottle
+  parent: BaseChemistryEmptyBottle
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Omnizine
+          Quantity: 30

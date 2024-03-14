@@ -5,6 +5,6 @@
   id: ADTcannabiswhiteSeeds
   components:
     - type: Seed
-      seedId: ADTcannabiswhite
+      seedId: ADTCannabisWhite
     - type: Sprite
       sprite: ADT/Objects/Specific/Hydroponics/cannabiswhite.rsi

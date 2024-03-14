@@ -14,7 +14,7 @@
     sprite: Objects/Specific/Hydroponics/galaxythistle.rsi
     state: seed
   product: CrateHydroponicsSeedsMedicinal
-  cost: 800
+  cost: 700
   category: Hydroponics
   group: market
 

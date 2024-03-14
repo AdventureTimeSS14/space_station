@@ -466,5 +466,20 @@
   categories:
     - UplinkImplants
 
+- type: listing
+  id: ADTUplinkJumpboots
+  name: uplink-jumpboots-name
+  description: uplink-jumpboots-desc
+  icon: { sprite: ADT/Clothing/Shoes/Boots/jumpboots_syndie.rsi, state: icon }
+  productEntity: ADTClothingJumpBootsSynd
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkArmor
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
 
 
