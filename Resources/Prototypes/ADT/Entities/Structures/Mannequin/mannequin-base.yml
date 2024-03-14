@@ -44,8 +44,6 @@
     anchored: true
 
   - type: Anchorable
-    damageContainer: Inorganic
-    damageModifierSet: Metallic
 
   - type: Body
     prototype: Human
