@@ -6,9 +6,8 @@
   components:
   - type: InstantAction
     icon:
-      sprite: Mobs/Aliens/slimes.rsi
-      state: rainbow_baby_slime
+      sprite: ADT/Actions/slime-hair.rsi
+      state: hair
     itemIconStyle: BigAction
-    checkCanInteract: false
     event: !type:SlimeHairActionEvent
     useDelay: 1

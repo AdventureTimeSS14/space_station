@@ -89,7 +89,6 @@ public sealed partial class SlimeHairSystem : EntitySystem
         }, out var doAfterId);
 
         component.DoAfter = doAfterId;
-        _audio.PlayPvs(component.ChangeHairSound, uid);
     }
 
     private void OnSelectSlotDoAfter(EntityUid uid, SlimeHairComponent component, SlimeHairSelectDoAfterEvent args)
@@ -115,7 +114,7 @@ public sealed partial class SlimeHairSystem : EntitySystem
         }
 
         _humanoid.SetMarkingId(uid, category, args.Slot, args.Marking);
-
+        _audio.PlayPvs(component.ChangeHairSound, uid);
         UpdateInterface(uid, component);
     }
 
@@ -200,7 +199,6 @@ public sealed partial class SlimeHairSystem : EntitySystem
         }, out var doAfterId);
 
         component.DoAfter = doAfterId;
-        _audio.PlayPvs(component.ChangeHairSound, uid);
     }
 
     private void OnRemoveSlotDoAfter(EntityUid uid, SlimeHairComponent component, SlimeHairRemoveSlotDoAfterEvent args)
@@ -226,7 +224,7 @@ public sealed partial class SlimeHairSystem : EntitySystem
         }
 
         _humanoid.RemoveMarking(component.Target.Value, category, args.Slot);
-
+        _audio.PlayPvs(component.ChangeHairSound, uid);
         UpdateInterface(uid, component);
     }
 
@@ -257,7 +255,6 @@ public sealed partial class SlimeHairSystem : EntitySystem
         }, out var doAfterId);
 
         component.DoAfter = doAfterId;
-        _audio.PlayPvs(component.ChangeHairSound, uid);
     }
     private void OnAddSlotDoAfter(EntityUid uid, SlimeHairComponent component, SlimeHairAddSlotDoAfterEvent args)
     {
@@ -284,7 +281,7 @@ public sealed partial class SlimeHairSystem : EntitySystem
             return;
 
         _humanoid.AddMarking(uid, marking, Color.Black);
-
+        _audio.PlayPvs(component.ChangeHairSound, uid);
         UpdateInterface(uid, component);
 
     }

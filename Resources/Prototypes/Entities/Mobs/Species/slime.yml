@@ -94,13 +94,14 @@
     tallscale: 1
     short: true
     shortscale: 0.85
-  #- type: SlimeHair    # TODO: Исправить проблему с генокрадом
-  #- type: ActivatableUI
-  #  key: enum.SlimeHairUiKey.Key
-  #- type: UserInterface
-  #  interfaces:
-  #  - key: enum.SlimeHairUiKey.Key
-  #    type: SlimeHairBoundUserInterface
+  - type: SlimeHair    # TODO: Исправить проблему с генокрадом. ## Done. Мейби стоит чуть подредактировать позже, но это потом, когда у меня сил побольше будет.
+  - type: UserInterface
+    range: 0
+    interfaces:
+    - key: enum.SlimeHairUiKey.Key
+      type: SlimeHairBoundUserInterface
+    - key: enum.StoreUiKey.Key    # Чтобы не ломался генокрад
+      type: StoreBoundUserInterface   # Чтобы не ломался генокрад
 
 
 - type: entity
