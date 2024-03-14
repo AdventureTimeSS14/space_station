@@ -13,16 +13,6 @@
   - type: Physics
     bodyType: Dynamic
 
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.2
-        density: 100
-        mask:
-        - TableMask
-
   - type: Inventory
     templateId: human
 
@@ -60,6 +50,18 @@
   - type: Body
     prototype: Human
     requiredLegs: 2
+
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 200
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
 
   - type: Damageable
     damageContainer: Inorganic

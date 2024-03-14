@@ -8,8 +8,8 @@
     },
     "states": [
     {
-        "name": "mannequin_front",
-        "directions": 4
+        "name": "icon_full",
+        "directions": 1
     }
     ]
   }
