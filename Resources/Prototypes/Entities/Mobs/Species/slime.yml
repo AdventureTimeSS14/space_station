@@ -96,7 +96,6 @@
     shortscale: 0.85
   - type: SlimeHair    # TODO: Исправить проблему с генокрадом. ## Done. Мейби стоит чуть подредактировать позже, но это потом, когда у меня сил побольше будет.
   - type: UserInterface
-    range: 0
     interfaces:
     - key: enum.SlimeHairUiKey.Key
       type: SlimeHairBoundUserInterface
