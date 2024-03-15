@@ -10,6 +10,12 @@ action-heal-desc = Исцелите часть своих ран.
 action-jump = Прыжок
 action-jump-desc = Прыгните в указанную точку.
 
+action-stasis-heal = Стазисная регенерация
+action-stasis-heal-desc = Замедлитесь донельзя и начните регенерировать свои раны.
+
+action-stealth-heal = Невидимость
+action-stealth-heal-desc = Исчезните из виду остальных. И себя в том числе.
+
 teleport-act = Телепорт
 teleport-act-desc = Моментально перенеситесь в произвольную точку в радиусе вашего обзора.
 

@@ -9,3 +9,4 @@
     icon: _NF/Interface/Actions/language.png
     event: !type:LanguageMenuActionEvent
     useDelay: 2
+    priority: -97

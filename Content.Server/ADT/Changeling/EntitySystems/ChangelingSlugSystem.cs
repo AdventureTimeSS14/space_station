@@ -66,17 +66,21 @@ public sealed partial class LingSlugSystem : EntitySystem
         var query = EntityQueryEnumerator<LingSlugComponent>();
         while (query.MoveNext(out var uid, out var ling))
         {
-            if (ling.EggsLaid)
+            if (ling.EggsLaid)      /// TODO: Зачем я вообще сделал это через Update?
             {
                 if (ling.EggLing != null)
                 {
                     var oldUid = uid;
-                    var newLing = EnsureComp<ChangelingComponent>(ling.EggLing.Value);
-                    newLing.EggedBody = true;
-                    _action.AddAction(ling.EggLing.Value, ref newLing.ChangelingHatchActionEntity, newLing.ChangelingHatchAction);
 
-                    if (_mindSystem.TryGetMind(uid, out var mindId, out var mind))
-                        _mindSystem.TransferTo(mindId, ling.EggLing.Value, mind: mind);
+                    if (ling.Spread == false)
+                    {
+                        if (_mindSystem.TryGetMind(uid, out var mindId, out var mind))
+                            _mindSystem.TransferTo(mindId, ling.EggLing.Value, mind: mind);
+                    }
+                    else
+                    {
+                        continue;
+                    }
 
                     if (!_entityManager.TryGetComponent<BloodstreamComponent>(oldUid, out var bloodstream))
                         return;

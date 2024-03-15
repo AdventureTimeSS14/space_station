@@ -33,6 +33,9 @@ using Content.Shared.Damage;
 using Content.Shared.Gibbing.Systems;
 using Content.Shared.Mind;
 using Content.Shared.Sirena.NightVision.Components;
+using Content.Shared.CombatMode;
+using Content.Server.UserInterface;
+using Content.Server.SlimeHair;
 
 namespace Content.Server.Changeling.EntitySystems;
 
@@ -56,12 +59,15 @@ public sealed partial class ChangelingSystem : EntitySystem
     [Dependency] private readonly DamageableSystem _damageableSystem = default!;
     [Dependency] private readonly GibbingSystem _gibbingSystem = default!;
     [Dependency] private readonly SharedMindSystem _mindSystem = default!;
+    [Dependency] private readonly SharedCombatModeSystem _combat = default!;
+
     public override void Initialize()
     {
         base.Initialize();
 
         SubscribeLocalEvent<ChangelingComponent, ComponentStartup>(OnStartup);
         SubscribeLocalEvent<ChangelingComponent, MapInitEvent>(OnMapInit);
+        SubscribeLocalEvent<ChangelingComponent, ComponentShutdown>(OnShutdown);
 
         SubscribeLocalEvent<ChangelingComponent, ChangelingEvolutionMenuActionEvent>(OnShop);
         SubscribeLocalEvent<ChangelingComponent, ChangelingCycleDNAActionEvent>(OnCycleDNA);
@@ -72,6 +78,9 @@ public sealed partial class ChangelingSystem : EntitySystem
 
     private void OnStartup(EntityUid uid, ChangelingComponent component, ComponentStartup args)
     {
+        //RemComp<ActivatableUIComponent>(uid);     // TODO: Исправить проблему с волосами слаймов
+        //RemComp<UserInterfaceComponent>(uid);
+        //RemComp<SlimeHairComponent>(uid);
         _uplink.AddUplink(uid, FixedPoint2.New(10), ChangelingShopPresetPrototype, uid, EvolutionPointsCurrencyPrototype); // not really an 'uplink', but it's there to add the evolution menu
         StealDNA(uid, component);
 
@@ -145,6 +154,17 @@ public sealed partial class ChangelingSystem : EntitySystem
         _action.AddAction(uid, ref component.ChangelingDNACycleActionEntity, component.ChangelingDNACycleAction);
         _action.AddAction(uid, ref component.ChangelingTransformActionEntity, component.ChangelingTransformAction);
         _action.AddAction(uid, ref component.ChangelingRefreshActionEntity, component.ChangelingRefreshAction);
+    }
+
+    private void OnShutdown(EntityUid uid, ChangelingComponent component, ComponentShutdown args)
+    {
+        _action.RemoveAction(uid, component.ChangelingEvolutionMenuActionEntity);
+        _action.RemoveAction(uid, component.ChangelingRegenActionEntity);
+        _action.RemoveAction(uid, component.ChangelingAbsorbActionEntity);
+        _action.RemoveAction(uid, component.ChangelingDNAStingActionEntity);
+        _action.RemoveAction(uid, component.ChangelingDNACycleActionEntity);
+        _action.RemoveAction(uid, component.ChangelingTransformActionEntity);
+        _action.RemoveAction(uid, component.ChangelingRefreshActionEntity);
     }
     private void OnShop(EntityUid uid, ChangelingComponent component, ChangelingEvolutionMenuActionEvent args)
     {
@@ -718,11 +738,7 @@ public sealed partial class ChangelingSystem : EntitySystem
 
     public bool SpawnLingMonkey(EntityUid uid, ChangelingComponent component)
     {
-        _action.RemoveAction(uid, component.ChangelingHatchActionEntity);
-
         var slug = Spawn(LingMonkeyId, Transform(uid).Coordinates);
-
-        RemComp<NightVisionComponent>(slug);
 
         var newLingComponent = EnsureComp<ChangelingComponent>(slug);
         newLingComponent.Chemicals = component.Chemicals;
@@ -735,14 +751,10 @@ public sealed partial class ChangelingSystem : EntitySystem
         newLingComponent.CanRefresh = component.CanRefresh;
         newLingComponent.LesserFormActive = !component.LesserFormActive;
 
-        _action.AddAction(uid, ref component.ChangelingLesserFormActionEntity, component.ChangelingLesserFormAction);
 
         RemComp(uid, component);
 
-        _actionContainer.TransferAllActionsWithNewAttached(uid, slug, slug);
-
-        _action.AddAction(slug, ref newLingComponent.ChangelingLastResortActionEntity, newLingComponent.ChangelingLastResortAction);
-        _action.RemoveAction(slug, newLingComponent.ChangelingLastResortActionEntity);
+        _action.AddAction(slug, ref component.ChangelingLesserFormActionEntity, component.ChangelingLesserFormAction);
 
 
         newLingComponent.StoredDNA = new List<PolymorphHumanoidData>();    /// Создание нового ДНК списка
@@ -757,9 +769,6 @@ public sealed partial class ChangelingSystem : EntitySystem
 
         if (_mindSystem.TryGetMind(uid, out var mindId, out var mind))
             _mindSystem.TransferTo(mindId, slug, mind: mind);
-
-        var damage_brute = new DamageSpecifier(_proto.Index(BruteDamageGroup), component.GibDamage);
-        _damageableSystem.TryChangeDamage(uid, damage_brute);
 
         return true;
     }

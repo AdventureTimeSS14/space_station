@@ -74,3 +74,4 @@ changeling-eggs-self-success = Вы успешно оставили кладку
 changeling-eggs-interrupted = Кладка была прервана!
 changeling-egg-others = Личинки в теле {THE($user)} начинают активно шевелиться и разрастаться!
 changeling-egg-self = Личинки прорастают, готовясь вырваться наружу.
+changeling-eggs-inform = Теперь вы генокрад. Вылупляйтесь.

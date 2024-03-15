@@ -7,6 +7,7 @@
   - type: InstantAction
     icon: Interface/Actions/shop.png
     event: !type:ChangelingEvolutionMenuActionEvent
+    priority: -70
 
 - type: entity
   id: ActionChangelingAbsorb
@@ -25,6 +26,7 @@
     event: !type:LingAbsorbActionEvent
     useDelay: 5
     canTargetSelf: false
+    priority: -60
 
 - type: entity
   id: ActionChangelingCycleDNA
@@ -39,6 +41,7 @@
     itemIconStyle: BigAction
     event: !type:ChangelingCycleDNAActionEvent
     useDelay: 1
+    priority: -69
 
 - type: entity
   id: ActionChangelingTransform
@@ -53,6 +56,7 @@
     itemIconStyle: BigAction
     event: !type:ChangelingTransformActionEvent
     useDelay: 5
+    priority: -68
 
 - type: entity
   id: ActionLingRegenerate
@@ -68,6 +72,7 @@
     itemIconStyle: BigAction
     event: !type:LingRegenerateActionEvent
     useDelay: 115
+    priority: -66
 
 - type: entity
   id: ActionLingStingExtract
@@ -86,6 +91,7 @@
     event: !type:LingStingExtractActionEvent
     useDelay: 30
     canTargetSelf: false
+    priority: -65
 
 - type: entity
   id: ActionArmBlade
@@ -100,6 +106,7 @@
     itemIconStyle: BigAction
     event: !type:ArmBladeActionEvent
     useDelay: 1
+    priority: -50
 
 - type: entity
   id: ActionLingArmor
@@ -114,6 +121,7 @@
     itemIconStyle: BigAction
     event: !type:LingArmorActionEvent
     useDelay: 15
+    priority: -49
 
 - type: entity
   id: ActionLingInvisible
@@ -128,6 +136,7 @@
     itemIconStyle: BigAction
     event: !type:LingInvisibleActionEvent
     useDelay: 1
+    priority: -48
 
 - type: entity
   id: ActionLingEMP
@@ -142,7 +151,7 @@
     itemIconStyle: BigAction
     useDelay: 15
     event: !type:LingEMPActionEvent
-
+    priority: -47
     # Stasis Death
 - type: entity
   id: ActionStasisDeath
@@ -158,6 +167,7 @@
     itemIconStyle: BigAction
     event: !type:StasisDeathActionEvent
     useDelay: 90
+    priority: -46
 
     # Blind sting
 - type: entity
@@ -177,6 +187,7 @@
     event: !type:BlindStingEvent
     useDelay: 2
     canTargetSelf: false
+    priority: -64
 
     # Adrenaline
 - type: entity
@@ -192,6 +203,7 @@
     itemIconStyle: BigAction
     event: !type:AdrenalineActionEvent
     useDelay: 90
+    priority: -45
 
     # Refresh
 - type: entity
@@ -207,6 +219,7 @@
     itemIconStyle: BigAction
     event: !type:ChangelingRefreshActionEvent
     useDelay: 5
+    priority: -66
 
     # Fleshmend
 - type: entity
@@ -222,6 +235,7 @@
     itemIconStyle: BigAction
     event: !type:OmniHealActionEvent
     useDelay: 90
+    priority: -44
 
     # Mute sting
 - type: entity
@@ -241,6 +255,7 @@
     event: !type:MuteStingEvent
     useDelay: 5
     canTargetSelf: false
+    priority: -63
 
     # Drug sting
 - type: entity
@@ -260,6 +275,7 @@
     event: !type:DrugStingEvent
     useDelay: 5
     canTargetSelf: false
+    priority: -62
 
     # Muscles
 - type: entity
@@ -275,6 +291,7 @@
     itemIconStyle: BigAction
     event: !type:ChangelingMusclesActionEvent
     useDelay: 1
+    priority: -43
 
     # Lesser form
 - type: entity
@@ -291,6 +308,7 @@
     checkCanInteract: false
     event: !type:ChangelingLesserFormActionEvent
     useDelay: 10
+    priority: -67
 
     # Arm shield
 - type: entity
@@ -306,6 +324,7 @@
     itemIconStyle: BigAction
     event: !type:ArmShieldActionEvent
     useDelay: 1
+    priority: -51
 
     # Last Resort
 - type: entity
@@ -322,6 +341,7 @@
     checkCanInteract: false
     event: !type:LastResortActionEvent
     useDelay: 1
+    priority: -61
 
     # Lay eggs
 - type: entity
@@ -357,3 +377,21 @@
     checkCanInteract: false
     event: !type:LingHatchActionEvent
     useDelay: 180
+    priority: -99
+
+    # Fast Hatch
+- type: entity
+  id: ActionLingHatchFast
+  name: action-hatch
+  description: action-hatch-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: last_resort
+    itemIconStyle: BigAction
+    checkCanInteract: false
+    event: !type:LingHatchActionEvent
+    useDelay: 60
+    priority: -99
