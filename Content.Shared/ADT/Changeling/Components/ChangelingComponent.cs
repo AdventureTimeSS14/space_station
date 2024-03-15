@@ -136,12 +136,6 @@ public sealed partial class ChangelingComponent : Component
     [DataField, AutoNetworkedField]
     public EntityUid? ChangelingLastResortActionEntity;
 
-    [DataField]
-    public EntProtoId ChangelingHatchAction = "ActionLingHatch";
-
-    [DataField, AutoNetworkedField]
-    public EntityUid? ChangelingHatchActionEntity;
-
     ///[DataField]
     ///public EntProtoId ChangelingArmBladeAction = "ActionArmBlade";
 

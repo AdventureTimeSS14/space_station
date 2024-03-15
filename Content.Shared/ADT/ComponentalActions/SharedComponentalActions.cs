@@ -20,3 +20,11 @@ public sealed partial class CompJumpActionEvent : WorldTargetActionEvent
 public sealed partial class CompHealActionEvent : InstantActionEvent
 {
 }
+
+public sealed partial class CompStasisHealActionEvent : InstantActionEvent
+{
+}
+
+public sealed partial class CompInvisibilityActionEvent : InstantActionEvent
+{
+}

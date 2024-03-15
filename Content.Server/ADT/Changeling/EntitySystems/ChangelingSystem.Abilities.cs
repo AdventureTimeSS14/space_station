@@ -29,6 +29,7 @@ using Content.Shared.Eye.Blinding.Components;
 using Content.Shared.Eye.Blinding.Systems;
 using Content.Server.Destructible;
 using Content.Shared.Polymorph;
+using Content.Server.Ghost.Components;
 
 namespace Content.Server.Changeling.EntitySystems;
 
@@ -694,6 +695,8 @@ public sealed partial class ChangelingSystem
 
                 args.Handled = true;
 
+                RemComp<GhostOnMoveComponent>(uid);
+
                 var damage_burn = new DamageSpecifier(_proto.Index(BurnDamageGroup), component.StasisDeathDamageAmount);
                 _damageableSystem.TryChangeDamage(uid, damage_burn);    /// Самоопиздюливание
 
@@ -723,6 +726,9 @@ public sealed partial class ChangelingSystem
                 _mobState.ChangeMobState(uid, MobState.Critical);   /// Переходим в крит, если повреждений окажется меньше нужных для крита, поднимемся в MobState.Alive сами
                 _damageableSystem.TryChangeDamage(uid, damage_burn);
                 component.StasisDeathActive = false;
+                EnsureComp<GhostOnMoveComponent>(uid);
+                var ghostOnMove = EnsureComp<GhostOnMoveComponent>(uid);
+                ghostOnMove.MustBeDead = true;
             }
         }
 
@@ -970,7 +976,7 @@ public sealed partial class ChangelingSystem
         }
     }
 
-    private void OnHatch(EntityUid uid, ChangelingComponent component, LingHatchActionEvent args)
+    private void OnHatch(EntityUid uid, ChangelingComponent component, LingHatchActionEvent args)       /// TODO: Сделать из акшона автоматическую систему!
     {
         if (args.Handled)
             return;
@@ -997,10 +1003,14 @@ public sealed partial class ChangelingSystem
 
         else
         {
-            _action.RemoveAction(uid, component.ChangelingHatchActionEntity);
+            RemComp<LingEggsHolderComponent>(uid);
 
             if (SpawnLingMonkey(uid, component))
             {
+
+                var damage_brute = new DamageSpecifier(_proto.Index(BruteDamageGroup), component.GibDamage);
+                _damageableSystem.TryChangeDamage(uid, damage_brute);
+
                 args.Handled = true;
             }
         }

@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Text;
 using Content.Shared.GameTicking;
 using Content.Shared.Language;
@@ -23,6 +23,7 @@ public sealed partial class LanguageSystem : SharedLanguageSystem
 
         SubscribeLocalEvent<LanguageSpeakerComponent, ComponentInit>(OnInitLanguageSpeaker);
         SubscribeAllEvent<RoundStartedEvent>(it => RandomRoundSeed = _random.Next());
+        SubscribeLocalEvent<UnknowLanguageComponent, MapInitEvent>(OnUnknow);
 
         InitializeWindows();
     }
@@ -33,6 +34,21 @@ public sealed partial class LanguageSystem : SharedLanguageSystem
         {
             component.CurrentLanguage = component.SpokenLanguages.FirstOrDefault(UniversalPrototype);
         }
+    }
+
+    private void OnUnknow(EntityUid uid, UnknowLanguageComponent unknow, MapInitEvent args)
+    {
+        TryComp<LanguageSpeakerComponent>(uid, out var component);
+
+        if (component != null)
+        {
+            component.SpokenLanguages.Remove(unknow.LanguageToForgot);
+            component.UnderstoodLanguages.Remove(unknow.LanguageToForgot);
+            component.CurrentLanguage = component.SpokenLanguages.FirstOrDefault(UniversalPrototype);
+        }
+        else
+            return;
+
     }
 
     /// <summary>
