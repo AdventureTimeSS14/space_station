@@ -793,3 +793,12 @@
   components:
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/HotlineMoges/hotline_paris.ogg
+
+- type: entity
+  parent: BaseBoomBoxTape
+  id: ADTBoomBoxTapeRedSunInTheSky
+  name: Красное Солнце в небе
+  description: Эта песня заряжает вас желанием работать втрое быстрее.
+  components:
+    - type: BoomBoxTape
+      soundPath: /Audio/BoomBox/redsuninthesky.ogg

@@ -100,9 +100,14 @@
   - type: InteractionOutline
   - type: Appearance
   - type: Sprite
-    sprite: Objects/Devices/communication.rsi
+    sprite: ADT/Objects/Device/tsf_radio.rsi
     layers:
-    - state: walkietalkie
+    - state: icon
+  - type: Clothing
+    sprite: ADT/Objects/Device/tsf_radio.rsi
+    quickEquip: false
+    slots:
+    - ears
   - type: ActivatableUIRequiresPower
   - type: ActivatableUI
     key: enum.IntercomUiKey.Key
@@ -154,7 +159,7 @@
   parent: ADTRadioHandheldTSF
   components:
   - type: Clothing
-    sprite: ADT/Clothing/Back/ussp_attaked_backpack.rsi
+    sprite: ADT/Objects/Device/tsf_radio_backpack.rsi
     quickEquip: false
     slots:
     - Back
@@ -162,6 +167,6 @@
   - type: Item
     size: Ginormous
   - type: Sprite
-    sprite: ADT/Clothing/Back/ussp_attaked_backpack.rsi
+    sprite: ADT/Objects/Device/tsf_radio_backpack.rsi
     layers:
     - state: icon

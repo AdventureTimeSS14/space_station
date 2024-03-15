@@ -32,8 +32,8 @@
 - type: entity
   parent: EncryptionKey
   id: ADTEncryptionKeyTSF
-  name: TSF encryption key
-  description: TSF Forces radio channel encryption key.
+  name: Ключ шифрования ТСФ
+  description: Ключ шифрования войск ТСФ с доступом к их стандартным частотам.
   suffix: TSF
   components:
     - type: EncryptionKey

@@ -176,3 +176,7 @@ ent-ADTClothingHeadHatHoodBioPathologist = { ent-ClothingHeadHatHoodBioGeneral }
 
 ent-ADTClothingHeadHatHoodBioParamedic = { ent-ClothingHeadHatHoodBioGeneral }
     .desc = Капюшон для парамедика, защищающий голову и лицо от биологического заражения.
+
+ent-ADTClothingHeadHelmetTSF = шлем армии ТСФ
+    .desc = Стандартная каска пехотинца Транс-Солнечной Федерации.
+    .suffix = { "ТСФ" }
