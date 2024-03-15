@@ -1828,6 +1828,8 @@
         reagents:
         - ReagentId: Tea
           Quantity: 100
+  - type: Item
+    size: Normal
   - type: Sprite
     sprite: Objects/Consumable/Drinks/teapot.rsi
 
