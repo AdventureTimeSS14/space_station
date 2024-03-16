@@ -1,0 +1,108 @@
+- type: reagent
+  id: HallucinationTestReagent
+  name: reagent-name-nicotine
+  group: Narcotics
+  desc: reagent-desc-nicotine
+  flavor: bitter
+  color: "#C0C0C0"
+  physicalDesc: reagent-physical-desc-strong-smelling
+  metabolisms:
+    Narcotic:
+      effects:
+      - !type:GenericStatusEffect
+        key: ADTHallucinations
+        component: NarcoHallucinations
+        type: Add
+        time: 15
+        refresh: false
+
+
+- type: entity
+  parent: BaseMob
+  id: ADTBaseEntityHallucination
+  name: "???"
+  description: "???"
+  suffix: DO NOT MAP
+  noSpawn: true
+  components:
+  - type: Hallucination
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 15
+        mask:
+          - MobMask
+        layer:
+          - None
+  - type: TimedDespawn
+    lifetime: 15.0
+
+
+- type: entity
+  parent: ADTBaseEntityHallucination
+  id: ADTHallucinationMobEcho
+  name: "???"
+  description: "???"
+  suffix: DO NOT MAP
+  noSpawn: true
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: ADT/Mobs/Aliens/abomination.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: echo
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: echo
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3.0
+    baseSprintSpeed: 4.7
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      95: Dead
+  - type: HTN
+    rootTask:
+      task: IdleCompound
+
+- type: entity
+  parent: ADTBaseEntityHallucination
+  id: ADTHallucinationMobDistorted
+  name: "???"
+  description: "???"
+  suffix: DO NOT MAP
+  noSpawn: true
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: ADT/Mobs/Aliens/abomination.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: distorted
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: distorted
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3.0
+    baseSprintSpeed: 4.7
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      95: Dead
+  - type: HTN
+    rootTask:
+      task: IdleCompound
