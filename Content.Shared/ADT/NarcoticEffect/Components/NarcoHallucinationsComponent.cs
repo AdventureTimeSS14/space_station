@@ -13,7 +13,10 @@ public sealed partial class NarcoHallucinationsComponent : Component
     public float Range = 7f;
 
     [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public float SpawnRate = 15f;
+
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
     public float Chance = 0.5f;
-    public List<EntProtoId> Spawns = new List<EntProtoId> { "ADTHallucinationMob1", "ADTHallucinationMob2" };
+    public List<EntProtoId> Spawns = new List<EntProtoId> { "ADTHallucinationMobEcho", "ADTHallucinationMobDistorted" };
 
 }

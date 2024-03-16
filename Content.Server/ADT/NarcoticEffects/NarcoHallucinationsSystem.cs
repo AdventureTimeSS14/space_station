@@ -47,8 +47,7 @@ public sealed partial class NarcoHallucinationsSystem : EntitySystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
 
-    [ValidatePrototypeId<StatusEffectPrototype>]
-    public const string HallucinatingKey = "NarcoHallucinations";
+    public static string HallucinatingKey = "Hallucinations";
 
     public override void Initialize()
     {
@@ -81,7 +80,7 @@ public sealed partial class NarcoHallucinationsSystem : EntitySystem
         {
             if (_timing.CurTime < stat.NextSecond)
                 continue;
-            stat.NextSecond = _timing.CurTime + TimeSpan.FromSeconds(15);
+            stat.NextSecond = _timing.CurTime + TimeSpan.FromSeconds(stat.SpawnRate);
 
             if (!_random.Prob(stat.Chance))
                 continue;
