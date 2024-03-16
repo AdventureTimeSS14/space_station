@@ -48,7 +48,7 @@ public sealed partial class NarcoHallucinationsSystem : EntitySystem
     [Dependency] private readonly IRobustRandom _random = default!;
 
     [ValidatePrototypeId<StatusEffectPrototype>]
-    public const string HallucinatingKey = "Hallucinations";
+    public const string HallucinatingKey = "NarcoHallucinations";
 
     public override void Initialize()
     {
