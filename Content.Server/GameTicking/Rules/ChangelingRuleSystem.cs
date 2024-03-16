@@ -93,8 +93,8 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
         }
 
         var numLings = MathHelper.Clamp(component.StartCandidates.Count / PlayersPerLing, 1, MaxChangelings);
-        var lingPool = _antagSelection.FindPotentialAntags(component.StartCandidates, component.ChangelingPrototypeId);
-        var selectedLings = _antagSelection.PickAntag(numLings, lingPool);
+        var changelingPlayes = _antagSelection.GetEligiblePlayers(component.StartCandidates.Keys.ToList(), component.ChangelingPrototypeId);
+        var selectedLings = _antagSelection.ChooseAntags(numLings, changelingPlayes);
 
         foreach (var ling in selectedLings)
         {
@@ -121,8 +121,20 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
         }
     }
 
-    public bool MakeChangeling(ICommonSession changeling)
+    public bool MakeChangeling(EntityUid chosen)
     {
+        if (!_mindSystem.TryGetMind(chosen, out var mindId, out var mind))
+        {
+            Log.Info("Failed getting mind for picked changeling.");
+            return false;
+        }
+
+        if(mind.Session == null)
+        {
+            Log.Info("Failed getting session for picked changeling.");
+            return false;
+        }
+
         var lingRule = EntityQuery<ChangelingRuleComponent>().FirstOrDefault();
         if (lingRule == null)
         {
@@ -130,15 +142,11 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
             lingRule = Comp<ChangelingRuleComponent>(ruleEntity);
         }
 
-        if (!_mindSystem.TryGetMind(changeling, out var mindId, out var mind))
-        {
-            Log.Info("Failed getting mind for picked changeling.");
-            return false;
-        }
+
 
         if (HasComp<ChangelingRoleComponent>(mindId))
         {
-            Log.Error($"Player {changeling.Name} is already a changeling.");
+            Log.Error($"Player {mind.Session.Name} is already a changeling.");
             return false;
         }
 
@@ -249,7 +257,8 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
             // You get one shot.
             if (_random.Prob(chance))
             {
-                MakeChangeling(ev.Player);
+                if(ev.Player.AttachedEntity != null)
+                    MakeChangeling(ev.Player.AttachedEntity.Value);
             }
         }
     }

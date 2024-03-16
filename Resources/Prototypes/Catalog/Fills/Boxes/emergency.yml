@@ -10,7 +10,7 @@
       - id: EmergencyOxygenTankFilled
       - id: EmergencyMedipen
       - id: Flare
-      - id: FoodTinMRE
+      - id: FoodSnackNutribrick
       - id: DrinkWaterBottleFull
       - id: SpaceMedipen
   - type: Sprite
@@ -30,7 +30,7 @@
       - id: ExtendedEmergencyOxygenTankFilled
       - id: EmergencyMedipen
       - id: Flare
-      - id: FoodTinMRE
+      - id: FoodSnackNutribrick
       - id: DrinkWaterBottleFull
       - id: SpaceMedipen
   - type: Sprite
@@ -51,7 +51,7 @@
       - id: EmergencyOxygenTankFilled
       - id: EmergencyMedipen
       - id: Flare
-      - id: FoodTinMRE
+      - id: FoodSnackNutribrick
       - id: DrinkWaterBottleFull
       - id: SpaceMedipen
   - type: Sprite
@@ -72,7 +72,7 @@
       - id: EmergencyOxygenTankFilled
       - id: EmergencyMedipen
       - id: Flare
-      - id: FoodTinMRE
+      - id: FoodSnackNutribrick
       - id: DrinkWaterBottleFull
       - id: SpaceMedipen
   - type: Sprite
@@ -85,6 +85,7 @@
   parent: BoxCardboard
   id: BoxHug
   description: A special box for sensitive people.
+  suffix: Emergency
   components:
   - type: Sprite
     layers:
@@ -98,7 +99,7 @@
       - id: EmergencyFunnyOxygenTankFilled
       - id: EmergencyMedipen
       - id: Flare
-      - id: FoodTinMRE
+      - id: FoodSnackNutribrick
       - id: DrinkWaterBottleFull
       - id: SpaceMedipen
   - type: Tag
@@ -117,6 +118,7 @@
       - id: ExtendedEmergencyOxygenTankFilled
       - id: EmergencyMedipen
       - id: Flare
+      - id: FoodSnackNutribrick
       - id: FoodTinMRE
       - id: SpaceMedipen
   - type: Sprite
