@@ -106,3 +106,112 @@
   - type: HTN
     rootTask:
       task: IdleCompound
+
+- type: entity
+  parent: ADTBaseEntityHallucination
+  id: ADTHallucinationMobSpider
+  name: "???"
+  description: "???"
+  suffix: DO NOT MAP
+  noSpawn: true
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: tarantula
+      sprite: Mobs/Animals/spider.rsi
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: tarantula-moving
+    noMovementLayers:
+      movement:
+        state: tarantula
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.0
+    baseSprintSpeed: 3.7
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      95: Dead
+  - type: HTN
+    rootTask:
+      task: IdleCompound
+  - type: AmbientSound
+    volume: -2
+    range: 15
+    sound:
+      path: /Audio/ADT/ling-drug-mob.ogg
+  - type: TimedDespawn
+    lifetime: 45.0
+
+- type: entity
+  parent: ADTBaseEntityHallucination
+  id: ADTHallucinationMobSlime
+  name: "???"
+  description: "???"
+  suffix: DO NOT MAP
+  noSpawn: true
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/slimes.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: blue_adult_slime
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.0
+    baseSprintSpeed: 3.7
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      95: Dead
+  - type: HTN
+    rootTask:
+      task: IdleCompound
+  - type: AmbientSound
+    volume: -2
+    range: 15
+    sound:
+      path: /Audio/ADT/ling-drug-mob.ogg
+  - type: TimedDespawn
+    lifetime: 45.0
+
+- type: entity
+  parent: ADTBaseEntityHallucination
+  id: ADTHallucinationMobBehonker
+  name: "???"
+  description: "???"
+  suffix: DO NOT MAP
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Mobs/Demons/behonker.rsi
+    layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: alive
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Dead:
+        Base: dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3
+    baseSprintSpeed: 5
+    weightlessModifier: 1.5
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      95: Dead
+  - type: HTN
+    rootTask:
+      task: IdleCompound
+  - type: AmbientSound
+    volume: -2
+    range: 15
+    sound:
+      path: /Audio/ADT/ling-drug-mob.ogg
+  - type: TimedDespawn
+    lifetime: 45.0

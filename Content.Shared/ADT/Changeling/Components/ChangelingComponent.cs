@@ -386,7 +386,7 @@ public sealed partial class ChangelingComponent : Component
     public string ChemicalMute = "MuteToxin";
 
     [DataField("chemicalDrug", customTypeSerializer: typeof(PrototypeIdSerializer<ReagentPrototype>))]
-    public string ChemicalSpaceDrugs = "SpaceDrugs";
+    public string ChemicalSpaceDrugs = "LingDrugs";
 
     #endregion
 
