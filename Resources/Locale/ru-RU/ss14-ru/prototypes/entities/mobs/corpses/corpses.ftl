@@ -1,4 +1,4 @@
-    ent-MobRandomServiceCorpse = { ent-SalvageHumanCorpse }
+ent-MobRandomServiceCorpse = { ent-SalvageHumanCorpse }
     .desc = { ent-SalvageHumanCorpse.desc }
     .suffix = Мёртвый, Сервис
 ent-MobRandomEngineerCorpse = { ent-SalvageHumanCorpse }
