@@ -95,4 +95,4 @@ public sealed partial class NarcoHallucinationsSystem : EntitySystem
 //            }
 //        }
 //    }
-//}
+}
