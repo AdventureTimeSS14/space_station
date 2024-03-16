@@ -26,7 +26,7 @@
     needsHands: false
   - type: Thirst
   - type: Icon
-    sprite: ADT/Mobs\Lavaland\ashwalker.rsi
+    sprite: ADT/Mobs/Lavaland/ashwalker.rsi
     state: ash
   - type: GhostRole
     makeSentient: true
@@ -105,6 +105,8 @@
       layers:
         - sprite: ADT/Markers/job.rsi
           state: green
+        - sprite: ADT/Mobs/Lavaland/ashwalker.rsi
+          state: ash
     - type: ConditionalSpawner
       prototypes:
         - MobAshWalker
