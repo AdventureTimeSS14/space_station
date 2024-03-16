@@ -199,8 +199,8 @@ public sealed partial class ChangelingSystem : EntitySystem
                 if (!TryComp<DamageableComponent>(ling.ShieldEntity.Value, out var damage))
                     return;
 
-                int additionalShieldHealth = 50 * ling.AbsorbedDnaModifier;
-                int shieldHealth = 150 + additionalShieldHealth;
+                var additionalShieldHealth = 50 * ling.AbsorbedDnaModifier;
+                var shieldHealth = 150 + additionalShieldHealth;
                 if (damage.TotalDamage >= shieldHealth)
                 {
                     ling.ArmShieldActive = false;

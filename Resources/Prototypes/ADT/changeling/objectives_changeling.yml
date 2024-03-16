@@ -11,20 +11,17 @@
       - ChangelingRole
 
 - type: entity
-  abstract: true
-  parent: BaseChangelingObjective
+  noSpawn: true
+  parent: [BaseChangelingObjective, BaseLivingObjective]
   id: DnaAbsorbObjective
   name: Absorb 4 DNAs.
   components:
   - type: Objective
-    unique: false
+    difficulty: 1.5
+    unique: true
     icon:
       sprite: Interface/Actions/actions_ling.rsi
       state: absorb_dna
-  - type: ObjectiveBlacklistRequirement
-    blacklist:
-      components:
-      - SocialObjective
   - type: AbsorbDnaCondition
 
 - type: entity

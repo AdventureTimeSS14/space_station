@@ -9,5 +9,8 @@ namespace Content.Server.Objectives.Components;
 public sealed partial class AbsorbDnaConditionComponent : Component
 {
     [DataField]
-    public int AbsorbDnaCount = 4;
+    public float AbsorbDnaCount = 4f;
+
+    [DataField]
+    public float Zero = 0f;
 }

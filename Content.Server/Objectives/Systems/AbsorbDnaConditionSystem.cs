@@ -34,23 +34,18 @@ public sealed class AbsorbDnaConditionSystem : EntitySystem
         if (mind.OwnedEntity == null || _mind.IsCharacterDeadIc(mind))
             return 0f;
 
-        int zero = 0;
-        int two = 2;
         // Ниже идут сравнения поглощённых и требуемых
-        if (ling.AbsorbedDnaModifier == zero)
+        if (ling.AbsorbedDnaModifier == comp.Zero)
             return 0f;
 
-        if (ling.AbsorbedDnaModifier > zero)
-            if (ling.AbsorbedDnaModifier < comp.AbsorbDnaCount / two)
-                return 0.25f;
+        if (ling.AbsorbedDnaModifier > comp.Zero && ling.AbsorbedDnaModifier < comp.AbsorbDnaCount / 2)
+            return 0.25f;
 
-        if (ling.AbsorbedDnaModifier > zero)
-            if (ling.AbsorbedDnaModifier == comp.AbsorbDnaCount / two)
-                return 0.5f;
+        if (ling.AbsorbedDnaModifier == comp.AbsorbDnaCount / 2)
+            return 0.5f;
 
-        if (ling.AbsorbedDnaModifier > comp.AbsorbDnaCount / two)
-            if (ling.AbsorbedDnaModifier < comp.AbsorbDnaCount)
-                return 0.75f;
+        if (ling.AbsorbedDnaModifier > comp.Zero && ling.AbsorbedDnaModifier > comp.AbsorbDnaCount / 2 && ling.AbsorbedDnaModifier < comp.AbsorbDnaCount)
+            return 0.75f;
 
         if (ling.AbsorbedDnaModifier >= comp.AbsorbDnaCount)
             return 1f;

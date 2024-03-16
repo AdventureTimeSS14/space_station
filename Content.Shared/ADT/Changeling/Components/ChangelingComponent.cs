@@ -247,7 +247,7 @@ public sealed partial class ChangelingComponent : Component
     public float AbsorbedMobPointsAmount = 2.0f;
 
     [DataField]
-    public int AbsorbedDnaModifier = 0;
+    public float AbsorbedDnaModifier = 0f;
 
     #endregion
 
