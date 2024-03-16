@@ -64,14 +64,14 @@ public sealed partial class LingHallucinationsSystem : EntitySystem
     {
         if (!_entityManager.TryGetComponent<EyeComponent>(uid, out var eye))
             return;
-        _eye.SetVisibilityMask(uid, eye.VisibilityMask | (int) VisibilityFlags.Narcotic, eye);
+        _eye.SetVisibilityMask(uid, eye.VisibilityMask | (int) VisibilityFlags.LingToxin, eye);
     }
 
     private void OnHallucinationsShutdown(EntityUid uid, LingHallucinationsComponent component, ComponentShutdown args)
     {
         if (!_entityManager.TryGetComponent<EyeComponent>(uid, out var eye))
             return;
-        _eye.SetVisibilityMask(uid, eye.VisibilityMask & ~(int) VisibilityFlags.Narcotic, eye);
+        _eye.SetVisibilityMask(uid, eye.VisibilityMask & ~(int) VisibilityFlags.LingToxin, eye);
     }
 
     public override void Update(float frameTime)

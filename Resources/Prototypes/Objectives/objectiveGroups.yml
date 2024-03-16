@@ -135,6 +135,7 @@
     ChangelingObjectiveGroupKill: 1
     ChangelingObjectiveGroupState: 1
     ChangelingObjectiveGroupSteal: 1
+    ChangelingObjectiveGroupPersonalitySteal: 2
 
 - type: weightedRandom
   id: ChangelingObjectiveGroupSteal
@@ -151,4 +152,11 @@
   id: ChangelingObjectiveGroupState
   weights:
     EscapeLingShuttleObjective: 1
+
+- type: weightedRandom
+  id: ChangelingObjectiveGroupPersonalitySteal
+  weights:
+    StealRandomPersonalityObjectiveLing: 1
+    StealRandomHeadPersonalityObjectiveLing: 1
+
 #Crew, wizard, when you code it...

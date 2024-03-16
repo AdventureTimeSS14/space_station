@@ -18,4 +18,8 @@ public sealed partial class TargetObjectiveComponent : Component
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public EntityUid? Target;
+
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public string? TargetDNA;
+
 }

@@ -11,5 +11,6 @@ namespace Content.Shared.Eye
         Ghost  = 1 << 1,
         Narcotic = 1 << 2,
         Schizo = 1 << 3,
+        LingToxin = 1 << 4,
     }
 }

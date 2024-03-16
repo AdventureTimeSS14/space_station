@@ -1,5 +1,6 @@
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 using Robust.Shared.Prototypes;
+using Content.Shared.Eye;
 
 namespace Content.Shared.NarcoticEffects.Components;
 

@@ -32,10 +32,8 @@ using Content.Shared.Damage.Systems;
 using Content.Shared.Damage;
 using Content.Shared.Gibbing.Systems;
 using Content.Shared.Mind;
-using Content.Shared.Sirena.NightVision.Components;
+using Robust.Shared.Player;
 using Content.Shared.CombatMode;
-using Content.Server.UserInterface;
-using Content.Server.SlimeHair;
 
 namespace Content.Server.Changeling.EntitySystems;
 
@@ -195,6 +193,27 @@ public sealed partial class ChangelingSystem : EntitySystem
             if (ling.MusclesActive)
             {
                 _stamina.TakeStaminaDamage(uid, ling.MusclesStaminaDamage, null, null, null, false);
+            }
+            if (ling.ShieldEntity != null)
+            {
+                if (!TryComp<DamageableComponent>(ling.ShieldEntity.Value, out var damage))
+                    return;
+
+                int shieldHealth = 50 * ling.AbsorbedDnaModifier;
+                if (damage.TotalDamage >= shieldHealth)
+                {
+                    ling.ArmShieldActive = false;
+                    QueueDel(ling.ShieldEntity.Value);
+                    ling.ShieldEntity = new EntityUid?();
+
+                    _audioSystem.PlayPvs(ling.SoundFlesh, uid);
+
+                    var othersMessage = Loc.GetString("changeling-armshield-broke-others", ("user", Identity.Entity(uid, EntityManager)));
+                    _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
+
+                    var selfMessage = Loc.GetString("changeling-armshield-broke-self");
+                    _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+                }
             }
         }
     }
@@ -361,30 +380,11 @@ public sealed partial class ChangelingSystem : EntitySystem
             EntityManager.AddComponent(transformedUid.Value, copiedStoreComponent);
         }
 
-            if (TryComp(uid, out StealthComponent? stealthComp)) // copy over stealth status
-            {
-                if (TryComp(uid, out StealthOnMoveComponent? stealthOnMoveComp))
-                {
-                    var copiedStealthComponent = (Component) _serialization.CreateCopy(stealthComp, notNullableOverride: true);
-                    EntityManager.AddComponent(transformedUid.Value, copiedStealthComponent);
-                    RemComp(uid, stealthComp);
-
-                    var copiedStealthOnMoveComponent = (Component) _serialization.CreateCopy(stealthOnMoveComp, notNullableOverride: true);
-                    EntityManager.AddComponent(transformedUid.Value, copiedStealthOnMoveComponent);
-                    RemComp(uid, stealthOnMoveComp);
-                }
-            }
-
             _actionContainer.TransferAllActionsWithNewAttached(uid, transformedUid.Value, transformedUid.Value);
 
             if (!TryComp(transformedUid.Value, out InventoryComponent? inventory))
                 return;
 
-            if (newLingComponent.LingArmorActive)
-                SpawnLingArmor(transformedUid.Value, inventory);
-
-            if (newLingComponent.ArmBladeActive)
-                SpawnArmBlade(transformedUid.Value);
         }
     }
     public bool BlindSting(EntityUid uid, EntityUid target, ChangelingComponent component)  /// Ослепление

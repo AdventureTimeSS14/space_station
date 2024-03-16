@@ -17,7 +17,7 @@ changeling-role-greeting-short =
     Используйте ваши способности, чтобы выполнить цели.
 # Ling abilities
 changeling-not-enough-chemicals = Недостаточно химических веществ!
-changeling-armblade-fail = У вас нет свободной руки!
+changeling-armblade-fail = Вам нужна свободная рука!
 changeling-armblade-success-others = Вокруг руки {THE($user)} образуется причудливое лезвие!
 changeling-armblade-success-self = Ваша рука изгибается и мутирует, превращая ее в смертоносный клинок.
 changeling-armblade-retract-others = Клинок {CAPITALIZE(THE($target))} впитывается обратно в руку!
@@ -64,11 +64,13 @@ changeling-dna-sting-fail-full = Вы не сможете собрать ещё 
 changeling-muscles = Ваши мышцы быстро меняются!
 changeling-lesser-form-activate-monkey = Вы превратились в обезьяну!
 changeling-transform-fail-lesser-form = Вы не можете использовать данную способность в этой форме!
-changeling-armshield-fail = У вас нет свободной руки!
+changeling-armshield-fail = Нужна свободная рука!
 changeling-armshield-success-others = Вокруг руки {THE($user)} образуется массивный щит!
 changeling-armshield-success-self = Ваша рука изгибается и мутирует, превращая ее в огромный массивный щит.
 changeling-armshield-retract-others = Щит {CAPITALIZE(THE($target))} впитывается обратно в руку!
 changeling-armshield-retract-self = Вы впитываете щит обратно в свою руку.
+changeling-armshield-broke-others = Щит {CAPITALIZE(THE($target))} разорвался и впитался обратно!
+changeling-armshield-broke-self = Ваш щит был пробит!
 changeling-eggs-self-start = Вы начинаете откладывать личинки в {CAPITALIZE(THE($target))}.
 changeling-eggs-self-success = Вы успешно оставили кладку в {CAPITALIZE(THE($target))}.
 changeling-eggs-interrupted = Кладка была прервана!

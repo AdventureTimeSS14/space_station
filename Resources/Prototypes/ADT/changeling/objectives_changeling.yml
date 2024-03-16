@@ -11,6 +11,22 @@
       - ChangelingRole
 
 - type: entity
+  abstract: true
+  parent: BaseTargetObjective
+  id: BasePersonalityStealObjective
+  components:
+  - type: Objective
+    unique: false
+    icon:
+      sprite: Objects/Weapons/Guns/Pistols/viper.rsi
+      state: icon
+  - type: ObjectiveBlacklistRequirement
+    blacklist:
+      components:
+      - SocialObjective
+  - type: StealPersonalityCondition
+
+- type: entity
   noSpawn: true
   parent: [BaseChangelingObjective, BaseLivingObjective]
   id: EscapeLingShuttleObjective
@@ -28,7 +44,7 @@
   noSpawn: true
   parent: [BaseChangelingObjective, BaseKillObjective]
   id: KillRandomPersonObjectiveLing
-  description: We must kill them.
+  description: ling-kill-desc
   components:
   - type: Objective
     difficulty: 1.5
@@ -36,6 +52,34 @@
   - type: TargetObjective
     title: objective-condition-kill-person-title
   - type: PickRandomPerson
+
+- type: entity
+  noSpawn: true
+  parent: [BaseChangelingObjective, BasePersonalityStealObjective]
+  id: StealRandomPersonalityObjectiveLing
+  description: ling-steal-personality-desc
+  components:
+  - type: Objective
+    difficulty: 1.5
+    unique: false
+  - type: TargetObjective
+    title: objective-condition-steal-personality-title
+  - type: PickRandomPerson
+
+- type: entity
+  noSpawn: true
+  parent: [BaseChangelingObjective, BasePersonalityStealObjective]
+  id: StealRandomHeadPersonalityObjectiveLing
+  description: ling-steal-personality-desc
+  components:
+  - type: Objective
+    difficulty: 1.5
+    unique: false
+  - type: TargetObjective
+    title: objective-condition-steal-head-personality-title
+  - type: PickRandomHead
+  - type: StealPersonalityCondition
+    requireDead: true
 
 - type: entity
   abstract: true
