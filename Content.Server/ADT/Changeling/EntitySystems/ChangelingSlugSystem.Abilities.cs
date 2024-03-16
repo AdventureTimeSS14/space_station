@@ -90,6 +90,7 @@ public sealed partial class LingSlugSystem
         else
         {
             var holderComp = EnsureComp<LingEggsHolderComponent>(target);
+            var lingComp = EnsureComp<ChangelingComponent>(target);
 
             var selfMessage = Loc.GetString("changeling-eggs-self-success", ("target", Identity.Entity(target, EntityManager)));
             _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
@@ -98,6 +99,7 @@ public sealed partial class LingSlugSystem
             component.EggLing = target;
 
             holderComp.ChangelingHatchAction = component.HatchAction;
+            lingComp.AbsorbedDnaModifier = component.AbsorbedDnaModifier;
 
             _action.RemoveAction(uid, component.LayEggsActionEntity);   /// Яйца откладываются только один раз
 

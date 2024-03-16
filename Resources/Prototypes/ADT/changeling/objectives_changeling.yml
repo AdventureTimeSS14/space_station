@@ -12,6 +12,23 @@
 
 - type: entity
   abstract: true
+  parent: BaseChangelingObjective
+  id: DnaAbsorbObjective
+  name: Absorb 4 DNAs.
+  components:
+  - type: Objective
+    unique: false
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: absorb_dna
+  - type: ObjectiveBlacklistRequirement
+    blacklist:
+      components:
+      - SocialObjective
+  - type: AbsorbDnaCondition
+
+- type: entity
+  abstract: true
   parent: BaseTargetObjective
   id: BasePersonalityStealObjective
   components:
@@ -25,6 +42,7 @@
       components:
       - SocialObjective
   - type: StealPersonalityCondition
+    requireDead: true
 
 - type: entity
   noSpawn: true
@@ -60,26 +78,26 @@
   description: ling-steal-personality-desc
   components:
   - type: Objective
-    difficulty: 1.5
-    unique: false
-  - type: TargetObjective
-    title: objective-condition-steal-personality-title
-  - type: PickRandomPerson
-
-- type: entity
-  noSpawn: true
-  parent: [BaseChangelingObjective, BasePersonalityStealObjective]
-  id: StealRandomHeadPersonalityObjectiveLing
-  description: ling-steal-personality-desc
-  components:
-  - type: Objective
-    difficulty: 1.5
-    unique: false
+    difficulty: 2
+    unique: true
   - type: TargetObjective
     title: objective-condition-steal-head-personality-title
-  - type: PickRandomHead
-  - type: StealPersonalityCondition
-    requireDead: true
+  - type: PickRandomPerson
+
+#- type: entity
+#  noSpawn: true
+#  parent: [BaseChangelingObjective, BasePersonalityStealObjective]
+#  id: StealRandomHeadPersonalityObjectiveLing
+#  description: ling-steal-personality-desc
+#  components:
+#  - type: Objective
+#    difficulty: 1.5
+#    unique: false
+#  - type: TargetObjective
+#    title: objective-condition-steal-head-personality-title
+#  - type: PickRandomHead
+#  - type: StealPersonalityCondition
+#    requireDead: true
 
 - type: entity
   abstract: true

@@ -32,6 +32,9 @@ public sealed partial class LingSlugComponent : Component
     [DataField]
     public float LayedDamage = 70;
 
+    [DataField]
+    public int AbsorbedDnaModifier = 0;
+
     [DataField("spread")]
     public bool Spread = false;
 

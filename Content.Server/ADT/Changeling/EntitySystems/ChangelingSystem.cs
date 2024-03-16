@@ -199,7 +199,8 @@ public sealed partial class ChangelingSystem : EntitySystem
                 if (!TryComp<DamageableComponent>(ling.ShieldEntity.Value, out var damage))
                     return;
 
-                int shieldHealth = 50 * ling.AbsorbedDnaModifier;
+                int additionalShieldHealth = 50 * ling.AbsorbedDnaModifier;
+                int shieldHealth = 150 + additionalShieldHealth;
                 if (damage.TotalDamage >= shieldHealth)
                 {
                     ling.ArmShieldActive = false;
@@ -371,6 +372,7 @@ public sealed partial class ChangelingSystem : EntitySystem
         newLingComponent.ChameleonSkinActive = component.ChameleonSkinActive;
         newLingComponent.LingArmorActive = component.LingArmorActive;
         newLingComponent.CanRefresh = component.CanRefresh;
+        newLingComponent.AbsorbedDnaModifier = component.AbsorbedDnaModifier;
             RemComp(uid, component);
 
         if (TryComp(uid, out StoreComponent? storeComp))
@@ -632,6 +634,7 @@ public sealed partial class ChangelingSystem : EntitySystem
                 newLingComponent.LingArmorActive = component.LingArmorActive;
                 newLingComponent.CanRefresh = component.CanRefresh;
                 newLingComponent.LesserFormActive = !component.LesserFormActive;
+                newLingComponent.AbsorbedDnaModifier = component.AbsorbedDnaModifier;
                 RemComp(uid, component);
 
                 if (TryComp(uid, out StoreComponent? storeComp))
@@ -690,6 +693,7 @@ public sealed partial class ChangelingSystem : EntitySystem
                 newLingComponent.LingArmorActive = component.LingArmorActive;
                 newLingComponent.CanRefresh = component.CanRefresh;
                 newLingComponent.LesserFormActive = !component.LesserFormActive;
+                newLingComponent.AbsorbedDnaModifier = component.AbsorbedDnaModifier;
                 RemComp(uid, component);
 
                 if (TryComp(uid, out StoreComponent? storeComp))
@@ -729,6 +733,9 @@ public sealed partial class ChangelingSystem : EntitySystem
     {
         var slug = Spawn(LingSlugId, Transform(uid).Coordinates);
 
+        var slugComp = EnsureComp<LingSlugComponent>(slug);
+        slugComp.AbsorbedDnaModifier = component.AbsorbedDnaModifier;
+
         if (_mindSystem.TryGetMind(uid, out var mindId, out var mind))
             _mindSystem.TransferTo(mindId, slug, mind: mind);
         return true;
@@ -750,6 +757,7 @@ public sealed partial class ChangelingSystem : EntitySystem
         newLingComponent.LingArmorActive = component.LingArmorActive;
         newLingComponent.CanRefresh = component.CanRefresh;
         newLingComponent.LesserFormActive = !component.LesserFormActive;
+        newLingComponent.AbsorbedDnaModifier = component.AbsorbedDnaModifier;
 
 
         RemComp(uid, component);
