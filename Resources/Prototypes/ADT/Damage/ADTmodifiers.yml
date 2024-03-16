@@ -90,3 +90,8 @@
   id: Ursus # мишк
   coefficients:
     Blunt: 1.0
+
+- type: damageModifierSet
+  id: AshWalker # Груба кожа = умно ящериц
+  coefficients:
+    Blunt: 0.8

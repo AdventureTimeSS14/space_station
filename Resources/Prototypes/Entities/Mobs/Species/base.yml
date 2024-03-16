@@ -5,7 +5,7 @@
   - BaseMob
   - MobDamageable
   - MobCombat
-  id: BaseHumLavalandMob
+  id: BaseMobSpecies
   abstract: true
   components:
   - type: Sprite
@@ -232,9 +232,15 @@
     deathPenalty: 0.01 # However they really ought to be living and intact, otherwise they're worth 100x less.
   - type: Tag
     tags:
+    - CanPilot
     - FootstepSound
     - DoorBumpOpener
   # Frontier - languages mechanic
+  - type: LanguageSpeaker
+    speaks:
+    - GalacticCommon
+    understands:
+    - GalacticCommon
   - type: SizeAttributeWhitelist # Frontier
     tall: true
     tallscale: 1.1
@@ -253,6 +259,10 @@
   abstract: true
   components:
   - type: Flashable
+  - type: Barotrauma
+    damage:
+      types:
+        Blunt: 0.5 #per second, scales with pressure and other constants.
   - type: PassiveDamage # Slight passive regen. Assuming one damage type, comes out to about 4 damage a minute.
     allowedStates:
     - Alive
@@ -303,6 +313,18 @@
     normalBodyTemperature: 310.15
     thermalRegulationTemperatureThreshold: 25
   - type: Perishable
+  - type: Butcherable
+    butcheringType: Spike # TODO human.
+    spawned:
+      - id: FoodMeat
+        amount: 5
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 1.0
+    damageRecovery:
+      types:
+        Asphyxiation: -1.0
   - type: FireVisuals
     alternateState: Standing
 

@@ -7,6 +7,16 @@
   components:
   - type: HumanoidAppearance
     species: Reptilian
+  - type: Body
+    prototype: Human
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3
+    baseSprintSpeed : 5.5
+  - type: RandomMetadata
+    nameSegments:
+      - names_reptilian_male
+  - type: Loadout
+    prototypes: [ ADTAshWalkerEquipment ]
   - type: Hunger
     starvationDamage:
       types:
@@ -16,11 +26,15 @@
     needsHands: false
   - type: Thirst
   - type: Icon
-    sprite: Mobs/Species/Reptilian/parts.rsi
-    state: full
-  - type: Body
-    prototype: Reptilian
-    requiredLegs: 2
+    sprite: ADT/Mobs\Lavaland\ashwalker.rsi
+    state: ash
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ghost-role-information-ashwalker-name
+    description: ghost-role-information-ashwalker-description
+  - type: GhostTakeoverAvailable
   - type: Butcherable
     butcheringType: Spike
     spawned:
@@ -42,7 +56,7 @@
       Unsexed: UnisexReptilian
   - type: Damageable
     damageContainer: Biological
-    damageModifierSet: Scale
+    damageModifierSet: AshWalker
   - type: MeleeWeapon
     soundHit:
       path: /Audio/Weapons/pierce.ogg
@@ -75,13 +89,27 @@
     short: true
     shortscale: 0.9
 
-
 - type: entity
   save: false
-  name: AshWalker
+  name: Ash walker
+  description: Aboriginal, extremely aggressive.
   parent: BaseMobAshWalker
   id: MobAshWalker
 
+- type: entity
+  name: Ash walker spawner
+  id: MobAshWalkerSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - sprite: ADT/Markers/job.rsi
+          state: green
+        - sprite: ADT/Mobs\Lavaland\ashwalker.rsi
+          state: ash
+    - type: ConditionalSpawner
+      prototypes:
+        - MobAshWalker
 
 - type: entity
   parent: BaseSpeciesDummy
