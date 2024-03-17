@@ -144,6 +144,14 @@
   physicalDesc: reagent-physical-desc-translucent
   flavor: medicine
   color: "#d1d1d155"
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Piercing: -0.75
   metabolisms:
     Medicine:
       effects:
@@ -320,6 +328,12 @@
   physicalDesc: reagent-physical-desc-powdery
   flavor: medicine
   color: "#f5c6dc"
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:ModifyBleedAmount
+        amount: -1.5 #буквально как транексамовая, но надо плескать её.
   metabolisms:
     Medicine:
       effects:
@@ -362,8 +376,14 @@
           min: 40
         damage:
           types:
-            Asphyxiation: 2
-            Blunt: 1
+            Asphyxiation: 0.4
+            Blunt: 0.2
+      - !type:GenericStatusEffect
+        key: ADTApathy #добавляем апатию :thumbsup:
+        component: Apathy
+        type: Add
+        time: 2
+        refresh: false
       - !type:PopupMessage
         type: Local
         visualType: Small
@@ -472,6 +492,14 @@
         visualType: Small
         messages: [ "medicine-effect-pain" ] #пусть помимо иконки будет ещё и надпись.
         probability: 0.05
+      - !type:GenericStatusEffect
+        key: Stun
+        time: 1.5
+        type: Remove
+      - !type:GenericStatusEffect
+        key: KnockedDown
+        time: 1.5
+        type: Remove
       - !type:ChemVomit #а это уже передозы.
         conditions:
         - !type:ReagentThreshold

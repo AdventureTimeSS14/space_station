@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   save: false
   parent: [ BaseSimpleMob, MobCombat ]
   id: BaseMobArgocyte
@@ -51,6 +51,14 @@
   - type: Flashable
   - type: NameIdentifier
     group: GenericNumber
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    whitelistRequired: false
+    name: ghost-role-information-argocyte-name
+    description: ghost-role-information-argocyte-description
+  - type: GhostTakeoverAvailable
 
 - type: entity
   parent: BaseMobArgocyte
@@ -82,6 +90,8 @@
     damage:
       types:
         Blunt: 3
+  - type: JumpAct
+    jumpAction: CompActionJumpAbomination
 
 - type: entity
   parent: BaseMobArgocyte
@@ -120,6 +130,8 @@
     damage:
       types:
         Blunt: 3
+  - type: JumpAct
+    jumpAction: CompActionJumpAbomination
 
 - type: entity
   parent: BaseMobArgocyte
@@ -156,6 +168,8 @@
     damage:
       types:
         Slash: 3
+  - type: JumpAct
+    jumpAction: CompActionJump
 
 - type: entity
   parent: BaseMobArgocyte
@@ -179,6 +193,8 @@
       60: Dead
   - type: MovementSpeedModifier
     baseSprintSpeed : 5
+  - type: JumpAct
+    jumpAction: CompActionJump
 
 - type: entity
   parent: BaseMobArgocyte
@@ -202,6 +218,10 @@
   - type: MovementSpeedModifier
     baseSprintSpeed : 4
     baseWalkSpeed : 3.5
+  - type: JumpAct
+    jumpAction: CompActionJumpAbomination
+  - type: HealAct
+    healAction: CompActionHealAbomination
 
 - type: entity
   parent: BaseMobArgocyte
@@ -227,6 +247,9 @@
       types:
         Blunt: 2.5
         Slash: 7.5
+  - type: HealAct
+    healAction: CompActionHealAbomination
+
 
 - type: entity
   parent: BaseMobArgocyte
@@ -255,6 +278,8 @@
   - type: MovementSpeedModifier
     baseSprintSpeed : 5
     baseWalkSpeed: 4.5
+  - type: HealAct
+    healAction: CompActionHealAbomination
 
 - type: entity
   parent: BaseMobArgocyte
@@ -281,6 +306,8 @@
         Blunt: 5
         Slash: 10
         Structural: 5
+  - type: HealAct
+    healAction: CompActionHealAbomination
 
 - type: entity
   parent: BaseMobArgocyte
@@ -311,6 +338,8 @@
   - type: MovementSpeedModifier
     baseSprintSpeed : 6.5
     baseWalkSpeed: 5
+  - type: HealAct
+    healAction: CompActionHealAbomination
 
 - type: entity
   parent: BaseMobArgocyte
@@ -340,6 +369,9 @@
   - type: MovementSpeedModifier
     baseSprintSpeed : 3.5
     baseWalkSpeed: 3
+  - type: ProjectileAct
+    projAction: CompActionShootAbomination
+    prototype: BulletAcid
 
 - type: entity
   parent: BaseMobArgocyte
@@ -381,6 +413,9 @@
   - type: MovementSpeedModifier
     baseSprintSpeed : 3
     baseWalkSpeed: 3
+  - type: ProjectileAct
+    projAction: CompActionShootAbomination
+    prototype: BulletAcid
 
 - type: entity
   parent: BaseMobArgocyte
@@ -419,3 +454,6 @@
       types:
         Blunt: 75
         Structural: 50
+  - type: ProjectileAct
+    projAction: CompActionShootAbomination
+    prototype: BulletAcid

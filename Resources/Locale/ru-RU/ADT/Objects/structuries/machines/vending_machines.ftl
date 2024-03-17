@@ -13,3 +13,7 @@ ent-ADTVendingMachinePatholoDrobe = ПатологоШкаф
 
 ent-ADTVendingMachineParaDrobe = ПараШкаф
     .desc = Стильная одежда для экстренных медицинских вызовов.
+
+ent-ADTVendingMachineTSFArmoury = оружейная ТСФ
+    .desc = Связанный с удаленным хранилищем шкаф, используемый для выдачи оружия и экипировки бойцов ТСФ. 
+    .suffix = { "ТСФ" }

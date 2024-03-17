@@ -20,11 +20,23 @@ public sealed partial class MuteStingEvent : EntityTargetActionEvent
 {
 }
 
+public sealed partial class DrugStingEvent : EntityTargetActionEvent
+{
+}
+public sealed partial class LingEggActionEvent : EntityTargetActionEvent
+{
+}
 
 [Serializable, NetSerializable]
 public sealed partial class AbsorbDoAfterEvent : SimpleDoAfterEvent
 {
 }
+
+[Serializable, NetSerializable]
+public sealed partial class LingEggDoAfterEvent : SimpleDoAfterEvent
+{
+}
+
 public sealed partial class ChangelingEvolutionMenuActionEvent : InstantActionEvent
 {
 }
@@ -70,5 +82,29 @@ public sealed partial class OmniHealActionEvent : InstantActionEvent
 }
 
 public sealed partial class ChangelingRefreshActionEvent : InstantActionEvent
+{
+}
+
+public sealed partial class ChangelingMusclesActionEvent : InstantActionEvent
+{
+}
+
+public sealed partial class ChangelingLesserFormActionEvent : InstantActionEvent
+{
+}
+
+public sealed partial class ArmShieldActionEvent : InstantActionEvent
+{
+}
+
+public sealed partial class LastResortActionEvent : InstantActionEvent
+{
+}
+
+public sealed partial class LingEggSpawnActionEvent : InstantActionEvent
+{
+}
+
+public sealed partial class LingHatchActionEvent : InstantActionEvent
 {
 }

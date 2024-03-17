@@ -302,6 +302,8 @@
         - MobMask
         layer:
         - MobLayer
+  - type: JumpAct
+    jumpAction: CompActionJumpAbomination
 
 - type: entity
   name: Rouny
@@ -317,6 +319,8 @@
     spawned:
     - id: FoodMeatRouny
       amount: 3
+  - type: JumpAct
+    jumpAction: CompActionJumpAbomination
 
 - type: entity
   name: Spitter

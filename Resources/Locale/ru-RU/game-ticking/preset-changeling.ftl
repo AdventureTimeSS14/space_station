@@ -1,5 +1,6 @@
 ## CHANGELINGS
 
+adt-rotting-ling-eggs = [color=#ffd6d6]Внутри тела видны странные личинки...[/color]
 ling-round-end-name = генокрад
 objective-issuer-changeling = [color=red]Разум улья[/color]
 changelings-title = Генокрады
@@ -45,20 +46,32 @@ changeling-dna-alreadyabsorbed = ДНК {CAPITALIZE(THE($target))} уже соб
 changeling-dna-nodna = {CAPITALIZE(THE($target))} не имеет ДНК!
 changeling-dna-switchdna = Переключился на ДНК {$target}.
 changeling-transform-activate = Вы превратились в {$target}.
-changeling-transform-fail = Вы не можете превратиться в {$target} сейчас!
+changeling-transform-fail-already = Вы уже превратились в {$target}!
+changeling-transform-fail-mutation = Ваше тело слишком искажено для превращения!
 changeling-sting-fail-self = Ужалить {THE($target)} не вышло!
 changeling-sting-fail-target = Вы чувствуёте лёгкое покалывание.
 changeling-dna-sting = Вы забираете образец ДНК {THE($target)}.
 changeling-dna-sting-fail-nodna = {CAPITALIZE(THE($target))} не имеет ДНК!
 changeling-dna-sting-fail-alreadydna = У вас уже есть ДНК {THE($target)}!
-
 changeling-stasis-death-self-success = Ваше тело обмякает и падает замертво!
-changeling-stasis-death-self-revive = Вы восстаёте из мёртвых! Буквально.
-
+changeling-stasis-death-self-revive = Вы восстаёте из мёртвых!
 changeling-refresh-not-ready = Сначала поглотите существо.
-changeling-blind-sting = Вы успешно ослепили {CAPITALIZE(THE($target))}!
 changeling-adrenaline-self-success = Боль начинает уходить.
 changeling-refresh-self-success = Успешно очищена цепочка ДНК.
 changeling-omnizine-self-success = Ваша плоть начинает восстанавливаться.
-changeling-mute-sting = Вы успешно заглушили {CAPITALIZE(THE($target))}!
+changeling-success-sting = Вы успешно ужалили {CAPITALIZE(THE($target))}!
 changeling-dna-sting-fail-full = Вы не сможете собрать ещё одну цепочку ДНК!
+changeling-muscles = Ваши мышцы быстро меняются!
+changeling-lesser-form-activate-monkey = Вы превратились в обезьяну!
+changeling-transform-fail-lesser-form = Вы не можете использовать данную способность в этой форме!
+changeling-armshield-fail = У вас нет свободной руки!
+changeling-armshield-success-others = Вокруг руки {THE($user)} образуется массивный щит!
+changeling-armshield-success-self = Ваша рука изгибается и мутирует, превращая ее в огромный массивный щит.
+changeling-armshield-retract-others = Щит {CAPITALIZE(THE($target))} впитывается обратно в руку!
+changeling-armshield-retract-self = Вы впитываете щит обратно в свою руку.
+changeling-eggs-self-start = Вы начинаете откладывать личинки в {CAPITALIZE(THE($target))}.
+changeling-eggs-self-success = Вы успешно оставили кладку в {CAPITALIZE(THE($target))}.
+changeling-eggs-interrupted = Кладка была прервана!
+changeling-egg-others = Личинки в теле {THE($user)} начинают активно шевелиться и разрастаться!
+changeling-egg-self = Личинки прорастают, готовясь вырваться наружу.
+changeling-eggs-inform = Теперь вы генокрад. Вылупляйтесь.

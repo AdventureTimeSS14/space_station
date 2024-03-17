@@ -28,3 +28,22 @@
       layers:
       - state: crypt_silver
       - state: nano_label
+
+- type: entity
+  parent: EncryptionKey
+  id: ADTEncryptionKeyTSF
+  name: Ключ шифрования ТСФ
+  description: Ключ шифрования войск ТСФ с доступом к их стандартным частотам.
+  suffix: TSF
+  components:
+    - type: EncryptionKey
+      channels:
+      - ADTTransSolar19482Channel
+      - ADTTransSolar19487Channel
+      - ADTTransSolar19489Channel
+      - Common
+      defaultChannel: Common
+    - type: Sprite
+      layers:
+      - state: crypt_silver
+      - state: nano_label

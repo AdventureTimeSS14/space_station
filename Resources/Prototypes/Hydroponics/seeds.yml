@@ -764,6 +764,8 @@
   packetPrototype: CannabisSeeds
   productPrototypes:
     - LeavesCannabis
+  mutationPrototypes:
+    - ADTCannabisWhite
   harvestRepeat: Repeat
   lifespan: 75
   maturation: 8
@@ -933,6 +935,8 @@
   packetPrototype: PoppySeeds
   productPrototypes:
     - FoodPoppy
+  mutationPrototypes:
+    - ADTPapaverSomniferum
   lifespan: 25
   maturation: 10
   production: 3

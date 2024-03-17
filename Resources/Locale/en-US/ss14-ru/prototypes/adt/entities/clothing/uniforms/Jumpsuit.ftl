@@ -8,5 +8,3 @@ ent-ADTClothingUniformBrownWeddingSuit = Brown Wedding suit
     .desc = Made in USSP
 ent-ADTClothingUniformPriestPrimalSuit = Priest's primal suit
     .desc = Primal suit for primal rituals
-ent-ADTClothingUniformCyberSun = костюм Киберсан
-    .desc = Костюм Киберсан, стильно и практично !
