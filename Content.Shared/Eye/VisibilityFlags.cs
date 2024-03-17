@@ -9,5 +9,8 @@ namespace Content.Shared.Eye
         None   = 0,
         Normal = 1 << 0,
         Ghost  = 1 << 1,
+        Narcotic = 1 << 2,
+        Schizo = 1 << 3,
+        LingToxin = 1 << 4,
     }
 }

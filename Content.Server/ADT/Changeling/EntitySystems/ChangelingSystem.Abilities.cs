@@ -21,14 +21,8 @@ using Content.Shared.FixedPoint;
 using Content.Server.Store.Components;
 using Content.Shared.Chemistry.Components;
 using Content.Server.Fluids.EntitySystems;
-using Content.Shared.Tag;
 using Content.Shared.Mobs;
-using Content.Shared.Mobs.Components;
-using Content.Shared.Mobs.Systems;
-using Content.Shared.Eye.Blinding.Components;
-using Content.Shared.Eye.Blinding.Systems;
 using Content.Server.Destructible;
-using Content.Shared.Polymorph;
 using Content.Server.Ghost.Components;
 
 namespace Content.Server.Changeling.EntitySystems;
@@ -68,7 +62,6 @@ public sealed partial class ChangelingSystem
         SubscribeLocalEvent<ChangelingComponent, ChangelingLesserFormActionEvent>(OnLesserForm);
         SubscribeLocalEvent<ChangelingComponent, ArmShieldActionEvent>(OnArmShieldAction);
         SubscribeLocalEvent<ChangelingComponent, LastResortActionEvent>(OnLastResort);
-        SubscribeLocalEvent<ChangelingComponent, LingHatchActionEvent>(OnHatch);
     }
 
 
@@ -210,6 +203,7 @@ public sealed partial class ChangelingSystem
                 var selfMessage = Loc.GetString("changeling-dna-success", ("target", Identity.Entity(target, EntityManager)));
                 _popup.PopupEntity(selfMessage, uid, uid, PopupType.Medium);
                 component.CanRefresh = true;
+                component.AbsorbedDnaModifier = component.AbsorbedDnaModifier + 1;
             }
         }
 
@@ -304,7 +298,7 @@ public sealed partial class ChangelingSystem
 
         if (!component.ArmBladeActive)
         {
-            if (SpawnArmBlade(uid))
+            if (SpawnArmBlade(uid, component))
             {
                 component.ArmBladeActive = true;
                 _audioSystem.PlayPvs(component.SoundFlesh, uid);
@@ -322,23 +316,42 @@ public sealed partial class ChangelingSystem
         }
         else
         {
-            if (handContainer.ContainedEntity != null)
+            if (component.BladeEntity != null)
             {
-                if (TryComp<MetaDataComponent>(handContainer.ContainedEntity.Value, out var targetMeta))
+
+                component.ArmShieldActive = false;
+                QueueDel(component.BladeEntity.Value);
+                _audioSystem.PlayPvs(component.SoundFlesh, uid);
+
+                var othersMessage = Loc.GetString("changeling-armshield-retract-others", ("user", Identity.Entity(uid, EntityManager)));
+                _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
+
+                var selfMessage = Loc.GetString("changeling-armshield-retract-self");
+                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+
+                component.BladeEntity = new EntityUid?();
+            }
+            else
+            {
+
+                if (handContainer.ContainedEntity != null)
                 {
-                    if (TryPrototype(handContainer.ContainedEntity.Value, out var prototype, targetMeta))
+                    if (TryComp<MetaDataComponent>(handContainer.ContainedEntity.Value, out var targetMeta))
                     {
-                        if (prototype.ID == ArmBladeId)
+                        if (TryPrototype(handContainer.ContainedEntity.Value, out var prototype, targetMeta))
                         {
-                            component.ArmBladeActive = false;
-                            QueueDel(handContainer.ContainedEntity.Value);
-                            _audioSystem.PlayPvs(component.SoundFlesh, uid);
+                            if (prototype.ID == ArmBladeId)
+                            {
+                                component.ArmBladeActive = false;
+                                QueueDel(handContainer.ContainedEntity.Value);
+                                _audioSystem.PlayPvs(component.SoundFlesh, uid);
 
-                            var othersMessage = Loc.GetString("changeling-armblade-retract-others", ("user", Identity.Entity(uid, EntityManager)));
-                            _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
+                                var othersMessage = Loc.GetString("changeling-armblade-retract-others", ("user", Identity.Entity(uid, EntityManager)));
+                                _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
 
-                            var selfMessage = Loc.GetString("changeling-armblade-retract-self");
-                            _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+                                var selfMessage = Loc.GetString("changeling-armblade-retract-self");
+                                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+                            }
                         }
                     }
                 }
@@ -376,7 +389,7 @@ public sealed partial class ChangelingSystem
 
         if (!component.ArmShieldActive)
         {
-            if (SpawnArmShield(uid))
+            if (SpawnArmShield(uid, component))
             {
                 component.ArmShieldActive = true;
                 _audioSystem.PlayPvs(component.SoundFlesh, uid);
@@ -394,23 +407,41 @@ public sealed partial class ChangelingSystem
         }
         else
         {
-            if (handContainer.ContainedEntity != null)
+            if (component.ShieldEntity != null)
             {
-                if (TryComp<MetaDataComponent>(handContainer.ContainedEntity.Value, out var targetMeta))
+
+                component.ArmShieldActive = false;
+                QueueDel(component.ShieldEntity.Value);
+                _audioSystem.PlayPvs(component.SoundFlesh, uid);
+
+                var othersMessage = Loc.GetString("changeling-armshield-retract-others", ("user", Identity.Entity(uid, EntityManager)));
+                _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
+
+                var selfMessage = Loc.GetString("changeling-armshield-retract-self");
+                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+
+                component.ShieldEntity = new EntityUid?();
+            }
+            else
+            {
+                if (handContainer.ContainedEntity != null)
                 {
-                    if (TryPrototype(handContainer.ContainedEntity.Value, out var prototype, targetMeta))
+                    if (TryComp<MetaDataComponent>(handContainer.ContainedEntity.Value, out var targetMeta))
                     {
-                        if (prototype.ID == ArmShieldId)
+                        if (TryPrototype(handContainer.ContainedEntity.Value, out var prototype, targetMeta))
                         {
-                            component.ArmShieldActive = false;
-                            QueueDel(handContainer.ContainedEntity.Value);
-                            _audioSystem.PlayPvs(component.SoundFlesh, uid);
+                            if (prototype.ID == ArmShieldId)
+                            {
+                                component.ArmShieldActive = false;
+                                QueueDel(handContainer.ContainedEntity.Value);
+                                _audioSystem.PlayPvs(component.SoundFlesh, uid);
 
-                            var othersMessage = Loc.GetString("changeling-armshield-retract-others", ("user", Identity.Entity(uid, EntityManager)));
-                            _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
+                                var othersMessage = Loc.GetString("changeling-armshield-retract-others", ("user", Identity.Entity(uid, EntityManager)));
+                                _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
 
-                            var selfMessage = Loc.GetString("changeling-armshield-retract-self");
-                            _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+                                var selfMessage = Loc.GetString("changeling-armshield-retract-self");
+                                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+                            }
                         }
                     }
                 }
@@ -431,13 +462,21 @@ public sealed partial class ChangelingSystem
         _inventorySystem.TryEquip(uid, armor, OuterClothingId, true, true, false, inventory);
     }
 
-    public bool SpawnArmBlade(EntityUid uid)
+    public bool SpawnArmBlade(EntityUid uid, ChangelingComponent component)
     {
         var armblade = Spawn(ArmBladeId, Transform(uid).Coordinates);
         EnsureComp<UnremoveableComponent>(armblade); // armblade is apart of your body.. cant remove it..
-
-        if (_handsSystem.TryPickupAnyHand(uid, armblade))
+        RemComp<DestructibleComponent>(armblade);
+        if (_handsSystem.TryPickup(uid, armblade))
         {
+            if (!TryComp(uid, out HandsComponent? handsComponent))
+                return false;
+            if (handsComponent.ActiveHand == null)
+                return false;
+            var handContainer = handsComponent.ActiveHand.Container;
+            if (handContainer == null || handContainer.ContainedEntity == null)
+                return false;
+            component.BladeEntity = handContainer.ContainedEntity.Value;
             return true;
         }
         else
@@ -447,14 +486,22 @@ public sealed partial class ChangelingSystem
         }
     }
 
-    public bool SpawnArmShield(EntityUid uid)
+    public bool SpawnArmShield(EntityUid uid, ChangelingComponent component)
     {
         var armshield = Spawn(ArmShieldId, Transform(uid).Coordinates);
         EnsureComp<UnremoveableComponent>(armshield); // armblade is apart of your body.. cant remove it..
-        RemComp<DestructibleComponent>(armshield);
 
-        if (_handsSystem.TryPickupAnyHand(uid, armshield))
+
+        if (_handsSystem.TryPickup(uid, armshield))
         {
+            if (!TryComp(uid, out HandsComponent? handsComponent))
+                return false;
+            if (handsComponent.ActiveHand == null)
+                return false;
+            var handContainer = handsComponent.ActiveHand.Container;
+            if (handContainer == null || handContainer.ContainedEntity == null)
+                return false;
+            component.ShieldEntity = handContainer.ContainedEntity.Value;
             return true;
         }
         else
@@ -958,7 +1005,7 @@ public sealed partial class ChangelingSystem
         }
 
     }
-
+    public ProtoId<DamageGroupPrototype> GibDamageGroup = "Brute";
     private void OnLastResort(EntityUid uid, ChangelingComponent component, LastResortActionEvent args)
     {
         if (args.Handled)
@@ -969,50 +1016,11 @@ public sealed partial class ChangelingSystem
 
         if (SpawnLingSlug(uid, component))
         {
-            var damage_brute = new DamageSpecifier(_proto.Index(BruteDamageGroup), component.GibDamage);
+            var damage_brute = new DamageSpecifier(_proto.Index(GibDamageGroup), component.GibDamage);
             _damageableSystem.TryChangeDamage(uid, damage_brute);
 
             args.Handled = true;
         }
     }
 
-    private void OnHatch(EntityUid uid, ChangelingComponent component, LingHatchActionEvent args)       /// TODO: Сделать из акшона автоматическую систему!
-    {
-        if (args.Handled)
-            return;
-
-        if (!component.EggedBody)
-            return;
-        if (!TryUseAbility(uid, component, component.ChemicalsCostFree))
-            return;
-
-        if (!component.EggsReady)
-        {
-            ///_mobState.ChangeMobState(uid, MobState.Critical);
-
-            var othersMessage = Loc.GetString("changeling-egg-others", ("user", Identity.Entity(uid, EntityManager)));
-            _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
-
-            var selfMessage = Loc.GetString("changeling-egg-self");
-            _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
-
-            component.EggsReady = !component.EggsReady;
-
-            args.Handled = true;
-        }
-
-        else
-        {
-            RemComp<LingEggsHolderComponent>(uid);
-
-            if (SpawnLingMonkey(uid, component))
-            {
-
-                var damage_brute = new DamageSpecifier(_proto.Index(BruteDamageGroup), component.GibDamage);
-                _damageableSystem.TryChangeDamage(uid, damage_brute);
-
-                args.Handled = true;
-            }
-        }
-    }
 }

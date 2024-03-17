@@ -32,10 +32,9 @@ using Content.Shared.Damage.Systems;
 using Content.Shared.Damage;
 using Content.Shared.Gibbing.Systems;
 using Content.Shared.Mind;
-using Content.Shared.Sirena.NightVision.Components;
+using Robust.Shared.Player;
 using Content.Shared.CombatMode;
-using Content.Server.UserInterface;
-using Content.Server.SlimeHair;
+using Content.Shared.Weapons.Melee;
 
 namespace Content.Server.Changeling.EntitySystems;
 
@@ -196,6 +195,28 @@ public sealed partial class ChangelingSystem : EntitySystem
             {
                 _stamina.TakeStaminaDamage(uid, ling.MusclesStaminaDamage, null, null, null, false);
             }
+            if (ling.ShieldEntity != null)
+            {
+                if (!TryComp<DamageableComponent>(ling.ShieldEntity.Value, out var damage))
+                    return;
+
+                var additionalShieldHealth = 50 * ling.AbsorbedDnaModifier;
+                var shieldHealth = 150 + additionalShieldHealth;
+                if (damage.TotalDamage >= shieldHealth)
+                {
+                    ling.ArmShieldActive = false;
+                    QueueDel(ling.ShieldEntity.Value);
+                    ling.ShieldEntity = new EntityUid?();
+
+                    _audioSystem.PlayPvs(ling.SoundFlesh, uid);
+
+                    var othersMessage = Loc.GetString("changeling-armshield-broke-others", ("user", Identity.Entity(uid, EntityManager)));
+                    _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
+
+                    var selfMessage = Loc.GetString("changeling-armshield-broke-self");
+                    _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+                }
+            }
         }
     }
 
@@ -352,6 +373,7 @@ public sealed partial class ChangelingSystem : EntitySystem
         newLingComponent.ChameleonSkinActive = component.ChameleonSkinActive;
         newLingComponent.LingArmorActive = component.LingArmorActive;
         newLingComponent.CanRefresh = component.CanRefresh;
+        newLingComponent.AbsorbedDnaModifier = component.AbsorbedDnaModifier;
             RemComp(uid, component);
 
         if (TryComp(uid, out StoreComponent? storeComp))
@@ -361,30 +383,11 @@ public sealed partial class ChangelingSystem : EntitySystem
             EntityManager.AddComponent(transformedUid.Value, copiedStoreComponent);
         }
 
-            if (TryComp(uid, out StealthComponent? stealthComp)) // copy over stealth status
-            {
-                if (TryComp(uid, out StealthOnMoveComponent? stealthOnMoveComp))
-                {
-                    var copiedStealthComponent = (Component) _serialization.CreateCopy(stealthComp, notNullableOverride: true);
-                    EntityManager.AddComponent(transformedUid.Value, copiedStealthComponent);
-                    RemComp(uid, stealthComp);
-
-                    var copiedStealthOnMoveComponent = (Component) _serialization.CreateCopy(stealthOnMoveComp, notNullableOverride: true);
-                    EntityManager.AddComponent(transformedUid.Value, copiedStealthOnMoveComponent);
-                    RemComp(uid, stealthOnMoveComp);
-                }
-            }
-
             _actionContainer.TransferAllActionsWithNewAttached(uid, transformedUid.Value, transformedUid.Value);
 
             if (!TryComp(transformedUid.Value, out InventoryComponent? inventory))
                 return;
 
-            if (newLingComponent.LingArmorActive)
-                SpawnLingArmor(transformedUid.Value, inventory);
-
-            if (newLingComponent.ArmBladeActive)
-                SpawnArmBlade(transformedUid.Value);
         }
     }
     public bool BlindSting(EntityUid uid, EntityUid target, ChangelingComponent component)  /// Ослепление
@@ -632,6 +635,7 @@ public sealed partial class ChangelingSystem : EntitySystem
                 newLingComponent.LingArmorActive = component.LingArmorActive;
                 newLingComponent.CanRefresh = component.CanRefresh;
                 newLingComponent.LesserFormActive = !component.LesserFormActive;
+                newLingComponent.AbsorbedDnaModifier = component.AbsorbedDnaModifier;
                 RemComp(uid, component);
 
                 if (TryComp(uid, out StoreComponent? storeComp))
@@ -690,6 +694,7 @@ public sealed partial class ChangelingSystem : EntitySystem
                 newLingComponent.LingArmorActive = component.LingArmorActive;
                 newLingComponent.CanRefresh = component.CanRefresh;
                 newLingComponent.LesserFormActive = !component.LesserFormActive;
+                newLingComponent.AbsorbedDnaModifier = component.AbsorbedDnaModifier;
                 RemComp(uid, component);
 
                 if (TryComp(uid, out StoreComponent? storeComp))
@@ -729,6 +734,9 @@ public sealed partial class ChangelingSystem : EntitySystem
     {
         var slug = Spawn(LingSlugId, Transform(uid).Coordinates);
 
+        var slugComp = EnsureComp<LingSlugComponent>(slug);
+        slugComp.AbsorbedDnaModifier = component.AbsorbedDnaModifier;
+
         if (_mindSystem.TryGetMind(uid, out var mindId, out var mind))
             _mindSystem.TransferTo(mindId, slug, mind: mind);
         return true;
@@ -750,6 +758,7 @@ public sealed partial class ChangelingSystem : EntitySystem
         newLingComponent.LingArmorActive = component.LingArmorActive;
         newLingComponent.CanRefresh = component.CanRefresh;
         newLingComponent.LesserFormActive = !component.LesserFormActive;
+        newLingComponent.AbsorbedDnaModifier = component.AbsorbedDnaModifier;
 
 
         RemComp(uid, component);
@@ -769,7 +778,8 @@ public sealed partial class ChangelingSystem : EntitySystem
 
         if (_mindSystem.TryGetMind(uid, out var mindId, out var mind))
             _mindSystem.TransferTo(mindId, slug, mind: mind);
-
+        if (mind != null)
+            mind.PreventGhosting = false;
         return true;
     }
 }

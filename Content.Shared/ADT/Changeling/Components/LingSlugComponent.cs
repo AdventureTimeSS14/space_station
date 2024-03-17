@@ -32,9 +32,18 @@ public sealed partial class LingSlugComponent : Component
     [DataField]
     public float LayedDamage = 70;
 
+    [DataField]
+    public float AbsorbedDnaModifier = 0f;
+
     [DataField("spread")]
     public bool Spread = false;
 
     [DataField("eggsAction")]
     public EntProtoId HatchAction = "ActionLingHatch";
+
+    [DataField]
+    public bool EggsReady = false;
+
+    [DataField]
+    public float GibDamage = 5000f;
 }

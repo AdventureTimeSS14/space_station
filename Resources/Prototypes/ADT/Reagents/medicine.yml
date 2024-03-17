@@ -448,6 +448,11 @@
         type: Remove
         time: 20
       - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Remove
+        time: 7
+      - !type:GenericStatusEffect
         key: Drunk
         time: 5.0 #Некоторые наркотические приколы включают в себя компонент опьянения. В любом случае он ниже, чем у этилредоксразина в 2 раза.
         type: Remove

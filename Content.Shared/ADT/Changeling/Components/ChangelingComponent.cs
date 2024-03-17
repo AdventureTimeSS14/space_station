@@ -246,6 +246,9 @@ public sealed partial class ChangelingComponent : Component
     [DataField]
     public float AbsorbedMobPointsAmount = 2.0f;
 
+    [DataField]
+    public float AbsorbedDnaModifier = 0f;
+
     #endregion
 
     #region Regenerate Ability
@@ -289,6 +292,10 @@ public sealed partial class ChangelingComponent : Component
     /// </summary>
     [DataField]
     public bool ArmBladeActive = false;
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? BladeEntity;
+
     #endregion
 
     #region Chitinous Armor Ability
@@ -386,7 +393,7 @@ public sealed partial class ChangelingComponent : Component
     public string ChemicalMute = "MuteToxin";
 
     [DataField("chemicalDrug", customTypeSerializer: typeof(PrototypeIdSerializer<ReagentPrototype>))]
-    public string ChemicalSpaceDrugs = "SpaceDrugs";
+    public string ChemicalSpaceDrugs = "LingDrugs";
 
     #endregion
 
@@ -420,6 +427,10 @@ public sealed partial class ChangelingComponent : Component
     /// </summary>
     [DataField]
     public bool ArmShieldActive = false;
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? ShieldEntity;
+
     #endregion
 
     [DataField]
