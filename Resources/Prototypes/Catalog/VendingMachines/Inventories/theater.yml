@@ -3,22 +3,22 @@
   startingInventory:
     ADTBoxValentineWhite: 5
     ADTBoxValentineRed: 5
-    ClothingHeadHatJester: 1
-    ClothingUniformJumpsuitJester: 1
-    ClothingHeadHatJesterAlt: 1
-    ClothingUniformJumpsuitJesterAlt: 1
+    ClothingHeadHatJester: 2
+    ClothingUniformJumpsuitJester: 2
+    ClothingHeadHatJesterAlt: 2
+    ClothingUniformJumpsuitJesterAlt: 2
     ClothingShoesJester: 2
-    ClothingOuterWinterClown: 1
-    ClothingOuterWinterMime: 1
-    ClothingOuterWinterMusician: 1
+    ClothingOuterWinterClown: 2
+    ClothingOuterWinterMime: 2
+    ClothingOuterWinterMusician: 2
     ClothingMaskJoy: 2
-    ClothingHeadHatCardborg: 2
-    ClothingOuterCardborg: 2
-    ClothingHeadHatSombrero: 2
-    ClothingOuterPonchoClassic: 2
+    ClothingHeadHatCardborg: 3
+    ClothingOuterCardborg: 3
+    ClothingHeadHatSombrero: 3
+    ClothingOuterPonchoClassic: 3
     ClothingHeadHatPwig: 2
     ClothingOuterRobesJudge: 2
-    ClothingOuterPoncho: 2
+    ClothingOuterPoncho: 4
     ClothingHeadHatSantahat: 2
     ClothingOuterSanta: 2
     ClothingHeadHatSkub: 2
@@ -34,26 +34,26 @@
     ClothingOuterRedRacoon: 2
     # ClothingHeadPaperSack: 2
     # ClothingHeadPaperSackSmile: 2
-    ClothingEyesBlindfold: 1
-    ClothingHeadRastaHat: 2
-    ClothingUniformJumpsuitDameDane: 2
-    ClothingShoesDameDane: 2
-    ClothingOuterDameDane: 2
-    ClothingOuterClownPriest: 1
-    ClothingMaskSadMime: 1
-    ClothingMaskScaredMime: 1
-    ClothingUniformJumpsuitKimono: 1
-    ClothingHeadHatCasa: 1
-    ClothingHeadHatHairflower: 1
-    ClothingHeadHatGladiator: 1
-    ClothingUniformJumpsuitGladiator: 1
-    ClothingHeadHatCowboyBrown: 1
-    ClothingHeadHatCowboyBlack: 1
-    ClothingHeadHatCowboyWhite: 1
-    ClothingHeadHatCowboyGrey: 1
-    ClothingShoesBootsCowboyBrown: 1
-    ClothingShoesBootsCowboyBlack: 1
-    ClothingShoesBootsCowboyWhite: 1
+    ClothingEyesBlindfold: 3
+    ClothingHeadRastaHat: 4
+    ClothingUniformJumpsuitDameDane: 3
+    ClothingShoesDameDane: 3
+    ClothingOuterDameDane: 3
+    ClothingOuterClownPriest: 2
+    ClothingMaskSadMime: 3
+    ClothingMaskScaredMime: 3
+    ClothingUniformJumpsuitKimono: 3
+    ClothingHeadHatCasa: 3
+    ClothingHeadHatHairflower: 5
+    ClothingHeadHatGladiator: 4
+    ClothingUniformJumpsuitGladiator: 4
+    ClothingHeadHatCowboyBrown: 2
+    ClothingHeadHatCowboyBlack: 2
+    ClothingHeadHatCowboyWhite: 2
+    ClothingHeadHatCowboyGrey: 2
+    ClothingShoesBootsCowboyBrown: 2
+    ClothingShoesBootsCowboyBlack: 2
+    ClothingShoesBootsCowboyWhite: 2
   emaggedInventory:
     ClothingShoesBling: 1
     ClothingShoesBootsCowboyFancy: 1
