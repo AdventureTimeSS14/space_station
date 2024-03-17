@@ -4,7 +4,7 @@
   id: BaseChangelingObjective
   components:
   - type: Objective
-    issuer: changeling
+    issuer: changeling-issuer
   - type: RoleRequirement
     roles:
       components:
@@ -23,6 +23,8 @@
       sprite: Interface/Actions/actions_ling.rsi
       state: absorb_dna
   - type: AbsorbDnaCondition
+    objectiveText: absorb-dna-name
+    descriptionText: absorb-dna-desc
 
 - type: entity
   abstract: true

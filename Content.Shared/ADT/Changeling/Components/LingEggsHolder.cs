@@ -1,4 +1,5 @@
 using Robust.Shared.Prototypes;
+using Robust.Shared.Containers;
 
 namespace Content.Shared.Changeling.Components;
 
@@ -14,4 +15,6 @@ public sealed partial class LingEggsHolderComponent : Component
 
     [DataField]
     public float DamageAmount = 500f;    /// Damage gain to die
+
+    public Container Stomach = default!;
 }

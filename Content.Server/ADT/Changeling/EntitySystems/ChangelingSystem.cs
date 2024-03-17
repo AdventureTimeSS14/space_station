@@ -34,6 +34,7 @@ using Content.Shared.Gibbing.Systems;
 using Content.Shared.Mind;
 using Robust.Shared.Player;
 using Content.Shared.CombatMode;
+using Content.Shared.Weapons.Melee;
 
 namespace Content.Server.Changeling.EntitySystems;
 
@@ -777,7 +778,8 @@ public sealed partial class ChangelingSystem : EntitySystem
 
         if (_mindSystem.TryGetMind(uid, out var mindId, out var mind))
             _mindSystem.TransferTo(mindId, slug, mind: mind);
-
+        if (mind != null)
+            mind.PreventGhosting = false;
         return true;
     }
 }

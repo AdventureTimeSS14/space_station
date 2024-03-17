@@ -62,7 +62,6 @@ public sealed partial class ChangelingSystem
         SubscribeLocalEvent<ChangelingComponent, ChangelingLesserFormActionEvent>(OnLesserForm);
         SubscribeLocalEvent<ChangelingComponent, ArmShieldActionEvent>(OnArmShieldAction);
         SubscribeLocalEvent<ChangelingComponent, LastResortActionEvent>(OnLastResort);
-        SubscribeLocalEvent<ChangelingComponent, LingHatchActionEvent>(OnHatch);
     }
 
 
@@ -1006,7 +1005,7 @@ public sealed partial class ChangelingSystem
         }
 
     }
-
+    public ProtoId<DamageGroupPrototype> GibDamageGroup = "Brute";
     private void OnLastResort(EntityUid uid, ChangelingComponent component, LastResortActionEvent args)
     {
         if (args.Handled)
@@ -1017,50 +1016,11 @@ public sealed partial class ChangelingSystem
 
         if (SpawnLingSlug(uid, component))
         {
-            var damage_brute = new DamageSpecifier(_proto.Index(BruteDamageGroup), component.GibDamage);
+            var damage_brute = new DamageSpecifier(_proto.Index(GibDamageGroup), component.GibDamage);
             _damageableSystem.TryChangeDamage(uid, damage_brute);
 
             args.Handled = true;
         }
     }
 
-    private void OnHatch(EntityUid uid, ChangelingComponent component, LingHatchActionEvent args)       /// TODO: Сделать из акшона автоматическую систему!
-    {
-        if (args.Handled)
-            return;
-
-        if (!component.EggedBody)
-            return;
-        if (!TryUseAbility(uid, component, component.ChemicalsCostFree))
-            return;
-
-        if (!component.EggsReady)
-        {
-            ///_mobState.ChangeMobState(uid, MobState.Critical);
-
-            var othersMessage = Loc.GetString("changeling-egg-others", ("user", Identity.Entity(uid, EntityManager)));
-            _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
-
-            var selfMessage = Loc.GetString("changeling-egg-self");
-            _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
-
-            component.EggsReady = !component.EggsReady;
-
-            args.Handled = true;
-        }
-
-        else
-        {
-            RemComp<LingEggsHolderComponent>(uid);
-
-            if (SpawnLingMonkey(uid, component))
-            {
-
-                var damage_brute = new DamageSpecifier(_proto.Index(BruteDamageGroup), component.GibDamage);
-                _damageableSystem.TryChangeDamage(uid, damage_brute);
-
-                args.Handled = true;
-            }
-        }
-    }
 }

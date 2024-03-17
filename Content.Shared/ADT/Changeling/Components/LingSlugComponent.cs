@@ -40,4 +40,10 @@ public sealed partial class LingSlugComponent : Component
 
     [DataField("eggsAction")]
     public EntProtoId HatchAction = "ActionLingHatch";
+
+    [DataField]
+    public bool EggsReady = false;
+
+    [DataField]
+    public float GibDamage = 5000f;
 }
