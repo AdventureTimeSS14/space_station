@@ -21,16 +21,21 @@
   - type: SolutionContainerVisuals
     maxFillLevels: 4
     fillBaseName: icon-
+  - type: Item
+    size: Tiny
 
 - type: entity
   parent: DrinkGlassBase
   id: ADTDrinkTeapot
   name: teapot 
   description: An elegant teapot. It simply oozes class.
+  suffix: Пустой
   components:
   - type: SolutionContainerManager
     solutions:
       drink:
         maxVol: 100
+  - type: Item
+    size: Normal
   - type: Sprite
     sprite: Objects/Consumable/Drinks/teapot.rsi

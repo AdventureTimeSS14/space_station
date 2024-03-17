@@ -40,7 +40,7 @@
       collection: BoxingHit
   - type: StaminaDamageOnHit
     damage: 12
-  - type: Wieldable
+  #- type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
       types:
