@@ -123,4 +123,4 @@ ent-ShuttleGunKineticCircuitboard = плата станка ПТК-800 "Дема
     .desc = Машинная печатная плата для "Дематериализатора материи" ПТК-800
 ent-ShuttleGunDusterCircuitboard = машинная плата EXP-2100g "Пыльник"
     .desc = Машинная печатная плата для EXP-2100g "Пыльник"
-ent-AnomalyVesselExperimentalCircuitboard =  аномальный сосуд (машинная плата)
+ent-AnomalyVesselExperimentalCircuitboard = экспериментальный аномальный сосуд (машинная плата)
