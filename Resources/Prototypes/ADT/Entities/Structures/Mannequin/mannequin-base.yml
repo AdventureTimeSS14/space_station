@@ -7,25 +7,16 @@
     mode: SnapgridCenter
   components:
   - type: Clickable
-  
   - type: InteractionOutline
-  
-  - type: Physics
+  - type: Physics # на эту хуйню ругаеться билдер тест
     bodyType: Dynamic
-
   - type: Inventory
     templateId: human
-
   - type: InventorySlots
-
   - type: Hands
-
-  - type: ContainerContainer
-
+  #- type: ContainerContainer  # на эту тоже поэтому закоменчу
   - type: Stripping
-
   - type: Strippable
-
   - type: UserInterface
     interfaces:
       - key: enum.HumanoidMarkingModifierKey.Key
@@ -34,21 +25,15 @@
         type: StrippableBoundUserInterface
       - key: enum.StoreUiKey.Key
         type: StoreBoundUserInterface
-
   - type: Pullable
-
   - type: Rotatable
     rotateWhileAnchored: true
-
   - type: Transform
     anchored: true
-
   - type: Anchorable
-
   - type: Body
     prototype: Human
     requiredLegs: 2
-
   - type: Fixtures
     fixtures:
       fix1:
@@ -60,7 +45,6 @@
         - FullTileMask
         layer:
         - WallLayer
-
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
