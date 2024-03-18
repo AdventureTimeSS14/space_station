@@ -80,6 +80,7 @@ public sealed partial class LingSlugSystem
 
     }
 
+    public ProtoId<DamageGroupPrototype> GeneticDamageGroup = "Genetic";
     private void OnLayEggsDoAfter(EntityUid uid, LingSlugComponent component, LingEggDoAfterEvent args)
     {
         if (args.Handled || args.Args.Target == null)
@@ -98,6 +99,11 @@ public sealed partial class LingSlugSystem
         else
         {
             var holderComp = EnsureComp<LingEggsHolderComponent>(target);
+
+            holderComp.Stomach = ContainerSystem.EnsureContainer<Container>(target, "stomach");
+            var damage_genetic = new DamageSpecifier(_proto.Index(GeneticDamageGroup), holderComp.DamageAmount);
+            _damageableSystem.TryChangeDamage(target, damage_genetic);    /// To be sure that target is dead
+
             var lingComp = EnsureComp<ChangelingComponent>(target);
             var xform = Transform(target);
             var selfMessage = Loc.GetString("changeling-eggs-self-success", ("target", Identity.Entity(target, EntityManager)));
