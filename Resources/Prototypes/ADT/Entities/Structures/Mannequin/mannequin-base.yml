@@ -8,8 +8,8 @@
   components:
   - type: Clickable
   - type: InteractionOutline
-  - type: Physics # на эту хуйню ругаеться билдер тест
-    bodyType: Dynamic
+  - type: Physics 
+    bodyType: Static #меняем на статик, как у стульев
   - type: Inventory
     templateId: human
   - type: InventorySlots
