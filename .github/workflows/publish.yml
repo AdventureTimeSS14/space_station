@@ -79,7 +79,7 @@ jobs:
         port: ${{ secrets.BUILDS_PORT }}
         username: ${{ secrets.BUILDS_USERNAME }}
         key: ${{ secrets.BUILDS_SSH_KEY }}
-        script: python3 ~/manifest.py ${{ github.sha }} adt
+        script: python3 ~/manifest.py --version ${{ github.sha }} adt
 
     - name: Update CDN repository
       run: |
