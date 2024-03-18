@@ -14,7 +14,10 @@
     templateId: human
   - type: InventorySlots
   - type: Hands
-  #- type: ContainerContainer  # на эту тоже поэтому закоменчу
+  - type: ContainerContainer
+    containers:
+      bodypart: !type:Container
+        ents: []
   - type: Stripping
   - type: Strippable
   - type: UserInterface
