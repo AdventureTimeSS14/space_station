@@ -60,7 +60,7 @@ jobs:
       run: |
         mkdir "release/${{ github.sha }}"
         mv release/*.zip "release/${{ github.sha }}"
-    
+        
     - name: Install SSH Key
       uses: shimataro/ssh-key-action@v2
       with:
@@ -68,7 +68,7 @@ jobs:
         known_hosts: ${{ secrets.BUILDS_HOST }}
     
     - name: Upload files to mothership
-      run: rsync -avzr -e "ssh -i .ssh/id_rsa" release/${{ github.sha }} ${{ secrets.BUILDS_USERNAME }}@${{ secrets.BUILDS_HOST }}:${{ secrets.BUILDS_PATH }}
+      run: rsync -avzr -e "ssh -i /home/runner/.ssh/id_rsa" release/${{ github.sha }} ${{ secrets.BUILDS_USERNAME }}@${{ secrets.BUILDS_HOST }}:${{ secrets.BUILDS_PATH }}
     
     - name: Update manifest JSON
       uses: appleboy/ssh-action@master
