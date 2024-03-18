@@ -555,7 +555,7 @@
   parent: WallReinforced
   id: WallReinforcedRust
   name: reinforced wall
-  suffix: rusted
+  suffix: ржавая
   components:
   - type: Sprite
     sprite: Structures/Walls/solid_rust.rsi
