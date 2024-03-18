@@ -64,3 +64,6 @@ ent-BorgModuleHarvesting = урожайный модуль киборга
     .desc = { ent-BaseBorgModule.desc }
 ent-BorgModuleClowning = клоунский модуль киборга
     .desc = { ent-BaseBorgModule.desc }
+
+ent-BorgModulePDA = КПК модуль киборга
+    .desc = { ent-BaseBorgModule.desc }

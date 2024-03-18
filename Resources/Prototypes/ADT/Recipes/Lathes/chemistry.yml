@@ -13,6 +13,13 @@
     Plastic: 50
 
 - type: latheRecipe
+  id: ADTGlassBottle
+  result: ADTGlassBottle
+  completetime: 2
+  materials:
+    Glass: 50
+
+- type: latheRecipe
   id: ADTPillPack
   result: ADTPillPack
   completetime: 2

@@ -1,0 +1,78 @@
+- type: entity
+  id: LingUntActionStealth
+  name: action-stealth
+  description: action-stealth-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: chameleon
+    itemIconStyle: BigAction
+    checkCanInteract: false
+    event: !type:CompInvisibilityActionEvent
+    useDelay: 30
+
+- type: entity
+  id: LingUntActionStasisHeal
+  name: action-stasis-heal
+  description: action-stasis-heal-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: fleshmend
+    itemIconStyle: BigAction
+    checkCanInteract: false
+    event: !type:CompStasisHealActionEvent
+    useDelay: 5
+
+- type: entity
+  id: LingUntActionJump
+  name: action-jump
+  description: action-jump-desc
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    useDelay: 75
+    range: 16 # default examine-range.
+    # ^ should probably add better validation that the clicked location is on the users screen somewhere,
+    itemIconStyle: BigAction
+    checkCanAccess: false
+    repeat: true
+    icon:
+      sprite: Clothing/Shoes/Boots/combatboots.rsi
+      state: icon
+    event: !type:CompJumpActionEvent
+
+- type: entity
+  id: LingUntActionShoot
+  name: action-shoot
+  description: action-shoot-desc
+  noSpawn: true
+  components:
+  - type: WorldTargetAction
+    useDelay: 60
+    range: 16 # default examine-range.
+    # ^ should probably add better validation that the clicked location is on the users screen somewhere,
+    itemIconStyle: BigAction
+    checkCanAccess: false
+    repeat: true
+    icon:
+      sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
+      state: icon
+    event: !type:CompProjectileActionEvent
+
+- type: entity  # Как будут спрайты доделаю. 
+  name: Urist McWeb
+  parent: BaseMobArachnid
+  id: ADTMobLingUnt
+  components:
+  - type: InvisibilityAct
+    minVisibility: 0
+  - type: JumpAct
+    jumpAction: LingUntActionJump
+  - type: ProjectileAct
+    projAction: LingUntActionShoot
+    prototype: ADTBulletLingGas

@@ -21,12 +21,9 @@ using Content.Shared.FixedPoint;
 using Content.Server.Store.Components;
 using Content.Shared.Chemistry.Components;
 using Content.Server.Fluids.EntitySystems;
-using Content.Shared.Tag;
 using Content.Shared.Mobs;
-using Content.Shared.Mobs.Components;
-using Content.Shared.Mobs.Systems;
-using Content.Shared.Eye.Blinding.Components;
-using Content.Shared.Eye.Blinding.Systems;
+using Content.Server.Destructible;
+using Content.Server.Ghost.Components;
 
 namespace Content.Server.Changeling.EntitySystems;
 
@@ -36,7 +33,6 @@ public sealed partial class ChangelingSystem
     [Dependency] private readonly HandsSystem _handsSystem = default!;
     [Dependency] private readonly InventorySystem _inventorySystem = default!;
     [Dependency] private readonly BloodstreamSystem _bloodstreamSystem = default!;
-    [Dependency] private readonly DamageableSystem _damageableSystem = default!;
     [Dependency] private readonly SharedAudioSystem _audioSystem = default!;
     [Dependency] private readonly EmpSystem _emp = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
@@ -61,6 +57,11 @@ public sealed partial class ChangelingSystem
         SubscribeLocalEvent<ChangelingComponent, ChangelingRefreshActionEvent>(OnRefresh);
         SubscribeLocalEvent<ChangelingComponent, OmniHealActionEvent>(OnOmniHeal);
         SubscribeLocalEvent<ChangelingComponent, MuteStingEvent>(OnMuteSting);
+        SubscribeLocalEvent<ChangelingComponent, DrugStingEvent>(OnDrugSting);
+        SubscribeLocalEvent<ChangelingComponent, ChangelingMusclesActionEvent>(OnMuscles);
+        SubscribeLocalEvent<ChangelingComponent, ChangelingLesserFormActionEvent>(OnLesserForm);
+        SubscribeLocalEvent<ChangelingComponent, ArmShieldActionEvent>(OnArmShieldAction);
+        SubscribeLocalEvent<ChangelingComponent, LastResortActionEvent>(OnLastResort);
     }
 
 
@@ -68,6 +69,13 @@ public sealed partial class ChangelingSystem
     {
         if (args.Handled)
             return;
+
+        if (component.LesserFormActive)
+        {
+            var selfMessage = Loc.GetString("changeling-transform-fail-lesser-form");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
 
         var target = args.Target;
         if (!HasComp<HumanoidAppearanceComponent>(target))
@@ -195,6 +203,7 @@ public sealed partial class ChangelingSystem
                 var selfMessage = Loc.GetString("changeling-dna-success", ("target", Identity.Entity(target, EntityManager)));
                 _popup.PopupEntity(selfMessage, uid, uid, PopupType.Medium);
                 component.CanRefresh = true;
+                component.AbsorbedDnaModifier = component.AbsorbedDnaModifier + 1;
             }
         }
 
@@ -218,6 +227,13 @@ public sealed partial class ChangelingSystem
     {
         if (args.Handled)
             return;
+
+        if (component.LesserFormActive)
+        {
+            var selfMessage = Loc.GetString("changeling-transform-fail-lesser-form");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
 
         if (_mobState.IsDead(uid))
         {
@@ -268,6 +284,13 @@ public sealed partial class ChangelingSystem
         if (handContainer == null)
             return;
 
+        if (component.LesserFormActive)
+        {
+            var selfMessage = Loc.GetString("changeling-transform-fail-lesser-form");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
         if (!TryUseAbility(uid, component, component.ChemicalsCostTwenty, !component.ArmBladeActive))
             return;
 
@@ -275,7 +298,7 @@ public sealed partial class ChangelingSystem
 
         if (!component.ArmBladeActive)
         {
-            if (SpawnArmBlade(uid))
+            if (SpawnArmBlade(uid, component))
             {
                 component.ArmBladeActive = true;
                 _audioSystem.PlayPvs(component.SoundFlesh, uid);
@@ -293,23 +316,132 @@ public sealed partial class ChangelingSystem
         }
         else
         {
-            if (handContainer.ContainedEntity != null)
+            if (component.BladeEntity != null)
             {
-                if (TryComp<MetaDataComponent>(handContainer.ContainedEntity.Value, out var targetMeta))
+
+                component.ArmShieldActive = false;
+                QueueDel(component.BladeEntity.Value);
+                _audioSystem.PlayPvs(component.SoundFlesh, uid);
+
+                var othersMessage = Loc.GetString("changeling-armshield-retract-others", ("user", Identity.Entity(uid, EntityManager)));
+                _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
+
+                var selfMessage = Loc.GetString("changeling-armshield-retract-self");
+                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+
+                component.BladeEntity = new EntityUid?();
+            }
+            else
+            {
+
+                if (handContainer.ContainedEntity != null)
                 {
-                    if (TryPrototype(handContainer.ContainedEntity.Value, out var prototype, targetMeta))
+                    if (TryComp<MetaDataComponent>(handContainer.ContainedEntity.Value, out var targetMeta))
                     {
-                        if (prototype.ID == ArmBladeId)
+                        if (TryPrototype(handContainer.ContainedEntity.Value, out var prototype, targetMeta))
                         {
-                            component.ArmBladeActive = false;
-                            QueueDel(handContainer.ContainedEntity.Value);
-                            _audioSystem.PlayPvs(component.SoundFlesh, uid);
+                            if (prototype.ID == ArmBladeId)
+                            {
+                                component.ArmBladeActive = false;
+                                QueueDel(handContainer.ContainedEntity.Value);
+                                _audioSystem.PlayPvs(component.SoundFlesh, uid);
 
-                            var othersMessage = Loc.GetString("changeling-armblade-retract-others", ("user", Identity.Entity(uid, EntityManager)));
-                            _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
+                                var othersMessage = Loc.GetString("changeling-armblade-retract-others", ("user", Identity.Entity(uid, EntityManager)));
+                                _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
 
-                            var selfMessage = Loc.GetString("changeling-armblade-retract-self");
-                            _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+                                var selfMessage = Loc.GetString("changeling-armblade-retract-self");
+                                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    public const string ArmShieldId = "ArmShield";
+    private void OnArmShieldAction(EntityUid uid, ChangelingComponent component, ArmShieldActionEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        if (!TryComp(uid, out HandsComponent? handsComponent))
+            return;
+        if (handsComponent.ActiveHand == null)
+            return;
+
+        var handContainer = handsComponent.ActiveHand.Container;
+
+        if (handContainer == null)
+            return;
+
+        if (component.LesserFormActive)
+        {
+            var selfMessage = Loc.GetString("changeling-transform-fail-lesser-form");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
+        if (!TryUseAbility(uid, component, component.ChemicalsCostTwenty, !component.ArmShieldActive))
+            return;
+
+        args.Handled = true;
+
+        if (!component.ArmShieldActive)
+        {
+            if (SpawnArmShield(uid, component))
+            {
+                component.ArmShieldActive = true;
+                _audioSystem.PlayPvs(component.SoundFlesh, uid);
+
+                var othersMessage = Loc.GetString("changeling-armshield-success-others", ("user", Identity.Entity(uid, EntityManager)));
+                _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
+
+                var selfMessage = Loc.GetString("changeling-armshield-success-self");
+                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+            }
+            else
+            {
+                _popup.PopupEntity(Loc.GetString("changeling-armshield-fail"), uid, uid);
+            }
+        }
+        else
+        {
+            if (component.ShieldEntity != null)
+            {
+
+                component.ArmShieldActive = false;
+                QueueDel(component.ShieldEntity.Value);
+                _audioSystem.PlayPvs(component.SoundFlesh, uid);
+
+                var othersMessage = Loc.GetString("changeling-armshield-retract-others", ("user", Identity.Entity(uid, EntityManager)));
+                _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
+
+                var selfMessage = Loc.GetString("changeling-armshield-retract-self");
+                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+
+                component.ShieldEntity = new EntityUid?();
+            }
+            else
+            {
+                if (handContainer.ContainedEntity != null)
+                {
+                    if (TryComp<MetaDataComponent>(handContainer.ContainedEntity.Value, out var targetMeta))
+                    {
+                        if (TryPrototype(handContainer.ContainedEntity.Value, out var prototype, targetMeta))
+                        {
+                            if (prototype.ID == ArmShieldId)
+                            {
+                                component.ArmShieldActive = false;
+                                QueueDel(handContainer.ContainedEntity.Value);
+                                _audioSystem.PlayPvs(component.SoundFlesh, uid);
+
+                                var othersMessage = Loc.GetString("changeling-armshield-retract-others", ("user", Identity.Entity(uid, EntityManager)));
+                                _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
+
+                                var selfMessage = Loc.GetString("changeling-armshield-retract-self");
+                                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+                            }
                         }
                     }
                 }
@@ -330,13 +462,21 @@ public sealed partial class ChangelingSystem
         _inventorySystem.TryEquip(uid, armor, OuterClothingId, true, true, false, inventory);
     }
 
-    public bool SpawnArmBlade(EntityUid uid)
+    public bool SpawnArmBlade(EntityUid uid, ChangelingComponent component)
     {
         var armblade = Spawn(ArmBladeId, Transform(uid).Coordinates);
         EnsureComp<UnremoveableComponent>(armblade); // armblade is apart of your body.. cant remove it..
-
-        if (_handsSystem.TryPickupAnyHand(uid, armblade))
+        RemComp<DestructibleComponent>(armblade);
+        if (_handsSystem.TryPickup(uid, armblade))
         {
+            if (!TryComp(uid, out HandsComponent? handsComponent))
+                return false;
+            if (handsComponent.ActiveHand == null)
+                return false;
+            var handContainer = handsComponent.ActiveHand.Container;
+            if (handContainer == null || handContainer.ContainedEntity == null)
+                return false;
+            component.BladeEntity = handContainer.ContainedEntity.Value;
             return true;
         }
         else
@@ -345,6 +485,32 @@ public sealed partial class ChangelingSystem
             return false;
         }
     }
+
+    public bool SpawnArmShield(EntityUid uid, ChangelingComponent component)
+    {
+        var armshield = Spawn(ArmShieldId, Transform(uid).Coordinates);
+        EnsureComp<UnremoveableComponent>(armshield); // armblade is apart of your body.. cant remove it..
+
+
+        if (_handsSystem.TryPickup(uid, armshield))
+        {
+            if (!TryComp(uid, out HandsComponent? handsComponent))
+                return false;
+            if (handsComponent.ActiveHand == null)
+                return false;
+            var handContainer = handsComponent.ActiveHand.Container;
+            if (handContainer == null || handContainer.ContainedEntity == null)
+                return false;
+            component.ShieldEntity = handContainer.ContainedEntity.Value;
+            return true;
+        }
+        else
+        {
+            QueueDel(armshield);
+            return false;
+        }
+    }
+
 
     public const string LingHelmetId = "ClothingHeadHelmetLing";
     public const string LingArmorId = "ClothingOuterArmorChangeling";
@@ -358,6 +524,13 @@ public sealed partial class ChangelingSystem
 
         if (!TryComp(uid, out InventoryComponent? inventory))
             return;
+
+        if (component.LesserFormActive)
+        {
+            var selfMessage = Loc.GetString("changeling-transform-fail-lesser-form");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
 
         if (!TryUseAbility(uid, component, component.ChemicalsCostTwenty, !component.LingArmorActive, component.LingArmorRegenCost))
             return;
@@ -425,6 +598,13 @@ public sealed partial class ChangelingSystem
         if (!TryComp(uid, out InventoryComponent? inventory))
             return;
 
+        if (component.LesserFormActive)
+        {
+            var selfMessage = Loc.GetString("changeling-transform-fail-lesser-form");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
         if (!TryUseAbility(uid, component, component.ChemicalsCostTwentyFive, !component.ChameleonSkinActive))
             return;
 
@@ -454,6 +634,13 @@ public sealed partial class ChangelingSystem
     {
         if (args.Handled)
             return;
+
+        if (component.LesserFormActive)
+        {
+            var selfMessage = Loc.GetString("changeling-transform-fail-lesser-form");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
 
         if (!TryUseAbility(uid, component, component.ChemicalsCostTwenty))
             return;
@@ -539,6 +726,13 @@ public sealed partial class ChangelingSystem
         if (args.Handled)
             return;
 
+        if (component.LesserFormActive)
+        {
+            var selfMessage = Loc.GetString("changeling-transform-fail-lesser-form");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
         if (!component.StasisDeathActive)
         {
             if (!_mobState.IsDead(uid))
@@ -547,6 +741,8 @@ public sealed partial class ChangelingSystem
                     return;
 
                 args.Handled = true;
+
+                RemComp<GhostOnMoveComponent>(uid);
 
                 var damage_burn = new DamageSpecifier(_proto.Index(BurnDamageGroup), component.StasisDeathDamageAmount);
                 _damageableSystem.TryChangeDamage(uid, damage_burn);    /// Самоопиздюливание
@@ -577,6 +773,9 @@ public sealed partial class ChangelingSystem
                 _mobState.ChangeMobState(uid, MobState.Critical);   /// Переходим в крит, если повреждений окажется меньше нужных для крита, поднимемся в MobState.Alive сами
                 _damageableSystem.TryChangeDamage(uid, damage_burn);
                 component.StasisDeathActive = false;
+                EnsureComp<GhostOnMoveComponent>(uid);
+                var ghostOnMove = EnsureComp<GhostOnMoveComponent>(uid);
+                ghostOnMove.MustBeDead = true;
             }
         }
 
@@ -612,7 +811,7 @@ public sealed partial class ChangelingSystem
         {
             args.Handled = true;
 
-            var selfMessageSuccess = Loc.GetString("changeling-blind-sting", ("target", Identity.Entity(target, EntityManager)));
+            var selfMessageSuccess = Loc.GetString("changeling-success-sting", ("target", Identity.Entity(target, EntityManager)));
             _popup.PopupEntity(selfMessageSuccess, uid, uid);
         }
 
@@ -649,17 +848,60 @@ public sealed partial class ChangelingSystem
         {
             args.Handled = true;
 
-            var selfMessageSuccess = Loc.GetString("changeling-mute-sting", ("target", Identity.Entity(target, EntityManager)));
+            var selfMessageSuccess = Loc.GetString("changeling-success-sting", ("target", Identity.Entity(target, EntityManager)));
             _popup.PopupEntity(selfMessageSuccess, uid, uid);
         }
 
     }
 
+    private void OnDrugSting(EntityUid uid, ChangelingComponent component, DrugStingEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        var target = args.Target;
+
+        if (!TryStingTarget(uid, target, component))
+            return;
+
+        if (!HasComp<DnaComponent>(target))
+        {
+            var selfMessageFailNoHuman = Loc.GetString("changeling-dna-sting-fail-nodna", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessageFailNoHuman, uid, uid);
+            return;
+        }
+
+        if (_tagSystem.HasTag(target, "ChangelingBlacklist"))
+        {
+            var selfMessage = Loc.GetString("changeling-dna-sting-fail-nodna", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
+        if (!TryUseAbility(uid, component, component.ChemicalsCostTwenty))
+            return;
+
+        if (DrugSting(uid, target, component))
+        {
+            args.Handled = true;
+
+            var selfMessageSuccess = Loc.GetString("changeling-success-sting", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessageSuccess, uid, uid);
+        }
+
+    }
 
     private void OnAdrenaline(EntityUid uid, ChangelingComponent component, AdrenalineActionEvent args)
     {
         if (args.Handled)
             return;
+
+        if (component.LesserFormActive)
+        {
+            var selfMessage = Loc.GetString("changeling-transform-fail-lesser-form");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
 
         if (!TryUseAbility(uid, component, component.ChemicalsCostTen))
             return;
@@ -679,6 +921,13 @@ public sealed partial class ChangelingSystem
         if (args.Handled)
             return;
 
+        if (component.LesserFormActive)
+        {
+            var selfMessage = Loc.GetString("changeling-transform-fail-lesser-form");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
         if (!TryUseAbility(uid, component, component.ChemicalsCostTwentyFive))
             return;
 
@@ -697,6 +946,13 @@ public sealed partial class ChangelingSystem
         if (args.Handled)
             return;
 
+        if (component.LesserFormActive)
+        {
+            var selfMessage = Loc.GetString("changeling-transform-fail-lesser-form");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
         if (!TryUseAbility(uid, component, component.ChemicalsCostFree))
             return;
 
@@ -708,6 +964,63 @@ public sealed partial class ChangelingSystem
             _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
         }
 
+    }
+
+    private void OnMuscles(EntityUid uid, ChangelingComponent component, ChangelingMusclesActionEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        if (component.LesserFormActive)
+        {
+            var selfMessage = Loc.GetString("changeling-transform-fail-lesser-form");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
+        if (!TryUseAbility(uid, component, component.ChemicalsCostTwenty))
+            return;
+
+        if (Muscles(uid, component))
+        {
+            args.Handled = true;
+
+            var message = Loc.GetString("changeling-muscles");
+            _popup.PopupEntity(message, uid, uid);
+        }
+
+    }
+
+    private void OnLesserForm(EntityUid uid, ChangelingComponent component, ChangelingLesserFormActionEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        if (!TryUseAbility(uid, component, component.ChemicalsCostTwenty))
+            return;
+
+        if (LesserForm(uid, component))
+        {
+            args.Handled = true;
+        }
+
+    }
+    public ProtoId<DamageGroupPrototype> GibDamageGroup = "Brute";
+    private void OnLastResort(EntityUid uid, ChangelingComponent component, LastResortActionEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        if (!TryUseAbility(uid, component, component.ChemicalsCostFree))
+            return;
+
+        if (SpawnLingSlug(uid, component))
+        {
+            var damage_brute = new DamageSpecifier(_proto.Index(GibDamageGroup), component.GibDamage);
+            _damageableSystem.TryChangeDamage(uid, damage_brute);
+
+            args.Handled = true;
+        }
     }
 
 }

@@ -36,6 +36,8 @@ using Robust.Shared.Utility;
 using Content.Server.Language;
 using Content.Server.Speech;
 using Content.Shared.Language;
+using Content.Shared.ADT;
+using Content.Shared.Chat.Prototypes;
 
 namespace Content.Server.Chat.Systems;
 
@@ -265,7 +267,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             case InGameICChatType.Whisper:
                 SendEntityWhisper(source, message, range, null, nameOverride, hideLog, ignoreActionBlocker, languageOverride: languageOverride);
                 break;
-            case InGameICChatType.Emote:
+            case InGameICChatType.Emote:            
                 SendEntityEmote(source, message, range, nameOverride, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker);
                 break;
         }
@@ -601,6 +603,22 @@ public sealed partial class ChatSystem : SharedChatSystem
         NetUserId? author = null
         )
     {
+        // ADT-ApathyEmotionChanges-block-start
+        if (HasComp<ApathyComponent>(source))
+        {
+            var actionLower = action.ToLower();
+            if (_wordEmoteDict.TryGetValue(actionLower, out var emote))
+            {
+                _prototypeManager.TryIndex<EmotePrototype>(emote.ID + "-apathy", out var protoApathy);
+                if (protoApathy != null)
+                {
+                    action = protoApathy.ChatTriggers.First();
+                }
+            }
+        }
+        // ADT-ApathyEmotionChanges-block-end
+
+
         if (!_actionBlocker.CanEmote(source) && !ignoreActionBlocker)
             return;
 

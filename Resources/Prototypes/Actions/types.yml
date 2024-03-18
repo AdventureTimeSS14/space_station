@@ -9,6 +9,7 @@
     event: !type:OpenEmotesActionEvent
     #event: !type:ScreamActionEvent
     checkCanInteract: false
+    priority: -98
 
 - type: entity
   id: ActionScream
@@ -21,6 +22,7 @@
     icon: Interface/Actions/scream.png
     event: !type:ScreamActionEvent
     checkCanInteract: false
+    priority: -99
 
 - type: entity
   id: OwOVoice

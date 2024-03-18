@@ -31,6 +31,15 @@
       collection: UrsusCry
     Whistle:
       collection: Whistles
+    # ADT-Apathy Sounds. 
+    Scream-apathy:
+      collection: UrsusScreams
+    Laugh-apathy:
+      collection: UrsusLaugh 
+    Sigh-apathy:
+      collection: MaleSigh
+    Crying-apathy:
+      collection: UrsusCry
 
 - type: emoteSounds
   id: FemaleUrsus
@@ -65,3 +74,12 @@
       collection: UrsusCry
     Whistle:
       collection: Whistles
+    # ADT-Apathy Sounds. 
+    Scream-apathy:
+      collection: UrsusScreams
+    Laugh-apathy:
+      collection: UrsusLaugh 
+    Sigh-apathy:
+      collection: FemaleSigh
+    Crying-apathy:
+      collection: UrsusCry

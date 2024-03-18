@@ -330,7 +330,14 @@
         type: Add
         time: 10
         refresh: false
+      - !type:GenericStatusEffect
+        key: ADTHallucinations
+        component: LingHallucinations
+        type: Add
+        time: 10
+        refresh: false
   # TODO: PROPER hallucinations
+  # лол
 
 - type: reagent
   id: Histamine

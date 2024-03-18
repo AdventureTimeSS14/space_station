@@ -249,3 +249,12 @@
 #    - LowDesert
     - Snow
     - Grasslands
+
+- type: salvageDungeonMod
+  id: Botany
+  proto: Botany
+  biomes:
+    - Caves
+#    - LowDesert
+    - Snow
+    - Grasslands

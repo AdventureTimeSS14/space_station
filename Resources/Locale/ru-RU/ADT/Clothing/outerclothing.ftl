@@ -72,3 +72,7 @@ ent-ADTClothingOuterBioParamedic = защитный костюм парамед�
 
 ent-ADTClothingOuterCoatLabParamedic = халат парамедика
     .desc = { ent-ClothingOuterCoatLab.desc }
+
+ent-ADTClothingTSFArmor = бронежилет армии ТСФ
+    .desc = Стандартный бронежилет пехотинца Транс-Солнечной Федерации.
+    .suffix = { "ТСФ" }

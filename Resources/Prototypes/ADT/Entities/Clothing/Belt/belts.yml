@@ -335,3 +335,66 @@
     - state: icon
     - map: [ "enum.StorageContainerVisualLayers.Fill" ]
       visible: false
+
+#разгрузка и подсумки ТСФ
+
+- type: entity
+  id: ADTClothingWarbeltTSF
+  parent: ClothingBeltMilitaryWebbing
+  name: TSF warbelt
+  description: TSF warbelt
+  suffix: TSF
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Belt/tsf_webbing.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Belt/tsf_webbing.rsi
+  - type: Storage
+    grid:
+    - 0,0,0,1
+    - 2,0,5,1
+    - 7,0,8,1
+    - 10,0,10,1
+    maxItemSize: Normal
+
+- type: entity
+  id: ADTClothingTSFMagBelt
+  parent: ClothingBeltMilitaryWebbing
+  name: TSF mag belt
+  description: TSF mag belt
+  suffix: TSF
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Belt/tsf_magbelt.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Belt/tsf_magbelt.rsi
+    quickEquip: false
+    slots:
+    - belt
+  - type: Storage
+    grid:
+    - 0,0,3,1
+    maxItemSize: Small
+  - type: Item
+    size: Small
+
+- type: entity
+  id: ADTClothingTSFMedBelt
+  parent: ClothingBeltMilitaryWebbing
+  name: TSF med belt
+  description: TSF med belt
+  suffix: TSF
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Belt/tsf_medbelt.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Belt/tsf_medbelt.rsi
+    quickEquip: false
+    slots:
+    - belt
+  - type: Storage
+    grid:
+    - 0,0,2,1
+    maxItemSize: Small
+  - type: Item
+    size: Small

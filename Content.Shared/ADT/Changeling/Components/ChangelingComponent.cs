@@ -59,6 +59,15 @@ public sealed partial class ChangelingComponent : Component
         Params = AudioParams.Default.WithVolume(-3f),
     };
 
+    /// </summary>
+    /// Flesh sound
+    /// </summary>
+    [DataField]
+    public SoundSpecifier? SoundFleshQuiet = new SoundPathSpecifier("/Audio/Effects/blobattack.ogg")
+    {
+        Params = AudioParams.Default.WithVolume(-1f),
+    };
+
     /// <summary>
     /// Blind sting duration
     /// </summary>
@@ -114,6 +123,18 @@ public sealed partial class ChangelingComponent : Component
 
     [DataField, AutoNetworkedField]
     public EntityUid? ChangelingDNAStingActionEntity;
+
+    [DataField]
+    public EntProtoId ChangelingLesserFormAction = "ActionLingLesserForm";
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? ChangelingLesserFormActionEntity;
+
+    [DataField]
+    public EntProtoId ChangelingLastResortAction = "ActionLingLastResort";
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? ChangelingLastResortActionEntity;
 
     ///[DataField]
     ///public EntProtoId ChangelingArmBladeAction = "ActionArmBlade";
@@ -225,6 +246,9 @@ public sealed partial class ChangelingComponent : Component
     [DataField]
     public float AbsorbedMobPointsAmount = 2.0f;
 
+    [DataField]
+    public float AbsorbedDnaModifier = 0f;
+
     #endregion
 
     #region Regenerate Ability
@@ -268,6 +292,10 @@ public sealed partial class ChangelingComponent : Component
     /// </summary>
     [DataField]
     public bool ArmBladeActive = false;
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? BladeEntity;
+
     #endregion
 
     #region Chitinous Armor Ability
@@ -327,13 +355,26 @@ public sealed partial class ChangelingComponent : Component
     #region Stasis Death Ability
 
     [DataField]
-    public float StasisDeathDamageAmount = 300f;    /// Сколько пиздюлей генокрад получит от себя
+    public float StasisDeathDamageAmount = 300f;    /// Damage gain to die
 
     [DataField]
-    public float StasisDeathHealAmount = -300f;     /// Сколько пиздюлей генокрад восстановит когда вейк апнется
+    public float StasisDeathHealAmount = -300f;     /// Damage restore to get up
 
     [DataField]
-    public bool StasisDeathActive = false;      /// Получать или восстанавливать пиздюли?
+    public bool StasisDeathActive = false;      /// Is ling dead or alive
+
+    #endregion
+
+    #region Muscles Ability
+
+    [DataField]
+    public bool MusclesActive = false;
+
+    [DataField]
+    public float MusclesModifier = 2f;
+
+    [DataField]
+    public float MusclesStaminaDamage = 3f;
 
     #endregion
 
@@ -351,6 +392,9 @@ public sealed partial class ChangelingComponent : Component
     [DataField("chemicalMute", customTypeSerializer: typeof(PrototypeIdSerializer<ReagentPrototype>))]
     public string ChemicalMute = "MuteToxin";
 
+    [DataField("chemicalDrug", customTypeSerializer: typeof(PrototypeIdSerializer<ReagentPrototype>))]
+    public string ChemicalSpaceDrugs = "LingDrugs";
+
     #endregion
 
     #region Changeling Chemicals Amount
@@ -361,9 +405,41 @@ public sealed partial class ChangelingComponent : Component
     [ViewVariables(VVAccess.ReadWrite), DataField("muteAmount")]
     public float MuteAmount = 20f;
 
-    [ViewVariables(VVAccess.ReadWrite), DataField("omnizineAmount")]
-    public float OmnizineAmount = 25f;
+    [ViewVariables(VVAccess.ReadWrite), DataField("drugAmount")]
+    public float SpaceDrugsAmount = 20f;
 
     #endregion
+
+    #region Lesser Form Ability
+
+    [DataField]
+    public bool LesserFormActive = false;
+
+    [DataField]
+    public string LesserFormMob = "ChangelingLesserForm";
+
+
+    #endregion
+
+    #region Armshield Ability
+    /// <summary>
+    /// If the ling has an active armblade or not.
+    /// </summary>
+    [DataField]
+    public bool ArmShieldActive = false;
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? ShieldEntity;
+
+    #endregion
+
+    [DataField]
+    public float GibDamage = 5000f;
+
+    [DataField]
+    public bool EggedBody = false;
+
+    [DataField]
+    public bool EggsReady = false;
 
 }

@@ -10,11 +10,12 @@
   - type: Item
     sprite: ADT/Objects/Specific/Medical/Chemistry/pills.rsi
 
-# бутылочка (не разбивающаяся)
+# бутылочки
+##пластиковая
 - type: entity
   name: bottle
   parent: BaseItem
-  id: BaseChemistryEmptyPlasticBottle
+  id: ADTBaseChemistryEmptyPlasticBottle
   abstract: true
   description: A small plastic bottle.
   components:
@@ -62,7 +63,7 @@
     - key: enum.TransferAmountUiKey.Key
       type: TransferAmountBoundUserInterface
   - type: Item
-    size: Small
+    size: Tiny
     sprite: ADT/Objects/Specific/Medical/Chemistry/plastic-bottle.rsi
   - type: Spillable
     solution: drink
@@ -84,7 +85,55 @@
 - type: entity
   id: ADTPlasticBottle
   name: plastic bottle
-  parent: BaseChemistryEmptyPlasticBottle
+  parent: ADTBaseChemistryEmptyPlasticBottle
+
+##стеклянная
+- type: entity
+  name: bottle
+  parent: BaseChemistryEmptyBottle
+  id: ADTBaseChemistryEmptyBottle
+  abstract: true
+  description: A small plastic bottle.
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Glass: 25
+  - type: SpaceGarbage
+  - type: Sprite
+    sprite: ADT/Objects/Specific/Medical/Chemistry/glass-bottle.rsi
+    layers:
+      - state: icon
+        map: [ "enum.SolutionContainerLayers.Base" ]
+      - state: fill1
+        map: [ "enum.SolutionContainerLayers.Fill" ]
+        visible: false
+      - state: icon-front
+        map: [ "enum.SolutionContainerLayers.Overlay" ]
+  - type: Appearance
+  - type: SolutionTransfer
+    minTransferAmount: 1
+    transferAmount: 5
+    maxTransferAmount: 30
+    canChangeTransferAmount: true
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: fill
+  - type: Item
+    size: Tiny
+    sprite: ADT/Objects/Specific/Medical/Chemistry/glass-bottle.rsi
+  - type: Openable
+    sound:
+      path: /Audio/Items/pop.ogg
+  - type: StaticPrice
+    price: 0
+  - type: GuideHelp
+    guides: 
+    - Medical Doctor
+
+- type: entity
+  id: ADTGlassBottle
+  name: glass bottle
+  parent: ADTBaseChemistryEmptyBottle
 
 # Упаковки
 - type: entity
@@ -98,7 +147,7 @@
     state: pack
   - type: Item
     sprite: ADT/Objects/Specific/Medical/Chemistry/packs.rsi
-    size: Small
+    size: Tiny
   - type: Tag
     tags:
       - PillCanister
@@ -117,12 +166,12 @@
   name: pill pack
   parent: ADTBasePack
 
-# Патологоанатомические приколы
+#всякие ящики
 - type: entity
-  name: box of foot tags
+  name: box of small syringes
   parent: BoxCardboard
-  id: ADTFootTagBox
-  description: It's plastic a box with foot tags inside.
+  id: ADTSmallSyringeBox
+  description: It's plastic a box with small syringes inside.
   components:
   - type: Storage
     maxItemSize: Small
@@ -130,21 +179,19 @@
     - 0,0,2,1
   - type: StorageFill
     contents:
-      - id: ADTFootTag
+      - id: ADTSmallSyringe
         amount: 6
   - type: Sprite
-    sprite: ADT/Objects/Specific/Medical/foot-tag-box.rsi
+    sprite: ADT/Objects/Specific/Medical/Chemistry/syringe.rsi
     state: icon
   - type: Item
-    sprite: ADT/Objects/Specific/Medical/foot-tag-box.rsi 
+    sprite: ADT/Objects/Specific/Medical/Chemistry/syringe.rsi
     size: Normal 
   - type: PhysicalComposition
     materialComposition:
       Cardboard: 50
-  - type: GuideHelp
-    guides: 
-    - ADTPathologist
 
+# Патологоанатомические приколы
 - type: entity
   name: small syringe
   description: A small syringe to take.. you guessed it, small samples of liquid.
@@ -189,30 +236,6 @@
     interfaces:
     - key: enum.TransferAmountUiKey.Key
       type: TransferAmountBoundUserInterface
-
-- type: entity
-  name: box of small syringes
-  parent: BoxCardboard
-  id: ADTSmallSyringeBox
-  description: It's plastic a box with small syringes inside.
-  components:
-  - type: Storage
-    maxItemSize: Small
-    grid:
-    - 0,0,2,1
-  - type: StorageFill
-    contents:
-      - id: ADTSmallSyringe
-        amount: 6
-  - type: Sprite
-    sprite: ADT/Objects/Specific/Medical/Chemistry/syringe.rsi
-    state: icon
-  - type: Item
-    sprite: ADT/Objects/Specific/Medical/Chemistry/syringe.rsi
-    size: Normal 
-  - type: PhysicalComposition
-    materialComposition:
-      Cardboard: 50
 
 - type: entity
   name: reagent analyzer
