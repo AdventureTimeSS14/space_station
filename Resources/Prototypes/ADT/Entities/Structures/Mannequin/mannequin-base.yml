@@ -14,6 +14,7 @@
     templateId: human
   - type: InventorySlots
   - type: Hands
+  - type: BodyPart
   - type: ContainerContainer
     containers:
       bodypart: !type:Container
@@ -50,7 +51,6 @@
         ent: null
   - type: Stripping
   - type: Strippable
-  - type: BodyPart
   - type: UserInterface
     interfaces:
       - key: enum.HumanoidMarkingModifierKey.Key
