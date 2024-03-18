@@ -5,14 +5,14 @@
   description: Useful for entering the station or its departments.
   components:
   - type: Sprite
-    sprite: Objects/Tools/pirate_jaws_of_life.rsi
+    sprite: Textures/ADT/Objects/Tools/pirate_jaws_of_life.rsi
     state: jaws_pirate_pry
   - type: Item
     inhandVisuals:
       left:
-      - state: inhand_pirate-left
+      - state: inhand_pirate_left
       right:
-      - state: inhand_pirate-right
+      - state: inhand_pirate_right
     size: Normal
   - type: Tool
     qualities:
@@ -22,13 +22,13 @@
     entries:
       - behavior: Prying
         sprite:
-          sprite: Objects/Tools/pirate_jaws_of_life.rsi
+          sprite: Textures/ADT/Objects/Tools/pirate_jaws_of_life.rsi
           state: jaws_pirate_pry
         useSound: /Audio/Items/jaws_pry.ogg
         changeSound: /Audio/Items/change_jaws.ogg
       - behavior: Cutting
         sprite:
-          sprite: Objects/Tools/pirate_jaws_of_life.rsi
+          sprite: Textures/ADT/Objects/Tools/pirate_jaws_of_life.rsi
           state: jaws_pirate_cutter
         useSound: /Audio/Items/jaws_cut.ogg
         changeSound: /Audio/Items/change_jaws.ogg
