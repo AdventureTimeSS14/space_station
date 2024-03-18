@@ -8,7 +8,7 @@
   components:
   - type: Clickable
   - type: InteractionOutline
-  - type: Physics 
+  - type: Physics
     bodyType: Static #меняем на статик, как у стульев
   - type: Inventory
     templateId: human
@@ -20,6 +20,7 @@
         ents: []
   - type: Stripping
   - type: Strippable
+  - type: BodyPart
   - type: UserInterface
     interfaces:
       - key: enum.HumanoidMarkingModifierKey.Key
@@ -79,7 +80,7 @@
   - type: StaticPrice
     price: 75
 
-  
+
 
 
 
