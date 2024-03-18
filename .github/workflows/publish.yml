@@ -62,10 +62,11 @@ jobs:
         mv release/*.zip "release/${{ github.sha }}"
 
     - name: Upload files to mothership
-      uses: burnett01/rsync-deployments@5.2
+      uses: burnett01/rsync-deployments@7.0.0
       with:
         switches: -avzr --ignore-existing
         path: "release/${{ github.sha }}"
+        legacy_allow_rsa_hostkeys: "true"
         remote_path: ${{ secrets.BUILDS_PATH }}
         remote_host: ${{ secrets.BUILDS_HOST }}
         remote_port: ${{ secrets.BUILDS_PORT }}
@@ -79,7 +80,7 @@ jobs:
         port: ${{ secrets.BUILDS_PORT }}
         username: ${{ secrets.BUILDS_USERNAME }}
         key: ${{ secrets.BUILDS_SSH_KEY }}
-        script: python3 ~/manifest.py --version ${{ github.sha }} adt
+        script: python3 ~/manifest.py --version ${{ github.sha }}
 
     - name: Update CDN repository
       run: |
