@@ -5,7 +5,7 @@ using Content.Shared.Changeling.Components;
 
 namespace Content.Server.Chemistry.ReagentEffects;
 
-public sealed partial class LingEggs : ReagentEffect
+public sealed partial class LingEggs : ReagentEffect 
 {
     protected override string? ReagentEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
   => Loc.GetString("reagent-effect-guidebook-missing", ("chance", Probability));
@@ -14,6 +14,6 @@ public sealed partial class LingEggs : ReagentEffect
     public override void Effect(ReagentEffectArgs args)
     {
         var entityManager = args.EntityManager;
-        entityManager.EnsureComponent<LingEggsHolderComponent>(args.SolutionEntity);
+        entityManager.EnsureComponent<SyntLingEggsHolderComponent>(args.SolutionEntity);
     }
 }

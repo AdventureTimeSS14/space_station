@@ -58,7 +58,8 @@ namespace Content.Shared.Alert
         Chemicals,
         PainKiller,
         ADTAlertPolymorph,
-        ADTAlertApathy
+        ADTAlertApathy,
+        ADTAlertLingRefresh
     }
 
 }

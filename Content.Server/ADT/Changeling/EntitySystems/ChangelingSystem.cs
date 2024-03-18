@@ -58,7 +58,7 @@ public sealed partial class ChangelingSystem : EntitySystem
     [Dependency] private readonly DamageableSystem _damageableSystem = default!;
     [Dependency] private readonly GibbingSystem _gibbingSystem = default!;
     [Dependency] private readonly SharedMindSystem _mindSystem = default!;
-    [Dependency] private readonly SharedCombatModeSystem _combat = default!;
+    [Dependency] private readonly AlertsSystem _alertsSystem = default!;
 
     public override void Initialize()
     {
@@ -152,7 +152,7 @@ public sealed partial class ChangelingSystem : EntitySystem
         _action.AddAction(uid, ref component.ChangelingDNAStingActionEntity, component.ChangelingDNAStingAction);
         _action.AddAction(uid, ref component.ChangelingDNACycleActionEntity, component.ChangelingDNACycleAction);
         _action.AddAction(uid, ref component.ChangelingTransformActionEntity, component.ChangelingTransformAction);
-        _action.AddAction(uid, ref component.ChangelingRefreshActionEntity, component.ChangelingRefreshAction);
+        //_action.AddAction(uid, ref component.ChangelingRefreshActionEntity, component.ChangelingRefreshAction);
     }
 
     private void OnShutdown(EntityUid uid, ChangelingComponent component, ComponentShutdown args)
@@ -163,7 +163,7 @@ public sealed partial class ChangelingSystem : EntitySystem
         _action.RemoveAction(uid, component.ChangelingDNAStingActionEntity);
         _action.RemoveAction(uid, component.ChangelingDNACycleActionEntity);
         _action.RemoveAction(uid, component.ChangelingTransformActionEntity);
-        _action.RemoveAction(uid, component.ChangelingRefreshActionEntity);
+        //_action.RemoveAction(uid, component.ChangelingRefreshActionEntity);
     }
     private void OnShop(EntityUid uid, ChangelingComponent component, ChangelingEvolutionMenuActionEvent args)
     {
@@ -530,6 +530,14 @@ public sealed partial class ChangelingSystem : EntitySystem
             _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
             return false;
         }
+
+        if (component.LesserFormActive)
+        {
+            var selfMessage = Loc.GetString("changeling-transform-fail-lesser-form");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return false;
+        }
+
         else
         {
             component.StoredDNA = new List<PolymorphHumanoidData>();    /// Создание нового ДНК списка
@@ -541,22 +549,11 @@ public sealed partial class ChangelingSystem : EntitySystem
 
             /// Удаление всех способностей - нихуя не понял, потом сделаю. Надеюсь.
 
-            ///_action.RemoveAction(uid, component.ChangelingArmBladeActionEntity);
-            ///_action.RemoveAction(uid, component.ChangelingArmorActionActionEntity);
-            ///_action.RemoveAction(uid, component.ChangelingInvisibleActionEntity);
-            ///_action.RemoveAction(uid, component.ChangelingEMPActionEntity);
-            ///_action.RemoveAction(uid, component.ChangelingStasisDeathActionEntity);
-            ///_action.RemoveAction(uid, component.ChangelingBlindStingActionEntity);
-            ///_action.RemoveAction(uid, component.ChangelingAdrenalineActionEntity);
-            ///_action.RemoveAction(uid, component.ChangelingOmniHealActionEntity);
-            ///_action.RemoveAction(uid, component.ChangelingMuteStingActionEntity);
-
-            /// Всё ещё не работает, закомменчу что вышло, надо разобраться как при покупке использовать вместо
-            /// _action.AddAction(uid, component.Action);
-            /// _action.AddAction(uid, ref component.ActionEntity, component.Action);
             component.CanRefresh = false;
-
+            _alertsSystem.ClearAlert(uid, AlertType.ADTAlertLingRefresh);
             component.SelectedDNA = 0;
+            var selfMessage = Loc.GetString("changeling-refresh-self-success");
+            _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
             return true;
         }
 

@@ -24,6 +24,7 @@ using Content.Server.Fluids.EntitySystems;
 using Content.Shared.Mobs;
 using Content.Server.Destructible;
 using Content.Server.Ghost.Components;
+using Content.Shared.Alert;
 
 namespace Content.Server.Changeling.EntitySystems;
 
@@ -54,7 +55,6 @@ public sealed partial class ChangelingSystem
         SubscribeLocalEvent<ChangelingComponent, StasisDeathActionEvent>(OnStasisDeathAction);
         SubscribeLocalEvent<ChangelingComponent, BlindStingEvent>(OnBlindSting);
         SubscribeLocalEvent<ChangelingComponent, AdrenalineActionEvent>(OnAdrenaline);
-        SubscribeLocalEvent<ChangelingComponent, ChangelingRefreshActionEvent>(OnRefresh);
         SubscribeLocalEvent<ChangelingComponent, OmniHealActionEvent>(OnOmniHeal);
         SubscribeLocalEvent<ChangelingComponent, MuteStingEvent>(OnMuteSting);
         SubscribeLocalEvent<ChangelingComponent, DrugStingEvent>(OnDrugSting);
@@ -203,6 +203,7 @@ public sealed partial class ChangelingSystem
                 var selfMessage = Loc.GetString("changeling-dna-success", ("target", Identity.Entity(target, EntityManager)));
                 _popup.PopupEntity(selfMessage, uid, uid, PopupType.Medium);
                 component.CanRefresh = true;
+                _alertsSystem.ShowAlert(uid, AlertType.ADTAlertLingRefresh);
                 component.AbsorbedDnaModifier = component.AbsorbedDnaModifier + 1;
             }
         }
@@ -937,31 +938,6 @@ public sealed partial class ChangelingSystem
 
             var selfMessage = Loc.GetString("changeling-omnizine-self-success");
             _popup.PopupEntity(selfMessage, uid, uid, PopupType.Small);
-        }
-
-    }
-
-    private void OnRefresh(EntityUid uid, ChangelingComponent component, ChangelingRefreshActionEvent args)
-    {
-        if (args.Handled)
-            return;
-
-        if (component.LesserFormActive)
-        {
-            var selfMessage = Loc.GetString("changeling-transform-fail-lesser-form");
-            _popup.PopupEntity(selfMessage, uid, uid);
-            return;
-        }
-
-        if (!TryUseAbility(uid, component, component.ChemicalsCostFree))
-            return;
-
-        if (Refresh(uid, component))
-        {
-            args.Handled = true;
-
-            var selfMessage = Loc.GetString("changeling-refresh-self-success");
-            _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
         }
 
     }
