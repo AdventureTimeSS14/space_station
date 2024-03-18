@@ -74,5 +74,5 @@ ent-MaterialBones = кость
     .siffix = 30
     .desc = { ent-MaterialBase.desc }
 ent-MaterialBones1 = кость  
-    .suffix = 1
+    .suffix = Один
     .desc = { ent-MaterialBase.desc }
