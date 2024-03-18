@@ -60,16 +60,18 @@ jobs:
       run: |
         mkdir "release/${{ github.sha }}"
         mv release/*.zip "release/${{ github.sha }}"
-        
-    - name: Install SSH Key
-      uses: shimataro/ssh-key-action@v2
-      with:
-        key: ${{ secrets.BUILDS_SSH_KEY }}
-        known_hosts: ${{ secrets.BUILDS_HOST }}
     
     - name: Upload files to mothership
-      run: rsync -avz release/${{ github.sha }} ${{ secrets.BUILDS_USERNAME }}@${{ secrets.BUILDS_HOST }}:${{ secrets.BUILDS_PATH }}
-
+      uses: burnett01/rsync-deployments@7.0.0
+      with:
+        switches: -avzr --ignore-existing
+        path: "release/${{ github.sha }}"
+        remote_path: ${{ secrets.BUILDS_PATH }}
+        remote_host: ${{ secrets.BUILDS_HOST }}
+        remote_port: ${{ secrets.BUILDS_PORT }}
+        remote_user: ${{ secrets.BUILDS_USERNAME }}
+        remote_key: ${{ secrets.BUILDS_SSH_KEY }}
+    
     - name: Update manifest JSON
       uses: appleboy/ssh-action@master
       with:
