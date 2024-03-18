@@ -17,7 +17,37 @@
   - type: ContainerContainer
     containers:
       bodypart: !type:Container
+        showEnts: False
+        occludes: True
         ents: []
+      shoes: !type:ContainerSlot
+        showEnts: False
+        occludes: False
+        ent: null
+      socks: !type:ContainerSlot
+        showEnts: False
+        occludes: False
+        ent: null
+      underwearb: !type:ContainerSlot
+        showEnts: False
+        occludes: False
+        ent: null
+      underweart: !type:ContainerSlot
+        showEnts: False
+        occludes: False
+        ent: null
+      jumpsuit: !type:ContainerSlot
+        showEnts: False
+        occludes: False
+        ent: null
+      outerClothing: !type:ContainerSlot
+        showEnts: False
+        occludes: False
+        ent: null
+      gloves: !type:ContainerSlot
+        showEnts: False
+        occludes: False
+        ent: null
   - type: Stripping
   - type: Strippable
   - type: BodyPart
