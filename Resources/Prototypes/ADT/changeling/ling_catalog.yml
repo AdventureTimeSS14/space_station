@@ -18,7 +18,7 @@
   productAction: ActionArmBlade
   mindAction: false
   cost:
-    EvolutionPoints: 4
+    EvolutionPoints: 3
   categories:
   - ChangelingAbilities
   conditions:
@@ -32,7 +32,7 @@
   productAction: ActionLingArmor
   mindAction: false
   cost:
-    EvolutionPoints: 7
+    EvolutionPoints: 3
   categories:
   - ChangelingAbilities
   conditions:
@@ -46,7 +46,7 @@
   productAction: ActionLingInvisible
   mindAction: false
   cost:
-    EvolutionPoints: 7
+    EvolutionPoints: 3
   categories:
   - ChangelingAbilities
   conditions:
@@ -187,20 +187,6 @@
   mindAction: false
   cost:
     EvolutionPoints: 3
-  categories:
-  - ChangelingAbilities
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 1
-
-- type: listing
-  id: ChangelingDrugSting
-  name: drug-sting
-  description: drug-sting-desc
-  productAction: ActionLingDrugSting
-  mindAction: false
-  cost:
-    EvolutionPoints: 2
   categories:
   - ChangelingAbilities
   conditions:

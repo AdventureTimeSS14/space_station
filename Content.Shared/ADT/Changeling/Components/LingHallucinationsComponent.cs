@@ -21,7 +21,7 @@ public sealed partial class LingHallucinationsComponent : Component
     public float SpawnRate = 15f;
 
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float Chance = 0.65f;
+    public float Chance = 0.8f;
     public List<EntProtoId> Spawns = new List<EntProtoId> { "ADTHallucinationMobSpider", "ADTHallucinationMobSlime", "ADTHallucinationMobBehonker", "ADTHallucinationRod" };
 
     [DataField]

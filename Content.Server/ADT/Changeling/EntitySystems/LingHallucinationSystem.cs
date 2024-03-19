@@ -22,25 +22,19 @@ public sealed class LingHallucinationSystem : EntitySystem
 
     public override void Initialize()
     {
-        //SubscribeLocalEvent<LingHallucinationComponent, MapInitEvent>(OnMapInit);
+        SubscribeLocalEvent<LingHallucinationComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<LingHallucinationComponent, ComponentShutdown>(OnShutdown);
     }
 
 
-    //private void OnMapInit(EntityUid uid, LingHallucinationComponent component, MapInitEvent args)
-    //{
-    //    // Allow this entity to be seen by other ghosts.
-    //    var visibility = EnsureComp<VisibilityComponent>(uid);
+    private void OnMapInit(EntityUid uid, LingHallucinationComponent component, MapInitEvent args)
+    {
+        // Allow this entity to be seen by other ghosts.
+        var visibility = EnsureComp<VisibilityComponent>(uid);
 
-    //    _visibilitySystem.AddLayer(uid, visibility, component.Layer, false);
-    //    _visibilitySystem.RemoveLayer(uid, visibility, (int) VisibilityFlags.Normal, false);
-    //    _visibilitySystem.RefreshVisibility(uid, visibilityComponent: visibility);
-    //    if (!_entityManager.TryGetComponent<EyeComponent>(uid, out var eye))
-    //        return;
-
-    //    _eye.SetVisibilityMask(uid, eye.VisibilityMask | component.Layer, eye);
-    //    _visibilitySystem.RefreshVisibility(uid, visibilityComponent: visibility);
-    //}
+        _visibilitySystem.RemoveLayer(uid, visibility, (int) VisibilityFlags.Normal, false);
+        _visibilitySystem.RefreshVisibility(uid, visibilityComponent: visibility);
+    }
 
     private void OnShutdown(EntityUid uid, LingHallucinationComponent component, ComponentShutdown args)
     {

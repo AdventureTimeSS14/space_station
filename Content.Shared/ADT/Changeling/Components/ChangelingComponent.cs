@@ -406,7 +406,7 @@ public sealed partial class ChangelingComponent : Component
     public float MuteAmount = 20f;
 
     [ViewVariables(VVAccess.ReadWrite), DataField("drugAmount")]
-    public float SpaceDrugsAmount = 35f;
+    public float SpaceDrugsAmount = 50f;
 
     #endregion
 
