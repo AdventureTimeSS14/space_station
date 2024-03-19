@@ -103,8 +103,8 @@
       type: StoreBoundUserInterface               # Чтобы не ломался генокрад
     - key: enum.StrippingUiKey.Key
       type: StrippableBoundUserInterface
-    - key: enum.HumanoidMarkingModifierKey.Key # sure, this can go here too
-      type: HumanoidMarkingModifierBoundUserInterface
+    #- key: enum.HumanoidMarkingModifierKey.Key # sure, this can go here too
+    #  type: HumanoidMarkingModifierBoundUserInterface
 
 
 - type: entity
