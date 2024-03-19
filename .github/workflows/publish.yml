@@ -22,6 +22,6 @@ jobs:
       with:
         host: ${{ secrets.BUILDS_HOST }}
         username: ${{ secrets.BUILDS_USERNAME }}
-        key: ${{ secrets.BUILDS_SSH_KEY }}
+        password: ${{ secrets.BUILD_PASSWORD }}
         port: ${{ secrets.BUILDS_PORT }}
         script: whoami
