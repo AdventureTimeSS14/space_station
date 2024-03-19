@@ -166,7 +166,7 @@
     stock: 1
 
 - type: listing
-  id: ChangelingDrugStick
+  id: ChangelingDrugSting
   name: drug-sting
   description: drug-sting-desc
   productAction: ActionLingDrugSting
