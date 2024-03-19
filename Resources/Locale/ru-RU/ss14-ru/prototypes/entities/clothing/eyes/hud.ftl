@@ -20,3 +20,5 @@ ent-ClothingEyesHudMultiversal = multiversal hud
     .desc = Filler
 ent-ClothingEyesHudOmni = omni hud
     .desc = Filler
+ent-ClothingEyesEyepatchHudSecurity = защитный наглазник
+    .desc = Налобный дисплей, сканирующий гуманоидов, находящихся в поле зрения, и предоставляющий точные данные об их идентификационном статусе и записях о безопасности. Для настоящих патриотов.

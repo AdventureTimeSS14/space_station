@@ -68,3 +68,5 @@ ent-WallInvisible = невидимая стена
     .desc = { "" }
 ent-WallForce = силовой барьер
     .desc = { "" }
+ent-WallReinforcedRust = укреплённая стена
+    .desc = Не пропускает воздух и не пускает грызунов.
