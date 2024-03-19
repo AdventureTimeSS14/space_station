@@ -25,7 +25,7 @@
   suffix: DO NOT MAP
   noSpawn: true
   components:
-  - type: Hallucination
+  #- type: Hallucination
   - type: Fixtures
     fixtures:
       fix1:
@@ -111,14 +111,25 @@
 
       # Base
 - type: entity
-  parent: ADTBaseEntityHallucination
+  parent: BaseMob
   id: ADTBaseLingHallucination
   name: "???"
   description: "???"
   suffix: DO NOT MAP
   noSpawn: true
   components:
-  - type: LingHallucination
+  #- type: LingHallucination
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 15
+        mask:
+          - MobMask
+        layer:
+          - None
 
       # Ling ents
 - type: entity

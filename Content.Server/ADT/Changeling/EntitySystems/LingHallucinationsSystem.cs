@@ -62,16 +62,17 @@ public sealed partial class LingHallucinationsSystem : EntitySystem
 
     private void OnHallucinationsInit(EntityUid uid, LingHallucinationsComponent component, MapInitEvent args)
     {
+        component.Layer = _random.Next(50, 500);
         if (!_entityManager.TryGetComponent<EyeComponent>(uid, out var eye))
             return;
-        _eye.SetVisibilityMask(uid, eye.VisibilityMask | (int) VisibilityFlags.LingToxin, eye);
+        _eye.SetVisibilityMask(uid, eye.VisibilityMask | component.Layer, eye);
     }
 
     private void OnHallucinationsShutdown(EntityUid uid, LingHallucinationsComponent component, ComponentShutdown args)
     {
         if (!_entityManager.TryGetComponent<EyeComponent>(uid, out var eye))
             return;
-        _eye.SetVisibilityMask(uid, eye.VisibilityMask & ~(int) VisibilityFlags.LingToxin, eye);
+        _eye.SetVisibilityMask(uid, eye.VisibilityMask & ~component.Layer, eye);
     }
 
     public override void Update(float frameTime)
@@ -95,8 +96,16 @@ public sealed partial class LingHallucinationsSystem : EntitySystem
             {
                 var newCoords = Transform(ent).MapPosition.Offset(_random.NextVector2(stat.Range));
 
-                Spawn(_random.Pick(stat.Spawns), newCoords);
+                var hallucination = Spawn(_random.Pick(stat.Spawns), newCoords);
+                EnsureComp<LingHallucinationComponent>(hallucination, out var visibility);
+                visibility.Layer = stat.Layer;
             }
+
+            var uidnewCoords = Transform(uid).MapPosition.Offset(_random.NextVector2(stat.Range));
+
+            var uidhallucination = Spawn(_random.Pick(stat.Spawns), uidnewCoords);
+            EnsureComp<LingHallucinationComponent>(uidhallucination, out var uidvisibility);
+            uidvisibility.Layer = stat.Layer;
         }
     }
 }
