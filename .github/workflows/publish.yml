@@ -17,14 +17,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Install dependencies
-      run: sudo apt-get install -y python3-paramiko python3-lxml
-  
     - name: Update manifest JSON
-      uses: appleboy/ssh-action@master
+      uses: appleboy/ssh-action@v1.0.3
       with:
         host: ${{ secrets.BUILDS_HOST }}
-        port: ${{ secrets.BUILDS_PORT }}
         username: ${{ secrets.BUILDS_USERNAME }}
         key: ${{ secrets.BUILDS_SSH_KEY }}
-        script: python3 ~/manifest.py --version ${{ github.sha }}
+        port: ${{ secrets.BUILDS_PORT }}
+        script: whoami
