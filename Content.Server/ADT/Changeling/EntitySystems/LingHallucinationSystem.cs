@@ -1,4 +1,3 @@
-using Content.Server.GameTicking;
 using Content.Server.Mind;
 using Content.Server.Roles.Jobs;
 using Content.Shared.Actions;
@@ -17,19 +16,7 @@ namespace Content.Server.Changeling;
 
 public sealed class LingHallucinationSystem : EntitySystem
 {
-    [Dependency] private readonly SharedActionsSystem _actions = default!;
     [Dependency] private readonly SharedEyeSystem _eye = default!;
-    [Dependency] private readonly FollowerSystem _followerSystem = default!;
-    [Dependency] private readonly IGameTiming _gameTiming = default!;
-    [Dependency] private readonly JobSystem _jobs = default!;
-    [Dependency] private readonly EntityLookupSystem _lookup = default!;
-    [Dependency] private readonly MindSystem _minds = default!;
-    [Dependency] private readonly SharedMindSystem _mindSystem = default!;
-    [Dependency] private readonly MobStateSystem _mobState = default!;
-    [Dependency] private readonly SharedPhysicsSystem _physics = default!;
-    [Dependency] private readonly IPlayerManager _playerManager = default!;
-    [Dependency] private readonly GameTicker _ticker = default!;
-    [Dependency] private readonly TransformSystem _transformSystem = default!;
     [Dependency] private readonly VisibilitySystem _visibilitySystem = default!;
     [Dependency] private readonly IEntityManager _entityManager = default!;
 
@@ -45,16 +32,8 @@ public sealed class LingHallucinationSystem : EntitySystem
         // Allow this entity to be seen by other ghosts.
         var visibility = EnsureComp<VisibilityComponent>(uid);
 
-        if (_ticker.RunLevel != GameRunLevel.PostRound)
-        {
-            _visibilitySystem.AddLayer(uid, visibility, (int) VisibilityFlags.LingToxin, false);
-            _visibilitySystem.RemoveLayer(uid, visibility, (int) VisibilityFlags.Normal, false);
-            _visibilitySystem.RefreshVisibility(uid, visibilityComponent: visibility);
-            if (!_entityManager.TryGetComponent<EyeComponent>(uid, out var eye))
-                return;
-
-            _eye.SetVisibilityMask(uid, eye.VisibilityMask | (int) VisibilityFlags.LingToxin, eye);
-        }
+        _visibilitySystem.RemoveLayer(uid, visibility, (int) VisibilityFlags.Normal, false);
+        _visibilitySystem.RefreshVisibility(uid, visibilityComponent: visibility);
     }
 
     private void OnShutdown(EntityUid uid, LingHallucinationComponent component, ComponentShutdown args)
@@ -66,13 +45,42 @@ public sealed class LingHallucinationSystem : EntitySystem
         // Entity can't be seen by ghosts anymore.
         if (TryComp(uid, out VisibilityComponent? visibility))
         {
-            _visibilitySystem.RemoveLayer(uid, visibility, (int) VisibilityFlags.LingToxin, false);
+            _visibilitySystem.RemoveLayer(uid, visibility, component.Layer, false);
             _visibilitySystem.AddLayer(uid, visibility, (int) VisibilityFlags.Normal, false);
             _visibilitySystem.RefreshVisibility(uid, visibilityComponent: visibility);
             if (!_entityManager.TryGetComponent<EyeComponent>(uid, out var eye))
                 return;
 
-            _eye.SetVisibilityMask(uid, eye.VisibilityMask & ~(int) VisibilityFlags.LingToxin, eye);
+            _eye.SetVisibilityMask(uid, eye.VisibilityMask & ~component.Layer, eye);
+            _visibilitySystem.RefreshVisibility(uid, visibilityComponent: visibility);
         }
     }
+
+    public override void Update(float frameTime)
+    {
+        base.Update(frameTime);
+
+        var query = EntityQueryEnumerator<LingHallucinationComponent, TransformComponent>();
+        while (query.MoveNext(out var uid, out var stat, out var xform))
+        {
+            TryComp<VisibilityComponent>(uid, out var curVisibility);
+            if (curVisibility != null)
+            {
+                if (stat.Layer == curVisibility.Layer)
+                    return;
+            }
+            // Allow this entity to be seen by other ghosts.
+            var visibility = EnsureComp<VisibilityComponent>(uid);
+
+            _visibilitySystem.AddLayer(uid, visibility, stat.Layer, false);
+            _visibilitySystem.RemoveLayer(uid, visibility, (int) VisibilityFlags.Normal, false);
+            _visibilitySystem.RefreshVisibility(uid, visibilityComponent: visibility);
+            if (!_entityManager.TryGetComponent<EyeComponent>(uid, out var eye))
+                return;
+
+            _eye.SetVisibilityMask(uid, eye.VisibilityMask | stat.Layer, eye);
+            _visibilitySystem.RefreshVisibility(uid, visibilityComponent: visibility);
+        }
+    }
+
 }

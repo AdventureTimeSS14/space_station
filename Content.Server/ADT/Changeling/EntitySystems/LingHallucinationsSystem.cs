@@ -13,37 +13,22 @@ using Content.Shared.StatusEffect;
 using Robust.Shared.Timing;
 using Content.Shared.Eye;
 using Content.Shared.Movement.Systems;
-using Content.Shared.Damage.Systems;
-using Content.Shared.Damage;
+using Content.Shared.Database;
 using Content.Shared.Changeling.Components;
 using Robust.Server.GameObjects;
 using Robust.Shared.Map;
 using Robust.Shared.Random;
 using Content.Server.Mind;
+using Content.Shared.Administration.Logs;
 
 namespace Content.Server.Changeling.EntitySystems;
 
 public sealed partial class LingHallucinationsSystem : EntitySystem
 {
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly StoreSystem _store = default!;
-    [Dependency] private readonly ActionsSystem _action = default!;
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
-    [Dependency] private readonly MobStateSystem _mobState = default!;
-    [Dependency] private readonly PolymorphSystem _polymorph = default!;
-    [Dependency] private readonly MetaDataSystem _metaData = default!;
-    [Dependency] private readonly ISerializationManager _serialization = default!;
-    [Dependency] private readonly ActionContainerSystem _actionContainer = default!;
-    [Dependency] private readonly AlertsSystem _alerts = default!;
-    [Dependency] private readonly TagSystem _tagSystem = default!;
-    [Dependency] private readonly StatusEffectsSystem _status = default!;
     [Dependency] private readonly IEntityManager _entityManager = default!;
-    [Dependency] private readonly MovementSpeedModifierSystem _movementSpeedModifierSystem = default!;
-    [Dependency] private readonly StaminaSystem _stamina = default!;
-    [Dependency] private readonly DamageableSystem _damageableSystem = default!;
-    [Dependency] private readonly SharedMapSystem _mapSystem = default!;
     [Dependency] private readonly VisibilitySystem _visibilitySystem = default!;
-    [Dependency] private readonly StatusEffectsSystem _statusEffectsSystem = default!;
+    [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
     [Dependency] private readonly SharedEyeSystem _eye = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
@@ -62,16 +47,22 @@ public sealed partial class LingHallucinationsSystem : EntitySystem
 
     private void OnHallucinationsInit(EntityUid uid, LingHallucinationsComponent component, MapInitEvent args)
     {
+        component.Layer = _random.Next(50, 500);
         if (!_entityManager.TryGetComponent<EyeComponent>(uid, out var eye))
             return;
-        _eye.SetVisibilityMask(uid, eye.VisibilityMask | (int) VisibilityFlags.LingToxin, eye);
+        _eye.SetVisibilityMask(uid, eye.VisibilityMask | component.Layer, eye);
+
+        _adminLogger.Add(LogType.Action, LogImpact.Medium,
+        $"{ToPrettyString(uid):player} began to hallucinate.");
     }
 
     private void OnHallucinationsShutdown(EntityUid uid, LingHallucinationsComponent component, ComponentShutdown args)
     {
         if (!_entityManager.TryGetComponent<EyeComponent>(uid, out var eye))
             return;
-        _eye.SetVisibilityMask(uid, eye.VisibilityMask & ~(int) VisibilityFlags.LingToxin, eye);
+        _eye.SetVisibilityMask(uid, eye.VisibilityMask & ~component.Layer, eye);
+        _adminLogger.Add(LogType.Action, LogImpact.Medium,
+        $"{ToPrettyString(uid):player} stopped hallucinating.");
     }
 
     public override void Update(float frameTime)
@@ -95,8 +86,16 @@ public sealed partial class LingHallucinationsSystem : EntitySystem
             {
                 var newCoords = Transform(ent).MapPosition.Offset(_random.NextVector2(stat.Range));
 
-                Spawn(_random.Pick(stat.Spawns), newCoords);
+                var hallucination = Spawn(_random.Pick(stat.Spawns), newCoords);
+                EnsureComp<LingHallucinationComponent>(hallucination, out var visibility);
+                visibility.Layer = stat.Layer;
             }
+
+            var uidnewCoords = Transform(uid).MapPosition.Offset(_random.NextVector2(stat.Range));
+
+            var uidhallucination = Spawn(_random.Pick(stat.Spawns), uidnewCoords);
+            EnsureComp<LingHallucinationComponent>(uidhallucination, out var uidvisibility);
+            uidvisibility.Layer = stat.Layer;
         }
     }
 }
