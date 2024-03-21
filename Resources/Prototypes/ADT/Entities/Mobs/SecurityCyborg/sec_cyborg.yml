@@ -95,7 +95,7 @@
   - type: SiliconLawProvider
     laws: SecCybLaw
   - type: EmagSiliconLaw
-    stunTime: 5
+    stunTime: 7
   # - type: IonStormTarget
   # - type: BorgChassis
   - type: ContainerFill
