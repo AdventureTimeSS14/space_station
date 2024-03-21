@@ -81,6 +81,7 @@
   - type: ActiveRadio
   - type: IntrinsicRadioReceiver
   - type: IntrinsicRadioTransmitter
+  - type: WiresPanel  # + Тех панель
   - type: Wires
     boardName: "ipc-board-name"
     layoutId: ADTBodyCyborgSec
