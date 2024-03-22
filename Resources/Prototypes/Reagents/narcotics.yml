@@ -271,7 +271,7 @@
   metabolisms:
     Narcotic:
       effects:
-      - !type:GenericStatusEffect
+      - !type:GenericStatusEffect 
         key: SeeingRainbows
         component: SeeingRainbows
         type: Add
@@ -281,6 +281,32 @@
         type: Local
         visualType: Small
         messages: [ "narcotic-effect-rainbows" ]
+        probability: 0.07
+
+- type: reagent
+  id: ADTLooseDrug
+  name: reagent-name-loose-drugs
+  group: Narcotics
+  desc: reagent-desc-loose-drugs
+  physicalDesc: reagent-physical-desc-soapy
+  flavor: fizzy
+  color: "#00fa9a"
+  metabolisms:
+    Narcotic:
+      effects:
+      - !type:GenericStatusEffect #эффект опьянение
+        key: Drunk
+        component: Drunk
+        type: Add
+        time: 5
+        refresh: false
+        #boozepower: 80
+      - !type:Drunk
+        slurSpeech: false
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "narcotic-effect-loose" ]
         probability: 0.07
 
 - type: reagent

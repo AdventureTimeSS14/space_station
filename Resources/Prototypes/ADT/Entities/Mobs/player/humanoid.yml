@@ -1,0 +1,73 @@
+## ОЦк для игроков
+- type: entity
+  name: CentCom official
+  id: ADTRandomHumanoidSpawnerOperatorCentComm
+  suffix: "Game-Master, Operator CentComm"
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: centcom
+    - type: RandomHumanoidSpawner
+      settings: ADTOperatorCentComm
+    - type: InitialInfectedExempt
+    - type: AutoImplant
+      implants:
+      - MindShieldImplant
+
+- type: randomHumanoidSettings
+  id: ADTOperatorCentComm
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-operator-centcom-official-name
+      description: ghost-role-information-operator-centcom-official-description
+      requirements:
+      - !type:OverallPlaytimeRequirement
+        time: 72000 # 20h overall
+      - !type:DepartmentTimeRequirement
+        department: Command
+        time: 72000 # 20h
+      - !type:DepartmentTimeRequirement
+        department: Security
+        time: 72000 # 20h
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ ADTOperatorCentCommGear ]
+    - type: InitialInfectedExempt
+
+- type: startingGear
+  id: ADTOperatorCentCommGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomOfficial
+    shoes: ClothingShoesBootsCombatFilled
+    head: ClothingHeadHatCentcom
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesColorBlack
+    outerClothing: ClothingOuterArmorBasic
+    id: CentcomPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: WeaponPistolN1984
+    pocket1: BoxFolderBlack
+    pocket2: PhoneInstrument
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+
+    # - !type:OverallPlaytimeRequirement
+    #   time: 324000 #90 hrs
+    # - !type:DepartmentTimeRequirement
+    #   department: Security
+    #   time: 324000 #90 hrs
+    # - !type:RoleTimeRequirement
+    #   role: JobSecurityOfficer
+    #   time: 21600 #6 hrs 21600
+    # - !type:RoleTimeRequirement
+    #   role: JobWarden
+    #   time: 21600 #6 hrs 21600
+    # - !type:RoleTimeRequirement
+    #   role: JobDetective
+    #   time: 7200 #2 hrs 7200
+    # - !type:DepartmentTimeRequirement
+    #   department: Command
+    #   time: 72000
