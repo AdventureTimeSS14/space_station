@@ -156,7 +156,7 @@
       - id: ClothingUniformJumpsuitParamedic
       - id: ClothingUniformJumpskirtParamedic
       - id: ClothingEyesHudMedical
-      - id: Defibrillator
+      - id: ADTHighVoltageDefibrillator
       - id: ClothingHandsGlovesLatex
       - id: ADTClothingHeadsetParamedic
       - id: ADTClothingOuterCoatLabParamedic

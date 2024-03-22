@@ -94,6 +94,17 @@
     tallscale: 1
     short: true
     shortscale: 0.85
+  - type: SlimeHair    # TODO: Исправить проблему с генокрадом. ## Done. Мейби стоит чуть подредактировать позже, но это потом, когда у меня сил побольше будет.
+  - type: UserInterface     # upd: БЛЯТЬ! Так и надо было, почему? Почему это такая неудобная лапша??
+    interfaces:
+    - key: enum.SlimeHairUiKey.Key
+      type: SlimeHairBoundUserInterface
+    - key: enum.StoreUiKey.Key                # Чтобы не ломался генокрад
+      type: StoreBoundUserInterface               # Чтобы не ломался генокрад
+    - key: enum.StrippingUiKey.Key
+      type: StrippableBoundUserInterface
+    #- key: enum.HumanoidMarkingModifierKey.Key # sure, this can go here too
+    #  type: HumanoidMarkingModifierBoundUserInterface
 
 
 - type: entity

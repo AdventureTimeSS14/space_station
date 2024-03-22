@@ -134,6 +134,7 @@
       - !type:WashCreamPieReaction
   - type: StatusEffects
     allowed:
+    - ADTApathy
     - PainKiller
     - Stun
     - KnockedDown
@@ -150,6 +151,7 @@
     - TemporaryBlindness
     - Pacified
     - StaminaModifier
+    - ADTHallucinations
   - type: Reflect
     enabled: false
     reflectProb: 0
@@ -275,6 +277,7 @@
   # Organs
   - type: StatusEffects
     allowed:
+    - ADTApathy
     - PainKiller
     - Stun
     - KnockedDown
@@ -291,6 +294,7 @@
     - Muted
     - Pacified
     - StaminaModifier
+    - ADTHallucinations
   - type: Blindable
   # Other
   - type: Temperature

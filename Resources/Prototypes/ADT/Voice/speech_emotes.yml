@@ -6,3 +6,31 @@
     - bigs up
     - buffs up
     - качается
+
+- type: emote
+  id: Laugh-apathy
+  category: Vocal
+  chatMessages: [выдавливает из себя смех] 
+  chatTriggers:
+    - выдавливает из себя смех
+
+- type: emote
+  id: Scream-apathy
+  category: Vocal
+  chatMessages: [наигранно кричит!] 
+  chatTriggers:
+    - наигранно кричит!
+
+- type: emote
+  id: Sigh-apathy
+  category: Vocal
+  chatMessages: [театрально вздыхает] 
+  chatTriggers:
+    - театрально вздыхает
+
+- type: emote
+  id: Crying-apathy
+  category: Vocal
+  chatMessages: [фальшиво плачет] 
+  chatTriggers:
+    - фальшиво плачет

@@ -9,14 +9,43 @@
   metabolisms:
     Medicine:
       effects:
+      - !type:PopupMessage
+        conditions:
+          - !type:ReagentThreshold
+            min: 12
+            max: 20
+        type: Local
+        visualType: Small
+        messages: [ "polymorph-effect-feelings" ]
+        probability: 0.07
+      - !type:PopupMessage
+        conditions:
+          - !type:ReagentThreshold
+            min: 16
+            max: 16.5
+        type: Pvs
+        visualType: Small
+        messages: [ "medicine-effect-visible-polymorph" ]
+        probability: 1
+      - !type:Jitter
+        conditions:
+        - !type:ReagentThreshold
+          min: 12
+          max: 20
+      - !type:AdjustAlert
+        conditions:
+          - !type:ReagentThreshold
+            min: 14
+            max: 20
+        alertType: ADTAlertPolymorph
       - !type:Polymorph
         prototype: ADTPMonkey
         conditions:
           - !type:OrganType
             type: Human
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph
         prototype: ADTPMonkey2
@@ -24,8 +53,8 @@
           - !type:OrganType
             type: Human
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph
         prototype: ADTPMonkey
@@ -33,8 +62,8 @@
           - !type:OrganType
             type: Dwarf
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph
         prototype: ADTPMonkey2
@@ -42,8 +71,8 @@
           - !type:OrganType
             type: Dwarf
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph
         prototype: ADTPLizard
@@ -51,8 +80,8 @@
           - !type:OrganType
             type: Reptilian
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph
         prototype: ADTPLizard2
@@ -60,8 +89,8 @@
           - !type:OrganType
             type: Reptilian
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph
         prototype: ADTPSpider
@@ -69,8 +98,8 @@
           - !type:OrganType
             type: Arachnid
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph
         prototype: ADTPSpider2
@@ -78,8 +107,8 @@
           - !type:OrganType
             type: Arachnid
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph
         prototype: ADTPBush
@@ -87,8 +116,8 @@
           - !type:OrganType
             type: Plant
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph
         prototype: ADTPBush2
@@ -96,8 +125,8 @@
           - !type:OrganType
             type: Plant
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph
         prototype: ADTPMothroach
@@ -105,8 +134,8 @@
           - !type:OrganType
             type: Moth
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph
         prototype: ADTPMothroach2
@@ -114,8 +143,8 @@
           - !type:OrganType
             type: Moth
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph
         prototype: ADTPSmile
@@ -123,8 +152,8 @@
           - !type:OrganType
             type: Slime
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph
         prototype: ADTPSmile2
@@ -132,8 +161,8 @@
           - !type:OrganType
             type: Slime
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph #наши расы.
         prototype: ADTPCat
@@ -141,8 +170,8 @@
           - !type:OrganType
             type: Tajaran
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph
         prototype: ADTPCat2
@@ -150,8 +179,8 @@
           - !type:OrganType
             type: Tajaran
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph 
         prototype: ADTPCat
@@ -159,8 +188,26 @@
           - !type:OrganType
             type: Felinid
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
+        probability: 0.5
+      - !type:Polymorph
+        prototype: ADTPRodMetall
+        conditions:
+          - !type:OrganType
+            type: Novakid
+          - !type:ReagentThreshold
+            min: 16
+            max: 16
+        probability: 0.5
+      - !type:Polymorph 
+        prototype: ADTPRodMetall2
+        conditions:
+          - !type:OrganType
+            type: Novakid
+          - !type:ReagentThreshold
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph
         prototype: ADTPCat2
@@ -168,8 +215,8 @@
           - !type:OrganType
             type: Felinid
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph 
         prototype: ADTPDog
@@ -177,8 +224,8 @@
           - !type:OrganType
             type: Vulpkanin
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph
         prototype: ADTPDog2
@@ -186,8 +233,8 @@
           - !type:OrganType
             type: Vulpkanin
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph 
         prototype: ADTPMonkey 
@@ -195,8 +242,8 @@
           - !type:OrganType
             type: Demon
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph
         prototype: ADTPMonkey2
@@ -204,8 +251,8 @@
           - !type:OrganType
             type: Demon
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph 
         prototype: ADTPSpaceBear 
@@ -213,8 +260,8 @@
           - !type:OrganType
             type: Ursus
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph
         prototype: ADTPSpaceBear2
@@ -222,8 +269,8 @@
           - !type:OrganType
             type: Ursus
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph 
         prototype: ADTPSoap
@@ -231,8 +278,8 @@
           - !type:OrganType
             type: Drask
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph
         prototype: ADTPSoap2
@@ -240,8 +287,8 @@
           - !type:OrganType
             type: Drask
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.5
       - !type:Polymorph #животные, ради цели и разнообразия. Может быть сработает на некоторые расы, по типу Урсов или Унатхов.
         prototype: ADTPMouse
@@ -249,8 +296,8 @@
           - !type:OrganType
             type: Animal
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.25
       - !type:Polymorph 
         prototype: ADTPSpider2
@@ -258,8 +305,8 @@
           - !type:OrganType
             type: Animal
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.25
       - !type:Polymorph 
         prototype: ADTPCarp
@@ -267,8 +314,8 @@
           - !type:OrganType
             type: Animal
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.25
       - !type:Polymorph 
         prototype: ADTPLizard2
@@ -276,17 +323,9 @@
           - !type:OrganType
             type: Animal
           - !type:ReagentThreshold
-            min: 20
-            max: 20
+            min: 16
+            max: 16
         probability: 0.25
-      - !type:PopupMessage
-        conditions:
-          - !type:ReagentThreshold
-            min: 20
-        type: Local
-        visualType: Small
-        messages: [ "polymorph-effect-feelings" ]
-        probability: 0.05
 
 - type: reagent
   id: ADTMChaoticPolymorphine
@@ -302,88 +341,110 @@
       - !type:HealthChange
         conditions:
           - !type:ReagentThreshold
-            min: 15
-            max: 15
+            min: 12
+            max: 12
         damage:
           types:
-            Cellular: 20
+            Cellular: 15
+      - !type:PopupMessage
+        conditions:
+          - !type:ReagentThreshold
+            min: 8
+            max: 15
+        type: Local
+        visualType: Small
+        messages: [ "polymorph-effect-feelings" ]
+        probability: 0.07
+      - !type:PopupMessage
+        conditions:
+          - !type:ReagentThreshold
+            min: 11.5
+            max: 12
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-visible-polymorph" ]
+        probability: 1
+      - !type:Jitter
+        conditions:
+        - !type:ReagentThreshold
+          min: 8
+          max: 15
+      - !type:AdjustAlert
+        conditions:
+          - !type:ReagentThreshold
+            min: 14
+            max: 20
+        alertType: ADTAlertPolymorph 
       - !type:Polymorph
         prototype: ADTPMonkey
         conditions:
           - !type:ReagentThreshold
-            min: 15
-            max: 15
+            min: 12
+            max: 12
         probability: 0.1
       - !type:Polymorph
         prototype: ADTPBread
         conditions:
           - !type:ReagentThreshold
-            min: 15
-            max: 15
+            min: 12
+            max: 12
         probability: 0.1
       - !type:Polymorph
         prototype: ADTPRodMetall2
         conditions:
           - !type:ReagentThreshold
-            min: 15
-            max: 15
+            min: 12
+            max: 12
         probability: 0.1
       - !type:Polymorph
         prototype: ADTPFrog
         conditions:
           - !type:ReagentThreshold
-            min: 15
-            max: 15
+            min: 12
+            max: 12
         probability: 0.1
       - !type:Polymorph
         prototype: ADTPCat
         conditions:
           - !type:ReagentThreshold
-            min: 15
-            max: 15
+            min: 12
+            max: 12
         probability: 0.1
       - !type:Polymorph
         prototype: ADTPSkeleton
         conditions:
           - !type:ReagentThreshold
-            min: 15
-            max: 15
+            min: 12
+            max: 12
         probability: 0.1
       - !type:Polymorph
         prototype: ADTPCow
         conditions:
           - !type:ReagentThreshold
-            min: 15
-            max: 15
+            min: 12
+            max: 12
         probability: 0.1
       - !type:Polymorph
         prototype: ADTPPossum
         conditions:
           - !type:ReagentThreshold
-            min: 15
-            max: 15
+            min: 12
+            max: 12
         probability: 0.1
       - !type:Polymorph
         prototype: ADTPCarp
         conditions:
           - !type:ReagentThreshold
-            min: 15
-            max: 15
+            min: 12
+            max: 12
         probability: 0.1
       - !type:Polymorph
         prototype: ADTPSpaceBear
         conditions:
           - !type:ReagentThreshold
-            min: 15
-            max: 15
+            min: 12
+            max: 12
         probability: 0.1
-      - !type:PopupMessage
-        conditions:
-          - !type:ReagentThreshold
-            min: 15
-        type: Local
-        visualType: Small
-        messages: [ "polymorph-effect-feelings" ]
-        probability: 0.05
+
 
 #мне стыдно смотреть на этот код, но иначе как его сделать я не представляю.

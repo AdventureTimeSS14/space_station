@@ -2,9 +2,9 @@ ent-ADTClothingNeckKnightCloak = плащ рыцаря
     .desc = Шёлковый и внушительный рыцарский плащ. За честь короны!
     .suffix = { "" }
 
-ent-ADTClothingNeckJeton = армейский Жетон
-    .desc = На жетоне могла быть указан ваше Имя и Фамилия
-    .suffix = { "" }
+ent-ADTClothingNeckJeton = армейский жетон
+    .desc = Жетон с именем, фамилией и группой крови владельца.
+    .suffix = { "ТСФ" }
 
 ent-ADTClothingNeckPyotrCloak = плащ Петра Шахина
     .desc = Темно-зеленый плащ, расшитый золотом
@@ -46,3 +46,7 @@ ent-ClothingNeckCloakVoid = пустотный плащ
 
 ent-ADTClothingNeckMantleCentComm = наплечая мантия ЦентКома
     .desc = Удобная наплечная накидка для высшего командного состава NanoTrasen.
+
+ent-ADTClothingNeckTSFPatch = нашивка ТСФ "Воины Света"
+    .desc = Крепящийся на липучку патч войс ТСФ, с аббревиатурой на солнечном языке, означающей "Воины Света".
+    .suffix = { "ТСФ" }

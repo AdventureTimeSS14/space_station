@@ -54,6 +54,14 @@
         Slash: 6
   - type: ReplacementAccent
     accent: genericAggressive
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    whitelistRequired: false
+    name: ghost-role-information-flesh-name
+    description: ghost-role-information-flesh-description
+  - type: GhostTakeoverAvailable
 
 - type: entity
   parent: BaseMobFlesh

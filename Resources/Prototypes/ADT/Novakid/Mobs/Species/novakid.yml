@@ -192,6 +192,15 @@
       collection: MaleCry
     Whistle:
       collection: Whistles
+    # ADT-Apathy Sounds. 
+    Scream-apathy:
+      collection: NovakidScreams
+    Laugh-apathy:
+      collection: NovakidLaugh 
+    Sigh-apathy:
+      collection: MaleSigh
+    Crying-apathy:
+      collection: MaleCry
 
 - type: emoteSounds
   id: FemaleNovakid
@@ -226,7 +235,15 @@
       collection: FemaleCry
     Whistle:
       collection: Whistles
-
+    # ADT-Apathy Sounds. 
+    Scream-apathy:
+      collection: NovakidScreams
+    Laugh-apathy:
+      collection: NovakidLaugh 
+    Sigh-apathy:
+      collection: FemaleSigh
+    Crying-apathy:
+      collection: FemaleCry
 
 - type: soundCollection
   id: NovakidLaugh

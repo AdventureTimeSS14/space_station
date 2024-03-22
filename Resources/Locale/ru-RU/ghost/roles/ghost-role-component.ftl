@@ -130,3 +130,13 @@ ghost-role-information-exterminator-rules = Ты - крупный антагон
 
 ghost-role-information-mothroach-name = Моль
 ghost-role-information-mothroach-description = Поразительно милая, поразительно надоедливая.
+
+ghost-role-information-flesh-name = Порождение плоти
+ghost-role-information-flesh-description = Утолить голод...
+
+ghost-role-information-argocyte-name = Аргоцит
+ghost-role-information-argocyte-description = Защитите своё будущее гнездо от вторжения.
+
+ghost-role-information-ling-name = Генокрад
+ghost-role-information-ling-description = Ты - генокрад в форме червя. Найди себе оболочку и выживи.
+ghost-role-information-ling-rules = Вы не крупный антагонист! В ваши цели входит только выживание, и оно ДОЛЖНО быть превыше всего. Тем не менее, помощь остальным генокрадам не запрещается.

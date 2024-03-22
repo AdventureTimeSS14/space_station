@@ -24,3 +24,11 @@
   - ChangelingAbilities
   currencyWhitelist:
   - EvolutionPoints
+
+- type: storePreset
+  id: StorePresetWizard
+  storeName: SpellbookMenu
+  categories:
+  - WizardAbilities
+  currencyWhitelist:
+  - SpellPoints

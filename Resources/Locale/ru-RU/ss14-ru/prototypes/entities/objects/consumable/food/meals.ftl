@@ -52,3 +52,6 @@ ent-FoodSaladWatermelonFruitBowl = фруктовый арбузный боул
     .desc = Единственный салат, в котором можно съесть миску.
 ent-FoodMealTaco = тако
     .desc = Попробуйте кусочек!
+
+ent-ADTLingLarva = личинка генокрада
+    .desc = Не надо...

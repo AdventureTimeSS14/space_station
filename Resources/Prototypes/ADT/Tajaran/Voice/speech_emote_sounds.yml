@@ -37,6 +37,15 @@
       collection: MaleCry
     Whistle:
       collection: Whistles
+    # ADT-Apathy Sounds. 
+    Scream-apathy:
+      collection: TajaranMaleScreams
+    Laugh-apathy:
+      collection: MaleLaugh 
+    Sigh-apathy:
+      collection: MaleSigh
+    Crying-apathy:
+      collection: MaleCry
 
 - type: emoteSounds
   id: ADTFemaleTajaran
@@ -77,3 +86,12 @@
       collection: FemaleCry
     Whistle:
       collection: Whistles
+    # ADT-Apathy Sounds. 
+    Scream-apathy:
+      collection: TajaranFemaleScreams
+    Laugh-apathy:
+      collection: FemaleLaugh 
+    Sigh-apathy:
+      collection: FemaleSigh
+    Crying-apathy:
+      collection: FemaleCry

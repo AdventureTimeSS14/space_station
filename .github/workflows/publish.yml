@@ -60,9 +60,9 @@ jobs:
       run: |
         mkdir "release/${{ github.sha }}"
         mv release/*.zip "release/${{ github.sha }}"
-
+  
     - name: Upload files to mothership
-      uses: burnett01/rsync-deployments@5.2
+      uses: burnett01/rsync-deployments@7.0.0
       with:
         switches: -avzr --ignore-existing
         path: "release/${{ github.sha }}"
@@ -71,15 +71,15 @@ jobs:
         remote_port: ${{ secrets.BUILDS_PORT }}
         remote_user: ${{ secrets.BUILDS_USERNAME }}
         remote_key: ${{ secrets.BUILDS_SSH_KEY }}
-
+  
     - name: Update manifest JSON
-      uses: appleboy/ssh-action@master
+      uses: appleboy/ssh-action@v1.0.3
       with:
         host: ${{ secrets.BUILDS_HOST }}
-        port: ${{ secrets.BUILDS_PORT }}
         username: ${{ secrets.BUILDS_USERNAME }}
-        key: ${{ secrets.BUILDS_SSH_KEY }}
-        script: python3 ~/manifest.py ${{ github.sha }} adt
+        password: ${{ secrets.BUILD_PASSWORD }}
+        port: ${{ secrets.BUILDS_PORT }}
+        script: python3 ~/manifest.py --version ${{ github.sha }}
 
     - name: Update CDN repository
       run: |
