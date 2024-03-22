@@ -2,7 +2,7 @@ using Content.Shared.Roles;
 using Content.Shared.Whitelist;
 using Robust.Shared.Prototypes;
 
-namespace Content.Server.Corvax.HiddenDescription;
+namespace Content.Server.ADT.HiddenDescription;
 
 /// <summary>
 /// A component that shows players with specific roles or jobs additional information about entities
