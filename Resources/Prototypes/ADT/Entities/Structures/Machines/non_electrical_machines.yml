@@ -1,0 +1,181 @@
+
+
+- type: entity
+  parent: OreProcessor
+  id: ADTFurnance
+  name: Furnance
+  description: Furnance
+  components:
+  - type: Sprite
+    sprite: ADT/Structures/Machines/furnance.rsi
+    layers:
+      - state: icon
+        map: ["enum.LatheVisualLayers.IsRunning"]
+      - state: icon
+        shader: unshaded
+        map: ["enum.PowerDeviceVisualLayers.Powered"]
+      - state: icon
+        map: ["enum.MaterialStorageVisualLayers.Inserting"]
+      - state: icon
+        map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: OreProcessorIndustrialMachineCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: icon
+    materialUseMultiplier: 0.75
+    timeMultiplier: 0.5
+    staticRecipes:
+      - SheetSteel30
+      - SheetGlass30
+      - SheetRGlass30
+      - SheetPlasma30
+      - SheetPGlass30
+      - SheetRPGlass30
+      - SheetPlasteel30
+      - SheetUranium30
+      - SheetUGlass30
+      - SheetRUGlass30
+      - IngotGold30
+      - IngotSilver30
+      - MaterialBananium10
+  - type: ApcPowerReceiver
+    needsPower: false
+    powerLoad: 0
+
+- type: entity
+  name: water well
+  id: ADTWaterWell
+  parent: SinkEmpty
+  suffix: Water
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drainBuffer:
+        maxVol: 200
+      tank:
+        reagents:
+        - ReagentId: Water
+          Quantity: 2000
+  - type: SolutionRegeneration
+    solution: tank
+    generated:
+      reagents:
+      - ReagentId: Water
+        Quantity: 10
+  - type: Sprite
+    sprite: ADT/Structures/Machines/water_well.rsi
+    layers:
+      - state: icon
+      - map: [ "enum.SolutionContainerLayers.Fill" ]
+        state: icon
+        visible: false
+
+- type: entity
+  id: ADTFoodFurnance
+  parent: [ BaseMachinePowered, ConstructibleMachine ]
+  name: Food Furnance
+  description: It's magic.
+  components:
+  - type: Microwave
+    capacity: 10
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.MicrowaveVisualState.Bloody:
+        bloody:
+          True: { visible: true }
+          False: { visible: false }
+        bloodyunshaded:
+          True: { visible: true }
+          False: { visible: false }
+      enum.PowerDeviceVisuals.VisualState:
+        enum.MicrowaveVisualizerLayers.Base:
+          Idle: { state: "icon" }
+          Broken: { state: "icon" }
+          Cooking: { state: "icon" }
+        enum.MicrowaveVisualizerLayers.BaseUnlit:
+          Idle: { state: "icon" }
+          Broken: { state: "icon" }
+          Cooking: { state: "icon" }
+        bloodyunshaded:
+          Idle: { visible: false }
+          Broken: { visible: false }
+      enum.PowerDeviceVisuals.Powered:
+        enum.MicrowaveVisualizerLayers.BaseUnlit:
+          True: { visible: true }
+          False: { visible: false }
+  - type: ActivatableUI
+    key: enum.MicrowaveUiKey.Key
+  - type: DeviceLinkSink
+    ports:
+    - On
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: UserInterface
+    interfaces:
+    - key: enum.MicrowaveUiKey.Key
+      type: MicrowaveBoundUserInterface
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.16,0.3,0.16"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Sprite
+    sprite: ADT/Structures/Machines/food_furnance.rsi
+    drawdepth: SmallObjects
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.MicrowaveVisualizerLayers.Base"]
+    - state: icon
+      shader: unshaded
+      map: ["enum.MicrowaveVisualizerLayers.BaseUnlit"]
+    - state: icon
+      map: ["bloody"]
+      visible: false
+    - state: icon
+      shader: unshaded
+      map: ["bloodyunshaded"]
+      visible: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 10
+    totalIntensity: 5
+    intensitySlope: 5
+    canCreateVacuum: false
+    deleteAfterExplosion: false
+  - type: ApcPowerReceiver
+    needsPower: false
+    powerLoad: 0
+  - type: Machine
+    board: MicrowaveMachineCircuitboard
+  - type: ContainerContainer
+    containers:
+      microwave_entity_container: !type:Container
+      machine_board: !type:Container
+      machine_parts: !type:Container
+  - type: EmptyOnMachineDeconstruct
+    containers:
+    - microwave_entity_container
+  - type: GuideHelp
+    guides:
+    - Chef
