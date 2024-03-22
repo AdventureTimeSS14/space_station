@@ -69,6 +69,8 @@ research-technology-advanced-spray = Advanced Spray
 research-technology-bluespace-cargo-transport = Bluespace Cargo Transport
 research-technology-quantum-fiber-weaving = Quantum Fiber Weaving
 
+ADT-research-technology-doll-house = Doll House
+
 # Frontier - languages mechanic
 research-technology-basic-translation = Basic Translation
 research-technology-advanced-translation = Advanced Translation

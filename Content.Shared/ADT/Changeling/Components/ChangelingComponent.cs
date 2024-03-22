@@ -329,7 +329,7 @@ public sealed partial class ChangelingComponent : Component
     /// How fast the changeling will turn visible from movement when using chameleon skin.
     /// </summary>
     [DataField]
-    public float ChameleonSkinMovementVisibilityRate = 0.30f;
+    public float ChameleonSkinMovementVisibilityRate = 0.60f;
     #endregion
 
     #region Dissonant Shriek Ability
@@ -406,7 +406,7 @@ public sealed partial class ChangelingComponent : Component
     public float MuteAmount = 20f;
 
     [ViewVariables(VVAccess.ReadWrite), DataField("drugAmount")]
-    public float SpaceDrugsAmount = 35f;
+    public float SpaceDrugsAmount = 50f;
 
     #endregion
 

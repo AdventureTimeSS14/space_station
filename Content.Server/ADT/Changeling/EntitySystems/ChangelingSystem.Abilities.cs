@@ -65,12 +65,12 @@ public sealed partial class ChangelingSystem
     }
 
 
-    private void StartAbsorbing(EntityUid uid, ChangelingComponent component, LingAbsorbActionEvent args)
+    private void StartAbsorbing(EntityUid uid, ChangelingComponent component, LingAbsorbActionEvent args)   // Начало поглощения
     {
         if (args.Handled)
             return;
 
-        if (component.LesserFormActive)
+        if (component.LesserFormActive) 
         {
             var selfMessage = Loc.GetString("changeling-transform-fail-lesser-form");
             _popup.PopupEntity(selfMessage, uid, uid);
@@ -124,7 +124,7 @@ public sealed partial class ChangelingSystem
     }
 
     public ProtoId<DamageGroupPrototype> GeneticDamageGroup = "Genetic";
-    private void OnAbsorbDoAfter(EntityUid uid, ChangelingComponent component, AbsorbDoAfterEvent args)
+    private void OnAbsorbDoAfter(EntityUid uid, ChangelingComponent component, AbsorbDoAfterEvent args)     // DoAfter, та полоска над персонажем
     {
         if (args.Handled || args.Args.Target == null)
             return;
@@ -180,14 +180,14 @@ public sealed partial class ChangelingSystem
                 }
             }
 
-            // give them 200 genetic damage and remove all of their blood
+            // Нанесение 200 генетического урона и замена крови на кислоту
             var dmg = new DamageSpecifier(_proto.Index(GeneticDamageGroup), component.AbsorbGeneticDmg);
             _damageableSystem.TryChangeDamage(target, dmg);
-            _bloodstreamSystem.ChangeBloodReagent(target, "FerrochromicAcid"); // replace target's blood with acid, then spill
-            _bloodstreamSystem.SpillAllSolutions(target); // replace target's blood with acid, then spill
+            _bloodstreamSystem.ChangeBloodReagent(target, "FerrochromicAcid"); // Замена крови на кислоту
+            _bloodstreamSystem.SpillAllSolutions(target); // Выплёскивание всей кислоты из тела
             EnsureComp<AbsorbedComponent>(target);
 
-            if (HasComp<ChangelingComponent>(target)) // they were another changeling, give extra evolution points
+            if (HasComp<ChangelingComponent>(target)) // Если это был другой генокрад, получим моментально 5 очков эволюции
             {
                 var selfMessage = Loc.GetString("changeling-dna-success-ling", ("target", Identity.Entity(target, EntityManager)));
                 _popup.PopupEntity(selfMessage, uid, uid, PopupType.Medium);
@@ -198,7 +198,7 @@ public sealed partial class ChangelingSystem
                     _store.UpdateUserInterface(uid, uid, store);
                 }
             }
-            else
+            else  // Если это не был генокрад, получаем возможность "сброса"
             {
                 var selfMessage = Loc.GetString("changeling-dna-success", ("target", Identity.Entity(target, EntityManager)));
                 _popup.PopupEntity(selfMessage, uid, uid, PopupType.Medium);
@@ -214,7 +214,7 @@ public sealed partial class ChangelingSystem
             component.AbsorbStage += 1;
     }
 
-    private static bool RepeatDoAfter(ChangelingComponent component)
+    private static bool RepeatDoAfter(ChangelingComponent component)    // Повторение DoAfter'а
     {
         if (component.AbsorbStage < 2.0)
             return true;
@@ -224,7 +224,7 @@ public sealed partial class ChangelingSystem
 
     public ProtoId<DamageGroupPrototype> BruteDamageGroup = "Brute";
     public ProtoId<DamageGroupPrototype> BurnDamageGroup = "Burn";
-    private void OnRegenerate(EntityUid uid, ChangelingComponent component, LingRegenerateActionEvent args)
+    private void OnRegenerate(EntityUid uid, ChangelingComponent component, LingRegenerateActionEvent args)     // Реген в крите
     {
         if (args.Handled)
             return;
@@ -270,7 +270,7 @@ public sealed partial class ChangelingSystem
     }
 
     public const string ArmBladeId = "ArmBlade";
-    private void OnArmBladeAction(EntityUid uid, ChangelingComponent component, ArmBladeActionEvent args)
+    private void OnArmBladeAction(EntityUid uid, ChangelingComponent component, ArmBladeActionEvent args)   // При нажатии на действие армблейда
     {
         if (args.Handled)
             return;
@@ -320,7 +320,6 @@ public sealed partial class ChangelingSystem
             if (component.BladeEntity != null)
             {
 
-                component.ArmShieldActive = false;
                 QueueDel(component.BladeEntity.Value);
                 _audioSystem.PlayPvs(component.SoundFlesh, uid);
 
@@ -332,36 +331,13 @@ public sealed partial class ChangelingSystem
 
                 component.BladeEntity = new EntityUid?();
             }
-            else
-            {
 
-                if (handContainer.ContainedEntity != null)
-                {
-                    if (TryComp<MetaDataComponent>(handContainer.ContainedEntity.Value, out var targetMeta))
-                    {
-                        if (TryPrototype(handContainer.ContainedEntity.Value, out var prototype, targetMeta))
-                        {
-                            if (prototype.ID == ArmBladeId)
-                            {
-                                component.ArmBladeActive = false;
-                                QueueDel(handContainer.ContainedEntity.Value);
-                                _audioSystem.PlayPvs(component.SoundFlesh, uid);
-
-                                var othersMessage = Loc.GetString("changeling-armblade-retract-others", ("user", Identity.Entity(uid, EntityManager)));
-                                _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
-
-                                var selfMessage = Loc.GetString("changeling-armblade-retract-self");
-                                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
-                            }
-                        }
-                    }
-                }
-            }
+            component.ArmBladeActive = false;
         }
     }
 
     public const string ArmShieldId = "ArmShield";
-    private void OnArmShieldAction(EntityUid uid, ChangelingComponent component, ArmShieldActionEvent args)
+    private void OnArmShieldAction(EntityUid uid, ChangelingComponent component, ArmShieldActionEvent args)     // При нажатии на действие орг. щита
     {
         if (args.Handled)
             return;
@@ -410,8 +386,6 @@ public sealed partial class ChangelingSystem
         {
             if (component.ShieldEntity != null)
             {
-
-                component.ArmShieldActive = false;
                 QueueDel(component.ShieldEntity.Value);
                 _audioSystem.PlayPvs(component.SoundFlesh, uid);
 
@@ -423,34 +397,12 @@ public sealed partial class ChangelingSystem
 
                 component.ShieldEntity = new EntityUid?();
             }
-            else
-            {
-                if (handContainer.ContainedEntity != null)
-                {
-                    if (TryComp<MetaDataComponent>(handContainer.ContainedEntity.Value, out var targetMeta))
-                    {
-                        if (TryPrototype(handContainer.ContainedEntity.Value, out var prototype, targetMeta))
-                        {
-                            if (prototype.ID == ArmShieldId)
-                            {
-                                component.ArmShieldActive = false;
-                                QueueDel(handContainer.ContainedEntity.Value);
-                                _audioSystem.PlayPvs(component.SoundFlesh, uid);
 
-                                var othersMessage = Loc.GetString("changeling-armshield-retract-others", ("user", Identity.Entity(uid, EntityManager)));
-                                _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
-
-                                var selfMessage = Loc.GetString("changeling-armshield-retract-self");
-                                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
-                            }
-                        }
-                    }
-                }
-            }
+            component.ArmShieldActive = false;
         }
     }
 
-    public void SpawnLingArmor(EntityUid uid, InventoryComponent inventory)
+    public void SpawnLingArmor(EntityUid uid, InventoryComponent inventory)     // Спавн хитиновой брони
     {
         var helmet = Spawn(LingHelmetId, Transform(uid).Coordinates);
         var armor = Spawn(LingArmorId, Transform(uid).Coordinates);
@@ -463,21 +415,18 @@ public sealed partial class ChangelingSystem
         _inventorySystem.TryEquip(uid, armor, OuterClothingId, true, true, false, inventory);
     }
 
-    public bool SpawnArmBlade(EntityUid uid, ChangelingComponent component)
+    public bool SpawnArmBlade(EntityUid uid, ChangelingComponent component)     // Спавн руки-клинка
     {
         var armblade = Spawn(ArmBladeId, Transform(uid).Coordinates);
         EnsureComp<UnremoveableComponent>(armblade); // armblade is apart of your body.. cant remove it..
         RemComp<DestructibleComponent>(armblade);
-        if (_handsSystem.TryPickup(uid, armblade))
+        if (_handsSystem.TryPickupAnyHand(uid, armblade))
         {
             if (!TryComp(uid, out HandsComponent? handsComponent))
                 return false;
             if (handsComponent.ActiveHand == null)
                 return false;
-            var handContainer = handsComponent.ActiveHand.Container;
-            if (handContainer == null || handContainer.ContainedEntity == null)
-                return false;
-            component.BladeEntity = handContainer.ContainedEntity.Value;
+            component.BladeEntity = armblade;
             return true;
         }
         else
@@ -487,22 +436,19 @@ public sealed partial class ChangelingSystem
         }
     }
 
-    public bool SpawnArmShield(EntityUid uid, ChangelingComponent component)
+    public bool SpawnArmShield(EntityUid uid, ChangelingComponent component)    // Спавн щита
     {
         var armshield = Spawn(ArmShieldId, Transform(uid).Coordinates);
         EnsureComp<UnremoveableComponent>(armshield); // armblade is apart of your body.. cant remove it..
 
 
-        if (_handsSystem.TryPickup(uid, armshield))
+        if (_handsSystem.TryPickupAnyHand(uid, armshield))
         {
             if (!TryComp(uid, out HandsComponent? handsComponent))
                 return false;
             if (handsComponent.ActiveHand == null)
                 return false;
-            var handContainer = handsComponent.ActiveHand.Container;
-            if (handContainer == null || handContainer.ContainedEntity == null)
-                return false;
-            component.ShieldEntity = handContainer.ContainedEntity.Value;
+            component.ShieldEntity = armshield;
             return true;
         }
         else
@@ -518,7 +464,7 @@ public sealed partial class ChangelingSystem
     public const string HeadId = "head";
     public const string OuterClothingId = "outerClothing";
 
-    private void OnLingArmorAction(EntityUid uid, ChangelingComponent component, LingArmorActionEvent args)
+    private void OnLingArmorAction(EntityUid uid, ChangelingComponent component, LingArmorActionEvent args)     // При нажатии на действие хитиновой брони
     {
         if (args.Handled)
             return;
@@ -591,7 +537,7 @@ public sealed partial class ChangelingSystem
         component.LingArmorActive = !component.LingArmorActive;
     }
 
-    private void OnLingInvisible(EntityUid uid, ChangelingComponent component, LingInvisibleActionEvent args)
+    private void OnLingInvisible(EntityUid uid, ChangelingComponent component, LingInvisibleActionEvent args)    // При нажатии на действие невидимости
     {
         if (args.Handled)
             return;
@@ -631,7 +577,7 @@ public sealed partial class ChangelingSystem
         component.ChameleonSkinActive = !component.ChameleonSkinActive;
     }
 
-    private void OnLingEmp(EntityUid uid, ChangelingComponent component, LingEMPActionEvent args)
+    private void OnLingEmp(EntityUid uid, ChangelingComponent component, LingEMPActionEvent args)       // При нажатии на ЭМИ действие
     {
         if (args.Handled)
             return;
@@ -653,7 +599,7 @@ public sealed partial class ChangelingSystem
     }
 
     // changeling stings
-    private void OnLingDNASting(EntityUid uid, ChangelingComponent component, LingStingExtractActionEvent args)
+    private void OnLingDNASting(EntityUid uid, ChangelingComponent component, LingStingExtractActionEvent args)     // Жало кражи днк
     {
         if (args.Handled)
             return;
@@ -722,7 +668,7 @@ public sealed partial class ChangelingSystem
         }
     }
 
-    private void OnStasisDeathAction(EntityUid uid, ChangelingComponent component, StasisDeathActionEvent args)     /// С каждым днём всё дальше от бога и всё ближе к пониманию робусты
+    private void OnStasisDeathAction(EntityUid uid, ChangelingComponent component, StasisDeathActionEvent args)     // При нажатии на действие стазис-смерти
     {
         if (args.Handled)
             return;
@@ -781,7 +727,7 @@ public sealed partial class ChangelingSystem
         }
 
     }
-    private void OnBlindSting(EntityUid uid, ChangelingComponent component, BlindStingEvent args)
+    private void OnBlindSting(EntityUid uid, ChangelingComponent component, BlindStingEvent args)   // Жало ослепления
     {
         if (args.Handled)
             return;
@@ -818,7 +764,7 @@ public sealed partial class ChangelingSystem
 
     }
 
-    private void OnMuteSting(EntityUid uid, ChangelingComponent component, MuteStingEvent args)
+    private void OnMuteSting(EntityUid uid, ChangelingComponent component, MuteStingEvent args)     // Жало безмолвия
     {
         if (args.Handled)
             return;
@@ -855,7 +801,7 @@ public sealed partial class ChangelingSystem
 
     }
 
-    private void OnDrugSting(EntityUid uid, ChangelingComponent component, DrugStingEvent args)
+    private void OnDrugSting(EntityUid uid, ChangelingComponent component, DrugStingEvent args)     // Галлюценогенное жало
     {
         if (args.Handled)
             return;
@@ -892,7 +838,7 @@ public sealed partial class ChangelingSystem
 
     }
 
-    private void OnAdrenaline(EntityUid uid, ChangelingComponent component, AdrenalineActionEvent args)
+    private void OnAdrenaline(EntityUid uid, ChangelingComponent component, AdrenalineActionEvent args)     // Адреналин
     {
         if (args.Handled)
             return;
@@ -917,7 +863,7 @@ public sealed partial class ChangelingSystem
 
     }
 
-    private void OnOmniHeal(EntityUid uid, ChangelingComponent component, OmniHealActionEvent args)
+    private void OnOmniHeal(EntityUid uid, ChangelingComponent component, OmniHealActionEvent args)     // Флешменд
     {
         if (args.Handled)
             return;
@@ -942,7 +888,7 @@ public sealed partial class ChangelingSystem
 
     }
 
-    private void OnMuscles(EntityUid uid, ChangelingComponent component, ChangelingMusclesActionEvent args)
+    private void OnMuscles(EntityUid uid, ChangelingComponent component, ChangelingMusclesActionEvent args)     // Мускулы
     {
         if (args.Handled)
             return;
@@ -967,7 +913,7 @@ public sealed partial class ChangelingSystem
 
     }
 
-    private void OnLesserForm(EntityUid uid, ChangelingComponent component, ChangelingLesserFormActionEvent args)
+    private void OnLesserForm(EntityUid uid, ChangelingComponent component, ChangelingLesserFormActionEvent args)       // Низшая форма
     {
         if (args.Handled)
             return;
@@ -982,7 +928,7 @@ public sealed partial class ChangelingSystem
 
     }
     public ProtoId<DamageGroupPrototype> GibDamageGroup = "Brute";
-    private void OnLastResort(EntityUid uid, ChangelingComponent component, LastResortActionEvent args)
+    private void OnLastResort(EntityUid uid, ChangelingComponent component, LastResortActionEvent args)     // Последний шанс
     {
         if (args.Handled)
             return;
