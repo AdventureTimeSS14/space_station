@@ -442,4 +442,16 @@ public sealed partial class ChangelingComponent : Component
     [DataField]
     public bool EggsReady = false;
 
+    [DataField]
+    public string HiveMind = "ChangelingCollectiveMind";
+
+    [DataField]
+    public bool ShowName = false;
+
+    [DataField]
+    public bool ShowRank = true;
+
+    [DataField]
+    public string RankName = "collective-mind-ling-rank";
+
 }
