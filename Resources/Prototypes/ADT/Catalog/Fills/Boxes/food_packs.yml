@@ -42,3 +42,28 @@
     contents:
       - id: ADTFoodCinnamon
         amount: 5
+
+#сухой паек римворлд
+
+- type: entity
+  name: M.R.E.
+  parent: BoxCardboard
+  id: ADTBoxMRERimworld
+  description: A box of decades old military surplus rations. It is surprisingly not rotten.
+  components:
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,5,1
+  - type: StorageFill
+    contents:
+      - id: FoodTinMRE
+      - id: FoodTinPeaches
+      - id: FoodSnackMREBrownie
+      - id: FoodTinBeans
+      - id: ADTMVitaminCanister
+      - id: DrinkWaterBottleFull
+      - id: MaterialCloth
+  - type: Sprite
+    sprite: ADT/Objects/Storage/rimworld_mre.rsi
+    state: icon

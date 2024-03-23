@@ -30,6 +30,9 @@
     sound:
       path: /Audio/Ambience/Objects/fireplace.ogg
   - type: AlwaysHot
+  - type: Construction
+    graph: Bonfire
+    node: bonfire
 
 - type: entity
   id: LegionnaireBonfire
