@@ -1,6 +1,19 @@
 # Tier 1
 
 - type: technology
+  id:  DollHouse
+  name: ADT-research-technology-doll-house
+  icon:
+    sprite: ADT/Structures/Mannequin/MannequinLogo.rsi
+    state: icon_full
+  discipline: CivilianServices
+  tier: 1
+  cost: 1000
+  recipeUnlocks:
+  - ADTMannequinMale
+  - ADTMannequinFemale
+
+- type: technology
   id:  ColorLightTech
   name: research-technology-light-tech
   icon:
@@ -257,3 +270,4 @@
 #   recipeUnlocks:
 #   - BluespaceBeaker
 #   - SyringeBluespace
+
