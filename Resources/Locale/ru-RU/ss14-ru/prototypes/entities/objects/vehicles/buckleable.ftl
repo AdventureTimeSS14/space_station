@@ -10,8 +10,11 @@ ent-VehicleSecway = секвей
     .desc = Будущее перемещения. Популяризирован святым Иаковом, покровителем сотрудников службы безопасности и модераторов интернет-форумов.
 ent-VehicleATV = квадроцикл
     .desc = Все-клеточное транспортное средство.
-ent-VehicleSyndicateSegway = сегвей синдиката
-    .desc = Будьте врагом корпорации на стиле.
+# Corvax-HiddenDesc-Start
+ent-VehicleSyndicateSegway = стильный алый сегвей
+    .suffix = сегвей синдиката
+    .desc = Алый цвет, брутальный узор протекторов, стильные диски... Вы знаете, на чём хотите уезжать от ядерного взрыва!
+# Corvax-HiddenDesc-End
 ent-VehicleSkeletonMotorcycle = скелетонский мотоцикл
     .desc = Плохой до мозга костей.
 ent-VehicleUnicycle = уницикл
