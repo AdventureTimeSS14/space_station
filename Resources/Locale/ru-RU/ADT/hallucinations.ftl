@@ -15,3 +15,15 @@ ent-ADTHallucinationMobBehonker = бехонкер
 
 ent-ADTHallucinationRod = неподвижный жезл
     .desc = Вы чувствуете, что он голоден. Как правило, это плохой знак.
+
+ent-ADTHallucinationMobMedical = врач
+    .desc = Обязательно поможет вам!
+
+ent-ADTHallucinationMobMusician = музыкант
+    .desc = Ну разве не прекрасно?
+
+ent-ADTHallucinationMobYeti = йети
+    .desc = Вам становится холодно.
+
+ent-ADTHallucinationMobNukeop = ядерный оперативник
+    .desc = Пришёл взорвать станцию.

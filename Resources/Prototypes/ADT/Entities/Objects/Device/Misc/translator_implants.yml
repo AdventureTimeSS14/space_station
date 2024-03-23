@@ -3,6 +3,7 @@
   parent: [ BaseItem ]
   name: Basic translator implant
   description: "Translates speech."
+  abstract: true
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/implanter.rsi

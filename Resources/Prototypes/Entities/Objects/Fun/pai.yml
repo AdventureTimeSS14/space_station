@@ -82,7 +82,14 @@
     channel: Binary
     showRank: true
     rankName: collective-mind-pai-rank
-
+  - type: LanguageSpeaker
+    speaks:
+    - GalacticCommon
+    - BorgTalk
+    understands:
+    - GalacticCommon
+    - BorgTalk
+    
 - type: entity
   parent: PersonalAI
   id: SyndicatePersonalAI

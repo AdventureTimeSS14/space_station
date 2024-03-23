@@ -25,6 +25,10 @@ using Content.Shared.Mobs;
 using Content.Server.Destructible;
 using Content.Server.Ghost.Components;
 using Content.Shared.Alert;
+using Content.Shared.Cuffs.Components;
+using Content.Shared.Rejuvenate;
+using Content.Server.Cuffs;
+using Content.Shared.Polymorph;
 
 namespace Content.Server.Changeling.EntitySystems;
 
@@ -39,7 +43,7 @@ public sealed partial class ChangelingSystem
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly PuddleSystem _puddle = default!;
-
+    [Dependency] private readonly CuffableSystem _cuffable = default!;
 
     private void InitializeLingAbilities()
     {
@@ -62,6 +66,10 @@ public sealed partial class ChangelingSystem
         SubscribeLocalEvent<ChangelingComponent, ChangelingLesserFormActionEvent>(OnLesserForm);
         SubscribeLocalEvent<ChangelingComponent, ArmShieldActionEvent>(OnArmShieldAction);
         SubscribeLocalEvent<ChangelingComponent, LastResortActionEvent>(OnLastResort);
+        SubscribeLocalEvent<ChangelingComponent, LingBiodegradeActionEvent>(OnBiodegrade);
+        SubscribeLocalEvent<ChangelingComponent, BiodegradeDoAfterEvent>(OnBiodegradeDoAfter);
+        SubscribeLocalEvent<ChangelingComponent, LingResonantShriekEvent>(OnResonantShriek);
+        SubscribeLocalEvent<ChangelingComponent, TransformationStingEvent>(OnTransformSting);
     }
 
 
@@ -70,7 +78,7 @@ public sealed partial class ChangelingSystem
         if (args.Handled)
             return;
 
-        if (component.LesserFormActive) 
+        if (component.LesserFormActive)
         {
             var selfMessage = Loc.GetString("changeling-transform-fail-lesser-form");
             _popup.PopupEntity(selfMessage, uid, uid);
@@ -689,16 +697,31 @@ public sealed partial class ChangelingSystem
 
                 args.Handled = true;
 
-                RemComp<GhostOnMoveComponent>(uid);
+                if (_mindSystem.TryGetMind(uid, out var mindId, out var mind))
+                    mind.PreventGhosting = true;
 
-                var damage_burn = new DamageSpecifier(_proto.Index(BurnDamageGroup), component.StasisDeathDamageAmount);
+                var damage_burn = new DamageSpecifier(_proto.Index(GeneticDamageGroup), component.StasisDeathDamageAmount);
                 _damageableSystem.TryChangeDamage(uid, damage_burn);    /// Самоопиздюливание
 
                 component.StasisDeathActive = true;
 
                 var selfMessage = Loc.GetString("changeling-stasis-death-self-success");  /// всё, я спать откисать, адьос
                 _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+            }
+            else
+            {
+                args.Handled = true;
 
+                if (_mindSystem.TryGetMind(uid, out var mindId, out var mind))
+                    mind.PreventGhosting = true;
+
+                var damage_burn = new DamageSpecifier(_proto.Index(GeneticDamageGroup), component.StasisDeathDamageAmount);
+                _damageableSystem.TryChangeDamage(uid, damage_burn);    /// Самоопиздюливание
+
+                component.StasisDeathActive = true;
+
+                var selfMessage = Loc.GetString("changeling-stasis-death-self-success");  /// всё, я спать откисать, адьос
+                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
             }
         }
         else
@@ -715,14 +738,14 @@ public sealed partial class ChangelingSystem
                 var selfMessage = Loc.GetString("changeling-stasis-death-self-revive");  /// вейк ап энд cum бэк ту ворк
                 _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
 
-                var damage_burn = new DamageSpecifier(_proto.Index(BurnDamageGroup), component.StasisDeathHealAmount);
-                _damageableSystem.TryChangeDamage(uid, damage_burn);    /// Самоантиопиздюливание
-                _mobState.ChangeMobState(uid, MobState.Critical);   /// Переходим в крит, если повреждений окажется меньше нужных для крита, поднимемся в MobState.Alive сами
-                _damageableSystem.TryChangeDamage(uid, damage_burn);
+                _audioSystem.PlayPvs(component.SoundRegenerate, uid);
+
+                RaiseLocalEvent(uid, new RejuvenateEvent());
+
                 component.StasisDeathActive = false;
-                EnsureComp<GhostOnMoveComponent>(uid);
-                var ghostOnMove = EnsureComp<GhostOnMoveComponent>(uid);
-                ghostOnMove.MustBeDead = true;
+
+                if (_mindSystem.TryGetMind(uid, out var mindId, out var mind))
+                    mind.PreventGhosting = false;
             }
         }
 
@@ -942,6 +965,147 @@ public sealed partial class ChangelingSystem
             _damageableSystem.TryChangeDamage(uid, damage_brute);
 
             args.Handled = true;
+        }
+    }
+
+    private void OnBiodegrade(EntityUid uid, ChangelingComponent component, LingBiodegradeActionEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        if (_mobState.IsDead(uid))
+        {
+            var selfMessage = Loc.GetString("changeling-regenerate-fail-dead");
+            _popup.PopupEntity(selfMessage, uid, uid);
+        }
+
+        if (!TryComp<CuffableComponent>(uid, out var cuffs) || cuffs.Container.ContainedEntities.Count < 1)
+        {
+            var selfMessage = Loc.GetString("changeling-biodegrade-fail-nocuffs");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
+        if (!TryUseAbility(uid, component, component.ChemicalsCostFifteen))
+            return;
+
+        args.Handled = true;
+
+        _popup.PopupEntity(Loc.GetString("changeling-biodegrade-start"), uid, uid);
+
+        var doAfter = new DoAfterArgs(EntityManager, uid, component.BiodegradeDuration, new BiodegradeDoAfterEvent(), uid, target: uid)
+        {
+            DistanceThreshold = 2,
+            BreakOnUserMove = true,
+            BreakOnTargetMove = true,
+            BreakOnDamage = true,
+            AttemptFrequency = AttemptFrequency.StartAndEnd,
+            RequireCanInteract = false
+        };
+
+    _doAfter.TryStartDoAfter(doAfter);
+    }
+    private void OnBiodegradeDoAfter(EntityUid uid, ChangelingComponent component, BiodegradeDoAfterEvent args)     // DoAfter, та полоска над персонажем
+    {
+        if (args.Handled || args.Args.Target == null)
+            return;
+        args.Handled = true;
+        var target = args.Args.Target.Value;
+        if (args.Cancelled)
+        {
+            var selfMessage = Loc.GetString("changeling-biodegrade-interrupted");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            args.Repeat = false;
+            return;
+        }
+        if (!TryComp<CuffableComponent>(target, out var cuffs) || cuffs.Container.ContainedEntities.Count < 1)
+            return;
+        if (!TryComp<HandcuffComponent>(cuffs.LastAddedCuffs, out var handcuffs) || cuffs.Container.ContainedEntities.Count < 1)
+            return;
+        _cuffable.Uncuff(target, uid, cuffs.LastAddedCuffs, cuffs, handcuffs);
+    }
+
+    public void OnResonantShriek(EntityUid uid, ChangelingComponent component, LingResonantShriekEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        if (_mobState.IsDead(uid))
+        {
+            var selfMessage = Loc.GetString("changeling-regenerate-fail-dead");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
+        if (!TryUseAbility(uid, component, component.ChemicalsCostTwenty))
+            return;
+
+        if (ResonantShriek(uid, component))
+        {
+            args.Handled = true;
+        }
+    }
+
+    public void OnTransformSting(EntityUid uid, ChangelingComponent component, TransformationStingEvent args)
+    {
+        var selectedHumanoidData = component.StoredDNA[component.SelectedDNA];
+
+        if (args.Handled)
+            return;
+
+        var target = args.Target;
+
+        if (!TryStingTarget(uid, target, component))
+            return;
+
+        var dnaComp = EnsureComp<DnaComponent>(target);
+
+        if (selectedHumanoidData.DNA == dnaComp.DNA)
+        {
+            var selfMessage = Loc.GetString("changeling-transform-sting-fail-already", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessage, uid, uid);
+        }
+
+        else if (!HasComp<HumanoidAppearanceComponent>(target))
+        {
+            var selfMessageFailNoHuman = Loc.GetString("changeling-transform-sting-fail-nohuman", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessageFailNoHuman, uid, uid);
+            return;
+        }
+
+        else if (_tagSystem.HasTag(target, "ChangelingBlacklist"))
+        {
+            var selfMessage = Loc.GetString("changeling-transform-sting-fail-nohuman", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
+        else
+        {
+            if (!TryUseAbility(uid, component, component.ChemicalsCostFifty))
+                return;
+
+            args.Handled = true;
+
+            if (selectedHumanoidData.EntityUid == null)
+                return;
+
+            var newHumanoidData = _polymorph.TryRegisterPolymorphHumanoidData(selectedHumanoidData.EntityUid.Value);
+            if (newHumanoidData == null)
+                return;
+
+            var transformedUid = _polymorph.PolymorphEntityAsHumanoid(target, newHumanoidData.Value);
+            if (transformedUid == null)
+                return;
+
+            if (selectedHumanoidData.MetaDataComponent != null)
+            {
+                var selfMessage = Loc.GetString("changeling-transform-sting-activate", ("target", selectedHumanoidData.MetaDataComponent.EntityName));
+                _popup.PopupEntity(selfMessage, transformedUid.Value, transformedUid.Value);
+            }
+
+            if (!TryComp(transformedUid.Value, out InventoryComponent? inventory))
+                return;
         }
     }
 
