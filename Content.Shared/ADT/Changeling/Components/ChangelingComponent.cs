@@ -68,11 +68,17 @@ public sealed partial class ChangelingComponent : Component
         Params = AudioParams.Default.WithVolume(-1f),
     };
 
+    [DataField]
+    public SoundSpecifier? SoundResonant = new SoundPathSpecifier("/Audio/ADT/resonant.ogg")
+    {
+        Params = AudioParams.Default.WithVolume(-3f),
+    };
+
     /// <summary>
     /// Blind sting duration
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan BlindStingDuration = TimeSpan.FromSeconds(10);
+    public TimeSpan BlindStingDuration = TimeSpan.FromSeconds(18);
 
     /// <summary>
     /// Refresh ability
@@ -160,11 +166,11 @@ public sealed partial class ChangelingComponent : Component
     ///[DataField, AutoNetworkedField]
     ///public EntityUid? ChangelingEMPActionEntity;
 
-    ///[DataField]
-    ///public EntProtoId ChangelingStasisDeathAction = "ActionStasisDeath";
+    [DataField]
+    public EntProtoId ChangelingStasisDeathAction = "ActionStasisDeath";
 
-    ///[DataField, AutoNetworkedField]
-    ///public EntityUid? ChangelingStasisDeathActionEntity;
+    [DataField, AutoNetworkedField]
+    public EntityUid? ChangelingStasisDeathActionEntity;
 
     ///[DataField]
     ///public EntProtoId ChangelingBlindStingAction = "ActionLingBlindSting";
@@ -355,10 +361,7 @@ public sealed partial class ChangelingComponent : Component
     #region Stasis Death Ability
 
     [DataField]
-    public float StasisDeathDamageAmount = 300f;    /// Damage gain to die
-
-    [DataField]
-    public float StasisDeathHealAmount = -300f;     /// Damage restore to get up
+    public float StasisDeathDamageAmount = 10000f;    /// Damage gain to die
 
     [DataField]
     public bool StasisDeathActive = false;      /// Is ling dead or alive
@@ -442,4 +445,6 @@ public sealed partial class ChangelingComponent : Component
     [DataField]
     public bool EggsReady = false;
 
+    [DataField]
+    public int BiodegradeDuration = 3;
 }

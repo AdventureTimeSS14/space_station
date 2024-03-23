@@ -67,19 +67,19 @@
   - !type:ListingLimitedStockCondition
     stock: 1
 
-- type: listing
-  id: ChangelingStasisDeath
-  name: stasis-death
-  description: stasis-death-desc
-  productAction: ActionStasisDeath
-  mindAction: false
-  cost:
-    EvolutionPoints: 4
-  categories:
-  - ChangelingAbilities
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 1
+#- type: listing
+#  id: ChangelingStasisDeath
+#  name: stasis-death
+#  description: stasis-death-desc
+#  productAction: ActionStasisDeath
+#  mindAction: false
+#  cost:
+#    EvolutionPoints: 4
+#  categories:
+#  - ChangelingAbilities
+#  conditions:
+#  - !type:ListingLimitedStockCondition
+#    stock: 1
 
 - type: listing
   id: ChangelingBlindSting
@@ -201,6 +201,48 @@
   mindAction: false
   cost:
     EvolutionPoints: 2
+  categories:
+  - ChangelingAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: ChangelingBiodegrade
+  name: biodegrade-cl
+  description: biodegrade-cl-desc
+  productAction: ActionLingBiodegrade
+  mindAction: false
+  cost:
+    EvolutionPoints: 1
+  categories:
+  - ChangelingAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: ChangelingResonant
+  name: resonant-cl
+  description: resonant-cl-desc
+  productAction: ActionLingResonant
+  mindAction: false
+  cost:
+    EvolutionPoints: 1
+  categories:
+  - ChangelingAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: ChangelingTransformSting
+  name: transform-sting-cl
+  description: transform-sting-cl-desc
+  productAction: ActionLingTransformSting
+  mindAction: false
+  cost:
+    EvolutionPoints: 3
   categories:
   - ChangelingAbilities
   conditions:
