@@ -13,7 +13,7 @@ using Content.Shared.FixedPoint;
 using Content.Shared.Humanoid;
 using Content.Shared.IdentityManagement;
 using Content.Server.Polymorph.Systems;
-using System.Linq;
+using Content.Server.Flash;
 using Content.Shared.Polymorph;
 using Content.Server.Forensics;
 using Content.Shared.Actions;
@@ -30,11 +30,10 @@ using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Damage;
-using Content.Shared.Gibbing.Systems;
+using Content.Server.Stunnable;
 using Content.Shared.Mind;
 using Robust.Shared.Player;
-using Content.Shared.CombatMode;
-using Content.Shared.Weapons.Melee;
+using Content.Shared.Effects;
 
 namespace Content.Server.Changeling.EntitySystems;
 
@@ -56,9 +55,11 @@ public sealed partial class ChangelingSystem : EntitySystem
     [Dependency] private readonly MovementSpeedModifierSystem _movementSpeedModifierSystem = default!;
     [Dependency] private readonly StaminaSystem _stamina = default!;
     [Dependency] private readonly DamageableSystem _damageableSystem = default!;
-    [Dependency] private readonly GibbingSystem _gibbingSystem = default!;
+    [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly SharedMindSystem _mindSystem = default!;
     [Dependency] private readonly AlertsSystem _alertsSystem = default!;
+    [Dependency] private readonly StunSystem _stun = default!;
+    [Dependency] private readonly FlashSystem _flashSystem = default!;
 
     public override void Initialize()
     {
@@ -152,7 +153,7 @@ public sealed partial class ChangelingSystem : EntitySystem
         _action.AddAction(uid, ref component.ChangelingDNAStingActionEntity, component.ChangelingDNAStingAction);
         _action.AddAction(uid, ref component.ChangelingDNACycleActionEntity, component.ChangelingDNACycleAction);
         _action.AddAction(uid, ref component.ChangelingTransformActionEntity, component.ChangelingTransformAction);
-        //_action.AddAction(uid, ref component.ChangelingRefreshActionEntity, component.ChangelingRefreshAction);
+        _action.AddAction(uid, ref component.ChangelingStasisDeathActionEntity, component.ChangelingStasisDeathAction);
     }
 
     private void OnShutdown(EntityUid uid, ChangelingComponent component, ComponentShutdown args)
@@ -163,7 +164,7 @@ public sealed partial class ChangelingSystem : EntitySystem
         _action.RemoveAction(uid, component.ChangelingDNAStingActionEntity);
         _action.RemoveAction(uid, component.ChangelingDNACycleActionEntity);
         _action.RemoveAction(uid, component.ChangelingTransformActionEntity);
-        //_action.RemoveAction(uid, component.ChangelingRefreshActionEntity);
+        _action.RemoveAction(uid, component.ChangelingStasisDeathActionEntity);
     }
     private void OnShop(EntityUid uid, ChangelingComponent component, ChangelingEvolutionMenuActionEvent args)
     {
@@ -228,9 +229,9 @@ public sealed partial class ChangelingSystem : EntitySystem
 
         if (component.StoredDNA.Count >= component.DNAStrandCap)
         {
-            var lastHumanoidData = component.StoredDNA.Last();
-            component.StoredDNA.Remove(lastHumanoidData);
-            component.StoredDNA.Add(newHumanoidData.Value);
+            var selfMessage = Loc.GetString("changeling-dna-sting-fail-full");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
         }
         else
         {
@@ -252,6 +253,13 @@ public sealed partial class ChangelingSystem : EntitySystem
         var newHumanoidData = _polymorph.TryRegisterPolymorphHumanoidData(target);
         if (newHumanoidData == null)
             return false;
+
+        else if (component.StoredDNA.Count >= component.DNAStrandCap)
+        {
+            var selfMessage = Loc.GetString("changeling-dna-sting-fail-full");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return false;
+        }
 
         else
         {
@@ -777,6 +785,32 @@ public sealed partial class ChangelingSystem : EntitySystem
             _mindSystem.TransferTo(mindId, slug, mind: mind);
         if (mind != null)
             mind.PreventGhosting = false;
+        return true;
+    }
+
+    public bool ResonantShriek(EntityUid uid, ChangelingComponent component)
+    {
+        var xform = Transform(uid);
+        foreach (var ent in _lookup.GetEntitiesInRange<StatusEffectsComponent>(xform.MapPosition, 15))
+        {
+            var time = TimeSpan.FromSeconds(6);
+
+            if (TryComp<ChangelingComponent>(ent, out var ling))
+                continue;
+
+            _stun.TrySlowdown(ent, time, true, 0.8f, 0.8f);
+
+            if (!_mindSystem.TryGetMind(ent, out var mindId, out var mind))
+                continue;
+            if (mind.Session == null)
+                continue;
+            _audioSystem.PlayGlobal(component.SoundResonant, mind.Session);
+
+            if (!TryComp<StatusEffectsComponent>(ent, out var statusComp))
+                continue;
+
+            _status.TryAddStatusEffect<TemporaryBlindnessComponent>(ent, TemporaryBlindnessSystem.BlindingStatusEffect, time, true, statusComp);
+        }
         return true;
     }
 }
