@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
-  id: ADTClothingHeadHelmetHardsuitSecurity
+  id: ADTClothingHeadSecurityModern
   name: security hardsuit helmet
   description: Armored hardsuit helmet for security needs.
   components:
@@ -26,7 +26,7 @@
 
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
-  id: ADTClothingHeadHelmetHardsuitSecurityBlue
+  id: ADTClothingHeadSecurityModernBlue
   name: security hardsuit helmet
   description: Armored hardsuit helmet for security needs.
   components:
@@ -50,7 +50,7 @@
 
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
-  id: ADTClothingHeadHelmetHardsuitSecurityGreen
+  id: ADTClothingHeadSecurityModernGreen
   name: security hardsuit helmet
   description: Armored hardsuit helmet for security needs.
   components:
@@ -74,7 +74,7 @@
 
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
-  id: ADTClothingHeadHelmetHardsuitSecurityPur
+  id: ADTClothingHeadSecurityModernPurple
   name: security hardsuit helmet
   description: Armored hardsuit helmet for security needs.
   components:
