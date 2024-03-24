@@ -1,13 +1,13 @@
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: ClothingOuterHardsuitSecurityModern
-  name: Модерный скафандр службы безопасности
+  id: ADTClothingOuterHardsuitSecurityModern
+  name: It looks like a spacesuit.
   description: A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor.
   components:
   - type: Sprite
     sprite: ADT/Clothing/OuterClothing/Hardsuits/security_modern.rsi
   - type: Clothing
-    sprite: ADT/Clothing/OuterClothing/Hardsuits/security_modern.rsi
+    sprite: ADT\Clothing/OuterClothing/Hardsuits/security_modern.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.5
     lowPressureMultiplier: 1000

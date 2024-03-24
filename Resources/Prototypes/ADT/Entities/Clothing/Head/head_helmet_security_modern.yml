@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
-  id: ClothingHeadHelmetHardsuitSecurity
+  id: ADTClothingHeadHelmetHardsuitSecurity
   name: security hardsuit helmet
   description: Armored hardsuit helmet for security needs.
   components:

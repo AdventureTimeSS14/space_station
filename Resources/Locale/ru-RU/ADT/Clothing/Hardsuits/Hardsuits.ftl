@@ -53,3 +53,11 @@ ent-ADTClothingOuterHardsuitPioneerAgent = боевой скафандр аге�
 ent-ADTClothingHeadHelmetHardsuitPioneerAgent = шлем скафандра агента "Пионер"
     .desc = Хорошо защищенный шлем, созданный на основе шлема командира ОБР для специального агента КиберСан.
     .suffix = { "" }
+
+ent-ADTClothingOuterHardsuitSecurityModern = Похоже - это скафандр
+    .desc = Выглядит как - скафандр...
+    .suffix = { "" }
+
+ent-ADTClothingHeadHelmetHardsuitSecurity = Это шлем    
+    .desc = Выглядит как - шлем...
+    .suffix = { "" }
