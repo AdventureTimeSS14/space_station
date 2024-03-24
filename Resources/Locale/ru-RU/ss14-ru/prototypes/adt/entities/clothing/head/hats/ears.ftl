@@ -1,2 +1,2 @@
-ent-ADTRobotEars = Robot ears
-    .desc = Edited by one businessman.
+ent-ADTRobotEars = уши робота
+    .desc = Созданные неким бизнесменом.
