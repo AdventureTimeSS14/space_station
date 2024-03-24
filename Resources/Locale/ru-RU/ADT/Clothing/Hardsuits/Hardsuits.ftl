@@ -53,3 +53,36 @@ ent-ADTClothingOuterHardsuitPioneerAgent = боевой скафандр аге�
 ent-ADTClothingHeadHelmetHardsuitPioneerAgent = шлем скафандра агента "Пионер"
     .desc = Хорошо защищенный шлем, созданный на основе шлема командира ОБР для специального агента КиберСан.
     .suffix = { "" }
+
+ent-ADTClothingOuterHardsuitSecurityModern = Похоже - это скафандр
+    .desc = Выглядит как - скафандр...
+    .suffix = { "Дарк" }
+
+ent-ADTClothingHeadSecurityModern = Это шлем
+    .desc = Выглядит как - шлем...
+    .suffix = { "Дарк" }
+
+ent-ADTClothingOuterHardsuitSecurityModernBlue = {ent-ADTClothingOuterHardsuitSecurityModern}
+    .desc = {ent-ADTClothingOuterHardsuitSecurityModern.desc}
+    .suffix = { "Дарк" }
+
+ent-ADTClothingHeadSecurityModernBlue = {ent-ADTClothingHeadSecurityModern}
+    .desc = {ent-ADTClothingHeadSecurityModern.desc}
+    .suffix = { "Дарк" }
+
+
+ent-ADTClothingOuterHardsuitSecurityModernGreen = {ent-ADTClothingOuterHardsuitSecurityModern}
+    .desc = {ent-ADTClothingOuterHardsuitSecurityModern.desc}
+    .suffix = { "Дарк" }
+
+ent-ADTClothingHeadSecurityModernGreen = {ent-ADTClothingHeadSecurityModern}
+    .desc = {ent-ADTClothingHeadSecurityModern.desc}
+    .suffix = { "Дарк" }
+
+ent-ADTClothingOuterHardsuitSecurityModernPur = {ent-ADTClothingOuterHardsuitSecurityModern}
+    .desc = {ent-ADTClothingOuterHardsuitSecurityModern.desc}
+    .suffix = { "Дарк" }
+
+ent-ADTClothingHeadSecurityModernPurple = {ent-ADTClothingHeadSecurityModern}
+    .desc = {ent-ADTClothingHeadSecurityModern.desc}
+    .suffix = { "Дарк" }
