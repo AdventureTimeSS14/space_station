@@ -1,4 +1,9 @@
 - type: guideEntry
+  id: ADTSrpOperatorCentCommGuide
+  name: guide-srp-operator-centcomm
+  text: "/ServerInfo/ADT/SrpOperatorCentComm.xml"
+
+- type: guideEntry
   id: KorporateZakon
   name: guide-entry-all-korporate-zakon
   text: "/ServerInfo/ADT/srp/KorporateZakon.xml"
