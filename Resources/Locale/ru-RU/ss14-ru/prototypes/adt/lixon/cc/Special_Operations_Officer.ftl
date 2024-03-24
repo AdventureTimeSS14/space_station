@@ -1,5 +1,5 @@
 ent-ClothingBackpackERTLeaderFilled_SOO = { ent-ClothingBackpackERTLeader }
     .desc = { ent-ClothingBackpackERTLeader.desc }
-ent-BoxFolderBlueFilled = { ent-BoxFolderBase }
-    .suffix = Blue
+ent-BoxFolderBlueFilled = заполненная папка
+    .suffix = Синяя
     .desc = { ent-BoxFolderBase.desc }

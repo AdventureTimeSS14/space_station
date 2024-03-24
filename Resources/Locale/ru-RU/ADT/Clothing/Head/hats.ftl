@@ -116,7 +116,7 @@ ent-ADTClothingHeadHatsBeretSupply = берет отдела снабжения
 ent-ADTClothingHeadHatsBeretCE = берет старшего инженера
     .desc = Белый берет с вышитой эмблемой инженерного отдела. От него веет машинным маслом и пиво.
 
-ent-ADTClothingHeadHatsBeretCentCom = берет центрального командования
+ent-ADTClothingHeadHatsBeretCentCom = берет Центком
     .desc = Зелённый берет с вышитой эмблемой ЦК. Стиль военного бюрократа.
 
 ent-ADTClothingHeadHatDedMoroz = колпак Деда Мороза
@@ -180,3 +180,9 @@ ent-ADTClothingHeadHatHoodBioParamedic = { ent-ClothingHeadHatHoodBioGeneral }
 ent-ADTClothingHeadHelmetTSF = шлем армии ТСФ
     .desc = Стандартная каска пехотинца Транс-Солнечной Федерации.
     .suffix = { "ТСФ" }
+
+ent-ClothingNeckCloakCentcom = плащ Центком
+    .desc = Помпезный и элитный зеленый плащ с красивой золотой отделкой, сшитый специально для представителя Центрального командования. Он настолько тяжелый, что кажется, будто золотая отделка - настоящая.
+
+ent-ClothingHeadHatCentcomcap = фуражка Центком
+    .desc = Экстравагантная причудливая фуражка центрального командира.

@@ -128,3 +128,5 @@ ent-ClothingHeadHatBeretJay = берет Джея
     .desc = Самый лучший берет в мире.
 ent-ClothingHeadHatBeretSeniorPhysician = берет врача
     .desc = Врачи, облаченные в цвета медицины и химии, являются гордостью этого отделения!
+ent-WaterDropletHat = шапелька
+    .desc = Делает восьмиглазых друзей в восемь раз милее!
