@@ -1,0 +1,97 @@
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadSecurityModern
+  name: security hardsuit helmet
+  description: Armored hardsuit helmet for security needs.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/head_helmet_security_modern.rsi
+    #sprite: ADT/Clothing/Head/Hardsuits/hos_hardsuithead.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/head_helmet_security_modern.rsi
+    #sprite: ADT/Clothing/Head/Hardsuits/hos_hardsuithead.rsi
+  - type: PointLight
+    color: "#ffeead"
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadSecurityModernBlue
+  name: security hardsuit helmet
+  description: Armored hardsuit helmet for security needs.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/head_helmet_security_modern_b.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/head_helmet_security_modern_b.rsi
+  - type: PointLight
+    color: "#ffeead"
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadSecurityModernGreen
+  name: security hardsuit helmet
+  description: Armored hardsuit helmet for security needs.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/head_helmet_security_modern_g.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/head_helmet_security_modern_g.rsi
+  - type: PointLight
+    color: "#ffeead"
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadSecurityModernPurple
+  name: security hardsuit helmet
+  description: Armored hardsuit helmet for security needs.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/head_helmet_security_modern_p.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/head_helmet_security_modern_p.rsi
+  - type: PointLight
+    color: "#ffeead"
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
