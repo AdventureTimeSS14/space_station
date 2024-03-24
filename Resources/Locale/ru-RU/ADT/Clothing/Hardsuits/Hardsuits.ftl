@@ -58,7 +58,7 @@ ent-ADTClothingOuterHardsuitSecurityModern = Похоже - это скафан�
     .desc = Выглядит как - скафандр...
     .suffix = { "Дарк" }
 
-ent-ADTClothingHeadHelmetHardsuitSecurity = Это шлем
+ent-ADTClothingHeadSecurityModern = Это шлем
     .desc = Выглядит как - шлем...
     .suffix = { "Дарк" }
 
@@ -66,7 +66,7 @@ ent-ADTClothingOuterHardsuitSecurityModernBlue = {ent-ADTClothingOuterHardsuitSe
     .desc = {ent-ADTClothingOuterHardsuitSecurityModern.desc}
     .suffix = { "Дарк" }
 
-ent-ADTClothingHeadHelmetHardsuitSecurityBlue = {ent-ADTClothingHeadHelmetHardsuitSecurity}
+ent-ADTClothingHeadSecurityModernBlue = {ent-ADTClothingHeadHelmetHardsuitSecurity}
     .desc = {ent-ADTClothingHeadHelmetHardsuitSecurity.desc}
     .suffix = { "Дарк" }
 
@@ -75,7 +75,7 @@ ent-ADTClothingOuterHardsuitSecurityModernGreen = {ent-ADTClothingOuterHardsuitS
     .desc = {ent-ADTClothingOuterHardsuitSecurityModern.desc}
     .suffix = { "Дарк" }
 
-ent-ADTClothingHeadHelmetHardsuitSecurityGreen = {ent-ADTClothingHeadHelmetHardsuitSecurity}
+ent-ADTClothingHeadSecurityModernGreen = {ent-ADTClothingHeadHelmetHardsuitSecurity}
     .desc = {ent-ADTClothingHeadHelmetHardsuitSecurity.desc}
     .suffix = { "Дарк" }
 
@@ -83,6 +83,6 @@ ent-ADTClothingOuterHardsuitSecurityModernPur = {ent-ADTClothingOuterHardsuitSec
     .desc = {ent-ADTClothingOuterHardsuitSecurityModern.desc}
     .suffix = { "Дарк" }
 
-ent-ADTClothingHeadHelmetHardsuitSecurityPur = {ent-ADTClothingHeadHelmetHardsuitSecurity}
+ent-ADTClothingHeadSecurityModernPurple = {ent-ADTClothingHeadHelmetHardsuitSecurity}
     .desc = {ent-ADTClothingHeadHelmetHardsuitSecurity.desc}
     .suffix = { "Дарк" }
