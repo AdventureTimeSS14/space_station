@@ -7,8 +7,18 @@
   components:
   - type: HumanoidAppearance
     species: Reptilian
+  - type: ThermalRegulator
+    metabolismHeat: 800
+    radiatedHeat: 100
+    implicitHeatRegulation: 500
+    sweatHeatRegulation: 2000
+    shiveringHeatRegulation: 2000
+  - type: Temperature
+    currentTemperature: 310.15
+    specificHeat: 70
   - type: Body
     prototype: Human
+  - type: Hunger
   - type: MovementSpeedModifier
     baseWalkSpeed : 3
     baseSprintSpeed : 5.5
@@ -17,11 +27,6 @@
       - names_reptilian_male
   - type: Loadout
     prototypes: [ ADTAshWalkerEquipment ]
-  - type: Hunger
-    starvationDamage:
-      types:
-        Cold: 0.05
-        Bloodloss: 0.05
   - type: Puller
     needsHands: false
   - type: Thirst
@@ -65,11 +70,6 @@
     damage:
       types:
         Slash: 5
-  - type: Temperature
-    heatDamageThreshold: 400
-    coldDamageThreshold: 260  #starting temperature damage treshold
-    currentTemperature: 310.15
-    specificHeat: 42
     coldDamage:
       types:
         Cold : 0.1 #per second, scales with temperature & other constants
@@ -80,9 +80,9 @@
   # Frontier - languages mechanic
   - type: LanguageSpeaker
     speaks:
-    - CintaTaj
+    - Draconic
     understands:
-    - CintaTaj
+    - Draconic
   - type: SizeAttributeWhitelist # Frontier
     tall: true
     tallscale: 1.12
