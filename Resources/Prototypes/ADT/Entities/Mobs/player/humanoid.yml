@@ -46,8 +46,8 @@
     outerClothing: ClothingOuterArmorBasic
     id: CentcomPDA
     ears: ClothingHeadsetAltCentCom
-    belt: WeaponPistolN1984
-    pocket1: BoxFolderBlack
+    belt: BoxFolderCentComClipboard
+    pocket1: ADTBookSrpOperatorCentComm
     pocket2: PhoneInstrument
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
