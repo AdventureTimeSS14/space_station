@@ -71,3 +71,180 @@
     # - !type:DepartmentTimeRequirement
     #   department: Command
     #   time: 72000
+
+# - type: startingGear
+#   id: SalvageSpecialistGear
+#   equipment:
+#     jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
+#     back: ClothingBackpackSalvageFilled
+#     shoes: ClothingShoesBootsSalvage
+#     id: SalvagePDA
+#     ears: ClothingHeadsetCargo
+#     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+#     socks: ClothingUnderwearSocksNormal
+#   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+#   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+#   satchel: ClothingBackpackSatchelSalvageFilled
+#   duffelbag: ClothingBackpackDuffelSalvageFilled
+
+
+# - type: startingGear
+#   id: ADTOperatorCentCommGear
+#   equipment:
+#     jumpsuit: ClothingUniformJumpsuitCentcomOfficial
+#     shoes: ClothingShoesBootsCombatFilled
+#     head: ClothingHeadHatCentcom
+#     eyes: ClothingEyesGlassesSunglasses
+#     gloves: ClothingHandsGlovesColorBlack
+#     outerClothing: ClothingOuterArmorBasic
+#     id: CentcomPDA
+#     ears: ClothingHeadsetAltCentCom
+#     belt: BoxFolderCentComClipboard
+#     pocket1: ADTBookSrpOperatorCentComm
+#     pocket2: PhoneInstrument
+#     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+#     socks: ClothingUnderwearSocksNormal
+#   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+#   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+
+- type: entity
+  name: Cultist
+  parent: BaseMobHuman
+  id: ADTMobCult
+  suffix: "Cult, BoneKnife, Cult of the Lamb"
+  components:
+  - type: NpcFactionMember
+    factions:
+      - SimpleHostile
+  - type: Loadout
+    prototypes:
+      - ADTMobCult1Gear
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+
+- type: startingGear
+  id: ADTMobCult1Gear
+  equipment:
+    mask: ClothingMaskPlague
+    jumpsuit: ADTClothingUniformJumpsuitOldDarkSuit
+    shoes: ClothingShoesBootsWinter
+    head: ClothingHeadHatPlaguedoctor
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesColorBlack
+    outerClothing: ClothingOuterPlagueSuit
+    #id: CentcomPDA
+    #ears: ClothingHeadsetAltCentCom
+    belt: ADTBoneKnife
+    pocket1: Brutepack
+    pocket2: Ointment
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+    #handleft: ADTBoneKnife
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+
+- type: entity
+  name: Cultist1
+  parent: ADTMobCult
+  id: ADTMobCult2
+  suffix: "Cult, Spear, Cult of the Lamb"
+  components:
+  - type: Loadout
+    prototypes:
+      - ADTMobCult2Gear
+
+- type: startingGear
+  id: ADTMobCult2Gear
+  equipment:
+    mask: ClothingMaskPlague
+    jumpsuit: ADTClothingUniformJumpsuitOldDarkSuit
+    shoes: ClothingShoesBootsWinter
+    head: ClothingHeadHatPlaguedoctor
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesColorBlack
+    outerClothing: ClothingOuterPlagueSuit
+    #id: CentcomPDA
+    #ears: ClothingHeadsetAltCentCom
+    #belt: BoxFolderCentComClipboard
+    pocket1: Brutepack
+    pocket2: Ointment
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+    back: Spear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+
+- type: entity
+  name: Cultist2
+  parent: ADTMobCult
+  id: ADTMobCult3
+  suffix: "Cult, Update Spear, Cult of the Lamb"
+  components:
+  - type: Loadout
+    prototypes:
+      - ADTMobCult3Gear
+
+- type: startingGear
+  id: ADTMobCult3Gear
+  equipment:
+    mask: ClothingMaskPlague
+    jumpsuit: ADTClothingUniformJumpsuitOldDarkSuit
+    shoes: ClothingShoesBootsWinter
+    head: ClothingHeadHatPlaguedoctor
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesColorBlack
+    outerClothing: ClothingOuterPlagueSuit
+    #id: CentcomPDA
+    #ears: ClothingHeadsetAltCentCom
+    #belt: BoxFolderCentComClipboard
+    pocket1: Brutepack
+    pocket2: Ointment
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+    back: SpearReinforced
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+
+
+- type: entity
+  parent: BaseMobHuman
+  id: ADTRandomHumanoidSpawnerCluwneCult
+  name: Morgort
+  suffix: "Cult of the Lamb"
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: cluwne
+    # - type: RandomHumanoidSpawner
+    #   settings: ADTCluwneCult
+    - type: NpcFactionMember
+      factions:
+        - SimpleHostile
+    - type: Cluwne
+    - type: Damageable
+      damageContainer: Biological
+      damageModifierSet: HellSpawn
+    - type: MovementSpeedModifier
+      baseWalkSpeed: 2
+      baseSprintSpeed: 3
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        400: Critical
+        450: Dead
+
+
+- type: entity
+  parent: CollideRune
+  id: ADTExplosionRuneCult
+  name: "explosion rune"
+  suffix: "Cult of the Lamb, NOT explosion, it`s Decoration"
+  components:
+    - type: Sprite
+      sprite: Structures/Magic/Cult/trap.rsi
+      layers:
+        - state: trap
+          color: '#cc1b00'
