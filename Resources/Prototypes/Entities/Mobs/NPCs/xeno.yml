@@ -133,6 +133,8 @@
   parent: SimpleSpaceMobBase
   description: A friendly xenomorph who likes to drink tea, nothing is ordinary.
   components:
+  - type: Body
+    prototype: Felinid
   - type: Insulated
   - type: CombatMode
   - type: InputMover
@@ -164,9 +166,9 @@
     groups:
       Flammable: [Touch]
       Extinguish: [Touch]
- #- type: NpcFactionMember
+  - type: NpcFactionMember
     factions:
-    - Xeno
+      - Passive
   - type: Inventory 
     templateId: xeno # таймплейт ксено
   - type: InventorySlots 
