@@ -70,12 +70,6 @@
     damage:
       types:
         Slash: 5
-    coldDamage:
-      types:
-        Cold : 0.1 #per second, scales with temperature & other constants
-    heatDamage:
-      types:
-        Heat : 1.5 #per second, scales with temperature & other constants
   - type: Wagging
   # Frontier - languages mechanic
   - type: LanguageSpeaker
