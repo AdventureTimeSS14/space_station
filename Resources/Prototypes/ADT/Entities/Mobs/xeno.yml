@@ -1,7 +1,7 @@
 - type: entity
   name: Xeno British
   id: ADTMobXenoBritsh
-  parent: ADTMobXenoBase
+  parent: SimpleSpaceMobBase
   description: A friendly xenomorph who likes to drink tea, nothing is ordinary.
   components:
   - type: Body
