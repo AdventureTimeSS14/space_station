@@ -97,7 +97,7 @@ namespace Content.Shared.Administration
         /// <summary>
         ///     Lets you Massban, on SS14.Admin
         /// </summary>
-        MassBan = 1 << 15,
+        MassBan = 1 << 16,
 
         /// <summary>
         ///     Dangerous host permissions like scsi.
