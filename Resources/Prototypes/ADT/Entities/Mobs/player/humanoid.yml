@@ -54,59 +54,7 @@
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
-    # - !type:OverallPlaytimeRequirement
-    #   time: 324000 #90 hrs
-    # - !type:DepartmentTimeRequirement
-    #   department: Security
-    #   time: 324000 #90 hrs
-    # - !type:RoleTimeRequirement
-    #   role: JobSecurityOfficer
-    #   time: 21600 #6 hrs 21600
-    # - !type:RoleTimeRequirement
-    #   role: JobWarden
-    #   time: 21600 #6 hrs 21600
-    # - !type:RoleTimeRequirement
-    #   role: JobDetective
-    #   time: 7200 #2 hrs 7200
-    # - !type:DepartmentTimeRequirement
-    #   department: Command
-    #   time: 72000
-
-# - type: startingGear
-#   id: SalvageSpecialistGear
-#   equipment:
-#     jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
-#     back: ClothingBackpackSalvageFilled
-#     shoes: ClothingShoesBootsSalvage
-#     id: SalvagePDA
-#     ears: ClothingHeadsetCargo
-#     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
-#     socks: ClothingUnderwearSocksNormal
-#   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
-#   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
-#   satchel: ClothingBackpackSatchelSalvageFilled
-#   duffelbag: ClothingBackpackDuffelSalvageFilled
-
-
-# - type: startingGear
-#   id: ADTOperatorCentCommGear
-#   equipment:
-#     jumpsuit: ClothingUniformJumpsuitCentcomOfficial
-#     shoes: ClothingShoesBootsCombatFilled
-#     head: ClothingHeadHatCentcom
-#     eyes: ClothingEyesGlassesSunglasses
-#     gloves: ClothingHandsGlovesColorBlack
-#     outerClothing: ClothingOuterArmorBasic
-#     id: CentcomPDA
-#     ears: ClothingHeadsetAltCentCom
-#     belt: BoxFolderCentComClipboard
-#     pocket1: ADTBookSrpOperatorCentComm
-#     pocket2: PhoneInstrument
-#     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
-#     socks: ClothingUnderwearSocksNormal
-#   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
-#   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
-
+#START-Event-Cult-of-the-Lamb
 - type: entity
   name: Cultist
   parent: BaseMobHuman
@@ -215,11 +163,17 @@
   name: Morgort
   suffix: "Cult of the Lamb"
   components:
+    - type: Firestarter
+    - type: HealAct
+      healAction: CompActionHealAbomination
+    - type: ProjectileAct
+      projAction: CompActionShoot
+      prototype: BulletKinetic
+    - type: TeleportAct
+      projAction: CompActionTeleport
     - type: Sprite
       sprite: Markers/jobs.rsi
       state: cluwne
-    # - type: RandomHumanoidSpawner
-    #   settings: ADTCluwneCult
     - type: NpcFactionMember
       factions:
         - SimpleHostile
@@ -233,9 +187,16 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        400: Critical
-        450: Dead
-
+        550: Critical
+        600: Dead
+    - type: Destructible #процесс разрушения на органы
+      thresholds:
+      - trigger:
+          !type:DamageTypeTrigger
+          damageType: Blunt #при каком дамаге это происходит
+          damage: 610
+        behaviors:
+        - !type:GibBehavior { }
 
 - type: entity
   parent: CollideRune
@@ -248,3 +209,17 @@
       layers:
         - state: trap
           color: '#cc1b00'
+
+# - type: entity
+#   parent: CollideRune
+#   id: ADTUnlimitedLithing
+#   name: "explosion rune"
+#   suffix: "Cult of the Lamb, NOT explosion, it`s Decoration"
+#   components:
+#     - type: Sprite
+#       sprite: Structures/Magic/Cult/trap.rsi
+#       layers:
+#         - state: trap
+#           color: '#cc1b00'
+
+#END-Event-Cult-of-the-Lamb
