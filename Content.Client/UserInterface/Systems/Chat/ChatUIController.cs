@@ -41,6 +41,10 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Replays;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Content.Client.Sirena.CollectiveMind;
+using System.Globalization;
+using System.Linq;
+using System.Numerics;
 
 namespace Content.Client.UserInterface.Systems.Chat;
 
@@ -64,6 +68,7 @@ public sealed class ChatUIController : UIController
     [UISystemDependency] private readonly GhostSystem? _ghost = default;
     [UISystemDependency] private readonly TypingIndicatorSystem? _typingIndicator = default;
     [UISystemDependency] private readonly ChatSystem? _chatSys = default;
+    [UISystemDependency] private readonly CollectiveMindSystem? _collectiveMind = default!;
 
     [ValidatePrototypeId<ColorPalettePrototype>]
     private const string ChatNamePalette = "ChatNames";
@@ -78,6 +83,7 @@ public sealed class ChatUIController : UIController
     {
         {SharedChatSystem.LocalPrefix, ChatSelectChannel.Local},
         {SharedChatSystem.WhisperPrefix, ChatSelectChannel.Whisper},
+        {SharedChatSystem.CollectiveMindPrefix, ChatSelectChannel.CollectiveMind},
         {SharedChatSystem.ConsolePrefix, ChatSelectChannel.Console},
         {SharedChatSystem.LOOCPrefix, ChatSelectChannel.LOOC},
         {SharedChatSystem.OOCPrefix, ChatSelectChannel.OOC},
@@ -92,6 +98,7 @@ public sealed class ChatUIController : UIController
     {
         {ChatSelectChannel.Local, SharedChatSystem.LocalPrefix},
         {ChatSelectChannel.Whisper, SharedChatSystem.WhisperPrefix},
+        {ChatSelectChannel.CollectiveMind, SharedChatSystem.CollectiveMindPrefix},
         {ChatSelectChannel.Console, SharedChatSystem.ConsolePrefix},
         {ChatSelectChannel.LOOC, SharedChatSystem.LOOCPrefix},
         {ChatSelectChannel.OOC, SharedChatSystem.OOCPrefix},
@@ -203,6 +210,9 @@ public sealed class ChatUIController : UIController
 
         _input.SetInputCommand(ContentKeyFunctions.FocusWhisperChat,
             InputCmdHandler.FromDelegate(_ => FocusChannel(ChatSelectChannel.Whisper)));
+
+        _input.SetInputCommand(ContentKeyFunctions.FocusCollectiveMind,
+            InputCmdHandler.FromDelegate(_ => FocusChannel(ChatSelectChannel.CollectiveMind)));
 
         _input.SetInputCommand(ContentKeyFunctions.FocusLOOC,
             InputCmdHandler.FromDelegate(_ => FocusChannel(ChatSelectChannel.LOOC)));
@@ -501,7 +511,7 @@ public sealed class ChatUIController : UIController
 
             // Can only send local / radio / emote when attached to a non-ghost entity.
             // TODO: this logic is iffy (checking if controlling something that's NOT a ghost), is there a better way to check this?
-            if (_ghost is not {IsGhost: true})
+            if (_ghost is not { IsGhost: true })
             {
                 CanSendChannels |= ChatSelectChannel.Local;
                 CanSendChannels |= ChatSelectChannel.Whisper;
@@ -511,7 +521,7 @@ public sealed class ChatUIController : UIController
         }
 
         // Only ghosts and admins can send / see deadchat.
-        if (_admin.HasFlag(AdminFlags.Admin) || _ghost is {IsGhost: true})
+        if (_admin.HasFlag(AdminFlags.Admin) || _ghost is { IsGhost: true })
         {
             FilterableChannels |= ChatChannel.Dead;
             CanSendChannels |= ChatSelectChannel.Dead;
@@ -524,6 +534,13 @@ public sealed class ChatUIController : UIController
             FilterableChannels |= ChatChannel.AdminAlert;
             FilterableChannels |= ChatChannel.AdminChat;
             CanSendChannels |= ChatSelectChannel.Admin;
+            FilterableChannels |= ChatChannel.CollectiveMind;
+        }
+        //        if (_collectiveMind != null && _collectiveMind is { IsCollectiveMind: true })
+        if (_collectiveMind != null)
+        {
+            CanSendChannels |= ChatSelectChannel.CollectiveMind;
+            FilterableChannels |= ChatChannel.CollectiveMind;
         }
 
         SelectableChannels = CanSendChannels;
@@ -641,7 +658,7 @@ public sealed class ChatUIController : UIController
 
     public ChatSelectChannel MapLocalIfGhost(ChatSelectChannel channel)
     {
-        if (channel == ChatSelectChannel.Local && _ghost is {IsGhost: true})
+        if (channel == ChatSelectChannel.Local && _ghost is { IsGhost: true })
             return ChatSelectChannel.Dead;
 
         return channel;
@@ -824,7 +841,7 @@ public sealed class ChatUIController : UIController
                 break;
 
             case ChatChannel.Dead:
-                if (_ghost is not {IsGhost: true})
+                if (_ghost is not { IsGhost: true })
                     break;
 
                 AddSpeechBubble(msg, SpeechBubble.SpeechType.Say);

@@ -104,6 +104,8 @@
     understands:
     - GalacticCommon
     - RootSpeak
+  - type: CollectiveMind
+    channel: DionsCollectiveMind
 
 - type: entity
   parent: BaseSpeciesDummy

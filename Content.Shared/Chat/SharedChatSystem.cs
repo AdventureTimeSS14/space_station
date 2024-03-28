@@ -21,6 +21,7 @@ public abstract class SharedChatSystem : EntitySystem
     public const char EmotesAltPrefix = '*';
     public const char AdminPrefix = ']';
     public const char WhisperPrefix = ',';
+    public const char CollectiveMindPrefix = '+';
     public const char DefaultChannelKey = 'р'; // Corvax-Localization
 
     [ValidatePrototypeId<RadioChannelPrototype>]
