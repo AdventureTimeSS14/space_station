@@ -447,4 +447,19 @@ public sealed partial class ChangelingComponent : Component
 
     [DataField]
     public int BiodegradeDuration = 3;
+    
+    [DataField]    
+    public string HiveMind = "ChangelingCollectiveMind";
+
+    [DataField]
+    public bool ShowName = false;
+
+    [DataField]
+    public bool ShowRank = true;
+
+    [DataField]
+    public string RankName = "collective-mind-ling-rank";
+
+
+
 }
