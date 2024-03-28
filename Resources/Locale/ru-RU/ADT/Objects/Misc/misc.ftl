@@ -26,8 +26,8 @@ ent-ADTBoxValentineRed = красный конверт для валентинк
     .desc = Конверт из красной бумаги в виде сердечка.
     .suffix = { "День Святого Валентина" }
 
-#START-Event-Cult-of-the-Lamb
-ent-ADTUnlimitedLithing = " "
+###START-Event-Cult-of-the-Lamb
+ent-ADTUnlimitedLithing = Светильник.
     .desc = ""
     .suffix = { "Cult of the Lamb, Невидимый источник света" }
 ADTExplosionRuneCult = Руна
@@ -45,4 +45,4 @@ ADTMobCult3 = {ent-ADTMobCult}
 ADTMobCult2 = {ent-ADTMobCult}
     .desc = ""
     .suffix = { "Cult of the Lamb, Копьё" }
-#END-Event-Cult-of-the-Lamb
+###END-Event-Cult-of-the-Lamb
