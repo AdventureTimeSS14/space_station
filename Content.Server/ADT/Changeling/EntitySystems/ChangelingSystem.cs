@@ -33,7 +33,11 @@ using Content.Shared.Damage;
 using Content.Server.Stunnable;
 using Content.Shared.Mind;
 using Robust.Shared.Player;
+using Content.Shared.CombatMode;
+using Content.Shared.Weapons.Melee;
+using Content.Shared.Sirena.CollectiveMind;
 using Content.Shared.Effects;
+
 
 namespace Content.Server.Changeling.EntitySystems;
 
@@ -154,6 +158,13 @@ public sealed partial class ChangelingSystem : EntitySystem
         _action.AddAction(uid, ref component.ChangelingDNACycleActionEntity, component.ChangelingDNACycleAction);
         _action.AddAction(uid, ref component.ChangelingTransformActionEntity, component.ChangelingTransformAction);
         _action.AddAction(uid, ref component.ChangelingStasisDeathActionEntity, component.ChangelingStasisDeathAction);
+
+        EnsureComp<CollectiveMindComponent>(uid);
+        var collectiveMind = EnsureComp<CollectiveMindComponent>(uid);
+        collectiveMind.Channel = component.HiveMind;
+        collectiveMind.ShowRank = component.ShowRank;
+        collectiveMind.ShowName = component.ShowName;
+        collectiveMind.RankName = component.RankName;
     }
 
     private void OnShutdown(EntityUid uid, ChangelingComponent component, ComponentShutdown args)
@@ -165,6 +176,8 @@ public sealed partial class ChangelingSystem : EntitySystem
         _action.RemoveAction(uid, component.ChangelingDNACycleActionEntity);
         _action.RemoveAction(uid, component.ChangelingTransformActionEntity);
         _action.RemoveAction(uid, component.ChangelingStasisDeathActionEntity);
+
+        RemComp<CollectiveMindComponent>(uid);
     }
     private void OnShop(EntityUid uid, ChangelingComponent component, ChangelingEvolutionMenuActionEvent args)
     {
