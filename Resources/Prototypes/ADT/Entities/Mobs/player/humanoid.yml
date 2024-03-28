@@ -90,7 +90,6 @@
     pocket2: Ointment
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
-    #handleft: ADTBoneKnife
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
@@ -170,7 +169,6 @@
       projAction: CompActionShoot
       prototype: BulletKinetic
     - type: TeleportAct
-      projAction: CompActionTeleport
     - type: Sprite
       sprite: Markers/jobs.rsi
       state: cluwne
@@ -208,13 +206,6 @@
       decay: 1
       cooldown: 1
       critThreshold: 4000
-    # - type: PassiveDamage # Slight passive regen. Assuming one damage type, comes out to about 4 damage a minute.
-    #   allowedStates:
-    #     - Alive
-    #   damageCap: 20
-    #   damage:
-    #     types:
-    #       Heat: -20.00
 
 - type: entity
   parent: CollideRune
@@ -245,5 +236,4 @@
       energy: 3.5
       color: "#ff3333"
       castShadows: false
-
 #END-Event-Cult-of-the-Lamb
