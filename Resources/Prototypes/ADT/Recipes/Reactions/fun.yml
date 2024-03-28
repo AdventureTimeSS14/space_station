@@ -10,7 +10,7 @@
     SulfuricAcid:
       amount: 1
   products:
-    ADTMChaoticPolymorphine: 3
+    ADTMChaoticPolymorphine: 11
 
 - type: reaction
   id: ADTMPolymorphine

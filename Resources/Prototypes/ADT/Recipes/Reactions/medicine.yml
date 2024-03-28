@@ -13,7 +13,7 @@
     Sodium:
       amount: 1
   products:
-    ADTMSodiumizole: 2
+    ADTMSodiumizole: 3
 
 - type: reaction
   id: ADTMNitrofurfoll
@@ -25,7 +25,7 @@
     Carbon:
       amount: 1
   products:
-    ADTMNitrofurfoll: 2
+    ADTMNitrofurfoll: 3
 
 - type: reaction
   id: ADTMPeroHydrogen
@@ -37,7 +37,7 @@
     Hydrogen:
       amount: 1
   products:
-    ADTMPeroHydrogen: 2
+    ADTMPeroHydrogen: 3
 
 #Dermaline
 - type: reaction
@@ -50,7 +50,7 @@
     Carbon:
       amount: 1
   products:
-    ADTMAnelgesin: 2
+    ADTMAnelgesin: 3
 
 - type: reaction
   id: ADTMMinoxide
@@ -62,7 +62,7 @@
     Hydrogen:
       amount: 1
   products:
-    ADTMMinoxide: 2
+    ADTMMinoxide: 3
 
 #Dylovene
 - type: reaction
@@ -75,7 +75,7 @@
     Carbon:
       amount: 1
   products:
-    ADTMBiomicine: 2
+    ADTMBiomicine: 3
 
 #DexalinPlus
 - type: reaction
@@ -88,7 +88,7 @@
     Hydrogen:
       amount: 1
   products:
-    ADTMNikematide: 2
+    ADTMNikematide: 3
 
 - type: reaction
   id: ADTMDiethamilate
@@ -100,7 +100,7 @@
     Carbon:
       amount: 1
   products:
-    ADTMDiethamilate: 2
+    ADTMDiethamilate: 3
 
 # Дополнения
 - type: reaction
@@ -163,4 +163,4 @@
       amount: 1
       catalyst: true
   products:
-    ADTMFormalin: 3
+    ADTMFormalin: 4

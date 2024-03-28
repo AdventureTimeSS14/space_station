@@ -8,7 +8,7 @@
     Stellibinin:
       amount: 1
   products:
-    ADTUltraChloralHydrate: 1
+    ADTUltraChloralHydrate: 4
 
 - type: reaction
   id: ADTCopperNitride
@@ -18,4 +18,4 @@
     Nitrogen:
       amount: 1
   products:
-    ADTCopperNitride: 3
+    ADTCopperNitride: 4
