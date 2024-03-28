@@ -58,6 +58,13 @@
         - WallLayer
   - type: RadiationBlocker
     resistance: 2
+  - type: SoundOnGather
+  - type: Gatherable
+    whitelist:
+      tags:
+        - Pickaxe
+  - type: OreVein
+    oreChance: 0.01
 
 # Ore veins
 - type: entity
@@ -191,7 +198,7 @@
         - map: [ "enum.EdgeLayer.West" ]
           state: rock_asteroid_west
         - state: rock_silver
-        
+
 - type: entity
   id: AsteroidRockSilverCrab
   parent: AsteroidRockSilver
@@ -223,7 +230,7 @@
         - map: [ "enum.EdgeLayer.West" ]
           state: rock_asteroid_west
         - state: rock_tin
-        
+
 - type: entity
   id: AsteroidRockTinCrab
   parent: AsteroidRockTin
