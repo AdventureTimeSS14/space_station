@@ -22,7 +22,7 @@
     FoodCorn: 1
     FoodMeatCutlet: 2
   reagents:
-    BbqSauce: 5
+    FoodCondimentPacketBbq: 5
 
 - type: microwaveMealRecipe
   id: ADTRecipeBakedChickenLeg
