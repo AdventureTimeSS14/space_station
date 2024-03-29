@@ -179,13 +179,6 @@
     sprite: ADT/Clothing/Mask/lapkeeset_mask.rsi
   - type: Clothing
     sprite: ADT/Clothing/Mask/lapkeeset_mask.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Piercing: 0.95
-        Heat: 0.9
-        Cold: 0.8
-        Shock: 0.8
 
 - type: entity
   parent: ClothingMaskBase
