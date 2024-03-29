@@ -168,7 +168,7 @@
   - type: FingerprintMask
 
 - type: entity
-  parent: ClothingHandsGlovesCombat
+  parent: ClothingHandsBase 
   id: ADTClothingHandsGlovesLapkee
   name: white combat gloves
   description: white combat gloves
@@ -181,17 +181,6 @@
   - type: Fiber
     fiberMaterial: fibers-insulative
     fiberColor: fibers-black
-  - type: TemperatureProtection #слабая защита от температуры
-    coefficient: 0.05
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.95
-        Heat: 0.95
-        Cold: 0.95
-        Shock: 0.95
 
 #New Year
 - type: entity
