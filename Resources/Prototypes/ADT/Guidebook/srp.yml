@@ -9,11 +9,11 @@
   text: "/ServerInfo/ADT/srp/KorporateZakon.xml"
   children:
   - KorporateZakonOPRS
-  - KorporateZakonMinor
-  - KorporateZakonMedium
-  - KorporateZakonSerious
-  - KorporateZakonSuperHeavy
-  - KorporateZakonCritical
+  - KorporateZakon1XX
+  - KorporateZakon2XX
+  - KorporateZakon3XX
+  - KorporateZakon4XX
+  - KorporateZakon5XX
 
 - type: guideEntry
   id: KorporateZakonOPRS
@@ -21,29 +21,29 @@
   text: "/ServerInfo/ADT/srp/KorporateZakonOPRS.xml"
 
 - type: guideEntry
-  id: KorporateZakonMinor
+  id: KorporateZakon1XX
   name: guide-entry-all-korporate-zakon-minor
-  text: "/ServerInfo/ADT/srp/KorporateZakonMinor.xml"
+  text: "/ServerInfo/ADT/srp/KorporateZakon1XX.xml"
 
 - type: guideEntry
-  id: KorporateZakonMedium
+  id: KorporateZakon2XX
   name: guide-entry-all-korporate-zakon-medium
-  text: "/ServerInfo/ADT/srp/KorporateZakonMedium.xml"
+  text: "/ServerInfo/ADT/srp/KorporateZakon2XX.xml"
 
 - type: guideEntry
-  id: KorporateZakonSerious
+  id: KorporateZakon3XX
   name: guide-entry-all-korporate-zakon-serious
-  text: "/ServerInfo/ADT/srp/KorporateZakonSerious.xml"
+  text: "/ServerInfo/ADT/srp/KorporateZakon3XX.xml"
 
 - type: guideEntry
-  id: KorporateZakonSuperHeavy
+  id: KorporateZakon4XX
   name: guide-entry-all-korporate-zakon-superheavy
-  text: "/ServerInfo/ADT/srp/KorporateZakonSuperHeavy.xml"
+  text: "/ServerInfo/ADT/srp/KorporateZakon4XX.xml"
 
 - type: guideEntry
-  id: KorporateZakonCritical
+  id: KorporateZakon5XX
   name: guide-entry-all-korporate-zakon-critical
-  text: "/ServerInfo/ADT/srp/KorporateZakonCritical.xml"
+  text: "/ServerInfo/ADT/srp/KorporateZakon5XX.xml"
 
 - type: guideEntry
   id: SRP
