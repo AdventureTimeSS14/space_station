@@ -21,7 +21,6 @@
     FoodPotato: 1
     FoodCorn: 1
     FoodMeatCutlet: 2
-  reagents:
     FoodCondimentPacketBbq: 5
 
 - type: microwaveMealRecipe
