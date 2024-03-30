@@ -21,7 +21,7 @@
     FoodPotato: 1
     FoodCorn: 1
     FoodMeatCutlet: 2
-    FoodCondimentPacketBbq: 5
+    FoodCondimentPacketBbq: 1
 
 - type: microwaveMealRecipe
   id: ADTRecipeBakedChickenLeg
