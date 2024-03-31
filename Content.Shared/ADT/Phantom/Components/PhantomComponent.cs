@@ -9,14 +9,31 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototy
 namespace Content.Shared.Phantom.Components;
 
 [RegisterComponent, NetworkedComponent]
+[AutoGenerateComponentState(true)]
 public sealed partial class PhantomComponent : Component
 {
+
+    #region Actions
+
+    [DataField]
+    public EntProtoId PhantomHauntAction = "ActionPhantomHaunt";
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? PhantomHauntActionEntity;
+
+    [DataField]
+    public EntProtoId PhantomStopHauntAction = "ActionPhantomStopHaunt";
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? PhantomStopHauntActionEntity;
+
+    #endregion
     /// <summary>
     /// The total amount of Essence the revenant has. Functions
     /// as health and is regenerated.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    public FixedPoint2 Essence = 75;
+    public float Essence = 75;
 
     /// <summary>
     /// Prototype to spawn when the entity dies.
@@ -41,5 +58,8 @@ public sealed partial class PhantomComponent : Component
     public float Accumulator = 0;
 
     [DataField]
-    public EntityUid? Holder;
+    public EntityUid Holder = new EntityUid();
+
+    [DataField]
+    public bool HasHaunted = false;
 }

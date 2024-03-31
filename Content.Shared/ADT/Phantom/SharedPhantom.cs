@@ -7,3 +7,7 @@ namespace Content.Shared.Phantom;
 public sealed partial class MakeHolderActionEvent : EntityTargetActionEvent
 {
 }
+
+public sealed partial class StopHauntingActionEvent : InstantActionEvent
+{
+}

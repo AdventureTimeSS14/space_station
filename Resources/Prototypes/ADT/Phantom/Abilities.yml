@@ -1,0 +1,32 @@
+- type: entity
+  id: ActionPhantomHaunt
+  name: action-phanton-haunt
+  description: action-phantom-haunt-desc
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: sting_extract
+    itemIconStyle: BigAction
+    whitelist:
+      components:
+      - Body
+    event: !type:MakeHolderActionEvent
+    useDelay: 30
+    canTargetSelf: false
+
+- type: entity
+  id: ActionPhantomStopHaunt
+  name: action-phanton-stop-haunt
+  description: action-phantom-stop-haunt-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: regenerate
+    itemIconStyle: BigAction
+    event: !type:StopHauntingActionEvent
+    useDelay: 30

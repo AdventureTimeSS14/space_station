@@ -59,18 +59,7 @@
     description: ghost-role-information-revenant-description
     rules: ghost-role-information-revenant-rules
   - type: GhostTakeoverAvailable
-  - type: Revenant
-    malfunctionWhitelist:
-      components:
-      # emag lockers open
-      - EntityStorage
-      # emag doors open
-      - Airlock
-      # troll medical to help get kills
-      - StasisBed
-      - EmaggableMedibot
-      # borg become killer
-      - EmagSiliconLaw
+  - type: Phantom
   - type: PointLight
     color: MediumPurple
     radius: 2
@@ -100,3 +89,6 @@
     - GalacticCommon
     understands:
     - GalacticCommon
+  - type: Tag
+    tags:
+    - BypassInteractionRangeChecks
