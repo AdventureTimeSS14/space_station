@@ -7,7 +7,7 @@
   - type: Sprite
     sprite: ADT/Clothing/OuterClothing/Hardsuits/security_modern.rsi
   - type: Clothing
-    sprite: ADT\Clothing/OuterClothing/Hardsuits/security_modern.rsi
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/security_modern.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.5
     lowPressureMultiplier: 1000
@@ -39,7 +39,7 @@
   - type: Sprite
     sprite: ADT/Clothing/OuterClothing/Hardsuits/security_modern_b.rsi
   - type: Clothing
-    sprite: ADT\Clothing/OuterClothing/Hardsuits/security_modern_b.rsi
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/security_modern_b.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.5
     lowPressureMultiplier: 1000
@@ -71,7 +71,7 @@
   - type: Sprite
     sprite: ADT/Clothing/OuterClothing/Hardsuits/security_modern_g.rsi
   - type: Clothing
-    sprite: ADT\Clothing/OuterClothing/Hardsuits/security_modern_g.rsi
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/security_modern_g.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.5
     lowPressureMultiplier: 1000
@@ -103,7 +103,7 @@
   - type: Sprite
     sprite: ADT/Clothing/OuterClothing/Hardsuits/security_modern_p.rsi
   - type: Clothing
-    sprite: ADT\Clothing/OuterClothing/Hardsuits/security_modern_p.rsi
+    sprite: ADT/Clothing/OuterClothing/Hardsuits/security_modern_p.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.5
     lowPressureMultiplier: 1000
