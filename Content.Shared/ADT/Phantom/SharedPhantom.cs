@@ -11,3 +11,7 @@ public sealed partial class MakeHolderActionEvent : EntityTargetActionEvent
 public sealed partial class StopHauntingActionEvent : InstantActionEvent
 {
 }
+
+public sealed partial class CycleVesselActionEvent : InstantActionEvent
+{
+}

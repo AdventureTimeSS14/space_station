@@ -62,4 +62,13 @@ public sealed partial class PhantomComponent : Component
 
     [DataField]
     public bool HasHaunted = false;
+
+    [DataField]
+    public List<EntityUid> Vessels = new List<EntityUid>();
+
+    [DataField]
+    public int SelectedVessel = 0;
+
+    [DataField]
+    public int VesselsStrandCap = 10;
 }

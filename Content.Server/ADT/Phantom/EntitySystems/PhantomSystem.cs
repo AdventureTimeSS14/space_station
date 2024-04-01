@@ -23,6 +23,7 @@ using Content.Server.Stunnable;
 using Content.Shared.Mind;
 using Content.Shared.Humanoid;
 using Robust.Shared.Containers;
+using System.Xml.Schema;
 
 namespace Content.Server.Phantom.EntitySystems;
 
@@ -159,7 +160,7 @@ public sealed partial class PhantomSystem : EntitySystem
 
                 var targetMessage = Loc.GetString("phantom-haunt-target");
                 _popup.PopupEntity(targetMessage, target, target);
-
+                _action.RemoveAction(uid, component.PhantomHauntActionEntity);
                 _action.AddAction(uid, ref component.PhantomStopHauntActionEntity, component.PhantomStopHauntAction);
             }
         }
@@ -181,5 +182,27 @@ public sealed partial class PhantomSystem : EntitySystem
         component.Holder = new EntityUid();
 
         _action.RemoveAction(uid, component.PhantomStopHauntActionEntity);
+    }
+
+    public void OnCycleVessel(EntityUid uid, PhantomComponent component, CycleVesselActionEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        args.Handled = true;
+
+        component.SelectedVessel += 1;
+
+        if (component.Vessels.Count >= component.VesselsStrandCap || component.SelectedVessel >= component.Vessels.Count)
+            component.SelectedVessel = 0;
+
+        var selectedVessel = component.Vessels[component.SelectedVessel];
+
+        TryComp<MetaDataComponent>(selectedVessel, out var meta);
+        if (meta == null)
+            return;
+
+        var selfMessage = Loc.GetString("phantom-switch-vessel", ("target", meta.EntityName));
+        _popup.PopupEntity(selfMessage, uid, uid);
     }
 }
