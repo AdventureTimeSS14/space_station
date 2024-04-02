@@ -152,7 +152,7 @@
     Heat: 0.90
 
 - type: entity
-  name: Drone
+  name: Xeno Drone
   parent: ADTMobXenoBritsh
   id: ADTMobXenoDrone
   components:
@@ -198,7 +198,7 @@
         - MobLayer
 
 - type: entity
-  name: Queen
+  name: Xeno Queen
   parent: ADTMobXenoBritsh
   id: ADTMobXenoQueen
   components:
@@ -237,3 +237,42 @@
   - type: Tag
     tags:
     - CannotSuicide
+
+- type: entity
+  name: Xeno Ravager
+  parent: ADTMobXenoBritsh
+  id: ADTMobXenoRavager
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: ADT/Mobs/Aliens/ADTrevager.rsi
+    offset: 0,0.5
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+  - type: Damageable 
+    damageModifierSet: ADTMobXenoBritshSet
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      170: Dead
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 4
+  - type: MeleeWeapon
+    damage:
+     groups:
+       Brute: 10
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      50: 0.7
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 1350
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
