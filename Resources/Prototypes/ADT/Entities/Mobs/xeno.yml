@@ -49,17 +49,12 @@
     interfaces:
       - key: enum.StrippingUiKey.Key
         type: StrippableBoundUserInterface
- - type: damageModifierSet
-   id: ADTMobXenoBritsh
-   coefficient:
-        Blunt: 0.60
-        Slash: 0.60 
-        Piercing: 0.60
-        Heat: 0.90
+  - type: Damageable 
+    damageModifierSet: ADTMobXenoBritshSet  # ЗАдаёт модификаторы защиты от урона
   - type: Hands
   - type: Sprite
     drawdepth: Mobs
-    sprite: ADT/Mobs/Aliens/Xenos/ADTbritish.rsi
+    sprite: ADT/Mobs/Aliens/ADTbritish.rsi
     offset: 0,0.6
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
@@ -148,3 +143,56 @@
     understands:
     - Xeno
     - GalacticCommon
+- type: damageModifierSet
+  id: ADTMobXenoBritshSet
+  coefficient:
+    Blunt: 0.60
+    Slash: 0.60 
+    Piercing: 0.60
+    Heat: 0.90
+
+- type: entity
+  name: Drone
+  parent: ADTMobXenoBritsh
+  id: ADTMobXenoDrone
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: ADT/Mobs/Aliens/ADTdrone.rsi
+    offset: 0,0.3
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+  - type: Damageable 
+    damageModifierSet: ADTMobXenoBritshSet
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      120: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      40: 0.7
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    soundHit:
+     collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      groups:
+        Brute: 30
+      types:
+        Radiation: 5
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 4
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 450
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
