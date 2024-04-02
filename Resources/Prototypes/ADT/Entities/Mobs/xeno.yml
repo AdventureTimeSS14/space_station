@@ -143,13 +143,14 @@
     understands:
     - Xeno
     - GalacticCommon
+    
 - type: damageModifierSet
   id: ADTMobXenoBritshSet
-  coefficient:
-    Blunt: 0.60
-    Slash: 0.60 
-    Piercing: 0.60
-    Heat: 0.90
+  coefficients:
+    Blunt: 0.6
+    Slash: 0.60
+    Piercing: 0.6
+    Heat: 0.9
 
 - type: entity
   name: Xeno Drone
