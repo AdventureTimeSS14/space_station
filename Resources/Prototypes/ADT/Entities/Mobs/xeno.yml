@@ -196,3 +196,44 @@
         - MobMask
         layer:
         - MobLayer
+
+- type: entity
+  name: Queen
+  parent: ADTMobXenoBritsh
+  id: ADTMobXenoQueen
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: ADT/Mobs/Aliens/ADTqueen.rsi
+    offset: 0,0.3
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+  - type: Damageable 
+    damageModifierSet: ADTMobXenoBritshSet
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      400: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      150: 0.7
+  - type: MovementSpeedModifier
+  - type: MeleeWeapon
+    damage:
+     groups:
+       Brute: 12
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 15500
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Tag
+    tags:
+    - CannotSuicide
