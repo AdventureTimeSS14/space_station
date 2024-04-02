@@ -305,7 +305,8 @@
         - ReagentId: ADTLingEggs
           Quantity: 4 # Just using the same values as the bun values, since the recipe for taco shells is roughly the same as buns.
   - type: Tag
-    tags: []
+    tags:
+    - ADTCarnivoreFriendlyFood
   - type: FlavorProfile
     flavors:
       - terrible

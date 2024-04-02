@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseItem
+  parent: BaseStorageItem
   id: CandyBowl
   name: "candy bowl"
   description: Grab as much as you can fit in your pockets!
@@ -68,3 +68,15 @@
           - Pill
           tags:
           - FoodSnack
+  - type: Tag
+    tags:
+      - PillCanister
+  - type: Storage
+    grid:
+    - 0,0,6,3
+    storageInsertSound: /Audio/Effects/pill_insert.ogg
+    storageRemoveSound: /Audio/Effects/pill_remove.ogg
+    whitelist:
+      components:
+      - Pill
+  - type: Dumpable
