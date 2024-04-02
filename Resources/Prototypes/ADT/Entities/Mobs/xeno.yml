@@ -276,3 +276,37 @@
         - MobMask
         layer:
         - MobLayer
+
+- type: entity
+  name: Xeno Runner
+  parent: ADTMobXenoBritsh
+  id: ADTMobXenoRunner
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: ADT/Mobs/Aliens/ADTrunner.rsi
+    offset: 0,0.1
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+  - type: Damageable 
+    damageModifierSet: ADTMobXenoBritshSet
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 6.0
+  - type: MeleeWeapon
+    damage:
+     groups:
+       Brute: 5
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 235
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: JumpAct
+    jumpAction: CompActionJumpAbomination
