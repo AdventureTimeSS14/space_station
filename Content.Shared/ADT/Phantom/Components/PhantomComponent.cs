@@ -71,4 +71,7 @@ public sealed partial class PhantomComponent : Component
 
     [DataField]
     public int VesselsStrandCap = 10;
+
+    [DataField]
+    public int MakeVesselDuration = 4;
 }

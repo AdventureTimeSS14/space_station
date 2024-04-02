@@ -23,7 +23,8 @@ using Content.Server.Stunnable;
 using Content.Shared.Mind;
 using Content.Shared.Humanoid;
 using Robust.Shared.Containers;
-using System.Xml.Schema;
+using Content.Shared.DoAfter;
+using Content.Shared.DoAfter;
 
 namespace Content.Server.Phantom.EntitySystems;
 
@@ -52,38 +53,22 @@ public sealed partial class PhantomSystem : EntitySystem
     [Dependency] private readonly FlashSystem _flashSystem = default!;
     [Dependency] protected readonly SharedContainerSystem ContainerSystem = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
-
+    [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     public override void Initialize()
     {
         base.Initialize();
 
-        SubscribeLocalEvent<PhantomComponent, ComponentStartup>(OnStartup);
         SubscribeLocalEvent<PhantomComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<PhantomComponent, ComponentShutdown>(OnShutdown);
 
         SubscribeLocalEvent<PhantomComponent, MakeHolderActionEvent>(OnMakeHolder);
         SubscribeLocalEvent<PhantomComponent, StopHauntingActionEvent>(OnStopHaunting);
+
+        SubscribeLocalEvent<PhantomComponent, CycleVesselActionEvent>(OnCycleVessel);
+        SubscribeLocalEvent<PhantomComponent, HauntVesselActionEvent>(OnHauntVessel);
+        SubscribeLocalEvent<PhantomComponent, MakeVesselActionEvent>(OnMakeVessel);
+        SubscribeLocalEvent<PhantomComponent, MakeVesselDoAfterEvent>(MakeVesselDoAfter);
     }
-
-    private void OnStartup(EntityUid uid, PhantomComponent component, ComponentStartup args)
-    {
-
-    }
-
-    //public bool ChangeEssenceAmount(EntityUid uid, float amount, PhantomComponent? component = null, bool regenCap = true)
-    //{
-    //    if (!Resolve(uid, ref component))
-    //        return false;
-
-    //    component.Essence += amount;
-
-    //    if (regenCap)
-    //        float.Min(component.Essence, component.EssenceRegenCap);
-
-    //    _alerts.ShowAlert(uid, AlertType.Chemicals, (short) Math.Clamp(Math.Round(component.Essence / 10.7f), 0, 7));
-
-    //    return true;
-    //}
 
     private void OnMapInit(EntityUid uid, PhantomComponent component, MapInitEvent args)
     {
@@ -93,26 +78,6 @@ public sealed partial class PhantomSystem : EntitySystem
     private void OnShutdown(EntityUid uid, PhantomComponent component, ComponentShutdown args)
     {
     }
-    //public override void Update(float frameTime)
-    //{
-    //    base.Update(frameTime);
-
-    //    var query = EntityQueryEnumerator<PhantomComponent>();
-    //    while (query.MoveNext(out var uid, out var ling))
-    //    {
-    //        ling.Accumulator += frameTime;
-
-    //        if (ling.Accumulator <= 1)
-    //            continue;
-    //        ling.Accumulator -= 1;
-
-    //        if (ling.Essence < ling.EssenceRegenCap)
-    //        {
-    //            ChangeEssenceAmount(uid, ling.EssencePerSecond, ling, regenCap: true);
-    //        }
-
-    //    }
-    //}
 
     private bool TryHaunt(EntityUid uid, EntityUid target, PhantomComponent component)
     {
@@ -120,6 +85,13 @@ public sealed partial class PhantomSystem : EntitySystem
         {
             var selfMessage = Loc.GetString("phantom-haunt-fail-self", ("target", Identity.Entity(target, EntityManager)));
             _popup.PopupEntity(selfMessage, uid, uid);
+            return false;
+        }
+
+        if (!HasComp<HumanoidAppearanceComponent>(target))
+        {
+            var selfMessageFailNoHuman = Loc.GetString("changeling-dna-fail-nohuman", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessageFailNoHuman, uid, uid);
             return false;
         }
 
@@ -132,13 +104,6 @@ public sealed partial class PhantomSystem : EntitySystem
             return;
 
         var target = args.Target;
-
-        if (!HasComp<HumanoidAppearanceComponent>(target))
-        {
-            var selfMessageFailNoHuman = Loc.GetString("changeling-dna-fail-nohuman", ("target", Identity.Entity(target, EntityManager)));
-            _popup.PopupEntity(selfMessageFailNoHuman, uid, uid);
-            return;
-        }
 
         if (TryHaunt(uid, target, component))
         {
@@ -180,7 +145,7 @@ public sealed partial class PhantomSystem : EntitySystem
         RemComp<PhantomHolderComponent>(component.Holder);
         component.HasHaunted = false;
         component.Holder = new EntityUid();
-
+        _action.AddAction(uid, ref component.PhantomHauntActionEntity, component.PhantomHauntAction);
         _action.RemoveAction(uid, component.PhantomStopHauntActionEntity);
     }
 
@@ -204,5 +169,134 @@ public sealed partial class PhantomSystem : EntitySystem
 
         var selfMessage = Loc.GetString("phantom-switch-vessel", ("target", meta.EntityName));
         _popup.PopupEntity(selfMessage, uid, uid);
+    }
+
+    private void OnHauntVessel(EntityUid uid, PhantomComponent component, HauntVesselActionEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        var target = component.Vessels[component.SelectedVessel];
+
+        if (TryHaunt(uid, target, component))
+        {
+            if (!component.HasHaunted)
+            {
+                args.Handled = true;
+
+                var holder = EnsureComp<PhantomHolderComponent>(target);
+
+                component.Holder = target;
+
+                holder.Container = ContainerSystem.EnsureContainer<Container>(target, "soul");
+                ContainerSystem.Insert(uid, holder.Container);
+
+                component.HasHaunted = true;
+
+                var selfMessage = Loc.GetString("phantom-haunt-self", ("target", Identity.Entity(target, EntityManager)));
+                _popup.PopupEntity(selfMessage, uid, uid);
+
+                var targetMessage = Loc.GetString("phantom-haunt-target");
+                _popup.PopupEntity(targetMessage, target, target);
+                _action.RemoveAction(uid, component.PhantomHauntActionEntity);
+                _action.AddAction(uid, ref component.PhantomStopHauntActionEntity, component.PhantomStopHauntAction);
+            }
+            else
+            {
+                args.Handled = true;
+
+                var oldHolder = EnsureComp<PhantomHolderComponent>(component.Holder);
+                ContainerSystem.Remove(uid, oldHolder.Container);
+                RemComp<PhantomHolderComponent>(component.Holder);
+                component.Holder = new EntityUid();
+
+                var holder = EnsureComp<PhantomHolderComponent>(target);
+
+                component.Holder = target;
+
+                holder.Container = ContainerSystem.EnsureContainer<Container>(target, "soul");
+                ContainerSystem.Insert(uid, holder.Container);
+
+                component.HasHaunted = true;
+
+                var selfMessage = Loc.GetString("phantom-haunt-self", ("target", Identity.Entity(target, EntityManager)));
+                _popup.PopupEntity(selfMessage, uid, uid);
+
+                var targetMessage = Loc.GetString("phantom-haunt-target");
+                _popup.PopupEntity(targetMessage, target, target);
+                _action.RemoveAction(uid, component.PhantomHauntActionEntity);
+                _action.AddAction(uid, ref component.PhantomStopHauntActionEntity, component.PhantomStopHauntAction);
+            }
+        }
+    }
+
+    private void OnMakeVessel(EntityUid uid, PhantomComponent component, MakeVesselActionEvent args)
+    {
+        if (args.Handled)
+            return;
+        var target = args.Target;
+        if (!HasComp<HumanoidAppearanceComponent>(target))
+        {
+            var selfMessage = Loc.GetString("phantom-vessel-fail-nohuman", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
+        args.Handled = true;
+        var makeVesselDoAfter = new DoAfterArgs(EntityManager, uid, component.MakeVesselDuration, new MakeVesselDoAfterEvent(), uid, target: target)
+        {
+            DistanceThreshold = 6,
+            BreakOnUserMove = true,
+            BreakOnTargetMove = false,
+            BreakOnDamage = true,
+            AttemptFrequency = AttemptFrequency.StartAndEnd
+        };
+        _doAfter.TryStartDoAfter(makeVesselDoAfter);
+    }
+
+    private void MakeVesselDoAfter(EntityUid uid, PhantomComponent component, MakeVesselDoAfterEvent args)
+    {
+        if (args.Handled || args.Args.Target == null)
+            return;
+
+        args.Handled = true;
+        var target = args.Args.Target.Value;
+        if (args.Cancelled)
+        {
+            var selfMessage = Loc.GetString("phantom-vessel-interrupted", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
+        var doMakeVessel = true;
+        if (TryComp<HumanoidAppearanceComponent>(target, out var trg))
+        {
+            foreach (var storedVessels in component.Vessels)
+            {
+                if (storedVessels != null && storedVessels == target)
+                    doMakeVessel = false;
+            }
+        }
+
+        if (doMakeVessel)
+        {
+            if (!MakeVessel(uid, target, component))
+            {
+                return;
+            }
+        }
+    }
+
+    public bool MakeVessel(EntityUid uid, EntityUid target, PhantomComponent component)
+    {
+        if (!TryComp<MetaDataComponent>(target, out var metaData))
+            return false;
+        if (!TryComp<HumanoidAppearanceComponent>(target, out var humanoidappearance))
+            return false;
+        if (component.Vessels.Count >= component.VesselsStrandCap)
+            return false;
+        else
+            component.Vessels.Add(target);
+        return true;
     }
 }
