@@ -314,6 +314,7 @@
 
 - type: entity
   name: Xeno Rouny
+  parent: ADTMobXenoBritsh
   id: ADTMobXenoRouny
   components:
   - type: Sprite
