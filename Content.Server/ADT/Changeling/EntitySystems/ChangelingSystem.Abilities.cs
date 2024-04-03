@@ -47,6 +47,9 @@ public sealed partial class ChangelingSystem
 
     private void InitializeLingAbilities()
     {
+        //проверяет есть ли активные абилки в виде щита или руки-клинка, удаляет их после смерти.
+        SubscribeLocalEvent<ChangelingComponent, MobStateChangedEvent>(OnMobState);
+
         SubscribeLocalEvent<ChangelingComponent, LingAbsorbActionEvent>(StartAbsorbing);
         SubscribeLocalEvent<ChangelingComponent, AbsorbDoAfterEvent>(OnAbsorbDoAfter);
 
@@ -70,47 +73,57 @@ public sealed partial class ChangelingSystem
         SubscribeLocalEvent<ChangelingComponent, BiodegradeDoAfterEvent>(OnBiodegradeDoAfter);
         SubscribeLocalEvent<ChangelingComponent, LingResonantShriekEvent>(OnResonantShriek);
         SubscribeLocalEvent<ChangelingComponent, TransformationStingEvent>(OnTransformSting);
+    }
 
-        SubscribeLocalEvent<ChangelingComponent, MobStateChangedEvent>(OnMobState); //проверяет есть ли активные абилки в виде щита или руки-клинка, удаляет их после смерти.
+    // Метод для удаления BladeEntity
+    private void RemoveBladeEntity(EntityUid bladeUid, EntityUid uid, ChangelingComponent component)
+    {
+        QueueDel(bladeUid);
+        _audioSystem.PlayPvs(component.SoundFlesh, uid);
+
+        var othersMessage = Loc.GetString("changeling-armblade-retract-others", ("user", Identity.Entity(uid, EntityManager)));
+        _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
+
+        var selfMessage = Loc.GetString("changeling-armblade-retract-self");
+        _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+
+        component.BladeEntity = new EntityUid?();
+    }
+
+    // Метод для удаления ShieldEntity
+    private void RemoveShieldEntity(EntityUid shieldUid, EntityUid uid, ChangelingComponent component)
+    {
+        QueueDel(shieldUid);
+        _audioSystem.PlayPvs(component.SoundFlesh, uid);
+
+        var othersMessage = Loc.GetString("changeling-armshield-retract-others", ("user", Identity.Entity(uid, EntityManager)));
+        _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
+
+        var selfMessage = Loc.GetString("changeling-armshield-retract-self");
+        _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+
+        component.ShieldEntity = new EntityUid?();
     }
 
     private void OnMobState(EntityUid uid, ChangelingComponent component, MobStateChangedEvent args)
     {
         if (args.NewMobState == MobState.Dead)
         {
+            // Проверяем наличие BladeEntity и удаляем его
             if (component.BladeEntity != null)
             {
-
-                QueueDel(component.BladeEntity.Value);
-                _audioSystem.PlayPvs(component.SoundFlesh, uid);
-
-                var othersMessage = Loc.GetString("changeling-armblade-retract-others", ("user", Identity.Entity(uid, EntityManager)));
-                _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
-
-                var selfMessage = Loc.GetString("changeling-armblade-retract-self");
-                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
-
-                component.BladeEntity = new EntityUid?();
+                RemoveBladeEntity(component.BladeEntity.Value, uid, component);
             }
-
+            // Снимаем флаг активации руки-клинка
             component.ArmBladeActive = false;
 
+            // Проверяем наличие ShieldEntity и удаляем его
             if (component.ShieldEntity != null)
             {
-                QueueDel(component.ShieldEntity.Value);
-                _audioSystem.PlayPvs(component.SoundFlesh, uid);
-
-                var othersMessage = Loc.GetString("changeling-armshield-retract-others", ("user", Identity.Entity(uid, EntityManager)));
-                _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
-
-                var selfMessage = Loc.GetString("changeling-armshield-retract-self");
-                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
-
-                component.ShieldEntity = new EntityUid?();
+                RemoveShieldEntity(component.ShieldEntity.Value, uid, component);
             }
-
+            // Снимаем флаг активации щита
             component.ArmShieldActive = false;
-
         }
     }
 
@@ -368,17 +381,7 @@ public sealed partial class ChangelingSystem
         {
             if (component.BladeEntity != null)
             {
-
-                QueueDel(component.BladeEntity.Value);
-                _audioSystem.PlayPvs(component.SoundFlesh, uid);
-
-                var othersMessage = Loc.GetString("changeling-armblade-retract-others", ("user", Identity.Entity(uid, EntityManager)));
-                _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
-
-                var selfMessage = Loc.GetString("changeling-armblade-retract-self");
-                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
-
-                component.BladeEntity = new EntityUid?();
+                RemoveBladeEntity(component.BladeEntity.Value, uid, component);
             }
 
             component.ArmBladeActive = false;
@@ -435,16 +438,7 @@ public sealed partial class ChangelingSystem
         {
             if (component.ShieldEntity != null)
             {
-                QueueDel(component.ShieldEntity.Value);
-                _audioSystem.PlayPvs(component.SoundFlesh, uid);
-
-                var othersMessage = Loc.GetString("changeling-armshield-retract-others", ("user", Identity.Entity(uid, EntityManager)));
-                _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
-
-                var selfMessage = Loc.GetString("changeling-armshield-retract-self");
-                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
-
-                component.ShieldEntity = new EntityUid?();
+                RemoveShieldEntity(component.ShieldEntity.Value, uid, component);
             }
 
             component.ArmShieldActive = false;
