@@ -70,8 +70,49 @@ public sealed partial class ChangelingSystem
         SubscribeLocalEvent<ChangelingComponent, BiodegradeDoAfterEvent>(OnBiodegradeDoAfter);
         SubscribeLocalEvent<ChangelingComponent, LingResonantShriekEvent>(OnResonantShriek);
         SubscribeLocalEvent<ChangelingComponent, TransformationStingEvent>(OnTransformSting);
+
+        SubscribeLocalEvent<ChangelingComponent, MobStateChangedEvent>(OnMobState); //проверяет есть ли активные абилки в виде щита или руки-клинка, удаляет их после смерти.
     }
 
+    private void OnMobState(EntityUid uid, ChangelingComponent component, MobStateChangedEvent args)
+    {
+        if (args.NewMobState == MobState.Dead)
+        {
+            if (component.BladeEntity != null)
+            {
+
+                QueueDel(component.BladeEntity.Value);
+                _audioSystem.PlayPvs(component.SoundFlesh, uid);
+
+                var othersMessage = Loc.GetString("changeling-armblade-retract-others", ("user", Identity.Entity(uid, EntityManager)));
+                _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
+
+                var selfMessage = Loc.GetString("changeling-armblade-retract-self");
+                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+
+                component.BladeEntity = new EntityUid?();
+            }
+
+            component.ArmBladeActive = false;
+
+            if (component.ShieldEntity != null)
+            {
+                QueueDel(component.ShieldEntity.Value);
+                _audioSystem.PlayPvs(component.SoundFlesh, uid);
+
+                var othersMessage = Loc.GetString("changeling-armshield-retract-others", ("user", Identity.Entity(uid, EntityManager)));
+                _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
+
+                var selfMessage = Loc.GetString("changeling-armshield-retract-self");
+                _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
+
+                component.ShieldEntity = new EntityUid?();
+            }
+
+            component.ArmShieldActive = false;
+
+        }
+    }
 
     private void StartAbsorbing(EntityUid uid, ChangelingComponent component, LingAbsorbActionEvent args)   // Начало поглощения
     {
@@ -331,10 +372,10 @@ public sealed partial class ChangelingSystem
                 QueueDel(component.BladeEntity.Value);
                 _audioSystem.PlayPvs(component.SoundFlesh, uid);
 
-                var othersMessage = Loc.GetString("changeling-armshield-retract-others", ("user", Identity.Entity(uid, EntityManager)));
+                var othersMessage = Loc.GetString("changeling-armblade-retract-others", ("user", Identity.Entity(uid, EntityManager)));
                 _popup.PopupEntity(othersMessage, uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
 
-                var selfMessage = Loc.GetString("changeling-armshield-retract-self");
+                var selfMessage = Loc.GetString("changeling-armblade-retract-self");
                 _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);
 
                 component.BladeEntity = new EntityUid?();
