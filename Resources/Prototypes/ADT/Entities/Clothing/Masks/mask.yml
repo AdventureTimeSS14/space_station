@@ -168,7 +168,7 @@
   - type: BreathMask
 
 - type: entity
-  parent: ClothingMaskGas
+  parent: ClothingMaskGasSecurity
   id: ADTClothingMaskGasLapkeeSet
   name: white sec mask
   description: white sec mask
