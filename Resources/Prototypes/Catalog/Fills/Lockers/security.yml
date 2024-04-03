@@ -23,7 +23,7 @@
       - id: ClothingHeadHatCapWardenAlt
       - id: ClothingOuterCoatWardenAlt
       - id: ClothingEyesHudSecurity
-      - id: WardenHandcuffs
+      - id: ADTWardenHandsCuffs
         prob: 0.1
 
 
@@ -51,7 +51,7 @@
       - id: ClothingHeadHatCapWardenAlt
       - id: ClothingOuterCoatWardenAlt
       - id: ClothingEyesHudSecurity
-      - id: WardenHandcuffs
+      - id: ADTWardenHandsCuffs
         prob: 0.1
 
 

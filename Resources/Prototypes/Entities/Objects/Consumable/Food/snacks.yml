@@ -524,6 +524,7 @@
   components:
   - type: Sprite
     state: energybar-trash
+  - type: Item
 
 - type: entity
   noSpawn: true
