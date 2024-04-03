@@ -648,7 +648,13 @@
       description: ghost-role-information-centcom-official-description
       requirements:
       - !type:OverallPlaytimeRequirement
-        time: 36000 # 10h overall
+        time: 72000 # 20h overall
+      - !type:DepartmentTimeRequirement
+        department: Command
+        time: 72000 # 20h
+      - !type:DepartmentTimeRequirement
+        department: Security
+        time: 72000 # 20h
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ CentcomGear ]

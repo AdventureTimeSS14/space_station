@@ -24,7 +24,7 @@
       - id: Multitool
 
 - type: entity
-  parent: ClothingBackpack
+  parent: ClothingBackpackSatchel
   id: ADTClothingBackpackSatchelMedical
   name: medical satchel
   description: A satchel to hold medical equipment
@@ -33,7 +33,7 @@
     sprite: Clothing/Back/Satchels/genetics.rsi
 
 - type: entity
-  parent: ClothingBackpack
+  parent: ClothingBackpackSatchel
   id: ADTClothingSatchelParamedic
   name: paramedical satchel
   description: A satchel to store some paramedical equipment.

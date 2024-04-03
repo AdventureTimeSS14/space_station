@@ -23,6 +23,10 @@
     ClothingHeadBandBlue: 2
     ClothingHeadBandGreen: 2
     ClothingHeadBandRed: 2
+    ClothingHeadBandGold: 2
+    ClothingHeadBandGrey: 2
+    ClothingHeadBandMerc: 2
+    ClothingHeadBandBrown: 2
     ClothingHeadBandSkull: 2
     ClothingHeadHatGreyFlatcap: 2
     ClothingHeadHatBrownFlatcap: 2
@@ -72,8 +76,8 @@
     ClothingShoesColorOrange: 2
     ClothingShoesColorRed: 2
     ClothingShoesColorPurple: 2
-    ClothingHeadHatGreysoft: 4
-    ClothingHeadHatMimesoft: 3
+    ClothingHeadHatGreysoft: 2
+    ClothingHeadHatMimesoft: 2
     ClothingHeadHatBluesoft: 2
     ClothingHeadHatYellowsoft: 2
     ClothingHeadHatGreensoft: 2
@@ -91,63 +95,63 @@
     ClothingBeltStorageWaistbag: 3
     ClothingEyesGlasses: 3
     ClothingEyesGlassesSunglasses: 2
-    ClothingHandsGlovesColorBlack: 4
-    ClothingHandsGlovesColorGray: 4
-    ClothingHandsGlovesColorBrown: 2
-    ClothingHandsGlovesColorWhite: 2
-    ClothingHandsGlovesColorRed: 2
-    ClothingHandsGlovesColorBlue: 2
-    ClothingHandsGlovesColorGreen: 2
-    ClothingHandsGlovesColorOrange: 2
-    ClothingHandsGlovesColorPurple: 2
-    ADTClothingUnderwearRedLacePanties: 3
-    ADTClothingUnderwearTopLaceBraRed: 3
-    ADTClothingUnderwearBlackLacePanties: 3
-    ADTClothingUnderwearTopLaceBraBlack: 3
-    ADTClothingUnderwearWhiteComfyPanties: 3
-    ADTClothingUnderwearTopComfyWhiteBra: 3
+    ClothingHandsGlovesColorBlack: 2
+    ClothingHandsGlovesColorGray: 1
+    ClothingHandsGlovesColorBrown: 1
+    ClothingHandsGlovesColorWhite: 1
+    ClothingHandsGlovesColorRed: 1
+    ClothingHandsGlovesColorBlue: 1
+    ClothingHandsGlovesColorGreen: 1
+    ClothingHandsGlovesColorOrange: 1
+    ClothingHandsGlovesColorPurple: 1
+    ADTClothingUnderwearRedLacePanties: 2
+    ADTClothingUnderwearTopLaceBraRed: 2
+    ADTClothingUnderwearBlackLacePanties: 2
+    ADTClothingUnderwearTopLaceBraBlack: 2
+    ADTClothingUnderwearWhiteComfyPanties: 2
+    ADTClothingUnderwearTopComfyWhiteBra: 2
     ADTClothingNeckDarkGreyCloak: 1
-    ADTClothingSandals: 3
-    ADTClothingFootWrapsWhite: 3
-    ADTClothingFootWrapsBlack: 3
-    ADTClothingFootWrapsBrown: 3
-    ADTClothingFootWrapsHighWhite: 3
-    ADTClothingFootWrapsHighBlack: 3
-    ADTClothingFootWrapsHighBrown: 3
-    ADTClothingUniformTurtleneckBlack: 2
-    ADTClothingUniformTurtleneckBlackWomen: 2
-    ADTClothingUniformTurtleneckGrey: 2
-    ADTClothingUniformTurtleneckGreyWomen: 2
-    ADTClothingUniformTurtleneckBrown: 2
-    ADTClothingUniformTurtleneckBrownWomen: 2
-    ADTClothingUniformTurtleneckBlue: 2
-    ADTClothingUniformTurtleneckBlueWomen: 2
-    ADTClothingUniformTurtleneckAzure: 2
-    ADTClothingUniformTurtleneckAzureWomen: 2
-    ADTClothingUniformTurtleneckAquamarine: 2
-    ADTClothingUniformTurtleneckAquamarineWomen: 2
-    ADTClothingUniformTurtleneckGreen: 2
-    ADTClothingUniformTurtleneckGreenWomen: 2
-    ADTClothingUniformTurtleneckOrange: 2
-    ADTClothingUniformTurtleneckOrangeWomen: 2
-    ADTClothingUniformTurtleneckYellow: 2
-    ADTClothingUniformTurtleneckYellowWomen: 2
-    ADTClothingUniformTurtleneckPurple: 2
-    ADTClothingUniformTurtleneckPurpleWomen: 2
-    ADTClothingUniformTurtleneckPink: 2
-    ADTClothingUniformTurtleneckPinkWomen: 2
-    ADTClothingUniformTurtleneckRed: 2
-    ADTClothingUniformTurtleneckRedWomen: 2
+    ADTClothingSandals: 2
+    ADTClothingFootWrapsWhite: 2
+    ADTClothingFootWrapsBlack: 2
+    ADTClothingFootWrapsBrown: 2
+    ADTClothingFootWrapsHighWhite: 2
+    ADTClothingFootWrapsHighBlack: 2
+    ADTClothingFootWrapsHighBrown: 2
+    ADTClothingUniformTurtleneckBlack: 1
+    ADTClothingUniformTurtleneckBlackWomen: 1
+    ADTClothingUniformTurtleneckGrey: 1
+    ADTClothingUniformTurtleneckGreyWomen: 1
+    ADTClothingUniformTurtleneckBrown: 1
+    ADTClothingUniformTurtleneckBrownWomen: 1
+    ADTClothingUniformTurtleneckBlue: 1
+    ADTClothingUniformTurtleneckBlueWomen: 1
+    ADTClothingUniformTurtleneckAzure: 1
+    ADTClothingUniformTurtleneckAzureWomen: 1
+    ADTClothingUniformTurtleneckAquamarine: 1
+    ADTClothingUniformTurtleneckAquamarineWomen: 1
+    ADTClothingUniformTurtleneckGreen: 1
+    ADTClothingUniformTurtleneckGreenWomen: 1
+    ADTClothingUniformTurtleneckOrange: 1
+    ADTClothingUniformTurtleneckOrangeWomen: 1
+    ADTClothingUniformTurtleneckYellow: 1
+    ADTClothingUniformTurtleneckYellowWomen: 1
+    ADTClothingUniformTurtleneckPurple: 1
+    ADTClothingUniformTurtleneckPurpleWomen: 1
+    ADTClothingUniformTurtleneckPink: 1
+    ADTClothingUniformTurtleneckPinkWomen: 1
+    ADTClothingUniformTurtleneckRed: 1
+    ADTClothingUniformTurtleneckRedWomen: 1
     #ADTClothingUniformTurleneckSalat: 2
     #ADTClothingUniformTurleneckSalatBlack: 2
     #ADTClothingUniformTurleneckSalatWomen: 2
-    ADTClothingUniformTurtleneckWhite: 2
-    ADTClothingUniformTurtleneckWhiteWomen: 2
-    ADTClothingUniformTurleneckBlackSleeveless: 2
-    ADTClothingUniformTurleneckBlackWomenSleeveless: 2
-    ADTClothingUniformTurleneckWhiteSleeveless: 2
-    ADTClothingUniformTurleneckWhiteBlackSleeveless: 2
-    ADTClothingUniformTurleneckWhiteWomenSleeveless: 2
+    ADTClothingUniformTurtleneckWhite: 1
+    ADTClothingUniformTurtleneckWhiteWomen: 1
+    ADTClothingUniformTurleneckBlackSleeveless: 1
+    ADTClothingUniformTurleneckBlackWomenSleeveless: 1
+    ADTClothingUniformTurleneckWhiteSleeveless: 1
+    ADTClothingUniformTurleneckWhiteBlackSleeveless: 1
+    ADTClothingUniformTurleneckWhiteWomenSleeveless: 1
     ADTClothingNeckGothicCloak: 1
   contrabandInventory:
     ClothingMaskNeckGaiter: 2

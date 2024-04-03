@@ -26,6 +26,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using Content.Server.Actions;
+using Content.Shared.Tag;
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -44,6 +45,7 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
     [Dependency] private readonly SharedRoleSystem _roleSystem = default!;
     [Dependency] private readonly SharedJobSystem _jobs = default!;
     [Dependency] private readonly ObjectivesSystem _objectives = default!;
+    [Dependency] private readonly TagSystem _tagSystem = default!;
 
     private int PlayersPerLing => _cfg.GetCVar(CCVars.ChangelingPlayersPerChangeling);
     private int MaxChangelings => _cfg.GetCVar(CCVars.ChangelingMaxChangelings);
@@ -148,6 +150,12 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
             return false;
         }
 
+        if (_tagSystem.HasTag(mind.OwnedEntity.Value, "ChangelingBlacklist"))     // Убираю КПБ и новакидов генокрадов
+        {
+            Log.Error($"Player {changeling.Name} can't be a changeling.");
+            return false;
+        }
+
         var briefing = Loc.GetString("changeling-role-greeting-short", ("character-name", Identity.Entity(entity, EntityManager)));
 
         // Prepare changeling role
@@ -225,6 +233,8 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
             if (ev.JobId == null || !_prototypeManager.TryIndex<JobPrototype>(ev.JobId, out var job))
                 continue;
             if (!job.CanBeAntag)
+                continue;
+            if (_tagSystem.HasTag(uid, "ChangelingBlacklist"))     // Убираю КПБ и новакидов генокрадов
                 continue;
 
             // the nth player we adjust our probabilities around
