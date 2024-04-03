@@ -311,3 +311,19 @@
         - MobLayer
   - type: JumpAct
     jumpAction: CompActionJumpAbomination
+
+- type: entity
+  name: Xeno Rouny
+  id: ADTMobXenoRouny
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: ADT/Mobs/Aliens/ADTrouny.rsi
+    offset: 0,0.6
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatRouny
+      amount: 3
+  - type: JumpAct
+    jumpAction: CompActionJumpAbomination
