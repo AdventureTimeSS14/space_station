@@ -54,8 +54,6 @@
   - type: Utensil
     types:
       - Knife
-    soundHit:
-      path: /Audio/Weapons/bladeslice.ogg
 
 - type: entity
   name: armshield
