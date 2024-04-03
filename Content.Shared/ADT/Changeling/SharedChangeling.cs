@@ -1,6 +1,8 @@
 using Content.Shared.Actions;
 using Content.Shared.DoAfter;
 using Robust.Shared.Serialization;
+using Content.Shared.Polymorph;
+using Robust.Shared.Reflection;
 
 namespace Content.Shared.Changeling;
 
@@ -54,7 +56,7 @@ public sealed partial class ChangelingCycleDNAActionEvent : InstantActionEvent
 {
 }
 
-public sealed partial class ChangelingTransformActionEvent : InstantActionEvent
+public sealed partial class ChangelingTransformActionEvent : InstantActionEvent, ISerializationHooks
 {
 }
 
@@ -123,4 +125,29 @@ public sealed partial class LingBiodegradeActionEvent : InstantActionEvent
 
 public sealed partial class LingResonantShriekEvent : InstantActionEvent
 {
+}
+
+[Serializable]
+public sealed partial class RequestTransformMenuEvent : EntityEventArgs
+{
+    public readonly List<PolymorphHumanoidData> StoredDNAs = new();
+    public int Target { get; }
+
+    public RequestTransformMenuEvent(int target)
+    {
+        Target = target;
+    }
+}
+
+[Serializable]
+public sealed partial class SelectTransformEvent : EntityEventArgs
+{
+    public PolymorphHumanoidData DNA { get; }
+    public int Target { get; }
+
+    public SelectTransformEvent(int target, PolymorphHumanoidData dna)
+    {
+        Target = target;
+        DNA = dna;
+    }
 }
