@@ -138,15 +138,18 @@
           Quantity: 1
   - type: Extractable
     grindableSolutionName: food
+  - type: Food
 
 - type: entity
   name: energy bar
-  parent: FoodSnackBase
+  parent: BaseItem
   id: FoodSnackEnergy
   description: An energy bar with a lot of punch.
   components:
   - type: Sprite
+    sprite: Objects/Consumable/Food/snacks.rsi
     state: energybar
+  - type: Tag
   - type: Item
   - type: SpawnItemsOnUse
     items:
@@ -521,7 +524,6 @@
   components:
   - type: Sprite
     state: energybar-trash
-  - type: Item
 
 - type: entity
   noSpawn: true
