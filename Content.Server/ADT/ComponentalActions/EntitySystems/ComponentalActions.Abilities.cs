@@ -94,9 +94,9 @@ public sealed partial class ComponentalActionsSystem
         SubscribeLocalEvent<InvisibilityActComponent, CompInvisibilityActionEvent>(OnInvisibility);
 
         SubscribeLocalEvent<MagGravActComponent, CompGravitationActionEvent>(OnMagGravity);
-        SubscribeLocalEvent<MagGravActComponent, GetVerbsEvent<ActivationVerb>>(AddToggleVerb);
-        SubscribeLocalEvent<MagGravActComponent, InventoryRelayedEvent<SlipAttemptEvent>>(OnSlipAttempt);
-        SubscribeLocalEvent<MagGravActComponent, GetItemActionsEvent>(OnGetActions);
+        // SubscribeLocalEvent<MagGravActComponent, GetVerbsEvent<ActivationVerb>>(AddToggleVerb);
+        // SubscribeLocalEvent<MagGravActComponent, InventoryRelayedEvent<SlipAttemptEvent>>(OnSlipAttempt);
+        // SubscribeLocalEvent<MagGravActComponent, GetItemActionsEvent>(OnGetActions);
     }
 
     public override void Update(float frameTime)
@@ -337,37 +337,31 @@ public sealed partial class ComponentalActionsSystem
         // }
 
         //_appearance.SetData(uid, ToggleVisuals.Toggled, magGravAct.On);
-        OnChanged(uid, magGravAct);
+        _sharedActions.SetToggled(component.Action, component.On);
         Dirty(uid, magGravAct);
     }
 
-    protected void OnChanged(EntityUid uid, MagGravActComponent component)
-    {
-        _sharedActions.SetToggled(component.Action, component.On);
-        //_clothingSpeedModifier.SetClothingSpeedModifierEnabled(uid, component.On);
-    }
+    // private void AddToggleVerb(EntityUid uid, MagGravActComponent component, GetVerbsEvent<ActivationVerb> args)
+    // {
+    //     if (!args.CanAccess || !args.CanInteract)
+    //         return;
 
-    private void AddToggleVerb(EntityUid uid, MagGravActComponent component, GetVerbsEvent<ActivationVerb> args)
-    {
-        if (!args.CanAccess || !args.CanInteract)
-            return;
+    //     ActivationVerb verb = new();
+    //     verb.Text = Loc.GetString("toggle-magboots-verb-get-data-text");
+    //     verb.Act = () => ToggleMagboots(uid, component);
+    //     // TODO VERB ICON add toggle icon? maybe a computer on/off symbol?
+    //     args.Verbs.Add(verb);
+    // }
 
-        ActivationVerb verb = new();
-        verb.Text = Loc.GetString("toggle-magboots-verb-get-data-text");
-        verb.Act = () => ToggleMagboots(uid, component);
-        // TODO VERB ICON add toggle icon? maybe a computer on/off symbol?
-        args.Verbs.Add(verb);
-    }
+    // private void OnSlipAttempt(EntityUid uid, MagGravActComponent component, InventoryRelayedEvent<SlipAttemptEvent> args)
+    // {
+    //     if (component.On)
+    //         args.Args.Cancel();
+    // }
 
-    private void OnSlipAttempt(EntityUid uid, MagGravActComponent component, InventoryRelayedEvent<SlipAttemptEvent> args)
-    {
-        if (component.On)
-            args.Args.Cancel();
-    }
-
-    private void OnGetActions(EntityUid uid, MagGravActComponent component, GetItemActionsEvent args)
-    {
-        args.AddAction(ref component.ToggleActionEntity, component.Action);
-    }
+    // private void OnGetActions(EntityUid uid, MagGravActComponent component, GetItemActionsEvent args)
+    // {
+    //     args.AddAction(ref component.ToggleActionEntity, component.Action);
+    // }
 
 }
