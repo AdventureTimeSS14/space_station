@@ -326,9 +326,9 @@ public sealed partial class ComponentalActionsSystem
         ToggleMagboots(uid, component);
     }
 
-    private void ToggleMagboots(EntityUid uid, MagGravActComponent magGravAct)
+    private void ToggleMagboots(EntityUid uid, MagGravActComponent component)
     {
-        magGravAct.On = !magGravAct.On;
+        component.On = !component.On;
 
         // if (TryComp<ItemComponent>(uid, out var item))
         // {
@@ -338,7 +338,7 @@ public sealed partial class ComponentalActionsSystem
 
         //_appearance.SetData(uid, ToggleVisuals.Toggled, magGravAct.On);
         _sharedActions.SetToggled(component.Action, component.On);
-        Dirty(uid, magGravAct);
+        Dirty(uid, component);
     }
 
     // private void AddToggleVerb(EntityUid uid, MagGravActComponent component, GetVerbsEvent<ActivationVerb> args)
