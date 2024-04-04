@@ -66,7 +66,5 @@ ent-WallVaultSandstone = песчаниковая каменная стена
     .desc = { ent-WallVaultAlien.desc }
 ent-WallInvisible = невидимая стена
     .desc = { "" }
-ent-ADTWallInvisible = невидимая стена
-    .desc = { "" }
 ent-WallForce = силовой барьер
     .desc = { "" }
