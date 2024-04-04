@@ -65,4 +65,7 @@
   id: Medipen
 
 - type: Tag
-  id: ADTHardsuitSalvage  
+  id: ADTHardsuitSalvage
+
+- type: Tag
+  id: ADTBluespaceAnomalyCore
