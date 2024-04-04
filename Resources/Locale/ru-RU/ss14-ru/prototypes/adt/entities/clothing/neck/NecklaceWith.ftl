@@ -1,12 +1,13 @@
-ent-ADTClothingNeckNecklaceWithEmerald = Колье с изумрудом
+ent-ADTClothingNeckNecklaceWithEmerald = колье с изумрудом
     .desc = Этот камень так завораживает..Он прямо как твои зеленые глаза.
     .suffix = { "" }
-ent-ADTClothingNeckNecklaceWithPlasma = Колье с плазмой
+ent-ADTClothingNeckNecklaceWithPlasma = колье с плазмой
     .desc = Это точно безопасно?
     .suffix = { "" }
-ent-ADTClothingNeckNecklaceWithSapphire = Колье с сапфиром
+ent-ADTClothingNeckNecklaceWithSapphire = колье с сапфиром
     .desc = Этому колье не хватает рубинов!
     .suffix = { "" }
-ent-ADTClothingNeckRaincoatForAShortDress = Плащ для свадебного платья
+ent-ADTClothingNeckRaincoatForAShortDress = плащ для свадебного платья
     .desc = Плащ с золотым напылением. Ослепляюще.
     .suffix = { "" }
+

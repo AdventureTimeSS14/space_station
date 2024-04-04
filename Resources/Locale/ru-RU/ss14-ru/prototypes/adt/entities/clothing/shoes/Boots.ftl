@@ -1,9 +1,0 @@
-ent-ADTClothingHandsSupremeCommanderBoots = Ботинки высшего главнокомандующего
-    .desc = "Я сама скорость! Чао :)"
-    .suffix = { "" }
-ent-ADTClothingHandsWhiteHeels = Белые каблуки
-    .desc = Специально для твоего платья!
-    .suffix = { "" }
-ent-ADTClothingHandsGoldHeels = Золотые каблуки
-    .desc = Каблуки с золотым напылением. Сколько это стоит?
-    .suffix = { "" }

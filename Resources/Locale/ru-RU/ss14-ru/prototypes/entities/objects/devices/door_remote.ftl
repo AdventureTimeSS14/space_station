@@ -21,6 +21,3 @@ ent-DoorRemoteFirefight = пульт от пожарных шлюзов
 ent-DoorRemoteAll = супер-пульт от шлюзов
     .suffix = АДМЕМЫ
     .desc = { ent-DoorRemoteDefault.desc }
-ent-DoorRemoteAll = super door remote
-    .suffix = Admeme
-    .desc = { ent-DoorRemoteDefault.desc }
