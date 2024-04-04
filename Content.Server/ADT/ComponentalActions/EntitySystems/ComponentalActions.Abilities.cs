@@ -53,6 +53,12 @@ using Robust.Server.GameObjects;
 using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Throwing;
+using Content.Shared.Clothing.EntitySystems;
+using Content.Shared.Item;
+using Content.Shared.Slippery;
+using Content.Shared.Toggleable;
+using Content.Shared.Verbs;
+using Robust.Shared.Containers;
 
 namespace Content.Server.ComponentalActions.EntitySystems;
 
@@ -77,6 +83,7 @@ public sealed partial class ComponentalActionsSystem
     [Dependency] private readonly PhysicsSystem _physics = default!;
     [Dependency] private readonly GunSystem _gunSystem = default!;
     [Dependency] private readonly ThrowingSystem _throwing = default!;
+    [Dependency] private readonly SharedActionsSystem _sharedActions = default!;
     private void InitializeCompAbilities()
     {
         SubscribeLocalEvent<TeleportActComponent, CompTeleportActionEvent>(OnTeleport);
@@ -85,6 +92,11 @@ public sealed partial class ComponentalActionsSystem
         SubscribeLocalEvent<JumpActComponent, CompJumpActionEvent>(OnJump);
         SubscribeLocalEvent<StasisHealActComponent, CompStasisHealActionEvent>(OnStasisHeal);
         SubscribeLocalEvent<InvisibilityActComponent, CompInvisibilityActionEvent>(OnInvisibility);
+
+        SubscribeLocalEvent<MagGravActComponent, CompGravitationActionEvent>(OnMagGravity);
+        SubscribeLocalEvent<MagGravActComponent, GetVerbsEvent<ActivationVerb>>(AddToggleVerb);
+        SubscribeLocalEvent<MagGravActComponent, InventoryRelayedEvent<SlipAttemptEvent>>(OnSlipAttempt);
+        SubscribeLocalEvent<MagGravActComponent, GetItemActionsEvent>(OnGetActions);
     }
 
     public override void Update(float frameTime)
@@ -303,4 +315,59 @@ public sealed partial class ComponentalActionsSystem
 
         args.Handled = true;
     }
+
+    private void OnMagGravity(EntityUid uid, MagGravActComponent component, CompGravitationActionEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        args.Handled = true;
+
+        ToggleMagboots(uid, component);
+    }
+
+    private void ToggleMagboots(EntityUid uid, MagGravActComponent magGravAct)
+    {
+        magGravAct.On = !magGravAct.On;
+
+        // if (TryComp<ItemComponent>(uid, out var item))
+        // {
+        //     //_item.SetHeldPrefix(uid, magGravAct.On ? "on" : null, component: item);
+        //     //_clothing.SetEquippedPrefix(uid, magGravAct.On ? "on" : null);
+        // }
+
+        //_appearance.SetData(uid, ToggleVisuals.Toggled, magGravAct.On);
+        OnChanged(uid, magGravAct);
+        Dirty(uid, magGravAct);
+    }
+
+    protected void OnChanged(EntityUid uid, MagGravActComponent component)
+    {
+        _sharedActions.SetToggled(component.Action, component.On);
+        //_clothingSpeedModifier.SetClothingSpeedModifierEnabled(uid, component.On);
+    }
+
+    private void AddToggleVerb(EntityUid uid, MagGravActComponent component, GetVerbsEvent<ActivationVerb> args)
+    {
+        if (!args.CanAccess || !args.CanInteract)
+            return;
+
+        ActivationVerb verb = new();
+        verb.Text = Loc.GetString("toggle-magboots-verb-get-data-text");
+        verb.Act = () => ToggleMagboots(uid, component);
+        // TODO VERB ICON add toggle icon? maybe a computer on/off symbol?
+        args.Verbs.Add(verb);
+    }
+
+    private void OnSlipAttempt(EntityUid uid, MagGravActComponent component, InventoryRelayedEvent<SlipAttemptEvent> args)
+    {
+        if (component.On)
+            args.Args.Cancel();
+    }
+
+    private void OnGetActions(EntityUid uid, MagGravActComponent component, GetItemActionsEvent args)
+    {
+        args.AddAction(ref component.ToggleActionEntity, component.Action);
+    }
+
 }

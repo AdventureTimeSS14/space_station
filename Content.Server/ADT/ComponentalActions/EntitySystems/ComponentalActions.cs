@@ -78,6 +78,9 @@ public sealed partial class ComponentalActionsSystem : EntitySystem
         SubscribeLocalEvent<InvisibilityActComponent, MapInitEvent>(OnStealthInit);
         SubscribeLocalEvent<InvisibilityActComponent, ComponentShutdown>(OnStealthShutdown);
 
+        SubscribeLocalEvent<MagGravActComponent, MapInitEvent>(OnMagGravInit);
+        SubscribeLocalEvent<MagGravActComponent, ComponentShutdown>(OnMagGravShutdown);
+
         InitializeCompAbilities();
     }
 
@@ -137,4 +140,12 @@ public sealed partial class ComponentalActionsSystem : EntitySystem
         _action.RemoveAction(uid, component.ActionEntity);
     }
 
+    private void OnMagGravInit(EntityUid uid, InvisibilityActComponent component, MapInitEvent args)
+    {
+        _action.AddAction(uid, ref component.ActionEntity, component.Action);
+    }
+    private void OnMagGravShutdown(EntityUid uid, InvisibilityActComponent component, ComponentShutdown args)
+    {
+        _action.RemoveAction(uid, component.ActionEntity);
+    }
 }

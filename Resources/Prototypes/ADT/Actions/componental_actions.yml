@@ -96,3 +96,19 @@
     checkCanInteract: false
     event: !type:CompInvisibilityActionEvent
     useDelay: 1
+
+- type: entity
+  id: CompActionMagGrav
+  name: action-gravitation
+  description: action-gravitation-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/actions_ling.rsi
+      state: chameleon
+    itemIconStyle: BigAction
+    checkCanInteract: false
+    event: !type:CompGravitationActionEvent
+    useDelay: 1
+
