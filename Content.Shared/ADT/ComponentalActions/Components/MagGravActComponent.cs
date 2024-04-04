@@ -24,10 +24,5 @@ public sealed partial class MagGravActComponent : Component
     [DataField, AutoNetworkedField]
     public EntityUid? ActionEntity;
 
-    [DataField, AutoNetworkedField]
-    public EntityUid? ToggleActionEntity;
-
-    [DataField("on"), AutoNetworkedField]
-    public bool On;
 
 }

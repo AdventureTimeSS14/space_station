@@ -328,19 +328,35 @@ public sealed partial class ComponentalActionsSystem
 
     private void ToggleMagboots(EntityUid uid, MagGravActComponent component)
     {
-        component.On = !component.On;
 
-        // if (TryComp<ItemComponent>(uid, out var item))
-        // {
-        //     //_item.SetHeldPrefix(uid, magGravAct.On ? "on" : null, component: item);
-        //     //_clothing.SetEquippedPrefix(uid, magGravAct.On ? "on" : null);
-        // }
+        // component.On = !component.On;
 
-        //_appearance.SetData(uid, ToggleVisuals.Toggled, magGravAct.On);
-        _sharedActions.SetToggled(component.ToggleActionEntity, component.On);
-        Dirty(uid, component);
+
+        if (TryComp(uid, out MovedByPressureComponent? movedByPressure))
+        {
+            movedByPressure.Enabled = !component.Active;
+        }
+
+        if (component.Active)
+        {
+            _alerts.ShowAlert(uid, AlertType.Magboots);
+        }
+        else
+        {
+            _alerts.ClearAlert(uid, AlertType.Magboots);
+        }
     }
 
+
+        // // if (TryComp<ItemComponent>(uid, out var item))
+        // // {
+        // //     //_item.SetHeldPrefix(uid, magGravAct.On ? "on" : null, component: item);
+        // //     //_clothing.SetEquippedPrefix(uid, magGravAct.On ? "on" : null);
+        // // }
+
+        // //_appearance.SetData(uid, ToggleVisuals.Toggled, magGravAct.On);
+        // _sharedActions.SetToggled(component.ToggleActionEntity, component.On);
+        // Dirty(uid, component);
     // private void AddToggleVerb(EntityUid uid, MagGravActComponent component, GetVerbsEvent<ActivationVerb> args)
     // {
     //     if (!args.CanAccess || !args.CanInteract)
