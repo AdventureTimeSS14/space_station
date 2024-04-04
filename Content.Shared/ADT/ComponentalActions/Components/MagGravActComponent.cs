@@ -24,5 +24,4 @@ public sealed partial class MagGravActComponent : Component
     [DataField, AutoNetworkedField]
     public EntityUid? ActionEntity;
 
-
 }

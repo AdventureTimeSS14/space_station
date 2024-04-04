@@ -140,11 +140,11 @@ public sealed partial class ComponentalActionsSystem : EntitySystem
         _action.RemoveAction(uid, component.ActionEntity);
     }
 
-    private void OnMagGravInit(EntityUid uid, InvisibilityActComponent component, MapInitEvent args)
+    private void OnMagGravInit(EntityUid uid, MagGravActComponent component, MapInitEvent args)
     {
         _action.AddAction(uid, ref component.ActionEntity, component.Action);
     }
-    private void OnMagGravShutdown(EntityUid uid, InvisibilityActComponent component, ComponentShutdown args)
+    private void OnMagGravShutdown(EntityUid uid, MagGravActComponent component, ComponentShutdown args)
     {
         _action.RemoveAction(uid, component.ActionEntity);
     }

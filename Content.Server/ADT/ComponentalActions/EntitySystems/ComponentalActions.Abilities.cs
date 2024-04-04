@@ -59,6 +59,10 @@ using Content.Shared.Slippery;
 using Content.Shared.Toggleable;
 using Content.Shared.Verbs;
 using Robust.Shared.Containers;
+using Content.Server.Atmos.Components;
+using Content.Shared.Alert;
+using Content.Shared.Clothing;
+using Content.Shared.Inventory.Events;
 
 namespace Content.Server.ComponentalActions.EntitySystems;
 
@@ -92,7 +96,6 @@ public sealed partial class ComponentalActionsSystem
         SubscribeLocalEvent<JumpActComponent, CompJumpActionEvent>(OnJump);
         SubscribeLocalEvent<StasisHealActComponent, CompStasisHealActionEvent>(OnStasisHeal);
         SubscribeLocalEvent<InvisibilityActComponent, CompInvisibilityActionEvent>(OnInvisibility);
-
         SubscribeLocalEvent<MagGravActComponent, CompGravitationActionEvent>(OnMagGravity);
         // SubscribeLocalEvent<MagGravActComponent, GetVerbsEvent<ActivationVerb>>(AddToggleVerb);
         // SubscribeLocalEvent<MagGravActComponent, InventoryRelayedEvent<SlipAttemptEvent>>(OnSlipAttempt);
@@ -322,6 +325,7 @@ public sealed partial class ComponentalActionsSystem
             return;
 
         args.Handled = true;
+        _sharedActions.SetToggled(component.ActionEntity, component.Active);
 
         ToggleMagboots(uid, component);
     }
@@ -329,16 +333,18 @@ public sealed partial class ComponentalActionsSystem
     private void ToggleMagboots(EntityUid uid, MagGravActComponent component)
     {
 
-        // component.On = !component.On;
+        component.Active = !component.Active;
 
 
         if (TryComp(uid, out MovedByPressureComponent? movedByPressure))
         {
             movedByPressure.Enabled = !component.Active;
+            //_sharedActions.SetToggled(component.ActionEntity, component.Active);
         }
 
         if (component.Active)
         {
+            //_sharedActions.SetToggled(component.ActionEntity, component.Active);
             _alerts.ShowAlert(uid, AlertType.Magboots);
         }
         else
@@ -347,37 +353,5 @@ public sealed partial class ComponentalActionsSystem
         }
     }
 
-
-        // // if (TryComp<ItemComponent>(uid, out var item))
-        // // {
-        // //     //_item.SetHeldPrefix(uid, magGravAct.On ? "on" : null, component: item);
-        // //     //_clothing.SetEquippedPrefix(uid, magGravAct.On ? "on" : null);
-        // // }
-
-        // //_appearance.SetData(uid, ToggleVisuals.Toggled, magGravAct.On);
-        // _sharedActions.SetToggled(component.ToggleActionEntity, component.On);
-        // Dirty(uid, component);
-    // private void AddToggleVerb(EntityUid uid, MagGravActComponent component, GetVerbsEvent<ActivationVerb> args)
-    // {
-    //     if (!args.CanAccess || !args.CanInteract)
-    //         return;
-
-    //     ActivationVerb verb = new();
-    //     verb.Text = Loc.GetString("toggle-magboots-verb-get-data-text");
-    //     verb.Act = () => ToggleMagboots(uid, component);
-    //     // TODO VERB ICON add toggle icon? maybe a computer on/off symbol?
-    //     args.Verbs.Add(verb);
-    // }
-
-    // private void OnSlipAttempt(EntityUid uid, MagGravActComponent component, InventoryRelayedEvent<SlipAttemptEvent> args)
-    // {
-    //     if (component.On)
-    //         args.Args.Cancel();
-    // }
-
-    // private void OnGetActions(EntityUid uid, MagGravActComponent component, GetItemActionsEvent args)
-    // {
-    //     args.AddAction(ref component.ToggleActionEntity, component.Action);
-    // }
 
 }

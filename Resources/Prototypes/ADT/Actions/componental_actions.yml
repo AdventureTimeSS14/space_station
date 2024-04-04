@@ -105,8 +105,8 @@
   components:
   - type: InstantAction
     icon:
-      sprite: Interface/Actions/actions_ling.rsi
-      state: chameleon
+      sprite: Clothing/Shoes/Boots/magboots.rsi
+      state: icon
     itemIconStyle: BigAction
     checkCanInteract: false
     event: !type:CompGravitationActionEvent
