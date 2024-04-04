@@ -337,7 +337,7 @@ public sealed partial class ComponentalActionsSystem
         // }
 
         //_appearance.SetData(uid, ToggleVisuals.Toggled, magGravAct.On);
-        _sharedActions.SetToggled(component.Action, component.On);
+        _sharedActions.SetToggled(component.ToggleActionEntity, component.On);
         Dirty(uid, component);
     }
 
