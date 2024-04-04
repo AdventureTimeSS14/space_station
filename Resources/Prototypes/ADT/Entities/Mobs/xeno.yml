@@ -375,3 +375,22 @@
         - MobMask
         layer:
         - MobLayer
+
+- type: entity
+  name: Xeno Burrower
+  parent: ADTMobXenoBritsh
+  id: ADTMobXenoBurrower
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: ADT/Mobs/Aliens/ADTburrower.rsi
+    offset: 0,0.1
+  - type: MeleeWeapon
+    damage:
+     groups:
+       Brute: 5
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatRouny
+      amount: 3
