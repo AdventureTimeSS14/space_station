@@ -527,6 +527,7 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndie
+  - type: DNALocker
 
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -573,6 +574,7 @@
       sprite: Clothing/OuterClothing/Hardsuits/syndiemedic.rsi
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitSyndieMedic
+    - type: DNALocker
 
 #Cybersun Juggernaut Hardsuit
 - type: entity
@@ -604,6 +606,7 @@
     sprintModifier: 0.70
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitCybersun
+  - type: DNALocker
 
 #Syndicate Elite Hardsuit
 - type: entity
@@ -639,6 +642,7 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieElite
+  - type: DNALocker
 
 #Syndicate Commander Hardsuit
 - type: entity
@@ -672,6 +676,7 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieCommander
+  - type: DNALocker
 
 #Wizard Hardsuit
 - type: entity
