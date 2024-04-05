@@ -98,15 +98,15 @@
     useDelay: 1
 
 - type: entity
-  id: CompActionMagGrav
-  name: action-gravitation
-  description: action-gravitation-desc
+  id: CompLevitationAction
+  name: action-levitation
+  description: action-levitation-desc
   noSpawn: true
   components:
   - type: InstantAction
     icon:
-      sprite: Clothing/Shoes/Boots/magboots.rsi
-      state: icon
+      sprite: /Textures/ADT/Interface/alerts.rsi
+      state: levitation
     itemIconStyle: BigAction
     checkCanInteract: false
     event: !type:CompGravitationActionEvent

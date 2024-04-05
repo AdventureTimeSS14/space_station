@@ -63,6 +63,9 @@ using Content.Server.Atmos.Components;
 using Content.Shared.Alert;
 using Content.Shared.Clothing;
 using Content.Shared.Inventory.Events;
+using Content.Shared.Movement.Components;
+using Content.Shared.Movement.Systems;
+using Robust.Shared.Containers;
 
 namespace Content.Server.ComponentalActions.EntitySystems;
 
@@ -88,6 +91,9 @@ public sealed partial class ComponentalActionsSystem
     [Dependency] private readonly GunSystem _gunSystem = default!;
     [Dependency] private readonly ThrowingSystem _throwing = default!;
     [Dependency] private readonly SharedActionsSystem _sharedActions = default!;
+    [Dependency] private readonly ClothingSpeedModifierSystem _clothingSpeedModifier = default!;
+    [Dependency] private readonly MovementSpeedModifierSystem _movementSpeed = default!;
+    [Dependency] private readonly SharedContainerSystem _container = default!;
     private void InitializeCompAbilities()
     {
         SubscribeLocalEvent<TeleportActComponent, CompTeleportActionEvent>(OnTeleport);
@@ -96,10 +102,10 @@ public sealed partial class ComponentalActionsSystem
         SubscribeLocalEvent<JumpActComponent, CompJumpActionEvent>(OnJump);
         SubscribeLocalEvent<StasisHealActComponent, CompStasisHealActionEvent>(OnStasisHeal);
         SubscribeLocalEvent<InvisibilityActComponent, CompInvisibilityActionEvent>(OnInvisibility);
-        SubscribeLocalEvent<MagGravActComponent, CompGravitationActionEvent>(OnMagGravity);
-        // SubscribeLocalEvent<MagGravActComponent, GetVerbsEvent<ActivationVerb>>(AddToggleVerb);
-        // SubscribeLocalEvent<MagGravActComponent, InventoryRelayedEvent<SlipAttemptEvent>>(OnSlipAttempt);
-        // SubscribeLocalEvent<MagGravActComponent, GetItemActionsEvent>(OnGetActions);
+        SubscribeLocalEvent<LevitationActComponent, CompGravitationActionEvent>(OnMagGravity);
+        // SubscribeLocalEvent<LevitationActComponent, GetVerbsEvent<ActivationVerb>>(AddToggleVerb);
+        // SubscribeLocalEvent<LevitationActComponent, InventoryRelayedEvent<SlipAttemptEvent>>(OnSlipAttempt);
+        // SubscribeLocalEvent<LevitationActComponent, GetItemActionsEvent>(OnGetActions);
     }
 
     public override void Update(float frameTime)
@@ -319,23 +325,18 @@ public sealed partial class ComponentalActionsSystem
         args.Handled = true;
     }
 
-    private void OnMagGravity(EntityUid uid, MagGravActComponent component, CompGravitationActionEvent args)
+    private void OnMagGravity(EntityUid uid, LevitationActComponent component, CompGravitationActionEvent args)
     {
         if (args.Handled)
             return;
 
         args.Handled = true;
-        _sharedActions.SetToggled(component.ActionEntity, component.Active);
 
         ToggleMagboots(uid, component);
     }
-
-    private void ToggleMagboots(EntityUid uid, MagGravActComponent component)
+    private void ToggleMagboots(EntityUid uid, LevitationActComponent component)
     {
-
         component.Active = !component.Active;
-
-
         if (TryComp(uid, out MovedByPressureComponent? movedByPressure))
         {
             movedByPressure.Enabled = !component.Active;
@@ -344,14 +345,22 @@ public sealed partial class ComponentalActionsSystem
 
         if (component.Active)
         {
-            //_sharedActions.SetToggled(component.ActionEntity, component.Active);
-            _alerts.ShowAlert(uid, AlertType.Magboots);
+            _alerts.ShowAlert(uid, AlertType.ADTLevitation);
+            AddComp<MovementIgnoreGravityComponent>(uid);
+            var movementSpeed = EnsureComp<MovementSpeedModifierComponent>(uid);
+            var sprintSpeed = component.BaseSprintSpeed;
+            var walkSpeed = component.BaseWalkSpeed;
+            _movementSpeedModifierSystem?.ChangeBaseSpeed(uid, walkSpeed, sprintSpeed, movementSpeed.Acceleration, movementSpeed);
         }
         else
         {
-            _alerts.ClearAlert(uid, AlertType.Magboots);
+            _alerts.ClearAlert(uid, AlertType.ADTLevitation);
+            RemComp<MovementIgnoreGravityComponent>(uid);
+            var movementSpeed = EnsureComp<MovementSpeedModifierComponent>(uid);
+            var sprintSpeed = component.SpeedModifier;
+            var walkSpeed = component.SpeedModifier;
+            _movementSpeedModifierSystem?.ChangeBaseSpeed(uid, walkSpeed, sprintSpeed, movementSpeed.Acceleration, movementSpeed);
         }
     }
-
 
 }

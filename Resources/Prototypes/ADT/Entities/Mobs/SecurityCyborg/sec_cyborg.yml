@@ -128,7 +128,7 @@
       collection: FootstepSoldier
       params:
         volume: -2
-  - type: MagGravAct
+  - type: NoSlip
   - type: Insulated
   - type: Tag
     tags:
