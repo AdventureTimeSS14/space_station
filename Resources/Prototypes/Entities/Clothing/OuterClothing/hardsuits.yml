@@ -160,6 +160,9 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSalvage
+  - type: Tag
+    tags:
+    - ADTHardsuitSalvage
 
 - type: entity
   parent: ClothingOuterHardsuitBase

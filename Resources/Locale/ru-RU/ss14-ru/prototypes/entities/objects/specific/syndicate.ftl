@@ -1,6 +1,8 @@
-ent-Telecrystal = телекристалл
-    .desc = Похоже, он переливается подозрительно манящей энергией.
-    .suffix = 20 ТК
+# Corvax-HiddenDesc-Start
+ent-Telecrystal = красный кристалл
+    .desc = Необычные, мерцающие красным кристаллы.
+    .suffix =  20 ТК, телекристалл Синдиката
+# Corvax-HiddenDesc-End
 ent-Telecrystal1 = { ent-Telecrystal }
     .suffix = 1 ТК
     .desc = { ent-Telecrystal.desc }
