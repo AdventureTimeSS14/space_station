@@ -348,6 +348,7 @@
   suffix: Antag Drone IPC
   description: Вам, вероятно, не стоит стоять рядом с ним, чтобы проверить, включен ли он.
   components:
+  - type: LevitationAct
   - type: InteractionPopup
     interactSuccessString: petting-success-ipc
     #interactFailureString: petting-failure-cleanbot
