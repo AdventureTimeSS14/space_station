@@ -59,7 +59,8 @@ namespace Content.Shared.Alert
         PainKiller,
         ADTAlertPolymorph,
         ADTAlertApathy,
-        ADTAlertLingRefresh
+        ADTAlertLingRefresh,
+        ADTLevitation
     }
 
 }

@@ -12,4 +12,11 @@ ent-ClothingShoesBootsMerc = ботинки наёмника
     .desc = Ботинки, прошедшие через множество конфликтов и доказавшие свою боевую надежность.
 ent-ClothingShoesBootsLaceup = шнурованные туфли
     .desc = Последний писк моды, и поставляются сразу отполированными!
-
+ent-ClothingShoesBootsCowboyBrown = коричнивые ковбойские сапоги
+    .desc = У них есть шпоры, они звенят.
+ent-ClothingShoesBootsCowboyBlack = чёрные ковбойские сапоги
+    .desc = { ent-ClothingShoesBootsCowboyBrown.desc }
+ent-ClothingShoesBootsCowboyWhite = белые ковбойские сапоги
+    .desc = { ent-ClothingShoesBootsCowboyBrown.desc }
+ent-ClothingShoesBootsCowboyFancy = изысканные ковбойские сапоги
+    .desc = { ent-ClothingShoesBootsCowboyBrown.desc }

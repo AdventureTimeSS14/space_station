@@ -1,8 +1,10 @@
 - type: vendingMachineInventory
   id: AutoDrobeInventory
   startingInventory:
-    ADTBoxValentineWhite: 5
-    ADTBoxValentineRed: 5
+# ADT Коробки для 14 февраля начало
+#   ADTBoxValentineWhite: 5
+#   ADTBoxValentineRed: 5
+# ADT Коробки для 14 февраля конец
     ClothingHeadHatJester: 2
     ClothingUniformJumpsuitJester: 2
     ClothingHeadHatJesterAlt: 2
@@ -32,8 +34,8 @@
     Gohei: 2
     ClothingHeadHatRedRacoon: 2
     ClothingOuterRedRacoon: 2
-    # ClothingHeadPaperSack: 2
-    # ClothingHeadPaperSackSmile: 2
+#    ClothingHeadPaperSack: 2
+#    ClothingHeadPaperSackSmile: 2
     ClothingEyesBlindfold: 3
     ClothingHeadRastaHat: 4
     ClothingUniformJumpsuitDameDane: 3
