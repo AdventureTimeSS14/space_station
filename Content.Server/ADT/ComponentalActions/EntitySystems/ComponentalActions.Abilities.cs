@@ -348,17 +348,18 @@ public sealed partial class ComponentalActionsSystem
             _alerts.ShowAlert(uid, AlertType.ADTLevitation);
             AddComp<MovementIgnoreGravityComponent>(uid);
             var movementSpeed = EnsureComp<MovementSpeedModifierComponent>(uid);
-            var sprintSpeed = component.BaseSprintSpeed;
-            var walkSpeed = component.BaseWalkSpeed;
+            var sprintSpeed = component.SpeedModifier;
+            var walkSpeed = component.SpeedModifier;
             _movementSpeedModifierSystem?.ChangeBaseSpeed(uid, walkSpeed, sprintSpeed, movementSpeed.Acceleration, movementSpeed);
+
         }
         else
         {
             _alerts.ClearAlert(uid, AlertType.ADTLevitation);
             RemComp<MovementIgnoreGravityComponent>(uid);
             var movementSpeed = EnsureComp<MovementSpeedModifierComponent>(uid);
-            var sprintSpeed = component.SpeedModifier;
-            var walkSpeed = component.SpeedModifier;
+            var sprintSpeed = component.BaseSprintSpeed;
+            var walkSpeed = component.BaseWalkSpeed;
             _movementSpeedModifierSystem?.ChangeBaseSpeed(uid, walkSpeed, sprintSpeed, movementSpeed.Acceleration, movementSpeed);
         }
     }

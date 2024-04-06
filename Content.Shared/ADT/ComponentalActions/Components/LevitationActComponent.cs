@@ -16,13 +16,13 @@ public sealed partial class LevitationActComponent : Component
     // public float BlinkVolume = 5f;
 
     [DataField]
-    public float SpeedModifier = 1f;
+    public float SpeedModifier = 2f;
 
     [DataField]
-    public float BaseSprintSpeed = 2f;
+    public float BaseSprintSpeed = 4.5f;
 
     [DataField]
-    public float BaseWalkSpeed = 2f;
+    public float BaseWalkSpeed = 2.5f;
 
     [DataField]
     public bool Active = false;
