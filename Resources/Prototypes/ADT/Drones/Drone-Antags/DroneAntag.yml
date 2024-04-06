@@ -4,6 +4,7 @@
   name: antag drone base
   abstract: true
   components:
+  - type: WiresPanel  # + Тех панель
   - type: MindContainer
   - type: InputMover
   - type: MobMover
