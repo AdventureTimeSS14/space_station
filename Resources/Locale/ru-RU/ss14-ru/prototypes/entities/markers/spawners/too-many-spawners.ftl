@@ -2,10 +2,13 @@ ent-ADTTritiumGasSpawner = спавнер Тритий
     .desc = { ent-MarkerBase.desc }
 
 ent-RandomHumanoidSpawnerDeathSquad = спавнер Эскадрон Смерти
+    .desc = { ent-MarkerBase.desc }
     .suffix = Spawner, ERTRole, Death Squad
 ent-RandomHumanoidSpawnerERTLeaderEVALecter = спавнер ОБР лидер
+    .desc = { ent-MarkerBase.desc }
     .suffix = Spawner, ERTRole, Lecter, EVA
 ent-RandomHumanoidSpawnerERTSecurityEVALecter = спавнер ОБР офицер безопасности
+    .desc = { ent-MarkerBase.desc }
     .suffix = Spawner, ERTRole, Lecter, EVA
 
 ent-RandomBoard = спавнер случайная плата
