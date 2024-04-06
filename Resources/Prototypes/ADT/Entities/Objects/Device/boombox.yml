@@ -447,21 +447,6 @@
         path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  parent: BaseBoomBoxPackedTape
-  id: BoomBoxTapeWirsinddesGeyersschwarzerPacked
-  name: The Wizard
-  description: It is said that this tape can summon a wizard...
-  components:
-    - type: Sprite
-      sprite: ADT/Objects/Device/tapepacked.rsi
-      state: tape
-    - type: SpawnItemsOnUse
-      items:
-      - id: ADTBoomBoxTapeWirsinddesGeyersschwarzer
-      sound:
-        path: /Audio/Effects/unwrap.ogg
-
-- type: entity
   parent: BaseBoomBoxTape
   id: ADTBoomBoxTapeBorat
   name: The Wizard
@@ -469,15 +454,6 @@
   components:
     - type: BoomBoxTape
       soundPath: /Audio/BoomBox/borat.ogg
-
-- type: entity
-  parent: BaseBoomBoxTape
-  id: ADTBoomBoxTapeWirsinddesGeyersschwarzer
-  name: The Wizard
-  description: It is said that this tape can summon a wizard...
-  components:
-    - type: BoomBoxTape
-      soundPath: /Audio/BoomBox/Botho_Lucas_Chor_Wir_sind_des_Geyers_schwarzer_Haufen.ogg
 
 #ультракилл
 
