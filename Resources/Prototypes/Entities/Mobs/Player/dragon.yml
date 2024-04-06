@@ -123,6 +123,10 @@
   - type: Tag
     tags:
     - CannotSuicide
+  - type: CollectiveMind
+    channel: CarpCollectiveMind
+    showRank: true
+    rankName: collective-mind-dragon-rank
 
 - type: entity
   parent: BaseMobDragon

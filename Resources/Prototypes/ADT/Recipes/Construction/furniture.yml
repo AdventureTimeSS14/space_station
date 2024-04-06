@@ -1043,3 +1043,22 @@
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
+
+#крафт костра
+
+- type: construction
+  id: ADTBonfireRecipe
+  name: bonfire
+  description: Just dont freeze.
+  graph: Bonfire
+  startNode: start
+  targetNode: bonfire
+  category: construction-category-misc
+  icon:
+    sprite: Structures/Decoration/bonfire.rsi
+    state: bonfire
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked

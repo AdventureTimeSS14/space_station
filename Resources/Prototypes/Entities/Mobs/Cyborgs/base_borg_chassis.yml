@@ -206,6 +206,10 @@
     - DoorBumpOpener
     - CanPilot
   - type: Emoting
+  - type: CollectiveMind
+    channel: Binary
+    showRank: true
+    rankName: collective-mind-borg-rank
   - type: GuideHelp
     guides:
       - Cyborgs

@@ -42,6 +42,11 @@ namespace Content.Shared.Chat
         Emotes = ChatChannel.Emotes,
 
         /// <summary>
+        ///     CollectiveMind
+        /// </summary>
+        CollectiveMind = ChatChannel.CollectiveMind,
+
+        /// <summary>
         ///     Deadchat
         /// </summary>
         Dead = ChatChannel.Dead,

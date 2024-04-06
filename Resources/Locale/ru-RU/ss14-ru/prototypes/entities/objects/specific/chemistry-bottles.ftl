@@ -18,8 +18,11 @@ ent-Left4ZedChemistryBottle = бутылочка left-4-zed
     .desc = Это повысит эффективность мутагена.
 ent-UnstableMutagenChemistryBottle = бутылочка нестабильного мутагена
     .desc = Это вызовет быструю мутацию ваших растений.
-ent-NocturineChemistryBottle = бутылочка ноктюрина
-    .desc = Это заставит любого упасть практически сразу. Сложно вызвать передозировку.
+# Corvax-HiddenDesc-Start
+ent-NocturineChemistryBottle = { ent-BaseChemistryEmptyBottle }
+    .suffix = бутылочка ноктюрина, Синдикат
+    .desc = { ent-BaseChemistryEmptyBottle.desc }
+# Corvax-HiddenDesc-End
 ent-EphedrineChemistryBottle = бутылочка эфедрина
     .desc = { ent-BaseChemistryEmptyBottle.desc }
 ent-OmnizineChemistryBottle = бутылочка омнизина
