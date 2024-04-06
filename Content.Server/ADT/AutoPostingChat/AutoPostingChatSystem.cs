@@ -44,6 +44,7 @@ public sealed class AutoPostingChatSystem : EntitySystem
             //_damageableSystem.TryChangeDamage(uid, damageSpec);
         }
     }
+
     private void OnComponentStartup(EntityUid uid, AutoPostingChatComponent component, ComponentStartup args)
     {
         // Проверяем наличие компонента AutoPostingChatComponent на сущности
