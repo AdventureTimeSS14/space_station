@@ -332,9 +332,9 @@ public sealed partial class ComponentalActionsSystem
 
         args.Handled = true;
 
-        ToggleMagboots(uid, component);
+        ToggleLevitation(uid, component);
     }
-    private void ToggleMagboots(EntityUid uid, LevitationActComponent component)
+    private void ToggleLevitation(EntityUid uid, LevitationActComponent component)
     {
         component.Active = !component.Active;
         if (TryComp(uid, out MovedByPressureComponent? movedByPressure))
