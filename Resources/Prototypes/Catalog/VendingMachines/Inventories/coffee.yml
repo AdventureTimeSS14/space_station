@@ -1,17 +1,19 @@
 - type: vendingMachineInventory
   id: HotDrinksMachineInventory
   startingInventory:
-    ADTSerumLoveGlass: 3
-    ADTRossiniGlass: 3
-    ADTKirRoyalGlass: 3
-    ADTCosmopolitanGlass: 3
-    DrinkHotCoffee: 5
-    DrinkCafeLatte: 5
-    DrinkTeacup: 5
-    DrinkGreenTea: 5
-    DrinkHotCoco: 5
-    ADTDrinkKarkadetea: 5
-    ADTDrinkChamotea: 5
-    ADTDrinkLemontea: 5
+# Начало напитки на 14 февраля
+#    ADTSerumLoveGlass: 3
+#    ADTRossiniGlass: 3
+#    ADTKirRoyalGlass: 3
+#    ADTCosmopolitanGlass: 3
+# Конец напитки на 14 февраля
+    DrinkHotCoffee: 3
+    DrinkCafeLatte: 3
+    DrinkTeacup: 3
+    DrinkGreenTea: 3
+    DrinkHotCoco: 3
+    ADTDrinkKarkadetea: 2
+    ADTDrinkChamotea: 2
+    ADTDrinkLemontea: 2
   emaggedInventory:
     DrinkNothing: 2
