@@ -1,0 +1,46 @@
+- type: entity
+  name: wild pig
+  parent: MobPig
+  id: ADTMobWildPig
+  description: Oink.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: pig
+      sprite: ADT/Mobs/Animals/wild_pig.rsi
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatBacon
+      amount: 3
+    - id: FoodMeat
+      amount: 3
+  - type: SentienceTarget
+    flavorKind: station-event-random-sentience-flavor-organic
+  - type: CanHostGuardian
+  - type: NPCRetaliation
+    attackMemoryLength: 10
+  - type: FactionException
+  - type: NpcFactionMember
+    factions:
+      - Passive
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      150: Dead
+  - type: MeleeWeapon
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh2.ogg
+    angle: 100
+    attackRate: 1.1
+    animation: WeaponArcFist
+    damage:
+      types:
+        Blunt: 15
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3.5
+    baseSprintSpeed : 4.8

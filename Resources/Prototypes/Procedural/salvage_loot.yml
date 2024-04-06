@@ -92,9 +92,6 @@
         - proto: CrateSyndicateSuperSurplusBundle
           cost: 5
           prob: 0.01
-        - proto: CrateBerserk
-          cost: 5
-          prob: 0.35
         - proto: Katana
           cost: 5
           prob: 0.45

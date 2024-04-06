@@ -269,9 +269,6 @@
   description: lapkee satchel
   suffix: Personal, Lapkee
   components:
-  - type: Storage
-    grid:
-    - 0,0,10,7
   - type: StorageFill
     contents:
       - id: BoxSurvivalSecurity

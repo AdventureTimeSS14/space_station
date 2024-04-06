@@ -23,3 +23,6 @@
     sprite: ADT/Objects/Weapons/Melee/bone_knife.rsi
   - type: DisarmMalus
     malus: 0.225
+  - type: Clothing
+    slots:
+    - Belt

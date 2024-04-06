@@ -6,3 +6,5 @@ ent-ADTPlushieResomiYellow = плюшевый желтый Резоми
     .desc = Милый маленький Резоми! UwU
 ent-ADTGarbagerama = Мусорама
     .desc = Кто-то забыл это здесь.
+ent-ADTPlushieMio = плюшевая Мио
+    .desc = Невероятно миленькая Мио, такой нежный и маленький сумеречник.

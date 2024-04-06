@@ -53,6 +53,19 @@ using Robust.Server.GameObjects;
 using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Throwing;
+using Content.Shared.Clothing.EntitySystems;
+using Content.Shared.Item;
+using Content.Shared.Slippery;
+using Content.Shared.Toggleable;
+using Content.Shared.Verbs;
+using Robust.Shared.Containers;
+using Content.Server.Atmos.Components;
+using Content.Shared.Alert;
+using Content.Shared.Clothing;
+using Content.Shared.Inventory.Events;
+using Content.Shared.Movement.Components;
+using Content.Shared.Movement.Systems;
+using Robust.Shared.Containers;
 
 namespace Content.Server.ComponentalActions.EntitySystems;
 
@@ -77,6 +90,10 @@ public sealed partial class ComponentalActionsSystem
     [Dependency] private readonly PhysicsSystem _physics = default!;
     [Dependency] private readonly GunSystem _gunSystem = default!;
     [Dependency] private readonly ThrowingSystem _throwing = default!;
+    [Dependency] private readonly SharedActionsSystem _sharedActions = default!;
+    [Dependency] private readonly ClothingSpeedModifierSystem _clothingSpeedModifier = default!;
+    [Dependency] private readonly MovementSpeedModifierSystem _movementSpeed = default!;
+    [Dependency] private readonly SharedContainerSystem _container = default!;
     private void InitializeCompAbilities()
     {
         SubscribeLocalEvent<TeleportActComponent, CompTeleportActionEvent>(OnTeleport);
@@ -85,6 +102,10 @@ public sealed partial class ComponentalActionsSystem
         SubscribeLocalEvent<JumpActComponent, CompJumpActionEvent>(OnJump);
         SubscribeLocalEvent<StasisHealActComponent, CompStasisHealActionEvent>(OnStasisHeal);
         SubscribeLocalEvent<InvisibilityActComponent, CompInvisibilityActionEvent>(OnInvisibility);
+        SubscribeLocalEvent<LevitationActComponent, CompGravitationActionEvent>(OnMagGravity);
+        // SubscribeLocalEvent<LevitationActComponent, GetVerbsEvent<ActivationVerb>>(AddToggleVerb);
+        // SubscribeLocalEvent<LevitationActComponent, InventoryRelayedEvent<SlipAttemptEvent>>(OnSlipAttempt);
+        // SubscribeLocalEvent<LevitationActComponent, GetItemActionsEvent>(OnGetActions);
     }
 
     public override void Update(float frameTime)
@@ -303,4 +324,44 @@ public sealed partial class ComponentalActionsSystem
 
         args.Handled = true;
     }
+
+    private void OnMagGravity(EntityUid uid, LevitationActComponent component, CompGravitationActionEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        args.Handled = true;
+
+        ToggleLevitation(uid, component);
+    }
+    private void ToggleLevitation(EntityUid uid, LevitationActComponent component)
+    {
+        component.Active = !component.Active;
+        if (TryComp(uid, out MovedByPressureComponent? movedByPressure))
+        {
+            movedByPressure.Enabled = !component.Active;
+            //_sharedActions.SetToggled(component.ActionEntity, component.Active);
+        }
+
+        if (component.Active)
+        {
+            _alerts.ShowAlert(uid, AlertType.ADTLevitation);
+            AddComp<MovementIgnoreGravityComponent>(uid);
+            var movementSpeed = EnsureComp<MovementSpeedModifierComponent>(uid);
+            var sprintSpeed = component.SpeedModifier;
+            var walkSpeed = component.SpeedModifier;
+            _movementSpeedModifierSystem?.ChangeBaseSpeed(uid, walkSpeed, sprintSpeed, movementSpeed.Acceleration, movementSpeed);
+
+        }
+        else
+        {
+            _alerts.ClearAlert(uid, AlertType.ADTLevitation);
+            RemComp<MovementIgnoreGravityComponent>(uid);
+            var movementSpeed = EnsureComp<MovementSpeedModifierComponent>(uid);
+            var sprintSpeed = component.BaseSprintSpeed;
+            var walkSpeed = component.BaseWalkSpeed;
+            _movementSpeedModifierSystem?.ChangeBaseSpeed(uid, walkSpeed, sprintSpeed, movementSpeed.Acceleration, movementSpeed);
+        }
+    }
+
 }

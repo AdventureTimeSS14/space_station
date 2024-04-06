@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "ADT & GG Team. Painkiller by LogDog. Polymorph and apathy by JustKekc",
+  "copyright": "ADT & GG Team. Painkiller by LogDog. Polymorph and apathy by JustKekc. Levitation by Schrodinger71",
   "size": {
     "x": 32,
     "y": 32
@@ -16,6 +16,9 @@
     },
     {
       "name": "apathy"
+    },
+    {
+      "name": "levitation"
     }
   ]
 }

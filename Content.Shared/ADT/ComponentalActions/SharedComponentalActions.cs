@@ -28,3 +28,7 @@ public sealed partial class CompStasisHealActionEvent : InstantActionEvent
 public sealed partial class CompInvisibilityActionEvent : InstantActionEvent
 {
 }
+
+public sealed partial class CompGravitationActionEvent : InstantActionEvent
+{
+}
