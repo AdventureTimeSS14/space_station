@@ -8,3 +8,23 @@
       sprite: ADT/Clothing/Neck/gold_chain.rsi 
     - type: Clothing
       sprite: ADT/Clothing/Neck/gold_chain.rsi #спрайты от prazat911
+
+#Нагрудная камера
+- type: entity
+  parent: ClothingNeckBase
+  id: ADTClothingNeckSecCam
+  name: security chest camera
+  description: security chest camera
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/sec_camera.rsi 
+    - type: Clothing
+      sprite: ADT/Clothing/Neck/sec_camera.rsi
+    - type: DeviceNetwork
+      deviceNetId: Wired
+      receiveFrequencyId: SurveillanceCameraSecurity
+      transmitFrequencyId: SurveillanceCamera
+    - type: SurveillanceCamera
+      networkSet: true
+    - type: Eye
+    - type: WiredNetworkConnection

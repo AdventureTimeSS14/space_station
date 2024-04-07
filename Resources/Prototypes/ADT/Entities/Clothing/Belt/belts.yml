@@ -429,3 +429,17 @@
           tags:
           - CaptainSabre
   - type: Appearance
+
+#Жилет Криминалиста
+
+- type: entity
+  id: ADTClothingBeltCriminalist
+  parent: ClothingBeltMilitaryWebbing
+  name: criminalist belt
+  description: criminalist belt
+  suffix: Criminalist
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Belt/criminalist_webbing.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Belt/criminalist_webbing.rsi
