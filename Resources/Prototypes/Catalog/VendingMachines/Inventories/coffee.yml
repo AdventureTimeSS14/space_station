@@ -1,12 +1,6 @@
 - type: vendingMachineInventory
   id: HotDrinksMachineInventory
   startingInventory:
-# Начало напитки на 14 февраля
-#    ADTSerumLoveGlass: 3
-#    ADTRossiniGlass: 3
-#    ADTKirRoyalGlass: 3
-#    ADTCosmopolitanGlass: 3
-# Конец напитки на 14 февраля
     DrinkHotCoffee: 3
     DrinkCafeLatte: 3
     DrinkTeacup: 3
