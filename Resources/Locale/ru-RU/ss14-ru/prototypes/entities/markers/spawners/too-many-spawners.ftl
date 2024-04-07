@@ -20,6 +20,7 @@ ent-RandomDrinkSoda = спавнер случайная газировка
 ent-RandomFloraTree = спавнер случайное дерево
     .desc = { ent-MarkerBase.desc }
 ent-SalvageLootSpawner = спавнер случайный лут
+    .desc = { ent-MarkerBase.desc }
     .suffix = Spawner, Salvage
 ent-FolderSpawner = спавнер случайная папка
     .desc = { ent-MarkerBase.desc }
