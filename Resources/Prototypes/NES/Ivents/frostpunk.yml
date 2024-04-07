@@ -212,7 +212,9 @@
 - type: entity
   id: NesIisysWallRock
   parent: BaseStructure
-  name: камень Иссус (бессмертный)
+  name: Бедрок
+  description: Коренная горная порода. Слишком крепкая, чтобы её можно было разрушить ручными инструментами.
+  suffix: Неразрушимый
   components:
     - type: PlacementReplacement
       key: walls

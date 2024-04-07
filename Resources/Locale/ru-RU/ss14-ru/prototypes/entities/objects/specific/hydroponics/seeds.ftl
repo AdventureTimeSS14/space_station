@@ -98,5 +98,5 @@ ent-PumpkinSeeds = пакетик тыквенных семечек
     .desc = { ent-SeedBase.desc }
 ent-PeaSeeds = пакетик стручков гороха
     .desc = { ent-SeedBase.desc }
-ent-CottonSeeds = пакетик семян хлопчатника
+ent-CottonSeeds = пакетик семян хлопка
     .desc = { ent-SeedBase.desc }

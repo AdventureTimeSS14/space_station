@@ -23,6 +23,8 @@
         Blunt: 0
   - type: Spillable
     solution: drink
+  - type: FitsInDispenser
+    solution: drink
   - type: DrawableSolution
     solution: drink
   - type: RefillableSolution
@@ -73,8 +75,6 @@
     materialComposition:
       Glass: 25
   - type: ExaminableSolution
-    solution: drink
-  - type: FitsInDispenser
     solution: drink
   # нужно для того, чтобы стекло лопалось.
   - type: AtmosExposed
@@ -145,9 +145,10 @@
       fillBaseName: fill
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkAbsintheGlass
-  suffix: absinthe
+  name: absinthe glass
+  description: Wormwood, anise, oh my.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -156,14 +157,14 @@
         reagents:
         - ReagentId: Absinthe
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/absintheglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkAcidSpitGlass
-  suffix: acid spit
+  name: acid spit glass
+  description: A drink from the company archives. Made from live aliens.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -172,14 +173,14 @@
         reagents:
         - ReagentId: AcidSpit
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/acidspitglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkAleGlass
-  suffix: ale
+  name: ale glass
+  description: A freezing pint of delicious ale
   components:
   - type: SolutionContainerManager
     solutions:
@@ -188,14 +189,14 @@
         reagents:
         - ReagentId: Ale
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/aleglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkAlliesCocktail
-  suffix: allies cocktail
+  name: allies cocktail
+  description: A drink made from your allies.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -204,14 +205,14 @@
         reagents:
         - ReagentId: AlliesCocktail
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/alliescocktail.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkAloe
-  suffix: aloe
+  name: aloe glass
+  description: Very, very, very good.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -220,14 +221,14 @@
         reagents:
         - ReagentId: Aloe
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/aloe.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkAmasecGlass
-  suffix: amasec
+  name: amasec glass
+  description: Always handy before COMBAT!!!
   components:
   - type: SolutionContainerManager
     solutions:
@@ -236,14 +237,14 @@
         reagents:
         - ReagentId: Amasec
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/amasecglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkAndalusia
-  suffix: andalusia
+  name: andalusia glass
+  description: A nice drink with a strange name.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -252,14 +253,14 @@
         reagents:
         - ReagentId: Andalusia
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/andalusia.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkAntifreeze
-  suffix: antifreeze
+  name: anti-freeze glass
+  description: The ultimate refreshment.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -268,11 +269,15 @@
         reagents:
         - ReagentId: Antifreeze
           Quantity: 30
+  - type: Drink
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/antifreeze.rsi
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkAtomicBombGlass
-  suffix: atomic bomb
+  name: atomic bomb glass
+  description: We cannot take legal responsibility for your actions after imbibing.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -281,14 +286,15 @@
         reagents:
         - ReagentId: AtomicBomb
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/atomicbombglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkB52Glass
-  suffix: b-52
+  name: b-52 glass
+  description: Coffee, Irish Cream, and cognac. You will get bombed.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -297,14 +303,15 @@
         reagents:
         - ReagentId: B52
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/b52glass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkBahamaMama
-  suffix: bahama mama
+  name: bahama mama glass
+  description: Tropical cocktail.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -313,14 +320,15 @@
         reagents:
         - ReagentId: BahamaMama
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/bahama_mama.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkBananaHonkGlass
-  suffix: banana honk
+  name: banana honk glass
+  description: A drink from Banana Heaven.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -329,14 +337,15 @@
         reagents:
         - ReagentId: BananaHonk
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/bananahonkglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkBarefootGlass
-  suffix: barefoot
+  name: barefoot glass
+  description: Barefoot and pregnant.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -345,14 +354,15 @@
         reagents:
         - ReagentId: Barefoot
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/b&p.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkBeepskySmashGlass
-  suffix: beepsky smash
+  name: beepsky smash glass
+  description: Heavy, hot and strong. Just like the Iron fist of the LAW.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -361,14 +371,15 @@
         reagents:
         - ReagentId: BeepskySmash
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/beepskysmashglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkBeerglass
-  suffix: beer
+  name: beer glass
+  description: A freezing pint of beer.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -377,15 +388,16 @@
         reagents:
         - ReagentId: Beer
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/beerglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkBerryJuice
-  suffix: berry juice
+  name: berry juice
+  description: Berry juice. Or maybe it's jam. Who cares?
   components:
+  - type: Drink
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -393,14 +405,14 @@
         reagents:
         - ReagentId: JuiceBerry
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/berryjuice.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkBlackRussianGlass
-  suffix: black russian
+  name: black russian glass
+  description: For the lactose-intolerant. Still as classy as a White Russian.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -409,15 +421,17 @@
         reagents:
         - ReagentId: BlackRussian
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/blackrussianglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkBlueCuracaoGlass
-  suffix: blue curacao
+  name: blue curacao
+  description: Exotically blue, fruity drink, distilled from oranges.
   components:
+  - type: Drink
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -425,14 +439,14 @@
         reagents:
         - ReagentId: BlueCuracao
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/curacaoglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkBloodyMaryGlass
-  suffix: bloody mary
+  name: bloody mary glass
+  description: Tomato juice, mixed with Vodka and a lil' bit of lime. Tastes like liquid murder.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -441,14 +455,15 @@
         reagents:
         - ReagentId: BloodyMary
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/bloodymaryglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkBooger
-  suffix: booger
+  name: booger
+  description: Ewww...
   components:
   - type: SolutionContainerManager
     solutions:
@@ -457,14 +472,15 @@
         reagents:
         - ReagentId: Booger
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/booger.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkBraveBullGlass
-  suffix: brave bull
+  name: brave bull glass
+  description: Tequilla and coffee liquor, brought together in a mouthwatering mixture. Drink up.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -473,15 +489,17 @@
         reagents:
         - ReagentId: BraveBull
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/bravebullglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkCarrotJuice
-  suffix: carrot juice
+  name: carrot juice
+  description: It's just like a carrot but without crunching.
   components:
+  - type: Drink
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -489,15 +507,18 @@
         reagents:
         - ReagentId: JuiceCarrot
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/carrotjuice.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkChocolateGlass
-  suffix: chocolate
+  name: hot chocolate
+  description: A heated drink consisting melted chocolate and heated milk.
   components:
+  - type: Drink
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/chocolateglass.rsi
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -505,14 +526,12 @@
         reagents:
         - ReagentId: HotCocoa
           Quantity: 30
-  - type: Icon
-    sprite: Objects/Consumable/Drinks/chocolateglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkCoffee
-  suffix: coffee
+  name: coffee
+  description: Don't drop it, or you'll send scalding liquid and glass shards everywhere.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -521,14 +540,14 @@
         reagents:
         - ReagentId: Coffee
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/coffee.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkCognacGlass
-  suffix: cognac
+  name: cognac glass
+  description: Damn, you feel like some kind of French aristocrat just by holding this.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -537,14 +556,14 @@
         reagents:
         - ReagentId: Cognac
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/cognacglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkCream
-  suffix: cream
+  name: cream
+  description: Ewwww...
   components:
   - type: SolutionContainerManager
     solutions:
@@ -553,11 +572,14 @@
         reagents:
         - ReagentId: Cream
           Quantity: 30
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/cream.rsi
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkCubaLibreGlass
-  suffix: cuba libre
+  name: cuba libre glass
+  description: A classic mix of rum and cola.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -566,14 +588,14 @@
         reagents:
         - ReagentId: CubaLibre
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/cubalibreglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkDeadRumGlass
-  suffix: dead rum
+  name: deadrum glass
+  description: Popular with the sailors. Not very popular with everyone else.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -582,14 +604,15 @@
         reagents:
         - ReagentId: DeadRum
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/rumglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkDemonsBlood
-  suffix: demon's blood
+  name: demons blood
+  description: Just looking at this thing makes the hair at the back of your neck stand up.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -598,14 +621,15 @@
         reagents:
         - ReagentId: DemonsBlood
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/demonsblood.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkDevilsKiss
-  suffix: devil's kiss
+  name: devil's kiss
+  description: Creepy time!
   components:
   - type: SolutionContainerManager
     solutions:
@@ -614,14 +638,15 @@
         reagents:
         - ReagentId: DevilsKiss
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/devilskiss.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkDoctorsDelightGlass
-  suffix: doctor's delight
+  name: the doctor's delight
+  description: A healthy mixture of juices, guaranteed to keep you healthy until the next toolboxing takes place.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -630,14 +655,15 @@
         reagents:
         - ReagentId: DoctorsDelight
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/doctorsdelightglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkDriestMartiniGlass
-  suffix: driest martini
+  name: driest martini glass
+  description: Only for the experienced. You think you see sand floating in the glass.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -646,14 +672,15 @@
         reagents:
         - ReagentId: DriestMartini
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/driestmartiniglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkDrGibbGlass
-  suffix: dr gibb
+  name: Dr. Gibb glass
+  description: Dr. Gibb. Not as dangerous as the name might imply.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -662,14 +689,15 @@
         reagents:
         - ReagentId: DrGibb
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/dr_gibb_glass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkErikaSurprise
-  suffix: erika surprise
+  name: erika surprise
+  description: The surprise is, it's green!
   components:
   - type: SolutionContainerManager
     solutions:
@@ -678,14 +706,15 @@
         reagents:
         - ReagentId: ErikaSurprise
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/erikasurprise.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkFourteenLokoGlass
-  suffix: fourteen loko
+  name: Fourteen Loko glass
+  description: This is a container of Fourteen Loko, it appears to be of the highest quality. The drink, not the container.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -694,14 +723,15 @@
         reagents:
         - ReagentId: FourteenLoko
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/fourteen_loko_glass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkGargleBlasterGlass
-  suffix: pan-galactic gargle blaster
+  name: pan-galactic gargle blaster
+  description: Does... does this mean that Arthur and Ford are on the ship? Oh joy.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -710,14 +740,15 @@
         reagents:
         - ReagentId: GargleBlaster
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/gargleblasterglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkGinGlass
-  suffix: gin
+  name: gin
+  description: Crystal clear Griffeater gin.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -726,14 +757,15 @@
         reagents:
         - ReagentId: Gin
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/ginvodkaglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkGinFizzGlass
-  suffix: gin fizz
+  name: gin fizz glass
+  description: Refreshingly lemony, deliciously dry.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -742,14 +774,15 @@
         reagents:
         - ReagentId: GinFizz
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/ginfizzglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkGinTonicglass
-  suffix: gin and tonic
+  name: gin and tonic
+  description: A mild but still great cocktail. Drink up, like a true Englishman.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -758,14 +791,15 @@
         reagents:
         - ReagentId: GinTonic
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/gintonicglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkGildlagerGlass
-  suffix: gildlager
+  name: gildlager glass
+  description: 100 proof that teen girls will drink anything with gold in it.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -774,15 +808,17 @@
         reagents:
         - ReagentId: Gildlager
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/gildlagerglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkGrapeJuice
-  suffix: grape juice
+  name: grape juice
+  description: It's grrrrrape!
   components:
+  - type: Drink
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -790,30 +826,24 @@
         reagents:
         - ReagentId: JuiceGrape
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/grapejuice.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkGrapeSodaGlass
-  suffix: grape soda
+  name: grape soda glass
+  description: Looks like a delicious drink!
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: GrapeSoda
-          Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/gsodaglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkGreenTeaGlass
-  suffix: green tea
+  name: green tea glass
+  description: Tasty green tea. It has antioxidants; it's good for you!
   components:
   - type: SolutionContainerManager
     solutions:
@@ -822,14 +852,15 @@
         reagents:
         - ReagentId: GreenTea
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/glass_green.rsi #Placeholder
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkGrenadineGlass
-  suffix: grenadine
+  name: grenadine syrup glass
+  description: Sweet and tangy, a bar syrup used to add color or flavor to drinks.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -838,14 +869,15 @@
         reagents:
         - ReagentId: Grenadine
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/grenadineglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkGrogGlass
-  suffix: grog
+  name: grog glass
+  description: A fine and cepa drink for Space.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -854,30 +886,24 @@
         reagents:
         - ReagentId: Grog
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/grogglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkHippiesDelightGlass
-  suffix: hippies' delight
+  name: hippies' delight glass
+  description: A drink enjoyed by people during the 1960's.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: HippiesDelight
-          Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/hippiesdelightglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkHoochGlass
-  suffix: hooch
+  name: hooch
   description: You've really hit rock bottom now... your liver packed its bags and left last night.
   components:
   - type: SolutionContainerManager
@@ -887,14 +913,15 @@
         reagents:
         - ReagentId: Hooch
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/glass_brown2.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkIcedCoffeeGlass
-  suffix: iced coffee
+  name: iced coffee glass
+  description: A drink to perk you up and refresh you!
   components:
   - type: SolutionContainerManager
     solutions:
@@ -903,14 +930,15 @@
         reagents:
         - ReagentId: IcedCoffee
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/icedcoffeeglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkIcedGreenTeaGlass
-  suffix: iced green tea
+  name: iced green tea glass
+  description: It looks like green tea with ice. One might even call it iced green tea.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -919,14 +947,15 @@
         reagents:
         - ReagentId: IcedGreenTea
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/glass_green.rsi #Placeholder
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkIcedTeaGlass
-  suffix: iced tea
+  name: iced tea
+  description: A refreshing southern beverage.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -935,30 +964,25 @@
         reagents:
         - ReagentId: IcedTea
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/icedteaglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkIcedBeerGlass
-  suffix: iced beer
+  name: iced beer glass
+  description: A beer so frosty, the air around it freezes.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: IcedBeer
-          Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/iced_beerglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkIceGlass
-  suffix: ice
+  name: ice glass
+  description: Generally, you're supposed to put something else in there too...
   components:
   - type: SolutionContainerManager
     solutions:
@@ -967,14 +991,14 @@
         reagents:
         - ReagentId: Ice
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/iceglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkIceCreamGlass
-  suffix: ice cream
+  name: ice cream glass
+  description: A glass full of good old ice cream. Might want a spoon.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -983,14 +1007,16 @@
         reagents:
         - ReagentId: IceCream
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/icecreamglass.rsi
     state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkIrishCarBomb
-  suffix: irish car bomb
+  name: irish car bomb
+  description: An irish car bomb.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -999,14 +1025,14 @@
         reagents:
         - ReagentId: IrishCarBomb
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/irishcarbomb.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkIrishCoffeeGlass
-  suffix: irish coffee
+  name: irish coffee glass
+  description: Coffee and alcohol. More fun than a Mimosa to drink in the morning.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1015,14 +1041,14 @@
         reagents:
         - ReagentId: IrishCoffee
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/irishcoffeeglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkIrishCreamGlass
-  suffix: irish cream
+  name: irish cream glass
+  description: It's cream, mixed with whiskey. What else would you expect from the Irish?
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1031,14 +1057,14 @@
         reagents:
         - ReagentId: IrishCream
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/irishcreamglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkCoffeeLiqueurGlass
-  suffix: coffee liqueur
+  name: coffee liqueur glass
+  description: DAMN, THIS THING LOOKS ROBUST
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1047,14 +1073,14 @@
         reagents:
         - ReagentId: CoffeeLiqueur
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/coffeeliqueurglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkKiraSpecial
-  suffix: kira special
+  name: kira special
+  description: Long live the guy who everyone had mistaken for a girl. Baka!
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1063,14 +1089,15 @@
         reagents:
         - ReagentId: KiraSpecial
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/kiraspecial.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkLemonadeGlass
-  suffix: lemonade
+  name: lemonade glass
+  description: Oh the nostalgia...
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1079,15 +1106,17 @@
         reagents:
         - ReagentId: Lemonade
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/lemonadeglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkLemonJuice
-  suffix: lemon juice
+  name: lemon juice
+  description: Sour...
   components:
+  - type: Drink
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -1095,15 +1124,16 @@
         reagents:
         - ReagentId: JuiceLemon
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/lemonjuice.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkLemonLime
-  suffix: lemon lime
+  name: lemon lime
+  description: A tangy substance made of 0.5% natural citrus!
   components:
+  - type: Drink
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -1111,15 +1141,16 @@
         reagents:
         - ReagentId: LemonLime
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/lemonlime.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkLimeJuice
-  suffix: lime juice
+  name: lime juice
+  description: It's some sweet-sour lime juice.
   components:
+  - type: Drink
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -1127,11 +1158,14 @@
         reagents:
         - ReagentId: JuiceLime
           Quantity: 30
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/limejuice.rsi
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkLongIslandIcedTeaGlass
-  suffix: long island iced tea
+  name: long island iced tea glass
+  description: The liquor cabinet, brought together in a delicious mix. Intended for middle-aged alcoholic women only.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1140,14 +1174,15 @@
         reagents:
         - ReagentId: LongIslandIcedTea
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/longislandicedteaglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkManhattanGlass
-  suffix: manhattan
+  name: manhattan glass
+  description: The Detective's undercover drink of choice. He never could stomach gin...
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1156,14 +1191,15 @@
         reagents:
         - ReagentId: Manhattan
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/manhattanglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkManhattanProjectGlass
-  suffix: manhattan project
+  name: manhattan project glass
+  description: A scientist's drink of choice, for pondering ways to blow up the station.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1172,14 +1208,15 @@
         reagents:
         - ReagentId: ManhattanProject
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/proj_manhattanglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkManlyDorfGlass
-  suffix: manly dorf
+  name: the manly dorf glass
+  description: A manly concotion made from Ale and Beer. Intended for true men only.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1188,14 +1225,14 @@
         reagents:
         - ReagentId: ManlyDorf
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/manlydorfglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkMargaritaGlass
-  suffix: margarita
+  name: margarita glass
+  description: On the rocks with salt on the rim. Arriba~!
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1204,14 +1241,15 @@
         reagents:
         - ReagentId: Margarita
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/margaritaglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkMartiniGlass
-  suffix: classic martini
+  name: classic martini glass
+  description: Damn, the bartender even stirred it, not shook it.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1220,14 +1258,15 @@
         reagents:
         - ReagentId: Martini
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/martiniglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkMeadGlass
-  suffix: mead
+  name: mead glass
+  description: A Viking's beverage, though a cheap one.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1236,23 +1275,25 @@
         reagents:
         - ReagentId: Mead
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/meadglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkMilkshake
-  suffix: milkshake
+  name: milkshake
+  description: Glorious brainfreezing mixture.
   components:
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/milkshake.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkMojito
-  suffix: mojito
+  name: mojito
+  description: Fresh from Spesscuba.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1261,14 +1302,15 @@
         reagents:
         - ReagentId: Mojito
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/mojito.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkNeurotoxinGlass
-  suffix: neurotoxin
+  name: neurotoxin glass
+  description: A drink that is guaranteed to knock you silly.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1277,14 +1319,15 @@
         reagents:
         - ReagentId: Neurotoxin
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/neurotoxinglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkNothing
-  suffix: nothing
+  name: nothing
+  description: Absolutely nothing.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1293,14 +1336,15 @@
         reagents:
         - ReagentId: Nothing
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/nothing.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkNTCahors
-  suffix: neotheology cahors whine
+  name: neotheology cahors whine
+  description: It looks like wine, but more dark.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1309,14 +1353,15 @@
         reagents:
         - ReagentId: NTCahors
           Quantity: 30
-  - type: Icon
-    sprite: Objects/Consumable/Drinks/wineglass.rsi
-    state: icon
+  - type: Drink
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/ntcahors.rsi
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkNuclearColaGlass
-  suffix: nuclear cola
+  name: nuclear cola glass
+  description: Don't cry, Don't raise your eye, It's only nuclear wasteland.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1325,15 +1370,17 @@
         reagents:
         - ReagentId: NuclearCola
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/nuclear_colaglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkOrangeJuice
-  suffix: orange juice
+  name: orange juice
+  description: Vitamins! Yay!
   components:
+  - type: Drink
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -1341,14 +1388,14 @@
         reagents:
         - ReagentId: JuiceOrange
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/orangejuice.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkPatronGlass
-  suffix: patron
+  name: patron glass
+  description: Drinking patron in the bar, with all the subpar ladies.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1357,15 +1404,17 @@
         reagents:
         - ReagentId: Patron
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/patronglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkPoisonBerryJuice
-  suffix: poison berry juice
+  name: poison berry juice
+  description: Looks like some deadly juice.
   components:
+  - type: Drink
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -1373,14 +1422,14 @@
         reagents:
         - ReagentId: JuiceBerryPoison
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/poisonberryjuice.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkPoisonWineGlass
-  suffix: poison wine
+  name: poison wine glass
+  description: A black ichor with an oily purple sheer on top. Are you sure you should drink this?
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1389,14 +1438,15 @@
         reagents:
         - ReagentId: PoisonWine
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/pwineglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkPoscaGlass
-  suffix: posca
+  name: posca glass
+  description: Poor warriors' drink from a forgotten era.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1405,14 +1455,15 @@
         reagents:
         - ReagentId: Posca
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/glass_light_yellow.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkRedMeadGlass
-  suffix: red mead
+  name: red mead glass
+  description: A true Viking's beverage, though its color is strange.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1421,14 +1472,15 @@
         reagents:
         - ReagentId: RedMead
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/red_meadglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkRewriter
-  suffix: rewriter
+  name: rewriter
+  description: The secret of the sanctuary of the Libarian...
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1437,14 +1489,15 @@
         reagents:
         - ReagentId: Rewriter
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/rewriter.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkRootBeerGlass
-  suffix: root beer
+  name: root beer glass
+  description: Fizzy, foamy, and full of sweet, non-caffienated goodness.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1453,14 +1506,16 @@
         reagents:
         - ReagentId: RootBeer
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/rootbeerglass.rsi
     state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkRootBeerFloatGlass
-  suffix: root beer float
+  name: root beer float glass
+  description: Fizzy, foamy, and now with ice cream on top! Amazing!
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1469,14 +1524,16 @@
         reagents:
         - ReagentId: RootBeerFloat
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/rootbeerfloatglass.rsi
     state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkRumGlass
-  suffix: rum
+  name: rum glass
+  description: Now you want to Pray for a pirate suit, don't you?
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1485,14 +1542,15 @@
         reagents:
         - ReagentId: Rum
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/rumglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkSakeGlass
-  suffix: sake
+  name: sake glass
+  description: Wine made from rice, it's sake!
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1501,11 +1559,15 @@
         reagents:
         - ReagentId: Sake
           Quantity: 30
+  - type: Drink
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/ginvodkaglass.rsi
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkSbitenGlass
-  suffix: sbiten
+  name: sbiten glass
+  description: A spicy mix of Vodka and Spice. Very hot.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1514,14 +1576,15 @@
         reagents:
         - ReagentId: Sbiten
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/sbitenglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkScrewdriverCocktailGlass
-  suffix: screwdriver
+  name: screwdriver glass
+  description: A simple, yet superb mixture of Vodka and orange juice. Just the thing for the tired engineer.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1530,14 +1593,15 @@
         reagents:
         - ReagentId: ScrewdriverCocktail
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/screwdriverglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkCogChampBase
-  suffix: cogchamp
+  name: cogchamp glass
+  description: This mix of Cognac, Screwdriver and Welding Fuel will have you seeing His light surely!
   components:
     - type: SolutionContainerManager
       solutions:
@@ -1546,14 +1610,15 @@
           reagents:
             - ReagentId: CogChamp
               Quantity: 30
-    - type: Icon
+    - type: Drink
+    - type: Sprite
       sprite: Objects/Consumable/Drinks/cogchamp.rsi
-      state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkSuiDreamGlass
-  suffix: sui dream
+  name: sui dream glass
+  description: A froofy, fruity, and sweet mixed drink. Understanding the name only brings shame.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1562,14 +1627,15 @@
         reagents:
         - ReagentId: SuiDream
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/sdreamglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkEmeraldGlass
-  suffix: melon liquor
+  name: melon liquor
+  description: A relatively sweet and fruity 46 proof liquor.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1578,14 +1644,15 @@
         reagents:
         - ReagentId: MelonLiquor
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/emeraldglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkMoonshineGlass
-  suffix: moonshine
+  name: moonshine
+  description: You've really hit rock bottom now... your liver packed its bags and left last night.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1594,14 +1661,15 @@
         reagents:
         - ReagentId: Moonshine
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/glass_clear.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkGlassWhite
-  suffix: milk
+  name: milk
+  description: White and nutritious goodness!
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1610,14 +1678,14 @@
         reagents:
         - ReagentId: Milk
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/glass_white.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkSilencerGlass
-  suffix: silencer
+  name: silencer glass
+  description: A drink from Mime Heaven.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1626,14 +1694,15 @@
         reagents:
         - ReagentId: Silencer
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/silencerglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkSingulo
-  suffix: singulo
+  name: singulo
+  description: A blue-space beverage!
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1642,14 +1711,15 @@
         reagents:
         - ReagentId: Singulo
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/singulo.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkSnowWhite
-  suffix: snow white
+  name: snow white
+  description: A cold refreshment.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1658,14 +1728,15 @@
         reagents:
         - ReagentId: SnowWhite
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/snowwhite.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkSoyLatte
-  suffix: soy latte
+  name: soy latte
+  description: A nice and refreshing beverage while you are reading.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1674,14 +1745,15 @@
         reagents:
         - ReagentId: SoyLatte
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/soy_latte.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkSpaceUpGlass
-  suffix: space-up
+  name: space-up glass
+  description: Space-up. It helps keep your cool.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1690,14 +1762,15 @@
         reagents:
         - ReagentId: SpaceUp
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/space-up_glass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkSpaceMountainWindGlass
-  suffix: space mountain wind
+  name: space mountain wind glass
+  description: Space Mountain Wind. As you know, there are no mountains in space, only wind.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1706,14 +1779,15 @@
         reagents:
         - ReagentId: SpaceMountainWind
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/space_mountain_wind_glass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkSyndicatebomb
-  suffix: syndicate bomb
+  name: syndicate bomb
+  description: Tastes like terrorism!
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1722,14 +1796,14 @@
         reagents:
         - ReagentId: SyndicateBomb
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/syndicatebomb.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkTeaGlass
-  suffix: tea
+  name: tea glass
+  description: Tasty black tea. It has antioxidants; it's good for you!
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1738,9 +1812,8 @@
         reagents:
         - ReagentId: Tea
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/teaglass.rsi
-    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -1755,13 +1828,16 @@
         reagents:
         - ReagentId: Tea
           Quantity: 100
+  - type: Item
+    size: Normal
   - type: Sprite
     sprite: Objects/Consumable/Drinks/teapot.rsi
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkTequilaGlass
-  suffix: tequila
+  name: tequila glass
+  description: Now all that's missing is the weird colored shades!
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1770,14 +1846,15 @@
         reagents:
         - ReagentId: Tequila
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/tequillaglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkTequilaSunriseGlass
-  suffix: tequila sunrise
+  name: tequila sunrise glass
+  description: Oh great, now you feel nostalgic about sunrises back on Terra...
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1786,14 +1863,15 @@
         reagents:
         - ReagentId: TequilaSunrise
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/tequillasunriseglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkTheMartinez
-  suffix: The Martinez
+  name: The Martinez glass
+  description: The edgerunner legend.  Remembered by a drink, Forgotten by a drunk.
   components:
     - type: SolutionContainerManager
       solutions:
@@ -1802,14 +1880,14 @@
           reagents:
             - ReagentId: TheMartinez
               Quantity: 30
-    - type: Icon
+    - type: Sprite
       sprite: Objects/Consumable/Drinks/the_martinez.rsi
-      state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkThreeMileIslandGlass
-  suffix: three mile island
+  name: three mile island glass
+  description: A glass of this is sure to prevent a meltdown.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1818,14 +1896,15 @@
         reagents:
         - ReagentId: ThreeMileIsland
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/threemileislandglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkTomatoJuice
-  suffix: tomato juice
+  name: tomato juice
+  description: Are you sure this is tomato juice?
   components:
   - type: Drink
   - type: SolutionContainerManager
@@ -1835,11 +1914,14 @@
         reagents:
         - ReagentId: JuiceTomato
           Quantity: 30
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/tomatojuice.rsi
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkToxinsSpecialGlass
-  suffix: toxins special
+  name: toxins special glass
+  description: Woah, this thing is on FIRE
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1848,14 +1930,15 @@
         reagents:
         - ReagentId: ToxinsSpecial
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/toxinsspecialglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkVermouthGlass
-  suffix: vermouth
+  name: vermouth glass
+  description: You wonder why you're even drinking this straight.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1864,14 +1947,15 @@
         reagents:
         - ReagentId: Vermouth
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/vermouthglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkVodkaGlass
-  suffix: vodka
+  name: vodka glass
+  description: Number one drink and fueling choice for Russians worldwide.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1880,14 +1964,15 @@
         reagents:
         - ReagentId: Vodka
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/ginvodkaglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkVodkaMartiniGlass
-  suffix: vodka martini
+  name: vodka martini glass
+  description: A bastardisation of the classic martini. Still great.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1896,14 +1981,15 @@
         reagents:
         - ReagentId: VodkaMartini
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/martiniglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkVodkaTonicGlass
-  suffix: vodka tonic
+  name: vodka tonic glass
+  description: For when a gin and tonic isn't russian enough.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1912,9 +1998,9 @@
         reagents:
         - ReagentId: VodkaTonic
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/vodkatonicglass.rsi
-    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -1934,10 +2020,12 @@
     sprite: Objects/Consumable/Drinks/water.rsi
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkWatermelonJuice
-  suffix: watermelon juice
+  name: watermelon juice
+  description: Delicious juice made from watermelon.
   components:
+  - type: Drink
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -1945,11 +2033,14 @@
         reagents:
         - ReagentId: JuiceWatermelon
           Quantity: 30
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/watermelon.rsi
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkWhiskeyColaGlass
-  suffix: whiskey cola
+  name: whiskey cola glass
+  description: An innocent-looking mixture of cola and Whiskey. Delicious.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1958,14 +2049,14 @@
         reagents:
         - ReagentId: WhiskeyCola
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/whiskeycolaglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkWhiskeyGlass
-  suffix: whiskey
+  name: whiskey glass
+  description: The silky, smoky whiskey goodness inside makes the drink look very classy.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1974,14 +2065,14 @@
         reagents:
         - ReagentId: Whiskey
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/whiskeyglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkWhiskeySodaGlass
-  suffix: whiskey soda
+  name: whiskey soda glass
+  description: Ultimate refreshment.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -1990,14 +2081,15 @@
         reagents:
         - ReagentId: WhiskeySoda
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/whiskeysodaglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkWhiteRussianGlass
-  suffix: white russian
+  name: white russian glass
+  description: A very nice looking drink. But that's just, like, your opinion, man.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -2006,14 +2098,15 @@
         reagents:
         - ReagentId: WhiteRussian
           Quantity: 30
-  - type: Icon
+  - type: Drink
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/whiterussianglass.rsi
-    state: icon
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkWineGlass
-  suffix: wine
+  name: wine glass
+  description: A very classy looking drink.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -2022,9 +2115,8 @@
         reagents:
         - ReagentId: Wine
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: Objects/Consumable/Drinks/wineglass.rsi
-    state: icon
 
 # TODO: MOVE
 
@@ -2117,9 +2209,10 @@
           Quantity: 5
 
 - type: entity
-  parent: DrinkGlass
+  parent: DrinkGlassBase
   id: DrinkBloodGlass
-  suffix: blood
+  name: blood glass
+  description: Drink like a vampire!
   components:
     - type: SolutionContainerManager
       solutions:
@@ -2128,6 +2221,5 @@
           reagents:
             - ReagentId: Blood
               Quantity: 30
-    - type: Icon
+    - type: Sprite
       sprite: Objects/Consumable/Drinks/bloodglass.rsi
-      state: icon

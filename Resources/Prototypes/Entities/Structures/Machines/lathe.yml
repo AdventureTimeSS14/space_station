@@ -382,6 +382,8 @@
       - FireTranslator
       - SikTajTranslator
       - CintaTajTranslator
+      - ADTMannequinMale
+      - ADTMannequinFemale
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ExplosivePayload

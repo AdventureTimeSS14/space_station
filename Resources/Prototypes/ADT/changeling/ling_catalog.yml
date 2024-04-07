@@ -18,7 +18,7 @@
   productAction: ActionArmBlade
   mindAction: false
   cost:
-    EvolutionPoints: 4
+    EvolutionPoints: 3
   categories:
   - ChangelingAbilities
   conditions:
@@ -32,7 +32,7 @@
   productAction: ActionLingArmor
   mindAction: false
   cost:
-    EvolutionPoints: 7
+    EvolutionPoints: 3
   categories:
   - ChangelingAbilities
   conditions:
@@ -46,7 +46,7 @@
   productAction: ActionLingInvisible
   mindAction: false
   cost:
-    EvolutionPoints: 7
+    EvolutionPoints: 3
   categories:
   - ChangelingAbilities
   conditions:
@@ -67,19 +67,19 @@
   - !type:ListingLimitedStockCondition
     stock: 1
 
-- type: listing
-  id: ChangelingStasisDeath
-  name: stasis-death
-  description: stasis-death-desc
-  productAction: ActionStasisDeath
-  mindAction: false
-  cost:
-    EvolutionPoints: 4
-  categories:
-  - ChangelingAbilities
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 1
+#- type: listing
+#  id: ChangelingStasisDeath
+#  name: stasis-death
+#  description: stasis-death-desc
+#  productAction: ActionStasisDeath
+#  mindAction: false
+#  cost:
+#    EvolutionPoints: 4
+#  categories:
+#  - ChangelingAbilities
+#  conditions:
+#  - !type:ListingLimitedStockCondition
+#    stock: 1
 
 - type: listing
   id: ChangelingBlindSting
@@ -166,7 +166,7 @@
     stock: 1
 
 - type: listing
-  id: ChangelingDrugStick
+  id: ChangelingDrugSting
   name: drug-sting
   description: drug-sting-desc
   productAction: ActionLingDrugSting
@@ -194,10 +194,10 @@
     stock: 1
 
 - type: listing
-  id: ChangelingDrugSting
-  name: drug-sting
-  description: drug-sting-desc
-  productAction: ActionLingDrugSting
+  id: ChangelingLastResort
+  name: resort-cl
+  description: resort-cl-desc
+  productAction: ActionLingLastResort
   mindAction: false
   cost:
     EvolutionPoints: 2
@@ -208,13 +208,41 @@
     stock: 1
 
 - type: listing
-  id: ChangelingLastResort
-  name: resort-cl
-  description: resort-cl-desc
-  productAction: ActionLingLastResort
+  id: ChangelingBiodegrade
+  name: biodegrade-cl
+  description: biodegrade-cl-desc
+  productAction: ActionLingBiodegrade
   mindAction: false
   cost:
-    EvolutionPoints: 2
+    EvolutionPoints: 1
+  categories:
+  - ChangelingAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: ChangelingResonant
+  name: resonant-cl
+  description: resonant-cl-desc
+  productAction: ActionLingResonant
+  mindAction: false
+  cost:
+    EvolutionPoints: 1
+  categories:
+  - ChangelingAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: ChangelingTransformSting
+  name: transform-sting-cl
+  description: transform-sting-cl-desc
+  productAction: ActionLingTransformSting
+  mindAction: false
+  cost:
+    EvolutionPoints: 3
   categories:
   - ChangelingAbilities
   conditions:

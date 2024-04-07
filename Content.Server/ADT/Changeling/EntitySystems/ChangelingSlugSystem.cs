@@ -8,18 +8,17 @@ using Content.Server.Body.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Humanoid;
 using Content.Shared.IdentityManagement;
-using Content.Server.Polymorph.Systems;
+using Content.Shared.Polymorph;
 using Content.Shared.Actions;
-using Robust.Shared.Serialization.Manager;
+using Robust.Shared.Containers;
 using Content.Shared.Alert;
 using Content.Shared.Tag;
 using Content.Shared.StatusEffect;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Damage.Prototypes;
-using Content.Shared.Movement.Systems;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Damage;
-using Content.Shared.Gibbing.Systems;
+using Content.Server.Polymorph.Systems;
 using Content.Shared.Mind;
 using Content.Shared.DoAfter;
 using Robust.Shared.Prototypes;
@@ -32,11 +31,12 @@ public sealed partial class LingSlugSystem : EntitySystem
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly ActionsSystem _action = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
-    [Dependency] private readonly PolymorphSystem _polymorph = default!;
+    [Dependency] protected readonly SharedContainerSystem ContainerSystem = default!;
     [Dependency] private readonly ActionContainerSystem _actionContainer = default!;
     [Dependency] private readonly TagSystem _tagSystem = default!;
     [Dependency] private readonly DamageableSystem _damageableSystem = default!;
     [Dependency] private readonly SharedMindSystem _mindSystem = default!;
+    [Dependency] private readonly PolymorphSystem _polymorph = default!;
 
     public override void Initialize()
     {
@@ -58,44 +58,6 @@ public sealed partial class LingSlugSystem : EntitySystem
     }
 
     public ProtoId<DamageGroupPrototype> BruteDamageGroup = "Brute";
-
-    public override void Update(float frameTime)
-    {
-        base.Update(frameTime);
-
-        var query = EntityQueryEnumerator<LingSlugComponent>();
-        while (query.MoveNext(out var uid, out var ling))
-        {
-            if (ling.EggsLaid)      /// TODO: Зачем я вообще сделал это через Update?
-            {
-                if (ling.EggLing != null)
-                {
-                    var oldUid = uid;
-
-                    if (ling.Spread == false)
-                    {
-                        if (_mindSystem.TryGetMind(uid, out var mindId, out var mind))
-                            _mindSystem.TransferTo(mindId, ling.EggLing.Value, mind: mind);
-                    }
-                    else
-                    {
-                        continue;
-                    }
-
-                    if (!_entityManager.TryGetComponent<BloodstreamComponent>(oldUid, out var bloodstream))
-                        return;
-
-                    var toxinInjection = new Solution(ling.ChemicalToxin, ling.ToxinAmount);
-                    _bloodstreamSystem.TryAddToChemicals(oldUid, toxinInjection, bloodstream);
-
-                    ling.EggsLaid = false;
-
-                    return;
-                }
-            }
-        }
-    }
-
 
     private bool LayEggs(EntityUid uid, EntityUid target, LingSlugComponent component)
     {
@@ -127,5 +89,43 @@ public sealed partial class LingSlugSystem : EntitySystem
 
         _doAfter.TryStartDoAfter(doAfter);
         return true;
+    }
+
+    public const string LingMonkeyId = "MobMonkeyChangeling";
+
+    public bool SpawnLingMonkey(EntityUid uid, LingSlugComponent component)
+    {
+        if (component.EggLing != null)
+        {
+            var slug = Spawn(LingMonkeyId, Transform(component.EggLing.Value).Coordinates);
+
+            var newLingComponent = EnsureComp<ChangelingComponent>(slug);
+            newLingComponent.LesserFormActive = true;
+            newLingComponent.AbsorbedDnaModifier = component.AbsorbedDnaModifier;
+
+
+            _action.AddAction(slug, ref newLingComponent.ChangelingLesserFormActionEntity, newLingComponent.ChangelingLesserFormAction);
+
+
+            newLingComponent.StoredDNA = new List<PolymorphHumanoidData>();    /// Создание нового ДНК списка
+            if (component.EggLing != null)
+            {
+                var newHumanoidData = _polymorph.TryRegisterPolymorphHumanoidData(component.EggLing.Value);
+                if (newHumanoidData == null)
+                    return false;
+                newLingComponent.StoredDNA.Add(newHumanoidData.Value);
+            }
+            else
+                return false;
+
+            if (_mindSystem.TryGetMind(uid, out var mindId, out var mind))
+                _mindSystem.TransferTo(mindId, slug, mind: mind);
+            if (mind != null)
+                mind.PreventGhosting = false;
+            return true;
+
+        }
+        else
+            return false;
     }
 }

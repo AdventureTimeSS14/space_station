@@ -78,6 +78,10 @@
       interactFailureString: petting-failure-carp
       interactFailureSound:
         path: /Audio/Effects/bite.ogg
+    - type: CollectiveMind
+      channel: CarpCollectiveMind
+      showRank: true
+      rankName: collective-mind-carp-rank
 
 - type: entity
   parent: BaseMobCarp
@@ -241,6 +245,8 @@
         types:
           Slash: 12
           Bloodloss: 5
+    - type: CollectiveMind
+      rankName: collective-mind-shark-rank
 
 - type: entity
   id: MobSharkSalvage

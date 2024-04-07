@@ -1,3 +1,3 @@
-ent-ExternalFaxMachine = Fax
-    .suffix = External
+ent-ExternalFaxMachine = Факс
+    .suffix = Внешний, External
     .desc = { ent-FaxMachineBase.desc }

@@ -12,6 +12,34 @@
   prefix: HOLO
 
 - type: nameIdentifierGroup
+  id: Drone
+  prefix: DR
+  fullName: true
+  minValue: 10000
+  maxValue: 99999
+
+- type: nameIdentifierGroup
+  id: ADTDroneAntagMiner
+  prefix: drone miner SD
+  fullName: true
+  minValue: 100
+  maxValue: 999
+
+- type: nameIdentifierGroup
+  id: ADTDroneAntagSoldier
+  prefix: drone soldier SD
+  fullName: true
+  minValue: 100
+  maxValue: 999
+
+- type: nameIdentifierGroup
+  id: ADTIPCAntag
+  prefix: BF
+  fullName: true
+  minValue: 100
+  maxValue: 999
+
+- type: nameIdentifierGroup
   id: MMI
   prefix: MMI
   minValue: 100

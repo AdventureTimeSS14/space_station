@@ -9,7 +9,7 @@ ent-Observationskit = набор наблюдения
     .suffix = Заполненный
     .desc = Картонная коробка для хранения вещей.
 
-ent-SlipocalypseClusterSoap = мыло для кластеров апокалипсиса
+ent-SlipocalypseClusterSoap = кластерное мыло апокалипсиса
     .suffix = Заполненный
     .desc = Разбрасывает вокруг себя кусочки синдимыла.
 

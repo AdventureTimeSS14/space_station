@@ -5,3 +5,6 @@
 - type: statusEffect
   id: ADTApathy
   alert: ADTAlertApathy
+
+- type: statusEffect
+  id: ADTHallucinations

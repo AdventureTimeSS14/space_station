@@ -1,17 +1,17 @@
 ent-ADTClothingOuterHardsuitCybersunBodyGuard = скафандр телохранителя Cybersun
     .desc = Тяжелобронированный скафандр элитного подразделения телохранителей Cybersun
     .suffix = { "" }
-ent-ADTClothingOuterHardsuitNanoScale = нано-чешуйчатая броня
+ent-ADTClothingOuterHardsuitNanoScale = наноуровневая броня
     .desc = Рептилии не настолько примитивны, как вы считали
     .suffix = { "" }
-    
-ent-ADTClothingOuterHardsuitNanoScaleChameleon = нано-чешуйчатая броня Хамелеон
+
+ent-ADTClothingOuterHardsuitNanoScaleChameleon = наноуровневая броня Хамелеон
     .desc = Очень скрытно и очень пахнет сахаром
     .suffix = { "" }
-ent-ADTClothingClothingHeadHelmetHardsuitNanoScale = нано-чешуйчатый шлем
+ent-ADTClothingClothingHeadHelmetHardsuitNanoScale = наноуровневый шлем
     .desc = Рептилии не настолько примитивны, как вы считали
     .suffix = { "" }
-ent-ADTClothingClothingHeadHelmetNanoScaleChameleon = нано-чешуйчатый шлем Хамелеон
+ent-ADTClothingClothingHeadHelmetNanoScaleChameleon = наноуровневый шлем Хамелеон
     .desc = Очень скрытно и очень пахнет сахаром
     .suffix = { "" }
 ent-ADTClothingOuterHardsuitCybersunCrysis = скафандр суперсолдата Cybersun
@@ -53,3 +53,36 @@ ent-ADTClothingOuterHardsuitPioneerAgent = боевой скафандр аге�
 ent-ADTClothingHeadHelmetHardsuitPioneerAgent = шлем скафандра агента "Пионер"
     .desc = Хорошо защищенный шлем, созданный на основе шлема командира ОБР для специального агента КиберСан.
     .suffix = { "" }
+
+ent-ADTClothingOuterHardsuitSecurityModern = Похоже - это скафандр
+    .desc = Выглядит как - скафандр...
+    .suffix = { "Дарк" }
+
+ent-ADTClothingHeadSecurityModern = Это шлем
+    .desc = Выглядит как - шлем...
+    .suffix = { "Дарк" }
+
+ent-ADTClothingOuterHardsuitSecurityModernBlue = {ent-ADTClothingOuterHardsuitSecurityModern}
+    .desc = {ent-ADTClothingOuterHardsuitSecurityModern.desc}
+    .suffix = { "Дарк" }
+
+ent-ADTClothingHeadSecurityModernBlue = {ent-ADTClothingHeadSecurityModern}
+    .desc = {ent-ADTClothingHeadSecurityModern.desc}
+    .suffix = { "Дарк" }
+
+
+ent-ADTClothingOuterHardsuitSecurityModernGreen = {ent-ADTClothingOuterHardsuitSecurityModern}
+    .desc = {ent-ADTClothingOuterHardsuitSecurityModern.desc}
+    .suffix = { "Дарк" }
+
+ent-ADTClothingHeadSecurityModernGreen = {ent-ADTClothingHeadSecurityModern}
+    .desc = {ent-ADTClothingHeadSecurityModern.desc}
+    .suffix = { "Дарк" }
+
+ent-ADTClothingOuterHardsuitSecurityModernPur = {ent-ADTClothingOuterHardsuitSecurityModern}
+    .desc = {ent-ADTClothingOuterHardsuitSecurityModern.desc}
+    .suffix = { "Дарк" }
+
+ent-ADTClothingHeadSecurityModernPurple = {ent-ADTClothingHeadSecurityModern}
+    .desc = {ent-ADTClothingHeadSecurityModern.desc}
+    .suffix = { "Дарк" }

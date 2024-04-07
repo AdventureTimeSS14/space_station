@@ -305,7 +305,8 @@
         - ReagentId: ADTLingEggs
           Quantity: 4 # Just using the same values as the bun values, since the recipe for taco shells is roughly the same as buns.
   - type: Tag
-    tags: []
+    tags:
+    - ADTCarnivoreFriendlyFood
   - type: FlavorProfile
     flavors:
       - terrible
@@ -371,3 +372,30 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: headslug
+
+- type: reagent
+  id: LingDrugs
+  name: reagent-name-space-drugs
+  group: Narcotics
+  desc: reagent-desc-space-drugs
+  physicalDesc: reagent-physical-desc-syrupy
+  flavor: bitter
+  color: "#63806e"
+  metabolisms:
+    Narcotic:
+      effects:
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 5
+        refresh: false
+      - !type:GenericStatusEffect
+        key: ADTHallucinations
+        component: LingHallucinations
+        type: Add
+        time: 10
+        refresh: false
+        conditions:
+        - !type:ReagentThreshold
+          min: 15

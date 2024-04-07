@@ -269,9 +269,6 @@
   description: lapkee satchel
   suffix: Personal, Lapkee
   components:
-  - type: Storage
-    grid:
-    - 0,0,10,7
   - type: StorageFill
     contents:
       - id: BoxSurvivalSecurity
@@ -350,4 +347,18 @@
   - type: Storage
     grid:
     - 0,0,7,3
+    maxItemSize: Huge
+
+#Рюкзак криминалиста
+
+- type: entity
+  parent: ClothingMilitaryBackpack
+  id: ADTClothingCriminalistBackpack
+  name: criminalst backpack
+  description: criminalst backpack
+  suffix: criminalist
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Back/criminalist_back.rsi
+  - type: Storage
     maxItemSize: Huge

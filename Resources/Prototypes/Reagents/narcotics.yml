@@ -175,6 +175,12 @@
         visualType: Small
         messages: [ "narcotic-effect-rainbows" ]
         probability: 0.07
+      - !type:GenericStatusEffect
+        key: ADTHallucinations
+        component: LingHallucinations
+        type: Add
+        time: 4
+        refresh: false
 
 - type: reagent
   id: THCOil # deprecated in favor of THC, preserved here for forks
@@ -199,6 +205,13 @@
         visualType: Small
         messages: [ "narcotic-effect-rainbows" ]
         probability: 0.07
+      - !type:GenericStatusEffect
+        key: ADTHallucinations
+        component: LingHallucinations
+        type: Add
+        time: 6
+        refresh: false
+
 
 - type: reagent
   id: Nicotine
@@ -258,7 +271,7 @@
   metabolisms:
     Narcotic:
       effects:
-      - !type:GenericStatusEffect
+      - !type:GenericStatusEffect 
         key: SeeingRainbows
         component: SeeingRainbows
         type: Add
@@ -268,6 +281,32 @@
         type: Local
         visualType: Small
         messages: [ "narcotic-effect-rainbows" ]
+        probability: 0.07
+
+- type: reagent
+  id: ADTLooseDrug
+  name: reagent-name-loose-drugs
+  group: Narcotics
+  desc: reagent-desc-loose-drugs
+  physicalDesc: reagent-physical-desc-soapy
+  flavor: fizzy
+  color: "#00fa9a"
+  metabolisms:
+    Narcotic:
+      effects:
+      - !type:GenericStatusEffect #эффект опьянение
+        key: Drunk
+        component: Drunk
+        type: Add
+        time: 5
+        refresh: false
+        #boozepower: 80
+      - !type:Drunk
+        slurSpeech: false
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "narcotic-effect-loose" ]
         probability: 0.07
 
 - type: reagent

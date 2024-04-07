@@ -3,3 +3,6 @@ ent-BaseWeaponLightMachineGun = BaseWeaponLightMachineGun
 ent-WeaponLightMachineGunL6 = L6 SAW
     .desc = Весьма традиционный легкий пулемет с удобной лакированной деревянной пистолетной рукоятью. Использует патроны калибра 6.5х39 мм TSF.
     .suffix = Пулемёт
+ent-WeaponLightMachineGunL6C = L6C ROW
+    .desc = Пулемёт L6C SAW для использования киборгами. Самостоятельно создаёт патроны калибра 6.5х39 мм TSF с помощью встроенного устройства для изготовления боеприпасов, которое медленно заряжает пушку.
+    .suffix = Пулемёт, Киборг

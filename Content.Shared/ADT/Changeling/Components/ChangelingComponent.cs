@@ -68,11 +68,17 @@ public sealed partial class ChangelingComponent : Component
         Params = AudioParams.Default.WithVolume(-1f),
     };
 
+    [DataField]
+    public SoundSpecifier? SoundResonant = new SoundPathSpecifier("/Audio/ADT/resonant.ogg")
+    {
+        Params = AudioParams.Default.WithVolume(-3f),
+    };
+
     /// <summary>
     /// Blind sting duration
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan BlindStingDuration = TimeSpan.FromSeconds(10);
+    public TimeSpan BlindStingDuration = TimeSpan.FromSeconds(18);
 
     /// <summary>
     /// Refresh ability
@@ -160,11 +166,11 @@ public sealed partial class ChangelingComponent : Component
     ///[DataField, AutoNetworkedField]
     ///public EntityUid? ChangelingEMPActionEntity;
 
-    ///[DataField]
-    ///public EntProtoId ChangelingStasisDeathAction = "ActionStasisDeath";
+    [DataField]
+    public EntProtoId ChangelingStasisDeathAction = "ActionStasisDeath";
 
-    ///[DataField, AutoNetworkedField]
-    ///public EntityUid? ChangelingStasisDeathActionEntity;
+    [DataField, AutoNetworkedField]
+    public EntityUid? ChangelingStasisDeathActionEntity;
 
     ///[DataField]
     ///public EntProtoId ChangelingBlindStingAction = "ActionLingBlindSting";
@@ -246,6 +252,9 @@ public sealed partial class ChangelingComponent : Component
     [DataField]
     public float AbsorbedMobPointsAmount = 2.0f;
 
+    [DataField]
+    public float AbsorbedDnaModifier = 0f;
+
     #endregion
 
     #region Regenerate Ability
@@ -289,6 +298,10 @@ public sealed partial class ChangelingComponent : Component
     /// </summary>
     [DataField]
     public bool ArmBladeActive = false;
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? BladeEntity;
+
     #endregion
 
     #region Chitinous Armor Ability
@@ -322,7 +335,7 @@ public sealed partial class ChangelingComponent : Component
     /// How fast the changeling will turn visible from movement when using chameleon skin.
     /// </summary>
     [DataField]
-    public float ChameleonSkinMovementVisibilityRate = 0.30f;
+    public float ChameleonSkinMovementVisibilityRate = 0.60f;
     #endregion
 
     #region Dissonant Shriek Ability
@@ -348,10 +361,7 @@ public sealed partial class ChangelingComponent : Component
     #region Stasis Death Ability
 
     [DataField]
-    public float StasisDeathDamageAmount = 300f;    /// Damage gain to die
-
-    [DataField]
-    public float StasisDeathHealAmount = -300f;     /// Damage restore to get up
+    public float StasisDeathDamageAmount = 10000f;    /// Damage gain to die
 
     [DataField]
     public bool StasisDeathActive = false;      /// Is ling dead or alive
@@ -386,7 +396,7 @@ public sealed partial class ChangelingComponent : Component
     public string ChemicalMute = "MuteToxin";
 
     [DataField("chemicalDrug", customTypeSerializer: typeof(PrototypeIdSerializer<ReagentPrototype>))]
-    public string ChemicalSpaceDrugs = "SpaceDrugs";
+    public string ChemicalSpaceDrugs = "LingDrugs";
 
     #endregion
 
@@ -399,7 +409,7 @@ public sealed partial class ChangelingComponent : Component
     public float MuteAmount = 20f;
 
     [ViewVariables(VVAccess.ReadWrite), DataField("drugAmount")]
-    public float SpaceDrugsAmount = 20f;
+    public float SpaceDrugsAmount = 50f;
 
     #endregion
 
@@ -420,6 +430,10 @@ public sealed partial class ChangelingComponent : Component
     /// </summary>
     [DataField]
     public bool ArmShieldActive = false;
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? ShieldEntity;
+
     #endregion
 
     [DataField]
@@ -430,5 +444,22 @@ public sealed partial class ChangelingComponent : Component
 
     [DataField]
     public bool EggsReady = false;
+
+    [DataField]
+    public int BiodegradeDuration = 3;
+    
+    [DataField]    
+    public string HiveMind = "ChangelingCollectiveMind";
+
+    [DataField]
+    public bool ShowName = false;
+
+    [DataField]
+    public bool ShowRank = true;
+
+    [DataField]
+    public string RankName = "collective-mind-ling-rank";
+
+
 
 }

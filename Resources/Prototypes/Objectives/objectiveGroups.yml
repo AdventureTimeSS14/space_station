@@ -133,6 +133,8 @@
     ChangelingObjectiveGroupKill: 1
     ChangelingObjectiveGroupState: 1
     ChangelingObjectiveGroupSteal: 1
+    ChangelingObjectiveGroupPersonalitySteal: 1
+    ChangelingObjectiveGroupAbsorbDna: 1     # почему ты блять не работаешь
 
 - type: weightedRandom
   id: ChangelingObjectiveGroupSteal
@@ -149,4 +151,16 @@
   id: ChangelingObjectiveGroupState
   weights:
     EscapeLingShuttleObjective: 1
+
+- type: weightedRandom
+  id: ChangelingObjectiveGroupPersonalitySteal
+  weights:
+    StealRandomPersonalityObjectiveLing: 1
+    #StealRandomHeadPersonalityObjectiveLing: 1
+
+- type: weightedRandom
+  id: ChangelingObjectiveGroupAbsorbDna
+  weights:
+    DnaAbsorbObjective: 1
+
 #Crew, wizard, when you code it...

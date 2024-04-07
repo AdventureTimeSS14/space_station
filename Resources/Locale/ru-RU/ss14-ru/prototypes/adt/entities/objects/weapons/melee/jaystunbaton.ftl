@@ -1,2 +1,2 @@
-ent-Naa-Leys_Tunbaton = Naa-Ley's_tunbaton
-    .desc = A stun baton for incapacitating people with. Actively harming with this is considered bad tone.
+ent-Naa-Leys_Tunbaton = дубинка-шокер На-Леи
+    .desc = Электрошоковая дубинка На-Леи для обездвиживания людей. Идеально для избиения клоунов.

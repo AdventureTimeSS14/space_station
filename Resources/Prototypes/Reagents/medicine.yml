@@ -870,6 +870,10 @@
         key: SeeingRainbows
         time: 15.0
         type: Remove
+      - !type:GenericStatusEffect
+        key: ADTHallucinations
+        type: Remove
+        time: 7
 
 - type: reagent
   id: TranexamicAcid

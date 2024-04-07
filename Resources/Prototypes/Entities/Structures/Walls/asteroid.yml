@@ -4,19 +4,17 @@
 #Asteroid rock
 - type: entity
   id: AsteroidRock
-  parent: BaseWall
+  parent: BaseStructure
   name: asteroid rock
+  suffix: Low Ore Yield
   description: A rocky asteroid.
   components:
-  - type: Transform
-    noRot: true
+  - type: PlacementReplacement
+    key: walls
   - type: IconSmooth
     key: walls
     mode: NoSprite
   - type: SmoothEdge
-  - type: Icon
-    sprite: Structures/Walls/rock.rsi
-    state: rock_asteroid
   - type: Sprite
     sprite: Structures/Walls/rock.rsi
     layers:
@@ -45,6 +43,28 @@
           path: /Audio/Effects/break_stone.ogg
           params:
             volume: -6
+  - type: Occluder
+  - type: Airtight
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        density: 100
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: RadiationBlocker
+    resistance: 2
+  - type: SoundOnGather
+  - type: Gatherable
+    whitelist:
+      tags:
+        - Pickaxe
+  - type: OreVein
+    oreChance: 0.01
 
 # Ore veins
 - type: entity
@@ -331,28 +351,6 @@
         state: ironrock_west
 
 - type: entity
-  id: AsteroidRockSalt
-  parent: AsteroidRock
-  description: An ore vein rich with salt.
-  suffix: Salt
-  components:
-    - type: OreVein
-      oreChance: 1.0
-      currentOre: OreSalt
-    - type: Sprite
-      layers:
-        - state: rock_asteroid
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_asteroid_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_asteroid_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_asteroid_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_asteroid_west
-        - state: rock_salt
-
-- type: entity
   id: IronRockMining
   parent: IronRock
   name: ironrock
@@ -367,12 +365,12 @@
 # Rocks and ore veins
 - type: entity
   id: WallRock
-  parent: BaseWall
+  parent: BaseStructure
   name: rock
   suffix: planetmap
   components:
-    - type: Transform
-      noRot: true
+    - type: PlacementReplacement
+      key: walls
     - type: SoundOnGather
     - type: Gatherable
       whitelist:
@@ -389,12 +387,22 @@
           behaviors:
             - !type:DoActsBehavior
               acts: ["Destruction"]
+    - type: Occluder
+    - type: Airtight
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.5,-0.5,0.5,0.5"
+          density: 100
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
     - type: IconSmooth
       key: walls
       mode: NoSprite
-    - type: Icon
-      sprite: Structures/Walls/rock.rsi
-      state: rock
     - type: SmoothEdge
     - type: Sprite
       sprite: Structures/Walls/rock.rsi
@@ -408,6 +416,8 @@
           state: rock_north
         - map: [ "enum.EdgeLayer.West" ]
           state: rock_west
+    - type: RadiationBlocker
+      resistance: 2
 
 # Ore veins
 - type: entity
@@ -610,37 +620,12 @@
           state: rock_west
         - state: rock_artifact_fragment
 
-- type: entity
-  id: WallRockSalt
-  parent: WallRock
-  description: An ore vein rich with salt.
-  suffix: Salt
-  components:
-    - type: OreVein
-      oreChance: 1.0
-      currentOre: OreSalt
-    - type: Sprite
-      layers:
-        - state: rock
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_west
-        - state: rock_salt
-
 # Basalt variants
 - type: entity
   id: WallRockBasalt
   name: basalt
   parent: WallRock
   components:
-    - type: Icon
-      sprite: Structures/Walls/rock.rsi
-      state: rock_wall
     - type: Sprite
       sprite: Structures/Walls/rock.rsi
       layers:
@@ -853,37 +838,12 @@
           state: rock_wall_west
         - state: rock_artifact_fragment
 
-- type: entity
-  id: WallRockBasaltSalt
-  parent: WallRockBasalt
-  description: An ore vein rich with salt.
-  suffix: Salt
-  components:
-    - type: OreVein
-      oreChance: 1.0
-      currentOre: OreSalt
-    - type: Sprite
-      layers:
-        - state: rock_wall
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_wall_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_wall_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_wall_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_wall_west
-        - state: rock_salt
-
 # Snow variants
 - type: entity
   id: WallRockSnow
   name: snowdrift
   parent: WallRock
   components:
-    - type: Icon
-      sprite: Structures/Walls/rock.rsi
-      state: rock_snow
     - type: Sprite
       sprite: Structures/Walls/rock.rsi
       layers:
@@ -1096,27 +1056,6 @@
           state: rock_snow_west
         - state: rock_artifact_fragment
 
-- type: entity
-  id: WallRockSnowSalt
-  parent: WallRockSnow
-  description: An ore vein rich with salt.
-  suffix: Salt
-  components:
-    - type: OreVein
-      oreChance: 1.0
-      currentOre: OreSalt
-    - type: Sprite
-      layers:
-        - state: rock_snow
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_snow_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_snow_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_snow_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_snow_west
-        - state: rock_salt
 
 # Sand variants
 - type: entity
@@ -1124,9 +1063,6 @@
   name: sandstone
   parent: WallRock
   components:
-    - type: Icon
-      sprite: Structures/Walls/rock.rsi
-      state: rock_sand
     - type: Sprite
       sprite: Structures/Walls/rock.rsi
       layers:
@@ -1339,37 +1275,12 @@
           state: rock_sand_west
         - state: rock_artifact_fragment
 
-- type: entity
-  id: WallRockSandSalt
-  parent: WallRockSand
-  description: An ore vein rich with salt.
-  suffix: Salt
-  components:
-    - type: OreVein
-      oreChance: 1.0
-      currentOre: OreSalt
-    - type: Sprite
-      layers:
-        - state: rock_sand
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_sand_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_sand_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_sand_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_sand_west
-        - state: rock_salt
-
 # Chromite variants
 - type: entity
   id: WallRockChromite
   name: chromite
   parent: WallRock
   components:
-    - type: Icon
-      sprite: Structures/Walls/rock.rsi
-      state: rock_chromite
     - type: Sprite
       sprite: Structures/Walls/rock.rsi
       layers:
@@ -1582,37 +1493,12 @@
           state: rock_chromite_west
         - state: rock_artifact_fragment
 
-- type: entity
-  id: WallRockChromiteSalt
-  parent: WallRockChromite
-  description: An ore vein rich with salt.
-  suffix: Salt
-  components:
-    - type: OreVein
-      oreChance: 1.0
-      currentOre: OreSalt
-    - type: Sprite
-      layers:
-        - state: rock_chromite
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_chromite_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_chromite_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_chromite_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_chromite_west
-        - state: rock_salt
-
 # Andesite variants
 - type: entity
   id: WallRockAndesite
   name: andesite
   parent: WallRock
   components:
-    - type: Icon
-      sprite: Structures/Walls/rock.rsi
-      state: rock_andesite
     - type: Sprite
       sprite: Structures/Walls/rock.rsi
       layers:
@@ -1824,25 +1710,3 @@
         - map: [ "enum.EdgeLayer.West" ]
           state: rock_andesite_west
         - state: rock_artifact_fragment
-
-- type: entity
-  id: WallRockAndesiteSalt
-  parent: WallRockAndesite
-  description: An ore vein rich with salt.
-  suffix: Salt
-  components:
-    - type: OreVein
-      oreChance: 1.0
-      currentOre: OreSalt
-    - type: Sprite
-      layers:
-        - state: rock_andesite
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_andesite_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_andesite_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_andesite_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_andesite_west
-        - state: rock_salt

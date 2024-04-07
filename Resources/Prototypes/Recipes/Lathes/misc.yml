@@ -235,3 +235,16 @@
     Steel: 50
     Glass: 50
 
+- type: latheRecipe
+  id: ADTMannequinMale
+  result: ADTMannequinMale
+  completetime: 5
+  materials:
+    Plastic: 1000
+
+- type: latheRecipe
+  id: ADTMannequinFemale
+  result: ADTMannequinFemale
+  completetime: 5
+  materials:
+    Plastic: 1000

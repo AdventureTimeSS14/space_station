@@ -574,3 +574,15 @@
       amount: 2
   products:
       Aloxadone: 4
+
+- type: reaction
+  id: LooseDrug
+  reactants:
+    SpaceCleaner:
+      amount: 1
+    WeldingFuel:
+      amount: 1
+    Bicaridine:
+      amount: 1
+  products:
+    ADTLooseDrug: 3

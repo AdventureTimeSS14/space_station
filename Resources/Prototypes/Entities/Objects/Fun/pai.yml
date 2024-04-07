@@ -78,7 +78,18 @@
           Searching: { state: pai-searching-overlay }
           On: { state: pai-on-overlay }
   - type: StationMap
-
+  - type: CollectiveMind
+    channel: Binary
+    showRank: true
+    rankName: collective-mind-pai-rank
+  - type: LanguageSpeaker
+    speaks:
+    - GalacticCommon
+    - BorgTalk
+    understands:
+    - GalacticCommon
+    - BorgTalk
+    
 - type: entity
   parent: PersonalAI
   id: SyndicatePersonalAI

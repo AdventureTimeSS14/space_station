@@ -19,7 +19,7 @@
 - type: entity
   id: ADTSpaceLaw
   parent: BaseItem
-  name: Космический закон
+  name: Корпоративный закон, издание редакции 2568 года
   description: На страже порядка
   components:
   - type: Sprite

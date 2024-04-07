@@ -127,6 +127,10 @@
     - Xeno
     understands:
     - Xeno
+  - type: CollectiveMind
+    channel: XenoCollectiveMind
+    showRank: true
+    rankName: collective-mind-burrower-rank
 
 - type: entity
   name: Praetorian
@@ -160,6 +164,8 @@
         - MobMask
         layer:
         - MobLayer
+  - type: CollectiveMind
+    rankName: collective-mind-praetorian-rank
 
 - type: entity
   name: Drone
@@ -197,6 +203,8 @@
         - MobMask
         layer:
         - MobLayer
+  - type: CollectiveMind
+    rankName: collective-mind-drone-rank
 
 - type: entity
   name: Queen
@@ -236,6 +244,8 @@
   - type: Tag
     tags:
     - CannotSuicide
+  - type: CollectiveMind
+    rankName: collective-mind-queen-rank
 
 - type: entity
   name: Ravager
@@ -273,6 +283,8 @@
         - MobMask
         layer:
         - MobLayer
+  - type: CollectiveMind
+    rankName: collective-mind-ravager-rank
 
 - type: entity
   name: Runner
@@ -305,6 +317,8 @@
         - MobLayer
   - type: JumpAct
     jumpAction: CompActionJumpAbomination
+  - type: CollectiveMind
+    rankName: collective-mind-runner-rank
 
 - type: entity
   name: Rouny
@@ -322,6 +336,8 @@
       amount: 3
   - type: JumpAct
     jumpAction: CompActionJumpAbomination
+  - type: CollectiveMind
+    rankName: collective-mind-rouny-rank
 
 - type: entity
   name: Spitter
@@ -369,6 +385,8 @@
         - MobMask
         layer:
         - MobLayer
+  - type: CollectiveMind
+    rankName: collective-mind-spitter-rank
 
 - type: entity
   name: space adder
