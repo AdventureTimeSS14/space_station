@@ -1,4 +1,4 @@
-ent-PartTajaran = Таяр части тела
+ent-PartTajaran = часть тела таяра
     .desc = { ent-BaseItem.desc }
 ent-TorsoTajaran = тело таяра
     .desc = { ent-PartTajaran.desc }

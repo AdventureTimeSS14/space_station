@@ -1,7 +1,7 @@
 ent-ClothingBackpackFilled_VKF_R = { ent-ClothingBackpack }
     .desc = { ent-ClothingBackpack.desc }
-ent-BoxFolderGreyFilled = { ent-BoxFolderBase }
-    .suffix = Red
+ent-BoxFolderGreyFilled = заполненная папка
+    .suffix = Серая
     .desc = { ent-BoxFolderBase.desc }
 
 ent-ADTClothingOuterVestWebL = бронежилет

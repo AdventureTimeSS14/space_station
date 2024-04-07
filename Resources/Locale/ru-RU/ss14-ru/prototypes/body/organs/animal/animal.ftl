@@ -10,5 +10,5 @@ ent-OrganAnimalHeart = сердце
     .desc = { ent-BaseAnimalOrgan.desc }
 ent-OrganAnimalKidneys = почки
     .desc = { ent-BaseAnimalOrgan.desc }
-ent-ADTOrganVulpkaninAnimalLiver = Печень вульпканина
+ent-ADTOrganVulpkaninAnimalLiver = печень вульпканина
     .desc = { ent-BaseAnimalOrgan.desc }
