@@ -83,7 +83,7 @@
   #   laws: Crewsimov
   - type: InventorySlots
   - type: Inventory
-    templateId: droneantaginventory
+    templateId: DroneAntagInventory
   - type: Hands
     showInHands: false
   - type: IntrinsicRadioReceiver
@@ -167,11 +167,9 @@
   - type: ToggleableLightVisuals
   - type: PointLight
     enabled: false
-    color: "#d7f705"
-    radius: 7
-    energy: 1,5
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
+    radius: 6
   - type: DoAfter
   - type: Pullable
   - type: Examiner
@@ -185,6 +183,7 @@
     # - DoorBumpOpener
     - CanPilot
     - CannotSuicide
+    - DoorBumpOpener
   # - type: Emoting
   # - type: GuideHelp
   #   guides:
@@ -310,15 +309,14 @@
   - type: UnpoweredFlashlight
   - type: PointLight
     enabled: false
-    color: "#d7f705"
-    radius: 7
-    energy: 1,5
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
+    radius: 6
   - type: Tag
     tags:
       - ShoesRequiredStepTriggerImmune
       - CannotSuicide
+      - DoorBumpOpener
   - type: StaticPrice
     price: 750
   # Frontier - languages mechanic
@@ -334,10 +332,12 @@
       - DroneAntag
   - type: CombatMode
   - type: MeleeWeapon
-    hidden: true
     damage:
-      groups:
-        Brute: 5
+      types:
+        Blunt: 15
+        Structural: 10
+    soundHit:
+      path: "/Audio/Weapons/smash.ogg"
   - type: EyeProtection
     protectionTime: 12
   - type: TypingIndicator
@@ -353,7 +353,7 @@
     - key: enum.StrippingUiKey.Key
       type: StrippableBoundUserInterface
   - type: Inventory
-    templateId: droneantaginventory
+    templateId: DroneAntagInventory
 
 - type: entity
   id: ADTDroneAntagEngineer
@@ -468,15 +468,14 @@
   - type: UnpoweredFlashlight
   - type: PointLight
     enabled: false
-    color: "#d7f705"
-    radius: 7
-    energy: 1,5
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
+    radius: 6
   - type: Tag
     tags:
       - ShoesRequiredStepTriggerImmune
       - CannotSuicide
+      - DoorBumpOpener
   - type: StaticPrice
     price: 750
   # Frontier - languages mechanic
@@ -492,10 +491,12 @@
       - DroneAntag
   - type: CombatMode
   - type: MeleeWeapon
-    hidden: true
     damage:
-      groups:
-        Brute: 5
+      types:
+        Blunt: 15
+        Structural: 10
+    soundHit:
+      path: "/Audio/Weapons/smash.ogg"
   - type: EyeProtection
     protectionTime: 12
   - type: TypingIndicator
@@ -511,7 +512,7 @@
     - key: enum.StrippingUiKey.Key
       type: StrippableBoundUserInterface
   - type: Inventory
-    templateId: droneantaginventory
+    templateId: DroneAntagInventory
 
 
 - type: entity
@@ -627,15 +628,15 @@
   - type: UnpoweredFlashlight
   - type: PointLight
     enabled: false
-    color: "#d7f705"
-    radius: 7
-    energy: 1,5
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
+    radius: 6
   - type: Tag
     tags:
       - ShoesRequiredStepTriggerImmune
+      - CanPilot
       - CannotSuicide
+      - DoorBumpOpener
   - type: StaticPrice
     price: 750
   # Frontier - languages mechanic
@@ -651,10 +652,12 @@
       - DroneAntag
   - type: CombatMode
   - type: MeleeWeapon
-    hidden: true
     damage:
-      groups:
-        Brute: 5
+      types:
+        Blunt: 15
+        Structural: 10
+    soundHit:
+      path: "/Audio/Weapons/smash.ogg"
   - type: EyeProtection
     protectionTime: 12
   - type: TypingIndicator
@@ -670,7 +673,7 @@
     - key: enum.StrippingUiKey.Key
       type: StrippableBoundUserInterface
   - type: Inventory
-    templateId: droneantaginventory
+    templateId: DroneAntagInventory
 
 
 
