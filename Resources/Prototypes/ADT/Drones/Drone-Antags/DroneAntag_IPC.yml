@@ -577,6 +577,8 @@
     tallscale: 1.1
     short: true
     shortscale: 0.9
+  - type: StaticPrice
+    price: 2525
 
 # damage modifier set
 
@@ -587,7 +589,7 @@
     Slash: 0.35
     Piercing: 0.45
     Heat: 0.20
-    Explosive: 0.25
+    #Explosive: 0.25
     Structural: 0
     # zap
     Shock: 0.5
