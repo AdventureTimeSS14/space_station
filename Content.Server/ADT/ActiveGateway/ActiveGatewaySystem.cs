@@ -15,17 +15,30 @@ public sealed class ActiveGatewaySystem : EntitySystem
 
     private void OnComponentStartup(EntityUid uid, ActiveGatewayComponent component, ComponentStartup args)
     {
-        if(!TryComp<GatewayComponent>(uid, out var gatewayComponent))
+        try
+        {
+            _gatewaySystem.SetEnabled(uid, component.Enabled);
+        }
+        catch (Exception e)
+        {
             return;
-
-        OnStartGateway(uid, component.Enabled, component);
+        }
     }
 
-    private void OnStartGateway(EntityUid uid, bool value, ActiveGatewayComponent? component = null)
-    {
-        if (!Resolve(uid, ref component) || component.Enabled == value)
-            return;
+    //private void OnComponentStartup(EntityUid uid, ActiveGatewayComponent component, ComponentStartup args)
+    //{
+    //    //if(!TryComp<GatewayComponent>(uid, out var gatewayComponent))
+    //    //    return;
 
-        _gatewaySystem.SetEnabled(uid, component.Enabled);
-    }
+    //    OnStartGateway(uid, component.Enabled, component);
+    //    Dirty(uid, component);
+    //}
+
+    //private void OnStartGateway(EntityUid uid, bool value, ActiveGatewayComponent? component = null)
+    //{
+    //    if (!Resolve(uid, ref component) || component.Enabled == value)
+    //        return;
+
+    //    _gatewaySystem.SetEnabled(uid, component.Enabled);
+    //}
 }
