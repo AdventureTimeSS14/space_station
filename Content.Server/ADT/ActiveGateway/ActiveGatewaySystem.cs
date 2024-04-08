@@ -5,7 +5,7 @@ namespace Content.Server.ADT.ActiveGateway;
 
 public sealed class ActiveGatewaySystem : EntitySystem
 {
-    [Dependency] private readonly GatewaySystem _gatewaySystem = new GatewaySystem();
+    [Dependency] private readonly GatewaySystem _gatewaySystem = default!;
 
     public override void Initialize()
     {

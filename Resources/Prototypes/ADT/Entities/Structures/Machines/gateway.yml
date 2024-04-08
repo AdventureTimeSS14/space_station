@@ -3,4 +3,5 @@
   id: ADTGatewayActive
   suffix: "Активированный"
   components:
+  #- type: Gateway
   - type: ActiveGateway # Если накинуть вместе с Gateway, то они будут в активированном состоянии всегда
