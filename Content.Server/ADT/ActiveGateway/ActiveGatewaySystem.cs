@@ -15,6 +15,8 @@ public sealed class ActiveGatewaySystem : EntitySystem
 
     private void OnComponentStartup(EntityUid uid, ActiveGatewayComponent component, ComponentStartup args)
     {
+        if (!TryComp<GatewayComponent>(uid, out var gatewayComponent))
+            return;
         try
         {
             _gatewaySystem.SetEnabled(uid, component.Enabled);
