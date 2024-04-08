@@ -1,0 +1,6 @@
+- type: entity
+  parent: Gateway
+  id: ADTGatewayActive
+  suffix: "Активированный"
+  components:
+  - type: ActiveGateway # Если накинуть вместе с Gateway, то они будут в активированном состоянии всегда
