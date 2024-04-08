@@ -123,9 +123,9 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
         }
     }
 
-    public bool MakeChangeling(ICommonSession changeling)
+    public bool MakeChangeling(EntityUid chosen)
     {
-        if (!_mindSystem.TryGetMind(changeling, out var mindId, out var mind))
+        if (!_mindSystem.TryGetMind(chosen, out var mindId, out var mind))
         {
             Log.Info("Failed getting mind for picked changeling.");
             return false;
@@ -160,7 +160,7 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
 
         if (_tagSystem.HasTag(mind.OwnedEntity.Value, "ChangelingBlacklist"))     // Убираю КПБ и новакидов генокрадов
         {
-            Log.Error($"Player {changeling.Name} can't be a changeling.");
+            Log.Error($"Player {mind.Session.Name} can't be a changeling.");
             return false;
         }
 
@@ -267,8 +267,8 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
             // You get one shot.
             if (_random.Prob(chance))
             {
-                if(ev.Player != null)
-                    MakeChangeling(ev.Player);
+                if(ev.Player.AttachedEntity != null)
+                    MakeChangeling(ev.Player.AttachedEntity.Value);
             }
         }
     }
