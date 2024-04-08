@@ -1143,9 +1143,6 @@
   id: StringInstrument
 
 - type: Tag
-  id: StationMapElectronics
-
-- type: Tag
   id: SupremeCommanderSabre
 
 - type: Tag
