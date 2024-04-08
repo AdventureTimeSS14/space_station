@@ -160,7 +160,7 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
 
         if (_tagSystem.HasTag(mind.OwnedEntity.Value, "ChangelingBlacklist"))     // Убираю КПБ и новакидов генокрадов
         {
-            Log.Error($"Player {changeling.Name} can't be a changeling.");
+            Log.Error($"Player {mind.Session.Name} can't be a changeling.");
             return false;
         }
 
