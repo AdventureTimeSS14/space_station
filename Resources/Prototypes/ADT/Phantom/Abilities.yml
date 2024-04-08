@@ -13,7 +13,7 @@
       components:
       - Body
     event: !type:MakeHolderActionEvent
-    useDelay: 30
+    useDelay: 1
     canTargetSelf: false
 
 - type: entity
@@ -29,4 +29,52 @@
       state: breath_in_back
     itemIconStyle: BigAction
     event: !type:StopHauntingActionEvent
-    useDelay: 30
+    useDelay: 1
+
+- type: entity
+  id: ActionPhantomCycleVessels
+  name: action-phanton-cycle-vessels
+  description: action-phantom-cycle-vessels-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    icon:
+      sprite: ADT/Interface/Actions/actions_phantom.rsi
+      state: breath_in_back
+    itemIconStyle: BigAction
+    event: !type:CycleVesselActionEvent
+    useDelay: 1
+
+- type: entity
+  id: ActionPhantomHauntVessel
+  name: action-phanton-haunt-vessel
+  description: action-phantom-haunt-vessel-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    icon:
+      sprite: ADT/Interface/Actions/actions_phantom.rsi
+      state: transition
+    itemIconStyle: BigAction
+    event: !type:HauntVesselActionEvent
+    useDelay: 1
+
+- type: entity
+  id: ActionPhantomMakeVessel
+  name: action-phanton-make-vessel
+  description: action-phantom-make-vessel-desc
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    icon:
+      sprite: ADT/Interface/Actions/actions_phantom.rsi
+      state: ghost_kiss
+    itemIconStyle: BigAction
+    whitelist:
+      components:
+      - Body
+    event: !type:MakeVesselActionEvent
+    useDelay: 1
+    canTargetSelf: false

@@ -27,6 +27,24 @@ public sealed partial class PhantomComponent : Component
     [DataField, AutoNetworkedField]
     public EntityUid? PhantomStopHauntActionEntity;
 
+    [DataField]
+    public EntProtoId PhantomMakeVesselAction = "ActionPhantomMakeVessel";
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? PhantomMakeVesselActionEntity;
+
+    [DataField]
+    public EntProtoId PhantomCycleVesselsAction = "ActionPhantomCycleVessels";
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? PhantomCycleVesselsActionEntity;
+
+    [DataField]
+    public EntProtoId PhantomHauntVesselAction = "ActionPhantomHauntVessel";
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? PhantomHauntVesselActionEntity;
+
     #endregion
     /// <summary>
     /// The total amount of Essence the revenant has. Functions

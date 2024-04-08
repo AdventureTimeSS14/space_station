@@ -23,6 +23,49 @@ public sealed partial class HauntVesselActionEvent : InstantActionEvent
 {
 }
 
+[Serializable, NetSerializable]
 public sealed partial class MakeVesselDoAfterEvent : SimpleDoAfterEvent
 {
+}
+
+
+
+public abstract class HauntEvent : EntityEventArgs
+{
+    public EntityUid Following;
+    public EntityUid Follower;
+
+    protected HauntEvent(EntityUid following, EntityUid follower)
+    {
+        Following = following;
+        Follower = follower;
+    }
+}
+
+public sealed class StartedHauntEntityEvent : HauntEvent
+{
+    public StartedHauntEntityEvent(EntityUid following, EntityUid follower) : base(following, follower)
+    {
+    }
+}
+
+public sealed class StoppedHauntEntityEvent : HauntEvent
+{
+    public StoppedHauntEntityEvent(EntityUid following, EntityUid follower) : base(following, follower)
+    {
+    }
+}
+
+public sealed class EntityStartedHauntEvent : HauntEvent
+{
+    public EntityStartedHauntEvent(EntityUid following, EntityUid follower) : base(following, follower)
+    {
+    }
+}
+
+public sealed class EntityStoppedHauntEvent : HauntEvent
+{
+    public EntityStoppedHauntEvent(EntityUid following, EntityUid follower) : base(following, follower)
+    {
+    }
 }
