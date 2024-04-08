@@ -18,6 +18,8 @@ using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
 using Robust.Shared.Random;
+using Content.Shared.Phantom.Components;
+using Content.Server.Phantom.EntitySystems;
 
 namespace Content.Server.Bible
 {
@@ -33,6 +35,7 @@ namespace Content.Server.Bible
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly UseDelaySystem _delay = default!;
         [Dependency] private readonly SharedTransformSystem _transform = default!;
+        [Dependency] private readonly PhantomSystem _phantom = default!;
 
         public override void Initialize()
         {
@@ -133,6 +136,44 @@ namespace Content.Server.Bible
                 }
             }
 
+            if (TryComp<PhantomHolderComponent>(args.Target.Value, out var haunted))
+            {
+                var phantom = EnsureComp<PhantomComponent>(haunted.Phantom);
+                _phantom.StopHaunt(haunted.Phantom, args.Target.Value, phantom);
+
+                var othersFailMessage = Loc.GetString(component.LocPrefix + "-phantom-out-others", ("user", Identity.Entity(args.User, EntityManager)), ("target", Identity.Entity(args.Target.Value, EntityManager)), ("bible", uid));
+                _popupSystem.PopupEntity(othersFailMessage, args.User, Filter.PvsExcept(args.User), true, PopupType.SmallCaution);
+
+                var selfFailMessage = Loc.GetString(component.LocPrefix + "-phantom-out-self", ("target", Identity.Entity(args.Target.Value, EntityManager)), ("bible", uid));
+                _popupSystem.PopupEntity(selfFailMessage, args.User, args.User, PopupType.MediumCaution);
+
+                _damageableSystem.TryChangeDamage(args.Target.Value, component.DamageOnFail, true, origin: uid);
+                _delay.TryResetDelay((uid, useDelay));
+                return;
+            }
+
+            if (TryComp<VesselComponent>(args.Target.Value, out var vessel))
+            {
+                var phantom = EnsureComp<PhantomComponent>(vessel.Phantom);
+
+                if (phantom.Holder == args.Target.Value)
+                {
+                    _phantom.StopHaunt(vessel.Phantom, args.Target.Value, phantom);
+                }
+
+                phantom.Vessels.Remove(args.Target.Value);
+                RemComp<VesselComponent>(args.Target.Value);
+
+                var othersFailMessage = Loc.GetString(component.LocPrefix + "-vessel-out-others", ("user", Identity.Entity(args.User, EntityManager)), ("target", Identity.Entity(args.Target.Value, EntityManager)), ("bible", uid));
+                _popupSystem.PopupEntity(othersFailMessage, args.User, Filter.PvsExcept(args.User), true, PopupType.SmallCaution);
+
+                var selfFailMessage = Loc.GetString(component.LocPrefix + "-vessel-out-self", ("target", Identity.Entity(args.Target.Value, EntityManager)), ("bible", uid));
+                _popupSystem.PopupEntity(selfFailMessage, args.User, args.User, PopupType.MediumCaution);
+
+                _damageableSystem.TryChangeDamage(args.Target.Value, component.DamageOnFail, true, origin: uid);
+                _delay.TryResetDelay((uid, useDelay));
+                return;
+            }
             var damage = _damageableSystem.TryChangeDamage(args.Target.Value, component.Damage, true, origin: uid);
 
             if (damage == null || damage.Empty)

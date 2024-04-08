@@ -46,6 +46,7 @@ public sealed partial class PhantomComponent : Component
     public EntityUid? PhantomHauntVesselActionEntity;
 
     #endregion
+
     /// <summary>
     /// The total amount of Essence the revenant has. Functions
     /// as health and is regenerated.

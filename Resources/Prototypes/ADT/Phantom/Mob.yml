@@ -14,9 +14,9 @@
   - type: Sprite
     noRot: true
     drawdepth: Ghosts
-    sprite: Mobs/Ghosts/revenant.rsi
+    sprite: ADT/Mobs/Phantom/phantom.rsi
     layers:
-    - state: active
+    - state: phantom
   - type: Clickable
   - type: StatusEffects
     allowed:

@@ -6,5 +6,6 @@ namespace Content.Shared.Phantom.Components;
 [RegisterComponent, NetworkedComponent]
 public sealed partial class PhantomHolderComponent : Component
 {
-    public Container Container = default!;
+    [DataField]
+    public EntityUid Phantom = new EntityUid();
 }

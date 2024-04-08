@@ -5,9 +5,9 @@ using Content.Shared.Phantom.Components;
 using Content.Shared.Popups;
 using Robust.Shared.Map;
 using Content.Shared.Movement.Events;
-using Content.Server.Traitor.Uplink;
+using Content.Shared.Rejuvenate;
 using Content.Shared.Mobs.Systems;
-using Robust.Shared.Utility;
+using Robust.Shared.Random;
 using Content.Shared.IdentityManagement;
 using Content.Server.Polymorph.Systems;
 using Content.Shared.Actions;
@@ -27,6 +27,8 @@ using Content.Shared.DoAfter;
 using System.Numerics;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Network;
+using Content.Shared.Mobs;
+using Content.Shared.Mobs.Components;
 
 namespace Content.Server.Phantom.EntitySystems;
 
@@ -42,16 +44,16 @@ public sealed partial class PhantomSystem : EntitySystem
     [Dependency] private readonly ISerializationManager _serialization = default!;
     [Dependency] private readonly ActionContainerSystem _actionContainer = default!;
     [Dependency] private readonly AlertsSystem _alerts = default!;
-    [Dependency] private readonly TagSystem _tagSystem = default!;
+    [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly INetManager _netMan = default!;
     [Dependency] private readonly EntityManager _entityManager = default!;
-    [Dependency] private readonly MovementSpeedModifierSystem _movementSpeedModifierSystem = default!;
+    [Dependency] private readonly VisibilitySystem _visibility = default!;
     [Dependency] private readonly StaminaSystem _stamina = default!;
     [Dependency] private readonly DamageableSystem _damageableSystem = default!;
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly SharedMindSystem _mindSystem = default!;
     [Dependency] private readonly AlertsSystem _alertsSystem = default!;
-    [Dependency] private readonly StunSystem _stun = default!;
+    [Dependency] private readonly SharedEyeSystem _eye = default!;
     [Dependency] private readonly SharedPhysicsSystem _physicsSystem = default!;
     [Dependency] protected readonly SharedContainerSystem ContainerSystem = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
@@ -71,6 +73,8 @@ public sealed partial class PhantomSystem : EntitySystem
         SubscribeLocalEvent<PhantomComponent, HauntVesselActionEvent>(OnHauntVessel);
         SubscribeLocalEvent<PhantomComponent, MakeVesselActionEvent>(OnMakeVessel);
         SubscribeLocalEvent<PhantomComponent, MakeVesselDoAfterEvent>(MakeVesselDoAfter);
+
+        SubscribeLocalEvent<PhantomComponent, MobStateChangedEvent>(OnMobState);
     }
 
     private void OnMapInit(EntityUid uid, PhantomComponent component, MapInitEvent args)
@@ -157,6 +161,9 @@ public sealed partial class PhantomSystem : EntitySystem
 
         _action.RemoveAction(uid, component.PhantomStopHauntActionEntity);
 
+        var eye = EnsureComp<EyeComponent>(uid);
+        _eye.SetDrawFov(uid, false, eye);
+
         var uidEv = new StoppedHauntEntityEvent(holder, uid);
         var targetEv = new EntityStoppedHauntEvent(holder, uid);
 
@@ -200,7 +207,11 @@ public sealed partial class PhantomSystem : EntitySystem
             component.HasHaunted = true;
             component.Holder = target;
             var holderComp = EnsureComp<PhantomHolderComponent>(target);
+            holderComp.Phantom = uid;
             _actionBlocker.UpdateCanMove(uid);
+
+            var eye = EnsureComp<EyeComponent>(uid);
+            _eye.SetDrawFov(uid, true, eye);
 
             var xform = Transform(uid);
             ContainerSystem.AttachParentToContainerOrGrid((uid, xform));
@@ -342,14 +353,14 @@ public sealed partial class PhantomSystem : EntitySystem
 
         if (doMakeVessel)
         {
-            if (!MakeVessel(target, component))
+            if (!MakeVessel(uid, target, component))
             {
                 return;
             }
         }
     }
 
-    public bool MakeVessel(EntityUid target, PhantomComponent component)
+    public bool MakeVessel(EntityUid uid, EntityUid target, PhantomComponent component)
     {
         if (!TryComp<MetaDataComponent>(target, out _))
             return false;
@@ -358,7 +369,33 @@ public sealed partial class PhantomSystem : EntitySystem
         if (component.Vessels.Count >= component.VesselsStrandCap)
             return false;
         else
+        {
             component.Vessels.Add(target);
+            var vessel = EnsureComp<VesselComponent>(target);
+            vessel.Phantom = uid;
+        }
         return true;
+    }
+
+    private void OnMobState(EntityUid uid, PhantomComponent component, MobStateChangedEvent args)
+    {
+        if (args.NewMobState == MobState.Dead)
+        {
+            if (component.Vessels.Count < 1)
+                return;
+
+            var randomVessel = _random.Pick(component.Vessels);
+            RaiseLocalEvent(uid, new RejuvenateEvent());
+
+            if (!component.HasHaunted)
+            {
+                Haunt(uid, randomVessel, component);
+            }
+            else
+            {
+                StopHaunt(uid, component.Holder, component);
+                Haunt(uid, randomVessel, component);
+            }
+        }
     }
 }
