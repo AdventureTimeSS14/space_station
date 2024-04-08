@@ -949,17 +949,6 @@
   - UplinkUtility
 
 - type: listing
-  id: UplinkHypopen
-  name: uplink-hypopen-name
-  description: uplink-hypopen-desc
-  icon: { sprite: /Textures/Objects/Misc/bureaucracy.rsi, state: pen }
-  productEntity: HypopenBox
-  cost:
-    Telecrystal: 6
-  categories:
-  - UplinkUtility
-
-- type: listing
   id: UplinkVoiceMask
   name: uplink-voice-mask-name
   description: uplink-voice-mask-desc
