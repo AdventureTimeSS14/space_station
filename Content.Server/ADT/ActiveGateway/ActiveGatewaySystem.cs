@@ -10,10 +10,10 @@ public sealed class ActiveGatewaySystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<ActiveGatewayComponent, MapInitEvent>(OnComponentStartup);
+        SubscribeLocalEvent<ActiveGatewayComponent, ComponentStartup>(OnComponentStartup);
     }
 
-    private void OnComponentStartup(EntityUid uid, ActiveGatewayComponent component, MapInitEvent args)
+    private void OnComponentStartup(EntityUid uid, ActiveGatewayComponent component, ComponentStartup args)
     {
         if(!TryComp<GatewayComponent>(uid, out var gatewayComponent))
             return;
