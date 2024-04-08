@@ -267,8 +267,8 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
             // You get one shot.
             if (_random.Prob(chance))
             {
-                if(ev.Player.AttachedEntity != null)
-                    MakeChangeling(ev.Player.AttachedEntity.Value);
+                if(ev.Player != null)
+                    MakeChangeling(ev.Player);
             }
         }
     }
