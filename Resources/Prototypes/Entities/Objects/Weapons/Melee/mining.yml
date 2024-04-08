@@ -86,6 +86,26 @@
   - type: Tag
     tags:
     - Knife
+##ADT add start
+  - type: Utensil
+    types:
+      - Knife
+  - type: Tool
+    qualities:
+      - Prying
+    speed: 0.65
+  - type: Prying
+  - type: DisarmMalus
+    malus: 0.225
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 12
+  - type: ThrowingAngle
+    angle: 225
+##ADT add end
 
 # Like a crusher... but sucks
 - type: entity
