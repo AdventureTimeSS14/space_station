@@ -959,17 +959,6 @@
   - UplinkUtility
 
 - type: listing
-  id: UplinkHeadsetEncryptionKey
-  name: uplink-encryption-key-name
-  description: uplink-encryption-key-desc
-  icon: { sprite: /Textures/Objects/Devices/encryption_keys.rsi, state: synd_label }
-  productEntity: BoxEncryptionKeySyndie # Two for the price of one
-  cost:
-    Telecrystal: 2
-  categories:
-  - UplinkUtility
-
-- type: listing
   id: UplinkBinaryTranslatorKey
   name: uplink-binary-translator-key-name
   description: uplink-binary-translator-key-desc
