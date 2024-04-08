@@ -123,9 +123,9 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
         }
     }
 
-    public bool MakeChangeling(EntityUid chosen)
+    public bool MakeChangeling(ICommonSession changeling)
     {
-        if (!_mindSystem.TryGetMind(chosen, out var mindId, out var mind))
+        if (!_mindSystem.TryGetMind(changeling, out var mindId, out var mind))
         {
             Log.Info("Failed getting mind for picked changeling.");
             return false;
