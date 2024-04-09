@@ -23,9 +23,9 @@
   name: Security raven hat
   description: No English
   components:
-  # - type: Tag
-  #   tags: # ignore "WhitelistChameleon" tag
-  #     - DroneUsable
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/raven_hat.rsi
   - type: Clothing
