@@ -35,7 +35,7 @@
     - state: unlock # Corvax-Resprite
       shader: unshaded
 #      visible: false # Corvax-Resprite
-      map: ["enum.StorageVisualLayers.Lock"]
+      map: ["enum.LockVisualLayers.Lock"]
   - type: Emitter
     boltType: BulletGrenadeFrag
     #baseFireBurstDelayMin: 10
@@ -97,7 +97,7 @@
     - state: unlock # Corvax-Resprite
       shader: unshaded
 #      visible: false # Corvax-Resprite
-      map: ["enum.StorageVisualLayers.Lock"]
+      map: ["enum.LockVisualLayers.Lock"]
   - type: Emitter
     boltType: NesBulletRailgun
     #baseFireBurstDelayMin: 1

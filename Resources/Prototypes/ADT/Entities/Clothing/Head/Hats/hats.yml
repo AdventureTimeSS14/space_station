@@ -7,7 +7,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/true_detective_hat.rsi
   - type: Clothing
@@ -22,7 +22,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/great_druid_wreath.rsi
   - type: Clothing
@@ -36,7 +36,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/bat_hat.rsi
   - type: Clothing
@@ -50,7 +50,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/dungeon_master.rsi
   - type: Clothing
@@ -76,7 +76,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/pyotr_cap.rsi
   - type: Clothing
@@ -91,7 +91,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/johan_cap.rsi
   - type: Clothing
@@ -106,7 +106,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/investigator_cap.rsi
   - type: Clothing
@@ -121,7 +121,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/mendosa_soft.rsi
   - type: Clothing
@@ -138,7 +138,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hat.rsi #спрайты от SHIONE
   - type: Clothing
@@ -153,7 +153,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatborderblue.rsi #спрайты от SHIONE
   - type: Clothing
@@ -168,7 +168,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatborderred.rsi #спрайты от SHIONE
   - type: Clothing
@@ -183,7 +183,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatbordergreen.rsi #спрайты от SHIONE
   - type: Clothing
@@ -198,7 +198,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatblue.rsi #спрайты от SHIONE
   - type: Clothing
@@ -213,7 +213,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatgreen.rsi #спрайты от SHIONE
   - type: Clothing
@@ -228,7 +228,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/Oktoberfest/bavarian_hatred.rsi #спрайты от SHIONE
   - type: Clothing
@@ -341,7 +341,7 @@
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/beret_atmospheric_technician.rsi
   - type: Tag
-    tags: 
+    tags:
       - HamsterWearable
 
 - type: entity
@@ -355,8 +355,8 @@
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/beret_HOP.rsi
   - type: Tag
-    tags: 
-      - HamsterWearable  
+    tags:
+      - HamsterWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -369,7 +369,7 @@
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/beret_SOO.rsi
   - type: Tag
-    tags: 
+    tags:
       - HamsterWearable
 
 - type: entity
@@ -383,7 +383,7 @@
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/beret_cargo.rsi
   - type: Tag
-    tags: 
+    tags:
       - HamsterWearable
 
 - type: entity
@@ -397,7 +397,7 @@
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/beret_CE.rsi
   - type: Tag
-    tags: 
+    tags:
       - HamsterWearable
 
 - type: entity
@@ -411,7 +411,7 @@
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/beret_CentCom.rsi
   - type: Tag
-    tags: 
+    tags:
       - HamsterWearable
 
 - type: entity
@@ -634,7 +634,7 @@
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/beret_paramedic.rsi
   - type: Tag
-    tags: 
+    tags:
       - HamsterWearable
 
 #Шлемы для биокостюмов.
@@ -646,7 +646,7 @@
   description: An hood for pathologists that protects the head and face from biological contaminants.
   components:
   - type: Sprite
-    sprite: ADT/Clothing/Head/Hats/hood_pathologist.rsi 
+    sprite: ADT/Clothing/Head/Hats/hood_pathologist.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/hood_pathologist.rsi
 
@@ -660,7 +660,7 @@
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/hood_paramedic.rsi #спрайты от prazat911
   - type: Clothing
-    sprite: ADT/Clothing/Head/Hats/hood_paramedic.rsi 
+    sprite: ADT/Clothing/Head/Hats/hood_paramedic.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -670,11 +670,11 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/trader.rsi #спрайты от prazat911
   - type: Clothing
-    sprite: ADT/Clothing/Head/Hats/trader.rsi 
+    sprite: ADT/Clothing/Head/Hats/trader.rsi
 
 #шлем ТСФ
 

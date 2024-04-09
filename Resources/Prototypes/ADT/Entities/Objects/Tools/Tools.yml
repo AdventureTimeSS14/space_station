@@ -55,7 +55,7 @@
   - type: Tag
     tags:
     - Flashlight
-    - DroneUsable
+    - WhitelistChameleon
   - type: HandheldLight
     addPrefix: false
     blinkingBehaviourId: blinking

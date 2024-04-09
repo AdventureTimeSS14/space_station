@@ -104,3 +104,9 @@
   # inhand:
   #   - JawsOfLife
 
+- type: startingGear
+  id: ADTAntagDroneGearIPC
+  equipment:
+    suitstorage: ADTWeaponLasgunSALR36
+    pocket1: ADTPowerCellLasgun
+    pocket2: ADTPowerCellLasgun

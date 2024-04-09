@@ -242,6 +242,8 @@
         - FootstepSound
         - DoorBumpOpener
     - type: Hands
+    - type: Loadout
+      prototypes: [ ADTAntagDroneGearIPC ]
     - type: Inventory
       templateId: human
     - type: InventorySlots
@@ -288,15 +290,12 @@
     - type: Speech
       speechSounds: Pai
     - type: MeleeWeapon
-      hidden: true
-      soundHit:
-        collection: Punch
-      angle: 30
-      animation: WeaponArcFist
-      attackRate: 1
       damage:
         types:
-          Blunt: 6 # It's tough.
+          Blunt: 15
+          Structural: 10
+      soundHit:
+        path: "/Audio/Weapons/smash.ogg"
     - type: MobPrice
       price: 1500 # Kidnapping a living person and selling them for cred is a good move.
       deathPenalty: 0.01 # However they really ought to be living and intact, otherwise they're worth 100x less.
@@ -498,7 +497,7 @@
         acts: [ "Destruction" ]
   - type: SiliconDownOnDead
   - type: Inventory
-    templateId: ipc
+    templateId: DroneAntagInventoryIPC
   - type: EyeProtection
     protectionTime: 30
   # - type: Battery
@@ -552,6 +551,11 @@
   - type: EmitSoundOnTrigger
     sound:
       path: /Audio/ADT/IPC/borg_deathsound.ogg
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepSoldier
+      params:
+        volume: -2
   - type: LanguageSpeaker
     speaks:
     - GalacticCommon

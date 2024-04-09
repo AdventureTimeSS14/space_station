@@ -205,9 +205,9 @@
       tile: FloorCaveDrought
       spawns:
         # Ore
-        - id: WallRockSalt
-          prob: 0.6
-          orGroup: content
+        # - id: WallRockSalt
+        #   prob: 0.6
+        #   orGroup: content
         - id: WallRockCoal
           prob: 0.6
           orGroup: content
