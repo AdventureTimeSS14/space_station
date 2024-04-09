@@ -212,7 +212,7 @@
   cost:
     Telecrystal: 4
   categories:
-  - UplinkMisc
+  - UplinkChemicals
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
@@ -421,7 +421,7 @@
   cost:
     Telecrystal: 12
   categories:
-    - UplinkUtility
+    - UplinkDeception
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
@@ -436,7 +436,7 @@
   cost:
     Telecrystal: 6
   categories:
-    - UplinkUtility
+    - UplinkDeception
   conditions:
   - !type:StoreWhitelistCondition
     blacklist:
