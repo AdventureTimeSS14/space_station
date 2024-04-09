@@ -87,12 +87,12 @@
   parent: PlayerSiliconBase
   components:
   #- type: Drone
-  - type: InnateTool
-    tools:
-      - id: ClothingBackpackSatchelDrone
-      - id: trayScanner
-      - id: Omnitool
-      - id: WelderExperimental
+  # - type: InnateTool
+  #   tools:
+  #     - id: ClothingBackpackSatchelDrone
+  #     - id: trayScanner
+  #     - id: Omnitool
+  #     - id: WelderExperimental
   - type: NameIdentifier
     group: Drone
   - type: Inventory
