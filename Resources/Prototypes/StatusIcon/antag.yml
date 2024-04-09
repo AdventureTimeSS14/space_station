@@ -3,7 +3,7 @@
   priority: 11
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
-    state: Zombie
+    state: JobIconZombie
 
 - type: statusIcon
   id: RevolutionaryFaction
