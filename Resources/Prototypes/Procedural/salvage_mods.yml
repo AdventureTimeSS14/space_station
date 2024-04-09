@@ -242,7 +242,7 @@
   proto: SnowyLabs
   biomes:
     - Snow
-    -
+
 - type: salvageDungeonMod
   id: Bunker
   proto: Bunker
