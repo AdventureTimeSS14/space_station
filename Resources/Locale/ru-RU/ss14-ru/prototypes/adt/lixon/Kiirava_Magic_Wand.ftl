@@ -1,6 +1,8 @@
-ent-ADTKiiravamagicwand = Kiirava magic wand.
-    .desc = Improved minigun model with reduced magazine, increased damage and toxic effect. Made by a brilliant beastman girl. P.S. This weapon saved her life when escaping from the captivity of the cultists.
-ent-ADTCartridgeWand = cartridge (.10 rifle)
+ent-ADTKiiravamagicwand = волшебная палочка Кииравы.
+    .desc = Улучшенная модель минигана с уменьшенным магазином, увеличенным уроном и ядовитым эффектом. Изготовлена замечательной девушкой-зверочеловеком. P.S. Это оружие спасло ей жизнь при побеге из плена культистов.
+ent-ADTCartridgeWand = картридж магической палочки Кииравы (.10 rifle)
     .desc = { ent-BaseCartridgeHeavyRifle.desc }
-ent-ADTBulletWand = minigun bullet (.10 rifle)
+    .suffix = Волшебная палочка
+ent-ADTBulletWand = патрон минигана (.10 rifle)
     .desc = { ent-BulletHeavyRifle.desc }
+    .suffix = Волшебная палочка

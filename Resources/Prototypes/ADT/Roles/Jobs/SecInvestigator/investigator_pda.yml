@@ -25,3 +25,23 @@
     borderColor: "#774705"
   - type: Icon
     state: pda-investigator
+
+#КПК Криминалиста
+
+- type: entity
+  parent: BasePDA
+  id: ADTCriminalistPDA
+  name: Criminalist PDA
+  suffix: Criminalist
+  description: Criminalist PDA
+  components:
+  - type: Pda
+    id: ADTInvestigatorIDCard
+    state: pda-criminalist
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+    accentHColor: "#447987"
+    accentVColor: "#447987"
+  - type: Icon
+    state: pda-criminalist
+  - type: ForensicScanner

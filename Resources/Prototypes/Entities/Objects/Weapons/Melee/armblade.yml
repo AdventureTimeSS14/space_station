@@ -26,15 +26,10 @@
     pryPowered: true
   - type: DisarmMalus
     malus: 0
-  - type: Reflect
-    enabled: true
-    reflectProb: .30
-    spread: 50
-
 
 - type: entity
   name: arm blade
-  parent: BaseKnife
+  parent: BaseItem
   id: ArmBladeFake
   description: A grotesque blade made out of bone and flesh that cleaves through people as a hot knife through butter.
   components:
@@ -52,6 +47,13 @@
     sprite: Objects/Weapons/Melee/armblade.rsi
   - type: DisarmMalus
     malus: 0
+  - type: Tag
+    tags:
+    - Knife
+  - type: Sharp
+  - type: Utensil
+    types:
+      - Knife
 
 - type: entity
   name: armshield
@@ -67,7 +69,7 @@
         left:
         - state: inhand-left
         right:
-        - state: inhand-right      
+        - state: inhand-right
       size: Ginormous
       sprite: Objects/Weapons/Melee/armshield.rsi
     - type: Blocking

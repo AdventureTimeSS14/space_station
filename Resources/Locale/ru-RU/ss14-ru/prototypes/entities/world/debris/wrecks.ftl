@@ -1,8 +1,8 @@
-ent-BaseScrapDebris = Обломок мусора
+ent-BaseScrapDebris = обломок мусора
     .desc = { ent-BaseDebris.desc }
-ent-ScrapDebrisSmall = Обломок мусора маленький
+ent-ScrapDebrisSmall =  маленький обломок мусора
     .desc = { ent-BaseScrapDebris.desc }
-ent-ScrapDebrisMedium = Обломок мусора средний
+ent-ScrapDebrisMedium =  средний обломок мусора
     .desc = { ent-BaseScrapDebris.desc }
-ent-ScrapDebrisLarge = Обломок мусора большой
+ent-ScrapDebrisLarge =  большой обломок мусора
     .desc = { ent-BaseScrapDebris.desc }

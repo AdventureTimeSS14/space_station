@@ -9,3 +9,6 @@ ent-WeaponRifleM90GrenadeLauncher = М-90gl
 ent-WeaponRifleLecter = Лектер
     .desc = Первоклассная армейская штурмовая винтовка. Использует патроны калибра 6.5х39 мм TSF.
     .suffix = Автомат
+ent-WeaponRifleLecterRubber = Лектер
+    .desc = Первоклассная армейская штурмовая винтовка. Использует патроны калибра 6.5х39 мм TSF.
+    .suffix = Автомат, Травматический

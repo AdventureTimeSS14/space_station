@@ -8,7 +8,7 @@
 
 - type: alert
   id: PainKiller
-  icons: 
+  icons:
     - sprite: /Textures/ADT/Interface/alerts.rsi
       state: painkiller
   name: alerts-painkiller-name
@@ -29,3 +29,11 @@
   name: alerts-ling-refresh-name
   onClick: !type:DNARefresh  { }
   description: alerts-ling-refresh-desc
+
+- type: alert
+  id: ADTLevitation
+  icons:
+    - sprite: /Textures/ADT/Interface/alerts.rsi
+      state: levitation
+  name: alerts-levitation-name
+  description: alerts-levitation-desc

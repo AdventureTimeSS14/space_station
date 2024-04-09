@@ -1,2 +1,2 @@
-ent-ADTHolographicMonoclineL = Holographic monocline
-    .desc = This device was implanted in Inna from birth, has amazing sharpness and ephemeral pain.
+ent-ADTHolographicMonoclineL = Голографический моноклинок
+    .desc = "Это устройство было имплантировано Инне с рождения, обладает удивительной остротой и эфемерной болью."

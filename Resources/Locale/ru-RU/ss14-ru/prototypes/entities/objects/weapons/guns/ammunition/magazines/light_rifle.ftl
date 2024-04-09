@@ -12,3 +12,5 @@ ent-MagazineLightRifleMaxim = дисковый магазин (7.62х39 мм в�
     .desc = { ent-BaseMagazineLightRifle.desc }
 ent-MagazineLightRiflePkBox = короб патронов ПК (7.62х39 мм винтовочные)
     .desc = { ent-BaseMagazineLightRifle.desc }
+ent-MagazineLightRifleUranium = магазин (7.62х39 мм винтовочные урановые)
+    .desc = { ent-BaseMagazineLightRifle.desc }

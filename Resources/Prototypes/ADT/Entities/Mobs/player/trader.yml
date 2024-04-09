@@ -99,7 +99,7 @@
         - id: ADTClothingOuterCoatTrader
 
 - type: entity
-  name: Trader
+  name: Trader Spawnpoint
   id: SpawnMobTrader
   parent: MarkerBase
   components:

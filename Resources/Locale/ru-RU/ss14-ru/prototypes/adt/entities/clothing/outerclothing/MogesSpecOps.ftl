@@ -1,4 +1,6 @@
-ent-ADTClothingOuterHardsuitNanoScale = Nano scale armor
-    .desc = Reptiles are not as primitive as you thought.
-ent-ADTClothingOuterHardsuitNanoScaleChameleon = Nano scale armor chameleon
-    .desc = Very secretive and smells very sugary
+ent-ADTClothingOuterHardsuitNanoScale = наноуровневая броня
+    .desc = Рептилии не настолько примитивны, как вы считали
+    .suffix = { "" }
+ent-ADTClothingOuterHardsuitNanoScaleChameleon = наноуровневая броня Хамелеон
+    .desc = Очень скрытно и очень пахнет сахаром
+    .suffix = { "" }

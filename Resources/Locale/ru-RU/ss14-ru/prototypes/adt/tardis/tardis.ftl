@@ -1,4 +1,4 @@
-ent-LockerTardis = Tardis
+ent-LockerTardis = шкаф Tardis
     .desc = { ent-LockerBaseTardis.desc }
 ent-LockerBaseTardis = { ent-ClosetBaseTardis }
     .desc = { ent-ClosetBaseTardis.desc }
