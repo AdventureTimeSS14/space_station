@@ -765,3 +765,14 @@
   - type: Sprite
     sprite: ADT/Objects/Decoration/poster_ussp.rsi
     state: kdv2
+
+# Own
+
+- type: entity
+  parent: ADTPosterBaseKek
+  id: ADTPosterQuadroElectronics
+  name: "Quadro Electronics"
+  description: "When you look at the poaster you want to wear an animal mask"
+  components:
+  - type: Sprite
+    state: quadro_electronics
