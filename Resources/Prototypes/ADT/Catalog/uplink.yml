@@ -76,7 +76,7 @@
   cost:
     Telecrystal: 6
   categories:
-  - UplinkArmor
+  - UplinkWearables
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
@@ -92,7 +92,7 @@
   cost:
     Telecrystal: 14
   categories:
-  - UplinkArmor
+  - UplinkWearables
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
@@ -475,7 +475,7 @@
   cost:
     Telecrystal: 5
   categories:
-  - UplinkArmor
+  - UplinkWearables
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
