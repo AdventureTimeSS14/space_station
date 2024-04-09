@@ -14,6 +14,12 @@
     ClothingShoesBootsLaceup: 2
     ClothingHeadsetIAA: 2 # Corvax-IAA
     ClothingNeckLawyerbadge: 2
+    LuxuryPen: 2
+  contrabandInventory:
+    ClothingOuterRobesJudge: 1
+    ClothingHeadHatPwig: 1
+    # "Legally" obtained currency
+    SpaceCash100: 2
     # Corvax-LawyerDrip-Start
     ClothingHandsGlovesColorWhite: 1
     ClothingHandsGlovesColorGray: 1

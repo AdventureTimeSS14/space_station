@@ -35,12 +35,13 @@
 
 - type: entity
   noSpawn: true
-  parent: ClothingBackpack
-  id: ClothingBackpackFilledDetective
+  parent: ClothingBackpackSecurity
+  id: ClothingBackpackSecurityFilledDetective
   components:
   - type: StorageFill
     contents:
-      - id: BoxSurvival
+      - id: BoxSurvivalSecurity
+      - id: Flash
       - id: ForensicPad
       - id: ForensicScanner
       - id: ADTSpaceLaw
@@ -236,6 +237,16 @@
       - id: Bible
       - id: RubberStampChaplain
       - id: SpaceCash500
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpack
+  id: ClothingBackpackLawyerFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+      - id: RubberStampLawyer
 
 - type: entity
   noSpawn: true
