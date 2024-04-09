@@ -69,7 +69,7 @@
       - id: ClothingUniformRandomShorts
         prob: 0.05
         orGroup: dressermainloot
-      - id: ClothingNeckLGBTPin
+      - id: ClothingNeckNonBinaryPin
         prob: 0.06
         orGroup: dressermainloot
       - id: ClothingUniformJumpsuitColorGrey
