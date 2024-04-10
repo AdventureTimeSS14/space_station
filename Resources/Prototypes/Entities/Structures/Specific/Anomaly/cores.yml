@@ -282,7 +282,7 @@
   - type: Tag
     tags:
     - ForceableFollow
-    - ADTBluespaceAnomalyCore
+    #- ADTBluespaceAnomalyCore
 
 - type: entity
   parent: BaseAnomalyInertCore
