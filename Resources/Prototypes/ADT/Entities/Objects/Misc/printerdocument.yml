@@ -241,7 +241,7 @@
   description: Напечатано на принтере
   components:
     - type: Paper
-      content: doc-text-printer-SearchPermission
+      content: doc-text-printer-PermissionWeapons
 
 - type: entity
   parent: Paper
