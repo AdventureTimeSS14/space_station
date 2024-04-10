@@ -116,7 +116,7 @@
   result: AirTank
   completetime: 4
   materials:
-    Steel: 150
+    Steel: 100
 
 - type: latheRecipe
   id: ClothingShoesBootsMagSci
