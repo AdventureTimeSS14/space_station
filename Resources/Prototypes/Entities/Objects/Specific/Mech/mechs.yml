@@ -5,6 +5,13 @@
   components:
   - type: MobMover
   - type: Mech
+    modifiers:
+      coefficients:
+        Blunt: 1
+        Slash: 1
+        Piercing: 1
+        Shock: 1
+        Structural: 1
   - type: MechAir
   - type: AirFilter
     # everything except oxygen and nitrogen

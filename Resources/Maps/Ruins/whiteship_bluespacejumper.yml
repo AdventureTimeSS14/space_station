@@ -1271,14 +1271,14 @@ entities:
     - type: Transform
       pos: 19.5,-13.5
       parent: 1
-- proto: RipleyLArm
+- proto: RockGuitarInstrument
   entities:
   - uid: 167
     components:
     - type: Transform
       pos: 20.309544,-8.573441
       parent: 1
-- proto: RipleyLLeg
+- proto: RockGuitarInstrument
   entities:
   - uid: 168
     components:

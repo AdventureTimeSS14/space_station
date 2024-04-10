@@ -3,6 +3,7 @@ using Content.Shared.Whitelist;
 using Robust.Shared.Containers;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
+using Content.Shared.Damage;
 
 namespace Content.Shared.Mech.Components;
 
@@ -13,6 +14,11 @@ namespace Content.Shared.Mech.Components;
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class MechComponent : Component
 {
+    /// <summary>
+    /// damage modifiers on hit
+    /// </summary>
+    [DataField(required: true)]
+    public DamageModifierSet Modifiers = default!;
     /// <summary>
     /// How much "health" the mech has left.
     /// </summary>
