@@ -218,3 +218,8 @@ ent-ADTBoomBoxTapeHotlineMusik = кассета "Hotline Moges - Musik"
 ent-ADTBoomBoxTapeHotlineParis = кассета "Hotline Moges - Paris"
     .desc = Традиционные мелодии костюмированного карнавала тропического города.
 
+ent-BoomBoxTapeWirsinddesGeyersschwarzerPacked = запакованная кассета "Wir sind des Geyers schwarzer"
+    .desc = Плотно упакованная кассета для бумбокса.
+
+ent-ADTBoomBoxTapeWirsinddesGeyersschwarzer = кассета "Wir sind des Geyers schwarzer"
+    .desc = Кассета черного цвета, 20-го века.

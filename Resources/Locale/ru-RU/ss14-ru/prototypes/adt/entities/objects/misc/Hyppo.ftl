@@ -1,2 +1,3 @@
-ent-JanaHypo = Jana
-    .desc = A sterile injector for rapid administration of drugs to patients.
+ent-JanaHypo = экспериментальный гипоспрей Яны
+    .desc = Был сконструирован и улучшен благодаря Джолин. Пахнет бикаридином.
+    .suffix = { "" }

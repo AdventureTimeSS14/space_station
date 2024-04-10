@@ -60,3 +60,5 @@ ent-ClothingHeadHelmetHardsuitERTJanitor = шлем скафандра убор�
     .desc = { ent-ClothingHeadHelmetHardsuitERTLeader.desc }
 ent-ClothingHeadHelmetHardsuitClown = шлем скафандра клоуна
     .desc = Шлем скафандра клоуна.
+ent-ClothingHeadHelmetHardsuitMime = шлем скафандра мима
+    .desc = Шлем скафандра мима.

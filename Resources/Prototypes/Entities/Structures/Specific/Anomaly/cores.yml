@@ -127,6 +127,10 @@
     energy: 3.5
     color: "#00ccff"
     castShadows: false
+  - type: Tag
+    tags:
+    - ForceableFollow
+    - ADTBluespaceAnomalyCore
 
 - type: entity
   parent: BaseAnomalyCore
@@ -262,6 +266,10 @@
     energy: 3.5
     color: "#00ccff"
     castShadows: false
+  - type: Tag
+    tags:
+    - ForceableFollow
+    - ADTBluespaceAnomalyCore
 
 - type: entity
   parent: BaseAnomalyInertCore

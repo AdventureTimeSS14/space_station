@@ -205,8 +205,8 @@
       - id: MedkitCombatFilled
       - id: BurnAutoInjector
       - id: BruteAutoInjector
-      - id: DeviceQuantumSpinInverter
-        amount: 2
+      - id: WeaponPistolN1984
+      - id: OmnizineChemistryBottle
   - type: Sprite
     sprite: ADT/Clothing/Belt/blueshield_webbing.rsi
   - type: Clothing

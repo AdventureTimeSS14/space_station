@@ -6,5 +6,5 @@ ent-WeaponImprovisedPneumaticCannonGun = { ent-WeaponImprovisedPneumaticCannon }
     .suffix = Оружие
     .desc = { ent-WeaponImprovisedPneumaticCannon.desc }
 ent-WeaponImprovisedPneumaticCannonAdmeme = { ent-WeaponImprovisedPneumaticCannonGun }
-    .suffix = Адмемы
+    .suffix = АДМЕМЫ
     .desc = { ent-WeaponImprovisedPneumaticCannonGun.desc }

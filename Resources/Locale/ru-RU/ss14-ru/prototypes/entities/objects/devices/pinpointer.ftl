@@ -6,3 +6,5 @@ ent-PinpointerUniversal = универсальный пинпоинтер
     .desc = Портативное устройство слежения, способное отслеживать любой физический объект в выключенном состоянии.
 ent-PinpointerStation = { ent-PinpointerBase }
     .desc = { ent-PinpointerBase.desc }
+ent-PinpointerSyndicateNuclear = пинпоинтер синдиката
+    .desc = Сделанный специально для ядерных оперативников. Вперёд за этим чёртовым диском!

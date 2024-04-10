@@ -1,2 +1,2 @@
-ent-ADTSyndicateBack = Syndicate Bag
-    .desc = You wear this on your back and put items into it.
+ent-ADTSyndicateBack = мешок Синдиката
+    .desc = Его нужно носить на спине и класть в него вещи.

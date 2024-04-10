@@ -32,6 +32,6 @@ ent-CannonBall = пушечное ядро
 ent-CannonBallGlassshot = стеклянное пушечное ядро
     .suffix = Пират
     .desc = { ent-BaseGrenade.desc }
-ent-CannonBallGlassshot = картечное пушечное ядро
+ent-CannonBallGrapeshot = картечное пушечное ядро
     .suffix = Пират
     .desc = { ent-BaseGrenade.desc }
