@@ -12,7 +12,6 @@
         Piercing: 1
         Shock: 1
         Structural: 1
-        stun: 1
   - type: MechAir
   - type: AirFilter
     # everything except oxygen and nitrogen
