@@ -513,7 +513,6 @@
     startAudio:
       path: /Audio/Announcements/attention.ogg
     weight: 15
-    minimumPlayers: 45
-    earliestStart: 30
+    minimumPlayers: 35
     maxOccurrences: 1
   - type: TraderSpawnRule

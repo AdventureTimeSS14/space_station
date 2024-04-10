@@ -136,7 +136,6 @@
       - CrateHydroponicsTools
       - CrateHydroponicsSeeds
       - CratePlantBGone
-      - CargoPallet
       - OreBox
       - CrateCargoLuxuryHardsuit
       - ADTCargoUtilisatorComplectCrate
@@ -199,7 +198,6 @@
       - CrateFunBikeHornImplants
       - CrateFunMysteryFigurines
       - CrateFunDartsSet
-      - CrateCargoGambling
       - CrateNPCBee
       - CrateNPCButterflies
       - CrateNPCCat
@@ -253,6 +251,52 @@
       - CrateScienceBiosuit
       - Thruster
       - Gyroscope
+      - CrateServiceJanitorialSupplies
+      - CrateServiceReplacementLights
+      - CrateMousetrapBoxes
+      - CrateServiceTheatre
+      - CrateServiceSmokeables
+      - CrateServiceCustomSmokable
+      - CrateServiceBureaucracy
+      - CrateServicePersonnel
+      - CrateServiceBooks
+      - CrateServiceGuidebooks
+      - CrateServiceSodaDispenser
+      - CrateServiceBoozeDispenser
+      - CrateServiceBox
+      - CrateJanitorBiosuit
+      - FoodCartHot
+      - FoodCartCold
+      - PetCarrier
+      - CrateJanitorExplosive
+
+- type: entity
+  name: RandomTraderRareProduct
+  id: RandomTraderRareProduct
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+  - type: ConditionalSpawner
+    prototypes:
+      - WelderExperimental
+      - JawsOfLife
+      - RPED
+      - RCDEmpty
+      - RCDAmmo
+      - ClothingShoesBootsSpeed
+      - ClothingShoesBootsMagSci
+      - WeaponGauntletGorilla
+      - WeaponPistolCHIMP
+      - DeviceQuantumSpinInverter
+      - WeaponProtoKineticAccelerator
+      - WeaponTetherGun
+      - WeaponGrapplingGun
+      - WeaponForceGun
+      - MiningDrill
+      - PowerCellMicroreactor
+      - CrateCargoGambling
 
 - type: entity
   name: RandomTraderArmory
@@ -277,7 +321,6 @@
       - CrateSecuritySupplies
       - CrateRestraints
       - CrateSecurityBiosuit
-      - DeployableBarrier
       - CrateSecurityHardsuit
       - CrateSecurityUSSPjuggernaut
 
