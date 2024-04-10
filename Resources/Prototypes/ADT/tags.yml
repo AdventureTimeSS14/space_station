@@ -67,5 +67,5 @@
 - type: Tag
   id: ADTHardsuitSalvage
 
-- type: Tag
-  id: ADTBluespaceAnomalyCore
+#- type: Tag  
+#  id: ADTBluespaceAnomalyCore   # Комментил при апстриме, для работы нужен Entity вроде как
