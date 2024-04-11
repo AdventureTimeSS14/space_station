@@ -103,9 +103,7 @@ public sealed partial class ComponentalActionsSystem
         SubscribeLocalEvent<StasisHealActComponent, CompStasisHealActionEvent>(OnStasisHeal);
         SubscribeLocalEvent<InvisibilityActComponent, CompInvisibilityActionEvent>(OnInvisibility);
         SubscribeLocalEvent<LevitationActComponent, CompGravitationActionEvent>(OnMagGravity);
-        // SubscribeLocalEvent<LevitationActComponent, GetVerbsEvent<ActivationVerb>>(AddToggleVerb);
-        // SubscribeLocalEvent<LevitationActComponent, InventoryRelayedEvent<SlipAttemptEvent>>(OnSlipAttempt);
-        // SubscribeLocalEvent<LevitationActComponent, GetItemActionsEvent>(OnGetActions);
+        SubscribeLocalEvent<ElectrionPulseActComponent, CompElectrionPulseActionEvent>(OnElectrionPulse);
     }
 
     public override void Update(float frameTime)
@@ -362,6 +360,24 @@ public sealed partial class ComponentalActionsSystem
             var walkSpeed = component.BaseWalkSpeed;
             _movementSpeedModifierSystem?.ChangeBaseSpeed(uid, walkSpeed, sprintSpeed, movementSpeed.Acceleration, movementSpeed);
         }
+    }
+
+    private void OnElectrionPulse(EntityUid uid, ElectrionPulseActComponent component, CompElectrionPulseActionEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        // var range = anomaly.Comp.MaxElectrocuteRange * args.Stability;
+        // int boltCount = (int)MathF.Floor(MathHelper.Lerp((float)anomaly.Comp.MinBoltCount, (float)anomaly.Comp.MaxBoltCount, args.Severity));
+        // _lightning.ShootRandomLightnings(anomaly, range, boltCount);
+
+        // var range = anomaly.Comp.MaxElectrocuteRange * 3;
+        // _emp.EmpPulse(_transform.GetMapCoordinates(anomaly), range, anomaly.Comp.EmpEnergyConsumption, anomaly.Comp.EmpDisabledDuration);
+        // _lightning.ShootRandomLightnings(anomaly, range, anomaly.Comp.MaxBoltCount * 3, arcDepth: 3);
+
+
+        //ToggleLevitation(uid, component);
+        args.Handled = true;
     }
 
 }
