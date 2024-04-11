@@ -1,5 +1,5 @@
 - type: entity
-  id: ADTAnomalyGravitySpawnTimePatrol
+  id: ADTAnomalySpawnTimePatrol
   parent: BaseAnomaly
   suffix: Gravity
   components:
@@ -11,24 +11,24 @@
         maxAmount: 1
         maxRange: 1
       spawns:
-      - ADTMobCult  # сущность которая спавнится при спавне данного энтити
+      - ADTTimePatrolSpawn  # сущность которая спавнится при спавне данного энтити
   - type: TimedDespawn
-    lifetime: 3.0
+    lifetime: 1.5
   - type: Anomaly
     animationTime: 6
     # corePrototype: AnomalyCoreGravity
     # coreInertPrototype: AnomalyCoreGravityInert
   - type: Sprite
     layers:
-    - state: anom2
+    - state: anom4
       map: ["enum.AnomalyVisualLayers.Base"]
-    - state: anom2-pulse
+    - state: anom4-pulse
       map: ["enum.AnomalyVisualLayers.Animated"]
       visible: false
   - type: PointLight
-    radius: 5.0
-    energy: 20
-    color: "#1e070e"
+    radius: 3.0
+    energy: 2.5
+    color: "#00ccff"
     castShadows: false
   - type: SingularityDistortion
     intensity: 1000
@@ -38,37 +38,8 @@
       path: /Audio/Effects/Lightning/lightningbolt.ogg
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # - type: entity
-#   id: RandomHumanoidSpawnerDeathSquad
+#   id: ADTRandomHumanoidSpawnerDeathSquad
 #   name: Death Squad Agent
 #   suffix: ERTRole, Death Squad
 #   components:
@@ -80,13 +51,13 @@
 #         - NamesFirstMilitaryLeader
 #         - NamesLastMilitary
 #     - type: RandomHumanoidSpawner
-#       settings: DeathSquad
+#       settings: ADTDeathSquad
 #     - type: InitialInfectedExempt
 
 # - type: randomHumanoidSettings
 #   speciesBlacklist:
 #     - Diona
-#   id: DeathSquad
+#   id: ADTDeathSquad
 #   randomizeName: false
 #   components:
 #     - type: MindShield
@@ -105,40 +76,33 @@
 #         - NamesLastMilitary
 #     - type: InitialInfectedExempt
 
-# - type: entity
-#   name: Cultist
-#   parent: BaseMobHuman
-#   id: ADTMobCult
-#   suffix: "Cult, BoneKnife, Cult of the Lamb"
-#   components:
-#   - type: NpcFactionMember
-#     factions:
-#       - SimpleHostile
-#   - type: Loadout
-#     prototypes:
-#       - ADTMobCult1Gear
-#   - type: InputMover
-#   - type: MobMover
-#   - type: HTN
-#     rootTask:
-#       task: SimpleHumanoidHostileCompound
+- type: entity
+  name: Cultist
+  parent: BaseMobHuman
+  id: ADTTimePatrolSpawn
+  suffix: "Cult, BoneKnife, Cult of the Lamb"
+  components:
+  - type: TeleportAct
+  - type: Loadout
+    prototypes:
+      - ADTTimePatrolGear
 
-# - type: startingGear
-#   id: ADTMobCult1Gear
-#   equipment:
-#     mask: ClothingMaskPlague
-#     jumpsuit: ADTClothingUniformJumpsuitOldDarkSuit
-#     shoes: ClothingShoesBootsWinter
-#     head: ClothingHeadHatPlaguedoctor
-#     eyes: ClothingEyesGlassesSunglasses
-#     gloves: ClothingHandsGlovesColorBlack
-#     outerClothing: ClothingOuterPlagueSuit
-#     #id: CentcomPDA
-#     #ears: ClothingHeadsetAltCentCom
-#     belt: ADTBoneKnife
-#     pocket1: Brutepack
-#     pocket2: Ointment
-#     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
-#     socks: ClothingUnderwearSocksNormal
-#   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
-#   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+- type: startingGear
+  id: ADTTimePatrolGear
+  equipment:
+    mask: ClothingMaskPlague
+    jumpsuit: ADTClothingUniformJumpsuitOldDarkSuit
+    shoes: ClothingShoesBootsWinter
+    head: ClothingHeadHatPlaguedoctor
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesColorBlack
+    outerClothing: ClothingOuterPlagueSuit
+    #id: CentcomPDA
+    #ears: ClothingHeadsetAltCentCom
+    belt: ADTBoneKnife
+    pocket1: Brutepack
+    pocket2: Ointment
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
