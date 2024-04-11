@@ -79,8 +79,8 @@ public sealed partial class ElectrionPulseActComponent : Component
     /// <summary>
     /// Used for tracking seconds, so that we can shock people in a non-tick-dependent way.
     /// </summary>
-    [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan NextSecond = TimeSpan.Zero;
+    //[DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), ViewVariables(VVAccess.ReadWrite)]
+    //public TimeSpan NextSecond = TimeSpan.Zero;
 
     /// <summary>
     /// Energy consumed from devices by the emp pulse upon going supercritical.

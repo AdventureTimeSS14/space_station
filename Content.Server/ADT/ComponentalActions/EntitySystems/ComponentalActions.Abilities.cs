@@ -79,6 +79,14 @@ using Content.Shared.Atmos.EntitySystems;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
+using Content.Server.Electrocution;
+using Content.Server.Emp;
+using Content.Server.Lightning;
+using Content.Shared.Anomaly.Components;
+using Content.Shared.Anomaly.Effects.Components;
+using Content.Shared.StatusEffect;
+using Robust.Shared.Random;
+using Robust.Shared.Timing;
 
 namespace Content.Server.ComponentalActions.EntitySystems;
 
@@ -382,46 +390,46 @@ public sealed partial class ComponentalActionsSystem
     {
         if (args.Handled)
             return;
-        OnElectrionPulseAction(uid, component);
+        //OnElectrionPulseAction(uid, component);
+        var range = component.MaxElectrocuteRange; // * args.Stability;
+        int boltCount = (int) MathF.Floor(MathHelper.Lerp((float) component.MinBoltCount, (float) component.MaxBoltCount, component.Severity));
+        _lightning.ShootRandomLightnings(component, range, boltCount);
+
         args.Handled = true;
     }
 
-    private void OnElectrionPulseAction(EntityUid uid, ElectrionPulseActComponent component)//, FireStarterActionEvent args)
-    {
-        if (_container.IsEntityOrParentInContainer(uid))
-            return;
+    //private void OnElectrionPulseAction(EntityUid uid, ElectrionPulseActComponent component)//, FireStarterActionEvent args)
+    //{
+    //    if (_container.IsEntityOrParentInContainer(uid))
+    //        return;
 
-        var xform = Transform(uid);
-        var ignitionRadius = component.IgnitionRadius;
-        IgniteNearby(uid, xform.Coordinates, component.Severity, ignitionRadius, component);
-        //_audio.PlayPvs(component.IgniteSound, uid);
+    //    var xform = Transform(uid);
+    //    var ignitionRadius = component.IgnitionRadius;
+    //    IgniteNearby(xform.Coordinates, component.Severity, ignitionRadius, component);
+    //    //_audio.PlayPvs(component.IgniteSound, uid);
 
-        //args.Handled = true;
-    }
+    //    //args.Handled = true;
+    //}
 
     /// <summary>
     /// Ignites flammable objects within range.
     /// </summary>
-    public void IgniteNearby(EntityUid uid, EntityCoordinates coordinates, float severity, float radius, ElectrionPulseActComponent component)
-    {
-        //_flammables.Clear();
-        //_lookup.GetEntitiesInRange(coordinates, radius, _electrocution);
-        var range = component.MaxElectrocuteRange * component.Severity; //component.Stability;
-        var damage = (int) (component.MaxElectrocuteDamage * component.Severity);
-        var duration = component.MaxElectrocuteDuration * component.Severity;
+    //public void IgniteNearby(EntityCoordinates coordinates, float severity, float radius, ElectrionPulseActComponent component)
+    //{
+    //    //_flammables.Clear();
+    //    //_lookup.GetEntitiesInRange(coordinates, radius, _flammable);
+    //    var query = EntityQueryEnumerator<ElectricityAnomalyComponent, AnomalyComponent, TransformComponent>();
+    //    while (query.MoveNext(out var uid, out var elec, out var anom, out var xform))
+    //    {
+    //        var range = component.MaxElectrocuteRange * component.Severity; //component.Stability;
+    //        var damage = (int) (component.MaxElectrocuteDamage * component.Severity);
+    //        var duration = component.MaxElectrocuteDuration * component.Severity;
 
-        foreach (var flammable in _electrocutio)
-        {
-            var ent = flammable.Owner;
-            if (ent != uid)
-            {
-                var stackAmount = 2 + (int) (severity / 0.15f);
-                //_flammable.AdjustFireStacks(ent, stackAmount, flammable);
-                //_flammable.Ignite(ent, uid, flammable);
-                _electrocution.TryDoElectrocution(ent, uid, damage, duration, true, statusEffects: comp, ignoreInsulation: true);
-            }
-
-        }
-    }
+    //        foreach (var (ent, comp) in _lookup.GetEntitiesInRange<StatusEffectsComponent>(xform.MapPosition, range))
+    //        {
+    //            _electrocution.TryDoElectrocution(ent, uid, damage, duration, true, statusEffects: comp, ignoreInsulation: false);
+    //        }
+    //    }
+    //}
 
 }

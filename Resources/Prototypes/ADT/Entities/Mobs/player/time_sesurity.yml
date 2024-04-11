@@ -82,6 +82,8 @@
   id: ADTTimePatrolSpawn
   suffix: "Cult, BoneKnife, Cult of the Lamb"
   components:
+  - type: Eye
+    drawFov: false
   - type: NpcFactionMember
     factions:
     - NanoTrasen
@@ -123,6 +125,8 @@
     - CanPilot
     - FootstepSound
     - DoorBumpOpener # авто открытие двери, когда подходишь к ней
+  # Frontier - languages mechanic
+  - type: UniversalLanguageSpeaker # Ghosts should understand any language.
 
 - type: startingGear
   id: ADTTimePatrolGear
