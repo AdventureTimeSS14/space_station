@@ -69,3 +69,23 @@ public sealed class EntityStoppedHauntEvent : HauntEvent
     {
     }
 }
+
+[NetSerializable, Serializable]
+public enum PhantomVisuals : byte
+{
+    Corporeal,
+    Haunting,
+}
+
+public sealed class PhantomSpeechGetEvent : EntityEventArgs
+{
+    public EntityUid Entity { get; }
+
+    public string Message { get; set; }
+
+    public PhantomSpeechGetEvent(EntityUid entity, string message)
+    {
+        Entity = entity;
+        Message = message;
+    }
+}

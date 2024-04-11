@@ -52,7 +52,7 @@ public sealed partial class PhantomComponent : Component
     /// as health and is regenerated.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    public float Essence = 75;
+    public FixedPoint2 Essence = 75;
 
     /// <summary>
     /// Prototype to spawn when the entity dies.
@@ -65,13 +65,13 @@ public sealed partial class PhantomComponent : Component
     /// through harvesting player souls.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("maxEssence")]
-    public float EssenceRegenCap = 75;
+    public FixedPoint2 EssenceRegenCap = 75;
 
     /// <summary>
     /// The amount of essence passively generated per second.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("essencePerSecond")]
-    public float EssencePerSecond = 0.5f;
+    public FixedPoint2 EssencePerSecond = 0.5f;
 
     [ViewVariables]
     public float Accumulator = 0;

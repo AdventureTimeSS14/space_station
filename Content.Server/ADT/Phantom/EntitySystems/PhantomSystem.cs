@@ -9,17 +9,17 @@ using Content.Shared.Rejuvenate;
 using Content.Shared.Mobs.Systems;
 using Robust.Shared.Random;
 using Content.Shared.IdentityManagement;
-using Content.Server.Polymorph.Systems;
+using Content.Shared.Chat;
 using Content.Shared.Actions;
 using Robust.Shared.Serialization.Manager;
 using Content.Shared.Alert;
 using Robust.Server.GameObjects;
-using Content.Shared.Tag;
+using Content.Server.Chat.Systems;
 using Content.Shared.ActionBlocker;
-using Content.Shared.Movement.Systems;
+using Content.Shared.Eye;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Damage;
-using Content.Server.Stunnable;
+using Content.Shared.FixedPoint;
 using Content.Shared.Mind;
 using Content.Shared.Humanoid;
 using Robust.Shared.Containers;
@@ -28,7 +28,9 @@ using System.Numerics;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Network;
 using Content.Shared.Mobs;
-using Content.Shared.Mobs.Components;
+using Content.Server.Chat.Managers;
+using Content.Shared.Stealth.Components;
+using Content.Shared.Speech;
 
 namespace Content.Server.Phantom.EntitySystems;
 
@@ -39,7 +41,7 @@ public sealed partial class PhantomSystem : EntitySystem
     [Dependency] private readonly ActionsSystem _action = default!;
     [Dependency] private readonly ActionBlockerSystem _actionBlocker = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
-    [Dependency] private readonly PolymorphSystem _polymorph = default!;
+    [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] private readonly MetaDataSystem _metaData = default!;
     [Dependency] private readonly ISerializationManager _serialization = default!;
     [Dependency] private readonly ActionContainerSystem _actionContainer = default!;
@@ -58,6 +60,8 @@ public sealed partial class PhantomSystem : EntitySystem
     [Dependency] protected readonly SharedContainerSystem ContainerSystem = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
+    [Dependency] private readonly IChatManager _chatManager = default!;
+
     public override void Initialize()
     {
         base.Initialize();
@@ -75,6 +79,8 @@ public sealed partial class PhantomSystem : EntitySystem
         SubscribeLocalEvent<PhantomComponent, MakeVesselDoAfterEvent>(MakeVesselDoAfter);
 
         SubscribeLocalEvent<PhantomComponent, MobStateChangedEvent>(OnMobState);
+
+        SubscribeLocalEvent<PhantomComponent, AlternativeSpeechEvent>(OnTrySpeak);
     }
 
     private void OnMapInit(EntityUid uid, PhantomComponent component, MapInitEvent args)
@@ -87,6 +93,49 @@ public sealed partial class PhantomSystem : EntitySystem
 
     private void OnShutdown(EntityUid uid, PhantomComponent component, ComponentShutdown args)
     {
+    }
+
+    public bool ChangeEssenceAmount(EntityUid uid, FixedPoint2 amount, PhantomComponent? component = null, bool allowDeath = true, bool regenCap = false)
+    {
+        if (!Resolve(uid, ref component))
+            return false;
+
+        if (!allowDeath && component.Essence + amount <= 0)
+            return false;
+
+        component.Essence += amount;
+
+        if (regenCap)
+            FixedPoint2.Min(component.Essence, component.EssenceRegenCap);
+
+        _alerts.ShowAlert(uid, AlertType.Essence, (short) Math.Clamp(Math.Round(component.Essence.Float() / 10f), 0, 16));
+
+        if (component.Essence <= 0)
+        {
+            Spawn(component.SpawnOnDeathPrototype, Transform(uid).Coordinates);
+            QueueDel(uid);
+        }
+        return true;
+    }
+
+    public override void Update(float frameTime)
+    {
+        base.Update(frameTime);
+
+        var query = EntityQueryEnumerator<PhantomComponent>();
+        while (query.MoveNext(out var uid, out var comp))
+        {
+            comp.Accumulator += frameTime;
+
+            if (comp.Accumulator <= 1)
+                continue;
+            comp.Accumulator -= 1;
+
+            if (comp.Essence < comp.EssenceRegenCap)
+            {
+                ChangeEssenceAmount(uid, comp.EssencePerSecond, comp, regenCap: true);
+            }
+        }
     }
 
     private bool TryHaunt(EntityUid uid, EntityUid target)
@@ -163,6 +212,7 @@ public sealed partial class PhantomSystem : EntitySystem
 
         var eye = EnsureComp<EyeComponent>(uid);
         _eye.SetDrawFov(uid, false, eye);
+        RemComp<StealthComponent>(uid);
 
         var uidEv = new StoppedHauntEntityEvent(holder, uid);
         var targetEv = new EntityStoppedHauntEvent(holder, uid);
@@ -212,6 +262,10 @@ public sealed partial class PhantomSystem : EntitySystem
 
             var eye = EnsureComp<EyeComponent>(uid);
             _eye.SetDrawFov(uid, true, eye);
+
+            var inv = EnsureComp<StealthComponent>(uid);
+            inv.Enabled = true;
+            inv.MaxVisibility = -0.1f;
 
             var xform = Transform(uid);
             ContainerSystem.AttachParentToContainerOrGrid((uid, xform));
@@ -309,7 +363,7 @@ public sealed partial class PhantomSystem : EntitySystem
         var target = args.Target;
         if (!HasComp<HumanoidAppearanceComponent>(target))
         {
-            var selfMessage = Loc.GetString("phantom-vessel-fail-nohuman", ("target", Identity.Entity(target, EntityManager)));
+            var selfMessage = Loc.GetString("changeling-dna-fail-nohuman", ("target", Identity.Entity(target, EntityManager)));
             _popup.PopupEntity(selfMessage, uid, uid);
             return;
         }
@@ -396,6 +450,34 @@ public sealed partial class PhantomSystem : EntitySystem
                 StopHaunt(uid, component.Holder, component);
                 Haunt(uid, randomVessel, component);
             }
+        }
+    }
+
+    public void OnTrySpeak(EntityUid uid, PhantomComponent component, AlternativeSpeechEvent args)
+    {
+        if (!component.HasHaunted)
+        {
+            var selfMessage = Loc.GetString("phantom-say-fail");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
+        else
+        {
+            var target = component.Holder;
+            var popupMessage = Loc.GetString("phantom-say-target");
+
+            if (!_mindSystem.TryGetMind(target, out var mindId, out var mind) || mind.Session == null)
+                return;
+
+            _popup.PopupEntity(popupMessage, target, target, PopupType.MediumCaution);
+
+            var message = popupMessage == "" ? "" : popupMessage + (args.Message == "" ? "" : $" \"{args.Message}\"");
+
+            _chatManager.ChatMessageToOne(ChatChannel.Local, args.Message, message, EntityUid.Invalid, false, mind.Session.Channel);
+
+            var selfMessage = Loc.GetString("phantom-say-self");
+            _popup.PopupEntity(selfMessage, uid, uid);
         }
     }
 }

@@ -149,6 +149,7 @@ namespace Content.Server.Bible
 
                 _damageableSystem.TryChangeDamage(args.Target.Value, component.DamageOnFail, true, origin: uid);
                 _delay.TryResetDelay((uid, useDelay));
+                _audio.PlayPvs("/Audio/Effects/hit_kick.ogg", args.User);
                 return;
             }
 

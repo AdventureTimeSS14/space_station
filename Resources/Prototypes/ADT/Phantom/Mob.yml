@@ -92,3 +92,4 @@
   - type: Tag
     tags:
     - BypassInteractionRangeChecks
+  - type: AlternativeSpeech
