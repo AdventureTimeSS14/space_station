@@ -26,3 +26,5 @@ trait-socialanxiety-name = Заикание
 trait-socialanxiety-desc = Вы беспокоитесь, когда говорите и заикаетесь
 trait-common-lang-unknown-name = Унесённый ветрами
 trait-common-lang-unknown-desc = По тем или иным причинам, вы не знаете общегалактического языка.
+trait-unrevivable-name = Нереанимируемый
+trait-unrevivable-desc = Вас невозможно реанимировать дефибриллятором.
