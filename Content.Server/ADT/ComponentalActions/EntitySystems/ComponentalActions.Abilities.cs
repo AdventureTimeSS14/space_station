@@ -92,6 +92,9 @@ using Robust.Shared.Spawners;
 using Content.Server.Spawners.EntitySystems;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Serialization.Manager.Attributes;
+using Content.Server.Chat;
+using Content.Server.Chat.Systems;
+using Content.Shared.Chat.Prototypes;
 
 
 namespace Content.Server.ComponentalActions.EntitySystems;
@@ -125,6 +128,7 @@ public sealed partial class ComponentalActionsSystem
     [Dependency] private readonly LightningSystem _lightning = default!;
     [Dependency] private readonly ElectrocutionSystem _electrocution = default!;
     [Dependency] private readonly SpawnOnDespawnSystem _timeDespawnUid = default!;
+    [Dependency] private readonly ChatSystem _chat = default!;
     private void InitializeCompAbilities()
     {
         SubscribeLocalEvent<TeleportActComponent, CompTeleportActionEvent>(OnTeleport);
@@ -397,54 +401,12 @@ public sealed partial class ComponentalActionsSystem
     {
         if (args.Handled)
             return;
-
-        AddComp<TimedDespawnComponent>(uid);
-
-        //_timeDespawnUid.OnDespawn(uid);
-        // var despawn = AddComp<TimedDespawnComponent>(uid);
-        // // Don't want to clip audio too short due to imprecision.
-        // despawn.Lifetime = (float) length.Value.TotalSeconds + 0.01f;
+        var despawn = AddComp<TimedDespawnComponent>(uid);
+        despawn.Lifetime = 1.5f;
 
 
+        _audio.PlayPvs(component.IgniteSound, uid);
+        _chat.TrySendInGameICMessage(uid, "щёлкает пальцами", InGameICChatType.Emote, ChatTransmitRange.Normal);
         args.Handled = true;
     }
-
-        // //OnElectrionPulseAction(uid, component);
-        // var range = component.MaxElectrocuteRange; // * args.Stability;
-        // int boltCount = (int) MathF.Floor(MathHelper.Lerp((float) component.MinBoltCount, (float) component.MaxBoltCount, component.Severity));
-        // _lightning.ShootRandomLightnings(component, range, boltCount);
-    //private void OnElectrionPulseAction(EntityUid uid, ElectrionPulseActComponent component)//, FireStarterActionEvent args)
-    //{
-    //    if (_container.IsEntityOrParentInContainer(uid))
-    //        return;
-
-    //    var xform = Transform(uid);
-    //    var ignitionRadius = component.IgnitionRadius;
-    //    IgniteNearby(xform.Coordinates, component.Severity, ignitionRadius, component);
-    //    //_audio.PlayPvs(component.IgniteSound, uid);
-
-    //    //args.Handled = true;
-    //}
-
-    /// <summary>
-    /// Ignites flammable objects within range.
-    /// </summary>
-    //public void IgniteNearby(EntityCoordinates coordinates, float severity, float radius, ElectrionPulseActComponent component)
-    //{
-    //    //_flammables.Clear();
-    //    //_lookup.GetEntitiesInRange(coordinates, radius, _flammable);
-    //    var query = EntityQueryEnumerator<ElectricityAnomalyComponent, AnomalyComponent, TransformComponent>();
-    //    while (query.MoveNext(out var uid, out var elec, out var anom, out var xform))
-    //    {
-    //        var range = component.MaxElectrocuteRange * component.Severity; //component.Stability;
-    //        var damage = (int) (component.MaxElectrocuteDamage * component.Severity);
-    //        var duration = component.MaxElectrocuteDuration * component.Severity;
-
-    //        foreach (var (ent, comp) in _lookup.GetEntitiesInRange<StatusEffectsComponent>(xform.MapPosition, range))
-    //        {
-    //            _electrocution.TryDoElectrocution(ent, uid, damage, duration, true, statusEffects: comp, ignoreInsulation: false);
-    //        }
-    //    }
-    //}
-
 }

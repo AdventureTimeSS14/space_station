@@ -114,18 +114,18 @@
 
 - type: entity
   id: CompElectrionPulseAction
-  name: action-levitation
-  description: action-levitation-desc
+  name: action-evaporation
+  description: action-evaporation-desc
   noSpawn: true
   components:
   - type: InstantAction
     icon:
-      sprite: /Textures/ADT/Interface/alerts.rsi
-      state: levitation
+      sprite: /Textures/ADT/Interface/Actions/evaporation.rsi
+      state: evaporation
     itemIconStyle: BigAction
     checkCanInteract: false
     event: !type:CompElectrionPulseActionEvent
-    useDelay: 5
+    useDelay: 3
 
 
 
