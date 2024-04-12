@@ -1019,7 +1019,7 @@
     state: generic
   - type: Tag
     tags:
-      - DroneUsable
+      - WhitelistChameleon
   - type: StaticPrice
     price: 100
   - type: PhysicalComposition

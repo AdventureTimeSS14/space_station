@@ -7,7 +7,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/Halloween/vyazovhat.rsi
   - type: Clothing
@@ -22,7 +22,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/Halloween/killahelmet.rsi
   - type: Clothing
@@ -44,7 +44,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/Halloween/squidgame.rsi
   - type: Clothing
@@ -59,7 +59,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/Halloween/xeno_head.rsi
   - type: Clothing
@@ -74,7 +74,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/Halloween/zombie_head.rsi
   - type: Clothing

@@ -40,6 +40,20 @@
   maxGroupSize: 20
   radius: 4
 
+- type: biomeMarkerLayer
+  id: OreSalt
+  entityMask:
+    AsteroidRock: AsteroidRockQuartz #AsteroidRockCoal #Ругался на эти объекты типо их нет...
+    WallRock: WallRockQuartz #WallRockCoal
+    WallRockBasalt: WallRockBasaltQuartz #WallRockBasaltCoal
+    WallRockChromite: WallRockChromiteQuartz #WallRockChromiteCoal
+    WallRockSand: WallRockSandTin #WallRockSandCoal
+    WallRockSnow: WallRockSnowQuartz #WallRockSnowCoal
+  maxCount: 30
+  minGroupSize: 10
+  maxGroupSize: 20
+  radius: 4
+
 # Medium value
 # Gold
 - type: biomeMarkerLayer

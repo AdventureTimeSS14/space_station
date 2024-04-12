@@ -133,8 +133,13 @@
           reagent: Plasma
           min: 1
       # Cant be added until I add metabolism effects on reagent removal
-      #- !type:AdjustAlert
-      #  alertType: Toxins
+      - !type:AdjustAlert
+        alertType: Toxins
+        conditions:
+        - !type:ReagentThreshold
+          min: 1.5
+        clear: True
+        time: 5
   reactiveEffects:
     Flammable:
       methods: [ Touch ]
@@ -151,6 +156,12 @@
   tileReactions:
   - !type:FlammableTileReaction
     temperatureMultiplier: 2.0
+  reactiveEffects:
+    Flammable:
+      methods: [ Touch ]
+      effects:
+      - !type:FlammableReaction
+        multiplier: 0.8
   metabolisms:
     Poison:
       effects:
@@ -167,9 +178,14 @@
           types:
             Radiation:
               1
-      # Cant be added until I add metabolism effects on reagent removal
-      #- !type:AdjustAlert
-      #  alertType: Toxins
+      # We need a metabolism effect on reagent removal
+      - !type:AdjustAlert
+        alertType: Toxins
+        conditions:
+          - !type:ReagentThreshold
+            min: 1.5
+        clear: True
+        time: 5
 
 - type: reagent
   id: CarbonDioxide
@@ -206,7 +222,7 @@
           type: Plant
           shouldHave: false
         factor: -4
-      # Cant be added until I add metabolism effects on reagent removal
+      # We need a metabolism effect on reagent removal
       #- !type:AdjustAlert
       #  alertType: CarbonDioxide
 
