@@ -1,5 +1,6 @@
 using Content.Server.Actions;
-using Content.Server.Store.Systems;
+using Content.Shared.Physics;
+using Robust.Shared.Physics;
 using Content.Shared.Phantom;
 using Content.Shared.Phantom.Components;
 using Content.Shared.Popups;
@@ -30,9 +31,9 @@ using Robust.Shared.Network;
 using Content.Shared.Mobs;
 using Content.Server.Chat.Managers;
 using Content.Shared.Stealth.Components;
-using Content.Shared.Speech;
-using Content.Server.Administration.Logs.Converters;
+using System.Linq;
 using Content.Shared.Stunnable;
+using System.ComponentModel.Design;
 
 namespace Content.Server.Phantom.EntitySystems;
 
@@ -68,23 +69,30 @@ public sealed partial class PhantomSystem : EntitySystem
     {
         base.Initialize();
 
+        // Startup
         SubscribeLocalEvent<PhantomComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<PhantomComponent, ComponentShutdown>(OnShutdown);
         SubscribeLocalEvent<PhantomComponent, ComponentStartup>(OnStartup);
 
+        // Haunting
         SubscribeLocalEvent<PhantomComponent, MakeHolderActionEvent>(OnMakeHolder);
         SubscribeLocalEvent<PhantomComponent, StopHauntingActionEvent>(OnStopHaunting);
         SubscribeLocalEvent<PhantomComponent, UpdateCanMoveEvent>(OnTryMove);
 
+        // Vessels manipulations
         SubscribeLocalEvent<PhantomComponent, CycleVesselActionEvent>(OnCycleVessel);
         SubscribeLocalEvent<PhantomComponent, HauntVesselActionEvent>(OnHauntVessel);
         SubscribeLocalEvent<PhantomComponent, MakeVesselActionEvent>(OnMakeVessel);
         SubscribeLocalEvent<PhantomComponent, MakeVesselDoAfterEvent>(MakeVesselDoAfter);
 
+        // Abilities
         SubscribeLocalEvent<PhantomComponent, ParalysisActionEvent>(OnParalysis);
+        SubscribeLocalEvent<PhantomComponent, MaterializeActionEvent>(OnCorporeal);
 
+        // Other
         SubscribeLocalEvent<PhantomComponent, AlternativeSpeechEvent>(OnTrySpeak);
         SubscribeLocalEvent<PhantomComponent, DamageChangedEvent>(OnDamage);
+        SubscribeLocalEvent<PhantomComponent, ComponentChangedEventArgs>(OnComponentChanged);
     }
 
     private void OnStartup(EntityUid uid, PhantomComponent component, ComponentStartup args)
@@ -99,7 +107,6 @@ public sealed partial class PhantomSystem : EntitySystem
         _action.AddAction(uid, ref component.PhantomMakeVesselActionEntity, component.PhantomMakeVesselAction);
         _action.AddAction(uid, ref component.PhantomCycleVesselsActionEntity, component.PhantomCycleVesselsAction);
         _action.AddAction(uid, ref component.PhantomHauntVesselActionEntity, component.PhantomHauntVesselAction);
-        _action.AddAction(uid, ref component.PhantomParalysisActionEntity, component.PhantomParalysisAction);
     }
 
     private void OnShutdown(EntityUid uid, PhantomComponent component, ComponentShutdown args)
@@ -169,6 +176,14 @@ public sealed partial class PhantomSystem : EntitySystem
         }
 
         return true;
+    }
+
+    private void OnComponentChanged(EntityUid uid, PhantomComponent component, ComponentChangedEventArgs args)
+    {
+        if (component.Vessels.Count > 0 && component.PhantomParalysisActionEntity == null)
+        {
+            _action.AddAction(uid, ref component.PhantomParalysisActionEntity, component.PhantomParalysisAction);
+        }
     }
 
     private void OnMakeHolder(EntityUid uid, PhantomComponent component, MakeHolderActionEvent args)
@@ -288,6 +303,14 @@ public sealed partial class PhantomSystem : EntitySystem
                 _transform.SetCoordinates(uid, xform, new EntityCoordinates(target, Vector2.Zero), rotation: Angle.Zero);
             }
 
+            if (TryComp<FixturesComponent>(uid, out var fixtures) && fixtures.FixtureCount >= 1)
+            {
+                var fixture = fixtures.Fixtures.First();
+
+                _physicsSystem.SetCollisionMask(uid, fixture.Key, fixture.Value, (int) CollisionGroup.GhostImpassable, fixtures);
+                _physicsSystem.SetCollisionLayer(uid, fixture.Key, fixture.Value, 0, fixtures);
+            }
+
             _physicsSystem.SetLinearVelocity(uid, Vector2.Zero);
 
             var selfMessage = Loc.GetString("phantom-haunt-self", ("target", Identity.Entity(target, EntityManager)));
@@ -308,6 +331,21 @@ public sealed partial class PhantomSystem : EntitySystem
         }
     }
 
+    public void CycleVessel(EntityUid uid, PhantomComponent component)
+    {
+        if (component.Vessels.Count < 1)
+        {
+            component.SelectedVessel = 0;
+            return;
+        }
+
+        component.SelectedVessel += 1;
+
+        if (component.Vessels.Count >= component.VesselsStrandCap || component.SelectedVessel >= component.Vessels.Count)
+            component.SelectedVessel = 0;
+    }
+
+
     public void OnCycleVessel(EntityUid uid, PhantomComponent component, CycleVesselActionEvent args)
     {
         if (args.Handled)
@@ -322,10 +360,7 @@ public sealed partial class PhantomSystem : EntitySystem
             return;
         }
 
-        component.SelectedVessel += 1;
-
-        if (component.Vessels.Count >= component.VesselsStrandCap || component.SelectedVessel >= component.Vessels.Count)
-            component.SelectedVessel = 0;
+        CycleVessel(uid, component);
 
         var selectedVessel = component.Vessels[component.SelectedVessel];
 
@@ -376,6 +411,13 @@ public sealed partial class PhantomSystem : EntitySystem
         if (!HasComp<HumanoidAppearanceComponent>(target))
         {
             var selfMessage = Loc.GetString("changeling-dna-fail-nohuman", ("target", Identity.Entity(target, EntityManager)));
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
+        if (!HasComp<VesselComponent>(target))
+        {
+            var selfMessage = Loc.GetString("phantom-vessel-fail-already", ("target", Identity.Entity(target, EntityManager)));
             _popup.PopupEntity(selfMessage, uid, uid);
             return;
         }
@@ -533,6 +575,7 @@ public sealed partial class PhantomSystem : EntitySystem
             component.ParalysisOn = false;
         }
     }
+
     private void OnParalysis(EntityUid uid, PhantomComponent component, ParalysisActionEvent args)
     {
         if (args.Handled)
@@ -577,6 +620,20 @@ public sealed partial class PhantomSystem : EntitySystem
                 if (!_status.TryAddStatusEffect<StunnedComponent>(target, "Stun", time, false))
                     return;
             }
+        }
+    }
+
+    private void OnCorporeal(EntityUid uid, PhantomComponent component, MaterializeActionEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        if (TryComp<FixturesComponent>(uid, out var fixtures) && fixtures.FixtureCount >= 1)
+        {
+            var fixture = fixtures.Fixtures.First();
+
+            _physicsSystem.SetCollisionMask(uid, fixture.Key, fixture.Value, (int) (CollisionGroup.SmallMobMask | CollisionGroup.GhostImpassable), fixtures);
+            _physicsSystem.SetCollisionLayer(uid, fixture.Key, fixture.Value, (int) CollisionGroup.SmallMobLayer, fixtures);
         }
     }
 }

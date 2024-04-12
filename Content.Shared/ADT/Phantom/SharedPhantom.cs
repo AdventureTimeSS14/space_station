@@ -28,6 +28,10 @@ public sealed partial class HauntVesselActionEvent : InstantActionEvent
 {
 }
 
+public sealed partial class MaterializeActionEvent : InstantActionEvent
+{
+}
+
 [Serializable, NetSerializable]
 public sealed partial class MakeVesselDoAfterEvent : SimpleDoAfterEvent
 {

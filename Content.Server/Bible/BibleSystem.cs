@@ -155,14 +155,7 @@ namespace Content.Server.Bible
 
             if (TryComp<VesselComponent>(args.Target.Value, out var vessel))
             {
-                var phantom = EnsureComp<PhantomComponent>(vessel.Phantom);
 
-                if (phantom.Holder == args.Target.Value)
-                {
-                    _phantom.StopHaunt(vessel.Phantom, args.Target.Value, phantom);
-                }
-
-                phantom.Vessels.Remove(args.Target.Value);
                 RemComp<VesselComponent>(args.Target.Value);
 
                 var othersFailMessage = Loc.GetString(component.LocPrefix + "-vessel-out-others", ("user", Identity.Entity(args.User, EntityManager)), ("target", Identity.Entity(args.Target.Value, EntityManager)), ("bible", uid));

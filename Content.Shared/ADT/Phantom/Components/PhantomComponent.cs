@@ -113,6 +113,8 @@ public sealed partial class PhantomComponent : Component
     [DataField]
     public float HolyDamageMultiplier = 5f;
 
+    [DataField]
+    public bool IsCorporeal = false;
 
     #region Visualizer
     [DataField("state")]

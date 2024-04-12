@@ -90,7 +90,7 @@
   - type: EntityTargetAction
     icon:
       sprite: ADT/Interface/Actions/actions_phantom.rsi
-      state: ghost_kiss
+      state: paralysis
     itemIconStyle: BigAction
     whitelist:
       components:
