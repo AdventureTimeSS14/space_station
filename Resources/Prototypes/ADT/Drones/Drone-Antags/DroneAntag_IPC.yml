@@ -587,11 +587,10 @@
 - type: damageModifierSet
   id: ADTAntagDroneIPCDamageModSet
   coefficients:
-    Blunt: 0.35
-    Slash: 0.35
-    Piercing: 0.45
-    Heat: 0.20
-    #Explosive: 0.25
+    Blunt: 0.75
+    Slash: 0.75
+    Piercing: 0.55
+    Heat: 0.80
     Structural: 0
     # zap
     Shock: 0.5
