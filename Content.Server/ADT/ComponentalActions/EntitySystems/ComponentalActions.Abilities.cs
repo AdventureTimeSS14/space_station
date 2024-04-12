@@ -87,6 +87,12 @@ using Content.Shared.Anomaly.Effects.Components;
 using Content.Shared.StatusEffect;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
+using Content.Server.Spawners.Components;
+using Robust.Shared.Spawners;
+using Content.Server.Spawners.EntitySystems;
+using Robust.Shared.GameObjects;
+using Robust.Shared.Serialization.Manager.Attributes;
+
 
 namespace Content.Server.ComponentalActions.EntitySystems;
 
@@ -118,6 +124,7 @@ public sealed partial class ComponentalActionsSystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly LightningSystem _lightning = default!;
     [Dependency] private readonly ElectrocutionSystem _electrocution = default!;
+    [Dependency] private readonly SpawnOnDespawnSystem _timeDespawnUid = default!;
     private void InitializeCompAbilities()
     {
         SubscribeLocalEvent<TeleportActComponent, CompTeleportActionEvent>(OnTeleport);
@@ -386,18 +393,26 @@ public sealed partial class ComponentalActionsSystem
         }
     }
 
-    private void OnElectrionPulse(EntityUid uid, Entity<ElectrionPulseActComponent> component, CompElectrionPulseActionEvent args)
+    private void OnElectrionPulse(EntityUid uid, ElectrionPulseActComponent component, CompElectrionPulseActionEvent args)
     {
         if (args.Handled)
             return;
-        //OnElectrionPulseAction(uid, component);
-        var range = component.MaxElectrocuteRange; // * args.Stability;
-        int boltCount = (int) MathF.Floor(MathHelper.Lerp((float) component.MinBoltCount, (float) component.MaxBoltCount, component.Severity));
-        _lightning.ShootRandomLightnings(component, range, boltCount);
+
+        AddComp<TimedDespawnComponent>(uid);
+
+        //_timeDespawnUid.OnDespawn(uid);
+        // var despawn = AddComp<TimedDespawnComponent>(uid);
+        // // Don't want to clip audio too short due to imprecision.
+        // despawn.Lifetime = (float) length.Value.TotalSeconds + 0.01f;
+
 
         args.Handled = true;
     }
 
+        // //OnElectrionPulseAction(uid, component);
+        // var range = component.MaxElectrocuteRange; // * args.Stability;
+        // int boltCount = (int) MathF.Floor(MathHelper.Lerp((float) component.MinBoltCount, (float) component.MaxBoltCount, component.Severity));
+        // _lightning.ShootRandomLightnings(component, range, boltCount);
     //private void OnElectrionPulseAction(EntityUid uid, ElectrionPulseActComponent component)//, FireStarterActionEvent args)
     //{
     //    if (_container.IsEntityOrParentInContainer(uid))
