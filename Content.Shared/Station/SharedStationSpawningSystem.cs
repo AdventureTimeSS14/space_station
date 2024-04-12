@@ -1,3 +1,4 @@
+using System.Linq;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Inventory;
@@ -59,7 +60,9 @@ public abstract class SharedStationSpawningSystem : EntitySystem
                     foreach (var key in defaultKeys)
                     {
                         var keyEntity = Spawn(key, Transform(entity).Coordinates);
-                        keyHolderComp.KeyContainer.Insert(keyEntity, force: true);
+                        //TODO:xTray тут что то сделал непонятно что
+                        //keyHolderComp.KeyContainer.ContainedEntities.Append(keyEntity);
+                        containerMan.Insert(keyEntity, keyHolderComp.KeyContainer);
                     }
                 }
 

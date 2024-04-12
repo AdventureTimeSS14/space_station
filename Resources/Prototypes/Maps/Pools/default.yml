@@ -17,11 +17,6 @@
   #- Reach
   - CorvaxDelta
   - CorvaxAvrite
-  #- CorvaxGate
-  - CorvaxSilly
-  - CorvaxOutpost
-  - CorvaxAstra
-  - CorvaxGelta
   - ADTAtlas
   - ADTBagel
   - ADTBox
@@ -34,3 +29,4 @@
   - ADTOrigin
   - ADTSaltern
   - ADTPacked
+  - Kilo

@@ -45,6 +45,7 @@
         - Geiger
         - TrayScanner
         - GasAnalyzer
+        - HandLabeler
   - type: ItemMapper
     mapLayers:
       drill:
@@ -228,6 +229,7 @@
         - Plunger
       components:
         - LightReplacer
+    maxItemSize: Large
   - type: ItemMapper
     mapLayers:
       bottle:
@@ -271,10 +273,12 @@
         - Radio
         - DiscreteHealthAnalyzer
         - Defibrillator
+        - SurgeryTool
       components:
         - Hypospray
         - Injector
         - Pill
+        - HandLabeler
   - type: ItemMapper
     mapLayers:
       bottle:
@@ -351,6 +355,7 @@
       components:
         - Seed
         - Smokable
+        - HandLabeler
   - type: ItemMapper
     mapLayers:
       hatchet:

@@ -1,4 +1,4 @@
-ent-SirenaChokerWithSpike = Choker Spike
-    .desc = If you turn it back and forth, then it will be a weapon of torture
-ent-SirenaChokerWithHeart = Choker Heart
-    .desc = For good crew members
+ent-SirenaChokerWithSpike = Чокер с шипами
+    .desc = Если его вывернуть задом-наперед, то это будет оружие пыток.
+ent-SirenaChokerWithHeart = Чокер с сердцем
+    .desc = Для послушных членов экипажа.

@@ -242,6 +242,8 @@
         - FootstepSound
         - DoorBumpOpener
     - type: Hands
+    - type: Loadout
+      prototypes: [ ADTAntagDroneGearIPC ]
     - type: Inventory
       templateId: human
     - type: InventorySlots
@@ -288,15 +290,12 @@
     - type: Speech
       speechSounds: Pai
     - type: MeleeWeapon
-      hidden: true
-      soundHit:
-        collection: Punch
-      angle: 30
-      animation: WeaponArcFist
-      attackRate: 1
       damage:
         types:
-          Blunt: 6 # It's tough.
+          Blunt: 15
+          Structural: 10
+      soundHit:
+        path: "/Audio/Weapons/smash.ogg"
     - type: MobPrice
       price: 1500 # Kidnapping a living person and selling them for cred is a good move.
       deathPenalty: 0.01 # However they really ought to be living and intact, otherwise they're worth 100x less.
@@ -345,9 +344,11 @@
   id: ADTDroneAntagIPC
   parent: ADTipcdronebase2
   name: drone soldier
-  suffix: Antag Drone IPC
+  suffix: Drone Antag
   description: Вам, вероятно, не стоит стоять рядом с ним, чтобы проверить, включен ли он.
   components:
+  - type: WiresPanel  # + Тех панель
+  - type: LevitationAct
   - type: InteractionPopup
     interactSuccessString: petting-success-ipc
     #interactFailureString: petting-failure-cleanbot
@@ -440,7 +441,7 @@
     factions:
       - DroneAntag
   - type: NameIdentifier
-    group: ADTDroneAntagSoldier
+    group: ADTNameIPCAntag
   - type: UnpoweredFlashlight
   - type: PointLight
     enabled: false
@@ -496,7 +497,7 @@
         acts: [ "Destruction" ]
   - type: SiliconDownOnDead
   - type: Inventory
-    templateId: ipc
+    templateId: DroneAntagInventoryIPC
   - type: EyeProtection
     protectionTime: 30
   # - type: Battery
@@ -550,6 +551,11 @@
   - type: EmitSoundOnTrigger
     sound:
       path: /Audio/ADT/IPC/borg_deathsound.ogg
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepSoldier
+      params:
+        volume: -2
   - type: LanguageSpeaker
     speaks:
     - GalacticCommon
@@ -593,33 +599,16 @@
     Caustic: 0.3
 
 
-# DRONE NAME IDENTIFIER
-
-
-# - type: nameIdentifierGroup
-#   id: ADTDroneAntagMiner
-#   prefix: drone miner SD
-#   fullName: true
-#   minValue: 100
-#   maxValue: 999
-
-# - type: nameIdentifierGroup
-#   id: ADTDroneAntagSoldier
-#   prefix: drone soldier SD
-#   fullName: true
-#   minValue: 100
-#   maxValue: 999
-
 
 # IPC DRONE NAME IDENTIFIER
 
 
 # - type: nameIdentifierGroup
-#   id: ADTIPCAntag
-#   prefix: BF
+#   id: ADTNameIPCAntag
+#   prefix: drone soldier BF
 #   fullName: true
-#   minValue: 10000
-#   maxValue: 99999
+#   minValue: 100
+#   maxValue: 999
 
 
 # DRONE RADIO CHANNEL

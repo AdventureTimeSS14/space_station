@@ -10,3 +10,16 @@ ent-MobFleshLover = { ent-BaseMobFlesh }
     .desc = { ent-BaseMobFlesh.desc }
 ent-MobAbomination = мерзость
     .desc = Бракованный клон, испытывающий постоянную боль и жаждущий мести.
+
+ent-MobFleshJaredSalvage = { ent-BaseMobFlesh }
+    .desc = { ent-BaseMobFlesh.desc }
+    .suffix = Salvage Ruleset
+ent-MobFleshGolemSalvage = { ent-BaseMobFlesh }
+    .desc = { ent-BaseMobFlesh.desc }
+    .suffix = Salvage Ruleset
+ent-MobFleshClampSalvage = { ent-BaseMobFlesh }
+    .desc = { ent-BaseMobFlesh.desc }
+    .suffix = Salvage Ruleset
+ent-MobFleshLoverSalvage = { ent-BaseMobFlesh }
+    .desc = { ent-BaseMobFlesh.desc }
+    .suffix = Salvage Ruleset

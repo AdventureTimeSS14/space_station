@@ -44,15 +44,15 @@
   id: MiningDrill
   description: Powerful tool used to quickly drill through rocks
   components:
+  - type: Item
+    storedRotation: -90
+    size: Normal
   - type: Tag
     tags:
-      - Pickaxe
+    - Pickaxe
   - type: Sprite
     sprite: Objects/Tools/handdrill.rsi
     state: handdrill
-  #- type: ItemCooldown
-  - type: Item
-    size: Normal
   - type: MeleeWeapon
     autoAttack: true
     angle: 0

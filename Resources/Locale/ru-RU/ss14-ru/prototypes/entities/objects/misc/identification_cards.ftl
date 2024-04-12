@@ -114,3 +114,14 @@ ent-ADTInvestigatorIDCard = ID карта следователя СБ
 
 ent-ADTPathologistIDCard = ID карта патологоанатома
     .desc = { ent-IDCardStandard.desc }
+
+ent-ERTChaplainIDCard = ID карта священника ОБР
+    .desc = { ent-CentcomIDCard.desc }
+ent-ERTEngineerIDCard = ID карта инженера ОБР
+    .desc = { ent-CentcomIDCard.desc }
+ent-ERTJanitorIDCard = ID карта уборщика ОБР
+    .desc = { ent-CentcomIDCard.desc }
+ent-ERTMedicIDCard = ID карта медика ОБР
+    .desc = { ent-CentcomIDCard.desc }
+ent-ERTSecurityIDCard = ID карта офицера безопасности ОБР
+    .desc = { ent-CentcomIDCard.desc }

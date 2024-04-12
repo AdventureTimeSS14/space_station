@@ -2,6 +2,9 @@
   id: DroneAntag
   hostile:
   - SimpleHostile
+  - Passive
+  - SimpleNeutral
+  - Mouse
   - Syndicate
   - Xeno
   - Zombie
@@ -9,6 +12,7 @@
   - NanoTrasen
   - PetsNT
   - Dragon
+  - Ursus
 
 - type: entity
   parent: BaseWeaponTurret

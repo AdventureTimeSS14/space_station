@@ -45,7 +45,7 @@
     state: cloth_3
   product: CrateMaterialTextiles
   cost: 1000
-  category: Materials
+  category: cargoproduct-category-name-materials
   group: market
 
 - type: cargoProduct
@@ -65,7 +65,7 @@
     state: cardboard_3
   product: CrateMaterialCardboard
   cost: 750
-  category: Materials
+  category: cargoproduct-category-name-materials
   group: market
 
 - type: cargoProduct
@@ -75,7 +75,7 @@
     state: paper_3
   product: CrateMaterialPaper
   cost: 1000
-  category: Materials
+  category: cargoproduct-category-name-materials
   group: market
 
 - type: cargoProduct
@@ -85,7 +85,7 @@
     state: fueltank
   product: WeldingFuelTankFull
   cost: 1500
-  category: Materials
+  category: cargoproduct-category-name-materials
   group: market
 
 - type: cargoProduct
@@ -95,5 +95,5 @@
     state: watertank
   product: WaterTankFull
   cost: 1000
-  category: Materials
+  category: cargoproduct-category-name-materials
   group: market

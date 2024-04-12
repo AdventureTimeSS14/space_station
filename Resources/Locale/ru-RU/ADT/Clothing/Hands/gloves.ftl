@@ -2,6 +2,7 @@ fibers-crusher = дюратканевые с наномашинами
 
 ent-ADTClothingHandsNovaGloves = перчатки Новы
     .desc = Это перчатки Новы. Как она их получила? Секрет.
+
 ent-ADTClothingHandsRedjiGloves = Перчатки старика Реджи
     .desc = Старая пара перчаток без пальцев
 
@@ -57,3 +58,4 @@ ent-ADTClothingHandsGlovesSportStep = перчатки серии STEP "Ultra"
 
 ent-ADTClothingHandsCrusherGauntlets = протокинетические рукавицы
     .desc = Модернезированная версия кинетического крушителя, умещённая в форму весьма массивных перчаток.
+

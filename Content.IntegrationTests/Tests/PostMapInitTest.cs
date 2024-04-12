@@ -30,7 +30,8 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] NoSpawnMaps =
         {
             "CentComm",
-            "Dart"
+            "Dart",
+            "NukieOutpost"
         };
 
         private static readonly string[] Grids =
@@ -38,7 +39,7 @@ namespace Content.IntegrationTests.Tests
             "/Maps/centcomm.yml",
             "/Maps/Shuttles/cargo.yml",
             "/Maps/Shuttles/emergency.yml",
-            "/Maps/infiltrator.yml",
+            "/Maps/Shuttles/infiltrator.yml",
         };
 
         private static readonly string[] GameMaps =
@@ -74,13 +75,6 @@ namespace Content.IntegrationTests.Tests
             // Corvax-Start
             "CorvaxAvrite",
             "CorvaxDelta",
-            "CorvaxAstra",
-            "CorvaxGelta",
-            "CorvaxOutpost",
-            "CorvaxSilly",
-            //"CorvaxIshimura",
-			//"CorvaxSpectrum",
-            //"CorvaxGate",
             // Corvax-End
 
             "Dev",
@@ -93,6 +87,7 @@ namespace Content.IntegrationTests.Tests
             "Bagel",
             "Origin",
             "CentComm",
+            "NukieOutpost",
             "Box",
             "Europa",
             "Saltern",
@@ -100,7 +95,9 @@ namespace Content.IntegrationTests.Tests
             "Marathon",
             "MeteorArena",
             "Atlas",
-            "Reach"
+            "Reach",
+            "Train",
+            "Kilo"
         };
 
         /// <summary>
@@ -265,30 +262,16 @@ namespace Content.IntegrationTests.Tests
 
                 if (entManager.HasComponent<StationJobsComponent>(station))
                 {
-                    // Test that the map has valid latejoin spawn points
+                    // Test that the map has valid latejoin spawn points or container spawn points
                     if (!NoSpawnMaps.Contains(mapProto))
                     {
                         var lateSpawns = 0;
 
-                        var query = entManager.AllEntityQueryEnumerator<SpawnPointComponent>();
-                        while (query.MoveNext(out var uid, out var comp))
-                        {
-                            if (comp.SpawnType != SpawnPointType.LateJoin
-                            || !xformQuery.TryGetComponent(uid, out var xform)
-                            || xform.GridUid == null
-                            || !gridUids.Contains(xform.GridUid.Value))
-                            {
-                                continue;
-                            }
-
-                            lateSpawns++;
-                            break;
-                        }
+                        lateSpawns += GetCountLateSpawn<SpawnPointComponent>(gridUids, entManager);
+                        lateSpawns += GetCountLateSpawn<ContainerSpawnPointComponent>(gridUids, entManager);
 
                         Assert.That(lateSpawns, Is.GreaterThan(0), $"Found no latejoin spawn points on {mapProto}");
                     }
-
-                    /*
 
                     // Test all availableJobs have spawnPoints
                     // This is done inside gamemap test because loading the map takes ages and we already have it.
@@ -300,16 +283,14 @@ namespace Content.IntegrationTests.Tests
                         .Select(spawnpoint => spawnpoint.Job.ID)
                         .Distinct();
                     List<string> missingSpawnPoints = new();
-                    foreach (var spawnpoint in jobList.Except(spawnPoints))
-                    {
-                        if (protoManager.Index<JobPrototype>(spawnpoint).SetPreference)
-                            missingSpawnPoints.Add(spawnpoint);
-                    }
+                    //foreach (var spawnpoint in jobList.Except(spawnPoints))
+                    //{
+                    //    if (protoManager.Index<JobPrototype>(spawnpoint).SetPreference)
+                    //        missingSpawnPoints.Add(spawnpoint);
+                    //}
 
-                    Assert.That(missingSpawnPoints, Has.Count.EqualTo(0),
-                        $"There is no spawnpoint for {string.Join(", ", missingSpawnPoints)} on {mapProto}.");
-
-                    */
+                    //Assert.That(missingSpawnPoints, Has.Count.EqualTo(0),
+                        //$"There is no spawnpoint for {string.Join(", ", missingSpawnPoints)} on {mapProto}.");
                 }
 
                 try
@@ -324,6 +305,32 @@ namespace Content.IntegrationTests.Tests
             await server.WaitRunTicks(1);
 
             await pair.CleanReturnAsync();
+        }
+
+
+
+        private static int GetCountLateSpawn<T>(List<EntityUid> gridUids, IEntityManager entManager)
+            where T : ISpawnPoint, IComponent
+        {
+            var resultCount = 0;
+            var queryPoint = entManager.AllEntityQueryEnumerator<T, TransformComponent>();
+#nullable enable
+            while (queryPoint.MoveNext(out T? comp, out var xform))
+            {
+                var spawner = (ISpawnPoint) comp;
+
+                if (spawner.SpawnType is not SpawnPointType.LateJoin
+                || xform.GridUid == null
+                || !gridUids.Contains(xform.GridUid.Value))
+                {
+                    continue;
+                }
+#nullable disable
+                resultCount++;
+                break;
+            }
+
+            return resultCount;
         }
 
         [Test]

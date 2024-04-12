@@ -26,7 +26,7 @@
           state: engshell
     - type: ConditionalSpawner
       prototypes:
-        - ADTDroneAntagMiner
+        - ADTDroneAntagEngineer
 
 - type: entity
   name: drone charger spawner
@@ -41,7 +41,7 @@
           state: chargeshell
     - type: ConditionalSpawner
       prototypes:
-        - ADTDroneAntagMiner
+        - ADTDroneAntagCharger
 
 - type: entity
   name: drone soldier spawner

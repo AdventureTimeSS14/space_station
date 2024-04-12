@@ -7,7 +7,10 @@
   components:
   - type: Sprite
   - type: StaticPrice
-    price: 30
+    price: 20
+  - type: Tag
+    tags:
+    - SurgeryTool
 
 # Cautery
 
@@ -25,7 +28,7 @@
     storedRotation: 90
   - type: MeleeWeapon
     damage:
-      types:
+       types:
         Heat: 5
     soundHit:
       path: /Audio/Effects/lightburn.ogg
@@ -75,6 +78,8 @@
     sprite: Objects/Specific/Medical/Surgery/scalpel.rsi
     storedRotation: 90
   - type: MeleeWeapon
+    wideAnimationRotation: 90
+    swingLeft: true
     attackRate: 1.5
     damage:
       types:

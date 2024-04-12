@@ -1,2 +1,3 @@
-ent-JessusX = JessusX
-    .desc = Give live
+ent-JessusX = крест Иисуса
+    .desc = давай жизнь.
+    .suffix = { "" }

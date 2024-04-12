@@ -70,6 +70,13 @@
       1: 0.45
       0: 0.00
   - type: BatteryDrinker
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    enabled: false
+    color: "#a8d8ff"
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    radius: 6
   - type: Wires
     boardName: "ipc-board-name"
     layoutId: IPC
