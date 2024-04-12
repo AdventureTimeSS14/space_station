@@ -1,3 +1,5 @@
+fibers-crusher = дюратканевые с наномашинами
+
 ent-ADTClothingHandsNovaGloves = перчатки Новы
     .desc = Это перчатки Новы. Как она их получила? Секрет.
 ent-ADTClothingHandsRedjiGloves = Перчатки старика Реджи
@@ -52,3 +54,6 @@ ent-ADTClothingHandsGlovesSport = перчати серии STEP "Cold"
     .desc = Беспалые перчатки серии "Cold", в которых удобно заниматься спортом любой расе.
 ent-ADTClothingHandsGlovesSportStep = перчатки серии STEP "Ultra"
     .desc = Перчатки "Ultra" серии STEP без пальцев и с мягкой подкладкой, закрывающей ладони, что делает их идеальными для передвижения на четвероногих или для подъема грузов.
+
+ent-ADTClothingHandsCrusherGauntlets = протокинетические рукавицы
+    .desc = Модернезированная версия кинетического крушителя, умещённая в форму весьма массивных перчаток.
