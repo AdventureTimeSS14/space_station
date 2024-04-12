@@ -45,6 +45,22 @@ public sealed partial class PhantomComponent : Component
     [DataField, AutoNetworkedField]
     public EntityUid? PhantomHauntVesselActionEntity;
 
+    [DataField]
+    public EntProtoId PhantomParalysisAction = "ActionPhantomParalysis";
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? PhantomParalysisActionEntity;
+
+    #endregion
+
+    #region Toggleable Actions
+
+    [DataField]
+    public TimeSpan Cooldown = TimeSpan.FromSeconds(30);
+
+    [DataField]
+    public bool ParalysisOn = false;
+
     #endregion
 
     /// <summary>
@@ -52,7 +68,7 @@ public sealed partial class PhantomComponent : Component
     /// as health and is regenerated.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    public FixedPoint2 Essence = 75;
+    public FixedPoint2 Essence = 50;
 
     /// <summary>
     /// Prototype to spawn when the entity dies.
@@ -93,4 +109,16 @@ public sealed partial class PhantomComponent : Component
 
     [DataField]
     public int MakeVesselDuration = 4;
+
+    [DataField]
+    public float HolyDamageMultiplier = 5f;
+
+
+    #region Visualizer
+    [DataField("state")]
+    public string State = "phantom";
+    [DataField("hauntState")]
+    public string HauntingState = "haunt";
+    #endregion
+
 }

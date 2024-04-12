@@ -11,6 +11,11 @@ public sealed partial class MakeHolderActionEvent : EntityTargetActionEvent
 public sealed partial class MakeVesselActionEvent : EntityTargetActionEvent
 {
 }
+
+public sealed partial class ParalysisActionEvent : EntityTargetActionEvent
+{
+}
+
 public sealed partial class StopHauntingActionEvent : InstantActionEvent
 {
 }

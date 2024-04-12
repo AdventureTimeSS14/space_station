@@ -16,7 +16,7 @@ using Content.Shared.Alert;
 using Robust.Server.GameObjects;
 using Content.Server.Chat.Systems;
 using Content.Shared.ActionBlocker;
-using Content.Shared.Eye;
+using Content.Shared.StatusEffect;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Damage;
 using Content.Shared.FixedPoint;
@@ -31,13 +31,15 @@ using Content.Shared.Mobs;
 using Content.Server.Chat.Managers;
 using Content.Shared.Stealth.Components;
 using Content.Shared.Speech;
+using Content.Server.Administration.Logs.Converters;
+using Content.Shared.Stunnable;
 
 namespace Content.Server.Phantom.EntitySystems;
 
 public sealed partial class PhantomSystem : EntitySystem
 {
     [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly StoreSystem _store = default!;
+    [Dependency] private readonly StatusEffectsSystem _status = default!;
     [Dependency] private readonly ActionsSystem _action = default!;
     [Dependency] private readonly ActionBlockerSystem _actionBlocker = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
@@ -68,6 +70,7 @@ public sealed partial class PhantomSystem : EntitySystem
 
         SubscribeLocalEvent<PhantomComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<PhantomComponent, ComponentShutdown>(OnShutdown);
+        SubscribeLocalEvent<PhantomComponent, ComponentStartup>(OnStartup);
 
         SubscribeLocalEvent<PhantomComponent, MakeHolderActionEvent>(OnMakeHolder);
         SubscribeLocalEvent<PhantomComponent, StopHauntingActionEvent>(OnStopHaunting);
@@ -78,9 +81,16 @@ public sealed partial class PhantomSystem : EntitySystem
         SubscribeLocalEvent<PhantomComponent, MakeVesselActionEvent>(OnMakeVessel);
         SubscribeLocalEvent<PhantomComponent, MakeVesselDoAfterEvent>(MakeVesselDoAfter);
 
-        SubscribeLocalEvent<PhantomComponent, MobStateChangedEvent>(OnMobState);
+        SubscribeLocalEvent<PhantomComponent, ParalysisActionEvent>(OnParalysis);
 
         SubscribeLocalEvent<PhantomComponent, AlternativeSpeechEvent>(OnTrySpeak);
+        SubscribeLocalEvent<PhantomComponent, DamageChangedEvent>(OnDamage);
+    }
+
+    private void OnStartup(EntityUid uid, PhantomComponent component, ComponentStartup args)
+    {
+        _appearance.SetData(uid, PhantomVisuals.Haunting, false);
+        ChangeEssenceAmount(uid, 0, component);
     }
 
     private void OnMapInit(EntityUid uid, PhantomComponent component, MapInitEvent args)
@@ -89,6 +99,7 @@ public sealed partial class PhantomSystem : EntitySystem
         _action.AddAction(uid, ref component.PhantomMakeVesselActionEntity, component.PhantomMakeVesselAction);
         _action.AddAction(uid, ref component.PhantomCycleVesselsActionEntity, component.PhantomCycleVesselsAction);
         _action.AddAction(uid, ref component.PhantomHauntVesselActionEntity, component.PhantomHauntVesselAction);
+        _action.AddAction(uid, ref component.PhantomParalysisActionEntity, component.PhantomParalysisAction);
     }
 
     private void OnShutdown(EntityUid uid, PhantomComponent component, ComponentShutdown args)
@@ -112,8 +123,11 @@ public sealed partial class PhantomSystem : EntitySystem
 
         if (component.Essence <= 0)
         {
-            Spawn(component.SpawnOnDeathPrototype, Transform(uid).Coordinates);
-            QueueDel(uid);
+            if (!TryRevive(uid, component))
+            {
+                Spawn(component.SpawnOnDeathPrototype, Transform(uid).Coordinates);
+                QueueDel(uid);
+            }
         }
         return true;
     }
@@ -204,6 +218,7 @@ public sealed partial class PhantomSystem : EntitySystem
             return;
 
         RemComp<PhantomHolderComponent>(holder);
+        HauntedStopEffects(component.Holder, component);
         component.Holder = new EntityUid();
         component.HasHaunted = false;
         _actionBlocker.UpdateCanMove(uid);
@@ -212,7 +227,7 @@ public sealed partial class PhantomSystem : EntitySystem
 
         var eye = EnsureComp<EyeComponent>(uid);
         _eye.SetDrawFov(uid, false, eye);
-        RemComp<StealthComponent>(uid);
+        _appearance.SetData(uid, PhantomVisuals.Haunting, false);
 
         var uidEv = new StoppedHauntEntityEvent(holder, uid);
         var targetEv = new EntityStoppedHauntEvent(holder, uid);
@@ -262,10 +277,7 @@ public sealed partial class PhantomSystem : EntitySystem
 
             var eye = EnsureComp<EyeComponent>(uid);
             _eye.SetDrawFov(uid, true, eye);
-
-            var inv = EnsureComp<StealthComponent>(uid);
-            inv.Enabled = true;
-            inv.MaxVisibility = -0.1f;
+            _appearance.SetData(uid, PhantomVisuals.Haunting, true);
 
             var xform = Transform(uid);
             ContainerSystem.AttachParentToContainerOrGrid((uid, xform));
@@ -431,26 +443,24 @@ public sealed partial class PhantomSystem : EntitySystem
         return true;
     }
 
-    private void OnMobState(EntityUid uid, PhantomComponent component, MobStateChangedEvent args)
+    public bool TryRevive(EntityUid uid, PhantomComponent component)
     {
-        if (args.NewMobState == MobState.Dead)
+        if (component.Vessels.Count < 1)
+            return false;
+
+        var randomVessel = _random.Pick(component.Vessels);
+        ChangeEssenceAmount(uid, component.Essence, component);
+
+        if (!component.HasHaunted)
         {
-            if (component.Vessels.Count < 1)
-                return;
-
-            var randomVessel = _random.Pick(component.Vessels);
-            RaiseLocalEvent(uid, new RejuvenateEvent());
-
-            if (!component.HasHaunted)
-            {
-                Haunt(uid, randomVessel, component);
-            }
-            else
-            {
-                StopHaunt(uid, component.Holder, component);
-                Haunt(uid, randomVessel, component);
-            }
+            Haunt(uid, randomVessel, component);
         }
+        else
+        {
+            StopHaunt(uid, component.Holder, component);
+            Haunt(uid, randomVessel, component);
+        }
+        return true;
     }
 
     public void OnTrySpeak(EntityUid uid, PhantomComponent component, AlternativeSpeechEvent args)
@@ -466,18 +476,107 @@ public sealed partial class PhantomSystem : EntitySystem
         {
             var target = component.Holder;
             var popupMessage = Loc.GetString("phantom-say-target");
+            var selfMessage = Loc.GetString("phantom-say-self");
 
             if (!_mindSystem.TryGetMind(target, out var mindId, out var mind) || mind.Session == null)
                 return;
+            if (!_mindSystem.TryGetMind(uid, out var selfMindId, out var selfMind) || selfMind.Session == null)
+                return;
 
             _popup.PopupEntity(popupMessage, target, target, PopupType.MediumCaution);
+            _popup.PopupEntity(selfMessage, uid, uid);
 
             var message = popupMessage == "" ? "" : popupMessage + (args.Message == "" ? "" : $" \"{args.Message}\"");
-
             _chatManager.ChatMessageToOne(ChatChannel.Local, args.Message, message, EntityUid.Invalid, false, mind.Session.Channel);
 
-            var selfMessage = Loc.GetString("phantom-say-self");
-            _popup.PopupEntity(selfMessage, uid, uid);
+            var selfChatMessage = selfMessage == "" ? "" : selfMessage + (args.Message == "" ? "" : $" \"{args.Message}\"");
+            _chatManager.ChatMessageToOne(ChatChannel.Local, args.Message, selfChatMessage, EntityUid.Invalid, false, selfMind.Session.Channel);
+
+        }
+    }
+
+    private void OnDamage(EntityUid uid, PhantomComponent component, DamageChangedEvent args)
+    {
+        if (args.DamageDelta == null)
+            return;
+
+        var essenceDamage = args.DamageDelta.GetTotal().Float() * -1;
+
+        if (args.Origin != null)
+        {
+            if (HasComp<HolyDamageComponent>(args.Origin))
+            {
+                essenceDamage = essenceDamage * component.HolyDamageMultiplier;
+            }
+        }
+
+        ChangeEssenceAmount(uid, essenceDamage, component);
+    }
+
+    public bool IsHolder(EntityUid target, EntityUid? actionEntity, PhantomComponent component)
+    {
+        if (target == component.Holder)
+        {
+            _action.ClearCooldown(actionEntity);
+            return true;
+        }
+        _action.SetCooldown(actionEntity, component.Cooldown);
+        return false;
+    }
+
+    public void HauntedStopEffects(EntityUid haunted, PhantomComponent component)
+    {
+        if (component.ParalysisOn)
+        {
+            _status.TryRemoveStatusEffect(haunted, "KnockedDown");
+            _status.TryRemoveStatusEffect(haunted, "Stun");
+            component.ParalysisOn = false;
+        }
+    }
+    private void OnParalysis(EntityUid uid, PhantomComponent component, ParalysisActionEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        var target = args.Target;
+
+        if (IsHolder(target, component.PhantomParalysisActionEntity, component))
+        {
+            if (!component.ParalysisOn)
+            {
+                var timeHaunted = TimeSpan.FromHours(1);
+                if (!_status.TryAddStatusEffect<KnockedDownComponent>(target, "KnockedDown", timeHaunted, false))
+                    return;
+                if (!_status.TryAddStatusEffect<StunnedComponent>(target, "Stun", timeHaunted, false))
+                    return;
+            }
+            else
+            {
+                if (!_status.TryRemoveStatusEffect(target, "KnockedDown"))
+                    return;
+                if (!_status.TryRemoveStatusEffect(target, "Stun"))
+                    return;
+            }
+
+            component.ParalysisOn = !component.ParalysisOn;
+        }
+        else
+        {
+            if (component.ParalysisOn)
+            {
+                _action.ClearCooldown(component.PhantomParalysisActionEntity);
+                var selfMessage = Loc.GetString("phantom-paralysis-fail-active");
+                _popup.PopupEntity(selfMessage, uid, uid);
+                return;
+            }
+            else
+            {
+                var time = TimeSpan.FromSeconds(10);
+                if (!_status.TryAddStatusEffect<KnockedDownComponent>(target, "KnockedDown", time, false))
+                    return;
+                if (!_status.TryAddStatusEffect<StunnedComponent>(target, "Stun", time, false))
+                    return;
+            }
         }
     }
 }

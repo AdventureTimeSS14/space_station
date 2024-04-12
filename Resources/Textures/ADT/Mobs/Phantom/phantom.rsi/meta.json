@@ -11,9 +11,11 @@
         {
             "name": "phantom",
             "directions": 4
-
+        },
+        {
+            "name": "haunt",
+            "directions": 4
         }
-
     ]
 
 }
