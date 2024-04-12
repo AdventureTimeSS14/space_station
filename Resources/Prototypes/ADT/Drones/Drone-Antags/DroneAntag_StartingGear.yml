@@ -71,6 +71,24 @@
         - id: JawsOfLife
         - id: WeaponLaserGun
 
+- type: entity
+  parent: ClothingOuterBaseLarge
+  id: ClothingOuterArmorIPCAntagDrone
+  name: IPC antag drone armor
+  suffix: Drone Antag
+  components:
+    - type: Sprite
+      sprite: Corvax/Clothing/OuterClothing/Armor/centcom_naval_carapace.rsi
+    - type: Clothing
+      sprite: ClothingOuterArmorIPCAntagDrone
+    - type: Armor
+      modifiers:
+        coefficients:
+          Radiation: 0.15
+          Stun: 0.5
+    - type: ExplosionResistance
+      damageCoefficient: 0.75
+
 - type: startingGear
   id: ADTAntagDroneGearMiner
   equipment:
@@ -110,3 +128,4 @@
     suitstorage: ADTWeaponLasgunSALR36
     pocket1: ADTPowerCellLasgun
     pocket2: ADTPowerCellLasgun
+    outerClothing: ClothingOuterArmorIPCAntagDrone
