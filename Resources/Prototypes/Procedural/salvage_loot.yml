@@ -89,6 +89,9 @@
         - proto: ADTWeaponWarhammer
           cost: 5
           prob: 0.3
+        - proto: ADTClothingHandsCrusherGauntlets
+          cost: 3
+          prob: 0.4
         - proto: CrateSyndicateSuperSurplusBundle
           cost: 5
           prob: 0.01

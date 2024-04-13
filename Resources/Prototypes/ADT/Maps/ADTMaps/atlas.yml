@@ -2,7 +2,7 @@
   id: ADTAtlas
   mapName: Atlas
   mapPath: /Maps/ADTMaps/adt_atlas.yml
-  minPlayers: 5
+  minPlayers: 0
   maxPlayers: 20
   stations:
     ADTAtlas:

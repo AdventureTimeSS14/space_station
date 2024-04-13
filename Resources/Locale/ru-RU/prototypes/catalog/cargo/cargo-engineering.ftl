@@ -20,3 +20,7 @@ ent-EngineeringRCDAmmo = { ent-CrateRCDAmmo }
     .desc = { ent-CrateRCDAmmo.desc }
 ent-EngineeringRCD = { ent-CrateRCD }
     .desc = { ent-CrateRCD.desc }
+ent-ADTEngineeringAMEController = { ent-CrateEngineeringAMEControl }
+    .desc = { ent-CrateEngineeringAMEControl.desc }
+ent-ADTEngineeringAMEComponent = { ent-CrateEngineeringAMEShielding }
+    .desc = { ent-CrateEngineeringAMEShielding.desc }

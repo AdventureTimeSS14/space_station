@@ -25,3 +25,6 @@ ent-NitrousOxideTankFilled = баллон оксида азота
 ent-PlasmaTankFilled = баллон плазмы
     .suffix = Заполненный
     .desc = { ent-PlasmaTank.desc }
+ent-DoubleEmergencyNitrogenTankFilled = { ent-DoubleEmergencyNitrogenTank }
+    .desc = { ent-DoubleEmergencyNitrogenTank.desc }
+    .suffix = Заполненный
