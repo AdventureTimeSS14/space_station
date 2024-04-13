@@ -40,3 +40,6 @@ ent-AnomalyRockSilver = { ent-BaseAnomaly }
 ent-AnomalyRockUranium = { ent-BaseAnomaly }
     .suffix = Камень, Уран
     .desc = { ent-BaseAnomaly.desc }
+ent-AnomalyShadow = { ent-BaseAnomaly }
+    .suffix = Тень
+    .desc = { ent-BaseAnomaly.desc }

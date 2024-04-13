@@ -2,8 +2,8 @@
   id: ADTCore
   mapName: 'Core'
   mapPath: /Maps/ADTMaps/adt_core.yml
-  minPlayers: 30
-  maxPlayers: 60
+  minPlayers: 20
+  maxPlayers: 125
   stations:
     ADTCore:
       stationProto: StandardNanotrasenStation

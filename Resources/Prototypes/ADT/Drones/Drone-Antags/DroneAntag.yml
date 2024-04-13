@@ -201,7 +201,7 @@
   id: ADTDroneAntagMiner
   parent: ADTDroneAntagBase
   name: drone miner
-  suffix: Miner
+  suffix: Drone Antag
   description: Вам, вероятно, не стоит стоять рядом с ним, чтобы проверить, включен ли он.
   components:
   - type: Body
@@ -212,7 +212,7 @@
     prototypes: [ ADTAntagDroneGearMiner ]
   - type: InventorySlots
   - type: NameIdentifier
-    group: ADTDroneAntagMiner
+    group: ADTNameDroneAntagMiner
   - type: MovementSpeedModifier
     baseWalkSpeed : 5
     baseSprintSpeed : 5
@@ -359,9 +359,9 @@
 - type: entity
   id: ADTDroneAntagEngineer
   parent: ADTDroneAntagBase
-  name: drone soldier
+  name: drone engineer
+  suffix: Drone Antag
   description: Вам, вероятно, не стоит стоять рядом с ним, чтобы проверить, включен ли он.
-  suffix: Engineer
   components:
   - type: Body
     prototype: ADTDroneAntagBodyEngineer
@@ -371,7 +371,7 @@
     prototypes: [ ADTAntagDroneGearEngineer ]
   - type: InventorySlots
   - type: NameIdentifier
-    group: ADTDroneAntagSoldier
+    group: ADTNameDroneAntagEngineer
   - type: MovementSpeedModifier
     baseWalkSpeed : 5
     baseSprintSpeed : 5
@@ -519,9 +519,9 @@
 - type: entity
   id: ADTDroneAntagCharger
   parent: ADTDroneAntagBase
-  name: drone soldier
+  name: drone charger
+  suffix: Drone Antag
   description: Вам, вероятно, не стоит стоять рядом с ним, чтобы проверить, включен ли он.
-  suffix: Charger
   components:
   - type: Body
     prototype: ADTDroneAntagBodyCharger
@@ -531,7 +531,7 @@
     prototypes: [ ADTAntagDroneGearCharger ]
   - type: InventorySlots
   - type: NameIdentifier
-    group: ADTDroneAntagSoldier
+    group: ADTNameDroneAntagCharger
   - type: MovementSpeedModifier
     baseWalkSpeed : 5
     baseSprintSpeed : 5
@@ -687,15 +687,22 @@
 
 
 # - type: nameIdentifierGroup
-#   id: ADTDroneAntagMiner
+#   id: ADTNameDroneAntagMiner
 #   prefix: drone miner SD
 #   fullName: true
 #   minValue: 100
 #   maxValue: 999
 
 # - type: nameIdentifierGroup
-#   id: ADTDroneAntagSoldier
-#   prefix: drone soldier SD
+#   id: ADTNameDroneAntagEngineer
+#   prefix: drone engineer SD
+#   fullName: true
+#   minValue: 100
+#   maxValue: 999
+
+# - type: nameIdentifierGroup
+#   id: ADTNameDroneAntagCharger
+#   prefix: drone charger SD
 #   fullName: true
 #   minValue: 100
 #   maxValue: 999
@@ -705,11 +712,11 @@
 
 
 # - type: nameIdentifierGroup
-#   id: ADTIPCAntag
-#   prefix: BF
+#   id: ADTNameIPCAntag
+#   prefix: drone soldier BF
 #   fullName: true
-#   minValue: 10000
-#   maxValue: 99999
+#   minValue: 100
+#   maxValue: 999
 
 
 # DRONE RADIO CHANNEL
