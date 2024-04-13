@@ -405,14 +405,14 @@ namespace Content.Server.Administration.Systems
             }
             else if (senderAdmin is not null && senderAdmin.HasFlag(AdminFlags.Adminhelp))
             {
-                bwoinkText = $"\\[{senderAdmin.Title}\\][color=red]{senderSession.Name}[/color]: {escapedText}"; // сообщение админа ADT
+                bwoinkText = $"{(message.PlaySound ? "" : "(S) ")}\\[{senderAdmin.Title}\\][color=red]{senderSession.Name}[/color]: {escapedText}"; // сообщение админа. тут подставляется префикс админа в сообщение senderAdmin.Title. и проверяем на звук для префикса (S)-ADT
             }
             else
             {
                 bwoinkText = $"{senderSession.Name}";
             }
 
-            bwoinkText = $"{(message.PlaySound ? "" : "(S) ")}{bwoinkText}: {escapedText}";
+            //bwoinkText = $"{(message.PlaySound ? "" : "(S) ")}{bwoinkText}: {escapedText}"; //Это комментим из-за дублирования сообщения администрации
 
             // If it's not an admin / admin chooses to keep the sound then play it.
             var playSound = !senderAHelpAdmin || message.PlaySound;
