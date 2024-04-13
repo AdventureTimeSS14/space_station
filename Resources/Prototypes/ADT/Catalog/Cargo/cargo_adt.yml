@@ -9,6 +9,27 @@
   category: Medical
   group: market
 
+#engineering
+- type: cargoProduct
+  id: ADTEngineeringAMEController
+  icon:
+    sprite: Structures/Power/Generation/ame.rsi
+    state: static
+  product: CrateEngineeringAMEControl
+  cost: 4000
+  category: cargoproduct-category-name-engineering
+  group: market
+
+- type: cargoProduct
+  id: ADTEngineeringAMEComponent
+  icon:
+    sprite: Objects/Devices/flatpack.rsi
+    state: ame-part
+  product: CrateEngineeringAMEShielding
+  cost: 4000
+  category: cargoproduct-category-name-engineering
+  group: market
+
 #service
 - type: cargoProduct
   id: ADTCrateVendingMachineRestockPill
