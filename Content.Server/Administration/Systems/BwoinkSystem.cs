@@ -403,16 +403,20 @@ namespace Content.Server.Administration.Systems
             {
                 bwoinkText = $"[color=purple]{senderSession.Name}[/color]";
             }
-            else if (senderAdmin is not null && senderAdmin.HasFlag(AdminFlags.Adminhelp))
+            else if (senderAdmin is not null && senderAdmin.HasFlag(AdminFlags.Adminhelp))  //Start-Правим за визденами, тут подставляется префикс админа в сообщение senderAdmin.Title.-ADT
             {
                 bwoinkText = $"\\[{senderAdmin.Title}\\][color=red]{senderSession.Name}[/color]: {escapedText}"; // сообщение админа ADT
             }
+            else if ((senderAdmin is not null && senderAdmin.HasFlag(AdminFlags.Adminhelp)) && message.PlaySound)
+            {
+                bwoinkText = $"(S)\\[{senderAdmin.Title}\\][color=red]{senderSession.Name}[/color]: {escapedText}"; // сообщение админа ADT
+            } //End-ADT
             else
             {
                 bwoinkText = $"{senderSession.Name}";
             }
 
-            bwoinkText = $"{(message.PlaySound ? "" : "(S) ")}{bwoinkText}: {escapedText}";
+            //bwoinkText = $"{(message.PlaySound ? "" : "(S) ")}{bwoinkText}: {escapedText}"; //Это комментим из-за дублирования сообщения администрации
 
             // If it's not an admin / admin chooses to keep the sound then play it.
             var playSound = !senderAHelpAdmin || message.PlaySound;
