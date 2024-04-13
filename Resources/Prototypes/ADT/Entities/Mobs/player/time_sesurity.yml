@@ -630,7 +630,7 @@
           reagent: ADTChloralHydrate
           min: 16
         key: PointLight
-        component: PointLight
+        component: PointLightColorBlue
         type: Add
         refresh: false
         # radius: 4
