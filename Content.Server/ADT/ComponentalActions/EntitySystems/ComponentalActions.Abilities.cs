@@ -95,6 +95,19 @@ using Robust.Shared.Serialization.Manager.Attributes;
 using Content.Server.Chat;
 using Content.Server.Chat.Systems;
 using Content.Shared.Chat.Prototypes;
+using Content.Shared.Singularity.EntitySystems;
+using Robust.Shared.GameStates;
+using Content.Shared.Singularity.Components;
+using Content.Shared.ADT.PointLightColorBlue;
+using Content.Shared.Interaction.Components;
+using Robust.Shared.Audio;
+using Robust.Shared.Audio.Systems;
+using System.Timers;
+using System.ComponentModel;
+using System.Linq;
+using Robust.Shared.Timing;
+using Robust.Shared.Utility;
+using Robust.Server.GameObjects;
 
 
 namespace Content.Server.ComponentalActions.EntitySystems;
@@ -129,6 +142,7 @@ public sealed partial class ComponentalActionsSystem
     [Dependency] private readonly ElectrocutionSystem _electrocution = default!;
     [Dependency] private readonly SpawnOnDespawnSystem _timeDespawnUid = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
+    [Dependency] private readonly PointLightSystem _light = default!;
     private void InitializeCompAbilities()
     {
         SubscribeLocalEvent<TeleportActComponent, CompTeleportActionEvent>(OnTeleport);
@@ -401,12 +415,26 @@ public sealed partial class ComponentalActionsSystem
     {
         if (args.Handled)
             return;
-        var despawn = AddComp<TimedDespawnComponent>(uid);
-        despawn.Lifetime = 1.5f;
-
-
-        _audio.PlayPvs(component.IgniteSound, uid);
         _chat.TrySendInGameICMessage(uid, "щёлкает пальцами", InGameICChatType.Emote, ChatTransmitRange.Normal);
+
+        // Создаем таймер для задержки
+        System.Timers.Timer timer = new System.Timers.Timer();
+        timer.Interval = 3000; // 3 секунды
+        timer.AutoReset = false; // Для однократного срабатывания
+        timer.Elapsed += (sender, e) =>
+        {
+            AddComp<SingularityDistortionComponent>(uid);
+            AddComp<PointLightComponent>(uid);
+            _light.SetEnabled(uid, true);
+            _light.SetColor(uid, Color.FromHex("#a83da8"));
+            _light.SetRadius(uid, 1.1f);
+            _light.SetEnergy(uid, 160f);
+            _audio.PlayPvs(component.IgniteSound, uid);
+            var despawn = AddComp<TimedDespawnComponent>(uid);
+            despawn.Lifetime = 0.7f;
+        };
+        timer.Start();
+
         args.Handled = true;
     }
 }
