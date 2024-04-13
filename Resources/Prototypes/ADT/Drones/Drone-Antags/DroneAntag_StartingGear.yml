@@ -121,7 +121,8 @@
     - type: Sprite
       sprite: Corvax/Clothing/OuterClothing/Armor/centcom_naval_carapace.rsi
     - type: Clothing
-      sprite: ClothingOuterArmorIPCAntagDrone
+      sprite: ADT/Clothing/Back/ertleader_cyb.rsi # invisible sprite
+    - type: Unremoveable
     - type: Armor
       modifiers:
         coefficients:
