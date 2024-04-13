@@ -1,7 +1,7 @@
 <Document>
   # Вид
 
-  В Nanotrasen используются различные разумные виды рас.
+  В Nanotrasen работают различные разумные виды рас.
 
   <Box>
   <GuideEntityEmbed Entity="MobArachnid" Caption="Arachnid"/>
