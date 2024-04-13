@@ -137,7 +137,7 @@
   # - type: StaticPrice
   #   price: 1
   - type: Stack
-    stackType: ADTCasinoChip5
+    stackType: ADTCasinoChip10
     baseLayer: base
     count: 1
     layerStates:
@@ -176,7 +176,7 @@
   # - type: StaticPrice
   #   price: 1
   - type: Stack
-    stackType: ADTCasinoChip5
+    stackType: ADTCasinoChip50
     baseLayer: base
     count: 1
     layerStates:
@@ -215,7 +215,7 @@
   # - type: StaticPrice
   #   price: 1
   - type: Stack
-    stackType: ADTCasinoChip5
+    stackType: ADTCasinoChip100
     baseLayer: base
     count: 1
     layerStates:

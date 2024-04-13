@@ -3,7 +3,7 @@
   mapName: 'Saltern'
   mapPath: /Maps/ADTMaps/adt_saltern.yml
   minPlayers: 0
-  maxPlayers: 35
+  maxPlayers: 40
   fallback: true
   stations:
     ADTSaltern:

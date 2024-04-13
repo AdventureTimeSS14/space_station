@@ -19,3 +19,7 @@ ent-MobLuminousPerson = светащяся личность
     .desc = Ослепительная фигура из чистого света, кажущаяся неосязаемой.
 ent-AnomalyFloraBulb = странная светящаяся ягода
     .desc = Красивая и странная светящаяся ягода. Похоже, внутри неё что-то растёт...
+ent-ShadowKudzu = тёмная дымка
+  .desc = { ent-BaseKudzu.desc }
+ent-ShadowKudzuWeak = дымка
+    .desc = { ent-ShadowKudzu.desc }

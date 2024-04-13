@@ -2,7 +2,7 @@
   id: ADTBox
   mapName: 'Box Station'
   mapPath: /Maps/ADTMaps/adt_box.yml
-  minPlayers: 50
+  minPlayers: 20
   stations:
     ADTBox:
       stationProto: StandardNanotrasenStation

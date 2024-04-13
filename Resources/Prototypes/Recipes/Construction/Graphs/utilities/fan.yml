@@ -14,9 +14,9 @@
     entity: AtmosDeviceFanTiny
     edges:
     - to: start
-      conditions:
-      - !type:EntityAnchored
-        anchored: false
+      # conditions:
+      # - !type:EntityAnchored
+      #   anchored: false
       completed:
       - !type:SpawnPrototype
         prototype: IngotGold1
@@ -24,7 +24,7 @@
       - !type:DeleteEntity
       steps:
       - tool: Screwing
-        doAfter: 1
+        doAfter: 5
       - tool: Welding
-        doAfter: 1
+        doAfter: 5
 
