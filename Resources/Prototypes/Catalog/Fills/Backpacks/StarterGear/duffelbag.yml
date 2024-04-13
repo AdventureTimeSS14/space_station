@@ -41,8 +41,7 @@
     contents:
       - id: BoxSurvivalSecurity
       - id: Flash
-      - id: ForensicPad
-      - id: ForensicScanner
+      - id: BoxForensicPad
       - id: ADTSpaceLaw
       - id: SpaceCash500
 
