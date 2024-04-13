@@ -49,9 +49,8 @@
   components:
   - type: StorageFill
     contents:
-      - id: BoxSurvival
+      - id: BoxSurvivalSecurity
       - id: BoxForensicPad
-      - id: ForensicScanner
       - id: ADTSpaceLaw
       - id: Flash
       - id: SpaceCash500
