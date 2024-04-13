@@ -6,7 +6,7 @@ phantom-haunt-target = По вашей спине проходит холодо�
 
 phantom-no-vessels = У вас нет сосудов.
 
-phantom-switch-vessel = Вы выбираете {CAPITALIZE(THE($target))} из сосудов.
+phantom-switch-vessel = Вы выбираете {CAPITALIZE(THE($vessel))} из сосудов.
 
 phantom-vessel-interrupted = Создание сосуда прервалось!
 

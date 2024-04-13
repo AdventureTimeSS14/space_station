@@ -34,6 +34,7 @@ using Content.Shared.Stealth.Components;
 using System.Linq;
 using Content.Shared.Stunnable;
 using System.ComponentModel.Design;
+using Content.Shared.Eye;
 
 namespace Content.Server.Phantom.EntitySystems;
 
@@ -92,7 +93,7 @@ public sealed partial class PhantomSystem : EntitySystem
         // Other
         SubscribeLocalEvent<PhantomComponent, AlternativeSpeechEvent>(OnTrySpeak);
         SubscribeLocalEvent<PhantomComponent, DamageChangedEvent>(OnDamage);
-        SubscribeLocalEvent<PhantomComponent, ComponentChangedEventArgs>(OnComponentChanged);
+        SubscribeLocalEvent<PhantomComponent, RefreshPhantomLevelEvent>(OnLevelChanged);
     }
 
     private void OnStartup(EntityUid uid, PhantomComponent component, ComponentStartup args)
@@ -106,7 +107,6 @@ public sealed partial class PhantomSystem : EntitySystem
         _action.AddAction(uid, ref component.PhantomHauntActionEntity, component.PhantomHauntAction);
         _action.AddAction(uid, ref component.PhantomMakeVesselActionEntity, component.PhantomMakeVesselAction);
         _action.AddAction(uid, ref component.PhantomCycleVesselsActionEntity, component.PhantomCycleVesselsAction);
-        _action.AddAction(uid, ref component.PhantomHauntVesselActionEntity, component.PhantomHauntVesselAction);
     }
 
     private void OnShutdown(EntityUid uid, PhantomComponent component, ComponentShutdown args)
@@ -178,11 +178,35 @@ public sealed partial class PhantomSystem : EntitySystem
         return true;
     }
 
-    private void OnComponentChanged(EntityUid uid, PhantomComponent component, ComponentChangedEventArgs args)
+    private void OnLevelChanged(EntityUid uid, PhantomComponent component, RefreshPhantomLevelEvent args)
     {
-        if (component.Vessels.Count > 0 && component.PhantomParalysisActionEntity == null)
+        if (args.NewLV == args.PrevLV || args.NewLV == null || args.PrevLV == null)
+            return;
+
+        var level = component.Vessels.Count;
+
+        if (args.NewLV > args.PrevLV)
         {
-            _action.AddAction(uid, ref component.PhantomParalysisActionEntity, component.PhantomParalysisAction);
+            if (level == 1)
+            {
+                _action.AddAction(uid, ref component.PhantomHauntVesselActionEntity, component.PhantomHauntVesselAction);
+            }
+            if (level == 2)
+            {
+                _action.AddAction(uid, ref component.PhantomParalysisActionEntity, component.PhantomParalysisAction);
+            }
+        }
+
+        if (args.NewLV < args.PrevLV)
+        {
+            if (level == 0)
+            {
+                _action.RemoveAction(uid, component.PhantomHauntVesselActionEntity);
+            }
+            if (level == 1)
+            {
+                _action.RemoveAction(uid, component.PhantomParalysisActionEntity);
+            }
         }
     }
 
@@ -303,12 +327,20 @@ public sealed partial class PhantomSystem : EntitySystem
                 _transform.SetCoordinates(uid, xform, new EntityCoordinates(target, Vector2.Zero), rotation: Angle.Zero);
             }
 
-            if (TryComp<FixturesComponent>(uid, out var fixtures) && fixtures.FixtureCount >= 1)
+            if (component.IsCorporeal)
             {
-                var fixture = fixtures.Fixtures.First();
+                if (TryComp<FixturesComponent>(uid, out var fixtures) && fixtures.FixtureCount >= 1)
+                {
+                    var fixture = fixtures.Fixtures.First();
 
-                _physicsSystem.SetCollisionMask(uid, fixture.Key, fixture.Value, (int) CollisionGroup.GhostImpassable, fixtures);
-                _physicsSystem.SetCollisionLayer(uid, fixture.Key, fixture.Value, 0, fixtures);
+                    _physicsSystem.SetCollisionMask(uid, fixture.Key, fixture.Value, (int) CollisionGroup.GhostImpassable, fixtures);
+                    _physicsSystem.SetCollisionLayer(uid, fixture.Key, fixture.Value, 0, fixtures);
+                }
+                var visibility = EnsureComp<VisibilityComponent>(uid);
+
+                _visibility.SetLayer(uid, visibility, (int) VisibilityFlags.Ghost, false);
+                _visibility.RefreshVisibility(uid);
+                component.IsCorporeal = false;
             }
 
             _physicsSystem.SetLinearVelocity(uid, Vector2.Zero);
@@ -364,11 +396,10 @@ public sealed partial class PhantomSystem : EntitySystem
 
         var selectedVessel = component.Vessels[component.SelectedVessel];
 
-        TryComp<MetaDataComponent>(selectedVessel, out var meta);
-        if (meta == null)
+        if (!TryComp<MetaDataComponent>(selectedVessel, out var meta))
             return;
 
-        var switchMessage = Loc.GetString("phantom-switch-vessel", ("target", meta.EntityName));
+        var switchMessage = Loc.GetString("phantom-switch-vessel", ("vessel", Identity.Entity(selectedVessel, EntityManager)));
         _popup.PopupEntity(switchMessage, uid, uid);
     }
 
@@ -415,7 +446,7 @@ public sealed partial class PhantomSystem : EntitySystem
             return;
         }
 
-        if (!HasComp<VesselComponent>(target))
+        if (HasComp<VesselComponent>(target))
         {
             var selfMessage = Loc.GetString("phantom-vessel-fail-already", ("target", Identity.Entity(target, EntityManager)));
             _popup.PopupEntity(selfMessage, uid, uid);
@@ -478,9 +509,14 @@ public sealed partial class PhantomSystem : EntitySystem
             return false;
         else
         {
+            var oldLV = component.Vessels.Count;
             component.Vessels.Add(target);
             var vessel = EnsureComp<VesselComponent>(target);
             vessel.Phantom = uid;
+            var lv = component.Vessels.Count;
+
+            var ev = new RefreshPhantomLevelEvent(oldLV, lv);
+            RaiseLocalEvent(uid, ev);
         }
         return true;
     }
@@ -581,6 +617,8 @@ public sealed partial class PhantomSystem : EntitySystem
         if (args.Handled)
             return;
 
+        args.Handled = true;
+
         var target = args.Target;
 
         if (IsHolder(target, component.PhantomParalysisActionEntity, component))
@@ -628,6 +666,8 @@ public sealed partial class PhantomSystem : EntitySystem
         if (args.Handled)
             return;
 
+        args.Handled = true;
+
         if (TryComp<FixturesComponent>(uid, out var fixtures) && fixtures.FixtureCount >= 1)
         {
             var fixture = fixtures.Fixtures.First();
@@ -635,5 +675,11 @@ public sealed partial class PhantomSystem : EntitySystem
             _physicsSystem.SetCollisionMask(uid, fixture.Key, fixture.Value, (int) (CollisionGroup.SmallMobMask | CollisionGroup.GhostImpassable), fixtures);
             _physicsSystem.SetCollisionLayer(uid, fixture.Key, fixture.Value, (int) CollisionGroup.SmallMobLayer, fixtures);
         }
+        var visibility = EnsureComp<VisibilityComponent>(uid);
+
+        _visibility.SetLayer(uid, visibility, (int) VisibilityFlags.Normal, false);
+        _visibility.RefreshVisibility(uid);
+
+        component.IsCorporeal = true;
     }
 }

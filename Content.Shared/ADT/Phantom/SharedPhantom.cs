@@ -37,7 +37,17 @@ public sealed partial class MakeVesselDoAfterEvent : SimpleDoAfterEvent
 {
 }
 
+public sealed class RefreshPhantomLevelEvent : EntityEventArgs
+{
+    public int PrevLV;
+    public int NewLV;
 
+    public RefreshPhantomLevelEvent(int prevLV, int newLV)
+    {
+        PrevLV = prevLV;
+        NewLV = newLV;
+    }
+}
 
 public abstract class HauntEvent : EntityEventArgs
 {

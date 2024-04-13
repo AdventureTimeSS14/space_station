@@ -1,5 +1,6 @@
 using Content.Shared.Phantom.Components;
 using Content.Server.Phantom.EntitySystems;
+using Content.Shared.Phantom;
 
 namespace Content.Server.Phantom.EntitySystems;
 
@@ -18,17 +19,21 @@ public sealed partial class PhantomVesselSystem : EntitySystem
     {
         if (!TryComp<PhantomComponent>(component.Phantom, out var phantom))
             return;
+        var oldLV = phantom.Vessels.Count;
+        phantom.Vessels.Remove(uid);
+
+        var vessel = phantom.Vessels[phantom.SelectedVessel];
+
+        if (vessel == uid)
+            _phantom.CycleVessel(component.Phantom, phantom);
+
         if (phantom.Holder == uid)
-        {
-            phantom.Vessels.Remove(uid);
             _phantom.StopHaunt(component.Phantom, uid, phantom);
 
-            if (phantom.Vessels[phantom.SelectedVessel] == uid)
-            {
-                _phantom.CycleVessel(component.Phantom, phantom);
-            }
-        }
+        var lv = phantom.Vessels.Count;
 
+        var ev = new RefreshPhantomLevelEvent(oldLV, lv);
+        RaiseLocalEvent(component.Phantom, ev);
     }
 
 }
