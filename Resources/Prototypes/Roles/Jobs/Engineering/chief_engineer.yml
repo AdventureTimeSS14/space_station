@@ -48,10 +48,10 @@
     eyes: ClothingEyesGlassesMeson
     ears: ClothingHeadsetCE
     belt: ClothingBeltChiefEngineerFilled
-    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersCE # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
-  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraCE # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesCE # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtChiefEngineer
   satchel: ClothingBackpackSatchelChiefEngineerFilled
   duffelbag: ClothingBackpackDuffelChiefEngineerFilled
