@@ -403,14 +403,10 @@ namespace Content.Server.Administration.Systems
             {
                 bwoinkText = $"[color=purple]{senderSession.Name}[/color]";
             }
-            else if (senderAdmin is not null && senderAdmin.HasFlag(AdminFlags.Adminhelp))  //Start-Правим за визденами, тут подставляется префикс админа в сообщение senderAdmin.Title.-ADT
+            else if (senderAdmin is not null && senderAdmin.HasFlag(AdminFlags.Adminhelp))  //Start-Правим за визденами, тут подставляется префикс админа в сообщение senderAdmin.Title. и проверяем на звук для префикса (S)-ADT
             {
-                bwoinkText = $"\\[{senderAdmin.Title}\\][color=red]{senderSession.Name}[/color]: {escapedText}"; // сообщение админа ADT
+                bwoinkText = $"{(message.PlaySound ? "" : "(S) ")}\\[{senderAdmin.Title}\\][color=red]{senderSession.Name}[/color]: {escapedText}"; // сообщение админа ADT
             }
-            else if ((senderAdmin is not null && senderAdmin.HasFlag(AdminFlags.Adminhelp)) && message.PlaySound)
-            {
-                bwoinkText = $"(S)\\[{senderAdmin.Title}\\][color=red]{senderSession.Name}[/color]: {escapedText}"; // сообщение админа ADT
-            } //End-ADT
             else
             {
                 bwoinkText = $"{senderSession.Name}";
