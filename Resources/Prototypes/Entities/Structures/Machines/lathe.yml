@@ -915,6 +915,7 @@
       - BodyBag
       - ADTFootTag
       - ChemistryEmptyBottle01
+      - BaseChemistryEmptyVial
       - ADTPlasticBottle
       - ADTGlassBottle
       - RollerBedSpawnFolded
