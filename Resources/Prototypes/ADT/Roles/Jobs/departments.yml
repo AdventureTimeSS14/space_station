@@ -9,3 +9,5 @@
   - ADTEngiBorg
   - ADTMedicalBorg
   - ADTSecurityCyborg
+  - Borg
+  primary: false
