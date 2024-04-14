@@ -30,10 +30,10 @@ using Robust.Shared.Physics.Systems;
 using Robust.Shared.Network;
 using Content.Shared.Mobs;
 using Content.Server.Chat.Managers;
-using Content.Shared.Stealth.Components;
+using Robust.Shared.Prototypes;
 using System.Linq;
 using Content.Shared.Stunnable;
-using System.ComponentModel.Design;
+using Robust.Shared.Player;
 using Content.Shared.Eye;
 
 namespace Content.Server.Phantom.EntitySystems;
@@ -65,6 +65,7 @@ public sealed partial class PhantomSystem : EntitySystem
     [Dependency] private readonly TransformSystem _transform = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly IChatManager _chatManager = default!;
+    [Dependency] private readonly IPrototypeManager _proto = default!;
 
     public override void Initialize()
     {
@@ -85,6 +86,10 @@ public sealed partial class PhantomSystem : EntitySystem
         SubscribeLocalEvent<PhantomComponent, HauntVesselActionEvent>(OnHauntVessel);
         SubscribeLocalEvent<PhantomComponent, MakeVesselActionEvent>(OnMakeVessel);
         SubscribeLocalEvent<PhantomComponent, MakeVesselDoAfterEvent>(MakeVesselDoAfter);
+
+        // Styles
+        SubscribeLocalEvent<PhantomComponent, SelectPhantomStyleActionEvent>(OnStyleAction);
+        SubscribeNetworkEvent<SelectPhantomStyleEvent>(OnSelectStyle);
 
         // Abilities
         SubscribeLocalEvent<PhantomComponent, ParalysisActionEvent>(OnParalysis);
@@ -246,6 +251,7 @@ public sealed partial class PhantomSystem : EntitySystem
 
         args.Cancel();
     }
+
     public void StopHaunt(EntityUid uid, EntityUid holder, PhantomComponent component)
     {
         if (!TryComp<PhantomHolderComponent>(holder, out var holderComp))
@@ -317,6 +323,7 @@ public sealed partial class PhantomSystem : EntitySystem
             var eye = EnsureComp<EyeComponent>(uid);
             _eye.SetDrawFov(uid, true, eye);
             _appearance.SetData(uid, PhantomVisuals.Haunting, true);
+            EnsureComp<AlternativeSpeechComponent>(uid);
 
             var xform = Transform(uid);
             ContainerSystem.AttachParentToContainerOrGrid((uid, xform));
@@ -376,7 +383,6 @@ public sealed partial class PhantomSystem : EntitySystem
         if (component.Vessels.Count >= component.VesselsStrandCap || component.SelectedVessel >= component.Vessels.Count)
             component.SelectedVessel = 0;
     }
-
 
     public void OnCycleVessel(EntityUid uid, PhantomComponent component, CycleVesselActionEvent args)
     {
@@ -545,9 +551,9 @@ public sealed partial class PhantomSystem : EntitySystem
     {
         if (!component.HasHaunted)
         {
-            var selfMessage = Loc.GetString("phantom-say-fail");
-            _popup.PopupEntity(selfMessage, uid, uid);
-            return;
+                var selfMessage = Loc.GetString("phantom-say-fail");
+                _popup.PopupEntity(selfMessage, uid, uid);
+                return;
         }
 
         else
@@ -666,6 +672,9 @@ public sealed partial class PhantomSystem : EntitySystem
         if (args.Handled)
             return;
 
+        if (component.HasHaunted)
+            return;
+
         args.Handled = true;
 
         if (TryComp<FixturesComponent>(uid, out var fixtures) && fixtures.FixtureCount >= 1)
@@ -676,6 +685,7 @@ public sealed partial class PhantomSystem : EntitySystem
             _physicsSystem.SetCollisionLayer(uid, fixture.Key, fixture.Value, (int) CollisionGroup.SmallMobLayer, fixtures);
         }
         var visibility = EnsureComp<VisibilityComponent>(uid);
+        RemComp<AlternativeSpeechComponent>(uid);
 
         _visibility.SetLayer(uid, visibility, (int) VisibilityFlags.Normal, false);
         _visibility.RefreshVisibility(uid);

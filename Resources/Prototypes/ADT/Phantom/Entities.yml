@@ -93,3 +93,45 @@
     tags:
     - BypassInteractionRangeChecks
   - type: AlternativeSpeech
+
+- type: entity
+  id: ADTPhantomMovementStyle
+  noSpawn: true
+  name: Movement
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: ADT/Interface/Actions/actions_phantom.rsi
+    layers:
+    - state: breath_in_back
+  - type: Tag
+    tags:
+    - PhantomStyle
+
+- type: entity
+  id: ADTPhantomHarmStyle
+  noSpawn: true
+  name: Movement
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: ADT/Interface/Actions/actions_phantom.rsi
+    layers:
+    - state: paralysis
+  - type: Tag
+    tags:
+    - PhantomStyle
+
+- type: entity
+  id: ADTPhantomHelpStyle
+  noSpawn: true
+  name: Movement
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: ADT/Interface/Actions/actions_phantom.rsi
+    layers:
+    - state: ghost_kiss
+  - type: Tag
+    tags:
+    - PhantomStyle

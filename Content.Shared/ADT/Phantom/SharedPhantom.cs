@@ -96,15 +96,3 @@ public enum PhantomVisuals : byte
     Haunting,
 }
 
-public sealed class PhantomSpeechGetEvent : EntityEventArgs
-{
-    public EntityUid Entity { get; }
-
-    public string Message { get; set; }
-
-    public PhantomSpeechGetEvent(EntityUid entity, string message)
-    {
-        Entity = entity;
-        Message = message;
-    }
-}
