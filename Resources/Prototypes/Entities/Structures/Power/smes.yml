@@ -57,10 +57,10 @@
       voltage: High
       node: input
     - type: PowerNetworkBattery
-      maxSupply: 15000000
-      maxChargeRate: 500000
-      supplyRampTolerance: 500000
-      supplyRampRate: 100000
+      maxSupply: 150000
+      maxChargeRate: 5000
+      supplyRampTolerance: 5000
+      supplyRampRate: 1000
     - type: PointLight
       radius: 1.5
       energy: 1.6
