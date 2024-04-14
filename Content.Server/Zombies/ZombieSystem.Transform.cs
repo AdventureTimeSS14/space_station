@@ -20,7 +20,6 @@ using Content.Shared.CombatMode.Pacification;
 using Content.Shared.Damage;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
-using Content.Shared.CombatMode.Pacification;
 using Content.Shared.Humanoid;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
@@ -121,14 +120,15 @@ namespace Content.Server.Zombies
             _combat.SetCanDisarm(target, false, combat);
             _combat.SetInCombatMode(target, true, combat);
 
-            RemComp<PacifiedComponent>(target); // Corvax-DionaPacifist: Allow dionas zombies to harm
-
             //This is the actual damage of the zombie. We assign the visual appearance
             //and range here because of stuff we'll find out later
             var melee = EnsureComp<MeleeWeaponComponent>(target);
             melee.Animation = zombiecomp.AttackAnimation;
             melee.WideAnimation = zombiecomp.AttackAnimation;
-            melee.Range = 1.25f;
+            melee.AltDisarm = false;
+            melee.Range = 1.2f;
+            melee.Angle = 0.0f;
+            melee.HitSound = zombiecomp.BiteSound;
 
             if (mobState.CurrentState == MobState.Alive)
             {
@@ -168,7 +168,7 @@ namespace Content.Server.Zombies
                 {
                     DamageDict = new()
                     {
-                        { "Slash", 15 },
+                        { "Slash", 13 },
                         { "Piercing", 7 },
                         { "Structural", 10 }
                     }
@@ -177,7 +177,7 @@ namespace Content.Server.Zombies
 
                 // humanoid zombies get to pry open doors and shit
                 var pryComp = EnsureComp<PryingComponent>(target);
-                pryComp.SpeedModifier = 1.2f;
+                pryComp.SpeedModifier = 0.75f;
                 pryComp.PryPowered = true;
                 pryComp.Force = true;
 

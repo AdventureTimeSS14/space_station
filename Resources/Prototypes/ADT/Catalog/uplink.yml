@@ -7,7 +7,7 @@
   cost:
     Telecrystal: 15
   categories:
-  - UplinkBundles
+  - UplinkDisruption
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
@@ -60,7 +60,7 @@
   cost:
     Telecrystal: 15
   categories:
-  - UplinkBundles
+  - UplinkDisruption
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
@@ -76,7 +76,7 @@
   cost:
     Telecrystal: 6
   categories:
-  - UplinkArmor
+  - UplinkWearables
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
@@ -92,7 +92,7 @@
   cost:
     Telecrystal: 14
   categories:
-  - UplinkArmor
+  - UplinkWearables
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
@@ -156,7 +156,7 @@
   cost:
     Telecrystal: 18
   categories:
-  - UplinkBundles
+  - UplinkDisruption
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
@@ -212,7 +212,7 @@
   cost:
     Telecrystal: 4
   categories:
-  - UplinkMisc
+  - UplinkChemicals
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
@@ -237,7 +237,7 @@
   cost:
     Telecrystal: 8
   categories:
-  - UplinkBundles
+  - UplinkDisruption
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
@@ -346,7 +346,7 @@
   cost:
     Telecrystal: 10
   categories:
-    - UplinkBundles
+    - UplinkDisruption
 
 - type: listing
   id: ADTUplinkEscapistBundle
@@ -356,7 +356,7 @@
   cost:
     Telecrystal: 15
   categories:
-    - UplinkBundles
+    - UplinkDisruption
 
 - type: listing
   id: ADTUplinkMaidBundle
@@ -366,7 +366,7 @@
   cost:
     Telecrystal: 20
   categories:
-    - UplinkBundles
+    - UplinkDisruption
 
 - type: listing
   id: ADTUplinkStealthBundle
@@ -376,7 +376,7 @@
   cost:
     Telecrystal: 12
   categories:
-    - UplinkBundles
+    - UplinkDisruption
 
 - type: listing
   id: ADTUplinkIntruderBundle
@@ -386,7 +386,7 @@
   cost:
     Telecrystal: 20
   categories:
-    - UplinkBundles
+    - UplinkDisruption
 
 - type: listing
   id: ADTUplinkBlackmailBundle
@@ -396,7 +396,7 @@
   cost:
     Telecrystal: 15
   categories:
-    - UplinkBundles
+    - UplinkDisruption
 
 - type: listing
   id: ADTuplinkExplosivePizzabox
@@ -421,7 +421,7 @@
   cost:
     Telecrystal: 12
   categories:
-    - UplinkUtility
+    - UplinkDeception
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
@@ -436,7 +436,7 @@
   cost:
     Telecrystal: 6
   categories:
-    - UplinkUtility
+    - UplinkDeception
   conditions:
   - !type:StoreWhitelistCondition
     blacklist:
@@ -475,7 +475,7 @@
   cost:
     Telecrystal: 5
   categories:
-  - UplinkArmor
+  - UplinkWearables
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:

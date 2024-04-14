@@ -3,9 +3,6 @@
   abstract: true
   id: ADTipcdronebase1
   components:
-    - type: Reactive
-      groups:
-        Acidic: [Touch]
     - type: Input
       context: "human"
     - type: InputMover
@@ -179,10 +176,6 @@
         - map: ["pocket2"]
         - map: ["enum.HumanoidVisualLayers.Tail"]
         #- map: ["enum.HumanoidVisualLayers.Wings"]
-        - map: ["clownedon"] # Dynamically generated
-          sprite: "Effects/creampie.rsi"
-          state: "creampie_human"
-          visible: false
     - type: Repairable
       doAfterDelay: 5 # was 18
       damage:
@@ -248,12 +241,6 @@
       templateId: human
     - type: InventorySlots
     - type: Appearance
-    - type: GenericVisualizer
-      visuals:
-        enum.CreamPiedVisuals.Creamed:
-          clownedon:
-            True: { visible: true }
-            False: { visible: false }
     - type: RotationVisuals
     - type: FloatingVisuals
     - type: FireVisuals
@@ -267,7 +254,6 @@
     - type: Cuffable
     - type: AnimationPlayer
     - type: Buckle
-    - type: CreamPied
     - type: Stripping
     - type: Strippable
     - type: UserInterface
@@ -301,16 +287,6 @@
       deathPenalty: 0.01 # However they really ought to be living and intact, otherwise they're worth 100x less.
     - type: Pullable
     - type: Puller
-    - type: Reactive
-      groups:
-        Flammable: [Touch]
-        Extinguish: [Touch]
-        Acidic: [Touch, Ingestion]
-      reactions:
-        - reagents: [Water, SpaceCleaner]
-          methods: [Touch]
-          effects:
-            - !type:WashCreamPieReaction
     - type: DamageVisuals
       thresholds: [20, 40, 100]
       targetLayers:
@@ -344,7 +320,7 @@
   id: ADTDroneAntagIPC
   parent: ADTipcdronebase2
   name: drone soldier
-  suffix: Antag Drone IPC
+  suffix: Drone Antag
   description: Вам, вероятно, не стоит стоять рядом с ним, чтобы проверить, включен ли он.
   components:
   - type: WiresPanel  # + Тех панель
@@ -417,10 +393,6 @@
       - map: ["pocket2"]
       - map: ["enum.HumanoidVisualLayers.Tail"]
       #- map: ["enum.HumanoidVisualLayers.Wings"]
-      - map: ["clownedon"] # Dynamically generated
-        sprite: "Effects/creampie.rsi"
-        state: "creampie_human"
-        visible: false
   - type: MobState
     allowedStates:
       - Alive
@@ -441,7 +413,7 @@
     factions:
       - DroneAntag
   - type: NameIdentifier
-    group: ADTDroneAntagSoldier
+    group: ADTNameIPCAntag
   - type: UnpoweredFlashlight
   - type: PointLight
     enabled: false
@@ -582,15 +554,17 @@
   - type: StaticPrice
     price: 2525
 
+
 # damage modifier set
+
 
 - type: damageModifierSet
   id: ADTAntagDroneIPCDamageModSet
   coefficients:
-    Blunt: 0.35
-    Slash: 0.35
-    Piercing: 0.45
-    Heat: 0.20
+    Blunt: 0.75
+    Slash: 0.75
+    Piercing: 0.55
+    Heat: 0.80
     #Explosive: 0.25
     Structural: 0
     # zap
@@ -599,33 +573,16 @@
     Caustic: 0.3
 
 
-# DRONE NAME IDENTIFIER
-
-
-# - type: nameIdentifierGroup
-#   id: ADTDroneAntagMiner
-#   prefix: drone miner SD
-#   fullName: true
-#   minValue: 100
-#   maxValue: 999
-
-# - type: nameIdentifierGroup
-#   id: ADTDroneAntagSoldier
-#   prefix: drone soldier SD
-#   fullName: true
-#   minValue: 100
-#   maxValue: 999
-
 
 # IPC DRONE NAME IDENTIFIER
 
 
 # - type: nameIdentifierGroup
-#   id: ADTIPCAntag
-#   prefix: BF
+#   id: ADTNameIPCAntag
+#   prefix: drone soldier BF
 #   fullName: true
-#   minValue: 10000
-#   maxValue: 99999
+#   minValue: 100
+#   maxValue: 999
 
 
 # DRONE RADIO CHANNEL

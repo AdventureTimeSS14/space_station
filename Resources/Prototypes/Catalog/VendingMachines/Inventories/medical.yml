@@ -9,6 +9,9 @@
     ADTMedicalTourniquet: 10
     EpinephrineChemistryBottle: 3
     Syringe: 5
+    ClothingEyesHudMedical: 2
+    ClothingEyesEyepatchHudMedical: 2
+
     ADTPatchHealing: 4
     ADTPatchBurn: 4
     ADTPatchPackFilled: 2

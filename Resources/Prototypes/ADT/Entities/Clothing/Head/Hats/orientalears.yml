@@ -6,7 +6,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/orientalears.rsi
   - type: Clothing
@@ -22,7 +22,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/orientalears.rsi
   - type: Clothing

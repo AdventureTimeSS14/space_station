@@ -26,7 +26,7 @@
           Off: { state: back-off }
   - type: Tag
     tags:
-      - DroneUsable
+      - WhitelistChameleon
       - ADTCardPlay
   - type: StaticPrice
     price: 1
