@@ -42,47 +42,6 @@
     sound:
       path: /Audio/Effects/Lightning/lightningbolt.ogg
 
-
-# - type: entity
-#   id: ADTRandomHumanoidSpawnerDeathSquad
-#   name: Death Squad Agent
-#   suffix: ERTRole, Death Squad
-#   components:
-#     - type: Sprite
-#       sprite: Clothing/OuterClothing/Hardsuits/deathsquad.rsi
-#       state: icon
-#     - type: RandomMetadata
-#       nameSegments:
-#         - NamesFirstMilitaryLeader
-#         - NamesLastMilitary
-#     - type: RandomHumanoidSpawner
-#       settings: ADTDeathSquad
-#     - type: InitialInfectedExempt
-
-# - type: randomHumanoidSettings
-#   speciesBlacklist:
-#     - Diona
-#   id: ADTDeathSquad
-#   randomizeName: false
-#   components:
-#     - type: MindShield
-#     - type: GhostRole
-#       name: ghost-role-information-Death-Squad-name
-#       description: ghost-role-information-Death-Squad-description
-#       requirements:
-#       - !type:OverallPlaytimeRequirement
-#         time: 36000 # 10h overall
-#     - type: GhostTakeoverAvailable
-#     - type: Loadout
-#       prototypes: [ DeathSquadGear ]
-#     - type: RandomMetadata
-#       nameSegments:
-#         - NamesFirstMilitaryLeader
-#         - NamesLastMilitary
-#     - type: InitialInfectedExempt
-#TeslaGunBullet
-
-
 - type: entity
   name: Cultist
   parent: ADTBaseMobHumanTimePatrol
@@ -129,6 +88,11 @@
     - DoorBumpOpener # авто открытие двери, когда подходишь к ней
   # Frontier - languages mechanic
   - type: UniversalLanguageSpeaker # Ghosts should understand any language.
+  - type: RandomMetadata
+    nameSegments:
+      - NamesFirstMilitaryLeader
+      - NamesLastMilitary
+
 
 - type: startingGear
   id: ADTTimePatrolGear
