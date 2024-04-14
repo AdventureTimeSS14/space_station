@@ -1042,10 +1042,11 @@
   - type: DamageMarkerOnCollide
     whitelist:
       components:
-        - MobState
+        - Damageable
     damage:
       types:
-        Blunt: 80
+        Blunt: 50
+        Structural: 40
   - type: Projectile
     impactEffect: BulletImpactEffectKinetic
     damage:
