@@ -1,5 +1,5 @@
 ui-lobby-title = Лобби
-ui-lobby-ahelp-button = AHelp
+ui-lobby-ahelp-button = Ахэлп
 ui-lobby-options-button = Настройки
 ui-lobby-leave-button = Выйти
 ui-lobby-observe-button = Наблюдать
