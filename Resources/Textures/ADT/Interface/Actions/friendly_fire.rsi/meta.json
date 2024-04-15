@@ -1,16 +1,17 @@
 {
-  "version": 1,
-  "size": {
-    "x": 32,
-    "y": 32
-  },
-  "license": "Made by TornadoTech for Adventure Time.",
-  "states": [
-    {
-      "name": "on"
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
     },
-    {
-      "name": "off"
-    }
-  ]
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Made by TornadoTech for Adventure Time.",
+    "states": [
+        {
+            "name": "on"
+        },
+        {
+            "name": "off"
+        }
+    ]
 }
