@@ -14,13 +14,7 @@
       "name": "icon-lit"
     },
     {
-      "name": "icon-uncharged",
-      "delays": [
-        [
-          0.3,
-          0.3
-        ]
-      ]
+      "name": "icon-uncharged"
     },
     {
       "name": "inhand-left",
