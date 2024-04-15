@@ -5,7 +5,7 @@
   components:
   - type: Drink
   - type: Item
-    size: Normal
+    size: Small
   - type: SolutionContainerManager
     solutions:
       drink:
