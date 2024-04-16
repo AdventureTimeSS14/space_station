@@ -1,10 +1,14 @@
 <Document>
 <<<<<<< HEAD
+<<<<<<< HEAD
   # Унатхи
 =======
   # Reptilians
 
 >>>>>>> parent of 5c9111000f (перевод GuideBook'a про расы)
+=======
+  # Рептилии
+>>>>>>> parent of 7cd4322061 (маленькие правки в переводе)
   <Box>
     <GuideEntityEmbed Entity="MobReptilian" Caption=""/>
   </Box>

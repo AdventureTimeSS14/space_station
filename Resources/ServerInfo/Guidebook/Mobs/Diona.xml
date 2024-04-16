@@ -13,12 +13,16 @@
 <<<<<<< HEAD
   Они переносят [color=#1e90ff]на 30% меньше тупого урона и на 20% меньше slash урона[/color],
   но [color=#ffa500]на 50% больше урона от тепла, и на 20% больше шокового урона, и они могут легко
+<<<<<<< HEAD
   загореться, когда получают достаточное количество урона от *любого* источника тепла.[/color]
 =======
   They take [color=#1e90ff]30% less Blunt damage and 20% less Slash damage[/color];
   but [color=#ffa500]50% more Heat damage, 20% more Shock damage, and they can easily
   catch on fire when receiving enough Heat damage from *any* source.[/color]
 >>>>>>> parent of 5c9111000f (перевод GuideBook'a про расы)
+=======
+  загорается, когда получают достаточное количество урона от *любого* источника тепла.[/color]
+>>>>>>> parent of 7cd4322061 (маленькие правки в переводе)
 
   ## Make Like A Tree And Leave
   <Box>

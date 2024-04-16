@@ -1,19 +1,27 @@
 <Document>
 <<<<<<< HEAD
+<<<<<<< HEAD
   # Дворф
 =======
   # Dwarves
 >>>>>>> parent of 5c9111000f (перевод GuideBook'a про расы)
+=======
+  # Дварф
+>>>>>>> parent of 7cd4322061 (маленькие правки в переводе)
 
   <Box>
     <GuideEntityEmbed Entity="MobDwarf" Caption=""/>
   </Box>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   Дворфы в большинстве своем похожи на людей, но лучше переносят алкоголь и лечатся им.
 =======
   Dwarves are similar to humans in most respect, but tolerate alcohol better and are healed by it.
 >>>>>>> parent of 5c9111000f (перевод GuideBook'a про расы)
+=======
+  Гномы в большинстве своем похожи на людей, но лучше переносят алкоголь и лечатся им.
+>>>>>>> parent of 7cd4322061 (маленькие правки в переводе)
 
 
 </Document>
