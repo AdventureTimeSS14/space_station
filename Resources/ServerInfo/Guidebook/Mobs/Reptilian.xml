@@ -1,16 +1,13 @@
 <Document>
-  # Reptilians
-
+  # Унатхи
   <Box>
     <GuideEntityEmbed Entity="MobReptilian" Caption=""/>
   </Box>
 
-  They can ONLY eat fruits and meat, but can eat raw meat and drink blood without any ill effects.
-  They prefer a somewhat higher temperature range than humans.
-  They can drag objects with their tail, keeping both their hands free.
+  Они могут есть ТОЛЬКО фрукты и мясо, и также могут есть сырое мясо и пить кровь без каких-либо побочных эффектов.
+  Они предпочитают несколько более высокий температурный диапазон, чем люди.
+  Они могут перетаскивать предметы хвостом, сохраняя свободными обе руки.
 
-  Their unarmed claw attacks deal Slash damage instead of Blunt.
-
-  They take [color=#ffa500]30% more Cold damage.[/color]
+  Их безоружные атаки когтями наносят режущий урон, а не тупой.
 
 </Document>
