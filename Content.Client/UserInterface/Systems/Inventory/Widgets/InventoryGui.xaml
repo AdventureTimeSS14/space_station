@@ -15,7 +15,8 @@
             VerticalAlignment="Bottom"
             HorizontalExpand="False"
             VerticalExpand="False"
-            ButtonTexturePath="Slots/toggle"/>
+            ButtonTexturePath="Slots/toggle"
+            Margin="72 0"/>
         <inventory:ItemSlotButtonContainer
             Name="InventoryHotbar"
             Access="Public"
@@ -25,6 +26,7 @@
             ExpandBackwards="True"
             VerticalExpand="True"
             HorizontalAlignment="Center"
+            Margin="72 0"
         />
     </Control>
 </widgets:InventoryGui>
