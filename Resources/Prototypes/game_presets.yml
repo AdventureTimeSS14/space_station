@@ -220,3 +220,16 @@
     - Zombie
     - BasicStationEventScheduler
     - BasicRoundstartVariation
+
+- type: gamePreset
+  id: Changeling
+  alias:
+    - changeling
+  name: changelings-title
+  description: changelings-description
+  showInVote: false
+  rules:
+    - Changeling
+    - SubGamemodesRule
+    - BasicStationEventScheduler
+    - BasicRoundstartVariation
