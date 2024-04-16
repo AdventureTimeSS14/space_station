@@ -1,18 +1,19 @@
 <Document>
-  # Слаймолюды
+  # Slime People
 
   <Box>
     <GuideEntityEmbed Entity="MobSlimePerson" Caption=""/>
   </Box>
 
-  Они дышат азотом вместо кислорода, который в изобилии содержится в воздухе станции, но его труднее найти в сжатом виде в газовых баллонах. Они получают значительный урон, если на них распыляют воду, но могут
-  (и, как и другие виды, должны) пить ее, чтобы избежать обезвоживания.
-  Их организм может перерабатывать 6 реагентов одновременно, а не только 2.
+  They breathe nitrogen instead of oxygen, which is abundant in the station air, but harder to find compressed into gas tanks. They take significant damage if they are sprayed or splashed with water, but can
+  (and like other species, need to) drink it safely to stay hydrated.
+  They exhale nitrous oxide and are unaffected by it.
+  Their body can process 6 reagents at the same time instead of just 2.
 
-  Их слизистая "кровь" не поддерживает метаболизм железа. Технически, слизистая кровь является источником
-  умеренно полезной пищи для других видов, хотя употребление крови ваших коллег обычно вызывает неодобрение.
-  Они задыхаются на 80% медленнее, но на 9% быстрее получают повреждения от давления. Это делает их наиболее приспособленными к выживанию в условиях жесткого вакуума. На время.
+  Their Slime "blood" can not be regenerated from Iron. Slime Blood is technically a source of
+  moderately filling food for other species, although drinking the blood of your coworkers is usually frowned upon.
+  They suffocate 80% slower, but take pressure damage 9% faster. This makes them by far the species most capable to survive in hard vacuum. For a while.
 
-  Они переносят [color=#1e90ff] на 80% меньше клеточного урона, на 40% меньше тупого урона предметами и на 20% меньше урона ядом[/color], но [color=#ffa500] на 50% больше урона холодом, на 20% больше slash урона и на 20% больше колющего урона[/color].
+  They take [color=#1e90ff]80% less Cellular damage, 40% less Blunt damage and 20% less Poison damage[/color], but [color=#ffa500]50% more Cold damage, 20% more Slash damage and 20% more Piercing damage[/color].
 
 </Document>

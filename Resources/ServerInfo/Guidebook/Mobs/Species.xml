@@ -1,7 +1,11 @@
 <Document>
-  # Вид
+  # Species
 
+<<<<<<< HEAD
   В Nanotrasen работают различные разумные виды рас.
+=======
+  Nanotrasen employs a variety of sapient species.
+>>>>>>> parent of 5c9111000f (перевод GuideBook'a про расы)
 
   <Box>
   <GuideEntityEmbed Entity="MobArachnid" Caption="Arachnid"/>
