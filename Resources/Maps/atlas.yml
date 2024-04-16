@@ -2,7 +2,8 @@ meta:
   format: 6
   postmapinit: false
 tilemap:
-  0: Space
+
+
   14: FloorBar
   20: FloorCarpetClown
   25: FloorClown
