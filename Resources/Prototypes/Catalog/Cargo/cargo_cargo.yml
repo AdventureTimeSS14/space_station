@@ -28,5 +28,5 @@
     state: icon
   product: ADTCargoUtilisatorComplectCrate
   cost: 5000
-  category: Cargo
+  category: cargoproduct-category-name-cargo
   group: market

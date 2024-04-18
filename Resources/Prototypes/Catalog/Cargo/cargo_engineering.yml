@@ -146,7 +146,7 @@
     state: icon
   product: CrateEngineeringVoidJetpack
   cost: 8000
-  category: Engineering
+  category: cargoproduct-category-name-engineering
   group: market
 
 
