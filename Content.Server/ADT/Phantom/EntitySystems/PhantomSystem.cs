@@ -87,10 +87,6 @@ public sealed partial class PhantomSystem : EntitySystem
         SubscribeLocalEvent<PhantomComponent, MakeVesselActionEvent>(OnMakeVessel);
         SubscribeLocalEvent<PhantomComponent, MakeVesselDoAfterEvent>(MakeVesselDoAfter);
 
-        // Styles
-        SubscribeLocalEvent<PhantomComponent, SelectPhantomStyleActionEvent>(OnStyleAction);
-        SubscribeNetworkEvent<SelectPhantomStyleEvent>(OnSelectStyle);
-
         // Abilities
         SubscribeLocalEvent<PhantomComponent, ParalysisActionEvent>(OnParalysis);
         SubscribeLocalEvent<PhantomComponent, MaterializeActionEvent>(OnCorporeal);
@@ -199,6 +195,8 @@ public sealed partial class PhantomSystem : EntitySystem
             if (level == 2)
             {
                 _action.AddAction(uid, ref component.PhantomParalysisActionEntity, component.PhantomParalysisAction);
+                if (!component.IsCorporeal)
+                    _action.AddAction(uid, ref component.PhantomCorporealActionEntity, component.PhantomCorporealAction);
             }
         }
 
@@ -211,6 +209,7 @@ public sealed partial class PhantomSystem : EntitySystem
             if (level == 1)
             {
                 _action.RemoveAction(uid, component.PhantomParalysisActionEntity);
+                _action.RemoveAction(uid, component.PhantomCorporealActionEntity);
             }
         }
     }
@@ -347,6 +346,13 @@ public sealed partial class PhantomSystem : EntitySystem
 
                 _visibility.SetLayer(uid, visibility, (int) VisibilityFlags.Ghost, false);
                 _visibility.RefreshVisibility(uid);
+
+                if (component.Vessels.Count >= 2)
+                {
+                    _action.AddAction(uid, ref component.PhantomCorporealActionEntity, component.PhantomCorporealAction);
+                    _action.SetCooldown(component.PhantomCorporealActionEntity, component.Cooldown);
+                }
+
                 component.IsCorporeal = false;
             }
 
@@ -466,6 +472,7 @@ public sealed partial class PhantomSystem : EntitySystem
             BreakOnUserMove = true,
             BreakOnTargetMove = false,
             BreakOnDamage = true,
+            CancelDuplicate = true,
             AttemptFrequency = AttemptFrequency.StartAndEnd
         };
         _doAfter.TryStartDoAfter(makeVesselDoAfter);
@@ -689,6 +696,8 @@ public sealed partial class PhantomSystem : EntitySystem
 
         _visibility.SetLayer(uid, visibility, (int) VisibilityFlags.Normal, false);
         _visibility.RefreshVisibility(uid);
+
+        _action.RemoveAction(uid, component.PhantomCorporealActionEntity);
 
         component.IsCorporeal = true;
     }

@@ -51,6 +51,12 @@ public sealed partial class PhantomComponent : Component
     [DataField, AutoNetworkedField]
     public EntityUid? PhantomParalysisActionEntity;
 
+    [DataField]
+    public EntProtoId PhantomCorporealAction = "ActionPhantomCorporeal";
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? PhantomCorporealActionEntity;
+
     #endregion
 
     #region Toggleable Actions
