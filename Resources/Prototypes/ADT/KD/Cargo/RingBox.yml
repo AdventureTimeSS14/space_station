@@ -5,5 +5,5 @@
     state: box
   product: RingBox
   cost: 8000
-  category: Fun
+  category: cargoproduct-category-name-fun
   group: market

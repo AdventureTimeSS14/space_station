@@ -5,7 +5,7 @@
     state: icon
   product: ADTCrateOktoberfestCloth
   cost: 750
-  category: Fun
+  category: cargoproduct-category-name-fun
   group: market
 
 - type: cargoProduct
@@ -15,7 +15,7 @@
     state: classicpaulaner_mug
   product: ADTCrateOktoberfestMug
   cost: 200
-  category: Fun
+  category: cargoproduct-category-name-fun
   group: market
 
 - type: cargoProduct
@@ -25,7 +25,7 @@
     state: pennywise
   product: ADTCrateHalloweenCloth
   cost: 4250
-  category: Fun
+  category: cargoproduct-category-name-fun
   group: market
 
 - type: cargoProduct
@@ -37,7 +37,7 @@
     state: christmas_tree
   product: ADTCrateChristmasTree
   cost: 250
-  category: Fun
+  category: cargoproduct-category-name-fun
   group: market
 
 - type: cargoProduct
@@ -47,7 +47,7 @@
     state: tape
   product: ADTCrateFunBoomBoxTapes1
   cost: 5000
-  category: Fun
+  category: cargoproduct-category-name-fun
   group: market
 
 - type: cargoProduct
@@ -57,7 +57,7 @@
     state: tape
   product: ADTCrateFunBoomBoxTapes2
   cost: 5000
-  category: Fun
+  category: cargoproduct-category-name-fun
   group: market
 
 - type: cargoProduct
@@ -67,5 +67,5 @@
     state: tape
   product: ADTCrateFunBoomBoxTapesHotline
   cost: 5000
-  category: Fun
+  category: cargoproduct-category-name-fun
   group: market
