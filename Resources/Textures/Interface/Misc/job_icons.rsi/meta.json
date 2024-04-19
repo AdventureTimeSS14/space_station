@@ -200,7 +200,10 @@
             "name": "JobIconVisitor"
         },
         {
-          "name": "JobIconADTPathologist"
+            "name": "JobIconADTPathologist"
+        },
+        {
+            "name": "InitialInfected"
         }
     ]
 }
