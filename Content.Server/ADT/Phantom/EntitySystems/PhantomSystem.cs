@@ -6,7 +6,7 @@ using Content.Shared.Phantom.Components;
 using Content.Shared.Popups;
 using Robust.Shared.Map;
 using Content.Shared.Movement.Events;
-using Content.Shared.Rejuvenate;
+using Content.Server.Power.EntitySystems;
 using Content.Shared.Mobs.Systems;
 using Robust.Shared.Random;
 using Content.Shared.IdentityManagement;
@@ -33,8 +33,12 @@ using Content.Server.Chat.Managers;
 using Robust.Shared.Prototypes;
 using System.Linq;
 using Content.Shared.Stunnable;
-using Robust.Shared.Player;
+using Content.Server.Power.Components;
 using Content.Shared.Eye;
+using Content.Server.Light.Components;
+using Content.Server.Light.EntitySystems;
+using Content.Shared.SimpleStation14.Silicon.Components;
+using Content.Shared.PowerCell.Components;
 
 namespace Content.Server.Phantom.EntitySystems;
 
@@ -66,7 +70,8 @@ public sealed partial class PhantomSystem : EntitySystem
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly IChatManager _chatManager = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
-
+    [Dependency] private readonly PoweredLightSystem _poweredLight = default!;
+    [Dependency] private readonly ApcSystem _apcSystem = default!;
     public override void Initialize()
     {
         base.Initialize();
@@ -90,6 +95,7 @@ public sealed partial class PhantomSystem : EntitySystem
         // Abilities
         SubscribeLocalEvent<PhantomComponent, ParalysisActionEvent>(OnParalysis);
         SubscribeLocalEvent<PhantomComponent, MaterializeActionEvent>(OnCorporeal);
+        SubscribeLocalEvent<PhantomComponent, BreakdownActionEvent>(OnBreakdown);
 
         // Other
         SubscribeLocalEvent<PhantomComponent, AlternativeSpeechEvent>(OnTrySpeak);
@@ -191,6 +197,7 @@ public sealed partial class PhantomSystem : EntitySystem
             if (level == 1)
             {
                 _action.AddAction(uid, ref component.PhantomHauntVesselActionEntity, component.PhantomHauntVesselAction);
+                _action.AddAction(uid, ref component.PhantomBreakdownActionEntity, component.PhantomBreakdownAction);
             }
             if (level == 2)
             {
@@ -205,6 +212,7 @@ public sealed partial class PhantomSystem : EntitySystem
             if (level == 0)
             {
                 _action.RemoveAction(uid, component.PhantomHauntVesselActionEntity);
+                _action.RemoveAction(uid, component.PhantomBreakdownActionEntity);
             }
             if (level == 1)
             {
@@ -623,6 +631,13 @@ public sealed partial class PhantomSystem : EntitySystem
             _status.TryRemoveStatusEffect(haunted, "Stun");
             component.ParalysisOn = false;
         }
+        if (component.BreakdownOn)
+        {
+            _status.TryRemoveStatusEffect(haunted, "SlowedDown");
+            _status.TryRemoveStatusEffect(haunted, "SeeingStatic");
+            component.BreakdownOn = false;
+
+        }
     }
 
     private void OnParalysis(EntityUid uid, PhantomComponent component, ParalysisActionEvent args)
@@ -639,17 +654,13 @@ public sealed partial class PhantomSystem : EntitySystem
             if (!component.ParalysisOn)
             {
                 var timeHaunted = TimeSpan.FromHours(1);
-                if (!_status.TryAddStatusEffect<KnockedDownComponent>(target, "KnockedDown", timeHaunted, false))
-                    return;
-                if (!_status.TryAddStatusEffect<StunnedComponent>(target, "Stun", timeHaunted, false))
-                    return;
+                _status.TryAddStatusEffect<KnockedDownComponent>(target, "KnockedDown", timeHaunted, false);
+                _status.TryAddStatusEffect<StunnedComponent>(target, "Stun", timeHaunted, false);
             }
             else
             {
-                if (!_status.TryRemoveStatusEffect(target, "KnockedDown"))
-                    return;
-                if (!_status.TryRemoveStatusEffect(target, "Stun"))
-                    return;
+                _status.TryRemoveStatusEffect(target, "KnockedDown");
+                _status.TryRemoveStatusEffect(target, "Stun");
             }
 
             component.ParalysisOn = !component.ParalysisOn;
@@ -666,10 +677,8 @@ public sealed partial class PhantomSystem : EntitySystem
             else
             {
                 var time = TimeSpan.FromSeconds(10);
-                if (!_status.TryAddStatusEffect<KnockedDownComponent>(target, "KnockedDown", time, false))
-                    return;
-                if (!_status.TryAddStatusEffect<StunnedComponent>(target, "Stun", time, false))
-                    return;
+                _status.TryAddStatusEffect<KnockedDownComponent>(target, "KnockedDown", time, false);
+                _status.TryAddStatusEffect<StunnedComponent>(target, "Stun", time, false);
             }
         }
     }
@@ -700,5 +709,69 @@ public sealed partial class PhantomSystem : EntitySystem
         _action.RemoveAction(uid, component.PhantomCorporealActionEntity);
 
         component.IsCorporeal = true;
+    }
+
+    private void OnBreakdown(EntityUid uid, PhantomComponent component, BreakdownActionEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        args.Handled = true;
+
+        var target = args.Target;
+        var time = TimeSpan.FromSeconds(2);
+        var timeStatic = TimeSpan.FromSeconds(15);
+        var timeHaunted = TimeSpan.FromHours(1);
+
+        if (IsHolder(target, component.PhantomBreakdownActionEntity, component) && TryComp<StatusEffectsComponent>(target, out var status) && HasComp<PowerCellSlotComponent>(target))
+        {
+            if (!component.BreakdownOn)
+            {
+                _status.TryAddStatusEffect<KnockedDownComponent>(target, "KnockedDown", time, false, status);
+                _status.TryAddStatusEffect<StunnedComponent>(target, "Stun", time, false, status);
+                _status.TryAddStatusEffect<SlowedDownComponent>(target, "SlowedDown", timeHaunted, false, status);
+                _status.TryAddStatusEffect<SeeingStaticComponent>(target, "SeeingStatic", timeHaunted, false, status);
+            }
+            else
+            {
+                _status.TryRemoveStatusEffect(target, "SlowedDown");
+                _status.TryRemoveStatusEffect(target, "SeeingStatic");
+            }
+            component.BreakdownOn = !component.BreakdownOn;
+            return;
+        }
+        else
+        {
+            if (component.BreakdownOn)
+            {
+                _action.ClearCooldown(component.PhantomParalysisActionEntity);
+                var selfMessageActive = Loc.GetString("phantom-breakdown-fail-active");
+                _popup.PopupEntity(selfMessageActive, uid, uid);
+                return;
+            }
+
+            if (TryComp<PoweredLightComponent>(target, out var light))
+            {
+                _poweredLight.TryDestroyBulb(target, light);
+                return;
+            }
+            if (TryComp<ApcComponent>(target, out var apc))
+            {
+                _apcSystem.ApcToggleBreaker(target, apc);
+                return;
+            }
+            if (HasComp<StatusEffectsComponent>(target) && HasComp<PowerCellSlotComponent>(target))
+            {
+                _status.TryAddStatusEffect<KnockedDownComponent>(target, "KnockedDown", time, false);
+                _status.TryAddStatusEffect<StunnedComponent>(target, "Stun", time, false);
+                _status.TryAddStatusEffect<SlowedDownComponent>(target, "SlowedDown", timeStatic, false);
+                _status.TryAddStatusEffect<SeeingStaticComponent>(target, "SeeingStatic", timeStatic, false);
+                return;
+            }
+        }
+        _action.ClearCooldown(component.PhantomBreakdownActionEntity);
+        var selfMessage = Loc.GetString("phantom-breakdown-fail");
+        _popup.PopupEntity(selfMessage, uid, uid);
+
     }
 }

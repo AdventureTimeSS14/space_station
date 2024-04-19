@@ -57,6 +57,12 @@ public sealed partial class PhantomComponent : Component
     [DataField, AutoNetworkedField]
     public EntityUid? PhantomCorporealActionEntity;
 
+    [DataField]
+    public EntProtoId PhantomBreakdownAction = "ActionPhantomBreakdown";
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? PhantomBreakdownActionEntity;
+
     #endregion
 
     #region Toggleable Actions
@@ -66,6 +72,9 @@ public sealed partial class PhantomComponent : Component
 
     [DataField]
     public bool ParalysisOn = false;
+
+    [DataField]
+    public bool BreakdownOn = false;
 
     #endregion
 

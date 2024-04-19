@@ -16,6 +16,10 @@ public sealed partial class ParalysisActionEvent : EntityTargetActionEvent
 {
 }
 
+public sealed partial class BreakdownActionEvent : EntityTargetActionEvent
+{
+}
+
 public sealed partial class StopHauntingActionEvent : InstantActionEvent
 {
 }

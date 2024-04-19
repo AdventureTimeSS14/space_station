@@ -114,3 +114,22 @@
     itemIconStyle: BigAction
     event: !type:MaterializeActionEvent
     useDelay: 1
+
+- type: entity
+  id: ActionPhantomBreakdown
+  name: action-phanton-breakdown
+  description: action-phantom-breakdown-desc
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    icon:
+      sprite: ADT/Interface/Actions/actions_phantom.rsi
+      state: paralysis
+    itemIconStyle: BigAction
+    whitelist:
+      components:
+      - Body
+    event: !type:BreakdownActionEvent
+    useDelay: 1
+    canTargetSelf: false
+    range: 5
