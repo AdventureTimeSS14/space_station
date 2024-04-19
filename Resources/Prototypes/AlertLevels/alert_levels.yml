@@ -4,6 +4,10 @@
   levels:
     green:
       announcement: alert-level-green-announcement
+      sound: 
+        path: /Audio/Misc/notice2_2.ogg
+        params:
+          volume: 100
       color: Green
       shuttleTime: 600
     blue:
