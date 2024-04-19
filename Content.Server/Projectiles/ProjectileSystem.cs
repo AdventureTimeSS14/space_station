@@ -41,6 +41,11 @@ public sealed class ProjectileSystem : SharedProjectileSystem
             return;
         }
 
+        var hitAttempt = new ProjectileHitAttemptEvent(component.Damage, target, component.Shooter);
+        RaiseLocalEvent(target, hitAttempt);
+        if (hitAttempt.Cancelled)
+            return;
+
         var ev = new ProjectileHitEvent(component.Damage, target, component.Shooter);
         RaiseLocalEvent(uid, ref ev);
 

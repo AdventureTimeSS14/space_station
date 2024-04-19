@@ -19,6 +19,10 @@ using Robust.Shared.Containers;
 using Robust.Shared.Network;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
+using Robust.Shared.Audio.Systems;
+using Content.Shared.Access.Systems;
+using Content.Shared.Damage;
+using Robust.Shared.Random;
 
 namespace Content.Shared.Mech.EntitySystems;
 
@@ -27,6 +31,7 @@ namespace Content.Shared.Mech.EntitySystems;
 /// </summary>
 public abstract class SharedMechSystem : EntitySystem
 {
+    [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly ActionBlockerSystem _actionBlocker = default!;
@@ -37,7 +42,9 @@ public abstract class SharedMechSystem : EntitySystem
     [Dependency] private readonly SharedMoverController _mover = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
-
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly AccessReaderSystem _accessReader = default!;
+    [Dependency] private readonly DamageableSystem _damageable = default!;
     /// <inheritdoc/>
     public override void Initialize()
     {
@@ -49,6 +56,7 @@ public abstract class SharedMechSystem : EntitySystem
         SubscribeLocalEvent<MechComponent, GetAdditionalAccessEvent>(OnGetAdditionalAccess);
         SubscribeLocalEvent<MechComponent, DragDropTargetEvent>(OnDragDrop);
         SubscribeLocalEvent<MechComponent, CanDropTargetEvent>(OnCanDragDrop);
+        SubscribeLocalEvent<MechComponent, DamageChangedEvent>(OnDamageChanged);
 
         SubscribeLocalEvent<MechPilotComponent, GetMeleeWeaponEvent>(OnGetMeleeWeapon);
         SubscribeLocalEvent<MechPilotComponent, CanAttackFromContainerEvent>(OnCanAttackFromContainer);
@@ -99,7 +107,17 @@ public abstract class SharedMechSystem : EntitySystem
     {
         BreakMech(uid, component);
     }
+    private void OnDamageChanged(EntityUid uid, MechComponent component, DamageChangedEvent args)
+    {
+        var integrity = component.MaxIntegrity - args.Damageable.TotalDamage;
+        SetIntegrity(uid, integrity, component);
 
+        if (component.Integrity <= component.DamageToDesEqi && !component.Broken && _random.Prob(0.5f) && component.CurrentSelectedEquipment != null)
+        {
+            var ev = new MechEquipmentDestroyedEvent();
+            RaiseLocalEvent(uid, ev);
+        }
+    }
     private void OnGetAdditionalAccess(EntityUid uid, MechComponent component, ref GetAdditionalAccessEvent args)
     {
         var pilot = component.PilotSlot.ContainedEntity;
@@ -130,6 +148,10 @@ public abstract class SharedMechSystem : EntitySystem
         _actions.AddAction(pilot, ref component.MechCycleActionEntity, component.MechCycleAction, mech);
         _actions.AddAction(pilot, ref component.MechUiActionEntity, component.MechUiAction, mech);
         _actions.AddAction(pilot, ref component.MechEjectActionEntity, component.MechEjectAction, mech);
+        _actions.AddAction(pilot, ref component.MechInhaleActionEntity, component.MechInhaleAction, mech);
+        _actions.AddAction(pilot, ref component.MechTurnLightsActionEntity, component.MechTurnLightsAction, mech);
+        if (TryComp<MechOverloadComponent>(mech, out var overload))
+            _actions.AddAction(pilot, ref overload.MechOverloadActionEntity, overload.MechOverloadAction, mech);
     }
 
     private void RemoveUser(EntityUid mech, EntityUid pilot)
@@ -186,7 +208,13 @@ public abstract class SharedMechSystem : EntitySystem
         component.CurrentSelectedEquipment = equipmentIndex >= allEquipment.Count
             ? null
             : allEquipment[equipmentIndex];
-
+        while (TryComp<MechEquipmentComponent>(component.CurrentSelectedEquipment, out var equipment) && equipment.CanBeUsed == false)
+        {
+            equipmentIndex++;
+            component.CurrentSelectedEquipment = equipmentIndex >= allEquipment.Count
+                ? null
+                : allEquipment[equipmentIndex];
+        }
         var popupString = component.CurrentSelectedEquipment != null
             ? Loc.GetString("mech-equipment-select-popup", ("item", component.CurrentSelectedEquipment))
             : Loc.GetString("mech-equipment-select-none-popup");
@@ -194,7 +222,7 @@ public abstract class SharedMechSystem : EntitySystem
         if (_net.IsServer)
             _popup.PopupEntity(popupString, uid);
 
-        Dirty(component);
+        Dirty(uid, component);
     }
 
     /// <summary>
@@ -278,7 +306,7 @@ public abstract class SharedMechSystem : EntitySystem
             return false;
 
         component.Energy = FixedPoint2.Clamp(component.Energy + delta, 0, component.MaxEnergy);
-        Dirty(component);
+        Dirty(uid, component);
         UpdateUserInterface(uid, component);
         return true;
     }
@@ -306,7 +334,7 @@ public abstract class SharedMechSystem : EntitySystem
             UpdateAppearance(uid, component);
         }
 
-        Dirty(component);
+        Dirty(uid, component);
         UpdateUserInterface(uid, component);
     }
 

@@ -16,6 +16,22 @@ using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
+using Content.Shared.Mobs.Systems;
+using Content.Server.Actions;
+using Content.Server.Bed.Components;
+using Content.Server.Bed.Sleep;
+using Content.Server.Body.Systems;
+using Content.Server.Power.Components;
+using Content.Server.Power.EntitySystems;
+using Content.Shared.Bed;
+using Content.Shared.Bed.Sleep;
+using Content.Shared.Body.Components;
+using Content.Shared.Buckle.Components;
+using Content.Shared.Damage;
+using Content.Shared.Emag.Systems;
+using Content.Shared.Mobs.Systems;
+using Robust.Shared.Timing;
+using Content.Shared.SimpleStation14.Silicon.Components;
 
 namespace Content.Server.Mech.Equipment.EntitySystems;
 
@@ -83,7 +99,12 @@ public sealed class MechGrabberSystem : EntitySystem
         var xform = Transform(toRemove);
         _transform.AttachToGridOrMap(toRemove, xform);
         var (mechPos, mechRot) = _transform.GetWorldPositionRotation(mechxform);
-
+        if (component.SlowMetabolism)
+        {
+            var metabolicEvent = new ApplyMetabolicMultiplierEvent
+                {Uid = toRemove, Multiplier = 1f};
+            RaiseLocalEvent(toRemove, metabolicEvent);
+        }
         var offset = mechPos + mechRot.RotateVec(component.DepositOffset);
         _transform.SetWorldPositionRotation(xform, offset, Angle.Zero);
         _mech.UpdateUserInterface(mech);
@@ -131,13 +152,17 @@ public sealed class MechGrabberSystem : EntitySystem
         if (args.Target == args.User || component.DoAfter != null)
             return;
 
-        if (TryComp<PhysicsComponent>(target, out var physics) && physics.BodyType == BodyType.Static ||
+        if (!component.GrabMobs &&
+            TryComp<PhysicsComponent>(target, out var physics) && physics.BodyType == BodyType.Static ||
             HasComp<WallMountComponent>(target) ||
             HasComp<MobStateComponent>(target))
         {
-            return;
+            if (component.GrabMobs &&
+            !HasComp<MobStateComponent>(target))
+            {
+                return;
+            }
         }
-
         if (Transform(target).Anchored)
             return;
 
@@ -183,6 +208,12 @@ public sealed class MechGrabberSystem : EntitySystem
             return;
 
         _container.Insert(args.Args.Target.Value, component.ItemContainer);
+        if (component.SlowMetabolism)
+        {
+            var metabolicEvent = new ApplyMetabolicMultiplierEvent
+                {Uid = args.Args.Target.Value, Multiplier = 0.4f};
+            RaiseLocalEvent(args.Args.Target.Value, metabolicEvent);
+        }
         _mech.UpdateUserInterface(equipmentComponent.EquipmentOwner.Value);
 
         args.Handled = true;

@@ -3,6 +3,7 @@ using Content.Shared.Whitelist;
 using Robust.Shared.Containers;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Audio;
 using Content.Shared.Damage;
 
 namespace Content.Shared.Mech.Components;
@@ -15,15 +16,47 @@ namespace Content.Shared.Mech.Components;
 public sealed partial class MechComponent : Component
 {
     /// <summary>
-    /// damage modifiers on hit
+    /// sound if access denied
     /// </summary>
-    [DataField(required: true)]
-    public DamageModifierSet Modifiers = default!;
+    [DataField("accessDeniedSound")]
+    public SoundSpecifier AccessDeniedSound = new SoundPathSpecifier("/Audio/Machines/Nuke/angry_beep.ogg");
+    /// <summary>
+    /// sound on equipment destroyed
+    /// </summary>
+    [DataField]
+    public SoundSpecifier EquipmentDestroyedSound = new SoundCollectionSpecifier("MetalBreak");
+    /// <summary>
+    /// sound on entry mech
+    /// </summary>
+    [DataField("mechentrysound")]
+    public SoundSpecifier MechEntrySound = new SoundPathSpecifier("/Audio/Mecha/nominal.ogg");
+    /// <summary>
+    /// sound on turn lights
+    /// </summary>
+    [DataField("mechlightoffsound")]
+    public SoundSpecifier MechLightsOnSound = new SoundPathSpecifier("/Audio/Mecha/mechlignton.ogg");
+    [DataField("mechlightonsound")]
+    public SoundSpecifier MechLightsOffSound = new SoundPathSpecifier("/Audio/Mecha/mechlightoff.ogg");
+    /// <summary>
+    /// sound on destroy equipment
+    /// </summary>
+    [DataField("mechequipmentdestr")]
+    public SoundSpecifier MechEquipmentDestr = new SoundPathSpecifier("/Audio/Mecha/weapdestr.ogg");
     /// <summary>
     /// How much "health" the mech has left.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
     public FixedPoint2 Integrity;
+    /// <summary>
+    /// How much "health" the mech need to destroy equipment.
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
+    public FixedPoint2 DamageToDesEqi = 75;
+    /// <summary>
+    /// How much "health" the mech has left.
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
+    public float EMPDamage = 700;
 
     /// <summary>
     /// The maximum amount of damage the mech can take.
@@ -37,7 +70,11 @@ public sealed partial class MechComponent : Component
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
     public FixedPoint2 Energy = 0;
-
+    /// <summary>
+    /// damage modifiers on hit
+    /// </summary>
+    [DataField(required: true)]
+    public DamageModifierSet Modifiers = default!;
     /// <summary>
     /// The maximum amount of energy the mech can have.
     /// Derived from the currently inserted battery.
@@ -60,7 +97,12 @@ public sealed partial class MechComponent : Component
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public float MechToPilotDamageMultiplier;
-
+    /// <summary>
+    /// A multiplier used to calculate how much of the damage done to a mech
+    /// is transfered to the pilot
+    /// </summary>
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public float MechEnergyWaste = 10;
     /// <summary>
     /// Whether the mech has been destroyed and is no longer pilotable.
     /// </summary>
@@ -112,7 +154,11 @@ public sealed partial class MechComponent : Component
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public float EntryDelay = 3;
-
+    /// <summary>
+    /// How long it takes to enter the mech.
+    /// </summary>
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public bool LightsToggle = false;
     /// <summary>
     /// How long it takes to pull *another person*
     /// outside of the mech. You can exit instantly yourself.
@@ -150,6 +196,8 @@ public sealed partial class MechComponent : Component
     public EntProtoId MechUiAction = "ActionMechOpenUI";
     [DataField]
     public EntProtoId MechEjectAction = "ActionMechEject";
+    public EntProtoId MechTurnLightsAction = "ActionMechTurnLights";
+    public EntProtoId MechInhaleAction = "ActionMechInhale";
     #endregion
 
     #region Visualizer States
@@ -164,4 +212,6 @@ public sealed partial class MechComponent : Component
     [DataField] public EntityUid? MechCycleActionEntity;
     [DataField] public EntityUid? MechUiActionEntity;
     [DataField] public EntityUid? MechEjectActionEntity;
+    [DataField] public EntityUid? MechInhaleActionEntity;
+    [DataField] public EntityUid? MechTurnLightsActionEntity;
 }

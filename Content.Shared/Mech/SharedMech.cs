@@ -60,3 +60,15 @@ public sealed partial class MechOpenUiEvent : InstantActionEvent
 public sealed partial class MechEjectPilotEvent : InstantActionEvent
 {
 }
+
+public sealed partial class MechInhaleEvent : InstantActionEvent
+{
+}
+
+public sealed partial class MechTurnLightsEvent : InstantActionEvent
+{
+}
+
+public sealed partial class MechEquipmentDestroyedEvent : InstantActionEvent
+{
+}

@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+using System.Numerics;
 using System.Threading;
 using Content.Shared.DoAfter;
 using Robust.Shared.Audio;
@@ -37,6 +37,18 @@ public sealed partial class MechGrabberComponent : Component
     /// </summary>
     [DataField("maxContents")]
     public int MaxContents = 10;
+
+    /// <summary>
+    /// is it possible to grab a mob?
+    /// </summary>
+    [DataField("grabmobs")]
+    public bool GrabMobs = false;
+
+    /// <summary>
+    /// is it slow mob's metabolism?
+    /// </summary>
+    [DataField("creo")]
+    public bool SlowMetabolism = false;
 
     /// <summary>
     /// The sound played when a mech is grabbing something
