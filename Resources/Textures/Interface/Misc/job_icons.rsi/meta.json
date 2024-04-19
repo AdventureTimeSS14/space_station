@@ -1,182 +1,180 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Test",
-  "size": {
-    "x": 8,
-    "y": 8
-  },
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from https://github.com/vgstation-coders/vgstation13/blob/e71d6c4fba5a51f99b81c295dcaec4fc2f58fb19/icons/mob/screen1.dmi | Brigmedic icon made by PuroSlavKing (Github) | Zombie icon made by RamZ | Zookeper by netwy (discort) | Rev and Head Rev icon taken from https://tgstation13.org/wiki/HUD and edited by coolmankid12345 (Discord) | Mindshield icon taken from https://github.com/tgstation/tgstation/blob/master/icons/mob/huds/hud.dmi",
+
+    "size": {
+        "x": 8,
+        "y": 8
+    },
     "states": [
         {
-            "name": "CustomId"
+            "name": "Borg"
         },
         {
-            "name": "JobIconBorg"
+            "name": "Detective"
         },
         {
-            "name": "JobIconDetective"
+            "name": "QuarterMaster"
         },
         {
-            "name": "JobIconQuarterMaster"
+            "name": "Botanist"
         },
         {
-            "name": "JobIconBotanist"
+            "name": "Boxer"
         },
         {
-            "name": "JobIconBoxer"
+            "name": "AtmosphericTechnician"
         },
         {
-            "name": "JobIconAtmosphericTechnician"
+            "name": "Nanotrasen"
         },
         {
-            "name": "JobIconNanotrasen"
+            "name": "Prisoner"
         },
         {
-            "name": "JobIconPrisoner"
+            "name": "Janitor"
         },
         {
-            "name": "JobIconJanitor"
+            "name": "Chemist"
         },
         {
-            "name": "JobIconChemist"
+            "name": "StationEngineer"
         },
         {
-            "name": "JobIconStationEngineer"
-        },
-        {
-            "name": "JobIconSecurityOfficer"
+            "name": "SecurityOfficer"
         },
         {
             "name": "NoId"
         },
         {
-            "name": "JobIconChiefMedicalOfficer"
+            "name": "ChiefMedicalOfficer"
         },
         {
-            "name": "JobIconRoboticist"
+            "name": "Roboticist"
         },
         {
-            "name": "JobIconChaplain"
+            "name": "Chaplain"
         },
         {
-            "name": "JobIconLawyer"
+            "name": "Lawyer"
         },
         {
             "name": "Unknown"
         },
         {
-            "name": "JobIconLibrarian"
+            "name": "Librarian"
         },
         {
-            "name": "JobIconCargoTechnician"
+            "name": "CargoTechnician"
         },
         {
-            "name": "JobIconScientist"
+            "name": "Scientist"
         },
         {
-            "name": "JobIconResearchAssistant"
+            "name": "ResearchAssistant"
         },
         {
-            "name": "JobIconGeneticist"
+            "name": "Geneticist"
         },
         {
-            "name": "JobIconClown"
+            "name": "Clown"
         },
         {
-            "name": "JobIconCaptain"
+            "name": "Captain"
         },
         {
-            "name": "JobIconHeadOfPersonnel"
+            "name": "HeadOfPersonnel"
         },
         {
-            "name": "JobIconVirologist"
+            "name": "Virologist"
         },
         {
-            "name": "JobIconShaftMiner"
+            "name": "ShaftMiner"
         },
         {
-            "name": "JobIconPassenger"
+            "name": "Passenger"
         },
         {
-            "name": "JobIconChiefEngineer"
+            "name": "ChiefEngineer"
         },
         {
-            "name": "JobIconBartender"
+            "name": "Bartender"
         },
         {
-            "name": "JobIconHeadOfSecurity"
+            "name": "HeadOfSecurity"
         },
         {
-            "name": "JobIconBrigmedic"
+            "name": "Brigmedic"
         },
         {
-            "name": "JobIconMedicalDoctor"
+            "name": "MedicalDoctor"
         },
         {
-            "name": "JobIconParamedic"
+            "name": "Paramedic"
         },
         {
-            "name": "JobIconChef"
+            "name": "Chef"
         },
         {
-            "name": "JobIconWarden"
+            "name": "Warden"
         },
         {
-            "name": "JobIconResearchDirector"
+            "name": "ResearchDirector"
         },
         {
-            "name": "JobIconMime"
+            "name": "Mime"
         },
         {
-            "name": "JobIconMusician"
+            "name": "Musician"
         },
         {
-            "name": "JobIconReporter"
+            "name": "Reporter"
         },
         {
-            "name": "JobIconPsychologist"
+            "name": "Psychologist"
         },
         {
-            "name": "JobIconMedicalIntern"
+            "name": "MedicalIntern"
         },
         {
-            "name": "JobIconTechnicalAssistant"
+            "name": "TechnicalAssistant"
         },
         {
-            "name": "JobIconServiceWorker"
+            "name": "ServiceWorker"
         },
         {
-            "name": "JobIconSecurityCadet"
+            "name": "SecurityCadet"
         },
         {
-            "name": "JobIconIAA"
+            "name": "IAA"
         },
         {
-            "name": "JobIconZombie"
+            "name": "Zombie"
         },
         {
-            "name": "JobIconZookeeper"
+            "name": "Zookeeper"
         },
         {
-            "name": "JobIconADTBlueShieldOfficer"
+            "name": "ADTBlueShieldOfficer"
         },
         {
-            "name": "JobIconMagistrat"
+            "name": "Magistrat"
         },
         {
-            "name": "JobIconSeniorEngineer"
+            "name": "SeniorEngineer"
         },
         {
-            "name": "JobIconSeniorResearcher"
+            "name": "SeniorResearcher"
         },
         {
-            "name": "JobIconSeniorPhysician"
+            "name": "SeniorPhysician"
         },
         {
-            "name": "JobIconSeniorOfficer"
+            "name": "SeniorOfficer"
         },
         {
-            "name": "JobIconADTInvestigator"
+            "name": "ADTInvestigator"
         },
         {
             "name": "Revolutionary"
@@ -188,19 +186,25 @@
             "name": "Syndicate"
         },
         {
-            "name": "MindShield"
+            "name": "MindShield",
+            "delays": [
+                [
+                    1.0,
+                    1.0
+                ]
+            ]
         },
         {
             "name": "JobADTIconSecurityCyborg"
         },
         {
-            "name": "JobIconChangeling"
+            "name": "Changeling"
         },
         {
-            "name": "JobIconVisitor"
+            "name": "Visitor"
         },
         {
-            "name": "JobIconADTPathologist"
+            "name": "ADTPathologist"
         },
         {
             "name": "InitialInfected"
