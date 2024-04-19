@@ -96,9 +96,9 @@
  #nope_ingeneer
 - type: entity
   parent: ClothingUniformBase
-  id: ADTClothingUniformRedgiSuit
-  name: Redgi suit
-  description: An old and stylish suit that old Redgi wear somedays before.
+  id: ADTClothingUniformRedjiSuit
+  name: Redji suit
+  description: An old and stylish suit that old man Redji used to wear. No one really knows him, but his uniform became popular, especially with Pun Puns.
   components:
   - type: Sprite
     sprite: ADT/Clothing/Uniforms/Jumpsuit/redji_suit.rsi
@@ -126,6 +126,10 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/new_service_suit.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/new_service_suit.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-apron
 
 #Pyotr
 - type: entity
