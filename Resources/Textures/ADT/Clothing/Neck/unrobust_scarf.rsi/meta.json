@@ -1,12 +1,16 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Created by nope_ingeneer",
+    "copyright": "Unknown author from Adventure Time SS14 server",
     "size": {
         "x": 32,
         "y": 32
     },
     "states": [
+        {
+            "name": "equipped-NECK",
+            "directions": 4
+        },
         {
             "name": "icon"
         },
@@ -16,10 +20,6 @@
         },
         {
             "name": "inhand-right",
-            "directions": 4
-        },
-        {
-            "name": "equipped-INNERCLOTHING",
             "directions": 4
         }
     ]
