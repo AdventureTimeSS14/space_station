@@ -453,7 +453,7 @@ namespace Content.Shared.CCVar
             CVarDef.Create("traitor.min_players", 5);
 
         public static readonly CVarDef<int> TraitorMaxTraitors =
-            CVarDef.Create("traitor.max_traitors", 4); // Assuming average server maxes somewhere from like 50-80 people
+            CVarDef.Create("traitor.max_traitors", 6); // Assuming average server maxes somewhere from like 50-80 people
 
         public static readonly CVarDef<int> TraitorPlayersPerTraitor =
             CVarDef.Create("traitor.players_per_traitor", 12);
@@ -516,10 +516,10 @@ namespace Content.Shared.CCVar
 
         public static readonly CVarDef<int> ChangelingMinPlayers =
 
-            CVarDef.Create("changeling.min_players", 5);
+            CVarDef.Create("changeling.min_players", 15);
 
         public static readonly CVarDef<int> ChangelingMaxChangelings =
-            CVarDef.Create("changeling.max_lings", 2); // Assuming average server maxes somewhere from like 50-80 people. Upd: У нас генокрады вместе с предателями, куда бля! Порезал в 2 раза лимит.
+            CVarDef.Create("changeling.max_lings", 4); // Assuming average server maxes somewhere from like 50-80 people. Upd: У нас генокрады вместе с предателями, куда бля! Порезал в 2 раза лимит.
 
         public static readonly CVarDef<int> ChangelingPlayersPerChangeling =
             CVarDef.Create("changeling.players_per_traitor", 15);

@@ -1,4 +1,4 @@
-using Content.Shared.CCVar;
+﻿using Content.Shared.CCVar;
 using Content.Shared.Mind.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.NPC;
@@ -31,7 +31,6 @@ public sealed class SSDIndicatorSystem : EntitySystem
         if (component.IsSSD &&
             _cfg.GetCVar(CCVars.ICShowSSDIndicator) &&
             !args.InContainer &&
-            !args.HasStealthComponent &&
             !_mobState.IsDead(uid) &&
             !HasComp<ActiveNPCComponent>(uid) &&
             TryComp<MindContainerComponent>(uid, out var mindContainer) &&
