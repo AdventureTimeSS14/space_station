@@ -366,3 +366,8 @@ ent-ADTClothingUniformHikeformCmo = походный костюм главног
 ent-ADTClothingUniformHikeJumpskirtCmo = походная юбка-костюм главного врача
     .desc = Рубашка и мешковитая юбка, отлично подходящие для активной работы как вне, так и внутри своего отдела.
     .suffix = { "" }
+
+ent-ADTClothingUniformCroupier = костюм крупье
+    .desc = Костюм самого главного по фишкам и картам.
+ent-ADTClothingUniformCroupierSkirt = юбка-костюм крупье
+    .desc = {ent-ADTClothingUniformCroupier.desc}
