@@ -138,21 +138,21 @@
     - BasicStationEventScheduler
     - BasicRoundstartVariation
 
-- type: gamePreset
-  id: Zombie
-  alias:
-  - zombie
-  - zombies
-  - Zombies
-  - zz14
-  - zomber
-  name: zombie-title
-  description: zombie-description
-  showInVote: false
-  rules:
-  - Zombie
-  - BasicStationEventScheduler
-  - BasicRoundstartVariation
+#- type: gamePreset
+#  id: Zombie
+#  alias:
+#  - zombie
+#  - zombies
+#  - Zombies
+#  - zz14
+#  - zomber
+#  name: zombie-title
+#  description: zombie-description
+#  showInVote: false
+#  rules:
+#  - Zombie
+#  - BasicStationEventScheduler
+#  - BasicRoundstartVariation
 
 - type: gamePreset
   id: Pirates
