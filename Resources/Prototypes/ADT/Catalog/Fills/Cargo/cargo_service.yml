@@ -5,5 +5,5 @@
     state: base
   product: ADTCrateVendingMachineRestockStyleoMatFilled
   cost: 4000
-  category: Service
+  category: cargoproduct-category-name-service
   group: market

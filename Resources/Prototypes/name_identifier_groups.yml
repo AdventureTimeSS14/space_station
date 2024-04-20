@@ -19,6 +19,34 @@
   maxValue: 99999
 
 - type: nameIdentifierGroup
+  id: ADTNameDroneAntagMiner
+  prefix: drone miner SD
+  fullName: true
+  minValue: 100
+  maxValue: 999
+
+- type: nameIdentifierGroup
+  id: ADTNameDroneAntagEngineer
+  prefix: drone engineer SD
+  fullName: true
+  minValue: 100
+  maxValue: 999
+
+- type: nameIdentifierGroup
+  id: ADTNameDroneAntagCharger
+  prefix: drone charger SD
+  fullName: true
+  minValue: 100
+  maxValue: 999
+
+- type: nameIdentifierGroup
+  id: ADTNameIPCAntag
+  prefix: drone soldier BF
+  fullName: true
+  minValue: 100
+  maxValue: 999
+
+- type: nameIdentifierGroup
   id: MMI
   prefix: MMI
   minValue: 100

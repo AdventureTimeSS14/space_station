@@ -102,7 +102,7 @@ public sealed class JobRequirementsManager
             return true;
         }
 
-        var player = _playerManager.LocalPlayer?.Session;
+        var player = _playerManager.LocalSession;
         if (player == null)
             return true;
 
@@ -115,7 +115,7 @@ public sealed class JobRequirementsManager
     {
         reason = null;
 
-        if (requirements == null)
+        if (requirements == null || !_cfg.GetCVar(CCVars.GameRoleTimers))
             return true;
 
         var reasons = new List<string>();

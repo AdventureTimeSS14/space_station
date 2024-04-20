@@ -32,6 +32,7 @@
  - 1 картошка
  - 1 початок кукурузы
  - 2 сырых мясных котлеты
+ - 5 единиц соуса барбекю
  - 30 секунд готовки
 <Box>
   <GuideEntityEmbed Entity="ADTFoodMeatChickenBakedWithVegetables"/>
@@ -295,8 +296,8 @@
  - Ломтик сыра
  - Простой лук
  - Печень вульпы
-
-В микровалновку на 10 секунд
+ - Маленькая тарелка
+ - В микроволновку на 10 секунд
 <Box>
  <GuideEntityEmbed Entity="ADTFoodVulpix"/>
 </Box>

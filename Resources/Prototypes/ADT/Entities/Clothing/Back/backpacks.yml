@@ -316,20 +316,6 @@
     walkModifier: 1
     sprintModifier: 1
 
-#рюкзак детектива
-
-- type: entity
-  parent: ClothingBackpackSecurity
-  id: ClothingBackpackSecurityFilledDetective
-  components:
-  - type: StorageFill
-    contents:
-      - id: BoxSurvival
-      - id: BoxForensicPad
-      - id: ForensicScanner
-      - id: ADTSpaceLaw
-      - id: Flash
-      - id: SpaceCash500
 
 #РКС-2 - рюкзак СССП
 
@@ -347,4 +333,18 @@
   - type: Storage
     grid:
     - 0,0,7,3
+    maxItemSize: Huge
+
+#Рюкзак криминалиста
+
+- type: entity
+  parent: ClothingMilitaryBackpack
+  id: ADTClothingCriminalistBackpack
+  name: criminalst backpack
+  description: criminalst backpack
+  suffix: criminalist
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Back/criminalist_back.rsi
+  - type: Storage
     maxItemSize: Huge

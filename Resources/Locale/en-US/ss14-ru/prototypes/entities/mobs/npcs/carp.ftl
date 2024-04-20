@@ -15,3 +15,5 @@ ent-MobCarpDragon = space carp
 ent-MobCarpDungeon = { ent-MobCarp }
     .suffix = Dungeon
     .desc = { ent-MobCarp.desc }
+ent-MobCarpRainbow = радужный карп
+    .desc = Вау, какая блестящая рыбка!

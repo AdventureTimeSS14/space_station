@@ -1,2 +1,2 @@
-ent-foodDistributorBot = Сервисный робот
+ent-foodDistributorBot = Сервисный дрон
     .desc = { ent-PlayerSiliconBase.desc }

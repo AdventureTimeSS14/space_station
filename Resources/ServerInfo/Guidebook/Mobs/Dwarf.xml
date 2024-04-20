@@ -1,0 +1,11 @@
+<Document>
+  # Дворф
+
+  <Box>
+    <GuideEntityEmbed Entity="MobDwarf" Caption=""/>
+  </Box>
+
+  Дворфы в большинстве своем похожи на людей, но лучше переносят алкоголь и лечатся им.
+
+
+</Document>

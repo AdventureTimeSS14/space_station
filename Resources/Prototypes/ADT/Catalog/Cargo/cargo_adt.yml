@@ -6,7 +6,28 @@
     state: patchpack
   product: ADTCratePatchPackFilled
   cost: 1600
-  category: Medical
+  category: cargoproduct-category-name-medical
+  group: market
+
+#engineering
+- type: cargoProduct
+  id: ADTEngineeringAMEController
+  icon:
+    sprite: Structures/Power/Generation/ame.rsi
+    state: static
+  product: CrateEngineeringAMEControl
+  cost: 4000
+  category: cargoproduct-category-name-engineering
+  group: market
+
+- type: cargoProduct
+  id: ADTEngineeringAMEComponent
+  icon:
+    sprite: Objects/Devices/flatpack.rsi
+    state: ame-part
+  product: CrateEngineeringAMEShielding
+  cost: 5000
+  category: cargoproduct-category-name-engineering
   group: market
 
 #service
@@ -17,7 +38,7 @@
     state: base
   product: ADTCrateVendingMachineRestockPillFilled
   cost: 1200
-  category: Medical
+  category: cargoproduct-category-name-medical
   group: market
 
 #crates

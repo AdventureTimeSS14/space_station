@@ -363,7 +363,7 @@
     - type: BodyEmotes
       soundsId: GeneralBodyEmotes
     - type: DamageVisuals
-      thresholds: [20, 40, 100]
+      thresholds: [20, 50, 100]
       targetLayers:
         - "enum.HumanoidVisualLayers.Chest"
         - "enum.HumanoidVisualLayers.Head"

@@ -16,12 +16,7 @@
   # - Packed
   #- Reach
   - CorvaxDelta
-  - CorvaxAvrite
-  #- CorvaxGate
-  - CorvaxSilly
-  - CorvaxOutpost
-  - CorvaxAstra
-  - CorvaxGelta
+  # - CorvaxAvrite
   - ADTAtlas
   - ADTBagel
   - ADTBox
@@ -34,3 +29,4 @@
   - ADTOrigin
   - ADTSaltern
   - ADTPacked
+  - Kilo

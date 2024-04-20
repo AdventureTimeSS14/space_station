@@ -26,6 +26,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using Content.Server.Actions;
+using Content.Shared.Tag;
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -44,6 +45,7 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
     [Dependency] private readonly SharedRoleSystem _roleSystem = default!;
     [Dependency] private readonly SharedJobSystem _jobs = default!;
     [Dependency] private readonly ObjectivesSystem _objectives = default!;
+    [Dependency] private readonly TagSystem _tagSystem = default!;
 
     private int PlayersPerLing => _cfg.GetCVar(CCVars.ChangelingPlayersPerChangeling);
     private int MaxChangelings => _cfg.GetCVar(CCVars.ChangelingMaxChangelings);
@@ -93,8 +95,8 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
         }
 
         var numLings = MathHelper.Clamp(component.StartCandidates.Count / PlayersPerLing, 1, MaxChangelings);
-        var lingPool = _antagSelection.FindPotentialAntags(component.StartCandidates, component.ChangelingPrototypeId);
-        var selectedLings = _antagSelection.PickAntag(numLings, lingPool);
+        var changelingPlayes = _antagSelection.GetEligiblePlayers(component.StartCandidates.Keys.ToList(), component.ChangelingPrototypeId);
+        var selectedLings = _antagSelection.ChooseAntags(numLings, changelingPlayes);
 
         foreach (var ling in selectedLings)
         {
@@ -121,8 +123,20 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
         }
     }
 
-    public bool MakeChangeling(ICommonSession changeling)
+    public bool MakeChangeling(EntityUid chosen)
     {
+        if (!_mindSystem.TryGetMind(chosen, out var mindId, out var mind))
+        {
+            Log.Info("Failed getting mind for picked changeling.");
+            return false;
+        }
+
+        if(mind.Session == null)
+        {
+            Log.Info("Failed getting session for picked changeling.");
+            return false;
+        }
+
         var lingRule = EntityQuery<ChangelingRuleComponent>().FirstOrDefault();
         if (lingRule == null)
         {
@@ -130,21 +144,23 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
             lingRule = Comp<ChangelingRuleComponent>(ruleEntity);
         }
 
-        if (!_mindSystem.TryGetMind(changeling, out var mindId, out var mind))
-        {
-            Log.Info("Failed getting mind for picked changeling.");
-            return false;
-        }
+
 
         if (HasComp<ChangelingRoleComponent>(mindId))
         {
-            Log.Error($"Player {changeling.Name} is already a changeling.");
+            Log.Error($"Player {mind.Session.Name} is already a changeling.");
             return false;
         }
 
         if (mind.OwnedEntity is not { } entity)
         {
             Log.Error("Mind picked for traitor did not have an attached entity.");
+            return false;
+        }
+
+        if (_tagSystem.HasTag(mind.OwnedEntity.Value, "ChangelingBlacklist"))     // Убираю КПБ и новакидов генокрадов
+        {
+            Log.Error($"Player {mind.Session.Name} can't be a changeling.");
             return false;
         }
 
@@ -226,6 +242,8 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
                 continue;
             if (!job.CanBeAntag)
                 continue;
+            if (_tagSystem.HasTag(uid, "ChangelingBlacklist"))     // Убираю КПБ и новакидов генокрадов
+                continue;
 
             // the nth player we adjust our probabilities around
             var target = PlayersPerLing * ling.TotalChangelings + 1;
@@ -249,7 +267,8 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
             // You get one shot.
             if (_random.Prob(chance))
             {
-                MakeChangeling(ev.Player);
+                if(ev.Player.AttachedEntity != null)
+                    MakeChangeling(ev.Player.AttachedEntity.Value);
             }
         }
     }

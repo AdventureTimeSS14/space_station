@@ -83,6 +83,7 @@
   - type: StationEvent
     weight: 10
     duration: 1
+    minimumPlayers: 10
   - type: RandomEntityStorageSpawnRule
     prototype: MobSkeletonCloset
 
@@ -488,7 +489,7 @@
   - type: StationEvent
     weight: 10
     earliestStart: 20
-    reoccurrenceDelay: 60
+    reoccurrenceDelay: 20
     duration: 1
   - type: IonStormRule
 
@@ -513,7 +514,6 @@
     startAudio:
       path: /Audio/Announcements/attention.ogg
     weight: 15
-    minimumPlayers: 45
-    earliestStart: 30
+    minimumPlayers: 35
     maxOccurrences: 1
   - type: TraderSpawnRule

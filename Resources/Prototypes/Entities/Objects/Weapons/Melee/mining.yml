@@ -86,8 +86,29 @@
   - type: Tag
     tags:
     - Knife
+##ADT add start
+  - type: Utensil
+    types:
+      - Knife
+  - type: Tool
+    qualities:
+      - Prying
+    speed: 0.65
+  - type: Prying
+  - type: DisarmMalus
+    malus: 0.225
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 12
+  - type: ThrowingAngle
+    angle: 225
+##ADT add end
 
 # Like a crusher... but sucks
+# Not anymore, huh
 - type: entity
   parent: WeaponCrusher
   id: WeaponCrusherGlaive
@@ -97,7 +118,7 @@
   - type: Sprite
     sprite: Objects/Weapons/Melee/crusher_glaive.rsi
   - type: UseDelay
-    delay: 1.9
+    delay: 1.7
   - type: LeechOnMarker
     leech:
       groups:
@@ -105,6 +126,7 @@
         Burn: -10
         Airloss: -5
   - type: MeleeWeapon
+    range: 2.0
   - type: Tag
     tags:
       - Pickaxe

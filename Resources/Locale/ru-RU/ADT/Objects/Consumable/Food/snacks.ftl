@@ -88,3 +88,15 @@ ent-ADTFoodEclairWhite = эклер с белой глазурью
 ent-ADTFoodEclairPink = эклер с розовой глазурью
     .desc = Нежное пироженое с заварным кремом, покрытое розовой глазурью.
     .suffix = { "День Святого Валентина" }
+
+ent-ADTFoodTinCondensedMilk = банка сгущенного молока
+    .desc = Молоко цельное сгущенное с сахаром. Великолепный источник калорий и хорошего настроения.
+
+ent-ADTFoodTinCondensedMilkTrash = банка сгущенного молока
+    .desc = Пустая банка из-под сгущенки.
+
+reagent-name-condensedmilk = сгущенное молоко
+
+reagent-desc-condensedmilk = белая густая и очень сладкая жидкость
+
+flavor-complex-adtconsideredmilk = как сгущенка

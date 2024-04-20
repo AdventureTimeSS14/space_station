@@ -2,7 +2,7 @@
   id: ADTPacked
   mapName: 'Packed'
   mapPath: /Maps/ADTMaps/adt_packed.yml
-  minPlayers: 5
+  minPlayers: 0
   maxPlayers: 40
   stations:
     ADTPacked:

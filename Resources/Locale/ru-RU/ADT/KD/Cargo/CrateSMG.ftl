@@ -1,3 +1,3 @@
-ent-CrateArmoryVector = ящик векторов (резин)
-    .desc = ящик наполненый оружием
+ent-CrateArmoryVector = ящик векторов (резина)
+    .desc = ящик, наполненый оружием
     .suffix = { "" }

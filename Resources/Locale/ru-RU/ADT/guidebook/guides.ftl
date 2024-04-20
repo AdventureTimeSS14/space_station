@@ -4,6 +4,10 @@ guide-new-cocktails-ADT = Авторские коктейли, рецепты
 guide-pathologist-ADT = Морг и патологоанатом
 guide-chemicals-ADT = Новые реагенты
 
+guide-entry-glossary = Глоссарий терминов
+guide-entry-revolutionaries = Революционеры
+guide-srp-operator-centcomm = Оператор ЦК
+
 guide-entry-all-korporate-zakon = Корпоративный Закон
 guide-entry-all-korporate-zakon-oprs = ОПРС
 guide-entry-all-korporate-zakon-minor = 1ХХ - Легкие нарушения

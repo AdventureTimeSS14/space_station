@@ -353,6 +353,17 @@
 
 - type: entity
   parent: SeedBase
+  name: packet of lily seeds
+  description: "These seeds grow into lilies."
+  id: LilySeeds
+  components:
+    - type: Seed
+      seedId: lily
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/lily.rsi
+
+- type: entity
+  parent: SeedBase
   name: packet of lingzhi spores
   description: "Also known as reishi."
   id: LingzhiSeeds
@@ -416,6 +427,19 @@
       seedId: gatfruit
     - type: Sprite
       sprite: Objects/Specific/Hydroponics/gatfruit.rsi
+# Corvax-HiddenDesc-Start
+    - type: HiddenDescription
+      entries:
+      - label: corvax-hidden-desc-Gatfruit-syndicate
+        whitelistMind:
+          components:
+            - TraitorRole
+            - NukeOperative
+      - label: corvax-hidden-desc-Gatfruit-botanist
+        jobRequired:
+          - Botanist
+          - Borg
+# Corvax-HiddenDesc-End
 
 - type: entity
   parent: SeedBase
@@ -447,6 +471,16 @@
       seedId: soybeans
     - type: Sprite
       sprite: Objects/Specific/Hydroponics/soybeans.rsi
+
+- type: entity
+  parent: SeedBase
+  name: packet of spaceman's trumpet seeds
+  id: SpacemansTrumpetSeeds
+  components:
+    - type: Seed
+      seedId: spacemansTrumpet
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/spacemans_trumpet.rsi
 
 - type: entity
   parent: SeedBase

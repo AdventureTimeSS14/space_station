@@ -429,3 +429,40 @@
           tags:
           - CaptainSabre
   - type: Appearance
+
+#Жилет Криминалиста
+
+- type: entity
+  id: ADTClothingBeltCriminalist
+  parent: ClothingBeltMilitaryWebbing
+  name: criminalist belt
+  description: criminalist belt
+  suffix: Criminalist
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Belt/criminalist_webbing.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Belt/criminalist_webbing.rsi
+
+#Space Battles
+
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ADTClothingBeltAssault
+  name: assault belt
+  description: A tactical assault belt.
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/assault.rsi
+  - type: Clothing
+    sprite: Clothing/Belt/assault.rsi
+  - type: Appearance
+  - type: StorageFill
+    contents:
+      - id: Crowbar
+      - id: Wrench
+      - id: Screwdriver
+      - id: Wirecutter
+      - id: Welder
+      - id: Multitool
+      - id: GasAnalyzer

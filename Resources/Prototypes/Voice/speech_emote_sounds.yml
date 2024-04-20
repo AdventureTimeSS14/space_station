@@ -32,11 +32,13 @@
       collection: MaleCry
     Whistle:
       collection: Whistles
-    # ADT-Apathy Sounds. 
+    Weh:
+      collection: Weh
+    # ADT-Apathy Sounds.
     Scream-apathy:
       collection: MaleScreams
     Laugh-apathy:
-      collection: MaleLaugh 
+      collection: MaleLaugh
     Sigh-apathy:
       collection: MaleSigh
     Crying-apathy:
@@ -75,11 +77,13 @@
       collection: FemaleCry
     Whistle:
       collection: Whistles
-    # ADT-Apathy Sounds. 
+    Weh:
+      collection: Weh
+    # ADT-Apathy Sounds.
     Scream-apathy:
       collection: FemaleScreams
     Laugh-apathy:
-      collection: FemaleLaugh 
+      collection: FemaleLaugh
     Sigh-apathy:
       collection: FemaleSigh
     Crying-apathy:
@@ -100,7 +104,9 @@
       collection: Whistles
     Crying:
       collection: MaleCry
-    # ADT-Apathy Sounds. 
+    Weh:
+      collection: Weh
+    # ADT-Apathy Sounds.
     Scream-apathy:
       path: /Audio/Voice/Reptilian/reptilian_scream.ogg
     Laugh-apathy:
@@ -139,11 +145,13 @@
       collection: MaleCry
     Whistle:
       collection: Whistles
-    # ADT-Apathy Sounds. 
+    Weh:
+      collection: Weh
+    # ADT-Apathy Sounds.
     Scream-apathy:
       collection: MaleScreams
     Laugh-apathy:
-      collection: MaleLaugh 
+      collection: MaleLaugh
     Sigh-apathy:
       collection: MaleSigh
     Crying-apathy:
@@ -184,11 +192,13 @@
       collection: FemaleCry
     Whistle:
       collection: Whistles
-    # ADT-Apathy Sounds. 
+    Weh:
+      collection: Weh
+    # ADT-Apathy Sounds.
     Scream-apathy:
       collection: FemaleScreams
     Laugh-apathy:
-      collection: FemaleLaugh 
+      collection: FemaleLaugh
     Sigh-apathy:
       collection: FemaleSigh
     Crying-apathy:
@@ -198,10 +208,14 @@
 
 - type: emoteSounds
   id: UnisexVox
-  sound:
-    path: /Audio/Voice/Vox/shriek1.ogg
-    params:
-      variation: 0.125
+  sounds:
+    Scream:
+      path: /Audio/Voice/Vox/shriek1.ogg
+    Laugh:
+      path: /Audio/Voice/Vox/vox_laugh.ogg
+  params:
+    variation: 0.125
+    # We need vox sounds for the other emotes
 
 - type: emoteSounds
   id: UnisexDiona
@@ -212,14 +226,15 @@
       collection: DionaLaugh
     Honk:
       collection: BikeHorn
-    # ADT-Apathy Sounds. 
+    Weh:
+      collection: Weh
+    # ADT-Apathy Sounds.
     Scream-apathy:
       path: /Audio/Voice/Diona/diona_scream.ogg
     Laugh-apathy:
       collection: DionaLaugh
   params:
     variation: 0.125
-
 
 - type: emoteSounds
   id: UnisexArachnid
@@ -234,7 +249,9 @@
       path: /Audio/Voice/Arachnid/arachnid_chitter.ogg
     Click:
       path: /Audio/Voice/Arachnid/arachnid_click.ogg
-    # ADT-Apathy Sounds. 
+    Weh:
+      collection: Weh
+    # ADT-Apathy Sounds.
     Scream-apathy:
       path: /Audio/Voice/Arachnid/arachnid_scream.ogg
     Laugh-apathy:
@@ -271,11 +288,13 @@
       collection: MaleCry
     Whistle:
       collection: Whistles
-    # ADT-Apathy Sounds. 
+    Weh:
+      collection: Weh
+    # ADT-Apathy Sounds.
     Scream-apathy:
       collection: MaleScreams
     Laugh-apathy:
-      collection: MaleLaugh 
+      collection: MaleLaugh
     Sigh-apathy:
       collection: MaleSigh
     Crying-apathy:
@@ -315,11 +334,13 @@
       collection: FemaleCry
     Whistle:
       collection: Whistles
-    # ADT-Apathy Sounds. 
+    Weh:
+      collection: Weh
+    # ADT-Apathy Sounds.
     Scream-apathy:
       collection: FemaleScreams
     Laugh-apathy:
-      collection: FemaleLaugh 
+      collection: FemaleLaugh
     Sigh-apathy:
       collection: FemaleSigh
     Crying-apathy:
@@ -343,7 +364,9 @@
       path: /Audio/Voice/Moth/moth_chitter.ogg
     Squeak:
       path: /Audio/Voice/Moth/moth_squeak.ogg
-    # ADT-Apathy Sounds. 
+    Weh:
+      collection: Weh
+    # ADT-Apathy Sounds.
     Scream-apathy:
       path: /Audio/Voice/Moth/moth_scream.ogg
     Laugh-apathy:
@@ -425,3 +448,9 @@
     path: /Audio/Animals/kangaroo_grunt.ogg
     params:
       variation: 0.125
+
+- type: emoteSounds
+  id: Nymph
+  sounds:
+    Chirp:
+      path: /Audio/Animals/nymph_chirp.ogg

@@ -6,13 +6,13 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/orientalears.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/orientalears.rsi
   - type: AddAccentClothing
-    accent: OwOAccent
+    accent: NyaAccent
 
 - type: entity
   parent: ClothingHeadBase
@@ -22,7 +22,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/orientalears.rsi
   - type: Clothing

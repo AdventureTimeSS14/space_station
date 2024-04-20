@@ -12,7 +12,11 @@ ent-ClothingNeckNakamuraPin = значок Nakamura
     .desc = Значок корпорации Nakamura Engineering.
 ent-ClothingNeckNanoTrasenPin = значок Nanotrasen
     .desc = Значок корпорации Nanotrasen.
+ent-ADTClothingNeckNanoTrasenPinSchrodinger = значок Nanotrasen
+    .desc = Значок корпорации Nanotrasen.
+    .suffix = Schrodinger71
 ent-ClothingNeckSyndicakePin = значок Синдикекса
     .desc = Значок Синдикексов, на обратной стороне можно разглядеть ряд цифр "2559".
 ent-ClothingNeckVitezstviPin = значок Vitezstvi
     .desc = Значок корпорации Vitezstvi.
+

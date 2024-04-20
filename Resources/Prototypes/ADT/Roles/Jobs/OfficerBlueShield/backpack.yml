@@ -5,30 +5,19 @@
     - type: Storage
       maxItemSize: Huge
       grid:
-      - 0,0,6,4
+      - 0,0,9,5
     - type: StorageFill
       contents:
-        # - id: MedkitBruteFilled
         - id: Zipties
           amount: 3
         - id: ADTPowerCellLasgunRevolver
+          amount: 2
         - id: WeaponDisabler
         - id: Stunbaton
-        # - id: HandheldCrewMonitor
-        # - id: MagazinePistolSubMachineGun
-        # - id: MagazinePistolSubMachineGun
-        # - id: MagazinePistolSubMachineGunRubber
-        # - id: MagazinePistolSubMachineGunRubber
-        #- id: WeaponSubMachineGunDrozdRubber
-        #- id: WeaponPulsePistol
-        #- id: GrenadeFlashBang
-        #- id: GrenadeFlashBang
-        #- id: GrenadeFlashBang
         - id: BoxSurvivalSecurity
-        # - id: BlueShieldBox
         - id: BlueShieldsuit
-        - id: OxygenTankFilled
         - id: SpaceCash1000
+        - id: OxygenTankFilled
     - type: Sprite
       sprite: ADT/Clothing/Back/blueshield_backpack.rsi
 

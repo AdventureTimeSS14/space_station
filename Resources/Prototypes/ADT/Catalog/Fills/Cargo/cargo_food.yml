@@ -7,7 +7,7 @@
     state: brezel_salt
   product: ADTCrateOktoberfestSnack
   cost: 650
-  category: Food
+  category: cargoproduct-category-name-food
   group: market
 
 - type: cargoProduct
@@ -17,7 +17,7 @@
     state: beer
   product: ADTBeerTank
   cost: 150
-  category: Food
+  category: cargoproduct-category-name-food
   group: market
 
 - type: cargoProduct
@@ -27,7 +27,7 @@
     state: goldenale
   product: ADTBeerTankGoldenAle
   cost: 150
-  category: Food
+  category: cargoproduct-category-name-food
   group: market
 
 - type: cargoProduct
@@ -37,7 +37,7 @@
     state: sausagebeer
   product: ADTBeerTankSausage
   cost: 150
-  category: Food
+  category: cargoproduct-category-name-food
   group: market
 
 - type: cargoProduct
@@ -47,7 +47,7 @@
     state: technobeer
   product: ADTBeerTankTechno
   cost: 150
-  category: Food
+  category: cargoproduct-category-name-food
   group: market
 
 - type: cargoProduct
@@ -57,7 +57,7 @@
     state: paulanerbeer
   product: ADTBeerTankClassicPaulaner
   cost: 150
-  category: Food
+  category: cargoproduct-category-name-food
   group: market
 
 - type: cargoProduct
@@ -67,7 +67,7 @@
     state: livseybeer
   product: ADTBeerTankLivsey
   cost: 150
-  category: Food
+  category: cargoproduct-category-name-food
   group: market
 
 - type: cargoProduct
@@ -77,7 +77,7 @@
     state: luckyjonnybeer
   product: ADTBeerTankLuckyJonny
   cost: 150
-  category: Food
+  category: cargoproduct-category-name-food
   group: market
 
 - type: cargoProduct
@@ -87,7 +87,7 @@
     state: secunfilteredbeer
   product: ADTBeerTankSecUnfiltered
   cost: 150
-  category: Food
+  category: cargoproduct-category-name-food
   group: market
 
 - type: cargoProduct
@@ -97,7 +97,7 @@
     state: glyphidstout
   product: ADTBeerTankGlyphidStout
   cost: 150
-  category: Food
+  category: cargoproduct-category-name-food
   group: market
 
 - type: cargoProduct
@@ -107,7 +107,7 @@
     state: icon-0
   product: ADTCrateHalloweenFood
   cost: 1200
-  category: Food
+  category: cargoproduct-category-name-food
   group: market
 
 - type: cargoProduct
@@ -117,7 +117,7 @@
     state: chocogorilla
   product: ADTCrateChocolateGorilla
   cost: 1000
-  category: Food
+  category: cargoproduct-category-name-food
   group: market
 
 - type: cargoProduct
@@ -127,5 +127,5 @@
     state: fish
   product: ADTCrateFishFreezer
   cost: 1000
-  category: Food
+  category: cargoproduct-category-name-food
   group: market

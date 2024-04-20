@@ -67,3 +67,5 @@ ent-BorgModuleClowning = клоунский модуль киборга
 
 ent-BorgModulePDA = КПК модуль киборга
     .desc = { ent-BaseBorgModule.desc }
+ent-BorgModuleL6C = модуль L6C ROW киборга
+    .desc = { ent-BaseBorgModule.desc }

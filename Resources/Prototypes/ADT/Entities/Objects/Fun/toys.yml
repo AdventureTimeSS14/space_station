@@ -553,3 +553,13 @@
   - type: Sprite
     sprite: ADT/Objects/Fun/toys.rsi
     state: plushie_ursus
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushieMio
+  name: Plusie Mio
+  description: Incredibly cute Mio, so soft and little shadowkin.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/toys.rsi
+    state: plusie_mio
