@@ -68,3 +68,5 @@
   - type: Construction
     graph: Bookshelf
     node: bookshelf
+  - type: StaticPrice
+    price: 50
