@@ -74,6 +74,8 @@
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Wood
+  - type: StaticPrice
+    price: 40
   - type: Destructible
     thresholds:
       - trigger:
@@ -206,7 +208,7 @@
   #  - key: enum.StorageUiKey.Key
   #    type: StorageBoundUserInterface
   - type: StaticPrice
-    price: 40
+    price: 10
   - type: Transform
     anchored: true
   - type: Physics
