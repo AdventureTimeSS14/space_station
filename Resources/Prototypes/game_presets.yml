@@ -18,7 +18,7 @@
     - Nukeops
     - Traitor
     - Revolutionary
-    - Zombie
+#    - Zombie
     - RampingStationEventScheduler
 
 - type: gamePreset
@@ -217,7 +217,7 @@
   showInVote: false
   rules:
     - Changeling
-    - Zombie
+#    - Zombie
     - BasicStationEventScheduler
     - BasicRoundstartVariation
 
