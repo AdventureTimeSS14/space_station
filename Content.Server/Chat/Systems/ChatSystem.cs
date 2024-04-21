@@ -235,7 +235,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         message = SanitizeInGameICMessage(source, message, out var emoteStr, shouldCapitalize, shouldPunctuate, shouldCapitalizeTheWordI);
 
         // Was there an emote in the message? If so, send it.
-        if (player != null && emoteStr != message && emoteStr != null)
+        if (player != null && emoteStr != message && emoteStr != null && !HasComp<AlternativeSpeechComponent>(source))
         {
             SendEntityEmote(source, emoteStr, range, nameOverride, ignoreActionBlocker);
         }
@@ -254,6 +254,12 @@ public sealed partial class ChatSystem : SharedChatSystem
             }
         }
 
+        if (HasComp<AlternativeSpeechComponent>(source))
+        {
+            var ev = new AlternativeSpeechEvent(source, message);
+            RaiseLocalEvent(source, ev, true);
+            return;
+        }
         // Otherwise, send whatever type.
         switch (desiredType)
         {
@@ -1123,6 +1129,21 @@ public sealed class EntitySpokeEvent : EntityEventArgs
         Channel = channel;
         ObfuscatedMessage = obfuscatedMessage;
         Language = language;
+    }
+}
+
+/// <summary>
+/// Raised for entities with AlternativeSpeechComponent
+/// </summary>
+public sealed class AlternativeSpeechEvent : EntityEventArgs
+{
+    public EntityUid Sender;
+    public string Message;
+
+    public AlternativeSpeechEvent(EntityUid sender, string message)
+    {
+        Sender = sender;
+        Message = message;
     }
 }
 
