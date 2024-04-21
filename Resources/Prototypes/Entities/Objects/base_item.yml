@@ -42,8 +42,6 @@
     noRot: false
   - type: Pullable
   - type: DamageExaminable
-  - type: StaticPrice
-    price: 5
 
 
 - type: entity
