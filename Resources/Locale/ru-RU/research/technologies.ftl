@@ -81,3 +81,5 @@ research-technology-portable-fission = Эксперементальные бат
 
 ADT-research-technology-doll-house = Кукольный домик
 ADT-research-technology-gigax = боевой мех "Гайгэкс"
+ADT-research-technology-odysseus = медицинский мех "Одиссей"
+ADT-research-technology-medgun = медиган
