@@ -334,3 +334,6 @@ ent-ADTPosterWorkUnderWay = Ведутся работы!
 
 ent-ADTPosterPlasmaMan = Плазма(мены)
     .desc = Плакат рассказывает о желании плазмаменов работать на станциях NT... вместо новакидов...
+
+ent-ADTPosterContrabandRoza = Роза
+    .desc = Символ Атмосии.
