@@ -1,7 +1,6 @@
 - type: entity
   id: Exclamation
   name: exclamation
-  noSpawn: true
   save: false
   components:
     - type: Transform
@@ -17,12 +16,11 @@
     - type: Tag
       tags:
         - HideContextMenu
-        
-        
+
+
 - type: entity
   id: WhistleExclamation
   name: exclamation
-  noSpawn: true
   components:
     - type: Sprite
       sprite: Structures/Storage/closet.rsi
