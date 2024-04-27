@@ -1,0 +1,12 @@
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingOuterPonchoSindi
+  name: Sindi poncho
+  description: Sindicat poncho.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Misc/poncho_sindi.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Misc/poncho_sindi.rsi
+  - type: AddAccentClothing
+    accent: SpanishAccent

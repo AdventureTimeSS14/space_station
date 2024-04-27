@@ -711,3 +711,19 @@
     sprite: ADT/Clothing/Head/Hats/redji_hat.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/redji_hat.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTClothingHeadHatBeretBlackCivilian
+  name: black beret
+  description: A black beret.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/beret_black.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/beret_black.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - WhitelistChameleon
