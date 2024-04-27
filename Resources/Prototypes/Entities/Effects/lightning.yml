@@ -33,7 +33,6 @@
   name: lightning
   id: Lightning
   parent: BaseLightning
-  noSpawn: true
   components:
     - type: Lightning
       canArc: true
@@ -112,7 +111,6 @@
   name: supercharged lightning
   id: SuperchargedLightning
   parent: ChargedLightning
-  noSpawn: true
   components:
     - type: Sprite
       sprite: /Textures/Effects/lightning.rsi
