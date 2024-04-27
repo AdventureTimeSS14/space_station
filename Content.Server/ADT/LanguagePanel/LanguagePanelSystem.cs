@@ -2,12 +2,8 @@
 /// see also https://github.com/DocNITE/liebendorf-station/tree/feature/emote-radial-panel
 using Content.Server.Actions;
 using Content.Server.Chat.Systems;
-using Content.Shared.ADT.EmotePanel;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
-using Content.Shared.Chat.Prototypes;
-using Content.Server.Emoting.Components;
-using Content.Server.Speech.Components;
 using Content.Shared.ADT.LanguagePanel;
 using Content.Shared.Language;
 using Content.Server.Language;
@@ -37,7 +33,7 @@ public sealed class LanguagePanelSystem : EntitySystem
     private void OnSelectLanguage(SelectLanguageEvent ev)
     {
         var languages = IoCManager.Resolve<IEntitySystemManager>().GetEntitySystem<LanguageSystem>();
-        languages.SetLanguage(new EntityUid(ev.Target), ev.PrototypeId);
+        languages.SetLanguage(GetEntity(ev.Target), ev.PrototypeId);
     }
 
     private void OnLangAction(EntityUid uid, LanguagePanelComponent component, OpenLanguagesActionEvent args)
@@ -51,7 +47,7 @@ public sealed class LanguagePanelSystem : EntitySystem
 
         if (EntityManager.TryGetComponent<LanguageSpeakerComponent>(uid, out var languageSpeakerComponent))
         {
-            var ev = new RequestLanguageMenuEvent(uid.Id);//////////// to net-entities
+            var ev = new RequestLanguageMenuEvent(GetNetEntity(uid));
             foreach (var lang in languageSpeakerComponent.SpokenLanguages)
             {
                 ev.Languages.Add(lang);

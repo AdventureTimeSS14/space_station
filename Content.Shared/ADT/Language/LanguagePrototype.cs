@@ -1,4 +1,6 @@
-﻿using Robust.Shared.Prototypes;
+﻿using System.ComponentModel.DataAnnotations;
+using Robust.Shared.Prototypes;
+using Robust.Shared.Utility;
 
 namespace Content.Shared.Language;
 
@@ -21,6 +23,12 @@ public sealed class LanguagePrototype : IPrototype
     // </summary>
     [DataField("replacement", required: true)]
     public List<string> Replacement = new();
+
+    /// <summary>
+    ///     Icon representing this language in the UI.
+    /// </summary>
+    [DataField("icon", required: false)]
+    public SpriteSpecifier? Icon;
 
     public string LocalizedName => Loc.GetString("language-" + ID + "-name");
 

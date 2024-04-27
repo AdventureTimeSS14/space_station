@@ -28,9 +28,9 @@ public sealed partial class LanguagePanelComponent: Component
 public sealed partial class RequestLanguageMenuEvent : EntityEventArgs
 {
     public readonly List<string> Languages = new();
-    public int Target { get; }
+    public NetEntity Target { get; }
 
-    public RequestLanguageMenuEvent(int target)
+    public RequestLanguageMenuEvent(NetEntity target)
     {
         Target = target;
     }
@@ -43,9 +43,9 @@ public sealed partial class RequestLanguageMenuEvent : EntityEventArgs
 public sealed partial class SelectLanguageEvent : EntityEventArgs
 {
     public string PrototypeId { get; }
-    public int Target { get; }
+    public NetEntity Target { get; }
 
-    public SelectLanguageEvent(int target, string prototypeId)
+    public SelectLanguageEvent(NetEntity target, string prototypeId)
     {
         Target = target;
         PrototypeId = prototypeId;
