@@ -99,7 +99,7 @@
   recipeUnlocks:
   - ChemMasterMachineCircuitboard
   - ChemDispenserMachineCircuitboard
-  - DnaSyringeGun
+  # - DnaSyringeGun
   - Syringecartridge
   - BorgModuleAdvancedTreatment
   technologyPrerequisites:
