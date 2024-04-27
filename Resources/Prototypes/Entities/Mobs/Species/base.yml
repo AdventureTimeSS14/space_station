@@ -224,6 +224,7 @@
   - type: Emoting
   - type: EmoteAnimation
   - type: EmotePanel
+  - type: LanguagePanel
   - type: BodyEmotes
     soundsId: GeneralBodyEmotes
   - type: Grammar
