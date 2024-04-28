@@ -16,7 +16,7 @@
   # - Packed
   #- Reach
   - CorvaxDelta
-  - CorvaxAvrite
+  # - CorvaxAvrite
   - ADTAtlas
   - ADTBagel
   - ADTBox

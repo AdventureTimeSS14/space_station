@@ -71,6 +71,14 @@ ent-ADTClothingCriminalistBackpack = рюкзак криминалиста
     .desc = Рюкзак криминалиста, для переноски улик и специальных средств.
     .suffix = { "Криминалист" }
 
+ent-ADTClothingBackpackMilitarySatchelFleetPilot = сумка пилота
+    .desc = Вмещает то, что необходимо пилоту истребителя.
+    .suffix = { "Космические бои" }
+
+ent-ClothingBackpackMilitarySatchelEngineer = сумка корабельного инженера
+    .desc = Вмещает то, что необходимо инженеру корабля.
+    .suffix = { "Космические бои" }
+
 ent-ADTClothingBackpackTimePatrol = рюкзак стража времени
     .desc = Просто вместительный рюкзак.
     .suffix = { "ОБВА" }

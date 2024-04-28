@@ -124,7 +124,9 @@
   speciesRestriction: [Reptilian, KoboltSpecies]
   sprites:
   - sprite: Mobs/Customization/reptilian_parts.rsi
-    state: tail_smooth
+    state: tail_smooth_primary
+  - sprite: Mobs/Customization/reptilian_parts.rsi
+    state: tail_smooth_secondary
 
 - type: marking
   id: LizardTailLarge
@@ -336,7 +338,9 @@
   speciesRestriction: []
   sprites:
     - sprite: Mobs/Customization/reptilian_parts.rsi
-      state: tail_smooth_wagging
+      state: tail_smooth_wagging_primary
+    - sprite: Mobs/Customization/reptilian_parts.rsi
+      state: tail_smooth_wagging_secondary
 
 - type: marking
   id: LizardTailSpikesAnimated

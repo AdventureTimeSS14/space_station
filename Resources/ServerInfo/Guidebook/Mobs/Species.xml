@@ -1,0 +1,18 @@
+<Document>
+  # Вид
+
+  В Nanotrasen работают различные разумные виды рас.
+
+  <Box>
+  <GuideEntityEmbed Entity="MobArachnid" Caption="Arachnid"/>
+  <GuideEntityEmbed Entity="MobDiona" Caption="Diona"/>
+  <GuideEntityEmbed Entity="MobDwarf" Caption="Dwarf"/>
+  <GuideEntityEmbed Entity="MobHuman" Caption="Human"/>
+  </Box>
+  <Box>
+  <GuideEntityEmbed Entity="MobMoth" Caption="Moth Person"/>
+  <GuideEntityEmbed Entity="MobReptilian" Caption="Reptilian"/>
+  <GuideEntityEmbed Entity="MobSlimePerson" Caption="Slime Person"/>
+  </Box>
+
+</Document>

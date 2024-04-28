@@ -15,7 +15,7 @@
   - type: Speech
   - type: Tag
     tags:
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Structures/Machines/VendingMachines/prazatomat.rsi
     layers:
@@ -48,7 +48,7 @@
   - type: Speech
   - type: Tag
     tags:
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Structures/Machines/VendingMachines/halloweenmat.rsi
     layers:
@@ -82,7 +82,7 @@
   - type: Speech
   - type: Tag
     tags:
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Structures/Machines/VendingMachines/newyearmate.rsi
     layers:
@@ -132,7 +132,7 @@
   - type: StaticPrice
     price: 2600
   - type: GuideHelp
-    guides: 
+    guides:
     - Medical Doctor
 
 - type: entity
@@ -152,7 +152,7 @@
   - type: Speech
   - type: Tag
     tags:
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Structures/Machines/VendingMachines/mastersportdrobe.rsi
     layers:

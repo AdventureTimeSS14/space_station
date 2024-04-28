@@ -151,7 +151,8 @@ namespace Content.Server.Administration.Commands
                         foreach (var key in defaultKeys)
                         {
                             var keyEntity = entityManager.SpawnEntity(key, entityManager.GetComponent<TransformComponent>(target).Coordinates);
-                            keyHolderComp.KeyContainer.Insert(keyEntity, force: true);
+                            containerMan.Insert(keyEntity, keyHolderComp.KeyContainer);
+                            //keyHolderComp.KeyContainer.Insert(keyEntity, force: true);
                         }
                     }
 

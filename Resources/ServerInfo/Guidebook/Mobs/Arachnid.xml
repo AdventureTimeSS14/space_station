@@ -1,0 +1,25 @@
+<Document>
+  # Арахнид
+
+  <Box>
+    <GuideEntityEmbed Entity="MobArachnid" Caption=""/>
+  </Box>
+
+  В их инвентаре есть два дополнительных кармашка. Они могут есть сырое мясо без каких-либо побочных эффектов, но некоторые продукты, такие как шоколад и лук, отравляют их.
+  Они задыхаются на 50% быстрее, и их голубая кровь не поддерживает обмен веществ за счет железа, так как в ее основе лежит медь.
+
+  Их безоружные атаки наносят колющий урон, вместо тупого.
+
+  ## Шелководство
+
+  <Box>
+    <GuideEntityEmbed Entity="MaterialWebSilk" Caption=""/>
+    <GuideEntityEmbed Entity="ClothingUniformJumpskirtWeb" Caption=""/>
+    <GuideEntityEmbed Entity="WebShield" Caption=""/>
+    <GuideEntityEmbed Entity="WallWeb" Caption=""/>
+  </Box>
+
+  Арахниды могут создавать шелк, пока их желудок полон еды. Они (и только они) могут изготавливать из паутинного шелка различные предметы - от одежды и щитов до целых стен.
+
+
+</Document>

@@ -824,8 +824,6 @@
     attributes:
       proper: true
       gender: female
-  - type: StealTarget
-    stealGroup: AnimalSmile
 
 - type: entity
   name: Pun Pun

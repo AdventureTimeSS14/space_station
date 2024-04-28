@@ -25,7 +25,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/raven_hat.rsi
   - type: Clothing

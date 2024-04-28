@@ -265,11 +265,7 @@ namespace Content.Server.Chat.Managers
             {
                 return;
             }
-            var senderName = player.Name;
-            if (!string.IsNullOrEmpty(senderAdmin.Title))
-            {
-                senderName += $"\\[{senderAdmin.Title}\\]";
-            }
+            var senderName = !string.IsNullOrEmpty(senderAdmin.Title) ? $"\\[{senderAdmin.Title}\\]{player.Name}" : player.Name; //Префикс администрации для админ-чата, ADT.
             var wrappedMessage = Loc.GetString("chat-manager-send-admin-chat-wrap-message",
                                             ("adminChannelName", Loc.GetString("chat-manager-admin-channel-name")),
                                             ("playerName", senderName), ("message", FormattedMessage.EscapeText(message)));

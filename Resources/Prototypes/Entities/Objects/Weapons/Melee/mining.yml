@@ -108,6 +108,7 @@
 ##ADT add end
 
 # Like a crusher... but sucks
+# Not anymore, huh
 - type: entity
   parent: WeaponCrusher
   id: WeaponCrusherGlaive
@@ -117,7 +118,7 @@
   - type: Sprite
     sprite: Objects/Weapons/Melee/crusher_glaive.rsi
   - type: UseDelay
-    delay: 1.9
+    delay: 1.7
   - type: LeechOnMarker
     leech:
       groups:
@@ -125,6 +126,7 @@
         Burn: -10
         Airloss: -5
   - type: MeleeWeapon
+    range: 2.0
   - type: Tag
     tags:
       - Pickaxe
