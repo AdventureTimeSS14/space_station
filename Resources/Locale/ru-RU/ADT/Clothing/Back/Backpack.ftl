@@ -70,3 +70,7 @@ ent-ADTClothingSatchelParamedic = сумка парамедика
 ent-ADTClothingCriminalistBackpack = рюкзак криминалиста
     .desc = Рюкзак криминалиста, для переноски улик и специальных средств.
     .suffix = { "Криминалист" }
+
+ent-ADTClothingBackpackTimePatrol = рюкзак стража времени
+    .desc = Просто вместительный рюкзак.
+    .suffix = { "ОБВА" }

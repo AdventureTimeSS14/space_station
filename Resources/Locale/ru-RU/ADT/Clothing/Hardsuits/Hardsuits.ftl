@@ -86,3 +86,11 @@ ent-ADTClothingOuterHardsuitSecurityModernPur = {ent-ADTClothingOuterHardsuitSec
 ent-ADTClothingHeadSecurityModernPurple = {ent-ADTClothingHeadSecurityModern}
     .desc = {ent-ADTClothingHeadSecurityModern.desc}
     .suffix = { "Дарк" }
+
+ent-ADTClothingOuterHardsuitDeathsquad = скафандр стража времени
+    .desc = Скафандр путника из далёкого будущего выглядит как невероятная смесь высокотехнологичного костюма и космической брони. Поверьте, если он идёт за вами, то убегать нет смысла.
+    .suffix = { "ОБВА" }
+
+ent-ADTClothingHeadHelmetHardsuitDeathsquad = шлем стража времени
+    .desc = Шлем путника из будущего, выдерживает высокие нагрузки квантового потока. Представляет собой высокотехнологичное устройство, обеспечивающее защиту и комфорт во время путешествий во времени. Аккуратней после использования тянет на шоколадно-молочную продукцию.
+    .suffix = { "ОБВА" }
