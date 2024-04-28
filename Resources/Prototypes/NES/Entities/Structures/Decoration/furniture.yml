@@ -208,7 +208,7 @@
       global: true
       canShuttle: false
       sound:
-        path: /Audio/NES/StationEvents/ERTincoming.ogg
+        path: /Audio/Announcements/attention.ogg
         params:
           volume: -10
 
