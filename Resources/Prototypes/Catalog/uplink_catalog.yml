@@ -1200,7 +1200,7 @@
   description: uplink-clothing-outer-vest-web-desc
   productEntity: ClothingOuterVestWeb
   cost:
-    Telecrystal: 2
+    Telecrystal: 4
   categories:
   - UplinkWearables
 
