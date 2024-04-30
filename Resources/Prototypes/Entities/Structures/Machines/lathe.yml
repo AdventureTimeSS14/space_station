@@ -533,6 +533,7 @@
       - ADTSMESIndustrialMachineCircuitboard
       - ADTFormPrinterMachineCircuitboard
       - IndustrialChargerCircuitboard # Зарядник КПБ
+      - MachineBluespaceHarvesterCircuitboard
   - type: MaterialStorage
     whitelist:
       tags:
