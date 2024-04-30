@@ -1,5 +1,8 @@
 using Content.Shared.Actions;
+using Content.Shared.Changeling.Components;
 using Content.Shared.DoAfter;
+using Content.Shared.Humanoid;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared.Changeling;
@@ -124,3 +127,50 @@ public sealed partial class LingBiodegradeActionEvent : InstantActionEvent
 public sealed partial class LingResonantShriekEvent : InstantActionEvent
 {
 }
+
+[Serializable, NetSerializable]
+public sealed partial class RequestChangelingFormsMenuEvent : EntityEventArgs
+{
+    //public List<NetEntity> HumanoidData = new();
+    public List<HDATA> HumanoidData = new();
+
+    public NetEntity Target;
+
+    [Serializable]
+    public struct HDATA
+    {
+        public NetEntity NetEntity;
+        public string Name;
+
+        public string Species;
+    }
+    public RequestChangelingFormsMenuEvent(NetEntity target)
+    {
+        Target = target;
+    }
+}
+
+
+/// <summary>
+/// This event carries prototype-id of emote, which was selected. This class is a part of code which is responsible for using RadialUiController.
+/// </summary>
+[Serializable, NetSerializable]
+public sealed partial class SelectChangelingFormEvent : EntityEventArgs
+{
+    public NetEntity EntitySelected;
+
+    public NetEntity Target;
+
+    public bool Handled = false;
+
+    public SelectChangelingFormEvent(NetEntity target, NetEntity entitySelected)
+    {
+        Target = target;
+        EntitySelected = entitySelected;
+    }
+}
+// public sealed partial class OpenEmotesActionEvent : InstantActionEvent
+// {
+// }
+////////////ChangelingCycleDNAActionEvent/////////////////
+///
