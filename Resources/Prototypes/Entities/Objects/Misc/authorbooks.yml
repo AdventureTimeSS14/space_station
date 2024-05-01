@@ -10,6 +10,9 @@
         - state: book_narsie_legend
     - type: Paper
       content: book-text-narsielegend
+    - type: Construction
+      graph: SecretBook
+      node: startnarsielegend
 
 - type: entity
   parent: BookBase
@@ -23,6 +26,9 @@
         - state: book_truth
     - type: Paper
       content: book-text-truth
+    - type: Construction
+      graph: SecretBook
+      node: starttruth
 
 - type: entity
   parent: BookBase
@@ -36,6 +42,9 @@
         - state: book_world
     - type: Paper
       content: book-text-world
+    - type: Construction
+      graph: SecretBook
+      node: startworld
 
 - type: entity
   parent: BookBase
@@ -49,6 +58,9 @@
         - state: book_ian_antarctica
     - type: Paper
       content: book-text-ian-antarctica
+    - type: Construction
+      graph: SecretBook
+      node: startianantarctica
 
 - type: entity
   parent: BookBase
@@ -62,6 +74,9 @@
         - state: book_scsss
     - type: Paper
       content: book-text-sloth-clown-sss
+    - type: Construction
+      graph: SecretBook
+      node: startslothclownsss
 
 - type: entity
   parent: BookBase
@@ -75,6 +90,9 @@
         - state: book_scpz
     - type: Paper
       content: book-text-sloth-clown-pz
+    - type: Construction
+      graph: SecretBook
+      node: startslothclownpranks
 
 - type: entity
   parent: BookBase
@@ -88,6 +106,9 @@
         - state: book_scmmd
     - type: Paper
       content: book-text-sloth-clown-mmd
+    - type: Construction
+      graph: SecretBook
+      node: startslothclownmmd
 
 - type: entity
   parent: BookBase
@@ -101,6 +122,9 @@
         - state: book_struck
     - type: Paper
       content: book-text-struck
+    - type: Construction
+      graph: SecretBook
+      node: startstruck
 
 - type: entity
   parent: BookBase
@@ -114,6 +138,9 @@
         - state: book_sun
     - type: Paper
       content: book-text-sun
+    - type: Construction
+      graph: SecretBook
+      node: startsun
 
 - type: entity
   parent: BookBase
@@ -127,6 +154,9 @@
         - state: book_possum
     - type: Paper
       content: book-text-possum
+    - type: Construction
+      graph: SecretBook
+      node: startpossum
 
 - type: entity
   parent: BookBase
@@ -140,6 +170,9 @@
         - state: book_cafe
     - type: Paper
       content: book-text-cafe
+    - type: Construction
+      graph: SecretBook
+      node: startcafe
 
 - type: entity
   parent: BookBase
@@ -153,6 +186,9 @@
         - state: book4
     - type: Paper
       content: book-text-feather
+    - type: Construction
+      graph: SecretBook
+      node: startfeather
 
 - type: entity
   parent: BookBase
@@ -166,6 +202,9 @@
         - state: book_ian_wolfpup
     - type: Paper
       content: book-text-ian-wolfpup
+    - type: Construction
+      graph: SecretBook
+      node: startianlostwolfpup
 
 - type: entity
   parent: BookBase
@@ -179,6 +218,9 @@
         - state: book_ian_ranch
     - type: Paper
       content: book-text-ian-ranch
+    - type: Construction
+      graph: SecretBook
+      node: startianranch
 
 - type: entity
   parent: BookBase
@@ -192,6 +234,9 @@
         - state: book_ian_ocean
     - type: Paper
       content: book-text-ian-ocean
+    - type: Construction
+      graph: SecretBook
+      node: startianocean
 
 - type: entity
   parent: BookBase
@@ -205,6 +250,9 @@
         - state: book_ian_mountain
     - type: Paper
       content: book-text-ian-mountain
+    - type: Construction
+      graph: SecretBook
+      node: startianmountain
 
 - type: entity
   parent: BookBase
@@ -218,6 +266,9 @@
         - state: book_ian_city
     - type: Paper
       content: book-text-ian-city
+    - type: Construction
+      graph: SecretBook
+      node: startiancity
 
 - type: entity
   parent: BookBase
@@ -231,6 +282,9 @@
         - state: book_ian_arctic
     - type: Paper
       content: book-text-ian-arctic
+    - type: Construction
+      graph: SecretBook
+      node: startianarctic
 
 - type: entity
   parent: BookBase
@@ -244,6 +298,9 @@
         - state: book_ian_desert
     - type: Paper
       content: book-text-ian-desert
+    - type: Construction
+      graph: SecretBook
+      node: startiandesert
 
 - type: entity
   parent: BookBase
@@ -257,6 +314,9 @@
         - state: book_names
     - type: Paper
       content: book-text-names
+    - type: Construction
+      graph: SecretBook
+      node: startnames
 
 - type: entity
   parent: BookBase
@@ -270,6 +330,9 @@
         - state: book_earth
     - type: Paper
       content: book-text-earth
+    - type: Construction
+      graph: SecretBook
+      node: startearth
 
 - type: entity
   parent: BookBase
@@ -283,6 +346,9 @@
         - state: book_aurora
     - type: Paper
       content: book-text-aurora
+    - type: Construction
+      graph: SecretBook
+      node: startaurora
 
 - type: entity
   parent: BookBase
@@ -296,6 +362,9 @@
         - state: book_temple
     - type: Paper
       content: book-text-temple
+    - type: Construction
+      graph: SecretBook
+      node: startemple
 
 - type: entity
   parent: BookBase
@@ -309,6 +378,9 @@
         - state: book_watched
     - type: Paper
       content: book-text-watched
+    - type: Construction
+      graph: SecretBook
+      node: startwatched
 
 - type: entity
   parent: BookBase
@@ -322,6 +394,9 @@
         - state: book_medical
     - type: Paper
       content: book-text-medical-officer
+    - type: Construction
+      graph: SecretBook
+      node: startmedicalofficer
 
 - type: entity
   parent: BookBase
@@ -335,6 +410,9 @@
         - state: book_morgue
     - type: Paper
       content: book-text-morgue
+    - type: Construction
+      graph: SecretBook
+      node: startmorgue
 
 - type: entity
   parent: BookBase
@@ -348,6 +426,9 @@
         - state: book_rufus
     - type: Paper
       content: book-text-rufus
+    - type: Construction
+      graph: SecretBook
+      node: startrufus
 
 - type: entity
   parent: BookBase
@@ -361,6 +442,9 @@
         - state: book_map
     - type: Paper
       content: book-text-map
+    - type: Construction
+      graph: SecretBook
+      node: startmap
 
 - type: entity
   parent: BookBase
@@ -374,6 +458,9 @@
         - state: book_journ_mount
     - type: Paper
       content: book-text-journ-mount
+    - type: Construction
+      graph: SecretBook
+      node: startjourney
 
 - type: entity
   parent: BookBase
@@ -387,3 +474,6 @@
         - state: book6
     - type: Paper
       content: book-text-inspiration
+    - type: Construction
+      graph: SecretBook
+      node: startinspiration
