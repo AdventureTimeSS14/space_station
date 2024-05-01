@@ -1,0 +1,25 @@
+- type: entity
+  id: MachineBluespaceHarvesterCircuitboard
+  parent: BaseMachineCircuitboard
+  name: Bluespace Harvester board
+  description: A machine board for a Bluespace Harvester
+  components:
+    - type: Sprite
+      state: bluespace
+    - type: MachineBoard
+      prototype: BluespaceHarvester
+      requirements:
+        Manipulator: 5
+        Capacitor: 5
+        MatterBin: 15
+      materialRequirements:
+        Glass: 15
+        Steel: 15
+        CableHV: 5
+      tagRequirements:
+        GlassBeaker:
+          Amount: 5
+          DefaultPrototype: Beaker
+          ExamineName: Glass Beaker
+    - type: Item
+      size: Normal
