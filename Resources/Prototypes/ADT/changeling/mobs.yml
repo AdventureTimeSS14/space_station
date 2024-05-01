@@ -390,12 +390,11 @@
         type: Add
         time: 5
         refresh: false
-      - !type:GenericStatusEffect
-        key: ADTHallucinations
-        component: LingHallucinations
+      - !type:HallucinationsReagentEffect
         type: Add
         time: 10
-        refresh: false
+        refresh: true
+        proto: Changeling
         conditions:
         - !type:ReagentThreshold
           min: 15

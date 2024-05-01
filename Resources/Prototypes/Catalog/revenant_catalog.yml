@@ -49,3 +49,44 @@
   conditions:
   - !type:ListingLimitedStockCondition
     stock: 1
+
+  ## ADT revenant update
+
+- type: listing
+  id: RevenantHysteria
+  name: Mass hysteria
+  description: Start a long mass hallucination for people nearby. Using it leaves you vulnerable to attacks for a long period of time.
+  productAction: ActionRevenantHysteria
+  cost:
+    StolenEssence: 90
+  categories:
+  - RevenantAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: RevenantSmoke
+  name: Ghost smoke
+  description: Unleash a big foam. Using it leaves you vulnerable to attacks for a long period of time.
+  productAction: ActionRevenantSmoke
+  cost:
+    StolenEssence: 50
+  categories:
+  - RevenantAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: RevenantLock
+  name: Lock
+  description: Lock all doors that can be locked nearby. Using it leaves you vulnerable to attacks for a long period of time.
+  productAction: ActionRevenantLock
+  cost:
+    StolenEssence: 80
+  categories:
+  - RevenantAbilities
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1

@@ -44,10 +44,45 @@
 - type: entity
   id: ActionRevenantMalfunction
   name: Malfunction
-  description: Costs 60 Essence.
+  description: Costs 50 Essence.
   noSpawn: true
   components:
   - type: InstantAction
     icon: Interface/Actions/malfunction.png
     event: !type:RevenantMalfunctionActionEvent
     useDelay: 20
+
+    ## ADT revenant update
+
+- type: entity
+  id: ActionRevenantHysteria
+  name: Mass hysteria
+  description: Costs 60 Essence.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: Interface/Actions/masshysteria.png
+    event: !type:RevenantHysteriaActionEvent
+    useDelay: 90
+
+- type: entity
+  id: ActionRevenantSmoke
+  name: Hellish smoke
+  description: Costs 30 Essence.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: Interface/Actions/smoke.png
+    event: !type:RevenantGhostSmokeActionEvent
+    useDelay: 25
+
+- type: entity
+  id: ActionRevenantLock
+  name: Lock
+  description: Costs 50 Essence.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: Interface/Actions/air_lock.png
+    event: !type:RevenantLockActionEvent
+    useDelay: 25

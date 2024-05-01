@@ -4,10 +4,10 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Audio;
 using Robust.Shared.Random;
 
-namespace Content.Shared.Changeling.Components;
+namespace Content.Shared.Hallucinations;
 
 [RegisterComponent]
-public sealed partial class LingHallucinationsComponent : Component
+public sealed partial class HallucinationsComponent : Component
 {
     [Dependency] private readonly IRobustRandom _random = default!;
 
@@ -22,7 +22,8 @@ public sealed partial class LingHallucinationsComponent : Component
 
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public float Chance = 0.8f;
-    public List<EntProtoId> Spawns = new List<EntProtoId> { "ADTHallucinationMobSpider", "ADTHallucinationMobSlime", "ADTHallucinationMobBehonker", "ADTHallucinationRod" };
+
+    public List<EntProtoId> Spawns = new();
 
     [DataField]
     public SoundSpecifier Sound = new SoundPathSpecifier("/Audio/ADT/ling-drugs.ogg")
@@ -31,4 +32,9 @@ public sealed partial class LingHallucinationsComponent : Component
 
     [DataField]
     public int Layer = 50;
+
+    public HallucinationsPrototype? Proto;
+
+    [ValidatePrototypeId<HallucinationsPrototype>]
+    public string? HallucinationsPreset;
 }

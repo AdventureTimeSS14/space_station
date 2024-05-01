@@ -100,3 +100,6 @@
     - GalacticCommon
     understands:
     - GalacticCommon
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological

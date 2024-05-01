@@ -1,0 +1,37 @@
+- type: hallucinationsPack
+  id: Revenant
+  spawnRate: 40.0
+  spawnChance: 0.4
+  entities:
+  - ADTRevenantHallucination
+
+- type: entity
+  parent: ADTBaseEntityHallucination
+  id: ADTRevenantHallucination
+  name: "???"
+  description: "???"
+  suffix: DO NOT MAP
+  noSpawn: true
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: ADT/Mobs/hallucinations.rsi
+    layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: alternate4
+      - state: alternate4-unshaded
+        map: [ "unshaded" ]
+        shader: unshaded
+        visible: true
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.0
+    baseSprintSpeed: 2.7
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      95: Dead
+  - type: HTN
+    rootTask:
+      task: IdleCompound
+  - type: TimedDespawn
+    lifetime: 60.0

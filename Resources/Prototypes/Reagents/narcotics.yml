@@ -175,12 +175,12 @@
         visualType: Small
         messages: [ "narcotic-effect-rainbows" ]
         probability: 0.07
-      - !type:GenericStatusEffect
-        key: ADTHallucinations
-        component: LingHallucinations
+      - !type:HallucinationsReagentEffect
         type: Add
         time: 4
-        refresh: false
+        refresh: true
+        proto: Changeling
+        probability: 0.02
 
 - type: reagent
   id: THCOil # deprecated in favor of THC, preserved here for forks
@@ -205,13 +205,12 @@
         visualType: Small
         messages: [ "narcotic-effect-rainbows" ]
         probability: 0.07
-      - !type:GenericStatusEffect
-        key: ADTHallucinations
-        component: LingHallucinations
+      - !type:HallucinationsReagentEffect
         type: Add
         time: 6
-        refresh: false
-
+        refresh: true
+        proto: Changeling
+        probability: 0.02
 
 - type: reagent
   id: Nicotine

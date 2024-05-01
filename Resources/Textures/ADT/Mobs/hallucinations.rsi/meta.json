@@ -24,6 +24,28 @@
             "directions": 4
         },
         {
+            "name": "alternate4",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "alternate4-unshaded",
+            "delays": [
+                [
+                    0.8,
+                    0.8,
+                    0.8,
+                    0.8
+                ]
+            ]
+        },
+        {
             "name": "dead"
         }
     ]
