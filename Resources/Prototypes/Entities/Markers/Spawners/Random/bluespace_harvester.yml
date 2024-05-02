@@ -249,22 +249,22 @@
         state: cpuboard
   - type: RandomSpawner
     prototypes:
+      - AutolatheHyperConvectionMachineCircuitboard
+      - ProtolatheHyperConvectionMachineCircuitboard
+      - ShuttleConsoleCircuitboard
+      - PowerComputerCircuitboard
+      - CrewMonitoringComputerCircuitboard
       - SecurityTechFabCircuitboard
       - MedicalTechFabCircuitboard
-      - TelecomServerCircuitboard
       - AmmoTechFabCircuitboard
-      - CargoBountyComputerCircuitboard
-      - CargoRequestComputerCircuitboard
+      - MachineBluespaceHarvesterCircuitboard
+      - ADTIndustrialSMESMachineCircuitboard
     chance: 1.0
     offset: 0.0
     rarePrototypes:
-      - ResearchAndDevelopmentServerMachineCircuitboard
-      - IDComputerCircuitboard
-      - CommsComputerCircuitboard
       - BodyScannerComputerCircuitboard
       - CloningConsoleComputerCircuitboard
       - CloningPodMachineCircuitboard
-      - CargoShuttleComputerCircuitboard
     rareChance: 0.2
 
 # Technological
@@ -670,7 +670,6 @@
         state: icon
   - type: RandomSpawner
     prototypes:
-      - WeaponPulseRifle
       - WeaponPulsePistol
       - WeaponLightMachineGunL6
       - WeaponSniperHristov
