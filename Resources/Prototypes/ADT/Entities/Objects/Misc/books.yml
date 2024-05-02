@@ -44,7 +44,7 @@
     - ADTNewRecipes
   - type: Construction
     graph: SecretBook
-    node: startnewrecipes
+    node: startcooking
 
 - type: entity
   id: ADTBookNewCocktails
