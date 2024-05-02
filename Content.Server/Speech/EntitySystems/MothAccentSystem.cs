@@ -16,9 +16,9 @@ public sealed class MothAccentSystem : EntitySystem
         var message = args.Message;
 
         // buzzz
-        message = Regex.Replace(message, "z{1,3}", "zzz");
+        message = Regex.Replace(message, "з{1,3}", "ззз");
         // buZZZ
-        message = Regex.Replace(message, "Z{1,3}", "ZZZ");
+        message = Regex.Replace(message, "З{1,3}", "ЗЗЗ");
         
         args.Message = message;
     }
