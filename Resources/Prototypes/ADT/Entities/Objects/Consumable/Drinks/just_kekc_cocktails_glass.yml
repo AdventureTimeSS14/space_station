@@ -319,7 +319,7 @@
         - ReagentId: ADTAppleLiqueur
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/appleliqeureglass.rsi
+    sprite: ADT/Objects/Consumable/Drinks/apple_liqueur_glass.rsi
     state: icon
 
 - type: entity
