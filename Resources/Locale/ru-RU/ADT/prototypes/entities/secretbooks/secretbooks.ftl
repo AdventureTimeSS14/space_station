@@ -114,3 +114,16 @@ ent-ADTSecretBookDetective = { ent-BookDetective }
     .desc = { ent-BookDetective.desc }
 ent-ADTSecretBookBusido = { ent-BookBusido }
     .desc = { ent-BookBusido.desc }
+
+# Книги ADT 
+
+ent-ADTSecretBookNewChemicals = { ent-ADTBookNewChemicals }
+    .desc = { ent-ADTBookNewChemicals.desc }
+ent-ADTSecretBookNewCocktails = { ent-ADTBookNewCocktails }
+    .desc = { ent-ADTBookNewCocktails.desc }
+ent-ADTSecretBookNewRecipes = { ent-ADTBookNewRecipes }
+    .desc = { ent-ADTBookNewRecipes.desc }
+ent-ADTSecretBookSpaceLaw = { ent-ADTSpaceLaw }
+    .desc = { ent-ADTSpaceLaw.desc }
+ent-ADTSecretBookSrpOperatorCentComm = { ent-ADTBookSrpOperatorCentComm }
+    .desc = { ent-ADTBookSrpOperatorCentComm.desc }
