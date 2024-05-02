@@ -15,13 +15,16 @@
       - !type:SatiateThirst
         factor: 5
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtsummershade
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/summershade.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
 
 - type: reagent
   id: ADTWinterSun
   name: winter-sun-name
-  parent: BaseDrink
+  parent: ADTSummerShade
   desc: winter-sun-desc
   physicalDesc: reagent-physical-desc-milky
   flavor: ADTWinterSunFlavor
@@ -33,13 +36,13 @@
       - !type:SatiateThirst
         factor: 2
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtwintersun
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/wintersun.rsi
+    state: icon_empty
 
 - type: reagent
   id: ADTHungoverAngel
   name: hungover-angel-name
-  parent: BaseDrink
+  parent: ADTSummerShade
   desc: hungover-angel-desc
   physicalDesc: reagent-physical-desc-exhilarating
   flavor: ADTHungoverAngelFlavor
@@ -62,13 +65,13 @@
         messages: [ "medicine-effect-hungover" ]
         probability: 0.04
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adthungoverangel
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/hungoverangel.rsi
+    state: icon_empty
 
 - type: reagent
   id: ADTCitrusBalance
   name: citrus-balance-name
-  parent: BaseDrink
+  parent: ADTSummerShade
   desc: citrus-balance-desc
   physicalDesc: reagent-physical-desc-citric
   flavor: ADTCitrusBalanceFlavor
@@ -80,13 +83,13 @@
       - !type:SatiateThirst
         factor: 3
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtcitrusbalance
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/citrucbalance.rsi
+    state: icon_empty
 
 - type: reagent
   id: ADTDobryiDrink
   name: dobryi-drink-name
-  parent: BaseDrink
+  parent: ADTSummerShade
   desc: dobryi-drink-desc
   physicalDesc: reagent-physical-desc-sour
   flavor: ADTDobryiDrinkFlavor
@@ -98,13 +101,13 @@
       - !type:SatiateThirst
         factor: 2
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtdobryidrink
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/dobryi.rsi
+    state: icon_empty
 
 - type: reagent
   id: ADTMilkEclipse
   name: milk-eclipse-name
-  parent: BaseDrink
+  parent: ADTSummerShade
   desc: milk-eclipse-desc
   physicalDesc: reagent-physical-desc-refreshing
   flavor: ADTMilkEclipseFlavor
@@ -116,13 +119,13 @@
       - !type:SatiateThirst
         factor: 4
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtmilkeclipse
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/milkeclipse.rsi
+    state: icon_empty
 
 - type: reagent
   id: ADTArcticExplosion
   name: arctic-explosion-name
-  parent: BaseDrink
+  parent: ADTSummerShade
   desc: arctic-explosion-desc
   physicalDesc: reagent-physical-desc-refreshing
   flavor: ADTArcticExplosionFlavor
@@ -134,10 +137,8 @@
       - !type:SatiateThirst
         factor: 2
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtarcticexplosion
-
-
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/arcticexplosion.rsi
+    state: icon_empty
 
 # алкогольные
 
@@ -150,8 +151,11 @@
   flavor: ADTSugarKnightFlavor
   color: "#D36E70"
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtsugarknight
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/sugarknight.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
   metabolisms:
     Drink:
       effects:
@@ -164,14 +168,14 @@
 - type: reagent
   id: ADTGrapeLady
   name: grape-lady-name
-  parent: BaseAlcohol
+  parent: ADTSugarKnight
   desc: grape-lady-desc
   physicalDesc: reagent-physical-desc-dark-red
   flavor: ADTGrapeLadyFlavor
   color: "#8C4852"
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtgrapelady
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/grapelady.rsi
+    state: icon_empty
   metabolisms:
     Drink:
       effects:
@@ -184,14 +188,14 @@
 - type: reagent
   id: ADTSaturdayBaron
   name: saturday-baron-name
-  parent: BaseAlcohol
+  parent: ADTSugarKnight
   desc: saturday-baron-desc
   physicalDesc: reagent-physical-desc-tart
   flavor: ADTSaturdayBaronFlavor
   color: "#EFA94A"
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtsaturdaybaron
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/saturdaybaron.rsi
+    state: icon_empty
   metabolisms:
     Drink:
       effects:
@@ -204,14 +208,15 @@
 - type: reagent
   id: ADTArcticLatte
   name: artic-latte-name
-  parent: BaseAlcohol
+  parent: ADTSugarKnight
   desc: artic-latte-desc
   physicalDesc: reagent-physical-desc-refreshing
   flavor: ADTArcticLatteFlavor
   color: "#916631"
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtarcticlatte
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/arcticlatte.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
   metabolisms:
     Drink:
       effects:
@@ -224,14 +229,14 @@
 - type: reagent
   id: ADTSpecialTeaOolong
   name: special-teaoolong-name
-  parent: BaseAlcohol
+  parent: ADTSugarKnight
   desc: special-teaoolong-desc
   physicalDesc: reagent-physical-desc-overpowering
   flavor: ADTSpecialTeaOolongFlavor
   color: "#8c492a"
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtspecialteaoolong
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/teaoolong.rsi
+    state: icon_empty
   metabolisms:
     Drink:
       effects:
@@ -244,14 +249,14 @@
 - type: reagent
   id: ADTAzureBlue
   name: azure-blue-name
-  parent: BaseAlcohol
+  parent: ADTSugarKnight
   desc: azure-blue-desc
   physicalDesc: reagent-physical-desc-tropical
   flavor: ADTAzureBlueFlavor
   color: "#6498e3"
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtazureblue
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/azureblue.rsi
+    state: icon_empty
   metabolisms:
     Drink:
       effects:
@@ -264,14 +269,14 @@
 - type: reagent
   id: ADTPenetrationDrink
   name: penetration-drink-name
-  parent: BaseAlcohol
+  parent: ADTSugarKnight
   desc: penetration-drink-desc
   physicalDesc: reagent-physical-desc-overpowering
   flavor: ADTPenetrationDrinkFlavor
   color: "#6ddb6b"
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtpenetrationdrink
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/penetration.rsi
+    state: icon_empty
   metabolisms:
     Drink:
       effects:
@@ -284,14 +289,14 @@
 - type: reagent
   id: ADTEclipsedEclispe
   name: eclipsed-eclipse-name
-  parent: BaseAlcohol
+  parent: ADTSugarKnight
   desc: eclipsed-eclipse-desc
   physicalDesc: reagent-physical-desc-overpowering
   flavor: ADTEclipsedEclispeFlavor
   color: "#592506"
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adteclipsedeclispe
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/eclipsedeclipse.rsi
+    state: icon_empty
   metabolisms:
     Drink:
       effects:
@@ -304,14 +309,14 @@
 - type: reagent
   id: ADTSpaceBush
   name: space-bush-name
-  parent: BaseAlcohol
+  parent: ADTSugarKnight
   desc: space-bush-desc
   physicalDesc: reagent-physical-desc-fizzy
   flavor: ADTSpaceBushFlavor
   color: "#85de8e"
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtspacebush
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/spacebush.rsi
+    state: icon_empty
   metabolisms:
     Drink:
       effects:
@@ -324,14 +329,14 @@
 - type: reagent
   id: ADTBusinessConversation
   name: business-conversation-name
-  parent: BaseAlcohol
+  parent: ADTSugarKnight
   desc: business-conversation-desc
   physicalDesc: reagent-physical-desc-overpowering
   flavor: ADTBusinessConversationFlavor
   color: "#a8140a"
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtbizconversation
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/buisinessconservation.rsi
+    state: icon_empty
   metabolisms:
     Drink:
       effects:
@@ -347,15 +352,15 @@
 - type: reagent
   id: ADTAppleLiqueur
   name: apple-liqueur-name
-  parent: BaseAlcohol
+  parent: ADTSugarKnight
   desc: apple-liqueur-desc
   physicalDesc: reagent-physical-desc-cloudy
   flavor: ADTAppleLiqueurFlavor
   color: "#47941b"
   recognizable: true
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtappleliqueur
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/appleliqeureglass.rsi
+    state: icon_empty
   metabolisms:
     Drink:
       effects:
@@ -368,14 +373,14 @@
 - type: reagent
   id: ADTAppleMartini
   name: apple-martini-name
-  parent: BaseAlcohol
+  parent: ADTSugarKnight
   desc: apple-martini-desc
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: ADTAppleMartiniFlavor
   color: "#664300"
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtapplemartini
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/applemartini.rsi
+    state: icon_empty
   metabolisms:
     Drink:
       effects:
@@ -388,14 +393,14 @@
 - type: reagent
   id: ADTBacardiApple
   name: bacardi-apple-name
-  parent: BaseAlcohol
+  parent: ADTSugarKnight
   desc: bacardi-apple-desc
   physicalDesc: reagent-physical-desc-refreshing
   flavor: ADTBacardiAppleFlavor
   color: "#d4f2a7"
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtbacardiapple
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/bacardiapple.rsi
+    state: icon_empty
   metabolisms:
     Drink:
       effects:
