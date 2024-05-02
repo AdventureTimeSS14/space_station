@@ -6,14 +6,14 @@ ent-BluespaceHarvester = блюспейс-сборщик
 bluespace-harvester-window-lable-input = Ввод
 bluespace-harvester-window-lable-output = Вывод
 
-bluespace-harvester-window-level-input = Уровень ввода:
-bluespace-harvester-window-level-target = Уровень цели: 
+bluespace-harvester-window-level-input = Ввод уровня:
+bluespace-harvester-window-level-target = Целевой уровень: 
 bluespace-harvester-window-level-current = Текущий уровень:
 bluespace-harvester-window-level-desired = Желаемый уровень:
 
 bluespace-harvester-window-power-usage = Потребляемая энергия:
 bluespace-harvester-window-power-next = Энергии до следующего уровня:
-bluespace-harvester-window-power-surplus = Избыток энергии:
+bluespace-harvester-window-power-surplus = Энергия с избытком:
 
 bluespace-harvester-window-points-available = Доступные очки:
 bluespace-harvester-window-points-generation = Генерируемые очки:
