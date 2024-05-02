@@ -359,7 +359,7 @@
   color: "#47941b"
   recognizable: true
   metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/appleliqeureglass.rsi
+    sprite: ADT/Objects/Consumable/Drinks/apple_liqueur_glass.rsi
     state: icon_empty
   metabolisms:
     Drink:
