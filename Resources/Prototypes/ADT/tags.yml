@@ -84,3 +84,6 @@
 
 - type: Tag
   id: ADTMechEquipmentSec
+
+- type: Tag  
+  id: ADTBluespaceAnomalyCore
