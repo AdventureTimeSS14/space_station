@@ -2,29 +2,30 @@
   id: ZombieFaction
   priority: 11
   icon:
-    sprite: Interface/Misc/job_icons.rsi
-    state: JobIconZombie
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: Zombie
 
 - type: statusIcon
   id: RevolutionaryFaction
   priority: 11
   icon:
-    sprite: Interface/Misc/job_icons.rsi
+    sprite: /Textures/Interface/Misc/job_icons.rsi
     state: Revolutionary
 
 - type: statusIcon
   id: HeadRevolutionaryFaction
   priority: 11
   icon:
-    sprite: Interface/Misc/job_icons.rsi
+    sprite: /Textures/Interface/Misc/job_icons.rsi
     state: HeadRevolutionary
 
 - type: statusIcon
   id: MindShieldIcon
   priority: 2
-  locationPreference: Right
+  locationPreference: Left
+  layer: Mod
   icon:
-    sprite: Interface/Misc/job_icons.rsi
+    sprite: /Textures/Interface/Misc/job_icons.rsi
     state: MindShield
 
 - type: statusIcon
@@ -32,12 +33,12 @@
   priority: 0
   locationPreference: Left
   icon:
-    sprite: Interface/Misc/job_icons.rsi
+    sprite: /Textures/Interface/Misc/job_icons.rsi
     state: Syndicate
 
 - type: statusIcon
   id: ADTChangelingFaction
   priority: 11
   icon:
-    sprite: Interface/Misc/job_icons.rsi
-    state: JobIconChangeling
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: Changeling

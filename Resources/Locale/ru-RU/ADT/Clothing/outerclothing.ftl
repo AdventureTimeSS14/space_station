@@ -1,5 +1,5 @@
 ent-ADTClothingOuterJacketBartender = барная жилетка
-    .desc = удобная барная жилетка для повседневной носки.
+    .desc = Удобная и стильная жилетка. Смотрите, не испорьте удобство и стиль разлитым напитком.
     .suffix = { "" }
 
 ent-ADTClothingOuterCoatPyotrCoat = шинель Петра Шахина

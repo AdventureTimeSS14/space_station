@@ -12,16 +12,16 @@
   materials:
     Glass: 200
 
-- type: latheRecipe
-  id: DnaSyringeGun
-  result: DnaSyringeGun
-  completetime: 5
-  materials:
-    Steel: 350
-    Plastic: 350
-    Glass: 200
-    Plasma: 100
-    Silver: 100
+# - type: latheRecipe
+#   id: DnaSyringeGun
+#   result: DnaSyringeGun
+#   completetime: 5
+#   materials:
+#     Steel: 350
+#     Plastic: 350
+#     Glass: 200
+#     Plasma: 100
+#     Silver: 100
 
 - type: latheRecipe
   id: Syringecartridge
@@ -117,3 +117,10 @@
     Steel: 200
     Plastic: 300
     Glass: 500
+
+- type: latheRecipe
+  id: BaseChemistryEmptyVial
+  result: BaseChemistryEmptyVial
+  completetime: 2
+  materials:
+    Glass: 50

@@ -95,7 +95,6 @@ public abstract partial class SharedGunSystem : EntitySystem
         SubscribeLocalEvent<GunComponent, ExaminedEvent>(OnExamine);
         SubscribeLocalEvent<GunComponent, CycleModeEvent>(OnCycleMode);
         SubscribeLocalEvent<GunComponent, HandSelectedEvent>(OnGunSelected);
-        SubscribeLocalEvent<GunComponent, EntityUnpausedEvent>(OnGunUnpaused);
         SubscribeLocalEvent<GunComponent, MapInitEvent>(OnMapInit);
     }
 
@@ -121,11 +120,6 @@ public abstract partial class SharedGunSystem : EntitySystem
             component.NextFire = melee.NextAttack;
             Dirty(component);
         }
-    }
-
-    private void OnGunUnpaused(EntityUid uid, GunComponent component, ref EntityUnpausedEvent args)
-    {
-        component.NextFire += args.PausedTime;
     }
 
     private void OnShootRequest(RequestShootEvent msg, EntitySessionEventArgs args)
@@ -186,6 +180,15 @@ public abstract partial class SharedGunSystem : EntitySystem
             return true;
         }
 
+        /// ADT gloves gun start
+        if (_inventory.TryGetSlotEntity(entity, "gloves", out var gloves) &&
+            TryComp<GunComponent>(gloves, out var glovesMelee))
+        {
+            gunEntity = gloves.Value;
+            gunComp = glovesMelee;
+            return true;
+        }
+        /// ADT gloves gun end
         // Last resort is check if the entity itself is a gun.
         if (TryComp(entity, out gun))
         {
@@ -241,6 +244,13 @@ public abstract partial class SharedGunSystem : EntitySystem
                 return;
         }
         ///ADT-Personal-Gun block end
+
+        /// ADT gloves gun start
+        if (EntityManager.TryGetComponent(user, out HandsComponent? hands) && hands != null && hands.ActiveHandEntity != null && _inventory.TryGetSlotEntity(user, "gloves", out var gloves) && gloves.Value == gunUid)
+        {
+            return;
+        }
+        /// ADT gloves gun end
 
         var toCoordinates = gun.ShootCoordinates;
 

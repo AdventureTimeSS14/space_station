@@ -2,7 +2,7 @@
   id: ADTOrigin
   mapName: 'Origin'
   mapPath: /Maps/ADTMaps/adt_origin.yml
-  minPlayers: 50
+  minPlayers: 30
   stations:
     ADTOrigin:
       stationProto: StandardNanotrasenStation

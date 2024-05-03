@@ -19,21 +19,6 @@
     graph: DuffelDurathead
     node: DuffelDurathead
 
-#дюффель детектива
-
-- type: entity
-  noSpawn: true
-  parent: ClothingBackpackDuffelSecurity
-  id: ClothingBackpackDuffelSecurityFilledDetective
-  components:
-  - type: StorageFill
-    contents:
-      - id: BoxSurvival
-      - id: BoxForensicPad
-      - id: ForensicScanner
-      - id: ADTSpaceLaw
-      - id: Flash
-
 #медики
 - type: entity
   parent: ClothingBackpackDuffel
@@ -53,5 +38,5 @@
   - type: Sprite
     sprite: ADT/Clothing/Back/paramedic_duffel.rsi
   - type: StorageFill
-    contents:    
+    contents:
       - id: SpaceCash500

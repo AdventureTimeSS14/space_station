@@ -344,7 +344,7 @@
     - type: BodyEmotes
       soundsId: GeneralBodyEmotes
     - type: DamageVisuals
-      thresholds: [20, 40, 100]
+      thresholds: [20, 50, 100]
       targetLayers:
         - "enum.HumanoidVisualLayers.Chest"
         - "enum.HumanoidVisualLayers.Head"
@@ -356,8 +356,8 @@
         Brute:
           sprite: Mobs/Effects/brute_damage.rsi
           color: "#1a1a1a"
-        # Burn:
-        #   sprite: Mobs/Effects/burn_damage.rsi
+        Burn:
+          sprite: Mobs/Effects/burn_damage.rsi
     # Organs
     - type: IdExaminable
     - type: HealthExaminable

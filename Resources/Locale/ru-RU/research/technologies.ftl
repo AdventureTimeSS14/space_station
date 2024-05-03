@@ -80,3 +80,10 @@ research-technology-advanced-anomaly-research = Продвинутые иссл�
 research-technology-portable-fission = Эксперементальные батареи
 
 ADT-research-technology-doll-house = Кукольный домик
+ADT-research-technology-gigax = Боевой мех "Гайгэкс"
+ADT-research-technology-odysseus = Медицинский мех "Одиссей"
+ADT-research-technology-medgun = Медиган
+ADT-research-technology-clarke = Исследовательский мех "Кларк"
+ADT-research-technology-durand = Боевой мех "Дюранд"
+ADT-research-technology-phazon = Боевой мех "Фазон"
+ADT-research-technology-ripleymk2 = Пакет модификации меха "Рипли"
