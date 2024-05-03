@@ -17,3 +17,7 @@ ent-ADTHolosignShipForcefieldNT = Корабельный щит
 ent-ADTHolosignShipForcefieldGorlax = Корабельный щит
     .desc = Сдерживающие поле, останавливающее снаряды, но пропускающее лучи энергооружия
     .suffix = { "Горлакс" }
+
+ent-ADTSyndiHolosignForcefield = Голобарьер
+    .desc = Сдерживающие поле
+    .suffix = { "Синдикат" }
