@@ -2,6 +2,7 @@ using Content.Shared.Actions;
 using Content.Shared.Changeling.Components;
 using Content.Shared.DoAfter;
 using Content.Shared.Humanoid;
+using Content.Shared.Preferences;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 
@@ -141,8 +142,8 @@ public sealed partial class RequestChangelingFormsMenuEvent : EntityEventArgs
     {
         public NetEntity NetEntity;
         public string Name;
-
         public string Species;
+        public HumanoidCharacterProfile Profile;
     }
     public RequestChangelingFormsMenuEvent(NetEntity target)
     {

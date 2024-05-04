@@ -39,6 +39,9 @@ using Content.Shared.Sirena.CollectiveMind;
 using Content.Shared.Effects;
 using System.Linq;
 using Content.Shared.Weapons.Ranged.Events;
+using Content.Shared.Preferences;
+using Content.Server.Database;
+using Content.Server.Humanoid;
 
 
 namespace Content.Server.Changeling.EntitySystems;
@@ -66,6 +69,7 @@ public sealed partial class ChangelingSystem : EntitySystem
     [Dependency] private readonly AlertsSystem _alertsSystem = default!;
     [Dependency] private readonly StunSystem _stun = default!;
     [Dependency] private readonly FlashSystem _flashSystem = default!;
+    [Dependency] private readonly HumanoidAppearanceSystem _humanoid = default!;
 
     public override void Initialize()
     {
@@ -328,13 +332,27 @@ public sealed partial class ChangelingSystem : EntitySystem
                 var netEntity = GetNetEntity(item.EntityUid);
                 if (netEntity == null)
                     continue;
-                if(item.EntityUid ==null)
+                if (item.EntityUid == null)
                     continue;
                 //ev.HumanoidData.Add(netEntity.Value);
+                HumanoidCharacterAppearance hca = new();
+                if (item.HumanoidAppearanceComponent == null)
+                    continue;
+                hca.WithEyeColor(item.HumanoidAppearanceComponent.EyeColor)
+                    .WithSkinColor(item.HumanoidAppearanceComponent.SkinColor)
+                    .WithHairColor(item.HumanoidAppearanceComponent.CachedHairColor != null ? item.HumanoidAppearanceComponent.CachedHairColor.Value : Color.Black);
+                foreach (var layer in item.HumanoidAppearanceComponent.BaseLayers)
+                {
+
+                }
+                //    WithHairColor(item.HumanoidAppearanceComponent.BaseLayers.)
+                //    WithFacialHairColor(item.HumanoidAppearanceComponent.CachedFacialHairColor)
                 ev.HumanoidData.Add(new()
                 {
                     NetEntity = netEntity.Value,
-                    Name = Name(item.EntityUid.Value)
+                    Name = Name(item.EntityUid.Value),
+                    Species = item.HumanoidAppearanceComponent.Species.Id,
+                    Profile = new HumanoidCharacterProfile().WithCharacterAppearance(hca).WithSpecies(item.HumanoidAppearanceComponent.Species.Id)
                 });
             }
 

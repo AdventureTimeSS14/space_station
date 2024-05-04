@@ -1,19 +1,21 @@
 /// Made for Adventure Time Project by ModerN. https://github.com/modern-nm mailto:modern-nm@yandex.by
 /// see also https://github.com/DocNITE/liebendorf-station/tree/feature/emote-radial-panel
-using Content.Client.Language.Systems;
+using Content.Client.Humanoid;
 using Content.Client.UserInterface.Systems.Radial;
 using Content.Client.UserInterface.Systems.Radial.Controls;
 using Content.Shared.Changeling;
-using Content.Shared.Changeling.Components;
-using Content.Shared.Polymorph;
+using Content.Shared.Humanoid.Prototypes;
 using FastAccessors;
 using Robust.Client.GameObjects;
 using Robust.Client.Player;
 using Robust.Client.UserInterface;
+using Robust.Client.UserInterface.Controls;
+using Robust.Shared.Map;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
+using System.Numerics;
 
 namespace Content.Client.ADT.Language;
 
@@ -24,6 +26,8 @@ public sealed class ChangelingPanelSystem : EntitySystem
     [Dependency] private readonly IUserInterfaceManager _userInterfaceManager = default!;
     [Dependency] private readonly IPlayerManager _playerMan = default!;
     [Dependency] private readonly SpriteSystem _spriteSystem = default!;
+    [Dependency] private readonly IEntityManager _entManager = default!;
+    [Dependency] private readonly HumanoidAppearanceSystem _appearanceSystem = default!;
 
     /// <summary>
     /// We should enable radial for single target
@@ -59,17 +63,16 @@ public sealed class ChangelingPanelSystem : EntitySystem
 
         foreach (var humanoid in args.HumanoidData)
         {
+            var dummy = _entManager.SpawnEntity(_proto.Index<SpeciesPrototype>(humanoid.Species).DollPrototype, MapCoordinates.Nullspace);
             //var humanoidEntityUid = GetEntity(humanoid); // Entities on the client outside of the FOV are nonexistant. You can see that if you zoom out. //So it'll give you UID 0 which is EntityUid.Invalid.
+            _appearanceSystem.LoadProfile(dummy, humanoid.Profile);
+            var face = new SpriteView();
+            face.SetEntity(dummy);
 
-            // foreach (var humanoidData in args.ChangelingComponent.StoredDNA)
-            // {
-            //     if (humanoidData.EntityUid == humanoidEntityUid)
-            //     {
-            //
             var actionName = humanoid.Name;
             var texturePath = _spriteSystem.Frame0(new SpriteSpecifier.Texture(new ResPath(DefaultIcon)));
 
-            var emoteButton = _openedMenu.AddButton(actionName, texturePath);
+            var emoteButton = _openedMenu.AddButton(actionName, texturePath, face);
             emoteButton.Opacity = 210;
             emoteButton.Tooltip = null;
             emoteButton.Controller.OnPressed += (_) =>
@@ -78,8 +81,6 @@ public sealed class ChangelingPanelSystem : EntitySystem
                 RaiseNetworkEvent(ev);
                 _openedMenu.Dispose();
             };
-            // }
-            // }
         }
         _openedMenu.OnClose += (_) =>
         {
@@ -90,51 +91,6 @@ public sealed class ChangelingPanelSystem : EntitySystem
 
     }
 
-    // private void HandleLanguageMenuEvent(RequestLanguageMenuEvent args)
-    // {
-    //     if (_openedMenu != null)
-    //         return;
-    //     if (_playerMan.LocalEntity == null)
-    //     {
-    //         return;
-    //     }
-    //     TryComp<LanguageSpeakerComponent>(_playerMan.LocalEntity.Value, out var languageSpeakerComponent);
-
-    //     _openedMenu = _userInterfaceManager.GetUIController<RadialUiController>()
-    //         .CreateRadialContainer();
-
-    //     foreach (var protoId in args.Languages)
-    //     {
-    //         var prototype = _languageSystem.GetLanguage(protoId);
-    //         if (prototype == null)
-    //         {
-    //             continue;
-    //         }
-    //         var actionName = prototype.LocalizedName;
-    //         var texturePath = _spriteSystem.Frame0(new SpriteSpecifier.Texture(new ResPath(DefaultIcon)));
-    //         if (prototype.Icon != null)
-    //             texturePath = _spriteSystem.Frame0(prototype.Icon);
-
-    //         var languageButton = _openedMenu.AddButton(actionName, texturePath);
-    //         languageButton.Opacity = 210;
-    //         languageButton.Tooltip = null;
-    //         languageButton.Controller.OnPressed += (_) =>
-    //         {
-    //             var ev = new SelectLanguageEvent(args.Target, protoId);
-    //             RaiseNetworkEvent(ev);
-    //             _openedMenu.Dispose();
-    //         };
-    //     }
-
-    //     _openedMenu.OnClose += (_) =>
-    //     {
-    //         _openedMenu = null;
-    //     };
-    //     if (_playerMan.LocalEntity != null)
-    //         _openedMenu.OpenAttached(_playerMan.LocalEntity.Value);
-
-    // }
-
     private void OnPlayerAttached(PlayerAttachedEvent args)
     {
         _openedMenu?.Dispose();
@@ -142,6 +98,6 @@ public sealed class ChangelingPanelSystem : EntitySystem
 
     private void OnPlayerDetached(PlayerDetachedEvent args)
     {
-       _openedMenu?.Dispose();
+        _openedMenu?.Dispose();
     }
 }
