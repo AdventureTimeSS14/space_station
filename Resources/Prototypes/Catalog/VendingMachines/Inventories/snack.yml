@@ -1,6 +1,11 @@
 - type: vendingMachineInventory
   id: GetmoreChocolateCorpInventory
   startingInventory:
+    ADTFoodEggBoiledEaster: 6
+    ADTFoodKulichSmall: 3
+    ADTFoodKulichBig: 3
+    ADTFoodKulichCheesy: 3
+    ADTFoodSweetRoll: 3
     ADTFoodTinCondensedMilk: 3
     FoodSnackRaisins: 3
     FoodSnackChocolate: 3
