@@ -820,6 +820,7 @@
       - ShuttleGunPerforatorCircuitboard
       - ShuttleGunFriendshipCircuitboard
       - ShuttleGunDusterCircuitboard
+      - ADTWeaponIonRifle
   - type: MaterialStorage
     whitelist:
       tags:

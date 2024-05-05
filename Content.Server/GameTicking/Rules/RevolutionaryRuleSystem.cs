@@ -305,11 +305,14 @@ public sealed class RevolutionaryRuleSystem : GameRuleSystem<RevolutionaryRuleCo
             {
                 if (HasComp<HeadRevolutionaryComponent>(uid))
                     continue;
-                AddComp<HeadRevolutionaryComponent>(uid);
-                return false;
+                if (TryComp<MobStateComponent>(uid, out var mobstate) && mobstate.CurrentState == MobState.Alive)
+                {
+                    AddComp<HeadRevolutionaryComponent>(uid);
+                    return false;
+                }
             }
         }
-        return false;
+        return true;
     }
 
     /// <summary>
