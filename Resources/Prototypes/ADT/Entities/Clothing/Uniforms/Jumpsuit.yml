@@ -1279,3 +1279,29 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/trader.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/trader.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformCroupier
+  name: crupier jumpsuit
+  description: Fancy.
+  components:
+  #- type: Appearance
+  #- type: Foldable
+    #canFoldInsideContainer: true
+    #unfoldVerbText: fold-put-on-verb
+    #foldVerbText: fold-pull-off-verb
+  #- type: FoldableClothing
+    #foldedEquippedPrefix: vest
+    #foldedHeldPrefix: vest
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/uniform_croupier.rsi
+    #equippedPrefix: vest
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/uniform_croupier.rsi
+    #layers:
+    #- state: icon
+      #map: [ "unfoldedLayer" ]
+    #- state: icon_vest
+      #map: ["foldedLayer"]
+      #visible: false

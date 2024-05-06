@@ -1,0 +1,137 @@
+- type: entity
+  parent: FoodEggBase
+  id: ADTFoodEggBoiledEaster
+  name: easter egg
+  description: easter egg
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+      map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 6
+        reagents:
+        - ReagentId: EggCooked
+          Quantity: 6
+  - type: Temperature
+    # preserve temperature from the boiling step
+    currentTemperature: 344
+  - type: RandomSprite
+    available:
+      - enum.DamageStateVisualLayers.Base:
+          blue: ""
+          green: ""
+          orange: ""
+          purple: ""
+          rainbow: ""
+          red: ""
+          yellow: ""
+
+- type: entity
+  name: kulich small
+  parent: FoodBakedBase
+  id: ADTFoodKulichSmall
+  description: kulich small
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/easter.rsi
+    state: small
+  - type: FlavorProfile
+    flavors:
+      - sweet
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 8
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 1
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
+
+- type: entity
+  name: kulich big
+  parent: FoodBakedBase
+  id: ADTFoodKulichBig
+  description: kulich big
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/easter.rsi
+    state: big
+  - type: FlavorProfile
+    flavors:
+      - sweet
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 35
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 25
+        - ReagentId: Vitamin
+          Quantity: 5
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
+  - type: Item
+    size: Normal
+
+- type: entity
+  name: kulich cheesy
+  parent: FoodBakedBase
+  id: ADTFoodKulichCheesy
+  description: kulich cheesy
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/easter.rsi
+    state: cheesy
+  - type: FlavorProfile
+    flavors:
+      - sweet
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 2
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
+    - ADTCarnivoreFriendlyFood
+  - type: Item
+    size: Small
+
+- type: entity
+  name: sweet roll
+  parent: FoodBakedBase
+  id: ADTFoodSweetRoll
+  description: sweet roll
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/easter.rsi
+    state: sweetroll
+  - type: FlavorProfile
+    flavors:
+      - sweet
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 2
+  - type: Tag
+    tags:
+    - ADTMothFriendlyFood
+  - type: Item
+    size: Small
