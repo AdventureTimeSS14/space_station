@@ -244,10 +244,16 @@
       melee:
         reagents:
         - ReagentId: ChloralHydrate
-          Quantity: 80
+          Quantity: 30
+  - type: SolutionRegeneration
+    solution: melee
+    generated:
+      reagents:
+      - ReagentId: ChloralHydrate
+        Quantity: 2
   - type: MeleeChemicalInjector
     solution: melee
-    transferAmount: 4
+    transferAmount: 1.5
   - type: ReplacementAccent
     accent: xeno
   - type: InteractionPopup
