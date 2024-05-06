@@ -253,7 +253,7 @@
         Quantity: 2
   - type: MeleeChemicalInjector
     solution: melee
-    transferAmount: 1.5
+    transferAmount: 2
   - type: ReplacementAccent
     accent: xeno
   - type: InteractionPopup
