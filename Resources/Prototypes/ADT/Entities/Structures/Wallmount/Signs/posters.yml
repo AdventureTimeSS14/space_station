@@ -776,3 +776,14 @@
   components:
   - type: Sprite
     state: quadro_electronics
+
+- type: entity
+  parent: ADTPosterBaseKek
+  id: ADTPosterContrabandRoza
+  name: Roza
+  description: "A face of Atmosia."
+  components:
+  - type: Sprite
+    sprite: ADT/Structures/Wallmounts/128x128posters.rsi
+    state: roza
+    scale: 0.25, 0.25

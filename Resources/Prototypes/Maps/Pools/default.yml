@@ -15,8 +15,8 @@
   # - Saltern
   # - Packed
   #- Reach
-  # - CorvaxDelta
-  - CorvaxAvrite
+  - CorvaxDelta
+  # - CorvaxAvrite
   - ADTAtlas
   - ADTBagel
   - ADTBox

@@ -76,10 +76,10 @@
   - type: LanguageSpeaker
     speaks:
     - GalacticCommon
-    - RobotTalk
+    - BorgTalk
     understands:
     - GalacticCommon
-    - RobotTalk
+    - BorgTalk
 
 - type: entity
   name: drone
@@ -200,9 +200,9 @@
   # Frontier - languages mechanic
   - type: LanguageSpeaker
     speaks:
-    - RobotTalk
+    - BorgTalk
     understands:
-    - RobotTalk
+    - BorgTalk
 
 
 - type: entity

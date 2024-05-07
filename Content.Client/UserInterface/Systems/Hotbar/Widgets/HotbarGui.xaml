@@ -34,7 +34,7 @@
                 VerticalExpand="False"
                 ExpandBackwards="True"
                 Columns="6"
-                HorizontalExpand="False"/>
+                HorizontalExpand="False"/> <!-- Я ХЗ ЧЧТО ТУТ МЕНЯТЬ -->
             <hands:HandsContainer
                 Name="HandContainer"
                 Access="Public"

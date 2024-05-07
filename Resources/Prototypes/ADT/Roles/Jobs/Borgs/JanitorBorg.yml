@@ -4,8 +4,12 @@
   description: job-description-borg
   playTimeTracker: JobJanitorBorg
   requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 216000 #60 hrs
+    - !type:DepartmentTimeRequirement
+      department: Cyborgs
+      time: 18000 #5 hr
+    - !type:RoleTimeRequirement
+      role: JobJanitor
+      time: 18000 #5 hrs
   canBeAntag: false
   icon: JobIconBorg
   supervisors: job-supervisors-rd

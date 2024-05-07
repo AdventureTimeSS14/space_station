@@ -145,7 +145,7 @@
     state: icon-0
   product: CrateNPCMouse
   cost: 15000
-  category: Livestock
+  category: cargoproduct-category-name-livestock
   group: market
 
 - type: cargoProduct

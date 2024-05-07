@@ -21,7 +21,7 @@
       coefficients:
         Blunt: 0.9
         Slash: 0.75
-        Piercing: 0.8
+        Piercing: 0.6
         Heat: 0.4
         Radiation: 0.2
   - type: ToggleableClothing
@@ -38,8 +38,8 @@
   - type: Clothing
     sprite: ADT/Clothing/OuterClothing/Hardsuits/pilotsuitsec.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
+    walkModifier: 0.9
+    sprintModifier: 0.9
   - type: PressureProtection
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 10000
@@ -48,11 +48,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.7
-        Slash: 0.6
-        Piercing: 0.7
+        Blunt: 0.9
+        Slash: 0.75
+        Piercing: 0.6
         Heat: 0.4
-        Radiation: 0.4
+        Radiation: 0.2
   - type: ToggleableClothing
     clothingPrototype: ADTPilotSuitHelmSEC
 

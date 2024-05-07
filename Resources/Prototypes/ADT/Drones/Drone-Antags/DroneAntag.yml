@@ -8,9 +8,6 @@
   - type: MindContainer
   - type: InputMover
   - type: MobMover
-  - type: Reactive
-    groups:
-      Acidic: [Touch]
   - type: Input
     context: "human"
   - type: DamageOnHighSpeedImpact
@@ -246,13 +243,6 @@
     channels:
     - ADTDroneAntagChannel
     - Common
-  - type: Temperature
-    heatDamageThreshold: 5000
-    currentTemperature: 310.15
-    specificHeat: 42
-    heatDamage:
-      types:
-        Heat : 1 #per second, scales with temperature & other constants
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -405,13 +395,6 @@
     channels:
     - ADTDroneAntagChannel
     - Common
-  - type: Temperature
-    heatDamageThreshold: 5000
-    currentTemperature: 310.15
-    specificHeat: 42
-    heatDamage:
-      types:
-        Heat : 1 #per second, scales with temperature & other constants
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -565,13 +548,6 @@
     channels:
     - ADTDroneAntagChannel
     - Common
-  - type: Temperature
-    heatDamageThreshold: 5000
-    currentTemperature: 310.15
-    specificHeat: 42
-    heatDamage:
-      types:
-        Heat : 1 #per second, scales with temperature & other constants
   - type: Sprite
     drawdepth: Mobs
     layers:

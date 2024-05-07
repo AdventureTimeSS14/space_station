@@ -14,4 +14,7 @@
         factor: 2
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/cocoa_drink.rsi
-    state: icon
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
