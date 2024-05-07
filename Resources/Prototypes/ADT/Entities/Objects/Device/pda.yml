@@ -1,0 +1,107 @@
+- type: entity
+  parent: BasePDA
+  id: MagistratPDA
+  name: magistrat PDA
+  description: magistrat PDA
+  components:
+  - type: Pda
+    id: MagistratIDCard
+    state: pda-lawyer
+  - type: Icon
+    state: pda-lawyer
+
+- type: entity
+  parent: BasePDA
+  id: VirusologPDA
+  name: Virusolog PDA
+  description: Shiny and sterile. Has a built-in health analyzer.
+  components:
+    - type: Pda
+      id: VirusologIDCard
+      state: pda-medical
+    - type: Icon
+      state: pda-medical
+    - type: HealthAnalyzer
+      scanDelay: 1.2
+      scanningEndSound:
+        path: "/Audio/Items/Medical/healthscanner.ogg"
+    - type: CrewMonitoringConsole
+
+- type: entity
+  parent: MedicalPDA
+  id: ADTPathologistPDA
+  name: pathologist's PDA
+  description: It breezes chill.
+  components:
+  - type: Pda
+    id: ADTPathologistIDCard
+    state: pda-pathologist
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#15616b"
+
+- type: entity
+  parent: BasePDA
+  id: ADTBlueShieldOfficerPDA
+  name: BlueShield PDA
+  description: Smells like protection.
+  components:
+    - type: Pda
+      id: ADTBlueShieldOfficerIDCard
+      state: pda-ert
+    - type: PdaBorderColor
+      borderColor: "#A32D26"
+      accentVColor: "#447987"
+    - type: Icon
+      state: pda-ert
+    - type: HealthAnalyzer
+      scanDelay: 1.2
+
+- type: entity
+  parent: BasePDA
+  id: ADTRoboticistPDA
+  name: roboticist PDA
+  description: It's covered with an unknown gooey substance.
+  components:
+  - type: Pda
+    id: ResearchIDCard
+    state: pda-roboticist
+  - type: PdaBorderColor
+    borderColor: "#171716"
+    accentVColor: "#d90000"
+  - type: Icon
+    state: pda-roboticist
+
+
+- type: entity
+  parent: BasePDA
+  id: ADTInvestigatorPDA
+  name: investigator PDA
+  description: It smells like ink and the case is prematurely closed due to the death of a suspect at work.
+  components:
+  - type: Pda
+    id: ADTInvestigatorIDCard
+    state: pda-investigator
+  - type: PdaBorderColor
+    borderColor: "#774705"
+  - type: Icon
+    state: pda-investigator
+
+
+- type: entity
+  parent: BasePDA
+  id: ADTCriminalistPDA
+  name: Criminalist PDA
+  suffix: Criminalist
+  description: Criminalist PDA
+  components:
+  - type: Pda
+    id: ADTInvestigatorIDCard
+    state: pda-criminalist
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+    accentHColor: "#447987"
+    accentVColor: "#447987"
+  - type: Icon
+    state: pda-criminalist
+  - type: ForensicScanner
