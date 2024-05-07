@@ -31,6 +31,7 @@
 
 - type: entity
   name: lightning
+  noSpawn: true
   id: Lightning
   parent: BaseLightning
   components:
@@ -110,6 +111,7 @@
 - type: entity
   name: supercharged lightning
   id: SuperchargedLightning
+  noSpawn: true
   parent: ChargedLightning
   components:
     - type: Sprite
