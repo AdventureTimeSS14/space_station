@@ -90,28 +90,6 @@
     shortscale: 0.9
 
 - type: entity
-  save: false
-  name: Ash walker
-  description: Aboriginal, extremely aggressive.
-  parent: BaseMobAshWalker
-  id: MobAshWalker
-
-- type: entity
-  name: Ash walker spawner
-  id: MobAshWalkerSpawner
-  parent: MarkerBase
-  components:
-    - type: Sprite
-      layers:
-        - sprite: ADT/Markers/job.rsi
-          state: green
-        - sprite: ADT/Mobs/Lavaland/ashwalker.rsi
-          state: ash
-    - type: ConditionalSpawner
-      prototypes:
-        - MobAshWalker
-
-- type: entity
   parent: BaseSpeciesDummy
   id: MobAshWalkerDummy
   noSpawn: true
@@ -119,3 +97,4 @@
   components:
   - type: HumanoidAppearance
     species: Reptilian
+

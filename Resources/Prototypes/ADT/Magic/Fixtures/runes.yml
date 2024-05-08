@@ -1,0 +1,29 @@
+﻿- type: entity
+  parent: CollideRune
+  id: ADTExplosionRuneCult
+  name: "explosion rune"
+  suffix: "Cult of the Lamb, NOT explosion, it`s Decoration"
+  components:
+    - type: Sprite
+      sprite: Structures/Magic/Cult/trap.rsi
+      layers:
+        - state: trap
+          color: '#cc1b00'
+
+- type: entity
+  parent: CollideRune
+  id: ADTUnlimitedLithing
+  name: "explosion rune"
+  suffix: "Cult of the Lamb, NOT explosion, it`s Decoration"
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Misc/empity.rsi
+      layers:
+        - state: icon
+          #color: '#FF00FF'
+          #color: '#cc1b00'
+    - type: PointLight
+      radius: 14
+      energy: 3.5
+      color: "#ff3333"
+      castShadows: false

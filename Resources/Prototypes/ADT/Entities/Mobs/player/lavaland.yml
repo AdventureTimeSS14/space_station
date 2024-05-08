@@ -1,0 +1,8 @@
+- type: entity
+  save: false
+  name: Ash walker
+  description: Aboriginal, extremely aggressive.
+  parent: BaseMobAshWalker
+  id: MobAshWalker
+
+  
