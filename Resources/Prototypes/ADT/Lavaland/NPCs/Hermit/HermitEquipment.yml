@@ -1,12 +1,4 @@
 - type: startingGear
-  id: ADTAshWalkerEquipment
-  equipment:
-    shoes: ClothingShoesCult 
-    head: ClothingHeadHelmetBone 
-    outerClothing: ClothingOuterArmorBone 
-    back: SpearBone
-
-- type: startingGear
   id: ADTHemritEquipment
   equipment:
     jumpsuit: ClothingUniformJumpsuitTacticool #

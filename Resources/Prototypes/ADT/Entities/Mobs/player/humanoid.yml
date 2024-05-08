@@ -35,7 +35,24 @@
       prototypes: [ ADTOperatorCentCommGear ]
     - type: InitialInfectedExempt
 
-
+- type: startingGear
+  id: ADTOperatorCentCommGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomOfficial
+    shoes: ClothingShoesBootsCombatFilled
+    head: ClothingHeadHatCentcom
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesColorBlack
+    outerClothing: ClothingOuterArmorBasic
+    id: CentcomPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: BoxFolderCentComClipboard
+    pocket1: ADTBookSrpOperatorCentComm
+    pocket2: PhoneInstrument
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
 #START-Event-Cult-of-the-Lamb
 - type: entity
@@ -56,6 +73,26 @@
     rootTask:
       task: SimpleHumanoidHostileCompound
 
+- type: startingGear
+  id: ADTMobCult1Gear
+  equipment:
+    mask: ClothingMaskPlague
+    jumpsuit: ADTClothingUniformJumpsuitOldDarkSuit
+    shoes: ClothingShoesBootsWinter
+    head: ClothingHeadHatPlaguedoctor
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesColorBlack
+    outerClothing: ClothingOuterPlagueSuit
+    #id: CentcomPDA
+    #ears: ClothingHeadsetAltCentCom
+    belt: ADTBoneKnife
+    pocket1: Brutepack
+    pocket2: Ointment
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+
 - type: entity
   name: Cultist1
   parent: ADTMobCult
@@ -66,6 +103,27 @@
     prototypes:
       - ADTMobCult2Gear
 
+- type: startingGear
+  id: ADTMobCult2Gear
+  equipment:
+    mask: ClothingMaskPlague
+    jumpsuit: ADTClothingUniformJumpsuitOldDarkSuit
+    shoes: ClothingShoesBootsWinter
+    head: ClothingHeadHatPlaguedoctor
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesColorBlack
+    outerClothing: ClothingOuterPlagueSuit
+    #id: CentcomPDA
+    #ears: ClothingHeadsetAltCentCom
+    #belt: BoxFolderCentComClipboard
+    pocket1: Brutepack
+    pocket2: Ointment
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+    back: Spear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+
 - type: entity
   name: Cultist2
   parent: ADTMobCult
@@ -75,6 +133,28 @@
   - type: Loadout
     prototypes:
       - ADTMobCult3Gear
+
+- type: startingGear
+  id: ADTMobCult3Gear
+  equipment:
+    mask: ClothingMaskPlague
+    jumpsuit: ADTClothingUniformJumpsuitOldDarkSuit
+    shoes: ClothingShoesBootsWinter
+    head: ClothingHeadHatPlaguedoctor
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesColorBlack
+    outerClothing: ClothingOuterPlagueSuit
+    #id: CentcomPDA
+    #ears: ClothingHeadsetAltCentCom
+    #belt: BoxFolderCentComClipboard
+    pocket1: Brutepack
+    pocket2: Ointment
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+    back: SpearReinforced
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+
 
 - type: entity
   parent: BaseMobHuman
@@ -127,7 +207,35 @@
       cooldown: 1
       critThreshold: 4000
 
+- type: entity
+  parent: CollideRune
+  id: ADTExplosionRuneCult
+  name: "explosion rune"
+  suffix: "Cult of the Lamb, NOT explosion, it`s Decoration"
+  components:
+    - type: Sprite
+      sprite: Structures/Magic/Cult/trap.rsi
+      layers:
+        - state: trap
+          color: '#cc1b00'
 
+- type: entity
+  parent: CollideRune
+  id: ADTUnlimitedLithing
+  name: "explosion rune"
+  suffix: "Cult of the Lamb, NOT explosion, it`s Decoration"
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Misc/empity.rsi
+      layers:
+        - state: icon
+          #color: '#FF00FF'
+          #color: '#cc1b00'
+    - type: PointLight
+      radius: 14
+      energy: 3.5
+      color: "#ff3333"
+      castShadows: false
 #END-Event-Cult-of-the-Lamb
 
 #СССП штуки
@@ -435,35 +543,3 @@
       - NamesLastMilitaryUSSP
     - type: InitialInfectedExempt
 
-#Changeling
-
-- type: entity  # Как будут спрайты доделаю. 
-  name: Urist McWeb
-  parent: BaseMobArachnid
-  id: ADTMobLingUnt
-  components:
-  - type: InvisibilityAct
-    minVisibility: 0
-  - type: JumpAct
-    jumpAction: LingUntActionJump
-  - type: ProjectileAct
-    projAction: LingUntActionShoot
-    prototype: ADTBulletLingGas
-
-- type: entity
-  noSpawn: true
-  name: Hermit
-  description: He looks shabby.
-  parent: MobHuman
-  id: MobHermit
-  components:
-    - type: GhostRole
-      name: ghost-role-information-hermit-name
-      description: ghost-role-information-hermit-description
-    - type: GhostTakeoverAvailable
-    - type: RandomHumanoidAppearance
-    - type: Loadout
-      prototypes: [ ADTHemritEquipment ]
-    - type: Icon
-      sprite: ADT/Mobs/Lavaland/hermit.rsi
-      state: fulls

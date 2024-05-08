@@ -1,0 +1,101 @@
+- type: entity
+  name: New Year Gorilla
+  parent: [ SimpleMobBase, MobCombat ]
+  id: ADTMobGorillaNewYear
+  description: New Year Gorilla
+  components:
+    - type: Sprite
+      drawdepth: Mobs
+      layers:
+        - map: ["enum.DamageStateVisualLayers.Base"]
+          state: newyeargorilla
+          sprite: ADT/Mobs/Animals/newyeargorilla.rsi
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.48
+          density: 200
+          mask:
+            - MobMask
+          layer:
+            - MobLayer
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: newyeargorilla
+        Dead:
+          Base: dead
+    - type: Butcherable
+      spawned:
+        - id: FoodMeat
+          amount: 4
+        - id: ClothingHeadHatCargosoft
+          amount: 1
+    - type: Bloodstream
+      bloodMaxVolume: 600
+    - type: Puller
+    - type: InteractionPopup
+      successChance: 1
+      interactSuccessString: petting-success-gorilla
+      interactFailureString: petting-failure-gorilla
+    - type: Tag
+      tags:
+        - CannotSuicide
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        900: Dead
+    - type: MeleeWeapon
+      soundHit:
+          path: /Audio/Weapons/Xeno/alien_claw_flesh2.ogg
+      angle: 100
+      attackRate: 1.2
+      animation: WeaponArcFist
+      damage:
+        types:
+          Blunt: 15
+    - type: StaminaDamageOnHit
+      damage: 100 
+    - type: Inventory
+      templateId: monkey
+      speciesId: monkey
+    - type: InventorySlots
+    - type: MovementSpeedModifier
+      baseWalkSpeed : 3.5
+      baseSprintSpeed : 4.8
+    - type: NoSlip
+    - type: Speech
+      speechVerb: SmallMob
+    - type: TTS # Corvax-TTS
+      voice: Eugene
+    - type: UserInterface
+      interfaces:
+      - key: enum.StrippingUiKey.Key
+        type: StrippableBoundUserInterface
+    - type: Hands
+    - type: Body
+      prototype: Primate
+      requiredLegs: 1 # TODO: More than 1 leg
+
+- type: entity
+  name: New Year Buffrat
+  parent: ADTMobGorillaNewYear
+  id: ADTMobBuffratNewYear
+  description: New Year Buffrat
+  components:
+    - type: Sprite
+      drawdepth: Mobs
+      layers:
+        - map: ["enum.DamageStateVisualLayers.Base"]
+          state: newyeargigarat
+          sprite: ADT/Mobs/Animals/newyeargigarat.rsi
+      scale: 1.2, 1.2
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: newyeargigarat
+        Dead:
+          Base: dead

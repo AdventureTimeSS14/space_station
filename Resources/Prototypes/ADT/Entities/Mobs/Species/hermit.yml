@@ -1,8 +1,0 @@
-- type: entity
-  parent: BaseSpeciesDummy
-  id: MobHermitDummy
-  noSpawn: true
-  description: A dummy hermit.
-  components:
-  - type: HumanoidAppearance
-    species: Human
