@@ -118,3 +118,16 @@
     contents:
       - id: SmokeGrenade
         amount: 6
+
+#Blueshield
+- type: entity
+  noSpawn: true
+  parent: ADTClothingBackpackDuffelBlueshield
+  id: ADTClothingBackpackDuffelBlueshieldFilled
+  suffix: filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalSecurity
+      - id: SpaceCash1000
+      - id: Flash

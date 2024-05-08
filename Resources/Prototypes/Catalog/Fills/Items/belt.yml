@@ -189,26 +189,11 @@
     - id: FoodShakerPepper
 
 - type: entity
-  id: ClothingBeltMilitaryWebbingBlueShieldFilled
-  parent: ClothingBeltMilitaryWebbingMed
+  id: ClothingBeltMedicalSecurityFilled
+  parent: ClothingBeltMedicalSecurity
   suffix: Filled
   components:
-  - type: Storage
-    grid:
-    - 0,0,7,1
-    maxItemSize: Normal
   - type: StorageFill
     contents:
-      - id: ADTCombatHypo
-      - id: EpinephrineChemistryBottle
-        amount: 2
-      - id: MedkitCombatFilled
-      - id: BurnAutoInjector
-      - id: BruteAutoInjector
-      - id: WeaponPistolN1984
-      - id: OmnizineChemistryBottle
-  - type: Sprite
-    sprite: ADT/Clothing/Belt/blueshield_webbing.rsi
-  - type: Clothing
-    sprite: ADT/Clothing/Belt/blueshield_webbing.rsi
-
+      - id: Stunbaton
+      - id: Handcuff

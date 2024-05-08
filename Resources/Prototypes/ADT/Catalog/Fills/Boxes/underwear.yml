@@ -33,6 +33,22 @@
     state: cap
 
 - type: entity
+  name: blueshield's underwear box
+  parent: ADTUnderwearBox
+  id: ADTUnderwearBoxBlueshield
+  description: A cardboard box with blueshield's underwear.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ADTClothingUnderwearBottomBoxersBlueshield
+      - id: ADTClothingUnderwearTopBraBlueshield
+      - id: ADTClothingUnderwearBottomPantiesBlueshield
+      - id: ADTClothingUnderwearSocksBlueshield
+      - id: ADTClothingUnderwearStockingsBlueshield
+  - type: Sprite
+    state: bsh
+
+- type: entity
   name: chief engineer's underwear box
   parent: ADTUnderwearBox
   id: ADTUnderwearBoxCE

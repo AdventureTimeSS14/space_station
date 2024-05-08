@@ -449,3 +449,16 @@
     stateBaseClosed: hop
     stateDoorOpen: hop_open
     stateDoorClosed: representative_door
+
+- type: entity
+  id: LockerBlueshield
+  parent: LockerBaseSecure
+  name: blueshield's locker
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: blueshield
+    stateDoorOpen: blueshield_open
+    stateDoorClosed: blueshield_door
+  - type: AccessReader
+    access: [["BlueShield"]]

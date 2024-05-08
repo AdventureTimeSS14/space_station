@@ -224,7 +224,6 @@
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
-  #- type: ShowSecurityIcons
   - type: Tag
     tags:
     - HamsterWearable

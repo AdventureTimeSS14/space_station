@@ -1,0 +1,62 @@
+- type: entity
+  name: NTRS-01 energy revolver-saber
+  parent: [EnergySword, BaseWeaponPowerCellSmall, WeaponCrusher]
+  id: ADTWeaponSaberRevBlueshield
+  description: 
+  components:
+  - type: Item
+    size: Small
+    sprite: ADT/Objects/Weapons/Guns/Saber_revolvers/energy-inhands.rsi
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Guns/Saber_revolvers/energy.rsi
+    layers:
+     - state: icon_saber
+       color: "#FFFFFF"
+       visible: false
+       shader: unshaded
+       map: [ "blade" ]
+     - state: base
+       map: ["enum.GunVisualLayers.Base"]
+     - state: mag-0
+       map: ["enum.GunVisualLayers.Mag"]
+  - type: AmmoCounter
+  - type: PointLight
+    enabled: false
+    radius: 2
+    energy: 2
+    color: white
+    netsync: false
+  - type: ProjectileBatteryAmmoProvider
+    proto: ADTBulletLaserMK2
+    fireCost: 100
+  - type: Gun
+    fireRate: 1.8
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: ToggleableLightVisuals
+    spriteLayer: blade
+    inhandVisuals:
+      left:
+      - state: inhand-left-blade
+        shader: unshaded
+      right:
+      - state: inhand-right-blade
+        shader: unshaded
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: true
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: ADTPowerCellLasgunRevolver
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        whitelist:
+          tags:
+            - ADTLasgunRevolverCell

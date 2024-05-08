@@ -522,6 +522,24 @@
     state: pda-cmo
 
 - type: entity
+  parent: BasePDA
+  id: ADTBlueshieldOfficerPDA
+  name: BlueShield PDA
+  description: Smells like protection.
+  components:
+    - type: Pda
+      id: ADTBlueShieldOfficerIDCard
+      state: pda-blueshield
+    - type: PdaBorderColor
+      borderColor: "#424248"
+      accentHColor: "#2851a4"
+      accentVColor: "#e1e1e1"
+    - type: Icon
+      state: pda-blueshield
+    - type: HealthAnalyzer
+      scanDelay: 1.2
+
+- type: entity
   parent: BaseMedicalPDA
   id: MedicalPDA
   name: medical PDA

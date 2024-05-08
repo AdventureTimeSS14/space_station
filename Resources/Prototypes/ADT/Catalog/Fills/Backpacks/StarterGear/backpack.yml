@@ -53,3 +53,16 @@
       - id: BoxSurvivalMedical
       - id: JawsOfLife
       - id: SpaceCash500
+
+#Blueshield
+- type: entity
+  noSpawn: true
+  parent: ADTClothingBlueshieldBackpack
+  id: ADTClothingBlueshieldBackpackFilled
+  suffix: filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalSecurity
+      - id: SpaceCash1000
+      - id: Flash

@@ -67,3 +67,17 @@
       - id: RCD
       - id: RCDAmmo
         amount: 6
+
+#ОСЩ
+- type: entity
+  parent: ClothingBackpackSatchelSecurity
+  id: ADTClothingBackpackSatchelBlueshield
+  name: blueshield satchel
+  description: A satchel to hold medical and security equipment
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Back/blueshield_satchel.rsi
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,9,5

@@ -8,3 +8,13 @@
     sprite: ADT/Clothing/Ears/Headsets/headset_paramedic.rsi
   - type: Clothing
     sprite: ADT/Clothing/Ears/Headsets/headset_paramedic.rsi
+
+- type: entity
+  parent: ClothingHeadsetCentCom
+  id: ClothingHeadsetBlueshield
+  name: blueshield headset
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Ears/Headsets/blueshield.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Ears/Headsets/blueshield.rsi
