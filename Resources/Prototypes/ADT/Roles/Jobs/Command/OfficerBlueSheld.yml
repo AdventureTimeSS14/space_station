@@ -32,9 +32,6 @@
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
 
-- type: playTimeTracker
-  id: JobADTBlueShieldOfficer
-
 - type: startingGear
   id: ADTBlueShieldOfficerGear
   equipment:
@@ -56,44 +53,3 @@
     neck: ClothingNeckCloakNanotrasen
   underweart: ADTClothingUnderwearTopBraBlueshield # Sirena-Underwear
   underwearb: ADTClothingUnderwearBottomPantiesBlueshield # Sirena-Underwear
-
-- type: entity
-  id: SpawnADTBlueShieldOfficer
-  parent: SpawnPointJobBase
-  name: ADTBlueShieldOfficer
-  components:
-    - type: SpawnPoint
-      job_id: ADTBlueShieldOfficer
-    - type: Sprite
-      layers:
-        - state: green
-        - state: hop
-
-- type: entity
-  parent: BasePDA
-  id: ADTBlueShieldOfficerPDA
-  name: BlueShield PDA
-  description: Smells like protection.
-  components:
-    - type: Pda
-      id: ADTBlueShieldOfficerIDCard
-      state: pda-ert
-    - type: PdaBorderColor
-      borderColor: "#A32D26"
-      accentVColor: "#447987"
-    - type: Icon
-      state: pda-ert
-    - type: HealthAnalyzer
-      scanDelay: 1.2
-
-- type: entity
-  parent: IDCardStandard
-  id: ADTBlueShieldOfficerIDCard
-  name: Blue Shield Officer ID card
-  components:
-    - type: Sprite
-      layers:
-        - state: default
-        - state: ert_security
-    - type: PresetIdCard
-      job: ADTBlueShieldOfficer
