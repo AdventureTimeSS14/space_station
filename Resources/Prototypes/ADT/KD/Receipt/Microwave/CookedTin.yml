@@ -1,8 +1,0 @@
-#TODO xTray  State 'icon' not found
-#- type: microwaveMealRecipe
-#  id: RecipeCookedTinMRE
-#  name: рецепт готовой консервы
-#  result: FoodTinMRECooked
-#  time: 5
-#  solids:
-#    FoodTinMREOpen: 1

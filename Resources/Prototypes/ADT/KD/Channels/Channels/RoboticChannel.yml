@@ -1,6 +1,0 @@
-- type: radioChannel
-  id: ADTSilicon
-  name: Синтетики
-  keycode: 'б'
-  frequency: 1300
-  color: "#7df9ff"
