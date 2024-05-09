@@ -33,6 +33,8 @@
     - WhitelistChameleon
   - type: StaticPrice
     price: 70
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodWinterDefault
 
 - type: entity
   parent: ClothingOuterWinterCoat
