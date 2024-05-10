@@ -64,11 +64,3 @@
     - мурчит.
     - мурчит!
 
-- type: emote
-  id: Gav
-  category: Vocal
-  chatMessages: [гавкает]
-  chatTriggers:
-    - гав
-    - гав.
-    - гав!
