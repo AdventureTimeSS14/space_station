@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   name: emergency flare
   parent: BaseItem
   id: Flare
@@ -93,3 +93,5 @@
           Quantity: 2
         - ReagentId: Sulfur
           Quantity: 2
+  - type: StaticPrice
+    price: 5

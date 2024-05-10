@@ -581,11 +581,11 @@ namespace Content.Server.VendingMachines
                         // restocking a machine who doesn't want to force vend out
                         // all the items just to restock one empty slot without
                         // losing the rest of the restock.
-                        entry.Amount = Math.Min(entry.Amount + amount, 3 * amount);
+                        entry.Amount = Math.Min(entry.Amount + amount, 1 * amount);
                     else
                     {
-                        var minCost = Math.Max(1, (int) _pricing.GetEstimatedPrice(proto));
-                        inventory.Add(id, new VendingMachineInventoryEntry(type, id, amount, _random.Next(minCost, 2 * minCost)));
+                        var minCost = Math.Max(0, (int) _pricing.GetEstimatedPrice(proto));
+                        inventory.Add(id, new VendingMachineInventoryEntry(type, id, amount, _random.Next(minCost, 1 * minCost)));
                     }
                 }
             }
