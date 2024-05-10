@@ -1322,7 +1322,7 @@
     foldedHeldPrefix: vest
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_alt_hop.rsi
-    equippedPrefix: vest
+    #equippedPrefix: vest
   - type: Sprite
     sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_alt_hop.rsi
     layers:
