@@ -5,13 +5,24 @@
   id: BaseMobNovakid
   abstract: true
   components:
+  - type: Hunger
+    baseDecayRate: 0.025
+    currentHunger: 400
+    thresholds:
+      Overfed: 400
+      Okay: 300
+      Peckish: 200
+      Starving: 100
+      Dead: 0
+    starvationDamage:
+      types:
+        Cold: 0.12
+        Caustic: 0.08
   - type: HumanoidAppearance
     species: NovakidSpecies
-  - type: Hunger
   - type: Bloodstream
     bloodReagent: Plasma
   - type: ZombieImmune
-  - type: Thirst
   - type: NovakidGlowing # see NovakidFeaturesSystem.cs
   - type: PointLight
     color: "#ffffff"

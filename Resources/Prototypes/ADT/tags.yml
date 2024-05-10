@@ -1,9 +1,9 @@
 - type: Tag
   id: socks
-  
+
 - type: Tag
   id: underwearb
-  
+
 - type: Tag
   id: underweart
 
@@ -42,13 +42,13 @@
 
 - type: Tag
   id: ChangelingBlacklist
- 
-- type: Tag 
+
+- type: Tag
   id: BoomBoxTape
-  
+
 - type: Tag
   id: MobileDefibrillator
-  
+
 - type: Tag
   id: HighVoltageDefibrillator
 
@@ -67,5 +67,21 @@
 - type: Tag
   id: ADTHardsuitSalvage
 
-- type: Tag  
+- type: Tag
   id: ADTBluespaceAnomalyCore
+
+- type: Tag
+  id: ADTMechEquipmentGeneral
+
+- type: Tag
+  id: ADTMechEquipmentMed
+
+- type: Tag
+  id: ADTMechEquipmentService
+
+- type: Tag
+  id: ADTMechEquipmentIndustrial
+
+- type: Tag
+  id: ADTMechEquipmentSec
+

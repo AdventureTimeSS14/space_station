@@ -770,3 +770,29 @@
     sprite: ADT/Clothing/Uniforms/Jumpskirt/pathologist_alt.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/pathologist_alt.rsi
+
+- type: entity
+  parent: [ ClothingUniformBase, BaseFoldable ]
+  id: ADTClothingUniformCroupierSkirt
+  name: crupier jumpsuit
+  description: Fancy.
+  components:
+  #- type: Appearance
+  #- type: Foldable
+    #canFoldInsideContainer: true
+    #unfoldVerbText: fold-put-on-verb
+    #foldVerbText: fold-pull-off-verb
+  #- type: FoldableClothing
+    #foldedEquippedPrefix: vest
+    #foldedHeldPrefix: vest
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/uniform_croupier.rsi
+    #equippedPrefix: vest
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/uniform_croupier.rsi
+    #layers:
+    #- state: icon
+      #map: [ "unfoldedLayer" ]
+    #- state: icon_vest
+      #map: ["foldedLayer"]
+      #visible: false

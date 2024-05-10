@@ -150,6 +150,9 @@
     },
     {
       "name": "mecha_kineticgun"
+    },
+    {
+      "name": "mecha_humanstealer"
     }
   ]
 }

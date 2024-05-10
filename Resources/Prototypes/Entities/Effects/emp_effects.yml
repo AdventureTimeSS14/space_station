@@ -1,6 +1,5 @@
 - type: entity
   id: EffectEmpPulse
-  noSpawn: true
   components:
   - type: TimedDespawn
     lifetime: 0.8
@@ -17,7 +16,7 @@
     tags:
       - HideContextMenu
   - type: EmitSoundOnSpawn
-    sound: 
+    sound:
       path: /Audio/Effects/Lightning/lightningbolt.ogg
   - type: AnimationPlayer
 

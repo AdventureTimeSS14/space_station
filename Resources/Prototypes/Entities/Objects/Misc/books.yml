@@ -43,6 +43,9 @@
     openOnActivation: true
     guides:
     - SS14
+  - type: Construction
+    graph: SecretBook
+    node: startspaceencyclopedia
 
 - type: entity
   id: BookTheBookOfControl
@@ -61,6 +64,9 @@
     openOnActivation: true
     guides:
     - Controls
+  - type: Construction
+    graph: SecretBook
+    node: startthebookofcontrol
 
 - type: entity
   id: BookBartendersManual
@@ -79,6 +85,9 @@
     openOnActivation: true
     guides:
     - Bartender
+  - type: Construction
+    graph: SecretBook
+    node: startbartendersmanual
 
 - type: entity
   id: BookChefGaming
@@ -97,6 +106,9 @@
     openOnActivation: true
     guides:
     - Chef
+  - type: Construction
+    graph: SecretBook
+    node: startchefgaming
 
 - type: entity
   id: BookLeafLoversSecret
@@ -115,6 +127,9 @@
     openOnActivation: true
     guides:
     - Botany
+  - type: Construction
+    graph: SecretBook
+    node: startleafloverssecret
 
 - type: entity
   id: BookEngineersHandbook
@@ -133,6 +148,9 @@
     openOnActivation: true
     guides:
     - Engineering
+  - type: Construction
+    graph: SecretBook
+    node: startengineershandbook
 
 - type: entity
   id: BookScientistsGuidebook
@@ -151,6 +169,9 @@
     openOnActivation: true
     guides:
     - Science
+  - type: Construction
+    graph: SecretBook
+    node: startscientistsguidebook
 
 - type: entity
   id: BookSecurity
@@ -174,6 +195,9 @@
     openOnActivation: true
     guides:
     - Security
+  - type: Construction
+    graph: SecretBook
+    node: startsecurity
 
 - type: entity
   id: BookHowToKeepStationClean
@@ -192,6 +216,9 @@
     openOnActivation: true
     guides:
     - Janitorial
+  - type: Construction
+    graph: SecretBook
+    node: starthowtokeepstationclean
 
 - type: entity
   id: BookHowToRockAndStone
@@ -210,6 +237,9 @@
     openOnActivation: true
     guides:
     - Salvage
+  - type: Construction
+    graph: SecretBook
+    node: starthowtorockandstone
 
 - type: entity
   id: BookMedicalReferenceBook
@@ -228,6 +258,9 @@
     openOnActivation: true
     guides:
     - Medical
+  - type: Construction
+    graph: SecretBook
+    node: startmedicalreferencebook
 
 - type: entity
   id: BookHowToSurvive
@@ -246,6 +279,9 @@
     openOnActivation: true
     guides:
     - Survival
+  - type: Construction
+    graph: SecretBook
+    node: starthowtosurvive
 
 - type: entity
   id: BookChemicalCompendium
@@ -264,6 +300,9 @@
     openOnActivation: true
     guides:
     - Chemicals
+  - type: Construction
+    graph: SecretBook
+    node: startchemicalcompendium
 
 - type: entity
   parent: BookBase
@@ -282,6 +321,9 @@
           book6: ""
           book7: ""
           book8: ""
+  - type: Construction
+    graph: SecretBook
+    node: start
 
 - type: entity
   parent: BookBase
@@ -300,6 +342,10 @@
           Blunt: 6
     - type: Paper
       content: book-text-escalation
+    - type: Construction
+      graph: SecretBook
+      node: startescalation
+
 
 - type: entity
   parent: BookBase
@@ -318,6 +364,9 @@
           Blunt: 6
     - type: Paper
       content: book-text-escalation-security
+    - type: Construction
+      graph: SecretBook
+      node: startescalationsecurity
 
 - type: entity
   parent: BookBase
@@ -331,6 +380,9 @@
         - state: book5
     - type: Paper
       content: book-text-atmos-distro
+    - type: Construction
+      graph: SecretBook
+      node: startatmosdistro
 
 - type: entity
   parent: BookBase
@@ -344,6 +396,9 @@
         - state: book5
     - type: Paper
       content: book-text-atmos-waste
+    - type: Construction
+      graph: SecretBook
+      node: startatmoswaste
 
 - type: entity
   parent: BookBase
@@ -357,6 +412,9 @@
         - state: book5
     - type: Paper
       content: book-text-atmos-alarms
+    - type: Construction
+      graph: SecretBook
+      node: startatmosairalarms
 
 - type: entity
   parent: BookBase
@@ -370,3 +428,6 @@
         - state: book5
     - type: Paper
       content: book-text-atmos-vents
+    - type: Construction
+      graph: SecretBook
+      node: startatmosventsmore
