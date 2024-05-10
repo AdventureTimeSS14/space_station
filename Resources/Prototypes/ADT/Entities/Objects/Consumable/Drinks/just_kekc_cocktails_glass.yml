@@ -13,8 +13,8 @@
         - ReagentId: ADTSummerShade
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtsummershade
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/summershade.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -31,8 +31,8 @@
         - ReagentId: ADTWinterSun
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtwintersun
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/wintersun.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -49,8 +49,8 @@
         - ReagentId: ADTHungoverAngel
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adthungoverangel
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/hungoverangel.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -67,8 +67,8 @@
         - ReagentId: ADTCitrusBalance
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtcitrusbalance
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/citrucbalance.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -85,8 +85,8 @@
         - ReagentId: ADTDobryiDrink
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtdobryidrink
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/dobryi.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -103,8 +103,8 @@
         - ReagentId: ADTMilkEclipse
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtmilkeclipse
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/milkeclipse.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -121,8 +121,8 @@
         - ReagentId: ADTArcticExplosion
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtarcticexplosion
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/arcticexplosion.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -139,8 +139,8 @@
         - ReagentId: ADTSugarKnight
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtsugarknight
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/sugarknight.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -157,8 +157,8 @@
         - ReagentId: ADTGrapeLady
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtgrapelady
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/grapelady.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -175,8 +175,8 @@
         - ReagentId: ADTSaturdayBaron
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtsaturdaybaron
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/saturdaybaron.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -193,8 +193,8 @@
         - ReagentId: ADTArcticLatte
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtarcticlatte
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/arcticlatte.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -211,8 +211,8 @@
         - ReagentId: ADTSpecialTeaOolong
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtspecialteaoolong
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/teaoolong.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -229,8 +229,8 @@
         - ReagentId: ADTAzureBlue
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtazureblue
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/azureblue.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -247,8 +247,8 @@
         - ReagentId: ADTPenetrationDrink
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtpenetrationdrink
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/penetration.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -265,8 +265,8 @@
         - ReagentId: ADTEclipsedEclispe
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adteclipsedeclispe
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/eclipsedeclipse.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -283,8 +283,8 @@
         - ReagentId: ADTSpaceBush
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtspacebush
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/spacebush.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -301,8 +301,8 @@
         - ReagentId: ADTBusinessConversation
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtbizconversation
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/buisinessconservation.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -319,8 +319,8 @@
         - ReagentId: ADTAppleLiqueur
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtappleliqueur
+    sprite: ADT/Objects/Consumable/Drinks/apple_liqueur_glass.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -337,8 +337,8 @@
         - ReagentId: ADTAppleMartini
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtapplemartini
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/applemartini.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlassBase
@@ -355,8 +355,8 @@
         - ReagentId: ADTBacardiApple
           Quantity: 30
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtbacardiapple
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/bacardiapple.rsi
+    state: icon
 
 #День Святого Валентина
 

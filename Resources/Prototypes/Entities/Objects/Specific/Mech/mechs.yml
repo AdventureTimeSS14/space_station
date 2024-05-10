@@ -125,6 +125,10 @@
     pilotWhitelist:
       components:
         - HumanoidAppearance
+    equipmentWhitelist:
+      tags:
+      - ADTMechEquipmentGeneral
+      - ADTMechEquipmentIndustrial
   - type: MeleeWeapon
     hidden: true
     attackRate: 1
@@ -170,6 +174,10 @@
     pilotWhitelist:
       components:
       - HumanoidAppearance
+    equipmentWhitelist:
+      tags:
+      - ADTMechEquipmentGeneral
+      - ADTMechEquipmentService
 
 - type: entity
   parent: MechHonker

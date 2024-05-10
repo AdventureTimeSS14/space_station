@@ -1,6 +1,5 @@
 - type: entity
   id: AmbientSoundSourceFlies
-  noSpawn: true
   components:
   - type: AmbientSound
     volume: -5
