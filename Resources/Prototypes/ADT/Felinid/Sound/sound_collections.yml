@@ -33,3 +33,8 @@
   id: FelinidPurrs
   files:
   - /Audio/ADT/Felinid/cat_purr1.ogg
+
+- type: soundCollection
+  id: FelinidGaw
+  files:
+  - /Audio/ADT/Felinid/cat_meow1.ogg

@@ -37,6 +37,8 @@
       collection: MaleCry
     Whistle:
       collection: Whistles
+    Gav:
+      collection: FelinidGaw
     # ADT-Apathy Sounds. 
     Scream-apathy:
       collection: FelinidScreams
