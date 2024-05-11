@@ -402,7 +402,7 @@
         state: ripley-open
   - type: RandomSpawner
     prototypes:
-      - MechHonkerBattery
+      - MechHamtrBattery
     chance: 1.0
     offset: 0.0
 
