@@ -4201,7 +4201,7 @@ entities:
     - type: Transform
       pos: -10.386757,8.623476
       parent: 4812
-- proto: ADTExosuitFabricator
+- proto: ADTMechFabSpawner
   entities:
   - uid: 8423
     components:

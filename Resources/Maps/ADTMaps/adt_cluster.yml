@@ -4457,7 +4457,7 @@ entities:
       parent: 12533
     - type: InstantAction
       container: 12533
-- proto: ADTExosuitFabricator
+- proto: ADTMechFabSpawner
   entities:
   - uid: 8344
     components:

@@ -8230,7 +8230,7 @@ entities:
     - type: Transform
       pos: -15.5,-48.5
       parent: 5350
-- proto: ADTExosuitFabricator
+- proto: ADTMechFabSpawner
   entities:
   - uid: 7940
     components:
