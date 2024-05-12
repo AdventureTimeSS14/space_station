@@ -42,28 +42,6 @@
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
 
-- type: entity
-  id: ADTSpawnPointSecurityCyborg
-  parent: ADTSpawnPointJobBase
-  name: SecurityCyborg
-  components:
-  - type: SpawnPoint
-    job_id: ADTSecurityCyborg
-  - type: Sprite       # Потом подправить
-    layers:
-    - state: green
-    - sprite: Mobs/Silicon/chassis.rsi
-      state: engineer
-    - sprite: Mobs/Silicon/chassis.rsi
-      state: engineer_e
-
-- type: statusIcon
-  parent: JobIcon
-  id: jobADTIconSecurityCyborg
-  icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
-    state: JobADTIconSecurityCyborg
-
 - type: startingGear
   id: ADTSecurityCyborgGear
   equipment:
@@ -77,5 +55,3 @@
     #shoes: ADTClothingShoesBootsCybSec
   satchel: ClothingBackpackSatchelSecurityFilled
   duffelbag: ClothingBackpackDuffelSecurityFilled
-
-
