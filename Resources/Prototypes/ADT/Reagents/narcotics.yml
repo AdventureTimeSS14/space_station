@@ -51,3 +51,48 @@
         damage:
           types:
             Asphyxiation: 2
+
+- type: reagent
+  id: HallucinationTestReagent
+  name: reagent-name-nicotine
+  group: Narcotics
+  desc: reagent-desc-nicotine
+  flavor: bitter
+  color: "#C0C0C0"
+  physicalDesc: reagent-physical-desc-strong-smelling
+  metabolisms:
+    Narcotic:
+      effects:
+      - !type:GenericStatusEffect
+        key: ADTHallucinations
+        component: NarcoHallucinations
+        type: Add
+        time: 15
+        refresh: false
+
+- type: reagent
+  id: LingDrugs
+  name: reagent-name-space-drugs
+  group: Narcotics
+  desc: reagent-desc-space-drugs
+  physicalDesc: reagent-physical-desc-syrupy
+  flavor: bitter
+  color: "#63806e"
+  metabolisms:
+    Narcotic:
+      effects:
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 5
+        refresh: false
+      - !type:GenericStatusEffect
+        key: ADTHallucinations
+        component: LingHallucinations
+        type: Add
+        time: 10
+        refresh: false
+        conditions:
+        - !type:ReagentThreshold
+          min: 15

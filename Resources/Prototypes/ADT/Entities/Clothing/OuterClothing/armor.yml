@@ -1,0 +1,42 @@
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ADTClothingOuterVestWebL
+  name: web vest
+  description: A synthetic armor vest. This one has added webbing and ballistic plates.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Vests/webvest.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Vests/webvest.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6 #ballistic plates = better protection
+        Slash: 0.6
+        Piercing: 0.3
+        Heat: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: StorageFill
+    contents:
+      - id: WeaponPulsePistol
+
+- type: entity
+  parent: ClothingOuterBaseLarge
+  id: ClothingOuterArmorIPCAntagDrone
+  name: IPC antag drone armor
+  suffix: Drone Antag
+  components:
+    - type: Sprite
+      sprite: Corvax/Clothing/OuterClothing/Armor/centcom_naval_carapace.rsi
+    - type: Clothing
+      sprite: ADT/Clothing/Back/ertleader_cyb.rsi # invisible sprite
+    - type: Unremoveable
+    - type: Armor
+      modifiers:
+        coefficients:
+          Radiation: 0.15
+          Stun: 0.5
+    - type: ExplosionResistance
+      damageCoefficient: 0.75
