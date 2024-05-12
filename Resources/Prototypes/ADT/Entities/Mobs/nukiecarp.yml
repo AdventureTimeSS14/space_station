@@ -7,6 +7,12 @@
     - type: NpcFactionMember
       factions:
         - Syndicate
+    - type: Sprite
+      drawdepth: Mobs
+      sprite: ADT/Mobs/Aliens/CarpCat.rsi
+      layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: alive
 
 - type: entity
   name: CarpCat Spawner
