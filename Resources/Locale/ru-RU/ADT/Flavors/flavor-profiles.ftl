@@ -25,6 +25,7 @@ flavor-complex-ADTAppleMartiniFlavor = как алкоголь и зелёное
 flavor-complex-ADTBacardiAppleFlavor = как ром с привкусом яблока
 flavor-complex-ADTVodkaAntivirusFlavor = как разбавленный спирт
 flavor-complex-ADTCherryExquisiteWineFlavor = как сладкая вишнёвая кожура
+flavor-complex-ADTElderGuardsFlavor = как закон и очень странная смесь алкоголя с нотками уксуса
 
 flavor-complex-ADTBuckwheatSolidsFlavor = как сухая гречка
 flavor-complex-ADTBuckwheat = как гречневая каша
