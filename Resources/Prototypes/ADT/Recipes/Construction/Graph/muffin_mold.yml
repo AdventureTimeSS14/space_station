@@ -13,3 +13,5 @@
             - tag: ADTCakeBatter
               store: batterSlot
               doAfter: 1
+    - node: batter
+      entity: ADTMuffinMoldBatter

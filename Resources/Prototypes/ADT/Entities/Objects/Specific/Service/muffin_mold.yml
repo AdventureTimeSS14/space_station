@@ -36,6 +36,7 @@
   - type: ContainerContainer
     containers:
       batterSlot: !type:Container
+    ents: []
   - type: Construction
     graph: ADTMuffinMold
     node: start
@@ -81,10 +82,11 @@
     - id: ADTFoodBakedMuffinParty
       amount: 5
     - id: ADTFoodBakedMuffinParty
-      prob: 0.7
+      prob: 0.85
+      orGroup: Kekc
     - id: ADTFoodBakedMuffinJustKekc
-      prob: 0.3
-      #это работает вообще не так, как задуманно, но если звёзды сойдутся - появится редкий кекс.
+      prob: 0.15
+      orGroup: Kekc
 
 #пустышка, что не вмещает в себя ничего. Нужна лишь для необычного (по рамкам игры) рецепта.
 - type: entity
