@@ -59,46 +59,5 @@
 
 
 
-- type: entity
-  id: SpawnMagistrat
-  parent: SpawnPointJobBase
-  name: magistrat spawn
-  components:
-    - type: SpawnPoint
-      job_id: Magistrat
-    - type: Sprite
-      layers:
-        - state: green
-        - state: hop
-
-
-
-- type: entity
-  parent: BasePDA
-  id: MagistratPDA
-  name: magistrat PDA
-  description: magistrat PDA
-  components:
-  - type: Pda
-    id: MagistratIDCard
-    state: pda-lawyer
-  - type: Icon
-    state: pda-lawyer
-
-- type: entity
-  parent: IDCardStandard
-  id: MagistratIDCard
-  name: magistrat ID card
-  description: magistrat ID card
-  components:
-    - type: Sprite
-      layers:
-        - state: default
-        - state: idlawyer
-    - type: PresetIdCard
-      job: Magistrat
-
-
-
 
 
