@@ -24,6 +24,7 @@
     layers:
     - state: srp-operatorcentcomm-book
   - type: GuideHelp
+    openOnActivation: true
     guides:
     - ADTSrpOperatorCentCommGuide
   - type: Construction
@@ -40,6 +41,7 @@
     layers:
     - state: new-recipe-book
   - type: GuideHelp
+    openOnActivation: true
     guides:
     - ADTNewRecipes
   - type: Construction
@@ -56,6 +58,7 @@
     layers:
     - state: new-cocktail-book
   - type: GuideHelp
+    openOnActivation: true
     guides:
     - ADTNewCocktails
   - type: Construction
@@ -72,6 +75,7 @@
     layers:
     - state: chem-book
   - type: GuideHelp
+    openOnActivation: true
     guides:
     - ADTChemicals
   - type: Construction
@@ -96,6 +100,7 @@
       types:
         Blunt: 6
   - type: GuideHelp
+    openOnActivation: true
     guides:
       - KorporateZakon
   - type: Construction

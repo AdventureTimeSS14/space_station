@@ -4,9 +4,6 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace Content.Server.ADT.SecretTrans;
 
-/// <summary>
-///     Lizard specific properties
-/// </summary>
 [RegisterComponent]
 public sealed partial class SecretTransComponent : Component
 {

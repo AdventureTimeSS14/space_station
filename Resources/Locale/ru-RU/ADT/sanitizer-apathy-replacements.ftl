@@ -22,3 +22,4 @@ chatsan-tearfully-salutes-apathy = отдаёт честь со слезами �
 chatsan-shrugs-apathy = пожимает плечами
 chatsan-claps-apathy = хлопает
 chatsan-snaps-apathy = щёлкает
+chatsan-questioned-apathy = вопросительно смотрит

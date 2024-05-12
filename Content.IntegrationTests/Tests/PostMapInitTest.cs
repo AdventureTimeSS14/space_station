@@ -71,10 +71,9 @@ namespace Content.IntegrationTests.Tests
             "ADTCore",
             "ADTMarathon",
             "ADTAtlas",
-
+            "ADTDelta",
             // Corvax-Start
             "CorvaxAvrite",
-            "CorvaxDelta",
             // Corvax-End
 
             "Dev",
