@@ -30,3 +30,10 @@
     - /Audio/ADT/Novakid/novakid_scream02.ogg
     - /Audio/ADT/Novakid/novakid_scream03.ogg
     - /Audio/ADT/Novakid/novakid_scream04.ogg
+
+- type: soundCollection
+  id: FelinidScreams
+  files:
+  - /Audio/ADT/Felinid/cat_scream1.ogg
+  - /Audio/ADT/Felinid/cat_scream2.ogg
+  - /Audio/ADT/Felinid/cat_scream3.ogg

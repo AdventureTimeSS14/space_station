@@ -5,3 +5,19 @@
   - Xeno
   - Zombie
   - Revolutionary
+
+- type: npcFaction
+  id: DroneAntag
+  hostile:
+  - SimpleHostile
+  - Passive
+  - SimpleNeutral
+  - Mouse
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - NanoTrasen
+  - PetsNT
+  - Dragon
+  - Ursus
