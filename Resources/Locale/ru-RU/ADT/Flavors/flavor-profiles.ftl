@@ -52,3 +52,5 @@ flavor-complex-ADTSawdust = как опилки, холод и вера в Ка�
 flavor-complex-olivier = как новый год, овощи, колбаса и майонез
 flavor-complex-jellymeat = как холодец
 flavor-complex-herring = как рыба, овощи и много жира
+
+flavor-base-party = празднично

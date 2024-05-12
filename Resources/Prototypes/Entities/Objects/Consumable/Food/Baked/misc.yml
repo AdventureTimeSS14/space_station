@@ -29,6 +29,9 @@
   components:
   - type: Sprite
     state: muffin
+  - type: Tag
+    tags:
+    - ADTMuffin
 
 - type: entity
   name: berry muffin

@@ -230,3 +230,8 @@
   id: ADTHerringUnderFurcoat
   flavorType: Complex
   description: flavor-complex-herring
+
+- type: flavor
+  id: ADTParty
+  flavorType: Base
+  description: flavor-base-party

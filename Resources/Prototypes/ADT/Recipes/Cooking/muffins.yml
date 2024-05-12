@@ -1,0 +1,29 @@
+- type: microwaveMealRecipe
+  id: ADTMuffin
+  name: muffin recipe
+  result: ADTMuffinMoldMuffin
+  time: 15
+  solids:
+    ADTMuffinMoldBatter: 1
+    FoodButter: 1
+
+- type: microwaveMealRecipe
+  id: ADTMuffinParty
+  name: party muffin recipe
+  result: ADTMuffinMoldParty
+  time: 15
+  solids:
+    ADTMuffinMoldBatter: 1
+  reagents:
+    Cream: 10
+
+- type: microwaveMealRecipe
+  id: ADTMuffinChocolate
+  name: chocolate muffin recipe
+  result: ADTMuffinMoldChocolate
+  time: 15
+  solids:
+    ADTMuffinMoldBatter: 1
+    FoodSnackChocolateBar: 2
+  reagents:
+    CocoaPowder: 5
