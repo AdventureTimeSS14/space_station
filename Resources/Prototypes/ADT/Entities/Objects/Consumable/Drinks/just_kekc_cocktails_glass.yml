@@ -360,7 +360,7 @@
 
 - type: entity
   parent: DrinkGlassBase
-  id: ADTADTElderGuardsGlass
+  id: ADTElderGuardsGlass
   name: elder-guards-name
   description: elder-guards-desc
   components:
