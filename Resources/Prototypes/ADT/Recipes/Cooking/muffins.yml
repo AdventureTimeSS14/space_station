@@ -8,6 +8,15 @@
     FoodButter: 1
 
 - type: microwaveMealRecipe
+  id: ADTMuffinBerry
+  name: muffin recipe
+  result: ADTMuffinMoldMuffinBerry
+  time: 15
+  solids:
+    ADTMuffinMoldBatter: 1
+    FoodBerries: 2
+
+- type: microwaveMealRecipe
   id: ADTMuffinParty
   name: party muffin recipe
   result: ADTMuffinMoldParty

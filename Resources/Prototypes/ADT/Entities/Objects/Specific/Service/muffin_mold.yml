@@ -52,6 +52,16 @@
       amount: 6
 
 - type: entity
+  id: ADTMuffinMoldMuffinBerry
+  parent: ADTMuffinMold
+  suffix: Berry muffin
+  components:
+  - type: StorageFill
+    contents:
+    - id: FoodBakedMuffinBerry
+      amount: 6
+
+- type: entity
   id: ADTMuffinMoldChocolate
   parent: ADTMuffinMold
   suffix: Chocolate muffin
