@@ -36,6 +36,8 @@
   - type: ContainerContainer
     containers:
       batterSlot: !type:Container
+        showEnts: False
+        occludes: True
         ents: []
   - type: Construction
     graph: ADTMuffinMold
