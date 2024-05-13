@@ -18,5 +18,5 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalSecurity
-      - id: SpaceCash1000
+      - id: SpaceCash500
       - id: Flash

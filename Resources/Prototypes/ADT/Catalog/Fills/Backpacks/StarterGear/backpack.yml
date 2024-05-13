@@ -56,7 +56,6 @@
 
 #Blueshield
 - type: entity
-  noSpawn: true
   parent: ADTClothingBlueshieldBackpack
   id: ADTClothingBlueshieldBackpackFilled
   suffix: filled
@@ -64,5 +63,5 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalSecurity
-      - id: SpaceCash1000
+      - id: SpaceCash500
       - id: Flash

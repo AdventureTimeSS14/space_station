@@ -117,6 +117,11 @@
     magState: mag
     steps: 4
     zeroVisible: false
+  - type: BasicEntityAmmoProvider
+    proto: ADTBulletLaser
+    capacity: 5
+    count: 5
+    fireCost: 100
   - type: SolutionContainerManager
     solutions:
       battery:
@@ -136,4 +141,4 @@
   - type: Appearance
 
 - type: Tag
-  id: - ADTLasgunRevolverCell
+  id: ADTLasgunRevolverCell

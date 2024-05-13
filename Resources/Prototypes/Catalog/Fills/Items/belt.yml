@@ -190,10 +190,12 @@
 
 - type: entity
   id: ClothingBeltMedicalSecurityFilled
+  name: medical-security belt
+  description: Special medical-security belt.
   parent: ClothingBeltMedicalSecurity
   suffix: Filled
   components:
   - type: StorageFill
     contents:
       - id: Stunbaton
-      - id: Handcuff
+      - id: Handcuffs

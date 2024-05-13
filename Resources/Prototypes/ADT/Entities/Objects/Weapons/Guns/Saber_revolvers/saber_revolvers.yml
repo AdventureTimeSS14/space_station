@@ -1,12 +1,17 @@
 - type: entity
   name: NTRS-01 energy revolver-saber
-  parent: [EnergySword, BaseWeaponPowerCellSmall, WeaponCrusher]
+  parent: [EnergySword, BaseWeaponPowerCellSmall,WeaponCrusher]
   id: ADTWeaponSaberRevBlueshield
   description: 
   components:
   - type: Item
     size: Small
     sprite: ADT/Objects/Weapons/Guns/Saber_revolvers/energy-inhands.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
     shape:
     - 0,0,1,0
     - 0,1,0,1
@@ -29,13 +34,54 @@
     energy: 2
     color: white
     netsync: false
-  - type: ProjectileBatteryAmmoProvider
-    proto: ADTBulletLaserMK2
+  - type: BasicEntityAmmoProvider
+    proto: ADTBulletLaser
+    capacity: 5
+    count: 5
     fireCost: 100
   - type: Gun
     fireRate: 1.8
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 10
+        Slash: 5
+        Structural: 10
+  - type: LeechOnMarker
+    leech:
+      groups:
+        Brute: -10
+        Burn: -10
+        Airloss: -5
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 4.5
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnHit:
+      path: /Audio/Weapons/eblade1.ogg
+      params:
+        variation: 0.250
+    activatedSoundOnHitNoDamage:
+      path: /Audio/Weapons/eblade1.ogg
+      params:
+        variation: 0.250
+        volume: -10
+    activatedSoundOnSwing:
+      path: /Audio/Weapons/eblademiss.ogg
+      params:
+        variation: 0.125
+    activatedDamage:
+        types:
+            Slash: 15
+            Heat: 15
+            Structural: 20
+  - type: GunRequiresWield
   - type: ToggleableLightVisuals
     spriteLayer: blade
     inhandVisuals:

@@ -470,6 +470,8 @@
 # Blueshield
 - type: entity
   id: ClothingBeltMedicalSecurity
+  name: medical-security belt
+  description: Special medical-security belt.
   parent: ClothingBeltStorageBase
   components:
   - type: Storage
