@@ -36,7 +36,7 @@
   - type: ContainerContainer
     containers:
       batterSlot: !type:Container
-    ents: []
+        ents: []
   - type: Construction
     graph: ADTMuffinMold
     node: start
