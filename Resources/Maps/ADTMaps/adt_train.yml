@@ -5602,6 +5602,13 @@ entities:
     - type: Transform
       pos: -4.5,-177.5
       parent: 2
+- proto: ADTMechPaddySpawner
+  entities:
+  - uid: 16697
+    components:
+    - type: Transform
+      pos: -3.5,-337.5
+      parent: 2
 - proto: ADTPlushieResomiBlue
   entities:
   - uid: 15090
@@ -9193,7 +9200,7 @@ entities:
       pos: 2.5,-179.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -6226.2163
+      secondsUntilStateChange: -6277.073
       state: Opening
   - uid: 11907
     components:
