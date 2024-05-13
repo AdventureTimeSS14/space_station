@@ -1,6 +1,6 @@
 - type: entity
   id: ADTMuffinMold
-  parent: BaseStorageItem
+  parent: BaseItem
   name: muffin mold
   description: A mold that holds muffins.
   components:
@@ -24,6 +24,10 @@
       tags:
         - ADTMuffin
         - ADTMuffinKekc
+  - type: UserInterface
+    interfaces:
+    - key: enum.StorageUiKey.Key
+      type: StorageBoundUserInterface
   - type: Item
     sprite: ADT/Objects/Specific/Service/muffin_mold.rsi
     size: Normal
@@ -33,6 +37,12 @@
         whitelist:
           tags:
           - ADTMuffinKekc
+  - type: ContainerContainer
+    containers:
+      batterSlot: !type:Container
+        showEnts: False
+        occludes: True
+        ents: []
   - type: Construction
     graph: ADTMuffinMold
     node: start
