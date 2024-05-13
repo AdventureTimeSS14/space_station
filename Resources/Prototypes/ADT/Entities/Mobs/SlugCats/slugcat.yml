@@ -6,7 +6,7 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: ADT\Mobs\Animals\slug-cat.rsi
+    sprite: ADT/Mobs/Animals/slug-cat.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: creek
