@@ -87,6 +87,8 @@
     netsync: false
     radius: 1.1 #smallest possible
     color: orange
+  - type: StaticPrice
+    price: 40
 
 - type: entity
   name: cheap lighter
@@ -116,6 +118,8 @@
         - ReagentId: WeldingFuel
           Quantity: 4
         maxVol: 4 #uses less fuel than a welder, so this isnt as bad as it looks
+  - type: StaticPrice
+    price: 25
 
 - type: entity
   name: flippo lighter
@@ -201,6 +205,8 @@
     netsync: false
     radius: 1.2 #slightly stronger than the other lighters
     color: orange
+  - type: StaticPrice
+    price: 50
 
 - type: entity
   name: flippo engraved lighter

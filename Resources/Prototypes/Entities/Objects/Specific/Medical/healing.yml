@@ -255,6 +255,8 @@
         path: "/Audio/Items/Medical/brutepack_begin.ogg"
       healingEndSound:
         path: "/Audio/Items/Medical/brutepack_end.ogg"
+    - type: StaticPrice
+      price: 15
 
 - type: entity
   name: roll of gauze
