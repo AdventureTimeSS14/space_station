@@ -23,6 +23,8 @@
     sprite: Objects/Consumable/Food/snacks.rsi
     heldPrefix: packet
     size: Tiny
+  - type: StaticPrice
+    price: 15
 # Snacks
 
 # "Snacks" means food in a packet. Down the line this stuff can have multiple

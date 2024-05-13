@@ -50,6 +50,9 @@
   - type: WirelessNetworkConnection
     range: 1200
   - type: StationLimitedNetwork
+  - type: StaticPrice
+    price: 50
+
 
 - type: entity
   abstract: true
