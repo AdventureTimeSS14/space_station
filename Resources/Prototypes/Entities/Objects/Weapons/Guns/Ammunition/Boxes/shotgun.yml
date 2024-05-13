@@ -22,8 +22,6 @@
         tags:
         - ShellShotgun
       capacity: 12
-    - type: StaticPrice
-      price: 25
 
 # Shotgun Shells
 - type: entity

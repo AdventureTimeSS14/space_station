@@ -4,7 +4,7 @@
     sprite: ADT/Clothing/Uniforms/Jumpskirt/Oktoberfest/oktoberfest_dirndlshortgreen.rsi
     state: icon
   product: ADTCrateOktoberfestCloth
-  cost: 1900
+  cost: 750
   category: cargoproduct-category-name-fun
   group: market
 
@@ -24,7 +24,7 @@
     sprite: ADT/Objects/Storage/halloween_box.rsi
     state: pennywise
   product: ADTCrateHalloweenCloth
-  cost: 6250
+  cost: 4250
   category: cargoproduct-category-name-fun
   group: market
 
