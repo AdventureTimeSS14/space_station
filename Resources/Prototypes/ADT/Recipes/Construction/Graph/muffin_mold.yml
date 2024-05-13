@@ -11,7 +11,7 @@
             - !type:DeleteEntity
           steps:
             - tag: ADTCakeBatter
-              store: batterSlot
+              store: storagebase
               doAfter: 1
     - node: batter
       entity: ADTMuffinMoldBatter
