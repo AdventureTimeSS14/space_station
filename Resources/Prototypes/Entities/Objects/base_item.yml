@@ -43,6 +43,7 @@
   - type: Pullable
   - type: DamageExaminable
 
+
 - type: entity
   name: "storage item"
   id: BaseStorageItem
