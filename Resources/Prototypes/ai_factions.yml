@@ -83,3 +83,17 @@
   - Zombie
   - SimpleHostile
   - Dragon
+
+- type: npcFaction
+  id: Blob
+  hostile:
+    - NanoTrasen
+    - Syndicate
+    - Passive
+    - SimpleHostile
+    - Xeno
+    - SimpleNeutral
+    - PetsNT
+    - Revolutionary
+    - Zombie
+    - Dragon
