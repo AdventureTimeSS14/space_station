@@ -1,7 +1,6 @@
 using Content.Shared.CCVar;
 using Content.Shared.StatusIcon;
 using Content.Shared.StatusIcon.Components;
-using Content.Shared.Stealth.Components;
 using Robust.Client.Graphics;
 using Robust.Shared.Configuration;
 
@@ -14,7 +13,6 @@ public sealed class StatusIconSystem : SharedStatusIconSystem
 {
     [Dependency] private readonly IConfigurationManager _configuration = default!;
     [Dependency] private readonly IOverlayManager _overlay = default!;
-    [Dependency] private readonly IEntityManager _entManager = default!;
 
     private bool _globalEnabled;
     private bool _localEnabled;
@@ -57,8 +55,7 @@ public sealed class StatusIconSystem : SharedStatusIconSystem
             return list;
 
         var inContainer = (meta.Flags & MetaDataFlags.InContainer) != 0;
-        var hasStealthComponent = _entManager.HasComponent<StealthComponent>(uid);
-        var ev = new GetStatusIconsEvent(list, inContainer, hasStealthComponent);
+        var ev = new GetStatusIconsEvent(list, inContainer);
         RaiseLocalEvent(uid, ref ev);
         return ev.StatusIcons;
     }
