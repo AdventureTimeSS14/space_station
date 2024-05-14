@@ -1,0 +1,29 @@
+- type: microwaveMealRecipe
+  id: ADTFoodBoiledBuckwheatRecipe
+  name: buckwheat kasha recipe
+  result: ADTFoodBoiledBuckwheat
+  time: 15
+  reagents:
+    Water: 10
+    ADTBuckwheatSolids: 15
+  solids:
+    FoodBowlBig: 1
+
+- type: microwaveMealRecipe
+  id: ADTFoodBoiledBuckwheatEggRecipe
+  name: buckwheat kasha egg recipe
+  result: ADTFoodBoiledBuckwheatEgg
+  time: 15
+  solids:
+    ADTFoodBoiledBuckwheat: 1
+    FoodEgg: 1
+    FoodCarrot: 1
+
+- type: microwaveMealRecipe
+  id: ADTFoodBoiledBuckwheatSausageRecipe
+  name: buckwheat kasha sausage recipe
+  result: ADTFoodBoiledBuckwheatSausage
+  time: 15
+  solids:
+    ADTFoodBoiledBuckwheat: 1
+    ADTFoodSausageRaw: 2

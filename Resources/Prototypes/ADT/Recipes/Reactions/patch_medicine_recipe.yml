@@ -1,0 +1,30 @@
+#Кровоостанавливающая пудра
+- type: reaction
+  id: ADTStypticPowder
+  reactants:
+    Aluminium:
+      amount: 1
+    Hydrogen:
+      amount: 1
+    Oxygen:
+      amount: 1
+    SulfuricAcid:
+      amount: 1
+  products:
+    ADTStypticPowder: 4
+#Сульфадиазин серебра
+- type: reaction
+  id: ADTSilverSulfadiazine
+  reactants:
+    Ammonia:
+      amount: 1
+    Silver:
+      amount: 1
+    Sulfur:
+      amount: 1
+    Oxygen:
+      amount: 1
+    Chlorine:
+      amount: 1
+  products:
+    ADTSilverSulfadiazine: 5

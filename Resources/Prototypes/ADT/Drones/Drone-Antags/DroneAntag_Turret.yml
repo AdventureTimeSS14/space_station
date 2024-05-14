@@ -1,0 +1,25 @@
+- type: npcFaction
+  id: DroneAntag
+  hostile:
+  - SimpleHostile
+  - Passive
+  - SimpleNeutral
+  - Mouse
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - NanoTrasen
+  - PetsNT
+  - Dragon
+  - Ursus
+
+- type: entity
+  parent: BaseWeaponTurret
+  id: ADTWeaponTurretDroneAntag
+  suffix: Drone Antag
+  components:
+    - type: NpcFactionMember
+      factions:
+        - DroneAntag
+
