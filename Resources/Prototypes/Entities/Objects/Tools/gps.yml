@@ -15,5 +15,3 @@
   - type: Tag
     tags:
     - GPS
-  - type: StaticPrice
-    price: 30
