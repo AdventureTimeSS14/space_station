@@ -102,6 +102,94 @@
     - Robotics
 
 - type: entity
+  id: MechRipley
+  parent: BaseMech
+  name: Ripley APLU
+  description: Versatile and lightly armored, the Ripley is useful for almost any heavy work scenario. The "APLU" stands for Autonomous Power Loading Unit.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    noRot: true
+    sprite: Objects/Specific/Mech/mecha.rsi
+    layers:
+    - map: [ "enum.MechVisualLayers.Base" ]
+      state: ripley
+  - type: FootstepModifier
+    footstepSoundCollection:
+      path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+  - type: Mech
+    baseState: ripley
+    openState: ripley-open
+    brokenState: ripley-broken
+    mechToPilotDamageMultiplier: 0.75
+    pilotWhitelist:
+      components:
+        - HumanoidAppearance
+    equipmentWhitelist:
+      tags:
+      - ADTMechEquipmentGeneral
+      - ADTMechEquipmentIndustrial
+  - type: MeleeWeapon
+    hidden: true
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 14 #intentionally shit so people realize that going into combat with the ripley is usually a bad idea.
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.25
+    baseSprintSpeed: 3.6
+
+- type: entity
+  id: MechRipleyBattery
+  parent: MechRipley
+  suffix: Battery
+  components:
+  - type: ContainerFill
+    containers:
+      mech-battery-slot:
+      - PowerCellHigh
+
+# TODO: have a whitelist for honker equipment
+- type: entity
+  parent: BaseMech
+  id: MechHonker
+  name: H.O.N.K.
+  description: "Produced by \"Tyranny of Honk, INC\", this exosuit is designed as heavy clown-support. Used to spread the fun and joy of life. HONK!"
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    noRot: true
+    sprite: Objects/Specific/Mech/mecha.rsi
+    layers:
+    - map: [ "enum.MechVisualLayers.Base" ]
+      state: honker
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepClown
+  - type: Mech
+    baseState: honker
+    openState: honker-open
+    brokenState: honker-broken
+    mechToPilotDamageMultiplier: 0.5
+    pilotWhitelist:
+      components:
+      - HumanoidAppearance
+    equipmentWhitelist:
+      tags:
+      - ADTMechEquipmentGeneral
+      - ADTMechEquipmentService
+
+- type: entity
+  parent: MechHonker
+  id: MechHonkerBattery
+  suffix: Battery
+  components:
+  - type: ContainerFill
+    containers:
+      mech-battery-slot:
+      - PowerCellHigh
+
+- type: entity
   parent: BaseMech
   id: MechHamtr
   name: HAMTR
@@ -209,95 +297,6 @@
 - type: entity
   parent: MechVim
   id: MechVimBattery
-  suffix: Battery
-  components:
-  - type: ContainerFill
-    containers:
-      mech-battery-slot:
-      - PowerCellHigh
-
-
-- type: entity
-  id: MechRipley
-  parent: BaseMech
-  name: Ripley APLU
-  description: Versatile and lightly armored, the Ripley is useful for almost any heavy work scenario. The "APLU" stands for Autonomous Power Loading Unit.
-  components:
-  - type: Sprite
-    drawdepth: Mobs
-    noRot: true
-    sprite: Objects/Specific/Mech/mecha.rsi
-    layers:
-    - map: [ "enum.MechVisualLayers.Base" ]
-      state: ripley
-  - type: FootstepModifier
-    footstepSoundCollection:
-      path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
-  - type: Mech
-    baseState: ripley
-    openState: ripley-open
-    brokenState: ripley-broken
-    mechToPilotDamageMultiplier: 0.75
-    pilotWhitelist:
-      components:
-        - HumanoidAppearance
-    equipmentWhitelist:
-      tags:
-      - ADTMechEquipmentGeneral
-      - ADTMechEquipmentIndustrial
-  - type: MeleeWeapon
-    hidden: true
-    attackRate: 1
-    damage:
-      types:
-        Blunt: 14 #intentionally shit so people realize that going into combat with the ripley is usually a bad idea.
-  - type: MovementSpeedModifier
-    baseWalkSpeed: 2.25
-    baseSprintSpeed: 3.6
-
-- type: entity
-  id: MechRipleyBattery
-  parent: MechRipley
-  suffix: Battery
-  components:
-  - type: ContainerFill
-    containers:
-      mech-battery-slot:
-      - PowerCellHigh
-
-# TODO: have a whitelist for honker equipment
-- type: entity
-  parent: BaseMech
-  id: MechHonker
-  name: H.O.N.K.
-  description: "Produced by \"Tyranny of Honk, INC\", this exosuit is designed as heavy clown-support. Used to spread the fun and joy of life. HONK!"
-  components:
-  - type: Sprite
-    drawdepth: Mobs
-    noRot: true
-    sprite: Objects/Specific/Mech/mecha.rsi
-    layers:
-    - map: [ "enum.MechVisualLayers.Base" ]
-      state: honker
-  - type: FootstepModifier
-    footstepSoundCollection:
-      collection: FootstepClown
-  - type: Mech
-    baseState: honker
-    openState: honker-open
-    brokenState: honker-broken
-    mechToPilotDamageMultiplier: 0.5
-    pilotWhitelist:
-      components:
-      - HumanoidAppearance
-    equipmentWhitelist:
-      tags:
-      - ADTMechEquipmentGeneral
-      - ADTMechEquipmentService
-
-- type: entity
-  parent: MechHonker
-  id: MechHonkerBattery
   suffix: Battery
   components:
   - type: ContainerFill
