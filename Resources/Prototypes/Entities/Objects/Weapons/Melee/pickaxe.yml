@@ -37,8 +37,6 @@
     sprite: Objects/Weapons/Melee/pickaxe.rsi
     storedRotation: -45
   - type: UseDelay
-  - type: StaticPrice
-    price: 15
 
 - type: entity
   name: mining drill

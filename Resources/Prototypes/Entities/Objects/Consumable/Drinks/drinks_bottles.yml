@@ -38,8 +38,6 @@
   - type: PhysicalComposition
     materialComposition:
       Plastic: 100
-  - type: StaticPrice
-    price: 15
 
 - type: entity
   parent: DrinkBottlePlasticBaseFull

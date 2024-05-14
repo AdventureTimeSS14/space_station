@@ -29,7 +29,7 @@
     contents:
       - id: BoxHug
       - id: RubberStampClown
-      - id: SpaceCash750
+      - id: SpaceCash500
 
 - type: entity
   parent: ClothingBackpackSatchelSecurity
@@ -41,7 +41,7 @@
       - id: Flash
       - id: MagazinePistol
       - id: ADTSpaceLaw
-      - id: SpaceCash1000
+      - id: SpaceCash500
 
 - type: entity
   parent: ClothingBackpackSatchelSecurity
@@ -53,7 +53,7 @@
       - id: BoxForensicPad
       - id: ADTSpaceLaw
       - id: Flash
-      - id: SpaceCash1000
+      - id: SpaceCash500
 
 - type: entity
   parent: ClothingBackpackSatchelBrigmedic
@@ -63,7 +63,7 @@
     contents:
       - id: Flash
       - id: BoxSurvivalSecurity
-      - id: SpaceCash1000
+      - id: SpaceCash500
 
 - type: entity
   parent: ClothingBackpackSatchelMedical
@@ -72,7 +72,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalMedical
-      - id: SpaceCash750
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -83,7 +83,7 @@
     contents:
       - id: BoxSurvivalMedical
       - id: EmergencyRollerBedSpawnFolded
-      - id: SpaceCash750
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -94,7 +94,8 @@
     contents:
       - id: BoxSurvival
       - id: Flash
-      - id: SpaceCash10000
+      - id: SpaceCash1000
+      - id: SpaceCash1000
 
 - type: entity
   noSpawn: true
@@ -106,7 +107,6 @@
       - id: BoxSurvivalEngineering
       - id: Flash
       #- id: TelescopicBaton
-      - id: SpaceCash1000
       - id: SpaceCash1000
 
 - type: entity
@@ -120,7 +120,6 @@
       - id: Flash
       #- id: TelescopicBaton
       - id: SpaceCash1000
-      - id: SpaceCash1000
 
 - type: entity
   noSpawn: true
@@ -132,7 +131,6 @@
       - id: BoxSurvival
       - id: Flash
       #- id: TelescopicBaton
-      - id: SpaceCash1000
       - id: SpaceCash1000
 
 - type: entity
@@ -146,7 +144,6 @@
       - id: Flash
       #- id: TelescopicBaton
       - id: SpaceCash1000
-      - id: SpaceCash1000
 
 - type: entity
   noSpawn: true
@@ -158,7 +155,6 @@
       - id: BoxSurvival
       - id: Flash
       #- id: TelescopicBaton
-      - id: SpaceCash1000
       - id: SpaceCash1000
 
 - type: entity
@@ -172,7 +168,6 @@
       - id: Flash
       - id: MagazinePistol
       - id: SpaceCash1000
-      - id: SpaceCash1000
 
 - type: entity
   noSpawn: true
@@ -182,7 +177,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalEngineering
-      - id: SpaceCash1000
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -192,7 +187,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalEngineering
-      - id: SpaceCash1000
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -202,7 +197,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
-      - id: SpaceCash1250
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -212,7 +207,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
-      - id: SpaceCash750
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -222,7 +217,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalMedical
-      - id: SpaceCash750
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -234,7 +229,7 @@
       - id: BoxSurvival
       - id: Bible
       - id: RubberStampChaplain
-      - id: SpaceCash750
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -256,7 +251,7 @@
         - id: BoxSurvival
         - id: AcousticGuitarInstrument
         - id: SaxophoneInstrument
-        - id: SpaceCash750
+        - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -267,7 +262,7 @@
       contents:
         - id: BoxSurvival
         - id: BookRandom
-        - id: SpaceCash750
+        - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -281,7 +276,7 @@
       - id: Lighter
       - id: CigPackBlack
       - id: HandLabeler
-      - id: SpaceCash1000
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -291,7 +286,7 @@
     - type: StorageFill
       contents:
         - id: BoxSurvival
-        - id: SpaceCash1000
+        - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -301,7 +296,7 @@
     - type: StorageFill
       contents:
         - id: NesBoxSurvivalSalvager
-        - id: SpaceCash1000
+        - id: SpaceCash500
 
 - type: entity
   noSpawn: true
@@ -312,7 +307,7 @@
     contents:
       - id: BoxSurvival
       - id: RubberStampMime
-      - id: SpaceCash750
+      - id: SpaceCash500
 
 #ADT
 - type: entity
@@ -329,7 +324,7 @@
       - id: SpeedLoaderMagnum
       - id: SmokeGrenade
       - id: SmokeGrenade
-      - id: SpaceCash1000
+      - id: SpaceCash500
 
 - type: entity
   noSpawn: true
