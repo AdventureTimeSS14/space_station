@@ -13,18 +13,16 @@ namespace Content.Shared.Physics;
 [FlagsFor(typeof(CollisionLayer)), FlagsFor(typeof(CollisionMask))]
 public enum CollisionGroup
 {
-    None                = 0,
-    Opaque              = 1 << 0, // 1 Blocks light, can be hit by lasers
-    Impassable          = 1 << 1, // 2 Walls, objects impassable by any means
-    MidImpassable       = 1 << 2, // 4 Mobs, players, crabs, etc
-    HighImpassable      = 1 << 3, // 8 Things on top of tables and things that block tall/large mobs.
-    LowImpassable       = 1 << 4, // 16 For things that can fit under a table or squeeze under an airlock
-    BlobImpassable      = 1 << 5, // 228 Blob Tiles # TODO: HOW FUCK THIS WORKS?
-    GhostImpassable     = 1 << 6, // 32 Things impassible by ghosts/observers, ie blessed tiles or forcefields
-    BulletImpassable    = 1 << 7, // 64 Can be hit by bullets
-    InteractImpassable  = 1 << 8, // 128 Blocks interaction/InRangeUnobstructed
-    DoorPassable        = 1 << 9, // 512 Blob Tiles
-
+    None               = 0,
+    Opaque             = 1 << 0, // 1 Blocks light, can be hit by lasers
+    Impassable         = 1 << 1, // 2 Walls, objects impassable by any means
+    MidImpassable      = 1 << 2, // 4 Mobs, players, crabs, etc
+    HighImpassable     = 1 << 3, // 8 Things on top of tables and things that block tall/large mobs.
+    LowImpassable      = 1 << 4, // 16 For things that can fit under a table or squeeze under an airlock
+    GhostImpassable    = 1 << 5, // 32 Things impassible by ghosts/observers, ie blessed tiles or forcefields
+    BulletImpassable   = 1 << 6, // 64 Can be hit by bullets
+    InteractImpassable = 1 << 7, // 128 Blocks interaction/InRangeUnobstructed
+    DoorPassable       = 1 << 8, // 256 Allows door to close over top, Like blast doors over conveyors for disposals rooms/cargo.
 
     MapGrid = MapGridHelpers.CollisionGroup, // Map grids, like shuttles. This is the actual grid itself, not the walls or other entities connected to the grid.
 
@@ -32,23 +30,17 @@ public enum CollisionGroup
     AllMask = -1,
 
     // Humanoids, etc.
-    MobMask = Impassable | HighImpassable | MidImpassable | LowImpassable | BlobImpassable,
+    MobMask = Impassable | HighImpassable | MidImpassable | LowImpassable,
     MobLayer = Opaque | BulletImpassable,
     // Mice, drones
-    SmallMobMask = Impassable | LowImpassable | BlobImpassable,
+    SmallMobMask = Impassable | LowImpassable,
     SmallMobLayer = Opaque | BulletImpassable,
     // Birds/other small flyers
-    FlyingMobMask = Impassable | HighImpassable | BlobImpassable,
+    FlyingMobMask = Impassable | HighImpassable,
     FlyingMobLayer = Opaque | BulletImpassable,
-    // blob
-    BlobMobMask = Impassable | HighImpassable | MidImpassable | LowImpassable,
-    BlobMobLayer = Opaque | BulletImpassable,
-    // blob
-    FlyingBlobMobMask = Impassable | HighImpassable,
-    FlyingBlobMobLayer = Opaque | BulletImpassable,
 
     // Mechs
-    LargeMobMask = Impassable | HighImpassable | MidImpassable | LowImpassable | BlobImpassable,
+    LargeMobMask = Impassable | HighImpassable | MidImpassable | LowImpassable,
     LargeMobLayer = Opaque | HighImpassable | MidImpassable | LowImpassable | BulletImpassable,
 
     // Machines, computers
@@ -77,7 +69,6 @@ public enum CollisionGroup
     ItemMask = Impassable | HighImpassable | BlobImpassable,
     ThrownItem = Impassable | HighImpassable | BulletImpassable | BlobImpassable,
     WallLayer = Opaque | Impassable | HighImpassable | MidImpassable | LowImpassable | BulletImpassable | InteractImpassable,
-    BlobTileLayer = Opaque | BlobImpassable | BulletImpassable,
     GlassLayer = Impassable | HighImpassable | MidImpassable | LowImpassable | BulletImpassable | InteractImpassable,
     HalfWallLayer = MidImpassable | LowImpassable,
 
