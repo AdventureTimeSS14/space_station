@@ -1,3 +1,7 @@
+#Стаканы с напитками или коктейлями.
+
+#Безалкоголь
+##Напитки
 - type: entity
   parent: DrinkGlassBase
   id: ADTSummerShadeGlass
@@ -124,6 +128,231 @@
     sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/arcticexplosion.rsi
     state: icon
 
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTDrinkCocoaGlass
+  name: hot cocoa
+  description: A heated drink consisting cocoa powder.
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTCocoaDrink
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/cocoa_drink.rsi
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTChocolateGlass
+  name: hot choco
+  description: A heated drink consisting chocolate.
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTChocolateDrink
+          Quantity: 30
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/chocolateglass.rsi
+
+##Новогодний безалкоголь
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTMulledWineColdGlass
+  name: mulled-wine-cold-name
+  description: mulled-wine-cold-desc
+  suffix: New Year
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTMulledWineCold
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: mulled_wine_cold
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTChristmasMilkshakeGlass
+  name: christmas-milkshake-name
+  description: christmas-milkshake-desc
+  suffix: New Year
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTChristmasMilkshake
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: christmas_milkshake
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTTeaCinnamonLemonGlass
+  name: tea-cinnamon-lemon-name
+  description: tea-cinnamon-lemon-desc
+  suffix: New Year
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTTeaCinnamonLemon
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: warm_tea_cinnamon_lemon
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTSbitenCinnamonLemonGlass
+  name: sbiten-cinnamon-lemon-name
+  description: sbiten-cinnamon-lemon-desc
+  suffix: New Year
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTSbitenCinnamonLemon
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: sbiten_cinnamon_lemon
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTHotCocoaGlass
+  name: hot-cocoa-name
+  description: hot-cocoa-desc
+  suffix: New Year
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTHotCocoa
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: hot_cocoa
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTHotChocolateGlass
+  name: hot-chocolate-name
+  description: hot-chocolate-desc
+  suffix: New Year
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTHotChocolate
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: hot_chocolate
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTHotChocolateAllergicGlass
+  name: hot-chocolate-name-allergic
+  description: hot-chocolate-desc-allergic
+  suffix: New Year
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTHotChocolateAllergic
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: hot_chocolate
+
+#Алкоголь
+##Просто алкоголь
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTVodkaAntivirusGlass
+  name: vodka-antivirus-name
+  description: vodka-antivirus-desc
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTVodkaAntivirus
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/vodka_antivirusglass.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTAppleLiqueurGlass
+  name: apple-liqueur-name
+  description: apple-liqueur-desc
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTAppleLiqueur
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/apple_liqueur_glass.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTCherryExquisiteWine
+  name: cherry-exq-wine-name
+  description: cherry-exq-wine-desc
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTCherryExquisiteWine
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/cherryexquisitewineglass.rsi
+    state: icon
+
+##Напитки
 - type: entity
   parent: DrinkGlassBase
   id: ADTSugarKnightGlass
@@ -306,24 +535,6 @@
 
 - type: entity
   parent: DrinkGlassBase
-  id: ADTAppleLiqueurGlass
-  name: apple-liqueur-name
-  description: apple-liqueur-desc
-  components:
-  - type: Drink
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: ADTAppleLiqueur
-          Quantity: 30
-  - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/apple_liqueur_glass.rsi
-    state: icon
-
-- type: entity
-  parent: DrinkGlassBase
   id: ADTAppleMartiniGlass
   name: apple-martini-name
   description: apple-martini-desc
@@ -376,8 +587,7 @@
     sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/elderguards.rsi
     state: icon
 
-#День Святого Валентина
-
+##День Святого Валентина
 - type: entity
   parent: DrinkGlassBase
   id: ADTSerumLoveGlass
@@ -449,3 +659,187 @@
   - type: Sprite
     sprite: ADT/Objects/Consumable/Drinks/cosmopolitan.rsi
     state: icon
+
+##Алкогольный новый год
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTMulledWineGlass
+  name: mulled-wine-name
+  description: mulled-wine-desc
+  suffix: New Year
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTMulledWine
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: mulled_wine
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTChampagneMandarinGlass
+  name: champagne-mandarin-name
+  description: champagne-mandarin-desc
+  suffix: New Year
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTChampagneMandarin
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: champagne_mandarin
+
+##Октоберфест
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTGoldenAleGlass
+  name: golden-ale-name
+  description: golden-ale-desc
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: ADTGoldenAle
+          Quantity: 50
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
+    state: goldenale
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTSausageBeerGlass
+  name: sausage-beer-name
+  description: sausage-beer-desc
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: ADTSausageBeer
+          Quantity: 50
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
+    state: sausagebeer
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTTechnoBeerGlass
+  name: techo-beer-name
+  description: techo-beer-desc
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: ADTTechnoBeer
+          Quantity: 50
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
+    state: technobeer
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTClassicPaulanerBeerGlass
+  name: classic-paulaner-name
+  description: classic-paulaner-desc
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: ADTClassicPaulanerBeer
+          Quantity: 50
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
+    state: classicpaulaner
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTLivseyBeerGlass
+  name: livsey-beer-name
+  description: livsey-beer-desc
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: ADTLivseyBeer
+          Quantity: 50
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
+    state: livseybeer
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTLuckyJonnyGlass
+  name: lucky-jonny-name
+  description: lucky-jonny-desc
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: ADTLuckyJonnyBeer
+          Quantity: 50
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
+    state: luckyjonny
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTSecUnfilteredGlass
+  name: sec-unfiltered-name
+  description: sec-unfiltered-desc
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: ADTSecUnfilteredBeer
+          Quantity: 50
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
+    state: secunfiltered
+
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTGlyphidStoutBeerGlass
+  name: glyphid-stout-name
+  description: glyphid-stout-desc
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: ADTGlyphidStoutBeer
+          Quantity: 50
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
+    state: glyphidstout
