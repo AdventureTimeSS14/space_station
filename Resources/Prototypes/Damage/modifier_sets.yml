@@ -395,13 +395,3 @@
   flatReductions:
     # can't punch the endoskeleton to death
     Blunt: 5
-
-- type: damageModifierSet
-  id: Blob
-  coefficients:
-    Blunt: 0.25
-    Slash: 0.25
-    Piercing: 0.25
-    Heat: 2.00
-  flatReductions:
-    Blunt: 5

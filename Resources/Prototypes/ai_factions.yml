@@ -89,6 +89,7 @@
   - Zombie
   - SimpleHostile
   - Dragon
+<<<<<<< HEAD
 
 - type: npcFaction
   id: Blob
@@ -103,3 +104,5 @@
   - Revolutionary
   - Zombie
   - Dragon
+=======
+>>>>>>> parent of c17fc8be22 (blob)
