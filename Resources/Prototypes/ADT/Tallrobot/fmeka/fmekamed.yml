@@ -1,0 +1,54 @@
+- type: entity
+  id: ADTTallRobotFMekaMed
+  parent: ADTTallRobotFMekaBase
+  name: med cyborg
+  components:
+  - type: Sprite
+    sprite: ADT/Mobs/Silicon/Bots/tallrobot/fmekamed.rsi
+    layers:
+    - state: fmekamed
+      map: ["enum.DamageStateVisualLayers.Base"]
+    - state: fmekamed_e
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: fmekamed_e_r
+      shader: unshaded
+      visible: false
+    - state: robot_l
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: BorgChassis
+    moduleWhitelist:
+      tags:
+      - BorgModuleGeneric
+      - BorgModuleMedical
+    hasMindState: fmekamed_e
+    noMindState: fmekamed_e_r
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: fmekamed
+      Critical:
+        Base: fmekamed-wreck
+      Dead:
+        Base: fmekamed-wreck
+  - type: Construction
+    node: service
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Medical
+    - Binary
+    - Common
+    - Science
+  - type: ActiveRadio
+    channels:
+    - Medical
+    - Binary
+    - Common
+    - Science
+  - type: AccessReader
+    access: [["Medical"], ["Command"], ["Research"]]
+  - type: Inventory
+    templateId: borgTall

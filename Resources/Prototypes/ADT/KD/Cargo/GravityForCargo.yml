@@ -1,0 +1,19 @@
+- type: cargoProduct
+  id: GravityGeneratorMini
+  icon:
+    sprite: Structures/Machines/gravity_generator_mini.rsi
+    state: on
+  product: GravityGeneratorMini
+  cost: 4000
+  category: cargoproduct-category-name-shuttle
+  group: market
+
+- type: cargoProduct
+  id: CargoGravityGenerator
+  icon:
+    sprite: Structures/Machines/gravity_generator.rsi
+    state: on
+  product: CrateEngineeringGravityGenerator
+  cost: 20000
+  category: cargoproduct-category-name-shuttle
+  group: market
