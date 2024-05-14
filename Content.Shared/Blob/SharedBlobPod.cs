@@ -5,6 +5,6 @@ namespace Content.Shared.Blob;
 
 
 [Serializable, NetSerializable]
-public sealed class BlobPodZombifyDoAfterEvent : SimpleDoAfterEvent
+public partial class BlobPodZombifyDoAfterEvent : SimpleDoAfterEvent
 {
 }

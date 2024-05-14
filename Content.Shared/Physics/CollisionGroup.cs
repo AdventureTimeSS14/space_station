@@ -23,6 +23,7 @@ public enum CollisionGroup
     GhostImpassable     = 1 << 6, // 32 Things impassible by ghosts/observers, ie blessed tiles or forcefields
     BulletImpassable    = 1 << 7, // 64 Can be hit by bullets
     InteractImpassable  = 1 << 8, // 128 Blocks interaction/InRangeUnobstructed
+    DoorPassable        = 1 << 9, // 512 Blob Tiles
 
 
     MapGrid = MapGridHelpers.CollisionGroup, // Map grids, like shuttles. This is the actual grid itself, not the walls or other entities connected to the grid.

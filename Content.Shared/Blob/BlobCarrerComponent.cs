@@ -6,7 +6,9 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototy
 namespace Content.Shared.Blob;
 
 [RegisterComponent, NetworkedComponent]
-public sealed class BlobCarrierComponent : Component
+#pragma warning disable RA0003 // Class must be explicitly marked as [Virtual], abstract, static or sealed
+public partial class BlobCarrierComponent : Component
+#pragma warning restore RA0003 // Class must be explicitly marked as [Virtual], abstract, static or sealed
 {
     [ViewVariables(VVAccess.ReadWrite), DataField("transformationDelay")]
     public float TransformationDelay = 240;
@@ -32,7 +34,7 @@ public sealed class BlobCarrierComponent : Component
     public string CoreBlobGhostRolePrototype = "CoreBlobTileGhostRole";
 }
 
-public sealed class TransformToBlobActionEvent : InstantActionEvent
+public partial class TransformToBlobActionEvent : InstantActionEvent
 {
 
 }

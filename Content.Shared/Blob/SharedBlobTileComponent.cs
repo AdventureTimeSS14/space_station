@@ -3,7 +3,7 @@
 namespace Content.Shared.Blob;
 
 [NetworkedComponent]
-public abstract class SharedBlobTileComponent : Component
+public partial class SharedBlobTileComponent : Component
 {
     [DataField("color")]
     public Color Color = Color.White;
