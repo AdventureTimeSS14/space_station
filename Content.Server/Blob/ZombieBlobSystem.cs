@@ -1,8 +1,9 @@
 ﻿using Content.Server.Atmos.Components;
+using Robust.Shared.Audio.Systems;
 using Content.Server.Body.Components;
 using Content.Server.Chat.Managers;
 using Content.Server.Mind;
-using Content.Server.Mind.Components;
+using Content.Shared.Mind.Components;
 using Content.Server.NPC;
 using Content.Server.NPC.Components;
 using Content.Server.NPC.HTN;
@@ -79,7 +80,7 @@ namespace Content.Server.Blob
 
             EnsureComp<PressureImmunityComponent>(uid);
 
-            EnsureComp<RespiratorImmunityComponent>(uid);
+            //EnsureComp<RespiratorImmunityComponent>(uid);
 
             if (TryComp<TemperatureComponent>(uid, out var temperatureComponent))
             {
@@ -135,10 +136,10 @@ namespace Content.Server.Blob
                 RemComp<PressureImmunityComponent>(uid);
             }
 
-            if (HasComp<RespiratorImmunityComponent>(uid))
-            {
-                RemComp<RespiratorImmunityComponent>(uid);
-            }
+         // if (HasComp<RespiratorImmunityComponent>(uid))
+         //  {
+         //      RemComp<RespiratorImmunityComponent>(uid);
+         //  }
 
             if (TryComp<TemperatureComponent>(uid, out var temperatureComponent) && component.OldColdDamageThreshold != null)
             {
