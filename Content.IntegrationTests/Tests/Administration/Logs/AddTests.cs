@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿﻿using System.Collections.Generic;
 using System.Linq;
 using Content.Server.Administration.Logs;
 using Content.Server.Database;
@@ -32,8 +32,8 @@ public sealed class AddTests
 
         var guid = Guid.NewGuid();
 
-        var testMap = await pair.CreateTestMap();
-        var coordinates = testMap.GridCoords;
+        await pair.CreateTestMap();
+        var coordinates = pair.TestMap.GridCoords;
         await server.WaitPost(() =>
         {
             var entity = sEntities.SpawnEntity(null, coordinates);

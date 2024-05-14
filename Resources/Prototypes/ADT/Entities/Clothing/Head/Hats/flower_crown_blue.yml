@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTFlowerCrownBlue
+  name: flower wreath
+  description: A neat wreath of luxurious flowers in turquoise, blue and blue shades, exuding a pleasant, soothing fragrance. It perfectly complements the elegant hair of a similar color.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hats/flower_crown_blue.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hats/flower_crown_blue.rsi
