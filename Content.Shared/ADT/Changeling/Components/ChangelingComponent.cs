@@ -447,8 +447,8 @@ public sealed partial class ChangelingComponent : Component
 
     [DataField]
     public int BiodegradeDuration = 3;
-    
-    [DataField]    
+
+    [DataField]
     public string HiveMind = "ChangelingCollectiveMind";
 
     [DataField]

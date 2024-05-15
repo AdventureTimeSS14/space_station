@@ -42,6 +42,10 @@ using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.Preferences;
 using Content.Server.Database;
 using Content.Server.Humanoid;
+using FastAccessors;
+using Content.Shared.Humanoid.Prototypes;
+using Robust.Shared.Utility;
+using Content.Shared.Humanoid.Markings;
 
 
 namespace Content.Server.Changeling.EntitySystems;
@@ -338,15 +342,28 @@ public sealed partial class ChangelingSystem : EntitySystem
                 HumanoidCharacterAppearance hca = new();
                 if (item.HumanoidAppearanceComponent == null)
                     continue;
-                hca.WithEyeColor(item.HumanoidAppearanceComponent.EyeColor)
-                    .WithSkinColor(item.HumanoidAppearanceComponent.SkinColor)
-                    .WithHairColor(item.HumanoidAppearanceComponent.CachedHairColor != null ? item.HumanoidAppearanceComponent.CachedHairColor.Value : Color.Black);
-                foreach (var layer in item.HumanoidAppearanceComponent.BaseLayers)
-                {
+                // if (item.HumanoidAppearanceComponent.CustomBaseLayers.TryGetValue(HumanoidVisualLayers.FacialHair, out var facialHair))
+                //     if (facialHair.Id != null)
+                //         hca = hca.WithFacialHairStyleName(facialHair.Id.Value.Id);
 
-                }
-                //    WithHairColor(item.HumanoidAppearanceComponent.BaseLayers.)
-                //    WithFacialHairColor(item.HumanoidAppearanceComponent.CachedFacialHairColor)
+                // if (item.HumanoidAppearanceComponent.BaseLayers.TryGetValue(HumanoidVisualLayers.FacialHair, out var facialHair))
+                //     hca = hca.WithFacialHairStyleName(facialHair.ID);
+
+                if (item.HumanoidAppearanceComponent.MarkingSet.Markings.TryGetValue(Shared.Humanoid.Markings.MarkingCategories.FacialHair, out var facialHair))
+                    if (facialHair.TryGetValue(0, out var marking))
+                    {
+                        hca = hca.WithFacialHairStyleName(marking.MarkingId);
+                        hca = hca.WithFacialHairColor(marking.MarkingColors.First());
+                    }
+                if (item.HumanoidAppearanceComponent.MarkingSet.Markings.TryGetValue(Shared.Humanoid.Markings.MarkingCategories.Hair, out var hair))
+                    if (hair.TryGetValue(0, out var marking))
+                    {
+                        hca = hca.WithHairStyleName(marking.MarkingId);
+                        hca = hca.WithHairColor(marking.MarkingColors.First());
+                    }
+
+                hca = hca.WithSkinColor(item.HumanoidAppearanceComponent.SkinColor);
+
                 ev.HumanoidData.Add(new()
                 {
                     NetEntity = netEntity.Value,

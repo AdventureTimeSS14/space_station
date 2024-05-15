@@ -5,7 +5,6 @@ using Content.Client.UserInterface.Systems.Radial;
 using Content.Client.UserInterface.Systems.Radial.Controls;
 using Content.Shared.Changeling;
 using Content.Shared.Humanoid.Prototypes;
-using FastAccessors;
 using Robust.Client.GameObjects;
 using Robust.Client.Player;
 using Robust.Client.UserInterface;
@@ -35,6 +34,8 @@ public sealed class ChangelingPanelSystem : EntitySystem
     private RadialContainer? _openedMenu;
 
     private const string DefaultIcon = "/Textures/Interface/AdminActions/play.png";
+
+    private const string EmptyIcon = "/Textures/Interface/AdminActions/emptyIcon.png";
 
     public override void Initialize()
     {
@@ -70,7 +71,7 @@ public sealed class ChangelingPanelSystem : EntitySystem
             face.SetEntity(dummy);
 
             var actionName = humanoid.Name;
-            var texturePath = _spriteSystem.Frame0(new SpriteSpecifier.Texture(new ResPath(DefaultIcon)));
+            var texturePath = _spriteSystem.Frame0(new SpriteSpecifier.Texture(new ResPath(EmptyIcon)));
 
             var emoteButton = _openedMenu.AddButton(actionName, texturePath, face);
             emoteButton.Opacity = 210;
