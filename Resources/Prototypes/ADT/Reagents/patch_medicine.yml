@@ -1,0 +1,52 @@
+#Кровоостанавливающая пудра
+- type: reagent
+  id: ADTStypticPowder
+  name: reagent-name-styptic-powder
+  group: Medicine
+  desc: reagent-desc-styptic-powder
+  flavor: medicine
+  color: "#c8a2c8"
+  physicalDesc: reagent-physical-desc-powdery
+  metabolisms:
+    Medicine:
+      metabolismRate : 0.75
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -2.25
+      - !type:ModifyBleedAmount
+        amount: -1 #почему кровоостанавливающая пудра не останавливала кровотечение?
+      - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 0.5
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-usual" ]
+        probability: 0.05
+#Сульфадиазин серебра
+- type: reagent
+  id: ADTSilverSulfadiazine
+  name: reagent-name-silver-sulfadiazine
+  group: Medicine
+  desc: reagent-desc-silver-sulfadiazine
+  flavor: medicine
+  color: "#c8a2c8"
+  physicalDesc: reagent-physical-desc-powdery
+  metabolisms:
+    Medicine:
+      metabolismRate : 0.75
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Burn: -3
+      - !type:PopupMessage
+        conditions:
+        - !type:TotalDamage
+          min: 0.5
+        type: Local
+        visualType: Small
+        messages: [ "medicine-effect-usual" ]
+        probability: 0.05

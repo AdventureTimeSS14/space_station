@@ -234,10 +234,6 @@
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 12 # takes 1 minute to charge itself back to full
-  - type: Tag
-    tags:
-      - PowerCell
-      - Microreactor
 
 - type: entity
   parent: PowerCellMicroreactor

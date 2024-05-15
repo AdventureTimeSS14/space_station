@@ -1,6 +1,9 @@
 - type: vendingMachineInventory
   id: DonutInventory
   startingInventory:
+    ADTFoodBananChocolate: 3
+    ADTFoodBananChocolatePink: 3
+    ADTFoodBoxEclairs: 3
     FoodDonutChocolate: 5
     FoodDonutApple: 3
     FoodDonutPink: 3
