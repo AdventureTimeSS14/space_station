@@ -80,8 +80,6 @@
   - type: GuideHelp
     guides:
     - Security
-  - type: StaticPrice
-    price: 30
 
 - type: entity
   id: GrenadeFlashEffect
@@ -396,8 +394,6 @@
       reagents:
       - ReagentId: TearGas
         Quantity: 50
-  - type: StaticPrice
-    price: 30
 
 # Non-explosive "dummy" grenades to use as a distraction.
 

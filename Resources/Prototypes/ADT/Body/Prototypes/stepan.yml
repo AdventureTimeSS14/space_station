@@ -1,0 +1,28 @@
+#- type: body
+#  id: Stepanda
+#  name: "Stepanda"
+#  root: torso
+#  slots:
+#    head:
+#      part: HeadHuman (HeadStepan)
+#      connections:
+#      - torso
+#    torso:
+#      part: TorsoStepan
+#      connections:
+#      - left manipulator
+#      - right manipulator
+#      - support module
+#      - special module
+#    right arm:
+#      part: RightArmHuman
+#      connections:
+#      - right hand
+#    left arm:
+#      part: LeftArmStepan
+#      connections:
+#      - left hand
+#    right hand:
+#      part: RightHandHuman
+#    left hand:
+#      part: LeftHandHuman

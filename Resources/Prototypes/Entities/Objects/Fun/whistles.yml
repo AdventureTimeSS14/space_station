@@ -17,8 +17,6 @@
       collection: BaseWhistle
   - type: Whistle
     distance: 5
-  - type: StaticPrice
-    price: 15
 
 - type: entity
   parent: BaseWhistle

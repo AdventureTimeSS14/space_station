@@ -48,8 +48,6 @@
   - type: ContainerContainer
     containers:
       cluster-payload: !type:Container
-  - type: StaticPrice
-    price: 50
 
 - type: entity
   parent: GrenadeBase
@@ -144,8 +142,6 @@
   - type: ContainerContainer
     containers:
       cluster-payload: !type:Container
-  - type: StaticPrice
-    price: 50
 
 - type: entity
   parent: GrenadeBase

@@ -1,0 +1,54 @@
+- type: entity
+  id: ADTTallRobotMekaServe
+  parent: ADTTallRobotMekaBase
+  name: service cyborg
+  components:
+  - type: Sprite
+    sprite: ADT/Mobs/Silicon/Bots/tallrobot/mekaserve.rsi
+    layers:
+    - state: mekaserve
+      map: ["enum.DamageStateVisualLayers.Base"]
+    - state: mekaserve_e
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: mekaserve_e_r
+      shader: unshaded
+      visible: false
+    - state: robot_l
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: BorgChassis
+    moduleWhitelist:
+      tags:
+      - BorgModuleGeneric
+      - BorgModuleService
+    hasMindState: mekaserve_e
+    noMindState: mekaserve_e_r
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: mekaserve
+      Critical:
+        Base: mekaserve-tipped
+      Dead:
+        Base: mekaserve-tipped
+  - type: Construction
+    node: service
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Service
+    - Binary
+    - Common
+    - Science
+  - type: ActiveRadio
+    channels:
+    - Service
+    - Binary
+    - Common
+    - Science
+  - type: AccessReader
+    access: [["Service"], ["Command"], ["Research"]]
+  - type: Inventory
+    templateId: borgTall

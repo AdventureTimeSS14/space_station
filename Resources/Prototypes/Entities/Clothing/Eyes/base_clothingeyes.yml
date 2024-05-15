@@ -10,5 +10,3 @@
   - type: Item
     size: Small
     storedRotation: -90
-  - type: StaticPrice
-    price: 30

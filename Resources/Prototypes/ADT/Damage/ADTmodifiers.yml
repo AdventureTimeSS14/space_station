@@ -95,17 +95,3 @@
   id: AshWalker # Груба кожа = умно ящериц
   coefficients:
     Blunt: 0.8
-
-- type: damageModifierSet
-  id: ADTAntagDroneIPCDamageModSet
-  coefficients:
-    Blunt: 0.75
-    Slash: 0.75
-    Piercing: 0.55
-    Heat: 0.80
-    #Explosive: 0.25
-    Structural: 0
-    # zap
-    Shock: 0.5
-    Cold: 0
-    Caustic: 0.3

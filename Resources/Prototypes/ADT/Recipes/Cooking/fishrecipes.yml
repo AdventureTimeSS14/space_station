@@ -1,0 +1,35 @@
+
+- type: microwaveMealRecipe
+  id: ADTRecipeTacoFishAlt
+  name: fish taco recipe
+  result: FoodTacoFish
+  time: 10
+  solids:
+    FoodTacoShell: 1
+    ADTFoodFish: 1
+    FoodOnionSlice: 2
+    FoodTomato: 1
+    FoodCabbage: 1
+
+- type: microwaveMealRecipe
+  id: ADTRecipeSashimiSafe
+  name: safe sashimi recipe
+  result: ADTFoodMealSashimi
+  time: 15
+  reagents:
+    TableSalt: 1
+  solids:
+    ADTFoodFish: 2
+
+- type: microwaveMealRecipe
+  id: ADTRecipeBisqueAlt
+  name: bisque recipe
+  result: FoodSoupBisque
+  time: 10
+  reagents:
+    Water: 10
+  solids:
+    FoodBowlBig: 1
+    FoodTomato: 1
+    FoodMushroom: 1
+    ADTFoodFish: 1
