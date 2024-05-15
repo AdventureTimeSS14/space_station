@@ -3,7 +3,7 @@
 namespace Content.Client.Chemistry.Components;
 
 [RegisterComponent]
-public sealed class SmokeComponent : SharedSmokeComponent
+public partial class SmokeComponent : SharedSmokeComponent
 {
 
 }
