@@ -22,4 +22,3 @@ chatsan-tearfully-salutes = отдаёт честь со слезами на г�
 chatsan-shrugs = пожимает плечами
 chatsan-claps = хлопает
 chatsan-snaps = щёлкает
-chatsan-questioned = вопросительно смотрит

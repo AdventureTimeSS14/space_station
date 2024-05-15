@@ -23,4 +23,3 @@ chatsan-tearfully-smiles = tearfully smiles
 chatsan-winks = winks
 chatsan-claps = claps
 chatsan-snaps = snaps
-chatsan-questioned = gazes questioningly
