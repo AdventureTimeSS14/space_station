@@ -3,6 +3,7 @@ using Content.Shared.GameTicking;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Shared.GameStates;
+using Robust.Shared.Player;
 
 namespace Content.Client.Blob;
 
