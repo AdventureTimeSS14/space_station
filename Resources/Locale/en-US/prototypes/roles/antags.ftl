@@ -36,3 +36,6 @@ roles-antag-terminator-objective = Kill the target at all costs, the future depe
 
 roles-antag-changeling-name = Changeling
 roles-antag-changeling-objective = Use your special alien abilites to aid in completing your objectives.
+
+roles-antag-blob-name = Blob
+roles-antag-blob-objective = Take over the station.

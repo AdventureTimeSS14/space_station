@@ -224,3 +224,9 @@ ghost-role-information-syndicate-reinforcement-rules = Normal syndicate antagoni
 ghost-role-information-syndicate-monkey-reinforcement-name = Syndicate Monkey Agent
 ghost-role-information-syndicate-monkey-reinforcement-description = Someone needs reinforcements. You, a trained monkey, will help them.
 ghost-role-information-syndicate-monkey-reinforcement-rules = Normal syndicate antagonist rules apply. Work with whoever called you in, and don't harm them.
+
+ghost-role-information-blobbernaut-name = Blobbernaut
+ghost-role-information-blobbernaut-description = You are a Blobbernaut. You must defend blob core.
+
+ghost-role-information-blob-name = Blob
+ghost-role-information-blob-description = You are a Blob. You must consume the station.
