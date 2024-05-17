@@ -1,5 +1,5 @@
 - type: entity
-  name: Carpkat
+  name: Karpkat
   parent: BaseMobCarp
   id: MobCarpNukie
   description: This poor carp is homestucked.
