@@ -1,17 +1,35 @@
 ent-ADTClothingBackpackUSSPattaked = штурмовой Рюкзак "Атака"
     .desc = Полноформатный, сверхпрочный, нагрузочный рюкзак для военного использования.
 
-ent-ClothingBackpackADTBlueShieldOfficerFilled = рюкзак офицера "Синего Щита"
-    .desc = Крайне вместительный рюкзак, предназначенный для офицеров "Синего Щита".
+ent-ADTClothingBlueshieldBackpack = рюкзак офицера синего щита
+    .desc = Крайне вместительный рюкзак с яркой эмблемой щита, предназначенный для хранения охранного и медицинского арсенала Офицеров Синего Щита.
+
+ent-ADTClothingBlueshieldBackpackFilled = { ent-ADTClothingBlueshieldBackpack }
+    .desc = { ent-ADTClothingBlueshieldBackpack }
+    .suffix = { "Полный" }
+
+ent-ADTClothingBackpackDuffelBlueshield = вещмешок офицера синего щита
+    .desc = Крайне вместительный вещмешок с яркой эмблемой щита, предназначенный для хранения охранного и медицинского арсенала Офицеров Синего Щита.
+
+ent-ADTClothingBackpackDuffelBlueshieldFilled = { ent-ADTClothingBackpackDuffelBlueshield }
+    .desc = { ent-ADTClothingBackpackDuffelBlueshield }
+    .suffix = { "Полный" }
+
+ent-ADTClothingBackpackSatchelBlueshield = вещмешок офицера синего щита
+    .desc = Крайне вместительная черно-синяя сумка с яркими белыми эмблемами щита, предназначенная для хранения охранного и медицинского арсенала Офицеров Синего Щита.
+
+ent-ADTClothingBackpackSatchelBlueshieldFilled = { ent-ADTClothingBackpackSatchelBlueshield }
+    .desc = { ent-ADTClothingBackpackSatchelBlueshield }
+    .suffix = { "Полный" }
 
 ent-ADTClothingBackpackHeartSatchel = сумка-сердце
-    .desc = Сумка для хранения. Ой, а что там? Все украденные тобой сердца?
+    .desc = Сумка для хранения. Ой, а что там? Все украденные тобою сердца?
 
 ent-ADTClothingBackpackHeart = рюкзак-сердце
-    .desc = Сумка для хранения. Ой, а что там? Все украденные тобой сердца?  
+    .desc = Сумка для хранения. Ой, а что там? Все украденные тобою сердца?  
 
 ent-ADTClothingBackpackSatchelninja = сумка ниндзя 
-    .desc = Высоко технологичная сумка изготовленая из тех же материалов что и костюм ниндзи.
+    .desc = Высоко-технологичная сумка, изготовленая из тех же материалов что и МОД ниндзя.
 ent-ADTClothingBackpackSatchelninjaTools = { ent-ADTClothingBackpackSatchelninja }
     .desc = { ent-ADTClothingBackpackSatchelninja.desc }
 

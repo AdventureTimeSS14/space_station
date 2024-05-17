@@ -125,5 +125,3 @@ ent-ERTMedicIDCard = ID карта медика ОБР
     .desc = { ent-CentcomIDCard.desc }
 ent-ERTSecurityIDCard = ID карта офицера безопасности ОБР
     .desc = { ent-CentcomIDCard.desc }
-ent-ADTBlueShieldOfficerIDCard = ID карта офицера синего щита
-    .desc = Блестящая карта Офицера Синего Щита.
