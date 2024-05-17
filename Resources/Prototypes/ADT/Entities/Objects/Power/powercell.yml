@@ -118,7 +118,7 @@
     steps: 4
     zeroVisible: false
   - type: BasicEntityAmmoProvider
-    proto: ADTBulletLaser
+    proto: ADTBulletLaserMK2
     capacity: 5
     count: 5
     fireCost: 100

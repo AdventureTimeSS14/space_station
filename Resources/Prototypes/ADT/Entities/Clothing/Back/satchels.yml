@@ -77,7 +77,3 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Back/blueshield_satchel.rsi
-  - type: Storage
-    maxItemSize: Huge
-    grid:
-    - 0,0,9,5

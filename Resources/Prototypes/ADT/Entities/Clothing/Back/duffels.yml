@@ -50,7 +50,3 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Back/blueshield_duffel.rsi
-  - type: Storage
-    maxItemSize: Huge
-    grid:
-    - 0,0,9,5

@@ -349,7 +349,7 @@
   - type: Storage
     maxItemSize: Huge
 
-#ОСЩ 
+#ОСЩ
 
 - type: entity
   parent: ClothingBackpackSecurity
@@ -359,7 +359,3 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Back/blueshield_backpack.rsi
-  - type: Storage
-    maxItemSize: Huge
-    grid:
-    - 0,0,9,5

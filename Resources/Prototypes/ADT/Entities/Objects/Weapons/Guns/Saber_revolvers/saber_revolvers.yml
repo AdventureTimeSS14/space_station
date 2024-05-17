@@ -1,8 +1,8 @@
 - type: entity
   name: NTRS-01 energy revolver-saber
-  parent: [EnergySword, BaseWeaponPowerCellSmall,WeaponCrusher]
+  parent: [EnergySword, BaseWeaponPowerCellSmall]
   id: ADTWeaponSaberRevBlueshield
-  description: 
+  description:
   components:
   - type: Item
     size: Small
@@ -34,15 +34,11 @@
     energy: 2
     color: white
     netsync: false
-  - type: BasicEntityAmmoProvider
-    proto: ADTBulletLaser
-    capacity: 5
-    count: 5
-    fireCost: 100
   - type: Gun
     fireRate: 1.8
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+    useKey: false
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
