@@ -1,4 +1,4 @@
-﻿<widgets:HotbarGui
+<widgets:HotbarGui
     xmlns="https://spacestation14.io"
     xmlns:inventory="clr-namespace:Content.Client.UserInterface.Systems.Inventory.Controls"
     xmlns:storage="clr-namespace:Content.Client.UserInterface.Systems.Storage.Controls"
@@ -34,7 +34,7 @@
                 VerticalExpand="False"
                 ExpandBackwards="True"
                 Columns="6"
-                HorizontalExpand="False"/> <!-- Я ХЗ ЧЧТО ТУТ МЕНЯТЬ -->
+                HorizontalExpand="False"/>
             <hands:HandsContainer
                 Name="HandContainer"
                 Access="Public"
