@@ -28,6 +28,8 @@
     - Security
   - type: UseDelay
     delay: 6
+  - type: StaticPrice
+    price: 20
 
 - type: entity
   name: makeshift handcuffs

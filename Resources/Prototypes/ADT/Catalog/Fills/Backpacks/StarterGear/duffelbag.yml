@@ -7,7 +7,7 @@
     contents:
       - id: BoxSurvivalMedical
       - id: JawsOfLife
-      - id: SpaceCash500
+      - id: SpaceCash750
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
