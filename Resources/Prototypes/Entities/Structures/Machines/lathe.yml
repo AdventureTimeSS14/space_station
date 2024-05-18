@@ -533,6 +533,7 @@
       - ADTSMESIndustrialMachineCircuitboard
       - ADTFormPrinterMachineCircuitboard
       - IndustrialChargerCircuitboard # Зарядник КПБ
+      - MachineBluespaceHarvesterCircuitboard
   - type: MaterialStorage
     whitelist:
       tags:
@@ -819,6 +820,7 @@
       - ShuttleGunPerforatorCircuitboard
       - ShuttleGunFriendshipCircuitboard
       - ShuttleGunDusterCircuitboard
+      - ADTWeaponIonRifle
   - type: MaterialStorage
     whitelist:
       tags:

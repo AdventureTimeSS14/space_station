@@ -12,3 +12,6 @@
         - state: book_busido
     - type: Paper
       content: book-text-busido
+    - type: Construction
+      graph: SecretBook
+      node: startbusido

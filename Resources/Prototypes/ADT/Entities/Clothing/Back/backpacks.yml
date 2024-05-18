@@ -359,3 +359,170 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Back/blueshield_backpack.rsi
+
+- type: entity
+  parent: ClothingBackpackERTSecurity
+  id: ClothingBackpackADTBlueShieldOfficerFilled
+  components:
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+      - 0,0,9,5
+    - type: StorageFill
+      contents:
+        - id: Zipties
+          amount: 3
+        - id: ADTPowerCellLasgunRevolver
+          amount: 2
+        - id: WeaponDisabler
+        - id: Stunbaton
+        - id: BoxSurvivalSecurity
+        - id: BlueShieldsuit
+        - id: SpaceCash1000
+        - id: OxygenTankFilled
+    - type: Sprite
+      sprite: ADT/Clothing/Back/blueshield_backpack.rsi
+
+#СССП штуки 
+- type: entity
+  noSpawn: true
+  parent: ADTClothingBackpackOR40L
+  id: ADTClothingBackpackOR40L_OBS5Gear
+  components:
+    - type: StorageFill
+      contents:
+        - id: ADTWeaponRifleAK55
+        - id: MedkitCombatFilled
+        - id: OxygenTankFilled
+        - id: Zipties
+          amount: 2
+        - id: ADTMagazineUSSPAK74
+          amount: 4
+        - id: MagazineBoxRifleRubber
+
+- type: entity
+  noSpawn: true
+  parent: ADTClothingBackpackOR80L
+  id: ADTClothingBackpackOR80L_OBS7Gear
+  components:
+    - type: StorageFill
+      contents:
+        - id: ADTWeaponSMGBizon
+        - id: MedkitCombatFilled
+        - id: JawsOfLife
+        - id: CombatMedipen
+        - id: DoubleEmergencyOxygenTankFilled
+        - id: Zipties
+          amount: 2
+        - id: ADTMagazineBizon
+          amount: 4
+        - id: MagazineBoxPistolRubber
+
+- type: entity
+  noSpawn: true
+  parent: ADTClothingBackpackOR40L
+  id: ADTClothingBackpackOR40L_PilotGear
+  components:
+    - type: StorageFill
+      contents:
+        - id: MedkitCombatFilled
+        - id: JawsOfLife
+        - id: CombatMedipen
+        - id: DoubleEmergencyOxygenTankFilled
+        - id: ADTMagazineSR2M
+          amount: 3
+        - id: MagazineBoxPistolRubber
+
+- type: entity
+  noSpawn: true
+  parent: ADTClothingBackpackOR80L
+  id: ADTClothingBackpackOR80L_SpetsnazGear
+  components:
+    - type: StorageFill
+      contents:
+        - id: ADTWeaponSMGSR3M
+        - id: MedkitCombatFilled
+        - id: JawsOfLife
+        - id: CombatMedipen
+          amount: 3
+        - id: OmnizineChemistryBottle
+          amount: 2
+        - id: EphedrineChemistryBottle
+          amount: 2
+        - id: ADTCombatHypo
+        - id: DoubleEmergencyOxygenTankFilled
+        - id: Zipties
+          amount: 3
+        - id: ADTMagazineSR3M
+          amount: 4
+        - id: MagazineBoxLightRifleRubber
+
+- type: entity
+  noSpawn: true
+  parent: ADTClothingBackpackOR80L
+  id: ADTClothingBackpackOR80L_SpetsnazLMGGear
+  components:
+    - type: StorageFill
+      contents:
+        - id: ADTWeaponLightMachineGunPKP60
+        - id: MedkitCombatFilled
+        - id: JawsOfLife
+        - id: CombatMedipen
+          amount: 2
+        - id: OmnizineChemistryBottle
+          amount: 2
+        - id: EphedrineChemistryBottle
+          amount: 2
+        - id: ADTCombatHypo
+        - id: DoubleEmergencyOxygenTankFilled
+        - id: Zipties
+          amount: 3
+        - id: ADTMagazineUSSPLMG
+          amount: 2
+
+
+- type: entity
+  noSpawn: true
+  parent: ADTClothingBackpackOR40L
+  id: ADTClothingBackpackOR40L_MedicGear
+  components:
+    - type: StorageFill
+      contents:
+        - id: ADTWeaponPistolPMM
+        - id: MedkitCombatFilled
+          amount: 2
+        - id: MedkitAdvancedFilled
+        - id: OxygenTankFilled
+        - id: ADTMagazinePistolPMM
+          amount: 2
+        - id: SyndiHypo
+        - id: OmnizineChemistryBottle
+          amount: 4     
+
+# Не совсем уверен что это,но пока это полежит тут
+- type: entity
+  id: ADTWardrobeKBSFilled
+  parent: WardrobeSecurity
+  name: USSP Wardrobe
+  description: "Cross the thin red line."
+  suffix: USSP
+  components:
+  - type: StorageFill
+    contents:
+      - id: ADTClothingRPSUSSP
+      - id: ADTClothingBackpackOR40L
+      - id: ADTClothingOuterHardsuitOBS5USSP
+      - id: MedkitCombatFilled
+      - id: ADTClothingMaskGasUSSP
+      - id: OxygenTankFilled
+      - id: NitrogenTankFilled
+      - id: ADTWeaponRifleAK55
+        prob: 0.5
+        orGroup: USSPInfantryWeapon
+      - id: ADTWeaponLightMachineGunPRK
+        prob: 0.25
+        orGroup: USSPInfantryWeapon
+      - id: ADTWeaponSMGBizon
+        prob: 0.25
+        orGroup: USSPInfantryWeapon
+

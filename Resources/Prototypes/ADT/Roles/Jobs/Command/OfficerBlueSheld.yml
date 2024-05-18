@@ -1,0 +1,55 @@
+- type: job
+  id: ADTBlueShieldOfficer
+  name: job-name-ADTBlueShieldOfficer
+  description: job-description-ADTBlueShieldOfficer
+  playTimeTracker: JobADTBlueShieldOfficer
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 54000
+    - !type:RoleTimeRequirement
+      role: JobParamedic
+      time: 25200
+  startingGear: ADTBlueShieldOfficerGear
+  icon: "JobIconADTBlueShieldOfficer"
+  supervisors: job-supervisors-captain
+  canBeAntag: false
+  access:
+    - Command
+    - Brig
+    - Security
+    - Armory
+    - Maintenance
+    - Service
+    - External
+    - Research
+    - Medical
+    - Engineering
+    - Cargo
+    - Centcom
+    - BlueShield
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+
+- type: startingGear
+  id: ADTBlueShieldOfficerGear
+  equipment:
+    head: ADTClothingHeadHatBeretBlueshield
+    eyes: ClothingEyesGlassesSecurity
+    ears: ClothingHeadsetCentCom
+    mask: ClothingMaskGasSecurity
+    jumpsuit: ClothingUniformJumpsuitNanotrasen
+    back: ClothingBackpackADTBlueShieldOfficerFilled
+    shoes: ClothingShoesBootsCombatFilled
+    outerClothing: ADTClothingBlueshieldArmor
+    belt: ClothingBeltMilitaryWebbingBlueShieldFilled
+    gloves: ClothingHandsGlovesCombat
+    id: ADTBlueShieldOfficerPDA
+    pocket1: ADTWeaponPistolBlueShitX02
+    pocket2: HandheldCrewMonitor
+    underwearb: ADTClothingUnderwearBottomBoxersBlueshield # Sirena-Underwear
+    socks: ClothingUnderwearSocksNormal
+    neck: ClothingNeckCloakNanotrasen
+  underweart: ADTClothingUnderwearTopBraBlueshield # Sirena-Underwear
+  underwearb: ADTClothingUnderwearBottomPantiesBlueshield # Sirena-Underwear
