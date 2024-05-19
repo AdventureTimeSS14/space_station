@@ -113,12 +113,6 @@ public sealed partial class ChangelingComponent : Component
     public EntityUid? ChangelingDNACycleActionEntity;
 
     [DataField]
-    public EntProtoId ChangelingTransformAction = "ActionChangelingTransform";
-
-    [DataField, AutoNetworkedField]
-    public EntityUid? ChangelingTransformActionEntity;
-
-    [DataField]
     public EntProtoId ChangelingRefreshAction = "ActionLingRefresh";
 
     [DataField, AutoNetworkedField]

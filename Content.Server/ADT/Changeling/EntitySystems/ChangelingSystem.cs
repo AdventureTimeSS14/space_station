@@ -178,8 +178,6 @@ public sealed partial class ChangelingSystem : EntitySystem
         _action.AddAction(uid, ref component.ChangelingAbsorbActionEntity, component.ChangelingAbsorbAction);
         _action.AddAction(uid, ref component.ChangelingDNAStingActionEntity, component.ChangelingDNAStingAction);
         _action.AddAction(uid, ref component.ChangelingDNACycleActionEntity, component.ChangelingDNACycleAction);
-        _action.AddAction(uid, ref component.ChangelingTransformActionEntity, component.ChangelingTransformAction);
-        _action.AddAction(uid, ref component.ChangelingStasisDeathActionEntity, component.ChangelingStasisDeathAction);
 
         EnsureComp<CollectiveMindComponent>(uid);
         var collectiveMind = EnsureComp<CollectiveMindComponent>(uid);
@@ -196,7 +194,6 @@ public sealed partial class ChangelingSystem : EntitySystem
         _action.RemoveAction(uid, component.ChangelingAbsorbActionEntity);
         _action.RemoveAction(uid, component.ChangelingDNAStingActionEntity);
         _action.RemoveAction(uid, component.ChangelingDNACycleActionEntity);
-        _action.RemoveAction(uid, component.ChangelingTransformActionEntity);
         _action.RemoveAction(uid, component.ChangelingStasisDeathActionEntity);
 
         RemComp<CollectiveMindComponent>(uid);
@@ -309,23 +306,6 @@ public sealed partial class ChangelingSystem : EntitySystem
         if (args.Handled)
             return;
 
-        // args.Handled = true;
-
-        // component.SelectedDNA += 1;
-
-        // if (component.StoredDNA.Count >= component.DNAStrandCap || component.SelectedDNA >= component.StoredDNA.Count)
-        //     component.SelectedDNA = 0;
-
-        // var selectedHumanoidData = component.StoredDNA[component.SelectedDNA];
-        // if (selectedHumanoidData.MetaDataComponent == null)
-        // {
-        //     var selfFailMessage = Loc.GetString("changeling-nodna-saved");
-        //     _popup.PopupEntity(selfFailMessage, uid, uid);
-        //     return;
-        // }
-
-        // var selfMessage = Loc.GetString("changeling-dna-switchdna", ("target", selectedHumanoidData.MetaDataComponent.EntityName));
-        // _popup.PopupEntity(selfMessage, uid, uid);
 
         if (EntityManager.TryGetComponent<ActorComponent?>(uid, out var actorComponent))
         {
@@ -338,16 +318,9 @@ public sealed partial class ChangelingSystem : EntitySystem
                     continue;
                 if (item.EntityUid == null)
                     continue;
-                //ev.HumanoidData.Add(netEntity.Value);
                 HumanoidCharacterAppearance hca = new();
                 if (item.HumanoidAppearanceComponent == null)
                     continue;
-                // if (item.HumanoidAppearanceComponent.CustomBaseLayers.TryGetValue(HumanoidVisualLayers.FacialHair, out var facialHair))
-                //     if (facialHair.Id != null)
-                //         hca = hca.WithFacialHairStyleName(facialHair.Id.Value.Id);
-
-                // if (item.HumanoidAppearanceComponent.BaseLayers.TryGetValue(HumanoidVisualLayers.FacialHair, out var facialHair))
-                //     hca = hca.WithFacialHairStyleName(facialHair.ID);
 
                 if (item.HumanoidAppearanceComponent.MarkingSet.Markings.TryGetValue(Shared.Humanoid.Markings.MarkingCategories.FacialHair, out var facialHair))
                     if (facialHair.TryGetValue(0, out var marking))
@@ -373,7 +346,7 @@ public sealed partial class ChangelingSystem : EntitySystem
                 });
             }
 
-            //ev.HumanoidData.Sort(); реализовать сортировку
+            // реализовать сортировку
             RaiseNetworkEvent(ev, actorComponent.PlayerSession);
         }
         args.Handled = true;
@@ -388,7 +361,6 @@ public sealed partial class ChangelingSystem : EntitySystem
             if (item.EntityUid == selectedEntity)
             {
                 // transform
-                //var selectedHumanoidData = component.StoredDNA[component.SelectedDNA];
                 var selectedHumanoidData = component.StoredDNA[i];
                 if (ev.Handled)
                     return;

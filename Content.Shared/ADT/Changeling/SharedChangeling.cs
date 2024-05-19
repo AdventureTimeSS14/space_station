@@ -129,10 +129,12 @@ public sealed partial class LingResonantShriekEvent : InstantActionEvent
 {
 }
 
+/// <summary>
+/// This event carries humanoid information list of entities, which DNA were stolen. Used for radial UI of "The genestealer".
+/// </summary>
 [Serializable, NetSerializable]
 public sealed partial class RequestChangelingFormsMenuEvent : EntityEventArgs
 {
-    //public List<NetEntity> HumanoidData = new();
     public List<HDATA> HumanoidData = new();
 
     public NetEntity Target;
@@ -170,8 +172,3 @@ public sealed partial class SelectChangelingFormEvent : EntityEventArgs
         EntitySelected = entitySelected;
     }
 }
-// public sealed partial class OpenEmotesActionEvent : InstantActionEvent
-// {
-// }
-////////////ChangelingCycleDNAActionEvent/////////////////
-///
