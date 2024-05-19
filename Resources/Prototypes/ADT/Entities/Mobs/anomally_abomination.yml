@@ -1,5 +1,23 @@
 - type: entity
   parent: BaseMobFlesh
+  id: ADTBaseMobAbomination
+  name: abomination
+  description: A shambling mass of flesh and abomination, animated through anomalous energy.
+  abstract: true
+  components:
+  - type: StatusEffects
+    allowed:
+      - Stun
+      - KnockedDown
+      - SlowedDown
+      - Stutter
+      - Electrocution
+      - TemporaryBlindness
+      - Pacified
+      - StaminaModifier
+
+- type: entity
+  parent: ADTBaseMobAbomination
   id: ADTMobDistorted
   name: distorted
   description: distorted
@@ -39,7 +57,7 @@
       100: Dead
 
 - type: entity
-  parent: BaseMobFlesh
+  parent: ADTBaseMobAbomination
   id: ADTMobEcho
   name: echo
   description: echo
@@ -81,7 +99,7 @@
     jumpAction: CompActionJumpAbomination
 
 - type: entity
-  parent: BaseMobFlesh
+  parent: ADTBaseMobAbomination
   id: ADTMobGrant
   name: grant
   description: grant
@@ -122,7 +140,7 @@
       200: Dead
 
 - type: entity
-  parent: BaseMobFlesh
+  parent: ADTBaseMobAbomination
   id: ADTMobHunter
   name: hunter
   description: hunter
@@ -164,7 +182,7 @@
     jumpAction: CompActionJumpAbomination
 
 - type: entity
-  parent: BaseMobFlesh
+  parent: ADTBaseMobAbomination
   id: ADTMobSoldier
   name: soldier
   description: soldier
@@ -209,7 +227,7 @@
     prototype: BulletAcid
 
 - type: entity
-  parent: BaseMobFlesh
+  parent: ADTBaseMobAbomination
   id: ADTMobWrecker
   name: wrecker
   description: wrecker
