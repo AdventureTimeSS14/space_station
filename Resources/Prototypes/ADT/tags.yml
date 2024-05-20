@@ -181,3 +181,9 @@
 
 - type: Tag
   id: ADTMagazineRifleAR12
+
+- type: Tag
+  id: ADTCartridgeRocketSchmelTermobar
+
+- type: Tag
+  id: ADTCartridgeRocketSapogHEAT
