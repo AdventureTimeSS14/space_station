@@ -18,7 +18,8 @@
     sprite: ADT/Clothing/Ears/Headsets/blueshield.rsi
   - type: Clothing
     sprite: ADT/Clothing/Ears/Headsets/blueshield.rsi
-
+    
+- type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetMagistrat
   name: magistrat headset
