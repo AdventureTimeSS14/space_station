@@ -1,3 +1,5 @@
+# Разбирайтесь сами что и какие патроны куда,я без понятия
+
 #Магазин для СВЧ
 
 - type: entity
@@ -34,19 +36,7 @@
     zeroVisible: false
   - type: Appearance
 
-- type: Tag
-  id: ADTMagazineSniperSVCH
-
 #Магазины для ПП
-
-- type: Tag
-  id: ADTMagazineSR3M
-
-- type: Tag
-  id: ADTMagazineSR2M
-
-- type: Tag
-  id: ADTMagazineBizon
 
 - type: entity
   id: ADTMagazineSR3M
@@ -152,12 +142,6 @@
 
 #Магазины для пулеметов
 
-- type: Tag
-  id: ADTMagazineUSSPLMG
-
-- type: Tag
-  id: ADTMagazineUSSPLMGDrum
-
 - type: entity
   id: ADTMagazineUSSPLMG
   name: box of 7.62 for LMG
@@ -228,9 +212,6 @@
 
 #Магазин 6.5 мм под АК
 
-- type: Tag
-  id: ADTMagazineUSSPAK74
-
 - type: entity
   id: ADTMagazineUSSPAK74
   name: magazine ak74
@@ -266,9 +247,6 @@
   - type: Appearance
 
 #Бакелитовый под 7.62
-
-- type: Tag
-  id: ADTMagazineUSSPAKM
 
 - type: entity
   id: ADTMagazineUSSPAKM

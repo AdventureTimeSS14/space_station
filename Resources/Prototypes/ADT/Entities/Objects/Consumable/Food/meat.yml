@@ -380,3 +380,135 @@
     graph: FishCutlet
     node: fish cutlet
 
+- type: entity
+  name: sausage-raw-name
+  parent: FoodMeatBase
+  id: ADTFoodSausageRaw
+  description: sausage-raw-desc
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - ADTCarnivoreFriendlyFood
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/sausage.rsi
+    state: raw
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3
+        - ReagentId: Protein
+          Quantity: 3
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 3
+        - ReagentId: Fat
+          Quantity: 1
+
+- type: entity
+  name: sausage-fried-name
+  parent: FoodMeatBase
+  id: ADTFoodSausageFried
+  description: sausage-fried-desc
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - ADTCarnivoreFriendlyFood
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/sausage.rsi
+    state: fried
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Protein
+          Quantity: 6
+
+- type: entity
+  name: Khachapuri-name
+  parent: ADTFoodSausageRaw
+  id: ADTFoodKhachapuri
+  description: Khachapuri-desc
+  components:
+  - type: Food
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/khachapuri.rsi
+    state: icon
+  - type: FlavorProfile
+    flavors:
+      - cheesy
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 1
+  - type: Tag
+    tags:
+    - ADTCarnivoreFriendlyFood
+    - ADTMothFriendlyFood
+
+- type: entity
+  name: weisswurst
+  parent: FoodMeatBase
+  id: ADTFoodWeissWurst
+  description: Traditional white Bavarian sausage made of veal, lard and spices.
+  suffix: Oktoberfest
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - ADTCarnivoreFriendlyFood
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/oktoberfest.rsi #спрайт от Празата
+    state: weisswurst
+  - type: FlavorProfile
+    flavors:
+      - meaty
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 2
+        - ReagentId: Vitamin
+          Quantity: 1
+
+- type: entity
+  name: bratwurst
+  parent: FoodMeatBase
+  id: ADTFoodBratWurst
+  description: Fried pork sausage, very appetizing, but greasy.
+  suffix: Oktoberfest
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - ADTCarnivoreFriendlyFood
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/oktoberfest.rsi #спрайт от Празата
+    state: bratwurst
+  - type: FlavorProfile
+    flavors:
+      - meaty
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 2
+        - ReagentId: Vitamin
+          Quantity: 1

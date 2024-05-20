@@ -44,3 +44,75 @@
   keycode: 'x'
   color: "#e56000"
   longRange: true
+
+- type: radioChannel
+  id: Trader
+  name: chat-radio-trader
+  keycode: 'ф'
+  frequency: 1673
+  color: "#b88646"
+  longRange: true
+
+- type: radioChannel
+  id: ADTWiretapping
+  name: Засекреченная линия
+  keycode: '\'
+  frequency: 1672
+  color: "#ff144b"
+  longRange: true
+
+- type: radioChannel
+  id: ADTLawyerChannel
+  name: Юридический
+  keycode: 'ю'
+  frequency: 1305
+  color: "#c6d2f5"
+  longRange: true
+
+- type: radioChannel
+  id: ADTMercChannel
+  name: Наёмнический
+  keycode: 'ч'
+  frequency: 1306
+  color: "#ff144b"
+  longRange: true
+
+- type: radioChannel
+  id: ADTSpecChannel
+  name: Спецназовский
+  keycode: 'е'
+  frequency: 1307
+  color: "#00fa9a"
+  longRange: true
+
+- type: radioChannel
+  id: ADTUSSPChannel
+  name: СССП
+  keycode: 'я'
+  frequency: 1304
+  color: "#7ecc8e"
+  longRange: true
+
+- type: radioChannel
+  id: ADTTransSolar19482Channel
+  name: ТСФ 1948.2
+  keycode: '2'
+  frequency: 1947
+  color: "#75c1ff"
+  longRange: true
+
+- type: radioChannel
+  id: ADTTransSolar19487Channel
+  name: ТСФ 1948.7
+  keycode: '7'
+  frequency: 1948
+  color: "#75c1ff"
+  longRange: true
+
+- type: radioChannel
+  id: ADTTransSolar19489Channel
+  name: ТСФ 1948.9
+  keycode: '9'
+  frequency: 1949
+  color: "#75c1ff"
+  longRange: true

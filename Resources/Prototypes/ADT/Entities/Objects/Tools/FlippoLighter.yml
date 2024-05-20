@@ -30,6 +30,8 @@
     activatedDamage:
         types:
             Heat: 1
+  - type: IgnitionSource
+    ignited: false
   - type: ItemToggleSize
     activatedSize: Small
   - type: ItemToggleHot
@@ -106,6 +108,8 @@
       map: ["flame"]
       visible: false
       shader: unshaded
+  - type: IgnitionSource
+    ignited: false
   - type: ItemToggle
     predictable: false
     soundActivate:
@@ -192,6 +196,8 @@
       map: ["flame"]
       visible: false
       shader: unshaded
+  - type: IgnitionSource
+    ignited: false
   - type: ItemToggle
     predictable: false
     soundActivate:
