@@ -6,7 +6,13 @@ namespace Content.Server.Speech.EntitySystems;
 
 public sealed class LizardAccentSystem : EntitySystem
 {
-    [Dependency] private readonly IRobustRandom _random = default!;
+    private static readonly Regex RegexLowerS = new("s+");
+    private static readonly Regex RegexUpperS = new("S+");
+    private static readonly Regex RegexInternalX = new(@"(\w)x");
+    private static readonly Regex RegexLowerEndX = new(@"\bx([\-|r|R]|\b)");
+    private static readonly Regex RegexUpperEndX = new(@"\bX([\-|r|R]|\b)");
+
+    [Dependency] private readonly IRobustRandom _random = default!; // Corvax-Localization
 
     public override void Initialize()
     {

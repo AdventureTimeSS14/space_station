@@ -15,13 +15,11 @@ namespace Content.Shared.Roles
         [DataField]
         public List<EntProtoId> Inhand = new(0);
 
-        // Sirena-Underwear-Start
-        [DataField("underweart")]
-        private string _underweart = string.Empty;
-
-        [DataField("underwearb")]
-        private string _underwearb = string.Empty;
-        // Sirena-Underwear-End
+        /// <summary>
+        /// Inserts entities into the specified slot's storage (if it does have storage).
+        /// </summary>
+        [DataField]
+        public Dictionary<string, List<EntProtoId>> Storage = new();
 
         [ViewVariables]
         [IdDataField]
@@ -29,22 +27,6 @@ namespace Content.Shared.Roles
 
         public string GetGear(string slot)
         {
-            if (profile != null)
-            {
-                if (slot == "jumpsuit" && profile.Clothing == ClothingPreference.Jumpskirt && !string.IsNullOrEmpty(InnerClothingSkirt))
-                    return InnerClothingSkirt;
-                if (slot == "back" && profile.Backpack == BackpackPreference.Satchel && !string.IsNullOrEmpty(Satchel))
-                    return Satchel;
-                if (slot == "back" && profile.Backpack == BackpackPreference.Duffelbag && !string.IsNullOrEmpty(Duffelbag))
-                    return Duffelbag;
-                // Sirena-Underwear-Start
-                if (slot == "underweart" && profile.Sex == Sex.Female && !string.IsNullOrEmpty(_underweart))
-                    return _underweart;
-                if (slot == "underwearb" && profile.Sex == Sex.Female && !string.IsNullOrEmpty(_underwearb))
-                    return _underwearb;
-                // Sirena-Underwear-End
-            }
-
             return Equipment.TryGetValue(slot, out var equipment) ? equipment : string.Empty;
         }
     }

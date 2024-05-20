@@ -3,7 +3,7 @@ using Content.Server.Antag;
 using Content.Server.Chat.Managers;
 using Content.Server.GameTicking.Rules.Components;
 using Content.Server.Mind;
-using Content.Server.NPC.Systems;
+using Content.Shared.NPC.Systems;
 using Content.Server.Objectives;
 using Content.Shared.IdentityManagement;
 using Content.Server.Roles;
@@ -27,7 +27,7 @@ using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using Content.Server.Actions;
 using Content.Shared.Tag;
-
+using Content.Server.GameTicking.Components;
 namespace Content.Server.GameTicking.Rules;
 
 public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponent>

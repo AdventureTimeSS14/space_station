@@ -175,7 +175,7 @@ namespace Content.Server.Preferences.Managers
         // Should only be called via UserDbDataManager.
         public async Task LoadData(ICommonSession session, CancellationToken cancel)
         {
-            if (!ShouldStorePrefs(session.Channel.AuthType))
+           if (!ShouldStorePrefs(session.Channel.AuthType))
             {
                 // Don't store data for guests.
                 var prefsData = new PlayerPrefData
@@ -199,13 +199,12 @@ namespace Content.Server.Preferences.Managers
                 async Task LoadPrefs()
                 {
                     var prefs = await GetOrCreatePreferencesAsync(session.UserId, cancel);
-                    prefsData.Prefs = prefs;
-                    var prefs = await GetOrCreatePreferencesAsync(session.UserId);
                     // Corvax-Sponsors-Start: Remove sponsor markings from expired sponsors
+                    var collection = IoCManager.Instance!;
                     foreach (var (_, profile) in prefs.Characters)
                     {
                         var allowedMarkings = _sponsors.TryGetInfo(session.UserId, out var sponsor) ? sponsor.AllowedMarkings : new string[]{};
-                        profile.EnsureValid(_cfg, _protos, allowedMarkings);
+                        profile.EnsureValid(_cfg, collection, allowedMarkings);
                     }
                     // Corvax-Sponsors-End
                 }
@@ -227,7 +226,7 @@ namespace Content.Server.Preferences.Managers
             msg.Preferences = prefsData.Prefs;
             msg.Settings = new GameSettings
             {
-                MaxCharacterSlots = MaxCharacterSlots
+                MaxCharacterSlots = GetMaxUserCharacterSlots(session.UserId) // Corvax-Sponsors
             };
             _netManager.ServerSendMessage(msg, session.Channel);
         }

@@ -218,7 +218,6 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
                 // Sirena-ERPStatus-Start
                 var _DetailExamineComp = AddComp<DetailExaminableComponent>(entity.Value);
                 _DetailExamineComp.Content = profile.FlavorText;
-                _DetailExamineComp.ERPStatus = profile.ERPStatus;
                 // Sirena-ERPStatus-End
             }
         }

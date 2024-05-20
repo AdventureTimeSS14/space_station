@@ -2,10 +2,6 @@ using System.Linq;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Inventory;
-using Content.Shared.Preferences;
-using Content.Shared.Radio.Components; // Parkstation-IPC
-using Content.Shared.Containers; // Parkstation-IPC
-using Robust.Shared.Containers; // Parkstation-IPC
 using Content.Shared.Preferences.Loadouts;
 using Content.Shared.Roles;
 using Content.Shared.Storage;
@@ -100,48 +96,7 @@ public abstract class SharedStationSpawningSystem : EntitySystem
             }
         }
 
-        // Parkstation-Ipc-Start
-        // This is kinda gross, and weird, and very hardcoded, but it's the best way I could think of to do it.
-        // This is replicated in SetOutfitCommand.SetOutfit.
-        // If they have an EncryptionKeyHolderComponent, spawn in their headset, find the
-        // EncryptionKeyHolderComponent on it, move the keys over, and delete the headset.
-        if (TryComp<EncryptionKeyHolderComponent>(entity, out var keyHolderComp))
-        {
-            var containerMan = EntityManager.System<SharedContainerSystem>();
-
-            var earEquipString = startingGear.GetGear("ears", profile);
-
-            if (!string.IsNullOrEmpty(earEquipString))
-            {
-                var earEntity = Spawn(earEquipString, Transform(entity).Coordinates);
-
-                if (TryComp<EncryptionKeyHolderComponent>(earEntity, out _) && // I had initially wanted this to spawn the headset, and simply move all the keys over, but the headset didn't seem to have any keys in it when spawned...
-                    TryComp<ContainerFillComponent>(earEntity, out var fillComp) &&
-                    fillComp.Containers.TryGetValue(EncryptionKeyHolderComponent.KeyContainerName, out var defaultKeys))
-                {
-                    containerMan.CleanContainer(keyHolderComp.KeyContainer);
-
-                    foreach (var key in defaultKeys)
-                    {
-                        var keyEntity = Spawn(key, Transform(entity).Coordinates);
-                        //TODO:xTray тут что то сделал непонятно что
-                        //keyHolderComp.KeyContainer.ContainedEntities.Append(keyEntity);
-                        containerMan.Insert(keyEntity, keyHolderComp.KeyContainer);
-                    }
-                }
-
-                EntityManager.QueueDeleteEntity(earEntity);
-            }
-        }
-        // Parkstation-Ipc-End
-
-        if (!TryComp(entity, out HandsComponent? handsComponent))
-            return;
-
-        var inhand = startingGear.Inhand;
-        var coords = EntityManager.GetComponent<TransformComponent>(entity).Coordinates;
         if (_handsQuery.TryComp(entity, out var handsComponent))
-        foreach (var prototype in inhand)
         {
             var inhand = startingGear.Inhand;
             var coords = xform.Coordinates;

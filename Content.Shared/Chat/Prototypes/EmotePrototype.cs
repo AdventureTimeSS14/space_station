@@ -31,8 +31,8 @@ public sealed partial class EmotePrototype : IPrototype
 
     ///     Icon representing this emote in the UI.
     /// </summary>
-    [DataField("icon")]
-    public SpriteSpecifier? Icon;
+    [DataField]
+    public SpriteSpecifier Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/Actions/scream.png"));
     /// <summary>
     ///     Different emote categories may be handled by different systems.
     ///     Also may be used for filtering.

@@ -8,6 +8,9 @@ using Robust.Server.Containers;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Timing;
 using Content.Shared.Atmos.Miasma;
+using Content.Shared.Mobs;
+using Content.Shared.Mobs.Components;
+using Content.Shared.Mobs.Systems;
 
 namespace Content.Server.Atmos.Rotting;
 
@@ -66,7 +69,7 @@ public sealed class RottingSystem : SharedRottingSystem
             return false;
 
         // only dead things or inanimate objects can rot
-        if (TryComp<MobStateComponent>(uid, out var mobState) && !_mobState.IsDead(uid, mobState))
+        if (TryComp<MobStateComponent>(uid, out var mobState) && mobState.CurrentState != MobState.Dead)
             return false;
 
         if (HasComp<EmbalmedComponent>(uid))

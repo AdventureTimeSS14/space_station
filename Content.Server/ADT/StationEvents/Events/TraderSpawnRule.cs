@@ -3,6 +3,7 @@ using Robust.Server.Maps;
 using Robust.Shared.Map;
 using Content.Server.GameTicking.Rules.Components;
 using Content.Server.StationEvents.Components;
+using Content.Server.GameTicking.Components;
 
 namespace Content.Server.StationEvents.Events;
 

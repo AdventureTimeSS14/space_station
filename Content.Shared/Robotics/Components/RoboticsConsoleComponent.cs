@@ -25,7 +25,6 @@ public sealed partial class RoboticsConsoleComponent : Component
     /// </summary>
     [DataField]
     public TimeSpan Timeout = TimeSpan.FromSeconds(10);
-
     /// <summary>
     /// Radio channel to send messages on.
     /// </summary>

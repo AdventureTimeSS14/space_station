@@ -22,6 +22,7 @@ using Robust.Shared.Serialization.Manager;
 using Robust.Shared.Serialization.Markdown;
 using Robust.Shared.Utility;
 using YamlDotNet.RepresentationModel;
+using Content.Shared.Corvax.Sponsors;
 
 namespace Content.Shared.Humanoid;
 

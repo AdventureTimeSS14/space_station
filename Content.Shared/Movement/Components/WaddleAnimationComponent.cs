@@ -6,14 +6,23 @@ namespace Content.Shared.Movement.Components;
 /// <summary>
 /// Declares that an entity has started to waddle like a duck/clown.
 /// </summary>
-[Serializable, NetSerializable]
-public sealed class StartedWaddlingEvent : EntityEventArgs;
+/// <param name="Entity">The newly be-waddled.</param>
+[ByRefEvent]
+public record struct StartedWaddlingEvent(EntityUid Entity)
+{
+    public EntityUid Entity = Entity;
+}
 
 /// <summary>
 /// Declares that an entity has stopped waddling like a duck/clown.
 /// </summary>
-[Serializable, NetSerializable]
-public sealed class StoppedWaddlingEvent : EntityEventArgs;
+/// <param name="Entity">The former waddle-er.</param>
+[ByRefEvent]
+public record struct StoppedWaddlingEvent(EntityUid Entity)
+{
+    public EntityUid Entity = Entity;
+}
+
 
 /// <summary>
 /// Defines something as having a waddle animation when it moves.

@@ -11,6 +11,27 @@ using Content.Shared.Robotics.Systems;
 using Robust.Server.GameObjects;
 using Robust.Shared.Timing;
 using System.Diagnostics.CodeAnalysis;
+using Content.Server.Administration.Logs;
+using Content.Server.Body.Systems;
+using Content.Server.Chemistry.Containers.EntitySystems;
+using Content.Server.Explosion.Components;
+using Content.Server.Flash;
+using Content.Server.Pinpointer;
+using Content.Shared.Flash.Components;
+using Content.Server.Radio.EntitySystems;
+using Content.Shared.Chemistry.Components;
+using Content.Shared.Chemistry.Components.SolutionManager;
+using Content.Shared.Database;
+using Content.Shared.Explosion.Components;
+using Content.Shared.Explosion.Components.OnTrigger;
+using Content.Shared.Implants.Components;
+using Content.Shared.Interaction;
+using Content.Shared.Inventory;
+using Content.Shared.Mobs;
+using Content.Shared.Mobs.Components;
+using Content.Shared.Payload.Components;
+using Content.Shared.Radio;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server.Research.Systems;
 
@@ -26,6 +47,7 @@ public sealed class RoboticsConsoleSystem : SharedRoboticsConsoleSystem
     [Dependency] private readonly LockSystem _lock = default!;
     [Dependency] private readonly RadioSystem _radio = default!;
     [Dependency] private readonly UserInterfaceSystem _ui = default!;
+    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
 
     // almost never timing out more than 1 per tick so initialize with that capacity
     private List<string> _removing = new(1);
@@ -131,7 +153,7 @@ public sealed class RoboticsConsoleSystem : SharedRoboticsConsoleSystem
         _deviceNetwork.QueuePacket(ent, args.Address, payload);
 
         var message = Loc.GetString(ent.Comp.DestroyMessage, ("name", data.Name));
-        _radio.SendRadioMessage(ent, message, ent.Comp.RadioChannel, ent);
+        _radio.SendRadioMessage(ent, message, _prototypeManager.Index<RadioChannelPrototype>(ent.Comp.RadioChannel), ent);
         _adminLogger.Add(LogType.Action, LogImpact.Extreme, $"{ToPrettyString(args.Actor):user} destroyed borg {data.Name} with address {args.Address}");
 
         ent.Comp.NextDestroy = now + ent.Comp.DestroyCooldown;
