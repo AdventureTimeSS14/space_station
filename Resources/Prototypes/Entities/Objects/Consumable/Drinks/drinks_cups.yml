@@ -37,6 +37,8 @@
     damage:
       types:
         Blunt: 0
+  - type: StaticPrice
+    price: 15
 
 - type: entity
   parent: DrinkBaseCup
