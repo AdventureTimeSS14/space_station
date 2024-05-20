@@ -23,8 +23,6 @@
     tags:
     - ClothMade
     - WhitelistChameleon
-  - type: StaticPrice
-    price: 30
 
 - type: entity
   abstract: true
