@@ -3,7 +3,6 @@ using System.Linq;
 using System.Numerics;
 using Content.Server.Cargo.Components;
 using Content.Server.Cargo.Systems;
-using Content.Shared.Cargo.Components;
 using Content.Shared.Cargo.Prototypes;
 using Content.Shared.Stacks;
 using Robust.Shared.GameObjects;
