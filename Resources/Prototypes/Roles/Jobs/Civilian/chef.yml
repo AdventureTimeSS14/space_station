@@ -21,13 +21,10 @@
 - type: startingGear
   id: ChefGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitChef
-    head: ClothingHeadHatChef
-    back: ClothingBackpackFilled
-    mask: ClothingMaskItalianMoustache
     shoes: ClothingShoesColorBlack
     id: ChefPDA
     ears: ClothingHeadsetService
+    belt: ClothingBeltChefFilled
     outerClothing: ClothingOuterApronChef
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal

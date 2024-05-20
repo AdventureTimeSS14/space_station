@@ -5,7 +5,7 @@ using Content.Shared.Radio;
 namespace Content.Server.Radio;
 
 [ByRefEvent]
-public readonly record struct RadioReceiveEvent(
+public readonly record struct RadioReceiveEvent(string Message, EntityUid MessageSource, RadioChannelPrototype Channel, EntityUid RadioSource, MsgChatMessage ChatMsg
     // Frontier - languages mechanic
     EntityUid MessageSource,
     RadioChannelPrototype Channel,

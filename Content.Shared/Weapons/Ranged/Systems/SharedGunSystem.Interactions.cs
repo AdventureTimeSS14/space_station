@@ -130,7 +130,7 @@ public abstract partial class SharedGunSystem
     // TODO: Actions need doing for guns anyway.
     private sealed partial class CycleModeEvent : InstantActionEvent
     {
-        public SelectiveFire Mode;
+        public SelectiveFire Mode = default;
     }
 
     private void OnCycleMode(EntityUid uid, GunComponent component, CycleModeEvent args)

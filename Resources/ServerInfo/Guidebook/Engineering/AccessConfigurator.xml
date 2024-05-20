@@ -1,32 +1,34 @@
 <Document>
-# Конфигуратор доступа
-Конфигуратор доступа - это инструмент, используемый для определения того, какой тип персонала может использовать определенные устройства.
+  # Access Configurator
+  The access configurator is a tool used to specify what type of personnel may use certain devices.
 
-<Box>
-	<GuideEntityEmbed Entity="AccessConfigurator" Caption="access configurator"/>
-</Box>
+  <Box>
+	  <GuideEntityEmbed Entity="AccessConfigurator" Caption="access configurator"/>
+  </Box>
 
-Конфигурируемые устройства могут включать в себя воздушные замки, безопасные ящики и шкафы, а также машины с ограниченным доступом.
+  Configurable devices can include airlocks, secure crates and lockers, as well as access restricted machines.
+  Note: Airlocks can have their accesses configured by the [color=#a4885c]Network Configurator[/color] (or multitool), for convenience.
 
-## Где найти конфигураторы доступа
-Каждая станция имеет до двух конфигураторов доступа. Первый находится во владении главного инженера, а второй можно найти у Главы Персонала.
+  ## Where to find Access Configurators
+  Each station is equipped with up to two access configurators. The first is in the possession of the Chief Engineer, while the second can be found with the Head of Personnel.
 
-## Как использовать конфигуратор доступа
-- Изменение устройства с помощью конфигуратора доступа
-- Сначала используйте конфигуратор доступа на выбранном устройстве, чтобы связать их вместе. Это автоматически откроет пользовательский интерфейс конфигуратора.
-- Далее вставьте ID-карту в конфигуратор доступа.
-- Установите требования к доступу подключенного устройства. Какие требования могут быть добавлены или удалены, будет зависеть от привилегий доступа вставленной ID-карты.
-- Любые сделанные изменения будут применены немедленно - просто извлеките идентификационную карту из конфигуратора доступа и закройте пользовательский интерфейс, когда вы закончите.
+  ## How to use the access configurator
+  To modify a device using the access configurator:
+  - First, use the access configurator on the chosen device to link them together. This will automatically open the configurator UI.
+  - Next, insert an ID card into the access configurator.
+  - Set the access requirements of the connected device. What requirements can be added or removed will depend upon the access privileges of the inserted ID card.
+  - Any changes made will be applied [color=#a4885c]immediately[/color] - simply eject the ID card from the access configurator and close the UI when you are done.
 
-## Ограничения на изменение доступа
-В качестве меры предосторожности вставленный идентификатор должен иметь * все * требования к доступу, которые в настоящее время активны на подключенном устройстве, чтобы изменить его.
+  ## Restrictions on changing access
+  As a safety precaution, the inserted ID must possess [bold]all[/bold] of the access requirements that are currently active on the connected device in order to modify it.
 
-Например, устройство, к которому может получить доступ как «научный», так и «медицинский» персонал, может быть изменено только с использованием идентификационной карты, которая имеет доступ к обоим этим отделам. Конфигуратор доступа предупредит пользователя, если вставленная идентификационная карта не имеет достаточных привилегий для изменения устройства.
+  For example, a device which can be access by both 'Science' and 'Medical' personnel can only by modified using an ID card that has access to [color=#a4885c]both[/color] of these departments.
+  The access configurator will warn the user if the inserted ID card does not have sufficient privileges to modify a device.
 
-Устройство без установленных требований к доступу, такое как шлюз общего доступа, может быть изменено с использованием любой действительной идентификационной карты станции.
+  A device with no access requirements set, like a public access airlock, can be modified using any valid station ID card.
 
-## Ремонт поврежденных считывателей идентификационных карт
-Агенты синдиката могут попытаться взломать устройства с ограниченным доступом с помощью криптографического секвенсора (EMAG). Этот гнусный инструмент полностью укоротит любые считыватели ID-карт, которые прикреплены к устройству.
+  ## Repairing damaged ID card readers
+  Syndicate agents may attempt to hack access restricted devices through the use of a [color=#a4885c]Cryptographic Sequencer (EMAG)[/color]. This nefarious tool will completely short out any ID card readers that are attached to the device.
 
-Члены экипажа должны будут частично удалить/реконструировать затронутые устройства, а затем установить соответствующие разрешения доступа после этого, используя конфигуратор доступа, чтобы восстановить ограничения доступа.
+  Engineers will need to partially de/reconstruct affected devices, and then set appropriate access permissions afterwards using the access configurator (or network configurator, for airlocks), to re-establish access restrictions.
 </Document>

@@ -10,30 +10,16 @@
   startingGear: AtmosphericTechnicianGear
   icon: "JobIconAtmosphericTechnician"
   supervisors: job-supervisors-ce
-  canBeAntag: false
   access:
   - Maintenance
   - Engineering
   - External
   - Atmospherics
-  special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
 
 - type: startingGear
   id: AtmosphericTechnicianGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitAtmos
-    back: ClothingBackpackAtmosphericsFilled
-    shoes: ClothingShoesColorWhite
     eyes: ClothingEyesGlassesMeson
     id: AtmosPDA
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
-    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
-    socks: ClothingUnderwearSocksNormal
-  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtAtmos
-  satchel: ClothingBackpackSatchelAtmosphericsFilled
-  duffelbag: ClothingBackpackDuffelAtmosphericsFilled

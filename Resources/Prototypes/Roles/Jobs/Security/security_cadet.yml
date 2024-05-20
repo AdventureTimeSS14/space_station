@@ -28,19 +28,10 @@
 - type: startingGear
   id: SecurityCadetGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitSecGrey # Corvax-Resprite
-    back: ClothingBackpackSecurityFilled
     shoes: ClothingShoesBootsCombatFilled
     outerClothing: ClothingOuterArmorBasic
     id: SecurityCadetPDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltSecurityFilled
-    pocket1: WeaponPistolMk58Nonlethal
-    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
-    socks: ClothingUnderwearSocksNormal
-    neck: ADTClothingNeckSecBadge
-  underweart: ClothingUnderwearTopBraSportsAlternative # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtColorRed
-  satchel: ClothingBackpackSatchelSecurityFilled
-  duffelbag: ClothingBackpackDuffelSecurityFilled
+    pocket1: WeaponPistolMk58
+    pocket2: BookSecurity

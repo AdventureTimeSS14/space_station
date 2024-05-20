@@ -12,9 +12,6 @@
 - type: startingGear
   id: PassengerGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorGrey
-    back: ClothingBackpackFilled
-    shoes: ClothingShoesColorBlack
     id: PassengerPDA
     ears: ClothingHeadsetGrey
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear

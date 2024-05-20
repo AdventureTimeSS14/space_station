@@ -43,6 +43,7 @@
   - BorgModuleHarvesting
   - SeedExtractorMachineCircuitboard
   - HydroponicsTrayMachineCircuitboard
+  - ReagentGrinderIndustrialMachineCircuitboard
 
 - type: technology
   id: CritterMechs
@@ -114,6 +115,7 @@
     - BorgModuleClowning
     - DawInstrumentMachineCircuitboard
     - MassMediaCircuitboard
+    - JukeboxCircuitBoard
 
 - type: technology
   id: RoboticCleanliness
@@ -155,7 +157,10 @@
   cost: 5000
   recipeUnlocks:
   - FauxTileAstroGrass
+  - FauxTileMowedAstroGrass
+  - FauxTileJungleAstroGrass
   - FauxTileAstroIce
+  - FauxTileAstroSnow
 
 - type: technology
   id: BiochemicalStasis
@@ -218,8 +223,6 @@
   - WeaponSprayNozzle
   - ClothingBackpackWaterTank
 
-# Tier 3
-
 - type: technology
   id: BluespaceCargoTransport
   name: research-technology-bluespace-cargo-transport
@@ -227,10 +230,12 @@
     sprite: Structures/cargo_telepad.rsi
     state: display
   discipline: CivilianServices
-  tier: 3
-  cost: 12000
+  tier: 2
+  cost: 15000
   recipeUnlocks:
   - CargoTelepadMachineCircuitboard
+
+# Tier 3
 
 - type: technology
   id: QuantumFiberWeaving

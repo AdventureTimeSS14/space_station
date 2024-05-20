@@ -22,8 +22,6 @@
 - type: startingGear
   id: LawyerGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitLawyerBlue  # TODO change jumpsuit to randomiser of the 4 variants
-    back: ClothingBackpackFilled
     shoes: ClothingShoesBootsLaceup
     id: LawyerPDA
     ears: ADTClothingHeadsetLawyer
@@ -34,6 +32,3 @@
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   inhand:
     - BriefcaseBrownFilled
-  innerClothingSkirt: ClothingUniformJumpskirtLawyerBlack
-  satchel: ClothingBackpackSatchelFilled
-  duffelbag: ClothingBackpackDuffelFilled

@@ -10,13 +10,6 @@
     shoes: ClothingShoesCult
     id: PassengerPDA
     ears: ClothingHeadsetService
-    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
-    socks: ClothingUnderwearSocksNormal
-  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackSatchelFilled
-  duffelbag: ClothingBackpackDuffelFilled
 
 - type: startingGear
   id: CultistGear
@@ -28,10 +21,3 @@
     shoes: ClothingShoesColorRed
     id: PassengerPDA
     ears: ClothingHeadsetService
-    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
-    socks: ClothingUnderwearSocksNormal
-  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackSatchelFilled
-  duffelbag: ClothingBackpackDuffelFilled

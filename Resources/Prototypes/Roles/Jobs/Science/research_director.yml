@@ -32,16 +32,5 @@
 - type: startingGear
   id: ResearchDirectorGear
   equipment:
-    jumpsuit: ADTRDJumpsuitWarm
-    back: ClothingBackpackResearchDirectorFilled
-    shoes: ClothingShoesColorBrown
-    outerClothing: ClothingOuterCoatRD
     id: RnDPDA
     ears: ClothingHeadsetRD
-    underwearb: ClothingUnderwearBottomBoxersRD # Sirena-Underwear
-    socks: ClothingUnderwearSocksNormal
-  underweart: ClothingUnderwearTopBraRD # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesRD # Sirena-Underwear
-  innerClothingSkirt: ADTRDJumpskirtWarm
-  satchel: ClothingBackpackSatchelResearchDirectorFilled
-  duffelbag: ClothingBackpackDuffelResearchDirectorFilled
