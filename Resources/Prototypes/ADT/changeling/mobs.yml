@@ -270,14 +270,10 @@
   metabolisms:
     Medicine:
       effects:
-      - !type:LingEggs
-         conditions:
-          - !type:ReagentThreshold
-            min: 1
       - !type:HealthChange
         damage:
           types:
-            Poison: 15
+            Poison: 30
 
 - type: entity
   name: synthetic changeling larva

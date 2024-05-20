@@ -5,7 +5,7 @@
     state: on
   product: GravityGeneratorMini
   cost: 4000
-  category: Shuttle
+  category: cargoproduct-category-name-shuttle
   group: market
 
 - type: cargoProduct
@@ -15,5 +15,5 @@
     state: on
   product: CrateEngineeringGravityGenerator
   cost: 20000
-  category: Shuttle
+  category: cargoproduct-category-name-shuttle
   group: market

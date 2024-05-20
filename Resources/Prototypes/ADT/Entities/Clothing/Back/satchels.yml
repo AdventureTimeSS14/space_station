@@ -40,3 +40,30 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Back/paramedic_satchel.rsi
+
+- type: entity
+  parent: ClothingBackpackMilitarySatchel
+  id: ADTClothingBackpackMilitarySatchelFleetPilot
+  name: paramedical satchel
+  description: A satchel to store some paramedical equipment.
+  components:
+  - type: StorageFill
+    contents:
+      - id: SpaceMedipen
+        amount: 2
+      - id: OxygenTankFilled
+      - id: BoxSurvivalSecurity
+      - id: SheetPlasma
+
+- type: entity
+  parent: ClothingBackpackMilitarySatchel
+  id: ClothingBackpackMilitarySatchelEngineer
+  name: paramedical satchel
+  description: A satchel to store some paramedical equipment.
+  components:
+  - type: StorageFill
+    contents:
+      - id: OxygenTankFilled
+      - id: RCD
+      - id: RCDAmmo
+        amount: 6

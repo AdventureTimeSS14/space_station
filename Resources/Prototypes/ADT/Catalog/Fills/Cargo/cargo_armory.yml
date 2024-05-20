@@ -5,7 +5,7 @@
 #    state: syringe_base0
 #  product: ADTCrateMindshieldImplants
 #  cost: 3000
-#  category: Armory
+#  category: cargoproduct-category-name-armory
 #  group: market
 
 - type: cargoProduct
@@ -15,7 +15,7 @@
     state: icon
   product: ADTCrateArmoryUSSPPistols
   cost: 3500
-  category: Armory
+  category: cargoproduct-category-name-armory
   group: market
 
 - type: cargoProduct
@@ -25,5 +25,5 @@
     state: icon
   product: ADTCrateArmorySALR36
   cost: 29000
-  category: Armory
+  category: cargoproduct-category-name-armory
   group: market

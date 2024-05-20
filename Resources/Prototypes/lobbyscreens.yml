@@ -113,3 +113,7 @@
 - type: lobbyBackground
   id: Doomed
   background: /Textures/LobbyScreens/doomed.png
+
+- type: lobbyBackground
+  id: Gool1
+  background: /Textures/LobbyScreens/goal1.png

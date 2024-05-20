@@ -1648,6 +1648,9 @@
       reagents:
       - ReagentId: JuiceGrape
         Quantity: 10
+  - type: Tag
+    tags: 
+    - ADTMothFriendlyFood
 
 - type: entity
   name: berries

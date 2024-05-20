@@ -6,7 +6,7 @@
     state: patchpack
   product: ADTCratePatchPackFilled
   cost: 1600
-  category: Medical
+  category: cargoproduct-category-name-medical
   group: market
 
 #engineering
@@ -38,7 +38,7 @@
     state: base
   product: ADTCrateVendingMachineRestockPillFilled
   cost: 1200
-  category: Medical
+  category: cargoproduct-category-name-medical
   group: market
 
 #crates

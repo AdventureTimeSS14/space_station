@@ -1080,6 +1080,12 @@
   - type: IconSmooth
     key: walls
     base: mining
+  - type: Repairable
+    fuelCost: 25
+    doAfterDelay: 3
+  - type: Construction
+    graph: MiningGirder
+    node: mining_wall
 
 - type: entity
   parent: WallShuttleDiagonal
@@ -1102,6 +1108,9 @@
   - type: Icon
     sprite: Structures/Walls/mining_diagonal.rsi
     state: state0
+  - type: Repairable
+    fuelCost: 25
+    doAfterDelay: 3
 
 
 # Vault Walls

@@ -530,7 +530,7 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndie
-  - type: DNALocker
+  # - type: DNALocker
 
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -577,7 +577,7 @@
       sprite: Clothing/OuterClothing/Hardsuits/syndiemedic.rsi
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitSyndieMedic
-    - type: DNALocker
+    # - type: DNALocker
 
 #Cybersun Juggernaut Hardsuit
 - type: entity
@@ -609,7 +609,7 @@
     sprintModifier: 0.70
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitCybersun
-  - type: DNALocker
+  # - type: DNALocker
 
 #Syndicate Elite Hardsuit
 - type: entity
@@ -634,7 +634,7 @@
       coefficients:
         Blunt: 0.4
         Slash: 0.4
-        Piercing: 0.35
+        Piercing: 0.3
         Heat: 0.4
         Radiation: 0.20
         Caustic: 0.5
@@ -645,7 +645,7 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieElite
-  - type: DNALocker
+  # - type: DNALocker
 
 #Syndicate Commander Hardsuit
 - type: entity
@@ -679,7 +679,7 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieCommander
-  - type: DNALocker
+  # - type: DNALocker
 
 #Wizard Hardsuit
 - type: entity
@@ -841,7 +841,7 @@
         Blunt: 0.4
         Slash: 0.4
         Piercing: 0.3
-        Heat: 0.2
+        Heat: 0.4
         Radiation: 0.20
         Caustic: 0.5
         Stun: 0.4
@@ -891,7 +891,7 @@
         Blunt: 0.4
         Slash: 0.4
         Piercing: 0.3
-        Heat: 0.2
+        Heat: 0.4
         Radiation: 0.20
         Caustic: 0.5
         Stun: 0.4
@@ -916,7 +916,7 @@
         Blunt: 0.4
         Slash: 0.4
         Piercing: 0.3
-        Heat: 0.2
+        Heat: 0.4
         Radiation: 0.20
         Caustic: 0.5
         Stun: 0.4

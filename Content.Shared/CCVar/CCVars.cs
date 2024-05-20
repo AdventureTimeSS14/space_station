@@ -453,7 +453,7 @@ namespace Content.Shared.CCVar
             CVarDef.Create("traitor.min_players", 5);
 
         public static readonly CVarDef<int> TraitorMaxTraitors =
-            CVarDef.Create("traitor.max_traitors", 4); // Assuming average server maxes somewhere from like 50-80 people
+            CVarDef.Create("traitor.max_traitors", 6); // Assuming average server maxes somewhere from like 50-80 people
 
         public static readonly CVarDef<int> TraitorPlayersPerTraitor =
             CVarDef.Create("traitor.players_per_traitor", 12);
@@ -516,10 +516,10 @@ namespace Content.Shared.CCVar
 
         public static readonly CVarDef<int> ChangelingMinPlayers =
 
-            CVarDef.Create("changeling.min_players", 5);
+            CVarDef.Create("changeling.min_players", 15);
 
         public static readonly CVarDef<int> ChangelingMaxChangelings =
-            CVarDef.Create("changeling.max_lings", 2); // Assuming average server maxes somewhere from like 50-80 people. Upd: У нас генокрады вместе с предателями, куда бля! Порезал в 2 раза лимит.
+            CVarDef.Create("changeling.max_lings", 4); // Assuming average server maxes somewhere from like 50-80 people. Upd: У нас генокрады вместе с предателями, куда бля! Порезал в 2 раза лимит.
 
         public static readonly CVarDef<int> ChangelingPlayersPerChangeling =
             CVarDef.Create("changeling.players_per_traitor", 15);
@@ -1571,10 +1571,10 @@ namespace Content.Shared.CCVar
             CVarDef.Create("viewport.minimum_width", 15, CVar.REPLICATED);
 
         public static readonly CVarDef<int> ViewportMaximumWidth =
-            CVarDef.Create("viewport.maximum_width", 21, CVar.REPLICATED);
+            CVarDef.Create("viewport.maximum_width", 29, CVar.REPLICATED);
 
         public static readonly CVarDef<int> ViewportWidth =
-            CVarDef.Create("viewport.width", 21, CVar.CLIENTONLY | CVar.ARCHIVE);
+            CVarDef.Create("viewport.width", 29, CVar.CLIENTONLY | CVar.ARCHIVE);
 
         /*
          * UI
@@ -1660,7 +1660,7 @@ namespace Content.Shared.CCVar
             CVarDef.Create("chat.max_message_length", 1000, CVar.SERVER | CVar.REPLICATED);
 
         public static readonly CVarDef<int> ChatMaxAnnouncementLength =
-            CVarDef.Create("chat.max_announcement_length", 256, CVar.SERVER | CVar.REPLICATED);
+            CVarDef.Create("chat.max_announcement_length", 512, CVar.SERVER | CVar.REPLICATED);
 
         public static readonly CVarDef<bool> ChatSanitizerEnabled =
             CVarDef.Create("chat.chat_sanitizer_enabled", true, CVar.SERVERONLY);

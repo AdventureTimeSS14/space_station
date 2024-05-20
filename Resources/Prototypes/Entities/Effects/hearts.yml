@@ -1,6 +1,5 @@
 - type: entity
   id: EffectHearts
-  noSpawn: true
   components:
   - type: TimedDespawn
     lifetime: 0.85

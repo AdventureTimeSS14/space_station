@@ -86,7 +86,7 @@
     state: brigmedlocked
   product: ADTCrateSecurityBrigmedic
   cost: 4000
-  category: Security
+  category: cargoproduct-category-name-security
   group: market
 
 - type: cargoProduct
@@ -96,7 +96,7 @@
     state: icon
   product: CrateSecurityHardsuit
   cost: 5000
-  category: Security
+  category: cargoproduct-category-name-security
   group: market
 
 - type: cargoProduct
@@ -106,5 +106,5 @@
     state: icon
   product: CrateSecurityUSSPjuggernaut
   cost: 12000
-  category: Security
+  category: cargoproduct-category-name-security
   group: market
