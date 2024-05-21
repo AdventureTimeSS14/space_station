@@ -267,9 +267,9 @@
     - type: LanguageSpeaker
       speaks:
       - GalacticCommon
-      - RobotTalk
+      - BorgTalk
       - CodeSpeak
       understands:
       - GalacticCommon
-      - RobotTalk
+      - BorgTalk
       - CodeSpeak

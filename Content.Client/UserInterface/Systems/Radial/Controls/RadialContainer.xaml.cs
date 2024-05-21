@@ -35,12 +35,12 @@ public partial class RadialContainer : Control
     /// <summary>
     /// Radial item size, when cursor was focused on button
     /// </summary>
-    public float FocusSize { get; set; } = 64f;
+    public float FocusSize { get; set; } = 82f;
 
     /// <summary>
     /// Normal radial item size, when cursor not focused
     /// </summary>
-    public float NormalSize { get; set; } = 50f;
+    public float NormalSize { get; set; } = 64f;
 
     /// <summary>
     /// Items moving animation time, when radial was opened

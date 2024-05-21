@@ -89,3 +89,7 @@
 - type: stationGoal
   id: stationgoaltesla
   text:   station-goal-tesla
+
+- type: stationGoal
+  id: stationgoalbluespaceharvester
+  text:   station-goal-bluespaceharvester

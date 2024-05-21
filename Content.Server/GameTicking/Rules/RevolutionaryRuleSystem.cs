@@ -27,6 +27,7 @@ using Content.Shared.Revolutionary.Components;
 using Content.Shared.Roles;
 using Content.Shared.Stunnable;
 using Content.Shared.Zombies;
+using FastAccessors;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using System.Linq;
@@ -277,7 +278,10 @@ public sealed class RevolutionaryRuleSystem : GameRuleSystem<RevolutionaryRuleCo
     private void OnHeadRevMobStateChanged(EntityUid uid, HeadRevolutionaryComponent comp, MobStateChangedEvent ev)
     {
         if (ev.NewMobState == MobState.Dead || ev.NewMobState == MobState.Invalid)
+        {
+            RemCompDeferred<HeadRevolutionaryComponent>(uid);
             CheckRevsLose();
+        }
     }
 
     /// <summary>
@@ -285,7 +289,6 @@ public sealed class RevolutionaryRuleSystem : GameRuleSystem<RevolutionaryRuleCo
     /// </summary>
     private bool CheckRevsLose()
     {
-        var stunTime = TimeSpan.FromSeconds(4);
         var headRevList = new List<EntityUid>();
 
         var headRevs = AllEntityQuery<HeadRevolutionaryComponent, MobStateComponent>();
@@ -297,33 +300,19 @@ public sealed class RevolutionaryRuleSystem : GameRuleSystem<RevolutionaryRuleCo
         // If no Head Revs are alive all normal Revs will lose their Rev status and rejoin Nanotrasen
         if (IsGroupDead(headRevList, false))
         {
-            var rev = AllEntityQuery<RevolutionaryComponent, MindContainerComponent>();
-            while (rev.MoveNext(out var uid, out _, out var mc))
+            var headrev = AllEntityQuery<RevolutionaryComponent, MindContainerComponent>();
+            while (headrev.MoveNext(out var uid, out _, out var mc))
             {
                 if (HasComp<HeadRevolutionaryComponent>(uid))
                     continue;
-
-                _npcFaction.RemoveFaction(uid, RevolutionaryNpcFaction);
-                _stun.TryParalyze(uid, stunTime, true);
-                RemCompDeferred<RevolutionaryComponent>(uid);
-                _popup.PopupEntity(Loc.GetString("rev-break-control", ("name", Identity.Entity(uid, EntityManager))), uid);
-                _adminLogManager.Add(LogType.Mind, LogImpact.Medium, $"{ToPrettyString(uid)} was deconverted due to all Head Revolutionaries dying.");
-
-                if (!_mind.TryGetMind(uid, out var mindId, out var mind, mc))
-                    continue;
-
-                // remove their antag role
-                _role.MindTryRemoveRole<RevolutionaryRoleComponent>(mindId);
-
-                // make it very obvious to the rev they've been deconverted since
-                // they may not see the popup due to antag and/or new player tunnel vision
-                if (_mind.TryGetSession(mindId, out var session))
-                    _euiMan.OpenEui(new DeconvertedEui(), session);
+                if (TryComp<MobStateComponent>(uid, out var mobstate) && mobstate.CurrentState != MobState.Dead)
+                {
+                    AddComp<HeadRevolutionaryComponent>(uid);
+                    return false;
+                }
             }
-            return true;
         }
-
-        return false;
+        return true;
     }
 
     /// <summary>
