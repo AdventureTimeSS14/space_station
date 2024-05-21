@@ -43,8 +43,8 @@
   components:
     - type: Sprite
       layers:
-        - state: default
-        - state: ert_security
+        - state: centcom
+        - state: idblueshield
     - type: PresetIdCard
       job: ADTBlueShieldOfficer
 

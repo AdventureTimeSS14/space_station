@@ -42,18 +42,19 @@
 
 - type: entity
   parent: BasePDA
-  id: ADTBlueShieldOfficerPDA
+  id: ADTBlueshieldOfficerPDA
   name: BlueShield PDA
   description: Smells like protection.
   components:
     - type: Pda
       id: ADTBlueShieldOfficerIDCard
-      state: pda-ert
+      state: pda-blueshield
     - type: PdaBorderColor
-      borderColor: "#A32D26"
-      accentVColor: "#447987"
+      borderColor: "#424248"
+      accentHColor: "#2851a4"
+      accentVColor: "#e1e1e1"
     - type: Icon
-      state: pda-ert
+      state: pda-blueshield
     - type: HealthAnalyzer
       scanDelay: 1.2
 
