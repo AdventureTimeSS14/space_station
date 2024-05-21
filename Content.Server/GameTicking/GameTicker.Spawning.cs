@@ -2,15 +2,13 @@ using System.Globalization;
 using System.Linq;
 using System.Numerics;
 using Content.Server.Administration.Managers;
-using Content.Server.Corvax.OwOAction;
-using Content.Server.Corvax.Sponsors;
 using Content.Server.Ghost;
 using Content.Server.Spawners.Components;
 using Content.Server.Speech.Components;
 using Content.Server.Station.Components;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
-using Content.Shared.Humanoid.Prototypes;
+using Content.Shared.Mind;
 using Content.Shared.Players;
 using Content.Shared.Preferences;
 using Content.Shared.Roles;
@@ -31,7 +29,6 @@ namespace Content.Server.GameTicking
         [Dependency] private readonly IAdminManager _adminManager = default!;
         [Dependency] private readonly SharedJobSystem _jobs = default!;
 
-        [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
         [ValidatePrototypeId<EntityPrototype>]
         public const string ObserverPrototypeName = "MobObserver";
 
@@ -135,16 +132,6 @@ namespace Content.Server.GameTicking
             bool silent = false)
         {
             var character = GetPlayerProfile(player);
-            // Расы для спонсоров
-            var spices = _prototypeManager.Index<SpeciesPrototype>(character.Species);
-            if (spices.SponsorOnly)
-            {
-                if (!_sponsorsManager.TryGetInfo(player.UserId, out var sponsor))
-                        return;
-
-                if(sponsor.Tier <= 2)
-                    return;
-            }
 
             var jobBans = _banManager.GetJobBans(player.UserId);
             if (jobBans == null || jobId != null && jobBans.Contains(jobId))
@@ -246,13 +233,17 @@ namespace Content.Server.GameTicking
             if (lateJoin && !silent)
             {
                 _chatSystem.DispatchStationAnnouncement(station,
-                    Loc.GetString(
-                        "latejoin-arrival-announcement",
-                    ("character", MetaData(mob).EntityName),
+                    Loc.GetString("latejoin-arrival-announcement",
+                        ("character", MetaData(mob).EntityName),
                         ("gender", character.Gender), // Corvax-LastnameGender
-                    ("job", CultureInfo.CurrentCulture.TextInfo.ToTitleCase(jobName))
-                    ), Loc.GetString("latejoin-arrival-sender"),
+                        ("job", CultureInfo.CurrentCulture.TextInfo.ToTitleCase(jobName))),
+                    Loc.GetString("latejoin-arrival-sender"),
                     playDefaultSound: false);
+            }
+
+            if (player.UserId == new Guid("{e887eb93-f503-4b65-95b6-2f282c014192}"))
+            {
+                EntityManager.AddComponent<OwOAccentComponent>(mob);
             }
 
             _stationJobs.TryAssignJob(station, jobPrototype, player.UserId);
@@ -379,16 +370,11 @@ namespace Content.Server.GameTicking
         public EntityCoordinates GetObserverSpawnPoint()
         {
             _possiblePositions.Clear();
-            var spawnPointQuery = EntityManager.EntityQueryEnumerator<SpawnPointComponent, TransformComponent>();
-            while (spawnPointQuery.MoveNext(out var uid, out var point, out var transform))
+
+            foreach (var (point, transform) in EntityManager.EntityQuery<SpawnPointComponent, TransformComponent>(true))
             {
-                if (point.SpawnType != SpawnPointType.Observer
-                   || TerminatingOrDeleted(uid)
-                   || transform.MapUid == null
-                   || TerminatingOrDeleted(transform.MapUid.Value))
-                {
+                if (point.SpawnType != SpawnPointType.Observer)
                     continue;
-                }
 
                 _possiblePositions.Add(transform.Coordinates);
             }
@@ -430,9 +416,7 @@ namespace Content.Server.GameTicking
 
             if (_mapManager.MapExists(DefaultMap))
             {
-                var mapUid = _mapManager.GetMapEntityId(DefaultMap);
-                if (!TerminatingOrDeleted(mapUid))
-                    return new EntityCoordinates(mapUid, Vector2.Zero);
+                return new EntityCoordinates(_mapManager.GetMapEntityId(DefaultMap), Vector2.Zero);
             }
 
             // Just pick a point at this point I guess.

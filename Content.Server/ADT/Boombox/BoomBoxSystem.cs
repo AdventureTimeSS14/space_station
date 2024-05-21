@@ -32,11 +32,10 @@ public sealed class BoomBoxSystem : EntitySystem
     [Dependency] private readonly SharedAudioSystem _audioSystem = default!;
     [Dependency] private readonly ItemSlotsSystem _itemSlotsSystem = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly UserInterfaceSystem _userInterface = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;
     [Dependency] private readonly IEntityManager _entities = default!;
     [Dependency] private readonly DeviceLinkSystem _signalSystem = default!;
-
+    [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
     public override void Initialize()
     {
         base.Initialize();
@@ -181,7 +180,7 @@ public sealed class BoomBoxSystem : EntitySystem
 
 
         var state = new BoomBoxUiState(canPlusVol, canMinusVol, canStop, canStart);
-        _userInterface.TrySetUiState(uid, BoomBoxUiKey.Key, state);
+        _uiSystem.SetUiState(uid, BoomBoxUiKey.Key, state);
     }
 
     private void MinusVol(EntityUid uid, BoomBoxComponent? component = null)

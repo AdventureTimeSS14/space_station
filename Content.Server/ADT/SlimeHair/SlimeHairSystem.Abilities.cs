@@ -32,7 +32,7 @@ public sealed partial class SlimeHairSystem
         if (!TryComp<ActorComponent>(uid, out var actor))
             return;
 
-        _uiSystem.TryOpen(uid, SlimeHairUiKey.Key, actor.PlayerSession);
+        _uiSystem.OpenUi(uid, SlimeHairUiKey.Key, actor.PlayerSession);
 
         UpdateInterface(uid, comp);
 

@@ -204,7 +204,7 @@ namespace Content.Server.Preferences.Managers
                     foreach (var (_, profile) in prefs.Characters)
                     {
                         var allowedMarkings = _sponsors.TryGetInfo(session.UserId, out var sponsor) ? sponsor.AllowedMarkings : new string[]{};
-                        profile.EnsureValid(_cfg, collection, allowedMarkings);
+                        profile.EnsureValid(session, collection);
                     }
                     // Corvax-Sponsors-End
                 }

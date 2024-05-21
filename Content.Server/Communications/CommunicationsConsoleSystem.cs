@@ -278,8 +278,8 @@ namespace Content.Server.Communications
 
             _chatSystem.DispatchStationAnnouncement(uid, msg, title, colorOverride: comp.Color);
 
-            if (message.Session.AttachedEntity != null)
-                _adminLogger.Add(LogType.Chat, LogImpact.Low, $"{ToPrettyString(message.Session.AttachedEntity.Value):player} has sent the following {(comp.Global ? "global" : "station")} announcement: {msg}");
+            if (message.Actor != null)
+                _adminLogger.Add(LogType.Chat, LogImpact.Low, $"{ToPrettyString(message.Actor):player} has sent the following {(comp.Global ? "global" : "station")} announcement: {msg}");
             // Corvax-Announcements-End
         }
 
