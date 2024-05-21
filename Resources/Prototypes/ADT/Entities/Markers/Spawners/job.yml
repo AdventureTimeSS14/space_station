@@ -143,3 +143,54 @@
     layers:
       - state: green
       - state: pathologist
+
+- type: entity
+  id: ADTSpawnPointSecurityCyborg
+  parent: ADTSpawnPointJobBase
+  name: SecurityCyborg
+  components:
+  - type: SpawnPoint
+    job_id: ADTSecurityCyborg
+  - type: Sprite       # Потом подправить
+    layers:
+    - state: green
+    - sprite: Mobs/Silicon/chassis.rsi
+      state: engineer
+    - sprite: Mobs/Silicon/chassis.rsi
+      state: engineer_e
+
+- type: entity
+  id: SpawnMagistrat
+  parent: SpawnPointJobBase
+  name: magistrat spawn
+  components:
+    - type: SpawnPoint
+      job_id: Magistrat
+    - type: Sprite
+      layers:
+        - state: green
+        - state: hop
+
+- type: entity
+  id: SpawnADTBlueShieldOfficer
+  parent: SpawnPointJobBase
+  name: ADTBlueShieldOfficer
+  components:
+    - type: SpawnPoint
+      job_id: ADTBlueShieldOfficer
+    - type: Sprite
+      layers:
+        - state: green
+        - state: hop
+
+- type: entity
+  id: ADTSpawnPointRoboticist
+  parent: SpawnPointJobBase
+  name: roboticist
+  components:
+  - type: SpawnPoint
+    job_id: ADTRoboticist
+  - type: Sprite
+    layers:
+      - state: green
+      - state: scientist

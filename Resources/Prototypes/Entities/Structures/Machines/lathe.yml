@@ -337,7 +337,6 @@
       - ClothingEyesHudSecurity #Sirena T4 add
       - ADTClothingEyesHudAdvanced #Sirena T4 add
       - ADTPowerCellHyper
-      - DnaSyringeGun
       - LedLightTubeViolet
       - LedLightTubeYellow
       - LedLightTubeBlue
@@ -534,6 +533,7 @@
       - ADTSMESIndustrialMachineCircuitboard
       - ADTFormPrinterMachineCircuitboard
       - IndustrialChargerCircuitboard # Зарядник КПБ
+      - MachineBluespaceHarvesterCircuitboard
   - type: MaterialStorage
     whitelist:
       tags:
@@ -820,6 +820,7 @@
       - ShuttleGunPerforatorCircuitboard
       - ShuttleGunFriendshipCircuitboard
       - ShuttleGunDusterCircuitboard
+      - ADTWeaponIonRifle
   - type: MaterialStorage
     whitelist:
       tags:

@@ -25,7 +25,7 @@
     state: nutribrick
   product: CrateFoodMRE
   cost: 1800
-  category: Food
+  category: cargoproduct-category-name-food
   group: market
 
 - type: cargoProduct
@@ -35,7 +35,7 @@
     state: flour-big
   product: CrateFoodCooking
   cost: 4100
-  category: Food
+  category: cargoproduct-category-name-food
   group: market
 
 - type: cargoProduct
