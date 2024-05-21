@@ -136,7 +136,7 @@ public partial class RadialContainer : Control
         if (Parent == null)
             return;
 
-        LayoutContainer.SetPosition(this, (Parent.Size/2) - (Size/2));
+        LayoutContainer.SetPosition(this, (Parent.Size / 2) - (Size / 2));
         UpdateButtons();
     }
 
@@ -156,7 +156,7 @@ public partial class RadialContainer : Control
         if (Parent == null)
             return;
 
-        LayoutContainer.SetPosition(this, (Parent.Size * position) - (Size/2));
+        LayoutContainer.SetPosition(this, (Parent.Size * position) - (Size / 2));
         UpdateButtons();
     }
 
@@ -211,12 +211,13 @@ public partial class RadialContainer : Control
     /// <param name="action">Item content text</param>
     /// <param name="texture">Item's icon texture</param>
     /// <returns></returns>
-    public RadialItem AddButton(string action, Texture? texture)
+    public RadialItem AddButton(string action, Texture? texture, SpriteView spriteView = default!)
     {
         var button = new RadialItem();
         button.Content = action;
         button.Controller.TexturePath = ItemBackgroundTexturePath;
-
+        if (spriteView != null)
+            button.EntityView.SetEntity(spriteView.NetEnt != null ? spriteView.NetEnt.Value : NetEntity.Invalid);
         if (texture != null)
             button.Icon.Texture = texture;
 
@@ -229,13 +230,13 @@ public partial class RadialContainer : Control
     {
         Visible = true;
 
-        var angleDegrees = 360/Layout.ChildCount;
+        var angleDegrees = 360 / Layout.ChildCount;
         var stepAngle = -angleDegrees + -90;
         var distance = GetDistance();
 
         foreach (var child in Layout.Children)
         {
-            var button = (RadialItem)child;
+            var button = (RadialItem) child;
             button.ButtonSize = new Vector2(NormalSize, NormalSize);
             stepAngle += angleDegrees;
             var pos = GetPointFromPolar(stepAngle, distance);
@@ -329,8 +330,8 @@ public partial class RadialContainer : Control
 
         foreach (var child in Layout.Children)
         {
-            var button = (RadialItem)child;
-            LayoutContainer.SetPosition(child, button.Offset - (button.Size/2));
+            var button = (RadialItem) child;
+            LayoutContainer.SetPosition(child, button.Offset - (button.Size / 2));
         }
 
         // FIXME: We use item's offset like "local item position" for animation. Need make some better way to do it;
