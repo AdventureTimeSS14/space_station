@@ -43,20 +43,20 @@
     useDelay: 1
     priority: -69
 
-- type: entity
-  id: ActionChangelingTransform
-  name: action-transform
-  description: action-transform-desc
-  noSpawn: true
-  components:
-  - type: InstantAction
-    icon:
-      sprite: Interface/Actions/actions_ling.rsi
-      state: transform
-    itemIconStyle: BigAction
-    event: !type:ChangelingTransformActionEvent
-    useDelay: 5
-    priority: -68
+# - type: entity ### это действие удалено всвязи с заменой UI выбора формы и трансформации генокрада.
+#   id: ActionChangelingTransform
+#   name: action-transform
+#   description: action-transform-desc
+#   noSpawn: true
+#   components:
+#   - type: InstantAction
+#     icon:
+#       sprite: Interface/Actions/actions_ling.rsi
+#       state: transform
+#     itemIconStyle: BigAction
+#     event: !type:ChangelingTransformActionEvent
+#     useDelay: 5
+#     priority: -68
 
 - type: entity
   id: ActionLingRegenerate
