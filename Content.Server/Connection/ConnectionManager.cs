@@ -22,6 +22,18 @@ namespace Content.Server.Connection
     {
         void Initialize();
         Task<bool> HavePrivilegedJoin(NetUserId userId); // Corvax-Queue
+
+        /// <summary>
+        /// Temporarily allow a user to bypass regular connection requirements.
+        /// </summary>
+        /// <remarks>
+        /// The specified user will be allowed to bypass regular player cap,
+        /// whitelist and panic bunker restrictions for <paramref name="duration"/>.
+        /// Bans are not bypassed.
+        /// </remarks>
+        /// <param name="user">The user to give a temporary bypass.</param>
+        /// <param name="duration">How long the bypass should last for.</param>
+        void AddTemporaryConnectBypass(NetUserId user, TimeSpan duration);
     }
 
     /// <summary>
