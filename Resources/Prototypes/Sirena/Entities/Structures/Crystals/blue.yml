@@ -21,7 +21,7 @@
           collection: GlassBreak
       - !type:SpawnEntitiesBehavior
         spawn:
-          CrystalShardBlue:
+          ShardCrystalBlue:
             min: 0
             max: 2
 
