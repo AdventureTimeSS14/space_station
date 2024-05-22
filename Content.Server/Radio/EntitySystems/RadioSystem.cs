@@ -121,8 +121,14 @@ public sealed class RadioSystem : EntitySystem
             NetEntity.Invalid,
             null);
         var chatMsg = new MsgChatMessage { Message = chat };
+
+        var msg = new ChatMessage(ChatChannel.Radio, message, wrappedMessage, NetEntity.Invalid, null);
+
         var obfuscated = _language.ObfuscateSpeech(null, message, language);
-        var ev = new RadioReceiveEvent(message, messageSource, channel, radioSource, chatMsg, obfuscated);
+        var obfuscatedWrapped = WrapRadioMessage(messageSource, channel, name, obfuscated);
+        var notUdsMsg = new ChatMessage(ChatChannel.Radio, obfuscated, obfuscatedWrapped, NetEntity.Invalid, null);
+
+        var ev = new RadioReceiveEvent(message, messageSource, channel, radioSource, chatMsg, msg, notUdsMsg, language);
 
         var sendAttemptEv = new RadioSendAttemptEvent(channel, radioSource);
         RaiseLocalEvent(ref sendAttemptEv);
@@ -170,6 +176,20 @@ public sealed class RadioSystem : EntitySystem
 
         _replay.RecordServerMessage(chat);
         _messages.Remove(message);
+    }
+
+    // Frontier - languages mechanic (extracted from above)
+    private string WrapRadioMessage(EntityUid source, RadioChannelPrototype channel, string name, string message)
+    {
+        var speech = _chat.GetSpeechVerb(source, message);
+        return Loc.GetString(speech.Bold ? "chat-radio-message-wrap-bold" : "chat-radio-message-wrap",
+            ("color", channel.Color),
+            ("fontType", speech.FontId),
+            ("fontSize", speech.FontSize),
+            ("verb", Loc.GetString(_random.Pick(speech.SpeechVerbStrings))),
+            ("channel", $"\\[{channel.LocalizedName}\\]"),
+            ("name", name),
+            ("message", FormattedMessage.EscapeText(message)));
     }
 
     /// <inheritdoc cref="TelecomServerComponent"/>
