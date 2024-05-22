@@ -771,6 +771,29 @@
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/pathologist_alt.rsi
 
+# Blueshield
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtBlueshield
+  name: blueshield's jumpskirt
+  description: blueshield's jumpskirt
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/blueshield_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/blueshield_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtBlueshieldTurtleneck
+  name: blueshield's turtleneck skirt
+  description: blueshield's turtleneck
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_blueshield_woman.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_blueshield_woman.rsi
+
 - type: entity
   parent: [ ClothingUniformBase, BaseFoldable ]
   id: ADTClothingUniformCroupierSkirt

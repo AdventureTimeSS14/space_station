@@ -65,7 +65,6 @@
   - type: Sprite
     state: holoclown
 
-
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineMime
@@ -92,6 +91,15 @@
   components:
   - type: Sprite
     state: boxer
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineBlueshieldOfficer
+  name: blueshield officer figure
+  description: A figurine depicting the blueshield officer, austere and blue, stands guard over the station government. I guess.
+  components:
+  - type: Sprite
+    state: blueshield
 
 - type: entity
   parent: BaseFigurine

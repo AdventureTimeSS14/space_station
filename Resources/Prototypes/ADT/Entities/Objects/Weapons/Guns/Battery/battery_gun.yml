@@ -106,18 +106,17 @@
     zeroVisible: true
 
 - type: entity
-  name: X-02 multiphas laser pistol
-  parent: BaseWeaponPowerCellSmall
-  id: ADTWeaponPistolBlueShitX02
-  description: New version of antique gun witout selfrcharge for "BlueShit"
+  name: X-01 multiphas laser pistol
+  parent: BaseWeaponBatterySmall
+  id: ADtWeaponSecCyborg
+  description: new version of antique gun witout selfrcharge
   components:
-  - type: Item
-    size: Small
-    shape:
-    - 0,0,1,0
-    - 0,1,0,1
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 10
   - type: Sprite
-    sprite: ADT/Objects/Weapons/Guns/Battery/BlueShield.rsi
+    sprite: ADT/Mobs/Silicon/Cyborg/cyb_gun.rsi
+    scale: 0.9, 0.9
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -125,8 +124,15 @@
       visible: false
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
+  - type: Appearance
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: false
+  - type: Clothing
+    sprite: ADT/Mobs/Silicon/Cyborg/cyb_gun.rsi
   - type: Gun
-    fireRate: 1.8
+    fireRate: 1.7
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: ItemSlots

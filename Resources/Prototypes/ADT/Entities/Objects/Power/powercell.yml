@@ -102,8 +102,21 @@
     maxIntensity: 200
     intensitySlope: 1.5
   - type: Sprite
-    sprite: ADT/Objects/Weapons/Guns/Battery/revolverbattery.rsi
-    state: icon
+    sprite: ADT/Objects/Weapons/Guns/Saber_revolvers/battery.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: BasicEntityAmmoProvider
+    proto: ADTBulletLaserMK2
+    capacity: 5
+    count: 5
+    fireCost: 100
   - type: SolutionContainerManager
     solutions:
       battery:

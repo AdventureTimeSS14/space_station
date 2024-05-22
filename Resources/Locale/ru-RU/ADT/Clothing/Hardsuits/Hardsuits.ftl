@@ -86,3 +86,6 @@ ent-ADTClothingOuterHardsuitSecurityModernPur = {ent-ADTClothingOuterHardsuitSec
 ent-ADTClothingHeadSecurityModernPurple = {ent-ADTClothingHeadSecurityModern}
     .desc = {ent-ADTClothingHeadSecurityModern.desc}
     .suffix = { "Дарк" }
+
+ent-BlueshieldSuit = скафандр офицера синего щита
+    .desc = Лёгкий боевой скафандр Нанотрейзен, с совсем не украденными у Синдиката технологиями, специально для Офицера Синего Щита и защиты его защищающего глав тела. Уверяю вас, всё это АБСОЛЮТНО легально. 
