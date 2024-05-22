@@ -17,7 +17,7 @@ ent-CrystalBlueMedium = { ent-CrystalBlue }
 ent-CrystalBlueSmall = { ent-CrystalBlue }
     .desc = { ent-BaseCrystal.desc }
 
-ent-CrystalShardBlue = осколок синего кристалла
+ent-ShardCrystalBlue = осколок синего кристалла
     .desc = { ent-BaseCrystalShard.desc }
 
 ent-ClothingCheapPendantBlue = кулон из синего кристалла
@@ -33,7 +33,7 @@ ent-CrystalCyanMedium = { ent-CrystalCyan }
 ent-CrystalCyanSmall = { ent-CrystalCyan }
     .desc = { ent-BaseCrystal.desc }
 
-ent-CrystalShardCyan = осколок голубого кристалла
+ent-ShardCrystalCyan = осколок голубого кристалла
     .desc = { ent-BaseCrystalShard.desc }
 
 ent-ClothingCheapPendantCyan = кулон из голубого кристалла
@@ -49,7 +49,7 @@ ent-CrystalGreenMedium = { ent-CrystalGreen }
 ent-CrystalGreenSmall = { ent-CrystalGreen }
     .desc = { ent-BaseCrystal.desc }
 
-ent-CrystalShardGreen = осколок зелёного кристалла
+ent-ShardCrystalGreen = осколок зелёного кристалла
     .desc = { ent-BaseCrystalShard.desc }
 
 ent-ClothingCheapPendantGreen = кулон из зелёного кристалла
@@ -65,7 +65,7 @@ ent-CrystalGreyMedium = { ent-CrystalGrey }
 ent-CrystalGreySmall = { ent-CrystalGrey }
     .desc = { ent-BaseCrystal.desc }
 
-ent-CrystalShardGrey = осколок серого кристалла
+ent-ShardCrystalGrey = осколок серого кристалла
     .desc = { ent-BaseCrystalShard.desc }
 
 ent-ClothingCheapPendantGrey = кулон из серого кристалла
@@ -81,7 +81,7 @@ ent-CrystalOrangeMedium = { ent-CrystalOrange }
 ent-CrystalOrangeSmall = { ent-CrystalOrange }
     .desc = { ent-BaseCrystal.desc }
 
-ent-CrystalShardOrange = осколок оранжевого кристалла
+ent-ShardCrystalOrange = осколок оранжевого кристалла
     .desc = { ent-BaseCrystalShard.desc }
 
 ent-ClothingCheapPendantOrange = кулон из оранжевого кристалла
@@ -97,7 +97,7 @@ ent-CrystalPinkMedium = { ent-CrystalPink }
 ent-CrystalPinkSmall = { ent-CrystalPink }
     .desc = { ent-BaseCrystal.desc }
 
-ent-CrystalShardPink = осколок розового кристалла
+ent-ShardCrystalPink = осколок розового кристалла
     .desc = { ent-BaseCrystalShard.desc }
 
 ent-ClothingCheapPendantPink = кулон из розового кристалла
@@ -113,7 +113,7 @@ ent-CrystalRedMedium = { ent-CrystalRed }
 ent-CrystalRedSmall = { ent-CrystalRed }
     .desc = { ent-BaseCrystal.desc }
 
-ent-CrystalShardRed = осколок красного кристалла
+ent-ShardCrystalRed = осколок красного кристалла
     .desc = { ent-BaseCrystalShard.desc }
 
 ent-ClothingCheapPendantRed = кулон из красного кристалла
