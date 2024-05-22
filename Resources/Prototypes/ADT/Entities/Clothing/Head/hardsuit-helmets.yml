@@ -234,15 +234,480 @@
   - type: ExplosionResistance
     damageCoefficient: 0.7
 
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadHelmetIlisium
+  noSpawn: true
+  name: helmet
+  description: Ilisium
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/helmet.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/helmet.rsi
+  - type: PointLight
+    color: red
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.65
+        Heat: 0.80
+        Radiation: 0.95
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadSecurityModern
+  name: security hardsuit helmet
+  description: Armored hardsuit helmet for security needs.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/head_helmet_security_modern.rsi
+    #sprite: ADT/Clothing/Head/Hardsuits/hos_hardsuithead.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/head_helmet_security_modern.rsi
+    #sprite: ADT/Clothing/Head/Hardsuits/hos_hardsuithead.rsi
+  - type: PointLight
+    color: "#ffeead"
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadSecurityModernBlue
+  name: security hardsuit helmet
+  description: Armored hardsuit helmet for security needs.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/head_helmet_security_modern_b.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/head_helmet_security_modern_b.rsi
+  - type: PointLight
+    color: "#ffeead"
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadSecurityModernGreen
+  name: security hardsuit helmet
+  description: Armored hardsuit helmet for security needs.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/head_helmet_security_modern_g.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/head_helmet_security_modern_g.rsi
+  - type: PointLight
+    color: "#ffeead"
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadSecurityModernPurple
+  name: security hardsuit helmet
+  description: Armored hardsuit helmet for security needs.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/head_helmet_security_modern_p.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/head_helmet_security_modern_p.rsi
+  - type: PointLight
+    color: "#ffeead"
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+#nano scale
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingClothingHeadHelmetHardsuitNanoScale
+  noSpawn: true
+  name: Nano scale armor helmet
+  description: Reptiles are not as primitive as you thought.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/nano_scale_armor_hardsuithead.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/nano_scale_armor_hardsuithead.rsi
+  - type: PointLight
+    color: red
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    coefficient: 0.005
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.2
+        Radiation: 0.5
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadHelmetHardsuitOBS7USSP
+  name: helmet of the USSP OBS-7 Konrad armor suit
+  description: helmet of the USSP OBS-7 Konrad armor suit
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/OBS7_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/OBS7_USSP.rsi
+  - type: PointLight
+    color: white
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadHelmetHardsuitOBS5USSPP
+  name: helmet of the USSP OBS-5 Konrad Armor Suit
+  description: helmet of the USSP OBS-5 Konrad armor suit
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/OBS5_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/OBS5_USSP.rsi
+  - type: PointLight
+    color: white
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadHelmetHardsuitDBS40KUSSPP
+  name: the armor helmet of the exocosuit
+  description: An enhanced version of the OBS-7 helmet. What at first glance looks like cutouts for the eyes, in fact, these are external sensors and measuring systems that work like a rangefinder.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/DBS40K_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/DBS40K_USSP.rsi
+  - type: PointLight
+    color: white
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadHelmetHardsuitCamouflageColors
+  name: the armor helmet of the exocosuit
+  description: A sturdy special forces helmet with motion, light and sound sensors, the helmet has no cutouts for the eyes, which provides full protection for the wearer's head.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/camouflagecolors_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/camouflagecolors_USSP.rsi
+  - type: PointLight
+    color: white
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadHelmetHardsuitDesertedColors
+  name: the armor helmet of the exocosuit
+  description: A sturdy special forces helmet with motion, light and sound sensors, the helmet has no cutouts for the eyes, which provides full protection for the wearer's head.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/deserted_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/deserted_USSP.rsi
+  - type: PointLight
+    color: white
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadHelmetHardsuitTacticalColors
+  name: the armor helmet of the exocosuit
+  description: A sturdy special forces helmet with motion, light and sound sensors, the helmet has no cutouts for the eyes, which provides full protection for the wearer's head.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/tactical_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/tactical_USSP.rsi
+  - type: PointLight
+    color: white
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTClothingHeadHelmetHardsuitMonolithReserch
+  name: MONOLITh helmet
+  description: A sturdy special forces helmet with motion, light and sound sensors, the helmet has no cutouts for the eyes, which provides full protection for the wearer's head.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/ussp_rd.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/ussp_rd.rsi
+  - type: PointLight
+    color: "#d6adff"
+  - type: PressureProtection
+    highPressureMultiplier: 0.60
+    lowPressureMultiplier: 1000
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTVeteranSecHardsuitHelm
+  noSpawn: true
+  name: veteran security hardsuit helmet
+  description: Safety helmet with the latest top-secret NT-HUD software.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/veteransechardsuithead.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/veteransechardsuithead.rsi
+  - type: PointLight
+    color: "#ffadad"
+  - type: PressureProtection
+    highPressureMultiplier: 0.45
+    lowPressureMultiplier: 10000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase # Corvax-Resprite
+  id: ADTClothingHeadHelmetHardsuitERTHeavy
+  noSpawn: true
+  name: ERT heavy helmet
+  description: ERT heavy helmet
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/heavyERT.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/heavyERT.rsi
+  - type: PointLight # Corvax-Resprite
+    color: blue
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTInquisitoryHead
+  noSpawn: false
+  name: inquisitor hardsuit helmet
+  description: You have been given power over destinies.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/inquisitoryhead.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/inquisitoryhead.rsi
+  - type: PointLight
+    color: white
+    radius: 7
+    energy: 3
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ADTKirasHead
+  noSpawn: true
+  name: Kirava Hoodsec
+  description: The steering wheel is imprinted in the visor of this helmet.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/kirava_hoodsec.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/kirava_hoodsec.rsi
+  - type: PointLight
+    color: white
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 10000
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTSpaceMarinneHead
+  noSpawn: true
+  name: berserker hardsuit helmet
+  description: You have been given power over destinies.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/marinnehead.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/marinnehead.rsi
+  - type: PointLight
+    color: red
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.7
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTPilotSuitHelm
+  noSpawn: true
+  name: Pilot Suit Helm
+  description: The steering wheel is imprinted in the visor of this helmet.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/pilotsuithelm.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/pilotsuithelm.rsi
+  - type: PointLight
+    color: white
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 10000
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ADTPilotSuitHelmSEC
+  noSpawn: true
+  name: Pilot Suit Helm Security
+  description: Looks like something that inspires order.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/pilotsuithelmsec.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/pilotsuithelmsec.rsi
+  - type: PointLight
+    color: red
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 10000
 
 
-  # - type: LightBulb
-  #   color: "#0000FF"
-  #   lightEnergy: 6
-  #   lightRadius: 15
-  #   lightSoftness: 0.9
-  #   BurningTemperature: 1000
-  #   PowerUse: 12
+- type: entity
+  parent: ClothingHeadHelmetHardsuitSyndieCommander
+  id: ADTClothingHeadHelmetHardsuitPioneerAgent
+  noSpawn: true
+  name: agent "Pioneer" hardsuit helmet
+  description: agent "Pioneer" hardsuit helmet
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Head/Hardsuits/pioneeragenthelmet.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Head/Hardsuits/pioneeragenthelmet.rsi
+  - type: PointLight # Corvax-Resprite
+    color: cyan
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
 
 # Blueshield
 - type: entity

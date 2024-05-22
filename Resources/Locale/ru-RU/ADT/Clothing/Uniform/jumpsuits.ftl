@@ -376,3 +376,6 @@ ent-ADTClothingUniformCroupier = костюм крупье
     .desc = Костюм самого главного по фишкам и картам.
 ent-ADTClothingUniformCroupierSkirt = юбка-костюм крупье
     .desc = {ent-ADTClothingUniformCroupier.desc}
+
+ent-ADTClothingUniformJumpskirtJanimaid = костюм горничной
+    .desc = Обновленный костюм горничной от НТ.

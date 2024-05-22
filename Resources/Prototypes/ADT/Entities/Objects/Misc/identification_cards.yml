@@ -163,3 +163,37 @@
     #     - key: enum.ChameleonUiKey.Key
     #       type: ChameleonBoundUserInterface
 
+- type: entity
+  parent: CentcomIDCard #SecurityIDCard
+  id: ADTSecurityCybIDCard
+  name: "security cyborg ID card"
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idsecurityofficer
+  - type: PresetIdCard
+    job: ADTSecurityCyborg
+  - type: Access
+    groups:
+    - AllAccessCentcom
+    tags:
+    - CentralCommand
+
+- type: entity
+  parent: IDCardStandard
+  id: TraderIDCard
+  name: TraderIDCard
+  description: TraderIDCard
+  components:
+    - type: Sprite
+      sprite: ADT/Objects/Misc/trader_id.rsi
+      layers:
+        - state: tsf
+        - state: idtrader_tsf
+    - type: IdCard
+      jobTitle: Торговец
+    - type: Access
+      tags:
+      - Trader
+      - External

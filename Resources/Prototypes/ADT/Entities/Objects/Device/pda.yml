@@ -106,3 +106,30 @@
   - type: Icon
     state: pda-criminalist
   - type: ForensicScanner
+
+- type: entity
+  parent: BasePDA
+  id: ADTSecurityCybPDA
+  name: security PDA
+  description: Red to hide the stains of passenger blood.
+  components:
+  #- type: Unremoveable
+  - type: Pda
+    id: ADTSecurityCybIDCard
+    state: pda-security
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+  - type: Icon
+    state: pda-security
+
+- type: entity
+  parent: BasePDA
+  id: TraderPDA
+  name: trader PDA
+  description: trader PDA
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Misc/trader_pda.rsi
+  - type: Pda
+    id: TraderIDCard
+    state: pda-tradertsf

@@ -33,11 +33,6 @@
     maxCharge: 3600
     startingCharge: 0
 
-
-#тэг для магазина лазгана
-- type: Tag
-  id: ADTLasgunPowerCell
-
 - type: entity
   name: lasgun power sell
   description: lasgun power sell
@@ -139,6 +134,6 @@
     tags:
       - ADTLasgunRevolverCell
   - type: Appearance
-
-- type: Tag
-  id: ADTLasgunRevolverCell
+  - type: ProjectileBatteryAmmoProvider
+    proto: ADTBulletLaserMK2
+    fireCost: 100

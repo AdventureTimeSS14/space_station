@@ -59,3 +59,45 @@
     contents:
       - id: ADTPatchPackFilled
         amount: 4
+
+- type: entity
+  id: CrateArmoryVector
+  name: vector crate (rubber)
+  parent: CrateWeaponSecure
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponSubMachineGunVectorRubber
+        amount: 2
+      - id: MagazineMagnumSubMachineGunRubber
+        amount: 6
+
+- type: cargoProduct
+  id: GravityGeneratorMini
+  icon:
+    sprite: Structures/Machines/gravity_generator_mini.rsi
+    state: on
+  product: GravityGeneratorMini
+  cost: 4000
+  category: cargoproduct-category-name-shuttle
+  group: market
+
+- type: cargoProduct
+  id: CargoGravityGenerator
+  icon:
+    sprite: Structures/Machines/gravity_generator.rsi
+    state: on
+  product: CrateEngineeringGravityGenerator
+  cost: 20000
+  category: cargoproduct-category-name-shuttle
+  group: market
+
+- type: cargoProduct
+  id: FunRingBox
+  icon:
+    sprite: ADT/KD/RingBox.rsi
+    state: box
+  product: RingBox
+  cost: 8000
+  category: cargoproduct-category-name-fun
+  group: market

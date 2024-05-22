@@ -344,3 +344,139 @@
     pryPowered: true
   - type: Fiber
     fiberMaterial: fibers-crusher
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsRingBlood
+  name: blood ring
+  description: Good ring.
+  components:
+  - type: Sprite
+    sprite: ADT/KD/RingBlood.rsi
+  - type: Clothing
+    sprite: ADT/KD/RingBlood.rsi
+  - type: Item
+    size: Tiny
+  - type: StaticPrice
+    price: 1000
+    
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsRingEmerald
+  name: emerald ring
+  description: Good ring.
+  components:
+  - type: Sprite
+    sprite: ADT/KD/RingEmerald.rsi
+  - type: Clothing
+    sprite: ADT/KD/RingEmerald.rsi
+  - type: Item
+    size: Tiny
+  - type: StaticPrice
+    price: 1000
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsRingPlazma
+  name: plazma ring
+  description: Good ring.
+  components:
+  - type: Sprite
+    sprite: ADT/KD/RingPlazma.rsi
+  - type: Clothing
+    sprite: ADT/KD/RingPlazma.rsi
+  - type: Item
+    size: Tiny
+  - type: StaticPrice
+    price: 1000
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsRingTurk
+  name: turk ring
+  description: Good ring.
+  components:
+  - type: Sprite
+    sprite: ADT/KD/RingTurk.rsi
+  - type: Clothing
+    sprite: ADT/KD/RingTurk.rsi
+  - type: Item
+    size: Tiny
+  - type: StaticPrice
+    price: 1000
+
+
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ADTClothingHandsGlovesRavenFriskis
+  suffix: Only Friskis
+  name: Raven gloves
+  description: No English
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/raven_groves.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/raven_groves.rsi
+    clothingVisuals:
+      gloves:
+      - state: equipped-HAND
+      - state: equipped-HAND-unshaded
+        shader: unshaded
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsSupremeCommanderGloves
+  name: supreme commander's gloves
+  description: These gloves decorated bluespace sewing cost as much as 10 similar station. These gloves are one of a kind.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/supreme-commander-gloves.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/supreme-commander-gloves.rsi
+  - type: Fiber
+    fiberMaterial: fibers-nanomachines
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsRingUrog
+  name: wedding ring of Urog-Djah
+  description: the ring is engraved with "Yuna"
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/ring_urog.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/ring_urog.rsi
+  - type: Item
+    size: Tiny
+  - type: StaticPrice
+    price: 1000
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsRingYuna
+  name: wedding ring of Yuna-Djah
+  description: the ring is engraved with "Urog"
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/ring_yuna.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/ring_yuna.rsi
+  - type: Item
+    size: Tiny
+  - type: StaticPrice
+    price: 1000
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsKivchikGloves
+  suffix: Kivchik
+  name: black gloves of retribution
+  description: 'Beautiful black gloves with a gold stripe and red inscription: "ALMD"'
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/kivchikset_gloves.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/kivchikset_gloves.rsi
+  - type: Fiber
+    fiberColor: fibers-black
