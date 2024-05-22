@@ -8,3 +8,47 @@
     sprite: ADT/Clothing/Eyes/Glasses/pink_glasses.rsi
   - type: Clothing
     sprite: ADT/Clothing/Eyes/Glasses/pink_glasses.rsi #спрайты от dion_clawed
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ADTClothingEyesSupremeCommanderGlass
+  name: supreme comannder's ultra giga man glasses
+  description: The probability of completing the mission was a zero percent. But it seems now the calculations have lost all meaning.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Eyes/Glasses/supreme-commander-glasses.rsi
+    state: icon
+  - type: Clothing
+    sprite: ADT/Clothing/Eyes/Glasses/supreme-commander-glasses.rsi
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 10
+  - type: PointLight
+    color: cyan
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ADTNeonTacticalGlasses
+  name: neon tactical glasses
+  description: Ordinary tactical glasses made of acid-green polycarbonate.
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Eyes/Glasses/neontactical.rsi
+    state: icon
+  - type: Clothing
+    sprite: ADT/Clothing/Eyes/Glasses/neontactical.rsi
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ADTServantOfEvilGlasses
+  name: welding glasses
+  description: welding glasses
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Eyes/Glasses/servant_of_evil.rsi
+    state: icon
+  - type: Clothing
+    sprite: ADT/Clothing/Eyes/Glasses/servant_of_evil.rsi

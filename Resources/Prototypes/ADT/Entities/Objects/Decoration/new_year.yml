@@ -1,3 +1,4 @@
+#Здесь не вижу смысла сортировки так как у визардов тут скудно и тоже не сильно категорично
 - type: entity
   parent: BaseSign
   id: NewYearDecorationBase
