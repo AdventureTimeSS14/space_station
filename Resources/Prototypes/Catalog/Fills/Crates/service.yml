@@ -87,7 +87,7 @@
     - id: ClothingNeckCloakVoid
     - id: RevolverCapGun
     - id: BarberScissors
-
+    - id: ADTClothingUniformJumpskirtJanimaid
 - type: entity
   id: CrateServiceCustomSmokable
   parent: CrateGenericSteel
