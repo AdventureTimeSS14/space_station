@@ -797,6 +797,18 @@
       visible: false
 
 - type: entity
+  parent: ClothingUniformSkirtBase
+  id: ADTClothingUniformJumpskirtJanimaid
+  name: janitorial maid uniform
+  description: For professionals, not the posers.
+  suffix: ADT
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/janimaid.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/janimaid.rsi
+
+- type: entity
   parent: [ ClothingUniformBase, BaseFoldable ]
   id: ADTClothingJumpskirtHopAlt
   name: head of personell's business suit
