@@ -81,91 +81,6 @@
   - type: Sprite
     sprite: ADT/Clothing/Back/heart_backpack.rsi
 
-#рюкзак следователя
-
-- type: entity
-  #noSpawn: true
-  parent: ClothingBackpackSecurity
-  id: ADTClothingBackpackInvestigatorFilled
-  components:
-  #- type: Storage
-  #  maxItemSize: Huge
-  #  maxTotalWeight: 0
-  #  maxSlots: 50 #By this ignore maxTotalWeight
-  - type: StorageFill
-    contents:
-      - id: BoxSurvivalSecurity
-      - id: Flash
-      - id: Pen
-        amount: 2
-      #- id: PaperOffice
-      #  amount: 20
-      - id: ADTInvestigatorBoxFolderBase
-        amount: 1
-      - id: ADTInvestigatorBoxFolderRed
-        amount: 2
-      - id: ADTInvestigatorBoxFolderBlue
-        amount: 1
-      - id: ADTBookInvestigator
-      - id: ADTRubberStampinvestigator
-      - id: SpaceCash500
-
-- type: entity
-  #noSpawn: true
-  parent: ClothingBackpackDuffelSecurity
-  id: ADTClothingBackpackDuffelInvestigatorFilled
-  components:
-  #- type: Storage
-  #  maxItemSize: Huge
-  #  maxTotalWeight: 0
-  #  maxSlots: 50 #By this ignore maxTotalWeight
-  - type: StorageFill
-    contents:
-      - id: BoxSurvivalSecurity
-      - id: Flash
-      - id: Pen
-        amount: 2
-      #- id: PaperOffice
-      #  amount: 20
-      - id: ADTInvestigatorBoxFolderBase
-        amount: 1
-      - id: ADTInvestigatorBoxFolderRed
-        amount: 2
-      - id: ADTInvestigatorBoxFolderBlue
-        amount: 1
-      - id: ADTBookInvestigator
-      - id: ADTRubberStampinvestigator
-      - id: SpaceCash500
-
-- type: entity
-  #noSpawn: true
-  parent: ClothingBackpackSatchelSecurity
-  id: ADTClothingBackpackSatchelInvestigatorFilled
-  components:
-  #- type: Storage
-  #  maxItemSize: Huge
-  #  maxTotalWeight: 0
-  #  maxSlots: 50 #By this ignore maxTotalWeight
-  - type: StorageFill
-    contents:
-      - id: BoxSurvivalSecurity
-      - id: Flash
-      - id: Pen
-        amount: 2
-      #- id: PaperOffice
-      #  amount: 20
-      #- id: MaterialCardboard1
-      #  amount: 2
-      - id: ADTInvestigatorBoxFolderBase
-        amount: 1
-      - id: ADTInvestigatorBoxFolderRed
-        amount: 2
-      - id: ADTInvestigatorBoxFolderBlue
-        amount: 1
-      - id: ADTBookInvestigator
-      - id: ADTRubberStampinvestigator
-      - id: SpaceCash500
-
 # Приколы Патологоанатома
 - type: entity
   parent: ClothingBackpackMedical
@@ -187,42 +102,6 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Back/pathologist_duffel.rsi
-
-- type: entity
-  noSpawn: true
-  parent: ADTClothingBackpackPathologist
-  id: ADTClothingBackpackPathologistFilled
-  components:
-  - type: StorageFill
-    contents:
-      - id: BoxSurvivalMedical
-      - id: BodyBag_Folded
-      - id: ADTFootTag
-      - id: SpaceCash500
-
-- type: entity
-  noSpawn: true
-  parent: ADTClothingBackpackSatchelPathologist
-  id: ADTClothingBackpackSatchelPathologistFilled
-  components:
-  - type: StorageFill
-    contents:
-      - id: BoxSurvivalMedical
-      - id: BodyBag_Folded
-      - id: ADTFootTag
-      - id: SpaceCash500
-
-- type: entity
-  noSpawn: true
-  parent: ADTClothingBackpackDuffelPathologist
-  id: ADTClothingBackpackDuffelPathologistFilled
-  components:
-  - type: StorageFill
-    contents:
-      - id: BoxSurvivalMedical
-      - id: BodyBag_Folded
-      - id: ADTFootTag
-      - id: SpaceCash500
 
 # медицинские штучки-брючки
 - type: entity
@@ -262,21 +141,7 @@
   - type: Sprite
     sprite: ADT/Clothing/Back/leatherlady_satchel.rsi
 
-- type: entity
-  parent: ClothingBackpackSatchelSecurity
-  id: ADTClothingBackpackSatchelLapkee
-  name: lapkee satchel
-  description: lapkee satchel
-  suffix: Personal, Lapkee
-  components:
-  - type: StorageFill
-    contents:
-      - id: BoxSurvivalSecurity
-      - id: Flash
-      - id: MagazinePistol
-      - id: ADTSpaceLaw
-  - type: Sprite
-    sprite: ADT/Clothing/Back/lapkee_satchel.rsi
+
 
 - type: entity
   parent: ClothingBackpack
@@ -350,168 +215,30 @@
     maxItemSize: Huge
 
 - type: entity
-  parent: ClothingBackpackERTSecurity
-  id: ClothingBackpackADTBlueShieldOfficerFilled
+  parent: ClothingBackpackSatchel
+  id: ADTClothingBackpackKivchikSatchel
+  suffix: Kivchik
+  name: satchel of retribution
+  description: A beautiful black bag with a gold clasp and red stripes.
   components:
-    - type: Storage
-      maxItemSize: Huge
-      grid:
-      - 0,0,9,5
-    - type: StorageFill
-      contents:
-        - id: Zipties
-          amount: 3
-        - id: ADTPowerCellLasgunRevolver
-          amount: 2
-        - id: WeaponDisabler
-        - id: Stunbaton
-        - id: BoxSurvivalSecurity
-        - id: BlueShieldsuit
-        - id: SpaceCash1000
-        - id: OxygenTankFilled
-    - type: Sprite
-      sprite: ADT/Clothing/Back/blueshield_backpack.rsi
-
-#СССП штуки 
-- type: entity
-  noSpawn: true
-  parent: ADTClothingBackpackOR40L
-  id: ADTClothingBackpackOR40L_OBS5Gear
-  components:
-    - type: StorageFill
-      contents:
-        - id: ADTWeaponRifleAK55
-        - id: MedkitCombatFilled
-        - id: OxygenTankFilled
-        - id: Zipties
-          amount: 2
-        - id: ADTMagazineUSSPAK74
-          amount: 4
-        - id: MagazineBoxRifleRubber
+  - type: Sprite
+    sprite: ADT/Clothing/Back/kivchikset_satchel.rsi
 
 - type: entity
-  noSpawn: true
-  parent: ADTClothingBackpackOR80L
-  id: ADTClothingBackpackOR80L_OBS7Gear
+  id: ADTRadioHandheldTSFBackpack
+  name: TSF backpack radio
+  description: A handy bacpack radio
+  parent: ADTRadioHandheldTSF
   components:
-    - type: StorageFill
-      contents:
-        - id: ADTWeaponSMGBizon
-        - id: MedkitCombatFilled
-        - id: JawsOfLife
-        - id: CombatMedipen
-        - id: DoubleEmergencyOxygenTankFilled
-        - id: Zipties
-          amount: 2
-        - id: ADTMagazineBizon
-          amount: 4
-        - id: MagazineBoxPistolRubber
-
-- type: entity
-  noSpawn: true
-  parent: ADTClothingBackpackOR40L
-  id: ADTClothingBackpackOR40L_PilotGear
-  components:
-    - type: StorageFill
-      contents:
-        - id: MedkitCombatFilled
-        - id: JawsOfLife
-        - id: CombatMedipen
-        - id: DoubleEmergencyOxygenTankFilled
-        - id: ADTMagazineSR2M
-          amount: 3
-        - id: MagazineBoxPistolRubber
-
-- type: entity
-  noSpawn: true
-  parent: ADTClothingBackpackOR80L
-  id: ADTClothingBackpackOR80L_SpetsnazGear
-  components:
-    - type: StorageFill
-      contents:
-        - id: ADTWeaponSMGSR3M
-        - id: MedkitCombatFilled
-        - id: JawsOfLife
-        - id: CombatMedipen
-          amount: 3
-        - id: OmnizineChemistryBottle
-          amount: 2
-        - id: EphedrineChemistryBottle
-          amount: 2
-        - id: ADTCombatHypo
-        - id: DoubleEmergencyOxygenTankFilled
-        - id: Zipties
-          amount: 3
-        - id: ADTMagazineSR3M
-          amount: 4
-        - id: MagazineBoxLightRifleRubber
-
-- type: entity
-  noSpawn: true
-  parent: ADTClothingBackpackOR80L
-  id: ADTClothingBackpackOR80L_SpetsnazLMGGear
-  components:
-    - type: StorageFill
-      contents:
-        - id: ADTWeaponLightMachineGunPKP60
-        - id: MedkitCombatFilled
-        - id: JawsOfLife
-        - id: CombatMedipen
-          amount: 2
-        - id: OmnizineChemistryBottle
-          amount: 2
-        - id: EphedrineChemistryBottle
-          amount: 2
-        - id: ADTCombatHypo
-        - id: DoubleEmergencyOxygenTankFilled
-        - id: Zipties
-          amount: 3
-        - id: ADTMagazineUSSPLMG
-          amount: 2
-
-
-- type: entity
-  noSpawn: true
-  parent: ADTClothingBackpackOR40L
-  id: ADTClothingBackpackOR40L_MedicGear
-  components:
-    - type: StorageFill
-      contents:
-        - id: ADTWeaponPistolPMM
-        - id: MedkitCombatFilled
-          amount: 2
-        - id: MedkitAdvancedFilled
-        - id: OxygenTankFilled
-        - id: ADTMagazinePistolPMM
-          amount: 2
-        - id: SyndiHypo
-        - id: OmnizineChemistryBottle
-          amount: 4     
-
-# Не совсем уверен что это,но пока это полежит тут
-- type: entity
-  id: ADTWardrobeKBSFilled
-  parent: WardrobeSecurity
-  name: USSP Wardrobe
-  description: "Cross the thin red line."
-  suffix: USSP
-  components:
-  - type: StorageFill
-    contents:
-      - id: ADTClothingRPSUSSP
-      - id: ADTClothingBackpackOR40L
-      - id: ADTClothingOuterHardsuitOBS5USSP
-      - id: MedkitCombatFilled
-      - id: ADTClothingMaskGasUSSP
-      - id: OxygenTankFilled
-      - id: NitrogenTankFilled
-      - id: ADTWeaponRifleAK55
-        prob: 0.5
-        orGroup: USSPInfantryWeapon
-      - id: ADTWeaponLightMachineGunPRK
-        prob: 0.25
-        orGroup: USSPInfantryWeapon
-      - id: ADTWeaponSMGBizon
-        prob: 0.25
-        orGroup: USSPInfantryWeapon
-
+  - type: Clothing
+    sprite: ADT/Objects/Device/tsf_radio_backpack.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Item
+    size: Ginormous
+  - type: Sprite
+    sprite: ADT/Objects/Device/tsf_radio_backpack.rsi
+    layers:
+    - state: icon
