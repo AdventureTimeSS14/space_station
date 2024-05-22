@@ -21,7 +21,7 @@
           collection: GlassBreak
       - !type:SpawnEntitiesBehavior
         spawn:
-          CrystalShardRed:
+          ShardCrystalRed:
             min: 0
             max: 2
 
@@ -48,7 +48,7 @@
     color: "#FF4020"
 
 - type: entity
-  id: CrystalShardRed
+  id: ShardCrystalRed
   parent: BaseCrystalShard
   components:
   - type: Sprite
