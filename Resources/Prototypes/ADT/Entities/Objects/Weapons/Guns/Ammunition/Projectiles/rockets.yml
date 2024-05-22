@@ -61,12 +61,6 @@
 
 #ракета для Шмеля
 
-- type: Tag
-  id: ADTCartridgeRocketSchmelTermobar
-
-- type: Tag
-  id: ADTCartridgeRocketSapogHEAT
-
 - type: entity
   id: ADTCartridgeRocketSchmelTermobar
   name: Schmel Termobar Rocket

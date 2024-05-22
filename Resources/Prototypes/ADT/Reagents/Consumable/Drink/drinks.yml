@@ -261,7 +261,6 @@
     sprite: Objects/Consumable/Drinks/chocolateglass.rsi
     state: icon
 
-
 - type: reagent
   id: ADTMulledWine
   name: reagent-name-mulled-wine
@@ -341,4 +340,3 @@
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
     state: hot_chocolate
-

@@ -1,8 +1,0 @@
-- type: entity
-  parent: ClothingNeckBase
-  id: ADTClothingNeckMantiesChaplain
-  name: MantiesChaplain
-  description: 
-  components:
-    - type: Sprite
-      sprite: ADT/Clothing/Neck/Cloaks/manties_chaplain.rsi

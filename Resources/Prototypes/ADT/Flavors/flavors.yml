@@ -240,3 +240,14 @@
   id: ADTHerringUnderFurcoat
   flavorType: Complex
   description: flavor-complex-herring
+
+- type: flavor
+  id: adtconsideredmilk
+  flavorType: Complex
+  description: flavor-complex-adtconsideredmilk
+
+#на вкус как.. Отсутствие сортировки
+- type: flavor
+  id: ADTmandarin
+  flavorType: Base
+  description: flavor-base-mandarin

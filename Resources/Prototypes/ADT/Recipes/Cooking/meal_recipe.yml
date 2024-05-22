@@ -308,3 +308,121 @@
     FoodSnackChocolateBar: 2
   reagents:
     CocoaPowder: 5
+    
+- type: microwaveMealRecipe
+  id: ADTFoodSawdustSoupRecipe
+  name: sawdust soup recipe
+  result: ADTFoodSoupSawdust
+  time: 15
+  reagents:
+    Water: 10
+    TableSalt: 10
+  solids:
+    FoodBowlBig: 1
+    MaterialWoodPlank1: 1
+
+- type: microwaveMealRecipe
+  id: ADTRecipePumpkinPie
+  name: pumpkin pie
+  result: ADTFoodPiePumpkin
+  time: 15
+  solids:
+    FoodDoughPie: 1
+    ADTFoodPumpkin: 1
+    FoodPlateTin: 1
+
+- type: microwaveMealRecipe
+  id: ADTRecipePumpkinSoup
+  name: pumpkin soup recipe
+  result: ADTFoodSoupPumpkin
+  time: 10
+  reagents:
+    Water: 5
+  solids:
+    FoodBowlBig: 1
+    ADTFoodPumkinSlice: 2
+    FoodCarrot: 1
+    FoodPotato: 1
+
+#рецепты
+
+- type: microwaveMealRecipe
+  id: ADTFoodOlivierSaladRecipe
+  name: olivier salad recipe
+  result: ADTFoodOlivierSalad
+  time: 15
+  reagents:
+    Mayo: 5
+  solids:
+    FoodBowlBig: 1
+    FoodPotato: 2
+    FoodMeat: 1
+    FoodCarrot: 1
+    FoodEgg: 1
+
+- type: microwaveMealRecipe
+  id: ADTFoodJelliedMeatRecipe
+  name: jellied meat recipe
+  result: ADTFoodJelliedMeat
+  time: 20
+  reagents:
+    Water: 15
+    UncookedAnimalProteins: 9
+    Fat: 9
+  solids:
+    FoodMeat: 1
+    FoodPlateSmall: 1
+
+- type: microwaveMealRecipe
+  id: ADTFoodHerringUnderFurcoatRecipe
+  name: herring under furcoat recipe
+  result: ADTFoodHerringUnderFurcoat
+  time: 15
+  reagents:
+    Mayo: 5
+  solids:
+    FoodCarrot: 2
+    FoodEgg: 1
+    FoodMeatFish: 1
+    FoodPlateSmall: 1
+
+- type: microwaveMealRecipe
+  id: ADTFoodMeatHamRecipe
+  name: ham with mead recipe
+  result: ADTFoodMeatHam
+  time: 25
+  reagents:
+    Blackpepper: 5
+    TableSalt: 5
+  solids:
+    FoodMeat: 2
+    FoodPlate: 1
+
+- type: microwaveMealRecipe
+  id: ADTFoodCakePuddingRecipe
+  name: puding recipe
+  result: ADTFoodCakePudding
+  time: 10
+  reagents:
+    Water: 15
+    Milk: 10
+    Flour: 10
+    Sugar: 15
+    Egg: 6
+  solids:
+    FoodPlateSmall: 1
+
+- type: microwaveMealRecipe
+  id: ADTFoodCakePuddingChristmasRecipe
+  name: christmas puding recipe
+  result: ADTFoodCakePuddingChristmas
+  time: 10
+  reagents:
+    Water: 15
+    Milk: 10
+    Flour: 10
+    Sugar: 15
+    Egg: 6
+  solids:
+    FoodPlateSmall: 1
+    ADTFoodSnackCandyStick: 2
