@@ -64,17 +64,7 @@
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/glass_lemon.rsi
     state: icon
-
-#Соки
-- type: reagent
-  id: ADTJuicePumpkin
-  name: reagent-name-juice-pumpkin
-  parent: BaseDrink
-  desc: reagent-desc-juice-pumpkin
-  physicalDesc: reagent-physical-desc-sweet
-  flavor: adt_pumpkin
-  color: "#e08f0a"
-
+    
 #Коктейли
 - type: reagent
   id: ADTCocoaDrink

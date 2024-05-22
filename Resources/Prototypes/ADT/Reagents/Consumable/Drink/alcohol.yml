@@ -1,3 +1,5 @@
+#В общем. 
+#С начала идёт простой алкоголь, затем напитки. Напитки, предназначенные к праздникам, в конце.
 - type: reagent
   id: ADTVodkaAntivirus
   name: vodka-antivirus-name
@@ -38,8 +40,28 @@
         reagent: Ethanol
         amount: 0.05
 
-# Коктели кекса 
+- type: reagent
+  id: ADTAppleLiqueur
+  name: apple-liqueur-name
+  parent: ADTSugarKnight
+  desc: apple-liqueur-desc
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: ADTAppleLiqueurFlavor
+  color: "#47941b"
+  recognizable: true
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/apple_liqueur_glass.rsi
+    state: icon_empty
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.05
 
+#Коктейли
 - type: reagent
   id: ADTSugarKnight
   name: sugar-knight-name
@@ -248,27 +270,6 @@
         amount: 0.2
 
 - type: reagent
-  id: ADTAppleLiqueur
-  name: apple-liqueur-name
-  parent: ADTSugarKnight
-  desc: apple-liqueur-desc
-  physicalDesc: reagent-physical-desc-cloudy
-  flavor: ADTAppleLiqueurFlavor
-  color: "#47941b"
-  recognizable: true
-  metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/apple_liqueur_glass.rsi
-    state: icon_empty
-  metabolisms:
-    Drink:
-      effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.05
-
-- type: reagent
   id: ADTAppleMartini
   name: apple-martini-name
   parent: ADTSugarKnight
@@ -411,6 +412,16 @@
         amount: 0.2
 
 
+#Новый год
+- type: reagent
+  id: ADTChampagneMandarin
+  name: reagent-name-champagne-mandarin
+  parent: Champagne
+  desc: reagent-desc-champagne-mandarin
+  recognizable: true
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: champagne_mandarin
 
 - type: reagent
   id: ADTMulledWineCold
@@ -436,16 +447,7 @@
     sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
     state: sbiten_cinnamon_lemon
 
-- type: reagent
-  id: ADTChampagneMandarin
-  name: reagent-name-champagne-mandarin
-  parent: Champagne
-  desc: reagent-desc-champagne-mandarin
-  recognizable: true
-  metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
-    state: champagne_mandarin
-
+#Октоберфеееест
 - type: reagent
   id: ADTGoldenAle
   name: golden-ale-name
