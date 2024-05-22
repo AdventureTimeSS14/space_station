@@ -1,5 +1,23 @@
 - type: entity
   parent: BaseMobFlesh
+  id: ADTBaseMobAbomination
+  name: abomination
+  description: A shambling mass of flesh and abomination, animated through anomalous energy.
+  abstract: true
+  components:
+  - type: StatusEffects
+    allowed:
+      - Stun
+      - KnockedDown
+      - SlowedDown
+      - Stutter
+      - Electrocution
+      - TemporaryBlindness
+      - Pacified
+      - StaminaModifier
+
+- type: entity
+  parent: ADTBaseMobAbomination
   id: ADTMobDistorted
   name: distorted
   description: distorted
@@ -39,7 +57,7 @@
       100: Dead
 
 - type: entity
-  parent: BaseMobFlesh
+  parent: ADTBaseMobAbomination
   id: ADTMobEcho
   name: echo
   description: echo
@@ -81,7 +99,7 @@
     jumpAction: CompActionJumpAbomination
 
 - type: entity
-  parent: BaseMobFlesh
+  parent: ADTBaseMobAbomination
   id: ADTMobGrant
   name: grant
   description: grant
@@ -122,7 +140,7 @@
       200: Dead
 
 - type: entity
-  parent: BaseMobFlesh
+  parent: ADTBaseMobAbomination
   id: ADTMobHunter
   name: hunter
   description: hunter
@@ -164,7 +182,7 @@
     jumpAction: CompActionJumpAbomination
 
 - type: entity
-  parent: BaseMobFlesh
+  parent: ADTBaseMobAbomination
   id: ADTMobSoldier
   name: soldier
   description: soldier
@@ -209,7 +227,7 @@
     prototype: BulletAcid
 
 - type: entity
-  parent: BaseMobFlesh
+  parent: ADTBaseMobAbomination
   id: ADTMobWrecker
   name: wrecker
   description: wrecker
@@ -252,120 +270,3 @@
   - type: ProjectileAct
     projAction: CompActionShootAbomination
     prototype: BulletAcid
-
-- type: damageModifierSet
-  id: distorted
-  coefficients:
-    Blunt: 1
-    Piercing: 1
-    Slash: 1.0
-    Cold: 0.5
-    Heat: 0.5
-    Poison: 0.5
-    Bloodloss: 1
-
-- type: damageModifierSet
-  id: echo
-  coefficients:
-    Blunt: 1
-    Piercing: 1
-    Slash: 0.4
-    Cold: 0.6
-    Heat: 0.6
-    Poison: 1.0
-    Bloodloss: 1
-
-- type: damageModifierSet
-  id: grant
-  coefficients:
-    Blunt: 0.5
-    Piercing: 0.7
-    Slash: 0.5
-    Cold: 0.7
-    Heat: 0.7
-    Poison: 0.7
-    Bloodloss: 1
-
-- type: damageModifierSet
-  id: hunter
-  coefficients:
-    Blunt: 0.45
-    Piercing: 0.6
-    Slash: 0.45
-    Cold: 0.6
-    Heat: 0.45
-    Poison: 0.6
-    Bloodloss: 1
-
-- type: damageModifierSet
-  id: soldier
-  coefficients:
-    Blunt: 0.8
-    Piercing: 0.8
-    Slash: 0.8
-    Cold: 0.8
-    Heat: 0.8
-    Poison: 0.8
-    Bloodloss: 1
-
-- type: damageModifierSet
-  id: wrecker
-  coefficients:
-    Blunt: 0.4
-    Piercing: 0.55
-    Slash: 0.4
-    Cold: 0.55
-    Heat: 0.65
-    Poison: 0.55
-    Bloodloss: 1
-
-- type: entity
-  id: CompActionShootAbomination
-  name: action-shoot
-  description: action-shoot-desc
-  noSpawn: true
-  components:
-  - type: WorldTargetAction
-    useDelay: 10
-    range: 16 # default examine-range.
-    # ^ should probably add better validation that the clicked location is on the users screen somewhere,
-    itemIconStyle: BigAction
-    checkCanAccess: false
-    repeat: true
-    icon:
-      sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
-      state: icon
-    event: !type:CompProjectileActionEvent
-
-- type: entity
-  id: CompActionHealAbomination
-  name: action-heal
-  description: action-heal-desc
-  noSpawn: true
-  components:
-  - type: InstantAction
-    icon:
-      sprite: Interface/Actions/actions_ling.rsi
-      state: fleshmend
-    itemIconStyle: BigAction
-    checkCanInteract: false
-    event: !type:CompHealActionEvent
-    useDelay: 120
-
-- type: entity
-  id: CompActionJumpAbomination
-  name: action-jump
-  description: action-jump-desc
-  noSpawn: true
-  components:
-  - type: WorldTargetAction
-    useDelay: 35
-    range: 16 # default examine-range.
-    # ^ should probably add better validation that the clicked location is on the users screen somewhere,
-    itemIconStyle: BigAction
-    checkCanAccess: false
-    repeat: true
-    icon:
-      sprite: Clothing/Shoes/Boots/combatboots.rsi
-      state: icon
-    event: !type:CompJumpActionEvent
