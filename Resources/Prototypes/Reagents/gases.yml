@@ -127,9 +127,11 @@
             Blunt: -0.015
             Slash: -0.015
             Piercing: -0.015
-            Brute: -0.015
-            Burn: -0.015
+            # Brute: -0.015
+            # Burn: -0.015
             Heat: -0.015
+            Shock: -0.015
+            Cold: -0.015
             Poison: -0.012
       - !type:GenericStatusEffect
         conditions:

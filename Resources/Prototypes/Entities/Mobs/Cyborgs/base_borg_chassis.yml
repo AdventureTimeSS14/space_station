@@ -233,6 +233,10 @@
   id: BaseBorgTransponder
   components:
   - type: BorgTransponder
+    sprite:
+      sprite: Mobs/Silicon/chassis.rsi
+      state: robot
+    name: cyborg
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: CyborgControl
