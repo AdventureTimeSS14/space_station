@@ -61,7 +61,6 @@
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
-  - type: ShowSecurityIcons
   - type: Tag
     tags:
     - HudSecurity
@@ -260,7 +259,6 @@
   - type: ShowHealthBars
     damageContainers:
     - Biological
-  - type: ShowSecurityIcons
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5

@@ -19,8 +19,8 @@
     solution: ammo
   - type: DrainableSolution
     solution: ammo
-  - type: SolutionInjectOnCollide
-    transferAmount: 7.5
-    blockSlots: NONE #tranquillizer darts shouldn't be blocked by a mask
+  # - type: SolutionInjectOnCollide
+  #   transferAmount: 7.5
+  #   blockSlots: NONE #tranquillizer darts shouldn't be blocked by a mask
   - type: InjectableSolution
     solution: ammo

@@ -2,6 +2,7 @@
 
 - type: emote
   id: VulpHeckaet
+  name: emote-vulpHeckaet
   category: Vocal
   chatMessages: [хекает]
   chatTriggers:
@@ -14,6 +15,7 @@
 
 - type: emote
   id: VulpHowl
+  name: emote-vulpHowl
   category: Vocal
   chatMessages: [воет]
   chatTriggers:
@@ -23,6 +25,7 @@
 
 - type: emote
   id: VulpWhine
+  name: emote-vulpWhine
   category: Vocal
   chatMessages: [скулит]
   chatTriggers:
@@ -35,6 +38,7 @@
 
 - type: emote
   id: VulpBark
+  name: emote-vulpBark
   category: Vocal
   chatMessages: [лает]
   chatTriggers:

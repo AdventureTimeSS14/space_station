@@ -54,7 +54,7 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
     {
         base.Initialize();
 
-        SubscribeLocalEvent<RoundStartAttemptEvent>(OnStartAttempt);
+        //SubscribeLocalEvent<RoundStartAttemptEvent>(OnStartAttempt); // TODO-MODERN: Переписать RuleSystem
         //SubscribeLocalEvent<RulePlayerJobsAssignedEvent>(OnPlayersSpawned); // TODO-MODERN: Переписать RuleSystem
         SubscribeLocalEvent<PlayerSpawnCompleteEvent>(HandleLatejoin);
 

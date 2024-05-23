@@ -967,49 +967,49 @@
      Steel: 100
      Glass: 500
 
-- type: latheRecipe
-  id: ShuttleGunSvalinnMachineGunCircuitboard
-  result: ShuttleGunSvalinnMachineGunCircuitboard
-  completetime: 6
-  materials:
-     Steel: 100
+# - type: latheRecipe
+#   id: ShuttleGunSvalinnMachineGunCircuitboard
+#   result: ShuttleGunSvalinnMachineGunCircuitboard
+#   completetime: 6
+#   materials:
+#      Steel: 100
 
-     Glass: 500
+#      Glass: 500
 
-- type: latheRecipe
-  id: ShuttleGunPerforatorCircuitboard
-  result: ShuttleGunPerforatorCircuitboard
-  completetime: 10
-  materials:
-     Steel: 100
-     Glass: 500
-     Gold: 100
+# - type: latheRecipe
+#   id: ShuttleGunPerforatorCircuitboard
+#   result: ShuttleGunPerforatorCircuitboard
+#   completetime: 10
+#   materials:
+#      Steel: 100
+#      Glass: 500
+#      Gold: 100
 
-- type: latheRecipe
-  id: ShuttleGunKineticCircuitboard
-  result: ShuttleGunKineticCircuitboard
-  completetime: 6
-  materials:
-     Steel: 100
-     Glass: 500
+# - type: latheRecipe
+#   id: ShuttleGunKineticCircuitboard
+#   result: ShuttleGunKineticCircuitboard
+#   completetime: 6
+#   materials:
+#      Steel: 100
+#      Glass: 500
 
-- type: latheRecipe
-  id: ShuttleGunFriendshipCircuitboard
-  result: ShuttleGunFriendshipCircuitboard
-  completetime: 8
-  materials:
-     Steel: 100
-     Glass: 500
-     Gold: 50
+# - type: latheRecipe
+#   id: ShuttleGunFriendshipCircuitboard
+#   result: ShuttleGunFriendshipCircuitboard
+#   completetime: 8
+#   materials:
+#      Steel: 100
+#      Glass: 500
+#      Gold: 50
 
-- type: latheRecipe
-  id: ShuttleGunDusterCircuitboard
-  result: ShuttleGunDusterCircuitboard
-  completetime: 12
-  materials:
-     Steel: 100
-     Glass: 500
-     Gold: 100
+# - type: latheRecipe
+#   id: ShuttleGunDusterCircuitboard
+#   result: ShuttleGunDusterCircuitboard
+#   completetime: 12
+#   materials:
+#      Steel: 100
+#      Glass: 500
+#      Gold: 100
 
 - type: latheRecipe
   id: ReagentGrinderIndustrialMachineCircuitboard

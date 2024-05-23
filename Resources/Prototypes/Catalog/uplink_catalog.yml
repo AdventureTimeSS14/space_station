@@ -117,15 +117,15 @@
       tags:
       - NukeOpsUplink
 
-- type: listing
-  id: UplinkDisposableTurret
-  name: uplink-disposable-turret-name
-  description: uplink-disposable-turret-desc
-  productEntity: ToolboxElectricalTurretFilled
-  cost:
-    Telecrystal: 8
-  categories:
-  - UplinkWeaponry
+# - type: listing
+#   id: UplinkDisposableTurret
+#   name: uplink-disposable-turret-name
+#   description: uplink-disposable-turret-desc
+#   productEntity: ToolboxElectricalTurretFilled
+#   cost:
+#     Telecrystal: 8
+#   categories:
+#   - UplinkWeaponry
 
 - type: listing
   id: UplinkSniperBundle
@@ -973,16 +973,16 @@
         tags:
           - NukeOpsUplink
 
-- type: listing
-  id: UplinkBinaryTranslatorKey
-  name: uplink-binary-translator-key-name
-  description: uplink-binary-translator-key-desc
-  icon: { sprite: /Textures/Objects/Devices/encryption_keys.rsi, state: rd_label }
-  productEntity: EncryptionKeyBinary
-  cost:
-    Telecrystal: 1
-  categories:
-  - UplinkDisruption
+# - type: listing
+#   id: UplinkBinaryTranslatorKey
+#   name: uplink-binary-translator-key-name
+#   description: uplink-binary-translator-key-desc
+#   icon: { sprite: /Textures/Objects/Devices/encryption_keys.rsi, state: rd_label }
+#   productEntity: EncryptionKeyBinary
+#   cost:
+#     Telecrystal: 1
+#   categories:
+#   - UplinkDisruption
 
 - type: listing
   id: UplinkVoiceMask

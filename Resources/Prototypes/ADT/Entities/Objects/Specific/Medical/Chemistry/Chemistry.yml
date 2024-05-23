@@ -60,8 +60,8 @@
     canChangeTransferAmount: true
   - type: UserInterface
     interfaces:
-    - key: enum.TransferAmountUiKey.Key
-      type: TransferAmountBoundUserInterface
+      enum.TransferAmountUiKey.Key:
+        type: TransferAmountBoundUserInterface
   - type: Item
     size: Tiny
     sprite: ADT/Objects/Specific/Medical/Chemistry/plastic-bottle.rsi
@@ -234,8 +234,8 @@
     - Trash
   - type: UserInterface
     interfaces:
-    - key: enum.TransferAmountUiKey.Key
-      type: TransferAmountBoundUserInterface
+      enum.TransferAmountUiKey.Key:
+        type: TransferAmountBoundUserInterface
 
 - type: entity
   name: reagent analyzer
@@ -259,8 +259,8 @@
     key: enum.ReagentAnalyzerUiKey.Key
   - type: UserInterface
     interfaces:
-    - key: enum.ReagentAnalyzerUiKey.Key
-      type: ReagentAnalyzerBoundUserInterface
+      enum.ReagentAnalyzerUiKey.Key:
+        type: ReagentAnalyzerBoundUserInterface
   - type: ReagentAnalyzer
   - type: ItemSlots
     slots:
@@ -305,6 +305,7 @@
   - type: ExaminableSolution
     solution: hypospray
   - type: Hypospray
+    onlyAffectsMobs: false
     transferAmount: 30
     
 - type: entity
@@ -328,6 +329,7 @@
   - type: ExaminableSolution
     solution: hypospray
   - type: Hypospray
+    onlyAffectsMobs: false
   - type: UseDelay
     delay: 1.0
 
@@ -352,6 +354,7 @@
   - type: ExaminableSolution
     solution: hypospray
   - type: Hypospray
+    onlyAffectsMobs: false
   - type: UseDelay
     delay: 0
   - type: StaticPrice
@@ -386,6 +389,7 @@
   - type: ExaminableSolution
     solution: hypospray
   - type: Hypospray
+    onlyAffectsMobs: false
   - type: UseDelay
     delay: 0.5
 

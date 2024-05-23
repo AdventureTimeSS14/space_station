@@ -9,18 +9,18 @@
 
 # actions
 
-- type: entity
-  id: ActionOpenEmotes
-  name: action-name-emotes
-  description: action-description-emotes
-  noSpawn: true
-  components:
-  - type: InstantAction
-    icon: Interface/Actions/emotes.png
-    event: !type:OpenEmotesActionEvent
-    #event: !type:ScreamActionEvent
-    checkCanInteract: false
-    priority: -98
+# - type: entity # modern-emotepanel removed
+#   id: ActionOpenEmotes
+#   name: action-name-emotes
+#   description: action-description-emotes
+#   noSpawn: true
+#   components:
+#   - type: InstantAction
+#     icon: Interface/Actions/emotes.png
+#     event: !type:OpenEmotesActionEvent
+#     #event: !type:ScreamActionEvent
+#     checkCanInteract: false
+#     priority: -98
 
 - type: entity
   id: ActionScream

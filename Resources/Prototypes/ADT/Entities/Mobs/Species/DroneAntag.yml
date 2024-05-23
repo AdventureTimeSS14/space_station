@@ -341,8 +341,8 @@
     doAfterDelay: 5
   - type: UserInterface
     interfaces:
-    - key: enum.StrippingUiKey.Key
-      type: StrippableBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
   - type: Inventory
     templateId: DroneAntagInventory
 
@@ -493,8 +493,8 @@
     doAfterDelay: 5
   - type: UserInterface
     interfaces:
-    - key: enum.StrippingUiKey.Key
-      type: StrippableBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
   - type: Inventory
     templateId: DroneAntagInventory
 
@@ -647,8 +647,8 @@
     doAfterDelay: 5
   - type: UserInterface
     interfaces:
-    - key: enum.StrippingUiKey.Key
-      type: StrippableBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
   - type: Inventory
     templateId: DroneAntagInventory
 

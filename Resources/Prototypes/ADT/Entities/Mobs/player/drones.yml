@@ -30,8 +30,8 @@
   - type: Strippable
   - type: UserInterface
     interfaces:
-    - key: enum.StrippingUiKey.Key
-      type: StrippableBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
   #- type: GhostTakeoverAvailable
   #  makeSentient: true
   #  name: Maintenance Drone
@@ -153,8 +153,8 @@
   - type: Strippable
   - type: UserInterface
     interfaces:
-    - key: enum.StrippingUiKey.Key
-      type: StrippableBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
   #- type: GhostTakeoverAvailable
   #  makeSentient: true
   #  name: Maintenance Drone
@@ -273,8 +273,8 @@
   - type: Strippable
   - type: UserInterface
     interfaces:
-    - key: enum.StrippingUiKey.Key
-      type: StrippableBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
   - type: Body
     prototype: foodDistributorBots
   - type: Inventory
@@ -407,8 +407,8 @@
   - type: Strippable
   - type: UserInterface
     interfaces:
-    - key: enum.StrippingUiKey.Key
-      type: StrippableBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
   #- type: GhostTakeoverAvailable
   #  makeSentient: true
   #  name: Maintenance Drone

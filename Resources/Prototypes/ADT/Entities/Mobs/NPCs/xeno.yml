@@ -47,8 +47,8 @@
   - type: Strippable
   - type: UserInterface
     interfaces:
-      - key: enum.StrippingUiKey.Key
-        type: StrippableBoundUserInterface
+        enum.StrippingUiKey.Key:
+          type: StrippableBoundUserInterface
   - type: Damageable 
     damageModifierSet: ADTMobXenoBritshSet  # ЗАдаёт модификаторы защиты от урона
   - type: Hands

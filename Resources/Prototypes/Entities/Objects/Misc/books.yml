@@ -462,21 +462,33 @@
   suffix: random visual, random story
   components:
   - type: PaperRandomStory
-    template: GenericStory
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-        - state: book2
-    - type: MeleeWeapon
-      wideAnimationRotation: 180
-      damage:
-        types:
-          Blunt: 6
-    - type: Paper
-      content: book-text-escalation
-    - type: Construction
-      graph: SecretBook
-      node: startescalation
+    storySegments:
+    - "This is a "
+    - book_genre
+    - " about a "
+    - book_character_trait
+    - " "
+    - book_character
+    - " and "
+    - book_character_trait
+    - " "
+    - book_character
+    - ". Due to "
+    - book_event
+    - ", they "
+    - book_action_trait
+    - " "
+    - book_action
+    - " "
+    - book_character
+    - " "
+    - book_location
+    - ". \n\n"
+    - book_story_element
+    - " is "
+    - book_story_element_trait
+    - "."
+    storySeparator: ""
 
 
 - type: entity

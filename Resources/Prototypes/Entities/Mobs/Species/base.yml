@@ -210,7 +210,7 @@
         type: HumanoidMarkingModifierBoundUserInterface
       enum.StrippingUiKey.Key:
         type: StrippableBoundUserInterface
-      - key: enum.StoreUiKey.Key
+      enum.StoreUiKey.Key:
         type: StoreBoundUserInterface
   - type: Puller
   - type: Speech
@@ -223,7 +223,6 @@
       Unsexed: MaleHuman
   - type: Emoting
   - type: EmoteAnimation
-  - type: EmotePanel
   - type: BodyEmotes
     soundsId: GeneralBodyEmotes
   - type: Grammar

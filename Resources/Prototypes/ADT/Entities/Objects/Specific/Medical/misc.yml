@@ -57,8 +57,8 @@
     closeOnHandDeselect: false
   - type: UserInterface
     interfaces:
-    - key: enum.PaperUiKey.Key
-      type: PaperBoundUserInterface
+      enum.PaperUiKey.Key:
+        type: PaperBoundUserInterface
   - type: Item
     size: Tiny
   - type: Tag

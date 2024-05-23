@@ -60,7 +60,7 @@
     resistance: 2
   - type: SoundOnGather
   - type: Gatherable
-    whitelist:
+    toolWhitelist:
       tags:
         - Pickaxe
   - type: OreVein

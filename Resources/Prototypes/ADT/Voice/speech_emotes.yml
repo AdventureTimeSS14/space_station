@@ -1,5 +1,6 @@
 - type: emote # эмоция work out
   id: WorkOut
+  name: emote-workOut
   chatMessages: ["качается"]
   chatTriggers:
     - works out
@@ -9,6 +10,7 @@
 
 - type: emote
   id: Laugh-apathy
+  name: emote-laugh-apathy
   category: Vocal
   chatMessages: [выдавливает из себя смех] 
   chatTriggers:
@@ -16,6 +18,7 @@
 
 - type: emote
   id: Scream-apathy
+  name: emote-scream-apathy
   category: Vocal
   chatMessages: [наигранно кричит!] 
   chatTriggers:
@@ -23,6 +26,7 @@
 
 - type: emote
   id: Sigh-apathy
+  name: emote-sigh-apathy
   category: Vocal
   chatMessages: [театрально вздыхает] 
   chatTriggers:
@@ -30,6 +34,7 @@
 
 - type: emote
   id: Crying-apathy
+  name: emote-crying-apathy
   category: Vocal
   chatMessages: [фальшиво плачет] 
   chatTriggers:
@@ -103,6 +108,7 @@
 
 - type: emote
   id: SynthYes
+  name: emote-synthYes
   category: Vocal
   chatMessages: [утвердительно пищит]
   chatTriggers:
@@ -117,6 +123,7 @@
 
 - type: emote
   id: SynthNo
+  name: emote-synthNo
   category: Vocal
   chatMessages: [отрицательно пищит]
   chatTriggers:
@@ -130,15 +137,8 @@
     - не согласен.
 
 - type: emote
-  id: Ping
-  category: Vocal
-  chatMessages: [звенит]
-  chatTriggers:
-    - звенит
-    - звенит.
-
-- type: emote
   id: SighBuzz
+  name: emote-synthNo
   category: Vocal
   chatMessages: [раздражённо жужжит]
   chatTriggers:
@@ -150,6 +150,7 @@
 ## vocal emotes
 - type: emote
   id: Hiss
+  name: emote-hiss
   category: Vocal
   chatMessages: [шипит]
   chatTriggers:
@@ -159,6 +160,7 @@
 
 - type: emote
   id: Meow
+  name: emote-meow
   category: Vocal
   chatMessages: [мяукает]
   chatTriggers:
@@ -175,6 +177,7 @@
 
 - type: emote
   id: Mew
+  name: emote-mew
   category: Vocal
   chatMessages: [мякает]
   chatTriggers:
@@ -191,6 +194,7 @@
 
 - type: emote
   id: Growl
+  name: emote-growl
   category: Vocal
   chatMessages: [growls]
   chatTriggers:
@@ -205,6 +209,7 @@
 
 - type: emote
   id: Purr
+  name: emote-purr
   category: Vocal
   chatMessages: [мурчит]
   chatTriggers:

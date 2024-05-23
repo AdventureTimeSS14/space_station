@@ -207,7 +207,6 @@
   - type: Clothing
     sprite: ADT/Clothing/Mask/chronosvisor.rsi
   - type: BreathMask
-  - type: ShowSecurityIcons
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5

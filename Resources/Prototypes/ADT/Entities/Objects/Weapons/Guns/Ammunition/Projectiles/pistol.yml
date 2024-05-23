@@ -20,18 +20,18 @@
       types:
         Blunt: 1
 
-- type: entity
-  id: Bullet357Rubber
-  name: bullet (.357 magnum rubber)
-  parent: BaseBulletRubber
-  noSpawn: true
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Blunt: 6
-  - type: StaminaDamageOnCollide
-    damage: 50 # 2 hits to stun cuz revolver on 357
+# - type: entity
+#   id: Bullet357Rubber
+#   name: bullet (.357 magnum rubber)
+#   parent: BaseBulletRubber
+#   noSpawn: true
+#   components:
+#   - type: Projectile
+#     damage:
+#       types:
+#         Blunt: 6
+#   - type: StaminaDamageOnCollide
+#     damage: 50 # 2 hits to stun cuz revolver on 357
 
 - type: entity
   id: Bullet357Incendiary

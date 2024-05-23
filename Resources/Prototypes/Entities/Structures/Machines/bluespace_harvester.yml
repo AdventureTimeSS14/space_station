@@ -55,8 +55,8 @@
     key: enum.BluespaceHarvesterUiKey.Key
   - type: UserInterface
     interfaces:
-    - key: enum.BluespaceHarvesterUiKey.Key
-      type: BluespaceHarvesterBoundUserInterface
+      enum.BluespaceHarvesterUiKey.Key:
+        type: BluespaceHarvesterBoundUserInterface
   - type: Machine
     board: MachineBluespaceHarvesterCircuitboard
   - type: NodeContainer

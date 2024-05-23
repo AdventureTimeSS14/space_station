@@ -1,7 +1,8 @@
-﻿- type: loadout
-  id: ClothingHeadHatFlowerCrownLoadout
-  entity: ClothingHeadHatFlowerCrown
+﻿# Corvax loadouts removed
+# - type: loadout
+#   id: ClothingHeadHatFlowerCrownLoadout
+#   entity: ClothingHeadHatFlowerCrown
 
-- type: loadout
-  id: ClothingHeadHatHairflowerLoadout
-  entity: ClothingHeadHatHairflower
+# - type: loadout
+#   id: ClothingHeadHatHairflowerLoadout
+#   entity: ClothingHeadHatHairflower

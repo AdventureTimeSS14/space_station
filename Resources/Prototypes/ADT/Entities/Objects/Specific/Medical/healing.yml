@@ -154,6 +154,7 @@
   - type: DeleteOnSolutionEmpty
     solution: pen
   - type: Hypospray
+    onlyAffectsMobs: false
     solutionName: pen
     transferAmount: 20
     injectSound: /Audio/Items/Medical/brutepack_end.ogg

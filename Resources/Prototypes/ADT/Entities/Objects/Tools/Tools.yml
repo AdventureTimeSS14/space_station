@@ -15,10 +15,10 @@
       - suitStorage
       - Pocket
 
-- type: loadout
-  id: MiunGamLoadout
-  entity: ADTObjectsToolsMuinKnife
-  sponsorOnly: true
+# - type: loadout
+#   id: MiunGamLoadout
+#   entity: ADTObjectsToolsMuinKnife
+#   sponsorOnly: true
 
 #- type: entity
 #  name: golden candlestick
@@ -194,7 +194,7 @@
       size: Normal
       heldPrefix: gold
 
-- type: loadout
-  id: UrogDjaxLoadout
-  entity: UrogCrowbarGold
-  sponsorOnly: true
+# - type: loadout // Corvax loadouts removed
+#   id: UrogDjaxLoadout
+#   entity: UrogCrowbarGold
+#   sponsorOnly: true

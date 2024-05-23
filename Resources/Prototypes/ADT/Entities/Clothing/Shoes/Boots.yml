@@ -54,8 +54,8 @@
     key: enum.SharedGasTankUiKey.Key
   - type: UserInterface
     interfaces:
-      - key: enum.SharedGasTankUiKey.Key
-        type: GasTankBoundUserInterface
+        enum.SharedGasTankUiKey.Key:
+          type: GasTankBoundUserInterface
   - type: Explosive
     explosionType: Default
     maxIntensity: 20

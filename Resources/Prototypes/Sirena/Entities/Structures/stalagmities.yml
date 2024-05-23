@@ -31,7 +31,7 @@
         acts: [ "Destruction" ]
   - type: SoundOnGather
   - type: Gatherable
-    whitelist:
+    toolWhitelist:
       tags:
         - Pickaxe
 

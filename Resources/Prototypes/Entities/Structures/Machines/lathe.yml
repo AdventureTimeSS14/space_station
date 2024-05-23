@@ -1031,9 +1031,6 @@
       - HandheldCrewMonitor
       - ClothingEyesHudMedical
       - ClothingHandsGlovesNitrile
-      - CryostasisBeaker
-      - LargeBeaker
-      - Dropper
       - Scalpel
       - Retractor
       - Cautery
@@ -1042,9 +1039,6 @@
       - Hemostat
       - ClothingEyesGlassesChemical
       - WhiteCane
-    dynamicRecipes:
-      - ChemicalPayload
-      - CryostasisBeaker
       - BluespaceBeaker
       - SyringeBluespace
       - Jug

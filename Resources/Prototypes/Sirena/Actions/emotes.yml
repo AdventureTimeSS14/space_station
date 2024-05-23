@@ -57,6 +57,7 @@
 # Using EmoteAnimation from IC action chat
 - type: emote
   id: EmoteFlip
+  name: emote-flip
   icon: Interface/Emotes/somersaults.png
   category: Animations
   chatMessages: [делает сальто]
@@ -69,6 +70,7 @@
 
 - type: emote
   id: EmoteJump
+  name: emote-jump
   icon: Interface/Emotes/jump.png
   category: Animations
   chatMessages: [прыгает]
@@ -82,6 +84,7 @@
 
 - type: emote
   id: EmoteTurn
+  name: emote-turn-action-name
   icon: Interface/Emotes/spin.png
   category: Animations
   chatMessages: [кружится]
@@ -95,6 +98,7 @@
 # Using EmoteAnimation from IC action chat
 - type: emote
   id: EmoteStopTail
+  name: emote-stop-tail
   category: Animations
   chatMessages: [хвост замирает]
   chatTriggers:
@@ -106,6 +110,7 @@
 
 - type: emote
   id: EmoteStartTail
+  name: emote-start-tail
   category: Animations
   chatMessages: [двигает хвостом]
   chatTriggers:
