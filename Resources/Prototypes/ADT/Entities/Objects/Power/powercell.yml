@@ -112,10 +112,6 @@
     magState: mag
     steps: 4
     zeroVisible: false
-  - type: BasicEntityAmmoProvider
-    proto: ADTBulletLaser
-    capacity: 5
-    count: 5
   - type: SolutionContainerManager
     solutions:
       battery:
@@ -135,4 +131,4 @@
   - type: Appearance
   - type: ProjectileBatteryAmmoProvider
     proto: ADTBulletLaserMK2
-    fireCost: 100
+    fireCost: 220
