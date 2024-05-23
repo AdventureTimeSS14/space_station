@@ -26,4 +26,7 @@
         - CrystalCyan
         - CrystalCyanSmall
         - CrystalCyanMedium
+        - CrystalRed
+        - CrystalRedSmall
+        - CrystalRedMedium
       chance: 0.7
