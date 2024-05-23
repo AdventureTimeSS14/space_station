@@ -34,6 +34,9 @@ public sealed partial class AdminVerbSystem
     [ValidatePrototypeId<EntityPrototype>]
     private const string DefaultThiefRule = "Thief";
 
+    [ValidatePrototypeId<EntityPrototype>]
+    private const string DefaultChangelingRule = "Changeling";
+
     [ValidatePrototypeId<StartingGearPrototype>]
     private const string PirateGearId = "PirateGear";
 
@@ -146,15 +149,16 @@ public sealed partial class AdminVerbSystem
             Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Objects/Weapons/Melee/armblade.rsi"), "icon"),
             Act = () =>
             {
-                if (!_minds.TryGetMind(args.Target, out var _, out var targetMindComp))
-                    return;
-                if (targetMindComp.Session == null)
-                    return;
+                _antag.ForceMakeAntag<ChangelingRuleComponent>(targetPlayer, DefaultChangelingRule);
+                // if (!_minds.TryGetMind(args.Target, out var _, out var targetMindComp))
+                //     return;
+                // if (targetMindComp.Session == null)
+                //     return;
 
-                // if its not a humanoid dont make it a changeling
-                var isHuman = HasComp<HumanoidAppearanceComponent>(args.Target);
-                if (isHuman)
-                    _lingsRule.MakeChangeling(args.Target);
+                // // if its not a humanoid dont make it a changeling
+                // var isHuman = HasComp<HumanoidAppearanceComponent>(args.Target);
+                // if (isHuman)
+                //     _lingsRule.MakeChangeling(args.Target);
             },
             Impact = LogImpact.High,
             Message = Loc.GetString("admin-verb-make-changeling"),
