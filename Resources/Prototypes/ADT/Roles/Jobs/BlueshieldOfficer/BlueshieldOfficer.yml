@@ -37,9 +37,6 @@
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
 
-- type: playTimeTracker
-  id: JobADTBlueShieldOfficer
-
 - type: startingGear
   id: ADTBlueShieldOfficerGear
   equipment:
