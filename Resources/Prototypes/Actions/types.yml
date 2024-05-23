@@ -8,7 +8,7 @@
     popup: suicide-action-popup
 
 # actions
-
+# ADT radial-language-panel-start
 - type: entity
   id: ActionOpenLanguagesM
   name: ActionOpenLanguages
@@ -20,6 +20,7 @@
     event: !type:OpenLanguagesActionEvent
     #event: !type:ScreamActionEvent
     checkCanInteract: false
+# ADT radial-language-panel-end
 
 - type: entity
   id: ActionOpenEmotes
