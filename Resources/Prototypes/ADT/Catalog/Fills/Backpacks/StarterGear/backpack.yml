@@ -240,7 +240,7 @@
         - id: WeaponDisabler
         - id: Stunbaton
         - id: BoxSurvivalSecurity
-        - id: BlueShieldsuit
+        - id: BlueshieldSuit
         - id: SpaceCash1000
         - id: OxygenTankFilled
     - type: Sprite
