@@ -224,7 +224,7 @@
   - type: Emoting
   - type: EmoteAnimation
   - type: EmotePanel
-  - type: LanguagePanel
+  - type: LanguagePanel # ADT radial-language-panel
   - type: BodyEmotes
     soundsId: GeneralBodyEmotes
   - type: Grammar
