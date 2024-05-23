@@ -74,49 +74,19 @@
     - Back
     - suitStorage
 
-  #- type: AmmoCounter
-  - type: Gun
-    fireRate: 3.5
-    selectedMode: FullAuto
-    availableModes:
-    - SemiAuto
-    - FullAuto
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
-  - type: MagazineAmmoProvider
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: ADTPowerCellLasgun
-        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
-        whitelist:
-          tags:
-            - ADTLasgunPowerCell
-  - type: Appearance
-  - type: StaticPrice
-    price: 1000
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-  - type: MagazineVisuals
-    magState: mag
-    steps: 5
-    zeroVisible: true
-
 - type: entity
-  name: X-01 multiphas laser pistol
-  parent: BaseWeaponBatterySmall
-  id: ADtWeaponSecCyborg
-  description: new version of antique gun witout selfrcharge
+  name: X-02 multiphas laser pistol
+  parent: BaseWeaponPowerCellSmall
+  id: ADTWeaponPistolBlueShitX02
+  description: New version of antique gun witout selfrcharge for "BlueShit"
   components:
-  - type: BatterySelfRecharger
-    autoRecharge: true
-    autoRechargeRate: 10
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
   - type: Sprite
-    sprite: ADT/Mobs/Silicon/Cyborg/cyb_gun.rsi
-    scale: 0.9, 0.9
+    sprite: ADT/Objects/Weapons/Guns/Battery/BlueShield.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -124,15 +94,8 @@
       visible: false
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
-  - type: Appearance
-  - type: MagazineVisuals
-    magState: mag
-    steps: 5
-    zeroVisible: false
-  - type: Clothing
-    sprite: ADT/Mobs/Silicon/Cyborg/cyb_gun.rsi
   - type: Gun
-    fireRate: 1.7
+    fireRate: 1.8
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: ItemSlots
