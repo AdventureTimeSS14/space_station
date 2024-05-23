@@ -51,16 +51,6 @@ namespace Content.IntegrationTests.Tests.Preferences
                 Species = "Human",
                 Age = 21,
                 Appearance = new(
-            		return new(
-                	"Charlie Charlieson",
-                	"The biggest boy around.",
-                	0,
-                	"Human",
-                	"Eugene", // Corvax-TTS
-                	21,
-                	Sex.Male,
-                	Gender.Epicene,
-                	new HumanoidCharacterAppearance(
                     "Afro",
                     Color.Aqua,
                     "Shaved",
