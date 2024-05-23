@@ -1,27 +1,28 @@
 <Document>
-# Бармен
-Работа бармена проста: наливайте напитки. Люди придут к барной стойке, попросят коктейль или что-либо попить, ваша работа им это предоставить.
+# Bartender
+The bartender has a pretty simple job: serve drinks. People will come up to you and request drinks, and your job is just to hand it to them.
 
 <Box>
-Компоненты для напитков можно найти в следующих устройствах:
+The materials for these drinks can be found in various places:
 </Box>
 <Box>
-<GuideEntityEmbed Entity="BoozeDispenser" Caption="Раздатчик алкоголя"/>
-<GuideEntityEmbed Entity="soda_dispenser" Caption="Раздатчик безалкоголя"/>
-<GuideEntityEmbed Entity="VendingMachineBooze" Caption="АлкоМат"/>
+<GuideEntityEmbed Entity="BoozeDispenser"/>
+<GuideEntityEmbed Entity="SodaDispenser"/>
+<GuideEntityEmbed Entity="VendingMachineBooze"/>
 </Box>
 
 <Box>
-Не забудьте о том, по каким ёмкостям принято разливать напитки!
+Don't forget containers to serve them in!
 </Box>
 <Box>
-<GuideEntityEmbed Entity="DrinkGlass" Caption="Стакан-метаморф"/>
-<GuideEntityEmbed Entity="DrinkGlassCoupeShaped" Caption="Бокал-купе"/>
-<GuideEntityEmbed Entity="DrinkShaker"Caption="Шейкер"/>
+<GuideEntityEmbed Entity="DrinkGlass" Caption="Glass"/>
+<GuideEntityEmbed Entity="DrinkGlassCoupeShaped"/>
+<GuideEntityEmbed Entity="DrinkShaker"/>
+<GuideEntityEmbed Entity="DrinkJigger"/>
 </Box>
 
-## Напитки
-Важно знать, как приготовить желаемый напиток. Здесь представлены различные их вариации в игре, включая их рецепты:
+## Drinks
+Knowing how to make a requested drink is important. Here are the different drinks in the game, including their recipes:
 
 <GuideReagentGroupEmbed Group="Drinks"/>
 </Document>

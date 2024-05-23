@@ -4,6 +4,7 @@ using Content.Shared.GameTicking;
 using Content.Shared.Paper;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using Content.Shared.Fax.Components;
 
 namespace Content.Server.Corvax.StationGoal
 {
@@ -50,10 +51,11 @@ namespace Content.Server.Corvax.StationGoal
                     Loc.GetString(goal.Text),
                     Loc.GetString("station-goal-fax-paper-name"),
                     null,
+                    null,
                     "paper_stamp-centcom",
                     new List<StampDisplayInfo>
                     {
-                        new() { StampedName = Loc.GetString("stamp-component-stamped-name-centcom"), StampedColor = Color.FromHex("#BB3232") },
+                        new() { StampedName = Loc.GetString("stamp-component-stamped-name-centcom"), StampedColor = Color.FromHex("#006600") },
                     });
                 _faxSystem.Receive(fax.Owner, printout, null, fax);
 

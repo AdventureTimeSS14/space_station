@@ -82,6 +82,13 @@ public sealed partial class StoreComponent : Component
     public bool RefundPossible;
 
     /// <summary>
+    ///     Checks if store can be opened by the account owner only.
+    ///     Not meant to be used with uplinks.
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite), DataField]
+    public bool OwnerOnly;
+
+    /// <summary>
     ///     The map the store was originally from, used to block refunds if the map is changed
     /// </summary>
     [DataField]

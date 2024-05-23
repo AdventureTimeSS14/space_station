@@ -176,8 +176,7 @@ public sealed partial class ChangelingSystem
         var doAfter = new DoAfterArgs(EntityManager, uid, component.AbsorbDuration, new AbsorbDoAfterEvent(), uid, target: target)
         {
             DistanceThreshold = 2,
-            BreakOnUserMove = true,
-            BreakOnTargetMove = true,
+            BreakOnMove = true,
             BreakOnDamage = true,
             AttemptFrequency = AttemptFrequency.StartAndEnd
         };
@@ -1031,8 +1030,7 @@ public sealed partial class ChangelingSystem
         var doAfter = new DoAfterArgs(EntityManager, uid, component.BiodegradeDuration, new BiodegradeDoAfterEvent(), uid, target: uid)
         {
             DistanceThreshold = 2,
-            BreakOnUserMove = true,
-            BreakOnTargetMove = true,
+            BreakOnMove = true,
             BreakOnDamage = true,
             AttemptFrequency = AttemptFrequency.StartAndEnd,
             RequireCanInteract = false

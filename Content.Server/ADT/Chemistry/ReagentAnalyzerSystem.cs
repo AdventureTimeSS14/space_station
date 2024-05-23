@@ -55,7 +55,7 @@ namespace Content.Server.ADT.Chemistry.EntitySystems
             var outputContainerInfo = BuildOutputContainerInfo(outputContainer);
 
             var state = new ReagentAnalyzerBoundUserInterfaceState(outputContainerInfo);
-            _userInterfaceSystem.TrySetUiState(reagentAnalyzer, ReagentAnalyzerUiKey.Key, state);
+            _userInterfaceSystem.SetUiState(reagentAnalyzer.Owner, ReagentAnalyzerUiKey.Key, state);
         }
 
         private ContainerInfo? BuildOutputContainerInfo(EntityUid? container)

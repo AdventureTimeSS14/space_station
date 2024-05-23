@@ -31,4 +31,6 @@ public enum SlotFlags
     SOCKS = 1 << 10,      // Sirena add
     MODULE = 1 << 10,     // Sirena add
     All = ~NONE,
+
+    WITHOUT_POCKET = All & ~POCKET
 }

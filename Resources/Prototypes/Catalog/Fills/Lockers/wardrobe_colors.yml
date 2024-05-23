@@ -119,9 +119,9 @@
       - id: ClothingUniformRandomShorts
         amount: 1
       - id: ClothingUniformRandomArmless
-        amount: 1
-      - id: ClothingUniformRandomStandart
-        amount: 1
+        amount: 5
+      - id: ClothingUniformRandomStandard
+        amount: 5
       - id: ClothingUniformRandomBra
         amount: 1
       - id: ClothingUniformRandomShirt

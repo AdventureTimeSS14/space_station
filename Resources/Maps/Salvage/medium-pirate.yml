@@ -139,11 +139,9 @@ entities:
         chunkSize: 4
     - type: OccluderTree
     - type: Shuttle
-    - nextUpdate: 0
-      type: GridPathfinding
+    - type: GridPathfinding
     - type: RadiationGridResistance
-    - nextUpdate: 0
-      type: SpreaderGrid
+    - type: SpreaderGrid
     - type: GasTileOverlay
 - proto: APCBasic
   entities:

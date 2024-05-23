@@ -57,6 +57,7 @@ namespace Content.Shared.Alert
         BorgDead,
         Chemicals,
         PainKiller,
+        Deflecting,
         ADTAlertPolymorph,
         ADTAlertApathy,
         ADTAlertLingRefresh,

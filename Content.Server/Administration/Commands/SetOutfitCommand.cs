@@ -100,7 +100,7 @@ namespace Content.Server.Administration.Commands
                 foreach (var slot in slots)
                 {
                     invSystem.TryUnequip(target, slot.Name, true, true, false, inventoryComponent);
-                    var gearStr = startingGear.GetGear(slot.Name, profile);
+                    var gearStr = startingGear.GetGear(slot.Name);
                     if (gearStr == string.Empty)
                     {
                         continue;
@@ -130,12 +130,11 @@ namespace Content.Server.Administration.Commands
                 }
             }
 
-
             // Parkstation-Ipc-Start
             // Pretty much copied from StationSpawningSystem.SpawnStartingGear
             if (entityManager.TryGetComponent<EncryptionKeyHolderComponent>(target, out var keyHolderComp))
             {
-                var earEquipString = startingGear.GetGear("ears", profile);
+                var earEquipString = startingGear.GetGear("ears");
                 var containerMan = entityManager.System<SharedContainerSystem>();
 
                 if (!string.IsNullOrEmpty(earEquipString))

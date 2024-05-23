@@ -336,4 +336,5 @@
     - id: AdminPDA
     - id: GasAnalyzer
     - id: trayScanner
+    - id: AccessConfiguratorUniversal
   - type: Unremoveable

@@ -1,27 +1,24 @@
 <Document>
-# Организация сети
-Некоторые устройства на станции должны общаться друг с другом, и они делают это, используя сеть устройств.
-С помощью сетевых машин и устройств можно передавать произвольные данные между собой.
-Есть несколько сетей, которые используются, например, беспроводная и проводная сеть.
-Каждое сетевое устройство имеет частоту, на которой оно принимает. КПК, например, используют частоту: [color = green] 220,2 [/color]
+  # Networking
+  Some devices on the station need to communicate with each other, and they do this by utilizing device networking.
+  With networking, machines and devices can send arbitrary data between each other.
+  There are multiple networks that get used, such as the wireless and wired network.
+  Each network device has a frequency it receives on. PDAs for example, use the frequency: [color=green]220.2[/color]
 
-## Списки устройств
-Некоторым устройствам необходимо знать, с какими конкретно устройствами следует взаимодействовать.
-<Box>
-  <GuideEntityEmbed Entity="AirAlarm"/>
-</Box>
-Например, воздушная сигнализация требует, чтобы вы сообщили ей, с какими вентиляционными отверстиями, скрубберами, датчиками и противопожарными шлюзами взаимодействовать.
-Для этого используется конфигуратор сетей или мультитул.
-<Box>
- <GuideEntityEmbed Entity="Multitool"/>
- <GuideEntityEmbed Entity="NetworkConfigurator"/>
-</Box>
-## Соединение
-Если устройства базовые или еще более продвинутые, и нуждаются в контроле того, как и что соединяется друг с другом, они, как правило, используют связывание устройств.
+  Note: The following operations will require use of the Network Configurator to be performed:
+
+  ## Device Lists
+  Some devices need to know which other devices to communicate with specifically.
   <Box>
-    <GuideEntityEmbed Entity="SignalSwitch"/>
-    <GuideEntityEmbed Entity="Airlock"/>
+    <GuideEntityEmbed Entity="AirAlarm"/>
   </Box>
-С помощью мультитула вы можете подключить устройство типа [color = grey] On [/color] или [color = gray] Off [/color](кнопка) со входами устройств, такого как шлюзы
-[color = gray] Открыть [/color] или [color = gray] Закрыть [/color].
+  Air alarms, for example, require you to tell it which vents, scrubbers, sensors, and firelocks to interact with.
+
+  ## Linking
+  If a device, basic or advanced, needs finer controls of how and which devices it connects to, it will generally use device linking.
+    <Box>
+      <GuideEntityEmbed Entity="SignalSwitch"/>
+      <GuideEntityEmbed Entity="Airlock"/>
+    </Box>
+  With linking, you can connect the outputs of a device, like [color=gray]On[/color] or [color=gray]Off[/color], with the inputs of a device, like the airlocks [color=gray]Open[/color] or [color=gray]Close[/color] inputs.
 </Document>

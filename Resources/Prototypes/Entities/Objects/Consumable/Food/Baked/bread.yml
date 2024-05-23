@@ -860,6 +860,8 @@
     allowMovement: true
     description: ghost-role-information-BreadDog-description
     rules: ghost-role-information-BreadDog-rules
+    raffle:
+      settings: short
   - type: GhostTakeoverAvailable
   - type: BarkAccent
   - type: Speech
@@ -877,6 +879,7 @@
   - type: Puller
     needsHands: false
   - type: Examiner
+  - type: DoAfter
   - type: CombatMode
   - type: MeleeWeapon
     soundHit:

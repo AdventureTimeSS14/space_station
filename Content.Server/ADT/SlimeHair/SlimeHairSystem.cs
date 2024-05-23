@@ -64,7 +64,7 @@ public sealed partial class SlimeHairSystem : EntitySystem
 
     private void OnSlimeHairSelect(EntityUid uid, SlimeHairComponent component, SlimeHairSelectMessage message)
     {
-        if (component.Target is not { } target || message.Session.AttachedEntity is not { } user)
+        if (component.Target is not { } target)
             return;
 
         _doAfterSystem.Cancel(component.DoAfter);
@@ -77,16 +77,15 @@ public sealed partial class SlimeHairSystem : EntitySystem
             Marking = message.Marking,
         };
 
-        _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, user, component.SelectSlotTime, doAfter, uid, target: target, used: uid)
+        _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, message.Actor, component.SelectSlotTime, doAfter, uid, target: target, used: uid)
         {
             DistanceThreshold = SharedInteractionSystem.InteractionRange,
-            BreakOnTargetMove = false,
             BreakOnDamage = true,
+            BreakOnMove = true,
             BreakOnHandChange = false,
-            BreakOnUserMove = false,
-            BreakOnWeightlessMove = false,
-            NeedHand = false
+            NeedHand = true
         }, out var doAfterId);
+
 
         component.DoAfter = doAfterId;
     }
@@ -120,7 +119,7 @@ public sealed partial class SlimeHairSystem : EntitySystem
 
     private void OnTrySlimeHairChangeColor(EntityUid uid, SlimeHairComponent component, SlimeHairChangeColorMessage message)
     {
-        if (component.Target is not { } target || message.Session.AttachedEntity is not { } user)
+        if (component.Target is not { } target)
             return;
 
         _doAfterSystem.Cancel(component.DoAfter);
@@ -133,12 +132,11 @@ public sealed partial class SlimeHairSystem : EntitySystem
             Colors = message.Colors,
         };
 
-        _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, user, component.ChangeSlotTime, doAfter, uid, target: target, used: uid)
+        _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, message.Actor, component.ChangeSlotTime, doAfter, uid, target: target, used: uid)
         {
-            BreakOnTargetMove = false,
             BreakOnDamage = true,
             BreakOnHandChange = false,
-            BreakOnUserMove = false,
+            BreakOnMove = true,
             BreakOnWeightlessMove = false,
             NeedHand = false
         }, out var doAfterId);
@@ -175,7 +173,7 @@ public sealed partial class SlimeHairSystem : EntitySystem
 
     private void OnTrySlimeHairRemoveSlot(EntityUid uid, SlimeHairComponent component, SlimeHairRemoveSlotMessage message)
     {
-        if (component.Target is not { } target || message.Session.AttachedEntity is not { } user)
+        if (component.Target is not { } target)
             return;
 
         _doAfterSystem.Cancel(component.DoAfter);
@@ -187,13 +185,12 @@ public sealed partial class SlimeHairSystem : EntitySystem
             Slot = message.Slot,
         };
 
-        _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, user, component.RemoveSlotTime, doAfter, uid, target: target, used: uid)
+        _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, message.Actor, component.RemoveSlotTime, doAfter, uid, target: target, used: uid)
         {
             DistanceThreshold = SharedInteractionSystem.InteractionRange,
-            BreakOnTargetMove = false,
             BreakOnDamage = true,
             BreakOnHandChange = false,
-            BreakOnUserMove = false,
+            BreakOnMove = true,
             BreakOnWeightlessMove = false,
             NeedHand = false
         }, out var doAfterId);
@@ -233,7 +230,7 @@ public sealed partial class SlimeHairSystem : EntitySystem
         if (component.Target == null)
             return;
 
-        if (message.Session.AttachedEntity == null)
+        if (message.Actor == default)
             return;
 
         _doAfterSystem.Cancel(component.DoAfter);
@@ -244,12 +241,11 @@ public sealed partial class SlimeHairSystem : EntitySystem
             Category = message.Category,
         };
 
-        _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, message.Session.AttachedEntity.Value, component.AddSlotTime, doAfter, uid, target: component.Target.Value, used: uid)
+        _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, message.Actor, component.AddSlotTime, doAfter, uid, target: component.Target.Value, used: uid)
         {
-            BreakOnTargetMove = false,
             BreakOnDamage = true,
             BreakOnHandChange = false,
-            BreakOnUserMove = false,
+            BreakOnMove = true,
             BreakOnWeightlessMove = false,
             NeedHand = false
         }, out var doAfterId);
@@ -307,7 +303,7 @@ public sealed partial class SlimeHairSystem : EntitySystem
             humanoid.MarkingSet.PointsLeft(MarkingCategories.FacialHair) + facialHair.Count);
 
         component.Target = uid;
-        _uiSystem.TrySetUiState(uid, SlimeHairUiKey.Key, state);
+        _uiSystem.SetUiState(uid, SlimeHairUiKey.Key, state);
     }
 
     private void OnUIClosed(Entity<SlimeHairComponent> ent, ref BoundUIClosedEvent args)

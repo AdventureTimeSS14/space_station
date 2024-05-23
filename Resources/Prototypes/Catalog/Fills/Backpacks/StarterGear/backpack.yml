@@ -130,6 +130,17 @@
 
 - type: entity
   noSpawn: true
+  parent: ClothingBackpackIan
+  id: ClothingBackpackHOPIanFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+      - id: Flash
+      #- id: TelescopicBaton
+
+- type: entity
+  noSpawn: true
   parent: ClothingBackpackMedical
   id: ClothingBackpackCMOFilled
   components:
@@ -478,6 +489,27 @@
         - id: Soap
         - id: JawsOfLife
         - id: AdvMopItem
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackERTChaplain
+  id: ClothingBackpackERTChaplainFilled
+  components:
+    - type: StorageFill
+      contents:
+        - id: BoxSurvivalEngineering
+        - id: BoxCandle
+        - id: BoxBodyBag
+        - id: DrinkWaterMelonJuiceJug
+        - id: Lantern
+        - id: Lantern
+        - id: Bible
+        - id: CrowbarRed
+        - id: FoodBakedBunHotX
+        - id: FoodBakedBunHotX
+        - id: FoodBakedBunHotX
+        - id: FoodBakedBunHotX
+        - id: Lighter
 
 # Death Squad
 

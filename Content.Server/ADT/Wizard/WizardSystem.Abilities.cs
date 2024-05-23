@@ -37,7 +37,6 @@ using System.Numerics;
 using Content.Server.Body.Components;
 using Content.Server.Chat.Systems;
 using Content.Server.Doors.Systems;
-using Content.Server.Magic.Components;
 using Content.Server.Weapons.Ranged.Systems;
 using Content.Shared.Actions;
 using Content.Shared.Body.Components;

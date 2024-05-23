@@ -81,8 +81,7 @@ public sealed partial class LingSlugSystem : EntitySystem
         var doAfter = new DoAfterArgs(EntityManager, uid, component.LayingDuration, new LingEggDoAfterEvent(), uid, target: target)
         {
             DistanceThreshold = 2,
-            BreakOnUserMove = true,
-            BreakOnTargetMove = true,
+            BreakOnMove = true,
             BreakOnDamage = true,
             AttemptFrequency = AttemptFrequency.StartAndEnd
         };

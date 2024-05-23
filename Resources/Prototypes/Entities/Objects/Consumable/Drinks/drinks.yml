@@ -10,6 +10,8 @@
     solutions:
       drink:
         maxVol: 30
+  - type: MixableSolution
+    solution: drink
   - type: SolutionTransfer
     canChangeTransferAmount: true
   - type: Drink
@@ -33,8 +35,8 @@
     solution: drink
   - type: UserInterface
     interfaces:
-    - key: enum.TransferAmountUiKey.Key
-      type: TransferAmountBoundUserInterface
+      enum.TransferAmountUiKey.Key:
+        type: TransferAmountBoundUserInterface
 
 - type: entity
   parent: DrinkBase
@@ -390,6 +392,10 @@
           Quantity: 30
   - type: Sprite
     sprite: Objects/Consumable/Drinks/beerglass.rsi
+    state: icon
+  - type: Tag
+    tags:
+    - Beer
 
 - type: entity
   parent: DrinkGlassBase
@@ -977,6 +983,10 @@
   - type: Drink
   - type: Sprite
     sprite: Objects/Consumable/Drinks/iced_beerglass.rsi
+    state: icon
+  - type: Tag
+    tags:
+    - Beer
 
 - type: entity
   parent: DrinkGlassBase
@@ -2117,6 +2127,22 @@
           Quantity: 30
   - type: Sprite
     sprite: Objects/Consumable/Drinks/wineglass.rsi
+
+- type: entity
+  parent: DrinkGlass
+  id: XenoBasherGlass
+  suffix: xeno basher
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: XenoBasher
+          Quantity: 30
+  - type: Icon
+    sprite: Objects/Consumable/Drinks/xenobasher.rsi
+    state: icon
 
 # TODO: MOVE
 
