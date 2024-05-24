@@ -1694,3 +1694,13 @@
     Telecrystal: 10
   categories:
   - UplinkWeaponry
+
+- type: listing
+  id: ADTUplinkChainsaw
+  name: ADTuplink-chainsaw-name
+  description: ADTuplink-chainsaw-desc
+  productEntity: Chainsaw
+  cost:
+    Telecrystal: 6
+  categories:
+  - UplinkWeaponry
