@@ -395,7 +395,7 @@
       - id: BoxEncryptionKeyRobo
       # Sirena-Add-Start
       - id: ADTUnderwearBoxRD
-      - id: SirenaAnomalyPinpointer
+      - id: AnomalyPinpointer
       # Sirena-Add-End
       - id: EncryptionKeyBinary
 
