@@ -29,7 +29,7 @@
             Janitor: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
-            #Lawyer: [ 1, 1 ] # Corvax-IAA
+            Lawyer: [ 1, 1 ] # Corvax-IAA
             ServiceWorker: [ 1, 1 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
