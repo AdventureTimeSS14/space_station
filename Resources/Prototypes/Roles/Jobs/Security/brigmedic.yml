@@ -9,7 +9,7 @@
       time: 18000
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 7200
+      time: 10800 #3 hrs
   startingGear: BrigmedicGear
   icon: "JobIconBrigmedic"
   supervisors: job-supervisors-hos
@@ -27,21 +27,21 @@
 - type: startingGear
   id: BrigmedicGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitBrigmedic
-    outerClothing: ClothingOuterCoatAMG
+    jumpsuit: ADTClothingUniformBrigmedicTurtleneck
+    outerClothing: ADTClothingOuterCoatBrigmedicWB
     back: ClothingBackpackBrigmedicFilled
-    shoes: ClothingShoesColorRed
-    gloves: ClothingHandsGlovesNitrile
-    eyes: ClothingEyesHudMedical
+    shoes: ClothingShoesBootsJackSec
+    gloves: ClothingHandsGlovesLatex
+    eyes: ClothingEyesGlassesMedical
     head: ClothingHeadHatBeretBrigmedic
     id: BrigmedicPDA
     ears: ClothingHeadsetBrigmedic
-    mask: ClothingMaskBreathMedicalSecurity
     belt: ClothingBeltMedicalFilled
+    pocket1: WeaponPistolMk58Nonlethal
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtBrigmedic
+  innerClothingSkirt: ADTClothingUniformSkirtBrigmedicTurtleneck
   satchel: ClothingBackpackSatchelBrigmedicFilled
   duffelbag: ClothingBackpackDuffelBrigmedicFilled
