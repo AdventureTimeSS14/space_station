@@ -11,6 +11,32 @@
       "name": "book_icon"
     },
     {
+      "name": "book_chemistry"
+    },
+    {
+      "name": "book_hydroponics_pod_people"
+    },
+    {
+      "name": "book5"
+    },
+    {
+      "name": "book_fish"
+    },
+    {
+      "name": "book_detective"
+    },
+    {
+      "name": "book_demonomicon",
+      "delays": [
+        [
+          0.5,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
       "name": "cover_base"
     },
     {
