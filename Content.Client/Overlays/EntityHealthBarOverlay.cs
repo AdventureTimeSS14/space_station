@@ -76,6 +76,12 @@ public sealed class EntityHealthBarOverlay : Overlay
                 continue;
             }
 
+            GetStatusIconsEvent @event = new GetStatusIconsEvent();
+            if (@event.InContainer || @event.HasStealthComponent)
+            { 
+                continue;
+            }
+
             // we use the status icon component bounds if specified otherwise use sprite
             var bounds = _entManager.GetComponentOrNull<StatusIconComponent>(uid)?.Bounds ?? spriteComponent.Bounds;
             var worldPos = _transform.GetWorldPosition(xform, xformQuery);
