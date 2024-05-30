@@ -12,3 +12,26 @@
     id: ERTLeaderPDA
     ears: ClothingHeadsetAltCommand
     belt: ADTClothingBeltMilitaryWebbingRPSL
+
+- type: startingGear
+  id: ADTCmndCBURNGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorBrown
+    back: ClothingBackpackDuffelCBURN
+    mask: ClothingMaskGasExplorer
+    eyes: ClothingEyesHudSecurity
+    ears: ClothingHeadsetAltCentCom
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitCBURNLeader
+    shoes: ADTClothingShoesBootsMagERT
+    id: CBURNPDA
+    pocket1: RubberStampCentcom
+    pocket2: WeaponPulsePistol
+    suitstorage: OxygenTankFilled
+    belt: ClothingBeltBandolier
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+  innerClothingSkirt: ClothingUniformJumpsuitColorBrown
+  satchel: ClothingBackpackDuffelCBURN
+  duffelbag: ClothingBackpackDuffelCBURN
