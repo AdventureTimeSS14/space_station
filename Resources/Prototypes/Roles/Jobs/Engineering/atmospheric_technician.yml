@@ -10,15 +10,12 @@
   startingGear: AtmosphericTechnicianGear
   icon: "JobIconAtmosphericTechnician"
   supervisors: job-supervisors-ce
-  canBeAntag: false
+  canBeAntag: true
   access:
   - Maintenance
   - Engineering
   - External
   - Atmospherics
-  special:
-  - !type:AddImplantSpecial
-    implants: [ MindShieldImplant ]
 
 - type: startingGear
   id: AtmosphericTechnicianGear
