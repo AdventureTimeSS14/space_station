@@ -350,3 +350,9 @@ soda_dispenser: SodaDispenser
 chem_master: ChemMaster
 # 2024-04-10
 LGBTQHandyFlag: Ash 
+
+# 2024-05-21
+CrateJanitorExplosive: ClosetJanitorBombFilled
+
+# 2024-05-27
+DoorRemoteFirefight: null

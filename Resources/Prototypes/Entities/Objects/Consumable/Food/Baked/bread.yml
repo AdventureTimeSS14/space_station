@@ -34,7 +34,9 @@
     flavors:
       - bread
   - type: Tag
-    tags: [] #override bread
+    tags:
+    - Bread
+    - Slice
   - type: SolutionContainerManager
     solutions:
       food:
@@ -124,6 +126,8 @@
   - type: Tag
     tags:
     - Fruit
+    - Bread
+    - Slice
 
 - type: entity
   name: cornbread
@@ -298,6 +302,8 @@
   - type: Tag
     tags:
     - Meat
+    - Bread
+    - Slice
 
 - type: entity
   name: mimana bread
@@ -450,6 +456,8 @@
   - type: Tag
     tags:
     - Meat
+    - Bread
+    - Slice
 
 - type: entity
   name: spider meat bread
@@ -508,6 +516,8 @@
   - type: Tag
     tags:
     - Meat
+    - Bread
+    - Slice
 
 - type: entity
   name: tofu bread
@@ -625,6 +635,8 @@
   - type: Tag
     tags:
     - Meat
+    - Bread
+    - Slice
 
 # Other than bread/slices
 
@@ -874,6 +886,7 @@
     tags:
     - VimPilot
     - DoorBumpOpener
+    - Bread
   - type: CanEscapeInventory
     baseResistTime: 2
   - type: Puller
