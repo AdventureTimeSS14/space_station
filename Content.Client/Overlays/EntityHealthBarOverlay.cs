@@ -11,6 +11,8 @@ using Content.Shared.StatusIcon.Components;
 using Content.Client.UserInterface.Systems;
 using Robust.Shared.Prototypes;
 using static Robust.Shared.Maths.Color;
+using Content.Shared.Stealth;
+using Content.Shared.Stealth.Components;
 
 namespace Content.Client.Overlays;
 
@@ -76,9 +78,8 @@ public sealed class EntityHealthBarOverlay : Overlay
                 continue;
             }
 
-            GetStatusIconsEvent @event = new GetStatusIconsEvent();
-            if (@event.InContainer || @event.HasStealthComponent)
-            { 
+            if (_entManager.TryGetComponent<StealthComponent>(uid, out var comp) && comp.Enabled)
+            {
                 continue;
             }
 
