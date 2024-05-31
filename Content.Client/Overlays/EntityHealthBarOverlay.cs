@@ -11,6 +11,8 @@ using Content.Shared.StatusIcon.Components;
 using Content.Client.UserInterface.Systems;
 using Robust.Shared.Prototypes;
 using static Robust.Shared.Maths.Color;
+using Content.Shared.Stealth;
+using Content.Shared.Stealth.Components;
 
 namespace Content.Client.Overlays;
 
