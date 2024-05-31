@@ -1068,8 +1068,8 @@
     Cloth: 100
 
 - type: latheRecipe
-  id: ClothingHeadHatBeretBrigmedic
-  result: ClothingHeadHatBeretBrigmedic
+  id: ADTClothingHeadHatBeretBrigmedic
+  result: ADTClothingHeadHatBeretBrigmedic
   completetime: 2
   materials:
     Cloth: 100

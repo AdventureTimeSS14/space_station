@@ -32,8 +32,8 @@
     back: ClothingBackpackBrigmedicFilled
     shoes: ClothingShoesBootsJackSec
     gloves: ClothingHandsGlovesLatex
-    eyes: ClothingEyesGlassesMedical
-    head: ClothingHeadHatBeretBrigmedic
+    eyes: ADTClothingEyesGlassesMed
+    head: ADTClothingHeadHatBeretBrigmedic
     id: BrigmedicPDA
     ears: ClothingHeadsetBrigmedic
     belt: ClothingBeltMedicalFilled

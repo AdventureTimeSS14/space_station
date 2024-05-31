@@ -4735,7 +4735,7 @@ entities:
     - type: Transform
       pos: 10.480986,45.607067
       parent: 1
-- proto: ClothingHeadHatBeretBrigmedic
+- proto: ADTClothingHeadHatBeretBrigmedic
   entities:
   - uid: 1183
     components:
