@@ -76,9 +76,8 @@ public sealed class EntityHealthBarOverlay : Overlay
                 continue;
             }
 
-            GetStatusIconsEvent @event = new GetStatusIconsEvent();
-            if (@event.InContainer || @event.HasStealthComponent)
-            { 
+            if (_entManager.TryGetComponent<StealthComponent>(uid, out var comp) && comp.Enabled)
+            {
                 continue;
             }
 
