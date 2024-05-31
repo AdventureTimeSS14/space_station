@@ -96,7 +96,7 @@
         amount: 4
       - id: ClothingOuterHardsuitBrigmedic
       - id: ClothingHandsGlovesNitrile
-      - id: ClothingHeadHatBeretMedical
+      - id: ClothingHeadHatBeretMedic
       - id: ClothingOuterCoatAMG
       - id: ADTClothingOuterCoatBrigmedicWB
       - id: ClothingUniformJumpsuitBrigmedic
@@ -133,7 +133,7 @@
       - id: TrackingImplanter
         amount: 4
       - id: ClothingHandsGlovesNitrile
-      - id: ClothingHeadHatBeretMedical
+      - id: ClothingHeadHatBeretMedic
       - id: ClothingOuterCoatAMG
       - id: ADTClothingOuterCoatBrigmedicWB
       - id: ClothingUniformJumpsuitBrigmedic

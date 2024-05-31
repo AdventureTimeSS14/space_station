@@ -61,10 +61,10 @@
   components:
   - type: StorageFill
     contents:
-      - id: Flash
       - id: BoxSurvivalBrigmedic
-      - id: ADTSpaceLaw
+      - id: Flash
       - id: MagazinePistol
+      - id: ADTSpaceLaw
       - id: SpaceCash500
 
 - type: entity

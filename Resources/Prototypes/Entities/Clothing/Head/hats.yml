@@ -157,25 +157,14 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatBeretMedical
-  name: medical beret
+  id: ClothingHeadHatBeretMedic
+  name: medic beret
   description: White beret, looks like a cream pie on the head.
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hats/beret_brigmedic.rsi
+    sprite: Clothing/Head/Hats/beret_medic.rsi
   - type: Clothing
-    sprite: Clothing/Head/Hats/beret_brigmedic.rsi
-
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHatBeretBrigmedic
-  name: brigmedic beret
-  description: A robust beret with the medical insignia emblazoned on it. Uses reinforced fabric to offer sufficient protection.
-  components:
-    - type: Sprite
-      sprite: Corvax/Clothing/Head/Hats/beret_security_medic.rsi
-    - type: Clothing
-      sprite: Corvax/Clothing/Head/Hats/beret_security_medic.rsi
+    sprite: Clothing/Head/Hats/beret_medic.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -1070,14 +1059,3 @@
               max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHatBeretMedic
-  name: medical beret
-  description: White beret that encourages you to be clean.
-  components:
-  - type: Sprite
-    sprite: Clothing/Head/Hats/beret_medic.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Hats/beret_medic.rsi
