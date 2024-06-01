@@ -144,20 +144,6 @@
   - type: AccessReader
     access: [["Security"]]
 
-#Brigmedic hardsuit
-- type: entity
-  id: SuitStorageBrigmedic
-  parent: SuitStorageBase
-  suffix: Brigmedic
-  components:
-  - type: StorageFill
-    contents:
-        - id: OxygenTankFilled
-        - id: ClothingOuterHardsuitBrigmedic
-        - id: ClothingMaskBreath
-  - type: AccessReader
-    access: [["Medical"]]
-
 #CE's hardsuit
 - type: entity
   id: SuitStorageCE
