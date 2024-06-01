@@ -68,8 +68,8 @@
         variation: 0.125
     activatedDamage:
         types:
-            Slash: 10
-            Heat: 10
+            Slash: 5
+            Heat: 5
             Structural: 20
   - type: GunRequiresWield
   - type: ToggleableLightVisuals
