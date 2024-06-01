@@ -482,4 +482,19 @@
       tags:
       - NukeOpsUplink
 
-
+- type: listing
+  id: ADTuplinkHtrayknife
+  name: uplink-tray-knife-name
+  description: uplink-tray-knife-desc
+  productEntity: ADTIronTrayKnife
+  cost:
+    Telecrystal: 3
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Chef
+    - Botanist
+    - Clown
+    - Mime

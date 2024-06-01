@@ -12,9 +12,21 @@
     - type: RandomSpawner
       prototypes:
         - CrystalGreen
+        - CrystalGreenSmall
+        - CrystalGreenMedium
         - CrystalPink
+        - CrystalPinkSmall
+        - CrystalPinkMedium
         - CrystalOrange
+        - CrystalOrangeSmall
+        - CrystalOrangeMedium
         - CrystalBlue
+        - CrystalBlueSmall
+        - CrystalBlueMedium
         - CrystalCyan
-        - CrystalGrey
+        - CrystalCyanSmall
+        - CrystalCyanMedium
+        - CrystalRed
+        - CrystalRedSmall
+        - CrystalRedMedium
       chance: 0.7
