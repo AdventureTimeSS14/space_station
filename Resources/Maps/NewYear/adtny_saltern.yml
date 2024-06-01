@@ -31241,7 +31241,7 @@ entities:
     - pos: -22.754051,9.462572
       parent: 2
       type: Transform
-- proto: ClothingHeadHatBeretBrigmedic
+- proto: ADTClothingHeadHatBeretBrigmedic
   entities:
   - uid: 4475
     components:

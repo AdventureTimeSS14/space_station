@@ -157,14 +157,14 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatBeretBrigmedic
-  name: brigmedical beret
+  id: ClothingHeadHatBeretMedic
+  name: medic beret
   description: White beret, looks like a cream pie on the head.
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hats/beret_brigmedic.rsi
+    sprite: Clothing/Head/Hats/beret_medic.rsi
   - type: Clothing
-    sprite: Clothing/Head/Hats/beret_brigmedic.rsi
+    sprite: Clothing/Head/Hats/beret_medic.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -1059,14 +1059,3 @@
               max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHatBeretMedic
-  name: medical beret
-  description: White beret that encourages you to be clean.
-  components:
-  - type: Sprite
-    sprite: Clothing/Head/Hats/beret_medic.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Hats/beret_medic.rsi

@@ -247,8 +247,8 @@
     modifiers:
       coefficients:
         Blunt: 0.8
-        Slash: 0.8
-        Piercing: 0.7
+        Slash: 0.7
+        Piercing: 0.6
         Heat: 0.7
         Radiation: 0.8
         Caustic: 0.7

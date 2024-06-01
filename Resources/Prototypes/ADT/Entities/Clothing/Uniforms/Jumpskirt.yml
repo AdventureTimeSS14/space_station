@@ -808,3 +808,14 @@
     sprite: ADT/Clothing/Uniforms/Jumpskirt/janimaid.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/janimaid.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformSkirtBrigmedicTurtleneck
+  name: brigmedic turtleneck
+  description: Comfortable and warm turtleneck. Especially for the guardian angel.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/turtleneck_brigmed.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/turtleneck_brigmed.rsi
