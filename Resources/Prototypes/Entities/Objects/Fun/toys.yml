@@ -537,6 +537,7 @@
   description: An adorable stuffed toy resembling the legendary rainbow carp.
   components:
   - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
     state: rainbowcarpplush
   - type: PointLight
     radius: 1.5
