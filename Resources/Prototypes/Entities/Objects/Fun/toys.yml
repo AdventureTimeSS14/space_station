@@ -1070,7 +1070,7 @@
   description: Specially designed to inflict maximum psychological damage to Syndicate operatives.
   components:
   - type: Sprite
-    sprite: Objects/Fun/toys.rsi
+    sprite: ADT/Objects/Fun/toys.rsi
     state: ntb
   - type: Item
     size: Small
