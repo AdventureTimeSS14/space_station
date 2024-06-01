@@ -196,7 +196,14 @@
       type: StorageBoundUserInterface
   - type: ContainerContainer
     containers:
-      batterSlot: !type:Container
+      batterSlot: !type:Container  # Исправление: определение типа контейнера
+        showEnts: False
+        occludes: True
+        ents: []
+      storagebase: !type:Container # Исправление: определение типа контейнера
+        showEnts: False
+        occludes: True
+        ents: []
   - type: Construction
     graph: ADTMuffinMold
     node: start
