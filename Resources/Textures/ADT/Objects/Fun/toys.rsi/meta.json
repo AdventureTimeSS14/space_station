@@ -167,6 +167,9 @@
         {
             "name": "ntb-inhand-right",
             "directions": 4
+        },
+        {
+            "name": "rainbowcarpplush"
         }
     ]
 }
