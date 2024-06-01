@@ -528,6 +528,7 @@
   description: An adorable stuffed toy resembling the exceedingly rare magicarp.
   components:
   - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
     state: magicplush
 
 - type: entity
