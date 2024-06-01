@@ -571,7 +571,7 @@
   description: Incredibly cute Mio, so soft and little shadowkin.
   components:
   - type: Sprite
-    sprite: Objects/Fun/toys.rsi
+    sprite: ADT/Objects/Fun/toys.rsi
     state: plusie_mio
 
 - type: entity
