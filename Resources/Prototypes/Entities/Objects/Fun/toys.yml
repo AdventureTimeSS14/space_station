@@ -528,6 +528,7 @@
   description: An adorable stuffed toy resembling the exceedingly rare magicarp.
   components:
   - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
     state: magicplush
 
 - type: entity
@@ -537,6 +538,7 @@
   description: An adorable stuffed toy resembling the legendary rainbow carp.
   components:
   - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
     state: rainbowcarpplush
   - type: PointLight
     radius: 1.5
@@ -551,6 +553,7 @@
   description: A holographic stuffed toy resembling science's nemesis - the holocarp.
   components:
   - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
     state: holoplush
 
 - type: entity
@@ -1070,11 +1073,11 @@
   description: Specially designed to inflict maximum psychological damage to Syndicate operatives.
   components:
   - type: Sprite
-    sprite: Objects/Fun/toys.rsi
+    sprite: ADT/Objects/Fun/toys.rsi
     state: ntb
   - type: Item
     size: Small
-    sprite: Objects/Fun/toys.rsi
+    sprite: ADT/Objects/Fun/toys.rsi
     heldPrefix: ntb
   - type: Damageable
     damageContainer: Inorganic
