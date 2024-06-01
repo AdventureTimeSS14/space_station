@@ -1074,7 +1074,7 @@
     state: ntb
   - type: Item
     size: Small
-    sprite: Objects/Fun/toys.rsi
+    sprite: ADT/Objects/Fun/toys.rsi
     heldPrefix: ntb
   - type: Damageable
     damageContainer: Inorganic
