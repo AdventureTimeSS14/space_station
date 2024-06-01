@@ -159,6 +159,14 @@
         },
         {
             "name": "magicplush"
+        },
+        {
+            "name": "ntb-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "ntb-inhand-right",
+            "directions": 4
         }
     ]
 }
