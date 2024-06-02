@@ -39,3 +39,61 @@
         - ReagentId: Vitamin
           Quantity: 1
 
+#Маффины
+- type: entity
+  id: ADTFoodBakedMuffinChocolate
+  parent: FoodBakedBase
+  name: chocolate muffin
+  description: A delicious and spongy little chocolate cake.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/muffins.rsi
+    state: muffin_chocolate
+  - type: Tag
+    tags:
+    - ADTMuffin
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 6
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Theobromine
+          Quantity: 1
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - chocolate
+
+- type: entity
+  id: ADTFoodBakedMuffinParty
+  parent: FoodBakedBase
+  name: party muffin
+  description: A delicious and spongy little party cake.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Food/muffins.rsi
+    state: muffin_party
+  - type: Tag
+    tags:
+    - ADTMuffin
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - ADTParty
+
+- type: entity
+  id: ADTFoodBakedMuffinJustKekc
+  parent: ADTFoodBakedMuffinParty
+  name: party muffin
+  description: Self insert. 
+  components:
+  - type: Sprite
+    state: justkekc
+  - type: Tag
+    tags:
+    - ADTMuffinKekc
+  - type: Food
+    useSound:
+      path: /Audio/ADT/kekc_scream.ogg

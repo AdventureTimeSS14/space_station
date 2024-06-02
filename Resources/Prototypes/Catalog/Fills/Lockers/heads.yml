@@ -197,6 +197,8 @@
       # Sirena-Underwear-End
       - id: ADTHOPJumpskirtWarm
       - id: ADTHOPJumpsuitWarm
+      - id: ADTClothingJumpsuitHopAlt
+      - id: ADTClothingJumpskirtHopAlt
       - id: ADTClothingHeadHatsBeretHOP
 
 - type: entity

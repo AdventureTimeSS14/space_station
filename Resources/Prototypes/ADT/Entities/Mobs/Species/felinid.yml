@@ -197,10 +197,10 @@
               Quantity: 2
     - type: Extractable
       grindableSolutionName: hairball
-    # - type: Tag
-    #   tags:
-    #     - Recyclable
-    #     - Trash
+    - type: Tag
+      tags:
+      - Recyclable
+      - Trash
 
 - type: entity
   id: ActionHairball

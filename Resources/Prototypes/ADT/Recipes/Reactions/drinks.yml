@@ -242,7 +242,6 @@
   products:
     ADTAppleMartini: 6
 
-
 - type: reaction
   id: ADTBacardiApple
   reactants:
@@ -255,52 +254,76 @@
   products:
     ADTBacardiApple: 3
 
+#охохо, сейчас такое будет.
+- type: reaction
+  id: ADTElderGuards
+  reactants:
+    Vodka:
+      amount: 2
+    ADTCitrusBalance:
+      amount: 2
+    Rum:
+      amount: 1
+    Grenadine:
+      amount: 1
+    Vinegar:
+      amount: 1
+    Wine:
+      amount: 1
+    Gin:
+      amount: 1
+    Whiskey:
+      amount: 1
+  products:
+    ADTElderGuards: 10 #polar bear heater. типо напиток из фильма, который по факту был придуман как шутка.
+
 #день святого валентина
 
-#- type: reaction
-#  id: ADTSerumLove
-#  reactants:
-#    IrishCarBomb:
-#      amount: 1
-#    Blood:
-#      amount: 5
-#  products:
-#    ADTSerumLove: 6
+- type: reaction
+  id: ADTSerumLove
+  reactants:
+    IrishCarBomb:
+      amount: 1
+    Blood:
+      amount: 5
+  products:
+    ADTSerumLove: 6
 
-#- type: reaction
-#  id: ADTRossini
-#  reactants:
-#    Wine:
-#      amount: 1
-#    Cream:
-#      amount: 1
-#  products:
-#    ADTRossini: 2
+- type: reaction
+  id: ADTRossini
+  reactants:
+    Wine:
+      amount: 1
+    Cream:
+      amount: 1
+    JuiceBerry:
+      amount: 1
+  products:
+    ADTRossini: 3
 
+- type: reaction
+  id: ADTKirRoyal
+  reactants:
+    Champagne:
+      amount: 5
+    Cream:
+      amount: 1
+  products:
+    ADTKirRoyal: 6
 
-#- type: reaction
-#  id: ADTKirRoyal
-#  reactants:
-#    Champagne:
-#      amount: 5
-#    Cream:
-#      amount: 1
-#  products:
-#    ADTKirRoyal: 6
-
-#- type: reaction
-#  id: ADTCosmopolitan
-#  reactants:
-#    Wine:
-#      amount: 2
-#    JuiceLemon:
-#      amount: 1
-#    Ice:
-#      amount: 1
-#    Vodka:
-#      amount: 2
-#  products:
-#    ADTCosmopolitan: 6
+- type: reaction
+  id: ADTCosmopolitan
+  reactants:
+    Wine:
+      amount: 2
+    JuiceLemon:
+      amount: 1
+    Ice:
+      amount: 1
+    Vodka:
+      amount: 2
+  products:
+    ADTCosmopolitan: 6
 
 - type: reaction
   id: ADTChampagneMandarin
