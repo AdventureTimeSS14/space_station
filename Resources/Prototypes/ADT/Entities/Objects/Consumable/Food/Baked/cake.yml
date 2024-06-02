@@ -90,10 +90,30 @@
   description: Self insert. 
   components:
   - type: Sprite
-    state: justkekc
+    noRot: true
+    drawdepth: Mobs
+    sprite: ADT/Objects/Consumable/Food/muffins.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: justkekc
   - type: Tag
     tags:
     - ADTMuffinKekc
   - type: Food
     useSound:
       path: /Audio/ADT/kekc_scream.ogg
+  - type: GhostRole
+    prob: 1
+    name: ghost-role-information-Kekc-name
+    allowMovement: true
+    description: ghost-role-information-Kekc-description
+    rules: ghost-role-information-Kekc-rules
+  - type: GhostTakeoverAvailable
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3
+    baseSprintSpeed : 5
+  - type: CanEscapeInventory
+    baseResistTime: 3
+  - type: Examiner
+  - type: Speech
+    speechVerb: SmallMob
