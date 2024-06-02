@@ -9,3 +9,7 @@ ent-ADTRandomHumanoidSpawnerCBURNUnit = Майор РХБЗЗ
     .desc = { "" }
 ghost-role-information-cmnd-cburn-agent-name = Майор РХБЗЗ
 ghost-role-information-cmnd-cburn-agent-description = Высококвалифицированный командир РХБЗЗ, способный справиться с любыми угрозами.
+
+ghost-role-information-Kekc-name = Живой маффин
+ghost-role-information-Kekc-description = Непонятным образом ваша душа стала счастливчиком оказаться в теле хлебобулочного изделия.
+ghost-role-information-Kekc-rules = Вы живой и очень аппетитный маффин. Ваша задача найти себе место в мире, где каждая крыса хочет отведать вас.
