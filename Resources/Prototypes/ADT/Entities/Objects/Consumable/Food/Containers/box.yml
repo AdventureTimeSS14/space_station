@@ -196,10 +196,10 @@
       type: StorageBoundUserInterface
   - type: ContainerContainer
     containers:
-      # batterSlot: !type:Container  # Исправление: определение типа контейнера
-      #   showEnts: False
-      #   occludes: True
-      #   ents: []
+      batterSlot: !type:Container  # Исправление: определение типа контейнера
+        showEnts: False
+        occludes: True
+        ents: []
       storagebase: !type:Container
         ents: []
   - type: Construction
