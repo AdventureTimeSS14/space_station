@@ -209,7 +209,7 @@
   - type: StorageFill
     contents:
       - id: ClothingOuterHardsuitEngineeringWhite
-      - id: ClothingMaskBreath
+      - id: ADTClothingMaskGasCE
       - id: OxygenTankFilled
       - id: NitrogenTankFilled
       - id: ClothingNeckCloakCe
