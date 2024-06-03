@@ -100,4 +100,4 @@ guide-entry-servis-kluven = Клоун
 guide-entry-servis-reporter = Репортёр
 guide-entry-servis-boxer = Боксёр
 guide-entry-servis-musical = Музыкант
-guide-entry-servis-passagir = Пассажир
+guide-entry-servis-passagir = Ассистент
