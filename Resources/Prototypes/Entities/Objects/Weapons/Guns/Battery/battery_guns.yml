@@ -740,5 +740,5 @@
   - type: Clothing
     sprite: ADT/Objects/Weapons/Guns/Battery/ion_rifle.rsi
   - type: Battery
-    maxCharge: 3000
-    startingCharge: 3000
+    maxCharge: 10000
+    startingCharge: 10000
