@@ -63,7 +63,8 @@
     sprite: ADT/Clothing/Eyes/Glasses/blueshield.rsi
   - type: Clothing
     sprite: ADT/Clothing/Eyes/Glasses/blueshield.rsi
-
+    
+- type: entity
   parent: ClothingEyesBase
   id: ADTClothingEyesGlassesMed
   name: medical sunglasses
