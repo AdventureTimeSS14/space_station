@@ -187,3 +187,12 @@
 
 - type: Tag
   id: ADTCartridgeRocketSapogHEAT
+
+- type: Tag
+  id: ADTMuffin
+  
+- type: Tag
+  id: ADTMuffinKekc
+  
+- type: Tag
+  id: ADTCakeBatter

@@ -14,3 +14,7 @@ ent-ADTClothingUniformCyberSun = костюм Киберсан
     .desc = Костюм Киберсан, стильно и практично !
 ent-ADTClothingUniformSupremeCommanderJumpsuit = джемпер верховного главнокомандующего
     .desc = Подходит для ситуаций супергалактического масштаба.
+ent-ADTClothingUniformBrigmedicTurtleneck = водолазка бригмедика
+    .desc = Удобная и тёплая водолазка ангела-хранителя брига.
+ent-ADTClothingUniformSkirtBrigmedicTurtleneck = юбка-водолазка бригмедика
+    .desc = Удобная и тёплая юбка-водолазка ангела-хранителя брига.

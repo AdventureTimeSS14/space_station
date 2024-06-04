@@ -58,6 +58,9 @@ apple-martini-desc = Вермут с джином и ароматом яблок
 bacardi-apple-name = яблоко Бакарди
 bacardi-apple-desc = "Вам нравятся лонги и физзы?"
 
+elder-guards-name = старая гвардия
+elder-guards-desc = Рецепт данного напитка когда-то давно был выдуман находу одним детективом с протезом руки.
+
 reagent-name-serum-love = сыворотка любви
 reagent-desc-serum-love = Хоть этот напиток называется «сыворотка любви", но он ей не является.
 

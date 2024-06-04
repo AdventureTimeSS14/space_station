@@ -80,16 +80,6 @@
 
 #ADT
 - type: cargoProduct
-  id: SecurityBrigMedLocker
-  icon:
-    sprite: Structures/Storage/closet.rsi
-    state: brigmedlocked
-  product: ADTCrateSecurityBrigmedic
-  cost: 4000
-  category: cargoproduct-category-name-security
-  group: market
-
-- type: cargoProduct
   id: SecurityHardsuit
   icon:
     sprite: Clothing/OuterClothing/Hardsuits/security.rsi

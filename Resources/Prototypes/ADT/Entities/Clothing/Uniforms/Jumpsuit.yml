@@ -1304,30 +1304,54 @@
     sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_blueshield.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: [ ClothingUniformBase, BaseFoldable ]
   id: ADTClothingUniformCroupier
   name: crupier jumpsuit
   description: Fancy.
   components:
-  #- type: Appearance
-  #- type: Foldable
-    #canFoldInsideContainer: true
-    #unfoldVerbText: fold-put-on-verb
-    #foldVerbText: fold-pull-off-verb
-  #- type: FoldableClothing
-    #foldedEquippedPrefix: vest
-    #foldedHeldPrefix: vest
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: fold-put-on-verb
+    foldVerbText: fold-pull-off-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: vest
+    foldedHeldPrefix: vest
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/uniform_croupier.rsi
-    #equippedPrefix: vest
   - type: Sprite
     sprite: ADT/Clothing/Uniforms/Jumpsuit/uniform_croupier.rsi
-    #layers:
-    #- state: icon
-      #map: [ "unfoldedLayer" ]
-    #- state: icon_vest
-      #map: ["foldedLayer"]
-      #visible: false
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon_vest
+      map: ["foldedLayer"]
+      visible: false
+
+- type: entity
+  parent: [ ClothingUniformBase, BaseFoldable ]
+  id: ADTClothingJumpsuitHopAlt
+  name: head of personell's business suit
+  description: Fancy.
+  components:
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: fold-put-on-verb
+    foldVerbText: fold-pull-off-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: vest
+    foldedHeldPrefix: vest
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_alt_hop.rsi
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_alt_hop.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon_vest
+      map: ["foldedLayer"]
+      visible: false
 
 - type: entity
   parent: ClothingUniformJumpsuitSec
@@ -1662,3 +1686,14 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/michael_suit.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/michael_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformBrigmedicTurtleneck
+  name: brigmedic turtleneck
+  description: Comfortable and warm turtleneck. Especially for the guardian angel.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/turtleneck_brigmed.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/turtleneck_brigmed.rsi
