@@ -4,7 +4,7 @@
     "x": 32,
     "y": 32
   },
-  "copyright": "Taken from tgstation, brigmedic locker is a resprited CMO locker by PuroSlavKing (Github). Central Command (cc) and blueshield made by Tamioki. Paramedic ReSprite made by discord: prazat911 for Adventure Time",
+  "copyright": "Taken from tgstation, brigmedic locker is a resprited CMO locker by PuroSlavKing (Github). Paramedic ReSprite made by discord: prazat911 for Adventure Time",
   "license": "CC-BY-SA-3.0",
   "states": [
     {
@@ -15,15 +15,6 @@
     },
     {
       "name": "abductor_open"
-    },
-    {
-      "name": "blueshield"
-    },
-    {
-      "name": "blueshield_door"
-    },
-    {
-      "name": "blueshield_open"
     },
     {
       "name": "agentbox"
@@ -555,15 +546,6 @@
     },
     {
       "name": "representative_door"
-    },
-    {
-      "name": "cc"
-    },
-    {
-      "name": "cc_door"
-    },
-    {
-      "name": "cc_open"
     },
     {
           "name": "brigmedlocked"

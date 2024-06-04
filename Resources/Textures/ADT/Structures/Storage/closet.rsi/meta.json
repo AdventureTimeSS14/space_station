@@ -4,7 +4,7 @@
     "x": 32,
     "y": 32
   },
-  "copyright": "Taken from tgstation. Bio Pathologist and Paramedic made by JustKekc.",
+  "copyright": "Taken from tgstation. Bio Pathologist and Paramedic made by JustKekc. Central Command (cc) and blueshield made by Tamioki.",
   "license": "CC-BY-SA-3.0",
   "states": [
     {
@@ -21,6 +21,24 @@
     },
     {
       "name": "welded"
+    },
+    {
+      "name": "cc"
+    },
+    {
+      "name": "cc_door"
+    },
+    {
+      "name": "cc_open"
+    },
+    {
+      "name": "blueshield"
+    },
+    {
+      "name": "blueshield_door"
+    },
+    {
+      "name": "blueshield_open"
     },
     {
       "name": "bio_pathologist"

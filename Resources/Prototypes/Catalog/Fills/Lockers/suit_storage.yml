@@ -231,20 +231,6 @@
   - type: AccessReader
     access: [["Captain"]]
 
-#Blueshield's hardsuit
-- type: entity
-  id: SuitStorageBlueshield
-  parent: SuitStorageBase
-  suffix: Blueshield
-  components:
-  - type: StorageFill
-    contents:
-        - id: OxygenTankFilled
-        - id: BlueshieldSuit
-        - id: ClothingMaskBreath
-  - type: AccessReader
-    access: [["BlueShield"]]
-
 #Salvage hardsuit
 - type: entity
   id: SuitStorageSalv

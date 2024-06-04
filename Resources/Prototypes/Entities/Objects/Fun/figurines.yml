@@ -94,15 +94,6 @@
 
 - type: entity
   parent: BaseFigurine
-  id: ToyFigurineBlueshieldOfficer
-  name: blueshield officer figure
-  description: A figurine depicting the blueshield officer, austere and blue, stands guard over the station government. I guess.
-  components:
-  - type: Sprite
-    state: blueshield
-
-- type: entity
-  parent: BaseFigurine
   id: ToyFigurineCaptain
   name: captain figure
   description: A figurine depicting the standard outfit of a captain belonging to a civilian-sector Nanotrasen vessel.

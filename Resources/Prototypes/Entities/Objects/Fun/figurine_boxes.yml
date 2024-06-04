@@ -42,6 +42,8 @@
         orGroup: SpacemenFig
       - id: ToyFigurineHeadOfSecurity
         orGroup: SpacemenFig
+      - id: ToyFigurineBrigmedic
+        orGroup: SpacemenFig
       - id: ToyFigurineBlueshieldOfficer
         orGroup: SpacemenFig
       - id: ToyFigurineWarden
