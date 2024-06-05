@@ -93,7 +93,6 @@
       - id: BurnAutoInjector
       - id: RadAutoInjector
       - id: AntiPoisonMedipen
-      - id: BruteAutoInjector
 
 - type: entity
   id: MedkitCombatFilled
