@@ -322,7 +322,7 @@
     - state: omnilaser
       shader: unshaded
   - type: Projectile
-    impactEffect: BulletImpactEffectLaser
+    impactEffect: BulletImpactEffectDisabler
     damage:
       types:
         Heat: 25
