@@ -90,7 +90,6 @@
         amount: 2
       - id: RegenerativeMesh
         amount: 2
-      - id: BurnAutoInjector
       - id: RadAutoInjector
       - id: AntiPoisonMedipen
 
