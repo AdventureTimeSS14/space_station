@@ -89,7 +89,7 @@
       - id: MedicatedSuture
         amount: 2
       - id: RegenerativeMesh
-        amount: 2
+        amount: 1
       - id: RadAutoInjector
       - id: AntiPoisonMedipen
 
