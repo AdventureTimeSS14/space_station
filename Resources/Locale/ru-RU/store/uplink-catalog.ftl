@@ -104,6 +104,8 @@ uplink-voice-mask-name = Голосовая маска
 uplink-voice-mask-desc = Противогаз, позволяющий подстраивать свой голос под кого угодно.
 uplink-radio-jammer-name = Глушитель связи
 uplink-radio-jammer-desc = При активации это устройство блокирует любую исходящую поблизости радиосвязь.
+uplink-syndicate-weapon-module-name = Оружейный модуль киборга
+uplink-syndicate-weapon-module-desc = Этот модуль даст киборгу продвинутый лазерный пистолет и мачете.
 
 # Implants
 
@@ -132,6 +134,8 @@ uplink-emp-kit-name = Набор отключения электричества
 uplink-emp-kit-desc = Ультимативное противодействие энергетическому оружию: Выводит из строя станнеры, разряжает дубинки-шокеры, садит лазерное оружие! Содержит 3 ЭМИ гранаты и имплантер ЭМИ. Примечание: не выводит из строя настоящее огнестрельное оружие.
 uplink-observation-kit-name = набор для наблюдений
 uplink-observation-kit-desc = Картонная коробка для хранения вещей.Включает в себя портативный монитор,солнцезащитные очки,плату монитора камер наблюдения.
+uplink-decoy-kit-name = Набор обманок
+uplink-decoy-kit-desc = Новейшая технология отвлечения внимания прямиком от отдела исследований. В комплект входят пять реалистичных воздушных шаров, четыре гранаты-обманки и несколько хлопушек!
 # Bundles
 uplink-meds-bundle-name = Медицинский набор
 uplink-meds-bundle-desc = Все, что нужно для возвращения в строй ваших товарищей: главным образом, боевая аптечка, дефибриллятор и три боевых медипена.
@@ -165,6 +169,8 @@ uplink-power-sink-name = { ent-PowerSink }
 uplink-power-sink-desc = Вытягивает огромное количество электроэнергии из сети. Подключите его к проводам с помощью гаечного ключа.
 uplink-carp-dehydrated-name = { ent-DehydratedSpaceCarp }
 uplink-carp-dehydrated-desc = { ent-DehydratedSpaceCarp.desc }
+uplink-singularity-beacon-name = Маяк сингулярности
+uplink-singularity-beacon-desc = Устройство, притягивающее сингулярность. Должно быть закреплено и запитано. Будучи поглощённым, заставляет сингулярность расти.
 # Job Specific
 uplink-gatfruit-seeds-name = { ent-GatfruitSeeds }
 uplink-gatfruit-seeds-desc = И кто сказал, что пушки не растут на деревьях?
@@ -229,8 +235,12 @@ uplink-syndicate-segway-crate-name = { ent-VehicleSyndicateSegway }
 uplink-syndicate-segway-crate-desc = { ent-VehicleSyndicateSegway.desc }
 uplink-syndicate-sponge-box-name = Коробка губок Синдиката
 uplink-syndicate-sponge-box-desc = Коробка с 6 губками Синдиката, замаскированными под обезьяньи кубики, которые при контакте с водой превращаются в различных злобных диких животных.
-uplink-slipocalypse-clustersoap-name = граната мылопокалипсиса
+uplink-slipocalypse-clustersoap-name = Граната мылопокалипсиса
 uplink-slipocalypse-clustersoap-desc = Рассыпается вокруг небольших кусочков мыла марки syndicate после того, как их бросили, эти кусочки мыла испаряются через 60 секунд.
+uplink-clothing-conducting-gloves-name = Токопроводящие перчатки
+uplink-clothing-conducting-gloves-desc = Выглядят в точности как изолированные перчатки, но шокируют вас гораздо сильнее, чем если бы у вас вообще ничего не было! Их лучше всего дарить пассажирам, которые вам действительно не нравятся.
+uplink-hardsuit-syndieelite-name = Элитный скафандр синдиката
+uplink-hardsuit-syndieelite-desc = Элитная версия кроваво-красного скафандра с повышенной подвижностью и огнестойкостью. Собственность Мародёров Горлакса.
 # Pointless
 uplink-revolver-cap-gun-name = { ent-RevolverCapGun }
 uplink-revolver-cap-gun-desc = { ent-RevolverCapGun.desc }
@@ -262,6 +272,8 @@ uplink-syndicate-pai-name = пИИ Синдиката
 uplink-syndicate-pai-desc = Вариант пИИ от Синдиката, с доступом к радиоканалу Синдиката. Полезность не гарантируется.
 uplink-bribe-name = Набор лоббиста
 uplink-bribe-desc = Сердечный подарок, который может помочь вам изменить чьё-то мнение. Настоящие или фальшивые? Да.
+uplink-barber-scissors-name = Парикмахерские ножницы
+uplink-barber-scissors-desc = Хороший инструмент для того, чтобы сделать красивую стрижку своему коллеге-агенту, если, конечно вы не хотите сделать её себе.
 
 uplink-snack-box-name = снэкбокс Синдиката
 uplink-snack-box-desc = Коробка вкуснеших закусок и напитков, которые вы можете съесть в одиночку или со своей командой. Включает в себя одну игрушку, которая вряд ли вам нужна.

@@ -370,3 +370,6 @@ ent-HighSecArmoryLocked = { ent-HighSecDoor }
 ent-HighSecCentcomLocked = { ent-HighSecDoor }
     .suffix = Центком, Закрыт
     .desc = { ent-HighSecDoor.desc }
+ent-AirlockHatchSyndicate = герметичный люк
+    .desc = { ent-AirlockGlass.desc }
+    .suffix = Люк, Синдикат, Закрыт
