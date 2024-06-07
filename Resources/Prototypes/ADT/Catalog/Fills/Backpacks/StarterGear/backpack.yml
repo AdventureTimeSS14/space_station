@@ -246,7 +246,7 @@
     - type: Sprite
       sprite: ADT/Clothing/Back/blueshield_backpack.rsi
 
-#СССП штуки 
+#СССП штуки
 - type: entity
   noSpawn: true
   parent: ADTClothingBackpackOR40L
@@ -309,15 +309,13 @@
         - id: CombatMedipen
           amount: 3
         - id: OmnizineChemistryBottle
-          amount: 2
         - id: EphedrineChemistryBottle
-          amount: 2
         - id: ADTCombatHypo
         - id: DoubleEmergencyOxygenTankFilled
         - id: Zipties
-          amount: 3
+          amount: 2
         - id: ADTMagazineSR3M
-          amount: 4
+          amount: 3
         - id: MagazineBoxLightRifleRubber
 
 - type: entity
@@ -333,13 +331,11 @@
         - id: CombatMedipen
           amount: 2
         - id: OmnizineChemistryBottle
-          amount: 2
         - id: EphedrineChemistryBottle
-          amount: 2
         - id: ADTCombatHypo
         - id: DoubleEmergencyOxygenTankFilled
         - id: Zipties
-          amount: 3
+          amount: 2
         - id: ADTMagazineUSSPLMG
           amount: 2
 
@@ -360,7 +356,7 @@
           amount: 2
         - id: SyndiHypo
         - id: OmnizineChemistryBottle
-          amount: 4     
+          amount: 4
 
 - type: entity
   id: ADTWardrobeKBSFilled
