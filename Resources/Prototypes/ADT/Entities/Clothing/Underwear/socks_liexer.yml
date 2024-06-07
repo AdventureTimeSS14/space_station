@@ -1,8 +1,0 @@
-- type: entity
-  parent: ClothingUnderwearSocksBase
-  id: ADTClothingUnderSocksLiExEr
-  name: socks of LiExEr
-  description: Socks for programmers with a cutout for the sharp claws of the Vulpkanin! They smell like tangerines.
-  components:
-  - type: Sprite
-    sprite: ADT/Clothing/Underwear/Socks/socks_liexer.rsi

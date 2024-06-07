@@ -258,3 +258,9 @@ ImprovisedExplosiveFuel: FireBombFuel
 
 # 2024-04-10
 LGBTQHandyFlag: Ash 
+
+# 2024-06-01
+ClothingHeadHatBeretSecurityMedic: ADTClothingHeadHatBeretBrigmedic
+ClothingHeadHelmetSecurityMedic: ClothingHeadHelmetBasic
+ClothingOuterVestArmorMedSec: ClothingOuterArmorBasicSlim 
+ClothingOuterVestSecurityMedic: ClothingOuterArmorBasicSlim

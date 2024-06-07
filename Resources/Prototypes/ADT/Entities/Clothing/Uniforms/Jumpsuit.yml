@@ -1281,27 +1281,396 @@
     sprite: ADT/Clothing/Uniforms/Jumpsuit/trader.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: [ ClothingUniformBase, BaseFoldable ]
   id: ADTClothingUniformCroupier
   name: crupier jumpsuit
   description: Fancy.
   components:
-  #- type: Appearance
-  #- type: Foldable
-    #canFoldInsideContainer: true
-    #unfoldVerbText: fold-put-on-verb
-    #foldVerbText: fold-pull-off-verb
-  #- type: FoldableClothing
-    #foldedEquippedPrefix: vest
-    #foldedHeldPrefix: vest
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: fold-put-on-verb
+    foldVerbText: fold-pull-off-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: vest
+    foldedHeldPrefix: vest
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpsuit/uniform_croupier.rsi
-    #equippedPrefix: vest
   - type: Sprite
     sprite: ADT/Clothing/Uniforms/Jumpsuit/uniform_croupier.rsi
-    #layers:
-    #- state: icon
-      #map: [ "unfoldedLayer" ]
-    #- state: icon_vest
-      #map: ["foldedLayer"]
-      #visible: false
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon_vest
+      map: ["foldedLayer"]
+      visible: false
+
+- type: entity
+  parent: [ ClothingUniformBase, BaseFoldable ]
+  id: ADTClothingJumpsuitHopAlt
+  name: head of personell's business suit
+  description: Fancy.
+  components:
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: fold-put-on-verb
+    foldVerbText: fold-pull-off-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: vest
+    foldedHeldPrefix: vest
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_alt_hop.rsi
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/jumpsuit_alt_hop.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon_vest
+      map: ["foldedLayer"]
+      visible: false
+
+- type: entity
+  parent: ClothingUniformJumpsuitSec
+  id: ADTClothingUniformJumpsuitRavenFriskis
+  suffix: Only Friskis
+  name: security raven jumpsuit
+  description: A jumpsuit made of strong material, providing robust protection.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/raven_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/raven_suit.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformIlisium
+  name: Suit Ilisiom
+  description: Suit Ilisiom
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/uniform_ili.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/uniform_ili.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ADTClothingUniformKivchikJumpskirt
+  suffix: Kivchik
+  name: black jumpsuit of retribution
+  description: Black jumpsuit with golden stripes and red bandage.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/kivchikset_skirt.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/kivchikset_skirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingGorkaset
+  name: Gorkaset
+  description: ""
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Gorka_Clothing_set.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Gorka_Clothing_set.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.9
+        Piercing: 0.85
+        Heat: 0.8
+  - type: GroupExamine
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTCapitanUSSPUniform
+  name: the uniform of the captain of the SSS fleet
+  description: The standard casual uniform of a captain of the USSP Space Fleet. YOU'RE IN CHARGE HERE! unless, of course, there are people with a rank higher than you nearby...
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/USSP/capitan_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/USSP/capitan_USSP.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTAdmiralUSSPUniform
+  name: the uniform of the admiral of the SSS fleet
+  description: The standard casual uniform of a admiral of the USSP Space Fleet.
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/USSP/admiral_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/USSP/admiral_USSP.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTFlotUSSPUniform
+  name: uniform of an officer of the SSS Fleet
+  description: The standard uniform of a field and staff officer of the Space Fleet of the USSP
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/USSP/flot_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/USSP/flot_USSP.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTPilotUSSPUniform
+  name: USSP pilot's uniform
+  description: Personal protective equipment for the pilot to counteract low pressure in case of cabin depressurization.
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/USSP/pilot_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/USSP/pilot_USSP.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTSeniorUSSPUniform
+  name: the uniform of the petty officer of the USSP fleet
+  description: The standard daily uniform of senior officers of the USSP space Fleet, they mostly do not take part in combat operations, most often sit in headquarters and command junior officers.
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/USSP/senior_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/USSP/senior_USSP.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTParatrooperUSSPUniform
+  name: the uniform of the USSP paratrooper
+  description: A set of clothes for Space Marines of the USSP
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/USSP/paratrooper_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/USSP/paratrooper_USSP.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTInfantrymanTUSSPUniform
+  name: the uniform of the SSP infantryman
+  description: A set of clothes for a Space marine USSP
+  suffix: USSP
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/USSP/infantryman_USSP.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/USSP/infantryman_USSP.rsi
+
+#halloween
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTOtherworldClownCostume
+  name: otherworldly clown costume
+  description: A costume of an ancient being who came from another dimension to frighten people and feed on their fears... sounds like the work of a clown!
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/otherworld_clown.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/otherworld_clown.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTBioMercUniform
+  name: bio-mercenary uniform
+  description: Congratulations, you were born in this world where the value of life is zero. In this world, everything is already rotten, and everything is in eternal stagnation, and there is no need to hurry and make the world better or worse. You can only exist in this world, saturated with hatred for everything. You are just a biomass among other biomass.
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/bio_merc.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/bio_merc.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTJasonCostume
+  name: maniac costume
+  description: Wear a hockey player mask and kill the victims with a machete.
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/jason.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/jason.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTVyasovCostume
+  name: Vyasov costume
+  description: A nightmate on the Vyasov station!
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/vyasov.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/vyasov.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTHotlineMiamiUniform
+  name: student uniform
+  description: A legend told, that this uniform wear a Miami killer
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/hotlinemiami.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/hotlinemiami.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTServantOfEvilUniform
+  name: suit of the servant of evil
+  description: suit of the servant of evil
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/servant_evil.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/servant_evil.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTDudeShirt
+  name: dude's t-shirt
+  description: dude's t-shirt
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/dude_shirt.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/dude_shirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTSquidGameOrganizerSuit
+  name: squid game organizer suit
+  description: squid game organizer suit
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/squid_org.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/squid_org.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTSquidGamePlayerSuit
+  name: squid game player suit
+  description: squid game player suit
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/squid_player.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/squid_player.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTTagillaSuit
+  name: Tagilla pants
+  description: Tagilla pants
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/tagilla_pants.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/tagilla_pants.rsi
+  #- type: Storage
+  #  capacity: 5
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTDJClownSuit
+  name: DJ clown suit
+  description: DJ clown suit
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/djclown.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/djclown.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTVampireSuit
+  name: vampire suit
+  description: vampire suit
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/vampire_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/vampire_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTVergileSuit
+  name: Vergile suit
+  description: Vergile suit
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/vergile_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/vergile_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTXenomorphSuit
+  name: xenomorph suit
+  description: xenomorph suit
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/xenomorph_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/xenomorph_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTHalloweenMichaelMyersSuit
+  name: Michael Myers suit
+  description: Michael Myers suit
+  suffix: Halloween
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/michael_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/Halloween/michael_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformBrigmedicTurtleneck
+  name: brigmedic turtleneck
+  description: Comfortable and warm turtleneck. Especially for the guardian angel.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/turtleneck_brigmed.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpsuit/turtleneck_brigmed.rsi

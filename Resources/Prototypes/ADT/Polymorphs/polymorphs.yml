@@ -1,4 +1,5 @@
-#ADTP - Polymorph
+#ADTP - Polymorph. 
+#By:1Stepka1 мужик так никто нормально не называет,надо полное название ADTPolymorph
 #человек и дворф
 - type: polymorph
   id: ADTPMonkey
@@ -359,3 +360,14 @@
     revertOnCrit: true
     revertOnDeath: true
     duration: 30
+
+- type: polymorph
+  id: ADTWizardForcedVulpkanin
+  configuration:
+    entity: MobVulpkanin
+    forced: true
+    inventory: None
+    transferName: true
+    transferDamage: true
+    revertOnCrit: false
+    revertOnDeath: true

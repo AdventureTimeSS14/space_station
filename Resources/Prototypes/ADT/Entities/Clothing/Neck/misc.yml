@@ -9,22 +9,38 @@
     - type: Clothing
       sprite: ADT/Clothing/Neck/gold_chain.rsi #спрайты от prazat911
 
-#Нагрудная камера
+
 - type: entity
   parent: ClothingNeckBase
-  id: ADTClothingNeckSecCam
-  name: security chest camera
-  description: security chest camera
+  id: ADTClownCollarCaterpillar
+  name: clown collar-caterpillar
+  description: A once-extinct attribute of a Buffoon and a Clown
+  suffix: Halloween
   components:
     - type: Sprite
-      sprite: ADT/Clothing/Neck/sec_camera.rsi 
-    - type: Clothing
-      sprite: ADT/Clothing/Neck/sec_camera.rsi
-    - type: DeviceNetwork
-      deviceNetId: Wired
-      receiveFrequencyId: SurveillanceCameraSecurity
-      transmitFrequencyId: SurveillanceCamera
-    - type: SurveillanceCamera
-      networkSet: true
-    - type: Eye
-    - type: WiredNetworkConnection
+      sprite: ADT/Clothing/Neck/Halloween/clowncollar.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: SirenaChokerWithSpike
+  name: Choker Spike
+  description: If you turn it back and forth, then it will be a weapon of torture
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Chokers/choker_with_spike.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: SirenaChokerWithHeart
+  name: Choker Heart
+  description: For good crew members
+  components:
+    - type: Sprite
+      sprite: ADT/Clothing/Neck/Chokers/choker_with_heart.rsi
+
+- type: entity
+  id: ADTClothingNeckNanoTrasenPinSchrodinger
+  parent: ClothingNeckNanoTrasenPin
+  components:
+  - type: TypingIndicatorClothing
+    proto: lawyer #lawyer  robot  alien  moth
