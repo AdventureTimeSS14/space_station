@@ -14,7 +14,7 @@
   - type: Item
     sprite: ADT/Objects/Storage/weaponcasebs.rsi
   - type: Storage
-    maxItemSize: Huge
+    maxItemSize: Normal
     grid:
     - 0,0,1,0
     - 0,1,0,1
