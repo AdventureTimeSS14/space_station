@@ -223,6 +223,9 @@
     qualities:
       - Sawing
     speed: 1.5
+  - type: Tag
+    tags:
+    - SawElectric
 
 - type: entity
   name: advanced circular saw

@@ -240,3 +240,14 @@
   icon:
     sprite: Objects/Weapons/Bombs/pipebomb.rsi
     state: icon
+
+- type: construction
+  name: Chainsaw
+  id: chainsaw
+  graph: ChainsawGraph
+  startNode: start
+  targetNode: chainsaw
+  category: construction-category-weapons
+  description: "chainsaw"
+  icon: { sprite: Objects/Weapons/Melee/chainsaw.rsi, state: icon }
+  objectType: Item

@@ -98,6 +98,9 @@
     price: 40
   - type: IgnitionSource
     temperature: 700
+  - type: Tag
+    tags:
+    - Welder
 
 - type: entity
   name: industrial welding tool

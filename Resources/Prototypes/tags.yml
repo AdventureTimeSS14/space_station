@@ -1305,3 +1305,9 @@
 
 - type: Tag
   id: Microreactor
+
+- type: Tag
+  id: SawElectric
+
+- type: Tag
+  id: Welder
