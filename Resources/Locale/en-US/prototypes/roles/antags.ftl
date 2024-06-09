@@ -36,3 +36,5 @@ roles-antag-terminator-objective = Kill the target at all costs, the future depe
 
 roles-antag-changeling-name = Changeling
 roles-antag-changeling-objective = Use your special alien abilites to aid in completing your objectives.
+roles-antag-dragon-name = Space Dragon
+roles-antag-dragon-objective = Create a carp army to take over this quadrant.

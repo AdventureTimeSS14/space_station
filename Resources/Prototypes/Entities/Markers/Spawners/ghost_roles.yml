@@ -1,4 +1,15 @@
 - type: entity
+  abstract: true
+  parent: MarkerBase
+  id: BaseAntagSpawner
+  name: ghost role spawn point
+  components:
+  - type: GhostRole
+    raffle:
+      settings: default
+  - type: GhostRoleAntagSpawner
+
+- type: entity
   id: SpawnPointGhostRatKing
   name: ghost role spawn point
   suffix: rat king
@@ -93,10 +104,8 @@
 
 - type: entity
   noSpawn: true
+  parent: BaseAntagSpawner
   id: SpawnPointLoneNukeOperative
-  name: ghost role spawn point
-  suffix: loneops
-  parent: MarkerBase
   components:
   - type: GhostRole
     name: ghost-role-information-loneop-name
@@ -149,11 +158,9 @@
     description: roles-antag-nuclear-operative-objective
 
 - type: entity
-  parent: MarkerBase
-  id: SpawnPointGhostDragon
   noSpawn: true
-  name: ghost role spawn point
-  suffix: dragon
+  parent: BaseAntagSpawner
+  id: SpawnPointGhostDragon
   components:
   - type: GhostRole
     name: ghost-role-information-space-dragon-name

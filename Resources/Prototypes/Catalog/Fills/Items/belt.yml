@@ -80,6 +80,7 @@
       - id: CleanerGrenade
         amount: 2
       - id: FlashlightLantern
+      - id: LightReplacer
 
 - type: entity
   id: ClothingBeltMedicalFilled
@@ -120,6 +121,7 @@
     contents:
     - id: HydroponicsToolMiniHoe
     - id: HydroponicsToolSpade
+    - id: HydroponicsToolClippers
     - id: RobustHarvestChemistryBottle
 
 - type: entity

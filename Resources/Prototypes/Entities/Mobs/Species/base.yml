@@ -151,6 +151,7 @@
     - TemporaryBlindness
     - Pacified
     - StaminaModifier
+    - Flashed
     - ADTHallucinations
   - type: Reflect
     enabled: false
@@ -161,6 +162,7 @@
   - type: Identity
   - type: IdExaminable
   - type: Hands
+  - type: ComplexInteraction
   - type: Internals
   - type: Inventory
   - type: InventorySlots
@@ -259,7 +261,6 @@
   id: BaseMobSpeciesOrganic
   abstract: true
   components:
-  - type: Flashable
   - type: Barotrauma
     damage:
       types:
@@ -273,27 +274,7 @@
         Heat: -0.07
       groups:
         Brute: -0.07
-  # Organs
-  - type: StatusEffects
-    allowed:
-    - ADTApathy
-    - PainKiller
-    - Stun
-    - KnockedDown
-    - SlowedDown
-    - Stutter
-    - SeeingRainbows
-    - Electrocution
-    - ForcedSleep
-    - TemporaryBlindness
-    - Drunk
-    - SlurredSpeech
-    - RatvarianLanguage
-    - PressureImmunity
-    - Muted
-    - Pacified
-    - StaminaModifier
-    - ADTHallucinations
+
   - type: Blindable
   # Other
   - type: Temperature
@@ -337,6 +318,7 @@
   abstract: true
   components:
   - type: Hands
+  - type: ComplexInteraction
   - type: Inventory
   - type: InventorySlots
   - type: ContainerContainer

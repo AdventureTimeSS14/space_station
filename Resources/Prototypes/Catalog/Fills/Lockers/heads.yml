@@ -10,6 +10,7 @@
       - id: ClothingHeadsetCargo
       - id: ClothingHandsGlovesColorBrown
       - id: CargoRequestComputerCircuitboard
+      - id: CargoSaleComputerCircuitboard
       - id: CargoShuttleComputerCircuitboard
       - id: CargoShuttleConsoleCircuitboard
       - id: SalvageShuttleConsoleCircuitboard

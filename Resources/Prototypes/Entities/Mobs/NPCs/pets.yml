@@ -849,7 +849,6 @@
       amount: 3
     - id: DrinkTequilaBottleFull
       amount: 1
-  - type: Flashable
   - type: Tag
     tags:
     - CannotSuicide
@@ -885,7 +884,6 @@
 #    name: ghost-role-information-tropico-name
 #    description: ghost-role-information-tropico-description
 #  - type: GhostTakeoverAvailable
-#  - type: Flashable
   - type: Tag
     tags:
     - VimPilot

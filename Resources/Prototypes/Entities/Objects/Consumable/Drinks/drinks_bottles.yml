@@ -80,7 +80,7 @@
   - type: Tool
     qualities:
     - Rolling
-    speed: 0.75 # not as good as a rolling pin but does the job
+    speedModifier: 0.75 # not as good as a rolling pin but does the job
   - type: PhysicalComposition
     materialComposition:
       Glass: 100
@@ -681,7 +681,7 @@
         - ReagentId: Sake
           Quantity: 50
   - type: Label
-    currentLabel: Sake
+    currentLabel: reagent-name-sake
   - type: Sprite
     sprite: Objects/Consumable/Drinks/sakebottle.rsi
   - type: Sealable
@@ -829,7 +829,7 @@
           Quantity: 300
   - type: Drink
   - type: Label
-    currentLabel: coconut water
+    currentLabel: reagent-name-coconut-water
 
 - type: entity
   parent: DrinkBottlePlasticBaseFull
@@ -896,6 +896,8 @@
         - ReagentId: IcedTea
           Quantity: 300
   - type: Drink
+  - type: Label
+    currentLabel: reagent-name-iced-tea
 
 - type: entity
   parent: DrinkBottlePlasticBaseFull
@@ -946,7 +948,7 @@
           Quantity: 300
   - type: Drink
   - type: Label
-    currentLabel: reagent-name-watermelon-juice
+    currentLabel: reagent-name-juice-watermelon
 
 - type: entity
   parent: DrinkBottlePlasticBaseFull

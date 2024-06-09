@@ -32,3 +32,7 @@
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   inhand:
     - BriefcaseBrownFilled
+  storage:
+    back:
+    - BoxSurvival
+    - RubberStampLawyer

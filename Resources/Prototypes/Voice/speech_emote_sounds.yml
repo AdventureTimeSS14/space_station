@@ -419,12 +419,7 @@
     Gasp:
       collection: MaleGasp
     DefaultDeathgasp:
-      collection: DeathGasp
-    # ADT-Apathy Sounds.
-    Scream-apathy:
-      path: /Audio/Voice/Moth/moth_scream.ogg
-    Laugh-apathy:
-      path: /Audio/Voice/Moth/moth_laugh.ogg
+      collection: MothDeathGasp
 
 - type: emoteSounds
   id: UnisexSilicon

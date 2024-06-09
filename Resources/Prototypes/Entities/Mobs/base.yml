@@ -43,6 +43,8 @@
   - type: MovementSpeedModifier
   - type: Polymorphable
   - type: StatusIcon
+  - type: RequireProjectileTarget
+    active: False
   - type: TTS # Corvax-TTS
   - type: LanguageSpeaker
     speaks:
