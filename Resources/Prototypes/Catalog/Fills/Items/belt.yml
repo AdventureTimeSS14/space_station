@@ -154,6 +154,11 @@
         amount: 2
       - id: OmnizineChemistryBottle
       - id: MedkitCombatFilled
+  - type: Storage
+    maxItemSize: Large
+    defaultStorageOrientation: Vertical
+    grid:
+    - 0,0,7,1
 
 - type: entity
   parent: ClothingBeltWand
