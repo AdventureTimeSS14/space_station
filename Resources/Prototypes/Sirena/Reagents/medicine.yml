@@ -10,9 +10,6 @@
       effects:
       - !type:AdjustReagent #For consumption 0.5
         conditions:
-        - !type:ERPStatusCondition
-          erp: 0
-          shouldHave: false #No fun for NOERP
         reagent: Aphrodisiac_sirena
         amount: 0.45
       - !type:AdjustReagent #NO TO INFINITE Aphrodisiac_sirena!
@@ -25,16 +22,11 @@
       - !type:PopupMessage #Male start
         type: Local
         conditions:
-        - !type:ERPStatusCondition
-          erp: 0
-          shouldHave: false
-        - !type:SexCondition
-          sex: 0
         - !type:ReagentThreshold
           reagent: Aphrodisiac_sirena
           max: 15
         visualType: Medium
-        messages: 
+        messages:
         - aphrodisiac-effect-1M
         - aphrodisiac-effect-2M
         - aphrodisiac-effect-3M
@@ -43,17 +35,12 @@
       - !type:PopupMessage
         type: Local
         conditions:
-        - !type:ERPStatusCondition
-          erp: 0
-          shouldHave: false
-        - !type:SexCondition
-          sex: 0
         - !type:ReagentThreshold
           reagent: Aphrodisiac_sirena
           min: 15
           max: 30
         visualType: Medium
-        messages: 
+        messages:
         - aphrodisiac-effect-5M
         - aphrodisiac-effect-6M
         - aphrodisiac-effect-7M
@@ -62,17 +49,12 @@
       - !type:PopupMessage
         type: Local
         conditions:
-        - !type:ERPStatusCondition
-          erp: 0
-          shouldHave: false
-        - !type:SexCondition
-          sex: 0
         - !type:ReagentThreshold
           reagent: Aphrodisiac_sirena
           min: 30
           max: 60
         visualType: Large
-        messages: 
+        messages:
         - aphrodisiac-effect-9M
         - aphrodisiac-effect-10M
         - aphrodisiac-effect-11M
@@ -81,16 +63,11 @@
       - !type:PopupMessage
         type: Local
         conditions:
-        - !type:ERPStatusCondition
-          erp: 0
-          shouldHave: false
-        - !type:SexCondition
-          sex: 0
         - !type:ReagentThreshold
           reagent: Aphrodisiac_sirena
           min: 60
         visualType: Large
-        messages: 
+        messages:
         - aphrodisiac-effect-13M
         - aphrodisiac-effect-14M
         - aphrodisiac-effect-15M
@@ -98,16 +75,11 @@
       - !type:PopupMessage
         type: Pvs
         conditions:
-        - !type:ERPStatusCondition
-          erp: 0
-          shouldHave: false
-        - !type:SexCondition
-          sex: 0
         - !type:ReagentThreshold
           reagent: Aphrodisiac_sirena
           min: 60
         visualType: Medium
-        messages: 
+        messages:
         - aphrodisiac-effect-16M
         - aphrodisiac-effect-17M
         - aphrodisiac-effect-18M
@@ -115,16 +87,11 @@
       - !type:PopupMessage #Female start
         type: Local
         conditions:
-        - !type:ERPStatusCondition
-          erp: 0
-          shouldHave: false
-        - !type:SexCondition
-          sex: 1
         - !type:ReagentThreshold
           reagent: Aphrodisiac_sirena
           max: 15
         visualType: Medium
-        messages: 
+        messages:
         - aphrodisiac-effect-1F
         - aphrodisiac-effect-2F
         - aphrodisiac-effect-3F
@@ -133,17 +100,12 @@
       - !type:PopupMessage
         type: Local
         conditions:
-        - !type:ERPStatusCondition
-          erp: 0
-          shouldHave: false
-        - !type:SexCondition
-          sex: 1
         - !type:ReagentThreshold
           reagent: Aphrodisiac_sirena
           min: 15
           max: 30
         visualType: Medium
-        messages: 
+        messages:
         - aphrodisiac-effect-5F
         - aphrodisiac-effect-6F
         - aphrodisiac-effect-7F
@@ -152,17 +114,12 @@
       - !type:PopupMessage
         type: Local
         conditions:
-        - !type:ERPStatusCondition
-          erp: 0
-          shouldHave: false
-        - !type:SexCondition
-          sex: 1
         - !type:ReagentThreshold
           reagent: Aphrodisiac_sirena
           min: 30
           max: 60
         visualType: Large
-        messages: 
+        messages:
         - aphrodisiac-effect-9F
         - aphrodisiac-effect-10F
         - aphrodisiac-effect-11F
@@ -171,16 +128,11 @@
       - !type:PopupMessage
         type: Local
         conditions:
-        - !type:ERPStatusCondition
-          erp: 0
-          shouldHave: false
-        - !type:SexCondition
-          sex: 1
         - !type:ReagentThreshold
           reagent: Aphrodisiac_sirena
           min: 60
         visualType: Large
-        messages: 
+        messages:
         - aphrodisiac-effect-13F
         - aphrodisiac-effect-14F
         - aphrodisiac-effect-15F
@@ -188,16 +140,11 @@
       - !type:PopupMessage
         type: Pvs
         conditions:
-        - !type:ERPStatusCondition
-          erp: 0
-          shouldHave: false
-        - !type:SexCondition
-          sex: 1
         - !type:ReagentThreshold
           reagent: Aphrodisiac_sirena
           min: 60
         visualType: Medium
-        messages: 
+        messages:
         - aphrodisiac-effect-16F
         - aphrodisiac-effect-17F
         - aphrodisiac-effect-18F
@@ -205,16 +152,11 @@
       - !type:PopupMessage #Unsexed start
         type: Local
         conditions:
-        - !type:ERPStatusCondition
-          erp: 0
-          shouldHave: false
-        - !type:SexCondition
-          sex: 2
         - !type:ReagentThreshold
           reagent: Aphrodisiac_sirena
           max: 15
         visualType: Medium
-        messages: 
+        messages:
         - aphrodisiac-effect-1N
         - aphrodisiac-effect-2N
         - aphrodisiac-effect-3N
@@ -223,17 +165,12 @@
       - !type:PopupMessage
         type: Local
         conditions:
-        - !type:ERPStatusCondition
-          erp: 0
-          shouldHave: false
-        - !type:SexCondition
-          sex: 2
         - !type:ReagentThreshold
           reagent: Aphrodisiac_sirena
           min: 15
           max: 30
         visualType: Medium
-        messages: 
+        messages:
         - aphrodisiac-effect-5N
         - aphrodisiac-effect-6N
         - aphrodisiac-effect-7N
@@ -242,17 +179,12 @@
       - !type:PopupMessage
         type: Local
         conditions:
-        - !type:ERPStatusCondition
-          erp: 0
-          shouldHave: false
-        - !type:SexCondition
-          sex: 2
         - !type:ReagentThreshold
           reagent: Aphrodisiac_sirena
           min: 30
           max: 60
         visualType: Large
-        messages: 
+        messages:
         - aphrodisiac-effect-9N
         - aphrodisiac-effect-10N
         - aphrodisiac-effect-11N
@@ -261,16 +193,11 @@
       - !type:PopupMessage
         type: Local
         conditions:
-        - !type:ERPStatusCondition
-          erp: 0
-          shouldHave: false
-        - !type:SexCondition
-          sex: 2
         - !type:ReagentThreshold
           reagent: Aphrodisiac_sirena
           min: 60
         visualType: Large
-        messages: 
+        messages:
         - aphrodisiac-effect-13N
         - aphrodisiac-effect-14N
         - aphrodisiac-effect-15N
@@ -278,25 +205,17 @@
       - !type:PopupMessage
         type: Pvs
         conditions:
-        - !type:ERPStatusCondition
-          erp: 0
-          shouldHave: false
-        - !type:SexCondition
-          sex: 2
         - !type:ReagentThreshold
           reagent: Aphrodisiac_sirena
           min: 60
         visualType: Medium
-        messages: 
+        messages:
         - aphrodisiac-effect-16N
         - aphrodisiac-effect-17N
         - aphrodisiac-effect-18N
         probability: 0.3 #Unsexed end
       - !type:Jitter
         conditions:
-        - !type:ERPStatusCondition
-          erp: 0
-          shouldHave: false
         - !type:ReagentThreshold
           reagent: Aphrodisiac_sirena
           min: 60

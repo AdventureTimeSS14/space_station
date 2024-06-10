@@ -701,9 +701,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("TEXT")
                         .HasColumnName("clothing");
 
-                    b.Property<int>("ERPStatus")
-                        .HasColumnType("INTEGER")
-                        .HasColumnName("erpstatus");
 
 =======
 >>>>>>> 24e7653c984da133283457da2089e629161a7ff2

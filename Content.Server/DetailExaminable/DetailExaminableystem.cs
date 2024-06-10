@@ -33,19 +33,6 @@ namespace Content.Server.DetailExaminable
                 {
                     var markup = new FormattedMessage();
                     markup.AddMarkup(component.Content);
-                    if (_configurationManager.GetCVar(ACCVars.IsERP))
-                    {
-                        // Sirena-ERPStatus-Start
-                        if (component.ERPStatus == EnumERPStatus.FULL)
-                            markup.PushColor(Color.Green);
-                        else if (component.ERPStatus == EnumERPStatus.HALF)
-                            markup.PushColor(Color.Yellow);
-                        else
-                            markup.PushColor(Color.Red);
-                        markup.AddMarkup("\n" + component.GetERPStatusName());
-                        // Sirena-ERPStatus-End
-                    }
-
                     _examineSystem.SendExamineTooltip(args.User, uid, markup, false, false);
                 },
                 Text = Loc.GetString("detail-examinable-verb-text"),
