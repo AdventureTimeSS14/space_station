@@ -4,6 +4,8 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototy
 using Content.Shared.Chemistry.Reagent;
 using Robust.Shared.Prototypes;
 using Content.Shared.Actions;
+using Robust.Shared.Prototypes;
+using Content.Shared.Alert;
 
 namespace Content.Shared.Changeling.Components;
 
@@ -454,6 +456,10 @@ public sealed partial class ChangelingComponent : Component
     [DataField]
     public string RankName = "collective-mind-ling-rank";
 
+    [DataField]
+    public ProtoId<AlertPrototype> Alert = "ADTAlertLingRefresh";
 
+    [DataField]
+    public ProtoId<AlertPrototype> AlertChem = "Chemicals";
 
 }

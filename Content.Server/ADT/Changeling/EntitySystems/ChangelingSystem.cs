@@ -46,7 +46,7 @@ using FastAccessors;
 using Content.Shared.Humanoid.Prototypes;
 using Robust.Shared.Utility;
 using Content.Shared.Humanoid.Markings;
-
+using Content.Shared.Store.Components;
 
 namespace Content.Server.Changeling.EntitySystems;
 
@@ -107,7 +107,7 @@ public sealed partial class ChangelingSystem : EntitySystem
         //RemComp<ActivatableUIComponent>(uid);     // TODO: Исправить проблему с волосами слаймов
         //RemComp<UserInterfaceComponent>(uid);
         //RemComp<SlimeHairComponent>(uid);
-        _uplink.AddUplink(uid, FixedPoint2.New(10), ChangelingShopPresetPrototype, uid, EvolutionPointsCurrencyPrototype); // not really an 'uplink', but it's there to add the evolution menu
+        _uplink.AddUplink(uid, FixedPoint2.New(10), uid); // not really an 'uplink', but it's there to add the evolution menu
         StealDNA(uid, component);
 
         RemComp<HungerComponent>(uid);
@@ -130,7 +130,7 @@ public sealed partial class ChangelingSystem : EntitySystem
         if (regenCap)
             float.Min(component.Chemicals, component.MaxChemicals);
 
-        _alerts.ShowAlert(uid, AlertType.Chemicals, (short) Math.Clamp(Math.Round(component.Chemicals / 10.7f), 0, 7));
+        _alerts.ShowAlert(uid, component.AlertChem, (short) Math.Clamp(Math.Round(component.Chemicals / 10.7f), 0, 7));
 
         return true;
     }
@@ -730,7 +730,7 @@ public sealed partial class ChangelingSystem : EntitySystem
             /// Удаление всех способностей - нихуя не понял, потом сделаю. Надеюсь.
 
             component.CanRefresh = false;
-            _alertsSystem.ClearAlert(uid, AlertType.ADTAlertLingRefresh);
+            _alertsSystem.ClearAlert(uid, component.Alert);
             component.SelectedDNA = 0;
             var selfMessage = Loc.GetString("changeling-refresh-self-success");
             _popup.PopupEntity(selfMessage, uid, uid, PopupType.MediumCaution);

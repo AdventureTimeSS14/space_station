@@ -129,7 +129,6 @@
     thresholds:
       0: Alive
       60: Dead
-  - type: Flashable
   - type: NoSlip
   - type: StatusEffects
     allowed:

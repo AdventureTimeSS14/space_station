@@ -2,6 +2,8 @@ using Robust.Shared.GameStates;
 using Content.Shared.SimpleStation14.Silicon.Systems;
 using Robust.Shared.Serialization.TypeSerializers.Implementations;
 using Robust.Shared.Containers;
+using Robust.Shared.Prototypes;
+using Content.Shared.Alert;
 
 namespace Content.Shared.SimpleStation14.Silicon.Components;
 
@@ -102,4 +104,7 @@ public sealed partial class SiliconComponent : Component
     /// </summary>
     [DataField("speedModifierThresholds", required: true)]
     public Dictionary<ChargeState, float> SpeedModifierThresholds = default!; // было readonly
+
+    [DataField]
+    public ProtoId<AlertPrototype> Alert = "Charge";
 }

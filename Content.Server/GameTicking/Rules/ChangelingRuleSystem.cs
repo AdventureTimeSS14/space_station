@@ -3,31 +3,24 @@ using Content.Server.Antag;
 using Content.Server.Chat.Managers;
 using Content.Server.GameTicking.Rules.Components;
 using Content.Server.Mind;
-using Content.Server.NPC.Systems;
+using Content.Shared.NPC.Systems;
 using Content.Server.Objectives;
 using Content.Shared.IdentityManagement;
 using Content.Server.Roles;
-using Content.Server.Shuttles.Components;
 using Content.Shared.CCVar;
-using Content.Shared.Dataset;
 using Content.Shared.Mind;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Objectives.Components;
 using Content.Shared.Changeling.Components;
-using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Content.Shared.Roles.Jobs;
-using Robust.Server.Player;
-using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
-using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
-using Content.Server.Actions;
 using Content.Shared.Tag;
-
+using Content.Shared.GameTicking.Components;
 namespace Content.Server.GameTicking.Rules;
 
 public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponent>
@@ -54,8 +47,8 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
     {
         base.Initialize();
 
-        SubscribeLocalEvent<RoundStartAttemptEvent>(OnStartAttempt);
-        SubscribeLocalEvent<RulePlayerJobsAssignedEvent>(OnPlayersSpawned);
+        //SubscribeLocalEvent<RoundStartAttemptEvent>(OnStartAttempt); // TODO-MODERN: Переписать RuleSystem
+        //SubscribeLocalEvent<RulePlayerJobsAssignedEvent>(OnPlayersSpawned); // TODO-MODERN: Переписать RuleSystem
         SubscribeLocalEvent<PlayerSpawnCompleteEvent>(HandleLatejoin);
 
         SubscribeLocalEvent<ChangelingRuleComponent, ObjectivesTextGetInfoEvent>(OnObjectivesTextGetInfo);
@@ -86,42 +79,45 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
         }
     }
 
-    private void DoChangelingStart(ChangelingRuleComponent component)
-    {
-        if (!component.StartCandidates.Any())
-        {
-            Log.Error("Tried to start Changeling mode without any candidates.");
-            return;
-        }
 
-        var numLings = MathHelper.Clamp(component.StartCandidates.Count / PlayersPerLing, 1, MaxChangelings);
-        var changelingPlayes = _antagSelection.GetEligiblePlayers(component.StartCandidates.Keys.ToList(), component.ChangelingPrototypeId);
-        var selectedLings = _antagSelection.ChooseAntags(numLings, changelingPlayes);
+    // TODO-MODERN: Переписать RuleSystem, .GetEligiblePlayers больше не существует
+    // private void DoChangelingStart(ChangelingRuleComponent component)
+    // {
+    //     if (!component.StartCandidates.Any())
+    //     {
+    //         Log.Error("Tried to start Changeling mode without any candidates.");
+    //         return;
+    //     }
 
-        foreach (var ling in selectedLings)
-        {
-            MakeChangeling(ling);
-        }
-    }
+    //     var numLings = MathHelper.Clamp(component.StartCandidates.Count / PlayersPerLing, 1, MaxChangelings);
+    //     var changelingPlayes = _antagSelection.GetEligiblePlayers(component.StartCandidates.Keys.ToList(), component.ChangelingPrototypeId);
+    //     var selectedLings = _antagSelection.ChooseAntags(numLings, changelingPlayes);
 
-    private void OnPlayersSpawned(RulePlayerJobsAssignedEvent ev)
-    {
-        var query = EntityQueryEnumerator<ChangelingRuleComponent, GameRuleComponent>();
-        while (query.MoveNext(out var uid, out var ling, out var gameRule))
-        {
-            if (!GameTicker.IsGameRuleAdded(uid, gameRule))
-                continue;
-            foreach (var player in ev.Players)
-            {
-                if (!ev.Profiles.ContainsKey(player.UserId))
-                    continue;
+    //     foreach (var ling in selectedLings)
+    //     {
+    //         MakeChangeling(ling);
+    //     }
+    // }
 
-                ling.StartCandidates[player] = ev.Profiles[player.UserId];
-            }
+    // TODO-MODERN: Переписать RuleSystem
+    // private void OnPlayersSpawned(RulePlayerJobsAssignedEvent ev)
+    // {
+    //     var query = EntityQueryEnumerator<ChangelingRuleComponent, GameRuleComponent>();
+    //     while (query.MoveNext(out var uid, out var ling, out var gameRule))
+    //     {
+    //         if (!GameTicker.IsGameRuleAdded(uid, gameRule))
+    //             continue;
+    //         foreach (var player in ev.Players)
+    //         {
+    //             if (!ev.Profiles.ContainsKey(player.UserId))
+    //                 continue;
 
-            DoChangelingStart(ling);
-        }
-    }
+    //             ling.StartCandidates[player] = ev.Profiles[player.UserId];
+    //         }
+
+    //         DoChangelingStart(ling);
+    //     }
+    // }
 
     public bool MakeChangeling(EntityUid chosen)
     {
@@ -275,7 +271,7 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
 
     private void OnObjectivesTextGetInfo(EntityUid uid, ChangelingRuleComponent comp, ref ObjectivesTextGetInfoEvent args)
     {
-        args.Minds = comp.ChangelingMinds;
+        args.Minds = comp.ChangelingMinds.Select(mindId => (mindId, Comp<MindComponent>(mindId).CharacterName ?? "?")).ToList();
         args.AgentName = Loc.GetString("ling-round-end-name");
     }
 
