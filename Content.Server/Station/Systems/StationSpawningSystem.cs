@@ -26,7 +26,6 @@ using Content.Shared.StatusIcon;
 using JetBrains.Annotations;
 using Robust.Shared.Configuration;
 using Robust.Shared.Map;
-using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
@@ -40,18 +39,18 @@ namespace Content.Server.Station.Systems;
 [PublicAPI]
 public sealed class StationSpawningSystem : SharedStationSpawningSystem
 {
-    [Dependency] private readonly IConfigurationManager _configurationManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly ActorSystem _actors = default!;
-    [Dependency] private readonly ArrivalsSystem _arrivalsSystem = default!;
-    [Dependency] private readonly ContainerSpawnPointSystem _containerSpawnPointSystem = default!;
+    [Dependency] private readonly IConfigurationManager _configurationManager = default!;
     [Dependency] private readonly HumanoidAppearanceSystem _humanoidSystem = default!;
     [Dependency] private readonly IdCardSystem _cardSystem = default!;
-    [Dependency] private readonly IdentitySystem _identity = default!;
-    [Dependency] private readonly MetaDataSystem _metaSystem = default!;
     [Dependency] private readonly PdaSystem _pdaSystem = default!;
     [Dependency] private readonly SharedAccessSystem _accessSystem = default!;
+    [Dependency] private readonly IdentitySystem _identity = default!;
+    [Dependency] private readonly MetaDataSystem _metaSystem = default!;
+
+    [Dependency] private readonly ArrivalsSystem _arrivalsSystem = default!;
+    [Dependency] private readonly ContainerSpawnPointSystem _containerSpawnPointSystem = default!;
 
     private bool _randomizeCharacters;
 
@@ -66,15 +65,7 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
         _spawnerCallbacks = new Dictionary<SpawnPriorityPreference, Action<PlayerSpawningEvent>>()
         {
             { SpawnPriorityPreference.Arrivals, _arrivalsSystem.HandlePlayerSpawning },
-            {
-                SpawnPriorityPreference.Cryosleep, ev =>
-                {
-                    if (_arrivalsSystem.Forced)
-                        _arrivalsSystem.HandlePlayerSpawning(ev);
-                    else
-                        _containerSpawnPointSystem.HandlePlayerSpawning(ev);
-                }
-            }
+            { SpawnPriorityPreference.Cryosleep, _containerSpawnPointSystem.HandlePlayerSpawning }
         };
     }
 
@@ -199,7 +190,7 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
             if (loadout == null)
             {
                 loadout = new RoleLoadout(jobLoadout);
-                loadout.SetDefault(profile, _actors.GetSession(entity), _prototypeManager);
+                loadout.SetDefault(_prototypeManager);
             }
 
             EquipRoleLoadout(entity.Value, loadout, roleProto);
@@ -221,14 +212,6 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
 
             _humanoidSystem.LoadProfile(entity.Value, profile);
             _metaSystem.SetEntityName(entity.Value, profile.Name);
-            if (profile.FlavorText != "" && _configurationManager.GetCVar(CCVars.FlavorText))
-            {
-                // Sirena-ERPStatus-Start
-                var _DetailExamineComp = AddComp<DetailExaminableComponent>(entity.Value);
-                _DetailExamineComp.Content = profile.FlavorText;
-                _DetailExamineComp.ERPStatus = profile.ERPStatus;
-                // Sirena-ERPStatus-End
-            }
         }
 
         DoJobSpecials(job, entity.Value);
