@@ -170,6 +170,17 @@
         },
         {
             "name": "rainbowcarpplush"
+        },
+        {
+            "name": "plushie_pochita"
+        },
+        {
+            "name": "pochita-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "pochita-inhand-left",
+            "directions": 4
         }
     ]
 }
