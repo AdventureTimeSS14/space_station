@@ -34,7 +34,6 @@ namespace Content.Client.SimpleStation14.Overlays
 
             var worldHandle = args.WorldHandle;
             var viewport = args.WorldBounds;
-            worldHandle.SetTransform(Matrix3.Identity);
             worldHandle.UseShader(_greyscaleShader);
             worldHandle.DrawRect(viewport, Color.White);
             worldHandle.UseShader(null);

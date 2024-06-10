@@ -1,4 +1,5 @@
 using Robust.Shared.Prototypes;
+using Content.Shared.Alert;
 
 namespace Content.Shared.ComponentalActions.Components;
 
@@ -33,4 +34,6 @@ public sealed partial class LevitationActComponent : Component
     [DataField, AutoNetworkedField]
     public EntityUid? ActionEntity;
 
+    [DataField]
+    public ProtoId<AlertPrototype> Alert = "ADTLevitation";
 }

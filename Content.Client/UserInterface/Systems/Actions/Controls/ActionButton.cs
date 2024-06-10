@@ -291,8 +291,6 @@ public sealed class ActionButton : Control, IEntityControl
             else
                 SetActionIcon(null);
 
-            if (_action.BackgroundOn != null)
-                _buttonBackgroundTexture = _spriteSys.Frame0(_action.BackgroundOn);
         }
         else
         {

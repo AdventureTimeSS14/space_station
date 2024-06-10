@@ -34,8 +34,6 @@
   components:
   - type: StationEvent
     startAnnouncementColor: "#18abf5"
-    startAudio:
-      path: /Audio/Announcements/announce.ogg
     weight: 8
     duration: 35
     startAudio: # Corvax-Announcements

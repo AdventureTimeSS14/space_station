@@ -23,19 +23,19 @@
           type: ChameleonBoundUserInterface
 <<<<<<< HEAD
 # Corvax-HiddenDesc-Start
-    - type: HiddenDescription
-      entries:
-      - label: corvax-hidden-desc-Chameleon-syndicate
-        whitelistMind:
-          components:
-            - TraitorRole
-            - NukeOperative
-      - label: corvax-hidden-desc-Chameleon-research
-        jobRequired:
-          - ResearchAssistant
-          - ResearchDirector
-          - Scientist
-          - Borg
+    # - type: HiddenDescription
+    #   entries:
+    #   - label: corvax-hidden-desc-Chameleon-syndicate
+    #     whitelistMind:
+    #       components:
+    #         - TraitorRole
+    #         - NukeOperative
+    #   - label: corvax-hidden-desc-Chameleon-research
+    #     jobRequired:
+    #       - ResearchAssistant
+    #       - ResearchDirector
+    #       - Scientist
+    #       - Borg
 # Corvax-HiddenDesc-End
 =======
 >>>>>>> 24e7653c984da133283457da2089e629161a7ff2
@@ -49,30 +49,30 @@
     stripTimeReduction: 2
     stealthy: true
 # Corvax-HiddenDesc-Start
-  - type: HiddenDescription
-    entries:
-    - label: corvax-hidden-desc-Chameleon-syndicate
-      whitelistMind:
-        components:
-          - TraitorRole
-          - NukeOperative
-    - label: corvax-hidden-desc-ThievingGloves-syndicate
-      whitelistMind:
-        components:
-          - TraitorRole
-          - NukeOperative
-    - label: corvax-hidden-desc-Chameleon-thief
-      whitelistMind:
-        components:
-          - ThiefRole
-    - label: corvax-hidden-desc-ThievingGloves-thief
-      whitelistMind:
-        components:
-          - ThiefRole
-    - label: corvax-hidden-desc-Chameleon-research
-      jobRequired:
-        - ResearchAssistant
-        - ResearchDirector
-        - Scientist
-        - Borg
+  # - type: HiddenDescription
+  #   entries:
+  #   - label: corvax-hidden-desc-Chameleon-syndicate
+  #     whitelistMind:
+  #       components:
+  #         - TraitorRole
+  #         - NukeOperative
+  #   - label: corvax-hidden-desc-ThievingGloves-syndicate
+  #     whitelistMind:
+  #       components:
+  #         - TraitorRole
+  #         - NukeOperative
+  #   - label: corvax-hidden-desc-Chameleon-thief
+  #     whitelistMind:
+  #       components:
+  #         - ThiefRole
+  #   - label: corvax-hidden-desc-ThievingGloves-thief
+  #     whitelistMind:
+  #       components:
+  #         - ThiefRole
+  #   - label: corvax-hidden-desc-Chameleon-research
+  #     jobRequired:
+  #       - ResearchAssistant
+  #       - ResearchDirector
+  #       - Scientist
+  #       - Borg
 # Corvax-HiddenDesc-End

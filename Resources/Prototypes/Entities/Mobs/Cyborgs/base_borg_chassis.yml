@@ -331,4 +331,13 @@
       Unsexed: UnisexSiliconSyndicate
   - type: PointLight
     color: "#dd200b"
->>>>>>> 24e7653c984da133283457da2089e629161a7ff2
+    # Frontier - languages mechanic
+  - type: LanguageSpeaker
+    speaks:
+    - GalacticCommon
+    - BorgTalk
+    - CodeSpeak
+    understands:
+    - GalacticCommon
+    - BorgTalk
+    - CodeSpeak

@@ -28,22 +28,22 @@ public sealed class LingEggsSystem : EntitySystem
     private void OnInit(EntityUid uid, LingEggsHolderComponent component, ComponentInit args)
     {
         if (_player.LocalPlayer?.ControlledEntity == uid)
-            _alertsSystem.ShowAlert(uid, AlertType.ADTAlertApathy);
+            _alertsSystem.ShowAlert(uid, component.Alert);
     }
 
     private void OnShutdown(EntityUid uid, LingEggsHolderComponent component, ComponentShutdown args)
     {
         if (_player.LocalPlayer?.ControlledEntity == uid)
-            _alertsSystem.ClearAlert(uid, AlertType.ADTAlertApathy);
+            _alertsSystem.ClearAlert(uid, component.Alert);
     }
 
     private void OnPlayerAttached(EntityUid uid, LingEggsHolderComponent component, LocalPlayerAttachedEvent args)
     {
-        _alertsSystem.ShowAlert(uid, AlertType.ADTAlertApathy);
+        _alertsSystem.ShowAlert(uid, component.Alert);
     }
 
     private void OnPlayerDetached(EntityUid uid, LingEggsHolderComponent component, LocalPlayerDetachedEvent args)
     {
-        _alertsSystem.ClearAlert(uid, AlertType.ADTAlertApathy);
+        _alertsSystem.ClearAlert(uid, component.Alert);
     }
 }

@@ -8,7 +8,6 @@
   id: BaseHumLavalandMob
   abstract: true
   components:
-  - type: Flashable
   # Organs
   - type: StatusEffects
     allowed:

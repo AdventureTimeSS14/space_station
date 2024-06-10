@@ -33,12 +33,12 @@ public sealed class SharedSiliconChargeSystem : EntitySystem
     private void OnSiliconInit(EntityUid uid, SiliconComponent component, ComponentInit args)
     {
         if (component.BatteryPowered)
-            _alertsSystem.ShowAlert(uid, AlertType.Charge, (short) component.ChargeState);
+            _alertsSystem.ShowAlert(uid, component.Alert, (short) component.ChargeState);
     }
 
     private void OnSiliconChargeStateUpdate(EntityUid uid, SiliconComponent component, SiliconChargeStateUpdateEvent ev)
     {
-        _alertsSystem.ShowAlert(uid, AlertType.Charge, (short) ev.ChargeState);
+        _alertsSystem.ShowAlert(uid, component.Alert, (short) ev.ChargeState);
     }
 
     private void OnRefreshMovespeed(EntityUid uid, SiliconComponent component, RefreshMovementSpeedModifiersEvent args)

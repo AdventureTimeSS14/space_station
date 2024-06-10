@@ -47,26 +47,13 @@ namespace Content.Server.Traitor.Uplink
             if (balance != null)
             {
                 store.Balance.Clear();
-                _store.TryAddCurrency(new Dictionary<string, FixedPoint2> { { currencyPrototype, balance.Value } }, uplinkEntity.Value, store);
+                _store.TryAddCurrency(new Dictionary<string, FixedPoint2> { { TelecrystalCurrencyPrototype, balance.Value } }, uplinkEntity.Value, store);
             }
 
             // TODO add BUI. Currently can't be done outside of yaml -_-
 
             return true;
         }
-
-        public bool RemoveUplink(EntityUid? uplinkEntity)
-        {
-            // Try to find target item
-            if (uplinkEntity != null)
-            {
-                uplinkEntity = null;
-                if (uplinkEntity != null)
-                    return false;
-            }
-            return true;
-        }
-
 
         /// <summary>
         /// Finds the entity that can hold an uplink for a user.

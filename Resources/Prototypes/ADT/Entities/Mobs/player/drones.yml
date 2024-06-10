@@ -44,7 +44,6 @@
   - type: MovementSpeedModifier
     baseWalkSpeed : 5
     baseSprintSpeed : 5
-  - type: Flashable
   - type: NoSlip
   - type: StatusEffects
     allowed:
@@ -167,7 +166,6 @@
   - type: MovementSpeedModifier
     baseWalkSpeed : 5
     baseSprintSpeed : 5
-  - type: Flashable
   - type: NoSlip
   - type: StatusEffects
     allowed:
@@ -292,7 +290,6 @@
   - type: MovementSpeedModifier
     baseWalkSpeed : 2.5
     baseSprintSpeed : 2.5
-  - type: Flashable
   - type: NoSlip
   - type: StatusEffects
     allowed:
@@ -421,7 +418,6 @@
   - type: MovementSpeedModifier
     baseWalkSpeed : 5
     baseSprintSpeed : 5
-  - type: Flashable
   - type: NoSlip
   - type: StatusEffects
     allowed:

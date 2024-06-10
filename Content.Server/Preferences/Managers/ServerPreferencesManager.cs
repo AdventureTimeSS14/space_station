@@ -42,9 +42,8 @@ namespace Content.Server.Preferences.Managers
 =======
         private ISawmill _sawmill = default!;
 
+        // private int MaxCharacterSlots => _cfg.GetCVar(CCVars.GameMaxCharacterSlots); // Corvax-Sponsors
         private int MaxCharacterSlots => _cfg.GetCVar(CCVars.GameMaxCharacterSlots);
->>>>>>> 24e7653c984da133283457da2089e629161a7ff2
-
         public void Init()
         {
             _netManager.RegisterNetMessage<MsgPreferencesAndSettings>();
