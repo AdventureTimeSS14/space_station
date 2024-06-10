@@ -1,3 +1,5 @@
+#В общем. 
+#С начала идёт простой алкоголь, затем напитки. Напитки, предназначенные к праздникам, в конце.
 - type: reagent
   id: ADTVodkaAntivirus
   name: vodka-antivirus-name
@@ -38,8 +40,28 @@
         reagent: Ethanol
         amount: 0.05
 
-# Коктели кекса 
+- type: reagent
+  id: ADTAppleLiqueur
+  name: apple-liqueur-name
+  parent: ADTSugarKnight
+  desc: apple-liqueur-desc
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: ADTAppleLiqueurFlavor
+  color: "#47941b"
+  recognizable: true
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/apple_liqueur_glass.rsi
+    state: icon_empty
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.05
 
+#Коктейли
 - type: reagent
   id: ADTSugarKnight
   name: sugar-knight-name
@@ -248,27 +270,6 @@
         amount: 0.2
 
 - type: reagent
-  id: ADTAppleLiqueur
-  name: apple-liqueur-name
-  parent: ADTSugarKnight
-  desc: apple-liqueur-desc
-  physicalDesc: reagent-physical-desc-cloudy
-  flavor: ADTAppleLiqueurFlavor
-  color: "#47941b"
-  recognizable: true
-  metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/apple_liqueur_glass.rsi
-    state: icon_empty
-  metabolisms:
-    Drink:
-      effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.05
-
-- type: reagent
   id: ADTAppleMartini
   name: apple-martini-name
   parent: ADTSugarKnight
@@ -308,89 +309,119 @@
         reagent: Ethanol
         amount: 0.15
 
-#Непонятно для чего закоменченые строки
+- type: reagent
+  id: ADTElderGuards
+  name: elder-guards-name
+  parent: ADTSugarKnight
+  desc: elder-guards-desc
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: ADTElderGuardsFlavor
+  color: "#e86717"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/elderguards.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.2
+
 #День Святого Валентина
-#комментим, дабы посмотреть ошибки.
+- type: reagent
+  id: ADTSerumLove
+  name: reagent-name-serum-love
+  parent: BaseAlcohol
+  desc: reagent-desc-serum-love
+  physicalDesc: reagent-physical-desc-refreshing
+  flavor: alcohol
+  color: "#ffb570"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
+    state: serum_love
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.1
 
-#- type: reagent
-#  id: ADTSerumLove
-#  name: reagent-name-serum-love
-#  parent: BaseAlcohol
-#  desc: reagent-desc-serum-love
-#  physicalDesc: reagent-physical-desc-refreshing
-#  flavor: alcohol
-#  color: "#ffb570"
-#  metamorphicSprite:
-#    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
-#    state: serum_love
-#  metabolisms:
-#    Drink:
-#      effects:
-#      - !type:SatiateThirst
-#        factor: 2
-#      - !type:AdjustReagent
-#        reagent: Ethanol
-#        amount: 0.1
+- type: reagent
+  id: ADTRossini
+  name: reagent-name-rossini
+  parent: BaseAlcohol
+  desc: reagent-desc-rossini
+  physicalDesc: reagent-physical-desc-refreshing
+  flavor: alcohol
+  color: "#ff5331"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
+    state: rossini
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.1
 
-#- type: reagent
-#  id: ADTRossini
-#  name: reagent-name-rossini
-#  parent: BaseAlcohol
-#  desc: reagent-desc-rossini
-#  physicalDesc: reagent-physical-desc-refreshing
-#  flavor: alcohol
-#  color: "#ff5331"
-#  metamorphicSprite:
-#    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
-#    state: rossini
-#  metabolisms:
-#    Drink:
-#      effects:
-#      - !type:SatiateThirst
-#        factor: 2
-#      - !type:AdjustReagent
-#        reagent: Ethanol
-#        amount: 0.1
+- type: reagent
+  id: ADTKirRoyal
+  name: reagent-name-kirroyal
+  parent: BaseAlcohol
+  desc: reagent-desc-kirroyal
+  physicalDesc: reagent-physical-desc-refreshing
+  flavor: alcohol
+  color: "#ffcb9b"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
+    state: kirroyal
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.15
 
-#- type: reagent
-#  id: ADTKirRoyal
-#  name: reagent-name-kirroyal
-#  parent: BaseAlcohol
-#  desc: reagent-desc-kirroyal
-#  physicalDesc: reagent-physical-desc-refreshing
-#  flavor: alcohol
-#  color: "#ffcb9b"
-#  metamorphicSprite:
-#    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
-#    state: kirroyal
-#  metabolisms:
-#    Drink:
-#      effects:
-#      - !type:SatiateThirst
-#        factor: 2
-#      - !type:AdjustReagent
-#        reagent: Ethanol
-#        amount: 0.15
+- type: reagent
+  id: ADTCosmopolitan
+  name: reagent-name-cosmopolitan
+  parent: BaseAlcohol
+  desc: reagent-desc-cosmopolitan
+  physicalDesc: reagent-physical-desc-refreshing
+  flavor: alcohol
+  color: "#ffcb9b"
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
+    state: cosmopolitan
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.2
 
-#- type: reagent
-#  id: ADTCosmopolitan
-#  name: reagent-name-cosmopolitan
-#  parent: BaseAlcohol
-#  desc: reagent-desc-cosmopolitan
-#  physicalDesc: reagent-physical-desc-refreshing
-#  flavor: alcohol
-#  color: "#ffcb9b"
-#  metamorphicSprite:
-#    sprite: ADT/Objects/Consumable/Drinks/valentine_cocktails.rsi
-#    state: cosmopolitan
-#  metabolisms:
-#    Drink:
-#      effects:
-#      - !type:SatiateThirst
-#        factor: 2
-#      - !type:AdjustReagent
-#        reagent: Ethanol
-#        amount: 0.2
+
+#Новый год
+- type: reagent
+  id: ADTChampagneMandarin
+  name: reagent-name-champagne-mandarin
+  parent: Champagne
+  desc: reagent-desc-champagne-mandarin
+  recognizable: true
+  metamorphicSprite:
+    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
+    state: champagne_mandarin
 
 - type: reagent
   id: ADTMulledWineCold
@@ -416,16 +447,7 @@
     sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
     state: sbiten_cinnamon_lemon
 
-- type: reagent
-  id: ADTChampagneMandarin
-  name: reagent-name-champagne-mandarin
-  parent: Champagne
-  desc: reagent-desc-champagne-mandarin
-  recognizable: true
-  metamorphicSprite:
-    sprite: ADT/Objects/Consumable/Drinks/new_year.rsi
-    state: champagne_mandarin
-
+#Октоберфеееест
 - type: reagent
   id: ADTGoldenAle
   name: golden-ale-name
@@ -455,7 +477,6 @@
   metamorphicSprite:
     sprite: ADT/Objects/Consumable/Drinks/oktoberfest_beer.rsi
     state: goldenale
-
 
 - type: reagent
   id: ADTSausageBeer

@@ -374,3 +374,8 @@ ent-ADTClothingUniformCroupierSkirt = юбка-костюм крупье
 
 ent-ADTClothingUniformJumpskirtJanimaid = костюм горничной
     .desc = Обновленный костюм горничной от НТ.
+
+ent-ADTClothingJumpsuitHopAlt = деловой костюм главы персонала
+    .desc = Деловой костюм для сидения на месте с важным видом. Если вам станет жарко, или вы, вдруг, захотите побегать - пиджак можно снять.
+ent-ADTClothingJumpskirtHopAlt = деловой юбка-костюм главы персонала
+    .desc = {ent-ADTClothingJumpsuitHopAlt.desc}
