@@ -111,10 +111,6 @@
   - type: Battery
     maxCharge: 720
     startingCharge: 720
-<<<<<<< HEAD
-  - type: MachinePart
-    part: PowerCell
-    rating: 2
   - type: Tag
     tags:
       - PowerCellMedium
