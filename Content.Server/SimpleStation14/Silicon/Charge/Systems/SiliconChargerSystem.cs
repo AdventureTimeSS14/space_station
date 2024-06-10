@@ -46,8 +46,6 @@ public sealed class SiliconChargerSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<SiliconChargerComponent, RefreshPartsEvent>(OnRefreshParts);
-        SubscribeLocalEvent<SiliconChargerComponent, UpgradeExamineEvent>(OnExamineParts);
 
         SubscribeLocalEvent<SiliconChargerComponent, StartCollideEvent>(OnStartCollide);
         SubscribeLocalEvent<SiliconChargerComponent, EndCollideEvent>(OnEndCollide);
@@ -290,21 +288,6 @@ public sealed class SiliconChargerSystem : EntitySystem
 
             chargerComp.WarningTime = TimeSpan.FromSeconds(_random.Next(3, 7)) + _timing.CurTime;
         }
-    }
-
-    private void OnRefreshParts(EntityUid uid, SiliconChargerComponent component, RefreshPartsEvent args)
-    {
-        var chargeMod = args.PartRatings[component.ChargeSpeedPart];
-        var efficiencyMod = args.PartRatings[component.ChargeEfficiencyPart];
-
-        component.PartsChargeMulti = chargeMod * component.UpgradePartsMulti;
-        // TODO: Variable power draw, with efficiency.
-    }
-
-    private void OnExamineParts(EntityUid uid, SiliconChargerComponent component, UpgradeExamineEvent args)
-    {
-        args.AddPercentageUpgrade("silicon-charger-chargerate-string", component.PartsChargeMulti);
-        // TODO: Variable power draw, with efficiency.
     }
 
     #region Charger specific

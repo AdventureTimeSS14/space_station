@@ -269,7 +269,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             case InGameICChatType.Whisper:
                 SendEntityWhisper(source, message, range, null, nameOverride, hideLog, ignoreActionBlocker, languageOverride: languageOverride);
                 break;
-            case InGameICChatType.Emote:            
+            case InGameICChatType.Emote:
                 SendEntityEmote(source, message, range, nameOverride, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker);
                 break;
             case InGameICChatType.CollectiveMind:
@@ -567,7 +567,6 @@ public sealed partial class ChatSystem : SharedChatSystem
             return;
 
         var obfuscatedMessage = ObfuscateMessageReadability(message, 0.2f);
-
         // get the entity's name by visual identity (if no override provided).
         string nameIdentity = FormattedMessage.EscapeText(nameOverride ?? Identity.Name(source, EntityManager));
         // get the entity's name by voice (if no override provided).
@@ -593,11 +592,14 @@ public sealed partial class ChatSystem : SharedChatSystem
         if (TryComp<LanguageSpeakerComponent>(source, out var lang) && lang.CurrentLanguage != "GalacticCommon" && lang.CurrentLanguage != "Universal")
             name = $"{lang.LocalizedID}|{name}";
         // Frontier: languages mechanic ADT Upd end
+        var wrappedMessage = Loc.GetString("chat-manager-entity-whisper-wrap-message",
+            ("entityName", name), ("message", FormattedMessage.EscapeText(message)));
 
+        var wrappedobfuscatedMessage = Loc.GetString("chat-manager-entity-whisper-wrap-message",
+            ("entityName", nameIdentity), ("message", FormattedMessage.EscapeText(obfuscatedMessage)));
         // Frontier - languages mechanic (+ everything in the foreach loop)
         var language = languageOverride ?? _language.GetLanguage(source);
         var languageEncodedMessage = _language.ObfuscateSpeech(source, message, language);
-
         foreach (var (session, data) in GetRecipients(source, WhisperMuffledRange))
         {
             if (session.AttachedEntity is not { Valid: true } listener)

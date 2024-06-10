@@ -28,22 +28,22 @@ public sealed class ApathySystem : EntitySystem
     private void OnInit(EntityUid uid, ApathyComponent component, ComponentInit args)
     {
         if (_player.LocalPlayer?.ControlledEntity == uid)
-            _alertsSystem.ShowAlert(uid, AlertType.ADTAlertApathy);
+            _alertsSystem.ShowAlert(uid, component.Alert);
     }
 
     private void OnShutdown(EntityUid uid, ApathyComponent component, ComponentShutdown args)
     {
         if (_player.LocalPlayer?.ControlledEntity == uid)
-            _alertsSystem.ClearAlert(uid, AlertType.ADTAlertApathy);
+            _alertsSystem.ClearAlert(uid, component.Alert);
     }
 
     private void OnPlayerAttached(EntityUid uid, ApathyComponent component, LocalPlayerAttachedEvent args)
     {
-        _alertsSystem.ShowAlert(uid, AlertType.ADTAlertApathy);
+        _alertsSystem.ShowAlert(uid, component.Alert);
     }
 
     private void OnPlayerDetached(EntityUid uid, ApathyComponent component, LocalPlayerDetachedEvent args)
     {
-        _alertsSystem.ClearAlert(uid, AlertType.ADTAlertApathy);
+        _alertsSystem.ClearAlert(uid, component.Alert);
     }
 }

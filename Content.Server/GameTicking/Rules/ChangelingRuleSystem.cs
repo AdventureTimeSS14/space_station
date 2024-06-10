@@ -7,27 +7,20 @@ using Content.Shared.NPC.Systems;
 using Content.Server.Objectives;
 using Content.Shared.IdentityManagement;
 using Content.Server.Roles;
-using Content.Server.Shuttles.Components;
 using Content.Shared.CCVar;
-using Content.Shared.Dataset;
 using Content.Shared.Mind;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Objectives.Components;
 using Content.Shared.Changeling.Components;
-using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Content.Shared.Roles.Jobs;
-using Robust.Server.Player;
-using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
-using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
-using Content.Server.Actions;
 using Content.Shared.Tag;
-using Content.Server.GameTicking.Components;
+using Content.Shared.GameTicking.Components;
 namespace Content.Server.GameTicking.Rules;
 
 public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponent>
@@ -278,7 +271,7 @@ public sealed class ChangelingRuleSystem : GameRuleSystem<ChangelingRuleComponen
 
     private void OnObjectivesTextGetInfo(EntityUid uid, ChangelingRuleComponent comp, ref ObjectivesTextGetInfoEvent args)
     {
-        args.Minds = comp.ChangelingMinds;
+        args.Minds = comp.ChangelingMinds.Select(mindId => (mindId, Comp<MindComponent>(mindId).CharacterName ?? "?")).ToList();
         args.AgentName = Loc.GetString("ling-round-end-name");
     }
 

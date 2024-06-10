@@ -300,12 +300,12 @@
   - type: PointLight
     color: "#dd200b"
     # Frontier - languages mechanic
-    - type: LanguageSpeaker
-      speaks:
-      - GalacticCommon
-      - BorgTalk
-      - CodeSpeak
-      understands:
-      - GalacticCommon
-      - BorgTalk
-      - CodeSpeak
+  - type: LanguageSpeaker
+    speaks:
+    - GalacticCommon
+    - BorgTalk
+    - CodeSpeak
+    understands:
+    - GalacticCommon
+    - BorgTalk
+    - CodeSpeak

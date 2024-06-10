@@ -28,23 +28,23 @@ public sealed class PainKillerSystem : EntitySystem
     private void OnInit(EntityUid uid, PainKillerComponent component, ComponentInit args)
     {
         if (_player.LocalPlayer?.ControlledEntity == uid)
-            _alertsSystem.ShowAlert(uid, AlertType.PainKiller);
+            _alertsSystem.ShowAlert(uid, component.Alert);
     }
 
     private void OnShutdown(EntityUid uid, PainKillerComponent component, ComponentShutdown args)
     {
         if (_player.LocalPlayer?.ControlledEntity == uid)
-            _alertsSystem.ClearAlert(uid, AlertType.PainKiller);
+            _alertsSystem.ClearAlert(uid, component.Alert);
     }
 
     private void OnPlayerAttached(EntityUid uid, PainKillerComponent component, LocalPlayerAttachedEvent args)
     {
-        _alertsSystem.ShowAlert(uid, AlertType.PainKiller);
+        _alertsSystem.ShowAlert(uid, component.Alert);
     }
 
     private void OnPlayerDetached(EntityUid uid, PainKillerComponent component, LocalPlayerDetachedEvent args)
     {
-        _alertsSystem.ClearAlert(uid, AlertType.PainKiller);
+        _alertsSystem.ClearAlert(uid, component.Alert);
     }
 
 

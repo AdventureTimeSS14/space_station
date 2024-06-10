@@ -16,28 +16,11 @@
     - UplinkWearables
     - UplinkJob
     - UplinkPointless
+    - ADTUplinkShuttle
     currencyWhitelist:
     - Telecrystal
     balance:
       Telecrystal: 0
-
-- type: storePreset
-  storeName: Uplink
-  categories:
-  - UplinkWeaponry
-  - UplinkAmmo
-  - UplinkExplosives
-  - UplinkChemicals
-  - UplinkDeception
-  - UplinkDisruption
-  - UplinkImplants
-  - UplinkAllies
-  - UplinkWearables
-  - UplinkJob
-  - UplinkPointless
-  - ADTUplinkShuttle
-  currencyWhitelist:
-  - Telecrystal
 
 - type: storePreset
   id: StorePresetChangeling
@@ -47,14 +30,7 @@
   currencyWhitelist:
   - EvolutionPoints
 
-- type: storePreset
-  id: StorePresetWizard
-  storeName: SpellbookMenu
-  categories:
-  - WizardAbilities
-  currencyWhitelist:
-  - SpellPoints
-- type: storePreset
+- type: entity
   id: StorePresetSpellbook
   abstract: true
   components:

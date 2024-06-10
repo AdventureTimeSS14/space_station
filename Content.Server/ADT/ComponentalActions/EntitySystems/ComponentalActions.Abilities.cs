@@ -344,7 +344,7 @@ public sealed partial class ComponentalActionsSystem
 
         if (component.Active)
         {
-            _alerts.ShowAlert(uid, AlertType.ADTLevitation);
+            _alerts.ShowAlert(uid, component.Alert);
             AddComp<MovementIgnoreGravityComponent>(uid);
             var movementSpeed = EnsureComp<MovementSpeedModifierComponent>(uid);
             var sprintSpeed = component.SpeedModifier;
@@ -354,7 +354,7 @@ public sealed partial class ComponentalActionsSystem
         }
         else
         {
-            _alerts.ClearAlert(uid, AlertType.ADTLevitation);
+            _alerts.ClearAlert(uid, component.Alert);
             RemComp<MovementIgnoreGravityComponent>(uid);
             var movementSpeed = EnsureComp<MovementSpeedModifierComponent>(uid);
             var sprintSpeed = component.BaseSprintSpeed;

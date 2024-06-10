@@ -21,25 +21,25 @@
   - type: UseDelay
     delay: 300
 # Corvax-HiddenDesc-Start
-  - type: HiddenDescription
-    entries:
-    - label: corvax-hidden-desc-ReinforcementRadioSyndicate-syndicate
-      whitelistMind:
-        components:
-          - TraitorRole
-          - NukeOperative
-    - label: corvax-hidden-desc-ReinforcementRadio-engineering
-      jobRequired:
-        - ChiefEngineer
-        - AtmosphericTechnician
-        - StationEngineer
-        - TechnicalAssistant
-    - label: corvax-hidden-desc-ReinforcementRadio-research
-      jobRequired:
-        - ResearchAssistant
-        - ResearchDirector
-        - Scientist
-        - Borg
+  # - type: HiddenDescription
+  #   entries:
+  #   - label: corvax-hidden-desc-ReinforcementRadioSyndicate-syndicate
+  #     whitelistMind:
+  #       components:
+  #         - TraitorRole
+  #         - NukeOperative
+  #   - label: corvax-hidden-desc-ReinforcementRadio-engineering
+  #     jobRequired:
+  #       - ChiefEngineer
+  #       - AtmosphericTechnician
+  #       - StationEngineer
+  #       - TechnicalAssistant
+  #   - label: corvax-hidden-desc-ReinforcementRadio-research
+  #     jobRequired:
+  #       - ResearchAssistant
+  #       - ResearchDirector
+  #       - Scientist
+  #       - Borg
 # Corvax-HiddenDesc-End
 
 - type: entity
@@ -66,25 +66,25 @@
     prototype: MobMonkeySyndicateAgent
     selectablePrototypes: ["SyndicateMonkey", "SyndicateKobold"]
 # Corvax-HiddenDesc-Start
-  - type: HiddenDescription
-    entries:
-    - label: corvax-hidden-desc-ReinforcementRadioSyndicateMonkey-syndicate
-      whitelistMind:
-        components:
-          - TraitorRole
-          - NukeOperative
-    - label: corvax-hidden-desc-ReinforcementRadio-engineering
-      jobRequired:
-        - ChiefEngineer
-        - AtmosphericTechnician
-        - StationEngineer
-        - TechnicalAssistant
-    - label: corvax-hidden-desc-ReinforcementRadio-research
-      jobRequired:
-        - ResearchAssistant
-        - ResearchDirector
-        - Scientist
-        - Borg
+  # - type: HiddenDescription
+  #   entries:
+  #   - label: corvax-hidden-desc-ReinforcementRadioSyndicateMonkey-syndicate
+  #     whitelistMind:
+  #       components:
+  #         - TraitorRole
+  #         - NukeOperative
+  #   - label: corvax-hidden-desc-ReinforcementRadio-engineering
+  #     jobRequired:
+  #       - ChiefEngineer
+  #       - AtmosphericTechnician
+  #       - StationEngineer
+  #       - TechnicalAssistant
+  #   - label: corvax-hidden-desc-ReinforcementRadio-research
+  #     jobRequired:
+  #       - ResearchAssistant
+  #       - ResearchDirector
+  #       - Scientist
+  #       - Borg
 # Corvax-HiddenDesc-End
 
 - type: entity
@@ -129,23 +129,23 @@
     - type: GhostRoleMobSpawner
       prototype: PlayerBorgSyndicateAssaultBattery
 # Corvax-HiddenDesc-Start
-    - type: HiddenDescription
-      entries:
-      - label: corvax-hidden-desc-ReinforcementRadioSyndicateCyborgAssault-syndicate
-        whitelistMind:
-          components:
-            - TraitorRole
-            - NukeOperative
-      - label: corvax-hidden-desc-ReinforcementRadio-engineering
-        jobRequired:
-          - ChiefEngineer
-          - AtmosphericTechnician
-          - StationEngineer
-          - TechnicalAssistant
-      - label: corvax-hidden-desc-ReinforcementRadio-research
-        jobRequired:
-          - ResearchAssistant
-          - ResearchDirector
-          - Scientist
-          - Borg
+    # - type: HiddenDescription
+    #   entries:
+    #   - label: corvax-hidden-desc-ReinforcementRadioSyndicateCyborgAssault-syndicate
+    #     whitelistMind:
+    #       components:
+    #         - TraitorRole
+    #         - NukeOperative
+    #   - label: corvax-hidden-desc-ReinforcementRadio-engineering
+    #     jobRequired:
+    #       - ChiefEngineer
+    #       - AtmosphericTechnician
+    #       - StationEngineer
+    #       - TechnicalAssistant
+    #   - label: corvax-hidden-desc-ReinforcementRadio-research
+    #     jobRequired:
+    #       - ResearchAssistant
+    #       - ResearchDirector
+    #       - Scientist
+    #       - Borg
 # Corvax-HiddenDesc-End
