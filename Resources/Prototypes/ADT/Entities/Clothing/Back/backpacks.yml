@@ -214,6 +214,17 @@
   - type: Storage
     maxItemSize: Huge
 
+#ОСЩ
+
+- type: entity
+  parent: ClothingBackpackSecurity
+  id: ADTClothingBlueshieldBackpack
+  name: blueshield's backpack
+  description: criminalst backpack
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Back/blueshield_backpack.rsi
+
 - type: entity
   parent: ClothingBackpackSatchel
   id: ADTClothingBackpackKivchikSatchel

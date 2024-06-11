@@ -277,7 +277,6 @@
   name : Laser bolt
   id: ADTBulletLaser
   parent: BaseBullet
-  noSpawn: true
   components:
   - type: Reflective
     reflective:
@@ -316,7 +315,6 @@
   name : Laser bolt
   id: ADTBulletLaserMK2
   parent: ADTBulletLaser
-  noSpawn: true
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
@@ -324,10 +322,10 @@
     - state: omnilaser
       shader: unshaded
   - type: Projectile
-    impactEffect: BulletImpactEffectLaser
+    impactEffect: BulletImpactEffectDisabler
     damage:
       types:
-        Heat: 30
+        Heat: 25
     soundHit:
       path: "/Audio/Weapons/tap.ogg"
 

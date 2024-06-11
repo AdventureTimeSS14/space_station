@@ -28,3 +28,12 @@
   components:
   - type: Sprite
     state: brigmedic
+
+- type: entity
+  parent: BaseFigurine
+  id: ToyFigurineBlueshieldOfficer
+  name: blueshield officer figure
+  description: A figurine depicting the blueshield officer, austere and blue, stands guard over the station government. I guess.
+  components:
+  - type: Sprite
+    state: blueshield

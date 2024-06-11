@@ -8,3 +8,19 @@
     sprite: ADT/Clothing/OuterClothing/Coats/russian_coat.rsi
   - type: Clothing
     sprite: ADT/Clothing/OuterClothing/Coats/russian_coat.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterWinterBlueshield
+  name: blueshield's winter coat
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Coats/blueshield_winter.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Coats/blueshield_winter.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.9
+        Heat: 0.9
+        Piercing: 0.9
