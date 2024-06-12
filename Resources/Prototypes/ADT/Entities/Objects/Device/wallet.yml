@@ -1,0 +1,81 @@
+- type: entity
+  id: BaseADTWallet
+  parent: [ BaseStorageItem, BaseBagOpenClose ]
+  name: wallet
+  description: Soft and comfortable leather wallet
+  noSpawn: true
+  suffix: ADT
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Device/wallet.rsi
+    layers:
+    - state: wallet_closed
+    - state: wallet_open
+      map: ["openLayer"]
+  - type: SwitchableWeapon
+    openSound: "/Audio/Items/flashlight_on.ogg"
+    closeSound: "/Audio/Items/flashlight_off.ogg"
+    sizeOpened: Tiny
+    sizeClosed: Tiny 
+  - type: Item
+    sprite: ADT/Objects/Device/wallet.rsi
+    size: Tiny
+  - type: UseDelay
+    delay: 1.0
+  - type: Storage
+    maxItemSize: Small
+    whitelist:
+      tags:
+        - ADTSpaceCash
+    grid:
+    - 0,0,3,1
+    storedRotation: 90
+  - type: Appearance
+
+- type: entity
+  id: ADTWalletEmpty
+  parent: BaseADTWallet
+  name: wallet empty
+  description: Soft and comfortable leather wallet
+  suffix: ADT, Empty
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Device/wallet.rsi
+    layers:
+    - state: wallet_closed
+    - state: wallet_open
+      map: ["openLayer"]
+
+- type: entity
+  id: ADTWalletFilled500
+  parent: BaseADTWallet
+  name: wallet filled
+  description: Soft and comfortable leather wallet
+  suffix: 500, Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: SpaceCash500
+
+- type: entity
+  id: ADTWalletFilled1000
+  parent: BaseADTWallet
+  name: wallet filled
+  description: Soft and comfortable leather wallet
+  suffix: 1000, Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: SpaceCash1000
+
+- type: entity
+  id: ADTWalletFilled2000
+  parent: BaseADTWallet
+  name: wallet filled
+  description: Soft and comfortable leather wallet
+  suffix: 2000, Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: SpaceCash1000
+    - id: SpaceCash1000

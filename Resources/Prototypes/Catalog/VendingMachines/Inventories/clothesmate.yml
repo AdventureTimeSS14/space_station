@@ -22,6 +22,7 @@
     ADTClothingBackpackBlackLadySatchel: 2
     ADTClothingBackpackLeatherLadySatchel: 2
 # ADT сумки конец
+    ADTWalletEmpty: 5
     ClothingHeadHatBeret: 2
     ADTClothingHeadHatBeretBlackCivilian: 2 # ADT Кастомный чёрный берет
     ClothingHeadBandBlack: 1
