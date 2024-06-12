@@ -29,7 +29,6 @@
         - ADTSpaceCash
     grid:
     - 0,0,3,1
-    storedRotation: 90
   - type: Appearance
 
 - type: entity
