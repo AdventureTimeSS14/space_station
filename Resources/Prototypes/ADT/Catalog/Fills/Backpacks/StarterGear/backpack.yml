@@ -242,6 +242,7 @@
         - id: BoxSurvivalSecurity
         - id: BlueShieldsuit
         - id: ADTWalletFilled1000
+        - id: BlueShieldsuit
         - id: OxygenTankFilled
     - type: Sprite
       sprite: ADT/Clothing/Back/blueshield_backpack.rsi
