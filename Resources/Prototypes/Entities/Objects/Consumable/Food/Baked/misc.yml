@@ -29,6 +29,12 @@
   components:
   - type: Sprite
     state: muffin
+  - type: Tag
+    tags:
+    - ADTMuffin
+  - type: FlavorProfile
+    flavors:
+      - sweet
 
 - type: entity
   name: berry muffin
@@ -41,6 +47,11 @@
   - type: Tag
     tags:
     - Fruit
+    - ADTMuffin
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - berry
 
 - type: entity
   name: cherry muffin
@@ -53,6 +64,7 @@
   - type: Tag
     tags:
     - Fruit
+    - ADTMuffin
 
 - type: entity
   name: bluecherry muffin
@@ -65,6 +77,7 @@
   - type: Tag
     tags:
     - Fruit
+    - ADTMuffin
 
 - type: entity
   name: honey bun #TODO honey

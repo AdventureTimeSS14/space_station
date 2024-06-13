@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Created by discord:JayJacobs#1187",
+    "copyright": "Made by Tamioki.",
     "size": {
         "x": 32,
         "y": 32
@@ -11,10 +11,10 @@
             "name": "icon"
         },
         {
-            "name": "icon-flash"
+            "name": "icon-light"
         },
         {
-            "name": "off-equipped-HELMET",
+            "name": "equipped-HELMET",
             "directions": 4
         },
         {
@@ -22,27 +22,11 @@
             "directions": 4
         },
         {
-            "name": "off-inhand-left",
+            "name": "equipped-HELMET-unshading",
             "directions": 4
         },
         {
-            "name": "off-inhand-right",
-            "directions": 4
-        },
-        {
-            "name": "on-equipped-HELMET",
-            "directions": 4
-        },
-        {
-            "name": "on-equipped-HELMET-vulp",
-            "directions": 4
-        },
-        {
-            "name": "on-inhand-left",
-            "directions": 4
-        },
-        {
-            "name": "on-inhand-right",
+            "name": "equipped-HELMET-light",
             "directions": 4
         }
     ]

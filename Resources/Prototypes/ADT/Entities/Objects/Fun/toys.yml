@@ -571,8 +571,25 @@
   description: Incredibly cute Mio, so soft and little shadowkin.
   components:
   - type: Sprite
-    sprite: Objects/Fun/toys.rsi
+    sprite: ADT/Objects/Fun/toys.rsi
     state: plusie_mio
+
+- type: entity
+  parent: BasePlushie
+  id: ADTPlushiePochita
+  name: Plush pochita
+  description: A plush dog toy with a chainsaw blade sticking out of its head
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Fun/toys.rsi
+    state: plushie_pochita
+  - type: Item
+    sprite: ADT/Objects/Fun/toys.rsi
+    inhandVisuals:
+      left:
+      - state: pochita-inhand-left
+      right:
+      - state: pochita-inhand-right
 
 - type: entity
   name: Suspicious gift
@@ -595,8 +612,6 @@
     - id: toyC4
     sound:
       path: /Audio/Effects/unwrap.ogg
-
-
 
 - type: entity
   parent: BaseItem

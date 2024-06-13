@@ -269,6 +269,46 @@
     ADTFoodBoiledBuckwheat: 1
     ADTFoodSausageRaw: 2
 
+#маффины
+- type: microwaveMealRecipe
+  id: ADTMuffin
+  name: muffin recipe
+  result: ADTMuffinMoldMuffin
+  time: 15
+  solids:
+    ADTMuffinMoldBatter: 1
+    FoodButter: 1
+
+- type: microwaveMealRecipe
+  id: ADTMuffinBerry
+  name: muffin recipe
+  result: ADTMuffinMoldMuffinBerry
+  time: 15
+  solids:
+    ADTMuffinMoldBatter: 1
+    FoodBerries: 2
+
+- type: microwaveMealRecipe
+  id: ADTMuffinParty
+  name: party muffin recipe
+  result: ADTMuffinMoldParty
+  time: 15
+  solids:
+    ADTMuffinMoldBatter: 1
+  reagents:
+    Cream: 10
+
+- type: microwaveMealRecipe
+  id: ADTMuffinChocolate
+  name: chocolate muffin recipe
+  result: ADTMuffinMoldChocolate
+  time: 15
+  solids:
+    ADTMuffinMoldBatter: 1
+    FoodSnackChocolateBar: 2
+  reagents:
+    CocoaPowder: 5
+    
 - type: microwaveMealRecipe
   id: ADTFoodSawdustSoupRecipe
   name: sawdust soup recipe

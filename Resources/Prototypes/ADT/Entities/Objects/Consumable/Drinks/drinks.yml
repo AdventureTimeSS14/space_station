@@ -358,6 +358,24 @@
     sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/bacardiapple.rsi
     state: icon
 
+- type: entity
+  parent: DrinkGlassBase
+  id: ADTElderGuardsGlass
+  name: elder-guards-name
+  description: elder-guards-desc
+  components:
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ADTElderGuards
+          Quantity: 30
+  - type: Sprite
+    sprite: ADT/Objects/Consumable/Drinks/justkekc_cocktails/elderguards.rsi
+    state: icon
+
 #День Святого Валентина
 
 - type: entity

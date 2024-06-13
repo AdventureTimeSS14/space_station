@@ -13,11 +13,8 @@
         {
             "name": "plushie_penguin"
         },
-            {
-            "name": "plushie_moth"
-        },
         {
-            "name": "plusie_mio"
+            "name": "plushie_moth"
         },
         {
             "name": "plushie_rouny",
@@ -334,26 +331,6 @@
         },
         {
             "name": "beachb-inhand-right",
-            "directions": 4
-        },
-        {
-            "name": "ntb"
-        },
-        {
-            "name": "holoplush"
-        },
-        {
-            "name": "magicplush"
-        },
-        {
-            "name": "ntb-inhand-left",
-            "directions": 4
-        },
-        {
-            "name": "rainbowcarpplush"
-        },
-        {
-            "name": "ntb-inhand-right",
             "directions": 4
         }
     ]

@@ -10,3 +10,5 @@ ent-ADTIronTray = железный поднос
 ent-RollingPin = скалка
     .desc = Используется для раскатывания теста.
     .suffix = { "" }
+ent-ADTIronTrayKnife = железный поднос
+    .desc = Поднос для разноса еды и напитков. 

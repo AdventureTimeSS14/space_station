@@ -202,6 +202,8 @@
       # Sirena-Underwear-End
       - id: ADTHOPJumpskirtWarm
       - id: ADTHOPJumpsuitWarm
+      - id: ADTClothingJumpsuitHopAlt
+      - id: ADTClothingJumpskirtHopAlt
       - id: ADTClothingHeadHatsBeretHOP
 
 - type: entity
@@ -212,7 +214,7 @@
   - type: StorageFill
     contents:
       - id: ClothingOuterHardsuitEngineeringWhite
-      - id: ClothingMaskBreath
+      - id: ADTClothingMaskGasCE
       - id: OxygenTankFilled
       - id: NitrogenTankFilled
       - id: ClothingNeckCloakCe
@@ -398,9 +400,10 @@
       - id: ClothingHeadsetAltScience
       - id: BoxEncryptionKeyScience
       - id: BoxEncryptionKeyRobo
-      # Sirena-Underwear-Start
+      # Sirena-Add-Start
       - id: ADTUnderwearBoxRD
-      # Sirena-Underwear-End
+      - id: AnomalyPinpointer
+      # Sirena-Add-End
       - id: EncryptionKeyBinary
 
 - type: entity
@@ -446,9 +449,9 @@
       - id: WeaponRevolverUnica #ADTrevolver
       - id: ADTWeaponPistolX01 #ADTmultiphase
       # Sirena-Underwear-Start
-      - id: ADTUnderwearBoxHOS
+      - id: ADTUnderwearBoxRD
       # Sirena-Underwear-End
-      - id: BookBusido # Corvax-Books
+      - id: EncryptionKeyBinary
 
 - type: entity
   id: LockerHeadOfSecurityFilled

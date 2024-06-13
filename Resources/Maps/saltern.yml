@@ -26940,7 +26940,7 @@ entities:
     - type: Transform
       pos: -22.754051,9.462572
       parent: 31
-- proto: ClothingHeadHatBeretBrigmedic
+- proto: ADTClothingHeadHatBeretBrigmedic
   entities:
   - uid: 6607
     components:

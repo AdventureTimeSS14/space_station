@@ -31,6 +31,9 @@
     - type: RandomHumanoidSpawner
       settings: DeathSquad
     - type: InitialInfectedExempt
+    - type: AutoImplant
+      implants:
+      - MindShieldImplant
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -73,6 +76,9 @@
     - type: RandomHumanoidSpawner
       settings: ERTLeader
     - type: InitialInfectedExempt
+    - type: AutoImplant
+      implants:
+      - MindShieldImplant
   #noSpawn: true
 
 - type: randomHumanoidSettings
@@ -144,6 +150,9 @@
       state: ertleadereva
     - type: RandomHumanoidSpawner
       settings: ERTLeaderREV
+    - type: AutoImplant
+      implants:
+      - MindShieldImplant
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -169,6 +178,9 @@
     - type: RandomHumanoidSpawner
       settings: ERTLeaderEVALecter
     - type: InitialInfectedExempt
+    - type: AutoImplant
+      implants:
+      - MindShieldImplant
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -264,6 +276,9 @@
       - NamesLastERTCallsign # Corvax-Localization
     - type: RandomHumanoidSpawner
       settings: ERTJanitor
+    - type: AutoImplant
+      implants:
+      - MindShieldImplant
   #noSpawn: true
 
 - type: randomHumanoidSettings
@@ -301,6 +316,9 @@
       state: ertjanitoreva
     - type: RandomHumanoidSpawner
       settings: ERTJanitorEVA
+    - type: AutoImplant
+      implants:
+      - MindShieldImplant
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -337,6 +355,9 @@
       - NamesLastERTCallsign # Corvax-Localization
     - type: RandomHumanoidSpawner
       settings: ERTEngineer
+    - type: AutoImplant
+      implants:
+      - MindShieldImplant
   #noSpawn: true
 
 - type: randomHumanoidSettings
@@ -406,6 +427,9 @@
       state: ertengineereva
     - type: RandomHumanoidSpawner
       settings: ERTEngineerREV
+    - type: AutoImplant
+      implants:
+      - MindShieldImplant
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -440,6 +464,9 @@
       - NamesLastERTCallsign # Corvax-Localization
     - type: RandomHumanoidSpawner
       settings: ERTSecurity
+    - type: AutoImplant
+      implants:
+      - MindShieldImplant
   #noSpawn: true
 
 - type: randomHumanoidSettings
@@ -477,6 +504,9 @@
       state: ertsecurityeva
     - type: RandomHumanoidSpawner
       settings: ERTSecurityEVA
+    - type: AutoImplant
+      implants:
+      - MindShieldImplant
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -526,6 +556,9 @@
       state: ertsecurityeva
     - type: RandomHumanoidSpawner
       settings: ERTSecurityREV
+    - type: AutoImplant
+      implants:
+      - MindShieldImplant
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -550,6 +583,9 @@
   components:
     - type: RandomHumanoidSpawner
       settings: ERTSecurityEVALecter
+    - type: AutoImplant
+      implants:
+      - MindShieldImplant
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -656,6 +692,9 @@
       state: ertmedicaleva
     - type: RandomHumanoidSpawner
       settings: ERTMedicalREV
+    - type: AutoImplant
+      implants:
+      - MindShieldImplant
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -721,6 +760,9 @@
     - type: RandomHumanoidSpawner
       settings: CentcomOfficial
     - type: InitialInfectedExempt
+    - type: AutoImplant
+      implants:
+      - MindShieldImplant
 
 - type: randomHumanoidSettings
   id: CentcomOfficial

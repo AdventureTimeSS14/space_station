@@ -63,9 +63,7 @@
     sprite: Clothing/Eyes/Hud/sec.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Hud/sec.rsi
-  - type: FlashImmunity
-  - type: EyeProtection
-    protectionTime: 5
+  - type: ShowSecurityIcons
   - type: Tag
     tags:
     - HudSecurity
@@ -160,6 +158,10 @@
   - type: Construction
     graph: HudMedSec
     node: medsecHud
+  - type: ShowSecurityIcons
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
 
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons, ShowMedicalIcons]
@@ -240,9 +242,7 @@
   - type: ShowHealthBars
     damageContainers:
     - Biological
-  - type: FlashImmunity
-  - type: EyeProtection
-    protectionTime: 5
+  - type: ShowSecurityIcons
 
 - type: entity
   parent: ClothingEyesHudMedical

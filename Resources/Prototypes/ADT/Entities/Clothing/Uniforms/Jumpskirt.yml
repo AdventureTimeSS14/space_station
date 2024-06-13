@@ -771,31 +771,53 @@
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/pathologist_alt.rsi
 
+# Blueshield
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtBlueshield
+  name: blueshield's jumpskirt
+  description: blueshield's jumpskirt
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/blueshield_suit.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/blueshield_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtBlueshieldTurtleneck
+  name: blueshield's turtleneck skirt
+  description: blueshield's turtleneck
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_blueshield_woman.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Turleneck/turtleneck_blueshield_woman.rsi
+
 - type: entity
   parent: [ ClothingUniformBase, BaseFoldable ]
   id: ADTClothingUniformCroupierSkirt
   name: crupier jumpsuit
   description: Fancy.
   components:
-  #- type: Appearance
-  #- type: Foldable
-    #canFoldInsideContainer: true
-    #unfoldVerbText: fold-put-on-verb
-    #foldVerbText: fold-pull-off-verb
-  #- type: FoldableClothing
-    #foldedEquippedPrefix: vest
-    #foldedHeldPrefix: vest
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: fold-put-on-verb
+    foldVerbText: fold-pull-off-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: vest
+    foldedHeldPrefix: vest
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/uniform_croupier.rsi
-    #equippedPrefix: vest
   - type: Sprite
     sprite: ADT/Clothing/Uniforms/Jumpskirt/uniform_croupier.rsi
-    #layers:
-    #- state: icon
-      #map: [ "unfoldedLayer" ]
-    #- state: icon_vest
-      #map: ["foldedLayer"]
-      #visible: false
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon_vest
+      map: ["foldedLayer"]
+      visible: false
 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -808,3 +830,39 @@
     sprite: ADT/Clothing/Uniforms/Jumpskirt/janimaid.rsi
   - type: Clothing
     sprite: ADT/Clothing/Uniforms/Jumpskirt/janimaid.rsi
+
+- type: entity
+  parent: [ ClothingUniformBase, BaseFoldable ]
+  id: ADTClothingJumpskirtHopAlt
+  name: head of personell's business suit
+  description: Fancy.
+  components:
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: fold-put-on-verb
+    foldVerbText: fold-pull-off-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: vest
+    foldedHeldPrefix: vest
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/jumpskirt_alt_hop.rsi
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/jumpskirt_alt_hop.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon_vest
+      map: ["foldedLayer"]
+      visible: false
+      
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformSkirtBrigmedicTurtleneck
+  name: brigmedic turtleneck
+  description: Comfortable and warm turtleneck. Especially for the guardian angel.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/turtleneck_brigmed.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Uniforms/Jumpskirt/turtleneck_brigmed.rsi

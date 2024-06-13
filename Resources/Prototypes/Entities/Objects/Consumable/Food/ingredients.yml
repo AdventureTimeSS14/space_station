@@ -448,6 +448,9 @@
       - sweetdough
   - type: Sprite
     state: cakebatter
+  - type: Tag
+    tags:
+    - ADTCakeBatter
 
 - type: entity
   name: stick of butter
