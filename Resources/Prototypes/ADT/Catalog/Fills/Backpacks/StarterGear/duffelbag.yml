@@ -143,3 +143,15 @@
         - id: AppraisalTool
         - id: ADTWalletFilled500
         - id: ADTClothingOuterCoatTrader
+
+#Blueshield
+- type: entity
+  parent: ADTClothingBackpackDuffelBlueshield
+  id: ADTClothingBackpackDuffelBlueshieldFilled
+  suffix: filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalSecurity
+      - id: SpaceCash500
+      - id: Flash

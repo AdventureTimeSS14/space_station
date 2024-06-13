@@ -10,6 +10,18 @@
       - id: ADTWalletFilled500
 
 - type: entity
+  noSpawn: true
+  parent: ADTClothingBackpackSatchelBlueshield
+  id: ADTClothingBackpackSatchelBlueshieldFilled
+  suffix: filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalSecurity
+      - id: SpaceCash500
+      - id: Flash
+
+- type: entity
   #noSpawn: true
   parent: ClothingBackpackSatchelSecurity
   id: ADTClothingBackpackSatchelInvestigatorFilled
