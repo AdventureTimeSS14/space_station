@@ -7,7 +7,7 @@
     contents:
       - id: BoxSurvivalMedical
       - id: JawsOfLife
-      - id: SpaceCash500
+      - id: ADTWalletFilled500
 
 - type: entity
   #noSpawn: true
@@ -32,7 +32,7 @@
         amount: 1
       - id: ADTBookInvestigator
       - id: ADTRubberStampinvestigator
-      - id: SpaceCash500
+      - id: ADTWalletFilled500
 
 - type: entity
   noSpawn: true
@@ -44,7 +44,7 @@
       - id: BoxSurvivalMedical
       - id: BodyBag_Folded
       - id: ADTFootTag
-      - id: SpaceCash500
+      - id: ADTWalletFilled500
 
 - type: entity
   parent: ClothingBackpackSatchelSecurity

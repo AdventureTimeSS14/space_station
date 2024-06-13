@@ -52,7 +52,7 @@
     contents:
       - id: BoxSurvivalMedical
       - id: JawsOfLife
-      - id: SpaceCash500
+      - id: ADTWalletFilled500
 
 - type: entity
   parent: ClothingBackpack
@@ -174,7 +174,7 @@
         amount: 1
       - id: ADTBookInvestigator
       - id: ADTRubberStampinvestigator
-      - id: SpaceCash500
+      - id: ADTWalletFilled500
 
 - type: entity
   #noSpawn: true
@@ -197,7 +197,7 @@
         amount: 1
       - id: ADTBookInvestigator
       - id: ADTRubberStampinvestigator
-      - id: SpaceCash500
+      - id: ADTWalletFilled500
 
 - type: entity
   noSpawn: true
@@ -209,7 +209,7 @@
       - id: BoxSurvivalMedical
       - id: BodyBag_Folded
       - id: ADTFootTag
-      - id: SpaceCash500
+      - id: ADTWalletFilled500
 
 - type: entity
   parent: ClothingBackpackERTSecurity
@@ -229,7 +229,7 @@
         - id: Stunbaton
         - id: BoxSurvivalSecurity
         - id: BlueShieldsuit
-        - id: SpaceCash1000
+        - id: ADTWalletFilled1000
         - id: OxygenTankFilled
     - type: Sprite
       sprite: ADT/Clothing/Back/blueshield_backpack.rsi
