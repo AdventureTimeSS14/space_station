@@ -114,8 +114,6 @@
   - type: Tag
     tags:
       - PowerCellMedium
-=======
->>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: entity
   id: PowerCellMediumPrinted
