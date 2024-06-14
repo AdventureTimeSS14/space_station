@@ -41,6 +41,8 @@ public sealed class AutoPostingChatSystem : EntitySystem
     {
         _speakTimer.Stop();
         _emoteTimer.Stop();
+        _speakTimer.Dispose(); // освобождаем ресурсы
+        _emoteTimer.Dispose();
     }
 
     /// <summary>
@@ -51,19 +53,17 @@ public sealed class AutoPostingChatSystem : EntitySystem
         if (args.NewMobState == MobState.Dead || component == null)
         {
             RemComp<AutoPostingChatComponent>(uid);
-            //var damageSpec = new DamageSpecifier(_prototypeManager.Index<DamageGroupPrototype>("Genetic"), 300);
-            //_damageableSystem.TryChangeDamage(uid, damageSpec);
         }
     }
 
     private void OnComponentStartup(EntityUid uid, AutoPostingChatComponent component, ComponentStartup args)
     {
-        // Проверяем наличие компонента AutoPostingChatComponent на сущности
-        //if (component == null)
-        //{
-        //    Logger.Warning("AutoPostingChatComponent отсутствует на сущности с UID: " + uid);
-        //    return;
-        //}
+       // Проверяем наличие компонента AutoPostingChatComponent на сущности
+       if (component == null)
+        {
+            Log.Debug("AutoPostingChatComponent отсутствует на сущности с UID: " + uid);
+            return;
+        }
 
         _speakTimer.Interval = component.SpeakTimerRead; // 8000 миллисекунд = 8 секунд по умолчанию
         _speakTimer.Elapsed += (sender, eventArgs) =>
@@ -71,9 +71,6 @@ public sealed class AutoPostingChatSystem : EntitySystem
             // Проверяем, что данные в компоненте были обновлены
             if (component.PostingMessageSpeak != null)
             {
-                //if (component.PostingMessageSpeak == "")
-                //    _speakTimer.Stop();
-
                 _chat.TrySendInGameICMessage(uid, component.PostingMessageSpeak, InGameICChatType.Speak, ChatTransmitRange.Normal);
             }
             _speakTimer.Interval = component.SpeakTimerRead;
@@ -84,8 +81,6 @@ public sealed class AutoPostingChatSystem : EntitySystem
             // Проверяем, что данные в компоненте были обновлены
             if (component.PostingMessageEmote != null)
             {
-                //if (component.PostingMessageEmote == "")
-                //    _emoteTimer.Stop();
                 _chat.TrySendInGameICMessage(uid, component.PostingMessageEmote, InGameICChatType.Emote, ChatTransmitRange.Normal);
             }
             _emoteTimer.Interval = component.EmoteTimerRead;
