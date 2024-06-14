@@ -8,6 +8,7 @@
 
 # The common galactic tongue.
 - type: language
+  # TODO: icon
   id: GalacticCommon
   obfuscateSyllables: true
   replacement:
@@ -33,6 +34,7 @@
 
 # Spoken by slimes.
 - type: language
+  # TODO: icon
   id: Bubblish
   obfuscateSyllables: true
   replacement:
@@ -110,6 +112,7 @@
 
   # Spoken by dionas.
 - type: language
+  # TODO: icon
   id: RootSpeak
   obfuscateSyllables: true
   replacement:
@@ -177,6 +180,7 @@
 
 # A mess of broken Japanese, spoken by Felinds and Oni
 - type: language
+  icon: { sprite: ADT/Interface/Actions/language_panel.rsi, state: nekomimetic } # language panel icon
   id: Nekomimetic
   obfuscateSyllables: true
   replacement:
@@ -231,6 +235,7 @@
 
 # Spoken by the Lizard race.
 - type: language
+  icon: ADT/Interface/Actions/language_panel.rsi/draconic.png # language panel icon
   id: Draconic
   obfuscateSyllables: true
   replacement:
@@ -321,6 +326,7 @@
 
 # Spoken by the Vulpkanin race.
 - type: language
+  # TODO: icon
   id: Canilunzt
   obfuscateSyllables: true
   replacement:
@@ -385,6 +391,7 @@
 
 # Spoken by the Tajaran race.
 - type: language
+  # TODO: icon
   id: SikTaj
   obfuscateSyllables: true
   replacement:
@@ -449,6 +456,7 @@
 
 # Spoken by the Nian race.
 - type: language
+  icon: { sprite: ADT/Interface/Actions/language_panel.rsi, state: draconic } # language panel icon
   id: Nian
   obfuscateSyllables: true
   replacement:
@@ -483,6 +491,7 @@
 
 # Spoken by the Novakid race.
 - type: language
+  icon: { sprite: ADT/Interface/Actions/language_panel.rsi, state: fire } # language panel icon
   id: Fire
   obfuscateSyllables: true
   replacement:
@@ -560,6 +569,7 @@
   - ССС
 # IPC
 - type: language
+  icon: { sprite: ADT/Interface/Actions/language_panel.rsi, state: robot_talk } # language panel icon
   id: RobotTalk
   obfuscateSyllables: true
   replacement:
@@ -648,6 +658,7 @@
 
 # Spoken by the Drask race.
 - type: language
+  icon: { sprite: ADT/Interface/Actions/language_panel.rsi, state: drask } # language panel icon
   id: Drask
   obfuscateSyllables: true
   replacement:
@@ -671,6 +682,7 @@
 
 # Spoken by the Ursus race.
 - type: language
+  icon: { sprite: ADT/Interface/Actions/language_panel.rsi, state: urs } # language panel icon
   id: Urs
   obfuscateSyllables: true
   replacement:

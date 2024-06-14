@@ -13,7 +13,7 @@ namespace Content.Shared.ADT.LanguagePanel;
 /// This component describes ActionEntity "ActionOpenEmotes". This class is a part of code which is responsible for using RadialUiController.
 /// </summary>
 [RegisterComponent, NetworkedComponent]
-public sealed partial class LanguagePanelComponent: Component
+public sealed partial class LanguagePanelComponent : Component
 {
     [DataField]
     public EntProtoId OpenLanguagesAction = "ActionOpenLanguagesM";

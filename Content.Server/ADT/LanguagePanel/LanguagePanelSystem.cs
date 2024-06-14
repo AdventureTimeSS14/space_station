@@ -7,6 +7,7 @@ using Robust.Shared.Prototypes;
 using Content.Shared.ADT.LanguagePanel;
 using Content.Shared.Language;
 using Content.Server.Language;
+using Content.Shared.Language.Components;
 
 namespace Content.Server.ADT.LanguagePanel;
 
@@ -52,6 +53,11 @@ public sealed class LanguagePanelSystem : EntitySystem
             {
                 ev.Languages.Add(lang);
             }
+            if (EntityManager.TryGetComponent<ImplantedTranslatorComponent>(uid, out var implantedTranslatorComponent))
+                foreach (var lang in implantedTranslatorComponent.SpokenLanguages)
+                {
+                    ev.Languages.Add(lang);
+                }
             RaiseNetworkEvent(ev, player);
         }
 
