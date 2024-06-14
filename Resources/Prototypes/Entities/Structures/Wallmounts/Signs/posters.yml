@@ -49,17 +49,6 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
 
-# Own
-
-- type: entity
-  parent: PosterBase
-  id: ADTPosterQuadroElectronics
-  name: "Quadro Electronics"
-  description: "When you look at the poaster you want to wear an animal mask"
-  components:
-  - type: Sprite
-    state: quadro_electronics
-
 # Contraband
 - type: entity
   parent: PosterBase
@@ -601,6 +590,15 @@
   components:
     - type: Sprite
       state: poster62_contraband
+
+- type: entity
+  parent: PosterBase
+  id: PosterContrabandMissingSpacepen
+  name: "Missing Spacepen"
+  description: "This poster depicts something you will never find."
+  components:
+    - type: Sprite
+      state: poster63_contraband
 
 # Legit
 - type: entity

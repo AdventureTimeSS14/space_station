@@ -7,6 +7,7 @@ using Content.Shared.Eye.Blinding.Systems;
 using Content.Shared.SimpleStation14.Silicon.Components;
 using Content.Shared.SimpleStation14.Silicon.Systems;
 using Content.Shared.Speech.EntitySystems;
+using Content.Shared.Speech.Muting;
 using Content.Shared.StatusEffect;
 using Robust.Shared.Random;
 

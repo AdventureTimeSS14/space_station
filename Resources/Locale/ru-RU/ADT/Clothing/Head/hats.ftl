@@ -60,11 +60,11 @@ ent-ADTClothingHeadHairPin = золотая заколка
     .desc = Золотая заколка для волос с красными перьями. Производства "Modeling Agency Dar-Vaxed".
     .suffix = { "" }
 
-ent-ADTClothingHeadPovar = Поварской колпак-берет шеф-повара
+ent-ADTClothingHeadPovar = поварской колпак-берет шеф-повара
     .desc = Обязательный головной убор уважающего себя шеф-повара, а так-же чтобы на еду не попали волосы.
     .suffix = { "" }
 
-ent-ADTClothingHeadHelmetHungerGamesCapitols = Шлем Капитолия
+ent-ADTClothingHeadHelmetHungerGamesCapitols = шлем Капитолия
     .desc = Шлем компании "Космических Голодных Игр".
     .suffix = { "" }
 
@@ -116,7 +116,7 @@ ent-ADTClothingHeadHatsBeretSupply = берет отдела снабжения
 ent-ADTClothingHeadHatsBeretCE = берет старшего инженера
     .desc = Белый берет с вышитой эмблемой инженерного отдела. От него веет машинным маслом и пиво.
 
-ent-ADTClothingHeadHatsBeretCentCom = берет центрального командования
+ent-ADTClothingHeadHatsBeretCentCom = берет Центком
     .desc = Зелённый берет с вышитой эмблемой ЦК. Стиль военного бюрократа.
 
 ent-ADTClothingHeadHatDedMoroz = колпак Деда Мороза
@@ -180,3 +180,12 @@ ent-ADTClothingHeadHatHoodBioParamedic = { ent-ClothingHeadHatHoodBioGeneral }
 ent-ADTClothingHeadHelmetTSF = шлем армии ТСФ
     .desc = Стандартная каска пехотинца Транс-Солнечной Федерации.
     .suffix = { "ТСФ" }
+
+ent-ClothingNeckCloakCentcom = плащ Центком
+    .desc = Помпезный элитный зеленый плащ с красивой золотой отделкой, сшитый специально для высших чинов Центрального командования. Он настолько тяжелый, что кажется, будто золотая отделка - настоящая.
+
+ent-ClothingHeadHatCentcomcap = фуражка Центком
+    .desc = Экстравагантная причудливая фуражка центрального командира.
+
+ent-ADTClothingHeadHatBeretBlackCivilian = чёрный берет
+    .desc = Этот тёмный берет из мягкой ткани прилегает к голове как уютный оберег от холода. Его простой и классический дизайн делает его универсальным аксессуаром для любого стиля одежды.

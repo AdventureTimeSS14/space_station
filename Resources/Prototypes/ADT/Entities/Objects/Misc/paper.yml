@@ -36,6 +36,18 @@
   - type: Sprite
     state: stamp-deny
 
+- type: entity
+  name: magistrat's rubber stamp
+  parent: RubberStampMime
+  id: RubberStampMagistrat
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-magistrat
+    stampState: "paper_stamp-mag"
+  - type: Sprite
+    sprite: ADT/KD/Magistrat.rsi
+    state: stamp-magistrat
+
 #Валентинки
 - type: entity
   name: valentine paper red
@@ -134,3 +146,69 @@
   - type: StorageFill
     contents:
       - id: ADTPaperValentineRed
+
+- type: entity
+  id: BoxFolderGreyFilled
+  parent: BoxFolderBase
+  suffix: Red
+  components:
+    - type: StorageFill
+      contents:
+      - id: Paper
+        amount: 10
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      layers:
+      - state: folder-colormap
+        color: "#999999"
+      - state: folder-base
+
+- type: entity
+  id: BoxFolderBlueFilled
+  parent: BoxFolderBase
+  suffix: Blue
+  components:
+    - type: StorageFill
+      contents:
+      - id: Paper
+        amount: 10
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      layers:
+      - state: folder-colormap
+        color: "#355d99"
+      - state: folder-base
+
+- type: entity
+  id: BoxFolderRedFilled
+  parent: BoxFolderBase
+  suffix: Red
+  components:
+    - type: StorageFill
+      contents:
+      - id: Paper
+        amount: 10
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      layers:
+      - state: folder-colormap
+        color: "#cc2323"
+      - state: folder-base
+
+- type: entity
+  name: creator pen
+  parent: BaseItem
+  id: PenCreator
+  description: creator's pen
+  components:
+  - type: Tag
+    tags:
+    - Write
+  - type: Sprite
+    sprite: ADT/KD/pen.rsi
+    state: pen
+  - type: Item
+    sprite: ADT/KD/pen.rsi
+    heldPrefix: pen
+    size: Tiny
+

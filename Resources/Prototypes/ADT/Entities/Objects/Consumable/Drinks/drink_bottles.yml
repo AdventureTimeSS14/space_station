@@ -33,8 +33,8 @@
           Quantity: 100
   - type: Drink
   - type: Sprite
-    sprite: ADT/Objects/Consumable/Drinks/just_kekc_cocktail.rsi
-    state: adtappleliqueurbottle
+    sprite: ADT/Objects/Consumable/Drinks/apple_liqueur_bottle.rsi
+    state: icon
   - type: Label
     currentLabel: apple-liqueur-name
 

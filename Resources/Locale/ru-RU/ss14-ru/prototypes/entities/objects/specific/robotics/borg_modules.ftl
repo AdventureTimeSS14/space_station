@@ -67,3 +67,13 @@ ent-BorgModuleClowning = клоунский модуль киборга
 
 ent-BorgModulePDA = КПК модуль киборга
     .desc = { ent-BaseBorgModule.desc }
+ent-BorgModuleL6C = L6C ROW модуль киборга
+    .desc = { ent-BaseBorgModule.desc }
+ent-BorgModuleEsword = модуль двухклинкового энергетического меча киборга
+    .desc = Модуль, позволяющий киборгам пользоваться двухклинковым энергетическим мечом.
+ent-BorgModuleOperative = модуль киборга ядерных оперативников
+    .desc = Модуль, позволяющий киборгам пользоваться ломом, ЕМАГом и пинпоинтером синдиката.
+ent-BorgModuleSyndicateWeapon = оружейный модуль киборга синдиката
+    .desc = { ent-BaseBorgModule.desc }
+ent-BorgModuleService = сервисный модуль киборга
+    .desc = { ent-BaseBorgModule.desc }

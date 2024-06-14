@@ -42,6 +42,7 @@ petting-failure-raccoon = Вы тянетесь погладить { $target }, 
 petting-failure-dragon = Вы поднимаете руку, но { $target } издаёт рёв, и вы решаете, что не хотите стать кормом для карпов.
 petting-failure-hamster = Вы тянетесь погладить { $target }, но { $target } пытается укусить вас за палец, и только ваши молниеносные рефлексы спасают вас от почти смертельной травмы.
 petting-failure-bear = Вы думаете погладить { $target }, но { $target } рычит, заставляя вас подумать ещё раз.
+petting-success-nymph = Вы гладите { $target } по { POSS-ADJ($target) } маленькой деревянной голове.
 
 ## Knocking on windows
 
@@ -53,6 +54,8 @@ petting-failure-honkbot = Вы тянетесь погладить { $target }, 
 petting-failure-cleanbot = Вы тянетесь погладить { $target }, но { $target } занят уборкой!
 petting-failure-mimebot = Вы тянетесь погладить { $target }, но { $target } занят мимированием!
 petting-failure-medibot = Вы тянетесь погладить { $target }, но { $target } едва не пронзает вашу руку шприцом!
+petting-failure-nymph = Вы тянетесь погладить { $target }, но { POSS-ADJ($target) } отодвигает свои ветви в сторону.
+petting-failure-shadow = Вы тянетесь погладить { $target }, но ваша рука проходит сквозь холодную тьму { POSS-ADJ($target) } тела.
 # Shown when knocking on a window
 comp-window-knock = *тук-тук*
 hugging-success-generic = Вы обнимаете { $target }.

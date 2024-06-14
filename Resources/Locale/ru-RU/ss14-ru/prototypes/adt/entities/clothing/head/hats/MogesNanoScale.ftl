@@ -1,4 +1,6 @@
-ent-ADTClothingClothingHeadHelmetHardsuitNanoScale = Nano scale armor helmet
-    .desc = Reptiles are not as primitive as you thought.
-ent-ADTClothingClothingHeadHelmetNanoScaleChameleon = Nano scale chameleon helmet
-    .desc = Very secretive and smells very sugary
+ent-ADTClothingClothingHeadHelmetHardsuitNanoScale = наноуровневый шлем
+    .desc = Рептилии не настолько примитивны, как вы считали
+    .suffix = { "" }
+ent-ADTClothingClothingHeadHelmetNanoScaleChameleon = наноуровневый шлем Хамелеон
+    .desc = Очень скрытно и очень пахнет сахаром
+    .suffix = { "" }

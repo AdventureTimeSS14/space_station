@@ -28,10 +28,10 @@
   - type: LanguageSpeaker
     speaks:
     - GalacticCommon
-    - RobotTalk
+    - BorgTalk
     understands:
     - GalacticCommon
-    - RobotTalk
+    - BorgTalk
 
 
 - type: entity
@@ -298,6 +298,8 @@
           shader: unshaded
           map: ["light"]
           visible: false
+    - type: PointLight
+      color: "#dd200b"
     - type: BorgChassis
       maxModules: 3
       moduleWhitelist:

@@ -118,7 +118,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/admiral_USSP_cap.rsi
   - type: Clothing
@@ -132,7 +132,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/captain_USSP_cap.rsi
   - type: Clothing
@@ -146,7 +146,7 @@
   components:
   - type: Tag
     tags: # ignore "WhitelistChameleon" tag
-      - DroneUsable
+      - WhitelistChameleon
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/officer_USSP_cap.rsi
   - type: Clothing

@@ -18,7 +18,7 @@
     - Nukeops
     - Traitor
     - Revolutionary
-    - Zombie
+#    - Zombie
     - RampingStationEventScheduler
 
 - type: gamePreset
@@ -92,8 +92,8 @@
   description: traitor-description
   showInVote: false
   rules:
-    - Changeling
     - Traitor
+    - SubGamemodesRule
     - BasicStationEventScheduler
     - BasicRoundstartVariation
 
@@ -119,6 +119,7 @@
   showInVote: false
   rules:
     - Nukeops
+    - SubGamemodesRule
     - BasicStationEventScheduler
     - BasicRoundstartVariation
 
@@ -133,24 +134,25 @@
   showInVote: false
   rules:
     - Revolutionary
+    - SubGamemodesRule
     - BasicStationEventScheduler
     - BasicRoundstartVariation
 
-- type: gamePreset
-  id: Zombie
-  alias:
-  - zombie
-  - zombies
-  - Zombies
-  - zz14
-  - zomber
-  name: zombie-title
-  description: zombie-description
-  showInVote: false
-  rules:
-  - Zombie
-  - BasicStationEventScheduler
-  - BasicRoundstartVariation
+#- type: gamePreset
+#  id: Zombie
+#  alias:
+#  - zombie
+#  - zombies
+#  - Zombies
+#  - zz14
+#  - zomber
+#  name: zombie-title
+#  description: zombie-description
+#  showInVote: false
+#  rules:
+#  - Zombie
+#  - BasicStationEventScheduler
+#  - BasicRoundstartVariation
 
 - type: gamePreset
   id: Pirates
@@ -161,5 +163,73 @@
   showInVote: false
   rules:
     - Pirates
+    - BasicStationEventScheduler
+    - BasicRoundstartVariation
+
+- type: gamePreset
+  id: TraitorChangeling
+  alias:
+    - traitorchangeling
+  name: traitorchangeling-title
+  description: traitorchangeling-description
+  showInVote: false
+  rules:
+    - Changeling
+    - Traitor
+    - SubGamemodesRule
+    - BasicStationEventScheduler
+    - BasicRoundstartVariation
+
+- type: gamePreset
+  id: NukeopsChangeling
+  alias:
+    - nukeopschangeling
+  name: nukeopschangeling-title
+  description: nukeopschangeling-description
+  showInVote: false
+  rules:
+    - Changeling
+    - Nukeops
+    - SubGamemodesRule
+    - BasicStationEventScheduler
+    - BasicRoundstartVariation
+
+- type: gamePreset
+  id: RevolutionaryChangeling
+  alias:
+    - revolutionarieschangeling
+  name: revchangeling-title
+  description: revchangeling-description
+  showInVote: false
+  rules:
+    - Changeling
+    - Revolutionary
+    - SubGamemodesRule
+    - BasicStationEventScheduler
+    - BasicRoundstartVariation
+
+- type: gamePreset
+  id: ZombieChangeling
+  alias:
+  - zombiechangeling
+  name: zombiechangeling-title
+  description: zombiechangeling-description
+  showInVote: false
+  rules:
+    - Changeling
+#    - Zombie
+    - BasicStationEventScheduler
+    - BasicRoundstartVariation
+
+- type: gamePreset
+  id: Changeling
+  alias:
+    - changeling
+  name: changelings-title
+  description: changelings-description
+  showInVote: false
+  rules:
+    - Changeling
+    - SubGamemodesRule
     - BasicStationEventScheduler
     - BasicRoundstartVariation

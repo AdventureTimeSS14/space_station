@@ -52,4 +52,4 @@ ent-BoxDeathRattleImplants = deathrattle implant box
     .desc = Six deathrattle implants and handheld GPS devices for the whole squad.
 ent-BoxLeadLined = lead-lined box
     .desc = This box stymies the transmission of harmful radiation.
-    .suffix = Debug
+    .suffix = ДЕБАГ

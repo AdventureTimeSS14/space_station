@@ -4,13 +4,17 @@ guide-new-cocktails-ADT = Авторские коктейли, рецепты
 guide-pathologist-ADT = Морг и патологоанатом
 guide-chemicals-ADT = Новые реагенты
 
+guide-entry-glossary = Глоссарий терминов
+guide-entry-revolutionaries = Революционеры
+guide-srp-operator-centcomm = Оператор ЦК
+
 guide-entry-all-korporate-zakon = Корпоративный Закон
 guide-entry-all-korporate-zakon-oprs = ОПРС
-guide-entry-all-korporate-zakon-minor = Легкие нарушения
-guide-entry-all-korporate-zakon-medium = Средние нарушения
-guide-entry-all-korporate-zakon-serious = Тяжкие нарушения
-guide-entry-all-korporate-zakon-superheavy = Сверхтяжкие нарушения
-guide-entry-all-korporate-zakon-critical = Критические нарушения
+guide-entry-all-korporate-zakon-minor = 1ХХ - Легкие нарушения
+guide-entry-all-korporate-zakon-medium = 2ХХ - Средние нарушения
+guide-entry-all-korporate-zakon-serious = 3ХХ - Тяжкие нарушения
+guide-entry-all-korporate-zakon-superheavy = 4ХХ - Сверхтяжкие нарушения
+guide-entry-all-korporate-zakon-critical = 5ХХ - Критические нарушения
 
 guide-entry-all-srp = Стандартные Рабочие Процедуры
 

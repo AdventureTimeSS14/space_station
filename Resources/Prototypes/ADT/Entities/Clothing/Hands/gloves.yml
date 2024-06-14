@@ -168,7 +168,7 @@
   - type: FingerprintMask
 
 - type: entity
-  parent: ClothingHandsGlovesCombat
+  parent: ClothingHandsBase 
   id: ADTClothingHandsGlovesLapkee
   name: white combat gloves
   description: white combat gloves
@@ -181,17 +181,6 @@
   - type: Fiber
     fiberMaterial: fibers-insulative
     fiberColor: fibers-black
-  - type: TemperatureProtection #слабая защита от температуры
-    coefficient: 0.05
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.95
-        Heat: 0.95
-        Cold: 0.95
-        Shock: 0.95
 
 #New Year
 - type: entity
@@ -301,3 +290,117 @@
     sprite: ADT/Clothing/Hands/Gloves/gloves_sport_step.rsi
   - type: Clothing
     sprite: ADT/Clothing/Hands/Gloves/gloves_sport_step.rsi #спрайты от prazat911
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ADTClothingHandsCrusherGauntlets
+  name: crusher gauntlets
+  description: lil miners' friend.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Hands/Gloves/crusher_gauntlets.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/Hands/Gloves/crusher_gauntlets.rsi
+  - type: AmmoCounter
+  - type: UseDelayOnShoot
+  - type: UseDelay
+    delay: 1.5
+  - type: LeechOnMarker
+    leech:
+      groups:
+        Brute: -5
+        Burn: -5
+        Airloss: -5
+  - type: Gun
+    soundGunshot: /Audio/Weapons/plasma_cutter.ogg
+    fireRate: 1.5
+    useKey: false
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.75
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
+  - type: BasicEntityAmmoProvider
+    proto: BulletCharge
+    capacity: 1
+    count: 1
+  - type: MeleeWeapon
+    attackRate: 2.5
+    wideAnimationRotation: -135
+    animation: WeaponArcFist
+    damage:
+      types:
+        Blunt: 8
+        Structural: 25
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    color: "#ffeead"
+    enabled: false
+    radius: 6
+  - type: Tool
+    qualities:
+      - Prying
+    speed: 0.25
+  - type: Prying
+    pryPowered: true
+  - type: Fiber
+    fiberMaterial: fibers-crusher
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsRingBlood
+  name: blood ring
+  description: Good ring.
+  components:
+  - type: Sprite
+    sprite: ADT/KD/RingBlood.rsi
+  - type: Clothing
+    sprite: ADT/KD/RingBlood.rsi
+  - type: Item
+    size: Tiny
+  - type: StaticPrice
+    price: 1000
+    
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsRingEmerald
+  name: emerald ring
+  description: Good ring.
+  components:
+  - type: Sprite
+    sprite: ADT/KD/RingEmerald.rsi
+  - type: Clothing
+    sprite: ADT/KD/RingEmerald.rsi
+  - type: Item
+    size: Tiny
+  - type: StaticPrice
+    price: 1000
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsRingPlazma
+  name: plazma ring
+  description: Good ring.
+  components:
+  - type: Sprite
+    sprite: ADT/KD/RingPlazma.rsi
+  - type: Clothing
+    sprite: ADT/KD/RingPlazma.rsi
+  - type: Item
+    size: Tiny
+  - type: StaticPrice
+    price: 1000
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsRingTurk
+  name: turk ring
+  description: Good ring.
+  components:
+  - type: Sprite
+    sprite: ADT/KD/RingTurk.rsi
+  - type: Clothing
+    sprite: ADT/KD/RingTurk.rsi
+  - type: Item
+    size: Tiny
+  - type: StaticPrice
+    price: 1000

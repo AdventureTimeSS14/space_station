@@ -1,6 +1,5 @@
 - type: entity
   id: EffectSparks
-  noSpawn: true
   components:
   - type: TimedDespawn
     lifetime: 0.5
@@ -17,10 +16,12 @@
     tags:
     - HideContextMenu
   - type: AnimationPlayer
+  - type: EmitSoundOnSpawn
+    sound:
+      collection: sparks
 
 - type: entity
   id: EffectTeslaSparks
-  noSpawn: true
   components:
   - type: TimedDespawn
     lifetime: 0.5
@@ -38,7 +39,7 @@
     - HideContextMenu
   - type: AnimationPlayer
   - type: EmitSoundOnSpawn
-    sound: 
+    sound:
       path: /Audio/Effects/tesla_consume.ogg
       params:
         variation: 0.3

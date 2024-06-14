@@ -135,6 +135,8 @@
       amount: 1
     Oxygen:
       amount: 1
+    Sodium:
+      amount: 1
   products:
     Vitamin: 3
 
@@ -157,10 +159,42 @@
   reactants:
     Water:
       amount: 2
-    Vinegar: #тут не совсем должен быть уксус, а формальдегит. Но в таком случае придётся делать ещё один препарат от гниения. 
+    Vinegar: #тут не совсем должен быть уксус, а формальдегит. Но в таком случае придётся делать ещё один препарат от гниения.
       amount: 1
     Iron:
       amount: 1
       catalyst: true
   products:
     ADTMFormalin: 3
+
+#Кровоостанавливающая пудра
+- type: reaction
+  id: ADTStypticPowder
+  reactants:
+    Aluminium:
+      amount: 1
+    Hydrogen:
+      amount: 1
+    Oxygen:
+      amount: 1
+    SulfuricAcid:
+      amount: 1
+  products:
+    ADTStypticPowder: 4
+#Сульфадиазин серебра
+- type: reaction
+  id: ADTSilverSulfadiazine
+  reactants:
+    Ammonia:
+      amount: 1
+    Silver:
+      amount: 1
+    Sulfur:
+      amount: 1
+    Oxygen:
+      amount: 1
+    Chlorine:
+      amount: 1
+  products:
+    ADTSilverSulfadiazine: 5
+

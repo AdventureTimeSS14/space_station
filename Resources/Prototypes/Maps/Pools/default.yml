@@ -15,13 +15,8 @@
   # - Saltern
   # - Packed
   #- Reach
-  - CorvaxDelta
-  - CorvaxAvrite
-  #- CorvaxGate
-  - CorvaxSilly
-  - CorvaxOutpost
-  - CorvaxAstra
-  - CorvaxGelta
+  # - CorvaxAvrite
+  - ADTDelta
   - ADTAtlas
   - ADTBagel
   - ADTBox
@@ -34,3 +29,6 @@
   - ADTOrigin
   - ADTSaltern
   - ADTPacked
+  - Kilo
+  - ADTTrain
+  - ADTAvrite
