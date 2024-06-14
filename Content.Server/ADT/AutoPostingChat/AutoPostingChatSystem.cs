@@ -26,12 +26,23 @@ public sealed class AutoPostingChatSystem : EntitySystem
     [Dependency] private readonly DamageableSystem _damageableSystem = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
+    private System.Timers.Timer speakTimer = new();
+    private System.Timers.Timer emoteTimer = new();
+
     public override void Initialize()
     {
         base.Initialize();
         SubscribeLocalEvent<AutoPostingChatComponent, ComponentStartup>(OnComponentStartup);
         SubscribeLocalEvent<AutoPostingChatComponent, MobStateChangedEvent>(OnMobState);
+        SubscribeLocalEvent<AutoPostingChatComponent, ComponentShutdown>(ComponentRemove);
     }
+
+    private void ComponentRemove(EntityUid uid, AutoPostingChatComponent component, ComponentShutdown args)
+    {
+        speakTimer.Stop();
+        emoteTimer.Stop();
+    }
+
     /// <summary>
     /// On death removes active comps.
     /// </summary>
@@ -53,8 +64,8 @@ public sealed class AutoPostingChatSystem : EntitySystem
         //    Logger.Warning("AutoPostingChatComponent отсутствует на сущности с UID: " + uid);
         //    return;
         //}
-        // Создаем таймеры для Speak и Emote
-        var speakTimer = new System.Timers.Timer(component.SpeakTimerRead); // 8000 миллисекунд = 8 секунд по умолчанию
+
+        speakTimer.Interval = component.SpeakTimerRead; // 8000 миллисекунд = 8 секунд по умолчанию
         speakTimer.Elapsed += (sender, eventArgs) =>
         {
             // Проверяем, что данные в компоненте были обновлены
@@ -67,7 +78,7 @@ public sealed class AutoPostingChatSystem : EntitySystem
             }
             speakTimer.Interval = component.SpeakTimerRead;
         };
-        var emoteTimer = new System.Timers.Timer(component.EmoteTimerRead); // 9000 миллисекунд = 9 секунд по умолчанию
+        emoteTimer.Interval = component.EmoteTimerRead; // 9000 миллисекунд = 9 секунд по умолчанию
         emoteTimer.Elapsed += (sender, eventArgs) =>
         {
             // Проверяем, что данные в компоненте были обновлены
