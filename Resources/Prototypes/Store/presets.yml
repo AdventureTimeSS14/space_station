@@ -1,39 +1,5 @@
 - type: entity
   id: StorePresetUplink
-<<<<<<< HEAD
-  storeName: Uplink
-  categories:
-  - UplinkWeaponry
-  - UplinkAmmo
-  - UplinkExplosives
-  - UplinkChemicals
-  - UplinkDeception
-  - UplinkDisruption
-  - UplinkImplants
-  - UplinkAllies
-  - UplinkWearables
-  - UplinkJob
-  - UplinkPointless
-  - ADTUplinkShuttle
-  currencyWhitelist:
-  - Telecrystal
-
-- type: storePreset
-  id: StorePresetChangeling
-  storeName: EvolutionMenu
-  categories:
-  - ChangelingAbilities
-  currencyWhitelist:
-  - EvolutionPoints
-
-- type: storePreset
-  id: StorePresetWizard
-  storeName: SpellbookMenu
-  categories:
-  - WizardAbilities
-  currencyWhitelist:
-  - SpellPoints
-=======
   abstract: true
   components:
   - type: Store
@@ -50,23 +16,20 @@
     - UplinkWearables
     - UplinkJob
     - UplinkPointless
+    - ADTUplinkShuttle
     currencyWhitelist:
     - Telecrystal
     balance:
       Telecrystal: 0
 
+- type: storePreset
+  id: StorePresetChangeling
+  storeName: EvolutionMenu
+	@@ -47,14 +30,7 @@
+  currencyWhitelist:
+  - EvolutionPoints
+
 - type: entity
   id: StorePresetSpellbook
   abstract: true
   components:
-  - type: Store
-    name: store-preset-name-spellbook
-    categories:
-    - SpellbookOffensive    #Fireball, Rod Form
-    - SpellbookDefensive    #Magic Missile, Wall of Force
-    - SpellbookUtility      #Body Swap, Lich, Teleport, Knock, Polymorph
-    - SpellbookEquipment    #Battlemage Robes, Staff of Locker
-    - SpellbookEvents       #Summon Weapons, Summon Ghosts
-    currencyWhitelist:
-    - WizCoin
->>>>>>> 24e7653c984da133283457da2089e629161a7ff2
