@@ -97,6 +97,7 @@ public sealed class RadioSystem : EntitySystem
         name = FormattedMessage.EscapeText(name);
 
         // most radios are relayed to chat, so lets parse the chat message beforehand
+<<<<<<< HEAD
         // Frontier - languages mechanic
         // A message that the listener could understand
         var wrappedMessage = WrapRadioMessage(messageSource, channel, name, message);
@@ -108,6 +109,16 @@ public sealed class RadioSystem : EntitySystem
         var notUdsMsg = new ChatMessage(ChatChannel.Radio, obfuscated, obfuscatedWrapped, NetEntity.Invalid, null);
 
         var ev = new RadioReceiveEvent(messageSource, channel, msg, notUdsMsg, language);
+=======
+        var chat = new ChatMessage(
+            ChatChannel.Radio,
+            message,
+            wrappedMessage,
+            NetEntity.Invalid,
+            null);
+        var chatMsg = new MsgChatMessage { Message = chat };
+        var ev = new RadioReceiveEvent(message, messageSource, channel, radioSource, chatMsg);
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
         var sendAttemptEv = new RadioSendAttemptEvent(channel, radioSource);
         RaiseLocalEvent(ref sendAttemptEv);

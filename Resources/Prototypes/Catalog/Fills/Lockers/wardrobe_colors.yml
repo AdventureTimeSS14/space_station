@@ -119,9 +119,15 @@
       - id: ClothingUniformRandomShorts
         amount: 1
       - id: ClothingUniformRandomArmless
+<<<<<<< HEAD
         amount: 1
       - id: ClothingUniformRandomStandart
         amount: 1
+=======
+        amount: 5
+      - id: ClothingUniformRandomStandard
+        amount: 5
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
       - id: ClothingUniformRandomBra
         amount: 1
       - id: ClothingUniformRandomShirt

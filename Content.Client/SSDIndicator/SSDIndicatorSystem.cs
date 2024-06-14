@@ -30,14 +30,17 @@ public sealed class SSDIndicatorSystem : EntitySystem
     {
         if (component.IsSSD &&
             _cfg.GetCVar(CCVars.ICShowSSDIndicator) &&
+<<<<<<< HEAD
             !args.InContainer &&
             !args.HasStealthComponent &&
+=======
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
             !_mobState.IsDead(uid) &&
             !HasComp<ActiveNPCComponent>(uid) &&
             TryComp<MindContainerComponent>(uid, out var mindContainer) &&
             mindContainer.ShowExamineInfo)
         {
-            args.StatusIcons.Add(_prototype.Index<StatusIconPrototype>(component.Icon));
+            args.StatusIcons.Add(_prototype.Index(component.Icon));
         }
     }
 }

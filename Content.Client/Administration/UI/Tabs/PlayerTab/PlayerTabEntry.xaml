@@ -1,6 +1,6 @@
-﻿<ContainerButton xmlns="https://spacestation14.io"
-                 xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls">
-    <PanelContainer Name="BackgroundColorPanel"/>
+﻿<PanelContainer xmlns="https://spacestation14.io"
+                xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls"
+                Name="BackgroundColorPanel">
     <BoxContainer Orientation="Horizontal"
                   HorizontalExpand="True"
                   SeparationOverride="4">
@@ -15,23 +15,26 @@
                ClipText="True"/>
         <customControls:VSeparator/>
         <Label Name="JobLabel"
-               SizeFlagsStretchRatio="3"
-               HorizontalExpand="True"
-               ClipText="True"/>
-        <customControls:VSeparator/>
-        <Label Name="AntagonistLabel"
                SizeFlagsStretchRatio="2"
                HorizontalExpand="True"
                ClipText="True"/>
         <customControls:VSeparator/>
+        <Label Name="AntagonistLabel"
+               SizeFlagsStretchRatio="1"
+               HorizontalExpand="True"
+               ClipText="True"/>
+        <customControls:VSeparator/>
+<<<<<<< HEAD
         <Label Name="SponsorLabel"
                SizeFlagsStretchRatio="2"
                HorizontalExpand="True"
                ClipText="True"/>
         <customControls:VSeparator/>
+=======
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
         <Label Name="OverallPlaytimeLabel"
-               SizeFlagsStretchRatio="2"
+               SizeFlagsStretchRatio="1"
                HorizontalExpand="True"
                ClipText="True"/>
     </BoxContainer>
-</ContainerButton>
+</PanelContainer>

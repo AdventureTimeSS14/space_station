@@ -4,10 +4,15 @@
     ClothingBackpackDuffelMedical: 4
     ClothingBackpackMedical: 4
     ClothingBackpackSatchelMedical: 4
+<<<<<<< HEAD
     #ADTClothingBackpackDuffelMedical: 4
     #ADTClothingBackpackMedical: 4
     #ADTClothingBackpackSatchelMedical: 4
     #ADTClothingBeltMedicalBag: 4
+=======
+    ClothingUniformJumpsuitMedicalDoctor: 4
+    ClothingUniformJumpskirtMedicalDoctor: 4
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     ClothingHeadHatBeretMedic: 4
     ClothingHeadNurseHat: 4
     ClothingOuterCoatLab: 4
@@ -16,13 +21,20 @@
     ClothingHandsGlovesNitrile: 2
     ClothingHeadsetMedical: 4
     ClothingOuterWinterMed: 2
+<<<<<<< HEAD
     #ClothingHeadHelmetVoidParamed: 1
     #ClothingOuterHardsuitVoidParamed: 1
+=======
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     ClothingOuterHospitalGown: 5
     UniformScrubsColorGreen: 4
     UniformScrubsColorBlue: 4
     UniformScrubsColorPurple: 4
+<<<<<<< HEAD
     ClothingHeadHatSurgcapGreen: 4
+=======
+    ClothingHeadHatSurgcapGreen: 4 
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     ClothingHeadHatSurgcapBlue: 4
     ClothingHeadHatSurgcapPurple: 4
     ClothingShoesBootsWinterMed: 2

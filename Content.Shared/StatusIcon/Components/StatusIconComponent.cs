@@ -24,6 +24,7 @@ public sealed partial class StatusIconComponent : Component
 /// </summary>
 /// <param name="StatusIcons"></param>
 [ByRefEvent]
+<<<<<<< HEAD
 public record struct GetStatusIconsEvent(List<StatusIconData> StatusIcons, bool InContainer, bool HasStealthComponent);
 
 /// <summary>
@@ -37,3 +38,6 @@ public record struct CanDisplayStatusIconsEvent(EntityUid? User = null)
 
     public bool Cancelled = false;
 }
+=======
+public record struct GetStatusIconsEvent(List<StatusIconData> StatusIcons);
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2

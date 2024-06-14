@@ -9,6 +9,8 @@
       sprite: Objects/Misc/stock_parts.rsi
     - type: Item
       size: Tiny
+    - type: Stack
+      count: 1
 
 # Rating 1
 
@@ -21,12 +23,11 @@
   components:
     - type: Sprite
       state: capacitor
-    - type: MachinePart
-      part: Capacitor
-      rating: 1
     - type: Tag
       tags:
         - CapacitorStockPart
+    - type: Stack
+      stackType: Capacitor
 
 - type: entity
   id: MicroManipulatorStockPart
@@ -37,9 +38,8 @@
   components:
     - type: Sprite
       state: micro_mani
-    - type: MachinePart
-      part: Manipulator
-      rating: 1
+    - type: Stack
+      stackType: Manipulator
 
 - type: entity
   id: MatterBinStockPart
@@ -50,6 +50,7 @@
   components:
     - type: Sprite
       state: matter_bin
+<<<<<<< HEAD
     - type: MachinePart
       part: MatterBin
       rating: 1
@@ -238,3 +239,7 @@
   components:
     - type: Sprite
       state: subspace_transmitter
+=======
+    - type: Stack
+      stackType: MatterBin
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2

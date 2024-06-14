@@ -31,8 +31,13 @@ roles-antag-space-ninja-objective = Use your stealth to sabotage the station, no
 roles-antag-thief-name = Thief
 roles-antag-thief-objective = Add some NT property to your personal collection without using violence.
 
+<<<<<<< HEAD
 roles-antag-terminator-name = Exterminator
 roles-antag-terminator-objective = Kill the target at all costs, the future depends on it.
 
 roles-antag-changeling-name = Changeling
 roles-antag-changeling-objective = Use your special alien abilites to aid in completing your objectives.
+=======
+roles-antag-dragon-name = Space Dragon
+roles-antag-dragon-objective = Create a carp army to take over this quadrant.
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2

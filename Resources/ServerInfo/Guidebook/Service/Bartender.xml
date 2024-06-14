@@ -2,19 +2,28 @@
 # Бармен
 Работа бармена проста: наливайте напитки. Люди придут к барной стойке, попросят коктейль или что-либо попить, ваша работа им это предоставить.
 
+[textlink="Click here to see a complete list of drinks." link="Drinks"]
+
 <Box>
 Компоненты для напитков можно найти в следующих устройствах:
 </Box>
 <Box>
+<<<<<<< HEAD
 <GuideEntityEmbed Entity="BoozeDispenser" Caption="Раздатчик алкоголя"/>
 <GuideEntityEmbed Entity="soda_dispenser" Caption="Раздатчик безалкоголя"/>
 <GuideEntityEmbed Entity="VendingMachineBooze" Caption="АлкоМат"/>
+=======
+<GuideEntityEmbed Entity="BoozeDispenser"/>
+<GuideEntityEmbed Entity="SodaDispenser"/>
+<GuideEntityEmbed Entity="VendingMachineBooze"/>
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 </Box>
 
 <Box>
 Не забудьте о том, по каким ёмкостям принято разливать напитки!
 </Box>
 <Box>
+<<<<<<< HEAD
 <GuideEntityEmbed Entity="DrinkGlass" Caption="Стакан-метаморф"/>
 <GuideEntityEmbed Entity="DrinkGlassCoupeShaped" Caption="Бокал-купе"/>
 <GuideEntityEmbed Entity="DrinkShaker"Caption="Шейкер"/>
@@ -24,4 +33,13 @@
 Важно знать, как приготовить желаемый напиток. Здесь представлены различные их вариации в игре, включая их рецепты:
 
 <GuideReagentGroupEmbed Group="Drinks"/>
+=======
+<GuideEntityEmbed Entity="DrinkGlass" Caption="Glass"/>
+<GuideEntityEmbed Entity="DrinkGlassCoupeShaped"/>
+<GuideEntityEmbed Entity="DrinkShaker"/>
+<GuideEntityEmbed Entity="DrinkJigger"/>
+</Box>
+
+You can find a list of every drink that can be requested under the Reference Tables entry.
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 </Document>

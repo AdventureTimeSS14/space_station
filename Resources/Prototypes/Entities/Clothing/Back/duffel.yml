@@ -168,12 +168,17 @@
   - type: ExplosionResistance
     damageCoefficient: 0.1
   - type: Storage
+<<<<<<< HEAD
     maxItemSize: Huge
     grid:
     - 0,0,9,4
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 1
+=======
+    grid:
+    - 0,0,8,4
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicate

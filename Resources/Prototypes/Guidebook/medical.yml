@@ -29,8 +29,14 @@
   name: guide-entry-chemist
   text: "/ServerInfo/Guidebook/Medical/Chemist.xml"
   children:
+<<<<<<< HEAD
   - ADTChemicals
   - Medicine
+=======
+  # - Medicine
+  # Duplicate guide entries are currently not supported
+  # TODO GUIDEBOOK Maybe allow duplicate entries?
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
   - Botanicals
   - Chemicals
   - AdvancedBrute

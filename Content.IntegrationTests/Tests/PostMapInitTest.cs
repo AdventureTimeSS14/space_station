@@ -98,7 +98,11 @@ namespace Content.IntegrationTests.Tests
             "Atlas",
             "Reach",
             "Train",
+<<<<<<< HEAD
             "Kilo"
+=======
+            "Oasis"
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
         };
 
         /// <summary>
@@ -190,7 +194,10 @@ namespace Content.IntegrationTests.Tests
         [Test, TestCaseSource(nameof(GameMaps))]
         public async Task GameMapsLoadableTest(string mapProto)
         {
-            await using var pair = await PoolManager.GetServerClient();
+            await using var pair = await PoolManager.GetServerClient(new PoolSettings
+            {
+                Dirty = true // Stations spawn a bunch of nullspace entities and maps like centcomm.
+            });
             var server = pair.Server;
 
             var mapManager = server.ResolveDependency<IMapManager>();
@@ -276,6 +283,7 @@ namespace Content.IntegrationTests.Tests
 
                     // Test all availableJobs have spawnPoints
                     // This is done inside gamemap test because loading the map takes ages and we already have it.
+<<<<<<< HEAD
                     var jobList = entManager.GetComponent<StationJobsComponent>(station).RoundStartJobList
                         .Where(x => x.Value != 0)
                         .Select(x => x.Key);
@@ -292,6 +300,17 @@ namespace Content.IntegrationTests.Tests
 
                     //Assert.That(missingSpawnPoints, Has.Count.EqualTo(0),
                         //$"There is no spawnpoint for {string.Join(", ", missingSpawnPoints)} on {mapProto}.");
+=======
+                    var comp = entManager.GetComponent<StationJobsComponent>(station);
+                    var jobs = new HashSet<ProtoId<JobPrototype>>(comp.SetupAvailableJobs.Keys);
+
+                    var spawnPoints = entManager.EntityQuery<SpawnPointComponent>()
+                        .Where(x => x.SpawnType == SpawnPointType.Job)
+                        .Select(x => x.Job!.Value);
+
+                    jobs.ExceptWith(spawnPoints);
+                    Assert.That(jobs, Is.Empty,$"There is no spawnpoints for {string.Join(", ", jobs)} on {mapProto}.");
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
                 }
 
                 try

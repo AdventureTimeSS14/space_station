@@ -1,7 +1,11 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
+<<<<<<< HEAD
   "copyright": "Created by discord:IAmRasputin#5242",
+=======
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/4f6190e2895e09116663ef282d3ce1d8b35c032e, edited by Emisse for SS14. Vox state by Flareguy for SS14",
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
   "size": {
     "x": 32,
     "y": 32
@@ -22,6 +26,7 @@
       "directions": 4
     },
     {
+<<<<<<< HEAD
       "name": "off-inhand-left",
       "directions": 4
     },
@@ -39,6 +44,9 @@
     },
     {
       "name": "on-inhand-right",
+=======
+      "name": "equipped-HELMET-vox",
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
       "directions": 4
     }
   ]

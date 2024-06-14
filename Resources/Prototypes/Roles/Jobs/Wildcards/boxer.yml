@@ -13,13 +13,11 @@
 - type: startingGear
   id: BoxerGear
   equipment:
-    jumpsuit: UniformShortsRed
-    back: ClothingBackpackFilled
     id: BoxerPDA
     ears: ClothingHeadsetService
-    gloves: ClothingHandsGlovesBoxingRed
     shoes: ClothingShoesColorRed
     belt: ClothingBeltChampion
+<<<<<<< HEAD
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraSports # Sirena-Underwear
@@ -27,3 +25,8 @@
   innerClothingSkirt: UniformShortsRedWithTop
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled
+=======
+  storage:
+    back:
+    - BoxSurvival
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2

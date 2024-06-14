@@ -18,14 +18,11 @@
 - type: startingGear
   id: ChemistGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitChemistry
-    back: ClothingBackpackChemistryFilled
-    shoes: ClothingShoesColorWhite
-    outerClothing: ClothingOuterCoatLabChem
     id: ChemistryPDA
     ears: ClothingHeadsetMedical
     belt: ChemBag
     pocket1: HandLabeler
+<<<<<<< HEAD
     pocket2: ADTBookNewChemicals    
     # the purple glasses?
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
@@ -35,3 +32,9 @@
   innerClothingSkirt: ClothingUniformJumpskirtChemistry
   satchel: ClothingBackpackSatchelChemistryFilled
   duffelbag: ClothingBackpackDuffelChemistryFilled
+=======
+    eyes: ClothingEyesGlassesChemical
+  storage:
+    back:
+    - BoxSurvivalMedical
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2

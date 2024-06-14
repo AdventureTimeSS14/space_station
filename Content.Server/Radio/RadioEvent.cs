@@ -5,6 +5,7 @@ using Content.Shared.Radio;
 namespace Content.Server.Radio;
 
 [ByRefEvent]
+<<<<<<< HEAD
 public readonly record struct RadioReceiveEvent(
     // Frontier - languages mechanic
     EntityUid MessageSource,
@@ -13,6 +14,10 @@ public readonly record struct RadioReceiveEvent(
     ChatMessage NotUnderstoodChatMsg,
     LanguagePrototype Language
 );
+=======
+public readonly record struct RadioReceiveEvent(string Message, EntityUid MessageSource, RadioChannelPrototype Channel, EntityUid RadioSource, MsgChatMessage ChatMsg);
+
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 /// <summary>
 /// Use this event to cancel sending message per receiver
 /// </summary>

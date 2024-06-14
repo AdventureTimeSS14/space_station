@@ -15,7 +15,11 @@
       "directions": 4
     },
     {
+<<<<<<< HEAD
       "name": "equipped-HELMET-vulp",
+=======
+      "name": "equipped-HELMET-vox",
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
       "directions": 4
     },
     {

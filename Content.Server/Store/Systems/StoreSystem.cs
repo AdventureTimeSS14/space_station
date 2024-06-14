@@ -5,11 +5,11 @@ using Content.Shared.Implants.Components;
 using Content.Shared.Interaction;
 using Content.Shared.Popups;
 using Content.Shared.Stacks;
-using Content.Shared.Store;
 using JetBrains.Annotations;
-using Robust.Server.GameObjects;
 using Robust.Shared.Prototypes;
 using System.Linq;
+using Content.Shared.Store.Components;
+using Robust.Shared.Utility;
 
 namespace Content.Server.Store.Systems;
 
@@ -27,6 +27,7 @@ public sealed partial class StoreSystem : EntitySystem
     {
         base.Initialize();
 
+        SubscribeLocalEvent<StoreComponent, ActivatableUIOpenAttemptEvent>(OnStoreOpenAttempt);
         SubscribeLocalEvent<CurrencyComponent, AfterInteractEvent>(OnAfterInteract);
         SubscribeLocalEvent<StoreComponent, BeforeActivatableUIOpenEvent>(BeforeActivatableUiOpen);
 
@@ -43,7 +44,6 @@ public sealed partial class StoreSystem : EntitySystem
     private void OnMapInit(EntityUid uid, StoreComponent component, MapInitEvent args)
     {
         RefreshAllListings(component);
-        InitializeFromPreset(component.Preset, uid, component);
         component.StartingMap = Transform(uid).MapUid;
     }
 
@@ -53,7 +53,6 @@ public sealed partial class StoreSystem : EntitySystem
         if (MetaData(uid).EntityLifeStage == EntityLifeStage.MapInitialized)
         {
             RefreshAllListings(component);
-            InitializeFromPreset(component.Preset, uid, component);
         }
 
         var ev = new StoreAddedEvent();
@@ -64,6 +63,21 @@ public sealed partial class StoreSystem : EntitySystem
     {
         var ev = new StoreRemovedEvent();
         RaiseLocalEvent(uid, ref ev, true);
+    }
+
+    private void OnStoreOpenAttempt(EntityUid uid, StoreComponent component, ActivatableUIOpenAttemptEvent args)
+    {
+        if (!component.OwnerOnly)
+            return;
+
+        component.AccountOwner ??= args.User;
+        DebugTools.Assert(component.AccountOwner != null);
+
+        if (component.AccountOwner == args.User)
+            return;
+
+        _popup.PopupEntity(Loc.GetString("store-not-account-owner", ("store", uid)), uid, args.User);
+        args.Cancel();
     }
 
     private void OnAfterInteract(EntityUid uid, CurrencyComponent component, AfterInteractEvent args)
@@ -84,7 +98,7 @@ public sealed partial class StoreSystem : EntitySystem
         if (args.Handled)
         {
             var msg = Loc.GetString("store-currency-inserted", ("used", args.Used), ("target", args.Target));
-            _popup.PopupEntity(msg, args.Target.Value);
+            _popup.PopupEntity(msg, args.Target.Value, args.User);
             QueueDel(args.Used);
         }
     }
@@ -162,6 +176,7 @@ public sealed partial class StoreSystem : EntitySystem
         UpdateUserInterface(null, uid, store);
         return true;
     }
+<<<<<<< HEAD
 
     public bool TryRefillCurrency(Dictionary<string, FixedPoint2> currency, EntityUid uid, StoreComponent? store = null)
     {
@@ -223,6 +238,8 @@ public sealed partial class StoreSystem : EntitySystem
             _ui.SetUiState(ui, new StoreInitializeState(preset.StoreName));
         }
     }
+=======
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 }
 
 public sealed class CurrencyInsertAttemptEvent : CancellableEntityEventArgs

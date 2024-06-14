@@ -33,7 +33,21 @@
     sprite: Objects/Specific/Service/vending_machine_restock.rsi
     state: base
   product: CrateVendingMachineRestockClothesFilled
+<<<<<<< HEAD
   cost: 7000
+=======
+  cost: 2400
+  category: cargoproduct-category-name-service
+  group: market
+
+- type: cargoProduct
+  id: CrateVendingMachineRestockAutoDrobe
+  icon:
+    sprite: Objects/Specific/Service/vending_machine_restock.rsi
+    state: base
+  product: CrateVendingMachineRestockAutoDrobeFilled
+  cost: 1200
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
   category: cargoproduct-category-name-service
   group: market
 

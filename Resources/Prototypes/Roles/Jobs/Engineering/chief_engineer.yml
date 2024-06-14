@@ -40,13 +40,10 @@
 - type: startingGear
   id: ChiefEngineerGear
   equipment:
-    head: ClothingHeadHatHardhatWhite
-    jumpsuit: ClothingUniformJumpsuitChiefEngineer
-    back: ClothingBackpackChiefEngineerFilled
-    shoes: ClothingShoesColorBrown
     id: CEPDA
     eyes: ClothingEyesGlassesMeson
     ears: ClothingHeadsetCE
+<<<<<<< HEAD
     belt: ClothingBeltChiefEngineerFilled
     underwearb: ClothingUnderwearBottomBoxersCE # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
@@ -55,3 +52,10 @@
   innerClothingSkirt: ClothingUniformJumpskirtChiefEngineer
   satchel: ClothingBackpackSatchelChiefEngineerFilled
   duffelbag: ClothingBackpackDuffelChiefEngineerFilled
+=======
+    belt: ClothingBeltUtilityEngineering
+  storage:
+    back:
+    - BoxSurvivalEngineering
+    - Flash
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2

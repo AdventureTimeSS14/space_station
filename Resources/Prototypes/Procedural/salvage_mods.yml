@@ -242,6 +242,7 @@
   proto: SnowyLabs
   biomes:
     - Snow
+<<<<<<< HEAD
 
 - type: salvageDungeonMod
   id: Bunker
@@ -269,3 +270,11 @@
 #    - LowDesert
     - Snow
     - Grasslands
+=======
+    
+- type: salvageDungeonMod
+  id: Haunted
+  proto: Haunted
+  biomes:
+    - Caves
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2

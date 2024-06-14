@@ -7,13 +7,32 @@
 # Внеигровой сленг
 
 
+<<<<<<< HEAD
 С этими терминами вы столкнётесь вне РП-процесса в OOC, LOOC чатах или же в Discord и других сторонних источниках.
+=======
+## AA
+All Access, or an ID which has every access on the station. The captain is the only person who will have this kind of access under normal circumstances.
+
+## Atmos
+Short for Atmospherics.
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 ## РП
 Термин, обозначающий отыгровку и следование характеру персонажа и реалистичное исполнение его роли в рамках истории.
 
+<<<<<<< HEAD
 ## Мета/Метагейм/Метазнания
 Использование неизвестной персонажу информации или навыков для получения преимуществ (читайте правила).
+=======
+## Bolted
+An airlock that will never change states. It will stay permanently open or permanently closed until it is unbolted. Closed and bolted airlocks have solid red lights.
+
+## Borg
+Short for cyborgs, player-controlled robots.
+
+## Braindead
+Refers to a user who has disconnected from the game. Disconnected users may still reconnect to the server and assume control of their character again.
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 ## Робаст
 Умение пользоваться оружием и подручными предметами в бою, знание особенностей и секретов и всех аспектов игры. В узком же смысле робастность подразумевает просто умение драться.
@@ -21,21 +40,35 @@
 ## Самоантаг
 Термин, обозначающий игрока, который занимается деятельностью, подобной антагонистам, фактически не являясь таковым. Это включает в себя широкий спектр поведения, но обычно используется для описания раздражающего поведения или действий, которые наносят значительный ущерб другим игрокам без какой-либо цели. Самоантагонизм - это наказуемое деяние, которое подлежит запрету.
 
+<<<<<<< HEAD
 ## Валидхант
 Игрок, который выслеживает и преследует антагонистов, не являясь при этом сотрудником Службы Безопасности или не имея веских на то причин (уточнение есть в правилах сервера)
 
 ## Антаг
 Сокращение от "Антагонист", которые присутствуют в раунде для того, чтобы ввергнуть станцию в хаос (или разнообразить геймплей).
+=======
+## Cargonia
+Reference to cargo declaring independence. Against the rules.
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 ## Гриф
 Порча удовольствия от игры другим игрокам — беспричинное убийство, заваривание в шкафчиках, всякого рода пакости. Если  являетесь свидетелем сих действий - пишите в AdminHelp.
 
+<<<<<<< HEAD
 ## АХелп/АдминХелп/AdminHelp
 Вкладка, используемый для сообщения администраторам о поведении, нарушающем правила, или других проблемах. Открывается нажатием клавиши F1.
+=======
+## CentCom/Central Command
+An administrative agency which oversees the Nanotrasen space station you inhabit.
+
+## CMO
+Short for Chief Medical Officer, the head of the Medical Department.
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 ## Ивент 
 Внутриигровое событие или их множество, создаваемое Гейм Мастерами и имеющее собственный сюжет и предысторию.
 
+<<<<<<< HEAD
 ## ГМ/Гейм Мастер
 Обозначает членов команды сервера, ответственных за создание внутриигровых событий (ивентов) и их проведение.
 
@@ -59,29 +92,115 @@
 
 ## АФК
 Сокращение от англ. "Away From Keyboard". Обозначает то, что игрок ненадолго отошёл от компьютера по каким-либо делам и скоро вернётся. Обычно этим словом уведомляют других игроков в чат LOOC о временном отсутствии за устройством.
+=======
+## Emag
+  Refers to the Syndicate cryptographic sequencer. "Emagged" usually refers to airlocks or lockers that are bolted open, but also any other device hacked into by an Emag.
+
+## Emergency Access/EA
+  An airlock that can be opened by anyone, even without access or an ID at all. Airlocks that are set to emergency access have blinking yellow lights.
+
+## ERT
+An Emergency Response Team. These may be dispatched by Central Command for a number of purposes.
+
+## Flukie
+A portmanteau of "Fluke" and "Nukie" used to (usually derogatorily) refer to a team of Nuclear Operatives who fail their objective. May also appear as "Fluke Ops".
+
+## God(s)
+An IC term representing a Server Administrator. CentCom is also sometimes used in this manner.
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 ## ЛРП
 Сокращение от "Low RolePlay". Обозначает низкое требование для отыгровки РП процесса. Часто используется в LOOC чате для осуждения уровня отыгровки другого игрока (при наличии высоких требований к РП).
 
+<<<<<<< HEAD
 ## МРП
 Сокращение от "Medium Roleplay". Обозначает среднее требование для отыгровки РП процесса. Серверы с маркировкой MRP обычно имеют приличные требования и правила ролевой игры и, в большинстве случаев, требуют от игроков действовать так, как их персонаж действовал бы реалистично в данной ситуации. Меньше свободы предоставляется такому поведению, как открытое неповиновение службе безопасности или вашему боссу.
 
 ## ХРП
 Сокращение от "Hard Roleplay". Обозначает высокое требование для отыгровки РП процесса. Серверы с маркировкой HRP обычно имеют обширные правила о том, что можно, а что нельзя при отыгровке персонажа. Обычно от вас требуется действовать так, как действовал бы ваш персонаж в реальной жизни, иметь предысторию и обязательно следовать протоколам станции.
+=======
+## HoP
+Short for Head of Personnel, head of the Service Department. Can also refer to the HoP's office, where IDs are given or changed.
+
+## HoS
+Short for Head of Security, head of the Security Department.
+
+## Insuls
+Short for Insulated Gloves. These are the yellow gloves most often worn by Engineers. They are offer complete protection from getting electrocuted from shocked things. Vastily more effective than their budget variety.
+
+## Jani
+Short for Janitor.
+
+## KOS
+Kill on sight. Someone has commited such a serious crime that they are deemed not even worth arresting.
+
+## Mats
+Materials. Usually steel, plastic, plasteel, glass, silver and gold.
+
+## Nanotrasen/NT
+Nanotrasen is the company which owns the space station you inhabit.
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 
+<<<<<<< HEAD
 # Внутриигровой сленг
 
+=======
+## Nukie
+A slang/shorthand term of a Nuclear Operative. May sometimes also appear as "Nuke Op".
+
+## Perma
+Short for Permanent Brig. This is for the most serious crime and means that a prisoner will never be released. Most stations have a dedicated, seperate area of security for the permanent brig.
+
+## QM
+Short for Quartermaster, the head of the Cargo department.
+
+## RD
+Short for Research Director, the head of the Science Department.
+
+## Robust
+A word used to describe someone who is particularly adept in combat, or endured through a tough fight.
+
+## Salv
+Short for Salvage tech.
+
+## Sci
+Short for Science.
+
+## Sec
+Short for Security.
+
+## Secoff
+Short for Security Officer.
+
+## Shift
+In-Character way to refer to rounds.
+  
+## Singulo
+A shortening of the Singularity Engine. A Singulo can create infinite power for the station but is very dangerous.
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 ## Бог/Боги
 Внутриигровой термин, обозначающий администрацию/модерацию сервера или их действия, влияющие на игру (такие как спавн вещей или проведение ивентов).
 
+<<<<<<< HEAD
 ## Крит
 Относится к состоянию здоровья, при котором вы теряете сознание и не можете двигаться. Находясь в критическом состоянии, ваше здоровье медленно ухудшается, пока вы не умрете, если только вам случайно не окажут помощь извне.
+=======
+## Spacing
+An event which causes an area to lose air pressure, i.e. a hull breach.
+
+## Spess
+An intentional mis-spelling of "Space", sometimes used as a portmanteau of "space" and "mess". May also appear in words such as "Spessmen".
+
+## SSD
+Short for Sudden Sleep Disorder or Space Sleep Disorder. This is an in-character way to refer to a player who has disconnected and is no longer responding.
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 ## Терминал
 Место спавна вашего персонажа после присоединения из лобби.
 
+<<<<<<< HEAD
 ## Прибытие
 Место прибытия персонала станции
 
@@ -96,12 +215,23 @@
 
 ## Мостик
 Сердце станции. Здесь находятся каюта капитана, комната глав и ИИ, большинство видов консолей.
+=======
+## TC
+A telecrystal, which is a currency used by Syndicate Agents to purchase restricted contraband such as weapons and other illegal equipment.
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 ## ЕВА
 Отсек, в котором хранятся космические скафандры, джетпаки и RCD (от англ. Extra-Vehicular Activity, EVA).
 
+<<<<<<< HEAD
 ## Дормы/Дормитории
 Общежитие, спальный отсек, в котором удобно оставить своего персонажа, выходя из игры.
+=======
+## Xenoarchaeology
+Study of artifacts, usually performed by science.
+
+# Out-Of-Character Slang
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 ## НаноТрейзен/NanoTrasen/NT
 Обозначает компанию-владельца станции, на которой вы работаете.
@@ -118,11 +248,22 @@
 ## ЭС 
 Сокращение от "Эскадрон Смерти". Герои для обычного экипажа, отряд зачистки экипажа для тех, кто знает (обычный экипаж правды не знает, разве что ОСЩ, Магистрат, Капитан. Уточняйте у администрации.)
 
+<<<<<<< HEAD
 ## Кэп
 Сокращение от "Капитан".
 
 ## АВД 
 Сокращение от "АВД". Данный сотрудник следит за соблолюдением СРП и КЗ сотрудниками станции и в случае чего отправляет жалобу или отчёт на Центральное Командование для отправки Ревизора.
+=======
+## Ick Ock
+A phrase usually shouted in OOC when somebody reveals IC current round information, or "in-character, out-of-character".
+
+## LOOC/OOC
+Local out-of-character and (global) out-of-character respectively. They are text channels that allow players to talk to other players outside of roleplay. LOOC is enabled during rounds, while OOC is typically only on after the round ends.
+  
+## LRP
+Low Roleplay. Servers marked LRP typically have relaxed roleplaying rules.
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 ## ГП
 Сокращение от"Глава Персонала", главы Сервисного отдела и ответственного за выдачу доступов и получение/смену должности.
@@ -130,11 +271,22 @@
 ## ГСБ
 Сокращение от "Глава Службы Безопасности"
 
+<<<<<<< HEAD
 ## Бриг
 Главная зона отдела Службы Безопасности. Сюда доставляют заключенных и содержат их для отбывания наказания. Смотритель отвечает за бесперебойную работу отдела.
 
 ## Перма
 Сокращение от "Перманентный бриг". Это место заключения для тех, кто совершил самые серьезные преступления и означает, что заключенный никогда не будет освобожден (но на ЦК его переведут). На большинстве станций есть специальная зона в бриге, отведённая для пермы.
+=======
+## Self-Antag
+A term for a player who engages in antagonist-like activity without actually being an antagonist. This encompasses a wide variety of behavior, but is typically used to describe annoying behavior or actions which are greatly detrimental to other players for no purpose. Self-antagonism is a bannable offense. Sometimes used in IC. DO NOT DO THIS.
+
+## Upstream
+The baseline version of the game. Any changes to Upstream will "flow" down to all other forks of the game. All official Wizard's Den servers work off of Upstream.
+  
+## Validhunter
+A player who hunts down "valids", as in people that are valid to kill, even though this person isn't security.
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 ## Щиткур/Щиткьюрити 
 Унизительное название службы безопасности (от англ. Shit Security).

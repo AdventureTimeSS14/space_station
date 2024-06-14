@@ -64,6 +64,15 @@
     state: frills_hood_secondary
 
 - type: marking
+  id: LizardFrillsNeckfull
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Reptilian]
+  sprites:
+  - sprite: Mobs/Customization/reptilian_parts.rsi
+    state: frills_neckfull
+
+- type: marking
   id: LizardHornsAngler
   bodyPart: HeadTop
   markingCategory: HeadTop
@@ -195,6 +204,7 @@
     state: snout_sharp
 
 - type: marking
+<<<<<<< HEAD
   id: LizardSnoutSharpLight
   bodyPart: Snout
   markingCategory: Snout
@@ -203,6 +213,17 @@
   sprites:
   - sprite: Mobs/Customization/reptilian_parts.rsi
     state: snout_sharplight
+=======
+  id: LizardSnoutSplotch
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Reptilian]
+  sprites:
+  - sprite: Mobs/Customization/reptilian_parts.rsi
+    state: snout_splotch_primary
+  - sprite: Mobs/Customization/reptilian_parts.rsi
+    state: snout_splotch_secondary
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: marking
   id: LizardChestTiger

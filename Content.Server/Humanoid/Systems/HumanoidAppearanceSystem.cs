@@ -1,38 +1,29 @@
+<<<<<<< HEAD
 using Content.Shared.Examine;
 using System.Linq;
 using Content.Shared.Decals;
+=======
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
-using Content.Shared.IdentityManagement;
 using Content.Shared.Preferences;
 using Content.Shared.Verbs;
 using Robust.Shared.GameObjects.Components.Localization;
-using Robust.Shared.Prototypes;
 
 namespace Content.Server.Humanoid;
 
 public sealed partial class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
 {
     [Dependency] private readonly MarkingManager _markingManager = default!;
-    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
 
     public override void Initialize()
     {
         base.Initialize();
+
         SubscribeLocalEvent<HumanoidAppearanceComponent, HumanoidMarkingModifierMarkingSetMessage>(OnMarkingsSet);
         SubscribeLocalEvent<HumanoidAppearanceComponent, HumanoidMarkingModifierBaseLayersSetMessage>(OnBaseLayersSet);
         SubscribeLocalEvent<HumanoidAppearanceComponent, GetVerbsEvent<Verb>>(OnVerbsRequest);
-        SubscribeLocalEvent<HumanoidAppearanceComponent, ExaminedEvent>(OnExamined);
-    }
-
-    private void OnExamined(EntityUid uid, HumanoidAppearanceComponent component, ExaminedEvent args)
-    {
-        var identity = Identity.Entity(uid, EntityManager);
-        var species = GetSpeciesRepresentation(component.Species).ToLower();
-        var age = GetAgeRepresentation(component.Species, component.Age);
-
-        args.PushText(Loc.GetString("humanoid-appearance-component-examine", ("user", identity), ("age", age), ("species", species)));
     }
 
     // this was done enough times that it only made sense to do it here
@@ -80,7 +71,25 @@ public sealed partial class HumanoidAppearanceSystem : SharedHumanoidAppearanceS
             return;
         }
 
+<<<<<<< HEAD
         SetAppearance(sourceHumanoid, targetHumanoid);
+=======
+        targetHumanoid.Species = sourceHumanoid.Species;
+        targetHumanoid.SkinColor = sourceHumanoid.SkinColor;
+        targetHumanoid.EyeColor = sourceHumanoid.EyeColor;
+        targetHumanoid.Age = sourceHumanoid.Age;
+        SetSex(target, sourceHumanoid.Sex, false, targetHumanoid);
+        targetHumanoid.CustomBaseLayers = new(sourceHumanoid.CustomBaseLayers);
+        targetHumanoid.MarkingSet = new(sourceHumanoid.MarkingSet);
+
+        targetHumanoid.Gender = sourceHumanoid.Gender;
+        if (TryComp<GrammarComponent>(target, out var grammar))
+        {
+            grammar.Gender = sourceHumanoid.Gender;
+        }
+
+        Dirty(target, targetHumanoid);
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     }
 
     /// <summary>
@@ -101,7 +110,7 @@ public sealed partial class HumanoidAppearanceSystem : SharedHumanoidAppearanceS
         humanoid.MarkingSet.Remove(prototype.MarkingCategory, marking);
 
         if (sync)
-            Dirty(humanoid);
+            Dirty(uid, humanoid);
     }
 
     /// <summary>
@@ -122,7 +131,7 @@ public sealed partial class HumanoidAppearanceSystem : SharedHumanoidAppearanceS
         }
 
         humanoid.MarkingSet.Remove(category, index);
-        Dirty(humanoid);
+        Dirty(uid, humanoid);
     }
 
     /// <summary>
@@ -151,7 +160,7 @@ public sealed partial class HumanoidAppearanceSystem : SharedHumanoidAppearanceS
         }
 
         humanoid.MarkingSet.Replace(category, index, marking);
-        Dirty(humanoid);
+        Dirty(uid, humanoid);
     }
 
     /// <summary>
@@ -178,44 +187,6 @@ public sealed partial class HumanoidAppearanceSystem : SharedHumanoidAppearanceS
             markings[index].SetColor(i, colors[i]);
         }
 
-        Dirty(humanoid);
-    }
-
-    /// <summary>
-    /// Takes ID of the species prototype, returns UI-friendly name of the species.
-    /// </summary>
-    public string GetSpeciesRepresentation(string speciesId)
-    {
-        if (_prototypeManager.TryIndex<SpeciesPrototype>(speciesId, out var species))
-        {
-            return Loc.GetString(species.Name);
-        }
-        else
-        {
-            return Loc.GetString("humanoid-appearance-component-unknown-species");
-        }
-    }
-
-    public string GetAgeRepresentation(string species, int age)
-    {
-        _prototypeManager.TryIndex<SpeciesPrototype>(species, out var speciesPrototype);
-
-        if (speciesPrototype == null)
-        {
-            Log.Error("Tried to get age representation of species that couldn't be indexed: " + species);
-            return Loc.GetString("identity-age-young");
-        }
-
-        if (age < speciesPrototype.YoungAge)
-        {
-            return Loc.GetString("identity-age-young");
-        }
-
-        if (age < speciesPrototype.OldAge)
-        {
-            return Loc.GetString("identity-age-middle-aged");
-        }
-
-        return Loc.GetString("identity-age-old");
+        Dirty(uid, humanoid);
     }
 }

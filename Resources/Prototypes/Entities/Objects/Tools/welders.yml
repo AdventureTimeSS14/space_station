@@ -47,6 +47,8 @@
       params:
         variation: 0.250
         volume: -12
+    deactivatedSoundOnHitNoDamage:
+      collection: MetalThud
     activatedDamage:
         types:
             Heat: 8
@@ -70,6 +72,8 @@
     damage:
       types:
         Blunt: 5 #i mean... i GUESS you could use it like that
+    soundHit:
+      collection: MetalThud
   - type: RefillableSolution
     solution: Welder
   - type: SolutionContainerManager
@@ -135,9 +139,13 @@
           Quantity: 250
         maxVol: 250
   - type: Tool
+<<<<<<< HEAD
     speed: 1.3
   - type: StaticPrice
     price: 150
+=======
+    speedModifier: 1.3
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: entity
   name: experimental welding tool
@@ -188,7 +196,7 @@
           Quantity: 50
         maxVol: 50
   - type: Tool
-    speed: 0.7
+    speedModifier: 0.7
   - type: PointLight
     enabled: false
     radius: 1.0

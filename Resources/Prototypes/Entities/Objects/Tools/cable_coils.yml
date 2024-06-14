@@ -18,13 +18,15 @@
     sprite: Objects/Tools/cable-coils.rsi
   - type: Item
     sprite: Objects/Tools/cable-coils.rsi
-    size: Normal
+    size: Small
+    storedRotation: -90
   - type: CablePlacer
   - type: Clickable
   - type: StaticPrice
     price: 0
   - type: StackPrice
     price: 1
+<<<<<<< HEAD
   - type: Healing # ADT ipc. cables can be used to heal IPC
     damageContainers:
       - ADTSiliconDamageContainer
@@ -38,6 +40,11 @@
     #   path: "/Audio/Items/Medical/ointment_begin.ogg"
     # healingEndSound:
     #   path: "/Audio/Items/Medical/ointment_end.ogg"
+=======
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 15
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: entity
   id: CableHVStack

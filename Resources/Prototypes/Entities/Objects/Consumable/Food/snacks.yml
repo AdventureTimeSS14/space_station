@@ -397,10 +397,17 @@
   - type: SolutionContainerManager
     solutions:
       food:
+<<<<<<< HEAD
         maxVol: 50
         reagents:
         - ReagentId: Nutriment
           Quantity: 40
+=======
+        maxVol: 25
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: entity
   id: FoodSnackMREBrownie

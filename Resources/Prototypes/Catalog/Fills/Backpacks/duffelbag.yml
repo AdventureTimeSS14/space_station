@@ -14,6 +14,7 @@
       - id: Scalpel
 
 - type: entity
+<<<<<<< HEAD
   id: ClothingBackpackDuffelCBURN
   parent: ClothingBackpackERTSecurity
   name: CBURN duffel bag
@@ -40,6 +41,8 @@
       - id: JawsOfLife
 
 - type: entity
+=======
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
   parent: ClothingBackpackDuffelSyndicateMedicalBundle
   id: ClothingBackpackDuffelSyndicateFilledMedical
   name: syndicate surgical duffel bag
@@ -332,6 +335,7 @@
         amount: 3
 
 - type: entity
+<<<<<<< HEAD
   parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelSyndicateOperative
   name: operative duffelbag
@@ -365,6 +369,8 @@
       - id: DeathAcidifierImplanter
 
 - type: entity
+=======
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
   parent: ClothingBackpackDuffelSyndicateMedicalBundle
   id: ClothingBackpackDuffelSyndicateMedicalBundleFilled
   name: medical bundle

@@ -7,7 +7,11 @@
 ## Основы
 Есть два способа узнать, что у кого болит: Сканирование (анализатором здоровья или КПК врача), или осмотр пациента, нажав shift-лкм, а затем на символ сердца.
 
+<<<<<<< HEAD
 Лучше использовать оба, если есть такая возможность, поскольку некоторая информация (по типу отравления или радиационного поражения) не показывается при осмотре, в то время как другая (например уровень крови) не видна в анализаторе.
+=======
+Using a health analyzer is often more powerful than examination, as some things (such as poison, or radiation) don't show up on examination. However, using an analyzer has its drawbacks, as it makes noise and uses up a battery.
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 <Box>
 <GuideEntityEmbed Entity="SignExamroom"/>
 <GuideEntityEmbed Entity="MedicalPDA"/>
@@ -15,8 +19,13 @@
 <GuideEntityEmbed Entity="HandheldHealthAnalyzer"/>
 </Box>
 
+<<<<<<< HEAD
 ## Лекарства и лечение.
 Перед тем как начать, сперва стоит пройтись по типам повреждений и что их лечит. На Википедии больше полезной информации, но в основном используют эти.
+=======
+## Medication and Treatment Options
+Before we go any further, it's probably a good idea to go over damage types, and what will heal them. The wiki has more extensive info available, but these are commonly used.
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 Важная пометка: У большинства лекарств есть передозы, которые начнут вредить вашему пациенту. Химикатам так же нужно время для переваривания, будучи в таблетках, так что если вам нужно действовать быстро, используйте шприц.
 
@@ -94,16 +103,30 @@
 <GuideEntityEmbed Entity="MedicalBed"/>
 <GuideEntityEmbed Entity="StasisBed"/>
 </Box>
+<<<<<<< HEAD
 ## Смерть и Воскрешение
 Не важно, насколько вы профессиональный врач. Порой, не все жизни можно спасти. В зависимости от состояния тела, если в нём присутствует душа, и труп не начал гнить, есть несколько вариантов действий.
 
 1. Присутствует ли в теле душа? Вы можете понять это при осмотре тела, в случае если показана фраза: "Он мёртв." В противном случае, отдайте труп на попечение Патологоанатома, или сделайте из него биомассу. [italic](Смотрите пункт "Морг и патологоанатом" в руководстве.)[/italic]
+=======
+## Assessing Corpses
+You can't save them all, sometimes, death happens. Depending on the [color=#a4885c]status[/color] of the body, there are a few things that can be done.
+
+1. Do they have a soul attached? You can tell if, when examining, the following phrase is displayed: "Their soul has departed." If this isn't displayed, there is still a player who can be revived.
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 2. Тело гниёт? Если это так, к сожалению, пациента придётся клонировать. Сгнившие тела нельзя вернуть к жизни дефибриллятором. [italic](Смотрите пункт "Клонирование" в руководстве.)[/italic]
 
+<<<<<<< HEAD
 3. Если у тела есть душа и оно не начало гнить, есть возможность вернуть пациента к жизни. Не считая удушья, дефибриллятор может возрадить пациента, если у него ниже 200 общих повреждений. Химикаты не метаболизируются в трупах, однако наборы для ушибов и мази всё ещё могут их подлатать. Используйте их, чтобы понизить показатели урона до приемлемых значений.
 
 3.1 Если осмотрев тело вы видите надпись "Похоже, тело [color=#edad45]забальзамировано[/color].", значит кто-то позаботился о состоянии трупа, отчего его НЕ получится возрадить дефибриллятором, работает только машина клонирования.
+=======
+3. If they have a soul, and aren't rotten, it's possible to revive them. Consider storing the body in a morgue tray if you don't have enough time to revive someone, as the body will rot if you wait too long.
+
+## Revival
+Not counting airloss, Defibrillator's can be used to revive patients under 200 total damage. Chemicals don't metabolise in the dead, but brute packs and ointment can still patch them up. Use them to bring their numbers down enough for revival.
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 <Box>
 <GuideEntityEmbed Entity="Brutepack"/>

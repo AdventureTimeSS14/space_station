@@ -1,5 +1,6 @@
  # Tier 1
 
+<<<<<<< HEAD
 # - type: technology
 #   id: BasicRobotics
 #   name: research-technology-basic-robotics
@@ -12,6 +13,20 @@
 #   recipeUnlocks:
 #   - ProximitySensor
 #   - ExosuitFabricatorMachineCircuitboard
+=======
+- type: technology
+  id: BasicRobotics
+  name: research-technology-basic-robotics
+  icon:
+    sprite: Structures/Machines/exosuit_fabricator.rsi
+    state: fab-idle
+  discipline: Experimental
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+  - ProximitySensor
+  - ExosuitFabricatorMachineCircuitboard
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: technology
   id: BasicAnomalousResearch
@@ -101,13 +116,12 @@
   id: AbnormalArtifactManipulation
   name: research-technology-abnormal-artifact-manipulation
   icon:
-    sprite: Structures/Machines/traversal_distorter.rsi
-    state: display
+    sprite: Structures/Machines/artifact_crusher.rsi
+    state: icon
   discipline: Experimental
   tier: 2
   cost: 3500
   recipeUnlocks:
-  - TraversalDistorterMachineCircuitboard
   - ArtifactCrusherMachineCircuitboard
 
 - type: technology
@@ -127,6 +141,7 @@
   - BasicAnomalousResearch
 
 - type: technology
+<<<<<<< HEAD
   id: RapidPartExchange
   name: research-technology-rped
   icon:
@@ -139,6 +154,8 @@
   - RPED
 
 - type: technology
+=======
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
   id: DeterrenceTechnologies
   name: research-technology-deterrence
   icon:

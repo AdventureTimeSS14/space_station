@@ -41,13 +41,10 @@
 - type: startingGear
   id: CMOGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitCMO
-    back: ClothingBackpackCMOFilled
-    shoes: ClothingShoesColorBrown
-    outerClothing: ClothingOuterCoatLabCmo
     id: CMOPDA
     ears: ClothingHeadsetCMO
     belt: ClothingBeltMedicalFilled
+<<<<<<< HEAD
     underwearb: ClothingUnderwearBottomBoxersCMO # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraCMO # Sirena-Underwear
@@ -55,3 +52,9 @@
   innerClothingSkirt: ClothingUniformJumpskirtCMO
   satchel: ClothingBackpackSatchelCMOFilled
   duffelbag: ClothingBackpackDuffelCMOFilled
+=======
+  storage:
+    back:
+    - BoxSurvivalMedical
+    - Flash
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2

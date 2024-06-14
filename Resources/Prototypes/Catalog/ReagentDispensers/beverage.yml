@@ -1,6 +1,7 @@
 - type: reagentDispenserInventory
   id: SodaDispenserInventory
   inventory:
+<<<<<<< HEAD
   #- DrinkIceJug
   #- DrinkCoffeeJug
   #- DrinkCreamCartonXL
@@ -38,6 +39,27 @@
   - ADTDrinkJuiceLimeCanister
   - ADTDrinkJuiceWatermelonCanister
 
+=======
+  - DrinkCoconutWaterJug
+  - DrinkCoffeeJug
+  - DrinkColaBottleFull
+  - DrinkCreamCartonXL
+  - DrinkDrGibbJug
+  - DrinkEnergyDrinkJug
+  - DrinkGreenTeaJug
+  - DrinkIceJug
+  - DrinkJuiceLimeCartonXL
+  - DrinkJuiceOrangeCartonXL
+  - DrinkLemonLimeJug
+  - DrinkRootBeerJug
+  - DrinkSodaWaterBottleFull
+  - DrinkSpaceMountainWindBottleFull
+  - DrinkSpaceUpBottleFull
+  - DrinkSugarJug
+  - DrinkTeaJug
+  - DrinkTonicWaterBottleFull
+  - DrinkWaterMelonJuiceJug
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: reagentDispenserInventory
   id: BoozeDispenserInventory

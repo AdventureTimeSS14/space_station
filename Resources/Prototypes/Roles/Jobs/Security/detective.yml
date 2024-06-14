@@ -24,6 +24,7 @@
 - type: startingGear
   id: DetectiveGear
   equipment:
+<<<<<<< HEAD
     jumpsuit: ClothingUniformJumpsuitDetective
     back: ClothingBackpackSecurityFilledDetective
     shoes: ClothingShoesBootsJackSec # Corvax-Resprite
@@ -44,3 +45,15 @@
   innerClothingSkirt: ClothingUniformJumpskirtDetective
   satchel: ClothingBackpackSatchelSecurityFilledDetective
   duffelbag: ClothingBackpackDuffelSecurityFilledDetective
+=======
+    eyes: ClothingEyesGlassesSecurity
+    id: DetectivePDA
+    ears: ClothingHeadsetSecurity
+    belt: ClothingBeltHolsterFilled
+  storage:
+    back:
+    - BoxSurvivalSecurity
+    - Flash
+    - ForensicPad
+    - ForensicScanner
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2

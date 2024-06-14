@@ -138,6 +138,7 @@
     - BasicStationEventScheduler
     - BasicRoundstartVariation
 
+<<<<<<< HEAD
 #- type: gamePreset
 #  id: Zombie
 #  alias:
@@ -233,3 +234,20 @@
     - SubGamemodesRule
     - BasicStationEventScheduler
     - BasicRoundstartVariation
+=======
+- type: gamePreset
+  id: Zombie
+  alias:
+  - zombie
+  - zombies
+  - Zombies
+  - zz14
+  - zomber
+  name: zombie-title
+  description: zombie-description
+  showInVote: false
+  rules:
+  - Zombie
+  - BasicStationEventScheduler
+  - BasicRoundstartVariation
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2

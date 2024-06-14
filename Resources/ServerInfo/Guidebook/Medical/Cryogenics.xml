@@ -12,7 +12,11 @@
 <GuideEntityEmbed Entity="GasPipeStraight" Rotation="90"/>
 <GuideEntityEmbed Entity="GasPipeStraight" Rotation="90"/>
 <GuideEntityEmbed Entity="GasPipeBend" Rotation="0"/>
+<<<<<<< HEAD
 <GuideEntityEmbed Entity="CryoPod" Rotation="0"/>
+=======
+<GuideEntityEmbed Entity="CryoPod" Caption="cryo pod" Rotation="0"/>
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 <GuideEntityEmbed Entity="GasThermoMachineFreezerEnabled" Rotation="0"/>
 </Box>
 <Box>
@@ -43,11 +47,19 @@
 
 Стандартное давление для газового насоса - 1.325 кПа. Криоксадон начинает действовать при температуре ниже 170° по Кельвину, так что вполне стандартная практика установить значение охлаждения охладителя на 100°К.
 
+<GuideReagentEmbed Reagent="Aloxadone"/>
 <GuideReagentEmbed Reagent="Cryoxadone"/>
 <GuideReagentEmbed Reagent="Doxarubixadone"/>
+<<<<<<< HEAD
 <GuideReagentEmbed Reagent="Necrosol"/>
 <GuideReagentEmbed Reagent="Aloxadone"/>
 - Лепоразин поможет восстановить температуру пациента до прежних значений, так что лучше его использовать после исцеления в криокапсуле.
 <GuideReagentEmbed Reagent="Leporazine"/>
+=======
+<GuideReagentEmbed Reagent="Dexalin"/>
+<GuideReagentEmbed Reagent="Leporazine"/>
+<GuideReagentEmbed Reagent="Necrosol"/>
+<GuideReagentEmbed Reagent="Opporozidone"/>
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 </Document>

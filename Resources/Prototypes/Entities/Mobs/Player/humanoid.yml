@@ -1,4 +1,18 @@
-# Random humanoids
+## Random humanoids
+
+- type: randomHumanoidSettings
+  id: EventHumanoid
+  components:
+    - type: RandomHumanoidAppearance
+      randomizeName: false
+    - type: GhostTakeoverAvailable
+
+- type: randomHumanoidSettings
+  id: EventHumanoidMindShielded
+  parent: EventHumanoid
+  components:
+    - type: MindShield
+    - type: InitialInfectedExempt
 
 ## Death Squad
 
@@ -25,23 +39,27 @@
   speciesBlacklist:
     - Diona
   id: DeathSquad
+  parent: EventHumanoidMindShielded
   randomizeName: false
-  components:
-    - type: MindShield
+  components:        
     - type: GhostRole
       name: ghost-role-information-Death-Squad-name
       description: ghost-role-information-Death-Squad-description
+<<<<<<< HEAD
       requirements:
       - !type:OverallPlaytimeRequirement
         time: 36000 # 10h overall
     - type: GhostTakeoverAvailable
+=======
+      raffle:
+        settings: short
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     - type: Loadout
       prototypes: [ DeathSquadGear ]
     - type: RandomMetadata
       nameSegments:
         - NamesFirstMilitaryLeader
         - NamesLastMilitary
-    - type: InitialInfectedExempt
 
 
 ## ERT Leader
@@ -70,24 +88,34 @@
   speciesBlacklist:
     - Diona
   id: ERTLeader
+  parent: EventHumanoidMindShielded
   randomizeName: false
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-leader-name
       description: ghost-role-information-ert-leader-description
+<<<<<<< HEAD
       requirements:
       - !type:OverallPlaytimeRequirement
         time: 36000 # 10h overall
     - type: GhostTakeoverAvailable
+=======
+      raffle:
+        settings: short
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     - type: Loadout
       prototypes: [ ERTLeaderGear ]
     - type: RandomMetadata
       nameSegments:
+<<<<<<< HEAD
       - NamesFirstMilitaryLeaderCorvax # Corvax-Localization
       - NamesLastERTCallsign # Corvax-Localization
   #noSpawn: true
     - type: InitialInfectedExempt
+=======
+      - NamesFirstMilitaryLeader
+      - NamesLastMilitary
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: entity
   id: RandomHumanoidSpawnerERTLeaderEVA
@@ -108,17 +136,20 @@
   id: ERTLeaderEVA
   parent: ERTLeader
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-leader-name
       description: ghost-role-information-ert-leader-description
+<<<<<<< HEAD
       requirements:
       - !type:OverallPlaytimeRequirement
         time: 36000 # 10h overall
     - type: GhostTakeoverAvailable
+=======
+      raffle:
+        settings: short
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     - type: Loadout
       prototypes: [ ERTLeaderGearEVA ]
-    - type: InitialInfectedExempt
 
 #против революции
 
@@ -171,10 +202,10 @@
   id: ERTLeaderEVALecter
   parent: ERTLeaderEVA
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-leader-name
       description: ghost-role-information-ert-leader-description
+<<<<<<< HEAD
       requirements:
       - !type:OverallPlaytimeRequirement
         time: 36000 # 10h overall
@@ -182,6 +213,70 @@
     - type: Loadout
       prototypes: [ ADTERTLeaderGearEVA_L ]
     - type: InitialInfectedExempt
+=======
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ ERTLeaderGearEVALecter ]
+
+## ERT Chaplain
+
+- type: entity
+  id: RandomHumanoidSpawnerERTChaplain
+  parent: RandomHumanoidSpawnerERTLeader
+  name: ERT chaplain
+  suffix: ERTRole, Basic
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: chaplain #needs an ERT variant once a good suit it made.
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: ERTChaplain
+
+- type: randomHumanoidSettings
+  id: ERTChaplain
+  parent: ERTLeader
+  components:
+    - type: GhostRole
+      name: ghost-role-information-ert-chaplain-name
+      description: ghost-role-information-ert-chaplain-description
+      raffle:
+        settings: short
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: Loadout
+      prototypes: [ ERTChaplainGear ]
+
+- type: entity
+  id: RandomHumanoidSpawnerERTChaplainEVA
+  parent: RandomHumanoidSpawnerERTChaplain
+  name: ERT chaplain
+  suffix: ERTRole, Enviro EVA
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: chaplain #needs an ERT variant once a good suit it made.
+    - type: RandomHumanoidSpawner
+      settings: ERTChaplainEVA
+
+- type: randomHumanoidSettings
+  id: ERTChaplainEVA
+  parent: ERTChaplain
+  components:
+    - type: GhostRole
+      name: ghost-role-information-ert-chaplain-name
+      description: ghost-role-information-ert-chaplain-description
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ ERTChaplainGearEVA ]
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 ## ERT Janitor
 
@@ -211,22 +306,29 @@
   id: ERTJanitor
   parent: ERTLeader
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-janitor-name
       description: ghost-role-information-ert-janitor-description
+<<<<<<< HEAD
       requirements:
       - !type:OverallPlaytimeRequirement
         time: 36000 # 10h overall
     - type: GhostTakeoverAvailable
+=======
+      raffle:
+        settings: short
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     - type: RandomMetadata
       nameSegments:
       - NamesFirstMilitaryCorvax # Corvax-Localization
       - NamesLastERTCallsign # Corvax-Localization
     - type: Loadout
       prototypes: [ ERTJanitorGear ]
+<<<<<<< HEAD
   #noSpawn: true
     - type: InitialInfectedExempt
+=======
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: entity
   id: RandomHumanoidSpawnerERTJanitorEVA
@@ -249,17 +351,20 @@
   id: ERTJanitorEVA
   parent: ERTJanitor
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-janitor-name
       description: ghost-role-information-ert-janitor-description
+<<<<<<< HEAD
       requirements:
       - !type:OverallPlaytimeRequirement
         time: 36000 # 10h overall
     - type: GhostTakeoverAvailable
+=======
+      raffle:
+        settings: short
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     - type: Loadout
       prototypes: [ ERTJanitorGearEVA ]
-    - type: InitialInfectedExempt
 
 ## ERT Engineer
 
@@ -289,22 +394,29 @@
   id: ERTEngineer
   parent: ERTLeader
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-engineer-name
       description: ghost-role-information-ert-engineer-description
+<<<<<<< HEAD
       requirements:
       - !type:OverallPlaytimeRequirement
         time: 36000 # 10h overall
     - type: GhostTakeoverAvailable
+=======
+      raffle:
+        settings: short
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     - type: RandomMetadata
       nameSegments:
       - NamesFirstMilitaryCorvax # Corvax-Localization
       - NamesLastERTCallsign # Corvax-Localization
     - type: Loadout
       prototypes: [ ERTEngineerGear ]
+<<<<<<< HEAD
   #noSpawn: true
     - type: InitialInfectedExempt
+=======
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: entity
   id: RandomHumanoidSpawnerERTEngineerEVA
@@ -324,17 +436,20 @@
   id: ERTEngineerEVA
   parent: ERTEngineer
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-engineer-name
       description: ghost-role-information-ert-engineer-description
+<<<<<<< HEAD
       requirements:
       - !type:OverallPlaytimeRequirement
         time: 36000 # 10h overall
     - type: GhostTakeoverAvailable
+=======
+      raffle:
+        settings: short
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     - type: Loadout
       prototypes: [ ERTEngineerGearEVA ]
-    - type: InitialInfectedExempt
 
 #против революции
 
@@ -397,22 +512,29 @@
     - Diona
   parent: ERTLeader
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-security-name
       description: ghost-role-information-ert-security-description
+<<<<<<< HEAD
       requirements:
       - !type:OverallPlaytimeRequirement
         time: 36000 # 10h overall
     - type: GhostTakeoverAvailable
+=======
+      raffle:
+        settings: short
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     - type: RandomMetadata
       nameSegments:
       - NamesFirstMilitaryCorvax # Corvax-Localization
       - NamesLastERTCallsign # Corvax-Localization
     - type: Loadout
       prototypes: [ ERTSecurityGear ]
+<<<<<<< HEAD
   #noSpawn: true
     - type: InitialInfectedExempt
+=======
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: entity
   id: RandomHumanoidSpawnerERTSecurityEVA
@@ -435,17 +557,20 @@
   id: ERTSecurityEVA
   parent: ERTSecurity
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-security-name
       description: ghost-role-information-ert-security-description
+<<<<<<< HEAD
       requirements:
       - !type:OverallPlaytimeRequirement
         time: 36000 # 10h overall
     - type: GhostTakeoverAvailable
+=======
+      raffle:
+        settings: short
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     - type: Loadout
       prototypes: [ ERTSecurityGearEVA ]
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -514,10 +639,10 @@
   id: ERTSecurityEVALecter
   parent: ERTSecurityEVA
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-security-name
       description: ghost-role-information-ert-security-description
+<<<<<<< HEAD
       requirements:
       - !type:OverallPlaytimeRequirement
         time: 36000 # 10h overall
@@ -525,6 +650,12 @@
     - type: Loadout
       prototypes: [ ADTERTSecurityGearEVA_L ]
     - type: InitialInfectedExempt
+=======
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ ERTSecurityGearEVALecter ]
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 ## ERT Medic
 
@@ -551,22 +682,29 @@
   id: ERTMedical
   parent: ERTLeader
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-medical-name
       description: ghost-role-information-ert-medical-description
+<<<<<<< HEAD
       requirements:
       - !type:OverallPlaytimeRequirement
         time: 36000 # 10h overall
     - type: GhostTakeoverAvailable
+=======
+      raffle:
+        settings: short
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERTMedical # Corvax-Localization
       - NamesLastERTCallsign # Corvax-Localization
     - type: Loadout
       prototypes: [ ERTMedicalGear ]
+<<<<<<< HEAD
   #noSpawn: true
     - type: InitialInfectedExempt
+=======
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: entity
   id: RandomHumanoidSpawnerERTMedicalEVA
@@ -586,17 +724,20 @@
   id: ERTMedicalEVA
   parent: ERTMedical
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-medical-name
       description: ghost-role-information-ert-medical-description
+<<<<<<< HEAD
       requirements:
       - !type:OverallPlaytimeRequirement
         time: 36000 # 10h overall
     - type: GhostTakeoverAvailable
+=======
+      raffle:
+        settings: short
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     - type: Loadout
       prototypes: [ ERTMedicalGearEVA ]
-    - type: InitialInfectedExempt
 
 #против революции
 
@@ -649,13 +790,14 @@
   speciesBlacklist:
     - Diona
   id: CBURNAgent
+  parent: EventHumanoidMindShielded
   components:
-    - type: MindShield
     - type: Loadout
       prototypes: [CBURNGear]
     - type: GhostRole
       name: ghost-role-information-cburn-agent-name
       description: ghost-role-information-cburn-agent-description
+<<<<<<< HEAD
       requirements:
       - !type:OverallPlaytimeRequirement
         time: 36000 # 10h overall
@@ -665,6 +807,14 @@
       - NamesFirstMilitaryCorvax # Corvax-Localization
       - NamesLastERTCallsign # Corvax-Localization
     - type: InitialInfectedExempt
+=======
+      raffle:
+        settings: short
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 ## Central Command
 
 - type: entity
@@ -683,11 +833,12 @@
 
 - type: randomHumanoidSettings
   id: CentcomOfficial
+  parent: EventHumanoidMindShielded
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-centcom-official-name
       description: ghost-role-information-centcom-official-description
+<<<<<<< HEAD
       requirements:
       - !type:OverallPlaytimeRequirement
         time: 72000 # 20h overall
@@ -698,9 +849,12 @@
         department: Security
         time: 72000 # 20h
     - type: GhostTakeoverAvailable
+=======
+      raffle:
+        settings: default
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     - type: Loadout
       prototypes: [ CentcomGear ]
-    - type: InitialInfectedExempt
 
 ## Syndicate
 
@@ -719,6 +873,8 @@
 - type: randomHumanoidSettings
   id: SyndicateAgent
   components:
+    - type: RandomHumanoidAppearance
+      randomizeName: false
     - type: Loadout
       prototypes: [SyndicateOperativeGearExtremelyBasic]
 
@@ -735,6 +891,8 @@
 - type: randomHumanoidSettings
   id: NukeOp
   components:
+    - type: RandomHumanoidAppearance
+      randomizeName: false
     - type: NukeOperative
 
 - type: entity
@@ -754,10 +912,277 @@
 
 - type: randomHumanoidSettings
   id: Cluwne
+  parent: EventHumanoid
   randomizeName: false
   components:
     - type: GhostRole
       name: ghost-role-information-cluwne-name
       description: ghost-role-information-cluwne-description
-    - type: GhostTakeoverAvailable
+      raffle:
+        settings: default
     - type: Cluwne
+
+
+## Shuttle roles
+
+## Lost Cargo technician
+
+- type: entity
+  name: lost cargo technician spawner
+  id: LostCargoTechnicianSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Objects/Tools/appraisal-tool.rsi
+          state: icon
+    - type: RandomSpawner
+      prototypes:
+      - RandomHumanoidLostCargoTechnician
+      chance: 1
+
+- type: entity
+  id: RandomHumanoidLostCargoTechnician
+  name: lost cargo technician ghost role
+  components:
+    - type: Sprite
+      sprite: Objects/Tools/appraisal-tool.rsi
+      state: icon
+    - type: RandomHumanoidSpawner
+      settings: LostCargoTechnician
+
+- type: randomHumanoidSettings
+  id: LostCargoTechnician
+  parent: EventHumanoid
+  components:
+    - type: GhostRole
+      name: ghost-role-information-lost-cargo-technical-name
+      description: ghost-role-information-lost-cargo-technical-description
+      rules: ghost-role-information-lost-cargo-technical-rules
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ LostCargoTechGearSuit, LostCargoTechGearCoat ]
+
+# Clown troupe
+
+- type: entity
+  name: clown troupe spawner
+  id: ClownTroupeSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Objects/Fun/bikehorn.rsi
+          state: icon
+    - type: RandomSpawner
+      prototypes:
+      - RandomHumanoidClownTroupe
+      rarePrototypes:
+      - RandomHumanoidClownTroupeBanana
+      rareChance: 0.3
+
+- type: entity
+  id: RandomHumanoidClownTroupe
+  name: clown troupe ghost role
+  components:
+    - type: Sprite
+      sprite: Objects/Tools/appraisal-tool.rsi
+      state: icon
+    - type: RandomHumanoidSpawner
+      settings: ClownTroupe
+
+- type: entity
+  id: RandomHumanoidClownTroupeBanana
+  name: banana clown troupe
+  parent: RandomHumanoidClownTroupe
+  components:
+    - type: RandomHumanoidSpawner
+      settings: ClownTroupeBanana
+
+- type: randomHumanoidSettings
+  id: ClownTroupe
+  parent: EventHumanoid
+  randomizeName: false
+  components:
+    - type: GhostRole
+      name: ghost-role-information-clown-troupe-name
+      description: ghost-role-information-clown-troupe-description
+      rules: ghost-role-information-clown-troupe-rules
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ ClownTroupe ]
+    - type: RandomMetadata
+      nameSegments:
+      - names_clown
+
+- type: randomHumanoidSettings
+  id: ClownTroupeBanana
+  parent: ClownTroupe
+  randomizeName: false
+  components:
+    - type: Loadout
+      prototypes: [ BananaClown ]
+
+# Traveling exotic chef
+
+- type: entity
+  name: traveling chef spawner
+  id: TravelingChefSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Objects/Weapons/Melee/kitchen_knife.rsi
+          state: icon
+    - type: RandomSpawner
+      prototypes:
+      - RandomHumanoidTravelingChef
+
+- type: entity
+  id: RandomHumanoidTravelingChef
+  name: traveling chef ghost role
+  components:
+    - type: Sprite
+      sprite: Objects/Tools/appraisal-tool.rsi
+      state: icon
+    - type: RandomHumanoidSpawner
+      settings: TravelingChef
+
+- type: randomHumanoidSettings
+  id: TravelingChef
+  parent: EventHumanoid
+  components:
+    - type: GhostRole
+      name: ghost-role-information-traveling-chef-name
+      description: ghost-role-information-traveling-chef-description
+      rules: ghost-role-information-traveling-chef-rules
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ TravelingChef ]
+
+# Disaster victim
+
+- type: entity
+  name: disaster victim spawner
+  id: DisasterVictimSpawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Clothing/OuterClothing/Hardsuits/basic.rsi
+        state: icon
+  - type: RandomSpawner
+    prototypes:
+    - RandomHumanoidDisasterVictimRD
+    - RandomHumanoidDisasterVictimCMO
+    - RandomHumanoidDisasterVictimCaptain
+    - MobSkeletonCloset
+
+- type: entity
+  id: RandomHumanoidDisasterVictimRD
+  name: disaster victim RD ghost role
+  components:
+    - type: Sprite
+      sprite: Clothing/OuterClothing/Hardsuits/basic.rsi
+      state: icon
+    - type: RandomHumanoidSpawner
+      settings: DisasterVictimResearchDirector
+
+- type: entity
+  id: RandomHumanoidDisasterVictimCMO
+  parent: RandomHumanoidDisasterVictimRD
+  name: disaster victim CMO ghost role
+  components:
+    - type: RandomHumanoidSpawner
+      settings: DisasterVictimCMO
+
+- type: entity
+  id: RandomHumanoidDisasterVictimCaptain
+  parent: RandomHumanoidDisasterVictimRD
+  name: disaster victim Captain ghost role
+  components:
+    - type: RandomHumanoidSpawner
+      settings: DisasterVictimCaptain
+
+## Following use EventHumanoidMindShielded since they are heads and probably should have mindshields
+
+- type: randomHumanoidSettings
+  id: DisasterVictimHead
+  parent: EventHumanoidMindShielded
+  components:
+    - type: GhostRole
+      name: ghost-role-information-disaster-victim-name
+      description: ghost-role-information-disaster-victim-description
+      rules: ghost-role-information-disaster-victim-rules
+      raffle:
+        settings: default
+
+- type: randomHumanoidSettings
+  id: DisasterVictimResearchDirector
+  parent: DisasterVictimHead
+  components:
+    - type: Loadout
+      prototypes: [ DisasterVictimRD, DisasterVictimRDAlt ]
+
+- type: randomHumanoidSettings
+  id: DisasterVictimCMO
+  parent: DisasterVictimHead
+  components:
+    - type: Loadout
+      prototypes: [ DisasterVictimCMO, DisasterVictimCMOAlt ]
+
+- type: randomHumanoidSettings
+  id: DisasterVictimCaptain
+  parent: DisasterVictimHead
+  components:
+    - type: Loadout
+      prototypes: [ DisasterVictimCaptain, DisasterVictimCaptainAlt ]
+
+# Syndie Disaster Victim
+
+- type: entity
+  name: syndie disaster victim spawner
+  id: SyndieDisasterVictimSpawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Structures/Decoration/banner.rsi
+        state: banner_syndicate
+  - type: RandomSpawner
+    prototypes:
+    - RandomHumanoidSyndieDisasterVictim
+
+- type: entity
+  id: RandomHumanoidSyndieDisasterVictim
+  name: syndie disaster victim ghost role
+  components:
+    - type: Sprite
+      sprite: Structures/Decoration/banner.rsi
+      state: banner_syndicate
+    - type: RandomHumanoidSpawner
+      settings: SyndieDisasterVictim
+
+- type: randomHumanoidSettings
+  id: SyndieDisasterVictim
+  parent: EventHumanoid
+  components:
+    - type: NpcFactionMember
+      factions:
+      - Syndicate
+    - type: GhostRole
+      name: ghost-role-information-syndie-disaster-victim-name
+      description: ghost-role-information-syndie-disaster-victim-description
+      rules: ghost-role-information-syndie-disaster-victim-rules
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ SyndicateOperativeGearCivilian ]

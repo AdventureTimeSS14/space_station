@@ -1,16 +1,17 @@
 using System.Linq;
-using System.Globalization;
 using System.Text.RegularExpressions;
 using Content.Shared.CCVar;
 using Content.Shared.Corvax.TTS;
 using Content.Shared.GameTicking;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Prototypes;
-using Content.Shared.Random.Helpers;
+using Content.Shared.Preferences.Loadouts;
 using Content.Shared.Roles;
 using Content.Shared.Traits;
+using Robust.Shared.Collections;
 using Robust.Shared.Configuration;
 using Robust.Shared.Enums;
+using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization;
@@ -27,6 +28,7 @@ namespace Content.Shared.Preferences
     [Serializable, NetSerializable]
     public sealed partial class HumanoidCharacterProfile : ICharacterProfile
     {
+<<<<<<< HEAD
         public const int MaxNameLength = 64;
         public const int MaxDescLength = 512;
 
@@ -80,12 +82,107 @@ namespace Content.Shared.Preferences
                 jobPriorities, other.PreferenceUnavailable, antagPreferences, traitPreferences)
         {
         }
+=======
+        private static readonly Regex RestrictedNameRegex = new("[^A-Z,a-z,0-9, ,\\-,']");
+        private static readonly Regex ICNameCaseRegex = new(@"^(?<word>\w)|\b(?<word>\w)(?=\w*$)");
 
-        /// <summary>Copy constructor</summary>
-        private HumanoidCharacterProfile(HumanoidCharacterProfile other)
-            : this(other, new Dictionary<string, JobPriority>(other.JobPriorities), new List<string>(other.AntagPreferences), new List<string>(other.TraitPreferences))
+        public const int MaxNameLength = 32;
+        public const int MaxDescLength = 512;
+
+        /// <summary>
+        /// Job preferences for initial spawn.
+        /// </summary>
+        [DataField]
+        private Dictionary<ProtoId<JobPrototype>, JobPriority> _jobPriorities = new()
         {
-        }
+            {
+                SharedGameTicker.FallbackOverflowJob, JobPriority.High
+            }
+        };
+
+        /// <summary>
+        /// Antags we have opted in to.
+        /// </summary>
+        [DataField]
+        private HashSet<ProtoId<AntagPrototype>> _antagPreferences = new();
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
+
+        /// <summary>
+        /// Enabled traits.
+        /// </summary>
+        [DataField]
+        private HashSet<ProtoId<TraitPrototype>> _traitPreferences = new();
+
+        /// <summary>
+        /// <see cref="_loadouts"/>
+        /// </summary>
+        public IReadOnlyDictionary<string, RoleLoadout> Loadouts => _loadouts;
+
+        [DataField]
+        private Dictionary<string, RoleLoadout> _loadouts = new();
+
+        [DataField]
+        public string Name { get; set; } = "John Doe";
+
+        /// <summary>
+        /// Detailed text that can appear for the character if <see cref="CCVars.FlavorText"/> is enabled.
+        /// </summary>
+        [DataField]
+        public string FlavorText { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Associated <see cref="SpeciesPrototype"/> for this profile.
+        /// </summary>
+        [DataField]
+        public ProtoId<SpeciesPrototype> Species { get; set; } = SharedHumanoidAppearanceSystem.DefaultSpecies;
+
+        [DataField]
+        public int Age { get; set; } = 18;
+
+        [DataField]
+        public Sex Sex { get; private set; } = Sex.Male;
+
+        [DataField]
+        public Gender Gender { get; private set; } = Gender.Male;
+
+        /// <summary>
+        /// <see cref="Appearance"/>
+        /// </summary>
+        public ICharacterAppearance CharacterAppearance => Appearance;
+
+        /// <summary>
+        /// Stores markings, eye colors, etc for the profile.
+        /// </summary>
+        [DataField]
+        public HumanoidCharacterAppearance Appearance { get; set; } = new();
+
+        /// <summary>
+        /// When spawning into a round what's the preferred spot to spawn.
+        /// </summary>
+        [DataField]
+        public SpawnPriorityPreference SpawnPriority { get; private set; } = SpawnPriorityPreference.None;
+
+        /// <summary>
+        /// <see cref="_jobPriorities"/>
+        /// </summary>
+        public IReadOnlyDictionary<ProtoId<JobPrototype>, JobPriority> JobPriorities => _jobPriorities;
+
+        /// <summary>
+        /// <see cref="_antagPreferences"/>
+        /// </summary>
+        public IReadOnlySet<ProtoId<AntagPrototype>> AntagPreferences => _antagPreferences;
+
+        /// <summary>
+        /// <see cref="_traitPreferences"/>
+        /// </summary>
+        public IReadOnlySet<ProtoId<TraitPrototype>> TraitPreferences => _traitPreferences;
+
+        /// <summary>
+        /// If we're unable to get one of our preferred jobs do we spawn as a fallback job or do we stay in lobby.
+        /// </summary>
+        [DataField]
+        public PreferenceUnavailableMode PreferenceUnavailable { get; private set; } =
+            PreferenceUnavailableMode.SpawnAsOverflow;
 
         public HumanoidCharacterProfile(
             string name,
@@ -97,15 +194,64 @@ namespace Content.Shared.Preferences
             Sex sex,
             Gender gender,
             HumanoidCharacterAppearance appearance,
-            ClothingPreference clothing,
-            BackpackPreference backpack,
             SpawnPriorityPreference spawnPriority,
-            IReadOnlyDictionary<string, JobPriority> jobPriorities,
+            Dictionary<ProtoId<JobPrototype>, JobPriority> jobPriorities,
             PreferenceUnavailableMode preferenceUnavailable,
+<<<<<<< HEAD
             IReadOnlyList<string> antagPreferences,
             IReadOnlyList<string> traitPreferences)
             : this(name, flavortext, erpStatus, species, voice, age, sex, gender, appearance, clothing, backpack, spawnPriority, new Dictionary<string, JobPriority>(jobPriorities),
                 preferenceUnavailable, new List<string>(antagPreferences), new List<string>(traitPreferences))
+=======
+            HashSet<ProtoId<AntagPrototype>> antagPreferences,
+            HashSet<ProtoId<TraitPrototype>> traitPreferences,
+            Dictionary<string, RoleLoadout> loadouts)
+        {
+            Name = name;
+            FlavorText = flavortext;
+            Species = species;
+            Age = age;
+            Sex = sex;
+            Gender = gender;
+            Appearance = appearance;
+            SpawnPriority = spawnPriority;
+            _jobPriorities = jobPriorities;
+            PreferenceUnavailable = preferenceUnavailable;
+            _antagPreferences = antagPreferences;
+            _traitPreferences = traitPreferences;
+            _loadouts = loadouts;
+
+            var hasHighPrority = false;
+            foreach (var (key, value) in _jobPriorities)
+            {
+                if (value == JobPriority.Never)
+                    _jobPriorities.Remove(key);
+                else if (value != JobPriority.High)
+                    continue;
+
+                if (hasHighPrority)
+                    _jobPriorities[key] = JobPriority.Medium;
+
+                hasHighPrority = true;
+            }
+        }
+
+        /// <summary>Copy constructor</summary>
+        public HumanoidCharacterProfile(HumanoidCharacterProfile other)
+            : this(other.Name,
+                other.FlavorText,
+                other.Species,
+                other.Age,
+                other.Sex,
+                other.Gender,
+                other.Appearance.Clone(),
+                other.SpawnPriority,
+                new Dictionary<ProtoId<JobPrototype>, JobPriority>(other.JobPriorities),
+                other.PreferenceUnavailable,
+                new HashSet<ProtoId<AntagPrototype>>(other.AntagPreferences),
+                new HashSet<ProtoId<TraitPrototype>>(other.TraitPreferences),
+                new Dictionary<string, RoleLoadout>(other.Loadouts))
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
         {
         }
 
@@ -114,6 +260,7 @@ namespace Content.Shared.Preferences
         ///     Defaults to <see cref="SharedHumanoidAppearanceSystem.DefaultSpecies"/> for the species.
         /// </summary>
         /// <returns></returns>
+<<<<<<< HEAD
         public HumanoidCharacterProfile() : this(
             "John Doe",
             "",
@@ -134,6 +281,9 @@ namespace Content.Shared.Preferences
             PreferenceUnavailableMode.SpawnAsOverflow,
             new List<string>(),
             new List<string>())
+=======
+        public HumanoidCharacterProfile()
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
         {
         }
 
@@ -144,6 +294,7 @@ namespace Content.Shared.Preferences
         /// <returns>Humanoid character profile with default settings.</returns>
         public static HumanoidCharacterProfile DefaultWithSpecies(string species = SharedHumanoidAppearanceSystem.DefaultSpecies)
         {
+<<<<<<< HEAD
             return new(
                 "John Doe",
                 "",
@@ -164,6 +315,12 @@ namespace Content.Shared.Preferences
                 PreferenceUnavailableMode.SpawnAsOverflow,
                 new List<string>(),
                 new List<string>());
+=======
+            return new()
+            {
+                Species = species,
+            };
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
         }
 
         // TODO: This should eventually not be a visual change only.
@@ -205,6 +362,7 @@ namespace Content.Shared.Preferences
 
             var name = GetName(species, gender);
 
+<<<<<<< HEAD
             return new HumanoidCharacterProfile(name, "", 0, species, voiceId, age, sex, gender, HumanoidCharacterAppearance.Random(species, sex), ClothingPreference.Jumpsuit, BackpackPreference.Backpack, SpawnPriorityPreference.None,
                 new Dictionary<string, JobPriority>
                 {
@@ -240,6 +398,19 @@ namespace Content.Shared.Preferences
         public IReadOnlyList<string> TraitPreferences => _traitPreferences;
         public PreferenceUnavailableMode PreferenceUnavailable { get; private set; }
 
+=======
+            return new HumanoidCharacterProfile()
+            {
+                Name = name,
+                Sex = sex,
+                Age = age,
+                Gender = gender,
+                Species = species,
+                Appearance = HumanoidCharacterAppearance.Random(species, sex),
+            };
+        }
+
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
         public HumanoidCharacterProfile WithName(string name)
         {
             return new(this) { Name = name };
@@ -289,35 +460,62 @@ namespace Content.Shared.Preferences
             return new(this) { Appearance = appearance };
         }
 
-        public HumanoidCharacterProfile WithClothingPreference(ClothingPreference clothing)
-        {
-            return new(this) { Clothing = clothing };
-        }
-        public HumanoidCharacterProfile WithBackpackPreference(BackpackPreference backpack)
-        {
-            return new(this) { Backpack = backpack };
-        }
         public HumanoidCharacterProfile WithSpawnPriorityPreference(SpawnPriorityPreference spawnPriority)
         {
             return new(this) { SpawnPriority = spawnPriority };
         }
-        public HumanoidCharacterProfile WithJobPriorities(IEnumerable<KeyValuePair<string, JobPriority>> jobPriorities)
+
+        public HumanoidCharacterProfile WithJobPriorities(IEnumerable<KeyValuePair<ProtoId<JobPrototype>, JobPriority>> jobPriorities)
         {
-            return new(this, new Dictionary<string, JobPriority>(jobPriorities), _antagPreferences, _traitPreferences);
+            var dictionary = new Dictionary<ProtoId<JobPrototype>, JobPriority>(jobPriorities);
+            var hasHighPrority = false;
+
+            foreach (var (key, value) in dictionary)
+            {
+                if (value == JobPriority.Never)
+                    dictionary.Remove(key);
+                else if (value != JobPriority.High)
+                    continue;
+
+                if (hasHighPrority)
+                    dictionary[key] = JobPriority.Medium;
+
+                hasHighPrority = true;
+            }
+
+            return new(this)
+            {
+                _jobPriorities = dictionary
+            };
         }
 
-        public HumanoidCharacterProfile WithJobPriority(string jobId, JobPriority priority)
+        public HumanoidCharacterProfile WithJobPriority(ProtoId<JobPrototype> jobId, JobPriority priority)
         {
-            var dictionary = new Dictionary<string, JobPriority>(_jobPriorities);
+            var dictionary = new Dictionary<ProtoId<JobPrototype>, JobPriority>(_jobPriorities);
             if (priority == JobPriority.Never)
             {
                 dictionary.Remove(jobId);
+            }
+            else if (priority == JobPriority.High)
+            {
+                // There can only ever be one high priority job.
+                foreach (var (job, value) in dictionary)
+                {
+                    if (value == JobPriority.High)
+                        dictionary[job] = JobPriority.Medium;
+                }
+
+                dictionary[jobId] = priority;
             }
             else
             {
                 dictionary[jobId] = priority;
             }
-            return new(this, dictionary, _antagPreferences, _traitPreferences);
+
+            return new(this)
+            {
+                _jobPriorities = dictionary,
+            };
         }
 
         public HumanoidCharacterProfile WithPreferenceUnavailable(PreferenceUnavailableMode mode)
@@ -325,51 +523,79 @@ namespace Content.Shared.Preferences
             return new(this) { PreferenceUnavailable = mode };
         }
 
-        public HumanoidCharacterProfile WithAntagPreferences(IEnumerable<string> antagPreferences)
+        public HumanoidCharacterProfile WithAntagPreferences(IEnumerable<ProtoId<AntagPrototype>> antagPreferences)
         {
-            return new(this, _jobPriorities, new List<string>(antagPreferences), _traitPreferences);
+            return new(this)
+            {
+                _antagPreferences = new (antagPreferences),
+            };
         }
 
-        public HumanoidCharacterProfile WithAntagPreference(string antagId, bool pref)
+        public HumanoidCharacterProfile WithAntagPreference(ProtoId<AntagPrototype> antagId, bool pref)
         {
-            var list = new List<string>(_antagPreferences);
+            var list = new HashSet<ProtoId<AntagPrototype>>(_antagPreferences);
             if (pref)
             {
-                if (!list.Contains(antagId))
+                list.Add(antagId);
+            }
+            else
+            {
+                list.Remove(antagId);
+            }
+
+            return new(this)
+            {
+                _antagPreferences = list,
+            };
+        }
+
+        public HumanoidCharacterProfile WithTraitPreference(ProtoId<TraitPrototype> traitId, string? categoryId, bool pref)
+        {
+            var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
+            var traitProto = prototypeManager.Index(traitId);
+
+            TraitCategoryPrototype? categoryProto = null;
+            if (categoryId != null && categoryId != "default")
+                categoryProto = prototypeManager.Index<TraitCategoryPrototype>(categoryId);
+
+            var list = new HashSet<ProtoId<TraitPrototype>>(_traitPreferences);
+
+            if (pref)
+            {
+                list.Add(traitId);
+
+                if (categoryProto == null || categoryProto.MaxTraitPoints < 0)
                 {
-                    list.Add(antagId);
+                    return new(this)
+                    {
+                        _traitPreferences = list,
+                    };
+                }
+
+                var count = 0;
+                foreach (var trait in list)
+                {
+                    var traitProtoTemp = prototypeManager.Index(trait);
+                    count += traitProtoTemp.Cost;
+                }
+
+                if (count > categoryProto.MaxTraitPoints && traitProto.Cost != 0)
+                {
+                    return new(this)
+                    {
+                        _traitPreferences = _traitPreferences,
+                    };
                 }
             }
             else
             {
-                if (list.Contains(antagId))
-                {
-                    list.Remove(antagId);
-                }
+                list.Remove(traitId);
             }
-            return new(this, _jobPriorities, list, _traitPreferences);
-        }
 
-        public HumanoidCharacterProfile WithTraitPreference(string traitId, bool pref)
-        {
-            var list = new List<string>(_traitPreferences);
-
-            // TODO: Maybe just refactor this to HashSet? Same with _antagPreferences
-            if (pref)
+            return new(this)
             {
-                if (!list.Contains(traitId))
-                {
-                    list.Add(traitId);
-                }
-            }
-            else
-            {
-                if (list.Contains(traitId))
-                {
-                    list.Remove(traitId);
-                }
-            }
-            return new(this, _jobPriorities, _antagPreferences, list);
+                _traitPreferences = list,
+            };
         }
 
         public string Summary =>
@@ -387,22 +613,30 @@ namespace Content.Shared.Preferences
             if (Age != other.Age) return false;
             if (Sex != other.Sex) return false;
             if (Gender != other.Gender) return false;
+            if (Species != other.Species) return false;
             if (PreferenceUnavailable != other.PreferenceUnavailable) return false;
-            if (Clothing != other.Clothing) return false;
-            if (Backpack != other.Backpack) return false;
             if (SpawnPriority != other.SpawnPriority) return false;
             if (!_jobPriorities.SequenceEqual(other._jobPriorities)) return false;
             if (!_antagPreferences.SequenceEqual(other._antagPreferences)) return false;
             if (!_traitPreferences.SequenceEqual(other._traitPreferences)) return false;
+            if (!Loadouts.SequenceEqual(other.Loadouts)) return false;
+            if (FlavorText != other.FlavorText) return false;
             return Appearance.MemberwiseEquals(other.Appearance);
         }
 
+<<<<<<< HEAD
         public void EnsureValid(IConfigurationManager configManager, IPrototypeManager prototypeManager, string[] sponsorMarkings)
+=======
+        public void EnsureValid(ICommonSession session, IDependencyCollection collection)
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
         {
-            if (!prototypeManager.TryIndex<SpeciesPrototype>(Species, out var speciesPrototype) || speciesPrototype.RoundStart == false)
+            var configManager = collection.Resolve<IConfigurationManager>();
+            var prototypeManager = collection.Resolve<IPrototypeManager>();
+
+            if (!prototypeManager.TryIndex(Species, out var speciesPrototype) || speciesPrototype.RoundStart == false)
             {
                 Species = SharedHumanoidAppearanceSystem.DefaultSpecies;
-                speciesPrototype = prototypeManager.Index<SpeciesPrototype>(Species);
+                speciesPrototype = prototypeManager.Index(Species);
             }
 
             var sex = Sex switch
@@ -446,15 +680,17 @@ namespace Content.Shared.Preferences
 
             if (configManager.GetCVar(CCVars.RestrictedNames))
             {
+<<<<<<< HEAD
                 name = Regex.Replace(name, @"[^.А-Яа-яёЁ0-9' -]", string.Empty); // Corvax: Only cyrillic names
+=======
+                name = RestrictedNameRegex.Replace(name, string.Empty);
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
             }
 
             if (configManager.GetCVar(CCVars.ICNameCase))
             {
                 // This regex replaces the first character of the first and last words of the name with their uppercase version
-                name = Regex.Replace(name,
-                @"^(?<word>\w)|\b(?<word>\w)(?=\w*$)",
-                m => m.Groups["word"].Value.ToUpper());
+                name = ICNameCaseRegex.Replace(name, m => m.Groups["word"].Value.ToUpper());
             }
 
             if (string.IsNullOrEmpty(name))
@@ -481,21 +717,6 @@ namespace Content.Shared.Preferences
                 _ => PreferenceUnavailableMode.StayInLobby // Invalid enum values.
             };
 
-            var clothing = Clothing switch
-            {
-                ClothingPreference.Jumpsuit => ClothingPreference.Jumpsuit,
-                ClothingPreference.Jumpskirt => ClothingPreference.Jumpskirt,
-                _ => ClothingPreference.Jumpsuit // Invalid enum values.
-            };
-
-            var backpack = Backpack switch
-            {
-                BackpackPreference.Backpack => BackpackPreference.Backpack,
-                BackpackPreference.Satchel => BackpackPreference.Satchel,
-                BackpackPreference.Duffelbag => BackpackPreference.Duffelbag,
-                _ => BackpackPreference.Backpack // Invalid enum values.
-            };
-
             var spawnPriority = SpawnPriority switch
             {
                 SpawnPriorityPreference.None => SpawnPriorityPreference.None,
@@ -504,7 +725,7 @@ namespace Content.Shared.Preferences
                 _ => SpawnPriorityPreference.None // Invalid enum values.
             };
 
-            var priorities = new Dictionary<string, JobPriority>(JobPriorities
+            var priorities = new Dictionary<ProtoId<JobPrototype>, JobPriority>(JobPriorities
                 .Where(p => prototypeManager.TryIndex<JobPrototype>(p.Key, out var job) && job.SetPreference && p.Value switch
                 {
                     JobPriority.Never => false, // Drop never since that's assumed default.
@@ -513,6 +734,17 @@ namespace Content.Shared.Preferences
                     JobPriority.High => true,
                     _ => false
                 }));
+
+            var hasHighPrio = false;
+            foreach (var (key, value) in priorities)
+            {
+                if (value != JobPriority.High)
+                    continue;
+
+                if (hasHighPrio)
+                    priorities[key] = JobPriority.Medium;
+                hasHighPrio = true;
+            }
 
             var antags = AntagPreferences
                 .Where(id => prototypeManager.TryIndex<AntagPrototype>(id, out var antag) && antag.SetPreference)
@@ -528,8 +760,6 @@ namespace Content.Shared.Preferences
             Sex = sex;
             Gender = gender;
             Appearance = appearance;
-            Clothing = clothing;
-            Backpack = backpack;
             SpawnPriority = spawnPriority;
 
             _jobPriorities.Clear();
@@ -542,9 +772,10 @@ namespace Content.Shared.Preferences
             PreferenceUnavailable = prefsUnavailableMode;
 
             _antagPreferences.Clear();
-            _antagPreferences.AddRange(antags);
+            _antagPreferences.UnionWith(antags);
 
             _traitPreferences.Clear();
+<<<<<<< HEAD
             _traitPreferences.AddRange(traits);
 
             // Corvax-TTS-Start
@@ -566,6 +797,34 @@ namespace Content.Shared.Preferences
         {
             var profile = new HumanoidCharacterProfile(this);
             profile.EnsureValid(configManager, prototypeManager, sponsorMarkings);
+=======
+            _traitPreferences.UnionWith(traits);
+
+            // Checks prototypes exist for all loadouts and dump / set to default if not.
+            var toRemove = new ValueList<string>();
+
+            foreach (var (roleName, loadouts) in _loadouts)
+            {
+                if (!prototypeManager.HasIndex<RoleLoadoutPrototype>(roleName))
+                {
+                    toRemove.Add(roleName);
+                    continue;
+                }
+
+                loadouts.EnsureValid(this, session, collection);
+            }
+
+            foreach (var value in toRemove)
+            {
+                _loadouts.Remove(value);
+            }
+        }
+
+        public ICharacterProfile Validated(ICommonSession session, IDependencyCollection collection)
+        {
+            var profile = new HumanoidCharacterProfile(this);
+            profile.EnsureValid(session, collection);
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
             return profile;
         }
 
@@ -579,28 +838,67 @@ namespace Content.Shared.Preferences
 
         public override bool Equals(object? obj)
         {
-            return obj is HumanoidCharacterProfile other && MemberwiseEquals(other);
+            return ReferenceEquals(this, obj) || obj is HumanoidCharacterProfile other && Equals(other);
         }
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(
-                HashCode.Combine(
-                    Name,
-                    Species,
-                    Age,
-                    Sex,
-                    Gender,
-                    Appearance,
-                    Clothing,
-                    Backpack
-                ),
-                SpawnPriority,
-                PreferenceUnavailable,
-                _jobPriorities,
-                _antagPreferences,
-                _traitPreferences
-            );
+            var hashCode = new HashCode();
+            hashCode.Add(_jobPriorities);
+            hashCode.Add(_antagPreferences);
+            hashCode.Add(_traitPreferences);
+            hashCode.Add(_loadouts);
+            hashCode.Add(Name);
+            hashCode.Add(FlavorText);
+            hashCode.Add(Species);
+            hashCode.Add(Age);
+            hashCode.Add((int)Sex);
+            hashCode.Add((int)Gender);
+            hashCode.Add(Appearance);
+            hashCode.Add((int)SpawnPriority);
+            hashCode.Add((int)PreferenceUnavailable);
+            return hashCode.ToHashCode();
+        }
+
+        public void SetLoadout(RoleLoadout loadout)
+        {
+            _loadouts[loadout.Role.Id] = loadout;
+        }
+
+        public HumanoidCharacterProfile WithLoadout(RoleLoadout loadout)
+        {
+            // Deep copies so we don't modify the DB profile.
+            var copied = new Dictionary<string, RoleLoadout>();
+
+            foreach (var proto in _loadouts)
+            {
+                if (proto.Key == loadout.Role)
+                    continue;
+
+                copied[proto.Key] = proto.Value.Clone();
+            }
+
+            copied[loadout.Role] = loadout.Clone();
+            var profile = Clone();
+            profile._loadouts = copied;
+            return profile;
+        }
+
+        public RoleLoadout GetLoadoutOrDefault(string id, ProtoId<SpeciesPrototype>? species, IEntityManager entManager, IPrototypeManager protoManager)
+        {
+            if (!_loadouts.TryGetValue(id, out var loadout))
+            {
+                loadout = new RoleLoadout(id);
+                loadout.SetDefault(protoManager, force: true);
+            }
+
+            loadout.SetDefault(protoManager);
+            return loadout;
+        }
+
+        public HumanoidCharacterProfile Clone()
+        {
+            return new HumanoidCharacterProfile(this);
         }
     }
 }

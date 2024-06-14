@@ -6,7 +6,11 @@ using Robust.Shared.Console;
 
 namespace Content.Server.Administration.Commands;
 
+<<<<<<< HEAD
 [AdminCommand(AdminFlags.Permissions)] // Corvax-DiscordRoles
+=======
+[AdminCommand(AdminFlags.Moderator)]
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 public sealed class PlayTimeAddOverallCommand : IConsoleCommand
 {
     [Dependency] private readonly IPlayerManager _playerManager = default!;
@@ -58,7 +62,11 @@ public sealed class PlayTimeAddOverallCommand : IConsoleCommand
     }
 }
 
+<<<<<<< HEAD
 [AdminCommand(AdminFlags.Permissions)] // Corvax-DiscordRoles
+=======
+[AdminCommand(AdminFlags.Moderator)]
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 public sealed class PlayTimeAddRoleCommand : IConsoleCommand
 {
     [Dependency] private readonly IPlayerManager _playerManager = default!;
@@ -93,7 +101,7 @@ public sealed class PlayTimeAddRoleCommand : IConsoleCommand
         }
 
         _playTimeTracking.AddTimeToTracker(player, role, TimeSpan.FromMinutes(minutes));
-        var time = _playTimeTracking.GetOverallPlaytime(player);
+        var time = _playTimeTracking.GetPlayTimeForTracker(player, role);
         shell.WriteLine(Loc.GetString("cmd-playtime_addrole-succeed",
             ("username", userName),
             ("role", role),
@@ -123,7 +131,7 @@ public sealed class PlayTimeAddRoleCommand : IConsoleCommand
     }
 }
 
-[AdminCommand(AdminFlags.Admin)]
+[AdminCommand(AdminFlags.Moderator)]
 public sealed class PlayTimeGetOverallCommand : IConsoleCommand
 {
     [Dependency] private readonly IPlayerManager _playerManager = default!;
@@ -168,7 +176,7 @@ public sealed class PlayTimeGetOverallCommand : IConsoleCommand
     }
 }
 
-[AdminCommand(AdminFlags.Admin)]
+[AdminCommand(AdminFlags.Moderator)]
 public sealed class PlayTimeGetRoleCommand : IConsoleCommand
 {
     [Dependency] private readonly IPlayerManager _playerManager = default!;
@@ -247,7 +255,7 @@ public sealed class PlayTimeGetRoleCommand : IConsoleCommand
 /// <summary>
 /// Saves the timers for a particular player immediately
 /// </summary>
-[AdminCommand(AdminFlags.Admin)]
+[AdminCommand(AdminFlags.Moderator)]
 public sealed class PlayTimeSaveCommand : IConsoleCommand
 {
     [Dependency] private readonly IPlayerManager _playerManager = default!;

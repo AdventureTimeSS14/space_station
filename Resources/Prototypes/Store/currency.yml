@@ -1,7 +1,7 @@
 - type: currency
   id: Telecrystal
   displayName: store-currency-display-telecrystal
-  cash: 
+  cash:
     1: Telecrystal1
   canWithdraw: true
 
@@ -11,6 +11,7 @@
   canWithdraw: false
 
 - type: currency
+<<<<<<< HEAD
   id: EvolutionPoints
   displayName: store-currency-display-evolution-points
   canWithdraw: false
@@ -18,6 +19,10 @@
 - type: currency
   id: SpellPoints
   displayName: store-currency-display-spell-points
+=======
+  id: WizCoin
+  displayName: store-currency-display-wizcoin
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
   canWithdraw: false
 
 #debug

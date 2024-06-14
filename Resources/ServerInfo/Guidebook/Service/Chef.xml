@@ -2,7 +2,14 @@
 # Шеф-повар
 Парнишкам и дамам нужно есть, и работа шеф-повара заключается в том, чтобы убедиться, что у люди имеют что-то съестное помимо дешёвых снеков.
 
+<<<<<<< HEAD
 Прежде всего, вам нужно будет ознакомиться с кухней и имеющимися в вашем распоряжении инструментами.
+=======
+
+[textlink="Click here to see a list of food recipes." link="FoodRecipes"]
+
+First and foremost, you'll need to familiarize yourself with the kitchen, and the tools available to you.
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 <Box>
 <GuideEntityEmbed Entity="KitchenKnife"/>

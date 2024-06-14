@@ -110,9 +110,12 @@
     - id: WeaponRifleAk
       prob: 0.0001
       orGroup: Weapons
+<<<<<<< HEAD
     # - id: Throngler
     #   prob: 0.0001
     #   orGroup: Weapons
+=======
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     - id: WeaponLauncherPirateCannon
       prob: 0.001
       orGroup: Weapons

@@ -38,14 +38,11 @@
 - type: startingGear
   id: QuartermasterGear
   equipment:
-    head: ClothingHeadHatQMsoft
-    jumpsuit: ClothingUniformJumpsuitQM
-    back: ClothingBackpackQuartermasterFilled
-    shoes: ClothingShoesColorBrown
     id: QuartermasterPDA
     ears: ClothingHeadsetQM
     belt: BoxFolderClipboard
     pocket1: AppraisalTool
+<<<<<<< HEAD
     underwearb: ClothingUnderwearBottomBoxersQM # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraQM # Sirena-Underwear
@@ -56,3 +53,9 @@
 
 
 
+=======
+  storage:
+    back:
+    - BoxSurvival
+    - Flash
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2

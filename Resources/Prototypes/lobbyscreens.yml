@@ -119,9 +119,26 @@
   background: /Textures/LobbyScreens/goal1.png
 
 - type: lobbyBackground
+<<<<<<< HEAD
   id: Cosmo1
   background: /Textures/LobbyScreens/cosmo1.png
 
 - type: lobbyBackground
   id: Cat1
   background: /Textures/LobbyScreens/cat1.png
+=======
+  id: Behonker
+  background: /Textures/LobbyScreens/behonker.webp
+
+- type: lobbyBackground
+  id: TerminalStation
+  background: /Textures/LobbyScreens/terminalstation.webp
+
+- type: lobbyBackground
+  id: JustAWeekAway
+  background: /Textures/LobbyScreens/justaweekaway.webp
+
+- type: lobbyBackground
+  id: JaniShootout
+  background: /Textures/LobbyScreens/janishootout.webp
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2

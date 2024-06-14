@@ -22,6 +22,36 @@ public class ActionButtonContainer : GridContainer
         get => (ActionButton) GetChild(index);
     }
 
+<<<<<<< HEAD
+=======
+    private void BuildActionButtons(int count)
+    {
+        var keys = ContentKeyFunctions.GetHotbarBoundKeys();
+
+        Children.Clear();
+        for (var index = 0; index < count; index++)
+        {
+            Children.Add(MakeButton(index));
+        }
+
+        ActionButton MakeButton(int index)
+        {
+            var button = new ActionButton(_entity);
+
+            if (!keys.TryGetValue(index, out var boundKey))
+                return button;
+
+            button.KeyBind = boundKey;
+            if (_input.TryGetKeyBinding(boundKey, out var binding))
+            {
+                button.Label.Text = binding.GetKeyString();
+            }
+
+            return button;
+        }
+    }
+
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     public void SetActionData(ActionsSystem system, params EntityUid?[] actionTypes)
     {
         ClearActionData();
@@ -85,10 +115,5 @@ public class ActionButtonContainer : GridContainer
             if (control is ActionButton button)
                 yield return button;
         }
-    }
-
-    ~ActionButtonContainer()
-    {
-        UserInterfaceManager.GetUIController<ActionUIController>().RemoveActionContainer();
     }
 }

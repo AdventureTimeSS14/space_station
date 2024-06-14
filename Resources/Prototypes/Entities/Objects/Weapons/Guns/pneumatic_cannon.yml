@@ -22,7 +22,6 @@
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
-    - FullAuto
     soundGunshot:
       path: /Audio/Effects/thunk.ogg
     soundEmpty:
@@ -34,10 +33,14 @@
   - type: Storage
     maxItemSize: Normal
     grid:
+<<<<<<< HEAD
     - 0,0,4,3
     blacklist:
       tags:
         - CannonRestrict
+=======
+    - 0,0,1,1
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
   - type: Appearance
   - type: ItemMapper
     containerWhitelist: [gas_tank]

@@ -9,9 +9,29 @@
   (и, как и другие виды, должны) пить ее, чтобы избежать обезвоживания.
   Их организм может перерабатывать 6 реагентов одновременно, а не только 2.
 
+<<<<<<< HEAD
   Их слизистая "кровь" не поддерживает метаболизм железа. Технически, слизистая кровь является источником
   умеренно полезной пищи для других видов, хотя употребление крови ваших коллег обычно вызывает неодобрение.
   Они задыхаются на 80% медленнее, но на 9% быстрее получают повреждения от давления. Это делает их наиболее приспособленными к выживанию в условиях жесткого вакуума. На время.
+=======
+  Slimepeople can morph into a [bold]"geras"[/bold] (an archaic slimefolk term), which is a smaller slime form that can [bold]pass through grilles[/bold],
+  but forces them to drop their inventory and held items. It's handy for a quick getaway. A geras is small enough to pick up (with two hands)
+  and fits in a duffelbag.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobSlimesGeras" Caption="A typical geras."/>
+  </Box>
+
+  Slimepeople have an [bold]internal 2x2 storage inventory[/bold] inside of their slime membrane. Anyone can see what's inside and take it out of you without asking,
+  so be careful. They [bold]don't drop their internal storage when they morph into a geras, however![/bold]
+
+  Slimepeople have slight accelerated regeneration compared to other humanoids. They're also capable of hardening their fists, and as such have stronger punches,
+  although they punch a little slower.
+
+  Their slime "blood" can not be regenerated from Iron. Slime Blood is technically a source of
+  moderately filling food for other species, although drinking the blood of your coworkers is usually frowned upon.
+  They suffocate 80% slower, but take pressure damage 9% faster. This makes them by far the species most capable to survive in hard vacuum. For a while.
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
   Они переносят [color=#1e90ff] на 80% меньше клеточного урона, на 40% меньше тупого урона предметами и на 20% меньше урона ядом[/color], но [color=#ffa500] на 50% больше урона холодом, на 20% больше slash урона и на 20% больше колющего урона[/color].
 

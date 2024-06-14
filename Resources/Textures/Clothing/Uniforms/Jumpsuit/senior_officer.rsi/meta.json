@@ -1,7 +1,11 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
+<<<<<<< HEAD
   "copyright": "Edit by Nairodian (github) of secred_s taken from tgstation at pull request https://github.com/tgstation/tgstation/pull/2984 and Adventure Time prazat911(Discord)",
+=======
+  "copyright": "Edit by Nairodian (github) of secred_s taken from tgstation at pull request https://github.com/tgstation/tgstation/pull/2984, jumpskirt sprite made by Flareguy and edited by Dutch-VanDerLinde.",
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
   "size": {
     "x": 32,
     "y": 32

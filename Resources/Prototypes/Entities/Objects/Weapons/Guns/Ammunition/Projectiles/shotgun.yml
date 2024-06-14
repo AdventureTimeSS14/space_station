@@ -86,8 +86,8 @@
     damage:
       types:
         Piercing: 3
-        Slash: 3 
-        
+        Slash: 3
+
 
 - type: entity
   id: PelletShotgunTranquilizer
@@ -110,9 +110,13 @@
     solution: ammo
   - type: DrainableSolution
     solution: ammo
-  - type: SolutionInjectOnCollide
+  - type: SolutionInjectOnProjectileHit
     transferAmount: 15
+<<<<<<< HEAD
     blockSlots: outerClothing
+=======
+    solution: ammo
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
   - type: InjectableSolution
     solution: ammo
 

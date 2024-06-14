@@ -151,7 +151,11 @@
     - TemporaryBlindness
     - Pacified
     - StaminaModifier
+<<<<<<< HEAD
     - ADTHallucinations
+=======
+    - Flashed
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
   - type: Reflect
     enabled: false
     reflectProb: 0
@@ -161,6 +165,7 @@
   - type: Identity
   - type: IdExaminable
   - type: Hands
+  - type: ComplexInteraction
   - type: Internals
   - type: Inventory
   - type: InventorySlots
@@ -204,11 +209,11 @@
   - type: Strippable
   - type: UserInterface
     interfaces:
-      - key: enum.VoiceMaskUIKey.Key
+      enum.VoiceMaskUIKey.Key:
         type: VoiceMaskBoundUserInterface
-      - key: enum.HumanoidMarkingModifierKey.Key
+      enum.HumanoidMarkingModifierKey.Key:
         type: HumanoidMarkingModifierBoundUserInterface
-      - key: enum.StrippingUiKey.Key
+      enum.StrippingUiKey.Key:
         type: StrippableBoundUserInterface
       - key: enum.StoreUiKey.Key
         type: StoreBoundUserInterface
@@ -260,7 +265,6 @@
   id: BaseMobSpeciesOrganic
   abstract: true
   components:
-  - type: Flashable
   - type: Barotrauma
     damage:
       types:
@@ -274,6 +278,7 @@
         Heat: -0.07
       groups:
         Brute: -0.07
+<<<<<<< HEAD
   # Organs
   - type: StatusEffects
     allowed:
@@ -295,6 +300,9 @@
     - Pacified
     - StaminaModifier
     - ADTHallucinations
+=======
+
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
   - type: Blindable
   # Other
   - type: Temperature
@@ -338,6 +346,7 @@
   abstract: true
   components:
   - type: Hands
+  - type: ComplexInteraction
   - type: Inventory
   - type: InventorySlots
   - type: ContainerContainer
@@ -404,5 +413,5 @@
     requiredLegs: 2
   - type: UserInterface
     interfaces:
-      - key: enum.HumanoidMarkingModifierKey.Key # sure, this can go here too
+      enum.HumanoidMarkingModifierKey.Key: # sure, this can go here too
         type: HumanoidMarkingModifierBoundUserInterface

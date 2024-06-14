@@ -19,8 +19,9 @@
     - type: FingerprintMask
     - type: UserInterface
       interfaces:
-        - key: enum.ChameleonUiKey.Key
+        enum.ChameleonUiKey.Key:
           type: ChameleonBoundUserInterface
+<<<<<<< HEAD
 # Corvax-HiddenDesc-Start
     - type: HiddenDescription
       entries:
@@ -36,6 +37,8 @@
           - Scientist
           - Borg
 # Corvax-HiddenDesc-End
+=======
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: entity
   parent: ClothingHandsChameleon

@@ -25,24 +25,28 @@
     - type: SleepEmitSound
       snore: /Audio/Voice/Misc/silly_snore.ogg
       interval: 10
-      chance: 1.0
   - !type:AddImplantSpecial
     implants: [ SadTromboneImplant ]
 
 - type: startingGear
   id: ClownGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitClown
-    back: ClothingBackpackClownFilled
-    shoes: ClothingShoesClown
     mask: ClothingMaskClown
     pocket1: BikeHorn
     pocket2: ClownRecorder
     id: ClownPDA
     ears: ClothingHeadsetService
+<<<<<<< HEAD
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   satchel: ClothingBackpackSatchelClownFilled
   duffelbag: ClothingBackpackDuffelClownFilled
+=======
+  storage:
+    back:
+    - BoxHug
+    - RubberStampClown
+    - CrayonRainbow
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2

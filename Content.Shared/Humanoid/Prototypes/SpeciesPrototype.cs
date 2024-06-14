@@ -66,14 +66,14 @@ public sealed partial class SpeciesPrototype : IPrototype
     /// <summary>
     ///     Humanoid species variant used by this entity.
     /// </summary>
-    [DataField(required: true, customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
-    public string Prototype { get; private set; } = default!;
+    [DataField(required: true)]
+    public EntProtoId Prototype { get; private set; } = default!;
 
     /// <summary>
     /// Prototype used by the species for the dress-up doll in various menus.
     /// </summary>
-    [DataField(required: true, customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
-    public string DollPrototype { get; private set; } = default!;
+    [DataField(required: true)]
+    public EntProtoId DollPrototype { get; private set; } = default!;
 
     /// <summary>
     /// Method of skin coloration used by the species.
@@ -120,6 +120,7 @@ public sealed partial class SpeciesPrototype : IPrototype
     /// </summary>
     [DataField]
     public int MaxAge = 120;
+<<<<<<< HEAD
 
     /// <summary>
     ///     The Style used for the guidebook info link in the character profile editor
@@ -140,6 +141,8 @@ public sealed partial class SpeciesPrototype : IPrototype
     [DataField]
     public string FemaleLastNames { get; private set; } = "names_last_female";
     // Corvax-LastnameGender-End
+=======
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 }
 
 public enum SpeciesNaming : byte

@@ -1,6 +1,8 @@
 - type: emote
   id: Sneeze
+  name: chat-emote-name-sneeze
   category: Vocal
+<<<<<<< HEAD
   chatMessages: [чихает] # Corvax-Localization
 
 - type: emote
@@ -8,6 +10,22 @@
   icon: Interface/Emotes/coughs.png
   category: Vocal
   chatMessages: [кашляет] # Corvax-Localization
+=======
+  chatMessages: ["chat-emote-msg-sneeze"]
+
+- type: emote
+  id: Cough
+  name: chat-emote-name-cough
+  icon: Interface/Emotes/cough.png
+  category: Vocal
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-msg-cough"]
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
   chatTriggers:
     - cough
     - coughs
@@ -18,29 +36,58 @@
 
 - type: emote
   id: CatMeow
+  name: chat-emote-name-catmeow
   category: Vocal
+<<<<<<< HEAD
   chatMessages: [мяукает] # Corvax-Localization
+=======
+  chatMessages: ["chat-emote-msg-catmeow"]
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: emote
   id: CatHisses
+  name: chat-emote-name-cathisses
   category: Vocal
+<<<<<<< HEAD
   chatMessages: [шипит] # Corvax-Localization
+=======
+  chatMessages: ["chat-emote-msg-cathisses"]
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: emote
   id: MonkeyScreeches
+  name: chat-emote-name-monkeyscreeches
   category: Vocal
+<<<<<<< HEAD
   chatMessages: [визжит] # Corvax-Localization
+=======
+  chatMessages: ["chat-emote-msg-monkeyscreeches"]
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: emote
   id: RobotBeep
+  name: chat-emote-name-robotbeep
   category: Vocal
-  chatMessages: [beeps]
+  chatMessages: ["chat-emote-msg-beep"]
 
 - type: emote
   id: Yawn
+<<<<<<< HEAD
   icon: Interface/Emotes/yawns.png
   category: Vocal
   chatMessages: [зевает] # Corvax-Localization
+=======
+  name: chat-emote-name-yawn
+  icon: Interface/Emotes/yawn.png
+  category: Vocal
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-msg-yawn"]
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
   chatTriggers:
     - yawn
     - yawns
@@ -51,5 +98,10 @@
 
 - type: emote
   id: Snore
+  name: chat-emote-name-snore
   category: Vocal
+<<<<<<< HEAD
   chatMessages: [храпит] # Corvax-Localization
+=======
+  chatMessages: ["chat-emote-msg-snore"]
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2

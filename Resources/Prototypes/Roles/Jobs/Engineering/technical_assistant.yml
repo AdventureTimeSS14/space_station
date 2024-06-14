@@ -17,12 +17,11 @@
 - type: startingGear
   id: TechnicalAssistantGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorYellow
-    back: ClothingBackpackEngineeringFilled
     shoes: ClothingShoesBootsWork
     id: TechnicalAssistantPDA
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
+<<<<<<< HEAD
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
     pocket1: BookEngineersHandbook
@@ -31,3 +30,9 @@
   innerClothingSkirt: ClothingUniformJumpskirtColorYellow
   satchel: ClothingBackpackSatchelEngineeringFilled
   duffelbag: ClothingBackpackDuffelEngineeringFilled
+=======
+    pocket2: BookEngineersHandbook
+  storage:
+    back:
+    - BoxSurvivalEngineering
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2

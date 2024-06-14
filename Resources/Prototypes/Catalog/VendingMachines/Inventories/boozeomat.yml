@@ -13,16 +13,25 @@
     DrinkFlaskBar: 5
     ADTDrinkTeapot: 2 # Всё ещё думаю над тем, уменьшать или оставить такое кол-во.
     DrinkShaker: 5
+<<<<<<< HEAD
     ADTDrinkGlassJug: 3
     ADTCarnationPack: 10 #Новый год
     ADTCinnamonPack: 5
+=======
+    DrinkJigger: 5
+    DrinkIceBucket: 2
+    BarSpoon: 3
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     CustomDrinkJug: 2 #to allow for custom drinks in the soda/booze dispensers
     DrinkAbsintheBottleFull: 2
     DrinkAleBottleFull: 5
     DrinkBeerBottleFull: 5
     DrinkBlueCuracaoBottleFull: 2
     DrinkCognacBottleFull: 4
+    DrinkCoconutWaterCarton: 3
     DrinkColaBottleFull: 4
+    DrinkEnergyDrinkCan: 8
+    DrinkMilkCarton: 2
     DrinkCreamCarton: 5
     ADTReagentContainerCocoaSolid: 3
     ADTIcePacket: 3
@@ -41,6 +50,7 @@
     DrinkPatronBottleFull: 2
     DrinkRumBottleFull: 4
     DrinkSodaWaterCan: 8
+    DrinkSolDryCan: 8
     DrinkSpaceMountainWindBottleFull: 3
     DrinkSpaceUpBottleFull: 3
     DrinkTequilaBottleFull: 3
@@ -51,7 +61,11 @@
     DrinkWineBottleFull: 5
     ADTDrinkCherryExquisiteWineBottleFull: 1
     DrinkChampagneBottleFull: 2 #because the premium drink
+<<<<<<< HEAD
     ADTDrinkVodkaAntivirusBottleFull: 2
+=======
+    DrinkSakeBottleFull: 3
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
     DrinkBeerCan: 5
     DrinkWineCan: 5
   emaggedInventory:

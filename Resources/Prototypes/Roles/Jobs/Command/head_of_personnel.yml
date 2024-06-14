@@ -59,14 +59,12 @@
 - type: startingGear
   id: HoPGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitHoP
-    back: ClothingBackpackHOPFilled
     shoes: ClothingShoesColorBrown
-    head: ClothingHeadHatHopcap
     id: HoPPDA
     gloves: ClothingHandsGlovesHop
     ears: ClothingHeadsetAltCommand
     belt: BoxFolderClipboard
+<<<<<<< HEAD
     pocket1: ADTFormPrinterMachineCircuitboard
     underwearb: ClothingUnderwearBottomBoxersHOP # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
@@ -75,3 +73,9 @@
   innerClothingSkirt: ClothingUniformJumpskirtHoP
   satchel: ClothingBackpackSatchelHOPFilled
   duffelbag: ClothingBackpackDuffelHOPFilled
+=======
+  storage:
+    back:
+    - BoxSurvival
+    - Flash
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2

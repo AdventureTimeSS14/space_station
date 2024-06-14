@@ -1,6 +1,7 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
+<<<<<<< HEAD
   # - Atlas
   # - Bagel
   # - Box
@@ -32,3 +33,20 @@
   - Kilo
   - ADTTrain
   - ADTAvrite
+=======
+  - Atlas
+  - Bagel
+  - Box
+  - Cluster
+  - Core
+  - Fland
+  - Marathon
+  - Meta
+  - Oasis
+  - Omega
+  - Origin
+  - Saltern
+  - Packed
+  - Reach
+  #- Train
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2

@@ -7,10 +7,9 @@
     contents:
       - id: FlashlightSeclite
       - id: WeaponDisabler
-        prob: 0.3
       - id: ClothingBeltSecurityFilled
       - id: Flash
-      - id: ClothingEyesGlassesSunglasses
+      - id: ClothingEyesGlassesSecurity
       - id: ClothingHeadsetAltSecurity
       - id: ClothingHandsGlovesCombat
       - id: ClothingShoesBootsJack
@@ -20,12 +19,15 @@
       - id: DoorRemoteArmory
       - id: ClothingOuterHardsuitWarden
       - id: HoloprojectorSecurity
+<<<<<<< HEAD
       - id: ClothingHeadHatCapWardenAlt
       - id: ClothingOuterCoatWardenAlt
       - id: ClothingEyesHudSecurity
       - id: ADTWardenHandsCuffs
         prob: 0.1
 
+=======
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: entity
   id: LockerWardenFilled
@@ -36,10 +38,9 @@
     contents:
       - id: FlashlightSeclite
       - id: WeaponDisabler
-        prob: 0.3
       - id: ClothingBeltSecurityFilled
       - id: Flash
-      - id: ClothingEyesGlassesSunglasses
+      - id: ClothingEyesGlassesSecurity
       - id: ClothingHeadsetAltSecurity
       - id: ClothingHandsGlovesCombat
       - id: ClothingShoesBootsJack
@@ -48,12 +49,15 @@
       - id: RubberStampWarden
       - id: DoorRemoteArmory
       - id: HoloprojectorSecurity
+<<<<<<< HEAD
       - id: ClothingHeadHatCapWardenAlt
       - id: ClothingOuterCoatWardenAlt
       - id: ClothingEyesHudSecurity
       - id: ADTWardenHandsCuffs
         prob: 0.1
 
+=======
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: entity
   id: LockerSecurityFilled
@@ -64,6 +68,7 @@
     contents:
       - id: FlashlightSeclite
         prob: 0.8
+      - id: WeaponDisabler
       - id: ClothingUniformJumpsuitSecGrey
         prob: 0.3
       - id: ClothingHeadHelmetBasic
@@ -71,15 +76,18 @@
       - id: ClothingBeltSecurityFilled
       - id: Flash
         prob: 0.5
-      - id: ClothingEyesGlassesSunglasses
+      - id: ClothingEyesGlassesSecurity
       - id: ClothingHeadsetSecurity
       - id: ClothingHandsGlovesColorBlack
       - id: ClothingShoesBootsJack
       - id: WeaponMeleeNeedle
         prob: 0.1
+<<<<<<< HEAD
       - id: ClothingOuterCoatSecurityOvercoat # Corvax-SecFashion
         prob: 0.2
       #- id: ClothingEyesHudSecurity
+=======
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
       - id: HoloprojectorSecurity
         prob: 0.6
 
@@ -90,7 +98,11 @@
   components:
   - type: StorageFill
     contents:
+<<<<<<< HEAD
       - id: ClothingEyesHudMedSec
+=======
+      - id: ClothingEyesGlassesSecurity
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
       - id: WeaponDisabler
       - id: TrackingImplanter
         amount: 4
@@ -165,8 +177,13 @@
   components:
   - type: StorageFill
     contents:
+<<<<<<< HEAD
       #- id: ClothingEyesHudSecurity
         #prob: 0.3
+=======
+      - id: ClothingEyesGlassesSecurity
+        prob: 0.3
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
       - id: ClothingHeadHatFedoraBrown
       - id: ClothingNeckTieDet
       - id: ClothingOuterVestDetective
@@ -279,7 +296,7 @@
     contents:
     - id: WeaponSubMachineGunWt550
       amount: 2
-    - id: MagazinePistolSubMachineGun
+    - id: MagazinePistolSubMachineGunTopMounted
       amount: 4
 
 - type: entity

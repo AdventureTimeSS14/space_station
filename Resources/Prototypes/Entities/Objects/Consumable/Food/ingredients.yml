@@ -302,6 +302,9 @@
       - dough
   - type: Sprite
     state: dough-slice
+  - type: Tag
+    tags:
+    - Slice
 
 - type: entity
   name: cornmeal dough
@@ -331,6 +334,9 @@
       - dough
   - type: Sprite
     state: cornmealdough-slice
+  - type: Tag
+    tags:
+    - Slice
 
 - type: entity
   name: tortilla dough
@@ -363,6 +369,9 @@
   - type: Construction
     graph: Tortilla
     node: start
+  - type: Tag
+    tags:
+    - Slice
 
 - type: entity
   name: flattened tortilla dough
@@ -511,7 +520,11 @@
           Quantity: 5
   - type: Tag
     tags:
+<<<<<<< HEAD
     - ADTMothFriendlyFood
+=======
+    - Slice
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: entity
   name: chèvre log
@@ -559,6 +572,9 @@
           Quantity: 1
         - ReagentId: Vitamin
           Quantity: 0.2
+  - type: Tag
+    tags:
+    - Slice
 
 - type: entity
   name: tofu
@@ -609,7 +625,11 @@
           Quantity: 2
   - type: Tag
     tags:
+<<<<<<< HEAD
     - ADTMothFriendlyFood
+=======
+    - Slice
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: entity
   name: burned mess

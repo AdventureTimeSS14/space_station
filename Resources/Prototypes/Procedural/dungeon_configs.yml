@@ -292,11 +292,11 @@
     - !type:JunctionPostGen
       width: 1
       entities:
-        - AirlockHydroGlassLocked
+        - AirlockGlass
 
     - !type:JunctionPostGen
       entities:
-        - AirlockHydroGlassLocked
+        - AirlockGlass
 
     - !type:AutoCablingPostGen
 
@@ -323,6 +323,7 @@
         NorthWest: BrickTileWhiteInnerNw
         NorthEast: BrickTileWhiteInnerNe
 
+<<<<<<< HEAD
 # ADT Bunker
 - type: Tag
   id: SalvageBunker
@@ -547,3 +548,41 @@
     - !type:JunctionPostGen
 
     - !type:AutoCablingPostGen
+=======
+# todo: Add a biome dungeon generator
+# Add corridor first gens that place rooms on top
+# Add a worm corridor gen (place subsequent corridors somewhere randomly along the path)
+# Place room entrances on ends of corridors touching a tile
+# Remove all room tiles from corridors
+# Fix paths up and try to reconnect all corridor tiles
+# Add a postgen step to spread rooms out, though it shouldn't spread into corridor exteriors
+
+- type: dungeonConfig
+  id: Haunted
+  generator: !type:PrefabDunGen
+    tile: FloorCaveDrought
+    roomWhitelist:
+    - Mineshaft
+    presets:
+    - Bucket
+    - Wow
+    - SpaceShip
+    - Tall
+  postGeneration:
+    - !type:WormCorridorPostGen
+      width: 3
+      tile: FloorCaveDrought
+
+    - !type:CorridorClutterPostGen
+      contents:
+      - id: FloraStalagmite1
+      - id: FloraStalagmite2
+      - id: FloraStalagmite3
+      - id: FloraStalagmite4
+      - id: FloraStalagmite5
+      - id: FloraStalagmite6
+
+    - !type:BoundaryWallPostGen
+      tile: FloorCaveDrought
+      wall: WallRock
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2

@@ -19,6 +19,7 @@
     spawned:
     - id: FoodMeatHuman
       amount: 5
+<<<<<<< HEAD
   - type: LanguageSpeaker # Frontier
     speaks:
     - GalacticCommon
@@ -26,6 +27,13 @@
     understands:
     - GalacticCommon
     - SolCommon
+=======
+  - type: HumanoidAppearance
+    species: Human
+    hideLayersOnEquip:
+    - Hair
+    - Snout
+>>>>>>> 24e7653c984da133283457da2089e629161a7ff2
 
 - type: entity
   parent: BaseSpeciesDummy
