@@ -65,6 +65,7 @@ public sealed class AutoPostingChatSystem : EntitySystem
 
                 _chat.TrySendInGameICMessage(uid, component.PostingMessageSpeak, InGameICChatType.Speak, ChatTransmitRange.Normal);
             }
+            speakTimer.Interval = component.SpeakTimerRead;
         };
         var emoteTimer = new System.Timers.Timer(component.EmoteTimerRead); // 9000 миллисекунд = 9 секунд по умолчанию
         emoteTimer.Elapsed += (sender, eventArgs) =>
@@ -76,6 +77,7 @@ public sealed class AutoPostingChatSystem : EntitySystem
                 //    emoteTimer.Stop();
                 _chat.TrySendInGameICMessage(uid, component.PostingMessageEmote, InGameICChatType.Emote, ChatTransmitRange.Normal);
             }
+            emoteTimer.Interval = component.EmoteTimerRead;
         };
         // Запускаем таймеры
         speakTimer.Start();
