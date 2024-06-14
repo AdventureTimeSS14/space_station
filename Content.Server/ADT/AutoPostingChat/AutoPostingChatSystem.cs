@@ -26,8 +26,8 @@ public sealed class AutoPostingChatSystem : EntitySystem
     [Dependency] private readonly DamageableSystem _damageableSystem = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
-    private System.Timers.Timer speakTimer = new();
-    private System.Timers.Timer emoteTimer = new();
+    private System.Timers.Timer _speakTimer = new();
+    private System.Timers.Timer _emoteTimer = new();
 
     public override void Initialize()
     {
@@ -39,8 +39,8 @@ public sealed class AutoPostingChatSystem : EntitySystem
 
     private void ComponentRemove(EntityUid uid, AutoPostingChatComponent component, ComponentShutdown args)
     {
-        speakTimer.Stop();
-        emoteTimer.Stop();
+        _speakTimer.Stop();
+        _emoteTimer.Stop();
     }
 
     /// <summary>
@@ -65,33 +65,33 @@ public sealed class AutoPostingChatSystem : EntitySystem
         //    return;
         //}
 
-        speakTimer.Interval = component.SpeakTimerRead; // 8000 миллисекунд = 8 секунд по умолчанию
-        speakTimer.Elapsed += (sender, eventArgs) =>
+        _speakTimer.Interval = component.SpeakTimerRead; // 8000 миллисекунд = 8 секунд по умолчанию
+        _speakTimer.Elapsed += (sender, eventArgs) =>
         {
             // Проверяем, что данные в компоненте были обновлены
             if (component.PostingMessageSpeak != null)
             {
                 //if (component.PostingMessageSpeak == "")
-                //    speakTimer.Stop();
+                //    _speakTimer.Stop();
 
                 _chat.TrySendInGameICMessage(uid, component.PostingMessageSpeak, InGameICChatType.Speak, ChatTransmitRange.Normal);
             }
-            speakTimer.Interval = component.SpeakTimerRead;
+            _speakTimer.Interval = component.SpeakTimerRead;
         };
-        emoteTimer.Interval = component.EmoteTimerRead; // 9000 миллисекунд = 9 секунд по умолчанию
-        emoteTimer.Elapsed += (sender, eventArgs) =>
+        _emoteTimer.Interval = component.EmoteTimerRead; // 9000 миллисекунд = 9 секунд по умолчанию
+        _emoteTimer.Elapsed += (sender, eventArgs) =>
         {
             // Проверяем, что данные в компоненте были обновлены
             if (component.PostingMessageEmote != null)
             {
                 //if (component.PostingMessageEmote == "")
-                //    emoteTimer.Stop();
+                //    _emoteTimer.Stop();
                 _chat.TrySendInGameICMessage(uid, component.PostingMessageEmote, InGameICChatType.Emote, ChatTransmitRange.Normal);
             }
-            emoteTimer.Interval = component.EmoteTimerRead;
+            _emoteTimer.Interval = component.EmoteTimerRead;
         };
         // Запускаем таймеры
-        speakTimer.Start();
-        emoteTimer.Start();
+        _speakTimer.Start();
+        _emoteTimer.Start();
     }
 }
