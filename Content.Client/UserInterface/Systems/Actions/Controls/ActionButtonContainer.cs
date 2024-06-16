@@ -21,7 +21,7 @@ public class ActionButtonContainer : GridContainer
     {
         get => (ActionButton) GetChild(index);
     }
-
+    
     public void SetActionData(ActionsSystem system, params EntityUid?[] actionTypes)
     {
         ClearActionData();
@@ -85,10 +85,5 @@ public class ActionButtonContainer : GridContainer
             if (control is ActionButton button)
                 yield return button;
         }
-    }
-
-    ~ActionButtonContainer()
-    {
-        UserInterfaceManager.GetUIController<ActionUIController>().RemoveActionContainer();
     }
 }

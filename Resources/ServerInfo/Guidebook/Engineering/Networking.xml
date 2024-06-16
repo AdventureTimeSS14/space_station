@@ -19,8 +19,7 @@
 ## Соединение
 Если устройства базовые или еще более продвинутые, и нуждаются в контроле того, как и что соединяется друг с другом, они, как правило, используют связывание устройств.
   <Box>
-    <GuideEntityEmbed Entity="SignalSwitch"/>
-    <GuideEntityEmbed Entity="Airlock"/>
+    <GuideEntityEmbed Entity="AirAlarm"/>
   </Box>
 С помощью мультитула вы можете подключить устройство типа [color = grey] On [/color] или [color = gray] Off [/color](кнопка) со входами устройств, такого как шлюзы
 [color = gray] Открыть [/color] или [color = gray] Закрыть [/color].

@@ -4,6 +4,7 @@
 
   <Box>
     <GuideEntityEmbed Entity="ComputerCargoBounty"/>
+    <GuideEntityEmbed Entity="PaperCargoBountyManifest"/>
   </Box>
   Каждая станция имеет фиксированное количество бонусов, которые доступны по всему миру. Их можно проверить на компьютере [color = # a4885c] cargo bounty [/color], который показывает следующую информацию о них:
 - Какие предметы необходимы для выполнения щедрости
@@ -16,7 +17,7 @@
   <Box>
     <GuideEntityEmbed Entity="PaperCargoBountyManifest"/>
     <GuideEntityEmbed Entity="CrateGenericSteel"/>
-    <GuideEntityEmbed Entity="CargoPallet"/>
+    <GuideEntityEmbed Entity="AppraisalTool"/>
   </Box>
  После того, как вы собрали предметы, необходимые для получения вознаграждения, завершить его - простой процесс:
 - Поместите все элементы в ящик и [полужирным шрифтом] закройте его! [/bold]

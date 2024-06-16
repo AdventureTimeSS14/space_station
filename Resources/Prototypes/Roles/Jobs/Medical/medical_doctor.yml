@@ -19,13 +19,9 @@
 - type: startingGear
   id: DoctorGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitMedicalDoctor
-    back: ClothingBackpackMedicalFilled
-    shoes: ClothingShoesColorWhite
-    outerClothing: ClothingOuterCoatLab
-    id: MedicalPDA
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalFilled
+<<<<<<< HEAD
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
@@ -33,3 +29,8 @@
   innerClothingSkirt: ClothingUniformJumpskirtMedicalDoctor
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled
+=======
+  storage:
+    back:
+    - BoxSurvivalMedical
+>>>>>>> a9610d4f850c7227ef298de535153c3746462b2a

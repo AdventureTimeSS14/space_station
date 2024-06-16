@@ -43,6 +43,7 @@
 
 Стандартное давление для газового насоса - 1.325 кПа. Криоксадон начинает действовать при температуре ниже 170° по Кельвину, так что вполне стандартная практика установить значение охлаждения охладителя на 100°К.
 
+<GuideReagentEmbed Reagent="Aloxadone"/>
 <GuideReagentEmbed Reagent="Cryoxadone"/>
 <GuideReagentEmbed Reagent="Doxarubixadone"/>
 <GuideReagentEmbed Reagent="Necrosol"/>

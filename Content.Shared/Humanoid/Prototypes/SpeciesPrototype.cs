@@ -32,6 +32,14 @@ public sealed partial class SpeciesPrototype : IPrototype
     [DataField(required: true)]
     public bool RoundStart { get; private set; } = false;
 
+    // Corvax-Sponsors-Start
+    /// <summary>
+    /// Whether the species is available only for sponsors
+    /// </summary>
+    [DataField]
+    public bool SponsorOnly { get; private set; } = false;
+    // Corvax-Sponsors-End
+
     // The below two are to avoid fetching information about the species from the entity
     // prototype.
 
@@ -66,14 +74,14 @@ public sealed partial class SpeciesPrototype : IPrototype
     /// <summary>
     ///     Humanoid species variant used by this entity.
     /// </summary>
-    [DataField(required: true, customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
-    public string Prototype { get; private set; } = default!;
+    [DataField(required: true)]
+    public EntProtoId Prototype { get; private set; } = default!;
 
     /// <summary>
     /// Prototype used by the species for the dress-up doll in various menus.
     /// </summary>
-    [DataField(required: true, customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
-    public string DollPrototype { get; private set; } = default!;
+    [DataField(required: true)]
+    public EntProtoId DollPrototype { get; private set; } = default!;
 
     /// <summary>
     /// Method of skin coloration used by the species.
@@ -87,8 +95,13 @@ public sealed partial class SpeciesPrototype : IPrototype
     [DataField]
     public string FemaleFirstNames { get; private set; } = "names_first_female";
 
+    // Corvax-LastnameGender-Start: Split lastname field by gender
     [DataField]
-    public string LastNames { get; private set; } = "names_last";
+    public string MaleLastNames { get; private set; } = "names_last_male";
+
+    [DataField]
+    public string FemaleLastNames { get; private set; } = "names_last_female";
+    // Corvax-LastnameGender-End
 
     [DataField]
     public SpeciesNaming Naming { get; private set; } = SpeciesNaming.FirstLast;
@@ -120,26 +133,6 @@ public sealed partial class SpeciesPrototype : IPrototype
     /// </summary>
     [DataField]
     public int MaxAge = 120;
-
-    /// <summary>
-    ///     The Style used for the guidebook info link in the character profile editor
-    /// </summary>
-    [DataField]
-    public string GuideBookIcon = "SpeciesInfoDefault";
-
-    // <summary>
-    ///  Только для спонсоров
-    /// </summary>
-    [DataField]
-    public bool SponsorOnly = false;
-
-    // Corvax-LastnameGender-Start: Split lastname field by gender
-    [DataField]
-    public string MaleLastNames { get; private set; } = "names_last_male";
-
-    [DataField]
-    public string FemaleLastNames { get; private set; } = "names_last_female";
-    // Corvax-LastnameGender-End
 }
 
 public enum SpeciesNaming : byte
@@ -147,7 +140,7 @@ public enum SpeciesNaming : byte
     First,
     FirstLast,
     FirstDashFirst,
-    FirstDashFirstDashFirst,
+    FirstDashFirstDashFirst, // ADT-Drasks
     TheFirstofLast,
     FirstDashLast, // Parkstation-IPC
 }

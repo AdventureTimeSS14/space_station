@@ -37,3 +37,7 @@
   innerClothingSkirt: ClothingUniformJumpskirtLawyerBlack
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled
+  storage:
+    back:
+    - BoxSurvival
+    - RubberStampLawyer

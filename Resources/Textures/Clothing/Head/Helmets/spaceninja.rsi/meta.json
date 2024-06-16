@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from paradise https://github.com/ParadiseSS13/Paradise/tree/master/icons (unknown commit)",
+  "copyright": "Taken from paradise https://github.com/ParadiseSS13/Paradise/tree/master/icons (unknown commit). Vox state by Flareguy for SS14",
   "size": {
     "x": 32,
     "y": 32
@@ -15,7 +15,11 @@
       "directions": 4
     },
     {
+<<<<<<< HEAD
       "name": "equipped-HELMET-vulp",
+=======
+      "name": "equipped-HELMET-vox",
+>>>>>>> a9610d4f850c7227ef298de535153c3746462b2a
       "directions": 4
     },
     {

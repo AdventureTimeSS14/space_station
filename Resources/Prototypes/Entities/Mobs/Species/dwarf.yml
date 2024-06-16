@@ -55,6 +55,11 @@
     accent: dwarf
   - type: Speech
     speechSounds: Bass
+  - type: HumanoidAppearance
+    species: Human
+    hideLayersOnEquip:
+    - Hair
+    - Snout
   # Frontier - languages mechanic
   - type: LanguageSpeaker
     speaks:

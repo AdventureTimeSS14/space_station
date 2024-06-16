@@ -1,7 +1,11 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
+<<<<<<< HEAD
   "copyright": "Modified from tgstation at commit https://github.com/tgstation/tgstation/commit/4f6190e2895e09116663ef282d3ce1d8b35c032e, equipped and icon remade by 𝚆𝚊𝚛𝚝𝚊𝚐𝚕𝚎𝚡#0912",
+=======
+  "copyright": "Made by Flareguy for Space Station 14, original base sprite from tgstation at commit https://github.com/tgstation/tgstation/commit/4f6190e2895e09116663ef282d3ce1d8b35c032e",
+>>>>>>> a9610d4f850c7227ef298de535153c3746462b2a
   "size": {
     "x": 32,
     "y": 32
@@ -19,6 +23,14 @@
     },
     {
       "name": "open-equipped-OUTERCLOTHING",
+      "directions": 4
+    },
+    {
+      "name": "equipped-OUTERCLOTHING-vox",
+      "directions": 4
+    },
+    {
+      "name": "open-equipped-OUTERCLOTHING-vox",
       "directions": 4
     },
     {

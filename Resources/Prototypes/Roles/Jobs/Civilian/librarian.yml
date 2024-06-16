@@ -13,14 +13,13 @@
 - type: startingGear
   id: LibrarianGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitLibrarian
-    back: ClothingBackpackLibrarianFilled
     shoes: ClothingShoesBootsLaceup
     id: LibrarianPDA
     ears: ClothingHeadsetService
     pocket1: d10Dice
     belt: BooksBag
     pocket2: HandLabeler # for making named bestsellers
+<<<<<<< HEAD
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
@@ -30,3 +29,9 @@
   innerClothingSkirt: ClothingUniformJumpskirtLibrarian # Corvax-Resprite
   satchel: ClothingBackpackSatchelLibrarianFilled
   duffelbag: ClothingBackpackDuffelLibrarianFilled
+=======
+  storage:
+    back:
+    - BoxSurvival
+    - BookRandom
+>>>>>>> a9610d4f850c7227ef298de535153c3746462b2a

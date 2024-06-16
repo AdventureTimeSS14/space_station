@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
@@ -16,3 +17,23 @@
     }
   ]
 }
+=======
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "made by Emisse (github) for ss14, edited by Skarletto (github)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "equipped-NECK",
+      "directions": 4
+    }
+  ]
+}
+>>>>>>> a9610d4f850c7227ef298de535153c3746462b2a

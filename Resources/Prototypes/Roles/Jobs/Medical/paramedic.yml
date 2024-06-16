@@ -26,12 +26,16 @@
 - type: startingGear
   id: ParamedicGear
   equipment:
+<<<<<<< HEAD
     jumpsuit: ClothingUniformJumpsuitParamedic
     back: ADTClothingBackpackParamedicalMedicalFilled
     shoes: ClothingShoesColorWhite
+=======
+>>>>>>> a9610d4f850c7227ef298de535153c3746462b2a
     id: ParamedicPDA
     ears: ADTClothingHeadsetParamedic
     belt: ClothingBeltMedicalEMTFilled
+<<<<<<< HEAD
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
     socks: ClothingUnderwearSocksNormal
   underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
@@ -39,3 +43,9 @@
   innerClothingSkirt: ClothingUniformJumpskirtParamedic
   satchel: ADTClothingBackpackSatchelParamedicalFilled
   duffelbag: ADTClothingBackpackDuffelParamedicalFilled
+=======
+  storage:
+    back:
+    - BoxSurvivalMedical
+    - EmergencyRollerBedSpawnFolded
+>>>>>>> a9610d4f850c7227ef298de535153c3746462b2a

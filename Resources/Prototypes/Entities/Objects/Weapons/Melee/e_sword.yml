@@ -78,24 +78,28 @@
     malus: 0
   - type: Reflect
     enabled: false
+    reflectProb: 0.5
+    minReflectProb: 0.25
+  - type: IgnitionSource
+    temperature: 700
 # Corvax-HiddenDesc-Start
-  - type: HiddenDescription
-    entries:
-    - label: corvax-hidden-desc-EnergySword-syndicate
-      whitelistMind:
-        components:
-          - TraitorRole
-          - NukeOperative
-    - label: corvax-hidden-desc-EnergySword-security
-      jobRequired:
-        - HeadOfSecurity
-        - Detective
-        - SecurityCadet
-        - SecurityOfficer
-        - Warden
-    - label: corvax-hidden-desc-EnergySword-cargo
-      jobRequired:
-        - SalvageSpecialist
+  # - type: HiddenDescription
+  #   entries:
+  #   - label: corvax-hidden-desc-EnergySword-syndicate
+  #     whitelistMind:
+  #       components:
+  #         - TraitorRole
+  #         - NukeOperative
+  #   - label: corvax-hidden-desc-EnergySword-security
+  #     jobRequired:
+  #       - HeadOfSecurity
+  #       - Detective
+  #       - SecurityCadet
+  #       - SecurityOfficer
+  #       - Warden
+  #   - label: corvax-hidden-desc-EnergySword-cargo
+  #     jobRequired:
+  #       - SalvageSpecialist
 # Corvax-HiddenDesc-End
 
 - type: entity
@@ -176,19 +180,19 @@
   - type: DisarmMalus
     malus: 0
 # Corvax-HiddenDesc-Start
-  - type: HiddenDescription
-    entries:
-    - label: corvax-hidden-desc-EnergyDagger-syndicate
-      whitelistMind:
-        components:
-          - TraitorRole
-          - NukeOperative
-    - label: corvax-hidden-desc-EnergyDagger-research
-      jobRequired:
-        - ResearchAssistant
-        - ResearchDirector
-        - Scientist
-        - Borg
+  # - type: HiddenDescription
+  #   entries:
+  #   - label: corvax-hidden-desc-EnergyDagger-syndicate
+  #     whitelistMind:
+  #       components:
+  #         - TraitorRole
+  #         - NukeOperative
+  #   - label: corvax-hidden-desc-EnergyDagger-research
+  #     jobRequired:
+  #       - ResearchAssistant
+  #       - ResearchDirector
+  #       - Scientist
+  #       - Borg
 # Corvax-HiddenDesc-End
 
 - type: entity
@@ -246,26 +250,26 @@
       - state: inhand-right-blade
         shader: unshaded
 # Corvax-HiddenDesc-Start
-  - type: HiddenDescription
-    entries:
-    #- label: corvax-hidden-desc-EnergyCutlass-pirate #У нас нету в игре PirateRole, грусть
-    - label: corvax-hidden-desc-EnergyCutlass-security
-      jobRequired:
-        - HeadOfSecurity
-        - Detective
-        - SecurityCadet
-        - SecurityOfficer
-        - Warden
-    - label: corvax-hidden-desc-EnergyCutlass-cargo
-      jobRequired:
-        - SalvageSpecialist
+  # - type: HiddenDescription
+  #   entries:
+  #   #- label: corvax-hidden-desc-EnergyCutlass-pirate #У нас нету в игре PirateRole, грусть
+  #   - label: corvax-hidden-desc-EnergyCutlass-security
+  #     jobRequired:
+  #       - HeadOfSecurity
+  #       - Detective
+  #       - SecurityCadet
+  #       - SecurityOfficer
+  #       - Warden
+  #   - label: corvax-hidden-desc-EnergyCutlass-cargo
+  #     jobRequired:
+  #       - SalvageSpecialist
 # Corvax-HiddenDesc-End
 
 - type: entity
   name: double-bladed energy sword
   parent: EnergySword
   id: EnergySwordDouble
-  description: Syndicate Command Interns thought that having one blade on the energy sword was not enough. This can be stored in pockets.
+  description: Syndicate Command's intern thought that having only one blade on energy swords was not cool enough. This can be stored in pockets.
   components:
   - type: EnergySword
   - type: ItemToggle
@@ -316,8 +320,8 @@
     size: Small
     sprite: Objects/Weapons/Melee/e_sword_double-inhands.rsi
   - type: Reflect
-    enabled: true
-    reflectProb: .55
+    reflectProb: .80
+    minReflectProb: .65
     spread: 75
   - type: UseDelay
     delay: 1
@@ -331,21 +335,21 @@
       - state: inhand-right-blade
         shader: unshaded
 # Corvax-HiddenDesc-Start
-  - type: HiddenDescription
-    entries:
-    - label: corvax-hidden-desc-EnergySword-syndicate
-      whitelistMind:
-        components:
-          - TraitorRole
-          - NukeOperative
-    - label: corvax-hidden-desc-EnergySword-security
-      jobRequired:
-        - HeadOfSecurity
-        - Detective
-        - SecurityCadet
-        - SecurityOfficer
-        - Warden
-    - label: corvax-hidden-desc-EnergySword-cargo
-      jobRequired:
-        - SalvageSpecialist
+  # - type: HiddenDescription
+  #   entries:
+  #   - label: corvax-hidden-desc-EnergySword-syndicate
+  #     whitelistMind:
+  #       components:
+  #         - TraitorRole
+  #         - NukeOperative
+  #   - label: corvax-hidden-desc-EnergySword-security
+  #     jobRequired:
+  #       - HeadOfSecurity
+  #       - Detective
+  #       - SecurityCadet
+  #       - SecurityOfficer
+  #       - Warden
+  #   - label: corvax-hidden-desc-EnergySword-cargo
+  #     jobRequired:
+  #       - SalvageSpecialist
 # Corvax-HiddenDesc-End

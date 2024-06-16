@@ -7,3 +7,6 @@ unfold-verb = Unfold
 fold-flip-verb = Flip
 fold-pull-off-verb = Pull off
 fold-put-on-verb = Put on
+
+fold-zip-verb = Zip up
+fold-unzip-verb = Unzip

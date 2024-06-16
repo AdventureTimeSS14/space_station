@@ -20,6 +20,7 @@
     soundHit:
       collection: BoxingHit
     animation: WeaponArcFist
+    mustBeEquippedToUse: true
   - type: Fiber
     fiberMaterial: fibers-leather
     fiberColor: fibers-red
@@ -90,6 +91,7 @@
       types:
         Blunt: 8
     bluntStaminaDamageFactor: 0.0 # so blunt doesn't deal stamina damage at all
+    mustBeEquippedToUse: true
 
 - type: entity
   parent: ClothingHandsBase
@@ -236,12 +238,12 @@
   # not actually electrified, just used to make stun ability work
   - type: Electrified
 # Corvax-HiddenDesc-Start
-  - type: HiddenDescription
-    entries:
-    - label: corvax-hidden-desc-ThievingGloves-thief
-      whitelistMind:
-        components:
-          - ThiefRole
+  # - type: HiddenDescription
+  #   entries:
+  #   - label: corvax-hidden-desc-ThievingGloves-thief
+  #     whitelistMind:
+  #       components:
+  #         - ThiefRole
 # Corvax-HiddenDesc-End
 
 - type: entity
@@ -359,17 +361,17 @@
     stripTimeReduction: 1.5
     stealthy: true
 # Corvax-HiddenDesc-Start
-  - type: HiddenDescription
-    entries:
-    - label: corvax-hidden-desc-ThievingGloves-syndicate
-      whitelistMind:
-        components:
-          - TraitorRole
-          - NukeOperative
-    - label: corvax-hidden-desc-ThievingGloves-thief
-      whitelistMind:
-        components:
-          - ThiefRole
+  # - type: HiddenDescription
+  #   entries:
+  #   - label: corvax-hidden-desc-ThievingGloves-syndicate
+  #     whitelistMind:
+  #       components:
+  #         - TraitorRole
+  #         - NukeOperative
+  #   - label: corvax-hidden-desc-ThievingGloves-thief
+  #     whitelistMind:
+  #       components:
+  #         - ThiefRole
 # Corvax-HiddenDesc-End
 
 - type: entity
@@ -400,6 +402,7 @@
     soundHit:
       collection: Punch
     animation: WeaponArcFist
+    mustBeEquippedToUse: true
   - type: Fiber
     fiberMaterial: fibers-leather
     fiberColor: fibers-blue
@@ -407,12 +410,11 @@
   - type: MeleeSpeech
   - type: ActivatableUI
     key: enum.MeleeSpeechUiKey.Key
-    closeOnHandDeselect: false
-    rightClickOnly: true
+    verbOnly: true
   - type: Actions
   - type: UserInterface
     interfaces:
-      - key: enum.MeleeSpeechUiKey.Key
+      enum.MeleeSpeechUiKey.Key:
         type: MeleeSpeechBoundUserInterface
   - type: StaticPrice
     price: 0

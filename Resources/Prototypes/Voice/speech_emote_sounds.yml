@@ -34,6 +34,10 @@
       collection: Whistles
     Weh:
       collection: Weh
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: MaleDeathGasp
     # ADT-Apathy Sounds.
     Scream-apathy:
       collection: MaleScreams
@@ -90,7 +94,7 @@
       collection: FemaleCry
 
 - type: emoteSounds
-  id: UnisexReptilian
+  id: MaleReptilian
   params:
     variation: 0.125
   sounds:
@@ -106,11 +110,33 @@
       collection: MaleCry
     Weh:
       collection: Weh
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: DeathGasp
     # ADT-Apathy Sounds.
     Scream-apathy:
       path: /Audio/Voice/Reptilian/reptilian_scream.ogg
     Laugh-apathy:
       path: /Audio/Animals/lizard_happy.ogg
+
+- type: emoteSounds
+  id: FemaleReptilian
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: /Audio/Voice/Reptilian/reptilian_scream.ogg
+    Laugh:
+      path: /Audio/Animals/lizard_happy.ogg
+    Honk:
+      collection: BikeHorn
+    Whistle:
+      collection: Whistles
+    Crying:
+      collection: FemaleCry
+    Weh:
+      collection: Weh
 
 - type: emoteSounds
   id: MaleSlime
@@ -147,6 +173,10 @@
       collection: Whistles
     Weh:
       collection: Weh
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: MaleDeathGasp
     # ADT-Apathy Sounds.
     Scream-apathy:
       collection: MaleScreams
@@ -194,6 +224,10 @@
       collection: Whistles
     Weh:
       collection: Weh
+    Gasp:
+      collection: FemaleGasp
+    DefaultDeathgasp:
+      collection: FemaleDeathGasp
     # ADT-Apathy Sounds.
     Scream-apathy:
       collection: FemaleScreams
@@ -228,6 +262,10 @@
       collection: BikeHorn
     Weh:
       collection: Weh
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: DeathGasp
     # ADT-Apathy Sounds.
     Scream-apathy:
       path: /Audio/Voice/Diona/diona_scream.ogg
@@ -251,6 +289,10 @@
       path: /Audio/Voice/Arachnid/arachnid_click.ogg
     Weh:
       collection: Weh
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: DeathGasp
     # ADT-Apathy Sounds.
     Scream-apathy:
       path: /Audio/Voice/Arachnid/arachnid_scream.ogg
@@ -290,6 +332,10 @@
       collection: Whistles
     Weh:
       collection: Weh
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: MaleDeathGasp
     # ADT-Apathy Sounds.
     Scream-apathy:
       collection: MaleScreams
@@ -336,6 +382,10 @@
       collection: Whistles
     Weh:
       collection: Weh
+    Gasp:
+      collection: FemaleGasp
+    DefaultDeathgasp:
+      collection: FemaleDeathGasp
     # ADT-Apathy Sounds.
     Scream-apathy:
       collection: FemaleScreams
@@ -366,11 +416,48 @@
       path: /Audio/Voice/Moth/moth_squeak.ogg
     Weh:
       collection: Weh
-    # ADT-Apathy Sounds.
-    Scream-apathy:
-      path: /Audio/Voice/Moth/moth_scream.ogg
-    Laugh-apathy:
-      path: /Audio/Voice/Moth/moth_laugh.ogg
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: MothDeathGasp
+
+- type: emoteSounds
+  id: UnisexSilicon
+  params:
+    variation: 0.05
+  sounds:
+    Beep:
+      path: /Audio/Machines/twobeep.ogg
+    Chime:
+      path: /Audio/Machines/chime.ogg
+    Buzz:
+      path: /Audio/Machines/buzz-sigh.ogg
+    Buzz-Two:
+      path: /Audio/Machines/buzz-two.ogg
+    Honk:
+      path: /Audio/Items/bikehorn.ogg
+    Ping:
+      path: /Audio/Effects/Cargo/ping.ogg
+
+- type: emoteSounds
+  id: UnisexSiliconSyndicate
+  params:
+    variation: 0.05
+  sounds:
+    Laugh:
+      path: /Audio/Voice/Silicon/syndieborg_laugh.ogg
+    Beep:
+      path: /Audio/Machines/twobeep.ogg
+    Chime:
+      path: /Audio/Machines/chime.ogg
+    Buzz:
+      path: /Audio/Machines/buzz-sigh.ogg
+    Buzz-Two:
+      path: /Audio/Machines/buzz-two.ogg
+    Honk:
+      path: /Audio/Items/bikehorn.ogg
+    Ping:
+      path: /Audio/Effects/Cargo/ping.ogg
 
 # body emotes
 - type: emoteSounds
@@ -454,3 +541,10 @@
   sounds:
     Chirp:
       path: /Audio/Animals/nymph_chirp.ogg
+
+- type: emoteSounds
+  id: Parrot
+  sound:
+    path: /Audio/Animals/parrot_raught.ogg
+    params:
+      variation: 0.125

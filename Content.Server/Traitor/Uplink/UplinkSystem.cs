@@ -5,6 +5,7 @@ using Content.Shared.PDA;
 using Content.Server.Store.Components;
 using Content.Shared.FixedPoint;
 using Content.Shared.Store;
+using Content.Shared.Store.Components;
 
 namespace Content.Server.Traitor.Uplink
 {
@@ -18,18 +19,6 @@ namespace Content.Server.Traitor.Uplink
         public const string TelecrystalCurrencyPrototype = "Telecrystal";
 
         /// <summary>
-        ///     Gets the amount of TC on an "uplink"
-        ///     Mostly just here for legacy systems based on uplink.
-        /// </summary>
-        /// <param name="component"></param>
-        /// <returns>the amount of TC</returns>
-        public int GetTCBalance(StoreComponent component)
-        {
-            FixedPoint2? tcBalance = component.Balance.GetValueOrDefault(TelecrystalCurrencyPrototype);
-            return tcBalance?.Int() ?? 0;
-        }
-
-        /// <summary>
         /// Adds an uplink to the target
         /// </summary>
         /// <param name="user">The person who is getting the uplink</param>
@@ -37,7 +26,7 @@ namespace Content.Server.Traitor.Uplink
         /// <param name="uplinkPresetId">The id of the storepreset</param>
         /// <param name="uplinkEntity">The entity that will actually have the uplink functionality. Defaults to the PDA if null.</param>
         /// <returns>Whether or not the uplink was added successfully</returns>
-        public bool AddUplink(EntityUid user, FixedPoint2? balance, string uplinkPresetId = "StorePresetUplink", EntityUid? uplinkEntity = null, string currencyPrototype = TelecrystalCurrencyPrototype)
+        public bool AddUplink(EntityUid user, FixedPoint2? balance, EntityUid? uplinkEntity = null)
         {
             // Try to find target item
             if (uplinkEntity == null)
@@ -47,34 +36,20 @@ namespace Content.Server.Traitor.Uplink
                     return false;
             }
 
+            EnsureComp<UplinkComponent>(uplinkEntity.Value);
             var store = EnsureComp<StoreComponent>(uplinkEntity.Value);
-            _store.InitializeFromPreset(uplinkPresetId, uplinkEntity.Value, store);
             store.AccountOwner = user;
             store.Balance.Clear();
-
             if (balance != null)
             {
                 store.Balance.Clear();
-                _store.TryAddCurrency(new Dictionary<string, FixedPoint2> { { currencyPrototype, balance.Value } }, uplinkEntity.Value, store);
+                _store.TryAddCurrency(new Dictionary<string, FixedPoint2> { { TelecrystalCurrencyPrototype, balance.Value } }, uplinkEntity.Value, store);
             }
 
             // TODO add BUI. Currently can't be done outside of yaml -_-
 
             return true;
         }
-
-        public bool RemoveUplink(EntityUid? uplinkEntity)
-        {
-            // Try to find target item
-            if (uplinkEntity != null)
-            {
-                uplinkEntity = null;
-                if (uplinkEntity != null)
-                    return false;
-            }
-            return true;
-        }
-
 
         /// <summary>
         /// Finds the entity that can hold an uplink for a user.

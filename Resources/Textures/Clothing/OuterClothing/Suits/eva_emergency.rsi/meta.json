@@ -6,6 +6,7 @@
         "x": 32,
         "y": 32
     },
+<<<<<<< HEAD
     "states": [
         {
             "name": "icon"
@@ -23,4 +24,23 @@
             "directions": 4
         }
     ]
+=======
+    {
+      "name": "equipped-OUTERCLOTHING",
+      "directions": 4
+    },
+    {
+      "name": "equipped-OUTERCLOTHING-vox",
+      "directions": 4
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    }
+  ]
+>>>>>>> a9610d4f850c7227ef298de535153c3746462b2a
 }

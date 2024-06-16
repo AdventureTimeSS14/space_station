@@ -7,7 +7,7 @@
   <Box>
     <GuideEntityEmbed Entity="Stunbaton"/>
     <GuideEntityEmbed Entity="Handcuffs"/>
-    <GuideEntityEmbed Entity="WeaponDisabler"/>
+   <GuideEntityEmbed Entity="WeaponDisabler"/>
   </Box>
 
   ## Вспышки

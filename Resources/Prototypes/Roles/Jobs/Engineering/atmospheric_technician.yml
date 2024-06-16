@@ -37,3 +37,6 @@
   innerClothingSkirt: ClothingUniformJumpskirtAtmos
   satchel: ClothingBackpackSatchelAtmosphericsFilled
   duffelbag: ClothingBackpackDuffelAtmosphericsFilled
+  storage:
+    back:
+    - BoxSurvivalEngineering

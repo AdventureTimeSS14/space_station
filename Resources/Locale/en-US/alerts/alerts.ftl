@@ -57,9 +57,6 @@ alerts-no-battery-desc = You don't have a battery, rendering you unable to charg
 alerts-internals-name = Toggle internals
 alerts-internals-desc = Toggles your gas tank internals on or off.
 
-alerts-internals-name = Toggle internals
-alerts-internals-desc = Toggles your gas tank internals on or off.
-
 alerts-piloting-name = Piloting Shuttle
 alerts-piloting-desc = You are piloting a shuttle. Click the alert to stop.
 
@@ -113,3 +110,6 @@ alerts-revenant-corporeal-desc = You have manifested physically. People around y
 
 alerts-changeling-chemicals-name = Chemicals
 alerts-changeling-chemicals-desc = The amount of chemicals that are inside of your body. These chemicals are used for abilities. Regenerates over time.
+
+alerts-deflecting-name = Deflecting
+alerts-deflecting-desc = You have a chance to deflect incoming projectiles. Standing still or moving slowly will increase this chance.
