@@ -116,3 +116,11 @@
   frequency: 1949
   color: "#75c1ff"
   longRange: true
+
+- type: radioChannel
+  id: ADTSpaceSecChannel
+  name: SPACE SEC линия
+  keycode: 'у'
+  frequency: 1302
+  color: "#c8c3c0"
+  longRange: true
