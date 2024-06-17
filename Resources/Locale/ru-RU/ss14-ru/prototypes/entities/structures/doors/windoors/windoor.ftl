@@ -92,3 +92,6 @@ ent-WindoorChapelLocked = { ent-Windoor }
 ent-WindoorJanitorLocked = { ent-Windoor }
     .suffix = Уборщик, Закрыт
     .desc = { ent-Windoor.desc }
+ent-WindoorClockwork = часовое раздвижное окно
+    .suffix = Часовой
+    .desc = { ent-Windoor.desc }

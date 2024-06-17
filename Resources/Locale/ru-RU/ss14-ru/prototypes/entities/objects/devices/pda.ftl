@@ -124,8 +124,9 @@ ent-ADTPathologistPDA = КПК патологоанатома
 ent-AdminPDA = КПК админа
     .desc = Если вы не админ, пожалуйста, верните КПК ближайшему администратору.
 
-ent-ADTBlueShieldOfficerPDA = КПК синего щита
-    .desc = Пахнет защитой.
+ent-ADTBlueShieldOfficerPDA = КПК офицера синего щита
+    .desc = Покажи им, какой он стильный, как он прочен, ведь в нём вся сила NT.
+
 ent-BorgPDA = КПК Борга
     .desc = Бип буп.
 ent-ERTChaplainPDA = КПК священника ОБР

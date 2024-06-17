@@ -12,3 +12,7 @@ ent-ClothingUnderwearSocksShort = короткие носки
     .desc = Стандартные короткие носки для работников NanoTrasen. Белого цвета.
 ent-ClothingUnderwearSocksThigh = чулки
     .desc = Стандартные чулки для работников NanoTrasen. Белого цвета.
+ent-ADTClothingUnderwearSocksBlueshield = носки офицера синего щита
+    .desc = Стильные носки специльно для Офицеров Синего Щита, согревающие ноги защитников станции.
+ent-ADTClothingUnderwearStockingsBlueshield = чулки офицера синего щита
+    .desc = Стильные и милые чулки Офицеров Синего Щита, согревающие ножки защитников станции.

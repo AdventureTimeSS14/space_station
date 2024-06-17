@@ -10,6 +10,6 @@
     netsync: false
   - type: SpawnItemsOnUse
     items:
-    - id: BlueShieldsuit
+    - id: BlueshieldSuit
     sound:
       path: /Audio/Effects/unwrap.ogg
