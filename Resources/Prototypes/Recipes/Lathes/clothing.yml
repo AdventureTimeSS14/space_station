@@ -1285,3 +1285,10 @@
   completetime: 1
   materials:
     Cloth: 100
+
+- type: latheRecipe
+  id: CarpetSkyBlue
+  result: FloorCarpetItemSkyBlue
+  completetime: 1
+  materials:
+    Cloth: 100
