@@ -8,24 +8,40 @@ namespace Content.Shared.ADT.AutoPostingChat;
 public sealed partial class AutoPostingChatComponent : Component
 {
     /// <summary>
-    /// timings for giggles and knocks.
+    /// Whether this destination is shown in the gateway ui.
+    /// If you are making a gateway for an admeme set this once you are ready for players to select it.
     /// </summary>
-    //[ViewVariables(VVAccess.ReadWrite)]
-    //public TimeSpan DamageGiggleCooldown = TimeSpan.FromSeconds(2);
-    //[ViewVariables(VVAccess.ReadWrite)]
-    //public float KnockChance = 0.05f;
-    //[ViewVariables(VVAccess.ReadWrite)]
-    //public float GiggleRandomChance = 0.3f;
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public bool RandomIntervalSpeak = false;
 
+    /// <summary>
+    /// Whether this destination is shown in the gateway ui.
+    /// If you are making a gateway for an admeme set this once you are ready for players to select it.
+    /// </summary>
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public bool RandomIntervalEmote = false;
+
+    /// <summary>
+    /// The interval in milliseconds between automatic speech messages.
+    /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     public int SpeakTimerRead = 8000;
 
+    /// <summary>
+    /// The interval in milliseconds between automatic emote messages.
+    /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     public int EmoteTimerRead = 9000;
 
+    /// <summary>
+    /// The message that will be automatically spoken by the entity.
+    /// </summary>
     [DataField("speakMessage")]
-    public string? PostingMessageSpeak = "Вульп-вульп!";
+    public string? PostingMessageSpeak = "";
 
+    /// <summary>
+    /// The message that will be automatically emotes by the entity.
+    /// </summary>
     [DataField("emoteMessage")]
-    public string? PostingMessageEmote = "Кхе";
+    public string? PostingMessageEmote = "";
 }

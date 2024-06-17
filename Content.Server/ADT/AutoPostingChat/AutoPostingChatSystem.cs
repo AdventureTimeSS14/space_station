@@ -19,6 +19,7 @@ using Robust.Shared.Audio.Systems;
 using System.Timers;
 using System.ComponentModel;
 using System.Linq;
+//using System.Random;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 public sealed class AutoPostingChatSystem : EntitySystem
@@ -28,6 +29,8 @@ public sealed class AutoPostingChatSystem : EntitySystem
     [Dependency] private readonly ChatSystem _chat = default!;
     private System.Timers.Timer _speakTimer = new();
     private System.Timers.Timer _emoteTimer = new();
+    private readonly Random _random = new Random(); 
+    //private static readonly Random _random = new Random();
 
     public override void Initialize()
     {
@@ -58,34 +61,32 @@ public sealed class AutoPostingChatSystem : EntitySystem
 
     private void OnComponentStartup(EntityUid uid, AutoPostingChatComponent component, ComponentStartup args)
     {
-       // Проверяем наличие компонента AutoPostingChatComponent на сущности
-       if (component == null)
+        if (component == null)
         {
             Log.Debug("AutoPostingChatComponent отсутствует на сущности с UID: " + uid);
             return;
         }
 
-        _speakTimer.Interval = component.SpeakTimerRead; // 8000 миллисекунд = 8 секунд по умолчанию
+        _speakTimer.Interval = component.RandomIntervalSpeak ? _random.Next(1000, 30001) : component.SpeakTimerRead;
         _speakTimer.Elapsed += (sender, eventArgs) =>
         {
-            // Проверяем, что данные в компоненте были обновлены
             if (component.PostingMessageSpeak != null)
             {
                 _chat.TrySendInGameICMessage(uid, component.PostingMessageSpeak, InGameICChatType.Speak, ChatTransmitRange.Normal);
             }
-            _speakTimer.Interval = component.SpeakTimerRead;
+            _speakTimer.Interval = component.RandomIntervalSpeak ? _random.Next(1000, 30001) : component.SpeakTimerRead;
         };
-        _emoteTimer.Interval = component.EmoteTimerRead; // 9000 миллисекунд = 9 секунд по умолчанию
+
+        _emoteTimer.Interval = component.RandomIntervalEmote ? _random.Next(1000, 30001) : component.EmoteTimerRead;
         _emoteTimer.Elapsed += (sender, eventArgs) =>
         {
-            // Проверяем, что данные в компоненте были обновлены
             if (component.PostingMessageEmote != null)
             {
                 _chat.TrySendInGameICMessage(uid, component.PostingMessageEmote, InGameICChatType.Emote, ChatTransmitRange.Normal);
             }
-            _emoteTimer.Interval = component.EmoteTimerRead;
+            _emoteTimer.Interval = component.RandomIntervalEmote ? _random.Next(1000, 30001) : component.EmoteTimerRead;
         };
-        // Запускаем таймеры
+
         _speakTimer.Start();
         _emoteTimer.Start();
     }
