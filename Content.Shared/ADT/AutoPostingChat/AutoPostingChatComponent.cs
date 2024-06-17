@@ -11,26 +11,28 @@ public sealed partial class AutoPostingChatComponent : Component
     /// Whether this destination is shown in the gateway ui.
     /// If you are making a gateway for an admeme set this once you are ready for players to select it.
     /// </summary>
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    [DataField("randomIntervalSpeak"), ViewVariables(VVAccess.ReadWrite)]
     public bool RandomIntervalSpeak = false;
 
     /// <summary>
     /// Whether this destination is shown in the gateway ui.
     /// If you are making a gateway for an admeme set this once you are ready for players to select it.
     /// </summary>
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    [DataField("randomIntervalEmote"), ViewVariables(VVAccess.ReadWrite)]
     public bool RandomIntervalEmote = false;
 
     /// <summary>
     /// The interval in milliseconds between automatic speech messages.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
+    [DataField("speakTimer")]
     public int SpeakTimerRead = 8000;
 
     /// <summary>
     /// The interval in milliseconds between automatic emote messages.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
+    [DataField("emoteTimer")]
     public int EmoteTimerRead = 9000;
 
     /// <summary>
