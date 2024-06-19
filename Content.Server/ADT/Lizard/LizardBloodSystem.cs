@@ -1,5 +1,5 @@
 using Content.Server.Actions;
-using Content.Server.Bed.Sleep;
+using Content.Shared.Bed.Sleep;
 using Content.Server.Body.Systems;
 using Content.Server.Chemistry.Components;
 using Content.Server.Chemistry.EntitySystems;
@@ -106,12 +106,12 @@ namespace Content.Server.ADT.Lizard
 
             var curTime = _gameTiming.CurTime;
 
-            if (curTime < component.CoolDownEnd)
+            if (curTime < component.CooldownEnd)
             {
                 return false;
             }
 
-            component.CoolDownEnd = curTime + component.Cooldown;
+            component.CooldownEnd = curTime + component.Cooldown;
             return true;
         }
 

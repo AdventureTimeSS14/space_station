@@ -1,6 +1,5 @@
 using Content.Server.Power.Components;
 using Content.Shared.SimpleStation14.Silicon.Systems;
-using Content.Server.Bed.Sleep;
 using Content.Shared.Bed.Sleep;
 using Content.Server.Sound.Components;
 using Content.Server.SimpleStation14.Silicon.Charge;
@@ -74,7 +73,7 @@ public sealed class SiliconDeathSystem : EntitySystem
 
     private void SiliconUnDead(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, BatteryComponent? batteryComp, EntityUid batteryUid)
     {
-        _sleep.TryWaking(uid, null, true);
+        _sleep.TryWaking(uid, true, null);
 
         siliconDeadComp.Dead = false;
 
