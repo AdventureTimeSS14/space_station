@@ -8,15 +8,13 @@ namespace Content.Shared.ADT.AutoPostingChat;
 public sealed partial class AutoPostingChatComponent : Component
 {
     /// <summary>
-    /// Whether this destination is shown in the gateway ui.
-    /// If you are making a gateway for an admeme set this once you are ready for players to select it.
+    ///Sets a random interval after each iteration of spoken messages
     /// </summary>
     [DataField("randomIntervalSpeak"), ViewVariables(VVAccess.ReadWrite)]
     public bool RandomIntervalSpeak = false;
 
     /// <summary>
-    /// Whether this destination is shown in the gateway ui.
-    /// If you are making a gateway for an admeme set this once you are ready for players to select it.
+    /// Sets a random interval after each iteration of spoken emotions
     /// </summary>
     [DataField("randomIntervalEmote"), ViewVariables(VVAccess.ReadWrite)]
     public bool RandomIntervalEmote = false;
