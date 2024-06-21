@@ -14,6 +14,27 @@ public sealed partial class AutoPostingChatComponent : Component
     public bool RandomIntervalSpeak = false;
 
     /// <summary>
+    /// The interval in milliseconds between automatic speech messages.
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite)]
+    [DataField("maxRandomIntervalSpeak")]
+    public int MaxRandomIntervalSpeak = 30;
+
+    /// <summary>
+    /// The interval in milliseconds between automatic speech messages.
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite)]
+    [DataField("minRandomIntervalSpeak")]
+    public int MinRandomIntervalSpeak = 1;
+
+    /// <summary>
+    /// The interval in milliseconds between automatic speech messages.
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite)]
+    [DataField("speakTimer")]
+    public int SpeakTimerRead = 8;
+
+    /// <summary>
     /// Sets a random interval after each iteration of spoken emotions
     /// </summary>
     [DataField("randomIntervalEmote"), ViewVariables(VVAccess.ReadWrite)]
@@ -23,25 +44,32 @@ public sealed partial class AutoPostingChatComponent : Component
     /// The interval in milliseconds between automatic speech messages.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    [DataField("speakTimer")]
-    public int SpeakTimerRead = 8000;
+    [DataField("maxRandomIntervalEmote")]
+    public int MaxRandomIntervalEmote = 30;
+
+    /// <summary>
+    /// The interval in milliseconds between automatic speech messages.
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite)]
+    [DataField("minRandomIntervalEmote")]
+    public int MinRandomIntervalEmote = 1;
 
     /// <summary>
     /// The interval in milliseconds between automatic emote messages.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("emoteTimer")]
-    public int EmoteTimerRead = 9000;
+    public int EmoteTimerRead = 9;
 
     /// <summary>
     /// The message that will be automatically spoken by the entity.
     /// </summary>
     [DataField("speakMessage")]
-    public string? PostingMessageSpeak = "";
+    public List<string> PostingMessageSpeak = new List<string>();
 
     /// <summary>
     /// The message that will be automatically emotes by the entity.
     /// </summary>
     [DataField("emoteMessage")]
-    public string? PostingMessageEmote = "";
+    public List<string> PostingMessageEmote = new List<string>();
 }
