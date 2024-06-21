@@ -56,7 +56,7 @@
         - IdCard
     accessLevels: [
       "SpaceSecOfficial",
-      "SpaceSecMaintance",
+      "SpaceSecMaintenance",
       "SpaceSecSecurity",
       "SpaceSecArmory",
       "SpaceSecExternal",
