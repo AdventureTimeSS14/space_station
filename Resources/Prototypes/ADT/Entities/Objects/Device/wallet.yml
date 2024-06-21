@@ -12,6 +12,8 @@
     - state: wallet_closed
     - state: wallet_open
       map: ["openLayer"]
+    - state: wallet_cash
+      map: ["wallet_cash"]
   - type: SwitchableWeapon
     openSound: "/Audio/Items/flashlight_on.ogg"
     closeSound: "/Audio/Items/flashlight_off.ogg"
