@@ -1,13 +1,12 @@
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Content.Server.Chat.Systems;
-using Content.Server.Language;
 using Content.Shared.Corvax.CCCVars;
 using Content.Shared.Corvax.TTS;
 using Content.Shared.GameTicking;
-using Content.Shared.Language;
 using Robust.Shared.Configuration;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Random;
 
 namespace Content.Server.Corvax.TTS;
 
@@ -18,7 +17,24 @@ public sealed partial class TTSSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly TTSManager _ttsManager = default!;
     [Dependency] private readonly SharedTransformSystem _xforms = default!;
-    [Dependency] private readonly LanguageSystem _language = default!;
+    [Dependency] private readonly IRobustRandom _rng = default!;
+
+    private readonly List<string> _sampleText =
+        new()
+        {
+            "Съешь же ещё этих мягких французских булок, да выпей чаю.",
+            "Клоун, прекрати разбрасывать банановые кожурки офицерам под ноги!",
+            "Капитан, вы уверены что хотите назначить клоуна на должность главы персонала?",
+            "Эс Бэ! Тут человек в сером костюме, с тулбоксом и в маске! Помогите!!",
+            "Учёные, тут странная аномалия в баре! Она уже съела мима!",
+            "Я надеюсь что инженеры внимательно следят за сингулярностью...",
+            "Вы слышали эти странные крики в техах? Мне кажется туда ходить небезопасно.",
+            "Вы не видели Гамлета? Мне кажется он забегал к вам на кухню.",
+            "Здесь есть доктор? Человек умирает от отравленного пончика! Нужна помощь!",
+            "Вам нужно согласие и печать квартирмейстера, если вы хотите сделать заказ на партию дробовиков.",
+            "Возле эвакуационного шаттла разгерметизация! Инженеры, нам срочно нужна ваша помощь!",
+            "Бармен, налей мне самого крепкого вина, которое есть в твоих запасах!"
+        };
 
     private const int MaxMessageChars = 100 * 2; // same as SingleBubbleCharLimit * 2
     private bool _isEnabled = false;
@@ -31,7 +47,7 @@ public sealed partial class TTSSystem : EntitySystem
         SubscribeLocalEvent<TTSComponent, EntitySpokeEvent>(OnEntitySpoke);
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestartCleanup);
 
-        SubscribeNetworkEvent<RequestGlobalTTSEvent>(OnRequestGlobalTTS);
+        SubscribeNetworkEvent<RequestPreviewTTSEvent>(OnRequestPreviewTTS);
     }
 
     private void OnRoundRestartCleanup(RoundRestartCleanupEvent ev)
@@ -39,14 +55,14 @@ public sealed partial class TTSSystem : EntitySystem
         _ttsManager.ResetCache();
     }
 
-    private async void OnRequestGlobalTTS(RequestGlobalTTSEvent ev, EntitySessionEventArgs args)
+    private async void OnRequestPreviewTTS(RequestPreviewTTSEvent ev, EntitySessionEventArgs args)
     {
         if (!_isEnabled ||
-            ev.Text.Length > MaxMessageChars ||
             !_prototypeManager.TryIndex<TTSVoicePrototype>(ev.VoiceId, out var protoVoice))
             return;
 
-        var soundData = await GenerateTTS(ev.Text, protoVoice.Speaker);
+        var previewText = _rng.Pick(_sampleText);
+        var soundData = await GenerateTTS(previewText, protoVoice.Speaker);
         if (soundData is null)
             return;
 
@@ -70,51 +86,30 @@ public sealed partial class TTSSystem : EntitySystem
 
         if (args.ObfuscatedMessage != null)
         {
-            HandleWhisper(uid, args.Message, args.ObfuscatedMessage, args.LanguageEncodedMessage, protoVoice.Speaker, args.Language);
+            HandleWhisper(uid, args.Message, args.ObfuscatedMessage, protoVoice.Speaker);
             return;
         }
 
-        HandleSay(uid, args.Message, args.LanguageEncodedMessage, protoVoice.Speaker, args.Language);
+        HandleSay(uid, args.Message, protoVoice.Speaker);
     }
 
-    private async void HandleSay(EntityUid uid, string message, string encMessage, string speaker, LanguagePrototype language)
+    private async void HandleSay(EntityUid uid, string message, string speaker)
     {
         var soundData = await GenerateTTS(message, speaker);
         if (soundData is null) return;
-
-        var encSoundData = await GenerateTTS(encMessage, speaker);
-        if (encSoundData is null) return;
-
-        var soundTtsEvent = new PlayTTSEvent(soundData, GetNetEntity(uid));
-        var encSoundTtsEvent = new PlayTTSEvent(encSoundData, GetNetEntity(uid));
-
-        var receptions = Filter.Pvs(uid).Recipients;
-
-        foreach (var session in receptions)
-        {
-            if (!session.AttachedEntity.HasValue) continue;
-            var canUnderstand = _language.CanUnderstand(session.AttachedEntity.Value, language);
-
-            RaiseNetworkEvent(canUnderstand ? soundTtsEvent : encSoundTtsEvent,
-                session);
-        }
+        RaiseNetworkEvent(new PlayTTSEvent(soundData, GetNetEntity(uid)), Filter.Pvs(uid));
     }
 
-    private async void HandleWhisper(EntityUid uid, string message, string obfMessage, string encMessage, string speaker, LanguagePrototype language)
+    private async void HandleWhisper(EntityUid uid, string message, string obfMessage, string speaker)
     {
-
         var fullSoundData = await GenerateTTS(message, speaker, true);
         if (fullSoundData is null) return;
 
         var obfSoundData = await GenerateTTS(obfMessage, speaker, true);
         if (obfSoundData is null) return;
 
-        var encSoundData = await GenerateTTS(encMessage, speaker, true);
-        if (encSoundData is null) return;
-
         var fullTtsEvent = new PlayTTSEvent(fullSoundData, GetNetEntity(uid), true);
         var obfTtsEvent = new PlayTTSEvent(obfSoundData, GetNetEntity(uid), true);
-        var encTtsEvent = new PlayTTSEvent(encSoundData, GetNetEntity(uid), true);
 
         // TODO: Check obstacles
         var xformQuery = GetEntityQuery<TransformComponent>();
@@ -128,12 +123,7 @@ public sealed partial class TTSSystem : EntitySystem
             if (distance > ChatSystem.VoiceRange * ChatSystem.VoiceRange)
                 continue;
 
-            var canUnderstand = _language.CanUnderstand(session.AttachedEntity.Value, language);
-
-            //TODO xTray Для тех кто далеко нужно сгенерировать отдельный звук с помехами
-            RaiseNetworkEvent(distance > ChatSystem.WhisperClearRange ? canUnderstand ?  obfTtsEvent : encTtsEvent
-                : canUnderstand ? fullTtsEvent : encTtsEvent,
-                session);
+            RaiseNetworkEvent(distance > ChatSystem.WhisperClearRange ? obfTtsEvent : fullTtsEvent, session);
         }
     }
 

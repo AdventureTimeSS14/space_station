@@ -1,19 +1,11 @@
-using System.Diagnostics.CodeAnalysis;
-using System.IO;
-using System.Linq;
+using Content.Shared.Chat;
 using Content.Shared.Corvax.CCCVars;
 using Content.Shared.Corvax.TTS;
-using Content.Shared.Physics;
-using Robust.Client.GameObjects;
-using Robust.Client.Graphics;
 using Robust.Client.ResourceManagement;
 using Robust.Shared.Audio;
- using Robust.Shared.Audio.Systems;
- using Robust.Shared.Configuration;
+using Robust.Shared.Audio.Systems;
+using Robust.Shared.Configuration;
 using Robust.Shared.ContentPack;
-using Robust.Shared.Map;
-using Robust.Shared.Physics;
-using Robust.Shared.Physics.Systems;
 using Robust.Shared.Player;
 using Robust.Shared.Utility;
 
@@ -33,7 +25,17 @@ public sealed class TTSSystem : EntitySystem
     private readonly MemoryContentRoot _contentRoot = new();
     private static readonly ResPath Prefix = ResPath.Root / "TTS";
 
-    private float _volume = 0.0f;
+    /// <summary>
+    /// Reducing the volume of the TTS when whispering. Will be converted to logarithm.
+    /// </summary>
+    private const float WhisperFade = 4f;
+
+    /// <summary>
+    /// The volume at which the TTS sound will not be heard.
+    /// </summary>
+    private const float MinimalVolume = -10f;
+
+    private float _volume = 0f;
     private int _fileIdx = 0;
 
     public override void Initialize()
@@ -65,9 +67,7 @@ public sealed class TTSSystem : EntitySystem
     {
         _sawmill.Debug($"Play TTS audio {ev.Data.Length} bytes from {ev.SourceUid} entity");
 
-        var volume = _volume;
-        if (ev.IsWhisper)
-            volume -= 4;
+        var volume = AdjustVolume(ev.IsWhisper);
 
         var filePath = new ResPath($"{_fileIdx++}.ogg");
         _contentRoot.AddOrUpdateFile(filePath, ev.Data);
@@ -77,7 +77,7 @@ public sealed class TTSSystem : EntitySystem
         if (ev.SourceUid != null)
         {
             var sourceUid = GetEntity(ev.SourceUid.Value);
-            _audio.PlayEntity(soundPath, Filter.Local(), sourceUid, false, audioParams); // recipient arg ignored on client
+            _audio.PlayEntity(soundPath, new EntityUid(), sourceUid); // recipient arg ignored on client
         }
         else
         {
@@ -85,5 +85,17 @@ public sealed class TTSSystem : EntitySystem
         }
 
         _contentRoot.RemoveFile(filePath);
+    }
+
+    private float AdjustVolume(bool isWhisper)
+    {
+        var volume = MinimalVolume + SharedAudioSystem.GainToVolume(_volume);
+
+        if (isWhisper)
+        {
+            volume -= SharedAudioSystem.GainToVolume(WhisperFade);
+        }
+
+        return volume;
     }
 }

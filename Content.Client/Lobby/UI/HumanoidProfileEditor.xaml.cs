@@ -1153,6 +1153,13 @@ namespace Content.Client.Lobby.UI
             ReloadPreview();
             SetDirty();
         }
+        // Corvax-TTS-Start
+        private void SetVoice(string newVoice)
+        {
+            Profile = Profile?.WithVoice(newVoice);
+            IsDirty = true;
+        }
+        // Corvax-TTS-End
 
         private void SetSpecies(string newSpecies)
         {

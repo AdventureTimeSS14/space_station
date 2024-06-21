@@ -4,6 +4,7 @@ using Robust.Client;
 using Robust.Client.Player;
 using Robust.Shared.Network;
 using Robust.Shared.Utility;
+using Content.Client.Corvax.Sponsors;
 
 namespace Content.Client.Lobby
 {
@@ -17,7 +18,6 @@ namespace Content.Client.Lobby
         [Dependency] private readonly IClientNetManager _netManager = default!;
         [Dependency] private readonly IBaseClient _baseClient = default!;
         [Dependency] private readonly IPlayerManager _playerManager = default!;
-
         public event Action? OnServerDataLoaded;
 
         public GameSettings Settings { get; private set; } = default!;
