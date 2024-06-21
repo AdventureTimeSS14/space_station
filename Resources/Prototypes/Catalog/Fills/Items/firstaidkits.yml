@@ -89,13 +89,9 @@
       - id: MedicatedSuture
         amount: 2
       - id: RegenerativeMesh
-        amount: 2
-      - id: Bloodpack
-        amount: 2
-      - id: BurnAutoInjector
+        amount: 1
       - id: RadAutoInjector
       - id: AntiPoisonMedipen
-      - id: BruteAutoInjector
 
 - type: entity
   id: MedkitCombatFilled

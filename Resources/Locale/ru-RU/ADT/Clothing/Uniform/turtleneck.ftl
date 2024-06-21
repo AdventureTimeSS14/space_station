@@ -179,3 +179,9 @@ ent-ADTCapJumpsuitWarm = водолазка капитана
     
 ent-ADTCapJumpskirtWarm = { ent-ADTCapJumpsuitWarm }
     .desc = { ent-ADTCapJumpsuitWarm.desc }
+
+    
+ent-ClothingUniformJumpsuitBlueshieldTurtleneck = водолазка офицера синего щита
+    .desc = Белая удобная водолазка Офицера Синего Щита с пришитыми золотыми погонами и ярким именным бейджиком. К сожалению, если вы её наденете, это не будет значить, что вам дадут отпуск.
+ent-ClothingUniformJumpskirtBlueshieldTurtleneck = юбка-водолазка офицера синего щита
+    .desc = Белая удобная водолазка с юбкой для Офицера Синего Щита с пришитыми золотыми погонами и ярким именным бейджиком. К сожалению, если вы её наденете, это не будет значить, что вам дадут отпуск.

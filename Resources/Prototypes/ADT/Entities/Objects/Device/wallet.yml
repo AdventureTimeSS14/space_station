@@ -12,8 +12,6 @@
     - state: wallet_closed
     - state: wallet_open
       map: ["openLayer"]
-    - state: wallet_cash
-      map: ["wallet_cash"]
   - type: SwitchableWeapon
     openSound: "/Audio/Items/flashlight_on.ogg"
     closeSound: "/Audio/Items/flashlight_off.ogg"
@@ -31,13 +29,6 @@
         - ADTSpaceCash
     grid:
     - 0,0,3,1
-    storedRotation: 90
-  #- type: ItemMapper
-   # mapLayers:
-      #folder-overlay-wallet:
-       # whitelist:
-          #tags:
-        #  - ADTSpaceCash
   - type: Appearance
 
 - type: entity

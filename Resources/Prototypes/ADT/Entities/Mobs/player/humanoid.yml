@@ -276,7 +276,7 @@
       - NamesFirstMilitaryUSSP
       - NamesLastMilitaryUSSP
     - type: InitialInfectedExempt
-  
+
 #Офицер
 - type: entity
   id: ADTRandomHumanoidSpawnerUSSPOfficer

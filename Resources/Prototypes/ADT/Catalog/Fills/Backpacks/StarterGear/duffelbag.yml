@@ -7,7 +7,7 @@
     contents:
       - id: BoxSurvivalMedical
       - id: JawsOfLife # Парамед теперь без МЩ и может быть антагом
-      - id: SpaceCash500
+      - id: ADTWalletFilled500
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
@@ -129,7 +129,7 @@
       - id: BoxSurvivalMedical
       - id: BodyBag_Folded
       - id: ADTFootTag
-      - id: SpaceCash500
+      - id: ADTWalletFilled500
 
 - type: entity
   noSpawn: true
@@ -141,5 +141,17 @@
         - id: BoxSurvival
         - id: RubberStampTrader
         - id: AppraisalTool
-        - id: SpaceCash500
+        - id: ADTWalletFilled500
         - id: ADTClothingOuterCoatTrader
+
+#Blueshield
+- type: entity
+  parent: ADTClothingBackpackDuffelBlueshield
+  id: ADTClothingBackpackDuffelBlueshieldFilled
+  suffix: filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalSecurity
+      - id: SpaceCash500
+      - id: Flash

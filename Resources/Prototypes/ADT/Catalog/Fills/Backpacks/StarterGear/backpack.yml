@@ -41,7 +41,7 @@
         - id: EmergencyMedipen
 
 
-        #Paramedic
+#Paramedic
 
 - type: entity
   noSpawn: true
@@ -52,7 +52,19 @@
     contents:
       - id: BoxSurvivalMedical
       - id: JawsOfLife
+      - id: ADTWalletFilled500
+
+#Blueshield
+- type: entity
+  parent: ADTClothingBlueshieldBackpack
+  id: ADTClothingBlueshieldBackpackFilled
+  suffix: filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalSecurity
       - id: SpaceCash500
+      - id: Flash
 
 - type: entity
   parent: ClothingBackpack
@@ -174,7 +186,7 @@
         amount: 1
       - id: ADTBookInvestigator
       - id: ADTRubberStampinvestigator
-      - id: SpaceCash500
+      - id: ADTWalletFilled500
 
 - type: entity
   #noSpawn: true
@@ -197,7 +209,7 @@
         amount: 1
       - id: ADTBookInvestigator
       - id: ADTRubberStampinvestigator
-      - id: SpaceCash500
+      - id: ADTWalletFilled500
 
 - type: entity
   noSpawn: true
@@ -209,7 +221,7 @@
       - id: BoxSurvivalMedical
       - id: BodyBag_Folded
       - id: ADTFootTag
-      - id: SpaceCash500
+      - id: ADTWalletFilled500
 
 - type: entity
   parent: ClothingBackpackERTSecurity
@@ -228,13 +240,13 @@
         - id: WeaponDisabler
         - id: Stunbaton
         - id: BoxSurvivalSecurity
-        - id: BlueShieldsuit
-        - id: SpaceCash1000
+        #- id: BlueShieldsuit
+        - id: ADTWalletFilled1000
         - id: OxygenTankFilled
     - type: Sprite
       sprite: ADT/Clothing/Back/blueshield_backpack.rsi
 
-#СССП штуки 
+#СССП штуки
 - type: entity
   noSpawn: true
   parent: ADTClothingBackpackOR40L
@@ -297,15 +309,13 @@
         - id: CombatMedipen
           amount: 3
         - id: OmnizineChemistryBottle
-          amount: 2
         - id: EphedrineChemistryBottle
-          amount: 2
         - id: ADTCombatHypo
         - id: DoubleEmergencyOxygenTankFilled
         - id: Zipties
-          amount: 3
+          amount: 2
         - id: ADTMagazineSR3M
-          amount: 4
+          amount: 3
         - id: MagazineBoxLightRifleRubber
 
 - type: entity
@@ -321,13 +331,11 @@
         - id: CombatMedipen
           amount: 2
         - id: OmnizineChemistryBottle
-          amount: 2
         - id: EphedrineChemistryBottle
-          amount: 2
         - id: ADTCombatHypo
         - id: DoubleEmergencyOxygenTankFilled
         - id: Zipties
-          amount: 3
+          amount: 2
         - id: ADTMagazineUSSPLMG
           amount: 2
 
@@ -348,7 +356,7 @@
           amount: 2
         - id: SyndiHypo
         - id: OmnizineChemistryBottle
-          amount: 4     
+          amount: 4
 
 - type: entity
   id: ADTWardrobeKBSFilled
