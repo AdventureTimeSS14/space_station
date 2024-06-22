@@ -622,6 +622,7 @@
     allowMovement: true
     name: ghost-role-information-hamlet-name
     description: ghost-role-information-hamlet-description
+    rules: ghost-role-information-nonantagonist-rules
   - type: GhostTakeoverAvailable
   - type: Inventory
     templateId: monkey
@@ -652,6 +653,7 @@
     - CannotSuicide
     - Hamster
     - VimPilot
+    - ChefPilot
   - type: StealTarget
     stealGroup: AnimalHamlet
   - type: LanguageSpeaker # Frontier
@@ -753,6 +755,7 @@
     prob: 0.25
     name: ghost-role-information-willow-name
     description: ghost-role-information-willow-description
+    rules: ghost-role-information-nonantagonist-rules
   - type: GhostTakeoverAvailable
   - type: Loadout
     prototypes: [ BoxingKangarooGear ]
@@ -823,6 +826,7 @@
   - type: GhostRole
     name: ghost-role-information-smile-name
     description: ghost-role-information-smile-description
+    rules: ghost-role-information-nonantagonist-rules
   - type: Grammar
     attributes:
       proper: true
@@ -841,6 +845,7 @@
     allowMovement: true
     name: ghost-role-information-punpun-name
     description: ghost-role-information-punpun-description
+    rules: ghost-role-information-nonantagonist-rules
   - type: GhostTakeoverAvailable
   - type: Butcherable
     butcheringType: Spike
@@ -883,6 +888,7 @@
 #    allowMovement: true
 #    name: ghost-role-information-tropico-name
 #    description: ghost-role-information-tropico-description
+#    rules: ghost-role-information-nonantagonist-rules
 #  - type: GhostTakeoverAvailable
   - type: Tag
     tags:

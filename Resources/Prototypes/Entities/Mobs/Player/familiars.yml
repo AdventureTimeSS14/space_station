@@ -8,9 +8,9 @@
     makeSentient: true
     allowMovement: true
     allowSpeech: true
-    name: Ремилия, фамильяр священика
-    description: Повинуйся своему хозяину. Ешьте фрукты.
-    rules: Вы умная фруктовая летучая мышь. Следуйте за священиком повсюду. Не создавайте никаких проблем, если только капеллан не скажет вам об этом.
+    name: ghost-role-information-remilia-name
+    description: ghost-role-information-remilia-description
+    rules: ghost-role-information-familiar-rules
   - type: GhostTakeoverAvailable
   - type: Grammar
     attributes:
@@ -48,7 +48,7 @@
     allowSpeech: true
     name: ghost-role-information-cerberus-name
     description: ghost-role-information-cerberus-description
-    rules: ghost-role-information-cerberus-rules
+    rules: ghost-role-information-familiar-rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable

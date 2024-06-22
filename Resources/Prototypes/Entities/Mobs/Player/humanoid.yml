@@ -12,7 +12,7 @@
   parent: EventHumanoid
   components:
     - type: MindShield
-    - type: InitialInfectedExempt
+    - type: AntagImmune
 
 ## Death Squad
 
@@ -45,6 +45,7 @@
     - type: GhostRole
       name: ghost-role-information-Death-Squad-name
       description: ghost-role-information-Death-Squad-description
+      rules: ghost-role-information-Death-Squad-rules
       raffle:
         settings: short
       requirements:
@@ -91,6 +92,7 @@
     - type: GhostRole
       name: ghost-role-information-ert-leader-name
       description: ghost-role-information-ert-leader-description
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
       requirements:
@@ -117,7 +119,6 @@
       state: ertleadereva
     - type: RandomHumanoidSpawner
       settings: ERTLeaderEVA
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -128,6 +129,7 @@
     - type: GhostRole
       name: ghost-role-information-ert-leader-name
       description: ghost-role-information-ert-leader-description
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
       requirements:
@@ -191,6 +193,7 @@
     - type: GhostRole
       name: ghost-role-information-ert-leader-name
       description: ghost-role-information-ert-leader-description
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
       requirements:
@@ -226,6 +229,7 @@
     - type: GhostRole
       name: ghost-role-information-ert-chaplain-name
       description: ghost-role-information-ert-chaplain-description
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
     - type: RandomMetadata
@@ -254,6 +258,7 @@
     - type: GhostRole
       name: ghost-role-information-ert-chaplain-name
       description: ghost-role-information-ert-chaplain-description
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
     - type: Loadout
@@ -290,6 +295,7 @@
     - type: GhostRole
       name: ghost-role-information-ert-janitor-name
       description: ghost-role-information-ert-janitor-description
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
       requirements:
@@ -329,6 +335,7 @@
     - type: GhostRole
       name: ghost-role-information-ert-janitor-name
       description: ghost-role-information-ert-janitor-description
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
       requirements:
@@ -369,6 +376,7 @@
     - type: GhostRole
       name: ghost-role-information-ert-engineer-name
       description: ghost-role-information-ert-engineer-description
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
       requirements:
@@ -405,6 +413,7 @@
     - type: GhostRole
       name: ghost-role-information-ert-engineer-name
       description: ghost-role-information-ert-engineer-description
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
       requirements:
@@ -478,6 +487,7 @@
     - type: GhostRole
       name: ghost-role-information-ert-security-name
       description: ghost-role-information-ert-security-description
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
       requirements:
@@ -517,6 +527,7 @@
     - type: GhostRole
       name: ghost-role-information-ert-security-name
       description: ghost-role-information-ert-security-description
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
       requirements:
@@ -596,6 +607,7 @@
     - type: GhostRole
       name: ghost-role-information-ert-security-name
       description: ghost-role-information-ert-security-description
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
       requirements:
@@ -634,6 +646,7 @@
     - type: GhostRole
       name: ghost-role-information-ert-medical-name
       description: ghost-role-information-ert-medical-description
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
       requirements:
@@ -670,6 +683,7 @@
     - type: GhostRole
       name: ghost-role-information-ert-medical-name
       description: ghost-role-information-ert-medical-description
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
       requirements:
@@ -724,7 +738,6 @@
       state: cburn
     - type: RandomHumanoidSpawner
       settings: CBURNAgent
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -737,6 +750,7 @@
     - type: GhostRole
       name: ghost-role-information-cburn-agent-name
       description: ghost-role-information-cburn-agent-description
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
       requirements:
@@ -771,6 +785,7 @@
     - type: GhostRole
       name: ghost-role-information-centcom-official-name
       description: ghost-role-information-centcom-official-description
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: default
       requirements:
@@ -848,6 +863,7 @@
     - type: GhostRole
       name: ghost-role-information-cluwne-name
       description: ghost-role-information-cluwne-description
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: default
     - type: Cluwne
@@ -889,7 +905,7 @@
     - type: GhostRole
       name: ghost-role-information-lost-cargo-technical-name
       description: ghost-role-information-lost-cargo-technical-description
-      rules: ghost-role-information-lost-cargo-technical-rules
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
     - type: Loadout
@@ -940,7 +956,7 @@
     - type: GhostRole
       name: ghost-role-information-clown-troupe-name
       description: ghost-role-information-clown-troupe-description
-      rules: ghost-role-information-clown-troupe-rules
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
     - type: Loadout
@@ -990,7 +1006,7 @@
     - type: GhostRole
       name: ghost-role-information-traveling-chef-name
       description: ghost-role-information-traveling-chef-description
-      rules: ghost-role-information-traveling-chef-rules
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
     - type: Loadout
@@ -1050,7 +1066,7 @@
     - type: GhostRole
       name: ghost-role-information-disaster-victim-name
       description: ghost-role-information-disaster-victim-description
-      rules: ghost-role-information-disaster-victim-rules
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: default
 
@@ -1111,7 +1127,7 @@
     - type: GhostRole
       name: ghost-role-information-syndie-disaster-victim-name
       description: ghost-role-information-syndie-disaster-victim-description
-      rules: ghost-role-information-syndie-disaster-victim-rules
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
     - type: Loadout

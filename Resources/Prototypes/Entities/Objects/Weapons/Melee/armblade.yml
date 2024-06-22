@@ -12,7 +12,7 @@
     attackRate: 1
     damage:
       types:
-        Slash: 15
+        Slash: 25
         Piercing: 15
   - type: Item
     size: Ginormous
