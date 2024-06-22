@@ -113,6 +113,12 @@ public sealed partial class RevenantComponent : Component
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("defileEffectChance")]
     public float DefileEffectChance = 0.5f;
+
+    /// <summary>
+    /// Defile sound
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite), DataField("defileSound")]
+    public string DefileSound = "/Audio/ADT/revenant-defile.ogg";
     #endregion
 
     #region Overload Lights Ability
@@ -141,6 +147,12 @@ public sealed partial class RevenantComponent : Component
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("overloadZapRadius")]
     public float OverloadZapRadius = 4.5f;
+
+    /// <summary>
+    /// Overload Lights sound
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite), DataField("overloadSound")]
+    public string OverloadSound = "/Audio/ADT/revenant-blight.ogg";
     #endregion
 
     #region Blight Ability
@@ -198,6 +210,12 @@ public sealed partial class RevenantComponent : Component
     /// </summary>
     [DataField]
     public EntityWhitelist? MalfunctionBlacklist;
+
+    /// <summary>
+    /// Malfunction sound
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite), DataField("malfSound")]
+    public string MalfSound = "/Audio/ADT/revenant-malf.ogg";
     #endregion
 
     #region Hysteria Ability
@@ -226,7 +244,7 @@ public sealed partial class RevenantComponent : Component
     /// How long people seeing hallucinations
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("hysteriaDuration")]
-    public TimeSpan HysteriaDuration = TimeSpan.FromSeconds(155);
+    public TimeSpan HysteriaDuration = TimeSpan.FromSeconds(35);
 
     /// <summary>
     /// Hallucinations prototype
@@ -256,7 +274,7 @@ public sealed partial class RevenantComponent : Component
     /// the second corresponds to the amount of time the entity is made solid.
     /// </summary>
     [DataField("smokeDebuffs")]
-    public Vector2 SmokeDebuffs = new(4, 12);
+    public Vector2 SmokeDebuffs = new(2, 7);
 
     /// <summary>
     /// Smoke duration

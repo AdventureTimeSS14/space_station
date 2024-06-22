@@ -44,3 +44,10 @@
   components:
     - type: SizeAttribute
       short: true
+
+- type: trait
+  id: PotentialPoltergeist
+  name: trait-poltergeist-name
+  description: trait-poltergeist-desc
+  components:
+    - type: PotentialPoltergeist

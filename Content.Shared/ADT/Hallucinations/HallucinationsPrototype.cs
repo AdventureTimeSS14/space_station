@@ -26,6 +26,18 @@ public sealed partial class HallucinationsPrototype : IPrototype
     [DataField("spawnRate")]
     public float SpawnRate = 15f;
 
-    [DataField("spawnChance")]
-    public float Chance = 0.8f;
+    [DataField("minChance")]
+    public float MinChance = 0.8f;
+
+    [DataField("maxChance")]
+    public float MaxChance = 0.8f;
+
+    [DataField("increasedPerSpawn")]
+    public float IncreaseChance = 0.1f;
+
+    [DataField("maxSpawns")]
+    public int MaxSpawns = 3;
+
+    [DataField("epidemic")]
+    public bool Epicemic = false;
 }

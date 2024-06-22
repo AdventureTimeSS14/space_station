@@ -281,6 +281,10 @@
         visualType: Small
         messages: [ "narcotic-effect-rainbows" ]
         probability: 0.07
+      - !type:GenericStatusEffect
+        key: ADTBlur
+        time: 5
+        type: Add
 
 - type: reagent
   id: ADTLooseDrug

@@ -22,10 +22,10 @@
     bibleUserOnly: true
   - type: Summonable
     specialItem: SpawnPointGhostRemilia
-  - type: ReactionMixer
-    mixMessage: "bible-mixing-success"
-    reactionTypes:
-    - Holy
+  #- type: ReactionMixer
+  #  mixMessage: "bible-mixing-success"
+  #  reactionTypes:
+  #  - Holy
   - type: Sprite
     sprite: Objects/Specific/Chapel/bible.rsi
     state: icon

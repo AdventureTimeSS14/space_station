@@ -25,7 +25,8 @@ public sealed class RandomHumanoidAppearanceSystem : EntitySystem
         }
 
         var profile = HumanoidCharacterProfile.RandomWithSpecies(humanoid.Species);
-
+        if (!component.SameSpecies)
+            profile = HumanoidCharacterProfile.Random();
         _humanoid.LoadProfile(uid, profile, humanoid);
 
         if (component.RandomizeName)

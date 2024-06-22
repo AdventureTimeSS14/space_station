@@ -60,7 +60,8 @@ namespace Content.Shared.Alert
         ADTAlertPolymorph,
         ADTAlertApathy,
         ADTAlertLingRefresh,
-        ADTLevitation
+        ADTLevitation,
+        ADTChaplain,
+        PhantomVessels
     }
-
 }

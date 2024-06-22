@@ -12,3 +12,21 @@
   impactFlash:
     sprite: ADT/Objects/Weapons/Guns/Projectiles/bluelaser.rsi
     state: impact_laser
+
+- type: hitscan
+  id: EctoLaser
+  damage:
+    types:
+      Heat: 10
+  damagePhantom:
+    types:
+      Heat: 50
+  muzzleFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: muzzle_xray
+  travelFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: xray
+  impactFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: impact_xray

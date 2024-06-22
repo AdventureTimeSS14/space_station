@@ -1,0 +1,29 @@
+- type: alert
+  id: PhantomVessels
+  icons:
+  - sprite: /Textures/ADT/Interface/vessels-alert.rsi
+    state: fantom0
+  - sprite: /Textures/ADT/Interface/vessels-alert.rsi
+    state: fantom1
+  - sprite: /Textures/ADT/Interface/vessels-alert.rsi
+    state: fantom2
+  - sprite: /Textures/ADT/Interface/vessels-alert.rsi
+    state: fantom3
+  - sprite: /Textures/ADT/Interface/vessels-alert.rsi
+    state: fantom4
+  - sprite: /Textures/ADT/Interface/vessels-alert.rsi
+    state: fantom5
+  - sprite: /Textures/ADT/Interface/vessels-alert.rsi
+    state: fantom6
+  - sprite: /Textures/ADT/Interface/vessels-alert.rsi
+    state: fantom7
+  - sprite: /Textures/ADT/Interface/vessels-alert.rsi
+    state: fantom8
+  - sprite: /Textures/ADT/Interface/vessels-alert.rsi
+    state: fantom9
+  - sprite: /Textures/ADT/Interface/vessels-alert.rsi
+    state: fantom10
+  name: alerts-vessels-name
+  description: alerts-vessels-desc
+  minSeverity: 0
+  maxSeverity: 10

@@ -71,4 +71,7 @@
   id: ADTBluespaceAnomalyCore
 
 - type: Tag
-  id: PhantomStyle
+  id: PhantomFreedom
+
+- type: Tag
+  id: PhantomEctoplasm

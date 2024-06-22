@@ -40,6 +40,7 @@ using Content.Shared.Doors.Components;
 using Content.Shared.Doors.Systems;
 using Content.Shared.Tools.Systems;
 using Content.Shared.Chemistry.Components;
+using Robust.Shared.Map.Components;
 
 namespace Content.Server.Revenant.EntitySystems;
 
@@ -278,12 +279,17 @@ public sealed partial class RevenantSystem
             //chucks shit
             if (items.HasComponent(ent) &&
                 TryComp<PhysicsComponent>(ent, out var phys) && phys.BodyType != BodyType.Static)
-                _throwing.TryThrow(ent, _random.NextAngle().ToWorldVec());
+                _throwing.TryThrow(ent, _random.NextAngle().ToWorldVec(), 15f);
 
             //flicker lights
             if (lights.HasComponent(ent))
                 _ghost.DoGhostBooEvent(ent);
+
+            var toxin = new DamageSpecifier();
+            toxin.DamageDict.Add("Poison", 27);
+            _damage.TryChangeDamage(ent, toxin, origin: uid);
         }
+        _audio.PlayPvs(component.DefileSound, uid);
     }
 
     private void OnOverloadLightsAction(EntityUid uid, RevenantComponent component, RevenantOverloadLightsActionEvent args)
@@ -319,6 +325,8 @@ public sealed partial class RevenantSystem
             var comp = EnsureComp<RevenantOverloadedLightsComponent>(allLight.First());
             comp.Target = ent; //who they gon fire at?
         }
+
+        _audio.PlayPvs(component.OverloadSound, uid);
     }
 
     private void OnBlightAction(EntityUid uid, RevenantComponent component, RevenantBlightActionEvent args)
@@ -352,6 +360,8 @@ public sealed partial class RevenantSystem
                 continue;
 
             _emag.DoEmagEffect(uid, ent); //it does not emag itself. adorable.
+
+            _audio.PlayPvs(component.MalfSound, uid);
         }
     }
 

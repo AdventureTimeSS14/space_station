@@ -244,6 +244,18 @@ public sealed partial class ChatSystem : SharedChatSystem
         if (string.IsNullOrEmpty(message))
             return;
 
+        var ev = new AlternativeSpeechEvent(source, message, desiredType, false, false, null);
+        if (TryProccessRadioMessage(source, message, out var altOutput, out var altChannel) && altChannel != null)
+        {
+            ev.Radio = true;
+            ev.RadioChannel = altChannel.ID;
+            ev.Message = altOutput;
+        }
+            
+        RaiseLocalEvent(source, ev, true);
+        if (ev.Cancelled)
+            return;
+
         // This message may have a radio prefix, and should then be whispered to the resolved radio channel
         if (checkRadioPrefix)
         {
@@ -254,12 +266,6 @@ public sealed partial class ChatSystem : SharedChatSystem
             }
         }
 
-        if (HasComp<AlternativeSpeechComponent>(source))
-        {
-            var ev = new AlternativeSpeechEvent(source, message);
-            RaiseLocalEvent(source, ev, true);
-            return;
-        }
         // Otherwise, send whatever type.
         switch (desiredType)
         {
@@ -1139,11 +1145,19 @@ public sealed class AlternativeSpeechEvent : EntityEventArgs
 {
     public EntityUid Sender;
     public string Message;
+    public InGameICChatType Type;
+    public bool Cancelled = false;
+    public bool Radio = false;
+    public string? RadioChannel;
 
-    public AlternativeSpeechEvent(EntityUid sender, string message)
+    public AlternativeSpeechEvent(EntityUid sender, string message, InGameICChatType type, bool cancelled, bool radio, string? radioChannel)
     {
         Sender = sender;
         Message = message;
+        Type = type;
+        Cancelled = cancelled;
+        Radio = radio;
+        RadioChannel = radioChannel;
     }
 }
 

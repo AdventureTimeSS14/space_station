@@ -6,6 +6,10 @@
             Access="Public"
             VerticalExpand="True"
             HorizontalExpand="True">
+            <SpriteView Access="Public" Name="EntityView"
+                        SetSize="64 64"
+                        OverrideDirection="South">
+            </SpriteView>
             <TextureRect Access="Public" Name="Icon"
                          VerticalExpand="True"
                          HorizontalExpand="True"

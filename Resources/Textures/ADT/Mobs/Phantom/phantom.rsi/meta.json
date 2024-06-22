@@ -13,6 +13,21 @@
             "directions": 4
         },
         {
+            "name": "corporeal",
+            "directions": 4
+        },
+        {
+            "name": "stunned",
+            "delays": [
+                [
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.3
+                ]
+            ]
+        },
+        {
             "name": "haunt",
             "directions": 4
         }

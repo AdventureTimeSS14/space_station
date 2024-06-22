@@ -261,6 +261,7 @@
         - Sheet
         - RawMaterial
         - Ingot
+        - PhantomEctoplasm  # ADT Phantom update
   - type: Lathe
     idleState: icon
     runningState: building
@@ -384,6 +385,14 @@
       - CintaTajTranslator
       - ADTMannequinMale
       - ADTMannequinFemale
+      # ADT Phantom update
+      - GhostRadio
+      - OuijaBoard
+      - EctoRifle
+      - EctoPistol
+      - PsiShield
+      - PhantomHud
+      - EctoShield
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ExplosivePayload

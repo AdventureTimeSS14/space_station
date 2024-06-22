@@ -38,7 +38,7 @@ public sealed partial class ShadowkinComponent : Component
     /// <summary>
     ///     Automatically set to eye color.
     /// </summary>
-    [ViewVariables(VVAccess.ReadOnly)]
+    [ViewVariables(VVAccess.ReadWrite)]
     public Vector3 TintColor = new(0.5f, 0f, 0.5f);
 
     /// <summary>

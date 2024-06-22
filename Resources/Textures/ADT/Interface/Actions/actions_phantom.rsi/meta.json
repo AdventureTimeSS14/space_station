@@ -48,6 +48,57 @@
         },
         {
             "name": "im_here"
+        },
+        {
+            "name": "fant_disarm"
+        },
+        {
+            "name": "fant_harm"
+        },
+        {
+            "name": "fant_help"
+        },
+        {
+            "name": "freedom_cuffs"
+        },
+        {
+            "name": "ghost_claws"
+        },
+        {
+            "name": "intent_set"
+        },
+        {
+            "name": "MS_broke"
+        },
+        {
+            "name": "PDA_news"
+        },
+        {
+            "name": "kukold"
+        },
+        {
+            "name": "helping-hand"
+        },
+        {
+            "name": "help-portal"
+        },
+        {
+            "name": "psycho-epedemic"
+        },
+        {
+            "name": "repair"
+        },
+        {
+            "name": "oath"
+        },
+        {
+            "name": "help-control-oblivion"
+        },
+        {
+            "name": "help-harm-massacre"
+        },
+        {
+            "name": "help-coin"
         }
     ]
 }

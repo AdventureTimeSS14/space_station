@@ -211,12 +211,13 @@ public partial class RadialContainer : Control
     /// <param name="action">Item content text</param>
     /// <param name="texture">Item's icon texture</param>
     /// <returns></returns>
-    public RadialItem AddButton(string action, Texture? texture)
+    public RadialItem AddButton(string action, Texture? texture, SpriteView spriteView = default!)
     {
         var button = new RadialItem();
         button.Content = action;
         button.Controller.TexturePath = ItemBackgroundTexturePath;
-
+        if (spriteView != null)
+            button.EntityView.SetEntity(spriteView.NetEnt != null ? spriteView.NetEnt.Value : NetEntity.Invalid);
         if (texture != null)
             button.Icon.Texture = texture;
 

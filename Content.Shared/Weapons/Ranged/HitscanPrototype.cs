@@ -54,4 +54,9 @@ public sealed partial class HitscanPrototype : IPrototype, IShootable
     /// </summary>
     [DataField("maxLength")]
     public float MaxLength = 20f;
+
+
+    /// For Phantom:
+    [ViewVariables(VVAccess.ReadWrite), DataField("damagePhantom")]
+    public DamageSpecifier? DamageToPhantom;
 }

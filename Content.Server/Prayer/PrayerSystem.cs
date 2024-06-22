@@ -1,6 +1,6 @@
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
-using Content.Server.Bible.Components;
+using Content.Shared.Bible.Components;
 using Content.Server.Chat.Managers;
 using Content.Server.Popups;
 using Content.Shared.Database;
@@ -8,8 +8,9 @@ using Content.Shared.Popups;
 using Content.Shared.Chat;
 using Content.Shared.Prayer;
 using Content.Shared.Verbs;
-using Robust.Server.GameObjects;
+using Content.Server.Bible;
 using Robust.Shared.Player;
+using Content.Shared.FixedPoint;
 
 namespace Content.Server.Prayer;
 /// <summary>
@@ -24,6 +25,7 @@ public sealed class PrayerSystem : EntitySystem
     [Dependency] private readonly PopupSystem _popupSystem = default!;
     [Dependency] private readonly IChatManager _chatManager = default!;
     [Dependency] private readonly QuickDialogSystem _quickDialog = default!;
+    [Dependency] private readonly ChaplainSystem _chaplain = default!;
 
     public override void Initialize()
     {
@@ -48,7 +50,7 @@ public sealed class PrayerSystem : EntitySystem
             Icon = comp.VerbImage,
             Act = () =>
             {
-                if (comp.BibleUserOnly && !EntityManager.TryGetComponent<BibleUserComponent>(args.User, out var bibleUser))
+                if (comp.BibleUserOnly && !EntityManager.TryGetComponent<ChaplainComponent>(args.User, out var bibleUser))
                 {
                     _popupSystem.PopupEntity(Loc.GetString("prayer-popup-notify-pray-locked"), uid, actor.PlayerSession, PopupType.Large);
                     return;
@@ -99,7 +101,10 @@ public sealed class PrayerSystem : EntitySystem
     {
         if (sender.AttachedEntity == null)
             return;
-
+        if (TryComp<ChaplainComponent>(sender.AttachedEntity.Value, out var chaplain))
+        {
+            _chaplain.ChangePowerAmount(sender.AttachedEntity.Value, chaplain.PowerPerPray, chaplain);
+        }
         _popupSystem.PopupEntity(Loc.GetString(comp.SentMessage), sender.AttachedEntity.Value, sender, PopupType.Medium);
 
         _chatManager.SendAdminAnnouncement($"{Loc.GetString(comp.NotificationPrefix)} <{sender.Name}>: {message}");

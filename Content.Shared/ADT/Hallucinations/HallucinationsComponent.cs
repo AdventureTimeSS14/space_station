@@ -21,7 +21,22 @@ public sealed partial class HallucinationsComponent : Component
     public float SpawnRate = 15f;
 
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float Chance = 0.8f;
+    public float MinChance = 0.1f;
+
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public float MaxChance = 0.8f;
+
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public float IncreaseChance = 0.1f;
+
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public int MaxSpawns = 3;
+
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public int SpawnedCount = 0;
+
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public float CurChance = 0.1f;
 
     public List<EntProtoId> Spawns = new();
 
