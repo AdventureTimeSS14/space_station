@@ -22,5 +22,4 @@ public sealed partial class VoiceMaskComponent : Component
     [DataField]
     [ViewVariables(VVAccess.ReadWrite)]
     public ProtoId<SpeechVerbPrototype>? SpeechVerb;
-    [ViewVariables(VVAccess.ReadWrite)] public string VoiceId = SharedHumanoidAppearanceSystem.DefaultVoice; // Corvax-TTS
 }

@@ -130,8 +130,8 @@
   - type: Speech
     speechVerb: Slime
     speechSounds: Slime
-  - type: TTS # Corvax-TTS
-    voice: Baya
+  # - type: TTS # Corvax-TTS
+  #   voice: Baya
   - type: LanguageSpeaker # Frontier
     speaks:
     - Bubblish

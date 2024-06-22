@@ -24,7 +24,7 @@ public sealed class VoiceMaskBoundUserInterface : BoundUserInterface
         _window.OpenCentered();
         _window.OnNameChange += OnNameSelected;
         _window.OnVerbChange += verb => SendMessage(new VoiceMaskChangeVerbMessage(verb));
-        _window.OnVoiceChange += (value) => SendMessage(new VoiceMaskChangeVoiceMessage(value)); // Corvax-TTS
+        // _window.OnVoiceChange += (value) => SendMessage(new VoiceMaskChangeVoiceMessage(value)); // Corvax-TTS
         _window.OnClose += Close;
     }
 

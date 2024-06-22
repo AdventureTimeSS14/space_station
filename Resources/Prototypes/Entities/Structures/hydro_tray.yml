@@ -82,8 +82,8 @@
         acts: ["Destruction"]
   - type: Machine
     board: HydroponicsTrayMachineCircuitboard
-  - type: TTS # Corvax-TTS
-    voice: Baya
+  # - type: TTS # Corvax-TTS
+  #   voice: Baya
   - type: WiresPanel
   - type: AmbientSound
     volume: -9

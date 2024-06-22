@@ -39,7 +39,7 @@ public sealed partial class HumanoidAppearanceSystem : SharedHumanoidAppearanceS
         SetSex(targetHumanoid.Owner, sourceHumanoid.Sex, false, targetHumanoid);
         targetHumanoid.CustomBaseLayers = new(sourceHumanoid.CustomBaseLayers);
         targetHumanoid.MarkingSet = new(sourceHumanoid.MarkingSet);
-        SetTTSVoice(targetHumanoid.Owner, sourceHumanoid.Voice, targetHumanoid); // Corvax-TTS
+        // SetTTSVoice(targetHumanoid.Owner, sourceHumanoid.Voice, targetHumanoid); // Corvax-TTS
 
         targetHumanoid.Gender = sourceHumanoid.Gender;
         if (TryComp<GrammarComponent>(targetHumanoid.Owner, out var grammar))

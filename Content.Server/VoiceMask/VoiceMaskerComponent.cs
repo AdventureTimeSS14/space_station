@@ -6,7 +6,7 @@ namespace Content.Server.VoiceMask;
 [RegisterComponent]
 public sealed partial class VoiceMaskerComponent : Component
 {
-    [ViewVariables(VVAccess.ReadWrite)] public string? LastSetVoice; // Corvax-TTS
+    // [ViewVariables(VVAccess.ReadWrite)] public string? LastSetVoice; // Corvax-TTS
     [DataField]
     public string LastSetName = "Unknown";
 

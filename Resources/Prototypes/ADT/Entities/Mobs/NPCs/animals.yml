@@ -99,7 +99,7 @@
         types:
           Blunt: 15
     - type: StaminaDamageOnHit
-      damage: 100 
+      damage: 100
     - type: Inventory
       templateId: monkey
       speciesId: monkey
@@ -110,8 +110,8 @@
     - type: NoSlip
     - type: Speech
       speechVerb: SmallMob
-    - type: TTS # Corvax-TTS
-      voice: Eugene
+    # - type: TTS # Corvax-TTS
+    #   voice: Eugene
     - type: UserInterface
       interfaces:
         enum.StrippingUiKey.Key:
@@ -148,16 +148,16 @@
   description: It looks cute and fluffy manul. But it only looks..
   components:
   - type: Sprite
-    sprite: ADT/Mobs/Animals/manul.rsi 
+    sprite: ADT/Mobs/Animals/manul.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: manul_state 
+      state: manul_state
   - type: DamageStateVisuals
     states:
       Alive:
-        Base: manul_state 
+        Base: manul_state
       Dead:
-        Base: manul_dead 
+        Base: manul_dead
   - type: InteractionPopup
     successChance: 0.9
     interactSuccessString: petting-success-cat
