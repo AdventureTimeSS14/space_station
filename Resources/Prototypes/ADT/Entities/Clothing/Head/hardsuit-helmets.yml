@@ -191,6 +191,7 @@
   name: helmet of a paramedic's spacesuit
   description: Helmet to a paramedic's void spacesuit for going into space. Does not differ in large protective characteristics.
   components:
+  - type: BreathMask
   - type: Sprite
     sprite: ADT/Clothing/Head/Hardsuits/paramedic_helmet.rsi
   - type: Clothing
@@ -715,7 +716,7 @@
   id: ClothingHeadHelmetHardsuitBlueshield
   noSpawn: true
   name: blueshield hardsuit helmet
-  description: 
+  description:
   components:
   - type: Sprite
     sprite: ADT/Clothing/Head/Hardsuits/blueshield_hardsuithead.rsi
