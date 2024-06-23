@@ -789,6 +789,9 @@
   id: FoodBreadMoldySlice
   description: Entire stations have been ripped apart over arguing whether this is still good to eat.
   components:
+  - type: Tag
+    tags:
+    - Trash
   - type: Sprite
     layers:
     - state: moldy-slice
