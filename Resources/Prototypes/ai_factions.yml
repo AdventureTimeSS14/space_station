@@ -16,6 +16,7 @@
   - Xeno
   - Zombie
   - Revolutionary
+  - DroneAntag
 
 - type: npcFaction
   id: Mouse
@@ -54,6 +55,7 @@
   - Xeno
   - PetsNT
   - Zombie
+  - DroneAntag
 
 - type: npcFaction
   id: Xeno
