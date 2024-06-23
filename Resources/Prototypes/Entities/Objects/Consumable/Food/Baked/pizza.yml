@@ -513,6 +513,9 @@
   id: FoodPizzaMoldySlice
   description: Once a perfectly good slice of pizza pie, but now it lies here, rancid and bursting with spores.
   components:
+  - type: Tag
+    tags:
+    - Trash
   - type: FlavorProfile
     flavors:
       - bitter
