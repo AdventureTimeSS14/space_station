@@ -182,3 +182,13 @@
     sprite: ADT/Clothing/OuterClothing/Suits/Halloween/vergile_cloak.rsi
   - type: Clothing
     sprite: ADT/Clothing/OuterClothing/Suits/Halloween/vergile_cloak.rsi
+
+# Blueshield
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakBlueshield
+  name: blueshield cloak
+  description: A blue cape with an armored shoulder pad, especially for the protection of station heads.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Neck/Cloaks/blueshield_neck.rsi

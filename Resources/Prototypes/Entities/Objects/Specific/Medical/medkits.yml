@@ -73,10 +73,6 @@
     state: advkit
   - type: Item
     heldPrefix: advkit
-  - type: Storage
-    maxItemSize: Small
-    grid:
-    - 0,0,3,3
 
 - type: entity
   name: radiation treatment kit
@@ -99,5 +95,3 @@
     state: blackkit
   - type: Item
     heldPrefix: blackkit
-    size: Normal
-
