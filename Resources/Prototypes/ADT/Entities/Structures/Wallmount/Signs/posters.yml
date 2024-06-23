@@ -787,3 +787,45 @@
     sprite: ADT/Structures/Wallmounts/128x128posters.rsi
     state: roza
     scale: 0.25, 0.25
+
+# Странные постеры
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterError
+  name: Error Poster
+  description: This is an error poster.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_syndycat.rsi
+    state: error
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterNoBad
+  name: No Bad
+  description: This poster promotes good behavior.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_syndycat.rsi
+    state: nobad
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterNoGood
+  name: No Good
+  description: This poster warns against bad behavior.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_syndycat.rsi
+    state: nogood
+
+- type: entity
+  parent: PosterBase
+  id: ADTPosterGasAttack
+  name: Gas Attack
+  description: This poster warns about gas attacks.
+  components:
+  - type: Sprite
+    sprite: ADT/Objects/Decoration/poster_syndycat.rsi
+    state: gasattack
