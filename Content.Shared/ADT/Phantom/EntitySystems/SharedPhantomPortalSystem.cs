@@ -35,7 +35,7 @@ public sealed partial class SharedPhantomPortalSystem : EntitySystem
         if (!args.CanAccess)
             return;
 
-        if (Deleted(component.LinkedPortal))
+        if (Deleted(component.LinkedPortal) || component.LinkedPortal == null)
             return;
 
         args.Verbs.Add(new AlternativeVerb
@@ -43,14 +43,14 @@ public sealed partial class SharedPhantomPortalSystem : EntitySystem
             Priority = 11,
             Act = () =>
             {
-                if (component.LinkedPortal == null || disabled)
+                if (Deleted(component.LinkedPortal) || component.LinkedPortal == null)
                     return;
 
                 var ent = component.LinkedPortal.Value;
                 TeleportEntity(uid, args.User, Transform(ent).Coordinates, ent, false);
             },
             Text = Loc.GetString("portal-component-ghost-traverse"),
-            Message = disabled
+            Message = Deleted(component.LinkedPortal)
                 ? Loc.GetString("portal-component-no-linked-entities-phant")
                 : Loc.GetString("portal-component-can-ghost-traverse"),
             Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/open.svg.192dpi.png"))
