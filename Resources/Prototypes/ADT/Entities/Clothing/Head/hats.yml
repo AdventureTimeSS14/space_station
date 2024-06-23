@@ -398,6 +398,7 @@
     sprite: ADT/Clothing/Head/Hats/beret_CE.rsi
   - type: Tag
     tags:
+      - ClothMade
       - HamsterWearable
 
 - type: entity
