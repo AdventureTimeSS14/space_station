@@ -8,7 +8,7 @@
       state: bluespace
     - type: MachineBoard
       prototype: BluespaceHarvester
-      stackrequirements:
+      stackRequirements:
         Manipulator: 5
         Capacitor: 5
         MatterBin: 15
@@ -18,8 +18,8 @@
         CableHV: 5
       tagRequirements:
         GlassBeaker:
-          Amount: 5
-          DefaultPrototype: Beaker
-          ExamineName: Glass Beaker
+          amount: 5
+          defaultPrototype: Beaker
+          examineName: Glass Beaker
     - type: Item
       size: Normal

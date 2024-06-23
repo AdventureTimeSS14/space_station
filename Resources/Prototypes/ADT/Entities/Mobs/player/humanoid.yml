@@ -9,7 +9,6 @@
       state: centcom
     - type: RandomHumanoidSpawner
       settings: ADTOperatorCentComm
-    - type: InitialInfectedExempt
     - type: AutoImplant
       implants:
       - MindShieldImplant
@@ -33,7 +32,6 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ ADTOperatorCentCommGear ]
-    - type: InitialInfectedExempt
 
 - type: startingGear
   id: ADTOperatorCentCommGear
@@ -257,7 +255,6 @@
       - NamesLastMilitaryUSSP
     - type: RandomHumanoidSpawner
       settings: ADTUSSPPrivateSettings
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -275,7 +272,6 @@
       nameSegments:
       - NamesFirstMilitaryUSSP
       - NamesLastMilitaryUSSP
-    - type: InitialInfectedExempt
 
 #Офицер
 - type: entity
@@ -295,7 +291,6 @@
       - NamesLastMilitaryUSSP
     - type: RandomHumanoidSpawner
       settings: ADTUSSPOfficerSettings
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -313,7 +308,6 @@
       nameSegments:
       - NamesFirstMilitaryOfficerUSSP
       - NamesLastMilitaryUSSP
-    - type: InitialInfectedExempt
 
 #Рядовой в ОБС-5
 - type: entity
@@ -333,7 +327,6 @@
       - NamesLastMilitaryUSSP
     - type: RandomHumanoidSpawner
       settings: ADTUSSPSettingsOBS5
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -351,7 +344,6 @@
       nameSegments:
       - NamesFirstMilitaryUSSP
       - NamesLastMilitaryUSSP
-    - type: InitialInfectedExempt
 
 #Командир группы в ОБС-7
 - type: entity
@@ -371,7 +363,6 @@
       - NamesLastMilitaryUSSP
     - type: RandomHumanoidSpawner
       settings: ADTUSSPSettingsOBS7
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -389,7 +380,6 @@
       nameSegments:
       - NamesFirstMilitaryOfficerUSSP
       - NamesLastMilitaryUSSP
-    - type: InitialInfectedExempt
 
 #Пилот
 - type: entity
@@ -409,7 +399,6 @@
       - NamesLastMilitaryUSSP
     - type: RandomHumanoidSpawner
       settings: ADTUSSPSettingsPilot
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -427,7 +416,6 @@
       nameSegments:
       - NamesFirstMilitaryOfficerUSSP
       - NamesLastMilitaryUSSP
-    - type: InitialInfectedExempt
 
 #Спецназ
 - type: entity
@@ -447,7 +435,6 @@
       - NamesLastMilitaryUSSP
     - type: RandomHumanoidSpawner
       settings: ADTUSSPSettingsSpetsnaz
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -465,7 +452,6 @@
       nameSegments:
       - NamesFirstMilitaryOfficerUSSP
       - NamesLastMilitaryUSSP
-    - type: InitialInfectedExempt
 
 #Спецназ-пулеметчик
 - type: entity
@@ -485,7 +471,6 @@
       - NamesLastMilitaryUSSP
     - type: RandomHumanoidSpawner
       settings: ADTUSSPSettingsSpetsnazLMG
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -503,7 +488,6 @@
       nameSegments:
       - NamesFirstMilitaryOfficerUSSP
       - NamesLastMilitaryUSSP
-    - type: InitialInfectedExempt
 
 #Медик
 - type: entity
@@ -523,7 +507,6 @@
       - NamesLastMilitaryUSSP
     - type: RandomHumanoidSpawner
       settings: ADTUSSPSettingsMedic
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   speciesBlacklist:
@@ -541,7 +524,6 @@
       nameSegments:
       - NamesFirstMilitaryUSSP
       - NamesLastMilitaryUSSP
-    - type: InitialInfectedExempt
 
 - type: entity
   id: ADTRandomHumanoidSpawnerCBURNUnit
@@ -553,7 +535,6 @@
       state: cburn
     - type: RandomHumanoidSpawner
       settings: ADTCmndCBURNAgent
-    - type: InitialInfectedExempt
     - type: AutoImplant
       implants:
       - MindShieldImplant
@@ -577,4 +558,3 @@
       nameSegments:
       - ADTCmndNamesFirstMilitaryCorvax # Corvax-Localization
       - NamesLastERTCallsign # Corvax-Localization
-    - type: InitialInfectedExempt

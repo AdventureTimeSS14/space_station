@@ -838,10 +838,10 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnName("species");
 
                     // Corvax-TTS-Start
-                    b.Property<string>("Voice")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("voice");
+                    // b.Property<string>("Voice")
+                    //     .IsRequired()
+                    //     .HasColumnType("text")
+                    //     .HasColumnName("voice");
                     // Corvax-TTS-End
 
                     b.HasKey("Id")

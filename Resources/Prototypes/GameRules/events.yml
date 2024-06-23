@@ -219,7 +219,6 @@
       params:
         volume: -4
     duration: null #ending is handled by MeteorSwarmRule
-  - type: MeteorSwarmRule
 
 - type: entity
   id: MouseMigration

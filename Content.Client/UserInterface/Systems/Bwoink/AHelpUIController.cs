@@ -135,32 +135,19 @@ public sealed class AHelpUIController: UIController, IOnSystemChanged<BwoinkSyst
         }
         if (message.PlaySound && localPlayer.UserId != message.TrueSender)
         {
-            var randomSoundEffect = GetRandomSoundEffect();
-            _audio.PlayGlobal(randomSoundEffect, Filter.Local(), false);
-
+            if (_aHelpSound != null)
+                _audio.PlayGlobal(_aHelpSound, Filter.Local(), false);
             _clyde.RequestWindowAttention();
         }
 
         EnsureUIHelper();
+
         if (!UIHelper!.IsOpen)
         {
             UnreadAHelpReceived();
         }
 
         UIHelper!.Receive(message);
-    }
-    private string GetRandomSoundEffect() //функция рандомизации звуковых эффектов в ф1.
-    {
-        // Список звуковых эффектов
-        var soundEffects = new List<string>
-        {
-        "/Audio/Effects/adminhelp.ogg"
-        };
-
-        // Получение случайного звукового эффекта из списка
-        var random = new Random();
-        var randomIndex = random.Next(0, soundEffects.Count);
-        return soundEffects[randomIndex];
     }
 
     private void DiscordRelayUpdated(BwoinkDiscordRelayUpdated args, EntitySessionEventArgs session)
