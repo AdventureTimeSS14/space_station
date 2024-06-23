@@ -797,7 +797,7 @@
   description: This is an error poster.
   components:
   - type: Sprite
-    sprite: ADT/Objects/Decoration/poster_syndycat.rsi
+    sprite: ADT/Objects/Decoration/poster_syndicate.rsi
     state: error
 
 - type: entity
@@ -807,7 +807,7 @@
   description: This poster promotes good behavior.
   components:
   - type: Sprite
-    sprite: ADT/Objects/Decoration/poster_syndycat.rsi
+    sprite: ADT/Objects/Decoration/poster_syndicate.rsi
     state: nobad
 
 - type: entity
@@ -817,7 +817,7 @@
   description: This poster warns against bad behavior.
   components:
   - type: Sprite
-    sprite: ADT/Objects/Decoration/poster_syndycat.rsi
+    sprite: ADT/Objects/Decoration/poster_syndicate.rsi
     state: nogood
 
 - type: entity
@@ -827,5 +827,5 @@
   description: This poster warns about gas attacks.
   components:
   - type: Sprite
-    sprite: ADT/Objects/Decoration/poster_syndycat.rsi
+    sprite: ADT/Objects/Decoration/poster_syndicate.rsi
     state: gasattack
