@@ -114,8 +114,11 @@ namespace Content.Shared.Tabletop
         {
             if (!TryComp(target, out draggable))
                 return false;
+
+            // If user entity is a ghoooooooossssttt but IC ghoooooooooooooooooossssttt 
             if (HasComp<OuijaBoardUserComponent>(playerEntity))
                 return true;
+
             // CanSeeTable checks interaction action blockers. So no need to check them here.
             // If this ever changes, so that ghosts can spectate games, then the check needs to be moved here.
 

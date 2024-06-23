@@ -218,7 +218,6 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         _action.AddAction(uid, ref component.PhantomHauntActionEntity, component.PhantomHauntAction);
         _action.AddAction(uid, ref component.PhantomMakeVesselActionEntity, component.PhantomMakeVesselAction);
         _action.AddAction(uid, ref component.PhantomStyleActionEntity, component.PhantomStyleAction);
-        //_action.AddAction(uid, ref component.PhantomSelectVesselActionEntity, component.PhantomSelectVesselAction);
         _action.AddAction(uid, ref component.PhantomHauntVesselActionEntity, component.PhantomHauntVesselAction);
         SelectStyle(uid, component, component.CurrentStyle, true);
 
@@ -587,7 +586,7 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         if (!TryUseAbility(uid, target))
             return;
 
-        if (IsHolder(target, component, "ActionPhantomParalysis", !component.ParalysisOn))
+        if (IsHolder(target, component))
         {
             if (!component.ParalysisOn)
             {
@@ -670,7 +669,7 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         var timeStatic = TimeSpan.FromSeconds(15);
         var timeHaunted = TimeSpan.FromHours(1);
         var chance = 0.2f;
-        if (IsHolder(target, component, "ActionPhantomBreakdown", !component.BreakdownOn))
+        if (IsHolder(target, component))
         {
             if (TryComp<StatusEffectsComponent>(target, out var status) && _status.TryAddStatusEffect<SeeingStaticComponent>(target, "SeeingStatic", timeHaunted, true, status))
             {
@@ -809,7 +808,7 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         if (!TryUseAbility(uid, target))
             return;
 
-        if (IsHolder(target, component, "ActionPhantomStarvation", !component.StarvationOn))
+        if (IsHolder(target, component))
         {
             if (!component.StarvationOn)
             {
@@ -1571,6 +1570,12 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         }
     }
 
+    /// <summary>
+    /// Changes essense amount instead of getting damage
+    /// </summary>
+    /// <param name="uid">Phantom uid</param>
+    /// <param name="component">Phantom component</param>
+    /// <param name="args">Event</param>
     private void OnDamage(EntityUid uid, PhantomComponent component, DamageChangedEvent args)
     {
         if (args.DamageDelta == null)
@@ -1653,24 +1658,26 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
     #endregion
     
     #region Raised Not By Events
-    public bool IsHolder(EntityUid target, PhantomComponent component, string actionProtoId, bool enable = true)
+    /// <summary>
+    /// Checks if target is haunted
+    /// </summary>
+    /// <param name="target">Target entity</param>
+    /// <param name="component">Phantom component</param>
+    /// <returns>Is target holder</returns>
+    public bool IsHolder(EntityUid target, PhantomComponent component)
     {
         if (target == component.Holder)
-        {
-            foreach (var action in component.CurrentActions)
-            {
-                if (action != null && _proto.TryIndex<EntityPrototype>(actionProtoId, out var actionProto) && TryPrototype(action.Value, out var curActionProto) && TryComp<EntityTargetActionComponent>(action.Value, out var comp) && actionProto.ID == curActionProto.ID && enable)
-                {
-                    var newCooldown = (GameTiming.CurTime, GameTiming.CurTime);
-                    comp.Cooldown = newCooldown;
-                    Dirty(action.Value, comp);
-                }
-            }
             return true;
-        }
+        
         return false;
     }
 
+    /// <summary>
+    /// Reviving phantom if there is any vessels. 
+    /// </summary>
+    /// <param name="uid">Phantom uid</param>
+    /// <param name="component">Phantom component</param>
+    /// <returns>Is phantom revived</returns>
     public bool TryRevive(EntityUid uid, PhantomComponent component)
     {
         if (component.Vessels.Count < 1)
@@ -1703,6 +1710,11 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         return true;
     }
 
+    /// <summary>
+    /// Stopping all effects for haunted
+    /// </summary>
+    /// <param name="haunted">Haunted uid</param>
+    /// <param name="component">Phantom component</param>
     public void HauntedStopEffects(EntityUid haunted, PhantomComponent component)
     {
         if (component.ParalysisOn)
@@ -1730,6 +1742,13 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         }
     }
 
+    /// <summary>
+    /// Makes target a vessel
+    /// </summary>
+    /// <param name="uid">Phantom uid</param>
+    /// <param name="target">Target uid</param>
+    /// <param name="component">Phantom component</param>
+    /// <returns>Is target became a vessel</returns>
     public bool MakeVessel(EntityUid uid, EntityUid target, PhantomComponent component)
     {
         if (!TryComp<MetaDataComponent>(target, out _))
@@ -1754,6 +1773,12 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         return true;
     }
 
+    /// <summary>
+    /// Haunt target
+    /// </summary>
+    /// <param name="uid">Phantom uid</param>
+    /// <param name="target">Target uid</param>
+    /// <param name="component">Phantom component</param>
     public void Haunt(EntityUid uid, EntityUid target, PhantomComponent component)
     {
         if (!component.CanHaunt)
@@ -1835,6 +1860,12 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         }
     }
 
+    /// <summary>
+    /// Stops haunting target
+    /// </summary>
+    /// <param name="uid">Phantom uid</param>
+    /// <param name="holder">Haunted uid</param>
+    /// <param name="component">Phantom component</param>
     public void StopHaunt(EntityUid uid, EntityUid holder, PhantomComponent? component = null)
     {
         if (!TryComp<PhantomHolderComponent>(holder, out var holderComp))
@@ -1873,6 +1904,15 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
 
     }
 
+    /// <summary>
+    /// Changes phantom's essense amount, if result is 0 tries to revive phantom
+    /// </summary>
+    /// <param name="uid">Phantom uid</param>
+    /// <param name="amount">Amount of gain/removed essense</param>
+    /// <param name="component">Phantom component</param>
+    /// <param name="allowDeath">Should it kill/revive phantom</param>
+    /// <param name="regenCap">Set maximum allowed essense if result is more?</param>
+    /// <returns>Is essense amount changed</returns>
     public bool ChangeEssenceAmount(EntityUid uid, FixedPoint2 amount, PhantomComponent? component = null, bool allowDeath = true, bool regenCap = false)
     {
         if (!Resolve(uid, ref component))
@@ -1900,6 +1940,12 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         return true;
     }
 
+    /// <summary>
+    /// Checks is phantom able to haunt target
+    /// </summary>
+    /// <param name="uid">Phantom uid</param>
+    /// <param name="target">Target uid</param>
+    /// <returns>Is phantom able to haunt target</returns>
     private bool TryHaunt(EntityUid uid, EntityUid target)
     {
         if (HasComp<PhantomHolderComponent>(target))
@@ -1919,6 +1965,11 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         return true;
     }
 
+    /// <summary>
+    /// When oath is accepted
+    /// </summary>
+    /// <param name="target">Target uid</param>
+    /// <param name="component">Phantom component</param>
     public void MakePuppet(EntityUid target, PhantomComponent component)
     {
         if (!HasComp<HumanoidAppearanceComponent>(target))
@@ -1930,6 +1981,12 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         component.CursedVessels.Add(target);
     }
 
+    /// <summary>
+    /// If there are any altars
+    /// </summary>
+    /// <param name="uid">Phantom uid</param>
+    /// <param name="component">Phantom component</param>
+    /// <returns>Is there are any altars</returns>
     public bool CheckAltars(EntityUid uid, PhantomComponent component)
     {
         var xformQuery = GetEntityQuery<TransformComponent>();
@@ -1945,6 +2002,11 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         return false;
     }
 
+    /// <summary>
+    /// Inserts target into helping hand container
+    /// </summary>
+    /// <param name="target">Target uid</param>
+    /// <param name="component">Phantom component</param>
     public void OnHelpingHandAccept(EntityUid target, PhantomComponent component)
     {
         if (!component.HasHaunted)
@@ -1959,6 +2021,13 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         component.TransferringEntity = target;
     }
 
+    /// <summary>
+    /// All checks that shows if phantom able to use this ability
+    /// </summary>
+    /// <param name="uid">Phantom uid</param>
+    /// <param name="trgt">Target uid (nullable)</param>
+    /// <param name="comp">Phantom component</param>
+    /// <returns>Is phantom able to use this ability</returns>
     private bool TryUseAbility(EntityUid uid, EntityUid? trgt = null, PhantomComponent? comp = null)
     {
         if (!Resolve(uid, ref comp))
@@ -2012,6 +2081,11 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         return true;
     }
 
+    /// <summary>
+    /// Spawns ectoplasm on station when abilities limit is reached
+    /// </summary>
+    /// <param name="uid">Phantom uid</param>
+    /// <param name="component">Phantom component</param>
     private void UpdateEctoplasmSpawn(EntityUid uid, PhantomComponent? component = null)
     {
         if (!Resolve(uid, ref component))
@@ -2132,6 +2206,13 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
     #endregion
 
     #region Finale
+
+    /// <summary>
+    /// Raised when player pressed accept button in FinaleEui
+    /// </summary>
+    /// <param name="uid"></param>
+    /// <param name="component"></param>
+    /// <param name="type"></param>
     public void Finale(EntityUid uid, PhantomComponent component, PhantomFinaleType type)
     {
         component.FinalAbilityUsed = true;

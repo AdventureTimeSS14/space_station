@@ -49,6 +49,8 @@ public partial class InventorySystem
         SubscribeLocalEvent<InventoryComponent, RefreshEquipmentHudEvent<ShowHungerIconsComponent>>(RelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, RefreshEquipmentHudEvent<ShowThirstIconsComponent>>(RelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, RefreshEquipmentHudEvent<ShowSyndicateIconsComponent>>(RelayInventoryEvent);
+
+        // For Phantom hud
         SubscribeLocalEvent<InventoryComponent, RefreshEquipmentHudEvent<ShowHauntedIconsComponent>>(RelayInventoryEvent);
 
         SubscribeLocalEvent<InventoryComponent, GetVerbsEvent<EquipmentVerb>>(OnGetEquipmentVerbs);

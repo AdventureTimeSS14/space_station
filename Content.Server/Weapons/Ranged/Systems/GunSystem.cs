@@ -233,12 +233,15 @@ public sealed partial class GunSystem : SharedGunSystem
                             _stamina.TakeStaminaDamage(hitEntity, hitscan.StaminaDamage, source: user);
 
                         var dmg = hitscan.Damage;
+
+                        //phantom
                         var dmgPhantom = hitscan.DamageToPhantom;
 
                         var hitName = ToPrettyString(hitEntity);
                         if (dmg != null)
                             dmg = Damageable.TryChangeDamage(hitEntity, dmg, origin: user);
 
+                        // Damage phantom if any
                         if (dmgPhantom != null && TryComp<PhantomHolderComponent>(hitEntity, out var haunted))
                         {
                             dmgPhantom = Damageable.TryChangeDamage(haunted.Phantom, dmgPhantom, origin: user);

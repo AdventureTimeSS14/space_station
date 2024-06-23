@@ -35,7 +35,8 @@ public sealed partial class SharedPhantomPortalSystem : EntitySystem
         if (!args.CanAccess)
             return;
 
-        var disabled = Deleted(component.LinkedPortal);
+        if (Deleted(component.LinkedPortal))
+            return;
 
         args.Verbs.Add(new AlternativeVerb
         {
@@ -48,7 +49,6 @@ public sealed partial class SharedPhantomPortalSystem : EntitySystem
                 var ent = component.LinkedPortal.Value;
                 TeleportEntity(uid, args.User, Transform(ent).Coordinates, ent, false);
             },
-            Disabled = disabled,
             Text = Loc.GetString("portal-component-ghost-traverse"),
             Message = disabled
                 ? Loc.GetString("portal-component-no-linked-entities-phant")
@@ -89,9 +89,6 @@ public sealed partial class SharedPhantomPortalSystem : EntitySystem
             return;
         }
 
-        //var arrivalSound = CompOrNull<PortalComponent>(targetEntity)?.ArrivalSound ?? portalComponent.ArrivalSound;
-        //var departureSound = portalComponent.DepartureSound;
-
         if (TryComp<SharedPullableComponent>(subject, out var pullable) && pullable.BeingPulled)
         {
             _pulling.TryStopPull(pullable);
@@ -108,7 +105,5 @@ public sealed partial class SharedPhantomPortalSystem : EntitySystem
         if (!playSound)
             return;
 
-        //_audio.PlayPredicted(departureSound, portal, subject);
-        //_audio.PlayPredicted(arrivalSound, subject, subject);
     }
 }

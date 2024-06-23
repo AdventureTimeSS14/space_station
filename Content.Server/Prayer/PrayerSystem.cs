@@ -101,10 +101,14 @@ public sealed class PrayerSystem : EntitySystem
     {
         if (sender.AttachedEntity == null)
             return;
+
+        // If prayer is chaplain, give them some power for praying
         if (TryComp<ChaplainComponent>(sender.AttachedEntity.Value, out var chaplain))
         {
             _chaplain.ChangePowerAmount(sender.AttachedEntity.Value, chaplain.PowerPerPray, chaplain);
         }
+        // end
+
         _popupSystem.PopupEntity(Loc.GetString(comp.SentMessage), sender.AttachedEntity.Value, sender, PopupType.Medium);
 
         _chatManager.SendAdminAnnouncement($"{Loc.GetString(comp.NotificationPrefix)} <{sender.Name}>: {message}");

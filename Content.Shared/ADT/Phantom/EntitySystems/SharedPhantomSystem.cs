@@ -14,6 +14,13 @@ public abstract class SharedPhantomSystem : EntitySystem
         base.Initialize();
     }
 
+    /// <summary>
+    /// Select phantom style (abilities pack)
+    /// </summary>
+    /// <param name="uid">Phantom uid</param>
+    /// <param name="component">Phantom component</param>
+    /// <param name="style">Style protoId</param>
+    /// <param name="force">Force or not</param>
     public void SelectStyle(EntityUid uid, PhantomComponent component, string style, bool force = false)
     {
         if (!_proto.TryIndex<PhantomStylePrototype>(style, out var proto))
@@ -46,6 +53,12 @@ public abstract class SharedPhantomSystem : EntitySystem
         component.CurrentStyle = style;
     }
 
+    /// <summary>
+    /// Adding all actions from list
+    /// </summary>
+    /// <param name="uid">Phantom uid</param>
+    /// <param name="component">Phantom component</param>
+    /// <param name="list">Actions protoId list</param>
     public void AddFromList(EntityUid uid, PhantomComponent component, List<string> list)
     {
         foreach (var action in list)

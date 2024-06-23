@@ -244,6 +244,8 @@ public sealed partial class ChatSystem : SharedChatSystem
         if (string.IsNullOrEmpty(message))
             return;
 
+
+        // Alternative speech check start. 
         var ev = new AlternativeSpeechEvent(source, message, desiredType, false, false, null);
         if (TryProccessRadioMessage(source, message, out var altOutput, out var altChannel) && altChannel != null)
         {
@@ -255,6 +257,8 @@ public sealed partial class ChatSystem : SharedChatSystem
         RaiseLocalEvent(source, ev, true);
         if (ev.Cancelled)
             return;
+        // Alternative speech check end. 
+
 
         // This message may have a radio prefix, and should then be whispered to the resolved radio channel
         if (checkRadioPrefix)
@@ -1139,7 +1143,7 @@ public sealed class EntitySpokeEvent : EntityEventArgs
 }
 
 /// <summary>
-/// Raised for entities with AlternativeSpeechComponent
+/// Raised for every entity. If cancelled by system, the entity wont send IC message, but the system can use message data
 /// </summary>
 public sealed class AlternativeSpeechEvent : EntityEventArgs
 {

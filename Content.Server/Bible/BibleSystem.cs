@@ -66,6 +66,7 @@ public sealed class BibleSystem : EntitySystem
         var target = args.Target.Value;
         var user = args.User;
 
+        // Now chaplain is the only one who can interact with bible
         if (!TryComp<ChaplainComponent>(user, out var chaplain))
         {
             _popupSystem.PopupEntity(Loc.GetString("bible-sizzle"), user, user);
@@ -77,6 +78,7 @@ public sealed class BibleSystem : EntitySystem
             return;
         }
 
+        // Tries to use chaplain's energy
         if (!_chaplain.TryUseAbility(user, chaplain, component.HealCost))
         {
             var othersFailMessage = Loc.GetString(component.LocPrefix + "-heal-fail-others", ("user", Identity.Entity(user, EntityManager)), ("target", Identity.Entity(target, EntityManager)), ("bible", uid));
@@ -108,6 +110,7 @@ public sealed class BibleSystem : EntitySystem
             checkPhantom = true;
         }
 
+        // Checks phantom components and removing it
         if (TryComp<PhantomHolderComponent>(target, out var haunted))
         {
             var othersFailMessage = Loc.GetString(component.LocPrefix + "-phantom-out-others", ("user", Identity.Entity(user, EntityManager)), ("target", Identity.Entity(target, EntityManager)), ("bible", uid));
@@ -141,6 +144,7 @@ public sealed class BibleSystem : EntitySystem
             checkPhantom = true;
         }
 
+        // If the body is controlled by a phantom 
         if (TryComp<ControlledComponent>(target, out var controlled) && controlled.Key == "Phantom")
         {
             var othersFailMessage = Loc.GetString(component.LocPrefix + "-phantom-controlled-others", ("user", Identity.Entity(user, EntityManager)), ("target", Identity.Entity(target, EntityManager)), ("bible", uid));

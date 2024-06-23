@@ -25,11 +25,13 @@ public sealed class AntagStatusIconSystem : SharedStatusIconSystem
         SubscribeLocalEvent<ZombieComponent, GetStatusIconsEvent>(GetIcon);
         SubscribeLocalEvent<HeadRevolutionaryComponent, GetStatusIconsEvent>(GetIcon);
 
+        // ADT Phantom update start
         SubscribeLocalEvent<VesselComponent, GetStatusIconsEvent>(GetVesselIcon);
         SubscribeLocalEvent<PhantomPuppetComponent, GetStatusIconsEvent>(GetIcon);
         SubscribeLocalEvent<PhantomHolderComponent, GetStatusIconsEvent>(GetIcon);
         SubscribeLocalEvent<PhantomImmuneComponent, GetStatusIconsEvent>(GetIcon);
         SubscribeLocalEvent<ChaplainComponent, GetStatusIconsEvent>(GetIcon);
+        // ADT Phantom update end
     }
 
     /// <summary>

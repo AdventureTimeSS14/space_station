@@ -41,6 +41,9 @@ namespace Content.Server.Bible.Components
         [DataField("respawnTime")]
         public float RespawnTime = 180f;
 
+        /// <summary>
+        /// How much energy will cost the summon
+        /// </summary>
         [DataField("summonCost")]
         [ViewVariables(VVAccess.ReadWrite)]
         public FixedPoint2 SummonCost = 4;
