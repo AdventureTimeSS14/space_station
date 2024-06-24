@@ -85,18 +85,14 @@
   description: action-phantom-make-vessel-desc
   noSpawn: true
   components:
-  - type: EntityTargetAction
+  - type: InstantAction
+    checkCanInteract: false
     icon:
       sprite: ADT/Interface/Actions/actions_phantom.rsi
       state: ghost_kiss
     itemIconStyle: BigAction
-    whitelist:
-      components:
-      - Body
     event: !type:MakeVesselActionEvent
     #useDelay: 1
-    canTargetSelf: false
-    range: 3
     priority: -88
 
 - type: entity
@@ -318,15 +314,14 @@
   description: action-phantom-psycho-desc
   noSpawn: true
   components:
-  - type: EntityTargetAction
+  - type: InstantAction
+    checkCanInteract: false
     icon:
       sprite: ADT/Interface/Actions/actions_phantom.rsi
       state: psycho-epedemic
     itemIconStyle: BigAction
     event: !type:PsychoEpidemicActionEvent
-    #useDelay: 120
-    canTargetSelf: false
-    range: 3
+    #useDelay: 1
     priority: -77
 
 - type: entity

@@ -290,6 +290,12 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
     }
 
     #region Radial Menu
+    /// <summary>
+    /// Requests radial menu for the styles
+    /// </summary>
+    /// <param name="uid">Phantom uid</param>
+    /// <param name="component">Phantom component</param>
+    /// <param name="args">Event</param>
     private void OnRequestStyleMenu(EntityUid uid, PhantomComponent component, OpenPhantomStylesMenuActionEvent args)
     {
         if (args.Handled)
@@ -312,6 +318,10 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         args.Handled = true;
     }
 
+    /// <summary>
+    /// Raised when style selected
+    /// </summary>
+    /// <param name="args">Event</param>
     private void OnSelectStyle(SelectPhantomStyleEvent args)
     {
         var uid = GetEntity(args.Target);
@@ -330,6 +340,12 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         args.Handled = true;
     }
 
+    /// <summary>
+    /// Requests radial menu for freedom finale 
+    /// </summary>
+    /// <param name="uid">Phantom uid</param>
+    /// <param name="component">Phantom component</param>
+    /// <param name="args">Event</param>
     private void OnRequestFreedomMenu(EntityUid uid, PhantomComponent component, FreedomFinaleActionEvent args)
     {
         if (args.Handled)
@@ -367,6 +383,10 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         args.Handled = true;
     }
 
+    /// <summary>
+    /// Raised when freedom type selected
+    /// </summary>
+    /// <param name="args">Event</param>
     private void OnSelectFreedom(SelectPhantomFreedomEvent args)
     {
         var uid = GetEntity(args.Target);
@@ -396,6 +416,12 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         }
     }
 
+    /// <summary>
+    /// Requests radial menu for vessel haunting
+    /// </summary>
+    /// <param name="uid">Phantom uid</param>
+    /// <param name="component">Phantom component</param>
+    /// <param name="args">Event</param>
     private void OnRequestVesselMenu(EntityUid uid, PhantomComponent component, HauntVesselActionEvent args)
     {
         if (args.Handled)
@@ -467,6 +493,10 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         args.Handled = true;
     }
 
+    /// <summary>
+    /// Raised when vessel selected
+    /// </summary>
+    /// <param name="args">Event</param>
     private void OnSelectVessel(SelectPhantomVesselEvent args)
     {
         var uid = GetEntity(args.Uid);
@@ -535,7 +565,14 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         if (args.Handled)
             return;
 
-        var target = args.Target;
+        if (!component.HasHaunted)
+        {
+            var selfMessage = Loc.GetString("phantom-no-holder");
+            _popup.PopupEntity(selfMessage, uid, uid);
+            return;
+        }
+
+        var target = component.Holder;
 
         if (!TryUseAbility(uid, target))
             return;
@@ -1015,6 +1052,7 @@ public sealed partial class PhantomSystem : SharedPhantomSystem
         _damageableSystem.TryChangeDamage(target, damage_burn);
     }
 
+    // Oath but im too lazy to rename it
     private void OnPuppeter(EntityUid uid, PhantomComponent component, PuppeterActionEvent args)
     {
         if (args.Handled)

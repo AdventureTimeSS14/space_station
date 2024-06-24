@@ -11,10 +11,6 @@ public sealed partial class MakeHolderActionEvent : EntityTargetActionEvent
 {
 }
 
-public sealed partial class MakeVesselActionEvent : EntityTargetActionEvent
-{
-}
-
 public sealed partial class ParalysisActionEvent : EntityTargetActionEvent
 {
 }
@@ -34,16 +30,17 @@ public sealed partial class RepairActionEvent : EntityTargetActionEvent
 public sealed partial class BloodBlindingActionEvent : EntityTargetActionEvent
 {
 }
-
-public sealed partial class PsychoEpidemicActionEvent : EntityTargetActionEvent
-{
-}
 #endregion
 
 #region Instant Actions
 public sealed partial class StopHauntingActionEvent : InstantActionEvent
 {
 }
+
+public sealed partial class MakeVesselActionEvent : InstantActionEvent
+{
+}
+
 
 public sealed partial class CycleVesselActionEvent : InstantActionEvent
 {
@@ -90,6 +87,10 @@ public sealed partial class PhantomHelpingHelpActionEvent : InstantActionEvent
 }
 
 public sealed partial class PhantomControlActionEvent : InstantActionEvent
+{
+}
+
+public sealed partial class PsychoEpidemicActionEvent : InstantActionEvent
 {
 }
 #endregion
