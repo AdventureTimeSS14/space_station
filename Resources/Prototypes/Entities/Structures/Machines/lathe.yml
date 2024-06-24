@@ -1143,6 +1143,7 @@
       - CarpetPurple
       - CarpetCyan
       - CarpetWhite
+      - CarpetSkyBlue
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - ClothingHeadHatCentcomcap
