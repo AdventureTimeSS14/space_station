@@ -2,7 +2,7 @@
   id: Meta
   mapName: 'Meta Station'
   mapPath: /Maps/meta.yml
-  minPlayers: 30
+  minPlayers: 50
   stations:
     Meta:
       stationProto: StandardNanotrasenStation
@@ -13,7 +13,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'TG'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/emergency_courser.yml
+          emergencyShuttlePath: /Maps/Shuttles/emergency_meta.yml
         - type: StationJobs
           availableJobs:
             #service
@@ -28,31 +28,27 @@
             ServiceWorker: [ 2, 2 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
-            SeniorEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 3, 3 ]
-            StationEngineer: [ 4, 6 ]
+            StationEngineer: [ 5, 7 ]
             TechnicalAssistant: [ 3, 6 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
-            SeniorPhysician: [ 1, 1 ]
-            Chemist: [ 3, 3 ]
-            MedicalDoctor: [ 4, 4 ]
+            Chemist: [ 2, 2 ]
+            MedicalDoctor: [ 5, 5 ]
             MedicalIntern: [ 3, 6 ]
             Paramedic: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
-            SeniorResearcher: [ 1, 1 ]
-            Scientist: [ 4, 6 ]
+            Scientist: [ 5, 7 ]
             ResearchAssistant: [ 3, 6 ]
             Borg: [ 2, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
-            SeniorOfficer: [ 1, 1 ]
-            SecurityOfficer: [ 4, 6 ]
+            SecurityOfficer: [ 5, 7 ]
             Detective: [ 1, 1 ]
             SecurityCadet: [ 3, 6 ]
-            #Lawyer: [ 2, 2 ] # Corvax-IAA
+            Lawyer: [ 2, 2 ]
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
@@ -62,17 +58,3 @@
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
-            #ADT
-            Brigmedic: [ 1, 1 ]
-            ADTBlueShieldOfficer: [ 1, 1 ]
-            Magistrat: [ 1, 1 ]
-            ADTPathologist: [ 1 , 1] #ADT
-            ADTInvestigator: [ 1, 1 ] #ADT
-            ADTSecurityCyborg: [ 1, 1 ] #ADT
-            ADTEngiBorg: [ 1, 1 ] #ADT
-            ADTJanitorBorg: [ 1, 1 ] #ADT
-            ADTMedicalBorg: [ 1, 1 ] #ADT
-            ADTServiseBorg: [ 1, 1 ] #ADT
-            ADTSupplyBorg: [ 1, 1 ] #ADT
-            IAA: [ 1, 1 ] # Corvax-IAA
-            ADTRoboticist: [ 1, 2 ] #ADT

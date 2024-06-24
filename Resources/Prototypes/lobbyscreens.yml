@@ -25,6 +25,9 @@
 - type: lobbyBackground
   id: Lobby2
   background: /Textures/LobbyScreens/Lobby2.png
+- type: lobbyBackground
+  id: Warden
+  background: /Textures/LobbyScreens/warden.webp
 
 - type: lobbyBackground
   id: Lobby3
