@@ -12,8 +12,10 @@
     - state: wallet_closed
     - state: wallet_open
       map: ["openLayer"]
-    - state: wallet_cash
-      map: ["wallet_cash"]
+    - state: wallet_cash1
+      map: ["wallet_cash1"]
+    - state: wallet_cash2
+      map: ["wallet_cash2"]
   - type: SwitchableWeapon
     openSound: "/Audio/Items/flashlight_on.ogg"
     closeSound: "/Audio/Items/flashlight_off.ogg"
@@ -31,6 +33,13 @@
         - ADTSpaceCash
     grid:
     - 0,0,3,1
+  - type: ItemCounter
+    count:
+      tags: [ADTSpaceCash]
+    composite: true
+    layerStates:
+    - wallet_cash1
+    - wallet_cash2 # я не ебу, почему я не могу досчитать до одного. это костыль. простите меня, потомки
   - type: Appearance
 
 - type: entity
