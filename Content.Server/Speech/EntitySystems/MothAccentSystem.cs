@@ -15,10 +15,25 @@ public sealed class MothAccentSystem : EntitySystem
     {
         var message = args.Message;
 
-        // buzzz
-        message = Regex.Replace(message, "z{1,3}", "zzz");
-        // buZZZ
-        message = Regex.Replace(message, "Z{1,3}", "ZZZ");
+        // Changed By 1Stepka1 Moth_speech start
+        
+        message = Regex.Replace(message, "з{1,3}", "ззз");
+
+        message = Regex.Replace(message, "с{1,3}", "зз");
+
+        message = Regex.Replace(message, "ц{1,3}", "зз");
+
+        message = Regex.Replace(message, "ж{1,3}", "жзж");
+
+        message = Regex.Replace(message, "З{1,3}", "ЗЗЗ");
+
+        message = Regex.Replace(message, "С{1,3}", "ЗЗ");
+
+        message = Regex.Replace(message, "Ц{1,3}", "ЗЗ");
+
+        message = Regex.Replace(message, "Ж{1,3}", "ЖЗЖ");
+
+        // Changed By 1Stepka1 Moth_speech end
         
         args.Message = message;
     }

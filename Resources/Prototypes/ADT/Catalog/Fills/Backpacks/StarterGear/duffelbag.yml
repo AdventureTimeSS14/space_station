@@ -6,7 +6,7 @@
   - type: StorageFill
     contents:
       - id: BoxSurvivalMedical
-      - id: JawsOfLife
+      - id: JawsOfLife # Парамед теперь без МЩ и может быть антагом
       - id: SpaceCash500
 
 - type: entity
@@ -118,3 +118,40 @@
     contents:
       - id: SmokeGrenade
         amount: 6
+
+- type: entity
+  noSpawn: true
+  parent: ADTClothingBackpackDuffelPathologist
+  id: ADTClothingBackpackDuffelPathologistFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalMedical
+      - id: BodyBag_Folded
+      - id: ADTFootTag
+      - id: SpaceCash500
+
+- type: entity
+  noSpawn: true
+  parent: ADTClothingBackpackDuffelDurathead
+  id: ClothingBackpackTraderFilled
+  components:
+    - type: StorageFill
+      contents:
+        - id: BoxSurvival
+        - id: RubberStampTrader
+        - id: AppraisalTool
+        - id: SpaceCash500
+        - id: ADTClothingOuterCoatTrader
+
+#Blueshield
+- type: entity
+  parent: ADTClothingBackpackDuffelBlueshield
+  id: ADTClothingBackpackDuffelBlueshieldFilled
+  suffix: filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalSecurity
+      - id: SpaceCash500
+      - id: Flash

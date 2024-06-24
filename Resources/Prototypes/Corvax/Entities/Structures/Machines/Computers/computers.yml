@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: ComputerComms
   id: CentcomComputerComms
   name: centcom communications computer
@@ -9,6 +9,6 @@
       title: comms-console-announcement-title-centcom
       global: true
       sound:
-        path: /Audio/Corvax/Announcements/centcomm.ogg
+        path: /Audio/Announcements/attention.ogg
         params:
           volume: -4

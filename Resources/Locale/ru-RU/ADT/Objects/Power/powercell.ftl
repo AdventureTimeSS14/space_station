@@ -4,3 +4,5 @@ ent-ADTPowerCellBlueSpace = батарея блюспейс ёмкости
 ent-ADTPowerCellBluespaceEmpty = { ent-ADTPowerCellBlueSpace }
     .suffix = Пустой
     .desc = { ent-PowerCellHyper.desc }
+ent-ADTPowerCellLasgunRevolver = барабанная батарея револьвера
+    .desc = Барабанная батарея энергетического меча-револьвера обычной ёмкости.

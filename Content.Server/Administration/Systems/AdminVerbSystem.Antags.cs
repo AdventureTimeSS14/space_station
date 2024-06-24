@@ -132,9 +132,9 @@ public sealed partial class AdminVerbSystem
             Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Objects/Weapons/Melee/armblade.rsi"), "icon"),
             Act = () =>
             {
-                if (!TryComp<MindComponent>(args.Target, out var targetMindComp))
+                if (!_minds.TryGetMind(args.Target, out var _, out var targetMindComp))
                     return;
-                if(targetMindComp.Session == null)
+                if (targetMindComp.Session == null)
                     return;
 
                 // if its not a humanoid dont make it a changeling

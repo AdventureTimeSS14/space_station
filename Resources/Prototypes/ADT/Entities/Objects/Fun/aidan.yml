@@ -1,9 +1,0 @@
-- type: entity
-  parent: BasePlushie
-  id: ADTPlushieAidan
-  name: Aidan Simp
-  description: Very very good moderator.
-  components:
-  - type: Sprite
-    sprite: ADT/Objects/Fun/plushie_aidan.rsi
-    state: plushie_aidan

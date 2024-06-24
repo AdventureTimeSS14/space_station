@@ -25,3 +25,26 @@
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: ADTPathologist
+
+- type: statusIcon
+  parent: JobIcon
+  id: jobADTIconSecurityCyborg
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: JobADTIconSecurityCyborg
+
+#СССП штуки 
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconUSSPArmyPrivate
+  icon:
+    sprite: ADT/Interface/Misc/job_icons.rsi
+    state: JobIconUSSPArmyPrivate
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconUSSPArmyOfficer
+  icon:
+    sprite: ADT/Interface/Misc/job_icons.rsi
+    state: JobIconUSSPArmyOfficer

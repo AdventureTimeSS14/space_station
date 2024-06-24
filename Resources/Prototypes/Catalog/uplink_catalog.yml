@@ -1200,7 +1200,7 @@
   description: uplink-clothing-outer-vest-web-desc
   productEntity: ClothingOuterVestWeb
   cost:
-    Telecrystal: 20
+    Telecrystal: 4
   categories:
   - UplinkWearables
 
@@ -1684,3 +1684,23 @@
     Telecrystal: 12
   categories:
     - UplinkDisruption
+
+- type: listing
+  id: ADTUplinkIonRifle
+  name: ADTuplink-ion-rifle-name
+  description: ADTuplink-ion-rifle-desc
+  productEntity: ADTWeaponIonRifle
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkWeaponry
+
+- type: listing
+  id: ADTUplinkChainsaw
+  name: ADTuplink-chainsaw-name
+  description: ADTuplink-chainsaw-desc
+  productEntity: Chainsaw
+  cost:
+    Telecrystal: 6
+  categories:
+  - UplinkWeaponry

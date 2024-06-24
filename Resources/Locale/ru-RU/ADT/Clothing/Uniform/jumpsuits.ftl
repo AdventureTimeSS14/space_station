@@ -366,3 +366,21 @@ ent-ADTClothingUniformHikeformCmo = походный костюм главног
 ent-ADTClothingUniformHikeJumpskirtCmo = походная юбка-костюм главного врача
     .desc = Рубашка и мешковитая юбка, отлично подходящие для активной работы как вне, так и внутри своего отдела.
     .suffix = { "" }
+
+ent-ClothingUniformJumpsuitBlueshield = костюм офицера синего щита
+    .desc = Военные штаны и белая рубашка с погонами Офицера Синего Щита, уже очень скоро она будет окроплена кроваво-алой кровью врагов НТ, перепутавших его с охранником продуктового магазина 21-го века.
+ent-ClothingUniformJumpskirtBlueshield = юбка и костюм офицера синего щита
+    .desc = Юбка и белая рубашка с погонами Офицера Синего Щита, уже очень скоро она будет окроплена кроваво-алой кровью врагов НТ,  перепутавших его с охранником продуктового магазина 21-го века.
+
+ent-ADTClothingUniformCroupier = костюм крупье
+    .desc = Костюм самого главного по фишкам и картам.
+ent-ADTClothingUniformCroupierSkirt = юбка-костюм крупье
+    .desc = {ent-ADTClothingUniformCroupier.desc}
+
+ent-ADTClothingUniformJumpskirtJanimaid = костюм горничной
+    .desc = Обновленный костюм горничной от НТ.
+
+ent-ADTClothingJumpsuitHopAlt = деловой костюм главы персонала
+    .desc = Деловой костюм для сидения на месте с важным видом. Если вам станет жарко, или вы, вдруг, захотите побегать - пиджак можно снять.
+ent-ADTClothingJumpskirtHopAlt = деловой юбка-костюм главы персонала
+    .desc = {ent-ADTClothingJumpsuitHopAlt.desc}

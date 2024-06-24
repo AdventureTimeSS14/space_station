@@ -66,17 +66,6 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatBeretSecurityMedic
-  name: security medic beret
-  description: A robust beret with the medical insignia emblazoned on it. Uses reinforced fabric to offer sufficient protection.
-  components:
-    - type: Sprite
-      sprite: Corvax/Clothing/Head/Hats/beret_security_medic.rsi
-    - type: Clothing
-      sprite: Corvax/Clothing/Head/Hats/beret_security_medic.rsi
-
-- type: entity
-  parent: ClothingHeadBase
   id: ClothingHeadCaptainHat
   name: captain's hat
   description: A special hat made to order for the captain.

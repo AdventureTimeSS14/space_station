@@ -156,3 +156,111 @@
       - id: ADTBoomBoxTapeHotlineMogesDisco
       - id: ADTBoomBoxTapeHotlineMusik
       - id: ADTBoomBoxTapeHotlineParis
+
+- type: entity
+  id: ADTCrateHalloweenCloth
+  parent: CratePlastic
+  name: halloween clothing crate
+  description: halloween clothing crate
+  suffix: Halloween
+  components:
+  - type: StorageFill
+    contents:
+    - id: ADTBoxHalloweenCandy
+      amount: 4
+    - id: ADTBoxNightmareClown
+    - id: ADTBoxCrueltySquad
+    - id: ADTBoxJason
+    - id: ADTBoxVyazov
+    - id: ADTBoxHotlineMiami
+    - id: ADTBoxKilla
+    - id: ADTBoxServantOfEvil
+    - id: ADTBoxDude
+    - id: ADTBoxSquidPlayers
+    - id: ADTBoxSquidOrganizer
+    - id: ADTBoxTagilla
+    - id: ADTBoxNevadaClown
+    - id: ADTBoxTransilvania
+    - id: ADTBoxVergile
+    - id: ADTXenoBox
+    - id: ADTSuperstarPoliceBox
+    - id: ADTSuperstarPoliceWingmanBox
+    - id: ADTBunnyDancerBox
+    - id: ADTPayDayBox
+    - id: ADTChainSawManBox
+
+- type: entity
+  id: ADTCrateOktoberfestCloth
+  parent: CratePlastic
+  name: oktoberfest clothing crate
+  description: oktoberfest clothing crate
+  suffix: Oktoberfest
+  components:
+  - type: StorageFill
+    contents:
+    - id: ADTClothingUniformOktoberfestWhite
+      amount: 2
+    - id: ADTClothingUniformOktoberfestBlueCheckered
+      amount: 2
+    - id: ADTClothingUniformOktoberfestGreenVest
+      amount: 2
+    - id: ADTClothingUniformOktoberfestRedCheckered
+      amount: 2
+    - id: ADTClothingUniformOktoberfestGreenCheckered
+      amount: 2
+    - id: ADTClothingUniformOktoberfestBlueVest
+      amount: 2
+    - id: ADTClothingUniformOktoberfestRedVest
+      amount: 2
+    - id: ADTClothingUniformOktoberfestDirndlShort
+      amount: 2
+    - id: ADTClothingUniformOktoberfestDirndlShortGreen
+      amount: 2
+    - id: ADTClothingUniformOktoberfestDirndlShortRed
+      amount: 2
+    - id: ADTClothingUniformOktoberfestDirndlShortBlue
+      amount: 2
+    - id: ADTClothingUniformOktoberfestDirndlBlue
+      amount: 2
+    - id: ADTClothingUniformOktoberfestDirndlRed
+      amount: 2
+    - id: ADTClothingUniformOktoberfestDirndlGreen
+      amount: 2
+    - id: ADTClothingHeadHatsBavarianHat
+      amount: 2
+    - id: ADTClothingHeadHatsBavarianHatBlueBorder
+      amount: 2
+    - id: ADTClothingHeadHatsBavarianHatRedBorder
+      amount: 2
+    - id: ADTClothingHeadHatsBavarianHatGreenBorder
+      amount: 2
+    - id: ADTClothingHeadHatsBavarianHatBlue
+      amount: 2
+    - id: ADTClothingHeadHatsBavarianHatGreen
+      amount: 2
+    - id: ADTClothingHeadHatsBavarianHatRed
+      amount: 2
+
+- type: entity
+  id: ADTCrateOktoberfestMug
+  parent: CratePlastic
+  name: oktoberfest mug crate
+  description: oktoberfest mug crate
+  suffix: Oktoberfest
+  components:
+  - type: StorageFill
+    contents:
+    - id: ADTGoldenAleMug
+      amount: 4
+    - id: ADTTechnoBeerMug
+      amount: 2
+    - id: ADTClassicPaulanerBeerMug
+      amount: 2
+    - id: ADTLivseyBeerMug
+      amount: 2
+    - id: ADTLuckyJonnyMug
+      amount: 2
+    - id: ADTSecUnfilteredMug
+      amount: 2
+    - id: ADTGlyphidStoutBeerMug
+      amount: 2

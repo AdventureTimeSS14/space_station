@@ -1,5 +1,4 @@
-﻿# ---- Library Salvage Fills ----
-
+﻿
 - type: entity
   name: demonomicon
   parent: BookBase
@@ -32,6 +31,9 @@
   components:
   - type: Paper
     content: book-text-demonomicon1
+  - type: Construction
+    graph: SecretBook
+    node: startdemonomicon
 
 - type: entity
   parent: BookDemonomicon
@@ -40,6 +42,9 @@
   components:
   - type: Paper
     content: book-text-demonomicon2
+  - type: Construction
+    graph: SecretBook
+    node: startdemonomicon
 
 - type: entity
   parent: BookDemonomicon
@@ -48,6 +53,9 @@
   components:
   - type: Paper
     content: book-text-demonomicon3
+  - type: Construction
+    graph: SecretBook
+    node: startdemonomicon
 
 - type: entity
   name: pharmaceutical manuscript
@@ -62,6 +70,9 @@
     - state: book_chemistry
   - type: Paper
     content: book-text-chemistry-insane
+  - type: Construction
+    graph: SecretBook
+    node: startchemistryinsane
 
 - type: entity
   name: botanical textbook
@@ -76,6 +87,9 @@
     - state: book_hydroponics_pod_people
   - type: Paper
     content: book-text-botanics
+  - type: Construction
+    graph: SecretBook
+    node: startbotanicaltextbook
 
 - type: entity
   parent: BookBase
@@ -90,6 +104,9 @@
     - state: book5
   - type: Paper
     content: book-text-gnome
+  - type: Construction
+    graph: SecretBook
+    node: startgnominomicon
 
 - type: entity
   parent: BookBase
@@ -104,6 +121,9 @@
     - state: book_fish
   - type: Paper
     content: book-text-fishing
+  - type: Construction
+    graph: SecretBook
+    node: startfishing
 
 - type: entity
   parent: BookBase
@@ -118,5 +138,8 @@
     - state: book_detective
   - type: Paper
     content: book-text-detective
+  - type: Construction
+    graph: SecretBook
+    node: startdetective
 
 # ---- End Library Salvage Fills ----

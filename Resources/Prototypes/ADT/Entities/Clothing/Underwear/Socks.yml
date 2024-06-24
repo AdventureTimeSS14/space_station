@@ -224,3 +224,59 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Underwear/Socks/stockings_heart.rsi #Спрайты от lunalita
+
+#Stockings
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearRedStockings
+  name: red stockings
+  description: Red lace stockings. Not for a standart shift
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Under/red_stockings.rsi
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearBlackStockings
+  name: black stockings
+  description: Black lace stockings. Not for a standart shift
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Under/black_stockings.rsi
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearWhiteStockings
+  name: white stockings
+  description: White lace stockings. With a pink bow
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Under/white_stockings.rsi
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderSocksLiExEr
+  name: socks of LiExEr
+  description: Socks for programmers with a cutout for the sharp claws of the Vulpkanin! They smell like tangerines.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Socks/socks_liexer.rsi
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearStockingsBlueshield
+  name: blueshield's stockings
+  description: Excellent warm stockings for the most beautiful guardian.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Socks/stockings_blueshield.rsi
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearSocksBlueshield
+  name: blueshield's socks
+  description: Excellent warm socks for the most beautiful guardian.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/Underwear/Socks/socks_blueshield.rsi

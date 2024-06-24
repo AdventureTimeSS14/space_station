@@ -133,3 +133,105 @@
     damage:
       types:
         Blunt: 0.1
+
+- type: entity
+  name: Kiirava sword
+  parent: BaseItem
+  id: ADTObjectWeaponsMeleeKiiravaSword
+  description: Don't even try to use it like a razor. It's forget from bluespace steel. Lagand says it took the energy of several stars to create it.
+  components:
+  - type: Sharp
+  - type: Tag
+    tags:
+    - SupremeSabre
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Melee/kiirava-sword.rsi
+    state: icon
+  - type: MeleeWeapon
+    attackRate: 1.5 
+    damage:
+      types:
+        Slash: 25 
+  - type: Item
+    size: Large
+    sprite: ADT/Objects/Weapons/Melee/kiirava-sword.rsi
+  - type: DisarmMalus
+
+- type: entity
+  name: arkalis
+  parent: BaseItem
+  id: ADTObjectWeaponsMeleeArkalis
+  description: Don't even try to use it like a razor. It's forget from bluespace steel. Lagand says it took the energy of several stars to create it.
+  components:
+  - type: Sharp
+  - type: Tag
+    tags:
+    - SupremeCommanderSabre
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Melee/supreme-commander-sabre.rsi
+    state: icon
+  - type: MeleeWeapon
+    attackRate: 1.5 #Attack rate like a ScalpelShiv
+    damage:
+      types:
+        Cellular: 50
+        Radiation: 50
+  - type: Item
+    size: Huge
+    sprite: ADT/Objects/Weapons/Melee/supreme-commander-sabre.rsi
+  - type: DisarmMalus
+
+- type: entity
+  name: ninja katana
+  parent: BaseItem
+  id: ADTObjectWeaponsMeleeSupremeSabre
+  description: Don't even try to use it like a razor. It's forget from bluespace steel. Lagand says it took the energy of several stars to create it.
+  components:
+  - type: Sharp
+  - type: Tag
+    tags:
+    - SupremeSabre
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Melee/supreme-sabre.rsi
+    state: icon
+  - type: MeleeWeapon
+    attackRate: 1.0 
+    damage:
+      types:
+        Slash: 20 
+        Radiation: 15
+        Blunt: -1
+  - type: Item
+    size: Huge
+    sprite: ADT/Objects/Weapons/Melee/supreme-sabre.rsi
+  - type: DisarmMalus
+
+- type: entity
+  name: Pyotr's sabre
+  parent: BaseItem
+  id: ADTPyotrSabre
+  description: A ceremonial weapon belonging to the Pyotr Shahin. Heavier than stadart captain`s sabre.
+  components:
+  - type: Sharp
+  - type: Sprite
+    sprite: ADT/Objects/Weapons/Melee/pyotr_sabre.rsi
+    state: icon
+  - type: MeleeWeapon
+    attackRate: 1.2
+    damage:
+      types:
+        Slash: 22
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+  - type: Reflect
+    enabled: true
+    reflectProb: .5
+    spread: 90
+  - type: Item
+    size: Huge
+    sprite: ADT/Objects/Weapons/Melee/pyotr_sabre.rsi
+  - type: DisarmMalus
+  - type: Tag
+    tags:
+    - CaptainSabre
+

@@ -18,7 +18,7 @@
     - Nukeops
     - Traitor
     - Revolutionary
-    - Zombie
+#    - Zombie
     - RampingStationEventScheduler
 
 - type: gamePreset
@@ -138,21 +138,21 @@
     - BasicStationEventScheduler
     - BasicRoundstartVariation
 
-- type: gamePreset
-  id: Zombie
-  alias:
-  - zombie
-  - zombies
-  - Zombies
-  - zz14
-  - zomber
-  name: zombie-title
-  description: zombie-description
-  showInVote: false
-  rules:
-  - Zombie
-  - BasicStationEventScheduler
-  - BasicRoundstartVariation
+#- type: gamePreset
+#  id: Zombie
+#  alias:
+#  - zombie
+#  - zombies
+#  - Zombies
+#  - zz14
+#  - zomber
+#  name: zombie-title
+#  description: zombie-description
+#  showInVote: false
+#  rules:
+#  - Zombie
+#  - BasicStationEventScheduler
+#  - BasicRoundstartVariation
 
 - type: gamePreset
   id: Pirates
@@ -217,7 +217,7 @@
   showInVote: false
   rules:
     - Changeling
-    - Zombie
+#    - Zombie
     - BasicStationEventScheduler
     - BasicRoundstartVariation
 
