@@ -6,8 +6,16 @@
     - type: MothAccent
 
 - type: trait
-  id: ADTGermanAccent
+  id: ADTDeutschAccent
   name: trait-deutsch-accent-name
   description: trait-deutsch-accent-desc
   components:
     - type: DeutschAccent
+
+  id: ADTHemophilia
+  name: trait-hemophilia-name
+  description: trait-hemophilia-desc
+  components:
+    - type: Hemophilia
+      modifier: 0.01
+
