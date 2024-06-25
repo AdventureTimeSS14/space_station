@@ -235,7 +235,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         message = SanitizeInGameICMessage(source, message, out var emoteStr, shouldCapitalize, shouldPunctuate, shouldCapitalizeTheWordI);
 
         // Was there an emote in the message? If so, send it.
-        if (player != null && emoteStr != message && emoteStr != null)
+        if (player != null && emoteStr != message && emoteStr != null && !HasComp<AlternativeSpeechComponent>(source))
         {
             SendEntityEmote(source, emoteStr, range, nameOverride, ignoreActionBlocker);
         }
@@ -243,6 +243,22 @@ public sealed partial class ChatSystem : SharedChatSystem
         // This can happen if the entire string is sanitized out.
         if (string.IsNullOrEmpty(message))
             return;
+
+
+        // Alternative speech check start. 
+        var ev = new AlternativeSpeechEvent(source, message, desiredType, false, false, null);
+        if (TryProccessRadioMessage(source, message, out var altOutput, out var altChannel) && altChannel != null)
+        {
+            ev.Radio = true;
+            ev.RadioChannel = altChannel.ID;
+            ev.Message = altOutput;
+        }
+            
+        RaiseLocalEvent(source, ev, true);
+        if (ev.Cancelled)
+            return;
+        // Alternative speech check end. 
+
 
         // This message may have a radio prefix, and should then be whispered to the resolved radio channel
         if (checkRadioPrefix)
@@ -1123,6 +1139,29 @@ public sealed class EntitySpokeEvent : EntityEventArgs
         Channel = channel;
         ObfuscatedMessage = obfuscatedMessage;
         Language = language;
+    }
+}
+
+/// <summary>
+/// Raised for every entity. If cancelled by system, the entity wont send IC message, but the system can use message data
+/// </summary>
+public sealed class AlternativeSpeechEvent : EntityEventArgs
+{
+    public EntityUid Sender;
+    public string Message;
+    public InGameICChatType Type;
+    public bool Cancelled = false;
+    public bool Radio = false;
+    public string? RadioChannel;
+
+    public AlternativeSpeechEvent(EntityUid sender, string message, InGameICChatType type, bool cancelled, bool radio, string? radioChannel)
+    {
+        Sender = sender;
+        Message = message;
+        Type = type;
+        Cancelled = cancelled;
+        Radio = radio;
+        RadioChannel = radioChannel;
     }
 }
 

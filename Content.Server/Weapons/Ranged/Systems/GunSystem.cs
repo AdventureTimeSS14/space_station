@@ -24,6 +24,9 @@ using Robust.Shared.Physics;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Shared.Phantom;
+using Content.Shared.Phantom.Components;
+using Content.Server.Phantom.EntitySystems;
 
 namespace Content.Server.Weapons.Ranged.Systems;
 
@@ -39,6 +42,7 @@ public sealed partial class GunSystem : SharedGunSystem
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly StaminaSystem _stamina = default!;
     [Dependency] private readonly StunSystem _stun = default!;
+    [Dependency] private readonly PhantomSystem _phantom = default!;
 
     public const float DamagePitchVariation = SharedMeleeWeaponSystem.DamagePitchVariation;
     public const float GunClumsyChance = 0.5f;
@@ -230,9 +234,19 @@ public sealed partial class GunSystem : SharedGunSystem
 
                         var dmg = hitscan.Damage;
 
+                        //phantom
+                        var dmgPhantom = hitscan.DamageToPhantom;
+
                         var hitName = ToPrettyString(hitEntity);
                         if (dmg != null)
                             dmg = Damageable.TryChangeDamage(hitEntity, dmg, origin: user);
+
+                        // Damage phantom if any
+                        if (dmgPhantom != null && TryComp<PhantomHolderComponent>(hitEntity, out var haunted))
+                        {
+                            dmgPhantom = Damageable.TryChangeDamage(haunted.Phantom, dmgPhantom, origin: user);
+                            _phantom.StopHaunt(haunted.Phantom, hitEntity);
+                        }
 
                         // check null again, as TryChangeDamage returns modified damage values
                         if (dmg != null)

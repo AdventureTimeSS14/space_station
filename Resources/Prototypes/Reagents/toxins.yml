@@ -351,12 +351,11 @@
         type: Add
         time: 10
         refresh: false
-      - !type:GenericStatusEffect
-        key: ADTHallucinations
-        component: LingHallucinations
+      - !type:HallucinationsReagentEffect
         type: Add
         time: 10
-        refresh: false
+        refresh: true
+        proto: Changeling
   # TODO: PROPER hallucinations
   # лол
 

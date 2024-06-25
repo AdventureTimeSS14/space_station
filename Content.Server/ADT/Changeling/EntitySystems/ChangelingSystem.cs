@@ -46,7 +46,8 @@ using FastAccessors;
 using Content.Shared.Humanoid.Prototypes;
 using Robust.Shared.Utility;
 using Content.Shared.Humanoid.Markings;
-
+using Content.Shared.Hallucinations;
+using Content.Server.Hallucinations;
 
 namespace Content.Server.Changeling.EntitySystems;
 
@@ -73,7 +74,7 @@ public sealed partial class ChangelingSystem : EntitySystem
     [Dependency] private readonly AlertsSystem _alertsSystem = default!;
     [Dependency] private readonly StunSystem _stun = default!;
     [Dependency] private readonly FlashSystem _flashSystem = default!;
-    [Dependency] private readonly HumanoidAppearanceSystem _humanoid = default!;
+    [Dependency] private readonly HallucinationsSystem _hallucinations = default!;
 
     public override void Initialize()
     {
@@ -119,6 +120,9 @@ public sealed partial class ChangelingSystem : EntitySystem
 
     [ValidatePrototypeId<StorePresetPrototype>]
     public const string ChangelingShopPresetPrototype = "StorePresetChangeling";
+
+    [ValidatePrototypeId<HallucinationsPrototype>]
+    public const string ChangelingHallucinationsPrototype = "Changeling";
 
     public bool ChangeChemicalsAmount(EntityUid uid, float amount, ChangelingComponent? component = null, bool regenCap = true)
     {
@@ -633,21 +637,7 @@ public sealed partial class ChangelingSystem : EntitySystem
             return false;
         }
 
-        if (HasComp<ChangelingComponent>(target))
-        {
-            var selfMessage = Loc.GetString("changeling-sting-fail-self", ("target", Identity.Entity(target, EntityManager)));
-            _popup.PopupEntity(selfMessage, uid, uid);
-
-            var targetMessage = Loc.GetString("changeling-sting-fail-target");
-            _popup.PopupEntity(targetMessage, target, target);
-            return false;
-        }
-
-        if (!_entityManager.TryGetComponent<BloodstreamComponent>(target, out var bloodstream))
-            return false;
-
-        var drugInjection = new Solution(component.ChemicalSpaceDrugs, component.SpaceDrugsAmount);
-        _bloodstreamSystem.TryAddToChemicals(target, drugInjection, bloodstream);
+        _hallucinations.StartHallucinations(target, "ADTHallucinations", TimeSpan.FromSeconds(30), true, ChangelingHallucinationsPrototype);
 
         return true;
     }
@@ -670,9 +660,6 @@ public sealed partial class ChangelingSystem : EntitySystem
             return false;
         var adrenalineInjection = new Solution(component.ChemicalMorphine, component.AdrenalineAmount);
         _bloodstreamSystem.TryAddToChemicals(uid, adrenalineInjection, bloodstream);
-
-        var adrenalineInjectionTr = new Solution(component.ChemicalTranex, component.AdrenalineAmount);
-        _bloodstreamSystem.TryAddToChemicals(uid, adrenalineInjectionTr, bloodstream);
 
         return true;
     }

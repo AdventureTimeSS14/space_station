@@ -261,3 +261,68 @@
   - type: GenericAntag
     rule: LingMidround
 
+- type: entity
+  parent: BaseGameRule
+  id: MidroundChangelingSpawn
+  noSpawn: true
+  components:
+  - type: StationEvent
+    weight: 10
+    duration: 1
+    earliestStart: 30
+    minimumPlayers: 40
+  - type: RandomSpawnRule
+    prototype: SpawnPointGhostLing
+
+- type: entity
+  noSpawn: true
+  parent: BaseGameRule
+  id: LingMidround
+  components:
+  - type: GenericAntagRule
+    agentName: ling-round-end-agent-name  
+    objectives:
+    - EscapeLingShuttleObjective
+
+- type: entity
+  parent: MarkerBase
+  id: SpawnPointGhostLing
+  name: changeling spawn point
+  components:
+  - type: GhostRole
+    name: ghost-role-information-ling-name
+    description: ghost-role-information-ling-description
+    rules: ghost-role-information-ling-rules
+  - type: GhostRoleMobSpawner
+    prototype: ChangelingHeadslugMidround
+  - type: Sprite
+    sprite: ADT/Mobs/Aliens/headslug.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: headslug
+
+- type: reagent
+  id: LingDrugs
+  name: reagent-name-space-drugs
+  group: Narcotics
+  desc: reagent-desc-space-drugs
+  physicalDesc: reagent-physical-desc-syrupy
+  flavor: bitter
+  color: "#63806e"
+  metabolisms:
+    Narcotic:
+      effects:
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 5
+        refresh: false
+      - !type:HallucinationsReagentEffect
+        type: Add
+        time: 10
+        refresh: true
+        proto: Changeling
+        conditions:
+        - !type:ReagentThreshold
+          min: 15

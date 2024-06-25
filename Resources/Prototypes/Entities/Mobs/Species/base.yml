@@ -295,6 +295,7 @@
     - Pacified
     - StaminaModifier
     - ADTHallucinations
+    - ADTStarvation
   - type: Blindable
   # Other
   - type: Temperature

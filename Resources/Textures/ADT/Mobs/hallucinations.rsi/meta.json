@@ -5,7 +5,7 @@
         "y": 32
     },
     "license": "CC-BY-SA-3.0",
-    "copyright": "Created by discord:bolbyy",
+    "copyright": "Created by discord:bolbyy & username228 for SpaceStation14",
     "states": [
         {
             "name": "medical",
@@ -22,9 +22,6 @@
         {
             "name": "yeti",
             "directions": 4
-        },
-        {
-            "name": "dead"
         }
     ]
 }
