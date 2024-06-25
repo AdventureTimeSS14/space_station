@@ -254,6 +254,14 @@
     prototype: ADTBulletLingGas
 
 - type: entity
+  parent: ChangelingHeadslug
+  id: ChangelingHeadslugMidround
+  suffix: Ghost role
+  components:
+  - type: GenericAntag
+    rule: LingMidround
+    
+- type: entity
   parent: BaseGameRule
   id: MidroundChangelingSpawn
   noSpawn: true
@@ -265,16 +273,6 @@
     minimumPlayers: 40
   - type: RandomSpawnRule
     prototype: SpawnPointGhostLing
-
-- type: entity
-  noSpawn: true
-  parent: BaseGameRule
-  id: LingMidround
-  components:
-  - type: GenericAntagRule
-    agentName: ling-round-end-agent-name  
-    objectives:
-    - EscapeLingShuttleObjective
 
 - type: entity
   parent: MarkerBase
