@@ -254,14 +254,6 @@
     prototype: ADTBulletLingGas
 
 - type: entity
-  parent: ChangelingHeadslug
-  id: ChangelingHeadslugMidround
-  suffix: Ghost role
-  components:
-  - type: GenericAntag
-    rule: LingMidround
-
-- type: entity
   parent: BaseGameRule
   id: MidroundChangelingSpawn
   noSpawn: true
