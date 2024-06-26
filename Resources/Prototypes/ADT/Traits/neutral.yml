@@ -6,7 +6,7 @@
     - type: MothAccent
 
 - type: trait
-  id: ADTDeutschAccent
+  id: ADTDeutscAccent
   name: trait-deutsch-accent-name
   description: trait-deutsch-accent-desc
   components:
