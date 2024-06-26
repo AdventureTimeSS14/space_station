@@ -38,6 +38,10 @@ public sealed class DeutschAccentSystem : EntitySystem
         message = Regex.Replace(message, "КАК", "WIE");
         message = Regex.Replace(message, "как", "wie");
 
+        message = Regex.Replace(message, "Так", "So");
+        message = Regex.Replace(message, "ТАК", "SO");
+        message = Regex.Replace(message, "так", "so");
+
         message = Regex.Replace(message, "Пожалуйста", "Bitte sehr");
         message = Regex.Replace(message, "ПОЖАЛУЙСТА", "BITTE SEHR");
         message = Regex.Replace(message, "пожалуйста", "bitte sehr");
@@ -167,6 +171,53 @@ public sealed class DeutschAccentSystem : EntitySystem
         message = Regex.Replace(message, "Мы", "Wir");
         message = Regex.Replace(message, "МЫ", "WIR");
         message = Regex.Replace(message, "мы", "wir");
+
+        message = Regex.Replace(message, "Кадет", "Kadett");
+        message = Regex.Replace(message, "КАДЕТ", "KADETT");
+        message = Regex.Replace(message, "кадеты", "kadett");
+
+        message = Regex.Replace(message, "Офицер", "Offizier");
+        message = Regex.Replace(message, "ОФИЦЕР", "OFFIZIER");
+        message = Regex.Replace(message, "офицер", "offizier");
+
+        message = Regex.Replace(message, "Кадеты", "Kadetten");
+        message = Regex.Replace(message, "КАДЕТЫ", "KADETTEN");
+        message = Regex.Replace(message, "кадеты", "kadetten");
+
+        message = Regex.Replace(message, "Клоун", "Clown");
+        message = Regex.Replace(message, "КЛОУН", "CLOWN");
+        message = Regex.Replace(message, "клоун", "clown");
+        message = Regex.Replace(message, "Клоуна", "Clown'a");
+        message = Regex.Replace(message, "КЛОУНА", "CLOWN'A");
+        message = Regex.Replace(message, "клоуна", "clown'a");
+
+        message = Regex.Replace(message, "Вульпа", "Vulpa");
+        message = Regex.Replace(message, "ВУЛЬПА", "VULPA");
+        message = Regex.Replace(message, "вульпа", "vulpa");
+
+        message = Regex.Replace(message, "Вульп", "Vulp");
+        message = Regex.Replace(message, "ВУЛЬП", "VULP");
+        message = Regex.Replace(message, "вульп", "vulp");
+
+        message = Regex.Replace(message, "Истребить", "Vertilgen");
+        message = Regex.Replace(message, "ИСТРЕБИТЬ", "VERTIGEN");
+        message = Regex.Replace(message, "истребить", "vertilgen");
+
+        message = Regex.Replace(message, "Сжечь", "Verbrennen");
+        message = Regex.Replace(message, "СЖЕЧЬ", "VERBRENNEN");
+        message = Regex.Replace(message, "сжечь", "verbrennen");
+
+        message = Regex.Replace(message, "Убить", "Töten");
+        message = Regex.Replace(message, "УБИТЬ", "TOTEN");
+        message = Regex.Replace(message, "убить", "töten");
+
+        message = Regex.Replace(message, "Убили", "Töten");
+        message = Regex.Replace(message, "УБИЛИ", "TOTEN");
+        message = Regex.Replace(message, "убили", "töten");
+
+        message = Regex.Replace(message, "Убейте", "Töten");
+        message = Regex.Replace(message, "УБЕЙТЕ", "TOTEN");
+        message = Regex.Replace(message, "убейте", "töten");
 
         message = Regex.Replace(message, "Пиво", "Bier");
         message = Regex.Replace(message, "ПИВО", "BIER");
