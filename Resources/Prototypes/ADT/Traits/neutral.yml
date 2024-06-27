@@ -4,3 +4,11 @@
   description: trait-moth-accent-desc
   components:
     - type: MothAccent
+
+- type: trait
+  id: ADTHemophilia
+  name: trait-hemophilia-name
+  description: trait-hemophilia-desc
+  components:
+    - type: Hemophilia
+      modifier: 0.01
