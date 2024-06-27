@@ -85,6 +85,12 @@ ent-ClothingShoesBootsWinterSci = зимние ботинки учёного
 ent-ClothingShoesBootsWinterSec = зимние ботинки СБ
     .desc = Пушистые сапоги помогут пережить даже самую холодную зиму.
 
+ent-ClothingShoesBootsWinterSyndicate = зимние ботинки синдиката
+    .desc = Прочные тяжелые ботинки, похожи на мерч из "Синдиленда"
+
+ent-ClothingShoesBootsWinterWeb = зимние ботинки из паутины
+    .desc = Сапоги из плотной паутины помогут пережить даже самую холодную зиму.
+
 ent-ADTClothingFootSportBoots = сапоги STEP "Cold"
     .desc = Сапоги серии STEP "Cold" созданы специально для пробежек по улицам в холодную погоду. Сугробы им не помеха!
 ent-ADTClothingFootSportRoseShoes = ботинки STEP "Rose"
