@@ -103,6 +103,8 @@
       - ADTPosterLustyMoth
       - ADTPosterWatchOutChem
       - ADTPosterPanem
+      - ADTPosterGasAttack
+      - ADTPosterNoGood
     chance: 1
 
 - type: entity
@@ -172,4 +174,6 @@
       - ADTPosterDontTalkToArty
       - ADTPosterWorkUnderWay
       - ADTPosterPlasmaMan
+      - ADTPosterError
+      - ADTPosterNoBad
     chance: 1

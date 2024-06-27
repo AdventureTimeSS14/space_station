@@ -56,6 +56,7 @@ namespace Content.Server.Corvax.StationGoal
                     new List<StampDisplayInfo>
                     {
                         new() { StampedName = Loc.GetString("stamp-component-stamped-name-centcom"), StampedColor = Color.FromHex("#006600") },
+                        /// ADT colour fix
                     });
                 _faxSystem.Receive(fax.Owner, printout, null, fax);
 
