@@ -61,7 +61,7 @@
   suffix: Space Sec, Maintenance
   components:
   - type: AccessReader
-    access: [["SpaceSecMaintance"]]
+    access: [["SpaceSecMaintenance"]]
 
 - type: entity
   parent: ADTSpaceSecAirlock
@@ -123,7 +123,7 @@
   suffix: Space Sec, Maintenance
   components:
   - type: AccessReader
-    access: [["SpaceSecMaintance"]]
+    access: [["SpaceSecMaintenance"]]
 
 - type: entity
   parent: ADTSpaceSecGlassAirlock
