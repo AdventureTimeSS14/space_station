@@ -16,7 +16,7 @@
   - Xeno
   - Zombie
   - Revolutionary
-  - DroneAntag
+  - DroneAntag # ADT tweak
 
 - type: npcFaction
   id: Mouse
@@ -55,7 +55,7 @@
   - Xeno
   - PetsNT
   - Zombie
-  - DroneAntag
+  - DroneAntag # ADT tweak
 
 - type: npcFaction
   id: Xeno
