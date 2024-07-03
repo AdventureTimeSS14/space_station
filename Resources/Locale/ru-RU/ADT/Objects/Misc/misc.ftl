@@ -49,3 +49,7 @@ ent-ADTMobCult2 = {ent-ADTMobCult}
     .desc = ""
     .suffix = { "Cult of the Lamb, Копьё" }
 #END-Event-Cult-of-the-Lamb
+
+ent-ADTAnomalySpawnTimePatrol = спавн ОБВА
+    .desc = ""
+    .suffix = { "ОБВА" }

@@ -96,3 +96,7 @@ ent-ADTClothingBackpackMilitarySatchelFleetPilot = сумка пилота
 ent-ClothingBackpackMilitarySatchelEngineer = сумка корабельного инженера
     .desc = Вмещает то, что необходимо инженеру корабля.
     .suffix = { "Космические бои" }
+
+ent-ADTClothingBackpackTimePatrol = рюкзак стража времени
+    .desc = Просто вместительный рюкзак.
+    .suffix = { "ОБВА" }

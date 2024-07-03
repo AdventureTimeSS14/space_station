@@ -112,3 +112,20 @@
     event: !type:CompGravitationActionEvent
     useDelay: 1
 
+- type: entity
+  id: CompElectrionPulseAction
+  name: action-evaporation
+  description: action-evaporation-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: /Textures/ADT/Interface/Actions/evaporation.rsi
+      state: evaporation
+    itemIconStyle: BigAction
+    checkCanInteract: false
+    event: !type:CompElectrionPulseActionEvent
+    useDelay: 3
+
+
+

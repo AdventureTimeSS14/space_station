@@ -66,6 +66,49 @@ using Content.Shared.Inventory.Events;
 using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Systems;
 using Robust.Shared.Containers;
+using Content.Server.Electrocution;
+using Content.Server.Lightning;
+using Content.Shared.Anomaly.Components;
+using Content.Shared.Anomaly.Effects.Components;
+using Content.Shared.StatusEffect;
+using Robust.Shared.Timing;
+using Content.Server.Anomaly.Effects;
+using Content.Shared.Actions.Events;
+using Content.Shared.Atmos.Components;
+using Content.Shared.Atmos.EntitySystems;
+using Robust.Shared.Audio.Systems;
+using Robust.Shared.Containers;
+using Robust.Shared.Map;
+using Content.Server.Electrocution;
+using Content.Server.Emp;
+using Content.Server.Lightning;
+using Content.Shared.Anomaly.Components;
+using Content.Shared.Anomaly.Effects.Components;
+using Content.Shared.StatusEffect;
+using Robust.Shared.Random;
+using Robust.Shared.Timing;
+using Content.Server.Spawners.Components;
+using Robust.Shared.Spawners;
+using Content.Server.Spawners.EntitySystems;
+using Robust.Shared.GameObjects;
+using Robust.Shared.Serialization.Manager.Attributes;
+using Content.Server.Chat;
+using Content.Server.Chat.Systems;
+using Content.Shared.Chat.Prototypes;
+using Content.Shared.Singularity.EntitySystems;
+using Robust.Shared.GameStates;
+using Content.Shared.Singularity.Components;
+using Content.Shared.ADT.PointLightColorBlue;
+using Content.Shared.Interaction.Components;
+using Robust.Shared.Audio;
+using Robust.Shared.Audio.Systems;
+using System.Timers;
+using System.ComponentModel;
+using System.Linq;
+using Robust.Shared.Timing;
+using Robust.Shared.Utility;
+using Robust.Server.GameObjects;
+
 
 namespace Content.Server.ComponentalActions.EntitySystems;
 
@@ -94,6 +137,12 @@ public sealed partial class ComponentalActionsSystem
     [Dependency] private readonly ClothingSpeedModifierSystem _clothingSpeedModifier = default!;
     [Dependency] private readonly MovementSpeedModifierSystem _movementSpeed = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private readonly LightningSystem _lightning = default!;
+    [Dependency] private readonly ElectrocutionSystem _electrocution = default!;
+    [Dependency] private readonly SpawnOnDespawnSystem _timeDespawnUid = default!;
+    [Dependency] private readonly ChatSystem _chat = default!;
+    [Dependency] private readonly PointLightSystem _light = default!;
     private void InitializeCompAbilities()
     {
         SubscribeLocalEvent<TeleportActComponent, CompTeleportActionEvent>(OnTeleport);
@@ -103,9 +152,7 @@ public sealed partial class ComponentalActionsSystem
         SubscribeLocalEvent<StasisHealActComponent, CompStasisHealActionEvent>(OnStasisHeal);
         SubscribeLocalEvent<InvisibilityActComponent, CompInvisibilityActionEvent>(OnInvisibility);
         SubscribeLocalEvent<LevitationActComponent, CompGravitationActionEvent>(OnMagGravity);
-        // SubscribeLocalEvent<LevitationActComponent, GetVerbsEvent<ActivationVerb>>(AddToggleVerb);
-        // SubscribeLocalEvent<LevitationActComponent, InventoryRelayedEvent<SlipAttemptEvent>>(OnSlipAttempt);
-        // SubscribeLocalEvent<LevitationActComponent, GetItemActionsEvent>(OnGetActions);
+        SubscribeLocalEvent<ElectrionPulseActComponent, CompElectrionPulseActionEvent>(OnElectrionPulse);
     }
 
     public override void Update(float frameTime)
@@ -364,4 +411,30 @@ public sealed partial class ComponentalActionsSystem
         }
     }
 
+    private void OnElectrionPulse(EntityUid uid, ElectrionPulseActComponent component, CompElectrionPulseActionEvent args)
+    {
+        if (args.Handled)
+            return;
+        _chat.TrySendInGameICMessage(uid, "щёлкает пальцами", InGameICChatType.Emote, ChatTransmitRange.Normal);
+
+        // Создаем таймер для задержки
+        System.Timers.Timer timer = new System.Timers.Timer();
+        timer.Interval = 3000; // 3 секунды
+        timer.AutoReset = false; // Для однократного срабатывания
+        timer.Elapsed += (sender, e) =>
+        {
+            //AddComp<SingularityDistortionComponent>(uid);
+            AddComp<PointLightComponent>(uid);
+            _light.SetEnabled(uid, true);
+            _light.SetColor(uid, Color.FromHex("#a83da8"));
+            _light.SetRadius(uid, 1.7f);
+            _light.SetEnergy(uid, 160f);
+            _audio.PlayPvs(component.IgniteSound, uid);
+            var despawn = AddComp<TimedDespawnComponent>(uid);
+            despawn.Lifetime = 0.7f;
+        };
+        timer.Start();
+
+        args.Handled = true;
+    }
 }
