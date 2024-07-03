@@ -46,6 +46,20 @@
   - type: WiresPanelSecurity
     securityLevel: medSecurity
 
+- type: entity
+  parent: Airlock
+  id: ADTSpaceSecAirlock
+  suffix: Space Sec
+  components:
+  - type: Sprite
+    sprite: ADT/Structures/Doors/Airlocks/Standard/space_sec.rsi
+  - type: WiresPanel
+  - type: WiresPanelSecurity
+    securityLevel: maxSecurity
+  - type: Wires
+    boardName: wires-board-name-highsec
+    layoutId: HighSec
+
 #Glass
 - type: entity
   parent: AirlockGlass
@@ -70,3 +84,17 @@
     group: Glass
   - type: WiresPanelSecurity
     securityLevel: medSecurity
+
+- type: entity
+  parent: AirlockGlass
+  id: ADTSpaceSecGlassAirlock
+  suffix: Space Sec
+  components:
+  - type: Sprite
+    sprite: ADT/Structures/Doors/Airlocks/Glass/space_sec.rsi
+  - type: WiresPanel
+  - type: WiresPanelSecurity
+    securityLevel: maxSecurity
+  - type: Wires
+    boardName: wires-board-name-highsec
+    layoutId: HighSec

@@ -788,8 +788,17 @@
     state: roza
     scale: 0.25, 0.25
 
-# Странные постеры
+- type: entity
+  parent: ADTPosterBaseKek
+  id: ADTPosterSpaceSec
+  name: SPACE SEC logo
+  description: "This is the logo of the SPACE SEC Corporation"
+  components:
+  - type: Sprite
+    sprite: ADT/Structures/Wallmounts/space_sec_poster.rsi
+    state: poster_spacesec
 
+# Странные постеры
 - type: entity
   parent: PosterBase
   id: ADTPosterError
