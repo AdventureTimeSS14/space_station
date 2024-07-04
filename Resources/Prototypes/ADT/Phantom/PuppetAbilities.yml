@@ -1,0 +1,29 @@
+- type: entity
+  id: ActionPhantomPupHeal
+  name: action-phanton-heal-self
+  description: action-phantom-heal-self-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    icon:
+      sprite: ADT/Interface/Actions/actions_phantom.rsi
+      state: recovery
+    itemIconStyle: BigAction
+    event: !type:SelfGhostHealActionEvent
+    useDelay: 120
+
+- type: entity
+  id: ActionPhantomPupClaws
+  name: action-phanton-claws-self
+  description: action-phantom-claws-self-desc
+  noSpawn: true
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    icon:
+      sprite: ADT/Interface/Actions/actions_phantom.rsi
+      state: ghost_claws
+    itemIconStyle: BigAction
+    event: !type:SelfGhostClawsActionEvent
+    useDelay: 1

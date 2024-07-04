@@ -236,9 +236,6 @@
     spread: true
     eggsAction: ActionLingHatchFast
 
-
-
-
 #Котя это что вообще такое
 - type: entity  # Как будут спрайты доделаю. 
   name: Urist McWeb
@@ -260,4 +257,3 @@
   components:
   - type: GenericAntag
     rule: LingMidround
-

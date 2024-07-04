@@ -53,7 +53,6 @@ public sealed partial class ChangelingComponent : Component
     /// </summary>
     /// Flesh sound
     /// </summary>
-    [DataField]
     public SoundSpecifier? SoundFlesh = new SoundPathSpecifier("/Audio/Effects/blobattack.ogg")
     {
         Params = AudioParams.Default.WithVolume(-3f),
@@ -62,13 +61,11 @@ public sealed partial class ChangelingComponent : Component
     /// </summary>
     /// Flesh sound
     /// </summary>
-    [DataField]
     public SoundSpecifier? SoundFleshQuiet = new SoundPathSpecifier("/Audio/Effects/blobattack.ogg")
     {
         Params = AudioParams.Default.WithVolume(-1f),
     };
 
-    [DataField]
     public SoundSpecifier? SoundResonant = new SoundPathSpecifier("/Audio/ADT/resonant.ogg")
     {
         Params = AudioParams.Default.WithVolume(-3f),
@@ -83,135 +80,75 @@ public sealed partial class ChangelingComponent : Component
     /// <summary>
     /// Refresh ability
     /// </summary>
-    [DataField]
     public bool CanRefresh = false;
 
     #region Actions
 
-    [DataField]
     public EntProtoId ChangelingEvolutionMenuAction = "ActionChangelingEvolutionMenu";
 
-    [DataField, AutoNetworkedField]
+    [AutoNetworkedField]
     public EntityUid? ChangelingEvolutionMenuActionEntity;
 
-    [DataField]
     public EntProtoId ChangelingRegenAction = "ActionLingRegenerate";
 
-    [DataField, AutoNetworkedField]
+    [AutoNetworkedField]
     public EntityUid? ChangelingRegenActionEntity;
 
-    [DataField]
     public EntProtoId ChangelingAbsorbAction = "ActionChangelingAbsorb";
 
-    [DataField, AutoNetworkedField]
+    [AutoNetworkedField]
     public EntityUid? ChangelingAbsorbActionEntity;
 
-    [DataField]
     public EntProtoId ChangelingDNACycleAction = "ActionChangelingCycleDNA";
 
-    [DataField, AutoNetworkedField]
+    [AutoNetworkedField]
     public EntityUid? ChangelingDNACycleActionEntity;
 
-    [DataField]
+    public EntProtoId ChangelingTransformAction = "ActionChangelingTransform";
+
+    [AutoNetworkedField]
+    public EntityUid? ChangelingTransformActionEntity;
+
     public EntProtoId ChangelingRefreshAction = "ActionLingRefresh";
 
-    [DataField, AutoNetworkedField]
+    [AutoNetworkedField]
     public EntityUid? ChangelingRefreshActionEntity;
 
-    [DataField]
     public EntProtoId ChangelingDNAStingAction = "ActionLingStingExtract";
 
-    [DataField, AutoNetworkedField]
+    [AutoNetworkedField]
     public EntityUid? ChangelingDNAStingActionEntity;
 
-    [DataField]
     public EntProtoId ChangelingLesserFormAction = "ActionLingLesserForm";
 
-    [DataField, AutoNetworkedField]
+    [AutoNetworkedField]
     public EntityUid? ChangelingLesserFormActionEntity;
 
-    [DataField]
     public EntProtoId ChangelingLastResortAction = "ActionLingLastResort";
 
-    [DataField, AutoNetworkedField]
+    [AutoNetworkedField]
     public EntityUid? ChangelingLastResortActionEntity;
 
-    ///[DataField]
-    ///public EntProtoId ChangelingArmBladeAction = "ActionArmBlade";
-
-    ///[DataField, AutoNetworkedField]
-    ///public EntityUid? ChangelingArmBladeActionEntity;
-
-    ///[DataField]
-    ///public EntProtoId ChangelingArmorActionAction = "ActionLingArmor";
-
-    ///[DataField, AutoNetworkedField]
-    ///public EntityUid? ChangelingArmorActionActionEntity;
-
-    ///[DataField]
-    ///public EntProtoId ChangelingInvisibleAction = "ActionLingInvisible";
-
-    ///[DataField, AutoNetworkedField]
-    ///public EntityUid? ChangelingInvisibleActionEntity;
-
-    ///[DataField]
-    ///public EntProtoId ChangelingEMPAction= "ActionLingEMP";
-
-    ///[DataField, AutoNetworkedField]
-    ///public EntityUid? ChangelingEMPActionEntity;
-
-    [DataField]
     public EntProtoId ChangelingStasisDeathAction = "ActionStasisDeath";
 
-    [DataField, AutoNetworkedField]
+    [AutoNetworkedField]
     public EntityUid? ChangelingStasisDeathActionEntity;
-
-    ///[DataField]
-    ///public EntProtoId ChangelingBlindStingAction = "ActionLingBlindSting";
-
-    ///[DataField, AutoNetworkedField]
-    ///public EntityUid? ChangelingBlindStingActionEntity;
-
-    ///[DataField]
-    ///public EntProtoId ChangelingAdrenalineAction = "ActionLingAdrenaline";
-
-    ///[DataField, AutoNetworkedField]
-    ///public EntityUid? ChangelingAdrenalineActionEntity;
-
-    ///[DataField]
-    ///public EntProtoId ChangelingOmniHealAction = "ActionLingOmnizine";
-
-    ///[DataField, AutoNetworkedField]
-    ///public EntityUid? ChangelingOmniHealActionEntity;
-
-    ///[DataField]
-    ///public EntProtoId ChangelingMuteStingAction = "ActionLingMuteSting";
-
-    ///[DataField, AutoNetworkedField]
-    ///public EntityUid? ChangelingMuteStingActionEntity;
 
     #endregion
 
     #region Chemical Costs
-    [DataField]
     public float ChemicalsCostFree = 0;
 
-    [DataField]
     public float ChemicalsCostFive = -5f;
 
-    [DataField]
     public float ChemicalsCostTen = -10f;
 
-    [DataField]
     public float ChemicalsCostFifteen = -15f;
 
-    [DataField]
     public float ChemicalsCostTwenty = -20f;
 
-    [DataField]
     public float ChemicalsCostTwentyFive = -25f;
 
-    [DataField]
     public float ChemicalsCostFifty = -50f;
     #endregion
 
@@ -290,10 +227,9 @@ public sealed partial class ChangelingComponent : Component
     /// <summary>
     /// If the ling has an active armblade or not.
     /// </summary>
-    [DataField]
     public bool ArmBladeActive = false;
 
-    [DataField, AutoNetworkedField]
+    [AutoNetworkedField]
     public EntityUid? BladeEntity;
 
     #endregion
@@ -308,7 +244,6 @@ public sealed partial class ChangelingComponent : Component
     /// <summary>
     /// If the ling has the armor on or not.
     /// </summary>
-    [DataField]
     public bool LingArmorActive = false;
     #endregion
 
@@ -316,7 +251,6 @@ public sealed partial class ChangelingComponent : Component
     /// <summary>
     /// If the ling has chameleon skin active or not.
     /// </summary>
-    [DataField]
     public bool ChameleonSkinActive = false;
 
     /// <summary>
@@ -354,17 +288,14 @@ public sealed partial class ChangelingComponent : Component
 
     #region Stasis Death Ability
 
-    [DataField]
     public float StasisDeathDamageAmount = 10000f;    /// Damage gain to die
 
-    [DataField]
     public bool StasisDeathActive = false;      /// Is ling dead or alive
 
     #endregion
 
     #region Muscles Ability
 
-    [DataField]
     public bool MusclesActive = false;
 
     [DataField]
@@ -380,17 +311,8 @@ public sealed partial class ChangelingComponent : Component
     [DataField("chemicalMorphine", customTypeSerializer: typeof(PrototypeIdSerializer<ReagentPrototype>))]
     public string ChemicalMorphine = "ADTMMorphine";
 
-    [DataField("chemicalTranex", customTypeSerializer: typeof(PrototypeIdSerializer<ReagentPrototype>))]
-    public string ChemicalTranex = "TranexamicAcid";
-
-    [DataField("chemicalOmnizine", customTypeSerializer: typeof(PrototypeIdSerializer<ReagentPrototype>))]
-    public string ChemicalOmni = "Omnizine";
-
     [DataField("chemicalMute", customTypeSerializer: typeof(PrototypeIdSerializer<ReagentPrototype>))]
     public string ChemicalMute = "MuteToxin";
-
-    [DataField("chemicalDrug", customTypeSerializer: typeof(PrototypeIdSerializer<ReagentPrototype>))]
-    public string ChemicalSpaceDrugs = "LingDrugs";
 
     #endregion
 
@@ -409,10 +331,8 @@ public sealed partial class ChangelingComponent : Component
 
     #region Lesser Form Ability
 
-    [DataField]
     public bool LesserFormActive = false;
 
-    [DataField]
     public string LesserFormMob = "ChangelingLesserForm";
 
 
@@ -422,38 +342,27 @@ public sealed partial class ChangelingComponent : Component
     /// <summary>
     /// If the ling has an active armblade or not.
     /// </summary>
-    [DataField]
     public bool ArmShieldActive = false;
 
-    [DataField, AutoNetworkedField]
+    [AutoNetworkedField]
     public EntityUid? ShieldEntity;
 
     #endregion
 
-    [DataField]
     public float GibDamage = 5000f;
 
-    [DataField]
     public bool EggedBody = false;
 
-    [DataField]
     public bool EggsReady = false;
 
     [DataField]
     public int BiodegradeDuration = 3;
-
-    [DataField]
+    
     public string HiveMind = "ChangelingCollectiveMind";
 
-    [DataField]
     public bool ShowName = false;
 
-    [DataField]
     public bool ShowRank = true;
 
-    [DataField]
     public string RankName = "collective-mind-ling-rank";
-
-
-
 }

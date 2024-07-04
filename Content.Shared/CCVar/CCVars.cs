@@ -528,6 +528,19 @@ namespace Content.Shared.CCVar
             CVarDef.Create("changeling.max_picks", 20);
 
         /*
+        * Phantom
+        */
+
+        public static readonly CVarDef<int> PhantomMinPlayers =
+            CVarDef.Create("phantom.min_players", 25);
+
+        public static readonly CVarDef<int> PhantomMaxDifficulty =
+            CVarDef.Create("phantom.max_difficulty", 15);
+
+        public static readonly CVarDef<int> PhantomMaxPicks =
+            CVarDef.Create("phantom.max_picks", 10);
+
+        /*
          * Tips
          */
 

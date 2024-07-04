@@ -5,6 +5,8 @@ using Content.Shared.StatusIcon.Components;
 using Content.Shared.Zombies;
 using Robust.Client.Player;
 using Robust.Shared.Prototypes;
+using Content.Shared.Phantom.Components;
+using Content.Shared.Bible.Components;
 
 namespace Content.Client.Antag;
 
@@ -22,6 +24,14 @@ public sealed class AntagStatusIconSystem : SharedStatusIconSystem
         SubscribeLocalEvent<RevolutionaryComponent, GetStatusIconsEvent>(GetRevIcon);
         SubscribeLocalEvent<ZombieComponent, GetStatusIconsEvent>(GetIcon);
         SubscribeLocalEvent<HeadRevolutionaryComponent, GetStatusIconsEvent>(GetIcon);
+
+        // ADT Phantom update start
+        SubscribeLocalEvent<VesselComponent, GetStatusIconsEvent>(GetVesselIcon);
+        SubscribeLocalEvent<PhantomPuppetComponent, GetStatusIconsEvent>(GetIcon);
+        SubscribeLocalEvent<PhantomHolderComponent, GetStatusIconsEvent>(GetIcon);
+        SubscribeLocalEvent<PhantomImmuneComponent, GetStatusIconsEvent>(GetIcon);
+        SubscribeLocalEvent<ChaplainComponent, GetStatusIconsEvent>(GetIcon);
+        // ADT Phantom update end
     }
 
     /// <summary>
@@ -46,6 +56,15 @@ public sealed class AntagStatusIconSystem : SharedStatusIconSystem
     private void GetRevIcon(EntityUid uid, RevolutionaryComponent comp, ref GetStatusIconsEvent ev)
     {
         if (HasComp<HeadRevolutionaryComponent>(uid))
+            return;
+
+        GetIcon(uid, comp, ref ev);
+
+    }
+
+    private void GetVesselIcon(EntityUid uid, VesselComponent comp, ref GetStatusIconsEvent ev)
+    {
+        if (HasComp<PhantomPuppetComponent>(uid))
             return;
 
         GetIcon(uid, comp, ref ev);
