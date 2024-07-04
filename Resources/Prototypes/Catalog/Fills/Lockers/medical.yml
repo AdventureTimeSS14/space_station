@@ -146,7 +146,6 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingOuterHardsuitVoidParamed
       - id: ADTPatchPackFilled
       - id: ADTClothingOuterParamedicVoidHardsuit
       - id: ClothingOuterCoatParamedicWB
