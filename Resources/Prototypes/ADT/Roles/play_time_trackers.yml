@@ -30,6 +30,9 @@
 
 - type: playTimeTracker
   id: JobRoboticist
+
+- type: playTimeTracker
+  id: ADTAdmiralCentComm
   
 #СССП Штуки
 

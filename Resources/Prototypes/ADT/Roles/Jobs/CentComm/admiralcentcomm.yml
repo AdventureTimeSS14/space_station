@@ -1,0 +1,16 @@
+- type: job
+  id: ADTAdmiralCentComm
+  name: job-name-ADTAdmiralCentComm
+  description: job-description-ADTAdmiralCentComm
+  playTimeTracker: JobADTAdmiralCentCom
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 21600 #6 hrs
+  startingGear: CentcomAdmiralGear
+  icon: "JobIconNanotrasen"
+  supervisors: job-supervisors-cmo
+  canBeAntag: false
+  access:
+    - Medical
+    - Maintenance
