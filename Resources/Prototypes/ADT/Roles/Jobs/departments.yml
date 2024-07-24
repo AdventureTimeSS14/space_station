@@ -11,3 +11,11 @@
   - ADTSecurityCyborg
   - Borg
   primary: false
+
+- type: department
+  id: CentralCommand
+  description: department-CentralCommand-description
+  color: "#3399CC"
+  roles:
+  - ADTAdmiralCentComm
+  primary: false

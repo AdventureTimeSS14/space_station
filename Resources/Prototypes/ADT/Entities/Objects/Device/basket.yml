@@ -1,0 +1,20 @@
+- type: entity
+  name: Ящичек
+  parent: BaseStorageItem
+  id: ADTyashik
+  description: Ящичек в котором лежит зарплата бармена...
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/VendingMachines/condiments.rsi
+    state: icon
+  - type: Storage
+    maxItemSize: Normal
+    whitelist:
+      tags:
+        - DrinkBottle
+    grid:
+    - 0,0,3,2
+  - type: MultiHandedItem
+  - type: HeldSpeedModifier
+    walkModifier: 0.5
+    sprintModifier: 0.5
